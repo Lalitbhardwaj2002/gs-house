@@ -17,11 +17,13 @@ A **bilingual (Hindi + English) multiple-choice General Knowledge quiz game** fo
 - Name chosen: **GS House (जीएस हाउस)** — unique online; intended live URL `https://lalitbhardwaj2002.github.io/gs-house/`.
 - He asked to be told about anything else needed and to get suggestions for extra features (see section 8).
 
-## 2. Status (when this hand-off was written, 28 Oct 2026)
-- **Game app: built, not yet fully tested.** `index.html`, `style.css`, `app.js`, `sections.js`, `manifest.json`, `sw.js`. Solo + multiplayer engine (PeerJS, host-authoritative, adapted from his tested Mindmela game), bilingual UI, per-question language toggle, green/red options, explanation flowchart, option notes, references, live leaderboard, assessment with ranks (Acharya/Pandit/Vidvan/Sadhak/Jigyasu), marigold petals, printable answer sheet.
-- **Questions: almost none yet.** 12 writer agents were started but hit the account's usage limit. Only `data/draft/hist-gupta.part1.json` (14 draft questions, **unchecked**) was saved. **No section is finished**; `data/index.json` does not exist yet, so the game shows every section as "soon".
-- **Tools ready:** `tools/validate.py`, `tools/merge_parts.py`, `tools/build_index.py`, `tools/prep_refs.py`.
-- **Briefs ready:** `docs/WRITER_BRIEF.md`, `docs/CHECKER_BRIEF.md`, `docs/example-question.json`, `docs/fatman_index.md`.
+## 2. Status (final release, 30 Oct 2026)
+- **Game: finished and released** as **GS House** (renamed from Prashnapeeth at the owner's request). Repo `Lalitbhardwaj2002/gs-house`, played at `https://lalitbhardwaj2002.github.io/gs-house/` (GitHub Pages, `main`, root). Solo + rooms of up to 20 players, bilingual UI with per-question language switch, green/red answers, explanation flowchart, option notes, references, live leaderboard, assessment with ranks, petals, printable answer sheet.
+- **Questions: 1,164 checked questions in 37 of the 73 sections.** Every one was written by one agent and independently proof-read by another (`data/reports/` has each change log). The owner capped the game at under 1,500 questions (see `docs/TARGETS.md`): big sections have 40–58 questions, the small ones 6.
+- **Stopped at the owner's request** before these were finished (they show as "soon" in the game):
+  - Drafted but **not checked** (kept only on the owner's computer in `data/draft/`, never publish unchecked): `ict-internet` (40), `pol-election`, `pol-bodies`, `pol-amend`, `pol-education` (6 each), part of `ict-applications`.
+  - Not started: `ict-applications`, `ict-terms` (40 each), `edtech`, `tra-ugc`, all `eco-*`, `geo-universe`, `geo-earth`, `geo-soil-forest`, `geo-resources`, `geo-agri-transport`, `geo-population`, `geo-up`, `sci-space`, `sci-tech`, `env-*`, all `ca-*` (6 each).
+  To continue later: run a checker on each unchecked draft, then writers/checkers for the rest by the groups in `docs/TARGETS.md`, then `tools/validate.py data` and `tools/build_index.py`.
 
 ## 3. Set up (once)
 1. Get the code: clone `https://github.com/Lalitbhardwaj2002/gs-house` (or unzip the hand-off zip) and work in that folder.
@@ -97,10 +99,9 @@ Fatman pages are **printed** pages (see docs/fatman_index.md). "—" = not in Fa
 - `PUBLIC_URL` in `app.js` is the future GitHub Pages address (used for invite links when hosting from localhost).
 
 ## 7. Still to do
-1. Write and check all 73 sections (sections 4–5). Then validate all and build the index.
-2. Full play-test: solo and a 3-tab room (as done for Mindmela), phone width, Hindi UI, answer-sheet printing.
-3. App icons (192, 512, maskable, apple-touch), add them to `manifest.json`; share image `og-image.png`; Open Graph and structured data in `index.html`.
-4. Publish: enable GitHub Pages (main branch, root), then Google Search Console (owner must sign in himself) and IndexNow for Bing.
+1. Check the unchecked drafts and write/check the remaining 36 sections (see section 2). Then validate all and build the index.
+2. App icons (192, 512, maskable, apple-touch) in `manifest.json`; share image `og-image.png`; Open Graph tags in `index.html`.
+3. Google Search Console (the owner must sign in himself) and IndexNow for Bing.
 
 ## 8. Feature ideas to offer the owner
 - "Revise my mistakes" mode built from wrong answers saved on the device.
