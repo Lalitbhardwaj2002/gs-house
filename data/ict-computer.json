@@ -1,0 +1,2517 @@
+{
+ "section": "ict-computer",
+ "questions": [
+  {
+   "id": "ict-computer-001",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Who among the following is known as the 'Father of the Computer'?",
+    "options": [
+     "Charles Babbage",
+     "Blaise Pascal",
+     "Herman Hollerith",
+     "Alan Turing"
+    ],
+    "explanation": "Charles Babbage designed the Analytical Engine (1834), a mechanical machine for input, processing, storage and output that is considered the basis of modern computers. For this he is called the Father of the Computer.",
+    "notes": [
+     "Charles Babbage: English mathematician who designed the Difference Engine and the Analytical Engine.",
+     "Blaise Pascal: French mathematician who built the Pascaline, a mechanical calculator, in 1642.",
+     "Herman Hollerith: designed a punched-card tabulating machine (1890) for summarising census data.",
+     "Alan Turing: British mathematician who proposed the Turing machine, a theoretical model of computation."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Pioneers"
+    ],
+    "facts": [
+     "The Analytical Engine had a 'mill' for processing and a 'store' for memory.",
+     "Ada Lovelace wrote notes describing how the Analytical Engine could be programmed."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किसे 'कम्प्यूटर का जनक' कहा जाता है?",
+    "options": [
+     "चार्ल्स बैबेज",
+     "ब्लेज़ पास्कल",
+     "हरमन हॉलेरिथ",
+     "एलन ट्यूरिंग"
+    ],
+    "explanation": "चार्ल्स बैबेज ने एनालिटिकल इंजन (1834) की रूपरेखा बनाई, जो इनपुट, प्रोसेसिंग, भंडारण और आउटपुट करने वाली यांत्रिक मशीन थी और आधुनिक कम्प्यूटर का आधार मानी जाती है। इसी कारण उन्हें कम्प्यूटर का जनक कहा जाता है।",
+    "notes": [
+     "चार्ल्स बैबेज: अंग्रेज गणितज्ञ, जिन्होंने डिफरेंस इंजन और एनालिटिकल इंजन की रूपरेखा बनाई।",
+     "ब्लेज़ पास्कल: फ्रांसीसी गणितज्ञ, जिन्होंने 1642 में यांत्रिक गणक 'पास्कलाइन' बनाया।",
+     "हरमन हॉलेरिथ: जनगणना आँकड़ों के सारांश हेतु पंच कार्ड आधारित टेबुलेटिंग मशीन (1890) के निर्माता।",
+     "एलन ट्यूरिंग: ब्रिटिश गणितज्ञ, जिन्होंने संगणना का सैद्धांतिक मॉडल 'ट्यूरिंग मशीन' प्रस्तुत किया।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "अग्रदूत"
+    ],
+    "facts": [
+     "एनालिटिकल इंजन में प्रोसेसिंग के लिए 'मिल' और स्मृति के लिए 'स्टोर' था।",
+     "एडा लवलेस ने एनालिटिकल इंजन को प्रोग्राम करने की विधि पर टिप्पणियाँ लिखीं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "special-topics",
+     "page": 27
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System (Fig. 1.4 timeline)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-002",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The transistor, which replaced vacuum tubes in computers, was developed at:",
+    "options": [
+     "IBM",
+     "Bell Labs",
+     "Intel",
+     "Texas Instruments"
+    ],
+    "explanation": "The transistor was invented in 1947 at Bell Labs using semiconductor materials. Transistors replaced vacuum tubes and became the basic component of second-generation computers.",
+    "notes": [
+     "IBM: announced the System/360 family in 1964, which began the third generation of computers.",
+     "Bell Labs: the transistor was invented here in 1947 by Bardeen, Brattain and Shockley.",
+     "Intel: founded in 1968; it produced the first commercial microprocessor, the 4004, in 1971.",
+     "Texas Instruments: Jack Kilby demonstrated the first integrated circuit here in 1958."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Second generation"
+    ],
+    "facts": [
+     "Transistors are smaller, faster, cheaper and far more reliable than vacuum tubes.",
+     "Bardeen, Brattain and Shockley shared the 1956 Nobel Prize in Physics for the transistor."
+    ]
+   },
+   "hi": {
+    "q": "कम्प्यूटरों में वैक्यूम ट्यूब का स्थान लेने वाले ट्रांजिस्टर का विकास कहाँ हुआ था?",
+    "options": [
+     "आईबीएम (IBM)",
+     "बेल लैब्स",
+     "इंटेल",
+     "टेक्सास इंस्ट्रूमेंट्स"
+    ],
+    "explanation": "ट्रांजिस्टर का आविष्कार 1947 में बेल लैब्स में अर्धचालक पदार्थों से हुआ। ट्रांजिस्टरों ने वैक्यूम ट्यूब का स्थान लिया और ये दूसरी पीढ़ी के कम्प्यूटरों का मूल घटक बने।",
+    "notes": [
+     "आईबीएम: 1964 में System/360 श्रृंखला घोषित की, जिससे कम्प्यूटरों की तीसरी पीढ़ी आरम्भ हुई।",
+     "बेल लैब्स: यहीं 1947 में बार्डीन, ब्रैटेन और शॉकले ने ट्रांजिस्टर का आविष्कार किया।",
+     "इंटेल: 1968 में स्थापित; 1971 में पहला व्यावसायिक माइक्रोप्रोसेसर 4004 बनाया।",
+     "टेक्सास इंस्ट्रूमेंट्स: यहाँ जैक किल्बी ने 1958 में पहला एकीकृत परिपथ (IC) प्रदर्शित किया।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "दूसरी पीढ़ी"
+    ],
+    "facts": [
+     "ट्रांजिस्टर वैक्यूम ट्यूब से छोटे, तेज, सस्ते और कहीं अधिक विश्वसनीय होते हैं।",
+     "ट्रांजिस्टर के लिए बार्डीन, ब्रैटेन और शॉकले को 1956 का भौतिकी नोबेल पुरस्कार मिला।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System (Fig. 1.4 timeline)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    },
+    {
+     "source": "IGNOU eGyanKosh, Operating System: An Overview, Unit 1 (generations)",
+     "url": "https://egyankosh.ac.in/bitstream/123456789/10329/1/Unit-1.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-003",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Match List-I (Generation of computers) with List-II (Main electronic component) and select the correct answer using the codes given below the lists:\nList-I: A. First generation B. Second generation C. Third generation D. Fourth generation\nList-II: 1. Integrated circuits 2. Vacuum tubes 3. VLSI microprocessors 4. Transistors",
+    "options": [
+     "A-4, B-2, C-1, D-3",
+     "A-2, B-1, C-4, D-3",
+     "A-2, B-4, C-1, D-3",
+     "A-3, B-4, C-1, D-2"
+    ],
+    "explanation": "The first generation used vacuum tubes, the second used transistors, the third used integrated circuits (from the IBM System/360 of 1964), and the fourth replaced LSI with very large scale integration (VLSI), giving microprocessors and personal computers.",
+    "notes": [
+     "Wrong: transistors belong to the second generation, not the first.",
+     "Wrong: integrated circuits belong to the third generation, not the second.",
+     "Correct: vacuum tubes, transistors, integrated circuits, VLSI microprocessors.",
+     "Wrong: VLSI microprocessors mark the fourth generation, not the first."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Generations of computers"
+    ],
+    "facts": [
+     "UNIVAC I (1951) was a first-generation vacuum-tube computer.",
+     "The personal computer and the workstation appeared in the fourth generation."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (कम्प्यूटर की पीढ़ी) को सूची-II (मुख्य इलेक्ट्रॉनिक घटक) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. पहली पीढ़ी B. दूसरी पीढ़ी C. तीसरी पीढ़ी D. चौथी पीढ़ी\nसूची-II: 1. एकीकृत परिपथ (IC) 2. वैक्यूम ट्यूब 3. VLSI माइक्रोप्रोसेसर 4. ट्रांजिस्टर",
+    "options": [
+     "A-4, B-2, C-1, D-3",
+     "A-2, B-1, C-4, D-3",
+     "A-2, B-4, C-1, D-3",
+     "A-3, B-4, C-1, D-2"
+    ],
+    "explanation": "पहली पीढ़ी में वैक्यूम ट्यूब, दूसरी में ट्रांजिस्टर, तीसरी में एकीकृत परिपथ (1964 के IBM System/360 से) प्रयुक्त हुए, और चौथी पीढ़ी में LSI का स्थान अति-वृहद स्तरीय एकीकरण (VLSI) ने लिया, जिससे माइक्रोप्रोसेसर और पर्सनल कम्प्यूटर आए।",
+    "notes": [
+     "गलत: ट्रांजिस्टर दूसरी पीढ़ी के हैं, पहली के नहीं।",
+     "गलत: एकीकृत परिपथ तीसरी पीढ़ी के हैं, दूसरी के नहीं।",
+     "सही: वैक्यूम ट्यूब, ट्रांजिस्टर, एकीकृत परिपथ, VLSI माइक्रोप्रोसेसर।",
+     "गलत: VLSI माइक्रोप्रोसेसर चौथी पीढ़ी की पहचान हैं, पहली की नहीं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "कम्प्यूटर की पीढ़ियाँ"
+    ],
+    "facts": [
+     "UNIVAC I (1951) पहली पीढ़ी का वैक्यूम ट्यूब आधारित कम्प्यूटर था।",
+     "पर्सनल कम्प्यूटर और वर्कस्टेशन चौथी पीढ़ी में आए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IGNOU eGyanKosh, Operating System: An Overview, Unit 1, Sec. 1.4 (generations)",
+     "url": "https://egyankosh.ac.in/bitstream/123456789/10329/1/Unit-1.pdf"
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-004",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Who invented the computer mouse?",
+    "options": [
+     "Tim Berners-Lee",
+     "Ted Hoff",
+     "Dennis Ritchie",
+     "Douglas Engelbart"
+    ],
+    "explanation": "Douglas Engelbart of the Stanford Research Institute (SRI) invented the mouse in 1964; Bill English built the first prototype. Engelbart is named on the patent for the 'X-Y Position Indicator for a Display System'.",
+    "notes": [
+     "Tim Berners-Lee: created the World Wide Web at CERN.",
+     "Ted Hoff: with Stanley Mazor, conceived Intel's first microprocessor, the 4004.",
+     "Dennis Ritchie: developed UNIX with Ken Thompson and created the C language.",
+     "Douglas Engelbart: invented the mouse at SRI in 1964."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Input devices",
+     "Mouse"
+    ],
+    "facts": [
+     "The first mouse had a wooden shell and wheels that translated motion into cursor movement.",
+     "Engelbart showed the mouse publicly in a 1968 demonstration of interactive computing."
+    ]
+   },
+   "hi": {
+    "q": "कम्प्यूटर माउस का आविष्कार किसने किया था?",
+    "options": [
+     "टिम बर्नर्स-ली",
+     "टेड हॉफ",
+     "डेनिस रिची",
+     "डगलस एंजेलबर्ट"
+    ],
+    "explanation": "स्टैनफोर्ड रिसर्च इंस्टीट्यूट (SRI) के डगलस एंजेलबर्ट ने 1964 में माउस का आविष्कार किया; इसका पहला प्रोटोटाइप बिल इंग्लिश ने बनाया। 'X-Y पोज़िशन इंडिकेटर फॉर ए डिस्प्ले सिस्टम' के पेटेंट में आविष्कारक के रूप में एंजेलबर्ट का नाम है।",
+    "notes": [
+     "टिम बर्नर्स-ली: CERN में वर्ल्ड वाइड वेब के निर्माता।",
+     "टेड हॉफ: स्टैनली मेज़र के साथ इंटेल के पहले माइक्रोप्रोसेसर 4004 की परिकल्पना की।",
+     "डेनिस रिची: केन थॉम्पसन के साथ UNIX विकसित किया और C भाषा बनाई।",
+     "डगलस एंजेलबर्ट: 1964 में SRI में माउस का आविष्कार किया।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "इनपुट युक्तियाँ",
+     "माउस"
+    ],
+    "facts": [
+     "पहले माउस का खोल लकड़ी का था और उसके पहिए गति को कर्सर की गति में बदलते थे।",
+     "एंजेलबर्ट ने 1968 में इंटरैक्टिव कम्प्यूटिंग के प्रदर्शन में माउस को सार्वजनिक रूप से दिखाया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "special-topics",
+     "page": 25
+    },
+    {
+     "source": "SRI International, Computer mouse and interactive computing",
+     "url": "https://www.sri.com/hoi/computer-mouse-and-interactive-computing/"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-005",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Consider the following statements about Ada Lovelace:\n1. She published notes on Babbage's Analytical Engine describing a stepwise sequence of operations for solving a mathematical problem.\n2. She built the Difference Engine.\n3. She is often referred to as the first computer programmer.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "Only 1",
+     "1 and 3 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "Ada Lovelace's notes on the Analytical Engine contain the first published stepwise sequence of operations (an algorithm) for such a machine, so she is often called the first programmer. The Difference Engine was Charles Babbage's design; it was not built by her.",
+    "notes": [
+     "Incomplete: statement 3 is also correct.",
+     "Correct: statements 1 and 3 are true; statement 2 is false.",
+     "Wrong: statement 2 is false; the Difference Engine was Babbage's design.",
+     "Wrong: statement 2 is false."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Pioneers"
+    ],
+    "facts": [
+     "Ada Lovelace was the daughter of the poet Lord Byron.",
+     "The programming language Ada is named after her."
+    ]
+   },
+   "hi": {
+    "q": "एडा लवलेस के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. उन्होंने बैबेज के एनालिटिकल इंजन पर टिप्पणियाँ प्रकाशित कीं, जिनमें किसी गणितीय समस्या को हल करने हेतु क्रमबद्ध संक्रियाओं का वर्णन था।\n2. उन्होंने डिफरेंस इंजन का निर्माण किया।\n3. उन्हें प्रायः प्रथम कम्प्यूटर प्रोग्रामर कहा जाता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 3",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "एनालिटिकल इंजन पर एडा लवलेस की टिप्पणियों में ऐसी मशीन के लिए क्रमबद्ध संक्रियाओं (एल्गोरिद्म) का पहला प्रकाशित वर्णन है, इसलिए उन्हें प्रायः प्रथम प्रोग्रामर कहा जाता है। डिफरेंस इंजन चार्ल्स बैबेज की रूपरेखा थी; उसे एडा ने नहीं बनाया।",
+    "notes": [
+     "अपूर्ण: कथन 3 भी सही है।",
+     "सही: कथन 1 और 3 सही हैं; कथन 2 गलत है।",
+     "गलत: कथन 2 गलत है; डिफरेंस इंजन बैबेज की रूपरेखा थी।",
+     "गलत: कथन 2 गलत है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "अग्रदूत"
+    ],
+    "facts": [
+     "एडा लवलेस कवि लॉर्ड बायरन की पुत्री थीं।",
+     "प्रोग्रामिंग भाषा 'Ada' का नाम उन्हीं के नाम पर रखा गया है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Computer History Museum, The Engines: Ada Lovelace",
+     "url": "https://www.computerhistory.org/babbage/adalovelace/"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-006",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Who among the following received the Nobel Prize in Physics (2000) for his part in the invention of the integrated circuit (IC)?",
+    "options": [
+     "Jack Kilby",
+     "William Shockley",
+     "John Bardeen",
+     "Ted Hoff"
+    ],
+    "explanation": "Jack Kilby of Texas Instruments shared the 2000 Nobel Prize in Physics 'for his part in the invention of the integrated circuit'. ICs became the basic component of third-generation computers.",
+    "notes": [
+     "Jack Kilby: Texas Instruments engineer; Nobel Prize in Physics 2000 for the integrated circuit.",
+     "William Shockley: shared the 1956 Nobel Prize in Physics for the transistor.",
+     "John Bardeen: won the Physics Nobel twice, for the transistor (1956) and superconductivity theory (1972).",
+     "Ted Hoff: conceived Intel's first microprocessor, the 4004; not a Nobel laureate."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Third generation"
+    ],
+    "facts": [
+     "An integrated circuit puts many transistors, resistors and capacitors on one semiconductor chip.",
+     "Robert Noyce independently developed a silicon integrated circuit."
+    ]
+   },
+   "hi": {
+    "q": "एकीकृत परिपथ (IC) के आविष्कार में योगदान के लिए निम्नलिखित में से किसे भौतिकी का नोबेल पुरस्कार (2000) मिला?",
+    "options": [
+     "जैक किल्बी",
+     "विलियम शॉकले",
+     "जॉन बार्डीन",
+     "टेड हॉफ"
+    ],
+    "explanation": "टेक्सास इंस्ट्रूमेंट्स के जैक किल्बी को 'एकीकृत परिपथ के आविष्कार में उनके योगदान के लिए' वर्ष 2000 का भौतिकी नोबेल पुरस्कार (साझा) मिला। IC तीसरी पीढ़ी के कम्प्यूटरों का मूल घटक बना।",
+    "notes": [
+     "जैक किल्बी: टेक्सास इंस्ट्रूमेंट्स के अभियंता; IC के लिए 2000 का भौतिकी नोबेल।",
+     "विलियम शॉकले: ट्रांजिस्टर के लिए 1956 का भौतिकी नोबेल (साझा)।",
+     "जॉन बार्डीन: दो बार भौतिकी नोबेल, ट्रांजिस्टर (1956) और अतिचालकता सिद्धांत (1972) के लिए।",
+     "टेड हॉफ: इंटेल के पहले माइक्रोप्रोसेसर 4004 की परिकल्पना की; नोबेल विजेता नहीं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "तीसरी पीढ़ी"
+    ],
+    "facts": [
+     "एकीकृत परिपथ में अनेक ट्रांजिस्टर, प्रतिरोधक और संधारित्र एक ही अर्धचालक चिप पर होते हैं।",
+     "रॉबर्ट नॉयस ने स्वतंत्र रूप से सिलिकॉन आधारित एकीकृत परिपथ विकसित किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NobelPrize.org, Jack S. Kilby – Facts (Physics 2000)",
+     "url": "https://www.nobelprize.org/prizes/physics/2000/kilby/facts/"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-007",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Consider the following statements about the Intel 4004:\n1. It was a 4-bit microprocessor introduced in 1971.\n2. About 2,300 transistors were packed into it.\n3. Its successor, the Intel 8008 announced in 1972, was a 16-bit device.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "The Intel 4004 (1971) was the first commercial single-chip CPU: a 4-bit device with about 2,300 transistors in a 16-pin package. The 8008 that followed in 1972 was an 8-bit device, so statement 3 is wrong.",
+    "notes": [
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false; the 8008 was 8-bit.",
+     "Wrong: statement 3 is false.",
+     "Wrong: only statements 1 and 2 are true."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Hardware",
+     "Microprocessor"
+    ],
+    "facts": [
+     "Ted Hoff and Stanley Mazor conceived the 4004; Federico Faggin designed the chip.",
+     "A microprocessor places the whole CPU on a single integrated circuit."
+    ]
+   },
+   "hi": {
+    "q": "इंटेल 4004 के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. यह 1971 में प्रस्तुत 4-बिट माइक्रोप्रोसेसर था।\n2. इसमें लगभग 2,300 ट्रांजिस्टर समाहित थे।\n3. 1972 में घोषित इसका उत्तरवर्ती इंटेल 8008 एक 16-बिट युक्ति था।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "इंटेल 4004 (1971) पहला व्यावसायिक एकल-चिप CPU था: 16-पिन पैकेज में लगभग 2,300 ट्रांजिस्टर वाली 4-बिट युक्ति। 1972 में आया 8008 एक 8-बिट युक्ति था, अतः कथन 3 गलत है।",
+    "notes": [
+     "सही: कथन 1 और 2 सही हैं।",
+     "गलत: कथन 3 गलत है; 8008 एक 8-बिट युक्ति था।",
+     "गलत: कथन 3 गलत है।",
+     "गलत: केवल कथन 1 और 2 सही हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "हार्डवेयर",
+     "माइक्रोप्रोसेसर"
+    ],
+    "facts": [
+     "4004 की परिकल्पना टेड हॉफ और स्टैनली मेज़र ने की; चिप का डिज़ाइन फेडेरिको फैगिन ने बनाया।",
+     "माइक्रोप्रोसेसर में पूरा CPU एक ही एकीकृत परिपथ पर होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Computer History Museum, The Silicon Engine: 1971 Microprocessor Integrates CPU Function onto a Single Chip",
+     "url": "https://www.computerhistory.org/siliconengine/microprocessor-integrates-cpu-function-onto-a-single-chip/"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-008",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Match List-I (Pioneer) with List-II (Contribution) and select the correct answer using the codes given below the lists:\nList-I: A. Blaise Pascal B. Herman Hollerith C. John von Neumann D. Alan Turing\nList-II: 1. Stored-program concept 2. Mechanical calculator for adding and subtracting numbers 3. Tabulating machine for data on punched cards 4. Theoretical model of a universal computing machine",
+    "options": [
+     "A-3, B-2, C-1, D-4",
+     "A-2, B-3, C-4, D-1",
+     "A-2, B-1, C-3, D-4",
+     "A-2, B-3, C-1, D-4"
+    ],
+    "explanation": "Pascal built the Pascaline (1642), Hollerith designed a punched-card tabulating machine (1890), von Neumann introduced the stored-program concept in which data and program share memory, and Turing proposed the Turing machine.",
+    "notes": [
+     "Wrong: Pascal built the Pascaline, not the tabulating machine.",
+     "Wrong: von Neumann and Turing are interchanged.",
+     "Wrong: Hollerith and von Neumann are interchanged.",
+     "Correct: Pascal–calculator, Hollerith–tabulator, von Neumann–stored program, Turing–Turing machine."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Pioneers"
+    ],
+    "facts": [
+     "Hollerith's tabulating company later became part of IBM.",
+     "Most modern computers follow the von Neumann architecture."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (अग्रदूत) को सूची-II (योगदान) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. ब्लेज़ पास्कल B. हरमन हॉलेरिथ C. जॉन वॉन न्यूमैन D. एलन ट्यूरिंग\nसूची-II: 1. संग्रहीत प्रोग्राम (स्टोर्ड प्रोग्राम) अवधारणा 2. संख्याओं को जोड़ने-घटाने वाला यांत्रिक गणक 3. पंच कार्ड पर अंकित आँकड़ों हेतु टेबुलेटिंग मशीन 4. सार्वभौमिक संगणन मशीन का सैद्धांतिक मॉडल",
+    "options": [
+     "A-3, B-2, C-1, D-4",
+     "A-2, B-3, C-4, D-1",
+     "A-2, B-1, C-3, D-4",
+     "A-2, B-3, C-1, D-4"
+    ],
+    "explanation": "पास्कल ने पास्कलाइन (1642) बनाया, हॉलेरिथ ने पंच कार्ड आधारित टेबुलेटिंग मशीन (1890) की रूपरेखा बनाई, वॉन न्यूमैन ने संग्रहीत प्रोग्राम अवधारणा दी जिसमें डेटा और प्रोग्राम एक ही मेमोरी में रहते हैं, और ट्यूरिंग ने ट्यूरिंग मशीन प्रस्तुत की।",
+    "notes": [
+     "गलत: पास्कल ने पास्कलाइन बनाया, टेबुलेटिंग मशीन नहीं।",
+     "गलत: वॉन न्यूमैन और ट्यूरिंग आपस में बदल गए हैं।",
+     "गलत: हॉलेरिथ और वॉन न्यूमैन आपस में बदल गए हैं।",
+     "सही: पास्कल–गणक, हॉलेरिथ–टेबुलेटर, वॉन न्यूमैन–संग्रहीत प्रोग्राम, ट्यूरिंग–ट्यूरिंग मशीन।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "अग्रदूत"
+    ],
+    "facts": [
+     "हॉलेरिथ की टेबुलेटिंग कंपनी बाद में IBM का हिस्सा बनी।",
+     "अधिकांश आधुनिक कम्प्यूटर वॉन न्यूमैन वास्तुकला पर आधारित हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System (Fig. 1.4 timeline, Sec. 1.2)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following is called the 'brain' of the computer?",
+    "options": [
+     "RAM",
+     "Hard disk",
+     "CPU",
+     "Motherboard"
+    ],
+    "explanation": "The Central Processing Unit (CPU) processes and executes every instruction given to the computer, so it is called the brain of the computer.",
+    "notes": [
+     "RAM: volatile primary memory that holds programs and data while they are in use.",
+     "Hard disk: non-volatile secondary storage for keeping data permanently.",
+     "CPU: executes instructions; contains the ALU, the control unit and registers.",
+     "Motherboard: the main circuit board on which the CPU, memory and other parts are connected."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Hardware",
+     "CPU"
+    ],
+    "facts": [
+     "Every instruction from an input device must be sent to the CPU for execution.",
+     "A microprocessor is a CPU built on a single chip."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किसे कम्प्यूटर का 'मस्तिष्क' कहा जाता है?",
+    "options": [
+     "RAM",
+     "हार्ड डिस्क",
+     "CPU",
+     "मदरबोर्ड"
+    ],
+    "explanation": "सेंट्रल प्रोसेसिंग यूनिट (CPU) कम्प्यूटर को दिए गए प्रत्येक निर्देश का प्रसंस्करण और निष्पादन करती है, इसलिए इसे कम्प्यूटर का मस्तिष्क कहा जाता है।",
+    "notes": [
+     "RAM: अस्थायी (वोलेटाइल) प्राथमिक मेमोरी, जो उपयोग के समय प्रोग्राम और डेटा रखती है।",
+     "हार्ड डिस्क: डेटा को स्थायी रूप से रखने वाली अवाष्पशील (नॉन-वोलेटाइल) द्वितीयक भंडारण युक्ति।",
+     "CPU: निर्देशों का निष्पादन करती है; इसमें ALU, नियंत्रण इकाई और रजिस्टर होते हैं।",
+     "मदरबोर्ड: मुख्य परिपथ बोर्ड, जिस पर CPU, मेमोरी और अन्य भाग जुड़े होते हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "हार्डवेयर",
+     "CPU"
+    ],
+    "facts": [
+     "इनपुट युक्ति से आया प्रत्येक निर्देश निष्पादन के लिए CPU को भेजा जाता है।",
+     "माइक्रोप्रोसेसर एक ही चिप पर बना CPU है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-010",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Consider the following statements:\n1. The introduction of UNIVAC I in 1951 marked the beginning of commercial computing.\n2. The IBM System/360 family belonged to the second generation of computers.\n3. The personal computer and the workstation appeared in the fourth generation.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "Only 1",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 and 3 only"
+    ],
+    "explanation": "UNIVAC I (1951) began the commercial first generation, and the PC and workstation are features of the fourth generation. The IBM System/360, announced in April 1964, began the third generation and used integrated circuits, so statement 2 is wrong.",
+    "notes": [
+     "Incomplete: statement 3 is also correct.",
+     "Wrong: statement 2 is false; System/360 began the third generation.",
+     "Wrong: statement 2 is false.",
+     "Correct: statements 1 and 3 are true."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Generations of computers"
+    ],
+    "facts": [
+     "UNIVAC I was built by Eckert and Mauchly.",
+     "Second-generation computers used transistors in place of vacuum tubes."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. 1951 में UNIVAC I के आगमन से व्यावसायिक कम्प्यूटिंग का आरम्भ हुआ।\n2. IBM System/360 श्रृंखला कम्प्यूटरों की दूसरी पीढ़ी से संबंधित थी।\n3. पर्सनल कम्प्यूटर और वर्कस्टेशन चौथी पीढ़ी में आए।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1 और 3"
+    ],
+    "explanation": "UNIVAC I (1951) से व्यावसायिक पहली पीढ़ी आरम्भ हुई, और PC तथा वर्कस्टेशन चौथी पीढ़ी की विशेषताएँ हैं। अप्रैल 1964 में घोषित IBM System/360 से तीसरी पीढ़ी आरम्भ हुई और इसमें एकीकृत परिपथ प्रयुक्त हुए, अतः कथन 2 गलत है।",
+    "notes": [
+     "अपूर्ण: कथन 3 भी सही है।",
+     "गलत: कथन 2 गलत है; System/360 से तीसरी पीढ़ी आरम्भ हुई।",
+     "गलत: कथन 2 गलत है।",
+     "सही: कथन 1 और 3 सही हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "कम्प्यूटर की पीढ़ियाँ"
+    ],
+    "facts": [
+     "UNIVAC I का निर्माण एकर्ट और मॉकली ने किया था।",
+     "दूसरी पीढ़ी के कम्प्यूटरों में वैक्यूम ट्यूब के स्थान पर ट्रांजिस्टर प्रयुक्त हुए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IGNOU eGyanKosh, Operating System: An Overview, Unit 1, Sec. 1.4 (generations)",
+     "url": "https://egyankosh.ac.in/bitstream/123456789/10329/1/Unit-1.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-011",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which unit of the CPU performs arithmetic and logical operations?",
+    "options": [
+     "Control Unit (CU)",
+     "Arithmetic Logic Unit (ALU)",
+     "Registers",
+     "Cache memory"
+    ],
+    "explanation": "The Arithmetic Logic Unit (ALU) carries out all the arithmetic and logic operations required by the instructions of a program.",
+    "notes": [
+     "Control Unit: controls sequential execution, interprets instructions and guides data flow.",
+     "ALU: performs arithmetic (addition, subtraction etc.) and logical (comparison) operations.",
+     "Registers: small, very fast storage locations inside the CPU chip.",
+     "Cache memory: high-speed memory between the CPU and main memory."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Hardware",
+     "CPU components"
+    ],
+    "facts": [
+     "The CPU has two main components besides registers: the ALU and the CU.",
+     "The CPU fetches program and data from memory, processes them and stores the result back."
+    ]
+   },
+   "hi": {
+    "q": "CPU की कौन-सी इकाई अंकगणितीय और तार्किक संक्रियाएँ करती है?",
+    "options": [
+     "नियंत्रण इकाई (CU)",
+     "अंकगणितीय तर्क इकाई (ALU)",
+     "रजिस्टर",
+     "कैश मेमोरी"
+    ],
+    "explanation": "अंकगणितीय तर्क इकाई (ALU) प्रोग्राम के निर्देशों के अनुसार सभी अंकगणितीय और तार्किक संक्रियाएँ करती है।",
+    "notes": [
+     "नियंत्रण इकाई: निर्देशों के क्रमिक निष्पादन को नियंत्रित करती है, निर्देशों की व्याख्या करती है और डेटा प्रवाह निर्देशित करती है।",
+     "ALU: अंकगणितीय (जोड़, घटाना आदि) और तार्किक (तुलना) संक्रियाएँ करती है।",
+     "रजिस्टर: CPU चिप के भीतर छोटे और अत्यंत तेज भंडारण स्थान।",
+     "कैश मेमोरी: CPU और मुख्य मेमोरी के बीच की उच्च गति मेमोरी।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "हार्डवेयर",
+     "CPU के घटक"
+    ],
+    "facts": [
+     "रजिस्टरों के अतिरिक्त CPU के दो मुख्य घटक हैं: ALU और CU।",
+     "CPU मेमोरी से प्रोग्राम और डेटा लाता है, उनका प्रसंस्करण करता है और परिणाम वापस मेमोरी में रखता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.1.1 CPU",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-012",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Consider the following statements about the Central Processing Unit (CPU):\n1. Registers are part of the CPU chip and are limited in size and number.\n2. The Control Unit interprets instructions and controls their sequential execution.\n3. The clock speed of modern processors is measured in gigahertz (GHz).\nWhich of the statements given above is/are correct?",
+    "options": [
+     "Only 1",
+     "1 and 2 only",
+     "1, 2 and 3",
+     "2 and 3 only"
+    ],
+    "explanation": "All three are correct. Registers are the CPU's own small local memory, the control unit interprets instructions and guides data flow, and clock speed, once measured in Hz and kHz, is now measured in GHz (billions of pulses per second).",
+    "notes": [
+     "Incomplete: statements 2 and 3 are also correct.",
+     "Incomplete: statement 3 is also correct.",
+     "Correct: all three statements are true.",
+     "Incomplete: statement 1 is also correct."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Hardware",
+     "CPU components"
+    ],
+    "facts": [
+     "Clock speed indicates how fast the computer can execute instructions.",
+     "Word size, memory size and clock speed are used to classify microprocessors."
+    ]
+   },
+   "hi": {
+    "q": "सेंट्रल प्रोसेसिंग यूनिट (CPU) के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. रजिस्टर CPU चिप का भाग होते हैं और इनका आकार तथा संख्या सीमित होती है।\n2. नियंत्रण इकाई निर्देशों की व्याख्या करती है और उनके क्रमिक निष्पादन को नियंत्रित करती है।\n3. आधुनिक प्रोसेसरों की क्लॉक स्पीड गीगाहर्ट्ज़ (GHz) में मापी जाती है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "1, 2 और 3",
+     "केवल 2 और 3"
+    ],
+    "explanation": "तीनों कथन सही हैं। रजिस्टर CPU की अपनी छोटी स्थानीय मेमोरी हैं, नियंत्रण इकाई निर्देशों की व्याख्या कर डेटा प्रवाह निर्देशित करती है, और क्लॉक स्पीड, जो पहले Hz और kHz में मापी जाती थी, अब GHz (अरबों स्पंद प्रति सेकंड) में मापी जाती है।",
+    "notes": [
+     "अपूर्ण: कथन 2 और 3 भी सही हैं।",
+     "अपूर्ण: कथन 3 भी सही है।",
+     "सही: तीनों कथन सही हैं।",
+     "अपूर्ण: कथन 1 भी सही है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "हार्डवेयर",
+     "CPU के घटक"
+    ],
+    "facts": [
+     "क्लॉक स्पीड बताती है कि कम्प्यूटर कितनी तेजी से निर्देशों का निष्पादन कर सकता है।",
+     "वर्ड साइज़, मेमोरी साइज़ और क्लॉक स्पीड के आधार पर माइक्रोप्रोसेसरों का वर्गीकरण होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.1.1 and 1.5",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-013",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Assertion (A): ENIAC is classified as a second-generation computer.\nReason (R): ENIAC used vacuum tubes as its switching elements.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "ENIAC, announced in 1946 as the first general-purpose electronic computer, was built with vacuum tubes. Vacuum tubes are the mark of the first generation; the second generation used transistors. So A is false and R is true.",
+    "notes": [
+     "Wrong: A is false.",
+     "Wrong: A is false; ENIAC is not a second-generation machine.",
+     "Wrong: A is false and R is true.",
+     "Correct: ENIAC used vacuum tubes, which places it in the first generation."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "First generation"
+    ],
+    "facts": [
+     "ENIAC was built at the University of Pennsylvania by J. Presper Eckert and John Mauchly.",
+     "Tube reliability was the chief technical challenge in building ENIAC."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): ENIAC को दूसरी पीढ़ी का कम्प्यूटर माना जाता है।\nकारण (R): ENIAC में स्विचिंग तत्व के रूप में वैक्यूम ट्यूब प्रयुक्त हुए थे।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "1946 में प्रथम सामान्य-उद्देश्य इलेक्ट्रॉनिक कम्प्यूटर के रूप में घोषित ENIAC वैक्यूम ट्यूबों से बना था। वैक्यूम ट्यूब पहली पीढ़ी की पहचान हैं; दूसरी पीढ़ी में ट्रांजिस्टर प्रयुक्त हुए। अतः (A) गलत और (R) सही है।",
+    "notes": [
+     "गलत: कथन (A) गलत है।",
+     "गलत: कथन (A) गलत है; ENIAC दूसरी पीढ़ी की मशीन नहीं है।",
+     "गलत: कथन (A) गलत है और कारण (R) सही है।",
+     "सही: ENIAC में वैक्यूम ट्यूब थे, अतः यह पहली पीढ़ी का है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "पहली पीढ़ी"
+    ],
+    "facts": [
+     "ENIAC का निर्माण पेंसिल्वेनिया विश्वविद्यालय में जे. प्रेस्पर एकर्ट और जॉन मॉकली ने किया।",
+     "ENIAC के निर्माण में मुख्य तकनीकी चुनौती ट्यूबों की विश्वसनीयता थी।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Penn Engineering, Celebrating Penn Engineering History: ENIAC",
+     "url": "https://www.engineering.upenn.edu/about/history-heritage/eniac/"
+    },
+    {
+     "source": "IGNOU eGyanKosh, Operating System: An Overview, Unit 1, Sec. 1.4 (generations)",
+     "url": "https://egyankosh.ac.in/bitstream/123456789/10329/1/Unit-1.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-014",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "Assertion (A): Cache memory reduces the average time the CPU needs to access data from main memory.\nReason (R): Cache is a very high-speed memory placed between the CPU and main memory that keeps copies of frequently accessed data.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "When the CPU needs data it first checks the cache; if the data is there, it is read from the fast cache instead of the slower main memory. Because the cache holds copies of frequently used data, it lowers the average access time, so R explains A.",
+    "notes": [
+     "Correct: both are true and R explains why cache speeds up access.",
+     "Wrong: R is the very reason cache reduces access time.",
+     "Wrong: R is true.",
+     "Wrong: A is true."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Cache memory"
+    ],
+    "facts": [
+     "Cache may be built into the CPU chip or placed separately on the motherboard.",
+     "If the required data is not in the cache, the CPU reads it from primary memory."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): कैश मेमोरी मुख्य मेमोरी से डेटा प्राप्त करने में CPU द्वारा लिए जाने वाले औसत समय को कम करती है।\nकारण (R): कैश CPU और मुख्य मेमोरी के बीच स्थित अत्यंत उच्च गति की मेमोरी है, जो बार-बार प्रयुक्त डेटा की प्रतियाँ रखती है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "डेटा की आवश्यकता होने पर CPU पहले कैश देखता है; डेटा वहाँ मिलने पर धीमी मुख्य मेमोरी के स्थान पर तेज कैश से पढ़ा जाता है। कैश बार-बार प्रयुक्त डेटा की प्रतियाँ रखता है, इसलिए औसत अभिगम समय घटता है; अतः (R), (A) की सही व्याख्या है।",
+    "notes": [
+     "सही: दोनों सही हैं और (R) बताता है कि कैश अभिगम को तेज क्यों करता है।",
+     "गलत: (R) ही वह कारण है जिससे कैश अभिगम समय घटाता है।",
+     "गलत: कारण (R) सही है।",
+     "गलत: कथन (A) सही है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "कैश मेमोरी"
+    ],
+    "facts": [
+     "कैश CPU चिप में अंतर्निर्मित हो सकती है या मदरबोर्ड पर अलग से लगी हो सकती है।",
+     "आवश्यक डेटा कैश में न मिलने पर CPU उसे प्राथमिक मेमोरी से पढ़ता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.3.2 (B) Cache Memory",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    },
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-015",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "A nibble is equal to:",
+    "options": [
+     "2 bits",
+     "8 bits",
+     "4 bits",
+     "16 bits"
+    ],
+    "explanation": "Bits are grouped to form words; a 4-bit word is called a nibble. Two nibbles (8 bits) make one byte.",
+    "notes": [
+     "2 bits: can represent only four values (00 to 11); it has no standard name.",
+     "8 bits: this is one byte, i.e. two nibbles.",
+     "4 bits: one nibble, e.g. 1001 or 0010.",
+     "16 bits: two bytes."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Units of memory"
+    ],
+    "facts": [
+     "The bit (binary digit 0 or 1) is the basic unit of memory.",
+     "One hexadecimal digit corresponds exactly to one nibble."
+    ]
+   },
+   "hi": {
+    "q": "एक निबल किसके बराबर होता है?",
+    "options": [
+     "2 बिट",
+     "8 बिट",
+     "4 बिट",
+     "16 बिट"
+    ],
+    "explanation": "बिटों को समूहित करके वर्ड बनाए जाते हैं; 4-बिट वर्ड को निबल कहते हैं। दो निबल (8 बिट) मिलकर एक बाइट बनाते हैं।",
+    "notes": [
+     "2 बिट: केवल चार मान (00 से 11) दर्शा सकते हैं; इसका कोई मानक नाम नहीं है।",
+     "8 बिट: यह एक बाइट है, अर्थात दो निबल।",
+     "4 बिट: एक निबल, जैसे 1001 या 0010।",
+     "16 बिट: दो बाइट।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "मेमोरी की इकाइयाँ"
+    ],
+    "facts": [
+     "बिट (बाइनरी अंक 0 या 1) मेमोरी की मूल इकाई है।",
+     "एक हेक्साडेसिमल अंक ठीक एक निबल के बराबर होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.3.1 Units of Memory",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-016",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "In the binary convention used for computer memory, 1 kilobyte (KB) is equal to:",
+    "options": [
+     "1000 bytes",
+     "1024 bytes",
+     "1024 bits",
+     "1000 bits"
+    ],
+    "explanation": "Computer memory is organised in powers of 2, so in the binary convention 1 KB = 2¹⁰ = 1024 bytes, 1 MB = 1024 KB, 1 GB = 1024 MB and so on.",
+    "notes": [
+     "1000 bytes: the value of 1 kB in the decimal (SI) convention, not the binary one.",
+     "1024 bytes: 2¹⁰ bytes, the binary kilobyte.",
+     "1024 bits: equals 128 bytes, not a kilobyte.",
+     "1000 bits: equals 125 bytes."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Units of memory"
+    ],
+    "facts": [
+     "1 byte = 8 bits.",
+     "Storage makers often use the decimal convention, in which 1 kB = 1000 bytes."
+    ]
+   },
+   "hi": {
+    "q": "कम्प्यूटर मेमोरी में प्रयुक्त बाइनरी परिपाटी में 1 किलोबाइट (KB) किसके बराबर होता है?",
+    "options": [
+     "1000 बाइट",
+     "1024 बाइट",
+     "1024 बिट",
+     "1000 बिट"
+    ],
+    "explanation": "कम्प्यूटर मेमोरी 2 की घातों में व्यवस्थित होती है, इसलिए बाइनरी परिपाटी में 1 KB = 2¹⁰ = 1024 बाइट, 1 MB = 1024 KB, 1 GB = 1024 MB, इत्यादि।",
+    "notes": [
+     "1000 बाइट: दशमलव (SI) परिपाटी में 1 kB का मान, बाइनरी परिपाटी में नहीं।",
+     "1024 बाइट: 2¹⁰ बाइट, बाइनरी किलोबाइट।",
+     "1024 बिट: यह 128 बाइट है, किलोबाइट नहीं।",
+     "1000 बिट: यह 125 बाइट है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "मेमोरी की इकाइयाँ"
+    ],
+    "facts": [
+     "1 बाइट = 8 बिट।",
+     "भंडारण युक्ति निर्माता प्रायः दशमलव परिपाटी अपनाते हैं, जिसमें 1 kB = 1000 बाइट।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.3.1 (Table: 1 KB = 1024 Bytes)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-017",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "In the binary convention, 1 terabyte (TB) is equal to:",
+    "options": [
+     "2^40 bytes",
+     "2^30 bytes",
+     "2^50 bytes",
+     "2^32 bytes"
+    ],
+    "explanation": "1 KB = 2¹⁰ bytes, 1 MB = 2²⁰ bytes, 1 GB = 2³⁰ bytes, and 1 TB = 1024 GB = 2⁴⁰ bytes.",
+    "notes": [
+     "2⁴⁰ bytes: 1 TB = 1024 GB.",
+     "2³⁰ bytes: this is 1 GB.",
+     "2⁵⁰ bytes: this is 1 petabyte (PB) = 1024 TB.",
+     "2³² bytes: this is 4 GB, the largest memory directly addressable with 32-bit addresses."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Units of memory"
+    ],
+    "facts": [
+     "Order of units: KB, MB, GB, TB, PB, EB, ZB, YB; each is 1024 times the previous one.",
+     "In the decimal convention, 1 TB = 10¹² bytes."
+    ]
+   },
+   "hi": {
+    "q": "बाइनरी परिपाटी में 1 टेराबाइट (TB) किसके बराबर होता है?",
+    "options": [
+     "2^40 बाइट",
+     "2^30 बाइट",
+     "2^50 बाइट",
+     "2^32 बाइट"
+    ],
+    "explanation": "1 KB = 2¹⁰ बाइट, 1 MB = 2²⁰ बाइट, 1 GB = 2³⁰ बाइट, और 1 TB = 1024 GB = 2⁴⁰ बाइट।",
+    "notes": [
+     "2⁴⁰ बाइट: 1 TB = 1024 GB।",
+     "2³⁰ बाइट: यह 1 GB है।",
+     "2⁵⁰ बाइट: यह 1 पेटाबाइट (PB) = 1024 TB है।",
+     "2³² बाइट: यह 4 GB है, जो 32-बिट पतों (एड्रेस) से सीधे संबोधित की जा सकने वाली अधिकतम मेमोरी है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "मेमोरी की इकाइयाँ"
+    ],
+    "facts": [
+     "इकाइयों का क्रम: KB, MB, GB, TB, PB, EB, ZB, YB; प्रत्येक पिछली इकाई का 1024 गुना है।",
+     "दशमलव परिपाटी में 1 TB = 10¹² बाइट।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.3.1 and Table 1.2",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-018",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Arrange the following in decreasing order of access speed and select the correct answer using the codes given below:\n1. Main memory (RAM)\n2. Registers\n3. Hard disk\n4. Cache memory",
+    "options": [
+     "4, 2, 1, 3",
+     "2, 1, 4, 3",
+     "4, 1, 2, 3",
+     "2, 4, 1, 3"
+    ],
+    "explanation": "Registers inside the CPU are the fastest, followed by cache memory placed between the CPU and main memory, then RAM; secondary storage such as the hard disk is the slowest but cheapest per bit.",
+    "notes": [
+     "Wrong: registers are faster than cache.",
+     "Wrong: cache is faster than main memory.",
+     "Wrong: registers are the fastest, and RAM is slower than cache.",
+     "Correct: registers > cache > RAM > hard disk."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Memory hierarchy"
+    ],
+    "facts": [
+     "Moving down the hierarchy, capacity increases while speed and cost per bit fall.",
+     "The CPU interacts directly with primary memory, not with the hard disk."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित को अभिगम गति (एक्सेस स्पीड) के घटते क्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. मुख्य मेमोरी (RAM)\n2. रजिस्टर\n3. हार्ड डिस्क\n4. कैश मेमोरी",
+    "options": [
+     "4, 2, 1, 3",
+     "2, 1, 4, 3",
+     "4, 1, 2, 3",
+     "2, 4, 1, 3"
+    ],
+    "explanation": "CPU के भीतर स्थित रजिस्टर सबसे तेज होते हैं, उसके बाद CPU और मुख्य मेमोरी के बीच की कैश मेमोरी, फिर RAM; हार्ड डिस्क जैसी द्वितीयक भंडारण युक्ति सबसे धीमी परंतु प्रति बिट सबसे सस्ती होती है।",
+    "notes": [
+     "गलत: रजिस्टर कैश से तेज होते हैं।",
+     "गलत: कैश मुख्य मेमोरी से तेज होती है।",
+     "गलत: रजिस्टर सबसे तेज हैं और RAM कैश से धीमी है।",
+     "सही: रजिस्टर > कैश > RAM > हार्ड डिस्क।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "मेमोरी पदानुक्रम"
+    ],
+    "facts": [
+     "पदानुक्रम में नीचे जाने पर क्षमता बढ़ती है, जबकि गति और प्रति बिट लागत घटती है।",
+     "CPU सीधे प्राथमिक मेमोरी से संपर्क करता है, हार्ड डिस्क से नहीं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.1.1 and 1.3.2 Types of Memory",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-019",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which one of the following memories is volatile?",
+    "options": [
+     "RAM",
+     "ROM",
+     "Hard disk",
+     "Pen drive"
+    ],
+    "explanation": "RAM keeps its contents only as long as power is supplied; when the computer is switched off, everything in RAM is wiped out. Hence RAM is volatile.",
+    "notes": [
+     "RAM: volatile primary memory used to hold data temporarily while the computer works.",
+     "ROM: non-volatile; it holds the startup program (boot loader).",
+     "Hard disk: non-volatile secondary storage.",
+     "Pen drive: uses non-volatile flash memory."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Primary memory"
+    ],
+    "facts": [
+     "Programs and data are loaded into primary memory before processing.",
+     "Primary memory is of two types: RAM and ROM."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सी मेमोरी वोलेटाइल (अस्थायी) है?",
+    "options": [
+     "RAM",
+     "ROM",
+     "हार्ड डिस्क",
+     "पेन ड्राइव"
+    ],
+    "explanation": "RAM अपनी सामग्री तभी तक रखती है जब तक बिजली की आपूर्ति रहती है; कम्प्यूटर बंद होते ही RAM की सारी सामग्री मिट जाती है। अतः RAM वोलेटाइल है।",
+    "notes": [
+     "RAM: वोलेटाइल प्राथमिक मेमोरी, जो कम्प्यूटर के कार्य करते समय डेटा अस्थायी रूप से रखती है।",
+     "ROM: नॉन-वोलेटाइल; इसमें स्टार्टअप प्रोग्राम (बूट लोडर) रहता है।",
+     "हार्ड डिस्क: नॉन-वोलेटाइल द्वितीयक भंडारण।",
+     "पेन ड्राइव: इसमें नॉन-वोलेटाइल फ्लैश मेमोरी होती है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "प्राथमिक मेमोरी"
+    ],
+    "facts": [
+     "प्रसंस्करण से पहले प्रोग्राम और डेटा प्राथमिक मेमोरी में लोड किए जाते हैं।",
+     "प्राथमिक मेमोरी दो प्रकार की होती है: RAM और ROM।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.3.2 (A) Primary Memory",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-020",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Consider the following statements:\n1. ROM is non-volatile and stores the boot loader that loads the operating system into primary memory.\n2. Flash memory loses its data when the power supply is switched off.\n3. Secondary memory has a larger storage capacity than primary memory.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "Only 1",
+     "1 and 2 only",
+     "1 and 3 only",
+     "2 and 3 only"
+    ],
+    "explanation": "ROM keeps its contents without power and holds the boot loader, and secondary memory is non-volatile with a larger capacity than primary memory. Flash memory retains data even when power is off, so statement 2 is wrong.",
+    "notes": [
+     "Incomplete: statement 3 is also correct.",
+     "Wrong: statement 2 is false; flash memory is non-volatile.",
+     "Correct: statements 1 and 3 are true.",
+     "Wrong: statement 2 is false."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Types of memory"
+    ],
+    "facts": [
+     "Pen drives and memory cards use flash memory.",
+     "Secondary memory is cheaper per bit but slower than primary memory."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. ROM नॉन-वोलेटाइल है और इसमें वह बूट लोडर रहता है जो ऑपरेटिंग सिस्टम को प्राथमिक मेमोरी में लोड करता है।\n2. बिजली की आपूर्ति बंद होने पर फ्लैश मेमोरी का डेटा मिट जाता है।\n3. द्वितीयक मेमोरी की भंडारण क्षमता प्राथमिक मेमोरी से अधिक होती है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 1 और 3",
+     "केवल 2 और 3"
+    ],
+    "explanation": "ROM बिना बिजली के भी अपनी सामग्री रखती है और इसमें बूट लोडर होता है, तथा द्वितीयक मेमोरी नॉन-वोलेटाइल है और उसकी क्षमता प्राथमिक मेमोरी से अधिक है। फ्लैश मेमोरी बिजली बंद होने पर भी डेटा बनाए रखती है, अतः कथन 2 गलत है।",
+    "notes": [
+     "अपूर्ण: कथन 3 भी सही है।",
+     "गलत: कथन 2 गलत है; फ्लैश मेमोरी नॉन-वोलेटाइल है।",
+     "सही: कथन 1 और 3 सही हैं।",
+     "गलत: कथन 2 गलत है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "मेमोरी के प्रकार"
+    ],
+    "facts": [
+     "पेन ड्राइव और मेमोरी कार्ड में फ्लैश मेमोरी होती है।",
+     "द्वितीयक मेमोरी प्रति बिट सस्ती परंतु प्राथमिक मेमोरी से धीमी होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.3.2 Types of Memory",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    },
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals (Flash memory)",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-021",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Match List-I (Type of ROM) with List-II (Feature) and select the correct answer using the codes given below the lists:\nList-I: A. PROM B. EPROM C. EEPROM D. Masked ROM\nList-II: 1. Contents are erased by electrical signals 2. Contents are erased by exposure to ultraviolet light 3. Can be programmed by the user only once 4. Contents are written during manufacture and cannot be changed",
+    "options": [
+     "A-2, B-3, C-1, D-4",
+     "A-3, B-2, C-1, D-4",
+     "A-3, B-1, C-2, D-4",
+     "A-4, B-2, C-1, D-3"
+    ],
+    "explanation": "A PROM can be written once by the user; an EPROM is erased with ultraviolet light and reprogrammed; an EEPROM is erased electrically; and a masked ROM receives its contents at the factory.",
+    "notes": [
+     "Wrong: PROM and EPROM are interchanged.",
+     "Correct: PROM–once, EPROM–UV light, EEPROM–electrical, masked ROM–factory.",
+     "Wrong: EPROM uses ultraviolet light, EEPROM uses electrical signals.",
+     "Wrong: PROM and masked ROM are interchanged."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "ROM types"
+    ],
+    "facts": [
+     "Flash memory is a type of EEPROM that erases data in blocks.",
+     "An EEPROM need not be erased completely; parts can be rewritten."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (ROM का प्रकार) को सूची-II (विशेषता) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. PROM B. EPROM C. EEPROM D. मास्क्ड ROM\nसूची-II: 1. सामग्री विद्युत संकेतों से मिटाई जाती है 2. सामग्री पराबैंगनी प्रकाश से मिटाई जाती है 3. उपयोगकर्ता द्वारा केवल एक बार प्रोग्राम की जा सकती है 4. सामग्री निर्माण के समय लिखी जाती है और बदली नहीं जा सकती",
+    "options": [
+     "A-2, B-3, C-1, D-4",
+     "A-3, B-2, C-1, D-4",
+     "A-3, B-1, C-2, D-4",
+     "A-4, B-2, C-1, D-3"
+    ],
+    "explanation": "PROM को उपयोगकर्ता एक बार लिख सकता है; EPROM पराबैंगनी प्रकाश से मिटाकर पुनः प्रोग्राम की जाती है; EEPROM विद्युत संकेतों से मिटाई जाती है; और मास्क्ड ROM में सामग्री कारखाने में ही लिख दी जाती है।",
+    "notes": [
+     "गलत: PROM और EPROM आपस में बदल गए हैं।",
+     "सही: PROM–एक बार, EPROM–पराबैंगनी प्रकाश, EEPROM–विद्युत, मास्क्ड ROM–कारखाना।",
+     "गलत: EPROM में पराबैंगनी प्रकाश और EEPROM में विद्युत संकेत प्रयुक्त होते हैं।",
+     "गलत: PROM और मास्क्ड ROM आपस में बदल गए हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "ROM के प्रकार"
+    ],
+    "facts": [
+     "फ्लैश मेमोरी EEPROM का एक प्रकार है, जो डेटा को ब्लॉकों में मिटाती है।",
+     "EEPROM को पूरा मिटाना आवश्यक नहीं; इसके कुछ भाग पुनः लिखे जा सकते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals (types of ROM)",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-022",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following storage media allows only sequential access to data?",
+    "options": [
+     "Hard disk",
+     "Solid State Drive (SSD)",
+     "Magnetic tape",
+     "Pen drive"
+    ],
+    "explanation": "On a magnetic tape, records are read in the order in which they are stored: to reach the fourth record the tape must pass the first three. Such sequential access is slow, so tapes are used mainly for large backups and archives.",
+    "notes": [
+     "Hard disk: a direct (random) access device; the head can move straight to any track.",
+     "SSD: flash-based storage with direct access and no moving parts.",
+     "Magnetic tape: sequential-access medium used with mainframes for long-term storage of large data.",
+     "Pen drive: flash memory with direct access."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Secondary storage",
+     "Access methods"
+    ],
+    "facts": [
+     "Storing data on tape is inexpensive per byte.",
+     "In random (direct) access, any location can be reached in about the same time."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा भंडारण माध्यम डेटा तक केवल क्रमिक (सीक्वेंशियल) अभिगम देता है?",
+    "options": [
+     "हार्ड डिस्क",
+     "सॉलिड स्टेट ड्राइव (SSD)",
+     "चुम्बकीय टेप",
+     "पेन ड्राइव"
+    ],
+    "explanation": "चुम्बकीय टेप पर रिकॉर्ड उसी क्रम में पढ़े जाते हैं जिस क्रम में वे संग्रहीत हैं: चौथे रिकॉर्ड तक पहुँचने के लिए पहले तीन रिकॉर्ड पार करने पड़ते हैं। यह क्रमिक अभिगम धीमा है, इसलिए टेप मुख्यतः बड़े बैकअप और अभिलेखागार के लिए प्रयुक्त होते हैं।",
+    "notes": [
+     "हार्ड डिस्क: प्रत्यक्ष (रैंडम) अभिगम युक्ति; हेड सीधे किसी भी ट्रैक पर जा सकता है।",
+     "SSD: फ्लैश आधारित भंडारण, जिसमें प्रत्यक्ष अभिगम है और कोई गतिशील भाग नहीं।",
+     "चुम्बकीय टेप: क्रमिक अभिगम माध्यम, जो मेनफ्रेम में बड़े डेटा के दीर्घकालीन भंडारण हेतु प्रयुक्त होता है।",
+     "पेन ड्राइव: प्रत्यक्ष अभिगम वाली फ्लैश मेमोरी।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "द्वितीयक भंडारण",
+     "अभिगम विधियाँ"
+    ],
+    "facts": [
+     "टेप पर डेटा भंडारण प्रति बाइट सस्ता होता है।",
+     "रैंडम (प्रत्यक्ष) अभिगम में किसी भी स्थान तक लगभग समान समय में पहुँचा जा सकता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals (Magnetic tape; Sequential access memory)",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-023",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Assertion (A): Solid State Drives (SSDs) offer much faster data transfer than conventional hard disk drives (HDDs).\nReason (R): An SSD is a non-volatile storage device.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "SSDs use flash memory chips with no moving parts, so they transfer data much faster than HDDs, whose heads and platters must move. Being non-volatile is true of SSDs, but HDDs are non-volatile too, so R does not explain A.",
+    "notes": [
+     "Wrong: non-volatility does not explain the speed; HDDs are also non-volatile.",
+     "Correct: both are true, but the speed comes from flash chips with no moving parts.",
+     "Wrong: R is true; SSDs keep data without power.",
+     "Wrong: A is true."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Secondary storage",
+     "SSD and HDD"
+    ],
+    "facts": [
+     "Secondary memory is non-volatile and has a larger capacity than primary memory.",
+     "An HDD stores data magnetically on spinning platters."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): सॉलिड स्टेट ड्राइव (SSD) पारंपरिक हार्ड डिस्क ड्राइव (HDD) की तुलना में कहीं अधिक तेज डेटा स्थानांतरण देती है।\nकारण (R): SSD एक नॉन-वोलेटाइल भंडारण युक्ति है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "SSD में बिना गतिशील भागों वाली फ्लैश मेमोरी चिप होती हैं, इसलिए यह HDD से कहीं तेज डेटा स्थानांतरित करती है, जिसमें हेड और प्लैटर को घूमना पड़ता है। SSD का नॉन-वोलेटाइल होना सही है, परंतु HDD भी नॉन-वोलेटाइल है, इसलिए (R), (A) की व्याख्या नहीं करता।",
+    "notes": [
+     "गलत: नॉन-वोलेटाइल होना गति का कारण नहीं; HDD भी नॉन-वोलेटाइल है।",
+     "सही: दोनों सही हैं, परंतु गति का कारण बिना गतिशील भागों वाली फ्लैश चिप हैं।",
+     "गलत: कारण (R) सही है; SSD बिना बिजली के भी डेटा रखती है।",
+     "गलत: कथन (A) सही है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "द्वितीयक भंडारण",
+     "SSD और HDD"
+    ],
+    "facts": [
+     "द्वितीयक मेमोरी नॉन-वोलेटाइल होती है और उसकी क्षमता प्राथमिक मेमोरी से अधिक होती है।",
+     "HDD घूमने वाले प्लैटरों पर डेटा को चुम्बकीय रूप से संग्रहीत करती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.3.2 (C) Secondary Memory",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-024",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Consider the following statements about optical discs:\n1. A single-sided, single-layer DVD can store about 4.7 GB of data.\n2. Data on a CD-ROM is written during the manufacturing process.\n3. Data burnt on a CD-R can be erased and rewritten many times.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "A single-sided, single-layer DVD holds about 4.7 GB, and a CD-ROM receives its data during manufacture. Once a CD-R is burnt, the written part cannot be modified; it is the CD-RW that can be erased and rewritten, so statement 3 is wrong.",
+    "notes": [
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false; a CD-R cannot be rewritten.",
+     "Wrong: statement 3 is false.",
+     "Wrong: statement 3 is false."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Secondary storage",
+     "Optical discs"
+    ],
+    "facts": [
+     "A CD-RW (Compact Disc–ReWritable) can be written and erased again and again.",
+     "Because of their large capacity, DVDs are widely used to store films."
+    ]
+   },
+   "hi": {
+    "q": "ऑप्टिकल डिस्क के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. एक-तरफा, एकल-परत (सिंगल-साइडेड, सिंगल-लेयर) DVD में लगभग 4.7 GB डेटा संग्रहीत हो सकता है।\n2. CD-ROM पर डेटा निर्माण प्रक्रिया के दौरान लिखा जाता है।\n3. CD-R पर एक बार लिखे (बर्न किए) गए डेटा को अनेक बार मिटाकर पुनः लिखा जा सकता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "एक-तरफा, एकल-परत DVD में लगभग 4.7 GB डेटा आता है, और CD-ROM पर डेटा निर्माण के समय ही अंकित कर दिया जाता है। CD-R के एक बार बर्न हो जाने पर लिखा गया भाग बदला नहीं जा सकता; मिटाकर पुनः लिखने की सुविधा CD-RW में होती है, अतः कथन 3 गलत है।",
+    "notes": [
+     "सही: कथन 1 और 2 सही हैं।",
+     "गलत: कथन 3 गलत है; CD-R को पुनः नहीं लिखा जा सकता।",
+     "गलत: कथन 3 गलत है।",
+     "गलत: कथन 3 गलत है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "द्वितीयक भंडारण",
+     "ऑप्टिकल डिस्क"
+    ],
+    "facts": [
+     "CD-RW (कॉम्पैक्ट डिस्क–रीराइटेबल) को बार-बार लिखा और मिटाया जा सकता है।",
+     "अधिक क्षमता के कारण DVD का व्यापक उपयोग फिल्में संग्रहीत करने में होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals (Optical disks)",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-025",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Which device is widely used for evaluating answer sheets of objective (multiple-choice) examinations?",
+    "options": [
+     "Optical Character Reader (OCR)",
+     "Magnetic Ink Character Reader (MICR)",
+     "Barcode reader",
+     "Optical Mark Reader (OMR)"
+    ],
+    "explanation": "An Optical Mark Reader senses the presence or absence of a mark, such as a pencil or pen mark in a bubble. It is therefore widely used to assess multiple-choice answer sheets.",
+    "notes": [
+     "OCR: reads printed text from paper and converts it into machine-editable form.",
+     "MICR: reads characters printed in magnetic ink; used by banks to process cheques.",
+     "Barcode reader: reads product codes at shops and in inventory control.",
+     "OMR: also called a mark sense reader; detects marks on objective answer sheets."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Input devices",
+     "Optical and magnetic readers"
+    ],
+    "facts": [
+     "OMR, OCR, MICR and barcode readers are all input devices.",
+     "Cheques carry a unique MICR code line."
+    ]
+   },
+   "hi": {
+    "q": "वस्तुनिष्ठ (बहुविकल्पीय) परीक्षाओं की उत्तर पुस्तिकाओं के मूल्यांकन में व्यापक रूप से कौन-सी युक्ति प्रयुक्त होती है?",
+    "options": [
+     "ऑप्टिकल कैरेक्टर रीडर (OCR)",
+     "मैग्नेटिक इंक कैरेक्टर रीडर (MICR)",
+     "बारकोड रीडर",
+     "ऑप्टिकल मार्क रीडर (OMR)"
+    ],
+    "explanation": "ऑप्टिकल मार्क रीडर किसी चिह्न, जैसे गोले में पेंसिल या पेन के निशान, की उपस्थिति या अनुपस्थिति को पहचानता है। इसलिए बहुविकल्पीय उत्तर पुस्तिकाओं के मूल्यांकन में इसका व्यापक उपयोग होता है।",
+    "notes": [
+     "OCR: कागज पर छपे पाठ को पढ़कर उसे संपादन योग्य रूप में बदलता है।",
+     "MICR: चुम्बकीय स्याही से छपे अक्षर पढ़ता है; बैंक चेक प्रसंस्करण में प्रयुक्त।",
+     "बारकोड रीडर: दुकानों और माल-सूची नियंत्रण में उत्पाद कोड पढ़ता है।",
+     "OMR: इसे मार्क सेंस रीडर भी कहते हैं; वस्तुनिष्ठ उत्तर पुस्तिकाओं के चिह्न पहचानता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "इनपुट युक्तियाँ",
+     "ऑप्टिकल एवं चुम्बकीय रीडर"
+    ],
+    "facts": [
+     "OMR, OCR, MICR और बारकोड रीडर सभी इनपुट युक्तियाँ हैं।",
+     "चेक पर एक विशिष्ट MICR कोड पंक्ति होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals (Input devices: OCR, MICR, OMR)",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-026",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Which of the following pairs is/are correctly matched?\n1. Dot matrix printer – Impact printer whose print head strikes an inked ribbon\n2. Laser printer – Page printer that forms the image on a drum using toner\n3. Inkjet printer – Prints by striking an inked ribbon with metal pins\nSelect the correct answer using the codes given below:",
+    "options": [
+     "Only 1",
+     "2 and 3 only",
+     "1, 2 and 3",
+     "1 and 2 only"
+    ],
+    "explanation": "A dot matrix printer is an impact printer whose head strikes an ink-soaked ribbon, and a laser printer works like a photocopier, building the whole page on a drum with toner. An inkjet printer is non-impact: it sprays ink onto the paper, so pair 3 is wrong.",
+    "notes": [
+     "Incomplete: pair 2 is also correct.",
+     "Wrong: pair 3 is incorrect.",
+     "Wrong: pair 3 is incorrect.",
+     "Correct: pairs 1 and 2 are correctly matched."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Output devices",
+     "Printers"
+    ],
+    "facts": [
+     "Printed output on paper is called hard copy.",
+     "A plotter draws charts, maps and engineering drawings with automated pens."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित युग्मों में से कौन-सा/से सही सुमेलित है/हैं?\n1. डॉट मैट्रिक्स प्रिंटर – इम्पैक्ट प्रिंटर, जिसका प्रिंट हेड स्याही लगे रिबन पर प्रहार करता है\n2. लेज़र प्रिंटर – पेज प्रिंटर, जो टोनर द्वारा ड्रम पर छवि बनाता है\n3. इंकजेट प्रिंटर – धातु की पिनों से स्याही लगे रिबन पर प्रहार करके छापता है\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "options": [
+     "केवल 1",
+     "केवल 2 और 3",
+     "1, 2 और 3",
+     "केवल 1 और 2"
+    ],
+    "explanation": "डॉट मैट्रिक्स प्रिंटर इम्पैक्ट प्रिंटर है जिसका हेड स्याही से भीगे रिबन पर प्रहार करता है, और लेज़र प्रिंटर फोटोकॉपी मशीन की भाँति टोनर से पूरा पृष्ठ ड्रम पर बनाता है। इंकजेट प्रिंटर नॉन-इम्पैक्ट है: यह कागज पर स्याही छिड़कता है, अतः युग्म 3 गलत है।",
+    "notes": [
+     "अपूर्ण: युग्म 2 भी सही है।",
+     "गलत: युग्म 3 गलत है।",
+     "गलत: युग्म 3 गलत है।",
+     "सही: युग्म 1 और 2 सही सुमेलित हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "आउटपुट युक्तियाँ",
+     "प्रिंटर"
+    ],
+    "facts": [
+     "कागज पर छपे आउटपुट को हार्ड कॉपी कहते हैं।",
+     "प्लॉटर स्वचालित पेनों से चार्ट, मानचित्र और अभियांत्रिकी आरेख बनाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 1 Computer Fundamentals (Printers; Plotter)",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_01.pdf"
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.1.3 Output Devices",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-027",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which one of the following is an operating system?",
+    "options": [
+     "MS Excel",
+     "Linux",
+     "MySQL",
+     "Google Chrome"
+    ],
+    "explanation": "Linux is an open-source operating system; its core part, the kernel, manages the computer's hardware and resources. Windows, UNIX and macOS are other examples of operating systems.",
+    "notes": [
+     "MS Excel: spreadsheet application software in Microsoft Office.",
+     "Linux: open-source operating system built around the Linux kernel.",
+     "MySQL: an open-source relational database management system; application software, not an OS.",
+     "Google Chrome: a web browser, i.e. application software."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Operating systems",
+     "Examples of OS"
+    ],
+    "facts": [
+     "Linux has three main parts: kernel, system library and system utilities.",
+     "Mac OS was developed by Apple."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा एक ऑपरेटिंग सिस्टम है?",
+    "options": [
+     "एमएस एक्सेल",
+     "लिनक्स",
+     "माय-एसक्यूएल (MySQL)",
+     "गूगल क्रोम"
+    ],
+    "explanation": "लिनक्स एक ओपन-सोर्स ऑपरेटिंग सिस्टम है; इसका मूल भाग, कर्नेल, कम्प्यूटर के हार्डवेयर और संसाधनों का प्रबंधन करता है। विंडोज़, UNIX और macOS ऑपरेटिंग सिस्टम के अन्य उदाहरण हैं।",
+    "notes": [
+     "एमएस एक्सेल: माइक्रोसॉफ्ट ऑफिस का स्प्रेडशीट अनुप्रयोग सॉफ्टवेयर।",
+     "लिनक्स: लिनक्स कर्नेल पर आधारित ओपन-सोर्स ऑपरेटिंग सिस्टम।",
+     "MySQL: ओपन-सोर्स रिलेशनल डेटाबेस प्रबंधन प्रणाली; अनुप्रयोग सॉफ्टवेयर, OS नहीं।",
+     "गूगल क्रोम: एक वेब ब्राउज़र, अर्थात अनुप्रयोग सॉफ्टवेयर।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "ऑपरेटिंग सिस्टम",
+     "OS के उदाहरण"
+    ],
+    "facts": [
+     "लिनक्स के तीन मुख्य भाग हैं: कर्नेल, सिस्टम लाइब्रेरी और सिस्टम यूटिलिटी।",
+     "मैक OS का विकास एप्पल ने किया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "special-topics",
+     "page": 87
+    },
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 4 Operating Systems, Sec. 4.3.2 Linux",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_04.pdf"
+    },
+    {
+     "book": "special-topics",
+     "page": 89
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-028",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Match List-I (System software) with List-II (Function) and select the correct answer using the codes given below the lists:\nList-I: A. Assembler B. Compiler C. Interpreter D. Device driver\nList-II: 1. Translates the whole high-level program into machine code at one go 2. Translates and executes high-level code one line at a time 3. Converts assembly language code into machine language 4. Acts as an interface between the operating system and an attached device",
+    "options": [
+     "A-1, B-3, C-2, D-4",
+     "A-3, B-2, C-1, D-4",
+     "A-3, B-1, C-2, D-4",
+     "A-4, B-1, C-2, D-3"
+    ],
+    "explanation": "An assembler converts assembly code to machine code; a compiler translates the entire source program at once; an interpreter converts and runs one line at a time; and a device driver mediates between the OS and a particular device.",
+    "notes": [
+     "Wrong: assembler and compiler are interchanged.",
+     "Wrong: compiler and interpreter are interchanged.",
+     "Correct: assembler–3, compiler–1, interpreter–2, device driver–4.",
+     "Wrong: assembler and device driver are interchanged."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Software",
+     "Language translators"
+    ],
+    "facts": [
+     "Once a program is compiled, the compiler is not needed to run it; an interpreter is needed every time.",
+     "Code in assembly or high-level language is called source code; its machine form is object code."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (सिस्टम सॉफ्टवेयर) को सूची-II (कार्य) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. असेम्बलर B. कम्पाइलर C. इंटरप्रेटर D. डिवाइस ड्राइवर\nसूची-II: 1. पूरे उच्च-स्तरीय प्रोग्राम को एक साथ मशीन कोड में अनुवादित करता है 2. उच्च-स्तरीय कोड को एक बार में एक पंक्ति अनुवादित और निष्पादित करता है 3. असेम्बली भाषा के कोड को मशीन भाषा में बदलता है 4. ऑपरेटिंग सिस्टम और जुड़ी हुई युक्ति के बीच अंतरापृष्ठ (इंटरफ़ेस) का कार्य करता है",
+    "options": [
+     "A-1, B-3, C-2, D-4",
+     "A-3, B-2, C-1, D-4",
+     "A-3, B-1, C-2, D-4",
+     "A-4, B-1, C-2, D-3"
+    ],
+    "explanation": "असेम्बलर असेम्बली कोड को मशीन कोड में बदलता है; कम्पाइलर पूरे स्रोत प्रोग्राम का एक साथ अनुवाद करता है; इंटरप्रेटर एक बार में एक पंक्ति बदलकर चलाता है; और डिवाइस ड्राइवर OS तथा किसी विशेष युक्ति के बीच मध्यस्थ है।",
+    "notes": [
+     "गलत: असेम्बलर और कम्पाइलर आपस में बदल गए हैं।",
+     "गलत: कम्पाइलर और इंटरप्रेटर आपस में बदल गए हैं।",
+     "सही: असेम्बलर–3, कम्पाइलर–1, इंटरप्रेटर–2, डिवाइस ड्राइवर–4।",
+     "गलत: असेम्बलर और डिवाइस ड्राइवर आपस में बदल गए हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "सॉफ्टवेयर",
+     "भाषा अनुवादक"
+    ],
+    "facts": [
+     "कम्पाइल होने के बाद प्रोग्राम चलाने के लिए कम्पाइलर की आवश्यकता नहीं रहती; इंटरप्रेटर हर बार आवश्यक है।",
+     "असेम्बली या उच्च-स्तरीय भाषा का कोड सोर्स कोड कहलाता है; उसका मशीन रूप ऑब्जेक्ट कोड।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.7.2–1.7.3 (device drivers, language translators)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    },
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 3 Computer Software, Sec. 3.3",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_03.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-029",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following is NOT a function of an operating system?",
+    "options": [
+     "Allocating main memory to programs",
+     "Deciding the order in which programs get the CPU",
+     "Translating a high-level program into object code",
+     "Managing input/output devices through device drivers"
+    ],
+    "explanation": "An operating system manages processes, memory, input/output devices, files and disks, and provides the user interface. Translating a high-level program into object code is the job of a language translator such as a compiler, not of the OS.",
+    "notes": [
+     "Memory management: the OS allocates and frees main memory for programs.",
+     "Process management: the OS decides the order in which programs execute on the CPU.",
+     "Not an OS function: translation is done by a compiler or interpreter.",
+     "I/O management: the OS uses device drivers to interact with hardware devices."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Operating systems",
+     "Functions of OS"
+    ],
+    "facts": [
+     "The OS is the most important system software and acts as a resource manager.",
+     "When the computer starts, the boot loader brings the OS into RAM."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा ऑपरेटिंग सिस्टम का कार्य नहीं है?",
+    "options": [
+     "प्रोग्रामों को मुख्य मेमोरी आवंटित करना",
+     "प्रोग्रामों को CPU मिलने का क्रम तय करना",
+     "उच्च-स्तरीय प्रोग्राम को ऑब्जेक्ट कोड में अनुवादित करना",
+     "डिवाइस ड्राइवरों के माध्यम से इनपुट/आउटपुट युक्तियों का प्रबंधन करना"
+    ],
+    "explanation": "ऑपरेटिंग सिस्टम प्रोसेस, मेमोरी, इनपुट/आउटपुट युक्तियों, फ़ाइलों और डिस्क का प्रबंधन करता है तथा यूज़र इंटरफ़ेस देता है। उच्च-स्तरीय प्रोग्राम को ऑब्जेक्ट कोड में बदलना कम्पाइलर जैसे भाषा अनुवादक का कार्य है, OS का नहीं।",
+    "notes": [
+     "मेमोरी प्रबंधन: OS प्रोग्रामों के लिए मुख्य मेमोरी आवंटित और मुक्त करता है।",
+     "प्रोसेस प्रबंधन: OS तय करता है कि प्रोग्राम CPU पर किस क्रम में चलें।",
+     "OS का कार्य नहीं: अनुवाद कम्पाइलर या इंटरप्रेटर करते हैं।",
+     "I/O प्रबंधन: OS हार्डवेयर युक्तियों से संपर्क हेतु डिवाइस ड्राइवरों का उपयोग करता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "ऑपरेटिंग सिस्टम",
+     "OS के कार्य"
+    ],
+    "facts": [
+     "OS सबसे महत्वपूर्ण सिस्टम सॉफ्टवेयर है और संसाधन प्रबंधक का कार्य करता है।",
+     "कम्प्यूटर चालू होने पर बूट लोडर OS को RAM में लाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 4 Operating Systems, Sec. 4.2 Functions of Operating System",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_04.pdf"
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.8 Operating System",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-030",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "Match List-I (Type of operating system) with List-II (Characteristic) and select the correct answer using the codes given below the lists:\nList-I: A. Batch processing B. Time-sharing C. Real-time D. Multiprogramming\nList-II: 1. Many users share the CPU concurrently on-line and get a response within seconds 2. Jobs are collected into a batch and run without user interaction during processing 3. Response time is critical, as in monitoring a nuclear power station 4. More than one active user program is kept in main memory at the same time",
+    "options": [
+     "A-2, B-1, C-3, D-4",
+     "A-1, B-2, C-3, D-4",
+     "A-2, B-4, C-3, D-1",
+     "A-3, B-1, C-2, D-4"
+    ],
+    "explanation": "In batch processing, jobs are queued and run with no interaction; time-sharing lets many on-line users share the processor; a real-time OS serves applications where response time is critical; and multiprogramming keeps several programs in main memory together.",
+    "notes": [
+     "Correct: batch–2, time-sharing–1, real-time–3, multiprogramming–4.",
+     "Wrong: batch processing and time-sharing are interchanged.",
+     "Wrong: time-sharing and multiprogramming are interchanged.",
+     "Wrong: batch processing and real-time are interchanged."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Operating systems",
+     "Types of OS"
+    ],
+    "facts": [
+     "Every time-sharing system is a multiprogramming system, but not every multiprogramming system is time-sharing.",
+     "A real-time OS usually has very little user interface and no end-user utilities."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (ऑपरेटिंग सिस्टम का प्रकार) को सूची-II (विशेषता) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. बैच प्रोसेसिंग B. टाइम-शेयरिंग C. रियल-टाइम D. मल्टीप्रोग्रामिंग\nसूची-II: 1. अनेक उपयोगकर्ता एक साथ ऑन-लाइन CPU साझा करते हैं और कुछ सेकंड में उत्तर पाते हैं 2. कार्यों (जॉब) को बैच में एकत्र कर प्रसंस्करण के दौरान उपयोगकर्ता की सहभागिता के बिना चलाया जाता है 3. अनुक्रिया समय निर्णायक होता है, जैसे परमाणु बिजलीघर की निगरानी 4. मुख्य मेमोरी में एक ही समय एक से अधिक सक्रिय प्रोग्राम रखे जाते हैं",
+    "options": [
+     "A-2, B-1, C-3, D-4",
+     "A-1, B-2, C-3, D-4",
+     "A-2, B-4, C-3, D-1",
+     "A-3, B-1, C-2, D-4"
+    ],
+    "explanation": "बैच प्रोसेसिंग में जॉब कतार में लगकर बिना सहभागिता के चलते हैं; टाइम-शेयरिंग में अनेक ऑन-लाइन उपयोगकर्ता प्रोसेसर साझा करते हैं; रियल-टाइम OS उन अनुप्रयोगों के लिए है जहाँ अनुक्रिया समय निर्णायक है; और मल्टीप्रोग्रामिंग में कई प्रोग्राम एक साथ मुख्य मेमोरी में रहते हैं।",
+    "notes": [
+     "सही: बैच–2, टाइम-शेयरिंग–1, रियल-टाइम–3, मल्टीप्रोग्रामिंग–4।",
+     "गलत: बैच प्रोसेसिंग और टाइम-शेयरिंग आपस में बदल गए हैं।",
+     "गलत: टाइम-शेयरिंग और मल्टीप्रोग्रामिंग आपस में बदल गए हैं।",
+     "गलत: बैच प्रोसेसिंग और रियल-टाइम आपस में बदल गए हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "ऑपरेटिंग सिस्टम",
+     "OS के प्रकार"
+    ],
+    "facts": [
+     "प्रत्येक टाइम-शेयरिंग सिस्टम मल्टीप्रोग्रामिंग सिस्टम है, परंतु प्रत्येक मल्टीप्रोग्रामिंग सिस्टम टाइम-शेयरिंग नहीं।",
+     "रियल-टाइम OS में प्रायः यूज़र इंटरफ़ेस बहुत सीमित होता है और अंतिम-उपयोगकर्ता यूटिलिटी नहीं होतीं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IGNOU eGyanKosh, Operating System: An Overview, Unit 1, Sec. 1.5 Types of Operating Systems",
+     "url": "https://egyankosh.ac.in/bitstream/123456789/10329/1/Unit-1.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-031",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Arrange the following operating systems in chronological order of their first release and select the correct answer using the codes given below:\n1. MS-DOS\n2. Windows 95\n3. UNIX\n4. Linux kernel",
+    "options": [
+     "1, 3, 4, 2",
+     "3, 1, 4, 2",
+     "3, 1, 2, 4",
+     "3, 4, 1, 2"
+    ],
+    "explanation": "UNIX was developed at AT&T Bell Labs in 1969, MS-DOS came with the IBM PC in 1981, Linus Torvalds released the Linux kernel in 1991, and Windows 95 was released in 1995.",
+    "notes": [
+     "Wrong: UNIX (1969) came before MS-DOS (1981).",
+     "Correct: UNIX (1969), MS-DOS (1981), Linux (1991), Windows 95 (1995).",
+     "Wrong: Linux (1991) came before Windows 95 (1995).",
+     "Wrong: Linux (1991) came after MS-DOS (1981)."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Operating systems",
+     "History of OS"
+    ],
+    "facts": [
+     "UNIX was developed by Ken Thompson and Dennis Ritchie on a DEC minicomputer.",
+     "MS-DOS stands for Microsoft Disk Operating System; it has a command-based interface."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित ऑपरेटिंग सिस्टमों को उनके प्रथम विमोचन के कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. MS-DOS\n2. विंडोज़ 95\n3. UNIX\n4. लिनक्स कर्नेल",
+    "options": [
+     "1, 3, 4, 2",
+     "3, 1, 4, 2",
+     "3, 1, 2, 4",
+     "3, 4, 1, 2"
+    ],
+    "explanation": "UNIX 1969 में AT&T बेल लैब्स में विकसित हुआ, MS-DOS 1981 में IBM PC के साथ आया, लिनस टॉरवाल्ड्स ने 1991 में लिनक्स कर्नेल जारी किया, और विंडोज़ 95 का विमोचन 1995 में हुआ।",
+    "notes": [
+     "गलत: UNIX (1969) MS-DOS (1981) से पहले आया।",
+     "सही: UNIX (1969), MS-DOS (1981), लिनक्स (1991), विंडोज़ 95 (1995)।",
+     "गलत: लिनक्स (1991) विंडोज़ 95 (1995) से पहले आया।",
+     "गलत: लिनक्स (1991) MS-DOS (1981) के बाद आया।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "ऑपरेटिंग सिस्टम",
+     "OS का इतिहास"
+    ],
+    "facts": [
+     "UNIX का विकास केन थॉम्पसन और डेनिस रिची ने एक DEC मिनीकम्प्यूटर पर किया।",
+     "MS-DOS का पूरा नाम माइक्रोसॉफ्ट डिस्क ऑपरेटिंग सिस्टम है; इसमें कमांड-आधारित इंटरफ़ेस है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Computer History Museum, Timeline of Computer History: 1969 (UNIX) and 1981 (MS-DOS)",
+     "url": "https://www.computerhistory.org/timeline/1969/"
+    },
+    {
+     "source": "Computer History Museum, Timeline of Computer History: 1991 (Linux kernel)",
+     "url": "https://www.computerhistory.org/timeline/1991/"
+    },
+    {
+     "source": "Computer History Museum, Timeline of Computer History: 1995 (Windows 95)",
+     "url": "https://www.computerhistory.org/timeline/1995/"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-032",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "Assertion (A): A computer can be used without application software, but it cannot work without system software.\nReason (R): The operating system is a type of application software.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "A computer works even if no word processor is installed, but not without an operating system, which provides the basic functionality of the machine. The OS is the most important system software, not application software, so R is false.",
+    "notes": [
+     "Wrong: R is false.",
+     "Wrong: R is false.",
+     "Correct: A is true; the OS is system software, so R is false.",
+     "Wrong: A is true and R is false."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Software",
+     "System and application software"
+    ],
+    "facts": [
+     "System software includes the operating system, system utilities and device drivers.",
+     "Application software works on top of system software, e.g. word processors and spreadsheets."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): कम्प्यूटर का उपयोग अनुप्रयोग (एप्लीकेशन) सॉफ्टवेयर के बिना किया जा सकता है, परंतु सिस्टम सॉफ्टवेयर के बिना वह कार्य नहीं कर सकता।\nकारण (R): ऑपरेटिंग सिस्टम एक प्रकार का अनुप्रयोग सॉफ्टवेयर है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "वर्ड प्रोसेसर न होने पर भी कम्प्यूटर कार्य करता है, परंतु ऑपरेटिंग सिस्टम के बिना नहीं, क्योंकि वही मशीन की मूल कार्यक्षमता देता है। OS सबसे महत्वपूर्ण सिस्टम सॉफ्टवेयर है, अनुप्रयोग सॉफ्टवेयर नहीं; अतः (R) गलत है।",
+    "notes": [
+     "गलत: कारण (R) गलत है।",
+     "गलत: कारण (R) गलत है।",
+     "सही: (A) सही है; OS सिस्टम सॉफ्टवेयर है, अतः (R) गलत है।",
+     "गलत: (A) सही और (R) गलत है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "सॉफ्टवेयर",
+     "सिस्टम एवं अनुप्रयोग सॉफ्टवेयर"
+    ],
+    "facts": [
+     "सिस्टम सॉफ्टवेयर में ऑपरेटिंग सिस्टम, सिस्टम यूटिलिटी और डिवाइस ड्राइवर आते हैं।",
+     "अनुप्रयोग सॉफ्टवेयर सिस्टम सॉफ्टवेयर के ऊपर कार्य करता है, जैसे वर्ड प्रोसेसर और स्प्रेडशीट।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 1 Computer System, Sec. 1.7.2 and 1.7.4",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-033",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The binary equivalent of the decimal number 25 is:",
+    "options": [
+     "10101",
+     "11010",
+     "11001",
+     "10011"
+    ],
+    "explanation": "25 = 16 + 8 + 1 = 1×2⁴ + 1×2³ + 0×2² + 0×2¹ + 1×2⁰, so (25)₁₀ = (11001)₂. Repeated division by 2 gives the remainders 1, 0, 0, 1, 1, read from bottom to top.",
+    "notes": [
+     "10101: equals 16 + 4 + 1 = 21.",
+     "11010: equals 16 + 8 + 2 = 26.",
+     "11001: equals 16 + 8 + 1 = 25.",
+     "10011: equals 16 + 2 + 1 = 19."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Number systems",
+     "Decimal to binary"
+    ],
+    "facts": [
+     "The binary number system has base 2 and uses only the digits 0 and 1.",
+     "To convert decimal to binary, divide by 2 repeatedly and read the remainders upwards."
+    ]
+   },
+   "hi": {
+    "q": "दशमलव संख्या 25 का द्विआधारी (बाइनरी) समतुल्य है:",
+    "options": [
+     "10101",
+     "11010",
+     "11001",
+     "10011"
+    ],
+    "explanation": "25 = 16 + 8 + 1 = 1×2⁴ + 1×2³ + 0×2² + 0×2¹ + 1×2⁰, अतः (25)₁₀ = (11001)₂। 2 से बार-बार भाग देने पर शेषफल 1, 0, 0, 1, 1 आते हैं, जिन्हें नीचे से ऊपर पढ़ा जाता है।",
+    "notes": [
+     "10101: 16 + 4 + 1 = 21 के बराबर।",
+     "11010: 16 + 8 + 2 = 26 के बराबर।",
+     "11001: 16 + 8 + 1 = 25 के बराबर।",
+     "10011: 16 + 2 + 1 = 19 के बराबर।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "संख्या पद्धति",
+     "दशमलव से बाइनरी"
+    ],
+    "facts": [
+     "बाइनरी संख्या पद्धति का आधार 2 है और इसमें केवल 0 और 1 अंक होते हैं।",
+     "दशमलव को बाइनरी में बदलने के लिए 2 से बार-बार भाग देकर शेषफल नीचे से ऊपर पढ़े जाते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 2 Encoding Schemes and Number System",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs102.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-034",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The hexadecimal number (2F)₁₆ is equal to which decimal number?",
+    "options": [
+     "45",
+     "47",
+     "37",
+     "57"
+    ],
+    "explanation": "In hexadecimal, F stands for 15. So (2F)₁₆ = 2×16 + 15×1 = 32 + 15 = 47.",
+    "notes": [
+     "45: equals (2D)₁₆.",
+     "47: 2×16 + 15 = 47.",
+     "37: equals (25)₁₆.",
+     "57: equals (39)₁₆."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Number systems",
+     "Hexadecimal to decimal"
+    ],
+    "facts": [
+     "Hexadecimal uses 0–9 and A–F, where A = 10 and F = 15.",
+     "(2F)₁₆ = (101111)₂, since 2 = 0010 and F = 1111."
+    ]
+   },
+   "hi": {
+    "q": "षोडश आधारी (हेक्साडेसिमल) संख्या (2F)₁₆ किस दशमलव संख्या के बराबर है?",
+    "options": [
+     "45",
+     "47",
+     "37",
+     "57"
+    ],
+    "explanation": "हेक्साडेसिमल में F का मान 15 है। अतः (2F)₁₆ = 2×16 + 15×1 = 32 + 15 = 47।",
+    "notes": [
+     "45: यह (2D)₁₆ के बराबर है।",
+     "47: 2×16 + 15 = 47।",
+     "37: यह (25)₁₆ के बराबर है।",
+     "57: यह (39)₁₆ के बराबर है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "संख्या पद्धति",
+     "हेक्साडेसिमल से दशमलव"
+    ],
+    "facts": [
+     "हेक्साडेसिमल में 0–9 और A–F प्रयुक्त होते हैं, जहाँ A = 10 और F = 15।",
+     "(2F)₁₆ = (101111)₂, क्योंकि 2 = 0010 और F = 1111।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 2 Encoding Schemes and Number System, Sec. 2.2.4 Hexadecimal Number System",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs102.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-035",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The binary number (101101)₂ expressed in the octal system is:",
+    "options": [
+     "55",
+     "45",
+     "54",
+     "65"
+    ],
+    "explanation": "Group the bits in threes from the right: 101 | 101. Each group 101 = 5, so (101101)₂ = (55)₈. Check: 5×8 + 5 = 45 in decimal.",
+    "notes": [
+     "55: 101 = 5 and 101 = 5.",
+     "45: this is the decimal value of the number, not its octal form.",
+     "54: equals (101100)₂.",
+     "65: equals (110101)₂."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Number systems",
+     "Binary to octal"
+    ],
+    "facts": [
+     "Octal has base 8 and uses the digits 0–7.",
+     "Each octal digit corresponds to exactly three binary digits."
+    ]
+   },
+   "hi": {
+    "q": "बाइनरी संख्या (101101)₂ को अष्टाधारी (ऑक्टल) पद्धति में व्यक्त करने पर प्राप्त होता है:",
+    "options": [
+     "55",
+     "45",
+     "54",
+     "65"
+    ],
+    "explanation": "दाईं ओर से तीन-तीन बिट के समूह बनाइए: 101 | 101। प्रत्येक समूह 101 = 5, अतः (101101)₂ = (55)₈। जाँच: दशमलव में 5×8 + 5 = 45।",
+    "notes": [
+     "55: 101 = 5 और 101 = 5।",
+     "45: यह संख्या का दशमलव मान है, ऑक्टल रूप नहीं।",
+     "54: यह (101100)₂ के बराबर है।",
+     "65: यह (110101)₂ के बराबर है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "संख्या पद्धति",
+     "बाइनरी से ऑक्टल"
+    ],
+    "facts": [
+     "ऑक्टल का आधार 8 है और इसमें 0–7 अंक प्रयुक्त होते हैं।",
+     "प्रत्येक ऑक्टल अंक ठीक तीन बाइनरी अंकों के संगत होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 2 Encoding Schemes and Number System, Sec. 2.2.3 Octal Number System",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs102.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-036",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Consider the following statements:\n1. The base (radix) of the hexadecimal number system is 16.\n2. The largest digit used in the octal number system is 8.\n3. (1010)₂ = (A)₁₆\nWhich of the statements given above is/are correct?",
+    "options": [
+     "Only 1",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 and 3 only"
+    ],
+    "explanation": "Hexadecimal has 16 symbols (0–9, A–F), so its base is 16, and 1010 in binary is 10, written A in hexadecimal. Octal uses the digits 0 to 7, so its largest digit is 7, not 8.",
+    "notes": [
+     "Incomplete: statement 3 is also correct.",
+     "Wrong: statement 2 is false; the largest octal digit is 7.",
+     "Wrong: statement 2 is false.",
+     "Correct: statements 1 and 3 are true."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Number systems",
+     "Bases of number systems"
+    ],
+    "facts": [
+     "The number of distinct digits in a number system is its radix or base.",
+     "The four number systems used in computing are binary, octal, decimal and hexadecimal."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. हेक्साडेसिमल संख्या पद्धति का आधार (रैडिक्स) 16 है।\n2. ऑक्टल संख्या पद्धति में प्रयुक्त सबसे बड़ा अंक 8 है।\n3. (1010)₂ = (A)₁₆\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1 और 3"
+    ],
+    "explanation": "हेक्साडेसिमल में 16 प्रतीक (0–9, A–F) होते हैं, अतः इसका आधार 16 है, और बाइनरी 1010 का मान 10 है, जिसे हेक्साडेसिमल में A लिखते हैं। ऑक्टल में 0 से 7 तक अंक होते हैं, अतः सबसे बड़ा अंक 7 है, 8 नहीं।",
+    "notes": [
+     "अपूर्ण: कथन 3 भी सही है।",
+     "गलत: कथन 2 गलत है; ऑक्टल का सबसे बड़ा अंक 7 है।",
+     "गलत: कथन 2 गलत है।",
+     "सही: कथन 1 और 3 सही हैं।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "संख्या पद्धति",
+     "संख्या पद्धतियों के आधार"
+    ],
+    "facts": [
+     "किसी संख्या पद्धति में भिन्न अंकों की संख्या उसका आधार या रैडिक्स कहलाती है।",
+     "कम्प्यूटिंग में चार संख्या पद्धतियाँ प्रयुक्त होती हैं: बाइनरी, ऑक्टल, दशमलव और हेक्साडेसिमल।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 2 Encoding Schemes and Number System, Sec. 2.2",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs102.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-037",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Consider the following statements about logic gates:\n1. NAND and NOR gates are called universal gates.\n2. The output of a NOR gate is 1 only when all its inputs are 0.\n3. The output of an AND gate is 1 if at least one of its inputs is 1.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "Any other logic operation can be built from NAND gates alone or NOR gates alone, so they are universal gates, and NOR (NOT-OR) gives 1 only when no input is 1. An AND gate gives 1 only when all inputs are 1, so statement 3 describes an OR gate and is wrong.",
+    "notes": [
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false.",
+     "Wrong: statement 3 is false.",
+     "Wrong: statement 3 is false; it describes an OR gate."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Number systems",
+     "Logic gates"
+    ],
+    "facts": [
+     "AND, OR and NOT are the basic logic gates.",
+     "NAND = AND followed by NOT; NOR = OR followed by NOT."
+    ]
+   },
+   "hi": {
+    "q": "लॉजिक गेटों के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. NAND और NOR गेट सार्वत्रिक (यूनिवर्सल) गेट कहलाते हैं।\n2. NOR गेट का आउटपुट तभी 1 होता है जब उसके सभी इनपुट 0 हों।\n3. AND गेट का आउटपुट 1 होता है यदि उसका कम से कम एक इनपुट 1 हो।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "केवल NAND या केवल NOR गेटों से अन्य कोई भी तार्किक संक्रिया बनाई जा सकती है, इसलिए ये सार्वत्रिक गेट हैं, और NOR (NOT-OR) तभी 1 देता है जब कोई इनपुट 1 न हो। AND गेट तभी 1 देता है जब सभी इनपुट 1 हों, अतः कथन 3 OR गेट का वर्णन है और गलत है।",
+    "notes": [
+     "सही: कथन 1 और 2 सही हैं।",
+     "गलत: कथन 3 गलत है।",
+     "गलत: कथन 3 गलत है।",
+     "गलत: कथन 3 गलत है; यह OR गेट का वर्णन है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "संख्या पद्धति",
+     "लॉजिक गेट"
+    ],
+    "facts": [
+     "AND, OR और NOT मूल लॉजिक गेट हैं।",
+     "NAND = AND के बाद NOT; NOR = OR के बाद NOT।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIOS Senior Secondary Computer Science (330), Lesson 2 Binary Logic, Sec. 2.4 Logic gates",
+     "url": "https://www.nios.ac.in/media/documents/330srsec/online_course_material_330/Theory/Lesson_02.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-038",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "In MS Word, which keyboard shortcut is used to centre-align the selected paragraph?",
+    "options": [
+     "Ctrl + C",
+     "Ctrl + J",
+     "Ctrl + L",
+     "Ctrl + E"
+    ],
+    "explanation": "In Microsoft Word for Windows, Ctrl + E centres the paragraph. Ctrl + L, Ctrl + R and Ctrl + J align it left, right and justified respectively.",
+    "notes": [
+     "Ctrl + C: copies the selected text or object.",
+     "Ctrl + J: justifies the paragraph.",
+     "Ctrl + L: aligns the paragraph to the left.",
+     "Ctrl + E: centres the paragraph."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "MS Office",
+     "MS Word shortcuts"
+    ],
+    "facts": [
+     "Ctrl + Enter inserts a page break in Word.",
+     "Ctrl + H opens the Replace dialog box in Word."
+    ]
+   },
+   "hi": {
+    "q": "एमएस वर्ड में चयनित अनुच्छेद को मध्य में संरेखित (सेंटर अलाइन) करने के लिए कौन-सा कुंजीपटल शॉर्टकट प्रयुक्त होता है?",
+    "options": [
+     "Ctrl + C",
+     "Ctrl + J",
+     "Ctrl + L",
+     "Ctrl + E"
+    ],
+    "explanation": "विंडोज़ के माइक्रोसॉफ्ट वर्ड में Ctrl + E अनुच्छेद को मध्य में संरेखित करता है। Ctrl + L, Ctrl + R और Ctrl + J क्रमशः बाएँ, दाएँ और दोनों ओर समान (जस्टिफाई) संरेखण करते हैं।",
+    "notes": [
+     "Ctrl + C: चयनित पाठ या वस्तु की प्रतिलिपि (कॉपी) बनाता है।",
+     "Ctrl + J: अनुच्छेद को जस्टिफाई करता है।",
+     "Ctrl + L: अनुच्छेद को बाईं ओर संरेखित करता है।",
+     "Ctrl + E: अनुच्छेद को मध्य में संरेखित करता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "एमएस ऑफिस",
+     "एमएस वर्ड शॉर्टकट"
+    ],
+    "facts": [
+     "वर्ड में Ctrl + Enter पृष्ठ विराम (पेज ब्रेक) डालता है।",
+     "वर्ड में Ctrl + H 'Replace' संवाद बॉक्स खोलता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Microsoft Support, Keyboard shortcuts in Word",
+     "url": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-039",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Consider the following statements about Microsoft Excel:\n1. A worksheet can have 1,048,576 rows and 16,384 columns.\n2. In the cell reference $A$1, both the column and the row are absolute.\n3. Pressing Ctrl + ; (semicolon) enters the current time in the active cell.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "Only 1",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "An Excel worksheet has 1,048,576 rows and 16,384 columns (A to XFD), and the dollar signs in $A$1 fix both the column and the row. Ctrl + ; enters the current date; the current time is entered with Ctrl + Shift + :, so statement 3 is wrong.",
+    "notes": [
+     "Incomplete: statement 2 is also correct.",
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false; Ctrl + ; enters the date.",
+     "Wrong: statement 3 is false."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "MS Office",
+     "MS Excel"
+    ],
+    "facts": [
+     "The last column of an Excel worksheet is XFD.",
+     "$A1 and A$1 are mixed references; A1 is a relative reference."
+    ]
+   },
+   "hi": {
+    "q": "माइक्रोसॉफ्ट एक्सेल के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. एक वर्कशीट में 1,048,576 पंक्तियाँ (रो) और 16,384 स्तम्भ (कॉलम) हो सकते हैं।\n2. सेल संदर्भ $A$1 में स्तम्भ और पंक्ति दोनों निरपेक्ष (एब्सोल्यूट) हैं।\n3. Ctrl + ; (सेमीकोलन) दबाने पर सक्रिय सेल में वर्तमान समय प्रविष्ट होता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "एक्सेल वर्कशीट में 1,048,576 पंक्तियाँ और 16,384 स्तम्भ (A से XFD) होते हैं, और $A$1 में डॉलर चिह्न स्तम्भ तथा पंक्ति दोनों को स्थिर करते हैं। Ctrl + ; वर्तमान तिथि प्रविष्ट करता है; वर्तमान समय Ctrl + Shift + : से प्रविष्ट होता है, अतः कथन 3 गलत है।",
+    "notes": [
+     "अपूर्ण: कथन 2 भी सही है।",
+     "सही: कथन 1 और 2 सही हैं।",
+     "गलत: कथन 3 गलत है; Ctrl + ; तिथि प्रविष्ट करता है।",
+     "गलत: कथन 3 गलत है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "एमएस ऑफिस",
+     "एमएस एक्सेल"
+    ],
+    "facts": [
+     "एक्सेल वर्कशीट का अंतिम स्तम्भ XFD है।",
+     "$A1 और A$1 मिश्रित संदर्भ हैं; A1 सापेक्ष (रिलेटिव) संदर्भ है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Microsoft Support, Excel specifications and limits",
+     "url": "https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3"
+    },
+    {
+     "source": "Microsoft Support, Switch between relative, absolute, and mixed references",
+     "url": "https://support.microsoft.com/en-us/office/switch-between-relative-absolute-and-mixed-references-dfec08cd-ae65-4f56-839e-5f0d8d0baca9"
+    },
+    {
+     "source": "Microsoft Support, Keyboard shortcuts in Excel",
+     "url": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-040",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Match List-I (Keyboard shortcut in MS Office for Windows) with List-II (Action) and select the correct answer using the codes given below the lists:\nList-I: A. Ctrl + M (PowerPoint) B. F11 (Excel) C. Shift + F3 (Word) D. F12 (Word)\nList-II: 1. Displays the Save As dialog box 2. Adds a new slide 3. Creates a chart of the current data range on a separate chart sheet 4. Switches the selected text between upper case, lower case and title case",
+    "options": [
+     "A-3, B-2, C-4, D-1",
+     "A-2, B-4, C-3, D-1",
+     "A-2, B-3, C-1, D-4",
+     "A-2, B-3, C-4, D-1"
+    ],
+    "explanation": "In PowerPoint, Ctrl + M adds a new slide; in Excel, F11 creates a chart of the selected range on a separate chart sheet; in Word, Shift + F3 changes case and F12 opens the Save As dialog box.",
+    "notes": [
+     "Wrong: Ctrl + M and F11 are interchanged.",
+     "Wrong: F11 and Shift + F3 are interchanged.",
+     "Wrong: Shift + F3 and F12 are interchanged.",
+     "Correct: Ctrl + M–new slide, F11–chart sheet, Shift + F3–change case, F12–Save As."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "MS Office",
+     "Keyboard shortcuts"
+    ],
+    "facts": [
+     "F5 starts the slide show in PowerPoint, and Esc ends it.",
+     "Alt + F1 in Excel creates an embedded chart on the same sheet."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (विंडोज़ हेतु एमएस ऑफिस के कुंजीपटल शॉर्टकट) को सूची-II (क्रिया) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. Ctrl + M (पावरपॉइंट) B. F11 (एक्सेल) C. Shift + F3 (वर्ड) D. F12 (वर्ड)\nसूची-II: 1. 'Save As' संवाद बॉक्स प्रदर्शित करता है 2. नई स्लाइड जोड़ता है 3. वर्तमान डेटा श्रेणी का चार्ट अलग चार्ट शीट पर बनाता है 4. चयनित पाठ को बड़े अक्षर, छोटे अक्षर और टाइटल केस के बीच बदलता है",
+    "options": [
+     "A-3, B-2, C-4, D-1",
+     "A-2, B-4, C-3, D-1",
+     "A-2, B-3, C-1, D-4",
+     "A-2, B-3, C-4, D-1"
+    ],
+    "explanation": "पावरपॉइंट में Ctrl + M नई स्लाइड जोड़ता है; एक्सेल में F11 चयनित श्रेणी का चार्ट अलग चार्ट शीट पर बनाता है; वर्ड में Shift + F3 अक्षरों का केस बदलता है और F12 'Save As' संवाद बॉक्स खोलता है।",
+    "notes": [
+     "गलत: Ctrl + M और F11 आपस में बदल गए हैं।",
+     "गलत: F11 और Shift + F3 आपस में बदल गए हैं।",
+     "गलत: Shift + F3 और F12 आपस में बदल गए हैं।",
+     "सही: Ctrl + M–नई स्लाइड, F11–चार्ट शीट, Shift + F3–केस परिवर्तन, F12–Save As।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "एमएस ऑफिस",
+     "कुंजीपटल शॉर्टकट"
+    ],
+    "facts": [
+     "पावरपॉइंट में F5 स्लाइड शो आरम्भ करता है और Esc उसे समाप्त करता है।",
+     "एक्सेल में Alt + F1 उसी शीट पर अंतर्निहित (एम्बेडेड) चार्ट बनाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Microsoft Support, Use keyboard shortcuts to create PowerPoint presentations",
+     "url": "https://support.microsoft.com/en-us/office/use-keyboard-shortcuts-to-create-powerpoint-presentations-ebb3d20e-dcd4-444f-a38e-bb5c5ed180f4"
+    },
+    {
+     "source": "Microsoft Support, Keyboard shortcuts in Excel",
+     "url": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f"
+    },
+    {
+     "source": "Microsoft Support, Keyboard shortcuts in Word",
+     "url": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2"
+    }
+   ]
+  }
+ ]
+}
