@@ -19,10 +19,10 @@ A **bilingual (Hindi + English) multiple-choice General Knowledge quiz game** fo
 
 ## 2. Status (final release, 30 Oct 2026)
 - **Game: finished and released** as **GS House** (renamed from Prashnapeeth at the owner's request). Repo `Lalitbhardwaj2002/gs-house`, played at `https://lalitbhardwaj2002.github.io/gs-house/` (GitHub Pages, `main`, root). Solo + rooms of up to 20 players, bilingual UI with per-question language switch, green/red answers, explanation flowchart, option notes, references, live leaderboard, assessment with ranks, petals, printable answer sheet.
-- **Questions: 1,164 checked questions in 37 of the 73 sections.** Every one was written by one agent and independently proof-read by another (`data/reports/` has each change log). The owner capped the game at under 1,500 questions (see `docs/TARGETS.md`): big sections have 40–58 questions, the small ones 6.
+- **Questions: 1,266 checked questions in 47 of the 73 sections.** Every one was written by one agent and independently proof-read by another (`data/reports/` has each change log). The owner capped the game at under 1,500 questions (see `docs/TARGETS.md`): big sections have 40–58 questions, the small ones 6.
 - **Stopped at the owner's request** before these were finished (they show as "soon" in the game):
-  - Drafted but **not checked** (kept only on the owner's computer in `data/draft/`, never publish unchecked): `ict-internet` (40), `pol-election`, `pol-bodies`, `pol-amend`, `pol-education` (6 each), part of `ict-applications`.
-  - Not started: `ict-applications`, `ict-terms` (40 each), `edtech`, `tra-ugc`, all `eco-*`, `geo-universe`, `geo-earth`, `geo-soil-forest`, `geo-resources`, `geo-agri-transport`, `geo-population`, `geo-up`, `sci-space`, `sci-tech`, `env-*`, all `ca-*` (6 each).
+  - `ict-applications` has only 14 checked questions (target 40) and none yet on Digital India, UPI, Aadhaar, DigiLocker, UMANG, GeM, ONDC or the DPDP Act.
+  - Not started: `ict-terms` (40), `edtech`, `tra-ugc`, `eco-budget`, `eco-poverty`, `eco-agri-industry`, `eco-trade`, `geo-universe`, `geo-earth`, `geo-soil-forest`, `geo-resources`, `geo-agri-transport`, `geo-population`, `geo-up`, `sci-space`, `sci-tech`, `env-ecology`, `env-people`, `env-global`, all `ca-*` (6 each).
   To continue later: run a checker on each unchecked draft, then writers/checkers for the rest by the groups in `docs/TARGETS.md`, then `tools/validate.py data` and `tools/build_index.py`.
 
 ## 3. Set up (once)

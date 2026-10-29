@@ -1,0 +1,2646 @@
+{
+ "section": "ict-internet",
+ "questions": [
+  {
+   "id": "ict-internet-001",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "ARPANET, regarded as the forerunner of the Internet, was developed by which one of the following?",
+    "options": [
+     "Advanced Research Projects Agency (ARPA) of the US Department of Defense",
+     "European Organization for Nuclear Research (CERN)",
+     "National Aeronautics and Space Administration (NASA)",
+     "International Business Machines (IBM)"
+    ],
+    "explanation": "ARPANET was funded and developed by ARPA (now DARPA), an agency of the US Department of Defense. Its first nodes were connected in 1969, and it later grew into the Internet.",
+    "notes": [
+     "ARPA (renamed DARPA): US defence research agency that built ARPANET in 1969.",
+     "CERN: physics laboratory near Geneva where Tim Berners-Lee invented the World Wide Web in 1989.",
+     "NASA: the US space agency, created in 1958; it did not build ARPANET.",
+     "IBM: a computer company; ARPANET was a government-funded research network."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "History of the Internet",
+     "ARPANET"
+    ],
+    "facts": [
+     "The first four ARPANET nodes were UCLA, SRI, UC Santa Barbara and the University of Utah.",
+     "ARPANET adopted TCP/IP on 1 January 1983."
+    ]
+   },
+   "hi": {
+    "q": "इंटरनेट का अग्रदूत माना जाने वाला ARPANET निम्नलिखित में से किसके द्वारा विकसित किया गया था?",
+    "options": [
+     "अमेरिकी रक्षा विभाग की एडवांस्ड रिसर्च प्रोजेक्ट्स एजेंसी (ARPA)",
+     "यूरोपीय नाभिकीय अनुसंधान संगठन (CERN)",
+     "नेशनल एरोनॉटिक्स एंड स्पेस एडमिनिस्ट्रेशन (NASA)",
+     "इंटरनेशनल बिज़नेस मशीन्स (IBM)"
+    ],
+    "explanation": "ARPANET का विकास अमेरिकी रक्षा विभाग की संस्था ARPA (अब DARPA) ने किया था। इसके पहले नोड 1969 में जोड़े गए और आगे चलकर यही नेटवर्क इंटरनेट बना।",
+    "notes": [
+     "ARPA (अब DARPA): अमेरिकी रक्षा अनुसंधान एजेंसी, जिसने 1969 में ARPANET बनाया।",
+     "CERN: जिनेवा के निकट भौतिकी प्रयोगशाला, जहाँ टिम बर्नर्स-ली ने 1989 में WWW का आविष्कार किया।",
+     "NASA: अमेरिकी अंतरिक्ष एजेंसी (स्थापना 1958); इसने ARPANET नहीं बनाया।",
+     "IBM: एक कम्प्यूटर कंपनी; ARPANET सरकारी वित्तपोषित शोध नेटवर्क था।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "इंटरनेट का इतिहास",
+     "ARPANET"
+    ],
+    "facts": [
+     "ARPANET के पहले चार नोड UCLA, SRI, UC सांता बारबरा और यूटा विश्वविद्यालय थे।",
+     "ARPANET ने 1 जनवरी 1983 को TCP/IP अपनाया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Internet Society: Brief History of the Internet",
+     "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/"
+    },
+    {
+     "book": "special-topics",
+     "page": 88
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-002",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Who among the following invented the World Wide Web (WWW)?",
+    "options": [
+     "Vinton Cerf",
+     "Tim Berners-Lee",
+     "Ray Tomlinson",
+     "Marc Andreessen"
+    ],
+    "explanation": "Tim Berners-Lee, a British scientist at CERN, proposed the World Wide Web in March 1989 and built the first web server and browser in 1990.",
+    "notes": [
+     "Vinton Cerf: co-designed the TCP/IP protocols with Robert Kahn.",
+     "Tim Berners-Lee: invented the WWW at CERN (proposal 1989).",
+     "Ray Tomlinson: sent the first network e-mail (1971) and chose the '@' sign.",
+     "Marc Andreessen: co-developed the Mosaic browser at NCSA (1993) and co-founded Netscape."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "World Wide Web",
+     "Inventor"
+    ],
+    "facts": [
+     "The first website, info.cern.ch, ran on a NeXT computer at CERN.",
+     "CERN released the WWW software into the public domain in April 1993."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किसने वर्ल्ड वाइड वेब (WWW) का आविष्कार किया?",
+    "options": [
+     "विंटन सर्फ",
+     "टिम बर्नर्स-ली",
+     "रे टॉमलिंसन",
+     "मार्क एंड्रीसेन"
+    ],
+    "explanation": "CERN में कार्यरत ब्रिटिश वैज्ञानिक टिम बर्नर्स-ली ने मार्च 1989 में वर्ल्ड वाइड वेब का प्रस्ताव रखा और 1990 में पहला वेब सर्वर व ब्राउज़र बनाया।",
+    "notes": [
+     "विंटन सर्फ: रॉबर्ट कान के साथ TCP/IP प्रोटोकॉल के सह-निर्माता।",
+     "टिम बर्नर्स-ली: CERN में WWW के आविष्कारक (प्रस्ताव 1989)।",
+     "रे टॉमलिंसन: पहला नेटवर्क ई-मेल (1971) भेजा और '@' चिह्न चुना।",
+     "मार्क एंड्रीसेन: NCSA में मोज़ेक ब्राउज़र (1993) के सह-विकासकर्ता, नेटस्केप के सह-संस्थापक।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "वर्ल्ड वाइड वेब",
+     "आविष्कारक"
+    ],
+    "facts": [
+     "पहली वेबसाइट info.cern.ch, CERN में एक NeXT कम्प्यूटर पर चलती थी।",
+     "CERN ने अप्रैल 1993 में WWW सॉफ्टवेयर को सार्वजनिक डोमेन में जारी किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "CERN: The birth of the Web",
+     "url": "https://home.cern/science/computing/the-birth-of-the-web/"
+    },
+    {
+     "book": "special-topics",
+     "page": 88
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-003",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Who among the following is regarded as the 'Father of the Internet'?",
+    "options": [
+     "Tim Berners-Lee",
+     "Ray Tomlinson",
+     "Vinton Cerf",
+     "Robert Metcalfe"
+    ],
+    "explanation": "Vinton (Vint) Cerf and Robert Kahn designed TCP/IP in the 1970s, the protocol suite on which the Internet runs. Both are called fathers of the Internet and shared the 2004 ACM Turing Award.",
+    "notes": [
+     "Tim Berners-Lee: inventor of the World Wide Web, a service that runs on the Internet.",
+     "Ray Tomlinson: pioneer of network e-mail.",
+     "Vinton Cerf: co-designer of TCP/IP with Robert Kahn.",
+     "Robert Metcalfe: co-inventor of Ethernet (1973) at Xerox PARC."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "History of the Internet",
+     "Pioneers"
+    ],
+    "facts": [
+     "Cerf and Kahn published their paper on a packet network intercommunication protocol in 1974."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किसे 'इंटरनेट का जनक' कहा जाता है?",
+    "options": [
+     "टिम बर्नर्स-ली",
+     "रे टॉमलिंसन",
+     "विंटन सर्फ",
+     "रॉबर्ट मेटकाफ"
+    ],
+    "explanation": "विंटन (विंट) सर्फ और रॉबर्ट कान ने 1970 के दशक में TCP/IP की रचना की, जिस पर इंटरनेट चलता है। दोनों को इंटरनेट का जनक कहा जाता है और दोनों को 2004 का ACM ट्यूरिंग पुरस्कार मिला।",
+    "notes": [
+     "टिम बर्नर्स-ली: वर्ल्ड वाइड वेब के आविष्कारक, जो इंटरनेट पर चलने वाली एक सेवा है।",
+     "रे टॉमलिंसन: नेटवर्क ई-मेल के अग्रणी।",
+     "विंटन सर्फ: रॉबर्ट कान के साथ TCP/IP के सह-निर्माता।",
+     "रॉबर्ट मेटकाफ: ज़ेरॉक्स PARC में ईथरनेट (1973) के सह-आविष्कारक।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "इंटरनेट का इतिहास",
+     "अग्रणी व्यक्ति"
+    ],
+    "facts": [
+     "सर्फ और कान ने 1974 में पैकेट नेटवर्कों के परस्पर संचार प्रोटोकॉल पर अपना शोध-पत्र प्रकाशित किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Internet Society: Brief History of the Internet",
+     "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/"
+    },
+    {
+     "book": "special-topics",
+     "page": 88
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-004",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Public Internet service in India was launched by Videsh Sanchar Nigam Limited (VSNL) on:",
+    "options": [
+     "15 August 1985",
+     "26 January 1990",
+     "1 April 1998",
+     "15 August 1995"
+    ],
+    "explanation": "VSNL, the government-owned international telecom carrier, started public Internet access in India on 15 August 1995. Before that, networks such as ERNET served only academic and research institutions.",
+    "notes": [
+     "15 August 1985: too early; there was no public Internet service in India then.",
+     "26 January 1990: not the launch date; access was then limited to research networks like ERNET.",
+     "1 April 1998: not the launch date; private ISPs entered only from late 1998.",
+     "15 August 1995: VSNL launched public Internet service in India."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Internet in India"
+    ],
+    "facts": [
+     "ERNET (Education and Research Network) began in 1986 for academic institutions.",
+     "VSNL is now Tata Communications."
+    ]
+   },
+   "hi": {
+    "q": "विदेश संचार निगम लिमिटेड (VSNL) द्वारा भारत में सार्वजनिक इंटरनेट सेवा कब शुरू की गई?",
+    "options": [
+     "15 अगस्त 1985",
+     "26 जनवरी 1990",
+     "1 अप्रैल 1998",
+     "15 अगस्त 1995"
+    ],
+    "explanation": "सरकारी अंतरराष्ट्रीय दूरसंचार कंपनी VSNL ने 15 अगस्त 1995 को भारत में सार्वजनिक इंटरनेट सेवा प्रारम्भ की। इससे पहले ERNET जैसे नेटवर्क केवल शैक्षिक व शोध संस्थानों के लिए थे।",
+    "notes": [
+     "15 अगस्त 1985: बहुत पहले; तब भारत में सार्वजनिक इंटरनेट सेवा नहीं थी।",
+     "26 जनवरी 1990: प्रारम्भ तिथि नहीं; तब पहुँच ERNET जैसे शोध नेटवर्कों तक सीमित थी।",
+     "1 अप्रैल 1998: प्रारम्भ तिथि नहीं; निजी ISP 1998 के अंत में आए।",
+     "15 अगस्त 1995: VSNL ने भारत में सार्वजनिक इंटरनेट सेवा शुरू की।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "भारत में इंटरनेट"
+    ],
+    "facts": [
+     "ERNET (शिक्षा एवं अनुसंधान नेटवर्क) 1986 में शैक्षिक संस्थानों के लिए शुरू हुआ।",
+     "VSNL अब टाटा कम्युनिकेशंस है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "special-topics",
+     "page": 88
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-005",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "An IPv4 address is made up of how many bits?",
+    "options": [
+     "16 bits",
+     "32 bits",
+     "64 bits",
+     "128 bits"
+    ],
+    "explanation": "An IPv4 address is 32 bits long, written as four decimal numbers (octets) from 0 to 255 separated by dots, e.g. 192.168.1.1. This allows about 4.3 billion (2^32) addresses.",
+    "notes": [
+     "16 bits: the size of a TCP/UDP port number (0–65535), not an IP address.",
+     "32 bits: length of an IPv4 address.",
+     "64 bits: not an IP address length; it commonly describes processor word size.",
+     "128 bits: length of an IPv6 address."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "IP addressing",
+     "IPv4"
+    ],
+    "facts": [
+     "IPv4 is defined in RFC 791 (1981).",
+     "Each of the four octets of an IPv4 address ranges from 0 to 255."
+    ]
+   },
+   "hi": {
+    "q": "एक IPv4 पता कितने बिट का होता है?",
+    "options": [
+     "16 बिट",
+     "32 बिट",
+     "64 बिट",
+     "128 बिट"
+    ],
+    "explanation": "IPv4 पता 32 बिट का होता है, जिसे बिंदुओं से अलग 0 से 255 तक की चार दशमलव संख्याओं (ऑक्टेट) में लिखा जाता है, जैसे 192.168.1.1। इससे लगभग 4.3 अरब (2^32) पते संभव हैं।",
+    "notes": [
+     "16 बिट: TCP/UDP पोर्ट संख्या (0–65535) का आकार, IP पता नहीं।",
+     "32 बिट: IPv4 पते की लंबाई।",
+     "64 बिट: IP पते की लंबाई नहीं; प्रायः प्रोसेसर के वर्ड आकार के लिए प्रयुक्त।",
+     "128 बिट: IPv6 पते की लंबाई।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "IP एड्रेसिंग",
+     "IPv4"
+    ],
+    "facts": [
+     "IPv4 को RFC 791 (1981) में परिभाषित किया गया है।",
+     "IPv4 पते का प्रत्येक ऑक्टेट 0 से 255 तक होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 791: Internet Protocol",
+     "url": "https://www.rfc-editor.org/rfc/rfc791"
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-006",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Consider the following statements about ARPANET:\n1. The first message over ARPANET was sent in 1969 between UCLA and the Stanford Research Institute (SRI).\n2. ARPANET formally switched over to the TCP/IP protocols on 1 January 1983.\n3. ARPANET was set up by CERN to share particle physics data among European laboratories.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "The first ARPANET message travelled from UCLA to SRI on 29 October 1969, and ARPANET moved from NCP to TCP/IP on 1 January 1983. It was a US defence (ARPA) project, so statement 3 is wrong.",
+    "notes": [
+     "Correct: statements 1 and 2 are both historical facts.",
+     "Wrong: statement 3 is false; CERN had no role in ARPANET.",
+     "Wrong: statement 3 is false and statement 2 is true.",
+     "Wrong: ARPANET was an ARPA (US) project, not a CERN one."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "History of the Internet",
+     "ARPANET"
+    ],
+    "facts": [
+     "Before TCP/IP, ARPANET used the Network Control Protocol (NCP).",
+     "ARPANET was formally decommissioned in 1990."
+    ]
+   },
+   "hi": {
+    "q": "ARPANET के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. ARPANET पर पहला संदेश 1969 में UCLA और स्टैनफोर्ड रिसर्च इंस्टीट्यूट (SRI) के बीच भेजा गया।\n2. ARPANET ने 1 जनवरी 1983 को औपचारिक रूप से TCP/IP प्रोटोकॉल अपनाया।\n3. ARPANET की स्थापना CERN ने यूरोपीय प्रयोगशालाओं के बीच कण-भौतिकी आँकड़े साझा करने के लिए की थी।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "ARPANET का पहला संदेश 29 अक्टूबर 1969 को UCLA से SRI गया और 1 जनवरी 1983 को ARPANET ने NCP छोड़कर TCP/IP अपनाया। यह अमेरिकी रक्षा (ARPA) परियोजना थी, अतः कथन 3 गलत है।",
+    "notes": [
+     "सही: कथन 1 और 2 दोनों ऐतिहासिक तथ्य हैं।",
+     "गलत: कथन 3 असत्य है; ARPANET में CERN की कोई भूमिका नहीं थी।",
+     "गलत: कथन 3 असत्य है और कथन 2 सत्य है।",
+     "गलत: ARPANET, ARPA (अमेरिका) की परियोजना थी, CERN की नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "इंटरनेट का इतिहास",
+     "ARPANET"
+    ],
+    "facts": [
+     "TCP/IP से पहले ARPANET नेटवर्क कंट्रोल प्रोटोकॉल (NCP) का प्रयोग करता था।",
+     "ARPANET को 1990 में औपचारिक रूप से बंद किया गया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Internet Society: Brief History of the Internet",
+     "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/"
+    },
+    {
+     "book": "special-topics",
+     "page": 88
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-007",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "In the URL https://www.education.gov.in/index.html, the top-level domain (TLD) is:",
+    "options": [
+     ".gov",
+     ".in",
+     "www",
+     "https"
+    ],
+    "explanation": "The top-level domain is the last label of a domain name. In www.education.gov.in it is '.in', India's country-code TLD; 'gov' is a second-level domain under it.",
+    "notes": [
+     ".gov: here a second-level domain under .in (gov.in is used by Indian government sites).",
+     ".in: India's country-code top-level domain (ccTLD), the last label.",
+     "www: a host name (subdomain label), not a TLD.",
+     "https: the scheme (protocol) part of the URL, not part of the domain name."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Domain names",
+     "URL parts"
+    ],
+    "facts": [
+     "A URL has a scheme (https), a host/domain name and a path (/index.html).",
+     "Country-code TLDs have two letters, e.g. .in, .uk, .jp."
+    ]
+   },
+   "hi": {
+    "q": "URL https://www.education.gov.in/index.html में शीर्ष-स्तरीय डोमेन (TLD) है:",
+    "options": [
+     ".gov",
+     ".in",
+     "www",
+     "https"
+    ],
+    "explanation": "शीर्ष-स्तरीय डोमेन, डोमेन नाम का अंतिम भाग होता है। www.education.gov.in में यह '.in' है, जो भारत का कंट्री-कोड TLD है; 'gov' इसके अंतर्गत द्वितीय-स्तरीय डोमेन है।",
+    "notes": [
+     ".gov: यहाँ .in के अंतर्गत द्वितीय-स्तरीय डोमेन (gov.in भारत सरकार की साइटों हेतु)।",
+     ".in: भारत का कंट्री-कोड शीर्ष-स्तरीय डोमेन (ccTLD), अंतिम भाग।",
+     "www: होस्ट नाम (सबडोमेन), TLD नहीं।",
+     "https: URL का स्कीम (प्रोटोकॉल) भाग, डोमेन नाम का भाग नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "डोमेन नाम",
+     "URL के भाग"
+    ],
+    "facts": [
+     "URL में स्कीम (https), होस्ट/डोमेन नाम और पाथ (/index.html) होते हैं।",
+     "कंट्री-कोड TLD दो अक्षरों के होते हैं, जैसे .in, .uk, .jp।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 3986: Uniform Resource Identifier (URI) Generic Syntax",
+     "url": "https://www.rfc-editor.org/rfc/rfc3986"
+    },
+    {
+     "source": "IETF RFC 1034: Domain Names – Concepts and Facilities",
+     "url": "https://www.rfc-editor.org/rfc/rfc1034"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-008",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Consider the following statements about the Domain Name System (DNS):\n1. DNS translates human-readable domain names into IP addresses.\n2. DNS is a hierarchical and distributed database.\n3. '.in' is a generic top-level domain (gTLD).\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "2 and 3 only",
+     "1 and 2 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "DNS maps names such as www.example.com to IP addresses, using a hierarchy of root, TLD and authoritative servers spread across the world. '.in' is a country-code TLD, not a generic one.",
+    "notes": [
+     "Wrong: statement 2 is also correct.",
+     "Wrong: statement 3 is false.",
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: '.in' is a ccTLD, so statement 3 is false."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Domain names",
+     "DNS"
+    ],
+    "facts": [
+     "DNS was specified in RFC 1034 and RFC 1035 (1987).",
+     "Examples of gTLDs: .com, .org, .net; examples of ccTLDs: .in, .us, .uk."
+    ]
+   },
+   "hi": {
+    "q": "डोमेन नेम सिस्टम (DNS) के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. DNS मनुष्यों द्वारा पढ़े जा सकने वाले डोमेन नामों को IP पतों में बदलता है।\n2. DNS एक पदानुक्रमित (hierarchical) और वितरित डेटाबेस है।\n3. '.in' एक सामान्य (generic) शीर्ष-स्तरीय डोमेन (gTLD) है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 2 और 3",
+     "केवल 1 और 2",
+     "1, 2 और 3"
+    ],
+    "explanation": "DNS, www.example.com जैसे नामों को IP पतों से जोड़ता है और इसके लिए विश्व भर में फैले रूट, TLD और ऑथोरिटेटिव सर्वरों के पदानुक्रम का प्रयोग करता है। '.in' कंट्री-कोड TLD है, सामान्य TLD नहीं।",
+    "notes": [
+     "गलत: कथन 2 भी सही है।",
+     "गलत: कथन 3 असत्य है।",
+     "सही: कथन 1 और 2 सत्य हैं।",
+     "गलत: '.in' एक ccTLD है, अतः कथन 3 असत्य है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "डोमेन नाम",
+     "DNS"
+    ],
+    "facts": [
+     "DNS को RFC 1034 और RFC 1035 (1987) में परिभाषित किया गया।",
+     "gTLD के उदाहरण: .com, .org, .net; ccTLD के उदाहरण: .in, .us, .uk।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 1034: Domain Names – Concepts and Facilities",
+     "url": "https://www.rfc-editor.org/rfc/rfc1034"
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-009",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Consider the following statements about IPv6:\n1. An IPv6 address is 128 bits long.\n2. An IPv6 address is usually written as eight groups of four hexadecimal digits separated by colons.\n3. IPv6 was developed mainly because the IPv4 address space was running out.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "IPv6 uses 128-bit addresses written in colon-separated hexadecimal groups, e.g. 2001:0db8:0000:0000:0000:0000:0000:0001. It was designed chiefly to replace the limited 32-bit IPv4 address space.",
+    "notes": [
+     "Wrong: statements 2 and 3 are also correct.",
+     "Wrong: statement 3 is also correct.",
+     "Wrong: statement 1 is also correct.",
+     "Correct: all three statements are true."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "IP addressing",
+     "IPv6"
+    ],
+    "facts": [
+     "The current IPv6 specification is RFC 8200 (2017).",
+     "Leading zeros in an IPv6 group may be dropped, and one run of zero groups may be written as '::'."
+    ]
+   },
+   "hi": {
+    "q": "IPv6 के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. IPv6 पता 128 बिट का होता है।\n2. IPv6 पता प्रायः कोलन से अलग किए गए चार-चार हेक्साडेसिमल अंकों के आठ समूहों में लिखा जाता है।\n3. IPv6 मुख्यतः इसलिए विकसित किया गया क्योंकि IPv4 के पते समाप्त हो रहे थे।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "IPv6 में 128 बिट के पते होते हैं जो कोलन से अलग हेक्साडेसिमल समूहों में लिखे जाते हैं, जैसे 2001:0db8:0000:0000:0000:0000:0000:0001। इसे मुख्यतः सीमित 32 बिट IPv4 पता-स्थान के स्थान पर लाया गया।",
+    "notes": [
+     "गलत: कथन 2 और 3 भी सही हैं।",
+     "गलत: कथन 3 भी सही है।",
+     "गलत: कथन 1 भी सही है।",
+     "सही: तीनों कथन सत्य हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "IP एड्रेसिंग",
+     "IPv6"
+    ],
+    "facts": [
+     "IPv6 का वर्तमान विनिर्देश RFC 8200 (2017) है।",
+     "IPv6 समूह के आरम्भिक शून्य हटाए जा सकते हैं और शून्य समूहों की एक श्रृंखला को '::' लिखा जा सकता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 8200: Internet Protocol, Version 6 (IPv6) Specification",
+     "url": "https://www.rfc-editor.org/rfc/rfc8200"
+    },
+    {
+     "source": "IETF RFC 4291: IP Version 6 Addressing Architecture",
+     "url": "https://www.rfc-editor.org/rfc/rfc4291"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-010",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following is NOT a valid IPv4 address?",
+    "options": [
+     "172.16.254.1",
+     "10.1.20.5",
+     "192.168.300.1",
+     "8.8.8.8"
+    ],
+    "explanation": "Each of the four octets of an IPv4 address is an 8-bit number, so it can only range from 0 to 255. The value 300 in 192.168.300.1 makes it invalid.",
+    "notes": [
+     "172.16.254.1: valid; it lies in the private range 172.16.0.0–172.31.255.255.",
+     "10.1.20.5: valid; it lies in the private range 10.0.0.0/8.",
+     "192.168.300.1: invalid, because 300 exceeds 255.",
+     "8.8.8.8: valid; it is a public DNS resolver address run by Google."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "IP addressing",
+     "IPv4 format"
+    ],
+    "facts": [
+     "Private IPv4 ranges are defined in RFC 1918.",
+     "An octet has 8 bits, so its largest value is 2^8 − 1 = 255."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा एक वैध IPv4 पता नहीं है?",
+    "options": [
+     "172.16.254.1",
+     "10.1.20.5",
+     "192.168.300.1",
+     "8.8.8.8"
+    ],
+    "explanation": "IPv4 पते का प्रत्येक ऑक्टेट 8 बिट की संख्या है, अतः उसका मान 0 से 255 तक ही हो सकता है। 192.168.300.1 में 300 होने के कारण यह अवैध है।",
+    "notes": [
+     "172.16.254.1: वैध; यह निजी रेंज 172.16.0.0–172.31.255.255 में है।",
+     "10.1.20.5: वैध; यह निजी रेंज 10.0.0.0/8 में है।",
+     "192.168.300.1: अवैध, क्योंकि 300 का मान 255 से अधिक है।",
+     "8.8.8.8: वैध; यह गूगल द्वारा संचालित सार्वजनिक DNS रिज़ॉल्वर का पता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "IP एड्रेसिंग",
+     "IPv4 प्रारूप"
+    ],
+    "facts": [
+     "निजी IPv4 रेंज RFC 1918 में परिभाषित हैं।",
+     "एक ऑक्टेट में 8 बिट होते हैं, अतः अधिकतम मान 2^8 − 1 = 255 है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 791: Internet Protocol",
+     "url": "https://www.rfc-editor.org/rfc/rfc791"
+    },
+    {
+     "source": "IETF RFC 1918: Address Allocation for Private Internets",
+     "url": "https://www.rfc-editor.org/rfc/rfc1918"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-011",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "Assertion (A): The Internet and the World Wide Web are not the same thing.\nReason (R): The World Wide Web is a system of interlinked hypertext documents that is accessed over the Internet.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "The Internet is the global network of networks running on TCP/IP; the Web is one service on it, made of hyperlinked pages fetched with HTTP. Because the Web runs over the Internet, the two are different, so R explains A.",
+    "notes": [
+     "Correct: R shows the Web is a service on the Internet, which is why they differ.",
+     "Wrong: R directly explains A.",
+     "Wrong: R is true; the Web is a hypertext system accessed via the Internet.",
+     "Wrong: A is true; e-mail and FTP also use the Internet without being the Web."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "World Wide Web",
+     "Internet vs WWW"
+    ],
+    "facts": [
+     "The Internet began with ARPANET (1969); the Web came in 1989–91.",
+     "E-mail, FTP and VoIP are Internet services other than the Web."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): इंटरनेट और वर्ल्ड वाइड वेब एक ही चीज़ नहीं हैं।\nकारण (R): वर्ल्ड वाइड वेब परस्पर जुड़े हाइपरटेक्स्ट दस्तावेज़ों की एक प्रणाली है, जिसे इंटरनेट के माध्यम से प्रयोग किया जाता है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "इंटरनेट, TCP/IP पर चलने वाले नेटवर्कों का वैश्विक नेटवर्क है; वेब उस पर चलने वाली एक सेवा है, जिसके हाइपरलिंक वाले पृष्ठ HTTP से प्राप्त होते हैं। वेब इंटरनेट पर चलता है, इसलिए दोनों भिन्न हैं; अतः R, A की सही व्याख्या है।",
+    "notes": [
+     "सही: R बताता है कि वेब इंटरनेट पर एक सेवा है, इसलिए दोनों भिन्न हैं।",
+     "गलत: R सीधे A की व्याख्या करता है।",
+     "गलत: R सही है; वेब इंटरनेट से प्रयुक्त हाइपरटेक्स्ट प्रणाली है।",
+     "गलत: A सही है; ई-मेल और FTP भी इंटरनेट का प्रयोग करते हैं, पर वेब नहीं हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "वर्ल्ड वाइड वेब",
+     "इंटरनेट बनाम WWW"
+    ],
+    "facts": [
+     "इंटरनेट की शुरुआत ARPANET (1969) से हुई; वेब 1989–91 में आया।",
+     "ई-मेल, FTP और VoIP, वेब के अतिरिक्त इंटरनेट सेवाएँ हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    },
+    {
+     "source": "CERN: The birth of the Web",
+     "url": "https://home.cern/science/computing/the-birth-of-the-web/"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-012",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Arrange the following events in chronological order and select the correct answer using the codes given below:\n1. Ray Tomlinson sends network e-mail using the '@' sign\n2. First message sent over ARPANET\n3. ARPANET switches over to TCP/IP\n4. Tim Berners-Lee submits his proposal for the World Wide Web",
+    "options": [
+     "1, 2, 3, 4",
+     "2, 3, 1, 4",
+     "1, 2, 4, 3",
+     "2, 1, 3, 4"
+    ],
+    "explanation": "First ARPANET message (1969) → Tomlinson's network e-mail (1971) → ARPANET adopts TCP/IP (1 January 1983) → Berners-Lee's WWW proposal (March 1989).",
+    "notes": [
+     "Wrong: e-mail (1971) came after the first ARPANET message (1969).",
+     "Wrong: the TCP/IP switch (1983) came after Tomlinson's e-mail (1971).",
+     "Wrong: the WWW proposal (1989) came after the TCP/IP switch (1983).",
+     "Correct: 1969 → 1971 → 1983 → 1989."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "History of the Internet",
+     "Chronology"
+    ],
+    "facts": [
+     "The first website went online at CERN in 1991.",
+     "Public Internet service began in India on 15 August 1995."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित घटनाओं को कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. रे टॉमलिंसन द्वारा '@' चिह्न के साथ नेटवर्क ई-मेल भेजना\n2. ARPANET पर पहला संदेश भेजा जाना\n3. ARPANET द्वारा TCP/IP अपनाना\n4. टिम बर्नर्स-ली द्वारा वर्ल्ड वाइड वेब का प्रस्ताव प्रस्तुत करना",
+    "options": [
+     "1, 2, 3, 4",
+     "2, 3, 1, 4",
+     "1, 2, 4, 3",
+     "2, 1, 3, 4"
+    ],
+    "explanation": "ARPANET पर पहला संदेश (1969) → टॉमलिंसन का नेटवर्क ई-मेल (1971) → ARPANET द्वारा TCP/IP अपनाना (1 जनवरी 1983) → बर्नर्स-ली का WWW प्रस्ताव (मार्च 1989)।",
+    "notes": [
+     "गलत: ई-मेल (1971), पहले ARPANET संदेश (1969) के बाद आया।",
+     "गलत: TCP/IP अपनाना (1983), टॉमलिंसन के ई-मेल (1971) के बाद हुआ।",
+     "गलत: WWW प्रस्ताव (1989), TCP/IP अपनाने (1983) के बाद आया।",
+     "सही: 1969 → 1971 → 1983 → 1989।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "इंटरनेट का इतिहास",
+     "कालानुक्रम"
+    ],
+    "facts": [
+     "पहली वेबसाइट 1991 में CERN में ऑनलाइन हुई।",
+     "भारत में सार्वजनिक इंटरनेट सेवा 15 अगस्त 1995 को शुरू हुई।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Internet Society: Brief History of the Internet",
+     "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/"
+    },
+    {
+     "source": "CERN: The birth of the Web",
+     "url": "https://home.cern/science/computing/the-birth-of-the-web/"
+    },
+    {
+     "book": "special-topics",
+     "page": 90
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-013",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Match List-I (Protocol) with List-II (Well-known default port number) and select the correct answer using the codes given below the lists:\nList-I: A. HTTP B. HTTPS C. FTP (control connection) D. SMTP\nList-II: 1. 25 2. 443 3. 80 4. 21",
+    "options": [
+     "A-1, B-2, C-3, D-4",
+     "A-3, B-2, C-4, D-1",
+     "A-3, B-4, C-2, D-1",
+     "A-2, B-3, C-1, D-4"
+    ],
+    "explanation": "IANA's well-known ports are HTTP 80, HTTPS 443, FTP control 21 (data 20) and SMTP 25. So A-3, B-2, C-4, D-1.",
+    "notes": [
+     "Wrong: HTTP is port 80, not 25.",
+     "Correct: HTTP 80, HTTPS 443, FTP 21, SMTP 25.",
+     "Wrong: HTTPS is 443, and FTP control is 21, not 443.",
+     "Wrong: HTTP is 80 and HTTPS is 443, not the other way round."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Protocols",
+     "Port numbers"
+    ],
+    "facts": [
+     "POP3 uses port 110 and IMAP uses port 143.",
+     "DNS uses port 53."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (प्रोटोकॉल) को सूची-II (मानक डिफ़ॉल्ट पोर्ट संख्या) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. HTTP B. HTTPS C. FTP (कंट्रोल कनेक्शन) D. SMTP\nसूची-II: 1. 25 2. 443 3. 80 4. 21",
+    "options": [
+     "A-1, B-2, C-3, D-4",
+     "A-3, B-2, C-4, D-1",
+     "A-3, B-4, C-2, D-1",
+     "A-2, B-3, C-1, D-4"
+    ],
+    "explanation": "IANA के मानक पोर्ट हैं: HTTP 80, HTTPS 443, FTP कंट्रोल 21 (डेटा 20) और SMTP 25। अतः A-3, B-2, C-4, D-1।",
+    "notes": [
+     "गलत: HTTP का पोर्ट 80 है, 25 नहीं।",
+     "सही: HTTP 80, HTTPS 443, FTP 21, SMTP 25।",
+     "गलत: HTTPS का पोर्ट 443 है और FTP कंट्रोल का 21, 443 नहीं।",
+     "गलत: HTTP का 80 और HTTPS का 443 है, उलटा नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "प्रोटोकॉल",
+     "पोर्ट संख्या"
+    ],
+    "facts": [
+     "POP3 पोर्ट 110 और IMAP पोर्ट 143 का प्रयोग करता है।",
+     "DNS पोर्ट 53 का प्रयोग करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 9110: HTTP Semantics (ports 80 and 443)",
+     "url": "https://www.rfc-editor.org/rfc/rfc9110"
+    },
+    {
+     "source": "IETF RFC 959: File Transfer Protocol",
+     "url": "https://www.rfc-editor.org/rfc/rfc959"
+    },
+    {
+     "source": "IETF RFC 5321: Simple Mail Transfer Protocol",
+     "url": "https://www.rfc-editor.org/rfc/rfc5321"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-014",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Which of the following were created by Tim Berners-Lee as the foundational technologies of the World Wide Web?\n1. HTML\n2. HTTP\n3. URI (URL)\n4. TCP/IP\nSelect the correct answer using the codes given below:",
+    "options": [
+     "1 and 2 only",
+     "2, 3 and 4 only",
+     "1, 2 and 3 only",
+     "1, 2, 3 and 4"
+    ],
+    "explanation": "By late 1990 Berners-Lee had written HTML (page format), the URI addressing scheme and HTTP (transfer protocol), along with the first browser and server. TCP/IP was designed earlier by Vint Cerf and Robert Kahn.",
+    "notes": [
+     "Wrong: URI (URL) was also one of his three core technologies.",
+     "Wrong: TCP/IP was not his work, and HTML was.",
+     "Correct: HTML, HTTP and URI were his three foundational technologies.",
+     "Wrong: TCP/IP was designed by Cerf and Kahn in the 1970s."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "World Wide Web",
+     "Core technologies"
+    ],
+    "facts": [
+     "Berners-Lee founded the World Wide Web Consortium (W3C) in 1994.",
+     "The first web browser was called WorldWideWeb (later renamed Nexus)."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किन्हें टिम बर्नर्स-ली ने वर्ल्ड वाइड वेब की आधारभूत तकनीकों के रूप में विकसित किया?\n1. HTML\n2. HTTP\n3. URI (URL)\n4. TCP/IP\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2, 3 और 4",
+     "केवल 1, 2 और 3",
+     "1, 2, 3 और 4"
+    ],
+    "explanation": "1990 के अंत तक बर्नर्स-ली ने HTML (पृष्ठ प्रारूप), URI पता-प्रणाली और HTTP (स्थानांतरण प्रोटोकॉल) के साथ पहला ब्राउज़र व सर्वर बना लिया था। TCP/IP इससे पहले विंट सर्फ और रॉबर्ट कान ने बनाया था।",
+    "notes": [
+     "गलत: URI (URL) भी उनकी तीन मूल तकनीकों में से एक थी।",
+     "गलत: TCP/IP उनका कार्य नहीं था, जबकि HTML था।",
+     "सही: HTML, HTTP और URI उनकी तीन आधारभूत तकनीकें थीं।",
+     "गलत: TCP/IP को 1970 के दशक में सर्फ और कान ने बनाया।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "वर्ल्ड वाइड वेब",
+     "मूल तकनीकें"
+    ],
+    "facts": [
+     "बर्नर्स-ली ने 1994 में वर्ल्ड वाइड वेब कंसोर्टियम (W3C) की स्थापना की।",
+     "पहले वेब ब्राउज़र का नाम WorldWideWeb था (बाद में Nexus)।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "W3C: Tim Berners-Lee (biography)",
+     "url": "https://www.w3.org/People/Berners-Lee/"
+    },
+    {
+     "source": "CERN: The birth of the Web",
+     "url": "https://home.cern/science/computing/the-birth-of-the-web/"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-015",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "HTTPS secures the data exchanged between a web browser and a web server by using:",
+    "options": [
+     "Transport Layer Security (TLS)",
+     "File Transfer Protocol (FTP)",
+     "Address Resolution Protocol (ARP)",
+     "Simple Mail Transfer Protocol (SMTP)"
+    ],
+    "explanation": "HTTPS is HTTP carried over TLS (earlier SSL), which encrypts the traffic and lets the browser verify the server's certificate. Browsers usually show a padlock icon for HTTPS sites.",
+    "notes": [
+     "TLS: encryption protocol under HTTPS; successor of SSL.",
+     "FTP: used to transfer files; it does not secure web traffic.",
+     "ARP: maps IP addresses to MAC addresses on a local network.",
+     "SMTP: used to send e-mail between clients and mail servers."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Protocols",
+     "HTTPS"
+    ],
+    "facts": [
+     "HTTPS uses port 443 by default.",
+     "TLS 1.3 is specified in RFC 8446 (2018)."
+    ]
+   },
+   "hi": {
+    "q": "HTTPS वेब ब्राउज़र और वेब सर्वर के बीच आदान-प्रदान होने वाले डेटा को किसके प्रयोग से सुरक्षित करता है?",
+    "options": [
+     "ट्रांसपोर्ट लेयर सिक्योरिटी (TLS)",
+     "फ़ाइल ट्रांसफ़र प्रोटोकॉल (FTP)",
+     "एड्रेस रिज़ॉल्यूशन प्रोटोकॉल (ARP)",
+     "सिंपल मेल ट्रांसफ़र प्रोटोकॉल (SMTP)"
+    ],
+    "explanation": "HTTPS वास्तव में TLS (पहले SSL) पर चलने वाला HTTP है, जो ट्रैफ़िक को एन्क्रिप्ट करता है और ब्राउज़र को सर्वर का प्रमाणपत्र जाँचने देता है। HTTPS साइटों पर ब्राउज़र प्रायः ताले (पैडलॉक) का चिह्न दिखाता है।",
+    "notes": [
+     "TLS: HTTPS के नीचे कार्य करने वाला एन्क्रिप्शन प्रोटोकॉल; SSL का उत्तराधिकारी।",
+     "FTP: फ़ाइलें स्थानांतरित करने हेतु; यह वेब ट्रैफ़िक को सुरक्षित नहीं करता।",
+     "ARP: स्थानीय नेटवर्क पर IP पते को MAC पते से जोड़ता है।",
+     "SMTP: क्लाइंट और मेल सर्वरों के बीच ई-मेल भेजने हेतु।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "प्रोटोकॉल",
+     "HTTPS"
+    ],
+    "facts": [
+     "HTTPS डिफ़ॉल्ट रूप से पोर्ट 443 का प्रयोग करता है।",
+     "TLS 1.3 को RFC 8446 (2018) में परिभाषित किया गया है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 2818: HTTP Over TLS",
+     "url": "https://www.rfc-editor.org/rfc/rfc2818"
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 12 Security Aspects"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-016",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Consider the following statements about e-mail protocols:\n1. SMTP is used to send e-mail from a client to a mail server and between mail servers.\n2. POP3 typically downloads messages to the user's device and removes them from the server.\n3. IMAP keeps messages on the server so that a mailbox can be synchronised across several devices.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "SMTP is the sending (push) protocol, while POP3 and IMAP are used to retrieve mail. POP3 normally moves mail to one device; IMAP leaves it on the server, so the same mailbox appears on phone and computer.",
+    "notes": [
+     "Wrong: statements 2 and 3 are also correct.",
+     "Wrong: statement 3 is also correct.",
+     "Wrong: statement 1 is also correct.",
+     "Correct: all three statements are true."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "E-mail protocols",
+     "SMTP, POP3 and IMAP"
+    ],
+    "facts": [
+     "Default ports: SMTP 25, POP3 110, IMAP 143.",
+     "Webmail services like Gmail are reached through a browser using HTTPS."
+    ]
+   },
+   "hi": {
+    "q": "ई-मेल प्रोटोकॉल के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. SMTP का प्रयोग क्लाइंट से मेल सर्वर तक तथा मेल सर्वरों के बीच ई-मेल भेजने के लिए होता है।\n2. POP3 सामान्यतः संदेशों को उपयोगकर्ता के उपकरण पर डाउनलोड कर सर्वर से हटा देता है।\n3. IMAP संदेशों को सर्वर पर रखता है, जिससे मेलबॉक्स कई उपकरणों पर समकालिक (sync) रहता है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "SMTP भेजने (पुश) का प्रोटोकॉल है, जबकि POP3 और IMAP मेल प्राप्त करने के लिए हैं। POP3 मेल को सामान्यतः एक उपकरण पर ले आता है; IMAP उसे सर्वर पर रखता है, इसलिए वही मेलबॉक्स फ़ोन और कम्प्यूटर दोनों पर दिखता है।",
+    "notes": [
+     "गलत: कथन 2 और 3 भी सही हैं।",
+     "गलत: कथन 3 भी सही है।",
+     "गलत: कथन 1 भी सही है।",
+     "सही: तीनों कथन सत्य हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "ई-मेल प्रोटोकॉल",
+     "SMTP, POP3 और IMAP"
+    ],
+    "facts": [
+     "डिफ़ॉल्ट पोर्ट: SMTP 25, POP3 110, IMAP 143।",
+     "जीमेल जैसी वेबमेल सेवाएँ ब्राउज़र में HTTPS से खोली जाती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 5321: Simple Mail Transfer Protocol",
+     "url": "https://www.rfc-editor.org/rfc/rfc5321"
+    },
+    {
+     "source": "IETF RFC 1939: Post Office Protocol – Version 3",
+     "url": "https://www.rfc-editor.org/rfc/rfc1939"
+    },
+    {
+     "source": "IETF RFC 9051: IMAP Version 4rev2",
+     "url": "https://www.rfc-editor.org/rfc/rfc9051"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-017",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "Match List-I (Protocol) with List-II (Layer of the TCP/IP model) and select the correct answer using the codes given below the lists:\nList-I: A. HTTP B. TCP C. IP D. Ethernet\nList-II: 1. Link (network access) layer 2. Application layer 3. Internet layer 4. Transport layer",
+    "options": [
+     "A-2, B-4, C-3, D-1",
+     "A-2, B-3, C-4, D-1",
+     "A-4, B-2, C-3, D-1",
+     "A-1, B-4, C-3, D-2"
+    ],
+    "explanation": "In the four-layer TCP/IP model, HTTP works at the application layer, TCP at the transport layer, IP at the internet layer, and Ethernet at the link layer.",
+    "notes": [
+     "Correct: HTTP–Application, TCP–Transport, IP–Internet, Ethernet–Link.",
+     "Wrong: TCP is a transport-layer and IP an internet-layer protocol, not the reverse.",
+     "Wrong: HTTP is an application-layer protocol, not transport.",
+     "Wrong: Ethernet belongs to the link layer and HTTP to the application layer."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Protocols",
+     "TCP/IP model"
+    ],
+    "facts": [
+     "RFC 1122 describes the link, internet, transport and application layers.",
+     "The OSI reference model has seven layers."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (प्रोटोकॉल) को सूची-II (TCP/IP मॉडल की परत) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. HTTP B. TCP C. IP D. ईथरनेट\nसूची-II: 1. लिंक (नेटवर्क एक्सेस) परत 2. एप्लिकेशन परत 3. इंटरनेट परत 4. ट्रांसपोर्ट परत",
+    "options": [
+     "A-2, B-4, C-3, D-1",
+     "A-2, B-3, C-4, D-1",
+     "A-4, B-2, C-3, D-1",
+     "A-1, B-4, C-3, D-2"
+    ],
+    "explanation": "चार परतों वाले TCP/IP मॉडल में HTTP एप्लिकेशन परत पर, TCP ट्रांसपोर्ट परत पर, IP इंटरनेट परत पर और ईथरनेट लिंक परत पर कार्य करता है।",
+    "notes": [
+     "सही: HTTP–एप्लिकेशन, TCP–ट्रांसपोर्ट, IP–इंटरनेट, ईथरनेट–लिंक।",
+     "गलत: TCP ट्रांसपोर्ट परत का और IP इंटरनेट परत का प्रोटोकॉल है, उलटा नहीं।",
+     "गलत: HTTP एप्लिकेशन परत का प्रोटोकॉल है, ट्रांसपोर्ट का नहीं।",
+     "गलत: ईथरनेट लिंक परत का और HTTP एप्लिकेशन परत का है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "प्रोटोकॉल",
+     "TCP/IP मॉडल"
+    ],
+    "facts": [
+     "RFC 1122 में लिंक, इंटरनेट, ट्रांसपोर्ट और एप्लिकेशन परतों का वर्णन है।",
+     "OSI संदर्भ मॉडल में सात परतें होती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 1122: Requirements for Internet Hosts – Communication Layers",
+     "url": "https://www.rfc-editor.org/rfc/rfc1122"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-018",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "Assertion (A): UDP is generally preferred over TCP for real-time applications such as voice-over-IP (VoIP) calls and online gaming.\nReason (R): UDP guarantees that every packet is delivered and in the correct order.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "UDP is connectionless and has no acknowledgements or retransmission, so it is fast and suits real-time traffic where a lost packet matters less than delay. It does not guarantee delivery or order; that is what TCP does. So A is true and R is false.",
+    "notes": [
+     "Wrong: R is false, so it cannot explain A.",
+     "Wrong: R is false.",
+     "Correct: A is true; R wrongly gives UDP the reliability of TCP.",
+     "Wrong: A is true; low delay makes UDP suitable for real-time traffic."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Protocols",
+     "TCP and UDP"
+    ],
+    "facts": [
+     "TCP is connection-oriented and uses sequence numbers and acknowledgements.",
+     "DNS queries commonly use UDP."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): वॉयस-ओवर-IP (VoIP) कॉल और ऑनलाइन गेमिंग जैसे वास्तविक-समय (real-time) अनुप्रयोगों के लिए सामान्यतः TCP की तुलना में UDP को प्राथमिकता दी जाती है।\nकारण (R): UDP प्रत्येक पैकेट के पहुँचने और सही क्रम में पहुँचने की गारंटी देता है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "UDP संयोजन-रहित (connectionless) है और इसमें पावती (acknowledgement) या पुनःप्रेषण नहीं होता, इसलिए यह तेज़ है और वास्तविक-समय ट्रैफ़िक के लिए उपयुक्त है। यह पहुँच या क्रम की गारंटी नहीं देता; यह कार्य TCP करता है। अतः A सही और R गलत है।",
+    "notes": [
+     "गलत: R असत्य है, अतः वह A की व्याख्या नहीं कर सकता।",
+     "गलत: R असत्य है।",
+     "सही: A सही है; R ने UDP को TCP की विश्वसनीयता गलत रूप से दी है।",
+     "गलत: A सही है; कम विलंब के कारण UDP वास्तविक-समय ट्रैफ़िक हेतु उपयुक्त है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "प्रोटोकॉल",
+     "TCP और UDP"
+    ],
+    "facts": [
+     "TCP संयोजन-आधारित है और अनुक्रम संख्या व पावती का प्रयोग करता है।",
+     "DNS प्रश्न (queries) प्रायः UDP का प्रयोग करते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 768: User Datagram Protocol",
+     "url": "https://www.rfc-editor.org/rfc/rfc768"
+    },
+    {
+     "source": "IETF RFC 9293: Transmission Control Protocol",
+     "url": "https://www.rfc-editor.org/rfc/rfc9293"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-019",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Which one of the following is a search engine and NOT a web browser?",
+    "options": [
+     "Opera",
+     "Safari",
+     "Mozilla Firefox",
+     "Bing"
+    ],
+    "explanation": "Bing is Microsoft's search engine, a website that finds and ranks web pages. Opera, Safari and Firefox are browsers, programs used to open and display web pages.",
+    "notes": [
+     "Opera: a web browser originally developed in Norway.",
+     "Safari: Apple's web browser, released in 2003.",
+     "Mozilla Firefox: an open-source browser by the Mozilla Foundation, released in 2004.",
+     "Bing: Microsoft's search engine, launched in 2009."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Browsers and search engines"
+    ],
+    "facts": [
+     "A browser is client software; a search engine is a service reached through a browser.",
+     "Google, Yahoo! and DuckDuckGo are other search engines."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा एक सर्च इंजन है, वेब ब्राउज़र नहीं?",
+    "options": [
+     "ओपेरा",
+     "सफ़ारी",
+     "मोज़िला फ़ायरफ़ॉक्स",
+     "बिंग"
+    ],
+    "explanation": "बिंग माइक्रोसॉफ्ट का सर्च इंजन है, यानी वेब पृष्ठों को खोजकर क्रम देने वाली वेबसाइट। ओपेरा, सफ़ारी और फ़ायरफ़ॉक्स ब्राउज़र हैं, जो वेब पृष्ठ खोलने व दिखाने वाले प्रोग्राम हैं।",
+    "notes": [
+     "ओपेरा: मूलतः नॉर्वे में विकसित एक वेब ब्राउज़र।",
+     "सफ़ारी: एप्पल का वेब ब्राउज़र, 2003 में जारी।",
+     "मोज़िला फ़ायरफ़ॉक्स: मोज़िला फ़ाउंडेशन का मुक्त-स्रोत ब्राउज़र, 2004 में जारी।",
+     "बिंग: माइक्रोसॉफ्ट का सर्च इंजन, 2009 में आरम्भ।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "ब्राउज़र एवं सर्च इंजन"
+    ],
+    "facts": [
+     "ब्राउज़र क्लाइंट सॉफ्टवेयर है; सर्च इंजन ब्राउज़र के माध्यम से प्रयुक्त सेवा है।",
+     "गूगल, याहू! और डकडकगो अन्य सर्च इंजन हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "special-topics",
+     "page": 89
+    },
+    {
+     "book": "special-topics",
+     "page": 91
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-020",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Consider the following statements about web browsers:\n1. Mosaic, which popularised the Web with its graphical interface, was developed at NCSA (USA) in 1993.\n2. Google Chrome was first released in 2008.\n3. Internet Explorer was developed by Netscape Communications.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "Mosaic came from the National Center for Supercomputing Applications in 1993, and Chrome was launched by Google in September 2008. Internet Explorer was Microsoft's browser (1995); Netscape made Netscape Navigator.",
+    "notes": [
+     "Wrong: statement 2 is also correct.",
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false.",
+     "Wrong: Internet Explorer was made by Microsoft, so statement 3 is false."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Browsers and search engines",
+     "History of browsers"
+    ],
+    "facts": [
+     "Microsoft Edge replaced Internet Explorer as Windows' default browser.",
+     "Netscape Navigator was released in 1994."
+    ]
+   },
+   "hi": {
+    "q": "वेब ब्राउज़रों के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. अपने ग्राफ़िकल इंटरफ़ेस से वेब को लोकप्रिय बनाने वाला मोज़ेक 1993 में NCSA (अमेरिका) में विकसित किया गया।\n2. गूगल क्रोम पहली बार 2008 में जारी किया गया।\n3. इंटरनेट एक्सप्लोरर का विकास नेटस्केप कम्युनिकेशंस ने किया था।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "मोज़ेक 1993 में नेशनल सेंटर फ़ॉर सुपरकंप्यूटिंग एप्लिकेशंस से आया और क्रोम को गूगल ने सितंबर 2008 में जारी किया। इंटरनेट एक्सप्लोरर माइक्रोसॉफ्ट का ब्राउज़र (1995) था; नेटस्केप ने नेटस्केप नेविगेटर बनाया।",
+    "notes": [
+     "गलत: कथन 2 भी सही है।",
+     "सही: कथन 1 और 2 सत्य हैं।",
+     "गलत: कथन 3 असत्य है।",
+     "गलत: इंटरनेट एक्सप्लोरर माइक्रोसॉफ्ट ने बनाया, अतः कथन 3 असत्य है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "ब्राउज़र एवं सर्च इंजन",
+     "ब्राउज़रों का इतिहास"
+    ],
+    "facts": [
+     "विंडोज़ में डिफ़ॉल्ट ब्राउज़र के रूप में माइक्रोसॉफ्ट एज ने इंटरनेट एक्सप्लोरर का स्थान लिया।",
+     "नेटस्केप नेविगेटर 1994 में जारी हुआ।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "CERN: A short history of the Web",
+     "url": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+    },
+    {
+     "book": "special-topics",
+     "page": 91
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-021",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Small pieces of data that a website stores in the user's web browser to remember information such as login status or preferences are called:",
+    "options": [
+     "Cache",
+     "Cookies",
+     "Plug-ins",
+     "Bookmarks"
+    ],
+    "explanation": "Cookies are small name–value data items that a website asks the browser to store and send back on later requests. They keep users logged in, remember settings and can also be used for tracking.",
+    "notes": [
+     "Cache: stored copies of web pages and images used to load pages faster.",
+     "Cookies: small data stored by a website in the browser.",
+     "Plug-ins: add-on programs that extend a browser's features.",
+     "Bookmarks: saved links to web pages chosen by the user."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Browsers and search engines",
+     "Cookies"
+    ],
+    "facts": [
+     "HTTP cookies are specified in RFC 6265.",
+     "Browsers let users block or delete cookies."
+    ]
+   },
+   "hi": {
+    "q": "किसी वेबसाइट द्वारा उपयोगकर्ता के वेब ब्राउज़र में लॉगिन स्थिति या पसंद जैसी जानकारी याद रखने के लिए संग्रहीत डेटा के छोटे अंश कहलाते हैं:",
+    "options": [
+     "कैश",
+     "कुकीज़",
+     "प्लग-इन",
+     "बुकमार्क"
+    ],
+    "explanation": "कुकीज़ नाम–मान (name–value) के छोटे डेटा अंश हैं, जिन्हें वेबसाइट ब्राउज़र में रखवाती है और बाद के अनुरोधों में वापस प्राप्त करती है। ये उपयोगकर्ता को लॉग-इन रखती हैं, सेटिंग्स याद रखती हैं और ट्रैकिंग में भी प्रयुक्त हो सकती हैं।",
+    "notes": [
+     "कैश: पृष्ठ जल्दी खोलने हेतु वेब पृष्ठों व चित्रों की संग्रहीत प्रतियाँ।",
+     "कुकीज़: वेबसाइट द्वारा ब्राउज़र में रखा गया छोटा डेटा।",
+     "प्लग-इन: ब्राउज़र की क्षमताएँ बढ़ाने वाले अतिरिक्त प्रोग्राम।",
+     "बुकमार्क: उपयोगकर्ता द्वारा सहेजे गए वेब पृष्ठों के लिंक।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "ब्राउज़र एवं सर्च इंजन",
+     "कुकीज़"
+    ],
+    "facts": [
+     "HTTP कुकीज़ RFC 6265 में परिभाषित हैं।",
+     "ब्राउज़र उपयोगकर्ता को कुकीज़ रोकने या मिटाने की सुविधा देते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 6265: HTTP State Management Mechanism",
+     "url": "https://www.rfc-editor.org/rfc/rfc6265"
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 12 Security Aspects"
+    },
+    {
+     "book": "special-topics",
+     "page": 63
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-022",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Consider the following statements:\n1. A browser cache stores copies of web pages, images and scripts locally so that revisited pages load faster.\n2. Session cookies are deleted when the browser is closed, whereas persistent cookies remain until they expire or are deleted.\n3. Clearing the browser cache also deletes the user's saved bookmarks.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "The cache saves fetched resources to avoid downloading them again, and cookies without an expiry date last only for the browsing session. Bookmarks are stored separately, so clearing the cache does not remove them.",
+    "notes": [
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false.",
+     "Wrong: statement 3 is false and statement 2 is true.",
+     "Wrong: clearing the cache leaves bookmarks untouched."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Browsers and search engines",
+     "Cache and cookies"
+    ],
+    "facts": [
+     "HTTP caching rules are given in RFC 9111.",
+     "A cookie set with an Expires or Max-Age attribute is a persistent cookie."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. ब्राउज़र कैश वेब पृष्ठों, चित्रों और स्क्रिप्ट की प्रतियाँ स्थानीय रूप से संग्रहीत करता है, जिससे दोबारा खोले गए पृष्ठ जल्दी लोड होते हैं।\n2. सेशन कुकीज़ ब्राउज़र बंद करने पर मिट जाती हैं, जबकि परसिस्टेंट कुकीज़ समय-सीमा समाप्त होने या मिटाए जाने तक बनी रहती हैं।\n3. ब्राउज़र कैश साफ़ करने से उपयोगकर्ता के सहेजे गए बुकमार्क भी मिट जाते हैं।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "कैश प्राप्त संसाधनों को सहेज लेता है ताकि उन्हें दोबारा डाउनलोड न करना पड़े, और बिना समाप्ति-तिथि वाली कुकीज़ केवल ब्राउज़िंग सत्र तक रहती हैं। बुकमार्क अलग से संग्रहीत होते हैं, अतः कैश साफ़ करने से वे नहीं मिटते।",
+    "notes": [
+     "सही: कथन 1 और 2 सत्य हैं।",
+     "गलत: कथन 3 असत्य है।",
+     "गलत: कथन 3 असत्य है और कथन 2 सत्य है।",
+     "गलत: कैश साफ़ करने से बुकमार्क प्रभावित नहीं होते।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "ब्राउज़र एवं सर्च इंजन",
+     "कैश और कुकीज़"
+    ],
+    "facts": [
+     "HTTP कैशिंग के नियम RFC 9111 में दिए गए हैं।",
+     "Expires या Max-Age गुण वाली कुकी परसिस्टेंट कुकी होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 9111: HTTP Caching",
+     "url": "https://www.rfc-editor.org/rfc/rfc9111"
+    },
+    {
+     "source": "IETF RFC 6265: HTTP State Management Mechanism",
+     "url": "https://www.rfc-editor.org/rfc/rfc6265"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-023",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Which one of the following devices converts the digital signals of a computer into analog signals for transmission over a telephone line and converts them back at the receiving end?",
+    "options": [
+     "Router",
+     "Switch",
+     "Repeater",
+     "Modem"
+    ],
+    "explanation": "A modem (modulator–demodulator) modulates digital data onto an analog carrier for the telephone line and demodulates it back into digital form at the other end.",
+    "notes": [
+     "Router: forwards data packets between different networks.",
+     "Switch: connects devices within a LAN and forwards frames to the right port.",
+     "Repeater: regenerates a weakened signal to extend cable distance.",
+     "Modem: modulator–demodulator; converts digital to analog and back."
+    ],
+    "path": [
+     "ICT",
+     "Networks",
+     "Network devices",
+     "Modem"
+    ],
+    "facts": [
+     "The name 'modem' joins the words modulator and demodulator.",
+     "DSL and cable broadband connections also use modems."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा उपकरण कम्प्यूटर के डिजिटल संकेतों को टेलीफ़ोन लाइन पर भेजने के लिए एनालॉग संकेतों में बदलता है और प्राप्ति-छोर पर उन्हें पुनः डिजिटल में बदलता है?",
+    "options": [
+     "राउटर",
+     "स्विच",
+     "रिपीटर",
+     "मॉडेम"
+    ],
+    "explanation": "मॉडेम (मॉड्युलेटर–डिमॉड्युलेटर) डिजिटल डेटा को टेलीफ़ोन लाइन के लिए एनालॉग वाहक तरंग पर मॉड्युलेट करता है और दूसरे छोर पर उसे डिमॉड्युलेट कर पुनः डिजिटल बनाता है।",
+    "notes": [
+     "राउटर: विभिन्न नेटवर्कों के बीच डेटा पैकेट अग्रेषित करता है।",
+     "स्विच: LAN के उपकरणों को जोड़कर फ़्रेम को सही पोर्ट तक भेजता है।",
+     "रिपीटर: कमज़ोर संकेत को पुनः सशक्त कर केबल की दूरी बढ़ाता है।",
+     "मॉडेम: मॉड्युलेटर–डिमॉड्युलेटर; डिजिटल को एनालॉग और पुनः डिजिटल में बदलता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "नेटवर्क",
+     "नेटवर्क उपकरण",
+     "मॉडेम"
+    ],
+    "facts": [
+     "'मॉडेम' शब्द मॉड्युलेटर और डिमॉड्युलेटर से बना है।",
+     "DSL और केबल ब्रॉडबैंड कनेक्शन में भी मॉडेम प्रयुक्त होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-024",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Match List-I (Type of network) with List-II (Typical coverage) and select the correct answer using the codes given below the lists:\nList-I: A. PAN B. LAN C. MAN D. WAN\nList-II: 1. A city or town 2. Countries and continents 3. Devices around one person, within about 10 metres 4. A building or a campus",
+    "options": [
+     "A-3, B-4, C-1, D-2",
+     "A-4, B-3, C-1, D-2",
+     "A-3, B-1, C-4, D-2",
+     "A-3, B-4, C-2, D-1"
+    ],
+    "explanation": "A Personal Area Network links a person's own devices over a few metres; a LAN covers a building or campus; a MAN covers a city; a WAN spans countries and continents, the Internet being the largest WAN.",
+    "notes": [
+     "Correct: PAN–person, LAN–building, MAN–city, WAN–countries.",
+     "Wrong: a PAN is smaller than a LAN, not the reverse.",
+     "Wrong: a LAN covers a building or campus, not a city.",
+     "Wrong: a MAN covers a city and a WAN spans countries, not the reverse."
+    ],
+    "path": [
+     "ICT",
+     "Networks",
+     "Types of network"
+    ],
+    "facts": [
+     "The Internet is the largest example of a WAN.",
+     "Cable TV networks spread across a city are often cited as MANs."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (नेटवर्क का प्रकार) को सूची-II (सामान्य विस्तार क्षेत्र) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. PAN B. LAN C. MAN D. WAN\nसूची-II: 1. एक नगर या कस्बा 2. देश और महाद्वीप 3. एक व्यक्ति के आसपास, लगभग 10 मीटर के भीतर के उपकरण 4. एक भवन या परिसर",
+    "options": [
+     "A-3, B-4, C-1, D-2",
+     "A-4, B-3, C-1, D-2",
+     "A-3, B-1, C-4, D-2",
+     "A-3, B-4, C-2, D-1"
+    ],
+    "explanation": "पर्सनल एरिया नेटवर्क व्यक्ति के अपने उपकरणों को कुछ मीटर तक जोड़ता है; LAN एक भवन या परिसर तक, MAN एक नगर तक और WAN देशों व महाद्वीपों तक फैला होता है; इंटरनेट सबसे बड़ा WAN है।",
+    "notes": [
+     "सही: PAN–व्यक्ति, LAN–भवन, MAN–नगर, WAN–देश।",
+     "गलत: PAN, LAN से छोटा होता है, उलटा नहीं।",
+     "गलत: LAN एक भवन या परिसर तक होता है, नगर तक नहीं।",
+     "गलत: MAN नगर तक और WAN देशों तक होता है, उलटा नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "नेटवर्क",
+     "नेटवर्क के प्रकार"
+    ],
+    "facts": [
+     "इंटरनेट, WAN का सबसे बड़ा उदाहरण है।",
+     "नगर भर में फैले केबल टीवी नेटवर्क को प्रायः MAN का उदाहरण माना जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-025",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Consider the following statements about network topologies:\n1. In a star topology, every node is connected to a central device, and failure of that device stops the whole network.\n2. In a bus topology, all nodes share a single backbone cable.\n3. In a ring topology, each node is connected to exactly two neighbouring nodes.\n4. A fully connected mesh topology needs the least amount of cable among all topologies.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 and 2 only",
+     "1, 2 and 3 only",
+     "2, 3 and 4 only",
+     "1, 2, 3 and 4"
+    ],
+    "explanation": "Statements 1–3 describe star, bus and ring correctly. A full mesh links every node to every other node (n(n−1)/2 links), so it needs the most cabling, not the least.",
+    "notes": [
+     "Wrong: statement 3 about the ring is also correct.",
+     "Correct: statements 1, 2 and 3 are true.",
+     "Wrong: statement 4 is false and statement 1 is true.",
+     "Wrong: mesh uses the most cable, so statement 4 is false."
+    ],
+    "path": [
+     "ICT",
+     "Networks",
+     "Network topologies"
+    ],
+    "facts": [
+     "A full mesh of n nodes needs n(n−1)/2 links.",
+     "A tree topology is a hierarchy of star networks joined together."
+    ]
+   },
+   "hi": {
+    "q": "नेटवर्क टोपोलॉजी के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. स्टार टोपोलॉजी में प्रत्येक नोड एक केंद्रीय उपकरण से जुड़ा होता है और उस उपकरण के विफल होने पर पूरा नेटवर्क रुक जाता है।\n2. बस टोपोलॉजी में सभी नोड एक ही मुख्य (backbone) केबल साझा करते हैं।\n3. रिंग टोपोलॉजी में प्रत्येक नोड ठीक दो पड़ोसी नोडों से जुड़ा होता है।\n4. पूर्णतः संबद्ध मेश टोपोलॉजी में सभी टोपोलॉजी की तुलना में सबसे कम केबल लगती है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 1, 2 और 3",
+     "केवल 2, 3 और 4",
+     "1, 2, 3 और 4"
+    ],
+    "explanation": "कथन 1–3 स्टार, बस और रिंग का सही वर्णन करते हैं। पूर्ण मेश में प्रत्येक नोड हर अन्य नोड से जुड़ता है (n(n−1)/2 कड़ियाँ), अतः इसमें सबसे अधिक केबल लगती है, सबसे कम नहीं।",
+    "notes": [
+     "गलत: रिंग संबंधी कथन 3 भी सही है।",
+     "सही: कथन 1, 2 और 3 सत्य हैं।",
+     "गलत: कथन 4 असत्य है और कथन 1 सत्य है।",
+     "गलत: मेश में सबसे अधिक केबल लगती है, अतः कथन 4 असत्य है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "नेटवर्क",
+     "नेटवर्क टोपोलॉजी"
+    ],
+    "facts": [
+     "n नोडों की पूर्ण मेश में n(n−1)/2 कड़ियाँ होती हैं।",
+     "ट्री टोपोलॉजी कई स्टार नेटवर्कों को जोड़कर बना पदानुक्रम है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-026",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following network devices forwards a data frame only to the port of the destination device by using its MAC address?",
+    "options": [
+     "Hub",
+     "Repeater",
+     "Switch",
+     "Modem"
+    ],
+    "explanation": "A switch learns which MAC address is connected to which port and sends each frame only to the destination port. A hub, by contrast, copies incoming data to all its ports.",
+    "notes": [
+     "Hub: broadcasts incoming data to every connected port.",
+     "Repeater: only regenerates the signal; it does not read addresses.",
+     "Switch: forwards frames to the destination port using MAC addresses.",
+     "Modem: converts between digital and analog signals."
+    ],
+    "path": [
+     "ICT",
+     "Networks",
+     "Network devices",
+     "Switch"
+    ],
+    "facts": [
+     "A MAC address is a 48-bit hardware address of a network interface.",
+     "Because it does not flood every port, a switch reduces unnecessary traffic compared with a hub."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा नेटवर्क उपकरण MAC पते का प्रयोग कर डेटा फ़्रेम को केवल गंतव्य उपकरण वाले पोर्ट तक भेजता है?",
+    "options": [
+     "हब",
+     "रिपीटर",
+     "स्विच",
+     "मॉडेम"
+    ],
+    "explanation": "स्विच यह सीख लेता है कि कौन-सा MAC पता किस पोर्ट से जुड़ा है और प्रत्येक फ़्रेम केवल गंतव्य पोर्ट को भेजता है। इसके विपरीत हब आने वाले डेटा को अपने सभी पोर्ट पर भेज देता है।",
+    "notes": [
+     "हब: आने वाले डेटा को सभी जुड़े पोर्ट पर प्रसारित करता है।",
+     "रिपीटर: केवल संकेत को पुनः सशक्त करता है; पते नहीं पढ़ता।",
+     "स्विच: MAC पते के आधार पर फ़्रेम को गंतव्य पोर्ट तक भेजता है।",
+     "मॉडेम: डिजिटल और एनालॉग संकेतों के बीच रूपांतरण करता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "नेटवर्क",
+     "नेटवर्क उपकरण",
+     "स्विच"
+    ],
+    "facts": [
+     "MAC पता नेटवर्क इंटरफ़ेस का 48 बिट का हार्डवेयर पता है।",
+     "सभी पोर्ट पर डेटा न भेजने के कारण स्विच, हब की तुलना में अनावश्यक ट्रैफ़िक घटाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-027",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Match List-I (Network device) with List-II (Function) and select the correct answer using the codes given below the lists:\nList-I: A. Repeater B. Router C. Gateway D. Hub\nList-II: 1. Sends incoming data to all of its connected ports 2. Connects networks that use dissimilar protocols and acts as their entry/exit point 3. Regenerates a weakened signal to extend transmission distance 4. Forwards packets between networks on the basis of IP addresses",
+    "options": [
+     "A-3, B-2, C-4, D-1",
+     "A-1, B-4, C-2, D-3",
+     "A-4, B-3, C-2, D-1",
+     "A-3, B-4, C-2, D-1"
+    ],
+    "explanation": "A repeater boosts a fading signal, a router chooses paths for packets between networks using IP addresses, a gateway joins networks with different protocols, and a hub simply broadcasts to every port.",
+    "notes": [
+     "Wrong: the router routes by IP address; protocol translation is the gateway's role.",
+     "Wrong: the repeater regenerates signals and the hub broadcasts, not the reverse.",
+     "Wrong: the repeater does not route packets; the router does.",
+     "Correct: Repeater–3, Router–4, Gateway–2, Hub–1."
+    ],
+    "path": [
+     "ICT",
+     "Networks",
+     "Network devices"
+    ],
+    "facts": [
+     "A home Wi-Fi router usually combines router, switch and wireless access point.",
+     "A repeater works only at the physical (signal) level."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (नेटवर्क उपकरण) को सूची-II (कार्य) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. रिपीटर B. राउटर C. गेटवे D. हब\nसूची-II: 1. आने वाले डेटा को अपने सभी जुड़े पोर्ट पर भेजता है 2. भिन्न प्रोटोकॉल वाले नेटवर्कों को जोड़ता है और उनका प्रवेश/निकास बिंदु है 3. कमज़ोर संकेत को पुनः सशक्त कर संचरण दूरी बढ़ाता है 4. IP पतों के आधार पर नेटवर्कों के बीच पैकेट अग्रेषित करता है",
+    "options": [
+     "A-3, B-2, C-4, D-1",
+     "A-1, B-4, C-2, D-3",
+     "A-4, B-3, C-2, D-1",
+     "A-3, B-4, C-2, D-1"
+    ],
+    "explanation": "रिपीटर क्षीण संकेत को सशक्त करता है, राउटर IP पतों से नेटवर्कों के बीच पैकेटों का मार्ग चुनता है, गेटवे भिन्न प्रोटोकॉल वाले नेटवर्कों को जोड़ता है और हब सभी पोर्ट पर डेटा प्रसारित करता है।",
+    "notes": [
+     "गलत: राउटर IP पते से मार्ग चुनता है; प्रोटोकॉल रूपांतरण गेटवे का कार्य है।",
+     "गलत: रिपीटर संकेत सशक्त करता है और हब प्रसारण करता है, उलटा नहीं।",
+     "गलत: रिपीटर पैकेट रूट नहीं करता; यह राउटर करता है।",
+     "सही: रिपीटर–3, राउटर–4, गेटवे–2, हब–1।"
+    ],
+    "path": [
+     "आईसीटी",
+     "नेटवर्क",
+     "नेटवर्क उपकरण"
+    ],
+    "facts": [
+     "घरेलू वाई-फ़ाई राउटर में प्रायः राउटर, स्विच और वायरलेस एक्सेस पॉइंट एक साथ होते हैं।",
+     "रिपीटर केवल भौतिक (संकेत) स्तर पर कार्य करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-028",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Consider the following statements:\n1. Wi-Fi wireless LANs are based on the IEEE 802.11 family of standards.\n2. Bluetooth is a short-range wireless technology mainly used to form personal area networks.\n3. Like infrared, Bluetooth needs a clear line of sight between the communicating devices.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "2 and 3 only",
+     "1 and 2 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "Wi-Fi follows IEEE 802.11, and Bluetooth links nearby devices such as phones, earphones and keyboards. Bluetooth uses radio waves in the 2.4 GHz band, which pass through obstacles, so it does not need line of sight as infrared does.",
+    "notes": [
+     "Wrong: statement 2 is also correct.",
+     "Wrong: statement 3 is false.",
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: Bluetooth uses radio waves and works without line of sight."
+    ],
+    "path": [
+     "ICT",
+     "Networks",
+     "Wireless networks",
+     "Wi-Fi and Bluetooth"
+    ],
+    "facts": [
+     "Bluetooth and many Wi-Fi networks operate in the 2.4 GHz band.",
+     "TV remote controls usually use infrared, which needs line of sight."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. वाई-फ़ाई वायरलेस LAN, IEEE 802.11 मानक-श्रृंखला पर आधारित हैं।\n2. ब्लूटूथ कम दूरी की वायरलेस तकनीक है, जो मुख्यतः पर्सनल एरिया नेटवर्क बनाने में प्रयुक्त होती है।\n3. इन्फ्रारेड की भाँति ब्लूटूथ को भी संचार करने वाले उपकरणों के बीच सीधी दृष्टि-रेखा (line of sight) चाहिए।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 2 और 3",
+     "केवल 1 और 2",
+     "1, 2 और 3"
+    ],
+    "explanation": "वाई-फ़ाई IEEE 802.11 पर आधारित है और ब्लूटूथ फ़ोन, ईयरफ़ोन, कीबोर्ड जैसे निकटवर्ती उपकरणों को जोड़ता है। ब्लूटूथ 2.4 GHz बैंड की रेडियो तरंगों का प्रयोग करता है, जो अवरोधों को पार कर लेती हैं, अतः इसे इन्फ्रारेड की तरह दृष्टि-रेखा नहीं चाहिए।",
+    "notes": [
+     "गलत: कथन 2 भी सही है।",
+     "गलत: कथन 3 असत्य है।",
+     "सही: कथन 1 और 2 सत्य हैं।",
+     "गलत: ब्लूटूथ रेडियो तरंगों से दृष्टि-रेखा के बिना कार्य करता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "नेटवर्क",
+     "वायरलेस नेटवर्क",
+     "वाई-फ़ाई और ब्लूटूथ"
+    ],
+    "facts": [
+     "ब्लूटूथ और अनेक वाई-फ़ाई नेटवर्क 2.4 GHz बैंड में कार्य करते हैं।",
+     "टीवी रिमोट प्रायः इन्फ्रारेड का प्रयोग करते हैं, जिसे दृष्टि-रेखा चाहिए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IEEE 802.11 Wireless LAN Working Group",
+     "url": "https://www.ieee802.org/11/"
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 11 Data Communication"
+    },
+    {
+     "book": "special-topics",
+     "page": 92
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-029",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Who among the following sent the first e-mail over a computer network and introduced the '@' sign in e-mail addresses?",
+    "options": [
+     "Vinton Cerf",
+     "Jon Postel",
+     "Ray Tomlinson",
+     "Shiva Ayyadurai"
+    ],
+    "explanation": "In 1971 Ray Tomlinson, an engineer at BBN, sent e-mail between two computers on ARPANET. He used '@' to separate the user's name from the name of the host computer.",
+    "notes": [
+     "Vinton Cerf: co-designer of TCP/IP.",
+     "Jon Postel: long-time RFC editor and IANA manager; author of the original SMTP specification (RFC 821, 1982).",
+     "Ray Tomlinson: sent the first network e-mail and chose the '@' sign.",
+     "Shiva Ayyadurai: wrote a program called EMAIL in 1978; his claim to have invented e-mail is disputed."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "History of e-mail"
+    ],
+    "facts": [
+     "Tomlinson chose '@' because it did not appear in people's names.",
+     "Electronic mail is commonly shortened to e-mail."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किसने कम्प्यूटर नेटवर्क पर पहला ई-मेल भेजा और ई-मेल पतों में '@' चिह्न का प्रयोग आरम्भ किया?",
+    "options": [
+     "विंटन सर्फ",
+     "जॉन पोस्टेल",
+     "रे टॉमलिंसन",
+     "शिवा अय्यादुरई"
+    ],
+    "explanation": "1971 में BBN के इंजीनियर रे टॉमलिंसन ने ARPANET पर दो कम्प्यूटरों के बीच ई-मेल भेजा। उन्होंने उपयोगकर्ता के नाम को होस्ट कम्प्यूटर के नाम से अलग करने के लिए '@' का प्रयोग किया।",
+    "notes": [
+     "विंटन सर्फ: TCP/IP के सह-निर्माता।",
+     "जॉन पोस्टेल: लंबे समय तक RFC संपादक व IANA प्रबंधक; मूल SMTP विनिर्देश (RFC 821, 1982) के लेखक।",
+     "रे टॉमलिंसन: पहला नेटवर्क ई-मेल भेजा और '@' चिह्न चुना।",
+     "शिवा अय्यादुरई: 1978 में EMAIL नामक प्रोग्राम लिखा; ई-मेल के आविष्कार का उनका दावा विवादित है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "ई-मेल का इतिहास"
+    ],
+    "facts": [
+     "टॉमलिंसन ने '@' इसलिए चुना क्योंकि यह लोगों के नामों में नहीं आता।",
+     "इलेक्ट्रॉनिक मेल को संक्षेप में ई-मेल कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "special-topics",
+     "page": 90
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 10 Computer Networks"
+    },
+    {
+     "source": "Centre for Computing History: Ray Tomlinson",
+     "url": "https://www.computinghistory.org.uk/det/1787/Ray-Tomlinson/"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-030",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The addresses of recipients entered in which field of an e-mail are NOT shown to the other recipients?",
+    "options": [
+     "To",
+     "CC",
+     "Subject",
+     "BCC"
+    ],
+    "explanation": "BCC (blind carbon copy) sends a copy of the message to the listed people while hiding their addresses from all other recipients. Addresses in To and CC are visible to everyone who receives the mail.",
+    "notes": [
+     "To: main recipients; visible to all recipients.",
+     "CC (carbon copy): copy recipients; visible to all recipients.",
+     "Subject: the short title of the message, not an address field.",
+     "BCC (blind carbon copy): recipients hidden from others."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "Parts of an e-mail",
+     "BCC"
+    ],
+    "facts": [
+     "BCC is useful when mailing a large group without revealing everyone's address.",
+     "Header fields To, Cc and Bcc are defined in RFC 5322."
+    ]
+   },
+   "hi": {
+    "q": "ई-मेल के किस क्षेत्र (field) में लिखे गए प्राप्तकर्ताओं के पते अन्य प्राप्तकर्ताओं को दिखाई नहीं देते?",
+    "options": [
+     "To",
+     "CC",
+     "Subject",
+     "BCC"
+    ],
+    "explanation": "BCC (ब्लाइंड कार्बन कॉपी) में लिखे लोगों को संदेश की प्रति जाती है, पर उनके पते अन्य सभी प्राप्तकर्ताओं से छिपे रहते हैं। To और CC के पते मेल पाने वाले सभी को दिखते हैं।",
+    "notes": [
+     "To: मुख्य प्राप्तकर्ता; सभी को दिखाई देते हैं।",
+     "CC (कार्बन कॉपी): प्रति पाने वाले; सभी को दिखाई देते हैं।",
+     "Subject: संदेश का संक्षिप्त शीर्षक, पते का क्षेत्र नहीं।",
+     "BCC (ब्लाइंड कार्बन कॉपी): अन्य से छिपे प्राप्तकर्ता।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "ई-मेल के भाग",
+     "BCC"
+    ],
+    "facts": [
+     "बड़े समूह को सबके पते उजागर किए बिना मेल भेजने में BCC उपयोगी है।",
+     "To, Cc और Bcc हेडर क्षेत्र RFC 5322 में परिभाषित हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 5322: Internet Message Format (section 3.6.3)",
+     "url": "https://www.rfc-editor.org/rfc/rfc5322"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-031",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "In the e-mail address principal@school.edu.in, the part after the '@' sign denotes the:",
+    "options": [
+     "Domain name of the mail server",
+     "User name (mailbox name)",
+     "Password of the account",
+     "Protocol used to send the mail"
+    ],
+    "explanation": "An e-mail address has the form local-part@domain. The part before '@' (principal) names the mailbox, and the part after it (school.edu.in) is the domain that receives mail for that mailbox.",
+    "notes": [
+     "Domain name: school.edu.in, where the mailbox is hosted.",
+     "User name: 'principal', the part before the '@' sign.",
+     "Password: never part of an e-mail address.",
+     "Protocol: SMTP, POP3 or IMAP are used, but they are not written in the address."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "Parts of an e-mail",
+     "E-mail address"
+    ],
+    "facts": [
+     "E-mail address syntax is laid down in RFC 5322.",
+     "The domain part is not case-sensitive."
+    ]
+   },
+   "hi": {
+    "q": "ई-मेल पता principal@school.edu.in में '@' चिह्न के बाद वाला भाग दर्शाता है:",
+    "options": [
+     "मेल सर्वर का डोमेन नाम",
+     "उपयोगकर्ता नाम (मेलबॉक्स नाम)",
+     "खाते का पासवर्ड",
+     "मेल भेजने में प्रयुक्त प्रोटोकॉल"
+    ],
+    "explanation": "ई-मेल पते का रूप local-part@domain होता है। '@' से पहले का भाग (principal) मेलबॉक्स का नाम है और बाद का भाग (school.edu.in) वह डोमेन है जो उस मेलबॉक्स के लिए मेल प्राप्त करता है।",
+    "notes": [
+     "डोमेन नाम: school.edu.in, जहाँ मेलबॉक्स स्थित है।",
+     "उपयोगकर्ता नाम: 'principal', '@' से पहले का भाग।",
+     "पासवर्ड: कभी भी ई-मेल पते का भाग नहीं होता।",
+     "प्रोटोकॉल: SMTP, POP3 या IMAP प्रयुक्त होते हैं, पर पते में नहीं लिखे जाते।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "ई-मेल के भाग",
+     "ई-मेल पता"
+    ],
+    "facts": [
+     "ई-मेल पते की संरचना RFC 5322 में निर्धारित है।",
+     "डोमेन भाग में बड़े-छोटे अक्षरों का अंतर नहीं माना जाता।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 5322: Internet Message Format (section 3.4.1)",
+     "url": "https://www.rfc-editor.org/rfc/rfc5322"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-032",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which type of malicious program is self-replicating and spreads across a network on its own without attaching itself to a host file?",
+    "options": [
+     "Trojan horse",
+     "Worm",
+     "Spyware",
+     "Adware"
+    ],
+    "explanation": "A worm is a standalone program that copies itself and travels from computer to computer, usually by exploiting network weaknesses. A virus, unlike a worm, needs a host file and a user action to spread.",
+    "notes": [
+     "Trojan horse: disguised as useful software; it does not replicate itself.",
+     "Worm: standalone, self-replicating malware that spreads over networks.",
+     "Spyware: secretly collects information about the user.",
+     "Adware: displays unwanted advertisements."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Malware",
+     "Worm"
+    ],
+    "facts": [
+     "The Morris worm (1988) was one of the first worms to spread over the Internet.",
+     "Stuxnet, discovered in 2010, was a worm that targeted industrial control systems."
+    ]
+   },
+   "hi": {
+    "q": "किस प्रकार का दुर्भावनापूर्ण प्रोग्राम स्वयं की प्रतिकृति बनाता है और किसी होस्ट फ़ाइल से जुड़े बिना स्वयं ही नेटवर्क में फैलता है?",
+    "options": [
+     "ट्रोजन हॉर्स",
+     "वर्म",
+     "स्पाइवेयर",
+     "एडवेयर"
+    ],
+    "explanation": "वर्म एक स्वतंत्र प्रोग्राम है जो अपनी प्रतियाँ बनाकर प्रायः नेटवर्क की कमज़ोरियों का लाभ उठाते हुए एक कम्प्यूटर से दूसरे में पहुँचता है। वर्म के विपरीत, वायरस को फैलने के लिए होस्ट फ़ाइल और उपयोगकर्ता की क्रिया चाहिए।",
+    "notes": [
+     "ट्रोजन हॉर्स: उपयोगी सॉफ्टवेयर के रूप में छिपा; स्वयं की प्रतिकृति नहीं बनाता।",
+     "वर्म: स्वतंत्र, स्व-प्रतिकृति बनाने वाला मालवेयर, जो नेटवर्क पर फैलता है।",
+     "स्पाइवेयर: उपयोगकर्ता की जानकारी चुपचाप एकत्र करता है।",
+     "एडवेयर: अवांछित विज्ञापन दिखाता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "मालवेयर",
+     "वर्म"
+    ],
+    "facts": [
+     "मॉरिस वर्म (1988) इंटरनेट पर फैलने वाले पहले वर्मों में से एक था।",
+     "2010 में पकड़ा गया स्टक्सनेट औद्योगिक नियंत्रण प्रणालियों को निशाना बनाने वाला वर्म था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 12 Security Aspects"
+    },
+    {
+     "book": "special-topics",
+     "page": 63
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-033",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Sending fraudulent e-mails or creating fake websites that look like those of a bank or other trusted organisation in order to steal user names, passwords and card details is called:",
+    "options": [
+     "Cyber stalking",
+     "Software piracy",
+     "Data diddling",
+     "Phishing"
+    ],
+    "explanation": "Phishing tricks users into revealing sensitive data by imitating a trusted source, usually through a deceptive e-mail or message with a link to a fake login page.",
+    "notes": [
+     "Cyber stalking: repeatedly harassing or following a person online.",
+     "Software piracy: unauthorised copying and use of software.",
+     "Data diddling: altering data before or while it is entered into a computer.",
+     "Phishing: luring users with fake mails or sites to steal credentials."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Cyber crimes",
+     "Phishing"
+    ],
+    "facts": [
+     "Spear phishing targets a particular person or organisation.",
+     "Phishing through SMS is called smishing; through voice calls, vishing."
+    ]
+   },
+   "hi": {
+    "q": "किसी बैंक या अन्य विश्वसनीय संस्था जैसे दिखने वाले कपटपूर्ण ई-मेल भेजकर या नकली वेबसाइट बनाकर उपयोगकर्ता नाम, पासवर्ड और कार्ड विवरण चुराना कहलाता है:",
+    "options": [
+     "साइबर स्टॉकिंग",
+     "सॉफ्टवेयर पाइरेसी",
+     "डेटा डिडलिंग",
+     "फ़िशिंग"
+    ],
+    "explanation": "फ़िशिंग में किसी विश्वसनीय स्रोत की नकल कर उपयोगकर्ता से संवेदनशील जानकारी निकलवाई जाती है, प्रायः ऐसे भ्रामक ई-मेल या संदेश से जिसमें नकली लॉगिन पृष्ठ का लिंक होता है।",
+    "notes": [
+     "साइबर स्टॉकिंग: किसी व्यक्ति का ऑनलाइन बार-बार पीछा या उत्पीड़न करना।",
+     "सॉफ्टवेयर पाइरेसी: सॉफ्टवेयर की अनधिकृत नकल और उपयोग।",
+     "डेटा डिडलिंग: कम्प्यूटर में डालने से पहले या डालते समय डेटा बदलना।",
+     "फ़िशिंग: नकली मेल या साइट से फुसलाकर पहचान-विवरण चुराना।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "साइबर अपराध",
+     "फ़िशिंग"
+    ],
+    "facts": [
+     "स्पीयर फ़िशिंग किसी विशेष व्यक्ति या संस्था को निशाना बनाती है।",
+     "SMS द्वारा फ़िशिंग को स्मिशिंग और वॉयस कॉल द्वारा विशिंग कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "special-topics",
+     "page": 62
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Ch. 11 Societal Impact"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-034",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Match List-I (Malware) with List-II (Characteristic) and select the correct answer using the codes given below the lists:\nList-I: A. Virus B. Trojan horse C. Ransomware D. Spyware\nList-II: 1. Secretly collects information about a user's activities 2. Attaches itself to a host file and spreads when that file is run 3. Encrypts the victim's data and demands payment to restore it 4. Appears to be useful software but performs hidden harmful actions",
+    "options": [
+     "A-2, B-4, C-3, D-1",
+     "A-4, B-2, C-3, D-1",
+     "A-2, B-4, C-1, D-3",
+     "A-1, B-4, C-3, D-2"
+    ],
+    "explanation": "A virus rides on a host program, a Trojan horse hides harmful code inside apparently useful software, ransomware locks or encrypts data for a ransom, and spyware secretly gathers user information.",
+    "notes": [
+     "Correct: Virus–2, Trojan–4, Ransomware–3, Spyware–1.",
+     "Wrong: a virus attaches to host files; disguise as useful software marks a Trojan.",
+     "Wrong: ransomware demands payment; spyware spies on the user.",
+     "Wrong: a virus is not spyware, and spyware does not attach to host files."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Malware",
+     "Types of malware"
+    ],
+    "facts": [
+     "WannaCry (2017) was a widespread ransomware attack.",
+     "Malware is short for malicious software."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (मालवेयर) को सूची-II (विशेषता) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. वायरस B. ट्रोजन हॉर्स C. रैंसमवेयर D. स्पाइवेयर\nसूची-II: 1. उपयोगकर्ता की गतिविधियों की जानकारी चुपचाप एकत्र करता है 2. किसी होस्ट फ़ाइल से जुड़ जाता है और उस फ़ाइल के चलने पर फैलता है 3. पीड़ित के डेटा को एन्क्रिप्ट कर उसे लौटाने हेतु भुगतान माँगता है 4. उपयोगी सॉफ्टवेयर जैसा दिखता है पर छिपे हानिकारक कार्य करता है",
+    "options": [
+     "A-2, B-4, C-3, D-1",
+     "A-4, B-2, C-3, D-1",
+     "A-2, B-4, C-1, D-3",
+     "A-1, B-4, C-3, D-2"
+    ],
+    "explanation": "वायरस किसी होस्ट प्रोग्राम पर निर्भर रहता है, ट्रोजन हॉर्स उपयोगी दिखने वाले सॉफ्टवेयर में हानिकारक कोड छिपाता है, रैंसमवेयर फिरौती के लिए डेटा को लॉक या एन्क्रिप्ट करता है और स्पाइवेयर चुपचाप उपयोगकर्ता की जानकारी जुटाता है।",
+    "notes": [
+     "सही: वायरस–2, ट्रोजन–4, रैंसमवेयर–3, स्पाइवेयर–1।",
+     "गलत: वायरस होस्ट फ़ाइल से जुड़ता है; उपयोगी सॉफ्टवेयर का छद्म रूप ट्रोजन की पहचान है।",
+     "गलत: रैंसमवेयर भुगतान माँगता है; स्पाइवेयर जासूसी करता है।",
+     "गलत: वायरस स्पाइवेयर नहीं है और स्पाइवेयर होस्ट फ़ाइल से नहीं जुड़ता।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "मालवेयर",
+     "मालवेयर के प्रकार"
+    ],
+    "facts": [
+     "वानाक्राई (2017) एक व्यापक रैंसमवेयर हमला था।",
+     "मालवेयर, 'मैलिशियस सॉफ्टवेयर' का संक्षिप्त रूप है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 12 Security Aspects"
+    },
+    {
+     "book": "special-topics",
+     "page": 63
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-035",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Consider the following statements about a firewall:\n1. It monitors and filters incoming and outgoing network traffic according to predefined security rules.\n2. It can be implemented as hardware, software or a combination of both.\n3. It is designed to remove viruses already present in infected files on a hard disk.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "A firewall sits between a trusted network and an untrusted one and allows or blocks traffic by rules; it may be a dedicated device or a program. Cleaning infected files is the job of antivirus software, not a firewall.",
+    "notes": [
+     "Wrong: statement 2 is also correct.",
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false.",
+     "Wrong: removing viruses is the task of antivirus software."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Protection",
+     "Firewall"
+    ],
+    "facts": [
+     "Windows and most routers include a built-in firewall.",
+     "Antivirus software detects and removes malware using signatures and behaviour analysis."
+    ]
+   },
+   "hi": {
+    "q": "फ़ायरवॉल के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. यह पूर्वनिर्धारित सुरक्षा नियमों के अनुसार आने वाले और जाने वाले नेटवर्क ट्रैफ़िक की निगरानी व फ़िल्टरिंग करता है।\n2. इसे हार्डवेयर, सॉफ्टवेयर या दोनों के संयोजन के रूप में लागू किया जा सकता है।\n3. यह हार्ड डिस्क की संक्रमित फ़ाइलों में पहले से मौजूद वायरस को हटाने के लिए बनाया गया है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "फ़ायरवॉल विश्वसनीय और अविश्वसनीय नेटवर्क के बीच रहकर नियमों के अनुसार ट्रैफ़िक को अनुमति देता या रोकता है; यह अलग उपकरण भी हो सकता है और प्रोग्राम भी। संक्रमित फ़ाइलों की सफ़ाई एंटीवायरस का कार्य है, फ़ायरवॉल का नहीं।",
+    "notes": [
+     "गलत: कथन 2 भी सही है।",
+     "सही: कथन 1 और 2 सत्य हैं।",
+     "गलत: कथन 3 असत्य है।",
+     "गलत: वायरस हटाना एंटीवायरस सॉफ्टवेयर का कार्य है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "सुरक्षा उपाय",
+     "फ़ायरवॉल"
+    ],
+    "facts": [
+     "विंडोज़ और अधिकांश राउटरों में अंतर्निर्मित फ़ायरवॉल होता है।",
+     "एंटीवायरस सॉफ्टवेयर सिग्नेचर और व्यवहार-विश्लेषण से मालवेयर पहचानकर हटाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 12 Security Aspects"
+    },
+    {
+     "book": "special-topics",
+     "page": 68
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-036",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Which one of the following is an example of two-factor authentication?",
+    "options": [
+     "A password and a PIN",
+     "A password and an OTP sent to the registered mobile phone",
+     "A user name and a password",
+     "Answers to two security questions"
+    ],
+    "explanation": "Two-factor authentication combines two different kinds of factor: something you know, something you have, or something you are. A password (knowledge) plus an OTP on your own phone (possession) qualifies; the other options use only knowledge factors.",
+    "notes": [
+     "Password and PIN: both are things you know, so only one factor type.",
+     "Password and OTP on registered phone: knowledge plus possession, so two factors.",
+     "User name and password: the user name is an identifier; only the password is a factor.",
+     "Two security questions: both are knowledge factors."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Protection",
+     "Two-factor authentication"
+    ],
+    "facts": [
+     "The three factor types are knowledge, possession and inherence (biometrics).",
+     "A fingerprint is an example of an inherence factor."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा द्वि-कारक प्रमाणीकरण (two-factor authentication) का उदाहरण है?",
+    "options": [
+     "पासवर्ड और PIN",
+     "पासवर्ड और पंजीकृत मोबाइल फ़ोन पर भेजा गया OTP",
+     "उपयोगकर्ता नाम और पासवर्ड",
+     "दो सुरक्षा प्रश्नों के उत्तर"
+    ],
+    "explanation": "द्वि-कारक प्रमाणीकरण में दो भिन्न प्रकार के कारक जोड़े जाते हैं: जो आप जानते हैं, जो आपके पास है, या जो आप हैं। पासवर्ड (ज्ञान) और अपने फ़ोन पर OTP (स्वामित्व) इसका उदाहरण है; अन्य विकल्पों में केवल ज्ञान-आधारित कारक हैं।",
+    "notes": [
+     "पासवर्ड और PIN: दोनों 'जो आप जानते हैं' प्रकार के, अतः एक ही प्रकार का कारक।",
+     "पासवर्ड और पंजीकृत फ़ोन पर OTP: ज्ञान और स्वामित्व, अतः दो कारक।",
+     "उपयोगकर्ता नाम और पासवर्ड: उपयोगकर्ता नाम पहचानकर्ता है; केवल पासवर्ड कारक है।",
+     "दो सुरक्षा प्रश्न: दोनों ज्ञान-आधारित कारक हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "सुरक्षा उपाय",
+     "द्वि-कारक प्रमाणीकरण"
+    ],
+    "facts": [
+     "तीन प्रकार के कारक हैं: ज्ञान, स्वामित्व और अंतर्निहित (बायोमेट्रिक)।",
+     "फ़िंगरप्रिंट अंतर्निहित (बायोमेट्रिक) कारक का उदाहरण है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIST SP 800-63B: Digital Identity Guidelines – Authentication",
+     "url": "https://pages.nist.gov/800-63-3/sp800-63b.html"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-037",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Consider the following statements about CERT-In:\n1. It functions under the Ministry of Electronics and Information Technology (MeitY).\n2. It is the national agency for incident response designated under Section 70B of the Information Technology Act, 2000.\n3. It was established under the Digital Personal Data Protection Act, 2023.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "The Indian Computer Emergency Response Team (CERT-In) functions under MeitY. Section 70B of the IT Act, 2000 (inserted by the 2008 amendment) makes it the national agency for responding to cyber security incidents. Its role comes from the IT Act, not from the DPDP Act, 2023.",
+    "notes": [
+     "Correct: statements 1 and 2 are true.",
+     "Wrong: statement 3 is false.",
+     "Wrong: statement 2 is also correct.",
+     "Wrong: CERT-In's role comes from the IT Act, 2000, not the DPDP Act, 2023."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Institutions",
+     "CERT-In"
+    ],
+    "facts": [
+     "CERT-In runs a 24x7 incident response help desk.",
+     "The Indian Cyber Crime Coordination Centre (I4C) works under the Ministry of Home Affairs."
+    ]
+   },
+   "hi": {
+    "q": "CERT-In के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. यह इलेक्ट्रॉनिकी और सूचना प्रौद्योगिकी मंत्रालय (MeitY) के अधीन कार्य करता है।\n2. यह सूचना प्रौद्योगिकी अधिनियम, 2000 की धारा 70B के अंतर्गत नामित घटना-प्रतिक्रिया (incident response) की राष्ट्रीय एजेंसी है।\n3. इसकी स्थापना डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 के अंतर्गत की गई थी।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1",
+     "1, 2 और 3"
+    ],
+    "explanation": "भारतीय कम्प्यूटर आपात प्रतिक्रिया दल (CERT-In) MeitY के अधीन कार्य करता है। सूचना प्रौद्योगिकी अधिनियम, 2000 की धारा 70B (2008 के संशोधन से जोड़ी गई) इसे साइबर सुरक्षा घटनाओं पर प्रतिक्रिया की राष्ट्रीय एजेंसी बनाती है। इसकी भूमिका आईटी अधिनियम से है, DPDP अधिनियम, 2023 से नहीं।",
+    "notes": [
+     "सही: कथन 1 और 2 सत्य हैं।",
+     "गलत: कथन 3 असत्य है।",
+     "गलत: कथन 2 भी सही है।",
+     "गलत: CERT-In की भूमिका आईटी अधिनियम, 2000 से है, DPDP अधिनियम, 2023 से नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "संस्थाएँ",
+     "CERT-In"
+    ],
+    "facts": [
+     "CERT-In 24x7 घटना-प्रतिक्रिया हेल्प डेस्क चलाता है।",
+     "भारतीय साइबर अपराध समन्वय केंद्र (I4C) गृह मंत्रालय के अधीन कार्य करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "PIB backgrounder: CERT-In, India's Frontline Defender against Cyber Threats (2026)",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jan/doc2026123764501.pdf"
+    },
+    {
+     "source": "Information Technology Act, 2000 (as amended), PRS Legislative Research copy",
+     "url": "https://prsindia.org/files/bills_acts/bills_parliament/2021/IT%20Act,%202000.pdf"
+    },
+    {
+     "book": "special-topics",
+     "page": 68
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-038",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "Match List-I (Section of the Information Technology Act, 2000) with List-II (Subject) and select the correct answer using the codes given below the lists:\nList-I: A. Section 66C B. Section 66D C. Section 66F D. Section 67\nList-II: 1. Cyber terrorism 2. Identity theft 3. Publishing or transmitting obscene material in electronic form 4. Cheating by personation using a computer resource",
+    "options": [
+     "A-4, B-2, C-1, D-3",
+     "A-2, B-4, C-3, D-1",
+     "A-2, B-4, C-1, D-3",
+     "A-1, B-2, C-4, D-3"
+    ],
+    "explanation": "Section 66C punishes identity theft (misuse of passwords, digital signatures), 66D cheating by personation, 66F cyber terrorism (punishable up to life imprisonment) and 67 obscene material in electronic form.",
+    "notes": [
+     "Wrong: 66C is identity theft and 66D is cheating by personation, not the reverse.",
+     "Wrong: 66F is cyber terrorism and 67 covers obscene material.",
+     "Correct: 66C–2, 66D–4, 66F–1, 67–3.",
+     "Wrong: 66C is not cyber terrorism; that is 66F."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Cyber law",
+     "IT Act, 2000"
+    ],
+    "facts": [
+     "Section 66A was struck down by the Supreme Court in Shreya Singhal v. Union of India (2015).",
+     "The IT Act, 2000 came into force on 17 October 2000 and was amended in 2008."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (सूचना प्रौद्योगिकी अधिनियम, 2000 की धारा) को सूची-II (विषय) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. धारा 66C B. धारा 66D C. धारा 66F D. धारा 67\nसूची-II: 1. साइबर आतंकवाद 2. पहचान की चोरी 3. इलेक्ट्रॉनिक रूप में अश्लील सामग्री का प्रकाशन या प्रसारण 4. कम्प्यूटर संसाधन के प्रयोग से छद्म-रूप धारण कर छल",
+    "options": [
+     "A-4, B-2, C-1, D-3",
+     "A-2, B-4, C-3, D-1",
+     "A-2, B-4, C-1, D-3",
+     "A-1, B-2, C-4, D-3"
+    ],
+    "explanation": "धारा 66C पहचान की चोरी (पासवर्ड, डिजिटल हस्ताक्षर का दुरुपयोग), 66D छद्म-रूप धारण कर छल, 66F साइबर आतंकवाद (आजीवन कारावास तक दंडनीय) और 67 इलेक्ट्रॉनिक रूप में अश्लील सामग्री से संबंधित है।",
+    "notes": [
+     "गलत: 66C पहचान की चोरी और 66D छद्म-रूप से छल है, उलटा नहीं।",
+     "गलत: 66F साइबर आतंकवाद है और 67 अश्लील सामग्री से संबंधित है।",
+     "सही: 66C–2, 66D–4, 66F–1, 67–3।",
+     "गलत: 66C साइबर आतंकवाद नहीं है; वह 66F है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "साइबर कानून",
+     "आईटी अधिनियम, 2000"
+    ],
+    "facts": [
+     "धारा 66A को सर्वोच्च न्यायालय ने श्रेया सिंघल बनाम भारत संघ (2015) में निरस्त किया।",
+     "आईटी अधिनियम, 2000 17 अक्टूबर 2000 को लागू हुआ और 2008 में संशोधित हुआ।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Information Technology Act, 2000 (as amended), PRS Legislative Research copy",
+     "url": "https://prsindia.org/files/bills_acts/bills_parliament/2021/IT%20Act,%202000.pdf"
+    },
+    {
+     "book": "special-topics",
+     "page": 60
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-039",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "Assertion (A): In public-key (asymmetric) cryptography, a message encrypted with the receiver's public key can be decrypted only with the receiver's private key.\nReason (R): Asymmetric cryptography uses one shared secret key for both encryption and decryption.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "Asymmetric cryptography uses a mathematically linked key pair: the public key can be shared, while only the private key can decrypt what it encrypts. Using a single shared secret key describes symmetric cryptography, so R is false.",
+    "notes": [
+     "Wrong: R is false, so it cannot explain A.",
+     "Wrong: R is false.",
+     "Correct: A is true; R describes symmetric, not asymmetric, cryptography.",
+     "Wrong: A correctly describes public-key encryption."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Protection",
+     "Encryption"
+    ],
+    "facts": [
+     "RSA is a well-known public-key algorithm; AES is a symmetric one.",
+     "Encryption converts readable plaintext into unreadable ciphertext."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): सार्वजनिक-कुंजी (असममित) क्रिप्टोग्राफ़ी में प्राप्तकर्ता की सार्वजनिक कुंजी से एन्क्रिप्ट किया गया संदेश केवल प्राप्तकर्ता की निजी कुंजी से ही डिक्रिप्ट किया जा सकता है।\nकारण (R): असममित क्रिप्टोग्राफ़ी में एन्क्रिप्शन और डिक्रिप्शन दोनों के लिए एक ही साझा गुप्त कुंजी प्रयुक्त होती है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "असममित क्रिप्टोग्राफ़ी में गणितीय रूप से जुड़ी कुंजियों का जोड़ा होता है: सार्वजनिक कुंजी साझा की जा सकती है, जबकि उससे एन्क्रिप्ट किया गया संदेश केवल निजी कुंजी से खुलता है। एक ही साझा गुप्त कुंजी का प्रयोग सममित क्रिप्टोग्राफ़ी में होता है, अतः R गलत है।",
+    "notes": [
+     "गलत: R असत्य है, अतः वह A की व्याख्या नहीं कर सकता।",
+     "गलत: R असत्य है।",
+     "सही: A सही है; R सममित क्रिप्टोग्राफ़ी का वर्णन है, असममित का नहीं।",
+     "गलत: A सार्वजनिक-कुंजी एन्क्रिप्शन का सही वर्णन है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "सुरक्षा उपाय",
+     "एन्क्रिप्शन"
+    ],
+    "facts": [
+     "RSA एक प्रसिद्ध सार्वजनिक-कुंजी एल्गोरिद्म है; AES सममित एल्गोरिद्म है।",
+     "एन्क्रिप्शन पठनीय प्लेनटेक्स्ट को अपठनीय सिफ़रटेक्स्ट में बदलता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 4949: Internet Security Glossary, Version 2",
+     "url": "https://www.rfc-editor.org/rfc/rfc4949"
+    },
+    {
+     "book": "special-topics",
+     "page": 68
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-040",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Which of the following pairs are correctly matched?\n1. Spoofing – Forging sender details so that a message appears to come from a trusted source\n2. Keylogger – Records the keys pressed by a user\n3. DDoS attack – Floods a server with traffic from many compromised systems to make it unavailable\n4. Spam – Encrypting a victim's files and demanding a ransom\nSelect the correct answer using the codes given below:",
+    "options": [
+     "1 and 2 only",
+     "2 and 4 only",
+     "1, 3 and 4 only",
+     "1, 2 and 3 only"
+    ],
+    "explanation": "Pairs 1–3 are correct. Spam means unsolicited bulk messages, usually e-mail; encrypting files for ransom describes ransomware, so pair 4 is wrong.",
+    "notes": [
+     "Wrong: pair 3 (DDoS) is also correct.",
+     "Wrong: pair 4 is wrong and pair 1 is correct.",
+     "Wrong: pair 4 is wrong and pair 2 is correct.",
+     "Correct: pairs 1, 2 and 3 are matched correctly."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Cyber crimes",
+     "Attack types"
+    ],
+    "facts": [
+     "DDoS stands for Distributed Denial of Service.",
+     "E-mail spoofing is often used in phishing attacks."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित युग्मों में से कौन-से सही सुमेलित हैं?\n1. स्पूफ़िंग – प्रेषक का विवरण जाली बनाना ताकि संदेश किसी विश्वसनीय स्रोत से आया लगे\n2. कीलॉगर – उपयोगकर्ता द्वारा दबाई गई कुंजियों को रिकॉर्ड करता है\n3. DDoS हमला – अनेक संक्रमित प्रणालियों से ट्रैफ़िक भेजकर सर्वर को ठप कर देना\n4. स्पैम – पीड़ित की फ़ाइलें एन्क्रिप्ट कर फिरौती माँगना\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "options": [
+     "केवल 1 और 2",
+     "केवल 2 और 4",
+     "केवल 1, 3 और 4",
+     "केवल 1, 2 और 3"
+    ],
+    "explanation": "युग्म 1–3 सही हैं। स्पैम का अर्थ है अवांछित थोक संदेश, प्रायः ई-मेल; फ़ाइलें एन्क्रिप्ट कर फिरौती माँगना रैंसमवेयर है, अतः युग्म 4 गलत है।",
+    "notes": [
+     "गलत: युग्म 3 (DDoS) भी सही है।",
+     "गलत: युग्म 4 गलत है और युग्म 1 सही है।",
+     "गलत: युग्म 4 गलत है और युग्म 2 सही है।",
+     "सही: युग्म 1, 2 और 3 सही सुमेलित हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "साइबर अपराध",
+     "हमलों के प्रकार"
+    ],
+    "facts": [
+     "DDoS का पूर्ण रूप डिस्ट्रिब्यूटेड डिनायल ऑफ़ सर्विस है।",
+     "ई-मेल स्पूफ़िंग का प्रयोग प्रायः फ़िशिंग हमलों में होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Ch. 12 Security Aspects"
+    },
+    {
+     "book": "special-topics",
+     "page": 64
+    },
+    {
+     "source": "IETF RFC 4949: Internet Security Glossary, Version 2",
+     "url": "https://www.rfc-editor.org/rfc/rfc4949"
+    }
+   ]
+  }
+ ]
+}
