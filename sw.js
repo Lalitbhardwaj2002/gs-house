@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const CACHE = 'gshouse-v2';
+const CACHE = 'gshouse-v3';
 const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json'];
 
 self.addEventListener('install', (event) => {
