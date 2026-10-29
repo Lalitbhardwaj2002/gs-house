@@ -1,4 +1,4 @@
-/* GS House — a bilingual General Knowledge quiz for the UPESSC TGT, PGT and
+/* GS HOUSE — a bilingual General Knowledge quiz for the UPESSC TGT, PGT and
  * Assistant Professor (Higher Education) exams. Play solo or with up to 20 players.
  *
  * How it works:
@@ -770,7 +770,7 @@ function render() {
 function topBar(v) {
   return `
     <header class="topbar">
-      <div class="brand-mini">🪔 <b>GS House</b>${v.solo ? '' : `<button class="chip" data-action="copy">${t('roomCode')} <b>${esc(v.code)}</b></button>`}</div>
+      <div class="brand-mini">🪔 <b>GS HOUSE</b>${v.solo ? '' : `<button class="chip" data-action="copy">${t('roomCode')} <b>${esc(v.code)}</b></button>`}</div>
       <div class="topbar-right">
         <button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">EN</span><span class="${lang === 'hi' ? 'on' : ''}">हिं</span></button>
         <button class="icon-btn" data-action="mute" aria-label="Sound">${sfx.muted ? '🔇' : '🔊'}</button>
@@ -1045,7 +1045,7 @@ function sheetHTML(v) {
         <div class="segs segs-3 no-print">${langBtn('en', 'English')}${langBtn('hi', 'हिन्दी')}${langBtn('both', t('both'))}</div>
         <div class="row no-print"><button class="btn primary" data-action="print">🖨️ ${t('print')}</button><button class="btn" data-action="sheet-close">${t('close')}</button></div>
       </div>
-      <p class="print-only sheet-title">GS House — ${t('answerSheet')} · ${esc(me.name)} · ${new Date().toLocaleDateString('en-IN')}</p>
+      <p class="print-only sheet-title">GS HOUSE — ${t('answerSheet')} · ${esc(me.name)} · ${new Date().toLocaleDateString('en-IN')}</p>
       ${items || `<p class="muted">${t('noneYet')}</p>`}
     </section>`;
 }
@@ -1142,7 +1142,7 @@ function renderHome() {
     <div class="home-top"><button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">English</span><span class="${lang === 'hi' ? 'on' : ''}">हिन्दी</span></button></div>
     <section class="hero">
       ${LOTUS_SVG}
-      <h1 class="title"><span class="t-main">GS House</span></h1>
+      <h1 class="title"><span class="t-main">GS HOUSE</span></h1>
       <p class="tagline">${t('tagline')}</p>
       <p class="stats">${t('stats', SECTIONS.length, total)}</p>
     </section>
@@ -1289,7 +1289,7 @@ const actions = {
   copy: copyInvite,
   share() {
     const code = ui.view.code;
-    navigator.share({ title: 'GS House', text: `Join my GS House GK quiz! Room code ${code}`, url: inviteUrl(code) }).catch(() => {});
+    navigator.share({ title: 'GS HOUSE', text: `Join my GS HOUSE GK quiz! Room code ${code}`, url: inviteUrl(code) }).catch(() => {});
   },
   async install() {
     if (!installPrompt) return;
