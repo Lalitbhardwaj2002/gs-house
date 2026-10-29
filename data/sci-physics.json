@@ -1,0 +1,3639 @@
+{
+  "section": "sci-physics",
+  "questions": [
+    {
+      "id": "sci-physics-001",
+      "level": "TGT",
+      "answer": 2,
+      "en": {
+        "q": "Which one of the following is a vector quantity?",
+        "options": [
+          "Distance",
+          "Speed",
+          "Displacement",
+          "Time"
+        ],
+        "explanation": "Displacement is the shortest straight-line separation between the initial and final positions and it has both magnitude and direction, so it is a vector. Distance, speed and time have magnitude only.",
+        "notes": [
+          "Distance: total length of the path travelled; a scalar.",
+          "Speed: distance covered per unit time; a scalar.",
+          "Displacement: change in position with a definite direction; a vector.",
+          "Time: has only magnitude; a scalar."
+        ],
+        "path": [
+          "Physics",
+          "Motion",
+          "Scalars and vectors"
+        ],
+        "facts": [
+          "Displacement can be zero even when the distance travelled is not, e.g. after returning to the starting point.",
+          "Velocity, acceleration, force and momentum are vectors."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित में से कौन-सी एक सदिश राशि है?",
+        "options": [
+          "दूरी",
+          "चाल",
+          "विस्थापन",
+          "समय"
+        ],
+        "explanation": "विस्थापन प्रारंभिक और अंतिम स्थिति के बीच की न्यूनतम सीधी दूरी है, जिसमें परिमाण और दिशा दोनों होते हैं; अतः यह सदिश राशि है। दूरी, चाल और समय में केवल परिमाण होता है।",
+        "notes": [
+          "दूरी: तय किए गए पूरे पथ की लंबाई; अदिश राशि।",
+          "चाल: प्रति इकाई समय में तय दूरी; अदिश राशि।",
+          "विस्थापन: निश्चित दिशा सहित स्थिति में परिवर्तन; सदिश राशि।",
+          "समय: केवल परिमाण वाली राशि; अदिश।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गति",
+          "अदिश एवं सदिश राशियाँ"
+        ],
+        "facts": [
+          "प्रारंभिक बिंदु पर लौट आने पर विस्थापन शून्य हो सकता है, भले ही तय दूरी शून्य न हो।",
+          "वेग, त्वरण, बल और संवेग सदिश राशियाँ हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 222
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Motion'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-002",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "A speed of 72 km/h is equal to:",
+        "options": [
+          "72 m/s",
+          "20 m/s",
+          "25 m/s",
+          "259.2 m/s"
+        ],
+        "explanation": "To convert km/h into m/s, multiply by 5/18 (because 1 km = 1000 m and 1 h = 3600 s). So 72 × 5/18 = 20 m/s.",
+        "notes": [
+          "72 m/s: the number is unchanged, so no conversion has been done.",
+          "20 m/s: correct value, 72 × 5/18.",
+          "25 m/s: equals 90 km/h, not 72 km/h.",
+          "259.2 m/s: obtained by wrongly multiplying by 18/5, which converts m/s into km/h."
+        ],
+        "path": [
+          "Physics",
+          "Motion",
+          "Speed",
+          "Unit conversion"
+        ],
+        "facts": [
+          "km/h × 5/18 = m/s; m/s × 18/5 = km/h.",
+          "The SI unit of speed is metre per second (m/s)."
+        ]
+      },
+      "hi": {
+        "q": "72 किमी/घंटा की चाल किसके बराबर है?",
+        "options": [
+          "72 मी/से",
+          "20 मी/से",
+          "25 मी/से",
+          "259.2 मी/से"
+        ],
+        "explanation": "किमी/घंटा को मी/से में बदलने के लिए 5/18 से गुणा करते हैं (क्योंकि 1 किमी = 1000 मी और 1 घंटा = 3600 से)। अतः 72 × 5/18 = 20 मी/से।",
+        "notes": [
+          "72 मी/से: संख्या वही रखी गई है, कोई रूपांतरण नहीं हुआ।",
+          "20 मी/से: सही मान, 72 × 5/18।",
+          "25 मी/से: यह 90 किमी/घंटा के बराबर है, 72 किमी/घंटा के नहीं।",
+          "259.2 मी/से: गलती से 18/5 से गुणा करने पर मिलता है, जो मी/से को किमी/घंटा में बदलने का सूत्र है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गति",
+          "चाल",
+          "मात्रक रूपांतरण"
+        ],
+        "facts": [
+          "किमी/घंटा × 5/18 = मी/से; मी/से × 18/5 = किमी/घंटा।",
+          "चाल का SI मात्रक मीटर प्रति सेकंड (मी/से) है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 222
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-003",
+      "level": "PGT",
+      "answer": 3,
+      "en": {
+        "q": "An athlete completes exactly one lap of a circular track of circumference 400 m in 80 s and stops at the starting point. What are the athlete's average speed and average velocity for the lap?",
+        "options": [
+          "2.5 m/s and 0 m/s",
+          "0 m/s and 5 m/s",
+          "5 m/s and 5 m/s",
+          "5 m/s and 0 m/s"
+        ],
+        "explanation": "Average speed = total distance / total time = 400/80 = 5 m/s. Because the athlete ends where he started, the displacement is zero, so the average velocity (displacement / time) is 0 m/s.",
+        "notes": [
+          "2.5 m/s and 0 m/s: the speed is halved by mistake; 400/80 is 5, not 2.5.",
+          "0 m/s and 5 m/s: reverses the two; speed uses distance (non-zero) and velocity uses displacement (zero).",
+          "5 m/s and 5 m/s: treats velocity like speed and ignores that displacement is zero.",
+          "5 m/s and 0 m/s: correct; distance 400 m but displacement 0 m."
+        ],
+        "path": [
+          "Physics",
+          "Motion",
+          "Speed and velocity"
+        ],
+        "facts": [
+          "Average speed = total distance / total time.",
+          "Average velocity = total displacement / total time."
+        ]
+      },
+      "hi": {
+        "q": "एक धावक 400 मी परिधि वाले वृत्ताकार ट्रैक का ठीक एक चक्कर 80 से में पूरा करके आरंभ-बिंदु पर रुक जाता है। इस चक्कर में धावक की औसत चाल और औसत वेग क्रमशः क्या हैं?",
+        "options": [
+          "2.5 मी/से और 0 मी/से",
+          "0 मी/से और 5 मी/से",
+          "5 मी/से और 5 मी/से",
+          "5 मी/से और 0 मी/से"
+        ],
+        "explanation": "औसत चाल = कुल दूरी / कुल समय = 400/80 = 5 मी/से। धावक जहाँ से चला वहीं लौट आया, अतः विस्थापन शून्य है और औसत वेग (विस्थापन / समय) 0 मी/से है।",
+        "notes": [
+          "2.5 मी/से और 0 मी/से: चाल गलती से आधी कर दी गई; 400/80 = 5 होता है।",
+          "0 मी/से और 5 मी/से: दोनों उलट दिए गए; चाल दूरी से और वेग विस्थापन से निकलता है।",
+          "5 मी/से और 5 मी/से: वेग को चाल मान लिया गया, जबकि विस्थापन शून्य है।",
+          "5 मी/से और 0 मी/से: सही; दूरी 400 मी पर विस्थापन 0 मी।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गति",
+          "चाल और वेग"
+        ],
+        "facts": [
+          "औसत चाल = कुल दूरी / कुल समय।",
+          "औसत वेग = कुल विस्थापन / कुल समय।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 223
+        },
+        {
+          "book": "fatman",
+          "page": 222
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-004",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "Consider the following statements about motion graphs:\n1. The slope of a distance–time graph gives the speed.\n2. The slope of a velocity–time graph gives the acceleration.\n3. The area under a velocity–time graph gives the acceleration.\nWhich of the above is/are correct?",
+        "options": [
+          "1 and 2 only",
+          "Only 1",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "explanation": "Speed is the rate of change of distance, so it is the slope of a distance–time graph; acceleration is the rate of change of velocity, so it is the slope of a velocity–time graph. The area under a velocity–time graph gives the displacement (distance for straight-line motion in one direction), not the acceleration.",
+        "notes": [
+          "1 and 2 only: correct; both slopes are stated correctly.",
+          "Only 1: leaves out statement 2, which is also correct.",
+          "2 and 3 only: statement 3 is wrong and statement 1 is right.",
+          "1, 2 and 3: statement 3 is wrong; the area gives displacement."
+        ],
+        "path": [
+          "Physics",
+          "Motion",
+          "Graphs of motion"
+        ],
+        "facts": [
+          "A straight, sloping distance–time graph means uniform speed.",
+          "A horizontal distance–time graph means the body is at rest."
+        ]
+      },
+      "hi": {
+        "q": "गति के ग्राफ़ के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. दूरी–समय ग्राफ़ का ढाल चाल बताता है।\n2. वेग–समय ग्राफ़ का ढाल त्वरण बताता है।\n3. वेग–समय ग्राफ़ के नीचे का क्षेत्रफल त्वरण बताता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 1 और 2",
+          "केवल 1",
+          "केवल 2 और 3",
+          "1, 2 और 3"
+        ],
+        "explanation": "चाल दूरी में परिवर्तन की दर है, इसलिए यह दूरी–समय ग्राफ़ का ढाल है; त्वरण वेग में परिवर्तन की दर है, इसलिए यह वेग–समय ग्राफ़ का ढाल है। वेग–समय ग्राफ़ के नीचे का क्षेत्रफल विस्थापन देता है, त्वरण नहीं।",
+        "notes": [
+          "केवल 1 और 2: सही; दोनों ढाल सही बताए गए हैं।",
+          "केवल 1: कथन 2 भी सही है, उसे छोड़ दिया गया।",
+          "केवल 2 और 3: कथन 3 गलत है और कथन 1 सही है।",
+          "1, 2 और 3: कथन 3 गलत है; क्षेत्रफल विस्थापन देता है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गति",
+          "गति के ग्राफ़"
+        ],
+        "facts": [
+          "सीधी तिरछी रेखा वाला दूरी–समय ग्राफ़ एकसमान चाल दर्शाता है।",
+          "क्षैतिज दूरी–समय ग्राफ़ का अर्थ है कि वस्तु विराम में है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 223
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Motion'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-005",
+      "level": "TGT",
+      "answer": 2,
+      "en": {
+        "q": "A car starts from rest and, moving with uniform acceleration, reaches a velocity of 20 m/s in 5 s. What is its acceleration?",
+        "options": [
+          "100 m/s²",
+          "0.25 m/s²",
+          "4 m/s²",
+          "15 m/s²"
+        ],
+        "explanation": "Acceleration = (final velocity − initial velocity) / time = (20 − 0) / 5 = 4 m/s².",
+        "notes": [
+          "100 m/s²: velocity has been multiplied by time instead of divided.",
+          "0.25 m/s²: time divided by velocity, the inverse of the correct ratio.",
+          "4 m/s²: correct, (20 − 0)/5.",
+          "15 m/s²: velocity minus time; not a valid physical calculation."
+        ],
+        "path": [
+          "Physics",
+          "Motion",
+          "Acceleration"
+        ],
+        "facts": [
+          "The SI unit of acceleration is m/s².",
+          "A negative acceleration (slowing down) is called retardation or deceleration."
+        ]
+      },
+      "hi": {
+        "q": "एक कार विराम से चलकर एकसमान त्वरण से 5 से में 20 मी/से का वेग प्राप्त कर लेती है। उसका त्वरण कितना है?",
+        "options": [
+          "100 मी/से²",
+          "0.25 मी/से²",
+          "4 मी/से²",
+          "15 मी/से²"
+        ],
+        "explanation": "त्वरण = (अंतिम वेग − प्रारंभिक वेग) / समय = (20 − 0) / 5 = 4 मी/से²।",
+        "notes": [
+          "100 मी/से²: वेग को समय से भाग देने के बजाय गुणा कर दिया गया।",
+          "0.25 मी/से²: समय को वेग से भाग दिया गया, जो उल्टा अनुपात है।",
+          "4 मी/से²: सही, (20 − 0)/5।",
+          "15 मी/से²: वेग में से समय घटाया गया; यह भौतिक रूप से अर्थहीन है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गति",
+          "त्वरण"
+        ],
+        "facts": [
+          "त्वरण का SI मात्रक मी/से² है।",
+          "ऋणात्मक त्वरण (वेग का घटना) मंदन कहलाता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 223
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Motion'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-006",
+      "level": "TGT",
+      "answer": 3,
+      "en": {
+        "q": "In terms of SI base units, one newton is equal to:",
+        "options": [
+          "1 kilogram metre per second",
+          "1 gram centimetre per second squared",
+          "1 kilogram metre squared per second squared",
+          "1 kilogram metre per second squared"
+        ],
+        "explanation": "From F = ma, one newton is the force that gives a mass of 1 kg an acceleration of 1 m/s², so 1 N = 1 kg m/s².",
+        "notes": [
+          "1 kg m/s: the SI unit of momentum, not force.",
+          "1 g cm/s²: one dyne, the CGS unit of force; 1 dyne = 10⁻⁵ N.",
+          "1 kg m²/s²: one joule, the unit of work and energy.",
+          "1 kg m/s²: correct; this is one newton."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Units of force"
+        ],
+        "facts": [
+          "The newton is named after Sir Isaac Newton.",
+          "1 N = 10⁵ dyne."
+        ]
+      },
+      "hi": {
+        "q": "SI मूल मात्रकों के रूप में एक न्यूटन किसके बराबर है?",
+        "options": [
+          "1 किलोग्राम मीटर प्रति सेकंड",
+          "1 ग्राम सेंटीमीटर प्रति सेकंड वर्ग",
+          "1 किलोग्राम मीटर वर्ग प्रति सेकंड वर्ग",
+          "1 किलोग्राम मीटर प्रति सेकंड वर्ग"
+        ],
+        "explanation": "F = ma से, एक न्यूटन वह बल है जो 1 किग्रा द्रव्यमान में 1 मी/से² का त्वरण उत्पन्न करे; अतः 1 N = 1 किग्रा मी/से²।",
+        "notes": [
+          "1 किग्रा मी/से: संवेग का SI मात्रक, बल का नहीं।",
+          "1 ग्राम सेमी/से²: एक डाइन, बल का CGS मात्रक; 1 डाइन = 10⁻⁵ N।",
+          "1 किग्रा मी²/से²: एक जूल, कार्य और ऊर्जा का मात्रक।",
+          "1 किग्रा मी/से²: सही; यही एक न्यूटन है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "बल के मात्रक"
+        ],
+        "facts": [
+          "न्यूटन मात्रक का नाम सर आइज़क न्यूटन के नाम पर है।",
+          "1 N = 10⁵ डाइन।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 225
+        },
+        {
+          "book": "special-topics",
+          "page": 263
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-007",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "When a moving bus brakes suddenly, the standing passengers lurch forward. This is explained by:",
+        "options": [
+          "Inertia of rest",
+          "Inertia of motion",
+          "Inertia of direction",
+          "Law of conservation of energy"
+        ],
+        "explanation": "The passengers' bodies were moving with the bus. When the bus stops, their feet stop with it, but the upper body tends to keep moving forward because of inertia of motion.",
+        "notes": [
+          "Inertia of rest: a body at rest tends to stay at rest, e.g. passengers falling backward when a bus starts suddenly.",
+          "Inertia of motion: a moving body tends to keep moving, so passengers fall forward when the bus stops.",
+          "Inertia of direction: a body tends to keep its direction, e.g. being pushed sideways when a vehicle turns sharply.",
+          "Conservation of energy: says total energy stays constant; it does not explain this jerk."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Newton's first law",
+          "Inertia"
+        ],
+        "facts": [
+          "Newton's first law of motion is also called the law of inertia.",
+          "Inertia of a body depends on its mass: more mass, more inertia."
+        ]
+      },
+      "hi": {
+        "q": "चलती बस में अचानक ब्रेक लगने पर खड़े यात्री आगे की ओर झुक जाते हैं। इसका कारण है:",
+        "options": [
+          "विराम का जड़त्व",
+          "गति का जड़त्व",
+          "दिशा का जड़त्व",
+          "ऊर्जा संरक्षण का नियम"
+        ],
+        "explanation": "यात्रियों का शरीर बस के साथ गतिमान था। बस रुकने पर पैर उसके साथ रुक जाते हैं, परंतु शरीर का ऊपरी भाग गति के जड़त्व के कारण आगे बढ़ता रहना चाहता है।",
+        "notes": [
+          "विराम का जड़त्व: विरामावस्था वाली वस्तु विराम में रहना चाहती है, जैसे बस के अचानक चलने पर यात्री पीछे गिरते हैं।",
+          "गति का जड़त्व: गतिमान वस्तु गति में बने रहना चाहती है, इसलिए बस रुकने पर यात्री आगे गिरते हैं।",
+          "दिशा का जड़त्व: वस्तु अपनी दिशा बनाए रखना चाहती है, जैसे तीखे मोड़ पर शरीर बाहर की ओर खिसकता है।",
+          "ऊर्जा संरक्षण: कुल ऊर्जा नियत रहती है; यह इस झटके की व्याख्या नहीं करता।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "न्यूटन का प्रथम नियम",
+          "जड़त्व"
+        ],
+        "facts": [
+          "न्यूटन के गति के प्रथम नियम को जड़त्व का नियम भी कहते हैं।",
+          "वस्तु का जड़त्व उसके द्रव्यमान पर निर्भर करता है: अधिक द्रव्यमान, अधिक जड़त्व।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 226
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Force and Laws of Motion'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-008",
+      "level": "Higher",
+      "answer": 0,
+      "en": {
+        "q": "Assertion (A): A fielder pulls his hands backward while catching a fast-moving cricket ball.\nReason (R): Increasing the time over which the ball's momentum is reduced to zero lowers the force exerted on the hands.",
+        "options": [
+          "Both A and R are true, and R is the correct explanation of A",
+          "Both A and R are true, but R is not the correct explanation of A",
+          "A is true, but R is false",
+          "A is false, but R is true"
+        ],
+        "explanation": "By Newton's second law, force equals the rate of change of momentum. The change in the ball's momentum is fixed, so by moving his hands back the fielder stretches the stopping time and thereby reduces the force on his palms. R therefore explains A.",
+        "notes": [
+          "Correct: A is a real practice and R gives its reason (F = Δp/Δt).",
+          "Wrong: R is not merely true; it is exactly why the hands are pulled back.",
+          "Wrong: R is a direct consequence of the second law and is true.",
+          "Wrong: A describes a standard, correct fielding technique."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Newton's second law",
+          "Impulse"
+        ],
+        "facts": [
+          "Force = rate of change of momentum (Newton's second law).",
+          "The same idea explains why vehicles have crumple zones and why high jumpers land on soft mattresses."
+        ]
+      },
+      "hi": {
+        "q": "कथन (A): तेज़ आती क्रिकेट गेंद को पकड़ते समय क्षेत्ररक्षक अपने हाथ पीछे की ओर खींचता है।\nकारण (R): गेंद के संवेग को शून्य करने में लगने वाला समय बढ़ाने से हाथों पर लगने वाला बल कम हो जाता है।",
+        "options": [
+          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+          "कथन (A) सही है, परंतु कारण (R) गलत है",
+          "कथन (A) गलत है, परंतु कारण (R) सही है"
+        ],
+        "explanation": "न्यूटन के द्वितीय नियम के अनुसार बल संवेग परिवर्तन की दर के बराबर है। गेंद के संवेग में परिवर्तन निश्चित है, इसलिए हाथ पीछे खींचकर क्षेत्ररक्षक रोकने का समय बढ़ाता है और हथेलियों पर बल कम हो जाता है। अतः (R), (A) की सही व्याख्या है।",
+        "notes": [
+          "सही: (A) वास्तविक तकनीक है और (R) उसका कारण बताता है (F = Δp/Δt)।",
+          "गलत: (R) केवल सही ही नहीं, बल्कि हाथ पीछे खींचने का ठीक यही कारण है।",
+          "गलत: (R) द्वितीय नियम का सीधा परिणाम है और सही है।",
+          "गलत: (A) क्षेत्ररक्षण की मानक और सही तकनीक बताता है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "न्यूटन का द्वितीय नियम",
+          "आवेग"
+        ],
+        "facts": [
+          "बल = संवेग परिवर्तन की दर (न्यूटन का द्वितीय नियम)।",
+          "इसी कारण वाहनों में क्रम्पल ज़ोन बनाए जाते हैं और ऊँची कूद के खिलाड़ी नरम गद्दों पर गिरते हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 226
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Force and Laws of Motion'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-009",
+      "level": "PGT",
+      "answer": 2,
+      "en": {
+        "q": "Consider the following statements about friction:\n1. Rolling friction is smaller than sliding friction.\n2. Limiting static friction is greater than sliding (kinetic) friction.\n3. Lubricants such as oil and grease increase friction between moving parts.\nWhich of the above is/are correct?",
+        "options": [
+          "Only 1",
+          "Only 3",
+          "1 and 2 only",
+          "1, 2 and 3"
+        ],
+        "explanation": "For the same pair of surfaces, the order is static (limiting) friction > sliding friction > rolling friction, which is why wheels and ball bearings are used. Lubricants reduce friction by forming a thin layer between surfaces, so statement 3 is wrong.",
+        "notes": [
+          "Only 1: statement 2 is also correct.",
+          "Only 3: statement 3 is wrong; lubricants reduce friction.",
+          "1 and 2 only: correct.",
+          "1, 2 and 3: wrong because statement 3 is false."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Friction"
+        ],
+        "facts": [
+          "Static friction is self-adjusting up to its limiting value.",
+          "Ball bearings replace sliding friction with smaller rolling friction."
+        ]
+      },
+      "hi": {
+        "q": "घर्षण के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. लोटनिक (रोलिंग) घर्षण, सर्पी (स्लाइडिंग) घर्षण से कम होता है।\n2. सीमांत स्थैतिक घर्षण, सर्पी (गतिक) घर्षण से अधिक होता है।\n3. तेल और ग्रीस जैसे स्नेहक गतिमान पुर्ज़ों के बीच घर्षण बढ़ाते हैं।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 1",
+          "केवल 3",
+          "केवल 1 और 2",
+          "1, 2 और 3"
+        ],
+        "explanation": "एक ही सतहों के लिए क्रम है: स्थैतिक (सीमांत) घर्षण > सर्पी घर्षण > लोटनिक घर्षण; इसी कारण पहिए और बॉल-बेयरिंग प्रयोग होते हैं। स्नेहक सतहों के बीच पतली परत बनाकर घर्षण घटाते हैं, अतः कथन 3 गलत है।",
+        "notes": [
+          "केवल 1: कथन 2 भी सही है।",
+          "केवल 3: कथन 3 गलत है; स्नेहक घर्षण घटाते हैं।",
+          "केवल 1 और 2: सही।",
+          "1, 2 और 3: कथन 3 गलत होने से यह विकल्प गलत है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "घर्षण"
+        ],
+        "facts": [
+          "स्थैतिक घर्षण अपने सीमांत मान तक स्वतः समायोजित होने वाला बल है।",
+          "बॉल-बेयरिंग सर्पी घर्षण को कम लोटनिक घर्षण में बदल देते हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 225
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-010",
+      "level": "Higher",
+      "answer": 3,
+      "en": {
+        "q": "Match List-I with List-II:\nList-I: A. Recoil of a gun when it is fired B. Dust falling off a carpet when it is beaten C. Force equals the rate of change of momentum D. Total momentum of an isolated system stays constant\nList-II: 1. Newton's first law (inertia) 2. Newton's second law 3. Newton's third law 4. Law of conservation of momentum",
+        "options": [
+          "A-1, B-3, C-2, D-4",
+          "A-3, B-2, C-1, D-4",
+          "A-4, B-1, C-2, D-3",
+          "A-3, B-1, C-2, D-4"
+        ],
+        "explanation": "The bullet is pushed forward and the gun is pushed back by an equal and opposite force (third law). The beaten carpet moves but the dust stays behind due to inertia of rest (first law). F = rate of change of momentum is the second law, and a constant total momentum in an isolated system is the law of conservation of momentum.",
+        "notes": [
+          "Wrong: gun recoil is an action–reaction (third law) effect, and beating a carpet shows inertia.",
+          "Wrong: B is inertia (first law) and C is the second law, not the other way round.",
+          "Wrong: gun recoil is the third law, and D is conservation of momentum.",
+          "Correct: A-3, B-1, C-2, D-4."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Newton's laws"
+        ],
+        "facts": [
+          "Newton stated the three laws of motion in Principia (1687).",
+          "Rocket propulsion is also an application of the third law and conservation of momentum."
+        ]
+      },
+      "hi": {
+        "q": "सूची-I को सूची-II से सुमेलित कीजिए:\nसूची-I: A. गोली चलाने पर बंदूक का पीछे हटना B. कालीन को पीटने पर धूल का झड़ना C. बल, संवेग परिवर्तन की दर के बराबर होता है D. विलगित निकाय का कुल संवेग नियत रहता है\nसूची-II: 1. न्यूटन का प्रथम नियम (जड़त्व) 2. न्यूटन का द्वितीय नियम 3. न्यूटन का तृतीय नियम 4. संवेग संरक्षण का नियम",
+        "options": [
+          "A-1, B-3, C-2, D-4",
+          "A-3, B-2, C-1, D-4",
+          "A-4, B-1, C-2, D-3",
+          "A-3, B-1, C-2, D-4"
+        ],
+        "explanation": "गोली आगे और बंदूक बराबर व विपरीत बल से पीछे धकेली जाती है (तृतीय नियम)। पीटने पर कालीन हिलता है पर धूल विराम के जड़त्व के कारण पीछे रह जाती है (प्रथम नियम)। F = संवेग परिवर्तन की दर द्वितीय नियम है, और विलगित निकाय का नियत कुल संवेग संवेग संरक्षण का नियम है।",
+        "notes": [
+          "गलत: बंदूक का पीछे हटना क्रिया–प्रतिक्रिया (तृतीय नियम) है और कालीन पीटना जड़त्व दिखाता है।",
+          "गलत: B जड़त्व (प्रथम नियम) और C द्वितीय नियम है, उल्टा नहीं।",
+          "गलत: बंदूक का पीछे हटना तृतीय नियम है और D संवेग संरक्षण है।",
+          "सही: A-3, B-1, C-2, D-4।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "न्यूटन के नियम"
+        ],
+        "facts": [
+          "न्यूटन ने गति के तीनों नियम 'प्रिंसिपिया' (1687) में प्रस्तुत किए।",
+          "रॉकेट का आगे बढ़ना भी तृतीय नियम और संवेग संरक्षण का उदाहरण है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 226
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Force and Laws of Motion'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-011",
+      "level": "TGT",
+      "answer": 0,
+      "en": {
+        "q": "The impulse of a force acting on a body is equal to:",
+        "options": [
+          "The change in its momentum",
+          "The rate of change of its momentum",
+          "The product of force and displacement",
+          "The change in its kinetic energy"
+        ],
+        "explanation": "Impulse is the product of a force and the time for which it acts (F × Δt). By the second law this equals the change in momentum, m × Δv (impulse–momentum theorem).",
+        "notes": [
+          "Change in momentum: correct; F Δt = m Δv.",
+          "Rate of change of momentum: equals the force itself, not the impulse.",
+          "Force × displacement: this is work done.",
+          "Change in kinetic energy: equals the net work done (work–energy theorem)."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Momentum and impulse"
+        ],
+        "facts": [
+          "Momentum p = mass × velocity; its SI unit is kg m/s.",
+          "Impulse has the same unit as momentum (N s = kg m/s)."
+        ]
+      },
+      "hi": {
+        "q": "किसी वस्तु पर लगे बल का आवेग किसके बराबर होता है?",
+        "options": [
+          "उसके संवेग में परिवर्तन",
+          "उसके संवेग परिवर्तन की दर",
+          "बल और विस्थापन का गुणनफल",
+          "उसकी गतिज ऊर्जा में परिवर्तन"
+        ],
+        "explanation": "आवेग बल और उसके कार्य करने के समय का गुणनफल (F × Δt) है। द्वितीय नियम से यह संवेग में परिवर्तन m × Δv के बराबर होता है (आवेग–संवेग प्रमेय)।",
+        "notes": [
+          "संवेग में परिवर्तन: सही; F Δt = m Δv।",
+          "संवेग परिवर्तन की दर: यह स्वयं बल है, आवेग नहीं।",
+          "बल × विस्थापन: यह किया गया कार्य है।",
+          "गतिज ऊर्जा में परिवर्तन: यह कुल किए गए कार्य के बराबर है (कार्य–ऊर्जा प्रमेय)।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "संवेग और आवेग"
+        ],
+        "facts": [
+          "संवेग p = द्रव्यमान × वेग; इसका SI मात्रक किग्रा मी/से है।",
+          "आवेग का मात्रक संवेग के समान है (N s = किग्रा मी/से)।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 226
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-012",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "Which of the following forces acts between two bodies only when they are in contact?",
+        "options": [
+          "Gravitational force",
+          "Frictional force",
+          "Magnetic force",
+          "Electrostatic force"
+        ],
+        "explanation": "Friction arises between two surfaces in contact and opposes their relative motion. Gravitational, magnetic and electrostatic forces act at a distance, without contact.",
+        "notes": [
+          "Gravitational force: non-contact attraction between any two masses.",
+          "Frictional force: a contact force between surfaces touching each other.",
+          "Magnetic force: non-contact force between magnets or on moving charges.",
+          "Electrostatic force: non-contact force between electric charges."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Types of force"
+        ],
+        "facts": [
+          "Spring (elastic) force and muscular force are also contact forces.",
+          "Non-contact forces are also called action-at-a-distance forces."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित में से कौन-सा बल दो वस्तुओं के बीच केवल तभी लगता है जब वे संपर्क में हों?",
+        "options": [
+          "गुरुत्वाकर्षण बल",
+          "घर्षण बल",
+          "चुंबकीय बल",
+          "स्थिरवैद्युत बल"
+        ],
+        "explanation": "घर्षण संपर्क में स्थित दो सतहों के बीच उत्पन्न होता है और उनकी आपेक्षिक गति का विरोध करता है। गुरुत्वाकर्षण, चुंबकीय और स्थिरवैद्युत बल बिना संपर्क के दूरी से कार्य करते हैं।",
+        "notes": [
+          "गुरुत्वाकर्षण बल: किन्हीं दो द्रव्यमानों के बीच असंपर्क आकर्षण बल।",
+          "घर्षण बल: एक-दूसरे को छूती सतहों के बीच संपर्क बल।",
+          "चुंबकीय बल: चुंबकों के बीच या गतिमान आवेशों पर लगने वाला असंपर्क बल।",
+          "स्थिरवैद्युत बल: विद्युत आवेशों के बीच असंपर्क बल।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "बल के प्रकार"
+        ],
+        "facts": [
+          "स्प्रिंग (प्रत्यास्थ) बल और पेशीय बल भी संपर्क बल हैं।",
+          "असंपर्क बलों को दूरी पर क्रिया करने वाले बल भी कहते हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 225
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-013",
+      "level": "Higher",
+      "answer": 2,
+      "en": {
+        "q": "Consider the following statements:\n1. The work done by a conservative force around a closed path is zero.\n2. Gravitational force and the force of an ideal spring are conservative forces.\n3. The work done against friction does not depend on the path followed.\nWhich of the above is/are correct?",
+        "options": [
+          "Only 2",
+          "2 and 3 only",
+          "1 and 2 only",
+          "1, 2 and 3"
+        ],
+        "explanation": "For a conservative force (gravity, spring, electrostatic) the work depends only on the initial and final positions, so it is zero over a closed path. Friction is non-conservative: the longer the path, the more work is done against it, and the energy is lost mainly as heat. So statement 3 is wrong.",
+        "notes": [
+          "Only 2: statement 1 is also correct.",
+          "2 and 3 only: statement 3 is wrong, since work against friction depends on path length.",
+          "1 and 2 only: correct.",
+          "1, 2 and 3: wrong because statement 3 is false."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Conservative and non-conservative forces"
+        ],
+        "facts": [
+          "Friction and air drag are non-conservative forces.",
+          "Potential energy can be defined only for conservative forces."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. किसी संरक्षी बल द्वारा बंद पथ पर किया गया कार्य शून्य होता है।\n2. गुरुत्वाकर्षण बल और आदर्श स्प्रिंग का बल संरक्षी बल हैं।\n3. घर्षण के विरुद्ध किया गया कार्य अपनाए गए पथ पर निर्भर नहीं करता।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 2",
+          "केवल 2 और 3",
+          "केवल 1 और 2",
+          "1, 2 और 3"
+        ],
+        "explanation": "संरक्षी बल (गुरुत्व, स्प्रिंग, स्थिरवैद्युत) का कार्य केवल प्रारंभिक और अंतिम स्थिति पर निर्भर करता है, अतः बंद पथ पर शून्य होता है। घर्षण असंरक्षी बल है: पथ जितना लंबा, उसके विरुद्ध उतना अधिक कार्य, और ऊर्जा मुख्यतः ऊष्मा के रूप में नष्ट होती है। अतः कथन 3 गलत है।",
+        "notes": [
+          "केवल 2: कथन 1 भी सही है।",
+          "केवल 2 और 3: कथन 3 गलत है, क्योंकि घर्षण के विरुद्ध कार्य पथ की लंबाई पर निर्भर है।",
+          "केवल 1 और 2: सही।",
+          "1, 2 और 3: कथन 3 गलत होने से यह विकल्प गलत है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "संरक्षी और असंरक्षी बल"
+        ],
+        "facts": [
+          "घर्षण और वायु-प्रतिरोध असंरक्षी बल हैं।",
+          "स्थितिज ऊर्जा केवल संरक्षी बलों के लिए परिभाषित की जा सकती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 225
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-014",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "Who, from experiments with balls rolling on inclined planes, first concluded that a moving object would keep moving with constant speed if no force acted on it?",
+        "options": [
+          "Galileo Galilei",
+          "Isaac Newton",
+          "Aristotle",
+          "Johannes Kepler"
+        ],
+        "explanation": "Galileo observed that a ball rolling down one inclined plane rises almost to the same height on an opposite plane, and argued that on a frictionless horizontal surface it would roll on forever. This idea of inertia was later built into Newton's first law.",
+        "notes": [
+          "Galileo Galilei: correct; his inclined-plane reasoning introduced the idea of inertia.",
+          "Isaac Newton: stated the three laws of motion later (1687), building on Galileo's work.",
+          "Aristotle: held the opposite view, that a force is needed to keep a body moving.",
+          "Johannes Kepler: known for the laws of planetary motion, not inertia."
+        ],
+        "path": [
+          "Physics",
+          "Force and laws of motion",
+          "Inertia",
+          "Galileo"
+        ],
+        "facts": [
+          "Galileo also wrote 'La Bilancetta' (The Little Balance) on the hydrostatic balance.",
+          "Galileo's ideas on motion appear in his writings 'De Motu' (On Motion)."
+        ]
+      },
+      "hi": {
+        "q": "आनत तलों पर लुढ़कती गेंदों के प्रयोगों से सबसे पहले किसने यह निष्कर्ष निकाला कि यदि कोई बल न लगे तो गतिमान वस्तु नियत चाल से चलती रहेगी?",
+        "options": [
+          "गैलीलियो गैलिली",
+          "आइज़क न्यूटन",
+          "अरस्तू",
+          "जोहानिस केप्लर"
+        ],
+        "explanation": "गैलीलियो ने देखा कि एक आनत तल से लुढ़की गेंद सामने वाले तल पर लगभग उतनी ही ऊँचाई तक चढ़ती है, और तर्क दिया कि घर्षणरहित क्षैतिज तल पर वह सदैव चलती रहेगी। जड़त्व का यही विचार बाद में न्यूटन के प्रथम नियम में आया।",
+        "notes": [
+          "गैलीलियो गैलिली: सही; आनत तल के तर्क से जड़त्व का विचार दिया।",
+          "आइज़क न्यूटन: गैलीलियो के कार्य के आधार पर बाद में (1687) गति के तीन नियम दिए।",
+          "अरस्तू: इसके विपरीत मानते थे कि वस्तु को गतिमान रखने के लिए बल आवश्यक है।",
+          "जोहानिस केप्लर: ग्रहों की गति के नियमों के लिए प्रसिद्ध, जड़त्व के लिए नहीं।"
+        ],
+        "path": [
+          "भौतिकी",
+          "बल एवं गति के नियम",
+          "जड़त्व",
+          "गैलीलियो"
+        ],
+        "facts": [
+          "गैलीलियो ने द्रवस्थैतिक तुला पर 'ला बिलांचेत्ता' (छोटी तुला) लिखी।",
+          "गति पर गैलीलियो के विचार उनकी रचना 'डे मोटू' (गति के विषय में) में मिलते हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 225
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Force and Laws of Motion'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-015",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "Who first determined the value of the universal gravitational constant G through a laboratory experiment in 1798?",
+        "options": [
+          "Isaac Newton",
+          "Henry Cavendish",
+          "Johannes Kepler",
+          "Galileo Galilei"
+        ],
+        "explanation": "Henry Cavendish used a torsion balance in 1798 to measure the tiny attraction between lead spheres; this experiment gave the first laboratory value from which G is obtained. Newton had stated the law of gravitation in 1687 but did not know the value of G.",
+        "notes": [
+          "Isaac Newton: gave the universal law of gravitation (1687) but not the value of G.",
+          "Henry Cavendish: correct; torsion-balance experiment of 1798.",
+          "Johannes Kepler: gave the three laws of planetary motion.",
+          "Galileo Galilei: studied falling bodies and inclined planes; died before Newton's law existed."
+        ],
+        "path": [
+          "Physics",
+          "Gravitation",
+          "Universal gravitational constant"
+        ],
+        "facts": [
+          "G ≈ 6.67 × 10⁻¹¹ N m²/kg²; it is the same everywhere in the universe.",
+          "g (acceleration due to gravity) varies from place to place, but G does not."
+        ]
+      },
+      "hi": {
+        "q": "1798 में प्रयोगशाला प्रयोग द्वारा सार्वत्रिक गुरुत्वाकर्षण नियतांक G का मान सबसे पहले किसने ज्ञात किया?",
+        "options": [
+          "आइज़क न्यूटन",
+          "हेनरी कैवेंडिश",
+          "जोहानिस केप्लर",
+          "गैलीलियो गैलिली"
+        ],
+        "explanation": "हेनरी कैवेंडिश ने 1798 में मरोड़ तुला (टॉर्शन बैलेंस) से सीसे के गोलों के बीच के सूक्ष्म आकर्षण को मापा; इसी प्रयोग से G का पहला प्रायोगिक मान प्राप्त हुआ। न्यूटन ने 1687 में गुरुत्वाकर्षण का नियम दिया था, पर G का मान ज्ञात नहीं था।",
+        "notes": [
+          "आइज़क न्यूटन: सार्वत्रिक गुरुत्वाकर्षण का नियम (1687) दिया, G का मान नहीं।",
+          "हेनरी कैवेंडिश: सही; 1798 का मरोड़ तुला प्रयोग।",
+          "जोहानिस केप्लर: ग्रहों की गति के तीन नियम दिए।",
+          "गैलीलियो गैलिली: गिरती वस्तुओं और आनत तल का अध्ययन किया; न्यूटन के नियम से पहले ही उनका निधन हो गया।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गुरुत्वाकर्षण",
+          "सार्वत्रिक गुरुत्वाकर्षण नियतांक"
+        ],
+        "facts": [
+          "G ≈ 6.67 × 10⁻¹¹ N m²/kg²; ब्रह्मांड में सर्वत्र इसका मान समान है।",
+          "गुरुत्वीय त्वरण g स्थान के साथ बदलता है, पर G नहीं बदलता।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 228
+        },
+        {
+          "book": "special-topics",
+          "page": 29
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-016",
+      "level": "PGT",
+      "answer": 3,
+      "en": {
+        "q": "Consider the following statements:\n1. The acceleration due to gravity (g) is greater at the poles than at the equator.\n2. The value of g decreases as we go up from the Earth's surface.\n3. The mass of a body becomes zero at the centre of the Earth.\nWhich of the above is/are correct?",
+        "options": [
+          "1, 2 and 3",
+          "Only 2",
+          "2 and 3 only",
+          "1 and 2 only"
+        ],
+        "explanation": "The Earth is flattened at the poles, so a body there is nearer the centre and g is larger; above the surface g falls in inverse proportion to the square of the distance from the centre. At the centre of the Earth g, and therefore weight, becomes zero, but mass (the amount of matter) never changes. So only 1 and 2 are correct.",
+        "notes": [
+          "1, 2 and 3: wrong; statement 3 confuses mass with weight.",
+          "Only 2: statement 1 is also correct.",
+          "2 and 3 only: statement 3 is wrong and statement 1 is right.",
+          "1 and 2 only: correct."
+        ],
+        "path": [
+          "Physics",
+          "Gravitation",
+          "Variation of g"
+        ],
+        "facts": [
+          "Standard value of g at the Earth's surface is about 9.8 m/s².",
+          "Weight is zero at the centre of the Earth, but mass is unchanged."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. गुरुत्वीय त्वरण (g) का मान ध्रुवों पर विषुवत रेखा की अपेक्षा अधिक होता है।\n2. पृथ्वी की सतह से ऊपर जाने पर g का मान घटता है।\n3. पृथ्वी के केंद्र पर किसी वस्तु का द्रव्यमान शून्य हो जाता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "1, 2 और 3",
+          "केवल 2",
+          "केवल 2 और 3",
+          "केवल 1 और 2"
+        ],
+        "explanation": "पृथ्वी ध्रुवों पर चपटी है, इसलिए वहाँ वस्तु केंद्र के अधिक निकट होती है और g अधिक होता है; सतह से ऊपर g केंद्र से दूरी के वर्ग के व्युत्क्रमानुपात में घटता है। पृथ्वी के केंद्र पर g और इसलिए भार शून्य हो जाता है, पर द्रव्यमान (द्रव्य की मात्रा) कभी नहीं बदलता। अतः केवल 1 और 2 सही हैं।",
+        "notes": [
+          "1, 2 और 3: गलत; कथन 3 में द्रव्यमान को भार समझ लिया गया है।",
+          "केवल 2: कथन 1 भी सही है।",
+          "केवल 2 और 3: कथन 3 गलत है और कथन 1 सही है।",
+          "केवल 1 और 2: सही।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गुरुत्वाकर्षण",
+          "g में परिवर्तन"
+        ],
+        "facts": [
+          "पृथ्वी की सतह पर g का मानक मान लगभग 9.8 मी/से² है।",
+          "पृथ्वी के केंद्र पर भार शून्य होता है, पर द्रव्यमान वही रहता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 228
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Gravitation'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-017",
+      "level": "Higher",
+      "answer": 0,
+      "en": {
+        "q": "Assertion (A): An object weighs about one-sixth as much on the Moon as on the Earth, although its mass is unchanged.\nReason (R): Weight is the product of mass and the local acceleration due to gravity, and g on the Moon is about one-sixth of that on the Earth.",
+        "options": [
+          "Both A and R are true, and R is the correct explanation of A",
+          "Both A and R are true, but R is not the correct explanation of A",
+          "A is true, but R is false",
+          "A is false, but R is true"
+        ],
+        "explanation": "Mass is the quantity of matter and is the same everywhere. Weight W = mg, and since g on the Moon is roughly 1/6 of the Earth's value, the weight drops to about 1/6 as well. R directly explains A.",
+        "notes": [
+          "Correct: W = mg, and the Moon's g is about one-sixth of the Earth's.",
+          "Wrong: R is the very reason the weight is smaller.",
+          "Wrong: R is a true statement of W = mg and the Moon's lower g.",
+          "Wrong: A is a well-established fact."
+        ],
+        "path": [
+          "Physics",
+          "Gravitation",
+          "Mass and weight"
+        ],
+        "facts": [
+          "Mass is a scalar measured in kilograms; weight is a force (a vector) measured in newtons.",
+          "A spring balance measures weight; a beam (pan) balance compares masses."
+        ]
+      },
+      "hi": {
+        "q": "कथन (A): चंद्रमा पर किसी वस्तु का भार पृथ्वी की तुलना में लगभग छठा भाग रह जाता है, यद्यपि उसका द्रव्यमान नहीं बदलता।\nकारण (R): भार, द्रव्यमान और स्थानीय गुरुत्वीय त्वरण का गुणनफल है, और चंद्रमा पर g पृथ्वी के g का लगभग छठा भाग है।",
+        "options": [
+          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+          "कथन (A) सही है, परंतु कारण (R) गलत है",
+          "कथन (A) गलत है, परंतु कारण (R) सही है"
+        ],
+        "explanation": "द्रव्यमान द्रव्य की मात्रा है और सर्वत्र समान रहता है। भार W = mg है और चंद्रमा पर g पृथ्वी के मान का लगभग 1/6 है, इसलिए भार भी लगभग 1/6 रह जाता है। (R), (A) की सीधी व्याख्या करता है।",
+        "notes": [
+          "सही: W = mg, और चंद्रमा का g पृथ्वी का लगभग छठा भाग है।",
+          "गलत: भार कम होने का ठीक यही कारण (R) है।",
+          "गलत: (R) में W = mg और चंद्रमा का कम g सही बताया गया है।",
+          "गलत: (A) एक स्थापित तथ्य है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गुरुत्वाकर्षण",
+          "द्रव्यमान और भार"
+        ],
+        "facts": [
+          "द्रव्यमान अदिश है (मात्रक किलोग्राम); भार एक बल है (सदिश, मात्रक न्यूटन)।",
+          "कमानीदार तुला भार मापती है; पलड़े वाली तुला द्रव्यमानों की तुलना करती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 228
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Gravitation'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-018",
+      "level": "Higher",
+      "answer": 2,
+      "en": {
+        "q": "Match List-I with List-II:\nList-I: A. Planets move in elliptical orbits with the Sun at one focus B. The line joining a planet to the Sun sweeps equal areas in equal intervals of time C. The square of the orbital period is proportional to the cube of the mean distance from the Sun D. The force between two masses varies as the product of the masses and inversely as the square of the distance\nList-II: 1. Kepler's second law 2. Newton's law of gravitation 3. Kepler's first law 4. Kepler's third law",
+        "options": [
+          "A-1, B-3, C-4, D-2",
+          "A-3, B-4, C-1, D-2",
+          "A-3, B-1, C-4, D-2",
+          "A-2, B-1, C-4, D-3"
+        ],
+        "explanation": "Kepler's first law is the law of orbits (ellipses), the second is the law of areas, and the third is the law of periods (T² ∝ r³). The inverse-square law of attraction between masses is Newton's universal law of gravitation.",
+        "notes": [
+          "Wrong: elliptical orbits are the first law and equal areas the second, not the reverse.",
+          "Wrong: equal areas is the second law and T² ∝ r³ is the third.",
+          "Correct: A-3, B-1, C-4, D-2.",
+          "Wrong: elliptical orbits are Kepler's first law, and the inverse-square force is Newton's law."
+        ],
+        "path": [
+          "Physics",
+          "Gravitation",
+          "Kepler's laws"
+        ],
+        "facts": [
+          "Because of the law of areas, a planet moves fastest when it is nearest the Sun.",
+          "Mercury takes about 88 days and Neptune about 165 years to go round the Sun."
+        ]
+      },
+      "hi": {
+        "q": "सूची-I को सूची-II से सुमेलित कीजिए:\nसूची-I: A. ग्रह सूर्य को एक फ़ोकस पर रखते हुए दीर्घवृत्ताकार कक्षाओं में चलते हैं B. ग्रह और सूर्य को मिलाने वाली रेखा समान समय में समान क्षेत्रफल तय करती है C. परिक्रमण काल का वर्ग सूर्य से औसत दूरी के घन के समानुपाती है D. दो द्रव्यमानों के बीच बल उनके गुणनफल के समानुपाती और दूरी के वर्ग के व्युत्क्रमानुपाती होता है\nसूची-II: 1. केप्लर का द्वितीय नियम 2. न्यूटन का गुरुत्वाकर्षण नियम 3. केप्लर का प्रथम नियम 4. केप्लर का तृतीय नियम",
+        "options": [
+          "A-1, B-3, C-4, D-2",
+          "A-3, B-4, C-1, D-2",
+          "A-3, B-1, C-4, D-2",
+          "A-2, B-1, C-4, D-3"
+        ],
+        "explanation": "केप्लर का प्रथम नियम कक्षाओं का नियम (दीर्घवृत्त), द्वितीय क्षेत्रफलों का नियम और तृतीय परिक्रमण कालों का नियम (T² ∝ r³) है। द्रव्यमानों के बीच व्युत्क्रम-वर्ग आकर्षण न्यूटन का सार्वत्रिक गुरुत्वाकर्षण नियम है।",
+        "notes": [
+          "गलत: दीर्घवृत्ताकार कक्षा प्रथम और समान क्षेत्रफल द्वितीय नियम है, उल्टा नहीं।",
+          "गलत: समान क्षेत्रफल द्वितीय और T² ∝ r³ तृतीय नियम है।",
+          "सही: A-3, B-1, C-4, D-2।",
+          "गलत: दीर्घवृत्ताकार कक्षा केप्लर का प्रथम नियम और व्युत्क्रम-वर्ग बल न्यूटन का नियम है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गुरुत्वाकर्षण",
+          "केप्लर के नियम"
+        ],
+        "facts": [
+          "क्षेत्रफल के नियम के कारण ग्रह सूर्य के सबसे निकट होने पर सबसे तेज़ चलता है।",
+          "बुध लगभग 88 दिन और वरुण (नेपच्यून) लगभग 165 वर्ष में सूर्य की परिक्रमा करता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 228
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Gravitation'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-019",
+      "level": "TGT",
+      "answer": 0,
+      "en": {
+        "q": "Hydraulic lifts and hydraulic brakes work on which principle?",
+        "options": [
+          "Pascal's law",
+          "Archimedes' principle",
+          "Bernoulli's principle",
+          "Hooke's law"
+        ],
+        "explanation": "Pascal's law says that a change in pressure applied to an enclosed fluid is transmitted undiminished to every part of it. A small force on a small piston therefore produces a much larger force on a large piston, which is how hydraulic lifts, presses and brakes work.",
+        "notes": [
+          "Pascal's law: correct; pressure in a confined fluid is transmitted equally in all directions.",
+          "Archimedes' principle: explains buoyancy and floating, not force multiplication.",
+          "Bernoulli's principle: relates pressure and speed in a flowing fluid, as in aircraft wings.",
+          "Hooke's law: relates the stretch of a spring or elastic body to the applied force."
+        ],
+        "path": [
+          "Physics",
+          "Pressure",
+          "Pascal's law"
+        ],
+        "facts": [
+          "The SI unit of pressure is the pascal (1 Pa = 1 N/m²).",
+          "1 atmosphere ≈ 1.013 × 10⁵ Pa."
+        ]
+      },
+      "hi": {
+        "q": "हाइड्रोलिक लिफ़्ट और हाइड्रोलिक ब्रेक किस सिद्धांत पर कार्य करते हैं?",
+        "options": [
+          "पास्कल का नियम",
+          "आर्किमिडीज़ का सिद्धांत",
+          "बर्नूली का सिद्धांत",
+          "हुक का नियम"
+        ],
+        "explanation": "पास्कल के नियम के अनुसार बंद तरल पर लगाया गया दाब-परिवर्तन बिना घटे उसके हर भाग तक पहुँचता है। इसलिए छोटे पिस्टन पर लगा छोटा बल बड़े पिस्टन पर बहुत बड़ा बल उत्पन्न करता है; हाइड्रोलिक लिफ़्ट, प्रेस और ब्रेक इसी पर चलते हैं।",
+        "notes": [
+          "पास्कल का नियम: सही; बंद तरल में दाब सभी दिशाओं में समान रूप से संचरित होता है।",
+          "आर्किमिडीज़ का सिद्धांत: उत्प्लावन और तैरने की व्याख्या करता है, बल-गुणन की नहीं।",
+          "बर्नूली का सिद्धांत: बहते तरल में दाब और वेग का संबंध, जैसे वायुयान के पंख।",
+          "हुक का नियम: स्प्रिंग या प्रत्यास्थ वस्तु के खिंचाव और लगाए गए बल का संबंध।"
+        ],
+        "path": [
+          "भौतिकी",
+          "दाब",
+          "पास्कल का नियम"
+        ],
+        "facts": [
+          "दाब का SI मात्रक पास्कल है (1 Pa = 1 N/m²)।",
+          "1 वायुमंडल ≈ 1.013 × 10⁵ Pa।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 228
+        },
+        {
+          "book": "fatman",
+          "page": 229
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-020",
+      "level": "PGT",
+      "answer": 3,
+      "en": {
+        "q": "A loaded ship floats with less of its hull under water in the sea than in a freshwater river. Why?",
+        "options": [
+          "Gravity is weaker over the sea",
+          "The ship's weight decreases in salt water",
+          "Waves in the sea lift the ship upward",
+          "Sea water is denser, so a smaller volume of it must be displaced to balance the ship's weight"
+        ],
+        "explanation": "By Archimedes' principle the buoyant force equals the weight of fluid displaced (ρVg). A floating ship must displace fluid equal to its own weight; because sea water is denser than fresh water, a smaller displaced volume is enough, so the ship rides higher.",
+        "notes": [
+          "Gravity over the sea: practically the same as over land; it does not explain this.",
+          "Weight of the ship: does not change with the kind of water.",
+          "Waves: do not raise the average floating level.",
+          "Denser sea water: correct; buoyant force = ρVg, so higher ρ needs smaller V."
+        ],
+        "path": [
+          "Physics",
+          "Floatation",
+          "Archimedes' principle"
+        ],
+        "facts": [
+          "Relative density = density of substance / density of water; it has no unit.",
+          "It is easier for a person to float in sea water than in fresh water."
+        ]
+      },
+      "hi": {
+        "q": "एक भरा हुआ जहाज़ मीठे पानी की नदी की तुलना में समुद्र में कम डूबकर (पतवार का कम भाग पानी में रखकर) तैरता है। क्यों?",
+        "options": [
+          "समुद्र के ऊपर गुरुत्व कमज़ोर होता है",
+          "खारे पानी में जहाज़ का भार घट जाता है",
+          "समुद्र की लहरें जहाज़ को ऊपर उठा देती हैं",
+          "समुद्री जल अधिक घना है, इसलिए जहाज़ के भार को संतुलित करने के लिए उसका कम आयतन हटाना पड़ता है"
+        ],
+        "explanation": "आर्किमिडीज़ के सिद्धांत के अनुसार उत्प्लावन बल हटाए गए तरल के भार (ρVg) के बराबर होता है। तैरते जहाज़ को अपने भार के बराबर तरल हटाना होता है; समुद्री जल मीठे जल से अधिक घना है, अतः कम आयतन हटाना पर्याप्त होता है और जहाज़ ऊँचा तैरता है।",
+        "notes": [
+          "समुद्र पर गुरुत्व: स्थल के लगभग बराबर ही है; इससे यह नहीं समझाया जा सकता।",
+          "जहाज़ का भार: पानी के प्रकार से नहीं बदलता।",
+          "लहरें: औसत तैरने के स्तर को नहीं बढ़ातीं।",
+          "अधिक घना समुद्री जल: सही; उत्प्लावन बल = ρVg, अतः अधिक ρ पर कम V चाहिए।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्लवन",
+          "आर्किमिडीज़ का सिद्धांत"
+        ],
+        "facts": [
+          "आपेक्षिक घनत्व = पदार्थ का घनत्व / जल का घनत्व; इसका कोई मात्रक नहीं होता।",
+          "मनुष्य के लिए मीठे जल की अपेक्षा समुद्री जल में तैरना आसान होता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 229
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Gravitation' (Archimedes' principle)"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-021",
+      "level": "PGT",
+      "answer": 2,
+      "en": {
+        "q": "If the momentum of a body of fixed mass is doubled, its kinetic energy becomes:",
+        "options": [
+          "Unchanged",
+          "Twice as much",
+          "Four times as much",
+          "Half as much"
+        ],
+        "explanation": "Kinetic energy can be written as KE = p²/2m. With mass fixed, doubling the momentum p makes p² four times larger, so the kinetic energy becomes four times.",
+        "notes": [
+          "Unchanged: KE depends on momentum, so it must change.",
+          "Twice: would be true only if KE were proportional to p, but it varies as p².",
+          "Four times: correct, since KE = p²/2m.",
+          "Half: KE increases, not decreases, when momentum increases."
+        ],
+        "path": [
+          "Physics",
+          "Work and energy",
+          "Kinetic energy"
+        ],
+        "facts": [
+          "KE = ½mv²; doubling the velocity also makes KE four times.",
+          "Momentum and kinetic energy are related by p = √(2m·KE)."
+        ]
+      },
+      "hi": {
+        "q": "नियत द्रव्यमान वाली किसी वस्तु का संवेग दोगुना कर दिया जाए तो उसकी गतिज ऊर्जा हो जाएगी:",
+        "options": [
+          "अपरिवर्तित",
+          "दोगुनी",
+          "चार गुनी",
+          "आधी"
+        ],
+        "explanation": "गतिज ऊर्जा को KE = p²/2m लिखा जा सकता है। द्रव्यमान नियत रहने पर संवेग p दोगुना करने से p² चार गुना हो जाता है, अतः गतिज ऊर्जा चार गुनी हो जाती है।",
+        "notes": [
+          "अपरिवर्तित: गतिज ऊर्जा संवेग पर निर्भर है, अतः बदलेगी।",
+          "दोगुनी: तभी सही होता जब KE, p के समानुपाती होती; पर यह p² के समानुपाती है।",
+          "चार गुनी: सही, क्योंकि KE = p²/2m।",
+          "आधी: संवेग बढ़ने पर गतिज ऊर्जा बढ़ती है, घटती नहीं।"
+        ],
+        "path": [
+          "भौतिकी",
+          "कार्य और ऊर्जा",
+          "गतिज ऊर्जा"
+        ],
+        "facts": [
+          "KE = ½mv²; वेग दोगुना करने पर भी गतिज ऊर्जा चार गुनी हो जाती है।",
+          "संवेग और गतिज ऊर्जा का संबंध: p = √(2m·KE)।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 230
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-022",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "The escape velocity from the surface of the Earth is approximately:",
+        "options": [
+          "7.9 km/s",
+          "11.2 km/s",
+          "2.4 km/s",
+          "30 km/s"
+        ],
+        "explanation": "Escape velocity is the minimum speed with which a body must be projected from the surface to escape the Earth's gravity without further propulsion. For the Earth it is about 11.2 km/s, and it does not depend on the mass of the body.",
+        "notes": [
+          "7.9 km/s: roughly the orbital speed of a satellite just above the Earth's surface.",
+          "11.2 km/s: correct; the Earth's escape velocity.",
+          "2.4 km/s: roughly the Moon's escape velocity.",
+          "30 km/s: roughly the Earth's orbital speed around the Sun."
+        ],
+        "path": [
+          "Physics",
+          "Gravitation",
+          "Escape velocity"
+        ],
+        "facts": [
+          "Escape velocity = √2 × orbital velocity near the surface.",
+          "The Moon has almost no atmosphere partly because its escape velocity is low."
+        ]
+      },
+      "hi": {
+        "q": "पृथ्वी की सतह से पलायन वेग लगभग कितना है?",
+        "options": [
+          "7.9 किमी/से",
+          "11.2 किमी/से",
+          "2.4 किमी/से",
+          "30 किमी/से"
+        ],
+        "explanation": "पलायन वेग वह न्यूनतम वेग है जिससे सतह से फेंकी गई वस्तु बिना अतिरिक्त प्रणोदन के पृथ्वी के गुरुत्व से बाहर निकल जाए। पृथ्वी के लिए यह लगभग 11.2 किमी/से है और वस्तु के द्रव्यमान पर निर्भर नहीं करता।",
+        "notes": [
+          "7.9 किमी/से: पृथ्वी की सतह के ठीक ऊपर उपग्रह का लगभग कक्षीय वेग।",
+          "11.2 किमी/से: सही; पृथ्वी का पलायन वेग।",
+          "2.4 किमी/से: लगभग चंद्रमा का पलायन वेग।",
+          "30 किमी/से: सूर्य के चारों ओर पृथ्वी का लगभग कक्षीय वेग।"
+        ],
+        "path": [
+          "भौतिकी",
+          "गुरुत्वाकर्षण",
+          "पलायन वेग"
+        ],
+        "facts": [
+          "पलायन वेग = √2 × सतह के निकट कक्षीय वेग।",
+          "चंद्रमा पर लगभग वायुमंडल न होने का एक कारण उसका कम पलायन वेग है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 230
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-023",
+      "level": "TGT",
+      "answer": 3,
+      "en": {
+        "q": "In which of the following does sound travel fastest?",
+        "options": [
+          "Air",
+          "Water",
+          "Vacuum",
+          "Steel"
+        ],
+        "explanation": "Sound is a mechanical wave and travels fastest in solids, slower in liquids and slowest in gases. In steel it moves at nearly 6 km/s, against about 1.5 km/s in water and about 0.35 km/s in air; it cannot travel through a vacuum at all.",
+        "notes": [
+          "Air: about 346 m/s at 25 °C; the slowest of the three media.",
+          "Water: about 1500 m/s; faster than air but slower than steel.",
+          "Vacuum: sound cannot travel here because there is no medium.",
+          "Steel: about 5960 m/s; the fastest among these."
+        ],
+        "path": [
+          "Physics",
+          "Sound",
+          "Speed of sound"
+        ],
+        "facts": [
+          "Speed of sound: solids > liquids > gases.",
+          "Sound travels faster in moist air than in dry air, and faster in warm air than in cold air."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित में से किसमें ध्वनि सबसे तेज़ चलती है?",
+        "options": [
+          "वायु",
+          "जल",
+          "निर्वात",
+          "इस्पात"
+        ],
+        "explanation": "ध्वनि यांत्रिक तरंग है; यह ठोसों में सबसे तेज़, द्रवों में उससे धीमी और गैसों में सबसे धीमी चलती है। इस्पात में इसकी चाल लगभग 6 किमी/से, जल में लगभग 1.5 किमी/से और वायु में लगभग 0.35 किमी/से है; निर्वात में ध्वनि चल ही नहीं सकती।",
+        "notes": [
+          "वायु: 25 °C पर लगभग 346 मी/से; तीनों माध्यमों में सबसे धीमी।",
+          "जल: लगभग 1500 मी/से; वायु से तेज़, इस्पात से धीमी।",
+          "निर्वात: माध्यम न होने से ध्वनि यहाँ नहीं चल सकती।",
+          "इस्पात: लगभग 5960 मी/से; इनमें सबसे तेज़।"
+        ],
+        "path": [
+          "भौतिकी",
+          "ध्वनि",
+          "ध्वनि की चाल"
+        ],
+        "facts": [
+          "ध्वनि की चाल: ठोस > द्रव > गैस।",
+          "आर्द्र वायु में ध्वनि शुष्क वायु से और गर्म वायु में ठंडी वायु से तेज़ चलती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 232
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Sound'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-024",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "Consider the following statements about sound:\n1. In air, sound travels as a longitudinal wave made up of compressions and rarefactions.\n2. Sound can travel through a vacuum.\n3. Sound waves in air can be polarised.\nWhich of the above is/are correct?",
+        "options": [
+          "Only 1",
+          "1 and 2 only",
+          "1 and 3 only",
+          "1, 2 and 3"
+        ],
+        "explanation": "In air the particles vibrate along the direction of travel, forming compressions and rarefactions, so the wave is longitudinal. Being a mechanical wave, sound needs a medium and cannot cross a vacuum. Polarisation is possible only for transverse waves such as light, so longitudinal sound in air cannot be polarised.",
+        "notes": [
+          "Only 1: correct.",
+          "1 and 2 only: statement 2 is wrong; sound needs a material medium.",
+          "1 and 3 only: statement 3 is wrong; only transverse waves can be polarised.",
+          "1, 2 and 3: wrong because statements 2 and 3 are false."
+        ],
+        "path": [
+          "Physics",
+          "Sound",
+          "Nature of sound waves"
+        ],
+        "facts": [
+          "Light is a transverse electromagnetic wave and can be polarised.",
+          "In solids, mechanical waves can be both longitudinal and transverse."
+        ]
+      },
+      "hi": {
+        "q": "ध्वनि के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. वायु में ध्वनि संपीडन और विरलन से बनी अनुदैर्ध्य तरंग के रूप में चलती है।\n2. ध्वनि निर्वात में चल सकती है।\n3. वायु में ध्वनि तरंगों का ध्रुवण किया जा सकता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 1",
+          "केवल 1 और 2",
+          "केवल 1 और 3",
+          "1, 2 और 3"
+        ],
+        "explanation": "वायु में कण तरंग-संचरण की दिशा में ही कंपन करते हैं और संपीडन तथा विरलन बनाते हैं, अतः तरंग अनुदैर्ध्य है। यांत्रिक तरंग होने से ध्वनि को माध्यम चाहिए और वह निर्वात पार नहीं कर सकती। ध्रुवण केवल प्रकाश जैसी अनुप्रस्थ तरंगों का होता है, इसलिए वायु में अनुदैर्ध्य ध्वनि का ध्रुवण नहीं हो सकता।",
+        "notes": [
+          "केवल 1: सही।",
+          "केवल 1 और 2: कथन 2 गलत है; ध्वनि को भौतिक माध्यम चाहिए।",
+          "केवल 1 और 3: कथन 3 गलत है; केवल अनुप्रस्थ तरंगों का ध्रुवण होता है।",
+          "1, 2 और 3: कथन 2 और 3 गलत होने से यह विकल्प गलत है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "ध्वनि",
+          "ध्वनि तरंगों की प्रकृति"
+        ],
+        "facts": [
+          "प्रकाश अनुप्रस्थ विद्युत-चुंबकीय तरंग है और उसका ध्रुवण हो सकता है।",
+          "ठोसों में यांत्रिक तरंगें अनुदैर्ध्य और अनुप्रस्थ दोनों हो सकती हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 232
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Sound'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-025",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "Sound waves with a frequency below 20 Hz are called:",
+        "options": [
+          "Ultrasonic",
+          "Infrasonic",
+          "Supersonic",
+          "Hypersonic"
+        ],
+        "explanation": "The normal human audible range is about 20 Hz to 20,000 Hz. Sound below 20 Hz is infrasonic (infrasound) and sound above 20 kHz is ultrasonic.",
+        "notes": [
+          "Ultrasonic: frequency above 20,000 Hz; used by bats and dolphins and in medical scanning.",
+          "Infrasonic: correct; below 20 Hz.",
+          "Supersonic: describes a speed greater than the speed of sound, not a frequency.",
+          "Hypersonic: describes speeds above about five times the speed of sound."
+        ],
+        "path": [
+          "Physics",
+          "Sound",
+          "Audible range"
+        ],
+        "facts": [
+          "Humans normally hear 20 Hz to 20 kHz.",
+          "Elephants and whales can produce infrasound; earthquakes also generate it."
+        ]
+      },
+      "hi": {
+        "q": "20 Hz से कम आवृत्ति वाली ध्वनि तरंगें कहलाती हैं:",
+        "options": [
+          "पराश्रव्य",
+          "अवश्रव्य",
+          "पराध्वनिक (सुपरसोनिक)",
+          "अतिपराध्वनिक (हाइपरसोनिक)"
+        ],
+        "explanation": "मनुष्य का सामान्य श्रव्य परास लगभग 20 Hz से 20,000 Hz है। 20 Hz से कम आवृत्ति की ध्वनि अवश्रव्य और 20 kHz से अधिक की पराश्रव्य कहलाती है।",
+        "notes": [
+          "पराश्रव्य: 20,000 Hz से अधिक आवृत्ति; चमगादड़, डॉल्फ़िन और चिकित्सा जाँच में उपयोग।",
+          "अवश्रव्य: सही; 20 Hz से कम।",
+          "सुपरसोनिक: ध्वनि की चाल से अधिक वेग को कहते हैं, आवृत्ति को नहीं।",
+          "हाइपरसोनिक: ध्वनि की चाल के लगभग पाँच गुने से अधिक वेग।"
+        ],
+        "path": [
+          "भौतिकी",
+          "ध्वनि",
+          "श्रव्य परास"
+        ],
+        "facts": [
+          "मनुष्य सामान्यतः 20 Hz से 20 kHz तक की ध्वनि सुनता है।",
+          "हाथी और व्हेल अवश्रव्य ध्वनि उत्पन्न कर सकते हैं; भूकंप भी इसे उत्पन्न करते हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 233
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Sound'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-026",
+      "level": "Higher",
+      "answer": 2,
+      "en": {
+        "q": "Match List-I with List-II:\nList-I (characteristic of sound): A. Pitch B. Loudness C. Timbre (quality) D. Sound intensity level\nList-II (depends on / measured in): 1. Decibel 2. Amplitude 3. Frequency 4. Waveform (mixture of overtones)",
+        "options": [
+          "A-2, B-3, C-4, D-1",
+          "A-3, B-2, C-1, D-4",
+          "A-3, B-2, C-4, D-1",
+          "A-4, B-2, C-3, D-1"
+        ],
+        "explanation": "Pitch is decided by frequency and loudness by amplitude. Timbre, which lets us tell two sounds of the same pitch and loudness apart, depends on the waveform, i.e. the mix of overtones. Sound intensity level is expressed in decibels.",
+        "notes": [
+          "Wrong: pitch depends on frequency and loudness on amplitude, not the reverse.",
+          "Wrong: timbre depends on waveform and intensity level is measured in decibels.",
+          "Correct: A-3, B-2, C-4, D-1.",
+          "Wrong: pitch depends on frequency, not on waveform."
+        ],
+        "path": [
+          "Physics",
+          "Sound",
+          "Characteristics of sound"
+        ],
+        "facts": [
+          "Women and children usually have higher-pitched voices than men.",
+          "Long exposure to sound above about 85 dB can damage hearing."
+        ]
+      },
+      "hi": {
+        "q": "सूची-I को सूची-II से सुमेलित कीजिए:\nसूची-I (ध्वनि का अभिलक्षण): A. तारत्व B. प्रबलता C. गुणता (टिम्बर) D. ध्वनि तीव्रता स्तर\nसूची-II (निर्भरता / मात्रक): 1. डेसीबल 2. आयाम 3. आवृत्ति 4. तरंग-रूप (अधिस्वरकों का मिश्रण)",
+        "options": [
+          "A-2, B-3, C-4, D-1",
+          "A-3, B-2, C-1, D-4",
+          "A-3, B-2, C-4, D-1",
+          "A-4, B-2, C-3, D-1"
+        ],
+        "explanation": "तारत्व आवृत्ति से और प्रबलता आयाम से तय होती है। गुणता, जिससे समान तारत्व और प्रबलता वाली दो ध्वनियों में भेद किया जाता है, तरंग-रूप अर्थात् अधिस्वरकों के मिश्रण पर निर्भर करती है। ध्वनि तीव्रता स्तर डेसीबल में व्यक्त होता है।",
+        "notes": [
+          "गलत: तारत्व आवृत्ति पर और प्रबलता आयाम पर निर्भर है, उल्टा नहीं।",
+          "गलत: गुणता तरंग-रूप पर निर्भर है और तीव्रता स्तर डेसीबल में मापा जाता है।",
+          "सही: A-3, B-2, C-4, D-1।",
+          "गलत: तारत्व आवृत्ति पर निर्भर है, तरंग-रूप पर नहीं।"
+        ],
+        "path": [
+          "भौतिकी",
+          "ध्वनि",
+          "ध्वनि के अभिलक्षण"
+        ],
+        "facts": [
+          "महिलाओं और बच्चों की आवाज़ का तारत्व सामान्यतः पुरुषों से अधिक होता है।",
+          "लगभग 85 dB से अधिक की ध्वनि लंबे समय तक सुनने से श्रवण-शक्ति को हानि हो सकती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 233
+        },
+        {
+          "book": "fatman",
+          "page": 232
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Sound'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-027",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "Taking the speed of sound in air as 344 m/s and the persistence of hearing as 0.1 s, what is the minimum distance of a reflecting surface from the source for a distinct echo to be heard?",
+        "options": [
+          "17.2 m",
+          "34.4 m",
+          "3.44 m",
+          "172 m"
+        ],
+        "explanation": "In 0.1 s sound travels 344 × 0.1 = 34.4 m. This is the distance to the obstacle and back, so the obstacle must be at least 34.4/2 = 17.2 m away.",
+        "notes": [
+          "17.2 m: correct; half of the 34.4 m round trip.",
+          "34.4 m: this is the total to-and-fro path, not the distance to the wall.",
+          "3.44 m: decimal slip; ten times too small.",
+          "172 m: decimal slip; ten times too large."
+        ],
+        "path": [
+          "Physics",
+          "Sound",
+          "Reflection of sound",
+          "Echo"
+        ],
+        "facts": [
+          "The sensation of a sound persists in our brain for about 0.1 s.",
+          "Repeated reflections that make sound linger in a hall are called reverberation."
+        ]
+      },
+      "hi": {
+        "q": "वायु में ध्वनि की चाल 344 मी/से और श्रवण-स्थायित्व (ध्वनि की अनुभूति का मस्तिष्क में बने रहना) 0.1 से मानें, तो स्पष्ट प्रतिध्वनि सुनने के लिए परावर्तक सतह की स्रोत से न्यूनतम दूरी कितनी होनी चाहिए?",
+        "options": [
+          "17.2 मी",
+          "34.4 मी",
+          "3.44 मी",
+          "172 मी"
+        ],
+        "explanation": "0.1 से में ध्वनि 344 × 0.1 = 34.4 मी चलती है। यह अवरोध तक जाने और लौटने की कुल दूरी है, अतः अवरोध कम-से-कम 34.4/2 = 17.2 मी दूर होना चाहिए।",
+        "notes": [
+          "17.2 मी: सही; 34.4 मी की आने-जाने की दूरी का आधा।",
+          "34.4 मी: यह आने-जाने का कुल पथ है, दीवार की दूरी नहीं।",
+          "3.44 मी: दशमलव की भूल; दस गुना कम।",
+          "172 मी: दशमलव की भूल; दस गुना अधिक।"
+        ],
+        "path": [
+          "भौतिकी",
+          "ध्वनि",
+          "ध्वनि का परावर्तन",
+          "प्रतिध्वनि"
+        ],
+        "facts": [
+          "ध्वनि की अनुभूति हमारे मस्तिष्क में लगभग 0.1 से तक बनी रहती है।",
+          "सभागार में बार-बार परावर्तन से ध्वनि का देर तक बने रहना अनुरणन कहलाता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 233
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Sound'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-028",
+      "level": "PGT",
+      "answer": 1,
+      "en": {
+        "q": "A jet flies at 680 m/s through air in which the speed of sound is 340 m/s. Which description of its flight is correct?",
+        "options": [
+          "Mach 0.5, subsonic",
+          "Mach 2, supersonic",
+          "Mach 2, hypersonic",
+          "Mach 5, hypersonic"
+        ],
+        "explanation": "Mach number = speed of the object / speed of sound in the medium = 680/340 = 2. A Mach number between 1 and 5 is supersonic; above 5 is hypersonic.",
+        "notes": [
+          "Mach 0.5, subsonic: the ratio has been inverted (340/680).",
+          "Mach 2, supersonic: correct.",
+          "Mach 2, hypersonic: Mach 2 is supersonic; hypersonic begins above Mach 5.",
+          "Mach 5, hypersonic: 680/340 is 2, not 5."
+        ],
+        "path": [
+          "Physics",
+          "Sound",
+          "Mach number"
+        ],
+        "facts": [
+          "Subsonic: Mach < 1; transonic: around Mach 1; supersonic: Mach 1–5; hypersonic: Mach > 5.",
+          "Objects moving faster than sound produce shock waves heard as a sonic boom."
+        ]
+      },
+      "hi": {
+        "q": "एक जेट विमान 680 मी/से की चाल से ऐसी वायु में उड़ रहा है जिसमें ध्वनि की चाल 340 मी/से है। उसकी उड़ान का सही वर्णन कौन-सा है?",
+        "options": [
+          "मैक 0.5, अवध्वनिक (सबसोनिक)",
+          "मैक 2, पराध्वनिक (सुपरसोनिक)",
+          "मैक 2, अतिपराध्वनिक (हाइपरसोनिक)",
+          "मैक 5, अतिपराध्वनिक (हाइपरसोनिक)"
+        ],
+        "explanation": "मैक संख्या = वस्तु की चाल / माध्यम में ध्वनि की चाल = 680/340 = 2। मैक 1 से 5 के बीच पराध्वनिक (सुपरसोनिक) और 5 से अधिक अतिपराध्वनिक (हाइपरसोनिक) कहलाता है।",
+        "notes": [
+          "मैक 0.5, सबसोनिक: अनुपात उल्टा (340/680) ले लिया गया।",
+          "मैक 2, सुपरसोनिक: सही।",
+          "मैक 2, हाइपरसोनिक: मैक 2 सुपरसोनिक है; हाइपरसोनिक मैक 5 से ऊपर शुरू होता है।",
+          "मैक 5, हाइपरसोनिक: 680/340 = 2 होता है, 5 नहीं।"
+        ],
+        "path": [
+          "भौतिकी",
+          "ध्वनि",
+          "मैक संख्या"
+        ],
+        "facts": [
+          "सबसोनिक: मैक < 1; ट्रांसोनिक: लगभग मैक 1; सुपरसोनिक: मैक 1–5; हाइपरसोनिक: मैक > 5।",
+          "ध्वनि से तेज़ चलती वस्तुएँ प्रघाती तरंगें बनाती हैं, जो 'सोनिक बूम' के रूप में सुनाई देती हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 233
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Sound'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-029",
+      "level": "TGT",
+      "answer": 2,
+      "en": {
+        "q": "Which type of mirror is used as the rear-view (side) mirror in vehicles?",
+        "options": [
+          "Concave mirror",
+          "Plane mirror",
+          "Convex mirror",
+          "Parabolic concave mirror"
+        ],
+        "explanation": "A convex mirror always forms a virtual, erect and diminished image, so it shows a much wider field of view behind the vehicle than a plane mirror of the same size. That is why it is used as a rear-view mirror.",
+        "notes": [
+          "Concave mirror: used in shaving mirrors, dentists' mirrors and solar furnaces.",
+          "Plane mirror: gives a same-size image but a narrow field of view.",
+          "Convex mirror: correct; erect, diminished image with a wide field of view.",
+          "Parabolic concave mirror: used as the reflector in headlights and searchlights."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Spherical mirrors",
+          "Uses of mirrors"
+        ],
+        "facts": [
+          "Convex mirrors are also used as security and road-bend mirrors.",
+          "The focal length of a convex mirror is taken as positive in the New Cartesian sign convention."
+        ]
+      },
+      "hi": {
+        "q": "वाहनों में पश्च-दृश्य (साइड) दर्पण के रूप में किस प्रकार का दर्पण प्रयोग होता है?",
+        "options": [
+          "अवतल दर्पण",
+          "समतल दर्पण",
+          "उत्तल दर्पण",
+          "परवलयिक अवतल दर्पण"
+        ],
+        "explanation": "उत्तल दर्पण सदैव आभासी, सीधा और छोटा प्रतिबिंब बनाता है, इसलिए यह उसी आकार के समतल दर्पण की तुलना में वाहन के पीछे का कहीं अधिक विस्तृत दृश्य-क्षेत्र दिखाता है। इसी कारण यह पश्च-दृश्य दर्पण के रूप में प्रयोग होता है।",
+        "notes": [
+          "अवतल दर्पण: दाढ़ी बनाने के दर्पण, दंत-चिकित्सक के दर्पण और सौर भट्टी में प्रयोग।",
+          "समतल दर्पण: समान आकार का प्रतिबिंब, पर दृश्य-क्षेत्र संकीर्ण।",
+          "उत्तल दर्पण: सही; सीधा, छोटा प्रतिबिंब और विस्तृत दृश्य-क्षेत्र।",
+          "परवलयिक अवतल दर्पण: हेडलाइट और सर्चलाइट के परावर्तक के रूप में प्रयोग।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "गोलीय दर्पण",
+          "दर्पणों के उपयोग"
+        ],
+        "facts": [
+          "उत्तल दर्पण सुरक्षा-निगरानी और सड़क के मोड़ों पर भी लगाए जाते हैं।",
+          "नई कार्तीय चिह्न परिपाटी में उत्तल दर्पण की फ़ोकस दूरी धनात्मक ली जाती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 237
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Light – Reflection and Refraction'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-030",
+      "level": "PGT",
+      "answer": 3,
+      "en": {
+        "q": "A concave mirror forms a virtual, erect and enlarged image of an object when the object is placed:",
+        "options": [
+          "At infinity",
+          "Beyond the centre of curvature (C)",
+          "At the centre of curvature (C)",
+          "Between the principal focus (F) and the pole (P)"
+        ],
+        "explanation": "When the object lies between F and P, the reflected rays diverge and only appear to meet behind the mirror, giving a virtual, erect and magnified image. In every other position a concave mirror forms a real, inverted image.",
+        "notes": [
+          "At infinity: image at F, real, inverted and highly diminished.",
+          "Beyond C: image between F and C, real, inverted and diminished.",
+          "At C: image at C, real, inverted and of the same size.",
+          "Between F and P: correct; image behind the mirror, virtual, erect and enlarged."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Spherical mirrors",
+          "Image formation by a concave mirror"
+        ],
+        "facts": [
+          "This is why a concave mirror is used as a shaving or make-up mirror.",
+          "Mirror formula: 1/v + 1/u = 1/f."
+        ]
+      },
+      "hi": {
+        "q": "अवतल दर्पण किसी वस्तु का आभासी, सीधा और आवर्धित प्रतिबिंब तब बनाता है जब वस्तु रखी हो:",
+        "options": [
+          "अनंत पर",
+          "वक्रता केंद्र (C) से परे",
+          "वक्रता केंद्र (C) पर",
+          "मुख्य फ़ोकस (F) और ध्रुव (P) के बीच"
+        ],
+        "explanation": "जब वस्तु F और P के बीच होती है तो परावर्तित किरणें अपसरित होती हैं और केवल दर्पण के पीछे मिलती प्रतीत होती हैं; इससे आभासी, सीधा और आवर्धित प्रतिबिंब बनता है। अन्य सभी स्थितियों में अवतल दर्पण वास्तविक, उल्टा प्रतिबिंब बनाता है।",
+        "notes": [
+          "अनंत पर: प्रतिबिंब F पर, वास्तविक, उल्टा और अत्यंत छोटा।",
+          "C से परे: प्रतिबिंब F और C के बीच, वास्तविक, उल्टा और छोटा।",
+          "C पर: प्रतिबिंब C पर, वास्तविक, उल्टा और समान आकार का।",
+          "F और P के बीच: सही; प्रतिबिंब दर्पण के पीछे, आभासी, सीधा और बड़ा।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "गोलीय दर्पण",
+          "अवतल दर्पण द्वारा प्रतिबिंब"
+        ],
+        "facts": [
+          "इसी कारण अवतल दर्पण दाढ़ी बनाने या शृंगार के दर्पण के रूप में प्रयोग होता है।",
+          "दर्पण सूत्र: 1/v + 1/u = 1/f।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 236
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Light – Reflection and Refraction'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-031",
+      "level": "PGT",
+      "answer": 1,
+      "en": {
+        "q": "The refractive index of a glass is 1.5. If the speed of light in vacuum is 3 × 10⁸ m/s, what is the speed of light in this glass?",
+        "options": [
+          "4.5 × 10⁸ m/s",
+          "2 × 10⁸ m/s",
+          "1.5 × 10⁸ m/s",
+          "3 × 10⁸ m/s"
+        ],
+        "explanation": "Refractive index n = speed of light in vacuum / speed of light in the medium. So v = c/n = (3 × 10⁸)/1.5 = 2 × 10⁸ m/s.",
+        "notes": [
+          "4.5 × 10⁸ m/s: c has been multiplied by n; light cannot travel faster in glass than in vacuum.",
+          "2 × 10⁸ m/s: correct, c/n.",
+          "1.5 × 10⁸ m/s: confuses the speed with the value of n.",
+          "3 × 10⁸ m/s: the speed in vacuum, not in glass."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Refraction",
+          "Refractive index"
+        ],
+        "facts": [
+          "Diamond has a refractive index of about 2.42, among the highest of common materials.",
+          "A medium with higher refractive index is called optically denser."
+        ]
+      },
+      "hi": {
+        "q": "किसी काँच का अपवर्तनांक 1.5 है। यदि निर्वात में प्रकाश की चाल 3 × 10⁸ मी/से हो, तो इस काँच में प्रकाश की चाल क्या होगी?",
+        "options": [
+          "4.5 × 10⁸ मी/से",
+          "2 × 10⁸ मी/से",
+          "1.5 × 10⁸ मी/से",
+          "3 × 10⁸ मी/से"
+        ],
+        "explanation": "अपवर्तनांक n = निर्वात में प्रकाश की चाल / माध्यम में प्रकाश की चाल। अतः v = c/n = (3 × 10⁸)/1.5 = 2 × 10⁸ मी/से।",
+        "notes": [
+          "4.5 × 10⁸ मी/से: c को n से गुणा कर दिया गया; काँच में प्रकाश निर्वात से तेज़ नहीं चल सकता।",
+          "2 × 10⁸ मी/से: सही, c/n।",
+          "1.5 × 10⁸ मी/से: चाल को n के मान से भ्रमित किया गया।",
+          "3 × 10⁸ मी/से: यह निर्वात में चाल है, काँच में नहीं।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "अपवर्तन",
+          "अपवर्तनांक"
+        ],
+        "facts": [
+          "हीरे का अपवर्तनांक लगभग 2.42 है, जो सामान्य पदार्थों में सबसे अधिक में से है।",
+          "अधिक अपवर्तनांक वाला माध्यम प्रकाशतः सघन कहलाता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 237
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Light – Reflection and Refraction'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-032",
+      "level": "Higher",
+      "answer": 2,
+      "en": {
+        "q": "Consider the following statements about refraction of light:\n1. A ray of light going from air into glass bends towards the normal.\n2. The frequency of light changes when it passes from one medium into another.\n3. A ray passing obliquely through a parallel-sided glass slab emerges parallel to the incident ray but shifted sideways.\nWhich of the above is/are correct?",
+        "options": [
+          "1 and 2 only",
+          "Only 3",
+          "1 and 3 only",
+          "1, 2 and 3"
+        ],
+        "explanation": "Light slows down in glass (a denser medium) and bends towards the normal. During refraction the speed and wavelength change but the frequency, fixed by the source, stays the same, so statement 2 is wrong. In a parallel-sided slab the emergent ray is parallel to the incident ray with a lateral displacement.",
+        "notes": [
+          "1 and 2 only: statement 2 is wrong; frequency does not change on refraction.",
+          "Only 3: statement 1 is also correct.",
+          "1 and 3 only: correct.",
+          "1, 2 and 3: wrong because statement 2 is false."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Refraction",
+          "Glass slab"
+        ],
+        "facts": [
+          "Snell's law: sin i / sin r = constant (the refractive index of the second medium with respect to the first).",
+          "A ray falling along the normal passes through a slab without bending."
+        ]
+      },
+      "hi": {
+        "q": "प्रकाश के अपवर्तन के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. वायु से काँच में जाने वाली प्रकाश किरण अभिलंब की ओर मुड़ती है।\n2. एक माध्यम से दूसरे माध्यम में जाने पर प्रकाश की आवृत्ति बदल जाती है।\n3. समांतर फलकों वाले काँच के स्लैब से तिरछी गुज़रने वाली किरण आपतित किरण के समांतर, किंतु कुछ खिसककर निकलती है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 1 और 2",
+          "केवल 3",
+          "केवल 1 और 3",
+          "1, 2 और 3"
+        ],
+        "explanation": "काँच (सघन माध्यम) में प्रकाश की चाल घटती है और वह अभिलंब की ओर मुड़ता है। अपवर्तन में चाल और तरंगदैर्ध्य बदलते हैं, पर स्रोत द्वारा निर्धारित आवृत्ति वही रहती है, अतः कथन 2 गलत है। समांतर स्लैब में निर्गत किरण आपतित किरण के समांतर होती है और उसमें पार्श्विक विस्थापन होता है।",
+        "notes": [
+          "केवल 1 और 2: कथन 2 गलत है; अपवर्तन में आवृत्ति नहीं बदलती।",
+          "केवल 3: कथन 1 भी सही है।",
+          "केवल 1 और 3: सही।",
+          "1, 2 और 3: कथन 2 गलत होने से यह विकल्प गलत है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "अपवर्तन",
+          "काँच का स्लैब"
+        ],
+        "facts": [
+          "स्नेल का नियम: sin i / sin r = नियतांक (पहले माध्यम के सापेक्ष दूसरे माध्यम का अपवर्तनांक)।",
+          "अभिलंब के अनुदिश आपतित किरण स्लैब से बिना मुड़े निकल जाती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 237
+        },
+        {
+          "book": "fatman",
+          "page": 238
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Light – Reflection and Refraction'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-033",
+      "level": "TGT",
+      "answer": 3,
+      "en": {
+        "q": "What is the power of a convex lens of focal length 50 cm?",
+        "options": [
+          "+0.5 D",
+          "+0.02 D",
+          "+50 D",
+          "+2 D"
+        ],
+        "explanation": "Power P = 1/f, with f in metres. For f = +0.5 m, P = 1/0.5 = +2 dioptre. A convex (converging) lens has positive power.",
+        "notes": [
+          "+0.5 D: this is the focal length in metres written as if it were the power.",
+          "+0.02 D: the focal length has been wrongly taken as 50 m instead of 0.5 m.",
+          "+50 D: the focal length in centimetres has been used directly as the power.",
+          "+2 D: correct; P = 1/0.5 m."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Lenses",
+          "Power of a lens"
+        ],
+        "facts": [
+          "The SI unit of power of a lens is the dioptre (D) = m⁻¹.",
+          "Powers of lenses in contact add up: P = P₁ + P₂ + …",
+          "A concave (diverging) lens has negative power; −2 D means a concave lens of focal length 50 cm."
+        ]
+      },
+      "hi": {
+        "q": "50 सेमी फ़ोकस दूरी वाले उत्तल लेंस की क्षमता कितनी है?",
+        "options": [
+          "+0.5 D",
+          "+0.02 D",
+          "+50 D",
+          "+2 D"
+        ],
+        "explanation": "लेंस की क्षमता P = 1/f, जहाँ f मीटर में हो। f = +0.5 मी के लिए P = 1/0.5 = +2 डायोप्टर। उत्तल (अभिसारी) लेंस की क्षमता धनात्मक होती है।",
+        "notes": [
+          "+0.5 D: मीटर में फ़ोकस दूरी को ही क्षमता लिख दिया गया।",
+          "+0.02 D: फ़ोकस दूरी को 0.5 मी के बजाय गलती से 50 मी मान लिया गया।",
+          "+50 D: सेमी में फ़ोकस दूरी को सीधे क्षमता मान लिया गया।",
+          "+2 D: सही; P = 1/0.5 मी।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "लेंस",
+          "लेंस की क्षमता"
+        ],
+        "facts": [
+          "लेंस की क्षमता का SI मात्रक डायोप्टर (D) = मी⁻¹ है।",
+          "संपर्क में रखे लेंसों की क्षमताएँ जुड़ती हैं: P = P₁ + P₂ + …",
+          "अवतल (अपसारी) लेंस की क्षमता ऋणात्मक होती है; −2 D का अर्थ 50 सेमी फ़ोकस दूरी का अवतल लेंस है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 238
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Light – Reflection and Refraction'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-034",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "Myopia (short-sightedness) is corrected by using spectacles with:",
+        "options": [
+          "A convex lens",
+          "A concave lens",
+          "A bifocal lens",
+          "A cylindrical lens"
+        ],
+        "explanation": "In myopia the image of a distant object forms in front of the retina. A concave (diverging) lens of suitable power spreads the rays slightly so that the image moves back onto the retina.",
+        "notes": [
+          "Convex lens: corrects hypermetropia (far-sightedness).",
+          "Concave lens: correct; diverging lens with negative power.",
+          "Bifocal lens: used when a person has both near and far vision defects, as often in presbyopia.",
+          "Cylindrical lens: used to correct astigmatism."
+        ],
+        "path": [
+          "Physics",
+          "Human eye",
+          "Defects of vision",
+          "Myopia"
+        ],
+        "facts": [
+          "Myopia may arise from an elongated eyeball or excessive curvature of the eye lens.",
+          "A myopic person sees near objects clearly but distant objects blurred."
+        ]
+      },
+      "hi": {
+        "q": "निकट-दृष्टि दोष (मायोपिया) को किस लेंस वाले चश्मे से ठीक किया जाता है?",
+        "options": [
+          "उत्तल लेंस",
+          "अवतल लेंस",
+          "द्विफ़ोकसी लेंस",
+          "बेलनाकार लेंस"
+        ],
+        "explanation": "निकट-दृष्टि दोष में दूर की वस्तु का प्रतिबिंब रेटिना के आगे बनता है। उचित क्षमता का अवतल (अपसारी) लेंस किरणों को थोड़ा फैला देता है, जिससे प्रतिबिंब पीछे खिसककर रेटिना पर बनने लगता है।",
+        "notes": [
+          "उत्तल लेंस: दूर-दृष्टि दोष (हाइपरमेट्रोपिया) ठीक करता है।",
+          "अवतल लेंस: सही; ऋणात्मक क्षमता वाला अपसारी लेंस।",
+          "द्विफ़ोकसी लेंस: जब निकट और दूर दोनों दृष्टि दोष हों, जैसा प्रायः जरा-दूरदृष्टिता में होता है।",
+          "बेलनाकार लेंस: अबिंदुकता (एस्टिग्मेटिज़्म) ठीक करने में प्रयोग।"
+        ],
+        "path": [
+          "भौतिकी",
+          "मानव नेत्र",
+          "दृष्टि दोष",
+          "निकट-दृष्टि दोष"
+        ],
+        "facts": [
+          "नेत्र-गोलक का लंबा हो जाना या नेत्र लेंस की अत्यधिक वक्रता निकट-दृष्टि दोष के कारण हैं।",
+          "निकट-दृष्टि दोष वाला व्यक्ति पास की वस्तुएँ स्पष्ट पर दूर की धुंधली देखता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 240
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-035",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "Consider the following statements about the human eye:\n1. Most of the refraction of light entering the eye takes place at the outer surface of the cornea.\n2. The iris controls the size of the pupil.\n3. The blind spot has the greatest number of rods and cones.\nWhich of the above is/are correct?",
+        "options": [
+          "1 and 2 only",
+          "2 and 3 only",
+          "Only 1",
+          "1, 2 and 3"
+        ],
+        "explanation": "The cornea does most of the bending of incoming light, and the muscular iris widens or narrows the pupil to regulate how much light enters. The blind spot is where the optic nerve leaves the eye; it has no rods or cones and so cannot sense light.",
+        "notes": [
+          "1 and 2 only: correct.",
+          "2 and 3 only: statement 3 is wrong and statement 1 is right.",
+          "Only 1: statement 2 is also correct.",
+          "1, 2 and 3: wrong because the blind spot has no photoreceptors."
+        ],
+        "path": [
+          "Physics",
+          "Human eye",
+          "Structure of the eye"
+        ],
+        "facts": [
+          "Rods respond to dim light; cones respond to bright light and colour.",
+          "In eye donation, the cornea is the part transplanted."
+        ]
+      },
+      "hi": {
+        "q": "मानव नेत्र के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. नेत्र में प्रवेश करने वाले प्रकाश का अधिकांश अपवर्तन कॉर्निया की बाहरी सतह पर होता है।\n2. परितारिका (आइरिस) पुतली के आकार को नियंत्रित करती है।\n3. अंध-बिंदु पर शलाकाओं और शंकुओं की संख्या सबसे अधिक होती है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 1 और 2",
+          "केवल 2 और 3",
+          "केवल 1",
+          "1, 2 और 3"
+        ],
+        "explanation": "आने वाले प्रकाश का अधिकांश मोड़ कॉर्निया पर होता है, और पेशीय परितारिका पुतली को फैलाकर या सिकोड़कर प्रवेश करने वाले प्रकाश की मात्रा नियंत्रित करती है। अंध-बिंदु वह स्थान है जहाँ से दृक्-तंत्रिका नेत्र से निकलती है; यहाँ शलाकाएँ या शंकु नहीं होते, अतः यह प्रकाश अनुभव नहीं कर सकता।",
+        "notes": [
+          "केवल 1 और 2: सही।",
+          "केवल 2 और 3: कथन 3 गलत है और कथन 1 सही है।",
+          "केवल 1: कथन 2 भी सही है।",
+          "1, 2 और 3: अंध-बिंदु पर प्रकाशग्राही कोशिकाएँ नहीं होतीं, अतः गलत।"
+        ],
+        "path": [
+          "भौतिकी",
+          "मानव नेत्र",
+          "नेत्र की संरचना"
+        ],
+        "facts": [
+          "शलाकाएँ मंद प्रकाश के प्रति और शंकु तेज़ प्रकाश व रंगों के प्रति संवेदनशील होते हैं।",
+          "नेत्रदान में कॉर्निया का प्रत्यारोपण किया जाता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 240
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-036",
+      "level": "Higher",
+      "answer": 0,
+      "en": {
+        "q": "Match List-I with List-II:\nList-I (phenomenon): A. Twinkling of stars B. Blue colour of the clear sky C. Formation of a rainbow D. Sparkling of a cut diamond\nList-II (main cause): 1. Total internal reflection 2. Atmospheric refraction 3. Scattering of light 4. Dispersion along with refraction and internal reflection in water droplets",
+        "options": [
+          "A-2, B-3, C-4, D-1",
+          "A-3, B-2, C-4, D-1",
+          "A-2, B-4, C-3, D-1",
+          "A-1, B-3, C-4, D-2"
+        ],
+        "explanation": "Starlight is bent by constantly changing layers of air, so stars twinkle (atmospheric refraction). Air molecules scatter blue light more than red, making the sky blue. A rainbow forms when sunlight is refracted, dispersed and internally reflected in raindrops. A diamond sparkles because light is trapped by repeated total internal reflection.",
+        "notes": [
+          "Correct: A-2, B-3, C-4, D-1.",
+          "Wrong: twinkling is due to refraction and the blue sky is due to scattering, not the reverse.",
+          "Wrong: the blue sky is due to scattering and the rainbow to dispersion in raindrops.",
+          "Wrong: twinkling is due to atmospheric refraction, while the diamond's sparkle is total internal reflection."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Optical phenomena in nature"
+        ],
+        "facts": [
+          "Planets generally do not twinkle because they appear as extended sources.",
+          "A rainbow is always seen on the side of the sky opposite the Sun."
+        ]
+      },
+      "hi": {
+        "q": "सूची-I को सूची-II से सुमेलित कीजिए:\nसूची-I (परिघटना): A. तारों का टिमटिमाना B. स्वच्छ आकाश का नीला रंग C. इंद्रधनुष का बनना D. तराशे गए हीरे का चमकना\nसूची-II (मुख्य कारण): 1. पूर्ण आंतरिक परावर्तन 2. वायुमंडलीय अपवर्तन 3. प्रकाश का प्रकीर्णन 4. जल-बूँदों में अपवर्तन व आंतरिक परावर्तन के साथ विक्षेपण",
+        "options": [
+          "A-2, B-3, C-4, D-1",
+          "A-3, B-2, C-4, D-1",
+          "A-2, B-4, C-3, D-1",
+          "A-1, B-3, C-4, D-2"
+        ],
+        "explanation": "तारों का प्रकाश लगातार बदलती वायु-परतों से मुड़ता है, इसलिए तारे टिमटिमाते हैं (वायुमंडलीय अपवर्तन)। वायु के अणु लाल की अपेक्षा नीले प्रकाश का अधिक प्रकीर्णन करते हैं, जिससे आकाश नीला दिखता है। वर्षा की बूँदों में सूर्य-प्रकाश के अपवर्तन, विक्षेपण और आंतरिक परावर्तन से इंद्रधनुष बनता है। बार-बार पूर्ण आंतरिक परावर्तन से हीरा चमकता है।",
+        "notes": [
+          "सही: A-2, B-3, C-4, D-1।",
+          "गलत: टिमटिमाना अपवर्तन से और नीला आकाश प्रकीर्णन से है, उल्टा नहीं।",
+          "गलत: नीला आकाश प्रकीर्णन से और इंद्रधनुष बूँदों में विक्षेपण से बनता है।",
+          "गलत: टिमटिमाना वायुमंडलीय अपवर्तन है और हीरे की चमक पूर्ण आंतरिक परावर्तन।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "प्रकृति में प्रकाशीय परिघटनाएँ"
+        ],
+        "facts": [
+          "ग्रह सामान्यतः नहीं टिमटिमाते क्योंकि वे विस्तृत स्रोत की भाँति दिखते हैं।",
+          "इंद्रधनुष सदैव सूर्य की विपरीत दिशा में दिखाई देता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 242
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-037",
+      "level": "Higher",
+      "answer": 2,
+      "en": {
+        "q": "Assertion (A): Danger and stop signals are coloured red.\nReason (R): Red light has the shortest wavelength in the visible spectrum, so it is scattered the least by fog and smoke.",
+        "options": [
+          "Both A and R are true, and R is the correct explanation of A",
+          "Both A and R are true, but R is not the correct explanation of A",
+          "A is true, but R is false",
+          "A is false, but R is true"
+        ],
+        "explanation": "Red is used for danger signals because it is scattered least by fog, smoke and dust and so can be seen from far away. But red has the longest, not the shortest, wavelength among visible colours; violet has the shortest. So A is true and R is false.",
+        "notes": [
+          "Wrong: R is false, because red has the longest visible wavelength.",
+          "Wrong: R cannot be 'true' when it calls red the shortest wavelength.",
+          "Correct: A is true; R misstates the wavelength of red light.",
+          "Wrong: A is true; red is the standard colour for danger signals."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Scattering of light",
+          "Danger signals"
+        ],
+        "facts": [
+          "Scattering by very small particles is stronger for shorter wavelengths.",
+          "Violet has the shortest wavelength in the visible spectrum."
+        ]
+      },
+      "hi": {
+        "q": "कथन (A): ख़तरे और रुकने के संकेत लाल रंग के होते हैं।\nकारण (R): दृश्य स्पेक्ट्रम में लाल प्रकाश की तरंगदैर्ध्य सबसे कम होती है, इसलिए कोहरे और धुएँ द्वारा उसका प्रकीर्णन सबसे कम होता है।",
+        "options": [
+          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+          "कथन (A) सही है, परंतु कारण (R) गलत है",
+          "कथन (A) गलत है, परंतु कारण (R) सही है"
+        ],
+        "explanation": "ख़तरे के संकेत लाल होते हैं क्योंकि कोहरे, धुएँ और धूल से लाल प्रकाश का प्रकीर्णन सबसे कम होता है और वह दूर से दिख जाता है। परंतु दृश्य रंगों में लाल की तरंगदैर्ध्य सबसे अधिक है, सबसे कम नहीं; सबसे कम बैंगनी की होती है। अतः (A) सही और (R) गलत है।",
+        "notes": [
+          "गलत: (R) गलत है, क्योंकि लाल की दृश्य तरंगदैर्ध्य सबसे अधिक होती है।",
+          "गलत: लाल को सबसे कम तरंगदैर्ध्य वाला कहने से (R) सही नहीं हो सकता।",
+          "सही: (A) सही है; (R) में लाल प्रकाश की तरंगदैर्ध्य गलत बताई गई है।",
+          "गलत: (A) सही है; लाल रंग ख़तरे के संकेतों का मानक रंग है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "प्रकाश का प्रकीर्णन",
+          "ख़तरे के संकेत"
+        ],
+        "facts": [
+          "अत्यंत सूक्ष्म कणों द्वारा प्रकीर्णन कम तरंगदैर्ध्य के लिए अधिक होता है।",
+          "दृश्य स्पेक्ट्रम में बैंगनी की तरंगदैर्ध्य सबसे कम होती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 242
+        },
+        {
+          "book": "fatman",
+          "page": 241
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-038",
+      "level": "TGT",
+      "answer": 3,
+      "en": {
+        "q": "When white light passes through a glass prism, which colour is deviated the most?",
+        "options": [
+          "Red",
+          "Yellow",
+          "Green",
+          "Violet"
+        ],
+        "explanation": "Glass has a slightly higher refractive index for shorter wavelengths, so violet light slows down most and bends the most, while red bends the least. This splitting of white light into its colours is called dispersion.",
+        "notes": [
+          "Red: longest visible wavelength; deviated the least.",
+          "Yellow: lies between red and green in deviation.",
+          "Green: deviated more than yellow but less than blue and violet.",
+          "Violet: correct; shortest wavelength and greatest deviation."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Dispersion",
+          "Prism"
+        ],
+        "facts": [
+          "The order of colours in the spectrum is VIBGYOR.",
+          "Isaac Newton was the first to use a glass prism to obtain the spectrum of sunlight."
+        ]
+      },
+      "hi": {
+        "q": "जब श्वेत प्रकाश काँच के प्रिज़्म से गुज़रता है, तो किस रंग का विचलन सबसे अधिक होता है?",
+        "options": [
+          "लाल",
+          "पीला",
+          "हरा",
+          "बैंगनी"
+        ],
+        "explanation": "कम तरंगदैर्ध्य के लिए काँच का अपवर्तनांक थोड़ा अधिक होता है, इसलिए बैंगनी प्रकाश सबसे अधिक धीमा होकर सबसे अधिक मुड़ता है, जबकि लाल सबसे कम। श्वेत प्रकाश का अपने रंगों में बँट जाना विक्षेपण कहलाता है।",
+        "notes": [
+          "लाल: दृश्य प्रकाश में सबसे अधिक तरंगदैर्ध्य; सबसे कम विचलन।",
+          "पीला: विचलन में लाल और हरे के बीच।",
+          "हरा: पीले से अधिक पर नीले और बैंगनी से कम विचलन।",
+          "बैंगनी: सही; सबसे कम तरंगदैर्ध्य और सबसे अधिक विचलन।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "विक्षेपण",
+          "प्रिज़्म"
+        ],
+        "facts": [
+          "स्पेक्ट्रम में रंगों का क्रम: बैनीआहपनाला (VIBGYOR)।",
+          "सूर्य-प्रकाश का स्पेक्ट्रम प्राप्त करने के लिए काँच के प्रिज़्म का प्रयोग सबसे पहले आइज़क न्यूटन ने किया।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 241
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-039",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "The Sun becomes visible about two minutes before it actually rises above the horizon and stays visible about two minutes after it actually sets. This is due to:",
+        "options": [
+          "Atmospheric refraction",
+          "Scattering of light",
+          "Dispersion of light",
+          "Total internal reflection"
+        ],
+        "explanation": "Air near the Earth is denser than air higher up, so sunlight bends as it passes through the atmosphere. When the Sun is slightly below the horizon, this bending still brings its light to us, giving an advanced sunrise and a delayed sunset.",
+        "notes": [
+          "Atmospheric refraction: correct; bending of sunlight in layers of air of different density.",
+          "Scattering: explains the blue sky and the reddish Sun at sunrise and sunset, not the time shift.",
+          "Dispersion: the splitting of light into colours, as in a rainbow.",
+          "Total internal reflection: explains mirages, optical fibres and the sparkle of diamonds."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Atmospheric refraction"
+        ],
+        "facts": [
+          "Atmospheric refraction also makes the Sun's disc look flattened at sunrise and sunset.",
+          "The twinkling of stars is another effect of atmospheric refraction."
+        ]
+      },
+      "hi": {
+        "q": "सूर्य वास्तविक सूर्योदय से लगभग दो मिनट पहले दिखने लगता है और वास्तविक सूर्यास्त के लगभग दो मिनट बाद तक दिखाई देता है। इसका कारण है:",
+        "options": [
+          "वायुमंडलीय अपवर्तन",
+          "प्रकाश का प्रकीर्णन",
+          "प्रकाश का विक्षेपण",
+          "पूर्ण आंतरिक परावर्तन"
+        ],
+        "explanation": "पृथ्वी के निकट की वायु ऊपर की वायु से सघन होती है, इसलिए वायुमंडल से गुज़रते समय सूर्य-प्रकाश मुड़ता है। सूर्य के क्षितिज से थोड़ा नीचे रहने पर भी यह मुड़ा हुआ प्रकाश हम तक पहुँच जाता है, जिससे सूर्योदय पहले और सूर्यास्त देर से दिखता है।",
+        "notes": [
+          "वायुमंडलीय अपवर्तन: सही; भिन्न घनत्व की वायु-परतों में सूर्य-प्रकाश का मुड़ना।",
+          "प्रकीर्णन: आकाश का नीला और उदय-अस्त के समय सूर्य का लालिमा लिए होना समझाता है, समय का अंतर नहीं।",
+          "विक्षेपण: प्रकाश का रंगों में बँटना, जैसे इंद्रधनुष में।",
+          "पूर्ण आंतरिक परावर्तन: मरीचिका, प्रकाशीय तंतु और हीरे की चमक की व्याख्या करता है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "वायुमंडलीय अपवर्तन"
+        ],
+        "facts": [
+          "वायुमंडलीय अपवर्तन के कारण ही उदय और अस्त के समय सूर्य की चकती चपटी दिखती है।",
+          "तारों का टिमटिमाना भी वायुमंडलीय अपवर्तन का प्रभाव है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 242
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-040",
+      "level": "Higher",
+      "answer": 1,
+      "en": {
+        "q": "Arrange the discovery of the following radiations in chronological order:\n1. X-rays\n2. Infrared rays\n3. Gamma rays\n4. Ultraviolet rays",
+        "options": [
+          "4, 2, 1, 3",
+          "2, 4, 1, 3",
+          "2, 4, 3, 1",
+          "1, 2, 4, 3"
+        ],
+        "explanation": "William Herschel discovered infrared radiation in 1800, Johann Wilhelm Ritter found ultraviolet rays in 1801, Wilhelm Röntgen discovered X-rays in 1895 and Paul Villard identified gamma rays in 1900. So the order is 2, 4, 1, 3.",
+        "notes": [
+          "4, 2, 1, 3: ultraviolet (1801) came a year after infrared (1800), not before.",
+          "2, 4, 1, 3: correct order (1800, 1801, 1895, 1900).",
+          "2, 4, 3, 1: gamma rays (1900) came after X-rays (1895).",
+          "1, 2, 4, 3: X-rays (1895) were found long after infrared and ultraviolet."
+        ],
+        "path": [
+          "Physics",
+          "Light",
+          "Electromagnetic spectrum",
+          "Discoveries"
+        ],
+        "facts": [
+          "All electromagnetic waves travel at about 3 × 10⁸ m/s in vacuum.",
+          "Röntgen received the first Nobel Prize in Physics (1901) for discovering X-rays."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित विकिरणों की खोज को कालानुक्रम में व्यवस्थित कीजिए:\n1. एक्स-किरणें\n2. अवरक्त किरणें\n3. गामा किरणें\n4. पराबैंगनी किरणें",
+        "options": [
+          "4, 2, 1, 3",
+          "2, 4, 1, 3",
+          "2, 4, 3, 1",
+          "1, 2, 4, 3"
+        ],
+        "explanation": "विलियम हर्शेल ने 1800 में अवरक्त विकिरण, योहान विल्हेम रिटर ने 1801 में पराबैंगनी किरणें, विल्हेम रॉन्टजन ने 1895 में एक्स-किरणें और पॉल विलार्ड ने 1900 में गामा किरणें खोजीं। अतः क्रम 2, 4, 1, 3 है।",
+        "notes": [
+          "4, 2, 1, 3: पराबैंगनी (1801) अवरक्त (1800) के एक वर्ष बाद खोजी गई, पहले नहीं।",
+          "2, 4, 1, 3: सही क्रम (1800, 1801, 1895, 1900)।",
+          "2, 4, 3, 1: गामा किरणें (1900) एक्स-किरणों (1895) के बाद खोजी गईं।",
+          "1, 2, 4, 3: एक्स-किरणें (1895) अवरक्त और पराबैंगनी से बहुत बाद में मिलीं।"
+        ],
+        "path": [
+          "भौतिकी",
+          "प्रकाश",
+          "विद्युत-चुंबकीय स्पेक्ट्रम",
+          "खोजें"
+        ],
+        "facts": [
+          "सभी विद्युत-चुंबकीय तरंगें निर्वात में लगभग 3 × 10⁸ मी/से की चाल से चलती हैं।",
+          "रॉन्टजन को एक्स-किरणों की खोज के लिए भौतिकी का पहला नोबेल पुरस्कार (1901) मिला।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 242
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-041",
+      "level": "PGT",
+      "answer": 3,
+      "en": {
+        "q": "Presbyopia, in which an elderly person finds it hard to see nearby objects clearly, is mainly caused by:",
+        "options": [
+          "Elongation of the eyeball",
+          "Clouding of the eye lens as its proteins break down",
+          "Damage to the optic nerve from raised pressure inside the eye",
+          "Gradual weakening of the ciliary muscles and loss of flexibility of the eye lens with age"
+        ],
+        "explanation": "With age the ciliary muscles weaken and the eye lens becomes less flexible, so the eye loses its power of accommodation for near objects and the near point recedes. It is usually corrected with a convex lens, or a bifocal lens if the person also has myopia.",
+        "notes": [
+          "Elongation of the eyeball: a cause of myopia (short-sightedness).",
+          "Clouding of the lens: this is cataract.",
+          "Optic-nerve damage from high eye pressure: this is glaucoma.",
+          "Weak ciliary muscles and stiff lens: correct; this is presbyopia."
+        ],
+        "path": [
+          "Physics",
+          "Human eye",
+          "Defects of vision",
+          "Presbyopia"
+        ],
+        "facts": [
+          "The ability of the eye lens to change its focal length is called the power of accommodation.",
+          "In a bifocal lens the upper part corrects distant vision and the lower part near vision."
+        ]
+      },
+      "hi": {
+        "q": "जरा-दूरदृष्टिता (प्रेसबायोपिया), जिसमें वृद्ध व्यक्ति को पास की वस्तुएँ स्पष्ट देखने में कठिनाई होती है, मुख्यतः किस कारण होती है?",
+        "options": [
+          "नेत्र-गोलक के लंबा हो जाने से",
+          "प्रोटीन के टूटने से नेत्र लेंस के धुंधला हो जाने से",
+          "नेत्र के भीतर बढ़े दाब से दृक्-तंत्रिका की क्षति से",
+          "आयु के साथ पक्ष्माभी (सिलियरी) पेशियों के क्रमशः दुर्बल होने और नेत्र लेंस का लचीलापन घटने से"
+        ],
+        "explanation": "आयु बढ़ने पर पक्ष्माभी पेशियाँ दुर्बल हो जाती हैं और नेत्र लेंस का लचीलापन घट जाता है, जिससे पास की वस्तुओं के लिए समंजन क्षमता घटती है और निकट बिंदु दूर खिसक जाता है। इसे सामान्यतः उत्तल लेंस से, और साथ में निकट-दृष्टि दोष भी हो तो द्विफ़ोकसी लेंस से ठीक किया जाता है।",
+        "notes": [
+          "नेत्र-गोलक का लंबा होना: निकट-दृष्टि दोष (मायोपिया) का कारण।",
+          "लेंस का धुंधला होना: यह मोतियाबिंद है।",
+          "बढ़े नेत्र-दाब से दृक्-तंत्रिका की क्षति: यह ग्लूकोमा है।",
+          "दुर्बल पक्ष्माभी पेशियाँ और कठोर लेंस: सही; यही जरा-दूरदृष्टिता है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "मानव नेत्र",
+          "दृष्टि दोष",
+          "जरा-दूरदृष्टिता"
+        ],
+        "facts": [
+          "नेत्र लेंस की अपनी फ़ोकस दूरी बदलने की क्षमता को समंजन क्षमता कहते हैं।",
+          "द्विफ़ोकसी लेंस का ऊपरी भाग दूर की और निचला भाग पास की दृष्टि ठीक करता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 241
+        },
+        {
+          "book": "fatman",
+          "page": 240
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-042",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "For a young adult with normal vision, the least distance of distinct vision (near point) is about:",
+        "options": [
+          "2.5 cm",
+          "25 cm",
+          "25 m",
+          "Infinity"
+        ],
+        "explanation": "A normal eye can focus clearly on objects as close as about 25 cm; any closer and the ciliary muscles cannot make the lens thick enough. This distance is called the least distance of distinct vision or the near point.",
+        "notes": [
+          "2.5 cm: far too close; the eye cannot focus at this distance.",
+          "25 cm: correct; the standard near point of a normal eye.",
+          "25 m: objects at this distance are easily seen; it is not a limit.",
+          "Infinity: this is the far point of a normal eye."
+        ],
+        "path": [
+          "Physics",
+          "Human eye",
+          "Range of vision"
+        ],
+        "facts": [
+          "The far point of a normal eye is at infinity.",
+          "In hypermetropia the near point moves farther than 25 cm."
+        ]
+      },
+      "hi": {
+        "q": "सामान्य दृष्टि वाले युवा वयस्क के लिए स्पष्ट दृष्टि की न्यूनतम दूरी (निकट बिंदु) लगभग कितनी होती है?",
+        "options": [
+          "2.5 सेमी",
+          "25 सेमी",
+          "25 मी",
+          "अनंत"
+        ],
+        "explanation": "सामान्य नेत्र लगभग 25 सेमी तक निकट रखी वस्तुओं को स्पष्ट देख सकता है; इससे पास आने पर पक्ष्माभी पेशियाँ लेंस को पर्याप्त मोटा नहीं कर पातीं। यह दूरी स्पष्ट दृष्टि की न्यूनतम दूरी या निकट बिंदु कहलाती है।",
+        "notes": [
+          "2.5 सेमी: बहुत निकट; नेत्र इस दूरी पर फ़ोकस नहीं कर सकता।",
+          "25 सेमी: सही; सामान्य नेत्र का मानक निकट बिंदु।",
+          "25 मी: इस दूरी की वस्तुएँ सरलता से दिखती हैं; यह कोई सीमा नहीं है।",
+          "अनंत: यह सामान्य नेत्र का दूर बिंदु है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "मानव नेत्र",
+          "दृष्टि का परास"
+        ],
+        "facts": [
+          "सामान्य नेत्र का दूर बिंदु अनंत पर होता है।",
+          "दूर-दृष्टि दोष में निकट बिंदु 25 सेमी से अधिक दूर चला जाता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 240
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'The Human Eye and the Colourful World'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-043",
+      "level": "TGT",
+      "answer": 3,
+      "en": {
+        "q": "According to Ohm's law, at constant temperature the current through a metallic conductor is directly proportional to:",
+        "options": [
+          "The resistance of the conductor",
+          "The length of the conductor",
+          "The temperature of the conductor",
+          "The potential difference across its ends"
+        ],
+        "explanation": "Ohm's law states that, other physical conditions such as temperature remaining the same, the current I through a conductor is directly proportional to the potential difference V across it, i.e. V = IR.",
+        "notes": [
+          "Resistance: current is inversely, not directly, proportional to resistance.",
+          "Length: it is resistance, not current, that is proportional to length.",
+          "Temperature: must be kept constant for the law to hold; a metal's resistance rises with temperature.",
+          "Potential difference: correct; I ∝ V."
+        ],
+        "path": [
+          "Physics",
+          "Electricity",
+          "Ohm's law"
+        ],
+        "facts": [
+          "Ohm's law was published by Georg Simon Ohm in 1827.",
+          "The SI unit of resistance is the ohm (Ω); 1 Ω = 1 V/A."
+        ]
+      },
+      "hi": {
+        "q": "ओम के नियम के अनुसार, नियत ताप पर किसी धात्विक चालक से प्रवाहित धारा किसके अनुक्रमानुपाती होती है?",
+        "options": [
+          "चालक का प्रतिरोध",
+          "चालक की लंबाई",
+          "चालक का ताप",
+          "चालक के सिरों के बीच विभवांतर"
+        ],
+        "explanation": "ओम के नियम के अनुसार, ताप जैसी अन्य भौतिक दशाएँ समान रहने पर किसी चालक से प्रवाहित धारा I उसके सिरों के बीच विभवांतर V के अनुक्रमानुपाती होती है, अर्थात् V = IR।",
+        "notes": [
+          "प्रतिरोध: धारा प्रतिरोध के व्युत्क्रमानुपाती होती है, अनुक्रमानुपाती नहीं।",
+          "लंबाई: लंबाई के अनुक्रमानुपाती प्रतिरोध होता है, धारा नहीं।",
+          "ताप: नियम लागू होने के लिए ताप नियत रहना चाहिए; ताप बढ़ने पर धातु का प्रतिरोध बढ़ता है।",
+          "विभवांतर: सही; I ∝ V।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत",
+          "ओम का नियम"
+        ],
+        "facts": [
+          "ओम का नियम जॉर्ज साइमन ओम ने 1827 में प्रकाशित किया।",
+          "प्रतिरोध का SI मात्रक ओम (Ω) है; 1 Ω = 1 V/A।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 244
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Electricity'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-044",
+      "level": "PGT",
+      "answer": 2,
+      "en": {
+        "q": "A uniform wire of resistance R is stretched until its length is doubled, its volume remaining the same. What is its new resistance?",
+        "options": [
+          "2R",
+          "R/2",
+          "4R",
+          "R/4"
+        ],
+        "explanation": "R = ρL/A. Doubling the length at constant volume halves the cross-sectional area, so the new resistance is ρ(2L)/(A/2) = 4ρL/A = 4R. The resistivity ρ does not change because the material is the same.",
+        "notes": [
+          "2R: considers only the doubled length and forgets that the area halves.",
+          "R/2: resistance increases when a wire is made longer and thinner.",
+          "4R: correct; length ×2 and area ÷2.",
+          "R/4: the change has been inverted."
+        ],
+        "path": [
+          "Physics",
+          "Electricity",
+          "Resistance",
+          "Factors affecting resistance"
+        ],
+        "facts": [
+          "Resistance is directly proportional to length and inversely proportional to the area of cross-section.",
+          "Resistivity depends on the material and temperature, not on the wire's shape."
+        ]
+      },
+      "hi": {
+        "q": "R प्रतिरोध वाले एक समान तार को खींचकर उसकी लंबाई दोगुनी कर दी जाती है, जबकि उसका आयतन वही रहता है। उसका नया प्रतिरोध क्या होगा?",
+        "options": [
+          "2R",
+          "R/2",
+          "4R",
+          "R/4"
+        ],
+        "explanation": "R = ρL/A। नियत आयतन पर लंबाई दोगुनी करने से अनुप्रस्थ-काट का क्षेत्रफल आधा हो जाता है, अतः नया प्रतिरोध ρ(2L)/(A/2) = 4ρL/A = 4R होगा। पदार्थ वही रहने से प्रतिरोधकता ρ नहीं बदलती।",
+        "notes": [
+          "2R: केवल दोगुनी लंबाई ली गई, क्षेत्रफल का आधा होना भुला दिया गया।",
+          "R/2: तार को लंबा और पतला करने पर प्रतिरोध बढ़ता है, घटता नहीं।",
+          "4R: सही; लंबाई ×2 और क्षेत्रफल ÷2।",
+          "R/4: परिवर्तन को उल्टा कर दिया गया।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत",
+          "प्रतिरोध",
+          "प्रतिरोध को प्रभावित करने वाले कारक"
+        ],
+        "facts": [
+          "प्रतिरोध लंबाई के अनुक्रमानुपाती और अनुप्रस्थ-काट के क्षेत्रफल के व्युत्क्रमानुपाती होता है।",
+          "प्रतिरोधकता पदार्थ और ताप पर निर्भर करती है, तार के आकार पर नहीं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 244
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Electricity'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-045",
+      "level": "PGT",
+      "answer": 3,
+      "en": {
+        "q": "Consider the following statements:\n1. Household appliances are connected in parallel so that each receives the full mains voltage.\n2. In a series circuit, the same current flows through every resistor.\n3. The equivalent resistance of resistors connected in parallel is greater than the largest individual resistance.\nWhich of the above is/are correct?",
+        "options": [
+          "Only 1",
+          "2 and 3 only",
+          "1, 2 and 3",
+          "1 and 2 only"
+        ],
+        "explanation": "In parallel each branch gets the same voltage and can be switched independently, which is why homes use parallel wiring. In series there is a single path, so the current is the same everywhere. The equivalent resistance of a parallel combination is less than the smallest resistance, so statement 3 is wrong.",
+        "notes": [
+          "Only 1: statement 2 is also correct.",
+          "2 and 3 only: statement 3 is wrong and statement 1 is right.",
+          "1, 2 and 3: wrong because statement 3 is false.",
+          "1 and 2 only: correct."
+        ],
+        "path": [
+          "Physics",
+          "Electricity",
+          "Series and parallel circuits"
+        ],
+        "facts": [
+          "Series: R = R₁ + R₂ + …; parallel: 1/R = 1/R₁ + 1/R₂ + …",
+          "Household mains supply in India is AC at 50 Hz; NCERT gives its voltage as 220 V."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. घरेलू विद्युत उपकरण पार्श्वक्रम (समांतर) में जोड़े जाते हैं ताकि प्रत्येक को पूरी मुख्य वोल्टता मिले।\n2. श्रेणीक्रम परिपथ में प्रत्येक प्रतिरोधक से समान धारा प्रवाहित होती है।\n3. पार्श्वक्रम में जुड़े प्रतिरोधकों का तुल्य प्रतिरोध सबसे बड़े एकल प्रतिरोध से भी अधिक होता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 1",
+          "केवल 2 और 3",
+          "1, 2 और 3",
+          "केवल 1 और 2"
+        ],
+        "explanation": "पार्श्वक्रम में प्रत्येक शाखा को समान वोल्टता मिलती है और उसे अलग से चालू-बंद किया जा सकता है, इसलिए घरों में पार्श्वक्रम वायरिंग होती है। श्रेणीक्रम में एक ही पथ होने से धारा सर्वत्र समान रहती है। पार्श्वक्रम संयोजन का तुल्य प्रतिरोध सबसे छोटे प्रतिरोध से भी कम होता है, अतः कथन 3 गलत है।",
+        "notes": [
+          "केवल 1: कथन 2 भी सही है।",
+          "केवल 2 और 3: कथन 3 गलत है और कथन 1 सही है।",
+          "1, 2 और 3: कथन 3 गलत होने से यह विकल्प गलत है।",
+          "केवल 1 और 2: सही।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत",
+          "श्रेणीक्रम और पार्श्वक्रम परिपथ"
+        ],
+        "facts": [
+          "श्रेणीक्रम: R = R₁ + R₂ + …; पार्श्वक्रम: 1/R = 1/R₁ + 1/R₂ + …",
+          "भारत में घरेलू मुख्य आपूर्ति 50 Hz की प्रत्यावर्ती धारा है; NCERT के अनुसार इसकी वोल्टता 220 V है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 245
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Electricity'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-046",
+      "level": "TGT",
+      "answer": 2,
+      "en": {
+        "q": "Which material is commonly used for the heating element of electric heaters and electric irons?",
+        "options": [
+          "Copper",
+          "Tungsten",
+          "Nichrome",
+          "Aluminium"
+        ],
+        "explanation": "Nichrome, an alloy mainly of nickel and chromium, has high resistivity and does not oxidise readily at high temperatures, so it can glow red-hot for long periods without burning away.",
+        "notes": [
+          "Copper: very low resistivity; used for connecting wires.",
+          "Tungsten: very high melting point; used for filaments of incandescent bulbs.",
+          "Nichrome: correct; high resistivity and resistance to oxidation.",
+          "Aluminium: light and a good conductor; used in power transmission lines."
+        ],
+        "path": [
+          "Physics",
+          "Electricity",
+          "Heating effect of current"
+        ],
+        "facts": [
+          "Heat produced in a resistor: H = I²Rt (Joule's law of heating).",
+          "Alloys generally have higher resistivity than their constituent metals."
+        ]
+      },
+      "hi": {
+        "q": "विद्युत हीटर और विद्युत इस्त्री के तापन-अवयव में सामान्यतः किस पदार्थ का प्रयोग होता है?",
+        "options": [
+          "ताँबा",
+          "टंगस्टन",
+          "नाइक्रोम",
+          "ऐलुमिनियम"
+        ],
+        "explanation": "नाइक्रोम, जो मुख्यतः निकेल और क्रोमियम की मिश्रधातु है, उच्च प्रतिरोधकता वाला है और उच्च ताप पर सरलता से ऑक्सीकृत नहीं होता; इसलिए यह लंबे समय तक रक्त-तप्त रहकर भी नष्ट नहीं होता।",
+        "notes": [
+          "ताँबा: बहुत कम प्रतिरोधकता; संयोजक तारों में प्रयोग।",
+          "टंगस्टन: बहुत उच्च गलनांक; तापदीप्त बल्बों के तंतु में प्रयोग।",
+          "नाइक्रोम: सही; उच्च प्रतिरोधकता और ऑक्सीकरण-रोधी।",
+          "ऐलुमिनियम: हल्का और अच्छा चालक; विद्युत संचरण लाइनों में प्रयोग।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत",
+          "विद्युत धारा का तापीय प्रभाव"
+        ],
+        "facts": [
+          "प्रतिरोधक में उत्पन्न ऊष्मा: H = I²Rt (जूल का तापन नियम)।",
+          "मिश्रधातुओं की प्रतिरोधकता सामान्यतः उनकी घटक धातुओं से अधिक होती है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 246
+        },
+        {
+          "book": "fatman",
+          "page": 245
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Electricity'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-047",
+      "level": "Higher",
+      "answer": 1,
+      "en": {
+        "q": "Assertion (A): An electric fuse is connected in series with the circuit or appliance it protects.\nReason (R): A fuse wire is made of a material with a low melting point.",
+        "options": [
+          "Both A and R are true, and R is the correct explanation of A",
+          "Both A and R are true, but R is not the correct explanation of A",
+          "A is true, but R is false",
+          "A is false, but R is true"
+        ],
+        "explanation": "A fuse is placed in series so that the whole current of the circuit must pass through it; if the current becomes too large, the fuse melts and breaks the circuit. Its low melting point explains why it melts quickly, but it is the need to carry the full current, not the melting point, that decides the series connection. So both are true, but R does not explain A.",
+        "notes": [
+          "Wrong: the low melting point explains how a fuse acts, not why it is wired in series.",
+          "Correct: both statements are true, but R is not the reason for A.",
+          "Wrong: fuse wires are indeed made of low-melting-point material.",
+          "Wrong: a fuse in parallel would be useless, so A is true."
+        ],
+        "path": [
+          "Physics",
+          "Electricity",
+          "Domestic circuits",
+          "Fuse"
+        ],
+        "facts": [
+          "A fuse protects against overloading and short circuits.",
+          "In house wiring, the earth wire usually has green insulation, the live wire red and the neutral black."
+        ]
+      },
+      "hi": {
+        "q": "कथन (A): विद्युत फ़्यूज़ को उस परिपथ या उपकरण के साथ श्रेणीक्रम में जोड़ा जाता है जिसकी वह रक्षा करता है।\nकारण (R): फ़्यूज़ तार कम गलनांक वाले पदार्थ से बना होता है।",
+        "options": [
+          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+          "कथन (A) सही है, परंतु कारण (R) गलत है",
+          "कथन (A) गलत है, परंतु कारण (R) सही है"
+        ],
+        "explanation": "फ़्यूज़ को श्रेणीक्रम में इसलिए लगाया जाता है कि परिपथ की पूरी धारा उससे होकर गुज़रे; धारा बहुत अधिक होने पर फ़्यूज़ पिघलकर परिपथ तोड़ देता है। कम गलनांक यह बताता है कि वह जल्दी क्यों पिघलता है, पर श्रेणीक्रम संयोजन पूरी धारा वहन करने की आवश्यकता से तय होता है, गलनांक से नहीं। अतः दोनों सही हैं, पर (R), (A) की व्याख्या नहीं है।",
+        "notes": [
+          "गलत: कम गलनांक फ़्यूज़ के कार्य करने का ढंग बताता है, श्रेणीक्रम में लगाने का कारण नहीं।",
+          "सही: दोनों कथन सही हैं, पर (R), (A) का कारण नहीं है।",
+          "गलत: फ़्यूज़ तार वास्तव में कम गलनांक वाले पदार्थ से बनता है।",
+          "गलत: पार्श्वक्रम में लगा फ़्यूज़ व्यर्थ होगा, अतः (A) सही है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत",
+          "घरेलू परिपथ",
+          "फ़्यूज़"
+        ],
+        "facts": [
+          "फ़्यूज़ अतिभारण और लघुपथन (शॉर्ट सर्किट) से रक्षा करता है।",
+          "घरेलू वायरिंग में भू-तार पर प्रायः हरा, विद्युन्मय (लाइव) तार पर लाल और उदासीन तार पर काला विद्युतरोधी आवरण होता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 246
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Electricity'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-048",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "A 1.5 kW electric heater is used for 2 hours every day for 30 days. If electricity costs ₹5 per unit, what is the cost of the energy consumed?",
+        "options": [
+          "₹450",
+          "₹45",
+          "₹150",
+          "₹900"
+        ],
+        "explanation": "Energy = power × time = 1.5 kW × 2 h × 30 = 90 kWh. One 'unit' of electricity is 1 kWh, so the cost is 90 × ₹5 = ₹450.",
+        "notes": [
+          "₹450: correct; 90 units at ₹5.",
+          "₹45: one-tenth of the correct amount, a decimal slip.",
+          "₹150: assumes only 1 unit a day for 30 days.",
+          "₹900: double the correct amount, as if the heater ran 4 hours daily."
+        ],
+        "path": [
+          "Physics",
+          "Electricity",
+          "Electrical energy and power"
+        ],
+        "facts": [
+          "1 unit = 1 kWh = 3.6 × 10⁶ J.",
+          "Electric power P = VI = I²R = V²/R; its SI unit is the watt."
+        ]
+      },
+      "hi": {
+        "q": "1.5 kW का एक विद्युत हीटर 30 दिनों तक प्रतिदिन 2 घंटे चलाया जाता है। यदि बिजली का मूल्य ₹5 प्रति यूनिट हो, तो खर्च हुई ऊर्जा का मूल्य कितना होगा?",
+        "options": [
+          "₹450",
+          "₹45",
+          "₹150",
+          "₹900"
+        ],
+        "explanation": "ऊर्जा = शक्ति × समय = 1.5 kW × 2 घंटे × 30 = 90 kWh। बिजली की एक 'यूनिट' 1 kWh होती है, अतः मूल्य 90 × ₹5 = ₹450।",
+        "notes": [
+          "₹450: सही; ₹5 की दर से 90 यूनिट।",
+          "₹45: सही राशि का दसवाँ भाग, दशमलव की भूल।",
+          "₹150: मान लिया गया कि 30 दिनों तक प्रतिदिन केवल 1 यूनिट खर्च हुई।",
+          "₹900: सही राशि का दोगुना, मानो हीटर प्रतिदिन 4 घंटे चला हो।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत",
+          "विद्युत ऊर्जा और शक्ति"
+        ],
+        "facts": [
+          "1 यूनिट = 1 kWh = 3.6 × 10⁶ J।",
+          "विद्युत शक्ति P = VI = I²R = V²/R; इसका SI मात्रक वाट है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 246
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Electricity'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-049",
+      "level": "TGT",
+      "answer": 1,
+      "en": {
+        "q": "Who discovered in 1820 that an electric current flowing in a wire deflects a nearby magnetic compass needle?",
+        "options": [
+          "Michael Faraday",
+          "Hans Christian Oersted",
+          "André-Marie Ampère",
+          "James Clerk Maxwell"
+        ],
+        "explanation": "The Danish scientist Hans Christian Oersted noticed in 1820 that a compass needle near a current-carrying wire was deflected. This showed for the first time that electricity and magnetism are linked.",
+        "notes": [
+          "Michael Faraday: discovered electromagnetic induction in 1831.",
+          "Hans Christian Oersted: correct; discovered the magnetic effect of electric current.",
+          "André-Marie Ampère: studied forces between currents; the unit of current is named after him.",
+          "James Clerk Maxwell: gave the equations unifying electricity, magnetism and light."
+        ],
+        "path": [
+          "Physics",
+          "Magnetic effects of current",
+          "Oersted's discovery"
+        ],
+        "facts": [
+          "The CGS unit of magnetic field strength (magnetising field) is named the oersted.",
+          "The field around a straight current-carrying wire forms concentric circles."
+        ]
+      },
+      "hi": {
+        "q": "1820 में किसने यह खोजा कि तार में प्रवाहित विद्युत धारा पास रखी चुंबकीय कम्पास-सुई को विक्षेपित कर देती है?",
+        "options": [
+          "माइकल फ़ैराडे",
+          "हैंस क्रिश्चियन ओर्स्टेड",
+          "आंद्रे-मारी ऐम्पियर",
+          "जेम्स क्लर्क मैक्सवेल"
+        ],
+        "explanation": "डेनमार्क के वैज्ञानिक हैंस क्रिश्चियन ओर्स्टेड ने 1820 में देखा कि धारावाही तार के पास रखी कम्पास-सुई विक्षेपित हो जाती है। इससे पहली बार सिद्ध हुआ कि विद्युत और चुंबकत्व परस्पर संबंधित हैं।",
+        "notes": [
+          "माइकल फ़ैराडे: 1831 में विद्युत-चुंबकीय प्रेरण की खोज की।",
+          "हैंस क्रिश्चियन ओर्स्टेड: सही; विद्युत धारा के चुंबकीय प्रभाव की खोज की।",
+          "आंद्रे-मारी ऐम्पियर: धाराओं के बीच बलों का अध्ययन किया; धारा का मात्रक उनके नाम पर है।",
+          "जेम्स क्लर्क मैक्सवेल: विद्युत, चुंबकत्व और प्रकाश को एकीकृत करने वाले समीकरण दिए।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत धारा के चुंबकीय प्रभाव",
+          "ओर्स्टेड की खोज"
+        ],
+        "facts": [
+          "चुंबकन क्षेत्र की तीव्रता का CGS मात्रक ओर्स्टेड उनके नाम पर है।",
+          "सीधे धारावाही तार के चारों ओर चुंबकीय क्षेत्र संकेंद्री वृत्तों के रूप में होता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 247
+        },
+        {
+          "book": "special-topics",
+          "page": 29
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Magnetic Effects of Electric Current'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-050",
+      "level": "Higher",
+      "answer": 3,
+      "en": {
+        "q": "Match List-I with List-II:\nList-I: A. Direction of force on a current-carrying conductor placed in a magnetic field B. Direction of induced current in a generator C. Direction of magnetic field around a straight current-carrying wire D. Discovery of electromagnetic induction (1831)\nList-II: 1. Fleming's right-hand rule 2. Michael Faraday 3. Fleming's left-hand rule 4. Right-hand thumb rule",
+        "options": [
+          "A-1, B-3, C-4, D-2",
+          "A-3, B-4, C-1, D-2",
+          "A-4, B-1, C-3, D-2",
+          "A-3, B-1, C-4, D-2"
+        ],
+        "explanation": "Fleming's left-hand rule gives the force on a current in a magnetic field (the motor principle), while Fleming's right-hand rule gives the direction of induced current (the generator principle). The right-hand thumb rule gives the sense of the circular field around a straight wire, and Faraday discovered electromagnetic induction in 1831.",
+        "notes": [
+          "Wrong: the left-hand rule is for force (motors) and the right-hand rule for induced current (generators), not the reverse.",
+          "Wrong: the induced current uses Fleming's right-hand rule, and the thumb rule is for the field around a wire.",
+          "Wrong: the force on a conductor is given by Fleming's left-hand rule, not the thumb rule.",
+          "Correct: A-3, B-1, C-4, D-2."
+        ],
+        "path": [
+          "Physics",
+          "Magnetic effects of current",
+          "Rules and laws"
+        ],
+        "facts": [
+          "An electric motor converts electrical energy into mechanical energy; a generator does the reverse.",
+          "The force on a conductor is greatest when the current is at right angles to the magnetic field."
+        ]
+      },
+      "hi": {
+        "q": "सूची-I को सूची-II से सुमेलित कीजिए:\nसूची-I: A. चुंबकीय क्षेत्र में रखे धारावाही चालक पर लगने वाले बल की दिशा B. जनित्र में प्रेरित धारा की दिशा C. सीधे धारावाही तार के चारों ओर चुंबकीय क्षेत्र की दिशा D. विद्युत-चुंबकीय प्रेरण की खोज (1831)\nसूची-II: 1. फ़्लेमिंग का दक्षिण-हस्त नियम 2. माइकल फ़ैराडे 3. फ़्लेमिंग का वाम-हस्त नियम 4. दक्षिण-हस्त अंगुष्ठ नियम",
+        "options": [
+          "A-1, B-3, C-4, D-2",
+          "A-3, B-4, C-1, D-2",
+          "A-4, B-1, C-3, D-2",
+          "A-3, B-1, C-4, D-2"
+        ],
+        "explanation": "फ़्लेमिंग का वाम-हस्त नियम चुंबकीय क्षेत्र में धारा पर लगने वाला बल (मोटर का सिद्धांत) बताता है, जबकि फ़्लेमिंग का दक्षिण-हस्त नियम प्रेरित धारा की दिशा (जनित्र का सिद्धांत) बताता है। दक्षिण-हस्त अंगुष्ठ नियम सीधे तार के चारों ओर वृत्ताकार क्षेत्र की दिशा देता है, और फ़ैराडे ने 1831 में विद्युत-चुंबकीय प्रेरण की खोज की।",
+        "notes": [
+          "गलत: वाम-हस्त नियम बल (मोटर) के लिए और दक्षिण-हस्त नियम प्रेरित धारा (जनित्र) के लिए है, उल्टा नहीं।",
+          "गलत: प्रेरित धारा के लिए फ़्लेमिंग का दक्षिण-हस्त नियम है, और अंगुष्ठ नियम तार के चारों ओर क्षेत्र के लिए।",
+          "गलत: चालक पर बल फ़्लेमिंग के वाम-हस्त नियम से मिलता है, अंगुष्ठ नियम से नहीं।",
+          "सही: A-3, B-1, C-4, D-2।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत धारा के चुंबकीय प्रभाव",
+          "नियम"
+        ],
+        "facts": [
+          "विद्युत मोटर विद्युत ऊर्जा को यांत्रिक ऊर्जा में बदलती है; जनित्र इसका उल्टा करता है।",
+          "धारा और चुंबकीय क्षेत्र परस्पर लंबवत हों तो चालक पर बल अधिकतम होता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 248
+        },
+        {
+          "book": "fatman",
+          "page": 247
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Magnetic Effects of Electric Current'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-051",
+      "level": "PGT",
+      "answer": 2,
+      "en": {
+        "q": "Consider the following statements about magnetic field lines:\n1. Outside a bar magnet, field lines go from the north pole to the south pole.\n2. Magnetic field lines are closed curves.\n3. Two magnetic field lines can cross each other where the field is very strong.\nWhich of the above is/are correct?",
+        "options": [
+          "Only 1",
+          "2 and 3 only",
+          "1 and 2 only",
+          "1, 2 and 3"
+        ],
+        "explanation": "Field lines leave the north pole and enter the south pole outside the magnet, and continue from south to north inside it, forming closed loops. They never intersect, because at a crossing point the field would have two directions at once. A strong field is shown by lines lying closer together, not by lines crossing.",
+        "notes": [
+          "Only 1: statement 2 is also correct.",
+          "2 and 3 only: statement 3 is wrong and statement 1 is right.",
+          "1 and 2 only: correct.",
+          "1, 2 and 3: wrong because field lines never cross."
+        ],
+        "path": [
+          "Physics",
+          "Magnetism",
+          "Magnetic field lines"
+        ],
+        "facts": [
+          "The crowding of field lines shows where the field is strongest, e.g. near the poles.",
+          "Like poles repel and unlike poles attract."
+        ]
+      },
+      "hi": {
+        "q": "चुंबकीय क्षेत्र रेखाओं के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. छड़ चुंबक के बाहर क्षेत्र रेखाएँ उत्तरी ध्रुव से दक्षिणी ध्रुव की ओर जाती हैं।\n2. चुंबकीय क्षेत्र रेखाएँ बंद वक्र होती हैं।\n3. जहाँ क्षेत्र बहुत प्रबल हो, वहाँ दो चुंबकीय क्षेत्र रेखाएँ एक-दूसरे को काट सकती हैं।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+        "options": [
+          "केवल 1",
+          "केवल 2 और 3",
+          "केवल 1 और 2",
+          "1, 2 और 3"
+        ],
+        "explanation": "चुंबक के बाहर क्षेत्र रेखाएँ उत्तरी ध्रुव से निकलकर दक्षिणी ध्रुव में प्रवेश करती हैं और चुंबक के भीतर दक्षिण से उत्तर की ओर चलकर बंद लूप बनाती हैं। ये कभी एक-दूसरे को नहीं काटतीं, क्योंकि कटान-बिंदु पर क्षेत्र की एक साथ दो दिशाएँ होंगी। प्रबल क्षेत्र रेखाओं के पास-पास होने से दिखता है, कटने से नहीं।",
+        "notes": [
+          "केवल 1: कथन 2 भी सही है।",
+          "केवल 2 और 3: कथन 3 गलत है और कथन 1 सही है।",
+          "केवल 1 और 2: सही।",
+          "1, 2 और 3: क्षेत्र रेखाएँ कभी नहीं कटतीं, अतः गलत।"
+        ],
+        "path": [
+          "भौतिकी",
+          "चुंबकत्व",
+          "चुंबकीय क्षेत्र रेखाएँ"
+        ],
+        "facts": [
+          "क्षेत्र रेखाओं की सघनता बताती है कि क्षेत्र कहाँ सबसे प्रबल है, जैसे ध्रुवों के पास।",
+          "सजातीय ध्रुव प्रतिकर्षित और विजातीय ध्रुव आकर्षित करते हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 247
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Magnetic Effects of Electric Current'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-052",
+      "level": "PGT",
+      "answer": 0,
+      "en": {
+        "q": "The core of an electromagnet is generally made of soft iron because soft iron:",
+        "options": [
+          "Becomes strongly magnetised while current flows and loses most of its magnetism when the current is switched off",
+          "Keeps its magnetism permanently after the current is switched off",
+          "Is a non-magnetic material",
+          "Does not conduct electricity"
+        ],
+        "explanation": "An electromagnet is meant to be a temporary magnet that can be switched on and off. Soft iron is easily and strongly magnetised by the field of the coil, greatly strengthening it, and it loses nearly all of that magnetism once the current stops.",
+        "notes": [
+          "Strong temporary magnetisation: correct; this is exactly what an electromagnet needs.",
+          "Permanent magnetism: a property of hardened steel, used for permanent magnets.",
+          "Non-magnetic: wrong; iron is a strongly magnetic (ferromagnetic) material.",
+          "Does not conduct: wrong; iron conducts electricity, and this is not why it is used."
+        ],
+        "path": [
+          "Physics",
+          "Magnetic effects of current",
+          "Electromagnet"
+        ],
+        "facts": [
+          "The field inside a long current-carrying solenoid is nearly uniform.",
+          "Electromagnets are used in electric bells, cranes for lifting scrap and relays."
+        ]
+      },
+      "hi": {
+        "q": "विद्युत-चुंबक का क्रोड सामान्यतः नर्म लोहे का बनाया जाता है, क्योंकि नर्म लोहा:",
+        "options": [
+          "धारा बहने पर प्रबल रूप से चुंबकित हो जाता है और धारा बंद होने पर अपना अधिकांश चुंबकत्व खो देता है",
+          "धारा बंद होने के बाद भी स्थायी रूप से चुंबकत्व बनाए रखता है",
+          "एक अचुंबकीय पदार्थ है",
+          "विद्युत का चालन नहीं करता"
+        ],
+        "explanation": "विद्युत-चुंबक एक अस्थायी चुंबक होता है जिसे चालू-बंद किया जा सके। नर्म लोहा कुंडली के क्षेत्र से सरलता से और प्रबल रूप से चुंबकित होकर उसे बहुत शक्तिशाली बना देता है, और धारा रुकते ही लगभग सारा चुंबकत्व खो देता है।",
+        "notes": [
+          "प्रबल अस्थायी चुंबकन: सही; विद्युत-चुंबक के लिए ठीक यही आवश्यक है।",
+          "स्थायी चुंबकत्व: यह कठोर इस्पात का गुण है, जिससे स्थायी चुंबक बनते हैं।",
+          "अचुंबकीय: गलत; लोहा प्रबल चुंबकीय (लौहचुंबकीय) पदार्थ है।",
+          "चालन नहीं करता: गलत; लोहा विद्युत चालक है, और यह इसके प्रयोग का कारण नहीं है।"
+        ],
+        "path": [
+          "भौतिकी",
+          "विद्युत धारा के चुंबकीय प्रभाव",
+          "विद्युत-चुंबक"
+        ],
+        "facts": [
+          "लंबी धारावाही परिनालिका के भीतर चुंबकीय क्षेत्र लगभग एकसमान होता है।",
+          "विद्युत-चुंबक बिजली की घंटी, कबाड़ उठाने वाली क्रेन और रिले में प्रयोग होते हैं।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 248
+        },
+        {
+          "source": "NCERT Class 10 Science, chapter 'Magnetic Effects of Electric Current'"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-053",
+      "level": "Higher",
+      "answer": 1,
+      "en": {
+        "q": "Match List-I (instrument) with List-II (what it measures):\nList-I: A. Hygrometer B. Pyrometer C. Fathometer D. Anemometer\nList-II: 1. Speed of wind 2. Depth of the sea 3. Very high temperatures 4. Relative humidity of the air",
+        "options": [
+          "A-3, B-4, C-2, D-1",
+          "A-4, B-3, C-2, D-1",
+          "A-4, B-2, C-3, D-1",
+          "A-1, B-3, C-2, D-4"
+        ],
+        "explanation": "A hygrometer measures the relative humidity of air, a pyrometer measures very high temperatures such as those of furnaces, a fathometer (echo sounder) measures sea depth using sound echoes, and an anemometer measures wind speed.",
+        "notes": [
+          "Wrong: a hygrometer measures humidity and a pyrometer measures high temperature, not the reverse.",
+          "Correct: A-4, B-3, C-2, D-1.",
+          "Wrong: a pyrometer measures temperature and a fathometer measures depth, not the reverse.",
+          "Wrong: a hygrometer measures humidity and an anemometer measures wind speed, not the reverse."
+        ],
+        "path": [
+          "Physics",
+          "Units and instruments",
+          "Measuring instruments"
+        ],
+        "facts": [
+          "A fathometer works on the same echo principle as SONAR.",
+          "A barometer measures atmospheric pressure and an altimeter measures altitude."
+        ]
+      },
+      "hi": {
+        "q": "सूची-I (यंत्र) को सूची-II (मापी जाने वाली राशि) से सुमेलित कीजिए:\nसूची-I: A. हाइग्रोमीटर B. पाइरोमीटर C. फ़ैदोमीटर D. एनीमोमीटर\nसूची-II: 1. पवन की गति 2. समुद्र की गहराई 3. अत्यधिक उच्च ताप 4. वायु की आपेक्षिक आर्द्रता",
+        "options": [
+          "A-3, B-4, C-2, D-1",
+          "A-4, B-3, C-2, D-1",
+          "A-4, B-2, C-3, D-1",
+          "A-1, B-3, C-2, D-4"
+        ],
+        "explanation": "हाइग्रोमीटर वायु की आपेक्षिक आर्द्रता, पाइरोमीटर भट्टी जैसे अत्यधिक उच्च ताप, फ़ैदोमीटर (प्रतिध्वनि-गहराईमापी) ध्वनि की प्रतिध्वनि से समुद्र की गहराई और एनीमोमीटर पवन की गति मापता है।",
+        "notes": [
+          "गलत: हाइग्रोमीटर आर्द्रता और पाइरोमीटर उच्च ताप मापता है, उल्टा नहीं।",
+          "सही: A-4, B-3, C-2, D-1।",
+          "गलत: पाइरोमीटर ताप और फ़ैदोमीटर गहराई मापता है, उल्टा नहीं।",
+          "गलत: हाइग्रोमीटर आर्द्रता और एनीमोमीटर पवन-गति मापता है, उल्टा नहीं।"
+        ],
+        "path": [
+          "भौतिकी",
+          "मात्रक एवं यंत्र",
+          "मापक यंत्र"
+        ],
+        "facts": [
+          "फ़ैदोमीटर सोनार की भाँति प्रतिध्वनि के सिद्धांत पर कार्य करता है।",
+          "बैरोमीटर वायुमंडलीय दाब और अल्टीमीटर ऊँचाई मापता है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "special-topics",
+          "page": 261
+        },
+        {
+          "book": "special-topics",
+          "page": 262
+        },
+        {
+          "book": "special-topics",
+          "page": 260
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-054",
+      "level": "PGT",
+      "answer": 2,
+      "en": {
+        "q": "Which of the following pairs of instrument and measured quantity is NOT correctly matched?",
+        "options": [
+          "Ammeter – electric current",
+          "Barometer – atmospheric pressure",
+          "Hydrometer – relative humidity of the air",
+          "Manometer – pressure of a gas"
+        ],
+        "explanation": "A hydrometer, which works on Archimedes' principle, measures the density (relative density) of liquids. The relative humidity of air is measured by a hygrometer. The other three pairs are correct.",
+        "notes": [
+          "Ammeter: correctly matched; measures current and is connected in series.",
+          "Barometer: correctly matched; measures atmospheric pressure.",
+          "Hydrometer: NOT correctly matched; it measures the density of liquids, while a hygrometer measures humidity.",
+          "Manometer: correctly matched; it measures the pressure of a gas (not its density, as some guidebooks wrongly state)."
+        ],
+        "path": [
+          "Physics",
+          "Units and instruments",
+          "Measuring instruments"
+        ],
+        "facts": [
+          "A lactometer, like a hydrometer, uses Archimedes' principle to test the purity of milk.",
+          "A voltmeter measures potential difference and is connected in parallel."
+        ]
+      },
+      "hi": {
+        "q": "निम्नलिखित में से कौन-सा यंत्र और मापी जाने वाली राशि का युग्म सही सुमेलित नहीं है?",
+        "options": [
+          "अमीटर – विद्युत धारा",
+          "बैरोमीटर – वायुमंडलीय दाब",
+          "हाइड्रोमीटर – वायु की आपेक्षिक आर्द्रता",
+          "मैनोमीटर – गैस का दाब"
+        ],
+        "explanation": "हाइड्रोमीटर आर्किमिडीज़ के सिद्धांत पर कार्य करता है और द्रवों का घनत्व (आपेक्षिक घनत्व) मापता है। वायु की आपेक्षिक आर्द्रता हाइग्रोमीटर से मापी जाती है। शेष तीनों युग्म सही हैं।",
+        "notes": [
+          "अमीटर: सही सुमेलित; धारा मापता है और श्रेणीक्रम में जोड़ा जाता है।",
+          "बैरोमीटर: सही सुमेलित; वायुमंडलीय दाब मापता है।",
+          "हाइड्रोमीटर: सही सुमेलित नहीं; यह द्रवों का घनत्व मापता है, आर्द्रता हाइग्रोमीटर मापता है।",
+          "मैनोमीटर: सही सुमेलित; यह गैस का दाब मापता है (घनत्व नहीं, जैसा कुछ पुस्तकों में गलत लिखा है)।"
+        ],
+        "path": [
+          "भौतिकी",
+          "मात्रक एवं यंत्र",
+          "मापक यंत्र"
+        ],
+        "facts": [
+          "लैक्टोमीटर भी हाइड्रोमीटर की तरह आर्किमिडीज़ के सिद्धांत से दूध की शुद्धता जाँचता है।",
+          "वोल्टमीटर विभवांतर मापता है और पार्श्वक्रम में जोड़ा जाता है।"
+        ]
+      },
+      "refs": [
+        {
+          "source": "NCERT Class 9 Science, chapter 'Gravitation' (Archimedes' principle: hydrometers and lactometers)"
+        },
+        {
+          "book": "special-topics",
+          "page": 260
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-055",
+      "level": "TGT",
+      "answer": 3,
+      "en": {
+        "q": "The candela is the SI base unit of which physical quantity?",
+        "options": [
+          "Luminous flux",
+          "Illuminance",
+          "Electric charge",
+          "Luminous intensity"
+        ],
+        "explanation": "The candela (cd) is one of the seven SI base units and measures luminous intensity, the brightness of a light source in a given direction.",
+        "notes": [
+          "Luminous flux: measured in lumen (a derived unit).",
+          "Illuminance: measured in lux (lumen per square metre).",
+          "Electric charge: measured in coulomb (a derived unit).",
+          "Luminous intensity: correct; SI base unit candela."
+        ],
+        "path": [
+          "Physics",
+          "Units and instruments",
+          "SI base units"
+        ],
+        "facts": [
+          "The seven SI base units are metre, kilogram, second, ampere, kelvin, mole and candela.",
+          "The SI unit of plane angle is the radian and of solid angle the steradian."
+        ]
+      },
+      "hi": {
+        "q": "कैंडेला किस भौतिक राशि का SI मूल मात्रक है?",
+        "options": [
+          "ज्योति फ़्लक्स",
+          "प्रदीप्ति",
+          "विद्युत आवेश",
+          "ज्योति तीव्रता"
+        ],
+        "explanation": "कैंडेला (cd) सात SI मूल मात्रकों में से एक है और ज्योति तीव्रता, अर्थात् किसी दिशा में प्रकाश-स्रोत की दीप्ति, को मापता है।",
+        "notes": [
+          "ज्योति फ़्लक्स: मात्रक ल्यूमेन (व्युत्पन्न मात्रक)।",
+          "प्रदीप्ति: मात्रक लक्स (ल्यूमेन प्रति वर्ग मीटर)।",
+          "विद्युत आवेश: मात्रक कूलॉम (व्युत्पन्न मात्रक)।",
+          "ज्योति तीव्रता: सही; SI मूल मात्रक कैंडेला।"
+        ],
+        "path": [
+          "भौतिकी",
+          "मात्रक एवं यंत्र",
+          "SI मूल मात्रक"
+        ],
+        "facts": [
+          "सात SI मूल मात्रक: मीटर, किलोग्राम, सेकंड, ऐम्पियर, केल्विन, मोल और कैंडेला।",
+          "समतल कोण का SI मात्रक रेडियन और घन कोण का स्टेरेडियन है।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "special-topics",
+          "page": 264
+        },
+        {
+          "source": "BIPM, The International System of Units (SI Brochure)",
+          "url": "https://www.bipm.org/en/measurement-units"
+        }
+      ]
+    },
+    {
+      "id": "sci-physics-056",
+      "level": "Higher",
+      "answer": 0,
+      "en": {
+        "q": "Assertion (A): The Earth's gravitational force does no work on a satellite moving in a circular orbit around it.\nReason (R): In a circular orbit, the gravitational force on the satellite is always perpendicular to its direction of motion.",
+        "options": [
+          "Both A and R are true, and R is the correct explanation of A",
+          "Both A and R are true, but R is not the correct explanation of A",
+          "A is true, but R is false",
+          "A is false, but R is true"
+        ],
+        "explanation": "Work done W = F s cos θ. In a circular orbit gravity points towards the Earth's centre while the satellite moves along the tangent, so θ = 90° and cos θ = 0. Hence gravity does no work and the satellite's speed and kinetic energy stay constant. R explains A.",
+        "notes": [
+          "Correct: θ = 90°, so W = F s cos 90° = 0.",
+          "Wrong: the perpendicular force is precisely why no work is done.",
+          "Wrong: R is true for a circular orbit.",
+          "Wrong: A is true; the satellite's kinetic energy does not change."
+        ],
+        "path": [
+          "Physics",
+          "Work and energy",
+          "Work done by a force"
+        ],
+        "facts": [
+          "Work is positive when force and displacement are in the same direction and negative when they are opposite.",
+          "The SI unit of work is the joule (1 J = 1 N m)."
+        ]
+      },
+      "hi": {
+        "q": "कथन (A): पृथ्वी के चारों ओर वृत्ताकार कक्षा में घूम रहे उपग्रह पर पृथ्वी का गुरुत्वाकर्षण बल कोई कार्य नहीं करता।\nकारण (R): वृत्ताकार कक्षा में उपग्रह पर गुरुत्वाकर्षण बल सदैव उसकी गति की दिशा के लंबवत होता है।",
+        "options": [
+          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+          "कथन (A) सही है, परंतु कारण (R) गलत है",
+          "कथन (A) गलत है, परंतु कारण (R) सही है"
+        ],
+        "explanation": "किया गया कार्य W = F s cos θ। वृत्ताकार कक्षा में गुरुत्व पृथ्वी के केंद्र की ओर लगता है जबकि उपग्रह स्पर्शरेखा के अनुदिश चलता है, अतः θ = 90° और cos θ = 0। इसलिए गुरुत्व कोई कार्य नहीं करता और उपग्रह की चाल तथा गतिज ऊर्जा नियत रहती है। (R), (A) की सही व्याख्या है।",
+        "notes": [
+          "सही: θ = 90°, अतः W = F s cos 90° = 0।",
+          "गलत: बल का लंबवत होना ही कार्य शून्य होने का कारण है।",
+          "गलत: वृत्ताकार कक्षा के लिए (R) सही है।",
+          "गलत: (A) सही है; उपग्रह की गतिज ऊर्जा नहीं बदलती।"
+        ],
+        "path": [
+          "भौतिकी",
+          "कार्य और ऊर्जा",
+          "बल द्वारा किया गया कार्य"
+        ],
+        "facts": [
+          "बल और विस्थापन एक ही दिशा में हों तो कार्य धनात्मक और विपरीत हों तो ऋणात्मक होता है।",
+          "कार्य का SI मात्रक जूल है (1 J = 1 N m)।"
+        ]
+      },
+      "refs": [
+        {
+          "book": "fatman",
+          "page": 229
+        },
+        {
+          "source": "NCERT Class 9 Science, chapter 'Work and Energy'"
+        }
+      ]
+    }
+  ]
+}
