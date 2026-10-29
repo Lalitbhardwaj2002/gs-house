@@ -14,7 +14,7 @@ A **bilingual (Hindi + English) multiple-choice General Knowledge quiz game** fo
 - **1 to 20 players** (solo practice or a room with a code/QR).
 - After finishing: **overall assessment of each player**, a **leaderboard**, celebration artwork ("cheers"), and an **answer sheet with explanation and reference** for every question.
 - **UI:** light and attractive, styled like the **Vedas / ancient India**.
-- Name chosen: **GS House (जीएस हाउस)** — unique online; intended live URL `https://lalitbhardwaj2002.github.io/gs-house/`.
+- Name chosen: **GS House** (English name only, at the owner's request) — unique online; intended live URL `https://lalitbhardwaj2002.github.io/gs-house/`.
 - He asked to be told about anything else needed and to get suggestions for extra features (see section 8).
 
 ## 2. Status (final release, 30 Oct 2026)
