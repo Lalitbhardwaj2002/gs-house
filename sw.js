@@ -5,11 +5,19 @@
  */
 'use strict';
 
-const CACHE = 'gshouse-v3';
-const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json'];
+const CACHE = 'gshouse-v4';
+const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json',
+  './icons/icon-192.png', './icons/icon-512.png', './icons/favicon-32.png'];
 
+// Every question file is saved at install too, so the installed app works fully offline for solo practice.
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE)
+    .then((cache) => cache.addAll(SHELL)
+      .then(() => fetch('./data/index.json'))
+      .then((res) => res.json())
+      .then((index) => cache.addAll(Object.keys(index.sections).map((id) => `./data/${id}.json`))))
+    .catch(() => {})
+    .then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
