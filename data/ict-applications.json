@@ -1,0 +1,905 @@
+{
+ "section": "ict-applications",
+ "questions": [
+  {
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The term 'Information and Communication Technology (ICT)' extends the term 'Information Technology (IT)' mainly by stressing the role of:",
+    "options": [
+     "Computer hardware manufacturing",
+     "Telecommunication and the integration of communication networks",
+     "Programming languages",
+     "Office automation software"
+    ],
+    "explanation": "ICT adds the 'C' of communication to IT: it stresses telecommunication (telephone, wireless and computer networks) integrated with computers, so that information can be transmitted and shared, not only stored and processed.",
+    "notes": [
+     "Hardware manufacturing is part of the electronics industry; it is not what distinguishes ICT from IT.",
+     "Correct: ICT emphasises communication technologies such as telephony, broadcasting and networks along with computing.",
+     "Programming languages are tools of software development, common to both IT and ICT.",
+     "Office automation software (word processors, spreadsheets) is an application of IT, not the added element of ICT."
+    ],
+    "path": [
+     "ICT",
+     "Meaning of ICT",
+     "ICT and IT"
+    ],
+    "facts": [
+     "UNESCO counts radio, television and telephony, besides computers and the Internet, as ICT.",
+     "Convergence of computing and telecommunication is the core idea behind ICT."
+    ]
+   },
+   "hi": {
+    "q": "'सूचना एवं संचार प्रौद्योगिकी (ICT)' शब्द, 'सूचना प्रौद्योगिकी (IT)' शब्द का विस्तार मुख्यतः किसकी भूमिका पर बल देकर करता है?",
+    "options": [
+     "कम्प्यूटर हार्डवेयर विनिर्माण",
+     "दूरसंचार तथा संचार नेटवर्कों का एकीकरण",
+     "प्रोग्रामिंग भाषाएँ",
+     "कार्यालय स्वचालन सॉफ्टवेयर"
+    ],
+    "explanation": "ICT में IT के साथ 'संचार' (C) जुड़ता है: यह कम्प्यूटरों के साथ दूरसंचार (टेलीफोन, बेतार तथा कम्प्यूटर नेटवर्क) के एकीकरण पर बल देता है, ताकि सूचना केवल संग्रहीत और संसाधित ही न हो, बल्कि प्रेषित और साझा भी की जा सके।",
+    "notes": [
+     "हार्डवेयर विनिर्माण इलेक्ट्रॉनिक्स उद्योग का भाग है; यह ICT को IT से अलग नहीं करता।",
+     "सही: ICT कम्प्यूटिंग के साथ टेलीफोनी, प्रसारण और नेटवर्क जैसी संचार प्रौद्योगिकियों पर बल देता है।",
+     "प्रोग्रामिंग भाषाएँ सॉफ्टवेयर विकास के साधन हैं, जो IT और ICT दोनों में समान हैं।",
+     "कार्यालय स्वचालन सॉफ्टवेयर (वर्ड प्रोसेसर, स्प्रेडशीट) IT का अनुप्रयोग है, ICT का अतिरिक्त तत्व नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी का अर्थ",
+     "आईसीटी और आईटी"
+    ],
+    "facts": [
+     "यूनेस्को कम्प्यूटर और इंटरनेट के अतिरिक्त रेडियो, टेलीविजन और टेलीफोनी को भी ICT में गिनता है।",
+     "कम्प्यूटिंग और दूरसंचार का अभिसरण (convergence) ICT की मूल अवधारणा है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "UNESCO Institute for Statistics glossary – Information and communication technologies (ICT)",
+     "url": "https://uis.unesco.org/en/glossary-term/information-and-communication-technologies-ict"
+    }
+   ],
+   "id": "ict-applications-001"
+  },
+  {
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Consider the following statements regarding Information and Communication Technology (ICT) as described by UNESCO:\n1. It is a diverse set of technological tools and resources used to transmit, store, create, share or exchange information.\n2. It includes computers and the Internet.\n3. It includes broadcasting technologies such as radio and television, as well as telephony.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "UNESCO describes ICT as a varied set of tools and resources for transmitting, storing, creating, sharing or exchanging information, and lists computers, the Internet, live and recorded broadcasting (radio, TV, podcasts) and telephony among them. All three statements are correct.",
+    "notes": [
+     "Incomplete: statements 2 and 3 are also correct.",
+     "Incomplete: statement 3 is also correct, since radio, TV and telephony are part of ICT.",
+     "Incomplete: statement 1, the core definition, is also correct.",
+     "Correct: all three statements match UNESCO's description of ICT."
+    ],
+    "path": [
+     "ICT",
+     "Meaning of ICT",
+     "Components of ICT"
+    ],
+    "facts": [
+     "Main components of an ICT system: hardware, software, networks (communication), data and people.",
+     "Traditional media such as radio and television are also ICT tools."
+    ]
+   },
+   "hi": {
+    "q": "यूनेस्को द्वारा वर्णित सूचना एवं संचार प्रौद्योगिकी (ICT) के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. यह सूचना के प्रेषण, संग्रहण, सृजन, साझाकरण या आदान-प्रदान हेतु प्रयुक्त विविध तकनीकी उपकरणों एवं संसाधनों का समूह है।\n2. इसमें कम्प्यूटर और इंटरनेट सम्मिलित हैं।\n3. इसमें रेडियो और टेलीविजन जैसी प्रसारण प्रौद्योगिकियाँ तथा टेलीफोनी भी सम्मिलित हैं।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "यूनेस्को ICT को सूचना के प्रेषण, संग्रहण, सृजन, साझाकरण या आदान-प्रदान के विविध साधनों का समूह बताता है और इसमें कम्प्यूटर, इंटरनेट, सजीव व रिकॉर्डेड प्रसारण (रेडियो, टीवी, पॉडकास्ट) तथा टेलीफोनी को गिनता है। अतः तीनों कथन सही हैं।",
+    "notes": [
+     "अपूर्ण: कथन 2 और 3 भी सही हैं।",
+     "अपूर्ण: कथन 3 भी सही है, क्योंकि रेडियो, टीवी और टेलीफोनी ICT के अंग हैं।",
+     "अपूर्ण: मूल परिभाषा वाला कथन 1 भी सही है।",
+     "सही: तीनों कथन यूनेस्को के ICT विवरण से मेल खाते हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी का अर्थ",
+     "आईसीटी के घटक"
+    ],
+    "facts": [
+     "ICT तंत्र के मुख्य घटक: हार्डवेयर, सॉफ्टवेयर, नेटवर्क (संचार), डेटा और लोग।",
+     "रेडियो और टेलीविजन जैसे पारंपरिक माध्यम भी ICT के साधन हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "UNESCO Institute for Statistics glossary – Information and communication technologies (ICT)",
+     "url": "https://uis.unesco.org/en/glossary-term/information-and-communication-technologies-ict"
+    }
+   ],
+   "id": "ict-applications-002"
+  },
+  {
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The gap between individuals, households or regions that have access to ICT and those that do not is known as:",
+    "options": [
+     "Digital divide",
+     "Digital literacy",
+     "Information overload",
+     "Net neutrality"
+    ],
+    "explanation": "The digital divide is the unequal access to computers, the Internet and other ICT between groups, for example between urban and rural areas or rich and poor households.",
+    "notes": [
+     "Correct: digital divide means unequal access to and use of ICT.",
+     "Digital literacy is the ability to use digital devices and the Internet; spreading it helps reduce the divide.",
+     "Information overload is having more information than one can process, a drawback of ICT use.",
+     "Net neutrality is the principle that Internet providers treat all online traffic equally."
+    ],
+    "path": [
+     "ICT",
+     "Disadvantages of ICT",
+     "Digital divide"
+    ],
+    "facts": [
+     "The term became popular in the 1990s through the US NTIA reports 'Falling Through the Net'.",
+     "Urban–rural, gender and income gaps are common forms of the digital divide in India."
+    ]
+   },
+   "hi": {
+    "q": "ICT तक पहुँच रखने वाले तथा न रखने वाले व्यक्तियों, परिवारों या क्षेत्रों के बीच के अंतर को क्या कहा जाता है?",
+    "options": [
+     "डिजिटल विभाजन (डिजिटल डिवाइड)",
+     "डिजिटल साक्षरता",
+     "सूचना अधिभार",
+     "नेट तटस्थता"
+    ],
+    "explanation": "डिजिटल विभाजन विभिन्न वर्गों के बीच कम्प्यूटर, इंटरनेट तथा अन्य ICT तक असमान पहुँच को कहते हैं, जैसे शहरी और ग्रामीण क्षेत्रों अथवा धनी और निर्धन परिवारों के बीच।",
+    "notes": [
+     "सही: डिजिटल विभाजन का अर्थ ICT तक असमान पहुँच और उसका असमान उपयोग है।",
+     "डिजिटल साक्षरता डिजिटल उपकरणों और इंटरनेट के उपयोग की क्षमता है; इसका प्रसार विभाजन घटाता है।",
+     "सूचना अधिभार क्षमता से अधिक सूचना मिलने की स्थिति है, जो ICT की एक कमी है।",
+     "नेट तटस्थता वह सिद्धांत है कि इंटरनेट प्रदाता सभी ऑनलाइन ट्रैफिक से समान व्यवहार करें।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी की हानियाँ",
+     "डिजिटल विभाजन"
+    ],
+    "facts": [
+     "यह शब्द 1990 के दशक में अमेरिकी NTIA की 'Falling Through the Net' रिपोर्टों से लोकप्रिय हुआ।",
+     "भारत में शहरी–ग्रामीण, लैंगिक और आय-आधारित अंतर डिजिटल विभाजन के सामान्य रूप हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "PIB (MeitY) release on PMGDISHA, the digital literacy scheme to bridge the digital divide",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1843847"
+    },
+    {
+     "source": "UNESCO Institute for Statistics glossary – ICT",
+     "url": "https://uis.unesco.org/en/glossary-term/information-and-communication-technologies-ict"
+    }
+   ],
+   "id": "ict-applications-003"
+  },
+  {
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following is a disadvantage of the widespread use of ICT?",
+    "options": [
+     "Faster communication over long distances",
+     "Reduced use of paper in offices",
+     "Rapid growth of electronic waste (e-waste)",
+     "Anytime-anywhere access to government services"
+    ],
+    "explanation": "Short device lifecycles and frequent replacement of computers, phones and accessories produce large amounts of e-waste containing hazardous substances such as lead and mercury. The other three options are advantages of ICT.",
+    "notes": [
+     "Advantage: e-mail, video calls and messaging make long-distance communication fast and cheap.",
+     "Advantage: e-office and digital records reduce paper use.",
+     "Correct: e-waste from discarded electronic devices is an environmental cost of ICT.",
+     "Advantage: e-governance portals and apps give round-the-clock access to services."
+    ],
+    "path": [
+     "ICT",
+     "Disadvantages of ICT",
+     "E-waste"
+    ],
+    "facts": [
+     "Other drawbacks of ICT: cyber crime, privacy loss, digital divide and health problems from excessive screen use.",
+     "E-waste contains toxic metals such as lead, mercury and cadmium."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा ICT के व्यापक उपयोग का एक दोष है?",
+    "options": [
+     "लंबी दूरी पर तीव्र संचार",
+     "कार्यालयों में कागज़ के उपयोग में कमी",
+     "इलेक्ट्रॉनिक कचरे (ई-कचरा) में तीव्र वृद्धि",
+     "सरकारी सेवाओं तक कभी भी, कहीं भी पहुँच"
+    ],
+    "explanation": "कम्प्यूटर, फोन और सहायक उपकरणों के छोटे जीवनकाल और बार-बार बदले जाने से बड़ी मात्रा में ई-कचरा उत्पन्न होता है, जिसमें सीसा और पारा जैसे हानिकारक पदार्थ होते हैं। शेष तीनों विकल्प ICT के लाभ हैं।",
+    "notes": [
+     "लाभ: ई-मेल, वीडियो कॉल और संदेश सेवाएँ लंबी दूरी के संचार को तेज़ और सस्ता बनाती हैं।",
+     "लाभ: ई-ऑफिस और डिजिटल अभिलेख कागज़ का उपयोग घटाते हैं।",
+     "सही: फेंके गए इलेक्ट्रॉनिक उपकरणों से उत्पन्न ई-कचरा ICT की पर्यावरणीय कीमत है।",
+     "लाभ: ई-गवर्नेंस पोर्टल और ऐप चौबीसों घंटे सेवाएँ उपलब्ध कराते हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी की हानियाँ",
+     "ई-कचरा"
+    ],
+    "facts": [
+     "ICT की अन्य हानियाँ: साइबर अपराध, निजता का ह्रास, डिजिटल विभाजन और अत्यधिक स्क्रीन उपयोग से स्वास्थ्य समस्याएँ।",
+     "ई-कचरे में सीसा, पारा और कैडमियम जैसी विषैली धातुएँ होती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Environment, Forest and Climate Change – E-Waste (Management) Rules, 2022"
+    }
+   ],
+   "id": "ict-applications-004"
+  },
+  {
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Consider the following statements about the E-Waste (Management) Rules, 2022:\n1. They came into force on 1 April 2023.\n2. They are based on the principle of Extended Producer Responsibility (EPR).\n3. They were notified by the Ministry of Electronics and Information Technology.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "The E-Waste (Management) Rules, 2022 took effect from 1 April 2023 and make producers responsible, through EPR targets, for collecting and recycling the e-waste from their products. They were notified by the Ministry of Environment, Forest and Climate Change, not MeitY, so statement 3 is wrong.",
+    "notes": [
+     "Incomplete: statement 2 (EPR) is also correct.",
+     "Correct: statements 1 and 2 are true; statement 3 is false.",
+     "Wrong: statement 3 is false and statement 1 is true.",
+     "Wrong: the rules were notified by MoEFCC, not MeitY."
+    ],
+    "path": [
+     "ICT",
+     "Disadvantages of ICT",
+     "E-waste",
+     "E-Waste Rules 2022"
+    ],
+    "facts": [
+     "The 2022 rules replaced the E-Waste (Management) Rules, 2016.",
+     "The Central Pollution Control Board runs the online EPR portal for e-waste."
+    ]
+   },
+   "hi": {
+    "q": "ई-अपशिष्ट (प्रबंधन) नियम, 2022 के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. ये 1 अप्रैल 2023 से प्रभावी हुए।\n2. ये विस्तारित उत्पादक उत्तरदायित्व (EPR) के सिद्धांत पर आधारित हैं।\n3. इन्हें इलेक्ट्रॉनिकी और सूचना प्रौद्योगिकी मंत्रालय ने अधिसूचित किया।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "ई-अपशिष्ट (प्रबंधन) नियम, 2022 1 अप्रैल 2023 से लागू हुए और EPR लक्ष्यों के माध्यम से उत्पादकों को अपने उत्पादों के ई-कचरे के संग्रहण व पुनर्चक्रण के लिए उत्तरदायी बनाते हैं। इन्हें पर्यावरण, वन और जलवायु परिवर्तन मंत्रालय ने अधिसूचित किया, MeitY ने नहीं; अतः कथन 3 गलत है।",
+    "notes": [
+     "अपूर्ण: कथन 2 (EPR) भी सही है।",
+     "सही: कथन 1 और 2 सही हैं; कथन 3 गलत है।",
+     "गलत: कथन 3 असत्य है और कथन 1 सत्य है।",
+     "गलत: नियम MoEFCC ने अधिसूचित किए, MeitY ने नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी की हानियाँ",
+     "ई-कचरा",
+     "ई-अपशिष्ट नियम 2022"
+    ],
+    "facts": [
+     "2022 के नियमों ने ई-अपशिष्ट (प्रबंधन) नियम, 2016 का स्थान लिया।",
+     "केंद्रीय प्रदूषण नियंत्रण बोर्ड ई-कचरे का ऑनलाइन EPR पोर्टल संचालित करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Environment, Forest and Climate Change – E-Waste (Management) Rules, 2022 (notified November 2022, effective 1 April 2023)"
+    },
+    {
+     "source": "Central Pollution Control Board – E-waste EPR portal",
+     "url": "https://eprewastecpcb.in/"
+    }
+   ],
+   "id": "ict-applications-005"
+  },
+  {
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "Assertion (A): Providing Internet connectivity alone does not eliminate the digital divide.\nReason (R): The digital divide also includes differences in digital skills and in the ability to use ICT meaningfully.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "Besides the first-level gap in access, there is a second-level divide in skills and effective use. Because people with a connection may still lack the skills to benefit from it, connectivity alone cannot close the divide; R therefore explains A.",
+    "notes": [
+     "Correct: the skills-and-use gap (R) is exactly why connectivity alone (A) is not enough.",
+     "Wrong: R directly explains A.",
+     "Wrong: R is true; the divide has access, skills and usage dimensions.",
+     "Wrong: A is true; access without skills leaves the divide in place."
+    ],
+    "path": [
+     "ICT",
+     "Disadvantages of ICT",
+     "Digital divide",
+     "Levels of the divide"
+    ],
+    "facts": [
+     "The 'second-level digital divide' (skills and use) was described by Eszter Hargittai in 2002.",
+     "Digital literacy schemes such as PMGDISHA target the skills gap."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): केवल इंटरनेट संपर्क उपलब्ध करा देने से डिजिटल विभाजन समाप्त नहीं होता।\nकारण (R): डिजिटल विभाजन में डिजिटल कौशल तथा ICT का सार्थक उपयोग कर पाने की क्षमता में अंतर भी सम्मिलित है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "पहुँच के प्रथम-स्तरीय अंतर के अतिरिक्त कौशल और प्रभावी उपयोग का द्वितीय-स्तरीय विभाजन भी होता है। संपर्क होने पर भी कौशल के अभाव में लोग लाभ नहीं उठा पाते, इसलिए केवल संपर्क से विभाजन समाप्त नहीं होता; अतः (R), (A) की सही व्याख्या है।",
+    "notes": [
+     "सही: कौशल और उपयोग का अंतर (R) ही कारण है कि केवल संपर्क (A) पर्याप्त नहीं।",
+     "गलत: (R) सीधे (A) की व्याख्या करता है।",
+     "गलत: (R) सही है; विभाजन के पहुँच, कौशल और उपयोग तीनों आयाम हैं।",
+     "गलत: (A) सही है; कौशल के बिना पहुँच से विभाजन बना रहता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी की हानियाँ",
+     "डिजिटल विभाजन",
+     "विभाजन के स्तर"
+    ],
+    "facts": [
+     "'द्वितीय-स्तरीय डिजिटल विभाजन' (कौशल और उपयोग) का वर्णन एस्टर हरगिटाई ने 2002 में किया।",
+     "PMGDISHA जैसी डिजिटल साक्षरता योजनाएँ कौशल के अंतर को लक्षित करती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Hargittai, E. (2002), 'Second-Level Digital Divide: Differences in People's Online Skills', First Monday 7(4)",
+     "url": "https://firstmonday.org/ojs/index.php/fm/article/view/942"
+    }
+   ],
+   "id": "ict-applications-006"
+  },
+  {
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Consider the following statements about the Pradhan Mantri Gramin Digital Saksharta Abhiyan (PMGDISHA):\n1. It was meant to make urban households digitally literate.\n2. Its target was to cover 6 crore households, one person per household.\n3. It was implemented through CSC e-Governance Services India Limited under the Ministry of Electronics and Information Technology.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "PMGDISHA, approved in February 2017, aimed to make 6 crore rural households digitally literate by training one person per household, and was implemented by MeitY through the CSC SPV. It targeted rural, not urban, India, so statement 1 is wrong.",
+    "notes": [
+     "Wrong: statement 1 is false; the scheme was for rural households.",
+     "Wrong: statement 1 is false.",
+     "Correct: statements 2 and 3 are true.",
+     "Wrong: statement 1 is false."
+    ],
+    "path": [
+     "ICT",
+     "Advantages of ICT",
+     "Bridging the digital divide",
+     "PMGDISHA"
+    ],
+    "facts": [
+     "PMGDISHA training covered using devices, the Internet, e-mail and digital payments.",
+     "The scheme formally concluded on 31 March 2024; 'Gramin' in its name shows its rural focus."
+    ]
+   },
+   "hi": {
+    "q": "प्रधानमंत्री ग्रामीण डिजिटल साक्षरता अभियान (PMGDISHA) के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. इसका उद्देश्य शहरी परिवारों को डिजिटल रूप से साक्षर बनाना था।\n2. इसका लक्ष्य 6 करोड़ परिवारों (प्रति परिवार एक व्यक्ति) को सम्मिलित करना था।\n3. इसे इलेक्ट्रॉनिकी और सूचना प्रौद्योगिकी मंत्रालय के अंतर्गत सीएससी ई-गवर्नेंस सर्विसेज इंडिया लिमिटेड के माध्यम से लागू किया गया।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "फरवरी 2017 में स्वीकृत PMGDISHA का लक्ष्य प्रति परिवार एक व्यक्ति को प्रशिक्षित कर 6 करोड़ ग्रामीण परिवारों को डिजिटल रूप से साक्षर बनाना था; इसे MeitY ने CSC SPV के माध्यम से लागू किया। यह ग्रामीण भारत के लिए था, शहरी के लिए नहीं; अतः कथन 1 गलत है।",
+    "notes": [
+     "गलत: कथन 1 असत्य है; योजना ग्रामीण परिवारों के लिए थी।",
+     "गलत: कथन 1 असत्य है।",
+     "सही: कथन 2 और 3 सत्य हैं।",
+     "गलत: कथन 1 असत्य है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के लाभ",
+     "डिजिटल विभाजन पाटना",
+     "पीएमजीदिशा"
+    ],
+    "facts": [
+     "PMGDISHA प्रशिक्षण में उपकरण, इंटरनेट, ई-मेल और डिजिटल भुगतान का उपयोग सिखाया गया।",
+     "यह योजना 31 मार्च 2024 को औपचारिक रूप से समाप्त हुई; नाम में 'ग्रामीण' शब्द इसके ग्रामीण केंद्र को दर्शाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "PIB (MeitY) release on PMGDISHA implementation through CSC e-Governance Services India Ltd",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1843847"
+    },
+    {
+     "source": "PMGDISHA official portal (MeitY / CSC e-Governance Services India Ltd)",
+     "url": "https://www.pmgdisha.in/"
+    }
+   ],
+   "id": "ict-applications-007"
+  },
+  {
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The toll-free number of the Kisan Call Centre (KCC) of the Ministry of Agriculture and Farmers Welfare is:",
+    "options": [
+     "1947",
+     "1930",
+     "14555",
+     "1800-180-1551"
+    ],
+    "explanation": "Kisan Call Centres of the Ministry of Agriculture and Farmers Welfare, started on 21 January 2004, answer farmers' queries in local languages on the toll-free number 1800-180-1551.",
+    "notes": [
+     "1947: toll-free helpline of UIDAI for Aadhaar.",
+     "1930: National Cyber Crime Helpline.",
+     "14555: call centre number of Ayushman Bharat PM-JAY.",
+     "Correct: 1800-180-1551 is the Kisan Call Centre number."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "ICT in agriculture",
+     "Kisan Call Centre"
+    ],
+    "facts": [
+     "Kisan Call Centres were launched on 21 January 2004.",
+     "Farm experts answer calls in 22 languages from centres across the country."
+    ]
+   },
+   "hi": {
+    "q": "कृषि एवं किसान कल्याण मंत्रालय के किसान कॉल सेंटर (KCC) का टोल-फ्री नंबर है:",
+    "options": [
+     "1947",
+     "1930",
+     "14555",
+     "1800-180-1551"
+    ],
+    "explanation": "कृषि एवं किसान कल्याण मंत्रालय के किसान कॉल सेंटर 21 जनवरी 2004 को आरंभ हुए; ये टोल-फ्री नंबर 1800-180-1551 पर स्थानीय भाषाओं में किसानों के प्रश्नों के उत्तर देते हैं।",
+    "notes": [
+     "1947: आधार के लिए UIDAI की टोल-फ्री हेल्पलाइन।",
+     "1930: राष्ट्रीय साइबर अपराध हेल्पलाइन।",
+     "14555: आयुष्मान भारत PM-JAY का कॉल सेंटर नंबर।",
+     "सही: 1800-180-1551 किसान कॉल सेंटर का नंबर है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "कृषि में आईसीटी",
+     "किसान कॉल सेंटर"
+    ],
+    "facts": [
+     "किसान कॉल सेंटर 21 जनवरी 2004 को आरंभ किए गए।",
+     "देश भर के केंद्रों से कृषि विशेषज्ञ 22 भाषाओं में कॉल का उत्तर देते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "mKisan portal (Ministry of Agriculture & Farmers Welfare) – About Kisan Call Centre",
+     "url": "https://mkisan.gov.in/Home/AboutKCC"
+    },
+    {
+     "source": "Ministry of Agriculture & Farmers Welfare – Kisan Call Centre",
+     "url": "https://agriwelfare.gov.in/"
+    }
+   ],
+   "id": "ict-applications-008"
+  },
+  {
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Consider the following statements about eSanjeevani:\n1. It is the National Telemedicine Service of the Ministry of Health and Family Welfare.\n2. It offers both doctor-to-doctor (hub-and-spoke) and patient-to-doctor (OPD) consultations.\n3. It was developed by C-DAC, Mohali.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1, 2 and 3",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1 only"
+    ],
+    "explanation": "eSanjeevani is MoHFW's national telemedicine platform with two variants: a doctor-to-doctor (hub-and-spoke) variant linking Ayushman Arogya Mandirs (formerly Health and Wellness Centres) to hub hospitals, and eSanjeevani OPD (patient-to-doctor). It was developed by C-DAC Mohali. All three statements are correct.",
+    "notes": [
+     "Correct: all three statements are true.",
+     "Incomplete: statement 3 (C-DAC Mohali) is also true.",
+     "Incomplete: statement 1 is also true.",
+     "Incomplete: statements 2 and 3 are also true."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "ICT in health",
+     "eSanjeevani"
+    ],
+    "facts": [
+     "Telemedicine lets patients in remote areas consult specialists without travelling.",
+     "eSanjeevani OPD was started in April 2020 during the COVID-19 lockdown."
+    ]
+   },
+   "hi": {
+    "q": "ई-संजीवनी के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. यह स्वास्थ्य एवं परिवार कल्याण मंत्रालय की राष्ट्रीय टेलीमेडिसिन सेवा है।\n2. इसमें डॉक्टर-से-डॉक्टर (हब-एंड-स्पोक) तथा रोगी-से-डॉक्टर (ओपीडी) दोनों प्रकार के परामर्श उपलब्ध हैं।\n3. इसे सी-डैक, मोहाली ने विकसित किया है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "1, 2 और 3",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "केवल 1"
+    ],
+    "explanation": "ई-संजीवनी स्वास्थ्य मंत्रालय का राष्ट्रीय टेलीमेडिसिन मंच है, जिसके दो रूप हैं: डॉक्टर-से-डॉक्टर (हब-एंड-स्पोक) रूप, जो आयुष्मान आरोग्य मंदिरों (पूर्व में स्वास्थ्य एवं आरोग्य केंद्र) को हब अस्पतालों से जोड़ता है, और ई-संजीवनी OPD (रोगी-से-डॉक्टर)। इसे सी-डैक मोहाली ने विकसित किया। तीनों कथन सही हैं।",
+    "notes": [
+     "सही: तीनों कथन सत्य हैं।",
+     "अपूर्ण: कथन 3 (सी-डैक मोहाली) भी सत्य है।",
+     "अपूर्ण: कथन 1 भी सत्य है।",
+     "अपूर्ण: कथन 2 और 3 भी सत्य हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "स्वास्थ्य में आईसीटी",
+     "ई-संजीवनी"
+    ],
+    "facts": [
+     "टेलीमेडिसिन से दूरदराज़ के रोगी बिना यात्रा किए विशेषज्ञों से परामर्श ले सकते हैं।",
+     "ई-संजीवनी OPD अप्रैल 2020 में कोविड-19 लॉकडाउन के दौरान आरंभ हुई।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "eSanjeevani – National Telemedicine Service, MoHFW",
+     "url": "https://esanjeevani.mohfw.gov.in/"
+    }
+   ],
+   "id": "ict-applications-009"
+  },
+  {
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The Ayushman Bharat Health Account (ABHA) number issued under the Ayushman Bharat Digital Mission consists of how many digits?",
+    "options": [
+     "12",
+     "14",
+     "16",
+     "10"
+    ],
+    "explanation": "ABHA is a 14-digit health ID that links a person's digital health records across hospitals, laboratories and other providers under the Ayushman Bharat Digital Mission, launched nationwide on 27 September 2021.",
+    "notes": [
+     "12 digits: length of the Aadhaar number, not ABHA.",
+     "Correct: the ABHA number has 14 digits.",
+     "16 digits: the usual length of a debit or credit card number.",
+     "10 digits: length of an Indian mobile number."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "ICT in health",
+     "ABDM"
+    ],
+    "facts": [
+     "ABDM is implemented by the National Health Authority.",
+     "Health records are shared only with the person's consent."
+    ]
+   },
+   "hi": {
+    "q": "आयुष्मान भारत डिजिटल मिशन के अंतर्गत जारी आयुष्मान भारत हेल्थ अकाउंट (ABHA) संख्या कितने अंकों की होती है?",
+    "options": [
+     "12",
+     "14",
+     "16",
+     "10"
+    ],
+    "explanation": "ABHA 14 अंकों की स्वास्थ्य पहचान संख्या है, जो आयुष्मान भारत डिजिटल मिशन (राष्ट्रव्यापी आरंभ 27 सितंबर 2021) के अंतर्गत अस्पतालों, प्रयोगशालाओं आदि में व्यक्ति के डिजिटल स्वास्थ्य अभिलेखों को जोड़ती है।",
+    "notes": [
+     "12 अंक: आधार संख्या की लंबाई, ABHA की नहीं।",
+     "सही: ABHA संख्या 14 अंकों की होती है।",
+     "16 अंक: सामान्यतः डेबिट या क्रेडिट कार्ड संख्या की लंबाई।",
+     "10 अंक: भारतीय मोबाइल नंबर की लंबाई।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "स्वास्थ्य में आईसीटी",
+     "एबीडीएम"
+    ],
+    "facts": [
+     "ABDM का क्रियान्वयन राष्ट्रीय स्वास्थ्य प्राधिकरण करता है।",
+     "स्वास्थ्य अभिलेख व्यक्ति की सहमति से ही साझा किए जाते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ayushman Bharat Digital Mission (National Health Authority)",
+     "url": "https://abdm.gov.in/"
+    }
+   ],
+   "id": "ict-applications-010"
+  },
+  {
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "e-Hospital, a hospital management information system used in government hospitals under Digital India, has been developed by:",
+    "options": [
+     "C-DAC",
+     "ISRO",
+     "National Informatics Centre (NIC)",
+     "NPCI"
+    ],
+    "explanation": "e-Hospital is a cloud-based hospital management information system developed by NIC. Its Online Registration System (ORS) lets patients book OPD appointments in connected government hospitals online.",
+    "notes": [
+     "C-DAC (Mohali) developed eSanjeevani, the telemedicine service, not e-Hospital.",
+     "ISRO is India's space agency; it supports telemedicine via satellites but did not build e-Hospital.",
+     "Correct: NIC developed e-Hospital and the ORS portal.",
+     "NPCI runs retail payment systems such as UPI and RuPay."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "ICT in health",
+     "e-Hospital"
+    ],
+    "facts": [
+     "e-Hospital covers patient registration, billing, laboratory and pharmacy modules.",
+     "NIC was set up in 1976 and builds most central government IT systems."
+    ]
+   },
+   "hi": {
+    "q": "डिजिटल इंडिया के अंतर्गत सरकारी अस्पतालों में प्रयुक्त अस्पताल प्रबंधन सूचना प्रणाली 'ई-हॉस्पिटल' किसके द्वारा विकसित की गई है?",
+    "options": [
+     "सी-डैक",
+     "इसरो",
+     "राष्ट्रीय सूचना विज्ञान केंद्र (NIC)",
+     "एनपीसीआई"
+    ],
+    "explanation": "ई-हॉस्पिटल NIC द्वारा विकसित क्लाउड-आधारित अस्पताल प्रबंधन सूचना प्रणाली है। इसकी ऑनलाइन पंजीकरण प्रणाली (ORS) से रोगी जुड़े सरकारी अस्पतालों में ओपीडी अपॉइंटमेंट ऑनलाइन ले सकते हैं।",
+    "notes": [
+     "सी-डैक (मोहाली) ने टेलीमेडिसिन सेवा ई-संजीवनी विकसित की, ई-हॉस्पिटल नहीं।",
+     "इसरो भारत की अंतरिक्ष एजेंसी है; उपग्रह टेलीमेडिसिन में सहायक है, पर ई-हॉस्पिटल उसका नहीं।",
+     "सही: NIC ने ई-हॉस्पिटल और ORS पोर्टल विकसित किए।",
+     "NPCI यूपीआई और रुपे जैसी खुदरा भुगतान प्रणालियाँ चलाता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "स्वास्थ्य में आईसीटी",
+     "ई-हॉस्पिटल"
+    ],
+    "facts": [
+     "ई-हॉस्पिटल में रोगी पंजीकरण, बिलिंग, प्रयोगशाला और फार्मेसी मॉड्यूल होते हैं।",
+     "NIC की स्थापना 1976 में हुई; यह केंद्र सरकार की अधिकांश IT प्रणालियाँ बनाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "e-Hospital@NIC – National Informatics Centre",
+     "url": "https://ehospital.gov.in/"
+    },
+    {
+     "source": "Online Registration System (ORS)",
+     "url": "https://ors.gov.in/"
+    }
+   ],
+   "id": "ict-applications-011"
+  },
+  {
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Consider the following statements about cloud computing:\n1. In Software as a Service (SaaS), the user accesses an application over the Internet without managing the underlying servers or storage.\n2. Infrastructure as a Service (IaaS) provides virtualised computing resources such as servers, storage and networking.\n3. 'MeghRaj' is the Government of India's cloud computing (GI Cloud) initiative of MeitY.\nWhich of the statements given above is/are correct?",
+    "options": [
+     "1 only",
+     "1 and 2 only",
+     "2 and 3 only",
+     "1, 2 and 3"
+    ],
+    "explanation": "NIST defines three service models: SaaS (ready applications such as web mail), PaaS (a platform to build and deploy applications) and IaaS (virtual servers, storage and networks). MeghRaj is MeitY's GI Cloud initiative for hosting government applications. All three statements are correct.",
+    "notes": [
+     "Incomplete: statements 2 and 3 are also true.",
+     "Incomplete: statement 3 (MeghRaj) is also true.",
+     "Incomplete: statement 1 is also true.",
+     "Correct: all three statements are true."
+    ],
+    "path": [
+     "ICT",
+     "Emerging technologies",
+     "Cloud computing"
+    ],
+    "facts": [
+     "Cloud deployment models: public, private, community and hybrid.",
+     "Pay-as-you-use pricing and on-demand scaling are key advantages of cloud computing."
+    ]
+   },
+   "hi": {
+    "q": "क्लाउड कम्प्यूटिंग के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. 'सॉफ्टवेयर ऐज़ अ सर्विस' (SaaS) में उपयोगकर्ता अंतर्निहित सर्वर या भंडारण का प्रबंधन किए बिना इंटरनेट पर अनुप्रयोग का उपयोग करता है।\n2. 'इन्फ्रास्ट्रक्चर ऐज़ अ सर्विस' (IaaS) सर्वर, भंडारण और नेटवर्किंग जैसे आभासी कम्प्यूटिंग संसाधन प्रदान करता है।\n3. 'मेघराज' इलेक्ट्रॉनिकी और सूचना प्रौद्योगिकी मंत्रालय की भारत सरकार क्लाउड (GI Cloud) पहल है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "options": [
+     "केवल 1",
+     "केवल 1 और 2",
+     "केवल 2 और 3",
+     "1, 2 और 3"
+    ],
+    "explanation": "NIST तीन सेवा मॉडल बताता है: SaaS (वेब मेल जैसे तैयार अनुप्रयोग), PaaS (अनुप्रयोग बनाने व चलाने का मंच) और IaaS (आभासी सर्वर, भंडारण, नेटवर्क)। मेघराज सरकारी अनुप्रयोगों की होस्टिंग हेतु MeitY की GI क्लाउड पहल है। तीनों कथन सही हैं।",
+    "notes": [
+     "अपूर्ण: कथन 2 और 3 भी सत्य हैं।",
+     "अपूर्ण: कथन 3 (मेघराज) भी सत्य है।",
+     "अपूर्ण: कथन 1 भी सत्य है।",
+     "सही: तीनों कथन सत्य हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "उभरती प्रौद्योगिकियाँ",
+     "क्लाउड कम्प्यूटिंग"
+    ],
+    "facts": [
+     "क्लाउड परिनियोजन मॉडल: सार्वजनिक, निजी, सामुदायिक और हाइब्रिड।",
+     "उपयोग के अनुसार भुगतान और माँग पर विस्तार क्लाउड कम्प्यूटिंग के प्रमुख लाभ हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NIST Special Publication 800-145, The NIST Definition of Cloud Computing",
+     "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+    },
+    {
+     "source": "MeitY – GI Cloud (MeghRaj)",
+     "url": "https://www.meity.gov.in/"
+    }
+   ],
+   "id": "ict-applications-012"
+  },
+  {
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "Assertion (A): Data recorded on a blockchain is considered highly resistant to tampering.\nReason (R): Each block in a blockchain contains the cryptographic hash of the previous block, so altering one block breaks the chain of hashes.",
+    "options": [
+     "Both A and R are true, and R is the correct explanation of A",
+     "Both A and R are true, but R is not the correct explanation of A",
+     "A is true, but R is false",
+     "A is false, but R is true"
+    ],
+    "explanation": "Because every block stores the hash of the block before it, changing data in any block changes its hash and invalidates all later blocks; copies of the ledger held by many nodes expose the change. This hash-linking is why blockchain records are tamper-resistant, so R explains A.",
+    "notes": [
+     "Correct: hash-linking of blocks (R) is the reason for tamper resistance (A).",
+     "Wrong: R is the direct explanation of A.",
+     "Wrong: R correctly describes how blocks are linked.",
+     "Wrong: A is true; tampering is easy to detect."
+    ],
+    "path": [
+     "ICT",
+     "Emerging technologies",
+     "Blockchain"
+    ],
+    "facts": [
+     "A blockchain is a distributed ledger shared across many computers (nodes).",
+     "Bitcoin (2009) was the first major application of blockchain."
+    ]
+   },
+   "hi": {
+    "q": "कथन (A): ब्लॉकचेन पर दर्ज डेटा को छेड़छाड़ के प्रति अत्यधिक प्रतिरोधी माना जाता है।\nकारण (R): ब्लॉकचेन के प्रत्येक ब्लॉक में पिछले ब्लॉक का क्रिप्टोग्राफिक हैश होता है, इसलिए किसी एक ब्लॉक को बदलने से हैश की श्रृंखला टूट जाती है।",
+    "options": [
+     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
+     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
+     "कथन (A) सही है, परंतु कारण (R) गलत है",
+     "कथन (A) गलत है, परंतु कारण (R) सही है"
+    ],
+    "explanation": "प्रत्येक ब्लॉक में पिछले ब्लॉक का हैश संग्रहीत होने के कारण किसी भी ब्लॉक का डेटा बदलने पर उसका हैश बदल जाता है और बाद के सभी ब्लॉक अमान्य हो जाते हैं; अनेक नोड्स पर रखी खाता-बही की प्रतियाँ बदलाव को उजागर कर देती हैं। यही हैश-श्रृंखला छेड़छाड़-प्रतिरोध का कारण है; अतः (R), (A) की सही व्याख्या है।",
+    "notes": [
+     "सही: ब्लॉकों की हैश-श्रृंखला (R) ही छेड़छाड़-प्रतिरोध (A) का कारण है।",
+     "गलत: (R) ही (A) की प्रत्यक्ष व्याख्या है।",
+     "गलत: (R) ब्लॉकों के जुड़ाव का सही वर्णन करता है।",
+     "गलत: (A) सही है; छेड़छाड़ आसानी से पकड़ी जाती है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "उभरती प्रौद्योगिकियाँ",
+     "ब्लॉकचेन"
+    ],
+    "facts": [
+     "ब्लॉकचेन अनेक कम्प्यूटरों (नोड्स) में साझा एक वितरित खाता-बही (distributed ledger) है।",
+     "बिटकॉइन (2009) ब्लॉकचेन का पहला प्रमुख अनुप्रयोग था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "MeitY – National Strategy on Blockchain (2021)",
+     "url": "https://www.meity.gov.in/"
+    },
+    {
+     "source": "NIST IR 8202, Blockchain Technology Overview",
+     "url": "https://csrc.nist.gov/pubs/ir/8202/final"
+    }
+   ],
+   "id": "ict-applications-013"
+  },
+  {
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Match List-I (Person) with List-II (Associated with) and select the correct answer using the codes given below the lists:\nList-I: A. John McCarthy B. Kevin Ashton C. Mark Weiser D. Alan Turing\nList-II: 1. Ubiquitous computing 2. A test of machine intelligence proposed in 1950 3. Coining the term 'Artificial Intelligence' 4. Coining the term 'Internet of Things'",
+    "options": [
+     "A-4, B-3, C-2, D-1",
+     "A-3, B-4, C-1, D-2",
+     "A-3, B-1, C-4, D-2",
+     "A-2, B-4, C-1, D-3"
+    ],
+    "explanation": "John McCarthy coined 'artificial intelligence' for the 1956 Dartmouth workshop; Kevin Ashton used 'Internet of Things' in 1999; Mark Weiser of Xerox PARC introduced 'ubiquitous computing'; Alan Turing proposed the imitation game (Turing test) in 1950.",
+    "notes": [
+     "Wrong: it swaps McCarthy and Ashton, and Weiser and Turing.",
+     "Correct: A-3, B-4, C-1, D-2.",
+     "Wrong: Ashton is linked with IoT, not ubiquitous computing.",
+     "Wrong: McCarthy coined 'AI'; the 1950 test is Turing's."
+    ],
+    "path": [
+     "ICT",
+     "Emerging technologies",
+     "AI and IoT",
+     "Pioneers"
+    ],
+    "facts": [
+     "Turing described his test in the paper 'Computing Machinery and Intelligence' (1950).",
+     "IoT connects everyday objects such as meters, wearables and appliances to the Internet."
+    ]
+   },
+   "hi": {
+    "q": "सूची-I (व्यक्ति) को सूची-II (संबंधित योगदान) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. जॉन मैकार्थी B. केविन एश्टन C. मार्क वाइज़र D. एलन ट्यूरिंग\nसूची-II: 1. सर्वव्यापी कम्प्यूटिंग (Ubiquitous computing) 2. 1950 में प्रस्तावित मशीनी बुद्धि का परीक्षण 3. 'कृत्रिम बुद्धिमत्ता' शब्द का प्रतिपादन 4. 'इंटरनेट ऑफ थिंग्स' शब्द का प्रतिपादन",
+    "options": [
+     "A-4, B-3, C-2, D-1",
+     "A-3, B-4, C-1, D-2",
+     "A-3, B-1, C-4, D-2",
+     "A-2, B-4, C-1, D-3"
+    ],
+    "explanation": "जॉन मैकार्थी ने 1956 की डार्टमाउथ कार्यशाला हेतु 'आर्टिफिशियल इंटेलिजेंस' शब्द गढ़ा; केविन एश्टन ने 1999 में 'इंटरनेट ऑफ थिंग्स' शब्द प्रयुक्त किया; ज़ेरॉक्स PARC के मार्क वाइज़र ने 'सर्वव्यापी कम्प्यूटिंग' की अवधारणा दी; एलन ट्यूरिंग ने 1950 में 'इमिटेशन गेम' (ट्यूरिंग परीक्षण) प्रस्तावित किया।",
+    "notes": [
+     "गलत: इसमें मैकार्थी–एश्टन तथा वाइज़र–ट्यूरिंग उलट गए हैं।",
+     "सही: A-3, B-4, C-1, D-2।",
+     "गलत: एश्टन IoT से संबंधित हैं, सर्वव्यापी कम्प्यूटिंग से नहीं।",
+     "गलत: 'AI' शब्द मैकार्थी का है; 1950 का परीक्षण ट्यूरिंग का है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "उभरती प्रौद्योगिकियाँ",
+     "एआई और आईओटी",
+     "अग्रदूत"
+    ],
+    "facts": [
+     "ट्यूरिंग ने अपना परीक्षण 'Computing Machinery and Intelligence' (1950) शोध-पत्र में वर्णित किया।",
+     "IoT मीटर, पहनने योग्य उपकरणों और घरेलू उपकरणों जैसी वस्तुओं को इंटरनेट से जोड़ता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Turing, A. M. (1950), 'Computing Machinery and Intelligence', Mind 59(236)",
+     "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+    },
+    {
+     "source": "McCarthy et al., A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence (1955)",
+     "url": "http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf"
+    }
+   ],
+   "id": "ict-applications-014"
+  }
+ ]
+}
