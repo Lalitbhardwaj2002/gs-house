@@ -4,6 +4,11 @@ A free, bilingual (Hindi + English) General Knowledge quiz for the **UPESSC TGT,
 
 **Play:** https://lalitbhardwaj2002.github.io/gs-house/
 
+**Install it as an app (free, works offline for solo practice):**
+- **Android (Chrome):** open the link and tap **📲 Install the app** on the home screen (or ⋮ menu → *Install app*).
+- **iPhone/iPad (Safari):** open the link, tap **Share** → **Add to Home Screen**.
+- **Computer (Chrome/Edge):** open the link and click the install icon in the address bar.
+
 - **1,266 exam-style questions** in 47 sections of the official syllabi (73 sections in 9 units, tagged TGT/PGT and Higher). Formats as in real papers: direct, statements, pairs, match-the-list with codes, chronology, assertion–reason.
 - Every question was written by one AI agent and **independently proof-read by another** (blind solve, facts, Hindi wording, references). Change logs are in `data/reports/`.
 - Tap an option: it turns **green** if correct, **red** if wrong, and an explanation appears with a topic flowchart, a note on every option, key facts and references (NCERT, the Constitution, official sites, and page numbers of *Special Topics 2.0* and *Parmar SSC*).

@@ -8,8 +8,8 @@ section gets about 6 high-yield questions.
 |---|---|---|
 | Finished (55–58 each) | pol-making, pol-rights, pol-dpsp, sci-physics, sci-chemistry, sci-biology, geo-physio, geo-rivers, geo-climate, hist-ivc, hist-vedic, hist-buddhism, hist-gupta, health-hormones | ≈784 |
 | Finished, capped at 42 | hist-maurya, pol-executive | 84 |
-| **40 each** | ict-computer, ict-internet, ict-applications, ict-terms, tra-teaching, tra-evaluation, tra-research, tra-data | 320 |
-| **6 each** | the other 49 sections (history, polity, economy, geography, science/env, health, edtech, tra-ugc, current affairs) | ≈294 |
+| **40 each** | ict-computer, ict-internet, ict-applications, ict-terms, edtech, tra-teaching, tra-evaluation, tra-research, tra-data | 360 |
+| **6 each** | the other 48 sections (history, polity, economy, geography, science/env, health, tra-ugc, current affairs) | ≈294 |
 | **Total** | | **≈1,480** |
 
 ## Small sections (6 questions)
