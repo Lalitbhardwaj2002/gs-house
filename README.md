@@ -1,4 +1,4 @@
-# 🪔 GS House (जीएस हाउस)
+# 🪔 GS House
 
 A free, bilingual (Hindi + English) General Knowledge quiz for the **UPESSC TGT, PGT and Assistant Professor (Higher Education)** exams. Play alone or with up to 20 friends using a room code.
 
