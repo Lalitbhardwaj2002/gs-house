@@ -1,0 +1,6 @@
+# The reference books are copyrighted: keep them (and anything made from them) on your own computer.
+refs/
+*.pdf
+__pycache__/
+# Unchecked drafts and checker work files never go public; only data/<id>.json (checked) does.
+data/draft/
