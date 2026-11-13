@@ -13,3 +13,14 @@ Corrected:
 - ca-sports-013: the final was drawn; Jammu and Kashmir won on the first-innings lead (note A and explanation corrected); Auqib Nabi named Player of the Tournament; source added.
 - ca-sports-014: source added (Sindarov youngest winner; top three qualified for Candidates).
 - ca-sports-018: fact "Glasgow hosted a scaled-down Games in 2026" gave away 006; replaced by "called the Commonwealth Games since 1978".
+
+## Check of 13 November 2026 (book companion, stage 4)
+
+Checked: 5 questions (ca-sports-021 to ca-sports-025). Corrected: 0. Replaced: 1.
+
+Replaced:
+- ca-sports-021: old question asked which chess player won the Khel Ratna for 2024 (D. Gukesh); ca-sports-005 already names the four 2024 awardees, so it was a repeat. New question (same group, Sports awards, answer D): how many sportspersons were chosen for the Khel Ratna for 2025 — none; the National Sports Awards 2025 were announced on 18 August 2026 with no Khel Ratna and 17 Arjuna awardees (including Divya Deshmukh and Vidit Gujrathi). Notes use 2024 (four), 2017 (two: Devendra Jhajharia and Sardar Singh) and 2015 (one: Sania Mirza). Sources: Ministry of Youth Affairs and Sports announcement as reported by The Bridge and others (18 Aug 2026); Khel Ratna list of awardees.
+
+Confirmed without change (key sources): 022 Laureus 2026 Alcaraz and Sabalenka, PSG team (Madrid, 20 Apr 2026); Duplantis 2025; Djokovic five times, last 2024; Messi 2020 (shared) and 2023; 023 Asia Cup 2025, Rajgir, India 4–1 Korea; 024 cricket at LA 2028, six teams each; 025 Neeraj Chopra 90.23 m at Doha, 16 May 2025, second to Julian Weber.
+
+Facts I could not confirm online: none.

@@ -22,10 +22,106 @@
      "pages": "3–22",
      "en": "Events of state, national and international importance",
      "hi": "राज्य, राष्ट्रीय एवं अंतरराष्ट्रीय महत्व की सामयिक घटनाएँ",
-     "practice": [
-      "ca-up",
-      "ca-national",
-      "ca-intl"
+     "chapters": [
+      {
+       "id": "gc-ca-01",
+       "pages": "3–4",
+       "en": "Uttar Pradesh in the news",
+       "hi": "समाचारों में उत्तर प्रदेश",
+       "pool": [
+        [
+         "ca-up",
+         "Uttar Pradesh"
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-02",
+       "pages": "5",
+       "en": "National events, laws and schemes",
+       "hi": "राष्ट्रीय घटनाएँ, कानून एवं योजनाएँ",
+       "pool": [
+        [
+         "ca-national",
+         "National Affairs",
+         [
+          "Census 2027",
+          "National events",
+          "Government schemes",
+          "Laws",
+          "Infrastructure",
+          "Governance"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-03",
+       "pages": "6–11",
+       "en": "International relations, summits and world bodies",
+       "hi": "अंतरराष्ट्रीय संबंध, शिखर सम्मेलन एवं विश्व संस्थाएँ",
+       "pool": [
+        [
+         "ca-intl",
+         "International Affairs"
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-04",
+       "pages": "12–14",
+       "en": "Economy, budget, banking, reports and rankings",
+       "hi": "अर्थव्यवस्था, बजट, बैंकिंग, रिपोर्ट एवं रैंकिंग",
+       "pool": [
+        [
+         "ca-national",
+         "National Affairs",
+         [
+          "Economy and budget",
+          "Reports and indices",
+          "Banking reforms"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-05",
+       "pages": "15–18",
+       "en": "Science, space and defence",
+       "hi": "विज्ञान, अंतरिक्ष एवं रक्षा",
+       "levels": "all",
+       "pool": [
+        [
+         "ca-science",
+         "Current Research in Science"
+        ],
+        [
+         "ca-national",
+         "National Affairs",
+         [
+          "Science and health",
+          "Defence and security"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-06",
+       "pages": "19–21",
+       "en": "Environment, agriculture, disasters, health and society",
+       "hi": "पर्यावरण, कृषि, आपदा, स्वास्थ्य एवं समाज",
+       "pool": [
+        [
+         "ca-national",
+         "National Affairs",
+         [
+          "Environment",
+          "Environment and climate",
+          "Health and social issues"
+         ]
+        ]
+       ]
+      }
      ]
     },
     {
@@ -34,9 +130,55 @@
      "pages": "22–28",
      "en": "Personalities in the news, awards and honours",
      "hi": "चर्चित व्यक्तित्व एवं पुरस्कार-सम्मान",
-     "practice": [
-      "ca-people",
-      "ca-awards"
+     "chapters": [
+      {
+       "id": "gc-ca-07",
+       "pages": "22–23",
+       "en": "Who's who: appointments and people in the news",
+       "hi": "कौन क्या है: नियुक्तियाँ एवं चर्चित व्यक्ति",
+       "pool": [
+        [
+         "ca-people",
+         "Personalities in News"
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-08",
+       "pages": "24",
+       "en": "Awards and honours",
+       "hi": "पुरस्कार एवं सम्मान",
+       "pool": [
+        [
+         "ca-awards",
+         "Awards, Books & Important Days",
+         [
+          "Literary awards",
+          "Nobel Prizes",
+          "National honours",
+          "International awards",
+          "Gallantry awards"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-09",
+       "pages": "25–27",
+       "en": "Art, culture, books and films",
+       "hi": "कला, संस्कृति, पुस्तकें एवं फिल्में",
+       "pool": [
+        [
+         "ca-awards",
+         "Awards, Books & Important Days",
+         [
+          "Books and authors",
+          "Films",
+          "Art and culture"
+         ]
+        ]
+       ]
+      }
      ]
     },
     {
@@ -45,8 +187,34 @@
      "pages": "28–35",
      "en": "Sports",
      "hi": "खेलकूद",
-     "practice": [
-      "ca-sports"
+     "chapters": [
+      {
+       "id": "gc-ca-10",
+       "pages": "28–33",
+       "en": "Sports: cricket, hockey, the Games and awards",
+       "hi": "खेलकूद: क्रिकेट, हॉकी, खेल आयोजन एवं पुरस्कार",
+       "pool": [
+        [
+         "ca-sports",
+         "Sports"
+        ]
+       ]
+      },
+      {
+       "id": "gc-ca-11",
+       "pages": "34–35",
+       "en": "Important days, years and themes",
+       "hi": "महत्वपूर्ण दिवस, वर्ष एवं विषय",
+       "pool": [
+        [
+         "ca-awards",
+         "Awards, Books & Important Days",
+         [
+          "Important days"
+         ]
+        ]
+       ]
+      }
      ]
     }
    ]
