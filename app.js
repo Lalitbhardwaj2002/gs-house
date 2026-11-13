@@ -138,8 +138,8 @@ const T = {
     pausedSolo: 'The clock has stopped. Resume when you are ready.',
     pausedHost: 'The clock has stopped for everyone. Resume when you are ready.',
     pausedGuest: (n) => `${n} has paused the quiz. It will continue shortly…`,
-    submitSolo: 'Submit the quiz now and see your result? Questions you have not reached will not be counted.',
-    submitHost: 'Submit the quiz now for everyone and show the results? Questions not reached will not be counted.',
+    submitAsk: 'Submit the quiz?', submitAskAll: 'Submit the quiz for everyone?',
+    submitNote: 'You will see the result for the questions done so far.', keepPlaying: 'Keep playing', leaveYes: 'Leave', stay: 'Stay',
     submittedEarly: (a, n) => `Submitted early: ${a} of ${n} questions`,
     quickPractice: 'Quick practice', savedQs: (n) => `🔖 Saved questions (${n})`, mistakes: (n) => `✗ My mistakes (${n})`,
     save: 'Save this question for revision', saved: 'Saved for revision', unsaved: 'Removed from saved questions',
@@ -209,8 +209,8 @@ const T = {
     pausedSolo: 'घड़ी रुक गई है। तैयार होने पर जारी रखें।',
     pausedHost: 'सभी के लिए घड़ी रुक गई है। तैयार होने पर जारी रखें।',
     pausedGuest: (n) => `${n} ने प्रश्नोत्तरी रोकी है। यह शीघ्र आगे बढ़ेगी…`,
-    submitSolo: 'प्रश्नोत्तरी अभी जमा करके परिणाम देखें? जिन प्रश्नों तक आप नहीं पहुँचे, वे नहीं गिने जाएँगे।',
-    submitHost: 'सभी के लिए प्रश्नोत्तरी अभी जमा करके परिणाम दिखाएँ? जिन प्रश्नों तक नहीं पहुँचे, वे नहीं गिने जाएँगे।',
+    submitAsk: 'प्रश्नोत्तरी जमा करें?', submitAskAll: 'सभी के लिए प्रश्नोत्तरी जमा करें?',
+    submitNote: 'अब तक किए गए प्रश्नों का परिणाम दिखेगा।', keepPlaying: 'खेलते रहें', leaveYes: 'छोड़ें', stay: 'रुकें',
     submittedEarly: (a, n) => `समय से पहले जमा: ${n} में से ${a} प्रश्न`,
     quickPractice: 'त्वरित अभ्यास', savedQs: (n) => `🔖 सहेजे गए प्रश्न (${n})`, mistakes: (n) => `✗ मेरी गलतियाँ (${n})`,
     save: 'इस प्रश्न को दोहराने के लिए सहेजें', saved: 'दोहराने के लिए सहेजा गया', unsaved: 'सहेजे गए प्रश्नों से हटाया गया',
@@ -249,9 +249,9 @@ function setLang(l) {
 }
 
 // ---------- preferences kept on this device ----------
-const FS_STEPS = [0.75, 0.8, 0.85, 0.9, 1, 1.1, 1.15, 1.25];   // 75% to 125%, the steps the owner asked for
+const FS_STEPS = [0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5];   // 50% to 150%, the steps the owner asked for
 const storedFs = Number(store.get('localStorage', 'pp-fs'));
-// A size saved by an earlier version (0.88, 1.12 or 1.4) moves to the nearest step.
+// A size saved by an earlier version (for example 0.75 or 1.15) moves to the nearest step.
 const savedFs = storedFs ? FS_STEPS.reduce((a, b) => (Math.abs(b - storedFs) < Math.abs(a - storedFs) ? b : a)) : 0;
 const prefs = {
   theme: store.get('localStorage', 'pp-theme'),             // 'dark', 'light', or nothing: follow the device
@@ -2114,7 +2114,8 @@ const actions = {
   submit() {
     const v = ui.view;
     if (!v || v.phase !== 'question') return;
-    if (window.confirm(t(v.solo ? 'submitSolo' : 'submitHost'))) act({ type: 'submit' });
+    askConfirm({ title: t(v.solo ? 'submitAsk' : 'submitAskAll'), text: t('submitNote'), yes: t('submit'), no: t('keepPlaying') })
+      .then((ok) => { if (ok && ui.view && ui.view.phase === 'question') act({ type: 'submit' }); });
   },
   again: () => act({ type: 'again' }),
   sheet() { ui.sheet = true; ui.sheetLang = lang; ui.sheetFilter = 'all'; render(); window.scrollTo(0, 0); },
@@ -2147,7 +2148,7 @@ const actions = {
   mute() { sfx.toggle(); refresh(); },
   leave() {
     const msg = !net ? t('leaveSolo') : net.role === 'host' ? (net.solo ? t('leaveSolo') : t('leaveHost')) : t('leaveGuest');
-    if (window.confirm(msg)) leaveGame();
+    askConfirm({ title: msg, yes: t('leaveYes'), no: t('stay') }).then((ok) => { if (ok) leaveGame(); });
   },
   home: () => leaveGame(),
   'leave-now': () => leaveGame(),
@@ -2283,6 +2284,49 @@ document.addEventListener('visibilitychange', () => {
 // ---------- banner / toast / petals / vibration ----------
 function setBanner(text) { const b = $('#banner'); b.textContent = text; b.hidden = !text; }
 let toastTimer = null;
+// A small question box drawn by the app itself, in the app's own colours, in place of the browser's
+// confirm dialog. Resolves to true for the 'yes' button, false for 'no', Escape or a tap outside.
+function askConfirm({ title, text = '', yes, no }) {
+  if (document.querySelector('.dialog-backdrop')) return Promise.resolve(false);
+  return new Promise((resolve) => {
+    const box = document.createElement('div');
+    box.className = 'dialog-backdrop';
+    box.innerHTML = `
+      <div class="dialog" role="alertdialog" aria-modal="true" aria-labelledby="dialog-title">
+        <h2 id="dialog-title">${esc(title)}</h2>
+        ${text ? `<p>${esc(text)}</p>` : ''}
+        <div class="dialog-actions">
+          <button class="btn" data-answer="no">${esc(no)}</button>
+          <button class="btn primary" data-answer="yes">${esc(yes)}</button>
+        </div>
+      </div>`;
+    const close = (answer) => {
+      document.removeEventListener('keydown', onKey, true);
+      box.remove();
+      resolve(answer);
+    };
+    // While the box is open the quiz keys (A–D, Enter, P) must not reach the question behind it.
+    const onKey = (e) => {
+      e.stopPropagation();
+      if (e.key === 'Escape') { e.preventDefault(); close(false); return; }
+      const buttons = [...box.querySelectorAll('button')];
+      const at = buttons.indexOf(document.activeElement);
+      if (e.key === 'Tab') {                 // keep the focus on the two buttons of the box
+        e.preventDefault();
+        buttons[(at + (e.shiftKey ? buttons.length - 1 : 1)) % buttons.length].focus();
+      } else if ((e.key === 'Enter' || e.key === ' ') && at < 0) e.preventDefault();   // nothing behind the box may be pressed
+    };
+    box.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-answer]');
+      if (btn) close(btn.dataset.answer === 'yes');
+      else if (e.target === box) close(false);
+    });
+    document.addEventListener('keydown', onKey, true);
+    document.body.appendChild(box);
+    box.querySelector('[data-answer="yes"]').focus();
+  });
+}
+
 function toast(text) {
   const el = $('#toast');
   el.textContent = text;
