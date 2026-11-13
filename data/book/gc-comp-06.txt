@@ -1,0 +1,117 @@
+@en
+# E-mail: history, parts, services and protocols
+> A letter once took days. An e-mail takes seconds, costs nothing and can carry a photo or a whole book. Yet it still works like a post office: an **address**, an **envelope** with a few boxes to fill, and **postmen** called protocols.
+
+## 📜 A short history
+~ 1971 :: ==Ray Tomlinson== sends the first e-mail on a network and chooses the ==@== sign.
+~ 1996 :: Hotmail, one of the first web-mail services, is started by Sabeer Bhatia and Jack Smith.
+~ 2004 :: Google starts Gmail.
+
+## 📍 The address
+An e-mail address has two parts joined by one @ sign: **username@domain**.
+- The part before @ is the **user name**.
+- The part after @ is the ==domain name of the mail server==.
+- No blank spaces, and only one @.
+- Example: principal@school.edu.in
+
+## ✉️ Parts of an e-mail
+| Box | Use |
+| To | Main receivers |
+| ==CC== (carbon copy) | Others who get a copy; everyone can see them |
+| ==BCC== (blind carbon copy) | Others who get a copy; hidden from the rest |
+| Subject | A short title |
+| Body | The message itself |
+| Attachment | A file sent with the message |
+| Signature | Name and details added at the end |
+
+Folders: Inbox, Sent, Drafts (written but not sent), Spam and Trash.
+
+## 🚚 The postmen: protocols
+| Protocol | Full form | Work |
+| ==SMTP== | Simple Mail Transfer Protocol | Sends mail |
+| POP3 | Post Office Protocol, version 3 | Downloads mail to one device |
+| ==IMAP== | Internet Message Access Protocol | Keeps mail on the server, so every device shows the same mailbox |
+
+## 🛡️ Using mail safely
+- ==Spam== is unwanted bulk mail, also called junk mail.
+- **Phishing** mails pretend to be from a bank or office to steal passwords.
+- Do not open attachments from unknown senders; they may carry malware.
+- Services: Gmail, Outlook.com, Yahoo Mail, Rediffmail.
+
+! trick | Trick: C for 'clear', B for 'blind'
+**CC** is clear to all. **BCC** keeps the receivers blind to one another.
+
+! exam | Exam favourites
+- The first e-mail was sent by Ray Tomlinson.
+- The protocol used to send mail is SMTP.
+- Google Chrome is a browser, not an e-mail service.
+
+## 👆 Quick recall
+? Which sign separates the user name from the domain? :: @
+? Which field hides the receivers from one another? :: BCC
+? Which protocol sends e-mail? :: SMTP
+? What is junk mail called? :: Spam
+
+! recap | 30-second recap
+- Address = username@domain.
+- To, CC, BCC, Subject, Body, Attachment.
+- SMTP sends; POP3 and IMAP receive.
+
+@hi
+# ई-मेल: इतिहास, संरचना, सेवाएँ एवं प्रोटोकॉल
+> कभी एक पत्र पहुँचने में कई दिन लगते थे। ई-मेल कुछ सेकंड में पहुँचती है, निःशुल्क है और अपने साथ चित्र या पूरी पुस्तक ले जा सकती है। फिर भी यह डाकघर की तरह ही चलती है: एक **पता**, कुछ खानों वाला एक **लिफाफा**, और **डाकिए** जिन्हें प्रोटोकॉल कहते हैं।
+
+## 📜 संक्षिप्त इतिहास
+~ 1971 :: ==रे टॉमलिंसन== ने नेटवर्क पर पहली ई-मेल भेजी और ==@== चिह्न चुना।
+~ 1996 :: सबीर भाटिया और जैक स्मिथ ने आरंभिक वेब-मेल सेवाओं में से एक, हॉटमेल, शुरू की।
+~ 2004 :: गूगल ने जीमेल शुरू की।
+
+## 📍 पता
+ई-मेल पते के दो भाग होते हैं, जो एक @ चिह्न से जुड़े होते हैं: **उपयोगकर्ता-नाम@डोमेन**।
+- @ से पहले का भाग **उपयोगकर्ता नाम** है।
+- @ के बाद का भाग ==मेल सर्वर का डोमेन नाम== है।
+- कोई खाली स्थान नहीं, और केवल एक @।
+- उदाहरण: principal@school.edu.in
+
+## ✉️ ई-मेल के भाग
+| खाना | उपयोग |
+| To | मुख्य प्राप्तकर्ता |
+| ==CC== (कार्बन कॉपी) | जिन्हें प्रति मिलती है; सभी उन्हें देख सकते हैं |
+| ==BCC== (ब्लाइंड कार्बन कॉपी) | जिन्हें प्रति मिलती है; बाकी से छिपे रहते हैं |
+| Subject (विषय) | छोटा शीर्षक |
+| Body (मुख्य भाग) | स्वयं संदेश |
+| Attachment (संलग्नक) | संदेश के साथ भेजी गई फाइल |
+| Signature (हस्ताक्षर) | अंत में जुड़ने वाला नाम और विवरण |
+
+फोल्डर: इनबॉक्स, सेंट, ड्राफ्ट (लिखी पर भेजी नहीं गई), स्पैम और ट्रैश।
+
+## 🚚 डाकिए: प्रोटोकॉल
+| प्रोटोकॉल | पूर्ण रूप | कार्य |
+| ==SMTP== | सिंपल मेल ट्रांसफर प्रोटोकॉल | मेल भेजता है |
+| POP3 | पोस्ट ऑफिस प्रोटोकॉल, संस्करण 3 | मेल को एक युक्ति पर डाउनलोड करता है |
+| ==IMAP== | इंटरनेट मैसेज एक्सेस प्रोटोकॉल | मेल सर्वर पर रखता है, इसलिए हर युक्ति पर वही मेलबॉक्स दिखता है |
+
+## 🛡️ मेल का सुरक्षित उपयोग
+- ==स्पैम== बिना माँगी थोक मेल है, जिसे जंक मेल भी कहते हैं।
+- **फिशिंग** मेल पासवर्ड चुराने के लिए स्वयं को बैंक या कार्यालय की मेल बताती हैं।
+- अनजान प्रेषक के संलग्नक न खोलें; उनमें मैलवेयर हो सकता है।
+- सेवाएँ: जीमेल, आउटलुक डॉट कॉम, याहू मेल, रेडिफमेल।
+
+! trick | युक्ति: CC सबको दिखे, BCC छिपी रहे
+**CC** सबके सामने है। **BCC** प्राप्तकर्ताओं को एक-दूसरे से छिपाए रखती है।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- पहली ई-मेल रे टॉमलिंसन ने भेजी।
+- मेल भेजने के लिए प्रयुक्त प्रोटोकॉल SMTP है।
+- गूगल क्रोम ब्राउज़र है, ई-मेल सेवा नहीं।
+
+## 👆 झटपट दोहराव
+? उपयोगकर्ता नाम को डोमेन से कौन-सा चिह्न अलग करता है? :: @
+? कौन-सा खाना प्राप्तकर्ताओं को एक-दूसरे से छिपाता है? :: BCC
+? कौन-सा प्रोटोकॉल ई-मेल भेजता है? :: SMTP
+? जंक मेल को क्या कहते हैं? :: स्पैम
+
+! recap | 30 सेकंड का सार
+- पता = उपयोगकर्ता-नाम@डोमेन।
+- To, CC, BCC, विषय, मुख्य भाग, संलग्नक।
+- SMTP भेजता है; POP3 और IMAP प्राप्त कराते हैं।

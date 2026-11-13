@@ -145,7 +145,7 @@ const T = {
     keysHint: 'Keyboard: A–D or 1–4 to answer · Enter for the next question',
     sideWait: 'The explanation appears here once you answer.',
     bookCardTitle: 'Study with the book: Ghatna Chakra (new edition)',
-    bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank. Polity is ready; the other topics are coming soon.',
+    bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank. Topics marked "Notes + quizzes" are ready; the rest are coming soon.',
     bookRefLine: 'Reference',
     notesPdf: 'All notes as one PDF', chapterPdf: 'Save this chapter as PDF', pdfTitle: 'Notes for offline reading',
     pdfHow: 'Press the button below, then choose "Save as PDF" as the printer. On a phone the same button opens Print, where the PDF can be saved.',
@@ -213,7 +213,7 @@ const T = {
     notesPdf: 'सभी नोट्स एक PDF में', chapterPdf: 'इस अध्याय को PDF में सहेजें', pdfTitle: 'बिना इंटरनेट पढ़ने के लिए नोट्स',
     pdfHow: 'नीचे का बटन दबाएँ, फिर प्रिंटर के रूप में "Save as PDF" चुनें। फोन पर यही बटन प्रिंट खोलता है, जहाँ से PDF सहेजी जा सकती है।',
     pdfMade: 'ये नोट्स GS House के लिए लिखे गए हैं। ये पुस्तक के विषय-क्रम के अनुसार हैं; पृष्ठ संख्या उसी पुस्तक की है।',
-    bookCardSub: 'टीजीटी/पीजीटी सामान्य ज्ञान प्रश्नकोश के विषय-क्रम में नोट्स और अध्यायवार प्रश्नोत्तरी। राजव्यवस्था तैयार है; शेष विषय जल्द आ रहे हैं।',
+    bookCardSub: 'टीजीटी/पीजीटी सामान्य ज्ञान प्रश्नकोश के विषय-क्रम में नोट्स और अध्यायवार प्रश्नोत्तरी। "नोट्स + प्रश्नोत्तरी" वाले विषय तैयार हैं; शेष जल्द आ रहे हैं।',
     bookOpen: 'पुस्तक साथी खोलें', bookShort: 'पुस्तक साथी', bookBack: 'पुस्तक पर लौटें', bookAgain: 'नए प्रश्न आज़माएँ',
     bookPages: (p) => `पुस्तक पृ. ${p}`, comingSoon: 'जल्द आ रहा है', notesReady: 'नोट्स + प्रश्नोत्तरी', readNotes: 'नोट्स पढ़ें', quiz: 'प्रश्नोत्तरी',
     readN: (a, n) => `${n} में से ${a} अध्याय पढ़े`, best: (p) => `सर्वश्रेष्ठ ${p}%`, chapterOf: (i, n) => `अध्याय ${i} / ${n}`,
@@ -1786,11 +1786,13 @@ async function showChapter(topic, chapter, keepScroll) {
   }
 }
 
-// The questions of a chapter: every TGT or PGT question whose topic path matches the chapter's pool.
+// The questions of a chapter: every question whose topic path matches the chapter's pool. Only TGT
+// and PGT questions are used, unless the chapter says `"levels": "all"` (topics that the bank
+// covers only at the Higher level, such as teaching and research aptitude).
 async function chapterQuestions(chapter) {
   await loadBank([...new Set(chapter.pool.map((p) => p[0]))]);
   return chapter.pool.flatMap(([sec, p1, p2]) => (host.bank[sec] || [])
-    .filter((q) => q.level !== 'Higher' && q.en.path[1] === p1 && (!p2 || p2.includes(q.en.path[2])))
+    .filter((q) => (chapter.levels === 'all' || q.level !== 'Higher') && q.en.path[1] === p1 && (!p2 || p2.includes(q.en.path[2])))
     .map((q) => q.id));
 }
 

@@ -1,0 +1,117 @@
+@en
+# Input, output and processing devices; software and languages
+> A computer has **hands, a brain and a mouth**. Input devices feed it, the CPU thinks, and output devices answer. But the body does nothing until **software** tells it what to do, in a **language** it can follow.
+
+## ⌨️ Devices
+| Kind | Examples |
+| Input | Keyboard, mouse, scanner, microphone, webcam, joystick, light pen, barcode reader |
+| Output | Monitor, printer, plotter, speaker, projector |
+| Both | Touch screen, modem |
+
+- Readers used in examinations and banks: ==OMR== (marks on answer sheets), OCR (printed text) and ==MICR== (cheques).
+- Printers: **impact** (dot matrix) and **non-impact** (inkjet, laser).
+- A plotter draws large maps and engineering drawings.
+
+## 🧠 The CPU: the brain
+- Three parts: **ALU** (arithmetic and logic), **CU** (control unit) and **registers**.
+- Its speed is measured in gigahertz (GHz).
+- A **GPU** (Graphics Processing Unit) handles pictures and video.
+
+## 💿 Software
+| Type | Work | Examples |
+| System software | Runs the computer itself | Operating systems: Windows, Linux, Android |
+| Application software | Does the user's work | MS Word, Excel, web browser |
+| Utility software | Looks after the system | Antivirus, disk cleaner |
+
+- The ==operating system== manages memory, files, devices and running programs.
+- ==BIOS== (Basic Input Output System) starts the computer. Starting up is called **booting**.
+- Linux is open-source; its kernel was written by Linus Torvalds in 1991.
+
+## 🗣️ Programming languages
+~ Machine language :: Only 0 and 1. The computer understands it directly.
+~ Assembly language :: Short codes; needs an assembler.
+~ High-level languages :: Close to English: FORTRAN (science), COBOL (business), C, C++, Java, Python.
+~ Languages for AI :: LISP and Prolog.
+
+| Translator | How it works |
+| Compiler | Translates the whole program at once |
+| Interpreter | Translates and runs one line at a time |
+| Assembler | Translates assembly language |
+
+! trick | Trick: compiler and interpreter
+A **compiler** is like translating a whole book before reading it. An **interpreter** is like a guide who translates each sentence as it is spoken.
+
+! exam | Exam favourites
+- The mouse was invented by Douglas Engelbart.
+- The CPU is called the brain of the computer.
+- C was developed by Dennis Ritchie; Java by James Gosling.
+
+## 👆 Quick recall
+? Which device reads marks on answer sheets? :: OMR (Optical Mark Reader)
+? What does BIOS stand for? :: Basic Input Output System
+? Which part of the CPU does calculations? :: ALU
+? Which translator works line by line? :: Interpreter
+
+! recap | 30-second recap
+- Input feeds, CPU processes, output shows.
+- System software runs the machine; application software does our work.
+- Compiler: whole program at once. Interpreter: line by line.
+
+@hi
+# इनपुट, आउटपुट एवं प्रसंस्करण उपकरण; सॉफ्टवेयर एवं भाषाएँ
+> कंप्यूटर के **हाथ, मस्तिष्क और मुख** होते हैं। इनपुट युक्तियाँ उसे सामग्री देती हैं, CPU सोचता है और आउटपुट युक्तियाँ उत्तर देती हैं। पर शरीर तब तक कुछ नहीं करता, जब तक **सॉफ्टवेयर** उसे किसी ऐसी **भाषा** में न बताए जिसे वह समझ सके।
+
+## ⌨️ युक्तियाँ
+| प्रकार | उदाहरण |
+| इनपुट | कीबोर्ड, माउस, स्कैनर, माइक्रोफोन, वेबकैम, जॉयस्टिक, लाइट पेन, बारकोड रीडर |
+| आउटपुट | मॉनिटर, प्रिंटर, प्लॉटर, स्पीकर, प्रोजेक्टर |
+| दोनों | टच स्क्रीन, मॉडेम |
+
+- परीक्षाओं और बैंकों में प्रयुक्त रीडर: ==OMR== (उत्तर-पत्रक के चिह्न), OCR (छपा पाठ) और ==MICR== (चेक)।
+- प्रिंटर: **इम्पैक्ट** (डॉट मैट्रिक्स) और **नॉन-इम्पैक्ट** (इंकजेट, लेज़र)।
+- प्लॉटर बड़े मानचित्र और इंजीनियरी आरेख बनाता है।
+
+## 🧠 CPU: मस्तिष्क
+- तीन भाग: **ALU** (अंकगणित और तर्क), **CU** (नियंत्रण इकाई) और **रजिस्टर**।
+- इसकी गति गीगाहर्ट्ज (GHz) में नापी जाती है।
+- **GPU** (ग्राफिक्स प्रोसेसिंग यूनिट) चित्र और वीडियो सँभालता है।
+
+## 💿 सॉफ्टवेयर
+| प्रकार | कार्य | उदाहरण |
+| सिस्टम सॉफ्टवेयर | स्वयं कंप्यूटर को चलाता है | ऑपरेटिंग सिस्टम: विंडोज, लिनक्स, एंड्रॉइड |
+| एप्लिकेशन सॉफ्टवेयर | उपयोगकर्ता का काम करता है | MS वर्ड, एक्सेल, वेब ब्राउज़र |
+| यूटिलिटी सॉफ्टवेयर | सिस्टम की देखभाल करता है | एंटीवायरस, डिस्क क्लीनर |
+
+- ==ऑपरेटिंग सिस्टम== मेमोरी, फाइलों, युक्तियों और चल रहे प्रोग्रामों का प्रबंधन करता है।
+- ==BIOS== (बेसिक इनपुट आउटपुट सिस्टम) कंप्यूटर को चालू करता है। चालू होने की प्रक्रिया **बूटिंग** कहलाती है।
+- लिनक्स ओपन-सोर्स है; इसका कर्नेल लिनस टॉरवाल्ड्स ने 1991 में लिखा।
+
+## 🗣️ प्रोग्रामिंग भाषाएँ
+~ मशीन भाषा :: केवल 0 और 1। कंप्यूटर इसे सीधे समझता है।
+~ असेंबली भाषा :: छोटे कूट; इसके लिए असेंबलर चाहिए।
+~ उच्च-स्तरीय भाषाएँ :: अंग्रेजी के निकट: फोरट्रान (विज्ञान), कोबोल (व्यवसाय), C, C++, जावा, पायथन।
+~ एआई की भाषाएँ :: लिस्प और प्रोलॉग।
+
+| अनुवादक | कार्य-विधि |
+| कंपाइलर | पूरे प्रोग्राम का एक साथ अनुवाद करता है |
+| इंटरप्रेटर | एक-एक पंक्ति का अनुवाद कर उसे चलाता है |
+| असेंबलर | असेंबली भाषा का अनुवाद करता है |
+
+! trick | युक्ति: कंपाइलर और इंटरप्रेटर
+**कंपाइलर** ऐसा है जैसे पढ़ने से पहले पूरी पुस्तक का अनुवाद कर लेना। **इंटरप्रेटर** ऐसा है जैसे कोई दुभाषिया हर वाक्य को बोलते ही अनुवाद करे।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- माउस का आविष्कार डगलस एंगेलबार्ट ने किया।
+- CPU को कंप्यूटर का मस्तिष्क कहा जाता है।
+- C भाषा डेनिस रिची ने विकसित की; जावा जेम्स गोस्लिंग ने।
+
+## 👆 झटपट दोहराव
+? उत्तर-पत्रक के चिह्न कौन-सी युक्ति पढ़ती है? :: OMR (ऑप्टिकल मार्क रीडर)
+? BIOS का पूर्ण रूप क्या है? :: बेसिक इनपुट आउटपुट सिस्टम
+? CPU का कौन-सा भाग गणना करता है? :: ALU
+? कौन-सा अनुवादक पंक्ति-दर-पंक्ति कार्य करता है? :: इंटरप्रेटर
+
+! recap | 30 सेकंड का सार
+- इनपुट सामग्री देता है, CPU प्रोसेस करता है, आउटपुट दिखाता है।
+- सिस्टम सॉफ्टवेयर मशीन चलाता है; एप्लिकेशन सॉफ्टवेयर हमारा काम करता है।
+- कंपाइलर: पूरा प्रोग्राम एक साथ। इंटरप्रेटर: पंक्ति-दर-पंक्ति।

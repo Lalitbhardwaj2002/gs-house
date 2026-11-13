@@ -1,0 +1,103 @@
+@en
+# Computer networking and communication technology
+> One computer is a clever loner. Join two with a cable and they can share a file. Join millions and you get the Internet. A **network** is simply computers connected to share data and devices. This chapter is about the sizes, shapes and parts of a network.
+
+## 🌐 Networks by size
+| Network | Full form | Covers | Example |
+| PAN | Personal Area Network | A few metres | Phone and Bluetooth earphones |
+| LAN | Local Area Network | A room, building or campus | School computer lab |
+| MAN | ==Metropolitan Area Network== | A city | Cable TV network of a town |
+| WAN | Wide Area Network | Countries and continents | The Internet, the largest WAN |
+
+## 🔺 Shapes of a network (topology)
+| Topology | Shape | Point to remember |
+| Bus | All on one main cable | Cheap; the cable is the weak point |
+| Star | All joined to a central hub or switch | If the centre fails, the network stops |
+| Ring | Each joined to two neighbours in a circle | Data usually moves in one direction |
+| Mesh | Every device joined to every other | Most reliable, most costly |
+
+## 🔌 Network devices
+| Device | Work |
+| ==Modem== | Changes digital signals to analog and back (modulator-demodulator) |
+| Hub | Sends data to every device connected to it |
+| Switch | Sends data only to the device it is meant for |
+| ==Router== | Joins different networks and chooses the path for data |
+| Gateway | Joins networks that use different protocols |
+| Repeater | Strengthens a weak signal |
+
+## 📡 How the signal travels
+- **Wired**: twisted pair, coaxial cable and ==optical fibre==, which carries data as light and is the fastest.
+- **Wireless**: Wi-Fi, Bluetooth, infrared, microwaves and satellites.
+- ==Bandwidth== is the amount of data that can pass in a given time, measured in bits per second.
+- A ==VPN== (Virtual Private Network) makes a safe, encrypted path over a public network.
+
+! trick | Trick: P-L-M-W
+From small to large: **PAN, LAN, MAN, WAN**. Person, Lab, Metro city, World.
+
+! exam | Exam favourites
+- ARPANET (1969) was the first wide-area packet-switching network and the forerunner of the Internet.
+- Wi-Fi works on the IEEE 802.11 standards.
+- The word 'modem' comes from modulator and demodulator.
+
+## 👆 Quick recall
+? Which network covers a city? :: MAN
+? Which device connects two different networks? :: Router
+? Which cable carries data as light? :: Optical fibre
+? What does VPN stand for? :: Virtual Private Network
+
+! recap | 30-second recap
+- PAN, LAN, MAN, WAN: small to large.
+- Star needs a central switch; mesh is the most reliable.
+- Modem converts, switch delivers, router connects networks.
+
+@hi
+# कंप्यूटर नेटवर्किंग एवं संचार प्रौद्योगिकी
+> अकेला कंप्यूटर होशियार पर अकेला है। दो को केबल से जोड़िए, वे फाइल साझा कर सकते हैं। करोड़ों को जोड़िए, इंटरनेट बन जाता है। **नेटवर्क** का अर्थ बस इतना है कि कंप्यूटर डेटा और युक्तियाँ साझा करने के लिए जुड़े हों। यह अध्याय नेटवर्क के आकार, बनावट और पुर्जों के बारे में है।
+
+## 🌐 आकार के अनुसार नेटवर्क
+| नेटवर्क | पूर्ण रूप | विस्तार | उदाहरण |
+| PAN | पर्सनल एरिया नेटवर्क | कुछ मीटर | फोन और ब्लूटूथ ईयरफोन |
+| LAN | लोकल एरिया नेटवर्क | कमरा, भवन या परिसर | विद्यालय की कंप्यूटर लैब |
+| MAN | ==मेट्रोपॉलिटन एरिया नेटवर्क== | एक नगर | किसी नगर का केबल टीवी नेटवर्क |
+| WAN | वाइड एरिया नेटवर्क | देश और महाद्वीप | इंटरनेट, सबसे बड़ा WAN |
+
+## 🔺 नेटवर्क की बनावट (टोपोलॉजी)
+| टोपोलॉजी | बनावट | याद रखने की बात |
+| बस | सभी एक मुख्य केबल पर | सस्ती; केबल ही कमजोर कड़ी है |
+| स्टार | सभी एक केंद्रीय हब या स्विच से जुड़े | केंद्र बंद हुआ तो नेटवर्क बंद |
+| रिंग | हर युक्ति दो पड़ोसियों से जुड़कर घेरा बनाती है | डेटा प्रायः एक दिशा में चलता है |
+| मेश | हर युक्ति हर दूसरी से जुड़ी | सबसे विश्वसनीय, सबसे महँगी |
+
+## 🔌 नेटवर्क की युक्तियाँ
+| युक्ति | कार्य |
+| ==मॉडेम== | डिजिटल संकेतों को एनालॉग में और वापस बदलता है (मॉड्यूलेटर-डीमॉड्यूलेटर) |
+| हब | डेटा को अपने से जुड़ी हर युक्ति को भेजता है |
+| स्विच | डेटा केवल उसी युक्ति को भेजता है जिसके लिए वह है |
+| ==राउटर== | अलग-अलग नेटवर्कों को जोड़ता है और डेटा का मार्ग चुनता है |
+| गेटवे | भिन्न प्रोटोकॉल वाले नेटवर्कों को जोड़ता है |
+| रिपीटर | कमजोर संकेत को प्रबल करता है |
+
+## 📡 संकेत कैसे चलता है
+- **तार वाला**: ट्विस्टेड पेयर, कोएक्सियल केबल और ==ऑप्टिकल फाइबर==, जो डेटा को प्रकाश के रूप में ले जाता है और सबसे तेज है।
+- **बेतार**: वाई-फाई, ब्लूटूथ, इन्फ्रारेड, सूक्ष्म तरंगें और उपग्रह।
+- ==बैंडविड्थ== वह डेटा मात्रा है जो निश्चित समय में गुजर सकती है; इसे बिट प्रति सेकंड में नापते हैं।
+- ==VPN== (वर्चुअल प्राइवेट नेटवर्क) सार्वजनिक नेटवर्क पर सुरक्षित, कूटबद्ध मार्ग बनाता है।
+
+! trick | युक्ति: P-L-M-W
+छोटे से बड़े की ओर: **PAN, LAN, MAN, WAN**। व्यक्ति, लैब, महानगर, विश्व।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- अर्पानेट (1969) पहला वाइड एरिया पैकेट-स्विचिंग नेटवर्क और इंटरनेट का पूर्ववर्ती था।
+- वाई-फाई IEEE 802.11 मानकों पर कार्य करता है।
+- 'मॉडेम' शब्द मॉड्यूलेटर और डीमॉड्यूलेटर से बना है।
+
+## 👆 झटपट दोहराव
+? कौन-सा नेटवर्क एक नगर में फैला होता है? :: MAN
+? कौन-सी युक्ति दो अलग नेटवर्कों को जोड़ती है? :: राउटर
+? कौन-सी केबल डेटा को प्रकाश के रूप में ले जाती है? :: ऑप्टिकल फाइबर
+? VPN का पूर्ण रूप क्या है? :: वर्चुअल प्राइवेट नेटवर्क
+
+! recap | 30 सेकंड का सार
+- PAN, LAN, MAN, WAN: छोटे से बड़े।
+- स्टार को केंद्रीय स्विच चाहिए; मेश सबसे विश्वसनीय है।
+- मॉडेम बदलता है, स्विच पहुँचाता है, राउटर नेटवर्कों को जोड़ता है।

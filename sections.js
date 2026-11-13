@@ -3,6 +3,8 @@
  * Follows the UPESSC General Knowledge syllabi:
  *   tgt    = TGT & PGT (Trained Graduate Teacher / Lecturer)
  *   higher = Assistant Professor (Higher Education)
+ * The last unit, "Miscellaneous GK", is outside the two syllabi: it holds the extra topics that
+ * recur in past teacher-recruitment papers (world history, political thought, world bodies).
  * A section tagged with both appears in both syllabi. `scope` says what the section covers
  * (it is shown to players and guides question writers). Questions live in data/<id>.json.
  */
@@ -18,6 +20,7 @@ const UNITS = [
   { id: 'u7', icon: '🩺', en: 'Human Health & Hygiene', hi: 'मानव स्वास्थ्य एवं स्वच्छता' },
   { id: 'u8', icon: '💻', en: 'Computer, ICT & Educational Technology', hi: 'कम्प्यूटर, आईसीटी एवं शैक्षिक प्रौद्योगिकी' },
   { id: 'u9', icon: '🎓', en: 'Teaching & Research Aptitude', hi: 'शिक्षण एवं शोध अभियोग्यता' },
+  { id: 'u10', icon: '🧩', en: 'Miscellaneous GK', hi: 'विविध सामान्य ज्ञान' },
 ];
 
 const SECTIONS = [
@@ -184,4 +187,8 @@ const SECTIONS = [
     scope: 'Primary and secondary data, collection tools, scales of measurement, tabulation, graphs, mean/median/mode, basic analysis.' },
   { id: 'tra-ugc', unit: 'u9', tracks: ['higher'], en: 'UGC & Higher Education', hi: 'यूजीसी एवं उच्च शिक्षा',
     scope: 'UGC Act 1956, functions and regulations, NAAC, NIRF, higher education bodies and commissions, NEP 2020 reforms.' },
+
+  // ---- Unit 10: miscellaneous topics of past papers (not in the official syllabi) ----
+  { id: 'misc-gk', unit: 'u10', tracks: ['tgt'], en: 'World History, Political Thought & World Bodies', hi: 'विश्व इतिहास, राजनीतिक चिंतन एवं विश्व संस्थाएँ',
+    scope: 'World history and civilisations, Indian culture in South-East Asia, political thinkers, comparative government, public administration, United Nations and other international organisations, Cold War and disarmament, educational management.' },
 ];
