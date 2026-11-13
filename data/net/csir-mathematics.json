@@ -1,0 +1,84 @@
+{
+ "id": "csir-mathematics",
+ "icon": "➗",
+ "math": true,
+ "langs": ["en"],
+ "title": { "en": "Mathematical Sciences" },
+ "subtitle": { "en": "CSIR NET · Part B and Part C · unit-wise notes" },
+ "about": {
+  "en": "These are GS House's own notes, written unit by unit from the official syllabus, standard textbooks and the pattern of past papers. Unit 1 is ready; the other units are being written."
+ },
+ "units": [
+  {
+   "id": "u1", "icon": "📐", "en": "Analysis and Linear Algebra",
+   "line": { "en": "11 topics of analysis · 7 of linear algebra" },
+   "parts": [
+    {
+     "en": "Analysis",
+     "chapters": [
+      { "id": "ma-u1-01", "en": "Sets, countability and the real number system",
+        "key": { "en": "Countable and uncountable sets · supremum and infimum · Archimedean property" } },
+      { "id": "ma-u1-02", "en": "Point-set topology of the real line",
+        "key": { "en": "Open and closed sets · limit points · Heine-Borel · Cantor set" } },
+      { "id": "ma-u1-03", "en": "Sequences of real numbers",
+        "key": { "en": "Convergence · limit points · lim sup and lim inf · Cauchy's theorems" } },
+      { "id": "ma-u1-04", "en": "Series of real numbers",
+        "key": { "en": "Tests of convergence · absolute and conditional convergence · rearrangements" } },
+      { "id": "ma-u1-05", "en": "Limits, continuity and uniform continuity",
+        "key": { "en": "Types of discontinuity · properties on closed intervals · uniform continuity" } },
+      { "id": "ma-u1-06", "en": "Differentiability and the mean value theorems",
+        "key": { "en": "Rolle, Lagrange, Cauchy, Darboux · Taylor's theorem · maxima and minima" } },
+      { "id": "ma-u1-07", "en": "Riemann integration and improper integrals",
+        "key": { "en": "Integrability · fundamental theorem · convergence of improper integrals · Gamma and Beta" } },
+      { "id": "ma-u1-08", "en": "Bounded variation, Lebesgue measure and integral",
+        "key": { "en": "Jordan's theorem · measure zero · monotone and dominated convergence" } },
+      { "id": "ma-u1-09", "en": "Sequences and series of functions",
+        "key": { "en": "Pointwise and uniform convergence · M-test · Dini · power series" } },
+      { "id": "ma-u1-10", "en": "Functions of several variables",
+        "key": { "en": "Partial and directional derivatives · total derivative · inverse and implicit function theorems" } },
+      { "id": "ma-u1-11", "en": "Metric spaces and normed linear spaces",
+        "key": { "en": "Completeness · compactness · connectedness · Banach spaces" } }
+     ]
+    },
+    {
+     "en": "Linear Algebra",
+     "chapters": [
+      { "id": "ma-u1-12", "en": "Vector spaces, subspaces, basis and dimension",
+        "key": { "en": "Standard dimensions · sum and intersection · counting over finite fields" } },
+      { "id": "ma-u1-13", "en": "Linear transformations",
+        "key": { "en": "Rank-nullity · matrix of a map · rank inequalities · projections and nilpotent maps" } },
+      { "id": "ma-u1-14", "en": "Matrices, rank, determinants and linear equations",
+        "key": { "en": "Row reduction · determinant identities · consistency and number of solutions" } },
+      { "id": "ma-u1-15", "en": "Eigenvalues, eigenvectors and diagonalisation",
+        "key": { "en": "Characteristic and minimal polynomials · Cayley-Hamilton · diagonalisability" } },
+      { "id": "ma-u1-16", "en": "Canonical forms: triangular and Jordan forms",
+        "key": { "en": "Jordan blocks · reading the Jordan form · counting similarity classes" } },
+      { "id": "ma-u1-17", "en": "Inner product spaces",
+        "key": { "en": "Cauchy-Schwarz · Gram-Schmidt · orthogonal complement · self-adjoint and unitary operators" } },
+      { "id": "ma-u1-18", "en": "Quadratic forms",
+        "key": { "en": "Reduction to squares · rank, index and signature · positive definiteness" } }
+     ]
+    }
+   ],
+   "refs": [
+    { "text": "Walter Rudin, Principles of Mathematical Analysis" },
+    { "text": "R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis" },
+    { "text": "S. C. Malik and Savita Arora, Mathematical Analysis" },
+    { "text": "H. L. Royden and P. M. Fitzpatrick, Real Analysis" },
+    { "text": "Kenneth Hoffman and Ray Kunze, Linear Algebra" },
+    { "text": "S. H. Friedberg, A. J. Insel and L. E. Spence, Linear Algebra" },
+    { "text": "Sheldon Axler, Linear Algebra Done Right" },
+    { "text": "CSIR-HRDG: syllabus and notices of the Joint CSIR-UGC NET", "url": "https://csirhrdg.res.in/" },
+    { "text": "MIT OpenCourseWare 18.100A: Real Analysis", "url": "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/" },
+    { "text": "MIT OpenCourseWare 18.06: Linear Algebra", "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" },
+    { "text": "NPTEL: video courses in mathematics", "url": "https://nptel.ac.in/" }
+   ]
+  },
+  { "id": "u2", "icon": "🌀", "en": "Complex Analysis, Algebra and Topology",
+    "line": { "en": "Complex analysis · groups, rings and fields · topology" } },
+  { "id": "u3", "icon": "🧮", "en": "Differential Equations, Numerical Analysis and Mechanics",
+    "line": { "en": "ODE · PDE · numerical analysis · calculus of variations · integral equations · mechanics" } },
+  { "id": "u4", "icon": "🎲", "en": "Statistics",
+    "line": { "en": "Probability · inference · linear models · operations research" } }
+ ]
+}

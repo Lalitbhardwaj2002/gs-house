@@ -1,0 +1,76 @@
+@en
+# Eigenvalues, eigenvectors and diagonalisation
+
+> An eigenvector is a direction that an operator only stretches. Eigenvalues are read from the characteristic polynomial, and whether a matrix can be diagonalised is decided by multiplicities or, more quickly, by the minimal polynomial.
+
+## Eigenvalues and the characteristic polynomial
+
+- $\lambda$ is an **eigenvalue** of $A$ if $Av = \lambda v$ for some $v \ne 0$; equivalently $\det(A - \lambda I) = 0$.
+- The **characteristic polynomial** $\det(xI - A)$ has degree $n$. The sum of the eigenvalues is $\operatorname{tr} A$ and their product is $\det A$ (counted with multiplicity, over $\mathbb{C}$).
+- $A$ is invertible if and only if 0 is not an eigenvalue.
+- If $Av = \lambda v$, then $A^k v = \lambda^k v$, $A^{-1} v = \lambda^{-1} v$ (for invertible $A$), $p(A) v = p(\lambda) v$ and $(A + cI) v = (\lambda + c) v$. If $A$ has eigenvalues $\lambda_i$, then $p(A)$ has eigenvalues $p(\lambda_i)$, and for invertible $A$, $\operatorname{adj} A$ has eigenvalues $\det A / \lambda_i$.
+- $A$ and $A^T$ have the same eigenvalues. $AB$ and $BA$ have the same characteristic polynomial when both are square; in general they have the same non-zero eigenvalues.
+
+| Matrix | Eigenvalues |
+| Real symmetric, Hermitian | Real |
+| Real skew-symmetric, skew-Hermitian | Purely imaginary or 0 |
+| Orthogonal, unitary | Modulus 1 |
+| Idempotent | Among 0 and 1 |
+| Involutory | Among $1$ and $-1$ |
+| Nilpotent | 0 only |
+| Triangular | The diagonal entries |
+| Positive definite | Positive |
+| Row-stochastic (entries $\ge 0$, row sums 1) | 1 is an eigenvalue; all have modulus at most 1 |
+| Every row sum equal to $c$ | $c$ is an eigenvalue, with eigenvector $(1, \dots, 1)^T$ |
+| Rank one, $uv^T$ | $v^T u$ once and 0 with multiplicity $n - 1$ |
+| All entries 1, order $n$ | $n$ once and 0 with multiplicity $n - 1$ |
+
+- A real matrix of odd order has at least one real eigenvalue. Complex eigenvalues of a real matrix come in conjugate pairs.
+
+## Multiplicities and diagonalisation
+
+- **Algebraic multiplicity** (AM): multiplicity of $\lambda$ as a root of the characteristic polynomial. **Geometric multiplicity** (GM): $\dim N(A - \lambda I) = n - \operatorname{rank}(A - \lambda I)$. Always $1 \le \text{GM} \le \text{AM}$.
+- Eigenvectors belonging to distinct eigenvalues are linearly independent.
+
+! remember | When is a matrix diagonalisable?
+- $A$ is diagonalisable over $F$ if and only if it has $n$ linearly independent eigenvectors in $F^n$.
+- Equivalently: the characteristic polynomial splits over $F$ and GM $=$ AM for every eigenvalue.
+- Equivalently: the **minimal polynomial** is a product of distinct linear factors over $F$.
+- $n$ distinct eigenvalues are sufficient but not necessary (the identity matrix).
+- Real symmetric matrices are orthogonally diagonalisable; a complex matrix is unitarily diagonalisable if and only if it is **normal** (spectral theorem).
+- A non-zero nilpotent matrix is never diagonalisable. Idempotent matrices always are; involutory matrices are over $\mathbb{R}$ and $\mathbb{C}$.
+- Two diagonalisable matrices can be diagonalised by the same $P$ if and only if they commute.
+
+## Cayley-Hamilton theorem and the minimal polynomial
+
+- **Cayley-Hamilton**: every square matrix satisfies its characteristic polynomial. It gives $A^{-1}$ and high powers of $A$ as polynomials in $A$ of degree below $n$.
+- The **minimal polynomial** $m_A(x)$ is the monic polynomial of least degree with $m_A(A) = 0$. It divides every polynomial that $A$ satisfies, so it divides the characteristic polynomial.
+- The minimal and characteristic polynomials have the same roots (and the same irreducible factors).
+- Similar matrices have the same minimal polynomial; the converse is false.
+- If $A$ satisfies a polynomial that splits over $F$ into distinct linear factors (for example $x^2 - x$, or $x^2 - 1$ when the characteristic is not 2), then $A$ is diagonalisable over $F$. Over $\mathbb{R}$ this needs real roots: the rotation by $90^\circ$ satisfies $x^2 + 1$ but is not diagonalisable over $\mathbb{R}$.
+- If $A^k = I$ for some $k \ge 1$, then $A$ is diagonalisable over $\mathbb{C}$.
+
+## Locating eigenvalues
+
+- **Gershgorin**: every eigenvalue lies in some disc $\lvert z - a_{ii} \rvert \le \sum_{j \ne i} \lvert a_{ij} \rvert$. A strictly diagonally dominant matrix is invertible.
+- For a real symmetric matrix, $\lambda_{\min} \le \frac{x^T A x}{x^T x} \le \lambda_{\max}$.
+
+? What are the sum and product of the eigenvalues? :: The trace and the determinant.
+? Eigenvalues of the $n \times n$ matrix of all ones? :: $n$ once, and 0 with multiplicity $n - 1$.
+? Quickest test for diagonalisability? :: The minimal polynomial has distinct linear factors.
+? Can a non-zero nilpotent matrix be diagonalised? :: No; its only eigenvalue is 0, so it would have to be the zero matrix.
+
+! exam | PYQ focus
+- Eigenvalues of patterned matrices and of polynomials in a matrix.
+- Deciding diagonalisability over $\mathbb{R}$, $\mathbb{C}$ or a finite field.
+- Minimal polynomial of a given matrix, and statements that follow from Cayley-Hamilton.
+
+! recap | One-minute revision
+- Trace is the sum and determinant the product of the eigenvalues.
+- Diagonalisable means GM equals AM for all eigenvalues, or a minimal polynomial with distinct linear factors.
+- Symmetric: real eigenvalues, orthogonally diagonalisable. Normal: unitarily diagonalisable.
+
+& Kenneth Hoffman and Ray Kunze, Linear Algebra (chapter 6)
+& Sheldon Axler, Linear Algebra Done Right (chapter 5)
+& Gilbert Strang, Linear Algebra and Its Applications (chapter 5)
+& MIT OpenCourseWare 18.06: Linear Algebra | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/

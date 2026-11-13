@@ -1,0 +1,69 @@
+@en
+# Point-set topology of the real line
+
+> Open and closed sets, limit points and compactness on $\mathbb{R}$ are the language of the rest of analysis. The same words are used later for metric spaces, where some of the facts below stop being true, so it helps to know which ones are special to $\mathbb{R}$.
+
+## Basic notions
+
+- $x$ is an **interior point** of $A$ if some interval $(x - \delta, x + \delta) \subseteq A$. A set is **open** if every point of it is interior.
+- $x$ is a **limit point** (accumulation point) of $A$ if every neighbourhood of $x$ contains a point of $A$ other than $x$. The set of limit points is the **derived set** $A'$.
+- $A$ is **closed** if its complement is open; equivalently if $A' \subseteq A$. The **closure** is $\bar{A} = A \cup A'$.
+- A point of $A$ that is not a limit point is an **isolated point**. A set with $A = A'$ is **perfect**.
+- $A$ is **dense** in $\mathbb{R}$ if $\bar{A} = \mathbb{R}$, and **nowhere dense** if the interior of $\bar{A}$ is empty.
+
+! remember | Key results
+- Any union of open sets is open; a finite intersection of open sets is open. Any intersection of closed sets is closed; a finite union of closed sets is closed.
+- Every open subset of $\mathbb{R}$ is a countable union of pairwise disjoint open intervals.
+- The only subsets of $\mathbb{R}$ that are both open and closed are $\emptyset$ and $\mathbb{R}$.
+- The derived set $A'$ is always closed. The isolated points of any subset of $\mathbb{R}$ form a countable set.
+- **Bolzano-Weierstrass**: every bounded infinite subset of $\mathbb{R}$ has a limit point.
+- **Heine-Borel**: a subset of $\mathbb{R}$ is compact if and only if it is closed and bounded.
+- The connected subsets of $\mathbb{R}$ are exactly the intervals.
+
+## Standard examples
+
+| Set $A$ | Interior | Derived set $A'$ | Closure |
+| $\mathbb{Q}$ | $\emptyset$ | $\mathbb{R}$ | $\mathbb{R}$ |
+| $\mathbb{Z}$ | $\emptyset$ | $\emptyset$ | $\mathbb{Z}$ |
+| $\{1/n : n \in \mathbb{N}\}$ | $\emptyset$ | $\{0\}$ | $A \cup \{0\}$ |
+| $(0,1)$ | $(0,1)$ | $[0,1]$ | $[0,1]$ |
+| $\{1/m + 1/n : m, n \in \mathbb{N}\}$ | $\emptyset$ | $\{0\} \cup \{1/n\}$ | $A \cup \{0\}$ |
+| Cantor set $C$ | $\emptyset$ | $C$ | $C$ |
+
+- The **Cantor set** is closed, perfect, nowhere dense, uncountable and of measure zero. It consists of the numbers in $[0,1]$ that have a ternary expansion using only the digits 0 and 2. It has the cardinality of $\mathbb{R}$, and $C + C = [0,2]$.
+- A non-empty perfect subset of $\mathbb{R}$ is uncountable. Every closed set is a $G_\delta$ set and every open set is an $F_\sigma$ set.
+- $\mathbb{Z}$ is closed with no limit point; $\{1/n\}$ is neither open nor closed.
+
+## Compactness on the real line
+
+- **Compact**: every open cover has a finite subcover. On $\mathbb{R}$ this is the same as closed and bounded, and the same as: every sequence in the set has a subsequence converging to a point of the set.
+- $(0,1]$ is not compact: the cover $\{(1/n, 2)\}$ has no finite subcover. $[0,\infty)$ is closed but not compact.
+- A non-empty compact subset of $\mathbb{R}$ contains its supremum and its infimum.
+- A decreasing sequence of non-empty compact sets has a non-empty intersection.
+- A continuous image of a compact set is compact, and of a connected set is connected.
+
+## Sets of type F-sigma and G-delta
+
+- An **$F_\sigma$** set is a countable union of closed sets; a **$G_\delta$** set is a countable intersection of open sets.
+- $\mathbb{Q}$ is $F_\sigma$ but not $G_\delta$; the irrationals are $G_\delta$ but not $F_\sigma$ (Baire category theorem).
+- The set of points of continuity of any function $f : \mathbb{R} \to \mathbb{R}$ is a $G_\delta$ set. So there is a function continuous exactly at the irrationals, but none continuous exactly at the rationals.
+
+? What is the derived set of $\mathbb{Q}$? :: $\mathbb{R}$.
+? Is $\{1/n : n \in \mathbb{N}\}$ compact? :: No, it is not closed; $\{1/n\} \cup \{0\}$ is compact.
+? Which subsets of $\mathbb{R}$ are connected? :: Exactly the intervals (including single points and $\mathbb{R}$ itself).
+? Can a function be continuous exactly on $\mathbb{Q}$? :: No, because $\mathbb{Q}$ is not a $G_\delta$ set.
+
+! exam | PYQ focus
+- Interior, closure and derived set of a set built from $\mathbb{Q}$, $1/n$ or the Cantor set.
+- True or false statements on open, closed, compact and connected sets, especially unions and intersections.
+- Properties of the Cantor set, and questions that use the Heine-Borel theorem.
+
+! recap | One-minute revision
+- Closed means it contains its limit points; compact on $\mathbb{R}$ means closed and bounded; connected means interval.
+- $\mathbb{Q}$: empty interior, closure $\mathbb{R}$. Cantor set: perfect, nowhere dense, uncountable, measure zero.
+- Points of continuity form a $G_\delta$ set.
+
+& Walter Rudin, Principles of Mathematical Analysis (chapter 2)
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapter 11)
+& S. K. Mapa, Introduction to Real Analysis (sets in R)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

@@ -1,0 +1,72 @@
+@en
+# Functions of several variables
+
+> For functions on $\mathbb{R}^n$ the single idea "derivative" splits into several: partial derivatives, directional derivatives and the total derivative, which is a linear map. The inverse and implicit function theorems say when a smooth map can be undone locally.
+
+## Limits and continuity
+
+- $\lim_{(x,y) \to (a,b)} f(x,y) = l$ means $f$ is close to $l$ whenever $(x,y)$ is close to $(a,b)$, along **every** path.
+- To show that a limit does **not** exist, find two paths with different limits, for example $y = mx$ with a limit depending on $m$, or $y = x^2$.
+- To show that it **does** exist, bound $\lvert f(x,y) - l \rvert$ by something that tends to 0, or use polar coordinates $x = r\cos\theta$, $y = r\sin\theta$ and a bound independent of $\theta$.
+- The repeated limits $\lim_x \lim_y f$ and $\lim_y \lim_x f$ may exist and be equal while the double limit does not exist.
+
+| Function, with $f(0,0) = 0$ | At the origin |
+| $\frac{xy}{x^2 + y^2}$ | No limit: along $y = mx$ the value is $\frac{m}{1+m^2}$; both partial derivatives exist |
+| $\frac{x^2 y}{x^4 + y^2}$ | No limit (path $y = x^2$), yet every directional derivative exists |
+| $\frac{xy}{\sqrt{x^2 + y^2}}$ | Continuous, partial derivatives exist, not differentiable |
+| $\frac{x^2 y}{x^2 + y^2}$ | Continuous, all directional derivatives exist, not differentiable |
+| $(x^2 + y^2) \sin\frac{1}{\sqrt{x^2 + y^2}}$ | Differentiable, but the partial derivatives are not continuous |
+
+## Derivatives
+
+- **Partial derivatives** $f_x, f_y$: derivatives along the coordinate axes.
+- **Directional derivative** along a unit vector $u$: $D_u f(a) = \lim_{t \to 0} \frac{f(a + tu) - f(a)}{t}$.
+- $f : \mathbb{R}^n \to \mathbb{R}^m$ is **differentiable** at $a$ if there is a linear map $T$ with $\lim_{h \to 0} \frac{\lVert f(a+h) - f(a) - T h \rVert}{\lVert h \rVert} = 0$. $T = Df(a)$ is the **total derivative**; its matrix is the **Jacobian matrix** $\left( \frac{\partial f_i}{\partial x_j} \right)$.
+
+! remember | How the notions are related
+- Continuous partial derivatives ($C^1$) implies differentiable. Differentiable implies continuous, and implies all directional derivatives exist with $D_u f(a) = \nabla f(a) \cdot u$.
+- No arrow reverses: partial derivatives, or even all directional derivatives, may exist at a point where $f$ is not continuous.
+- The derivative of a linear map $T$ is $T$ itself at every point. For $f(x) = \langle x, x \rangle$, $Df(a)h = 2\langle a, h \rangle$.
+- **Chain rule**: $D(g \circ f)(a) = Dg(f(a)) \, Df(a)$, a product of Jacobian matrices.
+- **Mixed partials** (Schwarz, Clairaut): if $f_{xy}$ and $f_{yx}$ exist near a point and are continuous at it, they are equal there. Without continuity they can differ: $f = \frac{xy(x^2 - y^2)}{x^2 + y^2}$, $f(0,0) = 0$, has mixed partials $-1$ and $1$ at the origin.
+- **Euler's theorem**: if a differentiable $f$ is homogeneous of degree $n$, then $x f_x + y f_y = n f$.
+
+## Maxima and minima
+
+- At an interior extremum of a differentiable $f$, $\nabla f = 0$ (a critical point).
+- For two variables put $r = f_{xx}$, $s = f_{xy}$, $t = f_{yy}$ at a critical point:
+
+| Condition | Conclusion |
+| $rt - s^2 > 0$ and $r > 0$ | Local minimum |
+| $rt - s^2 > 0$ and $r < 0$ | Local maximum |
+| $rt - s^2 < 0$ | Saddle point |
+| $rt - s^2 = 0$ | The test fails |
+
+- In $n$ variables (for $C^2$ functions at a critical point): the Hessian positive definite gives a minimum, negative definite a maximum, indefinite a saddle.
+- **Lagrange multipliers**: to optimise $f$ subject to $g = 0$, solve $\nabla f = \lambda \nabla g$ together with $g = 0$ (valid at points where $\nabla g \ne 0$).
+
+## Inverse and implicit function theorems
+
+- **Inverse function theorem**: if $f : \mathbb{R}^n \to \mathbb{R}^n$ is $C^1$ and $Df(a)$ is invertible (Jacobian determinant not zero), then $f$ is one-one near $a$, maps a neighbourhood of $a$ onto a neighbourhood of $f(a)$, and the local inverse is $C^1$ with $D(f^{-1})(f(a)) = [Df(a)]^{-1}$.
+- A non-zero Jacobian everywhere gives local, not global, invertibility: $f(x,y) = (e^x \cos y, e^x \sin y)$ has Jacobian $e^{2x} \ne 0$ but is not one-one.
+- **Implicit function theorem**: if $F(x,y)$ is $C^1$, $F(a,b) = 0$ and $F_y(a,b) \ne 0$, then near $(a,b)$ the equation $F = 0$ defines $y = g(x)$ with $g$ of class $C^1$ and $g'(x) = -\frac{F_x}{F_y}$.
+
+? How do you show that a limit in two variables does not exist? :: Find two paths to the point along which the function has different limits.
+? Does the existence of all directional derivatives imply continuity? :: No: $\frac{x^2 y}{x^4 + y^2}$ at the origin.
+? What is the derivative of a linear map $T$? :: $T$ itself, at every point.
+? What does the inverse function theorem require? :: A $C^1$ map whose derivative at the point is invertible.
+
+! exam | PYQ focus
+- Continuity, existence of partial and directional derivatives and differentiability of a function at the origin.
+- The total derivative as a linear map or matrix, and the chain rule.
+- Where a map is locally invertible, and critical points with their nature.
+
+! recap | One-minute revision
+- $C^1$ implies differentiable implies continuous with all directional derivatives; no converses.
+- Second derivative test: sign of $rt - s^2$, then sign of $r$.
+- Invertible derivative gives a local inverse; $F_y \ne 0$ lets $F = 0$ be solved for $y$.
+
+& Walter Rudin, Principles of Mathematical Analysis (chapter 9)
+& Tom M. Apostol, Mathematical Analysis (chapters 12 and 13)
+& S. C. Malik and Savita Arora, Mathematical Analysis (functions of several variables)
+& MIT OpenCourseWare 18.02: Multivariable Calculus | https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/

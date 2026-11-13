@@ -1,0 +1,68 @@
+@en
+# Sequences of real numbers
+
+> A sequence converges to $l$ if its terms eventually stay as close to $l$ as we please. The examination asks less for proofs than for quick decisions: does it converge, to what, and what are its limit points, limit superior and limit inferior?
+
+## Convergence
+
+- $a_n \to l$ if for every $\varepsilon > 0$ there is $m$ such that $\lvert a_n - l \rvert < \varepsilon$ for all $n \ge m$. The limit is unique.
+- Every convergent sequence is bounded; a bounded sequence need not converge, for example $(-1)^n$.
+- **Monotone convergence theorem**: a monotone sequence converges if and only if it is bounded.
+- **Squeeze**: if $a_n \le b_n \le c_n$ and $a_n, c_n \to l$, then $b_n \to l$.
+- **Cauchy criterion**: $(a_n)$ converges if and only if for every $\varepsilon > 0$ there is $m$ with $\lvert a_n - a_k \rvert < \varepsilon$ for all $n, k \ge m$.
+- **Bolzano-Weierstrass**: every bounded sequence has a convergent subsequence.
+- $a_n \to l$ if and only if every subsequence converges to $l$. If $a_{2n} \to l$ and $a_{2n+1} \to l$, then $a_n \to l$.
+- $a_{n+1} - a_n \to 0$ does not make $(a_n)$ Cauchy: $\sqrt{n}$ and $\log n$ diverge although consecutive terms come together.
+
+## Limit points, limit superior and limit inferior
+
+- $\alpha$ is a **limit point** (subsequential limit) of $(a_n)$ if some subsequence converges to $\alpha$. This happens exactly when $\alpha$ is repeated infinitely often as a term, or $\alpha$ is a limit point of the range.
+- $\limsup a_n = \inf_n \sup_{k \ge n} a_k$ is the largest limit point; $\liminf a_n = \sup_n \inf_{k \ge n} a_k$ is the smallest.
+- $\liminf a_n \le \limsup a_n$, with equality if and only if the sequence converges (or diverges to $\pm\infty$).
+- The set of limit points of a sequence is always closed.
+- $\limsup (a_n + b_n) \le \limsup a_n + \limsup b_n$ and $\liminf (a_n + b_n) \ge \liminf a_n + \liminf b_n$, whenever the right-hand sides are not of the form $\infty - \infty$. The inequalities can be strict: $a_n = (-1)^n$, $b_n = (-1)^{n+1}$.
+
+| Sequence | Set of limit points | $\liminf$, $\limsup$ |
+| $(-1)^n$ | $\{-1, 1\}$ | $-1$, $1$ |
+| $(-1)^n (1 + 1/n)$ | $\{-1, 1\}$ | $-1$, $1$ |
+| $\sin(n\pi/2)$ | $\{-1, 0, 1\}$ | $-1$, $1$ |
+| $\sin n$ | $[-1, 1]$ | $-1$, $1$ |
+| An enumeration of $\mathbb{Q}$ | $\mathbb{R}$ | $-\infty$, $+\infty$ |
+| $n$ | $\emptyset$ | $+\infty$, $+\infty$ |
+
+## Limits worth knowing by heart
+
+- $n^{1/n} \to 1$ and $a^{1/n} \to 1$ for $a > 0$.
+- $(1 + 1/n)^n \to e$ and $(1 + x/n)^n \to e^x$.
+- $x^n / n! \to 0$ for every $x$; $n^k / a^n \to 0$ for $a > 1$; $(\log n)/n \to 0$.
+- $(n!)^{1/n} / n \to 1/e$.
+
+! remember | Theorems on averages
+- **Cauchy's first theorem**: if $a_n \to l$ then $(a_1 + \dots + a_n)/n \to l$. The converse is false: take $(-1)^n$.
+- **Cauchy's second theorem**: if $a_n > 0$ and $a_{n+1}/a_n \to l$, then $a_n^{1/n} \to l$.
+- **Stolz-Cesàro**: if $b_n$ is strictly increasing with $b_n \to \infty$ and $(a_{n+1} - a_n)/(b_{n+1} - b_n) \to l$, then $a_n / b_n \to l$.
+
+! trick | Sequences given by a recurrence
+- Show that the sequence is monotone and bounded; then it converges, and the limit $l$ satisfies the equation obtained by letting $n \to \infty$ in the recurrence.
+- If $\lvert a_{n+2} - a_{n+1} \rvert \le c \lvert a_{n+1} - a_n \rvert$ with $0 < c < 1$, the sequence is Cauchy, so it converges.
+- Example: $a_1 = 1$, $a_{n+1} = \sqrt{2 + a_n}$ is increasing and bounded by 2; the limit solves $l = \sqrt{2 + l}$, so $l = 2$.
+
+? Does a bounded sequence always converge? :: No; but it always has a convergent subsequence.
+? When is $\liminf a_n = \limsup a_n$ finite? :: Exactly when $(a_n)$ converges.
+? Limit of $(n!)^{1/n}/n$? :: $1/e$, by Cauchy's second theorem applied to $n!/n^n$.
+? What are the limit points of $\sin n$? :: The whole interval $[-1, 1]$.
+
+! exam | PYQ focus
+- Limit, limit superior and limit inferior of a sequence given by a formula or a recurrence.
+- The set of limit points of a sequence, and statements on subsequences.
+- True or false statements linking bounded, monotone, Cauchy and convergent sequences.
+
+! recap | One-minute revision
+- Convergent implies bounded; monotone and bounded implies convergent; bounded implies a convergent subsequence.
+- $\limsup$ is the largest limit point, $\liminf$ the smallest; equal exactly for convergent sequences.
+- Averages keep limits (Cauchy's first theorem); ratio limit gives root limit (second theorem).
+
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapter 3)
+& Walter Rudin, Principles of Mathematical Analysis (chapter 3)
+& S. K. Mapa, Introduction to Real Analysis (sequences)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

@@ -1,0 +1,71 @@
+@en
+# Bounded variation, Lebesgue measure and the Lebesgue integral
+
+> Functions of bounded variation are those whose graphs have finite "up and down" movement. Lebesgue measure extends length to very general sets, and the Lebesgue integral repairs the defects of the Riemann integral under limits.
+
+## Functions of bounded variation
+
+- The **total variation** of $f$ on $[a,b]$ is $V_a^b(f) = \sup_P \sum \lvert f(x_i) - f(x_{i-1}) \rvert$ over all partitions $P$. $f$ is of **bounded variation** (BV) if this is finite.
+
+! remember | Facts on bounded variation
+- Monotone functions are BV, with $V_a^b(f) = \lvert f(b) - f(a) \rvert$. Lipschitz functions and functions with a bounded derivative are BV.
+- A BV function is bounded. Sums, differences and products of BV functions are BV.
+- **Jordan's theorem**: $f$ is BV if and only if it is the difference of two increasing functions.
+- So a BV function has one-sided limits at every point; its discontinuities are of the first kind (jump or removable), at most countably many, and it is differentiable almost everywhere.
+- Continuity does not give BV, and BV does not give continuity.
+- For continuously differentiable $f$: $V_a^b(f) = \int_a^b \lvert f'(x) \rvert\,dx$.
+
+| Function on $[0,1]$ (value 0 at 0) | Bounded variation? |
+| $x \sin(1/x)$ | No |
+| $x^2 \sin(1/x)$ | Yes (bounded derivative) |
+| $x^2 \sin(1/x^2)$ | No |
+| $x^a \sin(1/x^b)$ with $a, b > 0$ | Yes if and only if $a > b$ |
+| Any step function | Yes |
+
+- **Absolutely continuous** implies BV and uniformly continuous. The Cantor function is continuous, increasing and BV, but not absolutely continuous.
+
+## Lebesgue measure
+
+- The **outer measure** $m^*(A)$ is the infimum of the total lengths of countable families of open intervals covering $A$.
+- The outer measure of an interval is its length. $m^*$ is monotone, translation invariant and countably subadditive.
+- Every countable set has measure zero, so $m(\mathbb{Q}) = 0$ and $m([0,1] \setminus \mathbb{Q}) = 1$.
+- The **Cantor set** is uncountable and has measure zero. A set of measure zero has empty interior, but need not be countable.
+- A **fat Cantor set** (remove middle intervals of total length less than 1) is closed, nowhere dense and of positive measure. So nowhere dense does not mean measure zero.
+- **Regularity**: $E$ is measurable if and only if for every $\varepsilon > 0$ there is an open $G \supseteq E$ with $m^*(G \setminus E) < \varepsilon$.
+- The measurable sets form a $\sigma$-algebra containing all open and closed sets (all Borel sets). On them $m$ is countably additive.
+- With the axiom of choice there are **non-measurable** sets (Vitali). Every set of positive outer measure contains one.
+- If $A_1 \subseteq A_2 \subseteq \dots$ are measurable, $m(\bigcup A_n) = \lim m(A_n)$. For decreasing sets the same holds if $m(A_1) < \infty$.
+
+## Measurable functions and the Lebesgue integral
+
+- $f$ is **measurable** if $\{x : f(x) > c\}$ is measurable for every real $c$. Continuous functions, monotone functions and pointwise limits of measurable functions are measurable.
+- A property holds **almost everywhere** (a.e.) if it fails only on a set of measure zero. If $f = g$ a.e., their Lebesgue integrals agree.
+- The integral is built from simple functions, then non-negative measurable functions, then $f = f^+ - f^-$. $f$ is **Lebesgue integrable** if $\int \lvert f \rvert < \infty$.
+- Every Riemann integrable function on $[a,b]$ is Lebesgue integrable, with the same value. The Dirichlet function is not Riemann integrable, but its Lebesgue integral is 0.
+- An improper Riemann integral that converges only conditionally, such as $\int_0^\infty \frac{\sin x}{x}\,dx$, is not a Lebesgue integral.
+
+! remember | Convergence theorems
+- **Monotone convergence**: if $0 \le f_1 \le f_2 \le \dots$ are measurable and $f_n \to f$ a.e., then $\int f_n \to \int f$.
+- **Fatou's lemma**: for measurable $f_n \ge 0$, $\int \liminf f_n \le \liminf \int f_n$.
+- **Dominated convergence**: if $f_n \to f$ a.e. and $\lvert f_n \rvert \le g$ with $g$ integrable, then $\int f_n \to \int f$.
+- Without domination the limit and the integral may not commute: $f_n = n$ on $(0, 1/n)$ and 0 elsewhere has $f_n \to 0$ but $\int f_n = 1$.
+
+? When is a function of bounded variation? :: Exactly when it is the difference of two increasing functions.
+? Is $x \sin(1/x)$ of bounded variation on $[0,1]$? :: No; $x^2 \sin(1/x)$ is.
+? What is the measure of the Cantor set? :: Zero, although the set is uncountable.
+? What is the Lebesgue integral of the Dirichlet function on $[0,1]$? :: 0, since the function is 0 almost everywhere.
+
+! exam | PYQ focus
+- Deciding bounded variation for functions of the type $x^a \sin(1/x^b)$, and using Jordan's theorem.
+- True or false statements on measure zero, countability and the Cantor set.
+- Exchanging limit and integral: which convergence theorem applies, and counter-examples.
+
+! recap | One-minute revision
+- BV is the same as a difference of two increasing functions; monotone, Lipschitz and bounded-derivative functions are BV.
+- Countable sets and the Cantor set have measure zero.
+- Monotone convergence, Fatou, dominated convergence: the three tools for limits under the integral.
+
+& H. L. Royden and P. M. Fitzpatrick, Real Analysis (chapters 2 to 6)
+& Walter Rudin, Principles of Mathematical Analysis (chapters 6 and 11)
+& G. de Barra, Measure Theory and Integration (chapters 2 to 4)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

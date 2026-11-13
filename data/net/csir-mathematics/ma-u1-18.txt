@@ -1,0 +1,71 @@
+@en
+# Quadratic forms
+
+> A quadratic form is a homogeneous polynomial of degree 2. Each one is given by a symmetric matrix, can be reduced to a sum of squares, and is classified by three numbers: rank, index and signature.
+
+## Quadratic forms and their matrices
+
+- A real quadratic form in $x = (x_1, \dots, x_n)$ is $Q(x) = x^T A x = \sum_{i,j} a_{ij} x_i x_j$ with $A$ **symmetric**.
+- The matrix has the coefficient of $x_i^2$ at position $(i,i)$ and **half** the coefficient of $x_i x_j$ at positions $(i,j)$ and $(j,i)$.
+- Example: $Q = x^2 + 4xy + 3y^2$ has matrix with rows $(1, 2)$ and $(2, 3)$.
+- If a form is written as $x^T B x$ with $B$ not symmetric, its matrix is $\frac{1}{2}(B + B^T)$; definiteness is decided by this symmetric part, not by the eigenvalues of $B$.
+- A change of variables $x = Py$ with $P$ invertible gives $Q = y^T (P^T A P) y$. The matrices $A$ and $P^T A P$ are **congruent**. Congruence keeps rank and symmetry, but not eigenvalues or determinant (the sign of the determinant is kept).
+
+## Reduction to a sum of squares
+
+- **Orthogonal reduction** (principal axes theorem): with $P$ orthogonal and $P^T A P$ diagonal, $Q = \lambda_1 y_1^2 + \dots + \lambda_n y_n^2$, where $\lambda_i$ are the eigenvalues of $A$.
+- **Lagrange's method**: complete squares one variable at a time.
+- **Congruent operations**: apply the same elementary operation to rows and to columns until $A$ is diagonal.
+- **Canonical form**: $y_1^2 + \dots + y_p^2 - y_{p+1}^2 - \dots - y_r^2$.
+
+! remember | Rank, index and signature
+- **Rank** $r$: the rank of $A$, the number of non-zero squares.
+- **Index** $p$: the number of positive squares, equal to the number of positive eigenvalues of $A$.
+- **Signature**: positive squares minus negative squares, $s = p - (r - p) = 2p - r$.
+- **Sylvester's law of inertia**: $r$ and $p$ do not depend on the reduction used.
+- Two real quadratic forms in $n$ variables are equivalent (their matrices congruent) if and only if they have the same rank and the same index.
+
+## Classification
+
+| Type | Values of $Q(x)$, $x \ne 0$ | Eigenvalues of $A$ | Rank and index |
+| Positive definite | Always $> 0$ | All $> 0$ | $r = p = n$ |
+| Positive semidefinite | Always $\ge 0$, sometimes 0 | All $\ge 0$, some 0 | $r = p < n$ |
+| Negative definite | Always $< 0$ | All $< 0$ | $r = n$, $p = 0$ |
+| Negative semidefinite | Always $\le 0$, sometimes 0 | All $\le 0$, some 0 | $r < n$, $p = 0$ |
+| Indefinite | Both signs | Some $> 0$, some $< 0$ | $0 < p < r$ |
+
+- **Sylvester's criterion**: $A$ is positive definite if and only if all leading principal minors $D_1, D_2, \dots, D_n$ are positive. It is negative definite if and only if $(-1)^k D_k > 0$ for every $k$.
+- For positive **semi**definiteness all principal minors (not only the leading ones) must be non-negative.
+
+! remember | Facts on positive definite matrices
+- $A$ is positive definite if and only if $A = B^T B$ for some invertible $B$.
+- Then $\det A > 0$, $\operatorname{tr} A > 0$, every diagonal entry is positive, and $A^{-1}$ is positive definite.
+- The sum of two positive definite matrices is positive definite. The product need not even be symmetric, but its eigenvalues are positive; if the two commute, the product is positive definite.
+- $A^T A$ is always positive semidefinite, and positive definite exactly when the columns of $A$ are linearly independent.
+- $\langle x, y \rangle = x^T A y$ is an inner product on $\mathbb{R}^n$ exactly when $A$ is symmetric positive definite.
+
+## Counting and extremes
+
+- Real symmetric $n \times n$ matrices fall into $\frac{(n+1)(n+2)}{2}$ congruence classes (choices of $p$ and $r$ with $0 \le p \le r \le n$). Complex symmetric matrices under congruence are classified by rank alone: $n + 1$ classes.
+- **Rayleigh quotient**: $\lambda_{\min} \le \frac{x^T A x}{x^T x} \le \lambda_{\max}$, so on the unit sphere $Q$ has maximum $\lambda_{\max}$ and minimum $\lambda_{\min}$.
+- A **Hermitian form** $x^* A x$ with $A$ Hermitian takes real values and is classified in the same way.
+
+? How is the cross term $x_i x_j$ entered in the matrix? :: Half its coefficient goes to each of the positions $(i,j)$ and $(j,i)$.
+? Signature in terms of rank and index? :: $s = 2p - r$.
+? Test for positive definiteness without eigenvalues? :: All leading principal minors are positive.
+? Number of congruence classes of real symmetric $3 \times 3$ matrices? :: $\frac{4 \cdot 5}{2} = 10$.
+
+! exam | PYQ focus
+- Rank, index and signature of a given quadratic form.
+- Deciding the nature (definite, semidefinite, indefinite) from minors or eigenvalues.
+- Maximum and minimum of a quadratic form on the unit sphere, and statements on positive definite matrices.
+
+! recap | One-minute revision
+- $Q = x^T A x$ with $A$ symmetric; reduce to squares; count positive and negative ones.
+- Positive definite: all eigenvalues positive, all leading principal minors positive.
+- Rank and index classify real forms; $s = 2p - r$.
+
+& Kenneth Hoffman and Ray Kunze, Linear Algebra (chapter 10)
+& Gilbert Strang, Linear Algebra and Its Applications (chapter 6)
+& S. H. Friedberg, A. J. Insel and L. E. Spence, Linear Algebra (chapter 6)
+& MIT OpenCourseWare 18.06: Linear Algebra | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/

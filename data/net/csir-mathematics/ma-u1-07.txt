@@ -1,0 +1,75 @@
+@en
+# Riemann integration and improper integrals
+
+> A bounded function is Riemann integrable when its upper and lower sums can be brought together. The examination asks which functions are integrable, what the fundamental theorem allows, and for which values of a parameter an improper integral converges.
+
+## Riemann integrability
+
+- For a partition $P$, the lower sum $L(P,f)$ and the upper sum $U(P,f)$ satisfy $L(P,f) \le U(P,f)$. $f$ is **integrable** if $\sup_P L(P,f) = \inf_P U(P,f)$.
+- **Riemann's criterion**: $f$ is integrable if and only if for every $\varepsilon > 0$ there is a partition with $U(P,f) - L(P,f) < \varepsilon$.
+- **Lebesgue's criterion**: a bounded function on $[a,b]$ is Riemann integrable if and only if its set of discontinuities has measure zero.
+
+| Function on $[0,1]$ | Riemann integrable? |
+| Continuous | Yes |
+| Monotone | Yes |
+| Bounded with finitely or countably many discontinuities | Yes |
+| Dirichlet function (1 on $\mathbb{Q}$, 0 elsewhere) | No: discontinuous everywhere |
+| Thomae function | Yes, with integral 0 |
+| Indicator function of the Cantor set | Yes, with integral 0 |
+| $\sin(1/x)$, with any value at 0 | Yes |
+| $1/x$, with any value at 0 | No: unbounded |
+
+- If $f$ and $g$ are integrable, so are $f + g$, $fg$, $\lvert f \rvert$, $\max(f,g)$, and $\varphi \circ f$ for continuous $\varphi$.
+- $\lvert f \rvert$ or $f^2$ integrable does not make $f$ integrable: take $1$ on $\mathbb{Q}$ and $-1$ elsewhere.
+- $f \circ g$ need not be integrable when both are: $g$ the Thomae function and $f = 0$ at 0, $f = 1$ elsewhere give the Dirichlet function.
+- Changing an integrable function at finitely many points keeps it integrable with the same integral.
+- $\left\lvert \int_a^b f \right\rvert \le \int_a^b \lvert f \rvert$. If $f \ge 0$ is continuous and $\int_a^b f = 0$, then $f = 0$.
+
+! remember | Fundamental theorem and mean value theorems
+- If $f$ is integrable, $F(x) = \int_a^x f(t)\,dt$ is continuous (indeed Lipschitz). If $f$ is continuous at $x$, then $F'(x) = f(x)$.
+- If $F' = f$ on $[a,b]$ and $f$ is integrable, then $\int_a^b f = F(b) - F(a)$.
+- **Leibniz rule**: $\frac{d}{dx} \int_{u(x)}^{v(x)} f(t)\,dt = f(v(x))\,v'(x) - f(u(x))\,u'(x)$ for continuous $f$ and differentiable $u, v$.
+- **Mean value theorem for integrals**: for continuous $f$, $\int_a^b f = f(c)(b-a)$ for some $c \in [a,b]$.
+- **Limit of a sum**: $\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^{n} f\left(\frac{k}{n}\right) = \int_0^1 f(x)\,dx$ for integrable $f$.
+
+## Improper integrals
+
+- First kind: an infinite interval. Second kind: an unbounded integrand. Each is defined as a limit of proper integrals.
+- $\int_1^\infty \frac{dx}{x^p}$ converges if and only if $p > 1$. $\int_0^1 \frac{dx}{x^p}$ converges if and only if $p < 1$. So $\int_0^\infty \frac{dx}{x^p}$ never converges.
+- **Comparison** and **limit comparison** tests work for positive integrands as for series. Absolute convergence implies convergence.
+- **Dirichlet test**: if $\int_a^x f$ is bounded and $g$ decreases to 0, then $\int_a^\infty fg$ converges. **Abel test**: if $\int_a^\infty f$ converges and $g$ is monotone and bounded, then $\int_a^\infty fg$ converges.
+
+| Integral | Behaviour |
+| $\int_0^\infty e^{-x^2}\,dx$ | Converges to $\sqrt{\pi}/2$ |
+| $\int_0^\infty \frac{\sin x}{x}\,dx$ | Converges to $\pi/2$, but only conditionally |
+| $\int_0^1 \log x\,dx$ | Converges to $-1$ |
+| $\int_1^\infty \frac{\sin x}{x^p}\,dx$ | Converges for $p > 0$; absolutely for $p > 1$ |
+| $\int_2^\infty \frac{dx}{x (\log x)^p}$ | Converges if and only if $p > 1$ |
+| $\int_0^{\pi/2} \log \sin x\,dx$ | Converges to $-\frac{\pi}{2} \log 2$ |
+| $\int_0^\infty \frac{x^{p-1}}{1+x}\,dx$ | Converges if and only if $0 < p < 1$, to $\frac{\pi}{\sin p\pi}$ |
+| $\int_0^\infty \sin(x^2)\,dx$ | Converges (to $\frac{1}{2}\sqrt{\pi/2}$), although $\sin(x^2)$ does not tend to 0 |
+
+## Gamma and Beta functions
+
+- $\Gamma(n) = \int_0^\infty x^{n-1} e^{-x}\,dx$ converges for $n > 0$. $\Gamma(n+1) = n\,\Gamma(n)$, $\Gamma(n+1) = n!$ for natural $n$, and $\Gamma(1/2) = \sqrt{\pi}$.
+- $B(m,n) = \int_0^1 x^{m-1} (1-x)^{n-1}\,dx$ converges for $m, n > 0$, and $B(m,n) = \frac{\Gamma(m)\,\Gamma(n)}{\Gamma(m+n)}$.
+
+? When is a bounded function Riemann integrable? :: Exactly when its set of discontinuities has measure zero.
+? Is the Thomae function Riemann integrable? :: Yes, and its integral is 0.
+? For which $p$ does $\int_0^1 x^{-p}\,dx$ converge? :: For $p < 1$.
+? Does $\int_0^\infty \frac{\sin x}{x}\,dx$ converge absolutely? :: No; it converges conditionally, to $\pi/2$.
+
+! exam | PYQ focus
+- Riemann integrability of functions defined through rationals and irrationals.
+- Differentiating an integral with variable limits, and limits of sums written as integrals.
+- Convergence of improper integrals with a parameter, and values through Gamma and Beta functions.
+
+! recap | One-minute revision
+- Integrable means bounded with a measure-zero set of discontinuities.
+- $\int_a^x f$ is continuous always, and differentiable (with derivative $f$) at least where $f$ is continuous.
+- $\int_1^\infty x^{-p}$: $p > 1$. $\int_0^1 x^{-p}$: $p < 1$. $\Gamma(1/2) = \sqrt{\pi}$.
+
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapter 7)
+& Walter Rudin, Principles of Mathematical Analysis (chapter 6)
+& S. C. Malik and Savita Arora, Mathematical Analysis (Riemann integral; improper integrals)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

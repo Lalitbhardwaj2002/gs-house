@@ -1,0 +1,89 @@
+@en
+# Metric spaces and normed linear spaces
+
+> A metric space keeps only the idea of distance. Completeness, compactness and connectedness are the three properties to test, and several facts that are true on $\mathbb{R}$ fail in general spaces.
+
+## Metrics and examples
+
+- A **metric** $d$ on $X$ satisfies: $d(x,y) \ge 0$ with equality only for $x = y$; $d(x,y) = d(y,x)$; $d(x,z) \le d(x,y) + d(y,z)$.
+- Examples: the usual metric on $\mathbb{R}^n$; the **discrete metric** (distance 1 between distinct points); the sup metric $d(f,g) = \sup \lvert f - g \rvert$ on $C[a,b]$; the $\ell^p$ metrics.
+- If $d$ is a metric, so are $\frac{d}{1 + d}$ and $\min(d, 1)$; they are bounded and give the same open sets.
+- In a discrete space every subset is open and closed, and every function on it is continuous.
+- A space is **separable** if it has a countable dense subset. $\mathbb{R}^n$, $C[a,b]$ and $\ell^p$ for $1 \le p < \infty$ are separable; $\ell^\infty$ is not.
+
+## Completeness
+
+- A space is **complete** if every Cauchy sequence converges in it.
+
+| Space | Complete? |
+| $\mathbb{R}^n$, $\mathbb{C}^n$ | Yes |
+| $\mathbb{Q}$, $(0,1)$ with the usual metric | No |
+| Any discrete space | Yes |
+| $C[a,b]$ with the sup metric | Yes |
+| $C[a,b]$ with $d(f,g) = \int_a^b \lvert f - g \rvert$ | No |
+| $\ell^p$, $1 \le p \le \infty$ | Yes |
+| Polynomials on $[0,1]$ with the sup metric | No |
+| $\mathbb{R}$ with $d(x,y) = \lvert \tan^{-1} x - \tan^{-1} y \rvert$ | No: $x_n = n$ is Cauchy but does not converge |
+| $\mathbb{R}$ with $d(x,y) = \lvert x^3 - y^3 \rvert$ | Yes |
+
+- A closed subset of a complete space is complete; a complete subspace is closed.
+- Completeness is not a topological property: $(0,1)$ and $\mathbb{R}$ are homeomorphic.
+- **Cantor's intersection theorem**: in a complete space, non-empty closed sets $F_1 \supseteq F_2 \supseteq \dots$ with diameters tending to 0 have exactly one common point.
+- **Baire category theorem**: a non-empty complete metric space is not a countable union of nowhere dense sets.
+- **Banach contraction principle**: a map $T$ of a complete space into itself with $d(Tx, Ty) \le k\, d(x,y)$, $k < 1$, has exactly one fixed point.
+
+## Compactness
+
+! remember | Compactness in metric spaces
+- Equivalent for a metric space: compact; sequentially compact; complete and totally bounded.
+- Compact implies closed and bounded. The converse holds in $\mathbb{R}^n$ (Heine-Borel) but not in general: an infinite discrete space, or the closed unit ball of $\ell^2$, is closed and bounded but not compact.
+- A closed subset of a compact space is compact. A continuous image of a compact space is compact.
+- A continuous function on a compact space is uniformly continuous, bounded, and attains its bounds.
+- A continuous bijection from a compact space onto a metric space is a homeomorphism.
+- **Arzelà-Ascoli**: a subset of $C[a,b]$ is compact if and only if it is closed, bounded and equicontinuous.
+
+## Connectedness
+
+- $X$ is **connected** if it is not the union of two disjoint non-empty open sets; equivalently the only subsets that are both open and closed are $\emptyset$ and $X$.
+- A continuous image of a connected space is connected. The closure of a connected set is connected.
+- Path connected implies connected. The converse is false: the topologist's sine curve.
+- $\mathbb{R} \setminus \{0\}$ is disconnected, but $\mathbb{R}^n$ minus a point is connected for $n \ge 2$. Hence $\mathbb{R}$ is not homeomorphic to $\mathbb{R}^n$ for $n \ge 2$.
+- $\mathbb{Q}$ and the Cantor set are totally disconnected.
+
+| Set of $n \times n$ matrices (real unless stated) | Compact? | Connected? |
+| $GL_n(\mathbb{R})$ | No (open, unbounded) | No: two pieces, $\det > 0$ and $\det < 0$ |
+| $GL_n(\mathbb{C})$ (in $M_n(\mathbb{C})$) | No | Yes |
+| $SL_n(\mathbb{R})$, $n \ge 2$ | No (closed, unbounded) | Yes |
+| $O(n)$ | Yes | No: two pieces, $\det = 1$ and $\det = -1$ |
+| $SO(n)$, $U(n)$ | Yes | Yes |
+| Nilpotent matrices, $n \ge 2$ | No (closed, unbounded) | Yes (path $tA$ to 0) |
+| Symmetric positive definite matrices | No | Yes (convex) |
+
+- $GL_n(\mathbb{R})$ is open and dense in $M_n(\mathbb{R})$. Diagonalisable matrices are dense in $M_n(\mathbb{C})$ but not in $M_n(\mathbb{R})$.
+
+## Normed linear spaces
+
+- A **norm** satisfies $\lVert x \rVert \ge 0$ with equality only for $x = 0$, $\lVert \alpha x \rVert = \lvert \alpha \rvert \lVert x \rVert$ and $\lVert x + y \rVert \le \lVert x \rVert + \lVert y \rVert$. It gives the metric $d(x,y) = \lVert x - y \rVert$. A complete normed space is a **Banach space**.
+- On a finite-dimensional space all norms are equivalent, every linear map is continuous, and every such space is complete.
+- A finite-dimensional subspace of a normed space is closed. The closed unit ball is compact if and only if the space is finite-dimensional (Riesz).
+- A norm comes from an inner product if and only if it satisfies the **parallelogram law** $\lVert x + y \rVert^2 + \lVert x - y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rVert^2$. Among the $\ell^p$ spaces this holds only for $p = 2$.
+
+? Is every closed and bounded set compact? :: Yes in $\mathbb{R}^n$ (and in any finite-dimensional normed space); not in a general metric space.
+? Is $C[0,1]$ with the integral metric complete? :: No; with the sup metric it is complete.
+? Is $GL_n(\mathbb{R})$ connected? :: No; the sign of the determinant splits it into two pieces.
+? When does a norm come from an inner product? :: Exactly when it satisfies the parallelogram law.
+
+! exam | PYQ focus
+- Compactness and connectedness of subsets of $\mathbb{R}^n$ and of sets of matrices.
+- Completeness of a given space or metric, and whether two metrics are equivalent.
+- True or false statements on continuous maps between compact or connected spaces.
+
+! recap | One-minute revision
+- Compact = complete and totally bounded = sequentially compact; closed and bounded is enough in $\mathbb{R}^n$, not in general.
+- Complete: $\mathbb{R}^n$, $C[a,b]$ with sup metric, $\ell^p$. Not complete: $\mathbb{Q}$, open intervals.
+- $O(n)$ compact and disconnected; $GL_n(\mathbb{R})$ neither compact nor connected.
+
+& G. F. Simmons, Introduction to Topology and Modern Analysis (chapters 2 to 6)
+& Walter Rudin, Principles of Mathematical Analysis (chapter 2)
+& S. Kumaresan, Topology of Metric Spaces
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

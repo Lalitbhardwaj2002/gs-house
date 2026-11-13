@@ -1634,7 +1634,7 @@ const NET_GROUPS = [
     { id: 'ugc-commerce', icon: '💼', code: '08', units: 10, en: 'Paper 2 · Commerce', hi: 'प्रश्नपत्र 2 · वाणिज्य' },
   ] },
   { id: 'csir', langs: ['en'], en: 'CSIR NET', subjects: [
-    { id: 'csir-mathematics', icon: '➗', units: 4, en: 'Mathematical Sciences' },
+    { id: 'csir-mathematics', icon: '➗', units: 4, en: 'Mathematical Sciences', study: { en: 'Unit 1 notes ready' } },
     { id: 'csir-life-sciences', icon: '🧬', units: 14, en: 'Life Sciences', more: 'new syllabus, 21 Jan 2026' },
   ] },
 ];
@@ -1969,7 +1969,7 @@ function notesHTML(blocks, open = false) {
           <tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${fmt(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
       }
       case 'time': return `<ol class="nb-time">${b.items.map(([when, what]) => `<li><b>${fmt(when)}</b><span>${fmt(what || '')}</span></li>`).join('')}</ol>`;
-      case 'cards': return `<div class="nb-cards">${b.items.map(([q, a]) => `<details class="nb-card" ${open ? 'open' : ''}><summary>${fmt(q)}</summary><p>${fmt(a || '')}</p></details>`).join('')}</div>`;
+      case 'cards': return `<div class="nb-cards">${b.items.map(([q, a]) => `<details class="nb-card" ${open ? 'open' : ''}><summary><span>${fmt(q)}</span></summary><p>${fmt(a || '')}</p></details>`).join('')}</div>`;
       case 'refs': return `<aside class="nb-refs"><h3>📚 ${t('netRefs')}</h3><ol>${b.items.map(refItem).join('')}</ol></aside>`;
       case 'box': return `<aside class="nb-box nb-${esc(b.kind)}"><h3>${BOX_ICON[b.kind] || '📌'} ${fmt(b.title)}</h3>${notesHTML(b.items, open)}</aside>`;
       default: return '';
@@ -2123,6 +2123,41 @@ const studyChapters = (unit) => (unit.parts || []).flatMap((part) => part.chapte
 const isRead = (c) => Boolean((bookProgress[c.id] || {}).read);
 const readMeter = (read, n) => `<div class="meter"><span class="m-label">${t('netReadN', read, n)}</span><span class="m-bar"><i style="--w:${pct(read, n)}%" class="hi"></i></span><span class="m-val">${pct(read, n)}%</span></div>`;
 
+// Mathematics in the notes of a subject marked "math" is written as LaTeX between $ signs ($$ for a
+// displayed line) and drawn by KaTeX, which is fetched the first time such a note is opened. Without
+// the library (offline before the first visit) the formulas stay readable as plain LaTeX.
+const KATEX = 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/';
+let mathLoading = null;
+function loadMath() {
+  if (!mathLoading) {
+    mathLoading = new Promise((resolve, reject) => {
+      const css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = `${KATEX}katex.min.css`;
+      document.head.appendChild(css);
+      const add = (src, then) => {
+        const el = document.createElement('script');
+        el.src = KATEX + src;
+        el.onload = then;
+        el.onerror = () => { mathLoading = null; reject(new Error('katex')); };
+        document.head.appendChild(el);
+      };
+      add('katex.min.js', () => add('contrib/auto-render.min.js', resolve));
+    });
+  }
+  return mathLoading;
+}
+function typesetMath(el) {
+  if (!el) return;
+  loadMath().then(() => {
+    if (!document.body.contains(el)) return;
+    window.renderMathInElement(el, {
+      delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }],
+      throwOnError: false,
+    });
+  }).catch(() => {});
+}
+
 // The official syllabus of the subject (the file behind its door on the home screen), or null.
 async function studySyllabus(id) {
   const have = netView.syllabus[id];
@@ -2243,7 +2278,7 @@ async function showStudyChapter(s, unit, chapter, keepScroll) {
   const go = (c, label) => (c ? `<button class="btn" data-action="book-go" data-route="net/${s.id}/${unit.id}/${c.id}">${label}</button>` : '');
   app.innerHTML = `
     ${bookBar(`net/${s.id}/${unit.id}`, t('netAllTopics'))}
-    <article class="card reader" lang="${lang === 'hi' ? 'hi' : 'en'}">
+    <article class="card reader${s.math ? ' has-math' : ''}" lang="${lang === 'hi' ? 'hi' : 'en'}">
       <p class="eyebrow">${t('netUnitNo', s.units.indexOf(unit) + 1)} · ${t('netTopicOf', at + 1, list.length)} · ${t('minRead', Math.max(1, Math.round(words / 170)))}</p>
       <h1 class="reader-title">${fmt(title)}</h1>
       ${notesHTML(blocks)}
@@ -2251,6 +2286,7 @@ async function showStudyChapter(s, unit, chapter, keepScroll) {
       <div class="reader-nav no-print">${go(list[at - 1], `‹ ${t('prevCh')}`)}${go(list[at + 1], `${t('netNextTopic')} ›`)}</div>
       <button class="btn reader-pdf no-print" data-action="print" data-title="GS House - ${esc(s.title.en)} - ${esc(chapter.en)}">🖨️ ${t('netSavePdf')}</button>
     </article>`;
+  if (s.math) typesetMath(app.querySelector('.reader'));
   if (!keepScroll) window.scrollTo(0, 0);
   // The topic counts as read once its last line has been on screen.
   const end = document.getElementById('reader-end');

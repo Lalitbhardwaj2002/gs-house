@@ -1,0 +1,79 @@
+@en
+# Limits, continuity and uniform continuity
+
+> Continuity is a statement about each point; uniform continuity is a statement about the whole domain. Questions usually ask where a given function is continuous, what kind of discontinuity it has, and whether it is uniformly continuous on a given set.
+
+## Limits and continuity
+
+- $\lim_{x \to a} f(x) = l$ if for every $\varepsilon > 0$ there is $\delta > 0$ with $\lvert f(x) - l \rvert < \varepsilon$ whenever $0 < \lvert x - a \rvert < \delta$.
+- **Sequential criterion**: the limit is $l$ if and only if $f(x_n) \to l$ for every sequence $x_n \to a$ with $x_n \ne a$. To show that a limit does not exist, find two sequences with different limits of $f(x_n)$.
+- $f$ is **continuous at $a$** if $\lim_{x \to a} f(x) = f(a)$. Sums, products, quotients (where the denominator is not zero) and compositions of continuous functions are continuous.
+
+| Kind of discontinuity | What happens at $a$ | Example |
+| Removable | The limit exists but differs from $f(a)$ | $\frac{\sin x}{x}$ with $f(0) = 0$ |
+| Jump (first kind) | Left and right limits exist and differ | $[x]$ at integers |
+| Second kind (essential) | A one-sided limit does not exist | $\sin(1/x)$ at 0 |
+
+- A **monotone** function on an interval has only jump discontinuities, and at most countably many.
+- **Dirichlet function** (1 on $\mathbb{Q}$, 0 elsewhere): discontinuous everywhere. **Thomae function** ($1/q$ at $p/q$ in lowest terms, 0 at irrationals): continuous exactly at the irrationals.
+- $f(x) = x$ on $\mathbb{Q}$ and $0$ elsewhere is continuous only at 0.
+
+! remember | Continuous functions on a closed bounded interval
+- $f$ is bounded and attains its supremum and infimum (**extreme value theorem**).
+- $f$ takes every value between $f(a)$ and $f(b)$ (**intermediate value theorem**); the image of an interval is an interval.
+- The image of $[a,b]$ is a closed bounded interval $[m, M]$. So there is no continuous map of $[0,1]$ onto $(0,1)$ or onto $[0,\infty)$.
+- A continuous one-one function on an interval is strictly monotone, and its inverse is continuous.
+- A continuous $f : [a,b] \to [a,b]$ has a **fixed point**.
+- If $f$ is continuous at $a$ and $f(a) > 0$, then $f > 0$ on some neighbourhood of $a$ (sign-preserving property).
+- A continuous $f$ with $f(x+y) = f(x) + f(y)$ for all real $x, y$ is of the form $f(x) = cx$.
+- A continuous function on an interval that takes only rational (or only integer) values is constant.
+
+## Uniform continuity
+
+- $f$ is **uniformly continuous** on $I$ if for every $\varepsilon > 0$ there is one $\delta > 0$ such that $\lvert f(x) - f(y) \rvert < \varepsilon$ for all $x, y \in I$ with $\lvert x - y \rvert < \delta$.
+- **Sequential criterion**: $f$ is uniformly continuous on $I$ if and only if $\lvert a_n - b_n \rvert \to 0$ implies $\lvert f(a_n) - f(b_n) \rvert \to 0$ for all sequences in $I$. To disprove it, find two sequences that come together while their images do not.
+
+! remember | Results on uniform continuity
+- A continuous function on a compact set is uniformly continuous.
+- **Lipschitz** ($\lvert f(x) - f(y) \rvert \le K \lvert x - y \rvert$) implies uniformly continuous. A bounded derivative gives a Lipschitz function. The converse fails: $\sqrt{x}$ on $[0,1]$.
+- A continuous $f$ on a bounded interval $(a,b)$ is uniformly continuous if and only if $\lim_{x \to a^+} f$ and $\lim_{x \to b^-} f$ exist and are finite.
+- A uniformly continuous function maps Cauchy sequences to Cauchy sequences, and is bounded on a bounded set.
+- If $f$ is continuous on $[a, \infty)$ and $\lim_{x \to \infty} f(x)$ is finite, then $f$ is uniformly continuous. A continuous periodic function is uniformly continuous.
+- Sums and compositions of uniformly continuous functions are uniformly continuous. Products need not be, unless both functions are bounded.
+- If $f$ is uniformly continuous on $(a,b]$ and on $[b,c)$, it is uniformly continuous on $(a,c)$.
+- A uniformly continuous $f$ on $\mathbb{R}$ grows at most linearly: $\lvert f(x) \rvert \le A \lvert x \rvert + B$. So $x^2$, $e^x$ and $x^3$ are not uniformly continuous on $\mathbb{R}$.
+
+| Function and domain | Uniformly continuous? | Reason |
+| $x^2$ on $\mathbb{R}$ | No | $a_n = \sqrt{n+1}$, $b_n = \sqrt{n}$ |
+| $x^2$ on $[0,1]$ | Yes | Compact domain |
+| $\sqrt{x}$ on $[0,\infty)$ | Yes | Compact piece plus bounded derivative on $[1,\infty)$ |
+| $1/x$ on $(0,1)$ | No | No finite limit at 0 |
+| $1/x$ on $[1,\infty)$ | Yes | Bounded derivative |
+| $\sin x$, $\cos x$ on $\mathbb{R}$ | Yes | Bounded derivative |
+| $\sin(x^2)$ on $\mathbb{R}$ | No | $a_n = \sqrt{n\pi + \pi/2}$, $b_n = \sqrt{n\pi}$ |
+| $x \sin x$ on $\mathbb{R}$ | No | $a_n = 2n\pi + 1/n$, $b_n = 2n\pi$: images differ by about $2\pi$ |
+| $\sin(1/x)$ on $(0,1)$ | No | No limit at 0 |
+| $x \sin(1/x)$ on $(0,1)$ | Yes | Limit 0 at 0 |
+| $e^x$ on $\mathbb{R}$ | No | $a_n = n + 1/n$, $b_n = n$: images differ by about $e^n/n$ |
+| $e^x$ on $(-\infty, 0]$ | Yes | Derivative bounded by 1 |
+| $\log x$ on $[1,\infty)$ | Yes | Bounded derivative |
+
+? Where is the Thomae function continuous? :: Exactly at the irrational points.
+? Is $\sqrt{x}$ Lipschitz on $[0,1]$? :: No, but it is uniformly continuous there.
+? When is a continuous function on $(a,b)$ uniformly continuous? :: Exactly when it has finite limits at both end points.
+? Is the product of two uniformly continuous functions uniformly continuous? :: Not always: $x \cdot \sin x$ on $\mathbb{R}$.
+
+! exam | PYQ focus
+- Uniform continuity of a given function on a given domain, usually four options to sort.
+- The set of points of continuity or discontinuity of a function defined differently on rationals and irrationals.
+- Consequences of the intermediate value and extreme value theorems: existence of roots, fixed points and impossible images.
+
+! recap | One-minute revision
+- Continuous on a compact set gives bounded, attains extremes, uniformly continuous.
+- Lipschitz implies uniformly continuous implies continuous; neither arrow reverses.
+- On $(a,b)$: uniformly continuous exactly when the end limits are finite.
+
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapters 4 and 5)
+& Walter Rudin, Principles of Mathematical Analysis (chapter 4)
+& S. K. Mapa, Introduction to Real Analysis (limits; continuity; uniform continuity)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

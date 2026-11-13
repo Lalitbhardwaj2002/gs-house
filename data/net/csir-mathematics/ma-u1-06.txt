@@ -1,0 +1,66 @@
+@en
+# Differentiability and the mean value theorems
+
+> The derivative measures the rate of change; the mean value theorems turn information about $f'$ into information about $f$. Most questions are applications: monotonicity, number of roots, inequalities, Taylor expansions and fixed points.
+
+## Differentiability
+
+- $f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}$, when the limit exists. Differentiable at $a$ implies continuous at $a$; the converse fails for $\lvert x \rvert$ at 0.
+- A derivative need not be continuous: $f(x) = x^2 \sin(1/x)$, $f(0) = 0$, is differentiable everywhere but $f'$ is not continuous at 0.
+- $f(x) = \lvert x \rvert^\alpha \sin(1/x)$ with $f(0) = 0$ (real $\alpha$): continuous at 0 for $\alpha > 0$, differentiable at 0 for $\alpha > 1$, continuously differentiable for $\alpha > 2$.
+- There are continuous functions that are differentiable nowhere (Weierstrass).
+
+! remember | The mean value theorems
+- **Rolle**: if $f$ is continuous on $[a,b]$, differentiable on $(a,b)$ and $f(a) = f(b)$, then $f'(c) = 0$ for some $c \in (a,b)$.
+- **Lagrange**: under the first two conditions, $f(b) - f(a) = f'(c)(b - a)$ for some $c \in (a,b)$.
+- **Cauchy**: for two such functions with $g' \ne 0$ on $(a,b)$, $\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(c)}{g'(c)}$ for some $c \in (a,b)$.
+- **Darboux**: a derivative has the intermediate value property, even when it is not continuous. So a derivative cannot have a jump discontinuity.
+
+## Consequences
+
+- $f' = 0$ on an interval implies $f$ is constant. $f' \ge 0$ implies increasing; $f' > 0$ implies strictly increasing (the converse of the last is false: $x^3$).
+- If $\lvert f' \rvert \le K$ on an interval, then $f$ is Lipschitz with constant $K$, hence uniformly continuous.
+- If $\lvert f(x) - f(y) \rvert \le \lvert x - y \rvert^{1+\varepsilon}$ for some $\varepsilon > 0$ and all $x, y$, then $f' = 0$ everywhere and $f$ is constant.
+- **Roots**: between two roots of $f$ lies a root of $f'$. If $f'$ has $k$ real roots, $f$ has at most $k + 1$.
+- **Fixed points**: if $\lvert f'(x) \rvert \le k < 1$ for all real $x$, then $f$ is a contraction and has exactly one fixed point. If $f'(x) \ne 1$ for all $x$, there is at most one fixed point. $\lvert f'(x) \rvert < 1$ alone is not enough: $f(x) = x + \frac{\pi}{2} - \tan^{-1} x$ has $0 \le f' < 1$ and no fixed point.
+- **L'Hôpital's rule** applies to the forms $0/0$ and $\infty/\infty$: if $g' \ne 0$ near the point and $f'/g' \to l$, then $f/g \to l$. The converse fails: $\frac{x^2 \sin(1/x)}{x} \to 0$ as $x \to 0$, but $f'/g'$ has no limit.
+
+## Taylor's theorem
+
+$$f(x) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (x-a)^k + \frac{f^{(n)}(c)}{n!} (x-a)^n \quad \text{for some } c \text{ between } a \text{ and } x.$$
+
+| Function | Maclaurin series | Valid for |
+| $e^x$ | $\sum x^n/n!$ | all $x$ |
+| $\sin x$ | $x - x^3/3! + x^5/5! - \dots$ | all $x$ |
+| $\cos x$ | $1 - x^2/2! + x^4/4! - \dots$ | all $x$ |
+| $\log(1+x)$ | $x - x^2/2 + x^3/3 - \dots$ | $-1 < x \le 1$ |
+| $(1+x)^\alpha$ | $1 + \alpha x + \frac{\alpha(\alpha-1)}{2!} x^2 + \dots$ | $\lvert x \rvert < 1$ |
+| $\tan^{-1} x$ | $x - x^3/3 + x^5/5 - \dots$ | $\lvert x \rvert \le 1$ |
+
+- A smooth function need not equal its Taylor series: $e^{-1/x^2}$ (with value 0 at 0) has all derivatives 0 at the origin.
+
+## Maxima, minima and convexity
+
+- At an interior extremum of a differentiable function, $f' = 0$. The converse is false ($x^3$ at 0).
+- If $f'(a) = \dots = f^{(n-1)}(a) = 0$ and $f^{(n)}(a) \ne 0$: for even $n$ there is a minimum if $f^{(n)}(a) > 0$ and a maximum if $f^{(n)}(a) < 0$; for odd $n$ there is no extremum.
+- $f$ is **convex** if $f(tx + (1-t)y) \le t f(x) + (1-t) f(y)$ for $0 \le t \le 1$. A twice differentiable $f$ is convex on an interval if and only if $f'' \ge 0$ there. A convex function on an open interval is continuous, and $f\left(\frac{x+y}{2}\right) \le \frac{f(x) + f(y)}{2}$.
+
+? Can a derivative have a jump discontinuity? :: No, by Darboux's theorem.
+? Is $x^2 \sin(1/x)$ continuously differentiable at 0? :: No; it is differentiable at 0 but the derivative is not continuous there.
+? What does $\lvert f' \rvert \le k < 1$ on $\mathbb{R}$ give? :: A contraction, so a unique fixed point.
+? Does $f'(a) = 0$ guarantee an extremum? :: No; $x^3$ at 0 has none.
+
+! exam | PYQ focus
+- Differentiability at a point of functions such as $x^\alpha \sin(1/x)$ or functions defined piecewise.
+- Counting real roots or fixed points with Rolle's theorem and the mean value theorem.
+- True or false statements on derivatives: intermediate value property, boundedness, monotonicity.
+
+! recap | One-minute revision
+- Differentiable implies continuous; a derivative has the intermediate value property but may be discontinuous.
+- Bounded derivative gives Lipschitz; derivative of size below 1 gives a unique fixed point.
+- Taylor: polynomial part plus a remainder with the $n$-th derivative at an intermediate point.
+
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapter 6)
+& Walter Rudin, Principles of Mathematical Analysis (chapter 5)
+& S. K. Mapa, Introduction to Real Analysis (differentiation; mean value theorems)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
