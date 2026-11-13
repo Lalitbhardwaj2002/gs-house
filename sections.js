@@ -66,7 +66,7 @@ const SECTIONS = [
   { id: 'hist-nm2', unit: 'u2', tracks: ['tgt', 'higher'], en: 'National Movement II (1919–1950)', hi: 'राष्ट्रीय आंदोलन II (1919–1950)',
     scope: 'Gandhian movements, Rowlatt, Jallianwala, Non-Cooperation, Simon, Civil Disobedience, Round Tables, Quit India, INA, Partition, integration of states.' },
   { id: 'culture', unit: 'u2', tracks: ['tgt', 'higher'], en: 'Indian Art & Culture', hi: 'भारतीय कला एवं संस्कृति',
-    scope: 'Salient features of Indian culture: classical and folk dances, music, gharanas, instruments, architecture, paintings, festivals, heritage sites.' },
+    scope: 'Salient features of Indian culture: classical and folk dances, music, gharanas, instruments, architecture, paintings, literature and languages, theatre, cinema, festivals, heritage sites.' },
 
   // ---------- Unit 3: Constitution & Polity ----------
   { id: 'pol-making', unit: 'u3', tracks: ['tgt', 'higher'], en: 'Making of the Constitution & Preamble', hi: 'संविधान निर्माण एवं प्रस्तावना',
@@ -116,7 +116,7 @@ const SECTIONS = [
   { id: 'geo-universe', unit: 'u5', tracks: ['higher'], en: 'Origin of Universe & Solar System', hi: 'ब्रह्मांड की उत्पत्ति एवं सौरमंडल',
     scope: 'Big Bang and theories, galaxies and stars, the Sun, planets, moons, dwarf planets, latitude and longitude.' },
   { id: 'geo-earth', unit: 'u5', tracks: ['tgt'], en: 'Earth: Interior, Rocks & Landforms', hi: 'पृथ्वी: आंतरिक संरचना, चट्टानें एवं स्थलरूप',
-    scope: 'Earth’s interior, plate tectonics, rocks, landforms, atmosphere, winds, ocean currents, cyclones.' },
+    scope: 'Earth’s interior, plate tectonics, rocks, landforms, atmosphere, winds, ocean currents, cyclones; world geography: straits and canals, rivers and lakes, deserts and grasslands, mountains, countries.' },
   { id: 'geo-physio', unit: 'u5', tracks: ['tgt', 'higher'], en: 'India: Location & Physiography', hi: 'भारत: स्थिति एवं भू-आकृति',
     scope: 'India’s location and neighbours, Himalayas, northern plains, peninsular plateaus, coasts and islands.' },
   { id: 'geo-rivers', unit: 'u5', tracks: ['tgt', 'higher'], en: 'Rivers, Lakes & Dams', hi: 'नदियाँ, झीलें एवं बाँध',

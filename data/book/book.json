@@ -61,16 +61,288 @@
      "pages": "36–68",
      "en": "Indian History",
      "hi": "भारतीय इतिहास",
-     "practice": [
-      "hist-ivc",
-      "hist-vedic",
-      "hist-buddhism",
-      "hist-maurya",
-      "hist-gupta",
-      "hist-sultanate",
-      "hist-mughal",
-      "hist-bhakti",
-      "culture"
+     "chapters": [
+      {
+       "id": "gc-hist-01",
+       "pages": "36",
+       "en": "Prehistory and the Indus Valley Civilisation",
+       "hi": "प्रागितिहास एवं सिंधु घाटी सभ्यता",
+       "pool": [
+        [
+         "hist-ivc",
+         "Ancient India"
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-02",
+       "pages": "36–37",
+       "en": "The Vedic age",
+       "hi": "वैदिक काल",
+       "pool": [
+        [
+         "hist-vedic",
+         "Vedic Age"
+        ],
+        [
+         "hist-vedic",
+         "Ancient India"
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-03",
+       "pages": "37–38",
+       "en": "Buddhism and Jainism",
+       "hi": "बौद्ध धर्म एवं जैन धर्म",
+       "pool": [
+        [
+         "hist-buddhism",
+         "Ancient India",
+         [
+          "Buddhism",
+          "Jainism",
+          "Heterodox sects"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-04",
+       "pages": "38–39",
+       "en": "Mahajanapadas, Magadha and the Maurya Empire",
+       "hi": "महाजनपद, मगध एवं मौर्य साम्राज्य",
+       "pool": [
+        [
+         "hist-buddhism",
+         "Ancient India",
+         [
+          "Mahajanapadas",
+          "Rise of Magadha"
+         ]
+        ],
+        [
+         "hist-maurya",
+         "Ancient India",
+         [
+          "Mauryan Empire",
+          "Ashoka",
+          "Mauryan art"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-05",
+       "pages": "39–40",
+       "en": "After the Mauryas: new kingdoms, the Sangam age and trade with Rome",
+       "hi": "मौर्योत्तर काल: नए राज्य, संगम युग एवं रोम से व्यापार",
+       "pool": [
+        [
+         "hist-maurya",
+         "Ancient India",
+         [
+          "Post-Mauryan period"
+         ]
+        ],
+        [
+         "hist-gupta",
+         "Ancient India",
+         [
+          "Sangam Age"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-06",
+       "pages": "40–41",
+       "en": "The Gupta Empire, Harsha and the centres of learning",
+       "hi": "गुप्त साम्राज्य, हर्ष एवं शिक्षा के केंद्र",
+       "pool": [
+        [
+         "hist-gupta",
+         "Ancient India",
+         [
+          "Gupta Empire",
+          "Vakatakas",
+          "Post-Gupta Period"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-07",
+       "pages": "42–43",
+       "en": "South India and the early medieval kingdoms",
+       "hi": "दक्षिण भारत एवं पूर्व मध्यकालीन राज्य",
+       "pool": [
+        [
+         "hist-gupta",
+         "Ancient India",
+         [
+          "South India"
+         ]
+        ],
+        [
+         "hist-gupta",
+         "Early Medieval India"
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-08",
+       "pages": "43–45",
+       "en": "The Delhi Sultanate, Vijayanagara and the Bahmani kingdom",
+       "hi": "दिल्ली सल्तनत, विजयनगर एवं बहमनी राज्य",
+       "pool": [
+        [
+         "hist-sultanate",
+         "Medieval India"
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-09",
+       "pages": "45–46",
+       "en": "The Mughal Empire",
+       "hi": "मुगल साम्राज्य",
+       "pool": [
+        [
+         "hist-mughal",
+         "Medieval India",
+         [
+          "Mughal Empire",
+          "Sur dynasty"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-10",
+       "pages": "46–47",
+       "en": "The Marathas",
+       "hi": "मराठा शक्ति",
+       "pool": [
+        [
+         "hist-mughal",
+         "Medieval India",
+         [
+          "Marathas"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-11",
+       "pages": "47–54",
+       "en": "The coming of the Europeans and the growth of British rule",
+       "hi": "यूरोपीय कंपनियों का आगमन एवं ब्रिटिश शासन का विस्तार",
+       "pool": [
+        [
+         "hist-british",
+         "Modern India"
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-12",
+       "pages": "55–57",
+       "en": "Indian philosophy, the Bhakti and Sufi movements and social reform",
+       "hi": "भारतीय दर्शन, भक्ति एवं सूफी आंदोलन तथा समाज सुधार",
+       "pool": [
+        [
+         "hist-bhakti",
+         "Medieval India"
+        ],
+        [
+         "hist-1857",
+         "Modern India",
+         [
+          "Socio-religious reform"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-13",
+       "pages": "58–60",
+       "en": "Languages, literature and authors",
+       "hi": "भाषा, साहित्य एवं रचनाकार",
+       "pool": [
+        [
+         "culture",
+         "Literature"
+        ],
+        [
+         "hist-vedic",
+         "Vedic Age",
+         [
+          "Vedic Literature",
+          "Vedangas"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-14",
+       "pages": "61–63",
+       "en": "Architecture, sculpture and painting",
+       "hi": "स्थापत्य, मूर्तिकला एवं चित्रकला",
+       "pool": [
+        [
+         "culture",
+         "Architecture"
+        ],
+        [
+         "culture",
+         "Painting"
+        ],
+        [
+         "culture",
+         "Sculpture"
+        ],
+        [
+         "hist-maurya",
+         "Ancient India",
+         [
+          "Mauryan art"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-hist-15",
+       "pages": "64–68",
+       "en": "Music, dance, theatre, festivals and cinema",
+       "hi": "संगीत, नृत्य, रंगमंच, पर्व एवं सिनेमा",
+       "pool": [
+        [
+         "culture",
+         "Dance"
+        ],
+        [
+         "culture",
+         "Music"
+        ],
+        [
+         "culture",
+         "Theatre"
+        ],
+        [
+         "culture",
+         "Cinema"
+        ],
+        [
+         "culture",
+         "Festivals"
+        ],
+        [
+         "culture",
+         "Heritage"
+        ]
+       ]
+      }
      ]
     },
     {
@@ -79,11 +351,120 @@
      "pages": "68–91",
      "en": "Indian Freedom Movement",
      "hi": "भारतीय स्वतंत्रता आंदोलन",
-     "practice": [
-      "hist-british",
-      "hist-1857",
-      "hist-nm1",
-      "hist-nm2"
+     "chapters": [
+      {
+       "id": "gc-free-01",
+       "pages": "68–70",
+       "en": "Early resistance, tribal revolts and the Revolt of 1857",
+       "hi": "आरंभिक प्रतिरोध, जनजातीय विद्रोह एवं 1857 की क्रांति",
+       "pool": [
+        [
+         "hist-1857",
+         "Modern India",
+         [
+          "Revolt of 1857",
+          "Tribal and peasant revolts"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-free-02",
+       "pages": "70–73",
+       "en": "The Congress, the partition of Bengal, Swadeshi and Home Rule",
+       "hi": "कांग्रेस, बंगाल विभाजन, स्वदेशी एवं होमरूल",
+       "pool": [
+        [
+         "hist-nm1",
+         "National Movement"
+        ]
+       ]
+      },
+      {
+       "id": "gc-free-03",
+       "pages": "73–76",
+       "en": "The revolutionary movement",
+       "hi": "क्रांतिकारी आंदोलन",
+       "pool": [
+        [
+         "hist-nm2",
+         "National Movement",
+         [
+          "Revolutionary movement"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-free-04",
+       "pages": "76–80",
+       "en": "Gandhi arrives: Champaran to Non-Cooperation",
+       "hi": "गांधी युग का आरंभ: चंपारण से असहयोग तक",
+       "pool": [
+        [
+         "hist-nm2",
+         "National Movement",
+         [
+          "Early satyagrahas",
+          "Rowlatt Satyagraha",
+          "Jallianwala Bagh",
+          "Non-Cooperation Movement"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-free-05",
+       "pages": "80–84",
+       "en": "Towards Swaraj: Simon Commission, Civil Disobedience and the Poona Pact",
+       "hi": "स्वराज की ओर: साइमन कमीशन, सविनय अवज्ञा एवं पूना समझौता",
+       "pool": [
+        [
+         "hist-nm2",
+         "National Movement",
+         [
+          "Swaraj Party and Simon Commission",
+          "Civil Disobedience Movement",
+          "Round Table Conferences and Poona Pact",
+          "1919–1947"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-free-06",
+       "pages": "84–87",
+       "en": "Peasants and workers, Subhas Bose, the INA and Quit India",
+       "hi": "किसान एवं श्रमिक, सुभाष बोस, आजाद हिंद फौज एवं भारत छोड़ो",
+       "pool": [
+        [
+         "hist-nm2",
+         "National Movement",
+         [
+          "Peasant and labour movements",
+          "Subhas Chandra Bose and the INA",
+          "Quit India Movement"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-free-07",
+       "pages": "87–91",
+       "en": "Partition and independence; slogans and books",
+       "hi": "विभाजन एवं स्वतंत्रता; नारे एवं पुस्तकें",
+       "pool": [
+        [
+         "hist-nm2",
+         "National Movement",
+         [
+          "Towards independence",
+          "Integration of states",
+          "Slogans and books"
+         ]
+        ]
+       ]
+      }
      ]
     },
     {
@@ -402,8 +783,71 @@
      "pages": "128–136",
      "en": "Legal and constitutional developments in education",
      "hi": "शैक्षिक व्यवस्था से संबंधित विधिक एवं संवैधानिक विकास",
-     "practice": [
-      "pol-education"
+     "chapters": [
+      {
+       "id": "gc-edu-01",
+       "pages": "128–129",
+       "en": "Education from British rule to the national policies",
+       "hi": "ब्रिटिश काल से राष्ट्रीय नीतियों तक शिक्षा",
+       "pool": [
+        [
+         "pol-education",
+         "Education and the Constitution",
+         [
+          "Education under British rule",
+          "Education commissions and policies",
+          "Statutory bodies in education"
+         ]
+        ],
+        [
+         "misc-gk",
+         "Education: Schemes and Management"
+        ]
+       ]
+      },
+      {
+       "id": "gc-edu-02",
+       "pages": "130",
+       "en": "The Constitution and the Right to Education",
+       "hi": "संविधान एवं शिक्षा का अधिकार",
+       "pool": [
+        [
+         "pol-education",
+         "Education and the Constitution",
+         [
+          "Fundamental Right to Education",
+          "RTE Act, 2009",
+          "42nd Amendment and Article 350A",
+          "RTE Act and minority rights",
+          "Fundamental Rights and education",
+          "Directive Principles and education",
+          "Right to Education Act",
+          "Language provisions",
+          "Schemes for school education"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-edu-03",
+       "pages": "131–136",
+       "en": "Accreditation, institutions of higher education and the National Education Policy 2020",
+       "hi": "प्रत्यायन, उच्च शिक्षा संस्थान एवं राष्ट्रीय शिक्षा नीति 2020",
+       "levels": "all",
+       "pool": [
+        [
+         "tra-ugc",
+         "UGC & Higher Education"
+        ],
+        [
+         "pol-education",
+         "Education and the Constitution",
+         [
+          "National Education Policy 2020"
+         ]
+        ]
+       ]
+      }
      ]
     },
     {
@@ -412,15 +856,128 @@
      "pages": "137–155",
      "en": "Indian Economy",
      "hi": "भारतीय अर्थव्यवस्था",
-     "practice": [
-      "eco-basics",
-      "eco-planning",
-      "eco-banking",
-      "eco-capital",
-      "eco-budget",
-      "eco-poverty",
-      "eco-agri-industry",
-      "eco-trade"
+     "chapters": [
+      {
+       "id": "gc-eco-01",
+       "pages": "137",
+       "en": "Basic concepts and national income",
+       "hi": "आधारभूत अवधारणाएँ एवं राष्ट्रीय आय",
+       "pool": [
+        [
+         "eco-basics",
+         "Basic Concepts"
+        ],
+        [
+         "eco-basics",
+         "National Income"
+        ],
+        [
+         "eco-basics",
+         "Microeconomics"
+        ]
+       ]
+      },
+      {
+       "id": "gc-eco-02",
+       "pages": "138–141",
+       "en": "Poverty, unemployment and welfare schemes",
+       "hi": "निर्धनता, बेरोजगारी एवं कल्याण योजनाएँ",
+       "pool": [
+        [
+         "eco-poverty",
+         "Poverty, Unemployment & Welfare Schemes"
+        ]
+       ]
+      },
+      {
+       "id": "gc-eco-03",
+       "pages": "142",
+       "en": "Planning and the economic reforms of 1991",
+       "hi": "नियोजन एवं 1991 के आर्थिक सुधार",
+       "pool": [
+        [
+         "eco-planning",
+         "Planning"
+        ],
+        [
+         "eco-planning",
+         "Economic Reforms"
+        ]
+       ]
+      },
+      {
+       "id": "gc-eco-04",
+       "pages": "143–145",
+       "en": "Agriculture, industry and infrastructure",
+       "hi": "कृषि, उद्योग एवं आधारभूत संरचना",
+       "pool": [
+        [
+         "eco-agri-industry",
+         "Agriculture & Industry"
+        ]
+       ]
+      },
+      {
+       "id": "gc-eco-05",
+       "pages": "145–149",
+       "en": "Money, inflation and banking",
+       "hi": "मुद्रा, मुद्रास्फीति एवं बैंकिंग",
+       "pool": [
+        [
+         "eco-banking",
+         "Banking"
+        ],
+        [
+         "eco-banking",
+         "Money and Currency"
+        ]
+       ]
+      },
+      {
+       "id": "gc-eco-06",
+       "pages": "150",
+       "en": "Financial markets",
+       "hi": "वित्तीय बाजार",
+       "levels": "all",
+       "pool": [
+        [
+         "eco-capital",
+         "Financial markets"
+        ],
+        [
+         "eco-capital",
+         "Capital Market"
+        ],
+        [
+         "eco-capital",
+         "Financial Markets"
+        ]
+       ]
+      },
+      {
+       "id": "gc-eco-07",
+       "pages": "150–153",
+       "en": "Public finance: budget, taxes and the Finance Commission",
+       "hi": "लोक वित्त: बजट, कर एवं वित्त आयोग",
+       "pool": [
+        [
+         "eco-budget",
+         "Budget, Taxation & Income Tax"
+        ]
+       ]
+      },
+      {
+       "id": "gc-eco-08",
+       "pages": "154–155",
+       "en": "Foreign trade and world economic bodies",
+       "hi": "विदेशी व्यापार एवं विश्व आर्थिक संस्थाएँ",
+       "pool": [
+        [
+         "eco-trade",
+         "Trade, Balance of Payments & Global Bodies"
+        ]
+       ]
+      }
      ]
     },
     {
@@ -429,17 +986,186 @@
      "pages": "156–189",
      "en": "General Geography of India and Population",
      "hi": "भारत का सामान्य भूगोल एवं जनसंख्या",
-     "practice": [
-      "geo-universe",
-      "geo-earth",
-      "geo-physio",
-      "geo-rivers",
-      "geo-climate",
-      "geo-soil-forest",
-      "geo-resources",
-      "geo-agri-transport",
-      "geo-population",
-      "geo-up"
+     "chapters": [
+      {
+       "id": "gc-geo-01",
+       "pages": "156",
+       "en": "India: location, extent and neighbours",
+       "hi": "भारत: स्थिति, विस्तार एवं पड़ोसी",
+       "pool": [
+        [
+         "geo-physio",
+         "India: Location"
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-02",
+       "pages": "157–159",
+       "en": "Physical divisions of India",
+       "hi": "भारत के भौतिक विभाग",
+       "pool": [
+        [
+         "geo-physio",
+         "Physiography"
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-03",
+       "pages": "160–162",
+       "en": "Rivers, lakes and waterfalls",
+       "hi": "नदियाँ, झीलें एवं जलप्रपात",
+       "pool": [
+        [
+         "geo-rivers",
+         "Drainage"
+        ],
+        [
+         "geo-rivers",
+         "Lakes"
+        ],
+        [
+         "geo-rivers",
+         "Waterfalls"
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-04",
+       "pages": "163",
+       "en": "Climate and the monsoon",
+       "hi": "जलवायु एवं मानसून",
+       "pool": [
+        [
+         "geo-climate",
+         "Climate"
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-05",
+       "pages": "164–167",
+       "en": "Soils, natural vegetation and multipurpose projects",
+       "hi": "मृदा, प्राकृतिक वनस्पति एवं बहुउद्देशीय परियोजनाएँ",
+       "pool": [
+        [
+         "geo-soil-forest",
+         "Soils, Forests & Protected Areas",
+         [
+          "Soils",
+          "Soil erosion",
+          "Forests",
+          "Forest cover"
+         ]
+        ],
+        [
+         "geo-rivers",
+         "Dams and projects"
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-06",
+       "pages": "168–170",
+       "en": "Mineral and energy resources",
+       "hi": "खनिज एवं ऊर्जा संसाधन",
+       "pool": [
+        [
+         "geo-resources",
+         "Minerals, Energy & Industries",
+         [
+          "Minerals",
+          "Energy resources"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-07",
+       "pages": "171–177",
+       "en": "Agriculture, industries and transport",
+       "hi": "कृषि, उद्योग एवं परिवहन",
+       "pool": [
+        [
+         "geo-agri-transport",
+         "Crops & Transport"
+        ],
+        [
+         "geo-resources",
+         "Minerals, Energy & Industries",
+         [
+          "Industries"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-08",
+       "pages": "178",
+       "en": "Population and tribes of India",
+       "hi": "भारत की जनसंख्या एवं जनजातियाँ",
+       "pool": [
+        [
+         "geo-population",
+         "Population & Census"
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-09",
+       "pages": "179–180",
+       "en": "The universe, the solar system, latitude, longitude and time",
+       "hi": "ब्रह्मांड, सौरमंडल, अक्षांश, देशांतर एवं समय",
+       "levels": "all",
+       "pool": [
+        [
+         "geo-universe",
+         "Origin of Universe & Solar System"
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-10",
+       "pages": "181–184",
+       "en": "The Earth: rocks, earthquakes, atmosphere and oceans",
+       "hi": "पृथ्वी: शैल, भूकंप, वायुमंडल एवं महासागर",
+       "pool": [
+        [
+         "geo-earth",
+         "Earth: Interior, Rocks & Landforms",
+         [
+          "Interior of the Earth",
+          "Rocks",
+          "Earthquakes",
+          "Continental drift and plate tectonics",
+          "Ocean currents",
+          "Atmosphere",
+          "Minerals and rocks",
+          "Volcanoes and earthquakes",
+          "Oceans",
+          "Cyclones",
+          "Plate tectonics",
+          "Winds"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-geo-11",
+       "pages": "185–189",
+       "en": "World geography: seas, rivers, deserts, grasslands and countries",
+       "hi": "विश्व भूगोल: सागर, नदियाँ, मरुस्थल, घास के मैदान एवं देश",
+       "pool": [
+        [
+         "geo-earth",
+         "Earth: Interior, Rocks & Landforms",
+         [
+          "World geography"
+         ]
+        ]
+       ]
+      }
      ]
     }
    ]
