@@ -1,0 +1,113 @@
+@en
+# Memory, storage and file formats
+> Think of a student at a desk. What is in the head right now is **RAM**: quick, but gone when sleep comes. The printed textbook is **ROM**: it stays as it is. The cupboard of notebooks is the **hard disk**. A computer keeps its data in the same three ways.
+
+## 🧠 Primary memory
+| Memory | Nature | Remember |
+| RAM | ==Volatile==: lost when power goes off | Working memory; types SRAM and DRAM |
+| ROM | Non-volatile: stays without power | Programmed when it is made; holds the start-up program |
+| Cache | Very fast, very small | Sits between the CPU and RAM |
+| Registers | Fastest of all | Inside the CPU |
+
+- Types of ROM: PROM, ==EPROM== (erased by ultraviolet light) and EEPROM (erased electrically).
+- Speed order: registers, cache, RAM, then secondary storage.
+
+## 💾 Secondary storage
+| Device | How it stores | Capacity or point |
+| Hard disk (HDD) | Magnetic platters | First made by IBM in 1956 |
+| Solid state drive (SSD) | Flash memory, no moving parts | Faster than a hard disk |
+| CD | Optical, read by laser | About 700 MB |
+| DVD | Optical | About 4.7 GB |
+| Blu-ray disc | Optical, blue-violet laser | About 25 GB on one layer |
+| Magnetic tape | Magnetic | Sequential access, used for backup |
+| Pen drive | Flash memory | Plugs into a USB port |
+
+- ==Formatting== prepares a disk by dividing it into tracks and sectors.
+
+## 📂 File formats
+| Extension | Kind of file |
+| .docx | Word document |
+| .xlsx | Excel workbook |
+| .pptx | PowerPoint presentation |
+| .pdf | Portable document |
+| .jpg, .png | Picture |
+| .mp3 | Sound |
+| .mp4 | Video |
+| .exe | Program that runs |
+| .zip | Compressed folder |
+
+! trick | Trick: RAM forgets, ROM remembers
+**RAM** = Random Access Memory, gone without power. **ROM** = Read Only Memory, stays for ever.
+
+! exam | Exam favourites
+- The memory that is programmed at the time of manufacture is ROM.
+- Cache memory makes the CPU work faster.
+- JPEG stands for Joint Photographic Experts Group; a JPEG file holds a picture.
+
+## 👆 Quick recall
+? Which memory is volatile? :: RAM
+? Which ROM is erased by ultraviolet light? :: EPROM
+? How much data does a CD hold? :: About 700 MB
+? What does formatting create on a disk? :: Tracks and sectors
+
+! recap | 30-second recap
+- RAM is temporary; ROM is permanent; cache is the quick helper.
+- Hard disk and tape are magnetic; CD, DVD and Blu-ray are optical; SSD and pen drive use flash.
+- The extension after the dot tells the kind of file.
+
+@hi
+# स्मृति, भंडारण एवं फाइल स्वरूप
+> मेज पर बैठे एक विद्यार्थी को सोचिए। जो अभी दिमाग में है, वह **RAM** है: तेज, पर नींद आते ही गायब। छपी हुई पाठ्यपुस्तक **ROM** है: जैसी है वैसी रहती है। कॉपियों की अलमारी **हार्ड डिस्क** है। कंप्यूटर भी अपना डेटा इन्हीं तीन तरीकों से रखता है।
+
+## 🧠 प्राथमिक मेमोरी
+| मेमोरी | स्वभाव | याद रखें |
+| RAM | ==अस्थायी (वोलेटाइल)==: बिजली जाते ही मिट जाती है | कार्यकारी मेमोरी; प्रकार SRAM और DRAM |
+| ROM | स्थायी: बिजली के बिना भी रहती है | निर्माण के समय प्रोग्राम की जाती है; इसमें स्टार्ट-अप प्रोग्राम रहता है |
+| कैश | बहुत तेज, बहुत छोटी | CPU और RAM के बीच रहती है |
+| रजिस्टर | सबसे तेज | CPU के भीतर |
+
+- ROM के प्रकार: PROM, ==EPROM== (पराबैंगनी प्रकाश से मिटती है) और EEPROM (विद्युत से मिटती है)।
+- गति का क्रम: रजिस्टर, कैश, RAM, फिर द्वितीयक भंडारण।
+
+## 💾 द्वितीयक भंडारण
+| युक्ति | भंडारण का तरीका | क्षमता या विशेष बात |
+| हार्ड डिस्क (HDD) | चुंबकीय प्लेटें | सबसे पहले आईबीएम ने 1956 में बनाई |
+| सॉलिड स्टेट ड्राइव (SSD) | फ्लैश मेमोरी, कोई चलता पुर्जा नहीं | हार्ड डिस्क से तेज |
+| सीडी | ऑप्टिकल, लेज़र से पढ़ी जाती है | लगभग 700 MB |
+| डीवीडी | ऑप्टिकल | लगभग 4.7 GB |
+| ब्लू-रे डिस्क | ऑप्टिकल, नीली-बैंगनी लेज़र | एक परत पर लगभग 25 GB |
+| चुंबकीय टेप | चुंबकीय | क्रमिक अभिगम, बैकअप के लिए |
+| पेन ड्राइव | फ्लैश मेमोरी | USB पोर्ट में लगती है |
+
+- ==फॉर्मेटिंग== डिस्क को ट्रैक और सेक्टर में बाँटकर तैयार करती है।
+
+## 📂 फाइल स्वरूप
+| एक्सटेंशन | फाइल का प्रकार |
+| .docx | वर्ड दस्तावेज |
+| .xlsx | एक्सेल वर्कबुक |
+| .pptx | पावरपॉइंट प्रस्तुति |
+| .pdf | पोर्टेबल दस्तावेज |
+| .jpg, .png | चित्र |
+| .mp3 | ध्वनि |
+| .mp4 | वीडियो |
+| .exe | चलने वाला प्रोग्राम |
+| .zip | संपीडित फोल्डर |
+
+! trick | युक्ति: RAM भूलती है, ROM याद रखती है
+**RAM** = रैंडम एक्सेस मेमोरी, बिजली जाते ही खाली। **ROM** = रीड ओनली मेमोरी, सदा बनी रहती है।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- जो मेमोरी निर्माण के समय प्रोग्राम की जाती है, वह ROM है।
+- कैश मेमोरी CPU के काम को तेज करती है।
+- JPEG का पूर्ण रूप जॉइंट फोटोग्राफिक एक्सपर्ट्स ग्रुप है; JPEG फाइल में चित्र होता है।
+
+## 👆 झटपट दोहराव
+? कौन-सी मेमोरी अस्थायी है? :: RAM
+? कौन-सी ROM पराबैंगनी प्रकाश से मिटती है? :: EPROM
+? सीडी में कितना डेटा आता है? :: लगभग 700 MB
+? फॉर्मेटिंग से डिस्क पर क्या बनता है? :: ट्रैक और सेक्टर
+
+! recap | 30 सेकंड का सार
+- RAM अस्थायी है; ROM स्थायी है; कैश तेज सहायक है।
+- हार्ड डिस्क और टेप चुंबकीय हैं; सीडी, डीवीडी और ब्लू-रे ऑप्टिकल हैं; SSD और पेन ड्राइव फ्लैश पर चलती हैं।
+- बिंदु के बाद का एक्सटेंशन फाइल का प्रकार बताता है।

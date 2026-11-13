@@ -1,0 +1,125 @@
+@en
+# Computer applications, data analysis, cloud computing and cyber security
+> Three questions sum up this chapter. **Which program does which job? Where is my file really kept? And who is trying to steal it?** The answers are office software, the cloud and cyber security.
+
+## 🧰 Everyday programs
+| Program | Job | File |
+| MS Word | Letters and documents | .docx |
+| ==MS Excel== | Calculations, tables and charts in rows and columns | .xlsx (a workbook) |
+| MS PowerPoint | Slide presentations | .pptx |
+| MS Access | Databases | .accdb |
+
+- In Excel a box is a **cell**, named by its column and row, like B4. A formula begins with **=**.
+- $A$1 is an ==absolute reference==: it does not change when the formula is copied.
+
+## 📊 Tools for analysing data
+- **MS Excel**: totals, averages, charts.
+- ==SPSS== (Statistical Package for the Social Sciences): the best-known program for research statistics.
+- **R** and **Python**: free languages for data analysis.
+- ==Big data== means data sets too large and fast-growing for ordinary tools. Governments use them to plan and to spot fraud.
+
+## ☁️ Cloud computing
+- Using storage, software and computing power ==over the Internet==, instead of on your own machine.
+- You pay for what you use and can reach your files from anywhere.
+
+| Model | You get | Example |
+| IaaS | Servers and storage | Virtual machines |
+| PaaS | A platform to build apps | App-building platforms |
+| SaaS | Ready software | Web mail, online office tools |
+
+## 🛡️ Cyber security
+| Threat | What it does |
+| Virus | Attaches itself to a file and spreads when the file is run |
+| ==Worm== | Copies itself across a network without any help |
+| Trojan horse | Hides inside a useful-looking program |
+| ==Ransomware== | Locks your data and demands money |
+| Spyware | Secretly watches what you do |
+| ==Phishing== | Fake mails or sites that trick you into giving passwords |
+
+Staying safe:
+- Use strong passwords and ==two-factor authentication== (for example, a password plus an OTP).
+- Keep a **firewall** and antivirus on, and update your software.
+- On public Wi-Fi use a ==VPN== and avoid banking.
+- Look for **https** and the lock before entering details.
+
+! trick | Trick: virus and worm
+A **virus** needs a host file, like a germ needs a body. A **worm** travels alone.
+
+! exam | Exam favourites
+- CERT-In, the national agency for cyber incidents, works under the Ministry of Electronics and IT.
+- The Information Technology Act, 2000 gave legal recognition to electronic records.
+- The national cyber crime helpline number is 1930.
+
+## 👆 Quick recall
+? Which program is used for spreadsheets? :: MS Excel
+? What does SaaS stand for? :: Software as a Service
+? Which malware demands money to unlock data? :: Ransomware
+? What should you use on public Wi-Fi? :: A VPN
+
+! recap | 30-second recap
+- Word writes, Excel calculates, PowerPoint presents; SPSS analyses.
+- Cloud = computing over the Internet: IaaS, PaaS, SaaS.
+- Virus, worm, Trojan, ransomware, phishing: guard with passwords, OTP, firewall and VPN.
+
+@hi
+# कंप्यूटर अनुप्रयोग, डेटा विश्लेषण, क्लाउड कंप्यूटिंग एवं साइबर सुरक्षा
+> तीन प्रश्न इस अध्याय का सार हैं। **कौन-सा प्रोग्राम कौन-सा काम करता है? मेरी फाइल वास्तव में कहाँ रखी है? और उसे कौन चुराना चाहता है?** उत्तर हैं: ऑफिस सॉफ्टवेयर, क्लाउड और साइबर सुरक्षा।
+
+## 🧰 रोज के प्रोग्राम
+| प्रोग्राम | कार्य | फाइल |
+| MS वर्ड | पत्र और दस्तावेज | .docx |
+| ==MS एक्सेल== | पंक्तियों और स्तंभों में गणना, तालिकाएँ और चार्ट | .xlsx (वर्कबुक) |
+| MS पावरपॉइंट | स्लाइड प्रस्तुति | .pptx |
+| MS एक्सेस | डेटाबेस | .accdb |
+
+- एक्सेल में एक खाना **सेल** कहलाता है, जिसका नाम स्तंभ और पंक्ति से बनता है, जैसे B4। सूत्र **=** से आरंभ होता है।
+- $A$1 ==निरपेक्ष संदर्भ (एब्सोल्यूट रेफरेंस)== है: सूत्र कॉपी करने पर यह नहीं बदलता।
+
+## 📊 डेटा विश्लेषण के साधन
+- **MS एक्सेल**: योग, औसत, चार्ट।
+- ==SPSS== (स्टैटिस्टिकल पैकेज फॉर द सोशल साइंसेज): शोध की सांख्यिकी का सबसे प्रसिद्ध प्रोग्राम।
+- **R** और **पायथन**: डेटा विश्लेषण की निःशुल्क भाषाएँ।
+- ==बिग डेटा== वे डेटा-समूह हैं जो साधारण साधनों के लिए बहुत बड़े और तेजी से बढ़ने वाले हैं। सरकारें इनसे योजना बनाती हैं और धोखाधड़ी पकड़ती हैं।
+
+## ☁️ क्लाउड कंप्यूटिंग
+- अपनी मशीन की जगह ==इंटरनेट के माध्यम से== भंडारण, सॉफ्टवेयर और कंप्यूटिंग शक्ति का उपयोग।
+- जितना उपयोग, उतना भुगतान; और फाइलें कहीं से भी मिल जाती हैं।
+
+| मॉडल | क्या मिलता है | उदाहरण |
+| IaaS | सर्वर और भंडारण | वर्चुअल मशीनें |
+| PaaS | ऐप बनाने का प्लेटफॉर्म | ऐप-निर्माण प्लेटफॉर्म |
+| SaaS | तैयार सॉफ्टवेयर | वेब मेल, ऑनलाइन ऑफिस साधन |
+
+## 🛡️ साइबर सुरक्षा
+| खतरा | क्या करता है |
+| वायरस | किसी फाइल से जुड़ जाता है और फाइल चलने पर फैलता है |
+| ==वर्म== | बिना किसी सहायता के नेटवर्क पर अपनी प्रतियाँ बनाता है |
+| ट्रोजन हॉर्स | उपयोगी दिखने वाले प्रोग्राम के भीतर छिपा रहता है |
+| ==रैनसमवेयर== | आपका डेटा बंद कर देता है और पैसे माँगता है |
+| स्पाइवेयर | चुपके से आपकी गतिविधि देखता है |
+| ==फिशिंग== | नकली मेल या साइटें, जो छल से पासवर्ड ले लेती हैं |
+
+सुरक्षित रहने के उपाय:
+- मजबूत पासवर्ड और ==दो-चरणीय प्रमाणीकरण== (जैसे पासवर्ड के साथ ओटीपी) रखें।
+- **फायरवॉल** और एंटीवायरस चालू रखें, और सॉफ्टवेयर अद्यतन करते रहें।
+- सार्वजनिक वाई-फाई पर ==VPN== का उपयोग करें और बैंकिंग से बचें।
+- विवरण भरने से पहले **https** और ताला देख लें।
+
+! trick | युक्ति: वायरस और वर्म
+**वायरस** को आश्रय देने वाली फाइल चाहिए, जैसे रोगाणु को शरीर। **वर्म** अकेला ही चलता है।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- साइबर घटनाओं की राष्ट्रीय एजेंसी CERT-In इलेक्ट्रॉनिक्स एवं आईटी मंत्रालय के अधीन कार्य करती है।
+- सूचना प्रौद्योगिकी अधिनियम, 2000 ने इलेक्ट्रॉनिक अभिलेखों को विधिक मान्यता दी।
+- साइबर अपराध की राष्ट्रीय हेल्पलाइन संख्या 1930 है।
+
+## 👆 झटपट दोहराव
+? स्प्रेडशीट के लिए कौन-सा प्रोग्राम है? :: MS एक्सेल
+? SaaS का पूर्ण रूप क्या है? :: सॉफ्टवेयर एज ए सर्विस
+? कौन-सा मैलवेयर डेटा खोलने के लिए पैसे माँगता है? :: रैनसमवेयर
+? सार्वजनिक वाई-फाई पर किसका उपयोग करना चाहिए? :: VPN
+
+! recap | 30 सेकंड का सार
+- वर्ड लिखता है, एक्सेल गणना करता है, पावरपॉइंट प्रस्तुत करता है; SPSS विश्लेषण करता है।
+- क्लाउड = इंटरनेट के माध्यम से कंप्यूटिंग: IaaS, PaaS, SaaS।
+- वायरस, वर्म, ट्रोजन, रैनसमवेयर, फिशिंग: बचाव पासवर्ड, ओटीपी, फायरवॉल और VPN से।

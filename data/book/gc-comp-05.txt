@@ -1,0 +1,129 @@
+@en
+# Internet, web and browsers; addressing and protocols
+> People often say 'Internet' and 'web' as if they were one thing. They are not. The **Internet** is the road network; the **World Wide Web** is one kind of traffic on it. Get this difference right and the rest is names, numbers and a few rules called protocols.
+
+## 🕰️ How it began
+~ 1969 :: ARPANET, a project of the US defence department, links four computers.
+~ 1971 :: The first e-mail is sent on the network.
+~ 1 January 1983 :: ARPANET switches to ==TCP/IP==. This is called the birth of the Internet.
+~ 1989 :: ==Tim Berners-Lee== proposes the World Wide Web at CERN.
+~ 1993 :: Mosaic, the first popular graphical browser, appears.
+~ 15 August 1995 :: Public Internet service begins in India (VSNL).
+
+- ==Vinton Cerf== and Robert Kahn, who designed TCP/IP, are called the fathers of the Internet.
+
+## 🕸️ Words of the web
+| Word | Meaning |
+| Website | A set of linked web pages |
+| Home page | The first or main page of a website |
+| Hyperlink | Text or picture that opens another page when clicked |
+| Browser | Program for viewing web pages: Chrome, Firefox, Edge, Safari |
+| Search engine | Finds pages on the web: Google, Bing |
+| Surfing | Moving from page to page by links |
+| Downloading | Copying a file from a server to your device; uploading is the reverse |
+| Cookie | Small file a website keeps in your browser to remember you |
+
+## 📮 Addresses on the Internet
+- Every device has an ==IP address==. IPv4 is **32 bits** long (four numbers from 0 to 255); IPv6 is **128 bits**.
+- ==DNS== (Domain Name System) turns a name like ncert.nic.in into an IP address. It is the phone book of the Internet.
+- ==URL== (Uniform Resource Locator) is the full address of a page: protocol, domain name, path.
+
+| Ending | Used by |
+| .com | Commercial sites |
+| .org | Organisations |
+| .edu, .ac.in | Education |
+| .gov | Government |
+| .in | India |
+
+## 📜 Protocols: the rules of the road
+| Protocol | Work |
+| HTTP | Carries web pages |
+| HTTPS | The same, made secure (port 443) |
+| TCP | Makes sure data arrives complete and in order |
+| IP | Gives addresses and routes the packets |
+| FTP | Transfers files |
+| SMTP, POP3, IMAP | E-mail |
+
+! trick | Trick: the lock means S
+The **S** in HTTPS means **secure**. Look for the lock in the address bar before typing a password.
+
+! exam | Exam favourites
+- The World Wide Web and the Internet are not the same thing.
+- A browser shows pages; a search engine finds them. Bing is a search engine, not a browser.
+- TCP gives reliable delivery; UDP is faster but does not guarantee delivery.
+
+## 👆 Quick recall
+? Who invented the World Wide Web? :: Tim Berners-Lee
+? How many bits are in an IPv4 address? :: 32
+? What does DNS do? :: Changes domain names into IP addresses
+? When did public Internet service begin in India? :: 15 August 1995
+
+! recap | 30-second recap
+- Internet: the network of networks. Web: the pages on it.
+- IP address, DNS and URL tell where a page is.
+- HTTP for pages, HTTPS for safe pages, TCP/IP underneath everything.
+
+@hi
+# इंटरनेट, वेब एवं ब्राउज़र; एड्रेसिंग एवं प्रोटोकॉल
+> लोग प्रायः 'इंटरनेट' और 'वेब' को एक ही चीज समझकर बोलते हैं। ये एक नहीं हैं। **इंटरनेट** सड़कों का जाल है; **वर्ल्ड वाइड वेब** उस पर चलने वाला एक प्रकार का यातायात है। यह अंतर समझ लीजिए, बाकी सब नाम, संख्याएँ और कुछ नियम हैं जिन्हें प्रोटोकॉल कहते हैं।
+
+## 🕰️ शुरुआत कैसे हुई
+~ 1969 :: अमेरिकी रक्षा विभाग की परियोजना अर्पानेट ने चार कंप्यूटरों को जोड़ा।
+~ 1971 :: नेटवर्क पर पहली ई-मेल भेजी गई।
+~ 1 जनवरी 1983 :: अर्पानेट ने ==TCP/IP== अपनाया। इसे इंटरनेट का जन्म कहा जाता है।
+~ 1989 :: ==टिम बर्नर्स-ली== ने सर्न में वर्ल्ड वाइड वेब का प्रस्ताव रखा।
+~ 1993 :: पहला लोकप्रिय ग्राफिकल ब्राउज़र मोज़ेक आया।
+~ 15 अगस्त 1995 :: भारत में सार्वजनिक इंटरनेट सेवा शुरू हुई (वीएसएनएल)।
+
+- TCP/IP बनाने वाले ==विंटन सर्फ== और रॉबर्ट कान को इंटरनेट का जनक कहा जाता है।
+
+## 🕸️ वेब के शब्द
+| शब्द | अर्थ |
+| वेबसाइट | आपस में जुड़े वेब पृष्ठों का समूह |
+| होम पेज | वेबसाइट का पहला या मुख्य पृष्ठ |
+| हाइपरलिंक | वह पाठ या चित्र जिस पर क्लिक करने से दूसरा पृष्ठ खुलता है |
+| ब्राउज़र | वेब पृष्ठ देखने का प्रोग्राम: क्रोम, फायरफॉक्स, एज, सफारी |
+| सर्च इंजन | वेब पर पृष्ठ खोजता है: गूगल, बिंग |
+| सर्फिंग | लिंक के सहारे एक पृष्ठ से दूसरे पर जाना |
+| डाउनलोडिंग | सर्वर से अपनी युक्ति में फाइल लाना; अपलोडिंग इसका उल्टा है |
+| कुकी | छोटी फाइल, जिसे वेबसाइट आपको याद रखने के लिए ब्राउज़र में रखती है |
+
+## 📮 इंटरनेट पर पते
+- हर युक्ति का एक ==IP एड्रेस== होता है। IPv4 **32 बिट** का है (0 से 255 तक की चार संख्याएँ); IPv6 **128 बिट** का।
+- ==DNS== (डोमेन नेम सिस्टम) ncert.nic.in जैसे नाम को IP एड्रेस में बदलता है। यह इंटरनेट की फोन-निर्देशिका है।
+- ==URL== (यूनिफॉर्म रिसोर्स लोकेटर) किसी पृष्ठ का पूरा पता है: प्रोटोकॉल, डोमेन नाम, पथ।
+
+| अंत | किसके लिए |
+| .com | व्यावसायिक साइटें |
+| .org | संगठन |
+| .edu, .ac.in | शिक्षा |
+| .gov | सरकार |
+| .in | भारत |
+
+## 📜 प्रोटोकॉल: सड़क के नियम
+| प्रोटोकॉल | कार्य |
+| HTTP | वेब पृष्ठ ले जाता है |
+| HTTPS | वही, सुरक्षित रूप में (पोर्ट 443) |
+| TCP | सुनिश्चित करता है कि डेटा पूरा और सही क्रम में पहुँचे |
+| IP | पते देता है और पैकेटों को मार्ग दिखाता है |
+| FTP | फाइलें स्थानांतरित करता है |
+| SMTP, POP3, IMAP | ई-मेल |
+
+! trick | युक्ति: ताले का अर्थ है S
+HTTPS का **S** अर्थात **सिक्योर (सुरक्षित)**। पासवर्ड लिखने से पहले एड्रेस बार में ताला देख लीजिए।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- वर्ल्ड वाइड वेब और इंटरनेट एक ही चीज नहीं हैं।
+- ब्राउज़र पृष्ठ दिखाता है; सर्च इंजन उन्हें खोजता है। बिंग सर्च इंजन है, ब्राउज़र नहीं।
+- TCP विश्वसनीय वितरण देता है; UDP तेज है पर वितरण की गारंटी नहीं देता।
+
+## 👆 झटपट दोहराव
+? वर्ल्ड वाइड वेब का आविष्कार किसने किया? :: टिम बर्नर्स-ली
+? IPv4 एड्रेस में कितने बिट होते हैं? :: 32
+? DNS क्या करता है? :: डोमेन नाम को IP एड्रेस में बदलता है
+? भारत में सार्वजनिक इंटरनेट सेवा कब शुरू हुई? :: 15 अगस्त 1995
+
+! recap | 30 सेकंड का सार
+- इंटरनेट: नेटवर्कों का नेटवर्क। वेब: उस पर रखे पृष्ठ।
+- IP एड्रेस, DNS और URL बताते हैं कि पृष्ठ कहाँ है।
+- पृष्ठों के लिए HTTP, सुरक्षित पृष्ठों के लिए HTTPS, और सबके नीचे TCP/IP।

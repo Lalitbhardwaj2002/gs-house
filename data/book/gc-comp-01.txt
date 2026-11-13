@@ -1,0 +1,113 @@
+@en
+# Basic computer concepts, number system and data units
+> A computer is a fast, obedient machine that knows only two things: **0 and 1**. Every photo, song and exam form inside it is a long line of these two digits. Learn how it counts and how its memory is measured, and you have the base for every other computer question.
+
+## 🖥️ What a computer does
+- It takes **input**, **processes** it and gives **output**, and it can **store** the result.
+- **Data** is raw facts; **information** is data that has been processed.
+- **Hardware** is what you can touch; **software** is the set of instructions.
+- ==Charles Babbage== is called the father of the computer. Ada Lovelace is regarded as the first programmer.
+
+## 🧬 Five generations
+| Generation | Main component | Remember |
+| First | Vacuum tubes | ENIAC, huge and hot |
+| Second | Transistors | Smaller and faster |
+| Third | Integrated circuits (ICs) | IBM System/360 |
+| Fourth | Microprocessor | Intel 4004 (1971), personal computers |
+| Fifth | Artificial intelligence | Still developing |
+
+## 🔢 Number systems
+| System | Base | Digits used |
+| Binary | 2 | 0, 1 |
+| Octal | 8 | 0 to 7 |
+| Decimal | 10 | 0 to 9 |
+| Hexadecimal | 16 | 0 to 9 and A to F |
+
+- To change a decimal number into binary, keep dividing by 2 and read the remainders from the last to the first.
+- Example: 10 becomes ==1010==; 25 becomes 11001.
+
+## 📏 Units of data
+~ Bit :: The smallest unit: a single 0 or 1.
+~ Nibble :: 4 bits.
+~ Byte :: 8 bits; stores one character.
+~ Kilobyte (KB) :: 1024 bytes.
+~ Megabyte (MB) :: 1024 KB.
+~ Gigabyte (GB) :: 1024 MB.
+~ Terabyte (TB) :: 1024 GB.
+~ Petabyte (PB) :: 1024 TB.
+
+! trick | Trick for the order of units
+**K-M-G-T-P**: 'King Makes Good Tea, Please'. Each step is 1024 times the one before.
+
+! exam | Exam favourites
+- The Turing Award is called the Nobel Prize of computing.
+- ENIAC was the first general-purpose electronic digital computer.
+- World Computer Literacy Day is observed on 2 December.
+
+## 👆 Quick recall
+? How many digits does the binary system use? :: Two: 0 and 1
+? How many bits make one byte? :: Eight
+? Which component marked the fourth generation? :: The microprocessor
+? What is the base of the hexadecimal system? :: 16
+
+! recap | 30-second recap
+- Input, process, output, storage: that is a computer.
+- Binary has base 2; hexadecimal has base 16.
+- Bit, nibble, byte, then KB, MB, GB, TB, PB in steps of 1024.
+
+@hi
+# मूल कंप्यूटर अवधारणाएँ, संख्या पद्धति एवं डेटा मापन
+> कंप्यूटर एक तेज, आज्ञाकारी मशीन है जो केवल दो चीजें जानती है: **0 और 1**। उसके भीतर का हर चित्र, गीत और परीक्षा-फॉर्म इन्हीं दो अंकों की लंबी कतार है। यह जान लीजिए कि वह कैसे गिनता है और उसकी मेमोरी कैसे नापी जाती है, फिर कंप्यूटर के हर प्रश्न का आधार तैयार है।
+
+## 🖥️ कंप्यूटर क्या करता है
+- वह **इनपुट** लेता है, उसे **प्रोसेस** करता है और **आउटपुट** देता है, तथा परिणाम को **संग्रहित** कर सकता है।
+- **डेटा** कच्चे तथ्य हैं; **सूचना** प्रोसेस किया गया डेटा है।
+- **हार्डवेयर** वह है जिसे छुआ जा सके; **सॉफ्टवेयर** निर्देशों का समूह है।
+- ==चार्ल्स बैबेज== को कंप्यूटर का जनक कहा जाता है। एडा लवलेस को पहली प्रोग्रामर माना जाता है।
+
+## 🧬 पाँच पीढ़ियाँ
+| पीढ़ी | मुख्य घटक | याद रखें |
+| पहली | निर्वात नलिकाएँ (वैक्यूम ट्यूब) | एनिएक, विशाल और गर्म |
+| दूसरी | ट्रांजिस्टर | छोटे और तेज |
+| तीसरी | एकीकृत परिपथ (आईसी) | आईबीएम सिस्टम/360 |
+| चौथी | माइक्रोप्रोसेसर | इंटेल 4004 (1971), पर्सनल कंप्यूटर |
+| पाँचवीं | कृत्रिम बुद्धिमत्ता | अभी विकसित हो रही है |
+
+## 🔢 संख्या पद्धतियाँ
+| पद्धति | आधार | प्रयुक्त अंक |
+| द्विआधारी (बाइनरी) | 2 | 0, 1 |
+| अष्टाधारी (ऑक्टल) | 8 | 0 से 7 |
+| दशमलव | 10 | 0 से 9 |
+| षोडश-आधारी (हेक्साडेसिमल) | 16 | 0 से 9 और A से F |
+
+- दशमलव संख्या को बाइनरी में बदलने के लिए 2 से भाग देते जाइए और शेषफल अंत से आरंभ की ओर पढ़िए।
+- उदाहरण: 10 का बाइनरी रूप ==1010== होता है; 25 का 11001।
+
+## 📏 डेटा की इकाइयाँ
+~ बिट :: सबसे छोटी इकाई: एक 0 या 1।
+~ निबल :: 4 बिट।
+~ बाइट :: 8 बिट; इसमें एक अक्षर आता है।
+~ किलोबाइट (KB) :: 1024 बाइट।
+~ मेगाबाइट (MB) :: 1024 KB।
+~ गीगाबाइट (GB) :: 1024 MB।
+~ टेराबाइट (TB) :: 1024 GB।
+~ पेटाबाइट (PB) :: 1024 TB।
+
+! trick | इकाइयों का क्रम याद रखने की युक्ति
+**कि-मे-गी-टे-पे**: किलो, मेगा, गीगा, टेरा, पेटा। हर इकाई पिछली से 1024 गुना बड़ी है।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- ट्यूरिंग पुरस्कार को कंप्यूटिंग का नोबेल पुरस्कार कहा जाता है।
+- एनिएक पहला सामान्य-उद्देश्य इलेक्ट्रॉनिक डिजिटल कंप्यूटर था।
+- विश्व कंप्यूटर साक्षरता दिवस 2 दिसंबर को मनाया जाता है।
+
+## 👆 झटपट दोहराव
+? बाइनरी पद्धति में कितने अंक प्रयुक्त होते हैं? :: दो: 0 और 1
+? एक बाइट में कितने बिट होते हैं? :: आठ
+? चौथी पीढ़ी की पहचान कौन-सा घटक है? :: माइक्रोप्रोसेसर
+? हेक्साडेसिमल पद्धति का आधार क्या है? :: 16
+
+! recap | 30 सेकंड का सार
+- इनपुट, प्रोसेस, आउटपुट, संग्रहण: यही कंप्यूटर है।
+- बाइनरी का आधार 2 है; हेक्साडेसिमल का 16।
+- बिट, निबल, बाइट, फिर KB, MB, GB, TB, PB, हर बार 1024 गुना।
