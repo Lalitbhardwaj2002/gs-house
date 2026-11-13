@@ -1,0 +1,2445 @@
+{
+ "section": "ict-terms",
+ "questions": [
+  {
+   "id": "ict-terms-001",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "In computer terminology, CPU stands for:",
+    "options": [
+     "Central Processing Unit",
+     "Central Program Unit",
+     "Control Processing Unit",
+     "Computer Processing Unit"
+    ],
+    "explanation": "CPU stands for Central Processing Unit. It carries out instructions and consists of the control unit and the arithmetic logic unit.",
+    "notes": [
+     "The CPU is called the brain of the computer.",
+     "The word is 'Processing', not 'Program'.",
+     "The first word is 'Central', not 'Control'.",
+     "The first word is 'Central', not 'Computer'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "The CPU is often called the brain of the computer.",
+     "A CPU built on a single chip is called a microprocessor."
+    ]
+   },
+   "hi": {
+    "q": "कम्प्यूटर शब्दावली में CPU का पूर्ण रूप क्या है?",
+    "options": [
+     "Central Processing Unit",
+     "Central Program Unit",
+     "Control Processing Unit",
+     "Computer Processing Unit"
+    ],
+    "explanation": "CPU का पूर्ण रूप सेंट्रल प्रोसेसिंग यूनिट है। यह निर्देशों का निष्पादन करता है और इसमें नियंत्रण इकाई तथा अंकगणितीय तर्क इकाई होती है।",
+    "notes": [
+     "सीपीयू को कम्प्यूटर का मस्तिष्क कहा जाता है।",
+     "शब्द 'Processing' है, 'Program' नहीं।",
+     "पहला शब्द 'Central' है, 'Control' नहीं।",
+     "पहला शब्द 'Central' है, 'Computer' नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "सीपीयू को प्रायः कम्प्यूटर का मस्तिष्क कहा जाता है।",
+     "एकल चिप पर बना सीपीयू माइक्रोप्रोसेसर कहलाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-002",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "RAM, the main working memory of a computer, stands for:",
+    "options": [
+     "Read Access Memory",
+     "Random Access Memory",
+     "Rapid Access Memory",
+     "Random Allocation Memory"
+    ],
+    "explanation": "RAM stands for Random Access Memory. It is volatile: its contents are lost when the power is switched off.",
+    "notes": [
+     "The first word is 'Random', not 'Read'.",
+     "Any memory location can be reached directly.",
+     "The first word is 'Random', not 'Rapid'.",
+     "The second word is 'Access', not 'Allocation'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "ROM (Read Only Memory) is non-volatile.",
+     "The two main types of RAM are static RAM and dynamic RAM."
+    ]
+   },
+   "hi": {
+    "q": "कम्प्यूटर की मुख्य कार्यकारी स्मृति RAM का पूर्ण रूप क्या है?",
+    "options": [
+     "Read Access Memory",
+     "Random Access Memory",
+     "Rapid Access Memory",
+     "Random Allocation Memory"
+    ],
+    "explanation": "RAM का पूर्ण रूप रैंडम एक्सेस मेमोरी है। यह अस्थायी (वोलेटाइल) है: विद्युत बंद होते ही इसकी सामग्री नष्ट हो जाती है।",
+    "notes": [
+     "पहला शब्द 'Random' है, 'Read' नहीं।",
+     "स्मृति के किसी भी स्थान तक सीधे पहुँचा जा सकता है।",
+     "पहला शब्द 'Random' है, 'Rapid' नहीं।",
+     "दूसरा शब्द 'Access' है, 'Allocation' नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "रोम (रीड ओनली मेमोरी) स्थायी स्मृति है।",
+     "रैम के दो मुख्य प्रकार स्टैटिक रैम एवं डायनेमिक रैम हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-003",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The address of a web page is called its URL. URL stands for:",
+    "options": [
+     "Universal Resource Link",
+     "Uniform Reference Locator",
+     "Uniform Resource Locator",
+     "Unified Resource Location"
+    ],
+    "explanation": "URL stands for Uniform Resource Locator. It is the unique address of a resource on the World Wide Web.",
+    "notes": [
+     "Neither 'Universal' nor 'Link' is correct.",
+     "The second word is 'Resource', not 'Reference'.",
+     "A URL gives the protocol, the domain name and the path.",
+     "The words are 'Uniform' and 'Locator'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Internet abbreviations"
+    ],
+    "facts": [
+     "A URL begins with a protocol such as http or https.",
+     "The World Wide Web was invented by Tim Berners-Lee."
+    ]
+   },
+   "hi": {
+    "q": "वेब पेज का पता उसका URL कहलाता है। URL का पूर्ण रूप क्या है?",
+    "options": [
+     "Universal Resource Link",
+     "Uniform Reference Locator",
+     "Uniform Resource Locator",
+     "Unified Resource Location"
+    ],
+    "explanation": "URL का पूर्ण रूप यूनिफॉर्म रिसोर्स लोकेटर है। यह वर्ल्ड वाइड वेब पर किसी संसाधन का विशिष्ट पता है।",
+    "notes": [
+     "न 'Universal' सही है, न 'Link'।",
+     "दूसरा शब्द 'Resource' है, 'Reference' नहीं।",
+     "यूआरएल में प्रोटोकॉल, डोमेन नाम एवं पथ होता है।",
+     "सही शब्द 'Uniform' एवं 'Locator' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "इंटरनेट संक्षिप्त रूप"
+    ],
+    "facts": [
+     "यूआरएल http अथवा https जैसे प्रोटोकॉल से आरंभ होता है।",
+     "वर्ल्ड वाइड वेब का आविष्कार टिम बर्नर्स-ली ने किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-004",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "HTTP, the protocol used to transfer web pages, stands for:",
+    "options": [
+     "HyperText Transmission Process",
+     "High Transfer Text Protocol",
+     "HyperText Transfer Program",
+     "HyperText Transfer Protocol"
+    ],
+    "explanation": "HTTP stands for HyperText Transfer Protocol. It is the set of rules by which a browser requests and receives web pages from a server.",
+    "notes": [
+     "The words are 'Transfer Protocol'.",
+     "The first word is 'HyperText'.",
+     "The last word is 'Protocol', not 'Program'.",
+     "It works between a web browser and a web server."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Internet abbreviations"
+    ],
+    "facts": [
+     "HTTP uses port 80 by default.",
+     "HTTPS is its secure version."
+    ]
+   },
+   "hi": {
+    "q": "वेब पेजों के अंतरण में प्रयुक्त प्रोटोकॉल HTTP का पूर्ण रूप क्या है?",
+    "options": [
+     "HyperText Transmission Process",
+     "High Transfer Text Protocol",
+     "HyperText Transfer Program",
+     "HyperText Transfer Protocol"
+    ],
+    "explanation": "HTTP का पूर्ण रूप हाइपरटेक्स्ट ट्रांसफर प्रोटोकॉल है। यह उन नियमों का समूह है, जिनसे ब्राउजर सर्वर से वेब पेज माँगता और प्राप्त करता है।",
+    "notes": [
+     "सही शब्द 'Transfer Protocol' हैं।",
+     "पहला शब्द 'HyperText' है।",
+     "अंतिम शब्द 'Protocol' है, 'Program' नहीं।",
+     "यह वेब ब्राउजर एवं वेब सर्वर के बीच कार्य करता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "इंटरनेट संक्षिप्त रूप"
+    ],
+    "facts": [
+     "एचटीटीपी सामान्यतः पोर्ट 80 का प्रयोग करता है।",
+     "एचटीटीपीएस इसका सुरक्षित रूप है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-005",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The file format PDF, developed by Adobe, stands for:",
+    "options": [
+     "Portable Document Format",
+     "Printed Document File",
+     "Public Data Format",
+     "Portable Data File"
+    ],
+    "explanation": "PDF stands for Portable Document Format. Adobe introduced it in 1993 so that a document keeps the same layout on any device or printer.",
+    "notes": [
+     "A PDF looks the same on every device.",
+     "The words are 'Portable' and 'Format'.",
+     "The words are 'Portable Document'.",
+     "The words are 'Document Format'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "PDF files are opened with readers such as Adobe Acrobat Reader.",
+     "PDF became an open ISO standard in 2008."
+    ]
+   },
+   "hi": {
+    "q": "एडोबी द्वारा विकसित फाइल प्रारूप PDF का पूर्ण रूप क्या है?",
+    "options": [
+     "Portable Document Format",
+     "Printed Document File",
+     "Public Data Format",
+     "Portable Data File"
+    ],
+    "explanation": "PDF का पूर्ण रूप पोर्टेबल डॉक्यूमेंट फॉर्मेट है। एडोबी ने इसे 1993 में प्रस्तुत किया, ताकि दस्तावेज का रूप किसी भी युक्ति अथवा प्रिंटर पर एक समान रहे।",
+    "notes": [
+     "पीडीएफ प्रत्येक युक्ति पर एक समान दिखता है।",
+     "सही शब्द 'Portable' एवं 'Format' हैं।",
+     "सही शब्द 'Portable Document' हैं।",
+     "सही शब्द 'Document Format' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "पीडीएफ फाइलें एडोबी एक्रोबैट रीडर जैसे रीडर से खोली जाती हैं।",
+     "पीडीएफ 2008 में मुक्त आईएसओ मानक बना।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-006",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "A pen drive is connected to a computer through a USB port. USB stands for:",
+    "options": [
+     "Unified Serial Bus",
+     "Universal Serial Bus",
+     "Universal System Bus",
+     "United Storage Bus"
+    ],
+    "explanation": "USB stands for Universal Serial Bus. It is a standard interface for connecting peripherals such as pen drives, keyboards and printers to a computer.",
+    "notes": [
+     "The first word is 'Universal'.",
+     "USB connects many kinds of devices through one standard port.",
+     "The second word is 'Serial', not 'System'.",
+     "The words are 'Universal Serial'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "The USB standard was introduced in 1996.",
+     "USB Type-C is a reversible connector."
+    ]
+   },
+   "hi": {
+    "q": "पेन ड्राइव को कम्प्यूटर से USB पोर्ट द्वारा जोड़ा जाता है। USB का पूर्ण रूप क्या है?",
+    "options": [
+     "Unified Serial Bus",
+     "Universal Serial Bus",
+     "Universal System Bus",
+     "United Storage Bus"
+    ],
+    "explanation": "USB का पूर्ण रूप यूनिवर्सल सीरियल बस है। यह पेन ड्राइव, कीबोर्ड एवं प्रिंटर जैसी परिधीय युक्तियों को कम्प्यूटर से जोड़ने का मानक इंटरफेस है।",
+    "notes": [
+     "पहला शब्द 'Universal' है।",
+     "यूएसबी एक मानक पोर्ट से अनेक प्रकार की युक्तियाँ जोड़ता है।",
+     "दूसरा शब्द 'Serial' है, 'System' नहीं।",
+     "सही शब्द 'Universal Serial' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "यूएसबी मानक 1996 में प्रस्तुत किया गया।",
+     "यूएसबी टाइप-सी दोनों ओर से लगने वाला संयोजक है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-007",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "A network confined to a single building or campus is called a LAN. LAN stands for:",
+    "options": [
+     "Large Area Network",
+     "Linked Access Network",
+     "Local Area Network",
+     "Local Access Node"
+    ],
+    "explanation": "LAN stands for Local Area Network. It links computers within a limited area such as a room, building or campus.",
+    "notes": [
+     "The first word is 'Local', not 'Large'.",
+     "The words are 'Local Area'.",
+     "A LAN covers a small area such as a school or an office.",
+     "The words are 'Area Network'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Internet abbreviations"
+    ],
+    "facts": [
+     "MAN is a Metropolitan Area Network and WAN is a Wide Area Network.",
+     "The Internet is the largest WAN."
+    ]
+   },
+   "hi": {
+    "q": "किसी एक भवन अथवा परिसर तक सीमित नेटवर्क LAN कहलाता है। LAN का पूर्ण रूप क्या है?",
+    "options": [
+     "Large Area Network",
+     "Linked Access Network",
+     "Local Area Network",
+     "Local Access Node"
+    ],
+    "explanation": "LAN का पूर्ण रूप लोकल एरिया नेटवर्क है। यह कमरे, भवन अथवा परिसर जैसे सीमित क्षेत्र के कम्प्यूटरों को जोड़ता है।",
+    "notes": [
+     "पहला शब्द 'Local' है, 'Large' नहीं।",
+     "सही शब्द 'Local Area' हैं।",
+     "लैन विद्यालय अथवा कार्यालय जैसे छोटे क्षेत्र में फैला होता है।",
+     "सही शब्द 'Area Network' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "इंटरनेट संक्षिप्त रूप"
+    ],
+    "facts": [
+     "मैन मेट्रोपॉलिटन एरिया नेटवर्क तथा वैन वाइड एरिया नेटवर्क है।",
+     "इंटरनेट सबसे बड़ा वैन है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-008",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The code sent to a mobile phone to confirm an online transaction is called an OTP. OTP stands for:",
+    "options": [
+     "Online Transfer Password",
+     "One Time Permission",
+     "Only Transaction Pin",
+     "One Time Password"
+    ],
+    "explanation": "OTP stands for One Time Password. It is valid for a single login or transaction and for a short time, which adds a second layer of security.",
+    "notes": [
+     "The words are 'One Time'.",
+     "The last word is 'Password'.",
+     "The words are 'One Time Password'.",
+     "It is valid for one login or transaction only."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "General abbreviations"
+    ],
+    "facts": [
+     "Using an OTP along with a password is called two-factor authentication.",
+     "An OTP should never be shared with anyone."
+    ]
+   },
+   "hi": {
+    "q": "ऑनलाइन लेन-देन की पुष्टि के लिए मोबाइल फोन पर भेजा गया कोड OTP कहलाता है। OTP का पूर्ण रूप क्या है?",
+    "options": [
+     "Online Transfer Password",
+     "One Time Permission",
+     "Only Transaction Pin",
+     "One Time Password"
+    ],
+    "explanation": "OTP का पूर्ण रूप वन टाइम पासवर्ड है। यह एक ही लॉगिन अथवा लेन-देन के लिए और अल्प समय तक वैध होता है, जिससे सुरक्षा की दूसरी परत मिलती है।",
+    "notes": [
+     "सही शब्द 'One Time' हैं।",
+     "अंतिम शब्द 'Password' है।",
+     "सही शब्द 'One Time Password' हैं।",
+     "यह केवल एक लॉगिन अथवा लेन-देन के लिए वैध होता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "सामान्य संक्षिप्त रूप"
+    ],
+    "facts": [
+     "पासवर्ड के साथ ओटीपी का प्रयोग द्वि-कारक प्रमाणीकरण कहलाता है।",
+     "ओटीपी किसी के साथ साझा नहीं करना चाहिए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-009",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "In banking, ATM stands for:",
+    "options": [
+     "Automated Teller Machine",
+     "Any Time Money",
+     "Automatic Transfer Machine",
+     "Automated Transaction Mode"
+    ],
+    "explanation": "ATM stands for Automated Teller Machine. It lets customers withdraw cash and use other banking services without the help of bank staff.",
+    "notes": [
+     "'Teller' means a bank clerk who pays and receives cash.",
+     "This is only a popular nickname.",
+     "The words are 'Automated Teller'.",
+     "The words are 'Teller Machine'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "General abbreviations"
+    ],
+    "facts": [
+     "The first ATM was installed by Barclays Bank in London in 1967.",
+     "HSBC set up India's first ATM in Mumbai in 1987."
+    ]
+   },
+   "hi": {
+    "q": "बैंकिंग में ATM का पूर्ण रूप क्या है?",
+    "options": [
+     "Automated Teller Machine",
+     "Any Time Money",
+     "Automatic Transfer Machine",
+     "Automated Transaction Mode"
+    ],
+    "explanation": "ATM का पूर्ण रूप ऑटोमेटेड टेलर मशीन है। इससे ग्राहक बैंक कर्मियों की सहायता के बिना नकदी निकाल सकते हैं और अन्य बैंकिंग सेवाएँ ले सकते हैं।",
+    "notes": [
+     "'टेलर' का अर्थ नकदी देने-लेने वाला बैंक लिपिक है।",
+     "यह केवल प्रचलित उपनाम है।",
+     "सही शब्द 'Automated Teller' हैं।",
+     "सही शब्द 'Teller Machine' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "सामान्य संक्षिप्त रूप"
+    ],
+    "facts": [
+     "पहला एटीएम 1967 में लंदन में बार्कलेज बैंक ने लगाया।",
+     "भारत का पहला एटीएम 1987 में एचएसबीसी ने मुंबई में लगाया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Reserve Bank of India – FAQs on ATMs/White Label ATMs",
+     "url": "https://www.rbi.org.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-010",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The SIM card used in a mobile phone stands for:",
+    "options": [
+     "Subscriber Information Memory",
+     "Subscriber Identity Module",
+     "Signal Identity Module",
+     "System Identification Module"
+    ],
+    "explanation": "SIM stands for Subscriber Identity Module. It is a chip that stores the subscriber's identity number and authenticates the phone on the mobile network.",
+    "notes": [
+     "The words are 'Identity Module'.",
+     "It identifies the subscriber on the mobile network.",
+     "The first word is 'Subscriber'.",
+     "The words are 'Subscriber Identity'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "General abbreviations"
+    ],
+    "facts": [
+     "An eSIM is a SIM embedded in the phone that can be programmed remotely.",
+     "Each SIM has a unique number called the ICCID."
+    ]
+   },
+   "hi": {
+    "q": "मोबाइल फोन में प्रयुक्त SIM कार्ड का पूर्ण रूप क्या है?",
+    "options": [
+     "Subscriber Information Memory",
+     "Subscriber Identity Module",
+     "Signal Identity Module",
+     "System Identification Module"
+    ],
+    "explanation": "SIM का पूर्ण रूप सब्सक्राइबर आइडेंटिटी मॉड्यूल है। यह ऐसी चिप है, जो ग्राहक की पहचान संख्या रखती है और मोबाइल नेटवर्क पर फोन का प्रमाणीकरण करती है।",
+    "notes": [
+     "सही शब्द 'Identity Module' हैं।",
+     "यह मोबाइल नेटवर्क पर ग्राहक की पहचान करता है।",
+     "पहला शब्द 'Subscriber' है।",
+     "सही शब्द 'Subscriber Identity' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "सामान्य संक्षिप्त रूप"
+    ],
+    "facts": [
+     "ई-सिम फोन में अंतःस्थापित सिम है, जिसे दूर से प्रोग्राम किया जा सकता है।",
+     "प्रत्येक सिम की एक विशिष्ट संख्या होती है, जिसे आईसीसीआईडी कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-011",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "GPS, used for finding location on mobile phones and in vehicles, stands for:",
+    "options": [
+     "General Positioning Service",
+     "Global Packet System",
+     "Global Positioning System",
+     "Geographic Position Satellite"
+    ],
+    "explanation": "GPS stands for Global Positioning System. It is the satellite-based navigation system of the United States that gives location and time anywhere on the Earth.",
+    "notes": [
+     "The words are 'Global' and 'System'.",
+     "GPS has nothing to do with data packets.",
+     "It is a satellite navigation system of the United States.",
+     "The words are 'Global Positioning System'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "General abbreviations"
+    ],
+    "facts": [
+     "India's own regional navigation system is NavIC.",
+     "Russia's system is GLONASS and the European Union's is Galileo."
+    ]
+   },
+   "hi": {
+    "q": "मोबाइल फोन एवं वाहनों में स्थिति ज्ञात करने में प्रयुक्त GPS का पूर्ण रूप क्या है?",
+    "options": [
+     "General Positioning Service",
+     "Global Packet System",
+     "Global Positioning System",
+     "Geographic Position Satellite"
+    ],
+    "explanation": "GPS का पूर्ण रूप ग्लोबल पोजिशनिंग सिस्टम है। यह संयुक्त राज्य अमेरिका की उपग्रह आधारित नौवहन प्रणाली है, जो पृथ्वी पर कहीं भी स्थिति एवं समय बताती है।",
+    "notes": [
+     "सही शब्द 'Global' एवं 'System' हैं।",
+     "जीपीएस का डेटा पैकेट से कोई संबंध नहीं है।",
+     "यह संयुक्त राज्य अमेरिका की उपग्रह नौवहन प्रणाली है।",
+     "सही शब्द 'Global Positioning System' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "सामान्य संक्षिप्त रूप"
+    ],
+    "facts": [
+     "भारत की अपनी क्षेत्रीय नौवहन प्रणाली नाविक है।",
+     "रूस की प्रणाली ग्लोनास तथा यूरोपीय संघ की गैलीलियो है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-012",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Web pages are written in HTML. HTML stands for:",
+    "options": [
+     "HyperText Machine Language",
+     "High Text Markup Language",
+     "HyperText Making Link",
+     "HyperText Markup Language"
+    ],
+    "explanation": "HTML stands for HyperText Markup Language. It uses tags to describe the structure and content of a web page.",
+    "notes": [
+     "The word is 'Markup', not 'Machine'.",
+     "The first word is 'HyperText'.",
+     "The words are 'Markup Language'.",
+     "Tags such as <p> and <a> mark up the content."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Internet abbreviations"
+    ],
+    "facts": [
+     "HTML was created by Tim Berners-Lee.",
+     "HTML is a markup language, not a programming language."
+    ]
+   },
+   "hi": {
+    "q": "वेब पेज HTML में लिखे जाते हैं। HTML का पूर्ण रूप क्या है?",
+    "options": [
+     "HyperText Machine Language",
+     "High Text Markup Language",
+     "HyperText Making Link",
+     "HyperText Markup Language"
+    ],
+    "explanation": "HTML का पूर्ण रूप हाइपरटेक्स्ट मार्कअप लैंग्वेज है। यह टैग द्वारा वेब पेज की संरचना एवं सामग्री का वर्णन करती है।",
+    "notes": [
+     "शब्द 'Markup' है, 'Machine' नहीं।",
+     "पहला शब्द 'HyperText' है।",
+     "सही शब्द 'Markup Language' हैं।",
+     "<p> एवं <a> जैसे टैग सामग्री को चिह्नित करते हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "इंटरनेट संक्षिप्त रूप"
+    ],
+    "facts": [
+     "एचटीएमएल का निर्माण टिम बर्नर्स-ली ने किया।",
+     "एचटीएमएल मार्कअप भाषा है, प्रोग्रामिंग भाषा नहीं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-013",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "NCERT, which prepares model school textbooks, stands for:",
+    "options": [
+     "National Council of Educational Research and Training",
+     "National Committee for Education, Research and Teaching",
+     "National Centre for Educational Reform and Training",
+     "National Council of Elementary Research and Training"
+    ],
+    "explanation": "NCERT stands for National Council of Educational Research and Training. It was established on 1 September 1961 to advise the Central and State Governments on school education.",
+    "notes": [
+     "NCERT was set up in 1961 with headquarters in New Delhi.",
+     "It is a 'Council' and the last word is 'Training'.",
+     "It is a 'Council' and the word is 'Research'.",
+     "The word is 'Educational', not 'Elementary'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "NCERT's headquarters is in New Delhi.",
+     "The State-level counterpart of NCERT is the SCERT."
+    ]
+   },
+   "hi": {
+    "q": "विद्यालयों की आदर्श पाठ्यपुस्तकें तैयार करने वाली NCERT का पूर्ण रूप क्या है?",
+    "options": [
+     "National Council of Educational Research and Training",
+     "National Committee for Education, Research and Teaching",
+     "National Centre for Educational Reform and Training",
+     "National Council of Elementary Research and Training"
+    ],
+    "explanation": "NCERT का पूर्ण रूप नेशनल काउंसिल ऑफ एजुकेशनल रिसर्च एंड ट्रेनिंग (राष्ट्रीय शैक्षिक अनुसंधान एवं प्रशिक्षण परिषद) है। इसकी स्थापना 1 सितंबर 1961 को विद्यालयी शिक्षा पर केंद्र एवं राज्य सरकारों को परामर्श देने के लिए हुई।",
+    "notes": [
+     "एनसीईआरटी की स्थापना 1961 में हुई; मुख्यालय नई दिल्ली में है।",
+     "यह 'Council' है और अंतिम शब्द 'Training' है।",
+     "यह 'Council' है और शब्द 'Research' है।",
+     "शब्द 'Educational' है, 'Elementary' नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "एनसीईआरटी का मुख्यालय नई दिल्ली में है।",
+     "राज्य स्तर पर एनसीईआरटी का समकक्ष एससीईआरटी है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT – About us",
+     "url": "https://ncert.nic.in/about-us.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-014",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "CBSE, which conducts the Class 10 and Class 12 board examinations, stands for:",
+    "options": [
+     "Central Bureau of School Education",
+     "Central Board of Secondary Education",
+     "Council of Board of School Examinations",
+     "Central Board of Senior Examinations"
+    ],
+    "explanation": "CBSE stands for Central Board of Secondary Education. It is a national board of school education under the Ministry of Education.",
+    "notes": [
+     "It is a 'Board', not a 'Bureau'.",
+     "CBSE got its present name in 1952 and was reconstituted in 1962.",
+     "It is the 'Central Board'.",
+     "The words are 'Secondary Education'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "CBSE's headquarters is in Delhi.",
+     "CBSE also conducts the Central Teacher Eligibility Test (CTET)."
+    ]
+   },
+   "hi": {
+    "q": "कक्षा 10 एवं 12 की बोर्ड परीक्षाएँ आयोजित करने वाली CBSE का पूर्ण रूप क्या है?",
+    "options": [
+     "Central Bureau of School Education",
+     "Central Board of Secondary Education",
+     "Council of Board of School Examinations",
+     "Central Board of Senior Examinations"
+    ],
+    "explanation": "CBSE का पूर्ण रूप सेंट्रल बोर्ड ऑफ सेकेंडरी एजुकेशन (केंद्रीय माध्यमिक शिक्षा बोर्ड) है। यह शिक्षा मंत्रालय के अधीन विद्यालयी शिक्षा का राष्ट्रीय बोर्ड है।",
+    "notes": [
+     "यह 'Board' है, 'Bureau' नहीं।",
+     "सीबीएसई को वर्तमान नाम 1952 में मिला और 1962 में इसका पुनर्गठन हुआ।",
+     "यह 'Central Board' है।",
+     "सही शब्द 'Secondary Education' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "सीबीएसई का मुख्यालय दिल्ली में है।",
+     "सीबीएसई केंद्रीय शिक्षक पात्रता परीक्षा (सीटीईटी) भी आयोजित करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Central Board of Secondary Education – About us",
+     "url": "https://www.cbse.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-015",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The six-digit PIN code used by India Post stands for:",
+    "options": [
+     "Personal Identification Number",
+     "Postal Identity Number",
+     "Postal Index Number",
+     "Public Index Number"
+    ],
+    "explanation": "In the postal system PIN stands for Postal Index Number. The six-digit code was introduced on 15 August 1972 to make the sorting of mail easier.",
+    "notes": [
+     "This is the PIN used with bank cards.",
+     "The second word is 'Index'.",
+     "It was introduced on 15 August 1972.",
+     "The first word is 'Postal'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "General abbreviations"
+    ],
+    "facts": [
+     "The first digit of a PIN code shows the postal zone.",
+     "India has nine PIN zones, one of them for the Army Postal Service."
+    ]
+   },
+   "hi": {
+    "q": "भारतीय डाक द्वारा प्रयुक्त छह अंकों के PIN कोड का पूर्ण रूप क्या है?",
+    "options": [
+     "Personal Identification Number",
+     "Postal Identity Number",
+     "Postal Index Number",
+     "Public Index Number"
+    ],
+    "explanation": "डाक प्रणाली में PIN का पूर्ण रूप पोस्टल इंडेक्स नंबर है। छह अंकों का यह कोड डाक की छँटाई को सरल बनाने के लिए 15 अगस्त 1972 को आरंभ किया गया।",
+    "notes": [
+     "यह बैंक कार्ड के साथ प्रयुक्त पिन है।",
+     "दूसरा शब्द 'Index' है।",
+     "इसे 15 अगस्त 1972 को आरंभ किया गया।",
+     "पहला शब्द 'Postal' है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "सामान्य संक्षिप्त रूप"
+    ],
+    "facts": [
+     "पिन कोड का पहला अंक डाक क्षेत्र दर्शाता है।",
+     "भारत में नौ पिन क्षेत्र हैं, जिनमें से एक सेना डाक सेवा के लिए है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "India Post – PIN code system",
+     "url": "https://www.indiapost.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-016",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The 11-character IFSC printed on a bank cheque stands for:",
+    "options": [
+     "Indian Fund Security Code",
+     "International Financial System Code",
+     "Indian Finance Service Code",
+     "Indian Financial System Code"
+    ],
+    "explanation": "IFSC stands for Indian Financial System Code. It is an 11-character alphanumeric code that identifies a bank branch in electronic fund transfers.",
+    "notes": [
+     "The words are 'Financial System'.",
+     "The first word is 'Indian'.",
+     "The words are 'Financial System'.",
+     "It identifies a bank branch for NEFT, RTGS and IMPS transfers."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "General abbreviations"
+    ],
+    "facts": [
+     "The first four characters of the IFSC show the bank and the fifth is zero.",
+     "The last six characters identify the branch."
+    ]
+   },
+   "hi": {
+    "q": "बैंक चेक पर छपे 11 वर्णों के IFSC का पूर्ण रूप क्या है?",
+    "options": [
+     "Indian Fund Security Code",
+     "International Financial System Code",
+     "Indian Finance Service Code",
+     "Indian Financial System Code"
+    ],
+    "explanation": "IFSC का पूर्ण रूप इंडियन फाइनेंशियल सिस्टम कोड है। यह 11 वर्णों का अक्षरांकीय कोड है, जो इलेक्ट्रॉनिक निधि अंतरण में बैंक शाखा की पहचान करता है।",
+    "notes": [
+     "सही शब्द 'Financial System' हैं।",
+     "पहला शब्द 'Indian' है।",
+     "सही शब्द 'Financial System' हैं।",
+     "यह एनईएफटी, आरटीजीएस एवं आईएमपीएस अंतरण में बैंक शाखा की पहचान करता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "सामान्य संक्षिप्त रूप"
+    ],
+    "facts": [
+     "आईएफएससी के पहले चार वर्ण बैंक को दर्शाते हैं और पाँचवाँ शून्य होता है।",
+     "अंतिम छह वर्ण शाखा की पहचान करते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Reserve Bank of India – FAQs on NEFT (IFSC)",
+     "url": "https://www.rbi.org.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-017",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "BIOS, the program that starts a computer when it is switched on, stands for:",
+    "options": [
+     "Basic Input Output System",
+     "Binary Input Output Software",
+     "Basic Internal Operating System",
+     "Built-in Operating Software"
+    ],
+    "explanation": "BIOS stands for Basic Input Output System. It is firmware that tests the hardware and loads the operating system when the computer is switched on.",
+    "notes": [
+     "It is stored in a ROM or flash memory chip on the motherboard.",
+     "The words are 'Basic' and 'System'.",
+     "The words are 'Input Output'.",
+     "The words are 'Basic Input Output System'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "The self-test run by the BIOS is called POST (Power-On Self-Test).",
+     "UEFI is the modern replacement for the BIOS."
+    ]
+   },
+   "hi": {
+    "q": "कम्प्यूटर चालू करने पर उसे आरंभ करने वाले प्रोग्राम BIOS का पूर्ण रूप क्या है?",
+    "options": [
+     "Basic Input Output System",
+     "Binary Input Output Software",
+     "Basic Internal Operating System",
+     "Built-in Operating Software"
+    ],
+    "explanation": "BIOS का पूर्ण रूप बेसिक इनपुट आउटपुट सिस्टम है। यह फर्मवेयर है, जो कम्प्यूटर चालू होने पर हार्डवेयर की जाँच करता है और ऑपरेटिंग सिस्टम को लोड करता है।",
+    "notes": [
+     "यह मदरबोर्ड की रोम अथवा फ्लैश मेमोरी चिप में संगृहीत होता है।",
+     "सही शब्द 'Basic' एवं 'System' हैं।",
+     "सही शब्द 'Input Output' हैं।",
+     "सही शब्द 'Basic Input Output System' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "बायोस द्वारा की जाने वाली स्व-जाँच पोस्ट (पावर-ऑन सेल्फ-टेस्ट) कहलाती है।",
+     "यूईएफआई बायोस का आधुनिक विकल्प है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-018",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "ASCII, a character encoding standard, stands for:",
+    "options": [
+     "American Scientific Code for Information Interchange",
+     "American Standard Code for Information Interchange",
+     "Advanced Standard Code for Internet Information",
+     "American Standard Characters for Information Input"
+    ],
+    "explanation": "ASCII stands for American Standard Code for Information Interchange. Standard ASCII is a 7-bit code that represents 128 characters.",
+    "notes": [
+     "The word is 'Standard', not 'Scientific'.",
+     "Standard ASCII uses 7 bits and represents 128 characters.",
+     "The first word is 'American'.",
+     "The words are 'Code for Information Interchange'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "Extended ASCII uses 8 bits and represents 256 characters.",
+     "Unicode can represent the characters of almost all the world's scripts."
+    ]
+   },
+   "hi": {
+    "q": "वर्ण कूटन मानक ASCII का पूर्ण रूप क्या है?",
+    "options": [
+     "American Scientific Code for Information Interchange",
+     "American Standard Code for Information Interchange",
+     "Advanced Standard Code for Internet Information",
+     "American Standard Characters for Information Input"
+    ],
+    "explanation": "ASCII का पूर्ण रूप अमेरिकन स्टैंडर्ड कोड फॉर इन्फॉर्मेशन इंटरचेंज है। मानक एएससीआईआई 7 बिट का कोड है, जो 128 वर्णों को दर्शाता है।",
+    "notes": [
+     "शब्द 'Standard' है, 'Scientific' नहीं।",
+     "मानक एएससीआईआई 7 बिट का है और 128 वर्ण दर्शाता है।",
+     "पहला शब्द 'American' है।",
+     "सही शब्द 'Code for Information Interchange' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "विस्तारित एएससीआईआई 8 बिट का है और 256 वर्ण दर्शाता है।",
+     "यूनिकोड विश्व की लगभग सभी लिपियों के वर्णों को दर्शा सकता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-019",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "MICR, the technology used for processing bank cheques, stands for:",
+    "options": [
+     "Magnetic Ink Code Reader",
+     "Machine Ink Character Recognition",
+     "Magnetic Ink Character Recognition",
+     "Magnetic Image Character Reader"
+    ],
+    "explanation": "MICR stands for Magnetic Ink Character Recognition. Characters printed in magnetic ink at the bottom of a cheque are read by machines for fast and secure clearing.",
+    "notes": [
+     "The words are 'Character Recognition'.",
+     "The first word is 'Magnetic'.",
+     "The characters are printed with ink containing iron oxide.",
+     "The words are 'Ink' and 'Recognition'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "The MICR code on a cheque has nine digits.",
+     "The digits show the city, the bank and the branch."
+    ]
+   },
+   "hi": {
+    "q": "बैंक चेकों के प्रसंस्करण में प्रयुक्त तकनीक MICR का पूर्ण रूप क्या है?",
+    "options": [
+     "Magnetic Ink Code Reader",
+     "Machine Ink Character Recognition",
+     "Magnetic Ink Character Recognition",
+     "Magnetic Image Character Reader"
+    ],
+    "explanation": "MICR का पूर्ण रूप मैग्नेटिक इंक कैरेक्टर रिकग्निशन है। चेक के निचले भाग में चुंबकीय स्याही से छपे वर्णों को मशीनें पढ़ती हैं, जिससे समाशोधन तीव्र एवं सुरक्षित होता है।",
+    "notes": [
+     "सही शब्द 'Character Recognition' हैं।",
+     "पहला शब्द 'Magnetic' है।",
+     "वर्ण आयरन ऑक्साइड युक्त स्याही से छापे जाते हैं।",
+     "सही शब्द 'Ink' एवं 'Recognition' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "चेक के एमआईसीआर कोड में नौ अंक होते हैं।",
+     "ये अंक नगर, बैंक एवं शाखा को दर्शाते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-020",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The technology that converts the image of printed or handwritten text into editable text is OCR. OCR stands for:",
+    "options": [
+     "Optical Code Reader",
+     "Online Character Recognition",
+     "Optical Copy Reader",
+     "Optical Character Recognition"
+    ],
+    "explanation": "OCR stands for Optical Character Recognition. It recognises the characters in a scanned image so that the text can be edited and searched.",
+    "notes": [
+     "The words are 'Character Recognition'.",
+     "The first word is 'Optical'.",
+     "The words are 'Character Recognition'.",
+     "OCR turns scanned pages into machine-readable text."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "OMR (Optical Mark Recognition) reads marks such as the bubbles on answer sheets.",
+     "A barcode reader reads patterns of lines."
+    ]
+   },
+   "hi": {
+    "q": "छपे अथवा हस्तलिखित पाठ की छवि को संपादन योग्य पाठ में बदलने वाली तकनीक OCR है। OCR का पूर्ण रूप क्या है?",
+    "options": [
+     "Optical Code Reader",
+     "Online Character Recognition",
+     "Optical Copy Reader",
+     "Optical Character Recognition"
+    ],
+    "explanation": "OCR का पूर्ण रूप ऑप्टिकल कैरेक्टर रिकग्निशन है। यह स्कैन की गई छवि के वर्णों को पहचानता है, जिससे पाठ का संपादन एवं खोज संभव होती है।",
+    "notes": [
+     "सही शब्द 'Character Recognition' हैं।",
+     "पहला शब्द 'Optical' है।",
+     "सही शब्द 'Character Recognition' हैं।",
+     "ओसीआर स्कैन किए गए पृष्ठों को मशीन-पठनीय पाठ में बदलता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "ओएमआर (ऑप्टिकल मार्क रिकग्निशन) उत्तर पत्रक के गोलों जैसे चिह्नों को पढ़ता है।",
+     "बारकोड रीडर रेखाओं के प्रतिरूप पढ़ता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-021",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "A company that provides Internet access to its customers is called an ISP. ISP stands for:",
+    "options": [
+     "Internet Service Provider",
+     "Internal Service Protocol",
+     "Internet Security Provider",
+     "International Server Point"
+    ],
+    "explanation": "ISP stands for Internet Service Provider, a company that gives individuals and organisations access to the Internet.",
+    "notes": [
+     "BSNL, Jio and Airtel are examples.",
+     "An ISP is a company, not a protocol.",
+     "The second word is 'Service'.",
+     "The words are 'Internet Service Provider'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Internet abbreviations"
+    ],
+    "facts": [
+     "Public Internet service in India was started by VSNL on 15 August 1995.",
+     "An ISP assigns an IP address to each connected device."
+    ]
+   },
+   "hi": {
+    "q": "अपने ग्राहकों को इंटरनेट पहुँच देने वाली कंपनी ISP कहलाती है। ISP का पूर्ण रूप क्या है?",
+    "options": [
+     "Internet Service Provider",
+     "Internal Service Protocol",
+     "Internet Security Provider",
+     "International Server Point"
+    ],
+    "explanation": "ISP का पूर्ण रूप इंटरनेट सर्विस प्रोवाइडर (इंटरनेट सेवा प्रदाता) है, अर्थात वह कंपनी, जो व्यक्तियों एवं संगठनों को इंटरनेट की पहुँच देती है।",
+    "notes": [
+     "बीएसएनएल, जियो एवं एयरटेल इसके उदाहरण हैं।",
+     "आईएसपी कंपनी है, प्रोटोकॉल नहीं।",
+     "दूसरा शब्द 'Service' है।",
+     "सही शब्द 'Internet Service Provider' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "इंटरनेट संक्षिप्त रूप"
+    ],
+    "facts": [
+     "भारत में सार्वजनिक इंटरनेट सेवा 15 अगस्त 1995 को वीएसएनएल ने आरंभ की।",
+     "आईएसपी प्रत्येक जुड़ी युक्ति को आईपी पता देता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-022",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "VPN, which creates a secure, encrypted connection over a public network, stands for:",
+    "options": [
+     "Verified Public Network",
+     "Virtual Private Network",
+     "Virtual Protocol Node",
+     "Visual Private Network"
+    ],
+    "explanation": "VPN stands for Virtual Private Network. It encrypts data and sends it through a secure tunnel over the Internet, so that a remote user can work as if on a private network.",
+    "notes": [
+     "The words are 'Virtual Private'.",
+     "It makes a private 'tunnel' through the public Internet.",
+     "The words are 'Private Network'.",
+     "The first word is 'Virtual'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Internet abbreviations"
+    ],
+    "facts": [
+     "A VPN hides the user's real IP address.",
+     "Organisations use VPNs to let employees reach office networks from home."
+    ]
+   },
+   "hi": {
+    "q": "सार्वजनिक नेटवर्क पर सुरक्षित, कूटबद्ध संयोजन बनाने वाले VPN का पूर्ण रूप क्या है?",
+    "options": [
+     "Verified Public Network",
+     "Virtual Private Network",
+     "Virtual Protocol Node",
+     "Visual Private Network"
+    ],
+    "explanation": "VPN का पूर्ण रूप वर्चुअल प्राइवेट नेटवर्क है। यह डेटा को कूटबद्ध कर इंटरनेट पर सुरक्षित सुरंग से भेजता है, जिससे दूरस्थ उपयोगकर्ता निजी नेटवर्क की भाँति कार्य कर सकता है।",
+    "notes": [
+     "सही शब्द 'Virtual Private' हैं।",
+     "यह सार्वजनिक इंटरनेट में निजी 'सुरंग' बनाता है।",
+     "सही शब्द 'Private Network' हैं।",
+     "पहला शब्द 'Virtual' है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "इंटरनेट संक्षिप्त रूप"
+    ],
+    "facts": [
+     "वीपीएन उपयोगकर्ता का वास्तविक आईपी पता छिपाता है।",
+     "संगठन कर्मचारियों को घर से कार्यालय नेटवर्क तक पहुँच देने के लिए वीपीएन का प्रयोग करते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-023",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The image file format JPEG stands for:",
+    "options": [
+     "Joint Picture Encoding Group",
+     "Java Photographic Experts Group",
+     "Joint Photographic Experts Group",
+     "Joint Photo Extension Graphics"
+    ],
+    "explanation": "JPEG stands for Joint Photographic Experts Group, the committee that created this standard. It uses lossy compression and is widely used for photographs.",
+    "notes": [
+     "The words are 'Photographic Experts'.",
+     "The first word is 'Joint'.",
+     "It is named after the committee that created the standard.",
+     "The words are 'Experts Group'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "PNG and GIF use lossless compression.",
+     "JPEG files have the extension .jpg or .jpeg."
+    ]
+   },
+   "hi": {
+    "q": "चित्र फाइल प्रारूप JPEG का पूर्ण रूप क्या है?",
+    "options": [
+     "Joint Picture Encoding Group",
+     "Java Photographic Experts Group",
+     "Joint Photographic Experts Group",
+     "Joint Photo Extension Graphics"
+    ],
+    "explanation": "JPEG का पूर्ण रूप जॉइंट फोटोग्राफिक एक्सपर्ट्स ग्रुप है, जो इस मानक को बनाने वाली समिति का नाम है। यह हानियुक्त संपीडन का प्रयोग करता है और छायाचित्रों के लिए व्यापक रूप से प्रयुक्त होता है।",
+    "notes": [
+     "सही शब्द 'Photographic Experts' हैं।",
+     "पहला शब्द 'Joint' है।",
+     "इसका नाम इस मानक को बनाने वाली समिति पर रखा गया है।",
+     "सही शब्द 'Experts Group' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "पीएनजी एवं जीआईएफ हानिरहित संपीडन का प्रयोग करते हैं।",
+     "जेपीईजी फाइलों का एक्सटेंशन .jpg अथवा .jpeg होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-024",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "An interface that lets the user work with windows, icons and menus instead of typed commands is a GUI. GUI stands for:",
+    "options": [
+     "General User Interaction",
+     "Graphical Unified Interface",
+     "Global User Interface",
+     "Graphical User Interface"
+    ],
+    "explanation": "GUI stands for Graphical User Interface. The user works with icons, windows and menus, usually with a mouse or a touch screen.",
+    "notes": [
+     "The words are 'Graphical' and 'Interface'.",
+     "The second word is 'User'.",
+     "The first word is 'Graphical'.",
+     "Microsoft Windows and macOS are GUI-based operating systems."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "MS-DOS has a command-line interface (CLI).",
+     "The GUI was pioneered at the Xerox Palo Alto Research Center."
+    ]
+   },
+   "hi": {
+    "q": "वह इंटरफेस, जिसमें उपयोगकर्ता टंकित आदेशों के स्थान पर विंडो, आइकन एवं मेनू से कार्य करता है, GUI है। GUI का पूर्ण रूप क्या है?",
+    "options": [
+     "General User Interaction",
+     "Graphical Unified Interface",
+     "Global User Interface",
+     "Graphical User Interface"
+    ],
+    "explanation": "GUI का पूर्ण रूप ग्राफिकल यूजर इंटरफेस है। इसमें उपयोगकर्ता प्रायः माउस अथवा टच स्क्रीन द्वारा आइकन, विंडो एवं मेनू से कार्य करता है।",
+    "notes": [
+     "सही शब्द 'Graphical' एवं 'Interface' हैं।",
+     "दूसरा शब्द 'User' है।",
+     "पहला शब्द 'Graphical' है।",
+     "माइक्रोसॉफ्ट विंडोज एवं मैकओएस जीयूआई आधारित ऑपरेटिंग सिस्टम हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "एमएस-डॉस में कमांड-लाइन इंटरफेस (सीएलआई) होता है।",
+     "जीयूआई का आरंभिक विकास जेरॉक्स पालो आल्टो रिसर्च सेंटर में हुआ।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-025",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "NAAC, which assesses and accredits higher education institutions in India, stands for:",
+    "options": [
+     "National Assessment and Accreditation Council",
+     "National Academic Accreditation Committee",
+     "National Agency for Assessment of Colleges",
+     "National Assessment and Affiliation Council"
+    ],
+    "explanation": "NAAC stands for National Assessment and Accreditation Council. It is an autonomous body of the UGC, set up in 1994, with headquarters in Bengaluru.",
+    "notes": [
+     "NAAC was established in 1994 with headquarters in Bengaluru.",
+     "It is a 'Council' and the word is 'Assessment'.",
+     "The words are 'Assessment and Accreditation Council'.",
+     "The word is 'Accreditation', not 'Affiliation'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "NAAC was set up on the recommendation of the National Policy on Education, 1986.",
+     "The NBA accredits technical and professional programmes."
+    ]
+   },
+   "hi": {
+    "q": "भारत में उच्च शिक्षा संस्थानों का मूल्यांकन एवं प्रत्यायन करने वाली NAAC का पूर्ण रूप क्या है?",
+    "options": [
+     "National Assessment and Accreditation Council",
+     "National Academic Accreditation Committee",
+     "National Agency for Assessment of Colleges",
+     "National Assessment and Affiliation Council"
+    ],
+    "explanation": "NAAC का पूर्ण रूप नेशनल असेसमेंट एंड एक्रेडिटेशन काउंसिल (राष्ट्रीय मूल्यांकन एवं प्रत्यायन परिषद) है। यह यूजीसी की स्वायत्त संस्था है, जिसकी स्थापना 1994 में हुई और मुख्यालय बेंगलुरु में है।",
+    "notes": [
+     "नैक की स्थापना 1994 में हुई; मुख्यालय बेंगलुरु में है।",
+     "यह 'Council' है और शब्द 'Assessment' है।",
+     "सही शब्द 'Assessment and Accreditation Council' हैं।",
+     "शब्द 'Accreditation' है, 'Affiliation' नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "नैक की स्थापना राष्ट्रीय शिक्षा नीति, 1986 की संस्तुति पर हुई।",
+     "एनबीए तकनीकी एवं व्यावसायिक पाठ्यक्रमों का प्रत्यायन करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "National Assessment and Accreditation Council – About NAAC",
+     "url": "http://naac.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-026",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "NCTE, the statutory body that regulates teacher education in India, stands for:",
+    "options": [
+     "National Committee for Teacher Eligibility",
+     "National Council for Teacher Education",
+     "National Centre for Teaching Excellence",
+     "National Council for Technical Education"
+    ],
+    "explanation": "NCTE stands for National Council for Teacher Education. It became a statutory body in 1995 under the NCTE Act, 1993, to plan and coordinate teacher education.",
+    "notes": [
+     "It is a 'Council' and the last word is 'Education'.",
+     "NCTE became a statutory body on 17 August 1995.",
+     "The words are 'Council for Teacher Education'.",
+     "Technical education is regulated by the AICTE."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "NCTE's headquarters is in New Delhi.",
+     "NCTE lays down the minimum qualifications for school teachers."
+    ]
+   },
+   "hi": {
+    "q": "भारत में शिक्षक शिक्षा का नियमन करने वाली सांविधिक संस्था NCTE का पूर्ण रूप क्या है?",
+    "options": [
+     "National Committee for Teacher Eligibility",
+     "National Council for Teacher Education",
+     "National Centre for Teaching Excellence",
+     "National Council for Technical Education"
+    ],
+    "explanation": "NCTE का पूर्ण रूप नेशनल काउंसिल फॉर टीचर एजुकेशन (राष्ट्रीय अध्यापक शिक्षा परिषद) है। यह एनसीटीई अधिनियम, 1993 के अंतर्गत 1995 में शिक्षक शिक्षा के नियोजन एवं समन्वय हेतु सांविधिक संस्था बनी।",
+    "notes": [
+     "यह 'Council' है और अंतिम शब्द 'Education' है।",
+     "एनसीटीई 17 अगस्त 1995 को सांविधिक संस्था बनी।",
+     "सही शब्द 'Council for Teacher Education' हैं।",
+     "तकनीकी शिक्षा का नियमन एआईसीटीई करती है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "एनसीटीई का मुख्यालय नई दिल्ली में है।",
+     "एनसीटीई विद्यालयी शिक्षकों की न्यूनतम अर्हताएँ निर्धारित करती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "National Council for Teacher Education – About NCTE",
+     "url": "https://ncte.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-027",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The test shown on websites to make sure that the user is a human and not a program is called:",
+    "options": [
+     "Cookie",
+     "Firewall",
+     "CAPTCHA",
+     "Cache"
+    ],
+    "explanation": "CAPTCHA stands for Completely Automated Public Turing test to tell Computers and Humans Apart. It blocks automated programs (bots) from misusing websites.",
+    "notes": [
+     "A cookie is a small file that a website stores on the user's device.",
+     "A firewall filters network traffic.",
+     "It usually asks the user to read distorted letters or pick out images.",
+     "A cache stores copies of data for quick access."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "The term CAPTCHA was coined in 2003 at Carnegie Mellon University.",
+     "reCAPTCHA is a CAPTCHA service of Google."
+    ]
+   },
+   "hi": {
+    "q": "वेबसाइटों पर यह सुनिश्चित करने के लिए दिखाया जाने वाला परीक्षण क्या कहलाता है कि उपयोगकर्ता मनुष्य है, प्रोग्राम नहीं?",
+    "options": [
+     "कुकी",
+     "फायरवॉल",
+     "कैप्चा",
+     "कैश"
+    ],
+    "explanation": "CAPTCHA का पूर्ण रूप Completely Automated Public Turing test to tell Computers and Humans Apart है। यह स्वचालित प्रोग्रामों (बॉट) को वेबसाइटों के दुरुपयोग से रोकता है।",
+    "notes": [
+     "कुकी छोटी फाइल है, जिसे वेबसाइट उपयोगकर्ता की युक्ति पर रखती है।",
+     "फायरवॉल नेटवर्क यातायात को छानती है।",
+     "इसमें प्रायः विकृत अक्षर पढ़ने अथवा चित्र चुनने को कहा जाता है।",
+     "कैश शीघ्र पहुँच के लिए डेटा की प्रतियाँ रखता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "कैप्चा शब्द 2003 में कार्नेगी मेलन विश्वविद्यालय में गढ़ा गया।",
+     "रीकैप्चा गूगल की कैप्चा सेवा है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-028",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Software such as Moodle, used to deliver courses, track learners' progress and conduct online assessment, is called an LMS. LMS stands for:",
+    "options": [
+     "Learner Monitoring Software",
+     "Lesson Mapping System",
+     "Library Management Software",
+     "Learning Management System"
+    ],
+    "explanation": "LMS stands for Learning Management System, a software platform for delivering, managing and tracking courses and assessments.",
+    "notes": [
+     "The words are 'Learning Management System'.",
+     "The words are 'Learning Management'.",
+     "Library software is a different application.",
+     "Moodle and Canvas are examples."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "Moodle is a free, open-source LMS.",
+     "Moodle stands for Modular Object-Oriented Dynamic Learning Environment."
+    ]
+   },
+   "hi": {
+    "q": "पाठ्यक्रम उपलब्ध कराने, शिक्षार्थियों की प्रगति जानने एवं ऑनलाइन आकलन में प्रयुक्त मूडल जैसा सॉफ्टवेयर LMS कहलाता है। LMS का पूर्ण रूप क्या है?",
+    "options": [
+     "Learner Monitoring Software",
+     "Lesson Mapping System",
+     "Library Management Software",
+     "Learning Management System"
+    ],
+    "explanation": "LMS का पूर्ण रूप लर्निंग मैनेजमेंट सिस्टम है, अर्थात पाठ्यक्रमों एवं आकलनों को उपलब्ध कराने, प्रबंधित करने एवं उनकी प्रगति जानने का सॉफ्टवेयर मंच।",
+    "notes": [
+     "सही शब्द 'Learning Management System' हैं।",
+     "सही शब्द 'Learning Management' हैं।",
+     "पुस्तकालय सॉफ्टवेयर भिन्न अनुप्रयोग है।",
+     "मूडल एवं कैनवस इसके उदाहरण हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "मूडल निःशुल्क, मुक्त स्रोत एलएमएस है।",
+     "मूडल का पूर्ण रूप मॉड्यूलर ऑब्जेक्ट-ओरिएंटेड डायनेमिक लर्निंग एनवायरनमेंट है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-029",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The word 'modem' is formed from:",
+    "options": [
+     "Modulator and demodulator",
+     "Mode and memory",
+     "Modern and electronic machine",
+     "Module and emulator"
+    ],
+    "explanation": "Modem is short for modulator–demodulator. It converts the computer's digital signals into analog signals for a telephone line or cable and converts incoming analog signals back into digital form.",
+    "notes": [
+     "It converts digital signals to analog signals and back.",
+     "Not the source of the word.",
+     "Not the source of the word.",
+     "Not the source of the word."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "Converting digital signals into analog signals is called modulation.",
+     "The speed of a modem is measured in bits per second."
+    ]
+   },
+   "hi": {
+    "q": "'मॉडेम' शब्द किनसे मिलकर बना है?",
+    "options": [
+     "मॉड्यूलेटर एवं डीमॉड्यूलेटर",
+     "मोड एवं मेमोरी",
+     "मॉडर्न एवं इलेक्ट्रॉनिक मशीन",
+     "मॉड्यूल एवं एम्यूलेटर"
+    ],
+    "explanation": "मॉडेम मॉड्यूलेटर–डीमॉड्यूलेटर का संक्षिप्त रूप है। यह कम्प्यूटर के अंकीय संकेतों को टेलीफोन लाइन अथवा केबल के लिए अनुरूप संकेतों में तथा आने वाले अनुरूप संकेतों को वापस अंकीय रूप में बदलता है।",
+    "notes": [
+     "यह अंकीय संकेतों को अनुरूप संकेतों में तथा वापस बदलता है।",
+     "यह इस शब्द का स्रोत नहीं है।",
+     "यह इस शब्द का स्रोत नहीं है।",
+     "यह इस शब्द का स्रोत नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "अंकीय संकेतों को अनुरूप संकेतों में बदलना मॉड्यूलेशन कहलाता है।",
+     "मॉडेम की गति बिट प्रति सेकंड में मापी जाती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-030",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The device that keeps a computer running for some time during a power failure is a UPS. UPS stands for:",
+    "options": [
+     "Universal Power Supply",
+     "Uninterruptible Power Supply",
+     "Unlimited Power Source",
+     "Unit of Power Storage"
+    ],
+    "explanation": "UPS stands for Uninterruptible Power Supply. Its battery gives backup power during a power cut, so that work can be saved and the computer shut down properly.",
+    "notes": [
+     "The first word is 'Uninterruptible'.",
+     "Its battery supplies power when the mains supply fails.",
+     "The words are 'Power Supply'.",
+     "The words are 'Uninterruptible Power Supply'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Computer abbreviations"
+    ],
+    "facts": [
+     "A UPS also protects equipment from voltage fluctuations.",
+     "SMPS (Switched Mode Power Supply) is the power unit inside a computer cabinet."
+    ]
+   },
+   "hi": {
+    "q": "विद्युत आपूर्ति बाधित होने पर कम्प्यूटर को कुछ समय तक चालू रखने वाली युक्ति UPS है। UPS का पूर्ण रूप क्या है?",
+    "options": [
+     "Universal Power Supply",
+     "Uninterruptible Power Supply",
+     "Unlimited Power Source",
+     "Unit of Power Storage"
+    ],
+    "explanation": "UPS का पूर्ण रूप अनइंटरप्टिबल पावर सप्लाई है। इसकी बैटरी विद्युत कटौती के समय बैकअप देती है, ताकि कार्य सुरक्षित किया जा सके और कम्प्यूटर ठीक से बंद किया जा सके।",
+    "notes": [
+     "पहला शब्द 'Uninterruptible' है।",
+     "मुख्य आपूर्ति बंद होने पर इसकी बैटरी विद्युत देती है।",
+     "सही शब्द 'Power Supply' हैं।",
+     "सही शब्द 'Uninterruptible Power Supply' हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "कम्प्यूटर संक्षिप्त रूप"
+    ],
+    "facts": [
+     "यूपीएस उपकरणों को वोल्टेज के उतार-चढ़ाव से भी बचाता है।",
+     "एसएमपीएस (स्विच्ड मोड पावर सप्लाई) कम्प्यूटर कैबिनेट के भीतर की विद्युत इकाई है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-031",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "In online education, the acronym MOOC stands for:",
+    "options": [
+     "Modular Open Online Curriculum",
+     "Massive Online Open Classroom",
+     "Massive Open Online Course",
+     "Multimedia Open Online Course"
+    ],
+    "explanation": "MOOC stands for Massive Open Online Course: an online course open to anyone, with no limit on enrolment. The term was coined in 2008.",
+    "notes": [
+     "The words are 'Massive' and 'Course'.",
+     "The order is 'Open Online' and the last word is 'Course'.",
+     "'Massive' refers to unlimited enrolment and 'Open' to free access.",
+     "The first word is 'Massive'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "SWAYAM is India's national MOOC platform.",
+     "Coursera and edX are well-known international MOOC providers."
+    ]
+   },
+   "hi": {
+    "q": "ऑनलाइन शिक्षा में MOOC का पूर्ण रूप क्या है?",
+    "options": [
+     "Modular Open Online Curriculum",
+     "Massive Online Open Classroom",
+     "Massive Open Online Course",
+     "Multimedia Open Online Course"
+    ],
+    "explanation": "MOOC का पूर्ण रूप मैसिव ओपन ऑनलाइन कोर्स है: ऐसा ऑनलाइन पाठ्यक्रम, जो सभी के लिए खुला है और जिसमें नामांकन की कोई सीमा नहीं है। यह शब्द 2008 में गढ़ा गया।",
+    "notes": [
+     "सही शब्द 'Massive' एवं 'Course' हैं।",
+     "क्रम 'Open Online' है और अंतिम शब्द 'Course' है।",
+     "'Massive' का आशय असीमित नामांकन तथा 'Open' का आशय मुक्त पहुँच से है।",
+     "पहला शब्द 'Massive' है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "स्वयं भारत का राष्ट्रीय मूक मंच है।",
+     "कोर्सेरा एवं एडएक्स प्रसिद्ध अंतर्राष्ट्रीय मूक प्रदाता हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-032",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "INFLIBNET, an Inter-University Centre of the UGC located at Gandhinagar, stands for:",
+    "options": [
+     "Indian Federation of Library Networks",
+     "Information and Learning Network",
+     "Integrated Network of Libraries",
+     "Information and Library Network"
+    ],
+    "explanation": "INFLIBNET stands for Information and Library Network. The INFLIBNET Centre modernises university libraries and connects them for sharing information resources.",
+    "notes": [
+     "Not the expansion of INFLIBNET.",
+     "The word is 'Library', not 'Learning'.",
+     "Not the expansion of INFLIBNET.",
+     "It links university libraries and runs Shodhganga and e-ShodhSindhu."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "INFLIBNET began as a UGC project in 1991 and became an independent Inter-University Centre in 1996.",
+     "It hosts Shodhganga, the repository of Indian theses."
+    ]
+   },
+   "hi": {
+    "q": "गांधीनगर स्थित यूजीसी के अंतर-विश्वविद्यालय केंद्र INFLIBNET का पूर्ण रूप क्या है?",
+    "options": [
+     "Indian Federation of Library Networks",
+     "Information and Learning Network",
+     "Integrated Network of Libraries",
+     "Information and Library Network"
+    ],
+    "explanation": "INFLIBNET का पूर्ण रूप इन्फॉर्मेशन एंड लाइब्रेरी नेटवर्क है। इन्फ्लिबनेट केंद्र विश्वविद्यालय पुस्तकालयों का आधुनिकीकरण करता है और सूचना संसाधनों के साझाकरण हेतु उन्हें जोड़ता है।",
+    "notes": [
+     "यह इन्फ्लिबनेट का पूर्ण रूप नहीं है।",
+     "शब्द 'Library' है, 'Learning' नहीं।",
+     "यह इन्फ्लिबनेट का पूर्ण रूप नहीं है।",
+     "यह विश्वविद्यालय पुस्तकालयों को जोड़ता है तथा शोधगंगा एवं ई-शोधसिंधु चलाता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "इन्फ्लिबनेट 1991 में यूजीसी की परियोजना के रूप में आरंभ हुआ और 1996 में स्वतंत्र अंतर-विश्वविद्यालय केंद्र बना।",
+     "यह भारतीय शोध प्रबंधों के भंडार शोधगंगा का संचालन करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "INFLIBNET Centre, Gandhinagar – About us",
+     "url": "https://www.inflibnet.ac.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-033",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "NIRF, under which higher education institutions of India are ranked every year, stands for:",
+    "options": [
+     "National Institutional Ranking Framework",
+     "National Index of Research Funding",
+     "National Institute Rating Forum",
+     "National Institutional Research Framework"
+    ],
+    "explanation": "NIRF stands for National Institutional Ranking Framework. It was launched in 2015 and the first India Rankings were released in 2016.",
+    "notes": [
+     "It was launched by the then Ministry of Human Resource Development in September 2015.",
+     "Not the expansion of NIRF.",
+     "It is a 'Framework' for 'Ranking'.",
+     "The word is 'Ranking', not 'Research'."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Education abbreviations"
+    ],
+    "facts": [
+     "NIRF parameters include teaching, learning and resources; research and professional practice; graduation outcomes; outreach and inclusivity; and perception.",
+     "The rankings are released by the Ministry of Education."
+    ]
+   },
+   "hi": {
+    "q": "भारत के उच्च शिक्षा संस्थानों की वार्षिक रैंकिंग से संबंधित NIRF का पूर्ण रूप क्या है?",
+    "options": [
+     "National Institutional Ranking Framework",
+     "National Index of Research Funding",
+     "National Institute Rating Forum",
+     "National Institutional Research Framework"
+    ],
+    "explanation": "NIRF का पूर्ण रूप नेशनल इंस्टीट्यूशनल रैंकिंग फ्रेमवर्क है। इसे 2015 में आरंभ किया गया और पहली इंडिया रैंकिंग 2016 में जारी हुई।",
+    "notes": [
+     "इसे तत्कालीन मानव संसाधन विकास मंत्रालय ने सितंबर 2015 में आरंभ किया।",
+     "यह एनआईआरएफ का पूर्ण रूप नहीं है।",
+     "यह 'Ranking' का 'Framework' है।",
+     "शब्द 'Ranking' है, 'Research' नहीं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शिक्षा संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "एनआईआरएफ के मानदंडों में शिक्षण, अधिगम एवं संसाधन; शोध एवं व्यावसायिक अभ्यास; स्नातक परिणाम; पहुँच एवं समावेशन तथा अवबोधन सम्मिलित हैं।",
+     "रैंकिंग शिक्षा मंत्रालय जारी करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "National Institutional Ranking Framework, Ministry of Education",
+     "url": "https://www.nirfindia.org/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-034",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Teaching and learning materials that are freely available for anyone to use, adapt and redistribute are known as:",
+    "options": [
+     "Licensed courseware",
+     "Open Educational Resources",
+     "Proprietary e-content",
+     "Digital rights managed content"
+    ],
+    "explanation": "Open Educational Resources (OER) are materials in the public domain or under an open licence that permits free use, adaptation and redistribution.",
+    "notes": [
+     "Licensed courseware restricts use to those who pay.",
+     "The term OER was adopted at a UNESCO forum in 2002.",
+     "Proprietary content cannot be freely adapted.",
+     "Digital rights management restricts copying and sharing."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "Creative Commons licences are widely used for OER.",
+     "NROER is India's National Repository of Open Educational Resources."
+    ]
+   },
+   "hi": {
+    "q": "वे शिक्षण-अधिगम सामग्रियाँ क्या कहलाती हैं, जो किसी के भी प्रयोग, अनुकूलन एवं पुनर्वितरण के लिए निःशुल्क उपलब्ध हैं?",
+    "options": [
+     "अनुज्ञप्त पाठ्य सामग्री",
+     "मुक्त शैक्षिक संसाधन",
+     "स्वामित्वाधीन ई-सामग्री",
+     "डिजिटल अधिकार प्रबंधित सामग्री"
+    ],
+    "explanation": "मुक्त शैक्षिक संसाधन (ओईआर) सार्वजनिक क्षेत्र में अथवा ऐसी मुक्त अनुज्ञप्ति के अंतर्गत उपलब्ध सामग्रियाँ हैं, जो निःशुल्क प्रयोग, अनुकूलन एवं पुनर्वितरण की अनुमति देती है।",
+    "notes": [
+     "अनुज्ञप्त सामग्री का प्रयोग केवल भुगतान करने वाले कर सकते हैं।",
+     "ओईआर शब्द 2002 में यूनेस्को के मंच पर अपनाया गया।",
+     "स्वामित्वाधीन सामग्री का मुक्त अनुकूलन नहीं किया जा सकता।",
+     "डिजिटल अधिकार प्रबंधन प्रतिलिपि एवं साझाकरण को सीमित करता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "ओईआर के लिए क्रिएटिव कॉमन्स अनुज्ञप्तियों का व्यापक प्रयोग होता है।",
+     "एनआरओईआर भारत का मुक्त शैक्षिक संसाधनों का राष्ट्रीय भंडार है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "UNESCO – Open Educational Resources",
+     "url": "https://www.unesco.org/en/open-educational-resources"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-035",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "The persistent identifier assigned to a journal article so that it can always be located online is called a DOI. DOI stands for:",
+    "options": [
+     "Document Online Index",
+     "Digital Online Identity",
+     "Digital Object Identifier",
+     "Data Object Index"
+    ],
+    "explanation": "DOI stands for Digital Object Identifier. It is a unique and permanent string that identifies a digital object such as a journal article and links to its location on the Internet.",
+    "notes": [
+     "Not the expansion of DOI.",
+     "The words are 'Object Identifier'.",
+     "A DOI stays the same even if the article's web address changes.",
+     "Not the expansion of DOI."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "Research abbreviations"
+    ],
+    "facts": [
+     "ISSN identifies a journal or other serial; ISBN identifies a book.",
+     "ORCID is a persistent identifier for researchers."
+    ]
+   },
+   "hi": {
+    "q": "शोध पत्रिका के लेख को दिया गया वह स्थायी अभिज्ञापक DOI कहलाता है, जिससे उसे सदैव ऑनलाइन खोजा जा सके। DOI का पूर्ण रूप क्या है?",
+    "options": [
+     "Document Online Index",
+     "Digital Online Identity",
+     "Digital Object Identifier",
+     "Data Object Index"
+    ],
+    "explanation": "DOI का पूर्ण रूप डिजिटल ऑब्जेक्ट आइडेंटिफायर है। यह विशिष्ट एवं स्थायी वर्ण-शृंखला है, जो शोध लेख जैसी डिजिटल वस्तु की पहचान करती है और इंटरनेट पर उसके स्थान से जोड़ती है।",
+    "notes": [
+     "यह डीओआई का पूर्ण रूप नहीं है।",
+     "सही शब्द 'Object Identifier' हैं।",
+     "लेख का वेब पता बदलने पर भी डीओआई वही रहता है।",
+     "यह डीओआई का पूर्ण रूप नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "शोध संबंधी संक्षिप्त रूप"
+    ],
+    "facts": [
+     "आईएसएसएन पत्रिका अथवा अन्य क्रमिक प्रकाशन की तथा आईएसबीएन पुस्तक की पहचान करता है।",
+     "ओआरसीआईडी शोधकर्ताओं का स्थायी अभिज्ञापक है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "International DOI Foundation – DOI Handbook",
+     "url": "https://www.doi.org/"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-036",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "A set of rules and definitions that allows one software application to request services or data from another is called:",
+    "options": [
+     "A compiler",
+     "An operating system",
+     "A device driver",
+     "An Application Programming Interface (API)"
+    ],
+    "explanation": "An Application Programming Interface (API) defines how one program can ask another for services or data, without knowing how the other program works inside.",
+    "notes": [
+     "A compiler translates a high-level program into machine code.",
+     "An operating system manages hardware and runs programs.",
+     "A device driver lets the operating system control a hardware device.",
+     "UPI apps, for example, talk to banks through APIs."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "Open APIs are available for any developer to use.",
+     "Aadhaar authentication and UPI are offered to applications through APIs."
+    ]
+   },
+   "hi": {
+    "q": "उन नियमों एवं परिभाषाओं का समूह क्या कहलाता है, जो एक सॉफ्टवेयर अनुप्रयोग को दूसरे से सेवाएँ अथवा डेटा माँगने देता है?",
+    "options": [
+     "कंपाइलर",
+     "ऑपरेटिंग सिस्टम",
+     "डिवाइस ड्राइवर",
+     "एप्लीकेशन प्रोग्रामिंग इंटरफेस (एपीआई)"
+    ],
+    "explanation": "एप्लीकेशन प्रोग्रामिंग इंटरफेस (एपीआई) यह परिभाषित करता है कि एक प्रोग्राम दूसरे से सेवाएँ अथवा डेटा कैसे माँग सकता है, भले ही उसे दूसरे प्रोग्राम की आंतरिक कार्यप्रणाली ज्ञात न हो।",
+    "notes": [
+     "कंपाइलर उच्च स्तरीय प्रोग्राम को मशीन कोड में बदलता है।",
+     "ऑपरेटिंग सिस्टम हार्डवेयर का प्रबंधन करता है और प्रोग्राम चलाता है।",
+     "डिवाइस ड्राइवर ऑपरेटिंग सिस्टम को हार्डवेयर युक्ति नियंत्रित करने देता है।",
+     "उदाहरणार्थ, यूपीआई ऐप बैंकों से एपीआई द्वारा संवाद करते हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "मुक्त एपीआई किसी भी डेवलपर के प्रयोग के लिए उपलब्ध होते हैं।",
+     "आधार प्रमाणीकरण एवं यूपीआई अनुप्रयोगों को एपीआई द्वारा उपलब्ध कराए जाते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-037",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "In data communication, the term 'protocol' most accurately refers to:",
+    "options": [
+     "A set of rules governing the exchange of data between devices",
+     "The physical cable that joins two computers",
+     "The speed at which data travels over a network",
+     "A program that protects a computer from viruses"
+    ],
+    "explanation": "A protocol is an agreed set of rules for communication between devices. TCP/IP, HTTP, FTP and SMTP are examples.",
+    "notes": [
+     "Protocols fix the format, timing, sequence and error control of communication.",
+     "That is the transmission medium.",
+     "That is the data transfer rate.",
+     "That is antivirus software."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "TCP/IP is the basic protocol suite of the Internet.",
+     "FTP is the File Transfer Protocol."
+    ]
+   },
+   "hi": {
+    "q": "डेटा संचार में 'प्रोटोकॉल' शब्द से सर्वाधिक सटीक आशय किससे है?",
+    "options": [
+     "युक्तियों के बीच डेटा के आदान-प्रदान को नियंत्रित करने वाले नियमों का समूह",
+     "दो कम्प्यूटरों को जोड़ने वाली भौतिक केबल",
+     "नेटवर्क पर डेटा के चलने की गति",
+     "कम्प्यूटर को वायरस से बचाने वाला प्रोग्राम"
+    ],
+    "explanation": "प्रोटोकॉल युक्तियों के बीच संचार के लिए सहमत नियमों का समूह है। टीसीपी/आईपी, एचटीटीपी, एफटीपी एवं एसएमटीपी इसके उदाहरण हैं।",
+    "notes": [
+     "प्रोटोकॉल संचार का प्रारूप, समय, क्रम एवं त्रुटि नियंत्रण निर्धारित करते हैं।",
+     "वह संचरण माध्यम है।",
+     "वह डेटा अंतरण दर है।",
+     "वह एंटीवायरस सॉफ्टवेयर है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "टीसीपी/आईपी इंटरनेट का मूल प्रोटोकॉल समूह है।",
+     "एफटीपी फाइल ट्रांसफर प्रोटोकॉल है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-038",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Software that is permanently stored in a hardware device's read-only memory to control its basic working is called:",
+    "options": [
+     "Shareware",
+     "Firmware",
+     "Freeware",
+     "Middleware"
+    ],
+    "explanation": "Firmware is software embedded in the non-volatile memory of a hardware device, such as the BIOS of a computer or the control program of a printer or a router.",
+    "notes": [
+     "Shareware is distributed free for a trial period.",
+     "The BIOS of a computer is an example.",
+     "Freeware can be used free of charge.",
+     "Middleware links different applications or systems."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "Firmware stands between hardware and software.",
+     "Updating firmware is often called 'flashing'."
+    ]
+   },
+   "hi": {
+    "q": "वह सॉफ्टवेयर क्या कहलाता है, जो किसी हार्डवेयर युक्ति की रीड-ओनली मेमोरी में उसके मूल कार्य को नियंत्रित करने के लिए स्थायी रूप से संगृहीत होता है?",
+    "options": [
+     "शेयरवेयर",
+     "फर्मवेयर",
+     "फ्रीवेयर",
+     "मिडलवेयर"
+    ],
+    "explanation": "फर्मवेयर हार्डवेयर युक्ति की स्थायी स्मृति में अंतःस्थापित सॉफ्टवेयर है, जैसे कम्प्यूटर का बायोस अथवा प्रिंटर या राउटर का नियंत्रण प्रोग्राम।",
+    "notes": [
+     "शेयरवेयर परीक्षण अवधि के लिए निःशुल्क वितरित किया जाता है।",
+     "कम्प्यूटर का बायोस इसका उदाहरण है।",
+     "फ्रीवेयर का प्रयोग निःशुल्क किया जा सकता है।",
+     "मिडलवेयर भिन्न अनुप्रयोगों अथवा प्रणालियों को जोड़ता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "फर्मवेयर हार्डवेयर एवं सॉफ्टवेयर के बीच की कड़ी है।",
+     "फर्मवेयर को अद्यतन करना प्रायः 'फ्लैशिंग' कहलाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-039",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "The term 'netiquette' refers to:",
+    "options": [
+     "A network security protocol",
+     "The speed of an Internet connection",
+     "The code of polite and responsible behaviour on the Internet",
+     "A tool for designing web pages"
+    ],
+    "explanation": "Netiquette means the accepted rules of courteous and responsible conduct in online communication, such as e-mail, discussion forums and social media.",
+    "notes": [
+     "Netiquette is not a technical protocol.",
+     "Speed is measured as bandwidth.",
+     "The word joins 'network' (or 'Internet') and 'etiquette'.",
+     "Netiquette is not software."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "Typing a message wholly in capital letters is taken as shouting.",
+     "Respecting others' privacy and avoiding offensive language are part of netiquette."
+    ]
+   },
+   "hi": {
+    "q": "'नेटिकेट' शब्द से क्या आशय है?",
+    "options": [
+     "नेटवर्क सुरक्षा प्रोटोकॉल",
+     "इंटरनेट संयोजन की गति",
+     "इंटरनेट पर शिष्ट एवं उत्तरदायी व्यवहार की आचार संहिता",
+     "वेब पेज अभिकल्पन का उपकरण"
+    ],
+    "explanation": "नेटिकेट का अर्थ ई-मेल, चर्चा मंच एवं सोशल मीडिया जैसे ऑनलाइन संचार में शिष्ट एवं उत्तरदायी आचरण के स्वीकृत नियम हैं।",
+    "notes": [
+     "नेटिकेट तकनीकी प्रोटोकॉल नहीं है।",
+     "गति को बैंडविड्थ के रूप में मापा जाता है।",
+     "यह शब्द 'नेटवर्क' (अथवा 'इंटरनेट') एवं 'एटिकेट' से मिलकर बना है।",
+     "नेटिकेट सॉफ्टवेयर नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "संदेश को पूरा बड़े अक्षरों में टंकित करना चिल्लाना माना जाता है।",
+     "दूसरों की निजता का सम्मान एवं आपत्तिजनक भाषा से बचना नेटिकेट का भाग है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-040",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Software is called 'open source' when:",
+    "options": [
+     "It can be downloaded only from the Internet",
+     "It is sold without any licence",
+     "It works only on the Windows operating system",
+     "Its source code is available for anyone to study, modify and distribute"
+    ],
+    "explanation": "Open-source software is released with its source code under a licence that lets users study, change and share it. Proprietary software keeps its source code closed.",
+    "notes": [
+     "The way software is downloaded does not make it open source.",
+     "Open-source software is released under an open licence.",
+     "Open-source software is not tied to one operating system.",
+     "Linux, LibreOffice and Moodle are examples."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "ICT terms"
+    ],
+    "facts": [
+     "Linux, Mozilla Firefox and LibreOffice are open-source software.",
+     "Freeware is free to use, but its source code may not be available."
+    ]
+   },
+   "hi": {
+    "q": "सॉफ्टवेयर को 'मुक्त स्रोत' (ओपन सोर्स) कब कहा जाता है?",
+    "options": [
+     "जब उसे केवल इंटरनेट से डाउनलोड किया जा सके",
+     "जब उसे बिना किसी अनुज्ञप्ति के बेचा जाए",
+     "जब वह केवल विंडोज ऑपरेटिंग सिस्टम पर चले",
+     "जब उसका स्रोत कोड किसी के भी अध्ययन, परिवर्तन एवं वितरण के लिए उपलब्ध हो"
+    ],
+    "explanation": "मुक्त स्रोत सॉफ्टवेयर अपने स्रोत कोड के साथ ऐसी अनुज्ञप्ति के अंतर्गत जारी होता है, जो उपयोगकर्ताओं को उसे पढ़ने, बदलने एवं साझा करने देती है। स्वामित्वाधीन सॉफ्टवेयर अपना स्रोत कोड बंद रखता है।",
+    "notes": [
+     "डाउनलोड करने की रीति सॉफ्टवेयर को मुक्त स्रोत नहीं बनाती।",
+     "मुक्त स्रोत सॉफ्टवेयर मुक्त अनुज्ञप्ति के अंतर्गत जारी होता है।",
+     "मुक्त स्रोत सॉफ्टवेयर किसी एक ऑपरेटिंग सिस्टम से बँधा नहीं होता।",
+     "लिनक्स, लिब्रेऑफिस एवं मूडल इसके उदाहरण हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "आईसीटी शब्दावली"
+    ],
+    "facts": [
+     "लिनक्स, मोज़िला फायरफॉक्स एवं लिब्रेऑफिस मुक्त स्रोत सॉफ्टवेयर हैं।",
+     "फ्रीवेयर का प्रयोग निःशुल्क है, किंतु उसका स्रोत कोड उपलब्ध नहीं भी हो सकता।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  }
+ ]
+}

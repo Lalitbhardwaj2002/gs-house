@@ -28,3 +28,14 @@ Fatman pp. 303–305 (images p328–p330) were opened, and their printed page nu
 
 ## For the writer later
 - The section has no question on the Fatman-listed ANF beyond the pairs in 040, and none on hormone feedback loops other than 016. Both are possible additions.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 29 questions (003 004 007 009 010 013 014 016 017 018 020 024 028 029 030 032 033 035 038 040 041 042 043 046 047 049 051 053 054); all answer keys confirmed.
+
+Corrected:
+- health-hormones-014: Hindi note for option C was tautological; rewritten.
+- health-hormones-040: note for option C (liver) wrongly said the liver is not a source of erythropoietin in adults; now says it is the main foetal source and makes a small share in adults.
+- health-hormones-049: two-sentence stem turned into one single-line question (EN and HI).
+
+Replaced: none.

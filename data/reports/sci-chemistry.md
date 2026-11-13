@@ -30,3 +30,10 @@ Every question was solved without looking at the key first. Every key agreed wit
 ## Not changed but noted
 - Fatman p.278 gives wrong general formulas: alkene CnH2n-2 and alkyne CnH2n-4. The correct ones are CnH2n and CnH2n-2. Question 046 cites p.278 only for the –CH₂–/14 u fact, and its own facts give the correct formulas.
 - Special Topics p.248 lists "nitric acid – alum", which is wrong. No question cites that line.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 24 questions (002 003 004 005 006 010 011 012 014 016 018 020 024 028 031 032 033 036 039 041 044 048 051 053). Every key was solved blind and agreed; formulae (washing soda, vitriols, AgCl photolysis, BaSO4 precipitation) and mass ratios (water 1 : 8, ammonia 14 : 3) re-checked.
+
+- Corrected: none.
+- Replaced: none.

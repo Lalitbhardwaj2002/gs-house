@@ -22,3 +22,17 @@ NCERT Class 11 Statistics for Economics Ch. 3 and Ch. 4 (kest103, kest104) were 
 
 ## For the writer later
 - Not yet covered: frequency curve shapes (J, U), kurtosis types, range, index numbers, bar/line-graph data interpretation, and a "less than" ogive reading question.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 24 (003 005 007 009 010 012 013 015 016 017 018 019 020 022 025 028 031 032 033 035 036 038 039 040): all answer keys correct; all numericals re-worked (rank correlation 0.80, percentage changes 44% / 18.33%, pie sector Rs 12,000, mean 2.65, combined mean 64, year-on-year growth 30/19.2/25%).
+- Corrected: tra-data-009 (Hindi fact: 'क्रमसूचक' made consistent with 'क्रमिक मापनी' used in options).
+- Replaced: none.
+
+## Check of 13 November 2026 (questions reframed in the style of the Higher paper)
+- Checked 19 (001 004 005 006 008 009 011 012 013 015 016 017 018 019 024 027 028 039 040): all keyed answers confirmed (NCERT parts of a table, ogives, histogram, scales of measurement, Merton & Kendall 1946).
+- Corrected: tra-data-001 (option D 'always more accurate' duplicated 014's answer and its note gave it away; replaced by 'always collected from every unit of the population').
+- Corrected: tra-data-013 (interval-versus-ordinal 'equal units' overlapped 009 and 010 and was given away by 008's options; re-aimed at reducing marks to ranks: data move down the measurement hierarchy but not back up; answer stays C).
+- Corrected: tra-data-019 (option B 'continuous frequency distribution / histogram' gave away 017; replaced by cumulative frequencies / ogive; explanation updated).
+- Corrected: tra-data-039 (note B wrongly tied life histories to the depth interview; now the life-history method).
+- Corrected: tra-data-006 (Hindi note terms aligned: 'समाजालेख', 'स्टार').
+- Replaced: none.

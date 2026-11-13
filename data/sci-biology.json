@@ -202,19 +202,19 @@
    "level": "PGT",
    "answer": 0,
    "en": {
-    "q": "Consider the following statements about mitochondria:\n1. They contain their own circular DNA and 70S ribosomes.\n2. Their inner membrane is folded inwards to form cristae.\n3. Glycolysis takes place in the mitochondrial matrix.\nWhich of the statements given above is/are correct?",
+    "q": "In a cell, glycolysis takes place in the:",
     "options": [
-     "1 and 2 only",
-     "2 and 3 only",
-     "1 and 3 only",
-     "1, 2 and 3"
+     "Cytoplasm",
+     "Mitochondrial matrix",
+     "Nucleus",
+     "Golgi apparatus"
     ],
-    "explanation": "Mitochondria are semi-autonomous: they have their own circular DNA and 70S ribosomes, and their inner membrane forms cristae. Glycolysis occurs in the cytoplasm; the matrix is the site of the Krebs cycle, so statement 3 is wrong.",
+    "explanation": "Glycolysis occurs in the cytoplasm, while the Krebs cycle takes place in the mitochondrial matrix. Mitochondria have their own DNA and 70S ribosomes.",
     "notes": [
-     "Correct: statements 1 and 2 are true; statement 3 is false.",
-     "Wrong: statement 3 is false because glycolysis occurs in the cytoplasm.",
-     "Wrong: statement 2 is true and must be included; statement 3 is false.",
-     "Wrong: glycolysis is not a mitochondrial process, so all three cannot be correct."
+     "The breakdown of glucose to pyruvate occurs here.",
+     "The site of the Krebs cycle.",
+     "Stores the genetic material.",
+     "Packages and secretes proteins."
     ],
     "path": [
      "Biology",
@@ -228,19 +228,19 @@
     ]
    },
    "hi": {
-    "q": "सूत्रकणिका (माइटोकॉन्ड्रिया) के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. इनमें अपना वृत्ताकार DNA तथा 70S राइबोसोम पाए जाते हैं।\n2. इनकी आंतरिक झिल्ली अंदर की ओर मुड़कर क्रिस्टी बनाती है।\n3. ग्लाइकोलिसिस माइटोकॉन्ड्रिया के मैट्रिक्स में होता है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "कोशिका में ग्लाइकोलिसिस की क्रिया कहाँ होती है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "केवल 1 और 3",
-     "1, 2 और 3"
+     "कोशिकाद्रव्य",
+     "माइटोकॉन्ड्रिया का मैट्रिक्स",
+     "केंद्रक",
+     "गॉल्जी उपकरण"
     ],
-    "explanation": "माइटोकॉन्ड्रिया अर्ध-स्वायत्त कोशिकांग हैं: इनमें अपना वृत्ताकार DNA व 70S राइबोसोम होते हैं और आंतरिक झिल्ली क्रिस्टी बनाती है। ग्लाइकोलिसिस कोशिकाद्रव्य में होता है; मैट्रिक्स में क्रेब्स चक्र चलता है, अतः कथन 3 गलत है।",
+    "explanation": "ग्लाइकोलिसिस कोशिकाद्रव्य में होती है, जबकि क्रेब्स चक्र माइटोकॉन्ड्रिया के मैट्रिक्स में चलता है। माइटोकॉन्ड्रिया में अपना डीएनए एवं 70S राइबोसोम होते हैं।",
     "notes": [
-     "सही: कथन 1 और 2 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 3 असत्य है, क्योंकि ग्लाइकोलिसिस कोशिकाद्रव्य में होता है।",
-     "गलत: कथन 2 सत्य है और शामिल होना चाहिए; कथन 3 असत्य है।",
-     "गलत: ग्लाइकोलिसिस माइटोकॉन्ड्रिया में नहीं होता, अतः तीनों कथन सही नहीं हो सकते।"
+     "ग्लूकोज का पाइरुवेट में विघटन यहीं होता है।",
+     "यह क्रेब्स चक्र का स्थल है।",
+     "यह आनुवंशिक पदार्थ का भंडार है।",
+     "यह प्रोटीनों का संवेष्टन एवं स्रवण करता है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -266,20 +266,20 @@
   {
    "id": "sci-biology-005",
    "level": "TGT",
-   "answer": 2,
+   "answer": 0,
    "en": {
     "q": "Which one of the following cell organelles is NOT bounded by a membrane?",
     "options": [
-     "Lysosome",
-     "Peroxisome",
      "Ribosome",
+     "Peroxisome",
+     "Lysosome",
      "Golgi apparatus"
     ],
     "explanation": "Ribosomes are made of RNA and proteins and have no surrounding membrane. Lysosomes, peroxisomes and the Golgi apparatus are all membrane-bound organelles.",
     "notes": [
-     "Lysosome: bounded by a single membrane.",
-     "Peroxisome: bounded by a single membrane.",
      "Ribosome: non-membranous; made of rRNA and proteins; site of protein synthesis.",
+     "Peroxisome: bounded by a single membrane.",
+     "Lysosome: bounded by a single membrane.",
      "Golgi apparatus: stacks of membrane-bound flattened sacs (cisternae)."
     ],
     "path": [
@@ -296,16 +296,16 @@
    "hi": {
     "q": "निम्नलिखित में से कौन-सा कोशिकांग झिल्ली से घिरा हुआ नहीं होता है?",
     "options": [
-     "लाइसोसोम",
-     "परऑक्सीसोम",
      "राइबोसोम",
+     "परऑक्सीसोम",
+     "लाइसोसोम",
      "गॉल्जी उपकरण"
     ],
     "explanation": "राइबोसोम RNA और प्रोटीन से बने होते हैं और इनके चारों ओर कोई झिल्ली नहीं होती। लाइसोसोम, परऑक्सीसोम और गॉल्जी उपकरण झिल्लीबद्ध कोशिकांग हैं।",
     "notes": [
-     "लाइसोसोम: एकल झिल्ली से घिरा।",
-     "परऑक्सीसोम: एकल झिल्ली से घिरा।",
      "राइबोसोम: झिल्ली-रहित; rRNA और प्रोटीन से बना; प्रोटीन संश्लेषण का स्थल।",
+     "परऑक्सीसोम: एकल झिल्ली से घिरा।",
+     "लाइसोसोम: एकल झिल्ली से घिरा।",
      "गॉल्जी उपकरण: झिल्लीबद्ध चपटी थैलियों (सिस्टर्नी) का समूह।"
     ],
     "path": [
@@ -334,19 +334,19 @@
    "level": "PGT",
    "answer": 3,
    "en": {
-    "q": "Match List-I (Plastid) with List-II (Stored material/pigment) and select the correct answer using the codes given below the lists:\nList-I: A. Amyloplast B. Elaioplast C. Aleuroplast D. Chromoplast\nList-II: 1. Proteins 2. Starch 3. Carotenoid pigments 4. Oils and fats",
+    "q": "Plastids that store starch are called:",
     "options": [
-     "A-4, B-2, C-3, D-1",
-     "A-2, B-1, C-4, D-3",
-     "A-1, B-4, C-2, D-3",
-     "A-2, B-4, C-1, D-3"
+     "Elaioplasts",
+     "Aleuroplasts",
+     "Chromoplasts",
+     "Amyloplasts"
     ],
-    "explanation": "Amyloplasts store starch, elaioplasts store oils and fats, and aleuroplasts store proteins; all three are colourless leucoplasts. Chromoplasts contain fat-soluble carotenoid pigments that give yellow, orange or red colours.",
+    "explanation": "Amyloplasts store starch, elaioplasts store oils and aleuroplasts store proteins; all are leucoplasts. Chromoplasts contain carotenoid pigments.",
     "notes": [
-     "Wrong: amyloplasts store starch, not oils; chromoplasts hold pigments, not proteins.",
-     "Wrong: elaioplasts store oils and fats, and aleuroplasts store proteins, not the reverse.",
-     "Wrong: amyloplasts store starch and aleuroplasts store proteins.",
-     "Correct: A-2 (starch), B-4 (oils and fats), C-1 (proteins), D-3 (carotenoids)."
+     "Store oils and fats.",
+     "Store proteins.",
+     "Contain carotenoid pigments.",
+     "Colourless plastids that store starch."
     ],
     "path": [
      "Biology",
@@ -360,19 +360,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (लवक) को सूची-II (संचित पदार्थ/वर्णक) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. मंडलवक (एमाइलोप्लास्ट) B. तैललवक (इलायोप्लास्ट) C. प्रोटीनलवक (एल्यूरोप्लास्ट) D. वर्णीलवक (क्रोमोप्लास्ट)\nसूची-II: 1. प्रोटीन 2. मंड (स्टार्च) 3. कैरोटिनॉयड वर्णक 4. तेल एवं वसा",
+    "q": "स्टार्च का संचय करने वाले लवक क्या कहलाते हैं?",
     "options": [
-     "A-4, B-2, C-3, D-1",
-     "A-2, B-1, C-4, D-3",
-     "A-1, B-4, C-2, D-3",
-     "A-2, B-4, C-1, D-3"
+     "इलायोप्लास्ट",
+     "एल्यूरोप्लास्ट",
+     "वर्णीलवक (क्रोमोप्लास्ट)",
+     "एमाइलोप्लास्ट"
     ],
-    "explanation": "एमाइलोप्लास्ट मंड, इलायोप्लास्ट तेल-वसा तथा एल्यूरोप्लास्ट प्रोटीन संचित करते हैं; ये तीनों रंगहीन अवर्णीलवक हैं। वर्णीलवक में वसा-विलेय कैरोटिनॉयड वर्णक होते हैं, जो पीला, नारंगी या लाल रंग देते हैं।",
+    "explanation": "एमाइलोप्लास्ट स्टार्च का, इलायोप्लास्ट तेल का तथा एल्यूरोप्लास्ट प्रोटीन का संचय करते हैं; ये सभी अवर्णीलवक हैं। वर्णीलवकों में कैरोटिनॉइड वर्णक होते हैं।",
     "notes": [
-     "गलत: एमाइलोप्लास्ट मंड संचित करता है, तेल नहीं; वर्णीलवक में वर्णक होते हैं, प्रोटीन नहीं।",
-     "गलत: इलायोप्लास्ट तेल-वसा और एल्यूरोप्लास्ट प्रोटीन संचित करते हैं, इसका उल्टा नहीं।",
-     "गलत: एमाइलोप्लास्ट मंड और एल्यूरोप्लास्ट प्रोटीन संचित करते हैं।",
-     "सही: A-2 (मंड), B-4 (तेल-वसा), C-1 (प्रोटीन), D-3 (कैरोटिनॉयड)।"
+     "तेल एवं वसा का संचय करते हैं।",
+     "प्रोटीन का संचय करते हैं।",
+     "इनमें कैरोटिनॉइड वर्णक होते हैं।",
+     "स्टार्च का संचय करने वाले रंगहीन लवक।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -397,22 +397,22 @@
   },
   {
    "id": "sci-biology-007",
-   "level": "Higher",
-   "answer": 0,
+   "level": "TGT",
+   "answer": 1,
    "en": {
-    "q": "Assertion (A): When a living plant cell is placed in a hypertonic solution, its protoplast shrinks away from the cell wall.\nReason (R): In a hypertonic solution, water moves out of the cell by exosmosis.\nSelect the correct answer using the codes given below:",
+    "q": "The shrinking of the protoplast away from the cell wall when a plant cell is kept in a hypertonic solution is called:",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Imbibition",
+     "Plasmolysis",
+     "Deplasmolysis",
+     "Diffusion"
     ],
-    "explanation": "A hypertonic solution has a higher solute concentration than the cell sap, so water leaves the cell by exosmosis. The loss of water makes the protoplast contract away from the wall, a condition called plasmolysis; R therefore explains A.",
+    "explanation": "In a hypertonic solution water moves out of the cell by exosmosis, and the protoplast shrinks away from the wall. This is plasmolysis.",
     "notes": [
-     "Correct: exosmosis (R) is the direct cause of plasmolysis (A).",
-     "Wrong: R is not merely true alongside A; it is the cause of A.",
-     "Wrong: R is true; water does leave the cell in a hypertonic medium.",
-     "Wrong: A is true; the protoplast does shrink (plasmolysis)."
+     "The absorption of water by solids such as dry seeds.",
+     "Water leaves the cell by exosmosis and the protoplast contracts.",
+     "The recovery of a plasmolysed cell in water.",
+     "The movement of molecules from higher to lower concentration."
     ],
     "path": [
      "Biology",
@@ -426,19 +426,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): किसी जीवित पादप कोशिका को अतिपरासारी (हाइपरटोनिक) विलयन में रखने पर उसका जीवद्रव्य कोशिका भित्ति से सिकुड़कर अलग हो जाता है।\nकारण (R): अतिपरासारी विलयन में जल बहि:परासरण द्वारा कोशिका से बाहर निकलता है।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "पादप कोशिका को अतिपरासारी विलयन में रखने पर जीवद्रव्य का कोशिका भित्ति से सिकुड़कर अलग हो जाना क्या कहलाता है?",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "अंतःशोषण",
+     "जीवद्रव्यकुंचन",
+     "जीवद्रव्य विकुंचन",
+     "विसरण"
     ],
-    "explanation": "अतिपरासारी विलयन में विलेय की सांद्रता कोशिका रस से अधिक होती है, अतः जल बहि:परासरण द्वारा बाहर निकलता है। जल की हानि से जीवद्रव्य भित्ति से सिकुड़ जाता है, जिसे जीवद्रव्यकुंचन (प्लाज्मोलिसिस) कहते हैं; अतः (R), (A) की सही व्याख्या है।",
+    "explanation": "अतिपरासारी विलयन में जल बहिःपरासरण द्वारा कोशिका से बाहर निकलता है और जीवद्रव्य भित्ति से सिकुड़कर अलग हो जाता है। इसे जीवद्रव्यकुंचन कहते हैं।",
     "notes": [
-     "सही: बहि:परासरण (R) ही जीवद्रव्यकुंचन (A) का प्रत्यक्ष कारण है।",
-     "गलत: (R) केवल सत्य ही नहीं, बल्कि (A) का कारण भी है।",
-     "गलत: (R) सही है; अतिपरासारी माध्यम में जल कोशिका से बाहर जाता है।",
-     "गलत: (A) सही है; जीवद्रव्य वास्तव में सिकुड़ता है।"
+     "सूखे बीजों जैसे ठोस पदार्थों द्वारा जल का अवशोषण।",
+     "बहिःपरासरण से जल बाहर निकलता है और जीवद्रव्य सिकुड़ जाता है।",
+     "जल में रखने पर कुंचित कोशिका का पूर्व अवस्था में लौटना।",
+     "अणुओं का अधिक सांद्रता से कम सांद्रता की ओर जाना।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -463,22 +463,22 @@
   },
   {
    "id": "sci-biology-008",
-   "level": "PGT",
-   "answer": 1,
+   "level": "TGT",
+   "answer": 2,
    "en": {
-    "q": "Consider the following statements regarding prokaryotic cells:\n1. They lack a nucleus bounded by a nuclear membrane.\n2. Their ribosomes are of the 70S type.\n3. They lack membrane-bound organelles such as mitochondria.\n4. Their cell wall, where present, is made of cellulose.\nWhich of the statements given above are correct?",
+    "q": "The cell wall of bacteria is made up of:",
     "options": [
-     "1 and 2 only",
-     "1, 2 and 3 only",
-     "2, 3 and 4 only",
-     "1, 2, 3 and 4"
+     "Cellulose",
+     "Chitin",
+     "Peptidoglycan",
+     "Pectin"
     ],
-    "explanation": "Prokaryotes such as bacteria and cyanobacteria have a nucleoid without a nuclear membrane, 70S ribosomes and no membrane-bound organelles. Their cell wall is made of peptidoglycan (murein), not cellulose, so statement 4 is wrong.",
+    "explanation": "Prokaryotes such as bacteria have a cell wall of peptidoglycan, 70S ribosomes, a nucleoid and no membrane-bound organelles.",
     "notes": [
-     "Wrong: statement 3 is also true and is left out.",
-     "Correct: statements 1, 2 and 3 are true; statement 4 is false.",
-     "Wrong: statement 1 is true and statement 4 is false.",
-     "Wrong: the bacterial cell wall is made of peptidoglycan, not cellulose."
+     "Forms the cell wall of plants.",
+     "Forms the cell wall of most fungi.",
+     "Also called murein; forms the bacterial cell wall.",
+     "Found in the middle lamella of plant cells."
     ],
     "path": [
      "Biology",
@@ -491,19 +491,19 @@
     ]
    },
    "hi": {
-    "q": "प्रोकैरियोटी (असीमकेन्द्रकी) कोशिकाओं के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. इनमें केन्द्रकीय झिल्ली से घिरा केन्द्रक नहीं होता।\n2. इनके राइबोसोम 70S प्रकार के होते हैं।\n3. इनमें माइटोकॉन्ड्रिया जैसे झिल्लीबद्ध कोशिकांग नहीं होते।\n4. इनकी कोशिका भित्ति, जहाँ उपस्थित हो, सेलुलोस की बनी होती है।\nउपर्युक्त में से कौन-से कथन सही हैं?",
+    "q": "जीवाणुओं की कोशिका भित्ति किससे बनी होती है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 1, 2 और 3",
-     "केवल 2, 3 और 4",
-     "1, 2, 3 और 4"
+     "सेलुलोज",
+     "काइटिन",
+     "पेप्टिडोग्लाइकन",
+     "पेक्टिन"
     ],
-    "explanation": "जीवाणु और सायनोबैक्टीरिया जैसे प्रोकैरियोट में केन्द्रकीय झिल्ली-रहित न्यूक्लियॉइड, 70S राइबोसोम होते हैं और झिल्लीबद्ध कोशिकांग नहीं होते। इनकी कोशिका भित्ति पेप्टिडोग्लाइकन (म्यूरिन) की बनी होती है, सेलुलोस की नहीं; अतः कथन 4 गलत है।",
+    "explanation": "जीवाणु जैसे प्रोकैरियोट में पेप्टिडोग्लाइकन की कोशिका भित्ति, 70S राइबोसोम तथा केंद्रकाभ होता है और झिल्लीबद्ध कोशिकांग नहीं होते।",
     "notes": [
-     "गलत: कथन 3 भी सही है, जो इसमें छूट गया है।",
-     "सही: कथन 1, 2 और 3 सत्य हैं; कथन 4 असत्य है।",
-     "गलत: कथन 1 सही है और कथन 4 गलत है।",
-     "गलत: जीवाणु की कोशिका भित्ति पेप्टिडोग्लाइकन की होती है, सेलुलोस की नहीं।"
+     "इससे पादपों की कोशिका भित्ति बनती है।",
+     "इससे अधिकांश कवकों की कोशिका भित्ति बनती है।",
+     "इसे म्यूरीन भी कहते हैं; इससे जीवाणु की कोशिका भित्ति बनती है।",
+     "यह पादप कोशिकाओं की मध्य पटलिका में पाया जाता है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -600,19 +600,19 @@
    "level": "PGT",
    "answer": 1,
    "en": {
-    "q": "Consider the following statements:\n1. Meiosis produces four haploid daughter cells from one diploid cell.\n2. Crossing over takes place during prophase I of meiosis.\n3. The daughter cells formed by mitosis are genetically different from the parent cell.\nWhich of the statements given above is/are correct?",
+    "q": "Crossing over between homologous chromosomes takes place during:",
     "options": [
-     "1 only",
-     "1 and 2 only",
-     "2 and 3 only",
-     "1, 2 and 3"
+     "Prophase of mitosis",
+     "Prophase I of meiosis",
+     "Metaphase II of meiosis",
+     "Anaphase of mitosis"
     ],
-    "explanation": "Meiosis involves two successive divisions and gives four haploid cells; crossing over between homologous chromosomes occurs in the pachytene stage of prophase I. Mitosis produces two daughter cells genetically identical to the parent, so statement 3 is wrong.",
+    "explanation": "Crossing over occurs in prophase I of meiosis. Meiosis gives four haploid cells, while mitosis gives two cells identical to the parent.",
     "notes": [
-     "Wrong: statement 2 is also true.",
-     "Correct: statements 1 and 2 are true; statement 3 is false.",
-     "Wrong: statement 3 is false; mitosis is an equational division.",
-     "Wrong: mitotic daughter cells are identical to the parent cell."
+     "No crossing over occurs in mitosis.",
+     "It occurs in the pachytene stage of prophase I.",
+     "Chromosomes only align at the equator in this stage.",
+     "Chromatids separate in this stage."
     ],
     "path": [
      "Biology",
@@ -626,19 +626,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. अर्धसूत्री विभाजन (मियोसिस) द्वारा एक द्विगुणित कोशिका से चार अगुणित संतति कोशिकाएँ बनती हैं।\n2. जीन विनिमय (क्रॉसिंग ओवर) अर्धसूत्री विभाजन की प्रोफेज-I अवस्था में होता है।\n3. समसूत्री विभाजन (माइटोसिस) से बनी संतति कोशिकाएँ जनक कोशिका से आनुवंशिक रूप से भिन्न होती हैं।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "समजात गुणसूत्रों के बीच जीन विनिमय (क्रॉसिंग ओवर) कब होता है?",
     "options": [
-     "केवल 1",
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "1, 2 और 3"
+     "समसूत्री विभाजन की पूर्वावस्था में",
+     "अर्धसूत्री विभाजन की पूर्वावस्था-I में",
+     "अर्धसूत्री विभाजन की मध्यावस्था-II में",
+     "समसूत्री विभाजन की पश्चावस्था में"
     ],
-    "explanation": "अर्धसूत्री विभाजन में दो क्रमिक विभाजन होते हैं, जिनसे चार अगुणित कोशिकाएँ बनती हैं; समजात गुणसूत्रों के बीच जीन विनिमय प्रोफेज-I की पैकीटीन उप-अवस्था में होता है। समसूत्री विभाजन से बनी दो संतति कोशिकाएँ जनक कोशिका के समान होती हैं, अतः कथन 3 गलत है।",
+    "explanation": "जीन विनिमय अर्धसूत्री विभाजन की पूर्वावस्था-I में होता है। अर्धसूत्री विभाजन से चार अगुणित कोशिकाएँ तथा समसूत्री विभाजन से जनक के समान दो कोशिकाएँ बनती हैं।",
     "notes": [
-     "गलत: कथन 2 भी सही है।",
-     "सही: कथन 1 और 2 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 3 असत्य है; समसूत्री विभाजन समीकरणात्मक विभाजन है।",
-     "गलत: समसूत्री संतति कोशिकाएँ जनक कोशिका के समान होती हैं।"
+     "समसूत्री विभाजन में जीन विनिमय नहीं होता।",
+     "यह पूर्वावस्था-I की पैकीटीन अवस्था में होता है।",
+     "इस अवस्था में गुणसूत्र केवल मध्य रेखा पर व्यवस्थित होते हैं।",
+     "इस अवस्था में अर्धगुणसूत्र पृथक होते हैं।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -729,22 +729,22 @@
   },
   {
    "id": "sci-biology-012",
-   "level": "Higher",
-   "answer": 0,
+   "level": "TGT",
+   "answer": 3,
    "en": {
-    "q": "Arrange the following events in chronological order and select the correct answer from the codes given below:\n1. Rudolf Virchow's statement 'Omnis cellula-e cellula'\n2. Discovery of the nucleus by Robert Brown\n3. Observation of living cells by Antonie van Leeuwenhoek\n4. Cell theory of Schleiden and Schwann",
+    "q": "Who gave the statement 'Omnis cellula-e cellula', meaning that all cells arise from pre-existing cells?",
     "options": [
-     "3, 2, 4, 1",
-     "2, 3, 4, 1",
-     "3, 4, 2, 1",
-     "3, 2, 1, 4"
+     "Robert Brown",
+     "Matthias Schleiden",
+     "Theodor Schwann",
+     "Rudolf Virchow"
     ],
-    "explanation": "Leeuwenhoek observed living cells in 1674, Robert Brown discovered the nucleus in 1831, Schleiden (1838) and Schwann (1839) formulated the cell theory, and Virchow added 'Omnis cellula-e cellula' in 1855.",
+    "explanation": "Schleiden and Schwann formulated the cell theory, and Virchow added in 1855 that new cells arise from pre-existing cells.",
     "notes": [
-     "Correct: 1674 → 1831 → 1838–39 → 1855.",
-     "Wrong: Leeuwenhoek (1674) came long before Robert Brown (1831).",
-     "Wrong: the nucleus (1831) was discovered before the cell theory (1838–39).",
-     "Wrong: Virchow's statement (1855) came after the cell theory and completed it."
+     "Discovered the nucleus in 1831.",
+     "A botanist who helped to frame the cell theory in 1838.",
+     "A zoologist who helped to frame the cell theory in 1839.",
+     "Added this idea to the cell theory in 1855."
     ],
     "path": [
      "Biology",
@@ -758,19 +758,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित घटनाओं को कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. रुडोल्फ विर्चो का कथन 'ऑम्निस सेलुला-ई सेलुला'\n2. रॉबर्ट ब्राउन द्वारा केन्द्रक की खोज\n3. एंटोनी वॉन ल्यूवेनहॉक द्वारा जीवित कोशिकाओं का अवलोकन\n4. श्लाइडेन और श्वान का कोशिका सिद्धांत",
+    "q": "'ओमनिस सेलुला-ई सेलुला' अर्थात् सभी कोशिकाएँ पूर्ववर्ती कोशिकाओं से उत्पन्न होती हैं, यह कथन किसने दिया?",
     "options": [
-     "3, 2, 4, 1",
-     "2, 3, 4, 1",
-     "3, 4, 2, 1",
-     "3, 2, 1, 4"
+     "रॉबर्ट ब्राउन",
+     "मैथियास श्लाइडेन",
+     "थियोडोर श्वान",
+     "रुडोल्फ विरचो"
     ],
-    "explanation": "ल्यूवेनहॉक ने 1674 में जीवित कोशिकाएँ देखीं, रॉबर्ट ब्राउन ने 1831 में केन्द्रक खोजा, श्लाइडेन (1838) और श्वान (1839) ने कोशिका सिद्धांत दिया तथा विर्चो ने 1855 में 'ऑम्निस सेलुला-ई सेलुला' जोड़ा।",
+    "explanation": "श्लाइडेन एवं श्वान ने कोशिका सिद्धांत प्रतिपादित किया तथा विरचो ने 1855 में जोड़ा कि नई कोशिकाएँ पूर्ववर्ती कोशिकाओं से बनती हैं।",
     "notes": [
-     "सही: 1674 → 1831 → 1838–39 → 1855।",
-     "गलत: ल्यूवेनहॉक (1674) रॉबर्ट ब्राउन (1831) से बहुत पहले हुए।",
-     "गलत: केन्द्रक की खोज (1831) कोशिका सिद्धांत (1838–39) से पहले हुई।",
-     "गलत: विर्चो का कथन (1855) कोशिका सिद्धांत के बाद आया और उसे पूर्ण किया।"
+     "1831 में केंद्रक की खोज की।",
+     "वनस्पति विज्ञानी, जिन्होंने 1838 में कोशिका सिद्धांत के निर्माण में योगदान दिया।",
+     "प्राणी विज्ञानी, जिन्होंने 1839 में कोशिका सिद्धांत के निर्माण में योगदान दिया।",
+     "1855 में कोशिका सिद्धांत में यह विचार जोड़ा।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -800,21 +800,21 @@
   {
    "id": "sci-biology-013",
    "level": "PGT",
-   "answer": 2,
+   "answer": 1,
    "en": {
-    "q": "Which of the following pairs is/are correctly matched?\n1. Golgi apparatus – Packaging and secretion of proteins\n2. Rough endoplasmic reticulum – Synthesis of lipids and steroids\n3. Peroxisome – Breakdown of hydrogen peroxide\nSelect the correct answer using the codes given below:",
+    "q": "The synthesis of lipids and steroids in a cell is mainly the function of the:",
     "options": [
-     "1 only",
-     "2 and 3 only",
-     "1 and 3 only",
-     "1, 2 and 3"
+     "Rough endoplasmic reticulum",
+     "Smooth endoplasmic reticulum",
+     "Golgi apparatus",
+     "Peroxisome"
     ],
-    "explanation": "The Golgi apparatus modifies, packages and secretes proteins, and peroxisomes use catalase to break down hydrogen peroxide. Lipid and steroid synthesis is the job of the smooth ER; the rough ER, studded with ribosomes, makes proteins.",
+    "explanation": "The smooth ER synthesises lipids and steroids, the rough ER synthesises proteins, and the Golgi apparatus packages and secretes them.",
     "notes": [
-     "Wrong: pair 3 is also correctly matched.",
-     "Wrong: pair 2 is wrong because lipids are made by the smooth ER.",
-     "Correct: pairs 1 and 3 are correct; pair 2 is not.",
-     "Wrong: the rough ER synthesises proteins, not lipids."
+     "Studded with ribosomes; it synthesises proteins.",
+     "Makes lipids and steroids and detoxifies drugs in liver cells.",
+     "Modifies, packages and secretes proteins.",
+     "Breaks down hydrogen peroxide with catalase."
     ],
     "path": [
      "Biology",
@@ -828,19 +828,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित युग्मों में से कौन-सा/से सही सुमेलित है/हैं?\n1. गॉल्जी उपकरण – प्रोटीनों का संवेष्टन एवं स्रावण\n2. खुरदरी अन्तर्द्रव्यी जालिका – लिपिड एवं स्टेरॉयड का संश्लेषण\n3. परऑक्सीसोम – हाइड्रोजन परऑक्साइड का विघटन\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "कोशिका में लिपिड एवं स्टेरॉइड का संश्लेषण मुख्यतः किसका कार्य है?",
     "options": [
-     "केवल 1",
-     "केवल 2 और 3",
-     "केवल 1 और 3",
-     "1, 2 और 3"
+     "खुरदरी अंतर्द्रव्यी जालिका",
+     "चिकनी अंतर्द्रव्यी जालिका",
+     "गॉल्जी उपकरण",
+     "परऑक्सीसोम"
     ],
-    "explanation": "गॉल्जी उपकरण प्रोटीनों का रूपांतरण, संवेष्टन और स्रावण करता है तथा परऑक्सीसोम कैटालेज द्वारा हाइड्रोजन परऑक्साइड को तोड़ते हैं। लिपिड व स्टेरॉयड का संश्लेषण चिकनी अन्तर्द्रव्यी जालिका करती है; राइबोसोमयुक्त खुरदरी जालिका प्रोटीन बनाती है।",
+    "explanation": "चिकनी अंतर्द्रव्यी जालिका लिपिड एवं स्टेरॉइड का तथा खुरदरी अंतर्द्रव्यी जालिका प्रोटीन का संश्लेषण करती है; गॉल्जी उपकरण उनका संवेष्टन एवं स्रवण करता है।",
     "notes": [
-     "गलत: युग्म 3 भी सही सुमेलित है।",
-     "गलत: युग्म 2 गलत है, क्योंकि लिपिड चिकनी जालिका में बनते हैं।",
-     "सही: युग्म 1 और 3 सही हैं; युग्म 2 नहीं।",
-     "गलत: खुरदरी जालिका प्रोटीन बनाती है, लिपिड नहीं।"
+     "इस पर राइबोसोम लगे होते हैं; यह प्रोटीन संश्लेषण करती है।",
+     "लिपिड एवं स्टेरॉइड बनाती है तथा यकृत कोशिकाओं में औषधियों का निराविषीकरण करती है।",
+     "प्रोटीनों का रूपांतरण, संवेष्टन एवं स्रवण करता है।",
+     "कैटालेज द्वारा हाइड्रोजन परऑक्साइड का विघटन करता है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -865,22 +865,22 @@
   },
   {
    "id": "sci-biology-014",
-   "level": "Higher",
-   "answer": 3,
+   "level": "PGT",
+   "answer": 0,
    "en": {
-    "q": "Consider the following statements:\n1. The axoneme of eukaryotic cilia and flagella has a '9+2' arrangement of microtubules.\n2. A centriole has nine peripheral triplets of microtubules and no central microtubules.\n3. The basal body from which a cilium arises is structurally similar to a centriole.\nWhich of the statements given above is/are correct?",
+    "q": "The axoneme of eukaryotic cilia and flagella shows which arrangement of microtubules?",
     "options": [
-     "1 and 2 only",
-     "2 and 3 only",
-     "1 and 3 only",
-     "1, 2 and 3"
+     "9+2",
+     "9+0",
+     "9+1",
+     "8+2"
     ],
-    "explanation": "Eukaryotic cilia and flagella have nine peripheral doublets and a central pair of microtubules (9+2). Centrioles have a cartwheel of nine peripheral triplets with no central pair (9+0), and basal bodies share this centriole-like structure, so all three statements are correct.",
+    "explanation": "Cilia and flagella have a 9+2 arrangement of microtubules, while centrioles and basal bodies have nine peripheral triplets with no central pair (9+0).",
     "notes": [
-     "Wrong: statement 3 is also correct.",
-     "Wrong: statement 1 is also correct.",
-     "Wrong: statement 2 is also correct.",
-     "Correct: all three statements are true."
+     "Nine peripheral doublets and a central pair.",
+     "This is the arrangement in centrioles and basal bodies.",
+     "Not the arrangement in the axoneme of typical cilia and flagella.",
+     "Not the arrangement in the axoneme of typical cilia and flagella."
     ],
     "path": [
      "Biology",
@@ -894,19 +894,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. यूकैरियोटी पक्ष्माभ (सिलिया) और कशाभ (फ्लैजेला) के अक्षसूत्र (एक्सोनीम) में सूक्ष्मनलिकाओं की '9+2' व्यवस्था होती है।\n2. तारककेन्द्र (सेंट्रिओल) में सूक्ष्मनलिकाओं के नौ परिधीय त्रिक होते हैं तथा केन्द्रीय सूक्ष्मनलिकाएँ नहीं होतीं।\n3. जिस आधारकाय से पक्ष्माभ निकलता है, उसकी संरचना तारककेन्द्र के समान होती है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "यूकैरियोटिक पक्ष्माभ एवं कशाभिका के अक्षसूत्र में सूक्ष्मनलिकाओं की कौन-सी व्यवस्था होती है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "केवल 1 और 3",
-     "1, 2 और 3"
+     "9+2",
+     "9+0",
+     "9+1",
+     "8+2"
     ],
-    "explanation": "यूकैरियोटी पक्ष्माभ व कशाभ में नौ परिधीय द्विक और एक केन्द्रीय युग्म सूक्ष्मनलिकाएँ (9+2) होती हैं। तारककेन्द्र में नौ परिधीय त्रिकों की 'कार्टव्हील' संरचना होती है, केन्द्रीय युग्म नहीं (9+0); आधारकाय की संरचना भी ऐसी ही होती है, अतः तीनों कथन सही हैं।",
+    "explanation": "पक्ष्माभ एवं कशाभिका में सूक्ष्मनलिकाओं की 9+2 व्यवस्था होती है, जबकि तारककाय एवं आधारकाय में नौ परिधीय त्रिक होते हैं और केंद्रीय युग्म नहीं होता (9+0)।",
     "notes": [
-     "गलत: कथन 3 भी सही है।",
-     "गलत: कथन 1 भी सही है।",
-     "गलत: कथन 2 भी सही है।",
-     "सही: तीनों कथन सत्य हैं।"
+     "नौ परिधीय द्विक तथा एक केंद्रीय युग्म।",
+     "यह तारककाय एवं आधारकाय की व्यवस्था है।",
+     "सामान्य पक्ष्माभ एवं कशाभिका के अक्षसूत्र में यह व्यवस्था नहीं होती।",
+     "सामान्य पक्ष्माभ एवं कशाभिका के अक्षसूत्र में यह व्यवस्था नहीं होती।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -994,21 +994,21 @@
   {
    "id": "sci-biology-016",
    "level": "PGT",
-   "answer": 0,
+   "answer": 3,
    "en": {
-    "q": "Consider the following statements about the vascular tissues of angiosperms:\n1. Xylem parenchyma is the only living component of xylem.\n2. Phloem fibres are the only dead component of phloem.\n3. Mature sieve tube elements possess a large nucleus.\nWhich of the statements given above is/are correct?",
+    "q": "Which is the only living component of xylem?",
     "options": [
-     "1 and 2 only",
-     "2 and 3 only",
-     "1 only",
-     "1, 2 and 3"
+     "Tracheids",
+     "Vessels",
+     "Xylem fibres",
+     "Xylem parenchyma"
     ],
-    "explanation": "Tracheids, vessels and xylem fibres are dead, leaving xylem parenchyma as the only living xylem element; in phloem, only the fibres are dead at maturity. A mature sieve tube element lacks a nucleus and is controlled by its companion cell, so statement 3 is wrong.",
+    "explanation": "In xylem, tracheids, vessels and fibres are dead and only xylem parenchyma is living. In phloem only the fibres are dead.",
     "notes": [
-     "Correct: statements 1 and 2 are true; statement 3 is false.",
-     "Wrong: statement 3 is false; mature sieve tubes are enucleate.",
-     "Wrong: statement 2 is also true.",
-     "Wrong: sieve tube elements lose their nucleus at maturity."
+     "Dead cells that conduct water.",
+     "Dead tubes that conduct water.",
+     "Dead cells that give mechanical support.",
+     "Living cells that store food."
     ],
     "path": [
      "Biology",
@@ -1022,19 +1022,19 @@
     ]
    },
    "hi": {
-    "q": "आवृतबीजियों के संवहन ऊतकों के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. जाइलम मृदूतक, जाइलम का एकमात्र जीवित घटक है।\n2. फ्लोएम रेशे, फ्लोएम का एकमात्र मृत घटक हैं।\n3. परिपक्व चालनी नलिका तत्वों में एक बड़ा केन्द्रक होता है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "जाइलम का एकमात्र जीवित घटक कौन-सा है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "केवल 1",
-     "1, 2 और 3"
+     "वाहिनिकाएँ",
+     "वाहिकाएँ",
+     "जाइलम तंतु",
+     "जाइलम मृदूतक"
     ],
-    "explanation": "वाहिनिकाएँ, वाहिकाएँ और जाइलम रेशे मृत होते हैं, अतः जाइलम मृदूतक ही जाइलम का एकमात्र जीवित तत्व है; फ्लोएम में केवल रेशे परिपक्व होने पर मृत होते हैं। परिपक्व चालनी नलिका में केन्द्रक नहीं होता, उसका नियंत्रण सहचर कोशिका करती है; अतः कथन 3 गलत है।",
+    "explanation": "जाइलम में वाहिनिकाएँ, वाहिकाएँ एवं तंतु मृत होते हैं और केवल जाइलम मृदूतक जीवित होता है। फ्लोएम में केवल तंतु मृत होते हैं।",
     "notes": [
-     "सही: कथन 1 और 2 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 3 असत्य है; परिपक्व चालनी नलिकाएँ केन्द्रक-रहित होती हैं।",
-     "गलत: कथन 2 भी सही है।",
-     "गलत: चालनी नलिका तत्व परिपक्व होने पर केन्द्रक खो देते हैं।"
+     "जल का संवहन करने वाली मृत कोशिकाएँ।",
+     "जल का संवहन करने वाली मृत नलिकाएँ।",
+     "यांत्रिक सहारा देने वाली मृत कोशिकाएँ।",
+     "भोजन का संचय करने वाली जीवित कोशिकाएँ।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -1191,22 +1191,22 @@
   },
   {
    "id": "sci-biology-019",
-   "level": "PGT",
-   "answer": 2,
+   "level": "TGT",
+   "answer": 1,
    "en": {
-    "q": "Match List-I (Plant tissue) with List-II (Feature) and select the correct answer using the codes given below the lists:\nList-I: A. Parenchyma B. Collenchyma C. Sclerenchyma D. Cork (phellem)\nList-II: 1. Living cells with walls thickened at the corners 2. Dead cells with lignified walls 3. Living thin-walled cells that store food 4. Dead cells with suberised walls",
+    "q": "Which plant tissue consists of living cells with walls thickened at the corners?",
     "options": [
-     "A-1, B-3, C-4, D-2",
-     "A-3, B-2, C-1, D-4",
-     "A-3, B-1, C-2, D-4",
-     "A-4, B-1, C-2, D-3"
+     "Parenchyma",
+     "Collenchyma",
+     "Sclerenchyma",
+     "Cork"
     ],
-    "explanation": "Parenchyma consists of living thin-walled storage cells; collenchyma cells are living with pectin-rich thickening at the corners; sclerenchyma cells are dead with lignified walls; cork cells are dead and their walls carry suberin, which makes them impervious to water and gases.",
+    "explanation": "Collenchyma has living cells thickened at the corners. Parenchyma stores food, sclerenchyma is dead and lignified, and cork cells are dead and suberised.",
     "notes": [
-     "Wrong: corner thickening belongs to collenchyma, not parenchyma.",
-     "Wrong: collenchyma is living, while lignified dead cells form sclerenchyma.",
-     "Correct: A-3, B-1, C-2, D-4.",
-     "Wrong: suberised dead cells are cork, not parenchyma."
+     "Living thin-walled cells that store food.",
+     "Gives support with flexibility, as in leaf stalks.",
+     "Dead cells with lignified walls.",
+     "Dead cells with suberised walls."
     ],
     "path": [
      "Biology",
@@ -1220,19 +1220,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (पादप ऊतक) को सूची-II (विशेषता) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. मृदूतक B. स्थूलकोण ऊतक C. दृढ़ोतक D. काग (फेलम)\nसूची-II: 1. कोनों पर मोटी भित्ति वाली जीवित कोशिकाएँ 2. लिग्नित भित्ति वाली मृत कोशिकाएँ 3. भोजन संचित करने वाली पतली भित्ति की जीवित कोशिकाएँ 4. सुबेरिन युक्त भित्ति वाली मृत कोशिकाएँ",
+    "q": "किस पादप ऊतक की कोशिकाएँ जीवित होती हैं और उनकी भित्तियाँ कोनों पर मोटी होती हैं?",
     "options": [
-     "A-1, B-3, C-4, D-2",
-     "A-3, B-2, C-1, D-4",
-     "A-3, B-1, C-2, D-4",
-     "A-4, B-1, C-2, D-3"
+     "मृदूतक",
+     "स्थूलकोण ऊतक",
+     "दृढ़ ऊतक",
+     "कॉर्क"
     ],
-    "explanation": "मृदूतक पतली भित्ति वाली जीवित संचयी कोशिकाओं से बनता है; स्थूलकोण ऊतक की जीवित कोशिकाओं के कोनों पर पेक्टिन युक्त स्थूलन होता है; दृढ़ोतक कोशिकाएँ मृत व लिग्नित होती हैं; काग कोशिकाएँ मृत होती हैं और उनकी भित्ति पर सुबेरिन होता है, जिससे वे जल व गैसों के लिए अपारगम्य होती हैं।",
+    "explanation": "स्थूलकोण ऊतक की कोशिकाएँ जीवित एवं कोनों पर मोटी होती हैं। मृदूतक भोजन का संचय करता है, दृढ़ ऊतक मृत एवं लिग्निनयुक्त होता है तथा कॉर्क की कोशिकाएँ मृत एवं सुबेरिनयुक्त होती हैं।",
     "notes": [
-     "गलत: कोनों पर स्थूलन स्थूलकोण ऊतक का गुण है, मृदूतक का नहीं।",
-     "गलत: स्थूलकोण ऊतक जीवित होता है; लिग्नित मृत कोशिकाएँ दृढ़ोतक बनाती हैं।",
-     "सही: A-3, B-1, C-2, D-4।",
-     "गलत: सुबेरिन युक्त मृत कोशिकाएँ काग हैं, मृदूतक नहीं।"
+     "भोजन का संचय करने वाली पतली भित्ति की जीवित कोशिकाएँ।",
+     "पर्णवृंत जैसे भागों को लचीलेपन के साथ सहारा देता है।",
+     "लिग्निनयुक्त भित्ति वाली मृत कोशिकाएँ।",
+     "सुबेरिनयुक्त भित्ति वाली मृत कोशिकाएँ।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -1261,22 +1261,22 @@
   },
   {
    "id": "sci-biology-020",
-   "level": "Higher",
-   "answer": 1,
+   "level": "PGT",
+   "answer": 2,
    "en": {
-    "q": "Assertion (A): Cardiac muscles contract and relax rhythmically throughout life without getting fatigued.\nReason (R): Cardiac muscle fibres are branched and usually uninucleate.\nSelect the correct answer using the codes given below:",
+    "q": "Cardiac muscles are:",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Striated and voluntary",
+     "Unstriated and voluntary",
+     "Striated and involuntary",
+     "Unstriated and involuntary"
     ],
-    "explanation": "Both statements are true. Cardiac muscle resists fatigue because of its abundant mitochondria, rich blood supply and aerobic metabolism; its branched, uninucleate fibres are a structural feature that does not explain this property.",
+    "explanation": "Cardiac muscle is striated but involuntary. Its branched fibres contract rhythmically throughout life without fatigue.",
     "notes": [
-     "Wrong: branching and a single nucleus do not explain fatigue resistance.",
-     "Correct: both are true, but R is not the reason for A.",
-     "Wrong: R is true; cardiac fibres are branched and mostly uninucleate.",
-     "Wrong: A is true; the heart beats lifelong without fatigue."
+     "This describes skeletal muscles.",
+     "No muscle type is of this kind.",
+     "They show striations but are not under the control of the will.",
+     "This describes smooth muscles."
     ],
     "path": [
      "Biology",
@@ -1290,19 +1290,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): हृद पेशियाँ जीवन भर बिना थके लयबद्ध रूप से संकुचित और शिथिल होती रहती हैं।\nकारण (R): हृद पेशी तंतु शाखित और प्रायः एककेन्द्रकीय होते हैं।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "हृद पेशियाँ किस प्रकार की होती हैं?",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "रेखित एवं ऐच्छिक",
+     "अरेखित एवं ऐच्छिक",
+     "रेखित एवं अनैच्छिक",
+     "अरेखित एवं अनैच्छिक"
     ],
-    "explanation": "दोनों कथन सही हैं। हृद पेशी अधिक संख्या में माइटोकॉन्ड्रिया, प्रचुर रक्त आपूर्ति और ऑक्सी-श्वसन के कारण नहीं थकती; इसके तंतुओं का शाखित व एककेन्द्रकीय होना केवल एक संरचनात्मक लक्षण है, जो इस गुण की व्याख्या नहीं करता।",
+    "explanation": "हृद पेशी रेखित, किंतु अनैच्छिक होती है। इसके शाखित तंतु जीवन भर बिना थके लयबद्ध संकुचन करते रहते हैं।",
     "notes": [
-     "गलत: शाखित होना और एक केन्द्रक होना थकान-रोधिता का कारण नहीं है।",
-     "सही: दोनों कथन सत्य हैं, परंतु (R), (A) का कारण नहीं है।",
-     "गलत: (R) सही है; हृद तंतु शाखित और प्रायः एककेन्द्रकीय होते हैं।",
-     "गलत: (A) सही है; हृदय जीवन भर बिना थके धड़कता है।"
+     "यह कंकाल पेशियों का वर्णन है।",
+     "इस प्रकार की कोई पेशी नहीं होती।",
+     "इनमें धारियाँ होती हैं, किंतु ये इच्छा के नियंत्रण में नहीं होतीं।",
+     "यह चिकनी पेशियों का वर्णन है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -1397,21 +1397,21 @@
   {
    "id": "sci-biology-022",
    "level": "PGT",
-   "answer": 2,
+   "answer": 1,
    "en": {
-    "q": "Which of the following pairs are correctly matched?\n1. Simple squamous epithelium – Lining of lung alveoli\n2. Ciliated epithelium – Inner lining of the trachea\n3. Stratified squamous epithelium – Skin\n4. Columnar epithelium – Lining of kidney tubules\nSelect the correct answer using the codes given below:",
+    "q": "The tubules of the kidney are lined by which type of epithelium?",
     "options": [
-     "1 and 2 only",
-     "2 and 3 only",
-     "1, 2 and 3 only",
-     "1, 2, 3 and 4"
+     "Squamous epithelium",
+     "Cuboidal epithelium",
+     "Columnar epithelium",
+     "Ciliated epithelium"
     ],
-    "explanation": "Simple squamous epithelium lines the alveoli and blood vessels, ciliated epithelium lines the respiratory tract, and stratified squamous epithelium forms the skin. Kidney tubules and ducts of salivary glands are lined by cuboidal epithelium, not columnar, so pair 4 is wrong.",
+    "explanation": "Kidney tubules are lined by cuboidal epithelium, lung alveoli by simple squamous epithelium and the respiratory tract by ciliated epithelium.",
     "notes": [
-     "Wrong: pair 3 (stratified squamous – skin) is also correct.",
-     "Wrong: pair 1 (squamous – alveoli) is also correct.",
-     "Correct: pairs 1, 2 and 3 are correct; pair 4 is not.",
-     "Wrong: kidney tubules are lined by cuboidal epithelium."
+     "Lines the alveoli of the lungs and the blood vessels.",
+     "Lines kidney tubules and the ducts of salivary glands.",
+     "Lines the stomach and the intestine.",
+     "Lines the trachea."
     ],
     "path": [
      "Biology",
@@ -1425,19 +1425,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित में से कौन-से युग्म सही सुमेलित हैं?\n1. सरल शल्की उपकला – फेफड़ों की कूपिकाओं का अस्तर\n2. पक्ष्माभी उपकला – श्वासनली का आंतरिक अस्तर\n3. स्तरित शल्की उपकला – त्वचा\n4. स्तंभाकार उपकला – वृक्क नलिकाओं का अस्तर\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "वृक्क नलिकाओं का आस्तर किस प्रकार की उपकला से बना होता है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "केवल 1, 2 और 3",
-     "1, 2, 3 और 4"
+     "शल्की उपकला",
+     "घनाकार उपकला",
+     "स्तंभाकार उपकला",
+     "पक्ष्माभी उपकला"
     ],
-    "explanation": "सरल शल्की उपकला कूपिकाओं व रक्त वाहिकाओं का अस्तर बनाती है, पक्ष्माभी उपकला श्वसन मार्ग में पाई जाती है और स्तरित शल्की उपकला त्वचा बनाती है। वृक्क नलिकाओं व लार ग्रंथियों की वाहिनियों में घनाकार उपकला होती है, स्तंभाकार नहीं; अतः युग्म 4 गलत है।",
+    "explanation": "वृक्क नलिकाओं का आस्तर घनाकार उपकला से, फेफड़ों की कूपिकाओं का सरल शल्की उपकला से तथा श्वसन पथ का पक्ष्माभी उपकला से बना होता है।",
     "notes": [
-     "गलत: युग्म 3 (स्तरित शल्की – त्वचा) भी सही है।",
-     "गलत: युग्म 1 (शल्की – कूपिकाएँ) भी सही है।",
-     "सही: युग्म 1, 2 और 3 सही हैं; युग्म 4 नहीं।",
-     "गलत: वृक्क नलिकाओं में घनाकार उपकला होती है।"
+     "फेफड़ों की कूपिकाओं एवं रक्त वाहिकाओं का आस्तर बनाती है।",
+     "वृक्क नलिकाओं एवं लार ग्रंथियों की वाहिनियों का आस्तर बनाती है।",
+     "आमाशय एवं आँत का आस्तर बनाती है।",
+     "श्वासनली का आस्तर बनाती है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -1594,22 +1594,22 @@
   },
   {
    "id": "sci-biology-025",
-   "level": "PGT",
-   "answer": 3,
+   "level": "TGT",
+   "answer": 0,
    "en": {
-    "q": "Consider the following statements about annual rings in trees:\n1. They are formed due to the activity of the vascular cambium.\n2. Each annual ring consists of spring (early) wood and autumn (late) wood.\n3. Counting annual rings to estimate the age of a tree is called dendrochronology.\nWhich of the statements given above is/are correct?",
+    "q": "The study of the annual rings of trees to determine their age is called:",
     "options": [
-     "1 only",
-     "1 and 2 only",
-     "2 and 3 only",
-     "1, 2 and 3"
+     "Dendrochronology",
+     "Palynology",
+     "Pomology",
+     "Phenology"
     ],
-    "explanation": "The vascular cambium forms wide, light spring wood and narrow, dark autumn wood each year; together they make one annual ring. Counting these rings to find the age of a tree is called dendrochronology, so all three statements are correct.",
+    "explanation": "Each annual ring, formed by the vascular cambium, consists of spring wood and autumn wood. Counting the rings to find the age is dendrochronology.",
     "notes": [
-     "Wrong: statements 2 and 3 are also correct.",
-     "Wrong: statement 3 is also correct.",
-     "Wrong: statement 1 is also correct.",
-     "Correct: all three statements are true."
+     "Counting annual rings gives the age of a tree.",
+     "The study of pollen grains.",
+     "The study of fruits.",
+     "The study of seasonal events in the life of organisms."
     ],
     "path": [
      "Biology",
@@ -1623,19 +1623,19 @@
     ]
    },
    "hi": {
-    "q": "वृक्षों के वार्षिक वलयों के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. ये संवहन एधा की सक्रियता के कारण बनते हैं।\n2. प्रत्येक वार्षिक वलय में वसंत (प्रारंभिक) दारु और शरद (पश्च) दारु होती है।\n3. वार्षिक वलयों की गणना द्वारा वृक्ष की आयु ज्ञात करने को डेंड्रोक्रोनोलॉजी कहते हैं।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "वृक्षों की आयु ज्ञात करने के लिए उनके वार्षिक वलयों का अध्ययन क्या कहलाता है?",
     "options": [
-     "केवल 1",
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "1, 2 और 3"
+     "डेंड्रोक्रोनोलॉजी",
+     "पैलिनोलॉजी",
+     "पोमोलॉजी",
+     "फीनोलॉजी"
     ],
-    "explanation": "संवहन एधा प्रत्येक वर्ष चौड़ी, हल्की वसंत दारु और संकरी, गहरी शरद दारु बनाती है; दोनों मिलकर एक वार्षिक वलय बनाते हैं। इन वलयों की गणना से वृक्ष की आयु ज्ञात करना डेंड्रोक्रोनोलॉजी कहलाता है, अतः तीनों कथन सही हैं।",
+    "explanation": "संवहन एधा द्वारा निर्मित प्रत्येक वार्षिक वलय में वसंत काष्ठ एवं शरद काष्ठ होती है। वलयों की गणना से आयु ज्ञात करना डेंड्रोक्रोनोलॉजी कहलाता है।",
     "notes": [
-     "गलत: कथन 2 और 3 भी सही हैं।",
-     "गलत: कथन 3 भी सही है।",
-     "गलत: कथन 1 भी सही है।",
-     "सही: तीनों कथन सत्य हैं।"
+     "वार्षिक वलयों की गणना से वृक्ष की आयु ज्ञात होती है।",
+     "परागकणों का अध्ययन।",
+     "फलों का अध्ययन।",
+     "जीवों के जीवन की ऋतुकालिक घटनाओं का अध्ययन।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -1724,22 +1724,22 @@
   },
   {
    "id": "sci-biology-027",
-   "level": "Higher",
-   "answer": 1,
+   "level": "PGT",
+   "answer": 2,
    "en": {
-    "q": "Which of the following pairs are correctly matched?\n1. Wilhelm Waldeyer – Coined the term 'chromosome'\n2. Carl Benda – Coined the term 'mitochondrion'\n3. Robert Brown – Discovered the ribosome\n4. Christian de Duve – Discovered the lysosome\nSelect the correct answer using the codes given below:",
+    "q": "Who coined the term 'chromosome' in 1888?",
     "options": [
-     "1 and 2 only",
-     "1, 2 and 4 only",
-     "2, 3 and 4 only",
-     "1, 3 and 4 only"
+     "Carl Benda",
+     "George Palade",
+     "Wilhelm Waldeyer",
+     "Christian de Duve"
     ],
-    "explanation": "Waldeyer coined 'chromosome' in 1888, Benda named mitochondria in 1898, and de Duve discovered lysosomes in 1955. Robert Brown discovered the nucleus (1831); ribosomes were first observed by George Palade, so pair 3 is wrong.",
+    "explanation": "Waldeyer coined 'chromosome', Benda named mitochondria, Palade observed ribosomes and de Duve discovered lysosomes.",
     "notes": [
-     "Wrong: pair 4 (de Duve – lysosome) is also correct.",
-     "Correct: pairs 1, 2 and 4 are correct.",
-     "Wrong: pair 3 is wrong and pair 1 is correct.",
-     "Wrong: pair 2 is correct and pair 3 is wrong."
+     "Coined the term 'mitochondrion' in 1898.",
+     "First observed ribosomes.",
+     "Coined the term 'chromosome'.",
+     "Discovered lysosomes in 1955."
     ],
     "path": [
      "Biology",
@@ -1753,19 +1753,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित में से कौन-से युग्म सही सुमेलित हैं?\n1. विल्हेम वाल्डेयर – 'गुणसूत्र' (क्रोमोसोम) शब्द दिया\n2. कार्ल बेंडा – 'माइटोकॉन्ड्रिया' शब्द दिया\n3. रॉबर्ट ब्राउन – राइबोसोम की खोज\n4. क्रिश्चियन डी डुवे – लाइसोसोम की खोज\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "1888 में 'क्रोमोसोम' (गुणसूत्र) शब्द किसने दिया?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 1, 2 और 4",
-     "केवल 2, 3 और 4",
-     "केवल 1, 3 और 4"
+     "कार्ल बेंडा",
+     "जॉर्ज पैलेड",
+     "विल्हेल्म वाल्डेयर",
+     "क्रिश्चियन डी डुवे"
     ],
-    "explanation": "वाल्डेयर ने 1888 में 'गुणसूत्र' शब्द दिया, बेंडा ने 1898 में माइटोकॉन्ड्रिया नाम दिया और डी डुवे ने 1955 में लाइसोसोम की खोज की। रॉबर्ट ब्राउन ने केन्द्रक (1831) खोजा था; राइबोसोम सर्वप्रथम जॉर्ज पैलेड ने देखे, अतः युग्म 3 गलत है।",
+    "explanation": "वाल्डेयर ने 'क्रोमोसोम' शब्द दिया, बेंडा ने माइटोकॉन्ड्रिया का नामकरण किया, पैलेड ने राइबोसोम देखे तथा डी डुवे ने लाइसोसोम की खोज की।",
     "notes": [
-     "गलत: युग्म 4 (डी डुवे – लाइसोसोम) भी सही है।",
-     "सही: युग्म 1, 2 और 4 सही हैं।",
-     "गलत: युग्म 3 गलत है और युग्म 1 सही है।",
-     "गलत: युग्म 2 सही है और युग्म 3 गलत है।"
+     "1898 में 'माइटोकॉन्ड्रिया' शब्द दिया।",
+     "सर्वप्रथम राइबोसोम देखे।",
+     "'क्रोमोसोम' शब्द दिया।",
+     "1955 में लाइसोसोम की खोज की।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -1918,22 +1918,22 @@
   },
   {
    "id": "sci-biology-030",
-   "level": "Higher",
+   "level": "PGT",
    "answer": 3,
    "en": {
-    "q": "Arrange the following systems of biological classification in the chronological order in which they were proposed and select the correct answer from the codes given below:\n1. Five-kingdom classification\n2. Two-kingdom classification\n3. Three-domain system\n4. Three-kingdom classification with a separate kingdom Protista",
+    "q": "Who proposed the three-domain system of classification in 1990?",
     "options": [
-     "4, 2, 1, 3",
-     "2, 1, 4, 3",
-     "2, 4, 3, 1",
-     "2, 4, 1, 3"
+     "Carolus Linnaeus",
+     "Ernst Haeckel",
+     "R.H. Whittaker",
+     "Carl Woese"
     ],
-    "explanation": "Linnaeus divided organisms into two kingdoms in the 18th century, Haeckel added Protista in 1866, Whittaker proposed five kingdoms in 1969, and Carl Woese proposed the three domains in 1990.",
+    "explanation": "Linnaeus gave two kingdoms, Haeckel three, Whittaker five (1969) and Carl Woese the three-domain system (1990).",
     "notes": [
-     "Wrong: Linnaeus's two-kingdom system (18th century) came before Haeckel (1866).",
-     "Wrong: Haeckel's three kingdoms (1866) came before Whittaker's five (1969).",
-     "Wrong: the three-domain system (1990) is later than the five-kingdom system (1969).",
-     "Correct: two-kingdom → three-kingdom (1866) → five-kingdom (1969) → three-domain (1990)."
+     "Gave the two-kingdom classification.",
+     "Added the kingdom Protista in 1866.",
+     "Gave the five-kingdom classification in 1969.",
+     "Based the three domains on differences in ribosomal RNA."
     ],
     "path": [
      "Biology",
@@ -1946,19 +1946,19 @@
     ]
    },
    "hi": {
-    "q": "जैविक वर्गीकरण की निम्नलिखित पद्धतियों को उनके प्रस्तावित होने के कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. पाँच-जगत वर्गीकरण\n2. दो-जगत वर्गीकरण\n3. तीन-डोमेन पद्धति\n4. पृथक प्रोटिस्टा जगत सहित तीन-जगत वर्गीकरण",
+    "q": "1990 में वर्गीकरण की त्रि-डोमेन पद्धति किसने प्रस्तावित की?",
     "options": [
-     "4, 2, 1, 3",
-     "2, 1, 4, 3",
-     "2, 4, 3, 1",
-     "2, 4, 1, 3"
+     "कैरोलस लीनियस",
+     "अर्न्स्ट हेकल",
+     "आर.एच. व्हिटेकर",
+     "कार्ल वूज"
     ],
-    "explanation": "लीनियस ने 18वीं शताब्दी में जीवों को दो जगतों में बाँटा, हेकेल ने 1866 में प्रोटिस्टा जोड़ा, व्हिटेकर ने 1969 में पाँच जगत प्रस्तावित किए और कार्ल वोज़ ने 1990 में तीन डोमेन प्रस्तावित किए।",
+    "explanation": "लीनियस ने दो जगत, हेकल ने तीन जगत, व्हिटेकर ने पाँच जगत (1969) तथा कार्ल वूज ने त्रि-डोमेन पद्धति (1990) दी।",
     "notes": [
-     "गलत: लीनियस की दो-जगत पद्धति (18वीं शताब्दी) हेकेल (1866) से पहले आई।",
-     "गलत: हेकेल के तीन जगत (1866) व्हिटेकर के पाँच जगत (1969) से पहले आए।",
-     "गलत: तीन-डोमेन पद्धति (1990) पाँच-जगत पद्धति (1969) के बाद आई।",
-     "सही: दो-जगत → तीन-जगत (1866) → पाँच-जगत (1969) → तीन-डोमेन (1990)।"
+     "द्वि-जगत वर्गीकरण दिया।",
+     "1866 में प्रोटिस्टा जगत जोड़ा।",
+     "1969 में पाँच जगत वर्गीकरण दिया।",
+     "राइबोसोमी आरएनए के अंतर के आधार पर तीन डोमेन बनाए।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -1985,19 +1985,19 @@
    "level": "PGT",
    "answer": 0,
    "en": {
-    "q": "Consider the following statements regarding binomial nomenclature:\n1. It was popularised by Carolus Linnaeus.\n2. The first word of a scientific name denotes the genus and begins with a capital letter.\n3. The specific epithet also begins with a capital letter.\n4. When handwritten, the two words of a scientific name are underlined separately.\nWhich of the statements given above are correct?",
+    "q": "In the scientific name Mangifera indica, the word 'indica' is the:",
     "options": [
-     "1, 2 and 4 only",
-     "1 and 3 only",
-     "2, 3 and 4 only",
-     "1, 2, 3 and 4"
+     "Specific epithet",
+     "Generic name",
+     "Family name",
+     "Common name"
     ],
-    "explanation": "Under the system given by Linnaeus, the generic name begins with a capital letter and the specific epithet with a small letter, as in Mangifera indica. Printed names are italicised and handwritten names have each word underlined separately; statement 3 is therefore wrong.",
+    "explanation": "In binomial nomenclature, popularised by Linnaeus, the first word is the genus and the second the specific epithet. Handwritten names are underlined separately.",
     "notes": [
-     "Correct: statements 1, 2 and 4 are true; statement 3 is false.",
-     "Wrong: statement 3 is false and statements 2 and 4 are true.",
-     "Wrong: statement 1 is true and statement 3 is false.",
-     "Wrong: the specific epithet begins with a small letter, so statement 3 is false."
+     "The second word; it begins with a small letter.",
+     "'Mangifera' is the generic name and begins with a capital letter.",
+     "The family is not part of a binomial name.",
+     "The common name is 'mango'."
     ],
     "path": [
      "Biology",
@@ -2010,19 +2010,19 @@
     ]
    },
    "hi": {
-    "q": "द्विनाम पद्धति के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. इसे कैरोलस लीनियस ने प्रचलित किया।\n2. वैज्ञानिक नाम का पहला शब्द वंश (जीनस) को दर्शाता है और बड़े अक्षर (कैपिटल) से आरंभ होता है।\n3. जाति संकेत पद (स्पेसिफिक एपिथेट) भी बड़े अक्षर से आरंभ होता है।\n4. हाथ से लिखते समय वैज्ञानिक नाम के दोनों शब्दों को अलग-अलग रेखांकित किया जाता है।\nउपर्युक्त में से कौन-से कथन सही हैं?",
+    "q": "वैज्ञानिक नाम मैंजीफेरा इंडिका में 'इंडिका' शब्द क्या है?",
     "options": [
-     "केवल 1, 2 और 4",
-     "केवल 1 और 3",
-     "केवल 2, 3 और 4",
-     "1, 2, 3 और 4"
+     "जाति संकेत पद",
+     "वंश नाम",
+     "कुल नाम",
+     "सामान्य नाम"
     ],
-    "explanation": "लीनियस की पद्धति में वंश नाम बड़े अक्षर से और जाति संकेत पद छोटे अक्षर से आरंभ होता है, जैसे Mangifera indica। मुद्रित नाम तिरछे (इटैलिक) लिखे जाते हैं और हस्तलिखित नाम के दोनों शब्द अलग-अलग रेखांकित होते हैं; अतः कथन 3 गलत है।",
+    "explanation": "लीनियस द्वारा प्रचलित द्विनाम पद्धति में पहला शब्द वंश तथा दूसरा जाति संकेत पद होता है। हाथ से लिखने पर दोनों शब्दों को पृथक-पृथक रेखांकित किया जाता है।",
     "notes": [
-     "सही: कथन 1, 2 और 4 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 3 असत्य है तथा कथन 2 और 4 सत्य हैं।",
-     "गलत: कथन 1 सत्य है और कथन 3 असत्य है।",
-     "गलत: जाति संकेत पद छोटे अक्षर से आरंभ होता है, अतः कथन 3 असत्य है।"
+     "दूसरा शब्द; यह छोटे अक्षर से आरंभ होता है।",
+     "'मैंजीफेरा' वंश नाम है और बड़े अक्षर से आरंभ होता है।",
+     "कुल द्विनाम पद्धति के नाम का भाग नहीं होता।",
+     "सामान्य नाम 'आम' है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -2174,22 +2174,22 @@
   },
   {
    "id": "sci-biology-034",
-   "level": "PGT",
-   "answer": 1,
+   "level": "TGT",
+   "answer": 2,
    "en": {
-    "q": "Consider the following statements about gymnosperms:\n1. Their ovules are not enclosed by an ovary wall.\n2. Companion cells are absent in their phloem.\n3. Their seeds are enclosed within fruits.\nWhich of the statements given above is/are correct?",
+    "q": "Plants that bear naked seeds, not enclosed within fruits, are called:",
     "options": [
-     "1 only",
-     "1 and 2 only",
-     "2 and 3 only",
-     "1, 2 and 3"
+     "Bryophytes",
+     "Pteridophytes",
+     "Gymnosperms",
+     "Angiosperms"
     ],
-    "explanation": "In gymnosperms the ovules lie exposed on megasporophylls, so the seeds are naked and no fruit is formed. Their phloem has sieve cells and albuminous cells but lacks sieve tubes and companion cells; statement 3 is wrong.",
+    "explanation": "In gymnosperms such as Cycas and Pinus the ovules are exposed, so the seeds are naked and no fruit is formed.",
     "notes": [
-     "Wrong: statement 2 is also correct.",
-     "Correct: statements 1 and 2 are true; statement 3 is false.",
-     "Wrong: statement 1 is true and statement 3 is false.",
-     "Wrong: gymnosperms have no ovary, so their seeds are not enclosed in fruits."
+     "Non-vascular plants that do not form seeds.",
+     "Vascular plants that reproduce by spores.",
+     "Their ovules are not enclosed by an ovary wall.",
+     "Their seeds are enclosed within fruits."
     ],
     "path": [
      "Biology",
@@ -2203,19 +2203,19 @@
     ]
    },
    "hi": {
-    "q": "अनावृतबीजी (जिम्नोस्पर्म) पादपों के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. इनके बीजांड अंडाशय भित्ति से ढके नहीं होते।\n2. इनके फ्लोएम में सहचर कोशिकाएँ अनुपस्थित होती हैं।\n3. इनके बीज फलों के अंदर बंद होते हैं।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "वे पादप क्या कहलाते हैं, जिनके बीज नग्न होते हैं और फल के भीतर बंद नहीं होते?",
     "options": [
-     "केवल 1",
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "1, 2 और 3"
+     "ब्रायोफाइट",
+     "टेरिडोफाइट",
+     "अनावृतबीजी",
+     "आवृतबीजी"
     ],
-    "explanation": "अनावृतबीजियों में बीजांड गुरुबीजाणुपर्णों पर खुले रहते हैं, अतः बीज नग्न होते हैं और फल नहीं बनता। इनके फ्लोएम में चालनी कोशिकाएँ व एल्ब्यूमिनी कोशिकाएँ होती हैं, परंतु चालनी नलिकाएँ व सहचर कोशिकाएँ नहीं होतीं; अतः कथन 3 गलत है।",
+    "explanation": "साइकस एवं पाइनस जैसे अनावृतबीजी पादपों में बीजांड खुले रहते हैं, अतः बीज नग्न होते हैं और फल नहीं बनता।",
     "notes": [
-     "गलत: कथन 2 भी सही है।",
-     "सही: कथन 1 और 2 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 1 सत्य है और कथन 3 असत्य है।",
-     "गलत: अनावृतबीजियों में अंडाशय नहीं होता, अतः बीज फल में बंद नहीं होते।"
+     "संवहन ऊतक रहित पादप, जिनमें बीज नहीं बनते।",
+     "संवहनी पादप, जो बीजाणुओं से जनन करते हैं।",
+     "इनके बीजांड अंडाशय भित्ति से ढके नहीं होते।",
+     "इनके बीज फल के भीतर बंद होते हैं।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -2306,22 +2306,22 @@
   },
   {
    "id": "sci-biology-036",
-   "level": "PGT",
-   "answer": 0,
+   "level": "TGT",
+   "answer": 2,
    "en": {
-    "q": "Match List-I (Animal group) with List-II (Excretory structure) and select the correct answer using the codes given below the lists:\nList-I: A. Platyhelminthes B. Annelida C. Insects (Arthropoda) D. Vertebrates (Chordata)\nList-II: 1. Malpighian tubules 2. Nephridia 3. Flame cells 4. Kidneys",
+    "q": "The excretory structures of insects are:",
     "options": [
-     "A-3, B-2, C-1, D-4",
-     "A-2, B-3, C-1, D-4",
-     "A-3, B-1, C-2, D-4",
-     "A-1, B-2, C-3, D-4"
+     "Flame cells",
+     "Nephridia",
+     "Malpighian tubules",
+     "Kidneys"
     ],
-    "explanation": "Flatworms excrete and osmoregulate through flame cells, annelids such as the earthworm through nephridia, insects through Malpighian tubules, and vertebrates through kidneys.",
+    "explanation": "Flatworms excrete through flame cells, annelids through nephridia, insects through Malpighian tubules and vertebrates through kidneys.",
     "notes": [
-     "Correct: A-3, B-2, C-1, D-4.",
-     "Wrong: flame cells belong to flatworms and nephridia to annelids, not the reverse.",
-     "Wrong: insects use Malpighian tubules and annelids use nephridia.",
-     "Wrong: flatworms have flame cells, not Malpighian tubules."
+     "Found in flatworms (Platyhelminthes).",
+     "Found in annelids such as the earthworm.",
+     "They open into the gut of insects.",
+     "Found in vertebrates."
     ],
     "path": [
      "Biology",
@@ -2335,19 +2335,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (जंतु समूह) को सूची-II (उत्सर्जी संरचना) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. प्लैटिहेल्मिंथीज B. ऐनेलिडा C. कीट (आर्थ्रोपोडा) D. कशेरुकी (कॉर्डेटा)\nसूची-II: 1. मैल्पीघी नलिकाएँ 2. वृक्कक (नेफ्रीडिया) 3. ज्वाला कोशिकाएँ 4. वृक्क",
+    "q": "कीटों के उत्सर्जी अंग कौन-से हैं?",
     "options": [
-     "A-3, B-2, C-1, D-4",
-     "A-2, B-3, C-1, D-4",
-     "A-3, B-1, C-2, D-4",
-     "A-1, B-2, C-3, D-4"
+     "ज्वाला कोशिकाएँ",
+     "वृक्कक (नेफ्रीडिया)",
+     "मैल्पीघियन नलिकाएँ",
+     "वृक्क"
     ],
-    "explanation": "चपटे कृमि ज्वाला कोशिकाओं द्वारा, केंचुए जैसे ऐनेलिड वृक्कक द्वारा, कीट मैल्पीघी नलिकाओं द्वारा और कशेरुकी वृक्कों द्वारा उत्सर्जन व परासरण नियमन करते हैं।",
+    "explanation": "चपटे कृमि ज्वाला कोशिकाओं से, एनेलिड वृक्ककों से, कीट मैल्पीघियन नलिकाओं से तथा कशेरुकी वृक्कों से उत्सर्जन करते हैं।",
     "notes": [
-     "सही: A-3, B-2, C-1, D-4।",
-     "गलत: ज्वाला कोशिकाएँ चपटे कृमियों में और वृक्कक ऐनेलिड में होते हैं, उल्टा नहीं।",
-     "गलत: कीटों में मैल्पीघी नलिकाएँ और ऐनेलिड में वृक्कक होते हैं।",
-     "गलत: चपटे कृमियों में ज्वाला कोशिकाएँ होती हैं, मैल्पीघी नलिकाएँ नहीं।"
+     "ये चपटे कृमियों (प्लैटीहेल्मिंथीज) में पाई जाती हैं।",
+     "ये केंचुए जैसे एनेलिड में पाए जाते हैं।",
+     "ये कीटों की आहार नाल में खुलती हैं।",
+     "ये कशेरुकियों में पाए जाते हैं।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -2438,22 +2438,22 @@
   },
   {
    "id": "sci-biology-038",
-   "level": "Higher",
-   "answer": 2,
+   "level": "PGT",
+   "answer": 0,
    "en": {
-    "q": "Assertion (A): Members of the phylum Platyhelminthes are called acoelomates.\nReason (R): Platyhelminthes have a body cavity that is not lined by mesoderm.\nSelect the correct answer using the codes given below:",
+    "q": "Animals of which phylum have no body cavity and are therefore called acoelomates?",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Platyhelminthes",
+     "Aschelminthes",
+     "Annelida",
+     "Mollusca"
     ],
-    "explanation": "Flatworms have no body cavity at all, which is why they are acoelomates. A body cavity not lined by mesoderm (a pseudocoelom) is found in Aschelminthes (roundworms), so R is false.",
+    "explanation": "Flatworms are acoelomates, roundworms are pseudocoelomates, and annelids, arthropods, molluscs and chordates are coelomates.",
     "notes": [
-     "Wrong: R is false, so it cannot explain A.",
-     "Wrong: R is false for flatworms.",
-     "Correct: A is true; R describes pseudocoelomates such as Ascaris.",
-     "Wrong: A is true; flatworms lack a coelom."
+     "Flatworms have no body cavity at all.",
+     "Roundworms have a pseudocoelom, not lined by mesoderm.",
+     "They have a true coelom.",
+     "They have a true coelom."
     ],
     "path": [
      "Biology",
@@ -2467,19 +2467,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): प्लैटिहेल्मिंथीज संघ के सदस्यों को अगुहीय (एसीलोमेट) कहा जाता है।\nकारण (R): प्लैटिहेल्मिंथीज में एक ऐसी देहगुहा होती है, जो मध्यजनस्तर से आस्तरित नहीं होती।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "किस संघ के जंतुओं में देहगुहा नहीं होती, जिसके कारण उन्हें अगुहिक (एसीलोमेट) कहा जाता है?",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "प्लैटीहेल्मिंथीज",
+     "एस्केल्मिंथीज",
+     "एनेलिडा",
+     "मोलस्का"
     ],
-    "explanation": "चपटे कृमियों में कोई देहगुहा नहीं होती, इसलिए वे अगुहीय हैं। मध्यजनस्तर से आस्तरित न होने वाली देहगुहा (कूटगुहा) ऐस्केल्मिंथीज (गोलकृमि) में पाई जाती है, अतः कारण (R) गलत है।",
+    "explanation": "चपटे कृमि अगुहिक, गोल कृमि कूटगुहिक तथा एनेलिड, आर्थ्रोपोड, मोलस्क एवं कॉर्डेट प्रगुही होते हैं।",
     "notes": [
-     "गलत: (R) असत्य है, अतः वह (A) की व्याख्या नहीं कर सकता।",
-     "गलत: चपटे कृमियों के लिए (R) असत्य है।",
-     "सही: (A) सत्य है; (R) ऐस्केरिस जैसे कूटगुहिकों का वर्णन है।",
-     "गलत: (A) सत्य है; चपटे कृमियों में प्रगुहा नहीं होती।"
+     "चपटे कृमियों में देहगुहा बिल्कुल नहीं होती।",
+     "गोल कृमियों में कूटगुहा होती है, जो मीसोडर्म से आस्तरित नहीं होती।",
+     "इनमें वास्तविक देहगुहा होती है।",
+     "इनमें वास्तविक देहगुहा होती है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -2574,22 +2574,22 @@
   },
   {
    "id": "sci-biology-040",
-   "level": "Higher",
-   "answer": 1,
+   "level": "PGT",
+   "answer": 3,
    "en": {
-    "q": "Consider the following features:\n1. Presence of a notochord at least during the embryonic stage\n2. A dorsal, hollow, single nerve cord\n3. Paired pharyngeal gill slits\n4. A ventral, solid, double nerve cord\nWhich of the above are fundamental characteristics of the phylum Chordata?",
+    "q": "Which one of the following is NOT a fundamental characteristic of chordates?",
     "options": [
-     "1 and 2 only",
-     "1, 2 and 3 only",
-     "2, 3 and 4 only",
-     "1, 2, 3 and 4"
+     "Presence of a notochord",
+     "A dorsal hollow nerve cord",
+     "Paired pharyngeal gill slits",
+     "A ventral solid nerve cord"
     ],
-    "explanation": "All chordates have a notochord, a dorsal hollow single nerve cord and paired pharyngeal gill slits at some stage of life. A ventral, solid, double nerve cord is a feature of non-chordates, so feature 4 does not apply.",
+    "explanation": "All chordates have a notochord, a dorsal hollow nerve cord and paired pharyngeal gill slits at some stage. A ventral, solid, double nerve cord is found in non-chordates.",
     "notes": [
-     "Wrong: pharyngeal gill slits (3) are also a basic chordate feature.",
-     "Correct: features 1, 2 and 3 define chordates.",
-     "Wrong: feature 4 belongs to non-chordates and feature 1 is left out.",
-     "Wrong: a ventral solid double nerve cord is found in non-chordates."
+     "Present at least in the embryonic stage.",
+     "A basic chordate feature.",
+     "Present at some stage of life in all chordates.",
+     "A feature of non-chordates."
     ],
     "path": [
      "Biology",
@@ -2603,19 +2603,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित लक्षणों पर विचार कीजिए:\n1. कम से कम भ्रूणीय अवस्था में पृष्ठरज्जु (नोटोकॉर्ड) की उपस्थिति\n2. पृष्ठीय, खोखली, एकल तंत्रिका रज्जु\n3. युग्मित ग्रसनी क्लोम छिद्र\n4. अधरीय, ठोस, दोहरी तंत्रिका रज्जु\nउपर्युक्त में से कौन-से संघ कॉर्डेटा के मूलभूत लक्षण हैं?",
+    "q": "निम्नलिखित में से कौन-सा कॉर्डेटा का मूलभूत लक्षण नहीं है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 1, 2 और 3",
-     "केवल 2, 3 और 4",
-     "1, 2, 3 और 4"
+     "पृष्ठरज्जु (नोटोकॉर्ड) की उपस्थिति",
+     "पृष्ठीय खोखली तंत्रिका रज्जु",
+     "युग्मित ग्रसनी क्लोम छिद्र",
+     "अधर ठोस तंत्रिका रज्जु"
     ],
-    "explanation": "सभी कॉर्डेटों में जीवन की किसी अवस्था में पृष्ठरज्जु, पृष्ठीय खोखली एकल तंत्रिका रज्जु तथा युग्मित ग्रसनी क्लोम छिद्र होते हैं। अधरीय, ठोस, दोहरी तंत्रिका रज्जु अकॉर्डेटों का लक्षण है, अतः लक्षण 4 लागू नहीं होता।",
+    "explanation": "सभी कॉर्डेटा में जीवन की किसी अवस्था में पृष्ठरज्जु, पृष्ठीय खोखली तंत्रिका रज्जु एवं युग्मित ग्रसनी क्लोम छिद्र होते हैं। अधर, ठोस एवं दोहरी तंत्रिका रज्जु नॉन-कॉर्डेट में होती है।",
     "notes": [
-     "गलत: ग्रसनी क्लोम छिद्र (3) भी कॉर्डेटा का मूल लक्षण है।",
-     "सही: लक्षण 1, 2 और 3 कॉर्डेटों की पहचान हैं।",
-     "गलत: लक्षण 4 अकॉर्डेटों का है और लक्षण 1 छूट गया है।",
-     "गलत: अधरीय ठोस दोहरी तंत्रिका रज्जु अकॉर्डेटों में पाई जाती है।"
+     "कम से कम भ्रूणीय अवस्था में उपस्थित होती है।",
+     "कॉर्डेटा का मूल लक्षण।",
+     "सभी कॉर्डेटा में जीवन की किसी अवस्था में उपस्थित होते हैं।",
+     "यह अकशेरुकी (नॉन-कॉर्डेट) जंतुओं का लक्षण है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -2702,22 +2702,22 @@
   },
   {
    "id": "sci-biology-042",
-   "level": "PGT",
+   "level": "TGT",
    "answer": 0,
    "en": {
-    "q": "Consider the following statements about photosynthesis:\n1. The oxygen released during photosynthesis comes from water.\n2. The light reactions take place in the grana (thylakoids), while the Calvin cycle operates in the stroma of the chloroplast.\n3. The central metal atom of the chlorophyll molecule is iron.\nWhich of the statements given above is/are correct?",
+    "q": "The oxygen released during photosynthesis comes from:",
     "options": [
-     "1 and 2 only",
-     "2 only",
-     "1 and 3 only",
-     "1, 2 and 3"
+     "Water",
+     "Carbon dioxide",
+     "Chlorophyll",
+     "Glucose"
     ],
-    "explanation": "Oxygen evolved in photosynthesis comes from the photolysis of water, not from carbon dioxide. Light reactions occur on thylakoid membranes of the grana and the Calvin cycle in the stroma; the central atom of chlorophyll is magnesium, so statement 3 is wrong.",
+    "explanation": "The oxygen evolved in photosynthesis comes from the splitting of water. Light reactions occur in the grana and the Calvin cycle in the stroma.",
     "notes": [
-     "Correct: statements 1 and 2 are true; statement 3 is false.",
-     "Wrong: statement 1 is also true.",
-     "Wrong: statement 3 is false and statement 2 is true.",
-     "Wrong: chlorophyll contains magnesium, not iron."
+     "It is released by the photolysis of water.",
+     "It supplies the carbon for making glucose, not the oxygen released.",
+     "It absorbs light but does not give out oxygen.",
+     "It is the product of photosynthesis."
     ],
     "path": [
      "Biology",
@@ -2730,19 +2730,19 @@
     ]
    },
    "hi": {
-    "q": "प्रकाश संश्लेषण के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. प्रकाश संश्लेषण में मुक्त होने वाली ऑक्सीजन जल से आती है।\n2. प्रकाश अभिक्रियाएँ हरितलवक के ग्रैना (थाइलेकॉइड) में होती हैं, जबकि केल्विन चक्र स्ट्रोमा में चलता है।\n3. क्लोरोफिल अणु का केन्द्रीय धातु परमाणु लोहा है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "प्रकाश संश्लेषण में निकलने वाली ऑक्सीजन किससे प्राप्त होती है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2",
-     "केवल 1 और 3",
-     "1, 2 और 3"
+     "जल",
+     "कार्बन डाइऑक्साइड",
+     "पर्णहरित",
+     "ग्लूकोज"
     ],
-    "explanation": "प्रकाश संश्लेषण में निकलने वाली ऑक्सीजन जल के प्रकाश-अपघटन से आती है, कार्बन डाइऑक्साइड से नहीं। प्रकाश अभिक्रियाएँ ग्रैना की थाइलेकॉइड झिल्लियों पर होती हैं और केल्विन चक्र स्ट्रोमा में चलता है; क्लोरोफिल का केन्द्रीय परमाणु मैग्नीशियम है, अतः कथन 3 गलत है।",
+    "explanation": "प्रकाश संश्लेषण में निकलने वाली ऑक्सीजन जल के अपघटन से आती है। प्रकाश अभिक्रियाएँ ग्रैना में तथा केल्विन चक्र स्ट्रोमा में होता है।",
     "notes": [
-     "सही: कथन 1 और 2 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 1 भी सत्य है।",
-     "गलत: कथन 3 असत्य है और कथन 2 सत्य है।",
-     "गलत: क्लोरोफिल में मैग्नीशियम होता है, लोहा नहीं।"
+     "यह जल के प्रकाश-अपघटन से निकलती है।",
+     "इससे ग्लूकोज बनाने के लिए कार्बन मिलता है, निकलने वाली ऑक्सीजन नहीं।",
+     "यह प्रकाश अवशोषित करता है, ऑक्सीजन नहीं देता।",
+     "यह प्रकाश संश्लेषण का उत्पाद है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -2766,22 +2766,22 @@
   },
   {
    "id": "sci-biology-043",
-   "level": "Higher",
-   "answer": 0,
+   "level": "PGT",
+   "answer": 2,
    "en": {
-    "q": "Assertion (A): C4 plants such as maize and sugarcane carry out photosynthesis more efficiently than C3 plants at high temperatures and light intensities.\nReason (R): In C4 plants, carbon dioxide is concentrated around RuBisCO in the bundle sheath cells, so photorespiration is practically absent.\nSelect the correct answer using the codes given below:",
+    "q": "Which one of the following is a C4 plant?",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Wheat",
+     "Rice",
+     "Maize",
+     "Pea"
     ],
-    "explanation": "In C4 plants with Kranz anatomy, CO2 is first fixed in mesophyll cells and then released in high concentration around RuBisCO in the bundle sheath. This suppresses the wasteful oxygenase activity (photorespiration) that increases at high temperature, which is why C4 plants are more productive in hot, bright conditions.",
+    "explanation": "C4 plants such as maize and sugarcane concentrate carbon dioxide in their bundle sheath cells, so photorespiration is almost absent and they are efficient at high temperatures.",
     "notes": [
-     "Correct: suppression of photorespiration (R) is the reason for higher efficiency (A).",
-     "Wrong: R directly explains A, not merely accompanies it.",
-     "Wrong: R is true; CO2 concentration around RuBisCO is the essence of the C4 pathway.",
-     "Wrong: A is true; C4 plants perform better at high temperature."
+     "A C3 plant.",
+     "A C3 plant.",
+     "A C4 plant with Kranz anatomy, like sugarcane.",
+     "A C3 plant."
     ],
     "path": [
      "Biology",
@@ -2795,19 +2795,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): मक्का और गन्ना जैसे C4 पादप उच्च ताप और तीव्र प्रकाश में C3 पादपों की तुलना में अधिक दक्षता से प्रकाश संश्लेषण करते हैं।\nकारण (R): C4 पादपों में पूलाच्छद (बंडल शीथ) कोशिकाओं में RuBisCO के चारों ओर कार्बन डाइऑक्साइड सांद्रित की जाती है, जिससे प्रकाश-श्वसन लगभग नहीं होता।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "निम्नलिखित में से कौन-सा C4 पादप है?",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "गेहूँ",
+     "धान",
+     "मक्का",
+     "मटर"
     ],
-    "explanation": "क्रांज शारीरिकी वाले C4 पादपों में CO2 पहले पर्णमध्योतक कोशिकाओं में स्थिर होती है और फिर पूलाच्छद में RuBisCO के पास उच्च सांद्रता में मुक्त होती है। इससे उच्च ताप पर बढ़ने वाली व्यर्थ ऑक्सीजनेज क्रिया (प्रकाश-श्वसन) दब जाती है, इसीलिए C4 पादप गर्म व तीव्र प्रकाश में अधिक उत्पादक होते हैं।",
+    "explanation": "मक्का एवं गन्ने जैसे C4 पादप पूलाच्छद कोशिकाओं में कार्बन डाइऑक्साइड का सांद्रण करते हैं, अतः इनमें प्रकाश श्वसन लगभग नहीं होता और ये उच्च ताप पर अधिक दक्ष होते हैं।",
     "notes": [
-     "सही: प्रकाश-श्वसन का दमन (R) ही अधिक दक्षता (A) का कारण है।",
-     "गलत: (R) सीधे (A) की व्याख्या करता है।",
-     "गलत: (R) सही है; RuBisCO के पास CO2 का सांद्रण ही C4 पथ का सार है।",
-     "गलत: (A) सही है; C4 पादप उच्च ताप पर बेहतर कार्य करते हैं।"
+     "यह C3 पादप है।",
+     "यह C3 पादप है।",
+     "गन्ने की भाँति क्रैंज शारीरिकी वाला C4 पादप।",
+     "यह C3 पादप है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3026,22 +3026,22 @@
   },
   {
    "id": "sci-biology-047",
-   "level": "PGT",
-   "answer": 2,
+   "level": "TGT",
+   "answer": 1,
    "en": {
-    "q": "Match List-I (Part of the human brain) with List-II (Function) and select the correct answer using the codes given below the lists:\nList-I: A. Medulla oblongata B. Hypothalamus C. Corpus callosum D. Thalamus\nList-II: 1. Major relay centre for sensory and motor signals 2. Regulation of body temperature, hunger and thirst 3. Control of respiration and cardiovascular reflexes 4. Connects the two cerebral hemispheres",
+    "q": "Which part of the human brain regulates body temperature, hunger and thirst?",
     "options": [
-     "A-2, B-3, C-4, D-1",
-     "A-3, B-2, C-1, D-4",
-     "A-3, B-2, C-4, D-1",
-     "A-1, B-2, C-4, D-3"
+     "Medulla oblongata",
+     "Hypothalamus",
+     "Thalamus",
+     "Corpus callosum"
     ],
-    "explanation": "The medulla oblongata controls respiration, heartbeat and gastric secretions; the hypothalamus regulates body temperature and the urge for eating and drinking; the corpus callosum is a band of nerve fibres joining the two cerebral hemispheres; and the thalamus is the major coordinating (relay) centre for sensory and motor signalling.",
+    "explanation": "The hypothalamus regulates body temperature and the urge for eating and drinking. The medulla controls respiration and cardiovascular reflexes.",
     "notes": [
-     "Wrong: temperature control belongs to the hypothalamus, not the medulla.",
-     "Wrong: the corpus callosum joins the hemispheres; the thalamus relays signals.",
-     "Correct: A-3, B-2, C-4, D-1.",
-     "Wrong: the medulla controls respiration; the thalamus is the relay centre."
+     "Controls respiration and heartbeat.",
+     "Also produces hormones that control the pituitary gland.",
+     "A relay centre for sensory and motor signals.",
+     "Joins the two cerebral hemispheres."
     ],
     "path": [
      "Biology",
@@ -3055,19 +3055,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (मानव मस्तिष्क का भाग) को सूची-II (कार्य) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. मेडुला ऑब्लांगेटा B. अधश्चेतक (हाइपोथैलेमस) C. कॉर्पस कैलोसम D. चेतक (थैलेमस)\nसूची-II: 1. संवेदी व प्रेरक संकेतों का प्रमुख प्रसारण (रिले) केन्द्र 2. शरीर ताप, भूख और प्यास का नियमन 3. श्वसन और हृदय-संवहनी प्रतिवर्तों का नियंत्रण 4. दोनों प्रमस्तिष्क गोलार्धों को जोड़ना",
+    "q": "मानव मस्तिष्क का कौन-सा भाग शरीर के तापमान, भूख एवं प्यास का नियमन करता है?",
     "options": [
-     "A-2, B-3, C-4, D-1",
-     "A-3, B-2, C-1, D-4",
-     "A-3, B-2, C-4, D-1",
-     "A-1, B-2, C-4, D-3"
+     "मेडुला ऑब्लांगेटा",
+     "हाइपोथैलेमस",
+     "थैलेमस",
+     "कॉर्पस कैलोसम"
     ],
-    "explanation": "मेडुला ऑब्लांगेटा श्वसन, हृदय गति और जठर स्रावों का नियंत्रण करता है; अधश्चेतक शरीर ताप तथा खाने-पीने की इच्छा का नियमन करता है; कॉर्पस कैलोसम तंत्रिका तंतुओं की पट्टी है, जो दोनों प्रमस्तिष्क गोलार्धों को जोड़ती है; और चेतक संवेदी व प्रेरक संकेतों का प्रमुख समन्वय (रिले) केन्द्र है।",
+    "explanation": "हाइपोथैलेमस शरीर के तापमान तथा खाने-पीने की इच्छा का नियमन करता है। मेडुला श्वसन एवं हृदय-परिसंचरण संबंधी प्रतिवर्तों को नियंत्रित करता है।",
     "notes": [
-     "गलत: ताप नियंत्रण अधश्चेतक का कार्य है, मेडुला का नहीं।",
-     "गलत: कॉर्पस कैलोसम गोलार्धों को जोड़ता है; चेतक संकेत प्रसारित करता है।",
-     "सही: A-3, B-2, C-4, D-1।",
-     "गलत: मेडुला श्वसन नियंत्रित करता है; चेतक रिले केन्द्र है।"
+     "श्वसन एवं हृदय स्पंदन का नियंत्रण करता है।",
+     "यह पीयूष ग्रंथि को नियंत्रित करने वाले हार्मोन भी बनाता है।",
+     "संवेदी एवं प्रेरक संकेतों का प्रसारण केंद्र।",
+     "दोनों प्रमस्तिष्क गोलार्धों को जोड़ता है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3092,22 +3092,22 @@
   },
   {
    "id": "sci-biology-048",
-   "level": "Higher",
-   "answer": 1,
+   "level": "TGT",
+   "answer": 3,
    "en": {
-    "q": "Assertion (A): Withdrawal of the hand on touching a hot object is a spinal reflex action.\nReason (R): The spinal cord is enclosed and protected by the vertebral column.\nSelect the correct answer using the codes given below:",
+    "q": "In the withdrawal of the hand on touching a hot object, the reflex arc is completed in the:",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Cerebrum",
+     "Cerebellum",
+     "Medulla oblongata",
+     "Spinal cord"
     ],
-    "explanation": "Both statements are true. The withdrawal reflex is quick because the sensory neuron, relay neuron and motor neuron of the reflex arc connect in the spinal cord, so the response does not wait for the brain; the protective vertebral column has nothing to do with this.",
+    "explanation": "In a spinal reflex the sensory neuron, relay neuron and motor neuron connect in the spinal cord, so the response does not wait for the brain.",
     "notes": [
-     "Wrong: protection by the vertebral column does not explain a reflex.",
-     "Correct: both are true, but R is not the reason for A.",
-     "Wrong: R is true; the spinal cord lies inside the vertebral column.",
-     "Wrong: A is true; hand withdrawal is a classic spinal reflex."
+     "The seat of thought and voluntary action; too slow for a reflex.",
+     "Maintains posture and balance.",
+     "Controls involuntary actions such as breathing.",
+     "The sensory and motor neurons connect here, giving a quick response."
     ],
     "path": [
      "Biology",
@@ -3121,19 +3121,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): किसी गर्म वस्तु को छूने पर हाथ को झटके से हटा लेना एक मेरु प्रतिवर्ती क्रिया है।\nकारण (R): मेरुरज्जु कशेरुक दंड के भीतर बंद और सुरक्षित रहती है।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "गर्म वस्तु छूने पर हाथ हटा लेने की क्रिया में प्रतिवर्ती चाप कहाँ पूर्ण होता है?",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "प्रमस्तिष्क",
+     "अनुमस्तिष्क",
+     "मेडुला ऑब्लांगेटा",
+     "मेरुरज्जु"
     ],
-    "explanation": "दोनों कथन सही हैं। हाथ हटाने की प्रतिवर्ती क्रिया शीघ्र होती है, क्योंकि प्रतिवर्ती चाप के संवेदी, प्रसारण (रिले) और प्रेरक न्यूरॉन मेरुरज्जु में जुड़े होते हैं और प्रतिक्रिया मस्तिष्क की प्रतीक्षा नहीं करती; कशेरुक दंड द्वारा सुरक्षा का इससे कोई संबंध नहीं है।",
+    "explanation": "मेरु प्रतिवर्त में संवेदी, संयोजक एवं प्रेरक तंत्रिका कोशिकाएँ मेरुरज्जु में जुड़ती हैं, अतः अनुक्रिया के लिए मस्तिष्क की प्रतीक्षा नहीं करनी पड़ती।",
     "notes": [
-     "गलत: कशेरुक दंड द्वारा सुरक्षा प्रतिवर्ती क्रिया की व्याख्या नहीं करती।",
-     "सही: दोनों कथन सत्य हैं, परंतु (R), (A) का कारण नहीं है।",
-     "गलत: (R) सही है; मेरुरज्जु कशेरुक दंड के भीतर स्थित है।",
-     "गलत: (A) सही है; हाथ हटाना एक प्रमुख मेरु प्रतिवर्त है।"
+     "चिंतन एवं ऐच्छिक क्रियाओं का केंद्र; प्रतिवर्त के लिए बहुत धीमा।",
+     "शरीर की स्थिति एवं संतुलन बनाए रखता है।",
+     "श्वसन जैसी अनैच्छिक क्रियाओं का नियंत्रण करता है।",
+     "संवेदी एवं प्रेरक तंत्रिका कोशिकाएँ यहीं जुड़ती हैं, जिससे तुरंत अनुक्रिया होती है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3158,22 +3158,22 @@
   },
   {
    "id": "sci-biology-049",
-   "level": "PGT",
+   "level": "TGT",
    "answer": 0,
    "en": {
-    "q": "Consider the following statements about a neuron:\n1. Dendrites carry nerve impulses towards the cell body.\n2. The axon carries nerve impulses away from the cell body.\n3. At a chemical synapse, the impulse passes from the dendrite of one neuron to the axon terminal of the next neuron.\nWhich of the statements given above is/are correct?",
+    "q": "Which part of a neuron carries nerve impulses away from the cell body?",
     "options": [
-     "1 and 2 only",
-     "2 only",
-     "2 and 3 only",
-     "1, 2 and 3"
+     "Axon",
+     "Dendrite",
+     "Nissl granules",
+     "Myelin sheath"
     ],
-    "explanation": "In a neuron the impulse travels from the dendrites to the cell body and then along the axon to its terminals. At a synapse, neurotransmitters released from the axon terminal of one neuron act on the dendrite or cell body of the next, so the transmission is one-way and statement 3 states it in reverse.",
+    "explanation": "The impulse travels from the dendrites to the cell body and then along the axon. At a synapse it passes from the axon terminal of one neuron to the next neuron.",
     "notes": [
-     "Correct: statements 1 and 2 are true; statement 3 is false.",
-     "Wrong: statement 1 is also true.",
-     "Wrong: statement 3 reverses the direction of synaptic transmission.",
-     "Wrong: impulses cross a synapse from axon terminal to dendrite, not the reverse."
+     "A long fibre that carries impulses to the next neuron or to a muscle.",
+     "Carries impulses towards the cell body.",
+     "Granules in the cell body; they do not conduct impulses.",
+     "An insulating cover that speeds up conduction."
     ],
     "path": [
      "Biology",
@@ -3187,19 +3187,19 @@
     ]
    },
    "hi": {
-    "q": "न्यूरॉन (तंत्रिका कोशिका) के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. द्रुमिकाएँ (डेंड्राइट) तंत्रिका आवेग को कोशिकाकाय की ओर ले जाती हैं।\n2. तंत्रिकाक्ष (एक्सॉन) तंत्रिका आवेग को कोशिकाकाय से दूर ले जाता है।\n3. रासायनिक सिनैप्स पर आवेग एक न्यूरॉन की द्रुमिका से अगले न्यूरॉन के तंत्रिकाक्ष-सिरे की ओर जाता है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "तंत्रिका कोशिका का कौन-सा भाग तंत्रिका आवेग को कोशिकाकाय से दूर ले जाता है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2",
-     "केवल 2 और 3",
-     "1, 2 और 3"
+     "तंत्रिकाक्ष (एक्सॉन)",
+     "द्रुमिका (डेंड्राइट)",
+     "निस्ल कण",
+     "माइलिन आच्छद"
     ],
-    "explanation": "न्यूरॉन में आवेग द्रुमिकाओं से कोशिकाकाय और फिर तंत्रिकाक्ष के साथ उसके सिरों तक जाता है। सिनैप्स पर एक न्यूरॉन के तंत्रिकाक्ष-सिरे से मुक्त तंत्रिका संचारी अगले न्यूरॉन की द्रुमिका या कोशिकाकाय पर कार्य करते हैं; संचरण एकदिशीय है और कथन 3 इसे उल्टा बताता है।",
+    "explanation": "आवेग द्रुमिकाओं से कोशिकाकाय तक और फिर तंत्रिकाक्ष के साथ चलता है। युग्मानुबंधन पर यह एक तंत्रिका कोशिका के तंत्रिकाक्ष सिरे से अगली कोशिका में जाता है।",
     "notes": [
-     "सही: कथन 1 और 2 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 1 भी सत्य है।",
-     "गलत: कथन 3 सिनैप्टिक संचरण की दिशा उल्टी बताता है।",
-     "गलत: आवेग सिनैप्स पर तंत्रिकाक्ष-सिरे से द्रुमिका की ओर जाता है, उल्टा नहीं।"
+     "लंबा तंतु, जो आवेग को अगली तंत्रिका कोशिका अथवा पेशी तक ले जाता है।",
+     "आवेग को कोशिकाकाय की ओर ले जाती है।",
+     "कोशिकाकाय के कण; ये आवेग का संवहन नहीं करते।",
+     "रोधी आवरण, जो संवहन की गति बढ़ाता है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3223,22 +3223,22 @@
   },
   {
    "id": "sci-biology-050",
-   "level": "PGT",
-   "answer": 3,
+   "level": "TGT",
+   "answer": 0,
    "en": {
-    "q": "Match List-I (Organism) with List-II (Mode of asexual reproduction) and select the correct answer using the codes given below the lists:\nList-I: A. Hydra B. Planaria C. Plasmodium D. Spirogyra\nList-II: 1. Fragmentation 2. Multiple fission 3. Regeneration 4. Budding",
+    "q": "Spirogyra reproduces asexually by:",
     "options": [
-     "A-3, B-4, C-2, D-1",
-     "A-4, B-3, C-1, D-2",
-     "A-2, B-3, C-4, D-1",
-     "A-4, B-3, C-2, D-1"
+     "Fragmentation",
+     "Budding",
+     "Multiple fission",
+     "Binary fission"
     ],
-    "explanation": "Hydra produces buds that grow into new individuals; Planaria can regenerate a whole organism from body fragments; the malaria parasite Plasmodium divides into many daughter cells by multiple fission; and the filament of Spirogyra breaks into fragments that grow into new filaments.",
+    "explanation": "Spirogyra reproduces by fragmentation, Hydra by budding, Planaria by regeneration and Plasmodium by multiple fission.",
     "notes": [
-     "Wrong: Hydra reproduces by budding and Planaria by regeneration, not the reverse.",
-     "Wrong: Plasmodium shows multiple fission and Spirogyra fragmentation.",
-     "Wrong: Hydra buds; multiple fission is seen in Plasmodium.",
-     "Correct: A-4, B-3, C-2, D-1."
+     "The filament breaks into pieces that grow into new filaments.",
+     "The method seen in Hydra and yeast.",
+     "The method seen in Plasmodium.",
+     "The method seen in Amoeba."
     ],
     "path": [
      "Biology",
@@ -3252,19 +3252,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (जीव) को सूची-II (अलैंगिक जनन की विधि) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. हाइड्रा B. प्लैनेरिया C. प्लाज्मोडियम D. स्पाइरोगाइरा\nसूची-II: 1. खंडन 2. बहुविखंडन 3. पुनरुद्भवन 4. मुकुलन",
+    "q": "स्पाइरोगाइरा में अलैंगिक जनन किस विधि से होता है?",
     "options": [
-     "A-3, B-4, C-2, D-1",
-     "A-4, B-3, C-1, D-2",
-     "A-2, B-3, C-4, D-1",
-     "A-4, B-3, C-2, D-1"
+     "खंडन",
+     "मुकुलन",
+     "बहुखंडन",
+     "द्विखंडन"
     ],
-    "explanation": "हाइड्रा में मुकुल बनकर नए जीव बनते हैं; प्लैनेरिया शरीर के टुकड़ों से पूरे जीव का पुनरुद्भवन कर सकता है; मलेरिया परजीवी प्लाज्मोडियम बहुविखंडन द्वारा अनेक संतति कोशिकाओं में बँटता है; और स्पाइरोगाइरा का तंतु टुकड़ों में टूटकर नए तंतु बनाता है।",
+    "explanation": "स्पाइरोगाइरा खंडन द्वारा, हाइड्रा मुकुलन द्वारा, प्लेनेरिया पुनरुद्भवन द्वारा तथा प्लाज्मोडियम बहुखंडन द्वारा जनन करता है।",
     "notes": [
-     "गलत: हाइड्रा मुकुलन से और प्लैनेरिया पुनरुद्भवन से जनन करता है, उल्टा नहीं।",
-     "गलत: प्लाज्मोडियम में बहुविखंडन और स्पाइरोगाइरा में खंडन होता है।",
-     "गलत: हाइड्रा में मुकुलन होता है; बहुविखंडन प्लाज्मोडियम में होता है।",
-     "सही: A-4, B-3, C-2, D-1।"
+     "तंतु टुकड़ों में टूट जाता है, जो नए तंतुओं में विकसित होते हैं।",
+     "यह विधि हाइड्रा एवं यीस्ट में पाई जाती है।",
+     "यह विधि प्लाज्मोडियम में पाई जाती है।",
+     "यह विधि अमीबा में पाई जाती है।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3289,22 +3289,22 @@
   },
   {
    "id": "sci-biology-051",
-   "level": "Higher",
-   "answer": 2,
+   "level": "TGT",
+   "answer": 3,
    "en": {
-    "q": "Which of the following pairs (Plant – Organ used for vegetative propagation) are correctly matched?\n1. Potato – Stem tuber\n2. Ginger – Rhizome\n3. Bryophyllum – Leaf\n4. Sweet potato – Stem tuber\nSelect the correct answer using the codes given below:",
+    "q": "Which one of the following is a modified root and NOT a modified stem?",
     "options": [
-     "1 and 2 only",
-     "2 and 4 only",
-     "1, 2 and 3 only",
-     "1, 2, 3 and 4"
+     "Potato",
+     "Ginger",
+     "Turmeric",
+     "Sweet potato"
     ],
-    "explanation": "The potato tuber and the ginger rhizome are underground stems, and Bryophyllum produces plantlets from buds in the notches of its leaf margins. The sweet potato is a tuberous (modified) root, not a stem tuber, so pair 4 is wrong.",
+    "explanation": "The potato tuber and the rhizomes of ginger and turmeric are underground stems, while the sweet potato is a tuberous root.",
     "notes": [
-     "Wrong: pair 3 (Bryophyllum – leaf) is also correct.",
-     "Wrong: pair 4 is incorrect because the sweet potato is a root.",
-     "Correct: pairs 1, 2 and 3 are correctly matched.",
-     "Wrong: the sweet potato is a tuberous root, not a stem tuber."
+     "A stem tuber; its 'eyes' are buds.",
+     "A rhizome, which is an underground stem.",
+     "A rhizome, which is an underground stem.",
+     "A tuberous root that stores food."
     ],
     "path": [
      "Biology",
@@ -3317,19 +3317,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित में से कौन-से युग्म (पौधा – कायिक प्रवर्धन में प्रयुक्त अंग) सही सुमेलित हैं?\n1. आलू – स्तंभ कंद\n2. अदरक – प्रकंद\n3. ब्रायोफिलम – पत्ती\n4. शकरकंद – स्तंभ कंद\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "निम्नलिखित में से कौन-सा रूपांतरित जड़ है, रूपांतरित तना नहीं?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 4",
-     "केवल 1, 2 और 3",
-     "1, 2, 3 और 4"
+     "आलू",
+     "अदरक",
+     "हल्दी",
+     "शकरकंद"
     ],
-    "explanation": "आलू का कंद और अदरक का प्रकंद भूमिगत तने हैं तथा ब्रायोफिलम की पत्ती के किनारों के खाँचों में स्थित कलिकाओं से नए पौधे बनते हैं। शकरकंद कंदिल (रूपांतरित) जड़ है, स्तंभ कंद नहीं; अतः युग्म 4 गलत है।",
+    "explanation": "आलू का कंद तथा अदरक एवं हल्दी के प्रकंद भूमिगत तने हैं, जबकि शकरकंद कंदिल जड़ है।",
     "notes": [
-     "गलत: युग्म 3 (ब्रायोफिलम – पत्ती) भी सही है।",
-     "गलत: युग्म 4 गलत है, क्योंकि शकरकंद जड़ है।",
-     "सही: युग्म 1, 2 और 3 सही सुमेलित हैं।",
-     "गलत: शकरकंद कंदिल जड़ है, स्तंभ कंद नहीं।"
+     "स्तंभ कंद; इसकी 'आँखें' कलिकाएँ हैं।",
+     "प्रकंद, जो भूमिगत तना है।",
+     "प्रकंद, जो भूमिगत तना है।",
+     "भोजन का संचय करने वाली कंदिल जड़।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3356,22 +3356,22 @@
   },
   {
    "id": "sci-biology-052",
-   "level": "Higher",
-   "answer": 0,
+   "level": "PGT",
+   "answer": 2,
    "en": {
-    "q": "Consider the following statements regarding double fertilisation:\n1. One male gamete fuses with the egg cell to form a diploid zygote.\n2. The other male gamete fuses with the two polar nuclei to form a triploid primary endosperm nucleus.\n3. Double fertilisation is a characteristic feature of gymnosperms as well as angiosperms.\nWhich of the statements given above is/are correct?",
+    "q": "In double fertilisation, the fusion of a male gamete with the two polar nuclei produces a nucleus that is:",
     "options": [
-     "1 and 2 only",
-     "2 only",
-     "2 and 3 only",
-     "1, 2 and 3"
+     "Haploid",
+     "Diploid",
+     "Triploid",
+     "Tetraploid"
     ],
-    "explanation": "In the embryo sac, one male gamete fuses with the egg (syngamy) to form the diploid zygote, and the other fuses with the two polar nuclei (triple fusion) to form the triploid primary endosperm nucleus. Double fertilisation is unique to angiosperms, so statement 3 is wrong.",
+    "explanation": "One male gamete fuses with the egg to form the diploid zygote, and the other fuses with two polar nuclei to form the triploid primary endosperm nucleus. This is unique to angiosperms.",
     "notes": [
-     "Correct: statements 1 and 2 are true; statement 3 is false.",
-     "Wrong: statement 1 (syngamy) is also true.",
-     "Wrong: statement 3 is false; gymnosperms lack double fertilisation.",
-     "Wrong: double fertilisation is found only in flowering plants."
+     "A gamete is haploid.",
+     "The zygote, formed from egg and male gamete, is diploid.",
+     "The primary endosperm nucleus is triploid.",
+     "Not formed in normal double fertilisation."
     ],
     "path": [
      "Biology",
@@ -3385,19 +3385,19 @@
     ]
    },
    "hi": {
-    "q": "दोहरे निषेचन के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. एक नर युग्मक अंड कोशिका से संलयित होकर द्विगुणित युग्मनज बनाता है।\n2. दूसरा नर युग्मक दो ध्रुवीय केन्द्रकों से संलयित होकर त्रिगुणित प्राथमिक भ्रूणपोष केन्द्रक बनाता है।\n3. दोहरा निषेचन आवृतबीजियों के साथ-साथ अनावृतबीजियों का भी अभिलक्षण है।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
+    "q": "द्विनिषेचन में एक नर युग्मक के दो ध्रुवीय केंद्रकों से संलयन से बनने वाला केंद्रक कैसा होता है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2",
-     "केवल 2 और 3",
-     "1, 2 और 3"
+     "अगुणित",
+     "द्विगुणित",
+     "त्रिगुणित",
+     "चतुर्गुणित"
     ],
-    "explanation": "भ्रूणकोष में एक नर युग्मक अंड से संलयित होकर (युग्मक संलयन) द्विगुणित युग्मनज बनाता है और दूसरा दो ध्रुवीय केन्द्रकों से संलयित होकर (त्रिसंलयन) त्रिगुणित प्राथमिक भ्रूणपोष केन्द्रक बनाता है। दोहरा निषेचन केवल आवृतबीजियों में होता है, अतः कथन 3 गलत है।",
+    "explanation": "एक नर युग्मक अंड से संलयित होकर द्विगुणित युग्मनज तथा दूसरा दो ध्रुवीय केंद्रकों से संलयित होकर त्रिगुणित प्राथमिक भ्रूणपोष केंद्रक बनाता है। यह केवल आवृतबीजी पादपों में होता है।",
     "notes": [
-     "सही: कथन 1 और 2 सत्य हैं; कथन 3 असत्य है।",
-     "गलत: कथन 1 (युग्मक संलयन) भी सत्य है।",
-     "गलत: कथन 3 असत्य है; अनावृतबीजियों में दोहरा निषेचन नहीं होता।",
-     "गलत: दोहरा निषेचन केवल पुष्पी पादपों में पाया जाता है।"
+     "युग्मक अगुणित होता है।",
+     "अंड एवं नर युग्मक से बना युग्मनज द्विगुणित होता है।",
+     "प्राथमिक भ्रूणपोष केंद्रक त्रिगुणित होता है।",
+     "सामान्य द्विनिषेचन में यह नहीं बनता।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3550,22 +3550,22 @@
   },
   {
    "id": "sci-biology-055",
-   "level": "Higher",
-   "answer": 3,
+   "level": "PGT",
+   "answer": 1,
    "en": {
-    "q": "Assertion (A): Mendel's law of dominance holds true for every pair of contrasting characters.\nReason (R): In the snapdragon (Antirrhinum), a cross between red-flowered and white-flowered plants produces pink-flowered F1 plants.\nSelect the correct answer using the codes given below:",
+    "q": "The pink flowers of the F1 generation in a cross between red and white snapdragon plants are an example of:",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Complete dominance",
+     "Incomplete dominance",
+     "Co-dominance",
+     "Multiple alleles"
     ],
-    "explanation": "Dominance is not universal: in incomplete dominance, as in snapdragon flower colour, the F1 hybrid (Rr) shows an intermediate pink phenotype. R is therefore true and is itself an exception that shows A to be false.",
+    "explanation": "In incomplete dominance the F1 hybrid is intermediate between the parents, so Mendel's law of dominance does not hold in every case.",
     "notes": [
-     "Wrong: A is false, so R cannot explain it.",
-     "Wrong: A is false because of exceptions such as incomplete dominance and co-dominance.",
-     "Wrong: R is true; pink F1 flowers are the textbook case of incomplete dominance.",
-     "Correct: A is false and R is true."
+     "The F1 would then be red, like one parent.",
+     "The hybrid shows an intermediate phenotype.",
+     "Both alleles would be expressed fully, as in the AB blood group.",
+     "Refers to more than two alleles of a gene, as in ABO blood groups."
     ],
     "path": [
      "Biology",
@@ -3579,19 +3579,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): मेंडल का प्रभाविता का नियम विपर्यासी लक्षणों के प्रत्येक युग्म पर लागू होता है।\nकारण (R): स्नैपड्रैगन (एंटीराइनम) में लाल पुष्प और श्वेत पुष्प वाले पौधों के संकरण से F1 पीढ़ी में गुलाबी पुष्प वाले पौधे बनते हैं।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "स्नैपड्रैगन के लाल एवं सफेद पुष्प वाले पौधों के संकरण से F1 पीढ़ी में गुलाबी पुष्प बनना किसका उदाहरण है?",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "पूर्ण प्रभाविता",
+     "अपूर्ण प्रभाविता",
+     "सहप्रभाविता",
+     "बहुविकल्पी (बहु अलील)"
     ],
-    "explanation": "प्रभाविता सार्वभौमिक नहीं है: अपूर्ण प्रभाविता में, जैसे स्नैपड्रैगन के पुष्प रंग में, F1 संकर (Rr) मध्यवर्ती गुलाबी लक्षण दिखाता है। अतः (R) सही है और यही अपवाद (A) को गलत सिद्ध करता है।",
+    "explanation": "अपूर्ण प्रभाविता में F1 संकर दोनों जनकों के बीच का होता है, अतः मेंडल का प्रभाविता का नियम प्रत्येक स्थिति में लागू नहीं होता।",
     "notes": [
-     "गलत: (A) असत्य है, अतः (R) उसकी व्याख्या नहीं कर सकता।",
-     "गलत: अपूर्ण प्रभाविता व सहप्रभाविता जैसे अपवादों के कारण (A) असत्य है।",
-     "गलत: (R) सत्य है; गुलाबी F1 पुष्प अपूर्ण प्रभाविता का मानक उदाहरण है।",
-     "सही: (A) असत्य है और (R) सत्य है।"
+     "तब F1 पीढ़ी एक जनक की भाँति लाल होती।",
+     "संकर में मध्यवर्ती लक्षण प्रकट होता है।",
+     "इसमें दोनों अलील पूर्णतः व्यक्त होते, जैसे AB रुधिर वर्ग में।",
+     "एक जीन के दो से अधिक अलील, जैसे ABO रुधिर वर्ग में।"
     ],
     "path": [
      "जीव विज्ञान",
@@ -3612,22 +3612,22 @@
   },
   {
    "id": "sci-biology-056",
-   "level": "PGT",
-   "answer": 0,
+   "level": "TGT",
+   "answer": 2,
    "en": {
-    "q": "Match List-I (Scientist) with List-II (Contribution to evolutionary thought) and select the correct answer using the codes given below the lists:\nList-I: A. Jean-Baptiste Lamarck B. Charles Darwin C. Hugo de Vries D. Oparin and Haldane\nList-II: 1. Mutation theory 2. Chemical origin of life from non-living organic molecules 3. Inheritance of acquired characters 4. Natural selection",
+    "q": "Who proposed the mutation theory of evolution?",
     "options": [
-     "A-3, B-4, C-1, D-2",
-     "A-4, B-3, C-1, D-2",
-     "A-3, B-4, C-2, D-1",
-     "A-1, B-4, C-3, D-2"
+     "Jean-Baptiste Lamarck",
+     "Charles Darwin",
+     "Hugo de Vries",
+     "A.I. Oparin"
     ],
-    "explanation": "Lamarck proposed the inheritance of acquired characters (use and disuse of organs); Darwin explained evolution by natural selection; Hugo de Vries, working on the evening primrose, proposed the mutation theory; and Oparin and Haldane proposed that life arose from non-living organic molecules (chemical evolution).",
+    "explanation": "Lamarck gave the theory of inheritance of acquired characters, Darwin natural selection and Hugo de Vries the mutation theory.",
     "notes": [
-     "Correct: A-3, B-4, C-1, D-2.",
-     "Wrong: natural selection is Darwin's idea and acquired characters Lamarck's.",
-     "Wrong: de Vries gave the mutation theory; Oparin and Haldane the chemical origin of life.",
-     "Wrong: Lamarck did not propose the mutation theory."
+     "Proposed the inheritance of acquired characters.",
+     "Proposed natural selection.",
+     "Proposed the mutation theory after work on the evening primrose.",
+     "Proposed the chemical origin of life, with Haldane."
     ],
     "path": [
      "Biology",
@@ -3640,19 +3640,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (वैज्ञानिक) को सूची-II (विकासवादी चिंतन में योगदान) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. जीन-बैप्टिस्ट लैमार्क B. चार्ल्स डार्विन C. ह्यूगो डी व्रीज D. ओपेरिन एवं हाल्डेन\nसूची-II: 1. उत्परिवर्तन सिद्धांत 2. निर्जीव कार्बनिक अणुओं से जीवन की रासायनिक उत्पत्ति 3. उपार्जित लक्षणों की वंशागति 4. प्राकृतिक वरण",
+    "q": "विकास का उत्परिवर्तन सिद्धांत किसने प्रतिपादित किया?",
     "options": [
-     "A-3, B-4, C-1, D-2",
-     "A-4, B-3, C-1, D-2",
-     "A-3, B-4, C-2, D-1",
-     "A-1, B-4, C-3, D-2"
+     "ज्याँ-बैप्टिस्ट लैमार्क",
+     "चार्ल्स डार्विन",
+     "ह्यूगो डी व्रीज",
+     "ए.आई. ओपेरिन"
     ],
-    "explanation": "लैमार्क ने उपार्जित लक्षणों की वंशागति (अंगों का उपयोग एवं अनुपयोग) का विचार दिया; डार्विन ने प्राकृतिक वरण द्वारा विकास की व्याख्या की; ईवनिंग प्रिमरोज़ पर कार्य करते हुए ह्यूगो डी व्रीज ने उत्परिवर्तन सिद्धांत दिया; और ओपेरिन व हाल्डेन ने निर्जीव कार्बनिक अणुओं से जीवन की उत्पत्ति (रासायनिक विकास) का विचार दिया।",
+    "explanation": "लैमार्क ने उपार्जित लक्षणों की वंशागति का, डार्विन ने प्राकृतिक वरण का तथा ह्यूगो डी व्रीज ने उत्परिवर्तन सिद्धांत दिया।",
     "notes": [
-     "सही: A-3, B-4, C-1, D-2।",
-     "गलत: प्राकृतिक वरण डार्विन का और उपार्जित लक्षण लैमार्क का विचार है।",
-     "गलत: डी व्रीज ने उत्परिवर्तन सिद्धांत तथा ओपेरिन व हाल्डेन ने रासायनिक उत्पत्ति का विचार दिया।",
-     "गलत: लैमार्क ने उत्परिवर्तन सिद्धांत नहीं दिया।"
+     "उपार्जित लक्षणों की वंशागति का सिद्धांत दिया।",
+     "प्राकृतिक वरण का सिद्धांत दिया।",
+     "ईवनिंग प्रिमरोज पर कार्य के बाद उत्परिवर्तन सिद्धांत दिया।",
+     "हाल्डेन के साथ जीवन की रासायनिक उत्पत्ति का मत दिया।"
     ],
     "path": [
      "जीव विज्ञान",

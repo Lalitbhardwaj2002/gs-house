@@ -27,10 +27,16 @@ const CONFIG = {
   retryEveryMs: 6000,
 };
 const LEVELS = ['TGT', 'PGT', 'Higher'];
+// Which question levels each syllabus serves: a TGT/PGT quiz never shows a Higher question
+// and an Assistant Professor quiz shows only Higher ones.
+const TRACK_LEVELS = { all: LEVELS, tgt: ['TGT', 'PGT'], higher: ['Higher'] };
+const levelsFor = (st) => (st.level === 'all' ? TRACK_LEVELS[st.track] || LEVELS : [st.level]);
 const LETTERS = ['A', 'B', 'C', 'D'];
 const BOOKS = {
   'special-topics': { en: 'Special Topics 2.0', hi: 'स्पेशल टॉपिक्स 2.0' },
   fatman: { en: 'Parmar SSC (Fatman)', hi: 'परमार एसएससी (फैटमैन)' },
+  'parmar-ca': { en: 'Parmar SSC Current Affairs 2026', hi: 'परमार एसएससी करेंट अफेयर्स 2026' },
+  'tgt-pgt-gk': { en: 'TGT/PGT Samanya Gyan (solved papers)', hi: 'टीजीटी/पीजीटी सामान्य ज्ञान (हल प्रश्न-पत्र)' },
 };
 const CODE_CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ'; // no I, L or O: easy to read aloud
 const COLORS = ['#c0392b', '#d35400', '#b7950b', '#27ae60', '#16a085', '#2980b9', '#8e44ad', '#c2185b',
@@ -64,6 +70,10 @@ function shuffle(list) {
 // Hindi is the user's preferred numeral style here too, so numbers stay as 0–9 in both languages.
 const sectionById = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 const unitById = Object.fromEntries(UNITS.map((u) => [u.id, u]));
+const sectionOf = (qid) => String(qid).replace(/-\d{3}$/, '');
+const readList = (key) => {
+  try { const v = JSON.parse(store.get('localStorage', key) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; }
+};
 
 // ---------- language ----------
 let lang = store.get('localStorage', 'pp-lang') === 'hi' ? 'hi' : 'en';
@@ -79,7 +89,7 @@ const T = {
     joining: (c) => `Joining room ${c}…`, cancel: 'Cancel', backHome: 'Back to start',
     setup: 'Set up the quiz', syllabus: 'Syllabus', trackAll: 'All', trackTgt: 'TGT / PGT', trackHigher: 'Assistant Professor',
     sections: 'Sections', selectAll: 'Select all', clearAll: 'Clear', qs: (n) => `${n} Qs`, soon: 'soon',
-    howMany: 'Questions', level: 'Level', allLevels: 'All', timer: 'Time per question', noLimit: 'No limit', secs: (n) => `${n}s`,
+    howMany: 'Questions', level: 'Level', allLevels: 'All', timer: 'Time per question', noLimit: 'Off', secs: (n) => `${n}s`,
     negative: 'Negative marking', none: 'None', start: 'Start quiz', available: (n, s) => `${n} questions available from ${s} section${s === 1 ? '' : 's'}`,
     pickSection: 'Pick at least one section that has questions.', players: 'Players', host: 'host', you: 'you',
     waitHost: (n) => `Waiting for ${n} to start the quiz`, hostPicks: (n) => `${n} is choosing the sections`,
@@ -105,7 +115,19 @@ const T = {
     loadingQs: 'Collecting your questions…', noQs: 'No questions match these choices yet.',
     rankTitle: { acharya: 'Acharya', pandit: 'Pandit', vidvan: 'Vidvan', sadhak: 'Sadhak', jigyasu: 'Jigyasu' },
     rankNote: { acharya: 'Master of the syllabus', pandit: 'Excellent command', vidvan: 'Good grasp — keep polishing', sadhak: 'Steady progress — revise weak areas', jigyasu: 'Every master was once a beginner' },
-    level_TGT: 'TGT', level_PGT: 'PGT', level_Higher: 'Higher',
+    level_TGT: 'TGT', level_PGT: 'PGT', level_Higher: 'Higher', tagTgt: 'TGT/PGT', tagHigher: 'Higher',
+    settings: 'Settings', sound: 'Sound', darkMode: 'Dark mode', textSize: 'Text size', bothLangs: 'Both languages', on: 'On', off: 'Off',
+    smaller: 'Smaller text', larger: 'Larger text',
+    quickPractice: 'Quick practice', savedQs: (n) => `🔖 Saved questions (${n})`, mistakes: (n) => `✗ My mistakes (${n})`,
+    save: 'Save this question for revision', saved: 'Saved for revision', unsaved: 'Removed from saved questions',
+    retryWrong: (n) => `Retry ${n} missed question${n === 1 ? '' : 's'}`,
+    fAll: 'All', fWrong: 'Wrong', fSkipped: 'Skipped', fSaved: 'Saved', noneInFilter: 'No questions in this list.',
+    showNotes: 'Show option notes', hideNotes: 'Hide option notes',
+    byUnit: 'By unit', allSections: (n) => `By section (${n})`, weakTap: 'Tap a section to practise it now.',
+    progress: 'Your progress', lastQuizzes: (n, avg, best) => `Last ${n} quiz${n === 1 ? '' : 'zes'} · average ${avg}% · best ${best}%`,
+    byUnitRecent: 'By unit (recent quizzes)',
+    keysHint: 'Keyboard: A–D or 1–4 to answer · Enter for the next question',
+    sideWait: 'The explanation appears here once you answer.',
   },
   hi: {
     tagline: 'यूपीईएसएससी टीजीटी, पीजीटी एवं असिस्टेंट प्रोफेसर हेतु द्विभाषी सामान्य ज्ञान प्रश्नोत्तरी',
@@ -116,7 +138,7 @@ const T = {
     joining: (c) => `कक्ष ${c} से जुड़ रहे हैं…`, cancel: 'रद्द करें', backHome: 'शुरुआत पर लौटें',
     setup: 'प्रश्नोत्तरी तैयार करें', syllabus: 'पाठ्यक्रम', trackAll: 'सभी', trackTgt: 'टीजीटी / पीजीटी', trackHigher: 'असिस्टेंट प्रोफेसर',
     sections: 'खंड', selectAll: 'सभी चुनें', clearAll: 'हटाएँ', qs: (n) => `${n} प्रश्न`, soon: 'जल्द',
-    howMany: 'प्रश्नों की संख्या', level: 'स्तर', allLevels: 'सभी', timer: 'प्रति प्रश्न समय', noLimit: 'असीमित', secs: (n) => `${n} से.`,
+    howMany: 'प्रश्नों की संख्या', level: 'स्तर', allLevels: 'सभी', timer: 'प्रति प्रश्न समय', noLimit: 'बंद', secs: (n) => `${n} से.`,
     negative: 'ऋणात्मक अंकन', none: 'नहीं', start: 'प्रश्नोत्तरी शुरू करें', available: (n, s) => `${s} खंडों से ${n} प्रश्न उपलब्ध`,
     pickSection: 'कम से कम एक ऐसा खंड चुनें जिसमें प्रश्न हों।', players: 'खिलाड़ी', host: 'होस्ट', you: 'आप',
     waitHost: (n) => `${n} द्वारा प्रश्नोत्तरी शुरू करने की प्रतीक्षा`, hostPicks: (n) => `${n} खंड चुन रहे हैं`,
@@ -142,7 +164,19 @@ const T = {
     loadingQs: 'आपके प्रश्न तैयार हो रहे हैं…', noQs: 'इन विकल्पों से मेल खाते प्रश्न अभी उपलब्ध नहीं हैं।',
     rankTitle: { acharya: 'आचार्य', pandit: 'पंडित', vidvan: 'विद्वान', sadhak: 'साधक', jigyasu: 'जिज्ञासु' },
     rankNote: { acharya: 'पाठ्यक्रम पर पूर्ण अधिकार', pandit: 'उत्कृष्ट पकड़', vidvan: 'अच्छी समझ — निखारते रहें', sadhak: 'निरंतर प्रगति — कमजोर खंड दोहराएँ', jigyasu: 'हर आचार्य कभी शुरुआती था' },
-    level_TGT: 'टीजीटी', level_PGT: 'पीजीटी', level_Higher: 'उच्चतर',
+    level_TGT: 'टीजीटी', level_PGT: 'पीजीटी', level_Higher: 'उच्चतर', tagTgt: 'टीजीटी/पीजीटी', tagHigher: 'उच्चतर',
+    settings: 'सेटिंग', sound: 'ध्वनि', darkMode: 'डार्क मोड', textSize: 'अक्षरों का आकार', bothLangs: 'दोनों भाषाएँ', on: 'चालू', off: 'बंद',
+    smaller: 'छोटे अक्षर', larger: 'बड़े अक्षर',
+    quickPractice: 'त्वरित अभ्यास', savedQs: (n) => `🔖 सहेजे गए प्रश्न (${n})`, mistakes: (n) => `✗ मेरी गलतियाँ (${n})`,
+    save: 'इस प्रश्न को दोहराने के लिए सहेजें', saved: 'दोहराने के लिए सहेजा गया', unsaved: 'सहेजे गए प्रश्नों से हटाया गया',
+    retryWrong: (n) => `छूटे या गलत ${n} प्रश्न फिर से हल करें`,
+    fAll: 'सभी', fWrong: 'गलत', fSkipped: 'छोड़े', fSaved: 'सहेजे', noneInFilter: 'इस सूची में कोई प्रश्न नहीं है।',
+    showNotes: 'विकल्पों की टिप्पणियाँ दिखाएँ', hideNotes: 'विकल्पों की टिप्पणियाँ छिपाएँ',
+    byUnit: 'इकाई अनुसार', allSections: (n) => `खंड अनुसार (${n})`, weakTap: 'अभी अभ्यास के लिए किसी खंड पर टैप करें।',
+    progress: 'आपकी प्रगति', lastQuizzes: (n, avg, best) => `पिछली ${n} प्रश्नोत्तरी · औसत ${avg}% · सर्वश्रेष्ठ ${best}%`,
+    byUnitRecent: 'इकाई अनुसार (हाल की प्रश्नोत्तरी)',
+    keysHint: 'कीबोर्ड: उत्तर के लिए A–D या 1–4 · अगले प्रश्न के लिए Enter',
+    sideWait: 'उत्तर देते ही व्याख्या यहाँ दिखेगी।',
   },
 };
 const t = (key, ...args) => {
@@ -154,9 +188,65 @@ function setLang(l) {
   store.set('localStorage', 'pp-lang', lang);
   document.documentElement.lang = lang === 'hi' ? 'hi' : 'en-IN';
   ui.qlang = {};
-  ui.stageKey = '';
-  if (ui.screen === 'game') render();
-  else if (ui.screen === 'home') renderHome();
+  refresh();
+}
+
+// ---------- preferences kept on this device ----------
+const FS_STEPS = [0.9, 1, 1.12, 1.25];
+const savedFs = Number(store.get('localStorage', 'pp-fs'));
+const prefs = {
+  theme: store.get('localStorage', 'pp-theme'),             // 'dark', 'light', or nothing: follow the device
+  fs: FS_STEPS.includes(savedFs) ? savedFs : 1,             // scale of the reading text
+  both: store.get('localStorage', 'pp-both') === '1',       // show each question in both languages
+  notes: store.get('localStorage', 'pp-notes') === '1',     // keep "About each option" open
+};
+const isDark = () => (prefs.theme ? prefs.theme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+function applyPrefs() {
+  const root = document.documentElement;
+  root.dataset.theme = isDark() ? 'dark' : 'light';
+  root.style.setProperty('--fs', String(prefs.fs));
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.content = isDark() ? '#1c1510' : '#7b1e1e';
+}
+function setPref(key, value) {
+  prefs[key] = value;
+  store.set('localStorage', `pp-${key}`, typeof value === 'boolean' ? (value ? '1' : '0') : String(value));
+  applyPrefs();
+}
+applyPrefs();
+
+// Questions saved for revision, and questions answered wrong that have not been got right since.
+const marks = new Set(readList('pp-marks'));
+const mistakes = new Set(readList('pp-wrong'));
+const saveSet = (key, set, max) => store.set('localStorage', key, JSON.stringify([...set].slice(-max)));
+function toggleMark(qid) {
+  if (marks.has(qid)) marks.delete(qid); else marks.add(qid);
+  saveSet('pp-marks', marks, 1000);
+  return marks.has(qid);
+}
+function noteAnswer(qid, correct) {
+  mistakes.delete(qid);
+  if (!correct) mistakes.add(qid);
+  saveSet('pp-wrong', mistakes, 500);
+}
+
+// Results of past quizzes on this device: [{ at, n, c, u: { unitId: [asked, correct] } }]
+const groupByUnit = (bySection) => {
+  const units = {};
+  for (const [sec, [n, c]] of Object.entries(bySection)) {
+    const u = (sectionById[sec] || {}).unit;
+    if (!u) continue;
+    units[u] = units[u] || [0, 0];
+    units[u][0] += n;
+    units[u][1] += c;
+  }
+  return units;
+};
+function recordHistory(rep) {
+  if (!rep.total) return;
+  const list = readList('pp-history');
+  list.push({ at: Date.now(), n: rep.total, c: rep.correct, u: groupByUnit(rep.bySection) });
+  store.set('localStorage', 'pp-history', JSON.stringify(list.slice(-40)));
 }
 
 // ---------- who am I ----------
@@ -175,8 +265,16 @@ const ui = {
   openUnits: new Set(['u1']),
   sheet: false,        // answer sheet open
   sheetLang: null,
+  sheetFilter: 'all',  // all | wrong | skipped | saved
+  menuOpen: false,     // settings menu open
   lastTick: -1,
 };
+// Redraws the current screen after a language or preference change.
+function refresh() {
+  ui.stageKey = '';
+  if (ui.screen === 'game') render();
+  else if (ui.screen === 'home') renderHome();
+}
 // What this device has seen of the quiz: the questions it received and its own answers.
 let local = { code: '', questions: {}, mine: {}, shownAt: {} };
 let net = null;        // { role: 'host', solo } or the guest connection object
@@ -232,7 +330,7 @@ function startSolo(saved = null) {
   store.set('sessionStorage', 'pp-role', 'solo');
   enterGame();
   const resume = () => { resumeHostTimer(); hostChanged(); if (host.state.phase === 'question') sendQuestion(); };
-  if (saved && host.state.qids.length) loadBank(host.state.settings.sections).then(resume);
+  if (saved && host.state.qids.length) loadBank(bankSections(host.state)).then(resume);
   else resume();
 }
 
@@ -252,7 +350,7 @@ function openRoom(code, saved = null, attempt = 0) {
     net = { role: 'host', solo: false };
     store.set('sessionStorage', 'pp-role', 'host');
     setRoomInUrl(code);
-    if (saved && host.state.qids.length) await loadBank(host.state.settings.sections);
+    if (saved && host.state.qids.length) await loadBank(bankSections(host.state));
     resumeHostTimer();
     clearInterval(host.loop);
     host.loop = setInterval(hostHeartbeat, CONFIG.heartbeatMs);
@@ -334,8 +432,12 @@ function handleAction(pid, msg, conn = null) {
       if (CONFIG.counts.includes(msg.count)) st.count = msg.count;
       if (CONFIG.timers.includes(msg.timer)) st.timer = msg.timer;
       if (CONFIG.negatives.includes(msg.negative)) st.negative = msg.negative;
+      if (['all', 'tgt', 'higher'].includes(msg.track) && msg.track !== st.track) {
+        st.track = msg.track;
+        st.sections = st.sections.filter((id) => trackOk(sectionById[id], st.track));
+      }
       if (msg.level === 'all' || LEVELS.includes(msg.level)) st.level = msg.level;
-      if (['all', 'tgt', 'higher'].includes(msg.track)) st.track = msg.track;
+      if (st.level !== 'all' && !TRACK_LEVELS[st.track].includes(st.level)) st.level = 'all';
       hostChanged();
       return;
     }
@@ -350,12 +452,23 @@ function handleAction(pid, msg, conn = null) {
       return;
     case 'again':
       if (fromHost && s.phase === 'over') {
-        s.players = s.players.filter((p) => p.connected);
-        Object.assign(s, { phase: 'lobby', round: 0, total: 0, qids: [], reports: {}, locked: false });
-        host.answers = {};
+        backToLobby(s);
         hostChanged();
       }
       return;
+    case 'quick': {
+      // Start at once on a given list of questions (saved ones, past mistakes, a retry of the
+      // questions just missed) or on one section, from the lobby or from the results screen.
+      if (!fromHost || !['lobby', 'over'].includes(s.phase)) return;
+      const qids = Array.isArray(msg.qids)
+        ? [...new Set(msg.qids.filter((id) => typeof id === 'string' && sectionById[sectionOf(id)]))].slice(-100) : [];
+      const secs = Array.isArray(msg.sections) ? [...new Set(msg.sections.filter((id) => sectionById[id]))] : [];
+      if (!qids.length && !secs.length) { toast(t('noQs')); return; }
+      if (s.phase === 'over') backToLobby(s);
+      if (!qids.length) s.settings.sections = secs;
+      startQuiz(qids.length ? qids : null);
+      return;
+    }
     case 'need':
       if (s.phase === 'question' && conn) sendQuestion(conn);
       return;
@@ -366,6 +479,15 @@ function handleAction(pid, msg, conn = null) {
   }
 }
 
+function backToLobby(s) {
+  s.players = s.players.filter((p) => p.connected);
+  Object.assign(s, { phase: 'lobby', round: 0, total: 0, qids: [], reports: {}, locked: false });
+  host.answers = {};
+}
+
+// Every section the running quiz needs: the chosen ones, plus those of a quick-practice list.
+const bankSections = (s) => [...new Set([...s.settings.sections, ...s.qids.map(sectionOf)])];
+
 async function loadBank(sectionIds) {
   await Promise.all(sectionIds.filter((id) => !host.bank[id]).map(async (id) => {
     try {
@@ -374,17 +496,16 @@ async function loadBank(sectionIds) {
     } catch { host.bank[id] = []; }
   }));
 }
-const findQuestion = (qid) => {
-  const section = qid.replace(/-\d{3}$/, '');
-  return (host.bank[section] || []).find((q) => q.id === qid);
-};
+const findQuestion = (qid) => (host.bank[sectionOf(qid)] || []).find((q) => q.id === qid);
 
 // Picks questions spread evenly over the chosen sections, preferring ones this device hasn't
 // seen before, with no question repeated inside a quiz.
 function pickQuestions(st) {
   const seen = new Set(JSON.parse(store.get('localStorage', 'pp-seen') || '[]'));
-  const queues = st.sections.map((id) => {
-    const qs = (host.bank[id] || []).filter((q) => st.level === 'all' || q.level === st.level);
+  // The sections are taken in a random order, so a short quiz over many sections samples all units.
+  const queues = shuffle(st.sections).map((id) => {
+    const levels = levelsFor(st);
+    const qs = (host.bank[id] || []).filter((q) => levels.includes(q.level));
     const fresh = shuffle(qs.filter((q) => !seen.has(q.id)));
     const old = shuffle(qs.filter((q) => seen.has(q.id)));
     return [...fresh, ...old];
@@ -397,13 +518,16 @@ function pickQuestions(st) {
   return shuffle(picked);
 }
 
-async function startQuiz() {
+// `only` is a fixed list of question ids (quick practice); without it the questions are
+// picked from the chosen sections.
+async function startQuiz(only = null) {
   const s = host.state;
-  if (!s.settings.sections.length) { toast(t('pickSection')); return; }
+  if (!only && !s.settings.sections.length) { toast(t('pickSection')); return; }
   s.phase = 'loading';
   hostChanged();
-  await loadBank(s.settings.sections);
-  const qids = pickQuestions(s.settings);
+  await loadBank(only ? [...new Set(only.map(sectionOf))] : s.settings.sections);
+  if (host.state !== s || s.phase !== 'loading') return; // left the quiz while the questions were loading
+  const qids = only ? shuffle(only.filter((id) => findQuestion(id))) : pickQuestions(s.settings);
   if (!qids.length) {
     s.phase = 'lobby';
     hostChanged();
@@ -727,6 +851,7 @@ function receiveState(st) {
   ui.view = st;
   ui.endsAt = st.timeLeft ? Date.now() + st.timeLeft : 0;
   if (prev && prev.phase !== 'over' && st.phase === 'over') onFinished(st);
+  if (prev && prev.phase === 'over' && st.phase !== 'over') ui.sheet = false; // a new quiz began while the answer sheet was open
   render();
 }
 
@@ -744,6 +869,7 @@ function onFinished(st) {
   const rep = st.reports[me.id];
   if (!rep) return;
   if (!net || net.role !== 'host') rememberSeen(Object.values(local.questions).map((q) => q.id));
+  recordHistory(rep);
   const acc = pct(rep.correct, rep.total);
   sfx.fanfare();
   if (acc >= 40) petals();
@@ -753,7 +879,7 @@ function render() {
   if (ui.screen !== 'game' || !ui.view) return;
   const v = ui.view;
   const amHost = v.hostId === me.id;
-  const qlang = ui.qlang[v.round] || lang;
+  const qlang = questionMode(v.round);
   // Redraw when the phase, question, language or answer state changes. The question arrives in its
   // own message, sometimes just after the status update, so whether we have it is part of the key.
   const q = local.questions[v.round];
@@ -773,11 +899,33 @@ function topBar(v) {
       <div class="brand-mini">🪔 <b>GS HOUSE</b>${v.solo ? '' : `<button class="chip" data-action="copy">${t('roomCode')} <b>${esc(v.code)}</b></button>`}</div>
       <div class="topbar-right">
         <button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">EN</span><span class="${lang === 'hi' ? 'on' : ''}">हिं</span></button>
-        <button class="icon-btn" data-action="mute" aria-label="Sound">${sfx.muted ? '🔇' : '🔊'}</button>
+        ${menuHTML()}
         <button class="icon-btn" data-action="leave" aria-label="Leave">✕</button>
       </div>
     </header>`;
 }
+
+// Sound, dark mode, both languages and text size, behind one button.
+function menuHTML() {
+  const onOff = (on) => `<b>${on ? t('on') : t('off')}</b>`;
+  const at = FS_STEPS.indexOf(prefs.fs);
+  return `
+    <details class="menu" data-keep="menu" ${ui.menuOpen ? 'open' : ''}>
+      <summary class="icon-btn" aria-label="${t('settings')}" title="${t('settings')}">⚙️</summary>
+      <div class="menu-panel">
+        <button class="menu-row" data-action="mute"><span>${sfx.muted ? '🔇' : '🔊'} ${t('sound')}</span>${onOff(!sfx.muted)}</button>
+        <button class="menu-row" data-action="theme"><span>🌙 ${t('darkMode')}</span>${onOff(isDark())}</button>
+        <button class="menu-row" data-action="both"><span>🔤 ${t('bothLangs')}</span>${onOff(prefs.both)}</button>
+        <div class="menu-row"><span>🔠 ${t('textSize')}</span><span class="stepper">
+          <button data-action="fs" data-d="-1" aria-label="${t('smaller')}" ${at <= 0 ? 'disabled' : ''}>A−</button>
+          <button data-action="fs" data-d="1" aria-label="${t('larger')}" ${at >= FS_STEPS.length - 1 ? 'disabled' : ''}>A+</button>
+        </span></div>
+      </div>
+    </details>`;
+}
+
+// How a question is shown: 'en', 'hi', or 'both' (the interface language first, the other below it).
+const questionMode = (round) => ui.qlang[round] || (prefs.both ? 'both' : lang);
 
 function stageHTML(v, amHost) {
   if (ui.sheet) return sheetHTML(v);
@@ -789,10 +937,10 @@ function stageHTML(v, amHost) {
 
 const hostName = (v) => (v.players.find((p) => p.id === v.hostId) || {}).name || t('host');
 const sectionTitle = (id, l = lang) => (sectionById[id] ? sectionById[id][l] || sectionById[id].en : id);
-const countFor = (id, level) => {
+const countFor = (id, st) => {
   const c = bankIndex.sections[id];
   if (!c) return 0;
-  return level === 'all' ? c.total : (c[level] || 0);
+  return levelsFor(st).reduce((n, level) => n + (c[level] || 0), 0);
 };
 const trackOk = (sec, track) => track === 'all' || sec.tracks.includes(track);
 
@@ -817,7 +965,7 @@ function lobbyHTML(v, amHost) {
       <h2 class="ornate">${t('setup')}</h2>
       <div id="setup"></div>
     </section>
-    <div id="start-area" class="start-area"></div>`;
+    <div id="start-area" class="start-area sticky-bar"></div>`;
 }
 
 function setupHTML(v, amHost) {
@@ -829,18 +977,18 @@ function setupHTML(v, amHost) {
   const units = UNITS.map((u) => {
     const secs = SECTIONS.filter((s) => s.unit === u.id && trackOk(s, st.track));
     if (!secs.length) return '';
-    const withQs = secs.filter((s) => countFor(s.id, st.level) > 0);
+    const withQs = secs.filter((s) => countFor(s.id, st) > 0);
     const picked = secs.filter((s) => st.sections.includes(s.id));
     const open = ui.openUnits.has(u.id);
     const rows = secs.map((s) => {
-      const n = countFor(s.id, st.level);
+      const n = countFor(s.id, st);
       const on = st.sections.includes(s.id);
-      const tags = s.tracks.map((tr) => `<span class="tag tag-${tr}">${tr === 'tgt' ? 'TGT/PGT' : (lang === 'hi' ? 'उच्चतर' : 'Higher')}</span>`).join('');
+      const tags = s.tracks.map((tr) => `<span class="tag tag-${tr}">${tr === 'tgt' ? t('tagTgt') : t('tagHigher')}</span>`).join('');
       return `
         <label class="sec-row ${n ? '' : 'empty'} ${on ? 'on' : ''}" title="${esc(s.scope)}">
-          <input type="checkbox" ${on ? 'checked' : ''} ${!amHost || !n ? 'disabled' : ''} data-action="toggle-sec" data-id="${s.id}">
+          <input type="checkbox" ${on ? 'checked' : ''} ${!amHost || (!n && !on) ? 'disabled' : ''} data-action="toggle-sec" data-id="${s.id}">
           <span class="sec-name">${esc(s[lang] || s.en)}<span class="sec-tags">${tags}</span></span>
-          <span class="sec-count">${n ? t('qs', n) : t('soon')}</span>
+          <span class="sec-count">${n || (bankIndex.sections[s.id] || {}).total ? t('qs', n) : t('soon')}</span>
         </label>`;
     }).join('');
     return `
@@ -852,32 +1000,53 @@ function setupHTML(v, amHost) {
         <div class="unit-body">${rows}</div>
       </div>`;
   }).join('');
+  const pickable = SECTIONS.filter((s) => trackOk(s, st.track) && countFor(s.id, st) > 0);
+  const allOn = pickable.length > 0 && pickable.every((s) => st.sections.includes(s.id));
+  const quick = amHost ? `
+        <p class="field-label">${t('quickPractice')}</p>
+        <div class="quick">
+          <button class="btn" data-action="quick-marks" ${marks.size ? '' : 'disabled'}>${t('savedQs', marks.size)}</button>
+          <button class="btn" data-action="quick-wrong" ${mistakes.size ? '' : 'disabled'}>${t('mistakes', mistakes.size)}</button>
+        </div>` : '';
   return `
-    <p class="field-label">${t('syllabus')}</p>
-    <div class="segs segs-3">${tracks.map(([val, label]) => `<button class="seg ${st.track === val ? 'on' : ''}" ${amHost ? `data-action="set" data-key="track" data-val="${val}"` : dis}>${label}</button>`).join('')}</div>
-    <p class="field-label">${t('sections')}</p>
-    <div class="units">${units}</div>
-    <p class="field-label">${t('howMany')}</p>
-    <div class="segs">${seg('count', CONFIG.counts, (n) => n)}</div>
-    <p class="field-label">${t('level')}</p>
-    <div class="segs">${seg('level', ['all', ...LEVELS], (l) => (l === 'all' ? t('allLevels') : t(`level_${l}`)))}</div>
-    <p class="field-label">${t('timer')}</p>
-    <div class="segs">${seg('timer', CONFIG.timers, (n) => (n ? t('secs', n) : t('noLimit')))}</div>
-    <p class="field-label">${t('negative')}</p>
-    <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '⅓' : '¼'}` : t('none')))}</div>`;
+    <div class="setup-grid">
+      <div class="setup-secs">
+        <p class="field-label">${t('syllabus')}</p>
+        <div class="segs segs-3">${tracks.map(([val, label]) => `<button class="seg ${st.track === val ? 'on' : ''}" ${amHost ? `data-action="set" data-key="track" data-val="${val}"` : dis}>${label}</button>`).join('')}</div>
+        <p class="field-label label-row"><span>${t('sections')}</span>${amHost && pickable.length ? `<button class="link" data-action="all-secs">${allOn ? t('clearAll') : t('selectAll')}</button>` : ''}</p>
+        <div class="units">${units}</div>
+      </div>
+      <div class="setup-opts">
+        <p class="field-label">${t('howMany')}</p>
+        <div class="segs segs-5">${seg('count', CONFIG.counts, (n) => n)}</div>
+        <p class="field-label">${t('level')}</p>
+        <div class="segs segs-4">${['all', ...LEVELS].map((l) => {
+          const ok = l === 'all' || TRACK_LEVELS[st.track].includes(l);
+          return `<button class="seg ${st.level === l ? 'on' : ''}" ${amHost && ok ? `data-action="set" data-key="level" data-val="${l}"` : 'disabled'}>${l === 'all' ? t('allLevels') : t(`level_${l}`)}</button>`;
+        }).join('')}</div>
+        <p class="field-label">${t('timer')}</p>
+        <div class="segs segs-5">${seg('timer', CONFIG.timers, (n) => (n ? t('secs', n) : t('noLimit')))}</div>
+        <p class="field-label">${t('negative')}</p>
+        <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '⅓' : '¼'}` : t('none')))}</div>${quick}
+      </div>
+    </div>`;
 }
 
 // ---------- question ----------
 function questionHTML(v, amHost) {
   const q = local.questions[v.round];
   if (!q) return `<div class="screen-msg"><div class="spinner"></div><p>${t('loading')}</p></div>`;
-  const ql = ui.qlang[v.round] || lang;
+  const mode = questionMode(v.round);
+  const ql = mode === 'both' ? lang : mode;                 // language of the main text and the explanation
+  const altLang = ql === 'en' ? 'hi' : 'en';
+  const alt = mode === 'both' ? q[altLang] : null;          // the other language, shown below in "both" mode
   const body = q[ql] || q.en;
-  const section = q.id.replace(/-\d{3}$/, '');
+  const section = sectionOf(q.id);
   const sec = sectionById[section];
   const unit = sec ? unitById[sec.unit] : null;
   const mine = local.mine[v.round];
   const done = !!mine || v.locked;
+  const second = (text) => (alt ? `<span class="alt" lang="${altLang}">${esc(text)}</span>` : '');
   const options = body.options.map((o, i) => {
     let cls = '';
     if (done) {
@@ -885,25 +1054,36 @@ function questionHTML(v, amHost) {
       else if (mine && mine.choice === i) cls = 'wrong';
       else cls = 'dim';
     }
-    return `<button class="opt ${cls}" data-action="pick" data-i="${i}" ${done ? 'disabled' : ''}><span class="opt-letter">${LETTERS[i]}</span><span class="opt-text">${esc(o)}</span>${done && i === q.answer ? '<span class="opt-mark">✓</span>' : ''}${cls === 'wrong' ? '<span class="opt-mark">✗</span>' : ''}</button>`;
+    return `<button class="opt ${cls}" data-action="pick" data-i="${i}" ${done ? 'disabled' : ''}><span class="opt-letter">${LETTERS[i]}</span><span class="opt-text">${esc(o)}${alt ? second(alt.options[i]) : ''}</span>${done && i === q.answer ? '<span class="opt-mark">✓</span>' : ''}${cls === 'wrong' ? '<span class="opt-mark">✗</span>' : ''}</button>`;
   }).join('');
+  const langBtn = (l, label) => `<button class="${mode === l ? 'on' : ''}" data-action="qlang" data-l="${l}">${label}</button>`;
   return `
     <section class="q-head">
       <div class="progress"><span>${t('qOf', v.round, v.total)}</span><div class="bar"><span style="width:${pct(v.round - 1, v.total)}%"></span></div></div>
       ${v.settings.timer ? '<div class="timer" id="timer"><svg viewBox="0 0 36 36"><circle class="track" cx="18" cy="18" r="16"/><circle class="fill" id="timer-fill" cx="18" cy="18" r="16" pathLength="100"/></svg><span data-countdown></span></div>' : ''}
     </section>
-    <section class="q-card">
-      <div class="q-meta">
-        <span class="q-sec">${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}</span>
-        <span class="q-level lvl-${q.level}">${esc(t(`level_${q.level}`))}</span>
-        <span class="q-lang"><button class="${ql === 'en' ? 'on' : ''}" data-action="qlang" data-l="en">EN</button><button class="${ql === 'hi' ? 'on' : ''}" data-action="qlang" data-l="hi">हिं</button></span>
+    <section class="q-card ${done ? 'done' : ''}">
+      <div class="q-main">
+        <div class="q-meta">
+          <span class="q-sec">${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}</span>
+          <span class="q-level lvl-${q.level}">${esc(t(`level_${q.level}`))}</span>
+          <span class="q-lang">${langBtn('en', 'EN')}${langBtn('hi', 'हिं')}${langBtn('both', t('both'))}</span>
+          ${markButton(q.id)}
+        </div>
+        <h1 class="q-text" lang="${ql === 'hi' ? 'hi' : 'en'}">${esc(body.q)}${alt ? second(alt.q) : ''}</h1>
+        <div class="opts" lang="${ql === 'hi' ? 'hi' : 'en'}">${options}</div>
+        ${done ? '' : `<p class="keys-hint">${t('keysHint')}</p>`}
       </div>
-      <h1 class="q-text" lang="${ql === 'hi' ? 'hi' : 'en'}">${esc(body.q)}</h1>
-      <div class="opts" lang="${ql === 'hi' ? 'hi' : 'en'}">${options}</div>
-      <div id="feedback">${done ? feedbackHTML(q, body, mine, ql) : ''}</div>
+      <div class="q-side" id="feedback">${done ? feedbackHTML(q, body, mine, ql) : `<p class="side-wait">${DIYA_SVG}${t('sideWait')}</p>`}</div>
     </section>
-    <div class="next-area" id="next-area"></div>
+    <div class="next-area sticky-bar" id="next-area"></div>
     ${v.solo ? '' : `<section class="card"><h2>${t('leaderboard')} <span class="muted small" id="answered-count"></span></h2><div class="board" id="board"></div></section>`}`;
+}
+
+// The star that saves a question for revision.
+function markButton(qid) {
+  const on = marks.has(qid);
+  return `<button class="mark-btn ${on ? 'on' : ''}" data-action="mark" data-id="${esc(qid)}" aria-pressed="${on}" aria-label="${t('save')}" title="${t('save')}">${on ? '★' : '☆'}</button>`;
 }
 
 function feedbackHTML(q, body, mine, ql) {
@@ -914,16 +1094,16 @@ function feedbackHTML(q, body, mine, ql) {
     + `<span class="arrow">➜</span><span class="node final">✓ ${esc(body.options[q.answer])}</span>`;
   const notes = body.options.map((o, i) => {
     const cls = i === q.answer ? 'ok' : mine && mine.choice === i ? 'bad' : '';
-    return `<div class="note ${cls}"><b class="note-letter">${LETTERS[i]}</b><div><p class="note-opt">${esc(o)}</p><p class="note-text">${esc(body.notes[i])}</p></div></div>`;
+    return `<div class="note ${cls}"><b class="note-letter">${LETTERS[i]}</b><p class="note-text">${esc(body.notes[i])}</p></div>`;
   }).join('');
+  // The explanation and the points to remember come first; the option-by-option notes open on a tap.
   return `
     ${verdict}
     <section class="explain" lang="${ql === 'hi' ? 'hi' : 'en'}">
       <div class="flow" aria-label="Topic flow">${flow}</div>
       <div class="why"><h3>📖 ${t('why')}</h3><p>${esc(body.explanation)}</p></div>
-      <h3 class="sub">🔎 ${t('aboutOptions')}</h3>
-      <div class="notes">${notes}</div>
       <div class="facts"><h3>📜 ${t('remember')}</h3><ul>${body.facts.map((f) => `<li>${esc(f)}</li>`).join('')}</ul></div>
+      <details class="more" data-keep="notes" ${prefs.notes ? 'open' : ''}><summary>🔎 ${t('aboutOptions')}</summary><div class="notes">${notes}</div></details>
       <p class="refs">📚 <b>${t('refs')}:</b> ${refsText(q.refs, ql)}</p>
     </section>`;
 }
@@ -963,23 +1143,67 @@ function resultsHTML(v, amHost) {
   const next = amHost
     ? `<button class="btn primary big" data-action="again">${t('playAgain')}</button>`
     : `<p class="muted center">${t('waitHost', esc(hostName(v)))}<span class="dots"></span></p>`;
+  const missed = missedQids();
+  const retry = amHost && v.solo && missed.length
+    ? `<button class="btn big" data-action="retry">🔁 ${t('retryWrong', missed.length)}</button>` : '';
   return `
-    ${rep ? assessmentHTML(rep) : ''}
-    ${v.solo ? '' : `<section class="card"><h2 class="ornate">${t('leaderboard')}</h2><div class="lb">${board}</div></section>`}
-    <div class="next-area">
+    ${rep ? assessmentHTML(rep, amHost && v.solo) : ''}
+    ${v.solo ? '' : `<section class="card results-wide"><h2 class="ornate">${t('leaderboard')}</h2><div class="lb">${board}</div></section>`}
+    ${historyHTML('results-wide')}
+    <div class="next-area results-wide">
+      ${retry}
       <button class="btn big" data-action="sheet">📄 ${t('answerSheet')}</button>
       ${next}
     </div>`;
 }
 
-function assessmentHTML(rep) {
+// Questions of the quiz just played that this player got wrong or left unanswered.
+function missedQids() {
+  return Object.keys(local.questions).map(Number).sort((a, b) => a - b)
+    .filter((r) => !local.mine[r] || local.mine[r].choice !== local.questions[r].answer)
+    .map((r) => local.questions[r].id);
+}
+
+const unitTitle = (id) => (unitById[id] ? `${unitById[id].icon} ${unitById[id][lang] || unitById[id].en}` : id);
+const meterRows = (rows, label) => rows.map(([k, [n, c]]) => `
+    <div class="meter"><span class="m-label" title="${esc(label(k))}">${esc(label(k))}</span><span class="m-bar"><i style="--w:${pct(c, n)}%" class="${pct(c, n) >= 75 ? 'hi' : pct(c, n) < 50 ? 'lo' : ''}"></i></span><span class="m-val">${c}/${n}</span></div>`).join('');
+
+// The trend over the last ten quizzes on this device, with accuracy by unit behind a tap.
+function historyHTML(cls = '') {
+  const list = readList('pp-history').filter((h) => h && h.n > 0).slice(-10);
+  if (!list.length) return '';
+  const accs = list.map((h) => pct(h.c, h.n));
+  const avg = Math.round(accs.reduce((a, b) => a + b, 0) / accs.length);
+  const note = t('lastQuizzes', list.length, avg, Math.max(...accs));
+  const units = {};
+  list.forEach((h) => Object.entries(h.u || {}).forEach(([u, [n, c]]) => {
+    units[u] = units[u] || [0, 0];
+    units[u][0] += n;
+    units[u][1] += c;
+  }));
+  const rows = UNITS.filter((u) => units[u.id]).map((u) => [u.id, units[u.id]]);
+  return `
+    <section class="card ${cls}">
+      <h2>📈 ${t('progress')}</h2>
+      <div class="trend" role="img" aria-label="${esc(note)}">${accs.map((a) => `<i style="--h:${Math.max(4, a)}%" class="${a >= 75 ? 'hi' : a < 50 ? 'lo' : ''}"><span>${a}</span></i>`).join('')}</div>
+      <p class="trend-note">${note}</p>
+      ${rows.length ? `<details class="more"><summary>${t('byUnitRecent')}</summary><div class="meters">${meterRows(rows, unitTitle)}</div></details>` : ''}
+    </section>`;
+}
+
+function assessmentHTML(rep, canRevise = false) {
   const acc = pct(rep.correct, rep.total);
   const [, rk, icon] = rankFor(acc);
   const secRows = Object.entries(rep.bySection).sort((a, b) => pct(b[1][1], b[1][0]) - pct(a[1][1], a[1][0]));
-  const bars = (rows, label) => rows.map(([k, [n, c]]) => `
-    <div class="meter"><span class="m-label">${esc(label(k))}</span><span class="m-bar"><i style="--w:${pct(c, n)}%" class="${pct(c, n) >= 75 ? 'hi' : pct(c, n) < 50 ? 'lo' : ''}"></i></span><span class="m-val">${c}/${n}</span></div>`).join('');
-  const strong = secRows.filter(([, [n, c]]) => n >= 2 && pct(c, n) >= 75).map(([k]) => sectionTitle(k));
-  const weak = secRows.filter(([, [n, c]]) => pct(c, n) < 50).map(([k]) => sectionTitle(k));
+  const byUnit = groupByUnit(rep.bySection);
+  const unitRows = UNITS.filter((u) => byUnit[u.id]).map((u) => [u.id, byUnit[u.id]]);
+  const strong = secRows.filter(([, [n, c]]) => n >= 2 && pct(c, n) >= 75).slice(0, 5).map(([k]) => sectionTitle(k));
+  // The five weakest sections, the ones with most questions missed first among equals.
+  const weak = secRows.filter(([, [n, c]]) => pct(c, n) < 50)
+    .sort((a, b) => pct(a[1][1], a[1][0]) - pct(b[1][1], b[1][0]) || (b[1][0] - b[1][1]) - (a[1][0] - a[1][1])).slice(0, 5);
+  const weakPills = weak.map(([k, [n, c]]) => (canRevise
+    ? `<button class="pill" data-action="revise" data-id="${esc(k)}">${esc(sectionTitle(k))} · ${c}/${n}</button>`
+    : `<span class="pill">${esc(sectionTitle(k))} · ${c}/${n}</span>`)).join('');
   const ringLen = Math.max(0, Math.min(100, acc));
   return `
     <section class="card assess">
@@ -999,21 +1223,25 @@ function assessmentHTML(rep) {
         <div><b>${(rep.avgMs / 1000).toFixed(1)}s</b><span>${t('avgTime')}</span></div>
         <div><b>${rep.bestStreak}</b><span>${t('bestStreak')}</span></div>
       </div>
-      <h3>${t('bySection')}</h3>
-      <div class="meters">${bars(secRows, (k) => sectionTitle(k))}</div>
+      <h3>${t('byUnit')}</h3>
+      <div class="meters">${meterRows(unitRows, unitTitle)}</div>
       <h3>${t('byLevel')}</h3>
-      <div class="meters">${bars(Object.entries(rep.byLevel), (k) => t(`level_${k}`))}</div>
+      <div class="meters">${meterRows(LEVELS.filter((l) => rep.byLevel[l]).map((l) => [l, rep.byLevel[l]]), (k) => t(`level_${k}`))}</div>
       <div class="sw">
         <div class="sw-box good"><h4>💪 ${t('strong')}</h4><p>${strong.length ? strong.map(esc).join(' · ') : t('noStrong')}</p></div>
-        <div class="sw-box bad"><h4>📚 ${t('weak')}</h4><p>${weak.length ? weak.map(esc).join(' · ') : '—'}</p></div>
+        <div class="sw-box bad"><h4>📚 ${t('weak')}</h4>${weak.length ? `<div class="chips">${weakPills}</div>${canRevise ? `<p class="small">${t('weakTap')}</p>` : ''}` : '<p>—</p>'}</div>
       </div>
+      <details class="more"><summary>${t('allSections', secRows.length)}</summary><div class="meters">${meterRows(secRows, (k) => sectionTitle(k))}</div></details>
     </section>`;
 }
 
 // ---------- answer sheet ----------
 function sheetHTML(v) {
   const sl = ui.sheetLang || lang;
-  const rounds = Object.keys(local.questions).map(Number).sort((a, b) => a - b);
+  const all = Object.keys(local.questions).map(Number).sort((a, b) => a - b);
+  const stateOf = (r) => (!local.mine[r] ? 'skipped' : local.mine[r].choice === local.questions[r].answer ? 'right' : 'wrong');
+  const inFilter = (f, r) => f === 'all' || (f === 'saved' ? marks.has(local.questions[r].id) : stateOf(r) === f);
+  const rounds = all.filter((r) => inFilter(ui.sheetFilter, r));
   const items = rounds.map((r) => {
     const q = local.questions[r];
     const mine = local.mine[r];
@@ -1028,25 +1256,35 @@ function sheetHTML(v) {
           <ul class="sh-notes">${b.options.map((o, i) => `<li><b>${LETTERS[i]}:</b> ${esc(b.notes[i])}</li>`).join('')}</ul>
         </div>`;
     }).join('');
-    const sec = q.id.replace(/-\d{3}$/, '');
+    const sec = sectionOf(q.id);
+    const hl = sl === 'hi' ? 'hi' : 'en';
     return `
-      <article class="sh-item">
-        <header><b>${r}.</b> <span>${esc(sectionTitle(sec, sl === 'hi' ? 'hi' : 'en'))}</span> <span class="q-level lvl-${q.level}">${q.level}</span>
+      <article class="sh-item" id="sh-${r}">
+        <header><b>${r}.</b> <span>${esc(sectionTitle(sec, hl))}</span> <span class="q-level lvl-${q.level}">${esc(T[hl][`level_${q.level}`])}</span>
+          <span class="no-print">${markButton(q.id)}</span>
           <span class="sh-ans">${t('rightAnswer')}: <b>${LETTERS[q.answer]}</b> · ${t('yourAnswerWas')}: <b>${mine ? LETTERS[mine.choice] : t('notAnswered')}</b></span></header>
         ${blocks}
-        <p class="refs">📚 ${refsText(q.refs, sl === 'hi' ? 'hi' : 'en')}</p>
+        <p class="refs">📚 ${refsText(q.refs, hl)}</p>
       </article>`;
   }).join('');
   const langBtn = (l, label) => `<button class="seg ${sl === l ? 'on' : ''}" data-action="sheet-lang" data-l="${l}">${label}</button>`;
+  const filterBtn = (f, label) => `<button class="seg ${ui.sheetFilter === f ? 'on' : ''}" data-action="sheet-filter" data-f="${f}">${label} (${all.filter((r) => inFilter(f, r)).length})</button>`;
+  const jump = rounds.map((r) => `<button class="${{ right: 'ok', wrong: 'bad' }[stateOf(r)] || ''}" data-action="jump" data-r="${r}" aria-label="${t('qOf', r, all.length)}">${r}</button>`).join('');
   return `
-    <section class="card sheet">
+    <section class="card sheet ${prefs.notes ? '' : 'brief'}">
       <div class="sheet-head">
         <h2 class="ornate">📄 ${t('answerSheet')}</h2>
         <div class="segs segs-3 no-print">${langBtn('en', 'English')}${langBtn('hi', 'हिन्दी')}${langBtn('both', t('both'))}</div>
-        <div class="row no-print"><button class="btn primary" data-action="print">🖨️ ${t('print')}</button><button class="btn" data-action="sheet-close">${t('close')}</button></div>
+        <div class="segs segs-4 no-print">${filterBtn('all', t('fAll'))}${filterBtn('wrong', t('fWrong'))}${filterBtn('skipped', t('fSkipped'))}${filterBtn('saved', t('fSaved'))}</div>
+        <div class="row no-print">
+          <button class="btn primary" data-action="print">🖨️ ${t('print')}</button>
+          <button class="btn" data-action="sheet-notes">🔎 ${prefs.notes ? t('hideNotes') : t('showNotes')}</button>
+          <button class="btn" data-action="sheet-close">${t('close')}</button>
+        </div>
+        ${rounds.length > 5 ? `<div class="jump no-print">${jump}</div>` : ''}
       </div>
       <p class="print-only sheet-title">GS HOUSE — ${t('answerSheet')} · ${esc(me.name)} · ${new Date().toLocaleDateString('en-IN')}</p>
-      ${items || `<p class="muted">${t('noneYet')}</p>`}
+      ${items || `<p class="muted">${all.length ? t('noneInFilter') : t('noneYet')}</p>`}
     </section>`;
 }
 
@@ -1060,7 +1298,7 @@ function updateRegions(v, amHost) {
       ${p.id === v.hostId ? `<span class="tag">${t('host')}</span>` : p.id === me.id ? `<span class="tag">${t('you')}</span>` : ''}</li>`).join(''));
     setHTML('setup', setupHTML(v, amHost));
     const st = v.settings;
-    const avail = st.sections.reduce((sum, id) => sum + countFor(id, st.level), 0);
+    const avail = st.sections.reduce((sum, id) => sum + countFor(id, st), 0);
     setHTML('start-area', amHost
       ? `<p class="muted small center">${st.sections.length ? t('available', avail, st.sections.length) : t('pickSection')}</p>
          <button class="btn primary big" data-action="start" ${avail ? '' : 'disabled'}>🪔 ${t('start')}</button>`
@@ -1110,12 +1348,13 @@ function frame() {
 
 // ---------- home and other screens ----------
 function renderHome() {
+  const typed = ui.screen === 'home' && $('#name') ? $('#name').value : me.name; // keep a name being typed across a redraw
   setScreen('home');
   const invited = normalizeCode(new URLSearchParams(location.search).get('room'));
   const total = Object.values(bankIndex.sections).reduce((sum, c) => sum + c.total, 0);
   const nameField = `
     <label class="field" id="name-field"><span>${t('yourName')}</span>
-      <input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(me.name)}" enterkeyhint="go">
+      <input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(typed)}" enterkeyhint="go">
     </label>`;
   const actions = invited
     ? `<form class="stack" data-form="join">
@@ -1139,7 +1378,7 @@ function renderHome() {
          <button class="btn">${t('join')}</button>
        </form>`;
   app.innerHTML = `
-    <div class="home-top"><button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">English</span><span class="${lang === 'hi' ? 'on' : ''}">हिन्दी</span></button></div>
+    <div class="home-top"><button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">English</span><span class="${lang === 'hi' ? 'on' : ''}">हिन्दी</span></button>${menuHTML()}</div>
     <section class="hero">
       ${LOTUS_SVG}
       <h1 class="title"><span class="t-main">GS HOUSE</span></h1>
@@ -1147,7 +1386,8 @@ function renderHome() {
       <p class="stats">${t('stats', SECTIONS.length, total)}</p>
     </section>
     <div id="install" class="install-area">${installHTML()}</div>
-    <section class="card stack">${actions}</section>`;
+    <section class="card stack">${actions}</section>
+    ${historyHTML()}`;
 }
 
 function showBusy(message) {
@@ -1245,12 +1485,45 @@ const actions = {
     const ms = Date.now() - (local.shownAt[v.round] || Date.now());
     local.mine[v.round] = { choice, ms };
     saveLocal();
-    if (q) { if (choice === q.answer) { sfx.right(); buzz(25); } else { sfx.wrong(); buzz([60, 40, 60]); } }
+    if (q) {
+      if (choice === q.answer) { sfx.right(); buzz(25); } else { sfx.wrong(); buzz([60, 40, 60]); }
+      noteAnswer(q.id, choice === q.answer);
+    }
     act({ type: 'answer', round: v.round, choice, ms });
     render();
   },
-  qlang(btn) { ui.qlang[ui.view.round] = btn.dataset.l; render(); },
+  // EN / हिं change one question; "Both" stays on for the questions that follow until it is turned off.
+  qlang(btn) {
+    const l = btn.dataset.l;
+    if (l === 'both') { setPref('both', true); delete ui.qlang[ui.view.round]; }
+    else { if (prefs.both) setPref('both', false); ui.qlang[ui.view.round] = l; }
+    refresh();
+  },
   lang() { setLang(lang === 'en' ? 'hi' : 'en'); },
+  mark(btn) {
+    const on = toggleMark(btn.dataset.id);
+    btn.classList.toggle('on', on);
+    btn.textContent = on ? '★' : '☆';
+    btn.setAttribute('aria-pressed', String(on));
+    toast(t(on ? 'saved' : 'unsaved'));
+  },
+  theme() { setPref('theme', isDark() ? 'light' : 'dark'); refresh(); },
+  both() { setPref('both', !prefs.both); ui.qlang = {}; refresh(); },
+  fs(btn) {
+    const at = FS_STEPS.indexOf(prefs.fs) + Number(btn.dataset.d);
+    if (at < 0 || at >= FS_STEPS.length) return;
+    setPref('fs', FS_STEPS[at]);
+    refresh();
+  },
+  'all-secs'() {
+    const st = ui.view.settings;
+    const ids = SECTIONS.filter((s) => trackOk(s, st.track) && countFor(s.id, st) > 0).map((s) => s.id);
+    act({ type: 'settings', sections: ids.every((id) => st.sections.includes(id)) ? [] : ids });
+  },
+  'quick-marks': () => act({ type: 'quick', qids: [...marks] }),
+  'quick-wrong': () => act({ type: 'quick', qids: [...mistakes] }),
+  retry: () => act({ type: 'quick', qids: missedQids() }),
+  revise: (btn) => act({ type: 'quick', sections: [btn.dataset.id] }),
   set(btn) {
     const v = ui.view;
     const key = btn.dataset.key;
@@ -1274,7 +1547,7 @@ const actions = {
   'unit-all'(btn) {
     const v = ui.view;
     const st = v.settings;
-    const ids = SECTIONS.filter((s) => s.unit === btn.dataset.id && trackOk(s, st.track) && countFor(s.id, st.level) > 0).map((s) => s.id);
+    const ids = SECTIONS.filter((s) => s.unit === btn.dataset.id && trackOk(s, st.track) && countFor(s.id, st) > 0).map((s) => s.id);
     const allOn = ids.every((id) => st.sections.includes(id));
     const next = allOn ? st.sections.filter((id) => !ids.includes(id)) : [...new Set([...st.sections, ...ids])];
     act({ type: 'settings', sections: next });
@@ -1282,9 +1555,15 @@ const actions = {
   start: () => act({ type: 'start' }),
   next: () => act({ type: 'next' }),
   again: () => act({ type: 'again' }),
-  sheet() { ui.sheet = true; ui.sheetLang = lang; render(); window.scrollTo(0, 0); },
+  sheet() { ui.sheet = true; ui.sheetLang = lang; ui.sheetFilter = 'all'; render(); window.scrollTo(0, 0); },
   'sheet-close'() { ui.sheet = false; render(); },
-  'sheet-lang'(btn) { ui.sheetLang = btn.dataset.l; render(); },
+  'sheet-lang'(btn) { ui.sheetLang = btn.dataset.l; refresh(); },
+  'sheet-filter'(btn) { ui.sheetFilter = btn.dataset.f; refresh(); },
+  'sheet-notes'() { setPref('notes', !prefs.notes); refresh(); },
+  jump(btn) {
+    const el = document.getElementById(`sh-${btn.dataset.r}`);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  },
   print: () => window.print(),
   copy: copyInvite,
   share() {
@@ -1298,7 +1577,7 @@ const actions = {
     installPrompt = null;
     renderInstall();
   },
-  mute(btn) { btn.textContent = sfx.toggle() ? '🔇' : '🔊'; },
+  mute() { sfx.toggle(); refresh(); },
   leave() {
     const msg = !net ? t('leaveSolo') : net.role === 'host' ? (net.solo ? t('leaveSolo') : t('leaveHost')) : t('leaveGuest');
     if (window.confirm(msg)) leaveGame();
@@ -1318,10 +1597,40 @@ function readName() {
 }
 
 document.addEventListener('click', (e) => {
+  const openMenu = document.querySelector('.menu[open]');
+  if (openMenu && !e.target.closest('.menu')) { openMenu.open = false; ui.menuOpen = false; } // a tap outside closes the menu
   const el = e.target.closest('[data-action]');
   if (!el || el.disabled || !actions[el.dataset.action]) return;
   if (el.tagName === 'INPUT') return; // checkboxes are handled on change
   actions[el.dataset.action](el, e);
+});
+
+// Remember which fold-out parts are open: the settings menu across redraws, the option notes for good.
+document.addEventListener('toggle', (e) => {
+  const el = e.target;
+  if (!el || !el.dataset) return;
+  if (el.dataset.keep === 'menu') ui.menuOpen = el.open;
+  if (el.dataset.keep === 'notes' && prefs.notes !== el.open) setPref('notes', el.open);
+}, true);
+
+// Keyboard on a computer: A–D or 1–4 answer the question, Enter (or N, →) goes to the next one.
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
+  const v = ui.view;
+  if (ui.screen !== 'game' || !v || ui.sheet || v.phase !== 'question') return;
+  const on = e.target instanceof Element ? e.target : null;
+  if (on && on.closest('input, textarea, select')) return;
+  const key = e.key.toLowerCase();
+  const choice = key.length === 1 ? Math.max('abcd'.indexOf(key), '1234'.indexOf(key)) : -1;
+  if (choice >= 0) {
+    const btn = document.querySelector(`.opt[data-i="${choice}"]`);
+    if (btn && !btn.disabled) { e.preventDefault(); actions.pick(btn); }
+    return;
+  }
+  if (key === 'enter' || key === 'n' || key === 'arrowright') {
+    if (key === 'enter' && on && on.closest('button, a, summary')) return; // the focused control acts on Enter itself
+    if (document.querySelector('#next-area [data-action="next"]')) { e.preventDefault(); actions.next(); }
+  }
 });
 document.addEventListener('change', (e) => {
   const el = e.target.closest('input[data-action]');

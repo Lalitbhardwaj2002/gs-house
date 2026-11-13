@@ -32,3 +32,10 @@ Checked `data/draft/hist-maurya.json` (42 questions, owner cap) → `data/hist-m
 ## For the writer (cap permitting, by swapping weaker items)
 - Art schools are not covered: Gandhara, Mathura and Amaravati (materials, patrons, features).
 - Kanishka beyond the council (Shaka era, Ashvaghosha, Charaka, Rabatak) and Satavahana polity (land grants, matrilineal names, Prakrit) are thin.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 22 (002 004 006 008 010 011 012 013 016 017 020 023 024 025 026 028 030 035 036 038 041 042). All answer keys confirmed. Replaced: none.
+- hist-maurya-017, -020: Hindi spelling वृहद् corrected to बृहद्.
+- hist-maurya-024: note on option A ('no major event dated') replaced with a safe statement.
+- hist-maurya-038: Hindi spelling of Tushaspha made consistent (तुषास्फ).

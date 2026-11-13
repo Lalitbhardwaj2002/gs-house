@@ -1,411 +1,1295 @@
 {
-  "section": "pol-state",
-  "questions": [
+ "section": "pol-state",
+ "questions": [
+  {
+   "id": "pol-state-001",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The oath of office to the Governor of a State is administered by:",
+    "options": [
+     "The President of India",
+     "The Chief Justice of the High Court of that State",
+     "The Chief Justice of India",
+     "The Speaker of the State Legislative Assembly"
+    ],
+    "explanation": "Under Article 159, the Governor takes the oath before the Chief Justice of the High Court exercising jurisdiction over the State. In his absence, the senior-most available Judge of that High Court administers it.",
+    "notes": [
+     "President of India: appoints the Governor by warrant under his hand and seal (Article 155) but does not administer the oath.",
+     "Chief Justice of the High Court: administers the Governor's oath under Article 159.",
+     "Chief Justice of India: administers the oath to the President (Article 60).",
+     "Speaker of the Legislative Assembly: has no role in the Governor's oath."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Governor",
+     "Oath"
+    ],
+    "facts": [
+     "Under Article 160, the President may provide for the discharge of the Governor's functions in any contingency not provided for in the Constitution.",
+     "The Governor holds office during the pleasure of the President (Article 156(1))."
+    ]
+   },
+   "hi": {
+    "q": "किसी राज्य के राज्यपाल को पद की शपथ कौन दिलाता है?",
+    "options": [
+     "भारत का राष्ट्रपति",
+     "उस राज्य के उच्च न्यायालय का मुख्य न्यायाधीश",
+     "भारत का मुख्य न्यायाधीश",
+     "राज्य विधानसभा का अध्यक्ष"
+    ],
+    "explanation": "अनुच्छेद 159 के अनुसार राज्यपाल उस राज्य पर क्षेत्राधिकार रखने वाले उच्च न्यायालय के मुख्य न्यायाधीश के समक्ष शपथ लेता है। उसकी अनुपस्थिति में उस उच्च न्यायालय का वरिष्ठतम उपलब्ध न्यायाधीश शपथ दिलाता है।",
+    "notes": [
+     "भारत का राष्ट्रपति: अपने हस्ताक्षर और मुद्रा सहित अधिपत्र द्वारा राज्यपाल की नियुक्ति करता है (अनुच्छेद 155), शपथ नहीं दिलाता।",
+     "उच्च न्यायालय का मुख्य न्यायाधीश: अनुच्छेद 159 के अंतर्गत राज्यपाल को शपथ दिलाता है।",
+     "भारत का मुख्य न्यायाधीश: राष्ट्रपति को शपथ दिलाता है (अनुच्छेद 60)।",
+     "विधानसभा अध्यक्ष: राज्यपाल की शपथ में इसकी कोई भूमिका नहीं।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "राज्यपाल",
+     "शपथ"
+    ],
+    "facts": [
+     "अनुच्छेद 160 के अंतर्गत राष्ट्रपति ऐसी किसी आकस्मिकता में, जिसका संविधान में उपबंध नहीं है, राज्यपाल के कृत्यों के निर्वहन का उपबंध कर सकता है।",
+     "राज्यपाल राष्ट्रपति के प्रसादपर्यंत पद धारण करता है (अनुच्छेद 156(1))।"
+    ]
+   },
+   "refs": [
     {
-      "id": "pol-state-001",
-      "level": "TGT",
-      "answer": 1,
-      "en": {
-        "q": "The oath of office to the Governor of a State is administered by:",
-        "options": [
-          "The President of India",
-          "The Chief Justice of the High Court of that State",
-          "The Chief Justice of India",
-          "The Speaker of the State Legislative Assembly"
-        ],
-        "explanation": "Under Article 159, the Governor takes the oath before the Chief Justice of the High Court exercising jurisdiction over the State. In his absence, the senior-most available Judge of that High Court administers it.",
-        "notes": [
-          "President of India: appoints the Governor by warrant under his hand and seal (Article 155) but does not administer the oath.",
-          "Chief Justice of the High Court: administers the Governor's oath under Article 159.",
-          "Chief Justice of India: administers the oath to the President (Article 60).",
-          "Speaker of the Legislative Assembly: has no role in the Governor's oath."
-        ],
-        "path": [
-          "Indian Polity",
-          "State Government",
-          "Governor",
-          "Oath"
-        ],
-        "facts": [
-          "A Governor must be a citizen of India and must have completed 35 years of age (Article 157).",
-          "The Governor holds office during the pleasure of the President (Article 156(1))."
-        ]
-      },
-      "hi": {
-        "q": "किसी राज्य के राज्यपाल को पद की शपथ कौन दिलाता है?",
-        "options": [
-          "भारत का राष्ट्रपति",
-          "उस राज्य के उच्च न्यायालय का मुख्य न्यायाधीश",
-          "भारत का मुख्य न्यायाधीश",
-          "राज्य विधानसभा का अध्यक्ष"
-        ],
-        "explanation": "अनुच्छेद 159 के अनुसार राज्यपाल उस राज्य पर क्षेत्राधिकार रखने वाले उच्च न्यायालय के मुख्य न्यायाधीश के समक्ष शपथ लेता है। उसकी अनुपस्थिति में उस उच्च न्यायालय का वरिष्ठतम उपलब्ध न्यायाधीश शपथ दिलाता है।",
-        "notes": [
-          "भारत का राष्ट्रपति: अपने हस्ताक्षर और मुद्रा सहित अधिपत्र द्वारा राज्यपाल की नियुक्ति करता है (अनुच्छेद 155), शपथ नहीं दिलाता।",
-          "उच्च न्यायालय का मुख्य न्यायाधीश: अनुच्छेद 159 के अंतर्गत राज्यपाल को शपथ दिलाता है।",
-          "भारत का मुख्य न्यायाधीश: राष्ट्रपति को शपथ दिलाता है (अनुच्छेद 60)।",
-          "विधानसभा अध्यक्ष: राज्यपाल की शपथ में इसकी कोई भूमिका नहीं।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "राज्य सरकार",
-          "राज्यपाल",
-          "शपथ"
-        ],
-        "facts": [
-          "राज्यपाल को भारत का नागरिक और 35 वर्ष की आयु पूरी कर चुका होना चाहिए (अनुच्छेद 157)।",
-          "राज्यपाल राष्ट्रपति के प्रसादपर्यंत पद धारण करता है (अनुच्छेद 156(1))।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 173
-        },
-        {
-          "source": "Constitution of India, Articles 155–159"
-        }
-      ]
+     "book": "fatman",
+     "page": 173
     },
     {
-      "id": "pol-state-002",
-      "level": "TGT",
-      "answer": 0,
-      "en": {
-        "q": "The total number of elected members of the Uttar Pradesh Legislative Assembly (Vidhan Sabha) is:",
-        "options": [
-          "403",
-          "404",
-          "425",
-          "402"
-        ],
-        "explanation": "The Uttar Pradesh Vidhan Sabha has 403 members elected from 403 assembly constituencies. The number fell from 425 to 403 when Uttarakhand was carved out of Uttar Pradesh in November 2000.",
-        "notes": [
-          "403: the present number of elected seats in the Uttar Pradesh Vidhan Sabha.",
-          "404: the strength when one Anglo-Indian member was also nominated, a provision that ended in January 2020.",
-          "425: the number of elected seats before Uttarakhand was formed in 2000.",
-          "402: not the strength of the Uttar Pradesh Assembly at any time."
-        ],
-        "path": [
-          "Indian Polity",
-          "State Legislature",
-          "Uttar Pradesh",
-          "Vidhan Sabha"
-        ],
-        "facts": [
-          "Uttar Pradesh has a bicameral legislature: the Vidhan Sabha (403) and the Vidhan Parishad (100).",
-          "Uttar Pradesh elects 80 members to the Lok Sabha and 31 to the Rajya Sabha, the most of any State."
-        ]
-      },
-      "hi": {
-        "q": "उत्तर प्रदेश विधानसभा के निर्वाचित सदस्यों की कुल संख्या है:",
-        "options": [
-          "403",
-          "404",
-          "425",
-          "402"
-        ],
-        "explanation": "उत्तर प्रदेश विधानसभा में 403 विधानसभा निर्वाचन क्षेत्रों से निर्वाचित 403 सदस्य होते हैं। नवंबर 2000 में उत्तर प्रदेश से उत्तराखंड के गठन के बाद यह संख्या 425 से घटकर 403 हो गई।",
-        "notes": [
-          "403: उत्तर प्रदेश विधानसभा की वर्तमान निर्वाचित सीटें।",
-          "404: तब की संख्या जब एक आंग्ल-भारतीय सदस्य भी मनोनीत होता था; यह प्रावधान जनवरी 2020 में समाप्त हो गया।",
-          "425: वर्ष 2000 में उत्तराखंड के गठन से पहले की निर्वाचित सीटें।",
-          "402: उत्तर प्रदेश विधानसभा की संख्या कभी नहीं रही।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "राज्य विधानमंडल",
-          "उत्तर प्रदेश",
-          "विधानसभा"
-        ],
-        "facts": [
-          "उत्तर प्रदेश में द्विसदनीय विधानमंडल है: विधानसभा (403) और विधान परिषद (100)।",
-          "उत्तर प्रदेश लोकसभा में 80 और राज्यसभा में 31 सदस्य भेजता है, जो किसी भी राज्य से अधिक है।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "Representation of the People Act, 1950, Second Schedule (Uttar Pradesh: 403 seats)"
-        },
-        {
-          "source": "Delimitation of Parliamentary and Assembly Constituencies Order, 2008 (Election Commission of India)"
-        },
-        {
-          "book": "fatman",
-          "page": 173
-        }
-      ]
-    },
-    {
-      "id": "pol-state-003",
-      "level": "PGT",
-      "answer": 3,
-      "en": {
-        "q": "Consider the following statements regarding the Legislative Council of a State:\n1. Parliament may by law abolish or create a Legislative Council if the Legislative Assembly of the State passes a resolution to that effect by a majority of its total membership and by a majority of not less than two-thirds of the members present and voting.\n2. Such a law is not deemed to be an amendment of the Constitution for the purposes of Article 368.\n3. The total number of members of a Legislative Council shall not exceed one-half of the total number of members of the Legislative Assembly of that State.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 1",
-          "2 and 3 only",
-          "1, 2 and 3",
-          "1 and 2 only"
-        ],
-        "explanation": "Statements 1 and 2 restate Article 169: Parliament acts on a special-majority resolution of the Assembly, and the law is not treated as a constitutional amendment under Article 368. Statement 3 is wrong: Article 171(1) caps the Council at one-third of the Assembly's strength, with a minimum of 40 members.",
-        "notes": [
-          "Only 1: incomplete, because statement 2 (Article 169(3)) is also correct.",
-          "2 and 3 only: wrong, because the limit is one-third, not one-half.",
-          "1, 2 and 3: wrong, because statement 3 is incorrect.",
-          "1 and 2 only: correct; both restate Article 169."
-        ],
-        "path": [
-          "Indian Polity",
-          "State Legislature",
-          "Legislative Council",
-          "Creation and abolition"
-        ],
-        "facts": [
-          "Six States (as of October 2026) have a Legislative Council: Uttar Pradesh, Bihar, Maharashtra, Karnataka, Andhra Pradesh and Telangana.",
-          "A Legislative Council is a permanent body; one-third of its members retire every second year (Article 172(2))."
-        ]
-      },
-      "hi": {
-        "q": "किसी राज्य की विधान परिषद के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. यदि राज्य की विधानसभा अपनी कुल सदस्य संख्या के बहुमत तथा उपस्थित और मत देने वाले सदस्यों के कम से कम दो-तिहाई बहुमत से संकल्प पारित करे, तो संसद विधि द्वारा विधान परिषद का उत्सादन या सृजन कर सकती है।\n2. ऐसी विधि को अनुच्छेद 368 के प्रयोजनों के लिए संविधान का संशोधन नहीं माना जाता।\n3. विधान परिषद के सदस्यों की कुल संख्या उस राज्य की विधानसभा के कुल सदस्यों के आधे से अधिक नहीं होगी।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
-        "options": [
-          "केवल 1",
-          "केवल 2 और 3",
-          "1, 2 और 3",
-          "केवल 1 और 2"
-        ],
-        "explanation": "कथन 1 और 2 अनुच्छेद 169 के अनुरूप हैं: संसद विधानसभा के विशेष बहुमत वाले संकल्प पर विधि बनाती है, और यह विधि अनुच्छेद 368 के अंतर्गत संविधान संशोधन नहीं मानी जाती। कथन 3 गलत है: अनुच्छेद 171(1) के अनुसार परिषद की सदस्य संख्या विधानसभा के एक-तिहाई से अधिक नहीं हो सकती, और न्यूनतम 40 होगी।",
-        "notes": [
-          "केवल 1: अपूर्ण, क्योंकि कथन 2 (अनुच्छेद 169(3)) भी सही है।",
-          "केवल 2 और 3: गलत, क्योंकि सीमा एक-तिहाई है, आधी नहीं।",
-          "1, 2 और 3: गलत, क्योंकि कथन 3 असत्य है।",
-          "केवल 1 और 2: सही; दोनों अनुच्छेद 169 के अनुरूप हैं।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "राज्य विधानमंडल",
-          "विधान परिषद",
-          "सृजन एवं उत्सादन"
-        ],
-        "facts": [
-          "छह राज्यों (अक्टूबर 2026 तक) में विधान परिषद है: उत्तर प्रदेश, बिहार, महाराष्ट्र, कर्नाटक, आंध्र प्रदेश और तेलंगाना।",
-          "विधान परिषद एक स्थायी सदन है; इसके एक-तिहाई सदस्य प्रत्येक दूसरे वर्ष सेवानिवृत्त होते हैं (अनुच्छेद 172(2))।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "Constitution of India, Articles 169, 171 and 172"
-        },
-        {
-          "book": "fatman",
-          "page": 173
-        }
-      ]
-    },
-    {
-      "id": "pol-state-004",
-      "level": "PGT",
-      "answer": 2,
-      "en": {
-        "q": "Consider the following statements regarding the Advocate General of a State:\n1. He is appointed by the Governor and must be qualified to be appointed a Judge of a High Court.\n2. He holds office for a fixed term of five years.\n3. He has the right to speak in and take part in the proceedings of the State Legislature, but not to vote.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 1",
-          "1 and 2 only",
-          "1 and 3 only",
-          "2 and 3 only"
-        ],
-        "explanation": "Under Article 165 the Governor appoints a person qualified to be a High Court Judge as Advocate General, and Article 177 gives him the right to speak in the Legislature without a vote. Statement 2 is wrong: he holds office during the pleasure of the Governor, with no fixed term.",
-        "notes": [
-          "Only 1: incomplete, because statement 3 (Article 177) is also correct.",
-          "1 and 2 only: wrong, because the Constitution fixes no term for the Advocate General.",
-          "1 and 3 only: correct; both restate Articles 165 and 177.",
-          "2 and 3 only: wrong, because statement 2 is incorrect."
-        ],
-        "path": [
-          "Indian Polity",
-          "State Government",
-          "Advocate General",
-          "Article 165"
-        ],
-        "facts": [
-          "The Advocate General is the highest law officer of the State, the counterpart of the Attorney General for India.",
-          "His remuneration is determined by the Governor (Article 165(3))."
-        ]
-      },
-      "hi": {
-        "q": "किसी राज्य के महाधिवक्ता के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. उसकी नियुक्ति राज्यपाल करता है और उसे उच्च न्यायालय का न्यायाधीश नियुक्त होने की योग्यता रखनी चाहिए।\n2. वह पाँच वर्ष के निश्चित कार्यकाल के लिए पद धारण करता है।\n3. उसे राज्य विधानमंडल में बोलने और उसकी कार्यवाही में भाग लेने का अधिकार है, किंतु मत देने का नहीं।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
-        "options": [
-          "केवल 1",
-          "केवल 1 और 2",
-          "केवल 1 और 3",
-          "केवल 2 और 3"
-        ],
-        "explanation": "अनुच्छेद 165 के अनुसार राज्यपाल उच्च न्यायालय का न्यायाधीश बनने योग्य व्यक्ति को महाधिवक्ता नियुक्त करता है, और अनुच्छेद 177 उसे बिना मताधिकार के विधानमंडल में बोलने का अधिकार देता है। कथन 2 गलत है: वह राज्यपाल के प्रसादपर्यंत पद धारण करता है, उसका कोई निश्चित कार्यकाल नहीं है।",
-        "notes": [
-          "केवल 1: अपूर्ण, क्योंकि कथन 3 (अनुच्छेद 177) भी सही है।",
-          "केवल 1 और 2: गलत, क्योंकि संविधान महाधिवक्ता का कोई कार्यकाल निर्धारित नहीं करता।",
-          "केवल 1 और 3: सही; दोनों अनुच्छेद 165 और 177 के अनुरूप हैं।",
-          "केवल 2 और 3: गलत, क्योंकि कथन 2 असत्य है।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "राज्य सरकार",
-          "महाधिवक्ता",
-          "अनुच्छेद 165"
-        ],
-        "facts": [
-          "महाधिवक्ता राज्य का सर्वोच्च विधि अधिकारी है, जो भारत के महान्यायवादी के समकक्ष है।",
-          "उसका पारिश्रमिक राज्यपाल निर्धारित करता है (अनुच्छेद 165(3))।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 173
-        },
-        {
-          "book": "fatman",
-          "page": 174
-        },
-        {
-          "source": "Constitution of India, Articles 165 and 177"
-        }
-      ]
-    },
-    {
-      "id": "pol-state-005",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Match List-I with List-II regarding the composition of the Uttar Pradesh Legislative Council (Vidhan Parishad) and select the correct answer using the codes given below the lists:\nList-I (Category of members): A. Elected by the members of the Legislative Assembly B. Elected by local authorities' constituencies C. Elected by graduates' constituencies D. Nominated by the Governor\nList-II (Number of members): 1. 10 2. 8 3. 36 4. 38",
-        "options": [
-          "A-4, B-3, C-2, D-1",
-          "A-3, B-4, C-2, D-1",
-          "A-4, B-3, C-1, D-2",
-          "A-3, B-4, C-1, D-2"
-        ],
-        "explanation": "The 100-member Uttar Pradesh Vidhan Parishad has 38 members elected by MLAs, 36 by local authorities, 8 by graduates, 8 by teachers and 10 nominated by the Governor. This follows the broad scheme of Article 171(3), with the exact numbers fixed by the Third Schedule of the Representation of the People Act, 1950.",
-        "notes": [
-          "A-4, B-3, C-2, D-1: the correct matching (38, 36, 8, 10).",
-          "A-3, B-4: wrong; MLAs elect 38 and local authorities 36, not the reverse.",
-          "C-1, D-2: wrong; graduates elect 8 and the Governor nominates 10.",
-          "A-3, B-4, C-1, D-2: wrong; it reverses both pairs."
-        ],
-        "path": [
-          "Indian Polity",
-          "State Legislature",
-          "Uttar Pradesh",
-          "Vidhan Parishad"
-        ],
-        "facts": [
-          "Teachers' constituencies also elect 8 members to the Uttar Pradesh Vidhan Parishad.",
-          "Under Article 171(5), the Governor nominates members with special knowledge of literature, science, art, the co-operative movement and social service."
-        ]
-      },
-      "hi": {
-        "q": "उत्तर प्रदेश विधान परिषद की संरचना के संबंध में सूची-I को सूची-II से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I (सदस्यों की श्रेणी): A. विधानसभा सदस्यों द्वारा निर्वाचित B. स्थानीय प्राधिकारी निर्वाचन क्षेत्रों द्वारा निर्वाचित C. स्नातक निर्वाचन क्षेत्रों द्वारा निर्वाचित D. राज्यपाल द्वारा मनोनीत\nसूची-II (सदस्य संख्या): 1. 10 2. 8 3. 36 4. 38",
-        "options": [
-          "A-4, B-3, C-2, D-1",
-          "A-3, B-4, C-2, D-1",
-          "A-4, B-3, C-1, D-2",
-          "A-3, B-4, C-1, D-2"
-        ],
-        "explanation": "100 सदस्यीय उत्तर प्रदेश विधान परिषद में 38 सदस्य विधायकों द्वारा, 36 स्थानीय प्राधिकारियों द्वारा, 8 स्नातकों द्वारा और 8 शिक्षकों द्वारा निर्वाचित होते हैं तथा 10 राज्यपाल द्वारा मनोनीत होते हैं। यह अनुच्छेद 171(3) की सामान्य योजना पर आधारित है, और सटीक संख्या लोक प्रतिनिधित्व अधिनियम, 1950 की तीसरी अनुसूची में निर्धारित है।",
-        "notes": [
-          "A-4, B-3, C-2, D-1: सही सुमेलन (38, 36, 8, 10)।",
-          "A-3, B-4: गलत; विधायक 38 और स्थानीय प्राधिकारी 36 सदस्य चुनते हैं, इसका उलटा नहीं।",
-          "C-1, D-2: गलत; स्नातक 8 सदस्य चुनते हैं और राज्यपाल 10 मनोनीत करता है।",
-          "A-3, B-4, C-1, D-2: गलत; इसमें दोनों युग्म उलट दिए गए हैं।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "राज्य विधानमंडल",
-          "उत्तर प्रदेश",
-          "विधान परिषद"
-        ],
-        "facts": [
-          "शिक्षक निर्वाचन क्षेत्र भी उत्तर प्रदेश विधान परिषद में 8 सदस्य चुनते हैं।",
-          "अनुच्छेद 171(5) के अंतर्गत राज्यपाल साहित्य, विज्ञान, कला, सहकारी आंदोलन और समाज सेवा का विशेष ज्ञान रखने वाले व्यक्तियों को मनोनीत करता है।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "Representation of the People Act, 1950, Third Schedule (Uttar Pradesh entry as substituted by the Uttar Pradesh Reorganisation (Amendment) Act, 2003)"
-        },
-        {
-          "source": "Constitution of India, Article 171"
-        },
-        {
-          "book": "fatman",
-          "page": 174
-        }
-      ]
-    },
-    {
-      "id": "pol-state-006",
-      "level": "Higher",
-      "answer": 3,
-      "en": {
-        "q": "Consider the following statements regarding the Chief Minister and the State Council of Ministers:\n1. The Chief Minister is appointed by the Governor.\n2. Under Article 164(1A), the total number of Ministers, including the Chief Minister, shall not exceed 15 per cent of the total number of members of the Legislative Assembly, but shall not be less than 12.\n3. A Minister who is not a member of the State Legislature for any period of six consecutive months ceases to be a Minister at the end of that period.\n4. The Council of Ministers is collectively responsible to the Governor.\nWhich of the statements given above are correct?",
-        "options": [
-          "1 and 2 only",
-          "2, 3 and 4 only",
-          "1, 3 and 4 only",
-          "1, 2 and 3 only"
-        ],
-        "explanation": "Article 164(1) provides for the appointment of the Chief Minister by the Governor, Article 164(1A), inserted by the 91st Amendment Act, 2003, sets the 15 per cent ceiling with a minimum of 12, and Article 164(4) fixes the six-month rule. Statement 4 is wrong: under Article 164(2) the Council of Ministers is collectively responsible to the Legislative Assembly.",
-        "notes": [
-          "1 and 2 only: incomplete, because statement 3 (Article 164(4)) is also correct.",
-          "2, 3 and 4 only: wrong, because statement 4 is incorrect and statement 1 is left out.",
-          "1, 3 and 4 only: wrong, because collective responsibility is to the Legislative Assembly.",
-          "1, 2 and 3 only: correct; these restate Article 164(1), (1A) and (4)."
-        ],
-        "path": [
-          "Indian Polity",
-          "State Government",
-          "Chief Minister",
-          "Council of Ministers"
-        ],
-        "facts": [
-          "Ministers hold office during the pleasure of the Governor (Article 164(1)).",
-          "Under Article 167, the Chief Minister must communicate the decisions of the Council of Ministers to the Governor."
-        ]
-      },
-      "hi": {
-        "q": "मुख्यमंत्री और राज्य मंत्रिपरिषद के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. मुख्यमंत्री की नियुक्ति राज्यपाल करता है।\n2. अनुच्छेद 164(1क) के अनुसार मुख्यमंत्री सहित मंत्रियों की कुल संख्या विधानसभा के कुल सदस्यों के 15 प्रतिशत से अधिक नहीं होगी, किंतु 12 से कम भी नहीं होगी।\n3. जो मंत्री लगातार छह मास की किसी अवधि तक राज्य विधानमंडल का सदस्य नहीं रहता, वह उस अवधि की समाप्ति पर मंत्री नहीं रहेगा।\n4. मंत्रिपरिषद सामूहिक रूप से राज्यपाल के प्रति उत्तरदायी होती है।\nउपर्युक्त में से कौन-से कथन सही हैं?",
-        "options": [
-          "केवल 1 और 2",
-          "केवल 2, 3 और 4",
-          "केवल 1, 3 और 4",
-          "केवल 1, 2 और 3"
-        ],
-        "explanation": "अनुच्छेद 164(1) राज्यपाल द्वारा मुख्यमंत्री की नियुक्ति, 91वें संशोधन अधिनियम, 2003 द्वारा जोड़ा गया अनुच्छेद 164(1क) 15 प्रतिशत की अधिकतम और 12 की न्यूनतम सीमा, तथा अनुच्छेद 164(4) छह मास का नियम निर्धारित करता है। कथन 4 गलत है: अनुच्छेद 164(2) के अनुसार मंत्रिपरिषद सामूहिक रूप से विधानसभा के प्रति उत्तरदायी है।",
-        "notes": [
-          "केवल 1 और 2: अपूर्ण, क्योंकि कथन 3 (अनुच्छेद 164(4)) भी सही है।",
-          "केवल 2, 3 और 4: गलत, क्योंकि कथन 4 असत्य है और कथन 1 छोड़ दिया गया है।",
-          "केवल 1, 3 और 4: गलत, क्योंकि सामूहिक उत्तरदायित्व विधानसभा के प्रति है।",
-          "केवल 1, 2 और 3: सही; ये अनुच्छेद 164(1), (1क) और (4) के अनुरूप हैं।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "राज्य सरकार",
-          "मुख्यमंत्री",
-          "मंत्रिपरिषद"
-        ],
-        "facts": [
-          "मंत्री राज्यपाल के प्रसादपर्यंत पद धारण करते हैं (अनुच्छेद 164(1))।",
-          "अनुच्छेद 167 के अनुसार मुख्यमंत्री मंत्रिपरिषद के निर्णयों की सूचना राज्यपाल को देता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 173
-        },
-        {
-          "source": "Constitution of India, Article 164 (as amended by the 91st Amendment Act, 2003)"
-        }
-      ]
+     "source": "Constitution of India, Articles 155–159"
     }
-  ]
+   ]
+  },
+  {
+   "id": "pol-state-002",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The total number of elected members of the Uttar Pradesh Legislative Assembly (Vidhan Sabha) is:",
+    "options": [
+     "403",
+     "404",
+     "425",
+     "402"
+    ],
+    "explanation": "The Uttar Pradesh Vidhan Sabha has 403 members elected from 403 assembly constituencies. The number fell from 425 to 403 when Uttarakhand was carved out of Uttar Pradesh in November 2000.",
+    "notes": [
+     "403: the present number of elected seats in the Uttar Pradesh Vidhan Sabha.",
+     "404: the strength when one Anglo-Indian member was also nominated, a provision that ended in January 2020.",
+     "425: the number of elected seats before Uttarakhand was formed in 2000.",
+     "402: not the strength of the Uttar Pradesh Assembly at any time."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Legislature",
+     "Uttar Pradesh",
+     "Vidhan Sabha"
+    ],
+    "facts": [
+     "Uttar Pradesh has a bicameral legislature: the Vidhan Sabha (403) and the Vidhan Parishad (100).",
+     "The Vidhan Sabha and the Vidhan Parishad of Uttar Pradesh sit in the Vidhan Bhavan, Lucknow."
+    ]
+   },
+   "hi": {
+    "q": "उत्तर प्रदेश विधानसभा के निर्वाचित सदस्यों की कुल संख्या है:",
+    "options": [
+     "403",
+     "404",
+     "425",
+     "402"
+    ],
+    "explanation": "उत्तर प्रदेश विधानसभा में 403 विधानसभा निर्वाचन क्षेत्रों से निर्वाचित 403 सदस्य होते हैं। नवंबर 2000 में उत्तर प्रदेश से उत्तराखंड के गठन के बाद यह संख्या 425 से घटकर 403 हो गई।",
+    "notes": [
+     "403: उत्तर प्रदेश विधानसभा की वर्तमान निर्वाचित सीटें।",
+     "404: तब की संख्या जब एक आंग्ल-भारतीय सदस्य भी मनोनीत होता था; यह प्रावधान जनवरी 2020 में समाप्त हो गया।",
+     "425: वर्ष 2000 में उत्तराखंड के गठन से पहले की निर्वाचित सीटें।",
+     "402: उत्तर प्रदेश विधानसभा की संख्या कभी नहीं रही।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य विधानमंडल",
+     "उत्तर प्रदेश",
+     "विधानसभा"
+    ],
+    "facts": [
+     "उत्तर प्रदेश में द्विसदनीय विधानमंडल है: विधानसभा (403) और विधान परिषद (100)।",
+     "उत्तर प्रदेश की विधानसभा और विधान परिषद लखनऊ स्थित विधान भवन में बैठती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Representation of the People Act, 1950, Second Schedule (Uttar Pradesh: 403 seats)"
+    },
+    {
+     "source": "Delimitation of Parliamentary and Assembly Constituencies Order, 2008 (Election Commission of India)"
+    },
+    {
+     "book": "fatman",
+     "page": 173
+    }
+   ]
+  },
+  {
+   "id": "pol-state-003",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The strength of the Legislative Council of a State cannot exceed what fraction of the strength of its Legislative Assembly?",
+    "options": [
+     "One-fourth",
+     "One-third",
+     "One-half",
+     "Two-thirds"
+    ],
+    "explanation": "Article 171(1) caps the Legislative Council at one-third of the strength of the Assembly, subject to a minimum of 40. Thus a State whose Assembly has 120 members can have a Council of at most 40.",
+    "notes": [
+     "Not the limit in Article 171.",
+     "Article 171(1) fixes this maximum, with a minimum of 40 members.",
+     "Not the limit in Article 171.",
+     "Not the limit in Article 171."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Legislature",
+     "Legislative Council",
+     "Creation and abolition"
+    ],
+    "facts": [
+     "Members of a Legislative Council are partly elected and partly nominated by the Governor (Article 171(3)).",
+     "A Legislative Council is a permanent body; one-third of its members retire every second year (Article 172(2))."
+    ]
+   },
+   "hi": {
+    "q": "किसी राज्य की विधान परिषद की सदस्य संख्या उसकी विधानसभा की सदस्य संख्या के कितने भाग से अधिक नहीं हो सकती?",
+    "options": [
+     "एक-चौथाई",
+     "एक-तिहाई",
+     "आधा",
+     "दो-तिहाई"
+    ],
+    "explanation": "अनुच्छेद 171(1) के अनुसार विधान परिषद की सदस्य संख्या विधानसभा के एक-तिहाई से अधिक नहीं हो सकती तथा न्यूनतम 40 होगी। इस प्रकार 120 सदस्यीय विधानसभा वाले राज्य की विधान परिषद में अधिकतम 40 सदस्य हो सकते हैं।",
+    "notes": [
+     "अनुच्छेद 171 में यह सीमा नहीं है।",
+     "अनुच्छेद 171(1) में यही अधिकतम सीमा है; न्यूनतम संख्या 40 है।",
+     "अनुच्छेद 171 में यह सीमा नहीं है।",
+     "अनुच्छेद 171 में यह सीमा नहीं है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य विधानमंडल",
+     "विधान परिषद",
+     "सृजन एवं उत्सादन"
+    ],
+    "facts": [
+     "विधान परिषद के सदस्य अंशतः निर्वाचित और अंशतः राज्यपाल द्वारा मनोनीत होते हैं (अनुच्छेद 171(3))।",
+     "विधान परिषद एक स्थायी सदन है; इसके एक-तिहाई सदस्य प्रत्येक दूसरे वर्ष सेवानिवृत्त होते हैं (अनुच्छेद 172(2))।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 169, 171 and 172"
+    },
+    {
+     "book": "fatman",
+     "page": 173
+    }
+   ]
+  },
+  {
+   "id": "pol-state-004",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The Advocate General of a State holds office during the pleasure of the:",
+    "options": [
+     "Governor",
+     "President",
+     "Chief Minister",
+     "Chief Justice of the High Court"
+    ],
+    "explanation": "The Advocate General is appointed by the Governor under Article 165, must be qualified to be a High Court Judge and holds office during the Governor's pleasure. He can speak in the Legislature but cannot vote.",
+    "notes": [
+     "Article 165 provides this; the Governor also appoints him.",
+     "The Attorney General holds office during the President's pleasure.",
+     "The Chief Minister does not appoint or remove him.",
+     "The Chief Justice has no role in his tenure."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Advocate General",
+     "Article 165"
+    ],
+    "facts": [
+     "The Advocate General is the highest law officer of the State, the counterpart of the Attorney General for India.",
+     "His remuneration is determined by the Governor (Article 165(3))."
+    ]
+   },
+   "hi": {
+    "q": "राज्य का महाधिवक्ता किसके प्रसादपर्यंत पद धारण करता है?",
+    "options": [
+     "राज्यपाल",
+     "राष्ट्रपति",
+     "मुख्यमंत्री",
+     "उच्च न्यायालय के मुख्य न्यायाधीश"
+    ],
+    "explanation": "महाधिवक्ता की नियुक्ति अनुच्छेद 165 के अंतर्गत राज्यपाल करते हैं; उसमें उच्च न्यायालय का न्यायाधीश बनने की योग्यता होनी चाहिए और वह राज्यपाल के प्रसादपर्यंत पद धारण करता है। वह विधानमंडल में बोल सकता है, किंतु मत नहीं दे सकता।",
+    "notes": [
+     "अनुच्छेद 165 में यह प्रावधान है; नियुक्ति भी राज्यपाल करते हैं।",
+     "महान्यायवादी राष्ट्रपति के प्रसादपर्यंत पद धारण करता है।",
+     "मुख्यमंत्री उसकी नियुक्ति या पदच्युति नहीं करते।",
+     "उसकी पदावधि में मुख्य न्यायाधीश की भूमिका नहीं है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "महाधिवक्ता",
+     "अनुच्छेद 165"
+    ],
+    "facts": [
+     "महाधिवक्ता राज्य का सर्वोच्च विधि अधिकारी है, जो भारत के महान्यायवादी के समकक्ष है।",
+     "उसका पारिश्रमिक राज्यपाल निर्धारित करता है (अनुच्छेद 165(3))।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 173
+    },
+    {
+     "book": "fatman",
+     "page": 174
+    },
+    {
+     "source": "Constitution of India, Articles 165 and 177"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-005",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "How many members of the 100-member Uttar Pradesh Legislative Council are elected by the members of the Legislative Assembly?",
+    "options": [
+     "8",
+     "10",
+     "36",
+     "38"
+    ],
+    "explanation": "The Uttar Pradesh Vidhan Parishad has 100 members: 38 elected by MLAs, 36 by local authorities, 8 by graduates, 8 by teachers and 10 nominated by the Governor.",
+    "notes": [
+     "Elected by graduates; teachers also elect 8.",
+     "Nominated by the Governor.",
+     "Elected by local authorities.",
+     "Elected by the members of the Legislative Assembly."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Legislature",
+     "Uttar Pradesh",
+     "Vidhan Parishad"
+    ],
+    "facts": [
+     "Teachers' constituencies also elect 8 members to the Uttar Pradesh Vidhan Parishad.",
+     "Under Article 171(5), the Governor nominates members with special knowledge of literature, science, art, the co-operative movement and social service."
+    ]
+   },
+   "hi": {
+    "q": "100 सदस्यीय उत्तर प्रदेश विधान परिषद के कितने सदस्य विधानसभा के सदस्यों द्वारा निर्वाचित होते हैं?",
+    "options": [
+     "8",
+     "10",
+     "36",
+     "38"
+    ],
+    "explanation": "उत्तर प्रदेश विधान परिषद में 100 सदस्य हैं: 38 विधायकों द्वारा, 36 स्थानीय निकायों द्वारा, 8 स्नातकों द्वारा, 8 शिक्षकों द्वारा निर्वाचित तथा 10 राज्यपाल द्वारा मनोनीत।",
+    "notes": [
+     "स्नातकों द्वारा निर्वाचित; शिक्षक भी 8 सदस्य चुनते हैं।",
+     "राज्यपाल द्वारा मनोनीत।",
+     "स्थानीय निकायों द्वारा निर्वाचित।",
+     "विधानसभा के सदस्यों द्वारा निर्वाचित।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य विधानमंडल",
+     "उत्तर प्रदेश",
+     "विधान परिषद"
+    ],
+    "facts": [
+     "शिक्षक निर्वाचन क्षेत्र भी उत्तर प्रदेश विधान परिषद में 8 सदस्य चुनते हैं।",
+     "अनुच्छेद 171(5) के अंतर्गत राज्यपाल साहित्य, विज्ञान, कला, सहकारी आंदोलन और समाज सेवा का विशेष ज्ञान रखने वाले व्यक्तियों को मनोनीत करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Representation of the People Act, 1950, Third Schedule (Uttar Pradesh entry as substituted by the Uttar Pradesh Reorganisation (Amendment) Act, 2003)"
+    },
+    {
+     "source": "Constitution of India, Article 171"
+    },
+    {
+     "book": "fatman",
+     "page": 174
+    }
+   ]
+  },
+  {
+   "id": "pol-state-006",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Under Article 164, the Council of Ministers of a State is collectively responsible to the:",
+    "options": [
+     "Governor",
+     "Chief Minister",
+     "Legislative Assembly",
+     "Legislative Council"
+    ],
+    "explanation": "Under Article 164(2) the State Council of Ministers is collectively responsible to the Legislative Assembly. If the Assembly passes a vote of no confidence, the whole Council of Ministers must resign.",
+    "notes": [
+     "Ministers hold office during his pleasure, but are not collectively responsible to him.",
+     "He heads the Council of Ministers.",
+     "Article 164(2) provides this.",
+     "The Council of Ministers is not responsible to the upper House."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Chief Minister",
+     "Council of Ministers"
+    ],
+    "facts": [
+     "Ministers hold office during the pleasure of the Governor (Article 164(1)).",
+     "Under Article 167, the Chief Minister must communicate the decisions of the Council of Ministers to the Governor."
+    ]
+   },
+   "hi": {
+    "q": "अनुच्छेद 164 के अंतर्गत राज्य की मंत्रिपरिषद सामूहिक रूप से किसके प्रति उत्तरदायी है?",
+    "options": [
+     "राज्यपाल",
+     "मुख्यमंत्री",
+     "विधानसभा",
+     "विधान परिषद"
+    ],
+    "explanation": "अनुच्छेद 164(2) के अनुसार राज्य की मंत्रिपरिषद विधानसभा के प्रति सामूहिक रूप से उत्तरदायी है। विधानसभा द्वारा अविश्वास प्रस्ताव पारित होने पर पूरी मंत्रिपरिषद को त्यागपत्र देना होता है।",
+    "notes": [
+     "मंत्री उनके प्रसादपर्यंत पद धारण करते हैं, किंतु सामूहिक रूप से उनके प्रति उत्तरदायी नहीं हैं।",
+     "वे मंत्रिपरिषद के प्रधान हैं।",
+     "अनुच्छेद 164(2) में यह प्रावधान है।",
+     "मंत्रिपरिषद उच्च सदन के प्रति उत्तरदायी नहीं है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "मुख्यमंत्री",
+     "मंत्रिपरिषद"
+    ],
+    "facts": [
+     "मंत्री राज्यपाल के प्रसादपर्यंत पद धारण करते हैं (अनुच्छेद 164(1))।",
+     "अनुच्छेद 167 के अनुसार मुख्यमंत्री मंत्रिपरिषद के निर्णयों की सूचना राज्यपाल को देता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 173
+    },
+    {
+     "source": "Constitution of India, Article 164 (as amended by the 91st Amendment Act, 2003)"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which Article of the Constitution provides that there shall be a Governor for each State?",
+    "options": [
+     "Article 153",
+     "Article 154",
+     "Article 156",
+     "Article 163"
+    ],
+    "explanation": "Article 153 provides that there shall be a Governor for each State. The Constitution (Seventh Amendment) Act, 1956 added a proviso allowing the same person to be appointed Governor of two or more States.",
+    "notes": [
+     "Its proviso, added in 1956, allows one person to be Governor of two or more States.",
+     "Article 154 vests the executive power of the State in the Governor.",
+     "Article 156 deals with the term of office of the Governor.",
+     "Article 163 provides for a Council of Ministers to aid and advise the Governor."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Governor"
+    ],
+    "facts": [
+     "Article 158 lays down the conditions of the Governor's office, such as not holding any other office of profit.",
+     "The normal term of a Governor is five years (Article 156(3))."
+    ]
+   },
+   "hi": {
+    "q": "संविधान का कौन-सा अनुच्छेद उपबंध करता है कि प्रत्येक राज्य के लिए एक राज्यपाल होगा?",
+    "options": [
+     "अनुच्छेद 153",
+     "अनुच्छेद 154",
+     "अनुच्छेद 156",
+     "अनुच्छेद 163"
+    ],
+    "explanation": "अनुच्छेद 153 के अनुसार प्रत्येक राज्य के लिए एक राज्यपाल होगा। संविधान (सातवाँ संशोधन) अधिनियम, 1956 ने परंतुक जोड़कर एक ही व्यक्ति को दो या अधिक राज्यों का राज्यपाल नियुक्त करने की अनुमति दी।",
+    "notes": [
+     "1956 में जोड़ा गया इसका परंतुक एक ही व्यक्ति को दो या अधिक राज्यों का राज्यपाल बनने की अनुमति देता है।",
+     "अनुच्छेद 154 राज्य की कार्यपालिका शक्ति राज्यपाल में निहित करता है।",
+     "अनुच्छेद 156 राज्यपाल की पदावधि के बारे में है।",
+     "अनुच्छेद 163 राज्यपाल को सहायता एवं सलाह देने के लिए मंत्रिपरिषद का उपबंध करता है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "राज्यपाल"
+    ],
+    "facts": [
+     "अनुच्छेद 158 राज्यपाल के पद की शर्तें निर्धारित करता है, जैसे कोई अन्य लाभ का पद धारण न करना।",
+     "राज्यपाल का सामान्य कार्यकाल पाँच वर्ष है (अनुच्छेद 156(3))।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The minimum age for appointment as the Governor of a State is:",
+    "options": [
+     "30 years",
+     "35 years",
+     "25 years",
+     "40 years"
+    ],
+    "explanation": "Under Article 157, a person must be a citizen of India and must have completed 35 years of age to be appointed Governor.",
+    "notes": [
+     "30 years is the minimum age for the Rajya Sabha.",
+     "It is laid down in Article 157.",
+     "25 years is the minimum age for a Legislative Assembly.",
+     "The Constitution does not require 40 years."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Governor"
+    ],
+    "facts": [
+     "The Governor cannot be a member of Parliament or of a State Legislature.",
+     "He is the constitutional head of the State."
+    ]
+   },
+   "hi": {
+    "q": "किसी राज्य का राज्यपाल नियुक्त होने के लिए न्यूनतम आयु कितनी है?",
+    "options": [
+     "30 वर्ष",
+     "35 वर्ष",
+     "25 वर्ष",
+     "40 वर्ष"
+    ],
+    "explanation": "अनुच्छेद 157 के अनुसार राज्यपाल नियुक्त होने के लिए व्यक्ति भारत का नागरिक होना चाहिए और 35 वर्ष की आयु पूरी कर चुका होना चाहिए।",
+    "notes": [
+     "30 वर्ष राज्य सभा की न्यूनतम आयु है।",
+     "यह अनुच्छेद 157 में निर्धारित है।",
+     "25 वर्ष विधान सभा की न्यूनतम आयु है।",
+     "संविधान 40 वर्ष की अपेक्षा नहीं करता।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "राज्यपाल"
+    ],
+    "facts": [
+     "राज्यपाल संसद या राज्य विधानमंडल का सदस्य नहीं हो सकता।",
+     "वह राज्य का सांविधानिक प्रमुख है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The Chief Minister of a State is appointed by the:",
+    "options": [
+     "President",
+     "Speaker of the Legislative Assembly",
+     "Governor",
+     "Chief Justice of the High Court"
+    ],
+    "explanation": "Under Article 164, the Chief Minister is appointed by the Governor, and the other Ministers are appointed by the Governor on the advice of the Chief Minister.",
+    "notes": [
+     "The President appoints the Governor, not the Chief Minister.",
+     "The Speaker presides over the Assembly.",
+     "He appoints the leader of the majority party in the Assembly.",
+     "The Chief Justice of the High Court has no role in appointing the Chief Minister."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Chief Minister"
+    ],
+    "facts": [
+     "A Chief Minister who is not a member of the State Legislature must become one within six months.",
+     "The Chief Minister is the real executive head of the State."
+    ]
+   },
+   "hi": {
+    "q": "किसी राज्य के मुख्यमंत्री की नियुक्ति कौन करता है?",
+    "options": [
+     "राष्ट्रपति",
+     "विधान सभा अध्यक्ष",
+     "राज्यपाल",
+     "उच्च न्यायालय के मुख्य न्यायाधीश"
+    ],
+    "explanation": "अनुच्छेद 164 के अनुसार मुख्यमंत्री की नियुक्ति राज्यपाल करता है तथा अन्य मंत्रियों की नियुक्ति राज्यपाल मुख्यमंत्री के परामर्श पर करता है।",
+    "notes": [
+     "राष्ट्रपति राज्यपाल की नियुक्ति करते हैं, मुख्यमंत्री की नहीं।",
+     "अध्यक्ष विधान सभा की अध्यक्षता करते हैं।",
+     "वह विधान सभा में बहुमत दल के नेता को नियुक्त करता है।",
+     "मुख्यमंत्री की नियुक्ति में उच्च न्यायालय के मुख्य न्यायाधीश की कोई भूमिका नहीं है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "मुख्यमंत्री"
+    ],
+    "facts": [
+     "राज्य विधानमंडल का सदस्य न होने पर मुख्यमंत्री को छह माह के भीतर सदस्य बनना होता है।",
+     "मुख्यमंत्री राज्य का वास्तविक कार्यकारी प्रमुख है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "How many seats does Uttar Pradesh have in the Lok Sabha?",
+    "options": [
+     "72",
+     "75",
+     "85",
+     "80"
+    ],
+    "explanation": "Uttar Pradesh sends 80 members to the Lok Sabha, the highest of any State. Of these, 17 seats are reserved for the Scheduled Castes.",
+    "notes": [
+     "Uttar Pradesh has more seats than this.",
+     "75 is the number of districts in the State.",
+     "Undivided Uttar Pradesh had 85 seats before Uttarakhand was formed.",
+     "This is the largest number for any State."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Uttar Pradesh"
+    ],
+    "facts": [
+     "The State has 31 seats in the Rajya Sabha.",
+     "Maharashtra comes second with 48 Lok Sabha seats."
+    ]
+   },
+   "hi": {
+    "q": "लोक सभा में उत्तर प्रदेश के कितने स्थान हैं?",
+    "options": [
+     "72",
+     "75",
+     "85",
+     "80"
+    ],
+    "explanation": "उत्तर प्रदेश लोक सभा में 80 सदस्य भेजता है, जो किसी भी राज्य से अधिक है। इनमें 17 स्थान अनुसूचित जातियों के लिए आरक्षित हैं।",
+    "notes": [
+     "उत्तर प्रदेश के स्थान इससे अधिक हैं।",
+     "75 राज्य के जिलों की संख्या है।",
+     "उत्तराखंड बनने से पहले अविभाजित उत्तर प्रदेश के 85 स्थान थे।",
+     "यह किसी भी राज्य के लिए सर्वाधिक संख्या है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "उत्तर प्रदेश"
+    ],
+    "facts": [
+     "राज्य के राज्य सभा में 31 स्थान हैं।",
+     "48 लोक सभा स्थानों के साथ महाराष्ट्र दूसरे स्थान पर है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Election Commission of India – Lok Sabha constituencies",
+     "url": "https://www.eci.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which Article empowers the Governor to promulgate ordinances when the State Legislature is not in session?",
+    "options": [
+     "Article 213",
+     "Article 123",
+     "Article 167",
+     "Article 163"
+    ],
+    "explanation": "Under Article 213, the Governor may promulgate an ordinance when the Legislature is not in session. It must be laid before the Legislature and lapses six weeks after the Legislature reassembles.",
+    "notes": [
+     "The ordinance has the same force as an Act of the Legislature.",
+     "Article 123 gives the same power to the President.",
+     "Article 167 lays down the duties of the Chief Minister towards the Governor.",
+     "Article 163 deals with the Council of Ministers that aids and advises the Governor."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Governor"
+    ],
+    "facts": [
+     "The Governor acts on the advice of the Council of Ministers in issuing an ordinance.",
+     "An ordinance cannot be issued on a matter outside the powers of the State Legislature."
+    ]
+   },
+   "hi": {
+    "q": "कौन-सा अनुच्छेद राज्यपाल को राज्य विधानमंडल के सत्र में न होने पर अध्यादेश जारी करने की शक्ति देता है?",
+    "options": [
+     "अनुच्छेद 213",
+     "अनुच्छेद 123",
+     "अनुच्छेद 167",
+     "अनुच्छेद 163"
+    ],
+    "explanation": "अनुच्छेद 213 के अनुसार विधानमंडल के सत्र में न होने पर राज्यपाल अध्यादेश जारी कर सकता है। इसे विधानमंडल के समक्ष रखना होता है और विधानमंडल के पुनः समवेत होने के छह सप्ताह बाद यह समाप्त हो जाता है।",
+    "notes": [
+     "अध्यादेश का बल विधानमंडल के अधिनियम के समान होता है।",
+     "अनुच्छेद 123 राष्ट्रपति को यही शक्ति देता है।",
+     "अनुच्छेद 167 राज्यपाल के प्रति मुख्यमंत्री के कर्तव्य निर्धारित करता है।",
+     "अनुच्छेद 163 राज्यपाल को सहायता एवं सलाह देने वाली मंत्रिपरिषद के बारे में है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "राज्यपाल"
+    ],
+    "facts": [
+     "अध्यादेश जारी करने में राज्यपाल मंत्रिपरिषद की सलाह पर कार्य करता है।",
+     "राज्य विधानमंडल की शक्ति से बाहर के विषय पर अध्यादेश जारी नहीं हो सकता।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "How many States of India have a Legislative Council (Vidhan Parishad) at present?",
+    "options": [
+     "Five",
+     "Six",
+     "Seven",
+     "Eight"
+    ],
+    "explanation": "Six States have a bicameral legislature: Uttar Pradesh, Bihar, Maharashtra, Karnataka, Andhra Pradesh and Telangana. The Legislative Council of Jammu and Kashmir ended in 2019 with the reorganisation of the State.",
+    "notes": [
+     "The number is larger than five.",
+     "They are Uttar Pradesh, Bihar, Maharashtra, Karnataka, Andhra Pradesh and Telangana.",
+     "There were seven until the Council of Jammu and Kashmir was abolished in 2019.",
+     "The number is smaller than eight."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Legislative Council"
+    ],
+    "facts": [
+     "A Legislative Council must have at least 40 members.",
+     "The Legislative Council of Andhra Pradesh, abolished in 1985, was revived in 2007."
+    ]
+   },
+   "hi": {
+    "q": "वर्तमान में भारत के कितने राज्यों में विधान परिषद है?",
+    "options": [
+     "पाँच",
+     "छह",
+     "सात",
+     "आठ"
+    ],
+    "explanation": "छह राज्यों में द्विसदनीय विधानमंडल है: उत्तर प्रदेश, बिहार, महाराष्ट्र, कर्नाटक, आंध्र प्रदेश एवं तेलंगाना। जम्मू-कश्मीर की विधान परिषद 2019 में राज्य के पुनर्गठन के साथ समाप्त हो गई।",
+    "notes": [
+     "संख्या पाँच से अधिक है।",
+     "ये उत्तर प्रदेश, बिहार, महाराष्ट्र, कर्नाटक, आंध्र प्रदेश एवं तेलंगाना हैं।",
+     "2019 में जम्मू-कश्मीर की परिषद समाप्त होने तक यह संख्या सात थी।",
+     "संख्या आठ से कम है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "विधान परिषद"
+    ],
+    "facts": [
+     "विधान परिषद में कम से कम 40 सदस्य होने चाहिए।",
+     "1985 में समाप्त की गई आंध्र प्रदेश की विधान परिषद 2007 में पुनः गठित हुई।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-013",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Who was the first Chief Minister of Uttar Pradesh?",
+    "options": [
+     "Sampurnanand",
+     "Chandra Bhanu Gupta",
+     "Govind Ballabh Pant",
+     "Charan Singh"
+    ],
+    "explanation": "Pandit Govind Ballabh Pant, the Premier of the United Provinces, became the first Chief Minister of Uttar Pradesh in 1950. He received the Bharat Ratna in 1957.",
+    "notes": [
+     "Sampurnanand was the second Chief Minister.",
+     "Chandra Bhanu Gupta became Chief Minister in 1960.",
+     "He later became the Union Home Minister.",
+     "Charan Singh first became Chief Minister in 1967."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Uttar Pradesh"
+    ],
+    "facts": [
+     "The United Provinces were renamed Uttar Pradesh on 24 January 1950.",
+     "Pant had also been the Premier of the United Provinces from 1937 to 1939."
+    ]
+   },
+   "hi": {
+    "q": "उत्तर प्रदेश के पहले मुख्यमंत्री कौन थे?",
+    "options": [
+     "संपूर्णानंद",
+     "चंद्रभानु गुप्त",
+     "गोविंद बल्लभ पंत",
+     "चरण सिंह"
+    ],
+    "explanation": "संयुक्त प्रांत के प्रीमियर पंडित गोविंद बल्लभ पंत 1950 में उत्तर प्रदेश के पहले मुख्यमंत्री बने। उन्हें 1957 में भारत रत्न मिला।",
+    "notes": [
+     "संपूर्णानंद दूसरे मुख्यमंत्री थे।",
+     "चंद्रभानु गुप्त 1960 में मुख्यमंत्री बने।",
+     "वे बाद में केंद्रीय गृह मंत्री बने।",
+     "चरण सिंह पहली बार 1967 में मुख्यमंत्री बने।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "उत्तर प्रदेश"
+    ],
+    "facts": [
+     "संयुक्त प्रांत का नाम 24 जनवरी 1950 को उत्तर प्रदेश रखा गया।",
+     "पंत 1937 से 1939 तक भी संयुक्त प्रांत के प्रीमियर रहे थे।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Government of Uttar Pradesh – former Chief Ministers",
+     "url": "https://up.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-014",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Under Article 161 of the Constitution, the Governor of a State has the power to:",
+    "options": [
+     "Dissolve the Rajya Sabha",
+     "Appoint the Judges of the High Court",
+     "Proclaim a financial emergency in the State",
+     "Grant pardons and suspend, remit or commute sentences in certain cases"
+    ],
+    "explanation": "Article 161 gives the Governor the power to grant pardons, reprieves, respites or remissions of punishment, or to suspend, remit or commute the sentence of a person convicted of an offence against a law on a matter to which the executive power of the State extends.",
+    "notes": [
+     "The Rajya Sabha cannot be dissolved at all.",
+     "High Court Judges are appointed by the President.",
+     "A financial emergency is proclaimed by the President.",
+     "The power covers offences against laws within the executive power of the State."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Governor"
+    ],
+    "facts": [
+     "The Governor cannot pardon a sentence passed by a court martial.",
+     "The President has the corresponding power under Article 72."
+    ]
+   },
+   "hi": {
+    "q": "संविधान के अनुच्छेद 161 के अंतर्गत राज्य के राज्यपाल को क्या शक्ति है?",
+    "options": [
+     "राज्य सभा को भंग करना",
+     "उच्च न्यायालय के न्यायाधीशों की नियुक्ति करना",
+     "राज्य में वित्तीय आपात की उद्घोषणा करना",
+     "कुछ मामलों में क्षमा देना तथा दंड का निलंबन, परिहार या लघुकरण करना"
+    ],
+    "explanation": "अनुच्छेद 161 राज्यपाल को ऐसे विषय की विधि के विरुद्ध अपराध के दोषी व्यक्ति को, जिस पर राज्य की कार्यपालिका शक्ति का विस्तार है, क्षमा, प्रविलंबन, विराम या परिहार देने अथवा दंडादेश का निलंबन, परिहार या लघुकरण करने की शक्ति देता है।",
+    "notes": [
+     "राज्य सभा को भंग किया ही नहीं जा सकता।",
+     "उच्च न्यायालय के न्यायाधीशों की नियुक्ति राष्ट्रपति करते हैं।",
+     "वित्तीय आपात की उद्घोषणा राष्ट्रपति करते हैं।",
+     "यह शक्ति राज्य की कार्यपालिका शक्ति के भीतर की विधियों के विरुद्ध अपराधों पर लागू है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "राज्यपाल"
+    ],
+    "facts": [
+     "राज्यपाल सैन्य न्यायालय द्वारा दिए गए दंड को क्षमा नहीं कर सकता।",
+     "राष्ट्रपति को अनुच्छेद 72 के अंतर्गत समतुल्य शक्ति है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Under which Article can the Governor reserve a Bill passed by the State Legislature for the consideration of the President?",
+    "options": [
+     "Article 200",
+     "Article 202",
+     "Article 163",
+     "Article 356"
+    ],
+    "explanation": "Under Article 200, when a Bill is presented to the Governor he may give assent, withhold assent, return it (if it is not a Money Bill) or reserve it for the consideration of the President.",
+    "notes": [
+     "The Governor may also give assent, withhold it or return the Bill.",
+     "Article 202 deals with the annual financial statement of the State.",
+     "Article 163 deals with the Council of Ministers.",
+     "Article 356 deals with President's Rule."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Governor"
+    ],
+    "facts": [
+     "A Bill that endangers the position of the High Court must be reserved.",
+     "Article 201 deals with what the President may do with a reserved Bill."
+    ]
+   },
+   "hi": {
+    "q": "किस अनुच्छेद के अंतर्गत राज्यपाल राज्य विधानमंडल द्वारा पारित विधेयक को राष्ट्रपति के विचार के लिए आरक्षित कर सकता है?",
+    "options": [
+     "अनुच्छेद 200",
+     "अनुच्छेद 202",
+     "अनुच्छेद 163",
+     "अनुच्छेद 356"
+    ],
+    "explanation": "अनुच्छेद 200 के अनुसार राज्यपाल के समक्ष विधेयक प्रस्तुत होने पर वह अनुमति दे सकता है, अनुमति रोक सकता है, उसे लौटा सकता है (यदि वह धन विधेयक न हो) अथवा राष्ट्रपति के विचार के लिए आरक्षित कर सकता है।",
+    "notes": [
+     "राज्यपाल अनुमति दे सकता है, उसे रोक सकता है अथवा विधेयक लौटा भी सकता है।",
+     "अनुच्छेद 202 राज्य के वार्षिक वित्तीय विवरण के बारे में है।",
+     "अनुच्छेद 163 मंत्रिपरिषद के बारे में है।",
+     "अनुच्छेद 356 राष्ट्रपति शासन के बारे में है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "राज्यपाल"
+    ],
+    "facts": [
+     "उच्च न्यायालय की स्थिति को संकट में डालने वाला विधेयक आरक्षित करना अनिवार्य है।",
+     "अनुच्छेद 201 बताता है कि राष्ट्रपति आरक्षित विधेयक पर क्या कर सकते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Parliament can create or abolish the Legislative Council of a State, on a resolution of the State Assembly, under:",
+    "options": [
+     "Article 168",
+     "Article 169",
+     "Article 170",
+     "Article 171"
+    ],
+    "explanation": "Under Article 169, Parliament may by law create or abolish a Legislative Council if the Legislative Assembly of the State passes a resolution by a majority of its total membership and two-thirds of the members present and voting.",
+    "notes": [
+     "Article 168 deals with the constitution of State Legislatures.",
+     "The Assembly must pass the resolution by a special majority.",
+     "Article 170 deals with the composition of Legislative Assemblies.",
+     "Article 171 deals with the composition of Legislative Councils."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Legislative Council"
+    ],
+    "facts": [
+     "Such a law is not treated as an amendment of the Constitution under Article 368.",
+     "Parliament passes it by a simple majority."
+    ]
+   },
+   "hi": {
+    "q": "राज्य विधान सभा के संकल्प पर संसद किस अनुच्छेद के अंतर्गत राज्य की विधान परिषद का सृजन या उत्सादन कर सकती है?",
+    "options": [
+     "अनुच्छेद 168",
+     "अनुच्छेद 169",
+     "अनुच्छेद 170",
+     "अनुच्छेद 171"
+    ],
+    "explanation": "अनुच्छेद 169 के अनुसार यदि राज्य की विधान सभा अपनी कुल सदस्य संख्या के बहुमत तथा उपस्थित एवं मत देने वाले सदस्यों के दो-तिहाई बहुमत से संकल्प पारित करे, तो संसद विधि द्वारा विधान परिषद का सृजन या उत्सादन कर सकती है।",
+    "notes": [
+     "अनुच्छेद 168 राज्य विधानमंडलों के गठन के बारे में है।",
+     "विधान सभा को संकल्प विशेष बहुमत से पारित करना होता है।",
+     "अनुच्छेद 170 विधान सभाओं की संरचना के बारे में है।",
+     "अनुच्छेद 171 विधान परिषदों की संरचना के बारे में है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "विधान परिषद"
+    ],
+    "facts": [
+     "ऐसी विधि अनुच्छेद 368 के अंतर्गत संविधान संशोधन नहीं मानी जाती।",
+     "संसद इसे साधारण बहुमत से पारित करती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Who became the first woman Chief Minister of an Indian State, in Uttar Pradesh in 1963?",
+    "options": [
+     "Sarojini Naidu",
+     "Nandini Satpathy",
+     "Sucheta Kripalani",
+     "Mayawati"
+    ],
+    "explanation": "Sucheta Kripalani became the Chief Minister of Uttar Pradesh in October 1963 and was the first woman to head a State Government in India.",
+    "notes": [
+     "Sarojini Naidu was a Governor, not a Chief Minister.",
+     "Nandini Satpathy became Chief Minister of Odisha in 1972.",
+     "She held the office from 1963 to 1967.",
+     "Mayawati first became Chief Minister of Uttar Pradesh in 1995."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Uttar Pradesh"
+    ],
+    "facts": [
+     "She had been a member of the Constituent Assembly.",
+     "She sang 'Vande Mataram' in the Assembly session of 14–15 August 1947."
+    ]
+   },
+   "hi": {
+    "q": "1963 में उत्तर प्रदेश में किसी भारतीय राज्य की पहली महिला मुख्यमंत्री कौन बनीं?",
+    "options": [
+     "सरोजिनी नायडू",
+     "नंदिनी सत्पथी",
+     "सुचेता कृपलानी",
+     "मायावती"
+    ],
+    "explanation": "सुचेता कृपलानी अक्टूबर 1963 में उत्तर प्रदेश की मुख्यमंत्री बनीं और भारत में किसी राज्य सरकार का नेतृत्व करने वाली पहली महिला थीं।",
+    "notes": [
+     "सरोजिनी नायडू राज्यपाल थीं, मुख्यमंत्री नहीं।",
+     "नंदिनी सत्पथी 1972 में ओडिशा की मुख्यमंत्री बनीं।",
+     "वे 1963 से 1967 तक पद पर रहीं।",
+     "मायावती पहली बार 1995 में उत्तर प्रदेश की मुख्यमंत्री बनीं।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "उत्तर प्रदेश"
+    ],
+    "facts": [
+     "वे संविधान सभा की सदस्य रह चुकी थीं।",
+     "उन्होंने 14–15 अगस्त 1947 के सभा सत्र में 'वंदे मातरम्' गाया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Government of Uttar Pradesh – former Chief Ministers",
+     "url": "https://up.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-018",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The total number of Ministers in a State, including the Chief Minister, cannot exceed what percentage of the strength of the Legislative Assembly?",
+    "options": [
+     "10 per cent",
+     "12 per cent",
+     "20 per cent",
+     "15 per cent"
+    ],
+    "explanation": "The 91st Amendment (2003) inserted Article 164(1A), which limits the Council of Ministers in a State to 15 per cent of the strength of the Legislative Assembly, subject to a minimum of twelve Ministers.",
+    "notes": [
+     "The limit is higher than 10 per cent.",
+     "Twelve is the minimum number of Ministers, not a percentage.",
+     "The limit is lower than 20 per cent.",
+     "The limit was added by the 91st Amendment, 2003."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Chief Minister"
+    ],
+    "facts": [
+     "The same limit applies to the Union Council of Ministers in relation to the Lok Sabha.",
+     "The amendment also strengthened the anti-defection law."
+    ]
+   },
+   "hi": {
+    "q": "किसी राज्य में मुख्यमंत्री सहित मंत्रियों की कुल संख्या विधान सभा की सदस्य संख्या के कितने प्रतिशत से अधिक नहीं हो सकती?",
+    "options": [
+     "10 प्रतिशत",
+     "12 प्रतिशत",
+     "20 प्रतिशत",
+     "15 प्रतिशत"
+    ],
+    "explanation": "91वें संशोधन (2003) ने अनुच्छेद 164(1क) जोड़ा, जो राज्य की मंत्रिपरिषद को विधान सभा की सदस्य संख्या के 15 प्रतिशत तक सीमित करता है, किंतु मंत्रियों की न्यूनतम संख्या बारह रहेगी।",
+    "notes": [
+     "सीमा 10 प्रतिशत से अधिक है।",
+     "बारह मंत्रियों की न्यूनतम संख्या है, प्रतिशत नहीं।",
+     "सीमा 20 प्रतिशत से कम है।",
+     "यह सीमा 91वें संशोधन, 2003 से जोड़ी गई।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "मुख्यमंत्री"
+    ],
+    "facts": [
+     "यही सीमा लोक सभा के संदर्भ में संघ की मंत्रिपरिषद पर लागू है।",
+     "इस संशोधन ने दल-बदल विरोधी कानून को भी सुदृढ़ किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-019",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Sarojini Naidu, the first woman to become the Governor of an Indian State, was the Governor of:",
+    "options": [
+     "West Bengal",
+     "Bihar",
+     "Uttar Pradesh (United Provinces)",
+     "Madras"
+    ],
+    "explanation": "Sarojini Naidu was appointed Governor of the United Provinces, now Uttar Pradesh, on 15 August 1947. She was the first woman Governor in India.",
+    "notes": [
+     "She was not the Governor of West Bengal.",
+     "She was not the Governor of Bihar.",
+     "She held the office from 15 August 1947 until her death in 1949.",
+     "She was not the Governor of Madras."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Uttar Pradesh"
+    ],
+    "facts": [
+     "She was called the 'Nightingale of India'.",
+     "She presided over the Kanpur session of the Congress in 1925."
+    ]
+   },
+   "hi": {
+    "q": "किसी भारतीय राज्य की राज्यपाल बनने वाली पहली महिला सरोजिनी नायडू किस राज्य की राज्यपाल थीं?",
+    "options": [
+     "पश्चिम बंगाल",
+     "बिहार",
+     "उत्तर प्रदेश (संयुक्त प्रांत)",
+     "मद्रास"
+    ],
+    "explanation": "सरोजिनी नायडू को 15 अगस्त 1947 को संयुक्त प्रांत, वर्तमान उत्तर प्रदेश, का राज्यपाल नियुक्त किया गया। वे भारत की पहली महिला राज्यपाल थीं।",
+    "notes": [
+     "वे पश्चिम बंगाल की राज्यपाल नहीं थीं।",
+     "वे बिहार की राज्यपाल नहीं थीं।",
+     "वे 15 अगस्त 1947 से 1949 में अपनी मृत्यु तक पद पर रहीं।",
+     "वे मद्रास की राज्यपाल नहीं थीं।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "उत्तर प्रदेश"
+    ],
+    "facts": [
+     "उन्हें 'भारत कोकिला' कहा जाता था।",
+     "उन्होंने 1925 में कांग्रेस के कानपुर अधिवेशन की अध्यक्षता की।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Raj Bhavan, Uttar Pradesh – former Governors",
+     "url": "https://upgovernor.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "pol-state-020",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The emoluments and allowances of the Governor of a State are charged on the:",
+    "options": [
+     "Consolidated Fund of India",
+     "Contingency Fund of the State",
+     "Public Account of the State",
+     "Consolidated Fund of the State"
+    ],
+    "explanation": "Under Article 202(3), the emoluments and allowances of the Governor are expenditure charged on the Consolidated Fund of the State and are not submitted to the vote of the Legislative Assembly.",
+    "notes": [
+     "The pension of High Court Judges, not the pay of the Governor, is charged on this fund.",
+     "The Contingency Fund is meant for unforeseen expenditure.",
+     "The Public Account holds money received on behalf of others, such as provident funds.",
+     "Charged expenditure is not put to the vote of the Assembly."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government",
+     "Governor"
+    ],
+    "facts": [
+     "The emoluments of the Governor cannot be reduced during his term of office.",
+     "The salaries of High Court Judges are also charged on the Consolidated Fund of the State."
+    ]
+   },
+   "hi": {
+    "q": "किसी राज्य के राज्यपाल की उपलब्धियाँ एवं भत्ते किस पर भारित होते हैं?",
+    "options": [
+     "भारत की संचित निधि",
+     "राज्य की आकस्मिकता निधि",
+     "राज्य का लोक लेखा",
+     "राज्य की संचित निधि"
+    ],
+    "explanation": "अनुच्छेद 202(3) के अनुसार राज्यपाल की उपलब्धियाँ एवं भत्ते राज्य की संचित निधि पर भारित व्यय हैं और इन्हें विधान सभा के मतदान के लिए प्रस्तुत नहीं किया जाता।",
+    "notes": [
+     "इस निधि पर उच्च न्यायालय के न्यायाधीशों की पेंशन भारित है, राज्यपाल का वेतन नहीं।",
+     "आकस्मिकता निधि अप्रत्याशित व्यय के लिए है।",
+     "लोक लेखा में भविष्य निधि जैसा दूसरों की ओर से प्राप्त धन रहता है।",
+     "भारित व्यय पर विधान सभा में मतदान नहीं होता।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार",
+     "राज्यपाल"
+    ],
+    "facts": [
+     "राज्यपाल की उपलब्धियाँ उसके कार्यकाल में घटाई नहीं जा सकतीं।",
+     "उच्च न्यायालय के न्यायाधीशों के वेतन भी राज्य की संचित निधि पर भारित हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 153–213",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 4 'Executive'"
+    }
+   ]
+  }
+ ]
 }

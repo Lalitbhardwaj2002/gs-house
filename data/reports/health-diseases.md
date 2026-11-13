@@ -14,3 +14,22 @@ Fatman pp. 319–320 (images p344–p345, printed numbers confirmed) were opened
 
 ## For the writer later
 - No question yet on malaria discoverers (Laveran – parasite, 1880; Ronald Ross – mosquito transmission, 1897), fungal diseases, or national health programmes (Mission Indradhanush, TB Mukt Bharat).
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 4 questions (003 004 005 006); all answer keys confirmed.
+
+Corrected:
+- health-diseases-006: Hindi spelling of Robert Koch in option C changed to the usual 'रॉबर्ट कोच'.
+
+Replaced: none.
+
+## Check of 13 November 2026 (14 new questions, 007–020)
+
+Checked 14 questions (007–020). Answer spread still 5/5/5/5; levels unchanged. Replaced: none.
+
+Corrected:
+- **007**: note D ("ringworm is caused by fungi") gave away the answer of 009; reworded. Added book ref tgt-pgt-gk p. 241.
+- **014**: fact made exact: pentavalent replaced separate DPT and hepatitis B injections in the infant (primary) schedule only.
+- **016**: added book ref tgt-pgt-gk p. 235 (Mission Indradhanush, 25 December 2014).
+- **020**: "confirmed by Western blot" is outdated (NACO/WHO testing strategies no longer use it); now "confirmed by further tests" (EN + HI).

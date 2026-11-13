@@ -32,3 +32,20 @@ I worked out every key myself before checking it, and all 40 match the standard 
 - 039: the Hindi term for halo effect is now प्रभामंडल (हेलो) प्रभाव.
 
 Note: the official NTA syllabus PDF could not be fetched. Questions 035 and 040 cite the syllabus as reproduced by Testbook.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 25 (004 005 008 010 012 013 014 015 019 020 021 022 023 024 025 026 028 029 030 032 033 034 036 037 040): all answer keys correct; discrimination index (0.40), difficulty (0.60) and SGPA (107/14 = 7.64) re-worked; UGC CBCS grade points, B/B+ cut-offs (50%/55%) and PARAKH notification (8 Feb 2023) confirmed.
+- Corrected: tra-evaluation-008 (Hindi fact 'स्थानन' -> 'स्थापन', matching option A); tra-evaluation-013 (Hindi note C: 'Input' wrongly rendered 'अदा', now 'निवेश').
+- Replaced: none.
+
+## Check of 13 November 2026 (questions reframed in the style of the Higher paper)
+- Checked 22 (001 002 006 007 008 009 012 013 015 016 017 018 020 021 022 027 030 032 036 038 039 040): all keyed answers confirmed; PARAKH (NCERT constituent unit, notification of 8 Feb 2023) and UGC CBCS Generic Elective definition re-verified.
+- Corrected: tra-evaluation-001 (option C restated the purpose of formative evaluation and gave away 002; re-aimed at the curriculum-evaluation context in which Scriven drew the distinction, answer stays C).
+- Corrected: tra-evaluation-015 (asked the definition of validity, which 019 and 021 already give away, while path and facts were about reliability; re-aimed at objectivity of scoring, answer stays C, path/facts/refs updated).
+- Corrected: tra-evaluation-020 (facts were about face validity and objective items; replaced with Spearman–Brown lengthening facts, path and refs aligned).
+- Corrected: tra-evaluation-022 (explanation discussed other kinds of validity; now explains what a blueprint is and why it secures content validity; Hindi facts 'नील-पत्र', 'भविष्यवाणी वैधता' aligned with file terms).
+- Corrected: tra-evaluation-030 (explanation did not explain the key; rewritten in both languages; Hindi 'चयन आधारित' -> 'विकल्प आधारित' as in path).
+- Corrected: tra-evaluation-006, -012 (Hindi 'स्वामित्व' for mastery -> 'निपुणता'; 'उपचारात्मक' corrective help -> 'सुधारात्मक'; 'शतांशीय' -> 'शततमक').
+- Corrected: tra-evaluation-008 (Hindi explanation/fact 'स्थापन', 'प्रवेश व्यवहार' -> 'स्थानन', 'प्रारंभिक व्यवहार', matching the options and 002/003).
+- Corrected: tra-evaluation-038 (Hindi option C reworded to 'स्वतःपूर्ण भविष्यवाणी').
+- Replaced: none.

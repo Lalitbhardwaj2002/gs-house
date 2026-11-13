@@ -11,13 +11,37 @@ import sys
 from pathlib import Path
 
 LEVELS = {'TGT', 'PGT', 'Higher'}
-BOOK_PAGES = {'special-topics': (1, 265), 'fatman': (1, 402)}
+BOOK_PAGES = {'special-topics': (1, 265), 'fatman': (1, 402), 'parmar-ca': (1, 228), 'tgt-pgt-gk': (1, 280)}
+# A question's level must fit the syllabus tags of its section (see sections.js).
+TRACK_LEVELS = {'tgt': {'TGT', 'PGT'}, 'higher': {'Higher'}}
+MAX_STEM = 200
+# Every question is one short, single question: no statement sets, matching lists,
+# assertion-reason pairs or sequences.
+MULTI_PART = re.compile(r'consider the following|assertion \(a\)|reason \(r\)|match list|list-i\b|codes? given below|'
+                        r'arrange the following|निम्नलिखित कथनों पर विचार|अभिकथन \(|सूची-i\b|सुमेलित कीजिए|कूट का प्रयोग', re.I)
 DEVANAGARI = re.compile(r'[ऀ-ॿ]')
 LANG_FIELDS = ('q', 'options', 'explanation', 'notes', 'path', 'facts')
 
 
 def norm(text):
     return re.sub(r'[^0-9a-zऀ-ॿ]+', ' ', text.lower()).strip()
+
+
+def section_tracks():
+    """Reads each section's syllabus tags from sections.js."""
+    src = (Path(__file__).resolve().parent.parent / 'sections.js').read_text(encoding='utf-8')
+    found = re.findall(r"id: '([\w-]+)', unit: '\w+', tracks: \[([^\]]*)\]", src)
+    return {sid: re.findall(r"'(\w+)'", tracks) for sid, tracks in found}
+
+
+TRACKS = section_tracks()
+
+
+def allowed_levels(section):
+    levels = set()
+    for track in TRACKS.get(section, []):
+        levels |= TRACK_LEVELS.get(track, set())
+    return levels or LEVELS
 
 
 def check_lang(q, lang, errors):
@@ -29,8 +53,12 @@ def check_lang(q, lang, errors):
         if key not in block:
             errors.append(f'{lang}.{key} missing')
     text = block.get('q', '')
-    if not isinstance(text, str) or not 10 <= len(text) <= 900:
-        errors.append(f'{lang}.q must be 10–900 characters')
+    if not isinstance(text, str) or not 10 <= len(text) <= MAX_STEM:
+        errors.append(f'{lang}.q must be 10–{MAX_STEM} characters (one short question)')
+    elif '\n' in text:
+        errors.append(f'{lang}.q must be a single line')
+    elif MULTI_PART.search(text):
+        errors.append(f'{lang}.q must be a single question (no statement, matching, assertion or sequence format)')
     opts = block.get('options', [])
     if not isinstance(opts, list) or len(opts) != 4 or not all(isinstance(o, str) and o.strip() for o in opts):
         errors.append(f'{lang}.options must be 4 non-empty strings')
@@ -89,6 +117,9 @@ def check_file(path, seen):
     section = Path(path).stem
     if data.get('section') != section:
         errors.append(f'"section" should be "{section}"')
+    if section not in TRACKS:
+        errors.append(f'no section "{section}" in sections.js')
+    allowed = allowed_levels(section)
     questions = data.get('questions')
     if not isinstance(questions, list) or not questions:
         return errors + ['"questions" must be a non-empty list'], warnings, 0
@@ -103,6 +134,8 @@ def check_file(path, seen):
         ids.add(qid)
         if q.get('level') not in LEVELS:
             qerr.append('level must be TGT, PGT or Higher')
+        elif q['level'] not in allowed:
+            qerr.append(f'level {q["level"]} does not fit the section tag (allowed: {", ".join(sorted(allowed))})')
         levels[q.get('level')] = levels.get(q.get('level'), 0) + 1
         if not isinstance(q.get('answer'), int) or not 0 <= q['answer'] <= 3:
             qerr.append('answer must be 0, 1, 2 or 3')

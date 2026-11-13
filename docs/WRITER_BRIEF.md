@@ -17,29 +17,27 @@ Usage limits can stop you at any moment. **Save a part file after every ~14 ques
 ## Reference books (use them to find and confirm facts; cite page numbers)
 1. **Special Topics 2.0** (Hindi): full text in `REFS/special_topics.txt`, with a line `===== SPECIAL TOPICS PDF PAGE n =====` before each page. Search it with Grep (Hindi and English keywords). The page number to cite is that `n`. **This book contains errors** (for example, it says a manometer measures gas density; it measures pressure). Never copy a fact from it without confirming it is correct; never cite it for a fact it gets wrong.
 2. **Parmar SSC "Fatman"** (English, scanned): page images `REFS/fatman/pNNN.jpg` and chapter index `PROJECT/docs/fatman_index.md`. Open the relevant chapter's pages with the Read tool. Cite the **printed** page number (bottom centre of the page), not the image number. Only cite a page you have actually seen the fact on.
-3. **Standard sources**: NCERT textbooks (name class, book, chapter), the Constitution of India (article numbers), official government/RBI/ISRO/UGC/Census websites. For these give `{"source": "…"}` and a `url` where you used one.
-4. **Current affairs** (Jan 2025 – Oct 2026; today is late October 2026): verify every fact with WebSearch (and WebFetch if needed) from reliable sources (PIB, official ministry/organisation sites, The Hindu, Indian Express, Hindustan Times, Reuters, BBC). Cite the URL. If sources disagree or you cannot confirm it, do not use it. Prefer settled facts (winners, appointments, launches, dates) over things that change weekly. Add "(as of October 2026)" where a fact could change.
+3. **Two more books (added November 2026)**: *Parmar SSC Current Affairs 2026* (`REFS/parmar_ca_2026.txt`, cite `{"book": "parmar-ca", "page": n}` with the PDF page n, 1–228) and the solved-papers book *TGT/PGT Samanya Gyan* (`REFS/tgt_pgt_samanya_gyan.txt`, `{"book": "tgt-pgt-gk", "page": n}`, 1–280; use it mainly to see how real questions are framed).
+4. **Standard sources**: NCERT textbooks (name class, book, chapter), the Constitution of India (article numbers), official government/RBI/ISRO/UGC/Census websites. For these give `{"source": "…"}` and a `url` where you used one.
+5. **Current affairs** (Jan 2025 – Oct 2026; today is late October 2026): verify every fact with WebSearch (and WebFetch if needed) from reliable sources (PIB, official ministry/organisation sites, The Hindu, Indian Express, Hindustan Times, Reuters, BBC). Cite the URL. If sources disagree or you cannot confirm it, do not use it. Prefer settled facts (winners, appointments, launches, dates) over things that change weekly. Add "(as of October 2026)" where a fact could change.
 
 **Copyright:** write every question, option and explanation in your own words. Never copy sentences, tables, lists or questions from either book. Facts are free; wording is not.
 
 ## How many, and what kind
-- Write **55 questions per section** (the checker may remove a few; at least 50 must survive).
-- Level mix per section: about **35% TGT** (clear, direct, single-fact), **40% PGT** (deeper, conceptual, multi-statement), **25% Higher** (analytical: assertion–reason, match the lists, chronological order, "which of the following is NOT", two-or-more-statement). Set `level` honestly.
-- Cover the **whole scope** of the section evenly: no two questions should test the same fact. Spread topics across sub-topics.
-- Exam style like real UPESSC/UPSC-style papers. Use these formats (put line breaks as `\n` inside `q`):
-  - Direct: "Who/Which/When/Where …?"
-  - Statements: "Consider the following statements:\n1. …\n2. …\n3. …\nWhich of the above is/are correct?" with options like "Only 1", "1 and 2 only", "2 and 3 only", "1, 2 and 3". Hindi: "निम्नलिखित कथनों पर विचार कीजिए:\n1. …\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?" with "केवल 1", "केवल 1 और 2", "केवल 2 और 3", "1, 2 और 3".
-  - Match: "Match List-I with List-II:\nList-I: A. … B. … C. … D. …\nList-II: 1. … 2. … 3. … 4. …" with options like "A-2, B-1, C-4, D-3". Hindi: "सूची-I को सूची-II से सुमेलित कीजिए:\nसूची-I: A. … \nसूची-II: 1. …".
-  - Assertion–Reason (Higher): "Assertion (A): …\nReason (R): …" with the standard four options: "Both A and R are true, and R is the correct explanation of A" / "Both A and R are true, but R is not the correct explanation of A" / "A is true, but R is false" / "A is false, but R is true". Hindi: "कथन (A): …\nकारण (R): …" / "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है" / "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है" / "कथन (A) सही है, परंतु कारण (R) गलत है" / "कथन (A) गलत है, परंतु कारण (R) सही है" (options must not start with "(A)": the validator reads that as an option label).
-  - Chronology: "Arrange in chronological order: …"
-- **Frame every question exactly as real competitive exams do** (owner's instruction): previous-year papers of UP TGT/PGT (UPSESSB/UPESSC), UPHESC/UPESSC Assistant Professor, UPPSC, UPSC Prelims and UGC-NET are the model. Concise, formal stems; no conversational tone, no hints, no explanation inside the stem, no "fun fact" style. Typical stems:
-  - English: "Which one of the following …?", "Who among the following …?", "… is known as:", "Which of the following pairs is/are correctly matched?
-1. … – …
-2. … – …
-3. … – …
-Select the correct answer using the codes given below:", "Match List-I with List-II and select the correct answer using the codes given below the lists:", "Arrange the following in chronological order and select the correct answer from the codes given below:", "Which of the statements given above is/are correct?"
-  - Hindi (UP papers): "निम्नलिखित में से कौन-सा/सी …?", "निम्नलिखित में से किसे … कहा जाता है?", "निम्नलिखित युग्मों में से कौन-सा/से सही सुमेलित है/हैं?", "सूची-I को सूची-II से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:", "निम्नलिखित को कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:", "नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:"
-  - Level = exam: **TGT** like UP TGT papers (direct one-liners, one fact); **PGT** like UP PGT/UPPSC (statements, pairs, match lists); **Higher** like Assistant Professor/UGC-NET/UPSC (assertion–reason, 3–4 statements, chronology, "codes", analytical).
+- How many: see `docs/TARGETS.md` (40 for the ICT, educational technology and teaching/research sections; about 6 for a small section; the big early sections have 42–58).
+- **One short, single question per item (owner's rule, November 2026).** The stem is one line of at most 200 characters, with no line breaks. Do NOT write statement sets ("Consider the following statements…"), match-the-list, assertion–reason, "which of the pairs", chronology or any other multi-part format: the validator rejects them. Test one fact or one idea per question.
+- **The level must follow the section's tag in `sections.js`** (the validator checks this):
+  - section tagged only `tgt` → every question is `TGT` or `PGT`;
+  - section tagged only `higher` → every question is `Higher`;
+  - section tagged with both → a mix of `TGT`, `PGT` and `Higher` (about 40% / 35% / 25%).
+- What each level means:
+  - **TGT**: a direct one-fact question as in UP TGT papers ("Who…", "Which…", "… is located in:").
+  - **PGT**: the less obvious fact or a slightly deeper point, as in UP PGT / GIC Lecturer / UPPSC papers (dates, articles, committees, "which one of the following is NOT…").
+  - **Higher**: a single conceptual or applied question, as in the UPESSC Assistant Professor paper of 18 April 2026: "… most accurately refers to:", "… differs from … mainly because:", "… primarily seeks to:", "… is best described as:", a short numerical or a reasoned "why". Still one stem and four options.
+- Cover the **whole scope** of the section evenly: no two questions should test the same fact, and no English stem may repeat one in any other section (the validator checks all sections together).
+- **Frame every question as real competitive exams do**: previous-year papers of UP TGT/PGT, GIC/GDC, UPHESC/UPESSC Assistant Professor and UPPSC are the model. Concise, formal stems; no conversational tone, no hints, no explanation inside the stem. Typical stems:
+  - English: "Which one of the following …?", "Who among the following …?", "… is known as:", "… was established in:", "Which one of the following is NOT …?"
+  - Hindi (UP papers): "निम्नलिखित में से कौन-सा/सी …?", "… किसे कहा जाता है?", "… कहाँ स्थित है?", "… की स्थापना कब हुई?", "निम्नलिखित में से कौन-सा … नहीं है?"
 - Exactly **one** correct option. Distractors must be plausible and of the same kind (four rulers, four years, four articles). Avoid "All of the above / None of the above" (at most 2 per section). Write "NOT" in capitals when a question asks for the exception (Hindi: "नहीं").
 - **Spread the correct answer evenly** over positions 0–3 (`answer` is the 0-based index of the correct option in both languages). Option order must be identical in `en` and `hi`.
 - Options must not start with "(a)", "A." etc.; the game adds A–D itself.

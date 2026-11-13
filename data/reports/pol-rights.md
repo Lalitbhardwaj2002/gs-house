@@ -19,3 +19,8 @@ Every answer key was solved blind first and agreed with the draft. Fatman printe
 - Fatman p. 155 dates the Maneka Gandhi case to 1967. It is 1978, so do not cite that page for the year.
 - Fatman p. 157 and the lower half of p. 160 are crosswords; do not cite them.
 - Sub-topics worth adding later: Article 21A/RTE Act 2009 details, Article 31A/31B (zamindari, Ninth Schedule origin), Article 19(1)(d)/(e) restrictions for Scheduled Tribes, the Kesavananda/Golaknath line on amending Fundamental Rights, and the writ of habeas corpus against private persons.
+
+## Check of 12 November 2026 (single-question rework)
+Checked 30 questions (002 003 005 006 009 011 013 015 019 020 023 024 026 028 029 033 034 035 037 038 040 043 044 045 046 047 052 054 055 056). Article numbers, amendments and case names/years verified; all keys correct.
+- Corrected 056: Hindi path spelling made consistent with the stem (बिजोय इमैनुएल).
+- Replaced: none.

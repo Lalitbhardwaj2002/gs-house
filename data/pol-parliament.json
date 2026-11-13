@@ -1,403 +1,1311 @@
 {
-  "section": "pol-parliament",
-  "questions": [
+ "section": "pol-parliament",
+ "questions": [
+  {
+   "id": "pol-parliament-001",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Under Article 100(3) of the Constitution of India, the quorum to constitute a meeting of either House of Parliament is:",
+    "options": [
+     "One-fourth of the total number of members of the House",
+     "One-sixth of the total number of members of the House",
+     "One-third of the total number of members of the House",
+     "One-tenth of the total number of members of the House"
+    ],
+    "explanation": "Article 100(3) fixes the quorum of either House of Parliament at one-tenth of the total number of members of the House. If there is no quorum, the presiding officer must adjourn the House or suspend the sitting until there is a quorum (Article 100(4)).",
+    "notes": [
+     "One-fourth: not the quorum of either House under the Constitution.",
+     "One-sixth: not prescribed as quorum anywhere in Article 100.",
+     "One-third: not prescribed as the quorum of either House.",
+     "One-tenth: the quorum prescribed by Article 100(3), including the presiding officer."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Conduct of business",
+     "Quorum"
+    ],
+    "facts": [
+     "Article 100(1): the Speaker or Chairman does not vote in the first instance but has a casting vote in case of a tie.",
+     "Article 189(3) makes the same one-tenth quorum rule (or ten members, whichever is greater) for State Legislatures."
+    ]
+   },
+   "hi": {
+    "q": "भारत के संविधान के अनुच्छेद 100(3) के अंतर्गत संसद के किसी भी सदन का अधिवेशन गठित करने के लिए गणपूर्ति (कोरम) है:",
+    "options": [
+     "सदन के कुल सदस्यों का चौथाई भाग",
+     "सदन के कुल सदस्यों का छठा भाग",
+     "सदन के कुल सदस्यों का तिहाई भाग",
+     "सदन के कुल सदस्यों का दसवाँ भाग"
+    ],
+    "explanation": "अनुच्छेद 100(3) संसद के प्रत्येक सदन की गणपूर्ति सदन के कुल सदस्यों के दसवें भाग के बराबर निर्धारित करता है। गणपूर्ति न होने पर पीठासीन अधिकारी सदन को स्थगित करेगा या बैठक निलंबित करेगा (अनुच्छेद 100(4))।",
+    "notes": [
+     "चौथाई भाग: संविधान में किसी भी सदन की गणपूर्ति यह नहीं है।",
+     "छठा भाग: अनुच्छेद 100 में गणपूर्ति के रूप में कहीं निर्धारित नहीं।",
+     "तिहाई भाग: किसी भी सदन की गणपूर्ति के रूप में निर्धारित नहीं।",
+     "दसवाँ भाग: अनुच्छेद 100(3) द्वारा निर्धारित गणपूर्ति, जिसमें पीठासीन अधिकारी भी गिना जाता है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "कार्य संचालन",
+     "गणपूर्ति"
+    ],
+    "facts": [
+     "अनुच्छेद 100(1): अध्यक्ष या सभापति प्रथमतः मत नहीं देता, किंतु मत बराबर होने पर निर्णायक मत देता है।",
+     "अनुच्छेद 189(3) राज्य विधानमंडल के लिए भी दसवें भाग (या दस सदस्य, जो भी अधिक हो) की गणपूर्ति निर्धारित करता है।"
+    ]
+   },
+   "refs": [
     {
-      "id": "pol-parliament-001",
-      "level": "TGT",
-      "answer": 1,
-      "en": {
-        "q": "Under Article 100(3) of the Constitution of India, the quorum to constitute a meeting of either House of Parliament is:",
-        "options": [
-          "One-fourth of the total number of members of the House",
-          "One-tenth of the total number of members of the House",
-          "One-third of the total number of members of the House",
-          "One-sixth of the total number of members of the House"
-        ],
-        "explanation": "Article 100(3) fixes the quorum of either House of Parliament at one-tenth of the total number of members of the House. If there is no quorum, the presiding officer must adjourn the House or suspend the sitting until there is a quorum (Article 100(4)).",
-        "notes": [
-          "One-fourth: not the quorum of either House under the Constitution.",
-          "One-tenth: the quorum prescribed by Article 100(3), including the presiding officer.",
-          "One-third: the fraction of Rajya Sabha members who retire every second year, not the quorum.",
-          "One-sixth: not prescribed as quorum anywhere in Article 100."
-        ],
-        "path": [
-          "Indian Polity",
-          "Parliament",
-          "Conduct of business",
-          "Quorum"
-        ],
-        "facts": [
-          "Article 100(1): the Speaker or Chairman does not vote in the first instance but has a casting vote in case of a tie.",
-          "Article 189(3) makes the same one-tenth quorum rule (or ten members, whichever is greater) for State Legislatures."
-        ]
-      },
-      "hi": {
-        "q": "भारत के संविधान के अनुच्छेद 100(3) के अंतर्गत संसद के किसी भी सदन का अधिवेशन गठित करने के लिए गणपूर्ति (कोरम) है:",
-        "options": [
-          "सदन के कुल सदस्यों का चौथाई भाग",
-          "सदन के कुल सदस्यों का दसवाँ भाग",
-          "सदन के कुल सदस्यों का तिहाई भाग",
-          "सदन के कुल सदस्यों का छठा भाग"
-        ],
-        "explanation": "अनुच्छेद 100(3) संसद के प्रत्येक सदन की गणपूर्ति सदन के कुल सदस्यों के दसवें भाग के बराबर निर्धारित करता है। गणपूर्ति न होने पर पीठासीन अधिकारी सदन को स्थगित करेगा या बैठक निलंबित करेगा (अनुच्छेद 100(4))।",
-        "notes": [
-          "चौथाई भाग: संविधान में किसी भी सदन की गणपूर्ति यह नहीं है।",
-          "दसवाँ भाग: अनुच्छेद 100(3) द्वारा निर्धारित गणपूर्ति, जिसमें पीठासीन अधिकारी भी गिना जाता है।",
-          "तिहाई भाग: प्रत्येक दूसरे वर्ष सेवानिवृत्त होने वाले राज्यसभा सदस्यों का अनुपात, गणपूर्ति नहीं।",
-          "छठा भाग: अनुच्छेद 100 में गणपूर्ति के रूप में कहीं निर्धारित नहीं।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "संसद",
-          "कार्य संचालन",
-          "गणपूर्ति"
-        ],
-        "facts": [
-          "अनुच्छेद 100(1): अध्यक्ष या सभापति प्रथमतः मत नहीं देता, किंतु मत बराबर होने पर निर्णायक मत देता है।",
-          "अनुच्छेद 189(3) राज्य विधानमंडल के लिए भी दसवें भाग (या दस सदस्य, जो भी अधिक हो) की गणपूर्ति निर्धारित करता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 169
-        },
-        {
-          "source": "Constitution of India, Article 100"
-        }
-      ]
+     "book": "fatman",
+     "page": 169
     },
     {
-      "id": "pol-parliament-002",
-      "level": "TGT",
-      "answer": 0,
-      "en": {
-        "q": "Who presides over a joint sitting of the two Houses of Parliament?",
-        "options": [
-          "The Speaker of the Lok Sabha",
-          "The Chairman of the Rajya Sabha",
-          "The President of India",
-          "The Deputy Chairman of the Rajya Sabha"
-        ],
-        "explanation": "Under Article 118(4), the Speaker of the Lok Sabha presides over a joint sitting called by the President under Article 108. In the Speaker's absence the Deputy Speaker presides, and in his absence the Deputy Chairman of the Rajya Sabha.",
-        "notes": [
-          "Speaker of the Lok Sabha: presides over a joint sitting under Article 118(4).",
-          "Chairman of the Rajya Sabha: cannot preside over a joint sitting, as he is not a member of either House.",
-          "President of India: summons the joint sitting under Article 108 but does not preside over it.",
-          "Deputy Chairman of the Rajya Sabha: presides only when both the Speaker and the Deputy Speaker are absent."
-        ],
-        "path": [
-          "Indian Polity",
-          "Parliament",
-          "Legislative procedure",
-          "Joint sitting"
-        ],
-        "facts": [
-          "The provision for a joint sitting was borrowed from the Constitution of Australia.",
-          "Joint sittings have been held three times: on the Dowry Prohibition Bill, the Banking Service Commission (Repeal) Bill and the Prevention of Terrorism Bill (2002)."
-        ]
-      },
-      "hi": {
-        "q": "संसद के दोनों सदनों की संयुक्त बैठक की अध्यक्षता कौन करता है?",
-        "options": [
-          "लोकसभा अध्यक्ष",
-          "राज्यसभा का सभापति",
-          "भारत का राष्ट्रपति",
-          "राज्यसभा का उपसभापति"
-        ],
-        "explanation": "अनुच्छेद 118(4) के अनुसार अनुच्छेद 108 के अंतर्गत राष्ट्रपति द्वारा बुलाई गई संयुक्त बैठक की अध्यक्षता लोकसभा अध्यक्ष करता है। उसकी अनुपस्थिति में उपाध्यक्ष और उसकी भी अनुपस्थिति में राज्यसभा का उपसभापति अध्यक्षता करता है।",
-        "notes": [
-          "लोकसभा अध्यक्ष: अनुच्छेद 118(4) के अंतर्गत संयुक्त बैठक की अध्यक्षता करता है।",
-          "राज्यसभा का सभापति: संयुक्त बैठक की अध्यक्षता नहीं कर सकता, क्योंकि वह किसी भी सदन का सदस्य नहीं है।",
-          "भारत का राष्ट्रपति: अनुच्छेद 108 के अंतर्गत संयुक्त बैठक आहूत करता है, अध्यक्षता नहीं करता।",
-          "राज्यसभा का उपसभापति: केवल तब अध्यक्षता करता है जब लोकसभा अध्यक्ष और उपाध्यक्ष दोनों अनुपस्थित हों।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "संसद",
-          "विधायी प्रक्रिया",
-          "संयुक्त बैठक"
-        ],
-        "facts": [
-          "संयुक्त बैठक का प्रावधान ऑस्ट्रेलिया के संविधान से लिया गया है।",
-          "अब तक तीन बार संयुक्त बैठक हुई है: दहेज प्रतिषेध विधेयक, बैंकिंग सेवा आयोग (निरसन) विधेयक और आतंकवाद निवारण विधेयक (2002) पर।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 170
-        },
-        {
-          "source": "Constitution of India, Articles 108 and 118(4)"
-        }
-      ]
-    },
-    {
-      "id": "pol-parliament-003",
-      "level": "PGT",
-      "answer": 2,
-      "en": {
-        "q": "Consider the following statements regarding a Money Bill:\n1. It can be introduced only in the Lok Sabha and only on the recommendation of the President.\n2. If any question arises whether a Bill is a Money Bill, the decision of the Chairman of the Rajya Sabha is final.\n3. If the Rajya Sabha does not return it within 14 days of its receipt, it is deemed to have been passed by both Houses.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 1",
-          "2 and 3 only",
-          "1 and 3 only",
-          "1, 2 and 3"
-        ],
-        "explanation": "Under Articles 109(1) and 117(1), a Money Bill can be introduced only in the Lok Sabha and only on the President's recommendation, and under Article 109(5) it is deemed passed if the Rajya Sabha does not return it within 14 days. Statement 2 is wrong: Article 110(3) makes the decision of the Speaker of the Lok Sabha final.",
-        "notes": [
-          "Only 1: incomplete, because statement 3 (the 14-day rule of Article 109(5)) is also correct.",
-          "2 and 3 only: wrong, because the Speaker, not the Chairman of the Rajya Sabha, certifies a Money Bill.",
-          "1 and 3 only: correct; statement 2 wrongly names the Chairman of the Rajya Sabha.",
-          "1, 2 and 3: wrong, because statement 2 is incorrect under Article 110(3)."
-        ],
-        "path": [
-          "Indian Polity",
-          "Parliament",
-          "Legislative procedure",
-          "Money Bill"
-        ],
-        "facts": [
-          "Article 110 defines a Money Bill; the Speaker endorses his certificate on it when it is sent to the Rajya Sabha.",
-          "The Rajya Sabha can only make recommendations on a Money Bill, which the Lok Sabha may accept or reject.",
-          "There is no joint sitting on a Money Bill or a Constitution Amendment Bill."
-        ]
-      },
-      "hi": {
-        "q": "धन विधेयक के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. इसे केवल लोकसभा में और केवल राष्ट्रपति की सिफारिश पर ही पुरःस्थापित किया जा सकता है।\n2. यदि यह प्रश्न उठे कि कोई विधेयक धन विधेयक है या नहीं, तो राज्यसभा के सभापति का निर्णय अंतिम होता है।\n3. यदि राज्यसभा इसे प्राप्ति के 14 दिनों के भीतर नहीं लौटाती, तो इसे दोनों सदनों द्वारा पारित मान लिया जाता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
-        "options": [
-          "केवल 1",
-          "केवल 2 और 3",
-          "केवल 1 और 3",
-          "1, 2 और 3"
-        ],
-        "explanation": "अनुच्छेद 109(1) और 117(1) के अनुसार धन विधेयक केवल लोकसभा में राष्ट्रपति की सिफारिश पर पुरःस्थापित होता है, और अनुच्छेद 109(5) के अनुसार 14 दिनों में राज्यसभा द्वारा न लौटाए जाने पर इसे पारित मान लिया जाता है। कथन 2 गलत है: अनुच्छेद 110(3) के अनुसार लोकसभा अध्यक्ष का निर्णय अंतिम होता है।",
-        "notes": [
-          "केवल 1: अपूर्ण, क्योंकि कथन 3 (अनुच्छेद 109(5) का 14 दिन का नियम) भी सही है।",
-          "केवल 2 और 3: गलत, क्योंकि धन विधेयक का प्रमाणन लोकसभा अध्यक्ष करता है, राज्यसभा का सभापति नहीं।",
-          "केवल 1 और 3: सही; कथन 2 में गलत रूप से राज्यसभा के सभापति का नाम है।",
-          "1, 2 और 3: गलत, क्योंकि अनुच्छेद 110(3) के अनुसार कथन 2 असत्य है।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "संसद",
-          "विधायी प्रक्रिया",
-          "धन विधेयक"
-        ],
-        "facts": [
-          "अनुच्छेद 110 धन विधेयक को परिभाषित करता है; राज्यसभा को भेजते समय अध्यक्ष उस पर अपना प्रमाणपत्र पृष्ठांकित करता है।",
-          "राज्यसभा धन विधेयक पर केवल सिफारिशें कर सकती है, जिन्हें लोकसभा मान भी सकती है और अस्वीकार भी कर सकती है।",
-          "धन विधेयक और संविधान संशोधन विधेयक पर संयुक्त बैठक नहीं होती।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 170
-        },
-        {
-          "source": "Constitution of India, Articles 109, 110 and 117"
-        }
-      ]
-    },
-    {
-      "id": "pol-parliament-004",
-      "level": "PGT",
-      "answer": 3,
-      "en": {
-        "q": "Consider the following statements:\n1. The Rajya Sabha is not subject to dissolution, and as nearly as possible one-third of its members retire on the expiration of every second year.\n2. Under Article 81, the Lok Sabha shall consist of not more than 530 members chosen from the States and not more than 20 members representing the Union Territories.\n3. The minimum age for being chosen a member of the Rajya Sabha is 25 years.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 2",
-          "1 and 3 only",
-          "2 and 3 only",
-          "1 and 2 only"
-        ],
-        "explanation": "Article 83(1) makes the Rajya Sabha a permanent body with one-third of its members retiring every second year, and Article 81 caps the Lok Sabha at 530 members from the States and 20 from the Union Territories. Statement 3 is wrong: under Article 84(b) the minimum age is 30 years for the Rajya Sabha and 25 years for the Lok Sabha.",
-        "notes": [
-          "Only 2: incomplete, because statement 1 (Article 83(1)) is also correct.",
-          "1 and 3 only: wrong, because the minimum age for the Rajya Sabha is 30 years.",
-          "2 and 3 only: wrong, because statement 3 is incorrect.",
-          "1 and 2 only: correct; statements 1 and 2 restate Articles 83(1) and 81."
-        ],
-        "path": [
-          "Indian Polity",
-          "Parliament",
-          "Composition",
-          "Lok Sabha and Rajya Sabha"
-        ],
-        "facts": [
-          "Article 80: the Rajya Sabha can have at most 250 members, of whom 12 are nominated by the President for literature, science, art and social service.",
-          "The nomination of two Anglo-Indian members to the Lok Sabha ended in January 2020, as the 104th Amendment did not extend it."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. राज्यसभा का विघटन नहीं होता और यथासंभव इसके एक-तिहाई सदस्य प्रत्येक दूसरे वर्ष की समाप्ति पर सेवानिवृत्त हो जाते हैं।\n2. अनुच्छेद 81 के अनुसार लोकसभा में राज्यों से चुने गए अधिकतम 530 सदस्य और संघ राज्यक्षेत्रों का प्रतिनिधित्व करने वाले अधिकतम 20 सदस्य होंगे।\n3. राज्यसभा का सदस्य चुने जाने के लिए न्यूनतम आयु 25 वर्ष है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
-        "options": [
-          "केवल 2",
-          "केवल 1 और 3",
-          "केवल 2 और 3",
-          "केवल 1 और 2"
-        ],
-        "explanation": "अनुच्छेद 83(1) राज्यसभा को स्थायी सदन बनाता है जिसके एक-तिहाई सदस्य प्रत्येक दूसरे वर्ष सेवानिवृत्त होते हैं, और अनुच्छेद 81 लोकसभा में राज्यों से अधिकतम 530 तथा संघ राज्यक्षेत्रों से अधिकतम 20 सदस्य निर्धारित करता है। कथन 3 गलत है: अनुच्छेद 84(ख) के अनुसार राज्यसभा के लिए न्यूनतम आयु 30 वर्ष और लोकसभा के लिए 25 वर्ष है।",
-        "notes": [
-          "केवल 2: अपूर्ण, क्योंकि कथन 1 (अनुच्छेद 83(1)) भी सही है।",
-          "केवल 1 और 3: गलत, क्योंकि राज्यसभा के लिए न्यूनतम आयु 30 वर्ष है।",
-          "केवल 2 और 3: गलत, क्योंकि कथन 3 असत्य है।",
-          "केवल 1 और 2: सही; कथन 1 और 2 अनुच्छेद 83(1) और 81 के अनुरूप हैं।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "संसद",
-          "संरचना",
-          "लोकसभा एवं राज्यसभा"
-        ],
-        "facts": [
-          "अनुच्छेद 80: राज्यसभा में अधिकतम 250 सदस्य हो सकते हैं, जिनमें से 12 को राष्ट्रपति साहित्य, विज्ञान, कला और समाज सेवा के क्षेत्र से मनोनीत करता है।",
-          "लोकसभा में दो आंग्ल-भारतीय सदस्यों का मनोनयन जनवरी 2020 में समाप्त हो गया, क्योंकि 104वें संशोधन ने इसे आगे नहीं बढ़ाया।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 167
-        },
-        {
-          "source": "Constitution of India, Articles 80, 81, 83 and 84"
-        }
-      ]
-    },
-    {
-      "id": "pol-parliament-005",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The salaries and allowances of the Judges of the Supreme Court cannot be reduced by a vote of the Lok Sabha during the passing of the Budget.\nReason (R): Estimates of expenditure charged on the Consolidated Fund of India may be discussed in Parliament but are not submitted to its vote.\nSelect the correct answer using the codes given below:",
-        "options": [
-          "Both A and R are true, and R is the correct explanation of A",
-          "Both A and R are true, but R is not the correct explanation of A",
-          "A is true, but R is false",
-          "A is false, but R is true"
-        ],
-        "explanation": "Article 112(3)(d) lists the salaries, allowances and pensions of Supreme Court Judges as expenditure charged on the Consolidated Fund of India. Under Article 113(1) such charged expenditure is not put to the vote of Parliament, which is exactly why the Lok Sabha cannot cut it while voting demands for grants.",
-        "notes": [
-          "Correct: A is true because the salaries are charged expenditure, and R (Article 113(1)) explains why they escape the vote.",
-          "Wrong: R is not an unrelated truth; it is the very reason A holds.",
-          "Wrong: R is true; Article 113(1) bars a vote on charged expenditure but allows discussion.",
-          "Wrong: A is true; Article 112(3)(d) makes Supreme Court Judges' salaries charged expenditure."
-        ],
-        "path": [
-          "Indian Polity",
-          "Parliament",
-          "Budget procedure",
-          "Charged expenditure"
-        ],
-        "facts": [
-          "Article 112 calls the Budget the 'Annual Financial Statement'; the word 'Budget' is not used in the Constitution.",
-          "The emoluments of the President, the Chairman and Deputy Chairman of the Rajya Sabha, the Speaker and Deputy Speaker of the Lok Sabha and the CAG are also charged expenditure."
-        ]
-      },
-      "hi": {
-        "q": "नीचे दो कथन दिए गए हैं, जिनमें से एक को कथन (A) और दूसरे को कारण (R) कहा गया है:\nकथन (A): बजट पारित करते समय लोकसभा अपने मतदान द्वारा सर्वोच्च न्यायालय के न्यायाधीशों के वेतन और भत्तों में कटौती नहीं कर सकती।\nकारण (R): भारत की संचित निधि पर भारित व्यय से संबंधित प्राक्कलनों पर संसद में चर्चा तो हो सकती है, किंतु उन्हें मतदान के लिए प्रस्तुत नहीं किया जाता।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-          "कथन (A) सही है, परंतु कारण (R) गलत है",
-          "कथन (A) गलत है, परंतु कारण (R) सही है"
-        ],
-        "explanation": "अनुच्छेद 112(3)(घ) सर्वोच्च न्यायालय के न्यायाधीशों के वेतन, भत्ते और पेंशन को भारत की संचित निधि पर भारित व्यय बताता है। अनुच्छेद 113(1) के अनुसार भारित व्यय पर संसद में मतदान नहीं होता, इसी कारण लोकसभा अनुदान माँगों पर मतदान करते समय इसमें कटौती नहीं कर सकती।",
-        "notes": [
-          "सही: (A) सत्य है क्योंकि यह वेतन भारित व्यय है, और (R) (अनुच्छेद 113(1)) बताता है कि उस पर मतदान क्यों नहीं होता।",
-          "गलत: (R) कोई असंबद्ध सत्य नहीं है; यही (A) का वास्तविक कारण है।",
-          "गलत: (R) सत्य है; अनुच्छेद 113(1) भारित व्यय पर मतदान रोकता है, चर्चा की अनुमति देता है।",
-          "गलत: (A) सत्य है; अनुच्छेद 112(3)(घ) न्यायाधीशों के वेतन को भारित व्यय बनाता है।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "संसद",
-          "बजट प्रक्रिया",
-          "भारित व्यय"
-        ],
-        "facts": [
-          "अनुच्छेद 112 बजट को 'वार्षिक वित्तीय विवरण' कहता है; संविधान में 'बजट' शब्द का प्रयोग नहीं हुआ है।",
-          "राष्ट्रपति, राज्यसभा के सभापति व उपसभापति, लोकसभा अध्यक्ष व उपाध्यक्ष तथा CAG की परिलब्धियाँ भी भारित व्यय हैं।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 170
-        },
-        {
-          "source": "Constitution of India, Articles 112 and 113"
-        }
-      ]
-    },
-    {
-      "id": "pol-parliament-006",
-      "level": "Higher",
-      "answer": 2,
-      "en": {
-        "q": "Match List-I with List-II and select the correct answer using the codes given below the lists:\nList-I (Parliamentary committee): A. Estimates Committee B. Public Accounts Committee C. Business Advisory Committee (Lok Sabha) D. Departmentally Related Standing Committee\nList-II (Feature): 1. Chaired by the Speaker; recommends the time to be allotted for business 2. 31 members each: 21 from the Lok Sabha and 10 from the Rajya Sabha 3. All 30 members are from the Lok Sabha only 4. Examines the audit reports of the CAG on the appropriation accounts of the Union",
-        "options": [
-          "A-4, B-3, C-1, D-2",
-          "A-3, B-1, C-4, D-2",
-          "A-3, B-4, C-1, D-2",
-          "A-2, B-4, C-3, D-1"
-        ],
-        "explanation": "The Estimates Committee has 30 members, all from the Lok Sabha; the Public Accounts Committee examines the CAG's audit reports on the appropriation accounts; the Lok Sabha's Business Advisory Committee is headed by the Speaker; and each of the 24 Departmentally Related Standing Committees has 31 members (21 Lok Sabha, 10 Rajya Sabha).",
-        "notes": [
-          "A-4, B-3: wrong; it is the Public Accounts Committee, not the Estimates Committee, that scrutinises CAG reports.",
-          "B-1, C-4: wrong; the Speaker chairs the Business Advisory Committee, not the Public Accounts Committee.",
-          "A-3, B-4, C-1, D-2: the correct matching.",
-          "A-2, D-1: wrong; the Estimates Committee has no Rajya Sabha members."
-        ],
-        "path": [
-          "Indian Polity",
-          "Parliament",
-          "Parliamentary committees",
-          "Financial and standing committees"
-        ],
-        "facts": [
-          "The Public Accounts Committee has 22 members (15 Lok Sabha, 7 Rajya Sabha); by convention since 1967 its chairman is from the Opposition.",
-          "The Estimates Committee is called a 'continuous economy committee'."
-        ]
-      },
-      "hi": {
-        "q": "सूची-I को सूची-II से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I (संसदीय समिति): A. प्राक्कलन समिति B. लोक लेखा समिति C. कार्य मंत्रणा समिति (लोकसभा) D. विभाग-संबंधित स्थायी समिति\nसूची-II (विशेषता): 1. अध्यक्ष (स्पीकर) इसका सभापति होता है; कार्य के लिए समय-आवंटन की सिफारिश करती है 2. प्रत्येक में 31 सदस्य: 21 लोकसभा से और 10 राज्यसभा से 3. सभी 30 सदस्य केवल लोकसभा से 4. संघ के विनियोग लेखों पर CAG के लेखापरीक्षा प्रतिवेदनों की जाँच करती है",
-        "options": [
-          "A-4, B-3, C-1, D-2",
-          "A-3, B-1, C-4, D-2",
-          "A-3, B-4, C-1, D-2",
-          "A-2, B-4, C-3, D-1"
-        ],
-        "explanation": "प्राक्कलन समिति के सभी 30 सदस्य लोकसभा से होते हैं; लोक लेखा समिति विनियोग लेखों पर CAG के प्रतिवेदनों की जाँच करती है; लोकसभा की कार्य मंत्रणा समिति का सभापति अध्यक्ष होता है; और 24 विभाग-संबंधित स्थायी समितियों में से प्रत्येक में 31 सदस्य (21 लोकसभा, 10 राज्यसभा) होते हैं।",
-        "notes": [
-          "A-4, B-3: गलत; CAG के प्रतिवेदनों की जाँच लोक लेखा समिति करती है, प्राक्कलन समिति नहीं।",
-          "B-1, C-4: गलत; अध्यक्ष कार्य मंत्रणा समिति का सभापति होता है, लोक लेखा समिति का नहीं।",
-          "A-3, B-4, C-1, D-2: सही सुमेलन।",
-          "A-2, D-1: गलत; प्राक्कलन समिति में राज्यसभा का कोई सदस्य नहीं होता।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "संसद",
-          "संसदीय समितियाँ",
-          "वित्तीय एवं स्थायी समितियाँ"
-        ],
-        "facts": [
-          "लोक लेखा समिति में 22 सदस्य (15 लोकसभा, 7 राज्यसभा) होते हैं; 1967 से परंपरा के अनुसार इसका सभापति विपक्ष से होता है।",
-          "प्राक्कलन समिति को 'सतत मितव्ययिता समिति' कहा जाता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 172
-        },
-        {
-          "source": "Rules of Procedure and Conduct of Business in Lok Sabha (Lok Sabha Secretariat)"
-        }
-      ]
+     "source": "Constitution of India, Article 100"
     }
-  ]
+   ]
+  },
+  {
+   "id": "pol-parliament-002",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Who presides over a joint sitting of the two Houses of Parliament?",
+    "options": [
+     "The Speaker of the Lok Sabha",
+     "The Chairman of the Rajya Sabha",
+     "The President of India",
+     "The Deputy Chairman of the Rajya Sabha"
+    ],
+    "explanation": "Under Article 118(4), the Speaker of the Lok Sabha presides over a joint sitting of the two Houses. In the Speaker's absence the Deputy Speaker presides, and in his absence the Deputy Chairman of the Rajya Sabha.",
+    "notes": [
+     "Speaker of the Lok Sabha: presides over a joint sitting under Article 118(4).",
+     "Chairman of the Rajya Sabha: cannot preside over a joint sitting, as he is not a member of either House.",
+     "President of India: summons the joint sitting but does not preside over it.",
+     "Deputy Chairman of the Rajya Sabha: presides only when both the Speaker and the Deputy Speaker are absent."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Legislative procedure",
+     "Joint sitting"
+    ],
+    "facts": [
+     "The provision for a joint sitting was borrowed from the Constitution of Australia.",
+     "Joint sittings have been held three times: on the Dowry Prohibition Bill, the Banking Service Commission (Repeal) Bill and the Prevention of Terrorism Bill (2002)."
+    ]
+   },
+   "hi": {
+    "q": "संसद के दोनों सदनों की संयुक्त बैठक की अध्यक्षता कौन करता है?",
+    "options": [
+     "लोकसभा अध्यक्ष",
+     "राज्यसभा का सभापति",
+     "भारत का राष्ट्रपति",
+     "राज्यसभा का उपसभापति"
+    ],
+    "explanation": "अनुच्छेद 118(4) के अनुसार दोनों सदनों की संयुक्त बैठक की अध्यक्षता लोकसभा अध्यक्ष करता है। उसकी अनुपस्थिति में उपाध्यक्ष और उसकी भी अनुपस्थिति में राज्यसभा का उपसभापति अध्यक्षता करता है।",
+    "notes": [
+     "लोकसभा अध्यक्ष: अनुच्छेद 118(4) के अंतर्गत संयुक्त बैठक की अध्यक्षता करता है।",
+     "राज्यसभा का सभापति: संयुक्त बैठक की अध्यक्षता नहीं कर सकता, क्योंकि वह किसी भी सदन का सदस्य नहीं है।",
+     "भारत का राष्ट्रपति: संयुक्त बैठक आहूत करता है, अध्यक्षता नहीं करता।",
+     "राज्यसभा का उपसभापति: केवल तब अध्यक्षता करता है जब लोकसभा अध्यक्ष और उपाध्यक्ष दोनों अनुपस्थित हों।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "विधायी प्रक्रिया",
+     "संयुक्त बैठक"
+    ],
+    "facts": [
+     "संयुक्त बैठक का प्रावधान ऑस्ट्रेलिया के संविधान से लिया गया है।",
+     "अब तक तीन बार संयुक्त बैठक हुई है: दहेज प्रतिषेध विधेयक, बैंकिंग सेवा आयोग (निरसन) विधेयक और आतंकवाद निवारण विधेयक (2002) पर।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 170
+    },
+    {
+     "source": "Constitution of India, Articles 108 and 118(4)"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-003",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "If a question arises whether a Bill is a Money Bill or not, whose decision is final?",
+    "options": [
+     "The President",
+     "The Speaker of the Lok Sabha",
+     "The Chairman of the Rajya Sabha",
+     "The Finance Minister"
+    ],
+    "explanation": "Under Article 110(3) the decision of the Speaker of the Lok Sabha on whether a Bill is a Money Bill is final. The President's role is only to recommend the introduction of such a Bill.",
+    "notes": [
+     "He recommends the introduction of a Money Bill but does not decide its character.",
+     "Article 110(3) makes his decision final.",
+     "The Rajya Sabha can only make recommendations on a Money Bill.",
+     "He introduces the Bill but does not certify it."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Legislative procedure",
+     "Money Bill"
+    ],
+    "facts": [
+     "Article 110 defines a Money Bill; the Speaker endorses his certificate on it when it is sent to the Rajya Sabha.",
+     "The Rajya Sabha can only make recommendations on a Money Bill, which the Lok Sabha may accept or reject.",
+     "There is no joint sitting on a Money Bill or a Constitution Amendment Bill."
+    ]
+   },
+   "hi": {
+    "q": "यदि यह प्रश्न उठे कि कोई विधेयक धन विधेयक है अथवा नहीं, तो किसका निर्णय अंतिम होता है?",
+    "options": [
+     "राष्ट्रपति",
+     "लोकसभा अध्यक्ष",
+     "राज्यसभा के सभापति",
+     "वित्त मंत्री"
+    ],
+    "explanation": "अनुच्छेद 110(3) के अनुसार कोई विधेयक धन विधेयक है या नहीं, इस पर लोकसभा अध्यक्ष का निर्णय अंतिम होता है। राष्ट्रपति की भूमिका केवल ऐसे विधेयक को प्रस्तुत करने की सिफारिश करने तक सीमित है।",
+    "notes": [
+     "वे धन विधेयक प्रस्तुत करने की सिफारिश करते हैं, किंतु उसका स्वरूप तय नहीं करते।",
+     "अनुच्छेद 110(3) के अनुसार उनका निर्णय अंतिम है।",
+     "राज्यसभा धन विधेयक पर केवल सिफारिशें कर सकती है।",
+     "वे विधेयक प्रस्तुत करते हैं, किंतु प्रमाणित नहीं करते।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "विधायी प्रक्रिया",
+     "धन विधेयक"
+    ],
+    "facts": [
+     "अनुच्छेद 110 धन विधेयक को परिभाषित करता है; राज्यसभा को भेजते समय अध्यक्ष उस पर अपना प्रमाणपत्र पृष्ठांकित करता है।",
+     "राज्यसभा धन विधेयक पर केवल सिफारिशें कर सकती है, जिन्हें लोकसभा मान भी सकती है और अस्वीकार भी कर सकती है।",
+     "धन विधेयक और संविधान संशोधन विधेयक पर संयुक्त बैठक नहीं होती।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 170
+    },
+    {
+     "source": "Constitution of India, Articles 109, 110 and 117"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-004",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Under Article 81, the Lok Sabha may have not more than how many members representing the Union Territories?",
+    "options": [
+     "12",
+     "13",
+     "20",
+     "25"
+    ],
+    "explanation": "Article 81 provides for not more than 530 members chosen from the States and not more than 20 representing the Union Territories.",
+    "notes": [
+     "This is the number of members nominated to the Rajya Sabha.",
+     "Not the limit fixed by Article 81.",
+     "Article 81 allows up to 20 members from the Union Territories.",
+     "Not the limit fixed by Article 81."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Composition",
+     "Lok Sabha and Rajya Sabha"
+    ],
+    "facts": [
+     "Seats are allotted to the States so that the ratio of seats to population is, as far as practicable, the same for all States (Article 81(2)).",
+     "The nomination of two Anglo-Indian members to the Lok Sabha ended in January 2020, as the 104th Amendment did not extend it."
+    ]
+   },
+   "hi": {
+    "q": "अनुच्छेद 81 के अंतर्गत लोकसभा में संघ राज्यक्षेत्रों का प्रतिनिधित्व करने वाले सदस्यों की अधिकतम संख्या कितनी हो सकती है?",
+    "options": [
+     "12",
+     "13",
+     "20",
+     "25"
+    ],
+    "explanation": "अनुच्छेद 81 के अनुसार लोकसभा में राज्यों से अधिकतम 530 तथा संघ राज्यक्षेत्रों से अधिकतम 20 सदस्य हो सकते हैं।",
+    "notes": [
+     "यह राज्यसभा में मनोनीत सदस्यों की संख्या है।",
+     "अनुच्छेद 81 में यह सीमा नहीं है।",
+     "अनुच्छेद 81 संघ राज्यक्षेत्रों से अधिकतम 20 सदस्यों की अनुमति देता है।",
+     "अनुच्छेद 81 में यह सीमा नहीं है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "संरचना",
+     "लोकसभा एवं राज्यसभा"
+    ],
+    "facts": [
+     "राज्यों को स्थान इस प्रकार आवंटित किए जाते हैं कि स्थानों और जनसंख्या का अनुपात, यथासाध्य, सभी राज्यों के लिए समान रहे (अनुच्छेद 81(2))।",
+     "लोकसभा में दो आंग्ल-भारतीय सदस्यों का मनोनयन जनवरी 2020 में समाप्त हो गया, क्योंकि 104वें संशोधन ने इसे आगे नहीं बढ़ाया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 167
+    },
+    {
+     "source": "Constitution of India, Articles 80, 81, 83 and 84"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-005",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Expenditure 'charged' on the Consolidated Fund of India, such as the salaries of Supreme Court Judges, is:",
+    "options": [
+     "Voted by the Lok Sabha alone",
+     "Discussed in Parliament but not submitted to its vote",
+     "Neither discussed nor voted in Parliament",
+     "Voted at a joint sitting of both Houses"
+    ],
+    "explanation": "Under Article 113(1), expenditure charged on the Consolidated Fund may be discussed but is not put to the vote of Parliament. This protects the independence of offices such as Judges and the CAG.",
+    "notes": [
+     "Charged expenditure is not voted at all.",
+     "Article 113(1) allows discussion but no vote.",
+     "It can be discussed in either House.",
+     "Charged expenditure is never put to the vote, at a joint sitting or otherwise."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Budget procedure",
+     "Charged expenditure"
+    ],
+    "facts": [
+     "Article 112 calls the Budget the 'Annual Financial Statement'; the word 'Budget' is not used in the Constitution.",
+     "The emoluments of the President, the Chairman and Deputy Chairman of the Rajya Sabha, the Speaker and Deputy Speaker of the Lok Sabha and the CAG are also charged expenditure."
+    ]
+   },
+   "hi": {
+    "q": "भारत की संचित निधि पर 'भारित' व्यय, जैसे सर्वोच्च न्यायालय के न्यायाधीशों के वेतन, के संबंध में क्या सही है?",
+    "options": [
+     "इस पर केवल लोकसभा मतदान करती है",
+     "इस पर संसद में चर्चा हो सकती है, किंतु मतदान नहीं होता",
+     "इस पर संसद में न चर्चा होती है, न मतदान",
+     "इस पर दोनों सदनों की संयुक्त बैठक में मतदान होता है"
+    ],
+    "explanation": "अनुच्छेद 113(1) के अनुसार संचित निधि पर भारित व्यय पर चर्चा हो सकती है, किंतु उसे संसद के मतदान के लिए नहीं रखा जाता। इससे न्यायाधीशों एवं नियंत्रक-महालेखापरीक्षक जैसे पदों की स्वतंत्रता सुरक्षित रहती है।",
+    "notes": [
+     "भारित व्यय पर मतदान होता ही नहीं।",
+     "अनुच्छेद 113(1) चर्चा की अनुमति देता है, मतदान की नहीं।",
+     "इस पर किसी भी सदन में चर्चा हो सकती है।",
+     "भारित व्यय पर संयुक्त बैठक में भी मतदान नहीं होता।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "बजट प्रक्रिया",
+     "भारित व्यय"
+    ],
+    "facts": [
+     "अनुच्छेद 112 बजट को 'वार्षिक वित्तीय विवरण' कहता है; संविधान में 'बजट' शब्द का प्रयोग नहीं हुआ है।",
+     "राष्ट्रपति, राज्यसभा के सभापति व उपसभापति, लोकसभा अध्यक्ष व उपाध्यक्ष तथा CAG की परिलब्धियाँ भी भारित व्यय हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 170
+    },
+    {
+     "source": "Constitution of India, Articles 112 and 113"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-006",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "Which parliamentary committee draws all its members from the Lok Sabha alone?",
+    "options": [
+     "Estimates Committee",
+     "Public Accounts Committee",
+     "Committee on Public Undertakings",
+     "Departmentally Related Standing Committee"
+    ],
+    "explanation": "The Estimates Committee has 30 members, all from the Lok Sabha, and is called a 'continuous economy committee'. The Public Accounts Committee examines the audit reports of the CAG.",
+    "notes": [
+     "All its 30 members are from the Lok Sabha.",
+     "Has 22 members: 15 from the Lok Sabha and 7 from the Rajya Sabha.",
+     "Has members from both Houses.",
+     "Has 31 members: 21 from the Lok Sabha and 10 from the Rajya Sabha."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Parliamentary committees",
+     "Financial and standing committees"
+    ],
+    "facts": [
+     "The Public Accounts Committee has 22 members (15 Lok Sabha, 7 Rajya Sabha); by convention since 1967 its chairman is from the Opposition.",
+     "The Estimates Committee is called a 'continuous economy committee'."
+    ]
+   },
+   "hi": {
+    "q": "किस संसदीय समिति के सभी सदस्य केवल लोकसभा से लिए जाते हैं?",
+    "options": [
+     "प्राक्कलन समिति",
+     "लोक लेखा समिति",
+     "सार्वजनिक उपक्रम समिति",
+     "विभागीय स्थायी समिति"
+    ],
+    "explanation": "प्राक्कलन समिति में 30 सदस्य होते हैं, जो सभी लोकसभा से होते हैं; इसे 'सतत मितव्ययिता समिति' कहा जाता है। लोक लेखा समिति नियंत्रक-महालेखापरीक्षक के प्रतिवेदनों की जाँच करती है।",
+    "notes": [
+     "इसके सभी 30 सदस्य लोकसभा से होते हैं।",
+     "इसमें 22 सदस्य होते हैं: 15 लोकसभा से एवं 7 राज्यसभा से।",
+     "इसमें दोनों सदनों के सदस्य होते हैं।",
+     "इसमें 31 सदस्य होते हैं: 21 लोकसभा से एवं 10 राज्यसभा से।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "संसदीय समितियाँ",
+     "वित्तीय एवं स्थायी समितियाँ"
+    ],
+    "facts": [
+     "लोक लेखा समिति में 22 सदस्य (15 लोकसभा, 7 राज्यसभा) होते हैं; 1967 से परंपरा के अनुसार इसका सभापति विपक्ष से होता है।",
+     "प्राक्कलन समिति को 'सतत मितव्ययिता समिति' कहा जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 172
+    },
+    {
+     "source": "Rules of Procedure and Conduct of Business in Lok Sabha (Lok Sabha Secretariat)"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The maximum strength of the Rajya Sabha laid down in the Constitution of India is:",
+    "options": [
+     "250",
+     "245",
+     "238",
+     "552"
+    ],
+    "explanation": "Under Article 80, the Rajya Sabha can have at most 250 members: 238 representatives of the States and Union Territories and 12 members nominated by the President.",
+    "notes": [
+     "Of these, 238 represent the States and Union Territories and 12 are nominated.",
+     "245 is the present strength of the House.",
+     "238 is the maximum number of elected members only.",
+     "552 was the maximum strength once fixed for the Lok Sabha."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Composition"
+    ],
+    "facts": [
+     "The nominated members are persons eminent in literature, science, art and social service.",
+     "Uttar Pradesh has 31 seats, the largest number."
+    ]
+   },
+   "hi": {
+    "q": "भारत के संविधान में निर्धारित राज्य सभा की अधिकतम सदस्य संख्या कितनी है?",
+    "options": [
+     "250",
+     "245",
+     "238",
+     "552"
+    ],
+    "explanation": "अनुच्छेद 80 के अंतर्गत राज्य सभा में अधिकतम 250 सदस्य हो सकते हैं: राज्यों एवं संघ राज्य क्षेत्रों के 238 प्रतिनिधि तथा राष्ट्रपति द्वारा मनोनीत 12 सदस्य।",
+    "notes": [
+     "इनमें 238 राज्यों एवं संघ राज्य क्षेत्रों के प्रतिनिधि तथा 12 मनोनीत हैं।",
+     "245 सदन की वर्तमान सदस्य संख्या है।",
+     "238 केवल निर्वाचित सदस्यों की अधिकतम संख्या है।",
+     "552 कभी लोक सभा की निर्धारित अधिकतम सदस्य संख्या थी।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "संरचना"
+    ],
+    "facts": [
+     "मनोनीत सदस्य साहित्य, विज्ञान, कला एवं समाज सेवा के विशिष्ट व्यक्ति होते हैं।",
+     "उत्तर प्रदेश के सर्वाधिक, 31, स्थान हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    },
+    {
+     "book": "tgt-pgt-gk",
+     "page": 112
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The minimum age for being chosen a member of the Lok Sabha is:",
+    "options": [
+     "21 years",
+     "25 years",
+     "30 years",
+     "35 years"
+    ],
+    "explanation": "Under Article 84, a person must be a citizen of India and not less than 25 years of age to be a member of the Lok Sabha, and not less than 30 years for the Rajya Sabha.",
+    "notes": [
+     "21 years is the minimum age for membership of a Panchayat.",
+     "It is laid down in Article 84.",
+     "30 years is the minimum age for the Rajya Sabha.",
+     "35 years is the minimum age for the office of President."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Composition"
+    ],
+    "facts": [
+     "The voting age was reduced from 21 to 18 years by the 61st Amendment.",
+     "The normal term of the Lok Sabha is five years."
+    ]
+   },
+   "hi": {
+    "q": "लोक सभा का सदस्य चुने जाने के लिए न्यूनतम आयु कितनी है?",
+    "options": [
+     "21 वर्ष",
+     "25 वर्ष",
+     "30 वर्ष",
+     "35 वर्ष"
+    ],
+    "explanation": "अनुच्छेद 84 के अनुसार लोक सभा का सदस्य होने के लिए व्यक्ति भारत का नागरिक तथा कम से कम 25 वर्ष का, और राज्य सभा के लिए कम से कम 30 वर्ष का होना चाहिए।",
+    "notes": [
+     "21 वर्ष पंचायत की सदस्यता की न्यूनतम आयु है।",
+     "यह अनुच्छेद 84 में निर्धारित है।",
+     "30 वर्ष राज्य सभा की न्यूनतम आयु है।",
+     "35 वर्ष राष्ट्रपति पद की न्यूनतम आयु है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "संरचना"
+    ],
+    "facts": [
+     "61वें संशोधन द्वारा मतदान की आयु 21 से घटाकर 18 वर्ष की गई।",
+     "लोक सभा का सामान्य कार्यकाल पाँच वर्ष है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "A Money Bill can be introduced only in:",
+    "options": [
+     "The Rajya Sabha",
+     "Either House of Parliament",
+     "The Lok Sabha",
+     "A joint sitting of both Houses"
+    ],
+    "explanation": "Under Article 109(1), a Money Bill cannot be introduced in the Rajya Sabha, and under Article 117(1) it needs the President's recommendation. The Rajya Sabha cannot reject or amend it.",
+    "notes": [
+     "The Rajya Sabha can only make recommendations on it.",
+     "Ordinary Bills may begin in either House, but not Money Bills.",
+     "It also needs the prior recommendation of the President.",
+     "There is no joint sitting on a Money Bill."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Legislative procedure"
+    ],
+    "facts": [
+     "Money Bills are defined in Article 110.",
+     "The President cannot return a Money Bill for reconsideration."
+    ]
+   },
+   "hi": {
+    "q": "धन विधेयक केवल कहाँ प्रस्तुत किया जा सकता है?",
+    "options": [
+     "राज्य सभा में",
+     "संसद के किसी भी सदन में",
+     "लोक सभा में",
+     "दोनों सदनों की संयुक्त बैठक में"
+    ],
+    "explanation": "अनुच्छेद 109(1) के अनुसार धन विधेयक राज्य सभा में प्रस्तुत नहीं किया जा सकता तथा अनुच्छेद 117(1) के अनुसार इसके लिए राष्ट्रपति की सिफारिश आवश्यक है। राज्य सभा इसे अस्वीकार या संशोधित नहीं कर सकती।",
+    "notes": [
+     "राज्य सभा इस पर केवल सिफारिशें कर सकती है।",
+     "साधारण विधेयक किसी भी सदन में आरंभ हो सकते हैं, धन विधेयक नहीं।",
+     "इसके लिए राष्ट्रपति की पूर्व सिफारिश भी चाहिए।",
+     "धन विधेयक पर संयुक्त बैठक नहीं होती।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "विधायी प्रक्रिया"
+    ],
+    "facts": [
+     "धन विधेयक की परिभाषा अनुच्छेद 110 में है।",
+     "राष्ट्रपति धन विधेयक को पुनर्विचार के लिए नहीं लौटा सकते।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The interval between two sessions of Parliament cannot be more than:",
+    "options": [
+     "Three months",
+     "Four months",
+     "Nine months",
+     "Six months"
+    ],
+    "explanation": "Under Article 85, six months must not intervene between the last sitting of one session and the first sitting of the next. By convention there are three sessions a year: Budget, Monsoon and Winter.",
+    "notes": [
+     "The Constitution does not fix three months.",
+     "The Constitution does not fix four months.",
+     "Nine months would exceed the permitted gap.",
+     "Parliament must therefore meet at least twice a year."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Conduct of business"
+    ],
+    "facts": [
+     "The President summons and prorogues the Houses.",
+     "The President may dissolve the Lok Sabha (Article 85(2)(b))."
+    ]
+   },
+   "hi": {
+    "q": "संसद के दो सत्रों के बीच का अंतराल अधिकतम कितना हो सकता है?",
+    "options": [
+     "तीन माह",
+     "चार माह",
+     "नौ माह",
+     "छह माह"
+    ],
+    "explanation": "अनुच्छेद 85 के अनुसार एक सत्र की अंतिम बैठक एवं अगले सत्र की पहली बैठक के बीच छह माह का अंतर नहीं होना चाहिए। परंपरा से वर्ष में तीन सत्र होते हैं: बजट, मानसून एवं शीतकालीन।",
+    "notes": [
+     "संविधान तीन माह निर्धारित नहीं करता।",
+     "संविधान चार माह निर्धारित नहीं करता।",
+     "नौ माह अनुमत अंतराल से अधिक होगा।",
+     "अतः संसद की वर्ष में कम से कम दो बार बैठक होनी चाहिए।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "कार्य संचालन"
+    ],
+    "facts": [
+     "राष्ट्रपति सदनों को आहूत करते एवं उनका सत्रावसान करते हैं।",
+     "राष्ट्रपति लोक सभा का विघटन कर सकते हैं (अनुच्छेद 85(2)(ख))।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "A member of the Rajya Sabha is elected for a term of:",
+    "options": [
+     "Six years",
+     "Five years",
+     "Four years",
+     "Two years"
+    ],
+    "explanation": "A member of the Rajya Sabha is elected for six years. The Constitution itself does not fix this term; it is laid down in Section 155 of the Representation of the People Act, 1951.",
+    "notes": [
+     "The term is laid down in the Representation of the People Act, 1951.",
+     "Five years is the term of the Lok Sabha.",
+     "No House of Parliament has a term of four years.",
+     "No member of either House is elected for two years."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Composition"
+    ],
+    "facts": [
+     "The members are elected by the elected members of the State Legislative Assemblies.",
+     "The election is by proportional representation by means of the single transferable vote."
+    ]
+   },
+   "hi": {
+    "q": "राज्य सभा का सदस्य कितने वर्ष के कार्यकाल के लिए निर्वाचित होता है?",
+    "options": [
+     "छह वर्ष",
+     "पाँच वर्ष",
+     "चार वर्ष",
+     "दो वर्ष"
+    ],
+    "explanation": "राज्य सभा का सदस्य छह वर्ष के लिए निर्वाचित होता है। यह कार्यकाल संविधान में नहीं, बल्कि लोक प्रतिनिधित्व अधिनियम, 1951 की धारा 155 में निर्धारित है।",
+    "notes": [
+     "यह कार्यकाल लोक प्रतिनिधित्व अधिनियम, 1951 में निर्धारित है।",
+     "पाँच वर्ष लोक सभा का कार्यकाल है।",
+     "संसद के किसी सदन का कार्यकाल चार वर्ष नहीं है।",
+     "किसी भी सदन का सदस्य दो वर्ष के लिए निर्वाचित नहीं होता।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "संरचना"
+    ],
+    "facts": [
+     "सदस्यों का निर्वाचन राज्य विधान सभाओं के निर्वाचित सदस्य करते हैं।",
+     "निर्वाचन एकल संक्रमणीय मत द्वारा आनुपातिक प्रतिनिधित्व से होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Who was the first Speaker of the Lok Sabha?",
+    "options": [
+     "M. Ananthasayanam Ayyangar",
+     "G. V. Mavalankar",
+     "Hukam Singh",
+     "Neelam Sanjiva Reddy"
+    ],
+    "explanation": "Ganesh Vasudev Mavalankar was the first Speaker of the Lok Sabha, from 1952 until his death in 1956. Jawaharlal Nehru called him the 'Father of the Lok Sabha'.",
+    "notes": [
+     "Ayyangar was the first Deputy Speaker and the second Speaker.",
+     "He held the office from 1952 to 1956.",
+     "Hukam Singh was the Speaker from 1962 to 1967.",
+     "Sanjiva Reddy was the Speaker before he became President."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Presiding officers"
+    ],
+    "facts": [
+     "The Speaker is elected by the Lok Sabha from among its members.",
+     "Meira Kumar was the first woman Speaker."
+    ]
+   },
+   "hi": {
+    "q": "लोक सभा के पहले अध्यक्ष कौन थे?",
+    "options": [
+     "एम. अनंतशयनम आयंगर",
+     "जी. वी. मावलंकर",
+     "हुकम सिंह",
+     "नीलम संजीव रेड्डी"
+    ],
+    "explanation": "गणेश वासुदेव मावलंकर 1952 से 1956 में अपनी मृत्यु तक लोक सभा के पहले अध्यक्ष रहे। जवाहरलाल नेहरू ने उन्हें 'लोक सभा का जनक' कहा।",
+    "notes": [
+     "आयंगर पहले उपाध्यक्ष एवं दूसरे अध्यक्ष थे।",
+     "वे 1952 से 1956 तक पद पर रहे।",
+     "हुकम सिंह 1962 से 1967 तक अध्यक्ष रहे।",
+     "संजीव रेड्डी राष्ट्रपति बनने से पहले अध्यक्ष थे।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "पीठासीन अधिकारी"
+    ],
+    "facts": [
+     "अध्यक्ष का निर्वाचन लोक सभा अपने सदस्यों में से करती है।",
+     "मीरा कुमार पहली महिला अध्यक्ष थीं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    },
+    {
+     "book": "tgt-pgt-gk",
+     "page": 113
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-013",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The Rajya Sabha must return a Money Bill to the Lok Sabha, with or without recommendations, within:",
+    "options": [
+     "7 days",
+     "10 days",
+     "14 days",
+     "One month"
+    ],
+    "explanation": "Under Article 109, the Rajya Sabha has to return a Money Bill within 14 days of receiving it. The Lok Sabha may accept or reject any of its recommendations.",
+    "notes": [
+     "The Constitution allows more time than this.",
+     "The Constitution allows more time than this.",
+     "If it is not returned in time, it is deemed to have been passed by both Houses.",
+     "The period is shorter than one month."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Legislative procedure"
+    ],
+    "facts": [
+     "The Rajya Sabha cannot reject or amend a Money Bill; it can only recommend changes.",
+     "Under Article 109(4), if the Lok Sabha rejects the recommendations, the Bill is deemed passed by both Houses in the form in which the Lok Sabha passed it."
+    ]
+   },
+   "hi": {
+    "q": "राज्य सभा को धन विधेयक सिफारिशों सहित या उनके बिना कितनी अवधि में लोक सभा को लौटाना होता है?",
+    "options": [
+     "7 दिन",
+     "10 दिन",
+     "14 दिन",
+     "एक माह"
+    ],
+    "explanation": "अनुच्छेद 109 के अनुसार राज्य सभा को धन विधेयक प्राप्ति के 14 दिन के भीतर लौटाना होता है। लोक सभा उसकी किसी सिफारिश को स्वीकार या अस्वीकार कर सकती है।",
+    "notes": [
+     "संविधान इससे अधिक समय देता है।",
+     "संविधान इससे अधिक समय देता है।",
+     "समय पर न लौटाने पर इसे दोनों सदनों द्वारा पारित माना जाता है।",
+     "यह अवधि एक माह से कम है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "विधायी प्रक्रिया"
+    ],
+    "facts": [
+     "राज्य सभा धन विधेयक को अस्वीकार या संशोधित नहीं कर सकती; वह केवल परिवर्तनों की सिफारिश कर सकती है।",
+     "अनुच्छेद 109(4) के अनुसार यदि लोक सभा सिफारिशें अस्वीकार कर दे, तो विधेयक उसी रूप में दोनों सदनों द्वारा पारित माना जाता है, जिसमें लोक सभा ने उसे पारित किया था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-014",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Under which Article can the Rajya Sabha, by a resolution passed by a two-thirds majority, enable Parliament to make laws on a subject of the State List in the national interest?",
+    "options": [
+     "Article 252",
+     "Article 253",
+     "Article 312",
+     "Article 249"
+    ],
+    "explanation": "Under Article 249, if the Rajya Sabha resolves by a majority of two-thirds of the members present and voting that it is necessary in the national interest, Parliament may legislate on a State List subject.",
+    "notes": [
+     "Article 252 deals with laws made for two or more States with their consent.",
+     "Article 253 deals with laws to implement international agreements.",
+     "Article 312 enables the creation of All India Services.",
+     "Such a resolution remains in force for one year at a time."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Powers of the Rajya Sabha"
+    ],
+    "facts": [
+     "This is a special power of the Rajya Sabha as the House of the States.",
+     "A law made under it lapses six months after the resolution ceases to be in force."
+    ]
+   },
+   "hi": {
+    "q": "किस अनुच्छेद के अंतर्गत राज्य सभा दो-तिहाई बहुमत से पारित संकल्प द्वारा संसद को राष्ट्रीय हित में राज्य सूची के विषय पर विधि बनाने में समर्थ कर सकती है?",
+    "options": [
+     "अनुच्छेद 252",
+     "अनुच्छेद 253",
+     "अनुच्छेद 312",
+     "अनुच्छेद 249"
+    ],
+    "explanation": "अनुच्छेद 249 के अनुसार यदि राज्य सभा उपस्थित एवं मत देने वाले सदस्यों के दो-तिहाई बहुमत से संकल्प करे कि राष्ट्रीय हित में ऐसा आवश्यक है, तो संसद राज्य सूची के विषय पर विधि बना सकती है।",
+    "notes": [
+     "अनुच्छेद 252 दो या अधिक राज्यों की सहमति से बनी विधियों के बारे में है।",
+     "अनुच्छेद 253 अंतर्राष्ट्रीय समझौतों को लागू करने की विधियों के बारे में है।",
+     "अनुच्छेद 312 अखिल भारतीय सेवाओं के सृजन का प्रावधान करता है।",
+     "ऐसा संकल्प एक बार में एक वर्ष तक प्रभावी रहता है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "राज्य सभा की शक्तियाँ"
+    ],
+    "facts": [
+     "यह राज्यों के सदन के रूप में राज्य सभा की विशेष शक्ति है।",
+     "इसके अंतर्गत बनी विधि संकल्प के प्रभावी न रहने के छह माह बाद समाप्त हो जाती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The Chairman of the Public Accounts Committee of Parliament is appointed by the:",
+    "options": [
+     "Speaker of the Lok Sabha",
+     "President of India",
+     "Prime Minister",
+     "Chairman of the Rajya Sabha"
+    ],
+    "explanation": "The Public Accounts Committee has 22 members, 15 from the Lok Sabha and 7 from the Rajya Sabha. Its Chairman is appointed by the Speaker from among its Lok Sabha members.",
+    "notes": [
+     "By convention the Chairman is from the Opposition since 1967.",
+     "The President does not appoint chairmen of parliamentary committees.",
+     "The Prime Minister has no role in the appointment.",
+     "The committee functions under the Lok Sabha."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Parliamentary committees"
+    ],
+    "facts": [
+     "The committee examines the audit reports of the Comptroller and Auditor-General.",
+     "A Minister cannot be a member of the committee."
+    ]
+   },
+   "hi": {
+    "q": "संसद की लोक लेखा समिति के अध्यक्ष की नियुक्ति कौन करता है?",
+    "options": [
+     "लोक सभा अध्यक्ष",
+     "भारत के राष्ट्रपति",
+     "प्रधानमंत्री",
+     "राज्य सभा के सभापति"
+    ],
+    "explanation": "लोक लेखा समिति में 22 सदस्य होते हैं, 15 लोक सभा से एवं 7 राज्य सभा से। इसके अध्यक्ष की नियुक्ति लोक सभा अध्यक्ष समिति के लोक सभा सदस्यों में से करते हैं।",
+    "notes": [
+     "परंपरा से 1967 से अध्यक्ष विपक्ष का होता है।",
+     "राष्ट्रपति संसदीय समितियों के अध्यक्ष नियुक्त नहीं करते।",
+     "इस नियुक्ति में प्रधानमंत्री की कोई भूमिका नहीं है।",
+     "यह समिति लोक सभा के अधीन कार्य करती है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "संसदीय समितियाँ"
+    ],
+    "facts": [
+     "समिति नियंत्रक-महालेखापरीक्षक के लेखापरीक्षा प्रतिवेदनों की जाँच करती है।",
+     "मंत्री इस समिति का सदस्य नहीं हो सकता।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "In the Lok Sabha, the 'Zero Hour' begins:",
+    "options": [
+     "At the start of the day's sitting",
+     "Immediately after the Question Hour",
+     "At the end of the day's business",
+     "After the lunch recess"
+    ],
+    "explanation": "The Zero Hour is the time immediately after the Question Hour, when members raise matters of urgent public importance without prior notice. It is an Indian innovation and is not mentioned in the Rules of Procedure.",
+    "notes": [
+     "The sitting normally starts with the Question Hour.",
+     "It starts at about 12 noon.",
+     "The end of the day is not the Zero Hour.",
+     "The Zero Hour comes before the lunch recess."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Conduct of business"
+    ],
+    "facts": [
+     "The practice has been in use since 1962.",
+     "In the Lok Sabha the Question Hour is normally the first hour of a sitting."
+    ]
+   },
+   "hi": {
+    "q": "लोक सभा में 'शून्यकाल' कब आरंभ होता है?",
+    "options": [
+     "दिन की बैठक के आरंभ में",
+     "प्रश्नकाल के ठीक बाद",
+     "दिन के कार्य के अंत में",
+     "भोजनावकाश के बाद"
+    ],
+    "explanation": "शून्यकाल प्रश्नकाल के ठीक बाद का समय है, जब सदस्य बिना पूर्व सूचना के अविलंबनीय लोक महत्व के विषय उठाते हैं। यह भारतीय नवाचार है और प्रक्रिया नियमों में इसका उल्लेख नहीं है।",
+    "notes": [
+     "बैठक सामान्यतः प्रश्नकाल से आरंभ होती है।",
+     "यह लगभग 12 बजे दोपहर आरंभ होता है।",
+     "दिन का अंत शून्यकाल नहीं है।",
+     "शून्यकाल भोजनावकाश से पहले होता है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "कार्य संचालन"
+    ],
+    "facts": [
+     "यह प्रथा 1962 से प्रचलित है।",
+     "लोक सभा में प्रश्नकाल सामान्यतः बैठक का पहला घंटा होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    },
+    {
+     "book": "tgt-pgt-gk",
+     "page": 114
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "A joint sitting of both Houses of Parliament to resolve a deadlock over a Bill is provided for in:",
+    "options": [
+     "Article 110",
+     "Article 112",
+     "Article 108",
+     "Article 123"
+    ],
+    "explanation": "Under Article 108, the President may summon a joint sitting when the two Houses disagree on a Bill or when one House keeps it for more than six months. It does not apply to Money Bills or Constitution Amendment Bills.",
+    "notes": [
+     "Article 110 defines a Money Bill.",
+     "Article 112 deals with the Annual Financial Statement.",
+     "It is summoned by the President.",
+     "Article 123 deals with the ordinance-making power of the President."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Legislative procedure"
+    ],
+    "facts": [
+     "Joint sittings have been held three times, in 1961, 1978 and 2002.",
+     "The Bill is passed by a majority of the members of both Houses present and voting."
+    ]
+   },
+   "hi": {
+    "q": "किसी विधेयक पर गतिरोध दूर करने के लिए संसद के दोनों सदनों की संयुक्त बैठक का प्रावधान किस अनुच्छेद में है?",
+    "options": [
+     "अनुच्छेद 110",
+     "अनुच्छेद 112",
+     "अनुच्छेद 108",
+     "अनुच्छेद 123"
+    ],
+    "explanation": "अनुच्छेद 108 के अनुसार जब दोनों सदन किसी विधेयक पर असहमत हों या एक सदन उसे छह माह से अधिक रोके रखे, तो राष्ट्रपति संयुक्त बैठक बुला सकते हैं। यह धन विधेयक एवं संविधान संशोधन विधेयक पर लागू नहीं होता।",
+    "notes": [
+     "अनुच्छेद 110 धन विधेयक की परिभाषा देता है।",
+     "अनुच्छेद 112 वार्षिक वित्तीय विवरण के बारे में है।",
+     "इसे राष्ट्रपति आहूत करते हैं।",
+     "अनुच्छेद 123 राष्ट्रपति की अध्यादेश जारी करने की शक्ति के बारे में है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "विधायी प्रक्रिया"
+    ],
+    "facts": [
+     "संयुक्त बैठकें तीन बार, 1961, 1978 एवं 2002 में, हुई हैं।",
+     "विधेयक दोनों सदनों के उपस्थित एवं मत देने वाले सदस्यों के बहुमत से पारित होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-018",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "The 'guillotine' in the budgetary procedure of the Lok Sabha refers to:",
+    "options": [
+     "A cut motion that reduces a demand for grant to one rupee",
+     "Ending the debate on a Bill by a closure motion of the House",
+     "The lapse of pending Bills on the dissolution of the Lok Sabha",
+     "Voting all remaining demands without discussion on the last allotted day"
+    ],
+    "explanation": "On the last day allotted for the discussion of the demands for grants, the Speaker puts all the remaining demands to the vote, whether or not they have been discussed. This is called the guillotine.",
+    "notes": [
+     "Reducing a demand to one rupee is the 'disapproval of policy' cut.",
+     "Ending a debate by a motion is closure.",
+     "The lapse of Bills on dissolution is a different matter.",
+     "It ensures that the budget is passed within the allotted time."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Budget procedure"
+    ],
+    "facts": [
+     "The demands of many ministries are in practice passed without discussion.",
+     "The Departmentally Related Standing Committees examine the demands in detail."
+    ]
+   },
+   "hi": {
+    "q": "लोक सभा की बजट प्रक्रिया में 'गिलोटिन' से क्या आशय है?",
+    "options": [
+     "किसी अनुदान माँग को घटाकर एक रुपया करने वाला कटौती प्रस्ताव",
+     "समापन प्रस्ताव द्वारा किसी विधेयक पर वाद-विवाद समाप्त करना",
+     "लोक सभा के विघटन पर लंबित विधेयकों का व्यपगत होना",
+     "अंतिम आवंटित दिन शेष सभी माँगों को बिना चर्चा के मतदान हेतु रखना"
+    ],
+    "explanation": "अनुदान माँगों पर चर्चा के लिए आवंटित अंतिम दिन अध्यक्ष शेष सभी माँगों को, उन पर चर्चा हुई हो या नहीं, मतदान के लिए रख देते हैं। इसे गिलोटिन कहते हैं।",
+    "notes": [
+     "माँग को एक रुपया करना 'नीति अस्वीकृति' कटौती है।",
+     "प्रस्ताव द्वारा वाद-विवाद समाप्त करना समापन (क्लोजर) है।",
+     "विघटन पर विधेयकों का व्यपगत होना भिन्न विषय है।",
+     "इससे बजट आवंटित समय में पारित हो जाता है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "बजट प्रक्रिया"
+    ],
+    "facts": [
+     "व्यवहार में अनेक मंत्रालयों की माँगें बिना चर्चा के पारित होती हैं।",
+     "विभाग संबंधी स्थायी समितियाँ माँगों की विस्तृत जाँच करती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-019",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "A 'vote on account' is passed by the Lok Sabha primarily to:",
+    "options": [
+     "To regularise spending that has exceeded the grant sanctioned for the year",
+     "To meet an unexpected demand whose nature and details cannot be stated",
+     "To allow spending for part of the year until the budget is fully passed",
+     "To reduce the amount of a demand for grant moved by the Government"
+    ],
+    "explanation": "The financial year begins on 1 April, but the passing of the budget takes longer. Under Article 116, the Lok Sabha can grant money in advance, by a vote on account, to meet expenditure until the demands are voted and the Appropriation Act is passed.",
+    "notes": [
+     "Expenditure in excess of a grant is regularised by an excess grant.",
+     "A demand whose details cannot be given is met by a vote of credit.",
+     "It is usually taken for two months, or for a longer period in an election year.",
+     "A demand is reduced through a cut motion."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Budget procedure"
+    ],
+    "facts": [
+     "No money can be drawn from the Consolidated Fund of India without an appropriation made by law.",
+     "An interim budget is presented in an election year."
+    ]
+   },
+   "hi": {
+    "q": "लोक सभा 'लेखानुदान' मुख्यतः किसलिए पारित करती है?",
+    "options": [
+     "वर्ष के लिए स्वीकृत अनुदान से अधिक हुए व्यय को नियमित करना",
+     "ऐसी अप्रत्याशित माँग पूरी करना, जिसका स्वरूप और विवरण नहीं बताया जा सकता",
+     "बजट पूर्णतः पारित होने तक वर्ष के एक भाग के लिए व्यय की अनुमति देना",
+     "सरकार द्वारा प्रस्तुत किसी अनुदान माँग की राशि घटाना"
+    ],
+    "explanation": "वित्तीय वर्ष 1 अप्रैल से आरंभ होता है, किंतु बजट पारित होने में अधिक समय लगता है। अनुच्छेद 116 के अंतर्गत लोक सभा लेखानुदान द्वारा अग्रिम धन दे सकती है, ताकि माँगों पर मतदान एवं विनियोग अधिनियम पारित होने तक व्यय चल सके।",
+    "notes": [
+     "अनुदान से अधिक व्यय अतिरिक्त अनुदान से नियमित होता है।",
+     "जिस माँग का विवरण नहीं दिया जा सकता, वह प्रत्ययानुदान से पूरी होती है।",
+     "यह सामान्यतः दो माह के लिए, अथवा चुनावी वर्ष में अधिक अवधि के लिए लिया जाता है।",
+     "माँग कटौती प्रस्ताव से घटाई जाती है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "बजट प्रक्रिया"
+    ],
+    "facts": [
+     "विधि द्वारा विनियोग के बिना भारत की संचित निधि से धन नहीं निकाला जा सकता।",
+     "चुनावी वर्ष में अंतरिम बजट प्रस्तुत किया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  },
+  {
+   "id": "pol-parliament-020",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "The Rajya Sabha is described as a 'permanent House' primarily because:",
+    "options": [
+     "Its members hold office for life once they are elected",
+     "It remains in session throughout the calendar year",
+     "Its Chairman cannot be removed from office at all",
+     "It is not dissolved, as its members retire in turns"
+    ],
+    "explanation": "Under Article 83(1), the Rajya Sabha is not subject to dissolution. Its members retire in batches at fixed intervals, so the House continues without a break.",
+    "notes": [
+     "Each member has a fixed term.",
+     "It meets in sessions, like the Lok Sabha.",
+     "The Chairman, the Vice-President, can be removed by a prescribed procedure.",
+     "Members retire in batches at fixed intervals, so the House is never without members."
+    ],
+    "path": [
+     "Indian Polity",
+     "Parliament",
+     "Composition"
+    ],
+    "facts": [
+     "Bills pending in the Rajya Sabha that have not been passed by the Lok Sabha do not lapse on the dissolution of the Lok Sabha.",
+     "The first Rajya Sabha was constituted in 1952."
+    ]
+   },
+   "hi": {
+    "q": "राज्य सभा को 'स्थायी सदन' मुख्यतः किस कारण कहा जाता है?",
+    "options": [
+     "इसके सदस्य निर्वाचित होने पर आजीवन पद पर रहते हैं",
+     "यह पूरे कैलेंडर वर्ष सत्र में रहती है",
+     "इसके सभापति को पद से हटाया ही नहीं जा सकता",
+     "इसका विघटन नहीं होता, क्योंकि इसके सदस्य बारी-बारी से सेवानिवृत्त होते हैं"
+    ],
+    "explanation": "अनुच्छेद 83(1) के अनुसार राज्य सभा का विघटन नहीं होता। इसके सदस्य निश्चित अंतराल पर समूहों में सेवानिवृत्त होते हैं, अतः यह सदन बिना व्यवधान के निरंतर बना रहता है।",
+    "notes": [
+     "प्रत्येक सदस्य का निश्चित कार्यकाल होता है।",
+     "इसकी बैठक लोक सभा की भाँति सत्रों में होती है।",
+     "सभापति, अर्थात उपराष्ट्रपति, को निर्धारित प्रक्रिया से हटाया जा सकता है।",
+     "सदस्य निश्चित अंतराल पर समूहों में सेवानिवृत्त होते हैं, अतः सदन कभी सदस्यविहीन नहीं होता।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संसद",
+     "संरचना"
+    ],
+    "facts": [
+     "राज्य सभा में लंबित वे विधेयक, जिन्हें लोक सभा ने पारित नहीं किया है, लोक सभा के विघटन पर व्यपगत नहीं होते।",
+     "पहली राज्य सभा 1952 में गठित हुई।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 79–122",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 5 'Legislature'"
+    }
+   ]
+  }
+ ]
 }

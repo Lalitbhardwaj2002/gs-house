@@ -27,3 +27,26 @@ I solved every key blind first, and each one matched the draft and the standard 
 ## Notes for the writer
 - The UGC-NET Paper 1 topics not yet covered are factors affecting teaching (teacher, learner, support material, environment, institution), offline vs online methods (SWAYAM, SWAYAM Prabha, MOOCs) and teaching support systems (traditional, modern, ICT). They may belong in `tra-evaluation` or a later batch.
 - eGyanKosh PDFs could not be opened (TLS certificate error), so no eGyanKosh page was opened directly. The IGNOU reference in 017 is based on the search snippet.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 18 (003 004 006 007 009 010 013 014 019 021 023 025 027 029 030 037 038 039): all answer keys correct; micro-teaching cycle (6+6+12+6+6 = 36 min) re-worked.
+- Corrected: tra-teaching-006 (Hindi fact: 'स्वाभाविकीकरण' made consistent with option 'स्वाभावीकरण'); tra-teaching-021 (Hindi fact: 'कासा देई बाम्बिनी' made consistent with option 'कासा दी बाम्बिनी').
+- Replaced: none.
+
+## Check of 13 November 2026 (questions reframed in the style of the Higher paper)
+- Checked 32 (001 002 003 004 006 007 008 009 010 011 012 014 016 017 018 019 020 021 022 023 026 027 028 030 032 033 034 035 037 038 039 040). All answer keys are correct. Dave's levels, Knowles' readiness assumption and Rousseau's maxim were checked against web sources.
+- Corrected:
+  - 002: distractor B ("internalisation of values") replaced, because it pointed to the answer of 005.
+  - 003: explanation rewritten (verbs plus Create above Evaluate); the Simpson fact, which no longer fitted, replaced; Hindi spelling क्रैथवॉल made uniform.
+  - 005 (not on the list): distractor C ("abstraction of experience: Dale's cone") replaced, because its note gave away the answer of 028.
+  - 010: notes A and B no longer name the memory and understanding levels, which hinted at 011 and 013.
+  - 012: Hindi path and fact spelling मॉरीसन made uniform.
+  - 016: explanation rewritten to say what the maxim means instead of who gave it.
+  - 017: distractors C and D ("abstract to concrete", "unknown to known") replaced, because their notes confirmed two options of 015.
+  - 020: explanation no longer calls the options "teacher-centred methods".
+  - 021: the Casa dei Bambini fact, which did not fit, replaced with the founding of the Dalton School (1919).
+  - 022, 023, 032, 035, 040: Hindi terms made uniform (पृष्ठपोषण, प्रशिक्षणार्थी, अंतरण, भूमिका भ्रांति, गतिसंवेदी). In 023, distractor A ("only one skill per cycle") replaced, because it gave away 022.
+  - 027, 030: facts that did not fit the question were replaced (inquiry training; Bruner). In 030 the Hindi अधिग्रहण was changed to अभिग्रहण (reception).
+- Replaced (re-aimed):
+  - 011: now asks the aim of Morrison's understanding level. Its earlier contrast with the memory level overlapped 013 and 010.
+  - 037: now asks Knowles' readiness-to-learn assumption. The earlier stem ("the adult learner") gave away the answer of 036.

@@ -1,286 +1,442 @@
 {
  "sections": {
+  "ca-awards": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "ca-intl": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "ca-national": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "ca-people": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "ca-science": {
+   "total": 20,
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 20
+  },
+  "ca-sports": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "ca-up": {
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
+  },
   "culture": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "eco-agri-industry": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "eco-banking": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "eco-basics": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
+  },
+  "eco-budget": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "eco-capital": {
-   "total": 6,
-   "TGT": 1,
-   "PGT": 2,
-   "Higher": 3
+   "total": 20,
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 20
   },
   "eco-planning": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "eco-poverty": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "eco-trade": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "edtech": {
+   "total": 40,
+   "TGT": 22,
+   "PGT": 18,
+   "Higher": 0
+  },
+  "env-ecology": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "env-global": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "env-people": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "geo-agri-transport": {
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "geo-climate": {
    "total": 55,
-   "TGT": 19,
+   "TGT": 23,
    "PGT": 21,
-   "Higher": 15
+   "Higher": 11
+  },
+  "geo-earth": {
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "geo-physio": {
    "total": 56,
-   "TGT": 20,
-   "PGT": 23,
-   "Higher": 13
+   "TGT": 29,
+   "PGT": 17,
+   "Higher": 10
+  },
+  "geo-population": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "geo-resources": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "geo-rivers": {
    "total": 58,
-   "TGT": 25,
-   "PGT": 19,
-   "Higher": 14
+   "TGT": 33,
+   "PGT": 16,
+   "Higher": 9
+  },
+  "geo-soil-forest": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "geo-universe": {
+   "total": 20,
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 20
+  },
+  "geo-up": {
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "health-deficiency": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "health-diseases": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "health-enzymes": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "health-hormones": {
    "total": 56,
-   "TGT": 23,
-   "PGT": 19,
-   "Higher": 14
+   "TGT": 35,
+   "PGT": 21,
+   "Higher": 0
   },
   "health-vitamins": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "hist-1857": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "hist-bhakti": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "hist-british": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "hist-buddhism": {
    "total": 55,
-   "TGT": 23,
+   "TGT": 37,
    "PGT": 18,
-   "Higher": 14
+   "Higher": 0
   },
   "hist-gupta": {
    "total": 56,
-   "TGT": 25,
-   "PGT": 18,
-   "Higher": 13
+   "TGT": 36,
+   "PGT": 20,
+   "Higher": 0
   },
   "hist-ivc": {
    "total": 55,
-   "TGT": 19,
-   "PGT": 22,
-   "Higher": 14
+   "TGT": 31,
+   "PGT": 24,
+   "Higher": 0
   },
   "hist-maurya": {
    "total": 42,
-   "TGT": 14,
-   "PGT": 17,
-   "Higher": 11
+   "TGT": 21,
+   "PGT": 21,
+   "Higher": 0
   },
   "hist-mughal": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "hist-nm1": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "hist-nm2": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "hist-sultanate": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "hist-vedic": {
    "total": 55,
-   "TGT": 20,
-   "PGT": 22,
-   "Higher": 13
+   "TGT": 34,
+   "PGT": 21,
+   "Higher": 0
   },
   "ict-applications": {
-   "total": 14,
-   "TGT": 6,
-   "PGT": 5,
-   "Higher": 3
+   "total": 40,
+   "TGT": 16,
+   "PGT": 14,
+   "Higher": 10
   },
   "ict-computer": {
    "total": 40,
-   "TGT": 14,
-   "PGT": 16,
-   "Higher": 10
+   "TGT": 26,
+   "PGT": 14,
+   "Higher": 0
   },
   "ict-internet": {
    "total": 40,
-   "TGT": 14,
-   "PGT": 16,
+   "TGT": 19,
+   "PGT": 13,
+   "Higher": 8
+  },
+  "ict-terms": {
+   "total": 40,
+   "TGT": 16,
+   "PGT": 14,
    "Higher": 10
   },
   "pol-amend": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "pol-bodies": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "pol-dpsp": {
    "total": 57,
-   "TGT": 22,
-   "PGT": 21,
-   "Higher": 14
+   "TGT": 23,
+   "PGT": 23,
+   "Higher": 11
   },
   "pol-education": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "pol-election": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "pol-executive": {
    "total": 42,
-   "TGT": 16,
-   "PGT": 16,
-   "Higher": 10
+   "TGT": 23,
+   "PGT": 10,
+   "Higher": 9
   },
   "pol-judiciary": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "pol-local": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "pol-making": {
    "total": 56,
-   "TGT": 21,
-   "PGT": 21,
-   "Higher": 14
+   "TGT": 23,
+   "PGT": 22,
+   "Higher": 11
   },
   "pol-parliament": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "pol-rights": {
    "total": 57,
-   "TGT": 20,
-   "PGT": 21,
-   "Higher": 16
+   "TGT": 23,
+   "PGT": 22,
+   "Higher": 12
   },
   "pol-state": {
-   "total": 6,
-   "TGT": 2,
-   "PGT": 2,
-   "Higher": 2
+   "total": 20,
+   "TGT": 11,
+   "PGT": 9,
+   "Higher": 0
   },
   "sci-biology": {
    "total": 57,
-   "TGT": 23,
-   "PGT": 21,
-   "Higher": 13
+   "TGT": 37,
+   "PGT": 20,
+   "Higher": 0
   },
   "sci-chemistry": {
    "total": 55,
-   "TGT": 23,
-   "PGT": 20,
-   "Higher": 12
+   "TGT": 34,
+   "PGT": 21,
+   "Higher": 0
   },
   "sci-physics": {
    "total": 56,
-   "TGT": 21,
-   "PGT": 21,
-   "Higher": 14
+   "TGT": 31,
+   "PGT": 25,
+   "Higher": 0
+  },
+  "sci-space": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
+  },
+  "sci-tech": {
+   "total": 20,
+   "TGT": 8,
+   "PGT": 7,
+   "Higher": 5
   },
   "tra-data": {
    "total": 40,
-   "TGT": 10,
-   "PGT": 18,
-   "Higher": 12
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 40
   },
   "tra-evaluation": {
    "total": 40,
-   "TGT": 10,
-   "PGT": 16,
-   "Higher": 14
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 40
   },
   "tra-research": {
    "total": 40,
-   "TGT": 10,
-   "PGT": 16,
-   "Higher": 14
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 40
   },
   "tra-teaching": {
    "total": 40,
-   "TGT": 10,
-   "PGT": 16,
-   "Higher": 14
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 40
+  },
+  "tra-ugc": {
+   "total": 20,
+   "TGT": 0,
+   "PGT": 0,
+   "Higher": 20
   }
  }
 }

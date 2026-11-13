@@ -1,400 +1,1317 @@
 {
-  "section": "hist-nm1",
-  "questions": [
+ "section": "hist-nm1",
+ "questions": [
+  {
+   "id": "hist-nm1-001",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Who presided over the first session of the Indian National Congress held at Bombay in 1885?",
+    "options": [
+     "Dadabhai Naoroji",
+     "W.C. Bonnerjee",
+     "Surendranath Banerjee",
+     "A.O. Hume"
+    ],
+    "explanation": "The first session met in December 1885 at Gokuldas Tejpal Sanskrit College, Bombay, with 72 delegates, under the presidency of Womesh Chunder Bonnerjee. A.O. Hume, a retired civil servant, is regarded as the founder of the Congress.",
+    "notes": [
+     "Dadabhai Naoroji presided over the second session (Calcutta, 1886) and also the sessions of 1893 and 1906.",
+     "Correct: W.C. Bonnerjee was president of the first session.",
+     "Surendranath Banerjee founded the Indian Association (1876) and presided over the Congress in 1895 and 1902.",
+     "A.O. Hume founded the Congress and served as its general secretary; he did not preside in 1885."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Indian National Congress",
+     "First session"
+    ],
+    "facts": [
+     "Lord Dufferin was the Viceroy when the Congress was founded.",
+     "Badruddin Tyabji (Madras, 1887) was the first Muslim president of the Congress."
+    ]
+   },
+   "hi": {
+    "q": "1885 में बंबई में हुए भारतीय राष्ट्रीय कांग्रेस के प्रथम अधिवेशन की अध्यक्षता किसने की थी?",
+    "options": [
+     "दादाभाई नौरोजी",
+     "डब्ल्यू.सी. बनर्जी",
+     "सुरेंद्रनाथ बनर्जी",
+     "ए.ओ. ह्यूम"
+    ],
+    "explanation": "प्रथम अधिवेशन दिसंबर 1885 में बंबई के गोकुलदास तेजपाल संस्कृत कॉलेज में 72 प्रतिनिधियों के साथ व्योमेश चंद्र बनर्जी की अध्यक्षता में हुआ। सेवानिवृत्त सिविल सेवक ए.ओ. ह्यूम को कांग्रेस का संस्थापक माना जाता है।",
+    "notes": [
+     "दादाभाई नौरोजी ने दूसरे अधिवेशन (कलकत्ता, 1886) तथा 1893 और 1906 के अधिवेशनों की अध्यक्षता की।",
+     "सही: डब्ल्यू.सी. बनर्जी प्रथम अधिवेशन के अध्यक्ष थे।",
+     "सुरेंद्रनाथ बनर्जी ने इंडियन एसोसिएशन (1876) बनाई और 1895 तथा 1902 में कांग्रेस की अध्यक्षता की।",
+     "ए.ओ. ह्यूम कांग्रेस के संस्थापक और महासचिव थे; 1885 में उन्होंने अध्यक्षता नहीं की।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "भारतीय राष्ट्रीय कांग्रेस",
+     "प्रथम अधिवेशन"
+    ],
+    "facts": [
+     "कांग्रेस की स्थापना के समय लॉर्ड डफ़रिन वायसराय था।",
+     "बदरुद्दीन तैयबजी (मद्रास, 1887) कांग्रेस के पहले मुस्लिम अध्यक्ष थे।"
+    ]
+   },
+   "refs": [
     {
-      "id": "hist-nm1-001",
-      "level": "TGT",
-      "answer": 1,
-      "en": {
-        "q": "Who presided over the first session of the Indian National Congress held at Bombay in 1885?",
-        "options": [
-          "Dadabhai Naoroji",
-          "W.C. Bonnerjee",
-          "Surendranath Banerjee",
-          "A.O. Hume"
-        ],
-        "explanation": "The first session met in December 1885 at Gokuldas Tejpal Sanskrit College, Bombay, with 72 delegates, under the presidency of Womesh Chunder Bonnerjee. A.O. Hume, a retired civil servant, is regarded as the founder of the Congress.",
-        "notes": [
-          "Dadabhai Naoroji presided over the second session (Calcutta, 1886) and also the sessions of 1893 and 1906.",
-          "Correct: W.C. Bonnerjee was president of the first session.",
-          "Surendranath Banerjee founded the Indian Association (1876) and presided over the Congress in 1895 and 1902.",
-          "A.O. Hume founded the Congress and served as its general secretary; he did not preside in 1885."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Indian National Congress",
-          "First session"
-        ],
-        "facts": [
-          "Lord Dufferin was the Viceroy when the Congress was founded.",
-          "Badruddin Tyabji (Madras, 1887) was the first Muslim president of the Congress."
-        ]
-      },
-      "hi": {
-        "q": "1885 में बंबई में हुए भारतीय राष्ट्रीय कांग्रेस के प्रथम अधिवेशन की अध्यक्षता किसने की थी?",
-        "options": [
-          "दादाभाई नौरोजी",
-          "डब्ल्यू.सी. बनर्जी",
-          "सुरेंद्रनाथ बनर्जी",
-          "ए.ओ. ह्यूम"
-        ],
-        "explanation": "प्रथम अधिवेशन दिसंबर 1885 में बंबई के गोकुलदास तेजपाल संस्कृत कॉलेज में 72 प्रतिनिधियों के साथ व्योमेश चंद्र बनर्जी की अध्यक्षता में हुआ। सेवानिवृत्त सिविल सेवक ए.ओ. ह्यूम को कांग्रेस का संस्थापक माना जाता है।",
-        "notes": [
-          "दादाभाई नौरोजी ने दूसरे अधिवेशन (कलकत्ता, 1886) तथा 1893 और 1906 के अधिवेशनों की अध्यक्षता की।",
-          "सही: डब्ल्यू.सी. बनर्जी प्रथम अधिवेशन के अध्यक्ष थे।",
-          "सुरेंद्रनाथ बनर्जी ने इंडियन एसोसिएशन (1876) बनाई और 1895 तथा 1902 में कांग्रेस की अध्यक्षता की।",
-          "ए.ओ. ह्यूम कांग्रेस के संस्थापक और महासचिव थे; 1885 में उन्होंने अध्यक्षता नहीं की।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "भारतीय राष्ट्रीय कांग्रेस",
-          "प्रथम अधिवेशन"
-        ],
-        "facts": [
-          "कांग्रेस की स्थापना के समय लॉर्ड डफ़रिन वायसराय था।",
-          "बदरुद्दीन तैयबजी (मद्रास, 1887) कांग्रेस के पहले मुस्लिम अध्यक्ष थे।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 130
-        },
-        {
-          "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
-        }
-      ]
+     "book": "fatman",
+     "page": 130
     },
     {
-      "id": "hist-nm1-002",
-      "level": "TGT",
-      "answer": 0,
-      "en": {
-        "q": "The All-India Muslim League was founded on 30 December 1906 at:",
-        "options": [
-          "Dhaka",
-          "Aligarh",
-          "Lucknow",
-          "Lahore"
-        ],
-        "explanation": "The All-India Muslim League was formed at Dhaka on 30 December 1906, at a meeting held during the Muhammadan Educational Conference. Aga Khan and Nawab Salimullah of Dhaka were among its leading founders.",
-        "notes": [
-          "Correct: the League was founded at Dhaka in 1906.",
-          "Aligarh: centre of Sir Syed Ahmad Khan's Muhammadan Anglo-Oriental College (1875).",
-          "Lucknow: the Congress and the League signed the Lucknow Pact here in 1916.",
-          "Lahore: the League's session of 1940 here adopted the Pakistan Resolution."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Communal politics",
-          "Muslim League"
-        ],
-        "facts": [
-          "The Simla Deputation led by the Aga Khan met Lord Minto in October 1906, shortly before the League was formed.",
-          "The League supported the partition of Bengal, which had created a Muslim-majority province."
-        ]
-      },
-      "hi": {
-        "q": "अखिल भारतीय मुस्लिम लीग की स्थापना 30 दिसंबर 1906 को कहाँ हुई थी?",
-        "options": [
-          "ढाका",
-          "अलीगढ़",
-          "लखनऊ",
-          "लाहौर"
-        ],
-        "explanation": "अखिल भारतीय मुस्लिम लीग का गठन 30 दिसंबर 1906 को ढाका में मुहम्मडन एजुकेशनल कॉन्फ़्रेंस के दौरान हुई एक बैठक में हुआ। आगा खाँ और ढाका के नवाब सलीमुल्लाह इसके प्रमुख संस्थापकों में थे।",
-        "notes": [
-          "सही: लीग की स्थापना 1906 में ढाका में हुई।",
-          "अलीगढ़: सर सैयद अहमद खाँ के मुहम्मडन एंग्लो-ओरिएंटल कॉलेज (1875) का केंद्र।",
-          "लखनऊ: 1916 में यहाँ कांग्रेस और लीग के बीच लखनऊ समझौता हुआ।",
-          "लाहौर: 1940 में लीग के यहाँ हुए अधिवेशन में पाकिस्तान प्रस्ताव पारित हुआ।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "सांप्रदायिक राजनीति",
-          "मुस्लिम लीग"
-        ],
-        "facts": [
-          "आगा खाँ के नेतृत्व में शिमला प्रतिनिधिमंडल अक्टूबर 1906 में लॉर्ड मिंटो से मिला, जो लीग के गठन से कुछ पहले की घटना है।",
-          "लीग ने बंगाल विभाजन का समर्थन किया, क्योंकि इससे एक मुस्लिम-बहुल प्रांत बना था।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 133
-        },
-        {
-          "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
-        }
-      ]
-    },
-    {
-      "id": "hist-nm1-003",
-      "level": "PGT",
-      "answer": 2,
-      "en": {
-        "q": "Match List-I (Session of the Indian National Congress) with List-II (President) and select the correct answer using the codes given below the lists:\nList-I:\nA. Calcutta, 1886\nB. Allahabad, 1888\nC. Surat, 1907\nD. Lucknow, 1916\nList-II:\n1. Rash Behari Ghosh\n2. Ambika Charan Mazumdar\n3. Dadabhai Naoroji\n4. George Yule",
-        "options": [
-          "A-3, B-4, C-2, D-1",
-          "A-4, B-3, C-1, D-2",
-          "A-3, B-4, C-1, D-2",
-          "A-3, B-1, C-4, D-2"
-        ],
-        "explanation": "Dadabhai Naoroji presided at Calcutta (1886) and George Yule, the first British president, at Allahabad (1888). Rash Behari Ghosh presided at Surat (1907), where the Congress split, and Ambika Charan Mazumdar at Lucknow (1916), where the two wings reunited and the Lucknow Pact was signed.",
-        "notes": [
-          "Wrong: Rash Behari Ghosh presided at Surat and Ambika Charan Mazumdar at Lucknow.",
-          "Wrong: Naoroji presided in 1886 and George Yule in 1888, not the reverse.",
-          "Correct: Calcutta–Naoroji, Allahabad–Yule, Surat–Ghosh, Lucknow–Mazumdar.",
-          "Wrong: George Yule presided at Allahabad (1888), not Surat (1907)."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Indian National Congress",
-          "Sessions and presidents"
-        ],
-        "facts": [
-          "The Surat session (1907) split the Congress into Moderates and Extremists.",
-          "Annie Besant (Calcutta, 1917) was the first woman president of the Congress."
-        ]
-      },
-      "hi": {
-        "q": "सूची-I (भारतीय राष्ट्रीय कांग्रेस का अधिवेशन) को सूची-II (अध्यक्ष) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I:\nA. कलकत्ता, 1886\nB. इलाहाबाद, 1888\nC. सूरत, 1907\nD. लखनऊ, 1916\nसूची-II:\n1. रासबिहारी घोष\n2. अंबिका चरण मजूमदार\n3. दादाभाई नौरोजी\n4. जॉर्ज यूल",
-        "options": [
-          "A-3, B-4, C-2, D-1",
-          "A-4, B-3, C-1, D-2",
-          "A-3, B-4, C-1, D-2",
-          "A-3, B-1, C-4, D-2"
-        ],
-        "explanation": "कलकत्ता (1886) में दादाभाई नौरोजी ने और इलाहाबाद (1888) में पहले अंग्रेज़ अध्यक्ष जॉर्ज यूल ने अध्यक्षता की। सूरत (1907) में, जहाँ कांग्रेस का विभाजन हुआ, रासबिहारी घोष अध्यक्ष थे, और लखनऊ (1916) में, जहाँ दोनों दल फिर एक हुए और लखनऊ समझौता हुआ, अंबिका चरण मजूमदार अध्यक्ष थे।",
-        "notes": [
-          "गलत: सूरत में रासबिहारी घोष और लखनऊ में अंबिका चरण मजूमदार अध्यक्ष थे।",
-          "गलत: 1886 में नौरोजी और 1888 में जॉर्ज यूल अध्यक्ष थे, इसका उलटा नहीं।",
-          "सही: कलकत्ता–नौरोजी, इलाहाबाद–यूल, सूरत–घोष, लखनऊ–मजूमदार।",
-          "गलत: जॉर्ज यूल ने इलाहाबाद (1888) की अध्यक्षता की, सूरत (1907) की नहीं।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "भारतीय राष्ट्रीय कांग्रेस",
-          "अधिवेशन एवं अध्यक्ष"
-        ],
-        "facts": [
-          "सूरत अधिवेशन (1907) में कांग्रेस नरमपंथी और गरमपंथी दलों में बँट गई।",
-          "एनी बेसेंट (कलकत्ता, 1917) कांग्रेस की पहली महिला अध्यक्ष थीं।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 130
-        }
-      ]
-    },
-    {
-      "id": "hist-nm1-004",
-      "level": "PGT",
-      "answer": 1,
-      "en": {
-        "q": "Consider the following statements about the partition of Bengal:\n1. It was carried out during the viceroyalty of Lord Curzon and came into effect in October 1905.\n2. It was annulled in 1911, the year of the Delhi Durbar of King George V.\n3. The annulment was announced during the viceroyalty of Lord Minto.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 1",
-          "1 and 2 only",
-          "2 and 3 only",
-          "1, 2 and 3"
-        ],
-        "explanation": "Curzon's partition of Bengal took effect on 16 October 1905. It was annulled in 1911, when King George V announced it at the Delhi Durbar during the viceroyalty of Lord Hardinge II; Lord Minto's term (1905–10) had already ended.",
-        "notes": [
-          "Wrong: statement 2 is also correct.",
-          "Correct: statements 1 and 2 are right; statement 3 is wrong.",
-          "Wrong: statement 3 is incorrect, because the Viceroy in 1911 was Lord Hardinge II.",
-          "Wrong: statement 3 is incorrect."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Partition of Bengal",
-          "Partition and annulment"
-        ],
-        "facts": [
-          "16 October 1905 was observed as a day of mourning, and people tied rakhis to one another as a sign of unity.",
-          "The capital of British India was shifted from Calcutta to Delhi in 1911."
-        ]
-      },
-      "hi": {
-        "q": "बंगाल विभाजन के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. यह लॉर्ड कर्ज़न के वायसराय काल में किया गया और अक्टूबर 1905 में लागू हुआ।\n2. इसे 1911 में रद्द किया गया, जो सम्राट जॉर्ज पंचम के दिल्ली दरबार का वर्ष था।\n3. विभाजन रद्द करने की घोषणा लॉर्ड मिंटो के वायसराय काल में हुई।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
-        "options": [
-          "केवल 1",
-          "केवल 1 और 2",
-          "केवल 2 और 3",
-          "1, 2 और 3"
-        ],
-        "explanation": "कर्ज़न द्वारा किया गया बंगाल विभाजन 16 अक्टूबर 1905 को लागू हुआ। इसे 1911 में रद्द किया गया, जब लॉर्ड हार्डिंग द्वितीय के वायसराय काल में सम्राट जॉर्ज पंचम ने दिल्ली दरबार में इसकी घोषणा की; लॉर्ड मिंटो का कार्यकाल (1905–10) पहले ही समाप्त हो चुका था।",
-        "notes": [
-          "गलत: कथन 2 भी सही है।",
-          "सही: कथन 1 और 2 सही हैं; कथन 3 गलत है।",
-          "गलत: कथन 3 गलत है, क्योंकि 1911 में वायसराय लॉर्ड हार्डिंग द्वितीय था।",
-          "गलत: कथन 3 गलत है।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "बंगाल विभाजन",
-          "विभाजन एवं उसका रद्द होना"
-        ],
-        "facts": [
-          "16 अक्टूबर 1905 को शोक दिवस के रूप में मनाया गया और लोगों ने एकता के प्रतीक के रूप में एक-दूसरे को राखी बाँधी।",
-          "1911 में ब्रिटिश भारत की राजधानी कलकत्ता से दिल्ली स्थानांतरित की गई।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 133
-        },
-        {
-          "book": "fatman",
-          "page": 144
-        },
-        {
-          "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
-        }
-      ]
-    },
-    {
-      "id": "hist-nm1-005",
-      "level": "Higher",
-      "answer": 3,
-      "en": {
-        "q": "Consider the following statements about the Indian Councils Act, 1909:\n1. It is also known as the Morley–Minto Reforms after the Secretary of State and the Viceroy of that time.\n2. It provided separate electorates for Muslims.\n3. Satyendra Prasad Sinha became the first Indian member of the Viceroy's Executive Council under these reforms.\n4. It introduced dyarchy in the provinces.\nWhich of the statements given above are correct?",
-        "options": [
-          "1 and 2 only",
-          "2 and 4 only",
-          "1, 3 and 4 only",
-          "1, 2 and 3 only"
-        ],
-        "explanation": "The Act was named after John Morley (Secretary of State) and Lord Minto (Viceroy). It introduced separate electorates for Muslims, which is why Minto is called the Father of Communal Electorate, and S.P. Sinha became the first Indian on the Viceroy's Executive Council. Dyarchy in the provinces came only with the Government of India Act, 1919.",
-        "notes": [
-          "Wrong: statement 3 is also correct.",
-          "Wrong: statement 4 is incorrect, as dyarchy came in 1919.",
-          "Wrong: statement 4 is incorrect, and statement 2 is correct.",
-          "Correct: statements 1, 2 and 3 are right; only statement 4 is wrong."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Constitutional reforms",
-          "Morley–Minto Reforms"
-        ],
-        "facts": [
-          "Lord Minto is called the Father of Communal Electorate.",
-          "Dyarchy in the provinces was introduced by the Montagu–Chelmsford Reforms (Government of India Act, 1919)."
-        ]
-      },
-      "hi": {
-        "q": "भारतीय परिषद अधिनियम, 1909 के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. उस समय के भारत सचिव और वायसराय के नाम पर इसे मार्ले–मिंटो सुधार भी कहा जाता है।\n2. इसने मुसलमानों के लिए पृथक निर्वाचन मंडल की व्यवस्था की।\n3. इन सुधारों के अंतर्गत सत्येंद्र प्रसन्न सिन्हा वायसराय की कार्यकारी परिषद के पहले भारतीय सदस्य बने।\n4. इसने प्रांतों में द्वैध शासन लागू किया।\nउपर्युक्त कथनों में से कौन-से सही हैं?",
-        "options": [
-          "केवल 1 और 2",
-          "केवल 2 और 4",
-          "केवल 1, 3 और 4",
-          "केवल 1, 2 और 3"
-        ],
-        "explanation": "इस अधिनियम का नाम भारत सचिव जॉन मार्ले और वायसराय लॉर्ड मिंटो के नाम पर पड़ा। इसने मुसलमानों के लिए पृथक निर्वाचन की व्यवस्था की, इसी कारण मिंटो को सांप्रदायिक निर्वाचन का जनक कहा जाता है, और एस.पी. सिन्हा वायसराय की कार्यकारी परिषद के पहले भारतीय सदस्य बने। प्रांतों में द्वैध शासन भारत शासन अधिनियम, 1919 से आया।",
-        "notes": [
-          "गलत: कथन 3 भी सही है।",
-          "गलत: कथन 4 गलत है, क्योंकि द्वैध शासन 1919 में आया।",
-          "गलत: कथन 4 गलत है और कथन 2 सही है।",
-          "सही: कथन 1, 2 और 3 सही हैं; केवल कथन 4 गलत है।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "संवैधानिक सुधार",
-          "मार्ले–मिंटो सुधार"
-        ],
-        "facts": [
-          "लॉर्ड मिंटो को सांप्रदायिक निर्वाचन का जनक कहा जाता है।",
-          "प्रांतों में द्वैध शासन मांटेग्यू–चेम्सफ़ोर्ड सुधार (भारत शासन अधिनियम, 1919) द्वारा लागू हुआ।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 133
-        }
-      ]
-    },
-    {
-      "id": "hist-nm1-006",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Arrange the following events in chronological order and select the correct answer using the codes given below:\n1. Surat split of the Congress\n2. Formation of the Ghadar Party\n3. Lucknow Pact\n4. Foundation of the All-India Muslim League",
-        "options": [
-          "4, 1, 2, 3",
-          "1, 4, 2, 3",
-          "4, 1, 3, 2",
-          "4, 2, 1, 3"
-        ],
-        "explanation": "The Muslim League was founded at Dhaka in 1906, the Congress split at Surat in 1907, the Ghadar Party was formed in 1913 with its headquarters at San Francisco, and the Lucknow Pact between the Congress and the League was signed in December 1916. Hence 4, 1, 2, 3.",
-        "notes": [
-          "Correct: 1906, 1907, 1913, 1916.",
-          "Wrong: the Muslim League (1906) came a year before the Surat split (1907).",
-          "Wrong: the Ghadar Party (1913) was formed before the Lucknow Pact (1916).",
-          "Wrong: the Surat split (1907) came before the Ghadar Party (1913)."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "1905–1918",
-          "Chronology"
-        ],
-        "facts": [
-          "The Ghadar Party was founded at San Francisco with Sohan Singh Bhakna as president and Lala Har Dayal as a leading figure.",
-          "In the Lucknow Pact (1916) the Congress accepted separate electorates for Muslims."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित घटनाओं को कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. कांग्रेस का सूरत विभाजन\n2. ग़दर पार्टी का गठन\n3. लखनऊ समझौता\n4. अखिल भारतीय मुस्लिम लीग की स्थापना",
-        "options": [
-          "4, 1, 2, 3",
-          "1, 4, 2, 3",
-          "4, 1, 3, 2",
-          "4, 2, 1, 3"
-        ],
-        "explanation": "मुस्लिम लीग की स्थापना 1906 में ढाका में हुई, कांग्रेस का विभाजन 1907 में सूरत में हुआ, ग़दर पार्टी 1913 में बनी, जिसका मुख्यालय सैन फ़्रांसिस्को था, और कांग्रेस–लीग के बीच लखनऊ समझौता दिसंबर 1916 में हुआ। अतः सही क्रम 4, 1, 2, 3 है।",
-        "notes": [
-          "सही: 1906, 1907, 1913, 1916।",
-          "गलत: मुस्लिम लीग (1906) सूरत विभाजन (1907) से एक वर्ष पहले बनी।",
-          "गलत: ग़दर पार्टी (1913) लखनऊ समझौते (1916) से पहले बनी।",
-          "गलत: सूरत विभाजन (1907) ग़दर पार्टी (1913) से पहले हुआ।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "1905–1918",
-          "कालानुक्रम"
-        ],
-        "facts": [
-          "ग़दर पार्टी की स्थापना सैन फ़्रांसिस्को में हुई; सोहन सिंह भकना इसके अध्यक्ष और लाला हरदयाल प्रमुख नेता थे।",
-          "लखनऊ समझौते (1916) में कांग्रेस ने मुसलमानों के लिए पृथक निर्वाचन स्वीकार किया।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 133
-        },
-        {
-          "book": "fatman",
-          "page": 130
-        }
-      ]
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
     }
-  ]
+   ]
+  },
+  {
+   "id": "hist-nm1-002",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The All-India Muslim League was founded on 30 December 1906 at:",
+    "options": [
+     "Dhaka",
+     "Aligarh",
+     "Lucknow",
+     "Lahore"
+    ],
+    "explanation": "The All-India Muslim League was formed at Dhaka on 30 December 1906, at a meeting held during the Muhammadan Educational Conference. Aga Khan and Nawab Salimullah of Dhaka were among its leading founders.",
+    "notes": [
+     "Correct: the League was founded at Dhaka in 1906.",
+     "Aligarh: centre of Sir Syed Ahmad Khan's Muhammadan Anglo-Oriental College (1875).",
+     "Lucknow: the Congress and the League signed the Lucknow Pact here in 1916.",
+     "Lahore: the League's session of 1940 here adopted the Pakistan Resolution."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Communal politics",
+     "Muslim League"
+    ],
+    "facts": [
+     "The Simla Deputation led by the Aga Khan met Lord Minto in October 1906, shortly before the League was formed.",
+     "The League supported the partition of Bengal, which had created a Muslim-majority province."
+    ]
+   },
+   "hi": {
+    "q": "अखिल भारतीय मुस्लिम लीग की स्थापना 30 दिसंबर 1906 को कहाँ हुई थी?",
+    "options": [
+     "ढाका",
+     "अलीगढ़",
+     "लखनऊ",
+     "लाहौर"
+    ],
+    "explanation": "अखिल भारतीय मुस्लिम लीग का गठन 30 दिसंबर 1906 को ढाका में मुहम्मडन एजुकेशनल कॉन्फ़्रेंस के दौरान हुई एक बैठक में हुआ। आगा खाँ और ढाका के नवाब सलीमुल्लाह इसके प्रमुख संस्थापकों में थे।",
+    "notes": [
+     "सही: लीग की स्थापना 1906 में ढाका में हुई।",
+     "अलीगढ़: सर सैयद अहमद खाँ के मुहम्मडन एंग्लो-ओरिएंटल कॉलेज (1875) का केंद्र।",
+     "लखनऊ: 1916 में यहाँ कांग्रेस और लीग के बीच लखनऊ समझौता हुआ।",
+     "लाहौर: 1940 में लीग के यहाँ हुए अधिवेशन में पाकिस्तान प्रस्ताव पारित हुआ।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "सांप्रदायिक राजनीति",
+     "मुस्लिम लीग"
+    ],
+    "facts": [
+     "आगा खाँ के नेतृत्व में शिमला प्रतिनिधिमंडल अक्टूबर 1906 में लॉर्ड मिंटो से मिला, जो लीग के गठन से कुछ पहले की घटना है।",
+     "लीग ने बंगाल विभाजन का समर्थन किया, क्योंकि इससे एक मुस्लिम-बहुल प्रांत बना था।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 133
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-003",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Who was the first British President of the Indian National Congress, at its Allahabad session of 1888?",
+    "options": [
+     "A.O. Hume",
+     "George Yule",
+     "William Wedderburn",
+     "Henry Cotton"
+    ],
+    "explanation": "George Yule, who presided at Allahabad in 1888, was the first British President of the Congress. Dadabhai Naoroji had presided at Calcutta in 1886.",
+    "notes": [
+     "A founder of the Congress, but never its President.",
+     "Presided at Allahabad in 1888.",
+     "Presided in 1889 and 1910.",
+     "Presided in 1904."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Indian National Congress",
+     "Sessions and presidents"
+    ],
+    "facts": [
+     "The Surat session (1907) split the Congress into Moderates and Extremists.",
+     "Annie Besant (Calcutta, 1917) was the first woman president of the Congress."
+    ]
+   },
+   "hi": {
+    "q": "1888 के इलाहाबाद अधिवेशन में भारतीय राष्ट्रीय कांग्रेस के प्रथम अंग्रेज अध्यक्ष कौन थे?",
+    "options": [
+     "ए.ओ. ह्यूम",
+     "जॉर्ज यूल",
+     "विलियम वेडरबर्न",
+     "हेनरी कॉटन"
+    ],
+    "explanation": "1888 के इलाहाबाद अधिवेशन के अध्यक्ष जॉर्ज यूल कांग्रेस के प्रथम अंग्रेज अध्यक्ष थे। 1886 के कलकत्ता अधिवेशन की अध्यक्षता दादाभाई नौरोजी ने की थी।",
+    "notes": [
+     "कांग्रेस के संस्थापकों में से एक, किंतु कभी अध्यक्ष नहीं बने।",
+     "1888 में इलाहाबाद अधिवेशन की अध्यक्षता की।",
+     "1889 एवं 1910 में अध्यक्ष रहे।",
+     "1904 में अध्यक्ष रहे।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "भारतीय राष्ट्रीय कांग्रेस",
+     "अधिवेशन एवं अध्यक्ष"
+    ],
+    "facts": [
+     "सूरत अधिवेशन (1907) में कांग्रेस नरमपंथी और गरमपंथी दलों में बँट गई।",
+     "एनी बेसेंट (कलकत्ता, 1917) कांग्रेस की पहली महिला अध्यक्ष थीं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 130
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-004",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The annulment of the partition of Bengal was announced in 1911 during the viceroyalty of:",
+    "options": [
+     "Lord Curzon",
+     "Lord Minto II",
+     "Lord Hardinge II",
+     "Lord Chelmsford"
+    ],
+    "explanation": "The partition of Bengal took effect on 16 October 1905 under Curzon. It was annulled at the Delhi Durbar of 1911 during the viceroyalty of Lord Hardinge II.",
+    "notes": [
+     "Carried out the partition in 1905.",
+     "Viceroy from 1905 to 1910.",
+     "Viceroy at the Delhi Durbar of 1911.",
+     "Viceroy from 1916 to 1921."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Partition of Bengal",
+     "Partition and annulment"
+    ],
+    "facts": [
+     "16 October 1905 was observed as a day of mourning, and people tied rakhis to one another as a sign of unity.",
+     "The transfer of the capital from Calcutta to Delhi was also announced at the Delhi Durbar of 1911."
+    ]
+   },
+   "hi": {
+    "q": "1911 में बंगाल विभाजन रद्द करने की घोषणा किस वायसराय के काल में हुई?",
+    "options": [
+     "लॉर्ड कर्जन",
+     "लॉर्ड मिंटो द्वितीय",
+     "लॉर्ड हार्डिंग द्वितीय",
+     "लॉर्ड चेम्सफोर्ड"
+    ],
+    "explanation": "बंगाल विभाजन कर्जन के काल में 16 अक्टूबर 1905 को लागू हुआ। 1911 के दिल्ली दरबार में लॉर्ड हार्डिंग द्वितीय के काल में इसे रद्द किया गया।",
+    "notes": [
+     "1905 में विभाजन किया।",
+     "1905 से 1910 तक वायसराय रहे।",
+     "1911 के दिल्ली दरबार के समय वायसराय थे।",
+     "1916 से 1921 तक वायसराय रहे।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "बंगाल विभाजन",
+     "विभाजन एवं उसका रद्द होना"
+    ],
+    "facts": [
+     "16 अक्टूबर 1905 को शोक दिवस के रूप में मनाया गया और लोगों ने एकता के प्रतीक के रूप में एक-दूसरे को राखी बाँधी।",
+     "1911 के दिल्ली दरबार में ही राजधानी को कलकत्ता से दिल्ली ले जाने की घोषणा भी हुई।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 133
+    },
+    {
+     "book": "fatman",
+     "page": 144
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-005",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "The Indian Councils Act of 1909 is regarded as a turning point in communal politics mainly because it:",
+    "options": [
+     "Introduced dyarchy in the provinces",
+     "Granted autonomy to the provinces",
+     "Gave the vote to all adults",
+     "Provided separate electorates for Muslims"
+    ],
+    "explanation": "The Morley–Minto Reforms of 1909 introduced separate electorates for Muslims. Under them S.P. Sinha became the first Indian member of the Viceroy's Executive Council.",
+    "notes": [
+     "Dyarchy came with the Government of India Act, 1919.",
+     "Provincial autonomy came with the Act of 1935.",
+     "Universal adult franchise came only with the Constitution.",
+     "For this reason Lord Minto is called the Father of Communal Electorate."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Constitutional reforms",
+     "Morley–Minto Reforms"
+    ],
+    "facts": [
+     "Lord Minto is called the Father of Communal Electorate.",
+     "Dyarchy in the provinces was introduced by the Montagu–Chelmsford Reforms (Government of India Act, 1919)."
+    ]
+   },
+   "hi": {
+    "q": "1909 के भारतीय परिषद् अधिनियम को सांप्रदायिक राजनीति में निर्णायक मोड़ मुख्यतः किस कारण माना जाता है?",
+    "options": [
+     "इसने प्रांतों में द्वैध शासन लागू किया",
+     "इसने प्रांतों को स्वायत्तता दी",
+     "इसने सभी वयस्कों को मताधिकार दिया",
+     "इसने मुसलमानों के लिए पृथक निर्वाचक मंडल की व्यवस्था की"
+    ],
+    "explanation": "1909 के मॉर्ले-मिंटो सुधारों ने मुसलमानों के लिए पृथक निर्वाचक मंडल की व्यवस्था की। इन्हीं के अंतर्गत एस.पी. सिन्हा वायसराय की कार्यकारी परिषद् के प्रथम भारतीय सदस्य बने।",
+    "notes": [
+     "द्वैध शासन 1919 के भारत शासन अधिनियम से आया।",
+     "प्रांतीय स्वायत्तता 1935 के अधिनियम से आई।",
+     "सार्वभौमिक वयस्क मताधिकार संविधान से मिला।",
+     "इसी कारण लॉर्ड मिंटो को सांप्रदायिक निर्वाचन का जनक कहा जाता है।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "संवैधानिक सुधार",
+     "मार्ले–मिंटो सुधार"
+    ],
+    "facts": [
+     "लॉर्ड मिंटो को सांप्रदायिक निर्वाचन का जनक कहा जाता है।",
+     "प्रांतों में द्वैध शासन मांटेग्यू–चेम्सफ़ोर्ड सुधार (भारत शासन अधिनियम, 1919) द्वारा लागू हुआ।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 133
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-006",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "The Lucknow Pact of 1916 is historically significant because in it the Congress:",
+    "options": [
+     "Accepted separate electorates for Muslims",
+     "Demanded complete independence for the first time",
+     "Decided to boycott the legislative councils",
+     "Split into Moderates and Extremists"
+    ],
+    "explanation": "In the Lucknow Pact of December 1916 the Congress and the Muslim League agreed on a joint scheme, and the Congress accepted separate electorates for Muslims.",
+    "notes": [
+     "The Congress and the League agreed on a joint scheme of reforms.",
+     "Purna Swaraj was adopted at Lahore in 1929.",
+     "Council boycott came with Non-Cooperation in 1920.",
+     "The split took place at Surat in 1907; the two wings reunited at Lucknow."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1905–1918",
+     "Lucknow Pact"
+    ],
+    "facts": [
+     "At the Lucknow session of 1916, presided over by A.C. Majumdar, the Moderates and Extremists reunited.",
+     "Bal Gangadhar Tilak and Annie Besant helped bring the Congress and the Muslim League together at Lucknow."
+    ]
+   },
+   "hi": {
+    "q": "1916 का लखनऊ समझौता ऐतिहासिक दृष्टि से महत्वपूर्ण है, क्योंकि इसमें कांग्रेस ने:",
+    "options": [
+     "मुसलमानों के लिए पृथक निर्वाचक मंडल स्वीकार किया",
+     "पहली बार पूर्ण स्वतंत्रता की माँग की",
+     "विधान परिषदों के बहिष्कार का निर्णय लिया",
+     "नरम दल एवं गरम दल में विभाजन किया"
+    ],
+    "explanation": "दिसंबर 1916 के लखनऊ समझौते में कांग्रेस एवं मुस्लिम लीग ने संयुक्त योजना पर सहमति की तथा कांग्रेस ने मुसलमानों के लिए पृथक निर्वाचक मंडल स्वीकार किया।",
+    "notes": [
+     "कांग्रेस एवं लीग ने सुधारों की संयुक्त योजना पर सहमति की।",
+     "पूर्ण स्वराज का प्रस्ताव 1929 में लाहौर में पारित हुआ।",
+     "परिषदों का बहिष्कार 1920 के असहयोग आंदोलन में हुआ।",
+     "विभाजन 1907 में सूरत में हुआ; लखनऊ में दोनों दल पुनः एक हुए।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1905–1918",
+     "लखनऊ समझौता"
+    ],
+    "facts": [
+     "1916 के लखनऊ अधिवेशन में, जिसकी अध्यक्षता ए.सी. मजूमदार ने की, नरम दल और गरम दल पुनः एक हुए।",
+     "बाल गंगाधर तिलक और एनी बेसेंट ने लखनऊ में कांग्रेस और मुस्लिम लीग को निकट लाने में सहायता की।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 133
+    },
+    {
+     "book": "fatman",
+     "page": 130
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Mahatma Gandhi returned to India from South Africa in:",
+    "options": [
+     "1915",
+     "1912",
+     "1917",
+     "1919"
+    ],
+    "explanation": "Gandhi returned from South Africa and landed at Bombay on 9 January 1915. On Gokhale's advice he spent his first year travelling across India before taking an active part in politics.",
+    "notes": [
+     "Correct: he landed at Bombay on 9 January 1915.",
+     "In 1912 Gokhale visited South Africa to support the struggle of the Indians there.",
+     "In 1917 he led the satyagraha of the indigo cultivators of Champaran.",
+     "In 1919 he called for a nationwide satyagraha against the Rowlatt Act."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1905–1918",
+     "Return of Gandhi"
+    ],
+    "facts": [
+     "9 January is observed as Pravasi Bharatiya Divas.",
+     "In 1915 he set up his first ashram in India at Kochrab, Ahmedabad."
+    ]
+   },
+   "hi": {
+    "q": "महात्मा गांधी दक्षिण अफ्रीका से भारत कब लौटे?",
+    "options": [
+     "1915",
+     "1912",
+     "1917",
+     "1919"
+    ],
+    "explanation": "गांधी दक्षिण अफ्रीका से लौटकर 9 जनवरी 1915 को बंबई पहुँचे। गोखले की सलाह पर उन्होंने सक्रिय राजनीति में आने से पहले पहला वर्ष देश भर की यात्रा में बिताया।",
+    "notes": [
+     "सही: वे 9 जनवरी 1915 को बंबई पहुँचे।",
+     "1912 में गोखले वहाँ के भारतीयों के संघर्ष के समर्थन में दक्षिण अफ्रीका गए।",
+     "1917 में उन्होंने चंपारण के नील उत्पादक किसानों के सत्याग्रह का नेतृत्व किया।",
+     "1919 में उन्होंने रॉलेट एक्ट के विरुद्ध देशव्यापी सत्याग्रह का आह्वान किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1905–1918",
+     "गांधी का आगमन"
+    ],
+    "facts": [
+     "9 जनवरी को प्रवासी भारतीय दिवस मनाया जाता है।",
+     "1915 में उन्होंने अहमदाबाद के कोचरब में भारत में अपना पहला आश्रम स्थापित किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Who sang 'Vande Mataram' at the Calcutta session of the Indian National Congress in 1896?",
+    "options": [
+     "Bankim Chandra Chattopadhyay",
+     "Rabindranath Tagore",
+     "Sarala Devi Chaudhurani",
+     "Sarojini Naidu"
+    ],
+    "explanation": "Rabindranath Tagore sang 'Vande Mataram' at the Calcutta session of 1896, the first time it was sung at a Congress session. During the Swadeshi movement the song became the rallying cry of the national movement.",
+    "notes": [
+     "He wrote the song, which appears in his novel 'Anandamath' (1882).",
+     "Correct: Tagore sang it and set its first stanza to music.",
+     "She sang it at the Benares session of the Congress in 1905.",
+     "She presided over the Kanpur session of the Congress in 1925."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Indian National Congress",
+     "Vande Mataram"
+    ],
+    "facts": [
+     "The Constituent Assembly adopted 'Vande Mataram' as the National Song on 24 January 1950.",
+     "The song was composed in 1875."
+    ]
+   },
+   "hi": {
+    "q": "1896 में भारतीय राष्ट्रीय कांग्रेस के कलकत्ता अधिवेशन में 'वंदे मातरम्' किसने गाया?",
+    "options": [
+     "बंकिम चंद्र चट्टोपाध्याय",
+     "रवींद्रनाथ टैगोर",
+     "सरला देवी चौधरानी",
+     "सरोजिनी नायडू"
+    ],
+    "explanation": "रवींद्रनाथ टैगोर ने 1896 के कलकत्ता अधिवेशन में 'वंदे मातरम्' गाया; कांग्रेस के किसी अधिवेशन में यह पहली बार गाया गया। स्वदेशी आंदोलन के समय यह गीत राष्ट्रीय आंदोलन का प्रमुख उद्घोष बन गया।",
+    "notes": [
+     "उन्होंने यह गीत लिखा, जो उनके उपन्यास 'आनंदमठ' (1882) में है।",
+     "सही: टैगोर ने इसे गाया और इसके प्रथम पद की धुन बनाई।",
+     "उन्होंने 1905 के बनारस अधिवेशन में इसे गाया।",
+     "उन्होंने 1925 में कांग्रेस के कानपुर अधिवेशन की अध्यक्षता की।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "भारतीय राष्ट्रीय कांग्रेस",
+     "वंदे मातरम्"
+    ],
+    "facts": [
+     "संविधान सभा ने 24 जनवरी 1950 को 'वंदे मातरम्' को राष्ट्रगीत के रूप में अपनाया।",
+     "इस गीत की रचना 1875 में हुई थी।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Vande Mataram (history of the song)",
+     "url": "https://en.wikipedia.org/wiki/Vande_Mataram"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Who declared, 'Swaraj is my birthright and I shall have it'?",
+    "options": [
+     "Lala Lajpat Rai",
+     "Bipin Chandra Pal",
+     "Bal Gangadhar Tilak",
+     "Aurobindo Ghosh"
+    ],
+    "explanation": "Bal Gangadhar Tilak gave the slogan 'Swaraj is my birthright and I shall have it'. He used the Ganapati and Shivaji festivals to rouse national feeling.",
+    "notes": [
+     "Lala Lajpat Rai was known as 'Punjab Kesari'.",
+     "Bipin Chandra Pal was the Bengal member of the 'Lal-Bal-Pal' trio.",
+     "He was called 'Lokmanya'.",
+     "Aurobindo Ghosh edited the 'Bande Mataram'."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Indian National Congress"
+    ],
+    "facts": [
+     "He edited the newspapers 'Kesari' and 'Mahratta'.",
+     "Valentine Chirol called him the 'father of Indian unrest'."
+    ]
+   },
+   "hi": {
+    "q": "'स्वराज मेरा जन्मसिद्ध अधिकार है और मैं इसे लेकर रहूँगा' किसने कहा?",
+    "options": [
+     "लाला लाजपत राय",
+     "बिपिन चंद्र पाल",
+     "बाल गंगाधर तिलक",
+     "अरविंद घोष"
+    ],
+    "explanation": "बाल गंगाधर तिलक ने 'स्वराज मेरा जन्मसिद्ध अधिकार है और मैं इसे लेकर रहूँगा' का नारा दिया। उन्होंने राष्ट्रीय भावना जगाने के लिए गणपति एवं शिवाजी उत्सवों का उपयोग किया।",
+    "notes": [
+     "लाला लाजपत राय 'पंजाब केसरी' कहलाते थे।",
+     "बिपिन चंद्र पाल 'लाल-बाल-पाल' त्रयी के बंगाल के सदस्य थे।",
+     "उन्हें 'लोकमान्य' कहा जाता था।",
+     "अरविंद घोष ने 'वंदे मातरम्' का संपादन किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "भारतीय राष्ट्रीय कांग्रेस"
+    ],
+    "facts": [
+     "उन्होंने 'केसरी' एवं 'मराठा' समाचार पत्रों का संपादन किया।",
+     "वैलेंटाइन चिरोल ने उन्हें 'भारतीय अशांति का जनक' कहा।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 90
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Who founded the Swadeshi Steam Navigation Company at Tuticorin in 1906?",
+    "options": [
+     "Subramania Bharati",
+     "C. Rajagopalachari",
+     "Subramania Siva",
+     "V.O. Chidambaram Pillai"
+    ],
+    "explanation": "V.O. Chidambaram Pillai founded the Swadeshi Steam Navigation Company at Tuticorin in 1906 to run Indian-owned ships to Colombo and break the monopoly of the British India Steam Navigation Company. He was later sentenced to a long term of imprisonment.",
+    "notes": [
+     "A Tamil poet who wrote patriotic songs during the Swadeshi movement.",
+     "He led the salt satyagraha at Vedaranyam in 1930.",
+     "A fiery Swadeshi speaker of Tirunelveli who was jailed in 1908.",
+     "Correct: his company challenged the British shipping monopoly."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Swadeshi movement",
+     "Swadeshi enterprise"
+    ],
+    "facts": [
+     "He is popularly called 'Kappalottiya Tamizhan', the Tamil who sailed ships.",
+     "He supported the strike of the Coral Mills workers at Tuticorin in 1908."
+    ]
+   },
+   "hi": {
+    "q": "1906 में तूतीकोरिन में स्वदेशी स्टीम नेविगेशन कंपनी की स्थापना किसने की?",
+    "options": [
+     "सुब्रमण्य भारती",
+     "सी. राजगोपालाचारी",
+     "सुब्रमण्य शिवा",
+     "वी.ओ. चिदंबरम पिल्लै"
+    ],
+    "explanation": "वी.ओ. चिदंबरम पिल्लै ने ब्रिटिश इंडिया स्टीम नेविगेशन कंपनी का एकाधिकार तोड़ने और कोलंबो तक भारतीय स्वामित्व वाले जहाज चलाने के लिए 1906 में तूतीकोरिन में स्वदेशी स्टीम नेविगेशन कंपनी की स्थापना की। बाद में उन्हें लंबी कैद की सज़ा दी गई।",
+    "notes": [
+     "तमिल कवि, जिन्होंने स्वदेशी आंदोलन के समय देशभक्ति गीत लिखे।",
+     "उन्होंने 1930 में वेदारण्यम में नमक सत्याग्रह का नेतृत्व किया।",
+     "तिरुनेलवेली के ओजस्वी स्वदेशी वक्ता, जिन्हें 1908 में जेल भेजा गया।",
+     "सही: उनकी कंपनी ने ब्रिटिश जहाजरानी के एकाधिकार को चुनौती दी।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "स्वदेशी आंदोलन",
+     "स्वदेशी उद्यम"
+    ],
+    "facts": [
+     "उन्हें 'कप्पलोट्टिय तमिऴन' (जहाज चलाने वाला तमिल) कहा जाता है।",
+     "उन्होंने 1908 में तूतीकोरिन की कोरल मिल के मजदूरों की हड़ताल का समर्थन किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Who is known as the 'Grand Old Man of India'?",
+    "options": [
+     "Dadabhai Naoroji",
+     "Gopal Krishna Gokhale",
+     "Pherozeshah Mehta",
+     "Mahadev Govind Ranade"
+    ],
+    "explanation": "Dadabhai Naoroji is called the 'Grand Old Man of India'. In his book 'Poverty and Un-British Rule in India' he put forward the theory of the drain of wealth.",
+    "notes": [
+     "He was the first Indian to be elected to the British House of Commons, in 1892.",
+     "Gokhale was the political guru of Mahatma Gandhi.",
+     "Pherozeshah Mehta was called the 'Lion of Bombay'.",
+     "Ranade was a judge and social reformer."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Indian National Congress"
+    ],
+    "facts": [
+     "He presided over the Congress in 1886, 1893 and 1906.",
+     "He founded the East India Association in London in 1866."
+    ]
+   },
+   "hi": {
+    "q": "'भारत के वयोवृद्ध पुरुष' (ग्रैंड ओल्ड मैन ऑफ इंडिया) किसे कहा जाता है?",
+    "options": [
+     "दादाभाई नौरोजी",
+     "गोपाल कृष्ण गोखले",
+     "फिरोजशाह मेहता",
+     "महादेव गोविंद रानाडे"
+    ],
+    "explanation": "दादाभाई नौरोजी को 'भारत का वयोवृद्ध पुरुष' कहा जाता है। अपनी पुस्तक 'पॉवर्टी एंड अन-ब्रिटिश रूल इन इंडिया' में उन्होंने धन निष्कासन का सिद्धांत प्रस्तुत किया।",
+    "notes": [
+     "वे 1892 में ब्रिटिश हाउस ऑफ कॉमन्स के लिए निर्वाचित होने वाले पहले भारतीय थे।",
+     "गोखले महात्मा गांधी के राजनीतिक गुरु थे।",
+     "फिरोजशाह मेहता 'बंबई का शेर' कहलाते थे।",
+     "रानाडे न्यायाधीश एवं समाज सुधारक थे।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "भारतीय राष्ट्रीय कांग्रेस"
+    ],
+    "facts": [
+     "उन्होंने 1886, 1893 एवं 1906 में कांग्रेस की अध्यक्षता की।",
+     "उन्होंने 1866 में लंदन में ईस्ट इंडिया एसोसिएशन की स्थापना की।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 71
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "In 1916 two Home Rule Leagues were started in India, one by Bal Gangadhar Tilak and the other by:",
+    "options": [
+     "Sarojini Naidu",
+     "Annie Besant",
+     "Madan Mohan Malaviya",
+     "Lala Lajpat Rai"
+    ],
+    "explanation": "Tilak started his Home Rule League at Belgaum in April 1916, and Annie Besant started hers at Madras in September 1916. Both demanded self-government within the British Empire.",
+    "notes": [
+     "Sarojini Naidu was not the founder of a League.",
+     "She started her League at Madras in September 1916.",
+     "Malaviya founded the Banaras Hindu University in 1916.",
+     "Lala Lajpat Rai was in America at the time."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1905–1918"
+    ],
+    "facts": [
+     "Annie Besant brought out the papers 'New India' and 'Commonweal'.",
+     "Tilak's League worked mainly in Maharashtra (except Bombay city), Karnataka, the Central Provinces and Berar."
+    ]
+   },
+   "hi": {
+    "q": "1916 में भारत में दो होमरूल लीग आरंभ हुईं, एक बाल गंगाधर तिलक द्वारा और दूसरी किसके द्वारा?",
+    "options": [
+     "सरोजिनी नायडू",
+     "एनी बेसेंट",
+     "मदन मोहन मालवीय",
+     "लाला लाजपत राय"
+    ],
+    "explanation": "तिलक ने अप्रैल 1916 में बेलगाम में तथा एनी बेसेंट ने सितंबर 1916 में मद्रास में होमरूल लीग आरंभ की। दोनों ने ब्रिटिश साम्राज्य के भीतर स्वशासन की माँग की।",
+    "notes": [
+     "सरोजिनी नायडू किसी लीग की संस्थापक नहीं थीं।",
+     "उन्होंने सितंबर 1916 में मद्रास में अपनी लीग आरंभ की।",
+     "मालवीय ने 1916 में काशी हिंदू विश्वविद्यालय की स्थापना की।",
+     "लाला लाजपत राय उस समय अमेरिका में थे।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1905–1918"
+    ],
+    "facts": [
+     "एनी बेसेंट ने 'न्यू इंडिया' एवं 'कॉमनवील' पत्र निकाले।",
+     "तिलक की लीग मुख्यतः महाराष्ट्र (बंबई शहर को छोड़कर), कर्नाटक, मध्य प्रांत एवं बरार में कार्य करती थी।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 76
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-013",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The Servants of India Society was founded in 1905 by:",
+    "options": [
+     "Mahadev Govind Ranade",
+     "Pherozeshah Mehta",
+     "Gopal Krishna Gokhale",
+     "Madan Mohan Malaviya"
+    ],
+    "explanation": "Gopal Krishna Gokhale founded the Servants of India Society at Pune in 1905 to train national missionaries for the service of the country.",
+    "notes": [
+     "Ranade, his mentor, had died in 1901.",
+     "Pherozeshah Mehta was a Moderate leader of Bombay.",
+     "Its members took a vow to serve the country.",
+     "Malaviya founded the Banaras Hindu University."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Indian National Congress"
+    ],
+    "facts": [
+     "Gokhale presided over the Benares session of the Congress in 1905.",
+     "Mahatma Gandhi regarded him as his political guru."
+    ]
+   },
+   "hi": {
+    "q": "सर्वेंट्स ऑफ इंडिया सोसाइटी की स्थापना 1905 में किसने की?",
+    "options": [
+     "महादेव गोविंद रानाडे",
+     "फिरोजशाह मेहता",
+     "गोपाल कृष्ण गोखले",
+     "मदन मोहन मालवीय"
+    ],
+    "explanation": "गोपाल कृष्ण गोखले ने देश सेवा के लिए राष्ट्रीय प्रचारक तैयार करने हेतु 1905 में पुणे में सर्वेंट्स ऑफ इंडिया सोसाइटी की स्थापना की।",
+    "notes": [
+     "उनके मार्गदर्शक रानाडे का निधन 1901 में हो चुका था।",
+     "फिरोजशाह मेहता बंबई के नरम दल के नेता थे।",
+     "इसके सदस्य देश सेवा का व्रत लेते थे।",
+     "मालवीय ने काशी हिंदू विश्वविद्यालय की स्थापना की।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "भारतीय राष्ट्रीय कांग्रेस"
+    ],
+    "facts": [
+     "गोखले ने 1905 में कांग्रेस के बनारस अधिवेशन की अध्यक्षता की।",
+     "महात्मा गांधी उन्हें अपना राजनीतिक गुरु मानते थे।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 71
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-014",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The Ghadar Party, formed in 1913 by Indians living in North America, had its headquarters at:",
+    "options": [
+     "London",
+     "Berlin",
+     "Tokyo",
+     "San Francisco"
+    ],
+    "explanation": "The Ghadar Party was formed in 1913 by Indian immigrants, mainly Punjabis, on the Pacific coast of North America, with its headquarters at San Francisco. Sohan Singh Bhakna was its president and Lala Har Dayal its moving spirit.",
+    "notes": [
+     "London had the India House of Shyamji Krishna Varma.",
+     "Indian revolutionaries formed the Berlin Committee there during the First World War.",
+     "Rash Behari Bose worked from Tokyo.",
+     "Correct: its headquarters, the Yugantar Ashram, was at San Francisco."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1905–1918"
+    ],
+    "facts": [
+     "It brought out the weekly paper 'Ghadar'.",
+     "The Komagata Maru incident of 1914 gave it a stimulus."
+    ]
+   },
+   "hi": {
+    "q": "उत्तरी अमेरिका में बसे भारतीयों द्वारा 1913 में गठित गदर पार्टी का मुख्यालय कहाँ था?",
+    "options": [
+     "लंदन",
+     "बर्लिन",
+     "टोक्यो",
+     "सैन फ्रांसिस्को"
+    ],
+    "explanation": "गदर पार्टी का गठन 1913 में उत्तरी अमेरिका के प्रशांत तट पर बसे भारतीय प्रवासियों, मुख्यतः पंजाबियों, ने किया; इसका मुख्यालय सैन फ्रांसिस्को में था। सोहन सिंह भकना इसके अध्यक्ष तथा लाला हरदयाल इसके प्रेरणा स्रोत थे।",
+    "notes": [
+     "लंदन में श्यामजी कृष्ण वर्मा का इंडिया हाउस था।",
+     "प्रथम विश्व युद्ध के दौरान भारतीय क्रांतिकारियों ने वहाँ बर्लिन समिति बनाई।",
+     "रास बिहारी बोस ने टोक्यो से कार्य किया।",
+     "सही: इसका मुख्यालय 'युगांतर आश्रम' सैन फ्रांसिस्को में था।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1905–1918"
+    ],
+    "facts": [
+     "इसने साप्ताहिक पत्र 'गदर' निकाला।",
+     "1914 की कामागाटा मारू घटना से इसे बल मिला।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 74
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "In 1908 Khudiram Bose and Prafulla Chaki threw a bomb at Muzaffarpur in an attempt to kill:",
+    "options": [
+     "Judge Kingsford",
+     "Lord Hardinge",
+     "Sir William Curzon Wyllie",
+     "Lord Minto"
+    ],
+    "explanation": "On 30 April 1908 Khudiram Bose and Prafulla Chaki threw a bomb at a carriage at Muzaffarpur, believing that Judge Kingsford was in it. Two English ladies were killed instead.",
+    "notes": [
+     "He had been harsh to Swadeshi workers as a magistrate at Calcutta.",
+     "A bomb was thrown at Lord Hardinge in Delhi in 1912.",
+     "Curzon Wyllie was shot in London by Madan Lal Dhingra in 1909.",
+     "Lord Minto was the Viceroy and was not the target."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1905–1918"
+    ],
+    "facts": [
+     "Khudiram Bose was hanged in August 1908.",
+     "The Alipore conspiracy case followed the incident."
+    ]
+   },
+   "hi": {
+    "q": "1908 में खुदीराम बोस एवं प्रफुल्ल चाकी ने मुजफ्फरपुर में किसकी हत्या के प्रयास में बम फेंका?",
+    "options": [
+     "न्यायाधीश किंग्सफोर्ड",
+     "लॉर्ड हार्डिंग",
+     "सर विलियम कर्जन वाइली",
+     "लॉर्ड मिंटो"
+    ],
+    "explanation": "30 अप्रैल 1908 को खुदीराम बोस एवं प्रफुल्ल चाकी ने मुजफ्फरपुर में एक बग्घी पर यह समझकर बम फेंका कि उसमें न्यायाधीश किंग्सफोर्ड है। उसके स्थान पर दो अंग्रेज महिलाएँ मारी गईं।",
+    "notes": [
+     "वह कलकत्ता में मजिस्ट्रेट के रूप में स्वदेशी कार्यकर्ताओं के प्रति कठोर रहा था।",
+     "1912 में दिल्ली में लॉर्ड हार्डिंग पर बम फेंका गया।",
+     "कर्जन वाइली को 1909 में लंदन में मदन लाल ढींगरा ने गोली मारी।",
+     "लॉर्ड मिंटो वायसराय था और निशाना नहीं था।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1905–1918"
+    ],
+    "facts": [
+     "खुदीराम बोस को अगस्त 1908 में फाँसी दी गई।",
+     "इस घटना के बाद अलीपुर षड्यंत्र केस चला।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 75
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The Swadeshi movement was formally proclaimed on 7 August 1905 at a meeting held in the Town Hall of:",
+    "options": [
+     "Dhaka",
+     "Calcutta",
+     "Barisal",
+     "Benares"
+    ],
+    "explanation": "At a meeting in the Calcutta Town Hall on 7 August 1905 the boycott of British goods was resolved upon and the Swadeshi movement was formally launched against the partition of Bengal.",
+    "notes": [
+     "Dhaka became the capital of the new province of Eastern Bengal and Assam.",
+     "The boycott resolution was passed at this meeting.",
+     "Barisal was the venue of the provincial conference of 1906.",
+     "The Congress met at Benares in December 1905."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Partition of Bengal"
+    ],
+    "facts": [
+     "7 August is now observed as National Handloom Day.",
+     "The movement promoted national education and indigenous industries."
+    ]
+   },
+   "hi": {
+    "q": "स्वदेशी आंदोलन की औपचारिक घोषणा 7 अगस्त 1905 को किस नगर के टाउन हॉल में हुई सभा में की गई?",
+    "options": [
+     "ढाका",
+     "कलकत्ता",
+     "बारीसाल",
+     "बनारस"
+    ],
+    "explanation": "7 अगस्त 1905 को कलकत्ता के टाउन हॉल की सभा में ब्रिटिश वस्तुओं के बहिष्कार का संकल्प लिया गया और बंगाल विभाजन के विरुद्ध स्वदेशी आंदोलन औपचारिक रूप से आरंभ हुआ।",
+    "notes": [
+     "ढाका नए प्रांत पूर्वी बंगाल एवं असम की राजधानी बना।",
+     "इसी सभा में बहिष्कार का प्रस्ताव पारित हुआ।",
+     "बारीसाल 1906 के प्रांतीय सम्मेलन का स्थान था।",
+     "कांग्रेस का अधिवेशन दिसंबर 1905 में बनारस में हुआ।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "बंगाल विभाजन"
+    ],
+    "facts": [
+     "7 अगस्त अब राष्ट्रीय हथकरघा दिवस के रूप में मनाया जाता है।",
+     "आंदोलन ने राष्ट्रीय शिक्षा एवं स्वदेशी उद्योगों को बढ़ावा दिया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Which secret revolutionary society was founded by V. D. Savarkar in 1904?",
+    "options": [
+     "Anushilan Samiti",
+     "Yugantar",
+     "Abhinav Bharat",
+     "India House"
+    ],
+    "explanation": "Vinayak Damodar Savarkar founded the Abhinav Bharat Society in 1904. It grew out of the Mitra Mela, which he had formed at Nashik in 1899.",
+    "notes": [
+     "The Anushilan Samiti was founded in Bengal in 1902.",
+     "Yugantar was a revolutionary group and weekly of Bengal.",
+     "It grew out of the Mitra Mela that he had started at Nashik.",
+     "India House was set up in London by Shyamji Krishna Varma."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1905–1918"
+    ],
+    "facts": [
+     "Savarkar wrote 'The Indian War of Independence, 1857'.",
+     "He was sentenced to transportation for life in 1910–11 and sent to the Andamans."
+    ]
+   },
+   "hi": {
+    "q": "वी. डी. सावरकर ने 1904 में किस गुप्त क्रांतिकारी संस्था की स्थापना की?",
+    "options": [
+     "अनुशीलन समिति",
+     "युगांतर",
+     "अभिनव भारत",
+     "इंडिया हाउस"
+    ],
+    "explanation": "विनायक दामोदर सावरकर ने 1904 में अभिनव भारत सोसाइटी की स्थापना की। यह मित्र मेला से विकसित हुई, जिसे उन्होंने 1899 में नासिक में बनाया था।",
+    "notes": [
+     "अनुशीलन समिति की स्थापना 1902 में बंगाल में हुई।",
+     "युगांतर बंगाल का क्रांतिकारी दल एवं साप्ताहिक पत्र था।",
+     "यह नासिक में उनके द्वारा आरंभ मित्र मेला से विकसित हुई।",
+     "इंडिया हाउस लंदन में श्यामजी कृष्ण वर्मा ने स्थापित किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1905–1918"
+    ],
+    "facts": [
+     "सावरकर ने 'द इंडियन वॉर ऑफ इंडिपेंडेंस, 1857' लिखी।",
+     "1910–11 में उन्हें आजीवन कालापानी का दंड देकर अंडमान भेजा गया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 74
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-018",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "The early nationalists (Moderates) made a lasting contribution to the national movement primarily through their:",
+    "options": [
+     "Resort to armed struggle against the British",
+     "Boycott of the enlarged legislative councils",
+     "Open demand for complete independence",
+     "Economic critique exposing the drain of wealth"
+    ],
+    "explanation": "Leaders such as Dadabhai Naoroji, R. C. Dutt and M. G. Ranade showed that British rule was draining India's wealth and ruining its industries. This economic critique became the foundation of later nationalist agitation.",
+    "notes": [
+     "They believed in constitutional methods, not in armed struggle.",
+     "They wanted the councils to be enlarged, not boycotted.",
+     "They asked for reforms within British rule.",
+     "Their writings undermined the moral basis of colonial rule in Indian eyes."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Indian National Congress"
+    ],
+    "facts": [
+     "The Moderates relied on petitions, resolutions and public meetings.",
+     "The Indian Councils Act of 1892 was a result of their pressure."
+    ]
+   },
+   "hi": {
+    "q": "आरंभिक राष्ट्रवादियों (नरम दल) ने राष्ट्रीय आंदोलन को स्थायी योगदान मुख्यतः किसके द्वारा दिया?",
+    "options": [
+     "अंग्रेजों के विरुद्ध सशस्त्र संघर्ष का सहारा",
+     "विस्तारित विधान परिषदों का बहिष्कार",
+     "पूर्ण स्वतंत्रता की खुली माँग",
+     "धन निष्कासन को उजागर करने वाली आर्थिक आलोचना"
+    ],
+    "explanation": "दादाभाई नौरोजी, आर. सी. दत्त एवं एम. जी. रानाडे जैसे नेताओं ने दिखाया कि ब्रिटिश शासन भारत का धन बाहर ले जा रहा है और उसके उद्योगों को नष्ट कर रहा है। यह आर्थिक आलोचना बाद के राष्ट्रवादी आंदोलन की नींव बनी।",
+    "notes": [
+     "वे सशस्त्र संघर्ष में नहीं, संवैधानिक तरीकों में विश्वास करते थे।",
+     "वे परिषदों का बहिष्कार नहीं, विस्तार चाहते थे।",
+     "उन्होंने ब्रिटिश शासन के भीतर सुधार माँगे।",
+     "उनके लेखन ने भारतीयों की दृष्टि में औपनिवेशिक शासन के नैतिक आधार को कमजोर किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "भारतीय राष्ट्रीय कांग्रेस"
+    ],
+    "facts": [
+     "नरम दल याचिकाओं, प्रस्तावों एवं सार्वजनिक सभाओं पर निर्भर था।",
+     "1892 का भारतीय परिषद अधिनियम उनके दबाव का परिणाम था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-019",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "The Swadeshi and Boycott movement (1905–08) is significant in the history of the national movement primarily because it:",
+    "options": [
+     "Secured the immediate annulment of the partition",
+     "Stayed confined to petitions and prayers",
+     "Drew new social groups into active mass politics",
+     "Enjoyed the support of the Viceroy's council"
+    ],
+    "explanation": "The movement used new methods such as the boycott of foreign goods, public meetings, picketing and volunteer corps. It brought students, women and sections of the urban population into politics and gave rise to Swadeshi enterprises and national schools.",
+    "notes": [
+     "The partition was annulled only in 1911.",
+     "It went beyond petitions to boycott and passive resistance.",
+     "Students, women and sections of the urban population entered politics.",
+     "The Government tried to suppress it."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Partition of Bengal"
+    ],
+    "facts": [
+     "The Bengal National College was set up with Aurobindo Ghosh as its principal.",
+     "The movement did not gain the support of the mass of the peasantry."
+    ]
+   },
+   "hi": {
+    "q": "स्वदेशी एवं बहिष्कार आंदोलन (1905–08) राष्ट्रीय आंदोलन के इतिहास में मुख्यतः किस कारण महत्वपूर्ण है?",
+    "options": [
+     "इसने विभाजन को तत्काल रद्द करा दिया",
+     "यह याचिकाओं एवं प्रार्थनाओं तक सीमित रहा",
+     "इसने नए सामाजिक वर्गों को सक्रिय जन राजनीति में खींचा",
+     "इसे वायसराय की परिषद का समर्थन प्राप्त था"
+    ],
+    "explanation": "आंदोलन ने विदेशी वस्तुओं के बहिष्कार, सार्वजनिक सभाओं, धरने एवं स्वयंसेवक दलों जैसे नए तरीके अपनाए। इसने विद्यार्थियों, स्त्रियों एवं नगरीय जनता के वर्गों को राजनीति में लाया तथा स्वदेशी उद्यमों एवं राष्ट्रीय विद्यालयों को जन्म दिया।",
+    "notes": [
+     "विभाजन 1911 में ही रद्द हुआ।",
+     "यह याचिकाओं से आगे बढ़कर बहिष्कार एवं निष्क्रिय प्रतिरोध तक गया।",
+     "विद्यार्थी, स्त्रियाँ एवं नगरीय जनता के वर्ग राजनीति में आए।",
+     "सरकार ने इसे दबाने का प्रयास किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "बंगाल विभाजन"
+    ],
+    "facts": [
+     "बंगाल नेशनल कॉलेज की स्थापना हुई, जिसके प्राचार्य अरविंद घोष थे।",
+     "आंदोलन को किसानों के बड़े वर्ग का समर्थन नहीं मिला।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm1-020",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "The Home Rule Movement (1916–18) differed from the earlier agitation of the Congress primarily in that it:",
+    "options": [
+     "Sought separation from the Empire by force",
+     "Was confined to the province of Bengal",
+     "Opposed any reunion of Moderates and Extremists",
+     "Ran an organised, year-round campaign for self-rule"
+    ],
+    "explanation": "The two Home Rule Leagues built a network of branches and carried on continuous propaganda for self-government. They created a generation of political workers and prepared the ground for the mass movements led by Gandhi.",
+    "notes": [
+     "It asked for self-government within the Empire by constitutional means.",
+     "Its branches were spread over many provinces.",
+     "It helped bring about the reunion of the two wings in 1916.",
+     "The demand for self-government was carried to towns and villages."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1905–1918"
+    ],
+    "facts": [
+     "The Montagu Declaration of August 1917 promised responsible government as the goal.",
+     "The Leagues used lecture tours, pamphlets, reading rooms and local branches."
+    ]
+   },
+   "hi": {
+    "q": "होमरूल आंदोलन (1916–18) कांग्रेस के पूर्व के आंदोलन से मुख्यतः किस बात में भिन्न था?",
+    "options": [
+     "इसने बल द्वारा साम्राज्य से पृथक्करण चाहा",
+     "यह बंगाल प्रांत तक सीमित था",
+     "इसने नरम दल एवं गरम दल के पुनर्मिलन का विरोध किया",
+     "इसने स्वशासन के लिए संगठित, वर्ष भर चलने वाला अभियान चलाया"
+    ],
+    "explanation": "दोनों होमरूल लीगों ने शाखाओं का जाल बनाया और स्वशासन के लिए निरंतर प्रचार किया। उन्होंने राजनीतिक कार्यकर्ताओं की एक पीढ़ी तैयार की और गांधी के नेतृत्व वाले जन आंदोलनों की भूमि बनाई।",
+    "notes": [
+     "इसने संवैधानिक साधनों से साम्राज्य के भीतर स्वशासन माँगा।",
+     "इसकी शाखाएँ अनेक प्रांतों में फैली थीं।",
+     "इसने 1916 में दोनों दलों के पुनर्मिलन में सहायता की।",
+     "स्वशासन की माँग नगरों एवं गाँवों तक पहुँचाई गई।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1905–1918"
+    ],
+    "facts": [
+     "अगस्त 1917 की मॉन्टेग्यू घोषणा में उत्तरदायी शासन को लक्ष्य बताया गया।",
+     "लीगों ने भाषण यात्राओं, पुस्तिकाओं, वाचनालयों एवं स्थानीय शाखाओं का उपयोग किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  }
+ ]
 }

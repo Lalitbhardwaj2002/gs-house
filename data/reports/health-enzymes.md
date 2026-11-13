@@ -13,3 +13,20 @@ Fatman pp. 311 and 315 (images p336 and p340, printed numbers confirmed) were op
 
 ## For the writer later
 - No question yet on blood-group compatibility (universal donor O−, universal recipient AB+), bile/liver functions, or nephron parts (Bowman's capsule, loop of Henle).
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 4 questions (003 004 005 006); all correct, no changes.
+
+Corrected: none. Replaced: none.
+
+## Check of 13 November 2026 (14 new questions, 007–020)
+
+Checked 14 questions (007–020). Answer spread still 5/5/5/5; levels unchanged. Replaced: none.
+
+Corrected:
+- **009**, **010**: added book ref tgt-pgt-gk p. 236 (platelets; bile stored in the gall bladder).
+- **012**: Hindi fact used non-standard names for jejunum and ileum; now अग्रक्षुद्रांत्र (जेजुनम) and क्षुद्रांत्र (इलियम) as in NCERT Hindi.
+- **014**: note A and explanation ("veins bring blood back to the heart") hinted the answer of 016; reworded.
+- **015**: note B ("starch is acted on by amylases") hinted old 001 (ptyalin); reworded. Explanation made exact: casein → paracasein, which forms the curd with calcium ions.
+- **016**: notes A, C, D ("from the heart to the lungs / body") gave away the answer of 014; reworded without direction.

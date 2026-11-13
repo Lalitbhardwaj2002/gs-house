@@ -1,402 +1,1281 @@
 {
-  "section": "health-deficiency",
-  "questions": [
+ "section": "health-deficiency",
+ "questions": [
+  {
+   "id": "health-deficiency-001",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Rickets in children is caused by the deficiency of:",
+    "options": [
+     "Vitamin D",
+     "Vitamin A",
+     "Vitamin C",
+     "Vitamin B12"
+    ],
+    "explanation": "Vitamin D is needed for the absorption of calcium and phosphorus. Its deficiency in children leads to soft, weak and bent bones (rickets); in adults the same deficiency causes osteomalacia.",
+    "notes": [
+     "Vitamin D: deficiency causes rickets in children and osteomalacia in adults.",
+     "Vitamin A: deficiency causes night blindness and xerophthalmia.",
+     "Vitamin C: deficiency causes scurvy, marked by bleeding and swollen gums.",
+     "Vitamin B12: deficiency causes pernicious anaemia."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases",
+     "Rickets"
+    ],
+    "facts": [
+     "Bow legs and a pigeon chest are common signs of rickets.",
+     "Exposure of skin to sunlight helps the body make vitamin D."
+    ]
+   },
+   "hi": {
+    "q": "बच्चों में रिकेट्स (सूखा रोग) किसकी कमी से होता है?",
+    "options": [
+     "विटामिन D",
+     "विटामिन A",
+     "विटामिन C",
+     "विटामिन B12"
+    ],
+    "explanation": "कैल्सियम और फॉस्फोरस के अवशोषण के लिए विटामिन D आवश्यक है। बच्चों में इसकी कमी से हड्डियाँ मुलायम, कमजोर और टेढ़ी हो जाती हैं (रिकेट्स); वयस्कों में यही कमी ऑस्टियोमलेशिया उत्पन्न करती है।",
+    "notes": [
+     "विटामिन D: कमी से बच्चों में रिकेट्स तथा वयस्कों में ऑस्टियोमलेशिया होता है।",
+     "विटामिन A: कमी से रतौंधी और जीरोफ्थैल्मिया होता है।",
+     "विटामिन C: कमी से स्कर्वी होता है, जिसमें मसूड़े फूलते हैं और उनसे रक्त निकलता है।",
+     "विटामिन B12: कमी से प्रणाशी (पर्निशियस) रक्ताल्पता होती है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग",
+     "रिकेट्स"
+    ],
+    "facts": [
+     "टेढ़े पैर (धनुषाकार टाँगें) और कबूतर जैसी छाती रिकेट्स के सामान्य लक्षण हैं।",
+     "त्वचा पर धूप पड़ने से शरीर विटामिन D बनाता है।"
+    ]
+   },
+   "refs": [
     {
-      "id": "health-deficiency-001",
-      "level": "TGT",
-      "answer": 0,
-      "en": {
-        "q": "Rickets in children is caused by the deficiency of:",
-        "options": [
-          "Vitamin D",
-          "Vitamin A",
-          "Vitamin C",
-          "Vitamin B12"
-        ],
-        "explanation": "Vitamin D is needed for the absorption of calcium and phosphorus. Its deficiency in children leads to soft, weak and bent bones (rickets); in adults the same deficiency causes osteomalacia.",
-        "notes": [
-          "Vitamin D: deficiency causes rickets in children and osteomalacia in adults.",
-          "Vitamin A: deficiency causes night blindness and xerophthalmia.",
-          "Vitamin C: deficiency causes scurvy, marked by bleeding and swollen gums.",
-          "Vitamin B12: deficiency causes pernicious anaemia."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Deficiency diseases",
-          "Rickets"
-        ],
-        "facts": [
-          "Bow legs and a pigeon chest are common signs of rickets.",
-          "Exposure of skin to sunlight helps the body make vitamin D."
-        ]
-      },
-      "hi": {
-        "q": "बच्चों में रिकेट्स (सूखा रोग) किसकी कमी से होता है?",
-        "options": [
-          "विटामिन D",
-          "विटामिन A",
-          "विटामिन C",
-          "विटामिन B12"
-        ],
-        "explanation": "कैल्सियम और फॉस्फोरस के अवशोषण के लिए विटामिन D आवश्यक है। बच्चों में इसकी कमी से हड्डियाँ मुलायम, कमजोर और टेढ़ी हो जाती हैं (रिकेट्स); वयस्कों में यही कमी ऑस्टियोमलेशिया उत्पन्न करती है।",
-        "notes": [
-          "विटामिन D: कमी से बच्चों में रिकेट्स तथा वयस्कों में ऑस्टियोमलेशिया होता है।",
-          "विटामिन A: कमी से रतौंधी और जीरोफ्थैल्मिया होता है।",
-          "विटामिन C: कमी से स्कर्वी होता है, जिसमें मसूड़े फूलते हैं और उनसे रक्त निकलता है।",
-          "विटामिन B12: कमी से प्रणाशी (पर्निशियस) रक्ताल्पता होती है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "अल्पताजन्य रोग",
-          "रिकेट्स"
-        ],
-        "facts": [
-          "टेढ़े पैर (धनुषाकार टाँगें) और कबूतर जैसी छाती रिकेट्स के सामान्य लक्षण हैं।",
-          "त्वचा पर धूप पड़ने से शरीर विटामिन D बनाता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        }
-      ]
+     "book": "fatman",
+     "page": 323
     },
     {
-      "id": "health-deficiency-002",
-      "level": "TGT",
-      "answer": 3,
-      "en": {
-        "q": "Deficiency of which one of the following minerals is the most common cause of anaemia?",
-        "options": [
-          "Iodine",
-          "Calcium",
-          "Sodium",
-          "Iron"
-        ],
-        "explanation": "Iron is an essential part of haemoglobin, the oxygen-carrying pigment of red blood cells. Its deficiency lowers haemoglobin, and the World Health Organization identifies iron deficiency as the most common cause of anaemia.",
-        "notes": [
-          "Iodine: deficiency causes goitre and, in children, impaired growth and mental development.",
-          "Calcium: deficiency weakens bones and teeth.",
-          "Sodium: low sodium disturbs water balance and nerve–muscle function; it is not a cause of anaemia.",
-          "Iron: part of haemoglobin; its deficiency causes iron-deficiency anaemia."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Deficiency diseases",
-          "Anaemia"
-        ],
-        "facts": [
-          "Vitamin C improves the absorption of iron from plant foods.",
-          "Anaemia Mukt Bharat is India's programme to reduce anaemia."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित में से किस खनिज की कमी रक्ताल्पता (एनीमिया) का सबसे सामान्य कारण है?",
-        "options": [
-          "आयोडीन",
-          "कैल्सियम",
-          "सोडियम",
-          "लोहा"
-        ],
-        "explanation": "लोहा लाल रक्त कोशिकाओं के ऑक्सीजन-वाहक वर्णक हीमोग्लोबिन का आवश्यक भाग है। इसकी कमी से हीमोग्लोबिन घटता है, और विश्व स्वास्थ्य संगठन के अनुसार लौह की कमी रक्ताल्पता का सबसे सामान्य कारण है।",
-        "notes": [
-          "आयोडीन: कमी से घेंघा तथा बच्चों में वृद्धि व मानसिक विकास बाधित होता है।",
-          "कैल्सियम: कमी से हड्डियाँ और दाँत कमजोर होते हैं।",
-          "सोडियम: कमी से जल-संतुलन तथा तंत्रिका-पेशी कार्य बिगड़ता है; यह रक्ताल्पता का कारण नहीं है।",
-          "लोहा: हीमोग्लोबिन का घटक; इसकी कमी से लौह-अल्पता रक्ताल्पता होती है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "अल्पताजन्य रोग",
-          "रक्ताल्पता"
-        ],
-        "facts": [
-          "विटामिन C वनस्पति खाद्यों से लोहे के अवशोषण को बढ़ाता है।",
-          "एनीमिया मुक्त भारत रक्ताल्पता घटाने का भारत का कार्यक्रम है।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "WHO fact sheet: Anaemia",
-          "url": "https://www.who.int/news-room/fact-sheets/detail/anaemia"
-        },
-        {
-          "source": "NCERT Class 6 Science, 'Components of Food' (pre-2024 edition)"
-        }
-      ]
-    },
-    {
-      "id": "health-deficiency-003",
-      "level": "PGT",
-      "answer": 1,
-      "en": {
-        "q": "Match List-I (Disease) with List-II (Deficient nutrient) and select the correct answer using the codes given below the lists:\nList-I: A. Scurvy B. Night blindness C. Pernicious anaemia D. Pellagra\nList-II: 1. Vitamin B12 2. Niacin (Vitamin B3) 3. Vitamin C 4. Vitamin A",
-        "options": [
-          "A-4, B-3, C-2, D-1",
-          "A-3, B-4, C-1, D-2",
-          "A-3, B-1, C-4, D-2",
-          "A-2, B-4, C-1, D-3"
-        ],
-        "explanation": "Scurvy results from lack of vitamin C, night blindness from lack of vitamin A, pernicious anaemia from lack of vitamin B12, and pellagra from lack of niacin. Hence the code is A-3, B-4, C-1, D-2.",
-        "notes": [
-          "Wrong: scurvy is due to vitamin C, not vitamin A.",
-          "Correct: Scurvy – C, Night blindness – A, Pernicious anaemia – B12, Pellagra – Niacin.",
-          "Wrong: night blindness is due to vitamin A, not vitamin B12.",
-          "Wrong: scurvy is due to vitamin C, not niacin."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Deficiency diseases",
-          "Vitamin deficiencies"
-        ],
-        "facts": [
-          "Pellagra is called the '3D disease': dermatitis, diarrhoea and dementia.",
-          "Beriberi is caused by deficiency of thiamine (vitamin B1)."
-        ]
-      },
-      "hi": {
-        "q": "सूची-I (रोग) को सूची-II (कमी वाला पोषक तत्व) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. स्कर्वी B. रतौंधी C. प्रणाशी (पर्निशियस) रक्ताल्पता D. पेलाग्रा\nसूची-II: 1. विटामिन B12 2. नियासिन (विटामिन B3) 3. विटामिन C 4. विटामिन A",
-        "options": [
-          "A-4, B-3, C-2, D-1",
-          "A-3, B-4, C-1, D-2",
-          "A-3, B-1, C-4, D-2",
-          "A-2, B-4, C-1, D-3"
-        ],
-        "explanation": "स्कर्वी विटामिन C की कमी से, रतौंधी विटामिन A की कमी से, प्रणाशी रक्ताल्पता विटामिन B12 की कमी से तथा पेलाग्रा नियासिन की कमी से होता है। अतः सही कूट A-3, B-4, C-1, D-2 है।",
-        "notes": [
-          "गलत: स्कर्वी विटामिन C की कमी से होता है, विटामिन A से नहीं।",
-          "सही: स्कर्वी – C, रतौंधी – A, प्रणाशी रक्ताल्पता – B12, पेलाग्रा – नियासिन।",
-          "गलत: रतौंधी विटामिन A की कमी से होती है, विटामिन B12 से नहीं।",
-          "गलत: स्कर्वी विटामिन C की कमी से होता है, नियासिन से नहीं।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "अल्पताजन्य रोग",
-          "विटामिन की कमी"
-        ],
-        "facts": [
-          "पेलाग्रा को '3D रोग' कहते हैं: डर्मेटाइटिस (त्वचाशोथ), डायरिया (दस्त) और डिमेंशिया (मनोभ्रंश)।",
-          "बेरी-बेरी थायमिन (विटामिन B1) की कमी से होता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        }
-      ]
-    },
-    {
-      "id": "health-deficiency-004",
-      "level": "PGT",
-      "answer": 2,
-      "en": {
-        "q": "Consider the following statements:\n1. Kwashiorkor is caused mainly by a deficiency of proteins even when the intake of calories is nearly adequate.\n2. Marasmus is caused by a simultaneous deficiency of proteins and calories.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 1",
-          "Only 2",
-          "Both 1 and 2",
-          "Neither 1 nor 2"
-        ],
-        "explanation": "Kwashiorkor occurs when a child gets a diet with enough calories but too little protein; it shows oedema (swelling) and a swollen abdomen. Marasmus results from a combined shortage of proteins and calories and causes severe wasting of muscle and fat. Both statements are correct.",
-        "notes": [
-          "Incomplete: statement 2 is also correct.",
-          "Incomplete: statement 1 is also correct.",
-          "Correct: both statements describe these protein–energy malnutrition disorders correctly.",
-          "Wrong: both statements are correct."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Malnutrition",
-          "Protein–energy malnutrition"
-        ],
-        "facts": [
-          "Oedema (swelling) of body parts is typical of kwashiorkor, not of marasmus.",
-          "Marasmus usually affects infants below one year when breastfeeding is replaced too early by poor food."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. क्वाशियोरकर मुख्यतः प्रोटीन की कमी से होता है, भले ही कैलोरी का सेवन लगभग पर्याप्त हो।\n2. मरास्मस प्रोटीन और कैलोरी दोनों की एक साथ कमी से होता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
-        "options": [
-          "केवल 1",
-          "केवल 2",
-          "1 और 2 दोनों",
-          "न तो 1 और न ही 2"
-        ],
-        "explanation": "जब बच्चे के आहार में कैलोरी पर्याप्त हो परंतु प्रोटीन बहुत कम हो, तब क्वाशियोरकर होता है; इसमें शरीर में सूजन (शोफ) और पेट फूला हुआ दिखता है। मरास्मस प्रोटीन और कैलोरी दोनों की संयुक्त कमी से होता है, जिसमें पेशियाँ और वसा अत्यधिक क्षीण हो जाती हैं। दोनों कथन सही हैं।",
-        "notes": [
-          "अपूर्ण: कथन 2 भी सही है।",
-          "अपूर्ण: कथन 1 भी सही है।",
-          "सही: दोनों कथन इन प्रोटीन-ऊर्जा कुपोषण विकारों का सही वर्णन करते हैं।",
-          "गलत: दोनों कथन सही हैं।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "कुपोषण",
-          "प्रोटीन-ऊर्जा कुपोषण"
-        ],
-        "facts": [
-          "शरीर के अंगों में सूजन (शोफ) क्वाशियोरकर की विशेषता है, मरास्मस की नहीं।",
-          "मरास्मस प्रायः एक वर्ष से कम आयु के शिशुओं में होता है, जब स्तनपान बहुत पहले छुड़ाकर पोषणहीन आहार दिया जाता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 322
-        },
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 11 Biology, 'Digestion and Absorption' (older edition, box on PEM)"
-        }
-      ]
-    },
-    {
-      "id": "health-deficiency-005",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Assertion (A): Beriberi was widespread among people whose staple food was polished rice.\nReason (R): Polishing removes the outer bran layer and germ of the rice grain, which are rich in thiamine (vitamin B1).\nSelect the correct answer using the codes given below:",
-        "options": [
-          "Both A and R are true, and R is the correct explanation of A",
-          "Both A and R are true, but R is not the correct explanation of A",
-          "A is true, but R is false",
-          "A is false, but R is true"
-        ],
-        "explanation": "Most of the thiamine in rice lies in the bran and germ, which are removed during polishing. A diet based mainly on polished rice therefore lacks vitamin B1, and its deficiency causes beriberi; R correctly explains A.",
-        "notes": [
-          "Correct: loss of thiamine in polishing is exactly why polished-rice eaters developed beriberi.",
-          "Wrong: R is not merely true but is the reason for A.",
-          "Wrong: R is true; the bran and germ are rich in thiamine.",
-          "Wrong: A is true; beriberi was common in polished-rice-eating populations."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Deficiency diseases",
-          "Beriberi"
-        ],
-        "facts": [
-          "Beriberi affects the nervous system and the heart.",
-          "Parboiling rice before milling helps retain thiamine in the grain."
-        ]
-      },
-      "hi": {
-        "q": "कथन (A): जिन लोगों का मुख्य भोजन पॉलिश किया हुआ चावल था, उनमें बेरी-बेरी रोग व्यापक रूप से फैला था।\nकारण (R): पॉलिश करने से चावल के दाने की बाहरी चोकर परत और भ्रूण हट जाते हैं, जो थायमिन (विटामिन B1) से भरपूर होते हैं।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-          "कथन (A) सही है, परंतु कारण (R) गलत है",
-          "कथन (A) गलत है, परंतु कारण (R) सही है"
-        ],
-        "explanation": "चावल का अधिकांश थायमिन उसकी चोकर और भ्रूण में होता है, जो पॉलिश करते समय हट जाते हैं। अतः मुख्यतः पॉलिश किए चावल पर आधारित आहार में विटामिन B1 की कमी होती है, जिससे बेरी-बेरी होता है; (R), (A) की सही व्याख्या है।",
-        "notes": [
-          "सही: पॉलिश में थायमिन का नष्ट होना ही पॉलिश चावल खाने वालों में बेरी-बेरी का कारण था।",
-          "गलत: (R) केवल सही ही नहीं, बल्कि (A) का कारण भी है।",
-          "गलत: (R) सही है; चोकर और भ्रूण थायमिन से भरपूर होते हैं।",
-          "गलत: (A) सही है; पॉलिश चावल खाने वाली आबादी में बेरी-बेरी आम था।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "अल्पताजन्य रोग",
-          "बेरी-बेरी"
-        ],
-        "facts": [
-          "बेरी-बेरी तंत्रिका तंत्र और हृदय को प्रभावित करता है।",
-          "कुटाई से पहले धान को उसनने (पारबॉयलिंग) से दाने में थायमिन बचा रहता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        }
-      ]
-    },
-    {
-      "id": "health-deficiency-006",
-      "level": "Higher",
-      "answer": 3,
-      "en": {
-        "q": "Consider the following statements regarding indicators of undernutrition in children as defined by the World Health Organization:\n1. Stunting means low height-for-age.\n2. Wasting means low weight-for-age.\n3. Underweight means low weight-for-age.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 1",
-          "1 and 2 only",
-          "2 and 3 only",
-          "1 and 3 only"
-        ],
-        "explanation": "WHO defines stunting as low height-for-age, wasting as low weight-for-height and underweight as low weight-for-age. Statement 2 is wrong because low weight-for-age is underweight, not wasting.",
-        "notes": [
-          "Incomplete: statement 3 is also correct.",
-          "Wrong: wasting is low weight-for-height, so statement 2 is false.",
-          "Wrong: statement 2 is false and statement 1 is true.",
-          "Correct: statements 1 and 3 are true; statement 2 is false."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Malnutrition",
-          "Indicators of undernutrition"
-        ],
-        "facts": [
-          "Stunting reflects chronic or recurrent undernutrition.",
-          "Wasting usually indicates recent and severe weight loss."
-        ]
-      },
-      "hi": {
-        "q": "विश्व स्वास्थ्य संगठन द्वारा परिभाषित बच्चों में अल्पपोषण के संकेतकों के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. ठिगनापन (स्टंटिंग) का अर्थ है आयु के अनुपात में कम लंबाई।\n2. दुबलापन (वेस्टिंग) का अर्थ है आयु के अनुपात में कम भार।\n3. अल्पभार (अंडरवेट) का अर्थ है आयु के अनुपात में कम भार।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
-        "options": [
-          "केवल 1",
-          "केवल 1 और 2",
-          "केवल 2 और 3",
-          "केवल 1 और 3"
-        ],
-        "explanation": "विश्व स्वास्थ्य संगठन के अनुसार ठिगनापन आयु के अनुपात में कम लंबाई, दुबलापन लंबाई के अनुपात में कम भार तथा अल्पभार आयु के अनुपात में कम भार है। कथन 2 गलत है, क्योंकि आयु के अनुपात में कम भार अल्पभार है, दुबलापन नहीं।",
-        "notes": [
-          "अपूर्ण: कथन 3 भी सही है।",
-          "गलत: दुबलापन लंबाई के अनुपात में कम भार है, अतः कथन 2 गलत है।",
-          "गलत: कथन 2 गलत है और कथन 1 सही है।",
-          "सही: कथन 1 और 3 सही हैं; कथन 2 गलत है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "कुपोषण",
-          "अल्पपोषण के संकेतक"
-        ],
-        "facts": [
-          "ठिगनापन दीर्घकालिक या बार-बार होने वाले अल्पपोषण को दर्शाता है।",
-          "दुबलापन प्रायः हाल ही में हुई तीव्र भार-हानि को दर्शाता है।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "WHO fact sheet: Malnutrition",
-          "url": "https://www.who.int/news-room/fact-sheets/detail/malnutrition"
-        }
-      ]
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
     }
-  ]
+   ]
+  },
+  {
+   "id": "health-deficiency-002",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Deficiency of which one of the following minerals is the most common cause of anaemia?",
+    "options": [
+     "Iodine",
+     "Calcium",
+     "Sodium",
+     "Iron"
+    ],
+    "explanation": "Iron is an essential part of haemoglobin, the oxygen-carrying pigment of red blood cells. Its deficiency lowers haemoglobin, and the World Health Organization identifies iron deficiency as the most common cause of anaemia.",
+    "notes": [
+     "Iodine: deficiency causes goitre and, in children, impaired growth and mental development.",
+     "Calcium: deficiency weakens bones and teeth.",
+     "Sodium: low sodium disturbs water balance and nerve–muscle function; it is not a cause of anaemia.",
+     "Iron: part of haemoglobin; its deficiency causes iron-deficiency anaemia."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases",
+     "Anaemia"
+    ],
+    "facts": [
+     "Vitamin C improves the absorption of iron from plant foods.",
+     "Anaemia Mukt Bharat is India's programme to reduce anaemia."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किस खनिज की कमी रक्ताल्पता (एनीमिया) का सबसे सामान्य कारण है?",
+    "options": [
+     "आयोडीन",
+     "कैल्सियम",
+     "सोडियम",
+     "लोहा"
+    ],
+    "explanation": "लोहा लाल रक्त कोशिकाओं के ऑक्सीजन-वाहक वर्णक हीमोग्लोबिन का आवश्यक भाग है। इसकी कमी से हीमोग्लोबिन घटता है, और विश्व स्वास्थ्य संगठन के अनुसार लौह की कमी रक्ताल्पता का सबसे सामान्य कारण है।",
+    "notes": [
+     "आयोडीन: कमी से घेंघा तथा बच्चों में वृद्धि व मानसिक विकास बाधित होता है।",
+     "कैल्सियम: कमी से हड्डियाँ और दाँत कमजोर होते हैं।",
+     "सोडियम: कमी से जल-संतुलन तथा तंत्रिका-पेशी कार्य बिगड़ता है; यह रक्ताल्पता का कारण नहीं है।",
+     "लोहा: हीमोग्लोबिन का घटक; इसकी कमी से लौह-अल्पता रक्ताल्पता होती है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग",
+     "रक्ताल्पता"
+    ],
+    "facts": [
+     "विटामिन C वनस्पति खाद्यों से लोहे के अवशोषण को बढ़ाता है।",
+     "एनीमिया मुक्त भारत रक्ताल्पता घटाने का भारत का कार्यक्रम है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "WHO fact sheet: Anaemia",
+     "url": "https://www.who.int/news-room/fact-sheets/detail/anaemia"
+    },
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food' (pre-2024 edition)"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-003",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Pellagra is caused by the deficiency of:",
+    "options": [
+     "Thiamine",
+     "Riboflavin",
+     "Niacin",
+     "Vitamin C"
+    ],
+    "explanation": "Pellagra results from lack of niacin (vitamin B3) and shows dermatitis, diarrhoea and dementia. Scurvy is due to lack of vitamin C and night blindness to lack of vitamin A.",
+    "notes": [
+     "Its deficiency causes beriberi.",
+     "Its deficiency causes cracking at the corners of the mouth.",
+     "Its deficiency causes pellagra, the '3D disease'.",
+     "Its deficiency causes scurvy."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases",
+     "Vitamin deficiencies"
+    ],
+    "facts": [
+     "Pellagra is called the '3D disease': dermatitis, diarrhoea and dementia.",
+     "Beriberi is caused by deficiency of thiamine (vitamin B1)."
+    ]
+   },
+   "hi": {
+    "q": "पेलाग्रा रोग किसकी कमी से होता है?",
+    "options": [
+     "थायमिन",
+     "राइबोफ्लेविन",
+     "नियासिन",
+     "विटामिन C"
+    ],
+    "explanation": "पेलाग्रा नियासिन (विटामिन B3) की कमी से होता है; इसके लक्षण त्वचाशोथ, अतिसार एवं मनोभ्रंश हैं। स्कर्वी विटामिन C की तथा रतौंधी विटामिन A की कमी से होती है।",
+    "notes": [
+     "इसकी कमी से बेरी-बेरी होता है।",
+     "इसकी कमी से मुँह के कोने फटते हैं।",
+     "इसकी कमी से पेलाग्रा ('3D रोग') होता है।",
+     "इसकी कमी से स्कर्वी होता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग",
+     "विटामिन की कमी"
+    ],
+    "facts": [
+     "पेलाग्रा को '3D रोग' कहते हैं: डर्मेटाइटिस (त्वचाशोथ), डायरिया (दस्त) और डिमेंशिया (मनोभ्रंश)।",
+     "बेरी-बेरी थायमिन (विटामिन B1) की कमी से होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 323
+    },
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-004",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Oedema (swelling) of the body is a characteristic symptom of:",
+    "options": [
+     "Marasmus",
+     "Kwashiorkor",
+     "Rickets",
+     "Scurvy"
+    ],
+    "explanation": "Kwashiorkor occurs when the diet has enough calories but too little protein and shows oedema. Marasmus results from a shortage of both proteins and calories.",
+    "notes": [
+     "Shows severe wasting of muscle and fat, without oedema.",
+     "Caused mainly by protein deficiency; shows oedema and a swollen abdomen.",
+     "Shows soft and bent bones in children.",
+     "Shows bleeding gums."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition",
+     "Protein–energy malnutrition"
+    ],
+    "facts": [
+     "Oedema (swelling) of body parts is typical of kwashiorkor, not of marasmus.",
+     "Marasmus usually affects infants below one year when breastfeeding is replaced too early by poor food."
+    ]
+   },
+   "hi": {
+    "q": "शरीर में शोथ (सूजन) किस रोग का विशिष्ट लक्षण है?",
+    "options": [
+     "मरास्मस",
+     "क्वाशियोरकर",
+     "रिकेट्स",
+     "स्कर्वी"
+    ],
+    "explanation": "क्वाशियोरकर तब होता है, जब आहार में कैलोरी पर्याप्त, किंतु प्रोटीन कम हो; इसमें सूजन आती है। मरास्मस प्रोटीन एवं कैलोरी दोनों की कमी से होता है।",
+    "notes": [
+     "इसमें पेशियों एवं वसा का अत्यधिक क्षय होता है, सूजन नहीं होती।",
+     "मुख्यतः प्रोटीन की कमी से होता है; इसमें सूजन एवं फूला हुआ पेट होता है।",
+     "इसमें बच्चों की हड्डियाँ मुलायम एवं टेढ़ी हो जाती हैं।",
+     "इसमें मसूड़ों से रक्त आता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण",
+     "प्रोटीन-ऊर्जा कुपोषण"
+    ],
+    "facts": [
+     "शरीर के अंगों में सूजन (शोफ) क्वाशियोरकर की विशेषता है, मरास्मस की नहीं।",
+     "मरास्मस प्रायः एक वर्ष से कम आयु के शिशुओं में होता है, जब स्तनपान बहुत पहले छुड़ाकर पोषणहीन आहार दिया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 322
+    },
+    {
+     "book": "fatman",
+     "page": 323
+    },
+    {
+     "source": "NCERT Class 11 Biology, 'Digestion and Absorption' (older edition, box on PEM)"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-005",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Beriberi is common among people who eat mainly polished rice because polishing removes:",
+    "options": [
+     "The thiamine-rich bran and germ",
+     "The starch of the grain",
+     "The protein of the endosperm",
+     "The fat of the husk"
+    ],
+    "explanation": "Most of the thiamine (vitamin B1) in rice lies in the bran and germ, which polishing removes. Lack of thiamine causes beriberi, which affects the nerves and the heart.",
+    "notes": [
+     "Most of the vitamin B1 of rice lies in these outer parts.",
+     "Starch remains in polished rice.",
+     "The endosperm is retained after polishing.",
+     "Not the cause of beriberi."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases",
+     "Beriberi"
+    ],
+    "facts": [
+     "Beriberi affects the nervous system and the heart.",
+     "Parboiling rice before milling helps retain thiamine in the grain."
+    ]
+   },
+   "hi": {
+    "q": "मुख्यतः पॉलिश किया हुआ चावल खाने वालों में बेरी-बेरी रोग सामान्य है, क्योंकि पॉलिश करने से क्या निकल जाता है?",
+    "options": [
+     "थायमिन से भरपूर चोकर एवं भ्रूण",
+     "दाने का स्टार्च",
+     "भ्रूणपोष का प्रोटीन",
+     "भूसी की वसा"
+    ],
+    "explanation": "चावल का अधिकांश थायमिन (विटामिन B1) चोकर एवं भ्रूण में होता है, जो पॉलिश करने से निकल जाते हैं। थायमिन की कमी से बेरी-बेरी होता है, जो तंत्रिकाओं एवं हृदय को प्रभावित करता है।",
+    "notes": [
+     "चावल का अधिकांश विटामिन B1 इन्हीं बाहरी भागों में होता है।",
+     "पॉलिश किए चावल में स्टार्च बना रहता है।",
+     "पॉलिश के बाद भ्रूणपोष बना रहता है।",
+     "यह बेरी-बेरी का कारण नहीं है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग",
+     "बेरी-बेरी"
+    ],
+    "facts": [
+     "बेरी-बेरी तंत्रिका तंत्र और हृदय को प्रभावित करता है।",
+     "कुटाई से पहले धान को उसनने (पारबॉयलिंग) से दाने में थायमिन बचा रहता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 323
+    },
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-006",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "According to the World Health Organization, 'stunting' in children means low:",
+    "options": [
+     "Weight-for-height",
+     "Weight-for-age",
+     "Body mass index",
+     "Height-for-age"
+    ],
+    "explanation": "WHO defines stunting as low height-for-age, wasting as low weight-for-height and underweight as low weight-for-age.",
+    "notes": [
+     "This is called wasting.",
+     "This is called underweight.",
+     "Not the WHO definition of stunting.",
+     "Stunting reflects chronic or recurrent undernutrition."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition",
+     "Indicators of undernutrition"
+    ],
+    "facts": [
+     "Stunting reflects chronic or recurrent undernutrition.",
+     "Wasting usually indicates recent and severe weight loss."
+    ]
+   },
+   "hi": {
+    "q": "विश्व स्वास्थ्य संगठन के अनुसार बच्चों में 'ठिगनापन' (स्टंटिंग) का अर्थ क्या है?",
+    "options": [
+     "लंबाई के अनुपात में कम वजन",
+     "आयु के अनुपात में कम वजन",
+     "कम शरीर द्रव्यमान सूचकांक",
+     "आयु के अनुपात में कम लंबाई"
+    ],
+    "explanation": "विश्व स्वास्थ्य संगठन के अनुसार आयु के अनुपात में कम लंबाई ठिगनापन, लंबाई के अनुपात में कम वजन दुबलापन तथा आयु के अनुपात में कम वजन अल्पवजन है।",
+    "notes": [
+     "इसे दुबलापन (वेस्टिंग) कहते हैं।",
+     "इसे अल्पवजन कहते हैं।",
+     "यह स्टंटिंग की परिभाषा नहीं है।",
+     "ठिगनापन दीर्घकालिक अथवा बार-बार के कुपोषण को दर्शाता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण",
+     "अल्पपोषण के संकेतक"
+    ],
+    "facts": [
+     "ठिगनापन दीर्घकालिक या बार-बार होने वाले अल्पपोषण को दर्शाता है।",
+     "दुबलापन प्रायः हाल ही में हुई तीव्र भार-हानि को दर्शाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "WHO fact sheet: Malnutrition",
+     "url": "https://www.who.int/news-room/fact-sheets/detail/malnutrition"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "A diet that provides all the nutrients in the right amounts and proportions is called a:",
+    "options": [
+     "Balanced diet",
+     "Staple diet",
+     "Liquid diet",
+     "Fad diet"
+    ],
+    "explanation": "A balanced diet contains carbohydrates, proteins, fats, vitamins, minerals, roughage and water in the amounts needed for the proper growth and working of the body.",
+    "notes": [
+     "It also includes enough roughage and water.",
+     "A staple diet is the main food eaten regularly in a region.",
+     "A liquid diet is given to some patients.",
+     "A fad diet follows a passing fashion."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Balanced diet"
+    ],
+    "facts": [
+     "The needs of a person vary with age, sex and the kind of work done.",
+     "No single food contains all the nutrients."
+    ]
+   },
+   "hi": {
+    "q": "जिस आहार में सभी पोषक तत्व उचित मात्रा एवं अनुपात में हों, उसे क्या कहते हैं?",
+    "options": [
+     "संतुलित आहार",
+     "मुख्य आहार",
+     "तरल आहार",
+     "फैड आहार"
+    ],
+    "explanation": "संतुलित आहार में कार्बोहाइड्रेट, प्रोटीन, वसा, विटामिन, खनिज, रुक्षांश एवं जल उतनी मात्रा में होते हैं, जितनी शरीर की उचित वृद्धि एवं कार्य के लिए चाहिए।",
+    "notes": [
+     "इसमें पर्याप्त रुक्षांश एवं जल भी होता है।",
+     "मुख्य आहार किसी क्षेत्र में नियमित खाया जाने वाला प्रमुख भोजन है।",
+     "तरल आहार कुछ रोगियों को दिया जाता है।",
+     "फैड आहार क्षणिक चलन पर आधारित होता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "संतुलित आहार"
+    ],
+    "facts": [
+     "व्यक्ति की आवश्यकता आयु, लिंग एवं कार्य के प्रकार के अनुसार बदलती है।",
+     "किसी एक खाद्य पदार्थ में सभी पोषक तत्व नहीं होते।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food'"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which nutrient gives the most energy per gram?",
+    "options": [
+     "Carbohydrates",
+     "Fats",
+     "Proteins",
+     "Vitamins"
+    ],
+    "explanation": "One gram of fat yields about 9 kilocalories, more than twice the energy given by one gram of carbohydrate or protein (about 4 kilocalories each).",
+    "notes": [
+     "Carbohydrates give about 4 kilocalories per gram.",
+     "Fats give about 9 kilocalories per gram.",
+     "Proteins give about 4 kilocalories per gram.",
+     "Vitamins do not supply energy."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Balanced diet"
+    ],
+    "facts": [
+     "Carbohydrates are the main source of energy in the Indian diet.",
+     "Fats also help in the absorption of some vitamins."
+    ]
+   },
+   "hi": {
+    "q": "कौन-सा पोषक तत्व प्रति ग्राम सर्वाधिक ऊर्जा देता है?",
+    "options": [
+     "कार्बोहाइड्रेट",
+     "वसा",
+     "प्रोटीन",
+     "विटामिन"
+    ],
+    "explanation": "एक ग्राम वसा से लगभग 9 किलोकैलोरी मिलती है, जो एक ग्राम कार्बोहाइड्रेट या प्रोटीन (प्रत्येक लगभग 4 किलोकैलोरी) से मिलने वाली ऊर्जा के दुगुने से अधिक है।",
+    "notes": [
+     "कार्बोहाइड्रेट प्रति ग्राम लगभग 4 किलोकैलोरी देते हैं।",
+     "वसा प्रति ग्राम लगभग 9 किलोकैलोरी देती है।",
+     "प्रोटीन प्रति ग्राम लगभग 4 किलोकैलोरी देते हैं।",
+     "विटामिन ऊर्जा नहीं देते।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "संतुलित आहार"
+    ],
+    "facts": [
+     "भारतीय आहार में कार्बोहाइड्रेट ऊर्जा का मुख्य स्रोत हैं।",
+     "वसा कुछ विटामिनों के अवशोषण में भी सहायक है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food'"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "On which part of the eye do 'Bitot's spots' appear?",
+    "options": [
+     "Retina",
+     "Lens",
+     "Conjunctiva",
+     "Iris"
+    ],
+    "explanation": "Bitot's spots are dry, greyish, foamy patches on the conjunctiva over the white of the eye. They are a sign of xerophthalmia due to vitamin A deficiency; if it is not treated, the cornea may soften (keratomalacia) and blindness may follow.",
+    "notes": [
+     "The light-sensitive inner layer of the eye that contains the rods and cones.",
+     "Clouding of the lens causes cataract.",
+     "The thin membrane over the white of the eye; the spots are greyish, foamy patches on it.",
+     "The coloured part of the eye that controls the size of the pupil."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases"
+    ],
+    "facts": [
+     "Children in India are given vitamin A doses every six months up to five years of age.",
+     "Yellow and orange fruits are rich in carotene."
+    ]
+   },
+   "hi": {
+    "q": "'बिटॉट के धब्बे' आँख के किस भाग पर दिखाई देते हैं?",
+    "options": [
+     "दृष्टिपटल (रेटिना)",
+     "लेंस",
+     "नेत्रश्लेष्मला (कंजंक्टाइवा)",
+     "परितारिका (आइरिस)"
+    ],
+    "explanation": "बिटॉट के धब्बे आँख के सफेद भाग पर नेत्रश्लेष्मला के सूखे, धूसर, झागदार धब्बे हैं। ये विटामिन A की कमी से होने वाले जीरोफ्थैल्मिया के लक्षण हैं; उपचार न होने पर कॉर्निया नरम हो सकता है (केराटोमलेशिया) और अंधापन हो सकता है।",
+    "notes": [
+     "आँख की भीतरी प्रकाश-संवेदी परत, जिसमें शलाका एवं शंकु कोशिकाएँ होती हैं।",
+     "लेंस के धुँधला होने से मोतियाबिंद होता है।",
+     "आँख के सफेद भाग पर की पतली झिल्ली; ये धब्बे इसी पर धूसर, झागदार चकत्तों के रूप में होते हैं।",
+     "आँख का रंगीन भाग, जो पुतली का आकार नियंत्रित करता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग"
+    ],
+    "facts": [
+     "भारत में बच्चों को पाँच वर्ष की आयु तक प्रत्येक छह माह में विटामिन A की खुराक दी जाती है।",
+     "पीले एवं नारंगी फल कैरोटीन से समृद्ध होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "World Health Organization – Vitamin A deficiency (xerophthalmia)",
+     "url": "https://www.who.int/data/nutrition/nlis/info/vitamin-a-deficiency"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Roughage (dietary fibre) is an important part of the diet mainly because it:",
+    "options": [
+     "Supplies energy to the body",
+     "Builds the muscles",
+     "Provides vitamins",
+     "Adds bulk to the food and prevents constipation"
+    ],
+    "explanation": "Roughage consists mainly of cellulose, which human beings cannot digest. It adds bulk to the food, retains water and helps the bowels to move, thus preventing constipation.",
+    "notes": [
+     "Roughage gives almost no energy.",
+     "Roughage is not digested, so it cannot be used to build body tissues.",
+     "Roughage is not a source of vitamins.",
+     "It helps the food to move through the intestine."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Balanced diet"
+    ],
+    "facts": [
+     "Whole grains, fruits and vegetables are rich in roughage.",
+     "A diet rich in fibre is linked with a lower risk of heart disease."
+    ]
+   },
+   "hi": {
+    "q": "रुक्षांश (आहारीय रेशा) आहार का महत्वपूर्ण भाग मुख्यतः इसलिए है कि यह:",
+    "options": [
+     "शरीर को ऊर्जा देता है",
+     "पेशियों का निर्माण करता है",
+     "विटामिन देता है",
+     "भोजन को आयतन देता है और कब्ज रोकता है"
+    ],
+    "explanation": "रुक्षांश में मुख्यतः सेलुलोज होता है, जिसे मनुष्य पचा नहीं सकता। यह भोजन को आयतन देता है, जल रोके रखता है और मल त्याग में सहायक होकर कब्ज रोकता है।",
+    "notes": [
+     "रुक्षांश लगभग कोई ऊर्जा नहीं देता।",
+     "रुक्षांश पचता नहीं, अतः यह शरीर के ऊतकों के निर्माण में काम नहीं आता।",
+     "रुक्षांश विटामिन का स्रोत नहीं है।",
+     "यह भोजन को आँत में आगे बढ़ने में सहायता करता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "संतुलित आहार"
+    ],
+    "facts": [
+     "साबुत अनाज, फल एवं सब्जियाँ रुक्षांश से समृद्ध हैं।",
+     "रेशे से समृद्ध आहार का संबंध हृदय रोग के कम जोखिम से है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food'"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which nutrient is needed mainly for the growth and repair of the tissues of the body?",
+    "options": [
+     "Proteins",
+     "Carbohydrates",
+     "Fats",
+     "Roughage"
+    ],
+    "explanation": "Proteins are made of amino acids and are needed for the growth of the body and the repair of worn-out tissues. Pulses, milk, eggs, fish and meat are rich in proteins.",
+    "notes": [
+     "They are called body-building foods.",
+     "Carbohydrates mainly supply energy.",
+     "Fats supply energy and are stored as a reserve.",
+     "Roughage is mainly cellulose, which human beings cannot digest."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Balanced diet"
+    ],
+    "facts": [
+     "Soyabean is among the richest plant sources of protein.",
+     "Children, pregnant women and nursing mothers need more protein."
+    ]
+   },
+   "hi": {
+    "q": "शरीर के ऊतकों की वृद्धि एवं मरम्मत के लिए मुख्यतः कौन-सा पोषक तत्व आवश्यक है?",
+    "options": [
+     "प्रोटीन",
+     "कार्बोहाइड्रेट",
+     "वसा",
+     "रुक्षांश"
+    ],
+    "explanation": "प्रोटीन ऐमीनो अम्लों से बने होते हैं और शरीर की वृद्धि तथा घिसे ऊतकों की मरम्मत के लिए आवश्यक हैं। दालें, दूध, अंडे, मछली एवं मांस प्रोटीन से समृद्ध हैं।",
+    "notes": [
+     "इन्हें शरीर निर्माणकारी भोजन कहते हैं।",
+     "कार्बोहाइड्रेट मुख्यतः ऊर्जा देते हैं।",
+     "वसा ऊर्जा देती है और संचित भंडार के रूप में रहती है।",
+     "रुक्षांश मुख्यतः सेलुलोज है, जिसे मनुष्य पचा नहीं सकता।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "संतुलित आहार"
+    ],
+    "facts": [
+     "सोयाबीन प्रोटीन के सबसे समृद्ध पादप स्रोतों में है।",
+     "बच्चों, गर्भवती महिलाओं एवं दूध पिलाने वाली माताओं को अधिक प्रोटीन चाहिए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food'"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "National Nutrition Week is observed in India every year from:",
+    "options": [
+     "1 to 7 August",
+     "1 to 7 September",
+     "14 to 20 November",
+     "1 to 7 April"
+    ],
+    "explanation": "National Nutrition Week is observed from 1 to 7 September every year to spread awareness of good nutrition. The whole of September is observed as Poshan Maah.",
+    "notes": [
+     "World Breastfeeding Week is observed from 1 to 7 August.",
+     "It has been observed since 1982.",
+     "Children's Day falls on 14 November.",
+     "World Health Day falls on 7 April."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition"
+    ],
+    "facts": [
+     "The week is organised by the Ministry of Women and Child Development.",
+     "The first 1,000 days of a child's life are the most important for nutrition."
+    ]
+   },
+   "hi": {
+    "q": "भारत में राष्ट्रीय पोषण सप्ताह प्रतिवर्ष कब मनाया जाता है?",
+    "options": [
+     "1 से 7 अगस्त",
+     "1 से 7 सितंबर",
+     "14 से 20 नवंबर",
+     "1 से 7 अप्रैल"
+    ],
+    "explanation": "राष्ट्रीय पोषण सप्ताह प्रतिवर्ष 1 से 7 सितंबर तक अच्छे पोषण के प्रति जागरूकता के लिए मनाया जाता है। पूरा सितंबर माह पोषण माह के रूप में मनाया जाता है।",
+    "notes": [
+     "विश्व स्तनपान सप्ताह 1 से 7 अगस्त तक मनाया जाता है।",
+     "यह 1982 से मनाया जा रहा है।",
+     "बाल दिवस 14 नवंबर को होता है।",
+     "विश्व स्वास्थ्य दिवस 7 अप्रैल को होता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण"
+    ],
+    "facts": [
+     "यह सप्ताह महिला एवं बाल विकास मंत्रालय आयोजित करता है।",
+     "पोषण के लिए बच्चे के जीवन के पहले 1,000 दिन सबसे महत्वपूर्ण हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Women and Child Development – Poshan Abhiyaan",
+     "url": "https://poshanabhiyaan.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-013",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The Integrated Child Development Services (ICDS) scheme, which runs the anganwadi centres, was launched in:",
+    "options": [
+     "1952",
+     "1961",
+     "1975",
+     "1995"
+    ],
+    "explanation": "The ICDS scheme was launched on 2 October 1975. Through the anganwadi centres it gives supplementary nutrition, immunisation, health check-ups and pre-school education to children below six years and to pregnant and nursing mothers.",
+    "notes": [
+     "The Community Development Programme began in 1952.",
+     "The scheme did not exist in 1961.",
+     "It began on 2 October 1975.",
+     "The national mid-day meal scheme began in 1995."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition"
+    ],
+    "facts": [
+     "The scheme now forms part of Saksham Anganwadi and Poshan 2.0.",
+     "An anganwadi worker runs each centre."
+    ]
+   },
+   "hi": {
+    "q": "आँगनवाड़ी केंद्र चलाने वाली समेकित बाल विकास सेवा (आईसीडीएस) योजना कब आरंभ हुई?",
+    "options": [
+     "1952",
+     "1961",
+     "1975",
+     "1995"
+    ],
+    "explanation": "आईसीडीएस योजना 2 अक्टूबर 1975 को आरंभ हुई। यह आँगनवाड़ी केंद्रों के माध्यम से छह वर्ष से कम आयु के बच्चों तथा गर्भवती एवं दूध पिलाने वाली माताओं को पूरक पोषण, टीकाकरण, स्वास्थ्य जाँच एवं पूर्व-विद्यालयी शिक्षा देती है।",
+    "notes": [
+     "सामुदायिक विकास कार्यक्रम 1952 में आरंभ हुआ।",
+     "1961 में यह योजना नहीं थी।",
+     "यह 2 अक्टूबर 1975 को आरंभ हुई।",
+     "राष्ट्रीय मध्याह्न भोजन योजना 1995 में आरंभ हुई।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण"
+    ],
+    "facts": [
+     "यह योजना अब सक्षम आँगनवाड़ी एवं पोषण 2.0 का भाग है।",
+     "प्रत्येक केंद्र एक आँगनवाड़ी कार्यकर्ता चलाती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Women and Child Development – Integrated Child Development Services",
+     "url": "https://wcd.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-014",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Severe deficiency of iodine in the mother during pregnancy can cause in the child a condition of stunted growth and mental retardation called:",
+    "options": [
+     "Acromegaly",
+     "Gigantism",
+     "Myxoedema",
+     "Cretinism"
+    ],
+    "explanation": "Iodine is needed to make the thyroid hormone thyroxine. When a mother is severely deficient in iodine, the child may be born with cretinism, marked by stunted growth and mental retardation.",
+    "notes": [
+     "Acromegaly is due to excess growth hormone in adults.",
+     "Gigantism is due to excess growth hormone in childhood.",
+     "Myxoedema is due to a deficiency of thyroid hormone in adults.",
+     "The child's thyroid gland cannot make enough thyroxine."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases"
+    ],
+    "facts": [
+     "Iodised salt is the simplest way to prevent iodine deficiency disorders.",
+     "The sub-Himalayan region was long known as a goitre belt."
+    ]
+   },
+   "hi": {
+    "q": "गर्भावस्था में माता में आयोडीन की गंभीर कमी से शिशु में अवरुद्ध वृद्धि एवं मानसिक मंदता की कौन-सी दशा हो सकती है?",
+    "options": [
+     "एक्रोमेगली",
+     "महाकायता",
+     "मिक्सीडिमा",
+     "क्रेटिनिज्म (अवटुवामनता)"
+    ],
+    "explanation": "थायरॉइड हार्मोन थायरॉक्सिन बनाने के लिए आयोडीन आवश्यक है। माता में आयोडीन की गंभीर कमी होने पर शिशु क्रेटिनिज्म के साथ जन्म ले सकता है, जिसकी पहचान अवरुद्ध वृद्धि एवं मानसिक मंदता है।",
+    "notes": [
+     "एक्रोमेगली वयस्कों में वृद्धि हार्मोन की अधिकता से होती है।",
+     "महाकायता बाल्यावस्था में वृद्धि हार्मोन की अधिकता से होती है।",
+     "मिक्सीडिमा वयस्कों में थायरॉइड हार्मोन की कमी से होता है।",
+     "शिशु की थायरॉइड ग्रंथि पर्याप्त थायरॉक्सिन नहीं बना पाती।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग"
+    ],
+    "facts": [
+     "आयोडीन युक्त नमक आयोडीन अल्पता विकारों की रोकथाम का सबसे सरल उपाय है।",
+     "उप-हिमालयी क्षेत्र लंबे समय तक घेंघा पट्टी के रूप में जाना जाता था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food'"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Megaloblastic anaemia, in which the red blood cells are abnormally large and immature, is caused by the deficiency of:",
+    "options": [
+     "Folic acid",
+     "Vitamin C",
+     "Vitamin K",
+     "Niacin"
+    ],
+    "explanation": "Folic acid is needed for the formation of DNA. When it is lacking, the red cell precursors in the bone marrow cannot divide properly and large, immature red cells (megaloblasts) are formed. A deficiency of vitamin B12 also causes megaloblastic anaemia.",
+    "notes": [
+     "Folic acid is needed for the synthesis of DNA in dividing cells.",
+     "Lack of vitamin C causes bleeding gums.",
+     "Lack of vitamin K delays the clotting of blood.",
+     "Lack of niacin affects the skin, the gut and the nervous system."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases"
+    ],
+    "facts": [
+     "Pregnant women need extra folic acid.",
+     "Green leafy vegetables are a good source of folic acid."
+    ]
+   },
+   "hi": {
+    "q": "मेगालोब्लास्टिक रक्ताल्पता, जिसमें लाल रक्त कोशिकाएँ असामान्य रूप से बड़ी एवं अपरिपक्व होती हैं, किसकी कमी से होती है?",
+    "options": [
+     "फोलिक अम्ल",
+     "विटामिन C",
+     "विटामिन K",
+     "नियासिन"
+    ],
+    "explanation": "डीएनए के निर्माण के लिए फोलिक अम्ल आवश्यक है। इसकी कमी होने पर अस्थि मज्जा में लाल कोशिकाओं की पूर्ववर्ती कोशिकाएँ ठीक से विभाजित नहीं हो पातीं और बड़ी, अपरिपक्व लाल कोशिकाएँ (मेगालोब्लास्ट) बनती हैं। विटामिन B12 की कमी से भी मेगालोब्लास्टिक रक्ताल्पता होती है।",
+    "notes": [
+     "विभाजित होती कोशिकाओं में डीएनए के संश्लेषण के लिए फोलिक अम्ल आवश्यक है।",
+     "विटामिन C की कमी से मसूड़ों से रक्त आता है।",
+     "विटामिन K की कमी से रक्त का थक्का देर से बनता है।",
+     "नियासिन की कमी त्वचा, आँत एवं तंत्रिका तंत्र को प्रभावित करती है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग"
+    ],
+    "facts": [
+     "गर्भवती महिलाओं को अतिरिक्त फोलिक अम्ल चाहिए।",
+     "हरी पत्तेदार सब्जियाँ फोलिक अम्ल का अच्छा स्रोत हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food'"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "According to the World Health Organization, an adult is classed as obese when the body mass index (BMI) is:",
+    "options": [
+     "Below 18.5",
+     "30 or above",
+     "Between 18.5 and 24.9",
+     "Between 25 and 29.9"
+    ],
+    "explanation": "The World Health Organization classes adults with a BMI below 18.5 as underweight, 18.5 to 24.9 as normal, 25 to 29.9 as overweight and 30 or above as obese.",
+    "notes": [
+     "A BMI below 18.5 means underweight.",
+     "BMI is weight in kilograms divided by the square of the height in metres.",
+     "This is the normal range.",
+     "This range is called overweight, or pre-obesity."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition"
+    ],
+    "facts": [
+     "Lower cut-offs are advised for Asian populations.",
+     "Obesity raises the risk of diabetes and heart disease."
+    ]
+   },
+   "hi": {
+    "q": "विश्व स्वास्थ्य संगठन के अनुसार वयस्क को मोटापे से ग्रस्त तब माना जाता है, जब बॉडी मास इंडेक्स (बीएमआई) कितना हो?",
+    "options": [
+     "18.5 से कम",
+     "30 या अधिक",
+     "18.5 से 24.9 के बीच",
+     "25 से 29.9 के बीच"
+    ],
+    "explanation": "विश्व स्वास्थ्य संगठन 18.5 से कम बीएमआई वाले वयस्कों को अल्प भार, 18.5 से 24.9 को सामान्य, 25 से 29.9 को अधिक भार तथा 30 या अधिक को मोटापे से ग्रस्त मानता है।",
+    "notes": [
+     "18.5 से कम बीएमआई का अर्थ अल्प भार है।",
+     "बीएमआई किलोग्राम में भार को मीटर में ऊँचाई के वर्ग से भाग देने पर मिलता है।",
+     "यह सामान्य सीमा है।",
+     "इस सीमा को अधिक भार या पूर्व-मोटापा कहते हैं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण"
+    ],
+    "facts": [
+     "एशियाई जनसंख्या के लिए कम सीमाओं की सलाह दी जाती है।",
+     "मोटापा मधुमेह एवं हृदय रोग का जोखिम बढ़ाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "World Health Organization – Obesity and overweight (fact sheet)",
+     "url": "https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The term 'hidden hunger' refers to:",
+    "options": [
+     "Hunger suffered during a famine",
+     "Loss of appetite during an illness",
+     "A deficiency of vitamins and minerals in a diet that may supply enough calories",
+     "Hunger caused by religious fasting"
+    ],
+    "explanation": "Hidden hunger is the deficiency of micronutrients such as iron, iodine, zinc and vitamin A. It may exist even when a person eats enough food to meet the need for energy, and so it often goes unnoticed.",
+    "notes": [
+     "Famine causes open hunger, not hidden hunger.",
+     "Loss of appetite is a symptom of illness.",
+     "The person may not feel hungry, but the body lacks micronutrients.",
+     "Fasting is voluntary and for a short time."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition"
+    ],
+    "facts": [
+     "Food fortification and a varied diet are the main ways of fighting hidden hunger.",
+     "Iron deficiency is its most common form."
+    ]
+   },
+   "hi": {
+    "q": "'छिपी भूख' (हिडन हंगर) पद से क्या आशय है?",
+    "options": [
+     "अकाल के समय की भूख",
+     "रोग के समय भूख न लगना",
+     "ऐसे आहार में विटामिन एवं खनिजों की कमी, जो पर्याप्त कैलोरी दे सकता है",
+     "धार्मिक उपवास से उत्पन्न भूख"
+    ],
+    "explanation": "छिपी भूख लौह, आयोडीन, जिंक एवं विटामिन A जैसे सूक्ष्म पोषक तत्वों की कमी है। यह तब भी हो सकती है, जब व्यक्ति ऊर्जा की आवश्यकता भर भोजन करता हो, अतः प्रायः इस पर ध्यान नहीं जाता।",
+    "notes": [
+     "अकाल से प्रत्यक्ष भूख होती है, छिपी भूख नहीं।",
+     "भूख न लगना रोग का लक्षण है।",
+     "व्यक्ति को भूख भले न लगे, किंतु शरीर में सूक्ष्म पोषक तत्वों की कमी होती है।",
+     "उपवास स्वैच्छिक एवं अल्पकालीन होता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण"
+    ],
+    "facts": [
+     "खाद्य पुष्टीकरण एवं विविध आहार छिपी भूख से लड़ने के मुख्य उपाय हैं।",
+     "लौह की कमी इसका सबसे सामान्य रूप है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 6 Science, 'Components of Food'"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-018",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "POSHAN Abhiyaan (the National Nutrition Mission) was launched by the Prime Minister on 8 March 2018 from:",
+    "options": [
+     "Varanasi",
+     "Ranchi",
+     "Panipat",
+     "Jhunjhunu"
+    ],
+    "explanation": "POSHAN Abhiyaan was launched at Jhunjhunu in Rajasthan on 8 March 2018, International Women's Day. It aims to reduce stunting, undernutrition, anaemia and low birth weight.",
+    "notes": [
+     "The mission was not launched from Varanasi.",
+     "Ayushman Bharat was launched from Ranchi in 2018.",
+     "Beti Bachao Beti Padhao was launched from Panipat in 2015.",
+     "Jhunjhunu is in Rajasthan."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition"
+    ],
+    "facts": [
+     "POSHAN stands for Prime Minister's Overarching Scheme for Holistic Nourishment.",
+     "The mission uses the Poshan Tracker application to monitor services."
+    ]
+   },
+   "hi": {
+    "q": "पोषण अभियान (राष्ट्रीय पोषण मिशन) का शुभारंभ प्रधानमंत्री ने 8 मार्च 2018 को कहाँ से किया?",
+    "options": [
+     "वाराणसी",
+     "राँची",
+     "पानीपत",
+     "झुंझुनू"
+    ],
+    "explanation": "पोषण अभियान 8 मार्च 2018 को, अंतर्राष्ट्रीय महिला दिवस पर, राजस्थान के झुंझुनू से आरंभ हुआ। इसका लक्ष्य बौनापन, अल्प पोषण, रक्ताल्पता एवं जन्म के समय कम भार को घटाना है।",
+    "notes": [
+     "मिशन वाराणसी से आरंभ नहीं हुआ।",
+     "आयुष्मान भारत 2018 में राँची से आरंभ हुआ।",
+     "बेटी बचाओ बेटी पढ़ाओ 2015 में पानीपत से आरंभ हुआ।",
+     "झुंझुनू राजस्थान में है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण"
+    ],
+    "facts": [
+     "POSHAN का पूर्ण रूप प्राइम मिनिस्टर्स ओवरआर्चिंग स्कीम फॉर होलिस्टिक नरिशमेंट है।",
+     "मिशन सेवाओं की निगरानी के लिए पोषण ट्रैकर एप का उपयोग करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Women and Child Development – Poshan Abhiyaan",
+     "url": "https://poshanabhiyaan.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-019",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "'Double fortified salt' is common salt that has been fortified with:",
+    "options": [
+     "Iodine and calcium",
+     "Iodine and iron",
+     "Iron and zinc",
+     "Vitamin A and vitamin D"
+    ],
+    "explanation": "Double fortified salt contains both iodine and iron, so that one food item helps to prevent iodine deficiency disorders and iron deficiency anaemia together.",
+    "notes": [
+     "Calcium is not added to this salt.",
+     "It is meant to fight both goitre and anaemia.",
+     "Zinc is not added to this salt.",
+     "These vitamins are added to edible oil and milk, not to salt."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Malnutrition"
+    ],
+    "facts": [
+     "The technology was developed by the National Institute of Nutrition, Hyderabad.",
+     "Fortified foods in India carry the '+F' logo."
+    ]
+   },
+   "hi": {
+    "q": "'दोहरा पुष्टीकृत नमक' ऐसा साधारण नमक है, जिसमें क्या मिलाया गया है?",
+    "options": [
+     "आयोडीन एवं कैल्शियम",
+     "आयोडीन एवं लौह",
+     "लौह एवं जिंक",
+     "विटामिन A एवं विटामिन D"
+    ],
+    "explanation": "दोहरे पुष्टीकृत नमक में आयोडीन एवं लौह दोनों होते हैं, जिससे एक ही खाद्य पदार्थ आयोडीन अल्पता विकारों एवं लौह अल्पता रक्ताल्पता दोनों की रोकथाम में सहायक होता है।",
+    "notes": [
+     "इस नमक में कैल्शियम नहीं मिलाया जाता।",
+     "इसका उद्देश्य घेंघा एवं रक्ताल्पता दोनों से लड़ना है।",
+     "इस नमक में जिंक नहीं मिलाया जाता।",
+     "ये विटामिन खाद्य तेल एवं दूध में मिलाए जाते हैं, नमक में नहीं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "कुपोषण"
+    ],
+    "facts": [
+     "यह तकनीक राष्ट्रीय पोषण संस्थान, हैदराबाद ने विकसित की।",
+     "भारत में पुष्टीकृत खाद्य पदार्थों पर '+F' चिह्न होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Food Safety and Standards Authority of India – food fortification",
+     "url": "https://fortification.fssai.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-deficiency-020",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "A deficiency of zinc in young children typically leads to:",
+    "options": [
+     "Bleeding of the gums",
+     "Bowing of the legs",
+     "Retarded growth and frequent diarrhoea",
+     "Enlargement of the thyroid gland"
+    ],
+    "explanation": "Zinc is a component of many enzymes and is needed for growth and for immunity. Its deficiency in children causes poor growth, loss of appetite, delayed healing of wounds and repeated diarrhoea.",
+    "notes": [
+     "Bleeding gums are a sign of a lack of vitamin C.",
+     "Bowing of the legs results from softening of the bones in childhood.",
+     "Zinc is needed for growth, immunity and the healing of wounds.",
+     "An enlarged thyroid is a sign of a lack of iodine."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Deficiency diseases"
+    ],
+    "facts": [
+     "Zinc tablets are given along with oral rehydration solution in childhood diarrhoea.",
+     "Pulses, nuts and whole grains supply zinc."
+    ]
+   },
+   "hi": {
+    "q": "छोटे बच्चों में जिंक की कमी से सामान्यतः क्या होता है?",
+    "options": [
+     "मसूड़ों से रक्त आना",
+     "टाँगों का मुड़ जाना",
+     "अवरुद्ध वृद्धि एवं बार-बार अतिसार",
+     "थायरॉइड ग्रंथि का बढ़ जाना"
+    ],
+    "explanation": "जिंक अनेक एंजाइमों का घटक है और वृद्धि एवं प्रतिरक्षा के लिए आवश्यक है। बच्चों में इसकी कमी से वृद्धि रुकती है, भूख घटती है, घाव देर से भरते हैं और बार-बार अतिसार होता है।",
+    "notes": [
+     "मसूड़ों से रक्त आना विटामिन C की कमी का लक्षण है।",
+     "टाँगों का मुड़ना बाल्यावस्था में हड्डियों के नरम होने से होता है।",
+     "जिंक वृद्धि, प्रतिरक्षा एवं घाव भरने के लिए आवश्यक है।",
+     "बढ़ी हुई थायरॉइड आयोडीन की कमी का लक्षण है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "अल्पताजन्य रोग"
+    ],
+    "facts": [
+     "बच्चों के अतिसार में ओआरएस के साथ जिंक की गोलियाँ दी जाती हैं।",
+     "दालें, मेवे एवं साबुत अनाज जिंक देते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "World Health Organization – zinc supplementation in the management of diarrhoea",
+     "url": "https://www.who.int/tools/elena/interventions/zinc-diarrhoea"
+    }
+   ]
+  }
+ ]
 }

@@ -1,401 +1,1298 @@
 {
-  "section": "health-vitamins",
-  "questions": [
+ "section": "health-vitamins",
+ "questions": [
+  {
+   "id": "health-vitamins-001",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following vitamins is synthesised in the human skin on exposure to sunlight?",
+    "options": [
+     "Vitamin A",
+     "Vitamin C",
+     "Vitamin D",
+     "Vitamin K"
+    ],
+    "explanation": "Ultraviolet-B rays of sunlight convert 7-dehydrocholesterol present in the skin into vitamin D3 (cholecalciferol). For this reason vitamin D is popularly called the 'sunshine vitamin'.",
+    "notes": [
+     "Vitamin A (retinol): obtained from carrots, yellow fruits, green leafy vegetables and liver; not made in the skin.",
+     "Vitamin C (ascorbic acid): humans cannot synthesise it and must get it from food such as citrus fruits and amla.",
+     "Vitamin D: formed in the skin by UV-B rays; it helps the intestine absorb calcium and phosphorus.",
+     "Vitamin K: obtained from green leafy vegetables and also made by bacteria in the large intestine, not by sunlight."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins",
+     "Vitamin D"
+    ],
+    "facts": [
+     "Vitamin D3 is cholecalciferol; vitamin D2 is ergocalciferol.",
+     "Vitamin D is a fat-soluble vitamin."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा विटामिन सूर्य के प्रकाश के संपर्क में आने पर मानव त्वचा में संश्लेषित होता है?",
+    "options": [
+     "विटामिन A",
+     "विटामिन C",
+     "विटामिन D",
+     "विटामिन K"
+    ],
+    "explanation": "सूर्य के प्रकाश की पराबैंगनी-B किरणें त्वचा में उपस्थित 7-डिहाइड्रोकोलेस्ट्रॉल को विटामिन D3 (कोलेकैल्सिफेरॉल) में बदल देती हैं। इसी कारण विटामिन D को 'सनशाइन विटामिन' (धूप का विटामिन) कहा जाता है।",
+    "notes": [
+     "विटामिन A (रेटिनॉल): गाजर, पीले फलों, हरी पत्तेदार सब्जियों और यकृत से प्राप्त; त्वचा में नहीं बनता।",
+     "विटामिन C (एस्कॉर्बिक अम्ल): मनुष्य इसे स्वयं नहीं बना सकता; खट्टे फलों, आँवला आदि भोजन से प्राप्त होता है।",
+     "विटामिन D: पराबैंगनी-B किरणों द्वारा त्वचा में बनता है; आँत में कैल्सियम और फॉस्फोरस के अवशोषण में सहायक।",
+     "विटामिन K: हरी पत्तेदार सब्जियों से मिलता है तथा बड़ी आँत के जीवाणु भी इसे बनाते हैं; सूर्य के प्रकाश से नहीं बनता।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन",
+     "विटामिन D"
+    ],
+    "facts": [
+     "विटामिन D3 कोलेकैल्सिफेरॉल है तथा विटामिन D2 एर्गोकैल्सिफेरॉल है।",
+     "विटामिन D वसा में घुलनशील विटामिन है।"
+    ]
+   },
+   "refs": [
     {
-      "id": "health-vitamins-001",
-      "level": "TGT",
-      "answer": 2,
-      "en": {
-        "q": "Which one of the following vitamins is synthesised in the human skin on exposure to sunlight?",
-        "options": [
-          "Vitamin A",
-          "Vitamin C",
-          "Vitamin D",
-          "Vitamin K"
-        ],
-        "explanation": "Ultraviolet-B rays of sunlight convert 7-dehydrocholesterol present in the skin into vitamin D3 (cholecalciferol). For this reason vitamin D is popularly called the 'sunshine vitamin'.",
-        "notes": [
-          "Vitamin A (retinol): obtained from carrots, yellow fruits, green leafy vegetables and liver; not made in the skin.",
-          "Vitamin C (ascorbic acid): humans cannot synthesise it and must get it from food such as citrus fruits and amla.",
-          "Vitamin D: formed in the skin by UV-B rays; it helps the intestine absorb calcium and phosphorus.",
-          "Vitamin K: obtained from green leafy vegetables and also made by bacteria in the large intestine, not by sunlight."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Vitamins",
-          "Vitamin D"
-        ],
-        "facts": [
-          "Vitamin D3 is cholecalciferol; vitamin D2 is ergocalciferol.",
-          "Vitamin D is a fat-soluble vitamin."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित में से कौन-सा विटामिन सूर्य के प्रकाश के संपर्क में आने पर मानव त्वचा में संश्लेषित होता है?",
-        "options": [
-          "विटामिन A",
-          "विटामिन C",
-          "विटामिन D",
-          "विटामिन K"
-        ],
-        "explanation": "सूर्य के प्रकाश की पराबैंगनी-B किरणें त्वचा में उपस्थित 7-डिहाइड्रोकोलेस्ट्रॉल को विटामिन D3 (कोलेकैल्सिफेरॉल) में बदल देती हैं। इसी कारण विटामिन D को 'सनशाइन विटामिन' (धूप का विटामिन) कहा जाता है।",
-        "notes": [
-          "विटामिन A (रेटिनॉल): गाजर, पीले फलों, हरी पत्तेदार सब्जियों और यकृत से प्राप्त; त्वचा में नहीं बनता।",
-          "विटामिन C (एस्कॉर्बिक अम्ल): मनुष्य इसे स्वयं नहीं बना सकता; खट्टे फलों, आँवला आदि भोजन से प्राप्त होता है।",
-          "विटामिन D: पराबैंगनी-B किरणों द्वारा त्वचा में बनता है; आँत में कैल्सियम और फॉस्फोरस के अवशोषण में सहायक।",
-          "विटामिन K: हरी पत्तेदार सब्जियों से मिलता है तथा बड़ी आँत के जीवाणु भी इसे बनाते हैं; सूर्य के प्रकाश से नहीं बनता।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "विटामिन",
-          "विटामिन D"
-        ],
-        "facts": [
-          "विटामिन D3 कोलेकैल्सिफेरॉल है तथा विटामिन D2 एर्गोकैल्सिफेरॉल है।",
-          "विटामिन D वसा में घुलनशील विटामिन है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        }
-      ]
+     "book": "fatman",
+     "page": 323
     },
     {
-      "id": "health-vitamins-002",
-      "level": "TGT",
-      "answer": 0,
-      "en": {
-        "q": "Amla (Indian gooseberry) is a rich source of which one of the following vitamins?",
-        "options": [
-          "Vitamin C",
-          "Vitamin A",
-          "Vitamin D",
-          "Vitamin E"
-        ],
-        "explanation": "Amla is one of the richest common natural sources of vitamin C (ascorbic acid). Citrus fruits such as lemon and orange are other good sources.",
-        "notes": [
-          "Vitamin C: found in amla, lemon, orange and other citrus fruits; needed for the synthesis of collagen.",
-          "Vitamin A: found in carrots, papaya, mango, green leafy vegetables, milk and liver.",
-          "Vitamin D: obtained from fish-liver oil and egg yolk, and made in the skin by sunlight.",
-          "Vitamin E: found in vegetable oils, nuts, seeds and green leafy vegetables."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Vitamins",
-          "Sources of vitamin C"
-        ],
-        "facts": [
-          "Vitamin C is easily destroyed by heat and prolonged cooking.",
-          "Vitamin C is a water-soluble vitamin, so it must be taken regularly in the diet."
-        ]
-      },
-      "hi": {
-        "q": "आँवला निम्नलिखित में से किस विटामिन का समृद्ध स्रोत है?",
-        "options": [
-          "विटामिन C",
-          "विटामिन A",
-          "विटामिन D",
-          "विटामिन E"
-        ],
-        "explanation": "आँवला विटामिन C (एस्कॉर्बिक अम्ल) के सबसे समृद्ध सामान्य प्राकृतिक स्रोतों में से एक है। नींबू और संतरा जैसे खट्टे फल भी इसके अच्छे स्रोत हैं।",
-        "notes": [
-          "विटामिन C: आँवला, नींबू, संतरा आदि खट्टे फलों में; कोलेजन के संश्लेषण के लिए आवश्यक।",
-          "विटामिन A: गाजर, पपीता, आम, हरी पत्तेदार सब्जियों, दूध और यकृत में पाया जाता है।",
-          "विटामिन D: मछली के यकृत के तेल व अंडे की जर्दी से मिलता है तथा धूप से त्वचा में बनता है।",
-          "विटामिन E: वनस्पति तेलों, मेवों, बीजों और हरी पत्तेदार सब्जियों में पाया जाता है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "विटामिन",
-          "विटामिन C के स्रोत"
-        ],
-        "facts": [
-          "विटामिन C ताप और देर तक पकाने से सरलता से नष्ट हो जाता है।",
-          "विटामिन C जल में घुलनशील है, इसलिए इसे नियमित रूप से भोजन में लेना आवश्यक है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        }
-      ]
-    },
-    {
-      "id": "health-vitamins-003",
-      "level": "PGT",
-      "answer": 3,
-      "en": {
-        "q": "Match List-I (Vitamin) with List-II (Chemical name) and select the correct answer using the codes given below the lists:\nList-I: A. Vitamin A B. Vitamin B1 C. Vitamin E D. Vitamin K\nList-II: 1. Retinol 2. Tocopherol 3. Thiamine 4. Phylloquinone",
-        "options": [
-          "A-3, B-1, C-4, D-2",
-          "A-1, B-2, C-3, D-4",
-          "A-2, B-3, C-1, D-4",
-          "A-1, B-3, C-2, D-4"
-        ],
-        "explanation": "Vitamin A is retinol, vitamin B1 is thiamine, vitamin E is tocopherol and vitamin K (K1) is phylloquinone. Hence the correct code is A-1, B-3, C-2, D-4.",
-        "notes": [
-          "Wrong: retinol is vitamin A and thiamine is vitamin B1, not the reverse.",
-          "Wrong: tocopherol is vitamin E; vitamin B1 is thiamine.",
-          "Wrong: tocopherol is vitamin E, while vitamin A is retinol.",
-          "Correct: A – Retinol, B1 – Thiamine, E – Tocopherol, K – Phylloquinone."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Vitamins",
-          "Chemical names"
-        ],
-        "facts": [
-          "Vitamin B2 is riboflavin and vitamin B3 is niacin.",
-          "Vitamin B9 is folic acid and vitamin B12 is cyanocobalamin."
-        ]
-      },
-      "hi": {
-        "q": "सूची-I (विटामिन) को सूची-II (रासायनिक नाम) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. विटामिन A B. विटामिन B1 C. विटामिन E D. विटामिन K\nसूची-II: 1. रेटिनॉल 2. टोकोफेरॉल 3. थायमिन 4. फाइलोक्विनोन",
-        "options": [
-          "A-3, B-1, C-4, D-2",
-          "A-1, B-2, C-3, D-4",
-          "A-2, B-3, C-1, D-4",
-          "A-1, B-3, C-2, D-4"
-        ],
-        "explanation": "विटामिन A रेटिनॉल, विटामिन B1 थायमिन, विटामिन E टोकोफेरॉल तथा विटामिन K (K1) फाइलोक्विनोन है। अतः सही कूट A-1, B-3, C-2, D-4 है।",
-        "notes": [
-          "गलत: रेटिनॉल विटामिन A है और थायमिन विटामिन B1 है, इसका उलटा नहीं।",
-          "गलत: टोकोफेरॉल विटामिन E है; विटामिन B1 थायमिन है।",
-          "गलत: टोकोफेरॉल विटामिन E है, जबकि विटामिन A रेटिनॉल है।",
-          "सही: A – रेटिनॉल, B1 – थायमिन, E – टोकोफेरॉल, K – फाइलोक्विनोन।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "विटामिन",
-          "रासायनिक नाम"
-        ],
-        "facts": [
-          "विटामिन B2 राइबोफ्लेविन तथा विटामिन B3 नियासिन है।",
-          "विटामिन B9 फोलिक अम्ल तथा विटामिन B12 सायनोकोबालामिन है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        }
-      ]
-    },
-    {
-      "id": "health-vitamins-004",
-      "level": "PGT",
-      "answer": 1,
-      "en": {
-        "q": "Consider the following statements:\n1. Vitamins A, D, E and K are fat-soluble and can be stored in the liver and adipose tissue.\n2. Excess of water-soluble vitamins is generally excreted in the urine.\n3. Green leafy vegetables and other plant foods are the main natural source of vitamin B12.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 1",
-          "1 and 2 only",
-          "2 and 3 only",
-          "1, 2 and 3"
-        ],
-        "explanation": "Fat-soluble vitamins (A, D, E, K) are stored in the liver and fatty tissues, while water-soluble vitamins (B-complex and C) are readily lost in urine and must be taken regularly. Statement 3 is wrong: vitamin B12 occurs naturally almost only in animal foods such as meat, fish, eggs and milk.",
-        "notes": [
-          "Incomplete: statement 2 is also correct.",
-          "Correct: statements 1 and 2 are true; statement 3 is false.",
-          "Wrong: statement 3 is false because vitamin B12 comes mainly from animal foods.",
-          "Wrong: statement 3 is false."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Vitamins",
-          "Fat- and water-soluble vitamins"
-        ],
-        "facts": [
-          "Unlike most water-soluble vitamins, vitamin B12 can be stored in the liver for several years.",
-          "Because fat-soluble vitamins are stored, very large doses of vitamins A and D can be toxic."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. विटामिन A, D, E और K वसा में घुलनशील हैं तथा यकृत और वसा ऊतक में संचित हो सकते हैं।\n2. जल में घुलनशील विटामिनों की अतिरिक्त मात्रा सामान्यतः मूत्र के साथ उत्सर्जित हो जाती है।\n3. हरी पत्तेदार सब्जियाँ तथा अन्य वनस्पति खाद्य विटामिन B12 के मुख्य प्राकृतिक स्रोत हैं।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
-        "options": [
-          "केवल 1",
-          "केवल 1 और 2",
-          "केवल 2 और 3",
-          "1, 2 और 3"
-        ],
-        "explanation": "वसा में घुलनशील विटामिन (A, D, E, K) यकृत और वसा ऊतकों में संचित रहते हैं, जबकि जल में घुलनशील विटामिन (B-समूह और C) मूत्र के साथ शीघ्र निकल जाते हैं, इसलिए इन्हें नियमित लेना पड़ता है। कथन 3 गलत है: विटामिन B12 प्राकृतिक रूप से लगभग केवल मांस, मछली, अंडे और दूध जैसे जंतु खाद्यों में मिलता है।",
-        "notes": [
-          "अपूर्ण: कथन 2 भी सही है।",
-          "सही: कथन 1 और 2 सही हैं; कथन 3 गलत है।",
-          "गलत: कथन 3 गलत है, क्योंकि विटामिन B12 मुख्यतः जंतु खाद्यों से मिलता है।",
-          "गलत: कथन 3 गलत है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "विटामिन",
-          "वसा एवं जल में घुलनशील विटामिन"
-        ],
-        "facts": [
-          "अधिकांश जल-विलेय विटामिनों के विपरीत, विटामिन B12 यकृत में कई वर्षों तक संचित रह सकता है।",
-          "वसा-विलेय विटामिन संचित होते हैं, इसलिए विटामिन A और D की अत्यधिक मात्रा विषाक्त हो सकती है।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        },
-        {
-          "book": "fatman",
-          "page": 323
-        }
-      ]
-    },
-    {
-      "id": "health-vitamins-005",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Assertion (A): Vitamin K is known as the antihaemorrhagic vitamin.\nReason (R): Vitamin K is required by the liver for the synthesis of prothrombin and some other blood-clotting factors.\nSelect the correct answer using the codes given below:",
-        "options": [
-          "Both A and R are true, and R is the correct explanation of A",
-          "Both A and R are true, but R is not the correct explanation of A",
-          "A is true, but R is false",
-          "A is false, but R is true"
-        ],
-        "explanation": "Without vitamin K the liver cannot make functional prothrombin and other clotting factors, so blood clotting is delayed and bleeding is prolonged. Because it prevents haemorrhage, it is called the antihaemorrhagic vitamin; R therefore explains A.",
-        "notes": [
-          "Correct: the role of vitamin K in forming clotting factors is exactly why it prevents haemorrhage.",
-          "Wrong: R is not merely true but is the reason for A.",
-          "Wrong: R is true; vitamin K is needed to make prothrombin.",
-          "Wrong: A is true; vitamin K is the antihaemorrhagic (coagulation) vitamin."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Vitamins",
-          "Vitamin K"
-        ],
-        "facts": [
-          "The chemical name of vitamin K1 is phylloquinone.",
-          "Newborn babies are given a vitamin K injection to prevent bleeding disorders."
-        ]
-      },
-      "hi": {
-        "q": "कथन (A): विटामिन K को रक्तस्रावरोधी (एंटीहेमरेजिक) विटामिन कहा जाता है।\nकारण (R): यकृत में प्रोथ्रोम्बिन तथा कुछ अन्य रक्त-स्कंदन कारकों के संश्लेषण के लिए विटामिन K आवश्यक है।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-          "कथन (A) सही है, परंतु कारण (R) गलत है",
-          "कथन (A) गलत है, परंतु कारण (R) सही है"
-        ],
-        "explanation": "विटामिन K के बिना यकृत क्रियाशील प्रोथ्रोम्बिन और अन्य स्कंदन कारक नहीं बना पाता, जिससे रक्त का थक्का देर से बनता है और रक्तस्राव लंबा चलता है। रक्तस्राव को रोकने के कारण इसे रक्तस्रावरोधी विटामिन कहते हैं; अतः (R), (A) की सही व्याख्या है।",
-        "notes": [
-          "सही: स्कंदन कारकों के निर्माण में विटामिन K की भूमिका ही रक्तस्राव रोकने का कारण है।",
-          "गलत: (R) केवल सही ही नहीं, बल्कि (A) का कारण भी है।",
-          "गलत: (R) सही है; प्रोथ्रोम्बिन बनाने के लिए विटामिन K आवश्यक है।",
-          "गलत: (A) सही है; विटामिन K रक्तस्रावरोधी (स्कंदन) विटामिन है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "विटामिन",
-          "विटामिन K"
-        ],
-        "facts": [
-          "विटामिन K1 का रासायनिक नाम फाइलोक्विनोन है।",
-          "नवजात शिशुओं को रक्तस्राव विकार से बचाने के लिए विटामिन K का इंजेक्शन दिया जाता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
-        }
-      ]
-    },
-    {
-      "id": "health-vitamins-006",
-      "level": "Higher",
-      "answer": 2,
-      "en": {
-        "q": "Which of the following pairs (Mineral element – Associated with) are correctly matched?\n1. Iodine – Synthesis of thyroxine\n2. Cobalt – Constituent of vitamin B12\n3. Calcium – Central atom of the chlorophyll molecule\n4. Iron – Constituent of haemoglobin\nSelect the correct answer using the codes given below:",
-        "options": [
-          "1 and 2 only",
-          "1, 2 and 3 only",
-          "1, 2 and 4 only",
-          "2, 3 and 4 only"
-        ],
-        "explanation": "Iodine is needed to make the thyroid hormone thyroxine, cobalt lies at the centre of the vitamin B12 (cyanocobalamin) molecule, and iron is part of the haem group of haemoglobin. Pair 3 is wrong: the central atom of chlorophyll is magnesium, not calcium.",
-        "notes": [
-          "Incomplete: pair 4 (iron – haemoglobin) is also correct.",
-          "Wrong: pair 3 is incorrect because chlorophyll contains magnesium.",
-          "Correct: pairs 1, 2 and 4 are correctly matched.",
-          "Wrong: pair 3 is incorrect and pair 1 is correct."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Minerals",
-          "Functions of minerals"
-        ],
-        "facts": [
-          "Calcium and phosphorus are the main minerals of bones and teeth.",
-          "Millets such as ragi, jowar and bajra are rich in minerals."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित युग्मों (खनिज तत्व – संबद्धता) में से कौन-से सही सुमेलित हैं?\n1. आयोडीन – थायरॉक्सिन का संश्लेषण\n2. कोबाल्ट – विटामिन B12 का घटक\n3. कैल्सियम – पर्णहरित (क्लोरोफिल) अणु का केंद्रीय परमाणु\n4. लोहा – हीमोग्लोबिन का घटक\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "केवल 1 और 2",
-          "केवल 1, 2 और 3",
-          "केवल 1, 2 और 4",
-          "केवल 2, 3 और 4"
-        ],
-        "explanation": "थायरॉयड हार्मोन थायरॉक्सिन बनाने के लिए आयोडीन आवश्यक है, विटामिन B12 (सायनोकोबालामिन) अणु के केंद्र में कोबाल्ट होता है तथा लोहा हीमोग्लोबिन के हीम समूह का भाग है। युग्म 3 गलत है: पर्णहरित का केंद्रीय परमाणु मैग्नीशियम है, कैल्सियम नहीं।",
-        "notes": [
-          "अपूर्ण: युग्म 4 (लोहा – हीमोग्लोबिन) भी सही है।",
-          "गलत: युग्म 3 गलत है, क्योंकि पर्णहरित में मैग्नीशियम होता है।",
-          "सही: युग्म 1, 2 और 4 सही सुमेलित हैं।",
-          "गलत: युग्म 3 गलत है और युग्म 1 सही है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "खनिज",
-          "खनिजों के कार्य"
-        ],
-        "facts": [
-          "कैल्सियम और फॉस्फोरस हड्डियों व दाँतों के प्रमुख खनिज हैं।",
-          "रागी, ज्वार और बाजरा जैसे मोटे अनाज खनिजों से भरपूर होते हैं।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 323
-        },
-        {
-          "source": "NCERT Class 11 Biology, 'Mineral Nutrition' (pre-2023 edition)"
-        }
-      ]
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
     }
-  ]
+   ]
+  },
+  {
+   "id": "health-vitamins-002",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Amla (Indian gooseberry) is a rich source of which one of the following vitamins?",
+    "options": [
+     "Vitamin C",
+     "Vitamin A",
+     "Vitamin D",
+     "Vitamin E"
+    ],
+    "explanation": "Amla is one of the richest common natural sources of vitamin C (ascorbic acid). Citrus fruits such as lemon and orange are other good sources.",
+    "notes": [
+     "Vitamin C: found in amla, lemon, orange and other citrus fruits; needed for the synthesis of collagen.",
+     "Vitamin A: found in carrots, papaya, mango, green leafy vegetables, milk and liver.",
+     "Vitamin D: obtained from fish-liver oil and egg yolk, and made in the skin by sunlight.",
+     "Vitamin E: found in vegetable oils, nuts, seeds and green leafy vegetables."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins",
+     "Sources of vitamin C"
+    ],
+    "facts": [
+     "Vitamin C is easily destroyed by heat and prolonged cooking.",
+     "Vitamin C is a water-soluble vitamin, so it must be taken regularly in the diet."
+    ]
+   },
+   "hi": {
+    "q": "आँवला निम्नलिखित में से किस विटामिन का समृद्ध स्रोत है?",
+    "options": [
+     "विटामिन C",
+     "विटामिन A",
+     "विटामिन D",
+     "विटामिन E"
+    ],
+    "explanation": "आँवला विटामिन C (एस्कॉर्बिक अम्ल) के सबसे समृद्ध सामान्य प्राकृतिक स्रोतों में से एक है। नींबू और संतरा जैसे खट्टे फल भी इसके अच्छे स्रोत हैं।",
+    "notes": [
+     "विटामिन C: आँवला, नींबू, संतरा आदि खट्टे फलों में; कोलेजन के संश्लेषण के लिए आवश्यक।",
+     "विटामिन A: गाजर, पपीता, आम, हरी पत्तेदार सब्जियों, दूध और यकृत में पाया जाता है।",
+     "विटामिन D: मछली के यकृत के तेल व अंडे की जर्दी से मिलता है तथा धूप से त्वचा में बनता है।",
+     "विटामिन E: वनस्पति तेलों, मेवों, बीजों और हरी पत्तेदार सब्जियों में पाया जाता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन",
+     "विटामिन C के स्रोत"
+    ],
+    "facts": [
+     "विटामिन C ताप और देर तक पकाने से सरलता से नष्ट हो जाता है।",
+     "विटामिन C जल में घुलनशील है, इसलिए इसे नियमित रूप से भोजन में लेना आवश्यक है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 323
+    },
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-003",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The chemical name of vitamin E is:",
+    "options": [
+     "Retinol",
+     "Thiamine",
+     "Tocopherol",
+     "Phylloquinone"
+    ],
+    "explanation": "Vitamin A is retinol, vitamin B1 thiamine, vitamin E tocopherol and vitamin K1 phylloquinone.",
+    "notes": [
+     "Chemical name of vitamin A.",
+     "Chemical name of vitamin B1.",
+     "Chemical name of vitamin E.",
+     "Chemical name of vitamin K1."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins",
+     "Chemical names"
+    ],
+    "facts": [
+     "Vitamin B2 is riboflavin and vitamin B3 is niacin.",
+     "Vitamin B9 is folic acid and vitamin B12 is cyanocobalamin."
+    ]
+   },
+   "hi": {
+    "q": "विटामिन E का रासायनिक नाम क्या है?",
+    "options": [
+     "रेटिनॉल",
+     "थायमिन",
+     "टोकोफेरॉल",
+     "फिलोक्विनोन"
+    ],
+    "explanation": "विटामिन A रेटिनॉल, विटामिन B1 थायमिन, विटामिन E टोकोफेरॉल तथा विटामिन K1 फिलोक्विनोन है।",
+    "notes": [
+     "विटामिन A का रासायनिक नाम।",
+     "विटामिन B1 का रासायनिक नाम।",
+     "विटामिन E का रासायनिक नाम।",
+     "विटामिन K1 का रासायनिक नाम।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन",
+     "रासायनिक नाम"
+    ],
+    "facts": [
+     "विटामिन B2 राइबोफ्लेविन तथा विटामिन B3 नियासिन है।",
+     "विटामिन B9 फोलिक अम्ल तथा विटामिन B12 सायनोकोबालामिन है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 323
+    },
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-004",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Vitamin B12 occurs naturally almost exclusively in:",
+    "options": [
+     "Green leafy vegetables",
+     "Foods of animal origin",
+     "Citrus fruits",
+     "Whole cereals"
+    ],
+    "explanation": "Vitamin B12 is found naturally almost only in animal foods. It is a water-soluble vitamin, but unlike most of them it can be stored in the liver.",
+    "notes": [
+     "Good sources of folic acid and vitamin K, but not of B12.",
+     "Meat, fish, eggs and milk supply vitamin B12.",
+     "Good sources of vitamin C.",
+     "Good sources of thiamine, not of B12."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins",
+     "Fat- and water-soluble vitamins"
+    ],
+    "facts": [
+     "Unlike most water-soluble vitamins, vitamin B12 can be stored in the liver for several years.",
+     "Because fat-soluble vitamins are stored, very large doses of vitamins A and D can be toxic."
+    ]
+   },
+   "hi": {
+    "q": "विटामिन B12 प्राकृतिक रूप से लगभग केवल किसमें पाया जाता है?",
+    "options": [
+     "हरी पत्तेदार सब्जियाँ",
+     "पशुजन्य खाद्य पदार्थ",
+     "खट्टे फल",
+     "साबुत अनाज"
+    ],
+    "explanation": "विटामिन B12 प्राकृतिक रूप से लगभग केवल पशुजन्य खाद्य पदार्थों में पाया जाता है। यह जल में घुलनशील विटामिन है, किंतु अन्य ऐसे विटामिनों के विपरीत यकृत में संचित हो सकता है।",
+    "notes": [
+     "फोलिक अम्ल एवं विटामिन K के अच्छे स्रोत, किंतु B12 के नहीं।",
+     "मांस, मछली, अंडे एवं दूध से विटामिन B12 मिलता है।",
+     "विटामिन C के अच्छे स्रोत।",
+     "थायमिन के अच्छे स्रोत, B12 के नहीं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन",
+     "वसा एवं जल में घुलनशील विटामिन"
+    ],
+    "facts": [
+     "अधिकांश जल-विलेय विटामिनों के विपरीत, विटामिन B12 यकृत में कई वर्षों तक संचित रह सकता है।",
+     "वसा-विलेय विटामिन संचित होते हैं, इसलिए विटामिन A और D की अत्यधिक मात्रा विषाक्त हो सकती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "book": "fatman",
+     "page": 323
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-005",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Vitamin K is called the antihaemorrhagic vitamin because it is needed for the synthesis of:",
+    "options": [
+     "Prothrombin",
+     "Haemoglobin",
+     "Insulin",
+     "Collagen"
+    ],
+    "explanation": "Without vitamin K the liver cannot make functional prothrombin and other clotting factors, so bleeding is prolonged.",
+    "notes": [
+     "A blood-clotting factor made in the liver with the help of vitamin K.",
+     "Its formation needs iron.",
+     "A hormone of the pancreas.",
+     "Its formation needs vitamin C."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins",
+     "Vitamin K"
+    ],
+    "facts": [
+     "The chemical name of vitamin K1 is phylloquinone.",
+     "Newborn babies are given a vitamin K injection to prevent bleeding disorders."
+    ]
+   },
+   "hi": {
+    "q": "विटामिन K को रक्तस्राव-रोधी विटामिन कहा जाता है, क्योंकि यह किसके संश्लेषण के लिए आवश्यक है?",
+    "options": [
+     "प्रोथ्रॉम्बिन",
+     "हीमोग्लोबिन",
+     "इंसुलिन",
+     "कोलेजन"
+    ],
+    "explanation": "विटामिन K के बिना यकृत कार्यशील प्रोथ्रॉम्बिन एवं अन्य थक्का कारक नहीं बना पाता, जिससे रक्तस्राव देर तक होता रहता है।",
+    "notes": [
+     "रक्त का थक्का बनाने वाला कारक, जो विटामिन K की सहायता से यकृत में बनता है।",
+     "इसके निर्माण के लिए लोहा आवश्यक है।",
+     "अग्न्याशय का हार्मोन।",
+     "इसके निर्माण के लिए विटामिन C आवश्यक है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन",
+     "विटामिन K"
+    ],
+    "facts": [
+     "विटामिन K1 का रासायनिक नाम फाइलोक्विनोन है।",
+     "नवजात शिशुओं को रक्तस्राव विकार से बचाने के लिए विटामिन K का इंजेक्शन दिया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 323
+    },
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-006",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Which mineral element is a constituent of vitamin B12?",
+    "options": [
+     "Iron",
+     "Magnesium",
+     "Iodine",
+     "Cobalt"
+    ],
+    "explanation": "Cobalt is part of vitamin B12, iron of haemoglobin and magnesium of chlorophyll, while iodine is needed to make thyroxine.",
+    "notes": [
+     "A constituent of haemoglobin.",
+     "The central atom of the chlorophyll molecule.",
+     "Needed for the synthesis of thyroxine.",
+     "Lies at the centre of the vitamin B12 (cyanocobalamin) molecule."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Minerals",
+     "Functions of minerals"
+    ],
+    "facts": [
+     "Calcium and phosphorus are the main minerals of bones and teeth.",
+     "Millets such as ragi, jowar and bajra are rich in minerals."
+    ]
+   },
+   "hi": {
+    "q": "कौन-सा खनिज तत्व विटामिन B12 का घटक है?",
+    "options": [
+     "लोहा",
+     "मैग्नीशियम",
+     "आयोडीन",
+     "कोबाल्ट"
+    ],
+    "explanation": "कोबाल्ट विटामिन B12 का, लोहा हीमोग्लोबिन का तथा मैग्नीशियम क्लोरोफिल का घटक है, जबकि आयोडीन थायरॉक्सिन के निर्माण हेतु आवश्यक है।",
+    "notes": [
+     "हीमोग्लोबिन का घटक।",
+     "क्लोरोफिल अणु का केंद्रीय परमाणु।",
+     "थायरॉक्सिन के संश्लेषण के लिए आवश्यक।",
+     "विटामिन B12 (सायनोकोबालामिन) अणु के केंद्र में स्थित।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "खनिज",
+     "खनिजों के कार्य"
+    ],
+    "facts": [
+     "कैल्सियम और फॉस्फोरस हड्डियों व दाँतों के प्रमुख खनिज हैं।",
+     "रागी, ज्वार और बाजरा जैसे मोटे अनाज खनिजों से भरपूर होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 323
+    },
+    {
+     "source": "NCERT Class 11 Biology, 'Mineral Nutrition' (pre-2023 edition)"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Who coined the term 'vitamine' in 1912?",
+    "options": [
+     "Casimir Funk",
+     "F. G. Hopkins",
+     "Christiaan Eijkman",
+     "James Lind"
+    ],
+    "explanation": "The Polish biochemist Casimir Funk coined the word 'vitamine' in 1912, from 'vital' and 'amine'. The final 'e' was dropped later, when it was found that not all vitamins are amines.",
+    "notes": [
+     "He believed that these substances were 'vital amines'.",
+     "Hopkins showed that food contains 'accessory food factors'.",
+     "Eijkman linked beriberi with a diet of polished rice.",
+     "James Lind showed that citrus fruits cure scurvy."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "Vitamins are organic compounds needed in very small amounts.",
+     "They are grouped as fat-soluble and water-soluble."
+    ]
+   },
+   "hi": {
+    "q": "1912 में 'विटामिन' (vitamine) शब्द किसने गढ़ा?",
+    "options": [
+     "कासिमिर फंक",
+     "एफ. जी. हॉपकिंस",
+     "क्रिश्चियन आइकमैन",
+     "जेम्स लिंड"
+    ],
+    "explanation": "पोलैंड के जैव रसायनज्ञ कासिमिर फंक ने 1912 में 'वाइटल' एवं 'एमीन' से 'vitamine' शब्द गढ़ा। बाद में जब ज्ञात हुआ कि सभी विटामिन एमीन नहीं हैं, तो अंतिम 'e' हटा दिया गया।",
+    "notes": [
+     "उनका मत था कि ये पदार्थ 'जीवन के लिए आवश्यक एमीन' हैं।",
+     "हॉपकिंस ने दिखाया कि भोजन में 'सहायक खाद्य कारक' होते हैं।",
+     "आइकमैन ने बेरी-बेरी का संबंध पॉलिश किए चावल के आहार से जोड़ा।",
+     "जेम्स लिंड ने दिखाया कि खट्टे फल स्कर्वी ठीक करते हैं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "विटामिन अत्यंत अल्प मात्रा में आवश्यक कार्बनिक यौगिक हैं।",
+     "इन्हें वसा में घुलनशील एवं जल में घुलनशील वर्गों में बाँटा जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    },
+    {
+     "source": "Encyclopaedia Britannica – Casimir Funk",
+     "url": "https://www.britannica.com/biography/Casimir-Funk"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which one of the following vitamins is fat-soluble?",
+    "options": [
+     "Vitamin B1",
+     "Vitamin K",
+     "Vitamin B2",
+     "Vitamin B6"
+    ],
+    "explanation": "Vitamins A, D, E and K are soluble in fats and oils and are stored in the liver and in fatty tissue. All the vitamins of the B group and vitamin C are soluble in water.",
+    "notes": [
+     "Vitamin B1 (thiamine) is water-soluble.",
+     "Like vitamins A, D and E, it dissolves in fats and is stored in the liver.",
+     "Vitamin B2 (riboflavin) is water-soluble.",
+     "Vitamin B6 (pyridoxine) is water-soluble."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "Fat-soluble vitamins need fat in the diet for their absorption.",
+     "Water-soluble vitamins in excess are mostly passed out in the urine."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा विटामिन वसा में घुलनशील है?",
+    "options": [
+     "विटामिन B1",
+     "विटामिन K",
+     "विटामिन B2",
+     "विटामिन B6"
+    ],
+    "explanation": "विटामिन A, D, E एवं K वसा एवं तेल में घुलनशील हैं और यकृत तथा वसा ऊतक में संचित रहते हैं। B समूह के सभी विटामिन एवं विटामिन C जल में घुलनशील हैं।",
+    "notes": [
+     "विटामिन B1 (थायमिन) जल में घुलनशील है।",
+     "विटामिन A, D एवं E की भाँति यह वसा में घुलता है और यकृत में संचित रहता है।",
+     "विटामिन B2 (राइबोफ्लेविन) जल में घुलनशील है।",
+     "विटामिन B6 (पिरिडॉक्सिन) जल में घुलनशील है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "वसा में घुलनशील विटामिनों के अवशोषण के लिए आहार में वसा चाहिए।",
+     "जल में घुलनशील विटामिनों की अधिकता अधिकतर मूत्र के साथ निकल जाती है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 239
+    },
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Which vitamin is also known as the 'anti-sterility vitamin'?",
+    "options": [
+     "Vitamin A",
+     "Vitamin D",
+     "Vitamin E",
+     "Vitamin K"
+    ],
+    "explanation": "Vitamin E is called the anti-sterility vitamin because its deficiency was found to cause reproductive failure in experimental animals. It also protects cell membranes as an antioxidant.",
+    "notes": [
+     "Vitamin A is needed for healthy skin and for growth.",
+     "Vitamin D is needed for strong bones.",
+     "It also acts as an antioxidant in the body.",
+     "Vitamin K is needed for the clotting of blood."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "Wheat germ oil is one of the richest sources of vitamin E.",
+     "It was discovered by Evans and Bishop in 1922."
+    ]
+   },
+   "hi": {
+    "q": "किस विटामिन को 'बंध्यता-रोधी विटामिन' भी कहा जाता है?",
+    "options": [
+     "विटामिन A",
+     "विटामिन D",
+     "विटामिन E",
+     "विटामिन K"
+    ],
+    "explanation": "विटामिन E को बंध्यता-रोधी विटामिन इसलिए कहा जाता है कि इसकी कमी से प्रायोगिक पशुओं में प्रजनन विफलता पाई गई। यह प्रतिऑक्सीकारक के रूप में कोशिका झिल्लियों की रक्षा भी करता है।",
+    "notes": [
+     "विटामिन A स्वस्थ त्वचा एवं वृद्धि के लिए आवश्यक है।",
+     "विटामिन D मजबूत अस्थियों के लिए आवश्यक है।",
+     "यह शरीर में प्रतिऑक्सीकारक का कार्य भी करता है।",
+     "विटामिन K रक्त के थक्के के लिए आवश्यक है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "गेहूँ के अंकुर का तेल विटामिन E के सबसे समृद्ध स्रोतों में है।",
+     "इसकी खोज 1922 में इवांस एवं बिशप ने की।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 240
+    },
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Fluoride, taken in small amounts in drinking water, helps to prevent:",
+    "options": [
+     "Goitre",
+     "Anaemia",
+     "Rickets",
+     "Dental caries"
+    ],
+    "explanation": "Fluoride makes the enamel of the teeth more resistant to acids and so helps to prevent tooth decay (dental caries). About 1 part per million in drinking water is considered beneficial.",
+    "notes": [
+     "Goitre is prevented by iodine.",
+     "Anaemia is prevented by iron.",
+     "Rickets is prevented by vitamin D and calcium.",
+     "It hardens the enamel of the teeth."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Minerals"
+    ],
+    "facts": [
+     "Toothpastes commonly contain fluoride.",
+     "Too much fluoride harms the teeth and the bones."
+    ]
+   },
+   "hi": {
+    "q": "पेयजल में अल्प मात्रा में लिया गया फ्लुओराइड किसकी रोकथाम में सहायक है?",
+    "options": [
+     "घेंघा",
+     "रक्ताल्पता",
+     "रिकेट्स",
+     "दंत क्षय"
+    ],
+    "explanation": "फ्लुओराइड दाँतों के इनैमल को अम्लों के प्रति अधिक प्रतिरोधी बनाता है और इस प्रकार दंत क्षय की रोकथाम में सहायक है। पेयजल में लगभग 1 भाग प्रति दस लाख की मात्रा लाभकारी मानी जाती है।",
+    "notes": [
+     "घेंघा की रोकथाम आयोडीन से होती है।",
+     "रक्ताल्पता की रोकथाम लौह से होती है।",
+     "रिकेट्स की रोकथाम विटामिन D एवं कैल्शियम से होती है।",
+     "यह दाँतों के इनैमल को कठोर बनाता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "खनिज"
+    ],
+    "facts": [
+     "दंत मंजनों में सामान्यतः फ्लुओराइड होता है।",
+     "अधिक फ्लुओराइड दाँतों एवं अस्थियों को हानि पहुँचाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 241
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which vitamin is required for the formation of the visual pigment rhodopsin in the retina of the eye?",
+    "options": [
+     "Vitamin A",
+     "Vitamin B1",
+     "Vitamin C",
+     "Vitamin D"
+    ],
+    "explanation": "Rhodopsin, the light-sensitive pigment of the rod cells, is made of the protein opsin and retinal, a form of vitamin A. The vitamin is therefore essential for vision in dim light.",
+    "notes": [
+     "Rhodopsin is formed from a derivative of this vitamin and the protein opsin.",
+     "Vitamin B1 is needed for the metabolism of carbohydrates.",
+     "Vitamin C is needed for healthy gums.",
+     "Vitamin D is needed for the absorption of calcium."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "Beta-carotene of plants is converted into vitamin A in the body.",
+     "The rod cells work in dim light and the cone cells in bright light."
+    ]
+   },
+   "hi": {
+    "q": "आँख के दृष्टिपटल में दृष्टि वर्णक रोडोप्सिन के निर्माण के लिए कौन-सा विटामिन आवश्यक है?",
+    "options": [
+     "विटामिन A",
+     "विटामिन B1",
+     "विटामिन C",
+     "विटामिन D"
+    ],
+    "explanation": "शलाका कोशिकाओं का प्रकाश-संवेदी वर्णक रोडोप्सिन ऑप्सिन प्रोटीन एवं विटामिन A के रूप रेटिनल से बनता है। अतः मंद प्रकाश में दृष्टि के लिए यह विटामिन आवश्यक है।",
+    "notes": [
+     "रोडोप्सिन इस विटामिन के व्युत्पन्न एवं ऑप्सिन प्रोटीन से बनता है।",
+     "विटामिन B1 कार्बोहाइड्रेट के उपापचय के लिए आवश्यक है।",
+     "विटामिन C स्वस्थ मसूड़ों के लिए आवश्यक है।",
+     "विटामिन D कैल्शियम के अवशोषण के लिए आवश्यक है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "पौधों का बीटा-कैरोटीन शरीर में विटामिन A में बदलता है।",
+     "शलाका कोशिकाएँ मंद प्रकाश में तथा शंकु कोशिकाएँ तीव्र प्रकाश में कार्य करती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which one of the following millets is the richest source of calcium?",
+    "options": [
+     "Bajra",
+     "Ragi",
+     "Jowar",
+     "Kangni"
+    ],
+    "explanation": "Ragi (finger millet) contains about ten times as much calcium as other cereals and millets. It is therefore recommended for growing children, pregnant and nursing women and the elderly.",
+    "notes": [
+     "Pearl millet; among cereals it is a good source of iron, but it has little calcium.",
+     "Finger millet; it contains about 350 milligrams of calcium per 100 grams.",
+     "Sorghum; it contains only about 25–30 milligrams of calcium per 100 grams.",
+     "Foxtail millet; its calcium content is also low."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Minerals",
+     "Calcium"
+    ],
+    "facts": [
+     "Calcium is the most abundant mineral element in the human body.",
+     "The year 2023 was observed as the International Year of Millets."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा मोटा अनाज कैल्शियम का सबसे समृद्ध स्रोत है?",
+    "options": [
+     "बाजरा",
+     "रागी",
+     "ज्वार",
+     "कंगनी"
+    ],
+    "explanation": "रागी में अन्य अनाजों एवं मोटे अनाजों की तुलना में लगभग दस गुना कैल्शियम होता है। इसलिए बढ़ते बच्चों, गर्भवती एवं दूध पिलाने वाली महिलाओं तथा वृद्धों के लिए इसकी संस्तुति की जाती है।",
+    "notes": [
+     "बाजरा अनाजों में लौह का अच्छा स्रोत है, किंतु इसमें कैल्शियम कम होता है।",
+     "रागी (मंडुआ) में प्रति 100 ग्राम लगभग 350 मिलीग्राम कैल्शियम होता है।",
+     "ज्वार में प्रति 100 ग्राम केवल लगभग 25–30 मिलीग्राम कैल्शियम होता है।",
+     "कंगनी में भी कैल्शियम की मात्रा कम होती है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "खनिज",
+     "कैल्शियम"
+    ],
+    "facts": [
+     "कैल्शियम मानव शरीर में सर्वाधिक मात्रा में पाया जाने वाला खनिज तत्व है।",
+     "वर्ष 2023 को अंतर्राष्ट्रीय मोटा अनाज वर्ष के रूप में मनाया गया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "ICMR–National Institute of Nutrition, Indian Food Composition Tables 2017",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-013",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "According to the World Health Organization, adults should consume less than how much common salt a day?",
+    "options": [
+     "10 grams",
+     "8 grams",
+     "5 grams",
+     "15 grams"
+    ],
+    "explanation": "The WHO advises adults to take less than 5 grams of salt a day, which is less than 2 grams of sodium. Cutting salt intake lowers blood pressure and the risk of heart disease and stroke.",
+    "notes": [
+     "Close to the average daily salt intake of adults worldwide, about twice the advised limit.",
+     "Higher than the limit advised by the WHO.",
+     "This amount of salt contains about 2 grams of sodium.",
+     "Three times the limit advised by the WHO."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Minerals",
+     "Sodium"
+    ],
+    "facts": [
+     "Common salt is sodium chloride; about 40 per cent of its weight is sodium.",
+     "Too much salt in the diet is linked with high blood pressure."
+    ]
+   },
+   "hi": {
+    "q": "विश्व स्वास्थ्य संगठन के अनुसार वयस्कों को प्रतिदिन कितने से कम साधारण नमक का सेवन करना चाहिए?",
+    "options": [
+     "10 ग्राम",
+     "8 ग्राम",
+     "5 ग्राम",
+     "15 ग्राम"
+    ],
+    "explanation": "विश्व स्वास्थ्य संगठन वयस्कों को प्रतिदिन 5 ग्राम से कम नमक, अर्थात 2 ग्राम से कम सोडियम, लेने की सलाह देता है। नमक का सेवन घटाने से रक्तचाप तथा हृदय रोग एवं स्ट्रोक का जोखिम कम होता है।",
+    "notes": [
+     "यह विश्व में वयस्कों के औसत दैनिक नमक सेवन के निकट है, जो अनुशंसित सीमा का लगभग दुगुना है।",
+     "यह विश्व स्वास्थ्य संगठन द्वारा सुझाई गई सीमा से अधिक है।",
+     "नमक की इस मात्रा में लगभग 2 ग्राम सोडियम होता है।",
+     "यह विश्व स्वास्थ्य संगठन द्वारा सुझाई गई सीमा का तिगुना है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "खनिज",
+     "सोडियम"
+    ],
+    "facts": [
+     "साधारण नमक सोडियम क्लोराइड है; इसके भार का लगभग 40 प्रतिशत सोडियम है।",
+     "आहार में अधिक नमक का संबंध उच्च रक्तचाप से है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "World Health Organization – Sodium reduction (fact sheet)",
+     "url": "https://www.who.int/news-room/fact-sheets/detail/salt-reduction"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-014",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Pantothenic acid is the chemical name of vitamin:",
+    "options": [
+     "B2",
+     "B6",
+     "B7",
+     "B5"
+    ],
+    "explanation": "Vitamin B5 is pantothenic acid. It forms a part of coenzyme A, which is essential for the metabolism of carbohydrates, fats and proteins.",
+    "notes": [
+     "Vitamin B2 is riboflavin.",
+     "Vitamin B6 is pyridoxine.",
+     "Vitamin B7 is biotin.",
+     "It is a part of coenzyme A."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "The name comes from a Greek word meaning 'from everywhere', as it is found in almost all foods.",
+     "Its deficiency is rare."
+    ]
+   },
+   "hi": {
+    "q": "पैंटोथेनिक अम्ल किस विटामिन का रासायनिक नाम है?",
+    "options": [
+     "B2",
+     "B6",
+     "B7",
+     "B5"
+    ],
+    "explanation": "विटामिन B5 पैंटोथेनिक अम्ल है। यह सहएंजाइम A का भाग है, जो कार्बोहाइड्रेट, वसा एवं प्रोटीन के उपापचय के लिए अनिवार्य है।",
+    "notes": [
+     "विटामिन B2 राइबोफ्लेविन है।",
+     "विटामिन B6 पिरिडॉक्सिन है।",
+     "विटामिन B7 बायोटिन है।",
+     "यह सहएंजाइम A का भाग है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "यह नाम 'सर्वत्र से' अर्थ वाले यूनानी शब्द से आया है, क्योंकि यह लगभग सभी खाद्य पदार्थों में मिलता है।",
+     "इसकी कमी विरल है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Which vitamin can be synthesised in the human body from the amino acid tryptophan?",
+    "options": [
+     "Niacin",
+     "Thiamine",
+     "Vitamin C",
+     "Vitamin A"
+    ],
+    "explanation": "Niacin can be formed in the body from the essential amino acid tryptophan. A diet based mainly on maize, which is poor in available niacin and in tryptophan, therefore leads to a deficiency of this vitamin.",
+    "notes": [
+     "About 60 milligrams of tryptophan give 1 milligram of it.",
+     "Thiamine cannot be made in the human body.",
+     "Human beings cannot make vitamin C.",
+     "Vitamin A is formed from carotene, not from tryptophan."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "Niacin forms part of the coenzymes NAD and NADP.",
+     "Groundnuts and whole cereals are good sources of niacin."
+    ]
+   },
+   "hi": {
+    "q": "कौन-सा विटामिन मानव शरीर में ऐमीनो अम्ल ट्रिप्टोफैन से संश्लेषित हो सकता है?",
+    "options": [
+     "नियासिन",
+     "थायमिन",
+     "विटामिन C",
+     "विटामिन A"
+    ],
+    "explanation": "नियासिन शरीर में अनिवार्य ऐमीनो अम्ल ट्रिप्टोफैन से बन सकता है। अतः मुख्यतः मक्का पर आधारित आहार, जिसमें उपलब्ध नियासिन एवं ट्रिप्टोफैन कम होता है, इस विटामिन की कमी उत्पन्न करता है।",
+    "notes": [
+     "लगभग 60 मिलीग्राम ट्रिप्टोफैन से इसका 1 मिलीग्राम बनता है।",
+     "थायमिन मानव शरीर में नहीं बन सकता।",
+     "मनुष्य विटामिन C नहीं बना सकता।",
+     "विटामिन A कैरोटीन से बनता है, ट्रिप्टोफैन से नहीं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "नियासिन सहएंजाइम NAD एवं NADP का भाग है।",
+     "मूँगफली एवं साबुत अनाज नियासिन के अच्छे स्रोत हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Which trace element is a component of the enzyme glutathione peroxidase and works with vitamin E as an antioxidant?",
+    "options": [
+     "Zinc",
+     "Selenium",
+     "Copper",
+     "Manganese"
+    ],
+    "explanation": "Selenium is an essential trace element and a constituent of glutathione peroxidase, an enzyme that destroys harmful peroxides. It acts together with vitamin E to protect cell membranes.",
+    "notes": [
+     "Zinc is a part of many enzymes, such as carbonic anhydrase.",
+     "It protects cells from damage by peroxides.",
+     "Copper is needed for the absorption and use of iron.",
+     "Manganese is a cofactor of several other enzymes."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Minerals"
+    ],
+    "facts": [
+     "Keshan disease, a disease of the heart muscle, is linked with a deficiency of selenium.",
+     "Trace elements are needed in amounts of less than 100 milligrams a day."
+    ]
+   },
+   "hi": {
+    "q": "कौन-सा सूक्ष्म तत्व ग्लूटाथायोन पेरॉक्सीडेज एंजाइम का घटक है और विटामिन E के साथ प्रतिऑक्सीकारक का कार्य करता है?",
+    "options": [
+     "जिंक",
+     "सेलेनियम",
+     "कॉपर",
+     "मैंगनीज"
+    ],
+    "explanation": "सेलेनियम अनिवार्य सूक्ष्म तत्व है और ग्लूटाथायोन पेरॉक्सीडेज का घटक है, जो हानिकारक पेरॉक्साइडों को नष्ट करने वाला एंजाइम है। यह विटामिन E के साथ मिलकर कोशिका झिल्लियों की रक्षा करता है।",
+    "notes": [
+     "जिंक कार्बोनिक एनहाइड्रेज जैसे अनेक एंजाइमों का भाग है।",
+     "यह कोशिकाओं को पेरॉक्साइडों की क्षति से बचाता है।",
+     "कॉपर लौह के अवशोषण एवं उपयोग के लिए आवश्यक है।",
+     "मैंगनीज अन्य अनेक एंजाइमों का सहकारक है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "खनिज"
+    ],
+    "facts": [
+     "हृदय पेशी का रोग केशन रोग सेलेनियम की कमी से जुड़ा है।",
+     "सूक्ष्म तत्व प्रतिदिन 100 मिलीग्राम से कम मात्रा में आवश्यक होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Under the food safety standards of India, iodised salt must contain at least how much iodine at the level of the consumer?",
+    "options": [
+     "5 parts per million",
+     "10 parts per million",
+     "15 parts per million",
+     "50 parts per million"
+    ],
+    "explanation": "Iodised salt must contain not less than 30 parts per million of iodine at the level of manufacture and not less than 15 parts per million at the level of the consumer, as some iodine is lost in storage.",
+    "notes": [
+     "The standard is higher than this.",
+     "The standard is higher than this.",
+     "At the level of the manufacturer it must contain at least 30 parts per million.",
+     "The standard is lower than this."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Minerals"
+    ],
+    "facts": [
+     "The sale of non-iodised salt for direct human consumption is banned in India.",
+     "Potassium iodate is used to iodise salt."
+    ]
+   },
+   "hi": {
+    "q": "भारत के खाद्य सुरक्षा मानकों के अनुसार आयोडीन युक्त नमक में उपभोक्ता स्तर पर कम से कम कितना आयोडीन होना चाहिए?",
+    "options": [
+     "5 भाग प्रति दस लाख",
+     "10 भाग प्रति दस लाख",
+     "15 भाग प्रति दस लाख",
+     "50 भाग प्रति दस लाख"
+    ],
+    "explanation": "आयोडीन युक्त नमक में निर्माण स्तर पर कम से कम 30 भाग प्रति दस लाख तथा उपभोक्ता स्तर पर कम से कम 15 भाग प्रति दस लाख आयोडीन होना चाहिए, क्योंकि भंडारण में कुछ आयोडीन नष्ट हो जाता है।",
+    "notes": [
+     "मानक इससे अधिक है।",
+     "मानक इससे अधिक है।",
+     "निर्माता स्तर पर इसमें कम से कम 30 भाग प्रति दस लाख होना चाहिए।",
+     "मानक इससे कम है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "खनिज"
+    ],
+    "facts": [
+     "भारत में प्रत्यक्ष मानव उपभोग के लिए आयोडीन रहित नमक की बिक्री प्रतिबंधित है।",
+     "नमक के आयोडीनीकरण के लिए पोटैशियम आयोडेट का प्रयोग होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Food Safety and Standards Authority of India – standards for iodised salt",
+     "url": "https://www.fssai.gov.in/"
+    },
+    {
+     "source": "National Iodine Deficiency Disorders Control Programme, Ministry of Health and Family Welfare",
+     "url": "https://nhm.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-018",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Eating large amounts of raw egg white can lead to a deficiency of biotin because raw egg white contains:",
+    "options": [
+     "Albumin",
+     "Lysozyme",
+     "Ovomucoid",
+     "Avidin"
+    ],
+    "explanation": "Avidin, a protein of raw egg white, binds biotin so strongly that the vitamin cannot be absorbed from the intestine. Cooking destroys avidin, so cooked eggs do not have this effect.",
+    "notes": [
+     "Albumin is the main protein of egg white but does not bind biotin.",
+     "Lysozyme is an enzyme that destroys bacteria.",
+     "Ovomucoid is an inhibitor of trypsin.",
+     "It binds biotin firmly and prevents its absorption."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "Biotin is also called vitamin B7 or vitamin H.",
+     "Biotin is a coenzyme for reactions that add carbon dioxide."
+    ]
+   },
+   "hi": {
+    "q": "कच्चे अंडे की सफेदी अधिक मात्रा में खाने से बायोटिन की कमी हो सकती है, क्योंकि कच्चे अंडे की सफेदी में क्या होता है?",
+    "options": [
+     "एल्ब्यूमिन",
+     "लाइसोजाइम",
+     "ओवोम्यूकॉइड",
+     "एविडिन"
+    ],
+    "explanation": "कच्चे अंडे की सफेदी का प्रोटीन एविडिन बायोटिन को इतनी दृढ़ता से बाँधता है कि यह विटामिन आँत से अवशोषित नहीं हो पाता। पकाने से एविडिन नष्ट हो जाता है, अतः पके अंडों का यह प्रभाव नहीं होता।",
+    "notes": [
+     "एल्ब्यूमिन अंडे की सफेदी का प्रमुख प्रोटीन है, किंतु बायोटिन को नहीं बाँधता।",
+     "लाइसोजाइम जीवाणुओं को नष्ट करने वाला एंजाइम है।",
+     "ओवोम्यूकॉइड ट्रिप्सिन का अवरोधक है।",
+     "यह बायोटिन को दृढ़ता से बाँधकर उसका अवशोषण रोकता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "बायोटिन को विटामिन B7 या विटामिन H भी कहते हैं।",
+     "बायोटिन कार्बन डाइऑक्साइड जोड़ने वाली अभिक्रियाओं का सहएंजाइम है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-019",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Which vitamin is given to women before and during early pregnancy to prevent neural tube defects in the baby?",
+    "options": [
+     "Vitamin B12",
+     "Folic acid",
+     "Vitamin D",
+     "Vitamin K"
+    ],
+    "explanation": "Folic acid is needed for the formation of DNA and for cell division. An adequate intake before conception and in early pregnancy greatly reduces the risk of neural tube defects such as spina bifida.",
+    "notes": [
+     "Vitamin B12 is important, but it is not the vitamin used for this purpose.",
+     "It is needed for the synthesis of DNA in rapidly dividing cells.",
+     "Vitamin D is needed for the bones of the mother and the baby.",
+     "Vitamin K is given to the newborn, not for this purpose."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vitamins"
+    ],
+    "facts": [
+     "Green leafy vegetables and pulses are good sources of folic acid.",
+     "Iron and folic acid tablets are given to pregnant women in India."
+    ]
+   },
+   "hi": {
+    "q": "शिशु में तंत्रिका नलिका दोषों की रोकथाम के लिए महिलाओं को गर्भधारण से पहले एवं आरंभिक गर्भावस्था में कौन-सा विटामिन दिया जाता है?",
+    "options": [
+     "विटामिन B12",
+     "फोलिक अम्ल",
+     "विटामिन D",
+     "विटामिन K"
+    ],
+    "explanation": "फोलिक अम्ल डीएनए के निर्माण एवं कोशिका विभाजन के लिए आवश्यक है। गर्भधारण से पहले एवं आरंभिक गर्भावस्था में इसका पर्याप्त सेवन स्पाइना बाइफिडा जैसे तंत्रिका नलिका दोषों का जोखिम बहुत घटा देता है।",
+    "notes": [
+     "विटामिन B12 महत्वपूर्ण है, किंतु इस उद्देश्य के लिए प्रयुक्त विटामिन नहीं है।",
+     "यह तेजी से विभाजित होती कोशिकाओं में डीएनए के संश्लेषण के लिए आवश्यक है।",
+     "विटामिन D माता एवं शिशु की अस्थियों के लिए आवश्यक है।",
+     "विटामिन K नवजात को दिया जाता है, इस उद्देश्य के लिए नहीं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "विटामिन"
+    ],
+    "facts": [
+     "हरी पत्तेदार सब्जियाँ एवं दालें फोलिक अम्ल के अच्छे स्रोत हैं।",
+     "भारत में गर्भवती महिलाओं को लौह एवं फोलिक अम्ल की गोलियाँ दी जाती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "World Health Organization – periconceptional folic acid supplementation to prevent neural tube defects",
+     "url": "https://www.who.int/tools/elena/interventions/folate-periconceptional"
+    }
+   ]
+  },
+  {
+   "id": "health-vitamins-020",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Which mineral is the chief positive ion inside the body cells and is essential for the normal working of the heart muscle?",
+    "options": [
+     "Sodium",
+     "Calcium",
+     "Chloride",
+     "Potassium"
+    ],
+    "explanation": "Potassium is the principal positively charged ion of the intracellular fluid. It is needed for the conduction of nerve impulses and for the contraction of muscles, including the heart muscle.",
+    "notes": [
+     "Sodium is found mainly in the fluid outside the cells.",
+     "Calcium is found mainly in the bones.",
+     "Chloride is a negative ion.",
+     "Bananas, coconut water and potatoes are rich in it."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Minerals"
+    ],
+    "facts": [
+     "Both very low and very high levels of potassium in the blood disturb the rhythm of the heart.",
+     "The sodium–potassium pump keeps the two ions on opposite sides of the cell membrane."
+    ]
+   },
+   "hi": {
+    "q": "कौन-सा खनिज शरीर की कोशिकाओं के भीतर का प्रमुख धनायन है और हृदय पेशी के सामान्य कार्य के लिए अनिवार्य है?",
+    "options": [
+     "सोडियम",
+     "कैल्शियम",
+     "क्लोराइड",
+     "पोटैशियम"
+    ],
+    "explanation": "पोटैशियम कोशिका-आंतरिक द्रव का प्रमुख धनावेशित आयन है। यह तंत्रिका आवेगों के संचरण तथा हृदय पेशी सहित पेशियों के संकुचन के लिए आवश्यक है।",
+    "notes": [
+     "सोडियम मुख्यतः कोशिकाओं के बाहर के द्रव में होता है।",
+     "कैल्शियम मुख्यतः अस्थियों में होता है।",
+     "क्लोराइड ऋणायन है।",
+     "केला, नारियल पानी एवं आलू इससे समृद्ध हैं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "खनिज"
+    ],
+    "facts": [
+     "रक्त में पोटैशियम का बहुत कम या बहुत अधिक स्तर दोनों हृदय की लय बिगाड़ते हैं।",
+     "सोडियम–पोटैशियम पंप दोनों आयनों को कोशिका झिल्ली के विपरीत ओर रखता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Chemistry, Unit 'Biomolecules' (Vitamins)"
+    },
+    {
+     "source": "ICMR–National Institute of Nutrition, Dietary Guidelines for Indians",
+     "url": "https://www.nin.res.in/"
+    }
+   ]
+  }
+ ]
 }

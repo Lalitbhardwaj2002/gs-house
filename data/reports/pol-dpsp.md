@@ -43,3 +43,8 @@ Recent facts were verified on the web:
   - Renunciation under Section 8 (minor children).
   - Cancellation of OCI registration under Section 7D.
   - NRC in Assam.
+
+## Check of 12 November 2026 (single-question rework)
+Checked 43 questions (001 002 003 004 006 007 008 009 010 012 013 015 018 019 020 021 022 023 025 026 028 031 032 033 035 036 037 038 040 041 042 043 044 046 047 048 049 050 053 054 055 056 057). Articles, amendments, Citizenship Act sections and dates verified; all keys correct.
+- Corrected 047: explanation (en + hi) said deprivation applies only to citizens by registration or naturalisation; Section 10 also covers citizens only by virtue of Article 5(c), which option D's note states. Made consistent.
+- Replaced: none.

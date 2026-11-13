@@ -18,3 +18,10 @@ Every question was solved without looking at the key first. Every key agreed wit
 
 ## Not changed but noted
 - **047**: The wire colours (live red, neutral black, earth green) follow NCERT and Fatman. Newer IS colour codes differ.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 28 questions (003 004 007 008 009 010 013 014 016 017 018 024 026 027 032 034 035 036 037 039 040 043 045 047 050 051 053 056). Every key was solved blind and agreed; numericals re-worked (400 m lap in 80 s: 5 m/s and 0 m/s; echo distance 344 x 0.1 / 2 = 17.2 m). Notes, facts and Hindi checked.
+
+- Corrected: none.
+- Replaced: none.

@@ -45,3 +45,10 @@ Draft: 58 questions. Final: **58 kept** (35 corrected, 0 deleted). Ids are uncha
 
 ## For the writer later
 Not covered, or only lightly: Himalayan vs Peninsular river comparison beyond Q041, the Subarnarekha/Brahmani/Baitarani group, Kerala and Goa west-coast rivers (Mandovi, Zuari, Bharathapuzha only as notes), the Ken–Betwa and other river-linking projects, and Namami Gange / National Mission for Clean Ganga. Lakes are limited to 5 questions (Pangong, Vembanad, Bhojtal and Hussain Sagar are untested).
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 26 questions: 003 004 007 009 011 015 022 024 025 026 027 030 031 035 036 038 041 042 043 045 047 048 051 053 057 058.
+- Corrected:
+  - geo-rivers-003: Hindi spelling of the Chenab's Vedic name fixed (अस्किनी → असिक्नी) in note and explanation.
+  - geo-rivers-047: note C was wrong (Pulicat lies within the Krishna–Kaveri stretch, not north of it); rewritten in both languages.
+- Replaced: none.
