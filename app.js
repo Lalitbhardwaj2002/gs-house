@@ -18,11 +18,21 @@ const CONFIG = {
   maxPlayers: 20,
   counts: [10, 20, 30, 50, 100],
   timers: [0, 30, 45, 60, 90],         // seconds per question; 0 = no limit
-  negatives: [0, 0.25, 0.33],
+  negatives: [0, 0.33, 0.25],
+  // Servers that help two devices find a route to each other. The PeerJS library's own relay
+  // (TURN) servers no longer exist, so the list is given here. STUN servers only reveal a device's
+  // public address: enough on the same Wi-Fi and on most home networks, not on mobile data or
+  // office Wi-Fi at both ends. For those, put a TURN relay in `turn` (see docs/HANDOFF.md):
+  //   turn: [{ urls: ['turn:host:80', 'turns:host:443?transport=tcp'], username: '…', credential: '…' }]
+  stun: [
+    { urls: ['stun:stun.l.google.com:19302', 'stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'] },
+    { urls: 'stun:stun.cloudflare.com:3478' },
+  ],
+  turn: [],
   defaults: { count: 20, timer: 45, level: 'all', negative: 0, track: 'all' },
   heartbeatMs: 2000,
   staleMs: 9000,
-  connectTimeoutMs: 20000,
+  connectTimeoutMs: 25000,
   reconnectForMs: 45000,
   retryEveryMs: 6000,
 };
@@ -36,12 +46,15 @@ const BOOKS = {
   'special-topics': { en: 'Special Topics 2.0', hi: 'स्पेशल टॉपिक्स 2.0' },
   fatman: { en: 'Parmar SSC (Fatman)', hi: 'परमार एसएससी (फैटमैन)' },
   'parmar-ca': { en: 'Parmar SSC Current Affairs 2026', hi: 'परमार एसएससी करेंट अफेयर्स 2026' },
-  'tgt-pgt-gk': { en: 'TGT/PGT Samanya Gyan (solved papers)', hi: 'टीजीटी/पीजीटी सामान्य ज्ञान (हल प्रश्न-पत्र)' },
+  'tgt-pgt-gk': { en: 'Ghatna Chakra TGT/PGT Samanya Gyan (2026 edition)', hi: 'घटना चक्र टीजीटी/पीजीटी सामान्य ज्ञान (संस्करण 2026)' },
 };
 const CODE_CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ'; // no I, L or O: easy to read aloud
 const COLORS = ['#c0392b', '#d35400', '#b7950b', '#27ae60', '#16a085', '#2980b9', '#8e44ad', '#c2185b',
   '#6d4c41', '#00838f', '#5d4037', '#7cb342', '#e67e22', '#3949ab', '#ad1457', '#00897b',
   '#f4511e', '#546e7a', '#9e9d24', '#6a1b9a'];
+
+// Options for every PeerJS connection: our own list of STUN and TURN servers (see CONFIG).
+const peerOptions = () => ({ debug: 1, config: { iceServers: [...CONFIG.stun, ...CONFIG.turn], sdpSemantics: 'unified-plan' } });
 
 // ---------- small helpers ----------
 const $ = (sel) => document.querySelector(sel);
@@ -90,7 +103,7 @@ const T = {
     setup: 'Set up the quiz', syllabus: 'Syllabus', trackAll: 'All', trackTgt: 'TGT / PGT', trackHigher: 'Assistant Professor',
     sections: 'Sections', selectAll: 'Select all', clearAll: 'Clear', qs: (n) => `${n} Qs`, soon: 'soon',
     howMany: 'Questions', level: 'Level', allLevels: 'All', timer: 'Time per question', noLimit: 'Off', secs: (n) => `${n}s`,
-    negative: 'Negative marking', none: 'None', start: 'Start quiz', available: (n, s) => `${n} questions available from ${s} section${s === 1 ? '' : 's'}`,
+    negative: 'Negative marking', none: 'No', start: 'Start quiz', available: (n, s) => `${n} questions available from ${s} section${s === 1 ? '' : 's'}`,
     pickSection: 'Pick at least one section that has questions.', players: 'Players', host: 'host', you: 'you',
     waitHost: (n) => `Waiting for ${n} to start the quiz`, hostPicks: (n) => `${n} is choosing the sections`,
     roomCodeTitle: 'Room code', friendsOpen: (u) => `Friends open ${u} and type this code — or scan:`, copyLink: 'Copy invite link',
@@ -107,7 +120,10 @@ const T = {
     leaveSolo: 'Leave this quiz?', leaveHost: 'Leave and end the quiz for everyone?', leaveGuest: 'Leave this quiz?',
     hostEnded: 'The host ended the quiz.', lost: 'Lost the connection to the host, so the quiz has ended.',
     notFound: (c) => `Room ${c} doesn’t exist. Check the code with whoever invited you.`, full: 'This room is full (20 players max).',
-    cantConnect: 'Couldn’t connect to the room. Some school or office Wi-Fi blocks live games — try mobile data.',
+    cantConnect: 'Couldn’t connect to the room. Check that the host still has the room open, then try again.',
+    blocked: 'Your network and the host’s network don’t allow a direct link. This is common on mobile data and on office or school Wi-Fi. Connect all players to the same Wi-Fi and try again.',
+    noPeer: 'The room feature didn’t load. Check your internet connection, refresh the page and try again. Solo practice still works.',
+    allAnswered: 'Everyone has answered', keepOpen: 'Keep this screen open while friends join.',
     noNet: 'Couldn’t reach the game server. Check your internet connection and try again.',
     broken: 'The quiz didn’t load properly. Check your internet connection and refresh the page.',
     reconnecting: 'Connection lost — reconnecting…', install: '📲 Install the app', installed: 'App installed! 🎉',
@@ -128,6 +144,18 @@ const T = {
     byUnitRecent: 'By unit (recent quizzes)',
     keysHint: 'Keyboard: A–D or 1–4 to answer · Enter for the next question',
     sideWait: 'The explanation appears here once you answer.',
+    bookCardTitle: 'Study with the book: Ghatna Chakra (new edition)',
+    bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank. Polity is ready; the other topics are coming soon.',
+    bookRefLine: 'Reference',
+    notesPdf: 'All notes as one PDF', chapterPdf: 'Save this chapter as PDF', pdfTitle: 'Notes for offline reading',
+    pdfHow: 'Press the button below, then choose "Save as PDF" as the printer. On a phone the same button opens Print, where the PDF can be saved.',
+    pdfMade: 'Notes written for GS House. They follow the topic order of the book; the page numbers refer to it.',
+    bookOpen: 'Open the book companion', bookShort: 'Book companion', bookBack: 'Back to the book', bookAgain: 'Try another set',
+    bookPages: (p) => `Book pp. ${p}`, comingSoon: 'Coming soon', notesReady: 'Notes + quizzes', readNotes: 'Read notes', quiz: 'Quiz',
+    readN: (a, n) => `${a} of ${n} chapters read`, best: (p) => `best ${p}%`, chapterOf: (i, n) => `Chapter ${i} of ${n}`,
+    takeQuiz: 'Take the chapter quiz', fullTest: (n) => `Full test: ${n} mixed questions`, practiseBank: (n) => `Practise ${n} questions`,
+    prevCh: 'Previous', nextCh: 'Next chapter', allChapters: 'All chapters', chapterDone: 'Chapter finished. Now test yourself!',
+    minRead: (m) => `${m} min read`,
   },
   hi: {
     tagline: 'यूपीईएसएससी टीजीटी, पीजीटी एवं असिस्टेंट प्रोफेसर हेतु द्विभाषी सामान्य ज्ञान प्रश्नोत्तरी',
@@ -156,7 +184,10 @@ const T = {
     leaveSolo: 'क्या यह प्रश्नोत्तरी छोड़नी है?', leaveHost: 'छोड़ने पर सभी के लिए प्रश्नोत्तरी समाप्त हो जाएगी। छोड़ें?', leaveGuest: 'क्या यह प्रश्नोत्तरी छोड़नी है?',
     hostEnded: 'होस्ट ने प्रश्नोत्तरी समाप्त कर दी।', lost: 'होस्ट से संपर्क टूट गया, इसलिए प्रश्नोत्तरी समाप्त हो गई।',
     notFound: (c) => `कक्ष ${c} मौजूद नहीं है। आमंत्रित करने वाले से कोड जाँचें।`, full: 'यह कक्ष भर गया है (अधिकतम 20 खिलाड़ी)।',
-    cantConnect: 'कक्ष से नहीं जुड़ पाए। कुछ स्कूल/ऑफिस वाई-फाई लाइव गेम रोकते हैं — मोबाइल डेटा आज़माएँ।',
+    cantConnect: 'कक्ष से नहीं जुड़ पाए। देखें कि होस्ट ने कक्ष खुला रखा है, फिर दोबारा प्रयास करें।',
+    blocked: 'आपका और होस्ट का नेटवर्क सीधा संपर्क नहीं बनने दे रहा। मोबाइल डेटा तथा ऑफिस या स्कूल के वाई-फाई पर ऐसा अक्सर होता है। सभी खिलाड़ी एक ही वाई-फाई से जुड़ें और दोबारा प्रयास करें।',
+    noPeer: 'कक्ष की सुविधा लोड नहीं हुई। इंटरनेट जाँचें, पेज रिफ्रेश करें और दोबारा प्रयास करें। अकेले अभ्यास फिर भी चलेगा।',
+    allAnswered: 'सभी ने उत्तर दे दिया', keepOpen: 'मित्रों के जुड़ने तक यह स्क्रीन खुली रखें।',
     noNet: 'गेम सर्वर तक नहीं पहुँच पाए। इंटरनेट जाँचकर फिर प्रयास करें।',
     broken: 'प्रश्नोत्तरी ठीक से लोड नहीं हुई। इंटरनेट जाँचें और पेज रिफ्रेश करें।',
     reconnecting: 'संपर्क टूटा — फिर से जोड़ रहे हैं…', install: '📲 ऐप इंस्टॉल करें', installed: 'ऐप इंस्टॉल हो गया! 🎉',
@@ -177,6 +208,18 @@ const T = {
     byUnitRecent: 'इकाई अनुसार (हाल की प्रश्नोत्तरी)',
     keysHint: 'कीबोर्ड: उत्तर के लिए A–D या 1–4 · अगले प्रश्न के लिए Enter',
     sideWait: 'उत्तर देते ही व्याख्या यहाँ दिखेगी।',
+    bookCardTitle: 'पुस्तक के साथ पढ़ें: घटना चक्र (नया संस्करण)',
+    bookRefLine: 'संदर्भ',
+    notesPdf: 'सभी नोट्स एक PDF में', chapterPdf: 'इस अध्याय को PDF में सहेजें', pdfTitle: 'बिना इंटरनेट पढ़ने के लिए नोट्स',
+    pdfHow: 'नीचे का बटन दबाएँ, फिर प्रिंटर के रूप में "Save as PDF" चुनें। फोन पर यही बटन प्रिंट खोलता है, जहाँ से PDF सहेजी जा सकती है।',
+    pdfMade: 'ये नोट्स GS House के लिए लिखे गए हैं। ये पुस्तक के विषय-क्रम के अनुसार हैं; पृष्ठ संख्या उसी पुस्तक की है।',
+    bookCardSub: 'टीजीटी/पीजीटी सामान्य ज्ञान प्रश्नकोश के विषय-क्रम में नोट्स और अध्यायवार प्रश्नोत्तरी। राजव्यवस्था तैयार है; शेष विषय जल्द आ रहे हैं।',
+    bookOpen: 'पुस्तक साथी खोलें', bookShort: 'पुस्तक साथी', bookBack: 'पुस्तक पर लौटें', bookAgain: 'नए प्रश्न आज़माएँ',
+    bookPages: (p) => `पुस्तक पृ. ${p}`, comingSoon: 'जल्द आ रहा है', notesReady: 'नोट्स + प्रश्नोत्तरी', readNotes: 'नोट्स पढ़ें', quiz: 'प्रश्नोत्तरी',
+    readN: (a, n) => `${n} में से ${a} अध्याय पढ़े`, best: (p) => `सर्वश्रेष्ठ ${p}%`, chapterOf: (i, n) => `अध्याय ${i} / ${n}`,
+    takeQuiz: 'अध्याय की प्रश्नोत्तरी दें', fullTest: (n) => `पूर्ण परीक्षण: ${n} मिश्रित प्रश्न`, practiseBank: (n) => `${n} प्रश्नों का अभ्यास करें`,
+    prevCh: 'पिछला', nextCh: 'अगला अध्याय', allChapters: 'सभी अध्याय', chapterDone: 'अध्याय पूरा हुआ। अब स्वयं को परखें!',
+    minRead: (m) => `${m} मिनट का पाठ`,
   },
 };
 const t = (key, ...args) => {
@@ -267,6 +310,8 @@ const ui = {
   sheetLang: null,
   sheetFilter: 'all',  // all | wrong | skipped | saved
   menuOpen: false,     // settings menu open
+  bookQuiz: null,      // { topic, chapter } while a quiz started from the book companion runs
+  printTitle: '',      // page title while printing; browsers use it as the PDF's file name
   lastTick: -1,
 };
 // Redraws the current screen after a language or preference change.
@@ -274,6 +319,7 @@ function refresh() {
   ui.stageKey = '';
   if (ui.screen === 'game') render();
   else if (ui.screen === 'home') renderHome();
+  else if (ui.screen === 'book') showBook(book.route, true);
 }
 // What this device has seen of the quiz: the questions it received and its own answers.
 let local = { code: '', questions: {}, mine: {}, shownAt: {} };
@@ -336,7 +382,7 @@ function startSolo(saved = null) {
 
 function openRoom(code, saved = null, attempt = 0) {
   showBusy(saved ? t('reopening') : t('opening'));
-  const peer = new Peer(CONFIG.peerPrefix + code, { debug: 1 });
+  const peer = new Peer(CONFIG.peerPrefix + code, peerOptions());
   let opened = false;
   peer.on('open', async () => {
     opened = true;
@@ -546,6 +592,10 @@ async function startQuiz(only = null) {
 function nextRound() {
   const s = host.state;
   clearTimeout(host.timer);
+  // In a room the host may move on at any time: whoever has not answered yet skips the question.
+  if (s.phase === 'question' && s.round && !s.locked) {
+    for (const p of s.players) if (!p.answered) { p.skipped += 1; p.streak = 0; }
+  }
   if (s.round >= s.total) { finishQuiz(); return; }
   s.round += 1;
   s.phase = 'question';
@@ -617,8 +667,6 @@ function lockRound() {
 function finishQuiz() {
   const s = host.state;
   clearTimeout(host.timer);
-  // Anyone who never answered the last question counts it as skipped.
-  for (const p of s.players) if (s.round && !has(host.answers[s.round] || {}, p.id) && !s.locked) { p.skipped += 1; }
   s.phase = 'over';
   s.reports = Object.fromEntries(s.players.map((p) => [p.id, reportFor(p)]));
   rememberSeen(s.qids);
@@ -719,7 +767,7 @@ function joinRoom(code) {
 }
 
 function makeGuestPeer(g) {
-  const peer = new Peer({ debug: 1 });
+  const peer = new Peer(peerOptions());
   g.peer = peer;
   peer.on('open', () => { if (net === g && g.peer === peer) connectToHost(g); });
   peer.on('disconnected', () => { if (net === g && !peer.destroyed) try { peer.reconnect(); } catch { /* retry loop handles it */ } });
@@ -755,6 +803,25 @@ function connectToHost(g) {
   const lost = () => { if (net === g && g.conn === conn && g.connected) lostHost(g); };
   conn.on('close', lost);
   conn.on('error', lost);
+  // Before the first link is made: if the two networks cannot reach each other, the browser
+  // reports it here. Try once more, then explain what is wrong instead of waiting for the timeout.
+  const pc = conn.peerConnection;
+  if (pc) pc.addEventListener('iceconnectionstatechange', () => {
+    if (pc.iceConnectionState !== 'failed' || net !== g || g.conn !== conn || g.connected) return;
+    g.routeFails = (g.routeFails || 0) + 1;
+    if (g.routeFails < 2) setTimeout(() => { if (net === g && !g.connected && g.peer && g.peer.open) connectToHost(g); }, 1200);
+    else failGuest(t('blocked'), '📶');
+  });
+}
+
+// Why a guest never got into the room: the game server was not reached, the direct route to the
+// host is blocked, or the host did not answer.
+function joinFailure(g) {
+  if (!g.peer || !g.peer.open) return [t('noNet')];
+  const pc = g.conn && g.conn.peerConnection;
+  const route = pc ? pc.iceConnectionState : '';
+  if (g.routeFails || ['checking', 'failed', 'disconnected'].includes(route)) return [t('blocked'), '📶'];
+  return [t('cantConnect')];
 }
 
 function guestWatchdog() {
@@ -762,7 +829,7 @@ function guestWatchdog() {
   if (!g || g.role !== 'guest') return;
   const now = Date.now();
   if (!g.connected) {
-    if (now - g.startedAt > CONFIG.connectTimeoutMs) failGuest(t('cantConnect'));
+    if (now - g.startedAt > CONFIG.connectTimeoutMs) failGuest(...joinFailure(g));
     return;
   }
   if (g.conn && g.conn.open && !g.reconnectingSince) try { g.conn.send({ type: 'ping' }); } catch { /* ignore */ }
@@ -806,7 +873,8 @@ function act(msg) {
   else if (net.conn && net.conn.open) net.conn.send(msg);
 }
 
-function leaveGame() {
+// Ends the quiz on this device. `stay` = 'none' only stops it, for a caller that shows the next screen itself.
+function leaveGame(stay = '') {
   if (net && net.role === 'host') {
     if (net.solo) { clearTimeout(host.timer); host.state = null; } else closeRoom();
   }
@@ -819,8 +887,17 @@ function leaveGame() {
   forgetRoom();
   setBanner('');
   releaseWakeLock();
-  history.replaceState(null, '', location.pathname);
-  renderHome();
+  // A quiz started from the book companion goes back to where it was started.
+  const bq = ui.bookQuiz;
+  setBookQuiz(null);
+  if (bq && stay !== 'none') {
+    const route = bq.practice ? 'book' : `book/${bq.topic}`;
+    history.replaceState({ book: route }, '', `#${route}`);
+    showBook(route);
+  } else if (stay !== 'none') {
+    history.replaceState(null, '', location.pathname);
+    renderHome();
+  }
 }
 
 function forgetRoom() {
@@ -871,6 +948,11 @@ function onFinished(st) {
   if (!net || net.role !== 'host') rememberSeen(Object.values(local.questions).map((q) => q.id));
   recordHistory(rep);
   const acc = pct(rep.correct, rep.total);
+  const bq = ui.bookQuiz;
+  if (bq && !bq.practice) {
+    const key = bq.chapter || `${bq.topic}-test`;
+    saveBookProgress(key, { best: Math.max((bookProgress[key] || {}).best || 0, acc) });
+  }
   sfx.fanfare();
   if (acc >= 40) petals();
 }
@@ -953,6 +1035,7 @@ function lobbyHTML(v, amHost) {
       <p class="muted small">${t('friendsOpen', `<b>${esc(prettyUrl())}</b>`)}</p>
       <div class="qr" id="qr" hidden></div>
       <div class="row"><button class="btn" data-action="copy">${t('copyLink')}</button>${navigator.share ? `<button class="btn" data-action="share">${t('share')}</button>` : ''}</div>
+      ${amHost ? `<p class="muted small">📱 ${t('keepOpen')}</p>` : ''}
       ${isLocalHost() ? `<p class="muted small">${t('localHost')}</p>` : ''}
     </section>
     <section class="card">
@@ -1008,26 +1091,30 @@ function setupHTML(v, amHost) {
           <button class="btn" data-action="quick-marks" ${marks.size ? '' : 'disabled'}>${t('savedQs', marks.size)}</button>
           <button class="btn" data-action="quick-wrong" ${mistakes.size ? '' : 'disabled'}>${t('mistakes', mistakes.size)}</button>
         </div>` : '';
+  // The rules of the quiz (time and negative marking) come first, where every player sees them
+  // at once; then the sections; then the number and level of questions.
   return `
     <div class="setup-grid">
+      <div class="setup-rules">
+        <p class="field-label">⏱️ ${t('timer')}</p>
+        <div class="segs segs-5">${seg('timer', CONFIG.timers, (n) => (n ? t('secs', n) : t('noLimit')))}</div>
+        <p class="field-label">➖ ${t('negative')}</p>
+        <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '1/3' : '1/4'}` : t('none')))}</div>
+      </div>
       <div class="setup-secs">
         <p class="field-label">${t('syllabus')}</p>
         <div class="segs segs-3">${tracks.map(([val, label]) => `<button class="seg ${st.track === val ? 'on' : ''}" ${amHost ? `data-action="set" data-key="track" data-val="${val}"` : dis}>${label}</button>`).join('')}</div>
         <p class="field-label label-row"><span>${t('sections')}</span>${amHost && pickable.length ? `<button class="link" data-action="all-secs">${allOn ? t('clearAll') : t('selectAll')}</button>` : ''}</p>
         <div class="units">${units}</div>
       </div>
-      <div class="setup-opts">
+      <div class="setup-more">
         <p class="field-label">${t('howMany')}</p>
         <div class="segs segs-5">${seg('count', CONFIG.counts, (n) => n)}</div>
         <p class="field-label">${t('level')}</p>
         <div class="segs segs-4">${['all', ...LEVELS].map((l) => {
           const ok = l === 'all' || TRACK_LEVELS[st.track].includes(l);
           return `<button class="seg ${st.level === l ? 'on' : ''}" ${amHost && ok ? `data-action="set" data-key="level" data-val="${l}"` : 'disabled'}>${l === 'all' ? t('allLevels') : t(`level_${l}`)}</button>`;
-        }).join('')}</div>
-        <p class="field-label">${t('timer')}</p>
-        <div class="segs segs-5">${seg('timer', CONFIG.timers, (n) => (n ? t('secs', n) : t('noLimit')))}</div>
-        <p class="field-label">${t('negative')}</p>
-        <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '⅓' : '¼'}` : t('none')))}</div>${quick}
+        }).join('')}</div>${quick}
       </div>
     </div>`;
 }
@@ -1140,9 +1227,14 @@ function resultsHTML(v, amHost) {
         <span class="lb-score">${fmtScore(p.score)}</span>
       </div>`;
   }).join('');
-  const next = amHost
+  const bq = ui.bookQuiz;
+  const again = amHost
     ? `<button class="btn primary big" data-action="again">${t('playAgain')}</button>`
     : `<p class="muted center">${t('waitHost', esc(hostName(v)))}<span class="dots"></span></p>`;
+  // After a quiz from the book companion: another set from the same chapter, or back to the book.
+  const next = !bq ? again
+    : `${bq.practice ? again : `<button class="btn primary big" data-action="book-again">🎯 ${t('bookAgain')}</button>`}
+       <button class="btn big" data-action="leave-now">📚 ${t('bookBack')}</button>`;
   const missed = missedQids();
   const retry = amHost && v.solo && missed.length
     ? `<button class="btn big" data-action="retry">🔁 ${t('retryWrong', missed.length)}</button>` : '';
@@ -1314,9 +1406,17 @@ function updateRegions(v, amHost) {
     const mine = local.mine[v.round];
     const doneMe = !!mine || v.locked;
     const last = v.round >= v.total;
-    setHTML('next-area', amHost
-      ? (doneMe || v.locked ? `<button class="btn primary big" data-action="next">${last ? `🏁 ${t('results')}` : `${t('next')} ➜`}</button>` : '')
-      : (doneMe ? `<p class="muted center">${t('waitNext', esc(hostName(v)))}<span class="dots"></span></p>` : ''));
+    const nextLabel = last ? `🏁 ${t('results')}` : `${t('next')} ➜`;
+    // In a room everyone sees how many have answered; the host can move on at any time, and the
+    // button turns bright once all have answered.
+    const answeredN = active.filter((p) => p.answered).length;
+    const everyone = v.locked || (active.length > 0 && answeredN === active.length);
+    const status = `<p class="answer-status ${everyone ? 'all' : ''}">${everyone ? `✅ ${t('allAnswered')}` : `⏳ ${t('answered', answeredN, active.length)}`}</p>`;
+    let nextHTML;
+    if (v.solo) nextHTML = doneMe ? `<button class="btn primary big" data-action="next">${nextLabel}</button>` : '';
+    else if (amHost) nextHTML = `${status}<button class="btn big ${everyone ? 'primary' : ''}" data-action="next">${nextLabel}</button>`;
+    else nextHTML = doneMe ? `${status}<p class="muted center">${t('waitNext', esc(hostName(v)))}<span class="dots"></span></p>` : '';
+    setHTML('next-area', nextHTML);
   }
 }
 
@@ -1387,6 +1487,11 @@ function renderHome() {
     </section>
     <div id="install" class="install-area">${installHTML()}</div>
     <section class="card stack">${actions}</section>
+    ${invited ? '' : `
+    <section class="card book-entry">
+      <div class="book-entry-head"><span class="book-emoji">📚</span><div><h2>${t('bookCardTitle')}</h2><p class="muted small">${t('bookCardSub')}</p></div></div>
+      <button class="btn big" data-action="book">${t('bookOpen')} ▶</button>
+    </section>`}
     ${historyHTML()}`;
 }
 
@@ -1403,6 +1508,320 @@ function showError(message, emoji = '🪷') {
 function enterGame() {
   setScreen('game');
   keepAwake();
+}
+
+// =====================================================================
+// Book companion: notes and chapter quizzes in the topic order of a printed book
+// =====================================================================
+// data/book/book.json lists the book's topics; a topic that is ready has chapters, and each chapter
+// has a notes file (data/book/<id>.txt, English and Hindi) and a "pool": the questions of the bank
+// that belong to it, chosen by section and topic path. Screens are routes: "book" (all topics),
+// "book/<topic>" (its chapters) and "book/<topic>/<chapter>" (the notes).
+const book = { data: null, notes: {}, route: '' };
+const bookProgress = (() => {
+  try { return JSON.parse(store.get('localStorage', 'pp-book') || '{}') || {}; } catch { return {}; }
+})();
+function saveBookProgress(id, patch) {
+  bookProgress[id] = { ...(bookProgress[id] || {}), ...patch };
+  store.set('localStorage', 'pp-book', JSON.stringify(bookProgress));
+}
+const bookTopic = (id) => book.data.units.flatMap((u) => u.topics).find((x) => x.id === id);
+const bookName = (x) => esc(x[lang] || x.en);
+const SPINNER = '<div class="screen-msg"><div class="spinner"></div></div>';
+
+// A tap opens a route and adds a step to the browser history, so the phone's Back button works.
+function openBook(route) {
+  history.pushState({ book: route }, '', `#${route}`);
+  showBook(route);
+}
+
+async function showBook(route, keepScroll = false) {
+  book.route = route;
+  setScreen('book');
+  if (!book.data) {
+    app.innerHTML = SPINNER;
+    try {
+      const res = await fetch('data/book/book.json', { cache: 'no-cache' });
+      if (!res.ok) throw new Error('book.json');
+      book.data = await res.json();
+    } catch { showError(t('broken')); return; }
+    if (book.route !== route || ui.screen !== 'book') return;
+  }
+  // "book/<topic>/print" is the printable page of all its notes; a fourth part picks the language.
+  const [, topicId, chapterId, extra] = route.split('/');
+  const topic = topicId ? bookTopic(topicId) : null;
+  if (topic && topic.chapters && chapterId === 'print') { await showBookPrint(topic, extra, keepScroll); return; }
+  const chapter = topic && topic.chapters && chapterId ? topic.chapters.find((c) => c.id === chapterId) : null;
+  if (chapter) { await showChapter(topic, chapter, keepScroll); return; }
+  app.innerHTML = topic && topic.chapters ? bookTopicHTML(topic) : bookIndexHTML();
+  if (!keepScroll) window.scrollTo(0, 0);
+}
+
+function bookBar(backRoute, label) {
+  const back = backRoute
+    ? `<button class="chip back" data-action="book-go" data-route="${backRoute}">‹ ${label}</button>`
+    : `<button class="chip back" data-action="book-home">‹ ${t('home')}</button>`;
+  return `
+    <header class="topbar">
+      ${back}
+      <div class="topbar-right">
+        <button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">EN</span><span class="${lang === 'hi' ? 'on' : ''}">हिं</span></button>
+        ${menuHTML()}
+      </div>
+    </header>`;
+}
+
+// Questions in the bank for a topic that has no notes yet (TGT and PGT levels).
+const practiceCount = (topic) => (topic.practice || []).reduce((n, id) => {
+  const c = bankIndex.sections[id];
+  return n + (c ? (c.TGT || 0) + (c.PGT || 0) : 0);
+}, 0);
+
+function bookIndexHTML() {
+  const b = book.data;
+  const row = (x) => {
+    const head = `<span class="topic-icon">${x.icon}</span><span><span class="topic-name">${bookName(x)}</span><span class="topic-meta">${t('bookPages', esc(x.pages))}</span></span>`;
+    if (x.chapters) {
+      const read = x.chapters.filter((c) => (bookProgress[c.id] || {}).read).length;
+      return `<button class="topic ready" data-action="book-go" data-route="book/${x.id}">${head}<span class="badge go">${t('notesReady')} ▶</span>
+        <span class="topic-more">${t('readN', read, x.chapters.length)}</span></button>`;
+    }
+    const n = practiceCount(x);
+    return `<div class="topic soon">${head}<span class="badge">${t('comingSoon')}</span>
+      ${n ? `<button class="link topic-more" data-action="book-practice" data-id="${x.id}">${t('practiseBank', n)} ▶</button>` : ''}</div>`;
+  };
+  return `
+    ${bookBar('')}
+    <section class="hero book-hero">
+      <div class="book-emoji">📚</div>
+      <h1 class="book-title">${bookName(b.title)}</h1>
+      <p class="tagline">${bookName(b.subtitle)}</p>
+    </section>
+    ${b.units.map((u) => `
+      <section class="card">
+        <h2>${bookName(u)}</h2>
+        <div class="topics">${u.topics.map(row).join('')}</div>
+      </section>`).join('')}
+    <p class="muted small center">${bookName(b.about)}</p>`;
+}
+
+function bookTopicHTML(topic) {
+  const list = topic.chapters;
+  const read = list.filter((c) => (bookProgress[c.id] || {}).read).length;
+  const rows = list.map((c, i) => {
+    const p = bookProgress[c.id] || {};
+    return `
+      <article class="chapter ${p.read ? 'done' : ''}">
+        <div class="ch-num">${p.read ? '✓' : i + 1}</div>
+        <div>
+          <h3>${bookName(c)}</h3>
+          <p class="muted small">${t('bookPages', esc(c.pages))}${p.best != null ? ` · 🎯 ${t('best', p.best)}` : ''}</p>
+          <div class="ch-actions">
+            <button class="btn" data-action="book-go" data-route="book/${topic.id}/${c.id}">📖 ${t('readNotes')}</button>
+            <button class="btn" data-action="book-quiz" data-topic="${topic.id}" data-id="${c.id}">🎯 ${t('quiz')}</button>
+          </div>
+        </div>
+      </article>`;
+  }).join('');
+  const test = bookProgress[`${topic.id}-test`] || {};
+  return `
+    ${bookBar('book', t('bookShort'))}
+    <section class="card">
+      <p class="eyebrow center">${t('bookPages', esc(topic.pages))}</p>
+      <h2 class="ornate">${topic.icon} ${bookName(topic)}</h2>
+      <div class="meter"><span class="m-label">${t('readN', read, list.length)}</span><span class="m-bar"><i style="--w:${pct(read, list.length)}%" class="hi"></i></span><span class="m-val">${pct(read, list.length)}%</span></div>
+      <div class="chapters">${rows}</div>
+      <div class="stack">
+        <button class="btn primary big" data-action="book-quiz" data-topic="${topic.id}" data-id="">🏁 ${t('fullTest', 30)}${test.best != null ? ` · ${t('best', test.best)}` : ''}</button>
+        <button class="btn big" data-action="book-go" data-route="book/${topic.id}/print">📄 ${t('notesPdf')}</button>
+      </div>
+      <p class="refs book-foot">📚 <b>${t('bookRefLine')}:</b> ${refsText([{ book: 'tgt-pgt-gk', page: topic.pages }])}</p>
+    </section>`;
+}
+
+// Notes are plain text with a few marks, one per line:
+//   # title      ## heading      > opening line      - point      | a | b |  table row (first row = header)
+//   ~ year :: event  (timeline)      ? question :: answer  (tap-to-reveal card)
+//   ! kind | title   starts a box (remember, trick, exam, recap); its lines run until a blank line
+// Inside a line, **bold** and ==highlight== work.
+function parseNotes(text) {
+  const blocks = [];
+  let box = null;
+  const target = () => (box ? box.items : blocks);
+  const group = (type, item) => {
+    const list = target();
+    const prev = list[list.length - 1];
+    if (prev && prev.type === type) prev.items.push(item); else list.push({ type, items: [item] });
+  };
+  const cells = (s, sep) => s.split(sep).map((c) => c.trim());
+  for (const raw of text.split('\n')) {
+    const line = raw.trim();
+    if (!line) { box = null; continue; }
+    const start = line.match(/^!\s*(\w+)\s*\|\s*(.+)$/);
+    if (start) { box = { type: 'box', kind: start[1], title: start[2], items: [] }; blocks.push(box); continue; }
+    if (line.startsWith('## ')) { box = null; blocks.push({ type: 'h', text: line.slice(3) }); continue; }
+    if (line.startsWith('# ')) { blocks.push({ type: 'title', text: line.slice(2) }); continue; }
+    if (line.startsWith('> ')) target().push({ type: 'lead', text: line.slice(2) });
+    else if (line.startsWith('- ')) group('list', line.slice(2));
+    else if (line.startsWith('|')) group('table', cells(line.replace(/^\||\|$/g, ''), '|'));
+    else if (line.startsWith('~ ')) group('time', cells(line.slice(2), '::'));
+    else if (line.startsWith('? ')) group('cards', cells(line.slice(2), '::'));
+    else target().push({ type: 'p', text: line });
+  }
+  return blocks;
+}
+
+const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/==(.+?)==/g, '<mark>$1</mark>');
+const BOX_ICON = { remember: '📌', trick: '🧠', exam: '🔥', recap: '⚡' };
+function notesHTML(blocks, open = false) {
+  return blocks.map((b) => {
+    switch (b.type) {
+      case 'lead': return `<p class="nb-lead">${fmt(b.text)}</p>`;
+      case 'h': return `<h2 class="nb-h">${fmt(b.text)}</h2>`;
+      case 'p': return `<p>${fmt(b.text)}</p>`;
+      case 'list': return `<ul class="nb-list">${b.items.map((i) => `<li>${fmt(i)}</li>`).join('')}</ul>`;
+      case 'table': {
+        const [head, ...rows] = b.items;
+        return `<div class="nb-table ${head.length > 3 ? 'wide' : ''}"><table><thead><tr>${head.map((c) => `<th>${fmt(c)}</th>`).join('')}</tr></thead>
+          <tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${fmt(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+      }
+      case 'time': return `<ol class="nb-time">${b.items.map(([when, what]) => `<li><b>${fmt(when)}</b><span>${fmt(what || '')}</span></li>`).join('')}</ol>`;
+      case 'cards': return `<div class="nb-cards">${b.items.map(([q, a]) => `<details class="nb-card" ${open ? 'open' : ''}><summary>${fmt(q)}</summary><p>${fmt(a || '')}</p></details>`).join('')}</div>`;
+      case 'box': return `<aside class="nb-box nb-${esc(b.kind)}"><h3>${BOX_ICON[b.kind] || '📌'} ${fmt(b.title)}</h3>${notesHTML(b.items, open)}</aside>`;
+      default: return '';
+    }
+  }).join('');
+}
+
+// Reads and parses the notes of one chapter (both languages); kept in memory once read.
+async function loadNotes(id) {
+  if (!book.notes[id]) {
+    const res = await fetch(`data/book/${id}.txt`, { cache: 'no-cache' });
+    if (!res.ok) throw new Error(id);
+    const parts = (await res.text()).split(/^@(en|hi)\s*$/m);     // ['', 'en', text, 'hi', text]
+    const notes = {};
+    for (let i = 1; i < parts.length; i += 2) notes[parts[i]] = parseNotes(parts[i + 1]);
+    book.notes[id] = notes;
+  }
+  return book.notes[id];
+}
+
+// All the notes of a topic on one page, laid out for paper: the browser's "Save as PDF" turns it
+// into an offline copy. These are GS House's own notes, not the book.
+async function showBookPrint(topic, wanted, keepScroll) {
+  const route = book.route;
+  if (!keepScroll) app.innerHTML = SPINNER;
+  let all;
+  try { all = await Promise.all(topic.chapters.map((c) => loadNotes(c.id))); } catch { showError(t('broken')); return; }
+  if (book.route !== route || ui.screen !== 'book') return;
+  const mode = ['en', 'hi', 'both'].includes(wanted) ? wanted : lang;
+  const langs = mode === 'both' ? ['en', 'hi'] : [mode];
+  const name = (x, l) => esc(x[l] || x.en);
+  const chapters = topic.chapters.map((c, i) => langs.map((l) => {
+    const blocks = all[i][l] || all[i].en || [];
+    const title = (blocks.find((b) => b.type === 'title') || {}).text || c[l] || c.en;
+    return `
+      <section class="print-chapter" lang="${l === 'hi' ? 'hi' : 'en'}">
+        <p class="eyebrow">${T[l].chapterOf(i + 1, topic.chapters.length)} · ${T[l].bookPages(esc(c.pages))}</p>
+        <h1 class="reader-title">${fmt(title)}</h1>
+        ${notesHTML(blocks, true)}
+      </section>`;
+  }).join('')).join('');
+  const seg = (l, label) => `<button class="seg ${mode === l ? 'on' : ''}" data-action="print-lang" data-route="book/${topic.id}/print/${l}">${label}</button>`;
+  app.innerHTML = `
+    ${bookBar(`book/${topic.id}`, t('allChapters'))}
+    <section class="card stack no-print">
+      <h2>📄 ${t('pdfTitle')}</h2>
+      <p class="muted small">${t('pdfHow')}</p>
+      <div class="segs segs-3">${seg('en', 'English')}${seg('hi', 'हिन्दी')}${seg('both', t('both'))}</div>
+      <button class="btn primary big" data-action="print" data-title="GS House - ${esc(topic.en)} - notes">🖨️ ${t('print')}</button>
+    </section>
+    <article class="card reader print-book" lang="${mode === 'hi' ? 'hi' : 'en'}">
+      <header class="print-cover">
+        <p class="eyebrow">GS HOUSE · ${langs.map((l) => name(book.data.title, l)).join(' · ')}</p>
+        <h1 class="reader-title">${topic.icon} ${langs.map((l) => name(topic, l)).join(' · ')}</h1>
+        <p class="muted small">${langs.map((l) => T[l].pdfMade).join(' ')}</p>
+      </header>
+      ${chapters}
+    </article>`;
+  if (!keepScroll) window.scrollTo(0, 0);
+}
+
+async function showChapter(topic, chapter, keepScroll) {
+  if (!book.notes[chapter.id]) {
+    app.innerHTML = SPINNER;
+    try { await loadNotes(chapter.id); } catch { showError(t('broken')); return; }
+    if (book.route !== `book/${topic.id}/${chapter.id}` || ui.screen !== 'book') return;
+  }
+  const notes = book.notes[chapter.id];
+  const blocks = notes[lang] || notes.en || [];
+  const at = topic.chapters.indexOf(chapter);
+  const prev = topic.chapters[at - 1];
+  const next = topic.chapters[at + 1];
+  const title = (blocks.find((b) => b.type === 'title') || {}).text || chapter[lang] || chapter.en;
+  const words = JSON.stringify(blocks).split(/\s+/).length;
+  const go = (c, label) => (c ? `<button class="btn" data-action="book-go" data-route="book/${topic.id}/${c.id}">${label}</button>` : '');
+  app.innerHTML = `
+    ${bookBar(`book/${topic.id}`, t('allChapters'))}
+    <article class="card reader" lang="${lang === 'hi' ? 'hi' : 'en'}">
+      <p class="eyebrow">${t('chapterOf', at + 1, topic.chapters.length)} · ${t('bookPages', esc(chapter.pages))} · ${t('minRead', Math.max(1, Math.round(words / 170)))}</p>
+      <h1 class="reader-title">${fmt(title)}</h1>
+      ${notesHTML(blocks)}
+      <p class="refs">📚 <b>${t('bookRefLine')}:</b> ${refsText([{ book: 'tgt-pgt-gk', page: chapter.pages }])}</p>
+      <p class="reader-end no-print" id="reader-end">🎉 ${t('chapterDone')}</p>
+      <div class="reader-nav no-print">${go(prev, `‹ ${t('prevCh')}`)}${go(next, `${t('nextCh')} ›`)}</div>
+      <button class="btn reader-pdf no-print" data-action="print" data-title="GS House - ${esc(chapter.en)}">🖨️ ${t('chapterPdf')}</button>
+    </article>
+    <div class="sticky-bar reader-bar">
+      <button class="btn primary" data-action="book-quiz" data-topic="${topic.id}" data-id="${chapter.id}">🎯 ${t('takeQuiz')}</button>
+    </div>`;
+  if (!keepScroll) window.scrollTo(0, 0);
+  // The chapter counts as read once its last line has been on screen.
+  const end = document.getElementById('reader-end');
+  if (end && 'IntersectionObserver' in window) {
+    const seen = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { saveBookProgress(chapter.id, { read: 1 }); seen.disconnect(); }
+    });
+    seen.observe(end);
+  }
+}
+
+// The questions of a chapter: every TGT or PGT question whose topic path matches the chapter's pool.
+async function chapterQuestions(chapter) {
+  await loadBank([...new Set(chapter.pool.map((p) => p[0]))]);
+  return chapter.pool.flatMap(([sec, p1, p2]) => (host.bank[sec] || [])
+    .filter((q) => q.level !== 'Higher' && q.en.path[1] === p1 && (!p2 || p2.includes(q.en.path[2])))
+    .map((q) => q.id));
+}
+
+// A solo quiz on one chapter (10 questions) or on the whole topic (30, spread over its chapters),
+// taking questions this device has not seen first.
+async function startBookQuiz(topicId, chapterId) {
+  const topic = bookTopic(topicId);
+  const chapters = chapterId ? topic.chapters.filter((c) => c.id === chapterId) : topic.chapters;
+  app.innerHTML = SPINNER;
+  const pools = await Promise.all(chapters.map(chapterQuestions));
+  const seen = new Set(readList('pp-seen'));
+  const queues = shuffle(pools).map((ids) => [...shuffle(ids.filter((id) => !seen.has(id))), ...shuffle(ids.filter((id) => seen.has(id)))])
+    .filter((q) => q.length);
+  const picked = [];
+  const count = chapterId ? 10 : 30;
+  for (let i = 0; picked.length < count && queues.some((q) => q.length); i++) {
+    const q = queues[i % queues.length];
+    if (q.length && !picked.includes(q[0])) picked.push(q[0]);
+    q.shift();
+  }
+  if (!picked.length) { showBook(book.route); toast(t('noQs')); return; }
+  setBookQuiz({ topic: topicId, chapter: chapterId || '' });
+  startSolo();
+  Object.assign(host.state.settings, { timer: 0, negative: 0 });
+  handleAction(me.id, { type: 'quick', qids: picked });
+}
+
+// Remembers that the running solo quiz came from the book, so that leaving it returns there.
+function setBookQuiz(value) {
+  ui.bookQuiz = value;
+  if (value) store.set('sessionStorage', 'pp-bookquiz', JSON.stringify(value)); else store.del('sessionStorage', 'pp-bookquiz');
 }
 
 // ---------- artwork (original) ----------
@@ -1475,7 +1894,9 @@ function settingsFrom(v) { return { ...v.settings, sections: [...v.settings.sect
 const actions = {
   create() {
     const name = readName();
-    if (name) openRoom(randomCode());
+    if (!name) return;
+    if (typeof Peer === 'undefined') { showError(t('noPeer')); return; }
+    openRoom(randomCode());
   },
   pick(btn) {
     const v = ui.view;
@@ -1564,7 +1985,12 @@ const actions = {
     const el = document.getElementById(`sh-${btn.dataset.r}`);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   },
-  print: () => window.print(),
+  print(btn) { ui.printTitle = (btn && btn.dataset.title) || ''; window.print(); },
+  'print-lang'(btn) {
+    const route = btn.dataset.route;
+    history.replaceState({ book: route }, '', `#${route}`);
+    showBook(route, true);
+  },
   copy: copyInvite,
   share() {
     const code = ui.view.code;
@@ -1583,7 +2009,29 @@ const actions = {
     if (window.confirm(msg)) leaveGame();
   },
   home: () => leaveGame(),
+  'leave-now': () => leaveGame(),
   'clear-invite'() { history.replaceState(null, '', location.pathname); renderHome(); },
+  // ----- book companion -----
+  book: () => openBook('book'),
+  'book-go': (btn) => openBook(btn.dataset.route),
+  'book-home'() { history.pushState(null, '', location.pathname); renderHome(); },
+  'book-quiz': (btn) => startBookQuiz(btn.dataset.topic, btn.dataset.id),
+  'book-again'() {
+    const bq = ui.bookQuiz;
+    leaveGame('none');
+    setScreen('book');
+    startBookQuiz(bq.topic, bq.chapter);
+  },
+  // A topic whose notes are not written yet: open the quiz setup with its sections of the bank ticked.
+  'book-practice'(btn) {
+    const topic = bookTopic(btn.dataset.id);
+    const secs = (topic.practice || []).filter((id) => sectionById[id]);
+    if (!secs.length) return;
+    setBookQuiz({ topic: topic.id, chapter: '', practice: true });
+    ui.openUnits = new Set(secs.map((id) => sectionById[id].unit));
+    startSolo();
+    handleAction(me.id, { type: 'settings', track: 'tgt', sections: secs });
+  },
 };
 
 function readName() {
@@ -1629,7 +2077,9 @@ document.addEventListener('keydown', (e) => {
   }
   if (key === 'enter' || key === 'n' || key === 'arrowright') {
     if (key === 'enter' && on && on.closest('button, a, summary')) return; // the focused control acts on Enter itself
-    if (document.querySelector('#next-area [data-action="next"]')) { e.preventDefault(); actions.next(); }
+    // Only once this player has answered (or the question is closed), so a stray key cannot skip a question.
+    const ready = local.mine[v.round] || v.locked;
+    if (ready && document.querySelector('#next-area [data-action="next"]')) { e.preventDefault(); actions.next(); }
   }
 });
 document.addEventListener('change', (e) => {
@@ -1646,6 +2096,7 @@ document.addEventListener('submit', (e) => {
   const codeInput = form.querySelector('[name="code"]');
   const code = normalizeCode(codeInput.value);
   if (code.length !== 4) { flagInvalid('code-field', codeInput); return; }
+  if (typeof Peer === 'undefined') { showError(t('noPeer')); return; }
   joinRoom(code);
 });
 
@@ -1658,6 +2109,26 @@ function flagInvalid(fieldId, input) {
   if (field) { field.classList.remove('invalid'); void field.offsetWidth; field.classList.add('invalid'); }
   if (input) input.focus();
 }
+
+// Printing, which is also how a PDF is saved: the recall cards are opened so that their answers
+// print, and the page gets a short title, which browsers use as the file name of the PDF.
+let titleBeforePrint = '';
+window.addEventListener('beforeprint', () => {
+  document.querySelectorAll('details.nb-card').forEach((d) => { d.open = true; });
+  if (ui.printTitle) { titleBeforePrint = document.title; document.title = ui.printTitle; }
+});
+window.addEventListener('afterprint', () => {
+  if (titleBeforePrint) { document.title = titleBeforePrint; titleBeforePrint = ''; }
+  ui.printTitle = '';
+});
+
+// The Back button: inside the book companion it goes one screen back; during a quiz that was
+// started from the book it asks before leaving; in any other quiz it does nothing.
+window.addEventListener('popstate', (e) => {
+  if (ui.screen === 'game' || ui.screen === 'busy') { if (ui.bookQuiz) actions.leave(); return; }
+  const route = (e.state && e.state.book) || (location.hash.startsWith('#book') ? location.hash.slice(1) : '');
+  if (route) showBook(route); else renderHome();
+});
 
 document.addEventListener('visibilitychange', () => {
   if (document.visibilityState !== 'visible') return;
@@ -1751,10 +2222,21 @@ async function boot() {
   const role = store.get('sessionStorage', 'pp-role');
   const code = normalizeCode(new URLSearchParams(location.search).get('room'));
   const read = (key) => { try { return JSON.parse(store.get('sessionStorage', key) || 'null'); } catch { return null; } };
-  if (role === 'solo') { const saved = read('pp-solo'); if (saved && saved.state) { startSolo(saved); return; } }
+  if (role === 'solo') {
+    const saved = read('pp-solo');
+    if (saved && saved.state) { ui.bookQuiz = read('pp-bookquiz'); startSolo(saved); return; }
+  }
+  setBookQuiz(null);
   if (typeof Peer !== 'undefined') {
     if (code && role === 'host') { const saved = read('pp-host'); if (saved && saved.state && saved.state.code === code) { openRoom(code, saved); return; } }
     if (code && role === 'guest' && me.name) { joinRoom(code); return; }
+  }
+  // A link or a reload inside the book companion opens it again at the same place.
+  if (!code && location.hash.startsWith('#book')) {
+    const route = location.hash.slice(1);
+    history.replaceState({ book: route }, '', `#${route}`);
+    showBook(route);
+    return;
   }
   renderHome();
 }

@@ -30,3 +30,17 @@ Replaced (same id, level and answer position):
 - 014: "three times" was stated in 001's facts → now the President who proclaimed the Emergency of June 1975 (Fakhruddin Ali Ahmed).
 - 016: Sarkaria/Centre–State link stated in 004 → now the 2007 Commission on Centre–State Relations (Punchhi).
 - 017: Article 263 for the Inter-State Council was stated in 004 → now Article 254 (repugnancy on Concurrent List matters).
+
+## Check of 13 November 2026 (new questions for the book companion chapters)
+Checked 14 new questions (021–034: parliamentary and federal system, Centre–State relations, emergency provisions), plus the whole file for overlap. Article numbers checked against the Constitution; Bommai case against the judgment (11 March 1994).
+- Corrected 021: correct option shortened (stood out by length).
+- Corrected 022: correct option shortened (stood out by length).
+- Corrected 024: option A 'Police' changed to 'Fisheries' (Police gave away 011).
+- Corrected 031: options rebalanced so the key does not stand out by length; option D now a three-fourths majority.
+- Corrected 034: note D made precise; fact 2 no longer repeats 003.
+- Corrected refs of 021–034: book pages kept only where the fact is on the page (104, 105, 106, 107, 111); Constitution/judgment cited otherwise.
+- Corrected old 001 (note C, fact 2, explanation), 006 (note B), 017 (note A), 020 (fact 1): they gave away the answers of 028, 031, 032, 026 and 033.
+- Replaced 023: Article 263 / Inter-State Council was given away by 004; now asks the Article on inter-state river water disputes (262).
+- Replaced 025: the Sarkaria Commission was given away by 016 and 004; now asks the Article for statutory grants-in-aid (275); path[2] now 'Financial relations'.
+- Replaced 029: 'Financial Emergency never proclaimed' was stated in 003; now asks the Article for automatic suspension of Article 19 (358); path[2] 'National Emergency'.
+- Not verified: nothing outstanding.

@@ -904,7 +904,7 @@
      "Units of memory"
     ],
     "facts": [
-     "The bit (binary digit 0 or 1) is the basic unit of memory.",
+     "Half a byte is a nibble, so a byte holds exactly two nibbles.",
      "One hexadecimal digit corresponds exactly to one nibble."
     ]
    },
@@ -929,7 +929,7 @@
      "मेमोरी की इकाइयाँ"
     ],
     "facts": [
-     "बिट (बाइनरी अंक 0 या 1) मेमोरी की मूल इकाई है।",
+     "आधे बाइट को निबल कहते हैं, अतः एक बाइट में ठीक दो निबल होते हैं।",
      "एक हेक्साडेसिमल अंक ठीक एक निबल के बराबर होता है।"
     ]
    },
@@ -1446,7 +1446,7 @@
     ],
     "explanation": "A standard DVD holds about 4.7 GB. A CD-ROM is written during manufacture, a CD-R can be written once and a CD-RW can be erased and rewritten.",
     "notes": [
-     "The capacity of a CD.",
+     "Far too small: a single-layer DVD holds several gigabytes.",
      "The capacity of a standard DVD.",
      "The capacity of a single-layer Blu-ray disc.",
      "The capacity of a dual-layer Blu-ray disc."
@@ -1471,7 +1471,7 @@
     ],
     "explanation": "मानक डीवीडी में लगभग 4.7 जीबी डेटा आता है। सीडी-रोम निर्माण के समय लिखी जाती है, सीडी-आर एक बार लिखी जा सकती है तथा सीडी-आरडब्ल्यू को मिटाकर पुनः लिखा जा सकता है।",
     "notes": [
-     "यह सीडी की क्षमता है।",
+     "यह बहुत कम है: एकल-परत डीवीडी में कई गीगाबाइट डेटा आता है।",
      "यह मानक डीवीडी की क्षमता है।",
      "यह एकल-परत ब्लू-रे डिस्क की क्षमता है।",
      "यह द्वि-परत ब्लू-रे डिस्क की क्षमता है।"
@@ -2510,6 +2510,652 @@
     {
      "source": "Microsoft Support, Keyboard shortcuts in Word",
      "url": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-041",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The sum of the binary numbers 1011 and 0110 is:",
+    "options": [
+     "10001",
+     "10010",
+     "11101",
+     "01111"
+    ],
+    "explanation": "Adding column by column from the right with carries (1 + 1 = 10 in binary) gives 10001. As a check, 1011 is 11 and 0110 is 6 in decimal, and 11 + 6 = 17 = 16 + 1, which is 10001.",
+    "notes": [
+     "10001 = 16 + 1 = 17, the correct sum.",
+     "10010 = 16 + 2 = 18, one more than the sum.",
+     "11101 = 16 + 8 + 4 + 1 = 29.",
+     "01111 = 8 + 4 + 2 + 1 = 15, two less than the sum."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Number systems",
+     "Binary arithmetic"
+    ],
+    "facts": [
+     "Rules of binary addition: 0 + 0 = 0, 0 + 1 = 1, 1 + 1 = 10 (0 with a carry of 1), 1 + 1 + 1 = 11.",
+     "Computers perform subtraction by adding the complement of a number."
+    ]
+   },
+   "hi": {
+    "q": "द्विआधारी संख्याओं 1011 और 0110 का योग क्या है?",
+    "options": [
+     "10001",
+     "10010",
+     "11101",
+     "01111"
+    ],
+    "explanation": "दाएँ से स्तंभवार हासिल (कैरी) सहित जोड़ने पर (बाइनरी में 1 + 1 = 10) योग 10001 आता है। जाँच: दशमलव में 1011 = 11 और 0110 = 6, तथा 11 + 6 = 17 = 16 + 1, जो 10001 है।",
+    "notes": [
+     "10001 = 16 + 1 = 17, यही सही योग है।",
+     "10010 = 16 + 2 = 18, योग से एक अधिक।",
+     "11101 = 16 + 8 + 4 + 1 = 29।",
+     "01111 = 8 + 4 + 2 + 1 = 15, योग से दो कम।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "संख्या पद्धति",
+     "द्विआधारी अंकगणित"
+    ],
+    "facts": [
+     "द्विआधारी योग के नियम: 0 + 0 = 0, 0 + 1 = 1, 1 + 1 = 10 (0 तथा हासिल 1), 1 + 1 + 1 = 11।",
+     "कंप्यूटर किसी संख्या का पूरक (कॉम्प्लिमेंट) जोड़कर घटाव करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 2 (Encoding Schemes and Number System)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs102.pdf"
+    },
+    {
+     "source": "Encyclopaedia Britannica: binary number system",
+     "url": "https://www.britannica.com/science/binary-number-system"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-042",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The largest unsigned decimal number that can be stored in 8 bits is:",
+    "options": [
+     "127",
+     "255",
+     "256",
+     "512"
+    ],
+    "explanation": "With n bits the largest unsigned value is 2^n − 1. For 8 bits this is 2^8 − 1 = 255, written in binary as 11111111.",
+    "notes": [
+     "127 is the largest value of a signed 8-bit number in two's complement form.",
+     "255 = 11111111, all eight bits set to 1.",
+     "256 is the number of different values (0 to 255) that 8 bits can hold, not the largest value.",
+     "512 = 2^9 needs ten bits to be written in binary."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Number systems",
+     "Range of numbers"
+    ],
+    "facts": [
+     "n bits can represent 2^n different values, from 0 to 2^n − 1.",
+     "A signed 8-bit number in two's complement ranges from −128 to +127."
+    ]
+   },
+   "hi": {
+    "q": "8 बिट में संग्रहित की जा सकने वाली सबसे बड़ी अचिह्नित (अनसाइन्ड) दशमलव संख्या कौन-सी है?",
+    "options": [
+     "127",
+     "255",
+     "256",
+     "512"
+    ],
+    "explanation": "n बिट में सबसे बड़ा अचिह्नित मान 2^n − 1 होता है। 8 बिट के लिए यह 2^8 − 1 = 255 है, जिसे बाइनरी में 11111111 लिखते हैं।",
+    "notes": [
+     "127 टू'ज़ कॉम्प्लिमेंट रूप में चिह्नित 8-बिट संख्या का सबसे बड़ा मान है।",
+     "255 = 11111111, अर्थात आठों बिट 1 हैं।",
+     "256, 8 बिट द्वारा धारण किए जा सकने वाले भिन्न मानों (0 से 255) की संख्या है, सबसे बड़ा मान नहीं।",
+     "512 = 2^9 को बाइनरी में लिखने के लिए दस बिट चाहिए।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "संख्या पद्धति",
+     "संख्याओं का परिसर"
+    ],
+    "facts": [
+     "n बिट से 2^n भिन्न मान, 0 से 2^n − 1 तक, दर्शाए जा सकते हैं।",
+     "टू'ज़ कॉम्प्लिमेंट में चिह्नित 8-बिट संख्या −128 से +127 तक होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 2 (Encoding Schemes and Number System)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs102.pdf"
+    },
+    {
+     "source": "Encyclopaedia Britannica: binary number system",
+     "url": "https://www.britannica.com/science/binary-number-system"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-043",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The smallest unit of data in a computer is the:",
+    "options": [
+     "Byte",
+     "Kilobyte",
+     "Bit",
+     "Word"
+    ],
+    "explanation": "A bit, short for binary digit, is the smallest unit of data and can have only one of two values, 0 or 1. Eight bits make one byte, which can store one character.",
+    "notes": [
+     "A byte is a group of eight bits.",
+     "A kilobyte is 1024 bytes.",
+     "A bit holds a single 0 or 1.",
+     "A word is the group of bits a processor handles at one time, such as 32 or 64."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Units of memory"
+    ],
+    "facts": [
+     "1 byte = 8 bits.",
+     "The term 'bit' is short for binary digit."
+    ]
+   },
+   "hi": {
+    "q": "कंप्यूटर में डेटा की सबसे छोटी इकाई क्या है?",
+    "options": [
+     "बाइट",
+     "किलोबाइट",
+     "बिट",
+     "वर्ड"
+    ],
+    "explanation": "बिट, जो 'बाइनरी डिजिट' का संक्षिप्त रूप है, डेटा की सबसे छोटी इकाई है और इसका मान केवल 0 या 1 हो सकता है। आठ बिट मिलकर एक बाइट बनाते हैं, जिसमें एक अक्षर संग्रहित हो सकता है।",
+    "notes": [
+     "बाइट आठ बिटों का समूह है।",
+     "एक किलोबाइट में 1024 बाइट होते हैं।",
+     "बिट में केवल एक 0 या 1 रहता है।",
+     "वर्ड बिटों का वह समूह है जिसे प्रोसेसर एक बार में संभालता है, जैसे 32 या 64।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "मेमोरी की इकाइयाँ"
+    ],
+    "facts": [
+     "1 बाइट = 8 बिट।",
+     "'बिट' शब्द बाइनरी डिजिट का संक्षिप्त रूप है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 244
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Chapter 2 (Encoding Schemes and Number System)"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-044",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Which type of semiconductor memory must be refreshed periodically to retain its data?",
+    "options": [
+     "Static RAM (SRAM)",
+     "Mask ROM",
+     "Flash memory",
+     "Dynamic RAM (DRAM)"
+    ],
+    "explanation": "DRAM stores each bit as an electric charge in a tiny capacitor. The charge leaks away, so every cell has to be read and rewritten (refreshed) many times a second. Being cheap and dense, DRAM is used for the main memory of computers.",
+    "notes": [
+     "SRAM keeps each bit in a flip-flop circuit, needs no refreshing and is faster, so it is used for cache memory.",
+     "In a mask ROM the data is fixed in the chip during manufacture.",
+     "Flash memory stores bits as charges trapped in floating-gate transistors and needs no refreshing.",
+     "Each DRAM cell has one transistor and one capacitor; its charge must be restored every few milliseconds."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Memory",
+     "Types of RAM"
+    ],
+    "facts": [
+     "DRAM: one transistor and one capacitor per bit; SRAM: about six transistors per bit.",
+     "SRAM is faster and costlier per bit than DRAM."
+    ]
+   },
+   "hi": {
+    "q": "किस प्रकार की अर्धचालक मेमोरी को अपना डेटा बनाए रखने के लिए समय-समय पर रिफ्रेश करना पड़ता है?",
+    "options": [
+     "स्टैटिक रैम (SRAM)",
+     "मास्क रोम",
+     "फ्लैश मेमोरी",
+     "डायनेमिक रैम (DRAM)"
+    ],
+    "explanation": "DRAM प्रत्येक बिट को एक सूक्ष्म संधारित्र (कैपेसिटर) में विद्युत आवेश के रूप में रखती है। यह आवेश धीरे-धीरे क्षरित होता है, इसलिए प्रत्येक सेल को एक सेकंड में कई बार पढ़कर पुनः लिखना (रिफ्रेश करना) पड़ता है। सस्ती और सघन होने के कारण DRAM कंप्यूटर की मुख्य मेमोरी में प्रयुक्त होती है।",
+    "notes": [
+     "SRAM प्रत्येक बिट को फ्लिप-फ्लॉप परिपथ में रखती है, इसे रिफ्रेश नहीं करना पड़ता और यह अधिक तेज़ है, इसलिए कैश मेमोरी में प्रयुक्त होती है।",
+     "मास्क रोम में डेटा निर्माण के समय ही चिप में स्थायी कर दिया जाता है।",
+     "फ्लैश मेमोरी बिटों को फ्लोटिंग-गेट ट्रांजिस्टरों में फँसे आवेश के रूप में रखती है और इसे रिफ्रेश नहीं करना पड़ता।",
+     "DRAM के प्रत्येक सेल में एक ट्रांजिस्टर और एक संधारित्र होता है; इसका आवेश हर कुछ मिलीसेकंड में पुनः भरना पड़ता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "मेमोरी",
+     "रैम के प्रकार"
+    ],
+    "facts": [
+     "DRAM: प्रति बिट एक ट्रांजिस्टर और एक संधारित्र; SRAM: प्रति बिट लगभग छह ट्रांजिस्टर।",
+     "SRAM, DRAM की तुलना में अधिक तेज़ और प्रति बिट अधिक महँगी है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Encyclopaedia Britannica: RAM (computer memory)",
+     "url": "https://www.britannica.com/technology/RAM"
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System)",
+     "url": "https://ncert.nic.in/textbook/pdf/kecs101.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-045",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The first commercial hard disk drive was introduced in 1956 by:",
+    "options": [
+     "IBM",
+     "Intel",
+     "Seagate",
+     "Xerox"
+    ],
+    "explanation": "IBM introduced the first hard disk drive in 1956 with its 305 RAMAC computer. It used fifty 24-inch disks and stored about 5 million characters (often quoted as 5 MB). Reynold B. Johnson led the team that built it.",
+    "notes": [
+     "It was the IBM 350 disk unit of the IBM 305 RAMAC computer and stored about 5 million characters.",
+     "Intel was founded only in 1968 and is known for microprocessors.",
+     "Seagate was founded in 1979 and made hard disks for personal computers.",
+     "Xerox's Palo Alto centre is known for the graphical user interface."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Secondary storage",
+     "Hard disk"
+    ],
+    "facts": [
+     "First hard disk: IBM 305 RAMAC, 1956, about 5 million characters.",
+     "RAMAC stands for Random Access Method of Accounting and Control."
+    ]
+   },
+   "hi": {
+    "q": "पहली व्यावसायिक हार्ड डिस्क ड्राइव 1956 में किसने प्रस्तुत की?",
+    "options": [
+     "आईबीएम",
+     "इंटेल",
+     "सीगेट",
+     "ज़ेरॉक्स"
+    ],
+    "explanation": "आईबीएम ने 1956 में अपने 305 RAMAC कंप्यूटर के साथ पहली हार्ड डिस्क ड्राइव प्रस्तुत की। इसमें 24 इंच की पचास डिस्क थीं और लगभग 50 लाख कैरेक्टर (प्रायः 5 MB कहा जाता है) संग्रहित होते थे। इसे बनाने वाले दल के प्रमुख रेनॉल्ड बी. जॉनसन थे।",
+    "notes": [
+     "यह आईबीएम 305 RAMAC कंप्यूटर की आईबीएम 350 डिस्क इकाई थी, जिसमें लगभग 50 लाख कैरेक्टर संग्रहित होते थे।",
+     "इंटेल की स्थापना 1968 में हुई और वह माइक्रोप्रोसेसर के लिए जानी जाती है।",
+     "सीगेट की स्थापना 1979 में हुई और उसने पर्सनल कंप्यूटर के लिए हार्ड डिस्क बनाईं।",
+     "ज़ेरॉक्स का पालो ऑल्टो केंद्र ग्राफिकल यूजर इंटरफेस के लिए जाना जाता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "द्वितीयक भंडारण",
+     "हार्ड डिस्क"
+    ],
+    "facts": [
+     "पहली हार्ड डिस्क: आईबीएम 305 RAMAC, 1956, लगभग 50 लाख कैरेक्टर।",
+     "RAMAC का पूर्ण रूप Random Access Method of Accounting and Control है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 245
+    },
+    {
+     "source": "IBM Archives: RAMAC",
+     "url": "https://www.ibm.com/history/ramac"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-046",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Preparing a disk for use by dividing it into tracks and sectors is called:",
+    "options": [
+     "Booting",
+     "Formatting",
+     "Debugging",
+     "Scanning"
+    ],
+    "explanation": "Formatting prepares a storage disk so that data can be written on it. The surface is divided into concentric circles called tracks, and each track into parts called sectors.",
+    "notes": [
+     "Booting is the starting of a computer and the loading of its operating system.",
+     "Formatting lays out the tracks and sectors and usually erases the old data.",
+     "Debugging is the finding and removing of errors in a program.",
+     "Scanning is checking a disk for errors or viruses, or digitising a paper document."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Secondary storage",
+     "Formatting"
+    ],
+    "facts": [
+     "Track: a concentric circle on a disk; sector: a part of a track.",
+     "Formatting a disk normally removes the data stored on it."
+    ]
+   },
+   "hi": {
+    "q": "किसी डिस्क को ट्रैक और सेक्टर में बाँटकर उपयोग के लिए तैयार करने की प्रक्रिया क्या कहलाती है?",
+    "options": [
+     "बूटिंग",
+     "फॉर्मेटिंग",
+     "डिबगिंग",
+     "स्कैनिंग"
+    ],
+    "explanation": "फॉर्मेटिंग भंडारण डिस्क को इस प्रकार तैयार करती है कि उस पर डेटा लिखा जा सके। सतह को संकेंद्री वृत्तों में बाँटा जाता है जिन्हें ट्रैक कहते हैं, और प्रत्येक ट्रैक को खंडों में जिन्हें सेक्टर कहते हैं।",
+    "notes": [
+     "बूटिंग कंप्यूटर को चालू करने और ऑपरेटिंग सिस्टम लोड होने की प्रक्रिया है।",
+     "फॉर्मेटिंग ट्रैक और सेक्टर बनाती है और सामान्यतः पुराना डेटा मिटा देती है।",
+     "डिबगिंग प्रोग्राम की त्रुटियाँ खोजने और हटाने की प्रक्रिया है।",
+     "स्कैनिंग डिस्क में त्रुटि या वायरस की जाँच, अथवा कागजी दस्तावेज का अंकीकरण है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "द्वितीयक भंडारण",
+     "फॉर्मेटिंग"
+    ],
+    "facts": [
+     "ट्रैक: डिस्क पर संकेंद्री वृत्त; सेक्टर: ट्रैक का एक भाग।",
+     "डिस्क को फॉर्मेट करने पर सामान्यतः उसका डेटा हट जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 245
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System)"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-047",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "A standard compact disc (CD-ROM) can store about:",
+    "options": [
+     "1.44 MB",
+     "25 GB",
+     "700 MB",
+     "4.7 TB"
+    ],
+    "explanation": "A standard 120 mm compact disc stores about 700 MB of data, or about 80 minutes of audio. It is an optical disc read by a laser beam.",
+    "notes": [
+     "1.44 MB was the capacity of a 3.5-inch floppy disk.",
+     "25 GB is the capacity of a single-layer Blu-ray disc.",
+     "This equals about 80 minutes of audio.",
+     "No standard optical disc such as a CD, DVD or Blu-ray disc holds terabytes of data."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Secondary storage",
+     "Optical discs"
+    ],
+    "facts": [
+     "Floppy: 1.44 MB; CD: 700 MB; Blu-ray (single layer): 25 GB.",
+     "CD, DVD and Blu-ray are optical storage media."
+    ]
+   },
+   "hi": {
+    "q": "एक मानक कॉम्पैक्ट डिस्क (CD-ROM) में लगभग कितना डेटा संग्रहित हो सकता है?",
+    "options": [
+     "1.44 MB",
+     "25 GB",
+     "700 MB",
+     "4.7 TB"
+    ],
+    "explanation": "120 मिमी की मानक कॉम्पैक्ट डिस्क में लगभग 700 MB डेटा या लगभग 80 मिनट का ऑडियो संग्रहित होता है। यह ऑप्टिकल डिस्क है जिसे लेज़र किरण से पढ़ा जाता है।",
+    "notes": [
+     "1.44 MB 3.5 इंच की फ्लॉपी डिस्क की क्षमता थी।",
+     "25 GB एकल परत वाली ब्लू-रे डिस्क की क्षमता है।",
+     "यह लगभग 80 मिनट के ऑडियो के बराबर है।",
+     "सीडी, डीवीडी या ब्लू-रे जैसी कोई भी मानक ऑप्टिकल डिस्क टेराबाइट में डेटा संग्रहित नहीं करती।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "द्वितीयक भंडारण",
+     "ऑप्टिकल डिस्क"
+    ],
+    "facts": [
+     "फ्लॉपी: 1.44 MB; सीडी: 700 MB; ब्लू-रे (एकल परत): 25 GB।",
+     "सीडी, डीवीडी और ब्लू-रे ऑप्टिकल भंडारण माध्यम हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 245
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System)"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-048",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Which one of the following is an input device?",
+    "options": [
+     "Plotter",
+     "Speaker",
+     "Monitor",
+     "Scanner"
+    ],
+    "explanation": "An input device sends data or instructions to the computer. A scanner reads a printed page or picture and turns it into a digital image, so it is an input device. A plotter, a speaker and a monitor give output.",
+    "notes": [
+     "A plotter draws large maps and engineering drawings on paper; it is an output device.",
+     "A speaker gives sound output.",
+     "A monitor shows the output on a screen.",
+     "A scanner converts a paper document or picture into digital form and feeds it to the computer."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Input devices",
+     "Examples"
+    ],
+    "facts": [
+     "Input devices: keyboard, mouse, scanner, microphone, webcam.",
+     "Output devices: monitor, printer, plotter, speaker."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सी इनपुट युक्ति है?",
+    "options": [
+     "प्लॉटर",
+     "स्पीकर",
+     "मॉनिटर",
+     "स्कैनर"
+    ],
+    "explanation": "इनपुट युक्ति कंप्यूटर को डेटा या निर्देश भेजती है। स्कैनर छपे पृष्ठ या चित्र को पढ़कर अंकीय चित्र में बदलता है, इसलिए यह इनपुट युक्ति है। प्लॉटर, स्पीकर और मॉनिटर आउटपुट देते हैं।",
+    "notes": [
+     "प्लॉटर कागज पर बड़े मानचित्र और इंजीनियरी आरेख बनाता है; यह आउटपुट युक्ति है।",
+     "स्पीकर ध्वनि के रूप में आउटपुट देता है।",
+     "मॉनिटर आउटपुट को परदे पर दिखाता है।",
+     "स्कैनर कागजी दस्तावेज या चित्र को अंकीय रूप में बदलकर कंप्यूटर में भेजता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "इनपुट युक्तियाँ",
+     "उदाहरण"
+    ],
+    "facts": [
+     "इनपुट युक्तियाँ: कीबोर्ड, माउस, स्कैनर, माइक्रोफोन, वेबकैम।",
+     "आउटपुट युक्तियाँ: मॉनिटर, प्रिंटर, प्लॉटर, स्पीकर।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 245
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System)"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-049",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Which programming language, developed in 1958, has been used mainly for artificial intelligence work?",
+    "options": [
+     "COBOL",
+     "FORTRAN",
+     "Pascal",
+     "LISP"
+    ],
+    "explanation": "LISP was created by John McCarthy in 1958 and became the favoured language of artificial intelligence research. Prolog, developed in 1972, is another language associated with artificial intelligence.",
+    "notes": [
+     "COBOL (1959) was designed for business data processing.",
+     "FORTRAN (1957) was designed for scientific and engineering calculations.",
+     "Pascal (1970) was designed for teaching structured programming.",
+     "Its name comes from 'list processing'."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Software",
+     "Programming languages"
+    ],
+    "facts": [
+     "LISP: John McCarthy, 1958; name from 'LISt Processing'.",
+     "FORTRAN: science; COBOL: business; Pascal: teaching."
+    ]
+   },
+   "hi": {
+    "q": "1958 में विकसित कौन-सी प्रोग्रामिंग भाषा मुख्यतः कृत्रिम बुद्धिमत्ता के कार्य में प्रयुक्त हुई है?",
+    "options": [
+     "कोबोल",
+     "फोरट्रान",
+     "पास्कल",
+     "लिस्प"
+    ],
+    "explanation": "लिस्प को जॉन मैकार्थी ने 1958 में बनाया और यह कृत्रिम बुद्धिमत्ता के शोध की पसंदीदा भाषा बनी। 1972 में विकसित प्रोलॉग भी कृत्रिम बुद्धिमत्ता से जुड़ी भाषा है।",
+    "notes": [
+     "कोबोल (1959) व्यावसायिक डेटा प्रसंस्करण के लिए बनी।",
+     "फोरट्रान (1957) वैज्ञानिक एवं इंजीनियरी गणनाओं के लिए बनी।",
+     "पास्कल (1970) संरचित प्रोग्रामिंग सिखाने के लिए बनी।",
+     "इसका नाम 'लिस्ट प्रोसेसिंग' से बना है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "सॉफ्टवेयर",
+     "प्रोग्रामिंग भाषाएँ"
+    ],
+    "facts": [
+     "लिस्प: जॉन मैकार्थी, 1958; नाम 'LISt Processing' से।",
+     "फोरट्रान: विज्ञान; कोबोल: व्यवसाय; पास्कल: शिक्षण।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 246
+    },
+    {
+     "source": "Encyclopaedia Britannica: LISP (computer language)",
+     "url": "https://www.britannica.com/technology/LISP-computer-language"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-050",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Which award is often called the 'Nobel Prize of computing'?",
+    "options": [
+     "Turing Award",
+     "Abel Prize",
+     "Fields Medal",
+     "Pulitzer Prize"
+    ],
+    "explanation": "The A. M. Turing Award, given annually by the Association for Computing Machinery since 1966, is the highest honour in computer science. It is named after the British mathematician Alan Turing.",
+    "notes": [
+     "It is given every year by the Association for Computing Machinery (ACM).",
+     "The Abel Prize is given for mathematics.",
+     "The Fields Medal is given to mathematicians under forty.",
+     "The Pulitzer Prize is given for journalism and literature."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "History of Computers",
+     "Awards"
+    ],
+    "facts": [
+     "Turing Award: ACM, first given in 1966.",
+     "Raj Reddy (1994) was the first person of Indian origin to receive it."
+    ]
+   },
+   "hi": {
+    "q": "किस पुरस्कार को प्रायः 'कंप्यूटिंग का नोबेल पुरस्कार' कहा जाता है?",
+    "options": [
+     "ट्यूरिंग पुरस्कार",
+     "एबेल पुरस्कार",
+     "फील्ड्स मेडल",
+     "पुलित्जर पुरस्कार"
+    ],
+    "explanation": "ए. एम. ट्यूरिंग पुरस्कार, जो एसोसिएशन फॉर कंप्यूटिंग मशीनरी द्वारा 1966 से प्रतिवर्ष दिया जाता है, कंप्यूटर विज्ञान का सर्वोच्च सम्मान है। इसका नाम ब्रिटिश गणितज्ञ एलन ट्यूरिंग के नाम पर है।",
+    "notes": [
+     "यह प्रतिवर्ष एसोसिएशन फॉर कंप्यूटिंग मशीनरी (ACM) द्वारा दिया जाता है।",
+     "एबेल पुरस्कार गणित के लिए दिया जाता है।",
+     "फील्ड्स मेडल चालीस वर्ष से कम आयु के गणितज्ञों को दिया जाता है।",
+     "पुलित्जर पुरस्कार पत्रकारिता एवं साहित्य के लिए दिया जाता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कम्प्यूटर का इतिहास",
+     "पुरस्कार"
+    ],
+    "facts": [
+     "ट्यूरिंग पुरस्कार: ACM, पहली बार 1966 में।",
+     "राज रेड्डी (1994) इसे पाने वाले भारतीय मूल के पहले व्यक्ति थे।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 243
+    },
+    {
+     "source": "ACM: A. M. Turing Award",
+     "url": "https://amturing.acm.org/"
     }
    ]
   }

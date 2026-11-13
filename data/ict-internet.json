@@ -1271,7 +1271,7 @@
      "Microsoft",
      "Netscape Communications"
     ],
-    "explanation": "Mosaic came from NCSA in 1993. Internet Explorer was Microsoft's browser, and Google Chrome was first released in 2008.",
+    "explanation": "Mosaic came from the National Center for Supercomputing Applications (NCSA) at the University of Illinois in 1993. Its developers later created Netscape Navigator.",
     "notes": [
      "The National Center for Supercomputing Applications, USA.",
      "The birthplace of the Web, not of Mosaic.",
@@ -1297,7 +1297,7 @@
      "माइक्रोसॉफ्ट",
      "नेटस्केप कम्युनिकेशंस"
     ],
-    "explanation": "मोज़ेक 1993 में एनसीएसए में विकसित हुआ। इंटरनेट एक्सप्लोरर माइक्रोसॉफ्ट का ब्राउजर था तथा गूगल क्रोम पहली बार 2008 में जारी हुआ।",
+    "explanation": "मोज़ेक 1993 में इलिनॉय विश्वविद्यालय के नेशनल सेंटर फॉर सुपरकंप्यूटिंग एप्लिकेशन्स (एनसीएसए) में विकसित हुआ। इसके विकासकर्ताओं ने बाद में नेटस्केप नेविगेटर बनाया।",
     "notes": [
      "नेशनल सेंटर फॉर सुपरकम्प्यूटिंग एप्लीकेशंस, अमेरिका।",
      "वेब का जन्मस्थान, मोज़ेक का नहीं।",
@@ -2575,7 +2575,7 @@
      "Recording the keys pressed by its users",
      "Forging the address of the sender of a message"
     ],
-    "explanation": "In a DDoS attack many compromised computers send traffic to one server until it can no longer respond. Spam, by contrast, means unsolicited bulk messages.",
+    "explanation": "In a DDoS attack many compromised computers send traffic to one server until it can no longer respond. The aim is to deny service, not to steal or lock data.",
     "notes": [
      "DDoS stands for Distributed Denial of Service.",
      "This describes ransomware.",
@@ -2601,7 +2601,7 @@
      "उसके प्रयोक्ताओं द्वारा दबाई गई कुंजियों को अंकित करके",
      "संदेश के प्रेषक का पता जाली बनाकर"
     ],
-    "explanation": "डीडीओएस आक्रमण में अनेक संक्रमित कम्प्यूटर एक सर्वर पर इतना ट्रैफिक भेजते हैं कि वह उत्तर नहीं दे पाता। इसके विपरीत स्पैम का अर्थ अवांछित थोक संदेश है।",
+    "explanation": "डीडीओएस आक्रमण में अनेक संक्रमित कम्प्यूटर एक सर्वर पर इतना ट्रैफिक भेजते हैं कि वह उत्तर नहीं दे पाता। इसका उद्देश्य सेवा बाधित करना है, डेटा चुराना या लॉक करना नहीं।",
     "notes": [
      "डीडीओएस का पूर्ण रूप डिस्ट्रिब्यूटेड डिनायल ऑफ सर्विस है।",
      "यह रैनसमवेयर का वर्णन है।",
@@ -2630,6 +2630,648 @@
     {
      "source": "IETF RFC 4949: Internet Security Glossary, Version 2",
      "url": "https://www.rfc-editor.org/rfc/rfc4949"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-041",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The first or main page that opens when the address of a website is entered is called its:",
+    "options": [
+     "Bookmark",
+     "Web server",
+     "Search page",
+     "Home page"
+    ],
+    "explanation": "The home page is the opening or main page of a website. It acts as an index, from which links lead to the other pages. The page that a browser shows when it starts is also called the browser's home page.",
+    "notes": [
+     "A bookmark is a saved link to a page that the user wants to visit again.",
+     "A web server is the computer that stores and sends the pages of a website.",
+     "A search page lists the results of a query; it is not the main page of every site.",
+     "It usually carries the menu and the links to the rest of the site."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Web terms"
+    ],
+    "facts": [
+     "Website: a collection of linked web pages; home page: its main page.",
+     "Every web page has its own address, the URL."
+    ]
+   },
+   "hi": {
+    "q": "किसी वेबसाइट का पता डालने पर खुलने वाला पहला या मुख्य पृष्ठ क्या कहलाता है?",
+    "options": [
+     "बुकमार्क",
+     "वेब सर्वर",
+     "सर्च पेज",
+     "होम पेज"
+    ],
+    "explanation": "होम पेज वेबसाइट का आरंभिक या मुख्य पृष्ठ है। यह सूची का काम करता है, जहाँ से लिंक अन्य पृष्ठों तक ले जाते हैं। ब्राउज़र खोलने पर जो पृष्ठ दिखता है, उसे भी ब्राउज़र का होम पेज कहते हैं।",
+    "notes": [
+     "बुकमार्क उस पृष्ठ का सहेजा गया लिंक है जिसे उपयोगकर्ता फिर देखना चाहता है।",
+     "वेब सर्वर वह कंप्यूटर है जो वेबसाइट के पृष्ठ संग्रहित करता और भेजता है।",
+     "सर्च पेज खोज के परिणाम दिखाता है; यह हर साइट का मुख्य पृष्ठ नहीं होता।",
+     "इसमें सामान्यतः मेन्यू और साइट के शेष पृष्ठों के लिंक होते हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "वेब शब्दावली"
+    ],
+    "facts": [
+     "वेबसाइट: आपस में जुड़े वेब पृष्ठों का संग्रह; होम पेज: उसका मुख्य पृष्ठ।",
+     "प्रत्येक वेब पृष्ठ का अपना पता होता है, जिसे URL कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 248
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-042",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Moving from one web page or website to another by following links is called:",
+    "options": [
+     "Surfing",
+     "Hosting",
+     "Uploading",
+     "Encrypting"
+    ],
+    "explanation": "Moving from page to page on the World Wide Web by clicking links is called surfing or browsing. The program used for it is a web browser, such as Chrome, Firefox or Edge.",
+    "notes": [
+     "The term compares moving across the Web with riding the waves.",
+     "Hosting is keeping a website on a server so that others can reach it.",
+     "Uploading is sending a file from one's computer to a server.",
+     "Encrypting is converting data into a secret code."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Web terms"
+    ],
+    "facts": [
+     "Surfing or browsing: visiting web pages through links.",
+     "The program used for surfing is called a web browser."
+    ]
+   },
+   "hi": {
+    "q": "लिंक के सहारे एक वेब पृष्ठ या वेबसाइट से दूसरे पर जाना क्या कहलाता है?",
+    "options": [
+     "सर्फिंग",
+     "होस्टिंग",
+     "अपलोडिंग",
+     "एन्क्रिप्टिंग"
+    ],
+    "explanation": "लिंक पर क्लिक करके वर्ल्ड वाइड वेब के एक पृष्ठ से दूसरे पर जाना सर्फिंग या ब्राउज़िंग कहलाता है। इसके लिए प्रयुक्त प्रोग्राम वेब ब्राउज़र है, जैसे क्रोम, फायरफॉक्स या एज।",
+    "notes": [
+     "इस शब्द में वेब पर घूमने की तुलना लहरों पर सवारी से की गई है।",
+     "होस्टिंग वेबसाइट को सर्वर पर रखना है ताकि अन्य लोग उस तक पहुँच सकें।",
+     "अपलोडिंग अपने कंप्यूटर से सर्वर पर फाइल भेजना है।",
+     "एन्क्रिप्टिंग डेटा को गुप्त कूट में बदलना है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "वेब शब्दावली"
+    ],
+    "facts": [
+     "सर्फिंग या ब्राउज़िंग: लिंक के सहारे वेब पृष्ठ देखना।",
+     "सर्फिंग के लिए प्रयुक्त प्रोग्राम को वेब ब्राउज़र कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 248
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-043",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which one of the following is a correctly formed e-mail address?",
+    "options": [
+     "amit sharma@gmail.com",
+     "neha.verma@gmail.com",
+     "rohit@singh@yahoo.com",
+     "pooja.gupta.outlook.com"
+    ],
+    "explanation": "A valid e-mail address contains exactly one '@' sign, has no blank spaces and ends in a proper domain such as gmail.com. Only option B meets all three conditions.",
+    "notes": [
+     "An e-mail address cannot contain a blank space.",
+     "It has no blank space and exactly one '@' sign, followed by a valid domain.",
+     "An address can have only one '@' sign.",
+     "This has no '@' sign to separate the user name from the domain."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "Address format"
+    ],
+    "facts": [
+     "An e-mail address may contain letters, digits, dots, hyphens and underscores.",
+     "Only one '@' sign; no spaces."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा ई-मेल पता सही प्रारूप में है?",
+    "options": [
+     "amit sharma@gmail.com",
+     "neha.verma@gmail.com",
+     "rohit@singh@yahoo.com",
+     "pooja.gupta.outlook.com"
+    ],
+    "explanation": "मान्य ई-मेल पते में ठीक एक '@' चिह्न होता है, कोई खाली स्थान नहीं होता और अंत में gmail.com जैसा उचित डोमेन होता है। केवल विकल्प B तीनों शर्तें पूरी करता है।",
+    "notes": [
+     "ई-मेल पते में खाली स्थान नहीं हो सकता।",
+     "इसमें कोई खाली स्थान नहीं है और ठीक एक '@' चिह्न है, जिसके बाद मान्य डोमेन है।",
+     "पते में केवल एक '@' चिह्न हो सकता है।",
+     "इसमें उपयोगकर्ता नाम को डोमेन से अलग करने वाला '@' चिह्न नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "पते का प्रारूप"
+    ],
+    "facts": [
+     "ई-मेल पते में अक्षर, अंक, बिंदु, हाइफ़न और अंडरस्कोर हो सकते हैं।",
+     "केवल एक '@' चिह्न; कोई खाली स्थान नहीं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 250
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-044",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Unwanted e-mail sent in bulk, usually for advertising, is called:",
+    "options": [
+     "Draft",
+     "Archive",
+     "Spam",
+     "Signature"
+    ],
+    "explanation": "Spam, or junk mail, is unsolicited e-mail sent to a large number of people, mostly for advertising or fraud. Mail services filter it into a spam folder.",
+    "notes": [
+     "A draft is a message that has been written but not yet sent.",
+     "An archive holds old messages moved out of the inbox.",
+     "It is also called junk mail and goes to a separate folder.",
+     "A signature is the text added automatically at the end of a message."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "Spam"
+    ],
+    "facts": [
+     "Spam = junk mail = unsolicited bulk e-mail.",
+     "Spam may carry phishing links or malware."
+    ]
+   },
+   "hi": {
+    "q": "बड़ी संख्या में, प्रायः विज्ञापन के लिए, भेजी गई अवांछित ई-मेल क्या कहलाती है?",
+    "options": [
+     "ड्राफ्ट",
+     "आर्काइव",
+     "स्पैम",
+     "सिग्नेचर"
+    ],
+    "explanation": "स्पैम या जंक मेल वह बिना माँगी ई-मेल है जो बहुत-से लोगों को, अधिकतर विज्ञापन या धोखाधड़ी के लिए, भेजी जाती है। मेल सेवाएँ इसे छाँटकर स्पैम फोल्डर में डाल देती हैं।",
+    "notes": [
+     "ड्राफ्ट वह संदेश है जो लिखा गया है पर अभी भेजा नहीं गया।",
+     "आर्काइव में इनबॉक्स से हटाए गए पुराने संदेश रहते हैं।",
+     "इसे जंक मेल भी कहते हैं और यह अलग फोल्डर में जाती है।",
+     "सिग्नेचर संदेश के अंत में अपने-आप जुड़ने वाला पाठ है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "स्पैम"
+    ],
+    "facts": [
+     "स्पैम = जंक मेल = बिना माँगी थोक ई-मेल।",
+     "स्पैम में फिशिंग लिंक या मैलवेयर हो सकता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 251
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 12 (Security Aspects)"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-045",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Hotmail, one of the first free web-based e-mail services, was co-founded in 1996 by:",
+    "options": [
+     "Vinod Dham",
+     "N. R. Narayana Murthy",
+     "Sundar Pichai",
+     "Sabeer Bhatia"
+    ],
+    "explanation": "Sabeer Bhatia and Jack Smith launched Hotmail on 4 July 1996. Mail could be read in any web browser, and Microsoft bought the service in 1997.",
+    "notes": [
+     "Vinod Dham led the development of Intel's Pentium processor and is called the 'father of the Pentium'.",
+     "N. R. Narayana Murthy co-founded the software company Infosys in 1981.",
+     "Sundar Pichai became the chief executive of Google in 2015 and of Alphabet in 2019.",
+     "Sabeer Bhatia was born in Chandigarh and studied at Caltech and Stanford."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "Services"
+    ],
+    "facts": [
+     "Hotmail was launched on 4 July 1996, the American Independence Day.",
+     "Microsoft acquired Hotmail in December 1997."
+    ]
+   },
+   "hi": {
+    "q": "प्रारंभिक निःशुल्क वेब-आधारित ई-मेल सेवाओं में से एक, हॉटमेल की सह-स्थापना 1996 में किसने की थी?",
+    "options": [
+     "विनोद धाम",
+     "एन. आर. नारायण मूर्ति",
+     "सुंदर पिचाई",
+     "सबीर भाटिया"
+    ],
+    "explanation": "सबीर भाटिया और जैक स्मिथ ने 4 जुलाई 1996 को हॉटमेल आरंभ किया। इसमें मेल किसी भी वेब ब्राउज़र में पढ़ी जा सकती थी, और 1997 में माइक्रोसॉफ्ट ने यह सेवा खरीद ली।",
+    "notes": [
+     "विनोद धाम ने इंटेल के पेंटियम प्रोसेसर के विकास का नेतृत्व किया और उन्हें 'पेंटियम का जनक' कहा जाता है।",
+     "एन. आर. नारायण मूर्ति ने 1981 में सॉफ्टवेयर कंपनी इन्फोसिस की सह-स्थापना की।",
+     "सुंदर पिचाई 2015 में गूगल और 2019 में अल्फाबेट के मुख्य कार्यकारी अधिकारी बने।",
+     "सबीर भाटिया का जन्म चंडीगढ़ में हुआ और उन्होंने कैलटेक तथा स्टैनफोर्ड में अध्ययन किया।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "सेवाएँ"
+    ],
+    "facts": [
+     "हॉटमेल 4 जुलाई 1996, अमेरिकी स्वतंत्रता दिवस, को आरंभ हुई।",
+     "माइक्रोसॉफ्ट ने दिसंबर 1997 में हॉटमेल का अधिग्रहण किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Microsoft News Center: Microsoft acquires Hotmail (31 December 1997)",
+     "url": "https://news.microsoft.com/1997/12/31/microsoft-acquires-hotmail/"
+    },
+    {
+     "source": "Wikipedia: Outlook.com (history of Hotmail, launched 4 July 1996)",
+     "url": "https://en.wikipedia.org/wiki/Outlook.com"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-046",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "A word or picture on a web page that opens another page when it is clicked is called a:",
+    "options": [
+     "Hyperlink",
+     "Cookie",
+     "Firewall",
+     "Plug-in"
+    ],
+    "explanation": "A hyperlink, or link, is a piece of text or an image that takes the user to another page or another part of the same page. Hyperlinks join the pages of the World Wide Web into a web.",
+    "notes": [
+     "The pointer usually changes to a hand when it is over one.",
+     "A cookie is not visible on the page and cannot be clicked to open another page.",
+     "A firewall is a security tool, not a part of the content of a web page.",
+     "A plug-in is a small program that adds a feature to a browser."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Web terms"
+    ],
+    "facts": [
+     "Hyperlink: clickable text or image leading to another page.",
+     "Text containing hyperlinks is called hypertext."
+    ]
+   },
+   "hi": {
+    "q": "वेब पृष्ठ का वह शब्द या चित्र क्या कहलाता है, जिस पर क्लिक करने से दूसरा पृष्ठ खुलता है?",
+    "options": [
+     "हाइपरलिंक",
+     "कुकी",
+     "फायरवॉल",
+     "प्लग-इन"
+    ],
+    "explanation": "हाइपरलिंक या लिंक वह पाठ या चित्र है जो उपयोगकर्ता को दूसरे पृष्ठ या उसी पृष्ठ के दूसरे भाग पर ले जाता है। हाइपरलिंक ही वर्ल्ड वाइड वेब के पृष्ठों को आपस में जोड़ते हैं।",
+    "notes": [
+     "इस पर आते ही सूचक सामान्यतः हाथ के चिह्न में बदल जाता है।",
+     "कुकी पृष्ठ पर दिखाई नहीं देती और उस पर क्लिक करके दूसरा पृष्ठ नहीं खोला जा सकता।",
+     "फायरवॉल एक सुरक्षा साधन है, वेब पृष्ठ की सामग्री का भाग नहीं।",
+     "प्लग-इन छोटा प्रोग्राम है जो ब्राउज़र में कोई सुविधा जोड़ता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "वेब शब्दावली"
+    ],
+    "facts": [
+     "हाइपरलिंक: क्लिक करने योग्य पाठ या चित्र, जो दूसरे पृष्ठ पर ले जाता है।",
+     "हाइपरलिंक वाले पाठ को हाइपरटेक्स्ट कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 248
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-047",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Copying a file from a server on the Internet to one's own computer is called:",
+    "options": [
+     "Uploading",
+     "Downloading",
+     "Streaming",
+     "Hosting"
+    ],
+    "explanation": "Downloading is the transfer of a file from a remote server to the user's computer or phone. Uploading is the transfer of a file in the opposite direction.",
+    "notes": [
+     "Uploading is the reverse: sending a file from one's computer to a server.",
+     "The file is saved on the user's device and can be used offline.",
+     "Streaming plays audio or video as it arrives, without saving the whole file.",
+     "Hosting is keeping a website on a server."
+    ],
+    "path": [
+     "ICT",
+     "Internet",
+     "Web terms"
+    ],
+    "facts": [
+     "Download: server to user; upload: user to server.",
+     "Download speed is usually higher than upload speed on home connections."
+    ]
+   },
+   "hi": {
+    "q": "इंटरनेट के किसी सर्वर से फाइल को अपने कंप्यूटर में लाना क्या कहलाता है?",
+    "options": [
+     "अपलोडिंग",
+     "डाउनलोडिंग",
+     "स्ट्रीमिंग",
+     "होस्टिंग"
+    ],
+    "explanation": "डाउनलोडिंग दूरस्थ सर्वर से फाइल को उपयोगकर्ता के कंप्यूटर या फोन में लाना है। अपलोडिंग फाइल को विपरीत दिशा में भेजना है।",
+    "notes": [
+     "अपलोडिंग इसका उल्टा है: अपने कंप्यूटर से सर्वर पर फाइल भेजना।",
+     "फाइल उपयोगकर्ता के उपकरण में सहेजी जाती है और बिना इंटरनेट के प्रयोग हो सकती है।",
+     "स्ट्रीमिंग में ऑडियो या वीडियो आते-आते चलता है, पूरी फाइल सहेजी नहीं जाती।",
+     "होस्टिंग वेबसाइट को सर्वर पर रखना है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "इंटरनेट",
+     "वेब शब्दावली"
+    ],
+    "facts": [
+     "डाउनलोड: सर्वर से उपयोगकर्ता तक; अपलोड: उपयोगकर्ता से सर्वर तक।",
+     "घरेलू कनेक्शन में डाउनलोड गति सामान्यतः अपलोड गति से अधिक होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 248
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-048",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "On a public Wi-Fi network, which practice best protects the data that a user sends?",
+    "options": [
+     "Turning off the device's firewall",
+     "Sharing files with nearby devices",
+     "Using a virtual private network (VPN)",
+     "Saving passwords in the browser"
+    ],
+    "explanation": "Public Wi-Fi is often unencrypted, so others on the same network can intercept the data. A VPN sends the traffic through an encrypted tunnel. It is also wise to use only HTTPS sites and to avoid banking on such networks.",
+    "notes": [
+     "Turning off the firewall removes a layer of protection.",
+     "File sharing on an open network exposes the device to strangers.",
+     "A VPN encrypts the traffic between the device and the VPN server.",
+     "Saved passwords can be stolen if the device or the network is compromised."
+    ],
+    "path": [
+     "ICT",
+     "Cyber security",
+     "Safe practices"
+    ],
+    "facts": [
+     "On public Wi-Fi: use a VPN, prefer HTTPS, avoid banking.",
+     "Turn off automatic connection to open networks."
+    ]
+   },
+   "hi": {
+    "q": "सार्वजनिक वाई-फाई नेटवर्क पर कौन-सा अभ्यास उपयोगकर्ता के भेजे गए डेटा की सबसे अच्छी सुरक्षा करता है?",
+    "options": [
+     "उपकरण का फायरवॉल बंद करना",
+     "पास के उपकरणों के साथ फाइलें साझा करना",
+     "वर्चुअल प्राइवेट नेटवर्क (VPN) का उपयोग करना",
+     "ब्राउज़र में पासवर्ड सहेजना"
+    ],
+    "explanation": "सार्वजनिक वाई-फाई प्रायः कूटबद्ध नहीं होता, इसलिए उसी नेटवर्क के अन्य लोग डेटा पकड़ सकते हैं। VPN ट्रैफिक को कूटबद्ध सुरंग से भेजता है। ऐसे नेटवर्क पर केवल HTTPS साइटों का प्रयोग करना और बैंकिंग से बचना भी उचित है।",
+    "notes": [
+     "फायरवॉल बंद करने से सुरक्षा की एक परत हट जाती है।",
+     "खुले नेटवर्क पर फाइल साझा करने से उपकरण अजनबियों के लिए खुल जाता है।",
+     "VPN उपकरण और VPN सर्वर के बीच के ट्रैफिक को कूटबद्ध करता है।",
+     "उपकरण या नेटवर्क में सेंध लगने पर सहेजे गए पासवर्ड चोरी हो सकते हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "साइबर सुरक्षा",
+     "सुरक्षित अभ्यास"
+    ],
+    "facts": [
+     "सार्वजनिक वाई-फाई पर: VPN का प्रयोग करें, HTTPS चुनें, बैंकिंग से बचें।",
+     "खुले नेटवर्क से अपने-आप जुड़ने की सुविधा बंद रखें।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 254
+    },
+    {
+     "source": "CERT-In: advisories and safe-use guidelines",
+     "url": "https://www.cert-in.org.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-049",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Which one of the following is NOT an e-mail service?",
+    "options": [
+     "Gmail",
+     "Outlook.com",
+     "Yahoo Mail",
+     "Google Chrome"
+    ],
+    "explanation": "Gmail, Outlook.com and Yahoo Mail are web-based e-mail services. Google Chrome is a web browser, the program in which such services are opened.",
+    "notes": [
+     "Gmail is the e-mail service of Google, started in 2004.",
+     "Outlook.com is the e-mail service of Microsoft, earlier called Hotmail.",
+     "Yahoo Mail is the e-mail service of Yahoo, started in 1997.",
+     "It is a web browser, used for opening websites."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "Services"
+    ],
+    "facts": [
+     "Other e-mail services: Rediffmail, Zoho Mail, Proton Mail.",
+     "Webmail is read inside a browser, but the browser itself is not a mail service."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सी ई-मेल सेवा नहीं है?",
+    "options": [
+     "जीमेल",
+     "आउटलुक डॉट कॉम",
+     "याहू मेल",
+     "गूगल क्रोम"
+    ],
+    "explanation": "जीमेल, आउटलुक डॉट कॉम और याहू मेल वेब-आधारित ई-मेल सेवाएँ हैं। गूगल क्रोम वेब ब्राउज़र है, अर्थात वह प्रोग्राम जिसमें ऐसी सेवाएँ खोली जाती हैं।",
+    "notes": [
+     "जीमेल गूगल की ई-मेल सेवा है, जो 2004 में शुरू हुई।",
+     "आउटलुक डॉट कॉम माइक्रोसॉफ्ट की ई-मेल सेवा है, जिसे पहले हॉटमेल कहते थे।",
+     "याहू मेल याहू की ई-मेल सेवा है, जो 1997 में शुरू हुई।",
+     "यह वेब ब्राउज़र है, जिससे वेबसाइटें खोली जाती हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "सेवाएँ"
+    ],
+    "facts": [
+     "अन्य ई-मेल सेवाएँ: रेडिफमेल, ज़ोहो मेल, प्रोटॉन मेल।",
+     "वेबमेल ब्राउज़र के भीतर पढ़ी जाती है, किंतु ब्राउज़र स्वयं मेल सेवा नहीं है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 251
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-internet-050",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Which standard enables e-mail to carry attachments such as images and audio, and text in scripts other than English?",
+    "options": [
+     "SNMP",
+     "NNTP",
+     "Telnet",
+     "MIME"
+    ],
+    "explanation": "MIME, Multipurpose Internet Mail Extensions, describes how pictures, sound, documents and text in any script are coded inside an e-mail message. Without it, early e-mail could carry only plain English text.",
+    "notes": [
+     "SNMP, the Simple Network Management Protocol, is used to monitor and manage network devices.",
+     "NNTP, the Network News Transfer Protocol, carries the articles of Usenet newsgroups.",
+     "Telnet lets a user log in to a remote computer and work on it through text commands.",
+     "MIME types such as image/jpeg also tell web browsers what kind of file they receive."
+    ],
+    "path": [
+     "ICT",
+     "E-mail",
+     "Attachments"
+    ],
+    "facts": [
+     "MIME: Multipurpose Internet Mail Extensions, first defined in 1992.",
+     "Its current core standards are RFC 2045 to RFC 2049 (1996)."
+    ]
+   },
+   "hi": {
+    "q": "कौन-सा मानक ई-मेल को चित्र और ऑडियो जैसे संलग्नक तथा अंग्रेज़ी से भिन्न लिपियों का पाठ ले जाने योग्य बनाता है?",
+    "options": [
+     "SNMP",
+     "NNTP",
+     "टेलनेट",
+     "MIME"
+    ],
+    "explanation": "MIME अर्थात मल्टीपर्पज़ इंटरनेट मेल एक्सटेंशन्स बताता है कि ई-मेल संदेश में चित्र, ध्वनि, दस्तावेज़ और किसी भी लिपि का पाठ किस प्रकार कूटबद्ध हो। इसके बिना आरंभिक ई-मेल केवल सादा अंग्रेज़ी पाठ ले जा सकती थी।",
+    "notes": [
+     "SNMP अर्थात सिंपल नेटवर्क मैनेजमेंट प्रोटोकॉल नेटवर्क उपकरणों की निगरानी और प्रबंधन के लिए प्रयुक्त होता है।",
+     "NNTP अर्थात नेटवर्क न्यूज़ ट्रांसफर प्रोटोकॉल यूज़नेट समाचार-समूहों के लेख ले जाता है।",
+     "टेलनेट से उपयोगकर्ता किसी दूरस्थ कंप्यूटर में लॉग-इन करके पाठ-आदेशों द्वारा कार्य करता है।",
+     "image/jpeg जैसे MIME प्रकार वेब ब्राउज़र को भी बताते हैं कि प्राप्त फाइल किस प्रकार की है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "ई-मेल",
+     "संलग्नक"
+    ],
+    "facts": [
+     "MIME: मल्टीपर्पज़ इंटरनेट मेल एक्सटेंशन्स, पहली बार 1992 में परिभाषित।",
+     "इसके वर्तमान मूल मानक RFC 2045 से RFC 2049 (1996) हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "IETF RFC 2045: Multipurpose Internet Mail Extensions (MIME) Part One",
+     "url": "https://www.rfc-editor.org/rfc/rfc2045"
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
     }
    ]
   }

@@ -2,7 +2,8 @@
 
 Usage:  python tools/build_index.py
 Only finished sections (data/<id>.json, not data/draft/) are counted. The game reads this file
-to show question counts and to hide sections that have no questions yet.
+to show question counts and to hide sections that have no questions yet. It also lists the files of
+the book companion (data/book/), which the service worker saves for offline reading.
 """
 import json
 from pathlib import Path
@@ -17,6 +18,8 @@ for f in sorted(data.glob('*.json')):
     for q in questions:
         counts[q['level']] = counts.get(q['level'], 0) + 1
     index['sections'][f.stem] = counts
+# The book companion (data/book/): its structure file and one notes file per chapter.
+index['book'] = sorted(f.name for f in (data / 'book').glob('*') if f.suffix in ('.json', '.txt'))
 (data / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding='utf-8')
 total = sum(c['total'] for c in index['sections'].values())
 print(f'data/index.json: {len(index["sections"])} sections, {total} questions')

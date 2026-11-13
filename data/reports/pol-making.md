@@ -25,3 +25,16 @@ Every answer key was re-solved blind and agreed with the draft. Fatman printed p
 Checked 23 questions (002 004 008 010 011 012 014 018 019 022 024 030 031 032 036 038 040 041 045 046 052 053 055). Answers, dates, article and amendment numbers verified; all keys correct.
 - Corrected 018: Hindi spelling of S. Varadachariar made consistent (वरदाचारियर) in option D, its note and the facts.
 - Replaced: none.
+
+## Check of 13 November 2026 (new questions for the book companion chapters)
+Checked 10 new questions (057–066, Constitutional Development 1773–1947), plus the whole file for overlap. All keys and dates verified (Britannica, NCERT Class 8, SCI history page, legislation.gov.uk).
+- Corrected 058: notes A and C reworded (they gave away the answers of 059 and 060).
+- Corrected 059: note A reworded (gave away 058); note B no longer says the 1793 Act "only" renewed the charter.
+- Corrected 060: note C reworded (gave away 061).
+- Corrected 061: note D reworded (gave away 062).
+- Corrected 063: note B reworded (gave away 062).
+- Corrected 065: note D on the Sadar Diwani Adalat made precise (Warren Hastings, 1772).
+- Corrected 057–065: book reference p. 93 removed where the fact is not on that page (kept for 064); official/Britannica sources added; 062 now cites p. 49.
+- Corrected old 004 (note D) and 055 (note A): they gave away the answers of 010 and 064.
+- Replaced 066: the old answer (15 August 1947) was given away by 012 and its fact gave away 010; now asks the date of royal assent to the Indian Independence Act (18 July 1947).
+- Not verified: nothing outstanding.
