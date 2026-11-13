@@ -41,3 +41,7 @@ Then open http://localhost:8000.
 - `data/` — checked questions (`<section>.json`), counts (`index.json`) and checker reports (`reports/`)
 - `tools/` — validator, merge and index builder (`prep_refs.py` prepares the reference books locally; they are never published)
 - `docs/` — hand-off notes, question targets and the writer/checker briefs
+
+## License
+
+GS House is released under the [MIT License](LICENSE). The reference books cited in the explanations belong to their publishers and are not part of this repository.
