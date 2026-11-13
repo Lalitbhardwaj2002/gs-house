@@ -134,6 +134,13 @@ const T = {
     level_TGT: 'TGT', level_PGT: 'PGT', level_Higher: 'Higher', tagTgt: 'TGT/PGT', tagHigher: 'Higher',
     settings: 'Settings', sound: 'Sound', darkMode: 'Dark mode', textSize: 'Text size', bothLangs: 'Both languages', on: 'On', off: 'Off',
     smaller: 'Smaller text', larger: 'Larger text',
+    pause: 'Pause', resume: 'Resume', submit: 'Submit', paused: 'Quiz paused',
+    pausedSolo: 'The clock has stopped. Resume when you are ready.',
+    pausedHost: 'The clock has stopped for everyone. Resume when you are ready.',
+    pausedGuest: (n) => `${n} has paused the quiz. It will continue shortly…`,
+    submitSolo: 'Submit the quiz now and see your result? Questions you have not reached will not be counted.',
+    submitHost: 'Submit the quiz now for everyone and show the results? Questions not reached will not be counted.',
+    submittedEarly: (a, n) => `Submitted early: ${a} of ${n} questions`,
     quickPractice: 'Quick practice', savedQs: (n) => `🔖 Saved questions (${n})`, mistakes: (n) => `✗ My mistakes (${n})`,
     save: 'Save this question for revision', saved: 'Saved for revision', unsaved: 'Removed from saved questions',
     retryWrong: (n) => `Retry ${n} missed question${n === 1 ? '' : 's'}`,
@@ -142,7 +149,7 @@ const T = {
     byUnit: 'By unit', allSections: (n) => `By section (${n})`, weakTap: 'Tap a section to practise it now.',
     progress: 'Your progress', lastQuizzes: (n, avg, best) => `Last ${n} quiz${n === 1 ? '' : 'zes'} · average ${avg}% · best ${best}%`,
     byUnitRecent: 'By unit (recent quizzes)',
-    keysHint: 'Keyboard: A–D or 1–4 to answer · Enter for the next question',
+    keysHint: 'Keyboard: A–D or 1–4 to answer · Enter for the next question', keysPause: ' · P to pause',
     sideWait: 'The explanation appears here once you answer.',
     bookCardTitle: 'Study with the book: Ghatna Chakra (new edition)',
     bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank: all 17 topics, from current affairs to computers, each with a full test.',
@@ -198,6 +205,13 @@ const T = {
     level_TGT: 'टीजीटी', level_PGT: 'पीजीटी', level_Higher: 'उच्चतर', tagTgt: 'टीजीटी/पीजीटी', tagHigher: 'उच्चतर',
     settings: 'सेटिंग', sound: 'ध्वनि', darkMode: 'डार्क मोड', textSize: 'अक्षरों का आकार', bothLangs: 'दोनों भाषाएँ', on: 'चालू', off: 'बंद',
     smaller: 'छोटे अक्षर', larger: 'बड़े अक्षर',
+    pause: 'रोकें', resume: 'जारी रखें', submit: 'जमा करें', paused: 'प्रश्नोत्तरी रुकी हुई है',
+    pausedSolo: 'घड़ी रुक गई है। तैयार होने पर जारी रखें।',
+    pausedHost: 'सभी के लिए घड़ी रुक गई है। तैयार होने पर जारी रखें।',
+    pausedGuest: (n) => `${n} ने प्रश्नोत्तरी रोकी है। यह शीघ्र आगे बढ़ेगी…`,
+    submitSolo: 'प्रश्नोत्तरी अभी जमा करके परिणाम देखें? जिन प्रश्नों तक आप नहीं पहुँचे, वे नहीं गिने जाएँगे।',
+    submitHost: 'सभी के लिए प्रश्नोत्तरी अभी जमा करके परिणाम दिखाएँ? जिन प्रश्नों तक नहीं पहुँचे, वे नहीं गिने जाएँगे।',
+    submittedEarly: (a, n) => `समय से पहले जमा: ${n} में से ${a} प्रश्न`,
     quickPractice: 'त्वरित अभ्यास', savedQs: (n) => `🔖 सहेजे गए प्रश्न (${n})`, mistakes: (n) => `✗ मेरी गलतियाँ (${n})`,
     save: 'इस प्रश्न को दोहराने के लिए सहेजें', saved: 'दोहराने के लिए सहेजा गया', unsaved: 'सहेजे गए प्रश्नों से हटाया गया',
     retryWrong: (n) => `छूटे या गलत ${n} प्रश्न फिर से हल करें`,
@@ -206,7 +220,7 @@ const T = {
     byUnit: 'इकाई अनुसार', allSections: (n) => `खंड अनुसार (${n})`, weakTap: 'अभी अभ्यास के लिए किसी खंड पर टैप करें।',
     progress: 'आपकी प्रगति', lastQuizzes: (n, avg, best) => `पिछली ${n} प्रश्नोत्तरी · औसत ${avg}% · सर्वश्रेष्ठ ${best}%`,
     byUnitRecent: 'इकाई अनुसार (हाल की प्रश्नोत्तरी)',
-    keysHint: 'कीबोर्ड: उत्तर के लिए A–D या 1–4 · अगले प्रश्न के लिए Enter',
+    keysHint: 'कीबोर्ड: उत्तर के लिए A–D या 1–4 · अगले प्रश्न के लिए Enter', keysPause: ' · रोकने के लिए P',
     sideWait: 'उत्तर देते ही व्याख्या यहाँ दिखेगी।',
     bookCardTitle: 'पुस्तक के साथ पढ़ें: घटना चक्र (नया संस्करण)',
     bookRefLine: 'संदर्भ',
@@ -235,7 +249,7 @@ function setLang(l) {
 }
 
 // ---------- preferences kept on this device ----------
-const FS_STEPS = [0.9, 1, 1.12, 1.25];
+const FS_STEPS = [0.9, 1, 1.12, 1.25, 1.4];
 const savedFs = Number(store.get('localStorage', 'pp-fs'));
 const prefs = {
   theme: store.get('localStorage', 'pp-theme'),             // 'dark', 'light', or nothing: follow the device
@@ -339,6 +353,8 @@ function freshState(code, solo) {
     code, solo, phase: 'lobby', hostId: me.id,
     settings: { sections: [], ...CONFIG.defaults },
     round: 0, total: 0, endsAt: 0, locked: false, qids: [], players: [], reports: {},
+    paused: false, pauseLeft: 0,   // a paused quiz keeps the time that was left on the clock
+    planned: 0,                    // length the quiz was meant to have, when it was submitted early
   };
 }
 
@@ -494,7 +510,16 @@ function handleAction(pid, msg, conn = null) {
       recordAnswer(pid, msg);
       return;
     case 'next':
-      if (fromHost && s.phase === 'question') nextRound();
+      if (fromHost && s.phase === 'question' && !s.paused) nextRound();
+      return;
+    case 'pause':
+      if (fromHost && s.phase === 'question' && !s.paused) pauseQuiz();
+      return;
+    case 'resume':
+      if (fromHost && s.phase === 'question' && s.paused) resumeQuiz();
+      return;
+    case 'submit':
+      if (fromHost && s.phase === 'question') submitQuiz();
       return;
     case 'again':
       if (fromHost && s.phase === 'over') {
@@ -527,7 +552,7 @@ function handleAction(pid, msg, conn = null) {
 
 function backToLobby(s) {
   s.players = s.players.filter((p) => p.connected);
-  Object.assign(s, { phase: 'lobby', round: 0, total: 0, qids: [], reports: {}, locked: false });
+  Object.assign(s, { phase: 'lobby', round: 0, total: 0, qids: [], reports: {}, locked: false, paused: false, pauseLeft: 0, planned: 0 });
   host.answers = {};
 }
 
@@ -584,6 +609,7 @@ async function startQuiz(only = null) {
   s.total = qids.length;
   s.round = 0;
   s.reports = {};
+  s.planned = 0;
   host.answers = {};
   s.players.forEach((p) => Object.assign(p, blankStats(), { answered: false }));
   nextRound();
@@ -600,6 +626,8 @@ function nextRound() {
   s.round += 1;
   s.phase = 'question';
   s.locked = false;
+  s.paused = false;
+  s.pauseLeft = 0;
   host.answers[s.round] = {};
   s.players.forEach((p) => { p.answered = false; });
   s.endsAt = s.settings.timer ? Date.now() + s.settings.timer * 1000 : 0;
@@ -620,7 +648,7 @@ function sendQuestion(only = null) {
 
 function recordAnswer(pid, msg) {
   const s = host.state;
-  if (s.phase !== 'question' || s.locked || msg.round !== s.round) return;
+  if (s.phase !== 'question' || s.locked || s.paused || msg.round !== s.round) return;
   if (!Number.isInteger(msg.choice) || msg.choice < 0 || msg.choice > 3) return;
   const p = s.players.find((x) => x.id === pid);
   const book = host.answers[s.round];
@@ -662,6 +690,49 @@ function lockRound() {
     if (!p.answered) { p.skipped += 1; p.streak = 0; }
   }
   hostChanged();
+}
+
+// Pause stops the clock for everyone and hides the question until the host (or the solo player) resumes.
+function pauseQuiz() {
+  const s = host.state;
+  clearTimeout(host.timer);
+  s.pauseLeft = s.endsAt && !s.locked ? Math.max(0, s.endsAt - Date.now()) : 0;
+  s.endsAt = 0;
+  s.paused = true;
+  hostChanged();
+}
+
+function resumeQuiz() {
+  const s = host.state;
+  s.paused = false;
+  if (s.pauseLeft && !s.locked) {
+    s.endsAt = Date.now() + s.pauseLeft;
+    host.timer = setTimeout(lockRound, s.pauseLeft);
+  }
+  s.pauseLeft = 0;
+  hostChanged();
+}
+
+// Submit ends the quiz at once and shows the results. Only the questions reached are counted: the
+// one on screen counts if somebody has answered it or its time is up; otherwise the quiz ends with
+// the question before it (the very first question always counts).
+function submitQuiz() {
+  const s = host.state;
+  clearTimeout(host.timer);
+  const touched = s.locked || Object.keys(host.answers[s.round] || {}).length > 0;
+  const keep = Math.max(1, touched ? s.round : s.round - 1);
+  if (keep === s.round && !s.locked) {
+    for (const p of s.players) if (!p.answered) { p.skipped += 1; p.streak = 0; }
+  }
+  if (keep < s.total) {
+    s.planned = s.total;
+    s.qids = s.qids.slice(0, keep);
+    s.total = keep;
+  }
+  s.round = keep;
+  s.paused = false;
+  s.pauseLeft = 0;
+  finishQuiz();
 }
 
 function finishQuiz() {
@@ -729,8 +800,8 @@ function snapshot(now) {
   const s = host.state;
   return {
     type: 'state', code: s.code, solo: s.solo, phase: s.phase, hostId: s.hostId, settings: s.settings,
-    round: s.round, total: s.total, locked: s.locked,
-    timeLeft: s.phase === 'question' && s.endsAt && !s.locked ? Math.max(0, s.endsAt - now) : 0,
+    round: s.round, total: s.total, locked: s.locked, paused: !!s.paused, planned: s.planned || 0,
+    timeLeft: s.phase !== 'question' || s.locked ? 0 : s.paused ? s.pauseLeft || 0 : s.endsAt ? Math.max(0, s.endsAt - now) : 0,
     players: s.players.map((p) => ({
       id: p.id, name: p.name, color: p.color, connected: p.connected, answered: p.answered,
       score: p.score, correct: p.correct, wrong: p.wrong, skipped: p.skipped, streak: p.streak, timeMs: p.timeMs,
@@ -926,7 +997,23 @@ function setScreen(name) {
 function receiveState(st) {
   const prev = ui.view;
   ui.view = st;
-  ui.endsAt = st.timeLeft ? Date.now() + st.timeLeft : 0;
+  const paused = st.phase === 'question' && st.paused;
+  ui.endsAt = st.timeLeft && !paused ? Date.now() + st.timeLeft : 0;
+  ui.pauseLeft = paused ? st.timeLeft : 0;
+  // Time spent paused is not counted in the time taken to answer.
+  if (paused && !local.pausedAt) { local.pausedAt = Date.now(); saveLocal(); }
+  if (!paused && local.pausedAt) {
+    if (st.phase === 'question' && local.shownAt[st.round] && !local.mine[st.round]) local.shownAt[st.round] += Date.now() - local.pausedAt;
+    local.pausedAt = 0;
+    saveLocal();
+  }
+  // A quiz submitted early ends before the question on screen: drop what was not counted.
+  if (st.phase === 'over' && st.planned) {
+    for (const r of Object.keys(local.questions)) {
+      if (Number(r) > st.total) { delete local.questions[r]; delete local.mine[r]; delete local.shownAt[r]; }
+    }
+    saveLocal();
+  }
   if (prev && prev.phase !== 'over' && st.phase === 'over') onFinished(st);
   if (prev && prev.phase === 'over' && st.phase !== 'over') ui.sheet = false; // a new quiz began while the answer sheet was open
   render();
@@ -949,7 +1036,7 @@ function onFinished(st) {
   recordHistory(rep);
   const acc = pct(rep.correct, rep.total);
   const bq = ui.bookQuiz;
-  if (bq && !bq.practice) {
+  if (bq && !bq.practice && !st.planned) {   // a quiz submitted early does not set a chapter's best score
     const key = bq.chapter || `${bq.topic}-test`;
     saveBookProgress(key, { best: Math.max((bookProgress[key] || {}).best || 0, acc) });
   }
@@ -965,7 +1052,7 @@ function render() {
   // Redraw when the phase, question, language or answer state changes. The question arrives in its
   // own message, sometimes just after the status update, so whether we have it is part of the key.
   const q = local.questions[v.round];
-  const qstate = v.phase === 'question' ? `${q ? q.id : 'waiting'}:${local.mine[v.round] ? 'a' : ''}${v.locked ? 'l' : ''}` : '';
+  const qstate = v.phase === 'question' ? `${q ? q.id : 'waiting'}:${local.mine[v.round] ? 'a' : ''}${v.locked ? 'l' : ''}${v.paused ? 'p' : ''}` : '';
   const key = `${v.phase}:${v.round}:${amHost}:${lang}:${qlang}:${qstate}:${ui.sheet}`;
   if (ui.stageKey !== key) {
     ui.stageKey = key;
@@ -1000,6 +1087,7 @@ function menuHTML() {
         <button class="menu-row" data-action="both"><span>🔤 ${t('bothLangs')}</span>${onOff(prefs.both)}</button>
         <div class="menu-row"><span>🔠 ${t('textSize')}</span><span class="stepper">
           <button data-action="fs" data-d="-1" aria-label="${t('smaller')}" ${at <= 0 ? 'disabled' : ''}>A−</button>
+          <span class="fs-now" aria-live="polite">${Math.round(prefs.fs * 100)}%</span>
           <button data-action="fs" data-d="1" aria-label="${t('larger')}" ${at >= FS_STEPS.length - 1 ? 'disabled' : ''}>A+</button>
         </span></div>
       </div>
@@ -1144,11 +1232,31 @@ function questionHTML(v, amHost) {
     return `<button class="opt ${cls}" data-action="pick" data-i="${i}" ${done ? 'disabled' : ''}><span class="opt-letter">${LETTERS[i]}</span><span class="opt-text">${esc(o)}${alt ? second(alt.options[i]) : ''}</span>${done && i === q.answer ? '<span class="opt-mark">✓</span>' : ''}${cls === 'wrong' ? '<span class="opt-mark">✗</span>' : ''}</button>`;
   }).join('');
   const langBtn = (l, label) => `<button class="${mode === l ? 'on' : ''}" data-action="qlang" data-l="${l}">${label}</button>`;
-  return `
+  // Pause and Submit belong to whoever runs the quiz: the solo player, or the host of a room.
+  const runs = v.solo || amHost;
+  const controls = runs ? `
+    <div class="q-controls">
+      <button class="chip" data-action="${v.paused ? 'resume' : 'pause'}">${v.paused ? `▶ ${t('resume')}` : `⏸ ${t('pause')}`}</button>
+      <button class="chip" data-action="submit">🏁 ${t('submit')}</button>
+    </div>` : '';
+  const head = `
     <section class="q-head">
       <div class="progress"><span>${t('qOf', v.round, v.total)}</span><div class="bar"><span style="width:${pct(v.round - 1, v.total)}%"></span></div></div>
       ${v.settings.timer ? '<div class="timer" id="timer"><svg viewBox="0 0 36 36"><circle class="track" cx="18" cy="18" r="16"/><circle class="fill" id="timer-fill" cx="18" cy="18" r="16" pathLength="100"/></svg><span data-countdown></span></div>' : ''}
+    </section>${controls}`;
+  const board = v.solo ? '' : `<section class="card"><h2>${t('leaderboard')} <span class="muted small" id="answered-count"></span></h2><div class="board" id="board"></div></section>`;
+  // While the quiz is paused the question is hidden, so that a pause cannot be used as thinking time.
+  if (v.paused) {
+    return `${head}
+    <section class="card pause-card">
+      <div class="pause-emoji">⏸</div>
+      <h2>${t('paused')}</h2>
+      <p class="muted">${runs ? t(v.solo ? 'pausedSolo' : 'pausedHost') : `${t('pausedGuest', esc(hostName(v)))}<span class="dots"></span>`}</p>
+      ${runs ? `<button class="btn primary big" data-action="resume">▶ ${t('resume')}</button>` : ''}
     </section>
+    ${board}`;
+  }
+  return `${head}
     <section class="q-card ${done ? 'done' : ''}">
       <div class="q-main">
         <div class="q-meta">
@@ -1159,12 +1267,12 @@ function questionHTML(v, amHost) {
         </div>
         <h1 class="q-text" lang="${ql === 'hi' ? 'hi' : 'en'}">${esc(body.q)}${alt ? second(alt.q) : ''}</h1>
         <div class="opts" lang="${ql === 'hi' ? 'hi' : 'en'}">${options}</div>
-        ${done ? '' : `<p class="keys-hint">${t('keysHint')}</p>`}
+        ${done ? '' : `<p class="keys-hint">${t('keysHint')}${runs ? t('keysPause') : ''}</p>`}
       </div>
       <div class="q-side" id="feedback">${done ? feedbackHTML(q, body, mine, ql) : `<p class="side-wait">${DIYA_SVG}${t('sideWait')}</p>`}</div>
     </section>
     <div class="next-area sticky-bar" id="next-area"></div>
-    ${v.solo ? '' : `<section class="card"><h2>${t('leaderboard')} <span class="muted small" id="answered-count"></span></h2><div class="board" id="board"></div></section>`}`;
+    ${board}`;
 }
 
 // The star that saves a question for revision.
@@ -1239,6 +1347,7 @@ function resultsHTML(v, amHost) {
   const retry = amHost && v.solo && missed.length
     ? `<button class="btn big" data-action="retry">🔁 ${t('retryWrong', missed.length)}</button>` : '';
   return `
+    ${v.planned ? `<p class="early-note results-wide">🏁 ${t('submittedEarly', v.total, v.planned)}</p>` : ''}
     ${rep ? assessmentHTML(rep, amHost && v.solo) : ''}
     ${v.solo ? '' : `<section class="card results-wide"><h2 class="ornate">${t('leaderboard')}</h2><div class="lb">${board}</div></section>`}
     ${historyHTML('results-wide')}
@@ -1433,15 +1542,15 @@ function setText(id, text) {
 function frame() {
   const v = ui.view;
   if (ui.screen === 'game' && v && v.phase === 'question' && v.settings.timer && !ui.sheet) {
-    const left = ui.endsAt ? Math.max(0, ui.endsAt - Date.now()) : 0;
+    const left = v.paused ? ui.pauseLeft || 0 : ui.endsAt ? Math.max(0, ui.endsAt - Date.now()) : 0;
     const secs = Math.ceil(left / 1000);
     const el = document.querySelector('[data-countdown]');
     if (el) el.textContent = v.locked ? '✓' : String(secs);
     const fill = document.getElementById('timer-fill');
     if (fill) fill.style.strokeDashoffset = String(100 - (left / (v.settings.timer * 1000)) * 100);
     const timer = document.getElementById('timer');
-    if (timer) timer.classList.toggle('hurry', !v.locked && secs <= 5);
-    if (!v.locked && !local.mine[v.round] && secs <= 5 && secs >= 1 && secs !== ui.lastTick) { ui.lastTick = secs; sfx.tick(); }
+    if (timer) timer.classList.toggle('hurry', !v.locked && !v.paused && secs <= 5);
+    if (!v.locked && !v.paused && !local.mine[v.round] && secs <= 5 && secs >= 1 && secs !== ui.lastTick) { ui.lastTick = secs; sfx.tick(); }
   }
   requestAnimationFrame(frame);
 }
@@ -1923,7 +2032,7 @@ const actions = {
   },
   pick(btn) {
     const v = ui.view;
-    if (!v || v.phase !== 'question' || v.locked || local.mine[v.round]) return;
+    if (!v || v.phase !== 'question' || v.locked || v.paused || local.mine[v.round]) return;
     const choice = Number(btn.dataset.i);
     const q = local.questions[v.round];
     const ms = Date.now() - (local.shownAt[v.round] || Date.now());
@@ -1998,6 +2107,13 @@ const actions = {
   },
   start: () => act({ type: 'start' }),
   next: () => act({ type: 'next' }),
+  pause: () => act({ type: 'pause' }),
+  resume: () => act({ type: 'resume' }),
+  submit() {
+    const v = ui.view;
+    if (!v || v.phase !== 'question') return;
+    if (window.confirm(t(v.solo ? 'submitSolo' : 'submitHost'))) act({ type: 'submit' });
+  },
   again: () => act({ type: 'again' }),
   sheet() { ui.sheet = true; ui.sheetLang = lang; ui.sheetFilter = 'all'; render(); window.scrollTo(0, 0); },
   'sheet-close'() { ui.sheet = false; render(); },
@@ -2092,6 +2208,8 @@ document.addEventListener('keydown', (e) => {
   const on = e.target instanceof Element ? e.target : null;
   if (on && on.closest('input, textarea, select')) return;
   const key = e.key.toLowerCase();
+  if (key === 'p' && (v.solo || v.hostId === me.id)) { e.preventDefault(); act({ type: v.paused ? 'resume' : 'pause' }); return; }
+  if (v.paused) return;
   const choice = key.length === 1 ? Math.max('abcd'.indexOf(key), '1234'.indexOf(key)) : -1;
   if (choice >= 0) {
     const btn = document.querySelector(`.opt[data-i="${choice}"]`);
