@@ -156,3 +156,46 @@ Independent check of the thirteen notes `data/net/csir-mathematics/ma-u2-01.txt`
 - All six distinct links return 200: MIT OCW 18.04, 6.042J, 18.781, 18.703, 18.702 and 18.901.
 - Book chapters checked against the known tables of contents: Brown and Churchill (8th or 9th ed.), Conway (2nd ed.), Ahlfors (3rd ed.), Brualdi, Liu, Burton, Niven, Zuckerman and Montgomery, Gallian (8th or 9th ed.), Herstein (2nd ed.), Dummit and Foote, Munkres (2nd ed.), Simmons. Not certain: Ponnusamy and Joshi, now cited by description. In Brualdi the chapters on permutations and on the pigeon-hole principle are 2 and 3 in either order, depending on the edition; the citation covers both.
 - `tools/check_net.py` ends with `0 problems`.
+
+## Unit 3, check of 14 November 2026
+
+Every formula, constant and worked example in the nine notes was re-derived by hand; the stability boundary of the fourth order Runge-Kutta method, the error constants of the Simpson and midpoint rules, the Gauss three-point rule, the Rayleigh quotient value 10 and the normal frequencies of the linear molecule and the double pendulum were also checked by a short script.
+
+### 01 First order ODEs: existence, uniqueness and singular solutions
+- Corrected: "$y' = y^{\alpha}$ with $y(0) = b \neq 0$ has a unique solution" now says $b > 0$, since $y^{\alpha}$ need not be defined for $y < 0$.
+- Added: Picard's iterates for $y' = y$ (partial sums of $e^x$); $y^2$ is Lipschitz on rectangles but not on a strip.
+- Reference: Ross's chapter numbers differ between editions and were replaced by a description.
+
+### 02 Linear ODEs, Sturm-Liouville problems and Green's function
+- Corrected: the definition of a regular Sturm-Liouville problem now asks for a finite closed interval, $p'$ and $q$ continuous, and non-trivial boundary coefficients.
+- Reference: Ross's chapter numbers replaced by a description.
+
+### 03 First order PDEs: Lagrange, Charpit and the Cauchy problem
+- Corrected: the uniqueness theorem for the Cauchy problem now asks for continuously differentiable coefficients and data. The compatibility test $[f, g] = 0$ now carries the condition $\partial(f, g)/\partial(p, q) \neq 0$.
+
+### 04 Second order PDEs: classification, constant coefficients and separation of variables
+- Corrected: the rule "replace $D^2$ by $-a^2$" for $\sin(ax + by)$ now says that $F$ must be a function of $D^2$, $DD'$, $D'^2$ only and the result non-zero. The maximum principle for harmonic functions now needs a connected domain and continuity up to the boundary. A bracket was added in the exponent of the mixed-ends heat series.
+- Added: complementary function for a factor that does not split into linear factors ($e^{hx + ky}$ with $F(h, k) = 0$).
+
+### 05 Numerical analysis I: roots of equations and linear systems
+- Corrected: the order rule from derivatives of $g$ now says $p \ge 2$ and starts near $\alpha$. The Newton condition $\lvert ff'' \rvert < f'^2$ now gives its reason ($g' = ff''/f'^2$) and needs an interval mapped into itself. The power method now needs a strictly dominant eigenvalue.
+- Added: the componentwise Gauss-Seidel formula.
+- Reference: the chapter numbers of Jain, Iyengar and Jain depend on the edition and were replaced by a description.
+
+### 06 Numerical analysis II: interpolation, integration and differential equations
+- No mathematical change; all error terms, degrees of exactness, the Picard iterates and the stability intervals are right.
+- Reference: chapter numbers of Jain, Iyengar and Jain replaced by a description.
+
+### 07 Calculus of variations
+- Added: the first variation and the fundamental lemma, which the syllabus names ("variation of a functional"). Everything else checked, including $y = x^3$, $y = 6x(1 - x)$, the conjugate point $\pi$ and the Rayleigh quotient 10.
+
+### 08 Linear integral equations
+- Corrected: the Neumann series bound $\lvert \lambda \rvert M(b - a) < 1$ is now stated as sufficient only. The resolvent of the Volterra kernel $x - t$ is now given for every $\lambda > 0$, $\frac{\sinh(\sqrt{\lambda}(x - t))}{\sqrt{\lambda}}$, not only for $\lambda = 1$.
+
+### 09 Classical mechanics
+- Corrected: Hamilton's principle now says "holonomic, forces from a potential". The principle of least action (Maupertuis) now says "scleronomic", which $\sum p\dot{q} = 2T$ needs. D'Alembert's principle names the applied forces and states the assumption on constraint forces. The radius of gyration in the rolling formula is about the axis through the centre. All $\omega^2$ are positive when $(V_{ij})$ is positive definite, not merely when $V$ has a strict minimum.
+
+### References
+- All six distinct links return 200: MIT OCW 18.03, 18.152, 18.330, 18.086, 18.307 and 8.09.
+- Chapters checked against the known tables of contents: Coddington, Sneddon, Fritz John, Strauss (2nd ed.), Gelfand and Fomin, Kanwal (2nd ed.), Tricomi, Goldstein, Poole and Safko (3rd ed.), Landau and Lifshitz. Not certain: Ross and Jain, Iyengar and Jain, now cited by description.
+- `tools/check_net.py` ends with `0 problems`.

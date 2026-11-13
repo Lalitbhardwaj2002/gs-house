@@ -11,7 +11,7 @@ const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js',
 
 // Every question file, every notes file of the book companion and every syllabus file of the NET
 // corner is saved at install too, so the installed app works fully offline for solo practice and reading.
-// (List last extended on 14 November 2026: CSIR NET Mathematical Sciences, Units 1 and 2. A change in this
+// (List last extended on 14 November 2026: CSIR NET Mathematical Sciences, Units 1 to 3. A change in this
 // file makes installed copies fetch the list again.)
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE)

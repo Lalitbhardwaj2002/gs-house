@@ -1,0 +1,84 @@
+@en
+# Numerical analysis I: roots of equations and linear systems
+
+> Numerical methods replace an exact answer by a sequence of approximations. For each method the paper asks three things: the formula, when it converges, and how fast.
+
+## Order of convergence
+
+- If $x_n \to \alpha$ and the errors $e_n = x_n - \alpha$ satisfy $\lvert e_{n+1} \rvert \approx C \lvert e_n \rvert^p$, the method has **order** $p$ and **asymptotic error constant** $C$. Order 1 is linear (it needs $C < 1$); order 2 is quadratic.
+- **Absolute error** is $\lvert x - x^* \rvert$; **relative error** is $\frac{\lvert x - x^* \rvert}{\lvert x \rvert}$. Round-off error comes from finite arithmetic, truncation error from cutting off an infinite process.
+
+## Roots of $f(x) = 0$
+
+| Method | Formula | Order | Remarks |
+| Bisection | Midpoint of an interval on which $f$ changes sign | 1, error halves each step | Always converges for continuous $f$ |
+| Regula falsi | $x = \frac{af(b) - bf(a)}{f(b) - f(a)}$, keeping a sign change | 1 | Always converges; one end often stays fixed |
+| Secant | $x_{n+1} = x_n - f(x_n)\frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})}$ | $\frac{1 + \sqrt{5}}{2} \approx 1.618$ | No bracketing; may diverge |
+| Newton-Raphson | $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$ | 2 at a simple root | Needs $f'$ and a good start |
+| Fixed-point iteration | $x_{n+1} = g(x_n)$ | 1 if $0 < \lvert g'(\alpha) \rvert < 1$ | Diverges if $\lvert g'(\alpha) \rvert > 1$ |
+
+- **Bisection**: after $n$ steps the error is at most $\frac{b - a}{2^n}$, so a tolerance $\varepsilon$ needs $n \ge \log_2\frac{b - a}{\varepsilon}$ steps.
+
+! remember | Fixed-point iteration and Newton's method
+- If $g$ maps $[a, b]$ into itself and $\lvert g'(x) \rvert \le k < 1$ there, then $g$ has exactly one fixed point $\alpha$ in $[a, b]$ and $x_{n+1} = g(x_n)$ converges to it from every start, with $\lvert x_n - \alpha \rvert \le \frac{k^n}{1 - k}\lvert x_1 - x_0 \rvert$.
+- If $g'(\alpha) = \dots = g^{(p-1)}(\alpha) = 0$ and $g^{(p)}(\alpha) \neq 0$ with $p \ge 2$, the iteration has order $p$ for starting values close to $\alpha$.
+- Newton's method at a simple root: $e_{n+1} \approx \frac{f''(\alpha)}{2f'(\alpha)}e_n^2$.
+- At a root of multiplicity $m \ge 2$ Newton's method is only linear, with ratio $1 - \frac{1}{m}$. The modified formula $x_{n+1} = x_n - m\frac{f(x_n)}{f'(x_n)}$ is quadratic again.
+- Newton's method is the fixed-point iteration with $g(x) = x - \frac{f(x)}{f'(x)}$, and $g'(x) = \frac{f(x)f''(x)}{f'(x)^2}$. So it converges if $\lvert f(x)f''(x) \rvert < f'(x)^2$ on an interval round the root that $g$ maps into itself.
+
+| Quantity | Newton's iteration |
+| $\sqrt{a}$ | $x_{n+1} = \frac{1}{2}\left(x_n + \frac{a}{x_n}\right)$ |
+| $\frac{1}{a}$ | $x_{n+1} = x_n(2 - ax_n)$ |
+| $a^{1/k}$ | $x_{n+1} = \frac{1}{k}\left((k - 1)x_n + \frac{a}{x_n^{k-1}}\right)$ |
+
+- For a system $F(x) = 0$: $x_{n+1} = x_n - J(x_n)^{-1}F(x_n)$, where $J$ is the Jacobian matrix.
+
+## Linear systems: direct methods
+
+- **Gauss elimination** reduces $Ax = b$ to upper triangular form and solves by back substitution; it needs about $\frac{n^3}{3}$ multiplications. **Gauss-Jordan** reduces to diagonal form and needs about $\frac{n^3}{2}$.
+- **Partial pivoting**: at each step bring the entry of largest modulus in the column to the pivot position. It keeps round-off under control and avoids a zero pivot.
+- **LU decomposition**: $A = LU$ with $L$ lower and $U$ upper triangular (Doolittle: units on the diagonal of $L$; Crout: units on the diagonal of $U$). It exists without row exchanges when all leading principal minors are non-zero.
+- **Cholesky**: a symmetric positive definite matrix is $LL^T$ with $L$ lower triangular.
+- **Condition number** $\kappa(A) = \lVert A \rVert \lVert A^{-1} \rVert \ge 1$. The relative error in $x$ is at most $\kappa(A)$ times the relative error in $b$. A large $\kappa$ means an ill-conditioned system (the Hilbert matrix is the standard example).
+
+## Linear systems: iterative methods
+
+Write $A = D + L + U$ (diagonal, strictly lower and strictly upper parts).
+
+| Method | Iteration | Iteration matrix $H$ |
+| Jacobi | $x^{(k+1)} = D^{-1}\left(b - (L + U)x^{(k)}\right)$ | $-D^{-1}(L + U)$ |
+| Gauss-Seidel | $x^{(k+1)} = (D + L)^{-1}\left(b - Ux^{(k)}\right)$ | $-(D + L)^{-1}U$ |
+
+- Gauss-Seidel uses each new component as soon as it is computed; Jacobi uses only values of the previous step. Componentwise, Gauss-Seidel is $x_i^{(k+1)} = \frac{1}{a_{ii}}\left(b_i - \sum_{j < i} a_{ij}x_j^{(k+1)} - \sum_{j > i} a_{ij}x_j^{(k)}\right)$.
+
+! remember | Convergence of $x^{(k+1)} = Hx^{(k)} + c$
+- It converges for every starting vector **if and only if** the spectral radius $\rho(H) < 1$. A sufficient condition is $\lVert H \rVert < 1$ in some matrix norm.
+- If $A$ is **strictly diagonally dominant**, both Jacobi and Gauss-Seidel converge.
+- If $A$ is symmetric positive definite, Gauss-Seidel converges.
+- For a tridiagonal matrix, $\rho(H_{GS}) = \rho(H_J)^2$: Gauss-Seidel converges twice as fast when Jacobi converges.
+- The smaller $\rho(H)$, the faster the convergence; the rate is measured by $-\log \rho(H)$.
+- Successive over-relaxation (SOR) with parameter $\omega$ can converge only for $0 < \omega < 2$; $\omega = 1$ is Gauss-Seidel.
+
+- Example: for $A$ with rows $(2, 1)$ and $(1, 2)$, $H_J$ has eigenvalues $\pm\frac{1}{2}$ and $H_{GS}$ has eigenvalues $0$ and $\frac{1}{4}$.
+- **Gershgorin**: every eigenvalue of $A$ lies in one of the discs $\lvert z - a_{ii} \rvert \le \sum_{j \neq i} \lvert a_{ij} \rvert$.
+- **Power method**: when one eigenvalue $\lambda_1$ is strictly larger in modulus than all the others, repeated multiplication by $A$ gives it; the error shrinks like $\left\lvert \frac{\lambda_2}{\lambda_1} \right\rvert^k$.
+
+? Order of convergence of the secant method? :: $\frac{1 + \sqrt{5}}{2} \approx 1.618$.
+? How does Newton's method behave at a double root? :: It converges only linearly, with ratio $\frac{1}{2}$.
+? When does $x^{(k+1)} = Hx^{(k)} + c$ converge for every starting vector? :: Exactly when the spectral radius of $H$ is less than 1.
+? Newton's iteration for $\sqrt{a}$? :: $x_{n+1} = \frac{1}{2}\left(x_n + \frac{a}{x_n}\right)$.
+
+! exam | PYQ focus
+- Order of convergence of a given iteration $x_{n+1} = g(x_n)$, found from the derivatives of $g$ at the fixed point.
+- Whether a fixed-point or Newton iteration converges for a given function and start.
+- Convergence of Jacobi and Gauss-Seidel for a given matrix; spectral radius of the iteration matrix.
+
+! recap | One-minute revision
+- Bisection and regula falsi: order 1. Secant: 1.618. Newton: 2 at a simple root, 1 at a multiple root.
+- Fixed point: converges if $\lvert g' \rvert < 1$ near the root; order is the first non-vanishing derivative of $g$ at the root.
+- Iterative linear solvers: converge if and only if $\rho(H) < 1$; diagonal dominance is enough.
+
+& K. E. Atkinson, An Introduction to Numerical Analysis (the chapters on root finding and on linear systems)
+& M. K. Jain, S. R. K. Iyengar and R. K. Jain, Numerical Methods for Scientific and Engineering Computation (the chapters on transcendental and polynomial equations and on linear algebraic equations)
+& S. S. Sastry, Introductory Methods of Numerical Analysis (the chapters on algebraic equations and on linear systems)
+& MIT OpenCourseWare 18.330: Introduction to Numerical Analysis | https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/

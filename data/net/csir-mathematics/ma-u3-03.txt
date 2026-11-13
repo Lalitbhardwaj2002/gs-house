@@ -1,0 +1,94 @@
+@en
+# First order PDEs: Lagrange, Charpit and the Cauchy problem
+
+> A first order partial differential equation is solved along curves, the characteristics, on which it becomes a system of ordinary equations. Throughout, $z = z(x, y)$, $p = z_x$ and $q = z_y$.
+
+## Formation and types
+
+- Eliminating two arbitrary constants from $f(x, y, z, a, b) = 0$ gives a first order equation. If there are more constants than independent variables, the equation is of higher order.
+- Eliminating an arbitrary function from $\phi(u, v) = 0$, with $u$, $v$ given functions of $x, y, z$, gives an equation $Pp + Qq = R$.
+
+| Type | Form |
+| Linear | $a(x, y)p + b(x, y)q = c(x, y)z + d(x, y)$ |
+| Semi-linear | $a(x, y)p + b(x, y)q = c(x, y, z)$ |
+| Quasi-linear | $a(x, y, z)p + b(x, y, z)q = c(x, y, z)$ |
+| Non-linear | Not linear in $p$ and $q$, for example $pq = z$ |
+
+| Solution | Meaning |
+| Complete integral | Contains two arbitrary constants |
+| General integral | Contains an arbitrary function |
+| Singular integral | Envelope of the complete integral: eliminate $a$, $b$ from $f = 0$, $f_a = 0$, $f_b = 0$ |
+
+## Lagrange's method
+
+- For $Pp + Qq = R$ solve the **auxiliary equations** $\frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R}$. If $u(x, y, z) = c_1$ and $v(x, y, z) = c_2$ are two independent integrals, the general solution is $\phi(u, v) = 0$, or $u = \psi(v)$.
+- **Multipliers**: if $lP + mQ + nR = 0$, then $l\,dx + m\,dy + n\,dz = 0$, which often integrates at once.
+
+| Equation | General solution |
+| $xp + yq = z$ | $z = x\,\phi\left(\frac{y}{x}\right)$ |
+| $yp - xq = 0$ | $z = \phi(x^2 + y^2)$ |
+| $p + q = 1$ | $z = x + \phi(x - y)$ |
+| $ap + bq = 0$, $a$, $b$ constants | $z = \phi(bx - ay)$ |
+
+- **Integral surface through a given curve**: write the curve in terms of a parameter, substitute in $u = c_1$, $v = c_2$, and eliminate the parameter to get the relation between $c_1$ and $c_2$.
+- **Surfaces orthogonal** to the family $f(x, y, z) = c$ satisfy $f_x p + f_y q = f_z$.
+
+## The Cauchy problem
+
+Take $a(x, y, u)u_x + b(x, y, u)u_y = c(x, y, u)$ with data on a curve $\Gamma$: $x = x_0(s)$, $y = y_0(s)$, $u = u_0(s)$. The **characteristic equations** are $\frac{dx}{dt} = a$, $\frac{dy}{dt} = b$, $\frac{du}{dt} = c$.
+
+! remember | Existence and uniqueness
+- Let $J = a\,y_0'(s) - b\,x_0'(s)$, evaluated on $\Gamma$.
+- If $a$, $b$, $c$ and the data are continuously differentiable and $J \neq 0$ everywhere on $\Gamma$ (the data curve is nowhere characteristic), there is a **unique** solution in a neighbourhood of $\Gamma$.
+- If $J = 0$ on $\Gamma$ and $\Gamma$ is itself a characteristic curve, so that $\frac{x_0'}{a} = \frac{y_0'}{b} = \frac{u_0'}{c}$, there are **infinitely many** solutions.
+- If $J = 0$ on $\Gamma$ but the data are not compatible in this way, there is **no** solution.
+
+- Example: $u_x + u_y = 0$ has general solution $u = \phi(x - y)$. With $u(x, 0) = f(x)$ the solution $u = f(x - y)$ is unique. With data on the line $y = x$, $u(x, x) = g(x)$, here $J = 0$: there are infinitely many solutions if $g$ is constant and none otherwise.
+- **Transport equation** $u_t + cu_x = 0$, $u(x, 0) = f(x)$: $u = f(x - ct)$, a wave moving with speed $c$ without change of shape.
+- **Burgers' equation** $u_t + uu_x = 0$, $u(x, 0) = f(x)$: $u$ is constant on the lines $x = \xi + f(\xi)t$, so $u = f(x - ut)$ implicitly. If $f$ is non-decreasing the solution is smooth for all $t > 0$. If $f'$ is negative somewhere, characteristics cross and the solution breaks down at time $t_b = \frac{-1}{\min f'}$.
+
+## Non-linear equations: Charpit's method
+
+For $f(x, y, z, p, q) = 0$, **Charpit's equations** are
+
+$$\frac{dx}{f_p} = \frac{dy}{f_q} = \frac{dz}{pf_p + qf_q} = \frac{dp}{-(f_x + pf_z)} = \frac{dq}{-(f_y + qf_z)}$$
+
+- Find from them one relation containing $p$ or $q$ and an arbitrary constant $a$. Solve it with $f = 0$ for $p$ and $q$, and integrate $dz = p\,dx + q\,dy$ to get the complete integral.
+
+! trick | Standard forms
+- $f(p, q) = 0$: complete integral $z = ax + by + c$ with $f(a, b) = 0$.
+- $f(z, p, q) = 0$: put $z = z(u)$, $u = x + ay$; then $p = \frac{dz}{du}$ and $q = a\frac{dz}{du}$.
+- $f_1(x, p) = f_2(y, q)$: set both equal to $a$, solve for $p$ and $q$, and integrate.
+- **Clairaut's form** $z = px + qy + f(p, q)$: complete integral $z = ax + by + f(a, b)$, a family of planes; the singular integral is their envelope.
+
+| Equation | Complete integral | Singular integral |
+| $pq = 1$ | $z = ax + \frac{y}{a} + c$ | None |
+| $p^2 + q^2 = 1$ | $z = ax + \sqrt{1 - a^2}\,y + c$ | None |
+| $z = px + qy + pq$ | $z = ax + by + ab$ | $z = -xy$ |
+| $z = px + qy + p^2 + q^2$ | $z = ax + by + a^2 + b^2$ | $4z = -(x^2 + y^2)$ |
+
+- Two equations $f = 0$ and $g = 0$ with $\frac{\partial(f, g)}{\partial(p, q)} \neq 0$ are **compatible** (have common solutions) when $[f, g] = 0$, where
+
+$$[f, g] = \frac{\partial(f, g)}{\partial(x, p)} + p\frac{\partial(f, g)}{\partial(z, p)} + \frac{\partial(f, g)}{\partial(y, q)} + q\frac{\partial(f, g)}{\partial(z, q)}$$
+
+- Charpit's method looks for a $g$ compatible with $f$.
+
+? Auxiliary equations of $Pp + Qq = R$? :: $\frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R}$.
+? Complete integral of $z = px + qy + f(p, q)$? :: $z = ax + by + f(a, b)$.
+? When does the Cauchy problem for a quasi-linear equation have a unique local solution? :: When the data curve is nowhere characteristic, that is $a y_0' - b x_0' \neq 0$ on it.
+? Solution of $u_t + cu_x = 0$, $u(x, 0) = f(x)$? :: $u = f(x - ct)$.
+
+! exam | PYQ focus
+- Whether a given Cauchy problem has a unique solution, infinitely many or none; the solution through a given curve.
+- General solution of a Lagrange equation; complete and singular integrals of a non-linear equation.
+- Characteristics of a given equation and the time at which the solution of a Burgers-type problem breaks down.
+
+! recap | One-minute revision
+- Quasi-linear: $\frac{dx}{P} = \frac{dy}{Q} = \frac{dz}{R}$, solution $\phi(u, v) = 0$.
+- Cauchy problem: $J \neq 0$ unique; $J = 0$ gives none or infinitely many.
+- Clairaut's form: replace $p$, $q$ by $a$, $b$. Charpit's equations for everything else.
+
+& I. N. Sneddon, Elements of Partial Differential Equations (chapters 1 and 2)
+& T. Amaranath, An Elementary Course in Partial Differential Equations (the chapter on first order equations)
+& Fritz John, Partial Differential Equations (chapter 1)
+& MIT OpenCourseWare 18.152: Introduction to Partial Differential Equations | https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2011/

@@ -1,0 +1,111 @@
+@en
+# Second order PDEs: classification, constant coefficients and separation of variables
+
+> Second order equations fall into three types, and each type has its model: the wave equation, the heat equation and Laplace's equation. The questions test the type of an equation, its general solution, and the behaviour of solutions of the three models.
+
+## Classification
+
+For $Au_{xx} + Bu_{xy} + Cu_{yy} + \text{(lower order terms)} = 0$, with $A$, $B$, $C$ functions of $x$ and $y$, the type at a point is decided by $B^2 - 4AC$.
+
+| $B^2 - 4AC$ | Type | Model | Canonical form | Real characteristics |
+| Positive | Hyperbolic | Wave: $u_{tt} = c^2 u_{xx}$ | $u_{\xi\eta} = \dots$ | Two families |
+| Zero | Parabolic | Heat: $u_t = ku_{xx}$ | $u_{\eta\eta} = \dots$ | One family |
+| Negative | Elliptic | Laplace: $u_{xx} + u_{yy} = 0$ | $u_{\xi\xi} + u_{\eta\eta} = \dots$ | None |
+
+- The **characteristic curves** satisfy $A\,(dy)^2 - B\,dx\,dy + C\,(dx)^2 = 0$, that is $\frac{dy}{dx} = \frac{B \pm \sqrt{B^2 - 4AC}}{2A}$.
+- If the middle term is written $2Bu_{xy}$, the test quantity is $B^2 - AC$.
+- The type may change from region to region: the Tricomi equation $yu_{xx} + u_{yy} = 0$ is elliptic for $y > 0$, hyperbolic for $y < 0$ and parabolic on $y = 0$.
+- In $n$ variables, $\sum a_{ij}u_{x_i x_j} + \dots = 0$ with symmetric $(a_{ij})$: **elliptic** if all eigenvalues have one sign; **hyperbolic** if none is zero and exactly one has the opposite sign; **parabolic** if exactly one is zero and the rest have one sign.
+
+## Linear equations with constant coefficients
+
+Write $D = \frac{\partial}{\partial x}$, $D' = \frac{\partial}{\partial y}$.
+
+| Factor of $F(D, D')$ | Contribution to the complementary function |
+| $D - mD'$ | $\phi(y + mx)$ |
+| $(D - mD')^2$ | $\phi_1(y + mx) + x\,\phi_2(y + mx)$ |
+| $D - mD' - c$ | $e^{cx}\phi(y + mx)$ |
+| $(D - mD' - c)^2$ | $e^{cx}[\phi_1(y + mx) + x\,\phi_2(y + mx)]$ |
+| $D' - c$ | $e^{cy}\phi(x)$ |
+
+- For a homogeneous operator such as $D^2 + a_1 DD' + a_2 D'^2$, the roots $m$ come from the auxiliary equation $m^2 + a_1 m + a_2 = 0$.
+- Example: $(D^2 - D'^2)z = 0$ gives $z = \phi_1(y + x) + \phi_2(y - x)$.
+- If $F(D, D')$ has a factor that does not split into linear factors (for example $D - D'^2$), use solutions $e^{hx + ky}$ of that factor: its part of the complementary function is $\sum A e^{hx + ky}$ over pairs with $h = k^2$ (in general, $F(h, k) = 0$).
+
+| Right-hand side | Particular integral |
+| $e^{ax + by}$, $F(a, b) \neq 0$ | $\frac{e^{ax + by}}{F(a, b)}$ |
+| $\sin(ax + by)$ or $\cos(ax + by)$, $F$ a function of $D^2$, $DD'$, $D'^2$ only | Replace $D^2$ by $-a^2$, $DD'$ by $-ab$, $D'^2$ by $-b^2$, if the result is non-zero |
+| Polynomial in $x$, $y$ | Expand $\frac{1}{F(D, D')}$ in a series |
+| $e^{ax + by}V$ | $e^{ax + by}\frac{1}{F(D + a, D' + b)}V$ |
+| General $f(x, y)$, factor $D - mD'$ | $\int f(x, c - mx)\,dx$, then put $c = y + mx$ |
+
+## The wave equation
+
+- **d'Alembert's solution** of $u_{tt} = c^2u_{xx}$ on the line with $u(x, 0) = f(x)$, $u_t(x, 0) = g(x)$:
+
+$$u(x, t) = \frac{1}{2}[f(x + ct) + f(x - ct)] + \frac{1}{2c}\int_{x - ct}^{x + ct} g(s)\,ds$$
+
+- The value at $(x, t)$ depends only on the data in $[x - ct, x + ct]$: disturbances travel with finite speed $c$.
+- **String with fixed ends**, $u(0, t) = u(L, t) = 0$:
+
+$$u = \sum_{n \ge 1} \sin\frac{n\pi x}{L}\left(A_n \cos\frac{n\pi ct}{L} + B_n \sin\frac{n\pi ct}{L}\right)$$
+
+- Here $A_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\,dx$ and $B_n = \frac{2}{n\pi c}\int_0^L g(x)\sin\frac{n\pi x}{L}\,dx$.
+- The energy $\frac{1}{2}\int (u_t^2 + c^2u_x^2)\,dx$ is constant, which gives uniqueness.
+
+## The heat equation
+
+- **Rod with ends at zero temperature**, $u_t = ku_{xx}$, $u(0, t) = u(L, t) = 0$, $u(x, 0) = f(x)$:
+
+$$u = \sum_{n \ge 1} b_n \sin\frac{n\pi x}{L}\, e^{-kn^2\pi^2 t/L^2}, \qquad b_n = \frac{2}{L}\int_0^L f(x)\sin\frac{n\pi x}{L}\,dx$$
+
+- Every term decays, so $u \to 0$ as $t \to \infty$.
+- **Insulated ends** ($u_x = 0$ at both ends): a cosine series, and $u$ tends to the mean value of $f$.
+- **Mixed ends** $u(0, t) = 0$, $u_x(L, t) = 0$: terms $\sin\frac{(2n - 1)\pi x}{2L}\, e^{-k(2n - 1)^2\pi^2 t/(4L^2)}$.
+- **Non-zero end temperatures** $T_1$, $T_2$: subtract the steady state $T_1 + (T_2 - T_1)\frac{x}{L}$ first.
+- On the whole line: $u(x, t) = \frac{1}{\sqrt{4\pi kt}}\int_{-\infty}^{\infty} f(\xi)\,e^{-(x - \xi)^2/4kt}\,d\xi$. The solution is smooth for $t > 0$ and heat spreads with infinite speed.
+- **Maximum principle**: on the rectangle $0 \le x \le L$, $0 \le t \le T$ the maximum and minimum of $u$ are attained at $t = 0$ or on the sides $x = 0$, $x = L$. Uniqueness follows.
+
+## Laplace's equation
+
+! remember | Harmonic functions
+- **Mean value property**: the value at the centre of a disc equals the average over the circle.
+- **Maximum principle**: a non-constant harmonic function on a bounded connected domain, continuous up to the boundary, attains its maximum and minimum only on the boundary.
+- The **Dirichlet problem** ($u$ given on the boundary) has at most one solution.
+- The **Neumann problem** ($\frac{\partial u}{\partial n} = g$ on the boundary) is solvable only if $\int_{\partial D} g\,ds = 0$, and then the solution is unique up to an added constant.
+- **Liouville**: a harmonic function on $\mathbb{R}^n$ that is bounded is constant.
+
+- In polar coordinates $\Delta u = u_{rr} + \frac{1}{r}u_r + \frac{1}{r^2}u_{\theta\theta}$.
+- **Disc** $r < a$: $u = \frac{a_0}{2} + \sum_{n \ge 1} r^n(a_n \cos n\theta + b_n \sin n\theta)$. Outside the disc use $r^{-n}$; in an annulus use both and $\ln r$.
+- **Poisson's formula** for the disc with boundary values $f$:
+
+$$u(r, \theta) = \frac{1}{2\pi}\int_0^{2\pi} \frac{(a^2 - r^2)\,f(\phi)}{a^2 - 2ar\cos(\theta - \phi) + r^2}\,d\phi$$
+
+- **Rectangle**: products $(A\cos\lambda x + B\sin\lambda x)(C\cosh\lambda y + D\sinh\lambda y)$, with the roles of $x$ and $y$ exchanged when the non-zero data are on a vertical side.
+- A problem is **well posed** (Hadamard) if a solution exists, is unique and depends continuously on the data. The Cauchy problem for Laplace's equation and the backward heat equation are not well posed.
+
+! trick | Separation of variables in four steps
+- Put $u = X(x)T(t)$ and divide: each side equals a constant $-\lambda$.
+- The boundary conditions make the $X$ equation a Sturm-Liouville problem; find its eigenvalues and eigenfunctions.
+- Solve the other equation for each eigenvalue and add all the products.
+- Fit the initial data by a Fourier series in the eigenfunctions.
+
+? Type of $u_{xx} + 4u_{xy} + 4u_{yy} = 0$? :: Parabolic, since $B^2 - 4AC = 16 - 16 = 0$.
+? d'Alembert's solution when $u_t(x, 0) = 0$? :: $u = \frac{1}{2}[f(x + ct) + f(x - ct)]$.
+? Condition for the Neumann problem for Laplace's equation to be solvable? :: The boundary data must integrate to zero, $\int_{\partial D} g\,ds = 0$.
+? Where does a solution of the heat equation on a rectangle attain its maximum? :: On the initial line $t = 0$ or on the sides $x = 0$, $x = L$.
+
+! exam | PYQ focus
+- Type of a given equation, the region where it is hyperbolic or elliptic, and its characteristics.
+- General solution or particular integral of a constant-coefficient equation.
+- Value of the solution of a wave, heat or Laplace problem at a point or as $t \to \infty$; uniqueness and maximum principle statements.
+
+! recap | One-minute revision
+- $B^2 - 4AC$: positive hyperbolic, zero parabolic, negative elliptic.
+- Wave: d'Alembert, finite speed. Heat: decaying sine series, maximum on the parabolic boundary.
+- Laplace: mean value, maximum principle; Neumann data must have zero total flux.
+
+& I. N. Sneddon, Elements of Partial Differential Equations (chapters 3 to 6)
+& T. Amaranath, An Elementary Course in Partial Differential Equations (the chapters on second order equations)
+& W. A. Strauss, Partial Differential Equations: An Introduction (chapters 1 to 6)
+& MIT OpenCourseWare 18.152: Introduction to Partial Differential Equations | https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2011/

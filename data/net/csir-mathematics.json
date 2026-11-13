@@ -6,7 +6,7 @@
  "title": { "en": "Mathematical Sciences" },
  "subtitle": { "en": "CSIR NET · Part B and Part C · unit-wise notes" },
  "about": {
-  "en": "These are GS House's own notes, written unit by unit from the official syllabus, standard textbooks and the pattern of past papers. Units 1 and 2 are ready; the other units are being written."
+  "en": "These are GS House's own notes, written unit by unit from the official syllabus, standard textbooks and the pattern of past papers. Units 1 to 3 are ready; Unit 4 is being written."
  },
  "units": [
   {
@@ -135,8 +135,69 @@
     { "text": "MIT OpenCourseWare 18.901: Introduction to Topology", "url": "https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/" }
    ]
   },
-  { "id": "u3", "icon": "🧮", "en": "Differential Equations, Numerical Analysis and Mechanics",
-    "line": { "en": "ODE · PDE · numerical analysis · calculus of variations · integral equations · mechanics" } },
+  {
+   "id": "u3", "icon": "🧮", "en": "Differential Equations, Numerical Analysis and Mechanics",
+   "line": { "en": "ODE · PDE · numerical analysis · calculus of variations · integral equations · mechanics" },
+   "parts": [
+    {
+     "en": "Ordinary Differential Equations",
+     "chapters": [
+      { "id": "ma-u3-01", "en": "First order ODEs: existence, uniqueness and singular solutions",
+        "key": { "en": "Picard and Peano · Lipschitz condition · Clairaut's equation · systems and stability" } },
+      { "id": "ma-u3-02", "en": "Linear ODEs, Sturm-Liouville problems and Green's function",
+        "key": { "en": "Wronskian · variation of parameters · zeros of solutions · eigenvalue problems · Green's function" } }
+     ]
+    },
+    {
+     "en": "Partial Differential Equations",
+     "chapters": [
+      { "id": "ma-u3-03", "en": "First order PDEs: Lagrange, Charpit and the Cauchy problem",
+        "key": { "en": "Lagrange's method · characteristics · existence and uniqueness · Charpit's equations" } },
+      { "id": "ma-u3-04", "en": "Second order PDEs: classification, constant coefficients and separation of variables",
+        "key": { "en": "Hyperbolic, parabolic, elliptic · wave, heat and Laplace equations · maximum principles" } }
+     ]
+    },
+    {
+     "en": "Numerical Analysis",
+     "chapters": [
+      { "id": "ma-u3-05", "en": "Numerical analysis I: roots of equations and linear systems",
+        "key": { "en": "Newton-Raphson · fixed-point iteration · order of convergence · Gauss elimination · Gauss-Seidel" } },
+      { "id": "ma-u3-06", "en": "Numerical analysis II: interpolation, integration and differential equations",
+        "key": { "en": "Finite differences · Lagrange, Hermite, splines · quadrature rules · Euler and Runge-Kutta" } }
+     ]
+    },
+    {
+     "en": "Calculus of Variations and Integral Equations",
+     "chapters": [
+      { "id": "ma-u3-07", "en": "Calculus of variations",
+        "key": { "en": "Euler-Lagrange equation · constraints · free ends · Legendre and Jacobi tests · Rayleigh-Ritz" } },
+      { "id": "ma-u3-08", "en": "Linear integral equations",
+        "key": { "en": "Fredholm and Volterra · separable kernels · characteristic numbers · resolvent kernel" } }
+     ]
+    },
+    {
+     "en": "Classical Mechanics",
+     "chapters": [
+      { "id": "ma-u3-09", "en": "Classical mechanics",
+        "key": { "en": "Lagrange's and Hamilton's equations · least action · rigid bodies · small oscillations" } }
+     ]
+    }
+   ],
+   "refs": [
+    { "text": "G. F. Simmons, Differential Equations with Applications and Historical Notes" },
+    { "text": "E. A. Coddington, An Introduction to Ordinary Differential Equations" },
+    { "text": "I. N. Sneddon, Elements of Partial Differential Equations" },
+    { "text": "K. E. Atkinson, An Introduction to Numerical Analysis" },
+    { "text": "M. K. Jain, S. R. K. Iyengar and R. K. Jain, Numerical Methods for Scientific and Engineering Computation" },
+    { "text": "I. M. Gelfand and S. V. Fomin, Calculus of Variations" },
+    { "text": "R. P. Kanwal, Linear Integral Equations: Theory and Technique" },
+    { "text": "H. Goldstein, C. Poole and J. Safko, Classical Mechanics" },
+    { "text": "MIT OpenCourseWare 18.03: Differential Equations", "url": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/" },
+    { "text": "MIT OpenCourseWare 18.152: Introduction to Partial Differential Equations", "url": "https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2011/" },
+    { "text": "MIT OpenCourseWare 18.330: Introduction to Numerical Analysis", "url": "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/" },
+    { "text": "MIT OpenCourseWare 8.09: Classical Mechanics III", "url": "https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/" }
+   ]
+  },
   { "id": "u4", "icon": "🎲", "en": "Statistics",
     "line": { "en": "Probability · inference · linear models · operations research" } }
  ]

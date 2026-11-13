@@ -1,0 +1,99 @@
+@en
+# First order ODEs: existence, uniqueness and singular solutions
+
+> A first order equation $y' = f(x, y)$ with a starting value may have one solution, many or none. The paper asks which, on what interval, and what happens when the standard conditions fail. Singular solutions and systems $x' = Ax$ complete the topic.
+
+## Standard types and their methods
+
+| Type | Form | Method |
+| Separable | $y' = g(x)h(y)$ | Separate and integrate |
+| Homogeneous | $y' = F\left(\frac{y}{x}\right)$ | Put $y = vx$ |
+| Linear | $y' + P(x)y = Q(x)$ | Integrating factor $e^{\int P\,dx}$ |
+| Bernoulli | $y' + P(x)y = Q(x)y^n$ | Put $v = y^{1-n}$; the equation becomes linear |
+| Exact | $M\,dx + N\,dy = 0$ with $M_y = N_x$ | Solution $\int M\,dx + \int (\text{terms of } N \text{ free of } x)\,dy = c$ |
+
+- **Integrating factors** for $M\,dx + N\,dy = 0$: if $\frac{M_y - N_x}{N}$ is a function of $x$ alone, use $e^{\int \frac{M_y - N_x}{N}dx}$; if $\frac{N_x - M_y}{M}$ is a function of $y$ alone, use $e^{\int \frac{N_x - M_y}{M}dy}$.
+- If $M$ and $N$ are homogeneous of the same degree and $Mx + Ny \neq 0$, then $\frac{1}{Mx + Ny}$ is an integrating factor.
+- **Orthogonal trajectories** of a family: write its differential equation and replace $y'$ by $-\frac{1}{y'}$.
+
+## Existence and uniqueness
+
+Consider $y' = f(x, y)$, $y(x_0) = y_0$ on the rectangle $R$: $\lvert x - x_0 \rvert \le a$, $\lvert y - y_0 \rvert \le b$, and let $M = \max_R \lvert f \rvert$, $h = \min\left(a, \frac{b}{M}\right)$.
+
+! remember | The theorems
+- **Peano**: if $f$ is continuous on $R$, at least one solution exists on $\lvert x - x_0 \rvert \le h$.
+- **Picard**: if $f$ is continuous on $R$ and satisfies a **Lipschitz condition** in $y$, $\lvert f(x, y_1) - f(x, y_2) \rvert \le K \lvert y_1 - y_2 \rvert$, then exactly one solution exists on $\lvert x - x_0 \rvert \le h$.
+- If $\frac{\partial f}{\partial y}$ exists and is bounded on $R$, the Lipschitz condition holds with $K = \sup \left\lvert \frac{\partial f}{\partial y} \right\rvert$. The converse fails: $f = \lvert y \rvert$ is Lipschitz but not differentiable at $y = 0$.
+- **Picard's iterates** $y_{n+1}(x) = y_0 + \int_{x_0}^{x} f(t, y_n(t))\,dt$, starting from $y_0(x) = y_0$, converge uniformly to the solution.
+- These conditions are **sufficient, not necessary**: a solution may exist, and may be unique, without them.
+- If $f$ is continuous and Lipschitz in $y$ on the whole strip $a \le x \le b$, $y \in \mathbb{R}$, the solution exists on all of $[a, b]$. In particular a linear equation $y' + P(x)y = Q(x)$ with $P$, $Q$ continuous on an interval has a unique solution on that whole interval.
+
+| Initial value problem | Solutions |
+| $y' = y^{1/3}$, $y(0) = 0$ | Infinitely many: $y = 0$, $y = \pm\left(\frac{2x}{3}\right)^{3/2}$ for $x \ge 0$, and solutions that stay zero up to any point and then branch off |
+| $y' = \sqrt{\lvert y \rvert}$, $y(0) = 0$ | Infinitely many |
+| $y' = \lvert y \rvert$, $y(0) = 0$ | Only $y = 0$ |
+| $y' = y^2$, $y(0) = 1$ | Unique, $y = \frac{1}{1 - x}$, but it exists only for $x < 1$ |
+| $y' = 1 + y^2$, $y(0) = 0$ | Unique, $y = \tan x$, on $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ only |
+| $xy' = y$, $y(0) = 0$ | Infinitely many: $y = cx$ |
+| $xy' = y$, $y(0) = 1$ | None |
+
+- For $y' = y^{\alpha}$ with $0 < \alpha < 1$: the problem $y(0) = 0$ has infinitely many solutions, while $y(0) = b > 0$ has a unique solution near $0$, since $f$ is Lipschitz away from $y = 0$.
+- If a problem $y' = f(x, y)$, $y(x_0) = y_0$ with continuous $f$ has two different solutions, it has infinitely many.
+- If $f$ is continuous and non-increasing in $y$ for each fixed $x$, there is at most one solution to the right of $x_0$.
+- Example of the interval: for $y' = x^2 + y^2$, $y(0) = 0$ on $\lvert x \rvert \le 1$, $\lvert y \rvert \le 1$, $M = 2$ and the theorem guarantees a solution on $\lvert x \rvert \le \frac{1}{2}$.
+- Example of Picard's iterates: for $y' = y$, $y(0) = 1$ they are $y_n = 1 + x + \dots + \frac{x^n}{n!}$, the partial sums of $e^x$.
+- $f = y^2$ is Lipschitz on every rectangle but not on a whole strip, which is why the solution $\frac{1}{1 - x}$ of $y' = y^2$, $y(0) = 1$ can blow up.
+
+## Singular solutions
+
+- A **singular solution** satisfies the equation but is not obtained from the general solution for any value of the constant. Geometrically it is the **envelope** of the family of solution curves.
+- **$c$-discriminant**: eliminate $c$ from $\phi(x, y, c) = 0$ and $\frac{\partial \phi}{\partial c} = 0$. **$p$-discriminant** (with $p = y'$): eliminate $p$ from $F(x, y, p) = 0$ and $\frac{\partial F}{\partial p} = 0$.
+- The $c$-discriminant contains the envelope once, the node locus twice and the cusp locus three times. The $p$-discriminant contains the envelope once, the tac locus twice and the cusp locus once. The envelope is the factor common to both, and it must be checked in the equation.
+- **Clairaut's equation** $y = px + f(p)$: the general solution is the family of straight lines $y = cx + f(c)$; the singular solution comes from eliminating $p$ between $y = px + f(p)$ and $x + f'(p) = 0$.
+
+| Equation | General solution | Singular solution |
+| $y = px + \frac{a}{p}$ | $y = cx + \frac{a}{c}$ | $y^2 = 4ax$ |
+| $y = px - p^2$ | $y = cx - c^2$ | $y = \frac{x^2}{4}$ |
+| $p^2 = 4y$ | $y = (x + c)^2$ | $y = 0$ |
+| $y^2(1 + p^2) = 1$ | $(x + c)^2 + y^2 = 1$ | $y = \pm 1$ |
+
+## Systems of first order equations
+
+- An equation of order $n$ is equivalent to a system of $n$ first order equations.
+- For $x' = Ax$ with $A$ a constant $n \times n$ matrix, the solutions form a vector space of dimension $n$. The solution with $x(0) = x_0$ is $x(t) = e^{At}x_0$, and $\det e^{At} = e^{t \operatorname{tr} A}$.
+- If $A$ has independent eigenvectors $v_i$ with eigenvalues $\lambda_i$, then $x = \sum c_i e^{\lambda_i t} v_i$. For a repeated eigenvalue with only one eigenvector $v$, a second solution is $e^{\lambda t}(tv + w)$ with $(A - \lambda I)w = v$.
+- A **fundamental matrix** $\Phi(t)$ has independent solutions as columns; $\Phi' = A\Phi$ and $e^{At} = \Phi(t)\Phi(0)^{-1}$.
+- **Abel-Liouville formula** for $x' = A(t)x$: $\det \Phi(t) = \det \Phi(t_0)\, \exp\left(\int_{t_0}^{t} \operatorname{tr} A(s)\,ds\right)$. So the Wronskian is either never zero or identically zero.
+- Non-homogeneous system $x' = Ax + g(t)$: $x(t) = e^{At}x_0 + \int_0^t e^{A(t - s)}g(s)\,ds$.
+
+| Eigenvalues of a real $2 \times 2$ matrix $A$ | Critical point at the origin |
+| Real, both negative | Stable node |
+| Real, both positive | Unstable node |
+| Real, opposite signs | Saddle point (unstable) |
+| Complex with negative real part | Stable spiral |
+| Complex with positive real part | Unstable spiral |
+| Purely imaginary | Centre (stable, not asymptotically stable) |
+
+! trick | Stability at a glance
+- The origin is **asymptotically stable** for $x' = Ax$ exactly when every eigenvalue of $A$ has negative real part.
+- For a $2 \times 2$ matrix this means $\operatorname{tr} A < 0$ and $\det A > 0$. If $\det A < 0$ the origin is a saddle.
+
+? What does Picard's theorem need beyond continuity of $f$? :: A Lipschitz condition in $y$; then the solution is unique.
+? How many solutions has $y' = y^{1/3}$, $y(0) = 0$? :: Infinitely many; $f$ is not Lipschitz near $y = 0$.
+? Singular solution of Clairaut's equation $y = px + f(p)$? :: The envelope of the lines, found by eliminating $p$ between the equation and $x + f'(p) = 0$.
+? When is the origin asymptotically stable for $x' = Ax$? :: When every eigenvalue of $A$ has negative real part.
+
+! exam | PYQ focus
+- Whether a given initial value problem has no solution, a unique solution or infinitely many, and the largest interval on which the solution exists.
+- Lipschitz condition for a given $f$; Picard iterates.
+- Singular solution of a given equation; nature of the critical point of a linear system; computing $e^{At}$.
+
+! recap | One-minute revision
+- Continuous $f$: a solution exists. Continuous and Lipschitz in $y$: exactly one, on $\lvert x - x_0 \rvert \le \min\left(a, \frac{b}{M}\right)$.
+- $y' = y^{\alpha}$, $0 < \alpha < 1$, $y(0) = 0$: infinitely many solutions. $y' = y^2$: blow-up in finite time.
+- Clairaut: lines $y = cx + f(c)$ and their envelope. $x' = Ax$: $x = e^{At}x_0$; stable when all eigenvalues have negative real part.
+
+& G. F. Simmons, Differential Equations with Applications and Historical Notes (chapters on first order equations, on systems and on existence and uniqueness)
+& E. A. Coddington, An Introduction to Ordinary Differential Equations (chapters 1, 5 and 6)
+& S. L. Ross, Differential Equations (the chapters on first order equations, on systems of linear equations and on existence and uniqueness theory)
+& MIT OpenCourseWare 18.03: Differential Equations | https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/

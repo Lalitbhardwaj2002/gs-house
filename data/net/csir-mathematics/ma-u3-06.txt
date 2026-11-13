@@ -1,0 +1,94 @@
+@en
+# Numerical analysis II: interpolation, integration and differential equations
+
+> A function known only at a few points is replaced by a polynomial through those points. Differentiating and integrating that polynomial gives the numerical rules, and stepping along a differential equation gives the Euler and Runge-Kutta methods. Orders of error are the usual question.
+
+## Finite differences
+
+| Operator | Definition | In terms of the shift $E$ |
+| Shift $E$ | $Ef(x) = f(x + h)$ | $E = e^{hD}$, $D = \frac{d}{dx}$ |
+| Forward $\Delta$ | $f(x + h) - f(x)$ | $E - 1$ |
+| Backward $\nabla$ | $f(x) - f(x - h)$ | $1 - E^{-1}$ |
+| Central $\delta$ | $f\left(x + \frac{h}{2}\right) - f\left(x - \frac{h}{2}\right)$ | $E^{1/2} - E^{-1/2}$ |
+| Average $\mu$ | $\frac{1}{2}\left[f\left(x + \frac{h}{2}\right) + f\left(x - \frac{h}{2}\right)\right]$ | $\frac{1}{2}\left(E^{1/2} + E^{-1/2}\right)$ |
+
+- Useful relations: $\Delta\nabla = \Delta - \nabla = \delta^2$, $\mu^2 = 1 + \frac{\delta^2}{4}$, $E\nabla = \Delta$.
+- For a polynomial of degree $n$ with leading coefficient $a$: $\Delta^n f = a\,n!\,h^n$ (a constant) and $\Delta^{n+1} f = 0$.
+
+## Interpolation
+
+- Through $n + 1$ points with distinct nodes $x_0, \dots, x_n$ there is exactly one polynomial of degree at most $n$. Lagrange's and Newton's formulas are two ways of writing it.
+- **Lagrange**: $P(x) = \sum_i f(x_i)\,l_i(x)$ with $l_i(x) = \prod_{j \neq i} \frac{x - x_j}{x_i - x_j}$. Here $l_i(x_j) = \delta_{ij}$ and $\sum_i l_i(x) = 1$.
+- **Newton's divided differences**: $P(x) = f[x_0] + f[x_0, x_1](x - x_0) + \dots + f[x_0, \dots, x_n](x - x_0)\cdots(x - x_{n-1})$.
+- A divided difference is symmetric in its arguments, and $f[x_0, \dots, x_n] = \frac{f^{(n)}(\xi)}{n!}$ for some $\xi$. So the $n$-th divided difference of a polynomial of degree $n$ is its leading coefficient, and higher ones vanish.
+- **Newton forward formula** (equal spacing, $u = \frac{x - x_0}{h}$): $P = f_0 + u\,\Delta f_0 + \frac{u(u - 1)}{2!}\Delta^2 f_0 + \dots$. The backward formula uses $\nabla$ at $x_n$ and suits the end of a table.
+
+! remember | Errors and special interpolants
+- **Error**: $f(x) - P_n(x) = \frac{f^{(n+1)}(\xi)}{(n + 1)!}\prod_{i=0}^{n}(x - x_i)$.
+- **Hermite interpolation** matches $f$ and $f'$ at $n + 1$ nodes; the polynomial has degree at most $2n + 1$ and the error is $\frac{f^{(2n+2)}(\xi)}{(2n + 2)!}\prod (x - x_i)^2$.
+- A **cubic spline** is a cubic on each subinterval with $S$, $S'$ and $S''$ continuous at the interior nodes. On $n$ subintervals there are $4n$ coefficients and $4n - 2$ conditions; two end conditions complete it (natural spline: $S'' = 0$ at both ends).
+- A linear spline is only continuous; a quadratic spline has a continuous first derivative.
+- High-degree interpolation at equally spaced nodes can oscillate badly (**Runge's phenomenon**); Chebyshev nodes make $\max \left\lvert \prod (x - x_i) \right\rvert$ as small as possible.
+
+## Numerical differentiation
+
+| Formula | Approximates | Error |
+| $\frac{f(x + h) - f(x)}{h}$ | $f'(x)$ | $O(h)$ |
+| $\frac{f(x + h) - f(x - h)}{2h}$ | $f'(x)$ | $O(h^2)$ |
+| $\frac{f(x + h) - 2f(x) + f(x - h)}{h^2}$ | $f''(x)$ | $O(h^2)$ |
+
+## Numerical integration
+
+| Rule | Formula on one panel | Error on one panel | Exact for polynomials of degree up to |
+| Trapezoidal | $\frac{h}{2}(f_0 + f_1)$ | $-\frac{h^3}{12}f''(\xi)$ | 1 |
+| Simpson's one-third | $\frac{h}{3}(f_0 + 4f_1 + f_2)$ | $-\frac{h^5}{90}f^{(4)}(\xi)$ | 3 |
+| Simpson's three-eighths | $\frac{3h}{8}(f_0 + 3f_1 + 3f_2 + f_3)$ | $-\frac{3h^5}{80}f^{(4)}(\xi)$ | 3 |
+| Midpoint | $h\,f\left(x_0 + \frac{h}{2}\right)$ | $\frac{h^3}{24}f''(\xi)$ | 1 |
+| Gauss-Legendre, $n$ points | $\sum w_i f(x_i)$ | Involves $f^{(2n)}$ | $2n - 1$ |
+
+- Composite errors over $[a, b]$: trapezoidal $-\frac{(b - a)h^2}{12}f''(\xi)$; Simpson's one-third $-\frac{(b - a)h^4}{180}f^{(4)}(\xi)$.
+- Composite Simpson's one-third needs an even number of subintervals; three-eighths needs a multiple of three.
+- The trapezoidal rule overestimates the integral of a convex function ($f'' > 0$) and underestimates that of a concave one.
+- A Newton-Cotes rule with $n + 1$ equally spaced points is exact up to degree $n$ if $n$ is odd and $n + 1$ if $n$ is even.
+- **Gauss two-point rule**: $\int_{-1}^{1} f\,dx \approx f\left(-\frac{1}{\sqrt{3}}\right) + f\left(\frac{1}{\sqrt{3}}\right)$, exact up to degree 3. **Three-point rule**: nodes $0, \pm\sqrt{\frac{3}{5}}$ with weights $\frac{8}{9}, \frac{5}{9}, \frac{5}{9}$, exact up to degree 5.
+- To find unknown weights or nodes of a rule, make it exact for $1, x, x^2, \dots$ in turn.
+
+## Initial value problems
+
+For $y' = f(x, y)$, $y(x_0) = y_0$, with step $h$ and $f_n = f(x_n, y_n)$:
+
+| Method | Formula | Local error | Order |
+| Euler | $y_{n+1} = y_n + hf_n$ | $O(h^2)$ | 1 |
+| Modified Euler (Heun) | $y_{n+1} = y_n + \frac{h}{2}\left[f_n + f(x_{n+1}, y_n + hf_n)\right]$ | $O(h^3)$ | 2 |
+| Midpoint | $y_{n+1} = y_n + h f\left(x_n + \frac{h}{2}, y_n + \frac{h}{2}f_n\right)$ | $O(h^3)$ | 2 |
+| Runge-Kutta, fourth order | $y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$ | $O(h^5)$ | 4 |
+| Backward Euler | $y_{n+1} = y_n + hf(x_{n+1}, y_{n+1})$ | $O(h^2)$ | 1 |
+
+- In the fourth order method $k_1 = hf(x_n, y_n)$, $k_2 = hf\left(x_n + \frac{h}{2}, y_n + \frac{k_1}{2}\right)$, $k_3 = hf\left(x_n + \frac{h}{2}, y_n + \frac{k_2}{2}\right)$, $k_4 = hf(x_n + h, y_n + k_3)$.
+- Books differ on names: some call the midpoint formula "modified Euler" and Heun's formula "improved Euler". Both have order 2; go by the formula given in the question.
+- **Picard's method** builds functions: $y_{n+1}(x) = y_0 + \int_{x_0}^{x} f(t, y_n(t))\,dt$. For $y' = x + y$, $y(0) = 1$: $y_1 = 1 + x + \frac{x^2}{2}$ and $y_2 = 1 + x + x^2 + \frac{x^3}{6}$.
+
+! trick | The test equation $y' = \lambda y$
+- Euler gives $y_n = (1 + h\lambda)^n y_0$; backward Euler gives $y_n = \frac{y_0}{(1 - h\lambda)^n}$; the trapezoidal method gives $y_n = \left(\frac{1 + h\lambda/2}{1 - h\lambda/2}\right)^n y_0$.
+- For real $\lambda < 0$ Euler's method is stable only if $0 < h < \frac{2}{\lvert \lambda \rvert}$. Backward Euler and the trapezoidal method are stable for every $h > 0$.
+- The second order Runge-Kutta methods need $-2 < h\lambda < 0$; the fourth order method needs about $-2.78 < h\lambda < 0$.
+
+? Up to what degree is Simpson's one-third rule exact? :: Degree 3; it integrates every cubic exactly.
+? Order of the classical Runge-Kutta method? :: 4; the local error is $O(h^5)$.
+? Degree of the Hermite polynomial matching $f$ and $f'$ at $n + 1$ nodes? :: At most $2n + 1$.
+? For which $h$ is Euler's method stable on $y' = \lambda y$ with $\lambda < 0$? :: $0 < h < \frac{2}{\lvert \lambda \rvert}$.
+
+! exam | PYQ focus
+- Error terms and degree of exactness of quadrature rules; finding weights so that a rule is exact up to a given degree.
+- Interpolating polynomial through given points, its degree and its error; divided differences of a polynomial.
+- One or two steps of Euler, modified Euler or Runge-Kutta; stability of a method for $y' = \lambda y$.
+
+! recap | One-minute revision
+- Interpolation error: $\frac{f^{(n+1)}(\xi)}{(n+1)!}\prod(x - x_i)$. Hermite: degree $2n + 1$.
+- Trapezoidal $O(h^2)$, exact to degree 1. Simpson $O(h^4)$, exact to degree 3. Gauss with $n$ points: degree $2n - 1$.
+- Euler order 1, modified Euler order 2, classical Runge-Kutta order 4.
+
+& K. E. Atkinson, An Introduction to Numerical Analysis (the chapters on interpolation, numerical integration and differential equations)
+& M. K. Jain, S. R. K. Iyengar and R. K. Jain, Numerical Methods for Scientific and Engineering Computation (the chapters on interpolation, on differentiation and integration, and on initial value problems)
+& S. S. Sastry, Introductory Methods of Numerical Analysis (the chapters on interpolation, differentiation and integration, and ordinary differential equations)
+& MIT OpenCourseWare 18.330: Introduction to Numerical Analysis | https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/

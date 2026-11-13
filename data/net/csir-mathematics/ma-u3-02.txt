@@ -1,0 +1,107 @@
+@en
+# Linear ODEs, Sturm-Liouville problems and Green's function
+
+> Linear equations have a complete theory: the solutions of the homogeneous equation form a vector space, and one particular solution finishes the job. The same equations with boundary conditions lead to eigenvalue problems and to Green's function.
+
+## General theory
+
+- Consider $L[y] = y^{(n)} + p_1(x)y^{(n-1)} + \dots + p_n(x)y = r(x)$ with continuous coefficients on an interval $I$. With $n$ initial conditions at a point of $I$ there is exactly one solution, and it exists on all of $I$.
+- The solutions of $L[y] = 0$ form a vector space of dimension $n$. The general solution of $L[y] = r$ is the **complementary function** plus any **particular integral**.
+- **Wronskian** of $y_1, \dots, y_n$: the determinant with rows $y_i, y_i', \dots, y_i^{(n-1)}$. For solutions of the same equation $L[y] = 0$ it is either identically zero or never zero on $I$, and the solutions are independent exactly when it is not zero.
+- **Abel's formula**: $W(x) = W(x_0) \exp\left(-\int_{x_0}^{x} p_1(t)\,dt\right)$. For $y'' + py' + qy = 0$, $W = Ce^{-\int p\,dx}$.
+- For arbitrary functions $W \equiv 0$ does not give dependence: $x^2$ and $x\lvert x \rvert$ on $\mathbb{R}$.
+- If a solution of $y'' + py' + qy = 0$ and its derivative vanish at the same point, it is the zero solution. So a non-trivial solution has only simple zeros, and two independent solutions have no common zero.
+- **Reduction of order**: if $y_1$ solves $y'' + py' + qy = 0$, a second solution is $y_2 = y_1 \int \frac{e^{-\int p\,dx}}{y_1^2}\,dx$.
+
+## Constant coefficients
+
+| Roots of the auxiliary equation | Part of the complementary function |
+| Real and distinct, $m_1, m_2$ | $c_1 e^{m_1 x} + c_2 e^{m_2 x}$ |
+| Real root $m$ repeated $k$ times | $(c_1 + c_2 x + \dots + c_k x^{k-1})e^{mx}$ |
+| Complex pair $\alpha \pm i\beta$ | $e^{\alpha x}(c_1 \cos \beta x + c_2 \sin \beta x)$ |
+
+| Right-hand side | Particular integral of $f(D)y = r$, $D = \frac{d}{dx}$ |
+| $e^{ax}$, $f(a) \neq 0$ | $\frac{e^{ax}}{f(a)}$ |
+| $e^{ax}$, $a$ a root of multiplicity $k$ | $\frac{x^k e^{ax}}{f^{(k)}(a)}$ |
+| $\sin ax$ or $\cos ax$, for $f(D) = g(D^2)$, $g(-a^2) \neq 0$ | Replace $D^2$ by $-a^2$ |
+| $\sin ax$ for $D^2 + a^2$ | $-\frac{x}{2a}\cos ax$ |
+| $\cos ax$ for $D^2 + a^2$ | $\frac{x}{2a}\sin ax$ |
+| $e^{ax}V(x)$ | $e^{ax}\frac{1}{f(D + a)}V$ |
+| Polynomial | Expand $\frac{1}{f(D)}$ in powers of $D$ |
+
+- **Cauchy-Euler equation** $x^2y'' + axy' + by = 0$: put $x = e^t$, or try $y = x^m$, which gives $m(m - 1) + am + b = 0$.
+
+## Variation of parameters
+
+- For $y'' + py' + qy = r$ (leading coefficient 1) with independent solutions $y_1$, $y_2$ of the homogeneous equation and Wronskian $W$:
+
+$$y_p = -y_1 \int \frac{y_2\, r}{W}\,dx + y_2 \int \frac{y_1\, r}{W}\,dx$$
+
+- The method works for variable coefficients and for any continuous $r$, once $y_1$ and $y_2$ are known.
+
+## Zeros of solutions
+
+! remember | Sturm's theorems for $y'' + q(x)y = 0$
+- If $q(x) \le 0$ on an interval, a non-trivial solution has at most one zero there.
+- If $q(x) \ge m > 0$ for all large $x$, every solution has infinitely many zeros (it oscillates).
+- **Separation theorem**: the zeros of two independent solutions of $y'' + py' + qy = 0$ alternate.
+- **Comparison theorem**: if $q_1(x) > q_2(x)$, then between two consecutive zeros of a non-trivial solution of $y'' + q_2 y = 0$ there is at least one zero of every solution of $y'' + q_1 y = 0$.
+- The substitution $y = u \exp\left(-\frac{1}{2}\int p\,dx\right)$ turns $y'' + py' + qy = 0$ into $u'' + \left(q - \frac{p^2}{4} - \frac{p'}{2}\right)u = 0$ without moving the zeros.
+
+## Sturm-Liouville problems
+
+A **regular Sturm-Liouville problem** is
+
+$$(p(x)y')' + (q(x) + \lambda r(x))y = 0, \quad a \le x \le b,$$
+
+on a finite closed interval, with $p$, $p'$, $q$, $r$ continuous, $p > 0$ and $r > 0$ on $[a, b]$, and separated conditions $\alpha_1 y(a) + \alpha_2 y'(a) = 0$, $\beta_1 y(b) + \beta_2 y'(b) = 0$, where $\alpha_1$, $\alpha_2$ are not both zero and $\beta_1$, $\beta_2$ are not both zero.
+
+! remember | Properties of a regular problem
+- The eigenvalues are real and form an increasing sequence $\lambda_1 < \lambda_2 < \dots$ tending to infinity.
+- Each eigenvalue is simple: its eigenfunctions are multiples of one function.
+- Eigenfunctions of different eigenvalues are orthogonal with weight $r$: $\int_a^b r\, y_m y_n\,dx = 0$.
+- The $n$-th eigenfunction has exactly $n - 1$ zeros in $(a, b)$.
+- The eigenfunctions form a complete orthogonal system, so suitable functions can be expanded in them.
+
+| Problem | Eigenvalues | Eigenfunctions |
+| $y'' + \lambda y = 0$, $y(0) = y(L) = 0$ | $\left(\frac{n\pi}{L}\right)^2$, $n \ge 1$ | $\sin \frac{n\pi x}{L}$ |
+| $y'' + \lambda y = 0$, $y'(0) = y'(L) = 0$ | $\left(\frac{n\pi}{L}\right)^2$, $n \ge 0$ | $\cos \frac{n\pi x}{L}$ |
+| $y'' + \lambda y = 0$, $y(0) = 0$, $y'(L) = 0$ | $\left(\frac{(2n - 1)\pi}{2L}\right)^2$, $n \ge 1$ | $\sin \frac{(2n - 1)\pi x}{2L}$ |
+| $y'' + \lambda y = 0$, $y'(0) = 0$, $y(L) = 0$ | $\left(\frac{(2n - 1)\pi}{2L}\right)^2$, $n \ge 1$ | $\cos \frac{(2n - 1)\pi x}{2L}$ |
+| $x^2y'' + xy' + \lambda y = 0$, $y(1) = y(e) = 0$ | $n^2\pi^2$, $n \ge 1$ | $\sin(n\pi \ln x)$, weight $\frac{1}{x}$ |
+
+- With **periodic** conditions $y(-\pi) = y(\pi)$, $y'(-\pi) = y'(\pi)$ the eigenvalues of $y'' + \lambda y = 0$ are $n^2$, and for $n \ge 1$ each has two independent eigenfunctions $\cos nx$, $\sin nx$. The conditions are not separated, so simplicity is lost.
+- Any equation $a_0 y'' + a_1 y' + (a_2 + \lambda)y = 0$ is brought to Sturm-Liouville form by multiplying by $\frac{1}{a_0}\exp\left(\int \frac{a_1}{a_0}\,dx\right)$.
+
+## Green's function
+
+Take $L[y] = (p(x)y')' + q(x)y = f(x)$ with homogeneous boundary conditions at $a$ and $b$.
+
+- If the homogeneous problem $L[y] = 0$ has only the zero solution, then $y(x) = \int_a^b G(x, \xi) f(\xi)\,d\xi$.
+- Let $y_1$ satisfy the condition at $a$ and $y_2$ the condition at $b$, both solving $L[y] = 0$. Then $p\,W(y_1, y_2)$ is a constant $c$, and
+
+$$G(x, \xi) = \frac{y_1(x)y_2(\xi)}{c} \ \ (x \le \xi), \qquad G(x, \xi) = \frac{y_1(\xi)y_2(x)}{c} \ \ (x \ge \xi).$$
+
+- $G$ is continuous, symmetric ($G(x, \xi) = G(\xi, x)$), satisfies the boundary conditions and the homogeneous equation for $x \neq \xi$, and $\frac{\partial G}{\partial x}$ jumps by $\frac{1}{p(\xi)}$ as $x$ passes $\xi$. (With the convention $L[y] = -f$ the jump is $-\frac{1}{p(\xi)}$.)
+- Example: $y'' = f$, $y(0) = y(1) = 0$ gives $G = x(\xi - 1)$ for $x \le \xi$ and $\xi(x - 1)$ for $x \ge \xi$.
+- No Green's function exists when the homogeneous problem has a non-trivial solution: $y'' = f$ with $y'(0) = y'(1) = 0$, or $y'' + y = f$ with $y(0) = y(\pi) = 0$.
+
+? What can the Wronskian of two solutions of $y'' + py' + qy = 0$ do on an interval? :: It is either identically zero or never zero.
+? How many zeros has the $n$-th eigenfunction of a regular Sturm-Liouville problem inside the interval? :: Exactly $n - 1$.
+? Eigenvalues of $y'' + \lambda y = 0$, $y(0) = y(\pi) = 0$? :: $\lambda_n = n^2$, with eigenfunctions $\sin nx$.
+? When does a Green's function exist for a boundary value problem? :: When the homogeneous problem has only the zero solution.
+
+! exam | PYQ focus
+- Wronskian arguments: can two given functions be solutions of the same second order linear equation?
+- Number and position of zeros of solutions; oscillatory or not.
+- Eigenvalues and eigenfunctions of a boundary value problem; constructing or recognising a Green's function and its jump.
+
+! recap | One-minute revision
+- Solution space of $L[y] = 0$ has dimension $n$; $W$ is never zero or always zero; Abel: $W = Ce^{-\int p_1\,dx}$.
+- $q \le 0$: at most one zero. Zeros of independent solutions alternate.
+- Regular Sturm-Liouville: real simple eigenvalues tending to infinity, orthogonal eigenfunctions, $n - 1$ interior zeros.
+
+& G. F. Simmons, Differential Equations with Applications and Historical Notes (chapters on second order linear equations, oscillation theory and boundary value problems)
+& E. A. Coddington, An Introduction to Ordinary Differential Equations (chapters 2 and 3)
+& S. L. Ross, Differential Equations (the chapters on higher order linear equations, on the theory of linear equations and on Sturm-Liouville problems)
+& MIT OpenCourseWare 18.03: Differential Equations | https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/

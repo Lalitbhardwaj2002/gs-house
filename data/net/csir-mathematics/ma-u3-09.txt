@@ -1,0 +1,133 @@
+@en
+# Classical mechanics
+
+> Lagrange's and Hamilton's methods describe a mechanical system by a single function, the Lagrangian $L = T - V$ or the Hamiltonian $H$, in coordinates chosen to fit the constraints. Rigid bodies and small oscillations are the two standard applications.
+
+## Constraints and generalised coordinates
+
+- A system of $N$ particles with $k$ independent holonomic constraints has $n = 3N - k$ **degrees of freedom**, described by generalised coordinates $q_1, \dots, q_n$.
+
+| Constraint | Meaning | Example |
+| Holonomic | An equation $f(\mathbf{r}_1, \dots, \mathbf{r}_N, t) = 0$ | Particle on a sphere; rigid body |
+| Non-holonomic | An inequality, or a relation between velocities that cannot be integrated | Gas in a container; sphere rolling without slipping on a plane |
+| Scleronomic | Does not contain time | Pendulum of fixed length |
+| Rheonomic | Contains time explicitly | Bead on a rotating wire |
+
+| System | Degrees of freedom |
+| Free particle in space | 3 |
+| Particle on a surface | 2 |
+| Simple pendulum in a plane | 1 |
+| Double pendulum in a plane | 2 |
+| Two particles joined by a rigid rod | 5 |
+| Free rigid body | 6 |
+| Rigid body with one point fixed | 3 |
+| Rigid body turning about a fixed axis | 1 |
+
+- **D'Alembert's principle**: $\sum_i (\mathbf{F}_i - \dot{\mathbf{p}}_i)\cdot\delta\mathbf{r}_i = 0$, with $\mathbf{F}_i$ the applied forces, for virtual displacements consistent with the constraints; it assumes that the forces of constraint do no virtual work.
+
+## Lagrange's equations
+
+- For a holonomic system with potential $V$, $L = T - V$ and
+
+$$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_j}\right) - \frac{\partial L}{\partial q_j} = 0, \qquad j = 1, \dots, n$$
+
+- With forces not derived from a potential the right-hand side is the generalised force $Q_j$.
+- The **generalised momentum** is $p_j = \frac{\partial L}{\partial \dot{q}_j}$. If $L$ does not contain $q_j$ (a **cyclic** coordinate), $p_j$ is conserved.
+- If $L$ does not contain $t$, the energy function $h = \sum_j \dot{q}_j p_j - L$ is conserved. It equals $T + V$ when the constraints are scleronomic and $V$ does not depend on the velocities.
+- Symmetry gives conservation: invariance under translation, rotation and time shift gives conservation of linear momentum, angular momentum and energy.
+- $L$ is not unique: adding $\frac{d}{dt}F(q, t)$ does not change the equations of motion.
+
+| System | Lagrangian |
+| Particle in a central field (plane polar coordinates) | $\frac{1}{2}m(\dot{r}^2 + r^2\dot{\theta}^2) - V(r)$ |
+| Simple pendulum | $\frac{1}{2}ml^2\dot{\theta}^2 + mgl\cos\theta$ |
+| Harmonic oscillator | $\frac{1}{2}m\dot{x}^2 - \frac{1}{2}kx^2$ |
+| Spherical pendulum | $\frac{1}{2}ml^2(\dot{\theta}^2 + \sin^2\theta\,\dot{\varphi}^2) + mgl\cos\theta$ |
+| Atwood's machine | $\frac{1}{2}(m_1 + m_2)\dot{x}^2 + (m_1 - m_2)gx$ |
+
+- In a central field $\theta$ is cyclic, so $mr^2\dot{\theta}$ is constant: equal areas are swept in equal times.
+
+## Hamilton's equations
+
+- The **Hamiltonian** is $H(q, p, t) = \sum_j p_j\dot{q}_j - L$, with the velocities expressed through the momenta. The equations of motion are
+
+$$\dot{q}_j = \frac{\partial H}{\partial p_j}, \qquad \dot{p}_j = -\frac{\partial H}{\partial q_j}$$
+
+- These are $2n$ first order equations in place of $n$ second order ones. Also $\frac{dH}{dt} = \frac{\partial H}{\partial t} = -\frac{\partial L}{\partial t}$, so $H$ is conserved when it does not contain $t$.
+- $H = T + V$ under the same conditions as for the energy function.
+- Example: $H = \frac{p^2}{2m} + \frac{1}{2}kx^2$ gives $\dot{x} = \frac{p}{m}$, $\dot{p} = -kx$.
+
+! remember | Poisson brackets and canonical transformations
+- $\{F, G\} = \sum_j \left(\frac{\partial F}{\partial q_j}\frac{\partial G}{\partial p_j} - \frac{\partial F}{\partial p_j}\frac{\partial G}{\partial q_j}\right)$.
+- $\{q_i, p_j\} = \delta_{ij}$, $\{q_i, q_j\} = 0$, $\{p_i, p_j\} = 0$.
+- $\frac{dF}{dt} = \{F, H\} + \frac{\partial F}{\partial t}$. A function without explicit $t$ is a constant of the motion exactly when $\{F, H\} = 0$.
+- The bracket is antisymmetric and satisfies the Jacobi identity; the bracket of two constants of the motion is again a constant of the motion (**Poisson's theorem**).
+- A transformation $(q, p) \to (Q, P)$ is **canonical** if it keeps the form of Hamilton's equations. For one degree of freedom the test is $\{Q, P\} = 1$.
+- Generating functions: $F_1(q, Q)$ gives $p = \frac{\partial F_1}{\partial q}$, $P = -\frac{\partial F_1}{\partial Q}$; $F_2(q, P)$ gives $p = \frac{\partial F_2}{\partial q}$, $Q = \frac{\partial F_2}{\partial P}$.
+- **Liouville's theorem**: the flow in phase space preserves volume.
+
+## Variational principles
+
+- **Hamilton's principle**: for a holonomic system with forces derived from a potential, the actual motion between fixed positions at fixed times $t_1$, $t_2$ makes $\int_{t_1}^{t_2} L\,dt$ stationary. Its Euler-Lagrange equations are Lagrange's equations.
+- **Principle of least action** (Maupertuis): for a scleronomic system with $H$ conserved, among paths with the same energy (the time of travel is not fixed) the actual path makes the action $\int \sum_j p_j\dot{q}_j\,dt = \int 2T\,dt$ stationary.
+- **Jacobi's form**: for one particle, $\int \sqrt{2m(E - V)}\,ds$ is stationary, an integral over the path with time eliminated.
+
+## Rigid bodies
+
+| Body, mass $M$ | Axis | Moment of inertia |
+| Thin rod, length $L$ | Through the centre, perpendicular | $\frac{ML^2}{12}$ |
+| Thin rod, length $L$ | Through one end, perpendicular | $\frac{ML^2}{3}$ |
+| Ring, radius $R$ | Axis of the ring | $MR^2$ |
+| Disc, radius $R$ | Axis of the disc | $\frac{MR^2}{2}$ |
+| Disc, radius $R$ | A diameter | $\frac{MR^2}{4}$ |
+| Solid sphere | A diameter | $\frac{2MR^2}{5}$ |
+| Thin spherical shell | A diameter | $\frac{2MR^2}{3}$ |
+
+- **Parallel axes**: $I = I_{cm} + Md^2$. **Perpendicular axes** (plane lamina): $I_z = I_x + I_y$.
+- **Motion in a plane**: the centre of mass moves as a particle of mass $M$ under the total force, and $I_{cm}\ddot{\theta}$ equals the torque about the centre of mass. $T = \frac{1}{2}Mv_{cm}^2 + \frac{1}{2}I_{cm}\omega^2$.
+- **Rolling without slipping** down a plane of inclination $\alpha$: acceleration $\frac{g\sin\alpha}{1 + k^2/R^2}$, where $Mk^2$ is the moment of inertia about the axis through the centre. Solid sphere $\frac{5}{7}g\sin\alpha$, disc $\frac{2}{3}g\sin\alpha$, ring $\frac{1}{2}g\sin\alpha$.
+- **Compound pendulum**: period $2\pi\sqrt{\frac{I}{Mgh}}$, with $I$ about the pivot and $h$ the distance of the centre of mass from it.
+
+! remember | Euler's dynamical equations
+- For a body turning about a fixed point, in principal axes fixed in the body:
+
+$$I_1\dot{\omega}_1 - (I_2 - I_3)\omega_2\omega_3 = N_1, \quad I_2\dot{\omega}_2 - (I_3 - I_1)\omega_3\omega_1 = N_2, \quad I_3\dot{\omega}_3 - (I_1 - I_2)\omega_1\omega_2 = N_3$$
+
+- With no torque, the kinetic energy $\frac{1}{2}\sum I_i\omega_i^2$ and the squared angular momentum $\sum I_i^2\omega_i^2$ are constant.
+- Torque-free rotation about the principal axes of greatest and least moment is stable; about the intermediate axis it is unstable.
+- Symmetric body ($I_1 = I_2$), no torque: $\omega_3$ is constant and the angular velocity vector turns about the axis of symmetry at the rate $\frac{I_3 - I_1}{I_1}\omega_3$.
+
+## Small oscillations
+
+- Near a position of stable equilibrium write $T = \frac{1}{2}\sum T_{ij}\dot{q}_i\dot{q}_j$ and $V = \frac{1}{2}\sum V_{ij}q_iq_j$, with $V_{ij}$ the second derivatives of $V$ at equilibrium. The **normal frequencies** are the roots of
+
+$$\det(V - \omega^2 T) = 0$$
+
+- A system with $n$ degrees of freedom has $n$ normal modes. All $\omega^2$ are real; they are all positive when the matrix $(V_{ij})$ is positive definite, and a zero root means a free translation or rotation.
+- In **normal coordinates** the motion separates into independent harmonic oscillations.
+- Equilibrium is stable when $V$ has a strict minimum there.
+
+| System | $\omega^2$ of the normal modes |
+| Two equal masses $m$ and three equal springs $k$ between walls | $\frac{k}{m}$, $\frac{3k}{m}$ |
+| Two pendulums (length $l$, mass $m$) joined by a spring $k$ | $\frac{g}{l}$, $\frac{g}{l} + \frac{2k}{m}$ |
+| Linear molecule $m$-$M$-$m$ with springs $k$ | $0$, $\frac{k}{m}$, $\frac{k}{m}\left(1 + \frac{2m}{M}\right)$ |
+| Double pendulum, equal masses and lengths | $(2 \pm \sqrt{2})\frac{g}{l}$ |
+
+? Degrees of freedom of a rigid body with one point fixed? :: 3.
+? What is conserved when a coordinate is cyclic? :: Its conjugate momentum $p_j = \frac{\partial L}{\partial \dot{q}_j}$.
+? Hamilton's canonical equations? :: $\dot{q}_j = \frac{\partial H}{\partial p_j}$ and $\dot{p}_j = -\frac{\partial H}{\partial q_j}$.
+? About which principal axis is torque-free rotation unstable? :: The axis of the intermediate moment of inertia.
+
+! exam | PYQ focus
+- Lagrangian or Hamiltonian of a given system, its equations of motion and its conserved quantities.
+- Poisson brackets; whether a given transformation is canonical.
+- Normal frequencies of a coupled system; moments of inertia and plane motion of a rigid body.
+
+! recap | One-minute revision
+- $L = T - V$; cyclic coordinate gives conserved momentum; no explicit time gives conserved energy function.
+- $H = \sum p\dot{q} - L$; $\dot{q} = \frac{\partial H}{\partial p}$, $\dot{p} = -\frac{\partial H}{\partial q}$; $\frac{dF}{dt} = \{F, H\} + \frac{\partial F}{\partial t}$.
+- Normal modes: $\det(V - \omega^2 T) = 0$. Free rigid body: 6 degrees of freedom; Euler's equations in principal axes.
+
+& H. Goldstein, C. Poole and J. Safko, Classical Mechanics (chapters 1, 2, 5, 6, 8 and 9)
+& N. C. Rana and P. S. Joag, Classical Mechanics
+& L. D. Landau and E. M. Lifshitz, Mechanics (chapters 1, 5, 6 and 7)
+& MIT OpenCourseWare 8.09: Classical Mechanics III | https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/
