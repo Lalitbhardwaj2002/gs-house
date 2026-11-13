@@ -1,0 +1,113 @@
+@en
+# Standard distributions, sampling distributions and order statistics
+
+> A small number of distributions cover most questions. Know each by its mean, variance and special property, know how the chi-square, $t$ and $F$ distributions arise from normal samples, and know the density of the $r$-th smallest observation. Throughout $q = 1 - p$.
+
+## Discrete distributions
+
+| Distribution | Probability mass function | Mean | Variance |
+| Bernoulli$(p)$ | $p^xq^{1-x}$, $x = 0, 1$ | $p$ | $pq$ |
+| Binomial$(n, p)$ | $\binom{n}{x}p^xq^{n-x}$, $x = 0, \dots, n$ | $np$ | $npq$ |
+| Poisson$(\lambda)$ | $\frac{e^{-\lambda}\lambda^x}{x!}$, $x \ge 0$ | $\lambda$ | $\lambda$ |
+| Geometric$(p)$, failures before the first success | $q^xp$, $x \ge 0$ | $\frac{q}{p}$ | $\frac{q}{p^2}$ |
+| Negative binomial$(r, p)$, failures before the $r$-th success | $\binom{x + r - 1}{x}p^rq^x$, $x \ge 0$ | $\frac{rq}{p}$ | $\frac{rq}{p^2}$ |
+| Hypergeometric$(N, M, n)$ | $\frac{\binom{M}{x}\binom{N - M}{n - x}}{\binom{N}{n}}$ | $\frac{nM}{N}$ | $n\frac{M}{N}\left(1 - \frac{M}{N}\right)\frac{N - n}{N - 1}$ |
+| Uniform on $1, \dots, n$ | $\frac{1}{n}$ | $\frac{n + 1}{2}$ | $\frac{n^2 - 1}{12}$ |
+
+- Mean against variance: binomial mean $>$ variance; Poisson mean $=$ variance; negative binomial mean $<$ variance.
+- Binomial$(n, p)$ tends to Poisson$(\lambda)$ as $n \to \infty$ with $np = \lambda$ fixed.
+- The geometric distribution is the only discrete distribution without memory: $P(X \ge m + n \mid X \ge m) = P(X \ge n)$.
+- Sums of independent variables: binomials with the same $p$ add in $n$; Poissons add in $\lambda$; $r$ geometrics give a negative binomial.
+- If $X$, $Y$ are independent Poisson variables with means $\lambda_1$, $\lambda_2$, then $X$ given $X + Y = n$ is Binomial$\left(n, \frac{\lambda_1}{\lambda_1 + \lambda_2}\right)$.
+- Mode of Binomial$(n, p)$: the integer part of $(n + 1)p$; if $(n + 1)p$ is an integer, both it and the integer below are modes. Mode of Poisson: the integer part of $\lambda$; both $\lambda$ and $\lambda - 1$ if $\lambda$ is an integer.
+- Multinomial counts: $\operatorname{Cov}(X_i, X_j) = -np_ip_j$ for $i \neq j$.
+
+## Continuous distributions
+
+| Distribution | Density | Mean | Variance |
+| Uniform$(a, b)$ | $\frac{1}{b - a}$ on $(a, b)$ | $\frac{a + b}{2}$ | $\frac{(b - a)^2}{12}$ |
+| Normal$(\mu, \sigma^2)$ | $\frac{1}{\sigma\sqrt{2\pi}}e^{-(x - \mu)^2/2\sigma^2}$ | $\mu$ | $\sigma^2$ |
+| Exponential$(\lambda)$ | $\lambda e^{-\lambda x}$, $x > 0$ | $\frac{1}{\lambda}$ | $\frac{1}{\lambda^2}$ |
+| Gamma$(\alpha, \lambda)$ | $\frac{\lambda^{\alpha}x^{\alpha - 1}e^{-\lambda x}}{\Gamma(\alpha)}$, $x > 0$ | $\frac{\alpha}{\lambda}$ | $\frac{\alpha}{\lambda^2}$ |
+| Beta$(a, b)$ | $\frac{x^{a-1}(1 - x)^{b-1}}{B(a, b)}$ on $(0, 1)$ | $\frac{a}{a + b}$ | $\frac{ab}{(a + b)^2(a + b + 1)}$ |
+| Cauchy | $\frac{1}{\pi(1 + x^2)}$ | Does not exist | Does not exist |
+| Laplace | $\frac{1}{2}e^{-\lvert x \rvert}$ | $0$ | $2$ |
+| Lognormal ($\log X \sim N(\mu, \sigma^2)$) | $\frac{1}{x\sigma\sqrt{2\pi}}e^{-(\log x - \mu)^2/2\sigma^2}$, $x > 0$ | $e^{\mu + \sigma^2/2}$ | $(e^{\sigma^2} - 1)e^{2\mu + \sigma^2}$ |
+
+! remember | Properties to recognise
+- **Normal**: moment generating function $e^{\mu t + \sigma^2t^2/2}$; odd central moments are 0 and $\mu_4 = 3\sigma^4$, so $\beta_1 = 0$, $\beta_2 = 3$; mean deviation $\sigma\sqrt{\frac{2}{\pi}}$; points of inflexion at $\mu \pm \sigma$. Any linear combination of independent normal variables is normal.
+- **Exponential**: the only continuous distribution without memory. The minimum of independent exponentials with rates $\lambda_i$ is exponential with rate $\sum \lambda_i$. The sum of $n$ independent Exponential$(\lambda)$ variables is Gamma$(n, \lambda)$.
+- **Gamma**: independent Gamma$(\alpha_1, \lambda)$ and Gamma$(\alpha_2, \lambda)$ add to Gamma$(\alpha_1 + \alpha_2, \lambda)$. Chi-square with $n$ degrees of freedom is Gamma$\left(\frac{n}{2}, \frac{1}{2}\right)$.
+- **Beta**: if $X \sim$ Gamma$(a, \lambda)$ and $Y \sim$ Gamma$(b, \lambda)$ are independent, then $\frac{X}{X + Y} \sim$ Beta$(a, b)$, independent of $X + Y$.
+- **Cauchy**: the ratio of two independent $N(0, 1)$ variables; the mean of $n$ independent Cauchy variables is again Cauchy; no moment generating function.
+- **Uniform**: if $U \sim U(0, 1)$, then $-\log U \sim$ Exponential$(1)$ and $-2\log U \sim \chi^2_2$.
+- **Bivariate normal**: the conditional distribution of $Y$ given $X = x$ is normal with mean $\mu_y + \rho\frac{\sigma_y}{\sigma_x}(x - \mu_x)$ and variance $\sigma_y^2(1 - \rho^2)$; $\rho = 0$ is equivalent to independence.
+
+## Sampling distributions
+
+For a random sample $X_1, \dots, X_n$ from $N(\mu, \sigma^2)$, with $\bar{X}$ the sample mean and $S^2 = \frac{1}{n - 1}\sum (X_i - \bar{X})^2$:
+
+- $\bar{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$, $\frac{(n - 1)S^2}{\sigma^2} \sim \chi^2_{n-1}$, and $\bar{X}$ and $S^2$ are **independent**. This independence holds only for normal samples.
+- $\frac{\sqrt{n}(\bar{X} - \mu)}{S} \sim t_{n-1}$.
+
+| Distribution | Construction | Mean and variance | Notes |
+| $\chi^2_n$ | Sum of squares of $n$ independent $N(0, 1)$ variables | $n$ and $2n$ | Additive; moment generating function $(1 - 2t)^{-n/2}$ |
+| $t_n$ | $\frac{Z}{\sqrt{\chi^2_n/n}}$, numerator and denominator independent | $0$ ($n > 1$) and $\frac{n}{n - 2}$ ($n > 2$) | Symmetric; $t_1$ is Cauchy; tends to $N(0, 1)$ |
+| $F_{m,n}$ | $\frac{\chi^2_m/m}{\chi^2_n/n}$, independent | Mean $\frac{n}{n - 2}$ ($n > 2$) | $\frac{1}{F} \sim F_{n,m}$; $t_n^2 \sim F_{1,n}$ |
+
+| Statistic | Standard error |
+| Sample mean | $\frac{\sigma}{\sqrt{n}}$ |
+| Sample proportion | $\sqrt{\frac{pq}{n}}$ |
+| Difference of two means | $\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$ |
+| Sample standard deviation (normal, large $n$) | $\frac{\sigma}{\sqrt{2n}}$ |
+| Sample variance (normal, large $n$) | $\sigma^2\sqrt{\frac{2}{n}}$ |
+| Sample median (normal, large $n$) | $\sigma\sqrt{\frac{\pi}{2n}} \approx \frac{1.2533\,\sigma}{\sqrt{n}}$ |
+| Sample correlation coefficient (bivariate normal, large $n$) | $\frac{1 - \rho^2}{\sqrt{n}}$ |
+
+- **Asymptotic distributions**: the sample mean is asymptotically normal by the central limit theorem. The sample $p$-th quantile is asymptotically normal about the population quantile $\xi_p$ with variance $\frac{p(1 - p)}{nf(\xi_p)^2}$, provided $f(\xi_p) > 0$.
+- **Fisher's $z$**: for a bivariate normal sample, $z = \frac{1}{2}\ln\frac{1 + r}{1 - r}$ is nearly normal with mean $\frac{1}{2}\ln\frac{1 + \rho}{1 - \rho}$ and variance $\frac{1}{n - 3}$.
+- **Variance-stabilising transformations**: $\sqrt{X}$ for Poisson counts, $\sin^{-1}\sqrt{p}$ for binomial proportions.
+
+## Order statistics
+
+Let $X_{(1)} \le \dots \le X_{(n)}$ be the ordered values of a sample from a continuous distribution with distribution function $F$ and density $f$.
+
+- $P(X_{(n)} \le x) = F(x)^n$ and $P(X_{(1)} \le x) = 1 - (1 - F(x))^n$.
+- Density of $X_{(r)}$:
+
+$$f_r(x) = \frac{n!}{(r - 1)!\,(n - r)!}F(x)^{r-1}(1 - F(x))^{n-r}f(x)$$
+
+- Joint density of $X_{(r)}$ and $X_{(s)}$, $r < s$, for $x < y$:
+
+$$\frac{n!}{(r - 1)!\,(s - r - 1)!\,(n - s)!}F(x)^{r-1}[F(y) - F(x)]^{s-r-1}[1 - F(y)]^{n-s}f(x)f(y)$$
+
+- Joint density of all $n$: $n!\,f(x_1)\cdots f(x_n)$ on $x_1 < \dots < x_n$.
+- **Range** $R = X_{(n)} - X_{(1)}$: $f_R(r) = n(n - 1)\int [F(x + r) - F(x)]^{n-2}f(x)f(x + r)\,dx$.
+
+| Parent distribution | Result |
+| $U(0, 1)$ | $X_{(r)} \sim$ Beta$(r, n - r + 1)$, mean $\frac{r}{n + 1}$ |
+| $U(0, 1)$ | Range $\sim$ Beta$(n - 1, 2)$, mean $\frac{n - 1}{n + 1}$ |
+| $U(0, \theta)$ | $E[X_{(n)}] = \frac{n\theta}{n + 1}$ |
+| Exponential$(\lambda)$ | $X_{(1)} \sim$ Exponential$(n\lambda)$ |
+| Exponential$(\lambda)$ | $E[X_{(n)}] = \frac{1}{\lambda}\left(1 + \frac{1}{2} + \dots + \frac{1}{n}\right)$ |
+| Exponential$(\lambda)$ | The spacings $(n - i + 1)(X_{(i)} - X_{(i-1)})$ are independent Exponential$(\lambda)$ |
+
+? Which distributions have no memory? :: The geometric (discrete) and the exponential (continuous).
+? Distribution of $\frac{(n - 1)S^2}{\sigma^2}$ for a normal sample? :: Chi-square with $n - 1$ degrees of freedom, independent of $\bar{X}$.
+? Distribution of the $r$-th order statistic of a $U(0, 1)$ sample? :: Beta$(r, n - r + 1)$.
+? What is $t_n^2$? :: $F$ with $(1, n)$ degrees of freedom.
+
+! exam | PYQ focus
+- Identifying the distribution of a sum, ratio, minimum or transformation of standard variables.
+- Conditional distributions, such as a Poisson variable given the sum, or one normal variable given another.
+- Expectations and probabilities for the maximum, minimum, median and range of a sample.
+
+! recap | One-minute revision
+- Binomial: mean above variance. Poisson: equal. Negative binomial: mean below variance.
+- Normal sample: $\bar{X}$ and $S^2$ independent; $\chi^2_{n-1}$, $t_{n-1}$ and $F$ arise from them.
+- Maximum has distribution function $F^n$; uniform order statistics are beta variables.
+
+& V. K. Rohatgi and A. K. Md. Ehsanes Saleh, An Introduction to Probability and Statistics (the chapters on special distributions and on sample statistics)
+& R. V. Hogg, J. W. McKean and A. T. Craig, Introduction to Mathematical Statistics (the chapters on special distributions, elementary inference with order statistics, and limiting distributions)
+& S. C. Gupta and V. K. Kapoor, Fundamentals of Mathematical Statistics (the chapters on theoretical distributions and exact sampling distributions)
+& MIT OpenCourseWare 18.05: Introduction to Probability and Statistics | https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/

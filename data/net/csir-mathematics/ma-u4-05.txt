@@ -1,0 +1,107 @@
+@en
+# Estimation and testing of hypotheses
+
+> Estimation asks for the best guess of a parameter and how far off it may be. Testing asks whether the data contradict a stated value. The theory picks out best estimators (minimum variance unbiased) and best tests (most powerful), and both are built on the likelihood.
+
+## Properties of estimators
+
+| Property | Meaning |
+| Unbiased | $E[T] = \theta$ for every $\theta$ |
+| Consistent | $T_n \to \theta$ in probability; it is enough that bias and variance both tend to 0 |
+| Efficient | Attains the least possible variance among unbiased estimators |
+| Sufficient | The conditional distribution of the sample given $T$ does not involve $\theta$ |
+
+- **Mean squared error** $= \text{variance} + \text{bias}^2$.
+- **Factorisation theorem** (Fisher-Neyman): $T$ is sufficient if and only if the joint density is $g(T(x); \theta)\,h(x)$.
+- $T$ is **complete** if $E_\theta[g(T)] = 0$ for all $\theta$ forces $g(T) = 0$ almost surely. In a full-rank exponential family the natural statistic $\sum T(x_i)$ is complete and sufficient.
+- **Fisher information** in one observation: $I(\theta) = E\left[\left(\frac{\partial}{\partial\theta}\log f\right)^2\right] = -E\left[\frac{\partial^2}{\partial\theta^2}\log f\right]$; a sample of $n$ has $nI(\theta)$.
+
+! remember | Key theorems
+- **Cramér-Rao inequality**: under regularity conditions, an unbiased estimator $T$ of $\psi(\theta)$ has $\operatorname{Var}(T) \ge \frac{\psi'(\theta)^2}{nI(\theta)}$. The bound is attained exactly when $\frac{\partial}{\partial\theta}\log L = k(\theta)\,(T - \psi(\theta))$. It does not apply when the range depends on $\theta$, as for $U(0, \theta)$.
+- **Rao-Blackwell**: if $U$ is unbiased and $T$ sufficient, $E[U \mid T]$ is unbiased with variance no larger than that of $U$.
+- **Lehmann-Scheffé**: an unbiased estimator that is a function of a complete sufficient statistic is the unique uniformly minimum variance unbiased estimator (UMVUE).
+- **Basu**: a complete sufficient statistic is independent of every ancillary statistic.
+
+| Model | Complete sufficient statistic | Maximum likelihood estimator | UMVUE |
+| Bernoulli$(p)$ | $\sum X_i$ | $\bar{X}$ | $\bar{X}$ |
+| Poisson$(\lambda)$ | $\sum X_i$ | $\bar{X}$ | $\bar{X}$ |
+| $N(\mu, \sigma^2)$, both unknown | $\left(\sum X_i, \sum X_i^2\right)$ | $\bar{X}$ and $\frac{1}{n}\sum (X_i - \bar{X})^2$ | $\bar{X}$ and $S^2 = \frac{1}{n - 1}\sum (X_i - \bar{X})^2$ |
+| Exponential with mean $\theta$ | $\sum X_i$ | $\bar{X}$ | $\bar{X}$ |
+| $U(0, \theta)$ | $X_{(n)}$ | $X_{(n)}$ | $\frac{n + 1}{n}X_{(n)}$ |
+
+| Model | Fisher information per observation |
+| Bernoulli$(p)$ | $\frac{1}{pq}$ |
+| Poisson$(\lambda)$ | $\frac{1}{\lambda}$ |
+| $N(\mu, \sigma^2)$, for $\mu$ | $\frac{1}{\sigma^2}$ |
+| $N(\mu, \sigma^2)$, for $\sigma^2$ | $\frac{1}{2\sigma^4}$ |
+| Exponential with mean $\theta$ | $\frac{1}{\theta^2}$ |
+
+## Methods of estimation
+
+- **Maximum likelihood**: choose $\theta$ to maximise $L(\theta)$. When it is unique, the estimator is a function of every sufficient statistic (otherwise one such maximiser can be chosen); it is **invariant** (the estimator of $g(\theta)$ is $g(\hat{\theta})$); under regularity it is consistent, asymptotically normal with $\sqrt{n}(\hat{\theta} - \theta) \to N\left(0, \frac{1}{I(\theta)}\right)$, and asymptotically efficient. It need not be unbiased or unique: for $U\left(\theta - \frac{1}{2}, \theta + \frac{1}{2}\right)$ every point of an interval maximises the likelihood.
+- **Method of moments**: equate sample moments to population moments. When the moments used exist, the estimators are consistent but usually not efficient.
+- For $U(0, \theta)$: the moment estimator is $2\bar{X}$ (unbiased); the maximum likelihood estimator is $X_{(n)}$, with $E[X_{(n)}] = \frac{n\theta}{n + 1}$ (biased but consistent).
+- Other methods: least squares, minimum chi-square, Bayes.
+
+## Confidence intervals
+
+| Parameter | Interval with confidence $1 - \alpha$ |
+| Normal mean, $\sigma$ known | $\bar{X} \pm z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$ |
+| Normal mean, $\sigma$ unknown | $\bar{X} \pm t_{\alpha/2,\,n-1}\frac{S}{\sqrt{n}}$ |
+| Normal variance | $\left(\frac{(n - 1)S^2}{\chi^2_{\alpha/2}}, \frac{(n - 1)S^2}{\chi^2_{1-\alpha/2}}\right)$ with $n - 1$ degrees of freedom |
+| Proportion, large $n$ | $\hat{p} \pm z_{\alpha/2}\sqrt{\frac{\hat{p}\hat{q}}{n}}$ |
+| Difference of two normal means, equal variances | $\bar{X} - \bar{Y} \pm t_{\alpha/2,\,m+n-2}\,S_p\sqrt{\frac{1}{m} + \frac{1}{n}}$ |
+
+- An interval is built from a **pivot**, a function of data and parameter whose distribution is free of the parameter. Here $\chi^2_{\alpha/2}$ denotes the upper $\frac{\alpha}{2}$ point.
+- The length shrinks like $\frac{1}{\sqrt{n}}$ and grows with the confidence level.
+
+## Tests of hypotheses
+
+- **Type I error**: rejecting a true $H_0$; its probability $\alpha$ is the **size**. **Type II error**: accepting a false $H_0$, with probability $\beta$. **Power** $= 1 - \beta$.
+- A hypothesis is **simple** if it fixes the distribution completely, otherwise **composite**. The **p-value** is the probability under $H_0$ of a result at least as extreme as the one observed.
+
+! remember | Optimal tests
+- **Neyman-Pearson lemma**: for simple $H_0 : \theta = \theta_0$ against simple $H_1 : \theta = \theta_1$, the most powerful test of size $\alpha$ rejects when $\frac{L(\theta_1)}{L(\theta_0)} > k$, with $k$ fixed by the size (for discrete data, randomise when the ratio equals $k$ to get the exact size).
+- A most powerful test is **unbiased**: its power is at least $\alpha$.
+- A test is **uniformly most powerful** (UMP) if it is most powerful against every alternative in $H_1$. If the family has **monotone likelihood ratio** in $T$ (as a one-parameter exponential family does), the test rejecting for large $T$ is UMP for one-sided hypotheses (Karlin-Rubin).
+- For two-sided alternatives such as $\mu \neq \mu_0$ in a normal model, no UMP test exists; one looks for a UMP unbiased test.
+- **Likelihood ratio test**: $\Lambda = \frac{\sup_{\Theta_0} L}{\sup_{\Theta} L}$, reject for small $\Lambda$. Under regularity $-2\log\Lambda$ is asymptotically $\chi^2$ with degrees of freedom equal to the number of restrictions (Wilks). The one- and two-sample $t$ tests and the $F$ tests of linear hypotheses for normal models are likelihood ratio tests.
+
+- Example: for $N(\mu, 1)$ and $H_0 : \mu = \mu_0$ against $\mu > \mu_0$, reject when $\bar{X} > \mu_0 + \frac{z_\alpha}{\sqrt{n}}$; the power at $\mu_1$ is $1 - \Phi\left(z_\alpha - \sqrt{n}(\mu_1 - \mu_0)\right)$.
+
+## Chi-square and large-sample tests
+
+| Test | Statistic | Null distribution |
+| Goodness of fit, $k$ classes | $\sum \frac{(O_i - E_i)^2}{E_i}$ | Approximately $\chi^2$ with $k - 1 - (\text{number of parameters estimated})$ degrees of freedom |
+| Independence in an $r \times c$ table | Same, with $E_{ij} = \frac{(\text{row total})(\text{column total})}{N}$ | Approximately $\chi^2_{(r-1)(c-1)}$ |
+| $2 \times 2$ table with cells $a, b, c, d$ | $\frac{N(ad - bc)^2}{(a + b)(c + d)(a + c)(b + d)}$ | Approximately $\chi^2_1$ |
+| One proportion, large $n$ | $\frac{\hat{p} - p_0}{\sqrt{p_0q_0/n}}$ | Approximately $N(0, 1)$ |
+| One mean, large $n$, any parent with finite variance | $\frac{\bar{X} - \mu_0}{S/\sqrt{n}}$ | Approximately $N(0, 1)$ |
+| Two means, large samples | $\frac{\bar{X}_1 - \bar{X}_2}{\sqrt{S_1^2/n_1 + S_2^2/n_2}}$ | Approximately $N(0, 1)$ |
+| Normal variance | $\frac{(n - 1)S^2}{\sigma_0^2}$ | $\chi^2_{n-1}$ |
+| Two normal variances | $\frac{S_1^2}{S_2^2}$ | $F_{n_1 - 1,\,n_2 - 1}$ |
+| Two normal means, equal variances | Two-sample $t$ | $t_{n_1 + n_2 - 2}$ |
+| Paired observations | $t$ on the differences | $t_{n-1}$ |
+
+- For the chi-square tests the expected frequencies should not be small (pool classes with expected frequency below 5). **Yates' correction** for a $2 \times 2$ table replaces $\lvert ad - bc \rvert$ by $\lvert ad - bc \rvert - \frac{N}{2}$.
+- Two proportions (large samples, approximately normal): $z = \frac{\hat{p}_1 - \hat{p}_2}{\sqrt{\hat{p}\hat{q}\left(\frac{1}{n_1} + \frac{1}{n_2}\right)}}$ with $\hat{p}$ the pooled proportion.
+
+? What does the Lehmann-Scheffé theorem give? :: An unbiased function of a complete sufficient statistic is the unique UMVUE.
+? Maximum likelihood estimator of $\theta$ in $U(0, \theta)$? :: The largest observation $X_{(n)}$; it is biased, with mean $\frac{n\theta}{n + 1}$.
+? Form of the most powerful test of a simple hypothesis against a simple alternative? :: Reject when the likelihood ratio $\frac{L(\theta_1)}{L(\theta_0)}$ exceeds a constant.
+? Degrees of freedom for testing independence in an $r \times c$ table? :: $(r - 1)(c - 1)$.
+
+! exam | PYQ focus
+- Whether a given estimator is unbiased, consistent, sufficient, or the UMVUE; Cramér-Rao bound for a given model.
+- Maximum likelihood and moment estimators for uniform, exponential, normal and Poisson models.
+- Size and power of a given test; form of the most powerful or UMP critical region; degrees of freedom of chi-square tests.
+
+! recap | One-minute revision
+- Factorisation gives sufficiency; complete sufficient plus unbiased gives the UMVUE.
+- Maximum likelihood: invariant, consistent, asymptotically normal with variance $\frac{1}{nI(\theta)}$.
+- Neyman-Pearson for simple against simple; monotone likelihood ratio gives one-sided UMP tests; $-2\log\Lambda$ is asymptotically chi-square.
+
+& V. K. Rohatgi and A. K. Md. Ehsanes Saleh, An Introduction to Probability and Statistics (the chapters on estimation, tests of hypotheses and confidence intervals)
+& G. Casella and R. L. Berger, Statistical Inference (chapters 6 to 10)
+& E. L. Lehmann and J. P. Romano, Testing Statistical Hypotheses (chapter 3)
+& MIT OpenCourseWare 18.650: Statistics for Applications | https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/

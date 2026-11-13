@@ -6,7 +6,7 @@
  "title": { "en": "Mathematical Sciences" },
  "subtitle": { "en": "CSIR NET · Part B and Part C · unit-wise notes" },
  "about": {
-  "en": "These are GS House's own notes, written unit by unit from the official syllabus, standard textbooks and the pattern of past papers. Units 1 to 3 are ready; Unit 4 is being written."
+  "en": "These are GS House's own notes, written unit by unit from the official syllabus, standard textbooks and the pattern of past papers. All four units are ready: 52 topics in all."
  },
  "units": [
   {
@@ -198,7 +198,74 @@
     { "text": "MIT OpenCourseWare 8.09: Classical Mechanics III", "url": "https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/" }
    ]
   },
-  { "id": "u4", "icon": "🎲", "en": "Statistics",
-    "line": { "en": "Probability · inference · linear models · operations research" } }
+  {
+   "id": "u4", "icon": "🎲", "en": "Statistics",
+   "line": { "en": "Probability · inference · linear models · multivariate · sampling · designs · operations research" },
+   "parts": [
+    {
+     "en": "Probability and Distributions",
+     "chapters": [
+      { "id": "ma-u4-01", "en": "Descriptive statistics and exploratory data analysis",
+        "key": { "en": "Location, spread and shape · moments · correlation and regression lines · box plots" } },
+      { "id": "ma-u4-02", "en": "Probability, random variables and limit theorems",
+        "key": { "en": "Bayes' theorem · characteristic functions · inequalities · modes of convergence · laws of large numbers and CLT" } },
+      { "id": "ma-u4-03", "en": "Markov chains, Poisson and birth-and-death processes",
+        "key": { "en": "Classification of states · stationary distribution · limits of P^n · Poisson process" } },
+      { "id": "ma-u4-04", "en": "Standard distributions, sampling distributions and order statistics",
+        "key": { "en": "Discrete and continuous families · chi-square, t and F · standard errors · order statistics and range" } }
+     ]
+    },
+    {
+     "en": "Statistical Inference",
+     "chapters": [
+      { "id": "ma-u4-05", "en": "Estimation and testing of hypotheses",
+        "key": { "en": "Sufficiency · UMVUE · maximum likelihood · confidence intervals · Neyman-Pearson · likelihood ratio and chi-square tests" } },
+      { "id": "ma-u4-06", "en": "Nonparametric tests and Bayesian inference",
+        "key": { "en": "Sign, Wilcoxon and Mann-Whitney tests · rank correlation · priors, posteriors and Bayes estimators" } }
+     ]
+    },
+    {
+     "en": "Linear Models and Multivariate Analysis",
+     "chapters": [
+      { "id": "ma-u4-07", "en": "Linear models, analysis of variance and regression",
+        "key": { "en": "Gauss-Markov theorem · estimability · ANOVA and ANCOVA · regression diagnostics · logistic regression" } },
+      { "id": "ma-u4-08", "en": "Multivariate analysis",
+        "key": { "en": "Multivariate normal · Wishart · quadratic forms · Hotelling's T² · principal components and other reductions" } }
+     ]
+    },
+    {
+     "en": "Sampling and Design of Experiments",
+     "chapters": [
+      { "id": "ma-u4-09", "en": "Sampling techniques",
+        "key": { "en": "Simple random, stratified, systematic and PPS sampling · ratio and regression estimators" } },
+      { "id": "ma-u4-10", "en": "Design of experiments",
+        "key": { "en": "CRD, RBD, Latin squares · connectedness and orthogonality · BIBD · 2^k factorials and confounding" } }
+     ]
+    },
+    {
+     "en": "Reliability and Operations Research",
+     "chapters": [
+      { "id": "ma-u4-11", "en": "Reliability and life testing",
+        "key": { "en": "Hazard rate · ageing classes · series and parallel systems · censoring" } },
+      { "id": "ma-u4-12", "en": "Linear programming, queuing and inventory models",
+        "key": { "en": "Simplex method · duality · M/M/1, M/M/c and M/G/1 queues · economic order quantity" } }
+     ]
+    }
+   ],
+   "refs": [
+    { "text": "V. K. Rohatgi and A. K. Md. Ehsanes Saleh, An Introduction to Probability and Statistics" },
+    { "text": "G. Casella and R. L. Berger, Statistical Inference" },
+    { "text": "S. C. Gupta and V. K. Kapoor, Fundamentals of Mathematical Statistics" },
+    { "text": "J. Medhi, Stochastic Processes" },
+    { "text": "C. R. Rao, Linear Statistical Inference and Its Applications" },
+    { "text": "T. W. Anderson, An Introduction to Multivariate Statistical Analysis" },
+    { "text": "W. G. Cochran, Sampling Techniques" },
+    { "text": "D. C. Montgomery, Design and Analysis of Experiments" },
+    { "text": "Hamdy A. Taha, Operations Research: An Introduction" },
+    { "text": "MIT OpenCourseWare 18.05: Introduction to Probability and Statistics", "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/" },
+    { "text": "MIT OpenCourseWare 18.650: Statistics for Applications", "url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/" },
+    { "text": "NIST/SEMATECH e-Handbook of Statistical Methods", "url": "https://www.itl.nist.gov/div898/handbook/" }
+   ]
+  }
  ]
 }

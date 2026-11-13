@@ -1,0 +1,86 @@
+@en
+# Sampling techniques
+
+> A sample survey estimates a population mean or total from a part of the population. Each design has its estimator and its variance formula, and the questions compare designs: which is more precise, and under what condition. Notation: population size $N$, sample size $n$, sampling fraction $f = \frac{n}{N}$, population mean $\bar{Y}$, and $S^2 = \frac{1}{N - 1}\sum (Y_i - \bar{Y})^2$.
+
+## Simple random sampling
+
+| Feature | Without replacement | With replacement |
+| Number of possible samples | $\binom{N}{n}$ | $N^n$ (ordered) |
+| Variance of the sample mean $\bar{y}$ | $(1 - f)\frac{S^2}{n} = \frac{N - n}{Nn}S^2$ | $\frac{N - 1}{Nn}S^2 = \frac{\sigma^2}{n}$ |
+| Sample variance $s^2$ is unbiased for | $S^2$ | $\sigma^2 = \frac{N - 1}{N}S^2$ |
+
+- In both schemes $\bar{y}$ is unbiased for $\bar{Y}$, and $N\bar{y}$ for the population total.
+- Without replacement every unit has inclusion probability $\frac{n}{N}$ and every pair $\frac{n(n - 1)}{N(N - 1)}$. Sampling without replacement is the more precise; the factor $1 - f$ is the **finite population correction**.
+- **Proportions**: the sample proportion $p$ is unbiased for $P$, with $\operatorname{Var}(p) = \frac{N - n}{N - 1}\cdot\frac{PQ}{n}$; an unbiased estimator of this variance is $(1 - f)\frac{pq}{n - 1}$.
+- **Sample size** for a margin of error $d$ with normal multiplier $z$: $n_0 = \frac{z^2S^2}{d^2}$, corrected to $n = \frac{n_0}{1 + n_0/N}$.
+
+## Stratified sampling
+
+- The population is divided into $L$ strata of sizes $N_h$ with weights $W_h = \frac{N_h}{N}$, and a simple random sample of size $n_h$ is taken in each.
+- $\bar{y}_{st} = \sum W_h\bar{y}_h$ is unbiased for $\bar{Y}$, with $\operatorname{Var}(\bar{y}_{st}) = \sum W_h^2(1 - f_h)\frac{S_h^2}{n_h}$.
+
+| Allocation | Rule | Variance of $\bar{y}_{st}$ |
+| Proportional | $n_h = nW_h$ | $\frac{1 - f}{n}\sum W_hS_h^2$ |
+| Neyman (optimum for fixed $n$) | $n_h \propto N_hS_h$ | $\frac{\left(\sum W_hS_h\right)^2}{n} - \frac{\sum W_hS_h^2}{N}$ |
+| Optimum with cost $c_h$ per unit | $n_h \propto \frac{N_hS_h}{\sqrt{c_h}}$ | Least variance for a fixed total cost |
+
+- Ignoring terms in $\frac{1}{N_h}$: $V_{\text{Neyman}} \le V_{\text{proportional}} \le V_{\text{simple random}}$.
+- Stratification gains most when the strata are homogeneous inside and their means differ widely. Neyman allocation gains over proportional allocation when the $S_h$ differ.
+- Proportional allocation gives a self-weighting sample: $\bar{y}_{st}$ equals the ordinary sample mean.
+
+## Systematic sampling
+
+- With $N = nk$, choose a random start among the first $k$ units and then every $k$-th unit. There are only $k$ possible samples, each with probability $\frac{1}{k}$, and the sample mean is unbiased for $\bar{Y}$.
+
+! remember | Variance and comparisons
+- $\operatorname{Var}(\bar{y}_{sy}) = \frac{N - 1}{N}S^2 - \frac{k(n - 1)}{N}S_{wsy}^2$, where $S_{wsy}^2$ is the variance among units within the same systematic sample.
+- Equivalently $\operatorname{Var}(\bar{y}_{sy}) = \frac{S^2}{n}\cdot\frac{N - 1}{N}\,[1 + (n - 1)\rho]$, with $\rho$ the intraclass correlation between units of the same systematic sample.
+- Systematic sampling is more precise than simple random sampling exactly when $S_{wsy}^2 > S^2$, that is when units within a sample are heterogeneous.
+- For a population with a **linear trend**: $V_{\text{stratified}} \le V_{\text{systematic}} \le V_{\text{simple random}}$.
+- For a **periodic** population it is poor when $k$ is a multiple of the period.
+- A single systematic sample gives no unbiased estimator of its own variance.
+- It can be seen as cluster sampling with one cluster chosen out of $k$, or as stratified sampling with one unit per stratum.
+
+## Probability proportional to size
+
+- Units are drawn with probabilities $p_i$ proportional to a size measure $x_i$, by the cumulative total method or Lahiri's method.
+- **With replacement** (Hansen-Hurwitz): $\hat{Y} = \frac{1}{n}\sum \frac{y_i}{p_i}$ is unbiased for the total, with $\operatorname{Var}(\hat{Y}) = \frac{1}{n}\sum_{i=1}^{N} p_i\left(\frac{Y_i}{p_i} - Y\right)^2$. The variance is zero if $Y_i$ is exactly proportional to $p_i$. An unbiased variance estimator is $\frac{1}{n(n - 1)}\sum \left(\frac{y_i}{p_i} - \hat{Y}\right)^2$.
+- **Without replacement** (Horvitz-Thompson): $\hat{Y}_{HT} = \sum_{i \in s} \frac{y_i}{\pi_i}$, with $\pi_i$ the inclusion probabilities; it is unbiased when every $\pi_i > 0$.
+- For a fixed sample size $n$: $\sum_i \pi_i = n$ and $\sum_{j \neq i} \pi_{ij} = (n - 1)\pi_i$.
+- **Yates-Grundy** variance estimator (fixed $n$): $\sum_{i < j} \frac{\pi_i\pi_j - \pi_{ij}}{\pi_{ij}}\left(\frac{y_i}{\pi_i} - \frac{y_j}{\pi_j}\right)^2$.
+- Other estimators for sampling without replacement: Des Raj's ordered estimator and Murthy's unordered estimator.
+
+## Ratio and regression methods
+
+These use an auxiliary variable $x$ whose population mean $\bar{X}$ is known. Let $R = \frac{\bar{Y}}{\bar{X}}$, and let $C_x$, $C_y$ be the coefficients of variation.
+
+| Estimator of $\bar{Y}$ | Formula | Approximate mean squared error | Better than $\bar{y}$ when |
+| Ratio | $\frac{\bar{y}}{\bar{x}}\bar{X}$ | $\frac{1 - f}{n}\left(S_y^2 + R^2S_x^2 - 2R\rho S_xS_y\right)$ | $\rho > \frac{C_x}{2C_y}$ |
+| Product | $\frac{\bar{y}\,\bar{x}}{\bar{X}}$ | $\frac{1 - f}{n}\left(S_y^2 + R^2S_x^2 + 2R\rho S_xS_y\right)$ | $\rho < -\frac{C_x}{2C_y}$ |
+| Regression | $\bar{y} + b(\bar{X} - \bar{x})$ | $\frac{1 - f}{n}S_y^2(1 - \rho^2)$ | Always, unless $\rho = 0$ |
+
+- The ratio estimator is biased, with bias of order $\frac{1}{n}$, but consistent. It is at its best when the relation between $y$ and $x$ is a straight line through the origin; then it is as good as the regression estimator.
+- In large samples the regression estimator is never worse than the ratio estimator or the simple mean.
+- The Hartley-Ross estimator is an unbiased estimator of ratio type.
+- **Cluster sampling** is efficient when clusters are heterogeneous inside; with clusters of size $M$ the variance is multiplied by about $1 + (M - 1)\rho$ compared with simple random sampling of the same number of units.
+
+? Variance of the sample mean in simple random sampling without replacement? :: $(1 - f)\frac{S^2}{n}$.
+? Neyman allocation? :: $n_h$ proportional to $N_hS_h$.
+? When does the ratio estimator beat the simple mean? :: When $\rho > \frac{C_x}{2C_y}$.
+? What does the Horvitz-Thompson estimator divide each observation by? :: Its inclusion probability $\pi_i$.
+
+! exam | PYQ focus
+- Variance formulas and unbiasedness in simple random sampling with and without replacement.
+- Ordering of variances under different allocations and designs; behaviour of systematic sampling with trend or periodicity.
+- Conditions under which ratio, product and regression estimators are more efficient; inclusion probabilities.
+
+! recap | One-minute revision
+- $\operatorname{Var}(\bar{y}) = (1 - f)\frac{S^2}{n}$ without replacement; $s^2$ is unbiased for $S^2$.
+- Neyman $\le$ proportional $\le$ simple random; systematic is good for trends and bad for periods.
+- Ratio estimator needs $\rho > \frac{C_x}{2C_y}$; regression estimator has variance factor $1 - \rho^2$.
+
+& W. G. Cochran, Sampling Techniques (chapters 2, 5, 6, 7, 8 and 9A)
+& P. V. Sukhatme, B. V. Sukhatme, S. Sukhatme and C. Asok, Sampling Theory of Surveys with Applications
+& Daroga Singh and F. S. Chaudhary, Theory and Analysis of Sample Survey Designs
+& Penn State STAT 506: Sampling Theory and Methods | https://online.stat.psu.edu/stat506/

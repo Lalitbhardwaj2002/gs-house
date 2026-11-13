@@ -1,0 +1,97 @@
+@en
+# Reliability and life testing
+
+> Reliability theory studies the time until a component or a system fails. Everything is expressed through the survival function and the hazard rate. Life tests rarely run until every unit has failed, so the data are censored and the estimators must allow for it.
+
+## Basic functions
+
+Let $T \ge 0$ be the lifetime, with distribution function $F$ and density $f$.
+
+| Function | Definition |
+| Reliability (survival) function | $R(t) = P(T > t) = 1 - F(t)$ |
+| Hazard (failure) rate | $h(t) = \frac{f(t)}{R(t)} = -\frac{d}{dt}\ln R(t)$ |
+| Cumulative hazard | $H(t) = \int_0^t h(u)\,du$, and $R(t) = e^{-H(t)}$ |
+| Mean time to failure | $E[T] = \int_0^\infty R(t)\,dt$ |
+| Mean residual life | $m(t) = E[T - t \mid T > t] = \frac{1}{R(t)}\int_t^\infty R(u)\,du$ |
+| Conditional reliability | $P(T > t + x \mid T > t) = \frac{R(t + x)}{R(t)}$ |
+
+- $h(t)\,dt$ is approximately the probability of failure in $(t, t + dt)$ given survival to $t$.
+- The hazard rate determines the distribution. A function $h \ge 0$ is a hazard rate of a proper lifetime exactly when $\int_0^\infty h(t)\,dt = \infty$.
+
+## Lifetime distributions
+
+| Distribution | Reliability function | Hazard rate | Behaviour |
+| Exponential$(\lambda)$ | $e^{-\lambda t}$ | $\lambda$ | Constant; no ageing; mean $\frac{1}{\lambda}$ |
+| Weibull, shape $\alpha$, scale $\lambda$ | $e^{-(\lambda t)^{\alpha}}$ | $\alpha\lambda(\lambda t)^{\alpha - 1}$ | Increasing for $\alpha > 1$, decreasing for $\alpha < 1$; mean $\frac{1}{\lambda}\Gamma\left(1 + \frac{1}{\alpha}\right)$ |
+| Rayleigh (Weibull with $\alpha = 2$) | $e^{-(\lambda t)^2}$ | $2\lambda^2t$ | Linear, increasing |
+| Gamma, shape $\alpha$ | No closed form in general | Tends to the rate $\lambda$ as $t \to \infty$ | Increasing for $\alpha > 1$, decreasing for $\alpha < 1$ |
+| Lognormal | $1 - \Phi\left(\frac{\ln t - \mu}{\sigma}\right)$ | Rises to a maximum and then falls | Not monotone |
+| Pareto, $t \ge \theta$ | $\left(\frac{\theta}{t}\right)^{\alpha}$ | $\frac{\alpha}{t}$ | Decreasing |
+
+! remember | Ageing classes
+- **IFR** (increasing failure rate): $h$ is non-decreasing. **DFR**: $h$ is non-increasing. The exponential distribution is both, and is the only one that is both.
+- **NBU** (new better than used): $R(x + t) \le R(x)R(t)$ for all $x, t \ge 0$. **NBUE**: the mean residual life never exceeds the mean life.
+- IFR $\Rightarrow$ IFRA $\Rightarrow$ NBU $\Rightarrow$ NBUE, and the dual chain DFR $\Rightarrow$ DFRA $\Rightarrow$ NWU $\Rightarrow$ NWUE.
+- For an IFR distribution the mean residual life is non-increasing.
+- The **bathtub curve**: a decreasing hazard in early life, a nearly constant hazard in useful life, an increasing hazard in the wear-out period.
+- The exponential distribution is characterised by its lack of memory: $R(t + x) = R(t)R(x)$.
+
+## Systems of components
+
+Let the components be independent with reliabilities $p_i$ (or $R_i(t)$).
+
+| System | Works when | Reliability |
+| Series | All components work | $\prod p_i$ |
+| Parallel | At least one works | $1 - \prod (1 - p_i)$ |
+| $k$-out-of-$n$, identical components | At least $k$ work | $\sum_{j=k}^{n} \binom{n}{j}p^j(1 - p)^{n-j}$ |
+| 2-out-of-3 | At least two work | $3p^2 - 2p^3$ |
+| Cold standby, perfect switching | Units used one after another | Lifetime is the sum of the lifetimes |
+
+- **Series**: the lifetime is the minimum; the hazard rates add. Exponential components with rates $\lambda_i$ give an exponential system with rate $\sum\lambda_i$ and mean $\frac{1}{\sum\lambda_i}$.
+- **Parallel**: the lifetime is the maximum. With $n$ identical Exponential$(\lambda)$ components the mean life is $\frac{1}{\lambda}\left(1 + \frac{1}{2} + \dots + \frac{1}{n}\right)$; the system is not exponential and has an increasing hazard rate.
+- **$k$-out-of-$n$** with identical Exponential$(\lambda)$ components: mean life $\frac{1}{\lambda}\sum_{j=k}^{n} \frac{1}{j}$. A series system is $n$-out-of-$n$ and a parallel system is 1-out-of-$n$.
+- **Standby** with $n$ identical Exponential$(\lambda)$ units: the lifetime is Gamma$(n, \lambda)$ with mean $\frac{n}{\lambda}$, and $R(t) = e^{-\lambda t}\sum_{j=0}^{n-1} \frac{(\lambda t)^j}{j!}$. Standby gives a longer mean life than parallel operation.
+- Example: two components with $p = 0.9$ give $0.81$ in series and $0.99$ in parallel.
+- A **coherent system** has a non-decreasing structure function and no irrelevant component. Its reliability lies between that of the series and the parallel system of the same components: $\prod p_i \le R \le 1 - \prod (1 - p_i)$.
+- Redundancy at the component level is at least as good as redundancy at the system level.
+- A complex system is analysed through its **minimal path sets** and **minimal cut sets**.
+
+## Censoring and life testing
+
+| Scheme | Rule | What is random |
+| Type I (time censoring) | Stop the test at a fixed time $t_0$ | The number of failures |
+| Type II (failure censoring) | Stop at the $r$-th failure | The duration of the test |
+| Random censoring | Each unit has its own censoring time; observe the smaller of the two times and which it was | Both |
+
+- These are forms of **right censoring**. Left and interval censoring also occur. In **progressive censoring** surviving units are withdrawn at several stages.
+- **Likelihood** under right censoring: a failure at $t_i$ contributes $f(t_i)$ and a censored unit contributes $R(t_i)$, so $L = \prod f(t_i)^{\delta_i}R(t_i)^{1 - \delta_i}$, where $\delta_i = 1$ for a failure.
+
+! remember | Exponential lifetimes with mean $\theta$
+- In every scheme the maximum likelihood estimator is $\hat{\theta} = \frac{\text{total time on test}}{\text{number of failures}}$.
+- **Complete sample**: $\hat{\theta} = \bar{t}$ and $\frac{2\sum t_i}{\theta} \sim \chi^2_{2n}$.
+- **Type II**, $n$ units, first $r$ failures, no replacement: total time on test $= \sum_{i=1}^{r} t_{(i)} + (n - r)t_{(r)}$. Then $\hat{\theta}$ is unbiased, it is the UMVUE, and $\frac{2r\hat{\theta}}{\theta} \sim \chi^2_{2r}$, which gives exact confidence intervals.
+- **Type II with replacement** of failed units: total time on test $= n\,t_{(r)}$.
+- **Type I**, $d$ failures by time $t_0$: total time on test $= \sum_{i=1}^{d} t_{(i)} + (n - d)t_0$; the estimator exists only if $d > 0$ and is biased.
+
+- **Kaplan-Meier (product-limit) estimator** of the survival function for censored data: $\hat{R}(t) = \prod_{t_i \le t}\left(1 - \frac{d_i}{n_i}\right)$, with $d_i$ failures among the $n_i$ units at risk at $t_i$. Without censoring it is the empirical survival function. Its variance is estimated by Greenwood's formula.
+- **Accelerated life tests** run at high stress to produce failures sooner, and extrapolate to normal conditions.
+
+? How is the hazard rate defined? :: $h(t) = \frac{f(t)}{R(t)}$, the density divided by the survival function.
+? Hazard rate of a series system of independent components? :: The sum of the component hazard rates.
+? Mean life of a parallel system of two Exponential$(\lambda)$ components? :: $\frac{1}{\lambda}\left(1 + \frac{1}{2}\right) = \frac{3}{2\lambda}$.
+? Estimator of the exponential mean from a Type II censored sample? :: Total time on test divided by $r$, the number of failures.
+
+! exam | PYQ focus
+- Hazard rate, mean life and mean residual life of a given distribution; whether it is IFR or DFR.
+- Reliability and mean life of series, parallel, $k$-out-of-$n$ and standby systems.
+- Likelihood and estimator of the mean under Type I and Type II censoring.
+
+! recap | One-minute revision
+- $R(t) = e^{-H(t)}$; exponential means constant hazard; Weibull shape above 1 means increasing hazard.
+- Series: product of reliabilities, hazards add. Parallel: one minus the product of unreliabilities.
+- Exponential life test: estimate the mean by total time on test over number of failures.
+
+& R. E. Barlow and F. Proschan, Statistical Theory of Reliability and Life Testing
+& S. K. Sinha, Reliability and Life Testing
+& J. F. Lawless, Statistical Models and Methods for Lifetime Data
+& NIST/SEMATECH e-Handbook of Statistical Methods: Assessing Product Reliability | https://www.itl.nist.gov/div898/handbook/apr/apr.htm

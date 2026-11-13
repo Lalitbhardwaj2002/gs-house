@@ -1,0 +1,113 @@
+@en
+# Linear programming, queuing and inventory models
+
+> Operations research turns a decision into a mathematical model. Linear programming optimises a linear function over a convex polyhedron; queuing models give the steady-state length of a waiting line; inventory models balance the cost of ordering against the cost of holding stock.
+
+## Linear programming
+
+- **Standard form**: maximise $z = c'x$ subject to $Ax = b$, $x \ge 0$, with $A$ an $m \times n$ matrix of rank $m$. A constraint $\le$ gets a **slack** variable, a constraint $\ge$ gets a **surplus** variable, and **artificial** variables are added to obtain a starting basis.
+- The set of feasible solutions is **convex**. A **basic solution** sets $n - m$ variables to zero and solves for the remaining $m$ (whose columns must be independent); there are at most $\binom{n}{m}$ of them.
+- A **basic feasible solution** is a basic solution with all variables non-negative. It is **degenerate** if some basic variable is zero, and non-degenerate if all $m$ basic variables are positive.
+
+! remember | Fundamental results
+- The basic feasible solutions are exactly the **extreme points** (vertices) of the feasible region.
+- If the problem has an optimal solution, an optimal solution occurs at an extreme point.
+- If two feasible points are optimal, so is every point of the segment joining them: the optimum is then attained at infinitely many points.
+- A problem has exactly one of these outcomes: a unique optimum, alternative optima, an unbounded objective, or no feasible solution.
+- An unbounded feasible region does not by itself mean an unbounded objective.
+
+| In the simplex table (maximisation) | Meaning |
+| All $z_j - c_j \ge 0$ | The current solution is optimal |
+| Some $z_j - c_j < 0$ | That variable can enter; usually the most negative is taken |
+| Minimum of $\frac{b_i}{a_{ij}}$ over $a_{ij} > 0$ | Decides the leaving variable |
+| The entering column has no positive entry | The objective is unbounded |
+| At a non-degenerate optimum $z_j - c_j = 0$ for a non-basic variable | Alternative optima exist (at a degenerate optimum they may not) |
+| A tie in the minimum ratio | The next solution is degenerate; cycling is possible |
+| An artificial variable stays positive at optimality | The problem is infeasible |
+
+- Artificial variables are driven out by the **Big-M** method or the **two-phase** method (phase I minimises their sum; a positive minimum means infeasibility).
+- With two variables the problem is solved graphically: the optimum is at a corner of the feasible polygon.
+
+## Duality
+
+- **Primal**: maximise $c'x$ subject to $Ax \le b$, $x \ge 0$. **Dual**: minimise $b'y$ subject to $A'y \ge c$, $y \ge 0$. The dual of the dual is the primal.
+
+| Primal (maximise) | Dual (minimise) |
+| $m$ constraints, $n$ variables | $m$ variables, $n$ constraints |
+| $i$-th constraint is $\le$ | $y_i \ge 0$ |
+| $i$-th constraint is an equation | $y_i$ unrestricted in sign |
+| $x_j \ge 0$ | $j$-th constraint is $\ge$ |
+| $x_j$ unrestricted in sign | $j$-th constraint is an equation |
+
+! remember | Duality theorems
+- **Weak duality**: for feasible $x$ and $y$, $c'x \le b'y$.
+- **Strong duality**: if one problem has a finite optimum, so has the other, and the optimal values are equal.
+- If the primal is unbounded, the dual is infeasible. If the primal is infeasible, the dual is either unbounded or infeasible; both can be infeasible together.
+- **Complementary slackness**: at the optimum, a positive variable in one problem goes with a tight constraint in the other, and a slack constraint with a zero variable.
+- The optimal dual variables are the **shadow prices** of the resources; they appear as the $z_j - c_j$ of the slack variables in the final primal table.
+
+- The **dual simplex method** starts from a basic solution that satisfies the optimality condition but is infeasible, and works towards feasibility.
+- **Transportation problem** with $m$ sources and $n$ destinations: a balanced problem always has a feasible solution; a basic feasible solution has at most $m + n - 1$ positive cells; starting solutions come from the north-west corner, least cost or Vogel's method, and optimality is tested by the $u$-$v$ (MODI) method. Integer supplies and demands give integer solutions.
+- **Assignment problem**: an $n \times n$ transportation problem with all supplies and demands 1, solved by the Hungarian method. Its basic feasible solutions are degenerate: $n$ positive cells out of $2n - 1$.
+
+## Queuing models
+
+Arrivals are Poisson with rate $\lambda$ and service times exponential with rate $\mu$ per server. $L_s$, $L_q$ are the mean numbers in the system and in the queue; $W_s$, $W_q$ the mean times.
+
+- **Little's formulas**: $L_s = \lambda W_s$, $L_q = \lambda W_q$, and $W_s = W_q + \frac{1}{\mu}$. With limited space use the effective arrival rate.
+
+| Quantity for M/M/1, $\rho = \frac{\lambda}{\mu} < 1$ | Value |
+| $P(n \text{ in system})$ | $(1 - \rho)\rho^n$ |
+| $L_s$ | $\frac{\rho}{1 - \rho} = \frac{\lambda}{\mu - \lambda}$ |
+| $L_q$ | $\frac{\rho^2}{1 - \rho} = \frac{\lambda^2}{\mu(\mu - \lambda)}$ |
+| $W_s$ | $\frac{1}{\mu - \lambda}$ |
+| $W_q$ | $\frac{\lambda}{\mu(\mu - \lambda)}$ |
+| $P(\text{at least } k \text{ in system})$ | $\rho^k$ |
+| Variance of the number in the system | $\frac{\rho}{(1 - \rho)^2}$ |
+| Mean length of a non-empty queue | $\frac{\mu}{\mu - \lambda}$ |
+
+- In M/M/1 the server is busy with probability $\rho$, and the time spent in the system is exponential with rate $\mu - \lambda$.
+
+| Model | Steady-state results |
+| M/M/1 with room for $N$ in the system | $p_n = \frac{(1 - \rho)\rho^n}{1 - \rho^{N+1}}$ for $\rho \neq 1$; $p_n = \frac{1}{N + 1}$ for $\rho = 1$; a steady state exists for every $\rho$; $L_s = \frac{\rho}{1 - \rho} - \frac{(N + 1)\rho^{N+1}}{1 - \rho^{N+1}}$ for $\rho \neq 1$; effective arrival rate $\lambda(1 - p_N)$ |
+| M/M/c, $\rho = \frac{\lambda}{c\mu} < 1$ | $p_n = \frac{(\lambda/\mu)^n}{n!}p_0$ for $n \le c$; $p_n = \frac{(\lambda/\mu)^n}{c!\,c^{n-c}}p_0$ for $n \ge c$; $L_q = \frac{(\lambda/\mu)^c\rho}{c!\,(1 - \rho)^2}p_0$ |
+| M/M/c with room for $K$ | The same $p_n$ for $n \le K$ and $p_n = 0$ for $n > K$, with $p_0$ from a finite sum; steady state for every $\rho$; effective arrival rate $\lambda(1 - p_K)$ |
+| M/M/c/c (no waiting room) | $p_n = \frac{(\lambda/\mu)^n/n!}{\sum_{j=0}^{c} (\lambda/\mu)^j/j!}$; $p_c$ is Erlang's loss formula |
+| M/G/1, service variance $\sigma^2$, $\rho = \frac{\lambda}{\mu} < 1$ | $L_q = \frac{\lambda^2\sigma^2 + \rho^2}{2(1 - \rho)}$ (**Pollaczek-Khinchine**); $L_s = L_q + \rho$; $p_0 = 1 - \rho$ |
+
+- For M/M/c, $p_0 = \left[\sum_{n=0}^{c-1} \frac{(\lambda/\mu)^n}{n!} + \frac{(\lambda/\mu)^c}{c!\,(1 - \rho)}\right]^{-1}$.
+- **M/D/1** (constant service time): $L_q = \frac{\rho^2}{2(1 - \rho)}$, half the value for M/M/1.
+
+## Inventory models
+
+Let $D$ be the demand rate, $K$ the cost of placing an order, $h$ the holding cost per unit per unit time and $s$ the shortage cost per unit per unit time.
+
+| Model | Optimal order quantity | Least cost per unit time |
+| Basic economic order quantity | $Q^* = \sqrt{\frac{2KD}{h}}$ | $\sqrt{2KDh}$ |
+| Production at finite rate $P > D$ | $Q^* = \sqrt{\frac{2KD}{h}}\sqrt{\frac{P}{P - D}}$ | $\sqrt{2KDh}\sqrt{\frac{P - D}{P}}$ |
+| Shortages allowed (backorders) | $Q^* = \sqrt{\frac{2KD}{h}}\sqrt{\frac{h + s}{s}}$ | $\sqrt{2KDh}\sqrt{\frac{s}{h + s}}$ |
+
+- In the basic model the cycle length is $\frac{Q^*}{D}$, and at the optimum the ordering cost equals the holding cost. The total cost changes little for order quantities near $Q^*$.
+- With shortages the largest stock level is $\sqrt{\frac{2KD}{h}}\sqrt{\frac{s}{h + s}}$; allowing shortages lowers the cost.
+- With lead time $L$, reorder when the stock falls to the lead-time demand $DL$ (plus a safety stock if demand is uncertain).
+- **Newsboy problem** (one period, random demand with distribution function $F$): order the quantity $Q^*$ with $F(Q^*) = \frac{c_u}{c_u + c_o}$, where $c_u$ is the loss per unit of unmet demand and $c_o$ the loss per unit left over. For discrete demand take the smallest $Q$ with $F(Q)$ at least this ratio.
+
+? Where is the optimum of a linear programme attained, if it exists? :: At an extreme point of the feasible region, that is at a basic feasible solution.
+? What does strong duality say? :: If either problem has a finite optimum, both have, with equal optimal values.
+? Mean number in an M/M/1 system? :: $\frac{\rho}{1 - \rho} = \frac{\lambda}{\mu - \lambda}$.
+? The economic order quantity? :: $Q^* = \sqrt{\frac{2KD}{h}}$.
+
+! exam | PYQ focus
+- Number and nature of basic feasible solutions; reading optimality, unboundedness, alternative optima and infeasibility from a simplex table.
+- Writing the dual; using weak and strong duality and complementary slackness.
+- Steady-state probabilities and mean queue lengths for M/M/1 and its variants; the Pollaczek-Khinchine formula; economic order quantity.
+
+! recap | One-minute revision
+- Optimum at a vertex; degenerate means a zero basic variable; all $z_j - c_j \ge 0$ means optimal (maximisation).
+- Weak duality $c'x \le b'y$; equal at the optimum; unbounded primal means infeasible dual.
+- M/M/1: $p_n = (1 - \rho)\rho^n$, $L_s = \frac{\rho}{1 - \rho}$. Economic order quantity $\sqrt{\frac{2KD}{h}}$.
+
+& Hamdy A. Taha, Operations Research: An Introduction
+& Kanti Swarup, P. K. Gupta and Man Mohan, Operations Research
+& D. Gross and C. M. Harris, Fundamentals of Queueing Theory
+& MIT OpenCourseWare 15.053: Optimization Methods in Management Science | https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/

@@ -1,0 +1,106 @@
+@en
+# Probability, random variables and limit theorems
+
+> Probability theory rests on three axioms and on the idea of a random variable with its distribution function. The laws of large numbers and the central limit theorem say what happens to averages of many independent observations.
+
+## Probability
+
+- **Axioms** (Kolmogorov): $P(A) \ge 0$, $P(\Omega) = 1$, and $P\left(\bigcup A_i\right) = \sum P(A_i)$ for countably many disjoint events.
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$; for $n$ events use inclusion and exclusion.
+- **Boole**: $P\left(\bigcup A_i\right) \le \sum P(A_i)$. **Bonferroni**: $P\left(\bigcap A_i\right) \ge 1 - \sum P(A_i^c)$.
+- **Conditional probability**: $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$ for $P(B) > 0$.
+- **Total probability**: if $B_1, B_2, \dots$ partition $\Omega$, then $P(A) = \sum_j P(B_j)P(A \mid B_j)$.
+- **Bayes' theorem**: $P(B_i \mid A) = \frac{P(B_i)P(A \mid B_i)}{\sum_j P(B_j)P(A \mid B_j)}$.
+- **Independence**: $P(A \cap B) = P(A)P(B)$. Mutual independence of $n$ events needs $2^n - n - 1$ product conditions; pairwise independence is weaker.
+- If $A$ and $B$ are independent, so are $A$ and $B^c$. Disjoint events of positive probability are never independent.
+- **Borel-Cantelli lemmas**: if $\sum P(A_n) < \infty$, then with probability 1 only finitely many $A_n$ occur. If the $A_n$ are independent and $\sum P(A_n) = \infty$, then with probability 1 infinitely many occur.
+
+## Random variables and distribution functions
+
+- The **distribution function** $F(x) = P(X \le x)$ is non-decreasing and right-continuous, with $F(-\infty) = 0$ and $F(\infty) = 1$. $P(X = a) = F(a) - F(a^-)$, and $F$ has at most countably many jumps.
+- A discrete variable has a probability mass function; a continuous one has a density $f = F'$; a distribution may also be a mixture of the two.
+- **Joint distribution**: marginals come by summing or integrating out the other variable. The conditional density is $f(y \mid x) = \frac{f(x, y)}{f_X(x)}$.
+- $X$ and $Y$ are **independent** exactly when the joint distribution function (or density, or mass function) is the product of the marginals.
+- **Change of variable**: if $Y = g(X)$ with $g$ strictly monotone and differentiable, $f_Y(y) = f_X(g^{-1}(y))\left\lvert \frac{d}{dy}g^{-1}(y) \right\rvert$. For several variables multiply by the modulus of the Jacobian.
+- **Probability integral transform**: if $F$ is continuous, $F(X)$ is uniform on $(0, 1)$.
+- **Convolution**: for independent $X$, $Y$ the density of $X + Y$ is $\int f_X(x)f_Y(z - x)\,dx$.
+
+## Expectation and moments
+
+- $E[X]$ exists when $E\lvert X \rvert < \infty$; the Cauchy distribution has no mean.
+- $E$ is always linear. $E[XY] = E[X]E[Y]$ for independent variables.
+- $\operatorname{Var}(X) = E[X^2] - (E[X])^2$; $\operatorname{Var}(aX + b) = a^2\operatorname{Var}(X)$; $\operatorname{Var}(X \pm Y) = \operatorname{Var}(X) + \operatorname{Var}(Y) \pm 2\operatorname{Cov}(X, Y)$.
+- Independent variables are uncorrelated. The converse fails: for $X \sim N(0, 1)$ and $Y = X^2$, the covariance is 0. For jointly normal variables uncorrelated does mean independent.
+- For $X \ge 0$: $E[X] = \int_0^\infty (1 - F(x))\,dx$; for values in $\{0, 1, 2, \dots\}$: $E[X] = \sum_{n \ge 1} P(X \ge n)$.
+- **Conditional expectation**: $E[E[X \mid Y]] = E[X]$ and $\operatorname{Var}(X) = E[\operatorname{Var}(X \mid Y)] + \operatorname{Var}(E[X \mid Y])$.
+
+| Function | Definition | Remark |
+| Probability generating function | $G(s) = E[s^X]$ | For values $0, 1, 2, \dots$; $G'(1) = E[X]$ |
+| Moment generating function | $M(t) = E[e^{tX}]$ | May not exist; if finite near 0, $M^{(k)}(0) = E[X^k]$ |
+| Characteristic function | $\varphi(t) = E[e^{itX}]$ | Always exists |
+
+! remember | Characteristic functions
+- $\varphi(0) = 1$, $\lvert \varphi(t) \rvert \le 1$, $\varphi(-t) = \overline{\varphi(t)}$, and $\varphi$ is uniformly continuous.
+- $\varphi$ is real-valued exactly when the distribution is symmetric about 0.
+- $\varphi_{aX + b}(t) = e^{itb}\varphi_X(at)$; for independent variables $\varphi_{X + Y} = \varphi_X\varphi_Y$.
+- If $E\lvert X \rvert^k < \infty$, then $\varphi^{(k)}(0) = i^kE[X^k]$.
+- **Uniqueness**: the characteristic function determines the distribution. If $\int \lvert \varphi \rvert\,dt < \infty$, the density is $f(x) = \frac{1}{2\pi}\int e^{-itx}\varphi(t)\,dt$.
+- **Continuity theorem**: $X_n \to X$ in distribution exactly when $\varphi_n(t) \to \varphi(t)$ for every $t$.
+- Examples: $\cos t$ ($X = \pm 1$ with probability $\frac{1}{2}$ each), $e^{-t^2/2}$ (standard normal), $e^{-\lvert t \rvert}$ (Cauchy), $\frac{1}{1 + t^2}$ (Laplace). $e^{-t^4}$ is not a characteristic function.
+
+## Inequalities
+
+| Name | Statement |
+| Markov | $P(X \ge a) \le \frac{E[X]}{a}$ for $X \ge 0$, $a > 0$ |
+| Chebyshev | $P(\lvert X - \mu \rvert \ge k\sigma) \le \frac{1}{k^2}$ |
+| One-sided Chebyshev | $P(X - \mu \ge a) \le \frac{\sigma^2}{\sigma^2 + a^2}$ for $a > 0$ |
+| Jensen | $g(E[X]) \le E[g(X)]$ for convex $g$ |
+| Cauchy-Schwarz | $(E[XY])^2 \le E[X^2]E[Y^2]$ |
+| Lyapunov | $(E\lvert X \rvert^r)^{1/r}$ is non-decreasing in $r > 0$ |
+
+- From Jensen: $E[X^2] \ge (E[X])^2$; for $X > 0$, $E\left[\frac{1}{X}\right] \ge \frac{1}{E[X]}$ and $E[\log X] \le \log E[X]$.
+
+## Modes of convergence
+
+- **Almost surely**: $P(X_n \to X) = 1$. **In probability**: $P(\lvert X_n - X \rvert > \varepsilon) \to 0$ for every $\varepsilon > 0$. **In $r$-th mean**: $E\lvert X_n - X \rvert^r \to 0$. **In distribution**: $F_n(x) \to F(x)$ at every continuity point of $F$.
+
+! remember | Which mode implies which
+- Almost sure $\Rightarrow$ in probability $\Rightarrow$ in distribution.
+- In $r$-th mean $\Rightarrow$ in probability; in $s$-th mean $\Rightarrow$ in $r$-th mean for $s > r > 0$.
+- In probability $\Rightarrow$ some subsequence converges almost surely.
+- In distribution to a **constant** $\Rightarrow$ in probability.
+- No other implication holds in general.
+- **Slutsky**: if $X_n \to X$ in distribution and $Y_n \to c$ in probability, then $X_n + Y_n \to X + c$ and $X_nY_n \to cX$ in distribution.
+
+- Example: let $X_n = n$ with probability $\frac{1}{n}$ and 0 otherwise. Then $X_n \to 0$ in probability but $E[X_n] = 1$, so not in mean; if the $X_n$ are independent, not almost surely either.
+
+## Laws of large numbers and the central limit theorem
+
+- **Weak law** (Khinchin): for independent identically distributed variables with finite mean $\mu$, $\bar{X}_n \to \mu$ in probability.
+- **Strong law** (Kolmogorov): under the same conditions $\bar{X}_n \to \mu$ almost surely. For independent, not identically distributed variables with finite variances, $\sum \frac{\operatorname{Var}(X_n)}{n^2} < \infty$ is sufficient for $\bar{X}_n - E[\bar{X}_n] \to 0$ almost surely (Kolmogorov's criterion).
+- **Central limit theorem** (Lindeberg-Lévy): for independent identically distributed variables with mean $\mu$ and finite variance $\sigma^2 > 0$,
+
+$$\frac{\sqrt{n}(\bar{X}_n - \mu)}{\sigma} \to N(0, 1) \text{ in distribution.}$$
+
+- **Delta method**: under the conditions of the central limit theorem, if $g$ is differentiable at $\mu$ with $g'(\mu) \neq 0$, then $\sqrt{n}(g(\bar{X}_n) - g(\mu)) \to N(0, g'(\mu)^2\sigma^2)$.
+- For Cauchy variables $\bar{X}_n$ has the same Cauchy distribution for every $n$: neither law applies.
+
+? What does Chebyshev's inequality say? :: $P(\lvert X - \mu \rvert \ge k\sigma) \le \frac{1}{k^2}$.
+? Does convergence in probability imply almost sure convergence? :: No; only a subsequence converges almost surely.
+? When is a characteristic function real-valued? :: Exactly when the distribution is symmetric about zero.
+? What does the central limit theorem need in the i.i.d. case? :: A finite, non-zero variance.
+
+! exam | PYQ focus
+- Bayes' theorem and independence in small sample spaces; distribution of a function of random variables.
+- Which given function is a distribution function or a characteristic function.
+- True or false statements on modes of convergence; limits found with the law of large numbers or the central limit theorem.
+
+! recap | One-minute revision
+- $F$ is right-continuous and non-decreasing; independence means the joint distribution factorises.
+- Almost sure $\Rightarrow$ in probability $\Rightarrow$ in distribution; mean convergence $\Rightarrow$ in probability.
+- Laws of large numbers need a finite mean; the central limit theorem needs a finite variance.
+
+& V. K. Rohatgi and A. K. Md. Ehsanes Saleh, An Introduction to Probability and Statistics (the chapters on probability, random variables, moments and limit theorems)
+& W. Feller, An Introduction to Probability Theory and Its Applications, Volume 1
+& Sheldon Ross, A First Course in Probability
+& MIT OpenCourseWare 6.041: Probabilistic Systems Analysis and Applied Probability | https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/

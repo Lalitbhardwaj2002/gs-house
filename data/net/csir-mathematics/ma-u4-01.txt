@@ -1,0 +1,96 @@
+@en
+# Descriptive statistics and exploratory data analysis
+
+> Descriptive statistics reduces a set of data to a few numbers: where it is centred, how spread out it is, and what shape it has. Exploratory data analysis looks at the data through plots and resistant summaries before any model is fitted.
+
+## Scales of measurement
+
+| Scale | What is meaningful | Example |
+| Nominal | Equality only | Blood group |
+| Ordinal | Order | Grades, ranks |
+| Interval | Differences; zero is arbitrary | Temperature in Celsius |
+| Ratio | Ratios; true zero | Height, income |
+
+## Measures of location
+
+- **Arithmetic mean** $\bar{x} = \frac{1}{n}\sum x_i$. The sum of deviations from the mean is zero, and $\sum (x_i - a)^2$ is least when $a = \bar{x}$.
+- **Median**: the middle value. $\sum \lvert x_i - a \rvert$ is least when $a$ is the median. **Mode**: the most frequent value.
+- For positive values, arithmetic mean $\ge$ geometric mean $\ge$ harmonic mean, with equality only when all values are equal. For two values, $AM \times HM = GM^2$.
+- For a moderately skewed distribution, $\text{Mode} \approx 3\,\text{Median} - 2\,\text{Mean}$.
+- If $y = a + bx$, then the mean, median and mode of $y$ are found by applying $a + b(\cdot)$ to those of $x$: for example $\bar{y} = a + b\bar{x}$.
+- **Combined mean** of two groups: $\frac{n_1\bar{x}_1 + n_2\bar{x}_2}{n_1 + n_2}$.
+- **Quartiles** $Q_1, Q_2, Q_3$ cut the ordered data into four equal parts; deciles into ten and percentiles into a hundred.
+- The harmonic mean is the right average for speeds over equal distances; the geometric mean for rates of growth.
+
+## Measures of dispersion
+
+| Measure | Definition |
+| Range | Largest value minus smallest |
+| Quartile deviation | $\frac{Q_3 - Q_1}{2}$ |
+| Mean deviation | $\frac{1}{n}\sum \lvert x_i - A \rvert$, least about the median |
+| Variance | $\sigma^2 = \frac{1}{n}\sum (x_i - \bar{x})^2 = \frac{1}{n}\sum x_i^2 - \bar{x}^2$ |
+| Coefficient of variation | $\frac{\sigma}{\bar{x}} \times 100$, free of units |
+
+- Variance does not change with the origin; if $y = a + bx$ then $\sigma_y = \lvert b \rvert \sigma_x$.
+- **Combined variance**: $(n_1 + n_2)\sigma^2 = n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)$, where $d_i = \bar{x}_i - \bar{x}$.
+- Mean deviation about the mean $\le$ standard deviation, and standard deviation $\le \frac{\text{range}}{2}$.
+- For the first $n$ natural numbers: mean $\frac{n + 1}{2}$, variance $\frac{n^2 - 1}{12}$.
+- For a normal distribution, quartile deviation $\approx \frac{2}{3}\sigma$ and mean deviation $\approx \frac{4}{5}\sigma$, so quartile deviation, mean deviation and standard deviation are roughly as $10 : 12 : 15$.
+
+## Moments, skewness and kurtosis
+
+- Raw moments $\mu_r' = \frac{1}{n}\sum x_i^r$; central moments $\mu_r = \frac{1}{n}\sum (x_i - \bar{x})^r$, with $\mu_1 = 0$ and $\mu_2 = \sigma^2$.
+- $\mu_2 = \mu_2' - \mu_1'^2$, $\mu_3 = \mu_3' - 3\mu_2'\mu_1' + 2\mu_1'^3$, $\mu_4 = \mu_4' - 4\mu_3'\mu_1' + 6\mu_2'\mu_1'^2 - 3\mu_1'^4$.
+- Central moments do not depend on the origin; under $y = a + bx$, $\mu_r(y) = b^r\mu_r(x)$.
+
+! remember | Shape coefficients
+- **Skewness**: $\beta_1 = \frac{\mu_3^2}{\mu_2^3}$ and $\gamma_1 = \frac{\mu_3}{\mu_2^{3/2}}$. Positive skew has a long right tail, and then usually mean $>$ median $>$ mode.
+- **Kurtosis**: $\beta_2 = \frac{\mu_4}{\mu_2^2}$ and $\gamma_2 = \beta_2 - 3$. $\beta_2 = 3$ is mesokurtic (normal), $\beta_2 > 3$ leptokurtic, $\beta_2 < 3$ platykurtic.
+- Always $\beta_2 \ge 1$ and $\beta_2 \ge \beta_1 + 1$.
+- **Karl Pearson's coefficient**: $\frac{\text{mean} - \text{mode}}{\sigma}$. **Bowley's coefficient**: $\frac{Q_3 + Q_1 - 2Q_2}{Q_3 - Q_1}$, which lies between $-1$ and $1$.
+- **Sheppard's corrections** for grouping with class width $h$: $\mu_2$ is reduced by $\frac{h^2}{12}$; $\mu_3$ needs no correction; corrected $\mu_4 = \mu_4 - \frac{h^2}{2}\mu_2 + \frac{7h^4}{240}$. They are valid only for a continuous distribution that tapers off to zero at both ends, with a small class width.
+
+## Correlation and regression lines
+
+- **Correlation coefficient** $r = \frac{\operatorname{cov}(x, y)}{\sigma_x\sigma_y}$, with $-1 \le r \le 1$. It does not change with origin or scale, except for a change of sign when the two scale factors have opposite signs.
+- $r = \pm 1$ exactly when the points lie on a straight line. $r = 0$ means no linear relation, not independence: $y = x^2$ on values symmetric about zero gives $r = 0$.
+- **Regression lines**: $y - \bar{y} = b_{yx}(x - \bar{x})$ with $b_{yx} = r\frac{\sigma_y}{\sigma_x}$, and $x - \bar{x} = b_{xy}(y - \bar{y})$ with $b_{xy} = r\frac{\sigma_x}{\sigma_y}$.
+- $b_{yx}b_{xy} = r^2$; the two coefficients have the same sign as $r$; both cannot exceed 1 in modulus; their arithmetic mean is at least $\lvert r \rvert$.
+- The lines meet at $(\bar{x}, \bar{y})$. They coincide when $r = \pm 1$ and are perpendicular (parallel to the axes) when $r = 0$. The angle between them satisfies $\tan\theta = \frac{1 - r^2}{\lvert r \rvert}\cdot\frac{\sigma_x\sigma_y}{\sigma_x^2 + \sigma_y^2}$.
+- The variance of the residuals about the line of $y$ on $x$ is $\sigma_y^2(1 - r^2)$; $r^2$ is the **coefficient of determination**.
+- Regression coefficients do not depend on the origin but do depend on the scale.
+
+## Exploratory data analysis
+
+| Tool | What it shows |
+| Five-number summary | Minimum, $Q_1$, median, $Q_3$, maximum |
+| Box plot | Box from $Q_1$ to $Q_3$ with the median marked; whiskers to the extreme values inside the fences; points outside plotted singly |
+| Stem-and-leaf display | The shape of the data while keeping the values |
+| Histogram | Frequency as area; with unequal classes plot frequency density |
+| Ogive | Cumulative frequency; the less-than and more-than ogives cross at the median |
+| Q-Q plot | Sample quantiles against theoretical ones; a straight line means the model fits |
+| Scatter plot | Relation between two variables |
+
+- **Fences**: $Q_1 - 1.5\,\text{IQR}$ and $Q_3 + 1.5\,\text{IQR}$, where $\text{IQR} = Q_3 - Q_1$. Values beyond them are flagged as outliers.
+- **Resistant measures** are little affected by outliers: median, interquartile range, trimmed mean, median absolute deviation. The mean, the standard deviation and $r$ are not resistant.
+- A long right tail is often removed by taking logarithms or square roots.
+
+? About which value is the sum of absolute deviations least? :: The median.
+? What is $b_{yx}b_{xy}$? :: $r^2$.
+? Which values does a box plot mark as outliers? :: Those more than 1.5 times the interquartile range beyond the quartiles.
+? What does $\beta_2 > 3$ mean? :: The distribution is leptokurtic: more peaked, with heavier tails than the normal.
+
+! exam | PYQ focus
+- Effect of a change of origin and scale on mean, variance, moments, correlation and regression coefficients.
+- Finding $r$, the means or the ratio of standard deviations from two given regression lines.
+- Relations among mean, median and mode; inequalities among measures; reading a box plot.
+
+! recap | One-minute revision
+- Squares are least about the mean, absolute deviations about the median; $AM \ge GM \ge HM$.
+- $\beta_2 \ge \beta_1 + 1$; normal has $\beta_1 = 0$, $\beta_2 = 3$.
+- $b_{yx}b_{xy} = r^2$; lines meet at the means; outlier fences at 1.5 IQR.
+
+& S. C. Gupta and V. K. Kapoor, Fundamentals of Mathematical Statistics (the chapters on frequency distributions, moments, correlation and regression)
+& A. M. Goon, M. K. Gupta and B. Dasgupta, Fundamentals of Statistics, Volume 1
+& J. W. Tukey, Exploratory Data Analysis
+& NIST/SEMATECH e-Handbook of Statistical Methods: Exploratory Data Analysis | https://www.itl.nist.gov/div898/handbook/eda/eda.htm
