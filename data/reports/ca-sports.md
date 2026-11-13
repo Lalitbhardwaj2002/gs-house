@@ -24,3 +24,18 @@ Replaced:
 Confirmed without change (key sources): 022 Laureus 2026 Alcaraz and Sabalenka, PSG team (Madrid, 20 Apr 2026); Duplantis 2025; Djokovic five times, last 2024; Messi 2020 (shared) and 2023; 023 Asia Cup 2025, Rajgir, India 4–1 Korea; 024 cricket at LA 2028, six teams each; 025 Neeraj Chopra 90.23 m at Doha, 16 May 2025, second to Julian Weber.
 
 Facts I could not confirm online: none.
+
+## Check of 13 November 2026 (55 more questions for the quiz)
+
+Checked: 25 questions (ca-sports-026 to ca-sports-050). Corrected 4, replaced 1; the other 20 were confirmed as written (Champions Trophy 2025, Asia Cup 2025, Gill, Manhas, blind women's T20 World Cup, Coventry, Manu Bhaker, Paris Paralympics, Bindra, hockey golds, Khelo India 2025, Club World Cup, Ballon d'Or, Australian Open 2026, Formula One 2025, World Para Athletics 2025, Grand Slam surfaces, Thomas Cup, golf terms, Narendra Modi Stadium).
+
+Corrected:
+- ca-sports-034: the Dakar Youth Olympic Games (31 October to 13 November 2026) end today, so the stem, notes and explanation were in the present tense ("are hosted", "are being held"); now in the past tense. Source: olympics.com (IOC Executive Board dates; opening report).
+- ca-sports-038: the fact "nine players of a team are on the field at a time" does not hold for this World Cup, which was played under the seven-a-side rules; the fact now says the World Cup was organised by the Kho Kho Federation of India with the International Kho Kho Federation. Source: official Kho Kho World Cup rules page, reports of January 2025.
+- ca-sports-040: the note on option D ("nine players a side are on the field in kho kho") had the same problem; it now refers to the nine fielders of a baseball side.
+- ca-sports-050: the explanation called the Budapest golds "the country's first Olympiad golds", but India shared the gold of the online Olympiad of 2020; now "India's first team golds at an over-the-board Olympiad". Source: FIDE.
+
+Replaced:
+- ca-sports-037: asked the host of the Asian Games of 2030 (Doha), a fact already stated in the notes of ca-sports-009 ("Doha is the host of the Asian Games of 2030"). New question (same group, PGT, answer D): India's medal total at the Asian Games of 2026 — 85 (21 gold, 27 silver, 37 bronze), fourth place; distractors are India's tallies of 2014 (57) and 2018 (70) and a filler (76). The venue is not named, so the question does not give away ca-sports-009. Sources: final tallies reported on 3–4 October 2026 (The Week, Business Today, Drishti IAS); Olympic Council of Asia records for 2014 and 2018.
+
+Facts I could not confirm online: none.
