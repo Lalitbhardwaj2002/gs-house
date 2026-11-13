@@ -454,10 +454,256 @@
      "pages": "190–208",
      "en": "General Science",
      "hi": "सामान्य विज्ञान",
-     "practice": [
-      "sci-physics",
-      "sci-chemistry",
-      "sci-biology"
+     "chapters": [
+      {
+       "id": "gc-sci-01",
+       "pages": "190–191",
+       "en": "Measurement, motion, force and energy",
+       "hi": "मापन, गति, बल एवं ऊर्जा",
+       "pool": [
+        [
+         "sci-physics",
+         "Units and instruments"
+        ],
+        [
+         "sci-physics",
+         "Motion"
+        ],
+        [
+         "sci-physics",
+         "Force and laws of motion"
+        ],
+        [
+         "sci-physics",
+         "Gravitation"
+        ],
+        [
+         "sci-physics",
+         "Work and energy"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-02",
+       "pages": "191–193",
+       "en": "Fluids, heat and sound",
+       "hi": "द्रव, ऊष्मा एवं ध्वनि",
+       "pool": [
+        [
+         "sci-physics",
+         "Pressure"
+        ],
+        [
+         "sci-physics",
+         "Floatation"
+        ],
+        [
+         "sci-physics",
+         "Heat"
+        ],
+        [
+         "sci-physics",
+         "Sound"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-03",
+       "pages": "193–195",
+       "en": "Light and optics",
+       "hi": "प्रकाश एवं प्रकाशिकी",
+       "pool": [
+        [
+         "sci-physics",
+         "Light"
+        ],
+        [
+         "sci-physics",
+         "Human eye"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-04",
+       "pages": "195–196",
+       "en": "Electricity, electronics and magnetism",
+       "hi": "विद्युत, इलेक्ट्रॉनिकी एवं चुंबकत्व",
+       "pool": [
+        [
+         "sci-physics",
+         "Electricity"
+        ],
+        [
+         "sci-physics",
+         "Magnetic effects of current"
+        ],
+        [
+         "sci-physics",
+         "Magnetism"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-05",
+       "pages": "196–198",
+       "en": "Atoms, nuclei, the universe and inventions",
+       "hi": "परमाणु, नाभिक, ब्रह्मांड एवं आविष्कार",
+       "pool": [
+        [
+         "sci-physics",
+         "Modern physics"
+        ],
+        [
+         "sci-physics",
+         "Universe and inventions"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-06",
+       "pages": "198–199",
+       "en": "Matter, atoms and the periodic table",
+       "hi": "द्रव्य, परमाणु एवं आवर्त सारणी",
+       "pool": [
+        [
+         "sci-chemistry",
+         "Matter"
+        ],
+        [
+         "sci-chemistry",
+         "Atom"
+        ],
+        [
+         "sci-chemistry",
+         "Periodic table"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-07",
+       "pages": "199–200",
+       "en": "Chemical reactions, acids, bases, salts and water",
+       "hi": "रासायनिक अभिक्रियाएँ, अम्ल, क्षार, लवण एवं जल",
+       "pool": [
+        [
+         "sci-chemistry",
+         "Chemical reactions"
+        ],
+        [
+         "sci-chemistry",
+         "Acids, bases and salts"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-08",
+       "pages": "200–202",
+       "en": "Carbon, fuels, metals and industrial chemistry",
+       "hi": "कार्बन, ईंधन, धातुएँ एवं औद्योगिक रसायन",
+       "pool": [
+        [
+         "sci-chemistry",
+         "Carbon and its compounds"
+        ],
+        [
+         "sci-chemistry",
+         "Metals and non-metals"
+        ],
+        [
+         "sci-chemistry",
+         "Everyday chemistry"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-09",
+       "pages": "203–204",
+       "en": "The living world: microbes, plants and animals",
+       "hi": "जीव जगत: सूक्ष्मजीव, पादप एवं प्राणी",
+       "pool": [
+        [
+         "sci-biology",
+         "Classification"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-10",
+       "pages": "204–205",
+       "en": "Cell, tissues and biomolecules",
+       "hi": "कोशिका, ऊतक एवं जैव अणु",
+       "pool": [
+        [
+         "sci-biology",
+         "Cell"
+        ],
+        [
+         "sci-biology",
+         "Tissues"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-11",
+       "pages": "204–206",
+       "en": "Plant life: structure, physiology and reproduction",
+       "hi": "पादप जीवन: संरचना, कार्यिकी एवं प्रजनन",
+       "pool": [
+        [
+         "sci-biology",
+         "Plant anatomy"
+        ],
+        [
+         "sci-biology",
+         "Plant physiology"
+        ],
+        [
+         "sci-biology",
+         "Reproduction"
+        ],
+        [
+         "sci-biology",
+         "Tissues",
+         [
+          "Plant tissues"
+         ]
+        ],
+        [
+         "health-hormones",
+         "Plant Hormones"
+        ],
+        [
+         "health-hormones",
+         "Plant Movements"
+        ]
+       ]
+      },
+      {
+       "id": "gc-sci-12",
+       "pages": "207–208",
+       "en": "Genetics, evolution and ecology",
+       "hi": "आनुवंशिकी, जैव विकास एवं पारिस्थितिकी",
+       "pool": [
+        [
+         "sci-biology",
+         "Heredity"
+        ],
+        [
+         "sci-biology",
+         "Evolution"
+        ],
+        [
+         "env-ecology",
+         "Ecology & Ecosystem",
+         [
+          "Food chains",
+          "Energy flow",
+          "Ecological pyramids",
+          "Biogeochemical cycles"
+         ]
+        ]
+       ]
+      }
      ]
     },
     {
@@ -466,10 +712,69 @@
      "pages": "209–213",
      "en": "Technology in the current context",
      "hi": "सामयिक संदर्भ में प्रौद्योगिकी",
-     "practice": [
-      "sci-space",
-      "sci-tech",
-      "ca-science"
+     "chapters": [
+      {
+       "id": "gc-tech-01",
+       "pages": "209–211",
+       "en": "Digital technology, artificial intelligence, robotics and quantum technology",
+       "hi": "डिजिटल प्रौद्योगिकी, कृत्रिम बुद्धिमत्ता, रोबोटिक्स एवं क्वांटम प्रौद्योगिकी",
+       "pool": [
+        [
+         "sci-tech",
+         "Emerging Technologies",
+         [
+          "Artificial intelligence",
+          "Quantum technology",
+          "5G",
+          "Nanotechnology",
+          "Blockchain",
+          "Drones and robotics",
+          "Supercomputing",
+          "Semiconductors",
+          "Emerging manufacturing"
+         ]
+        ],
+        [
+         "ict-applications",
+         "Applications of ICT",
+         [
+          "Aadhaar",
+          "DigiLocker"
+         ]
+        ],
+        [
+         "ict-applications",
+         "Emerging technologies"
+        ]
+       ]
+      },
+      {
+       "id": "gc-tech-02",
+       "pages": "211",
+       "en": "Biotechnology and health technology",
+       "hi": "जैव प्रौद्योगिकी एवं स्वास्थ्य प्रौद्योगिकी",
+       "pool": [
+        [
+         "sci-tech",
+         "Emerging Technologies",
+         [
+          "Biotechnology"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-tech-03",
+       "pages": "211–213",
+       "en": "Space, nuclear and defence technology",
+       "hi": "अंतरिक्ष, परमाणु एवं रक्षा प्रौद्योगिकी",
+       "pool": [
+        [
+         "sci-space",
+         "Space & Defence Technology"
+        ]
+       ]
+      }
      ]
     },
     {
@@ -478,10 +783,185 @@
      "pages": "214–233",
      "en": "Environment",
      "hi": "पर्यावरण",
-     "practice": [
-      "env-ecology",
-      "env-people",
-      "env-global"
+     "chapters": [
+      {
+       "id": "gc-env-01",
+       "pages": "214–215",
+       "en": "Environment and ecosystem: basic concepts",
+       "hi": "पर्यावरण एवं पारितंत्र: आधारभूत अवधारणाएँ",
+       "pool": [
+        [
+         "env-ecology",
+         "Ecology & Ecosystem",
+         [
+          "Ecosystem structure",
+          "Food chains",
+          "Energy flow",
+          "Ecological pyramids",
+          "Biomes",
+          "Biogeochemical cycles"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-env-02",
+       "pages": "216–217",
+       "en": "Biodiversity: hotspots, conservation and global goals",
+       "hi": "जैव विविधता: हॉटस्पॉट, संरक्षण एवं वैश्विक लक्ष्य",
+       "pool": [
+        [
+         "env-ecology",
+         "Ecology & Ecosystem",
+         [
+          "Biodiversity"
+         ]
+        ],
+        [
+         "env-global",
+         "Environmental Conventions & Initiatives",
+         [
+          "Biodiversity conventions"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-env-03",
+       "pages": "218–220",
+       "en": "Protected areas and wildlife conservation",
+       "hi": "संरक्षित क्षेत्र एवं वन्यजीव संरक्षण",
+       "pool": [
+        [
+         "geo-soil-forest",
+         "Soils, Forests & Protected Areas",
+         [
+          "Protected areas"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-env-04",
+       "pages": "221–222",
+       "en": "Wetlands, mangroves and forests",
+       "hi": "आर्द्रभूमि, मैंग्रोव एवं वन",
+       "pool": [
+        [
+         "env-global",
+         "Environmental Conventions & Initiatives",
+         [
+          "Wetlands"
+         ]
+        ],
+        [
+         "geo-soil-forest",
+         "Soils, Forests & Protected Areas",
+         [
+          "Forests",
+          "Forest cover"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-env-05",
+       "pages": "223–224",
+       "en": "Soil, natural resources and clean energy",
+       "hi": "मृदा, प्राकृतिक संसाधन एवं स्वच्छ ऊर्जा",
+       "pool": [
+        [
+         "geo-soil-forest",
+         "Soils, Forests & Protected Areas",
+         [
+          "Soils",
+          "Soil erosion"
+         ]
+        ],
+        [
+         "geo-resources",
+         "Minerals, Energy & Industries",
+         [
+          "Energy resources"
+         ]
+        ],
+        [
+         "sci-tech",
+         "Emerging Technologies",
+         [
+          "Renewable energy technologies"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-env-06",
+       "pages": "224–228",
+       "en": "Pollution: types, effects and control",
+       "hi": "प्रदूषण: प्रकार, प्रभाव एवं नियंत्रण",
+       "pool": [
+        [
+         "env-people",
+         "People & Environment: Degradation & Control",
+         [
+          "Water pollution",
+          "Air pollution",
+          "Noise pollution",
+          "Waste management",
+          "Sanitation"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-env-07",
+       "pages": "229",
+       "en": "Climate change, the greenhouse effect and the ozone layer",
+       "hi": "जलवायु परिवर्तन, हरितगृह प्रभाव एवं ओजोन परत",
+       "pool": [
+        [
+         "env-people",
+         "People & Environment: Degradation & Control",
+         [
+          "Climate change"
+         ]
+        ],
+        [
+         "env-global",
+         "Environmental Conventions & Initiatives",
+         [
+          "Ozone protection",
+          "Climate agreements"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-env-08",
+       "pages": "230–233",
+       "en": "Sustainable development, environmental laws and institutions",
+       "hi": "सतत विकास, पर्यावरणीय कानून एवं संस्थाएँ",
+       "pool": [
+        [
+         "env-global",
+         "Environmental Conventions & Initiatives",
+         [
+          "Stockholm and Rio",
+          "Important days",
+          "International bodies",
+          "India's initiatives",
+          "Chemical and waste conventions"
+         ]
+        ],
+        [
+         "env-people",
+         "People & Environment: Degradation & Control",
+         [
+          "Environmental laws"
+         ]
+        ]
+       ]
+      }
      ]
     },
     {
@@ -490,12 +970,123 @@
      "pages": "234–242",
      "en": "Human health and hygiene: vitamins, minerals, diseases, deficiency diseases, hormones, enzymes",
      "hi": "मानव स्वास्थ्य एवं स्वच्छता: विटामिन, खनिज, रोग, अल्पताजन्य रोग, हार्मोन, एंजाइम",
-     "practice": [
-      "health-vitamins",
-      "health-deficiency",
-      "health-diseases",
-      "health-hormones",
-      "health-enzymes"
+     "chapters": [
+      {
+       "id": "gc-health-01",
+       "pages": "234–236",
+       "en": "Tissues, skeleton, digestion and respiration",
+       "hi": "ऊतक, कंकाल, पाचन एवं श्वसन",
+       "pool": [
+        [
+         "health-enzymes",
+         "Human Body",
+         [
+          "Digestive system",
+          "Respiratory system"
+         ]
+        ],
+        [
+         "sci-biology",
+         "Tissues",
+         [
+          "Animal tissues"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-health-02",
+       "pages": "236–238",
+       "en": "Blood, circulation, excretion and the nervous system",
+       "hi": "रक्त, परिसंचरण, उत्सर्जन एवं तंत्रिका तंत्र",
+       "pool": [
+        [
+         "health-enzymes",
+         "Human Body",
+         [
+          "Blood",
+          "Circulatory system",
+          "Excretory system"
+         ]
+        ],
+        [
+         "sci-biology",
+         "Nervous system"
+        ]
+       ]
+      },
+      {
+       "id": "gc-health-03",
+       "pages": "238",
+       "en": "Hormones and metabolic disorders",
+       "hi": "हार्मोन एवं उपापचयी रोग",
+       "pool": [
+        [
+         "health-hormones",
+         "Human Endocrine System"
+        ]
+       ]
+      },
+      {
+       "id": "gc-health-04",
+       "pages": "238–240",
+       "en": "Nutrition: vitamins, minerals and deficiency diseases",
+       "hi": "पोषण: विटामिन, खनिज एवं अल्पताजन्य रोग",
+       "pool": [
+        [
+         "health-vitamins",
+         "Human Health"
+        ],
+        [
+         "health-deficiency",
+         "Human Health"
+        ]
+       ]
+      },
+      {
+       "id": "gc-health-05",
+       "pages": "240–241",
+       "en": "Diseases, immunity and vaccines",
+       "hi": "रोग, प्रतिरक्षा एवं टीके",
+       "pool": [
+        [
+         "health-diseases",
+         "Human Health",
+         [
+          "Diseases",
+          "Vaccines"
+         ]
+        ]
+       ]
+      },
+      {
+       "id": "gc-health-06",
+       "pages": "241–242",
+       "en": "Public health: pollution-borne diseases, cancer, medical technology and medicinal plants",
+       "hi": "जन स्वास्थ्य: प्रदूषण-जनित रोग, कैंसर, चिकित्सा प्रौद्योगिकी एवं औषधीय पौधे",
+       "pool": [
+        [
+         "health-diseases",
+         "Human Health",
+         [
+          "Hygiene and sanitation",
+          "Health programmes",
+          "Occupational diseases",
+          "Medical technology",
+          "Cancer",
+          "Medicinal plants"
+         ]
+        ],
+        [
+         "env-people",
+         "People & Environment: Degradation & Control",
+         [
+          "Water pollution",
+          "Sanitation"
+         ]
+        ]
+       ]
+      }
      ]
     },
     {

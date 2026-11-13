@@ -1,7 +1,8 @@
 # Question targets (owner's decision, 29 Oct 2026)
 
 > **Status, 13 November 2026: complete.** All 73 syllabus sections have questions, and a 74th section, `misc-gk` (40 questions,
-> outside both syllabi, written for the book companion), was added: 2,299 in total (1,036 TGT, 792 PGT, 471 Higher).
+> outside both syllabi, written for the book companion), was added. Another 56 questions were added to nine sections for
+> the science, technology, environment and health chapters of the book companion: 2,355 in total (1,068 TGT, 816 PGT, 471 Higher).
 > All 48 sections that were planned at 6 questions now have 20 each (level mix: both tags 8 TGT / 7 PGT / 5 Higher;
 > TGT-only 11 TGT / 9 PGT; Higher-only 20 Higher; answers 5/5/5/5 over A–D). The table below shows the earlier plan.
 > The owner's new rules are in force: every question is one short single-line question, and the level of a question

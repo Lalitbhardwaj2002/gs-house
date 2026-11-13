@@ -8,3 +8,9 @@
 - 011: note D said the USA "joined later as a member"; it joined in 2021 and announced withdrawal in January 2026 — note corrected, AIR News source added.
 - 020: fact "carbon trading began under the CDM" was inaccurate; now "Kyoto Protocol created market mechanisms such as the CDM".
 - Replaced: 006 (new content, same id and level).
+
+## Check of 13 November 2026 (book companion, stage 2)
+Checked 6 new questions (021–026) in English and Hindi, and compared them with the rest of the file for repeats.
+- 021, 022, 023, 024, 025, 026: ok. Sundarban Wetland (about 4,230 sq km, 2019) is still India's largest Ramsar site in late 2026; Montreux Record sites of India are Keoladeo and Loktak; Sur Sarovar became a Ramsar site in 2020.
+- Replaced: none.
+- Facts I could not confirm online: none.

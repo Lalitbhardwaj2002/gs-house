@@ -25,3 +25,11 @@ Checked 28 questions (003 004 007 008 009 010 013 014 016 017 018 024 026 027 03
 
 - Corrected: none.
 - Replaced: none.
+
+## Check of 13 November 2026 (book companion, stage 2)
+Checked 15 new questions (057–071) in English and Hindi, and compared them with the rest of the file for repeats.
+- 057, 058, 059, 060, 061, 062, 063, 064, 065, 067, 068, 069, 071: ok.
+- 066: explanation said solar cells and automatic doors use the photoelectric effect; solar cells work on the photovoltaic effect, so it now speaks of photoelectric cells in automatic doors and burglar alarms (EN + HI).
+- 070: Hindi note D read badly ("लाल दानव तारे की पहले की ..."); now "लाल दानव तारे के जीवन की पहले की, फूली हुई अवस्था है।".
+- Replaced: none.
+- Facts I could not confirm online: none; all are standard textbook facts.
