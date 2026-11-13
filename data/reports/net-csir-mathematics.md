@@ -94,3 +94,65 @@ Independent check of the eighteen notes `data/net/csir-mathematics/ma-u1-01.txt`
 - All four links open and show what the text says: MIT OCW 18.100A (Real Analysis, Fall 2020), 18.06 (Linear Algebra, Spring 2010, Strang), 18.02SC (Multivariable Calculus, Fall 2010), and the CSIR-HRDG home page. The NPTEL link in the JSON also works. The CSIR-HRDG home page shows only a language choice when fetched, so the NET notices could not be seen on the fetched page.
 - Book chapters were checked against the known tables of contents: Rudin 1 to 11, Bartle and Sherbert (4th ed.) 1 to 11, Royden and Fitzpatrick (4th ed.) 2 to 6, Hoffman and Kunze 1 to 10, Axler, Friedberg, Insel and Spence, Strang (Linear Algebra and Its Applications), Apostol (Mathematical Analysis, 2nd ed., chapters 12 and 13), Simmons, de Barra. All match. Only the Hoffman and Kunze citation in note 17 was widened.
 - Not certain: chapter numbers depend on the edition. They match the editions above, but older editions of Axler or Bartle and Sherbert number some chapters differently. The chapter descriptions given for S. K. Mapa, Malik and Arora, and Kumaresan are subject names rather than chapter numbers, and they are consistent with those books.
+
+## Unit 2, check of 14 November 2026
+
+Independent check of the thirteen notes `data/net/csir-mathematics/ma-u2-01.txt` to `ma-u2-13.txt`. Every statement, table entry and flash card was worked out. The counts were recomputed by a script: primitive roots modulo 5 to 16, derangements, relation counts for $n = 3$, ring homomorphisms $\mathbb{Z}_m \to \mathbb{Z}_n$ for $m, n < 30$, idempotents of $\mathbb{Z}_{30}$, irreducible polynomials over $F_2$, conjugacy classes of $D_n$, $S_n$ and $A_n$, element orders in $S_n$, homomorphisms $S_3 \to \mathbb{Z}_6$, and topologies on up to 4 points. All were right. No false theorem was found; the corrections are missing hypotheses, two imprecise statements, uncertain chapter numbers, and a few gaps.
+
+### 01 Complex numbers and elementary functions
+- Corrected: "the radius of the Taylor series is the distance to the nearest singularity" now says "at least the distance to the nearest point where $f$ is not analytic", with equality for isolated non-removable singularities. The old line fails for branches of $\log z$. The recap line was changed to match.
+- Corrected: the Apollonius circle now needs $k > 0$ and $a \ne b$; the circle from $\operatorname{Im}(1/z) = c$ has the origin removed.
+- Added: the name Cauchy-Hadamard, and the ratio formula for the radius.
+- Reference: Brown and Churchill now also cites chapter 5 (power series). Ponnusamy's chapter numbers could not be confirmed and were replaced by a description.
+
+### 02 Analytic functions and the Cauchy-Riemann equations
+- Corrected: "an analytic function cannot involve $\bar{z}$" was loose. It now defines $\partial/\partial \bar{z}$ and says that $f$ can be complex differentiable only where $\partial f/\partial \bar{z} = 0$. The harmonic conjugate is unique up to an added real constant.
+- Reference: Ponnusamy's chapter numbers replaced by a description. All table entries were checked and are right.
+
+### 03 Complex integration and its theorems
+- Corrected: Cauchy's estimate now asks for $f$ analytic on the closed disc. The open mapping theorem and the table row "$f(D)$ inside the real axis" now say "on a domain". The flash card on the maximum on a closed disc now asks for $f$ analytic near the disc and says the maximum is on the circle in every case.
+
+### 04 Taylor and Laurent series, singularities and residues
+- Corrected: the residue theorem, the argument principle and Rouché's theorem now state that the functions are analytic (or meromorphic) inside and on the simple closed curve. The Laurent coefficient formula now names the circle of integration. The Jordan's lemma case now needs $Q$ without real zeros. Hurwitz's theorem now says "on a domain".
+- Reference: Ponnusamy's chapter numbers replaced by a description. The table of singularities and the Rouché example were checked.
+
+### 05 Conformal mappings and Möbius transformations
+- Corrected: $T(\infty) = a/c$ holds only for $c \ne 0$. The fixed points include $\infty$ when $c = 0$. The critical point rule now states the order condition exactly. The elliptic normal form needs $e^{i\theta} \ne 1$.
+
+### 06 Permutations, combinations and counting principles
+- Corrected: "$2^{n-1}$ even subsets", "$D_n$ nearest to $n!/e$" and the recurrence for $D_n$ now carry their ranges of $n$.
+- Added: irreflexive ($2^{n^2 - n}$) and asymmetric ($3^{n(n-1)/2}$) relations.
+
+### 07 Number theory: divisibility and congruences
+- Corrected: Wilson's theorem (text and flash card) now says "an integer $p > 1$". The order of $a$ modulo $n$ is now defined for $\gcd(a,n) = 1$ only.
+- Added: the converse of Fermat fails, with the Carmichael number 561.
+- Reference: Gallian's "chapter on U(n)" now names the chapter on external direct products.
+
+### 08 Groups, subgroups and cyclic groups
+- Corrected: "the union of two subgroups is a subgroup only if" became "if and only if". The formula for $\lvert HK \rvert$ now needs finite $H$ and $K$. The converse of Lagrange holds for finite abelian groups and finite $p$-groups.
+
+### 09 Permutation groups, normal subgroups and homomorphisms
+- Corrected: the codomain of a homomorphism was written $G'$, the symbol used for the commutator subgroup in the same note; it is now $G_1$. "$\lvert \varphi(G) \rvert$ divides $\lvert G \rvert$" now says "for finite groups", and $o(\varphi(a)) \mid o(a)$ now needs $o(a)$ finite.
+- Added: the rule for when a class of $S_n$ splits in $A_n$ (distinct odd cycle lengths), checked by script for $n \le 7$.
+
+### 10 Class equation and the Sylow theorems
+- Corrected: the Sylow theorems now say "finite group" and "$p$ prime". The coset action argument now needs index $n > 1$. "Groups of order $pq$, $p^2 q$, $pqr$ are never simple" now says the primes are distinct. The class count of $D_n$ now says $n \ge 3$.
+
+### 11 Rings, ideals and factorisation domains
+- Corrected: "$p = 2$ splits as a sum of two squares" was imprecise; the line now says such primes are not prime in $\mathbb{Z}[i]$ because $p = (a + bi)(a - bi)$. "$R[x]$ is a PID if and only if $R$ is a field" now says "for an integral domain $R$". "$(f)$ maximal if and only if $f$ irreducible" now needs $f \ne 0$. The note now says that ring homomorphisms need not send 1 to 1, which the homomorphism counts assume.
+- Added: $\mathbb{Z}[\sqrt{-2}]$ and $\mathbb{Z}[\omega]$ are Euclidean; $\mathbb{Z}[\sqrt{-3}]$ is not a UFD.
+
+### 12 Polynomial rings, fields and Galois theory
+- Corrected: "solvable by radicals if and only if the Galois group is solvable" now says "over a field of characteristic 0". The bound $n!$ for a splitting field now names $n$ as the degree. Gauss's lemma now needs positive degree. "Extensions in characteristic 0 are separable" now says "algebraic extensions".
+- Added: the primitive element theorem.
+- Reference: Herstein now also cites section 7.1 (finite fields).
+
+### 13 Topology
+- Corrected: "a product of connected spaces is connected" now says "in the product topology", since it can fail in the box topology.
+- Added: the connected subsets of $\mathbb{R}$ are the intervals; Heine-Borel; $\mathbb{R}^n$ minus a point is connected for $n \ge 2$.
+- Reference: Joshi's chapter numbers could not be confirmed and were replaced by a description.
+
+### References
+- All six distinct links return 200: MIT OCW 18.04, 6.042J, 18.781, 18.703, 18.702 and 18.901.
+- Book chapters checked against the known tables of contents: Brown and Churchill (8th or 9th ed.), Conway (2nd ed.), Ahlfors (3rd ed.), Brualdi, Liu, Burton, Niven, Zuckerman and Montgomery, Gallian (8th or 9th ed.), Herstein (2nd ed.), Dummit and Foote, Munkres (2nd ed.), Simmons. Not certain: Ponnusamy and Joshi, now cited by description. In Brualdi the chapters on permutations and on the pigeon-hole principle are 2 and 3 in either order, depending on the edition; the citation covers both.
+- `tools/check_net.py` ends with `0 problems`.

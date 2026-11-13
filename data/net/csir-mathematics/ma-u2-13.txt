@@ -1,0 +1,93 @@
+@en
+# Topology
+
+> General topology keeps only the open sets. Questions usually take one of a few standard spaces (the lower limit topology, the cofinite topology, the discrete and indiscrete topologies) and ask which properties it has: separation, countability, compactness, connectedness.
+
+## Topological spaces and bases
+
+- A **topology** on $X$ is a family of subsets (the open sets) containing $\emptyset$ and $X$ and closed under arbitrary unions and finite intersections.
+- A **basis** $\mathcal{B}$: every point lies in a basis set, and if $x \in B_1 \cap B_2$ there is $B_3$ with $x \in B_3 \subseteq B_1 \cap B_2$. The open sets are the unions of basis sets. A **subbasis** generates a basis by finite intersections.
+- $\bar{A}$ (closure) is the smallest closed set containing $A$; the interior is the largest open set inside $A$. $x \in \bar{A}$ if and only if every open set containing $x$ meets $A$.
+- $A$ is **dense** if $\bar{A} = X$. A space with a countable dense subset is **separable**.
+- $f$ is **continuous** if the preimage of every open set is open. A **homeomorphism** is a continuous bijection with continuous inverse.
+- A topology $\tau_1$ is **finer** than $\tau_2$ if $\tau_2 \subseteq \tau_1$. The identity map from the finer to the coarser topology is continuous.
+
+| Topology on $\mathbb{R}$ (or on a set $X$) | Open sets |
+| Usual | Unions of open intervals |
+| Lower limit ($\mathbb{R}_\ell$, Sorgenfrey line) | Unions of intervals $[a, b)$; strictly finer than the usual topology |
+| Cofinite | $\emptyset$ and sets with finite complement |
+| Cocountable | $\emptyset$ and sets with countable complement |
+| Discrete | All subsets |
+| Indiscrete | Only $\emptyset$ and $X$ |
+
+- The number of topologies on a set with 1, 2, 3, 4 points is 1, 4, 29, 355.
+
+## Subspace and product topologies
+
+- **Subspace**: the open sets of $Y \subseteq X$ are $U \cap Y$ with $U$ open in $X$.
+- **Product**: a basis for $X \times Y$ is the family of products $U \times V$ of open sets. The projections are continuous and open, and $f : Z \to X \times Y$ is continuous if and only if both coordinate functions are.
+- For infinite products the **product topology** (basis sets restrict only finitely many coordinates) is coarser than the **box topology**.
+- Subspaces and products of Hausdorff spaces are Hausdorff. A subspace of a normal space need not be normal, and a product of normal spaces need not be normal ($\mathbb{R}_\ell \times \mathbb{R}_\ell$).
+
+## Separation and countability axioms
+
+| Axiom | Condition |
+| $T_0$ | For two distinct points, some open set contains exactly one of them |
+| $T_1$ | Each of two distinct points has an open set missing the other; equivalently points are closed |
+| $T_2$ (Hausdorff) | Distinct points have disjoint open neighbourhoods |
+| Regular ($T_3$) | $T_1$, and a point and a closed set not containing it can be separated by open sets |
+| Normal ($T_4$) | $T_1$, and two disjoint closed sets can be separated by open sets |
+
+- Metric $\Rightarrow$ normal $\Rightarrow$ regular $\Rightarrow$ Hausdorff $\Rightarrow$ $T_1$ $\Rightarrow$ $T_0$; no arrow reverses.
+- In a Hausdorff space limits of sequences are unique and compact sets are closed.
+- An infinite set with the cofinite topology is $T_1$ but not Hausdorff: any two non-empty open sets meet.
+- **First countable**: each point has a countable neighbourhood basis. **Second countable**: the topology has a countable basis. Second countable implies first countable, separable and Lindelöf.
+- **Urysohn's lemma**: in a normal space, disjoint closed sets can be separated by a continuous function into $[0,1]$. **Urysohn's metrisation theorem**: a regular second countable space is metrisable. **Tietze**: a continuous real function on a closed subset of a normal space extends to the whole space.
+
+## Compactness and connectedness
+
+! remember | Key results
+- A closed subset of a compact space is compact. A compact subset of a Hausdorff space is closed.
+- A continuous image of a compact space is compact; of a connected space, connected.
+- A continuous bijection from a compact space to a Hausdorff space is a homeomorphism.
+- **Tychonoff**: any product of compact spaces is compact. A product of connected spaces is connected (in the product topology; not always in the box topology).
+- A compact Hausdorff space is normal.
+- The union of connected sets with a common point is connected; the closure of a connected set is connected.
+- Path connected implies connected. The **topologist's sine curve** is connected but not path connected. An open connected subset of $\mathbb{R}^n$ is path connected.
+- The connected subsets of $\mathbb{R}$ are exactly the intervals. A subset of $\mathbb{R}^n$ is compact if and only if it is closed and bounded (**Heine-Borel**). $\mathbb{R}^n$ minus a point is connected for $n \ge 2$ but not for $n = 1$.
+- The **one-point compactification** of a locally compact Hausdorff space is compact Hausdorff; that of $\mathbb{R}^n$ is the sphere $S^n$.
+
+## Standard spaces at a glance
+
+| Space | Hausdorff | Compact | Connected | Second countable |
+| $\mathbb{R}$, usual | Yes | No | Yes | Yes |
+| $[0,1]$, usual | Yes | Yes | Yes | Yes |
+| $\mathbb{R}_\ell$ (lower limit) | Yes | No | No (totally disconnected) | No (but first countable, separable, Lindelöf) |
+| Infinite set, cofinite | No | Yes | Yes | Only if the set is countable |
+| Uncountable set, cocountable | No | No | Yes | No |
+| Infinite discrete space | Yes | No | No | Only if countable |
+| Indiscrete space, more than one point | No | Yes | Yes | Yes |
+| $\mathbb{Q}$, usual | Yes | No | No (totally disconnected) | Yes |
+
+- In the cocountable topology on an uncountable set, a sequence converges only if it is eventually constant; the space is not first countable.
+- $[0,1)$ is homeomorphic to no compact space; $(0,1)$ and $\mathbb{R}$ are homeomorphic; $[0,1]$ and $(0,1)$ are not; the circle and $[0,1]$ are not (remove a point).
+
+? Is the lower limit topology finer or coarser than the usual one? :: Strictly finer.
+? Is an infinite cofinite space Hausdorff? :: No; it is $T_1$, compact and connected.
+? What does Tychonoff's theorem say? :: Every product of compact spaces is compact.
+? Is $\mathbb{R}_\ell$ connected? :: No; $[a,b)$ is both open and closed, and the space is totally disconnected.
+
+! exam | PYQ focus
+- Properties of $\mathbb{R}$ with the lower limit, cofinite or cocountable topology.
+- True or false statements on compactness, connectedness and the Hausdorff property under continuous maps, subspaces and products.
+- Whether two given spaces are homeomorphic, usually decided by compactness or by removing a point.
+
+! recap | One-minute revision
+- Compact subsets of Hausdorff spaces are closed; closed subsets of compact spaces are compact.
+- Cofinite on an infinite set: $T_1$, not Hausdorff, compact, connected.
+- $\mathbb{R}_\ell$: finer than usual, Hausdorff, first countable and separable, not second countable, totally disconnected.
+
+& James R. Munkres, Topology (chapters 2 to 4)
+& G. F. Simmons, Introduction to Topology and Modern Analysis (chapters 3 to 6)
+& K. D. Joshi, Introduction to General Topology (the chapters on topological spaces, bases, compactness, connectedness and separation axioms)
+& MIT OpenCourseWare 18.901: Introduction to Topology | https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/

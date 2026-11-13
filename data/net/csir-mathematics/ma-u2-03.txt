@@ -1,0 +1,65 @@
+@en
+# Complex integration and its theorems
+
+> Cauchy's theorem and Cauchy's integral formula carry almost every other result of the subject: Liouville's theorem, the maximum modulus principle, Schwarz's lemma and the open mapping theorem. Many questions ask what an entire or bounded analytic function must look like.
+
+## Contour integrals
+
+- For a smooth curve $\gamma : [a,b] \to \mathbb{C}$: $\int_\gamma f(z)\,dz = \int_a^b f(\gamma(t))\,\gamma'(t)\,dt$.
+- **ML inequality**: $\left\lvert \int_\gamma f(z)\,dz \right\rvert \le M L$, where $M$ bounds $\lvert f \rvert$ on $\gamma$ and $L$ is the length of $\gamma$.
+- $\int_{\lvert z - a \rvert = r} (z - a)^n\,dz = 2\pi i$ for $n = -1$ and 0 for every other integer $n$.
+- If $f$ has an antiderivative $F$ on a domain, the integral depends only on the end points and is 0 over closed curves.
+
+! remember | Cauchy's theorem and integral formula
+- **Cauchy-Goursat**: if $f$ is analytic on a simply connected domain $D$, then $\int_\gamma f\,dz = 0$ for every closed curve $\gamma$ in $D$.
+- **Integral formula**: if $f$ is analytic inside and on a simple closed curve $C$ (taken anticlockwise) and $a$ is inside, then $f(a) = \frac{1}{2\pi i} \int_C \frac{f(z)}{z - a}\,dz$.
+- **Derivatives**: $f^{(n)}(a) = \frac{n!}{2\pi i} \int_C \frac{f(z)}{(z - a)^{n+1}}\,dz$.
+- **Morera**: if $f$ is continuous on a domain and $\int_\gamma f = 0$ for every closed curve (or every triangle), then $f$ is analytic.
+- **Cauchy's estimate**: if $f$ is analytic on the closed disc $\lvert z - a \rvert \le r$ and $\lvert f \rvert \le M$ on $\lvert z - a \rvert = r$, then $\lvert f^{(n)}(a) \rvert \le \frac{n!\,M}{r^n}$.
+- **Mean value property**: $f(a)$ is the average of $f$ over any circle centred at $a$.
+
+## Entire functions
+
+- **Liouville**: a bounded entire function is constant. The same holds if only $\operatorname{Re} f$ is bounded above or below, or if $f$ omits a disc.
+- **Growth**: if $f$ is entire and $\lvert f(z) \rvert \le M \lvert z \rvert^k$ for large $\lvert z \rvert$, then $f$ is a polynomial of degree at most $k$.
+- **Fundamental theorem of algebra**: a polynomial of degree $n \ge 1$ has exactly $n$ zeros in $\mathbb{C}$, counted with multiplicity.
+- **Picard's little theorem**: a non-constant entire function takes every complex value with at most one exception. Example: $e^z$ omits only 0.
+- A non-constant polynomial has range $\mathbb{C}$. An entire function that is not a polynomial has an essential singularity at $\infty$.
+- If $f$ is entire and $f(z) \to \infty$ as $z \to \infty$, then $f$ is a polynomial.
+- An entire function with $f(z + 1) = f(z)$ and $f(z + i) = f(z)$ (doubly periodic) is bounded, hence constant.
+
+## Maximum modulus and Schwarz's lemma
+
+- **Maximum modulus principle**: a non-constant analytic function on a domain has no local maximum of $\lvert f \rvert$ in it. On a bounded domain with continuous extension to the closure, the maximum of $\lvert f \rvert$ is attained on the boundary.
+- **Minimum modulus**: if $f$ has no zero in the domain, $\lvert f \rvert$ has no interior minimum either.
+- **Open mapping theorem**: a non-constant analytic function on a domain maps open sets to open sets. So its image cannot lie on a curve: if $f(D)$ is contained in a line or a circle, $f$ is constant.
+- **Schwarz's lemma**: if $f$ is analytic on the unit disc, $f(0) = 0$ and $\lvert f(z) \rvert \le 1$, then $\lvert f(z) \rvert \le \lvert z \rvert$ and $\lvert f'(0) \rvert \le 1$. Equality at one non-zero point, or $\lvert f'(0) \rvert = 1$, forces $f(z) = e^{i\theta} z$.
+- **Schwarz-Pick**: for analytic $f$ from the unit disc into itself, $\lvert f'(z) \rvert \le \frac{1 - \lvert f(z) \rvert^2}{1 - \lvert z \rvert^2}$.
+
+| Given | Conclusion |
+| $f$ entire and bounded | $f$ is constant |
+| $f$ entire, $\lvert f(z) \rvert \le 3 \lvert z \rvert^{5/2}$ for $\lvert z \rvert \ge 1$ | Polynomial of degree at most 2 |
+| $f$ entire, $\operatorname{Re} f > 0$ | Constant |
+| $f$ entire, maps $\mathbb{C}$ into $\mathbb{C} \setminus \{1, 2\}$ | Constant (Picard) |
+| $f$ analytic on the disc, $f(0) = 0$, $\lvert f \rvert \le 1$ | $\lvert f(1/2) \rvert \le 1/2$ |
+| $f$ analytic on a domain $D$, $f(D)$ inside the real axis | Constant |
+
+? Value of $\int_{\lvert z \rvert = 1} \frac{dz}{z}$? :: $2\pi i$.
+? What does Liouville's theorem say? :: A bounded entire function is constant.
+? An entire $f$ with $\lvert f(z) \rvert \le \lvert z \rvert^2$ for large $z$ is what? :: A polynomial of degree at most 2.
+? Where is the maximum of $\lvert f \rvert$ on a closed disc, for $f$ analytic on a neighbourhood of it? :: On the boundary circle; it is attained inside as well only when $f$ is constant.
+
+! exam | PYQ focus
+- Evaluating integrals with the integral formula and its derivative form.
+- Classifying entire functions from a growth or range condition.
+- Bounds from the maximum modulus principle and Schwarz's lemma, such as the largest possible $\lvert f'(0) \rvert$.
+
+! recap | One-minute revision
+- Cauchy: integral over closed curves is 0; the integral formula recovers $f$ and its derivatives.
+- Bounded entire is constant; polynomial growth forces a polynomial; Picard: at most one omitted value.
+- Maximum of $\lvert f \rvert$ on the boundary; Schwarz: $\lvert f(z) \rvert \le \lvert z \rvert$.
+
+& J. W. Brown and R. V. Churchill, Complex Variables and Applications (chapter 4)
+& J. B. Conway, Functions of One Complex Variable (chapters 4 and 6)
+& Lars V. Ahlfors, Complex Analysis (chapter 4)
+& MIT OpenCourseWare 18.04: Complex Variables with Applications | https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/

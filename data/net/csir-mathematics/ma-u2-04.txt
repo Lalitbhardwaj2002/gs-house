@@ -1,0 +1,76 @@
+@en
+# Taylor and Laurent series, singularities and residues
+
+> Near a point where it is analytic a function is a Taylor series; near an isolated singularity it is a Laurent series. The negative powers decide the type of singularity, and the coefficient of $\frac{1}{z - a}$, the residue, evaluates integrals.
+
+## Taylor and Laurent series
+
+- **Taylor**: if $f$ is analytic in $\lvert z - a \rvert < R$, then $f(z) = \sum_{n \ge 0} \frac{f^{(n)}(a)}{n!} (z - a)^n$ there. So the radius of convergence is at least the distance to the nearest singularity.
+- **Laurent**: if $f$ is analytic in the annulus $r < \lvert z - a \rvert < R$, then $f(z) = \sum_{n = -\infty}^{\infty} a_n (z - a)^n$ with $a_n = \frac{1}{2\pi i} \int_C \frac{f(z)}{(z - a)^{n+1}}\,dz$, where $C$ is any circle $\lvert z - a \rvert = \rho$ with $r < \rho < R$. The expansion is unique in a given annulus, but different annuli give different expansions.
+- The part with negative powers is the **principal part**.
+- A zero of **order** $m$ at $a$: $f(z) = (z - a)^m g(z)$ with $g(a) \ne 0$; equivalently $f(a) = \dots = f^{(m-1)}(a) = 0 \ne f^{(m)}(a)$.
+
+## Isolated singularities
+
+| Type at $a$ | Principal part | Behaviour as $z \to a$ |
+| Removable | No negative powers | $f$ has a finite limit; $f$ is bounded near $a$ (**Riemann's theorem**) |
+| Pole of order $m$ | Finitely many terms, down to $(z - a)^{-m}$ | $\lvert f(z) \rvert \to \infty$; $(z - a)^m f(z)$ has a non-zero limit |
+| Essential | Infinitely many negative powers | No limit, finite or infinite |
+
+- **Casorati-Weierstrass**: near an essential singularity $f$ comes arbitrarily close to every complex number.
+- **Picard's great theorem**: near an essential singularity $f$ takes every complex value, with at most one exception, infinitely often.
+- $f$ has a pole of order $m$ at $a$ if and only if $\frac{1}{f}$ has a zero of order $m$ there.
+- If $f$ has a zero of order $m$ and $g$ a zero of order $n$ at $a$: $\frac{f}{g}$ has a removable singularity if $m \ge n$ and a pole of order $n - m$ if $m < n$.
+- **Non-isolated singularities**: a limit point of poles, such as $z = 0$ for $\frac{1}{\sin(1/z)}$; and branch points.
+- **Behaviour at infinity**: study $f(1/w)$ at $w = 0$. A polynomial of degree $n$ has a pole of order $n$ at $\infty$; $e^z$, $\sin z$ have an essential singularity there.
+- A function **meromorphic** on the extended plane (only poles, including at $\infty$) is a **rational** function.
+
+| Function | Singularity |
+| $\frac{\sin z}{z}$, $\frac{e^z - 1}{z}$, $\frac{1 - \cos z}{z^2}$ | Removable at 0 |
+| $\frac{1}{z^3}$, $\frac{e^z}{z^3}$ | Pole of order 3 at 0 |
+| $\frac{1}{\sin z}$, $\cot z$ | Simple poles at $n\pi$ |
+| $\frac{1}{e^z - 1}$ | Simple poles at $2n\pi i$ |
+| $e^{1/z}$, $\sin\frac{1}{z}$, $z\cos\frac{1}{z}$ | Essential at 0 |
+| $\frac{1}{\sin(1/z)}$ | Poles at $\frac{1}{n\pi}$; non-isolated singularity at 0 |
+
+! remember | Residues
+- $\operatorname{Res}_{z=a} f$ is the coefficient $a_{-1}$ of the Laurent series about $a$.
+- Simple pole: $\operatorname{Res} = \lim_{z \to a} (z - a) f(z)$. For $f = \frac{p}{q}$ with $q(a) = 0 \ne q'(a)$: $\operatorname{Res} = \frac{p(a)}{q'(a)}$.
+- Pole of order $m$: $\operatorname{Res} = \frac{1}{(m-1)!} \lim_{z \to a} \frac{d^{m-1}}{dz^{m-1}} \left[ (z - a)^m f(z) \right]$.
+- Essential singularity: read $a_{-1}$ from the series. $\operatorname{Res}_{z=0} e^{1/z} = 1$.
+- Residue at infinity: $\operatorname{Res}_{z=\infty} f = -\operatorname{Res}_{w=0} \frac{1}{w^2} f\left(\frac{1}{w}\right)$. The sum of all residues of a rational function, including the one at $\infty$, is 0.
+- **Residue theorem**: if $f$ is analytic inside and on a simple closed curve $C$ (taken anticlockwise) except at finitely many singularities inside $C$, then $\int_C f(z)\,dz = 2\pi i \sum \operatorname{Res}$ over those singularities.
+
+## Real integrals by residues
+
+- $\int_0^{2\pi} R(\cos\theta, \sin\theta)\,d\theta$: put $z = e^{i\theta}$ and integrate over the unit circle.
+- $\int_{-\infty}^{\infty} \frac{P(x)}{Q(x)}\,dx$ with $\deg Q \ge \deg P + 2$ and no real zeros of $Q$: $2\pi i$ times the sum of residues in the upper half-plane.
+- $\int_{-\infty}^{\infty} \frac{P(x)}{Q(x)} e^{iax}\,dx$, $a > 0$, $\deg Q \ge \deg P + 1$, no real zeros of $Q$: the same, by **Jordan's lemma**. Take real and imaginary parts for integrals with $\cos ax$ or $\sin ax$.
+- Values to remember: $\int_{-\infty}^{\infty} \frac{dx}{1 + x^2} = \pi$; $\int_0^{2\pi} \frac{d\theta}{a + b\cos\theta} = \frac{2\pi}{\sqrt{a^2 - b^2}}$ for $a > \lvert b \rvert$.
+
+## Counting zeros
+
+- **Argument principle**: for $f$ meromorphic inside and on a simple closed curve $C$ with no zeros or poles on $C$, $\frac{1}{2\pi i} \int_C \frac{f'(z)}{f(z)}\,dz = N - P$ (zeros minus poles inside, with multiplicity).
+- **Rouché's theorem**: if $f$ and $g$ are analytic inside and on a simple closed curve $C$ and $\lvert g(z) \rvert < \lvert f(z) \rvert$ on $C$, then $f$ and $f + g$ have the same number of zeros inside $C$.
+- Example: $z^5 + 3z + 1$ has one zero in $\lvert z \rvert < 1$ (compare with $3z$) and five in $\lvert z \rvert < 2$ (compare with $z^5$).
+- **Hurwitz**: if analytic $f_n \to f$ on a domain, uniformly on compact sets and each $f_n$ has no zero, then $f$ has no zero or is identically 0.
+
+? What kind of singularity has $\frac{\sin z}{z}$ at 0? :: Removable.
+? Residue of $\frac{p}{q}$ at a simple zero $a$ of $q$? :: $\frac{p(a)}{q'(a)}$.
+? What does $f$ do near an essential singularity? :: It takes every value, with at most one exception, infinitely often (Picard).
+? How many zeros has $z^5 + 3z + 1$ in the unit disc? :: One, by Rouché's theorem.
+
+! exam | PYQ focus
+- Type of each singularity of a given function, including the point at infinity.
+- Residues and contour integrals over a given circle; real integrals evaluated by residues.
+- Number of zeros in a disc or annulus by Rouché's theorem.
+
+! recap | One-minute revision
+- Removable: bounded. Pole: tends to infinity. Essential: no limit, dense image.
+- Residue at a simple pole: $\lim (z - a) f(z)$; integral equals $2\pi i$ times the sum of residues inside.
+- Argument principle counts zeros minus poles; Rouché compares on the boundary.
+
+& J. W. Brown and R. V. Churchill, Complex Variables and Applications (chapters 5 to 7)
+& J. B. Conway, Functions of One Complex Variable (chapter 5)
+& S. Ponnusamy, Foundations of Complex Analysis (the chapters on Laurent series, singularities and the calculus of residues)
+& MIT OpenCourseWare 18.04: Complex Variables with Applications | https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/

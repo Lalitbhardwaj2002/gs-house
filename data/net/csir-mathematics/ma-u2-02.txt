@@ -1,0 +1,66 @@
+@en
+# Analytic functions and the Cauchy-Riemann equations
+
+> Complex differentiability is far stronger than real differentiability: one complex derivative on an open set gives derivatives of all orders, a power series, and rigid behaviour of zeros. The Cauchy-Riemann equations are the first test.
+
+## Differentiability and analyticity
+
+- $f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$, where $h$ tends to 0 through complex values from every direction.
+- $f$ is **analytic** (holomorphic) at $z_0$ if it is differentiable at every point of some neighbourhood of $z_0$. A function analytic on all of $\mathbb{C}$ is **entire**.
+- Differentiable at a point does not mean analytic there: $f(z) = \lvert z \rvert^2$ is differentiable only at 0 and analytic nowhere.
+
+! remember | Cauchy-Riemann equations
+- For $f = u + iv$: if $f$ is differentiable at $z_0$, then $u_x = v_y$ and $u_y = -v_x$ there, and $f' = u_x + iv_x = v_y - iu_y$.
+- **Sufficient condition**: if $u, v$ have continuous first partial derivatives near $z_0$ and satisfy the equations at $z_0$, then $f$ is differentiable at $z_0$.
+- The equations alone are not sufficient: $f(z) = \sqrt{\lvert xy \rvert}$ satisfies them at 0 but is not differentiable there.
+- In polar form: $u_r = \frac{1}{r} v_\theta$ and $v_r = -\frac{1}{r} u_\theta$.
+- In terms of $z$ and $\bar{z}$: the equations say $\frac{\partial f}{\partial \bar{z}} = 0$, where $\frac{\partial}{\partial \bar{z}} = \frac{1}{2}\left(\frac{\partial}{\partial x} + i\frac{\partial}{\partial y}\right)$. A quick test: write $f$ in $z$ and $\bar{z}$; it can be complex differentiable only where $\frac{\partial f}{\partial \bar{z}}$ vanishes.
+
+| Function | Differentiable at | Analytic at |
+| $\bar{z}$, $\operatorname{Re} z$, $\operatorname{Im} z$ | Nowhere | Nowhere |
+| $\lvert z \rvert^2$ | Only $z = 0$ | Nowhere |
+| $z \operatorname{Re} z$, $z \lvert z \rvert$ | Only $z = 0$ | Nowhere |
+| $x^2 + iy^2$ | The line $y = x$ | Nowhere |
+| Polynomials, $e^z$, $\sin z$, $\cos z$ | Everywhere | Everywhere (entire) |
+| $\frac{1}{z}$ | $z \ne 0$ | $z \ne 0$ |
+
+## Consequences of analyticity on a domain
+
+A **domain** is an open connected set. Let $f$ be analytic on a domain $D$.
+
+- If $f' = 0$ on $D$, or if any one of $\operatorname{Re} f$, $\operatorname{Im} f$, $\lvert f \rvert$, $\arg f$ is constant, then $f$ is constant.
+- If $f$ and $\bar{f}$ are both analytic on $D$, then $f$ is constant. A real-valued analytic function on a domain is constant.
+- $f$ has derivatives of all orders, and each derivative is analytic.
+- **Zeros are isolated**: unless $f$ is identically 0, each zero has a finite order and a neighbourhood free of other zeros.
+- **Identity theorem**: if two analytic functions on $D$ agree on a set that has a limit point **in** $D$, they agree on all of $D$.
+- The limit point must lie inside the domain: $\sin\frac{1}{z}$ vanishes at $\frac{1}{n\pi} \to 0$ but is not zero, because 0 is not in its domain.
+
+## Harmonic functions
+
+- $u(x,y)$ is **harmonic** if $u_{xx} + u_{yy} = 0$. The real and imaginary parts of an analytic function are harmonic.
+- $v$ is a **harmonic conjugate** of $u$ if $u + iv$ is analytic. On a simply connected domain every harmonic function has a conjugate, unique up to an added real constant.
+- If $v$ is a conjugate of $u$, then $-u$ is a conjugate of $v$. The product $uv$ is harmonic; $u^2$ is harmonic only if $u$ is constant.
+- $\log \lvert z \rvert$ is harmonic on $\mathbb{C} \setminus \{0\}$ but has no harmonic conjugate there.
+- The level curves $u = c_1$ and $v = c_2$ cut at right angles where $f' \ne 0$.
+- **Milne-Thomson method**: given $u$, write $f'(z) = u_x(z, 0) - i u_y(z, 0)$ and integrate.
+- A harmonic function has the **mean value property** and obeys the **maximum principle**: a non-constant harmonic function has no maximum or minimum inside a domain.
+
+? Where is $\lvert z \rvert^2$ analytic? :: Nowhere; it is differentiable only at the origin.
+? Do the Cauchy-Riemann equations at a point guarantee differentiability there? :: No; continuity of the partial derivatives is also needed.
+? If $f$ is analytic on a domain and $\lvert f \rvert$ is constant, what is $f$? :: A constant.
+? What does the identity theorem need? :: Agreement on a set with a limit point inside the domain.
+
+! exam | PYQ focus
+- Points where a given function is differentiable, and where it is analytic.
+- Finding a harmonic conjugate or the analytic function with a given real part.
+- Uniqueness questions: analytic functions with prescribed values at $1/n$, using the identity theorem.
+
+! recap | One-minute revision
+- Analytic means differentiable on a neighbourhood; test with Cauchy-Riemann plus continuous partials.
+- Constant real part, imaginary part or modulus forces a constant function.
+- Zeros of a non-zero analytic function are isolated; the identity theorem follows.
+
+& J. W. Brown and R. V. Churchill, Complex Variables and Applications (chapter 2)
+& J. B. Conway, Functions of One Complex Variable (chapters 3 and 4)
+& S. Ponnusamy, Foundations of Complex Analysis (the chapters on analytic functions and harmonic functions)
+& MIT OpenCourseWare 18.04: Complex Variables with Applications | https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/

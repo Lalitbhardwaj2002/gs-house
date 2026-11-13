@@ -1,0 +1,81 @@
+@en
+# Number theory: divisibility and congruences
+
+> The arithmetic of the integers modulo $n$ is the model for much of algebra. The tools are few: unique factorisation, the Euclidean algorithm, the theorems of Fermat, Euler and Wilson, and the Chinese remainder theorem.
+
+## Divisibility
+
+- **Division algorithm**: for integers $a$ and $b > 0$ there are unique $q, r$ with $a = bq + r$, $0 \le r < b$.
+- $\gcd(a,b)$ is the least positive value of $ax + by$ (**Bézout**). $a, b$ are coprime if and only if $ax + by = 1$ has an integer solution.
+- $\gcd(a,b) \cdot \operatorname{lcm}(a,b) = \lvert ab \rvert$. If $a \mid bc$ and $\gcd(a,b) = 1$, then $a \mid c$.
+- **Fundamental theorem of arithmetic**: every integer $n > 1$ is a product of primes, uniquely up to order.
+- There are infinitely many primes (Euclid), and infinitely many of each form $4k + 1$, $4k + 3$.
+- $ax + by = c$ has integer solutions if and only if $\gcd(a,b) \mid c$.
+
+For $n = p_1^{a_1} \cdots p_k^{a_k}$:
+
+| Function | Formula |
+| Number of positive divisors $\tau(n)$ | $(a_1 + 1) \cdots (a_k + 1)$ |
+| Sum of positive divisors $\sigma(n)$ | $\prod \frac{p_i^{a_i + 1} - 1}{p_i - 1}$ |
+| Euler's function $\varphi(n)$ | $n \prod \left( 1 - \frac{1}{p_i} \right)$ |
+| Product of the divisors | $n^{\tau(n)/2}$ |
+
+- $\tau$, $\sigma$ and $\varphi$ are **multiplicative**: $f(mn) = f(m) f(n)$ for coprime $m, n$.
+- $\tau(n)$ is odd exactly when $n$ is a perfect square. $\varphi(n)$ is even for $n \ge 3$. $\sum_{d \mid n} \varphi(d) = n$.
+- The highest power of a prime $p$ dividing $n!$ is $\lfloor n/p \rfloor + \lfloor n/p^2 \rfloor + \dots$.
+
+## Congruences
+
+- $a \equiv b \pmod{n}$ means $n \mid a - b$. Congruences can be added and multiplied. Cancellation: $ac \equiv bc \pmod{n}$ gives $a \equiv b \pmod{n / \gcd(c,n)}$.
+- $ax \equiv b \pmod{n}$ is solvable if and only if $d = \gcd(a,n)$ divides $b$; then it has exactly $d$ solutions modulo $n$.
+- $a$ has an inverse modulo $n$ if and only if $\gcd(a,n) = 1$. The invertible classes form the group $U(n)$ of order $\varphi(n)$.
+
+! remember | The classical theorems
+- **Fermat**: if $p$ is prime and $p \nmid a$, then $a^{p-1} \equiv 1 \pmod{p}$; for every $a$, $a^p \equiv a \pmod{p}$.
+- **Euler**: if $\gcd(a,n) = 1$, then $a^{\varphi(n)} \equiv 1 \pmod{n}$.
+- The converse of Fermat fails: $561 = 3 \cdot 11 \cdot 17$ (a **Carmichael number**) satisfies $a^{560} \equiv 1 \pmod{561}$ for every $a$ coprime to 561.
+- **Wilson**: an integer $p > 1$ is prime if and only if $(p-1)! \equiv -1 \pmod{p}$.
+- **Chinese remainder theorem**: if $n_1, \dots, n_k$ are pairwise coprime, the system $x \equiv a_i \pmod{n_i}$ has a unique solution modulo $n_1 \cdots n_k$. Equivalently $\mathbb{Z}_{mn} \cong \mathbb{Z}_m \times \mathbb{Z}_n$ when $\gcd(m,n) = 1$.
+- The number of solutions of $x^2 \equiv 1 \pmod{n}$ is $2^k$ for odd $n$ with $k$ distinct prime factors.
+- $x^2 \equiv -1 \pmod{p}$ has a solution for an odd prime $p$ if and only if $p \equiv 1 \pmod{4}$.
+
+## Order and primitive roots
+
+- For $\gcd(a,n) = 1$, the **order** of $a$ modulo $n$ is the least $k \ge 1$ with $a^k \equiv 1$; it divides $\varphi(n)$. The order of $a^m$ is $\frac{k}{\gcd(k,m)}$.
+- A **primitive root** modulo $n$ is an element of order $\varphi(n)$, a generator of $U(n)$.
+- Primitive roots exist exactly for $n = 1, 2, 4, p^k, 2p^k$ with $p$ an odd prime. So $U(n)$ is cyclic exactly for these $n$.
+- When they exist there are $\varphi(\varphi(n))$ of them. Modulo a prime $p$ there are $\varphi(p - 1)$.
+- $U(8)$ and $U(12)$ are isomorphic to the Klein four-group, so 8 and 12 have no primitive root.
+
+| $n$ | $\varphi(n)$ | Primitive roots |
+| 5 | 4 | 2, 3 |
+| 7 | 6 | 3, 5 |
+| 9 | 6 | 2, 5 |
+| 10 | 4 | 3, 7 |
+| 11 | 10 | 2, 6, 7, 8 |
+| 8, 12, 15, 16 | 4, 4, 8, 8 | None |
+
+! trick | Last digits and large powers
+- To find $a^N$ modulo $n$ with $\gcd(a,n) = 1$, reduce the exponent $N$ modulo $\varphi(n)$.
+- Last two digits: work modulo 100, where $\varphi(100) = 40$. Example: $3^{100} \equiv 1 \pmod{100}$, since $3^{20} \equiv 1 \pmod{100}$.
+- Split the modulus into coprime parts and combine with the Chinese remainder theorem.
+
+? When is $ax \equiv b \pmod{n}$ solvable? :: Exactly when $\gcd(a,n)$ divides $b$.
+? State Wilson's theorem. :: For an integer $p > 1$: $(p-1)! \equiv -1 \pmod{p}$ if and only if $p$ is prime.
+? For which $n$ is $U(n)$ cyclic? :: $n = 1, 2, 4, p^k, 2p^k$ with $p$ an odd prime.
+? How many primitive roots modulo 13? :: $\varphi(12) = 4$.
+
+! exam | PYQ focus
+- Remainders of large powers and factorials, and last digits.
+- Number of solutions of a linear or simple quadratic congruence.
+- Existence and number of primitive roots; values of $\varphi$, $\tau$ and $\sigma$.
+
+! recap | One-minute revision
+- Fermat: $a^{p-1} \equiv 1$. Euler: $a^{\varphi(n)} \equiv 1$. Wilson: $(p-1)! \equiv -1$.
+- Linear congruence: solvable when $\gcd(a,n) \mid b$, with $\gcd(a,n)$ solutions.
+- Primitive roots exist for $1, 2, 4, p^k, 2p^k$; there are $\varphi(\varphi(n))$ of them.
+
+& David M. Burton, Elementary Number Theory (chapters 2 to 8)
+& Ivan Niven, H. S. Zuckerman and H. L. Montgomery, An Introduction to the Theory of Numbers (chapters 1 and 2)
+& Joseph A. Gallian, Contemporary Abstract Algebra (chapter 0, and the chapter on external direct products, which describes the groups U(n))
+& MIT OpenCourseWare 18.781: Theory of Numbers | https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/

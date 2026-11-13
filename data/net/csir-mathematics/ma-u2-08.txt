@@ -1,0 +1,79 @@
+@en
+# Groups, subgroups and cyclic groups
+
+> A group is a set with one associative operation, an identity and inverses. The first layer of the subject is about orders of elements, subgroups, cosets and the complete description of cyclic groups.
+
+## Groups and examples
+
+- $(G, \cdot)$ is a **group** if the operation is closed and associative, there is an identity $e$, and every element has an inverse. It is **abelian** if $ab = ba$ for all $a, b$.
+- The **order of an element** $a$ is the least $n \ge 1$ with $a^n = e$ (infinite if there is none). $a^k = e$ if and only if $o(a) \mid k$. $o(a^k) = \frac{o(a)}{\gcd(o(a), k)}$.
+- $o(a) = o(a^{-1}) = o(xax^{-1})$, and $o(ab) = o(ba)$.
+- If $ab = ba$ and $\gcd(o(a), o(b)) = 1$, then $o(ab) = o(a)\,o(b)$. In $G_1 \times G_2$: $o(a,b) = \operatorname{lcm}(o(a), o(b))$.
+
+| Group | Order | Remarks |
+| $\mathbb{Z}_n$ | $n$ | Cyclic |
+| $U(n)$ | $\varphi(n)$ | Abelian; cyclic for $n = 1, 2, 4, p^k, 2p^k$ |
+| Klein four-group $V_4 \cong \mathbb{Z}_2 \times \mathbb{Z}_2$ | 4 | Abelian, not cyclic; every non-identity element has order 2 |
+| Dihedral group $D_n$ | $2n$ | Symmetries of a regular $n$-gon; non-abelian for $n \ge 3$ |
+| Quaternion group $Q_8$ | 8 | Non-abelian; every subgroup is normal; one element of order 2 |
+| Symmetric group $S_n$ | $n!$ | Non-abelian for $n \ge 3$ |
+| Alternating group $A_n$ | $n!/2$ | Simple for $n \ge 5$ |
+| $GL_n(F_q)$ | $(q^n - 1)(q^n - q) \cdots (q^n - q^{n-1})$ | Invertible matrices over $F_q$ |
+
+- A group in which every element satisfies $a^2 = e$ is abelian. A group of even order has an element of order 2.
+- Groups of order 1, 2, 3, 5, 7 (prime) are cyclic; groups of order $p^2$ are abelian. The smallest non-abelian group is $S_3$, of order 6.
+
+## Subgroups and Lagrange's theorem
+
+- A non-empty subset $H$ is a **subgroup** if $ab^{-1} \in H$ for all $a, b \in H$. A non-empty finite subset closed under the operation is a subgroup.
+- The intersection of subgroups is a subgroup. The union of two subgroups is a subgroup if and only if one contains the other. A group is never the union of two proper subgroups.
+- $HK = \{hk\}$ is a subgroup if and only if $HK = KH$ (for example when $H$ or $K$ is normal). For finite $H$ and $K$, $\lvert HK \rvert = \frac{\lvert H \rvert \lvert K \rvert}{\lvert H \cap K \rvert}$.
+- **Centre** $Z(G) = \{z : zg = gz \text{ for all } g\}$; **centraliser** $C(a) = \{g : ga = ag\}$; **normaliser** $N(H) = \{g : gHg^{-1} = H\}$. All are subgroups, and $Z(G)$ is abelian and normal.
+
+! remember | Lagrange's theorem and its consequences
+- **Lagrange**: the order of a subgroup of a finite group divides the order of the group. The number of left cosets, the **index** $[G : H]$, equals $\frac{\lvert G \rvert}{\lvert H \rvert}$.
+- The order of every element divides $\lvert G \rvert$, so $a^{\lvert G \rvert} = e$. Fermat's and Euler's theorems follow.
+- A group of prime order is cyclic and has no proper non-trivial subgroup.
+- **The converse of Lagrange is false**: $A_4$ has order 12 but no subgroup of order 6. It is true for finite abelian groups and for finite $p$-groups.
+- If $G/Z(G)$ is cyclic, then $G$ is abelian. So $\lvert G/Z(G) \rvert$ is never a prime, and a non-abelian group of order $p^3$ has centre of order $p$.
+
+## Cyclic groups
+
+- $G = \langle a \rangle$. Every cyclic group is abelian; every subgroup and every quotient of a cyclic group is cyclic.
+- An infinite cyclic group is isomorphic to $\mathbb{Z}$, with generators $\pm 1$. A cyclic group of order $n$ is isomorphic to $\mathbb{Z}_n$.
+- In a cyclic group of order $n$: there is exactly **one subgroup of order $d$** for each divisor $d$ of $n$; the number of subgroups is $\tau(n)$.
+- The number of **generators** is $\varphi(n)$; the number of elements of order $d$ is $\varphi(d)$ for each $d \mid n$.
+- $a^k$ generates $\langle a \rangle$ of order $n$ if and only if $\gcd(k, n) = 1$.
+- $\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic if and only if $\gcd(m,n) = 1$.
+- A finite group is cyclic if and only if it has at most one subgroup of each order. $\mathbb{Q}$ under addition is not cyclic, though each finitely generated subgroup of it is.
+
+| Count in $\mathbb{Z}_{12}$ | Value |
+| Generators | $\varphi(12) = 4$: 1, 5, 7, 11 |
+| Subgroups | $\tau(12) = 6$ |
+| Elements of order 6 | $\varphi(6) = 2$ |
+| Elements of order 4 | $\varphi(4) = 2$ |
+
+! trick | Counting elements of a given order
+- In $\mathbb{Z}_m \times \mathbb{Z}_n$ count pairs with $\operatorname{lcm}(o(a), o(b)) = d$, using the fact that $\mathbb{Z}_k$ has $\varphi(t)$ elements of order $t$.
+- Elements of order 2 in $D_n$: $n$ reflections, plus one rotation when $n$ is even.
+- If a group has exactly $k$ elements of order $d$, then $\varphi(d)$ divides $k$; the number of cyclic subgroups of order $d$ is $\frac{k}{\varphi(d)}$.
+
+? How many generators has a cyclic group of order $n$? :: $\varphi(n)$.
+? Is the converse of Lagrange's theorem true? :: No: $A_4$ has no subgroup of order 6.
+? When is $\mathbb{Z}_m \times \mathbb{Z}_n$ cyclic? :: Exactly when $\gcd(m,n) = 1$.
+? If $G/Z(G)$ is cyclic, what is $G$? :: Abelian.
+
+! exam | PYQ focus
+- Number of elements of a given order, and of subgroups, in cyclic groups, products and dihedral groups.
+- True or false statements using Lagrange's theorem and the centre.
+- Recognising whether a given group is cyclic or abelian.
+
+! recap | One-minute revision
+- Order of an element divides the order of the group; prime order means cyclic.
+- Cyclic of order $n$: one subgroup for each divisor, $\varphi(n)$ generators.
+- $G/Z(G)$ cyclic forces $G$ abelian; $A_4$ breaks the converse of Lagrange.
+
+& Joseph A. Gallian, Contemporary Abstract Algebra (chapters 2 to 7)
+& I. N. Herstein, Topics in Algebra (chapter 2)
+& D. S. Dummit and R. M. Foote, Abstract Algebra (chapters 1 to 3)
+& MIT OpenCourseWare 18.703: Modern Algebra | https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/

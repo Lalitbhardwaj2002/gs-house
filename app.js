@@ -1634,7 +1634,7 @@ const NET_GROUPS = [
     { id: 'ugc-commerce', icon: '💼', code: '08', units: 10, en: 'Paper 2 · Commerce', hi: 'प्रश्नपत्र 2 · वाणिज्य' },
   ] },
   { id: 'csir', langs: ['en'], en: 'CSIR NET', subjects: [
-    { id: 'csir-mathematics', icon: '➗', units: 4, en: 'Mathematical Sciences', study: { en: 'Unit 1 notes ready' } },
+    { id: 'csir-mathematics', icon: '➗', units: 4, en: 'Mathematical Sciences', study: { en: 'Units 1 and 2 notes ready' } },
     { id: 'csir-life-sciences', icon: '🧬', units: 14, en: 'Life Sciences', more: 'new syllabus, 21 Jan 2026' },
   ] },
 ];

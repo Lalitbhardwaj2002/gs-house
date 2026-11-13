@@ -6,7 +6,7 @@
  "title": { "en": "Mathematical Sciences" },
  "subtitle": { "en": "CSIR NET · Part B and Part C · unit-wise notes" },
  "about": {
-  "en": "These are GS House's own notes, written unit by unit from the official syllabus, standard textbooks and the pattern of past papers. Unit 1 is ready; the other units are being written."
+  "en": "These are GS House's own notes, written unit by unit from the official syllabus, standard textbooks and the pattern of past papers. Units 1 and 2 are ready; the other units are being written."
  },
  "units": [
   {
@@ -74,8 +74,67 @@
     { "text": "NPTEL: video courses in mathematics", "url": "https://nptel.ac.in/" }
    ]
   },
-  { "id": "u2", "icon": "🌀", "en": "Complex Analysis, Algebra and Topology",
-    "line": { "en": "Complex analysis · groups, rings and fields · topology" } },
+  {
+   "id": "u2", "icon": "🌀", "en": "Complex Analysis, Algebra and Topology",
+   "line": { "en": "5 topics of complex analysis · 7 of algebra · topology" },
+   "parts": [
+    {
+     "en": "Complex Analysis",
+     "chapters": [
+      { "id": "ma-u2-01", "en": "Complex numbers and elementary functions",
+        "key": { "en": "Modulus and argument · roots of unity · exponential, logarithm and powers · power series" } },
+      { "id": "ma-u2-02", "en": "Analytic functions and the Cauchy-Riemann equations",
+        "key": { "en": "Differentiability · Cauchy-Riemann equations · harmonic functions and conjugates" } },
+      { "id": "ma-u2-03", "en": "Complex integration and its theorems",
+        "key": { "en": "Cauchy's theorem and integral formula · Liouville · maximum modulus · Schwarz's lemma" } },
+      { "id": "ma-u2-04", "en": "Taylor and Laurent series, singularities and residues",
+        "key": { "en": "Types of singularity · residue theorem · real integrals · Rouché and the argument principle" } },
+      { "id": "ma-u2-05", "en": "Conformal mappings and Möbius transformations",
+        "key": { "en": "Angle-preserving maps · cross-ratio · fixed points · maps of the disc and half-plane" } }
+     ]
+    },
+    {
+     "en": "Algebra",
+     "chapters": [
+      { "id": "ma-u2-06", "en": "Permutations, combinations and counting principles",
+        "key": { "en": "Selections and arrangements · pigeon-hole · inclusion-exclusion · derangements" } },
+      { "id": "ma-u2-07", "en": "Number theory: divisibility and congruences",
+        "key": { "en": "gcd and primes · Euler's function · Fermat, Euler, Wilson · Chinese remainder theorem · primitive roots" } },
+      { "id": "ma-u2-08", "en": "Groups, subgroups and cyclic groups",
+        "key": { "en": "Standard groups · Lagrange's theorem · cyclic groups · counting elements of a given order" } },
+      { "id": "ma-u2-09", "en": "Permutation groups, normal subgroups and homomorphisms",
+        "key": { "en": "Cycle types · quotient groups · isomorphism theorems · Cayley · finite abelian groups" } },
+      { "id": "ma-u2-10", "en": "Class equation and the Sylow theorems",
+        "key": { "en": "Conjugacy classes · p-groups · Sylow subgroups · groups of small order · group actions" } },
+      { "id": "ma-u2-11", "en": "Rings, ideals and factorisation domains",
+        "key": { "en": "Units and zero divisors · prime and maximal ideals · quotient rings · ED, PID, UFD" } },
+      { "id": "ma-u2-12", "en": "Polynomial rings, fields and Galois theory",
+        "key": { "en": "Irreducibility tests · field extensions · finite fields · Galois correspondence" } }
+     ]
+    },
+    {
+     "en": "Topology",
+     "chapters": [
+      { "id": "ma-u2-13", "en": "Topology",
+        "key": { "en": "Bases · subspace and product topologies · separation axioms · compactness · connectedness" } }
+     ]
+    }
+   ],
+   "refs": [
+    { "text": "J. W. Brown and R. V. Churchill, Complex Variables and Applications" },
+    { "text": "John B. Conway, Functions of One Complex Variable" },
+    { "text": "S. Ponnusamy, Foundations of Complex Analysis" },
+    { "text": "Joseph A. Gallian, Contemporary Abstract Algebra" },
+    { "text": "I. N. Herstein, Topics in Algebra" },
+    { "text": "D. S. Dummit and R. M. Foote, Abstract Algebra" },
+    { "text": "David M. Burton, Elementary Number Theory" },
+    { "text": "James R. Munkres, Topology" },
+    { "text": "G. F. Simmons, Introduction to Topology and Modern Analysis" },
+    { "text": "MIT OpenCourseWare 18.04: Complex Variables with Applications", "url": "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/" },
+    { "text": "MIT OpenCourseWare 18.703: Modern Algebra", "url": "https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/" },
+    { "text": "MIT OpenCourseWare 18.901: Introduction to Topology", "url": "https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/" }
+   ]
+  },
   { "id": "u3", "icon": "🧮", "en": "Differential Equations, Numerical Analysis and Mechanics",
     "line": { "en": "ODE · PDE · numerical analysis · calculus of variations · integral equations · mechanics" } },
   { "id": "u4", "icon": "🎲", "en": "Statistics",
