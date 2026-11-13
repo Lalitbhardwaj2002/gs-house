@@ -42,6 +42,10 @@ Then open http://localhost:8000.
 - `tools/` — validator, merge and index builder (`prep_refs.py` prepares the reference books locally; they are never published)
 - `docs/` — hand-off notes, question targets and the writer/checker briefs
 
+## Visitor counting
+
+The live site counts visits, rooms created and quizzes started with [GoatCounter](https://www.goatcounter.com/): no cookies and nothing personal is stored. Set the site code in `CONFIG.goatcounter` in `app.js`; leave it empty to count nothing. Nothing is counted when the app runs on localhost.
+
 ## License
 
 GS House is released under the [MIT License](LICENSE). The reference books cited in the explanations belong to their publishers and are not part of this repository.
