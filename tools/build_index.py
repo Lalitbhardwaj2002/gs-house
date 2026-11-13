@@ -20,6 +20,8 @@ for f in sorted(data.glob('*.json')):
     index['sections'][f.stem] = counts
 # The book companion (data/book/): its structure file and one notes file per chapter.
 index['book'] = sorted(f.name for f in (data / 'book').glob('*') if f.suffix in ('.json', '.txt'))
+# The NET / JRF corner (data/net/): one syllabus file per subject, saved for offline reading too.
+index['net'] = sorted(f.name for f in (data / 'net').glob('*.txt'))
 (data / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding='utf-8')
 total = sum(c['total'] for c in index['sections'].values())
 print(f'data/index.json: {len(index["sections"])} sections, {total} questions')

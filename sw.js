@@ -9,8 +9,8 @@ const CACHE = 'gshouse-v8';
 const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/favicon-32.png', './icons/logo.svg'];
 
-// Every question file and every notes file of the book companion is saved at install too, so the
-// installed app works fully offline for solo practice and reading.
+// Every question file, every notes file of the book companion and every syllabus file of the NET
+// corner is saved at install too, so the installed app works fully offline for solo practice and reading.
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE)
     .then((cache) => cache.addAll(SHELL)
@@ -19,6 +19,7 @@ self.addEventListener('install', (event) => {
       .then((index) => cache.addAll([
         ...Object.keys(index.sections).map((id) => `./data/${id}.json`),
         ...(index.book || []).map((name) => `./data/book/${name}`), // notes of the book companion
+        ...(index.net || []).map((name) => `./data/net/${name}`),   // syllabus files of the NET corner
       ])))
     .catch(() => {})
     .then(() => self.skipWaiting()));

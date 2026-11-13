@@ -153,10 +153,8 @@ const T = {
     sideWait: 'The explanation appears here once you answer.',
     bookCardTitle: 'Study with the book: Ghatna Chakra (new edition)',
     netTitle: 'NET / JRF corner', netRibbon: 'Opening soon',
-    netTeaser: 'Five doors are being built for NET and JRF aspirants. They are still locked, but you may peek inside: tap a subject.',
-    netPeek: 'Locked · tap to peek', netPeeking: 'Peeking inside · tap to close', netInside: 'Inside', netGet: 'You will get',
-    netGetList: ['Unit-wise notes', 'Exam-pattern questions', 'Timed mock tests', 'Hindi + English'],
-    netFoot: 'Until the doors open: the Teaching & Research Aptitude and ICT sections of the quiz already cover several units of NET Paper 1 (teaching, research, data, ICT and higher education).',
+    netTeaser: 'Six doors, opening soon. Tap one to see its syllabus.',
+    netFoot: 'Paper 1 topics are already in the quiz: Teaching & Research Aptitude and ICT.',
     bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank: all 17 topics, from current affairs to computers, each with a full test.',
     bookRefLine: 'Reference',
     notesPdf: 'All notes as one PDF', chapterPdf: 'Save this chapter as PDF', pdfTitle: 'Notes for offline reading',
@@ -229,10 +227,8 @@ const T = {
     sideWait: 'उत्तर देते ही व्याख्या यहाँ दिखेगी।',
     bookCardTitle: 'पुस्तक के साथ पढ़ें: घटना चक्र (नया संस्करण)',
     netTitle: 'नेट / जेआरएफ कॉर्नर', netRibbon: 'शीघ्र खुल रहा है',
-    netTeaser: 'नेट और जेआरएफ के अभ्यर्थियों के लिए पाँच द्वार बन रहे हैं। वे अभी बंद हैं, पर आप भीतर झाँक सकते हैं: किसी विषय पर टैप कीजिए।',
-    netPeek: 'बंद है · झाँकने के लिए टैप करें', netPeeking: 'भीतर की झलक · बंद करने के लिए टैप करें', netInside: 'भीतर क्या है', netGet: 'आपको मिलेगा',
-    netGetList: ['इकाईवार नोट्स', 'परीक्षा-पैटर्न के प्रश्न', 'समयबद्ध मॉक टेस्ट', 'हिंदी + अंग्रेजी'],
-    netFoot: 'द्वार खुलने तक: प्रश्नोत्तरी के शिक्षण एवं शोध अभियोग्यता और आईसीटी खंड नेट प्रश्नपत्र 1 की कई इकाइयाँ (शिक्षण, शोध, आँकड़े, आईसीटी और उच्च शिक्षा) पहले से कवर करते हैं।',
+    netTeaser: 'छह द्वार, शीघ्र खुलेंगे। पाठ्यक्रम देखने के लिए किसी पर टैप करें।',
+    netFoot: 'प्रश्नपत्र 1 के विषय प्रश्नोत्तरी में पहले से हैं: शिक्षण एवं शोध अभियोग्यता और आईसीटी।',
     bookRefLine: 'संदर्भ',
     notesPdf: 'सभी नोट्स एक PDF में', chapterPdf: 'इस अध्याय को PDF में सहेजें', pdfTitle: 'बिना इंटरनेट पढ़ने के लिए नोट्स',
     pdfHow: 'नीचे का बटन दबाएँ, फिर प्रिंटर के रूप में "Save as PDF" चुनें। फोन पर यही बटन प्रिंट खोलता है, जहाँ से PDF सहेजी जा सकती है।',
@@ -255,6 +251,7 @@ function setLang(l) {
   store.set('localStorage', 'pp-lang', lang);
   document.documentElement.lang = lang === 'hi' ? 'hi' : 'en-IN';
   ui.qlang = {};
+  netView.lang = null;   // the NET corner follows the app's language again
   refresh();
 }
 
@@ -1616,45 +1613,127 @@ function renderHome() {
     ${historyHTML()}`;
 }
 
-// NET / JRF corner: subjects that are still to come. Each is a locked "door" on the home screen;
-// tapping it shows what the subject will hold. The unit lists follow the official syllabi.
+// NET / JRF corner on the home screen. The subjects are still to come, so each is a locked "door".
+// Opening a door shows the official syllabus of the subject (data/net/<id>.txt, fetched the first
+// time the door is opened) and what is planned for it. UGC NET can be read in English or in Hindi,
+// one language at a time, with a switch of its own; CSIR NET is in English only.
 const NET_GROUPS = [
-  { en: 'UGC NET · Paper 2', hi: 'यूजीसी नेट · प्रश्नपत्र 2', subjects: [
-    { icon: '🎓', en: 'Education', hi: 'शिक्षाशास्त्र',
-      unitsEn: 'Ten units: educational studies; history, politics and economics of education; the learner and learning; teacher education; curriculum; research in education; pedagogy and assessment; technology in education; management and leadership; inclusive education.',
-      unitsHi: 'दस इकाइयाँ: शैक्षिक अध्ययन; शिक्षा का इतिहास, राजनीति एवं अर्थशास्त्र; अधिगमकर्ता एवं अधिगम; शिक्षक शिक्षा; पाठ्यचर्या; शिक्षा में शोध; शिक्षणशास्त्र एवं आकलन; शिक्षा में प्रौद्योगिकी; प्रबंधन एवं नेतृत्व; समावेशी शिक्षा।' },
-    { icon: '🏛️', en: 'Political Science', hi: 'राजनीति विज्ञान',
-      unitsEn: 'Ten units: political theory; Western and Indian political thought; comparative politics; international relations; the foreign policy of India; political institutions and processes in India; public administration; governance and public policy.',
-      unitsHi: 'दस इकाइयाँ: राजनीतिक सिद्धांत; पाश्चात्य एवं भारतीय राजनीतिक चिंतन; तुलनात्मक राजनीति; अंतरराष्ट्रीय संबंध; भारत की विदेश नीति; भारत की राजनीतिक संस्थाएँ एवं प्रक्रियाएँ; लोक प्रशासन; शासन एवं लोक नीति।' },
-    { icon: '💼', en: 'Commerce', hi: 'वाणिज्य',
-      unitsEn: 'Ten units: business environment; accounting and auditing; business economics; business finance; statistics and research methods; management and human resources; banking and financial institutions; marketing; business law; income tax and tax planning.',
-      unitsHi: 'दस इकाइयाँ: व्यावसायिक पर्यावरण; लेखांकन एवं अंकेक्षण; व्यावसायिक अर्थशास्त्र; व्यावसायिक वित्त; सांख्यिकी एवं शोध विधियाँ; प्रबंधन एवं मानव संसाधन; बैंकिंग एवं वित्तीय संस्थाएँ; विपणन; व्यावसायिक विधि; आयकर एवं कर नियोजन।' },
+  { id: 'ugc', langs: ['en', 'hi'], en: 'UGC NET', hi: 'यूजीसी नेट', subjects: [
+    { id: 'ugc-paper1', icon: '🧭', code: '00', units: 10, en: 'Paper 1 · Teaching & Research Aptitude', hi: 'प्रश्नपत्र 1 · शिक्षण एवं शोध अभिवृत्ति' },
+    { id: 'ugc-education', icon: '🎓', code: '09', units: 10, en: 'Paper 2 · Education', hi: 'प्रश्नपत्र 2 · शिक्षाशास्त्र' },
+    { id: 'ugc-political-science', icon: '🏛️', code: '02', units: 10, en: 'Paper 2 · Political Science', hi: 'प्रश्नपत्र 2 · राजनीति विज्ञान' },
+    { id: 'ugc-commerce', icon: '💼', code: '08', units: 10, en: 'Paper 2 · Commerce', hi: 'प्रश्नपत्र 2 · वाणिज्य' },
   ] },
-  { en: 'CSIR NET', hi: 'सीएसआईआर नेट', subjects: [
-    { icon: '➗', en: 'Mathematics', hi: 'गणित',
-      unitsEn: 'Four units: analysis and linear algebra; complex analysis, algebra and topology; differential equations, numerical analysis and mechanics; statistics.',
-      unitsHi: 'चार इकाइयाँ: विश्लेषण एवं रैखिक बीजगणित; सम्मिश्र विश्लेषण, बीजगणित एवं टोपोलॉजी; अवकल समीकरण, संख्यात्मक विश्लेषण एवं यांत्रिकी; सांख्यिकी।' },
-    { icon: '🧬', en: 'Life Science', hi: 'जीव विज्ञान',
-      unitsEn: 'Thirteen units: from molecules and cells to physiology, genetics, ecology, evolution, applied biology and the methods of biology.',
-      unitsHi: 'तेरह इकाइयाँ: अणुओं और कोशिकाओं से लेकर कार्यिकी, आनुवंशिकी, पारिस्थितिकी, विकास, अनुप्रयुक्त जीव विज्ञान और जीव विज्ञान की विधियों तक।' },
+  { id: 'csir', langs: ['en'], en: 'CSIR NET', subjects: [
+    { id: 'csir-mathematics', icon: '➗', units: 4, en: 'Mathematical Sciences' },
+    { id: 'csir-life-sciences', icon: '🧬', units: 14, en: 'Life Sciences', more: 'new syllabus, 21 Jan 2026' },
   ] },
 ];
+// Words inside a group follow the language chosen for that group, not the language of the app.
+const NET_TEXT = {
+  en: { syllabus: 'Syllabus', get: 'You will get', code: 'Code', units: 'units', only: 'English only', lang: 'Syllabus language',
+    wait: 'Loading the syllabus…', error: 'The syllabus could not be loaded. Check the connection, then close this door and open it again.',
+    chips: ['Unit-wise notes', 'Previous-year questions (PYQs)', 'Exam-pattern analysis', 'Important topics', 'Expected questions', 'Most-awaited topics', 'Timed mock tests'],
+    both: 'Hindi + English' },
+  hi: { syllabus: 'पाठ्यक्रम', get: 'आपको मिलेगा', code: 'कोड', units: 'इकाइयाँ', only: 'केवल अंग्रेजी', lang: 'पाठ्यक्रम की भाषा',
+    wait: 'पाठ्यक्रम लोड हो रहा है…', error: 'पाठ्यक्रम लोड नहीं हो सका। कनेक्शन जाँचें, फिर इस द्वार को बंद करके दोबारा खोलें।',
+    chips: ['इकाईवार नोट्स', 'पिछले वर्षों के प्रश्न (PYQ)', 'परीक्षा-पैटर्न विश्लेषण', 'महत्त्वपूर्ण विषय', 'संभावित प्रश्न', 'बहुप्रतीक्षित विषय', 'समयबद्ध मॉक टेस्ट'],
+    both: 'हिंदी + अंग्रेजी' },
+};
+// lang: the language chosen with the switch (null follows the app); open: the doors that are open;
+// syllabus: the parsed files, 'wait' while one is being fetched, 'error' if that failed.
+const netView = { lang: null, open: new Set(), syllabus: {} };
+const netGroupLang = (g) => (g.langs.includes(netView.lang || lang) ? (netView.lang || lang) : g.langs[0]);
+
+// A syllabus file: '@en' / '@hi' start a language; '# Unit-1: Title' a unit; '## ' a sub-heading;
+// '- ' an item; '> ' a closing note.
+function parseSyllabus(text) {
+  const out = {};
+  let part = null;
+  let unit = null;
+  for (const raw of text.split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line) continue;
+    const m = /^@(en|hi)$/.exec(line);
+    if (m) { part = out[m[1]] = { units: [], note: '' }; unit = null; continue; }
+    if (!part) continue;
+    if (line.startsWith('# ')) {
+      const at = line.indexOf(': ');
+      unit = { label: at < 0 ? '' : line.slice(2, at), title: at < 0 ? line.slice(2) : line.slice(at + 2), items: [] };
+      part.units.push(unit);
+    } else if (line.startsWith('> ')) part.note = line.slice(2);
+    else if (unit && line.startsWith('## ')) unit.items.push({ head: line.slice(3) });
+    else if (unit) unit.items.push({ text: line.replace(/^- /, '') });
+  }
+  return out;
+}
+
+function syllabusHTML(id, l) {
+  const data = netView.syllabus[id];
+  if (!data || data === 'wait') return `<p class="net-wait">${NET_TEXT[l].wait}</p>`;
+  if (data === 'error' || !data.en) return `<p class="net-wait">${NET_TEXT[l].error}</p>`;
+  const part = data[l] || data.en;
+  const body = (items) => {
+    let html = '';
+    let inList = false;
+    for (const it of items) {
+      if (it.head) { html += `${inList ? '</ul>' : ''}<h4>${esc(it.head)}</h4>`; inList = false; }
+      else { html += `${inList ? '' : '<ul>'}<li>${esc(it.text)}</li>`; inList = true; }
+    }
+    return html + (inList ? '</ul>' : '');
+  };
+  return part.units.map((u) => `
+              <details class="net-unit">
+                <summary><span class="net-unit-no">${esc(u.label)}</span><span class="net-unit-name">${esc(u.title)}</span></summary>
+                <div class="net-unit-body">${body(u.items)}</div>
+              </details>`).join('') + (part.note ? `<p class="net-note">${esc(part.note)}</p>` : '');
+}
+
+// A door has been opened: show its syllabus, fetching the file the first time.
+function openNetDoor(id) {
+  netView.open.add(id);
+  const fill = (always) => {
+    const box = document.querySelector(`.net-syl[data-syl="${id}"]`);
+    if (box && (always || !box.firstElementChild)) box.innerHTML = syllabusHTML(id, box.dataset.lang);
+  };
+  const have = netView.syllabus[id];
+  if (have && have !== 'error') { fill(false); return; }
+  netView.syllabus[id] = 'wait';
+  fill(true);
+  fetch(`data/net/${id}.txt`, { cache: 'no-cache' })
+    .then((res) => { if (!res.ok) throw new Error(id); return res.text(); })
+    .then((text) => { netView.syllabus[id] = parseSyllabus(text); })
+    .catch(() => { netView.syllabus[id] = 'error'; })
+    .then(() => fill(true));
+}
+
 function netHTML() {
-  const hi = lang === 'hi';
-  const chips = t('netGetList').map((c) => `<span>${esc(c)}</span>`).join('');
-  const groups = NET_GROUPS.map((g) => `
-      <div class="net-group">
-        <h3>${esc(hi ? g.hi : g.en)}</h3>
-        ${g.subjects.map((x) => `
-        <details class="net-door">
-          <summary><span class="net-ico">${x.icon}</span><span class="net-name"><b>${esc(hi ? x.hi : x.en)}</b><small class="net-shut">${t('netPeek')}</small><small class="net-ajar">${t('netPeeking')}</small></span><span class="net-lock" aria-hidden="true"></span></summary>
+  const groups = NET_GROUPS.map((g) => {
+    const l = netGroupLang(g);
+    const tx = NET_TEXT[l];
+    const chips = [...tx.chips, ...(g.langs.length > 1 ? [tx.both] : [])].map((c) => `<span>${esc(c)}</span>`).join('');
+    const side = g.langs.length > 1
+      ? `<span class="net-switch" role="group" aria-label="${tx.lang}">${g.langs.map((x) => `<button type="button" data-action="net-lang" data-lang="${x}" class="${x === l ? 'on' : ''}" aria-pressed="${x === l}">${x === 'hi' ? 'हिंदी' : 'English'}</button>`).join('')}</span>`
+      : `<span class="net-only">${NET_TEXT[lang].only}</span>`;
+    const doors = g.subjects.map((x) => {
+      const open = netView.open.has(x.id);
+      const meta = [x.code ? `${tx.code} ${x.code}` : '', `${x.units} ${tx.units}`, x.more || ''].filter(Boolean).join(' · ');
+      return `
+        <details class="net-door" data-keep="net" data-net="${x.id}" ${open ? 'open' : ''}>
+          <summary><span class="net-ico">${x.icon}</span><span class="net-name"><b>${esc(x[l] || x.en)}</b><small>${esc(meta)}</small></span><span class="net-lock" aria-hidden="true"></span></summary>
           <div class="net-peek">
-            <p><b>${t('netInside')}:</b> ${esc(hi ? x.unitsHi : x.unitsEn)}</p>
-            <p><b>${t('netGet')}:</b></p>
+            <p class="net-label">${tx.syllabus}</p>
+            <div class="net-syl" data-syl="${x.id}" data-lang="${l}">${open ? syllabusHTML(x.id, l) : ''}</div>
+            <p class="net-label">${tx.get}</p>
             <div class="net-chips">${chips}</div>
           </div>
-        </details>`).join('')}
-      </div>`).join('');
+        </details>`;
+    }).join('');
+    return `
+      <div class="net-group" lang="${l}">
+        <div class="net-group-head"><h3>${esc(g[l] || g.en)}</h3>${side}</div>${doors}
+      </div>`;
+  }).join('');
   return `
     <section class="net-card" aria-label="${t('netTitle')}">
       <span class="net-ribbon">✨ ${t('netRibbon')}</span>
@@ -1662,6 +1741,22 @@ function netHTML() {
       <p class="net-teaser">${t('netTeaser')}</p>${groups}
       <p class="net-foot">🪔 ${t('netFoot')}</p>
     </section>`;
+}
+
+// The language switch of UGC NET: redraw the card in the other language and keep open what was open.
+function setNetLang(l) {
+  const card = document.querySelector('.net-card');
+  if (!card || l === (netView.lang || lang)) return;
+  const openUnits = {};
+  card.querySelectorAll('.net-syl').forEach((box) => { openUnits[box.dataset.syl] = [...box.querySelectorAll('.net-unit')].map((u) => u.open); });
+  netView.lang = l;
+  card.outerHTML = netHTML();
+  document.querySelectorAll('.net-card .net-syl').forEach((box) => {
+    const units = box.querySelectorAll('.net-unit');
+    (openUnits[box.dataset.syl] || []).forEach((on, i) => { if (on && units[i]) units[i].open = true; });
+  });
+  const now = document.querySelector('.net-switch button.on');
+  if (now) now.focus();
 }
 
 function showBusy(message) {
@@ -2085,6 +2180,7 @@ if ('serviceWorker' in navigator && window.isSecureContext && location.protocol 
 function settingsFrom(v) { return { ...v.settings, sections: [...v.settings.sections] }; }
 
 const actions = {
+  'net-lang'(btn) { setNetLang(btn.dataset.lang === 'hi' ? 'hi' : 'en'); },
   create() {
     const name = readName();
     if (!name) return;
@@ -2254,12 +2350,14 @@ document.addEventListener('click', (e) => {
   actions[el.dataset.action](el, e);
 });
 
-// Remember which fold-out parts are open: the settings menu across redraws, the option notes for good.
+// Remember which fold-out parts are open: the settings menu across redraws, the option notes for good,
+// the doors of the NET corner while the app is open (opening one also loads its syllabus).
 document.addEventListener('toggle', (e) => {
   const el = e.target;
   if (!el || !el.dataset) return;
   if (el.dataset.keep === 'menu') ui.menuOpen = el.open;
   if (el.dataset.keep === 'notes' && prefs.notes !== el.open) setPref('notes', el.open);
+  if (el.dataset.keep === 'net') { if (el.open) openNetDoor(el.dataset.net); else netView.open.delete(el.dataset.net); }
 }, true);
 
 // Keyboard on a computer: A–D or 1–4 answer the question, Enter (or N, →) goes to the next one.
