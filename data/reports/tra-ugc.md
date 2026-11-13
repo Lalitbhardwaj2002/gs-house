@@ -12,3 +12,14 @@ Checked all 20 (new questions). Answer keys all correct.
 - Corrected: tra-ugc-007 (note B now says what the centres do instead of only the renaming date).
 - Corrected: tra-ugc-009 (note B no longer names the Academic Bank of Credits, which gave away 006).
 - Replaced: none.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+- Checked 4 new questions (021 022 023 024). All answer keys are correct. Confirmed: One Nation One Subscription (Cabinet, 25 November 2024; about ₹6,000 crore for 2025, 2026 and 2027; 30 publishers; about 13,000 e-journals; more than 6,300 institutions; INFLIBNET); UGC Professor of Practice guidelines of 2022 (at least 15 years' experience, preferably at a senior level; formal academic qualification not essential; not more than 10 per cent of sanctioned posts; up to one year at first, three years at most, four in exceptional cases; not open to serving or retired teachers); APAAR (Automated Permanent Academic Account Registry; 12-digit; DigiLocker and ABC; consent); University of Southampton at Gurugram inaugurated on 16 July 2025, first under the UGC's 2023 regulations (The Week/PTI).
+- Corrected:
+  - 021: the PM India link could not be opened, and the Principal Scientific Adviser page gives other figures (6,400+ institutions, 2024–2028). The references are now the PIB release of 25 November 2024 and the ONOS portal of INFLIBNET (onos.gov.in).
+  - 024: note C said only that Liverpool was approved 'later'. It now says that Liverpool received its letter of intent in May 2025, for a campus at Bengaluru (University of Liverpool news, 26 May 2025).
+- Replaced: none.
+- Facts I could not confirm online: the guideline text that a PhD or NET is not needed (the guideline says a formal academic qualification is not essential; press reports add NET). The UGC guideline PDF could not be read (scanned).
+
+### Follow-up by the main session (13 November 2026)
+- tra-ugc-022: the check could not read the UGC's scanned guideline to confirm that a PhD or the NET is not needed. A web search by the main session found the guideline text quoted (Vikaspedia and press reports of the Guidelines for Engaging Professor of Practice, 2022): at least 15 years of service or experience, preferably at a senior level; a formal academic qualification is not considered essential; exemption from the requirement of publications; not more than 10 per cent of the sanctioned posts; a term of up to three years, extendable by one year. The explanation now uses that wording in place of "A PhD or the National Eligibility Test is not required" and gives the term.

@@ -3135,6 +3135,457 @@
      "url": "https://www.business-standard.com/article/pti-stories/kejriwal-launches-e-ration-service-115032700883_1.html"
     }
    ]
+  },
+  {
+   "id": "ict-applications-051",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "FASTag, used for paying toll on national highways without stopping the vehicle, works on which technology?",
+    "options": [
+     "Bluetooth",
+     "Radio Frequency Identification (RFID)",
+     "Global Positioning System (GPS)",
+     "Infrared"
+    ],
+    "explanation": "A FASTag is a sticker with a tiny radio chip, fixed on the windscreen and linked to a prepaid account or bank account. When the vehicle passes the toll plaza, a reader picks up the tag's signal and the toll is deducted automatically.",
+    "notes": [
+     "Bluetooth links nearby devices such as a phone and a headset.",
+     "An RFID tag on the windscreen is read by a scanner at the toll plaza.",
+     "GPS finds the position of a vehicle; it is not what FASTag uses.",
+     "Infrared needs a clear line of sight and is not used in FASTag."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "ICT in transport"
+    ],
+    "facts": [
+     "FASTag: Radio Frequency Identification (RFID).",
+     "It became compulsory for four-wheelers on national highways in 2021."
+    ]
+   },
+   "hi": {
+    "q": "राष्ट्रीय राजमार्गों पर वाहन रोके बिना टोल चुकाने के लिए प्रयुक्त फास्टैग किस तकनीक पर कार्य करता है?",
+    "options": [
+     "ब्लूटूथ",
+     "रेडियो फ्रीक्वेंसी आइडेंटिफिकेशन (आरएफआईडी)",
+     "ग्लोबल पोजिशनिंग सिस्टम (जीपीएस)",
+     "इन्फ्रारेड"
+    ],
+    "explanation": "फास्टैग एक स्टिकर है जिसमें छोटी रेडियो चिप होती है; यह विंडस्क्रीन पर लगता है और प्रीपेड खाते या बैंक खाते से जुड़ा होता है। वाहन के टोल प्लाजा से गुजरने पर रीडर टैग का संकेत पकड़ लेता है और टोल अपने आप कट जाता है।",
+    "notes": [
+     "ब्लूटूथ फोन और हेडसेट जैसे पास के उपकरणों को जोड़ता है।",
+     "विंडस्क्रीन पर लगे आरएफआईडी टैग को टोल प्लाजा का स्कैनर पढ़ता है।",
+     "जीपीएस वाहन की स्थिति बताता है; फास्टैग इसका उपयोग नहीं करता।",
+     "इन्फ्रारेड को सीधी दृष्टि रेखा चाहिए और फास्टैग में इसका उपयोग नहीं होता।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "परिवहन में आईसीटी"
+    ],
+    "facts": [
+     "फास्टैग: रेडियो फ्रीक्वेंसी आइडेंटिफिकेशन (आरएफआईडी)।",
+     "राष्ट्रीय राजमार्गों पर चार पहिया वाहनों के लिए यह 2021 में अनिवार्य हुआ।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Electronics and Information Technology – Digital India",
+     "url": "https://www.digitalindia.gov.in/"
+    },
+    {
+     "source": "Press Information Bureau, Government of India",
+     "url": "https://pib.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-applications-052",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The 'DigiYatra' facility at Indian airports lets a passenger pass through the entry gate by means of:",
+    "options": [
+     "A printed boarding pass only",
+     "A fingerprint scan",
+     "Facial recognition",
+     "An iris scan"
+    ],
+    "explanation": "DigiYatra, begun in December 2022, is a paperless and contactless way of checking passengers at airports. The traveller registers once in the app with Aadhaar and a selfie, shares the boarding pass, and is then recognised by a camera at the gates.",
+    "notes": [
+     "DigiYatra is meant to do away with paper at the gate.",
+     "Fingerprints are not used in DigiYatra.",
+     "The passenger's face is matched with the details given in the app.",
+     "The iris is not scanned in DigiYatra."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "ICT in transport"
+    ],
+    "facts": [
+     "DigiYatra: entry at airports by facial recognition, begun in December 2022.",
+     "It is run by the DigiYatra Foundation, a not-for-profit company in which the Airports Authority of India holds 26 per cent."
+    ]
+   },
+   "hi": {
+    "q": "भारतीय हवाई अड्डों की 'डिजीयात्रा' सुविधा यात्री को प्रवेश द्वार से किसके आधार पर गुजरने देती है?",
+    "options": [
+     "केवल छपा हुआ बोर्डिंग पास",
+     "फिंगरप्रिंट स्कैन",
+     "चेहरे की पहचान",
+     "आइरिस स्कैन"
+    ],
+    "explanation": "दिसंबर 2022 में आरंभ डिजीयात्रा हवाई अड्डों पर यात्रियों की जाँच का कागज-रहित और संपर्क-रहित तरीका है। यात्री ऐप में आधार और सेल्फी से एक बार पंजीकरण करता है, बोर्डिंग पास साझा करता है, और फिर द्वारों पर कैमरा उसे पहचान लेता है।",
+    "notes": [
+     "डिजीयात्रा का उद्देश्य ही द्वार पर कागज की आवश्यकता समाप्त करना है।",
+     "डिजीयात्रा में फिंगरप्रिंट का उपयोग नहीं होता।",
+     "यात्री के चेहरे का मिलान ऐप में दिए गए विवरण से किया जाता है।",
+     "डिजीयात्रा में आइरिस स्कैन नहीं होता।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "परिवहन में आईसीटी"
+    ],
+    "facts": [
+     "डिजीयात्रा: चेहरे की पहचान से हवाई अड्डे में प्रवेश, दिसंबर 2022 में आरंभ।",
+     "इसे डिजीयात्रा फाउंडेशन चलाता है, जो एक गैर-लाभकारी कंपनी है और जिसमें भारतीय विमानपत्तन प्राधिकरण की 26 प्रतिशत हिस्सेदारी है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Electronics and Information Technology – Digital India",
+     "url": "https://www.digitalindia.gov.in/"
+    },
+    {
+     "source": "Press Information Bureau, Government of India",
+     "url": "https://pib.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-applications-053",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "UPI 123PAY, launched by the Reserve Bank of India in March 2022, lets people make UPI payments using:",
+    "options": [
+     "Only smartphones with an Internet connection",
+     "Only cards at ATMs",
+     "Only cheques at bank branches",
+     "Feature phones, even without the Internet"
+    ],
+    "explanation": "About 40 crore Indians use feature phones, which cannot run smartphone apps. UPI 123PAY, launched on 8 March 2022 together with DigiSaathi, the helpline for digital payments, lets them pay in four ways: calling an IVR number, an app on the phone, a missed call, or a sound-based payment made close to the shop's device.",
+    "notes": [
+     "Before 123PAY, UPI was used mainly through smartphone apps with the Internet.",
+     "ATMs give out cash against cards; 123PAY is not an ATM service.",
+     "Cheques are cleared through the banks, not through 123PAY.",
+     "123PAY works on ordinary keypad phones through a call to an IVR number, a missed call, an app or sound waves."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "ICT in banking"
+    ],
+    "facts": [
+     "UPI 123PAY: UPI for feature phones, launched in March 2022.",
+     "DigiSaathi (14431) is the helpline for digital payments."
+    ]
+   },
+   "hi": {
+    "q": "मार्च 2022 में भारतीय रिजर्व बैंक द्वारा आरंभ यूपीआई 123पे लोगों को किसके द्वारा यूपीआई भुगतान करने देता है?",
+    "options": [
+     "केवल इंटरनेट से जुड़े स्मार्टफोन",
+     "केवल एटीएम पर कार्ड",
+     "केवल बैंक शाखाओं में चेक",
+     "फीचर फोन, इंटरनेट के बिना भी"
+    ],
+    "explanation": "लगभग 40 करोड़ भारतीय फीचर फोन का प्रयोग करते हैं, जिन पर स्मार्टफोन ऐप नहीं चलते। 8 मार्च 2022 को डिजिटल भुगतान की हेल्पलाइन डिजीसाथी के साथ आरंभ यूपीआई 123पे उन्हें चार तरीकों से भुगतान करने देता है: आईवीआर नंबर पर कॉल, फोन पर ऐप, मिस्ड कॉल, या दुकान के उपकरण के पास ध्वनि-आधारित भुगतान।",
+    "notes": [
+     "123पे से पहले यूपीआई का प्रयोग मुख्यतः इंटरनेट वाले स्मार्टफोन ऐप से होता था।",
+     "एटीएम कार्ड से नकद देते हैं; 123पे एटीएम सेवा नहीं है।",
+     "चेक बैंकों के माध्यम से निपटाए जाते हैं, 123पे से नहीं।",
+     "123पे साधारण कीपैड फोन पर आईवीआर नंबर पर कॉल, मिस्ड कॉल, ऐप या ध्वनि तरंगों से कार्य करता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "बैंकिंग में आईसीटी"
+    ],
+    "facts": [
+     "यूपीआई 123पे: फीचर फोन के लिए यूपीआई, मार्च 2022 में आरंभ।",
+     "डिजीसाथी (14431) डिजिटल भुगतान की हेल्पलाइन है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Reserve Bank of India press release, 8 March 2022 – UPI for feature phones (UPI123Pay) and DigiSaathi",
+     "url": "https://www.rbi.org.in/SCRIPTs/BS_PressReleaseDisplay.aspx?prid=53385"
+    }
+   ]
+  },
+  {
+   "id": "ict-applications-054",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "ChatGPT, the artificial-intelligence chatbot released in November 2022, was developed by:",
+    "options": [
+     "OpenAI",
+     "Google",
+     "Meta",
+     "Amazon"
+    ],
+    "explanation": "ChatGPT is a 'generative' AI tool: it produces new text in answer to a question typed by the user. It is built on a large language model, a program trained on a very large amount of text, and the letters GPT stand for Generative Pre-trained Transformer.",
+    "notes": [
+     "OpenAI, a company based in San Francisco, released ChatGPT.",
+     "Google's chatbot is Gemini, earlier called Bard.",
+     "Meta's assistant is Meta AI, built on its Llama models.",
+     "Amazon's voice assistant is Alexa."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "Artificial intelligence"
+    ],
+    "facts": [
+     "ChatGPT: OpenAI, November 2022.",
+     "GPT: Generative Pre-trained Transformer."
+    ]
+   },
+   "hi": {
+    "q": "नवंबर 2022 में जारी कृत्रिम बुद्धिमत्ता चैटबॉट चैटजीपीटी किसने विकसित किया?",
+    "options": [
+     "ओपनएआई",
+     "गूगल",
+     "मेटा",
+     "अमेजन"
+    ],
+    "explanation": "चैटजीपीटी एक 'जनरेटिव' एआई साधन है: यह उपयोगकर्ता के लिखे प्रश्न के उत्तर में नया पाठ तैयार करता है। यह एक बड़े भाषा मॉडल पर बना है, अर्थात ऐसा प्रोग्राम जिसे बहुत बड़ी मात्रा के पाठ पर प्रशिक्षित किया गया है; जीपीटी का पूरा नाम जनरेटिव प्री-ट्रेंड ट्रांसफॉर्मर है।",
+    "notes": [
+     "सैन फ्रांसिस्को स्थित कंपनी ओपनएआई ने चैटजीपीटी जारी किया।",
+     "गूगल का चैटबॉट जेमिनी है, जिसे पहले बार्ड कहते थे।",
+     "मेटा का सहायक मेटा एआई है, जो उसके लामा मॉडलों पर बना है।",
+     "अमेजन का वॉइस असिस्टेंट एलेक्सा है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "कृत्रिम बुद्धिमत्ता"
+    ],
+    "facts": [
+     "चैटजीपीटी: ओपनएआई, नवंबर 2022।",
+     "जीपीटी: जनरेटिव प्री-ट्रेंड ट्रांसफॉर्मर।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Electronics and Information Technology – Digital India",
+     "url": "https://www.digitalindia.gov.in/"
+    },
+    {
+     "source": "Press Information Bureau, Government of India",
+     "url": "https://pib.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-applications-055",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "A video or audio clip in which a person's face or voice has been faked with the help of artificial intelligence is called a:",
+    "options": [
+     "Podcast",
+     "Hologram",
+     "Deepfake",
+     "Screencast"
+    ],
+    "explanation": "The word joins 'deep learning' and 'fake'. Deepfakes can make a person appear to say or do things that never happened, and are misused for fraud and for spreading false news. One should check the source before believing or forwarding a surprising clip.",
+    "notes": [
+     "A podcast is an audio programme made available on the Internet.",
+     "A hologram is a three-dimensional image made with light.",
+     "A deepfake is a false but realistic clip made with AI.",
+     "A screencast is a video recording of what appears on a computer screen."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "Artificial intelligence"
+    ],
+    "facts": [
+     "Deepfake: fake video or audio made with artificial intelligence.",
+     "The word comes from 'deep learning' and 'fake'."
+    ]
+   },
+   "hi": {
+    "q": "वह वीडियो या ऑडियो क्लिप क्या कहलाती है जिसमें कृत्रिम बुद्धिमत्ता की सहायता से किसी व्यक्ति का चेहरा या आवाज नकली बनाई गई हो?",
+    "options": [
+     "पॉडकास्ट",
+     "होलोग्राम",
+     "डीपफेक",
+     "स्क्रीनकास्ट"
+    ],
+    "explanation": "यह शब्द 'डीप लर्निंग' और 'फेक' को जोड़कर बना है। डीपफेक किसी व्यक्ति को ऐसा कहते या करते दिखा सकते हैं जो कभी हुआ ही नहीं, और इनका दुरुपयोग धोखाधड़ी और झूठे समाचार फैलाने में होता है। किसी चौंकाने वाली क्लिप पर विश्वास करने या उसे आगे भेजने से पहले उसका स्रोत जाँचना चाहिए।",
+    "notes": [
+     "पॉडकास्ट इंटरनेट पर उपलब्ध कराया गया ऑडियो कार्यक्रम है।",
+     "होलोग्राम प्रकाश से बना त्रि-आयामी चित्र है।",
+     "डीपफेक एआई से बनी झूठी पर वास्तविक लगने वाली क्लिप है।",
+     "स्क्रीनकास्ट कंप्यूटर स्क्रीन पर दिखने वाली सामग्री की वीडियो रिकॉर्डिंग है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "कृत्रिम बुद्धिमत्ता"
+    ],
+    "facts": [
+     "डीपफेक: कृत्रिम बुद्धिमत्ता से बना नकली वीडियो या ऑडियो।",
+     "यह शब्द 'डीप लर्निंग' और 'फेक' से बना है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Electronics and Information Technology – Digital India",
+     "url": "https://www.digitalindia.gov.in/"
+    },
+    {
+     "source": "Press Information Bureau, Government of India",
+     "url": "https://pib.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-applications-056",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The PM-WANI scheme, approved in December 2020, aims to spread:",
+    "options": [
+     "Free laptops for college students",
+     "Public Wi-Fi hotspots through Public Data Offices",
+     "Optical fibre to every household",
+     "Satellite phones in border villages"
+    ],
+    "explanation": "PM-WANI stands for Prime Minister's Wi-Fi Access Network Interface. Like the public call offices (PCOs) of earlier days, a Public Data Office sells Internet access through Wi-Fi to people nearby, which helps those who cannot afford costly mobile data.",
+    "notes": [
+     "Giving laptops is not the purpose of PM-WANI.",
+     "Small shopkeepers can set up Wi-Fi hotspots as Public Data Offices without a licence.",
+     "Taking fibre into every home is not the aim of PM-WANI, which works through Wi-Fi hotspots.",
+     "Satellite phones are not part of PM-WANI."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "Public connectivity"
+    ],
+    "facts": [
+     "PM-WANI: Prime Minister's Wi-Fi Access Network Interface (2020).",
+     "Public Data Offices need no licence or fee."
+    ]
+   },
+   "hi": {
+    "q": "दिसंबर 2020 में स्वीकृत पीएम-वाणी योजना का उद्देश्य किसका प्रसार करना है?",
+    "options": [
+     "महाविद्यालय के विद्यार्थियों को निःशुल्क लैपटॉप",
+     "पब्लिक डेटा ऑफिस के माध्यम से सार्वजनिक वाई-फाई हॉटस्पॉट",
+     "हर घर तक ऑप्टिकल फाइबर",
+     "सीमावर्ती गाँवों में सैटेलाइट फोन"
+    ],
+    "explanation": "पीएम-वाणी का पूरा नाम प्राइम मिनिस्टर्स वाई-फाई एक्सेस नेटवर्क इंटरफेस है। पहले के पीसीओ की तरह पब्लिक डेटा ऑफिस आसपास के लोगों को वाई-फाई से इंटरनेट बेचता है, जिससे उन लोगों को सहायता मिलती है जो महँगा मोबाइल डेटा नहीं ले सकते।",
+    "notes": [
+     "लैपटॉप देना पीएम-वाणी का उद्देश्य नहीं है।",
+     "छोटे दुकानदार बिना लाइसेंस के पब्लिक डेटा ऑफिस के रूप में वाई-फाई हॉटस्पॉट लगा सकते हैं।",
+     "हर घर तक फाइबर पहुँचाना पीएम-वाणी का उद्देश्य नहीं है; यह वाई-फाई हॉटस्पॉट से कार्य करती है।",
+     "सैटेलाइट फोन पीएम-वाणी का भाग नहीं हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "सार्वजनिक संपर्क सुविधा"
+    ],
+    "facts": [
+     "पीएम-वाणी: प्राइम मिनिस्टर्स वाई-फाई एक्सेस नेटवर्क इंटरफेस (2020)।",
+     "पब्लिक डेटा ऑफिस के लिए कोई लाइसेंस या शुल्क नहीं चाहिए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Electronics and Information Technology – Digital India",
+     "url": "https://www.digitalindia.gov.in/"
+    },
+    {
+     "source": "Press Information Bureau, Government of India",
+     "url": "https://pib.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "ict-applications-057",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The e-Shram portal, launched in August 2021, is a national database of:",
+    "options": [
+     "Farmers",
+     "Income-tax payers",
+     "School teachers",
+     "Unorganised workers"
+    ],
+    "explanation": "The Ministry of Labour and Employment built e-Shram to bring construction workers, migrant workers, street vendors, domestic workers and others on one list, linked with Aadhaar. Each registered worker gets a 12-digit Universal Account Number, which helps in delivering social-security schemes.",
+    "notes": [
+     "Farmers are registered under schemes such as PM-KISAN.",
+     "Taxpayers use the income-tax e-filing portal.",
+     "Data on teachers are kept in UDISE+.",
+     "e-Shram registers workers of the unorganised sector."
+    ],
+    "path": [
+     "ICT",
+     "Applications of ICT",
+     "Citizen databases"
+    ],
+    "facts": [
+     "e-Shram portal (2021): national database of unorganised workers.",
+     "Each worker gets a 12-digit Universal Account Number."
+    ]
+   },
+   "hi": {
+    "q": "अगस्त 2021 में आरंभ ई-श्रम पोर्टल किनका राष्ट्रीय डेटाबेस है?",
+    "options": [
+     "किसान",
+     "आयकरदाता",
+     "विद्यालयों के शिक्षक",
+     "असंगठित कामगार"
+    ],
+    "explanation": "श्रम एवं रोजगार मंत्रालय ने ई-श्रम इसलिए बनाया कि निर्माण श्रमिक, प्रवासी श्रमिक, रेहड़ी-पटरी वाले, घरेलू कामगार और अन्य एक ही सूची में, आधार से जुड़कर, आ जाएँ। हर पंजीकृत कामगार को 12 अंकों का यूनिवर्सल अकाउंट नंबर मिलता है, जिससे सामाजिक सुरक्षा योजनाएँ पहुँचाने में सहायता मिलती है।",
+    "notes": [
+     "किसानों का पंजीकरण पीएम-किसान जैसी योजनाओं में होता है।",
+     "करदाता आयकर ई-फाइलिंग पोर्टल का उपयोग करते हैं।",
+     "शिक्षकों के आँकड़े यूडाइस+ में रखे जाते हैं।",
+     "ई-श्रम असंगठित क्षेत्र के कामगारों का पंजीकरण करता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "आईसीटी के अनुप्रयोग",
+     "नागरिक डेटाबेस"
+    ],
+    "facts": [
+     "ई-श्रम पोर्टल (2021): असंगठित कामगारों का राष्ट्रीय डेटाबेस।",
+     "हर कामगार को 12 अंकों का यूनिवर्सल अकाउंट नंबर मिलता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Electronics and Information Technology – Digital India",
+     "url": "https://www.digitalindia.gov.in/"
+    },
+    {
+     "source": "Press Information Bureau, Government of India",
+     "url": "https://pib.gov.in/"
+    }
+   ]
   }
  ]
 }

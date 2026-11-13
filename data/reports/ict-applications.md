@@ -32,3 +32,17 @@ Corrected:
 Replaced: none.
 
 Not verified: DISE start year. Most sources (including NIEPA's A. C. Mehta) give 1995, but one says 1994 (42 districts of DPEP phase I). The key (NIEPA) is not affected. The SAKSHAM portal page could not be opened directly; its purpose is confirmed by news reports and by the UGC task force report of 2013.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+
+Checked: 051–057 (7). Overlap check against the whole bank (data/*.json) done. Confirmed: FASTag compulsory from midnight of 15/16 February 2021 for four-wheelers and above; DigiYatra from 1 December 2022 (Delhi, Bengaluru, Varanasi); ChatGPT by OpenAI, November 2022; PM-WANI approved by the Cabinet on 9 December 2020 (no licence, registration or fee for PDOs); e-Shram launched 26 August 2021 with a 12-digit UAN.
+
+Corrected:
+- 052: fact said the DigiYatra Foundation is 'under the Ministry of Civil Aviation'; it is a not-for-profit company in which the Airports Authority of India holds 26 per cent. Reworded (EN and HI). Source: news reports of December 2022; DigiYatra Foundation.
+- 055: option D 'Webinar' and its note defined a webinar, the answer of edtech-040. Option D is now 'Screencast'.
+- 056: note C said BharatNet lays fibre to gram panchayats, the answer of 029. Reworded to say only that PM-WANI does not take fibre into homes.
+
+Replaced (same id, level, path and answer letter):
+- 053 (digital rupee issued by the RBI): stated in a note of 030 and a fact of sci-tech-011. Now: UPI 123PAY for feature phones (launched by the RBI on 8 March 2022, with the DigiSaathi helpline). Source: RBI press release of 8 March 2022.
+
+Facts I could not confirm online: none.

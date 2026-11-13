@@ -70,3 +70,18 @@ Replaced (same id, level and path stem):
 - 050 (purpose of CC): duplicated 030 (BCC) and its notes gave 030 away. Now: standard that lets e-mail carry attachments (MIME).
 
 Not verified: nothing outstanding.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+
+Checked: 051–058 (8). Overlap check against the whole bank (data/*.json) done. Facts of 055 (HTTP 403/404/503), 056 (ICANN, 1998, Los Angeles; W3C 1994) and 057 confirmed.
+
+Corrected:
+- 058: option C 'Digital divide' and its note defined the digital divide, the answer of ict-applications-003. Option C is now 'Digital wallet' (EN and HI).
+
+Replaced (same id, level, path and answer letter):
+- 051 (Bluetooth links a phone and headset): stated in the explanation of 028. Now: origin of the name Bluetooth (King Harald Bluetooth; name suggested by Jim Kardach of Intel in 1997). Source: Bluetooth SIG, 'bluetooth-origin' page.
+- 052 (5G launched 1 October 2022): the same question as sci-tech-007. Now: full form of LTE (Long-Term Evolution); India's first 4G service Airtel, Kolkata, April 2012. Source: Airtel press release of 10 April 2012; 3GPP.
+- 053 (MAC address, 48 bits): stated in the facts of 026. Now: loopback address 127.0.0.1. Source: RFC 1122, RFC 4291.
+- 054 (blog): defined in a note of edtech-040. Now: vlog (video blog).
+
+Facts I could not confirm online: none.

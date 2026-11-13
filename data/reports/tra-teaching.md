@@ -50,3 +50,9 @@ I solved every key blind first, and each one matched the draft and the standard 
 - Replaced (re-aimed):
   - 011: now asks the aim of Morrison's understanding level. Its earlier contrast with the memory level overlapped 013 and 010.
   - 037: now asks Knowles' readiness-to-learn assumption. The earlier stem ("the adult learner") gave away the answer of 036.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+- Checked 8 new questions (041 042 043 044 045 046 047 048). All answer keys are correct. Confirmed: Wood, Bruner and Ross 1976 (scaffolding); Bandura 1977; Maslow 1943; Aronson's jigsaw classroom, 1971, Austin (jigsaw.org); Allen and Ryan 1969; Passi 1976; Rowe's wait time (about one second usual, three seconds or more better; JRST 11(2), 1974); Salamanca Statement 1994; RPwD Act 2016, section 2(m). No clash with other questions in the bank.
+- Corrected:
+  - 046: the Hindi stem and fact used only 'विन्यास प्रेरण', which is not the usual Hindi term. They now say 'विन्यास प्रेरण या प्रस्तावना कौशल (सेट इंडक्शन)', as the explanation and 022/023 do (the path is unchanged).
+- Replaced: none.

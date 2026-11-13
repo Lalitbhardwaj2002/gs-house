@@ -36,3 +36,8 @@ NCERT Class 11 Statistics for Economics Ch. 3 and Ch. 4 (kest103, kest104) were 
 - Corrected: tra-data-039 (note B wrongly tied life histories to the depth interview; now the life-history method).
 - Corrected: tra-data-006 (Hindi note terms aligned: 'समाजालेख', 'स्टार').
 - Replaced: none.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+- Checked 4 new questions (041 042 043 044). All answer keys are correct. Confirmed: Laney's META Group note of 6 February 2001 (volume, velocity, variety); Fisher, Statistical Methods for Research Workers, 1925; Siegel 1956; Galton, Journal of the Anthropological Institute 15, 1886. No clash with other questions (research-021/022 ask about Type I error at a set level, not about repeated t-tests).
+- Corrected: none. Nothing needed changing in this file.
+- Replaced: none.

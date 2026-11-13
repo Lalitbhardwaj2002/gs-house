@@ -152,6 +152,11 @@ const T = {
     keysHint: 'Keyboard: A–D or 1–4 to answer · Enter for the next question', keysPause: ' · P to pause',
     sideWait: 'The explanation appears here once you answer.',
     bookCardTitle: 'Study with the book: Ghatna Chakra (new edition)',
+    netTitle: 'NET / JRF corner', netRibbon: 'Opening soon',
+    netTeaser: 'Five doors are being built for NET and JRF aspirants. They are still locked, but you may peek inside: tap a subject.',
+    netPeek: 'Locked · tap to peek', netPeeking: 'Peeking inside · tap to close', netInside: 'Inside', netGet: 'You will get',
+    netGetList: ['Unit-wise notes', 'Exam-pattern questions', 'Timed mock tests', 'Hindi + English'],
+    netFoot: 'Until the doors open: the Teaching & Research Aptitude and ICT sections of the quiz already cover several units of NET Paper 1 (teaching, research, data, ICT and higher education).',
     bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank: all 17 topics, from current affairs to computers, each with a full test.',
     bookRefLine: 'Reference',
     notesPdf: 'All notes as one PDF', chapterPdf: 'Save this chapter as PDF', pdfTitle: 'Notes for offline reading',
@@ -223,6 +228,11 @@ const T = {
     keysHint: 'कीबोर्ड: उत्तर के लिए A–D या 1–4 · अगले प्रश्न के लिए Enter', keysPause: ' · रोकने के लिए P',
     sideWait: 'उत्तर देते ही व्याख्या यहाँ दिखेगी।',
     bookCardTitle: 'पुस्तक के साथ पढ़ें: घटना चक्र (नया संस्करण)',
+    netTitle: 'नेट / जेआरएफ कॉर्नर', netRibbon: 'शीघ्र खुल रहा है',
+    netTeaser: 'नेट और जेआरएफ के अभ्यर्थियों के लिए पाँच द्वार बन रहे हैं। वे अभी बंद हैं, पर आप भीतर झाँक सकते हैं: किसी विषय पर टैप कीजिए।',
+    netPeek: 'बंद है · झाँकने के लिए टैप करें', netPeeking: 'भीतर की झलक · बंद करने के लिए टैप करें', netInside: 'भीतर क्या है', netGet: 'आपको मिलेगा',
+    netGetList: ['इकाईवार नोट्स', 'परीक्षा-पैटर्न के प्रश्न', 'समयबद्ध मॉक टेस्ट', 'हिंदी + अंग्रेजी'],
+    netFoot: 'द्वार खुलने तक: प्रश्नोत्तरी के शिक्षण एवं शोध अभियोग्यता और आईसीटी खंड नेट प्रश्नपत्र 1 की कई इकाइयाँ (शिक्षण, शोध, आँकड़े, आईसीटी और उच्च शिक्षा) पहले से कवर करते हैं।',
     bookRefLine: 'संदर्भ',
     notesPdf: 'सभी नोट्स एक PDF में', chapterPdf: 'इस अध्याय को PDF में सहेजें', pdfTitle: 'बिना इंटरनेट पढ़ने के लिए नोट्स',
     pdfHow: 'नीचे का बटन दबाएँ, फिर प्रिंटर के रूप में "Save as PDF" चुनें। फोन पर यही बटन प्रिंट खोलता है, जहाँ से PDF सहेजी जा सकती है।',
@@ -1601,8 +1611,57 @@ function renderHome() {
     <section class="card book-entry">
       <div class="book-entry-head"><span class="book-emoji">📚</span><div><h2>${t('bookCardTitle')}</h2><p class="muted small">${t('bookCardSub')}</p></div></div>
       <button class="btn big" data-action="book">${t('bookOpen')} ▶</button>
-    </section>`}
+    </section>
+    ${netHTML()}`}
     ${historyHTML()}`;
+}
+
+// NET / JRF corner: subjects that are still to come. Each is a locked "door" on the home screen;
+// tapping it shows what the subject will hold. The unit lists follow the official syllabi.
+const NET_GROUPS = [
+  { en: 'UGC NET · Paper 2', hi: 'यूजीसी नेट · प्रश्नपत्र 2', subjects: [
+    { icon: '🎓', en: 'Education', hi: 'शिक्षाशास्त्र',
+      unitsEn: 'Ten units: educational studies; history, politics and economics of education; the learner and learning; teacher education; curriculum; research in education; pedagogy and assessment; technology in education; management and leadership; inclusive education.',
+      unitsHi: 'दस इकाइयाँ: शैक्षिक अध्ययन; शिक्षा का इतिहास, राजनीति एवं अर्थशास्त्र; अधिगमकर्ता एवं अधिगम; शिक्षक शिक्षा; पाठ्यचर्या; शिक्षा में शोध; शिक्षणशास्त्र एवं आकलन; शिक्षा में प्रौद्योगिकी; प्रबंधन एवं नेतृत्व; समावेशी शिक्षा।' },
+    { icon: '🏛️', en: 'Political Science', hi: 'राजनीति विज्ञान',
+      unitsEn: 'Ten units: political theory; Western and Indian political thought; comparative politics; international relations; the foreign policy of India; political institutions and processes in India; public administration; governance and public policy.',
+      unitsHi: 'दस इकाइयाँ: राजनीतिक सिद्धांत; पाश्चात्य एवं भारतीय राजनीतिक चिंतन; तुलनात्मक राजनीति; अंतरराष्ट्रीय संबंध; भारत की विदेश नीति; भारत की राजनीतिक संस्थाएँ एवं प्रक्रियाएँ; लोक प्रशासन; शासन एवं लोक नीति।' },
+    { icon: '💼', en: 'Commerce', hi: 'वाणिज्य',
+      unitsEn: 'Ten units: business environment; accounting and auditing; business economics; business finance; statistics and research methods; management and human resources; banking and financial institutions; marketing; business law; income tax and tax planning.',
+      unitsHi: 'दस इकाइयाँ: व्यावसायिक पर्यावरण; लेखांकन एवं अंकेक्षण; व्यावसायिक अर्थशास्त्र; व्यावसायिक वित्त; सांख्यिकी एवं शोध विधियाँ; प्रबंधन एवं मानव संसाधन; बैंकिंग एवं वित्तीय संस्थाएँ; विपणन; व्यावसायिक विधि; आयकर एवं कर नियोजन।' },
+  ] },
+  { en: 'CSIR NET', hi: 'सीएसआईआर नेट', subjects: [
+    { icon: '➗', en: 'Mathematics', hi: 'गणित',
+      unitsEn: 'Four units: analysis and linear algebra; complex analysis, algebra and topology; differential equations, numerical analysis and mechanics; statistics.',
+      unitsHi: 'चार इकाइयाँ: विश्लेषण एवं रैखिक बीजगणित; सम्मिश्र विश्लेषण, बीजगणित एवं टोपोलॉजी; अवकल समीकरण, संख्यात्मक विश्लेषण एवं यांत्रिकी; सांख्यिकी।' },
+    { icon: '🧬', en: 'Life Science', hi: 'जीव विज्ञान',
+      unitsEn: 'Thirteen units: from molecules and cells to physiology, genetics, ecology, evolution, applied biology and the methods of biology.',
+      unitsHi: 'तेरह इकाइयाँ: अणुओं और कोशिकाओं से लेकर कार्यिकी, आनुवंशिकी, पारिस्थितिकी, विकास, अनुप्रयुक्त जीव विज्ञान और जीव विज्ञान की विधियों तक।' },
+  ] },
+];
+function netHTML() {
+  const hi = lang === 'hi';
+  const chips = t('netGetList').map((c) => `<span>${esc(c)}</span>`).join('');
+  const groups = NET_GROUPS.map((g) => `
+      <div class="net-group">
+        <h3>${esc(hi ? g.hi : g.en)}</h3>
+        ${g.subjects.map((x) => `
+        <details class="net-door">
+          <summary><span class="net-ico">${x.icon}</span><span class="net-name"><b>${esc(hi ? x.hi : x.en)}</b><small class="net-shut">${t('netPeek')}</small><small class="net-ajar">${t('netPeeking')}</small></span><span class="net-lock" aria-hidden="true"></span></summary>
+          <div class="net-peek">
+            <p><b>${t('netInside')}:</b> ${esc(hi ? x.unitsHi : x.unitsEn)}</p>
+            <p><b>${t('netGet')}:</b></p>
+            <div class="net-chips">${chips}</div>
+          </div>
+        </details>`).join('')}
+      </div>`).join('');
+  return `
+    <section class="net-card" aria-label="${t('netTitle')}">
+      <span class="net-ribbon">✨ ${t('netRibbon')}</span>
+      <div class="net-head"><span class="net-emoji">🚪</span><h2>${t('netTitle')}</h2></div>
+      <p class="net-teaser">${t('netTeaser')}</p>${groups}
+      <p class="net-foot">🪔 ${t('netFoot')}</p>
+    </section>`;
 }
 
 function showBusy(message) {

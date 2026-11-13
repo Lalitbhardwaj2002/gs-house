@@ -49,3 +49,12 @@ Note: the official NTA syllabus PDF could not be fetched. Questions 035 and 040 
 - Corrected: tra-evaluation-008 (Hindi explanation/fact 'स्थापन', 'प्रवेश व्यवहार' -> 'स्थानन', 'प्रारंभिक व्यवहार', matching the options and 002/003).
 - Corrected: tra-evaluation-038 (Hindi option C reworded to 'स्वतःपूर्ण भविष्यवाणी').
 - Replaced: none.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+- Checked 6 new questions (041 042 043 044 045 046). All answer keys are correct. Confirmed: Cronbach and Meehl 1955; Wiggins 1989 (Phi Delta Kappan 70(9)) and 1990; Alderson and Wall 1993; NEP 2020 para 4.35; PARAKH Rashtriya Sarvekshan on 4 December 2024 for Classes 3, 6 and 9; NAS 2021 for Classes 3, 5, 8 and 10.
+- Corrected:
+  - 045: option B said '360-degree report', and 034 already states 'a holistic 360-degree progress card', so it gave the answer away. Option B now says the card adds self- and peer assessment to the teacher's assessment and reports progress in every domain (NEP 2020, para 4.35).
+  - 046: option D and the explanation said the classes come after the end of each stage and that pupils were tested at the start of the next one. The Ministry of Education said the survey was meant to gauge competency at the end of the foundational, preparatory and middle stages for Grades 3, 6 and 9. Option D, note D and the explanation now say this (source: Ministry of Education/PIB release of 3 December 2024; parakh.ncert.gov.in/prs).
+  - 041: Hindi 'निर्मित वैधता' changed to 'निर्मिति वैधता' to match 'निर्मितियाँ' in the explanation; face validity is now 'आभासी वैधता', as in 014.
+  - 042: Hindi 'शतमक स्थान' changed to 'शततमक क्रम', the term used in 006 and 012.
+- Replaced: none.

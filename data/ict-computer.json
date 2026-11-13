@@ -3158,6 +3158,502 @@
      "url": "https://amturing.acm.org/"
     }
    ]
+  },
+  {
+   "id": "ict-computer-051",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which language, written only in 0s and 1s, can a computer execute directly without any translation?",
+    "options": [
+     "Machine language",
+     "Assembly language",
+     "High-level language",
+     "Markup language"
+    ],
+    "explanation": "Every program must finally be turned into machine language, the pattern of 0s and 1s that the processor carries out. Assembly language and high-level languages were invented because writing long programs in binary is slow and full of errors.",
+    "notes": [
+     "Machine language is the binary code that the processor itself understands.",
+     "Assembly language uses short words (mnemonics) and needs an assembler.",
+     "A high-level language needs a compiler or an interpreter.",
+     "A markup language such as HTML only describes how a page is laid out."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Computer languages",
+     "Machine language"
+    ],
+    "facts": [
+     "Machine language: binary code, needs no translator.",
+     "Assembly language is translated by an assembler."
+    ]
+   },
+   "hi": {
+    "q": "केवल 0 और 1 में लिखी कौन-सी भाषा कंप्यूटर बिना किसी अनुवाद के सीधे चला सकता है?",
+    "options": [
+     "मशीन भाषा",
+     "असेंबली भाषा",
+     "उच्च-स्तरीय भाषा",
+     "मार्कअप भाषा"
+    ],
+    "explanation": "हर प्रोग्राम को अंततः मशीन भाषा में बदलना पड़ता है, जो 0 और 1 का वह क्रम है जिसे प्रोसेसर चलाता है। असेंबली भाषा और उच्च-स्तरीय भाषाएँ इसलिए बनीं कि बाइनरी में लंबे प्रोग्राम लिखना धीमा और त्रुटियों से भरा होता है।",
+    "notes": [
+     "मशीन भाषा वह बाइनरी कोड है जिसे प्रोसेसर स्वयं समझता है।",
+     "असेंबली भाषा छोटे शब्दों (निमोनिक) का प्रयोग करती है और उसे असेंबलर चाहिए।",
+     "उच्च-स्तरीय भाषा को कंपाइलर या इंटरप्रेटर चाहिए।",
+     "एचटीएमएल जैसी मार्कअप भाषा केवल यह बताती है कि पृष्ठ कैसा दिखेगा।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कंप्यूटर भाषाएँ",
+     "मशीन भाषा"
+    ],
+    "facts": [
+     "मशीन भाषा: बाइनरी कोड, अनुवादक की आवश्यकता नहीं।",
+     "असेंबली भाषा का अनुवाद असेंबलर करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, chapters 'Computer System' and 'Encoding Schemes and Number System'",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-052",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Python, a popular high-level programming language first released in 1991, was created by:",
+    "options": [
+     "James Gosling",
+     "Bjarne Stroustrup",
+     "Guido van Rossum",
+     "Dennis Ritchie"
+    ],
+    "explanation": "Guido van Rossum began work on Python in December 1989 at the CWI research institute in Amsterdam and released it in February 1991. He named it after the British comedy show 'Monty Python's Flying Circus', not after the snake. Its simple, readable code has made it a common first programming language in schools.",
+    "notes": [
+     "James Gosling created Java at Sun Microsystems.",
+     "Bjarne Stroustrup created C++.",
+     "Guido van Rossum created Python in the Netherlands.",
+     "Dennis Ritchie created the C language at Bell Labs."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Computer languages",
+     "High-level languages"
+    ],
+    "facts": [
+     "Python: Guido van Rossum, first released in 1991.",
+     "Java: James Gosling; C++: Bjarne Stroustrup."
+    ]
+   },
+   "hi": {
+    "q": "1991 में पहली बार जारी लोकप्रिय उच्च-स्तरीय प्रोग्रामिंग भाषा पायथन किसने बनाई?",
+    "options": [
+     "जेम्स गोसलिंग",
+     "ब्यार्ने स्ट्राउस्ट्रप",
+     "गुइडो वान रोसुम",
+     "डेनिस रिची"
+    ],
+    "explanation": "गुइडो वान रोसुम ने दिसंबर 1989 में एम्सटर्डम के सीडब्ल्यूआई शोध संस्थान में पायथन पर कार्य आरंभ किया और फरवरी 1991 में इसे जारी किया। उन्होंने इसका नाम साँप पर नहीं, बल्कि ब्रिटिश हास्य कार्यक्रम 'मॉन्टी पायथन्स फ्लाइंग सर्कस' पर रखा। सरल और पढ़ने में आसान कोड के कारण यह विद्यालयों में प्रायः पहली प्रोग्रामिंग भाषा के रूप में सिखाई जाती है।",
+    "notes": [
+     "जेम्स गोसलिंग ने सन माइक्रोसिस्टम्स में जावा बनाई।",
+     "ब्यार्ने स्ट्राउस्ट्रप ने सी++ बनाई।",
+     "गुइडो वान रोसुम ने नीदरलैंड्स में पायथन बनाई।",
+     "डेनिस रिची ने बेल लैब्स में सी भाषा बनाई।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कंप्यूटर भाषाएँ",
+     "उच्च-स्तरीय भाषाएँ"
+    ],
+    "facts": [
+     "पायथन: गुइडो वान रोसुम, पहली बार 1991 में जारी।",
+     "जावा: जेम्स गोसलिंग; सी++: ब्यार्ने स्ट्राउस्ट्रप।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Encyclopaedia Britannica – Python (computer language)",
+     "url": "https://www.britannica.com/technology/Python-computer-language"
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, chapter 'Computer System'",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-053",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "In most Windows programs, which keyboard shortcut undoes the last action?",
+    "options": [
+     "Ctrl + Y",
+     "Ctrl + Z",
+     "Ctrl + X",
+     "Ctrl + S"
+    ],
+    "explanation": "The common editing shortcuts are the same in almost every program: Ctrl + C to copy, Ctrl + X to cut, Ctrl + V to paste, Ctrl + Z to undo and Ctrl + Y to redo.",
+    "notes": [
+     "Ctrl + Y repeats or redoes an action.",
+     "Ctrl + Z undoes the last action.",
+     "Ctrl + X cuts the selected text or object.",
+     "Ctrl + S saves the file."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Keyboard shortcuts",
+     "Editing shortcuts"
+    ],
+    "facts": [
+     "Ctrl + Z: undo; Ctrl + Y: redo.",
+     "Ctrl + C: copy; Ctrl + X: cut; Ctrl + V: paste."
+    ]
+   },
+   "hi": {
+    "q": "अधिकांश विंडोज प्रोग्रामों में कौन-सा कीबोर्ड शॉर्टकट अंतिम क्रिया को पूर्ववत (अनडू) करता है?",
+    "options": [
+     "Ctrl + Y",
+     "Ctrl + Z",
+     "Ctrl + X",
+     "Ctrl + S"
+    ],
+    "explanation": "संपादन के सामान्य शॉर्टकट लगभग हर प्रोग्राम में एक जैसे हैं: कॉपी के लिए Ctrl + C, कट के लिए Ctrl + X, पेस्ट के लिए Ctrl + V, अनडू के लिए Ctrl + Z और रीडू के लिए Ctrl + Y।",
+    "notes": [
+     "Ctrl + Y क्रिया को दोहराता या रीडू करता है।",
+     "Ctrl + Z अंतिम क्रिया को पूर्ववत करता है।",
+     "Ctrl + X चुने हुए पाठ या वस्तु को कट करता है।",
+     "Ctrl + S फाइल को सेव करता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कीबोर्ड शॉर्टकट",
+     "संपादन के शॉर्टकट"
+    ],
+    "facts": [
+     "Ctrl + Z: अनडू; Ctrl + Y: रीडू।",
+     "Ctrl + C: कॉपी; Ctrl + X: कट; Ctrl + V: पेस्ट।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, chapters 'Computer System' and 'Encoding Schemes and Number System'",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-054",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "A file with the extension '.xlsx' is normally created in:",
+    "options": [
+     "MS Word",
+     "MS PowerPoint",
+     "MS Access",
+     "MS Excel"
+    ],
+    "explanation": "The extension is the part of a file name after the dot, and it tells the computer which program should open the file. Excel workbooks are saved as .xlsx; before 2007 they were saved as .xls.",
+    "notes": [
+     "MS Word documents have the extension .docx.",
+     "MS PowerPoint presentations have the extension .pptx.",
+     "MS Access databases have the extension .accdb.",
+     "MS Excel workbooks have the extension .xlsx."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Files and folders",
+     "File extensions"
+    ],
+    "facts": [
+     ".docx: Word; .xlsx: Excel; .pptx: PowerPoint.",
+     "The extension shows the type of a file."
+    ]
+   },
+   "hi": {
+    "q": "'.xlsx' एक्सटेंशन वाली फाइल सामान्यतः किसमें बनाई जाती है?",
+    "options": [
+     "एमएस वर्ड",
+     "एमएस पावरपॉइंट",
+     "एमएस एक्सेस",
+     "एमएस एक्सेल"
+    ],
+    "explanation": "एक्सटेंशन फाइल के नाम का बिंदु के बाद का भाग है, और यह कंप्यूटर को बताता है कि फाइल किस प्रोग्राम से खुलेगी। एक्सेल की वर्कबुक .xlsx के रूप में सेव होती है; 2007 से पहले यह .xls के रूप में सेव होती थी।",
+    "notes": [
+     "एमएस वर्ड के दस्तावेजों का एक्सटेंशन .docx होता है।",
+     "एमएस पावरपॉइंट की प्रस्तुतियों का एक्सटेंशन .pptx होता है।",
+     "एमएस एक्सेस के डेटाबेस का एक्सटेंशन .accdb होता है।",
+     "एमएस एक्सेल की वर्कबुक का एक्सटेंशन .xlsx होता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "फाइलें एवं फोल्डर",
+     "फाइल एक्सटेंशन"
+    ],
+    "facts": [
+     ".docx: वर्ड; .xlsx: एक्सेल; .pptx: पावरपॉइंट।",
+     "एक्सटेंशन फाइल का प्रकार बताता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, chapters 'Computer System' and 'Encoding Schemes and Number System'",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-055",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The speed of a supercomputer is usually measured in:",
+    "options": [
+     "FLOPS",
+     "MIPS",
+     "bps",
+     "RPM"
+    ],
+    "explanation": "Supercomputers mostly do scientific calculations with decimal (floating-point) numbers, so their speed is given as the number of such operations per second. The TOP500 list ranks the world's fastest machines twice a year on this basis; in 2022 the American supercomputer Frontier became the first on the list to cross one exaflop, a billion billion operations per second.",
+    "notes": [
+     "FLOPS, floating-point operations per second, is the unit used to rank supercomputers.",
+     "MIPS, million instructions per second, was used for ordinary processors, not to rank supercomputers.",
+     "bps, bits per second, measures the speed of data transfer over a network.",
+     "RPM, revolutions per minute, gives how fast a hard disk spins."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Types of computers",
+     "Supercomputers"
+    ],
+    "facts": [
+     "Supercomputer speed: FLOPS (floating-point operations per second).",
+     "1 petaflop = 10¹⁵ FLOPS; 1 exaflop = 10¹⁸ FLOPS."
+    ]
+   },
+   "hi": {
+    "q": "सुपर कंप्यूटर की गति सामान्यतः किसमें मापी जाती है?",
+    "options": [
+     "फ्लॉप्स (FLOPS)",
+     "एमआईपीएस (MIPS)",
+     "बीपीएस (bps)",
+     "आरपीएम (RPM)"
+    ],
+    "explanation": "सुपर कंप्यूटर अधिकतर दशमलव (फ्लोटिंग-पॉइंट) संख्याओं वाली वैज्ञानिक गणनाएँ करते हैं, इसलिए उनकी गति ऐसी संक्रियाओं की प्रति सेकंड संख्या में बताई जाती है। टॉप500 सूची वर्ष में दो बार इसी आधार पर विश्व के सबसे तेज कंप्यूटरों को क्रम देती है; 2022 में अमेरिकी सुपर कंप्यूटर फ्रंटियर इस सूची में एक एक्साफ्लॉप, अर्थात एक अरब-अरब संक्रियाएँ प्रति सेकंड, पार करने वाला पहला कंप्यूटर बना।",
+    "notes": [
+     "फ्लॉप्स, अर्थात प्रति सेकंड फ्लोटिंग-पॉइंट संक्रियाएँ, सुपर कंप्यूटरों को क्रम देने की इकाई है।",
+     "एमआईपीएस, अर्थात प्रति सेकंड दस लाख निर्देश, साधारण प्रोसेसरों के लिए प्रयुक्त होता था, सुपर कंप्यूटरों को क्रम देने के लिए नहीं।",
+     "बीपीएस, अर्थात बिट प्रति सेकंड, नेटवर्क पर डेटा अंतरण की गति मापता है।",
+     "आरपीएम, अर्थात प्रति मिनट चक्कर, बताता है कि हार्ड डिस्क कितनी तेज घूमती है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कंप्यूटर के प्रकार",
+     "सुपर कंप्यूटर"
+    ],
+    "facts": [
+     "सुपर कंप्यूटर की गति: फ्लॉप्स (प्रति सेकंड फ्लोटिंग-पॉइंट संक्रियाएँ)।",
+     "1 पेटाफ्लॉप = 10¹⁵ फ्लॉप्स; 1 एक्साफ्लॉप = 10¹⁸ फ्लॉप्स।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Oak Ridge National Laboratory – Frontier supercomputer debuts as world's fastest, breaking exascale barrier (2022)",
+     "url": "https://www.ornl.gov/news/frontier-supercomputer-debuts-worlds-fastest-breaking-exascale-barrier"
+    },
+    {
+     "source": "TOP500",
+     "url": "https://www.top500.org/"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-056",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "A computer that combines the features of analog and digital computers is called a:",
+    "options": [
+     "Mainframe computer",
+     "Minicomputer",
+     "Hybrid computer",
+     "Microcomputer"
+    ],
+    "explanation": "An analog computer works with continuously changing quantities such as voltage or temperature; a digital computer works with numbers. A hybrid computer does both, as in a hospital machine that reads a patient's heartbeat and shows the result in digits.",
+    "notes": [
+     "A mainframe is a large digital computer serving many users at once.",
+     "A minicomputer is a mid-sized digital computer.",
+     "A hybrid computer measures like an analog computer and calculates like a digital one.",
+     "A microcomputer is a personal computer."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Types of computers",
+     "Hybrid computers"
+    ],
+    "facts": [
+     "Hybrid computer: analog + digital.",
+     "By size, computers are micro, mini, mainframe and super."
+    ]
+   },
+   "hi": {
+    "q": "एनालॉग और डिजिटल दोनों कंप्यूटरों की विशेषताओं वाला कंप्यूटर क्या कहलाता है?",
+    "options": [
+     "मेनफ्रेम कंप्यूटर",
+     "मिनी कंप्यूटर",
+     "हाइब्रिड कंप्यूटर",
+     "माइक्रो कंप्यूटर"
+    ],
+    "explanation": "एनालॉग कंप्यूटर वोल्टता या ताप जैसी लगातार बदलती राशियों पर कार्य करता है; डिजिटल कंप्यूटर संख्याओं पर। हाइब्रिड कंप्यूटर दोनों करता है, जैसे अस्पताल की वह मशीन जो रोगी की धड़कन पढ़कर परिणाम अंकों में दिखाती है।",
+    "notes": [
+     "मेनफ्रेम एक बड़ा डिजिटल कंप्यूटर है जो एक साथ अनेक उपयोगकर्ताओं की सेवा करता है।",
+     "मिनी कंप्यूटर मध्यम आकार का डिजिटल कंप्यूटर है।",
+     "हाइब्रिड कंप्यूटर एनालॉग की तरह मापता है और डिजिटल की तरह गणना करता है।",
+     "माइक्रो कंप्यूटर निजी कंप्यूटर है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "कंप्यूटर के प्रकार",
+     "हाइब्रिड कंप्यूटर"
+    ],
+    "facts": [
+     "हाइब्रिड कंप्यूटर: एनालॉग + डिजिटल।",
+     "आकार के आधार पर कंप्यूटर माइक्रो, मिनी, मेनफ्रेम और सुपर होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, chapters 'Computer System' and 'Encoding Schemes and Number System'",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-057",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "A 'Full HD' screen shows 1920 pixels across and 1080 pixels down. Its aspect ratio (width : height) is:",
+    "options": [
+     "4:3",
+     "16:9",
+     "3:2",
+     "5:4"
+    ],
+    "explanation": "The aspect ratio compares the width of a screen or picture with its height. Dividing both 1920 and 1080 by 120 gives 16 and 9, so a Full HD screen is a 16:9 widescreen, the shape now used by most televisions and computer monitors.",
+    "notes": [
+     "4:3 was the shape of older, almost square television and computer screens.",
+     "1920 ÷ 1080 reduces to 16 ÷ 9, the shape of widescreen displays.",
+     "3:2 would need 1620 pixels across for 1080 down; it is the shape of some laptops and of 35 mm photographs.",
+     "5:4 would need 1350 pixels across for 1080 down; it was used in some old monitors."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "Display and graphics",
+     "Aspect ratio"
+    ],
+    "facts": [
+     "Full HD: 1920 × 1080 pixels, aspect ratio 16:9.",
+     "Older screens had an aspect ratio of 4:3."
+    ]
+   },
+   "hi": {
+    "q": "'फुल एचडी' स्क्रीन में आड़े 1920 और खड़े 1080 पिक्सेल होते हैं। इसका आस्पेक्ट रेशियो (चौड़ाई : ऊँचाई) क्या है?",
+    "options": [
+     "4:3",
+     "16:9",
+     "3:2",
+     "5:4"
+    ],
+    "explanation": "आस्पेक्ट रेशियो स्क्रीन या चित्र की चौड़ाई की तुलना उसकी ऊँचाई से करता है। 1920 और 1080 दोनों को 120 से भाग देने पर 16 और 9 मिलते हैं, इसलिए फुल एचडी स्क्रीन 16:9 की वाइडस्क्रीन है, जो आज अधिकांश टेलीविजनों और कंप्यूटर मॉनिटरों का आकार है।",
+    "notes": [
+     "4:3 पुराने, लगभग वर्गाकार टेलीविजन और कंप्यूटर स्क्रीनों का आकार था।",
+     "1920 ÷ 1080 को सरल करने पर 16 ÷ 9 मिलता है, जो वाइडस्क्रीन डिस्प्ले का आकार है।",
+     "1080 खड़े पिक्सेल के साथ 3:2 के लिए 1620 आड़े पिक्सेल चाहिए; यह कुछ लैपटॉप और 35 मिमी फोटो का आकार है।",
+     "1080 खड़े पिक्सेल के साथ 5:4 के लिए 1350 आड़े पिक्सेल चाहिए; यह कुछ पुराने मॉनिटरों में था।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "डिस्प्ले एवं ग्राफिक्स",
+     "आस्पेक्ट रेशियो"
+    ],
+    "facts": [
+     "फुल एचडी: 1920 × 1080 पिक्सेल, आस्पेक्ट रेशियो 16:9।",
+     "पुराने स्क्रीनों का आस्पेक्ट रेशियो 4:3 था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, chapters 'Computer System' and 'Encoding Schemes and Number System'",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-computer-058",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The feature by which an operating system recognises a newly attached device, such as a pen drive, and sets it up without the user's help is called:",
+    "options": [
+     "Booting",
+     "Multitasking",
+     "Spooling",
+     "Plug and Play"
+    ],
+    "explanation": "Before Plug and Play, users often had to set switches on a card and install software by hand for every new device. Now the operating system notices a device as soon as it is connected through a port such as USB, finds a suitable driver and makes the device ready for use. Plug and Play became widespread with Windows 95.",
+    "notes": [
+     "Booting is the process of starting a computer and loading the operating system.",
+     "Multitasking is running several programs at the same time.",
+     "Spooling holds jobs, such as pages to be printed, in a queue until the device is free.",
+     "Plug and Play detects a new device and loads the right driver automatically."
+    ],
+    "path": [
+     "Computer Fundamentals",
+     "System programs",
+     "Device drivers"
+    ],
+    "facts": [
+     "Plug and Play (PnP): a new device is detected and set up automatically.",
+     "USB devices such as pen drives and mice are plug-and-play."
+    ]
+   },
+   "hi": {
+    "q": "वह सुविधा क्या कहलाती है जिससे ऑपरेटिंग सिस्टम पेन ड्राइव जैसे नए जोड़े गए उपकरण को पहचानकर उपयोगकर्ता की सहायता के बिना उपयोग के लिए तैयार कर देता है?",
+    "options": [
+     "बूटिंग",
+     "मल्टीटास्किंग",
+     "स्पूलिंग",
+     "प्लग एंड प्ले"
+    ],
+    "explanation": "प्लग एंड प्ले से पहले उपयोगकर्ता को प्रायः हर नए उपकरण के लिए कार्ड पर स्विच सेट करने पड़ते थे और सॉफ्टवेयर स्वयं इंस्टॉल करना पड़ता था। अब यूएसबी जैसे पोर्ट से उपकरण जुड़ते ही ऑपरेटिंग सिस्टम उसे पहचान लेता है, उपयुक्त ड्राइवर ढूँढता है और उपकरण को उपयोग के लिए तैयार कर देता है। प्लग एंड प्ले विंडोज 95 के साथ व्यापक रूप से प्रचलित हुआ।",
+    "notes": [
+     "बूटिंग कंप्यूटर को चालू करने और ऑपरेटिंग सिस्टम लोड करने की प्रक्रिया है।",
+     "मल्टीटास्किंग एक साथ कई प्रोग्राम चलाना है।",
+     "स्पूलिंग छापे जाने वाले पृष्ठों जैसे कार्यों को उपकरण खाली होने तक कतार में रखती है।",
+     "प्लग एंड प्ले नए उपकरण को पहचानकर सही ड्राइवर अपने आप लोड करता है।"
+    ],
+    "path": [
+     "कम्प्यूटर के मूल तत्व",
+     "सिस्टम प्रोग्राम",
+     "डिवाइस ड्राइवर"
+    ],
+    "facts": [
+     "प्लग एंड प्ले (पीएनपी): नया उपकरण अपने आप पहचाना और तैयार किया जाता है।",
+     "पेन ड्राइव और माउस जैसे यूएसबी उपकरण प्लग-एंड-प्ले होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, chapters 'Computer System' and 'Encoding Schemes and Number System'",
+     "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
   }
  ]
 }

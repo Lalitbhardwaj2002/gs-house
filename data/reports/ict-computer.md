@@ -41,3 +41,21 @@ Replaced (same id, level and path stem):
 - 044 (1 PB = 1024 TB): stated in the notes and facts of 017. Now: memory that must be refreshed periodically (DRAM).
 
 Not verified: nothing outstanding.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+
+Checked: 051–058 (8). Overlap check against the whole bank (data/*.json) done. Facts of 051, 053, 054 and 056 confirmed; no changes needed there.
+
+Corrected: none.
+
+Replaced (same id, level, path and answer letter):
+- 052 (COBOL was designed for business): already stated in the note and facts of 049. Now: creator of Python (Guido van Rossum, first released February 1991). Source: Encyclopaedia Britannica; Python history pages.
+- 055 (PARAM 8000 built by C-DAC): the same question as sci-tech-014. Now: unit of supercomputer speed (FLOPS; Frontier first past one exaflop on the TOP500 list, 2022). Source: Oak Ridge National Laboratory, May 2022.
+- 057 (pixel is the smallest element of a screen image): stated in a note of sci-tech-004. Now: aspect ratio of a Full HD 1920 × 1080 screen (16:9), worked out from the numbers.
+- 058 (device driver): defined in a note of ict-terms-036 and in a fact of 032. Now: Plug and Play.
+
+Facts I could not confirm online: none.
+
+### Follow-up by the main session (13 November 2026)
+- The nine questions replaced in the check above (in `ict-computer`, `ict-internet` and `ict-applications`) were read again by the main session and searched against the whole bank: no other question asks or states their answers.
+- ict-computer-057: the check replaced the question on the pixel by one on the aspect ratio of a Full HD screen, but the last step of its path still said *Pixel*. It now says *Aspect ratio* (आस्पेक्ट रेशियो). The group *Display and graphics* is unchanged, so the question stays out of the book quizzes.
