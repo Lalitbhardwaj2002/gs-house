@@ -1,0 +1,88 @@
+{
+ "id": "ugc-political-science",
+ "icon": "🏛️",
+ "title": { "en": "Political Science", "hi": "राजनीति विज्ञान" },
+ "subtitle": { "en": "UGC NET · Paper 2 · Code 02 · unit-wise notes", "hi": "यूजीसी नेट · प्रश्नपत्र 2 · कोड 02 · इकाईवार नोट्स" },
+ "about": {
+  "en": "These are GS House's own notes, written unit by unit from the official syllabus and the pattern of past papers. Unit 1 is ready; the other units are being written.",
+  "hi": "ये जीएस हाउस के अपने नोट्स हैं, जो आधिकारिक पाठ्यक्रम और पिछले प्रश्नपत्रों के पैटर्न के आधार पर इकाई दर इकाई लिखे गए हैं। इकाई 1 तैयार है; शेष इकाइयाँ लिखी जा रही हैं।"
+ },
+ "units": [
+  {
+   "id": "u1", "icon": "⚖️", "en": "Political Theory", "hi": "राजनीतिक सिद्धान्त",
+   "line": { "en": "7 concepts · 8 political traditions", "hi": "7 अवधारणाएँ · 8 राजनीतिक परंपराएँ" },
+   "parts": [
+    {
+     "en": "Concepts", "hi": "अवधारणाएँ",
+     "chapters": [
+      { "id": "ps-u1-01", "en": "Liberty", "hi": "स्वतंत्रता",
+        "key": { "en": "Negative and positive liberty · Mill's harm principle · freedom as non-domination", "hi": "नकारात्मक एवं सकारात्मक स्वतंत्रता · मिल का हानि सिद्धांत · अप्रभुत्व के रूप में स्वतंत्रता" } },
+      { "id": "ps-u1-02", "en": "Equality", "hi": "समानता",
+        "key": { "en": "Opportunity and outcome · equality of what? · complex equality · affirmative action", "hi": "अवसर एवं परिणाम · किसकी समानता? · जटिल समानता · सकारात्मक कार्रवाई" } },
+      { "id": "ps-u1-03", "en": "Justice", "hi": "न्याय",
+        "key": { "en": "Rawls · Nozick · Sen · communitarian and feminist critiques", "hi": "रॉल्स · नॉज़िक · सेन · समुदायवादी एवं नारीवादी आलोचनाएँ" } },
+      { "id": "ps-u1-04", "en": "Rights", "hi": "अधिकार",
+        "key": { "en": "Theories of rights · Hohfeld · three generations of human rights", "hi": "अधिकारों के सिद्धांत · होहफेल्ड · मानवाधिकारों की तीन पीढ़ियाँ" } },
+      { "id": "ps-u1-05", "en": "Democracy", "hi": "लोकतंत्र",
+        "key": { "en": "Classical, elitist, pluralist, participatory and deliberative models", "hi": "शास्त्रीय, अभिजनवादी, बहुलवादी, सहभागी एवं विमर्शी प्रतिमान" } },
+      { "id": "ps-u1-06", "en": "Power", "hi": "शक्ति",
+        "key": { "en": "Weber · Lukes's three faces · elite theory · Foucault and Arendt", "hi": "वेबर · ल्यूक्स के तीन आयाम · अभिजन सिद्धांत · फूको एवं आरेंट" } },
+      { "id": "ps-u1-07", "en": "Citizenship", "hi": "नागरिकता",
+        "key": { "en": "T. H. Marshall · liberal and republican models · differentiated citizenship", "hi": "टी. एच. मार्शल · उदारवादी एवं गणतंत्रवादी प्रतिमान · विभेदीकृत नागरिकता" } }
+     ]
+    },
+    {
+     "en": "Political traditions", "hi": "राजनीतिक परंपराएँ",
+     "chapters": [
+      { "id": "ps-u1-08", "en": "Liberalism", "hi": "उदारवाद",
+        "key": { "en": "Classical, modern and neo-liberalism · Locke to Rawls", "hi": "शास्त्रीय, आधुनिक एवं नव-उदारवाद · लॉक से रॉल्स तक" } },
+      { "id": "ps-u1-09", "en": "Conservatism", "hi": "अनुदारवाद",
+        "key": { "en": "Burke · Oakeshott · the New Right", "hi": "बर्क · ओकशॉट · नव दक्षिणपंथ" } },
+      { "id": "ps-u1-10", "en": "Socialism", "hi": "समाजवाद",
+        "key": { "en": "Utopian, Fabian and democratic socialism · revisionism", "hi": "स्वप्नलोकी, फेबियन एवं लोकतांत्रिक समाजवाद · संशोधनवाद" } },
+      { "id": "ps-u1-11", "en": "Marxism", "hi": "मार्क्सवाद",
+        "key": { "en": "Historical materialism · Lenin, Gramsci, Althusser · Frankfurt School", "hi": "ऐतिहासिक भौतिकवाद · लेनिन, ग्राम्शी, अल्थ्यूसर · फ्रैंकफर्ट स्कूल" } },
+      { "id": "ps-u1-12", "en": "Feminism", "hi": "नारीवाद",
+        "key": { "en": "Waves · liberal, socialist and radical strands · intersectionality", "hi": "लहरें · उदारवादी, समाजवादी एवं उग्र धाराएँ · अंतर्विभाजकता" } },
+      { "id": "ps-u1-13", "en": "Ecologism", "hi": "पारिस्थितिकवाद",
+        "key": { "en": "Shallow and deep ecology · sustainable development · eco-feminism", "hi": "उथली एवं गहन पारिस्थितिकी · सतत विकास · पारिस्थितिक नारीवाद" } },
+      { "id": "ps-u1-14", "en": "Multiculturalism", "hi": "बहुसंस्कृतिवाद",
+        "key": { "en": "Kymlicka · Taylor · Parekh · the critics", "hi": "किमलिका · टेलर · पारेख · आलोचक" } },
+      { "id": "ps-u1-15", "en": "Postmodernism", "hi": "उत्तर-आधुनिकतावाद",
+        "key": { "en": "Lyotard · Foucault · Derrida · Baudrillard", "hi": "ल्योतार · फूको · देरिदा · बौद्रिला" } }
+     ]
+    }
+   ],
+   "refs": [
+    { "text": "O. P. Gauba, An Introduction to Political Theory" },
+    { "text": "Andrew Heywood, Political Theory: An Introduction, and Political Ideologies: An Introduction" },
+    { "text": "Rajeev Bhargava and Ashok Acharya (eds.), Political Theory: An Introduction" },
+    { "text": "Will Kymlicka, Contemporary Political Philosophy: An Introduction" },
+    { "text": "M. Laxmikanth, Indian Polity (for the provisions of the Indian Constitution quoted in the notes)" },
+    { "text": "UGC NET syllabus, Political Science (Code 02)", "url": "https://www.ugcnetonline.in/syllabus-new.php" },
+    { "text": "NCERT, Political Theory (Class XI)", "url": "https://ncert.nic.in/textbook.php?keps1=0-8" },
+    { "text": "Stanford Encyclopedia of Philosophy", "url": "https://plato.stanford.edu/" },
+    { "text": "IGNOU eGyanKosh, study material of MA Political Science", "url": "https://egyankosh.ac.in/" },
+    { "text": "e-PG Pathshala, Political Science", "url": "https://epgp.inflibnet.ac.in/" }
+   ]
+  },
+  { "id": "u2", "icon": "🏺", "en": "Political Thought", "hi": "राजनीतिक विचारक",
+    "line": { "en": "16 thinkers, Confucius to Rawls", "hi": "16 विचारक, कन्फ्यूशियस से रॉल्स तक" } },
+  { "id": "u3", "icon": "🪔", "en": "Indian Political Thought", "hi": "भारतीय राजनीतिक विचारक",
+    "line": { "en": "20 thinkers, Dharmashastra to Deendayal Upadhyaya", "hi": "20 विचारक, धर्मशास्त्र से दीनदयाल उपाध्याय तक" } },
+  { "id": "u4", "icon": "🌐", "en": "Comparative Political Analysis", "hi": "तुलनात्मक राजनीतिक विश्लेषण",
+    "line": { "en": "Approaches · state · regimes · parties", "hi": "उपागम · राज्य · शासन-प्रणालियाँ · दल" } },
+  { "id": "u5", "icon": "🕊️", "en": "International Relations", "hi": "अंतर्राष्ट्रीय संबंध",
+    "line": { "en": "Theories · United Nations · global economy · regions", "hi": "सिद्धांत · संयुक्त राष्ट्र · वैश्विक अर्थव्यवस्था · क्षेत्र" } },
+  { "id": "u6", "icon": "🧭", "en": "India's Foreign Policy", "hi": "भारत की विदेश नीति",
+    "line": { "en": "Principles · major powers · neighbourhood", "hi": "सिद्धांत · प्रमुख शक्तियाँ · पड़ोस" } },
+  { "id": "u7", "icon": "🏢", "en": "Political Institutions in India", "hi": "भारत में राजनीतिक संस्थाएँ",
+    "line": { "en": "Constitution · Parliament · judiciary · federalism", "hi": "संविधान · संसद · न्यायपालिका · संघवाद" } },
+  { "id": "u8", "icon": "🗳️", "en": "Political Processes in India", "hi": "भारत में राजनीतिक प्रक्रियाएँ",
+    "line": { "en": "Development · identity · parties · elections", "hi": "विकास · पहचान · दल · चुनाव" } },
+  { "id": "u9", "icon": "🗂️", "en": "Public Administration", "hi": "लोक प्रशासन",
+    "line": { "en": "Theories · organisation · management", "hi": "सिद्धांत · संगठन · प्रबंधन" } },
+  { "id": "u10", "icon": "📜", "en": "Governance and Public Policy in India", "hi": "भारत में शासन-विधि तथा लोक नीति",
+    "line": { "en": "Accountability · RTI · Panchayati Raj · public policies", "hi": "उत्तरदायित्व · सूचना का अधिकार · पंचायती राज · लोक नीतियाँ" } }
+ ]
+}
