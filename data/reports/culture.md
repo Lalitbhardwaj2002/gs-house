@@ -33,3 +33,18 @@ Corrected:
 - 010 book ref added (tgt-pgt-gk p. 62).
 
 Answer positions stay A–D 5/5/5/5; validator ok.
+
+## Check of 13 November 2026 (book companion, stage 3)
+
+Checked 021–036 (literature, architecture, painting, theatre, cinema, festivals).
+
+- 021–029 ok (classical languages: Tamil 2004, eleven since October 2024; Gol Gumbaz completed 1656).
+- 030 note A called Ibrahim Adil Shah II "a ruler of Bijapur", which hinted at the answer of 029 (Gol Gumbaz at Bijapur); now describes him as the Adil Shahi patron of music who wrote the 'Kitab-i-Nauras'.
+- 031, 032, 033 ok.
+- 034 replaced. It asked where Yakshagana belongs, but notes in 001 and 008 already say Karnataka is the home of Yakshagana. New question (same path, PGT, key D): who introduced the Ankiya Naat of Assam (Srimanta Sankardeva).
+- 035 ok.
+- 036 option D (Assam) and its note "Assam celebrates Magh Bihu" gave away the answer of 012 (Bihu, Assam); option changed to Gujarat (Uttarayan), with the explanation and facts.
+
+Replaced: 034. Answer positions unchanged; validator ok.
+
+Facts not fully confirmed online: the traditional dates of Sankardeva (1449–1568).

@@ -33,3 +33,23 @@ Corrected:
 - Book refs added: 008 (p. 82), 009 (p. 90), 010 (p. 82), 013 (p. 77), 016 (p. 75), 017 (p. 86).
 
 Answer positions stay A–D 5/5/5/5; validator ok.
+
+## Check of 13 November 2026 (book companion, stage 3)
+
+Checked 021–057 (revolutionaries, Gandhi to Non-Cooperation, Nehru Report to Poona Pact, peasants, Bose and the INA, Quit India, 1945–47, slogans and books).
+
+- 021 Hindi stem was two sentences; now one question ("किस नगर के अल्फ्रेड पार्क में ...").
+- 022, 023, 024, 025, 026, 027 ok.
+- 028 replaced. It asked where Kakori is, but question 016 already states that the train was stopped "at Kakori, near Lucknow" and names the four men hanged. New question (same path, TGT, key D): who was hanged in August 1908 for the Muzaffarpur bomb attack (Khudiram Bose).
+- 029–037 ok.
+- 038 note B: the number of volunteers varies in the sources (98 to 150), so "about a hundred" was removed. Note D: E. V. Ramasamy took a leading part in the Vaikom satyagraha but did not start it; reworded. Note A slightly reworded.
+- 039 explanation: "about 2,000 volunteers" changed to "about 2,500" (Webb Miller's figure).
+- 040–044 ok.
+- 045 note C said Shah Nawaz Khan was tried at the Red Fort, which gave away the answer of 047; now says he was a senior officer of the INA under Subhas Bose.
+- 046 ok.
+- 047 explanation: the sentences were not "set aside" but remitted (commuted) by the Commander-in-Chief; corrected.
+- 048–057 ok.
+
+Replaced: 028. Answer positions unchanged; validator ok.
+
+Facts not fully confirmed online: the exact strength of the Vedaranyam party; Tagore as the first person to call Gandhi 'Mahatma' (the question already says 'generally believed').

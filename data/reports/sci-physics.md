@@ -33,3 +33,6 @@ Checked 15 new questions (057–071) in English and Hindi, and compared them wit
 - 070: Hindi note D read badly ("लाल दानव तारे की पहले की ..."); now "लाल दानव तारे के जीवन की पहले की, फूली हुई अवस्था है।".
 - Replaced: none.
 - Facts I could not confirm online: none; all are standard textbook facts.
+
+## Replacement of 13 November 2026 (book companion, stage 3)
+- 067 (National Science Day and the Raman effect) repeated a question of `ca-awards`. It is replaced by a worked question on half-life (10-day half-life, fraction left after 30 days = 1/8), path "Physics > Modern physics > Half-life". Level (TGT), answer letter (C) and references are unchanged. The arithmetic was re-worked: three half-lives, (1/2)³ = 1/8; four half-lives give 1/16.
