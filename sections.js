@@ -28,7 +28,7 @@ const SECTIONS = [
   { id: 'ca-up', unit: 'u1', tracks: ['tgt'], en: 'Uttar Pradesh Current Affairs', hi: 'उत्तर प्रदेश समसामयिकी',
     scope: 'Uttar Pradesh events, schemes, policies, projects, appointments and rankings, Jan 2025 – Oct 2026.' },
   { id: 'ca-national', unit: 'u1', tracks: ['tgt', 'higher'], en: 'National Affairs', hi: 'राष्ट्रीय घटनाएँ',
-    scope: 'Major Indian events, government schemes, laws, missions, reports and indices, Jan 2025 – Oct 2026.' },
+    scope: 'Major Indian events, government schemes, laws, the Union Budget, reports and indices, defence, environment, health and social issues, Jan 2025 – Oct 2026.' },
   { id: 'ca-intl', unit: 'u1', tracks: ['tgt', 'higher'], en: 'International Affairs', hi: 'अंतर्राष्ट्रीय घटनाएँ',
     scope: 'Summits, international organisations, agreements, elections and global events, Jan 2025 – Oct 2026.' },
   { id: 'ca-people', unit: 'u1', tracks: ['tgt', 'higher'], en: 'Personalities in News', hi: 'चर्चित व्यक्तित्व',
@@ -36,7 +36,7 @@ const SECTIONS = [
   { id: 'ca-sports', unit: 'u1', tracks: ['tgt', 'higher'], en: 'Sports', hi: 'खेल',
     scope: 'Sports events and winners Jan 2025 – Oct 2026, plus core sports GK: trophies, terms, venues, players, sports awards.' },
   { id: 'ca-awards', unit: 'u1', tracks: ['tgt', 'higher'], en: 'Awards, Books & Important Days', hi: 'पुरस्कार, पुस्तकें एवं महत्वपूर्ण दिवस',
-    scope: 'National and international awards (including 2025–26 winners), books and authors, important days and themes.' },
+    scope: 'National and international awards (including 2025–26 winners), books and authors, films, art and culture in the news, important days and themes.' },
   { id: 'ca-science', unit: 'u1', tracks: ['higher'], en: 'Current Research in Science', hi: 'विज्ञान में वर्तमान शोध',
     scope: 'Recent scientific research, discoveries, missions and Nobel Prizes in science, 2025–26.' },
 
