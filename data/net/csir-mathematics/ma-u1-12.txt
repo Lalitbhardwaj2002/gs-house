@@ -1,0 +1,73 @@
+@en
+# Vector spaces, subspaces, basis and dimension
+
+> A vector space is a set where vectors can be added and multiplied by scalars from a field. Almost every question on this topic comes down to finding a dimension, so the standard dimensions and the counting formulas over finite fields are worth knowing by heart.
+
+## Vector spaces and subspaces
+
+- $V$ over a field $F$, written $V(F)$: $(V, +)$ is an abelian group, and scalar multiplication satisfies $\alpha(x + y) = \alpha x + \alpha y$, $(\alpha + \beta)x = \alpha x + \beta x$, $(\alpha\beta)x = \alpha(\beta x)$, $1x = x$.
+- The field matters: $\mathbb{C}$ has dimension 1 over $\mathbb{C}$ and 2 over $\mathbb{R}$; $\mathbb{C}^n$ has dimension $2n$ over $\mathbb{R}$; $\mathbb{R}$ over $\mathbb{Q}$ is infinite-dimensional.
+- $W \subseteq V$ is a **subspace** if it is non-empty and $\alpha x + \beta y \in W$ for all $x, y \in W$ and scalars $\alpha, \beta$. Every subspace contains 0.
+- The intersection of subspaces is a subspace. The union $W_1 \cup W_2$ is a subspace only if one contains the other.
+- A vector space over an infinite field is never a finite union of proper subspaces.
+- $W_1 + W_2 = \{w_1 + w_2\}$ is the smallest subspace containing both. The sum is **direct**, $W_1 \oplus W_2$, if $W_1 \cap W_2 = \{0\}$.
+
+## Basis and dimension
+
+- A set is **linearly independent** if no non-trivial linear combination is 0. A **basis** is a linearly independent spanning set; all bases of $V$ have the same number of elements, $\dim V$.
+- In an $n$-dimensional space: any $n + 1$ vectors are dependent; any $n$ independent vectors form a basis; any $n$ spanning vectors form a basis.
+- Every independent set extends to a basis; every spanning set contains a basis.
+
+! remember | Dimension formulas (finite-dimensional spaces)
+- $\dim(W_1 + W_2) = \dim W_1 + \dim W_2 - \dim(W_1 \cap W_2)$.
+- $\dim(V/W) = \dim V - \dim W$.
+- If $\dim W_1 + \dim W_2 > \dim V$, then $W_1 \cap W_2 \ne \{0\}$.
+- $\dim(V \times W) = \dim V + \dim W$, and $\dim L(V, W) = \dim V \cdot \dim W$.
+
+| Space (over $\mathbb{R}$ unless stated) | Dimension |
+| $F^n$ over $F$ | $n$ |
+| $M_{m \times n}(F)$ | $mn$ |
+| Polynomials of degree at most $n$ | $n + 1$ |
+| Symmetric $n \times n$ matrices | $\frac{n(n+1)}{2}$ |
+| Skew-symmetric $n \times n$ matrices | $\frac{n(n-1)}{2}$ |
+| Upper triangular $n \times n$ matrices | $\frac{n(n+1)}{2}$ |
+| Diagonal matrices; scalar matrices | $n$; 1 |
+| Matrices of trace 0 | $n^2 - 1$ |
+| Hermitian (or skew-Hermitian) $n \times n$ matrices, over $\mathbb{R}$ | $n^2$ |
+| $M_n(\mathbb{C})$ over $\mathbb{R}$ | $2n^2$ |
+| Matrices commuting with a diagonal matrix with distinct diagonal entries | $n$ |
+| Solutions of $Ax = 0$, $A$ of rank $r$ with $n$ unknowns | $n - r$ |
+| Solutions of a homogeneous linear ODE of order $n$ | $n$ |
+
+- Hermitian and skew-Hermitian matrices form real vector spaces, not complex ones: $i$ times a Hermitian matrix is skew-Hermitian.
+
+## Counting over a finite field
+
+Let $V$ have dimension $n$ over $F_q$, the field with $q$ elements.
+
+- $\lvert V \rvert = q^n$.
+- Number of ordered bases: $(q^n - 1)(q^n - q) \cdots (q^n - q^{n-1})$. This is also the order of $GL_n(F_q)$.
+- Number of one-dimensional subspaces: $\frac{q^n - 1}{q - 1}$.
+- Number of $k$-dimensional subspaces: $\frac{(q^n - 1)(q^n - q) \cdots (q^n - q^{k-1})}{(q^k - 1)(q^k - q) \cdots (q^k - q^{k-1})}$.
+- The numbers of $k$-dimensional and of $(n-k)$-dimensional subspaces are equal.
+- Order of $SL_n(F_q)$: $\frac{\lvert GL_n(F_q) \rvert}{q - 1}$.
+
+? When is $W_1 \cup W_2$ a subspace? :: Only when one of the two subspaces contains the other.
+? Dimension of the real symmetric $n \times n$ matrices? :: $\frac{n(n+1)}{2}$.
+? Dimension of $\mathbb{C}^n$ over $\mathbb{R}$? :: $2n$.
+? How many one-dimensional subspaces has $F_q^n$? :: $\frac{q^n - 1}{q - 1}$.
+
+! exam | PYQ focus
+- Dimension of a subspace of matrices or polynomials cut out by linear conditions.
+- Checking whether a given subset is a subspace (it must contain 0 and be closed under both operations).
+- Counting bases, subspaces and invertible matrices over a finite field.
+
+! recap | One-minute revision
+- $\dim(W_1 + W_2) = \dim W_1 + \dim W_2 - \dim(W_1 \cap W_2)$.
+- Symmetric: $n(n+1)/2$; skew-symmetric: $n(n-1)/2$; trace zero: $n^2 - 1$.
+- $\lvert GL_n(F_q) \rvert = (q^n - 1)(q^n - q) \cdots (q^n - q^{n-1})$.
+
+& Kenneth Hoffman and Ray Kunze, Linear Algebra (chapters 1 and 2)
+& Sheldon Axler, Linear Algebra Done Right (chapters 1 and 2)
+& S. H. Friedberg, A. J. Insel and L. E. Spence, Linear Algebra (chapter 1)
+& MIT OpenCourseWare 18.06: Linear Algebra | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/

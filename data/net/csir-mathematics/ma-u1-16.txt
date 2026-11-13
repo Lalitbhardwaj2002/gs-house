@@ -1,0 +1,66 @@
+@en
+# Canonical forms: triangular and Jordan forms
+
+> Not every matrix can be diagonalised, but over $\mathbb{C}$ every matrix is similar to a triangular matrix and, more precisely, to a Jordan form. Reading a Jordan form off the characteristic polynomial, the minimal polynomial and a few ranks is a standard examination task.
+
+## Triangular form
+
+- A matrix is **triangularisable** over $F$ if and only if its characteristic polynomial splits into linear factors over $F$. So every complex matrix is similar to an upper triangular matrix, with the eigenvalues on the diagonal.
+- **Schur's theorem**: every complex square matrix is unitarily similar to an upper triangular matrix.
+- A real matrix with a non-real eigenvalue is not triangularisable over $\mathbb{R}$: the rotation by $90^\circ$.
+
+## Jordan blocks and the Jordan form
+
+- The **Jordan block** $J_k(\lambda)$ is the $k \times k$ matrix with $\lambda$ on the diagonal, 1 on the superdiagonal and 0 elsewhere. It has one eigenvalue $\lambda$ with a single independent eigenvector, and $(J_k(\lambda) - \lambda I)^k = 0$ but $(J_k(\lambda) - \lambda I)^{k-1} \ne 0$.
+- If the characteristic polynomial splits, $A$ is similar to a direct sum of Jordan blocks, unique up to the order of the blocks. Two such matrices are similar if and only if they have the same Jordan form.
+
+! remember | Reading the Jordan form, for each eigenvalue $\lambda$
+- The sum of the sizes of the blocks for $\lambda$ is the **algebraic multiplicity**.
+- The number of blocks for $\lambda$ is the **geometric multiplicity** $n - \operatorname{rank}(A - \lambda I)$.
+- The size of the largest block for $\lambda$ is the power of $(x - \lambda)$ in the **minimal polynomial**.
+- The number of blocks of size at least $k$ is $\operatorname{rank}(A - \lambda I)^{k-1} - \operatorname{rank}(A - \lambda I)^k$.
+- $A$ is diagonalisable if and only if every block has size 1.
+
+## Worked patterns
+
+| Given | Possible block sizes | How to decide |
+| Characteristic $(x-2)^4$, minimal $(x-2)^2$ | $2,2$ or $2,1,1$ | GM is 2 or 3 |
+| Characteristic $(x-2)^4$, minimal $(x-2)^3$ | $3,1$ | Only one possibility |
+| Characteristic $(x-1)^3 (x-2)^2$, minimal $(x-1)^2 (x-2)$ | $2,1$ for $\lambda = 1$; $1,1$ for $\lambda = 2$ | Only one possibility |
+| $6 \times 6$ nilpotent, $A^3 \ne 0$, $A^4 = 0$ | $4,2$ or $4,1,1$ | Largest block 4; 2 or 3 blocks |
+| $A^2 = 0$, $A \ne 0$, order $n$ | Blocks of size 2 and 1 | Number of blocks of size 2 is $\operatorname{rank} A$ |
+
+## Counting similarity classes
+
+- The number of similarity classes of $n \times n$ **nilpotent** matrices is $p(n)$, the number of partitions of $n$: $p(1), \dots, p(7) = 1, 2, 3, 5, 7, 11, 15$.
+- With characteristic polynomial $\prod (x - \lambda_i)^{a_i}$ (distinct $\lambda_i$), the number of possible Jordan forms is $\prod p(a_i)$.
+- For a nilpotent matrix of index $k$ (largest block $k$) the possible forms are the partitions of $n$ whose largest part is $k$.
+- If $f(A) = 0$ for a polynomial $f$ with $k$ distinct roots, all in the field, then $A$ is diagonalisable with eigenvalues among those roots, so there are $\binom{n+k-1}{k-1}$ similarity classes. Example: $3 \times 3$ complex matrices with $A^3 = I$ form $\binom{5}{2} = 10$ classes.
+
+## Further facts
+
+- Every square matrix is similar to its transpose.
+- The nilpotency index of an $n \times n$ nilpotent matrix is at most $n$; it equals $n$ exactly for a single Jordan block, when the rank is $n - 1$.
+- $A$ and $B$ with the same characteristic and minimal polynomials are similar when $n \le 3$; this fails for $n = 4$ (block sizes $2,2$ against $2,1,1$).
+- **Rational canonical form**: over any field, a matrix is similar to a direct sum of companion matrices of its invariant factors, the last of which is the minimal polynomial. It needs no eigenvalues in the field.
+- Jordan decomposition: over $\mathbb{C}$, $A = D + N$ with $D$ diagonalisable, $N$ nilpotent and $DN = ND$, uniquely.
+
+? What does the number of Jordan blocks for $\lambda$ equal? :: The geometric multiplicity of $\lambda$.
+? What does the largest block size for $\lambda$ equal? :: The exponent of $(x - \lambda)$ in the minimal polynomial.
+? How many nilpotent $4 \times 4$ matrices are there up to similarity? :: $p(4) = 5$.
+? Are matrices with equal characteristic and minimal polynomials always similar? :: Only up to order 3.
+
+! exam | PYQ focus
+- Possible Jordan forms from the characteristic and minimal polynomials and a rank.
+- Number of Jordan blocks, or of non-zero entries, in the Jordan form of a given operator.
+- Counting matrices up to similarity under conditions such as $A^k = 0$.
+
+! recap | One-minute revision
+- Blocks for $\lambda$: total size is AM, number is GM, largest size is the exponent in the minimal polynomial.
+- Nilpotent classes of order $n$: partitions of $n$.
+- Diagonalisable exactly when all blocks have size 1.
+
+& Kenneth Hoffman and Ray Kunze, Linear Algebra (chapters 6 and 7)
+& S. H. Friedberg, A. J. Insel and L. E. Spence, Linear Algebra (chapter 7)
+& Sheldon Axler, Linear Algebra Done Right (chapter 8)
+& MIT OpenCourseWare 18.06: Linear Algebra | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/

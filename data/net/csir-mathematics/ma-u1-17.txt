@@ -1,0 +1,72 @@
+@en
+# Inner product spaces
+
+> An inner product adds length and angle to a vector space. With it come orthonormal bases, orthogonal projections and the special classes of operators (self-adjoint, unitary, normal) that the spectral theorem describes.
+
+## Inner products
+
+- An **inner product** on $V$ over $\mathbb{R}$ or $\mathbb{C}$ satisfies: $\langle x + y, z \rangle = \langle x, z \rangle + \langle y, z \rangle$; $\langle \alpha x, y \rangle = \alpha \langle x, y \rangle$; $\langle x, y \rangle = \overline{\langle y, x \rangle}$; $\langle x, x \rangle > 0$ for $x \ne 0$.
+- It is linear in the first slot and conjugate-linear in the second: $\langle x, \alpha y \rangle = \bar{\alpha} \langle x, y \rangle$.
+
+| Space | Standard inner product |
+| $F^n$ | $\langle x, y \rangle = \sum x_i \overline{y_i}$ |
+| $M_n(F)$ | $\langle A, B \rangle = \operatorname{tr}(A B^*)$ (Frobenius) |
+| $C[a,b]$ | $\langle f, g \rangle = \int_a^b f(t)\, \overline{g(t)}\, dt$ |
+| $\mathbb{R}^n$ with a matrix | $\langle x, y \rangle = x^T A y$, exactly when $A$ is symmetric positive definite |
+
+- Not inner products: $\left\lvert \int f g \right\rvert$ (not linear); $f(0)g(0) + f(1)g(1)$ on $C[0,1]$ (not definite); $\operatorname{tr}(A)\operatorname{tr}(B)$ (not definite); $\operatorname{tr}(AB)$ on all real matrices (not definite), though it is one on symmetric matrices.
+
+! remember | Norm identities and inequalities
+- $\lVert x \rVert = \sqrt{\langle x, x \rangle}$.
+- **Cauchy-Schwarz**: $\lvert \langle x, y \rangle \rvert \le \lVert x \rVert \lVert y \rVert$, with equality if and only if $x, y$ are linearly dependent.
+- **Triangle inequality**: $\lVert x + y \rVert \le \lVert x \rVert + \lVert y \rVert$.
+- **Parallelogram law**: $\lVert x + y \rVert^2 + \lVert x - y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rVert^2$.
+- **Pythagoras**: if $\langle x, y \rangle = 0$ then $\lVert x + y \rVert^2 = \lVert x \rVert^2 + \lVert y \rVert^2$. The converse holds in real spaces only.
+- **Polarisation** (real case): $\langle x, y \rangle = \frac{1}{4} \left( \lVert x + y \rVert^2 - \lVert x - y \rVert^2 \right)$.
+
+## Orthogonality
+
+- An orthogonal set of non-zero vectors is linearly independent.
+- **Gram-Schmidt** turns a basis $v_1, \dots, v_n$ into an orthonormal basis with the same spans: $u_k = v_k - \sum_{j < k} \langle v_k, e_j \rangle e_j$, $e_k = u_k / \lVert u_k \rVert$. Every finite-dimensional inner product space has an orthonormal basis.
+- For an orthonormal basis $\{e_i\}$: $x = \sum \langle x, e_i \rangle e_i$ and $\lVert x \rVert^2 = \sum \lvert \langle x, e_i \rangle \rvert^2$ (**Parseval**). For any orthonormal set, $\sum \lvert \langle x, e_i \rangle \rvert^2 \le \lVert x \rVert^2$ (**Bessel**).
+- **Orthogonal complement** $W^\perp = \{x : \langle x, w \rangle = 0 \text{ for all } w \in W\}$. In finite dimensions $V = W \oplus W^\perp$, $\dim W^\perp = \dim V - \dim W$ and $(W^\perp)^\perp = W$.
+- The **orthogonal projection** of $x$ on $W$ is the point of $W$ nearest to $x$. The least-squares solution of $Ax = b$ solves $A^T A x = A^T b$.
+- For a real matrix: $N(A) = R(A^T)^\perp$ and $N(A^T) = R(A)^\perp$.
+
+## Adjoint and special operators
+
+- The **adjoint** $T^*$ is defined by $\langle Tx, y \rangle = \langle x, T^* y \rangle$; in an orthonormal basis its matrix is the conjugate transpose.
+
+| Operator | Condition | Properties |
+| Self-adjoint (Hermitian, real symmetric) | $T^* = T$ | Real eigenvalues; eigenvectors of distinct eigenvalues are orthogonal; orthonormal eigenbasis |
+| Skew-adjoint | $T^* = -T$ | Eigenvalues purely imaginary or 0 |
+| Unitary, orthogonal | $T^* T = I$ | Preserves inner products and norms; eigenvalues of modulus 1 |
+| Normal | $T T^* = T^* T$ | Over $\mathbb{C}$: orthonormal eigenbasis exists (spectral theorem) |
+| Positive (semi)definite | $T^* = T$ and $\langle Tx, x \rangle > 0$ for $x \ne 0$ (or $\ge 0$) | Eigenvalues positive (non-negative). Over $\mathbb{C}$, $\langle Tx, x \rangle$ real for all $x$ already forces $T^* = T$; over $\mathbb{R}$ it does not |
+| Orthogonal projection | $P^2 = P = P^*$ | Eigenvalues among 0 and 1; $R(P) \perp N(P)$; $\lVert Px \rVert \le \lVert x \rVert$ |
+
+- A real normal matrix need not be diagonalisable over $\mathbb{R}$ (a rotation), but a real symmetric one always is.
+- $T$ is unitary if and only if it maps some (every) orthonormal basis to an orthonormal basis.
+- Over $\mathbb{C}$, $\langle Tx, x \rangle = 0$ for all $x$ implies $T = 0$. Over $\mathbb{R}$ it does not: the rotation by $90^\circ$ in $\mathbb{R}^2$.
+- $N(T^*) = R(T)^\perp$, and $\operatorname{rank} T^* T = \operatorname{rank} T$.
+- **Riesz representation**: on a finite-dimensional inner product space every linear functional is $x \mapsto \langle x, y \rangle$ for a unique $y$.
+
+? In which slot is a complex inner product conjugate-linear? :: The second.
+? Is $\langle A, B \rangle = \operatorname{tr}(A)\operatorname{tr}(B)$ an inner product? :: No; a non-zero matrix of trace 0 would have length 0.
+? What is $\dim W^\perp$? :: $\dim V - \dim W$.
+? Eigenvalues of a self-adjoint operator? :: Real, with orthogonal eigenvectors for distinct eigenvalues.
+
+! exam | PYQ focus
+- Checking whether a given formula defines an inner product.
+- Orthonormal bases by Gram-Schmidt, orthogonal complements and projections.
+- Properties of symmetric, orthogonal, unitary and normal matrices.
+
+! recap | One-minute revision
+- Cauchy-Schwarz, parallelogram law, Pythagoras.
+- $V = W \oplus W^\perp$ in finite dimensions; projection gives the nearest point.
+- Self-adjoint: real eigenvalues. Unitary: modulus 1. Normal over $\mathbb{C}$: orthonormal eigenbasis.
+
+& Kenneth Hoffman and Ray Kunze, Linear Algebra (chapters 8 and 9)
+& Sheldon Axler, Linear Algebra Done Right (chapters 6 and 7)
+& S. H. Friedberg, A. J. Insel and L. E. Spence, Linear Algebra (chapter 6)
+& MIT OpenCourseWare 18.06: Linear Algebra | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/

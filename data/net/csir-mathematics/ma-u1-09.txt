@@ -1,0 +1,72 @@
+@en
+# Sequences and series of functions
+
+> A sequence of functions may converge at each point without converging "at the same speed" everywhere. Uniform convergence is what lets continuity, integrals and (with care) derivatives pass to the limit.
+
+## Pointwise and uniform convergence
+
+- $f_n \to f$ **pointwise** on $A$ if $f_n(x) \to f(x)$ for each $x \in A$.
+- $f_n \to f$ **uniformly** on $A$ if for every $\varepsilon > 0$ there is one $m$ with $\lvert f_n(x) - f(x) \rvert < \varepsilon$ for all $n \ge m$ and all $x \in A$.
+- **$M_n$ test**: put $M_n = \sup_{x \in A} \lvert f_n(x) - f(x) \rvert$. The convergence is uniform if and only if $M_n \to 0$.
+- **Cauchy criterion**: $(f_n)$ converges uniformly if and only if $\sup_x \lvert f_n(x) - f_k(x) \rvert \to 0$ as $n, k \to \infty$.
+- Uniform implies pointwise; the converse is false.
+
+| Sequence and domain | Pointwise limit | Uniform? |
+| $x^n$ on $[0,1]$ | 0 for $x < 1$, 1 at $x = 1$ | No: the limit is discontinuous |
+| $x^n$ on $[0,a]$, $a < 1$ | 0 | Yes: $M_n = a^n$ |
+| $\frac{nx}{1 + n^2 x^2}$ on $[0,1]$ | 0 | No: $M_n = 1/2$ at $x = 1/n$ |
+| $\frac{x}{1 + n x^2}$ on $\mathbb{R}$ | 0 | Yes: $M_n = \frac{1}{2\sqrt{n}}$ |
+| $\frac{\sin nx}{n}$ on $\mathbb{R}$ | 0 | Yes: $M_n \le 1/n$ |
+| $n x e^{-n x^2}$ on $[0,1]$ | 0 | No: $M_n = \sqrt{n/(2e)}$ |
+| $\frac{x}{n}$ on $\mathbb{R}$ | 0 | No: unbounded difference |
+| $x^n (1 - x)$ on $[0,1]$ | 0 | Yes: $M_n = \frac{n^n}{(n+1)^{n+1}} < \frac{1}{n+1}$ |
+| $n x (1 - x^2)^n$ on $[0,1]$ | 0 | No: $\int_0^1 f_n = \frac{n}{2(n+1)} \to \frac{1}{2} \ne 0$ |
+
+! remember | What uniform convergence preserves
+- **Continuity**: a uniform limit of continuous functions is continuous. So a discontinuous limit of continuous functions shows that the convergence is not uniform.
+- **Boundedness**: a uniform limit of bounded functions is bounded.
+- **Integration**: if $f_n$ are Riemann integrable on $[a,b]$ and $f_n \to f$ uniformly, then $f$ is integrable and $\int_a^b f_n \to \int_a^b f$.
+- **Differentiation** needs more: if $f_n(x_0)$ converges for one point and $f_n'$ converges uniformly on $[a,b]$, then $f_n$ converges uniformly to some $f$ and $f' = \lim f_n'$. Uniform convergence of $f_n$ alone is not enough: $\frac{\sin nx}{\sqrt{n}}$.
+- **Dini's theorem**: if continuous functions $f_n$ on a compact set converge monotonically at each point to a continuous $f$, the convergence is uniform.
+
+## Series of functions
+
+- $\sum f_n$ converges uniformly if its partial sums do. Then $\sup_x \lvert f_n(x) \rvert \to 0$; if this fails, the convergence is not uniform.
+- **Weierstrass M-test**: if $\lvert f_n(x) \rvert \le M_n$ on $A$ and $\sum M_n$ converges, then $\sum f_n$ converges uniformly and absolutely on $A$.
+- Examples: $\sum \frac{\sin nx}{n^2}$ and $\sum \frac{x^n}{n^2}$ on $[-1,1]$ converge uniformly. $\sum x^n$ converges uniformly on $[-a,a]$ for $a < 1$ but not on $(-1,1)$.
+- A uniformly convergent series of continuous functions has a continuous sum and can be integrated term by term. It can be differentiated term by term if the series of derivatives converges uniformly.
+- Abel's and Dirichlet's tests have uniform versions; with them $\sum \frac{\sin nx}{n}$ converges uniformly on $[\delta, 2\pi - \delta]$.
+
+## Power series
+
+- $\sum a_n x^n$ has **radius of convergence** $R$ with $\frac{1}{R} = \limsup \lvert a_n \rvert^{1/n}$; also $R = \lim \left\lvert \frac{a_n}{a_{n+1}} \right\rvert$ when this limit exists.
+- The series converges absolutely for $\lvert x \rvert < R$, diverges for $\lvert x \rvert > R$, and converges uniformly on every $[-r, r]$ with $r < R$.
+- At $x = \pm R$ anything can happen: $\sum x^n$ diverges at both ends, $\sum \frac{x^n}{n}$ converges only at $-1$, $\sum \frac{x^n}{n^2}$ converges at both.
+- The sum is infinitely differentiable inside $(-R, R)$; term-by-term differentiation and integration keep the same radius.
+- If $\sum a_n x^n$ has radius $R$, then $\sum a_n x^{2n}$ has radius $\sqrt{R}$, and $\sum n^k a_n x^n$ has radius $R$ for every fixed $k$.
+- **Abel's theorem**: if the series converges at $x = R$, the sum is continuous from the left at $R$.
+
+## Two classical theorems
+
+- **Weierstrass approximation**: every continuous function on $[a,b]$ is a uniform limit of polynomials.
+- **Arzelà-Ascoli**: a sequence in $C[a,b]$ that is uniformly bounded and equicontinuous has a uniformly convergent subsequence.
+
+? How do you test uniform convergence quickly? :: Compute $M_n = \sup \lvert f_n - f \rvert$ and check whether it tends to 0.
+? Does $x^n$ converge uniformly on $[0,1]$? :: No; the limit function is discontinuous at 1.
+? What does the Weierstrass M-test need? :: A bound $\lvert f_n \rvert \le M_n$ with $\sum M_n$ convergent.
+? Radius of convergence of $\sum n!\,x^n$ and of $\sum x^n/n!$? :: 0 and $\infty$.
+
+! exam | PYQ focus
+- Pointwise limit and uniform convergence of a given sequence on a given interval.
+- Whether limit and integral, or limit and derivative, can be exchanged for a given sequence.
+- Radius and interval of convergence of a power series, including the end points.
+
+! recap | One-minute revision
+- Uniform means $\sup \lvert f_n - f \rvert \to 0$.
+- Uniform limits keep continuity and integrals; derivatives need uniform convergence of $f_n'$.
+- M-test for series; $1/R = \limsup \lvert a_n \rvert^{1/n}$ for power series.
+
+& Walter Rudin, Principles of Mathematical Analysis (chapter 7)
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapters 8 and 9)
+& S. C. Malik and Savita Arora, Mathematical Analysis (uniform convergence; power series)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

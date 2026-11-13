@@ -1,0 +1,68 @@
+@en
+# Series of real numbers
+
+> A series $\sum a_n$ converges if its sequence of partial sums converges. The work in the examination is choosing the right test quickly and telling absolute convergence from conditional convergence.
+
+## First facts
+
+- If $\sum a_n$ converges then $a_n \to 0$. The converse is false: $\sum 1/n$ diverges.
+- **Geometric series** $\sum_{n \ge 0} r^n$ converges if and only if $\lvert r \rvert < 1$, with sum $1/(1-r)$.
+- $\sum (-1)^n / n^p$ converges for $p > 0$, absolutely only for $p > 1$.
+- **$p$-series** $\sum 1/n^p$ converges if and only if $p > 1$. Also $\sum 1/(n (\log n)^p)$ converges if and only if $p > 1$.
+- **Cauchy criterion**: $\sum a_n$ converges if and only if for every $\varepsilon > 0$ there is $m$ with $\lvert a_{n+1} + \dots + a_{n+k} \rvert < \varepsilon$ for all $n \ge m$, $k \ge 1$.
+- Changing or removing finitely many terms does not affect convergence.
+
+## Tests for series of positive terms
+
+| Test | Statement |
+| Comparison | If $0 \le a_n \le b_n$ and $\sum b_n$ converges, so does $\sum a_n$ |
+| Limit comparison | If $a_n / b_n \to l$ with $0 < l < \infty$, both series converge or both diverge |
+| Ratio (D'Alembert) | $a_{n+1}/a_n \to l$: converges if $l < 1$, diverges if $l > 1$, no conclusion if $l = 1$ |
+| Root (Cauchy) | $\limsup a_n^{1/n} = l$: converges if $l < 1$, diverges if $l > 1$, no conclusion if $l = 1$ |
+| Raabe | $n (a_n / a_{n+1} - 1) \to l$: converges if $l > 1$, diverges if $l < 1$ |
+| Condensation | For decreasing $a_n \ge 0$: $\sum a_n$ converges if and only if $\sum 2^n a_{2^n}$ converges |
+| Integral | For positive decreasing $f$: $\sum f(n)$ and $\int_1^\infty f$ converge or diverge together |
+
+- The root test is stronger than the ratio test: whenever the ratio test decides, the root test decides too.
+- Use Raabe's test when the ratio test gives $l = 1$.
+
+## Series with terms of both signs
+
+- $\sum a_n$ is **absolutely convergent** if $\sum \lvert a_n \rvert$ converges; absolute convergence implies convergence.
+- It is **conditionally convergent** if it converges but $\sum \lvert a_n \rvert$ diverges. Example: $\sum (-1)^{n+1}/n = \log 2$.
+- **Leibniz test**: if $a_n$ decreases to 0, then $\sum (-1)^{n+1} a_n$ converges.
+- **Dirichlet test**: if the partial sums of $\sum a_n$ are bounded and $b_n$ decreases to 0, then $\sum a_n b_n$ converges. **Abel test**: if $\sum a_n$ converges and $b_n$ is monotone and bounded, then $\sum a_n b_n$ converges.
+- **Rearrangements**: an absolutely convergent series keeps its sum under every rearrangement. A conditionally convergent series can be rearranged to converge to any real number, or to diverge (**Riemann's theorem**).
+- **Cauchy product**: if both series converge and at least one converges absolutely, the Cauchy product converges to the product of the sums (Mertens).
+
+! remember | Results for series of positive terms
+- If $\sum a_n$ and $\sum b_n$ converge with $a_n, b_n \ge 0$, then $\sum a_n^2$, $\sum a_n b_n$, $\sum \sqrt{a_n b_n}$ and $\sum a_n / n$ all converge.
+- Also $\sum \sqrt{a_n}/n$ converges (Cauchy-Schwarz), but $\sum \sqrt{a_n}$ need not: $a_n = 1/n^2$.
+- For $a_n > 0$: $\sum a_n$ converges if and only if $\sum a_n/(1 + a_n)$ converges.
+- If $a_n$ is decreasing and $\sum a_n$ converges, then $n a_n \to 0$ (Pringsheim). Without monotonicity this fails.
+- These fail without positivity: for $a_n = (-1)^n/\sqrt{n}$ the series $\sum a_n$ converges but $\sum a_n^2$ diverges.
+
+## Sums worth knowing
+
+- $\sum_{n \ge 1} 1/n^2 = \pi^2/6$; $\sum_{n \ge 0} 1/n! = e$; $\sum_{n \ge 1} (-1)^{n+1}/n = \log 2$.
+- $\sum_{n \ge 1} 1/(n(n+1)) = 1$ (telescoping); $\sum_{n \ge 1} n x^n = x/(1-x)^2$ for $\lvert x \rvert < 1$.
+
+? For which $p$ does $\sum 1/n^p$ converge? :: Exactly for $p > 1$.
+? Which test to try when the ratio test gives 1? :: Raabe's test, or a comparison with a $p$-series.
+? What can a rearrangement do to a conditionally convergent series? :: It can make the sum any real number, or make the series diverge.
+? Does $\sum (-1)^n/\sqrt{n}$ converge absolutely? :: No; it converges only conditionally.
+
+! exam | PYQ focus
+- Convergence of a given series, often with a parameter: find the values for which it converges.
+- Absolute against conditional convergence of alternating series.
+- True or false statements such as "if $\sum a_n$ converges then $\sum a_n^2$ converges", where the sign of the terms matters.
+
+! recap | One-minute revision
+- $p$-series: converge for $p > 1$. Ratio or root limit below 1: converge; above 1: diverge; equal to 1: use Raabe or comparison.
+- Leibniz for alternating series; absolute convergence is the safe kind.
+- Positive terms: squares, products and $a_n/n$ of convergent series converge.
+
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapters 3 and 9)
+& Walter Rudin, Principles of Mathematical Analysis (chapter 3)
+& S. K. Mapa, Introduction to Real Analysis (infinite series)
+& MIT OpenCourseWare 18.100A: Real Analysis | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/

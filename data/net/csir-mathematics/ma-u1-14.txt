@@ -1,0 +1,74 @@
+@en
+# Matrices, rank, determinants and linear equations
+
+> Row reduction gives the rank; the rank decides how many solutions a system has. Determinant identities and the properties of special matrices fill the rest of this topic.
+
+## Rank
+
+- **Elementary row operations** (swap two rows, multiply a row by a non-zero scalar, add a multiple of one row to another) do not change the rank or the solution set of $Ax = b$.
+- The rank is the number of non-zero rows in an echelon form, the number of pivots, and the size of the largest non-zero minor. **Row rank equals column rank.**
+- An $m \times n$ matrix has rank at most $\min(m, n)$. A square matrix is invertible if and only if its rank is $n$, if and only if $\det A \ne 0$.
+- A matrix of rank $r$ is a sum of $r$ matrices of rank 1, and not of fewer. A rank-one matrix has the form $uv^T$.
+
+## Determinants
+
+! remember | Determinant identities for $n \times n$ matrices
+- $\det(AB) = \det A \cdot \det B$; $\det A^T = \det A$; $\det(kA) = k^n \det A$; $\det A^{-1} = \frac{1}{\det A}$.
+- $A \cdot \operatorname{adj} A = (\det A) I$; $\det(\operatorname{adj} A) = (\det A)^{n-1}$; $\operatorname{adj}(\operatorname{adj} A) = (\det A)^{n-2} A$ (for $n \ge 2$); $\operatorname{adj}(AB) = \operatorname{adj} B \cdot \operatorname{adj} A$.
+- **Matrix determinant lemma**: $\det(I + uv^T) = 1 + v^T u$; more generally $\det(I_m + AB) = \det(I_n + BA)$ for $A$ of size $m \times n$ and $B$ of size $n \times m$.
+- Rank of $\operatorname{adj} A$: it is $n$ if $\operatorname{rank} A = n$, it is 1 if $\operatorname{rank} A = n - 1$, and 0 if $\operatorname{rank} A \le n - 2$.
+- A triangular or block-triangular matrix has determinant equal to the product of the diagonal entries or diagonal blocks.
+- Swapping two rows changes the sign; adding a multiple of a row to another changes nothing.
+- A skew-symmetric matrix of odd order has determinant 0. An orthogonal matrix has determinant $\pm 1$; a unitary matrix has determinant of modulus 1.
+- **Vandermonde**: the determinant with rows $(1, x_i, x_i^2, \dots, x_i^{n-1})$ equals $\prod_{i < j} (x_j - x_i)$.
+
+## Special matrices
+
+| Type | Definition | Remember |
+| Symmetric / skew-symmetric | $A^T = A$ / $A^T = -A$ | Every square matrix is uniquely a sum of one of each |
+| Hermitian / skew-Hermitian | $A^* = A$ / $A^* = -A$ | Diagonal entries real / purely imaginary or 0 |
+| Orthogonal / unitary | $A^T A = I$ / $A^* A = I$ | Rows and columns orthonormal; preserve lengths |
+| Normal | $A A^* = A^* A$ | Includes Hermitian, skew-Hermitian and unitary matrices (so real symmetric, skew-symmetric and orthogonal ones); a complex symmetric matrix need not be normal |
+| Idempotent | $A^2 = A$ | Rank equals trace (real or complex) |
+| Involutory | $A^2 = I$ | $A^{-1} = A$ |
+| Nilpotent | $A^k = 0$ | Trace 0, determinant 0 |
+
+- $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ and $\operatorname{tr}(A + B) = \operatorname{tr} A + \operatorname{tr} B$. So $AB - BA = I$ is impossible for real or complex matrices: the traces are 0 and $n$.
+- $(AB)^{-1} = B^{-1} A^{-1}$, $(AB)^T = B^T A^T$, $(A^{-1})^T = (A^T)^{-1}$.
+
+## Systems of linear equations
+
+Let $A$ be $m \times n$ of rank $r$, with $n$ unknowns.
+
+| System | Condition | Solutions |
+| $Ax = 0$ | Always consistent | A subspace of dimension $n - r$; only $x = 0$ if $r = n$ |
+| $Ax = b$ | $\operatorname{rank} A \ne \operatorname{rank}[A \mid b]$ | None |
+| $Ax = b$ | $\operatorname{rank} A = \operatorname{rank}[A \mid b] = n$ | Exactly one |
+| $Ax = b$ | $\operatorname{rank} A = \operatorname{rank}[A \mid b] < n$ | Infinitely many over $\mathbb{R}$ or $\mathbb{C}$, with $n - r$ free variables |
+
+- A homogeneous system with more unknowns than equations always has a non-trivial solution. A square homogeneous system has one if and only if $\det A = 0$.
+- If $x_p$ is one solution of $Ax = b$, all solutions are $x_p + N(A)$. For $b \ne 0$ this set is not a subspace.
+- Over the finite field $F_q$: $Ax = 0$ has $q^{n-r}$ solutions, and a consistent $Ax = b$ has the same number.
+- For a consistent system $Ax = b$ with $b \ne 0$, the largest number of linearly independent solutions is $n - r + 1$.
+- $Ax = b$ is solvable for every $b$ if and only if $r = m$. The solution is unique whenever it exists if and only if $r = n$.
+- **Cramer's rule** applies to square systems with $\det A \ne 0$: $x_i = \frac{\det A_i}{\det A}$.
+
+? What is $\det(\operatorname{adj} A)$ for an $n \times n$ matrix? :: $(\det A)^{n-1}$.
+? Rank of $\operatorname{adj} A$ when $\operatorname{rank} A = n - 1$? :: 1.
+? When does $Ax = b$ have infinitely many solutions? :: When $\operatorname{rank} A = \operatorname{rank}[A \mid b] < n$, over an infinite field.
+? Why can $AB - BA$ never be $I$? :: Its trace is 0, while the trace of $I$ is $n$.
+
+! exam | PYQ focus
+- Number of solutions of a system with a parameter; values of the parameter for no, one or infinitely many solutions.
+- Rank of a patterned matrix, of $\operatorname{adj} A$, or of a product.
+- True or false statements built from determinant and trace identities.
+
+! recap | One-minute revision
+- Consistent means $\operatorname{rank} A = \operatorname{rank}[A \mid b]$; the solution set is $x_p + N(A)$ of dimension $n - r$.
+- $\det(kA) = k^n \det A$, $\det(\operatorname{adj} A) = (\det A)^{n-1}$.
+- Trace of a product does not depend on the order of the two factors.
+
+& Kenneth Hoffman and Ray Kunze, Linear Algebra (chapters 1 and 5)
+& Gilbert Strang, Linear Algebra and Its Applications (chapters 1, 2 and 4)
+& S. H. Friedberg, A. J. Insel and L. E. Spence, Linear Algebra (chapters 3 and 4)
+& MIT OpenCourseWare 18.06: Linear Algebra | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/

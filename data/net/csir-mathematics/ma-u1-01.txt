@@ -1,0 +1,68 @@
+@en
+# Sets, countability and the real number system
+
+> Two ideas run through all of analysis: how large a set is (countable or uncountable) and the completeness of the real numbers (every bounded set has a supremum). Most one-line questions on this topic are settled by a short list of standard facts.
+
+## Countable and uncountable sets
+
+- A set is **countable** if it is finite or can be put in one-to-one correspondence with $\mathbb{N}$ (cardinality $\aleph_0$). Otherwise it is **uncountable**.
+- The cardinality of $\mathbb{R}$ is $c = 2^{\aleph_0}$, the cardinality of the power set of $\mathbb{N}$.
+
+| Countable | Uncountable |
+| $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{Q}^n$ | $\mathbb{R}$, any interval $(a,b)$ with $a < b$ |
+| Algebraic numbers | Irrational numbers, transcendental numbers |
+| Polynomials with integer (or rational) coefficients | The power set $P(\mathbb{N})$ |
+| All finite subsets of $\mathbb{N}$ | All subsets of $\mathbb{N}$; all sequences of 0s and 1s |
+| Any family of pairwise disjoint open intervals of $\mathbb{R}$ | The Cantor set |
+| Discontinuities of a monotone function | All functions $\mathbb{N} \to \mathbb{N}$; all bijections of $\mathbb{N}$ |
+| Eventually constant (or eventually zero) sequences of integers | All infinite subsets of $\mathbb{N}$ |
+
+! remember | Tools for countability
+- A subset of a countable set is countable.
+- A countable union of countable sets is countable; a finite product of countable sets is countable.
+- An infinite product of sets with at least two elements each is uncountable.
+- If $f : A \to B$ is one-one and $B$ is countable, then $A$ is countable. If $f : A \to B$ is onto and $A$ is countable, then $B$ is countable.
+- **Cantor's theorem**: no set can be mapped onto its power set, so $\lvert A \rvert < \lvert P(A) \rvert$.
+- **Schröder-Bernstein**: if there are one-one maps $A \to B$ and $B \to A$, then $\lvert A \rvert = \lvert B \rvert$.
+
+## The real number system
+
+- $\mathbb{R}$ is a **complete ordered field**. $\mathbb{Q}$ is an ordered field that is not complete.
+- **Completeness (least upper bound) axiom**: every non-empty subset of $\mathbb{R}$ that is bounded above has a supremum in $\mathbb{R}$.
+- $s = \sup A$ if and only if $s$ is an upper bound of $A$ and for every $\varepsilon > 0$ there is $a \in A$ with $a > s - \varepsilon$. The infimum is described in the same way from below.
+- **Archimedean property**: for every real $x$ there is a natural number $n > x$. Hence $\inf \{1/n : n \in \mathbb{N}\} = 0$.
+- **Density**: between any two real numbers there are a rational and an irrational number.
+- **Nested interval property**: closed bounded intervals $I_1 \supseteq I_2 \supseteq \dots$ have a common point; if the lengths tend to 0 the point is unique.
+
+## Working with sup and inf
+
+- For non-empty bounded sets: $\sup(A + B) = \sup A + \sup B$, and $\inf(A + B) = \inf A + \inf B$.
+- For $c > 0$: $\sup(cA) = c \sup A$. For $c < 0$: $\sup(cA) = c \inf A$.
+- $\inf A = -\sup(-A)$. If $A \subseteq B$ then $\inf B \le \inf A \le \sup A \le \sup B$.
+- A supremum need not belong to the set: $\sup (0,1) = 1 \notin (0,1)$.
+
+| Set | Infimum | Supremum |
+| $\{1/n : n \in \mathbb{N}\}$ | 0 (not attained) | 1 |
+| $\{(-1)^n (1 - 1/n)\}$ | $-1$ (not attained) | 1 (not attained) |
+| $\{x \in \mathbb{Q} : x^2 < 2\}$ | $-\sqrt{2}$ | $\sqrt{2}$ (not in $\mathbb{Q}$) |
+| $\{n/(n+1) : n \in \mathbb{N}\}$ | $1/2$ | 1 (not attained) |
+
+? Is the set of all sequences of 0s and 1s countable? :: No. It has cardinality $2^{\aleph_0} = c$ (Cantor's diagonal argument).
+? Is the set of algebraic numbers countable? :: Yes; so the transcendental numbers are uncountable.
+? Which property separates $\mathbb{R}$ from $\mathbb{Q}$? :: Completeness: every non-empty set bounded above has a least upper bound.
+? What is $\inf\{1/n\}$ and why? :: 0, by the Archimedean property.
+
+! exam | PYQ focus
+- Deciding which of several given sets are countable (subsets of $\mathbb{R}$, sets of functions, sets of sequences).
+- Supremum and infimum of a set given by a formula, and whether they are attained.
+- Statements about maps between $\mathbb{N}$, $\mathbb{Q}$, $\mathbb{R}$ and power sets (one-one, onto, bijection).
+
+! recap | One-minute revision
+- Countable: $\mathbb{Q}$, algebraic numbers, finite subsets of $\mathbb{N}$. Uncountable: intervals, irrationals, $P(\mathbb{N})$, Cantor set.
+- $\mathbb{R}$ is the complete ordered field; sup is the least upper bound, described with $\varepsilon$.
+- Archimedean property and the density of $\mathbb{Q}$ follow from completeness.
+
+& Walter Rudin, Principles of Mathematical Analysis (chapters 1 and 2)
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis (chapters 1 and 2)
+& S. K. Mapa, Introduction to Real Analysis (real number system; sets in R)
+& CSIR-HRDG: syllabus of the Joint CSIR-UGC NET, Mathematical Sciences | https://csirhrdg.res.in/

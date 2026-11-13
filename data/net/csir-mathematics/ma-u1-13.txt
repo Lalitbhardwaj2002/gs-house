@@ -1,0 +1,69 @@
+@en
+# Linear transformations
+
+> A linear transformation is fixed by what it does to a basis, and its size is measured by rank and nullity. The rank-nullity theorem and a handful of rank inequalities answer most questions.
+
+## Kernel, range and the rank-nullity theorem
+
+- $T : V \to W$ is **linear** if $T(\alpha x + \beta y) = \alpha T(x) + \beta T(y)$. Then $T(0) = 0$.
+- **Null space** (kernel) $N(T) = \{x : T(x) = 0\}$; **range** $R(T) = T(V)$. Nullity $= \dim N(T)$, rank $= \dim R(T)$.
+- **Rank-nullity theorem**: $\dim V = \operatorname{rank} T + \operatorname{nullity} T$ for finite-dimensional $V$.
+- $T$ is one-one if and only if $N(T) = \{0\}$. If $\dim V = \dim W$ is finite, then one-one, onto and bijective are the same thing.
+- If $\dim V > \dim W$ no linear map $V \to W$ is one-one; if $\dim V < \dim W$ none is onto.
+- A linear map is fixed by its values on a basis, and those values can be chosen freely.
+
+! remember | Isomorphism theorems and counting
+- Two finite-dimensional spaces over the same field are isomorphic if and only if they have the same dimension.
+- $V / N(T) \cong R(T)$; $\frac{W_1 + W_2}{W_1} \cong \frac{W_2}{W_1 \cap W_2}$; and $\frac{V/W_1}{W_2/W_1} \cong V/W_2$ for $W_1 \subseteq W_2$.
+- Over $F_q$, with $\dim V = n$ and $\dim W = m$: the number of linear maps $V \to W$ is $q^{mn}$; the number of one-one linear maps (for $n \le m$) is $(q^m - 1)(q^m - q) \cdots (q^m - q^{n-1})$.
+
+## Matrix of a linear transformation
+
+- With bases $B$ of $V$ and $B'$ of $W$, the columns of $[T]$ are the coordinates of the images of the vectors of $B$. Composition corresponds to the matrix product.
+- **Change of basis**: for $T : V \to V$, $[T]_{B'} = P^{-1} [T]_B P$, where the columns of $P$ are the new basis vectors in the old coordinates.
+- **Similar** matrices ($B = P^{-1}AP$) represent the same operator. They share rank, determinant, trace, characteristic polynomial, minimal polynomial and eigenvalues. Equal trace and determinant do not imply similarity.
+- $L(V, W)$ has dimension $\dim V \cdot \dim W$. The **dual space** $V^* = L(V, F)$ has the same dimension as $V$; a basis $\{v_i\}$ has a dual basis $\{f_i\}$ with $f_i(v_j) = \delta_{ij}$.
+- **Annihilator** $W^0 = \{f \in V^* : f(W) = 0\}$ has dimension $\dim V - \dim W$.
+
+## Rank inequalities
+
+| Statement | Remark |
+| $\operatorname{rank}(AB) \le \min(\operatorname{rank} A, \operatorname{rank} B)$ | $\operatorname{rank}(AB) = \operatorname{rank} A$ if $B$ is invertible, and $= \operatorname{rank} B$ if $A$ is invertible |
+| $\operatorname{rank} A + \operatorname{rank} B - n \le \operatorname{rank}(AB)$ | Sylvester; $A$ is $m \times n$, $B$ is $n \times p$ |
+| $\operatorname{rank}(A + B) \le \operatorname{rank} A + \operatorname{rank} B$ | |
+| $\operatorname{rank} A = \operatorname{rank} A^T = \operatorname{rank}(A^T A)$ | The last for real matrices |
+| $AB = 0$ implies $\operatorname{rank} A + \operatorname{rank} B \le n$ | From Sylvester |
+
+- $N(T) \subseteq N(T^2) \subseteq \dots$ and $R(T) \supseteq R(T^2) \supseteq \dots$; once two consecutive terms are equal, the chain stays constant.
+- If $T^2 = 0$ on an $n$-dimensional space, then $R(T) \subseteq N(T)$ and $\operatorname{rank} T \le n/2$.
+- $\operatorname{rank} T^2 = \operatorname{rank} T$ if and only if $N(T) \cap R(T) = \{0\}$, if and only if $V = N(T) \oplus R(T)$.
+- For square matrices (finite dimension), $AB = I$ implies $BA = I$. This fails in infinite dimensions: on sequences, the left shift $L$ and right shift $R$ give $LR = I$ but $RL \ne I$.
+
+## Special operators
+
+| Operator | Defining property | Facts |
+| Projection (idempotent) | $T^2 = T$ | $V = N(T) \oplus R(T)$; eigenvalues among 0 and 1; diagonalisable; rank $=$ trace over $\mathbb{R}$ or $\mathbb{C}$ |
+| Nilpotent | $T^k = 0$ for some $k$ | Only eigenvalue 0; least such $k$ is at most $n$; trace and determinant 0; $I - T$ is invertible |
+| Involution | $T^2 = I$ | Eigenvalues among $\pm 1$; diagonalisable if the characteristic of the field is not 2 |
+| Rotation of $\mathbb{R}^2$ by $\theta$ | Matrix with rows $(\cos\theta, -\sin\theta)$, $(\sin\theta, \cos\theta)$ | Orthogonal, determinant 1; no real eigenvalue unless $\theta$ is a multiple of $\pi$ |
+| Differentiation on polynomials of degree at most $n$ | $D(p) = p'$ | Nilpotent of index $n + 1$; rank $n$, nullity 1 |
+
+? State the rank-nullity theorem. :: $\dim V = \operatorname{rank} T + \operatorname{nullity} T$.
+? How many linear maps are there from $F_q^n$ to $F_q^m$? :: $q^{mn}$.
+? If $T^2 = 0$ on $\mathbb{R}^n$, how large can the rank be? :: At most $n/2$.
+? What is the rank of a projection on a real or complex space? :: Its trace.
+
+! exam | PYQ focus
+- Rank and nullity of a map defined on matrices or polynomials, and its matrix in a given basis.
+- True or false statements on the ranks of products, sums and powers.
+- Existence of linear maps with a prescribed kernel and range, and counting them over a finite field.
+
+! recap | One-minute revision
+- Rank plus nullity equals the dimension of the domain.
+- $\operatorname{rank} A + \operatorname{rank} B - n \le \operatorname{rank}(AB) \le \min(\operatorname{rank} A, \operatorname{rank} B)$.
+- Similar matrices share everything that depends only on the operator.
+
+& Kenneth Hoffman and Ray Kunze, Linear Algebra (chapter 3)
+& Sheldon Axler, Linear Algebra Done Right (chapter 3)
+& S. H. Friedberg, A. J. Insel and L. E. Spence, Linear Algebra (chapter 2)
+& MIT OpenCourseWare 18.06: Linear Algebra | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
