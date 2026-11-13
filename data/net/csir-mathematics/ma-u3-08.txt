@@ -1,0 +1,102 @@
+@en
+# Linear integral equations
+
+> In an integral equation the unknown function stands under an integral sign. Initial value problems turn into Volterra equations and boundary value problems into Fredholm equations. Most questions use a separable kernel, where everything reduces to linear algebra.
+
+## Classification
+
+The general linear equation is $\alpha(x)y(x) = f(x) + \lambda\int K(x, t)\,y(t)\,dt$, with **kernel** $K$ and parameter $\lambda$.
+
+| Name | Feature |
+| Fredholm equation | Fixed limits: $\int_a^b$ |
+| Volterra equation | Variable upper limit: $\int_a^x$ |
+| First kind | $\alpha = 0$: the unknown appears only under the integral |
+| Second kind | $\alpha = 1$: $y(x) = f(x) + \lambda\int K(x, t)\,y(t)\,dt$ |
+| Homogeneous | $f = 0$ |
+| Singular | An infinite limit, or a kernel that becomes infinite |
+
+| Kernel | Definition |
+| Symmetric | $K(x, t) = K(t, x)$ |
+| Separable (degenerate) | $K(x, t) = \sum_{i=1}^{n} a_i(x)\,b_i(t)$ |
+| Convolution (difference) type | $K(x, t) = k(x - t)$ |
+
+- A Volterra equation is a Fredholm equation whose kernel vanishes for $t > x$.
+
+## Link with differential equations
+
+- An **initial value problem** becomes a **Volterra** equation of the second kind; a **boundary value problem** becomes a **Fredholm** equation, whose kernel is the Green's function.
+- Repeated integration collapses to one integral: $\int_a^x \int_a^{x_1} \cdots \int_a^{x_{n-1}} f\,dx_n \cdots dx_1 = \frac{1}{(n - 1)!}\int_a^x (x - t)^{n-1} f(t)\,dt$.
+- **Leibniz's rule**, used to go back to a differential equation:
+
+$$\frac{d}{dx}\int_{a(x)}^{b(x)} K(x, t)\,y(t)\,dt = \int_{a(x)}^{b(x)} \frac{\partial K}{\partial x}\,y(t)\,dt + K(x, b)\,y(b)\,b'(x) - K(x, a)\,y(a)\,a'(x)$$
+
+- Example: $y'' + y = 0$, $y(0) = 0$, $y'(0) = 1$ is equivalent to $y(x) = x - \int_0^x (x - t)\,y(t)\,dt$; its solution is $\sin x$.
+- Example: $y'' + \lambda y = 0$, $y(0) = y(1) = 0$ is equivalent to $y(x) = \lambda\int_0^1 K(x, t)\,y(t)\,dt$ with the symmetric kernel $K = t(1 - x)$ for $t \le x$ and $K = x(1 - t)$ for $t \ge x$.
+
+## Fredholm equations with separable kernels
+
+- In $y(x) = f(x) + \lambda\int_a^b \sum a_i(x)b_i(t)\,y(t)\,dt$ put $c_i = \int_a^b b_i(t)\,y(t)\,dt$. Then $y = f + \lambda\sum c_i a_i(x)$, and the numbers $c_i$ satisfy the linear system
+
+$$(I - \lambda A)c = \beta, \qquad A_{ij} = \int_a^b b_i(t)\,a_j(t)\,dt, \quad \beta_i = \int_a^b b_i(t)\,f(t)\,dt$$
+
+- Let $D(\lambda) = \det(I - \lambda A)$. If $D(\lambda) \neq 0$ the equation has exactly one solution. The roots of $D(\lambda) = 0$ are the **characteristic numbers** (eigenvalues); for them the homogeneous equation has non-zero solutions, the **eigenfunctions**.
+- A separable kernel with $n$ terms has at most $n$ characteristic numbers. It may have none.
+
+| Equation | Result |
+| $y(x) = \lambda\int_0^1 xt\,y(t)\,dt$ | $\lambda = 3$, eigenfunction $x$ |
+| $y(x) = \lambda\int_0^{\pi} \sin x \sin t\,y(t)\,dt$ | $\lambda = \frac{2}{\pi}$, eigenfunction $\sin x$ |
+| $y(x) = \lambda\int_0^{\pi} \sin x \cos t\,y(t)\,dt$ | No characteristic number: only $y = 0$ |
+| $y(x) = x + \lambda\int_0^1 xt\,y(t)\,dt$ | $y = \frac{3x}{3 - \lambda}$ for $\lambda \neq 3$; no solution for $\lambda = 3$ |
+
+! remember | Fredholm alternative
+- Either the equation $y = f + \lambda\int_a^b K y\,dt$ has exactly one solution for every $f$, or the homogeneous equation has a non-zero solution. The first case holds exactly when $\lambda$ is not a characteristic number.
+- In the second case the non-homogeneous equation is solvable only if $f$ is orthogonal to every solution $\psi$ of the transposed homogeneous equation $\psi(x) = \lambda\int_a^b K(t, x)\,\psi(t)\,dt$, that is $\int_a^b f\psi\,dx = 0$. Then it has infinitely many solutions.
+- The homogeneous equation and its transpose have the same number of independent solutions.
+- A Volterra equation of the second kind with a continuous kernel has **no** characteristic numbers: it has exactly one solution for every $\lambda$ and every continuous $f$.
+
+## Symmetric kernels
+
+- A real symmetric continuous kernel that is not identically zero has at least one characteristic number.
+- All its characteristic numbers are real, and eigenfunctions belonging to different characteristic numbers are orthogonal.
+- Each characteristic number has finitely many independent eigenfunctions, and only finitely many characteristic numbers lie in any bounded interval.
+- The kernel has finitely many characteristic numbers if and only if it is separable.
+- **Hilbert-Schmidt formula**: with orthonormal eigenfunctions $\varphi_n$ and $f_n = \int f\varphi_n\,dx$, the solution for $\lambda$ not characteristic is $y = f + \lambda\sum_n \frac{f_n}{\lambda_n - \lambda}\varphi_n(x)$.
+- Some books call $\mu = \frac{1}{\lambda}$ the eigenvalue, from $\int K y\,dt = \mu y$. Check the convention of the question.
+
+## Successive approximations and the resolvent kernel
+
+- **Iterated kernels**: $K_1 = K$ and $K_{n+1}(x, t) = \int K(x, s)\,K_n(s, t)\,ds$ (limits $a$ to $b$ for Fredholm, $t$ to $x$ for Volterra).
+- **Resolvent kernel**: $R(x, t; \lambda) = \sum_{n \ge 1} \lambda^{n-1}K_n(x, t)$, and the solution is $y(x) = f(x) + \lambda\int R(x, t; \lambda)\,f(t)\,dt$.
+- The series (the **Neumann series**) converges for a Fredholm equation at least when $\lvert \lambda \rvert M(b - a) < 1$, where $M = \max \lvert K \rvert$; for a Volterra equation it converges for every $\lambda$.
+
+| Kernel | Resolvent kernel |
+| Volterra, $K = 1$ | $e^{\lambda(x - t)}$ |
+| Volterra, $K = e^{x - t}$ | $e^{(1 + \lambda)(x - t)}$ |
+| Volterra, $K = x - t$, $\lambda > 0$ | $\frac{\sinh(\sqrt{\lambda}(x - t))}{\sqrt{\lambda}}$; for $\lambda = 1$ this is $\sinh(x - t)$ |
+| Fredholm on $[0, 1]$, $K = xt$ | $\frac{3xt}{3 - \lambda}$, for $\lvert \lambda \rvert < 3$ |
+
+! trick | Convolution kernels: use the Laplace transform
+- For $y(x) = f(x) + \int_0^x k(x - t)\,y(t)\,dt$, taking transforms gives $Y = F + KY$, so $Y(s) = \frac{F(s)}{1 - K(s)}$.
+- Example: $y(x) = x + \int_0^x \sin(x - t)\,y(t)\,dt$ gives $Y = \frac{s^2 + 1}{s^4}$, so $y = x + \frac{x^3}{6}$.
+- **Abel's equation** $f(x) = \int_0^x \frac{y(t)}{(x - t)^{\alpha}}\,dt$, $0 < \alpha < 1$, has the solution $y(x) = \frac{\sin \alpha\pi}{\pi}\frac{d}{dx}\int_0^x \frac{f(t)}{(x - t)^{1 - \alpha}}\,dt$.
+- A Volterra equation of the first kind with $K(x, x) \neq 0$ becomes one of the second kind on differentiating once.
+
+? What kind of integral equation does an initial value problem give? :: A Volterra equation of the second kind.
+? How many characteristic numbers can a separable kernel with $n$ terms have? :: At most $n$.
+? Resolvent kernel of the Volterra kernel $K(x, t) = 1$? :: $e^{\lambda(x - t)}$.
+? Are the characteristic numbers of a real symmetric kernel real? :: Yes, and eigenfunctions for different ones are orthogonal.
+
+! exam | PYQ focus
+- Solving a Fredholm equation with a separable kernel; the values of $\lambda$ for which it has no solution, one solution or infinitely many.
+- Characteristic numbers and eigenfunctions; resolvent kernel of a simple kernel.
+- Converting between an integral equation and an initial or boundary value problem; Volterra equations of convolution type.
+
+! recap | One-minute revision
+- Initial value problem gives Volterra; boundary value problem gives Fredholm.
+- Separable kernel: reduce to $(I - \lambda A)c = \beta$; at most $n$ characteristic numbers.
+- Volterra second kind: unique solution for every $\lambda$. Symmetric kernel: real characteristic numbers, orthogonal eigenfunctions.
+
+& R. P. Kanwal, Linear Integral Equations: Theory and Technique (chapters 1 to 5 and 7)
+& F. G. Tricomi, Integral Equations (chapters 1 to 3)
+& M. D. Raisinghania, Integral Equations and Boundary Value Problems
+& MIT OpenCourseWare 18.307: Integral Equations | https://ocw.mit.edu/courses/18-307-integral-equations-spring-2006/

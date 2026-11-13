@@ -1,0 +1,96 @@
+@en
+# Calculus of variations
+
+> A functional gives a number to each curve, for example its length or the time of descent along it. The calculus of variations finds the curve that makes the number stationary. The central tool is the Euler-Lagrange equation.
+
+## The Euler-Lagrange equation
+
+- For $J[y] = \int_a^b F(x, y, y')\,dx$ with $y(a)$ and $y(b)$ fixed, a function giving an extremum must satisfy
+
+$$F_y - \frac{d}{dx}F_{y'} = 0$$
+
+- Reason: put $y + \varepsilon\eta$ with $\eta(a) = \eta(b) = 0$. After integration by parts the **first variation** is $\delta J = \varepsilon\int_a^b \left(F_y - \frac{d}{dx}F_{y'}\right)\eta\,dx$. It must vanish for every such $\eta$, and the **fundamental lemma** of the calculus of variations gives the equation.
+- Its solutions are the **extremals**. Written out, it is the second order equation $F_{y'y'}\,y'' + F_{y'y}\,y' + F_{y'x} - F_y = 0$.
+- The condition is necessary, not sufficient: an extremal may give a maximum, a minimum or neither.
+
+! remember | Special cases
+- $F$ free of $y$: $F_{y'} = c$.
+- $F$ free of $x$: $F - y'F_{y'} = c$ (the **Beltrami identity**).
+- $F$ a function of $y'$ only (with $F_{y'y'} \neq 0$): the extremals are straight lines $y = c_1 x + c_2$.
+- $F$ free of $y'$: the equation is $F_y = 0$, which is not a differential equation; its curve passes through the given end points only by accident.
+- $F = M(x, y) + N(x, y)y'$: the equation reduces to $M_y = N_x$. If this holds identically the integral does not depend on the path and there is no variational problem.
+
+| Problem | Integrand | Extremal |
+| Shortest path in the plane | $\sqrt{1 + y'^2}$ | Straight line |
+| Brachistochrone (quickest descent) | $\sqrt{\frac{1 + y'^2}{y}}$ | Cycloid |
+| Least surface of revolution | $y\sqrt{1 + y'^2}$ | Catenary $y = c\cosh\frac{x - a}{c}$ |
+| Geodesics on a sphere | Arc length on the sphere | Great circles |
+| Geodesics on a circular cylinder | Arc length on the cylinder | Helices |
+| Greatest area for a given perimeter | Area with a length constraint | Circle |
+
+- Example: for $\int_0^1 (y'^2 + 12xy)\,dx$, $y(0) = 0$, $y(1) = 1$, the equation is $12x - 2y'' = 0$, so $y = x^3 + c_1x + c_2$ and the extremal is $y = x^3$.
+
+## Other kinds of functional
+
+| Functional | Necessary condition |
+| $\int F(x, y_1, \dots, y_n, y_1', \dots, y_n')\,dx$ | One Euler-Lagrange equation for each $y_i$ |
+| $\int F(x, y, y', y'')\,dx$ | $F_y - \frac{d}{dx}F_{y'} + \frac{d^2}{dx^2}F_{y''} = 0$ (**Euler-Poisson**, order 4) |
+| $\iint F(x, y, u, u_x, u_y)\,dx\,dy$ | $F_u - \frac{\partial}{\partial x}F_{u_x} - \frac{\partial}{\partial y}F_{u_y} = 0$ (**Euler-Ostrogradsky**) |
+
+- With derivatives up to order $n$ the Euler-Poisson equation has order $2n$ and the signs alternate.
+- $\iint (u_x^2 + u_y^2)\,dx\,dy$ gives Laplace's equation; $\iint (u_x^2 + u_y^2 + 2fu)\,dx\,dy$ gives Poisson's equation $\Delta u = f$.
+
+## Constraints: isoperimetric problems
+
+- To extremise $\int_a^b F\,dx$ subject to $\int_a^b G\,dx = l$, apply the Euler-Lagrange equation to $H = F + \lambda G$. The constant $\lambda$ and the constants of integration come from the end conditions and the constraint.
+- Example: extremise $\int_0^1 y'^2\,dx$ with $\int_0^1 y\,dx = 1$, $y(0) = y(1) = 0$. From $H = y'^2 + \lambda y$, $y'' = \frac{\lambda}{2}$, and the conditions give $y = 6x(1 - x)$.
+- For a constraint $g(x, y_1, y_2) = 0$ holding at every point, use $F + \lambda(x)g$ with $\lambda$ a function of $x$.
+
+## Free and moving end points
+
+- If $y(b)$ is not prescribed, the extremal must satisfy the **natural boundary condition** $F_{y'} = 0$ at $x = b$.
+- If the end point must lie on a curve $y = \varphi(x)$, the **transversality condition** holds there: $F + (\varphi' - y')F_{y'} = 0$.
+- For integrands $F = A(x, y)\sqrt{1 + y'^2}$ transversality means that the extremal meets the curve at right angles.
+- At a corner of a broken extremal, $F_{y'}$ and $F - y'F_{y'}$ are continuous (**Weierstrass-Erdmann conditions**).
+
+## Sufficient conditions
+
+- A **strong** extremum is compared with all curves close to the extremal in position; a **weak** extremum only with curves close in position and in slope. Every strong extremum is also a weak one.
+
+! remember | Tests on an extremal
+- **Legendre's condition** (necessary): $F_{y'y'} \ge 0$ along the extremal for a minimum, $\le 0$ for a maximum.
+- **Jacobi's equation**: $\frac{d}{dx}(Pu') - Qu = 0$ with $P = F_{y'y'}$, $Q = F_{yy} - \frac{d}{dx}F_{yy'}$, taken along the extremal. A point $c > a$ is **conjugate** to $a$ if a non-trivial solution with $u(a) = 0$ vanishes at $c$.
+- **Jacobi's condition**: no point conjugate to $a$ lies in $(a, b]$.
+- $F_{y'y'} > 0$ along the extremal together with Jacobi's condition is **sufficient for a weak minimum**.
+- For a **strong minimum**, in addition the Weierstrass function $E = F(x, y, w) - F(x, y, y') - (w - y')F_{y'}(x, y, y')$ must be non-negative at all points near the extremal, for every slope $w$.
+- If $F$ is convex in $(y, y')$ for each $x$, every extremal is an absolute minimiser.
+
+- Example: for $\int_0^a (y'^2 - y^2)\,dx$, $y(0) = y(a) = 0$, Jacobi's equation is $u'' + u = 0$ and $u = \sin x$ vanishes next at $\pi$. So $y = 0$ gives a minimum if $a < \pi$ and not if $a > \pi$.
+
+## Variational methods for boundary value problems
+
+- The problem $-(py')' + qy = f$, $y(a) = y(b) = 0$ is the Euler-Lagrange equation of $J[y] = \int_a^b (py'^2 + qy^2 - 2fy)\,dx$. Solving the boundary value problem is the same as minimising $J$ (for $p > 0$, $q \ge 0$).
+- **Rayleigh-Ritz method**: take $y \approx \sum c_i\varphi_i(x)$ with each $\varphi_i$ satisfying the boundary conditions, put it in $J$, and solve $\frac{\partial J}{\partial c_i} = 0$, a linear system.
+- **Galerkin method**: require the residual to be orthogonal to the trial functions, $\int (L[y_n] - f)\varphi_i\,dx = 0$. For self-adjoint problems it gives the same equations as Ritz, and it also works when no functional exists.
+- **Rayleigh quotient**: the least eigenvalue of $-(py')' + qy = \lambda ry$ is the minimum of $\frac{\int (py'^2 + qy^2)\,dx}{\int ry^2\,dx}$, so any trial function gives an upper bound. For $y'' + \lambda y = 0$, $y(0) = y(1) = 0$ the trial function $x(1 - x)$ gives 10, against the true value $\pi^2 \approx 9.87$.
+- For partial differential equations the same idea with trial functions in one variable and unknown functions of the other is the **Kantorovich method**.
+
+? First integral when $F$ does not contain $x$? :: $F - y'F_{y'} = c$, the Beltrami identity.
+? Extremal of the brachistochrone problem? :: A cycloid.
+? How is a constraint $\int G\,dx = l$ handled? :: Apply the Euler-Lagrange equation to $F + \lambda G$ with $\lambda$ a constant.
+? Natural boundary condition at a free end? :: $F_{y'} = 0$ at that end.
+
+! exam | PYQ focus
+- Extremal of a given functional with fixed ends, with a free end, or with an integral constraint.
+- Whether an extremal gives a weak or strong minimum (Legendre and Jacobi tests).
+- Order and form of the Euler equation for functionals with higher derivatives or several variables.
+
+! recap | One-minute revision
+- $F_y - \frac{d}{dx}F_{y'} = 0$; no $y$: $F_{y'} = c$; no $x$: $F - y'F_{y'} = c$.
+- Constraint: use $F + \lambda G$. Free end: $F_{y'} = 0$. End on a curve: transversality.
+- Weak minimum: $F_{y'y'} > 0$ and no conjugate point in $(a, b]$.
+
+& I. M. Gelfand and S. V. Fomin, Calculus of Variations (chapters 1 to 5)
+& L. Elsgolts, Differential Equations and the Calculus of Variations (the part on the calculus of variations)
+& A. S. Gupta, Calculus of Variations with Applications
+& MIT OpenCourseWare 18.086: Mathematical Methods for Engineers II | https://ocw.mit.edu/courses/18-086-mathematical-methods-for-engineers-ii-spring-2006/
