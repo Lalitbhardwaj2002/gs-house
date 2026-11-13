@@ -978,7 +978,7 @@ function render() {
 function topBar(v) {
   return `
     <header class="topbar">
-      <div class="brand-mini">🪔 <b>GS HOUSE</b>${v.solo ? '' : `<button class="chip" data-action="copy">${t('roomCode')} <b>${esc(v.code)}</b></button>`}</div>
+      <div class="brand-mini" aria-label="GS HOUSE">${LOGO_MARK}${LOGO_WORD}${v.solo ? '' : `<button class="chip" data-action="copy">${t('roomCode')} <b>${esc(v.code)}</b></button>`}</div>
       <div class="topbar-right">
         <button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">EN</span><span class="${lang === 'hi' ? 'on' : ''}">हिं</span></button>
         ${menuHTML()}
@@ -1480,8 +1480,7 @@ function renderHome() {
   app.innerHTML = `
     <div class="home-top"><button class="lang-toggle" data-action="lang" aria-label="Change language"><span class="${lang === 'en' ? 'on' : ''}">English</span><span class="${lang === 'hi' ? 'on' : ''}">हिन्दी</span></button>${menuHTML()}</div>
     <section class="hero">
-      ${LOTUS_SVG}
-      <h1 class="title"><span class="t-main">GS HOUSE</span></h1>
+      <h1 class="title" aria-label="GS HOUSE">${LOGO_MARK}${LOGO_WORD}</h1>
       <p class="tagline">${t('tagline')}</p>
       <p class="stats">${t('stats', SECTIONS.length, total)}</p>
     </section>
@@ -1647,16 +1646,18 @@ function bookTopicHTML(topic) {
 function parseNotes(text) {
   const blocks = [];
   let box = null;
+  let gap = true; // a blank line ends the running table, list, timeline or card group
   const target = () => (box ? box.items : blocks);
   const group = (type, item) => {
     const list = target();
     const prev = list[list.length - 1];
-    if (prev && prev.type === type) prev.items.push(item); else list.push({ type, items: [item] });
+    if (!gap && prev && prev.type === type) prev.items.push(item); else list.push({ type, items: [item] });
+    gap = false;
   };
   const cells = (s, sep) => s.split(sep).map((c) => c.trim());
   for (const raw of text.split('\n')) {
     const line = raw.trim();
-    if (!line) { box = null; continue; }
+    if (!line) { box = null; gap = true; continue; }
     const start = line.match(/^!\s*(\w+)\s*\|\s*(.+)$/);
     if (start) { box = { type: 'box', kind: start[1], title: start[2], items: [] }; blocks.push(box); continue; }
     if (line.startsWith('## ')) { box = null; blocks.push({ type: 'h', text: line.slice(3) }); continue; }
@@ -1671,7 +1672,8 @@ function parseNotes(text) {
   return blocks;
 }
 
-const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/==(.+?)==/g, '<mark>$1</mark>');
+// `==text==` in the notes files once drew a highlighter stroke; the owner asked for it to go, so it is plain text now.
+const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/==(.+?)==/g, '$1');
 const BOX_ICON = { remember: '📌', trick: '🧠', exam: '🔥', recap: '⚡' };
 function notesHTML(blocks, open = false) {
   return blocks.map((b) => {
@@ -1837,14 +1839,33 @@ const DIYA_SVG = `
     <path d="M52 74 q8 9 16 0" fill="none" stroke="#5a1f06" stroke-width="3" stroke-linecap="round"/>
   </svg>`;
 
-const LOTUS_SVG = `
-  <svg class="lotus" viewBox="0 0 120 80" aria-hidden="true">
-    <path d="M60 8 C72 26 72 46 60 62 C48 46 48 26 60 8Z" fill="#e8738a"/>
-    <path d="M60 62 C40 56 28 40 30 22 C44 28 56 42 60 62Z" fill="#f29bab"/>
-    <path d="M60 62 C80 56 92 40 90 22 C76 28 64 42 60 62Z" fill="#f29bab"/>
-    <path d="M60 64 C36 66 16 56 8 42 C26 40 46 48 60 64Z" fill="#f7c1cb"/>
-    <path d="M60 64 C84 66 104 56 112 42 C94 40 74 48 60 64Z" fill="#f7c1cb"/>
-    <path d="M24 70 Q60 80 96 70" fill="none" stroke="#c9972b" stroke-width="3" stroke-linecap="round"/>
+// The GS HOUSE logo. The mark is a house split into a light and a dark half, with G and S as drawn letters
+// and a lamp under the roof. The wordmark is drawn too (no font), with a little house for the O; it takes the
+// theme colours. tools/make_icons.py draws the same shapes for the app icons: change both together.
+const LOGO_MARK = `<svg class="logo-mark" viewBox="0 0 512 512" aria-hidden="true">
+    <path d="M256 40 L44 200 V452 Q44 472 64 472 H256 Z" fill="#fbf3e2"/>
+    <path d="M256 40 L468 200 V452 Q468 472 448 472 H256 Z" fill="#7b1e1e"/>
+    <path d="M256 40 L468 200 V452 Q468 472 448 472 H64 Q44 472 44 452 V200 Z" fill="none" stroke="#c9972b" stroke-width="16" stroke-linejoin="round"/>
+    <path d="M256 92 C280 126 290 142 290 160 A34 34 0 0 1 222 160 C222 142 232 126 256 92 Z" fill="#e07a1f"/>
+    <circle cx="256" cy="164" r="13" fill="#fbe7a8"/>
+    <path d="M194.4 271.4 A66 66 0 1 0 218 322 H166" fill="none" stroke="#7b1e1e" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M388.6 272.5 A33 33 0 1 0 360 322 A33 33 0 1 1 331.4 371.5" fill="none" stroke="#fbf3e2" stroke-width="38" stroke-linecap="round"/>
+  </svg>`;
+const LOGO_WORD = `<svg class="logo-word" viewBox="-9 -9 618 118" aria-hidden="true">
+    <g fill="none" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke="var(--head)">
+        <path d="M85.4 14.6 A50 50 0 1 0 100 50 H60"/>
+        <path d="M171.65 12.5 A25 25 0 1 0 150 50 A25 25 0 1 1 128.35 87.5"/>
+      </g>
+      <g stroke="var(--saffron)">
+        <path d="M222 0 V100 M282 0 V100 M222 50 H282"/>
+        <path d="M304 100 V38 L336 0 L368 38 V100 Z"/>
+        <path d="M390 0 V70 A30 30 0 0 0 450 70 V0"/>
+        <path d="M521.65 12.5 A25 25 0 1 0 500 50 A25 25 0 1 1 478.35 87.5"/>
+        <path d="M600 0 H550 V100 H600 M550 50 H590"/>
+      </g>
+    </g>
+    <circle cx="336" cy="66" r="10" fill="var(--head)"/>
   </svg>`;
 
 // ---------- invites ----------

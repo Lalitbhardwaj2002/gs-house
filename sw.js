@@ -5,9 +5,9 @@
  */
 'use strict';
 
-const CACHE = 'gshouse-v7';
+const CACHE = 'gshouse-v8';
 const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json',
-  './icons/icon-192.png', './icons/icon-512.png', './icons/favicon-32.png'];
+  './icons/icon-192.png', './icons/icon-512.png', './icons/favicon-32.png', './icons/logo.svg'];
 
 // Every question file and every notes file of the book companion is saved at install too, so the
 // installed app works fully offline for solo practice and reading.
