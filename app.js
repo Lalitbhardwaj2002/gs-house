@@ -249,9 +249,9 @@ function setLang(l) {
 }
 
 // ---------- preferences kept on this device ----------
-const FS_STEPS = [0.75, 0.88, 1, 1.12, 1.25];   // 75% to 125%
+const FS_STEPS = [0.75, 0.8, 0.85, 0.9, 1, 1.1, 1.15, 1.25];   // 75% to 125%, the steps the owner asked for
 const storedFs = Number(store.get('localStorage', 'pp-fs'));
-// A size saved by an earlier version (0.9 or 1.4) moves to the nearest step.
+// A size saved by an earlier version (0.88, 1.12 or 1.4) moves to the nearest step.
 const savedFs = storedFs ? FS_STEPS.reduce((a, b) => (Math.abs(b - storedFs) < Math.abs(a - storedFs) ? b : a)) : 0;
 const prefs = {
   theme: store.get('localStorage', 'pp-theme'),             // 'dark', 'light', or nothing: follow the device
