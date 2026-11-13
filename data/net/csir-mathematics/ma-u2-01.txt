@@ -1,0 +1,65 @@
+@en
+# Complex numbers and elementary functions
+
+> Complex analysis starts with the algebra and geometry of $\mathbb{C}$ and with the elementary functions, which behave differently from their real versions: the exponential is periodic, the sine is unbounded, and the logarithm has many values.
+
+## Algebra and geometry of complex numbers
+
+- $z = x + iy = r(\cos\theta + i\sin\theta) = re^{i\theta}$, with modulus $\lvert z \rvert = r = \sqrt{x^2 + y^2}$ and conjugate $\bar{z} = x - iy$.
+- $z\bar{z} = \lvert z \rvert^2$, $\lvert zw \rvert = \lvert z \rvert \lvert w \rvert$, $\lvert z + w \rvert \le \lvert z \rvert + \lvert w \rvert$, and $\bigl\lvert \lvert z \rvert - \lvert w \rvert \bigr\rvert \le \lvert z - w \rvert$.
+- The **argument** is many-valued. The **principal argument** $\operatorname{Arg} z$ lies in $(-\pi, \pi]$. $\arg(zw) = \arg z + \arg w$ holds only up to multiples of $2\pi$.
+- **De Moivre**: $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$.
+- The $n$-th roots of $z = re^{i\theta}$ are $r^{1/n} e^{i(\theta + 2k\pi)/n}$, $k = 0, \dots, n-1$: the vertices of a regular $n$-gon.
+- The **$n$-th roots of unity** form a cyclic group of order $n$; their sum is 0 (for $n > 1$) and their product is $(-1)^{n-1}$.
+- $\mathbb{C}$ is a field but cannot be ordered. The **extended plane** $\mathbb{C} \cup \{\infty\}$ corresponds to the Riemann sphere by stereographic projection.
+
+| Set | Description |
+| $\lvert z - a \rvert = r$ | Circle with centre $a$ and radius $r$ |
+| $\lvert z - a \rvert = \lvert z - b \rvert$ | Perpendicular bisector of the segment from $a$ to $b$ |
+| $\lvert z - a \rvert + \lvert z - b \rvert = 2c$, $2c > \lvert a - b \rvert$ | Ellipse with foci $a, b$ |
+| $\lvert z - a \rvert = k \lvert z - b \rvert$, $k > 0$, $k \ne 1$, $a \ne b$ | Circle (of Apollonius) |
+| $\operatorname{Re} z > 0$ | Right half-plane |
+| $\operatorname{Im} \frac{1}{z} = c \ne 0$ | Circle through the origin, with the origin removed |
+
+## Elementary functions
+
+- **Exponential**: $e^z = e^x(\cos y + i\sin y)$. It is entire, never zero, periodic with period $2\pi i$, and $\lvert e^z \rvert = e^{\operatorname{Re} z}$. Its range is $\mathbb{C} \setminus \{0\}$.
+- **Trigonometric**: $\sin z = \frac{e^{iz} - e^{-iz}}{2i}$, $\cos z = \frac{e^{iz} + e^{-iz}}{2}$. They are entire and **unbounded**; their zeros are the real ones: $n\pi$ and $(2n+1)\frac{\pi}{2}$. $\sin^2 z + \cos^2 z = 1$ still holds.
+- $\lvert \sin z \rvert^2 = \sin^2 x + \sinh^2 y$ and $\lvert \cos z \rvert^2 = \cos^2 x + \sinh^2 y$.
+- **Hyperbolic**: $\sinh z = -i\sin(iz)$, $\cosh z = \cos(iz)$; zeros at $n\pi i$ and $(2n+1)\frac{\pi i}{2}$.
+- **Logarithm**: $\log z = \ln \lvert z \rvert + i\arg z$ has infinitely many values differing by $2\pi i$. The **principal branch** $\operatorname{Log} z = \ln \lvert z \rvert + i\operatorname{Arg} z$ is analytic on $\mathbb{C}$ minus the non-positive real axis, with derivative $1/z$.
+- **Powers**: $z^a = e^{a \log z}$. It has one value if $a$ is an integer, $q$ values if $a = p/q$ in lowest terms, and infinitely many otherwise. Example: $i^i = e^{-\pi/2 - 2k\pi}$, all real.
+- $0$ and $\infty$ are **branch points** of $\log z$ and $z^{1/n}$; a branch cut joining them makes a single-valued branch possible.
+
+! remember | Real against complex
+- $e^z = 1$ exactly when $z = 2k\pi i$; $e^z = -1$ when $z = (2k+1)\pi i$. The equation $e^z = 0$ has no solution.
+- $\sin z = 2$ has (infinitely many) complex solutions, since $\sin$ maps $\mathbb{C}$ onto $\mathbb{C}$.
+- $\operatorname{Log}(z_1 z_2) = \operatorname{Log} z_1 + \operatorname{Log} z_2$ can fail, for example for $z_1 = z_2 = -1$.
+- $\lvert e^{iz} \rvert = e^{-\operatorname{Im} z}$, so $e^{iz}$ is bounded in the upper half-plane.
+
+## Power series
+
+- $\sum a_n (z - z_0)^n$ converges absolutely inside the disc $\lvert z - z_0 \rvert < R$ and diverges outside, with $\frac{1}{R} = \limsup \lvert a_n \rvert^{1/n}$ (**Cauchy-Hadamard**; read $1/0 = \infty$ and $1/\infty = 0$). When the limit exists, also $R = \lim \lvert a_n / a_{n+1} \rvert$.
+- Inside the disc the sum is analytic and can be differentiated and integrated term by term, with the same radius.
+- On the circle $\lvert z - z_0 \rvert = R$ the behaviour varies from point to point.
+- The radius of the Taylor series of $f$ about $z_0$ is at least the distance from $z_0$ to the nearest point where $f$ is not analytic. For a function whose only singularities are isolated and not removable (a rational function in lowest terms, for example) it equals the distance to the nearest one.
+
+? What is the period of $e^z$? :: $2\pi i$.
+? Is $\sin z$ bounded on $\mathbb{C}$? :: No; only on horizontal strips of finite width.
+? How many values has $z^{p/q}$? :: $q$, when $p/q$ is in lowest terms.
+? Radius of convergence of the Taylor series of $\frac{1}{1 + z^2}$ about 0? :: 1, the distance to the singularities $\pm i$.
+
+! exam | PYQ focus
+- Roots of unity and of other numbers; sums and products over them.
+- Solving equations such as $e^z = w$, $\sin z = w$, and values of many-valued expressions like $i^i$.
+- Radius of convergence of a power series, read from coefficients or from the nearest singularity.
+
+! recap | One-minute revision
+- $e^z$: period $2\pi i$, never zero. $\sin z$, $\cos z$: entire, unbounded, only real zeros.
+- $\log z$ is many-valued; the principal branch is cut along the negative real axis.
+- Radius of a Taylor series: the distance to the nearest non-removable singularity (for meromorphic $f$).
+
+& J. W. Brown and R. V. Churchill, Complex Variables and Applications (chapters 1 to 3, and chapter 5 for power series)
+& J. B. Conway, Functions of One Complex Variable (chapters 1 and 3)
+& S. Ponnusamy, Foundations of Complex Analysis (the opening chapters on complex numbers, elementary functions and power series)
+& MIT OpenCourseWare 18.04: Complex Variables with Applications | https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/

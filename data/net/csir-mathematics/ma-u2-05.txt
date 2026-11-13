@@ -1,0 +1,71 @@
+@en
+# Conformal mappings and Möbius transformations
+
+> A map is conformal where it preserves angles, which an analytic function does wherever its derivative is not zero. The Möbius transformations are the conformal maps of the Riemann sphere, and three points decide one completely.
+
+## Conformal maps
+
+- $f$ is **conformal** at $z_0$ if it preserves the size and the sense of angles between curves through $z_0$.
+- An analytic function is conformal at every point where $f'(z_0) \ne 0$. There $\lvert f'(z_0) \rvert$ is the local magnification and $\arg f'(z_0)$ the angle of rotation.
+- At a **critical point** where $f'(z_0) = \dots = f^{(m-1)}(z_0) = 0 \ne f^{(m)}(z_0)$, with $m \ge 2$, angles are multiplied by $m$: $z^2$ doubles angles at 0.
+- $\bar{z}$ preserves the size of angles but reverses their sense (**isogonal**, not conformal).
+- A conformal map is locally one-one, but need not be one-one globally: $e^z$.
+- If $f$ is analytic and one-one on a domain, then $f' \ne 0$ there and the inverse is analytic.
+
+| Map | Effect |
+| $w = z + b$ | Translation |
+| $w = az$, $a \ne 0$ | Rotation by $\arg a$ and magnification by $\lvert a \rvert$ |
+| $w = \frac{1}{z}$ | Inversion: circles and lines through 0 go to lines; others to circles |
+| $w = z^2$ | Doubles arguments; the first quadrant goes to the upper half-plane |
+| $w = e^z$ | Horizontal lines go to rays, vertical lines to circles; the strip $0 < \operatorname{Im} z < \pi$ goes to the upper half-plane |
+| $w = \operatorname{Log} z$ | The inverse: sectors go to strips |
+| $w = z + \frac{1}{z}$ | Joukowski map; circles $\lvert z \rvert = r \ne 1$ go to ellipses |
+
+## Möbius transformations
+
+- $T(z) = \frac{az + b}{cz + d}$ with $ad - bc \ne 0$. It is a one-one map of the extended plane onto itself, with $T(-d/c) = \infty$ and $T(\infty) = a/c$ when $c \ne 0$, and $T(\infty) = \infty$ when $c = 0$.
+- Compositions and inverses are again Möbius maps; they correspond to products and inverses of the matrices with rows $(a, b)$ and $(c, d)$. The inverse is $\frac{dz - b}{-cz + a}$. The group is $PSL_2(\mathbb{C})$.
+- Every Möbius map is a composition of translations, rotations, magnifications and the inversion $\frac{1}{z}$.
+
+! remember | Properties of Möbius maps
+- They map circles and straight lines to circles and straight lines ("circles" of the Riemann sphere).
+- They preserve the **cross ratio** $(z_1, z_2, z_3, z_4) = \frac{(z_1 - z_3)(z_2 - z_4)}{(z_1 - z_4)(z_2 - z_3)}$.
+- There is exactly one Möbius map taking three distinct points to three given distinct points. It is found from $(w, w_1, w_2, w_3) = (z, z_1, z_2, z_3)$.
+- A Möbius map other than the identity has one or two **fixed points** in the extended plane: the roots of $cz^2 + (d - a)z - b = 0$, together with $\infty$ when $c = 0$. A map with three fixed points is the identity.
+- They preserve **symmetry**: points symmetric in a circle go to points symmetric in the image circle. $z$ and $z^*$ are symmetric in $\lvert z - a \rvert = r$ when $(z^* - a)\overline{(z - a)} = r^2$.
+- Four points lie on a circle or line if and only if their cross ratio is real.
+
+## Standard maps and automorphism groups
+
+- Upper half-plane onto the unit disc: $w = e^{i\theta} \frac{z - a}{z - \bar{a}}$ with $\operatorname{Im} a > 0$. The **Cayley map** $w = \frac{z - i}{z + i}$ is the usual choice.
+- Unit disc onto itself: $w = e^{i\theta} \frac{z - a}{1 - \bar{a} z}$ with $\lvert a \rvert < 1$. These are all the analytic bijections of the disc.
+- Upper half-plane onto itself: $w = \frac{az + b}{cz + d}$ with $a, b, c, d$ real and $ad - bc > 0$.
+- Analytic bijections of $\mathbb{C}$ onto itself: exactly the maps $az + b$ with $a \ne 0$.
+- Analytic bijections of the extended plane: exactly the Möbius maps.
+- **Riemann mapping theorem**: every simply connected domain other than $\mathbb{C}$ itself can be mapped conformally onto the unit disc. By Liouville, $\mathbb{C}$ cannot.
+
+| Type of Möbius map | Fixed points | Normal form |
+| Parabolic | One | Conjugate to $z + 1$ |
+| Elliptic | Two | Conjugate to $e^{i\theta} z$, $e^{i\theta} \ne 1$ |
+| Hyperbolic | Two | Conjugate to $kz$, $k > 0$, $k \ne 1$ |
+| Loxodromic | Two | Conjugate to $kz$, $k$ not real positive and $\lvert k \rvert \ne 1$ |
+
+? Where is an analytic function conformal? :: Wherever its derivative is not zero.
+? How many points determine a Möbius transformation? :: Three, together with their three images.
+? What maps the upper half-plane onto the unit disc? :: The Cayley map $\frac{z - i}{z + i}$, up to a rotation and the choice of the point sent to 0.
+? Which entire functions are one-one? :: Only $az + b$ with $a \ne 0$.
+
+! exam | PYQ focus
+- The image of a line, circle, half-plane or disc under a given Möbius map.
+- Finding the Möbius map that sends three given points to three given points, and its fixed points.
+- Automorphisms of the disc, the plane and the half-plane; existence of conformal maps between given domains.
+
+! recap | One-minute revision
+- Conformal where $f' \ne 0$; angles multiply by $m$ at a critical point of order $m$.
+- Möbius maps: circles to circles, cross ratio preserved, three points fix the map.
+- Disc automorphisms: $e^{i\theta} \frac{z - a}{1 - \bar{a} z}$; plane automorphisms: $az + b$.
+
+& J. W. Brown and R. V. Churchill, Complex Variables and Applications (chapters 8 and 9)
+& J. B. Conway, Functions of One Complex Variable (chapters 3 and 7)
+& Lars V. Ahlfors, Complex Analysis (chapters 3 and 6)
+& MIT OpenCourseWare 18.04: Complex Variables with Applications | https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/
