@@ -1,0 +1,92 @@
+@en
+# Markov chains, Poisson and birth-and-death processes
+
+> A Markov chain forgets its past: the next state depends only on the present one. Questions give a transition matrix and ask about its classes of states, its stationary distributions and the limit of its powers. Poisson and birth-and-death processes are the continuous-time counterparts.
+
+## Markov chains
+
+- **Markov property**: $P(X_{n+1} = j \mid X_n = i, X_{n-1}, \dots, X_0) = P(X_{n+1} = j \mid X_n = i) = p_{ij}$ (time-homogeneous chain).
+- The **transition matrix** $P = (p_{ij})$ is **stochastic**: its entries are non-negative and every row sums to 1.
+- The $n$-step transition probabilities are the entries of $P^n$. **Chapman-Kolmogorov**: $p_{ij}^{(m+n)} = \sum_k p_{ik}^{(m)}p_{kj}^{(n)}$.
+- If $\pi^{(0)}$ is the initial distribution (a row vector), the distribution at time $n$ is $\pi^{(0)}P^n$, and $P(X_0 = i_0, X_1 = i_1, \dots, X_n = i_n) = \pi^{(0)}_{i_0}p_{i_0i_1}\cdots p_{i_{n-1}i_n}$.
+- 1 is always an eigenvalue of $P$, and every eigenvalue has modulus at most 1.
+
+## Classification of states
+
+- $j$ is **accessible** from $i$ if $p_{ij}^{(n)} > 0$ for some $n \ge 0$; $i$ and $j$ **communicate** if each is accessible from the other. Communication splits the states into **classes**. The chain is **irreducible** if there is only one class.
+- A class is **closed** if the chain cannot leave it. A state with $p_{ii} = 1$ is **absorbing**.
+- The **period** of $i$ is $d(i) = \gcd\{n \ge 1 : p_{ii}^{(n)} > 0\}$; the state is **aperiodic** if $d(i) = 1$. If $p_{ii} > 0$ the state is aperiodic.
+- Let $f_{ii}$ be the probability of ever returning to $i$. The state is **recurrent** if $f_{ii} = 1$, equivalently $\sum_n p_{ii}^{(n)} = \infty$; it is **transient** if $f_{ii} < 1$, equivalently $\sum_n p_{ii}^{(n)} < \infty$.
+- A recurrent state is **positive recurrent** if its mean return time $\mu_i$ is finite and **null recurrent** if it is infinite. An aperiodic positive recurrent state is **ergodic**.
+
+! remember | Class properties and finite chains
+- Recurrence, transience, the period, and positive or null recurrence are the same for all states of a class.
+- In a **finite** chain: not all states are transient; there are no null recurrent states; a class is recurrent exactly when it is closed.
+- A finite irreducible chain has all states positive recurrent.
+- For a transient state $j$, $p_{ij}^{(n)} \to 0$ for every $i$, and $j$ is visited only finitely often.
+- The simple symmetric random walk on $\mathbb{Z}^d$ is null recurrent for $d = 1, 2$ and transient for $d \ge 3$. On $\mathbb{Z}$ with $p \neq \frac{1}{2}$ it is transient. Its period is 2.
+
+## Stationary distributions and limits
+
+- A probability vector $\pi$ is **stationary** if $\pi P = \pi$. If the chain starts with $\pi$, it has distribution $\pi$ at every time.
+
+! remember | Main theorems
+- An irreducible chain has a stationary distribution **if and only if** it is positive recurrent; it is then unique, and $\pi_i = \frac{1}{\mu_i} > 0$.
+- A **finite** chain always has at least one stationary distribution. It is unique exactly when there is only one closed class; with two or more closed classes there are infinitely many.
+- If the chain is irreducible, aperiodic and positive recurrent, then $p_{ij}^{(n)} \to \pi_j$ for all $i$, $j$: every row of $P^n$ tends to $\pi$.
+- If the chain is irreducible and positive recurrent with period $d > 1$, $P^n$ does not converge, but the averages $\frac{1}{n}\sum_{k=1}^{n} p_{ij}^{(k)}$ tend to $\pi_j$.
+- If $j$ is transient or null recurrent, $p_{ij}^{(n)} \to 0$.
+- If $P$ is **doubly stochastic** (columns also sum to 1) with $N$ states, the uniform distribution is stationary; if the chain is also irreducible, $\pi_i = \frac{1}{N}$.
+- **Detailed balance** $\pi_ip_{ij} = \pi_jp_{ji}$ for all $i$, $j$ implies that $\pi$ is stationary (the chain is reversible).
+
+| Transition matrix (rows) | Behaviour |
+| $(1, 0)$, $(0, 1)$ | Two closed classes; every distribution is stationary |
+| $(0, 1)$, $(1, 0)$ | Irreducible with period 2; $\pi = \left(\frac{1}{2}, \frac{1}{2}\right)$; $P^n$ does not converge |
+| $(1 - a, a)$, $(b, 1 - b)$ with $0 < a, b < 1$ | $\pi = \left(\frac{b}{a + b}, \frac{a}{a + b}\right)$; eigenvalues $1$ and $1 - a - b$; $P^n \to$ rows $\pi$ |
+| $(1, 0)$, $\left(\frac{1}{2}, \frac{1}{2}\right)$ | First state absorbing, second transient; $\pi = (1, 0)$ |
+
+- **Absorbing chains**: writing $P$ with the absorbing states first, the transient block $Q$ gives the fundamental matrix $N = (I - Q)^{-1}$. Its entries are the expected numbers of visits; the row sums of $N$ are the expected times to absorption; $NR$ gives the absorption probabilities.
+- **Gambler's ruin** with fair bets, starting from $i$ and stopping at $0$ or $N$: the probability of reaching $N$ is $\frac{i}{N}$ and the expected duration is $i(N - i)$. With $p \neq q$ the probability is $\frac{1 - (q/p)^i}{1 - (q/p)^N}$.
+
+## The Poisson process
+
+- $N(t)$ counts events in $(0, t]$: $N(0) = 0$, increments over disjoint intervals are independent, and $N(t + s) - N(s) \sim \text{Poisson}(\lambda t)$. So $E[N(t)] = \operatorname{Var}(N(t)) = \lambda t$.
+- The times between events are independent $\text{Exponential}(\lambda)$ variables with mean $\frac{1}{\lambda}$; the time of the $n$-th event is $\text{Gamma}(n, \lambda)$.
+- **Superposition**: the sum of independent Poisson processes with rates $\lambda_1$, $\lambda_2$ is Poisson with rate $\lambda_1 + \lambda_2$. **Thinning**: keeping each event independently with probability $p$ gives a Poisson process of rate $\lambda p$, independent of the discarded one.
+- Given $N(t) = n$, the event times are distributed as the order statistics of $n$ independent uniform variables on $(0, t)$. Hence for $s < t$, $N(s)$ given $N(t) = n$ is $\text{Binomial}\left(n, \frac{s}{t}\right)$.
+- $\operatorname{Cov}(N(s), N(t)) = \lambda\min(s, t)$.
+- For two independent processes, the probability that the first event comes from the first one is $\frac{\lambda_1}{\lambda_1 + \lambda_2}$.
+- **Compound Poisson process** $X(t) = \sum_{i=1}^{N(t)} Y_i$: $E[X(t)] = \lambda tE[Y]$ and $\operatorname{Var}(X(t)) = \lambda tE[Y^2]$.
+
+## Birth-and-death processes
+
+- A continuous-time chain on $\{0, 1, 2, \dots\}$ that moves from $n$ to $n + 1$ at rate $\lambda_n$ and to $n - 1$ at rate $\mu_n$. It stays in state $n$ for an exponential time with rate $\lambda_n + \mu_n$ and then goes up with probability $\frac{\lambda_n}{\lambda_n + \mu_n}$.
+- **Forward equations**: $p_n'(t) = \lambda_{n-1}p_{n-1}(t) + \mu_{n+1}p_{n+1}(t) - (\lambda_n + \mu_n)p_n(t)$.
+- **Steady state**: $\pi_n = \pi_0\frac{\lambda_0\lambda_1\cdots\lambda_{n-1}}{\mu_1\mu_2\cdots\mu_n}$, with $\pi_0$ fixed by $\sum \pi_n = 1$. With all $\lambda_n$ and $\mu_n$ positive, it exists exactly when the series of these ratios converges.
+
+| Process | Rates | Result |
+| Poisson process | $\lambda_n = \lambda$, $\mu_n = 0$ | $N(t) \sim \text{Poisson}(\lambda t)$ |
+| Yule (pure birth) | $\lambda_n = n\lambda$, $\mu_n = 0$ | From one individual, $N(t)$ is geometric with mean $e^{\lambda t}$ |
+| Pure death | $\lambda_n = 0$, $\mu_n = n\mu$ | Each individual survives to $t$ with probability $e^{-\mu t}$; binomial |
+| Linear growth | $\lambda_n = n\lambda$, $\mu_n = n\mu$ | Mean $n_0e^{(\lambda - \mu)t}$; from one individual, extinction is certain if $\lambda \le \mu$ and has probability $\frac{\mu}{\lambda}$ if $\lambda > \mu$ |
+| M/M/1 queue | $\lambda_n = \lambda$, $\mu_n = \mu$ | $\pi_n = (1 - \rho)\rho^n$ with $\rho = \frac{\lambda}{\mu} < 1$ |
+
+? When does an irreducible chain have a stationary distribution? :: Exactly when it is positive recurrent; it is then unique with $\pi_i = \frac{1}{\mu_i}$.
+? Can all states of a finite Markov chain be transient? :: No; a finite chain has at least one recurrent state.
+? Does $P^n$ converge for an irreducible chain of period 2? :: No; only the averages of the powers converge.
+? Distribution of the time between events of a Poisson process of rate $\lambda$? :: Exponential with mean $\frac{1}{\lambda}$.
+
+! exam | PYQ focus
+- For a given transition matrix: classes, recurrent and transient states, periods, stationary distributions and $\lim P^n$.
+- True or false statements on uniqueness of the stationary distribution and on convergence of $n$-step probabilities.
+- Conditional and joint probabilities for a Poisson process; steady state of a birth-and-death process.
+
+! recap | One-minute revision
+- Finite chain: some state is recurrent, none is null recurrent; a stationary distribution always exists, and is unique when there is one closed class.
+- Irreducible, aperiodic, positive recurrent: rows of $P^n$ tend to $\pi$, with $\pi_i = \frac{1}{\mu_i}$.
+- Poisson process: exponential gaps, uniform event times given the count, rates add under superposition.
+
+& J. Medhi, Stochastic Processes (the chapters on Markov chains and on Markov processes with discrete state space)
+& Sheldon M. Ross, Introduction to Probability Models (the chapters on Markov chains, the Poisson process and continuous-time Markov chains)
+& S. Karlin and H. M. Taylor, A First Course in Stochastic Processes (the chapters on Markov chains, their limit theorems and continuous-time Markov chains)
+& MIT OpenCourseWare 6.262: Discrete Stochastic Processes | https://ocw.mit.edu/courses/6-262-discrete-stochastic-processes-spring-2011/

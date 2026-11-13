@@ -1,0 +1,102 @@
+@en
+# Linear models, analysis of variance and regression
+
+> One model, $y = X\beta + \varepsilon$, covers regression, analysis of variance and analysis of covariance. The theory says which combinations of the parameters can be estimated, what the best estimators are, and how hypotheses about them are tested by ratios of sums of squares.
+
+## The Gauss-Markov model
+
+- $y = X\beta + \varepsilon$ with $E[\varepsilon] = 0$ and $\operatorname{Var}(\varepsilon) = \sigma^2I$; $X$ is a known $n \times p$ matrix of rank $r \le p$.
+- **Normal equations**: $X'X\beta = X'y$. They are always consistent. If $r = p$ the solution is $\hat{\beta} = (X'X)^{-1}X'y$, with $\operatorname{Var}(\hat{\beta}) = \sigma^2(X'X)^{-1}$.
+- A linear function $\lambda'\beta$ is **estimable** if some linear function of $y$ is unbiased for it. This holds exactly when $\lambda$ lies in the row space of $X$, that is $\lambda' = a'X$ for some $a$.
+- The number of linearly independent estimable functions is $r = \operatorname{rank} X$. Every $\lambda'\beta$ is estimable exactly when $r = p$.
+
+! remember | Gauss-Markov theorem and its companions
+- For estimable $\lambda'\beta$, the **best linear unbiased estimator** (BLUE) is $\lambda'\hat{\beta}$, where $\hat{\beta}$ is any solution of the normal equations; its value does not depend on the solution chosen, and its variance is $\sigma^2\lambda'(X'X)^{-}\lambda$.
+- The fitted values are $\hat{y} = Hy$ with $H = X(X'X)^{-}X'$, the projection on the column space of $X$: $H$ is symmetric and idempotent with rank and trace $r$.
+- The residuals $e = (I - H)y$ satisfy $X'e = 0$; with an intercept in the model they sum to zero.
+- The residual sum of squares is $y'(I - H)y$, and $\hat{\sigma}^2 = \frac{\text{RSS}}{n - r}$ is unbiased for $\sigma^2$.
+- With normal errors $\frac{\text{RSS}}{\sigma^2} \sim \chi^2_{n-r}$, independent of every $\lambda'\hat{\beta}$.
+- If $\operatorname{Var}(\varepsilon) = \sigma^2V$ with $V$ known and positive definite, the BLUE comes from **generalised least squares** (Aitken): $\hat{\beta} = (X'V^{-1}X)^{-1}X'V^{-1}y$ when $X$ has full column rank.
+
+- Example: in the one-way model $y_{ij} = \mu + \alpha_i + \varepsilon_{ij}$, neither $\mu$ nor a single $\alpha_i$ is estimable; $\mu + \alpha_i$ and every **contrast** $\sum c_i\alpha_i$ with $\sum c_i = 0$ are.
+
+## Tests and confidence intervals
+
+- For a hypothesis $A\beta = c$ made of $q$ independent estimable functions, with normal errors,
+
+$$F = \frac{(\text{RSS}_0 - \text{RSS})/q}{\text{RSS}/(n - r)} \sim F_{q,\,n-r} \text{ under } H_0,$$
+
+- Here $\text{RSS}_0$ is the residual sum of squares when the model is fitted under the hypothesis.
+- Confidence interval for estimable $\lambda'\beta$: $\lambda'\hat{\beta} \pm t_{\alpha/2,\,n-r}\,\hat{\sigma}\sqrt{\lambda'(X'X)^{-}\lambda}$.
+- **Cochran's theorem**: if $y \sim N(0, I_n)$ and $y'y = \sum Q_i$ with quadratic forms $Q_i$ of ranks $r_i$, then the $Q_i$ are independent $\chi^2_{r_i}$ variables exactly when $\sum r_i = n$.
+
+## Analysis of variance
+
+| Layout | Splitting of the total sum of squares | Degrees of freedom | Test |
+| One-way, $k$ groups, $N$ observations | Between groups + within groups | $(k - 1) + (N - k)$ | $\frac{\text{MSB}}{\text{MSW}} \sim F_{k-1,\,N-k}$ |
+| Two-way, $r$ rows, $c$ columns, one observation per cell | Rows + columns + error | $(r - 1) + (c - 1) + (r - 1)(c - 1)$ | Each mean square against the error mean square |
+| Two-way with $m$ observations per cell | Rows + columns + interaction + error | $(r - 1) + (c - 1) + (r - 1)(c - 1) + rc(m - 1)$ | Interaction can be tested |
+
+- **Assumptions**: independent normal errors with equal variance, and additive effects.
+- **Fixed effects**: the levels are the ones of interest; test that all effects are zero. **Random effects**: the levels are a sample from a population, $\alpha_i \sim N(0, \sigma_\alpha^2)$; test $\sigma_\alpha^2 = 0$. **Mixed**: some factors of each kind.
+- Balanced one-way random model with $n$ observations per group: $E[\text{MSB}] = \sigma^2 + n\sigma_\alpha^2$ and $E[\text{MSW}] = \sigma^2$, so $\hat{\sigma}_\alpha^2 = \frac{\text{MSB} - \text{MSW}}{n}$ (it can come out negative). The **intraclass correlation** is $\frac{\sigma_\alpha^2}{\sigma_\alpha^2 + \sigma^2}$.
+- In a balanced two-way random model with interaction, each main effect is tested against the **interaction** mean square, not the error mean square. In the mixed model this holds for the fixed factor; in the usual (restricted) mixed model the random factor is tested against the error mean square.
+- After a significant $F$, pairs of means are compared by Tukey's, Scheffé's or Bonferroni's method.
+- **Analysis of covariance** adjusts the comparison of treatments for a concomitant variable by regression. It reduces the error; each covariate costs one error degree of freedom (one-way with one covariate: $N - k - 1$). It assumes equal slopes in all groups and a covariate not affected by the treatments.
+
+## Regression
+
+- **Simple linear regression** $y = \beta_0 + \beta_1x + \varepsilon$: with $S_{xx} = \sum (x_i - \bar{x})^2$ and $S_{xy} = \sum (x_i - \bar{x})(y_i - \bar{y})$,
+
+$$\hat{\beta}_1 = \frac{S_{xy}}{S_{xx}}, \qquad \hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x}$$
+
+| Quantity | Value |
+| $\operatorname{Var}(\hat{\beta}_1)$ | $\frac{\sigma^2}{S_{xx}}$ |
+| $\operatorname{Var}(\hat{\beta}_0)$ | $\sigma^2\left(\frac{1}{n} + \frac{\bar{x}^2}{S_{xx}}\right)$ |
+| $\operatorname{Cov}(\hat{\beta}_0, \hat{\beta}_1)$ | $-\frac{\sigma^2\bar{x}}{S_{xx}}$ |
+| $\hat{\sigma}^2$ | $\frac{\text{RSS}}{n - 2}$ |
+| Variance of the estimated mean response at $x_0$ | $\sigma^2\left(\frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}\right)$ |
+| Variance for predicting a new observation at $x_0$ | $\sigma^2\left(1 + \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}\right)$ |
+
+- The test of $\beta_1 = 0$ uses $t$ with $n - 2$ degrees of freedom; it is the same as the test of zero correlation, $t = \frac{r\sqrt{n - 2}}{\sqrt{1 - r^2}}$.
+- $R^2 = 1 - \frac{\text{RSS}}{\text{SST}}$ is the proportion of variation explained (model with an intercept); in simple regression $R^2 = r^2$. It never decreases when a regressor is added. **Adjusted** $R^2 = 1 - (1 - R^2)\frac{n - 1}{n - p - 1}$ for $p$ regressors.
+- **Multiple regression** with $p$ regressors and an intercept: the overall test is $F = \frac{R^2/p}{(1 - R^2)/(n - p - 1)} \sim F_{p,\,n-p-1}$.
+
+| Diagnostic | Use |
+| Residuals against fitted values | Curvature shows a wrong form; a funnel shows unequal variance |
+| Normal Q-Q plot of residuals | Checks normality |
+| Leverage $h_{ii}$ (diagonal of $H$) | Unusual $x$ values; $\sum h_{ii} = p + 1$, and $h_{ii} > \frac{2(p + 1)}{n}$ is high |
+| Studentised residual $\frac{e_i}{\hat{\sigma}\sqrt{1 - h_{ii}}}$ | Outliers in $y$; note $\operatorname{Var}(e_i) = \sigma^2(1 - h_{ii})$ |
+| Cook's distance | Influence of one observation on the fit |
+| Variance inflation factor $\frac{1}{1 - R_j^2}$ | Multicollinearity; above 10 is serious |
+| Durbin-Watson statistic, between 0 and 4 | Autocorrelation of errors; near 2 means none |
+
+- Remedies: transformations (Box-Cox), weighted least squares for unequal variances, ridge regression for multicollinearity.
+
+## Logistic regression
+
+- For a binary response with $p = P(y = 1)$, the model is $\log\frac{p}{1 - p} = \beta_0 + \beta_1x_1 + \dots + \beta_kx_k$, so $p = \frac{e^{\eta}}{1 + e^{\eta}}$ with $\eta$ the linear predictor.
+- The parameters are estimated by **maximum likelihood** (there is no closed form; iteratively reweighted least squares is used), not by ordinary least squares.
+- $e^{\beta_j}$ is the **odds ratio** for a unit increase in $x_j$.
+- Tests: the Wald statistic $\left(\frac{\hat{\beta}_j}{\text{SE}}\right)^2$, and the likelihood ratio test, in which the drop in **deviance** ($-2\log L$) is approximately chi-square.
+- It is a generalised linear model with binomial response and logit link; the variance $p(1 - p)$ of the response is not constant.
+
+? When is $\lambda'\beta$ estimable? :: When $\lambda$ is in the row space of $X$, that is $\lambda' = a'X$ for some $a$.
+? Unbiased estimator of $\sigma^2$ in the linear model? :: $\frac{\text{RSS}}{n - r}$, with $r$ the rank of $X$.
+? Error degrees of freedom in a two-way layout with one observation per cell? :: $(r - 1)(c - 1)$.
+? What does $e^{\beta_j}$ mean in logistic regression? :: The odds ratio for a unit increase in $x_j$.
+
+! exam | PYQ focus
+- Which parametric functions are estimable in a given model; BLUEs and their variances for small designs.
+- Degrees of freedom and expected mean squares in analysis of variance tables; fixed against random effects.
+- Variances of regression estimators, properties of $R^2$, the hat matrix and residuals; interpretation of logistic coefficients.
+
+! recap | One-minute revision
+- Estimable means in the row space of $X$; BLUE from any solution of the normal equations; $\hat{\sigma}^2 = \frac{\text{RSS}}{n - r}$.
+- $F = \frac{(\text{RSS}_0 - \text{RSS})/q}{\text{RSS}/(n - r)}$ for any linear hypothesis.
+- $H$ is a projection with trace equal to the rank of $X$; $R^2$ never falls when regressors are added.
+
+& C. R. Rao, Linear Statistical Inference and Its Applications (the chapter on the theory of least squares and analysis of variance)
+& S. R. Searle, Linear Models
+& D. C. Montgomery, E. A. Peck and G. G. Vining, Introduction to Linear Regression Analysis
+& Penn State STAT 501: Regression Methods | https://online.stat.psu.edu/stat501/

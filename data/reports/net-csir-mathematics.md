@@ -199,3 +199,56 @@ Every formula, constant and worked example in the nine notes was re-derived by h
 - All six distinct links return 200: MIT OCW 18.03, 18.152, 18.330, 18.086, 18.307 and 8.09.
 - Chapters checked against the known tables of contents: Coddington, Sneddon, Fritz John, Strauss (2nd ed.), Gelfand and Fomin, Kanwal (2nd ed.), Tricomi, Goldstein, Poole and Safko (3rd ed.), Landau and Lifshitz. Not certain: Ross and Jain, Iyengar and Jain, now cited by description.
 - `tools/check_net.py` ends with `0 problems`.
+
+## Unit 4, check of 14 November 2026
+
+Every formula, constant and worked example in the twelve notes was re-derived by hand. The null means and variances of the runs, signed-rank, Mann-Whitney, Spearman and Kendall statistics were checked by full enumeration; Sheppard's correction for $\mu_4$, the two systematic-sampling variance formulas and the order stratified $\le$ systematic $\le$ simple random for a linear trend, the M/M/c values of $p_0$ and $L_q$, the M/M/1/N mean, the mean and variance of the M/M/1 queue, the three inventory optima and the angle between the regression lines were also checked by a short script.
+
+### 01 Descriptive statistics and exploratory data analysis
+- Corrected: "mean, median and mode of $y$ are $a + b$ times those of $x$" could be read as $(a + b)$ times; now written as $\bar{y} = a + b\bar{x}$ and so on. Sheppard's corrections now state their conditions (continuous distribution tapering to zero at both ends, small class width). The ratio $10 : 12 : 15$ now names the three measures.
+
+### 02 Probability, random variables and limit theorems
+- Corrected: convergence in $s$-th mean implies $r$-th mean for $s > r > 0$, not only $r \ge 1$. Kolmogorov's criterion for non-identically distributed variables now gives its conclusion, $\bar{X}_n - E[\bar{X}_n] \to 0$, not $\bar{X}_n \to \mu$. $M^{(k)}(0) = E[X^k]$ needs $M$ finite near 0. The delta method now asks for $g$ differentiable at $\mu$.
+
+### 03 Markov chains, Poisson and birth-and-death processes
+- Corrected: the Cesàro limit for a periodic chain now needs positive recurrence. The birth-and-death steady state exists exactly when the series converges (all rates positive), not "only if".
+- Reference: chapter numbers of Karlin and Taylor replaced by a description.
+
+### 04 Standard distributions, sampling distributions and order statistics
+- Corrected: the standard error of $r$ and Fisher's $z$ now say bivariate normal; the mean of $z$ is given. The asymptotic variance of a sample quantile needs $f(\xi_p) > 0$.
+- Reference: chapter numbers of Hogg, McKean and Craig replaced by a description.
+
+### 05 Estimation and testing of hypotheses
+- Corrected: the maximum likelihood estimator is a function of every sufficient statistic when it is unique. Method-of-moments consistency needs the moments to exist. The Neyman-Pearson test may need randomisation for discrete data. "The usual $t$, $F$ and $\chi^2$ tests are likelihood ratio tests" narrowed to the $t$ tests and the $F$ tests of linear hypotheses. The chi-square and large-sample null distributions are now marked approximate.
+- Added: large-sample tests for one mean and for two means.
+
+### 06 Nonparametric tests and Bayesian inference
+- Corrected: the signed-rank test is not always more powerful than the sign test under symmetry (for the Laplace the sign test has relative efficiency $\frac{4}{3}$). The highest posterior density interval is shortest for a unimodal posterior. Rank correlations are invariant under strictly increasing transformations.
+
+### 07 Linear models, analysis of variance and regression
+- Corrected: in the mixed two-way model only the fixed factor is tested against the interaction mean square (restricted model); the random model tests both main effects against it. The trace of $H$ is the rank of $X$, not the number of parameters. The generalised least squares formula needs full column rank (Aitken's name added). $R^2$ facts refer to a model with an intercept.
+- Reference: Rao's chapter number replaced by a description.
+
+### 08 Multivariate analysis
+- Corrected: the chi-square criterion with $A\Sigma$ idempotent needs $\Sigma$ positive definite; the convention for the non-centrality parameter is noted; $p$ and $q$ for canonical correlations are defined; Hotelling's $T^2$ needs $n > p$.
+- Added: the chi-square test of $\mu = \mu_0$ when $\Sigma$ is known.
+- Reference: Rao's chapter numbers replaced by a description.
+
+### 09 Sampling techniques
+- No change; all variance formulas, allocations, comparisons, the Hansen-Hurwitz, Horvitz-Thompson and Yates-Grundy formulas and the ratio, product and regression conditions are right.
+
+### 10 Design of experiments
+- Corrected: the orthogonality condition now defines $n$ as the number of plots; balance is variance balance with $\theta > 0$.
+- Checked without change: the missing-plot formulas, the Latin-square counts 12, 1, 576, 4, $\det NN' = rk(r - \lambda)^{v-1}$, the non-existence of $(22, 22, 7, 7, 2)$, the listed designs and the confounding examples.
+
+### 11 Reliability and life testing
+- No change; hazard rates, ageing classes, system reliabilities and mean lives, and the censored-sample results are right.
+
+### 12 Linear programming, queuing and inventory models
+- Corrected: a zero $z_j - c_j$ for a non-basic variable shows alternative optima only at a non-degenerate optimum.
+- Added: $L_s$ for M/M/1/N, and $p_n = 0$ for $n > K$ and the effective arrival rate for M/M/c/K.
+
+### References
+- All eleven distinct links return 200: NIST/SEMATECH (two pages), MIT OCW 6.041, 6.262, 18.05, 18.650, 15.053, and Penn State STAT 501, 503, 505, 506.
+- Chapter numbers kept: Casella and Berger (2nd ed.) chapters 6 to 10, Lehmann and Romano chapter 3, Cochran (3rd ed.) chapters 2, 5 to 8 and 9A. Not certain: Karlin and Taylor, Hogg, McKean and Craig, and Rao, now cited by description.
+- `tools/check_net.py` ends with `0 problems`.

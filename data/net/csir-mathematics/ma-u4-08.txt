@@ -1,0 +1,96 @@
+@en
+# Multivariate analysis
+
+> The multivariate normal distribution is to vectors what the normal is to numbers: linear maps, marginals and conditionals all stay normal. The Wishart distribution replaces chi-square, Hotelling's $T^2$ replaces $t$, and the data reduction methods look for a few combinations that carry most of the information.
+
+## The multivariate normal distribution
+
+- $X \sim N_p(\mu, \Sigma)$ with $\Sigma$ positive definite has density
+
+$$f(x) = (2\pi)^{-p/2}\,(\det\Sigma)^{-1/2}\exp\left(-\tfrac{1}{2}(x - \mu)'\Sigma^{-1}(x - \mu)\right)$$
+
+! remember | Properties
+- $X$ is multivariate normal **if and only if** every linear combination $a'X$ is univariate normal.
+- $AX + b \sim N(A\mu + b, A\Sigma A')$. The moment generating function is $\exp\left(t'\mu + \frac{1}{2}t'\Sigma t\right)$.
+- Every sub-vector is normal. The converse fails: normal marginals do not make the joint distribution normal.
+- For a partition $X = (X_1, X_2)$: $X_1$ and $X_2$ are independent exactly when $\Sigma_{12} = 0$.
+- The conditional distribution of $X_1$ given $X_2 = x_2$ is normal with mean $\mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(x_2 - \mu_2)$ and covariance $\Sigma_{11} - \Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}$. The mean is linear in $x_2$; the covariance does not depend on $x_2$.
+- $AX$ and $BX$ are independent exactly when $A\Sigma B' = 0$.
+- $(X - \mu)'\Sigma^{-1}(X - \mu) \sim \chi^2_p$.
+
+- **Sampling**: for a sample of size $n$ from $N_p(\mu, \Sigma)$, $\bar{X} \sim N_p\left(\mu, \frac{\Sigma}{n}\right)$ and $A = \sum (X_i - \bar{X})(X_i - \bar{X})'$ has the Wishart distribution $W_p(n - 1, \Sigma)$; the two are independent.
+- The maximum likelihood estimators are $\hat{\mu} = \bar{X}$ and $\hat{\Sigma} = \frac{A}{n}$; $S = \frac{A}{n - 1}$ is unbiased for $\Sigma$.
+
+## The Wishart distribution
+
+- If $Z_1, \dots, Z_n$ are independent $N_p(0, \Sigma)$ vectors, $W = \sum Z_iZ_i' \sim W_p(n, \Sigma)$. For $p = 1$ this is $\sigma^2\chi^2_n$.
+
+| Property | Statement |
+| Mean | $E[W] = n\Sigma$ |
+| Additivity | Independent $W_p(n_1, \Sigma)$ and $W_p(n_2, \Sigma)$ add to $W_p(n_1 + n_2, \Sigma)$ |
+| Linear maps | $CWC' \sim W_q(n, C\Sigma C')$ for a $q \times p$ matrix $C$ of rank $q$ |
+| Quadratic forms | $\frac{a'Wa}{a'\Sigma a} \sim \chi^2_n$ for every fixed $a \neq 0$ |
+| Density | Exists only when $n \ge p$; then $W$ is positive definite with probability 1 |
+| Determinant | $\frac{\det W}{\det\Sigma}$ is distributed as a product of independent $\chi^2_n, \chi^2_{n-1}, \dots, \chi^2_{n-p+1}$ |
+
+## Distribution of quadratic forms
+
+Let $A$ and $B$ be symmetric.
+
+- If $X \sim N_p(0, I)$: $X'AX \sim \chi^2_r$ **if and only if** $A$ is idempotent of rank $r$ (then $r = \operatorname{tr} A$).
+- If $X \sim N_p(\mu, I)$ and $A$ is idempotent of rank $r$: $X'AX$ is non-central $\chi^2_r$ with non-centrality $\mu'A\mu$ (some books use half of this).
+- If $X \sim N_p(0, \Sigma)$ with $\Sigma$ positive definite: $X'AX \sim \chi^2_r$ if and only if $A\Sigma$ is idempotent of rank $r$.
+- For $X \sim N_p(\mu, \Sigma)$, $X'AX$ and $X'BX$ are independent if and only if $A\Sigma B = 0$ (**Craig's theorem**). A linear form $BX$ is independent of $X'AX$ if and only if $B\Sigma A = 0$.
+- $E[X'AX] = \operatorname{tr}(A\Sigma) + \mu'A\mu$; for normal $X$, $\operatorname{Var}(X'AX) = 2\operatorname{tr}(A\Sigma A\Sigma) + 4\mu'A\Sigma A\mu$.
+
+## Inference
+
+- With $\Sigma$ known, $H_0 : \mu = \mu_0$ is tested by $n(\bar{X} - \mu_0)'\Sigma^{-1}(\bar{X} - \mu_0) \sim \chi^2_p$ under $H_0$.
+- **Hotelling's $T^2$** for $H_0 : \mu = \mu_0$ with $\Sigma$ unknown and $n > p$: $T^2 = n(\bar{X} - \mu_0)'S^{-1}(\bar{X} - \mu_0)$, and under $H_0$
+
+$$\frac{n - p}{p(n - 1)}\,T^2 \sim F_{p,\,n-p}$$
+
+- $T^2$ is unchanged by non-singular linear transformations of the data and reduces to $t^2$ when $p = 1$.
+- **Two samples** with common $\Sigma$: $T^2 = \frac{n_1n_2}{n_1 + n_2}(\bar{X}_1 - \bar{X}_2)'S_p^{-1}(\bar{X}_1 - \bar{X}_2)$, and $\frac{n_1 + n_2 - p - 1}{p(n_1 + n_2 - 2)}\,T^2 \sim F_{p,\,n_1+n_2-p-1}$. The quadratic form without the factor is the **Mahalanobis** $D^2$.
+- For several groups (multivariate analysis of variance) **Wilks' lambda** is $\frac{\det W}{\det(W + B)}$, with $W$ and $B$ the within and between matrices of sums of products.
+
+! remember | Partial and multiple correlation
+- **Partial correlation** of $X_1$, $X_2$ with $X_3$ held fixed: $r_{12.3} = \frac{r_{12} - r_{13}r_{23}}{\sqrt{(1 - r_{13}^2)(1 - r_{23}^2)}}$. It is the correlation between the residuals of $X_1$ and $X_2$ after regression on $X_3$.
+- **Multiple correlation** $R_{1.23\dots p}$ is the largest correlation between $X_1$ and a linear combination of the others; $0 \le R \le 1$, and $R^2 = \frac{\sigma_{12}'\Sigma_{22}^{-1}\sigma_{12}}{\sigma_{11}}$.
+- For three variables: $R_{1.23}^2 = \frac{r_{12}^2 + r_{13}^2 - 2r_{12}r_{13}r_{23}}{1 - r_{23}^2}$ and $1 - R_{1.23}^2 = (1 - r_{12}^2)(1 - r_{13.2}^2)$.
+- $R_{1.23}$ is at least as large as $\lvert r_{12} \rvert$, $\lvert r_{13} \rvert$ and $\lvert r_{12.3} \rvert$.
+- Test of zero multiple correlation with $p$ variables in all: $\frac{R^2/(p - 1)}{(1 - R^2)/(n - p)} \sim F_{p-1,\,n-p}$.
+- Test of zero partial correlation with $k$ variables held fixed: $t = \frac{r\sqrt{n - 2 - k}}{\sqrt{1 - r^2}}$ with $n - 2 - k$ degrees of freedom.
+
+## Data reduction techniques
+
+| Technique | Aim | Key facts |
+| Principal component analysis | A few uncorrelated combinations with the largest variances | Components are eigenvectors of $\Sigma$ (or of the correlation matrix); the $j$-th has variance $\lambda_j$; total variance $\operatorname{tr}\Sigma = \sum\lambda_j$ is kept |
+| Discriminant analysis | Allocate an observation to one of several known groups | Fisher's linear function $a'x$ with $a = S_p^{-1}(\bar{x}_1 - \bar{x}_2)$ maximises the ratio of between to within variation |
+| Cluster analysis | Find groups not known in advance | Hierarchical methods give a dendrogram; $k$-means needs the number of clusters beforehand |
+| Canonical correlation | Relate two sets of variables | Pairs of combinations $a'X_1$, $b'X_2$ with the largest correlation |
+
+- **Principal components**: the proportion of variance explained by the $j$-th component is $\frac{\lambda_j}{\sum\lambda_i}$. They depend on the units of measurement, so the correlation matrix is used when units differ; then $\sum\lambda_j = p$.
+- **Discriminant analysis**: with equal priors and costs, allocate $x$ to the first group if $a'x \ge \frac{1}{2}a'(\bar{x}_1 + \bar{x}_2)$. The linear rule assumes a common covariance matrix; unequal matrices give a quadratic rule. For two normal populations the error rate of the optimal rule is $\Phi\left(-\frac{\Delta}{2}\right)$, with $\Delta^2$ the Mahalanobis distance between them.
+- **Cluster analysis**: agglomerative methods differ in the distance between clusters: single linkage (nearest members), complete linkage (farthest members), average linkage, Ward's method.
+- **Canonical correlations**: their squares are the eigenvalues of $\Sigma_{11}^{-1}\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}$; with $p$ and $q$ variables in the two sets there are $\min(p, q)$ of them; canonical variates from different pairs are uncorrelated. With one variable in the first set, the canonical correlation is the multiple correlation.
+
+? When is $X'AX$ chi-square for $X \sim N_p(0, I)$? :: Exactly when $A$ is idempotent; the degrees of freedom are its rank.
+? Distribution of $\sum (X_i - \bar{X})(X_i - \bar{X})'$ for a normal sample? :: Wishart $W_p(n - 1, \Sigma)$, independent of $\bar{X}$.
+? Which $F$ distribution does Hotelling's $T^2$ lead to? :: $\frac{n - p}{p(n - 1)}T^2 \sim F_{p,\,n-p}$.
+? What is the variance of the $j$-th principal component? :: The $j$-th largest eigenvalue of the covariance matrix.
+
+! exam | PYQ focus
+- Conditional distributions and independence of linear forms in a multivariate normal vector.
+- When a quadratic form is chi-square, and when two forms are independent.
+- Partial and multiple correlations from given simple correlations; proportion of variance explained by principal components.
+
+! recap | One-minute revision
+- Normal vectors: linear maps, marginals and conditionals are normal; zero covariance means independence.
+- Idempotent $A$ gives chi-square; $A\Sigma B = 0$ gives independence.
+- Wishart replaces chi-square; $T^2$ replaces $t^2$; principal components are eigenvectors of $\Sigma$.
+
+& T. W. Anderson, An Introduction to Multivariate Statistical Analysis
+& R. A. Johnson and D. W. Wichern, Applied Multivariate Statistical Analysis
+& C. R. Rao, Linear Statistical Inference and Its Applications (the chapters on continuous probability models and on multivariate analysis)
+& Penn State STAT 505: Applied Multivariate Statistical Analysis | https://online.stat.psu.edu/stat505/
