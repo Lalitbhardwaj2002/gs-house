@@ -5,7 +5,8 @@
 > the science, technology, environment and health chapters of the book companion, and 74 more to five sections
 > (`hist-1857`, `hist-nm2`, `hist-mughal`, `culture`, `geo-earth`) for the history, freedom movement and geography chapters:
 > and 49 more to `ca-national`, `ca-awards` and `ca-sports` for the current-affairs chapters:
-> 2,478 in total (1,134 TGT, 873 PGT, 471 Higher).
+> and 55 more to `ca-sports` and `ca-up` for the quiz only (not used by the book chapters):
+> 2,533 in total (1,163 TGT, 899 PGT, 471 Higher).
 > All 48 sections that were planned at 6 questions now have 20 each (level mix: both tags 8 TGT / 7 PGT / 5 Higher;
 > TGT-only 11 TGT / 9 PGT; Higher-only 20 Higher; answers 5/5/5/5 over A–D). The table below shows the earlier plan.
 > The owner's new rules are in force: every question is one short single-line question, and the level of a question
