@@ -1,0 +1,141 @@
+@en
+# Electricity, electronics and magnetism
+> Flip a switch and three things happen at once: charges flow, the wire warms up and a magnetic field appears around it. **Electricity, heat and magnetism belong to one family.**
+
+## 🔌 Current electricity
+| Quantity | SI unit | Measured with |
+| Current | ampere | Ammeter, joined in series |
+| Potential difference | volt | Voltmeter, joined in parallel |
+| Resistance | ohm | Ohmmeter |
+| Power | watt | Wattmeter |
+| Energy | joule; commercial unit kilowatt-hour | Electric meter |
+
+- ==Ohm's law==: at constant temperature, current is proportional to potential difference (V = IR).
+- A longer wire has more resistance; a thicker wire has less. If a wire is stretched to double its length, its resistance becomes four times.
+- In series the same current flows and resistances add up. In parallel every branch gets the full voltage; that is why houses are wired in ==parallel==.
+- Silver is the best conductor, then copper. Rubber, glass and dry wood are insulators.
+
+## 🔥 Heating effect and safety
+- Heat produced = I²Rt (Joule's law).
+
+| Part | Material | Reason |
+| Heater element | ==Nichrome== | High resistance, high melting point |
+| Bulb filament | Tungsten | Very high melting point |
+| Fuse wire | Tin–lead alloy | ==Low melting point==; melts and breaks the circuit |
+
+- One 'unit' of electricity is 1 kilowatt-hour. Power = voltage × current.
+- A fuse is joined in series in the live wire. Earthing saves the user from shocks.
+- The mains supply in India is 220 volts (230 V by the present standard), 50 hertz alternating current.
+- The lightning conductor was invented by Benjamin Franklin.
+
+## 🧲 Magnetism
+- Like poles repel and unlike poles attract. A magnet always has two poles.
+- Magnetic field lines run from north to south outside the magnet and never cross one another.
+- ==Oersted== (1820): an electric current produces a magnetic field.
+- ==Faraday== (1831): a changing magnetic field produces a current. This is electromagnetic induction, the basis of the generator and the transformer.
+- Fleming's left-hand rule is for the motor; his right-hand rule is for the generator.
+- The core of an electromagnet is of soft iron; permanent magnets are made of steel or alnico.
+
+| Device | Change it makes |
+| Electric motor | Electrical energy into mechanical energy |
+| Generator (dynamo) | Mechanical energy into electrical energy |
+| Transformer | Raises or lowers the voltage of alternating current |
+| Rectifier | Alternating current into direct current |
+| Inverter | Direct current into alternating current |
+| Cell or battery | Chemical energy into electrical energy |
+
+## 📻 Electronics
+- Silicon and germanium are ==semiconductors==. Adding a little impurity (doping) gives n-type and p-type material.
+- A diode lets current pass one way only, so it works as a rectifier. An LED is a diode that gives out light.
+- The transistor (1947; Bardeen, Brattain and Shockley) works as an amplifier and a switch. Jack Kilby made the first integrated circuit in 1958.
+- A superconductor has zero resistance at very low temperature (Kamerlingh Onnes, 1911).
+
+! trick | Trick: left for motor
+**Fleming's Left hand: motor. Right hand: generator.** Think of 'L' in 'eLectric motor'.
+
+! exam | Exam favourites
+- An ammeter is joined in series; a voltmeter in parallel.
+- A fuse wire has a low melting point; a heater wire has a high one.
+- A transformer works only on alternating current.
+
+## 👆 Quick recall
+? What is the commercial unit of electrical energy? :: Kilowatt-hour
+? Who discovered that a current produces magnetism? :: Oersted
+? Which device changes alternating current into direct current? :: Rectifier
+? Which metal is used for the filament of a bulb? :: Tungsten
+
+! recap | 30-second recap
+- V = IR; houses are wired in parallel.
+- Nichrome heats, tungsten glows, the fuse melts.
+- Motor: electricity to motion. Generator: motion to electricity.
+
+@hi
+# विद्युत, इलेक्ट्रॉनिकी एवं चुंबकत्व
+> स्विच दबाते ही तीन बातें एक साथ होती हैं: आवेश बहते हैं, तार गर्म होता है और उसके चारों ओर चुंबकीय क्षेत्र बन जाता है। **विद्युत, ऊष्मा और चुंबकत्व एक ही परिवार के हैं।**
+
+## 🔌 धारा विद्युत
+| राशि | SI मात्रक | किससे मापी जाती है |
+| धारा | ऐम्पियर | अमीटर, श्रेणीक्रम में जुड़ा |
+| विभवांतर | वोल्ट | वोल्टमीटर, समांतर क्रम में जुड़ा |
+| प्रतिरोध | ओम | ओममीटर |
+| शक्ति | वाट | वाटमीटर |
+| ऊर्जा | जूल; व्यावसायिक मात्रक किलोवाट-घंटा | विद्युत मीटर |
+
+- ==ओम का नियम==: स्थिर ताप पर धारा विभवांतर के समानुपाती होती है (V = IR)।
+- लंबे तार का प्रतिरोध अधिक होता है; मोटे तार का कम। तार को खींचकर लंबाई दोगुनी करने पर उसका प्रतिरोध चार गुना हो जाता है।
+- श्रेणीक्रम में समान धारा बहती है और प्रतिरोध जुड़ जाते हैं। समांतर क्रम में हर शाखा को पूरा वोल्टेज मिलता है; इसीलिए घरों की वायरिंग ==समांतर क्रम== में होती है।
+- चाँदी सबसे अच्छी चालक है, फिर ताँबा। रबर, काँच और सूखी लकड़ी कुचालक हैं।
+
+## 🔥 तापीय प्रभाव और सुरक्षा
+- उत्पन्न ऊष्मा = I²Rt (जूल का नियम)।
+
+| भाग | पदार्थ | कारण |
+| हीटर का तार | ==नाइक्रोम== | उच्च प्रतिरोध, उच्च गलनांक |
+| बल्ब का तंतु | टंगस्टन | बहुत उच्च गलनांक |
+| फ्यूज तार | टिन–सीसा मिश्रधातु | ==निम्न गलनांक==; पिघलकर परिपथ तोड़ देता है |
+
+- बिजली की एक 'यूनिट' 1 किलोवाट-घंटा है। शक्ति = वोल्टेज × धारा।
+- फ्यूज विद्युन्मय (लाइव) तार में श्रेणीक्रम में जोड़ा जाता है। भू-संपर्कन उपयोगकर्ता को झटके से बचाता है।
+- भारत में मुख्य आपूर्ति 220 वोल्ट (वर्तमान मानक के अनुसार 230 वोल्ट), 50 हर्ट्ज की प्रत्यावर्ती धारा है।
+- तड़ित चालक का आविष्कार बेंजामिन फ्रैंकलिन ने किया।
+
+## 🧲 चुंबकत्व
+- समान ध्रुव प्रतिकर्षित और असमान ध्रुव आकर्षित करते हैं। चुंबक में सदैव दो ध्रुव होते हैं।
+- चुंबकीय क्षेत्र रेखाएँ चुंबक के बाहर उत्तर से दक्षिण की ओर जाती हैं और एक-दूसरे को कभी नहीं काटतीं।
+- ==ओर्स्टेड== (1820): विद्युत धारा चुंबकीय क्षेत्र उत्पन्न करती है।
+- ==फैराडे== (1831): बदलता चुंबकीय क्षेत्र धारा उत्पन्न करता है। यह विद्युत चुंबकीय प्रेरण है, जो जनित्र और ट्रांसफॉर्मर का आधार है।
+- फ्लेमिंग का वाम-हस्त नियम मोटर के लिए है; दक्षिण-हस्त नियम जनित्र के लिए।
+- विद्युत चुंबक का क्रोड नर्म लोहे का होता है; स्थायी चुंबक इस्पात या एल्निको के बनते हैं।
+
+| युक्ति | क्या परिवर्तन करती है |
+| विद्युत मोटर | विद्युत ऊर्जा को यांत्रिक ऊर्जा में |
+| जनित्र (डायनेमो) | यांत्रिक ऊर्जा को विद्युत ऊर्जा में |
+| ट्रांसफॉर्मर | प्रत्यावर्ती धारा का वोल्टेज बढ़ाता या घटाता है |
+| दिष्टकारी | प्रत्यावर्ती धारा को दिष्ट धारा में |
+| इन्वर्टर | दिष्ट धारा को प्रत्यावर्ती धारा में |
+| सेल या बैटरी | रासायनिक ऊर्जा को विद्युत ऊर्जा में |
+
+## 📻 इलेक्ट्रॉनिकी
+- सिलिकॉन और जर्मेनियम ==अर्धचालक== हैं। थोड़ी अशुद्धि मिलाने (डोपिंग) से n-प्रकार और p-प्रकार का पदार्थ बनता है।
+- डायोड धारा को केवल एक दिशा में जाने देता है, इसलिए दिष्टकारी का कार्य करता है। एलईडी प्रकाश देने वाला डायोड है।
+- ट्रांजिस्टर (1947; बार्डीन, ब्रैटेन और शॉकले) प्रवर्धक और स्विच का कार्य करता है। जैक किल्बी ने 1958 में पहला एकीकृत परिपथ बनाया।
+- अतिचालक का प्रतिरोध बहुत निम्न ताप पर शून्य हो जाता है (कैमरलिंग ओन्स, 1911)।
+
+! trick | युक्ति: बायाँ हाथ मोटर का
+**फ्लेमिंग का बायाँ हाथ: मोटर। दायाँ हाथ: जनित्र।** 'म' से मोटर और 'बा' से बायाँ साथ याद रखिए।
+
+! exam | परीक्षा के प्रिय प्रश्न
+- अमीटर श्रेणीक्रम में जुड़ता है; वोल्टमीटर समांतर क्रम में।
+- फ्यूज तार का गलनांक निम्न होता है; हीटर के तार का उच्च।
+- ट्रांसफॉर्मर केवल प्रत्यावर्ती धारा पर कार्य करता है।
+
+## 👆 झटपट दोहराव
+? विद्युत ऊर्जा का व्यावसायिक मात्रक क्या है? :: किलोवाट-घंटा
+? किसने खोजा कि धारा चुंबकत्व उत्पन्न करती है? :: ओर्स्टेड
+? कौन-सी युक्ति प्रत्यावर्ती धारा को दिष्ट धारा में बदलती है? :: दिष्टकारी
+? बल्ब का तंतु किस धातु का होता है? :: टंगस्टन
+
+! recap | 30 सेकंड का सार
+- V = IR; घरों की वायरिंग समांतर क्रम में होती है।
+- नाइक्रोम गर्म करता है, टंगस्टन चमकता है, फ्यूज पिघलता है।
+- मोटर: बिजली से गति। जनित्र: गति से बिजली।

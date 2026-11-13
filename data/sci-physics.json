@@ -3634,6 +3634,976 @@
      "source": "NCERT Class 9 Science, chapter 'Work and Energy'"
     }
    ]
+  },
+  {
+   "id": "sci-physics-057",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The SI unit of heat is the:",
+    "options": [
+     "Joule",
+     "Calorie",
+     "Kelvin",
+     "Watt"
+    ],
+    "explanation": "Heat is energy that flows from a hotter body to a colder one, so its SI unit is the joule, the unit of energy. The calorie is still used for the energy value of food.",
+    "notes": [
+     "Heat is a form of energy, so it has the unit of energy.",
+     "The calorie is an older unit of heat; 1 calorie = 4.186 joules.",
+     "The kelvin is the SI unit of temperature.",
+     "The watt is the SI unit of power."
+    ],
+    "path": [
+     "Physics",
+     "Heat",
+     "Units of heat"
+    ],
+    "facts": [
+     "1 calorie = 4.186 joules.",
+     "Temperature is measured in kelvin; heat is measured in joules."
+    ]
+   },
+   "hi": {
+    "q": "ऊष्मा का SI मात्रक है:",
+    "options": [
+     "जूल",
+     "कैलोरी",
+     "केल्विन",
+     "वाट"
+    ],
+    "explanation": "ऊष्मा वह ऊर्जा है जो गर्म वस्तु से ठंडी वस्तु की ओर प्रवाहित होती है, इसलिए इसका SI मात्रक जूल है, जो ऊर्जा का मात्रक है। भोजन के ऊर्जा-मान के लिए कैलोरी का प्रयोग अब भी होता है।",
+    "notes": [
+     "ऊष्मा ऊर्जा का एक रूप है, इसलिए इसका मात्रक ऊर्जा का मात्रक है।",
+     "कैलोरी ऊष्मा का पुराना मात्रक है; 1 कैलोरी = 4.186 जूल।",
+     "केल्विन ताप का SI मात्रक है।",
+     "वाट शक्ति का SI मात्रक है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ऊष्मा",
+     "ऊष्मा के मात्रक"
+    ],
+    "facts": [
+     "1 कैलोरी = 4.186 जूल।",
+     "ताप केल्विन में और ऊष्मा जूल में मापी जाती है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 192
+    },
+    {
+     "source": "NCERT Class 11 Physics, chapter 'Thermal Properties of Matter'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-058",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "At what temperature do the Celsius and Fahrenheit scales show the same reading?",
+    "options": [
+     "0°",
+     "−40°",
+     "100°",
+     "−273°"
+    ],
+    "explanation": "The two scales are related by F = (9/5)C + 32. Putting F = C in this relation gives C = −40, so −40°C and −40°F are the same temperature.",
+    "notes": [
+     "0°C is equal to 32°F.",
+     "−40°C is equal to −40°F.",
+     "100°C is equal to 212°F.",
+     "−273°C is close to absolute zero, which is about −459°F."
+    ],
+    "path": [
+     "Physics",
+     "Heat",
+     "Temperature scales"
+    ],
+    "facts": [
+     "F = (9/5)C + 32.",
+     "Water freezes at 0°C (32°F) and boils at 100°C (212°F)."
+    ]
+   },
+   "hi": {
+    "q": "किस ताप पर सेल्सियस और फारेनहाइट पैमाने समान पाठ्यांक दिखाते हैं?",
+    "options": [
+     "0°",
+     "−40°",
+     "100°",
+     "−273°"
+    ],
+    "explanation": "दोनों पैमानों का संबंध F = (9/5)C + 32 है। इसमें F = C रखने पर C = −40 आता है, अतः −40°C और −40°F एक ही ताप हैं।",
+    "notes": [
+     "0°C, 32°F के बराबर है।",
+     "−40°C, −40°F के बराबर है।",
+     "100°C, 212°F के बराबर है।",
+     "−273°C परम शून्य के निकट है, जो लगभग −459°F है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ऊष्मा",
+     "ताप के पैमाने"
+    ],
+    "facts": [
+     "F = (9/5)C + 32।",
+     "जल 0°C (32°F) पर जमता है और 100°C (212°F) पर उबलता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 192
+    },
+    {
+     "source": "NCERT Class 11 Physics, chapter 'Thermal Properties of Matter'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-059",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The density of water is maximum at:",
+    "options": [
+     "0°C",
+     "100°C",
+     "4°C",
+     "25°C"
+    ],
+    "explanation": "Unlike most liquids, water expands when it is cooled from 4°C to 0°C. This is called the anomalous expansion of water, and so its density is greatest at 4°C. That is why a pond freezes from the top and fish survive in the water below.",
+    "notes": [
+     "At 0°C water turns into ice, which is lighter than water.",
+     "Hot water is less dense than cold water.",
+     "Water contracts on cooling down to 4°C and expands below it.",
+     "Water at room temperature is less dense than water at 4°C."
+    ],
+    "path": [
+     "Physics",
+     "Heat",
+     "Anomalous expansion of water"
+    ],
+    "facts": [
+     "Water has its maximum density at 4°C.",
+     "Ice floats because it is less dense than water."
+    ]
+   },
+   "hi": {
+    "q": "जल का घनत्व अधिकतम होता है:",
+    "options": [
+     "0°C पर",
+     "100°C पर",
+     "4°C पर",
+     "25°C पर"
+    ],
+    "explanation": "अधिकांश द्रवों के विपरीत जल 4°C से 0°C तक ठंडा करने पर फैलता है। इसे जल का असंगत प्रसार कहते हैं, इसलिए जल का घनत्व 4°C पर सर्वाधिक होता है। इसी कारण तालाब ऊपर से जमता है और नीचे के जल में मछलियाँ जीवित रहती हैं।",
+    "notes": [
+     "0°C पर जल बर्फ बन जाता है, जो जल से हल्की होती है।",
+     "गर्म जल का घनत्व ठंडे जल से कम होता है।",
+     "4°C तक ठंडा करने पर जल सिकुड़ता है और उससे नीचे फैलता है।",
+     "कमरे के ताप का जल 4°C के जल से कम घना होता है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ऊष्मा",
+     "जल का असंगत प्रसार"
+    ],
+    "facts": [
+     "जल का घनत्व 4°C पर अधिकतम होता है।",
+     "बर्फ जल पर तैरती है क्योंकि उसका घनत्व जल से कम है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 192
+    },
+    {
+     "source": "NCERT Class 11 Physics, chapter 'Thermal Properties of Matter'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-060",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Heat from the Sun reaches the Earth by:",
+    "options": [
+     "Conduction",
+     "Convection",
+     "Both conduction and convection",
+     "Radiation"
+    ],
+    "explanation": "The space between the Sun and the Earth is almost a vacuum. Conduction and convection need a medium, so the Sun's heat reaches us only by radiation, in the form of electromagnetic waves.",
+    "notes": [
+     "Conduction needs a material medium, mainly a solid.",
+     "Convection needs a liquid or a gas.",
+     "Neither of them can work across empty space.",
+     "Radiation needs no medium and travels through vacuum."
+    ],
+    "path": [
+     "Physics",
+     "Heat",
+     "Transfer of heat"
+    ],
+    "facts": [
+     "Conduction: solids; convection: liquids and gases; radiation: no medium needed.",
+     "Dark, rough surfaces absorb radiation better than light, shiny ones."
+    ]
+   },
+   "hi": {
+    "q": "सूर्य की ऊष्मा पृथ्वी तक किस विधि से पहुँचती है?",
+    "options": [
+     "चालन",
+     "संवहन",
+     "चालन और संवहन दोनों",
+     "विकिरण"
+    ],
+    "explanation": "सूर्य और पृथ्वी के बीच का स्थान लगभग निर्वात है। चालन और संवहन के लिए माध्यम चाहिए, इसलिए सूर्य की ऊष्मा हम तक केवल विकिरण द्वारा, विद्युत चुंबकीय तरंगों के रूप में पहुँचती है।",
+    "notes": [
+     "चालन के लिए पदार्थ का माध्यम, मुख्यतः ठोस, चाहिए।",
+     "संवहन के लिए द्रव या गैस चाहिए।",
+     "इनमें से कोई भी निर्वात में कार्य नहीं कर सकता।",
+     "विकिरण को माध्यम की आवश्यकता नहीं होती और यह निर्वात में चलता है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ऊष्मा",
+     "ऊष्मा का स्थानांतरण"
+    ],
+    "facts": [
+     "चालन: ठोस; संवहन: द्रव और गैस; विकिरण: माध्यम आवश्यक नहीं।",
+     "गहरे, खुरदरे पृष्ठ हल्के, चमकीले पृष्ठों की तुलना में विकिरण को अधिक अवशोषित करते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 192
+    },
+    {
+     "source": "NCERT Class 11 Physics, chapter 'Thermal Properties of Matter'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-061",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Food cooks faster in a pressure cooker because:",
+    "options": [
+     "The higher pressure raises the boiling point of water",
+     "The higher pressure lowers the boiling point of water",
+     "Steam cannot conduct heat",
+     "The metal of the cooker stores more heat"
+    ],
+    "explanation": "The boiling point of a liquid rises with the pressure on it. In a pressure cooker the trapped steam raises the pressure, so water boils at about 120°C instead of 100°C and the food cooks faster. On high mountains the opposite happens.",
+    "notes": [
+     "Water boils at about 120°C inside the cooker, so the food gets hotter.",
+     "It is lower pressure, as on mountains, that lowers the boiling point.",
+     "Steam carries a great deal of heat.",
+     "The material of the vessel is not the reason."
+    ],
+    "path": [
+     "Physics",
+     "Heat",
+     "Boiling point and pressure"
+    ],
+    "facts": [
+     "The boiling point rises with pressure.",
+     "At high altitudes water boils below 100°C, so cooking takes longer."
+    ]
+   },
+   "hi": {
+    "q": "प्रेशर कुकर में भोजन जल्दी पकता है, क्योंकि:",
+    "options": [
+     "अधिक दाब जल का क्वथनांक बढ़ा देता है",
+     "अधिक दाब जल का क्वथनांक घटा देता है",
+     "भाप ऊष्मा का चालन नहीं कर सकती",
+     "कुकर की धातु अधिक ऊष्मा संचित करती है"
+    ],
+    "explanation": "द्रव का क्वथनांक उस पर लगे दाब के साथ बढ़ता है। प्रेशर कुकर में रुकी हुई भाप दाब बढ़ा देती है, जिससे जल 100°C के स्थान पर लगभग 120°C पर उबलता है और भोजन जल्दी पकता है। ऊँचे पहाड़ों पर इसका उलटा होता है।",
+    "notes": [
+     "कुकर के भीतर जल लगभग 120°C पर उबलता है, इसलिए भोजन अधिक गर्म होता है।",
+     "क्वथनांक तो कम दाब पर घटता है, जैसे पहाड़ों पर।",
+     "भाप में बहुत अधिक ऊष्मा होती है।",
+     "बर्तन का पदार्थ इसका कारण नहीं है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ऊष्मा",
+     "क्वथनांक और दाब"
+    ],
+    "facts": [
+     "दाब बढ़ने पर क्वथनांक बढ़ता है।",
+     "अधिक ऊँचाई पर जल 100°C से कम पर उबलता है, इसलिए खाना पकने में अधिक समय लगता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 192
+    },
+    {
+     "source": "NCERT Class 11 Physics, chapter 'Thermal Properties of Matter'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-062",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Radioactivity was discovered in 1896 by:",
+    "options": [
+     "Marie Curie",
+     "Henri Becquerel",
+     "Ernest Rutherford",
+     "Wilhelm Röntgen"
+    ],
+    "explanation": "Henri Becquerel found in 1896 that uranium salts blackened a photographic plate even in the dark. Marie Curie later named this property radioactivity. Becquerel shared the Nobel Prize in Physics of 1903 with Pierre and Marie Curie.",
+    "notes": [
+     "She and Pierre Curie discovered polonium and radium in 1898.",
+     "He found that uranium salts give out rays on their own.",
+     "He identified alpha and beta rays and discovered the nucleus.",
+     "He discovered X-rays in 1895."
+    ],
+    "path": [
+     "Physics",
+     "Modern physics",
+     "Radioactivity"
+    ],
+    "facts": [
+     "Radioactivity: Becquerel, 1896.",
+     "The SI unit of radioactivity is the becquerel (Bq)."
+    ]
+   },
+   "hi": {
+    "q": "रेडियोसक्रियता की खोज 1896 में किसने की?",
+    "options": [
+     "मैरी क्यूरी",
+     "हेनरी बेकेरल",
+     "अर्नेस्ट रदरफोर्ड",
+     "विल्हेम रॉन्टजन"
+    ],
+    "explanation": "हेनरी बेकेरल ने 1896 में पाया कि यूरेनियम के लवण अँधेरे में भी फोटोग्राफिक प्लेट को काला कर देते हैं। बाद में मैरी क्यूरी ने इस गुण को रेडियोसक्रियता नाम दिया। बेकेरल को 1903 का भौतिकी का नोबेल पुरस्कार पियरे और मैरी क्यूरी के साथ मिला।",
+    "notes": [
+     "उन्होंने और पियरे क्यूरी ने 1898 में पोलोनियम और रेडियम की खोज की।",
+     "उन्होंने पाया कि यूरेनियम के लवण स्वतः किरणें उत्सर्जित करते हैं।",
+     "उन्होंने अल्फा और बीटा किरणों की पहचान की और नाभिक की खोज की।",
+     "उन्होंने 1895 में एक्स-किरणों की खोज की।"
+    ],
+    "path": [
+     "भौतिकी",
+     "आधुनिक भौतिकी",
+     "रेडियोसक्रियता"
+    ],
+    "facts": [
+     "रेडियोसक्रियता: बेकेरल, 1896।",
+     "रेडियोसक्रियता का SI मात्रक बेकेरल (Bq) है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 196
+    },
+    {
+     "source": "NCERT Class 12 Physics, chapters 'Dual Nature of Radiation and Matter' and 'Nuclei'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-063",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The energy of the Sun and other stars is produced by:",
+    "options": [
+     "Nuclear fission",
+     "Burning of hydrogen in oxygen",
+     "Nuclear fusion",
+     "Radioactive decay"
+    ],
+    "explanation": "In the core of the Sun, hydrogen nuclei fuse to form helium. A little mass is lost in each fusion and appears as a huge amount of energy, according to E = mc². The hydrogen bomb works on the same principle.",
+    "notes": [
+     "Fission, the splitting of heavy nuclei, powers nuclear reactors.",
+     "There is no ordinary chemical burning in the Sun.",
+     "Hydrogen nuclei fuse to form helium at about 15 million °C in the core.",
+     "Decay alone cannot supply so much energy."
+    ],
+    "path": [
+     "Physics",
+     "Modern physics",
+     "Nuclear fusion"
+    ],
+    "facts": [
+     "Sun: fusion of hydrogen into helium.",
+     "Nuclear reactors and the atom bomb use fission."
+    ]
+   },
+   "hi": {
+    "q": "सूर्य और अन्य तारों की ऊर्जा किससे उत्पन्न होती है?",
+    "options": [
+     "नाभिकीय विखंडन",
+     "ऑक्सीजन में हाइड्रोजन का दहन",
+     "नाभिकीय संलयन",
+     "रेडियोसक्रिय क्षय"
+    ],
+    "explanation": "सूर्य के क्रोड में हाइड्रोजन के नाभिक संलयित होकर हीलियम बनाते हैं। प्रत्येक संलयन में थोड़ा द्रव्यमान लुप्त होता है, जो E = mc² के अनुसार विशाल ऊर्जा के रूप में प्रकट होता है। हाइड्रोजन बम इसी सिद्धांत पर कार्य करता है।",
+    "notes": [
+     "विखंडन, अर्थात भारी नाभिकों का टूटना, नाभिकीय रिएक्टरों में होता है।",
+     "सूर्य में सामान्य रासायनिक दहन नहीं होता।",
+     "क्रोड में लगभग 1.5 करोड़ °C पर हाइड्रोजन के नाभिक जुड़कर हीलियम बनाते हैं।",
+     "केवल क्षय से इतनी ऊर्जा नहीं मिल सकती।"
+    ],
+    "path": [
+     "भौतिकी",
+     "आधुनिक भौतिकी",
+     "नाभिकीय संलयन"
+    ],
+    "facts": [
+     "सूर्य: हाइड्रोजन का हीलियम में संलयन।",
+     "नाभिकीय रिएक्टर और परमाणु बम विखंडन पर आधारित हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 196
+    },
+    {
+     "source": "NCERT Class 12 Physics, chapters 'Dual Nature of Radiation and Matter' and 'Nuclei'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-064",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "In a nuclear reactor, heavy water or graphite is used as a moderator in order to:",
+    "options": [
+     "Absorb the extra neutrons",
+     "Carry heat away from the core",
+     "Stop harmful radiation from escaping",
+     "Slow down the fast neutrons"
+    ],
+    "explanation": "Neutrons released in fission move too fast to cause further fission efficiently. A moderator such as heavy water or graphite slows them down so that the chain reaction can continue. Control rods of cadmium or boron absorb neutrons and so control the rate of the reaction.",
+    "notes": [
+     "This is the work of control rods of cadmium or boron.",
+     "This is the work of the coolant.",
+     "This is the work of the thick concrete shield.",
+     "Slow neutrons split uranium-235 nuclei much more easily."
+    ],
+    "path": [
+     "Physics",
+     "Modern physics",
+     "Nuclear reactor"
+    ],
+    "facts": [
+     "Moderator: heavy water, graphite.",
+     "Control rods: cadmium, boron.",
+     "Heavy water is D₂O."
+    ]
+   },
+   "hi": {
+    "q": "नाभिकीय रिएक्टर में भारी जल या ग्रेफाइट का प्रयोग मंदक के रूप में किसलिए किया जाता है?",
+    "options": [
+     "अतिरिक्त न्यूट्रॉनों को अवशोषित करने के लिए",
+     "क्रोड से ऊष्मा बाहर ले जाने के लिए",
+     "हानिकारक विकिरण को बाहर जाने से रोकने के लिए",
+     "तीव्र न्यूट्रॉनों की गति धीमी करने के लिए"
+    ],
+    "explanation": "विखंडन में निकले न्यूट्रॉन इतने तीव्र होते हैं कि वे आगे विखंडन ठीक से नहीं करा पाते। भारी जल या ग्रेफाइट जैसा मंदक उनकी गति धीमी करता है, जिससे शृंखला अभिक्रिया चलती रहती है। कैडमियम या बोरॉन की नियंत्रक छड़ें न्यूट्रॉनों को अवशोषित कर अभिक्रिया की दर नियंत्रित करती हैं।",
+    "notes": [
+     "यह कैडमियम या बोरॉन की नियंत्रक छड़ों का कार्य है।",
+     "यह शीतलक का कार्य है।",
+     "यह कंक्रीट के मोटे कवच का कार्य है।",
+     "मंद न्यूट्रॉन यूरेनियम-235 के नाभिकों को कहीं अधिक आसानी से तोड़ते हैं।"
+    ],
+    "path": [
+     "भौतिकी",
+     "आधुनिक भौतिकी",
+     "नाभिकीय रिएक्टर"
+    ],
+    "facts": [
+     "मंदक: भारी जल, ग्रेफाइट।",
+     "नियंत्रक छड़ें: कैडमियम, बोरॉन।",
+     "भारी जल D₂O है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 196
+    },
+    {
+     "source": "NCERT Class 12 Physics, chapters 'Dual Nature of Radiation and Matter' and 'Nuclei'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-065",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The atom bomb is based on the principle of:",
+    "options": [
+     "Uncontrolled nuclear fission",
+     "Controlled nuclear fission",
+     "Nuclear fusion",
+     "Chemical explosion"
+    ],
+    "explanation": "In an atom bomb, nuclei of uranium-235 or plutonium-239 split in an uncontrolled chain reaction and release enormous energy in a moment. In a reactor the same reaction is kept under control.",
+    "notes": [
+     "A fast, uncontrolled chain reaction releases the energy all at once.",
+     "Controlled fission is used in nuclear reactors to produce electricity.",
+     "Fusion is the principle of the hydrogen bomb.",
+     "The energy comes from the nucleus, not from a chemical reaction."
+    ],
+    "path": [
+     "Physics",
+     "Modern physics",
+     "Nuclear fission"
+    ],
+    "facts": [
+     "Atom bomb: uncontrolled fission.",
+     "Hydrogen bomb: fusion.",
+     "Nuclear reactor: controlled fission."
+    ]
+   },
+   "hi": {
+    "q": "परमाणु बम किस सिद्धांत पर आधारित है?",
+    "options": [
+     "अनियंत्रित नाभिकीय विखंडन",
+     "नियंत्रित नाभिकीय विखंडन",
+     "नाभिकीय संलयन",
+     "रासायनिक विस्फोट"
+    ],
+    "explanation": "परमाणु बम में यूरेनियम-235 या प्लूटोनियम-239 के नाभिक अनियंत्रित शृंखला अभिक्रिया में टूटते हैं और क्षण भर में अपार ऊर्जा मुक्त करते हैं। रिएक्टर में यही अभिक्रिया नियंत्रण में रखी जाती है।",
+    "notes": [
+     "तीव्र, अनियंत्रित शृंखला अभिक्रिया सारी ऊर्जा एक साथ मुक्त कर देती है।",
+     "नियंत्रित विखंडन का उपयोग नाभिकीय रिएक्टरों में बिजली बनाने के लिए होता है।",
+     "संलयन हाइड्रोजन बम का सिद्धांत है।",
+     "ऊर्जा नाभिक से आती है, रासायनिक अभिक्रिया से नहीं।"
+    ],
+    "path": [
+     "भौतिकी",
+     "आधुनिक भौतिकी",
+     "नाभिकीय विखंडन"
+    ],
+    "facts": [
+     "परमाणु बम: अनियंत्रित विखंडन।",
+     "हाइड्रोजन बम: संलयन।",
+     "नाभिकीय रिएक्टर: नियंत्रित विखंडन।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 196
+    },
+    {
+     "source": "NCERT Class 12 Physics, chapters 'Dual Nature of Radiation and Matter' and 'Nuclei'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-066",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Albert Einstein was awarded the Nobel Prize in Physics for 1921 for his explanation of the:",
+    "options": [
+     "Theory of relativity",
+     "Photoelectric effect",
+     "Brownian motion",
+     "Mass–energy equivalence"
+    ],
+    "explanation": "Einstein received the Nobel Prize for 1921 especially for his discovery of the law of the photoelectric effect. In this effect, light falling on a metal surface knocks out electrons. Photoelectric cells used in automatic doors and burglar alarms make use of it.",
+    "notes": [
+     "It is his most famous work, but the prize was not given for it.",
+     "He explained it in 1905 by treating light as packets of energy called photons.",
+     "He explained it in 1905 too, but the prize was not for it.",
+     "E = mc² follows from the special theory of relativity."
+    ],
+    "path": [
+     "Physics",
+     "Modern physics",
+     "Photoelectric effect"
+    ],
+    "facts": [
+     "Photoelectric effect: light ejects electrons from a metal surface.",
+     "A packet of light energy is called a photon."
+    ]
+   },
+   "hi": {
+    "q": "अल्बर्ट आइंस्टीन को 1921 का भौतिकी का नोबेल पुरस्कार किसकी व्याख्या के लिए मिला?",
+    "options": [
+     "सापेक्षता का सिद्धांत",
+     "प्रकाश-विद्युत प्रभाव",
+     "ब्राउनी गति",
+     "द्रव्यमान–ऊर्जा तुल्यता"
+    ],
+    "explanation": "आइंस्टीन को 1921 का नोबेल पुरस्कार विशेष रूप से प्रकाश-विद्युत प्रभाव के नियम की खोज के लिए मिला। इस प्रभाव में धातु की सतह पर पड़ने वाला प्रकाश इलेक्ट्रॉन निकाल देता है। स्वचालित दरवाजों और चोर-घंटियों में लगे प्रकाश-विद्युत सेल इसी का उपयोग करते हैं।",
+    "notes": [
+     "यह उनका सबसे प्रसिद्ध कार्य है, पर पुरस्कार इसके लिए नहीं मिला।",
+     "उन्होंने 1905 में प्रकाश को फोटॉन नामक ऊर्जा के पैकेट मानकर इसकी व्याख्या की।",
+     "इसकी व्याख्या भी उन्होंने 1905 में की, पर पुरस्कार इसके लिए नहीं था।",
+     "E = mc² विशिष्ट सापेक्षता के सिद्धांत से निकलता है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "आधुनिक भौतिकी",
+     "प्रकाश-विद्युत प्रभाव"
+    ],
+    "facts": [
+     "प्रकाश-विद्युत प्रभाव: प्रकाश धातु की सतह से इलेक्ट्रॉन निकालता है।",
+     "प्रकाश ऊर्जा के पैकेट को फोटॉन कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 196
+    },
+    {
+     "source": "NCERT Class 12 Physics, chapters 'Dual Nature of Radiation and Matter' and 'Nuclei'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-067",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "National Science Day is observed on 28 February to mark the discovery of the:",
+    "options": [
+     "Electron",
+     "Neutron",
+     "Raman effect",
+     "Bose–Einstein statistics"
+    ],
+    "explanation": "C. V. Raman discovered on 28 February 1928 that light changes its wavelength when it is scattered by the molecules of a medium. For this he received the Nobel Prize in Physics in 1930 and became the first Asian to win a Nobel Prize in science.",
+    "notes": [
+     "J. J. Thomson discovered the electron in 1897.",
+     "James Chadwick discovered the neutron in 1932.",
+     "C. V. Raman announced it on 28 February 1928.",
+     "S. N. Bose gave it in 1924."
+    ],
+    "path": [
+     "Physics",
+     "Modern physics",
+     "Raman effect"
+    ],
+    "facts": [
+     "Raman effect: 28 February 1928.",
+     "Nobel Prize in Physics to C. V. Raman: 1930."
+    ]
+   },
+   "hi": {
+    "q": "राष्ट्रीय विज्ञान दिवस 28 फरवरी को किसकी खोज की स्मृति में मनाया जाता है?",
+    "options": [
+     "इलेक्ट्रॉन",
+     "न्यूट्रॉन",
+     "रमन प्रभाव",
+     "बोस–आइंस्टीन सांख्यिकी"
+    ],
+    "explanation": "सी. वी. रमन ने 28 फरवरी 1928 को खोजा कि किसी माध्यम के अणुओं से प्रकीर्णित होने पर प्रकाश की तरंगदैर्ध्य बदल जाती है। इसके लिए उन्हें 1930 में भौतिकी का नोबेल पुरस्कार मिला और वे विज्ञान में नोबेल पाने वाले पहले एशियाई बने।",
+    "notes": [
+     "जे. जे. थॉमसन ने 1897 में इलेक्ट्रॉन की खोज की।",
+     "जेम्स चैडविक ने 1932 में न्यूट्रॉन की खोज की।",
+     "सी. वी. रमन ने 28 फरवरी 1928 को इसकी घोषणा की।",
+     "एस. एन. बोस ने इसे 1924 में दिया।"
+    ],
+    "path": [
+     "भौतिकी",
+     "आधुनिक भौतिकी",
+     "रमन प्रभाव"
+    ],
+    "facts": [
+     "रमन प्रभाव: 28 फरवरी 1928।",
+     "सी. वी. रमन को भौतिकी का नोबेल पुरस्कार: 1930।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 196
+    },
+    {
+     "source": "NCERT Class 12 Physics, chapters 'Dual Nature of Radiation and Matter' and 'Nuclei'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-068",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "A light year is a unit of:",
+    "options": [
+     "Time",
+     "Speed",
+     "Intensity of light",
+     "Distance"
+    ],
+    "explanation": "A light year is the distance that light travels in vacuum in one year, about 9.46 trillion km. It is used for the huge distances between stars. The nearest star after the Sun, Proxima Centauri, is about 4.2 light years away.",
+    "notes": [
+     "It contains the word 'year' but does not measure time.",
+     "The speed of light is about 3 lakh km per second.",
+     "Luminous intensity is measured in candela.",
+     "It is the distance light travels in one year, about 9.46 × 10¹² km."
+    ],
+    "path": [
+     "Physics",
+     "Universe and inventions",
+     "Astronomical units"
+    ],
+    "facts": [
+     "1 light year ≈ 9.46 × 10¹² km.",
+     "The parsec (about 3.26 light years) and the astronomical unit are also units of distance."
+    ]
+   },
+   "hi": {
+    "q": "प्रकाश वर्ष किसका मात्रक है?",
+    "options": [
+     "समय",
+     "चाल",
+     "प्रकाश की तीव्रता",
+     "दूरी"
+    ],
+    "explanation": "प्रकाश वर्ष वह दूरी है जो प्रकाश निर्वात में एक वर्ष में तय करता है, लगभग 9.46 लाख करोड़ किमी। इसका प्रयोग तारों के बीच की विशाल दूरियों के लिए होता है। सूर्य के बाद सबसे निकट का तारा प्रॉक्सिमा सेंटॉरी लगभग 4.2 प्रकाश वर्ष दूर है।",
+    "notes": [
+     "इसमें 'वर्ष' शब्द है, पर यह समय नहीं मापता।",
+     "प्रकाश की चाल लगभग 3 लाख किमी प्रति सेकंड है।",
+     "ज्योति तीव्रता कैंडेला में मापी जाती है।",
+     "यह प्रकाश द्वारा एक वर्ष में तय की गई दूरी है, लगभग 9.46 × 10¹² किमी।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ब्रह्मांड एवं आविष्कार",
+     "खगोलीय मात्रक"
+    ],
+    "facts": [
+     "1 प्रकाश वर्ष ≈ 9.46 × 10¹² किमी।",
+     "पारसेक (लगभग 3.26 प्रकाश वर्ष) और खगोलीय इकाई भी दूरी के मात्रक हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 197
+    },
+    {
+     "source": "NCERT Class 8 Science, chapter 'Stars and the Solar System'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-069",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which planet is known as the 'Red Planet'?",
+    "options": [
+     "Mars",
+     "Venus",
+     "Jupiter",
+     "Mercury"
+    ],
+    "explanation": "Mars looks red because its surface is rich in iron oxide (rust). It has two small moons, Phobos and Deimos, and the highest known mountain of the solar system, Olympus Mons.",
+    "notes": [
+     "Iron oxide in its soil gives it a reddish colour.",
+     "Venus is the brightest planet and is called the morning and evening star.",
+     "Jupiter is the largest planet.",
+     "Mercury is the smallest planet and the nearest to the Sun."
+    ],
+    "path": [
+     "Physics",
+     "Universe and inventions",
+     "Solar system"
+    ],
+    "facts": [
+     "Mars: the Red Planet.",
+     "Venus: the brightest and hottest planet.",
+     "Jupiter: the largest planet."
+    ]
+   },
+   "hi": {
+    "q": "किस ग्रह को 'लाल ग्रह' कहा जाता है?",
+    "options": [
+     "मंगल",
+     "शुक्र",
+     "बृहस्पति",
+     "बुध"
+    ],
+    "explanation": "मंगल लाल दिखाई देता है क्योंकि इसकी सतह पर आयरन ऑक्साइड (जंग) की अधिकता है। इसके दो छोटे उपग्रह फोबोस और डीमोस हैं, और सौरमंडल का सबसे ऊँचा ज्ञात पर्वत ओलंपस मॉन्स इसी पर है।",
+    "notes": [
+     "इसकी मिट्टी का आयरन ऑक्साइड इसे लालिमा देता है।",
+     "शुक्र सबसे चमकीला ग्रह है और भोर का तारा तथा साँझ का तारा कहलाता है।",
+     "बृहस्पति सबसे बड़ा ग्रह है।",
+     "बुध सबसे छोटा और सूर्य के सबसे निकट का ग्रह है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ब्रह्मांड एवं आविष्कार",
+     "सौरमंडल"
+    ],
+    "facts": [
+     "मंगल: लाल ग्रह।",
+     "शुक्र: सबसे चमकीला और सबसे गर्म ग्रह।",
+     "बृहस्पति: सबसे बड़ा ग्रह।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 197
+    },
+    {
+     "source": "NCERT Class 8 Science, chapter 'Stars and the Solar System'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-070",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The Chandrasekhar limit, about 1.44 times the mass of the Sun, is the greatest possible mass of a stable:",
+    "options": [
+     "Neutron star",
+     "White dwarf star",
+     "Black hole",
+     "Red giant star"
+    ],
+    "explanation": "S. Chandrasekhar showed that a white dwarf star can be stable only if its mass is below about 1.44 solar masses. A heavier core collapses into a neutron star or a black hole. He received the Nobel Prize in Physics in 1983.",
+    "notes": [
+     "A neutron star forms when a heavier core collapses further.",
+     "Above this limit a white dwarf cannot support itself against gravity.",
+     "A black hole has no such upper limit.",
+     "A red giant is an earlier, swollen stage of a star."
+    ],
+    "path": [
+     "Physics",
+     "Universe and inventions",
+     "Life of a star"
+    ],
+    "facts": [
+     "Chandrasekhar limit ≈ 1.44 solar masses.",
+     "S. Chandrasekhar: Nobel Prize in Physics, 1983."
+    ]
+   },
+   "hi": {
+    "q": "चंद्रशेखर सीमा, जो सूर्य के द्रव्यमान की लगभग 1.44 गुनी है, किस स्थायी पिंड का अधिकतम संभव द्रव्यमान है?",
+    "options": [
+     "न्यूट्रॉन तारा",
+     "श्वेत वामन तारा",
+     "कृष्ण विवर",
+     "लाल दानव तारा"
+    ],
+    "explanation": "एस. चंद्रशेखर ने दिखाया कि श्वेत वामन तारा तभी स्थायी रह सकता है जब उसका द्रव्यमान लगभग 1.44 सौर द्रव्यमान से कम हो। इससे भारी क्रोड सिकुड़कर न्यूट्रॉन तारा या कृष्ण विवर बन जाता है। उन्हें 1983 में भौतिकी का नोबेल पुरस्कार मिला।",
+    "notes": [
+     "न्यूट्रॉन तारा तब बनता है जब अधिक भारी क्रोड और सिकुड़ता है।",
+     "इस सीमा से ऊपर श्वेत वामन गुरुत्व के विरुद्ध स्वयं को नहीं सँभाल सकता।",
+     "कृष्ण विवर की ऐसी कोई ऊपरी सीमा नहीं है।",
+     "लाल दानव तारे के जीवन की पहले की, फूली हुई अवस्था है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ब्रह्मांड एवं आविष्कार",
+     "तारे का जीवन"
+    ],
+    "facts": [
+     "चंद्रशेखर सीमा ≈ 1.44 सौर द्रव्यमान।",
+     "एस. चंद्रशेखर: भौतिकी का नोबेल पुरस्कार, 1983।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 197
+    },
+    {
+     "source": "NCERT Class 8 Science, chapter 'Stars and the Solar System'"
+    }
+   ]
+  },
+  {
+   "id": "sci-physics-071",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Who invented the telephone in 1876?",
+    "options": [
+     "Thomas Alva Edison",
+     "Guglielmo Marconi",
+     "John Logie Baird",
+     "Alexander Graham Bell"
+    ],
+    "explanation": "Alexander Graham Bell patented the telephone in 1876 and made the first telephone call to his assistant, Watson. The unit of sound level, the bel (and the decibel), is named after him.",
+    "notes": [
+     "Edison made the phonograph and a practical electric bulb.",
+     "Marconi developed wireless telegraphy (radio).",
+     "Baird demonstrated television in 1926.",
+     "He patented the telephone in 1876."
+    ],
+    "path": [
+     "Physics",
+     "Universe and inventions",
+     "Inventions"
+    ],
+    "facts": [
+     "Telephone: Bell, 1876.",
+     "Radio: Marconi.",
+     "Television: Baird.",
+     "Electric bulb and phonograph: Edison."
+    ]
+   },
+   "hi": {
+    "q": "1876 में टेलीफोन का आविष्कार किसने किया?",
+    "options": [
+     "थॉमस अल्वा एडिसन",
+     "गुग्लिएल्मो मार्कोनी",
+     "जॉन लोगी बेयर्ड",
+     "अलेक्जेंडर ग्राहम बेल"
+    ],
+    "explanation": "अलेक्जेंडर ग्राहम बेल ने 1876 में टेलीफोन का पेटेंट कराया और पहली टेलीफोन कॉल अपने सहायक वॉटसन को की। ध्वनि स्तर का मात्रक बेल (और डेसीबल) उन्हीं के नाम पर है।",
+    "notes": [
+     "एडिसन ने फोनोग्राफ और व्यावहारिक विद्युत बल्ब बनाया।",
+     "मार्कोनी ने बेतार टेलीग्राफी (रेडियो) विकसित की।",
+     "बेयर्ड ने 1926 में टेलीविजन का प्रदर्शन किया।",
+     "उन्होंने 1876 में टेलीफोन का पेटेंट कराया।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ब्रह्मांड एवं आविष्कार",
+     "आविष्कार"
+    ],
+    "facts": [
+     "टेलीफोन: बेल, 1876।",
+     "रेडियो: मार्कोनी।",
+     "टेलीविजन: बेयर्ड।",
+     "विद्युत बल्ब और फोनोग्राफ: एडिसन।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 197
+    },
+    {
+     "source": "NCERT Class 8 Science, chapter 'Stars and the Solar System'"
+    }
+   ]
   }
  ]
 }

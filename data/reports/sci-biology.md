@@ -46,3 +46,10 @@ Checked 31 questions (004 005 006 007 008 010 012 013 014 016 019 020 022 025 02
 
 - Corrected: **014**: notes C and D said 9+1 and 8+2 are "not found in cilia"; some sperm flagella (e.g. of flatworms) are 9+1, so the notes now say these are not the arrangement of typical cilia and flagella (EN + HI).
 - Replaced: none.
+
+## Check of 13 November 2026 (book companion, stage 2)
+Checked 3 new questions (058–060) in English and Hindi, and compared them with the rest of the file for repeats.
+- 058, 059: ok.
+- 060: note D and a fact named the platypus as an egg-laying mammal, which is the answer of an older question in this file; note D now says Archaeopteryx shows no features of mammals, and the fact now gives its age (about 150 million years) (EN + HI).
+- Replaced: none.
+- Facts I could not confirm online: none.

@@ -33,3 +33,10 @@ Corrected:
 - **014**: fact made exact: pentavalent replaced separate DPT and hepatitis B injections in the infant (primary) schedule only.
 - **016**: added book ref tgt-pgt-gk p. 235 (Mission Indradhanush, 25 December 2014).
 - **020**: "confirmed by Western blot" is outdated (NACO/WHO testing strategies no longer use it); now "confirmed by further tests" (EN + HI).
+
+## Check of 13 November 2026 (book companion, stage 2)
+Checked 6 new questions (021–026) in English and Hindi, and compared them with the rest of the file for repeats.
+- 021, 022, 023, 024, 026: ok (PM-JAY still ₹5 lakh per family per year; all citizens aged 70 and above covered since October 2024).
+- 025: note B and a fact said quinine from cinchona treats malaria, which is the answer of question 018; note B now says sarpagandha is not a remedy for malaria, and the fact now says reserpine was one of the first modern drugs for high blood pressure (EN + HI).
+- Replaced: none.
+- Facts I could not confirm online: none.
