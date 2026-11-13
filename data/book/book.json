@@ -1,0 +1,83 @@
+{
+ "title": {"en": "Ghatna Chakra (new edition)", "hi": "घटना चक्र (नया संस्करण)"},
+ "subtitle": {
+  "en": "Notes and quizzes in the topic order of the TGT/PGT Samanya Gyan question bank, 2026 edition",
+  "hi": "टीजीटी/पीजीटी सामान्य ज्ञान प्रश्नकोश (संस्करण 2026) के विषय-क्रम में नोट्स और प्रश्नोत्तरी"
+ },
+ "about": {
+  "en": "An independent study companion made for GS House. The notes and questions are freshly written and do not copy the book; only the order of topics and the page numbers refer to it. Not affiliated with the publisher.",
+  "hi": "यह GS House का स्वतंत्र अध्ययन-साथी है। नोट्स और प्रश्न नए सिरे से लिखे गए हैं, पुस्तक की नकल नहीं हैं; केवल विषयों का क्रम और पृष्ठ संख्या पुस्तक के अनुसार है। प्रकाशक से इसका कोई संबंध नहीं है।"
+ },
+ "units": [
+  {
+   "en": "Unit 1 · Current Affairs", "hi": "इकाई 1 · समसामयिकी",
+   "topics": [
+    {"id": "ca-events", "icon": "📰", "pages": "3–22", "en": "Events of state, national and international importance", "hi": "राज्य, राष्ट्रीय एवं अंतरराष्ट्रीय महत्व की सामयिक घटनाएँ", "practice": ["ca-up", "ca-national", "ca-intl"]},
+    {"id": "ca-people", "icon": "🏅", "pages": "22–28", "en": "Personalities in the news, awards and honours", "hi": "चर्चित व्यक्तित्व एवं पुरस्कार-सम्मान", "practice": ["ca-people", "ca-awards"]},
+    {"id": "ca-sports", "icon": "🏏", "pages": "28–35", "en": "Sports", "hi": "खेलकूद", "practice": ["ca-sports"]}
+   ]
+  },
+  {
+   "en": "Unit 2 · History, Polity, Economy and Geography of India", "hi": "इकाई 2 · भारतीय इतिहास, राजव्यवस्था, अर्थव्यवस्था एवं भूगोल",
+   "topics": [
+    {"id": "hist", "icon": "🏛️", "pages": "36–68", "en": "Indian History", "hi": "भारतीय इतिहास", "practice": ["hist-ivc", "hist-vedic", "hist-buddhism", "hist-maurya", "hist-gupta", "hist-sultanate", "hist-mughal", "hist-bhakti", "culture"]},
+    {"id": "freedom", "icon": "🇮🇳", "pages": "68–91", "en": "Indian Freedom Movement", "hi": "भारतीय स्वतंत्रता आंदोलन", "practice": ["hist-british", "hist-1857", "hist-nm1", "hist-nm2"]},
+    {
+     "id": "pol", "icon": "⚖️", "pages": "92–127", "en": "Indian Constitution and Polity", "hi": "भारतीय संविधान एवं राजव्यवस्था",
+     "chapters": [
+      {"id": "gc-pol-01", "pages": "92–93", "en": "Constitutional development: the British-era Acts", "hi": "संवैधानिक विकास: ब्रिटिशकालीन अधिनियम",
+       "pool": [["pol-making", "Constitutional Development"], ["pol-making", "Making of the Constitution", ["Cabinet Mission Plan", "Interim Government 1946"]], ["pol-making", "Sources of the Constitution", ["Government of India Act 1935"]]]},
+      {"id": "gc-pol-02", "pages": "94", "en": "Constituent Assembly and the making of the Constitution", "hi": "संविधान सभा एवं संविधान-निर्माण",
+       "pool": [["pol-making", "Making of the Constitution", ["Adoption", "Commencement", "Committees", "Constituent Assembly", "Drafting Committee", "Objectives Resolution", "Original manuscript"]]]},
+      {"id": "gc-pol-03", "pages": "95–96", "en": "Structure, salient features and the Preamble", "hi": "संविधान की संरचना, प्रमुख विशेषताएँ एवं प्रस्तावना",
+       "pool": [["pol-making", "Salient Features", ["Schedules", "Structure of the Constitution"]], ["pol-making", "Preamble"], ["pol-making", "Sources of the Constitution", ["Borrowed features", "British Constitution", "Preamble ideals", "Weimar Germany"]]]},
+      {"id": "gc-pol-04", "pages": "96", "en": "The Union and its territory, and citizenship", "hi": "संघ और उसका राज्यक्षेत्र तथा नागरिकता",
+       "pool": [["pol-making", "Union and its Territory"], ["pol-dpsp", "Citizenship"]]},
+      {"id": "gc-pol-05", "pages": "97–100", "en": "Fundamental Rights", "hi": "मौलिक अधिकार",
+       "pool": [["pol-rights", "Fundamental Rights"]]},
+      {"id": "gc-pol-06", "pages": "100–102", "en": "Directive Principles and Fundamental Duties", "hi": "राज्य के नीति-निदेशक तत्व एवं मौलिक कर्तव्य",
+       "pool": [["pol-dpsp", "Directive Principles of State Policy"], ["pol-rights", "Fundamental Duties"]]},
+      {"id": "gc-pol-07", "pages": "103–104", "en": "Amendment of the Constitution and the basic structure", "hi": "संविधान संशोधन एवं मूल संरचना सिद्धांत",
+       "pool": [["pol-amend", "Amendment of the Constitution"]]},
+      {"id": "gc-pol-08", "pages": "104–106", "en": "Parliamentary and federal system; Centre–State relations", "hi": "संसदीय एवं संघीय व्यवस्था; केंद्र-राज्य संबंध",
+       "pool": [["pol-amend", "Centre–State Relations"], ["pol-amend", "Parliamentary and Federal System"], ["pol-making", "Salient Features", ["Federalism"]]]},
+      {"id": "gc-pol-09", "pages": "106", "en": "Emergency provisions", "hi": "आपातकालीन प्रावधान",
+       "pool": [["pol-amend", "Emergency Provisions"]]},
+      {"id": "gc-pol-10", "pages": "107–109", "en": "The President and the Vice-President", "hi": "राष्ट्रपति एवं उपराष्ट्रपति",
+       "pool": [["pol-executive", "Union Executive", ["President", "Vice-President"]]]},
+      {"id": "gc-pol-11", "pages": "110–111", "en": "Prime Minister, Council of Ministers and Attorney General", "hi": "प्रधानमंत्री, संघ मंत्रिपरिषद एवं महान्यायवादी",
+       "pool": [["pol-executive", "Union Executive", ["Prime Minister", "Council of Ministers", "Attorney General"]]]},
+      {"id": "gc-pol-12", "pages": "111–114", "en": "Parliament", "hi": "संसद",
+       "pool": [["pol-parliament", "Parliament"]]},
+      {"id": "gc-pol-13", "pages": "115–117", "en": "The Supreme Court and the High Courts", "hi": "सर्वोच्च न्यायालय एवं उच्च न्यायालय",
+       "pool": [["pol-judiciary", "Judiciary"]]},
+      {"id": "gc-pol-14", "pages": "118", "en": "State government: Governor, Chief Minister and legislature", "hi": "राज्य सरकार: राज्यपाल, मुख्यमंत्री एवं विधानमंडल",
+       "pool": [["pol-state", "State Government"], ["pol-state", "State Legislature"]]},
+      {"id": "gc-pol-15", "pages": "118–122", "en": "Local self-government: Panchayati Raj and municipalities", "hi": "स्थानीय स्वशासन: पंचायती राज एवं नगरपालिकाएँ",
+       "pool": [["pol-local", "Local Self-Government"]]},
+      {"id": "gc-pol-16", "pages": "123", "en": "Elections, political parties and the Election Commission", "hi": "निर्वाचन व्यवस्था, राजनीतिक दल एवं निर्वाचन आयोग",
+       "pool": [["pol-election", "Elections"], ["pol-election", "Constitutional Bodies", ["Election Commission", "Elections and reforms"]]]},
+      {"id": "gc-pol-17", "pages": "124–127", "en": "Public services, CAG and other bodies; reservation", "hi": "लोक सेवाएँ, नियंत्रक-महालेखा परीक्षक, अन्य निकाय एवं आरक्षण",
+       "pool": [["pol-bodies", "Constitutional Bodies"], ["pol-bodies", "Statutory Bodies"], ["pol-bodies", "Non-constitutional Bodies"], ["pol-election", "Constitutional Bodies", ["Public Service Commissions"]]]}
+     ]
+    },
+    {"id": "edu-law", "icon": "🎓", "pages": "128–136", "en": "Legal and constitutional developments in education", "hi": "शैक्षिक व्यवस्था से संबंधित विधिक एवं संवैधानिक विकास", "practice": ["pol-education"]},
+    {"id": "eco", "icon": "💰", "pages": "137–155", "en": "Indian Economy", "hi": "भारतीय अर्थव्यवस्था", "practice": ["eco-basics", "eco-planning", "eco-banking", "eco-capital", "eco-budget", "eco-poverty", "eco-agri-industry", "eco-trade"]},
+    {"id": "geo", "icon": "🗺️", "pages": "156–189", "en": "General Geography of India and Population", "hi": "भारत का सामान्य भूगोल एवं जनसंख्या", "practice": ["geo-universe", "geo-earth", "geo-physio", "geo-rivers", "geo-climate", "geo-soil-forest", "geo-resources", "geo-agri-transport", "geo-population", "geo-up"]}
+   ]
+  },
+  {
+   "en": "Unit 3 · General Science and ICT", "hi": "इकाई 3 · सामान्य विज्ञान, सूचना एवं संचार प्रौद्योगिकी",
+   "topics": [
+    {"id": "sci", "icon": "🔬", "pages": "190–208", "en": "General Science", "hi": "सामान्य विज्ञान", "practice": ["sci-physics", "sci-chemistry", "sci-biology"]},
+    {"id": "tech", "icon": "🚀", "pages": "209–213", "en": "Technology in the current context", "hi": "सामयिक संदर्भ में प्रौद्योगिकी", "practice": ["sci-space", "sci-tech", "ca-science"]},
+    {"id": "env", "icon": "🌳", "pages": "214–233", "en": "Environment", "hi": "पर्यावरण", "practice": ["env-ecology", "env-people", "env-global"]},
+    {"id": "health", "icon": "🩺", "pages": "234–242", "en": "Human health and hygiene: vitamins, minerals, diseases, deficiency diseases, hormones, enzymes", "hi": "मानव स्वास्थ्य एवं स्वच्छता: विटामिन, खनिज, रोग, अल्पताजन्य रोग, हार्मोन, एंजाइम", "practice": ["health-vitamins", "health-deficiency", "health-diseases", "health-hormones", "health-enzymes"]},
+    {"id": "comp", "icon": "💻", "pages": "243–251", "en": "Computer and Internet terminology", "hi": "कम्प्यूटर और इंटरनेट शब्दावली", "practice": ["ict-computer", "ict-internet", "ict-terms"]},
+    {"id": "ict", "icon": "📡", "pages": "252–256", "en": "Applications of ICT", "hi": "आई.सी.टी. के अनुप्रयोग", "practice": ["ict-applications"]},
+    {"id": "edtech", "icon": "🧑‍🏫", "pages": "257–262", "en": "Developments in educational technology", "hi": "शैक्षिक प्रौद्योगिकी में विकास", "practice": ["edtech"]},
+    {"id": "misc", "icon": "🧩", "pages": "263–280", "en": "Miscellaneous questions useful for the exam", "hi": "परीक्षोपयोगी विविध प्रश्न"}
+   ]
+  }
+ ]
+}

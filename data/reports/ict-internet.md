@@ -53,3 +53,20 @@ Corrected:
 - ict-internet-012: path started with 'Computer & ICT'; aligned to 'ICT' like the rest of the section (EN and HI).
 
 Replaced: none. Note: the PIB CERT-In PDF cited in 037 could not be read as text; the fact is also supported by the IT Act reference.
+
+## Check of 13 November 2026 (10 new questions on past-paper topics, 041–050)
+
+Checked: 041–050 (10). Overlap check against 001–040 done.
+
+Corrected:
+- 042, 049: facts listed web browsers (gives away 019); reworded.
+- 043: explanation, note B and facts said which part of the address is the user name and which the domain (answer of 031); reworded to the format rules only.
+- 046: notes B and C defined cookies (answer of 021) and the firewall (answer of 035); reworded.
+- 020 (old): explanation named Google Chrome as a browser (answer of 049); reworded.
+- 040 (old): explanation defined spam (answer of 044); reworded.
+
+Replaced (same id, level and path stem):
+- 045 (IMAP keeps mail on the server): stated in 016's explanation and note D. Now: co-founder of Hotmail (Sabeer Bhatia, 1996).
+- 050 (purpose of CC): duplicated 030 (BCC) and its notes gave 030 away. Now: standard that lets e-mail carry attachments (MIME).
+
+Not verified: nothing outstanding.

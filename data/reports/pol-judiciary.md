@@ -25,3 +25,6 @@ Corrected:
 - Old items edited only to remove give-aways: 002 note A (014), 004 explanation (Article 32, 009).
 - Book pages added: 014 (p.116), 016 (p.115), 018 (p.116), 020 (p.117).
 - Not re-verified online (web unavailable): sanctioned strength 34 still current in Nov 2026.
+
+## Correction of 13 November 2026 (Supreme Court strength)
+- 012: the sanctioned strength of the Supreme Court was raised from 34 to 38 (Chief Justice + 37) with effect from 16 May 2026 (Supreme Court (Number of Judges) Amendment Act, 2026). The stem, options, notes, explanation and reference were updated; the answer stays at position B. Verified from LiveLaw, Bar and Bench and SCC Online reports.

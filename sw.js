@@ -5,17 +5,21 @@
  */
 'use strict';
 
-const CACHE = 'gshouse-v6';
+const CACHE = 'gshouse-v7';
 const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/favicon-32.png'];
 
-// Every question file is saved at install too, so the installed app works fully offline for solo practice.
+// Every question file and every notes file of the book companion is saved at install too, so the
+// installed app works fully offline for solo practice and reading.
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE)
     .then((cache) => cache.addAll(SHELL)
       .then(() => fetch('./data/index.json'))
       .then((res) => res.json())
-      .then((index) => cache.addAll(Object.keys(index.sections).map((id) => `./data/${id}.json`))))
+      .then((index) => cache.addAll([
+        ...Object.keys(index.sections).map((id) => `./data/${id}.json`),
+        ...(index.book || []).map((name) => `./data/book/${name}`), // notes of the book companion
+      ])))
     .catch(() => {})
     .then(() => self.skipWaiting()));
 });
@@ -32,7 +36,9 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   if (url.origin === self.location.origin) {
     const key = url.origin + url.pathname; // one saved copy per file, whatever ?room=… says
-    event.respondWith(fetch(req)
+    // 'no-cache' makes the browser check with the server every time instead of trusting its own
+    // HTTP cache, so a new version of the app or of a question file is picked up at once.
+    event.respondWith(fetch(url.href, { cache: 'no-cache' })
       .then((res) => {
         if (res.ok) { const copy = res.clone(); caches.open(CACHE).then((cache) => cache.put(key, copy)); }
         return res;

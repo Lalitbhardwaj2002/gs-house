@@ -1,6 +1,6 @@
 # Question targets (owner's decision, 29 Oct 2026)
 
-> **Status, 13 November 2026: complete.** All 73 sections have questions (2,188 in total: 978 TGT, 739 PGT, 471 Higher).
+> **Status, 13 November 2026: complete.** All 73 sections have questions (2,259 in total: 1,015 TGT, 773 PGT, 471 Higher).
 > All 48 sections that were planned at 6 questions now have 20 each (level mix: both tags 8 TGT / 7 PGT / 5 Higher;
 > TGT-only 11 TGT / 9 PGT; Higher-only 20 Higher; answers 5/5/5/5 over A–D). The table below shows the earlier plan.
 > The owner's new rules are in force: every question is one short single-line question, and the level of a question

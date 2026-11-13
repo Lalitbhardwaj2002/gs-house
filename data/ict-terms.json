@@ -2223,7 +2223,7 @@
     ],
     "facts": [
      "TCP/IP is the basic protocol suite of the Internet.",
-     "FTP is the File Transfer Protocol."
+     "Every protocol is defined by a published standard, such as an RFC for Internet protocols."
     ]
    },
    "hi": {
@@ -2248,7 +2248,7 @@
     ],
     "facts": [
      "टीसीपी/आईपी इंटरनेट का मूल प्रोटोकॉल समूह है।",
-     "एफटीपी फाइल ट्रांसफर प्रोटोकॉल है।"
+     "प्रत्येक प्रोटोकॉल एक प्रकाशित मानक द्वारा परिभाषित होता है, जैसे इंटरनेट प्रोटोकॉल के लिए RFC।"
     ]
    },
    "refs": [
@@ -2438,6 +2438,634 @@
     {
      "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)",
      "url": "https://ncert.nic.in/textbook.php"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-041",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "GPU, the chip that renders images and video on a computer screen, stands for:",
+    "options": [
+     "Graphics Processing Unit",
+     "General Purpose Unit",
+     "Graphical Program Utility",
+     "Global Processing Unit"
+    ],
+    "explanation": "GPU stands for Graphics Processing Unit. It is a processor designed to draw images and video quickly. Because it can do many calculations at the same time, it is also used for training artificial intelligence models.",
+    "notes": [
+     "It handles many calculations in parallel, so it is also used for artificial intelligence.",
+     "No computer component has this name.",
+     "This phrase is not a standard computer term.",
+     "This phrase is not a standard computer term."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "GPU"
+    ],
+    "facts": [
+     "A GPU has thousands of small cores that work in parallel.",
+     "GPUs are widely used for gaming, video editing and AI."
+    ]
+   },
+   "hi": {
+    "q": "कंप्यूटर के परदे पर चित्र और वीडियो प्रस्तुत करने वाली चिप GPU का पूर्ण रूप क्या है?",
+    "options": [
+     "ग्राफिक्स प्रोसेसिंग यूनिट",
+     "जनरल पर्पस यूनिट",
+     "ग्राफिकल प्रोग्राम यूटिलिटी",
+     "ग्लोबल प्रोसेसिंग यूनिट"
+    ],
+    "explanation": "GPU का पूर्ण रूप ग्राफिक्स प्रोसेसिंग यूनिट है। यह चित्र और वीडियो तेजी से बनाने के लिए बना प्रोसेसर है। यह एक साथ अनेक गणनाएँ कर सकता है, इसलिए कृत्रिम बुद्धिमत्ता के मॉडल प्रशिक्षित करने में भी प्रयुक्त होता है।",
+    "notes": [
+     "यह अनेक गणनाएँ एक साथ करती है, इसलिए कृत्रिम बुद्धिमत्ता में भी प्रयुक्त होती है।",
+     "किसी कंप्यूटर घटक का यह नाम नहीं है।",
+     "यह कोई मानक कंप्यूटर शब्द नहीं है।",
+     "यह कोई मानक कंप्यूटर शब्द नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "GPU"
+    ],
+    "facts": [
+     "GPU में हज़ारों छोटे कोर होते हैं जो समानांतर रूप से कार्य करते हैं।",
+     "GPU का उपयोग गेमिंग, वीडियो संपादन और एआई में व्यापक है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 246
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-042",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "FTP, used for moving files between computers on the Internet, stands for:",
+    "options": [
+     "Fast Transfer Process",
+     "File Transfer Protocol",
+     "File Tracking Program",
+     "Folder Transmission Protocol"
+    ],
+    "explanation": "FTP stands for File Transfer Protocol. It is a standard protocol of the TCP/IP suite for uploading files to a server and downloading files from it.",
+    "notes": [
+     "This phrase is not the name of any Internet protocol.",
+     "It works on the client–server model and uses ports 20 and 21.",
+     "This phrase is not the name of any Internet protocol.",
+     "This phrase is not the name of any Internet protocol."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "FTP"
+    ],
+    "facts": [
+     "FTP: File Transfer Protocol, ports 20 and 21.",
+     "HTTP transfers web pages; SMTP transfers e-mail."
+    ]
+   },
+   "hi": {
+    "q": "इंटरनेट पर कंप्यूटरों के बीच फाइलें भेजने में प्रयुक्त FTP का पूर्ण रूप क्या है?",
+    "options": [
+     "फास्ट ट्रांसफर प्रोसेस",
+     "फाइल ट्रांसफर प्रोटोकॉल",
+     "फाइल ट्रैकिंग प्रोग्राम",
+     "फोल्डर ट्रांसमिशन प्रोटोकॉल"
+    ],
+    "explanation": "FTP का पूर्ण रूप फाइल ट्रांसफर प्रोटोकॉल है। यह TCP/IP समूह का मानक प्रोटोकॉल है, जिससे सर्वर पर फाइलें अपलोड और वहाँ से डाउनलोड की जाती हैं।",
+    "notes": [
+     "यह किसी इंटरनेट प्रोटोकॉल का नाम नहीं है।",
+     "यह क्लाइंट–सर्वर मॉडल पर कार्य करता है और पोर्ट 20 एवं 21 का उपयोग करता है।",
+     "यह किसी इंटरनेट प्रोटोकॉल का नाम नहीं है।",
+     "यह किसी इंटरनेट प्रोटोकॉल का नाम नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "FTP"
+    ],
+    "facts": [
+     "FTP: फाइल ट्रांसफर प्रोटोकॉल, पोर्ट 20 और 21।",
+     "HTTP वेब पृष्ठ भेजता है; SMTP ई-मेल भेजता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 250
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-043",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The 15-digit IMEI number that identifies a mobile handset stands for:",
+    "options": [
+     "Indian Mobile Equipment Index",
+     "Internet Mobile Enabled Identity",
+     "International Mobile Equipment Identity",
+     "Integrated Mobile Electronic Identifier"
+    ],
+    "explanation": "IMEI stands for International Mobile Equipment Identity. It is a unique 15-digit number given to every mobile handset and is used to trace or block a lost or stolen phone.",
+    "notes": [
+     "The number is international, not Indian.",
+     "This phrase is not a standard term.",
+     "It can be seen by dialling *#06# on the handset.",
+     "This phrase is not a standard term."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "IMEI"
+    ],
+    "facts": [
+     "IMEI: 15 digits, shown by dialling *#06#.",
+     "The IMEI identifies the handset itself, not the SIM card inserted in it."
+    ]
+   },
+   "hi": {
+    "q": "मोबाइल हैंडसेट की पहचान करने वाले 15 अंकों के IMEI नंबर का पूर्ण रूप क्या है?",
+    "options": [
+     "इंडियन मोबाइल इक्विपमेंट इंडेक्स",
+     "इंटरनेट मोबाइल इनेबल्ड आइडेंटिटी",
+     "इंटरनेशनल मोबाइल इक्विपमेंट आइडेंटिटी",
+     "इंटीग्रेटेड मोबाइल इलेक्ट्रॉनिक आइडेंटिफायर"
+    ],
+    "explanation": "IMEI का पूर्ण रूप इंटरनेशनल मोबाइल इक्विपमेंट आइडेंटिटी है। यह प्रत्येक मोबाइल हैंडसेट को दिया गया 15 अंकों का अद्वितीय नंबर है, जिससे खोए या चोरी हुए फोन को खोजा या बंद किया जाता है।",
+    "notes": [
+     "यह नंबर अंतरराष्ट्रीय है, भारतीय नहीं।",
+     "यह कोई मानक शब्द नहीं है।",
+     "हैंडसेट पर *#06# डायल करने से यह दिखाई देता है।",
+     "यह कोई मानक शब्द नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "IMEI"
+    ],
+    "facts": [
+     "IMEI: 15 अंक, *#06# डायल करने पर दिखता है।",
+     "IMEI स्वयं हैंडसेट की पहचान है, उसमें लगे सिम कार्ड की नहीं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 247
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-044",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "SMS, the text-message service of mobile phones, stands for:",
+    "options": [
+     "Simple Mail Service",
+     "Secure Message System",
+     "Standard Mobile Signal",
+     "Short Message Service"
+    ],
+    "explanation": "SMS stands for Short Message Service. It lets mobile phones exchange short text messages of up to 160 characters. MMS, the Multimedia Messaging Service, carries pictures and video.",
+    "notes": [
+     "This phrase is not the name of the service.",
+     "This phrase is not the name of the service.",
+     "This phrase is not the name of the service.",
+     "One message carries up to 160 characters."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "SMS"
+    ],
+    "facts": [
+     "SMS: Short Message Service, 160 characters.",
+     "MMS: Multimedia Messaging Service."
+    ]
+   },
+   "hi": {
+    "q": "मोबाइल फोन की पाठ-संदेश सेवा SMS का पूर्ण रूप क्या है?",
+    "options": [
+     "सिंपल मेल सर्विस",
+     "सिक्योर मैसेज सिस्टम",
+     "स्टैंडर्ड मोबाइल सिग्नल",
+     "शॉर्ट मैसेज सर्विस"
+    ],
+    "explanation": "SMS का पूर्ण रूप शॉर्ट मैसेज सर्विस है। इससे मोबाइल फोन 160 वर्णों तक के छोटे पाठ-संदेश भेजते और पाते हैं। MMS अर्थात मल्टीमीडिया मैसेजिंग सर्विस से चित्र और वीडियो भेजे जाते हैं।",
+    "notes": [
+     "यह इस सेवा का नाम नहीं है।",
+     "यह इस सेवा का नाम नहीं है।",
+     "यह इस सेवा का नाम नहीं है।",
+     "एक संदेश में अधिकतम 160 वर्ण आते हैं।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "SMS"
+    ],
+    "facts": [
+     "SMS: शॉर्ट मैसेज सर्विस, 160 वर्ण।",
+     "MMS: मल्टीमीडिया मैसेजिंग सर्विस।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 247
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-045",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "In a 'QR code', scanned with a phone camera to make a payment, the letters QR stand for:",
+    "options": [
+     "Quality Record",
+     "Quick Response",
+     "Query Reader",
+     "Quantum Recognition"
+    ],
+    "explanation": "QR stands for Quick Response. A QR code is a two-dimensional barcode of black and white squares that a camera can read quickly. It is widely used for UPI payments and for opening web links.",
+    "notes": [
+     "This phrase is not the name of the code.",
+     "The code was invented in 1994 by the Japanese company Denso Wave.",
+     "This phrase is not the name of the code.",
+     "This phrase is not the name of the code."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "QR code"
+    ],
+    "facts": [
+     "QR code: Quick Response, Denso Wave, Japan, 1994.",
+     "It is a two-dimensional (matrix) barcode."
+    ]
+   },
+   "hi": {
+    "q": "भुगतान के लिए फोन के कैमरे से स्कैन किए जाने वाले 'QR कोड' में QR का पूर्ण रूप क्या है?",
+    "options": [
+     "क्वालिटी रिकॉर्ड",
+     "क्विक रिस्पॉन्स",
+     "क्वेरी रीडर",
+     "क्वांटम रिकग्निशन"
+    ],
+    "explanation": "QR का पूर्ण रूप क्विक रिस्पॉन्स है। QR कोड काले-सफेद वर्गों का द्विविमीय बारकोड है, जिसे कैमरा शीघ्र पढ़ लेता है। यूपीआई भुगतान और वेब लिंक खोलने में इसका व्यापक उपयोग होता है।",
+    "notes": [
+     "यह इस कोड का नाम नहीं है।",
+     "इस कोड का आविष्कार 1994 में जापानी कंपनी डेंसो वेव ने किया।",
+     "यह इस कोड का नाम नहीं है।",
+     "यह इस कोड का नाम नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "QR कोड"
+    ],
+    "facts": [
+     "QR कोड: क्विक रिस्पॉन्स, डेंसो वेव, जापान, 1994।",
+     "यह द्विविमीय (मैट्रिक्स) बारकोड है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 247
+    },
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System) and Class 12 Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-046",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Software such as MySQL and Oracle, which stores and manages organised data, is called a DBMS. DBMS stands for:",
+    "options": [
+     "Data Backup Management Service",
+     "Digital Base Memory System",
+     "Database Management System",
+     "Document Based Mail System"
+    ],
+    "explanation": "DBMS stands for Database Management System. It is software for creating a database and for storing, changing and retrieving the data in it. MySQL, Oracle and MS Access are examples.",
+    "notes": [
+     "Backup is only one of the tasks of such software.",
+     "This phrase is not a standard term.",
+     "It lets users create, update and query a database.",
+     "This phrase is not a standard term."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "DBMS"
+    ],
+    "facts": [
+     "DBMS: Database Management System.",
+     "SQL (Structured Query Language) is used to query a database."
+    ]
+   },
+   "hi": {
+    "q": "MySQL और Oracle जैसे सॉफ्टवेयर, जो व्यवस्थित डेटा को संग्रहित और प्रबंधित करते हैं, DBMS कहलाते हैं। DBMS का पूर्ण रूप क्या है?",
+    "options": [
+     "डेटा बैकअप मैनेजमेंट सर्विस",
+     "डिजिटल बेस मेमोरी सिस्टम",
+     "डेटाबेस मैनेजमेंट सिस्टम",
+     "डॉक्यूमेंट बेस्ड मेल सिस्टम"
+    ],
+    "explanation": "DBMS का पूर्ण रूप डेटाबेस मैनेजमेंट सिस्टम है। यह डेटाबेस बनाने तथा उसमें डेटा संग्रहित करने, बदलने और निकालने का सॉफ्टवेयर है। MySQL, Oracle और MS Access इसके उदाहरण हैं।",
+    "notes": [
+     "बैकअप ऐसे सॉफ्टवेयर का केवल एक कार्य है।",
+     "यह कोई मानक शब्द नहीं है।",
+     "इससे उपयोगकर्ता डेटाबेस बनाते, बदलते और उससे जानकारी निकालते हैं।",
+     "यह कोई मानक शब्द नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "DBMS"
+    ],
+    "facts": [
+     "DBMS: डेटाबेस मैनेजमेंट सिस्टम।",
+     "डेटाबेस से जानकारी निकालने के लिए SQL (स्ट्रक्चर्ड क्वेरी लैंग्वेज) प्रयुक्त होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 8 (Database Concepts)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-047",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "TCP, the protocol that makes sure data reaches its destination complete and in order, stands for:",
+    "options": [
+     "Transfer Connection Program",
+     "Terminal Control Process",
+     "Telecom Carrier Protocol",
+     "Transmission Control Protocol"
+    ],
+    "explanation": "TCP stands for Transmission Control Protocol. It breaks data into packets, checks them for errors and has lost packets sent again. Together with the Internet Protocol it forms the TCP/IP suite on which the Internet runs.",
+    "notes": [
+     "This phrase is not the name of a protocol.",
+     "This phrase is not the name of a protocol.",
+     "This phrase is not the name of a protocol.",
+     "It works with the Internet Protocol (IP), which carries the packets."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "TCP"
+    ],
+    "facts": [
+     "TCP: Transmission Control Protocol; IP: Internet Protocol.",
+     "TCP/IP was designed by Vinton Cerf and Robert Kahn."
+    ]
+   },
+   "hi": {
+    "q": "डेटा को पूर्ण और सही क्रम में गंतव्य तक पहुँचाना सुनिश्चित करने वाले प्रोटोकॉल TCP का पूर्ण रूप क्या है?",
+    "options": [
+     "ट्रांसफर कनेक्शन प्रोग्राम",
+     "टर्मिनल कंट्रोल प्रोसेस",
+     "टेलीकॉम कैरियर प्रोटोकॉल",
+     "ट्रांसमिशन कंट्रोल प्रोटोकॉल"
+    ],
+    "explanation": "TCP का पूर्ण रूप ट्रांसमिशन कंट्रोल प्रोटोकॉल है। यह डेटा को पैकेटों में बाँटता है, उनमें त्रुटि जाँचता है और खोए पैकेट दोबारा भिजवाता है। इंटरनेट प्रोटोकॉल के साथ मिलकर यह TCP/IP समूह बनाता है, जिस पर इंटरनेट चलता है।",
+    "notes": [
+     "यह किसी प्रोटोकॉल का नाम नहीं है।",
+     "यह किसी प्रोटोकॉल का नाम नहीं है।",
+     "यह किसी प्रोटोकॉल का नाम नहीं है।",
+     "यह इंटरनेट प्रोटोकॉल (IP) के साथ कार्य करता है, जो पैकेट पहुँचाता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "TCP"
+    ],
+    "facts": [
+     "TCP: ट्रांसमिशन कंट्रोल प्रोटोकॉल; IP: इंटरनेट प्रोटोकॉल।",
+     "TCP/IP को विंटन सर्फ और रॉबर्ट कान ने बनाया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 250
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-048",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "SMTP, the protocol that carries outgoing e-mail, stands for:",
+    "options": [
+     "Simple Mail Transfer Protocol",
+     "Secure Message Transport Program",
+     "Standard Mail Text Process",
+     "Server Mail Tracking Protocol"
+    ],
+    "explanation": "SMTP stands for Simple Mail Transfer Protocol. It is used to send e-mail from a mail client to a server and from one mail server to another. POP3 and IMAP are used for receiving mail.",
+    "notes": [
+     "It normally uses port 25.",
+     "This phrase is not the name of a protocol.",
+     "This phrase is not the name of a protocol.",
+     "This phrase is not the name of a protocol."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "SMTP"
+    ],
+    "facts": [
+     "SMTP: sending mail; POP3 and IMAP: receiving mail.",
+     "SMTP uses port 25."
+    ]
+   },
+   "hi": {
+    "q": "भेजी जाने वाली ई-मेल को ले जाने वाले प्रोटोकॉल SMTP का पूर्ण रूप क्या है?",
+    "options": [
+     "सिंपल मेल ट्रांसफर प्रोटोकॉल",
+     "सिक्योर मैसेज ट्रांसपोर्ट प्रोग्राम",
+     "स्टैंडर्ड मेल टेक्स्ट प्रोसेस",
+     "सर्वर मेल ट्रैकिंग प्रोटोकॉल"
+    ],
+    "explanation": "SMTP का पूर्ण रूप सिंपल मेल ट्रांसफर प्रोटोकॉल है। इससे ई-मेल क्लाइंट से सर्वर तक और एक मेल सर्वर से दूसरे तक भेजी जाती है। मेल प्राप्त करने के लिए POP3 और IMAP प्रयुक्त होते हैं।",
+    "notes": [
+     "यह सामान्यतः पोर्ट 25 का उपयोग करता है।",
+     "यह किसी प्रोटोकॉल का नाम नहीं है।",
+     "यह किसी प्रोटोकॉल का नाम नहीं है।",
+     "यह किसी प्रोटोकॉल का नाम नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "SMTP"
+    ],
+    "facts": [
+     "SMTP: मेल भेजना; POP3 और IMAP: मेल प्राप्त करना।",
+     "SMTP पोर्ट 25 का उपयोग करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 251
+    },
+    {
+     "source": "NCERT Class 12 Computer Science, Chapter 10 (Computer Networks)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-049",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "GIS, used for storing and analysing data linked to locations on a map, stands for:",
+    "options": [
+     "Global Internet Service",
+     "Geographic Information System",
+     "General Information Server",
+     "Ground Imaging Satellite"
+    ],
+    "explanation": "GIS stands for Geographic Information System. It captures, stores, analyses and displays data that is tied to a place. It is used in town planning, disaster management and school mapping.",
+    "notes": [
+     "This phrase is not a standard term.",
+     "It combines maps with databases to show patterns in space.",
+     "This phrase is not a standard term.",
+     "A satellite may supply the data, but this is not what GIS stands for."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "GIS"
+    ],
+    "facts": [
+     "A GIS stores data in layers, such as roads, rivers and schools, laid over one map.",
+     "GIS is used for school mapping and resource planning."
+    ]
+   },
+   "hi": {
+    "q": "मानचित्र के स्थानों से जुड़े डेटा को संग्रहित और विश्लेषित करने में प्रयुक्त GIS का पूर्ण रूप क्या है?",
+    "options": [
+     "ग्लोबल इंटरनेट सर्विस",
+     "जियोग्राफिक इन्फॉर्मेशन सिस्टम",
+     "जनरल इन्फॉर्मेशन सर्वर",
+     "ग्राउंड इमेजिंग सैटेलाइट"
+    ],
+    "explanation": "GIS का पूर्ण रूप जियोग्राफिक इन्फॉर्मेशन सिस्टम (भौगोलिक सूचना तंत्र) है। यह किसी स्थान से जुड़े डेटा को एकत्र, संग्रहित, विश्लेषित और प्रदर्शित करता है। नगर नियोजन, आपदा प्रबंधन और स्कूल मैपिंग में इसका उपयोग होता है।",
+    "notes": [
+     "यह कोई मानक शब्द नहीं है।",
+     "यह मानचित्रों को डेटाबेस से जोड़कर स्थानिक प्रतिरूप दिखाता है।",
+     "यह कोई मानक शब्द नहीं है।",
+     "डेटा उपग्रह से मिल सकता है, पर GIS का पूर्ण रूप यह नहीं है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "GIS"
+    ],
+    "facts": [
+     "GIS डेटा को परतों में रखता है, जैसे सड़कें, नदियाँ और विद्यालय, जो एक ही मानचित्र पर आरोपित होती हैं।",
+     "GIS का उपयोग स्कूल मैपिंग और संसाधन नियोजन में होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Geography, Practical Work in Geography Part II (Spatial Information Technology)"
+    }
+   ]
+  },
+  {
+   "id": "ict-terms-050",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "HDMI, the port that carries both video and audio from a computer to a projector or television, stands for:",
+    "options": [
+     "High Data Media Input",
+     "Hybrid Digital Monitor Interface",
+     "High Density Memory Interface",
+     "High-Definition Multimedia Interface"
+    ],
+    "explanation": "HDMI stands for High-Definition Multimedia Interface. A single HDMI cable carries digital video and audio, so it is the usual way of connecting a computer to a smart board, projector or television in a classroom.",
+    "notes": [
+     "This phrase is not the name of the port.",
+     "This phrase is not the name of the port.",
+     "This phrase is not the name of the port.",
+     "It carries uncompressed digital video and audio through a single cable."
+    ],
+    "path": [
+     "ICT",
+     "Abbreviations & Terminology",
+     "HDMI"
+    ],
+    "facts": [
+     "HDMI: digital video and audio in one cable.",
+     "VGA, the older port, carries only analogue video."
+    ]
+   },
+   "hi": {
+    "q": "कंप्यूटर से प्रोजेक्टर या टेलीविजन तक वीडियो और ऑडियो दोनों ले जाने वाले पोर्ट HDMI का पूर्ण रूप क्या है?",
+    "options": [
+     "हाई डेटा मीडिया इनपुट",
+     "हाइब्रिड डिजिटल मॉनिटर इंटरफेस",
+     "हाई डेंसिटी मेमोरी इंटरफेस",
+     "हाई-डेफिनिशन मल्टीमीडिया इंटरफेस"
+    ],
+    "explanation": "HDMI का पूर्ण रूप हाई-डेफिनिशन मल्टीमीडिया इंटरफेस है। एक ही HDMI केबल अंकीय वीडियो और ऑडियो ले जाती है, इसलिए कक्षा में कंप्यूटर को स्मार्ट बोर्ड, प्रोजेक्टर या टेलीविजन से जोड़ने का यह सामान्य तरीका है।",
+    "notes": [
+     "यह इस पोर्ट का नाम नहीं है।",
+     "यह इस पोर्ट का नाम नहीं है।",
+     "यह इस पोर्ट का नाम नहीं है।",
+     "यह एक ही केबल से असंपीडित अंकीय वीडियो और ऑडियो ले जाता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "संक्षिप्त रूप एवं शब्दावली",
+     "HDMI"
+    ],
+    "facts": [
+     "HDMI: एक ही केबल में अंकीय वीडियो और ऑडियो।",
+     "पुराना VGA पोर्ट केवल एनालॉग वीडियो ले जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, Chapter 1 (Computer System)"
     }
    ]
   }

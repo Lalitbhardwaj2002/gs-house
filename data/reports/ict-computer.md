@@ -24,3 +24,20 @@ I solved every question before looking at its key, and every key matched. I reco
 Checked 22 questions (003 005 007 008 010 012 013 014 018 020 021 023 024 026 028 030 031 032 036 037 039 040); all correct, no changes.
 
 Corrected: none. Replaced: none.
+
+## Check of 13 November 2026 (10 new questions on past-paper topics, 041–050)
+
+Checked: 041–050 (10). Overlap check against 001–040 done.
+
+Corrected:
+- 045: RAMAC capacity given as about 5 million characters (IBM's own figure) instead of a flat 5 MB; note A names the IBM 350 disk unit; facts reworded (no longer restate 023).
+- 047: note D made exact (no standard CD, DVD or Blu-ray disc holds terabytes).
+- 015 (old): fact 'the bit is the basic unit of memory' gave away 043; replaced with a fact on nibble/byte.
+- 024 (old): note A 'the capacity of a CD' gave away 047; reworded.
+
+Replaced (same id, level and path stem):
+- 041 (binary system has two digits): already answered by 033 (fact) and 036 (notes), and its notes gave away 036. Now: sum of binary 1011 + 0110 (binary arithmetic).
+- 042 (decimal 10 in binary): repeated the conversion of 033, and (1010)₂ = (A)₁₆ is in 036. Now: largest unsigned number in 8 bits (255).
+- 044 (1 PB = 1024 TB): stated in the notes and facts of 017. Now: memory that must be refreshed periodically (DRAM).
+
+Not verified: nothing outstanding.

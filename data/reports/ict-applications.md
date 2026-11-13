@@ -18,3 +18,17 @@ Notes for the writer: the section still has no questions on Digital India (pilla
 - Checked: 34 (002, 005–007, 009, 012–040). Dates, ministries, Act names and numbers verified (Digital India, UPI/NPCI, BHIM, UMANG, Aadhaar Act 2016, DigiLocker, GeM, NeGP, IT Act 2000, DPDP Act 2023, e-RUPI, IMPS, DBT, ONDC, BHASHINI etc.).
 - Corrected: ict-applications-012 – explanation (en/hi) did not say why SaaS is right; rewritten to explain the SaaS model.
 - Replaced: none.
+
+## Check of 13 November 2026 (10 new questions on past-paper topics, 041–050)
+
+Checked: 041–050 (10). Overlap check against 001–040 done; no overlaps found.
+
+Corrected:
+- 042, 046, 049: correct option much longer than the others; shortened (Hindi options of 046 made uniform).
+- 046: reference replaced with Google Scholar's own page.
+- 048: launch date made exact (16 May 2023).
+- 050: date made exact (March 2015) and a PTI news report added as reference.
+
+Replaced: none.
+
+Not verified: DISE start year. Most sources (including NIEPA's A. C. Mehta) give 1995, but one says 1994 (42 districts of DPEP phase I). The key (NIEPA) is not affected. The SAKSHAM portal page could not be opened directly; its purpose is confirmed by news reports and by the UGC task force report of 2013.

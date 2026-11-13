@@ -55,3 +55,15 @@ Corrected:
 - pol-executive-036: fact on the 11th Amendment began with a dangling 'also'; now states that it replaced the joint meeting with an electoral college and barred challenges on the ground of vacancies (EN and HI).
 
 Replaced: none.
+
+## Check of 13 November 2026 (new questions for the book companion chapters)
+Checked 7 new questions (043–049: Prime Minister, Council of Ministers, Attorney General), plus the whole file for overlap.
+- Corrected 043: notes B and C reworded (note C gave away 008).
+- Corrected 045: notes A and B reworded (note B gave the answer away inside the question).
+- Corrected 047: note C and fact 2 reworded (they gave away 027).
+- Corrected 049: note D made precise.
+- Corrected refs: AG questions no longer cite p. 110 (the AG section is on p. 111); 043 and 045 now cite p. 111, where Article 75(1) and 75(5) are stated.
+- Corrected old 008 (note C), 027 (note A, fact 1) and 042 (explanation): they gave away the answers of 043, 047, 045 and 049.
+- Replaced 044: 'PM presides over the Cabinet' was given away by the Article 74(1) fact in 016; now asks the first non-Congress Prime Minister (Morarji Desai, 24 March 1977).
+- Replaced 046: Article 76 was given away by 020, 023 and 049; now asks the Attorney General's right of audience (Article 76(3)).
+- Not verified: no official text found for the three ranks of ministers (Cabinet, State, Deputy) in 048; it is the standard textbook classification, cited to the Salaries and Allowances of Ministers Act, 1952.

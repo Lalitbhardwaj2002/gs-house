@@ -67,7 +67,7 @@ const SECTIONS = [
 
   // ---------- Unit 3: Constitution & Polity ----------
   { id: 'pol-making', unit: 'u3', tracks: ['tgt', 'higher'], en: 'Making of the Constitution & Preamble', hi: 'संविधान निर्माण एवं प्रस्तावना',
-    scope: 'Constituent Assembly, committees, sources, salient features, Preamble, schedules, Union and its territory.' },
+    scope: 'Constitutional development under British rule (Acts of 1773–1947), Constituent Assembly, committees, sources, salient features, Preamble, schedules, Union and its territory.' },
   { id: 'pol-rights', unit: 'u3', tracks: ['tgt', 'higher'], en: 'Fundamental Rights & Duties', hi: 'मौलिक अधिकार एवं कर्तव्य',
     scope: 'Articles 12–35, writs, Fundamental Duties (Article 51A) and related cases.' },
   { id: 'pol-dpsp', unit: 'u3', tracks: ['tgt', 'higher'], en: 'Directive Principles & Citizenship', hi: 'नीति निदेशक तत्व एवं नागरिकता',
@@ -87,7 +87,7 @@ const SECTIONS = [
   { id: 'pol-bodies', unit: 'u3', tracks: ['tgt'], en: 'Other Constitutional & Statutory Bodies', hi: 'अन्य संवैधानिक एवं वैधानिक निकाय',
     scope: 'CAG, Finance Commission, NITI Aayog, NHRC, CVC, Lokpal, commissions for SC/ST/OBC/women and others.' },
   { id: 'pol-amend', unit: 'u3', tracks: ['tgt'], en: 'Amendments, Emergency & Centre–State Relations', hi: 'संशोधन, आपातकाल एवं केंद्र-राज्य संबंध',
-    scope: 'Article 368, major amendments, emergency provisions, seventh schedule, inter-state relations, important acts.' },
+    scope: 'Article 368, major amendments, emergency provisions, parliamentary and federal system, seventh schedule, Centre–State and inter-state relations, important acts.' },
   { id: 'pol-education', unit: 'u3', tracks: ['tgt'], en: 'Education: Constitutional & Legal Developments', hi: 'शिक्षा: संवैधानिक एवं विधिक विकास',
     scope: 'Articles 21A, 28–30, 45, 46, 350A, 351; 42nd and 86th Amendments; RTE Act 2009; education commissions; NPE 1968/1986; NEP 2020.' },
 
