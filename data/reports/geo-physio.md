@@ -23,3 +23,8 @@ Draft: 56 questions. Final: **56 kept** (11 corrected, 0 deleted). Ids unchanged
 
 ## For the writer later
 Not covered, or only lightly: the Indian Desert beyond barchans (Luni, playas), the Ganga and Brahmaputra plains (only Majuli), the Rann of Kachchh / Kathiawar, the Lakshadweep channels (only 8° and 9° as notes), and the Shillong plateau's minerals and rainfall.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 24 questions: 005 007 010 018 019 020 025 026 030 031 034 036 042 043 044 046 047 048 049 050 051 053 054 055.
+- Corrected: none (all keys, notes, facts and Hindi found correct).
+- Replaced: none.

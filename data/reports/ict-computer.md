@@ -18,3 +18,9 @@ I solved every question before looking at its key, and every key matched. I reco
 
 ## Not changed but noted
 - **003/010**: The IBM System/360 is described as starting the third (IC) generation. It actually used hybrid SLT modules, but this is the standard textbook and IGNOU framing.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 22 questions (003 005 007 008 010 012 013 014 018 020 021 023 024 026 028 030 031 032 036 037 039 040); all correct, no changes.
+
+Corrected: none. Replaced: none.

@@ -13,3 +13,8 @@ Official sources checked: UNESCO UIS ICT glossary (definition and components); P
 All keys solved blind and confirmed; answer spread A–D [4,4,3,3]; levels TGT 6 / PGT 5 / Higher 3.
 
 Notes for the writer: the section still has no questions on Digital India (pillars, 2015 launch), UPI/NPCI, Aadhaar, DigiLocker, UMANG, GeM, ONDC, DPDP Act 2023 or e-governance models — add these first when the section is extended. Q013 (blockchain) and Q014 (AI/IoT pioneers) border on sci-tech's scope; the sci-tech writer must not repeat them.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked: 34 (002, 005–007, 009, 012–040). Dates, ministries, Act names and numbers verified (Digital India, UPI/NPCI, BHIM, UMANG, Aadhaar Act 2016, DigiLocker, GeM, NeGP, IT Act 2000, DPDP Act 2023, e-RUPI, IMPS, DBT, ONDC, BHASHINI etc.).
+- Corrected: ict-applications-012 – explanation (en/hi) did not say why SaaS is right; rewritten to explain the SaaS model.
+- Replaced: none.

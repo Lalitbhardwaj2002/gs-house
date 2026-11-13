@@ -3,22 +3,22 @@
  "questions": [
   {
    "id": "tra-data-001",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 0,
    "en": {
-    "q": "Data collected by an investigator for the first time, directly from the source, for the purpose of a specific enquiry are known as:",
+    "q": "Primary data differ from secondary data primarily in that they are:",
     "options": [
-     "Primary data",
-     "Secondary data",
-     "Time-series data",
-     "Cross-section data"
+     "Collected first-hand by the investigator for the enquiry in hand",
+     "Taken from the published reports of other agencies",
+     "Always collected by the Government",
+     "Always collected from every unit of the population"
     ],
     "explanation": "Primary data are original, first-hand data gathered by the investigator himself for the enquiry in hand, for example through interviews, questionnaires or observation.",
     "notes": [
-     "Primary data: first-hand data collected by the investigator for the present purpose.",
-     "Secondary data: data already collected and processed by some other agency, then used by the investigator.",
-     "Time-series data: values of a variable recorded over successive periods of time; the term describes arrangement, not source.",
-     "Cross-section data: values recorded for many units at one point of time; it too describes arrangement, not source."
+     "Interviews, questionnaires and observation yield such data.",
+     "Data taken from published reports are secondary data.",
+     "Any investigator may collect primary data.",
+     "Primary data may be collected by complete enumeration or from a sample."
     ],
     "path": [
      "Research Aptitude",
@@ -32,19 +32,19 @@
     ]
    },
    "hi": {
-    "q": "किसी विशिष्ट अन्वेषण के उद्देश्य से अन्वेषक द्वारा पहली बार सीधे स्रोत से एकत्र किए गए आँकड़े कहलाते हैं:",
+    "q": "प्राथमिक आँकड़े द्वितीयक आँकड़ों से मुख्यतः इस बात में भिन्न हैं कि वे:",
     "options": [
-     "प्राथमिक आँकड़े",
-     "द्वितीयक आँकड़े",
-     "काल-श्रेणी आँकड़े",
-     "अनुप्रस्थ-काट आँकड़े"
+     "अन्वेषक द्वारा प्रस्तुत अन्वेषण के लिए स्वयं पहली बार एकत्र किए जाते हैं",
+     "अन्य अभिकरणों के प्रकाशित प्रतिवेदनों से लिए जाते हैं",
+     "सदैव सरकार द्वारा एकत्र किए जाते हैं",
+     "सदैव समष्टि की प्रत्येक इकाई से एकत्र किए जाते हैं"
     ],
     "explanation": "प्राथमिक आँकड़े वे मौलिक आँकड़े हैं जिन्हें अन्वेषक स्वयं वर्तमान अन्वेषण के लिए साक्षात्कार, प्रश्नावली या अवलोकन आदि द्वारा पहली बार एकत्र करता है।",
     "notes": [
-     "प्राथमिक आँकड़े: वर्तमान उद्देश्य हेतु अन्वेषक द्वारा स्वयं एकत्र किए गए मौलिक आँकड़े।",
-     "द्वितीयक आँकड़े: किसी अन्य संस्था द्वारा पहले से एकत्र व संसाधित आँकड़े, जिनका अन्वेषक बाद में प्रयोग करता है।",
-     "काल-श्रेणी आँकड़े: क्रमागत समयावधियों में दर्ज किसी चर के मान; यह स्रोत नहीं, व्यवस्था का प्रकार है।",
-     "अनुप्रस्थ-काट आँकड़े: एक ही समय-बिंदु पर अनेक इकाइयों के मान; यह भी स्रोत नहीं, व्यवस्था का प्रकार है।"
+     "साक्षात्कार, प्रश्नावली एवं अवलोकन से ऐसे आँकड़े मिलते हैं।",
+     "प्रकाशित प्रतिवेदनों से लिए गए आँकड़े द्वितीयक आँकड़े हैं।",
+     "कोई भी अन्वेषक प्राथमिक आँकड़े एकत्र कर सकता है।",
+     "प्राथमिक आँकड़े संगणना (पूर्ण गणना) अथवा प्रतिदर्श, दोनों विधियों से एकत्र हो सकते हैं।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -69,7 +69,7 @@
   },
   {
    "id": "tra-data-002",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 2,
    "en": {
     "q": "For a researcher studying literacy in Uttar Pradesh, which one of the following is a secondary source of data?",
@@ -132,22 +132,22 @@
   },
   {
    "id": "tra-data-003",
-   "level": "PGT",
-   "answer": 3,
+   "level": "Higher",
+   "answer": 0,
    "en": {
-    "q": "Consider the following statements:\n1. A questionnaire is filled in by the respondents themselves, whereas a schedule is filled in by the enumerator.\n2. The questionnaire method is suitable only for respondents who are literate and willing to cooperate.\n3. Non-response is generally lower in the schedule method than in a mailed questionnaire.\nWhich of the statements given above is/are correct?",
+    "q": "A schedule differs from a questionnaire mainly in that a schedule is:",
     "options": [
-     "Only 1",
-     "1 and 2 only",
-     "2 and 3 only",
-     "1, 2 and 3"
+     "Filled in by the enumerator",
+     "Sent to the respondents by post",
+     "Usable only with literate respondents",
+     "Cheaper to administer"
     ],
-    "explanation": "In the questionnaire method respondents read and answer the questions themselves, so they must be literate and willing; a schedule is carried and filled in by the enumerator face to face, which reduces non-response compared with mailed questionnaires.",
+    "explanation": "A questionnaire is filled in by the respondents themselves, so they must be literate and willing. A schedule is filled in by the enumerator, which reduces non-response but raises the cost.",
     "notes": [
-     "Only 1: incomplete, because statements 2 and 3 are also correct.",
-     "1 and 2 only: incomplete, because statement 3 is also correct.",
-     "2 and 3 only: leaves out statement 1, which is correct.",
-     "1, 2 and 3: correct — all three are standard differences between a questionnaire and a schedule."
+     "The enumerator asks the questions face to face and records the answers.",
+     "Mailing is a feature of the questionnaire method.",
+     "It is the questionnaire that needs literate respondents.",
+     "The schedule method is costlier, because enumerators must be trained and sent to the field."
     ],
     "path": [
      "Research Aptitude",
@@ -161,19 +161,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. प्रश्नावली उत्तरदाता स्वयं भरते हैं, जबकि अनुसूची प्रगणक द्वारा भरी जाती है।\n2. प्रश्नावली विधि केवल उन्हीं उत्तरदाताओं के लिए उपयुक्त है जो साक्षर हों और सहयोग करने को तत्पर हों।\n3. डाक द्वारा भेजी गई प्रश्नावली की तुलना में अनुसूची विधि में अनुत्तर सामान्यतः कम होता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "q": "अनुसूची प्रश्नावली से मुख्यतः किस बात में भिन्न है?",
     "options": [
-     "केवल 1",
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "1, 2 और 3"
+     "इसे प्रगणक भरता है",
+     "इसे उत्तरदाताओं को डाक से भेजा जाता है",
+     "यह केवल साक्षर उत्तरदाताओं के लिए उपयोगी है",
+     "इसका प्रयोग सस्ता पड़ता है"
     ],
-    "explanation": "प्रश्नावली विधि में उत्तरदाता स्वयं प्रश्न पढ़कर उत्तर देते हैं, अतः उनका साक्षर व इच्छुक होना आवश्यक है; अनुसूची प्रगणक आमने-सामने भरता है, जिससे डाक प्रश्नावली की तुलना में अनुत्तर घटता है।",
+    "explanation": "प्रश्नावली को उत्तरदाता स्वयं भरते हैं, अतः उनका साक्षर एवं इच्छुक होना आवश्यक है। अनुसूची को प्रगणक भरता है, जिससे अनुत्तर घटता है, किंतु व्यय बढ़ता है।",
     "notes": [
-     "केवल 1: अपूर्ण, क्योंकि कथन 2 और 3 भी सही हैं।",
-     "केवल 1 और 2: अपूर्ण, क्योंकि कथन 3 भी सही है।",
-     "केवल 2 और 3: सही कथन 1 को छोड़ देता है।",
-     "1, 2 और 3: सही — तीनों प्रश्नावली और अनुसूची के मानक अंतर हैं।"
+     "प्रगणक आमने-सामने प्रश्न पूछकर उत्तर अंकित करता है।",
+     "डाक से भेजना प्रश्नावली विधि की विशेषता है।",
+     "साक्षर उत्तरदाताओं की आवश्यकता प्रश्नावली में होती है।",
+     "अनुसूची विधि महँगी है, क्योंकि प्रगणकों को प्रशिक्षित कर क्षेत्र में भेजना पड़ता है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -198,22 +198,22 @@
   },
   {
    "id": "tra-data-004",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 1,
    "en": {
-    "q": "Trying out a draft questionnaire on a small group of respondents before the main survey is known as:",
+    "q": "A pilot survey is conducted before the main survey primarily to:",
     "options": [
-     "Census enumeration",
-     "Pilot survey",
-     "Panel survey",
-     "Case study"
+     "Enumerate every unit of the population",
+     "Detect defects in the questionnaire and estimate the time and cost of the main survey",
+     "Study the same respondents repeatedly over a period",
+     "Study a single unit in depth"
     ],
     "explanation": "A pilot survey (pre-test) on a small group shows whether the questions are clear, helps detect defects in the questionnaire and gives an idea of the cost and time the main survey will need.",
     "notes": [
-     "Census enumeration: collection of data from every unit of the population.",
-     "Pilot survey: small try-out of the questionnaire before the main survey.",
-     "Panel survey: the same respondents are surveyed repeatedly over time.",
-     "Case study: intensive study of a single unit such as a person, family or institution."
+     "Enumerating every unit is a census.",
+     "The draft questionnaire is tried out on a small group.",
+     "Repeated study of the same respondents is a panel survey.",
+     "In-depth study of one unit is a case study."
     ],
     "path": [
      "Research Aptitude",
@@ -227,19 +227,19 @@
     ]
    },
    "hi": {
-    "q": "मुख्य सर्वेक्षण से पहले प्रश्नावली के प्रारूप को उत्तरदाताओं के एक छोटे समूह पर परखना कहलाता है:",
+    "q": "मुख्य सर्वेक्षण से पहले पूर्वगामी (पायलट) सर्वेक्षण मुख्यतः किसलिए किया जाता है?",
     "options": [
-     "जनगणना प्रगणन",
-     "पूर्वगामी (पायलट) सर्वेक्षण",
-     "पैनल सर्वेक्षण",
-     "वैयक्तिक अध्ययन (केस स्टडी)"
+     "समष्टि की प्रत्येक इकाई की गणना करना",
+     "प्रश्नावली के दोष पहचानना एवं मुख्य सर्वेक्षण के समय तथा व्यय का अनुमान लगाना",
+     "एक ही उत्तरदाताओं का कुछ अवधि तक बार-बार अध्ययन करना",
+     "किसी एक इकाई का गहन अध्ययन करना"
     ],
     "explanation": "छोटे समूह पर किया गया पूर्वगामी सर्वेक्षण बताता है कि प्रश्न स्पष्ट हैं या नहीं, प्रश्नावली के दोष सामने लाता है तथा मुख्य सर्वेक्षण में लगने वाले समय व व्यय का अनुमान देता है।",
     "notes": [
-     "जनगणना प्रगणन: समग्र की प्रत्येक इकाई से आँकड़े एकत्र करना।",
-     "पूर्वगामी सर्वेक्षण: मुख्य सर्वेक्षण से पहले प्रश्नावली का लघु परीक्षण।",
-     "पैनल सर्वेक्षण: एक ही उत्तरदाताओं का समय के साथ बार-बार सर्वेक्षण।",
-     "वैयक्तिक अध्ययन: किसी एक इकाई (व्यक्ति, परिवार, संस्था) का गहन अध्ययन।"
+     "प्रत्येक इकाई की गणना जनगणना है।",
+     "प्रश्नावली का प्रारूप छोटे समूह पर परखा जाता है।",
+     "एक ही उत्तरदाताओं का बार-बार अध्ययन पैनल सर्वेक्षण है।",
+     "एक इकाई का गहन अध्ययन वैयक्तिक अध्ययन है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -262,21 +262,21 @@
   {
    "id": "tra-data-005",
    "level": "Higher",
-   "answer": 2,
+   "answer": 3,
    "en": {
-    "q": "Match List-I (Attitude scale) with List-II (Feature) and select the correct answer using the codes given below the lists:\nList-I:\nA. Likert scale\nB. Thurstone scale\nC. Guttman scale\nD. Semantic differential\nList-II:\n1. Pairs of bipolar adjectives rated on a seven-point continuum\n2. Method of summated ratings\n3. Cumulative (scalogram) scaling\n4. Method of equal-appearing intervals using judges",
+    "q": "In Likert's method of summated ratings, a respondent's attitude score is obtained by:",
     "options": [
-     "A-1, B-4, C-3, D-2",
-     "A-2, B-3, C-4, D-1",
-     "A-2, B-4, C-3, D-1",
-     "A-4, B-2, C-1, D-3"
+     "Taking the median scale value of the statements that he endorses",
+     "Finding his position on a cumulative scale",
+     "Rating a concept on pairs of bipolar adjectives",
+     "Adding his scores on all the statements, each rated on a scale of agreement"
     ],
-    "explanation": "Likert's scale adds up item scores (summated ratings); Thurstone's items are scaled by judges on equal-appearing intervals; Guttman's scalogram is cumulative, so agreeing with a strong item implies agreeing with weaker ones; Osgood's semantic differential uses bipolar adjective pairs such as good–bad.",
+    "explanation": "Likert's scale adds up the item scores. Thurstone's items are scaled by judges, Guttman's scalogram is cumulative and Osgood's semantic differential uses bipolar adjectives such as good–bad.",
     "notes": [
-     "A-1, B-4, C-3, D-2: wrong — bipolar adjectives belong to the semantic differential, not the Likert scale.",
-     "A-2, B-3, C-4, D-1: wrong — it interchanges the Thurstone and Guttman methods.",
-     "A-2, B-4, C-3, D-1: correct.",
-     "A-4, B-2, C-1, D-3: wrong — it mismatches all four pairs."
+     "The median scale value is used in Thurstone's scale.",
+     "A cumulative scale is Guttman's scalogram.",
+     "Bipolar adjectives are used in Osgood's semantic differential.",
+     "Each statement is usually rated on five points from 'strongly agree' to 'strongly disagree'."
     ],
     "path": [
      "Research Aptitude",
@@ -290,19 +290,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (अभिवृत्ति मापनी) को सूची-II (विशेषता) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I:\nA. लिकर्ट मापनी\nB. थर्स्टन मापनी\nC. गटमैन मापनी\nD. शब्दार्थ विभेदक (सिमैंटिक डिफरेंशियल)\nसूची-II:\n1. सात-बिंदु सातत्य पर विपरीतार्थी विशेषण-युग्मों का मूल्यांकन\n2. संकलित निर्धारण (समेटेड रेटिंग) विधि\n3. संचयी (स्केलोग्राम) मापन\n4. निर्णायकों की सहायता से समान प्रतीयमान अंतराल विधि",
+    "q": "लिकर्ट की योगात्मक निर्धारण विधि में उत्तरदाता का अभिवृत्ति प्राप्तांक कैसे प्राप्त किया जाता है?",
     "options": [
-     "A-1, B-4, C-3, D-2",
-     "A-2, B-3, C-4, D-1",
-     "A-2, B-4, C-3, D-1",
-     "A-4, B-2, C-1, D-3"
+     "उसके द्वारा समर्थित कथनों के मापनी मानों की माध्यिका लेकर",
+     "संचयी मापनी पर उसकी स्थिति ज्ञात करके",
+     "किसी संप्रत्यय को द्विध्रुवीय विशेषण युग्मों पर आँककर",
+     "सहमति की मापनी पर आँके गए सभी कथनों पर उसके अंकों को जोड़कर"
     ],
-    "explanation": "लिकर्ट मापनी में पदों के अंक जोड़े जाते हैं (संकलित निर्धारण); थर्स्टन मापनी में निर्णायक पदों को समान प्रतीयमान अंतरालों पर स्थापित करते हैं; गटमैन का स्केलोग्राम संचयी है, अर्थात प्रबल कथन से सहमति दुर्बल कथनों से सहमति दर्शाती है; ऑसगुड का शब्दार्थ विभेदक अच्छा–बुरा जैसे विपरीतार्थी युग्मों का प्रयोग करता है।",
+    "explanation": "लिकर्ट मापनी पदों के प्राप्तांकों को जोड़ती है। थर्स्टन के पदों का मापन निर्णायक करते हैं, गटमैन का स्केलोग्राम संचयी है तथा ऑसगुड का शब्दार्थ विभेदक अच्छा–बुरा जैसे द्विध्रुवीय विशेषणों का प्रयोग करता है।",
     "notes": [
-     "A-1, B-4, C-3, D-2: गलत — विपरीतार्थी विशेषण शब्दार्थ विभेदक की विशेषता हैं, लिकर्ट की नहीं।",
-     "A-2, B-3, C-4, D-1: गलत — इसमें थर्स्टन और गटमैन की विधियाँ आपस में बदल दी गई हैं।",
-     "A-2, B-4, C-3, D-1: सही।",
-     "A-4, B-2, C-1, D-3: गलत — चारों युग्म असुमेलित हैं।"
+     "मापनी मानों की माध्यिका थर्स्टन की मापनी में ली जाती है।",
+     "संचयी मापनी गटमैन का स्केलोग्राम है।",
+     "द्विध्रुवीय विशेषण ऑसगुड के शब्दार्थ विभेदक में होते हैं।",
+     "प्रत्येक कथन प्रायः 'पूर्णतः सहमत' से 'पूर्णतः असहमत' तक पाँच बिंदुओं पर आँका जाता है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -326,22 +326,22 @@
   },
   {
    "id": "tra-data-006",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 0,
    "en": {
-    "q": "The sociometric technique, used to study the pattern of choices, attractions and rejections among the members of a group, was developed by:",
+    "q": "The sociometric technique developed by J. L. Moreno is used primarily to study:",
     "options": [
-     "J. L. Moreno",
-     "Rensis Likert",
-     "L. L. Thurstone",
-     "Charles E. Osgood"
+     "The pattern of choices and rejections among the members of a group",
+     "The attitude of an individual towards an issue",
+     "The level of intelligence of an individual",
+     "The achievement of a class in a school subject"
     ],
     "explanation": "Jacob L. Moreno developed sociometry; members of a group name the persons they would choose or reject, and the choices are drawn as a sociogram showing stars, isolates and cliques.",
     "notes": [
-     "J. L. Moreno: founder of sociometry; author of 'Who Shall Survive?' (1934).",
-     "Rensis Likert: developed the summated rating (Likert) attitude scale.",
-     "L. L. Thurstone: developed the equal-appearing interval attitude scale.",
-     "Charles E. Osgood: developed the semantic differential."
+     "The choices are drawn as a sociogram showing stars, isolates and cliques.",
+     "Attitudes are measured by attitude scales.",
+     "Intelligence is measured by intelligence tests.",
+     "Achievement is measured by achievement tests."
     ],
     "path": [
      "Research Aptitude",
@@ -355,19 +355,19 @@
     ]
    },
    "hi": {
-    "q": "किसी समूह के सदस्यों के बीच चयन, आकर्षण और अस्वीकृति के प्रतिरूप का अध्ययन करने वाली समाजमितीय (सोशियोमेट्रिक) तकनीक किसने विकसित की?",
+    "q": "जे. एल. मोरेनो द्वारा विकसित समाजमितीय तकनीक का प्रयोग मुख्यतः किसके अध्ययन के लिए होता है?",
     "options": [
-     "जे. एल. मोरेनो",
-     "रेन्सिस लिकर्ट",
-     "एल. एल. थर्स्टन",
-     "चार्ल्स ई. ऑसगुड"
+     "किसी समूह के सदस्यों के बीच चयन एवं अस्वीकृति का प्रतिरूप",
+     "किसी विषय के प्रति व्यक्ति की अभिवृत्ति",
+     "व्यक्ति की बुद्धि का स्तर",
+     "किसी विद्यालयी विषय में कक्षा की उपलब्धि"
     ],
     "explanation": "समाजमिति (सोशियोमेट्री) जैकब एल. मोरेनो ने विकसित की; समूह के सदस्य जिन व्यक्तियों को चुनना या अस्वीकार करना चाहते हैं उनके नाम बताते हैं, और इन चयनों को समाजालेख (सोशियोग्राम) में दर्शाया जाता है।",
     "notes": [
-     "जे. एल. मोरेनो: समाजमिति के प्रवर्तक; 'हू शैल सर्वाइव?' (1934) के लेखक।",
-     "रेन्सिस लिकर्ट: संकलित निर्धारण (लिकर्ट) अभिवृत्ति मापनी के विकासकर्ता।",
-     "एल. एल. थर्स्टन: समान प्रतीयमान अंतराल अभिवृत्ति मापनी के विकासकर्ता।",
-     "चार्ल्स ई. ऑसगुड: शब्दार्थ विभेदक के विकासकर्ता।"
+     "चयनों को समाजालेख (सोशियोग्राम) के रूप में दर्शाया जाता है, जो स्टार, एकाकी एवं गुट दिखाता है।",
+     "अभिवृत्तियाँ अभिवृत्ति मापनियों से मापी जाती हैं।",
+     "बुद्धि बुद्धि परीक्षणों से मापी जाती है।",
+     "उपलब्धि उपलब्धि परीक्षणों से मापी जाती है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -391,22 +391,22 @@
   },
   {
    "id": "tra-data-007",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 0,
    "en": {
-    "q": "With reference to a frequency polygon, consider the following statements:\n1. It can be drawn by joining the mid-points of the top sides of the consecutive rectangles of a histogram.\n2. Its two ends are joined to the x-axis at the mid-values of the zero-frequency classes placed just before the first class and just after the last class.\n3. It is drawn by plotting cumulative frequencies against the upper limits of the classes.\nWhich of the statements given above is/are correct?",
+    "q": "A frequency polygon can be drawn from a histogram by joining the:",
     "options": [
-     "1 and 2 only",
-     "2 and 3 only",
-     "1 and 3 only",
-     "1, 2 and 3"
+     "Mid-points of the tops of the consecutive rectangles",
+     "Upper right-hand corners of the rectangles",
+     "Cumulative frequencies of the classes",
+     "Lower class limits on the x-axis"
     ],
-    "explanation": "A frequency polygon joins the mid-points of the tops of the histogram's rectangles (i.e. class frequencies plotted against class marks), and is closed by meeting the x-axis at the mid-values of an empty class at each end. Plotting cumulative frequencies against upper class limits gives a 'less than' ogive, so statement 3 is wrong.",
+    "explanation": "A frequency polygon joins the mid-points of the tops of the histogram's rectangles and is closed by meeting the x-axis at the mid-values of an empty class at each end. Cumulative frequencies give an ogive.",
     "notes": [
-     "1 and 2 only: correct — statement 3 describes a 'less than' ogive.",
-     "2 and 3 only: wrong — statement 3 is false and statement 1 is omitted.",
-     "1 and 3 only: wrong — statement 3 is false and statement 2 is omitted.",
-     "1, 2 and 3: wrong — cumulative frequencies against upper limits give an ogive, not a frequency polygon."
+     "These points are the class frequencies plotted against the class marks.",
+     "This is not the way a frequency polygon is drawn.",
+     "Plotting cumulative frequencies gives an ogive.",
+     "The class limits lie on the base line and give no polygon."
     ],
     "path": [
      "Research Aptitude",
@@ -420,19 +420,19 @@
     ]
    },
    "hi": {
-    "q": "बारंबारता बहुभुज के संदर्भ में निम्नलिखित कथनों पर विचार कीजिए:\n1. इसे आयतचित्र के क्रमागत आयतों की ऊपरी भुजाओं के मध्य-बिंदुओं को मिलाकर बनाया जा सकता है।\n2. इसके दोनों सिरों को पहले वर्ग से ठीक पहले और अंतिम वर्ग के ठीक बाद रखे गए शून्य बारंबारता वाले वर्गों के मध्य-मानों पर x-अक्ष से मिलाया जाता है।\n3. इसे वर्गों की उच्च सीमाओं के सापेक्ष संचयी बारंबारताएँ अंकित करके बनाया जाता है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "q": "आयतचित्र से बारंबारता बहुभुज किन्हें मिलाकर बनाया जा सकता है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "केवल 1 और 3",
-     "1, 2 और 3"
+     "क्रमागत आयतों के शीर्षों के मध्य-बिंदुओं को",
+     "आयतों के ऊपरी दाएँ कोनों को",
+     "वर्गों की संचयी बारंबारताओं को",
+     "x-अक्ष पर निम्न वर्ग सीमाओं को"
     ],
-    "explanation": "बारंबारता बहुभुज आयतचित्र के आयतों के शीर्ष के मध्य-बिंदुओं को (अर्थात वर्ग-चिह्नों के सापेक्ष वर्ग-बारंबारताओं को) मिलाकर बनता है और दोनों सिरों पर एक-एक रिक्त वर्ग के मध्य-मान पर x-अक्ष से मिलाकर बंद किया जाता है। उच्च वर्ग-सीमाओं के सापेक्ष संचयी बारंबारताएँ अंकित करने से 'से कम' तोरण बनता है, अतः कथन 3 गलत है।",
+    "explanation": "बारंबारता बहुभुज आयतचित्र के आयतों के शीर्षों के मध्य-बिंदुओं को मिलाता है और दोनों सिरों पर एक-एक रिक्त वर्ग के मध्य मान पर x-अक्ष से मिलकर बंद होता है। संचयी बारंबारताओं से तोरण बनता है।",
     "notes": [
-     "केवल 1 और 2: सही — कथन 3 'से कम' तोरण का वर्णन है।",
-     "केवल 2 और 3: गलत — कथन 3 असत्य है और कथन 1 छूट गया है।",
-     "केवल 1 और 3: गलत — कथन 3 असत्य है और कथन 2 छूट गया है।",
-     "1, 2 और 3: गलत — उच्च सीमाओं के सापेक्ष संचयी बारंबारताओं से तोरण बनता है, बारंबारता बहुभुज नहीं।"
+     "ये बिंदु वर्ग चिह्नों के सापेक्ष अंकित वर्ग बारंबारताएँ हैं।",
+     "बारंबारता बहुभुज इस प्रकार नहीं बनाया जाता।",
+     "संचयी बारंबारताओं को अंकित करने से तोरण बनता है।",
+     "वर्ग सीमाएँ आधार रेखा पर होती हैं और उनसे बहुभुज नहीं बनता।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -454,22 +454,22 @@
   },
   {
    "id": "tra-data-008",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 3,
    "en": {
-    "q": "The numbers printed on the jerseys of football players are an example of which scale of measurement?",
+    "q": "The numbers on the jerseys of football players belong to the nominal scale primarily because they:",
     "options": [
-     "Ordinal scale",
-     "Interval scale",
-     "Ratio scale",
-     "Nominal scale"
+     "Show the rank of the players",
+     "Have equal intervals between them",
+     "Have a true zero point",
+     "Only identify the players and carry no order or quantity"
     ],
     "explanation": "Jersey numbers only identify or label players; they do not indicate order, distance or quantity, so they belong to the nominal scale.",
     "notes": [
-     "Ordinal scale: shows rank order, e.g. first, second, third in a race.",
-     "Interval scale: equal distances between values but no true zero, e.g. temperature in °C.",
-     "Ratio scale: equal intervals and a true zero, e.g. height, weight, income.",
-     "Nominal scale: numbers or names used only as labels for categories — correct."
+     "Showing rank would make the scale ordinal.",
+     "Equal intervals belong to the interval scale.",
+     "A true zero belongs to the ratio scale.",
+     "The numbers are mere labels."
     ],
     "path": [
      "Research Aptitude",
@@ -483,19 +483,19 @@
     ]
    },
    "hi": {
-    "q": "फुटबॉल खिलाड़ियों की जर्सी पर छपी संख्याएँ मापन के किस स्तर (मापनी) का उदाहरण हैं?",
+    "q": "फुटबॉल खिलाड़ियों की जर्सी की संख्याएँ नामित मापनी में मुख्यतः इसलिए आती हैं कि वे:",
     "options": [
-     "क्रमसूचक मापनी",
-     "अंतराल मापनी",
-     "अनुपात मापनी",
-     "नामित (नामसूचक) मापनी"
+     "खिलाड़ियों का क्रम दर्शाती हैं",
+     "उनके बीच समान अंतराल हैं",
+     "उनमें वास्तविक शून्य बिंदु है",
+     "केवल खिलाड़ियों की पहचान कराती हैं और कोई क्रम या मात्रा नहीं बतातीं"
     ],
     "explanation": "जर्सी की संख्याएँ केवल खिलाड़ियों की पहचान या नामकरण करती हैं; वे क्रम, दूरी या मात्रा नहीं बतातीं, अतः ये नामित मापनी के अंतर्गत आती हैं।",
     "notes": [
-     "क्रमसूचक मापनी: पद-क्रम बताती है, जैसे दौड़ में प्रथम, द्वितीय, तृतीय।",
-     "अंतराल मापनी: मानों के बीच समान दूरी, परंतु वास्तविक शून्य नहीं, जैसे °C में तापमान।",
-     "अनुपात मापनी: समान अंतराल तथा वास्तविक शून्य, जैसे ऊँचाई, भार, आय।",
-     "नामित मापनी: संख्याएँ या नाम केवल श्रेणियों के लेबल — सही उत्तर।"
+     "क्रम दर्शाने पर मापनी क्रमिक होती।",
+     "समान अंतराल अंतराल मापनी में होते हैं।",
+     "वास्तविक शून्य अनुपात मापनी में होता है।",
+     "ये संख्याएँ केवल नाम-पत्र हैं।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -523,19 +523,19 @@
    "level": "Higher",
    "answer": 1,
    "en": {
-    "q": "Match List-I (Scale of measurement) with List-II (Statistic that first becomes permissible at that level) and select the correct answer using the codes given below the lists:\nList-I:\nA. Nominal\nB. Ordinal\nC. Interval\nD. Ratio\nList-II:\n1. Coefficient of variation\n2. Mode\n3. Arithmetic mean\n4. Median",
+    "q": "The median can be used with ordinal data, while the arithmetic mean cannot, primarily because the median:",
     "options": [
-     "A-4, B-2, C-3, D-1",
-     "A-2, B-4, C-3, D-1",
-     "A-2, B-3, C-4, D-1",
-     "A-1, B-4, C-2, D-3"
+     "Needs a true zero point",
+     "Needs only the order of the observations, not equal intervals between them",
+     "Needs every value to be added up",
+     "Can be found only for nominal categories"
     ],
-    "explanation": "In Stevens' scheme the mode suits nominal data, the median and percentiles need at least ordinal data, the arithmetic mean and standard deviation need interval data, and the coefficient of variation (a ratio of SD to mean) needs a true zero, i.e. a ratio scale.",
+    "explanation": "The median depends only on the order of the observations, so it can be found for ordinal data. The arithmetic mean requires equal units and therefore needs at least an interval scale, while the mode suits nominal data.",
     "notes": [
-     "A-4, B-2, C-3, D-1: wrong — the median needs ordered data, so it cannot be the nominal-level statistic.",
-     "A-2, B-4, C-3, D-1: correct.",
-     "A-2, B-3, C-4, D-1: wrong — the mean needs equal intervals, so it is not an ordinal-level statistic.",
-     "A-1, B-4, C-2, D-3: wrong — the coefficient of variation needs a true zero, not just category labels."
+     "A true zero is needed for ratios, not for the median.",
+     "The mean needs equal units, which ordinal data lack.",
+     "Adding the values is required for the mean, not for the median.",
+     "Nominal categories have no order, so they have no median."
     ],
     "path": [
      "Research Aptitude",
@@ -549,19 +549,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (मापन का स्तर) को सूची-II (उस स्तर पर पहली बार अनुमेय होने वाला सांख्यिकीय माप) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I:\nA. नामित\nB. क्रमसूचक\nC. अंतराल\nD. अनुपात\nसूची-II:\n1. विचरण-गुणांक\n2. बहुलक\n3. समांतर माध्य\n4. माध्यिका",
+    "q": "माध्यिका का प्रयोग क्रमिक आँकड़ों पर हो सकता है, किंतु समांतर माध्य का नहीं; इसका मुख्य कारण यह है कि माध्यिका को:",
     "options": [
-     "A-4, B-2, C-3, D-1",
-     "A-2, B-4, C-3, D-1",
-     "A-2, B-3, C-4, D-1",
-     "A-1, B-4, C-2, D-3"
+     "वास्तविक शून्य बिंदु चाहिए",
+     "केवल प्रेक्षणों का क्रम चाहिए, उनके बीच समान अंतराल नहीं",
+     "प्रत्येक मान का योग चाहिए",
+     "केवल नामित श्रेणियों के लिए ज्ञात किया जा सकता है"
     ],
-    "explanation": "स्टीवेंस की योजना में बहुलक नामित आँकड़ों के लिए, माध्यिका व शततमक कम-से-कम क्रमसूचक आँकड़ों के लिए, समांतर माध्य व मानक विचलन अंतराल आँकड़ों के लिए, तथा विचरण-गुणांक (मानक विचलन और माध्य का अनुपात) वास्तविक शून्य वाली अनुपात मापनी के लिए उपयुक्त है।",
+    "explanation": "माध्यिका केवल प्रेक्षणों के क्रम पर निर्भर है, अतः यह क्रमिक आँकड़ों के लिए ज्ञात की जा सकती है। समांतर माध्य को समान इकाइयाँ चाहिए, अतः उसे कम से कम अंतराल मापनी चाहिए, जबकि बहुलक नामित आँकड़ों के लिए उपयुक्त है।",
     "notes": [
-     "A-4, B-2, C-3, D-1: गलत — माध्यिका के लिए क्रमबद्ध आँकड़े चाहिए, अतः यह नामित स्तर का माप नहीं।",
-     "A-2, B-4, C-3, D-1: सही।",
-     "A-2, B-3, C-4, D-1: गलत — माध्य के लिए समान अंतराल चाहिए, अतः यह क्रमसूचक स्तर का माप नहीं।",
-     "A-1, B-4, C-2, D-3: गलत — विचरण-गुणांक के लिए वास्तविक शून्य आवश्यक है, केवल श्रेणी-लेबल पर्याप्त नहीं।"
+     "वास्तविक शून्य अनुपातों के लिए चाहिए, माध्यिका के लिए नहीं।",
+     "माध्य को समान इकाइयाँ चाहिए, जो क्रमिक आँकड़ों में नहीं होतीं।",
+     "मानों का योग माध्य के लिए चाहिए, माध्यिका के लिए नहीं।",
+     "नामित श्रेणियों में क्रम नहीं होता, अतः उनकी माध्यिका नहीं होती।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -571,7 +571,7 @@
     ],
     "facts": [
      "निचले स्तर पर अनुमेय प्रत्येक माप उच्च स्तरों पर भी अनुमेय होता है।",
-     "काई-वर्ग जैसे अप्राचलिक परीक्षण नामित व क्रमसूचक आँकड़ों हेतु उपयुक्त हैं।"
+     "काई-वर्ग जैसे अप्राचलिक परीक्षण नामित व क्रमिक आँकड़ों हेतु उपयुक्त हैं।"
     ]
    },
    "refs": [
@@ -583,22 +583,22 @@
   },
   {
    "id": "tra-data-010",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 2,
    "en": {
-    "q": "Consider the following statements:\n1. Temperature measured in degrees Celsius is on an interval scale.\n2. A ratio scale has a true (absolute) zero point.\n3. Ranks in a merit list are on an ordinal scale.\n4. On an interval scale, a reading of 40 can be said to be twice as much as a reading of 20.\nWhich of the statements given above are correct?",
+    "q": "A temperature of 40°C cannot be called 'twice as hot' as 20°C because the Celsius scale:",
     "options": [
-     "1 and 2 only",
-     "2 and 4 only",
-     "1, 2 and 3 only",
-     "1, 2, 3 and 4"
+     "Has unequal units",
+     "Is an ordinal scale",
+     "Has an arbitrary zero point",
+     "Is a ratio scale"
     ],
-    "explanation": "The Celsius scale has equal units but an arbitrary zero, so it is an interval scale; for the same reason ratios such as 'twice as much' are not meaningful on it (statement 4 is wrong). Ratio scales have a true zero, and merit ranks show only order.",
+    "explanation": "The Celsius scale has equal units but an arbitrary zero, so it is an interval scale and ratios are not meaningful on it. A ratio scale, such as the Kelvin scale, has a true zero.",
     "notes": [
-     "1 and 2 only: incomplete, because statement 3 is also correct.",
-     "2 and 4 only: wrong — statement 4 is false and statements 1 and 3 are omitted.",
-     "1, 2 and 3 only: correct.",
-     "1, 2, 3 and 4: wrong — ratios are not meaningful on an interval scale (40 °C is not twice as hot as 20 °C)."
+     "Its units are equal.",
+     "It gives more than the order of the readings; it is an interval scale.",
+     "Ratios are meaningful only when the zero is a true zero.",
+     "A ratio scale would have allowed such a comparison."
     ],
     "path": [
      "Research Aptitude",
@@ -612,19 +612,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. डिग्री सेल्सियस में मापा गया तापमान अंतराल मापनी पर होता है।\n2. अनुपात मापनी में वास्तविक (निरपेक्ष) शून्य बिंदु होता है।\n3. योग्यता-सूची में दिए गए पद (रैंक) क्रमसूचक मापनी पर होते हैं।\n4. अंतराल मापनी पर 40 के पाठ्यांक को 20 के पाठ्यांक का दोगुना कहा जा सकता है।\nउपर्युक्त में से कौन-से कथन सही हैं?",
+    "q": "40°C तापमान को 20°C से 'दुगुना गर्म' नहीं कहा जा सकता, क्योंकि सेल्सियस मापनी:",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 4",
-     "केवल 1, 2 और 3",
-     "1, 2, 3 और 4"
+     "की इकाइयाँ असमान हैं",
+     "क्रमिक मापनी है",
+     "का शून्य बिंदु स्वेच्छ (कल्पित) है",
+     "अनुपात मापनी है"
     ],
-    "explanation": "सेल्सियस मापनी की इकाइयाँ समान हैं परंतु शून्य मनमाना है, अतः यह अंतराल मापनी है; इसी कारण इस पर 'दोगुना' जैसे अनुपात सार्थक नहीं हैं (कथन 4 गलत)। अनुपात मापनी में वास्तविक शून्य होता है और योग्यता-क्रम केवल क्रम दर्शाता है।",
+    "explanation": "सेल्सियस मापनी की इकाइयाँ समान हैं, किंतु शून्य स्वेच्छ है, अतः यह अंतराल मापनी है और इस पर अनुपात सार्थक नहीं होते। केल्विन जैसी अनुपात मापनी में वास्तविक शून्य होता है।",
     "notes": [
-     "केवल 1 और 2: अपूर्ण, क्योंकि कथन 3 भी सही है।",
-     "केवल 2 और 4: गलत — कथन 4 असत्य है तथा कथन 1 और 3 छूट गए हैं।",
-     "केवल 1, 2 और 3: सही।",
-     "1, 2, 3 और 4: गलत — अंतराल मापनी पर अनुपात सार्थक नहीं (40 °C, 20 °C से दोगुना गर्म नहीं)।"
+     "इसकी इकाइयाँ समान हैं।",
+     "यह पाठ्यांकों के क्रम से अधिक सूचना देती है; यह अंतराल मापनी है।",
+     "अनुपात तभी सार्थक होते हैं, जब शून्य वास्तविक शून्य हो।",
+     "अनुपात मापनी होती तो ऐसी तुलना संभव होती।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -649,22 +649,22 @@
   },
   {
    "id": "tra-data-011",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 3,
    "en": {
-    "q": "The classification of scales of measurement into nominal, ordinal, interval and ratio was proposed by:",
+    "q": "S. S. Stevens' classification of the scales of measurement (1946) is important primarily because it:",
     "options": [
-     "Karl Pearson",
-     "Charles Spearman",
-     "Francis Galton",
-     "S. S. Stevens"
+     "Replaced statistics with qualitative description",
+     "Showed that all kinds of data can be averaged",
+     "Proved that measurement is impossible in psychology",
+     "Links each level of measurement with the statistics that may properly be used on it"
     ],
     "explanation": "The American psychologist Stanley Smith Stevens set out the four levels of measurement, with the statistics permissible at each, in his 1946 paper 'On the Theory of Scales of Measurement' in Science.",
     "notes": [
-     "Karl Pearson: known for the product-moment correlation coefficient and the chi-square test.",
-     "Charles Spearman: known for rank correlation and the two-factor theory of intelligence.",
-     "Francis Galton: pioneer of correlation and regression and of the study of individual differences.",
-     "S. S. Stevens: proposed the nominal–ordinal–interval–ratio classification (1946)."
+     "Stevens did not reject statistics.",
+     "He showed that not every statistic suits every kind of data.",
+     "He extended, not denied, measurement in psychology.",
+     "For example, the mode suits nominal data and the mean needs interval data."
     ],
     "path": [
      "Research Aptitude",
@@ -678,19 +678,19 @@
     ]
    },
    "hi": {
-    "q": "मापन के स्तरों का नामित, क्रमसूचक, अंतराल और अनुपात में वर्गीकरण किसने प्रस्तुत किया?",
+    "q": "एस. एस. स्टीवेंस द्वारा किया गया मापन के स्तरों का वर्गीकरण (1946) मुख्यतः किस कारण महत्वपूर्ण है?",
     "options": [
-     "कार्ल पियर्सन",
-     "चार्ल्स स्पीयरमैन",
-     "फ्रांसिस गाल्टन",
-     "एस. एस. स्टीवेंस"
+     "इसने सांख्यिकी के स्थान पर गुणात्मक वर्णन रखा",
+     "इसने दिखाया कि सभी प्रकार के आँकड़ों का औसत निकाला जा सकता है",
+     "इसने सिद्ध किया कि मनोविज्ञान में मापन असंभव है",
+     "यह मापन के प्रत्येक स्तर को उस पर उचित रूप से प्रयोज्य सांख्यिकी से जोड़ता है"
     ],
     "explanation": "अमेरिकी मनोवैज्ञानिक स्टैनली स्मिथ स्टीवेंस ने 1946 में 'साइंस' पत्रिका में प्रकाशित लेख 'ऑन द थ्योरी ऑफ़ स्केल्स ऑफ़ मेज़रमेंट' में मापन के चार स्तर तथा प्रत्येक पर अनुमेय सांख्यिकी प्रस्तुत की।",
     "notes": [
-     "कार्ल पियर्सन: गुणनफल-आघूर्ण सहसंबंध गुणांक और काई-वर्ग परीक्षण के लिए प्रसिद्ध।",
-     "चार्ल्स स्पीयरमैन: कोटि (रैंक) सहसंबंध तथा बुद्धि के द्विकारक सिद्धांत के लिए प्रसिद्ध।",
-     "फ्रांसिस गाल्टन: सहसंबंध व प्रतीपगमन तथा व्यक्तिगत भिन्नताओं के अध्ययन के अग्रदूत।",
-     "एस. एस. स्टीवेंस: नामित–क्रमसूचक–अंतराल–अनुपात वर्गीकरण के प्रस्तावक (1946)।"
+     "स्टीवेंस ने सांख्यिकी को अस्वीकार नहीं किया।",
+     "उन्होंने दिखाया कि प्रत्येक सांख्यिकी हर प्रकार के आँकड़ों के लिए उपयुक्त नहीं है।",
+     "उन्होंने मनोविज्ञान में मापन को नकारा नहीं, विस्तार दिया।",
+     "उदाहरणार्थ, बहुलक नामित आँकड़ों के लिए उपयुक्त है और माध्य के लिए अंतराल आँकड़े चाहिए।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -712,22 +712,22 @@
   },
   {
    "id": "tra-data-012",
-   "level": "PGT",
-   "answer": 1,
+   "level": "Higher",
+   "answer": 0,
    "en": {
-    "q": "Consider the following statements:\n1. The number of children in a family is a discrete variable.\n2. The height of students is a continuous variable.\n3. The religion of respondents is a quantitative variable.\nWhich of the statements given above is/are correct?",
+    "q": "The number of children in a family is treated as a discrete variable primarily because it:",
     "options": [
-     "Only 1",
-     "1 and 2 only",
-     "2 and 3 only",
-     "1, 2 and 3"
+     "Can take only separate whole-number values",
+     "Can take any value within a range",
+     "Describes a quality and not a quantity",
+     "Never changes from one family to another"
     ],
-    "explanation": "A discrete variable takes only separate (usually whole-number) values, like the number of children; a continuous variable can take any value within a range, like height. Religion is an attribute that can only be classified, not measured, so it is qualitative.",
+    "explanation": "A discrete variable takes only separate, usually whole-number, values, like the number of children. A continuous variable, like height, can take any value within a range. Religion is a qualitative attribute.",
     "notes": [
-     "Only 1: incomplete, because statement 2 is also correct.",
-     "1 and 2 only: correct.",
-     "2 and 3 only: wrong — statement 3 is false and statement 1 is omitted.",
-     "1, 2 and 3: wrong — religion is a qualitative attribute, not a quantitative variable."
+     "A family cannot have 2.5 children.",
+     "A variable that takes any value in a range, such as height, is continuous.",
+     "A quality such as religion is an attribute.",
+     "A quantity that never changes is a constant."
     ],
     "path": [
      "Research Aptitude",
@@ -741,19 +741,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित कथनों पर विचार कीजिए:\n1. किसी परिवार में बच्चों की संख्या एक विविक्त (असतत) चर है।\n2. विद्यार्थियों की ऊँचाई एक सतत (संतत) चर है।\n3. उत्तरदाताओं का धर्म एक मात्रात्मक चर है।\nउपर्युक्त में से कौन-सा/से कथन सही है/हैं?",
+    "q": "परिवार में बच्चों की संख्या को विविक्त चर मुख्यतः इसलिए माना जाता है कि वह:",
     "options": [
-     "केवल 1",
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "1, 2 और 3"
+     "केवल पृथक पूर्णांक मान ले सकती है",
+     "किसी परास के भीतर कोई भी मान ले सकती है",
+     "मात्रा नहीं, गुण का वर्णन करती है",
+     "एक परिवार से दूसरे परिवार में कभी नहीं बदलती"
     ],
-    "explanation": "विविक्त चर केवल पृथक (प्रायः पूर्णांक) मान लेता है, जैसे बच्चों की संख्या; सतत चर किसी परास में कोई भी मान ले सकता है, जैसे ऊँचाई। धर्म एक गुण है जिसका केवल वर्गीकरण हो सकता है, मापन नहीं, अतः यह गुणात्मक है।",
+    "explanation": "विविक्त चर केवल पृथक, प्रायः पूर्ण संख्या वाले मान लेता है, जैसे बच्चों की संख्या। ऊँचाई जैसा सतत चर किसी परास के भीतर कोई भी मान ले सकता है। धर्म गुणात्मक गुण है।",
     "notes": [
-     "केवल 1: अपूर्ण, क्योंकि कथन 2 भी सही है।",
-     "केवल 1 और 2: सही।",
-     "केवल 2 और 3: गलत — कथन 3 असत्य है और कथन 1 छूट गया है।",
-     "1, 2 और 3: गलत — धर्म गुणात्मक लक्षण है, मात्रात्मक चर नहीं।"
+     "किसी परिवार में 2.5 बच्चे नहीं हो सकते।",
+     "परास में कोई भी मान लेने वाला चर, जैसे ऊँचाई, सतत होता है।",
+     "धर्म जैसा गुण गुणात्मक गुण (एट्रिब्यूट) है।",
+     "कभी न बदलने वाली मात्रा अचर है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -778,21 +778,21 @@
   {
    "id": "tra-data-013",
    "level": "Higher",
-   "answer": 0,
+   "answer": 2,
    "en": {
-    "q": "Arrange the following scales of measurement in increasing order of the information they convey (lowest level first) and select the correct answer using the codes given below:\n1. Interval\n2. Nominal\n3. Ratio\n4. Ordinal",
+    "q": "Converting pupils' marks into class ranks primarily illustrates that:",
     "options": [
-     "2, 4, 1, 3",
-     "4, 2, 1, 3",
-     "2, 1, 4, 3",
-     "2, 4, 3, 1"
+     "Ranks carry more information than the marks they replace",
+     "Ranking changes ordinal data into interval data",
+     "Data can be moved down from a higher level of measurement to a lower one, but not back up",
+     "Ranks possess a true zero point"
     ],
-    "explanation": "Nominal data only name categories; ordinal data add order; interval data add equal units; ratio data add a true zero. Each level keeps the properties of the one below and adds one more.",
+    "explanation": "Marks are usually treated as interval data. Ranks keep only the order of the pupils and drop the size of the differences between them, so they are ordinal data. Measurement at a higher level can always be reduced to a lower level, but the information lost cannot be restored, so ranks cannot be turned back into marks.",
     "notes": [
-     "2, 4, 1, 3: correct — nominal, ordinal, interval, ratio.",
-     "4, 2, 1, 3: wrong — the ordinal scale contains more information than the nominal scale.",
-     "2, 1, 4, 3: wrong — the interval scale is above the ordinal scale.",
-     "2, 4, 3, 1: wrong — the ratio scale, with a true zero, is the highest level."
+     "Ranks drop the size of the gaps between marks, so information is lost.",
+     "The change runs the other way: ranks are ordinal data.",
+     "The original marks cannot be recovered from the ranks alone.",
+     "Ranks have no true zero; a true zero belongs to the ratio scale."
     ],
     "path": [
      "Research Aptitude",
@@ -806,19 +806,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित मापन-स्तरों को उनके द्वारा दी जाने वाली सूचना के बढ़ते क्रम में (निम्नतम स्तर पहले) व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. अंतराल\n2. नामित\n3. अनुपात\n4. क्रमसूचक",
+    "q": "विद्यार्थियों के प्राप्तांकों को कक्षा में कोटियों (रैंक) में बदलना मुख्यतः क्या दर्शाता है?",
     "options": [
-     "2, 4, 1, 3",
-     "4, 2, 1, 3",
-     "2, 1, 4, 3",
-     "2, 4, 3, 1"
+     "कोटियों में उन प्राप्तांकों से अधिक सूचना होती है, जिनका वे स्थान लेती हैं",
+     "कोटि देने से क्रमिक आँकड़े अंतराल आँकड़ों में बदल जाते हैं",
+     "आँकड़ों को मापन के उच्च स्तर से निम्न स्तर पर लाया जा सकता है, किंतु निम्न से उच्च स्तर पर नहीं",
+     "कोटियों में वास्तविक शून्य बिंदु होता है"
     ],
-    "explanation": "नामित आँकड़े केवल श्रेणियों के नाम देते हैं; क्रमसूचक इनमें क्रम जोड़ते हैं; अंतराल आँकड़े समान इकाइयाँ जोड़ते हैं; अनुपात आँकड़े वास्तविक शून्य जोड़ते हैं। प्रत्येक स्तर निचले स्तर के गुण रखते हुए एक नया गुण जोड़ता है।",
+    "explanation": "प्राप्तांकों को सामान्यतः अंतराल आँकड़े माना जाता है। कोटियाँ केवल विद्यार्थियों का क्रम बनाए रखती हैं और उनके बीच के अंतरों का परिमाण छोड़ देती हैं, अतः वे क्रमिक आँकड़े हैं। उच्च स्तर के मापन को सदैव निम्न स्तर पर लाया जा सकता है, किंतु खोई हुई सूचना वापस नहीं मिलती, इसलिए कोटियों को पुनः प्राप्तांकों में नहीं बदला जा सकता।",
     "notes": [
-     "2, 4, 1, 3: सही — नामित, क्रमसूचक, अंतराल, अनुपात।",
-     "4, 2, 1, 3: गलत — क्रमसूचक मापनी नामित से अधिक सूचना देती है।",
-     "2, 1, 4, 3: गलत — अंतराल मापनी क्रमसूचक से ऊपर है।",
-     "2, 4, 3, 1: गलत — वास्तविक शून्य वाली अनुपात मापनी सर्वोच्च स्तर है।"
+     "कोटियों में प्राप्तांकों के अंतरों का परिमाण छूट जाता है, अतः सूचना घटती है।",
+     "परिवर्तन उल्टी दिशा में होता है: कोटियाँ क्रमिक आँकड़े हैं।",
+     "केवल कोटियों से मूल प्राप्तांक पुनः प्राप्त नहीं किए जा सकते।",
+     "कोटियों में वास्तविक शून्य नहीं होता; वास्तविक शून्य अनुपात मापनी का गुण है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -840,7 +840,7 @@
   },
   {
    "id": "tra-data-014",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 3,
    "en": {
     "q": "Which one of the following statements about secondary data is NOT correct?",
@@ -906,22 +906,22 @@
   },
   {
    "id": "tra-data-015",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 1,
    "en": {
-    "q": "In a grouped frequency distribution, the value (Upper class limit + Lower class limit) ÷ 2, which represents the class in further calculations, is called the:",
+    "q": "In a grouped frequency distribution, the class mark is used in calculating the mean primarily because it:",
     "options": [
-     "Class interval",
-     "Class mark",
-     "Class frequency",
-     "Class limit"
+     "Is the largest value of the class",
+     "Is taken to represent all the observations of that class",
+     "Shows the number of observations in the class",
+     "Marks the boundary between two classes"
     ],
     "explanation": "The class mark (class mid-point) lies halfway between the two limits of a class; once data are grouped, it stands for all the observations of that class in further calculations such as the mean.",
     "notes": [
-     "Class interval: the width of a class, i.e. upper class limit minus lower class limit.",
-     "Class mark: the mid-value of a class, used to represent it in calculations — correct.",
-     "Class frequency: the number of observations falling in a class.",
-     "Class limits: the two end values (lower and upper) that define a class."
+     "The largest value of a class is its upper limit.",
+     "The individual values are lost once the data are grouped.",
+     "The number of observations is the class frequency.",
+     "The boundary between classes is a class limit."
     ],
     "path": [
      "Research Aptitude",
@@ -935,19 +935,19 @@
     ]
    },
    "hi": {
-    "q": "किसी वर्गीकृत बारंबारता बंटन में (उच्च वर्ग-सीमा + निम्न वर्ग-सीमा) ÷ 2 का मान, जो आगे की गणनाओं में वर्ग का प्रतिनिधित्व करता है, कहलाता है:",
+    "q": "वर्गीकृत बारंबारता बंटन में माध्य की गणना में वर्ग-चिह्न का प्रयोग मुख्यतः इसलिए किया जाता है कि वह:",
     "options": [
-     "वर्गांतर",
-     "वर्ग-चिह्न (मध्य-बिंदु)",
-     "वर्ग-बारंबारता",
-     "वर्ग-सीमा"
+     "वर्ग का सबसे बड़ा मान है",
+     "उस वर्ग के सभी प्रेक्षणों का प्रतिनिधि माना जाता है",
+     "वर्ग में प्रेक्षणों की संख्या बताता है",
+     "दो वर्गों के बीच की सीमा बताता है"
     ],
     "explanation": "वर्ग-चिह्न (वर्ग का मध्य-बिंदु) वर्ग की दोनों सीमाओं के ठीक बीच में होता है; आँकड़ों के वर्गीकरण के बाद माध्य आदि की गणना में यही उस वर्ग के सभी प्रेक्षणों का प्रतिनिधित्व करता है।",
     "notes": [
-     "वर्गांतर: वर्ग की चौड़ाई, अर्थात उच्च वर्ग-सीमा − निम्न वर्ग-सीमा।",
-     "वर्ग-चिह्न: वर्ग का मध्य-मान, जो गणनाओं में वर्ग का प्रतिनिधित्व करता है — सही उत्तर।",
-     "वर्ग-बारंबारता: किसी वर्ग में आने वाले प्रेक्षणों की संख्या।",
-     "वर्ग-सीमाएँ: वर्ग को परिभाषित करने वाले दो छोर-मान (निम्न और उच्च)।"
+     "वर्ग का सबसे बड़ा मान उसकी उच्च सीमा है।",
+     "आँकड़ों के वर्गीकरण के बाद वैयक्तिक मान ज्ञात नहीं रहते।",
+     "प्रेक्षणों की संख्या वर्ग-बारंबारता है।",
+     "वर्गों के बीच की सीमा वर्ग-सीमा है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -969,22 +969,22 @@
   },
   {
    "id": "tra-data-016",
-   "level": "PGT",
-   "answer": 3,
+   "level": "Higher",
+   "answer": 1,
    "en": {
-    "q": "Match List-I (Part of a table) with List-II (Description) and select the correct answer using the codes given below the lists:\nList-I:\nA. Caption\nB. Stub\nC. Body\nD. Source note\nList-II:\n1. States the origin from which the data were obtained\n2. Headings of the rows\n3. Headings of the columns\n4. Contains the numerical figures of the table",
+    "q": "In a statistical table, 'stubs' differ from 'captions' primarily in that stubs are the headings of:",
     "options": [
-     "A-2, B-3, C-4, D-1",
-     "A-3, B-2, C-1, D-4",
-     "A-4, B-2, C-3, D-1",
-     "A-3, B-2, C-4, D-1"
+     "The columns of the table",
+     "The rows of the table",
+     "The table as a whole",
+     "The footnotes of the table"
     ],
-    "explanation": "Captions head the columns and stubs head the rows; the body is the main part holding the figures; the source note at the foot names the publication or agency from which the data were taken.",
+    "explanation": "Captions head the columns and stubs head the rows. The body is the main part holding the figures, and the source note at the foot names the origin of the data.",
     "notes": [
-     "A-2, B-3, C-4, D-1: wrong — it interchanges caption and stub.",
-     "A-3, B-2, C-1, D-4: wrong — it interchanges body and source note.",
-     "A-4, B-2, C-3, D-1: wrong — the caption is a column heading, not the figures.",
-     "A-3, B-2, C-4, D-1: correct."
+     "Column headings are called captions.",
+     "Stubs are placed at the left of the rows.",
+     "The heading of the whole table is its title.",
+     "Footnotes have no stubs."
     ],
     "path": [
      "Research Aptitude",
@@ -998,19 +998,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (सारणी का भाग) को सूची-II (विवरण) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I:\nA. स्तंभ-शीर्षक (कैप्शन)\nB. पंक्ति-शीर्षक (स्टब)\nC. सारणी का मुख्य भाग (बॉडी)\nD. स्रोत-टिप्पणी\nसूची-II:\n1. वह स्रोत बताती है जहाँ से आँकड़े प्राप्त किए गए\n2. पंक्तियों के शीर्षक\n3. स्तंभों के शीर्षक\n4. सारणी के संख्यात्मक आँकड़े इसमें होते हैं",
+    "q": "सांख्यिकीय सारणी में 'अवशीर्ष (स्टब)' 'उपशीर्षक (कैप्शन)' से मुख्यतः इस बात में भिन्न हैं कि अवशीर्ष किसके शीर्षक हैं?",
     "options": [
-     "A-2, B-3, C-4, D-1",
-     "A-3, B-2, C-1, D-4",
-     "A-4, B-2, C-3, D-1",
-     "A-3, B-2, C-4, D-1"
+     "सारणी के स्तंभों के",
+     "सारणी की पंक्तियों के",
+     "संपूर्ण सारणी के",
+     "सारणी की पाद-टिप्पणियों के"
     ],
-    "explanation": "कैप्शन स्तंभों के और स्टब पंक्तियों के शीर्षक हैं; मुख्य भाग (बॉडी) में आँकड़े होते हैं; नीचे दी गई स्रोत-टिप्पणी उस प्रकाशन या संस्था का नाम बताती है जहाँ से आँकड़े लिए गए।",
+    "explanation": "उपशीर्षक स्तंभों के तथा अवशीर्ष पंक्तियों के शीर्षक होते हैं। मुख्य भाग में आँकड़े होते हैं तथा नीचे दी गई स्रोत टिप्पणी आँकड़ों का उद्गम बताती है।",
     "notes": [
-     "A-2, B-3, C-4, D-1: गलत — इसमें कैप्शन और स्टब आपस में बदल दिए गए हैं।",
-     "A-3, B-2, C-1, D-4: गलत — इसमें मुख्य भाग और स्रोत-टिप्पणी बदल दिए गए हैं।",
-     "A-4, B-2, C-3, D-1: गलत — कैप्शन स्तंभ-शीर्षक है, आँकड़े नहीं।",
-     "A-3, B-2, C-4, D-1: सही।"
+     "स्तंभों के शीर्षक उपशीर्षक (कैप्शन) कहलाते हैं।",
+     "अवशीर्ष पंक्तियों के बाईं ओर होते हैं।",
+     "संपूर्ण सारणी का शीर्षक उसका शीर्षक (टाइटल) है।",
+     "पाद-टिप्पणियों के अवशीर्ष नहीं होते।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1032,22 +1032,22 @@
   },
   {
    "id": "tra-data-017",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 3,
    "en": {
-    "q": "Which one of the following graphs represents a continuous frequency distribution by adjacent rectangles whose areas are proportional to the class frequencies?",
+    "q": "A histogram differs from a bar diagram primarily in that:",
     "options": [
-     "Bar diagram",
-     "Pie diagram",
-     "Ogive",
-     "Histogram"
+     "It is used only for qualitative data",
+     "Its bars are always of equal height",
+     "It shows the parts of a whole as sectors",
+     "Its rectangles are adjacent, with areas proportional to the class frequencies of a continuous distribution"
     ],
     "explanation": "A histogram is drawn for a continuous frequency distribution: class intervals are marked on the x-axis and rectangles are erected on them with no gaps, the area of each rectangle being proportional to the frequency of its class.",
     "notes": [
-     "Bar diagram: separate bars of equal width with gaps, used mainly for categorical or discrete data.",
-     "Pie diagram: a circle divided into sectors showing component parts of a whole.",
-     "Ogive: a cumulative frequency curve.",
-     "Histogram: adjacent rectangles for a continuous series — correct."
+     "A histogram is drawn for quantitative, continuous data.",
+     "The heights vary with the frequencies.",
+     "Sectors of a whole are shown by a pie diagram.",
+     "There are no gaps between the rectangles."
     ],
     "path": [
      "Research Aptitude",
@@ -1061,19 +1061,19 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित में से कौन-सा आलेख किसी सतत बारंबारता बंटन को ऐसे सटे हुए आयतों द्वारा दर्शाता है जिनके क्षेत्रफल वर्ग-बारंबारताओं के समानुपाती होते हैं?",
+    "q": "आयतचित्र (हिस्टोग्राम) दंड आरेख से मुख्यतः किस बात में भिन्न है?",
     "options": [
-     "दंड आरेख",
-     "वृत्त (पाई) आरेख",
-     "तोरण (ओजाइव)",
-     "आयतचित्र (हिस्टोग्राम)"
+     "इसका प्रयोग केवल गुणात्मक आँकड़ों के लिए होता है",
+     "इसके दंड सदैव समान ऊँचाई के होते हैं",
+     "यह संपूर्ण के भागों को त्रिज्यखंडों के रूप में दर्शाता है",
+     "इसके आयत संलग्न होते हैं और उनके क्षेत्रफल सतत बंटन की वर्ग बारंबारताओं के समानुपाती होते हैं"
     ],
     "explanation": "आयतचित्र सतत बारंबारता बंटन के लिए बनाया जाता है: x-अक्ष पर वर्गांतर अंकित कर उन पर बिना अंतराल के आयत खड़े किए जाते हैं, जिनका क्षेत्रफल संबंधित वर्ग की बारंबारता के समानुपाती होता है।",
     "notes": [
-     "दंड आरेख: बीच में अंतराल वाले समान चौड़ाई के अलग दंड, मुख्यतः श्रेणीगत या विविक्त आँकड़ों हेतु।",
-     "वृत्त आरेख: किसी समग्र के घटक भागों को त्रिज्यखंडों में दर्शाने वाला वृत्त।",
-     "तोरण: संचयी बारंबारता वक्र।",
-     "आयतचित्र: सतत श्रेणी हेतु सटे हुए आयत — सही उत्तर।"
+     "आयतचित्र मात्रात्मक, सतत आँकड़ों के लिए खींचा जाता है।",
+     "ऊँचाइयाँ बारंबारताओं के अनुसार बदलती हैं।",
+     "संपूर्ण के त्रिज्यखंड वृत्त आरेख दर्शाता है।",
+     "आयतों के बीच कोई रिक्त स्थान नहीं होता।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1095,22 +1095,22 @@
   },
   {
    "id": "tra-data-018",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 0,
    "en": {
-    "q": "When the 'less than' and 'more than' ogives of a frequency distribution are drawn on the same graph, the x-coordinate of their point of intersection gives the:",
+    "q": "The 'less than' and 'more than' ogives of a distribution intersect at the median primarily because at that point:",
     "options": [
-     "Median",
-     "Arithmetic mean",
-     "Mode",
-     "Quartile deviation"
+     "The number of observations below the value equals the number above it",
+     "The frequency is the highest",
+     "The deviations from the mean add up to zero",
+     "The two curves have the same slope"
     ],
     "explanation": "At the point where the two cumulative frequency curves cross, the number of items below a value equals the number above it, i.e. N/2 on each side; that value is the median.",
     "notes": [
-     "Median: read from the intersection of the two ogives — correct.",
-     "Arithmetic mean: computed algebraically; it cannot be read from ogives.",
-     "Mode: located graphically from a histogram.",
-     "Quartile deviation: needs Q1 and Q3, which are read from an ogive at N/4 and 3N/4, not from the intersection."
+     "Each side has N/2 observations.",
+     "The highest frequency locates the mode.",
+     "Deviations adding up to zero is a property of the mean.",
+     "The slopes of the curves are not the reason."
     ],
     "path": [
      "Research Aptitude",
@@ -1124,19 +1124,19 @@
     ]
    },
    "hi": {
-    "q": "किसी बारंबारता बंटन के 'से कम' और 'से अधिक' तोरण (ओजाइव) एक ही आलेख पर खींचने पर उनके प्रतिच्छेद बिंदु का x-निर्देशांक क्या देता है?",
+    "q": "किसी बंटन के 'से कम' एवं 'से अधिक' तोरण माध्यिका पर मुख्यतः इसलिए प्रतिच्छेद करते हैं कि उस बिंदु पर:",
     "options": [
-     "माध्यिका",
-     "समांतर माध्य",
-     "बहुलक",
-     "चतुर्थक विचलन"
+     "उस मान से नीचे के प्रेक्षणों की संख्या उससे ऊपर के प्रेक्षणों की संख्या के बराबर होती है",
+     "बारंबारता सर्वाधिक होती है",
+     "माध्य से विचलनों का योग शून्य होता है",
+     "दोनों वक्रों की ढाल समान होती है"
     ],
     "explanation": "जहाँ दोनों संचयी बारंबारता वक्र एक-दूसरे को काटते हैं, वहाँ उस मान से नीचे और ऊपर पदों की संख्या बराबर (दोनों ओर N/2) होती है; वही मान माध्यिका है।",
     "notes": [
-     "माध्यिका: दोनों तोरणों के प्रतिच्छेद से प्राप्त — सही उत्तर।",
-     "समांतर माध्य: बीजगणितीय रूप से परिकलित; तोरण से नहीं पढ़ा जाता।",
-     "बहुलक: आयतचित्र से आलेखीय रूप में ज्ञात किया जाता है।",
-     "चतुर्थक विचलन: इसके लिए Q1 व Q3 चाहिए, जो तोरण पर N/4 व 3N/4 से पढ़े जाते हैं, प्रतिच्छेद से नहीं।"
+     "प्रत्येक ओर N/2 प्रेक्षण होते हैं।",
+     "सर्वाधिक बारंबारता बहुलक बताती है।",
+     "विचलनों का योग शून्य होना माध्य का गुण है।",
+     "वक्रों की ढाल इसका कारण नहीं है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1158,22 +1158,22 @@
   },
   {
    "id": "tra-data-019",
-   "level": "PGT",
-   "answer": 1,
+   "level": "Higher",
+   "answer": 2,
    "en": {
-    "q": "Match List-I (Diagram) with List-II (Most suitable use) and select the correct answer using the codes given below the lists:\nList-I:\nA. Pie diagram\nB. Histogram\nC. Arithmetic line graph\nD. Scatter diagram\nList-II:\n1. Time-series data\n2. Continuous frequency distribution\n3. Relationship between two variables\n4. Component parts of a whole",
+    "q": "A scatter diagram is used primarily to show:",
     "options": [
-     "A-2, B-4, C-1, D-3",
-     "A-4, B-2, C-1, D-3",
-     "A-4, B-1, C-2, D-3",
-     "A-3, B-2, C-1, D-4"
+     "The components of a whole",
+     "The cumulative frequencies of a distribution",
+     "The relationship between two variables",
+     "The change in one variable over time"
     ],
-    "explanation": "A pie diagram shows how a total is divided into components; a histogram shows a continuous frequency distribution; an arithmetic line graph (time-series graph) shows change over time; a scatter diagram plots paired values to show the relationship between two variables.",
+    "explanation": "A scatter diagram plots paired values of two variables as points, so the pattern of the points shows whether and how the variables are related. A pie diagram shows components of a whole, an ogive cumulative frequencies and a line graph change over time.",
     "notes": [
-     "A-2, B-4, C-1, D-3: wrong — it interchanges the uses of the pie diagram and the histogram.",
-     "A-4, B-2, C-1, D-3: correct.",
-     "A-4, B-1, C-2, D-3: wrong — time is plotted on a line graph, not a histogram.",
-     "A-3, B-2, C-1, D-4: wrong — a scatter diagram does not show component parts."
+     "Components of a whole are shown by a pie diagram.",
+     "Cumulative frequencies are shown by an ogive.",
+     "Paired values are plotted as points.",
+     "Change over time is shown by a line graph."
     ],
     "path": [
      "Research Aptitude",
@@ -1187,19 +1187,19 @@
     ]
    },
    "hi": {
-    "q": "सूची-I (आरेख) को सूची-II (सबसे उपयुक्त प्रयोग) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I:\nA. वृत्त (पाई) आरेख\nB. आयतचित्र\nC. अंकगणितीय रेखा-आलेख\nD. प्रकीर्ण आरेख\nसूची-II:\n1. काल-श्रेणी आँकड़े\n2. सतत बारंबारता बंटन\n3. दो चरों के बीच संबंध\n4. किसी समग्र के घटक भाग",
+    "q": "प्रकीर्ण आरेख का प्रयोग मुख्यतः क्या दर्शाने के लिए होता है?",
     "options": [
-     "A-2, B-4, C-1, D-3",
-     "A-4, B-2, C-1, D-3",
-     "A-4, B-1, C-2, D-3",
-     "A-3, B-2, C-1, D-4"
+     "संपूर्ण के घटक",
+     "किसी बंटन की संचयी बारंबारताएँ",
+     "दो चरों के बीच संबंध",
+     "समय के साथ एक चर में परिवर्तन"
     ],
-    "explanation": "वृत्त आरेख किसी योग का घटकों में विभाजन दिखाता है; आयतचित्र सतत बारंबारता बंटन दिखाता है; अंकगणितीय रेखा-आलेख (काल-श्रेणी आलेख) समय के साथ परिवर्तन दिखाता है; प्रकीर्ण आरेख युग्मित मानों द्वारा दो चरों का संबंध दिखाता है।",
+    "explanation": "प्रकीर्ण आरेख दो चरों के युग्मित मानों को बिंदुओं के रूप में अंकित करता है, अतः बिंदुओं का प्रतिरूप दर्शाता है कि चरों में संबंध है या नहीं और कैसा है। वृत्त आरेख संपूर्ण के घटक, तोरण संचयी बारंबारताएँ तथा रेखा आलेख समय के साथ परिवर्तन दर्शाता है।",
     "notes": [
-     "A-2, B-4, C-1, D-3: गलत — इसमें वृत्त आरेख और आयतचित्र के प्रयोग बदल दिए गए हैं।",
-     "A-4, B-2, C-1, D-3: सही।",
-     "A-4, B-1, C-2, D-3: गलत — समय रेखा-आलेख पर दर्शाया जाता है, आयतचित्र पर नहीं।",
-     "A-3, B-2, C-1, D-4: गलत — प्रकीर्ण आरेख घटक भाग नहीं दिखाता।"
+     "संपूर्ण के घटक वृत्त आरेख से दर्शाए जाते हैं।",
+     "संचयी बारंबारताएँ तोरण से दर्शाई जाती हैं।",
+     "युग्मित मान बिंदुओं के रूप में अंकित किए जाते हैं।",
+     "समय के साथ परिवर्तन रेखा आलेख से दर्शाया जाता है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1226,21 +1226,21 @@
   {
    "id": "tra-data-020",
    "level": "Higher",
-   "answer": 0,
+   "answer": 3,
    "en": {
-    "q": "Assertion (A): For a distribution containing a few extremely large values, the median is a more representative average than the arithmetic mean.\nReason (R): The arithmetic mean is affected by extreme values, whereas the median is not affected by them.\nSelect the correct answer using the codes given below:",
+    "q": "For a distribution with a few extremely large values, the median is preferred to the arithmetic mean because the median:",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Uses the magnitude of every item",
+     "Is always larger than the mean",
+     "Can be treated algebraically",
+     "Is not affected by extreme values"
     ],
-    "explanation": "The mean uses the magnitude of every item, so a few very large values pull it upward; the median depends only on the position of the middle item. That is exactly why the median represents such data better.",
+    "explanation": "The mean uses the magnitude of every item, so a few very large values pull it upward. The median is a positional average and depends only on the middle item.",
     "notes": [
-     "Correct: R gives the reason why the median is preferred.",
-     "Wrong: R directly explains A.",
-     "Wrong: R is true; insensitivity to extremes is a standard property of the median.",
-     "Wrong: A is true; income data, for example, are usually summarised by the median."
+     "This is true of the mean, and is the reason why extreme values pull it.",
+     "In such a distribution the mean is larger than the median.",
+     "This is an advantage of the mean, not of the median.",
+     "It depends only on the position of the middle item."
     ],
     "path": [
      "Research Aptitude",
@@ -1254,19 +1254,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): कुछ अत्यधिक बड़े मानों वाले बंटन के लिए माध्यिका, समांतर माध्य की तुलना में अधिक प्रतिनिधि औसत है।\nकारण (R): समांतर माध्य चरम मानों से प्रभावित होता है, जबकि माध्यिका उनसे प्रभावित नहीं होती।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "कुछ अत्यधिक बड़े मानों वाले बंटन के लिए समांतर माध्य की अपेक्षा माध्यिका को वरीयता दी जाती है, क्योंकि माध्यिका:",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "प्रत्येक पद के परिमाण का प्रयोग करती है",
+     "सदैव माध्य से बड़ी होती है",
+     "का बीजगणितीय विवेचन संभव है",
+     "चरम मानों से प्रभावित नहीं होती"
     ],
-    "explanation": "माध्य में प्रत्येक पद का परिमाण प्रयुक्त होता है, अतः कुछ बहुत बड़े मान उसे ऊपर खींच लेते हैं; माध्यिका केवल मध्य पद की स्थिति पर निर्भर है। इसी कारण ऐसे आँकड़ों का प्रतिनिधित्व माध्यिका बेहतर करती है।",
+    "explanation": "माध्य प्रत्येक पद के परिमाण का प्रयोग करता है, अतः कुछ बहुत बड़े मान उसे ऊपर खींच लेते हैं। माध्यिका स्थितिक औसत है और केवल मध्य पद पर निर्भर है।",
     "notes": [
-     "सही: (R) बताता है कि माध्यिका को वरीयता क्यों दी जाती है।",
-     "गलत: (R) सीधे (A) की व्याख्या करता है।",
-     "गलत: (R) सही है; चरम मानों से अप्रभावित रहना माध्यिका का मानक गुण है।",
-     "गलत: (A) सही है; उदाहरणार्थ आय के आँकड़े प्रायः माध्यिका से संक्षेपित किए जाते हैं।"
+     "यह माध्य के लिए सत्य है और इसी कारण चरम मान उसे खींचते हैं।",
+     "ऐसे बंटन में माध्य माध्यिका से बड़ा होता है।",
+     "यह माध्य का गुण है, माध्यिका का नहीं।",
+     "यह केवल मध्य पद की स्थिति पर निर्भर है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1288,7 +1288,7 @@
   },
   {
    "id": "tra-data-021",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 2,
    "en": {
     "q": "In a moderately skewed distribution, the arithmetic mean is 40 and the median is 38. Using Karl Pearson's empirical relationship, the mode is:",
@@ -1351,21 +1351,21 @@
   {
    "id": "tra-data-022",
    "level": "Higher",
-   "answer": 2,
+   "answer": 3,
    "en": {
-    "q": "With reference to the normal probability curve, consider the following statements:\n1. Its mean, median and mode coincide.\n2. About 68.27% of the cases lie between the mean ± 1 standard deviation.\n3. The curve touches the x-axis at the mean ± 3 standard deviations.\n4. Its kurtosis (β2) equals 3, so it is mesokurtic.\nWhich of the statements given above are correct?",
+    "q": "The normal probability curve is called asymptotic because it:",
     "options": [
-     "1 and 2 only",
-     "1, 3 and 4 only",
-     "1, 2 and 4 only",
-     "1, 2, 3 and 4"
+     "Is perfectly symmetrical about the mean",
+     "Has its mean, median and mode at the same point",
+     "Is bell-shaped",
+     "Approaches the x-axis but never touches it"
     ],
-    "explanation": "The normal curve is symmetrical and bell-shaped, so mean, median and mode coincide; about 68.27% of cases lie within ±1σ; it is mesokurtic with β2 = 3. It is asymptotic to the x-axis — it approaches but never touches it — so statement 3 is wrong.",
+    "explanation": "The normal curve is symmetrical and bell-shaped, about 68.27% of cases lie within ±1σ and it is mesokurtic with β2 = 3. Its tails approach the x-axis but never touch it.",
     "notes": [
-     "1 and 2 only: incomplete, because statement 4 is also correct.",
-     "1, 3 and 4 only: wrong — statement 3 is false and statement 2 is omitted.",
-     "1, 2 and 4 only: correct.",
-     "1, 2, 3 and 4: wrong — the tails never touch the x-axis."
+     "This is the property of symmetry.",
+     "This follows from its symmetry.",
+     "This describes its shape.",
+     "Its two tails extend indefinitely without meeting the base line."
     ],
     "path": [
      "Research Aptitude",
@@ -1379,19 +1379,19 @@
     ]
    },
    "hi": {
-    "q": "प्रसामान्य प्रायिकता वक्र के संदर्भ में निम्नलिखित कथनों पर विचार कीजिए:\n1. इसके माध्य, माध्यिका और बहुलक संपाती होते हैं।\n2. लगभग 68.27% प्रकरण माध्य ± 1 मानक विचलन के बीच स्थित होते हैं।\n3. वक्र माध्य ± 3 मानक विचलन पर x-अक्ष को स्पर्श करता है।\n4. इसका कुकुदता-मान (β2) 3 होता है, अतः यह मध्यकुकुदी (मेसोकर्टिक) है।\nउपर्युक्त में से कौन-से कथन सही हैं?",
+    "q": "प्रसामान्य प्रायिकता वक्र को अनंतस्पर्शी क्यों कहा जाता है?",
     "options": [
-     "केवल 1 और 2",
-     "केवल 1, 3 और 4",
-     "केवल 1, 2 और 4",
-     "1, 2, 3 और 4"
+     "यह माध्य के दोनों ओर पूर्णतः सममित है",
+     "इसके माध्य, माध्यिका एवं बहुलक एक ही बिंदु पर होते हैं",
+     "यह घंटाकार है",
+     "यह x-अक्ष के निकट पहुँचता है, किंतु उसे कभी स्पर्श नहीं करता"
     ],
-    "explanation": "प्रसामान्य वक्र सममित व घंटाकार है, अतः माध्य, माध्यिका और बहुलक संपाती होते हैं; लगभग 68.27% प्रकरण ±1σ के भीतर होते हैं; यह β2 = 3 के साथ मध्यकुकुदी है। यह x-अक्ष के प्रति अनंतस्पर्शी है — उसके निकट जाता है पर कभी स्पर्श नहीं करता — अतः कथन 3 गलत है।",
+    "explanation": "प्रसामान्य वक्र सममित एवं घंटाकार है, लगभग 68.27% स्थितियाँ ±1σ के भीतर होती हैं तथा यह β2 = 3 के साथ मध्यककुदी है। इसके सिरे x-अक्ष के निकट पहुँचते हैं, किंतु उसे कभी स्पर्श नहीं करते।",
     "notes": [
-     "केवल 1 और 2: अपूर्ण, क्योंकि कथन 4 भी सही है।",
-     "केवल 1, 3 और 4: गलत — कथन 3 असत्य है और कथन 2 छूट गया है।",
-     "केवल 1, 2 और 4: सही।",
-     "1, 2, 3 और 4: गलत — वक्र के छोर x-अक्ष को कभी स्पर्श नहीं करते।"
+     "यह सममिति का गुण है।",
+     "यह इसकी सममिति का परिणाम है।",
+     "यह इसकी आकृति का वर्णन है।",
+     "इसके दोनों सिरे आधार रेखा से मिले बिना अनंत तक फैले रहते हैं।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1412,7 +1412,7 @@
   },
   {
    "id": "tra-data-023",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 1,
    "en": {
     "q": "In a positively skewed distribution, the usual relationship among the mean, median and mode is:",
@@ -1474,22 +1474,22 @@
   },
   {
    "id": "tra-data-024",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 3,
    "en": {
-    "q": "The value of Karl Pearson's coefficient of correlation always lies between:",
+    "q": "A value of Karl Pearson's coefficient of correlation close to −1 indicates:",
     "options": [
-     "0 and +1",
-     "−∞ and +∞",
-     "0 and ∞",
-     "−1 and +1"
+     "No relationship between the two variables",
+     "A weak positive linear relationship",
+     "An error in the calculation",
+     "A strong inverse linear relationship between the two variables"
     ],
     "explanation": "The coefficient r is a pure number ranging from −1 (perfect negative correlation) through 0 (no linear correlation) to +1 (perfect positive correlation).",
     "notes": [
-     "0 and +1: wrong — r can be negative when variables move in opposite directions.",
-     "−∞ and +∞: wrong — r is bounded by ±1.",
-     "0 and ∞: wrong — r is neither unbounded nor always positive.",
-     "−1 and +1: correct range of r."
+     "No linear relationship gives a value near zero.",
+     "A weak positive relationship gives a small positive value.",
+     "A value of −1 is within the permitted range of r.",
+     "As one variable rises, the other falls almost in a straight line."
     ],
     "path": [
      "Research Aptitude",
@@ -1503,19 +1503,19 @@
     ]
    },
    "hi": {
-    "q": "कार्ल पियर्सन के सहसंबंध गुणांक का मान सदैव किसके बीच होता है?",
+    "q": "कार्ल पियर्सन के सहसंबंध गुणांक का −1 के निकट मान क्या दर्शाता है?",
     "options": [
-     "0 और +1",
-     "−∞ और +∞",
-     "0 और ∞",
-     "−1 और +1"
+     "दोनों चरों में कोई संबंध नहीं",
+     "दुर्बल धनात्मक रैखिक संबंध",
+     "गणना में त्रुटि",
+     "दोनों चरों में प्रबल व्युत्क्रम रैखिक संबंध"
     ],
     "explanation": "गुणांक r एक शुद्ध संख्या है जो −1 (पूर्ण ऋणात्मक सहसंबंध) से 0 (कोई रैखिक सहसंबंध नहीं) होते हुए +1 (पूर्ण धनात्मक सहसंबंध) तक होता है।",
     "notes": [
-     "0 और +1: गलत — विपरीत दिशा में चलने वाले चरों के लिए r ऋणात्मक हो सकता है।",
-     "−∞ और +∞: गलत — r की सीमा ±1 है।",
-     "0 और ∞: गलत — r न असीमित है, न सदैव धनात्मक।",
-     "−1 और +1: r का सही परास।"
+     "रैखिक संबंध न होने पर मान शून्य के निकट होता है।",
+     "दुर्बल धनात्मक संबंध में मान छोटा धनात्मक होता है।",
+     "−1 का मान r की अनुमत सीमा के भीतर है।",
+     "एक चर के बढ़ने पर दूसरा लगभग सीधी रेखा में घटता है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1540,7 +1540,7 @@
    "level": "Higher",
    "answer": 1,
    "en": {
-    "q": "Two judges ranked 5 candidates. The sum of the squares of the differences between the paired ranks (Σd²) is 4. Spearman's rank correlation coefficient is:",
+    "q": "Two judges rank 5 candidates and the sum of the squared differences of ranks (Σd²) is 4. Spearman's rank correlation coefficient is:",
     "options": [
      "0.20",
      "0.80",
@@ -1566,7 +1566,7 @@
     ]
    },
    "hi": {
-    "q": "दो निर्णायकों ने 5 अभ्यर्थियों को कोटि (रैंक) प्रदान की। युग्मित कोटियों के अंतरों के वर्गों का योग (Σd²) 4 है। स्पीयरमैन का कोटि सहसंबंध गुणांक है:",
+    "q": "दो निर्णायक 5 अभ्यर्थियों को कोटि देते हैं तथा कोटि अंतरों के वर्गों का योग (Σd²) 4 है। स्पीयरमैन का कोटि सहसंबंध गुणांक क्या है?",
     "options": [
      "0.20",
      "0.80",
@@ -1600,7 +1600,7 @@
   },
   {
    "id": "tra-data-026",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 3,
    "en": {
     "q": "If the first quartile (Q1) of a distribution is 20 and the third quartile (Q3) is 50, the quartile deviation is:",
@@ -1666,22 +1666,22 @@
   },
   {
    "id": "tra-data-027",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 2,
    "en": {
-    "q": "Which one of the following is most suitable for comparing the variability of two series expressed in different units or having very different means?",
+    "q": "The coefficient of variation is preferred to the standard deviation for comparing the variability of two series primarily because it:",
     "options": [
-     "Range",
-     "Standard deviation",
-     "Coefficient of variation",
-     "Quartile deviation"
+     "Is always smaller than the standard deviation",
+     "Ignores the extreme values of the series",
+     "Is a relative measure, free from the units of measurement",
+     "Is easier to calculate"
     ],
     "explanation": "The coefficient of variation, CV = (σ / Mean) × 100, is a relative, unit-free measure, so it can compare the variability of series in different units or with different averages; the series with the higher CV is less consistent.",
     "notes": [
-     "Range: an absolute measure in the original units; it uses only the two extreme values.",
-     "Standard deviation: an absolute measure expressed in the units of the data.",
-     "Coefficient of variation: relative measure expressed as a percentage — correct.",
-     "Quartile deviation: an absolute measure in the original units."
+     "Its size relative to the standard deviation is not the reason.",
+     "It is based on all the values, like the standard deviation.",
+     "It expresses the standard deviation as a percentage of the mean.",
+     "It needs one more step of calculation than the standard deviation."
     ],
     "path": [
      "Research Aptitude",
@@ -1695,19 +1695,19 @@
     ]
    },
    "hi": {
-    "q": "भिन्न इकाइयों में व्यक्त या बहुत भिन्न माध्यों वाली दो श्रेणियों की परिवर्तनशीलता की तुलना के लिए निम्नलिखित में से कौन-सा सबसे उपयुक्त है?",
+    "q": "दो श्रेणियों की परिवर्तनशीलता की तुलना के लिए मानक विचलन की अपेक्षा विचरण-गुणांक को मुख्यतः इसलिए वरीयता दी जाती है कि वह:",
     "options": [
-     "परास",
-     "मानक विचलन",
-     "विचरण-गुणांक",
-     "चतुर्थक विचलन"
+     "सदैव मानक विचलन से छोटा होता है",
+     "श्रेणी के चरम मानों की उपेक्षा करता है",
+     "मापन की इकाइयों से मुक्त सापेक्ष माप है",
+     "गणना में अधिक सरल है"
     ],
     "explanation": "विचरण-गुणांक, CV = (σ / माध्य) × 100, एक सापेक्ष एवं इकाई-मुक्त माप है, अतः भिन्न इकाइयों या भिन्न औसतों वाली श्रेणियों की परिवर्तनशीलता की तुलना कर सकता है; अधिक CV वाली श्रेणी कम स्थिर (संगत) होती है।",
     "notes": [
-     "परास: मूल इकाइयों में निरपेक्ष माप; केवल दो चरम मानों पर आधारित।",
-     "मानक विचलन: आँकड़ों की इकाई में व्यक्त निरपेक्ष माप।",
-     "विचरण-गुणांक: प्रतिशत में व्यक्त सापेक्ष माप — सही उत्तर।",
-     "चतुर्थक विचलन: मूल इकाइयों में निरपेक्ष माप।"
+     "मानक विचलन की तुलना में इसका आकार कारण नहीं है।",
+     "यह मानक विचलन की भाँति सभी मानों पर आधारित है।",
+     "यह मानक विचलन को माध्य के प्रतिशत के रूप में व्यक्त करता है।",
+     "इसमें मानक विचलन से एक चरण अधिक गणना होती है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1731,19 +1731,19 @@
    "level": "Higher",
    "answer": 0,
    "en": {
-    "q": "Assertion (A): Karl Pearson's coefficient of correlation between daily temperature and ice-cream sales remains the same whether the temperature is recorded in °C or in °F.\nReason (R): Karl Pearson's coefficient of correlation is independent of change of origin and scale.\nSelect the correct answer using the codes given below:",
+    "q": "If temperature is converted from °C to °F, Pearson's r between temperature and ice-cream sales remains unchanged primarily because r is:",
     "options": [
-     "Both A and R are true, and R is the correct explanation of A",
-     "Both A and R are true, but R is not the correct explanation of A",
-     "A is true, but R is false",
-     "A is false, but R is true"
+     "Independent of change of origin and scale",
+     "Always equal to zero for temperature data",
+     "Dependent only on the units of sales",
+     "Calculated from ranks and not from the values"
     ],
-    "explanation": "Converting °C to °F (F = 1.8C + 32) changes both the origin (adding 32) and the scale (multiplying by 1.8, a positive factor). Since r is unaffected by such changes, its value stays the same — so R explains A.",
+    "explanation": "Converting °C to °F changes the origin (adding 32) and the scale (multiplying by 1.8). Karl Pearson's r is independent of change of origin and scale, so its value stays the same.",
     "notes": [
-     "Correct: the conversion is a change of origin and scale, which leaves r unchanged.",
-     "Wrong: R is the very property that makes A true.",
-     "Wrong: independence of origin and scale is a standard property of r.",
-     "Wrong: A is true, since the conversion uses a positive multiplier."
+     "The conversion adds 32 and multiplies by 1.8, which does not affect r.",
+     "The value of r depends on the data, not on the kind of variable.",
+     "The units of neither variable affect r.",
+     "Ranks are used in Spearman's coefficient, not in Pearson's."
     ],
     "path": [
      "Research Aptitude",
@@ -1757,19 +1757,19 @@
     ]
    },
    "hi": {
-    "q": "कथन (A): दैनिक तापमान और आइसक्रीम की बिक्री के बीच कार्ल पियर्सन का सहसंबंध गुणांक वही रहता है, चाहे तापमान °C में दर्ज किया जाए या °F में।\nकारण (R): कार्ल पियर्सन का सहसंबंध गुणांक मूल-बिंदु और पैमाने के परिवर्तन से स्वतंत्र होता है।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
+    "q": "तापमान को °C से °F में बदलने पर तापमान एवं आइसक्रीम की बिक्री के बीच पियर्सन का r मुख्यतः इसलिए अपरिवर्तित रहता है कि r:",
     "options": [
-     "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-     "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-     "कथन (A) सही है, परंतु कारण (R) गलत है",
-     "कथन (A) गलत है, परंतु कारण (R) सही है"
+     "मूल बिंदु एवं पैमाने के परिवर्तन से स्वतंत्र है",
+     "तापमान के आँकड़ों के लिए सदैव शून्य होता है",
+     "केवल बिक्री की इकाइयों पर निर्भर है",
+     "मानों से नहीं, क्रमों से ज्ञात किया जाता है"
     ],
-    "explanation": "°C को °F में बदलना (F = 1.8C + 32) मूल-बिंदु (32 जोड़ना) और पैमाना (1.8 के धनात्मक गुणक से गुणा) दोनों बदलता है। r इन परिवर्तनों से अप्रभावित रहता है, अतः उसका मान वही रहता है — इस प्रकार (R), (A) की व्याख्या करता है।",
+    "explanation": "°C को °F में बदलने से मूलबिंदु (32 जोड़ना) तथा पैमाना (1.8 से गुणा) बदलते हैं। कार्ल पियर्सन का r मूलबिंदु एवं पैमाने के परिवर्तन से स्वतंत्र है, अतः उसका मान वही रहता है।",
     "notes": [
-     "सही: रूपांतरण मूल-बिंदु और पैमाने का परिवर्तन है, जिससे r नहीं बदलता।",
-     "गलत: (R) ही वह गुण है जिससे (A) सत्य होता है।",
-     "गलत: मूल-बिंदु और पैमाने से स्वतंत्रता r का मानक गुण है।",
-     "गलत: (A) सही है, क्योंकि रूपांतरण में धनात्मक गुणक प्रयुक्त होता है।"
+     "इस रूपांतरण में 32 जोड़ा जाता है और 1.8 से गुणा होता है, जिससे r प्रभावित नहीं होता।",
+     "r का मान आँकड़ों पर निर्भर है, चर के प्रकार पर नहीं।",
+     "किसी भी चर की इकाइयाँ r को प्रभावित नहीं करतीं।",
+     "क्रमों का प्रयोग स्पीयरमैन के गुणांक में होता है, पियर्सन के नहीं।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -1791,7 +1791,7 @@
   },
   {
    "id": "tra-data-029",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 2,
    "en": {
     "q": "The median of the observations 14, 7, 21, 10, 18, 12 is:",
@@ -1854,7 +1854,7 @@
   },
   {
    "id": "tra-data-030",
-   "level": "TGT",
+   "level": "Higher",
    "answer": 0,
    "en": {
     "q": "The mode of the data 4, 7, 7, 9, 4, 7, 10, 9, 7, 4 is:",
@@ -1917,10 +1917,10 @@
   },
   {
    "id": "tra-data-031",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 1,
    "en": {
-    "q": "The production of a factory (in thousand units) was 250 in 2021, 300 in 2022 and 360 in 2023. By what percentage did production increase from 2021 to 2023?",
+    "q": "A factory's output (in thousand units) was 250 in 2021, 300 in 2022 and 360 in 2023. The percentage increase from 2021 to 2023 is:",
     "options": [
      "22%",
      "44%",
@@ -1946,7 +1946,7 @@
     ]
    },
    "hi": {
-    "q": "किसी कारखाने का उत्पादन (हज़ार इकाइयों में) 2021 में 250, 2022 में 300 तथा 2023 में 360 था। 2021 से 2023 तक उत्पादन में कितने प्रतिशत वृद्धि हुई?",
+    "q": "एक कारखाने का उत्पादन (हजार इकाइयों में) 2021 में 250, 2022 में 300 तथा 2023 में 360 था। 2021 से 2023 तक प्रतिशत वृद्धि कितनी है?",
     "options": [
      "22%",
      "44%",
@@ -1979,10 +1979,10 @@
   },
   {
    "id": "tra-data-032",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 2,
    "en": {
-    "q": "In a pie diagram showing a family's monthly expenditure of ₹60,000, the sector for education subtends an angle of 72° at the centre. The monthly expenditure on education is:",
+    "q": "In a pie diagram of a family's monthly expenditure of ₹60,000, the sector for education has an angle of 72°. The expenditure on education is:",
     "options": [
      "₹7,200",
      "₹43,200",
@@ -2008,7 +2008,7 @@
     ]
    },
    "hi": {
-    "q": "किसी परिवार के ₹60,000 के मासिक व्यय को दर्शाने वाले वृत्त आरेख में शिक्षा का त्रिज्यखंड केंद्र पर 72° का कोण बनाता है। शिक्षा पर मासिक व्यय है:",
+    "q": "एक परिवार के ₹60,000 के मासिक व्यय के वृत्त आरेख में शिक्षा का त्रिज्यखंड 72° का कोण बनाता है। शिक्षा पर व्यय कितना है?",
     "options": [
      "₹7,200",
      "₹43,200",
@@ -2045,7 +2045,7 @@
    "level": "Higher",
    "answer": 3,
    "en": {
-    "q": "The enrolment in three faculties of a college is given below:\nFaculty | 2024 | 2025\nArts | 480 | 540\nScience | 360 | 450\nCommerce | 240 | 288\nWhat is the percentage increase in the total enrolment of the college from 2024 to 2025?",
+    "q": "A college's enrolment in Arts, Science and Commerce rose from 480, 360 and 240 in 2024 to 540, 450 and 288 in 2025. The percentage rise in total enrolment is:",
     "options": [
      "15.49%",
      "19.17%",
@@ -2071,7 +2071,7 @@
     ]
    },
    "hi": {
-    "q": "किसी महाविद्यालय के तीन संकायों में नामांकन नीचे दिया गया है:\nसंकाय | 2024 | 2025\nकला | 480 | 540\nविज्ञान | 360 | 450\nवाणिज्य | 240 | 288\n2024 से 2025 तक महाविद्यालय के कुल नामांकन में कितने प्रतिशत वृद्धि हुई?",
+    "q": "एक महाविद्यालय में कला, विज्ञान एवं वाणिज्य का नामांकन 2024 के 480, 360 एवं 240 से बढ़कर 2025 में 540, 450 एवं 288 हो गया। कुल नामांकन में प्रतिशत वृद्धि कितनी है?",
     "options": [
      "15.49%",
      "19.17%",
@@ -2108,7 +2108,7 @@
   },
   {
    "id": "tra-data-034",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 0,
    "en": {
     "q": "A candidate scores 60 marks in Paper I and 75 marks in Paper II. If the two papers carry weights of 2 and 3 respectively, the weighted mean score is:",
@@ -2171,10 +2171,10 @@
   },
   {
    "id": "tra-data-035",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 1,
    "en": {
-    "q": "Find the arithmetic mean of the following frequency distribution:\nx: 1, 2, 3, 4\nf: 3, 5, 8, 4",
+    "q": "The values 1, 2, 3 and 4 occur with frequencies 3, 5, 8 and 4 respectively. The arithmetic mean of the distribution is:",
     "options": [
      "2.5",
      "2.65",
@@ -2200,7 +2200,7 @@
     ]
    },
    "hi": {
-    "q": "निम्नलिखित बारंबारता बंटन का समांतर माध्य ज्ञात कीजिए:\nx: 1, 2, 3, 4\nf: 3, 5, 8, 4",
+    "q": "मान 1, 2, 3 एवं 4 की बारंबारताएँ क्रमशः 3, 5, 8 एवं 4 हैं। इस बंटन का समांतर माध्य क्या है?",
     "options": [
      "2.5",
      "2.65",
@@ -2237,7 +2237,7 @@
    "level": "Higher",
    "answer": 2,
    "en": {
-    "q": "Section A of a class has 30 students with mean marks 60, and Section B has 20 students with mean marks 70. The combined mean marks of all 50 students is:",
+    "q": "Section A has 30 students with mean marks 60 and Section B has 20 students with mean marks 70. The combined mean of all 50 students is:",
     "options": [
      "65",
      "66",
@@ -2263,7 +2263,7 @@
     ]
    },
    "hi": {
-    "q": "किसी कक्षा के वर्ग A में 30 विद्यार्थियों के माध्य अंक 60 तथा वर्ग B में 20 विद्यार्थियों के माध्य अंक 70 हैं। सभी 50 विद्यार्थियों के संयुक्त माध्य अंक हैं:",
+    "q": "अनुभाग A में 30 विद्यार्थियों के माध्य अंक 60 तथा अनुभाग B में 20 विद्यार्थियों के माध्य अंक 70 हैं। सभी 50 विद्यार्थियों का संयुक्त माध्य क्या है?",
     "options": [
      "65",
      "66",
@@ -2361,7 +2361,7 @@
    "level": "Higher",
    "answer": 0,
    "en": {
-    "q": "The sales of a firm (in ₹ lakh) were 80 in 2022, 104 in 2023, 124 in 2024 and 155 in 2025. In which year was the percentage growth in sales over the previous year the highest?",
+    "q": "A firm's sales (₹ lakh) were 80 in 2022, 104 in 2023, 124 in 2024 and 155 in 2025. Which year had the highest percentage growth over the previous year?",
     "options": [
      "2023",
      "2024",
@@ -2387,7 +2387,7 @@
     ]
    },
    "hi": {
-    "q": "किसी फर्म की बिक्री (₹ लाख में) 2022 में 80, 2023 में 104, 2024 में 124 तथा 2025 में 155 थी। किस वर्ष में पिछले वर्ष की तुलना में बिक्री में प्रतिशत वृद्धि सर्वाधिक थी?",
+    "q": "एक फर्म की बिक्री (₹ लाख) 2022 में 80, 2023 में 104, 2024 में 124 तथा 2025 में 155 थी। पिछले वर्ष की तुलना में प्रतिशत वृद्धि किस वर्ष सर्वाधिक रही?",
     "options": [
      "2023",
      "2024",
@@ -2420,22 +2420,22 @@
   },
   {
    "id": "tra-data-039",
-   "level": "PGT",
+   "level": "Higher",
    "answer": 3,
    "en": {
-    "q": "The type of interview in which the interviewer concentrates on the respondent's subjective experience of a particular situation that the researcher has analysed beforehand was described by Robert K. Merton and Patricia L. Kendall as the:",
+    "q": "The 'focused interview' described by Merton and Kendall (1946) is distinguished primarily by its concentration on:",
     "options": [
-     "Structured interview",
-     "Depth interview",
-     "Telephone interview",
-     "Focused interview"
+     "A fixed list of questions asked in a fixed order",
+     "The whole life history of the respondent",
+     "Questions put over the telephone",
+     "The respondent's experience of a particular situation that he has been through"
     ],
     "explanation": "Merton and Kendall (1946) described the focused interview: respondents who have been through a known situation (such as seeing a film) are questioned about their experience of it, the interviewer being free to decide the sequence and wording of questions.",
     "notes": [
-     "Structured interview: predetermined questions asked in a fixed order and wording.",
-     "Depth interview: intensive, probing interview to uncover underlying motives and feelings.",
-     "Telephone interview: contact with respondents by telephone instead of face to face.",
-     "Focused interview: centred on the respondent's experience of a given situation — correct."
+     "A fixed list in a fixed order marks the structured interview.",
+     "Tracing a whole life history is the aim of the life-history method, not of the focused interview.",
+     "The medium of the interview is not the point.",
+     "For example, viewers of a film are asked about their experience of it."
     ],
     "path": [
      "Research Aptitude",
@@ -2449,19 +2449,19 @@
     ]
    },
    "hi": {
-    "q": "रॉबर्ट के. मर्टन और पैट्रिशिया एल. केंडल ने उस साक्षात्कार को क्या नाम दिया, जिसमें साक्षात्कारकर्ता किसी ऐसी विशिष्ट परिस्थिति के उत्तरदाता के व्यक्तिपरक अनुभव पर ध्यान केंद्रित करता है जिसका शोधकर्ता पहले ही विश्लेषण कर चुका होता है?",
+    "q": "मर्टन एवं केंडल (1946) द्वारा वर्णित 'केंद्रित साक्षात्कार' की मुख्य पहचान किस पर उसका केंद्रित होना है?",
     "options": [
-     "संरचित साक्षात्कार",
-     "गहन साक्षात्कार",
-     "दूरभाष साक्षात्कार",
-     "केंद्रित साक्षात्कार"
+     "निश्चित क्रम में पूछे गए प्रश्नों की निश्चित सूची",
+     "उत्तरदाता का संपूर्ण जीवन-वृत्त",
+     "दूरभाष पर पूछे गए प्रश्न",
+     "किसी विशेष परिस्थिति का उत्तरदाता का अनुभव, जिससे वह गुजर चुका है"
     ],
     "explanation": "मर्टन और केंडल (1946) ने केंद्रित साक्षात्कार का वर्णन किया: किसी ज्ञात परिस्थिति (जैसे फ़िल्म देखना) से गुज़रे उत्तरदाताओं से उनके अनुभव के बारे में पूछा जाता है, तथा प्रश्नों का क्रम और शब्द तय करने की स्वतंत्रता साक्षात्कारकर्ता को रहती है।",
     "notes": [
-     "संरचित साक्षात्कार: पूर्वनिर्धारित प्रश्न निश्चित क्रम और शब्दों में पूछे जाते हैं।",
-     "गहन साक्षात्कार: अंतर्निहित प्रेरणाओं व भावनाओं को उजागर करने हेतु गहन, खोजपूर्ण साक्षात्कार।",
-     "दूरभाष साक्षात्कार: आमने-सामने के बजाय टेलीफ़ोन द्वारा उत्तरदाताओं से संपर्क।",
-     "केंद्रित साक्षात्कार: किसी दी गई परिस्थिति के उत्तरदाता के अनुभव पर केंद्रित — सही उत्तर।"
+     "निश्चित क्रम की निश्चित सूची संरचित साक्षात्कार की पहचान है।",
+     "संपूर्ण जीवन-वृत्त का अनुरेखण जीवन-इतिहास विधि का लक्ष्य है, केंद्रित साक्षात्कार का नहीं।",
+     "साक्षात्कार का माध्यम यहाँ मूल बात नहीं है।",
+     "उदाहरणार्थ, किसी फिल्म के दर्शकों से उसके अनुभव के बारे में पूछा जाता है।"
     ],
     "path": [
      "शोध अभिवृत्ति",
@@ -2488,19 +2488,19 @@
    "level": "Higher",
    "answer": 2,
    "en": {
-    "q": "With reference to observation as a method of data collection, consider the following statements:\n1. In participant observation, the observer takes part in the life of the group being studied as if he were one of its members.\n2. In unstructured observation, the units to be observed and the manner of recording them are fixed and standardised beforehand.\n3. Observation conducted under a definite plan prepared in advance, often with experimental procedures and precise instruments, is known as controlled observation.\nWhich of the statements given above are correct?",
+    "q": "Participant observation differs from non-participant observation primarily in that the observer:",
     "options": [
-     "1 and 2 only",
-     "2 and 3 only",
-     "1 and 3 only",
-     "1, 2 and 3"
+     "Uses precise instruments in a laboratory",
+     "Records behaviour on a schedule fixed beforehand",
+     "Takes part in the life of the group as one of its members",
+     "Watches the group from outside without joining it"
     ],
-    "explanation": "Statements 1 and 3 correctly describe participant and controlled observation. Statement 2 describes structured observation; in unstructured observation such matters are not fixed beforehand, which is why it suits exploratory studies.",
+    "explanation": "In participant observation the observer shares the life of the group. Structured observation fixes the units and the recording beforehand, and controlled observation follows a definite plan with precise instruments.",
     "notes": [
-     "1 and 2 only: wrong — statement 2 is false.",
-     "2 and 3 only: wrong — statement 2 is false and statement 1 is omitted.",
-     "1 and 3 only: correct.",
-     "1, 2 and 3: wrong — statement 2 describes structured, not unstructured, observation."
+     "Precise instruments are used in controlled observation.",
+     "A schedule fixed beforehand marks structured observation.",
+     "The observer shares the activities of the group.",
+     "Watching from outside is non-participant observation."
     ],
     "path": [
      "Research Aptitude",
@@ -2514,19 +2514,19 @@
     ]
    },
    "hi": {
-    "q": "आँकड़ा-संग्रह की विधि के रूप में अवलोकन के संदर्भ में निम्नलिखित कथनों पर विचार कीजिए:\n1. सहभागी अवलोकन में अवलोकनकर्ता अध्ययनाधीन समूह के जीवन में उसके एक सदस्य की भाँति भाग लेता है।\n2. असंरचित अवलोकन में अवलोकन की जाने वाली इकाइयाँ तथा उनके अभिलेखन का ढंग पहले से निश्चित व मानकीकृत होते हैं।\n3. पहले से तैयार निश्चित योजना के अनुसार, प्रायः प्रयोगात्मक प्रक्रियाओं और परिशुद्ध उपकरणों के साथ किया गया अवलोकन नियंत्रित अवलोकन कहलाता है।\nउपर्युक्त में से कौन-से कथन सही हैं?",
+    "q": "सहभागी अवलोकन असहभागी अवलोकन से मुख्यतः इस बात में भिन्न है कि अवलोकनकर्ता:",
     "options": [
-     "केवल 1 और 2",
-     "केवल 2 और 3",
-     "केवल 1 और 3",
-     "1, 2 और 3"
+     "प्रयोगशाला में सटीक उपकरणों का प्रयोग करता है",
+     "पूर्व-निर्धारित अनुसूची पर व्यवहार अभिलेखित करता है",
+     "समूह के जीवन में उसके सदस्य की भाँति भाग लेता है",
+     "समूह में सम्मिलित हुए बिना बाहर से उसे देखता है"
     ],
-    "explanation": "कथन 1 और 3 सहभागी तथा नियंत्रित अवलोकन का सही वर्णन करते हैं। कथन 2 संरचित अवलोकन का वर्णन है; असंरचित अवलोकन में ये बातें पहले से तय नहीं होतीं, इसलिए यह अन्वेषणात्मक अध्ययनों के लिए उपयुक्त है।",
+    "explanation": "सहभागी अवलोकन में अवलोकनकर्ता समूह के जीवन में सहभागी होता है। संरचित अवलोकन में इकाइयाँ एवं अभिलेखन पहले से निर्धारित होते हैं तथा नियंत्रित अवलोकन परिशुद्ध उपकरणों के साथ निश्चित योजना के अनुसार चलता है।",
     "notes": [
-     "केवल 1 और 2: गलत — कथन 2 असत्य है।",
-     "केवल 2 और 3: गलत — कथन 2 असत्य है और कथन 1 छूट गया है।",
-     "केवल 1 और 3: सही।",
-     "1, 2 और 3: गलत — कथन 2 संरचित अवलोकन का वर्णन है, असंरचित का नहीं।"
+     "सटीक उपकरण नियंत्रित अवलोकन में प्रयुक्त होते हैं।",
+     "पूर्व-निर्धारित अनुसूची संरचित अवलोकन की पहचान है।",
+     "अवलोकनकर्ता समूह की क्रियाओं में सहभागी होता है।",
+     "बाहर से देखना असहभागी अवलोकन है।"
     ],
     "path": [
      "शोध अभिवृत्ति",

@@ -13,3 +13,20 @@ Fatman pages opened: printed 173 (p193) and 174 (p194). Exam framing (7a) was ch
 - **003**: added "(as of October 2026)" to the six-States fact. Fatman p. 174 removed as a reference, because that page wrongly says the Assembly resolution under Art. 169 needs only a simple majority. It now cites Constitution Arts. 169, 171, 172 and Fatman p. 173.
 - **005**: wrong source fixed. The UP council seat allocation is in the **Third** Schedule of the RPA 1950, not the Fourth (the Fourth lists local authorities). Explanation corrected in both languages and the reference updated.
 - **005/002**: no figure changed; 403, 100, 38/36/8/8/10 all confirmed.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 4 questions (003 004 005 006); all correct, no changes.
+
+Corrected: none. Replaced: none.
+
+## Check of 13 November 2026 (14 new questions, 007–020)
+Checked 14 (007–020); 001–006 read for overlaps.
+Replaced: 007 ('Governor appointed by the President' already stated in 001 note A and 009 note A) -> Article 153 (a Governor for each State).
+Corrected:
+- 009: note D gave away 001 (oath by High Court Chief Justice); duplicated fact replaced.
+- 011 / 015: each note gave away the other's answer (Articles 200 and 213); distractors changed to Articles 167 and 202.
+- 012: fact 'one-third retire' (hint for 003) replaced with AP Council revival (2007).
+- 013: option Sucheta Kripalani + note gave away 017 -> Charan Singh; fact on Sarojini Naidu gave away 019 -> Pant as UP Premier 1937–39.
+- Old items edited only to remove give-aways: 001 fact (35 years, 008), 002 fact (80/31 seats, 010), 003 explanation/fact (Article 169, six States: 016, 012), 006 explanation (15 per cent, 018).
+- Not re-verified online (web unavailable): six States with a Legislative Council in Nov 2026.

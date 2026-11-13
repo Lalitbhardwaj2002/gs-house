@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const CACHE = 'gshouse-v4';
+const CACHE = 'gshouse-v6';
 const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/favicon-32.png'];
 

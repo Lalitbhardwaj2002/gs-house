@@ -55,3 +55,9 @@ Sri Gupta as founder (001); Kumaragupta I and Nalanda (009); Chandragupta II fir
 
 ## For the writer later
 Level mix is now 45/32/23; future additions here should be PGT statement or pair questions. Thin sub-topics worth a question or two: Chola provincial administration (mandalam–valanadu–nadu), Gupta-age science beyond Aryabhata (Brahmagupta, Varahamihira's astronomy), Chalukyas of Kalyani and Vengi, Vakataka rulers beyond Ajanta.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 30 (003 005 006 010 011 012 015 016 018 020 021 023 026 027 028 030 031 033 034 035 038 039 041 042 044 045 047 050 053 054). All answer keys confirmed. Replaced: none.
+- hist-gupta-021, -027: Hindi spelling of Valabhi made consistent (वलभी).
+- hist-gupta-026: path and facts were left over from an old chronology item (Skandagupta, Dantidurga); replaced with Harsha/Hiuen Tsang facts.

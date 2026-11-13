@@ -20,3 +20,8 @@ Every answer key was re-solved blind and agreed with the draft. Fatman printed p
 ## Notes for the writer
 - Fatman p. 152 dates the 100th Amendment to 2014; the Act is of 2015 (question 047 correctly says 2015).
 - Sub-topics not yet covered and worth adding later: Union Territories today (8, after the 2019–2020 changes), Article 1(3) acquired territories, the Indian Independence Act's other provisions, the Constituent Assembly's women members.
+
+## Check of 12 November 2026 (single-question rework)
+Checked 23 questions (002 004 008 010 011 012 014 018 019 022 024 030 031 032 036 038 040 041 045 046 052 053 055). Answers, dates, article and amendment numbers verified; all keys correct.
+- Corrected 018: Hindi spelling of S. Varadachariar made consistent (वरदाचारियर) in option D, its note and the facts.
+- Replaced: none.

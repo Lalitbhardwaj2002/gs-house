@@ -13,3 +13,14 @@ Fatman pages opened: 112, 113, 115, 117 (images p124, p125, p127, p129; printed 
 All keys solved blind and confirmed; exam framing fine; answer spread A–D [2,1,1,2]; levels 2/2/2.
 
 Note for the writer: Fatman p.117 calls Balaji Vishwanath the "first Peshwa"; he was the first hereditary Bhat Peshwa, not the first holder of the post. Do not use that wording.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 4 (003 004 005 006). All answer keys confirmed. Replaced: none.
+- hist-mughal-005: tomb was completed in 1628 (after Jahangir's death), so note A now says 'about 1622-1628'; duplicate fact replaced ('Baby Taj'); Hindi term for pietra dura fixed.
+
+## Check of 13 November 2026 (14 new questions, 007–020)
+- Checked: 14 (007–020), plus 001–006 read for overlap; 001–006 not edited.
+- Replaced (each repeated or was given away by 001–006): 007 Khanwa (notes of 001/006) → author of the Humayun-nama; 008 Second Panipat/Hemu (001/006) → fort where Sher Shah died (Kalinjar); 009 Buland Darwaza/Gujarat (fact of 005) → where the Ibadat Khana was built (Fatehpur Sikri, ref tgt-pgt-gk p. 45); 011 coronation at Raigad (004) → Shivaji's birthplace (Shivneri); 014 Todar Mal/dahsala (note of 002) → who drafted the Mahzar of 1579 (Shaikh Mubarak, tgt-pgt-gk p. 45); 016 Baburnama in Turki (fact of 001) → Peacock Throne made for Shah Jahan; 020 Balaji Vishwanath 1713 (fact of 004) → Battle of Palkhed 1728 (Baji Rao I).
+- Corrected: 010 (disputed day "18 June" removed; now "June 1576"); refs added: 012 and 013 (tgt-pgt-gk p. 47), 019 (p. 46).
+- Answer positions unchanged (5/5/5/5); validator ok.

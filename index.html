@@ -15,8 +15,15 @@
   <meta name="apple-mobile-web-app-title" content="GS HOUSE">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Mukta:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>
+    // Set the dark theme before the first paint, so the page does not flash light.
+    try {
+      var th = localStorage.getItem('pp-theme');
+      if (th === 'dark' || (!th && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.dataset.theme = 'dark';
+    } catch (e) { /* storage blocked: the app sets the theme when it starts */ }
+  </script>
 </head>
 <body data-screen="home">
   <div class="border-band" aria-hidden="true"></div>

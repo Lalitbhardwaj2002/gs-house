@@ -1,402 +1,1318 @@
 {
-  "section": "hist-nm2",
-  "questions": [
+ "section": "hist-nm2",
+ "questions": [
+  {
+   "id": "hist-nm2-001",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The Chauri Chaura incident of February 1922 took place in which district of Uttar Pradesh?",
+    "options": [
+     "Deoria",
+     "Basti",
+     "Azamgarh",
+     "Gorakhpur"
+    ],
+    "explanation": "On 4 February 1922 a crowd at Chauri Chaura in Gorakhpur district set fire to the police station, and several policemen were killed. Gandhi called off the Non-Cooperation Movement, and the Congress Working Committee endorsed this decision at Bardoli.",
+    "notes": [
+     "Deoria: a separate district carved out of Gorakhpur in 1946; Chauri Chaura is not in it.",
+     "Basti: an eastern Uttar Pradesh district west of Gorakhpur, not connected with the incident.",
+     "Azamgarh: another eastern Uttar Pradesh district, not connected with the incident.",
+     "Correct: Chauri Chaura lies in Gorakhpur district."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Non-Cooperation Movement",
+     "Chauri Chaura"
+    ],
+    "facts": [
+     "Gandhi was arrested in March 1922 and sentenced to six years' imprisonment.",
+     "The Non-Cooperation programme was approved at the special Calcutta session (September 1920) and endorsed at Nagpur (December 1920)."
+    ]
+   },
+   "hi": {
+    "q": "फरवरी 1922 की चौरी चौरा की घटना उत्तर प्रदेश के किस जिले में हुई?",
+    "options": [
+     "देवरिया",
+     "बस्ती",
+     "आज़मगढ़",
+     "गोरखपुर"
+    ],
+    "explanation": "4 फ़रवरी 1922 को गोरखपुर ज़िले के चौरी चौरा में भीड़ ने पुलिस थाने में आग लगा दी, जिसमें कई पुलिसकर्मी मारे गए। गांधीजी ने असहयोग आंदोलन स्थगित कर दिया और कांग्रेस कार्यसमिति ने बारदोली में इस निर्णय का अनुमोदन किया।",
+    "notes": [
+     "देवरिया: 1946 में गोरखपुर से अलग करके बना ज़िला; चौरी चौरा इसमें नहीं है।",
+     "बस्ती: गोरखपुर के पश्चिम में स्थित पूर्वी उत्तर प्रदेश का ज़िला; इस घटना से संबंधित नहीं।",
+     "आज़मगढ़: पूर्वी उत्तर प्रदेश का एक अन्य ज़िला; इस घटना से संबंधित नहीं।",
+     "सही: चौरी चौरा गोरखपुर ज़िले में स्थित है।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "असहयोग आंदोलन",
+     "चौरी चौरा"
+    ],
+    "facts": [
+     "मार्च 1922 में गांधीजी को गिरफ़्तार कर छह वर्ष के कारावास की सज़ा दी गई।",
+     "असहयोग कार्यक्रम को कलकत्ता के विशेष अधिवेशन (सितंबर 1920) में स्वीकृति और नागपुर अधिवेशन (दिसंबर 1920) में अनुमोदन मिला।"
+    ]
+   },
+   "refs": [
     {
-      "id": "hist-nm2-001",
-      "level": "TGT",
-      "answer": 3,
-      "en": {
-        "q": "The Chauri Chaura incident (February 1922), after which Mahatma Gandhi withdrew the Non-Cooperation Movement, took place in which district of present-day Uttar Pradesh?",
-        "options": [
-          "Deoria",
-          "Basti",
-          "Azamgarh",
-          "Gorakhpur"
-        ],
-        "explanation": "On 4 February 1922 a crowd at Chauri Chaura in Gorakhpur district set fire to the police station, and several policemen were killed. Gandhi called off the Non-Cooperation Movement, and the Congress Working Committee endorsed this decision at Bardoli.",
-        "notes": [
-          "Deoria: a separate district carved out of Gorakhpur in 1946; Chauri Chaura is not in it.",
-          "Basti: an eastern Uttar Pradesh district west of Gorakhpur, not connected with the incident.",
-          "Azamgarh: another eastern Uttar Pradesh district, not connected with the incident.",
-          "Correct: Chauri Chaura lies in Gorakhpur district."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Non-Cooperation Movement",
-          "Chauri Chaura"
-        ],
-        "facts": [
-          "Gandhi was arrested in March 1922 and sentenced to six years' imprisonment.",
-          "The Non-Cooperation programme was approved at the special Calcutta session (September 1920) and endorsed at Nagpur (December 1920)."
-        ]
-      },
-      "hi": {
-        "q": "चौरी चौरा कांड (फ़रवरी 1922), जिसके बाद महात्मा गांधी ने असहयोग आंदोलन वापस ले लिया, वर्तमान उत्तर प्रदेश के किस ज़िले में हुआ था?",
-        "options": [
-          "देवरिया",
-          "बस्ती",
-          "आज़मगढ़",
-          "गोरखपुर"
-        ],
-        "explanation": "4 फ़रवरी 1922 को गोरखपुर ज़िले के चौरी चौरा में भीड़ ने पुलिस थाने में आग लगा दी, जिसमें कई पुलिसकर्मी मारे गए। गांधीजी ने असहयोग आंदोलन स्थगित कर दिया और कांग्रेस कार्यसमिति ने बारदोली में इस निर्णय का अनुमोदन किया।",
-        "notes": [
-          "देवरिया: 1946 में गोरखपुर से अलग करके बना ज़िला; चौरी चौरा इसमें नहीं है।",
-          "बस्ती: गोरखपुर के पश्चिम में स्थित पूर्वी उत्तर प्रदेश का ज़िला; इस घटना से संबंधित नहीं।",
-          "आज़मगढ़: पूर्वी उत्तर प्रदेश का एक अन्य ज़िला; इस घटना से संबंधित नहीं।",
-          "सही: चौरी चौरा गोरखपुर ज़िले में स्थित है।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "असहयोग आंदोलन",
-          "चौरी चौरा"
-        ],
-        "facts": [
-          "मार्च 1922 में गांधीजी को गिरफ़्तार कर छह वर्ष के कारावास की सज़ा दी गई।",
-          "असहयोग कार्यक्रम को कलकत्ता के विशेष अधिवेशन (सितंबर 1920) में स्वीकृति और नागपुर अधिवेशन (दिसंबर 1920) में अनुमोदन मिला।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 136
-        },
-        {
-          "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
-        }
-      ]
+     "book": "fatman",
+     "page": 136
     },
     {
-      "id": "hist-nm2-002",
-      "level": "TGT",
-      "answer": 1,
-      "en": {
-        "q": "Michael O'Dwyer, Lieutenant-Governor of Punjab at the time of the Jallianwala Bagh massacre, was shot dead in London in 1940 by:",
-        "options": [
-          "Bhagat Singh",
-          "Udham Singh",
-          "Madan Lal Dhingra",
-          "Rajguru"
-        ],
-        "explanation": "Udham Singh shot Michael O'Dwyer at Caxton Hall, London, on 13 March 1940 to avenge the massacre of 13 April 1919. He called himself 'Ram Mohammad Singh Azad' and was hanged in July 1940.",
-        "notes": [
-          "Bhagat Singh was executed at Lahore on 23 March 1931 for the killing of J.P. Saunders.",
-          "Correct: Udham Singh assassinated O'Dwyer in 1940.",
-          "Madan Lal Dhingra shot Curzon Wyllie in London in 1909.",
-          "Rajguru was hanged along with Bhagat Singh and Sukhdev in 1931."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Jallianwala Bagh",
-          "Aftermath"
-        ],
-        "facts": [
-          "General Reginald Dyer ordered the firing at Jallianwala Bagh, Amritsar, on Baisakhi day, 13 April 1919.",
-          "Rabindranath Tagore renounced his knighthood in protest against the massacre."
-        ]
-      },
-      "hi": {
-        "q": "जलियाँवाला बाग़ हत्याकांड के समय पंजाब के लेफ़्टिनेंट गवर्नर रहे माइकल ओ'डायर की 1940 में लंदन में किसने गोली मारकर हत्या की?",
-        "options": [
-          "भगत सिंह",
-          "ऊधम सिंह",
-          "मदनलाल ढींगरा",
-          "राजगुरु"
-        ],
-        "explanation": "13 अप्रैल 1919 के हत्याकांड का बदला लेने के लिए ऊधम सिंह ने 13 मार्च 1940 को लंदन के कैक्सटन हॉल में माइकल ओ'डायर को गोली मारी। उन्होंने अपना नाम 'राम मोहम्मद सिंह आज़ाद' रखा था और जुलाई 1940 में उन्हें फाँसी दी गई।",
-        "notes": [
-          "भगत सिंह को जे.पी. सॉन्डर्स की हत्या के मामले में 23 मार्च 1931 को लाहौर में फाँसी दी गई।",
-          "सही: ऊधम सिंह ने 1940 में ओ'डायर की हत्या की।",
-          "मदनलाल ढींगरा ने 1909 में लंदन में कर्ज़न वायली को गोली मारी।",
-          "राजगुरु को 1931 में भगत सिंह और सुखदेव के साथ फाँसी दी गई।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "जलियाँवाला बाग़",
-          "परिणाम"
-        ],
-        "facts": [
-          "13 अप्रैल 1919 को बैसाखी के दिन अमृतसर के जलियाँवाला बाग़ में जनरल रेजिनाल्ड डायर ने गोली चलाने का आदेश दिया।",
-          "इस हत्याकांड के विरोध में रवींद्रनाथ टैगोर ने 'नाइट' की उपाधि लौटा दी।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 136
-        },
-        {
-          "book": "fatman",
-          "page": 133
-        }
-      ]
-    },
-    {
-      "id": "hist-nm2-003",
-      "level": "PGT",
-      "answer": 0,
-      "en": {
-        "q": "Consider the following statements about the Cabinet Mission (1946):\n1. It was headed by Lord Pethick-Lawrence and included Sir Stafford Cripps and A.V. Alexander.\n2. It proposed that a Constituent Assembly be elected by the provincial legislative assemblies.\n3. It recommended the partition of India into two dominions.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "1 and 2 only",
-          "2 and 3 only",
-          "1 and 3 only",
-          "1, 2 and 3"
-        ],
-        "explanation": "The Cabinet Mission sent by Attlee's Labour government was led by Pethick-Lawrence with Cripps and Alexander. It rejected a separate Pakistan, proposed a three-tier federation with groups of provinces, and provided for a Constituent Assembly elected by the provincial assemblies. Partition into two dominions came later, with the Mountbatten Plan of 3 June 1947.",
-        "notes": [
-          "Correct: statements 1 and 2 are right; statement 3 is wrong.",
-          "Wrong: statement 3 is incorrect, because the Mission rejected the demand for Pakistan.",
-          "Wrong: statement 3 is incorrect, and statement 2 is correct.",
-          "Wrong: the Mission did not recommend partition."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "Towards independence",
-          "Cabinet Mission"
-        ],
-        "facts": [
-          "Withdrawing its acceptance of the plan over the grouping question, the Muslim League observed Direct Action Day on 16 August 1946.",
-          "The Mission grouped the provinces into three sections: A (Hindu-majority), B (north-western Muslim-majority) and C (Bengal and Assam)."
-        ]
-      },
-      "hi": {
-        "q": "कैबिनेट मिशन (1946) के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. इसके अध्यक्ष लॉर्ड पैथिक-लॉरेंस थे तथा सर स्टैफ़र्ड क्रिप्स और ए.वी. अलेक्ज़ेंडर इसके सदस्य थे।\n2. इसने प्रस्ताव किया कि संविधान सभा का निर्वाचन प्रांतीय विधानसभाओं द्वारा किया जाए।\n3. इसने भारत को दो डोमिनियनों में विभाजित करने की सिफ़ारिश की।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
-        "options": [
-          "केवल 1 और 2",
-          "केवल 2 और 3",
-          "केवल 1 और 3",
-          "1, 2 और 3"
-        ],
-        "explanation": "एटली की लेबर सरकार द्वारा भेजे गए कैबिनेट मिशन का नेतृत्व पैथिक-लॉरेंस ने किया, क्रिप्स और अलेक्ज़ेंडर इसके सदस्य थे। इसने पृथक पाकिस्तान की माँग अस्वीकार की, प्रांतों के समूहों वाले त्रिस्तरीय संघ का प्रस्ताव रखा और प्रांतीय विधानसभाओं द्वारा निर्वाचित संविधान सभा की व्यवस्था की। दो डोमिनियनों में विभाजन बाद में 3 जून 1947 की माउंटबेटन योजना से आया।",
-        "notes": [
-          "सही: कथन 1 और 2 सही हैं; कथन 3 गलत है।",
-          "गलत: कथन 3 गलत है, क्योंकि मिशन ने पाकिस्तान की माँग अस्वीकार की थी।",
-          "गलत: कथन 3 गलत है और कथन 2 सही है।",
-          "गलत: मिशन ने विभाजन की सिफ़ारिश नहीं की थी।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "स्वतंत्रता की ओर",
-          "कैबिनेट मिशन"
-        ],
-        "facts": [
-          "समूहीकरण के प्रश्न पर योजना की स्वीकृति वापस लेकर मुस्लिम लीग ने 16 अगस्त 1946 को प्रत्यक्ष कार्रवाई दिवस मनाया।",
-          "मिशन ने प्रांतों को तीन समूहों में रखा: A (हिंदू-बहुल), B (उत्तर-पश्चिम के मुस्लिम-बहुल) और C (बंगाल एवं असम)।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 142
-        },
-        {
-          "source": "NCERT Class 12 Themes in Indian History – III, 'Understanding Partition'"
-        }
-      ]
-    },
-    {
-      "id": "hist-nm2-004",
-      "level": "PGT",
-      "answer": 2,
-      "en": {
-        "q": "Match List-I (Organisation) with List-II (Founder) and select the correct answer using the codes given below the lists:\nList-I:\nA. Swaraj Party\nB. Khudai Khidmatgar\nC. Forward Bloc\nD. Congress Socialist Party\nList-II:\n1. Subhas Chandra Bose\n2. Khan Abdul Ghaffar Khan\n3. Acharya Narendra Dev and Jayaprakash Narayan\n4. C.R. Das and Motilal Nehru",
-        "options": [
-          "A-4, B-1, C-2, D-3",
-          "A-3, B-2, C-1, D-4",
-          "A-4, B-2, C-1, D-3",
-          "A-2, B-4, C-3, D-1"
-        ],
-        "explanation": "C.R. Das and Motilal Nehru formed the Swaraj Party in 1923 to contest the council elections. Khan Abdul Ghaffar Khan organised the Khudai Khidmatgars in the North-West Frontier Province (1929), Subhas Chandra Bose formed the Forward Bloc (1939) after resigning as Congress president, and the Congress Socialist Party (1934) was formed by Acharya Narendra Dev, Jayaprakash Narayan and others.",
-        "notes": [
-          "Wrong: Bose founded the Forward Bloc, not the Khudai Khidmatgar.",
-          "Wrong: the Swaraj Party was founded by C.R. Das and Motilal Nehru.",
-          "Correct: Swaraj Party–Das and Nehru, Khudai Khidmatgar–Ghaffar Khan, Forward Bloc–Bose, CSP–Narendra Dev and JP.",
-          "Wrong: Khan Abdul Ghaffar Khan led the Khudai Khidmatgars, not the Swaraj Party."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "1919–1947",
-          "Parties and organisations"
-        ],
-        "facts": [
-          "Khan Abdul Ghaffar Khan was popularly called 'Frontier Gandhi'.",
-          "C.R. Das was president and Motilal Nehru secretary of the Swaraj Party."
-        ]
-      },
-      "hi": {
-        "q": "सूची-I (संगठन) को सूची-II (संस्थापक) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I:\nA. स्वराज पार्टी\nB. खुदाई खिदमतगार\nC. फ़ॉरवर्ड ब्लॉक\nD. कांग्रेस सोशलिस्ट पार्टी\nसूची-II:\n1. सुभाष चंद्र बोस\n2. खान अब्दुल गफ़्फ़ार खान\n3. आचार्य नरेंद्र देव और जयप्रकाश नारायण\n4. सी.आर. दास और मोतीलाल नेहरू",
-        "options": [
-          "A-4, B-1, C-2, D-3",
-          "A-3, B-2, C-1, D-4",
-          "A-4, B-2, C-1, D-3",
-          "A-2, B-4, C-3, D-1"
-        ],
-        "explanation": "सी.आर. दास और मोतीलाल नेहरू ने परिषद चुनाव लड़ने के लिए 1923 में स्वराज पार्टी बनाई। खान अब्दुल गफ़्फ़ार खान ने उत्तर-पश्चिमी सीमा प्रांत में खुदाई खिदमतगार (1929) संगठित किए, सुभाष चंद्र बोस ने कांग्रेस अध्यक्ष पद छोड़ने के बाद फ़ॉरवर्ड ब्लॉक (1939) बनाया, और आचार्य नरेंद्र देव, जयप्रकाश नारायण आदि ने कांग्रेस सोशलिस्ट पार्टी (1934) बनाई।",
-        "notes": [
-          "गलत: बोस ने फ़ॉरवर्ड ब्लॉक बनाया, खुदाई खिदमतगार नहीं।",
-          "गलत: स्वराज पार्टी सी.आर. दास और मोतीलाल नेहरू ने बनाई।",
-          "सही: स्वराज पार्टी–दास व नेहरू, खुदाई खिदमतगार–गफ़्फ़ार खान, फ़ॉरवर्ड ब्लॉक–बोस, सी.एस.पी.–नरेंद्र देव व जे.पी.।",
-          "गलत: खान अब्दुल गफ़्फ़ार खान ने खुदाई खिदमतगार का नेतृत्व किया, स्वराज पार्टी का नहीं।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "1919–1947",
-          "दल एवं संगठन"
-        ],
-        "facts": [
-          "खान अब्दुल गफ़्फ़ार खान को 'सीमांत गांधी' कहा जाता था।",
-          "स्वराज पार्टी के अध्यक्ष सी.आर. दास और सचिव मोतीलाल नेहरू थे।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 136
-        },
-        {
-          "book": "special-topics",
-          "page": 247
-        }
-      ]
-    },
-    {
-      "id": "hist-nm2-005",
-      "level": "Higher",
-      "answer": 1,
-      "en": {
-        "q": "Arrange the following events in chronological order and select the correct answer using the codes given below:\n1. Cripps Mission\n2. Poona Pact\n3. Quit India Resolution\n4. Gandhi–Irwin Pact",
-        "options": [
-          "2, 4, 1, 3",
-          "4, 2, 1, 3",
-          "4, 2, 3, 1",
-          "4, 1, 2, 3"
-        ],
-        "explanation": "The Gandhi–Irwin Pact was signed in March 1931 and the Poona Pact between Gandhi and B.R. Ambedkar in September 1932. The Cripps Mission came in March 1942, and the Quit India Resolution was passed at Bombay on 8 August 1942. Hence 4, 2, 1, 3.",
-        "notes": [
-          "Wrong: the Gandhi–Irwin Pact (1931) came before the Poona Pact (1932).",
-          "Correct: 1931, 1932, March 1942, August 1942.",
-          "Wrong: the Cripps Mission (March 1942) came before the Quit India Resolution (August 1942).",
-          "Wrong: the Poona Pact (1932) came a decade before the Cripps Mission (1942)."
-        ],
-        "path": [
-          "Indian History",
-          "National Movement",
-          "1919–1947",
-          "Chronology"
-        ],
-        "facts": [
-          "The Gandhi–Irwin Pact enabled Gandhi to attend the Second Round Table Conference (1931).",
-          "The Poona Pact gave reserved seats to the Depressed Classes instead of the separate electorates of the Communal Award."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित घटनाओं को कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. क्रिप्स मिशन\n2. पूना समझौता\n3. भारत छोड़ो प्रस्ताव\n4. गांधी–इरविन समझौता",
-        "options": [
-          "2, 4, 1, 3",
-          "4, 2, 1, 3",
-          "4, 2, 3, 1",
-          "4, 1, 2, 3"
-        ],
-        "explanation": "गांधी–इरविन समझौता मार्च 1931 में और गांधीजी तथा बी.आर. आंबेडकर के बीच पूना समझौता सितंबर 1932 में हुआ। क्रिप्स मिशन मार्च 1942 में आया और भारत छोड़ो प्रस्ताव 8 अगस्त 1942 को बंबई में पारित हुआ। अतः सही क्रम 4, 2, 1, 3 है।",
-        "notes": [
-          "गलत: गांधी–इरविन समझौता (1931) पूना समझौते (1932) से पहले हुआ।",
-          "सही: 1931, 1932, मार्च 1942, अगस्त 1942।",
-          "गलत: क्रिप्स मिशन (मार्च 1942) भारत छोड़ो प्रस्ताव (अगस्त 1942) से पहले आया।",
-          "गलत: पूना समझौता (1932) क्रिप्स मिशन (1942) से एक दशक पहले हुआ।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "राष्ट्रीय आंदोलन",
-          "1919–1947",
-          "कालानुक्रम"
-        ],
-        "facts": [
-          "गांधी–इरविन समझौते के बाद गांधीजी द्वितीय गोलमेज़ सम्मेलन (1931) में शामिल हुए।",
-          "पूना समझौते द्वारा सांप्रदायिक पंचाट के पृथक निर्वाचन के स्थान पर दलित वर्गों को आरक्षित सीटें दी गईं।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
-        },
-        {
-          "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
-        }
-      ]
-    },
-    {
-      "id": "hist-nm2-006",
-      "level": "Higher",
-      "answer": 3,
-      "en": {
-        "q": "Consider the following statements regarding the integration of princely states:\n1. Hyderabad was integrated into India after a plebiscite held in 1948.\n2. The accession of Junagadh to India was confirmed by a plebiscite in February 1948.\n3. Maharaja Hari Singh signed the Instrument of Accession of Jammu and Kashmir in October 1947.\nWhich of the statements given above is/are correct?",
-        "options": [
-          "Only 2",
-          "1 and 3 only",
-          "1, 2 and 3",
-          "2 and 3 only"
-        ],
-        "explanation": "Hyderabad was integrated through a military operation (Operation Polo) in September 1948, not by a plebiscite. The Nawab of Junagadh had acceded to Pakistan, but a plebiscite in February 1948 confirmed accession to India, and Maharaja Hari Singh signed the Instrument of Accession on 26 October 1947 after the tribal invasion.",
-        "notes": [
-          "Wrong: statement 3 is also correct.",
-          "Wrong: statement 1 is incorrect, as Hyderabad was integrated by police action.",
-          "Wrong: statement 1 is incorrect.",
-          "Correct: statements 2 and 3 are right; statement 1 is wrong."
-        ],
-        "path": [
-          "Indian History",
-          "Post-Independence India",
-          "Integration of princely states",
-          "Hyderabad, Junagadh and Kashmir"
-        ],
-        "facts": [
-          "Sardar Vallabhbhai Patel, assisted by V.P. Menon, led the integration of the princely states.",
-          "The Radcliffe Line, drawn under Sir Cyril Radcliffe, marked the boundary between India and Pakistan."
-        ]
-      },
-      "hi": {
-        "q": "देशी रियासतों के एकीकरण के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. हैदराबाद का भारत में विलय 1948 में हुए जनमत-संग्रह के बाद हुआ।\n2. जूनागढ़ के भारत में विलय की पुष्टि फ़रवरी 1948 में जनमत-संग्रह द्वारा हुई।\n3. महाराजा हरि सिंह ने अक्टूबर 1947 में जम्मू-कश्मीर के विलय-पत्र पर हस्ताक्षर किए।\nउपर्युक्त कथनों में से कौन-सा/से सही है/हैं?",
-        "options": [
-          "केवल 2",
-          "केवल 1 और 3",
-          "1, 2 और 3",
-          "केवल 2 और 3"
-        ],
-        "explanation": "हैदराबाद का विलय जनमत-संग्रह से नहीं, बल्कि सितंबर 1948 में सैन्य कार्रवाई (ऑपरेशन पोलो) से हुआ। जूनागढ़ के नवाब ने पाकिस्तान में विलय की घोषणा की थी, परंतु फ़रवरी 1948 के जनमत-संग्रह ने भारत में विलय की पुष्टि की; कबायली आक्रमण के बाद महाराजा हरि सिंह ने 26 अक्टूबर 1947 को विलय-पत्र पर हस्ताक्षर किए।",
-        "notes": [
-          "गलत: कथन 3 भी सही है।",
-          "गलत: कथन 1 गलत है, क्योंकि हैदराबाद का विलय पुलिस कार्रवाई से हुआ।",
-          "गलत: कथन 1 गलत है।",
-          "सही: कथन 2 और 3 सही हैं; कथन 1 गलत है।"
-        ],
-        "path": [
-          "भारतीय इतिहास",
-          "स्वातंत्र्योत्तर भारत",
-          "देशी रियासतों का एकीकरण",
-          "हैदराबाद, जूनागढ़ और कश्मीर"
-        ],
-        "facts": [
-          "देशी रियासतों के एकीकरण का नेतृत्व सरदार वल्लभभाई पटेल ने वी.पी. मेनन की सहायता से किया।",
-          "सर सिरिल रैडक्लिफ़ के अधीन खींची गई रैडक्लिफ़ रेखा भारत और पाकिस्तान की सीमा बनी।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "NCERT Class 12 Politics in India since Independence, 'Challenges of Nation Building'"
-        },
-        {
-          "book": "fatman",
-          "page": 142
-        }
-      ]
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
     }
-  ]
+   ]
+  },
+  {
+   "id": "hist-nm2-002",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Michael O'Dwyer, Lieutenant-Governor of Punjab at the time of the Jallianwala Bagh massacre, was shot dead in London in 1940 by:",
+    "options": [
+     "Bhagat Singh",
+     "Udham Singh",
+     "Madan Lal Dhingra",
+     "Rajguru"
+    ],
+    "explanation": "Udham Singh shot Michael O'Dwyer at Caxton Hall, London, on 13 March 1940 to avenge the massacre of 13 April 1919. He called himself 'Ram Mohammad Singh Azad' and was hanged in July 1940.",
+    "notes": [
+     "Bhagat Singh was executed at Lahore on 23 March 1931 for the killing of J.P. Saunders.",
+     "Correct: Udham Singh assassinated O'Dwyer in 1940.",
+     "Madan Lal Dhingra shot Curzon Wyllie in London in 1909.",
+     "Rajguru was hanged along with Bhagat Singh and Sukhdev in 1931."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Jallianwala Bagh",
+     "Aftermath"
+    ],
+    "facts": [
+     "General Reginald Dyer ordered the firing at Jallianwala Bagh, Amritsar, on Baisakhi day, 13 April 1919.",
+     "Rabindranath Tagore renounced his knighthood in protest against the massacre."
+    ]
+   },
+   "hi": {
+    "q": "जलियाँवाला बाग़ हत्याकांड के समय पंजाब के लेफ़्टिनेंट गवर्नर रहे माइकल ओ'डायर की 1940 में लंदन में किसने गोली मारकर हत्या की?",
+    "options": [
+     "भगत सिंह",
+     "ऊधम सिंह",
+     "मदनलाल ढींगरा",
+     "राजगुरु"
+    ],
+    "explanation": "13 अप्रैल 1919 के हत्याकांड का बदला लेने के लिए ऊधम सिंह ने 13 मार्च 1940 को लंदन के कैक्सटन हॉल में माइकल ओ'डायर को गोली मारी। उन्होंने अपना नाम 'राम मोहम्मद सिंह आज़ाद' रखा था और जुलाई 1940 में उन्हें फाँसी दी गई।",
+    "notes": [
+     "भगत सिंह को जे.पी. सॉन्डर्स की हत्या के मामले में 23 मार्च 1931 को लाहौर में फाँसी दी गई।",
+     "सही: ऊधम सिंह ने 1940 में ओ'डायर की हत्या की।",
+     "मदनलाल ढींगरा ने 1909 में लंदन में कर्ज़न वायली को गोली मारी।",
+     "राजगुरु को 1931 में भगत सिंह और सुखदेव के साथ फाँसी दी गई।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "जलियाँवाला बाग़",
+     "परिणाम"
+    ],
+    "facts": [
+     "13 अप्रैल 1919 को बैसाखी के दिन अमृतसर के जलियाँवाला बाग़ में जनरल रेजिनाल्ड डायर ने गोली चलाने का आदेश दिया।",
+     "इस हत्याकांड के विरोध में रवींद्रनाथ टैगोर ने 'नाइट' की उपाधि लौटा दी।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 136
+    },
+    {
+     "book": "fatman",
+     "page": 133
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-003",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The Muslim League observed 'Direct Action Day' on:",
+    "options": [
+     "16 August 1946",
+     "2 September 1946",
+     "9 December 1946",
+     "3 June 1947"
+    ],
+    "explanation": "After withdrawing its acceptance of the Cabinet Mission Plan over the grouping question, the Muslim League observed Direct Action Day on 16 August 1946.",
+    "notes": [
+     "The League observed it after withdrawing its acceptance of the Cabinet Mission Plan.",
+     "The Interim Government was formed on this day.",
+     "The Constituent Assembly first met on this day.",
+     "The Mountbatten Plan was announced on this day."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Towards independence",
+     "Cabinet Mission"
+    ],
+    "facts": [
+     "Direct Action Day set off large-scale communal violence in Calcutta.",
+     "The Mission grouped the provinces into three sections: A (Hindu-majority), B (north-western Muslim-majority) and C (Bengal and Assam)."
+    ]
+   },
+   "hi": {
+    "q": "मुस्लिम लीग ने 'प्रत्यक्ष कार्यवाही दिवस' कब मनाया?",
+    "options": [
+     "16 अगस्त 1946",
+     "2 सितंबर 1946",
+     "9 दिसंबर 1946",
+     "3 जून 1947"
+    ],
+    "explanation": "प्रांतों के समूहीकरण के प्रश्न पर कैबिनेट मिशन योजना की स्वीकृति वापस लेने के बाद मुस्लिम लीग ने 16 अगस्त 1946 को प्रत्यक्ष कार्यवाही दिवस मनाया।",
+    "notes": [
+     "कैबिनेट मिशन योजना की स्वीकृति वापस लेने के बाद लीग ने यह दिवस मनाया।",
+     "इस दिन अंतरिम सरकार का गठन हुआ।",
+     "इस दिन संविधान सभा की पहली बैठक हुई।",
+     "इस दिन माउंटबेटन योजना घोषित हुई।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "स्वतंत्रता की ओर",
+     "कैबिनेट मिशन"
+    ],
+    "facts": [
+     "प्रत्यक्ष कार्यवाही दिवस पर कलकत्ता में बड़े पैमाने पर सांप्रदायिक हिंसा भड़क उठी।",
+     "मिशन ने प्रांतों को तीन समूहों में रखा: A (हिंदू-बहुल), B (उत्तर-पश्चिम के मुस्लिम-बहुल) और C (बंगाल एवं असम)।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 142
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Understanding Partition'"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-004",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The Khudai Khidmatgar movement was organised by:",
+    "options": [
+     "Maulana Abul Kalam Azad",
+     "Hakim Ajmal Khan",
+     "Khan Abdul Ghaffar Khan",
+     "M.A. Ansari"
+    ],
+    "explanation": "Khan Abdul Ghaffar Khan, the 'Frontier Gandhi', organised the Khudai Khidmatgars in 1929. Its volunteers were popularly called the 'Red Shirts'.",
+    "notes": [
+     "Congress leader and first Education Minister of India.",
+     "A founder of Jamia Millia Islamia.",
+     "'Frontier Gandhi'; organised it in the North-West Frontier Province in 1929.",
+     "Congress President in 1927."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1919–1947",
+     "Parties and organisations"
+    ],
+    "facts": [
+     "Khan Abdul Ghaffar Khan was popularly called 'Frontier Gandhi'.",
+     "C.R. Das was president and Motilal Nehru secretary of the Swaraj Party."
+    ]
+   },
+   "hi": {
+    "q": "खुदाई खिदमतगार आंदोलन का संगठन किसने किया?",
+    "options": [
+     "मौलाना अबुल कलाम आजाद",
+     "हकीम अजमल खाँ",
+     "खान अब्दुल गफ्फार खाँ",
+     "एम.ए. अंसारी"
+    ],
+    "explanation": "'सीमांत गांधी' खान अब्दुल गफ्फार खाँ ने 1929 में खुदाई खिदमतगारों का संगठन किया। इसके स्वयंसेवक 'लाल कुर्ती' (रेड शर्ट्स) कहलाते थे।",
+    "notes": [
+     "कांग्रेस नेता एवं भारत के प्रथम शिक्षा मंत्री।",
+     "जामिया मिल्लिया इस्लामिया के संस्थापकों में से एक।",
+     "'सीमांत गांधी'; 1929 में उत्तर-पश्चिम सीमा प्रांत में इसका संगठन किया।",
+     "1927 में कांग्रेस के अध्यक्ष रहे।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1919–1947",
+     "दल एवं संगठन"
+    ],
+    "facts": [
+     "खान अब्दुल गफ़्फ़ार खान को 'सीमांत गांधी' कहा जाता था।",
+     "स्वराज पार्टी के अध्यक्ष सी.आर. दास और सचिव मोतीलाल नेहरू थे।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 136
+    },
+    {
+     "book": "special-topics",
+     "page": 247
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-005",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "The Poona Pact of 1932 modified the Communal Award by giving the Depressed Classes:",
+    "options": [
+     "Separate electorates with more seats",
+     "Reserved seats within a joint electorate",
+     "Seats filled by the Governor's nomination",
+     "Representation only in the Central Legislature"
+    ],
+    "explanation": "The Poona Pact between Gandhi and B.R. Ambedkar (September 1932) gave the Depressed Classes reserved seats under a joint electorate instead of separate electorates.",
+    "notes": [
+     "Separate electorates were given up under the Pact.",
+     "Reserved seats replaced the separate electorates of the Communal Award.",
+     "Not a provision of the Pact.",
+     "The Pact dealt mainly with seats in the provincial legislatures."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "1919–1947",
+     "Poona Pact"
+    ],
+    "facts": [
+     "The Pact reserved 148 seats in the provincial legislatures for the Depressed Classes, against 71 under the Communal Award.",
+     "The Communal Award was announced by the British Prime Minister Ramsay MacDonald in August 1932."
+    ]
+   },
+   "hi": {
+    "q": "1932 के पूना समझौते ने सांप्रदायिक पंचाट में संशोधन करके दलित वर्गों को क्या प्रदान किया?",
+    "options": [
+     "अधिक सीटों के साथ पृथक निर्वाचक मंडल",
+     "संयुक्त निर्वाचक मंडल के अंतर्गत आरक्षित सीटें",
+     "गवर्नर के मनोनयन से भरी जाने वाली सीटें",
+     "केवल केंद्रीय विधानमंडल में प्रतिनिधित्व"
+    ],
+    "explanation": "गांधी एवं बी.आर. अंबेडकर के बीच पूना समझौते (सितंबर 1932) में दलित वर्गों को पृथक निर्वाचक मंडल के स्थान पर संयुक्त निर्वाचक मंडल में आरक्षित सीटें दी गईं।",
+    "notes": [
+     "समझौते में पृथक निर्वाचक मंडल छोड़ दिया गया।",
+     "सांप्रदायिक पंचाट के पृथक निर्वाचन के स्थान पर आरक्षित सीटें दी गईं।",
+     "यह समझौते का प्रावधान नहीं था।",
+     "समझौता मुख्यतः प्रांतीय विधानमंडलों की सीटों से संबंधित था।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "1919–1947",
+     "पूना समझौता"
+    ],
+    "facts": [
+     "समझौते में प्रांतीय विधानमंडलों में दलित वर्गों के लिए 148 सीटें आरक्षित की गईं, जबकि सांप्रदायिक पंचाट में 71 सीटें थीं।",
+     "सांप्रदायिक पंचाट की घोषणा ब्रिटिश प्रधानमंत्री रैम्से मैकडोनाल्ड ने अगस्त 1932 में की थी।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-006",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Which constitutional arrangement did the Cabinet Mission Plan of 1946 propose for India?",
+    "options": [
+     "Partition into two sovereign dominions",
+     "A unitary state with a strong centre",
+     "Separate independence for each province",
+     "A three-tier Union with groups of provinces"
+    ],
+    "explanation": "The Cabinet Mission rejected a separate Pakistan and proposed a three-tier federation with groups of provinces and a Constituent Assembly elected by the provincial assemblies.",
+    "notes": [
+     "This came with the Mountbatten Plan of 3 June 1947.",
+     "The Plan proposed a weak centre with limited subjects.",
+     "Not proposed by the Mission.",
+     "The Mission rejected Pakistan and grouped provinces into sections A, B and C."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Towards independence",
+     "Cabinet Mission"
+    ],
+    "facts": [
+     "The Cabinet Mission (1946) consisted of Pethick-Lawrence, Stafford Cripps and A.V. Alexander.",
+     "Under the Plan the Constituent Assembly was to be elected by the provincial legislative assemblies."
+    ]
+   },
+   "hi": {
+    "q": "1946 की कैबिनेट मिशन योजना ने भारत के लिए कौन-सी संवैधानिक व्यवस्था प्रस्तावित की?",
+    "options": [
+     "दो संप्रभु अधिराज्यों में विभाजन",
+     "सशक्त केंद्र वाला एकात्मक राज्य",
+     "प्रत्येक प्रांत की पृथक स्वतंत्रता",
+     "प्रांतों के समूहों सहित त्रि-स्तरीय संघ"
+    ],
+    "explanation": "कैबिनेट मिशन ने पृथक पाकिस्तान की माँग अस्वीकार की और प्रांतों के समूहों सहित त्रि-स्तरीय संघ तथा प्रांतीय विधानसभाओं द्वारा निर्वाचित संविधान सभा का प्रस्ताव किया।",
+    "notes": [
+     "यह 3 जून 1947 की माउंटबेटन योजना से आया।",
+     "योजना में सीमित विषयों वाला कमजोर केंद्र प्रस्तावित था।",
+     "मिशन ने यह प्रस्ताव नहीं किया।",
+     "मिशन ने पाकिस्तान की माँग अस्वीकार की और प्रांतों को समूह क, ख, ग में बाँटा।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "स्वतंत्रता की ओर",
+     "कैबिनेट मिशन"
+    ],
+    "facts": [
+     "कैबिनेट मिशन (1946) के सदस्य पेथिक-लॉरेंस, स्टैफ़र्ड क्रिप्स और ए.वी. अलेक्ज़ेंडर थे।",
+     "योजना के अनुसार संविधान सभा का निर्वाचन प्रांतीय विधानसभाओं द्वारा होना था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Understanding Partition'"
+    },
+    {
+     "book": "fatman",
+     "page": 142
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Bhagat Singh and Batukeshwar Dutt threw bombs in the Central Legislative Assembly at Delhi in:",
+    "options": [
+     "1929",
+     "1928",
+     "1931",
+     "1926"
+    ],
+    "explanation": "On 8 April 1929 Bhagat Singh and Batukeshwar Dutt threw harmless bombs in the Central Legislative Assembly to protest against the Public Safety Bill and the Trade Disputes Bill. They raised the slogan 'Inquilab Zindabad' and courted arrest.",
+    "notes": [
+     "Correct: they threw the bombs on 8 April 1929.",
+     "In December 1928 the police officer J.P. Saunders was shot at Lahore.",
+     "On 23 March 1931 Bhagat Singh, Sukhdev and Rajguru were hanged at Lahore.",
+     "In 1926 Bhagat Singh helped to found the Naujawan Bharat Sabha at Lahore."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Revolutionary movement",
+     "Assembly Bomb Case"
+    ],
+    "facts": [
+     "Their stated aim was 'to make the deaf hear'.",
+     "Both were sentenced to transportation for life in the Assembly Bomb Case."
+    ]
+   },
+   "hi": {
+    "q": "भगत सिंह और बटुकेश्वर दत्त ने दिल्ली की केंद्रीय विधानसभा में बम कब फेंके?",
+    "options": [
+     "1929",
+     "1928",
+     "1931",
+     "1926"
+    ],
+    "explanation": "8 अप्रैल 1929 को भगत सिंह और बटुकेश्वर दत्त ने पब्लिक सेफ्टी बिल एवं ट्रेड डिस्प्यूट्स बिल के विरोध में केंद्रीय विधानसभा में हानिरहित बम फेंके। उन्होंने 'इंकलाब जिंदाबाद' का नारा लगाया और स्वयं गिरफ्तारी दी।",
+    "notes": [
+     "सही: उन्होंने 8 अप्रैल 1929 को बम फेंके।",
+     "दिसंबर 1928 में लाहौर में पुलिस अधिकारी जे.पी. सॉन्डर्स को गोली मारी गई।",
+     "23 मार्च 1931 को लाहौर में भगत सिंह, सुखदेव एवं राजगुरु को फाँसी दी गई।",
+     "1926 में भगत सिंह ने लाहौर में नौजवान भारत सभा की स्थापना में भाग लिया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "क्रांतिकारी आंदोलन",
+     "असेंबली बम कांड"
+    ],
+    "facts": [
+     "उनका घोषित उद्देश्य 'बहरों को सुनाना' था।",
+     "असेंबली बम कांड में दोनों को आजीवन कारावास का दंड मिला।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 8 Our Pasts – III, 'The Making of the National Movement: 1870s–1947'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Mahatma Gandhi began the Dandi March on 12 March 1930 from:",
+    "options": [
+     "Wardha",
+     "Sabarmati Ashram",
+     "Bardoli",
+     "Champaran"
+    ],
+    "explanation": "Gandhi marched from Sabarmati Ashram at Ahmedabad to Dandi on the Gujarat coast, where he broke the salt law on 6 April 1930. This began the Civil Disobedience Movement.",
+    "notes": [
+     "Gandhi settled at Wardha later, in the 1930s.",
+     "He set out with 78 followers.",
+     "Bardoli was the scene of the peasant satyagraha of 1928.",
+     "Champaran was the scene of the satyagraha of 1917."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Gandhian movements"
+    ],
+    "facts": [
+     "The march covered about 390 km in 24 days.",
+     "Lord Irwin was the Viceroy at the time."
+    ]
+   },
+   "hi": {
+    "q": "महात्मा गांधी ने 12 मार्च 1930 को दांडी यात्रा कहाँ से आरंभ की?",
+    "options": [
+     "वर्धा",
+     "साबरमती आश्रम",
+     "बारदोली",
+     "चंपारण"
+    ],
+    "explanation": "गांधी अहमदाबाद के साबरमती आश्रम से गुजरात तट के दांडी तक पैदल गए, जहाँ उन्होंने 6 अप्रैल 1930 को नमक कानून तोड़ा। इससे सविनय अवज्ञा आंदोलन आरंभ हुआ।",
+    "notes": [
+     "गांधी बाद में, 1930 के दशक में, वर्धा में बसे।",
+     "वे 78 अनुयायियों के साथ निकले।",
+     "बारदोली 1928 के किसान सत्याग्रह का स्थल था।",
+     "चंपारण 1917 के सत्याग्रह का स्थल था।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "गांधीवादी आंदोलन"
+    ],
+    "facts": [
+     "यह यात्रा 24 दिन में लगभग 390 किमी की थी।",
+     "उस समय लॉर्ड इरविन वायसराय था।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 82
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Mahatma Gandhi gave the call 'Do or Die' during the:",
+    "options": [
+     "Non-Cooperation Movement",
+     "Civil Disobedience Movement",
+     "Quit India Movement",
+     "Champaran Satyagraha"
+    ],
+    "explanation": "On 8 August 1942 the All India Congress Committee passed the Quit India resolution at the Gowalia Tank Maidan, Bombay. Gandhi then gave the mantra 'Do or Die'.",
+    "notes": [
+     "The Non-Cooperation Movement was launched in 1920.",
+     "The Civil Disobedience Movement began with the Dandi March in 1930.",
+     "He gave the call at Bombay on 8 August 1942.",
+     "The Champaran Satyagraha took place in 1917."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Gandhian movements"
+    ],
+    "facts": [
+     "The leaders were arrested early on 9 August 1942.",
+     "Aruna Asaf Ali hoisted the flag at the Gowalia Tank Maidan."
+    ]
+   },
+   "hi": {
+    "q": "महात्मा गांधी ने 'करो या मरो' का आह्वान किस आंदोलन के दौरान किया?",
+    "options": [
+     "असहयोग आंदोलन",
+     "सविनय अवज्ञा आंदोलन",
+     "भारत छोड़ो आंदोलन",
+     "चंपारण सत्याग्रह"
+    ],
+    "explanation": "8 अगस्त 1942 को अखिल भारतीय कांग्रेस समिति ने बंबई के ग्वालिया टैंक मैदान में भारत छोड़ो प्रस्ताव पारित किया। तब गांधी ने 'करो या मरो' का मंत्र दिया।",
+    "notes": [
+     "असहयोग आंदोलन 1920 में आरंभ हुआ।",
+     "सविनय अवज्ञा आंदोलन 1930 में दांडी यात्रा से आरंभ हुआ।",
+     "उन्होंने यह आह्वान 8 अगस्त 1942 को बंबई में किया।",
+     "चंपारण सत्याग्रह 1917 में हुआ।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "गांधीवादी आंदोलन"
+    ],
+    "facts": [
+     "नेताओं को 9 अगस्त 1942 की सुबह गिरफ्तार कर लिया गया।",
+     "अरुणा आसफ अली ने ग्वालिया टैंक मैदान में झंडा फहराया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 90
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The resolution of 'Purna Swaraj' was passed at the Lahore session of the Congress in 1929, which was presided over by:",
+    "options": [
+     "Motilal Nehru",
+     "Mahatma Gandhi",
+     "Subhas Chandra Bose",
+     "Jawaharlal Nehru"
+    ],
+    "explanation": "The Lahore session of December 1929, presided over by Jawaharlal Nehru, declared complete independence (Purna Swaraj) to be the goal of the Congress. 26 January 1930 was observed as Independence Day.",
+    "notes": [
+     "Motilal Nehru presided over the Calcutta session of 1928.",
+     "Gandhi presided over only the Belgaum session of 1924.",
+     "Subhas Chandra Bose presided over the sessions of 1938 and 1939.",
+     "The tricolour was hoisted on the bank of the Ravi."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Gandhian movements"
+    ],
+    "facts": [
+     "The session authorised the launching of civil disobedience.",
+     "The Constitution was brought into force on 26 January 1950 to honour this date."
+    ]
+   },
+   "hi": {
+    "q": "'पूर्ण स्वराज' का प्रस्ताव 1929 के कांग्रेस के लाहौर अधिवेशन में पारित हुआ, जिसकी अध्यक्षता किसने की?",
+    "options": [
+     "मोतीलाल नेहरू",
+     "महात्मा गांधी",
+     "सुभाष चंद्र बोस",
+     "जवाहरलाल नेहरू"
+    ],
+    "explanation": "जवाहरलाल नेहरू की अध्यक्षता में दिसंबर 1929 के लाहौर अधिवेशन ने पूर्ण स्वराज को कांग्रेस का लक्ष्य घोषित किया। 26 जनवरी 1930 को स्वतंत्रता दिवस मनाया गया।",
+    "notes": [
+     "मोतीलाल नेहरू ने 1928 के कलकत्ता अधिवेशन की अध्यक्षता की।",
+     "गांधी ने केवल 1924 के बेलगाम अधिवेशन की अध्यक्षता की।",
+     "सुभाष चंद्र बोस ने 1938 एवं 1939 के अधिवेशनों की अध्यक्षता की।",
+     "रावी के तट पर तिरंगा फहराया गया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "गांधीवादी आंदोलन"
+    ],
+    "facts": [
+     "अधिवेशन ने सविनय अवज्ञा आरंभ करने का अधिकार दिया।",
+     "इसी तिथि के सम्मान में संविधान 26 जनवरी 1950 को लागू किया गया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 82
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Who is known as the 'Iron Man of India' for his role in integrating the princely states?",
+    "options": [
+     "Sardar Vallabhbhai Patel",
+     "Jawaharlal Nehru",
+     "Dr. Rajendra Prasad",
+     "V. P. Menon"
+    ],
+    "explanation": "Sardar Vallabhbhai Patel, as the minister in charge of the States, brought more than 560 princely states into the Indian Union. He is called the 'Iron Man of India'.",
+    "notes": [
+     "He was the first Deputy Prime Minister and Home Minister.",
+     "Nehru was the first Prime Minister.",
+     "Dr. Rajendra Prasad was the first President.",
+     "V. P. Menon was the Secretary of the States Ministry and assisted him."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Integration of states"
+    ],
+    "facts": [
+     "His birthday, 31 October, is observed as National Unity Day.",
+     "The title 'Sardar' was given to him after the Bardoli Satyagraha of 1928."
+    ]
+   },
+   "hi": {
+    "q": "रियासतों के एकीकरण में अपनी भूमिका के लिए 'भारत का लौह पुरुष' किसे कहा जाता है?",
+    "options": [
+     "सरदार वल्लभभाई पटेल",
+     "जवाहरलाल नेहरू",
+     "डॉ. राजेंद्र प्रसाद",
+     "वी. पी. मेनन"
+    ],
+    "explanation": "रियासतों के प्रभारी मंत्री के रूप में सरदार वल्लभभाई पटेल ने 560 से अधिक रियासतों को भारतीय संघ में मिलाया। उन्हें 'भारत का लौह पुरुष' कहा जाता है।",
+    "notes": [
+     "वे पहले उप प्रधानमंत्री एवं गृह मंत्री थे।",
+     "नेहरू पहले प्रधानमंत्री थे।",
+     "डॉ. राजेंद्र प्रसाद पहले राष्ट्रपति थे।",
+     "वी. पी. मेनन रियासत मंत्रालय के सचिव थे और उन्होंने उनकी सहायता की।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "रियासतों का एकीकरण"
+    ],
+    "facts": [
+     "उनका जन्मदिन 31 अक्टूबर राष्ट्रीय एकता दिवस के रूप में मनाया जाता है।",
+     "'सरदार' की उपाधि उन्हें 1928 के बारदोली सत्याग्रह के बाद मिली।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Indians boycotted the Simon Commission (1927) mainly because:",
+    "options": [
+     "It proposed the partition of India",
+     "It had no Indian member",
+     "It recommended separate electorates",
+     "It rejected the demand for Dominion Status"
+    ],
+    "explanation": "The Simon Commission was appointed in 1927 to report on constitutional reforms, but all its seven members were British. Indians saw this as an insult and greeted it with the slogan 'Simon Go Back'.",
+    "notes": [
+     "The Commission made no such proposal.",
+     "All its seven members were British.",
+     "Separate electorates were not the reason for the boycott.",
+     "The boycott began before the Commission made any recommendation."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Gandhian movements"
+    ],
+    "facts": [
+     "Lala Lajpat Rai was injured in a lathi charge at Lahore during a protest against it.",
+     "The Commission arrived in India in February 1928."
+    ]
+   },
+   "hi": {
+    "q": "भारतीयों ने साइमन कमीशन (1927) का बहिष्कार मुख्यतः किस कारण किया?",
+    "options": [
+     "इसने भारत के विभाजन का प्रस्ताव किया",
+     "इसमें कोई भारतीय सदस्य नहीं था",
+     "इसने पृथक निर्वाचक मंडल की संस्तुति की",
+     "इसने डोमिनियन स्टेटस की माँग अस्वीकार की"
+    ],
+    "explanation": "साइमन कमीशन 1927 में संवैधानिक सुधारों पर प्रतिवेदन देने के लिए नियुक्त हुआ, किंतु इसके सातों सदस्य अंग्रेज थे। भारतीयों ने इसे अपमान माना और 'साइमन वापस जाओ' के नारे से इसका स्वागत किया।",
+    "notes": [
+     "कमीशन ने ऐसा कोई प्रस्ताव नहीं किया।",
+     "इसके सातों सदस्य अंग्रेज थे।",
+     "पृथक निर्वाचक मंडल बहिष्कार का कारण नहीं था।",
+     "बहिष्कार कमीशन की किसी संस्तुति से पहले आरंभ हुआ।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "गांधीवादी आंदोलन"
+    ],
+    "facts": [
+     "इसके विरोध में लाहौर में लाठीचार्ज में लाला लाजपत राय घायल हुए।",
+     "कमीशन फरवरी 1928 में भारत पहुँचा।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-013",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Mahatma Gandhi's first satyagraha in India, undertaken in 1917 for the indigo cultivators, was at:",
+    "options": [
+     "Kheda",
+     "Ahmedabad",
+     "Champaran",
+     "Bardoli"
+    ],
+    "explanation": "Gandhi went to Champaran in Bihar in 1917 to take up the cause of the peasants forced to grow indigo under the tinkathia system. It was his first satyagraha in India.",
+    "notes": [
+     "The Kheda Satyagraha of 1918 was a no-revenue campaign.",
+     "At Ahmedabad in 1918 he led the mill workers and went on a fast.",
+     "Raj Kumar Shukla had invited him there.",
+     "The Bardoli Satyagraha of 1928 was led by Vallabhbhai Patel."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Gandhian movements"
+    ],
+    "facts": [
+     "Under the tinkathia system, indigo had to be grown on three-twentieths of the land.",
+     "Rajendra Prasad and J. B. Kripalani worked with him there."
+    ]
+   },
+   "hi": {
+    "q": "1917 में नील की खेती करने वाले किसानों के लिए किया गया महात्मा गांधी का भारत में पहला सत्याग्रह कहाँ हुआ?",
+    "options": [
+     "खेड़ा",
+     "अहमदाबाद",
+     "चंपारण",
+     "बारदोली"
+    ],
+    "explanation": "गांधी 1917 में बिहार के चंपारण गए, जहाँ तिनकठिया पद्धति के अंतर्गत नील उगाने को विवश किसानों का प्रश्न उठाया। यह भारत में उनका पहला सत्याग्रह था।",
+    "notes": [
+     "1918 का खेड़ा सत्याग्रह कर न देने का अभियान था।",
+     "1918 में अहमदाबाद में उन्होंने मिल मजदूरों का नेतृत्व किया और अनशन किया।",
+     "राजकुमार शुक्ल ने उन्हें वहाँ आमंत्रित किया था।",
+     "1928 के बारदोली सत्याग्रह का नेतृत्व वल्लभभाई पटेल ने किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "गांधीवादी आंदोलन"
+    ],
+    "facts": [
+     "तिनकठिया पद्धति में भूमि के 3/20 भाग पर नील उगाना अनिवार्य था।",
+     "राजेंद्र प्रसाद एवं जे. बी. कृपलानी ने वहाँ उनके साथ कार्य किया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 77
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-014",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The Karachi session of the Congress (1931), which adopted the resolution on Fundamental Rights and Economic Policy, was presided over by:",
+    "options": [
+     "Jawaharlal Nehru",
+     "Rajendra Prasad",
+     "Abul Kalam Azad",
+     "Vallabhbhai Patel"
+    ],
+    "explanation": "Vallabhbhai Patel presided over the Karachi session of March 1931. The session adopted the resolution on Fundamental Rights and Economic Policy, which set out the Congress programme for a free India.",
+    "notes": [
+     "Nehru drafted the resolution on Fundamental Rights.",
+     "He presided over the Bombay session of 1934.",
+     "He presided over the Ramgarh session of 1940.",
+     "Correct: Patel presided at Karachi in March 1931."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Gandhian movements",
+     "Karachi session"
+    ],
+    "facts": [
+     "The session met only days after Bhagat Singh, Sukhdev and Rajguru were hanged.",
+     "The resolution promised universal adult franchise and free primary education."
+    ]
+   },
+   "hi": {
+    "q": "मौलिक अधिकारों एवं आर्थिक नीति का प्रस्ताव पारित करने वाले कांग्रेस के कराची अधिवेशन (1931) की अध्यक्षता किसने की?",
+    "options": [
+     "जवाहरलाल नेहरू",
+     "राजेंद्र प्रसाद",
+     "अबुल कलाम आजाद",
+     "वल्लभभाई पटेल"
+    ],
+    "explanation": "मार्च 1931 के कराची अधिवेशन की अध्यक्षता वल्लभभाई पटेल ने की। इस अधिवेशन ने मौलिक अधिकारों एवं आर्थिक नीति का प्रस्ताव पारित किया, जिसमें स्वतंत्र भारत के लिए कांग्रेस का कार्यक्रम प्रस्तुत किया गया।",
+    "notes": [
+     "नेहरू ने मौलिक अधिकारों का प्रस्ताव तैयार किया।",
+     "उन्होंने 1934 के बंबई अधिवेशन की अध्यक्षता की।",
+     "उन्होंने 1940 के रामगढ़ अधिवेशन की अध्यक्षता की।",
+     "सही: पटेल ने मार्च 1931 में कराची अधिवेशन की अध्यक्षता की।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "गांधीवादी आंदोलन",
+     "कराची अधिवेशन"
+    ],
+    "facts": [
+     "यह अधिवेशन भगत सिंह, सुखदेव एवं राजगुरु की फाँसी के कुछ ही दिन बाद हुआ।",
+     "प्रस्ताव में सार्वभौमिक वयस्क मताधिकार एवं निःशुल्क प्राथमिक शिक्षा का वचन था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "Who founded the Forward Bloc in 1939 after resigning as President of the Congress?",
+    "options": [
+     "Subhas Chandra Bose",
+     "Jayaprakash Narayan",
+     "M. N. Roy",
+     "Rash Behari Bose"
+    ],
+    "explanation": "Subhas Chandra Bose was re-elected Congress President in 1939 by defeating Pattabhi Sitaramayya, but resigned after differences with Gandhi's supporters. He then founded the Forward Bloc.",
+    "notes": [
+     "He had presided over the Tripuri session of 1939.",
+     "Jayaprakash Narayan was a leader of the Congress Socialist Party.",
+     "M. N. Roy founded the Radical Democratic Party.",
+     "Rash Behari Bose worked from Japan."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Towards independence"
+    ],
+    "facts": [
+     "He escaped from India in 1941.",
+     "He took command of the Indian National Army in 1943."
+    ]
+   },
+   "hi": {
+    "q": "कांग्रेस अध्यक्ष पद से त्यागपत्र देने के बाद 1939 में फॉरवर्ड ब्लॉक की स्थापना किसने की?",
+    "options": [
+     "सुभाष चंद्र बोस",
+     "जयप्रकाश नारायण",
+     "एम. एन. राय",
+     "रास बिहारी बोस"
+    ],
+    "explanation": "सुभाष चंद्र बोस 1939 में पट्टाभि सीतारमैया को हराकर पुनः कांग्रेस अध्यक्ष चुने गए, किंतु गांधी के समर्थकों से मतभेद के बाद उन्होंने त्यागपत्र दे दिया। इसके बाद उन्होंने फॉरवर्ड ब्लॉक की स्थापना की।",
+    "notes": [
+     "उन्होंने 1939 के त्रिपुरी अधिवेशन की अध्यक्षता की थी।",
+     "जयप्रकाश नारायण कांग्रेस सोशलिस्ट पार्टी के नेता थे।",
+     "एम. एन. राय ने रेडिकल डेमोक्रेटिक पार्टी बनाई।",
+     "रास बिहारी बोस ने जापान से कार्य किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "स्वतंत्रता की ओर"
+    ],
+    "facts": [
+     "वे 1941 में भारत से निकल गए।",
+     "उन्होंने 1943 में आजाद हिंद फौज की कमान सँभाली।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The Kakori train action of 9 August 1925 was carried out by members of the:",
+    "options": [
+     "Anushilan Samiti",
+     "Hindustan Republican Association",
+     "Ghadar Party",
+     "Indian Republican Army"
+    ],
+    "explanation": "Members of the Hindustan Republican Association stopped a train at Kakori, near Lucknow, and took the Government treasury it carried. Ram Prasad Bismil, Ashfaqulla Khan, Rajendra Lahiri and Roshan Singh were hanged in the case.",
+    "notes": [
+     "The Anushilan Samiti was a revolutionary society of Bengal.",
+     "Ram Prasad Bismil led the action.",
+     "The Ghadar Party worked among Indians abroad.",
+     "The Indian Republican Army of Surya Sen raided the Chittagong armoury in 1930."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Revolutionary movement"
+    ],
+    "facts": [
+     "The Association was renamed the Hindustan Socialist Republican Association in 1928.",
+     "Chandrashekhar Azad escaped arrest in the case."
+    ]
+   },
+   "hi": {
+    "q": "9 अगस्त 1925 की काकोरी ट्रेन कार्रवाई किस संगठन के सदस्यों ने की?",
+    "options": [
+     "अनुशीलन समिति",
+     "हिंदुस्तान रिपब्लिकन एसोसिएशन",
+     "गदर पार्टी",
+     "इंडियन रिपब्लिकन आर्मी"
+    ],
+    "explanation": "हिंदुस्तान रिपब्लिकन एसोसिएशन के सदस्यों ने लखनऊ के निकट काकोरी में ट्रेन रोककर उसमें जा रहा सरकारी खजाना ले लिया। इस मामले में राम प्रसाद बिस्मिल, अशफाक उल्ला खाँ, राजेंद्र लाहिड़ी एवं रोशन सिंह को फाँसी दी गई।",
+    "notes": [
+     "अनुशीलन समिति बंगाल की क्रांतिकारी संस्था थी।",
+     "राम प्रसाद बिस्मिल ने इस कार्रवाई का नेतृत्व किया।",
+     "गदर पार्टी विदेश में बसे भारतीयों में कार्य करती थी।",
+     "सूर्य सेन की इंडियन रिपब्लिकन आर्मी ने 1930 में चटगाँव शस्त्रागार पर धावा बोला।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "क्रांतिकारी आंदोलन"
+    ],
+    "facts": [
+     "1928 में संगठन का नाम हिंदुस्तान सोशलिस्ट रिपब्लिकन एसोसिएशन रखा गया।",
+     "चंद्रशेखर आजाद इस मामले में गिरफ्तारी से बच निकले।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 75
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The Cripps Mission, which offered Dominion Status after the war, came to India in:",
+    "options": [
+     "1939",
+     "1940",
+     "1942",
+     "1945"
+    ],
+    "explanation": "Sir Stafford Cripps came to India in March 1942 with proposals for Dominion Status and a constitution-making body after the war. The Congress and the Muslim League both rejected them.",
+    "notes": [
+     "The Second World War began in 1939.",
+     "The August Offer was made in 1940.",
+     "Gandhi called its offer a 'post-dated cheque'.",
+     "The Shimla Conference was held in 1945."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Towards independence"
+    ],
+    "facts": [
+     "The mission was sent by the Government of Winston Churchill.",
+     "Its failure was followed by the Quit India Movement."
+    ]
+   },
+   "hi": {
+    "q": "युद्ध के बाद डोमिनियन स्टेटस का प्रस्ताव देने वाला क्रिप्स मिशन भारत कब आया?",
+    "options": [
+     "1939",
+     "1940",
+     "1942",
+     "1945"
+    ],
+    "explanation": "सर स्टैफोर्ड क्रिप्स मार्च 1942 में युद्ध के बाद डोमिनियन स्टेटस एवं संविधान निर्मात्री संस्था के प्रस्ताव लेकर भारत आए। कांग्रेस एवं मुस्लिम लीग दोनों ने इन्हें अस्वीकार कर दिया।",
+    "notes": [
+     "द्वितीय विश्व युद्ध 1939 में आरंभ हुआ।",
+     "अगस्त प्रस्ताव 1940 में दिया गया।",
+     "गांधी ने इसके प्रस्ताव को 'उत्तर-दिनांकित चेक' कहा।",
+     "शिमला सम्मेलन 1945 में हुआ।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "स्वतंत्रता की ओर"
+    ],
+    "facts": [
+     "मिशन को विंस्टन चर्चिल की सरकार ने भेजा।",
+     "इसकी विफलता के बाद भारत छोड़ो आंदोलन हुआ।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 86
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-018",
+   "level": "Higher",
+   "answer": 3,
+   "en": {
+    "q": "Under the Gandhi–Irwin Pact of March 1931, the Congress primarily agreed to:",
+    "options": [
+     "Accept Dominion Status as its final goal",
+     "Support the British war effort in Europe",
+     "Accept separate electorates for the Depressed Classes",
+     "Suspend civil disobedience and join the Round Table talks"
+    ],
+    "explanation": "Signed on 5 March 1931, the Pact required the Congress to suspend the Civil Disobedience Movement and take part in the Second Round Table Conference. The Government agreed to release political prisoners not convicted of violence and to allow the making of salt for personal use in coastal villages.",
+    "notes": [
+     "The Pact made no change in the Congress goal of complete independence.",
+     "The question of support for a war effort arose only after 1939.",
+     "Gandhi opposed separate electorates for them and fasted against them in 1932.",
+     "Correct: Gandhi then attended the Second Round Table Conference in London."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Civil Disobedience Movement",
+     "Gandhi–Irwin Pact"
+    ],
+    "facts": [
+     "Gandhi was the sole representative of the Congress at the Second Round Table Conference (1931).",
+     "The Congress had boycotted the First Round Table Conference (1930–31)."
+    ]
+   },
+   "hi": {
+    "q": "मार्च 1931 के गांधी–इरविन समझौते के अंतर्गत कांग्रेस ने मुख्यतः क्या स्वीकार किया?",
+    "options": [
+     "डोमिनियन स्टेटस को अपने अंतिम लक्ष्य के रूप में मानना",
+     "यूरोप में ब्रिटिश युद्ध प्रयासों का समर्थन करना",
+     "दलित वर्गों के लिए पृथक निर्वाचक मंडल स्वीकार करना",
+     "सविनय अवज्ञा स्थगित कर गोलमेज वार्ता में भाग लेना"
+    ],
+    "explanation": "5 मार्च 1931 को हुए समझौते के अनुसार कांग्रेस को सविनय अवज्ञा आंदोलन स्थगित कर दूसरे गोलमेज सम्मेलन में भाग लेना था। सरकार ने हिंसा के दोषी न ठहराए गए राजनीतिक बंदियों को छोड़ने तथा तटीय गाँवों में निजी उपयोग के लिए नमक बनाने की अनुमति देने पर सहमति दी।",
+    "notes": [
+     "समझौते से कांग्रेस के पूर्ण स्वतंत्रता के लक्ष्य में कोई परिवर्तन नहीं हुआ।",
+     "युद्ध प्रयासों में समर्थन का प्रश्न 1939 के बाद ही उठा।",
+     "गांधी उनके लिए पृथक निर्वाचक मंडल के विरोधी थे और 1932 में इसके विरुद्ध अनशन किया।",
+     "सही: इसके बाद गांधी लंदन में दूसरे गोलमेज सम्मेलन में सम्मिलित हुए।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "सविनय अवज्ञा आंदोलन",
+     "गांधी–इरविन समझौता"
+    ],
+    "facts": [
+     "दूसरे गोलमेज सम्मेलन (1931) में गांधी कांग्रेस के एकमात्र प्रतिनिधि थे।",
+     "कांग्रेस ने पहले गोलमेज सम्मेलन (1930–31) का बहिष्कार किया था।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 83
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-019",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "By signing the Instrument of Accession in 1947, the ruler of a princely state primarily agreed to:",
+    "options": [
+     "Cede defence, external affairs and communications to India",
+     "Merge his state at once into a neighbouring province",
+     "Remain fully sovereign with his own army and diplomacy",
+     "Give up his title and all his personal privileges"
+    ],
+    "explanation": "The Instrument of Accession made a princely state a part of the Dominion of India for defence, external affairs and communications, while the ruler kept internal autonomy. Full integration followed later through merger agreements.",
+    "notes": [
+     "The state joined the Dominion on these three subjects only.",
+     "Merger agreements came later, as a second step.",
+     "Accession ended the claim to full sovereignty.",
+     "The rulers kept their titles and were later granted privy purses."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Integration of states"
+    ],
+    "facts": [
+     "The paramountcy of the British Crown over the states lapsed on 15 August 1947.",
+     "Junagadh, Hyderabad and Jammu and Kashmir did not accede by that date."
+    ]
+   },
+   "hi": {
+    "q": "1947 में विलय पत्र (इंस्ट्रूमेंट ऑफ एक्सेशन) पर हस्ताक्षर करके किसी रियासत के शासक ने मुख्यतः क्या स्वीकार किया?",
+    "options": [
+     "रक्षा, विदेश मामले एवं संचार भारत डोमिनियन को सौंपना",
+     "अपने राज्य का तत्काल पड़ोसी प्रांत में विलय करना",
+     "अपनी सेना एवं कूटनीति के साथ पूर्ण संप्रभु बने रहना",
+     "अपनी उपाधि एवं सभी निजी विशेषाधिकार त्यागना"
+    ],
+    "explanation": "विलय पत्र ने रियासत को रक्षा, विदेश मामलों एवं संचार के लिए भारत डोमिनियन का भाग बना दिया, जबकि शासक के पास आंतरिक स्वायत्तता बनी रही। पूर्ण एकीकरण बाद में विलय समझौतों द्वारा हुआ।",
+    "notes": [
+     "राज्य केवल इन तीन विषयों पर डोमिनियन में सम्मिलित हुआ।",
+     "विलय समझौते बाद में, दूसरे चरण के रूप में, हुए।",
+     "अधिमिलन से पूर्ण संप्रभुता का दावा समाप्त हुआ।",
+     "शासकों की उपाधियाँ बनी रहीं और बाद में उन्हें प्रिवी पर्स दिए गए।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "रियासतों का एकीकरण"
+    ],
+    "facts": [
+     "रियासतों पर ब्रिटिश क्राउन की सर्वोच्चता 15 अगस्त 1947 को समाप्त हो गई।",
+     "जूनागढ़, हैदराबाद तथा जम्मू-कश्मीर उस तिथि तक सम्मिलित नहीं हुए थे।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  },
+  {
+   "id": "hist-nm2-020",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "The Quit India Movement of 1942 differed from the earlier Gandhian movements primarily in that it:",
+    "options": [
+     "Was confined to constitutional petitions and memorials",
+     "Was called off after a single violent incident",
+     "Became a largely leaderless mass upsurge",
+     "Had the backing of the Muslim League and the Communists"
+    ],
+    "explanation": "With the whole leadership arrested on 9 August 1942, the movement was carried on by students, workers and peasants on their own. Communications were attacked and parallel governments were set up at places such as Ballia, Satara and Tamluk.",
+    "notes": [
+     "It was a call for open mass struggle.",
+     "It was never withdrawn; Gandhi blamed the Government for the violence.",
+     "The leaders were arrested at the very start, and the people carried on by themselves.",
+     "Both the League and the Communist Party kept away from the movement."
+    ],
+    "path": [
+     "Indian History",
+     "National Movement",
+     "Gandhian movements"
+    ],
+    "facts": [
+     "Jayaprakash Narayan and Ram Manohar Lohia led the underground movement.",
+     "Usha Mehta ran an underground Congress Radio."
+    ]
+   },
+   "hi": {
+    "q": "1942 का भारत छोड़ो आंदोलन पूर्व के गांधीवादी आंदोलनों से मुख्यतः किस बात में भिन्न था?",
+    "options": [
+     "यह संवैधानिक याचिकाओं एवं ज्ञापनों तक सीमित रहा",
+     "हिंसा की एक घटना के बाद इसे वापस ले लिया गया",
+     "यह प्रायः नेतृत्वहीन जन उभार बन गया",
+     "इसे मुस्लिम लीग एवं कम्युनिस्टों का समर्थन प्राप्त था"
+    ],
+    "explanation": "9 अगस्त 1942 को पूरा नेतृत्व गिरफ्तार हो जाने पर आंदोलन विद्यार्थियों, मजदूरों एवं किसानों ने स्वयं चलाया। संचार साधनों पर आक्रमण हुए और बलिया, सतारा एवं तामलुक जैसे स्थानों पर समानांतर सरकारें बनीं।",
+    "notes": [
+     "यह खुले जन संघर्ष का आह्वान था।",
+     "इसे वापस नहीं लिया गया; गांधी ने हिंसा के लिए सरकार को उत्तरदायी ठहराया।",
+     "नेता आरंभ में ही गिरफ्तार कर लिए गए और जनता ने स्वयं आंदोलन चलाया।",
+     "लीग एवं कम्युनिस्ट पार्टी दोनों आंदोलन से अलग रहे।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "राष्ट्रीय आंदोलन",
+     "गांधीवादी आंदोलन"
+    ],
+    "facts": [
+     "जयप्रकाश नारायण एवं राम मनोहर लोहिया ने भूमिगत आंदोलन का नेतृत्व किया।",
+     "उषा मेहता ने भूमिगत कांग्रेस रेडियो चलाया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Themes in Indian History – III, 'Mahatma Gandhi and the Nationalist Movement'"
+    },
+    {
+     "source": "Bipan Chandra and others, India's Struggle for Independence (Penguin)"
+    }
+   ]
+  }
+ ]
 }

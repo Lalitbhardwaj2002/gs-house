@@ -39,3 +39,10 @@ I solved every question without looking at the key first, and every key matched 
 ## Not changed but noted
 - Fatman p.283 gives 1955 for Palade's ribosomes. NCERT gives 1953, and 005 uses 1953.
 - Fatman p.297 says the notochord is "made of a cartilaginous substance". No question uses this.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 31 questions (004 005 006 007 008 010 012 013 014 016 019 020 022 025 027 030 031 034 036 038 040 042 043 047 048 049 050 051 052 055 056). Every key was solved blind and agreed; scientific names, dates and Hindi checked.
+
+- Corrected: **014**: notes C and D said 9+1 and 8+2 are "not found in cilia"; some sperm flagella (e.g. of flatworms) are 9+1, so the notes now say these are not the arrangement of typical cilia and flagella (EN + HI).
+- Replaced: none.

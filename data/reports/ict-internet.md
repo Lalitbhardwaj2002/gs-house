@@ -44,3 +44,12 @@ The draft had 40 questions (the cap). All **40 were kept**: 16 were corrected an
 
 ## Deleted
 None.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 24 questions (006 008 009 011 012 013 014 016 017 018 020 022 023 024 025 027 028 033 034 035 037 038 039 040); all answer keys confirmed.
+
+Corrected:
+- ict-internet-012: path started with 'Computer & ICT'; aligned to 'ICT' like the rest of the section (EN and HI).
+
+Replaced: none. Note: the PIB CERT-In PDF cited in 037 could not be read as text; the fact is also supported by the IT Act reference.

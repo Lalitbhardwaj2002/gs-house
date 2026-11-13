@@ -72,3 +72,14 @@ These topics are not covered, or only lightly:
 - The MJO.
 - Cyclone warning colour codes.
 - Recent extreme-rainfall records (cite IMD with dates).
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 38 questions: 002 003 004 005 006 008 009 012 013 014 016 017 019 020 023 024 025 026 027 028 029 030 033 036 037 038 040 043 044 046 048 049 050 051 052 053 054 055.
+- Corrected:
+  - geo-climate-003: Hindi option D reworded (repeated रोककर made it read as two blockings).
+  - geo-climate-026: unverifiable rainfall figure (Chennai 129 cm, NCERT table) replaced by a safe fact on its Oct–Dec rain.
+  - geo-climate-030: English stem 'deflected by the:' clashed with options starting 'The'; article dropped.
+  - geo-climate-040: unverifiable figure (Mumbai 183 cm) replaced by a safe fact on its June–Sept rain.
+  - geo-climate-051: note D called 125 cm India's average annual rainfall; the IMD annual normal is about 116 cm. Note fixed.
+  - geo-climate-054: distractor Leh replaced by Srinagar, because NCERT Class 11 says temperatures drop to about −45°C around Leh, which made two options defensible.
+- Replaced: none.

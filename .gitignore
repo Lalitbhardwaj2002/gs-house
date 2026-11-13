@@ -4,3 +4,6 @@ refs/
 __pycache__/
 # Unchecked drafts and checker work files never go public; only data/<id>.json (checked) does.
 data/draft/
+
+# Local editor/agent settings
+.claude/

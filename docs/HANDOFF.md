@@ -2,6 +2,30 @@
 
 Read this whole file first. It records what the owner (Lalit) asked for, what is already built, and exactly how to continue.
 
+## 0. Update of 12 November 2026 (read this first; it overrides older notes below)
+The owner asked for four things, all done on the branch `tgt-pgt-higher-rework`:
+1. **Single short questions only.** About 700 long questions (statement sets, match-the-list, assertion–reason, chronology) were rewritten as one-line questions of at most 200 characters, in English and exam Hindi, modelled on UP TGT/PGT previous-year papers and the UPESSC Assistant Professor paper of 18 April 2026. The validator now rejects multi-part stems.
+2. **Level follows the tag.** A section tagged only TGT/PGT has only TGT and PGT questions, a Higher-only section has only Higher questions, and a section with both tags has a mix. In the game the syllabus switch also filters questions: *TGT / PGT* serves TGT+PGT questions, *Assistant Professor* serves Higher questions (`TRACK_LEVELS` in `app.js`).
+3. **Typography.** Times New Roman everywhere (Tinos as the metric-compatible web font on phones, Noto Serif Devanagari for Hindi), larger sizes and wider line spacing for fast reading.
+4. **The remaining sections were written**: `ict-applications` (now 40), `ict-terms` (40), `edtech` (40) and 6 each for the other 24 sections, so all 73 sections have questions (1,516 at that point; see step 5 for the present total). Current-affairs questions cite *Parmar SSC Current Affairs 2026* (`parmar-ca`, PDF page numbers).
+
+5. **Second request (12–13 November 2026): 20 questions in each of the 24 sections written in step 4** (`tra-ugc`, `eco-budget`, `eco-poverty`, `eco-agri-industry`, `eco-trade`, `geo-universe`, `geo-earth`, `geo-soil-forest`, `geo-resources`, `geo-agri-transport`, `geo-population`, `geo-up`, `sci-space`, `sci-tech`, `env-ecology`, `env-people`, `env-global` and the seven `ca-*` sections). 14 questions were added to each, chosen by exam importance, so the bank now has **1,852 questions** (818 TGT, 604 PGT, 430 Higher). Level mix in a 20-question section: both tags 8 TGT / 7 PGT / 5 Higher; TGT-only 11 TGT / 9 PGT; Higher-only 20 Higher. Answers are spread 5/5/5/5 over A–D.
+
+6. **Third request (13 November 2026), three parts, all done:**
+   - **Teaching/research questions reframed.** 105 Higher questions in `tra-teaching`, `tra-research`, `tra-evaluation`, `tra-data` and `tra-ugc` that asked for the name of a term or an author were rewritten as conceptual questions in the style of the 18 April 2026 paper. Numerical data-interpretation questions were kept as they are.
+   - **The other 24 small sections extended to 20 questions each** (`culture`, `eco-banking`, `eco-basics`, `eco-capital`, `eco-planning`, the four small `health-*`, `hist-1857`, `hist-bhakti`, `hist-british`, `hist-mughal`, `hist-nm1`, `hist-nm2`, `hist-sultanate`, `pol-amend`, `pol-bodies`, `pol-education`, `pol-election`, `pol-judiciary`, `pol-local`, `pol-parliament`, `pol-state`): 336 new questions. The bank now has **2,188 questions** (978 TGT, 739 PGT, 471 Higher); every section has at least 20, and all 48 twenty-question sections have answers spread 5/5/5/5.
+   - **The ten interface improvements** listed in section 6 below.
+
+Checking: every question rewritten or written in November 2026 has had an independent proof-read by a separate checker agent (the "Rework pass" in `docs/CHECKER_BRIEF.md`): 820 rewritten or new questions in the older files, all 20 questions of each of the 24 sections extended in step 5, the 105 reframed `tra-*` questions and the 336 questions of step 6. Each `data/reports/<section>.md` has a part headed "Check of 12 November 2026" or "Check of 13 November 2026". Current-affairs facts were verified on the web and against `refs/parmar_ca_2026.txt`; they go out of date, so re-check the `ca-*` files before each exam season.
+
+Lesson from step 6: when adding questions to a section, read the full text (notes, explanation and facts) of the questions already there. In the first batch about a quarter of the new questions asked a fact that an older question's notes already stated, and the checkers had to replace them.
+
+Framing: 413 of the 471 Higher questions (88%) are conceptual in the style of the 18 April 2026 paper (`tra-*` 89%). The real paper also has match-the-list and chronology sets; the owner asked for single questions only, so the game has none.
+
+Not verified by the checkers (from memory or a secondary source only): the strength of the Supreme Court (34) and the six Legislative Councils, the 1993 voter-ID year and the indelible-ink supplier in `pol-election`, the calcium figures for millets in `health-vitamins`, and some Britannica / Planning Commission / RBI reference links in the `eco-*` files that could not be opened.
+
+Tools added to the workflow: none in the repo; the validator gained three checks (single-line stem ≤ 200 characters, no multi-part formats, level allowed by the section tag) and knows the two new book keys.
+
 ## 1. What the owner asked for (keep all of this)
 A **bilingual (Hindi + English) multiple-choice General Knowledge quiz game** for the **UPESSC** exams, separate from his other game (Mindmela):
 - Syllabi: **TGT & PGT GS** and **Assistant Professor (Higher Education) GS** (both UPESSC, 30 questions each in the real exam). Every chapter/unit/topic of both syllabi is its own **section**, named with its topic. Sections only in the higher syllabus are **tagged "Higher"**; shared ones carry both tags. Arrange sections in syllabus order (`sections.js` does this: 73 sections in 9 units).
@@ -97,6 +121,18 @@ Fatman pages are **printed** pages (see docs/fatman_index.md). "—" = not in Fa
 - `data/<id>.json`: checked questions; `data/index.json`: counts (from `tools/build_index.py`). Question format: see `docs/example-question.json` and the brief.
 - `app.js`: host-authoritative engine. Solo runs the host locally with no network. Rooms use PeerJS (`gshouse-v1-<CODE>`), up to 20 players. The host loads only the chosen sections, picks questions evenly across them (preferring ones this device hasn't seen, stored in localStorage `pp-seen`), sends each question once (`type: 'question'`), and small status updates (`type: 'state'`). Players get instant green/red feedback from the question data. At the end the host sends each player's report; each device builds its own answer sheet from the questions it received.
 - `PUBLIC_URL` in `app.js` is the future GitHub Pages address (used for invite links when hosting from localhost).
+- Interface added on 13 November 2026 (`app.js`, `style.css`; service-worker cache `gshouse-v6`):
+  1. The **Next question** and **Start quiz** buttons sit in a bar that stays at the bottom of the screen (`.sticky-bar`).
+  2. **About each option** is folded by default (`<details class="more">`); the device remembers if the player opens it (`pp-notes`). The option text is no longer repeated in the notes.
+  3. **Quick practice** on the setup screen: saved questions (`pp-marks`, the ☆ button on a question) and past mistakes (`pp-wrong`). Both use the host message `{type: 'quick', qids}`; `startQuiz(only)` runs a fixed list of question ids.
+  4. Results (solo): **Retry missed questions**, and the five weakest sections as buttons that start a quiz on that section (`{type: 'quick', sections}`).
+  5. Results show accuracy **by unit** first; the full section list is folded.
+  6. **Progress**: the last ten quizzes on the device (`pp-history`) as a bar chart with accuracy by unit, on the home and results screens.
+  7. Answer sheet: filters (all / wrong / skipped / saved), number buttons to jump to a question, option notes on or off (always printed).
+  8. **Keyboard**: A–D or 1–4 answer, Enter / N / → next.
+  9. **Wide screens (960 px and up)**: sections beside the settings, explanation beside the question.
+  10. Settings menu (⚙): sound, **dark mode** (`pp-theme`; follows the device until set), **both languages** (`pp-both`), **text size** (`pp-fs`). All colours are CSS variables; the dark theme only swaps their values. Tap targets are at least 44 px and level chips follow the interface language.
+  A short quiz over many sections now samples the sections in random order (before, a 10-question quiz over all sections used only the first ten).
 
 ## 7. Still to do
 1. Check the unchecked drafts and write/check the remaining 36 sections (see section 2). Then validate all and build the index.
@@ -104,8 +140,8 @@ Fatman pages are **printed** pages (see docs/fatman_index.md). "—" = not in Fa
 3. Google Search Console (the owner must sign in himself) and IndexNow for Bing.
 
 ## 8. Feature ideas to offer the owner
-- "Revise my mistakes" mode built from wrong answers saved on the device.
-- Bookmark questions; daily 10-question challenge; per-section progress tracker.
+- Done on 13 November 2026: "revise my mistakes", bookmarks, a progress chart (see section 6).
+- Daily 10-question challenge; per-section progress tracker.
 - "Report a mistake" button on each question (needs a form or e-mail of his choosing).
 - Exam simulation: 30 questions mixed across units, as in the real paper, with a fixed time.
 - Download the answer sheet as a PDF directly (currently Print → Save as PDF).

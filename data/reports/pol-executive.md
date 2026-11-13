@@ -45,3 +45,13 @@ The draft had **no questions** on the Prime Minister, the Council of Ministers (
 - Prime Minister coverage is still thin. Possible additions if the cap is lifted: Article 78 duties, PMs who were Rajya Sabha members, the longest- and shortest-serving PMs, and the first PM to resign (Morarji Desai).
 - Attorney General vs Solicitor General.
 - Article 77 rules of business.
+
+## Check of 12 November 2026 (single-question rework)
+
+Checked 25 questions (002 003 004 007 009 010 011 013 015 016 020 021 022 023 024 026 028 030 031 033 034 036 038 040 042); all answer keys confirmed.
+
+Corrected:
+- pol-executive-004: fact cited Article 55(1)(c) for the MP vote formula; corrected to Article 55(2)(c) (EN and HI).
+- pol-executive-036: fact on the 11th Amendment began with a dangling 'also'; now states that it replaced the joint meeting with an electoral college and barred challenges on the ground of vacancies (EN and HI).
+
+Replaced: none.

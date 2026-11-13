@@ -38,3 +38,8 @@ Stems standardised: 003, 034, 047 ("With reference to …, consider the followin
 
 ## For the writer
 Nothing essential missing. Could add later: Jain philosophy (anekantavada/syadvada), Buddhist universities (Nalanda, Vikramashila), the Ajivikas and Lokayata in more depth, and Gandhara/Kamboja in the north-west.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 32 questions (001 003 004 007 008 009 011 012 014 017 018 020 023 025 027 028 030 031 032 034 035 036 038 039 044 047 048 049 050 052 054 055). All answer keys confirmed correct.
+- Corrected: hist-buddhism-009 (removed irrelevant reference JAINpedia 'Malli'); hist-buddhism-014 (English fact reworded: Mahavira and Sanjaya are "among" the six teachers, not "complete the list"); hist-buddhism-054 (removed Lucknow University Kharavela reference, which does not support the Sarvakshatrantaka/Ekarat fact).
+- Replaced: none.

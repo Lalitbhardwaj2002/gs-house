@@ -47,3 +47,8 @@ Stems rewritten to standard paper wording in both languages: 001, 002, 007, 017,
 
 ## For the writer
 Nothing missing in scope. A question on Vedic tribes beyond the Panchajana (e.g. Kuru–Panchala, Videha) or on the Sutra literature (Grihya/Dharma Sutras) could be added later.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 29 questions (003 006 009 010 011 012 013 015 018 020 022 023 025 026 028 030 031 032 033 034 036 038 044 046 048 049 050 052 054). All answer keys, notes and Hindi confirmed correct.
+- Corrected: none.
+- Replaced: none.

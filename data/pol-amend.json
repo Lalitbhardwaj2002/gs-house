@@ -1,403 +1,1309 @@
 {
-  "section": "pol-amend",
-  "questions": [
+ "section": "pol-amend",
+ "questions": [
+  {
+   "id": "pol-amend-001",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "A Proclamation of National Emergency under Article 352 ceases to operate unless it is approved by both Houses of Parliament within:",
+    "options": [
+     "fourteen days",
+     "one month",
+     "two months",
+     "six months"
+    ],
+    "explanation": "Since the 44th Amendment Act, 1978, a Proclamation under Article 352 must be approved by resolutions of both Houses within one month, each passed by a special majority. Once approved, it continues for six months and can be extended for further six-month periods.",
+    "notes": [
+     "Fourteen days: a special sitting of the Lok Sabha must be held within this period of a notice, signed by at least one-tenth of its total members, to disapprove an Emergency (Article 352(8)).",
+     "One month: the period for parliamentary approval of a National Emergency since 1978.",
+     "Two months: the period for approving President's Rule (Article 356) and Financial Emergency (Article 360); also the original period under Article 352.",
+     "Six months: the period for which an approved National Emergency continues before it must be approved again."
+    ],
+    "path": [
+     "Indian Polity",
+     "Emergency Provisions",
+     "National Emergency",
+     "Parliamentary approval"
+    ],
+    "facts": [
+     "National Emergency has been proclaimed three times: 1962, 1971 and 1975.",
+     "The 44th Amendment requires the Union Cabinet's decision to be communicated to the President in writing before a Proclamation is issued."
+    ]
+   },
+   "hi": {
+    "q": "अनुच्छेद 352 के अंतर्गत राष्ट्रीय आपात की उद्घोषणा प्रवर्तन में नहीं रहती, यदि संसद के दोनों सदन उसका अनुमोदन किस अवधि के भीतर न कर दें?",
+    "options": [
+     "चौदह दिन",
+     "एक माह",
+     "दो माह",
+     "छह माह"
+    ],
+    "explanation": "44वें संशोधन अधिनियम, 1978 के बाद अनुच्छेद 352 की उद्घोषणा का अनुमोदन दोनों सदनों द्वारा एक माह के भीतर विशेष बहुमत से पारित संकल्पों द्वारा होना आवश्यक है। अनुमोदन के बाद यह छह माह तक प्रवर्तन में रहती है और छह-छह माह के लिए बढ़ाई जा सकती है।",
+    "notes": [
+     "चौदह दिन: लोक सभा के कुल सदस्यों के कम-से-कम दसवें भाग द्वारा हस्ताक्षरित लिखित सूचना मिलने के इतने दिनों के भीतर आपात के अननुमोदन हेतु लोक सभा की विशेष बैठक होनी आवश्यक है (अनुच्छेद 352(8))।",
+     "एक माह: 1978 से राष्ट्रीय आपात के संसदीय अनुमोदन की अवधि।",
+     "दो माह: राष्ट्रपति शासन (अनुच्छेद 356) और वित्तीय आपात (अनुच्छेद 360) के अनुमोदन की अवधि; अनुच्छेद 352 में मूल अवधि भी यही थी।",
+     "छह माह: अनुमोदित राष्ट्रीय आपात इतनी अवधि तक प्रवर्तन में रहता है, फिर पुनः अनुमोदन आवश्यक है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "आपात उपबंध",
+     "राष्ट्रीय आपात",
+     "संसदीय अनुमोदन"
+    ],
+    "facts": [
+     "राष्ट्रीय आपात की उद्घोषणा तीन बार हुई है: 1962, 1971 और 1975।",
+     "44वें संशोधन के अनुसार उद्घोषणा से पहले केंद्रीय मंत्रिमंडल का निर्णय राष्ट्रपति को लिखित रूप में भेजा जाना आवश्यक है।"
+    ]
+   },
+   "refs": [
     {
-      "id": "pol-amend-001",
-      "level": "TGT",
-      "answer": 1,
-      "en": {
-        "q": "A Proclamation of National Emergency under Article 352 ceases to operate unless it is approved by both Houses of Parliament within:",
-        "options": [
-          "fourteen days",
-          "one month",
-          "two months",
-          "six months"
-        ],
-        "explanation": "Since the 44th Amendment Act, 1978, a Proclamation under Article 352 must be approved by resolutions of both Houses within one month, each passed by a special majority. Once approved, it continues for six months and can be extended for further six-month periods.",
-        "notes": [
-          "Fourteen days: a special sitting of the Lok Sabha must be held within this period of a notice, signed by at least one-tenth of its total members, to disapprove an Emergency (Article 352(8)).",
-          "One month: the period for parliamentary approval of a National Emergency since 1978.",
-          "Two months: the period for approving President's Rule (Article 356) and Financial Emergency (Article 360); also the original period under Article 352.",
-          "Six months: the period for which an approved National Emergency continues before it must be approved again."
-        ],
-        "path": [
-          "Indian Polity",
-          "Emergency Provisions",
-          "National Emergency",
-          "Parliamentary approval"
-        ],
-        "facts": [
-          "National Emergency has been proclaimed three times: 1962, 1971 and 1975.",
-          "The 44th Amendment requires the Union Cabinet's decision to be communicated to the President in writing before a Proclamation is issued."
-        ]
-      },
-      "hi": {
-        "q": "अनुच्छेद 352 के अंतर्गत राष्ट्रीय आपात की उद्घोषणा प्रवर्तन में नहीं रहती, यदि संसद के दोनों सदन उसका अनुमोदन किस अवधि के भीतर न कर दें?",
-        "options": [
-          "चौदह दिन",
-          "एक माह",
-          "दो माह",
-          "छह माह"
-        ],
-        "explanation": "44वें संशोधन अधिनियम, 1978 के बाद अनुच्छेद 352 की उद्घोषणा का अनुमोदन दोनों सदनों द्वारा एक माह के भीतर विशेष बहुमत से पारित संकल्पों द्वारा होना आवश्यक है। अनुमोदन के बाद यह छह माह तक प्रवर्तन में रहती है और छह-छह माह के लिए बढ़ाई जा सकती है।",
-        "notes": [
-          "चौदह दिन: लोक सभा के कुल सदस्यों के कम-से-कम दसवें भाग द्वारा हस्ताक्षरित लिखित सूचना मिलने के इतने दिनों के भीतर आपात के अननुमोदन हेतु लोक सभा की विशेष बैठक होनी आवश्यक है (अनुच्छेद 352(8))।",
-          "एक माह: 1978 से राष्ट्रीय आपात के संसदीय अनुमोदन की अवधि।",
-          "दो माह: राष्ट्रपति शासन (अनुच्छेद 356) और वित्तीय आपात (अनुच्छेद 360) के अनुमोदन की अवधि; अनुच्छेद 352 में मूल अवधि भी यही थी।",
-          "छह माह: अनुमोदित राष्ट्रीय आपात इतनी अवधि तक प्रवर्तन में रहता है, फिर पुनः अनुमोदन आवश्यक है।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "आपात उपबंध",
-          "राष्ट्रीय आपात",
-          "संसदीय अनुमोदन"
-        ],
-        "facts": [
-          "राष्ट्रीय आपात की उद्घोषणा तीन बार हुई है: 1962, 1971 और 1975।",
-          "44वें संशोधन के अनुसार उद्घोषणा से पहले केंद्रीय मंत्रिमंडल का निर्णय राष्ट्रपति को लिखित रूप में भेजा जाना आवश्यक है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 176
-        },
-        {
-          "source": "Constitution of India, Article 352",
-          "url": "https://legislative.gov.in/constitution-of-india/"
-        }
-      ]
+     "book": "fatman",
+     "page": 176
     },
     {
-      "id": "pol-amend-002",
-      "level": "TGT",
-      "answer": 2,
-      "en": {
-        "q": "Under which Article of the Constitution of India are the residuary powers of legislation vested in Parliament?",
-        "options": [
-          "Article 245",
-          "Article 246",
-          "Article 248",
-          "Article 249"
-        ],
-        "explanation": "Article 248 gives Parliament exclusive power to make laws on any matter not enumerated in the Concurrent List or the State List, including taxes not mentioned in either List. Entry 97 of the Union List repeats this residuary power.",
-        "notes": [
-          "Article 245: extent of laws made by Parliament and by State Legislatures.",
-          "Article 246: subject-matter of laws, linking Parliament and States to the three Lists of the Seventh Schedule.",
-          "Article 248: residuary powers of legislation vested in Parliament.",
-          "Article 249: power of Parliament to legislate on a State List matter in the national interest after a Rajya Sabha resolution."
-        ],
-        "path": [
-          "Indian Polity",
-          "Centre–State Relations",
-          "Legislative relations",
-          "Residuary powers"
-        ],
-        "facts": [
-          "The Seventh Schedule has three Lists: Union, State and Concurrent.",
-          "Vesting residuary powers in the Centre follows the Canadian model."
-        ]
-      },
-      "hi": {
-        "q": "भारत के संविधान के किस अनुच्छेद के अंतर्गत विधायन की अवशिष्ट शक्तियाँ संसद में निहित हैं?",
-        "options": [
-          "अनुच्छेद 245",
-          "अनुच्छेद 246",
-          "अनुच्छेद 248",
-          "अनुच्छेद 249"
-        ],
-        "explanation": "अनुच्छेद 248 संसद को ऐसे किसी भी विषय पर, जो समवर्ती सूची या राज्य सूची में नहीं है, विधि बनाने की अनन्य शक्ति देता है; इसमें इन सूचियों में अनुल्लिखित कर भी शामिल हैं। संघ सूची की प्रविष्टि 97 भी यही अवशिष्ट शक्ति दोहराती है।",
-        "notes": [
-          "अनुच्छेद 245: संसद और राज्य विधान-मंडलों द्वारा बनाई गई विधियों का विस्तार।",
-          "अनुच्छेद 246: विधियों की विषय-वस्तु; संसद और राज्यों को सातवीं अनुसूची की तीन सूचियों से जोड़ता है।",
-          "अनुच्छेद 248: विधायन की अवशिष्ट शक्तियाँ संसद में निहित।",
-          "अनुच्छेद 249: राज्य सभा के संकल्प के बाद राष्ट्रीय हित में राज्य सूची के विषय पर संसद की विधि बनाने की शक्ति।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "केंद्र-राज्य संबंध",
-          "विधायी संबंध",
-          "अवशिष्ट शक्तियाँ"
-        ],
-        "facts": [
-          "सातवीं अनुसूची में तीन सूचियाँ हैं: संघ सूची, राज्य सूची और समवर्ती सूची।",
-          "अवशिष्ट शक्तियाँ केंद्र में निहित करना कनाडा के प्रतिमान पर आधारित है।"
-        ]
-      },
-      "refs": [
-        {
-          "source": "Constitution of India, Articles 245–249 and Seventh Schedule",
-          "url": "https://legislative.gov.in/constitution-of-india/"
-        }
-      ]
-    },
-    {
-      "id": "pol-amend-003",
-      "level": "PGT",
-      "answer": 1,
-      "en": {
-        "q": "Consider the following statements regarding Financial Emergency under Article 360 of the Constitution of India:\n1. The Proclamation must be approved by both Houses of Parliament within two months, by a simple majority.\n2. Once approved, the Proclamation must be renewed by Parliament every six months.\n3. During its operation, the President may issue directions for the reduction of salaries of Judges of the Supreme Court and the High Courts.\nWhich of the statements given above are correct?",
-        "options": [
-          "1 and 2 only",
-          "1 and 3 only",
-          "2 and 3 only",
-          "1, 2 and 3"
-        ],
-        "explanation": "Under Article 360(2), a Financial Emergency ceases after two months unless approved by resolutions of both Houses, which need only a simple majority. Once approved it continues indefinitely until revoked, with no periodic renewal, so statement 2 is wrong. Article 360(4)(b) allows directions to reduce the salaries of Supreme Court and High Court Judges.",
-        "notes": [
-          "Wrong: statement 2 is false; no six-monthly renewal is needed.",
-          "Correct: statements 1 and 3 are true.",
-          "Wrong: statement 2 is false and statement 1 is true.",
-          "Wrong: statement 2 is false."
-        ],
-        "path": [
-          "Indian Polity",
-          "Emergency Provisions",
-          "Financial Emergency",
-          "Article 360"
-        ],
-        "facts": [
-          "A Financial Emergency has never been proclaimed in India.",
-          "During a Financial Emergency, Money Bills of States may be reserved for the President's consideration (Article 360(4)(a))."
-        ]
-      },
-      "hi": {
-        "q": "भारत के संविधान के अनुच्छेद 360 के अंतर्गत वित्तीय आपात के संबंध में निम्नलिखित कथनों पर विचार कीजिए:\n1. उद्घोषणा का अनुमोदन संसद के दोनों सदनों द्वारा दो माह के भीतर साधारण बहुमत से होना आवश्यक है।\n2. अनुमोदन के बाद संसद को प्रत्येक छह माह पर उद्घोषणा का नवीकरण करना पड़ता है।\n3. इसके प्रवर्तन के दौरान राष्ट्रपति उच्चतम न्यायालय और उच्च न्यायालयों के न्यायाधीशों के वेतन में कमी के निदेश दे सकता है।\nउपर्युक्त में से कौन-से कथन सही हैं?",
-        "options": [
-          "केवल 1 और 2",
-          "केवल 1 और 3",
-          "केवल 2 और 3",
-          "1, 2 और 3"
-        ],
-        "explanation": "अनुच्छेद 360(2) के अनुसार वित्तीय आपात दो माह बाद प्रवर्तन में नहीं रहता, जब तक दोनों सदन संकल्प द्वारा उसका अनुमोदन न करें; इसके लिए साधारण बहुमत पर्याप्त है। अनुमोदन के बाद यह वापस लिए जाने तक अनिश्चित काल तक प्रवर्तन में रहता है, समय-समय पर नवीकरण नहीं होता; अतः कथन 2 गलत है। अनुच्छेद 360(4)(ख) न्यायाधीशों के वेतन में कमी के निदेश की अनुमति देता है।",
-        "notes": [
-          "गलत: कथन 2 असत्य है; छह-मासिक नवीकरण आवश्यक नहीं है।",
-          "सही: कथन 1 और 3 सही हैं।",
-          "गलत: कथन 2 असत्य है और कथन 1 सत्य है।",
-          "गलत: कथन 2 असत्य है।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "आपात उपबंध",
-          "वित्तीय आपात",
-          "अनुच्छेद 360"
-        ],
-        "facts": [
-          "भारत में अब तक कभी वित्तीय आपात की उद्घोषणा नहीं हुई है।",
-          "वित्तीय आपात के दौरान राज्यों के धन विधेयक राष्ट्रपति के विचार हेतु आरक्षित किए जा सकते हैं (अनुच्छेद 360(4)(क))।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 177
-        },
-        {
-          "source": "Constitution of India, Article 360",
-          "url": "https://legislative.gov.in/constitution-of-india/"
-        }
-      ]
-    },
-    {
-      "id": "pol-amend-004",
-      "level": "PGT",
-      "answer": 3,
-      "en": {
-        "q": "Match List-I with List-II and select the correct answer using the codes given below the lists:\nList-I (Body): A. Inter-State Council B. Zonal Councils C. North Eastern Council D. Rajamannar Committee\nList-II (Basis/Set up by): 1. States Reorganisation Act, 1956 2. Article 263 3. Government of Tamil Nadu, 1969 4. North Eastern Council Act, 1971",
-        "options": [
-          "A-1, B-2, C-4, D-3",
-          "A-2, B-1, C-3, D-4",
-          "A-2, B-4, C-1, D-3",
-          "A-2, B-1, C-4, D-3"
-        ],
-        "explanation": "Article 263 enables the President to set up an Inter-State Council; one was constituted in 1990. The five Zonal Councils were created by the States Reorganisation Act, 1956, and the North Eastern Council by an Act of Parliament of 1971. The Rajamannar Committee on Centre–State relations was appointed by the Tamil Nadu Government in 1969.",
-        "notes": [
-          "Wrong: the Inter-State Council comes from Article 263, not the 1956 Act.",
-          "Wrong: the North Eastern Council and the Rajamannar Committee are interchanged.",
-          "Wrong: Zonal Councils come from the States Reorganisation Act, 1956.",
-          "Correct: A-2, B-1, C-4, D-3."
-        ],
-        "path": [
-          "Indian Polity",
-          "Centre–State Relations",
-          "Inter-state relations",
-          "Councils and committees"
-        ],
-        "facts": [
-          "The Inter-State Council is chaired by the Prime Minister; Zonal Councils are chaired by the Union Home Minister.",
-          "The Sarkaria Commission (1983) recommended a permanent Inter-State Council."
-        ]
-      },
-      "hi": {
-        "q": "सूची-I को सूची-II से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I (निकाय): A. अंतर-राज्य परिषद B. क्षेत्रीय परिषदें C. पूर्वोत्तर परिषद D. राजमन्नार समिति\nसूची-II (आधार/गठनकर्ता): 1. राज्य पुनर्गठन अधिनियम, 1956 2. अनुच्छेद 263 3. तमिलनाडु सरकार, 1969 4. पूर्वोत्तर परिषद अधिनियम, 1971",
-        "options": [
-          "A-1, B-2, C-4, D-3",
-          "A-2, B-1, C-3, D-4",
-          "A-2, B-4, C-1, D-3",
-          "A-2, B-1, C-4, D-3"
-        ],
-        "explanation": "अनुच्छेद 263 राष्ट्रपति को अंतर-राज्य परिषद गठित करने की शक्ति देता है; 1990 में इसका गठन हुआ। पाँच क्षेत्रीय परिषदें राज्य पुनर्गठन अधिनियम, 1956 द्वारा और पूर्वोत्तर परिषद संसद के 1971 के अधिनियम द्वारा बनीं। केंद्र-राज्य संबंधों पर राजमन्नार समिति तमिलनाडु सरकार ने 1969 में नियुक्त की थी।",
-        "notes": [
-          "गलत: अंतर-राज्य परिषद अनुच्छेद 263 से है, 1956 के अधिनियम से नहीं।",
-          "गलत: पूर्वोत्तर परिषद और राजमन्नार समिति आपस में बदल दिए गए हैं।",
-          "गलत: क्षेत्रीय परिषदें राज्य पुनर्गठन अधिनियम, 1956 से बनी हैं।",
-          "सही: A-2, B-1, C-4, D-3।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "केंद्र-राज्य संबंध",
-          "अंतर-राज्य संबंध",
-          "परिषदें एवं समितियाँ"
-        ],
-        "facts": [
-          "अंतर-राज्य परिषद के अध्यक्ष प्रधानमंत्री और क्षेत्रीय परिषदों के अध्यक्ष केंद्रीय गृह मंत्री होते हैं।",
-          "सरकारिया आयोग (1983) ने एक स्थायी अंतर-राज्य परिषद की सिफारिश की थी।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 177
-        },
-        {
-          "source": "Constitution of India, Article 263",
-          "url": "https://legislative.gov.in/constitution-of-india/"
-        }
-      ]
-    },
-    {
-      "id": "pol-amend-005",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Amendment of which of the following provisions requires, in addition to a special majority of Parliament, ratification by the Legislatures of not less than one-half of the States?\n1. Election of the President\n2. Representation of States in Parliament\n3. Creation or abolition of the Legislative Council of a State\n4. Any of the Lists in the Seventh Schedule\nSelect the correct answer using the codes given below:",
-        "options": [
-          "1, 2 and 4 only",
-          "1 and 2 only",
-          "2, 3 and 4 only",
-          "1, 2, 3 and 4"
-        ],
-        "explanation": "The proviso to Article 368(2) requires State ratification for changes to Articles 54 and 55 (election of the President), the Lists of the Seventh Schedule and the representation of States in Parliament, among others. Creating or abolishing a Legislative Council is done by an ordinary law under Article 169, which is not treated as an amendment for the purposes of Article 368.",
-        "notes": [
-          "Correct: items 1, 2 and 4 need ratification by half the States.",
-          "Wrong: item 4 (the Seventh Schedule Lists) also needs ratification.",
-          "Wrong: item 3 needs only an ordinary law of Parliament under Article 169, and item 1 needs ratification.",
-          "Wrong: item 3 is outside Article 368."
-        ],
-        "path": [
-          "Indian Polity",
-          "Amendment of the Constitution",
-          "Article 368",
-          "Federal provisions"
-        ],
-        "facts": [
-          "A Constitution Amendment Bill can be introduced in either House of Parliament but not in a State Legislature.",
-          "Article 368 itself can be amended only with ratification by half the States."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित में से किन उपबंधों के संशोधन के लिए संसद के विशेष बहुमत के अतिरिक्त कम-से-कम आधे राज्यों के विधान-मंडलों का अनुसमर्थन आवश्यक है?\n1. राष्ट्रपति का निर्वाचन\n2. संसद में राज्यों का प्रतिनिधित्व\n3. किसी राज्य की विधान परिषद का सृजन या उत्सादन\n4. सातवीं अनुसूची की कोई भी सूची\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "केवल 1, 2 और 4",
-          "केवल 1 और 2",
-          "केवल 2, 3 और 4",
-          "1, 2, 3 और 4"
-        ],
-        "explanation": "अनुच्छेद 368(2) के परंतुक के अनुसार अनुच्छेद 54 और 55 (राष्ट्रपति का निर्वाचन), सातवीं अनुसूची की सूचियों तथा संसद में राज्यों के प्रतिनिधित्व आदि में संशोधन के लिए राज्यों का अनुसमर्थन आवश्यक है। विधान परिषद का सृजन या उत्सादन अनुच्छेद 169 के अंतर्गत साधारण विधि से होता है, जिसे अनुच्छेद 368 के प्रयोजनों के लिए संशोधन नहीं माना जाता।",
-        "notes": [
-          "सही: मद 1, 2 और 4 के लिए आधे राज्यों का अनुसमर्थन आवश्यक है।",
-          "गलत: मद 4 (सातवीं अनुसूची की सूचियाँ) के लिए भी अनुसमर्थन आवश्यक है।",
-          "गलत: मद 3 के लिए अनुच्छेद 169 के अंतर्गत संसद की साधारण विधि पर्याप्त है, और मद 1 के लिए अनुसमर्थन आवश्यक है।",
-          "गलत: मद 3 अनुच्छेद 368 के बाहर है।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "संविधान संशोधन",
-          "अनुच्छेद 368",
-          "संघीय उपबंध"
-        ],
-        "facts": [
-          "संविधान संशोधन विधेयक संसद के किसी भी सदन में पुरःस्थापित किया जा सकता है, किंतु राज्य विधान-मंडल में नहीं।",
-          "स्वयं अनुच्छेद 368 का संशोधन भी आधे राज्यों के अनुसमर्थन से ही हो सकता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 177
-        },
-        {
-          "source": "Constitution of India, Articles 169 and 368",
-          "url": "https://legislative.gov.in/constitution-of-india/"
-        }
-      ]
-    },
-    {
-      "id": "pol-amend-006",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Since 1978, a National Emergency cannot be proclaimed merely on the ground of an internal disturbance that does not amount to armed rebellion.\nReason (R): The 44th Amendment Act, 1978 substituted the words 'armed rebellion' for 'internal disturbance' in Article 352.\nSelect the correct answer using the codes given below:",
-        "options": [
-          "Both A and R are true, and R is the correct explanation of A",
-          "Both A and R are true, but R is not the correct explanation of A",
-          "A is true, but R is false",
-          "A is false, but R is true"
-        ],
-        "explanation": "The 1975 Emergency was proclaimed on the ground of 'internal disturbance'. To prevent a repeat, the 44th Amendment Act, 1978 replaced that ground with 'armed rebellion', so war, external aggression and armed rebellion are now the only grounds. R therefore directly explains A.",
-        "notes": [
-          "Correct: the change of wording made by the 44th Amendment is the reason for A.",
-          "Wrong: R is the very reason for A.",
-          "Wrong: R is true; the 44th Amendment made this substitution.",
-          "Wrong: A is true; internal disturbance alone is no longer a ground."
-        ],
-        "path": [
-          "Indian Polity",
-          "Emergency Provisions",
-          "National Emergency",
-          "44th Amendment"
-        ],
-        "facts": [
-          "Since the 44th Amendment, the rights under Articles 20 and 21 cannot be suspended even during a National Emergency (Article 359).",
-          "The Emergency of 25 June 1975 was the third National Emergency and the only one based on internal disturbance."
-        ]
-      },
-      "hi": {
-        "q": "नीचे दो कथन दिए गए हैं, जिनमें से एक को कथन (A) और दूसरे को कारण (R) कहा गया है:\nकथन (A): 1978 के बाद सशस्त्र विद्रोह की कोटि में न आने वाले केवल आंतरिक अशांति के आधार पर राष्ट्रीय आपात की उद्घोषणा नहीं की जा सकती।\nकारण (R): 44वें संशोधन अधिनियम, 1978 ने अनुच्छेद 352 में 'आंतरिक अशांति' के स्थान पर 'सशस्त्र विद्रोह' शब्द रखे।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-          "कथन (A) सही है, परंतु कारण (R) गलत है",
-          "कथन (A) गलत है, परंतु कारण (R) सही है"
-        ],
-        "explanation": "1975 का आपात 'आंतरिक अशांति' के आधार पर घोषित हुआ था। इसकी पुनरावृत्ति रोकने के लिए 44वें संशोधन अधिनियम, 1978 ने इस आधार के स्थान पर 'सशस्त्र विद्रोह' रखा; अब युद्ध, बाह्य आक्रमण और सशस्त्र विद्रोह ही आधार हैं। अतः (R), (A) की सीधी व्याख्या करता है।",
-        "notes": [
-          "सही: 44वें संशोधन द्वारा शब्दों में किया गया परिवर्तन ही (A) का कारण है।",
-          "गलत: (R) ही (A) का वास्तविक कारण है।",
-          "गलत: (R) सही है; 44वें संशोधन ने यह प्रतिस्थापन किया।",
-          "गलत: (A) सही है; केवल आंतरिक अशांति अब आधार नहीं है।"
-        ],
-        "path": [
-          "भारतीय राजव्यवस्था",
-          "आपात उपबंध",
-          "राष्ट्रीय आपात",
-          "44वाँ संशोधन"
-        ],
-        "facts": [
-          "44वें संशोधन के बाद राष्ट्रीय आपात के दौरान भी अनुच्छेद 20 और 21 के अधिकार निलंबित नहीं किए जा सकते (अनुच्छेद 359)।",
-          "25 जून 1975 का आपात तीसरा राष्ट्रीय आपात था और आंतरिक अशांति पर आधारित एकमात्र आपात था।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 176
-        },
-        {
-          "source": "Constitution of India, Article 352; Constitution (Forty-fourth Amendment) Act, 1978",
-          "url": "https://legislative.gov.in/constitution-of-india/"
-        }
-      ]
+     "source": "Constitution of India, Article 352",
+     "url": "https://legislative.gov.in/constitution-of-india/"
     }
-  ]
+   ]
+  },
+  {
+   "id": "pol-amend-002",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Under which Article of the Constitution of India are the residuary powers of legislation vested in Parliament?",
+    "options": [
+     "Article 245",
+     "Article 246",
+     "Article 248",
+     "Article 249"
+    ],
+    "explanation": "Article 248 gives Parliament exclusive power to make laws on any matter not enumerated in the Concurrent List or the State List, including taxes not mentioned in either List. Entry 97 of the Union List repeats this residuary power.",
+    "notes": [
+     "Article 245: extent of laws made by Parliament and by State Legislatures.",
+     "Article 246: subject-matter of laws, linking Parliament and States to the three Lists of the Seventh Schedule.",
+     "Article 248: residuary powers of legislation vested in Parliament.",
+     "Article 249: power of Parliament to legislate on a State List matter in the national interest after a Rajya Sabha resolution."
+    ],
+    "path": [
+     "Indian Polity",
+     "Centre–State Relations",
+     "Legislative relations",
+     "Residuary powers"
+    ],
+    "facts": [
+     "The Seventh Schedule has three Lists: Union, State and Concurrent.",
+     "Vesting residuary powers in the Centre follows the Canadian model."
+    ]
+   },
+   "hi": {
+    "q": "भारत के संविधान के किस अनुच्छेद के अंतर्गत विधायन की अवशिष्ट शक्तियाँ संसद में निहित हैं?",
+    "options": [
+     "अनुच्छेद 245",
+     "अनुच्छेद 246",
+     "अनुच्छेद 248",
+     "अनुच्छेद 249"
+    ],
+    "explanation": "अनुच्छेद 248 संसद को ऐसे किसी भी विषय पर, जो समवर्ती सूची या राज्य सूची में नहीं है, विधि बनाने की अनन्य शक्ति देता है; इसमें इन सूचियों में अनुल्लिखित कर भी शामिल हैं। संघ सूची की प्रविष्टि 97 भी यही अवशिष्ट शक्ति दोहराती है।",
+    "notes": [
+     "अनुच्छेद 245: संसद और राज्य विधान-मंडलों द्वारा बनाई गई विधियों का विस्तार।",
+     "अनुच्छेद 246: विधियों की विषय-वस्तु; संसद और राज्यों को सातवीं अनुसूची की तीन सूचियों से जोड़ता है।",
+     "अनुच्छेद 248: विधायन की अवशिष्ट शक्तियाँ संसद में निहित।",
+     "अनुच्छेद 249: राज्य सभा के संकल्प के बाद राष्ट्रीय हित में राज्य सूची के विषय पर संसद की विधि बनाने की शक्ति।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "केंद्र-राज्य संबंध",
+     "विधायी संबंध",
+     "अवशिष्ट शक्तियाँ"
+    ],
+    "facts": [
+     "सातवीं अनुसूची में तीन सूचियाँ हैं: संघ सूची, राज्य सूची और समवर्ती सूची।",
+     "अवशिष्ट शक्तियाँ केंद्र में निहित करना कनाडा के प्रतिमान पर आधारित है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 245–249 and Seventh Schedule",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-003",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "A Proclamation of Financial Emergency under Article 360 must be approved by both Houses of Parliament within:",
+    "options": [
+     "One month",
+     "Two months",
+     "Six months",
+     "One year"
+    ],
+    "explanation": "A Financial Emergency ceases after two months unless approved by both Houses by a simple majority. Once approved it continues until revoked. It has never been proclaimed in India.",
+    "notes": [
+     "This is the period for a National Emergency under Article 352.",
+     "Article 360(2) fixes two months.",
+     "Not the period for approval.",
+     "Not the period for approval."
+    ],
+    "path": [
+     "Indian Polity",
+     "Emergency Provisions",
+     "Financial Emergency",
+     "Article 360"
+    ],
+    "facts": [
+     "A Financial Emergency has never been proclaimed in India.",
+     "During a Financial Emergency, Money Bills of States may be reserved for the President's consideration (Article 360(4)(a))."
+    ]
+   },
+   "hi": {
+    "q": "अनुच्छेद 360 के अंतर्गत वित्तीय आपात की उद्घोषणा का संसद के दोनों सदनों द्वारा कितने समय के भीतर अनुमोदन आवश्यक है?",
+    "options": [
+     "एक माह",
+     "दो माह",
+     "छह माह",
+     "एक वर्ष"
+    ],
+    "explanation": "वित्तीय आपात की उद्घोषणा दो माह के भीतर दोनों सदनों के साधारण बहुमत से अनुमोदित न होने पर समाप्त हो जाती है। अनुमोदन के बाद यह वापस लिए जाने तक बनी रहती है। भारत में यह कभी घोषित नहीं हुई।",
+    "notes": [
+     "यह अनुच्छेद 352 के राष्ट्रीय आपात के लिए निर्धारित अवधि है।",
+     "अनुच्छेद 360(2) में दो माह निर्धारित हैं।",
+     "यह अनुमोदन की अवधि नहीं है।",
+     "यह अनुमोदन की अवधि नहीं है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "आपात उपबंध",
+     "वित्तीय आपात",
+     "अनुच्छेद 360"
+    ],
+    "facts": [
+     "भारत में अब तक कभी वित्तीय आपात की उद्घोषणा नहीं हुई है।",
+     "वित्तीय आपात के दौरान राज्यों के धन विधेयक राष्ट्रपति के विचार हेतु आरक्षित किए जा सकते हैं (अनुच्छेद 360(4)(क))।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 177
+    },
+    {
+     "source": "Constitution of India, Article 360",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-004",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The Zonal Councils in India were set up under the:",
+    "options": [
+     "States Reorganisation Act, 1956",
+     "Article 263 of the Constitution",
+     "North Eastern Council Act, 1971",
+     "Recommendation of the Rajamannar Committee"
+    ],
+    "explanation": "The Zonal Councils are statutory bodies created by the States Reorganisation Act, 1956. The Inter-State Council rests on Article 263 and was constituted in 1990.",
+    "notes": [
+     "Created five Zonal Councils, chaired by the Union Home Minister.",
+     "The basis of the Inter-State Council.",
+     "Set up the North Eastern Council.",
+     "A 1969 committee of the Tamil Nadu Government on Centre–State relations."
+    ],
+    "path": [
+     "Indian Polity",
+     "Centre–State Relations",
+     "Inter-state relations",
+     "Councils and committees"
+    ],
+    "facts": [
+     "The Inter-State Council is chaired by the Prime Minister; Zonal Councils are chaired by the Union Home Minister.",
+     "The Sarkaria Commission (1983) recommended a permanent Inter-State Council."
+    ]
+   },
+   "hi": {
+    "q": "भारत में क्षेत्रीय परिषदों का गठन किसके अंतर्गत हुआ?",
+    "options": [
+     "राज्य पुनर्गठन अधिनियम, 1956",
+     "संविधान का अनुच्छेद 263",
+     "पूर्वोत्तर परिषद अधिनियम, 1971",
+     "राजमन्नार समिति की संस्तुति"
+    ],
+    "explanation": "क्षेत्रीय परिषदें राज्य पुनर्गठन अधिनियम, 1956 द्वारा गठित वैधानिक निकाय हैं। अंतर्राज्य परिषद अनुच्छेद 263 पर आधारित है और 1990 में गठित हुई।",
+    "notes": [
+     "इससे पाँच क्षेत्रीय परिषदें बनीं, जिनके अध्यक्ष केंद्रीय गृह मंत्री हैं।",
+     "यह अंतर्राज्य परिषद का आधार है।",
+     "इससे पूर्वोत्तर परिषद गठित हुई।",
+     "केंद्र-राज्य संबंधों पर तमिलनाडु सरकार की 1969 की समिति।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "केंद्र-राज्य संबंध",
+     "अंतर-राज्य संबंध",
+     "परिषदें एवं समितियाँ"
+    ],
+    "facts": [
+     "अंतर-राज्य परिषद के अध्यक्ष प्रधानमंत्री और क्षेत्रीय परिषदों के अध्यक्ष केंद्रीय गृह मंत्री होते हैं।",
+     "सरकारिया आयोग (1983) ने एक स्थायी अंतर-राज्य परिषद की सिफारिश की थी।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 177
+    },
+    {
+     "source": "Constitution of India, Article 263",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-005",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Amendment of which one of the following does NOT require ratification by the Legislatures of half the States?",
+    "options": [
+     "Election of the President",
+     "Representation of States in Parliament",
+     "Lists in the Seventh Schedule",
+     "Fundamental Rights"
+    ],
+    "explanation": "The proviso to Article 368(2) requires State ratification for federal provisions such as the election of the President, the Seventh Schedule and the representation of States. Fundamental Rights need only a special majority.",
+    "notes": [
+     "Articles 54 and 55 need ratification by the States.",
+     "Needs ratification by the States.",
+     "Needs ratification by the States.",
+     "Can be amended by a special majority of Parliament alone."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Article 368",
+     "Federal provisions"
+    ],
+    "facts": [
+     "A Constitution Amendment Bill can be introduced in either House of Parliament but not in a State Legislature.",
+     "Article 368 itself can be amended only with ratification by half the States."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से किसके संशोधन के लिए आधे राज्यों के विधानमंडलों का अनुसमर्थन आवश्यक नहीं है?",
+    "options": [
+     "राष्ट्रपति का निर्वाचन",
+     "संसद में राज्यों का प्रतिनिधित्व",
+     "सातवीं अनुसूची की सूचियाँ",
+     "मौलिक अधिकार"
+    ],
+    "explanation": "अनुच्छेद 368(2) के परंतुक के अनुसार राष्ट्रपति के निर्वाचन, सातवीं अनुसूची एवं राज्यों के प्रतिनिधित्व जैसे संघीय उपबंधों के लिए राज्यों का अनुसमर्थन आवश्यक है। मौलिक अधिकारों के लिए केवल विशेष बहुमत पर्याप्त है।",
+    "notes": [
+     "अनुच्छेद 54 एवं 55 के लिए राज्यों का अनुसमर्थन आवश्यक है।",
+     "राज्यों का अनुसमर्थन आवश्यक है।",
+     "राज्यों का अनुसमर्थन आवश्यक है।",
+     "केवल संसद के विशेष बहुमत से संशोधन हो सकता है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "अनुच्छेद 368",
+     "संघीय उपबंध"
+    ],
+    "facts": [
+     "संविधान संशोधन विधेयक संसद के किसी भी सदन में पुरःस्थापित किया जा सकता है, किंतु राज्य विधान-मंडल में नहीं।",
+     "स्वयं अनुच्छेद 368 का संशोधन भी आधे राज्यों के अनुसमर्थन से ही हो सकता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 177
+    },
+    {
+     "source": "Constitution of India, Articles 169 and 368",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-006",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The 44th Amendment (1978) replaced 'internal disturbance' as a ground for proclaiming a National Emergency with:",
+    "options": [
+     "Civil unrest",
+     "Breakdown of constitutional machinery",
+     "Armed rebellion",
+     "Financial instability"
+    ],
+    "explanation": "The 1975 Emergency was proclaimed on the ground of internal disturbance. The 44th Amendment replaced it with 'armed rebellion', so the grounds are now war, external aggression and armed rebellion.",
+    "notes": [
+     "Not a ground under Article 352.",
+     "This is the ground for President's Rule under Article 356.",
+     "Now a ground along with war and external aggression.",
+     "This is the ground for a Financial Emergency under Article 360."
+    ],
+    "path": [
+     "Indian Polity",
+     "Emergency Provisions",
+     "National Emergency",
+     "44th Amendment"
+    ],
+    "facts": [
+     "Since the 44th Amendment, the rights under Articles 20 and 21 cannot be suspended even during a National Emergency (Article 359).",
+     "The Emergency of 25 June 1975 was the third National Emergency and the only one based on internal disturbance."
+    ]
+   },
+   "hi": {
+    "q": "44वें संशोधन (1978) ने राष्ट्रीय आपात की उद्घोषणा के आधार 'आंतरिक अशांति' के स्थान पर क्या रखा?",
+    "options": [
+     "नागरिक अशांति",
+     "संवैधानिक तंत्र की विफलता",
+     "सशस्त्र विद्रोह",
+     "वित्तीय अस्थिरता"
+    ],
+    "explanation": "1975 का आपात आंतरिक अशांति के आधार पर घोषित हुआ था। 44वें संशोधन ने इसके स्थान पर 'सशस्त्र विद्रोह' रखा; अब आधार युद्ध, बाह्य आक्रमण एवं सशस्त्र विद्रोह हैं।",
+    "notes": [
+     "यह अनुच्छेद 352 के अंतर्गत आधार नहीं है।",
+     "यह अनुच्छेद 356 के राष्ट्रपति शासन का आधार है।",
+     "अब युद्ध एवं बाह्य आक्रमण के साथ यह भी एक आधार है।",
+     "यह अनुच्छेद 360 के वित्तीय आपात का आधार है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "आपात उपबंध",
+     "राष्ट्रीय आपात",
+     "44वाँ संशोधन"
+    ],
+    "facts": [
+     "44वें संशोधन के बाद राष्ट्रीय आपात के दौरान भी अनुच्छेद 20 और 21 के अधिकार निलंबित नहीं किए जा सकते (अनुच्छेद 359)।",
+     "25 जून 1975 का आपात तीसरा राष्ट्रीय आपात था और आंतरिक अशांति पर आधारित एकमात्र आपात था।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 176
+    },
+    {
+     "source": "Constitution of India, Article 352; Constitution (Forty-fourth Amendment) Act, 1978",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Which Part of the Constitution of India deals with its amendment?",
+    "options": [
+     "Part XX",
+     "Part XVIII",
+     "Part XIX",
+     "Part XXI"
+    ],
+    "explanation": "Part XX, titled 'Amendment of the Constitution', consists of a single Article that gives Parliament the power to amend the Constitution and lays down the procedure for doing so.",
+    "notes": [
+     "Part XX: has only one Article, on the amendment of the Constitution.",
+     "Part XVIII: Emergency Provisions (Articles 352–360).",
+     "Part XIX: Miscellaneous provisions (Articles 361–367).",
+     "Part XXI: Temporary, Transitional and Special Provisions (Articles 369–392)."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Part XX"
+    ],
+    "facts": [
+     "An amendment Bill needs a majority of the total membership and two-thirds of the members present and voting in each House.",
+     "There is no joint sitting of the two Houses on an amendment Bill."
+    ]
+   },
+   "hi": {
+    "q": "भारत के संविधान का कौन-सा भाग उसके संशोधन से संबंधित है?",
+    "options": [
+     "भाग XX",
+     "भाग XVIII",
+     "भाग XIX",
+     "भाग XXI"
+    ],
+    "explanation": "'संविधान का संशोधन' शीर्षक वाले भाग XX में केवल एक अनुच्छेद है, जो संसद को संविधान संशोधन की शक्ति देता है और उसकी प्रक्रिया निर्धारित करता है।",
+    "notes": [
+     "भाग XX: इसमें संविधान के संशोधन पर केवल एक अनुच्छेद है।",
+     "भाग XVIII: आपात उपबंध (अनुच्छेद 352–360)।",
+     "भाग XIX: प्रकीर्ण उपबंध (अनुच्छेद 361–367)।",
+     "भाग XXI: अस्थायी, संक्रमणकालीन और विशेष उपबंध (अनुच्छेद 369–392)।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "भाग XX"
+    ],
+    "facts": [
+     "संशोधन विधेयक के लिए प्रत्येक सदन में कुल सदस्य संख्या का बहुमत तथा उपस्थित एवं मत देने वाले सदस्यों का दो-तिहाई बहुमत चाहिए।",
+     "संशोधन विधेयक पर दोनों सदनों की संयुक्त बैठक नहीं होती।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 103
+    },
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which constitutional amendment is popularly known as the 'Mini Constitution'?",
+    "options": [
+     "24th Amendment, 1971",
+     "42nd Amendment, 1976",
+     "44th Amendment, 1978",
+     "73rd Amendment, 1992"
+    ],
+    "explanation": "The 42nd Amendment, passed during the Emergency in 1976, made such extensive changes that it is called the 'Mini Constitution'. It added the words socialist, secular and integrity to the Preamble and inserted the Fundamental Duties.",
+    "notes": [
+     "The 24th Amendment affirmed the power of Parliament to amend any part of the Constitution.",
+     "It changed the Preamble and a large number of Articles.",
+     "The 44th Amendment undid many changes made in 1976.",
+     "The 73rd Amendment deals with the Panchayats."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Major amendments"
+    ],
+    "facts": [
+     "It was based on the recommendations of the Swaran Singh Committee.",
+     "It added Part IVA and Part XIVA to the Constitution."
+    ]
+   },
+   "hi": {
+    "q": "किस संविधान संशोधन को 'लघु संविधान' कहा जाता है?",
+    "options": [
+     "24वाँ संशोधन, 1971",
+     "42वाँ संशोधन, 1976",
+     "44वाँ संशोधन, 1978",
+     "73वाँ संशोधन, 1992"
+    ],
+    "explanation": "आपातकाल के दौरान 1976 में पारित 42वें संशोधन ने इतने व्यापक परिवर्तन किए कि इसे 'लघु संविधान' कहा जाता है। इसने उद्देशिका में समाजवादी, पंथनिरपेक्ष एवं अखंडता शब्द जोड़े और मूल कर्तव्य सम्मिलित किए।",
+    "notes": [
+     "24वें संशोधन ने संविधान के किसी भी भाग के संशोधन की संसद की शक्ति की पुष्टि की।",
+     "इसने उद्देशिका एवं अनेक अनुच्छेदों को बदला।",
+     "44वें संशोधन ने 1976 के अनेक परिवर्तन समाप्त किए।",
+     "73वाँ संशोधन पंचायतों के बारे में है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "प्रमुख संशोधन"
+    ],
+    "facts": [
+     "यह स्वर्ण सिंह समिति की संस्तुतियों पर आधारित था।",
+     "इसने संविधान में भाग IVक एवं भाग XIVक जोड़े।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The voting age in India was lowered from 21 years to 18 years by the:",
+    "options": [
+     "42nd Amendment, 1976",
+     "52nd Amendment, 1985",
+     "61st Amendment, 1988",
+     "86th Amendment, 2002"
+    ],
+    "explanation": "The 61st Amendment Act, 1988 amended Article 326 and reduced the voting age for elections to the Lok Sabha and the State Assemblies from 21 to 18 years. It took effect in 1989.",
+    "notes": [
+     "The 42nd Amendment did not change the voting age.",
+     "The 52nd Amendment did not change the voting age.",
+     "It amended Article 326.",
+     "The 86th Amendment made elementary education a Fundamental Right."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Major amendments"
+    ],
+    "facts": [
+     "Rajiv Gandhi was the Prime Minister when it was passed.",
+     "Article 326 provides for adult suffrage."
+    ]
+   },
+   "hi": {
+    "q": "भारत में मतदान की आयु 21 वर्ष से घटाकर 18 वर्ष किस संशोधन ने की?",
+    "options": [
+     "42वाँ संशोधन, 1976",
+     "52वाँ संशोधन, 1985",
+     "61वाँ संशोधन, 1988",
+     "86वाँ संशोधन, 2002"
+    ],
+    "explanation": "61वें संशोधन अधिनियम, 1988 ने अनुच्छेद 326 में संशोधन कर लोक सभा एवं राज्य विधान सभाओं के चुनावों के लिए मतदान की आयु 21 से घटाकर 18 वर्ष की। यह 1989 में लागू हुआ।",
+    "notes": [
+     "42वें संशोधन ने मतदान की आयु नहीं बदली।",
+     "52वें संशोधन ने मतदान की आयु नहीं बदली।",
+     "इसने अनुच्छेद 326 में संशोधन किया।",
+     "86वें संशोधन ने प्रारंभिक शिक्षा को मौलिक अधिकार बनाया।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "प्रमुख संशोधन"
+    ],
+    "facts": [
+     "इसके पारित होने के समय राजीव गांधी प्रधानमंत्री थे।",
+     "अनुच्छेद 326 वयस्क मताधिकार का प्रावधान करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "The doctrine of the 'basic structure', which limits Parliament's power to amend the Constitution, was laid down in:",
+    "options": [
+     "Shankari Prasad case (1951)",
+     "Golaknath case (1967)",
+     "Minerva Mills case (1980)",
+     "Kesavananda Bharati case (1973)"
+    ],
+    "explanation": "In Kesavananda Bharati v. State of Kerala (1973), a bench of thirteen Judges held that Parliament can amend any part of the Constitution but cannot alter its basic structure.",
+    "notes": [
+     "Shankari Prasad: the Court upheld the First Amendment and held that Fundamental Rights could be amended.",
+     "Golaknath: the Court held that Parliament could not amend the Fundamental Rights.",
+     "Minerva Mills: the Court applied and reaffirmed the doctrine, but it had been laid down earlier.",
+     "Kesavananda Bharati: the case in which the basic structure doctrine was first laid down."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Limits on the amending power"
+    ],
+    "facts": [
+     "The judgment was delivered on 24 April 1973 by a majority of seven to six.",
+     "Judicial review and the federal character are among the features held to be part of the basic structure."
+    ]
+   },
+   "hi": {
+    "q": "संविधान संशोधन की संसद की शक्ति को सीमित करने वाला 'मूल ढाँचे' का सिद्धांत किस वाद में प्रतिपादित हुआ?",
+    "options": [
+     "शंकरी प्रसाद वाद (1951)",
+     "गोलकनाथ वाद (1967)",
+     "मिनर्वा मिल्स वाद (1980)",
+     "केशवानंद भारती वाद (1973)"
+    ],
+    "explanation": "केशवानंद भारती बनाम केरल राज्य (1973) में तेरह न्यायाधीशों की पीठ ने कहा कि संसद संविधान के किसी भी भाग का संशोधन कर सकती है, किंतु उसके मूल ढाँचे को नहीं बदल सकती।",
+    "notes": [
+     "शंकरी प्रसाद: न्यायालय ने प्रथम संशोधन को वैध ठहराया और कहा कि मूल अधिकारों का संशोधन हो सकता है।",
+     "गोलकनाथ: न्यायालय ने कहा कि संसद मूल अधिकारों का संशोधन नहीं कर सकती।",
+     "मिनर्वा मिल्स: न्यायालय ने इस सिद्धांत को लागू कर पुष्ट किया, किंतु यह पहले ही प्रतिपादित हो चुका था।",
+     "केशवानंद भारती: इसी वाद में मूल ढाँचे का सिद्धांत पहली बार प्रतिपादित हुआ।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "संशोधन शक्ति की सीमाएँ"
+    ],
+    "facts": [
+     "निर्णय 24 अप्रैल 1973 को सात के विरुद्ध छह के बहुमत से दिया गया।",
+     "न्यायिक पुनर्विलोकन और संघीय स्वरूप उन लक्षणों में हैं, जिन्हें मूल ढाँचे का भाग माना गया है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 104
+    },
+    {
+     "source": "Supreme Court of India, Kesavananda Bharati v. State of Kerala, judgment of 24 April 1973"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "In the Seventh Schedule of the Constitution, 'police' and 'public order' are subjects of the:",
+    "options": [
+     "State List",
+     "Union List",
+     "Concurrent List",
+     "Residuary powers"
+    ],
+    "explanation": "Public order and police are the first two entries of the State List (List II) of the Seventh Schedule. The States are therefore responsible for law and order.",
+    "notes": [
+     "The State Legislature alone can normally make laws on them.",
+     "The Union List has subjects such as defence and foreign affairs.",
+     "The Concurrent List has subjects such as education and forests.",
+     "Residuary powers cover matters not mentioned in any list."
+    ],
+    "path": [
+     "Indian Polity",
+     "Centre–State Relations",
+     "Legislative relations"
+    ],
+    "facts": [
+     "The Seventh Schedule has three lists: Union, State and Concurrent.",
+     "In a conflict on a Concurrent subject, the Union law normally prevails."
+    ]
+   },
+   "hi": {
+    "q": "संविधान की सातवीं अनुसूची में 'पुलिस' एवं 'लोक व्यवस्था' किस सूची के विषय हैं?",
+    "options": [
+     "राज्य सूची",
+     "संघ सूची",
+     "समवर्ती सूची",
+     "अवशिष्ट शक्तियाँ"
+    ],
+    "explanation": "लोक व्यवस्था एवं पुलिस सातवीं अनुसूची की राज्य सूची (सूची II) की पहली दो प्रविष्टियाँ हैं। अतः कानून व्यवस्था का उत्तरदायित्व राज्यों का है।",
+    "notes": [
+     "सामान्यतः केवल राज्य विधानमंडल इन पर विधि बना सकता है।",
+     "संघ सूची में रक्षा एवं विदेश मामले जैसे विषय हैं।",
+     "समवर्ती सूची में शिक्षा एवं वन जैसे विषय हैं।",
+     "अवशिष्ट शक्तियों में वे विषय आते हैं, जो किसी सूची में नहीं हैं।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "केंद्र-राज्य संबंध",
+     "विधायी संबंध"
+    ],
+    "facts": [
+     "सातवीं अनुसूची में तीन सूचियाँ हैं: संघ, राज्य एवं समवर्ती।",
+     "समवर्ती विषय पर विरोध की स्थिति में सामान्यतः संघ की विधि मान्य होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "The Goods and Services Tax (GST) was introduced in India by the:",
+    "options": [
+     "100th Amendment, 2015",
+     "101st Amendment, 2016",
+     "102nd Amendment, 2018",
+     "104th Amendment, 2019"
+    ],
+    "explanation": "The Constitution (101st Amendment) Act, 2016 introduced the Goods and Services Tax and provided for the GST Council under Article 279A. GST was rolled out on 1 July 2017.",
+    "notes": [
+     "The 100th Amendment gave effect to the land boundary agreement with Bangladesh.",
+     "The tax came into force on 1 July 2017.",
+     "The 102nd Amendment gave constitutional status to the National Commission for Backward Classes.",
+     "The 104th Amendment extended the reservation of seats for SCs and STs in the Lok Sabha and the State Assemblies and ended the nomination of Anglo-Indians."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Major amendments"
+    ],
+    "facts": [
+     "The GST Council is chaired by the Union Finance Minister.",
+     "GST replaced taxes such as excise duty, service tax and VAT."
+    ]
+   },
+   "hi": {
+    "q": "भारत में वस्तु एवं सेवा कर (जीएसटी) किस संशोधन द्वारा लागू किया गया?",
+    "options": [
+     "100वाँ संशोधन, 2015",
+     "101वाँ संशोधन, 2016",
+     "102वाँ संशोधन, 2018",
+     "104वाँ संशोधन, 2019"
+    ],
+    "explanation": "संविधान (101वाँ संशोधन) अधिनियम, 2016 ने वस्तु एवं सेवा कर लागू किया और अनुच्छेद 279क के अंतर्गत जीएसटी परिषद का प्रावधान किया। जीएसटी 1 जुलाई 2017 को लागू हुआ।",
+    "notes": [
+     "100वें संशोधन ने बांग्लादेश के साथ भूमि सीमा समझौते को लागू किया।",
+     "यह कर 1 जुलाई 2017 को लागू हुआ।",
+     "102वें संशोधन ने राष्ट्रीय पिछड़ा वर्ग आयोग को सांविधानिक दर्जा दिया।",
+     "104वें संशोधन ने लोक सभा एवं राज्य विधान सभाओं में अनुसूचित जातियों एवं जनजातियों के स्थानों का आरक्षण बढ़ाया और आंग्ल-भारतीयों का नामनिर्देशन समाप्त किया।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "प्रमुख संशोधन"
+    ],
+    "facts": [
+     "जीएसटी परिषद के अध्यक्ष केंद्रीय वित्त मंत्री हैं।",
+     "जीएसटी ने उत्पाद शुल्क, सेवा कर एवं वैट जैसे करों का स्थान लिया।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 103
+    },
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-013",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "The anti-defection law was added to the Constitution as the Tenth Schedule by the:",
+    "options": [
+     "42nd Amendment, 1976",
+     "44th Amendment, 1978",
+     "52nd Amendment, 1985",
+     "91st Amendment, 2003"
+    ],
+    "explanation": "The 52nd Amendment Act, 1985 added the Tenth Schedule, which provides for the disqualification of members of Parliament and the State Legislatures on the ground of defection.",
+    "notes": [
+     "The 42nd Amendment did not deal with defection.",
+     "The 44th Amendment did not deal with defection.",
+     "A member who leaves his party can be disqualified under it.",
+     "The 91st Amendment tightened the law but did not create it."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Major amendments"
+    ],
+    "facts": [
+     "The Speaker or the Chairman decides questions of disqualification.",
+     "In Kihoto Hollohan (1992) the decision was held to be open to judicial review."
+    ]
+   },
+   "hi": {
+    "q": "दल-बदल विरोधी कानून संविधान में दसवीं अनुसूची के रूप में किस संशोधन ने जोड़ा?",
+    "options": [
+     "42वाँ संशोधन, 1976",
+     "44वाँ संशोधन, 1978",
+     "52वाँ संशोधन, 1985",
+     "91वाँ संशोधन, 2003"
+    ],
+    "explanation": "52वें संशोधन अधिनियम, 1985 ने दसवीं अनुसूची जोड़ी, जो दल-बदल के आधार पर संसद एवं राज्य विधानमंडलों के सदस्यों की अयोग्यता का प्रावधान करती है।",
+    "notes": [
+     "42वाँ संशोधन दल-बदल के बारे में नहीं था।",
+     "44वाँ संशोधन दल-बदल के बारे में नहीं था।",
+     "इसके अंतर्गत अपना दल छोड़ने वाला सदस्य अयोग्य ठहराया जा सकता है।",
+     "91वें संशोधन ने कानून को कठोर किया, बनाया नहीं।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "प्रमुख संशोधन"
+    ],
+    "facts": [
+     "अयोग्यता के प्रश्नों का निर्णय अध्यक्ष या सभापति करते हैं।",
+     "किहोतो होलोहन (1992) में यह निर्णय न्यायिक पुनर्विलोकन के अधीन माना गया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-014",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Who was the President of India when the National Emergency of June 1975 was proclaimed?",
+    "options": [
+     "V. V. Giri",
+     "Zakir Husain",
+     "N. Sanjiva Reddy",
+     "Fakhruddin Ali Ahmed"
+    ],
+    "explanation": "President Fakhruddin Ali Ahmed proclaimed the National Emergency on 25 June 1975 on the advice of Prime Minister Indira Gandhi. It was revoked in March 1977.",
+    "notes": [
+     "V. V. Giri: President (1969–74) when the Emergency of December 1971 was proclaimed.",
+     "Zakir Husain: the first President to die in office, in 1969.",
+     "N. Sanjiva Reddy: became President in July 1977, after the Emergency had ended.",
+     "Fakhruddin Ali Ahmed: President from 1974 until his death in February 1977."
+    ],
+    "path": [
+     "Indian Polity",
+     "Emergency Provisions",
+     "National Emergency",
+     "Emergency of 1975"
+    ],
+    "facts": [
+     "The President proclaims a National Emergency under Article 352.",
+     "Indira Gandhi was the Prime Minister in June 1975."
+    ]
+   },
+   "hi": {
+    "q": "जून 1975 में राष्ट्रीय आपात की उद्घोषणा के समय भारत के राष्ट्रपति कौन थे?",
+    "options": [
+     "वी. वी. गिरि",
+     "ज़ाकिर हुसैन",
+     "एन. संजीव रेड्डी",
+     "फखरुद्दीन अली अहमद"
+    ],
+    "explanation": "राष्ट्रपति फखरुद्दीन अली अहमद ने प्रधानमंत्री इंदिरा गांधी की सलाह पर 25 जून 1975 को राष्ट्रीय आपात की उद्घोषणा की। मार्च 1977 में इसे वापस लिया गया।",
+    "notes": [
+     "वी. वी. गिरि: दिसंबर 1971 के आपात की उद्घोषणा के समय राष्ट्रपति (1969–74)।",
+     "ज़ाकिर हुसैन: पद पर रहते हुए 1969 में मृत्यु पाने वाले पहले राष्ट्रपति।",
+     "एन. संजीव रेड्डी: आपात समाप्त होने के बाद जुलाई 1977 में राष्ट्रपति बने।",
+     "फखरुद्दीन अली अहमद: 1974 से फरवरी 1977 में अपनी मृत्यु तक राष्ट्रपति।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "आपात उपबंध",
+     "राष्ट्रीय आपात",
+     "1975 का आपात"
+    ],
+    "facts": [
+     "राष्ट्रपति अनुच्छेद 352 के अंतर्गत राष्ट्रीय आपात की उद्घोषणा करते हैं।",
+     "जून 1975 में इंदिरा गांधी प्रधानमंत्री थीं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "President's Secretariat, former Presidents of India",
+     "url": "https://presidentofindia.nic.in/"
+    },
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The Constitution (First Amendment) Act, 1951 added which Schedule to the Constitution?",
+    "options": [
+     "Ninth Schedule",
+     "Tenth Schedule",
+     "Eleventh Schedule",
+     "Twelfth Schedule"
+    ],
+    "explanation": "The First Amendment, 1951 inserted Articles 31A and 31B and the Ninth Schedule. Laws placed in the Ninth Schedule were protected from being challenged for violating the Fundamental Rights.",
+    "notes": [
+     "It was meant to protect land reform laws from challenge in the courts.",
+     "The Tenth Schedule deals with disqualification on the ground of defection.",
+     "The Eleventh Schedule was added in 1992.",
+     "The Twelfth Schedule was added in 1992."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Major amendments"
+    ],
+    "facts": [
+     "The amendment also added new grounds of restriction on the freedom of speech.",
+     "The Constitution originally had eight Schedules."
+    ]
+   },
+   "hi": {
+    "q": "संविधान (प्रथम संशोधन) अधिनियम, 1951 ने संविधान में कौन-सी अनुसूची जोड़ी?",
+    "options": [
+     "नौवीं अनुसूची",
+     "दसवीं अनुसूची",
+     "ग्यारहवीं अनुसूची",
+     "बारहवीं अनुसूची"
+    ],
+    "explanation": "प्रथम संशोधन, 1951 ने अनुच्छेद 31क एवं 31ख तथा नौवीं अनुसूची जोड़ी। नौवीं अनुसूची में रखे गए कानून मौलिक अधिकारों के उल्लंघन के आधार पर चुनौती से सुरक्षित थे।",
+    "notes": [
+     "इसका उद्देश्य भूमि सुधार कानूनों को न्यायालयों में चुनौती से बचाना था।",
+     "दसवीं अनुसूची दल-बदल के आधार पर निरर्हता से संबंधित है।",
+     "ग्यारहवीं अनुसूची 1992 में जोड़ी गई।",
+     "बारहवीं अनुसूची 1992 में जोड़ी गई।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "प्रमुख संशोधन"
+    ],
+    "facts": [
+     "इस संशोधन ने वाक् स्वतंत्रता पर निर्बंधन के नए आधार भी जोड़े।",
+     "संविधान में मूलतः आठ अनुसूचियाँ थीं।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 103
+    },
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "The Commission on Centre–State Relations constituted by the Government of India in 2007 was headed by:",
+    "options": [
+     "Justice R. S. Sarkaria",
+     "Justice M. M. Punchhi",
+     "Justice P. V. Rajamannar",
+     "Justice B. N. Srikrishna"
+    ],
+    "explanation": "The second Commission on Centre–State Relations was set up in April 2007 under Justice Madan Mohan Punchhi, a former Chief Justice of India. It submitted its report in 2010.",
+    "notes": [
+     "R. S. Sarkaria: headed the earlier commission on Centre–State relations set up in 1983.",
+     "M. M. Punchhi: former Chief Justice of India who headed the 2007 Commission.",
+     "P. V. Rajamannar: headed the committee on Centre–State relations set up by Tamil Nadu in 1969.",
+     "B. N. Srikrishna: headed the committee on Telangana (2010) and on data protection (2018)."
+    ],
+    "path": [
+     "Indian Polity",
+     "Centre–State Relations",
+     "Commissions",
+     "Punchhi Commission"
+    ],
+    "facts": [
+     "The Punchhi Commission submitted its report in seven volumes.",
+     "The Sarkaria Commission had been set up twenty-four years earlier, in 1983."
+    ]
+   },
+   "hi": {
+    "q": "भारत सरकार द्वारा 2007 में गठित केंद्र-राज्य संबंध आयोग के अध्यक्ष कौन थे?",
+    "options": [
+     "न्यायमूर्ति आर. एस. सरकारिया",
+     "न्यायमूर्ति एम. एम. पुंछी",
+     "न्यायमूर्ति पी. वी. राजमन्नार",
+     "न्यायमूर्ति बी. एन. श्रीकृष्ण"
+    ],
+    "explanation": "केंद्र-राज्य संबंधों पर दूसरा आयोग अप्रैल 2007 में भारत के पूर्व मुख्य न्यायाधीश न्यायमूर्ति मदन मोहन पुंछी की अध्यक्षता में गठित हुआ। इसने 2010 में अपना प्रतिवेदन दिया।",
+    "notes": [
+     "आर. एस. सरकारिया: 1983 में गठित केंद्र-राज्य संबंधों के पूर्ववर्ती आयोग के अध्यक्ष।",
+     "एम. एम. पुंछी: 2007 के आयोग के अध्यक्ष, भारत के पूर्व मुख्य न्यायाधीश।",
+     "पी. वी. राजमन्नार: 1969 में तमिलनाडु द्वारा गठित केंद्र-राज्य संबंध समिति के अध्यक्ष।",
+     "बी. एन. श्रीकृष्ण: तेलंगाना (2010) तथा डेटा संरक्षण (2018) संबंधी समितियों के अध्यक्ष।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "केंद्र-राज्य संबंध",
+     "आयोग",
+     "पुंछी आयोग"
+    ],
+    "facts": [
+     "पुंछी आयोग ने सात खंडों में अपना प्रतिवेदन दिया।",
+     "सरकारिया आयोग इससे चौबीस वर्ष पहले, 1983 में गठित हुआ था।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Inter-State Council Secretariat, Ministry of Home Affairs: Commission on Centre-State Relations (Punchhi Commission), report 2010",
+     "url": "https://interstatecouncil.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "If a State law on a Concurrent List matter is repugnant to a law made by Parliament, the law of Parliament prevails under:",
+    "options": [
+     "Article 252",
+     "Article 253",
+     "Article 254",
+     "Article 256"
+    ],
+    "explanation": "Article 254(1) provides that in case of repugnancy on a Concurrent List matter, the law made by Parliament prevails. Under Article 254(2), a State law reserved for and assented to by the President prevails in that State.",
+    "notes": [
+     "Article 252: power of Parliament to legislate for two or more States by their consent.",
+     "Article 253: legislation for giving effect to international treaties and agreements.",
+     "Article 254: inconsistency between laws made by Parliament and by the State Legislatures.",
+     "Article 256: obligation of the States to comply with laws made by Parliament."
+    ],
+    "path": [
+     "Indian Polity",
+     "Centre–State Relations",
+     "Legislative relations",
+     "Article 254"
+    ],
+    "facts": [
+     "Parliament can later amend or repeal a State law that prevails under Article 254(2).",
+     "Education, forests and marriage are among the subjects of the Concurrent List."
+    ]
+   },
+   "hi": {
+    "q": "समवर्ती सूची के किसी विषय पर राज्य की विधि संसद की विधि के विरुद्ध होने पर संसद की विधि किस अनुच्छेद के अंतर्गत अभिभावी होती है?",
+    "options": [
+     "अनुच्छेद 252",
+     "अनुच्छेद 253",
+     "अनुच्छेद 254",
+     "अनुच्छेद 256"
+    ],
+    "explanation": "अनुच्छेद 254(1) के अनुसार समवर्ती सूची के विषय पर विरोध की स्थिति में संसद द्वारा बनाई गई विधि अभिभावी होती है। अनुच्छेद 254(2) के अनुसार राष्ट्रपति के विचार हेतु आरक्षित और उनकी अनुमति प्राप्त राज्य विधि उस राज्य में अभिभावी होती है।",
+    "notes": [
+     "अनुच्छेद 252: दो या अधिक राज्यों की सहमति से उनके लिए विधि बनाने की संसद की शक्ति।",
+     "अनुच्छेद 253: अंतरराष्ट्रीय संधियों एवं करारों को प्रभावी करने के लिए विधान।",
+     "अनुच्छेद 254: संसद द्वारा बनाई गई विधियों और राज्य विधान-मंडलों द्वारा बनाई गई विधियों में असंगति।",
+     "अनुच्छेद 256: संसद की विधियों के अनुपालन की राज्यों की बाध्यता।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "केंद्र-राज्य संबंध",
+     "विधायी संबंध",
+     "अनुच्छेद 254"
+    ],
+    "facts": [
+     "अनुच्छेद 254(2) के अंतर्गत अभिभावी राज्य विधि को संसद बाद में संशोधित या निरसित कर सकती है।",
+     "शिक्षा, वन एवं विवाह समवर्ती सूची के विषयों में हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Articles 252–256",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-018",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The Constitution (103rd Amendment) Act, 2019 provides 10 per cent reservation in education and public employment for:",
+    "options": [
+     "The Other Backward Classes",
+     "Women",
+     "The Scheduled Tribes",
+     "Economically weaker sections"
+    ],
+    "explanation": "The 103rd Amendment inserted Articles 15(6) and 16(6), enabling the State to provide up to 10 per cent reservation for the economically weaker sections among those who are not covered by the reservations for the SCs, STs and OBCs.",
+    "notes": [
+     "The Other Backward Classes already had 27 per cent reservation.",
+     "The amendment is not a reservation for women as a class.",
+     "The Scheduled Tribes already had reservation.",
+     "It added Articles 15(6) and 16(6) for those not covered by the existing reservations."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Major amendments"
+    ],
+    "facts": [
+     "The Supreme Court upheld the amendment in Janhit Abhiyan v. Union of India (2022).",
+     "This reservation is over and above the existing 50 per cent ceiling."
+    ]
+   },
+   "hi": {
+    "q": "संविधान (103वाँ संशोधन) अधिनियम, 2019 शिक्षा एवं लोक नियोजन में 10 प्रतिशत आरक्षण किनके लिए देता है?",
+    "options": [
+     "अन्य पिछड़े वर्ग",
+     "महिलाएँ",
+     "अनुसूचित जनजातियाँ",
+     "आर्थिक रूप से कमजोर वर्ग"
+    ],
+    "explanation": "103वें संशोधन ने अनुच्छेद 15(6) एवं 16(6) जोड़े, जिनसे राज्य उन आर्थिक रूप से कमजोर वर्गों को 10 प्रतिशत तक आरक्षण दे सकता है, जो अनुसूचित जातियों, जनजातियों एवं अन्य पिछड़े वर्गों के आरक्षण में नहीं आते।",
+    "notes": [
+     "अन्य पिछड़े वर्गों को पहले से 27 प्रतिशत आरक्षण था।",
+     "यह संशोधन वर्ग के रूप में महिलाओं का आरक्षण नहीं है।",
+     "अनुसूचित जनजातियों को पहले से आरक्षण था।",
+     "इसने विद्यमान आरक्षण में न आने वालों के लिए अनुच्छेद 15(6) एवं 16(6) जोड़े।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "प्रमुख संशोधन"
+    ],
+    "facts": [
+     "उच्चतम न्यायालय ने जनहित अभियान बनाम भारत संघ (2022) में इस संशोधन को वैध ठहराया।",
+     "यह आरक्षण विद्यमान 50 प्रतिशत की सीमा के अतिरिक्त है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-019",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The Constitution (106th Amendment) Act, 2023, called the 'Nari Shakti Vandan Adhiniyam', provides for:",
+    "options": [
+     "Reservation of one-third of the seats in the Lok Sabha and the State Assemblies for women",
+     "Reservation of half the seats in the Panchayats for women",
+     "Reservation of seats for women in the Rajya Sabha",
+     "Reservation of posts for women in the higher judiciary"
+    ],
+    "explanation": "The 106th Amendment reserves one-third of the seats in the Lok Sabha, the State Legislative Assemblies and the Delhi Assembly for women, including the seats reserved for the SCs and STs. It will take effect after a delimitation based on the next census.",
+    "notes": [
+     "It also covers the Legislative Assembly of Delhi.",
+     "Reservation in the Panchayats comes from the 73rd Amendment.",
+     "The Rajya Sabha is not covered by the amendment.",
+     "The amendment does not deal with the judiciary."
+    ],
+    "path": [
+     "Indian Polity",
+     "Amendment of the Constitution",
+     "Major amendments"
+    ],
+    "facts": [
+     "The reservation is to continue for fifteen years from its commencement.",
+     "It inserted Articles 330A and 332A."
+    ]
+   },
+   "hi": {
+    "q": "संविधान (106वाँ संशोधन) अधिनियम, 2023, जिसे 'नारी शक्ति वंदन अधिनियम' कहते हैं, किसका प्रावधान करता है?",
+    "options": [
+     "लोक सभा एवं राज्य विधान सभाओं में महिलाओं के लिए एक-तिहाई स्थानों का आरक्षण",
+     "पंचायतों में महिलाओं के लिए आधे स्थानों का आरक्षण",
+     "राज्य सभा में महिलाओं के लिए स्थानों का आरक्षण",
+     "उच्चतर न्यायपालिका में महिलाओं के लिए पदों का आरक्षण"
+    ],
+    "explanation": "106वाँ संशोधन लोक सभा, राज्य विधान सभाओं एवं दिल्ली विधान सभा में एक-तिहाई स्थान महिलाओं के लिए आरक्षित करता है, जिनमें अनुसूचित जातियों एवं जनजातियों के लिए आरक्षित स्थान भी हैं। यह अगली जनगणना पर आधारित परिसीमन के बाद प्रभावी होगा।",
+    "notes": [
+     "इसमें दिल्ली की विधान सभा भी आती है।",
+     "पंचायतों में आरक्षण 73वें संशोधन से है।",
+     "राज्य सभा इस संशोधन में नहीं आती।",
+     "यह संशोधन न्यायपालिका के बारे में नहीं है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संविधान संशोधन",
+     "प्रमुख संशोधन"
+    ],
+    "facts": [
+     "यह आरक्षण लागू होने से पंद्रह वर्ष तक रहेगा।",
+     "इसने अनुच्छेद 330क एवं 332क जोड़े।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  },
+  {
+   "id": "pol-amend-020",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "With the approval of Parliament every six months, President's Rule in a State can continue for a maximum period of:",
+    "options": [
+     "Six months",
+     "One year",
+     "Two years",
+     "Three years"
+    ],
+    "explanation": "President's Rule lasts six months at a time and can be extended, with the approval of Parliament every six months, up to three years. After the 44th Amendment, extension beyond one year is allowed only if a National Emergency is in force and the Election Commission certifies that elections cannot be held.",
+    "notes": [
+     "Six months is the life of each approval, not the maximum.",
+     "It can go beyond one year only on certain conditions.",
+     "The maximum is longer than two years.",
+     "Extension beyond one year needs a National Emergency and a certificate of the Election Commission."
+    ],
+    "path": [
+     "Indian Polity",
+     "Emergency Provisions",
+     "President's Rule"
+    ],
+    "facts": [
+     "In S. R. Bommai (1994) the Supreme Court held that the proclamation is subject to judicial review.",
+     "The State Legislature is suspended or dissolved during President's Rule."
+    ]
+   },
+   "hi": {
+    "q": "संसद के प्रत्येक छह माह के अनुमोदन से किसी राज्य में राष्ट्रपति शासन अधिकतम कितनी अवधि तक रह सकता है?",
+    "options": [
+     "छह माह",
+     "एक वर्ष",
+     "दो वर्ष",
+     "तीन वर्ष"
+    ],
+    "explanation": "राष्ट्रपति शासन एक बार में छह माह रहता है और संसद के प्रत्येक छह माह के अनुमोदन से तीन वर्ष तक बढ़ाया जा सकता है। 44वें संशोधन के बाद एक वर्ष से आगे का विस्तार तभी संभव है, जब राष्ट्रीय आपात लागू हो और निर्वाचन आयोग प्रमाणित करे कि चुनाव नहीं कराए जा सकते।",
+    "notes": [
+     "छह माह प्रत्येक अनुमोदन की अवधि है, अधिकतम सीमा नहीं।",
+     "यह कुछ शर्तों पर ही एक वर्ष से आगे बढ़ सकता है।",
+     "अधिकतम अवधि दो वर्ष से अधिक है।",
+     "एक वर्ष से आगे बढ़ाने के लिए राष्ट्रीय आपात तथा निर्वाचन आयोग का प्रमाणन आवश्यक है।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "आपात उपबंध",
+     "राष्ट्रपति शासन"
+    ],
+    "facts": [
+     "एस. आर. बोम्मई (1994) में उच्चतम न्यायालय ने कहा कि उद्घोषणा न्यायिक पुनर्विलोकन के अधीन है।",
+     "राष्ट्रपति शासन में राज्य विधानमंडल निलंबित या भंग रहता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India (as amended)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 7 'Federalism' and Ch. 9 'Constitution as a Living Document'"
+    }
+   ]
+  }
+ ]
 }

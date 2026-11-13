@@ -54,3 +54,8 @@ Checked `data/draft/hist-ivc.json` (55 questions) → `data/hist-ivc.json` (55 q
 ## For the writer later
 - Printed Fatman pp. 76–77 (Neolithic/Chalcolithic, early IVC) are missing from the scan, so Neolithic and Chalcolithic questions rest on NCERT and web sources.
 - Fatman p. 75 places Langhnaj in Uttar Pradesh; it is in Gujarat. Do not cite the page for that fact.
+
+## Check of 12 November 2026 (single-question rework)
+- Checked 32 questions (001 004 007 012 013 014 016 017 020 022 024 026 028 029 031 033 035 036 037 038 041 042 044 045 046 047 048 049 050 052 054 055). All answer keys confirmed correct.
+- Corrected: hist-ivc-055 (explanation named Kot Diji, which is not an option; now names Kalibangan, Rajasthan, to match option A, in both languages).
+- Replaced: none.

@@ -1,411 +1,1303 @@
 {
-  "section": "health-diseases",
-  "questions": [
+ "section": "health-diseases",
+ "questions": [
+  {
+   "id": "health-diseases-001",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Dengue fever is transmitted by:",
+    "options": [
+     "Female Anopheles mosquito",
+     "Culex mosquito",
+     "Aedes mosquito",
+     "Sandfly"
+    ],
+    "explanation": "Dengue is a viral disease spread mainly by the bite of infected female Aedes aegypti mosquitoes, which breed in clean stagnant water collected in coolers, tyres and containers. The same mosquito also transmits chikungunya and Zika.",
+    "notes": [
+     "Female Anopheles mosquito: vector of malaria.",
+     "Culex mosquito: vector of lymphatic filariasis and Japanese encephalitis.",
+     "Aedes mosquito: vector of dengue, chikungunya and Zika.",
+     "Sandfly: vector of kala-azar (visceral leishmaniasis)."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases",
+     "Vectors"
+    ],
+    "facts": [
+     "Dengue virus is a flavivirus with four serotypes (DENV-1 to DENV-4).",
+     "Aedes aegypti usually bites during the daytime."
+    ]
+   },
+   "hi": {
+    "q": "डेंगू ज्वर का संचरण किसके द्वारा होता है?",
+    "options": [
+     "मादा एनॉफिलीज मच्छर",
+     "क्यूलेक्स मच्छर",
+     "एडीज मच्छर",
+     "बालू मक्खी (सैंडफ्लाई)"
+    ],
+    "explanation": "डेंगू एक विषाणुजनित रोग है, जो मुख्यतः संक्रमित मादा एडीज इजिप्टी मच्छर के काटने से फैलता है। यह मच्छर कूलर, टायर और बर्तनों में जमा साफ ठहरे पानी में पनपता है तथा चिकनगुनिया और ज़ीका भी फैलाता है।",
+    "notes": [
+     "मादा एनॉफिलीज मच्छर: मलेरिया का वाहक।",
+     "क्यूलेक्स मच्छर: लसीका फाइलेरिया (फीलपाँव) और जापानी इन्सेफेलाइटिस का वाहक।",
+     "एडीज मच्छर: डेंगू, चिकनगुनिया और ज़ीका का वाहक।",
+     "बालू मक्खी: कालाजार (विसरल लीशमैनियासिस) की वाहक।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग",
+     "रोगवाहक"
+    ],
+    "facts": [
+     "डेंगू विषाणु एक फ्लैविवायरस है, जिसके चार सीरोटाइप (DENV-1 से DENV-4) हैं।",
+     "एडीज इजिप्टी मच्छर प्रायः दिन के समय काटता है।"
+    ]
+   },
+   "refs": [
     {
-      "id": "health-diseases-001",
-      "level": "TGT",
-      "answer": 2,
-      "en": {
-        "q": "Dengue fever is transmitted by:",
-        "options": [
-          "Female Anopheles mosquito",
-          "Culex mosquito",
-          "Aedes mosquito",
-          "Sandfly"
-        ],
-        "explanation": "Dengue is a viral disease spread mainly by the bite of infected female Aedes aegypti mosquitoes, which breed in clean stagnant water collected in coolers, tyres and containers. The same mosquito also transmits chikungunya and Zika.",
-        "notes": [
-          "Female Anopheles mosquito: vector of malaria.",
-          "Culex mosquito: vector of lymphatic filariasis and Japanese encephalitis.",
-          "Aedes mosquito: vector of dengue, chikungunya and Zika.",
-          "Sandfly: vector of kala-azar (visceral leishmaniasis)."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Diseases",
-          "Vectors"
-        ],
-        "facts": [
-          "Dengue virus is a flavivirus with four serotypes (DENV-1 to DENV-4).",
-          "Aedes aegypti usually bites during the daytime."
-        ]
-      },
-      "hi": {
-        "q": "डेंगू ज्वर का संचरण किसके द्वारा होता है?",
-        "options": [
-          "मादा एनॉफिलीज मच्छर",
-          "क्यूलेक्स मच्छर",
-          "एडीज मच्छर",
-          "बालू मक्खी (सैंडफ्लाई)"
-        ],
-        "explanation": "डेंगू एक विषाणुजनित रोग है, जो मुख्यतः संक्रमित मादा एडीज इजिप्टी मच्छर के काटने से फैलता है। यह मच्छर कूलर, टायर और बर्तनों में जमा साफ ठहरे पानी में पनपता है तथा चिकनगुनिया और ज़ीका भी फैलाता है।",
-        "notes": [
-          "मादा एनॉफिलीज मच्छर: मलेरिया का वाहक।",
-          "क्यूलेक्स मच्छर: लसीका फाइलेरिया (फीलपाँव) और जापानी इन्सेफेलाइटिस का वाहक।",
-          "एडीज मच्छर: डेंगू, चिकनगुनिया और ज़ीका का वाहक।",
-          "बालू मक्खी: कालाजार (विसरल लीशमैनियासिस) की वाहक।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "रोग",
-          "रोगवाहक"
-        ],
-        "facts": [
-          "डेंगू विषाणु एक फ्लैविवायरस है, जिसके चार सीरोटाइप (DENV-1 से DENV-4) हैं।",
-          "एडीज इजिप्टी मच्छर प्रायः दिन के समय काटता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 319
-        },
-        {
-          "source": "WHO fact sheet: Dengue and severe dengue",
-          "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue"
-        }
-      ]
+     "book": "fatman",
+     "page": 319
     },
     {
-      "id": "health-diseases-002",
-      "level": "TGT",
-      "answer": 0,
-      "en": {
-        "q": "BCG vaccine is given for protection against:",
-        "options": [
-          "Tuberculosis",
-          "Poliomyelitis",
-          "Diphtheria",
-          "Measles"
-        ],
-        "explanation": "BCG (Bacillus Calmette–Guérin) vaccine protects against tuberculosis, a bacterial disease caused by Mycobacterium tuberculosis. Under India's Universal Immunization Programme it is given at birth.",
-        "notes": [
-          "Tuberculosis: caused by Mycobacterium tuberculosis; prevented in children by BCG vaccine.",
-          "Poliomyelitis: a viral disease prevented by oral polio vaccine (OPV) and injectable polio vaccine (IPV).",
-          "Diphtheria: a bacterial disease prevented by DPT/pentavalent vaccine.",
-          "Measles: a viral disease prevented by the measles-rubella (MR) vaccine."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Vaccines",
-          "BCG"
-        ],
-        "facts": [
-          "BCG is a live attenuated vaccine.",
-          "World TB Day (24 March) marks Robert Koch's announcement of the TB bacterium in 1882."
-        ]
-      },
-      "hi": {
-        "q": "BCG टीका किस रोग से बचाव के लिए दिया जाता है?",
-        "options": [
-          "क्षय रोग (तपेदिक)",
-          "पोलियो",
-          "डिफ्थीरिया",
-          "खसरा"
-        ],
-        "explanation": "BCG (बैसिलस कैलमेट-गुएरिन) टीका क्षय रोग से बचाव करता है, जो माइकोबैक्टीरियम ट्यूबरकुलोसिस नामक जीवाणु से होता है। भारत के सार्वभौमिक टीकाकरण कार्यक्रम में यह जन्म के समय दिया जाता है।",
-        "notes": [
-          "क्षय रोग: माइकोबैक्टीरियम ट्यूबरकुलोसिस से होता है; बच्चों में BCG टीका इससे बचाता है।",
-          "पोलियो: विषाणुजनित रोग; मुख से दिए जाने वाले (OPV) और इंजेक्शन वाले (IPV) पोलियो टीके से बचाव।",
-          "डिफ्थीरिया: जीवाणुजनित रोग; DPT/पेंटावैलेंट टीके से बचाव।",
-          "खसरा: विषाणुजनित रोग; खसरा-रूबेला (MR) टीके से बचाव।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "टीके",
-          "BCG"
-        ],
-        "facts": [
-          "BCG एक जीवित क्षीणीकृत टीका है।",
-          "विश्व क्षय रोग दिवस (24 मार्च) 1882 में रॉबर्ट कोच द्वारा क्षय जीवाणु की खोज की घोषणा की याद में मनाया जाता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 319
-        },
-        {
-          "source": "MoHFW, Universal Immunization Programme – National Immunization Schedule"
-        }
-      ]
-    },
-    {
-      "id": "health-diseases-003",
-      "level": "PGT",
-      "answer": 1,
-      "en": {
-        "q": "Match List-I (Disease) with List-II (Vector) and select the correct answer using the codes given below the lists:\nList-I: A. Kala-azar B. Sleeping sickness C. Lymphatic filariasis D. Plague\nList-II: 1. Rat flea 2. Culex mosquito 3. Tsetse fly 4. Sandfly",
-        "options": [
-          "A-3, B-4, C-1, D-2",
-          "A-4, B-3, C-2, D-1",
-          "A-4, B-2, C-3, D-1",
-          "A-1, B-3, C-2, D-4"
-        ],
-        "explanation": "Kala-azar (Leishmania) is spread by the sandfly, African sleeping sickness (Trypanosoma) by the tsetse fly, lymphatic filariasis (Wuchereria) in India mainly by the Culex mosquito, and plague (Yersinia pestis) by the rat flea. Hence the code is A-4, B-3, C-2, D-1.",
-        "notes": [
-          "Wrong: the tsetse fly spreads sleeping sickness, not kala-azar.",
-          "Correct: Kala-azar – Sandfly, Sleeping sickness – Tsetse fly, Filariasis – Culex, Plague – Rat flea.",
-          "Wrong: filariasis is spread by Culex, while the tsetse fly spreads sleeping sickness.",
-          "Wrong: plague is spread by the rat flea and kala-azar by the sandfly."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Diseases",
-          "Vectors"
-        ],
-        "facts": [
-          "Plague is caused by the bacterium Yersinia pestis; its 14th-century pandemic is remembered as the 'Black Death'.",
-          "Kala-azar is caused by the protozoan Leishmania donovani."
-        ]
-      },
-      "hi": {
-        "q": "सूची-I (रोग) को सूची-II (रोगवाहक) से सुमेलित कीजिए तथा सूचियों के नीचे दिए गए कूट से सही उत्तर चुनिए:\nसूची-I: A. कालाजार B. निद्रा रोग C. लसीका फाइलेरिया D. प्लेग\nसूची-II: 1. चूहे का पिस्सू 2. क्यूलेक्स मच्छर 3. सी-सी (त्सेत्से) मक्खी 4. बालू मक्खी",
-        "options": [
-          "A-3, B-4, C-1, D-2",
-          "A-4, B-3, C-2, D-1",
-          "A-4, B-2, C-3, D-1",
-          "A-1, B-3, C-2, D-4"
-        ],
-        "explanation": "कालाजार (लीशमैनिया) बालू मक्खी से, अफ्रीकी निद्रा रोग (ट्रिपैनोसोमा) सी-सी मक्खी से, लसीका फाइलेरिया (वुचेरेरिया) भारत में मुख्यतः क्यूलेक्स मच्छर से तथा प्लेग (यर्सिनिया पेस्टिस) चूहे के पिस्सू से फैलता है। अतः सही कूट A-4, B-3, C-2, D-1 है।",
-        "notes": [
-          "गलत: सी-सी मक्खी निद्रा रोग फैलाती है, कालाजार नहीं।",
-          "सही: कालाजार – बालू मक्खी, निद्रा रोग – सी-सी मक्खी, फाइलेरिया – क्यूलेक्स, प्लेग – चूहे का पिस्सू।",
-          "गलत: फाइलेरिया क्यूलेक्स से फैलता है, जबकि सी-सी मक्खी निद्रा रोग फैलाती है।",
-          "गलत: प्लेग चूहे के पिस्सू से तथा कालाजार बालू मक्खी से फैलता है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "रोग",
-          "रोगवाहक"
-        ],
-        "facts": [
-          "प्लेग यर्सिनिया पेस्टिस जीवाणु से होता है; 14वीं शताब्दी की इसकी महामारी 'काली मौत' (ब्लैक डेथ) के नाम से जानी जाती है।",
-          "कालाजार प्रोटोजोआ लीशमैनिया डोनोवानी से होता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 320
-        },
-        {
-          "book": "fatman",
-          "page": 319
-        },
-        {
-          "source": "National Center for Vector Borne Diseases Control (NCVBDC), MoHFW – Lymphatic Filariasis"
-        }
-      ]
-    },
-    {
-      "id": "health-diseases-004",
-      "level": "PGT",
-      "answer": 3,
-      "en": {
-        "q": "Which of the following diseases are mainly water-borne?\n1. Cholera\n2. Typhoid\n3. Hepatitis A\n4. Tuberculosis\nSelect the correct answer using the codes given below:",
-        "options": [
-          "1 and 2 only",
-          "2, 3 and 4 only",
-          "1, 3 and 4 only",
-          "1, 2 and 3 only"
-        ],
-        "explanation": "Cholera (Vibrio cholerae), typhoid (Salmonella typhi) and hepatitis A (a virus) spread through water and food contaminated with faeces, so safe drinking water and sanitation prevent them. Tuberculosis is air-borne, spreading through droplets released when a patient coughs or sneezes.",
-        "notes": [
-          "Incomplete: hepatitis A is also water-borne.",
-          "Wrong: tuberculosis is air-borne, not water-borne.",
-          "Wrong: tuberculosis is air-borne, and typhoid is water-borne.",
-          "Correct: cholera, typhoid and hepatitis A are water-borne; TB is air-borne."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Hygiene and sanitation",
-          "Water-borne diseases"
-        ],
-        "facts": [
-          "The Widal test is used to diagnose typhoid.",
-          "Oral rehydration solution (ORS) is the main treatment for dehydration in cholera and diarrhoea."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित में से कौन-से रोग मुख्यतः जलजनित हैं?\n1. हैजा\n2. टाइफाइड (मियादी बुखार)\n3. हेपेटाइटिस A\n4. क्षय रोग\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "केवल 1 और 2",
-          "केवल 2, 3 और 4",
-          "केवल 1, 3 और 4",
-          "केवल 1, 2 और 3"
-        ],
-        "explanation": "हैजा (विब्रियो कॉलेरी), टाइफाइड (साल्मोनेला टाइफी) और हेपेटाइटिस A (विषाणु) मल से दूषित जल और भोजन द्वारा फैलते हैं, इसलिए सुरक्षित पेयजल और स्वच्छता से इनकी रोकथाम होती है। क्षय रोग वायुजनित है, जो रोगी के खाँसने या छींकने से निकली बूँदों से फैलता है।",
-        "notes": [
-          "अपूर्ण: हेपेटाइटिस A भी जलजनित है।",
-          "गलत: क्षय रोग वायुजनित है, जलजनित नहीं।",
-          "गलत: क्षय रोग वायुजनित है और टाइफाइड जलजनित है।",
-          "सही: हैजा, टाइफाइड और हेपेटाइटिस A जलजनित हैं; क्षय रोग वायुजनित है।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "स्वच्छता",
-          "जलजनित रोग"
-        ],
-        "facts": [
-          "टाइफाइड की पहचान के लिए विडाल परीक्षण किया जाता है।",
-          "हैजा और दस्त में निर्जलीकरण का मुख्य उपचार ओआरएस (मुख से दिया जाने वाला पुनर्जलीकरण घोल) है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 320
-        },
-        {
-          "book": "fatman",
-          "page": 319
-        }
-      ]
-    },
-    {
-      "id": "health-diseases-005",
-      "level": "Higher",
-      "answer": 0,
-      "en": {
-        "q": "Assertion (A): Antibiotics are not effective against viral diseases such as the common cold and influenza.\nReason (R): Viruses lack a cell wall and a metabolic machinery of their own, which are the usual targets of antibiotics.\nSelect the correct answer using the codes given below:",
-        "options": [
-          "Both A and R are true, and R is the correct explanation of A",
-          "Both A and R are true, but R is not the correct explanation of A",
-          "A is true, but R is false",
-          "A is false, but R is true"
-        ],
-        "explanation": "Antibiotics act on bacterial structures and processes such as cell-wall formation and bacterial protein synthesis. Viruses have no cell wall and multiply only by using the host cell's machinery, so antibiotics cannot harm them; R correctly explains A.",
-        "notes": [
-          "Correct: the absence of antibiotic targets in viruses is why antibiotics fail against viral diseases.",
-          "Wrong: R is not merely true but is the reason for A.",
-          "Wrong: R is true; viruses have no cell wall or metabolism of their own.",
-          "Wrong: A is true; colds and flu are viral and do not respond to antibiotics."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Diseases",
-          "Viruses and antibiotics"
-        ],
-        "facts": [
-          "Penicillin, the first antibiotic, was discovered by Alexander Fleming in 1928.",
-          "Misuse of antibiotics promotes antimicrobial resistance."
-        ]
-      },
-      "hi": {
-        "q": "कथन (A): सामान्य जुकाम और इन्फ्लुएंजा जैसे विषाणुजनित रोगों पर प्रतिजैविक (एंटीबायोटिक) प्रभावी नहीं होते।\nकारण (R): विषाणुओं में न तो कोशिका भित्ति होती है और न ही अपनी उपापचयी प्रणाली, जिन पर प्रायः प्रतिजैविक प्रहार करते हैं।\nनीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए:",
-        "options": [
-          "कथन (A) और कारण (R) दोनों सही हैं तथा (R), (A) की सही व्याख्या है",
-          "कथन (A) और कारण (R) दोनों सही हैं, परंतु (R), (A) की सही व्याख्या नहीं है",
-          "कथन (A) सही है, परंतु कारण (R) गलत है",
-          "कथन (A) गलत है, परंतु कारण (R) सही है"
-        ],
-        "explanation": "प्रतिजैविक जीवाणुओं की संरचनाओं और प्रक्रियाओं, जैसे कोशिका भित्ति निर्माण और जीवाणु प्रोटीन संश्लेषण, पर कार्य करते हैं। विषाणुओं में कोशिका भित्ति नहीं होती और वे केवल परपोषी कोशिका की प्रणाली से गुणन करते हैं, इसलिए प्रतिजैविक उन्हें नष्ट नहीं कर पाते; (R), (A) की सही व्याख्या है।",
-        "notes": [
-          "सही: विषाणुओं में प्रतिजैविकों के लक्ष्य न होना ही विषाणुजनित रोगों में उनके निष्प्रभावी होने का कारण है।",
-          "गलत: (R) केवल सही ही नहीं, बल्कि (A) का कारण भी है।",
-          "गलत: (R) सही है; विषाणुओं में कोशिका भित्ति या अपना उपापचय नहीं होता।",
-          "गलत: (A) सही है; जुकाम और फ्लू विषाणुजनित हैं और प्रतिजैविकों से ठीक नहीं होते।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "रोग",
-          "विषाणु एवं प्रतिजैविक"
-        ],
-        "facts": [
-          "प्रथम प्रतिजैविक पेनिसिलिन की खोज अलेक्जेंडर फ्लेमिंग ने 1928 में की थी।",
-          "प्रतिजैविकों का दुरुपयोग रोगाणुरोधी प्रतिरोध को बढ़ाता है।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 318
-        },
-        {
-          "source": "NCERT Class 8 Science, 'Microorganisms: Friend and Foe'"
-        }
-      ]
-    },
-    {
-      "id": "health-diseases-006",
-      "level": "Higher",
-      "answer": 3,
-      "en": {
-        "q": "Arrange the following events in chronological order and select the correct answer from the codes given below:\n1. Certification of India as polio-free by the World Health Organization\n2. Development of the smallpox vaccine by Edward Jenner\n3. First use of the rabies vaccine on a human by Louis Pasteur\n4. Launch of the Universal Immunization Programme in India",
-        "options": [
-          "2, 3, 1, 4",
-          "3, 2, 4, 1",
-          "2, 4, 3, 1",
-          "2, 3, 4, 1"
-        ],
-        "explanation": "Edward Jenner developed the smallpox vaccine in 1796; Louis Pasteur first used his rabies vaccine on a boy in 1885; India launched the Universal Immunization Programme in 1985; and WHO certified India (with the South-East Asia Region) polio-free in March 2014. The order is 2, 3, 4, 1.",
-        "notes": [
-          "Wrong: polio-free certification (2014) came after the UIP (1985).",
-          "Wrong: Jenner's vaccine (1796) came before Pasteur's rabies vaccine (1885).",
-          "Wrong: the UIP (1985) came a century after the rabies vaccine (1885).",
-          "Correct: 1796 → 1885 → 1985 → 2014."
-        ],
-        "path": [
-          "General Science",
-          "Human Health",
-          "Vaccines",
-          "History of immunisation"
-        ],
-        "facts": [
-          "The word 'vaccine' comes from Latin 'vacca' (cow), from Jenner's use of cowpox.",
-          "The World Health Assembly declared smallpox eradicated worldwide in 1980."
-        ]
-      },
-      "hi": {
-        "q": "निम्नलिखित घटनाओं को कालानुक्रम में व्यवस्थित कीजिए तथा नीचे दिए गए कूट से सही उत्तर चुनिए:\n1. विश्व स्वास्थ्य संगठन द्वारा भारत को पोलियो-मुक्त प्रमाणित किया जाना\n2. एडवर्ड जेनर द्वारा चेचक के टीके का विकास\n3. लुई पाश्चर द्वारा पहली बार किसी मनुष्य पर रेबीज टीके का प्रयोग\n4. भारत में सार्वभौमिक टीकाकरण कार्यक्रम का आरंभ",
-        "options": [
-          "2, 3, 1, 4",
-          "3, 2, 4, 1",
-          "2, 4, 3, 1",
-          "2, 3, 4, 1"
-        ],
-        "explanation": "एडवर्ड जेनर ने 1796 में चेचक का टीका विकसित किया; लुई पाश्चर ने 1885 में पहली बार एक बालक पर रेबीज टीके का प्रयोग किया; भारत ने 1985 में सार्वभौमिक टीकाकरण कार्यक्रम आरंभ किया; तथा विश्व स्वास्थ्य संगठन ने मार्च 2014 में भारत (दक्षिण-पूर्व एशिया क्षेत्र सहित) को पोलियो-मुक्त प्रमाणित किया। अतः सही क्रम 2, 3, 4, 1 है।",
-        "notes": [
-          "गलत: पोलियो-मुक्त प्रमाणन (2014) सार्वभौमिक टीकाकरण कार्यक्रम (1985) के बाद हुआ।",
-          "गलत: जेनर का टीका (1796) पाश्चर के रेबीज टीके (1885) से पहले का है।",
-          "गलत: सार्वभौमिक टीकाकरण कार्यक्रम (1985) रेबीज टीके (1885) के सौ वर्ष बाद आया।",
-          "सही: 1796 → 1885 → 1985 → 2014।"
-        ],
-        "path": [
-          "सामान्य विज्ञान",
-          "मानव स्वास्थ्य",
-          "टीके",
-          "टीकाकरण का इतिहास"
-        ],
-        "facts": [
-          "'वैक्सीन' शब्द लैटिन 'वक्का' (गाय) से बना है, क्योंकि जेनर ने काउपॉक्स का प्रयोग किया था।",
-          "विश्व स्वास्थ्य सभा ने 1980 में चेचक के विश्वव्यापी उन्मूलन की घोषणा की।"
-        ]
-      },
-      "refs": [
-        {
-          "book": "fatman",
-          "page": 319
-        },
-        {
-          "book": "special-topics",
-          "page": 26
-        },
-        {
-          "source": "MoHFW, Universal Immunization Programme (launched 1985); WHO SEARO polio-free certification, 27 March 2014"
-        }
-      ]
+     "source": "WHO fact sheet: Dengue and severe dengue",
+     "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue"
     }
-  ]
+   ]
+  },
+  {
+   "id": "health-diseases-002",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "BCG vaccine is given for protection against:",
+    "options": [
+     "Tuberculosis",
+     "Poliomyelitis",
+     "Diphtheria",
+     "Measles"
+    ],
+    "explanation": "BCG (Bacillus Calmette–Guérin) vaccine protects against tuberculosis, a bacterial disease caused by Mycobacterium tuberculosis. Under India's Universal Immunization Programme it is given at birth.",
+    "notes": [
+     "Tuberculosis: caused by Mycobacterium tuberculosis; prevented in children by BCG vaccine.",
+     "Poliomyelitis: a viral disease prevented by oral polio vaccine (OPV) and injectable polio vaccine (IPV).",
+     "Diphtheria: a bacterial disease prevented by DPT/pentavalent vaccine.",
+     "Measles: a viral disease prevented by the measles-rubella (MR) vaccine."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vaccines",
+     "BCG"
+    ],
+    "facts": [
+     "BCG is a live attenuated vaccine.",
+     "World TB Day (24 March) marks Robert Koch's announcement of the TB bacterium in 1882."
+    ]
+   },
+   "hi": {
+    "q": "BCG टीका किस रोग से बचाव के लिए दिया जाता है?",
+    "options": [
+     "क्षय रोग (तपेदिक)",
+     "पोलियो",
+     "डिफ्थीरिया",
+     "खसरा"
+    ],
+    "explanation": "BCG (बैसिलस कैलमेट-गुएरिन) टीका क्षय रोग से बचाव करता है, जो माइकोबैक्टीरियम ट्यूबरकुलोसिस नामक जीवाणु से होता है। भारत के सार्वभौमिक टीकाकरण कार्यक्रम में यह जन्म के समय दिया जाता है।",
+    "notes": [
+     "क्षय रोग: माइकोबैक्टीरियम ट्यूबरकुलोसिस से होता है; बच्चों में BCG टीका इससे बचाता है।",
+     "पोलियो: विषाणुजनित रोग; मुख से दिए जाने वाले (OPV) और इंजेक्शन वाले (IPV) पोलियो टीके से बचाव।",
+     "डिफ्थीरिया: जीवाणुजनित रोग; DPT/पेंटावैलेंट टीके से बचाव।",
+     "खसरा: विषाणुजनित रोग; खसरा-रूबेला (MR) टीके से बचाव।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "टीके",
+     "BCG"
+    ],
+    "facts": [
+     "BCG एक जीवित क्षीणीकृत टीका है।",
+     "विश्व क्षय रोग दिवस (24 मार्च) 1882 में रॉबर्ट कोच द्वारा क्षय जीवाणु की खोज की घोषणा की याद में मनाया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 319
+    },
+    {
+     "source": "MoHFW, Universal Immunization Programme – National Immunization Schedule"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-003",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Kala-azar is transmitted by the:",
+    "options": [
+     "Tsetse fly",
+     "Sandfly",
+     "Culex mosquito",
+     "Rat flea"
+    ],
+    "explanation": "Kala-azar is spread by the sandfly, sleeping sickness by the tsetse fly, filariasis mainly by the Culex mosquito and plague by the rat flea.",
+    "notes": [
+     "Transmits African sleeping sickness.",
+     "Transmits kala-azar, caused by Leishmania donovani.",
+     "Transmits lymphatic filariasis in India.",
+     "Transmits plague."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases",
+     "Vectors"
+    ],
+    "facts": [
+     "Plague is caused by the bacterium Yersinia pestis; its 14th-century pandemic is remembered as the 'Black Death'.",
+     "Kala-azar is caused by the protozoan Leishmania donovani."
+    ]
+   },
+   "hi": {
+    "q": "काला-अजार रोग का संचरण किसके द्वारा होता है?",
+    "options": [
+     "सी-सी मक्खी",
+     "बालू मक्खी",
+     "क्यूलेक्स मच्छर",
+     "चूहे का पिस्सू"
+    ],
+    "explanation": "काला-अजार बालू मक्खी से, निद्रा रोग सी-सी मक्खी से, फाइलेरिया मुख्यतः क्यूलेक्स मच्छर से तथा प्लेग चूहे के पिस्सू से फैलता है।",
+    "notes": [
+     "अफ्रीकी निद्रा रोग का संचरण करती है।",
+     "लीशमैनिया डोनोवानी से होने वाले काला-अजार का संचरण करती है।",
+     "भारत में फाइलेरिया का संचरण करता है।",
+     "प्लेग का संचरण करता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग",
+     "रोगवाहक"
+    ],
+    "facts": [
+     "प्लेग यर्सिनिया पेस्टिस जीवाणु से होता है; 14वीं शताब्दी की इसकी महामारी 'काली मौत' (ब्लैक डेथ) के नाम से जानी जाती है।",
+     "कालाजार प्रोटोजोआ लीशमैनिया डोनोवानी से होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 320
+    },
+    {
+     "book": "fatman",
+     "page": 319
+    },
+    {
+     "source": "National Center for Vector Borne Diseases Control (NCVBDC), MoHFW – Lymphatic Filariasis"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-004",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "Which one of the following is NOT a water-borne disease?",
+    "options": [
+     "Cholera",
+     "Typhoid",
+     "Hepatitis A",
+     "Tuberculosis"
+    ],
+    "explanation": "Cholera, typhoid and hepatitis A spread through contaminated water and food, while tuberculosis spreads through the air.",
+    "notes": [
+     "Spreads through water contaminated with Vibrio cholerae.",
+     "Spreads through contaminated water and food.",
+     "A viral disease spread through contaminated water and food.",
+     "An air-borne disease spread by droplets from coughing and sneezing."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Hygiene and sanitation",
+     "Water-borne diseases"
+    ],
+    "facts": [
+     "The Widal test is used to diagnose typhoid.",
+     "Oral rehydration solution (ORS) is the main treatment for dehydration in cholera and diarrhoea."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा जलजनित रोग नहीं है?",
+    "options": [
+     "हैजा",
+     "टाइफाइड",
+     "हेपेटाइटिस A",
+     "क्षय रोग"
+    ],
+    "explanation": "हैजा, टाइफाइड एवं हेपेटाइटिस A दूषित जल एवं भोजन से फैलते हैं, जबकि क्षय रोग वायु के माध्यम से फैलता है।",
+    "notes": [
+     "विब्रियो कॉलेरी से दूषित जल से फैलता है।",
+     "दूषित जल एवं भोजन से फैलता है।",
+     "दूषित जल एवं भोजन से फैलने वाला विषाणुजनित रोग।",
+     "खाँसने एवं छींकने की बूँदों से फैलने वाला वायुजनित रोग।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "स्वच्छता",
+     "जलजनित रोग"
+    ],
+    "facts": [
+     "टाइफाइड की पहचान के लिए विडाल परीक्षण किया जाता है।",
+     "हैजा और दस्त में निर्जलीकरण का मुख्य उपचार ओआरएस (मुख से दिया जाने वाला पुनर्जलीकरण घोल) है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 320
+    },
+    {
+     "book": "fatman",
+     "page": 319
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-005",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Antibiotics are ineffective against viral diseases because viruses:",
+    "options": [
+     "Multiply faster than bacteria",
+     "Are larger than bacteria",
+     "Have no cell wall or metabolism of their own",
+     "Live only outside the cells of the body"
+    ],
+    "explanation": "Antibiotics act on bacterial structures such as the cell wall and on bacterial protein synthesis. Viruses lack these and use the host cell's machinery, so antibiotics cannot harm them.",
+    "notes": [
+     "Not the reason antibiotics fail.",
+     "Viruses are much smaller than bacteria.",
+     "Antibiotics target bacterial cell walls and metabolic processes.",
+     "Viruses multiply only inside host cells."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases",
+     "Viruses and antibiotics"
+    ],
+    "facts": [
+     "Penicillin, the first antibiotic, was discovered by Alexander Fleming in 1928.",
+     "Misuse of antibiotics promotes antimicrobial resistance."
+    ]
+   },
+   "hi": {
+    "q": "प्रतिजैविक औषधियाँ विषाणुजनित रोगों पर प्रभावी नहीं होतीं, क्योंकि विषाणु:",
+    "options": [
+     "जीवाणुओं से अधिक तेजी से गुणन करते हैं",
+     "जीवाणुओं से बड़े होते हैं",
+     "कोशिका भित्ति एवं अपने उपापचय तंत्र से रहित होते हैं",
+     "केवल शरीर की कोशिकाओं के बाहर रहते हैं"
+    ],
+    "explanation": "प्रतिजैविक जीवाणुओं की कोशिका भित्ति एवं प्रोटीन संश्लेषण जैसी संरचनाओं एवं क्रियाओं पर कार्य करते हैं। विषाणुओं में ये नहीं होते और वे पोषी कोशिका के तंत्र का उपयोग करते हैं, अतः प्रतिजैविक उन पर असर नहीं करते।",
+    "notes": [
+     "यह प्रतिजैविकों के निष्प्रभावी होने का कारण नहीं है।",
+     "विषाणु जीवाणुओं से बहुत छोटे होते हैं।",
+     "प्रतिजैविक जीवाणुओं की कोशिका भित्ति एवं उपापचय क्रियाओं पर प्रहार करते हैं।",
+     "विषाणु केवल पोषी कोशिकाओं के भीतर गुणन करते हैं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग",
+     "विषाणु एवं प्रतिजैविक"
+    ],
+    "facts": [
+     "प्रथम प्रतिजैविक पेनिसिलिन की खोज अलेक्जेंडर फ्लेमिंग ने 1928 में की थी।",
+     "प्रतिजैविकों का दुरुपयोग रोगाणुरोधी प्रतिरोध को बढ़ाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 318
+    },
+    {
+     "source": "NCERT Class 8 Science, 'Microorganisms: Friend and Foe'"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-006",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Who first used a rabies vaccine on a human being, in 1885?",
+    "options": [
+     "Louis Pasteur",
+     "Edward Jenner",
+     "Robert Koch",
+     "Alexander Fleming"
+    ],
+    "explanation": "Edward Jenner developed the smallpox vaccine in 1796 and Louis Pasteur first used the rabies vaccine in 1885. India launched the Universal Immunization Programme in 1985 and was certified polio-free in 2014.",
+    "notes": [
+     "Used his rabies vaccine on a boy in 1885.",
+     "Developed the smallpox vaccine in 1796.",
+     "Discovered the tuberculosis bacillus.",
+     "Discovered penicillin in 1928."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vaccines",
+     "History of immunisation"
+    ],
+    "facts": [
+     "The word 'vaccine' comes from Latin 'vacca' (cow), from Jenner's use of cowpox.",
+     "The World Health Assembly declared smallpox eradicated worldwide in 1980."
+    ]
+   },
+   "hi": {
+    "q": "1885 में सर्वप्रथम किसने मनुष्य पर रेबीज के टीके का प्रयोग किया?",
+    "options": [
+     "लुई पाश्चर",
+     "एडवर्ड जेनर",
+     "रॉबर्ट कोच",
+     "अलेक्जेंडर फ्लेमिंग"
+    ],
+    "explanation": "एडवर्ड जेनर ने 1796 में चेचक का टीका विकसित किया तथा लुई पाश्चर ने 1885 में रेबीज के टीके का पहली बार प्रयोग किया। भारत ने 1985 में सार्वभौमिक टीकाकरण कार्यक्रम आरंभ किया और 2014 में पोलियो मुक्त प्रमाणित हुआ।",
+    "notes": [
+     "1885 में एक बालक पर रेबीज के टीके का प्रयोग किया।",
+     "1796 में चेचक का टीका विकसित किया।",
+     "क्षय रोग के जीवाणु की खोज की।",
+     "1928 में पेनिसिलिन की खोज की।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "टीके",
+     "टीकाकरण का इतिहास"
+    ],
+    "facts": [
+     "'वैक्सीन' शब्द लैटिन 'वक्का' (गाय) से बना है, क्योंकि जेनर ने काउपॉक्स का प्रयोग किया था।",
+     "विश्व स्वास्थ्य सभा ने 1980 में चेचक के विश्वव्यापी उन्मूलन की घोषणा की।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "fatman",
+     "page": 319
+    },
+    {
+     "book": "special-topics",
+     "page": 26
+    },
+    {
+     "source": "MoHFW, Universal Immunization Programme (launched 1985); WHO SEARO polio-free certification, 27 March 2014"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-007",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "Malaria is caused by:",
+    "options": [
+     "A protozoan",
+     "A bacterium",
+     "A virus",
+     "A fungus"
+    ],
+    "explanation": "Malaria is caused by protozoan parasites of the genus Plasmodium, such as Plasmodium vivax and Plasmodium falciparum. The parasite multiplies in the liver and in the red blood cells.",
+    "notes": [
+     "The parasite belongs to the genus Plasmodium.",
+     "Diseases such as typhoid are caused by bacteria.",
+     "Diseases such as influenza are caused by viruses.",
+     "Fungi cause diseases such as athlete's foot."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "Sir Ronald Ross showed how malaria is transmitted, working in India in 1897.",
+     "Plasmodium falciparum causes the most dangerous form of malaria."
+    ]
+   },
+   "hi": {
+    "q": "मलेरिया किससे होता है?",
+    "options": [
+     "प्रोटोजोआ",
+     "जीवाणु",
+     "विषाणु",
+     "कवक"
+    ],
+    "explanation": "मलेरिया प्लाज्मोडियम वंश के प्रोटोजोआ परजीवियों, जैसे प्लाज्मोडियम वाइवैक्स एवं प्लाज्मोडियम फाल्सीपेरम, से होता है। परजीवी यकृत एवं लाल रक्त कोशिकाओं में गुणन करता है।",
+    "notes": [
+     "यह परजीवी प्लाज्मोडियम वंश का है।",
+     "टाइफाइड जैसे रोग जीवाणुओं से होते हैं।",
+     "इन्फ्लुएंजा जैसे रोग विषाणुओं से होते हैं।",
+     "कवक एथलीट फुट जैसे रोग उत्पन्न करते हैं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "सर रोनाल्ड रॉस ने 1897 में भारत में कार्य करते हुए दिखाया कि मलेरिया कैसे फैलता है।",
+     "प्लाज्मोडियम फाल्सीपेरम मलेरिया का सबसे घातक रूप उत्पन्न करता है।"
+    ]
+   },
+   "refs": [
+    {
+     "book": "tgt-pgt-gk",
+     "page": 241
+    },
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-008",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "AIDS is caused by a:",
+    "options": [
+     "Bacterium",
+     "Virus",
+     "Protozoan",
+     "Fungus"
+    ],
+    "explanation": "Acquired Immuno Deficiency Syndrome (AIDS) is caused by the human immunodeficiency virus, a retrovirus that destroys the helper T-cells and so weakens the immune system.",
+    "notes": [
+     "AIDS is not a bacterial disease.",
+     "The virus is called the human immunodeficiency virus (HIV).",
+     "AIDS is not a protozoan disease.",
+     "AIDS is not a fungal disease."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "HIV spreads through unprotected sex, infected blood and needles, and from mother to child.",
+     "It does not spread by touch or by sharing food."
+    ]
+   },
+   "hi": {
+    "q": "एड्स किससे होता है?",
+    "options": [
+     "जीवाणु",
+     "विषाणु",
+     "प्रोटोजोआ",
+     "कवक"
+    ],
+    "explanation": "एक्वायर्ड इम्यूनो डेफिशिएंसी सिंड्रोम (एड्स) ह्यूमन इम्यूनोडेफिशिएंसी वायरस से होता है, जो एक रेट्रोवायरस है और सहायक टी-कोशिकाओं को नष्ट कर प्रतिरक्षा तंत्र को कमजोर करता है।",
+    "notes": [
+     "एड्स जीवाणुजन्य रोग नहीं है।",
+     "इस विषाणु को ह्यूमन इम्यूनोडेफिशिएंसी वायरस (एचआईवी) कहते हैं।",
+     "एड्स प्रोटोजोआ जन्य रोग नहीं है।",
+     "एड्स कवकजन्य रोग नहीं है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "एचआईवी असुरक्षित यौन संबंध, संक्रमित रक्त एवं सुइयों तथा माता से शिशु में फैलता है।",
+     "यह छूने या साथ भोजन करने से नहीं फैलता।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-009",
+   "level": "TGT",
+   "answer": 2,
+   "en": {
+    "q": "Ringworm is a disease of the skin caused by:",
+    "options": [
+     "Bacteria",
+     "Viruses",
+     "Fungi",
+     "Roundworms"
+    ],
+    "explanation": "Ringworm is a fungal infection of the skin, nails and scalp that produces dry, scaly, ring-shaped patches with itching. It spreads by contact and by sharing towels, clothes or combs.",
+    "notes": [
+     "Bacteria do not cause ringworm.",
+     "Viruses do not cause ringworm.",
+     "Fungi such as Trichophyton and Microsporum cause it.",
+     "In spite of its name, no worm is involved."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "Warm and moist conditions favour the growth of these fungi.",
+     "Athlete's foot is another fungal infection of the skin."
+    ]
+   },
+   "hi": {
+    "q": "दाद त्वचा का रोग है, जो किससे होता है?",
+    "options": [
+     "जीवाणु",
+     "विषाणु",
+     "कवक",
+     "गोल कृमि"
+    ],
+    "explanation": "दाद त्वचा, नाखूनों एवं सिर की त्वचा का कवक संक्रमण है, जिसमें खुजली के साथ सूखे, पपड़ीदार, वलयाकार चकत्ते बनते हैं। यह संपर्क से तथा तौलिया, कपड़े या कंघी साझा करने से फैलता है।",
+    "notes": [
+     "जीवाणुओं से दाद नहीं होता।",
+     "विषाणुओं से दाद नहीं होता।",
+     "ट्राइकोफाइटॉन एवं माइक्रोस्पोरम जैसे कवक इसे उत्पन्न करते हैं।",
+     "अंग्रेजी नाम के बावजूद इसमें कोई कृमि नहीं होता।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "गर्म एवं नम दशाएँ इन कवकों की वृद्धि के अनुकूल हैं।",
+     "एथलीट फुट त्वचा का अन्य कवक संक्रमण है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-010",
+   "level": "TGT",
+   "answer": 3,
+   "en": {
+    "q": "World AIDS Day is observed every year on:",
+    "options": [
+     "7 April",
+     "25 April",
+     "31 May",
+     "1 December"
+    ],
+    "explanation": "World AIDS Day is observed on 1 December to raise awareness of HIV infection and to remember those who have died of AIDS. The red ribbon is its symbol.",
+    "notes": [
+     "7 April is World Health Day.",
+     "25 April is World Malaria Day.",
+     "31 May is World No Tobacco Day.",
+     "It has been observed since 1988."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Health programmes"
+    ],
+    "facts": [
+     "The National AIDS Control Organisation was set up in 1992.",
+     "Antiretroviral therapy controls the virus but does not cure the infection."
+    ]
+   },
+   "hi": {
+    "q": "विश्व एड्स दिवस प्रतिवर्ष कब मनाया जाता है?",
+    "options": [
+     "7 अप्रैल",
+     "25 अप्रैल",
+     "31 मई",
+     "1 दिसंबर"
+    ],
+    "explanation": "विश्व एड्स दिवस 1 दिसंबर को एचआईवी संक्रमण के प्रति जागरूकता बढ़ाने तथा एड्स से दिवंगत लोगों की स्मृति में मनाया जाता है। लाल रिबन इसका प्रतीक है।",
+    "notes": [
+     "7 अप्रैल विश्व स्वास्थ्य दिवस है।",
+     "25 अप्रैल विश्व मलेरिया दिवस है।",
+     "31 मई विश्व तंबाकू निषेध दिवस है।",
+     "यह 1988 से मनाया जा रहा है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "स्वास्थ्य कार्यक्रम"
+    ],
+    "facts": [
+     "राष्ट्रीय एड्स नियंत्रण संगठन 1992 में बना।",
+     "एंटीरेट्रोवायरल उपचार विषाणु को नियंत्रित करता है, किंतु संक्रमण को ठीक नहीं करता।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-011",
+   "level": "TGT",
+   "answer": 0,
+   "en": {
+    "q": "The Pulse Polio Immunisation programme was launched in India in:",
+    "options": [
+     "1995",
+     "1985",
+     "2005",
+     "2014"
+    ],
+    "explanation": "The Pulse Polio Immunisation programme began in 1995. On the National Immunisation Days all children below five years are given oral polio vaccine drops, whatever their earlier immunisation.",
+    "notes": [
+     "Children below five years are given polio drops on fixed days.",
+     "The Universal Immunisation Programme began in 1985.",
+     "The National Rural Health Mission began in 2005.",
+     "India was certified free of polio in 2014."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vaccines"
+    ],
+    "facts": [
+     "The last case of wild poliovirus in India was reported in January 2011.",
+     "The oral polio vaccine was developed by Albert Sabin."
+    ]
+   },
+   "hi": {
+    "q": "भारत में पल्स पोलियो टीकाकरण कार्यक्रम कब आरंभ हुआ?",
+    "options": [
+     "1995",
+     "1985",
+     "2005",
+     "2014"
+    ],
+    "explanation": "पल्स पोलियो टीकाकरण कार्यक्रम 1995 में आरंभ हुआ। राष्ट्रीय टीकाकरण दिवसों पर पाँच वर्ष से कम आयु के सभी बच्चों को, उनके पूर्व टीकाकरण की स्थिति जो भी हो, मुख से पोलियो टीके की बूँदें दी जाती हैं।",
+    "notes": [
+     "पाँच वर्ष से कम आयु के बच्चों को निश्चित दिनों पर पोलियो की बूँदें दी जाती हैं।",
+     "सार्वभौम टीकाकरण कार्यक्रम 1985 में आरंभ हुआ।",
+     "राष्ट्रीय ग्रामीण स्वास्थ्य मिशन 2005 में आरंभ हुआ।",
+     "भारत को 2014 में पोलियो मुक्त प्रमाणित किया गया।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "टीके"
+    ],
+    "facts": [
+     "भारत में जंगली पोलियो विषाणु का अंतिम मामला जनवरी 2011 में मिला।",
+     "मुख से दिया जाने वाला पोलियो टीका अल्बर्ट सेबिन ने विकसित किया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Health and Family Welfare – Pulse Polio Programme",
+     "url": "https://nhm.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-012",
+   "level": "TGT",
+   "answer": 1,
+   "en": {
+    "q": "Which disease is also known as 'Hansen's disease'?",
+    "options": [
+     "Tetanus",
+     "Leprosy",
+     "Plague",
+     "Diphtheria"
+    ],
+    "explanation": "Leprosy is called Hansen's disease after G. A. Hansen of Norway, who discovered its bacterium in 1873. It affects the skin and the peripheral nerves and is curable with multi-drug therapy.",
+    "notes": [
+     "Tetanus is also called lockjaw.",
+     "It is caused by Mycobacterium leprae.",
+     "Plague was known as the Black Death.",
+     "Diphtheria affects the throat."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "World Leprosy Day is observed on the last Sunday of January.",
+     "In India it is observed on 30 January, the death anniversary of Mahatma Gandhi."
+    ]
+   },
+   "hi": {
+    "q": "किस रोग को 'हैन्सन रोग' भी कहा जाता है?",
+    "options": [
+     "टिटनेस",
+     "कुष्ठ रोग",
+     "प्लेग",
+     "डिप्थीरिया"
+    ],
+    "explanation": "कुष्ठ रोग को नॉर्वे के जी. ए. हैन्सन के नाम पर हैन्सन रोग कहते हैं, जिन्होंने 1873 में इसके जीवाणु की खोज की। यह त्वचा एवं परिधीय तंत्रिकाओं को प्रभावित करता है और बहु-औषधि उपचार से ठीक हो जाता है।",
+    "notes": [
+     "टिटनेस को धनुस्तंभ भी कहते हैं।",
+     "यह माइकोबैक्टीरियम लेप्री से होता है।",
+     "प्लेग को ब्लैक डेथ कहा जाता था।",
+     "डिप्थीरिया गले को प्रभावित करता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "विश्व कुष्ठ दिवस जनवरी के अंतिम रविवार को मनाया जाता है।",
+     "भारत में यह 30 जनवरी को, महात्मा गांधी की पुण्यतिथि पर, मनाया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-013",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "The Schick test is used to find out whether a person is susceptible to:",
+    "options": [
+     "Tuberculosis",
+     "Syphilis",
+     "Diphtheria",
+     "Scarlet fever"
+    ],
+    "explanation": "In the Schick test a tiny amount of diphtheria toxin is injected into the skin. A red swelling shows that the person has no immunity to diphtheria.",
+    "notes": [
+     "The Mantoux test is used for tuberculosis.",
+     "The Wassermann test is used for syphilis.",
+     "A small dose of the toxin is injected into the skin.",
+     "The Dick test is used for scarlet fever."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "Diphtheria is caused by Corynebacterium diphtheriae.",
+     "The test is named after Bela Schick."
+    ]
+   },
+   "hi": {
+    "q": "शिक परीक्षण का प्रयोग यह जानने के लिए होता है कि व्यक्ति किस रोग के प्रति संवेदनशील है?",
+    "options": [
+     "क्षय रोग",
+     "सिफलिस",
+     "डिप्थीरिया",
+     "स्कार्लेट ज्वर"
+    ],
+    "explanation": "शिक परीक्षण में डिप्थीरिया विष की अत्यल्प मात्रा त्वचा में प्रविष्ट की जाती है। लाल सूजन यह दर्शाती है कि व्यक्ति में डिप्थीरिया के प्रति प्रतिरक्षा नहीं है।",
+    "notes": [
+     "क्षय रोग के लिए मैंटू परीक्षण होता है।",
+     "सिफलिस के लिए वासरमैन परीक्षण होता है।",
+     "त्वचा में विष की अल्प मात्रा प्रविष्ट की जाती है।",
+     "स्कार्लेट ज्वर के लिए डिक परीक्षण होता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "डिप्थीरिया कॉरिनेबैक्टीरियम डिप्थीरी से होता है।",
+     "परीक्षण का नाम बेला शिक पर है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-014",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The pentavalent vaccine given to infants in India protects against diphtheria, pertussis, tetanus, hepatitis B and:",
+    "options": [
+     "Poliomyelitis",
+     "Measles",
+     "Rotavirus diarrhoea",
+     "Haemophilus influenzae type b infection"
+    ],
+    "explanation": "The pentavalent vaccine combines five antigens: diphtheria, pertussis, tetanus, hepatitis B and Haemophilus influenzae type b (Hib). It is given at 6, 10 and 14 weeks of age.",
+    "notes": [
+     "Polio is prevented by separate oral and injectable vaccines.",
+     "Measles is prevented by the measles-rubella vaccine.",
+     "Rotavirus diarrhoea is prevented by a separate oral vaccine.",
+     "This bacterium causes pneumonia and meningitis in young children."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vaccines"
+    ],
+    "facts": [
+     "In the infant schedule it replaced the separate DPT and hepatitis B injections.",
+     "Pertussis is also called whooping cough."
+    ]
+   },
+   "hi": {
+    "q": "भारत में शिशुओं को दिया जाने वाला पेंटावैलेंट टीका डिप्थीरिया, काली खाँसी, टिटनेस, हेपेटाइटिस बी एवं किससे रक्षा करता है?",
+    "options": [
+     "पोलियो",
+     "खसरा",
+     "रोटावायरस अतिसार",
+     "हीमोफिलस इन्फ्लुएंजी टाइप बी संक्रमण"
+    ],
+    "explanation": "पेंटावैलेंट टीके में पाँच प्रतिजन हैं: डिप्थीरिया, काली खाँसी, टिटनेस, हेपेटाइटिस बी एवं हीमोफिलस इन्फ्लुएंजी टाइप बी (हिब)। यह 6, 10 एवं 14 सप्ताह की आयु पर दिया जाता है।",
+    "notes": [
+     "पोलियो की रोकथाम पृथक मुख एवं इंजेक्शन वाले टीकों से होती है।",
+     "खसरे की रोकथाम खसरा-रूबेला टीके से होती है।",
+     "रोटावायरस अतिसार की रोकथाम पृथक मुख से दिए जाने वाले टीके से होती है।",
+     "यह जीवाणु छोटे बच्चों में निमोनिया एवं मेनिन्जाइटिस उत्पन्न करता है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "टीके"
+    ],
+    "facts": [
+     "शिशु टीकाकरण तालिका में इसने पृथक डीपीटी एवं हेपेटाइटिस बी के इंजेक्शनों का स्थान लिया।",
+     "पर्टुसिस को काली खाँसी भी कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Health and Family Welfare – National Immunization Schedule",
+     "url": "https://nhm.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-015",
+   "level": "PGT",
+   "answer": 0,
+   "en": {
+    "q": "The causative agent of typhoid fever is:",
+    "options": [
+     "Salmonella typhi",
+     "Clostridium tetani",
+     "Corynebacterium diphtheriae",
+     "Bordetella pertussis"
+    ],
+    "explanation": "Typhoid is caused by the bacterium Salmonella typhi, which enters the small intestine with contaminated food and water. Sustained high fever, weakness and stomach pain are its symptoms.",
+    "notes": [
+     "It attacks the intestine and spreads through contaminated food and water.",
+     "Clostridium tetani causes tetanus.",
+     "Corynebacterium diphtheriae causes diphtheria.",
+     "Bordetella pertussis causes whooping cough."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "'Typhoid Mary' was a famous carrier of the disease.",
+     "Typhoid can be prevented by a vaccine."
+    ]
+   },
+   "hi": {
+    "q": "टाइफाइड ज्वर का कारक कौन है?",
+    "options": [
+     "साल्मोनेला टाइफी",
+     "क्लॉस्ट्रिडियम टिटेनी",
+     "कॉरिनेबैक्टीरियम डिप्थीरी",
+     "बोर्डेटेला पर्टुसिस"
+    ],
+    "explanation": "टाइफाइड साल्मोनेला टाइफी जीवाणु से होता है, जो दूषित भोजन एवं जल के साथ छोटी आँत में पहुँचता है। निरंतर तेज ज्वर, कमजोरी एवं पेट दर्द इसके लक्षण हैं।",
+    "notes": [
+     "यह आँत पर आक्रमण करता है और दूषित भोजन एवं जल से फैलता है।",
+     "क्लॉस्ट्रिडियम टिटेनी से टिटनेस होता है।",
+     "कॉरिनेबैक्टीरियम डिप्थीरी से डिप्थीरिया होता है।",
+     "बोर्डेटेला पर्टुसिस से काली खाँसी होती है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "'टाइफाइड मैरी' इस रोग की प्रसिद्ध वाहक थी।",
+     "टाइफाइड की रोकथाम टीके से हो सकती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-016",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Mission Indradhanush, launched in December 2014, aims at:",
+    "options": [
+     "The elimination of malaria from the country",
+     "The full immunisation of children and pregnant women left out of routine immunisation",
+     "The supply of safe drinking water to every household",
+     "The control of anaemia among adolescent girls"
+    ],
+    "explanation": "Mission Indradhanush was launched in December 2014 to immunise children and pregnant women who had been missed or only partly covered under the Universal Immunisation Programme.",
+    "notes": [
+     "Malaria elimination has a separate national framework.",
+     "The seven colours of the rainbow stood for seven vaccine-preventable diseases.",
+     "Drinking water is the aim of the Jal Jeevan Mission.",
+     "Anaemia is addressed by Anaemia Mukt Bharat."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Vaccines"
+    ],
+    "facts": [
+     "Intensified Mission Indradhanush was launched in 2017.",
+     "The U-WIN portal records immunisation digitally."
+    ]
+   },
+   "hi": {
+    "q": "दिसंबर 2014 में आरंभ मिशन इंद्रधनुष का लक्ष्य क्या है?",
+    "options": [
+     "देश से मलेरिया का उन्मूलन",
+     "नियमित टीकाकरण से छूटे बच्चों एवं गर्भवती महिलाओं का पूर्ण टीकाकरण",
+     "प्रत्येक परिवार को सुरक्षित पेयजल",
+     "किशोरियों में रक्ताल्पता का नियंत्रण"
+    ],
+    "explanation": "मिशन इंद्रधनुष दिसंबर 2014 में उन बच्चों एवं गर्भवती महिलाओं के टीकाकरण के लिए आरंभ हुआ, जो सार्वभौम टीकाकरण कार्यक्रम में छूट गए थे या जिनका टीकाकरण अधूरा था।",
+    "notes": [
+     "मलेरिया उन्मूलन के लिए पृथक राष्ट्रीय ढाँचा है।",
+     "इंद्रधनुष के सात रंग टीके से रोके जा सकने वाले सात रोगों के प्रतीक थे।",
+     "पेयजल जल जीवन मिशन का लक्ष्य है।",
+     "रक्ताल्पता के लिए एनीमिया मुक्त भारत है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "टीके"
+    ],
+    "facts": [
+     "सघन मिशन इंद्रधनुष 2017 में आरंभ हुआ।",
+     "यू-विन पोर्टल टीकाकरण का डिजिटल अभिलेख रखता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Ministry of Health and Family Welfare – Mission Indradhanush",
+     "url": "https://nhm.gov.in/"
+    },
+    {
+     "book": "tgt-pgt-gk",
+     "page": 235
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-017",
+   "level": "PGT",
+   "answer": 2,
+   "en": {
+    "q": "Which one of the following is a zoonotic disease whose virus is carried in nature by fruit bats?",
+    "options": [
+     "Measles",
+     "Cholera",
+     "Nipah virus infection",
+     "Leprosy"
+    ],
+    "explanation": "The Nipah virus is carried by fruit bats of the genus Pteropus and can pass to pigs and to human beings. It causes fever and inflammation of the brain, with a high death rate.",
+    "notes": [
+     "Measles spreads from person to person.",
+     "Cholera is a bacterial disease spread by contaminated water.",
+     "It has caused several outbreaks in Kerala.",
+     "Leprosy is a bacterial disease of human beings."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "The virus was first identified in Malaysia in 1998–99.",
+     "A zoonotic disease is one that passes from animals to human beings."
+    ]
+   },
+   "hi": {
+    "q": "निम्नलिखित में से कौन-सा पशुजन्य रोग है, जिसका विषाणु प्रकृति में फलभक्षी चमगादड़ों में रहता है?",
+    "options": [
+     "खसरा",
+     "हैजा",
+     "निपाह विषाणु संक्रमण",
+     "कुष्ठ रोग"
+    ],
+    "explanation": "निपाह विषाणु टेरोपस वंश के फलभक्षी चमगादड़ों में रहता है और सूअरों तथा मनुष्यों में पहुँच सकता है। इससे ज्वर एवं मस्तिष्क शोथ होता है और मृत्यु दर ऊँची रहती है।",
+    "notes": [
+     "खसरा व्यक्ति से व्यक्ति में फैलता है।",
+     "हैजा दूषित जल से फैलने वाला जीवाणुजन्य रोग है।",
+     "इससे केरल में कई बार प्रकोप हुआ है।",
+     "कुष्ठ रोग मनुष्यों का जीवाणुजन्य रोग है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "इस विषाणु की पहचान पहली बार 1998–99 में मलेशिया में हुई।",
+     "पशुजन्य रोग वह है, जो पशुओं से मनुष्यों में पहुँचता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "World Health Organization – Nipah virus (fact sheet)",
+     "url": "https://www.who.int/news-room/fact-sheets/detail/nipah-virus"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-018",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "Quinine, obtained from the bark of the cinchona tree, is used in the treatment of:",
+    "options": [
+     "Tuberculosis",
+     "Leprosy",
+     "Typhoid",
+     "Malaria"
+    ],
+    "explanation": "Quinine, an alkaloid from the bark of the cinchona tree, was the first effective drug against malaria. Artemisinin-based combination therapy is now the main treatment for falciparum malaria.",
+    "notes": [
+     "Tuberculosis is treated with drugs such as rifampicin and isoniazid.",
+     "Leprosy is treated with multi-drug therapy.",
+     "Typhoid is treated with antibiotics.",
+     "Chloroquine and artemisinin are other drugs used against it."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "Artemisinin was discovered by Tu Youyou, who received the Nobel Prize in 2015.",
+     "Cinchona is grown in the Nilgiris and at Darjeeling."
+    ]
+   },
+   "hi": {
+    "q": "सिनकोना वृक्ष की छाल से प्राप्त कुनैन का प्रयोग किस रोग के उपचार में होता है?",
+    "options": [
+     "क्षय रोग",
+     "कुष्ठ रोग",
+     "टाइफाइड",
+     "मलेरिया"
+    ],
+    "explanation": "सिनकोना वृक्ष की छाल का ऐल्केलॉइड कुनैन मलेरिया के विरुद्ध पहली प्रभावी औषधि थी। अब फाल्सीपेरम मलेरिया का मुख्य उपचार आर्टेमिसिनिन आधारित संयोजन चिकित्सा है।",
+    "notes": [
+     "क्षय रोग का उपचार रिफैम्पिसिन एवं आइसोनियाजिड जैसी औषधियों से होता है।",
+     "कुष्ठ रोग का उपचार बहु-औषधि उपचार से होता है।",
+     "टाइफाइड का उपचार प्रतिजैविकों से होता है।",
+     "क्लोरोक्वीन एवं आर्टेमिसिनिन इसके विरुद्ध प्रयुक्त अन्य औषधियाँ हैं।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "आर्टेमिसिनिन की खोज तू यूयू ने की, जिन्हें 2015 में नोबेल पुरस्कार मिला।",
+     "सिनकोना नीलगिरि एवं दार्जिलिंग में उगाया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-019",
+   "level": "PGT",
+   "answer": 1,
+   "en": {
+    "q": "Elephantiasis (lymphatic filariasis) is caused by the nematode:",
+    "options": [
+     "Ascaris lumbricoides",
+     "Wuchereria bancrofti",
+     "Taenia solium",
+     "Ancylostoma duodenale"
+    ],
+    "explanation": "Lymphatic filariasis is caused by the filarial worm Wuchereria bancrofti. The adult worms block the lymphatic vessels, which leads to gross swelling of the legs and other parts.",
+    "notes": [
+     "Ascaris is the common roundworm of the intestine.",
+     "The worms live in the lymph vessels and block them.",
+     "Taenia solium is the pork tapeworm.",
+     "Ancylostoma is the hookworm."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "The larvae of the worm are called microfilariae.",
+     "Mass drug administration is used to eliminate the disease."
+    ]
+   },
+   "hi": {
+    "q": "हाथीपाँव (लसीका फाइलेरिया) किस सूत्रकृमि से होता है?",
+    "options": [
+     "एस्केरिस लुम्ब्रिकॉइडीज",
+     "वुचेरेरिया बैंक्रॉफ्टी",
+     "टीनिया सोलियम",
+     "एन्साइलोस्टोमा ड्यूओडिनेल"
+    ],
+    "explanation": "लसीका फाइलेरिया फाइलेरिया कृमि वुचेरेरिया बैंक्रॉफ्टी से होता है। वयस्क कृमि लसीका वाहिनियों को अवरुद्ध कर देते हैं, जिससे टाँगों एवं अन्य अंगों में भारी सूजन हो जाती है।",
+    "notes": [
+     "एस्केरिस आँत का सामान्य गोल कृमि है।",
+     "ये कृमि लसीका वाहिनियों में रहकर उन्हें अवरुद्ध करते हैं।",
+     "टीनिया सोलियम सूअर का फीता कृमि है।",
+     "एन्साइलोस्टोमा अंकुश कृमि है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "कृमि के लार्वा माइक्रोफाइलेरिया कहलाते हैं।",
+     "रोग के उन्मूलन के लिए सामूहिक औषधि वितरण किया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  },
+  {
+   "id": "health-diseases-020",
+   "level": "PGT",
+   "answer": 3,
+   "en": {
+    "q": "The ELISA test is widely used for the screening of:",
+    "options": [
+     "Typhoid",
+     "Tuberculosis",
+     "Malaria",
+     "HIV infection"
+    ],
+    "explanation": "ELISA (enzyme-linked immunosorbent assay) detects antibodies or antigens in the blood. It is the most widely used screening test for HIV infection, and a positive result is confirmed by further tests.",
+    "notes": [
+     "Typhoid is tested by other blood tests and by culture.",
+     "Tuberculosis is tested by sputum examination and skin tests.",
+     "Malaria is tested by a blood smear.",
+     "A positive screening result is confirmed by further tests."
+    ],
+    "path": [
+     "General Science",
+     "Human Health",
+     "Diseases"
+    ],
+    "facts": [
+     "ELISA is based on the reaction between an antigen and its antibody.",
+     "It is also used to detect several other infections."
+    ]
+   },
+   "hi": {
+    "q": "एलाइजा (ELISA) परीक्षण का व्यापक प्रयोग किसकी जाँच के लिए होता है?",
+    "options": [
+     "टाइफाइड",
+     "क्षय रोग",
+     "मलेरिया",
+     "एचआईवी संक्रमण"
+    ],
+    "explanation": "एलाइजा (एंजाइम-लिंक्ड इम्यूनोसॉर्बेंट एसे) रक्त में प्रतिपिंड या प्रतिजन का पता लगाता है। यह एचआईवी संक्रमण की सबसे व्यापक रूप से प्रयुक्त जाँच है और सकारात्मक परिणाम की पुष्टि आगे के परीक्षणों से की जाती है।",
+    "notes": [
+     "टाइफाइड की जाँच अन्य रक्त परीक्षणों एवं संवर्धन से होती है।",
+     "क्षय रोग की जाँच बलगम परीक्षण एवं त्वचा परीक्षण से होती है।",
+     "मलेरिया की जाँच रक्त पट्टिका से होती है।",
+     "जाँच में सकारात्मक परिणाम की पुष्टि आगे के परीक्षणों से की जाती है।"
+    ],
+    "path": [
+     "सामान्य विज्ञान",
+     "मानव स्वास्थ्य",
+     "रोग"
+    ],
+    "facts": [
+     "एलाइजा प्रतिजन एवं उसके प्रतिपिंड की अभिक्रिया पर आधारित है।",
+     "इसका प्रयोग अन्य अनेक संक्रमणों का पता लगाने में भी होता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, 'Human Health and Disease'"
+    },
+    {
+     "source": "World Health Organization – fact sheets",
+     "url": "https://www.who.int/news-room/fact-sheets"
+    }
+   ]
+  }
+ ]
 }
