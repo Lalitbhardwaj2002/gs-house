@@ -29,6 +29,9 @@ const CONFIG = {
     { urls: 'stun:stun.cloudflare.com:3478' },
   ],
   turn: [],
+  // Visitor counting with GoatCounter (no cookies, nothing personal): the site code chosen at
+  // goatcounter.com, e.g. 'gshouse' for https://gshouse.goatcounter.com. Empty = nothing is counted.
+  goatcounter: 'gshouse',
   defaults: { count: 20, timer: 45, level: 'all', negative: 0, track: 'all' },
   heartbeatMs: 2000,
   staleMs: 9000,
@@ -55,6 +58,36 @@ const COLORS = ['#c0392b', '#d35400', '#b7950b', '#27ae60', '#16a085', '#2980b9'
 
 // Options for every PeerJS connection: our own list of STUN and TURN servers (see CONFIG).
 const peerOptions = () => ({ debug: 1, config: { iceServers: [...CONFIG.stun, ...CONFIG.turn], sdpSemantics: 'unified-plan' } });
+
+// ---------- visitor counting (GoatCounter) ----------
+// One visit is counted when the app opens, always as "/" so room codes in the address are not
+// recorded, and an event when a room is created or a quiz starts. Nothing is counted on this
+// computer (localhost) or when CONFIG.goatcounter is empty; offline or blocked, it fails quietly.
+const stats = {
+  queue: [],
+  init() {
+    const local = ['localhost', '127.0.0.1', '[::1]', ''].includes(location.hostname);
+    if (!CONFIG.goatcounter || local) { this.queue = null; return; }
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://gc.zgo.at/count.js';
+    s.dataset.goatcounter = `https://${CONFIG.goatcounter}.goatcounter.com/count`;
+    s.dataset.goatcounterSettings = JSON.stringify({ no_onload: true });
+    s.onload = () => {
+      this.send({ path: '/', title: 'GS HOUSE' });
+      (this.queue || []).forEach((v) => this.send(v));
+      this.queue = [];
+    };
+    s.onerror = () => { this.queue = null; };
+    document.head.appendChild(s);
+  },
+  send(v) { try { window.goatcounter.count(v); } catch { /* blocked or not loaded */ } },
+  event(name, title) {
+    if (this.queue === null) return;
+    const v = { path: name, title, event: true };
+    if (window.goatcounter && window.goatcounter.count) this.send(v); else this.queue.push(v);
+  },
+};
 
 // ---------- small helpers ----------
 const $ = (sel) => document.querySelector(sel);
@@ -425,7 +458,7 @@ function openRoom(code, saved = null, attempt = 0) {
     host.conns = new Map();
     host.lastSeen = {};
     if (saved) host.state.players.forEach((p) => { if (p.id !== me.id) p.connected = false; });
-    else { addPlayer(me.id, me.name); resetLocal(code); }
+    else { addPlayer(me.id, me.name); resetLocal(code); stats.event('room-created', 'Room created'); }
     net = { role: 'host', solo: false };
     store.set('sessionStorage', 'pp-role', 'host');
     setRoomInUrl(code);
@@ -622,6 +655,8 @@ async function startQuiz(only = null) {
     toast(t('noQs'));
     return;
   }
+  if (net && net.solo) stats.event('quiz-solo', 'Solo quiz started');
+  else stats.event('quiz-room', `Room quiz started (${s.players.length} players)`);
   s.qids = qids;
   s.total = qids.length;
   s.round = 0;
@@ -2774,6 +2809,7 @@ document.addEventListener('pointerdown', () => sfx.unlock(), { passive: true });
 async function boot() {
   document.documentElement.lang = lang === 'hi' ? 'hi' : 'en-IN';
   requestAnimationFrame(frame);
+  stats.init();
   try {
     const res = await fetch('data/index.json', { cache: 'no-cache' });
     if (res.ok) bankIndex = await res.json();
