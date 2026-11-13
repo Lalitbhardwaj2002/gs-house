@@ -2544,6 +2544,267 @@
      "source": "C. R. Kothari & Gaurav Garg, Research Methodology: Methods and Techniques, chapter 'Methods of Data Collection' (observation method)"
     }
    ]
+  },
+  {
+   "id": "tra-data-041",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "The 'three Vs' by which big data are commonly characterised, following Doug Laney, are:",
+    "options": [
+     "Value, validity and visibility",
+     "Volume, velocity and variety",
+     "Volume, value and verification",
+     "Velocity, vision and virtuality"
+    ],
+    "explanation": "Laney described the three dimensions in 2001. Big data are too large (volume), arrive too quickly (velocity) and are too mixed in form, such as text, images and sensor readings (variety), to be handled by ordinary database tools. Veracity and value are often added as a fourth and a fifth V.",
+    "notes": [
+     "Value is sometimes added as a later V, but this is not the original set.",
+     "The data are very large, arrive very fast and come in many forms.",
+     "Verification is not one of the Vs.",
+     "Vision and virtuality are not characteristics of big data."
+    ],
+    "path": [
+     "Research Aptitude",
+     "Data",
+     "Data and technology",
+     "Big data"
+    ],
+    "facts": [
+     "Big data: volume, velocity and variety (Doug Laney, 2001).",
+     "Veracity and value were added to the list later."
+    ]
+   },
+   "hi": {
+    "q": "डग लैनी के अनुसार बिग डेटा की पहचान जिन 'तीन V' से की जाती है, वे हैं:",
+    "options": [
+     "वैल्यू, वैलिडिटी और विज़िबिलिटी",
+     "वॉल्यूम, वेलोसिटी और वैरायटी",
+     "वॉल्यूम, वैल्यू और वेरिफिकेशन",
+     "वेलोसिटी, विज़न और वर्चुअलिटी"
+    ],
+    "explanation": "लैनी ने ये तीन आयाम 2001 में बताए। बिग डेटा इतने विशाल (वॉल्यूम यानी मात्रा), इतनी तेज़ी से आने वाले (वेलोसिटी यानी वेग) और रूप में इतने मिश्रित, जैसे पाठ, चित्र और संवेदकों के पाठ्यांक (वैरायटी यानी विविधता), होते हैं कि सामान्य डेटाबेस साधनों से सँभाले नहीं जा सकते। वेरासिटी (सत्यता) और वैल्यू (मूल्य) प्रायः चौथे और पाँचवें V के रूप में जोड़े जाते हैं।",
+    "notes": [
+     "वैल्यू को बाद में कभी-कभी एक और V के रूप में जोड़ा जाता है, पर यह मूल समूह नहीं है।",
+     "आँकड़े बहुत विशाल होते हैं, बहुत तेज़ी से आते हैं और अनेक रूपों में होते हैं।",
+     "वेरिफिकेशन इन V में शामिल नहीं है।",
+     "विज़न और वर्चुअलिटी बिग डेटा की विशेषताएँ नहीं हैं।"
+    ],
+    "path": [
+     "शोध अभिवृत्ति",
+     "आँकड़े",
+     "आँकड़े और प्रौद्योगिकी",
+     "बिग डेटा"
+    ],
+    "facts": [
+     "बिग डेटा: वॉल्यूम (मात्रा), वेलोसिटी (वेग) और वैरायटी (विविधता) (डग लैनी, 2001)।",
+     "वेरासिटी और वैल्यू बाद में सूची में जोड़े गए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Doug Laney, '3D Data Management: Controlling Data Volume, Velocity, and Variety', META Group research note, 6 February 2001"
+    },
+    {
+     "source": "Big data",
+     "url": "https://en.wikipedia.org/wiki/Big_data"
+    }
+   ]
+  },
+  {
+   "id": "tra-data-042",
+   "level": "Higher",
+   "answer": 0,
+   "en": {
+    "q": "To compare the mean scores of three or more groups, analysis of variance (ANOVA) is preferred to a series of t-tests primarily because repeated t-tests:",
+    "options": [
+     "Raise the overall chance of wrongly rejecting a true null hypothesis",
+     "Cannot be worked out without a computer",
+     "Can be applied only to nominal data",
+     "Require every group to be of the same size"
+    ],
+    "explanation": "Each t-test carries its own risk of a false positive, usually 5 per cent. Testing every pair separately lets these risks pile up. ANOVA, devised by R. A. Fisher, tests all the means together in one F-test by comparing the variation between the groups with the variation within them.",
+    "notes": [
+     "With three groups there are three pairs, and each extra test adds to the risk of a Type I error.",
+     "A t-test can be worked out by hand.",
+     "The t-test needs scores on an interval or ratio scale.",
+     "Equal group size is not required for a t-test."
+    ],
+    "path": [
+     "Research Aptitude",
+     "Data",
+     "Inferential statistics",
+     "Analysis of variance"
+    ],
+    "facts": [
+     "ANOVA compares three or more means in a single F-test (R. A. Fisher).",
+     "Many separate t-tests inflate the overall Type I error."
+    ]
+   },
+   "hi": {
+    "q": "तीन या अधिक समूहों के माध्य प्राप्तांकों की तुलना के लिए अनेक t-परीक्षणों की अपेक्षा प्रसरण विश्लेषण (एनोवा) को मुख्यतः इसलिए वरीयता दी जाती है कि बार-बार के t-परीक्षण:",
+    "options": [
+     "सत्य शून्य परिकल्पना को गलत रूप से अस्वीकार करने की कुल संभावना बढ़ा देते हैं",
+     "कंप्यूटर के बिना हल नहीं किए जा सकते",
+     "केवल नामित आँकड़ों पर लागू हो सकते हैं",
+     "हर समूह का आकार समान होना आवश्यक मानते हैं"
+    ],
+    "explanation": "प्रत्येक t-परीक्षण में मिथ्या सार्थक परिणाम का अपना जोखिम होता है, प्रायः 5 प्रतिशत। हर जोड़े का अलग परीक्षण करने से ये जोखिम जुड़ते जाते हैं। आर. ए. फिशर द्वारा विकसित एनोवा समूहों के बीच के विचरण की तुलना समूहों के भीतर के विचरण से करके सभी माध्यों का एक ही F-परीक्षण में परीक्षण करता है।",
+    "notes": [
+     "तीन समूहों में तीन जोड़े बनते हैं, और हर अतिरिक्त परीक्षण प्रथम प्रकार की त्रुटि का जोखिम बढ़ाता है।",
+     "t-परीक्षण हाथ से भी हल किया जा सकता है।",
+     "t-परीक्षण के लिए अंतराल या अनुपात मापनी के प्राप्तांक चाहिए।",
+     "t-परीक्षण के लिए समूहों का समान आकार आवश्यक नहीं है।"
+    ],
+    "path": [
+     "शोध अभिवृत्ति",
+     "आँकड़े",
+     "अनुमानात्मक सांख्यिकी",
+     "प्रसरण विश्लेषण"
+    ],
+    "facts": [
+     "एनोवा तीन या अधिक माध्यों की तुलना एक ही F-परीक्षण में करता है (आर. ए. फिशर)।",
+     "अनेक अलग-अलग t-परीक्षण प्रथम प्रकार की कुल त्रुटि बढ़ा देते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Henry E. Garrett, Statistics in Psychology and Education (analysis of variance)"
+    },
+    {
+     "source": "R. A. Fisher, Statistical Methods for Research Workers (Oliver and Boyd, 1925)"
+    }
+   ]
+  },
+  {
+   "id": "tra-data-043",
+   "level": "Higher",
+   "answer": 2,
+   "en": {
+    "q": "A parametric test, such as the t-test, differs from a non-parametric test primarily in that it:",
+    "options": [
+     "Can be used only with very small samples",
+     "Never requires the calculation of a mean",
+     "Assumes that the scores come from a population with a known form of distribution, usually normal",
+     "Is used only for data collected through interviews"
+    ],
+    "explanation": "'Parameter' means a value of the population, such as its mean. Parametric tests make assumptions about the population, chiefly normal distribution and equal variances, and when these hold they are more powerful. Non-parametric tests are called 'distribution-free' because they make no such assumption.",
+    "notes": [
+     "Parametric tests are used with small and large samples alike.",
+     "Parametric tests are built on means and standard deviations.",
+     "It also assumes measurement on an interval or ratio scale.",
+     "The method of collecting data does not decide the choice of test."
+    ],
+    "path": [
+     "Research Aptitude",
+     "Data",
+     "Inferential statistics",
+     "Parametric tests"
+    ],
+    "facts": [
+     "Parametric tests assume a normally distributed population and interval or ratio data.",
+     "Non-parametric tests are 'distribution-free'."
+    ]
+   },
+   "hi": {
+    "q": "t-परीक्षण जैसा प्राचलिक (पैरामेट्रिक) परीक्षण अप्राचलिक परीक्षण से मुख्यतः इस बात में भिन्न है कि वह:",
+    "options": [
+     "केवल बहुत छोटे प्रतिदर्शों के साथ प्रयोग हो सकता है",
+     "कभी माध्य की गणना नहीं माँगता",
+     "यह मानता है कि प्राप्तांक ऐसी समष्टि से आए हैं जिसके वितरण का रूप ज्ञात है, प्रायः प्रसामान्य",
+     "केवल साक्षात्कार से एकत्र आँकड़ों के लिए प्रयुक्त होता है"
+    ],
+    "explanation": "'प्राचल' का अर्थ है समष्टि का कोई मान, जैसे उसका माध्य। प्राचलिक परीक्षण समष्टि के बारे में मान्यताएँ रखते हैं, मुख्यतः प्रसामान्य वितरण और समान प्रसरण; ये मान्यताएँ पूरी हों तो वे अधिक शक्तिशाली होते हैं। अप्राचलिक परीक्षणों को 'वितरण-मुक्त' कहा जाता है क्योंकि वे ऐसी कोई मान्यता नहीं रखते।",
+    "notes": [
+     "प्राचलिक परीक्षण छोटे और बड़े, दोनों प्रतिदर्शों के साथ प्रयुक्त होते हैं।",
+     "प्राचलिक परीक्षण माध्य और मानक विचलन पर ही आधारित हैं।",
+     "यह अंतराल या अनुपात मापनी पर मापन भी मानकर चलता है।",
+     "आँकड़ा-संग्रह की विधि से परीक्षण का चयन तय नहीं होता।"
+    ],
+    "path": [
+     "शोध अभिवृत्ति",
+     "आँकड़े",
+     "अनुमानात्मक सांख्यिकी",
+     "प्राचलिक परीक्षण"
+    ],
+    "facts": [
+     "प्राचलिक परीक्षण प्रसामान्य वितरित समष्टि और अंतराल या अनुपात मापनी के आँकड़े मानकर चलते हैं।",
+     "अप्राचलिक परीक्षण 'वितरण-मुक्त' होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Sidney Siegel, Nonparametric Statistics for the Behavioral Sciences (McGraw-Hill, 1956)"
+    },
+    {
+     "source": "Henry E. Garrett, Statistics in Psychology and Education (significance of the difference between means)"
+    }
+   ]
+  },
+  {
+   "id": "tra-data-044",
+   "level": "Higher",
+   "answer": 1,
+   "en": {
+    "q": "Regression analysis differs from correlation analysis primarily in that it:",
+    "options": [
+     "Can be applied only to qualitative data",
+     "Estimates the value of one variable from the known value of another",
+     "Measures only the strength of the relationship between two variables",
+     "Requires both variables to be measured in the same unit"
+    ],
+    "explanation": "Correlation tells how closely two variables move together; regression gives the line of best fit, from which the likely value of the dependent variable can be read for any value of the independent variable. Francis Galton introduced the term in the 1880s after finding that the heights of children 'regress' towards the average.",
+    "notes": [
+     "Regression in its usual form deals with quantitative variables.",
+     "The regression equation, such as Y = a + bX, is used for prediction.",
+     "That is what the coefficient of correlation does.",
+     "The variables may be in different units, such as height and weight."
+    ],
+    "path": [
+     "Research Aptitude",
+     "Data",
+     "Inferential statistics",
+     "Regression"
+    ],
+    "facts": [
+     "Regression: prediction of a dependent variable from an independent variable.",
+     "The term comes from Francis Galton's study of the heights of parents and children."
+    ]
+   },
+   "hi": {
+    "q": "प्रतिगमन (रिग्रेशन) विश्लेषण सहसंबंध विश्लेषण से मुख्यतः इस बात में भिन्न है कि वह:",
+    "options": [
+     "केवल गुणात्मक आँकड़ों पर लागू हो सकता है",
+     "एक चर के ज्ञात मान से दूसरे चर के मान का अनुमान लगाता है",
+     "दो चरों के संबंध की केवल प्रबलता मापता है",
+     "दोनों चरों का एक ही इकाई में मापा जाना आवश्यक मानता है"
+    ],
+    "explanation": "सहसंबंध बताता है कि दो चर कितनी निकटता से साथ-साथ बदलते हैं; प्रतिगमन सर्वोत्तम समंजन की रेखा देता है, जिससे स्वतंत्र चर के किसी भी मान के लिए आश्रित चर का संभावित मान पढ़ा जा सकता है। फ्रांसिस गाल्टन ने यह पद 1880 के दशक में दिया, जब उन्होंने पाया कि बच्चों की ऊँचाई औसत की ओर 'लौटती' है।",
+    "notes": [
+     "अपने सामान्य रूप में प्रतिगमन मात्रात्मक चरों से संबंधित है।",
+     "Y = a + bX जैसा प्रतिगमन समीकरण पूर्वानुमान के लिए प्रयुक्त होता है।",
+     "यह काम सहसंबंध गुणांक करता है।",
+     "चर अलग-अलग इकाइयों में हो सकते हैं, जैसे ऊँचाई और भार।"
+    ],
+    "path": [
+     "शोध अभिवृत्ति",
+     "आँकड़े",
+     "अनुमानात्मक सांख्यिकी",
+     "प्रतिगमन"
+    ],
+    "facts": [
+     "प्रतिगमन: स्वतंत्र चर से आश्रित चर का पूर्वानुमान।",
+     "यह पद फ्रांसिस गाल्टन के माता-पिता और बच्चों की ऊँचाई के अध्ययन से आया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Francis Galton, 'Regression Towards Mediocrity in Hereditary Stature', Journal of the Anthropological Institute 15, 1886"
+    },
+    {
+     "source": "S. P. Gupta, Statistical Methods (regression analysis)"
+    }
+   ]
   }
  ]
 }

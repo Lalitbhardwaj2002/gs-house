@@ -56,3 +56,9 @@ Every URL was checked. One was dead (see 006 and 007). The ORI, HHS (Belmont), P
 - Replaced (re-aimed):
   - 016: now asks about the moderator variable (source: Tuckman). As an independent-variable question it was given away by 004, 017 and 018.
   - 020: now asks about the power of a test (1 − β; reference: Cohen 1988). The earlier Type I error question duplicated 021, whose option A states the same answer.
+
+## Check of 13 November 2026 (60 more questions for the quiz)
+- Checked 8 new questions (041 042 043 044 045 046 047 048). All answer keys are correct. Confirmed: Campbell and Stanley 1963 and their names for the threats (history, maturation, testing, instrumentation, statistical regression, selection, experimental mortality); Denzin's four kinds of triangulation (1970); Delphi at RAND in the 1950s, Dalkey and Helmer, Management Science 9(3), 1963; Glass 1976, Educational Researcher 5(10). No clash with other questions in the bank.
+- Corrected:
+  - 047: the reference URL rand.org/topics/delphi-method.html could not be opened to confirm it. It is replaced by the Wikipedia article on the Delphi method.
+- Replaced: none.
