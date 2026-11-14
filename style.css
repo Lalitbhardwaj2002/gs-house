@@ -639,6 +639,9 @@ button.topic { cursor: pointer; }
 .about h2 { font-family: var(--display); color: var(--head); font-size: calc(24px * var(--fs)); margin: 10px 0 6px; }
 .about p { margin-bottom: 8px; }
 .about .made { text-align: center; }
+/* the copyright line: the year the site was first published and the owner's name */
+.about .copy { text-align: center; font-size: calc(15px * var(--fs)); }
+.about .copy a { color: inherit; }
 body:not([data-screen='home']) .about { display: none; }
 
 @keyframes shake { 20%, 60% { transform: translateX(-5px); } 40%, 80% { transform: translateX(5px); } }
