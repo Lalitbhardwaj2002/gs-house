@@ -1,0 +1,89 @@
+@en
+# Properties and solution of triangles
+
+> In a triangle $ABC$ the sine, cosine and projection rules connect the sides with the angles; the half-angle formulas, Heron's formula and the radii of the circumcircle, the incircle and the three excircles follow from them. Solving a triangle means finding its missing parts from three given ones.
+
+## Notation and the three circles
+
+! note | Notation
+In $\triangle ABC$: the angles are $A, B, C$ ($A + B + C = \pi$) and the sides opposite them are $a = BC$, $b = CA$, $c = AB$. The semi-perimeter is $s = \frac{a + b + c}{2}$ and $\Delta$ denotes the area. $R$ is the radius of the circumcircle (through $A, B, C$), $r$ the radius of the incircle (touching all three sides from inside) and $r_1, r_2, r_3$ the radii of the excircles opposite $A, B, C$ (touching one side and the other two sides produced).
+
+^ data/net/maths/fig/tri-circum.svg | circumcircle (centre $O$, radius $R$)
+^ data/net/maths/fig/tri-in.svg | incircle (centre $I$, radius $r$)
+^ data/net/maths/fig/tri-ex.svg | excircle opposite $A$ (radius $r_1$)
+
+## The rules
+
+! note | Rules connecting sides and angles
+- **Sine rule**: $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$. (The side opposite a larger angle is larger.)
+- **Cosine rule**: $a^2 = b^2 + c^2 - 2bc\cos A$, i.e. $\cos A = \frac{b^2 + c^2 - a^2}{2bc}$. Use it when three sides, or two sides and the included angle, are given.
+- **Projection rule**: $a = b\cos C + c\cos B$ (side $a$ is the sum of the projections of $b$ and $c$ on it).
+- **Half-angle formulas**: $\sin\frac{A}{2} = \sqrt{\frac{(s - b)(s - c)}{bc}}$, $\cos\frac{A}{2} = \sqrt{\frac{s(s - a)}{bc}}$,
+$$\begin{aligned} &\tan\frac{A}{2} = \sqrt{\frac{(s - b)(s - c)}{s(s - a)}} \\ &= \frac{\Delta}{s(s - a)}. \end{aligned}$$
+- **Area**: $\Delta = \frac{1}{2}bc\sin A = \sqrt{s(s - a)(s - b)(s - c)}$ (Heron) $= \frac{abc}{4R} = rs$.
+- **Napier's analogy**: $\tan\frac{B - C}{2} = \frac{b - c}{b + c}\cot\frac{A}{2}$ (used when two sides and the included angle are given).
+
+! note | Circum-, in- and ex-radii
+$$R = \frac{a}{2\sin A} = \frac{abc}{4\Delta},$$
+$$\begin{aligned} &r = \frac{\Delta}{s} \\ &= (s - a)\tan\frac{A}{2} \\ &= 4R\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}, \end{aligned}$$
+$$\begin{aligned} &r_1 = \frac{\Delta}{s - a} \\ &= s\tan\frac{A}{2} \\ &= 4R\sin\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2} \end{aligned}$$
+(similarly $r_2 = \frac{\Delta}{s - b}$, $r_3 = \frac{\Delta}{s - c}$).
+**Relations**: $r_1 + r_2 + r_3 - r = 4R$; $\frac{1}{r_1} + \frac{1}{r_2} + \frac{1}{r_3} = \frac{1}{r}$; $rr_1r_2r_3 = \Delta^2$; $OI^2 = R^2 - 2Rr$, so $R \geq 2r$ (equality only for an equilateral triangle). Equilateral triangle of side $a$: $R = \frac{a}{\sqrt{3}}$, $r = \frac{a}{2\sqrt{3}}$, $r_1 = \frac{\sqrt{3}}{2}a$. Right triangle with hypotenuse $c$: $R = \frac{c}{2}$ (the hypotenuse is a diameter), $r = \frac{a + b - c}{2}$.
+
+! check | A condition added
+In $OI^2 = R^2 - 2Rr$, $O$ is the circumcentre and $I$ the incentre (Euler's formula).
+
+! example | Question TR1 — standard
+For the triangle with sides $3, 4, 5$ find $\Delta, R, r, r_1, r_2, r_3$ and verify $r_1 + r_2 + r_3 - r = 4R$.
+**Solution.** $s = 6$, $\Delta = \sqrt{6 \cdot 3 \cdot 2 \cdot 1} = 6$. $R = \frac{3 \cdot 4 \cdot 5}{4 \cdot 6} = \frac{5}{2}$ (half the hypotenuse ✓), $r = \frac{6}{6} = 1$. $r_1 = \frac{6}{6 - 3} = 2$, $r_2 = \frac{6}{6 - 4} = 3$, $r_3 = \frac{6}{6 - 5} = 6$. Then $2 + 3 + 6 - 1 = 10 = 4 \cdot \frac{5}{2}$ ✓.
+
+! example | Question TR2 — standard
+In $\triangle ABC$, $a = 7$, $b = 8$, $c = 5$. Find $A$ and the area.
+**Solution.** $\cos A = \frac{64 + 25 - 49}{2 \cdot 8 \cdot 5} = \frac{1}{2} \Rightarrow \boxed{A = 60°}$. $\Delta = \frac{1}{2} \cdot 8 \cdot 5 \cdot \sin 60° = \boxed{10\sqrt{3}}$.
+
+! addon | Solution of triangles — which rule to use
+| Given | Use |
+| three sides (SSS) | cosine rule or half-angle formulas |
+| two sides and included angle (SAS) | cosine rule for the third side (Napier's analogy gives the other two angles) |
+| two angles and a side (AAS/ASA) | $A + B + C = \pi$, then sine rule |
+| two sides and a non-included angle (SSA) | sine rule — *ambiguous case* |
+**Ambiguous case** (given $a$, $b$, $A$ with $A$ acute): $a < b\sin A$ no triangle; $a = b\sin A$ one right triangle; $b\sin A < a < b$ two triangles; $a \geq b$ one triangle.
+
+! check | A condition added
+If the given angle $A$ is right or obtuse, there is one triangle when $a > b$ and none when $a \leq b$.
+
+## What it means
+
+- **Sine rule and the circumcircle**: the chord $BC = a$ subtends the angle $A$ at the circumference, so $a = 2R\sin A$.
+- **Inradius from the area**: the incentre joined to the vertices splits the triangle into three triangles of heights $r$, so $\Delta = \frac{1}{2}r(a + b + c) = rs$.
+- **Which angle is largest?** The one opposite the largest side; check it with the cosine rule ($\cos A < 0$ means obtuse).
+
+! example | Example 1 — the largest angle
+The sides of a triangle are $3$, $5$, $7$. Find its largest angle.
+**Solution.** Opposite $7$: $\cos\theta = \frac{9 + 25 - 49}{30} = -\frac{1}{2}$, so $\boxed{\theta = 120°}$.
+
+! example | Example 2 — the ambiguous case
+Given $a = 5$, $b = 8$, $A = 30°$, how many triangles are possible?
+**Solution.** $b\sin A = 4 < a = 5 < b = 8$: $\boxed{\text{two triangles}}$.
+
+! example | Example 3 — radii of an equilateral triangle
+For an equilateral triangle of side 6, find $R$, $r$ and $r_1$.
+**Solution.** $R = \frac{6}{\sqrt{3}} = 2\sqrt{3}$, $r = \frac{6}{2\sqrt{3}} = \sqrt{3}$, $r_1 = \frac{\sqrt{3}}{2} \cdot 6 = 3\sqrt{3}$. Check: $R = 2r$ ✓.
+
+? Sine rule with the circumradius? :: $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$.
+? Area in terms of $r$ and $s$, and in terms of $R$? :: $\Delta = rs = \frac{abc}{4R}$.
+? $r_1 + r_2 + r_3 - r$? :: $4R$.
+? Circumradius of a right triangle? :: Half the hypotenuse.
+
+! exam | What the exam asks
+- Angles from three sides; area by Heron's formula.
+- $R$, $r$, $r_1$, $r_2$, $r_3$ and the relations between them.
+- The ambiguous case; Napier's analogy; projection-rule identities.
+
+! recap | One-minute revision
+- $\frac{a}{\sin A} = 2R$; $\cos A = \frac{b^2 + c^2 - a^2}{2bc}$; $a = b\cos C + c\cos B$.
+- $\Delta = \frac{1}{2}bc\sin A = \frac{abc}{4R} = rs$; Heron: $\Delta = \sqrt{s(s - a)(s - b)(s - c)}$.
+- $r = \frac{\Delta}{s}$, $r_1 = \frac{\Delta}{s - a}$; $R \geq 2r$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 9 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part I, chapters 13 to 16

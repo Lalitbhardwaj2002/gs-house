@@ -446,3 +446,109 @@ Display lines were measured with `width.py` (rough count of visible characters).
 - Figures redrawn as the checkers asked: `folium.svg` now has its fourth-quadrant branch (missing in the PDF figure too); `tangent-normal.svg` is drawn to one scale, so the normal meets the tangent at a right angle, and shows the angle θ and the right-angle mark; `nearest-point.svg` is drawn to one scale, so the segment meets the parabola at its true nearest point $(h, k)$; the labels of `rise-fall.svg`, `riemann-sum.svg`, `two-parabolas.svg` (which now shows the meeting point $(4a, 4b)$) and `vol-hemisphere.svg` sit inside the frame and clear of the curves; `disc-method.svg` draws the curve in full; the loop of `curve-strophoid.svg` closes at $(a, 0)$.
 - Placement: in PGT, 6.2 (partial differentiation, two variables) and 6.7 (curvature, asymptotes, tracing) moved to a part of their own, "Partial differentiation and curves"; key lines of 6.1, 6.5 and 7.3 extended as suggested.
 - Phone width: 75 display formulas of 6.1–7.10 were still wider than a 375-pixel screen. They were split into one step per line (mostly at their top-level "="; a few by hand at a "+" or "×"). A script compared every split formula with its checked text, ignoring line breaks, alignment marks and spacing: the mathematics is unchanged (the only difference is answer (b) of 6.1, moved from an inline formula to a display of its own). In the browser at 375 pixels all 17 pages render with no KaTeX error, no formula wider than the screen and every figure loaded.
+
+## Chapter 8, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 93 to 99 (printed 92 to 98), read from the page images `c8-093.png` to `c8-099.png` in this folder. Chapter 8 starts at the top of PDF page 93; page 99 holds only the end of 8.5 (the cardioid bullet and OT1).
+
+Nothing of the PDF was missing. Every box, bullet, formula, figure, caption, question, solution, boxed answer and shortcut of 8.1 to 8.5 is on the pages with the same mathematics and words. The PDF questions are OD1 to OD3, FO1 to FO7, CL1, CC1, CC2 and OT1; all are on the pages. Two parts of PDF boxes were shown outside their box on the page (a blank line ended the box too early); both are now inside, as in the PDF. The figure of 8.5 is now inside its box, as in the PDF.
+
+No slip in the PDF. Every result of the PDF text and of the additions was recomputed with sympy (script `verify.py` in this folder, 71 checks, all agree).
+
+`width.py` (rough visible width): no display row over 45 characters, no inline formula over 35. `fmt.py` (dollars, braces, `\left`/`\right`, boxes, solutions, spelling): 0 problems. All five files have LF line endings. `tools/check_net.py`: 0 problems.
+
+### tp-08-01 (Order, degree and formation)
+- Checked against PDF pages 93 and 94: the note box (four bullets), OD1, OD2, OD3 (a) to (d), the shortcut box. All present, same words.
+- Recomputed OD1 orders and degrees, OD2, OD3 (a) to (d) (including $y' = \frac{2xy}{x^2 - y^2}$ and $xyy'' + x(y')^2 - yy' = 0$), the check-box example $y = (a + b)x$, the shortcut counts, Examples 1 to 3 and the flash cards. All correct.
+- No change.
+
+### tp-08-02 (First order, first degree equations)
+- Checked against PDF pages 94 to 96: the note box (items 1 to 4, written as bullets "(1)" to "(4)", and the four integrating-factor rules), FO1 to FO6, the Bernoulli add-on, FO7, the shortcut box.
+- Change: removed the blank line before "**Integrating factors** when …". It ended the note box, so the four integrating-factor rules were shown after the box as ordinary text; in the PDF they are inside the blue box.
+- Change: the added check box said that dividing by $(1 - e^x)\tan y$ in FO1 may lose $\tan y = 0$. That is not so: $\tan y = 0$ is the case $C = 0$ of the answer. What is lost is the line $x = 0$ (where $1 - e^x = 0$), which satisfies the equation. The sentence now says this.
+- Recomputed FO1 to FO7 (each answer checked against the equation), $Mx + Ny = -y^4$, $Mx - Ny = 3x^3y^3$, the ratio $\frac{3}{x}$ and IF $x^3$, the exact potentials of FO4, FO5, FO6, the Bernoulli reduction, the three exact combinations, Examples 1 to 3. All correct.
+
+### tp-08-03 (Higher degree equations; singular solutions (PGT))
+- Checked against PDF pages 95 to 97: the add-on box (five bullets, the discriminants $EN^2C^3$ and $ET^2C$), the figure and its caption, CL1.
+- Recomputed CL1 (both signs of $p$; the check box on the sign is right), the Clairaut differentiation, Examples 1 to 3. All correct.
+- Change: Example 3 was titled "reducing to Clairaut's form", but the equation is already in Clairaut's form (the solution says so) and nothing is reduced. Title now "Clairaut's form with a square root".
+- Figure `clairaut.svg`: checked numerically. The parabola is $y^2 = 4ax$ with $a \approx 8$ px, and each of the 12 lines has intercept $\frac{a}{c}$ to within 0.1 px, so they are its tangents, six on each branch. It shows what the caption says. Left for the owner (cosmetic): the white box behind the label "envelope y² = 4ax" (opacity 0.9) is drawn on top of the lower branch, so the red curve fades out under the label at the bottom right.
+
+### tp-08-04 (Linear equations with constant coefficients (PGT))
+- Checked against PDF pages 97 and 98: the add-on box (CF, the four PI rules, Cauchy–Euler), CC1 (a) to (c), CC2, the shortcut box.
+- Change: removed the blank line before "**Cauchy–Euler** …", which ended the add-on box too early; in the PDF the Cauchy–Euler line is inside the green box.
+- Conditions added to the existing check box: the rule $x\frac{e^{ax}}{f'(a)}$ needs $f'(a) \neq 0$; the rule for $x^m$ needs $f(0) \neq 0$, otherwise write $f(D) = D^kg(D)$, expand $\frac{1}{g(D)}$ and integrate $k$ times (checked on $(D^2 + D)y = x$).
+- Recomputed CC1 (a) to (c), CC2, the failing-case formulas for $\sin ax$ and $\cos ax$ ($a = 1, 2, 3$), the $e^{ax}$ failing cases, the shortcut, Examples 1 to 3. All correct.
+
+### tp-08-05 (Orthogonal trajectories)
+- Checked against PDF pages 98 and 99: the add-on box with its figure and caption, the four pairs of families, OT1.
+- Change: the figure line now stands inside the add-on box as its first line, where the PDF has it (it stood before the box).
+- Recomputed the four pairs (circles and lines, $y^2 = 4ax$ and $2x^2 + y^2 = c$, $xy = c$ and $x^2 - y^2 = c$, the two cardioids by $\tan\phi_1\tan\phi_2 = -1$), OT1, Examples 1 to 3, the self-orthogonal confocal conics (one numerical case) and the polar rule in the check box. All correct.
+- Figure `orth-circles.svg`: three circles about the origin and six lines through the centre. It matches the caption.
+
+### Placement
+- `tgt-mathematics.json`, unit u11 (Calculus), part "Differential equations": tp-08-01 and tp-08-02. These match the TGT items "Order and degree of a differential equation" and "General solution of … first order and first degree". Right.
+- `pgt-mathematics.json`, unit u3 (Ordinary Differential Equations): all five pages. They match the PGT items order and degree, formation (08-01), first order and first degree (08-02), singular solutions (08-03), linear equations with constant coefficients and homogeneous (Cauchy–Euler) equations (08-04). Right.
+- Orthogonal trajectories (08-05) is not named in either syllabus. It only uses forming a DE and first-order equations, so PGT u3 is a fair home. Optional suggestion: it could also be listed in TGT u11, since it needs nothing beyond the TGT items.
+- The `key` lines describe the pages correctly. No change suggested.
+
+## Chapter 9, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 100 to 108 (printed 99 to 107), read from the page images (`p-100.png` to `p-108.png` in this folder) and the text layer (`p100-108.txt`).
+
+Nothing of the PDF was missing. Every box, bullet, formula, table, figure, question (TI1 to TI3, TE1, TE2, IT0 to IT2, TR1, TR2, HD1), solution, boxed answer, shortcut box and the add-on table of 9.1 to 9.6 is on the pages with the same mathematics and words. Three PDF passages sat outside their box on the pages (a blank line after a table ends a box); they are now inside it (see below).
+
+Every number, identity and step, of the PDF text and of the additions, was recomputed numerically (`verify.py`, 1791 checks, all agree; identities tested at random points, triangle results on random triangles, Euler's formula with coordinates, the ambiguous case by solving for the third side). No slip was found in the PDF. In the additions, two check boxes were imprecise (tp-09-02, tp-09-06) and were reworded.
+
+Formula widths were measured with `width.py` (rough count of visible characters, as in the earlier checks): every display row is now at most 36, every inline formula at most 33. `fmt.py` (dollars, braces, aligned blocks, boxes, spelling, LF endings): 0 problems. `tools/check_net.py`: 0 problems.
+
+### tp-09-01 (Trigonometric ratios and the unit circle)
+- Checked against PDF page 100: unit-circle figure, circular measure, signs, allied angles, table of special values, the line on 18°, 36°, 15°, 75°, 22½°, the sin/cos figure. All present and correct. The two check boxes (radians; tan 90° not defined) are correct.
+- Change: removed the blank line between the table and "Also sin 18° = ..." so that line stays inside the note box, as in the PDF.
+- Change: Example 2, the inline chain for tan(−300°) (about 48 characters) is now a two-row display.
+- Additions (radian, allied-angle rule, periods, ranges, Examples 1 to 3, cards, exam, recap): correct.
+
+### tp-09-02 (Trigonometric identities)
+- Checked against PDF pages 101 and 102: all seven bullets, TI1, TI2, TI3 and the shortcut box. All present and correct.
+- Change: the cos 2θ display line (about 47 characters) split into two aligned rows. The TI1 display lines (about 41) split into two rows each, for phone width.
+- Change: the existing check box said tan(A ± B) needs "tan A tan B ≠ ±1 as the case may be"; it now says ≠ 1 for A + B and ≠ −1 for A − B.
+- Added `! check | Condition added` after TI2: the identity holds only where cos A + cos 3A = 2 cos 2A cos A ≠ 0, i.e. cos A ≠ 0 and cos 2A ≠ 0 (the factor 2 cos A is cancelled).
+- Change: the check box after the shortcut said the tan identity needs "no angle equal to π/2"; for real A, B, C with A + B + C = π it needs no angle an odd multiple of π/2 (and the cot identity no angle a multiple of π). Reworded.
+- Additions (half angles, a sin x + b cos x = √(a² + b²) sin(x + α), Examples 1 to 3, cards): correct.
+
+### tp-09-03 (Trigonometric equations)
+- Checked against PDF pages 102 and 103: the table of general solutions, TE1, TE2. All present and correct. The check box (α in the last row, |c| ≤ √(a² + b²), tan α defined) is correct.
+- Change: TE1, the inline chain (about 57 characters) is now a three-row display. TE2, the display line (about 38) split at ⇒ into two rows.
+- Additions (why (−1)ⁿ, principal solution, Examples 1 to 3; the roots of sin 3θ + sin θ were also found by a sign scan: only multiples of π/2): correct.
+
+### tp-09-04 (Inverse circular functions)
+- Checked against PDF pages 103 to 105: table of principal ranges, eight bullets, the box "Why the ranges are restricted", six graphs with captions, IT0, IT1, IT2, shortcut. All present and correct. The check box (domains of the three π/2 sums; tan⁻¹ sum for xy > 1) is correct.
+- Change: removed the blank line between the table and the bullets, so the eight bullets are inside the note box, as in the PDF.
+- Change: the bullet sin⁻¹x + cos⁻¹x = tan⁻¹x + cot⁻¹x = sec⁻¹x + cosec⁻¹x = π/2 (about 46 characters inline) is now two inline formulas.
+- Additions (sin⁻¹(sin θ) = π − θ on [π/2, 3π/2], domains, Examples 1 to 3 including the rejected root x = −1, cards): correct.
+
+### tp-09-05 (Properties and solution of triangles)
+- Checked against PDF pages 105 to 107: notation box, three figures with captions, rules box, radii box with relations, TR1, TR2, the add-on table and the ambiguous case. All present and correct. Both check boxes (O and I in Euler's formula; A right or obtuse) are correct.
+- Change: removed the blank line between the add-on table and "Ambiguous case ...", so that paragraph is inside the green box, as in the PDF.
+- Change: recap line with the area formulas (about 37 characters inline) split into two formulas.
+- Additions (sine rule and circumcircle, Δ = rs, Examples 1 to 3, cards): correct.
+
+### tp-09-06 (Heights and distances)
+- Checked against PDF pages 107 and 108: figure, the box with the two-position formula, HD1, shortcut. All present and correct. The first check box (level ground, B between A and the foot) is correct.
+- Change: the second check box said h = √(ab) "is for two points on the same side of the tower". The result h² = ab only needs a and b to be the distances from the foot; it holds for points on opposite sides too. Reworded so it says what a and b are and drops the false restriction.
+- Additions (where the formula comes from, depression = elevation, Examples 1 to 3, cards): correct.
+
+### Figures
+All twelve figures rendered (`fig-*.png`) and checked: unit-circle (P, sin θ, cos θ, ASTC labels), sin-cos (zeros and extremes at the right multiples of π/2), the six inverse-function figures (dark piece on [−π/2, π/2], [0, π], (−π/2, π/2); inverse graphs with the right ranges and asymptotes), tri-circum (O is equidistant from A, B, C: 59.0), tri-in (I is the incentre, distance 34.6 to all three sides), tri-ex (I₁ is the excentre opposite A; distances to BC and to AB, AC produced are 57.1 against a drawn radius 57.2, half a pixel, invisible), heights (α at A, β at B, d = AB, h, right angle at the foot). No figure problem.
+
+### Placement
+TGT: 9.1 to 9.5 are in Unit 7 (Trigonometry), 9.6 in Unit 8, which in the official TGT syllabus is where "Heights and distances" stands (under Complex Numbers). PGT: all six in Unit 10 (Trigonometry), in the order of the syllabus (equations, triangles, inverse functions, heights). The `key` lines describe the pages. No change suggested.
+
+### Left for the owner
+- The pages (here: "*one–one and onto*" in tp-09-04 and "*ambiguous case*" in tp-09-05, and many other chapters) use single asterisks for italics. `fmt` in app.js (line 2263) only turns `**…**` into bold, so these asterisks are shown as they are. Either teach `fmt` italics or drop the single asterisks site-wide.
+
+## Chapters 8 and 9, after the checks (22 November 2026)
+
+- `clairaut.svg`: the label moved below the plot, so that nothing covers the parabola.
+- Single-asterisk italics (`*…*`) used to show their asterisks on every notes page (19 places in the maths notes). `fmt` in `app.js` now turns them into italics, but only outside formulas, so stars inside `$…$` such as $T^*$ stay as they are (checked on the CSIR NET page with twelve such formulas).
+- Phone width: 22 display formulas of 8.2, 8.4 and 9.1 to 9.6 were still wider than a 375-pixel screen. They were split into one step per line; a script compared every display formula with the checked text, ignoring line breaks, alignment marks and spacing: no difference. In the browser at 375 pixels all 11 pages render with no KaTeX error and nothing wider than the screen.

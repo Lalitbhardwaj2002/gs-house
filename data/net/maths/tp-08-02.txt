@@ -1,0 +1,106 @@
+@en
+# First order, first degree equations
+
+> Every first-order, first-degree equation $M\,dx + N\,dy = 0$ is solved by recognising its type: separable, homogeneous, linear, exact, or one that an integrating factor makes exact. Bernoulli and "linear-fraction" equations reduce to these.
+
+## The four types and the integrating factors
+
+! note | First order, first degree equations
+- **(1) Variables separable**: $f(x)\,dx = g(y)\,dy$; integrate both sides. Remember $\int \frac{f'}{f} = \log\lvert f \rvert$.
+- **(2) Homogeneous**: $\frac{dy}{dx} = F(x, y)$ with $F(\lambda x, \lambda y) = F(x, y)$. Put $y = vx$, $\frac{dy}{dx} = v + x\frac{dv}{dx}$ (or $x = vy$ when $\frac{dx}{dy}$ is simpler).
+- **(3) Linear**: $\frac{dy}{dx} + Py = Q$ ($P, Q$ functions of $x$). Integrating factor $\text{IF} = e^{\int P\,dx}$; solution $y \cdot \text{IF} = \int Q \cdot \text{IF}\,dx + C$. Similarly $\frac{dx}{dy} + P(y)x = Q(y)$ with $\text{IF} = e^{\int P\,dy}$.
+- **(4) Exact**: $M\,dx + N\,dy = 0$ with $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$. Solution: $\int M\,dx$ (treating $y$ as constant) $+ \int$(terms of $N$ not containing $x$)$\,dy = C$.
+**Integrating factors** when $M\,dx + N\,dy = 0$ is not exact:
+- homogeneous and $Mx + Ny \neq 0$: $\text{IF} = \frac{1}{Mx + Ny}$;
+- of the form $f_1(xy)\,y\,dx + f_2(xy)\,x\,dy = 0$ and $Mx - Ny \neq 0$: $\text{IF} = \frac{1}{Mx - Ny}$;
+- $\frac{1}{N}\left(\frac{\partial M}{\partial y} - \frac{\partial N}{\partial x}\right) = f(x)$: $\text{IF} = e^{\int f(x)\,dx}$;
+- $\frac{1}{M}\left(\frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}\right) = f(y)$: $\text{IF} = e^{\int f(y)\,dy}$.
+
+! check | Conditions added
+The exactness test and the rule for the solution need $M$, $N$ and their first partial derivatives continuous on a rectangle (or any simply connected region). Dividing by a factor such as $(1 - e^x)\tan y$ to separate the variables can lose the curves where that factor is zero: in FO1, $\tan y = 0$ is kept (it is the case $C = 0$), but the line $x = 0$ also satisfies the equation and is not of the form $\tan y = C(1 - e^x)$.
+
+! example | Question FO1 — from the notes (separable)
+Solve $e^x\tan y\,dx + (1 - e^x)\sec^2 y\,dy = 0$.
+**Solution.** Divide by $(1 - e^x)\tan y$: $\frac{\sec^2 y}{\tan y}\,dy = \frac{-e^x}{1 - e^x}\,dx$. Integrate: $\log\lvert \tan y \rvert = \log\lvert 1 - e^x \rvert + \log C$, so $\boxed{\tan y = C(1 - e^x)}$.
+
+! example | Question FO2 — from the notes (homogeneous)
+Solve $2ye^{x/y}\,dx + \left(y - 2xe^{x/y}\right)dy = 0$, given $y(0) = 1$.
+**Solution.** $\frac{dx}{dy} = \frac{2xe^{x/y} - y}{2ye^{x/y}}$; put $x = vy$:
+$$\begin{aligned} &v + y\frac{dv}{dy} = v - \frac{1}{2e^v} \\ &\Rightarrow 2e^v\,dv = -\frac{dy}{y}. \end{aligned}$$
+$2e^{x/y} = -\log\lvert y \rvert + C$; at $x = 0$, $y = 1$: $C = 2$. $\boxed{2e^{x/y} + \log\lvert y \rvert = 2}$.
+
+! example | Question FO3 — from the notes (linear)
+Solve $\frac{dy}{dx} - y = \cos x$.
+**Solution.** $P = -1$, $\text{IF} = e^{-x}$.
+$$\begin{aligned} &ye^{-x} = \int e^{-x}\cos x\,dx \\ &= \frac{e^{-x}(\sin x - \cos x)}{2} + C, \end{aligned}$$
+so $\boxed{y = \frac{\sin x - \cos x}{2} + Ce^x}$.
+
+! example | Question FO4 — from the notes (IF for homogeneous)
+Solve $x^2y\,dx - (x^3 + y^3)\,dy = 0$.
+**Solution.** Homogeneous with $Mx + Ny = x^3y - x^3y - y^4 = -y^4$; $\text{IF} = -\frac{1}{y^4}$:
+$$\begin{aligned} &-\frac{x^2}{y^3}\,dx + \left(\frac{x^3}{y^4} + \frac{1}{y}\right)dy \\ &= 0 \ \text{(exact)}. \end{aligned}$$
+Solution: $-\frac{x^3}{3y^3} + \log y = C$, i.e. $\boxed{y = c\,e^{x^3/3y^3}}$.
+
+! example | Question FO5 — from the notes (IF $\frac{1}{Mx - Ny}$)
+Solve $(xy^2 + 2x^2y^3)\,dx + (x^2y - x^3y^2)\,dy = 0$.
+**Solution.** Form $y(xy + 2x^2y^2)\,dx + x(xy - x^2y^2)\,dy = 0$; $Mx - Ny = 3x^3y^3$, $\text{IF} = \frac{1}{3x^3y^3}$. Then
+$$\begin{aligned} &\left(\frac{1}{3x^2y} + \frac{2}{3x}\right)dx \\ &\quad + \left(\frac{1}{3xy^2} - \frac{1}{3y}\right)dy = 0 \end{aligned}$$
+is exact: $-\frac{1}{3xy} + \frac{2}{3}\log x - \frac{1}{3}\log y = C$, i.e. $\boxed{x^2 = Cy\,e^{1/xy}}$.
+
+! example | Question FO6 — from the notes (IF in $x$)
+Find an integrating factor of $\left(y + \frac{y^3}{3} + \frac{x^2}{2}\right)dx + \frac{1}{4}(x + xy^2)\,dy = 0$.
+**Solution.** $M_y = 1 + y^2$, $N_x = \frac{1}{4}(1 + y^2)$;
+$$\begin{aligned} &\frac{1}{N}(M_y - N_x) = \frac{\frac{3}{4}(1 + y^2)}{\frac{1}{4}x(1 + y^2)} \\ &= \frac{3}{x}. \end{aligned}$$
+$\text{IF} = e^{\int \frac{3}{x}\,dx} = \boxed{x^3}$. (Then the equation is exact: $\frac{x^4}{4}\left(y + \frac{y^3}{3}\right) + \frac{x^6}{12} = C$.)
+
+! addon | Bernoulli and reducible forms
+- **Bernoulli** $\frac{dy}{dx} + Py = Qy^n$: divide by $y^n$ and put $z = y^{1-n}$, giving the linear equation $\frac{dz}{dx} + (1 - n)Pz = (1 - n)Q$.
+- $\frac{dy}{dx} = \frac{a_1x + b_1y + c_1}{a_2x + b_2y + c_2}$: if $\frac{a_1}{a_2} \neq \frac{b_1}{b_2}$, shift the origin to the intersection of the two lines; if equal, put $z = a_1x + b_1y$.
+- Exact combinations: $x\,dy + y\,dx = d(xy)$; $\frac{x\,dy - y\,dx}{x^2} = d\left(\frac{y}{x}\right)$; $\frac{x\,dy - y\,dx}{x^2 + y^2} = d\left(\tan^{-1}\frac{y}{x}\right)$.
+
+! check | A condition added
+Bernoulli's substitution needs $n \neq 0, 1$ (for $n = 0$ or $1$ the equation is already linear). Dividing by $y^n$ drops the solution $y = 0$ when $n > 0$.
+
+! example | Question FO7 — standard (Bernoulli)
+Solve $\frac{dy}{dx} + \frac{y}{x} = x^2y^2$.
+**Solution.** Divide by $y^2$: $y^{-2}y' + \frac{1}{x}y^{-1} = x^2$. Put $z = y^{-1}$, $z' = -y^{-2}y'$: $z' - \frac{z}{x} = -x^2$. IF $= \frac{1}{x}$: $\frac{z}{x} = -\int x\,dx = -\frac{x^2}{2} + C$. So $\boxed{\frac{1}{xy} = -\frac{x^2}{2} + C}$.
+
+! trick | Shortcut / time-saver
+Check the type in this order: separable $\to$ homogeneous $\to$ linear (in $y$ or in $x$) $\to$ Bernoulli $\to$ exact $\to$ integrating-factor rules. In MCQs, differentiate the options and substitute — usually faster than solving.
+
+## What it means
+
+- **Why the integrating factor works** for $y' + Py = Q$: multiplying by $e^{\int P}$ turns the left side into $\frac{d}{dx}\left(ye^{\int P}\right)$, which is then integrated directly.
+- **Homogeneous** means every term has the same total degree (in $M\,dx + N\,dy$, $M$ and $N$ homogeneous of the same degree); then $y = vx$ separates the variables.
+- **Exact** means $M\,dx + N\,dy$ is the differential $d\phi$ of some $\phi(x, y)$; the solution is $\phi = C$.
+- **Linear in $x$**: when $y$ appears awkwardly (as in $y^2$ or $e^y$) but $x$ appears only to the first power, treat $x$ as the unknown and use $\frac{dx}{dy} + P(y)x = Q(y)$.
+
+! example | Example 1 — linear in $x$
+Solve $(x + y^2)\,dy = y\,dx$ ($y > 0$).
+**Solution.** $\frac{dx}{dy} - \frac{x}{y} = y$. IF $= e^{-\int dy/y} = \frac{1}{y}$: $\frac{x}{y} = \int 1\,dy = y + C$, so $\boxed{x = y^2 + Cy}$.
+
+! example | Example 2 — an exact equation
+Solve $(2xy + 3)\,dx + (x^2 + 4y)\,dy = 0$.
+**Solution.** $M_y = 2x = N_x$: exact. $\int M\,dx = x^2y + 3x$; the term of $N$ free of $x$ is $4y$, giving $2y^2$. Solution: $\boxed{x^2y + 3x + 2y^2 = C}$.
+
+! example | Example 3 — homogeneous
+Solve $\frac{dy}{dx} = \frac{x + y}{x}$.
+**Solution.** $y = vx$: $v + xv' = 1 + v$, so $v' = \frac{1}{x}$, $v = \log\lvert x \rvert + C$: $\boxed{y = x\log\lvert x \rvert + Cx}$.
+
+? Integrating factor of $\frac{dy}{dx} + Py = Q$? :: $e^{\int P\,dx}$.
+? Test for exactness of $M\,dx + N\,dy = 0$? :: $\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}$.
+? Substitution for the Bernoulli equation $y' + Py = Qy^n$? :: $z = y^{1-n}$; the equation becomes linear in $z$.
+? Integrating factor of a homogeneous equation with $Mx + Ny \neq 0$? :: $\frac{1}{Mx + Ny}$.
+
+! exam | What the exam asks
+- Recognising the type and solving: separable, homogeneous, linear, Bernoulli, exact.
+- Integrating factors by the four rules.
+- Initial-value problems and "which function satisfies…" MCQs.
+
+! recap | One-minute revision
+- Linear: $y \cdot \text{IF} = \int Q \cdot \text{IF}\,dx + C$, $\text{IF} = e^{\int P\,dx}$.
+- Homogeneous: $y = vx$. Bernoulli: $z = y^{1-n}$.
+- Exact if $M_y = N_x$; otherwise try $\frac{1}{Mx + Ny}$, $\frac{1}{Mx - Ny}$, $e^{\int f(x)dx}$, $e^{\int f(y)dy}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 8 (the full PDF is linked on the subject page)
+& M. D. Raisinghania, Ordinary and Partial Differential Equations, chapters 1 and 2

@@ -1,0 +1,70 @@
+@en
+# Order, degree and formation
+
+> A differential equation (DE) links a function with its derivatives. Its order and degree classify it; forming the DE of a family of curves means eliminating the arbitrary constants by differentiating.
+
+## Order, degree, formation
+
+! note | Order, degree and formation
+- **Order**: the order of the highest derivative present.
+- **Degree**: the power of the highest-order derivative, after the equation is made free of radicals and fractions in the derivatives (a polynomial in the derivatives). If that is impossible (e.g. $\sin y'$ appears), the degree is not defined.
+- **Formation**: a family with $n$ arbitrary constants is differentiated $n$ times and the constants eliminated; the DE has order $n$.
+- A **solution** is a function satisfying the equation; the **general solution** has as many arbitrary constants as the order.
+
+! check | Conditions added
+"Order $n$" needs the $n$ constants to be **independent** (essential): $y = (a + b)x$ has two letters but only one essential constant, $c = a + b$, and gives the first-order DE $xy' = y$. The shortcut below says the same.
+
+! example | Question OD1 — from the notes
+State the order and degree of (a) $(y''')^3 + 2(y'')^2 - y' + y = 0$, (b) $(y')^2 + y' - \sin^2 y = 0$, (c) $y' + \sin(y') = 0$.
+**Solution.** (a) order 3, degree 3. (b) order 1, degree 2. (c) order 1, degree **not defined**.
+
+! example | Question OD2 — from the notes
+Verify that $y = e^{-3x}$ is a solution of $y'' + y' - 6y = 0$.
+**Solution.** $y' = -3e^{-3x}$, $y'' = 9e^{-3x}$: $9e^{-3x} - 3e^{-3x} - 6e^{-3x} = 0$ ✓.
+
+! example | Question OD3 — from the notes (formation)
+Form the DE of (a) $y = mx$; (b) $y = a\sin(x + b)$; (c) ellipses $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$; (d) circles touching the $x$-axis at the origin.
+**Solution.** (a) $y' = m = \frac{y}{x} \Rightarrow \boxed{xy' - y = 0}$. (b) $y'' = -a\sin(x + b) = -y \Rightarrow \boxed{y'' + y = 0}$. (c) $\frac{2x}{a^2} + \frac{2yy'}{b^2} = 0 \Rightarrow \frac{yy'}{x} = -\frac{b^2}{a^2}$; differentiate again:
+$$\boxed{xyy'' + x(y')^2 - yy' = 0}.$$
+(d) $x^2 + y^2 = 2ay$: $2x + 2yy' = 2ay'$, eliminate $a = \frac{x^2 + y^2}{2y}$:
+$$\boxed{y' = \frac{2xy}{x^2 - y^2}}.$$
+
+! trick | Shortcut / time-saver
+Order of the DE of a family = number of *independent* constants: all circles in a plane $\to 3$; all lines $\to 2$ ($y'' = 0$); circles through the origin with centre on the $x$-axis $\to 1$.
+
+## What it means
+
+- **Order** answers "how many times differentiated?"; **degree** answers "to what power does the top derivative appear?", but only once the equation is a polynomial in $y', y'', \ldots$ Remove square roots and fractional powers first: $y' = \sqrt{1 + (y'')^2}$ squares to $(y')^2 = 1 + (y'')^2$, order 2, degree 2.
+- Functions of $y$ or $x$ alone ($\sin y$, $e^x$) do not affect the degree; only the derivatives must appear as a polynomial. So $(y')^2 + y' - \sin^2 y = 0$ has degree 2, while $\sin(y')$ or $e^{y'}$ makes the degree undefined.
+- **Why order = number of constants**: each differentiation gives one more equation; with $n$ constants you need the original equation and $n$ derivatives to eliminate all of them.
+- A **particular solution** fixes the constants (by initial conditions); a **singular solution** (PGT, see 8.3) satisfies the DE but is not of the general form.
+
+! example | Example 1 — a square root removed first
+Find the order and degree of $\left(1 + (y')^2\right)^{3/2} = \rho\,y''$ ($\rho$ a constant).
+**Solution.** Square: $\left(1 + (y')^2\right)^3 = \rho^2(y'')^2$. Order $\boxed{2}$, degree $\boxed{2}$.
+
+! example | Example 2 — the family $y = Ae^{2x} + Be^{-2x}$
+Form its differential equation.
+**Solution.** $y' = 2Ae^{2x} - 2Be^{-2x}$, $y'' = 4Ae^{2x} + 4Be^{-2x} = 4y$. So $\boxed{y'' - 4y = 0}$ (two constants, order 2).
+
+! example | Example 3 — parabolas with axis along the $x$-axis and vertex at the origin
+Form the DE of $y^2 = 4ax$.
+**Solution.** $2yy' = 4a = \frac{y^2}{x}$, so $\boxed{2xy' - y = 0}$ (order 1).
+
+? What is the degree of $y'' + \sin(y') = 0$? :: Not defined: $\sin(y')$ is not a polynomial in $y'$.
+? Order of the DE of all circles in a plane? :: 3 (centre $h$, $k$ and radius $r$).
+? Order and degree of $(y''')^2 + (y'')^3 + y = 0$? :: Order 3, degree 2.
+? How many arbitrary constants has the general solution of a third-order DE? :: Three.
+
+! exam | What the exam asks
+- Order and degree of a given equation, with radicals or $\sin y'$ traps.
+- Forming the DE of a family (lines, circles, parabolas, ellipses, exponentials).
+- Checking that a given function solves a DE.
+
+! recap | One-minute revision
+- Order = highest derivative; degree = its power once the DE is a polynomial in the derivatives.
+- $n$ independent constants $\Rightarrow$ order $n$.
+- $\sin y'$, $e^{y'}$, $\log y'$: degree not defined.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 8 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 12, Part II, chapter 9 (Differential equations)

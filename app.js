@@ -1669,8 +1669,8 @@ function renderHome() {
 // its own official syllabus (data/net/tgt-mathematics.json, data/net/pgt-mathematics.json). The notes
 // themselves are shared (data/net/maths/); the full notes PDF is sold by email (below). English only.
 const MATHS_SUBJECTS = [
-  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapters 1 to 7 notes ready' },
-  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapters 1 to 7 notes ready' },
+  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapters 1 to 9 notes ready' },
+  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapters 1 to 9 notes ready' },
 ];
 function mathsHTML() {
   const doors = MATHS_SUBJECTS.map((s) => `
@@ -2260,7 +2260,11 @@ function parseNotes(text) {
 }
 
 // `==text==` in the notes files once drew a highlighter stroke; the owner asked for it to go, so it is plain text now.
-const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/==(.+?)==/g, '$1');
+// `*text*` is italic, but only outside formulas: a star inside $…$ ($T^*$, $\mathbb{R}^*$) belongs to the maths.
+const ITALIC = /(^|[^*\w])\*(?=\S)([^*]*?\S)\*(?![*\w])/g;
+const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+  .split(/(\$\$[\s\S]*?\$\$|\$[^$]*\$)/).map((part, i) => (i % 2 ? part : part.replace(ITALIC, '$1<em>$2</em>'))).join('')
+  .replace(/==(.+?)==/g, '$1');
 const BOX_ICON = { remember: '📌', trick: '🧠', exam: '🔥', recap: '⚡', note: '📘', addon: '➕', example: '✏️', check: '⚠️' };
 // One reference: a name, and a link if the line gave an https address.
 const refItem = ([text, url]) => `<li>${url && /^https:\/\//.test(url) ? `<a href="${esc(url)}" target="_blank" rel="noopener">${fmt(text)}</a>` : fmt(text)}</li>`;

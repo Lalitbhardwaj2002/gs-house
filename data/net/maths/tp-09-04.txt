@@ -1,0 +1,91 @@
+@en
+# Inverse circular functions
+
+> $\sin^{-1}x$, $\cos^{-1}x$, $\tan^{-1}x$, … are inverses of one-one pieces of the trigonometric functions, so each has a fixed principal range. Most questions are about those ranges and the addition formulas, with conditions on $x$ and $y$.
+
+## Principal ranges and properties
+
+! note | Principal ranges and properties
+| Function | Principal range |
+| $\sin^{-1}x$, $\operatorname{cosec}^{-1}x$ | $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$ ($\operatorname{cosec}^{-1}$: excluding $0$) |
+| $\cos^{-1}x$, $\sec^{-1}x$ | $[0, \pi]$ ($\sec^{-1}$: excluding $\frac{\pi}{2}$) |
+| $\tan^{-1}x$ | $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ |
+| $\cot^{-1}x$ | $(0, \pi)$ |
+- $\sin^{-1}\frac{1}{x} = \operatorname{cosec}^{-1}x$, $\cos^{-1}\frac{1}{x} = \sec^{-1}x$ ($\lvert x \rvert \geq 1$); $\tan^{-1}\frac{1}{x} = \cot^{-1}x$ only for $x > 0$ (e.g. $\tan^{-1}(-\sqrt{3}) \neq \cot^{-1}\left(-\frac{1}{\sqrt{3}}\right)$).
+- Odd: $\sin^{-1}(-x) = -\sin^{-1}x$, $\tan^{-1}(-x) = -\tan^{-1}x$, $\operatorname{cosec}^{-1}(-x) = -\operatorname{cosec}^{-1}x$.
+- Supplementary: $\cos^{-1}(-x) = \pi - \cos^{-1}x$, $\sec^{-1}(-x) = \pi - \sec^{-1}x$, $\cot^{-1}(-x) = \pi - \cot^{-1}x$.
+- $\sin^{-1}x + \cos^{-1}x = \tan^{-1}x + \cot^{-1}x$ $= \sec^{-1}x + \operatorname{cosec}^{-1}x = \frac{\pi}{2}$.
+- $\tan^{-1}x + \tan^{-1}y = \tan^{-1}\frac{x + y}{1 - xy}$ ($xy < 1$); $\tan^{-1}x - \tan^{-1}y = \tan^{-1}\frac{x - y}{1 + xy}$ ($xy > -1$).
+- $2\tan^{-1}x = \tan^{-1}\frac{2x}{1 - x^2}$ ($\lvert x \rvert < 1$) $= \sin^{-1}\frac{2x}{1 + x^2}$ ($\lvert x \rvert \leq 1$) $= \cos^{-1}\frac{1 - x^2}{1 + x^2}$ ($x \geq 0$).
+- $3\sin^{-1}x = \sin^{-1}(3x - 4x^3)$ for $-\frac{1}{2} \leq x \leq \frac{1}{2}$; $3\tan^{-1}x = \tan^{-1}\frac{3x - x^3}{1 - 3x^2}$ for $\lvert x \rvert < \frac{1}{\sqrt{3}}$.
+- $\sin^{-1}x = \cos^{-1}\sqrt{1 - x^2} = \tan^{-1}\frac{x}{\sqrt{1 - x^2}}$ ($0 \leq x < 1$).
+
+! check | Conditions added
+Each of the three sums equal to $\frac{\pi}{2}$ holds on its own domain: $\sin^{-1}x + \cos^{-1}x$ for $\lvert x \rvert \leq 1$, $\tan^{-1}x + \cot^{-1}x$ for every real $x$, $\sec^{-1}x + \operatorname{cosec}^{-1}x$ for $\lvert x \rvert \geq 1$. For $xy > 1$ the sum formula changes: $\tan^{-1}x + \tan^{-1}y = \pi + \tan^{-1}\frac{x + y}{1 - xy}$ when $x, y > 0$, and $-\pi + \tan^{-1}\frac{x + y}{1 - xy}$ when $x, y < 0$.
+
+## Why the ranges are restricted
+
+! note | Why the ranges are restricted — graphs
+$\sin x$, $\cos x$, $\tan x$ are not one–one on $\mathbb{R}$ (each value repeats), so they have no inverse there. We take one piece of each graph on which the function is *one–one and onto* $[-1, 1]$ (or $\mathbb{R}$) — a **bijective** piece — and invert only that piece. That piece (drawn **dark** below) is the principal branch; reflecting it in the line $y = x$ gives the graph of the inverse function.
+
+^ data/net/maths/fig/inv-sin-piece.svg | $y = \sin x$: bijective on $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$
+^ data/net/maths/fig/inv-asin.svg | $y = \sin^{-1}x$, range $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$
+^ data/net/maths/fig/inv-cos-piece.svg | $y = \cos x$: bijective on $[0, \pi]$
+^ data/net/maths/fig/inv-acos.svg | $y = \cos^{-1}x$, range $[0, \pi]$
+^ data/net/maths/fig/inv-tan-piece.svg | $y = \tan x$: bijective on $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$
+^ data/net/maths/fig/inv-atan.svg | $y = \tan^{-1}x$, range $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$
+
+! example | Question IT0 — why $\tan^{-1}(-\sqrt{3}) \neq \cot^{-1}\left(-\frac{1}{\sqrt{3}}\right)$
+The notes say $\tan^{-1}\frac{1}{x} = \cot^{-1}x$ only for $x > 0$. Explain with $x = -\frac{1}{\sqrt{3}}$.
+**Solution.** $\tan^{-1}$ takes values in $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, so $\tan^{-1}(-\sqrt{3}) = \boxed{-\frac{\pi}{3}}$. $\cot^{-1}$ takes values in $(0, \pi)$, so
+$$\begin{aligned} &\cot^{-1}\left(-\frac{1}{\sqrt{3}}\right) \\ &= \pi - \cot^{-1}\frac{1}{\sqrt{3}} \\ &= \pi - \frac{\pi}{3} = \boxed{\frac{2\pi}{3}}. \end{aligned}$$
+Both angles have the same tan/cot value, but they differ by $\pi$ because the two principal ranges are different. In general, for $x < 0$: $\tan^{-1}\frac{1}{x} = \cot^{-1}x - \pi$.
+
+! example | Question IT1 — standard
+Prove that $\tan^{-1}\frac{1}{2} + \tan^{-1}\frac{1}{3} = \frac{\pi}{4}$.
+**Solution.**
+$$\begin{aligned} &\tan^{-1}\frac{\frac{1}{2} + \frac{1}{3}}{1 - \frac{1}{6}} \\ &= \tan^{-1}\frac{5/6}{5/6} \\ &= \tan^{-1}1 = \frac{\pi}{4}. \end{aligned}$$
+
+! example | Question IT2 — standard
+Find $\sin^{-1}\left(\sin\frac{2\pi}{3}\right)$ and $\cos\left(\sin^{-1}\frac{3}{5}\right)$.
+**Solution.** $\frac{2\pi}{3} \notin \left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$; $\sin\frac{2\pi}{3} = \sin\frac{\pi}{3}$, so the value is $\boxed{\frac{\pi}{3}}$. $\cos\left(\sin^{-1}\frac{3}{5}\right) = \sqrt{1 - \frac{9}{25}} = \boxed{\frac{4}{5}}$.
+
+! trick | Shortcut / time-saver
+$\tan^{-1}1 + \tan^{-1}2 + \tan^{-1}3 = \pi$; $\tan^{-1}\frac{1}{2} + \tan^{-1}\frac{1}{5} + \tan^{-1}\frac{1}{8} = \frac{\pi}{4}$. $\sin(\cos^{-1}x) = \cos(\sin^{-1}x) = \sqrt{1 - x^2}$.
+
+## What it means
+
+- **$\sin^{-1}(\sin\theta) = \theta$ only on the principal range.** Outside it, find the angle of the principal range with the same sine: $\sin^{-1}(\sin\theta) = \pi - \theta$ for $\theta \in \left[\frac{\pi}{2}, \frac{3\pi}{2}\right]$. But $\sin(\sin^{-1}x) = x$ for every $x \in [-1, 1]$.
+- **Domains**: $\sin^{-1}$ and $\cos^{-1}$ need $\lvert x \rvert \leq 1$; $\sec^{-1}$ and $\operatorname{cosec}^{-1}$ need $\lvert x \rvert \geq 1$; $\tan^{-1}$ and $\cot^{-1}$ accept every real $x$.
+- **A triangle helps**: for $\theta = \sin^{-1}\frac{3}{5}$ draw a right triangle with opposite side 3 and hypotenuse 5; the adjacent side is 4, so $\cos\theta = \frac{4}{5}$, $\tan\theta = \frac{3}{4}$.
+
+! example | Example 1 — outside the principal range
+Find $\cos^{-1}\left(\cos\frac{7\pi}{6}\right)$.
+**Solution.** $\frac{7\pi}{6} \notin [0, \pi]$; $\cos\frac{7\pi}{6} = \cos\left(2\pi - \frac{7\pi}{6}\right) = \cos\frac{5\pi}{6}$, and $\frac{5\pi}{6} \in [0, \pi]$: $\boxed{\frac{5\pi}{6}}$.
+
+! example | Example 2 — a double angle
+Prove $2\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{7} = \frac{\pi}{4}$.
+**Solution.** $2\tan^{-1}\frac{1}{3} = \tan^{-1}\frac{2/3}{1 - 1/9} = \tan^{-1}\frac{3}{4}$. Then
+$$\begin{aligned} &\tan^{-1}\frac{3}{4} + \tan^{-1}\frac{1}{7} \\ &= \tan^{-1}\frac{\frac{3}{4} + \frac{1}{7}}{1 - \frac{3}{28}} \\ &= \tan^{-1}1 = \frac{\pi}{4}. \end{aligned}$$
+
+! example | Example 3 — an equation
+Solve $\tan^{-1}2x + \tan^{-1}3x = \frac{\pi}{4}$.
+**Solution.** $\frac{5x}{1 - 6x^2} = 1 \Rightarrow 6x^2 + 5x - 1 = 0 \Rightarrow x = \frac{1}{6}$ or $x = -1$. For $x = -1$ both terms are negative, so their sum cannot be $\frac{\pi}{4}$ (and $xy = 6 > 1$). Answer: $\boxed{x = \frac{1}{6}}$.
+
+? Principal range of $\cot^{-1}x$? :: $(0, \pi)$.
+? $\cos^{-1}(-x)$ in terms of $\cos^{-1}x$? :: $\pi - \cos^{-1}x$.
+? $\tan^{-1}x + \tan^{-1}y$ for $xy < 1$? :: $\tan^{-1}\frac{x + y}{1 - xy}$.
+? $\sin^{-1}\left(\sin\frac{5\pi}{6}\right)$? :: $\frac{\pi}{6}$.
+
+! exam | What the exam asks
+- Principal values, including $\sin^{-1}(\sin\theta)$ and $\cos^{-1}(\cos\theta)$ outside the principal range.
+- Sums of $\tan^{-1}$ values; $2\tan^{-1}x$ and $3\sin^{-1}x$ formulas with their conditions.
+- Equations in inverse functions (reject roots that break the range).
+
+! recap | One-minute revision
+- Ranges: $\sin^{-1}$ $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, $\cos^{-1}$ $[0, \pi]$, $\tan^{-1}$ $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, $\cot^{-1}$ $(0, \pi)$.
+- $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$; $\tan^{-1}x + \tan^{-1}y = \tan^{-1}\frac{x + y}{1 - xy}$ ($xy < 1$).
+- $\tan^{-1}\frac{1}{x} = \cot^{-1}x$ only for $x > 0$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 9 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 12, Part I, chapter 2 (Inverse trigonometric functions)

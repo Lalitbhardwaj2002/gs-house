@@ -1,0 +1,72 @@
+@en
+# Linear equations with constant coefficients (PGT)
+
+> A linear equation $f(D)y = X$ with constant coefficients has solution $y = \text{CF} + \text{PI}$: the complementary function solves $f(D)y = 0$ from the roots of the auxiliary equation, and the particular integral $\frac{1}{f(D)}X$ is found by short rules for $e^{ax}$, $\sin ax$, $\cos ax$, $x^m$ and $e^{ax}V$. Cauchy–Euler equations reduce to this case.
+
+## Complementary function and particular integral
+
+! addon | Linear equations with constant coefficients
+$f(D)y = X$ with $D = \frac{d}{dx}$. Solution $y$ = complementary function (CF) + particular integral (PI).
+**CF** from the auxiliary equation $f(m) = 0$: distinct real roots $m_1, m_2$: $c_1e^{m_1x} + c_2e^{m_2x}$; repeated root $m$: $(c_1 + c_2x)e^{mx}$; complex roots $\alpha \pm i\beta$: $e^{\alpha x}(c_1\cos\beta x + c_2\sin\beta x)$.
+**PI** $= \frac{1}{f(D)}X$:
+- $X = e^{ax}$: $\frac{e^{ax}}{f(a)}$; if $f(a) = 0$: $x\frac{e^{ax}}{f'(a)}$ (then $x^2\frac{e^{ax}}{f''(a)}$).
+- $X = \sin ax$ or $\cos ax$: put $D^2 = -a^2$; in the failing case $\frac{1}{D^2 + a^2}\sin ax = -\frac{x}{2a}\cos ax$, $\frac{1}{D^2 + a^2}\cos ax = \frac{x}{2a}\sin ax$.
+- $X = x^m$: expand $[f(D)]^{-1}$ in powers of $D$ up to $D^m$.
+- $X = e^{ax}V$: $\frac{1}{f(D)}e^{ax}V = e^{ax}\frac{1}{f(D + a)}V$.
+**Cauchy–Euler** $x^2y'' + axy' + by = X$: put $x = e^z$, $xD = \theta$, $x^2D^2 = \theta(\theta - 1)$.
+
+! check | Conditions added
+The rule "put $D^2 = -a^2$" applies when $f(D)$ is a function of $D^2$ (or can be made one, e.g. by multiplying the denominator by its conjugate) and the result is not $0$. The rule $x\frac{e^{ax}}{f'(a)}$ needs $f'(a) \neq 0$ (if $f'(a) = 0$ too, use $x^2\frac{e^{ax}}{f''(a)}$). The rule for $x^m$ needs $f(0) \neq 0$; otherwise write $f(D) = D^kg(D)$ with $g(0) \neq 0$, expand $\frac{1}{g(D)}$, then integrate $k$ times. The Cauchy–Euler substitution $x = e^z$ is for $x > 0$ (use $x = -e^z$ for $x < 0$), with $\theta = \frac{d}{dz}$.
+
+! example | Question CC1 — standard
+Solve (a) $y'' - 3y' + 2y = e^{3x}$; (b) $y'' + 4y = \sin 2x$; (c) $y'' - 4y' + 4y = 0$.
+**Solution.** (a) AE $m^2 - 3m + 2 = 0$, $m = 1, 2$: CF $c_1e^x + c_2e^{2x}$; PI $\frac{e^{3x}}{9 - 9 + 2} = \frac{e^{3x}}{2}$.
+$$\boxed{y = c_1e^x + c_2e^{2x} + \frac{1}{2}e^{3x}}.$$
+(b) $m = \pm 2i$: CF $c_1\cos 2x + c_2\sin 2x$; PI (failing case) $-\frac{x}{4}\cos 2x$.
+$$\begin{aligned} &\boxed{\begin{aligned} &y = c_1\cos 2x + c_2\sin 2x \\ &\quad - \frac{x}{4}\cos 2x \end{aligned}}. \end{aligned}$$
+(c) $m = 2, 2$: $\boxed{y = (c_1 + c_2x)e^{2x}}$.
+
+! example | Question CC2 — standard (Cauchy–Euler)
+Solve $x^2y'' - xy' + y = 0$.
+**Solution.** $x = e^z$: $[\theta(\theta - 1) - \theta + 1]y = 0 \Rightarrow (\theta - 1)^2y = 0$; $y = (c_1 + c_2z)e^z = \boxed{(c_1 + c_2\log x)x}$.
+
+! trick | Shortcut / time-saver
+Read the DE from a given solution: $y = (c_1 + c_2x)e^{2x}$ comes from $(D - 2)^2y = 0$, i.e. $y'' - 4y' + 4y = 0$; $y = c_1\cos 3x + c_2\sin 3x$ from $y'' + 9y = 0$.
+
+## What it means
+
+- **Why $e^{mx}$?** $D e^{mx} = me^{mx}$, so $f(D)e^{mx} = f(m)e^{mx}$, which is $0$ exactly when $f(m) = 0$: each root of the auxiliary equation gives a solution.
+- **Repeated root**: $x e^{mx}$ also solves $(D - m)^2y = 0$, which is where the factor $(c_1 + c_2x)$ comes from.
+- **CF + PI**: the CF holds the $n$ arbitrary constants (order $n$); the PI is any one solution of the full equation. Their sum is the general solution.
+- **Failing case**: when $f(a) = 0$ the input $e^{ax}$ already solves the homogeneous equation (resonance), so the answer picks up a factor $x$.
+
+! example | Example 1 — complex roots
+Solve $y'' + 2y' + 5y = 0$.
+**Solution.** $m^2 + 2m + 5 = 0$, $m = -1 \pm 2i$: $\boxed{y = e^{-x}(c_1\cos 2x + c_2\sin 2x)}$.
+
+! example | Example 2 — a polynomial on the right
+Solve $y'' + y = x^2$.
+**Solution.** CF $c_1\cos x + c_2\sin x$. PI $= (1 + D^2)^{-1}x^2 = (1 - D^2 + \cdots)x^2 = x^2 - 2$.
+$$\begin{aligned} &\boxed{\begin{aligned} &y = c_1\cos x + c_2\sin x \\ &\quad + x^2 - 2 \end{aligned}}. \end{aligned}$$
+
+! example | Example 3 — the shift rule $e^{ax}V$
+Find the PI of $(D - 1)^2y = xe^x$.
+**Solution.** $\frac{1}{(D - 1)^2}e^xx = e^x\frac{1}{D^2}x = \boxed{\frac{x^3}{6}e^x}$.
+
+? CF when the auxiliary equation has the repeated root $m$? :: $(c_1 + c_2x)e^{mx}$.
+? CF for roots $\alpha \pm i\beta$? :: $e^{\alpha x}(c_1\cos\beta x + c_2\sin\beta x)$.
+? PI of $\frac{1}{D^2 + a^2}\sin ax$? :: $-\frac{x}{2a}\cos ax$.
+? Substitution for a Cauchy–Euler equation? :: $x = e^z$, with $xD = \theta$ and $x^2D^2 = \theta(\theta - 1)$.
+
+! exam | What the exam asks
+- CF from the roots (real, repeated, complex); PI for $e^{ax}$, $\sin ax$, $x^m$, $e^{ax}V$, including the failing case.
+- Cauchy–Euler equations.
+- "Which DE has this solution?" MCQs.
+
+! recap | One-minute revision
+- Roots $m_1 \neq m_2$: $c_1e^{m_1x} + c_2e^{m_2x}$; repeated: $(c_1 + c_2x)e^{mx}$; $\alpha \pm i\beta$: $e^{\alpha x}(\ldots\cos\beta x + \ldots\sin\beta x)$.
+- PI: $e^{ax} \to \frac{e^{ax}}{f(a)}$ (else $\frac{xe^{ax}}{f'(a)}$); $\sin ax$: $D^2 \to -a^2$.
+- Cauchy–Euler: $x = e^z$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 8 (the full PDF is linked on the subject page)
+& M. D. Raisinghania, Ordinary and Partial Differential Equations, chapters 5 and 6
