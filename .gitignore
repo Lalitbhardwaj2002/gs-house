@@ -1,8 +1,8 @@
 # The reference books are copyrighted: keep them (and anything made from them) on your own computer.
 refs/
 *.pdf
-# One exception: the TGT / PGT maths notes PDF is the owner's own work, published at his request (22 November 2026).
-!data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf
+# The owner's own files kept out of the repository (the maths notes PDF, payment set-up).
+/private/
 __pycache__/
 # Unchecked drafts and checker work files never go public; only data/<id>.json (checked) does.
 data/draft/
