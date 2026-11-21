@@ -7,9 +7,9 @@
  "theme": "maths",
  "title": { "en": "PGT Mathematics" },
  "subtitle": { "en": "UPESSC PGT (Lecturer) · subject code 08 · topic-wise notes on the official 2026 syllabus" },
- "pdf": { "href": "data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf", "en": "Full notes PDF (218 pages)" },
+ "pdf": { "href": "data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf", "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapter 1 of the notes is ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 5 of the notes are ready; the other chapters are being added."
  },
  "units": [
   {
@@ -23,6 +23,21 @@
         "key": { "en": "Subsets and power set · laws of set algebra · De Morgan's laws · counting with Venn diagrams" } },
       { "id": "tp-01-02", "en": "1.2 Relations and functions",
         "key": { "en": "Equivalence relations and classes · one-one and onto functions · composition and inverse · binary operations" } }
+     ]
+    },
+    {
+     "en": "Matrices and determinants",
+     "chapters": [
+      { "id": "tp-02-01", "en": "2.1 Types of matrices and transpose",
+        "key": { "en": "Kinds of matrices · sums and products · transpose rules · symmetric and skew-symmetric parts" } },
+      { "id": "tp-02-03", "en": "2.3 Determinants",
+        "key": { "en": "Properties · minors and cofactors · adjoint · standard determinants · area of a triangle" } },
+      { "id": "tp-02-02", "en": "2.2 Inverse of a matrix",
+        "key": { "en": "Singular and non-singular · row operations · adjoint formula · solving equations by the inverse" } },
+      { "id": "tp-02-04", "en": "2.4 Rank and systems of linear equations",
+        "key": { "en": "Rank · consistency and number of solutions · Cramer's rule · homogeneous systems" } },
+      { "id": "tp-02-05", "en": "2.5 Eigenvalues and the Cayley–Hamilton theorem",
+        "key": { "en": "Characteristic equation · eigenvalue facts · inverse and powers by Cayley–Hamilton (beyond the syllabus list, often useful)" } }
      ]
     },
     {
@@ -42,12 +57,84 @@
     }
    ]
   },
-  { "id": "u2", "icon": "📉", "en": "Calculus", "line": { "en": "Limits, continuity, differentiability · mean value theorems · series expansions · integration" } },
+  {
+   "id": "u2", "icon": "📉", "en": "Calculus",
+   "line": { "en": "Limits, continuity, differentiability · mean value theorems · series expansions · integration" },
+   "parts": [
+    {
+     "en": "Functions of one variable",
+     "chapters": [
+      { "id": "tp-05-06", "en": "5.6 Limits",
+        "key": { "en": "Left and right limits · standard limits · limits at infinity · the 1^∞ form" } },
+      { "id": "tp-05-07", "en": "5.7 Continuity and differentiability",
+        "key": { "en": "Continuity and kinds of discontinuity · differentiability · continuous functions on a closed interval · Rolle's theorem" } }
+     ]
+    },
+    {
+     "en": "Integration",
+     "chapters": [
+      { "id": "tp-05-05", "en": "5.5 Series",
+        "key": { "en": "Definite integral as the limit of a sum · tests of convergence of series" } }
+     ]
+    }
+   ]
+  },
   { "id": "u3", "icon": "🌊", "en": "Ordinary Differential Equations", "line": { "en": "Order and degree · first order equations · singular solutions · constant coefficients" } },
   { "id": "u4", "icon": "🧭", "en": "Coordinate Geometry of Two Dimensions", "line": { "en": "General second-degree equation · conics · tangents and normals · chord of contact" } },
   { "id": "u5", "icon": "🧊", "en": "Vectors and Three-Dimensional Geometry", "line": { "en": "Dot and cross products · lines and planes · skew lines · sphere, cone and cylinder" } },
-  { "id": "u6", "icon": "🧩", "en": "Abstract Algebra", "line": { "en": "Groups · subgroups · homomorphisms · Lagrange and Fermat · normal subgroups · rings and fields" } },
-  { "id": "u7", "icon": "🔷", "en": "Linear Algebra", "line": { "en": "Vector spaces · basis and dimension · linear transformations · rank-nullity" } },
+  {
+   "id": "u6", "icon": "🧩", "en": "Abstract Algebra",
+   "line": { "en": "Groups · subgroups · homomorphisms · Lagrange and Fermat · normal subgroups · rings and fields" },
+   "parts": [
+    {
+     "en": "Groups",
+     "chapters": [
+      { "id": "tp-04-01", "en": "4.1 Binary operations and groups",
+        "key": { "en": "Group axioms · standard examples · identity and inverse for unusual operations" } },
+      { "id": "tp-04-02", "en": "4.2 Elementary properties of groups",
+        "key": { "en": "Unique identity and inverses · socks–shoes rule · cancellation · short proofs" } },
+      { "id": "tp-04-03", "en": "4.3 Addition and multiplication modulo m",
+        "key": { "en": "Integers mod m · groups U(n) · inverses modulo n" } },
+      { "id": "tp-04-04", "en": "4.4 Permutations and the symmetric group Sn",
+        "key": { "en": "Cycles and transpositions · even and odd permutations · order · the Klein four-group" } },
+      { "id": "tp-04-05", "en": "4.5 Order of an element",
+        "key": { "en": "Order of an element · order of a power · elements of each order" } },
+      { "id": "tp-04-06", "en": "4.6 Subgroups",
+        "key": { "en": "Subgroup tests · intersections and unions · subgroup generated by a subset" } },
+      { "id": "tp-04-08", "en": "4.8 Cyclic groups",
+        "key": { "en": "Generators · subgroups of a cyclic group · Euler's function · Klein four-group" } },
+      { "id": "tp-04-07", "en": "4.7 Cosets and Lagrange's theorem",
+        "key": { "en": "Cosets and index · Lagrange · Fermat's theorem and its application · Euler and Wilson" } }
+     ]
+    },
+    {
+     "en": "Homomorphisms, rings and fields",
+     "chapters": [
+      { "id": "tp-04-09", "en": "4.9 Normal subgroups, quotient groups, homomorphisms",
+        "key": { "en": "Normal subgroups · quotient groups · homomorphism and isomorphism · fundamental theorem" } },
+      { "id": "tp-04-10", "en": "4.10 Rings, integral domains, fields, ideals",
+        "key": { "en": "Rings and fields with examples · zero divisors · integral domains · ideals" } }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u7", "icon": "🔷", "en": "Linear Algebra",
+   "line": { "en": "Vector spaces · basis and dimension · linear transformations · rank-nullity" },
+   "parts": [
+    {
+     "en": "Vector spaces and linear transformations",
+     "chapters": [
+      { "id": "tp-03-01", "en": "3.1 Vector spaces and subspaces",
+        "key": { "en": "Examples of vector spaces · subspace test · linear sum and direct sum · quotient space" } },
+      { "id": "tp-03-02", "en": "3.2 Linear dependence, basis, dimension",
+        "key": { "en": "Linear independence · basis and dimension · dimensions of matrix spaces" } },
+      { "id": "tp-03-03", "en": "3.3 Linear transformations",
+        "key": { "en": "Kernel and image · rank–nullity · matrix of a map · composite, singular and transpose maps" } }
+     ]
+    }
+   ]
+  },
   { "id": "u8", "icon": "🌐", "en": "Vector Calculus", "line": { "en": "Gradient, divergence and curl · line, surface and volume integrals · Green, Gauss and Stokes" } },
   { "id": "u9", "icon": "⚖️", "en": "Mechanics", "line": { "en": "Statics · centre of gravity · catenary · moment of inertia · projectiles · central orbits" } },
   { "id": "u10", "icon": "📐", "en": "Trigonometry", "line": { "en": "Equations · triangles · inverse functions · heights and distances · De Moivre's theorem" } }

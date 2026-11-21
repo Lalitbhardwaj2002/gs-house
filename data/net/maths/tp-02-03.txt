@@ -1,0 +1,99 @@
+@en
+# Determinants
+
+> A determinant is a number attached to a square matrix. Most exam questions are solved not by full expansion but by the properties: row operations that keep the value, factors taken out, and standard determinants recognised at sight.
+
+## Properties, minors and the adjoint
+
+! note | Determinants
+- $\lvert A' \rvert = \lvert A \rvert$; $\lvert kA \rvert = k^n \lvert A \rvert$ ($n$ = order); $\lvert AB \rvert = \lvert A \rvert \lvert B \rvert$; $\lvert A^{-1} \rvert = \frac{1}{\lvert A \rvert}$.
+- Interchanging two rows changes the sign; two equal or proportional rows give $0$; $R_i \to R_i + kR_j$ does not change the value; a common factor of a row can be taken out.
+- Minor $M_{ij}$; cofactor $A_{ij} = (-1)^{i+j}M_{ij}$; $\text{adj}\,A = [A_{ij}]^T$ (transpose of the cofactor matrix).
+- $A(\text{adj}\,A) = (\text{adj}\,A)A = \lvert A \rvert I$; $A^{-1} = \frac{1}{\lvert A \rvert}\text{adj}\,A$ ($\lvert A \rvert \neq 0$); $(\text{adj}\,A)^{-1} = \frac{A}{\lvert A \rvert}$ ($\lvert A \rvert \neq 0$).
+- $\lvert \text{adj}\,A \rvert = \lvert A \rvert^{n-1}$; $\lvert \text{adj}(\text{adj} \cdots (k \text{ times}) A) \rvert = \lvert A \rvert^{(n-1)^k}$; $\text{adj}(\text{adj}\,A) = \lvert A \rvert^{n-2}A$; $\text{adj}(AB) = \text{adj}\,B\ \text{adj}\,A$.
+- Area of a triangle: $\Delta = \frac{1}{2}\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}$ (zero $\iff$ the points are collinear).
+
+! check | A condition added
+$(\text{adj}\,A)^{-1} = \frac{A}{\lvert A \rvert}$ needs $\lvert A \rvert \neq 0$, just as $A^{-1}$ does: it comes from dividing $(\text{adj}\,A)A = \lvert A \rvert I$ by $\lvert A \rvert$. When $\lvert A \rvert = 0$ (and $n \geq 2$), $\lvert \text{adj}\,A \rvert = \lvert A \rvert^{n-1} = 0$, so $\text{adj}\,A$ has no inverse at all. The rules for $\text{adj}$ are meant for $n \geq 2$.
+
+! example | Question DT1 — from the notes
+Prove that
+$$\begin{aligned} &\begin{vmatrix} a & a + b & a + b + c \\ 2a & 3a + 2b & 4a + 3b + 2c \\ 3a & 6a + 3b & 10a + 6b + 3c \end{vmatrix} \\ &= a^3. \end{aligned}$$
+**Solution.** $R_2 \to R_2 - 2R_1$, $R_3 \to R_3 - 3R_1$:
+$$\begin{vmatrix} a & a + b & a + b + c \\ 0 & a & 2a + b \\ 0 & 3a & 7a + 3b \end{vmatrix};$$
+then $R_3 \to R_3 - 3R_2$:
+$$\begin{aligned} \begin{vmatrix} a & a + b & a + b + c \\ 0 & a & 2a + b \\ 0 & 0 & a \end{vmatrix} &= a \cdot a \cdot a \\ &= \boxed{a^3} \end{aligned}$$
+(upper triangular).
+
+! example | Question DT2 — from the notes
+Prove that
+$$\begin{vmatrix} b + c & a & a \\ b & c + a & b \\ c & c & a + b \end{vmatrix} = 4abc.$$
+**Solution.** $R_1 \to R_1 - R_2 - R_3$:
+$$\begin{vmatrix} 0 & -2c & -2b \\ b & c + a & b \\ c & c & a + b \end{vmatrix}.$$
+Expanding along $R_1$: $2c[b(a + b) - bc] - 2b[bc - c(c + a)] = 2bc(a + b - c) + 2bc(c + a - b) = 4abc$.
+
+! example | Question DT3 — from the notes
+If $x, y, z$ are different and
+$$\begin{vmatrix} x & x^2 & 1 + x^3 \\ y & y^2 & 1 + y^3 \\ z & z^2 & 1 + z^3 \end{vmatrix} = 0,$$
+show that $1 + xyz = 0$.
+**Solution.** Split the third column:
+$$\begin{aligned} & \begin{vmatrix} x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1 \end{vmatrix} \\ &\quad + xyz\begin{vmatrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{vmatrix} \\ &= (1 + xyz)\begin{vmatrix} 1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2 \end{vmatrix} \\ &= (1 + xyz)(x - y) \\ &\quad \times (y - z)(z - x). \end{aligned}$$
+Since $x, y, z$ are distinct, $1 + xyz = 0$.
+(In the second determinant $x, y, z$ come out of the rows; the first one turns into the same determinant when column 3 is moved to the front, which takes two interchanges, so the sign does not change.)
+
+! example | Question DT4 — standard
+Find the area of the triangle with vertices $(1, 2)$, $(3, 5)$, $(-1, 4)$.
+**Solution.** $\frac{1}{2}\lvert 1(5 - 4) + 3(4 - 2) + (-1)(2 - 5) \rvert = \frac{1}{2}\lvert 1 + 6 + 3 \rvert = \boxed{5}$.
+
+! addon | Standard determinants
+Vandermonde
+$$\begin{aligned} & \begin{vmatrix} 1 & 1 & 1 \\ a & b & c \\ a^2 & b^2 & c^2 \end{vmatrix} \\ &= (a - b)(b - c)(c - a); \end{aligned}$$
+$$\begin{aligned} &\begin{vmatrix} 1 & a & a^3 \\ 1 & b & b^3 \\ 1 & c & c^3 \end{vmatrix} \\ &= (a - b)(b - c)(c - a) \\ &\quad \times (a + b + c); \end{aligned}$$
+$$\begin{aligned} & \begin{vmatrix} a & b & c \\ b & c & a \\ c & a & b \end{vmatrix} \\ &= -(a^3 + b^3 + c^3 - 3abc). \end{aligned}$$
+
+! trick | Shortcut / time-saver
+For an MCQ determinant with letters, put simple values ($a = 1$, $b = 0$, $c = 0$, …) into both the determinant and the options; wrong options fail at once.
+
+## What it means
+
+- **Definition**: only a square matrix has a determinant. A $1 \times 1$ determinant is its entry, $\begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc$, and a $3 \times 3$ determinant is reduced to $2 \times 2$ ones by expansion.
+- **Expansion of a $3 \times 3$ determinant** along the first row:
+$$\begin{aligned} \begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} &= a_1(b_2c_3 - b_3c_2) \\ &\quad - b_1(a_2c_3 - a_3c_2) \\ &\quad + c_1(a_2b_3 - a_3b_2). \end{aligned}$$
+- The signs $(-1)^{i+j}$ form a chessboard: $+ - +$, $- + -$, $+ - +$. One can expand along **any** row or column; choose the one with most zeros.
+- The minor $M_{ij}$ is the determinant left after deleting row $i$ and column $j$. The sum of the entries of a row times their **own** cofactors is $\lvert A \rvert$; times the cofactors of **another** row it is $0$. That is exactly the statement $A(\text{adj}\,A) = \lvert A \rvert I$.
+- A triangular (or diagonal) matrix has determinant equal to the product of its diagonal entries; this is why DT1 reduces to upper triangular form.
+- **Splitting**: if every entry of a column is a sum of two terms, the determinant is the sum of two determinants (used in DT3).
+- A row (or column) of zeros gives determinant $0$; multiplying one row by $k$ multiplies the determinant by $k$. Everything said about rows holds for columns, since $\lvert A' \rvert = \lvert A \rvert$.
+- In the area formula take the **absolute value**; the sign only shows the order of the vertices.
+
+! example | Example 1 — minors, cofactors and expansion
+For $A = \begin{bmatrix} 2 & 1 & 3 \\ 0 & 4 & 1 \\ 1 & 0 & 2 \end{bmatrix}$ find the minors and cofactors of the first row, and evaluate $\lvert A \rvert$.
+**Solution.** $M_{11} = \begin{vmatrix} 4 & 1 \\ 0 & 2 \end{vmatrix} = 8$, $M_{12} = \begin{vmatrix} 0 & 1 \\ 1 & 2 \end{vmatrix} = -1$, $M_{13} = \begin{vmatrix} 0 & 4 \\ 1 & 0 \end{vmatrix} = -4$, so the cofactors are $A_{11} = 8$, $A_{12} = 1$, $A_{13} = -4$. Along the first row: $2(8 - 0) - 1(0 - 1) + 3(0 - 4) = 16 + 1 - 12 = \boxed{5}$. The cofactors of row 2 are $A_{21} = -2$, $A_{22} = 1$, $A_{23} = 1$, and row 1 times them gives $2(-2) + 1(1) + 3(1) = 0$ ✓, as the rule above says.
+
+! example | Example 2 — using the rules for $\lvert kA \rvert$ and the adjoint
+$A$ is $3 \times 3$ with $\lvert A \rvert = 4$. Find $\lvert 2A \rvert$, $\lvert \text{adj}\,A \rvert$ and $\lvert \text{adj}(\text{adj}\,A) \rvert$.
+**Solution.** $\lvert 2A \rvert = 2^3 \cdot 4 = \boxed{32}$; $\lvert \text{adj}\,A \rvert = 4^{2} = \boxed{16}$; $\lvert \text{adj}(\text{adj}\,A) \rvert = 4^{2^2} = \boxed{256}$.
+
+! example | Example 3 — collinear points
+For which $k$ are $(1, 2)$, $(3, k)$, $(5, 6)$ collinear?
+**Solution.** $1(k - 6) + 3(6 - 2) + 5(2 - k) = 0 \Rightarrow -4k + 16 = 0 \Rightarrow k = \boxed{4}$.
+
+? What is $\lvert kA \rvert$ for an $n \times n$ matrix $A$? :: $k^n \lvert A \rvert$.
+? What is $\lvert \text{adj}\,A \rvert$? :: $\lvert A \rvert^{n-1}$.
+? Which row operation does not change a determinant? :: $R_i \to R_i + kR_j$ (adding a multiple of another row).
+? When is the determinant with rows $(x_i, y_i, 1)$ zero? :: When the three points are collinear.
+? How are a minor and a cofactor related? :: $A_{ij} = (-1)^{i+j}M_{ij}$: the same number, with the sign changed when $i + j$ is odd.
+
+! exam | What the exam asks
+- Minors and cofactors; expansion of a $3 \times 3$ determinant.
+- Evaluating determinants with letters by row and column operations; Vandermonde-type determinants.
+- $\lvert kA \rvert$, $\lvert \text{adj}\,A \rvert$, $\lvert A^{-1} \rvert$ and $\lvert AB \rvert$ for given orders and values.
+- Area of a triangle and the condition for collinear points.
+
+! recap | One-minute revision
+- $\lvert kA \rvert = k^n \lvert A \rvert$, $\lvert AB \rvert = \lvert A \rvert \lvert B \rvert$, $\lvert \text{adj}\,A \rvert = \lvert A \rvert^{n-1}$, $\text{adj}(\text{adj}\,A) = \lvert A \rvert^{n-2}A$.
+- $A(\text{adj}\,A) = \lvert A \rvert I$; cofactor $A_{ij} = (-1)^{i+j}M_{ij}$.
+- Vandermonde $= (a - b)(b - c)(c - a)$; circulant $= -(a^3 + b^3 + c^3 - 3abc)$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 2 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 4: Determinants | https://ncert.nic.in/textbook.php?lemh1=4-6

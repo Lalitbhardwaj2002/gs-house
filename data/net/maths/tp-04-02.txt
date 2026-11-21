@@ -1,0 +1,61 @@
+@en
+# Elementary properties of groups
+
+> A handful of rules follow straight from the group axioms: uniqueness of the identity and of inverses, the "socks–shoes" rule for the inverse of a product, and cancellation. They are the tools of every short proof in group theory.
+
+## The rules
+
+! note | Elementary properties of groups
+- The identity is unique, and each element has a unique inverse.
+- $(ab)^{-1} = b^{-1}a^{-1}$ (socks–shoes rule); $(abc)^{-1} = c^{-1}b^{-1}a^{-1}$; $(a^{-1})^{-1} = a$.
+- Cancellation laws: $ab = ac \Rightarrow b = c$; $ba = ca \Rightarrow b = c$.
+- $ab = e \Rightarrow b = a^{-1}$; $ab = a$ or $ba = a \Rightarrow b = e$; $a^2 = a \Rightarrow a = e$ (the only idempotent is $e$); $e^n = e$.
+- If $a, b$ commute, so do $a^{-1}, b^{-1}$; $a^{-1}, b$; $a, b^{-1}$. The equation $axa = b$ has $x = a^{-1}ba^{-1}$.
+- $(bab^{-1})^n = ba^nb^{-1}$ for all $n \in \mathbb{Z}$; in an abelian group $(ab)^n = a^nb^n$.
+
+! example | Question G2 — from the notes
+Prove: if $a^2 = e$ for every $a \in G$, then $G$ is abelian.
+**Solution.** Every element is its own inverse, so for $a, b \in G$: $ab = (ab)^{-1} = b^{-1}a^{-1} = ba$.
+
+! example | Question G3 — from the notes
+Prove that $G$ is abelian iff $(ab)^2 = a^2b^2$ for all $a, b$.
+**Solution.** If abelian, $(ab)^2 = abab = aabb = a^2b^2$. Conversely $abab = aabb$; cancel $a$ on the left and $b$ on the right: $ba = ab$.
+
+## What it means
+
+- **Why the identity is unique**: if $e$ and $e'$ are both identities, then $e = ee' = e'$.
+- **Why inverses are unique**: if $b$ and $c$ are both inverses of $a$, then $b = be = b(ac) = (ba)c = ec = c$.
+- **Socks–shoes**: to undo "put on socks, then shoes", take off the shoes first. Check: $(ab)(b^{-1}a^{-1}) = a(bb^{-1})a^{-1} = aa^{-1} = e$.
+- **Cancellation** is multiplying both sides by an inverse on the correct side: from $ab = ac$, multiply on the left by $a^{-1}$. Cancelling across ($ab = ca \Rightarrow b = c$) is **not** allowed in a non-abelian group.
+- **Equations**: $ax = b$ has the unique solution $x = a^{-1}b$, and $xa = b$ has $x = ba^{-1}$. This is why every row and column of a group table contains each element exactly once.
+- **Powers**: $a^m a^n = a^{m+n}$ and $(a^m)^n = a^{mn}$ hold in every group; $(ab)^n = a^n b^n$ needs $a$ and $b$ to commute.
+
+! example | Example 1 — a group of order 4 or less is abelian
+Show that every group with at most 4 elements is abelian.
+**Solution.** For orders 1, 2, 3 the group is cyclic (every group of prime order is cyclic), hence abelian. In a group of order 4 the order of each element divides 4 (Lagrange's theorem, 4.7). An element of order 4 makes the group cyclic; otherwise every element has order 1 or 2, so $a^2 = e$ for all $a$, and Question G2 gives an abelian group.
+
+! example | Example 2 — a counter-example to $(ab)^2 = a^2b^2$
+In $S_3$ take $a = (1\,2)$ and $b = (1\,3)$. Check whether $(ab)^2 = a^2b^2$.
+**Solution.** $a^2 = b^2 = e$, so $a^2b^2 = e$. But $ab$ is a 3-cycle: read left to right as in these notes ($(1\,2)$ first), $ab = (1\,2\,3)$; read right to left it is $(1\,3\,2)$. Either way $(ab)^2 \neq e$. The equality fails, as Question G3 predicts for a non-abelian group.
+
+! example | Example 3 — solving an equation
+In a group, solve $a x b = c$ for $x$.
+**Solution.** Multiply on the left by $a^{-1}$ and on the right by $b^{-1}$: $x = \boxed{a^{-1}cb^{-1}}$.
+
+? What is $(abc)^{-1}$? :: $c^{-1}b^{-1}a^{-1}$.
+? Which element of a group satisfies $a^2 = a$? :: Only the identity $e$.
+? If every element of $G$ is its own inverse, what kind of group is $G$? :: Abelian.
+? Does $(ab)^n = a^nb^n$ hold in every group? :: No, only when $a$ and $b$ commute (for example in an abelian group).
+
+! exam | What the exam asks
+- Uniqueness of identity and inverse; the inverse of a product.
+- Short proofs: $a^2 = e$ for all $a$ gives an abelian group; $(ab)^2 = a^2b^2$ for all $a, b$ characterises abelian groups.
+- Solving equations such as $axa = b$ in a group.
+
+! recap | One-minute revision
+- One identity, one inverse each; $(ab)^{-1} = b^{-1}a^{-1}$.
+- Cancel on the same side only; $ax = b \Rightarrow x = a^{-1}b$.
+- $a^2 = e$ for all $a$ $\Rightarrow$ abelian; $(ab)^2 = a^2b^2$ for all $a, b$ $\iff$ abelian.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapter 2

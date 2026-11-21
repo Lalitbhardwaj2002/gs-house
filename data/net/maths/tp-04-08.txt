@@ -1,0 +1,66 @@
+@en
+# Cyclic groups
+
+> A cyclic group is made of the powers of one element. Cyclic groups are completely understood: their generators, their subgroups and the orders of their elements are all counted by simple formulas.
+
+## Cyclic groups
+
+! note | Cyclic groups
+- $G = \langle a \rangle = \{a^n : n \in \mathbb{Z}\}$ is **cyclic** with generator $a$. Every cyclic group is abelian; if $a$ generates, so does $a^{-1}$.
+- Every group of prime order is cyclic (hence abelian and simple).
+- Every subgroup of a cyclic group is cyclic.
+- If $o(a) = n$, then $a^m$ generates $\langle a \rangle$ iff $\gcd(m, n) = 1$; number of generators $= \varphi(n) = n\prod_{p \mid n}\left(1 - \frac{1}{p}\right)$.
+- Number of subgroups of a cyclic group of order $n = \tau(n)$ (number of divisors); $n = p_1^{k_1} \cdots p_r^{k_r}$ (distinct primes $p_i$) $\Rightarrow \tau(n) = (k_1 + 1) \cdots (k_r + 1)$; one subgroup for each divisor.
+- An infinite cyclic group has exactly 2 generators. Automorphisms of $\mathbb{Z}_n$: $\varphi(n)$.
+- **Klein four-group** $\{e, a, b, c\}$: $a^2 = b^2 = c^2 = e$, $ab = c$, $bc = a$, $ca = b$; abelian but not cyclic.
+
+! check | A condition added
+The formula for $\tau(n)$ needs the $p_i$ to be **distinct** primes, as in the prime factorisation of $n$. Writing $12 = 2 \cdot 2 \cdot 3$ with three "primes" $p_1 = p_2 = 2$, $p_3 = 3$ would give $2 \cdot 2 \cdot 2 = 8$ instead of the correct $\tau(12) = (2 + 1)(1 + 1) = 6$.
+
+^ data/net/maths/fig/z12-lattice.svg | subgroups of $\mathbb{Z}_{12}$: $\tau(12) = 6$, one for each divisor
+
+! example | Question CY1 — from the notes
+Find the generators of a cyclic group of order 8, and the number of subgroups of a cyclic group of order 12.
+**Solution.** $a^m$ with $\gcd(m, 8) = 1$: $\boxed{a, a^3, a^5, a^7}$ ($\varphi(8) = 4$). Subgroups: $\tau(12) = (2 + 1)(1 + 1) = \boxed{6}$.
+
+! trick | Shortcut / time-saver
+$\varphi(p) = p - 1$; $\varphi(p^k) = p^k - p^{k-1}$; $\varphi(mn) = \varphi(m)\varphi(n)$ for coprime $m, n$. $\varphi(8) = 4$, $\varphi(12) = 4$, $\varphi(15) = 8$, $\varphi(20) = 8$, $\varphi(30) = 8$, $\varphi(36) = 12$. Every group of order $< 6$ is abelian; the smallest non-abelian group is $S_3$.
+
+## What it means
+
+- **Two models**: every infinite cyclic group is a copy of $(\mathbb{Z}, +)$, with generators $1$ and $-1$; every cyclic group of order $n$ is a copy of $(\mathbb{Z}_n, +_n)$, with generators the $k$ coprime to $n$.
+- **Why every subgroup of $\langle a \rangle$ is cyclic**: let $H \neq \{e\}$ and let $m$ be the least positive integer with $a^m \in H$. For $a^k \in H$ write $k = qm + r$ with $0 \leq r < m$; then $a^r = a^k(a^m)^{-q} \in H$, so $r = 0$ and $a^k$ is a power of $a^m$. Hence $H = \langle a^m \rangle$.
+- **The subgroup of order $d$**: in $\langle a \rangle$ of order $n$, for each divisor $d$ of $n$ the unique subgroup of order $d$ is $\langle a^{n/d} \rangle$. In $\mathbb{Z}_{12}$, the subgroup of order 4 is $\langle 3 \rangle = \{0, 3, 6, 9\}$.
+- **Is a group cyclic?** Look for an element whose order equals the order of the group. $U(8)$ (every element of order 1 or 2) and the Klein group are not cyclic; $U(10) = \langle 3 \rangle$ is.
+- $\mathbb{Z}_m \times \mathbb{Z}_n$ is cyclic exactly when $\gcd(m, n) = 1$; then it is a copy of $\mathbb{Z}_{mn}$.
+- Not every abelian group is cyclic (the Klein group), but every cyclic group is abelian.
+
+! example | Example 1 — generators of $\mathbb{Z}_{10}$
+List the generators of $(\mathbb{Z}_{10}, +)$.
+**Solution.** The $k$ with $\gcd(k, 10) = 1$: $\boxed{1, 3, 7, 9}$, that is $\varphi(10) = 4$ generators.
+
+! example | Example 2 — is $U(9)$ cyclic?
+Show that $U(9) = \{1, 2, 4, 5, 7, 8\}$ under $\times_9$ is cyclic.
+**Solution.** Powers of 2 modulo 9: $2, 4, 8, 16 \equiv 7, 14 \equiv 5, 10 \equiv 1$. All six elements appear, so $U(9) = \langle 2 \rangle$ is **cyclic** of order 6.
+
+! example | Example 3 — counting subgroups
+How many subgroups has a cyclic group of order 36, and how many generators?
+**Solution.** $36 = 2^2 \cdot 3^2$: $\tau(36) = 3 \cdot 3 = \boxed{9}$ subgroups; $\varphi(36) = 36 \cdot \frac{1}{2} \cdot \frac{2}{3} = \boxed{12}$ generators.
+
+? How many generators has a cyclic group of order $n$? :: $\varphi(n)$.
+? How many subgroups has a cyclic group of order $n$? :: $\tau(n)$, one for each divisor of $n$.
+? Is every group of prime order cyclic? :: Yes; any element other than $e$ generates it.
+? Is the Klein four-group cyclic? :: No: it is abelian, but every element has order 1 or 2.
+
+! exam | What the exam asks
+- Generators and number of subgroups of a cyclic group of given order.
+- Whether a given group (such as $U(n)$ or the Klein group) is cyclic.
+- Values of $\varphi(n)$ and $\tau(n)$; the subgroup of a given order.
+
+! recap | One-minute revision
+- Generators: $\varphi(n)$; subgroups: $\tau(n)$, all cyclic, one for each divisor.
+- Prime order $\Rightarrow$ cyclic; infinite cyclic $\Rightarrow$ exactly 2 generators.
+- $\varphi(p^k) = p^k - p^{k-1}$, multiplicative for coprime factors.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapter 4

@@ -1,0 +1,68 @@
+@en
+# Normal subgroups, quotient groups, homomorphisms
+
+> A normal subgroup is one whose left and right cosets agree; then the cosets themselves form a group, the quotient group. Homomorphisms are the maps that respect the group operation, and the fundamental theorem links the two ideas.
+
+## Normal subgroups and homomorphisms
+
+! note | Normal subgroups, quotient groups, homomorphisms
+- $H \trianglelefteq G$ (**normal**) if $xhx^{-1} \in H$ for all $x \in G$, $h \in H$; equivalently $xHx^{-1} = H$, or $xH = Hx$ (left coset = right coset), or $(Ha)(Hb) = Hab$.
+- The intersection of two normal subgroups is normal; every subgroup of an abelian group is normal. A subgroup of index 2 is normal; $A_n \trianglelefteq S_n$.
+- **Simple group**: $G \neq \{e\}$ and its only normal subgroups are $\{e\}$ and $G$ itself (groups of prime order are simple).
+- Normaliser $N(a) = \{x : ax = xa\}$ is a subgroup; centre $Z(G) = \{z : zx = xz \ \forall x\}$ is a normal subgroup.
+- **Quotient group** $G/H = \{Ha\}$ ($H$ normal) with $(Ha)(Hb) = Hab$; identity $H$; $o(G/H) = \frac{o(G)}{o(H)}$ ($G$ finite).
+- **Homomorphism** $f(ab) = f(a)f(b)$: $f(e) = e'$, $f(a^{-1}) = f(a)^{-1}$. **Isomorphism**: one–one and onto; it preserves orders. $f : (\mathbb{R}, +) \to (\mathbb{R}^+, \times)$, $f(x) = e^x$ is an isomorphism.
+- **Kernel** $K = \{x : f(x) = e'\}$ is normal; $f$ is one–one iff $K = \{e\}$.
+- **Fundamental theorem**: if $f$ is onto $G'$, then $G/K \cong G'$ via $Ka \mapsto f(a)$.
+- Number of homomorphisms $\mathbb{Z}_m \to \mathbb{Z}_n$ is $\gcd(m, n)$.
+
+! check | Conditions added
+$G/H$ is a group only when $H$ is **normal**; otherwise $(Ha)(Hb) = Hab$ depends on the choice of $a$ and $b$. The formula $o(G/H) = \frac{o(G)}{o(H)}$ needs $G$ finite; in general $o(G/H)$ is the index $[G : H]$, for example $\mathbb{Z}/4\mathbb{Z}$ has order 4. The count $\gcd(m, n)$ is of group homomorphisms (for $+_m$ and $+_n$).
+
+! example | Question NS1 — standard
+Show that every subgroup $H$ of an abelian group $G$ is normal, and find $o(G/H)$ for $G = \mathbb{Z}_{12}$, $H = \langle 4 \rangle$.
+**Solution.** For $x \in G$, $h \in H$: $xhx^{-1} = hxx^{-1} = h \in H$. $o(H) = 3$, so $o(G/H) = \frac{12}{3} = \boxed{4}$.
+
+## What it means
+
+- **Why normality matters**: the product of cosets $(Ha)(Hb) = Hab$ is well defined (does not depend on which $a$, $b$ are used) exactly when $H$ is normal. Only then is $G/H$ a group.
+- The set $\{x : ax = xa\}$ above is also called the **centraliser** of $a$; it is a subgroup but need not be normal. The centre $Z(G)$ is abelian, and $Z(G) = G$ exactly when $G$ is abelian.
+- **Index 2 is normal**: with only two cosets, both the left and the right cosets are $H$ and "everything outside $H$", so $xH = Hx$ for all $x$.
+- **Why the fundamental theorem holds**: $Ka = Kb \iff ab^{-1} \in K \iff f(a)f(b)^{-1} = e' \iff f(a) = f(b)$. Going forwards, $Ka \mapsto f(a)$ does not depend on the choice of $a$ in the coset; going backwards, the map is one–one. It is onto because $f$ is, and it respects products: $(Ka)(Kb) = Kab \mapsto f(ab) = f(a)f(b)$.
+- **A homomorphism carries structure**: the image of a subgroup is a subgroup, the order of $f(a)$ divides the order of $a$ (when that is finite), and the image of an abelian or cyclic group is abelian or cyclic.
+- **Isomorphic groups** have the same order, the same number of elements of each order, and are abelian or cyclic together. $\mathbb{Z}_4$ and the Klein group both have order 4 but are not isomorphic: one has an element of order 4, the other does not.
+- **Homomorphisms $\mathbb{Z}_m \to \mathbb{Z}_n$**: such a map is fixed by $f(1)$, which must have order dividing both $m$ and $n$; there are $\gcd(m, n)$ choices.
+
+! example | Example 1 — a kernel and the fundamental theorem
+$f : (\mathbb{Z}, +) \to (\mathbb{Z}_5, +_5)$, $f(n) = n \bmod 5$. Find the kernel and identify $\mathbb{Z}/\ker f$.
+**Solution.** $f(m + n) = f(m) + f(n)$, and $f$ is onto. $\ker f = \{n : 5 \mid n\} = 5\mathbb{Z}$. By the fundamental theorem, $\mathbb{Z}/5\mathbb{Z} \cong \boxed{\mathbb{Z}_5}$.
+
+! example | Example 2 — the determinant map
+Show that $\det : GL_2(\mathbb{R}) \to (\mathbb{R}^*, \times)$ is a homomorphism and find its kernel.
+**Solution.** $\det(AB) = \det A \det B$, so it is a homomorphism; it is onto (take $\text{diag}(t, 1)$). The kernel is $SL_2(\mathbb{R}) = \{A : \det A = 1\}$, which is therefore a normal subgroup, and $GL_2(\mathbb{R})/SL_2(\mathbb{R}) \cong \mathbb{R}^*$.
+
+! example | Example 3 — counting homomorphisms
+How many homomorphisms are there from $\mathbb{Z}_{12}$ to $\mathbb{Z}_{18}$?
+**Solution.** $\gcd(12, 18) = \boxed{6}$.
+
+! example | Example 4 — a non-normal subgroup
+Is $H = \{e, (1\,2)\}$ normal in $S_3$?
+**Solution.** Conjugating $(1\,2)$ by $(1\,3)$ gives $(1\,3)(1\,2)(1\,3) = (2\,3) \notin H$ (the same in either reading of the product, as the outer factors are equal: $1 \to 3 \to 3 \to 1$, $2 \to 2 \to 1 \to 3$). So $H$ is **not** normal. (Its index is 3, not 2.)
+
+? When is a subgroup normal? :: When $xHx^{-1} = H$ for every $x$, i.e. every left coset is a right coset.
+? Is a subgroup of index 2 always normal? :: Yes.
+? State the fundamental theorem of homomorphism. :: If $f : G \to G'$ is an onto homomorphism with kernel $K$, then $G/K \cong G'$.
+? How many homomorphisms are there from $\mathbb{Z}_m$ to $\mathbb{Z}_n$? :: $\gcd(m, n)$.
+
+! exam | What the exam asks
+- Whether a subgroup is normal; index 2; the centre; $A_n$ in $S_n$.
+- Order and structure of quotient groups such as $\mathbb{Z}_{12}/\langle 4 \rangle$.
+- Kernels, the fundamental theorem, isomorphic and non-isomorphic groups, and counting homomorphisms.
+
+! recap | One-minute revision
+- Normal: $xHx^{-1} = H$; abelian $\Rightarrow$ every subgroup normal; index 2 $\Rightarrow$ normal.
+- $o(G/H) = \frac{o(G)}{o(H)}$; kernel is normal; one–one $\iff$ kernel $\{e\}$.
+- $G/\ker f \cong f(G)$; homomorphisms $\mathbb{Z}_m \to \mathbb{Z}_n$: $\gcd(m, n)$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapters 9 and 10

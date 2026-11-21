@@ -1,0 +1,58 @@
+@en
+# Set theory and functions (foundations)
+
+> Real analysis begins with sets and functions treated carefully: what may count as a set, how to prove two sets equal, and what one-one and onto mean. These ideas are the base for countability and for the point-set topology of the real line.
+
+## Foundations
+
+! note | Sets, logic and functions
+- A **set** is a well-defined collection of distinct objects (there is no doubt whether an object belongs to it). Empty set $\phi$; set-builder form $X = \{x : \text{rule}\}$.
+- **Axiom of Regularity**: no set is an element of itself. A set with $X \notin X$ is "ordinary"; $X \in X$ would be "extra-ordinary".
+- **Russell's paradox**: let $X = \{A : A \text{ is ordinary}\}$. If $X$ is ordinary then $X \in X$, so it is extra-ordinary; if extra-ordinary then $X \in X$ means $X$ is ordinary — a contradiction. Hence the "collection of all sets" is not a set.
+- $\phi \subseteq$ every set; every set $\subseteq$ itself; $A = B \iff A \subseteq B$ and $B \subseteq A$.
+- $p \Rightarrow q$: $p$ is *sufficient* for $q$; $q$ is *necessary* for $p$; equivalently $\neg q \Rightarrow \neg p$.
+- Power set $P(X)$ has $2^{\lvert X \rvert}$ elements; $P(\phi) = \{\phi\}$. Ordered pairs: $(a, b) = (c, d) \iff a = c, \ b = d$; $A \times \phi = \phi$.
+- Functions: injective (one–one), surjective (onto), bijective; only bijections have inverses.
+
+! check | What the axiom of regularity says
+The axiom itself says: every non-empty set $A$ has an element $B$ with $A \cap B = \phi$. "No set is an element of itself" is a consequence of it. If $X \in X$, the set $\{X\}$ would break the axiom: its only element $X$ has $X \in X \cap \{X\}$.
+
+## What it means
+
+- **Russell's paradox in one line**: the "set of all sets that do not contain themselves" can neither contain itself nor fail to. So not every description defines a set. In set theory a rule may only pick out elements of a set already given (the axiom of separation); this keeps such collections out.
+- **Why the paradox reaches "all sets"**: by regularity every set is ordinary, so the collection of ordinary sets is the collection of all sets. The paradox shows it is not a set.
+- **One–one, onto, bijective**: $f : A \to B$ is one–one if $f(x_1) = f(x_2) \Rightarrow x_1 = x_2$, and onto if every $y \in B$ is $f(x)$ for some $x \in A$. On $\mathbb{N}$, $n \mapsto 2n$ is one–one but not onto (1 is missed). From $\mathbb{R}$ to $[0, \infty)$, $x \mapsto x^2$ is onto but not one–one, since $f(-1) = f(1)$. On $\mathbb{R}$, $x \mapsto x^3$ is a bijection; its inverse is $y \mapsto \sqrt[3]{y}$.
+- **Proving $A = B$**: show that every element of $A$ lies in $B$ and every element of $B$ lies in $A$. This "double inclusion" is the standard method.
+- **Contrapositive**: $p \Rightarrow q$ and $\neg q \Rightarrow \neg p$ say the same thing; the **converse** $q \Rightarrow p$ does not follow. "If $n$ is divisible by 4 then $n$ is even" is true; its converse is false.
+- $P(\phi) = \{\phi\}$ has **one** element, the empty set itself; $\phi$ has none. So $\phi \neq \{\phi\}$.
+- **Image and pre-image** of sets under $f$: $f(A \cup B) = f(A) \cup f(B)$ but only $f(A \cap B) \subseteq f(A) \cap f(B)$; pre-images keep both: $f^{-1}(C \cup D) = f^{-1}(C) \cup f^{-1}(D)$ and $f^{-1}(C \cap D) = f^{-1}(C) \cap f^{-1}(D)$.
+
+! example | Example 1 — necessary and sufficient
+For a real number $x$, is "$x > 2$" necessary or sufficient for "$x^2 > 4$"?
+**Solution.** $x > 2 \Rightarrow x^2 > 4$, so it is **sufficient**. It is not necessary: $x = -3$ has $x^2 > 4$ but $x \not> 2$.
+
+! example | Example 2 — the image of an intersection
+For $f(x) = x^2$ on $\mathbb{R}$, $A = \{-1\}$ and $B = \{1\}$, compare $f(A \cap B)$ with $f(A) \cap f(B)$.
+**Solution.** $A \cap B = \phi$, so $f(A \cap B) = \phi$; but $f(A) \cap f(B) = \{1\}$. The inclusion $f(A \cap B) \subseteq f(A) \cap f(B)$ can be strict; it is an equality when $f$ is one–one.
+
+! example | Example 3 — power sets
+Find $P(P(\phi))$.
+**Solution.** $P(\phi) = \{\phi\}$ has 1 element, so $P(P(\phi)) = \boxed{\{\phi, \{\phi\}\}}$, with $2^1 = 2$ elements.
+
+? Why is "the set of all sets" not a set? :: If it were, its ordinary members would form a set too, and that set can neither contain itself nor not (Russell's paradox).
+? How many elements has $P(\phi)$? :: One: $P(\phi) = \{\phi\}$.
+? $p \Rightarrow q$: which is necessary for which? :: $q$ is necessary for $p$; $p$ is sufficient for $q$.
+? Which functions have inverses? :: Exactly the bijections (one–one and onto).
+
+! exam | What the exam asks
+- Statements about $\phi$, $\{\phi\}$, power sets and ordered pairs.
+- Russell's paradox and the axiom of regularity.
+- Necessary and sufficient conditions; images and pre-images of unions and intersections.
+
+! recap | One-minute revision
+- $A = B \iff A \subseteq B$ and $B \subseteq A$; $\phi$ is a subset of every set.
+- $\lvert P(X) \rvert = 2^{\lvert X \rvert}$, $P(\phi) = \{\phi\}$, $A \times \phi = \phi$.
+- $p \Rightarrow q$ $\equiv$ $\neg q \Rightarrow \neg p$; only bijections have inverses.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 5 (the full PDF is linked on the subject page)
+& Paul R. Halmos, Naive Set Theory, sections 1 to 8

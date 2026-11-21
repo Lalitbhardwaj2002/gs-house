@@ -1,0 +1,90 @@
+@en
+# Series
+
+> A series $\sum a_n$ converges when its partial sums converge. For series of positive terms a set of tests decides convergence: comparison, ratio, root, Raabe, Cauchy condensation and the integral test; alternating series have Leibnitz's test. The same chapter gives the definite integral as a limit of a sum.
+
+## Series of positive terms
+
+! note | Series of positive terms
+- **Necessary condition**: $\sum a_n$ convergent $\Rightarrow a_n \to 0$. (If $a_n \not\to 0$, the series is not convergent; but $a_n \to 0$ is not enough: $\sum \frac{1}{n}$ diverges.)
+- $\sum \frac{1}{n^2}$ converges; $\sum \frac{(-1)^n}{n}$, $\sum \frac{(-1)^n}{\sqrt{n}}$ converge (alternating).
+- Sums and multiples of convergent series converge, but $\sum a_n b_n$ need not ($a_n = b_n = \frac{(-1)^n}{\sqrt{n}}$ gives $\sum \frac{1}{n}$).
+- **Geometric** $\sum ar^{n-1}$ ($a \neq 0$): converges iff $\lvert r \rvert < 1$; diverges for $r \geq 1$; oscillates finitely for $r = -1$ and infinitely for $r < -1$.
+- **$p$-test**: $\sum \frac{1}{n^p}$ converges iff $p > 1$.
+- **Comparison**: $a_n \leq kb_n$: $\sum b_n$ convergent $\Rightarrow \sum a_n$ convergent. **Limit comparison**: $\frac{a_n}{b_n} \to l \neq 0$ finite $\Rightarrow$ both behave alike.
+- **Cauchy condensation**: for $a_n \downarrow 0$, $\sum a_n$ and $\sum 2^n a_{2^n}$ behave alike.
+- **Root test**: $\lim a_n^{1/n} = l$; **D'Alembert ratio test**: $\lim \frac{a_{n+1}}{a_n} = l$. In both: $l < 1$ converges, $l > 1$ diverges, $l = 1$ no conclusion.
+- **Raabe** (when the ratio test fails): $\lim n\left(\frac{a_n}{a_{n+1}} - 1\right) = l$: $l > 1$ converges, $l < 1$ diverges.
+- **Logarithmic test**: $\lim n \log \frac{a_n}{a_{n+1}} = l$; **De Morgan–Bertrand**: $\lim \left[n\left(\frac{a_n}{a_{n+1}} - 1\right) - 1\right]$ $\log n = l$; same conclusions.
+- **Leibnitz**: $\sum (-1)^{n+1} a_n$ converges if $a_n$ decreases to 0.
+- Integral as limit of a sum: $\lim_{n \to \infty} \sum_{r=1}^{n} \frac{1}{n} f\left(\frac{r}{n}\right) = \int_0^1 f(x)\,dx$ ($f$ integrable, e.g. continuous, on $[0, 1]$). In general, if $r$ runs from $r_1$ to $r_2$, the limits of integration are $\lim \frac{r_1}{n}$ and $\lim \frac{r_2}{n}$ (e.g. $r = 1$ to $2n$ gives $\int_0^2$).
+
+! check | Conditions added
+The geometric series needs $a \neq 0$: for $a = 0$ every term is 0 and the series converges for every $r$. For $r \geq 1$ it diverges to $+\infty$ or $-\infty$ with the sign of $a$. The limit-of-a-sum formula needs $f$ integrable on $[0, 1]$ (continuous is enough). The comparison, condensation, root, ratio, Raabe, logarithmic and De Morgan–Bertrand tests are stated for series of **positive** terms, as the heading says; Leibnitz's test is the one for alternating series.
+
+! addon | Absolute convergence and the integral test
+$\sum \lvert a_n \rvert$ convergent $\Rightarrow \sum a_n$ convergent (absolute convergence). Convergent but not absolutely: conditional (e.g. $\sum \frac{(-1)^n}{n}$). Integral test: for $f \downarrow$ positive, $\sum f(n)$ and $\int_1^\infty f$ behave alike; $\sum_{n \geq 2} \frac{1}{n(\log n)^p}$ converges iff $p > 1$.
+
+! check | A condition added
+$\sum \frac{1}{n(\log n)^p}$ starts at $n = 2$, since $\log 1 = 0$; the integral test is then used on $[2, \infty)$.
+
+! example | Question SR1 — standard
+Test for convergence: (a) $\sum \frac{n+1}{n^3+5}$, (b) $\sum \frac{n!}{n^n}$, (c) $\sum \frac{2^n}{n^2}$.
+**Solution.** (a) Compare with $\sum \frac{1}{n^2}$: ratio $\to 1$, so **convergent**. (b) Ratio $\frac{a_{n+1}}{a_n} = \left(\frac{n}{n+1}\right)^n \to \frac{1}{e} < 1$: **convergent**. (c) $a_n \to \infty$ (or ratio $\to 2 > 1$): **divergent**.
+
+! example | Question SR2 — standard
+Evaluate $\lim_{n \to \infty} \sum_{r=1}^{n} \frac{n}{n^2 + r^2}$.
+**Solution.** $= \lim \sum \frac{1}{n} \cdot \frac{1}{1 + (r/n)^2} = \int_0^1 \frac{dx}{1 + x^2} = \boxed{\frac{\pi}{4}}$.
+
+! trick | Shortcut / time-saver — Which test?
+Factorials or $n$th powers $\to$ ratio test; a whole term raised to the power $n \to$ root test; ratio gives $1 \to$ Raabe; rational function of $n \to$ compare with $\sum \frac{1}{n^p}$, $p =$ (degree of denominator $-$ degree of numerator), converges iff $p > 1$.
+
+## What it means
+
+- **Partial sums**: $S_n = a_1 + \cdots + a_n$. $\sum a_n = S$ means $S_n \to S$. For a series of positive terms, $S_n$ is increasing, so the series either converges or diverges to $+\infty$; it cannot oscillate.
+- **The harmonic series** $\sum \frac{1}{n}$ diverges even though $\frac{1}{n} \to 0$: grouping $\frac{1}{3} + \frac{1}{4} > \frac{1}{2}$, $\frac{1}{5} + \cdots + \frac{1}{8} > \frac{1}{2}$, and so on, the sum exceeds any bound.
+- **The tests in order of use**: first check $a_n \to 0$; then try comparison with a $p$-series or a geometric series; then ratio or root; if the ratio test gives 1, try Raabe, then the logarithmic or De Morgan–Bertrand test.
+- **Rearranging** an absolutely convergent series does not change its sum; a conditionally convergent series can be rearranged to give any sum (Riemann).
+
+! example | Example 1 — the root test
+Test $\sum \left(\frac{n}{2n + 1}\right)^n$.
+**Solution.** $a_n^{1/n} = \frac{n}{2n + 1} \to \frac{1}{2} < 1$: **convergent**.
+
+! example | Example 2 — Raabe's test
+Test $\sum \frac{1}{n^2}$ by the ratio test and by Raabe's test.
+**Solution.** $\frac{a_{n+1}}{a_n} = \frac{n^2}{(n+1)^2} \to 1$: the ratio test fails. $n\left(\frac{a_n}{a_{n+1}} - 1\right) = n \cdot \frac{2n + 1}{n^2} \to 2 > 1$: **convergent** by Raabe.
+
+! example | Example 3 — Leibnitz's test
+Does $\sum \frac{(-1)^{n+1}}{\log(n + 1)}$ converge? Absolutely?
+**Solution.** $\frac{1}{\log(n+1)}$ decreases to 0, so the series **converges** by Leibnitz. But $\frac{1}{\log(n+1)} > \frac{1}{n + 1}$, and $\sum \frac{1}{n + 1}$ diverges, so it is **not absolutely** convergent: it converges conditionally.
+
+! example | Example 4 — a limit of a sum
+Find $\lim_{n \to \infty} \frac{1^2 + 2^2 + \cdots + n^2}{n^3}$.
+**Solution.** $\sum_{r=1}^{n} \frac{1}{n}\left(\frac{r}{n}\right)^2 \to \int_0^1 x^2\,dx = \boxed{\frac{1}{3}}$.
+
+! example | Example 5 — other limits of integration
+Find
+$$\lim_{n \to \infty} \left(\frac{1}{n + 1} + \frac{1}{n + 2} + \cdots + \frac{1}{3n}\right).$$
+**Solution.** The sum is $\sum_{r=1}^{2n} \frac{1}{n} \cdot \frac{1}{1 + r/n}$. The limits are $\lim \frac{1}{n} = 0$ and $\lim \frac{2n}{n} = 2$, so the limit is $\int_0^2 \frac{dx}{1 + x} = \boxed{\log 3}$.
+
+! example | Example 6 — Cauchy condensation
+Test $\sum_{n \geq 2} \frac{1}{n \log n}$.
+**Solution.** The terms decrease to 0. Condensing, $2^n a_{2^n} = \frac{2^n}{2^n \cdot n\log 2} = \frac{1}{n \log 2}$, a multiple of the harmonic series. So the series **diverges**, although very slowly.
+
+? Does $a_n \to 0$ guarantee that $\sum a_n$ converges? :: No; $\sum \frac{1}{n}$ diverges although $\frac{1}{n} \to 0$.
+? For which $p$ does $\sum \frac{1}{n^p}$ converge? :: For $p > 1$.
+? What does the ratio test say when the limit is 1? :: Nothing; try Raabe's test.
+? When does an alternating series $\sum (-1)^{n+1} a_n$ converge by Leibnitz's test? :: When $a_n$ decreases to 0.
+
+! exam | What the exam asks
+- Convergence of given series by comparison, ratio, root, Raabe or condensation.
+- Absolute and conditional convergence; geometric and $p$-series.
+- Limits of sums evaluated as definite integrals.
+
+! recap | One-minute revision
+- $a_n \to 0$ is necessary, not sufficient; $\sum \frac{1}{n^p}$ converges iff $p > 1$.
+- Ratio and root: $< 1$ converges, $> 1$ diverges, $= 1$ no conclusion; then Raabe ($> 1$ converges).
+- $\lim \sum \frac{1}{n} f\left(\frac{r}{n}\right) = \int_0^1 f(x)\,dx$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 5 (the full PDF is linked on the subject page)
+& S. C. Malik and Savita Arora, Mathematical Analysis, chapter 4

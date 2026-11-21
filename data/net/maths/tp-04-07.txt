@@ -1,0 +1,76 @@
+@en
+# Cosets and Lagrange's theorem
+
+> The cosets of a subgroup cut a group into equal, non-overlapping pieces. Counting the pieces gives Lagrange's theorem, the most used theorem on finite groups, and from it the theorems of Fermat and Euler on remainders.
+
+## Cosets and Lagrange's theorem
+
+! note | Cosets and Lagrange's theorem
+^ data/net/maths/fig/cosets.svg | equal-size, non-overlapping cosets
+- Left coset $aH = \{ah\}$, right coset $Ha = \{ha\}$. Any two left cosets (or any two right cosets) are either equal or disjoint, all have $o(H)$ elements, and together they cover $G$.
+- **Index** $[G : H]$ = number of distinct cosets. Example: $H = 4\mathbb{Z}$ in $\mathbb{Z}$: cosets $H, H + 1, H + 2, H + 3$, index 4.
+- **Lagrange**: if $H \leq G$ (finite) then $o(H) \mid o(G)$, since $o(G) = [G : H] \cdot o(H)$.
+- **Cayley**: every finite group is isomorphic to a group of permutations ($a \mapsto f_a$, $f_a(x) = xa$, with products read left to right as in 4.4).
+
+! check | Two corrections
+"Any two cosets are equal or disjoint" is true for two **left** cosets, or two **right** cosets, not for a left and a right coset: in $S_3$ with $H = \{e, (1\,2)\}$, $(1\,3)H = \{(1\,3), (1\,3\,2)\}$ and $H(1\,3) = \{(1\,3), (1\,2\,3)\}$ share $(1\,3)$ but differ. In Cayley's theorem the PDF has $f_a(x) = ax$. That fits products read right to left ($f_af_b = f_a \circ f_b$ sends $x$ to $abx$). With the left-to-right reading of these notes, $f_af_b$ sends $x$ to $bax$, which is $f_{ba}$; so take $f_a(x) = xa$: then $x \mapsto xa \mapsto xab$, and $f_af_b = f_{ab}$.
+
+! addon | Fermat and Euler (PGT)
+Since $o(a) \mid o(G)$, $a^{o(G)} = e$. Applied to $U(n)$: **Euler** $a^{\varphi(n)} \equiv 1 \pmod{n}$ for $\gcd(a, n) = 1$; **Fermat** $a^{p-1} \equiv 1 \pmod{p}$ for prime $p \nmid a$ (so $a^p \equiv a$). Wilson: $(p - 1)! \equiv -1 \pmod{p}$. The converse of Lagrange is false: $A_4$ (order 12) has no subgroup of order 6; it is true for cyclic groups.
+
+! example | Question L1 — standard (Fermat)
+Find the remainder when (a) $3^{100}$ is divided by 7, (b) $2^{50}$ by 13.
+**Solution.** (a) $3^6 \equiv 1 \pmod 7$; $100 = 6 \cdot 16 + 4$; $3^4 = 81 \equiv \boxed{4}$. (b) $2^{12} \equiv 1 \pmod{13}$; $50 = 48 + 2$; $2^2 = \boxed{4}$.
+
+## What it means
+
+- **Coset decomposition**: pick $a_1 = e$, then any element $a_2$ not yet covered, and so on. When the index $k$ is finite, $G = H \cup a_2H \cup \dots \cup a_kH$, a union of disjoint left cosets; in the same way $G$ is a union of disjoint right cosets. This is the "co-set decomposition" of the TGT syllabus (Example 5 below).
+- **Fermat in use**: besides remainders of large powers, it gives inverses modulo a prime: $a^{p-1} \equiv 1$ means $a^{-1} \equiv a^{p-2} \pmod p$ (Example 6).
+- $aH = H$ exactly when $a \in H$; and $aH = bH$ exactly when $a^{-1}b \in H$.
+- In an abelian group $aH = Ha$ for every $a$. In general left and right cosets can differ, but there are always as many left cosets as right cosets.
+- **Consequences of Lagrange** for a finite group $G$: the order of every element divides $o(G)$; $a^{o(G)} = e$ for every $a$; a group of **prime** order has no subgroups except $\{e\}$ and $G$, and is cyclic.
+- **Cayley's theorem** says that the permutation groups contain every finite group: a group of order $n$ is isomorphic to a subgroup of $S_n$.
+
+! example | Example 1 — the cosets of a subgroup of $\mathbb{Z}_{12}$
+Write the cosets of $H = \{0, 4, 8\}$ in $\mathbb{Z}_{12}$.
+**Solution.** $H$, $1 + H = \{1, 5, 9\}$, $2 + H = \{2, 6, 10\}$, $3 + H = \{3, 7, 11\}$: index $[\mathbb{Z}_{12} : H] = \frac{12}{3} = \boxed{4}$.
+
+! example | Example 2 — possible orders of subgroups
+What orders can the subgroups of a group of order 20 have?
+**Solution.** By Lagrange, only divisors of 20: $\boxed{1, 2, 4, 5, 10, 20}$. (A subgroup of order 3 or 6 is impossible.)
+
+! example | Example 3 — Euler's theorem
+Find the last digit of $7^{222}$.
+**Solution.** $\gcd(7, 10) = 1$ and $\varphi(10) = 4$, so $7^4 \equiv 1 \pmod{10}$. $222 = 4 \cdot 55 + 2$, so $7^{222} \equiv 7^2 = 49 \equiv \boxed{9}$.
+
+! example | Example 4 — Wilson's theorem
+Find the remainder when $10!$ is divided by 11.
+**Solution.** 11 is prime, so $10! \equiv -1 \equiv \boxed{10} \pmod{11}$.
+
+! example | Example 5 — coset decomposition of $S_3$
+Write the left and the right coset decompositions of $S_3$ by $H = \{e, (1\,2)\}$, reading products left to right.
+**Solution.** Left: $S_3 = H \cup (1\,3)H \cup (2\,3)H$, where $(1\,3)H = \{(1\,3), (1\,3\,2)\}$ and $(2\,3)H = \{(2\,3), (1\,2\,3)\}$.
+Right: $S_3 = H \cup H(1\,3) \cup H(2\,3)$, where $H(1\,3) = \{(1\,3), (1\,2\,3)\}$ and $H(2\,3) = \{(2\,3), (1\,3\,2)\}$.
+Both ways there are 3 cosets of 2 elements ($3 \times 2 = 6$), but $(1\,3)H \neq H(1\,3)$, so $H$ is not normal (4.9).
+
+! example | Example 6 — an inverse by Fermat's theorem
+Find the inverse of 3 modulo 7.
+**Solution.** $3^6 \equiv 1 \pmod 7$, so $3^{-1} \equiv 3^5 = 243 = 34 \cdot 7 + 5 \equiv \boxed{5}$. Check: $3 \cdot 5 = 15 \equiv 1$.
+
+? State Lagrange's theorem. :: In a finite group, the order of every subgroup divides the order of the group.
+? What is the index of $4\mathbb{Z}$ in $\mathbb{Z}$? :: 4: the cosets are $4\mathbb{Z}$, $1 + 4\mathbb{Z}$, $2 + 4\mathbb{Z}$, $3 + 4\mathbb{Z}$.
+? Is the converse of Lagrange's theorem true? :: No: $A_4$ has order 12 but no subgroup of order 6. It is true for cyclic groups.
+? What does Fermat's theorem say? :: For a prime $p$ not dividing $a$, $a^{p-1} \equiv 1 \pmod{p}$.
+
+! exam | What the exam asks
+- Cosets and the index of a subgroup; possible orders of subgroups and elements.
+- Remainders by Fermat, Euler and Wilson.
+- The converse of Lagrange's theorem and Cayley's theorem.
+
+! recap | One-minute revision
+- Cosets: equal size, disjoint, cover $G$; $o(G) = [G : H]\,o(H)$.
+- Lagrange: $o(H) \mid o(G)$ and $o(a) \mid o(G)$; prime order $\Rightarrow$ cyclic.
+- Euler $a^{\varphi(n)} \equiv 1$; Fermat $a^{p-1} \equiv 1$; Wilson $(p - 1)! \equiv -1$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapters 6 and 7

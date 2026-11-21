@@ -1,0 +1,91 @@
+@en
+# Linear transformations
+
+> A linear transformation is a map between vector spaces that respects addition and scalar multiplication. Its kernel and image are subspaces, and the rank–nullity theorem links their dimensions. Every linear map between finite-dimensional spaces is given by a matrix.
+
+## Linear maps
+
+! addon | Linear transformations
+$T : V \to W$ is linear if $T(au + bv) = aT(u) + bT(v)$. Then $T(0) = 0$.
+- Kernel (null space) $N(T) = \{v : T(v) = 0\}$, a subspace of $V$; image (range) $R(T)$, a subspace of $W$.
+- **Rank–nullity theorem**: $\dim V = \text{rank}\,T + \text{nullity}\,T$, where rank $= \dim R(T)$, nullity $= \dim N(T)$ ($V$ finite-dimensional).
+- $T$ one–one $\iff N(T) = \{0\}$. If $\dim V = \dim W$ (finite): one–one $\iff$ onto $\iff$ invertible (non-singular).
+- Composition of linear maps is linear; $(ST)^{-1} = T^{-1}S^{-1}$ ($S$, $T$ invertible).
+- Matrix of $T$ w.r.t. bases: the $j$th column is the coordinate vector of $T(v_j)$. Rank of $T$ = rank of its matrix.
+- Transpose (dual) $T^t : W^* \to V^*$, $T^t(f) = f \circ T$; its matrix is the transpose; $\text{rank}\,T^t = \text{rank}\,T$.
+- Space of all linear maps $L(V, W)$ has dimension $\dim V \cdot \dim W$.
+
+! check | Conditions added
+Rank–nullity needs $V$ finite-dimensional ($W$ may be any space). $(ST)^{-1} = T^{-1}S^{-1}$ needs $S$ and $T$ invertible; then $ST$ is invertible and, as with matrices, the order reverses. Matrices of maps, $\text{rank}\,T^t = \text{rank}\,T$ and $\dim L(V, W) = \dim V \cdot \dim W$ are for finite-dimensional $V$ and $W$, and the matrix of $T^t$ is the transpose of the matrix of $T$ when it is taken in the dual bases.
+
+! example | Example — Rank–nullity
+$T : \mathbb{R}^3 \to \mathbb{R}^2$, $T(x, y, z) = (x + y, \ y + z)$.
+**Solution.** Matrix $\begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \end{bmatrix}$ has rank 2, so nullity $= 3 - 2 = 1$; kernel spanned by $(1, -1, 1)$.
+
+! trick | Shortcut / time-saver
+For $T : \mathbb{R}^n \to \mathbb{R}^m$ given by a matrix, nullity $= n -$ rank. If $n > m$, $T$ can never be one–one; if $n < m$, $T$ can never be onto.
+
+^ data/net/maths/fig/rank-nullity.svg | rank–nullity: $\dim V = \dim R(T) + \dim N(T)$
+
+! example | Question LA1 — standard
+Is $W = \{(x, y, z) : x + y + z = 0\}$ a subspace of $\mathbb{R}^3$? Find a basis and its dimension.
+**Solution.** If $u, v \in W$ then $au + bv$ also has coordinate sum 0, so $W$ is a subspace (a plane through the origin). $(x, y, z) = x(1, 0, -1) + y(0, 1, -1)$: basis $\{(1, 0, -1), (0, 1, -1)\}$, $\dim W = \boxed{2}$.
+
+! example | Question LA2 — standard
+Find the rank and nullity of $T : \mathbb{R}^3 \to \mathbb{R}^3$, $T(x, y, z) = (x + y, \ y + z, \ x - z)$.
+**Solution.** Matrix $\begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & -1 \end{bmatrix}$: $R_3 - R_1$ gives $(0, -1, -1) = -R_2$, so rank $= \boxed{2}$, nullity $= 3 - 2 = \boxed{1}$; kernel spanned by $(1, -1, 1)$.
+
+## What it means
+
+- **To check linearity**, test $T(u + v) = T(u) + T(v)$ and $T(au) = aT(u)$. If $T(0) \neq 0$ the map is not linear, as for $T(x) = x + 1$. But $T(0) = 0$ does not prove linearity: $T(x, y) = (x^2, y)$ sends 0 to 0, yet $T(2, 0) = (4, 0) \neq 2T(1, 0)$.
+- A linear map is fixed by its values on a basis: if $T(v_1), \dots, T(v_n)$ are known, then $T(\sum a_i v_i) = \sum a_i T(v_i)$.
+- The **kernel** is found by solving $T(v) = 0$; the **image** is spanned by the columns of the matrix of $T$.
+- **Singular** means $N(T) \neq \{0\}$ (some non-zero vector goes to 0); **non-singular** means $N(T) = \{0\}$. On a finite-dimensional space, $T$ is non-singular exactly when its matrix has a non-zero determinant. The map of LA2 is singular: $(1, -1, 1) \mapsto 0$.
+- **Composite**: $(ST)(v) = S(T(v))$, first $T$, then $S$. For composite maps, $\text{rank}(ST) \leq \min(\text{rank}\,S, \text{rank}\,T)$, and the matrix of $ST$ is the product of the matrices (in that order). In general $ST \neq TS$.
+- **Transpose**: $V^* = L(V, F)$ is the space of linear functionals on $V$ (linear maps into the field); for finite-dimensional $V$, $\dim V^* = \dim V$. $T^t$ sends a functional $f$ on $W$ to the functional $f \circ T$ on $V$. For $T : \mathbb{R}^n \to \mathbb{R}^m$ with matrix $A$, write a functional $f(w) = c_1w_1 + \dots + c_mw_m$ by its column of coefficients $c$; then the column of coefficients of $T^t f$ is $A'c$.
+- The matrix of $T$ depends on the bases chosen; a well-chosen basis can make it much simpler (see Example 6).
+
+! example | Example 1 — the matrix of a map
+Find the matrix of $T(x, y) = (2x - y, \ x + 3y)$ in the standard basis, and decide whether $T$ is invertible.
+**Solution.** $T(1, 0) = (2, 1)$ and $T(0, 1) = (-1, 3)$ are the columns: $\begin{bmatrix} 2 & -1 \\ 1 & 3 \end{bmatrix}$. Its determinant is $6 + 1 = 7 \neq 0$, so $T$ is **invertible**.
+
+! example | Example 2 — kernel and image of a map on polynomials
+$D : P_3 \to P_3$ is differentiation, $D(p) = p'$. Find its kernel, rank and nullity.
+**Solution.** $p' = 0$ exactly for the constants, so $N(D)$ is the constants and nullity $= 1$. The image is $P_2$, the polynomials of degree at most 2, so rank $= 3$. Check: $1 + 3 = 4 = \dim P_3$.
+
+! example | Example 3 — a map fixed by a basis
+A linear $T : \mathbb{R}^2 \to \mathbb{R}^2$ has $T(1, 1) = (2, 0)$ and $T(1, -1) = (0, 4)$. Find $T(3, 1)$.
+**Solution.** $(3, 1) = 2(1, 1) + 1(1, -1)$, so $T(3, 1) = 2(2, 0) + (0, 4) = \boxed{(4, 4)}$.
+
+! example | Example 4 — a composite
+$S(x, y) = (y, x)$ and $T(x, y) = (x + y, \ 0)$ on $\mathbb{R}^2$. Find $ST$ and $TS$.
+**Solution.** $ST(x, y) = S(x + y, 0) = (0, \ x + y)$ and $TS(x, y) = T(y, x) = (x + y, \ 0)$, so $ST \neq TS$. In matrices, $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}\begin{bmatrix} 1 & 1 \\ 0 & 0 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ 1 & 1 \end{bmatrix}$. Both composites have rank 1, so both are **singular**.
+
+! example | Example 5 — the transpose of a map
+$T(x, y) = (x + 2y, \ 3y)$ on $\mathbb{R}^2$ and $f(x, y) = x + y$. Find $T^t f$.
+**Solution.** $(T^t f)(x, y) = f(T(x, y)) = (x + 2y) + 3y = \boxed{x + 5y}$. With $A = \begin{bmatrix} 1 & 2 \\ 0 & 3 \end{bmatrix}$: $A'$ times $(1, 1)'$ is $(1, 5)'$, the coefficients of $x + 5y$ ✓.
+
+! example | Example 6 — the matrix in another basis
+Find the matrix of $T(x, y) = (2x + y, \ x + 2y)$ in the basis $v_1 = (1, 1)$, $v_2 = (1, -1)$.
+**Solution.** $T(v_1) = (3, 3) = 3v_1 + 0v_2$ and $T(v_2) = (1, -1) = 0v_1 + 1v_2$. The coordinate vectors are the columns: $\boxed{\begin{bmatrix} 3 & 0 \\ 0 & 1 \end{bmatrix}}$, while in the standard basis the matrix is $\begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}$.
+
+? State the rank–nullity theorem. :: For $T : V \to W$ with $V$ finite-dimensional, $\dim V = \text{rank}\,T + \text{nullity}\,T$.
+? When is a linear map one–one? :: Exactly when its kernel is $\{0\}$.
+? Can a linear map $\mathbb{R}^4 \to \mathbb{R}^3$ be one–one? :: No; its nullity is at least $4 - 3 = 1$.
+? What is $\dim L(V, W)$? :: $\dim V \cdot \dim W$.
+? When is a linear map $T : V \to V$ ($V$ finite-dimensional) singular? :: When some non-zero vector goes to 0, that is when the determinant of its matrix is 0.
+
+! exam | What the exam asks
+- Whether a given map is linear; its kernel, image, rank and nullity.
+- One–one, onto and invertible maps between spaces of given dimensions; singular and non-singular maps.
+- The matrix of a map, of a composite map and of the transpose.
+
+! recap | One-minute revision
+- Linear: $T(au + bv) = aT(u) + bT(v)$; $T(0) = 0$.
+- $\dim V = \text{rank} + \text{nullity}$; one–one $\iff$ kernel $\{0\}$.
+- Equal finite dimensions: one–one $\iff$ onto $\iff$ invertible; $\dim L(V, W) = \dim V \dim W$.
+- Matrix of $ST$ = matrix of $S$ times matrix of $T$; matrix of $T^t$ = transpose.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 3 (the full PDF is linked on the subject page)
+& Kenneth Hoffman and Ray Kunze, Linear Algebra, chapter 3
+& Sheldon Axler, Linear Algebra Done Right, chapter 3

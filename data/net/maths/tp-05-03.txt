@@ -1,0 +1,106 @@
+@en
+# Order properties, bounds and point-set topology of $\mathbb{R}$
+
+> The real line is an ordered field with one extra property, completeness: every non-empty set bounded above has a least upper bound. On top of this come the ideas of neighbourhood, open and closed sets, limit points, and the theorems of Bolzano–Weierstrass and Heine–Borel.
+
+## Order, bounds and completeness
+
+! note | Order properties and bounds
+- **Archimedean property**: if $x > 0$ and $y \in \mathbb{R}$ there is $n \in \mathbb{N}$ with $nx > y$; for every $\varepsilon > 0$ there is $m$ with $\frac{1}{n} < \varepsilon$ for all $n \geq m$.
+- **Density**: between any two reals there is a rational and an irrational (e.g. $\frac{r}{\sqrt{2}}$, $r$ a non-zero rational).
+- Algebraic number: root of a non-zero rational polynomial ($\sqrt{2}$); otherwise transcendental ($\pi, e$).
+- **Supremum** $l = \sup S$: $x \leq l$ for all $x \in S$, and for every $\varepsilon > 0$ some $x_0 \in S$ has $x_0 > l - \varepsilon$. Infimum similarly. They are unique when they exist and need not belong to $S$: for $S = \{\frac{1}{n}\}$, $\sup S = 1 \in S$, $\inf S = 0 \notin S$.
+- **Completeness**: every non-empty set bounded above has a supremum in $\mathbb{R}$ (false in $\mathbb{Q}$: $\{x \in \mathbb{Q} : x^2 < 2\}$).
+- **Interval**: $a, b \in S$, $a < t < b \Rightarrow t \in S$. Connected subsets of $\mathbb{R}$ are exactly the intervals.
+
+! check | A condition added
+$\frac{r}{\sqrt{2}}$ is irrational only for a **non-zero** rational $r$ ($r = 0$ gives 0). To place it between $a < b$: choose a non-zero rational $r$ between $a\sqrt{2}$ and $b\sqrt{2}$; then $a < \frac{r}{\sqrt{2}} < b$.
+
+! remember | The axioms of the real numbers
+- **Field axioms**: addition and multiplication are commutative and associative; $0$ and $1$ ($0 \neq 1$) are the identities; every $a$ has a negative $-a$ and every $a \neq 0$ an inverse $a^{-1}$; $a(b + c) = ab + ac$.
+- **Order axioms**: for any $a, b$ exactly one of $a < b$, $a = b$, $a > b$ holds; $a < b$ and $b < c \Rightarrow a < c$; $a < b \Rightarrow a + c < b + c$; $a < b$ and $c > 0 \Rightarrow ac < bc$.
+- **Completeness axiom**: every non-empty set that is bounded above has a supremum.
+$\mathbb{Q}$ satisfies the first two groups (it is an ordered field) but not the third. The Archimedean property and the density of $\mathbb{Q}$ are proved from completeness.
+
+## Open and closed sets, limit points
+
+^ data/net/maths/fig/neighbourhood.svg | an $\varepsilon$-neighbourhood of $a$ and a closed interval $[c, d]$
+
+! note | Open and closed sets, limit points
+- $S$ is a **neighbourhood** of $a$ if $(a - \varepsilon, a + \varepsilon) \subseteq S$ for some $\varepsilon > 0$; then $a$ is an **interior point**. $S^\circ$ = set of interior points. A set with an interior point is uncountable.
+- **Open**: $S^\circ = S$. Arbitrary unions and finite intersections of open sets are open; $\bigcap_n \left(-\frac{1}{n}, \frac{1}{n}\right) = \{0\}$ is not open.
+- **Closed**: $S^c$ is open. Arbitrary intersections and finite unions of closed sets are closed; $\bigcup_n \left[0, 1 - \frac{1}{n}\right] = [0, 1)$ is not closed. $\phi$ and $\mathbb{R}$ are the only sets that are both open and closed.
+- **Limit (accumulation) point** of $S$: every deleted neighbourhood meets $S$; derived set $S'$. **Closure** $\bar{S} = S \cup S'$. $S$ closed $\iff S' \subseteq S \iff \bar{S} = S$.
+- Boundary point: every neighbourhood meets both $S$ and $S^c$.
+- **Compact** (Heine–Borel): closed and bounded. **Dense**: $\bar{S} = \mathbb{R}$ ($\mathbb{Q}$, $\mathbb{Q}^c$, $\{m + n\sqrt{2}\}$). **Isolated point**: in $S$ but not a limit point. **Perfect**: $S' = S$.
+- $A, B$ closed $\not\Rightarrow A + B$ closed: $\mathbb{Z} + \sqrt{2}\mathbb{Z}$ is dense.
+
+^ data/net/maths/fig/one-over-n.svg | $S = \{\frac{1}{n}\}$: points crowd towards 0, so 0 is the only limit point, $0 \notin S$
+
+! note | Master table
+| $A$ | $\bar{A}$ | $A'$ | $A^\circ$ | boundary |
+| $\mathbb{Q}$, $\mathbb{Q}^c$ | $\mathbb{R}$ | $\mathbb{R}$ | $\phi$ | $\mathbb{R}$ |
+| $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{R}$ | $\mathbb{R}$ | $\phi$ |
+| $(a, b)$, $[a, b)$, $(a, b]$, $[a, b]$ | $[a, b]$ | $[a, b]$ | $(a, b)$ | $\{a, b\}$ |
+| $\mathbb{N}$ | $\mathbb{N}$ | $\phi$ | $\phi$ | $\mathbb{N}$ |
+| $\{\frac{1}{n}\}$ | $\{\frac{1}{n}\} \cup \{0\}$ | $\{0\}$ | $\phi$ | $\{\frac{1}{n}\} \cup \{0\}$ |
+
+! example | Question TP1 — standard
+Is $S = \{\frac{1}{n} : n \in \mathbb{N}\}$ open, closed, compact? What about $S \cup \{0\}$?
+**Solution.** $S$ has no interior points (not open); its limit point $0 \notin S$ (not closed), so not compact. $S \cup \{0\}$ contains its only limit point and is bounded: **closed and bounded, hence compact**.
+
+! addon | Bolzano–Weierstrass and related theorems
+**Bolzano–Weierstrass**: every bounded infinite subset of $\mathbb{R}$ has a limit point; every bounded sequence has a convergent subsequence. **Nested intervals**: $I_1 \supseteq I_2 \supseteq \cdots$ non-empty, closed and bounded $\Rightarrow \bigcap I_n \neq \phi$. $\mathbb{R}$ is characterised as a complete ordered field.
+
+! check | A condition added
+The nested intervals must be **non-empty**, closed and bounded. Drop "closed": the intervals $\left(0, \frac{1}{n}\right)$ have empty intersection. Drop "bounded": so do the intervals $[n, \infty)$. When the lengths also tend to 0, the intersection is exactly one point.
+
+! note | Metric spaces
+A **metric** $d$ satisfies $d(x, y) \geq 0$, $d(x, y) = 0 \iff x = y$, $d(x, y) = d(y, x)$, $d(x, z) \leq d(x, y) + d(y, z)$. Examples: usual metric $\lvert x - y \rvert$, Euclidean metric on $\mathbb{R}^2$, discrete metric (0 if $x = y$, else 1). If $d$ is a metric, so is $\frac{d}{1 + d}$.
+
+## What it means
+
+- **Upper bound and supremum**: an upper bound is any number $\geq$ every element; the supremum is the **least** one. The "$\varepsilon$ test" says nothing smaller than $l$ is still an upper bound.
+- **Completeness is what $\mathbb{Q}$ lacks**: the rationals with $x^2 < 2$ are bounded above but have no least rational upper bound, since $\sqrt{2}$ is not rational. All the big theorems of analysis rest on completeness.
+- **A limit point need not belong to the set** (0 for $\{\frac{1}{n}\}$), and a point of the set need not be a limit point (every point of $\mathbb{N}$ is isolated).
+- **Open and closed are not opposites**: $[0, 1)$ is neither; $\phi$ and $\mathbb{R}$ are both.
+- **In a metric space** the open ball $B(x, r) = \{y : d(x, y) < r\}$ plays the part of the interval $(x - r, x + r)$, and open sets, limit points and closures are defined the same way. In the **discrete** metric every set is open, and every set is closed.
+- **Derived set, dense set, perfect set** (TGT syllabus): $S'$ collects the limit points; $S$ is dense when its closure is all of $\mathbb{R}$; $S$ is perfect when $S' = S$ (closed, with no isolated points), e.g. $[0, 1]$ and the Cantor set.
+- **Compact** means: every cover of the set by open sets has a finite subcover. The Heine–Borel theorem says that a subset of $\mathbb{R}$ is compact exactly when it is closed and bounded. In other metric spaces this can fail: with the discrete metric, $\mathbb{N}$ is closed and bounded (no distance exceeds 1), but the open balls $B\left(n, \frac{1}{2}\right) = \{n\}$ cover it and no finitely many of them do.
+- **Bolzano–Weierstrass needs both hypotheses**: $\mathbb{N}$ is infinite but unbounded, a finite set is bounded, and neither has a limit point. The bounded sequence $(-1)^n$ does not converge, but its even terms form the convergent subsequence $1, 1, 1, \dots$.
+
+! example | Example 1 — supremum and infimum
+Find $\sup S$ and $\inf S$ for $S = \left\{1 - \frac{1}{n} : n \in \mathbb{N}\right\}$.
+**Solution.** The elements are $0, \frac{1}{2}, \frac{2}{3}, \dots$, increasing towards 1. So $\inf S = 0$ (it belongs to $S$) and $\sup S = 1$ (it does not).
+
+! example | Example 2 — derived set
+Find the derived set of $S = \{\frac{1}{m} + \frac{1}{n} : m, n \in \mathbb{N}\}$.
+**Solution.** Letting $n \to \infty$ with $m$ fixed gives the limit points $\frac{1}{m}$; letting both grow gives 0. So $S' = \boxed{\{\frac{1}{m} : m \in \mathbb{N}\} \cup \{0\}}$.
+
+! example | Example 3 — checking a metric
+Is $d(x, y) = (x - y)^2$ a metric on $\mathbb{R}$?
+**Solution.** It is non-negative, symmetric, and zero only for $x = y$, but the triangle inequality fails: $d(0, 2) = 4 > d(0, 1) + d(1, 2) = 1 + 1$. So it is **not** a metric.
+
+! example | Example 4 — interior, derived set, closure, boundary
+Find $S^\circ$, $S'$, $\bar{S}$ and the boundary of $S = [0, 1) \cup \{2\}$. Is $S$ open, closed?
+**Solution.** $S^\circ = (0, 1)$; $S' = [0, 1]$ (2 is an **isolated point**, not a limit point); $\bar{S} = S \cup S' = [0, 1] \cup \{2\}$; boundary $= \{0, 1, 2\}$. $S$ is neither open ($0 \in S$ is not interior) nor closed ($1 \in S'$ but $1 \notin S$).
+
+? State the completeness property of $\mathbb{R}$. :: Every non-empty subset of $\mathbb{R}$ that is bounded above has a supremum in $\mathbb{R}$.
+? Which subsets of $\mathbb{R}$ are both open and closed? :: Only $\phi$ and $\mathbb{R}$.
+? When is a subset of $\mathbb{R}$ compact? :: When it is closed and bounded (Heine–Borel).
+? What is the derived set of $\mathbb{N}$? :: $\phi$: $\mathbb{N}$ has no limit points.
+? Which three groups of axioms describe $\mathbb{R}$? :: The field axioms, the order axioms and the completeness axiom; $\mathbb{Q}$ satisfies only the first two.
+
+! exam | What the exam asks
+- The axioms of the real numbers; supremum and infimum of given sets, and whether they belong to the set.
+- Interior, derived set, closure and boundary of standard sets (the master table).
+- Open, closed, compact, dense, perfect; Bolzano–Weierstrass, Heine–Borel and the metric axioms.
+
+! recap | One-minute revision
+- $\sup$: least upper bound; $\mathbb{R}$ is complete, $\mathbb{Q}$ is not.
+- Unions of open sets are open; intersections of closed sets are closed; only $\phi$, $\mathbb{R}$ are both.
+- In $\mathbb{R}$: compact = closed + bounded; bounded infinite sets have limit points; $\bar{S} = S \cup S'$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 5 (the full PDF is linked on the subject page)
+& S. C. Malik and Savita Arora, Mathematical Analysis, chapters 1 and 2
+& Walter Rudin, Principles of Mathematical Analysis, chapters 1 and 2

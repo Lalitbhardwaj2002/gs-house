@@ -1,0 +1,87 @@
+@en
+# Continuity and differentiability
+
+> A function is continuous at a point when its limit there equals its value, and differentiable when the graph has a definite tangent there. The exam asks for the kinds of discontinuity, for constants that make a piecewise function continuous, and for the standard examples that separate continuity from differentiability.
+
+## Continuity and differentiability
+
+! note | Continuity & differentiability
+- $f$ is continuous at $a$ iff $f(a) = $ LHL $=$ RHL.
+- RHD $= \lim_{h \to 0^+} \frac{f(a + h) - f(a)}{h}$, LHD $= \lim_{h \to 0^+} \frac{f(a - h) - f(a)}{-h}$; differentiable iff both are finite and equal.
+- Differentiable $\Rightarrow$ continuous; not conversely: $\lvert x \rvert$ at 0, $\lvert x - 1 \rvert$ at 1 (LHD $-1$, RHD $1$).
+- $[x]$ is continuous on $\mathbb{R} \setminus \mathbb{Z}$ and discontinuous at every integer.
+
+^ data/net/maths/fig/disc-removable.svg | removable
+^ data/net/maths/fig/disc-jump.svg | jump
+^ data/net/maths/fig/disc-infinite.svg | infinite
+^ data/net/maths/fig/disc-corner.svg | corner
+
+! addon | Types of discontinuity (TGT)
+**Removable**: the limit exists but differs from $f(a)$ or $f(a)$ is undefined ($\frac{\sin x}{x}$ at 0). **First kind (jump)**: LHL, RHL exist but are unequal ($[x]$ at integers). **Second kind**: LHL or RHL does not exist ($\sin\frac{1}{x}$ oscillatory; $\frac{1}{x}$ infinite). On $[a, b]$ a continuous function is bounded, attains its max and min, and takes every intermediate value. The Dirichlet function is discontinuous everywhere.
+
+! example | Question CD1 — from the notes
+Is $f(x) = \lvert x \rvert + 3$ ($x \leq -3$), $-2x$ ($-3 < x < 3$), $6x + 2$ ($x \geq 3$) continuous at $x = -3$ and $x = 3$?
+**Solution.** At $-3$: $f(-3) = 6$, LHL $= 6$, RHL $= -2(-3) = 6$: **continuous**. At 3: $f(3) = 20$, LHL $= -6$: **discontinuous**.
+
+! example | Question CD2 — from the notes
+(a) Find the relation between $a$ and $b$ if $f = ax + 1$ ($x \leq 3$), $bx + 3$ ($x > 3$) is continuous at 3. (b) Find $k$ if $f = \frac{k\cos x}{\pi - 2x}$ ($x \neq \frac{\pi}{2}$), $f\left(\frac{\pi}{2}\right) = 3$ is continuous.
+**Solution.** (a) $3a + 1 = 3b + 3 \Rightarrow \boxed{a = b + \frac{2}{3}}$. (b) Put $x = \frac{\pi}{2} - h$: $\frac{k\sin h}{2h} \to \frac{k}{2} = 3 \Rightarrow \boxed{k = 6}$.
+
+! example | Question CD3 — from the notes
+Discuss continuity of (a) $f = \frac{\sin x}{x}$ ($x \neq 0$), $f(0) = 1$; (b) $f = x^2\sin\frac{1}{x}$ ($x \neq 0$), $f(0) = 0$.
+**Solution.** (a) $\lim_{x \to 0} \frac{\sin x}{x} = 1 = f(0)$: continuous everywhere. (b) $\left\lvert x^2\sin\frac{1}{x} \right\rvert \leq x^2 \to 0 = f(0)$: continuous everywhere (in fact differentiable at 0 with $f'(0) = 0$).
+
+! trick | Shortcut / time-saver
+$x^n\sin\frac{1}{x}$ (value 0 at 0): continuous at 0 for $n > 0$, differentiable for $n > 1$, with continuous derivative for $n > 2$. $\lvert x \rvert^n$ is differentiable at 0 for $n > 1$.
+
+! check | A condition added
+For a non-integer $n$, $x^n$ need not be defined for $x < 0$ (try $n = \frac{1}{2}$): read it as $\lvert x \rvert^n$ there (the thresholds stay the same). Why they hold: $f'(0) = \lim_{h \to 0} h^{n-1}\sin\frac{1}{h}$ exists (and is 0) exactly when $n > 1$. For $x \neq 0$, $f'(x) = nx^{n-1}\sin\frac{1}{x} - x^{n-2}\cos\frac{1}{x}$, which tends to 0 exactly when $n > 2$.
+
+## What it means
+
+- **Three conditions** for continuity at $a$: $f(a)$ is defined, $\lim_{x \to a} f(x)$ exists, and the two are equal. Each picture above fails at least one of them, except the corner, which is continuous but has no tangent.
+- **Continuous functions**: polynomials, $\sin$, $\cos$, $e^x$ everywhere; rational functions, $\tan x$ and $\log x$ wherever they are defined; sums, products, quotients (non-zero denominator) and composites of continuous functions.
+- **Properties on a closed interval** (TGT syllabus): a function continuous on $[a, b]$ is bounded, attains its greatest and least values, and takes every value between $f(a)$ and $f(b)$ (intermediate value theorem). So a continuous $f$ with $f(a)f(b) < 0$ has a root between $a$ and $b$.
+- **Derivative from the definition**: $f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}$. A **corner** (unequal one-sided derivatives), a **vertical tangent** ($\sqrt[3]{x}$ at 0) or a **discontinuity** each prevent differentiability.
+- The **Dirichlet function** ($1$ on rationals, $0$ on irrationals) is discontinuous everywhere, since every interval contains both kinds of number.
+- **Kinds of discontinuity in other books**: some keep "second kind" for the case where neither one-sided limit exists, and call the case where exactly one exists a **mixed** discontinuity.
+- **Rolle's theorem** (TGT syllabus): if $f$ is continuous on $[a, b]$, differentiable on $(a, b)$ and $f(a) = f(b)$, then $f'(c) = 0$ for some $c$ in $(a, b)$. In a picture: a smooth curve that starts and ends at the same height has a horizontal tangent somewhere in between. All three conditions are needed. It is treated again with the mean value theorems.
+
+! example | Example 1 — a removable discontinuity
+How should $f(0)$ be defined so that $f(x) = \frac{x^2 - 3x}{x}$ is continuous at 0?
+**Solution.** For $x \neq 0$, $f(x) = x - 3 \to -3$. Define $f(0) = \boxed{-3}$.
+
+! example | Example 2 — continuous but not differentiable
+Is $f(x) = \lvert x - 2 \rvert + \lvert x - 3 \rvert$ differentiable at $x = 2$?
+**Solution.** Near 2 (between 1 and 3): for $x < 2$, $f = 5 - 2x$, slope $-2$; for $2 < x < 3$, $f = 1$, slope 0. LHD $= -2 \neq 0 =$ RHD: **not differentiable** at 2 (but continuous).
+
+! example | Example 3 — the intermediate value theorem
+Show that $x^3 - x - 1 = 0$ has a root between 1 and 2.
+**Solution.** $f(1) = -1 < 0$ and $f(2) = 5 > 0$, and $f$ is continuous, so $f(c) = 0$ for some $c$ in $(1, 2)$.
+
+! example | Example 4 — naming the discontinuity
+Classify the discontinuity at $x = 0$ of (a) $\frac{x}{\lvert x \rvert}$; (b) $\frac{\sin x}{x}$ with $f(0) = 0$; (c) $\frac{1}{x^2}$; (d) $\sin\frac{1}{x}$.
+**Solution.** (a) LHL $= -1$, RHL $= 1$: **jump** (first kind). (b) The limit is $1 \neq f(0)$: **removable**; redefine $f(0) = 1$. (c) Both one-sided limits are $+\infty$: **infinite** (second kind). (d) The values swing between $-1$ and $1$ in every interval around 0, so neither one-sided limit exists: **oscillatory** (second kind).
+
+! example | Example 5 — Rolle's theorem
+Verify Rolle's theorem for $f(x) = x^2 - 4x + 3$ on $[1, 3]$. Does it apply to $\lvert x \rvert$ on $[-1, 1]$?
+**Solution.** $f$ is a polynomial, so continuous and differentiable, and $f(1) = 0 = f(3)$. $f'(c) = 2c - 4 = 0$ gives $c = \boxed{2}$, which lies in $(1, 3)$. For $\lvert x \rvert$, $f(-1) = f(1) = 1$, but the slope is $-1$ or $1$ everywhere except at 0, where $f$ is not differentiable: no $c$ has $f'(c) = 0$, and the theorem does not apply.
+
+? Does continuity imply differentiability? :: No: $\lvert x \rvert$ is continuous at 0 but not differentiable there. Differentiability does imply continuity.
+? What kind of discontinuity has $[x]$ at an integer? :: A jump (first kind).
+? For which $n$ is $x^n\sin\frac{1}{x}$ (with value 0 at 0) differentiable at 0? :: For $n > 1$.
+? What does the intermediate value theorem say? :: A function continuous on $[a, b]$ takes every value between $f(a)$ and $f(b)$.
+? State Rolle's theorem. :: If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$ and $f(a) = f(b)$, then $f'(c) = 0$ for some $c \in (a, b)$.
+
+! exam | What the exam asks
+- Continuity of piecewise functions; constants that make a function continuous.
+- Kinds of discontinuity; continuous but not differentiable examples.
+- Properties of continuous functions on a closed interval; Rolle's theorem (verifying it and finding $c$).
+
+! recap | One-minute revision
+- Continuous at $a$: $f(a) = $ LHL $=$ RHL; differentiable: LHD $=$ RHD finite.
+- Differentiable $\Rightarrow$ continuous, not conversely ($\lvert x \rvert$ at 0).
+- Removable, jump (first kind), second kind; continuous on $[a, b]$ $\Rightarrow$ bounded, extreme values, intermediate values.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 5 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 5: Continuity and Differentiability | https://ncert.nic.in/textbook.php?lemh1=5-6

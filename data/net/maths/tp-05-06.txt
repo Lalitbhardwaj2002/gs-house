@@ -1,0 +1,83 @@
+@en
+# Limits
+
+> The limit of $f(x)$ as $x \to a$ is the value that $f(x)$ approaches, whatever happens exactly at $a$. Exam questions ask for one-sided limits, standard limits, limits at infinity and the $1^\infty$ form, usually solved fastest by series expansions.
+
+## Limit of a function
+
+! note | Limit of a function
+^ data/net/maths/fig/one-sided-limits.svg | a jump at $x = a$: the left-hand limit (LHL) and the right-hand limit (RHL) differ
+- LHL $= \lim_{h \to 0^+} f(a - h)$, RHL $= \lim_{h \to 0^+} f(a + h)$; the limit exists iff LHL $=$ RHL.
+- Algebra of limits: sums, products, quotients (denominator limit $\neq 0$), $\lvert f \rvert$, $f^g$, composition with continuous functions, log, exp.
+- $\lim_{x \to a} \frac{x^n - a^n}{x - a} = na^{n-1}$.
+- $\lim_{x \to \infty} \frac{a_0 x^m + \cdots}{b_0 x^n + \cdots} = \frac{a_0}{b_0}$ ($m = n$), $0$ ($m < n$), $\infty$ ($m > n$).
+- $\frac{\sin x}{x}$, $\frac{\tan x}{x}$, $\frac{\sin^{-1} x}{x}$, $\frac{\tan^{-1} x}{x} \to 1$ as $x \to 0$.
+- $1^\infty$ form: $\lim f^g = e^{\lim (f - 1)g}$.
+
+! check | Conditions added
+In LHL and RHL, $h$ tends to 0 through **positive** values ($h \to 0^+$); if $h$ could also be negative, $f(a - h)$ and $f(a + h)$ would have the same limit and could not tell left from right. The limit exists iff both one-sided limits exist and are equal. If $f \to A$ and $g \to B$ (finite), then $f^g \to A^B$ and $\log f \to \log A$ need $A > 0$. The formula $na^{n-1}$ holds for every positive integer $n$; for other real $n$ take $a > 0$. In the limit at infinity, $a_0$ and $b_0$ are the non-zero leading coefficients.
+
+! example | Question LM1 — from the notes
+Find LHL and RHL: (a) $f(x) = \frac{\lvert x - 4 \rvert}{x - 4}$ at $x = 4$; (b) $f(x) = 1 + x^2$ for $0 \leq x \leq 1$, $2 - x$ for $x > 1$, at $x = 1$; (c) $[x]$ at an integer $k$.
+**Solution.** (a) LHL $= -1$, RHL $= 1$: no limit. (b) LHL $= 2$, RHL $= 1$: no limit. (c) LHL $= k - 1$, RHL $= k$: no limit.
+
+! example | Question LM2 — from the notes
+(a) If $\lim_{x \to 1} \frac{x^4 - 1}{x - 1} = \lim_{x \to k} \frac{x^3 - k^3}{x^2 - k^2}$, find $k$. (b) Find $\lim_{x \to 1} \frac{x + x^2 + \cdots + x^n - n}{x - 1}$.
+**Solution.** (a) LHS $= 4$; RHS $= \frac{3k^2}{2k} = \frac{3k}{2}$. So $k = \boxed{\frac{8}{3}}$. (b) Split as $\sum \frac{x^r - 1}{x - 1} \to \sum r = \boxed{\frac{n(n+1)}{2}}$.
+
+! example | Question LM3 — from the notes
+Find $a, b$ if (a) $\lim_{x \to \infty} \left[\frac{x^2 + 1}{x + 1} - ax - b\right] = 0$; (b) the same limit equals 2.
+**Solution.** $\frac{x^2 + 1}{x + 1} = x - 1 + \frac{2}{x + 1}$. So the bracket is $(1 - a)x - (1 + b) + \frac{2}{x + 1}$. (a) Need $a = 1$, $b = -1$. (b) Need $a = 1$ and $-(1 + b) = 2 \Rightarrow b = -3$.
+
+! example | Question LM4 — from the notes
+Find (a) $\lim_{x \to \pi/4} \frac{\cos x - \sin x}{\left(\frac{\pi}{4} - x\right)(\cos x + \sin x)}$; (b) $\lim_{x \to 2} \frac{\sqrt{1 - \cos 2(x - 2)}}{x - 2}$.
+**Solution.** (a) $\cos x - \sin x = \sqrt{2}\sin\left(\frac{\pi}{4} - x\right)$; limit $= \frac{\sqrt{2}}{\cos\frac{\pi}{4} + \sin\frac{\pi}{4}} = \boxed{1}$. (b) $= \frac{\sqrt{2}\,\lvert \sin(x - 2) \rvert}{x - 2}$; LHL $= -\sqrt{2}$, RHL $= \sqrt{2}$, so the limit **does not exist**.
+
+! trick | Shortcut / time-saver — Expansions beat L'Hospital
+Near 0: $\sin x \approx x - \frac{x^3}{6}$, $\tan x \approx x + \frac{x^3}{3}$, $\cos x \approx 1 - \frac{x^2}{2}$, $e^x \approx 1 + x + \frac{x^2}{2}$, $\log(1 + x) \approx x - \frac{x^2}{2}$. Hence $\lim \frac{\tan x - \sin x}{x^3} = \frac{1}{2}$, $\lim \frac{x - \sin x}{x^3} = \frac{1}{6}$, $\lim \frac{1 - \cos x}{x^2} = \frac{1}{2}$, $\lim (1 + x)^{1/x} = e$, $\lim \frac{a^x - 1}{x} = \log a$.
+
+! check | A condition added
+All these limits are taken as $x \to 0$, and the last needs $a > 0$, so that $a^x$ is defined for every real $x$.
+
+## What it means
+
+- **The definition**: $\lim_{x \to a} f(x) = l$ means that for every $\varepsilon > 0$ there is $\delta > 0$ with $\lvert f(x) - l \rvert < \varepsilon$ whenever $0 < \lvert x - a \rvert < \delta$. The value $f(a)$ plays no part; $f$ need not even be defined at $a$.
+- **Indeterminate forms** $\frac{0}{0}$, $\frac{\infty}{\infty}$, $0 \cdot \infty$, $\infty - \infty$, $0^0$, $\infty^0$, $1^\infty$ have no fixed value; remove them by factorising, rationalising, a standard limit, a series expansion or L'Hospital's rule.
+- **L'Hospital's rule** (PGT syllabus, treated with the mean value theorems): for the form $\frac{0}{0}$ or $\frac{\infty}{\infty}$, $\lim \frac{f}{g} = \lim \frac{f'}{g'}$ whenever the second limit exists. For example $\lim_{x \to 0} \frac{x - \sin x}{x^3} = \lim_{x \to 0} \frac{1 - \cos x}{3x^2} = \frac{1}{6}$.
+- At infinity with $m > n$ the limit is $+\infty$ or $-\infty$ according to the sign of $\frac{a_0}{b_0}$.
+- **Greatest integer function**: $[x]$ is the largest integer $\leq x$, so it jumps by 1 at every integer, from the left value $k - 1$ to the value $k$.
+- **Sandwich rule**: if $g \leq f \leq h$ near $a$ and $g, h \to l$, then $f \to l$; it gives $\lim_{x \to 0} x\sin\frac{1}{x} = 0$.
+
+! example | Example 1 — the $1^\infty$ form
+Find $\lim_{x \to 0} (1 + 3x)^{2/x}$.
+**Solution.** $e^{\lim (3x)\frac{2}{x}} = \boxed{e^6}$.
+
+! example | Example 2 — rationalising
+Find $\lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x}$.
+**Solution.** Multiply by $\sqrt{1 + x} + 1$: $\frac{x}{x(\sqrt{1 + x} + 1)} \to \boxed{\frac{1}{2}}$.
+
+! example | Example 3 — a limit at infinity
+Find $\lim_{x \to \infty} \left(\sqrt{x^2 + x} - x\right)$.
+**Solution.** $\frac{x}{\sqrt{x^2 + x} + x} = \frac{1}{\sqrt{1 + 1/x} + 1} \to \boxed{\frac{1}{2}}$.
+
+! example | Example 4 — with an expansion
+Find $\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$.
+**Solution.** $e^x - 1 - x = \frac{x^2}{2} + \frac{x^3}{6} + \cdots$, so the limit is $\boxed{\frac{1}{2}}$.
+
+? When does $\lim_{x \to a} f(x)$ exist? :: Exactly when the left-hand and right-hand limits exist and are equal.
+? What is $\lim_{x \to 0} \frac{1 - \cos x}{x^2}$? :: $\frac{1}{2}$.
+? How is a $1^\infty$ limit found? :: $\lim f^g = e^{\lim (f - 1)g}$.
+? What is $\lim_{x \to a} \frac{x^n - a^n}{x - a}$? :: $na^{n-1}$.
+
+! exam | What the exam asks
+- One-sided limits of piecewise functions, $\lvert x \rvert$ and $[x]$.
+- Standard limits, limits at infinity and the $1^\infty$ form.
+- Finding constants so that a limit has a given value.
+
+! recap | One-minute revision
+- Limit exists $\iff$ LHL $=$ RHL; $f(a)$ does not matter.
+- $\frac{\sin x}{x} \to 1$; $\frac{x^n - a^n}{x - a} \to na^{n-1}$; $1^\infty$: $e^{\lim (f - 1)g}$.
+- Expansions: $\sin x \approx x - \frac{x^3}{6}$, $\cos x \approx 1 - \frac{x^2}{2}$, $\tan x \approx x + \frac{x^3}{3}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 5 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XI, chapter 12: Limits and Derivatives | https://ncert.nic.in/textbook.php?kemh1=12-14
