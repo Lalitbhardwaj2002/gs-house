@@ -8,7 +8,7 @@
 ! note | The definite integral
 ^ data/net/maths/fig/riemann-sum.svg | the area under $y = f(x)$ as the limit of the sum of thin rectangles of width $h$
 $\int_a^b f(x)\,dx = F(b) - F(a)$. Geometrically it is the (signed) **area** under $y = f(x)$ from $a$ to $b$: the limit of the sum of thin rectangles,
-$$\int_a^b f(x)\,dx = \lim_{h \to 0} h\sum_{r=0}^{n-1} f(a + rh), \quad nh = b - a.$$
+$$\begin{aligned} &\int_a^b f(x)\,dx \\ &= \lim_{h \to 0} h\sum_{r=0}^{n-1} f(a + rh), \\ &nh = b - a. \end{aligned}$$
 Areas below the $x$-axis count as negative.
 
 ! check | Conditions added
@@ -35,7 +35,7 @@ Evaluate $\int_{-1}^1 x^3\cos x\,dx$ and $\int_{-2}^2 x^2\,dx$.
 ! example | Question DI3 — standard (limit of a sum)
 Evaluate $\int_0^2 x^2\,dx$ as the limit of a sum.
 **Solution.** $h = \frac{2}{n}$:
-$$\begin{aligned} &\lim h\sum_{r=0}^{n-1}(rh)^2 = \lim h^3\frac{(n-1)n(2n-1)}{6} \\ &= \lim \frac{8}{n^3} \cdot \frac{(n-1)n(2n-1)}{6} \\ &= \frac{8 \cdot 2}{6} = \boxed{\frac{8}{3}}. \end{aligned}$$
+$$\begin{aligned} &\lim h\sum_{r=0}^{n-1}(rh)^2 \\ &= \lim h^3\frac{(n-1)n(2n-1)}{6} \\ &= \lim \frac{8}{n^3} \cdot \frac{(n-1)n(2n-1)}{6} \\ &= \frac{8 \cdot 2}{6} = \boxed{\frac{8}{3}}. \end{aligned}$$
 
 ! example | Question DI4 — standard
 Evaluate $\lim_{n \to \infty} \sum_{r=1}^{n} \frac{n}{n^2 + r^2}$.

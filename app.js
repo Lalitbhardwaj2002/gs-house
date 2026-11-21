@@ -1685,36 +1685,51 @@ function mathsHTML() {
     </section>`;
 }
 
-// The full notes PDF is sold for a one-time fee of ₹10 by UPI. A static site cannot check a payment,
-// and the first version (an instant password on trust) let anyone in with a made-up reference, so for now
-// delivery is by hand (owner's choice, 22 November 2026): the reader pays by the QR code or a UPI app,
-// then gives a name, an email and the 12-digit UPI reference; these reach the owner by email (FormSubmit),
-// the owner finds the payment in the bank app and emails the PDF. The PDF is no longer on the site.
-// A device that has sent its details is remembered (localStorage), so the button then says so.
+// The full notes PDF is sold for a one-time fee of ₹10 by UPI. A static site cannot see a payment, so the
+// check runs in the owner's own Google account (tools/pdf-unlock/: a Google Apps Script web app). The reader
+// pays by the QR code or a UPI app and types a name, an email and the 12-digit UPI reference; the script
+// looks for the bank's "credited" alert with that reference and at least ₹10 in the owner's Gmail, refuses a
+// reference already used with another email, and only then returns the PDF (kept in the owner's Drive) and
+// its password. Until the script's address is in MATHS_PAY.verify, the details go to the owner by email
+// (FormSubmit) and the PDF is sent by hand. The first version (an instant password on trust) let a made-up
+// reference in (owner's report, 22 November 2026); the PDF is no longer on the site.
 const MATHS_PAY = {
   upi: 'lalitbhardwaj2002asr@okhdfcbank',
   payee: 'Lalit Bhardwaj',
   fee: 10,
   qr: 'data/net/maths/upi-qr.svg',          // made from the same upi://pay link, amount included
-  mail: 'https://formsubmit.co/ajax/lalitbhardwaj2001asr@gmail.com',
+  verify: '',                               // the Apps Script web app address (…/exec), once deployed
+  mail: 'https://formsubmit.co/ajax/lalitbhardwaj2001asr@gmail.com',   // by-hand delivery until then
   saved: 'gsh-maths-pdf-sent',
 };
 const upiLink = () => `upi://pay?pa=${MATHS_PAY.upi}&pn=${encodeURIComponent(MATHS_PAY.payee)}&am=${MATHS_PAY.fee}.00&cu=INR&tn=${encodeURIComponent('GS HOUSE maths notes PDF')}`;
 function mathsSent() {
   try { return JSON.parse(localStorage.getItem(MATHS_PAY.saved) || 'null'); } catch { return null; }
 }
+const PAY_REFUSED = {
+  not_found: 'This payment was not found yet. Bank alerts can take a few minutes: check the 12-digit reference and try again shortly.',
+  used: 'This UPI reference has already been used with another email address.',
+  amount: 'This payment is less than the fee.',
+  utr: 'The UPI reference number has 12 digits.',
+  mail: 'Please type a correct email address.',
+  busy: 'The check is busy. Please try again in a minute.',
+};
 
 function openMathsPdf() {
   if (document.querySelector('.dialog-backdrop')) return;
   const P = MATHS_PAY;
+  const checked = !!P.verify;
   const box = document.createElement('div');
   box.className = 'dialog-backdrop';
   let step = '';
+  let got = null;          // { url, name, password } after a checked payment
   const steps = {
     intro: () => `
       <h2 id="dialog-title">📄 Full notes PDF</h2>
       <p>The full notes PDF costs a one-time fee of <b>₹${P.fee}</b>.</p>
-      <p class="small">Pay by UPI and send the payment's reference number. The PDF is emailed to you as soon as the payment is confirmed.</p>
+      <p class="small">${checked
+        ? 'Pay by UPI and type the payment\'s reference number. As soon as the payment is found, the PDF is yours to save, and a copy is emailed to you.'
+        : 'Pay by UPI and send the payment\'s reference number. The PDF is emailed to you as soon as the payment is confirmed.'}</p>
       <div class="dialog-actions">
         <button class="btn" data-pay="close">Not now</button>
         <button class="btn primary" data-pay="pay">Pay ₹${P.fee} ▶</button>
@@ -1730,21 +1745,35 @@ function openMathsPdf() {
         <button class="btn" data-pay="intro">‹ Back</button>
         <button class="btn primary" data-pay="form">I have paid ▶</button>
       </div>`,
-    form: () => `
+    form: () => {
+      const s = mathsSent() || {};
+      return `
       <h2 id="dialog-title">Your payment</h2>
       <form class="pay-form" novalidate>
-        <label class="field">Your name<input name="payer" autocomplete="name" maxlength="80"></label>
-        <label class="field">Your email<input name="mail" type="email" autocomplete="email" maxlength="120"></label>
-        <label class="field">UPI reference number (12 digits)<input name="utr" inputmode="numeric" autocomplete="off" maxlength="14"></label>
-        <p class="small">It is in your UPI app, in the details of this payment (UPI Ref. No. or UTR). Your name, email and reference go to the site owner by email (through FormSubmit), only to find your payment and send you the PDF.</p>
+        <label class="field">Your name<input name="payer" autocomplete="name" maxlength="80" value="${esc(s.name || '')}"></label>
+        <label class="field">Your email<input name="mail" type="email" autocomplete="email" maxlength="120" value="${esc(s.mail || '')}"></label>
+        <label class="field">UPI reference number (12 digits)<input name="utr" inputmode="numeric" autocomplete="off" maxlength="14" value="${esc(s.utr || '')}"></label>
+        <p class="small">It is in your UPI app, in the details of this payment (UPI Ref. No. or UTR). ${checked
+          ? 'Your name, email and reference go to the site owner\'s payment check, only to find your payment and send you the PDF.'
+          : 'Your name, email and reference go to the site owner by email (through FormSubmit), only to find your payment and send you the PDF.'}</p>
         <p class="pay-err" role="alert" hidden></p>
         <div class="dialog-actions">
           <button type="button" class="btn" data-pay="pay">‹ Back</button>
-          <button type="submit" class="btn primary">Send ▶</button>
+          <button type="submit" class="btn primary">${checked ? 'Check payment ▶' : 'Send ▶'}</button>
         </div>
-      </form>`,
+      </form>`;
+    },
     sent: () => {
       const s = mathsSent() || {};
+      if (checked) {
+        return `
+      <h2 id="dialog-title">✅ Payment found</h2>
+      <p>You paid with UPI ref ${esc(s.utr || '')}. Get the PDF again on this device:</p>
+      <div class="dialog-actions">
+        <button class="btn" data-pay="close">Close</button>
+        <button class="btn primary" data-pay="again">📄 Get the PDF</button>
+      </div>`;
+      }
       return `
       <h2 id="dialog-title">✅ Details sent</h2>
       <p>Thank you! Once your payment${s.utr ? ` (UPI ref ${esc(s.utr)})` : ''} is confirmed, the PDF is emailed to <b>${esc(s.mail || 'you')}</b>.</p>
@@ -1754,6 +1783,15 @@ function openMathsPdf() {
         <button class="btn primary" data-pay="close">Close</button>
       </div>`;
     },
+    done: () => `
+      <h2 id="dialog-title">✅ Payment found</h2>
+      <p>Thank you! Your PDF is ready${got.password ? '. It opens with the password:' : '.'}</p>
+      ${got.password ? `<div class="upi-id"><code>${esc(got.password)}</code><button class="btn" data-pay="copy-pass">Copy</button></div>` : ''}
+      <p class="small">A copy has also been emailed to you. Keep the file: it works on any device.</p>
+      <div class="dialog-actions">
+        <button class="btn" data-pay="close">Close</button>
+        <a class="btn primary" href="${got.url}" download="${esc(got.name)}">📄 Save the PDF</a>
+      </div>`,
   };
   const show = (name) => {
     step = name;
@@ -1761,35 +1799,39 @@ function openMathsPdf() {
     const first = box.querySelector('input, .btn.primary');
     if (first) first.focus();
   };
-  const close = () => { document.removeEventListener('keydown', onKey, true); box.remove(); };
+  const close = () => {
+    document.removeEventListener('keydown', onKey, true);
+    if (got) URL.revokeObjectURL(got.url);
+    box.remove();
+  };
   const onKey = (e) => { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); close(); } };
   const copy = async (btn, text) => {
     try { await navigator.clipboard.writeText(text); btn.textContent = 'Copied ✓'; } catch { btn.textContent = 'Select and copy'; }
     setTimeout(() => { btn.textContent = 'Copy'; }, 1800);
   };
-  box.addEventListener('click', (e) => {
-    if (e.target === box) { if (step !== 'form') close(); return; }   // a stray tap must not lose a half-filled form
-    const b = e.target.closest('[data-pay]');
-    if (!b) return;
-    const k = b.dataset.pay;
-    if (k === 'close') close();
-    else if (k === 'copy-upi') copy(b, P.upi);
-    else show(k);
-  });
-  box.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const f = e.target;
-    const err = f.querySelector('.pay-err');
-    const payer = f.elements.payer.value.trim();
-    const mail = f.elements.mail.value.trim();
-    const utr = f.elements.utr.value.replace(/\s+/g, '');
-    const problem = !payer ? 'Please type your name.'
-      : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail) ? 'Please type a correct email address.'
-      : !/^\d{12}$/.test(utr) ? 'The UPI reference number has 12 digits.' : '';
-    if (problem) { err.textContent = problem; err.hidden = false; return; }
-    const go = f.querySelector('[type="submit"]');
-    go.disabled = true;
-    go.textContent = 'Sending…';
+  const remember = (data) => { try { localStorage.setItem(P.saved, JSON.stringify({ ...data, at: Date.now() })); } catch { /* private window */ } };
+
+  // Ask the owner's payment check; resolves to null when the PDF is ready, or to a message for the reader.
+  const check = async (payer, mail, utr) => {
+    let out;
+    try {
+      const res = await fetch(P.verify, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },   // a simple request: no CORS preflight
+        body: JSON.stringify({ name: payer, mail, utr }),
+      });
+      out = await res.json();
+    } catch {
+      return 'The payment check could not be reached. Check the internet connection and try again.';
+    }
+    if (!out || !out.ok || !out.file) return PAY_REFUSED[out && out.reason] || 'Something went wrong. Please try again in a minute.';
+    const bytes = Uint8Array.from(atob(out.file), (c) => c.charCodeAt(0));
+    got = { url: URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' })), name: out.name || 'UP-TGT-PGT-Mathematics-Notes.pdf', password: out.password || '' };
+    remember({ name: payer, mail, utr });
+    return null;
+  };
+  // Hand-delivery: the details go to the owner by email.
+  const send = async (payer, mail, utr) => {
     try {
       const res = await fetch(P.mail, {
         method: 'POST',
@@ -1805,14 +1847,53 @@ function openMathsPdf() {
       const out = await res.json().catch(() => ({}));
       if (!res.ok || String(out.success) !== 'true') throw new Error(out.message || `HTTP ${res.status}`);
     } catch {
-      err.textContent = 'Your details could not be sent just now. Check the internet connection and try again.';
+      return 'Your details could not be sent just now. Check the internet connection and try again.';
+    }
+    remember({ name: payer, mail, utr });
+    return null;
+  };
+
+  box.addEventListener('click', async (e) => {
+    if (e.target === box) { if (step !== 'form') close(); return; }   // a stray tap must not lose a half-filled form
+    const b = e.target.closest('[data-pay]');
+    if (!b) return;
+    const k = b.dataset.pay;
+    if (k === 'close') close();
+    else if (k === 'copy-upi') copy(b, P.upi);
+    else if (k === 'copy-pass') copy(b, got.password);
+    else if (k === 'again') {
+      const s = mathsSent() || {};
+      b.disabled = true;
+      b.textContent = 'Checking…';
+      const problem = await check(s.name || '', s.mail || '', s.utr || '');
+      if (problem) { show('form'); const err = box.querySelector('.pay-err'); err.textContent = problem; err.hidden = false; } else show('done');
+    } else show(k);
+  });
+  box.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const err = f.querySelector('.pay-err');
+    const payer = f.elements.payer.value.trim();
+    const mail = f.elements.mail.value.trim();
+    const utr = f.elements.utr.value.replace(/\s+/g, '');
+    const problem = !payer ? 'Please type your name.'
+      : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail) ? 'Please type a correct email address.'
+      : !/^\d{12}$/.test(utr) ? 'The UPI reference number has 12 digits.' : '';
+    if (problem) { err.textContent = problem; err.hidden = false; return; }
+    const go = f.querySelector('[type="submit"]');
+    const label = go.textContent;
+    go.disabled = true;
+    go.textContent = checked ? 'Checking…' : 'Sending…';
+    err.hidden = true;
+    const refused = checked ? await check(payer, mail, utr) : await send(payer, mail, utr);
+    if (refused) {
+      err.textContent = refused;
       err.hidden = false;
       go.disabled = false;
-      go.textContent = 'Send ▶';
+      go.textContent = label;
       return;
     }
-    try { localStorage.setItem(P.saved, JSON.stringify({ utr, mail, at: Date.now() })); } catch { /* private window */ }
-    show('sent');
+    show(checked ? 'done' : 'sent');
   });
   document.addEventListener('keydown', onKey, true);
   document.body.appendChild(box);

@@ -20,9 +20,13 @@ The derivative $f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}$ is the **slope
 | $\sec^{-1} x$ | $\frac{1}{\lvert x \rvert\sqrt{x^2 - 1}}$ | $\text{cosec}^{-1} x$ | $-\frac{1}{\lvert x \rvert\sqrt{x^2 - 1}}$ |
 | $\sinh x$, $\cosh x$ | $\cosh x$, $\sinh x$ | $\tanh x$ | $\text{sech}^2 x$ |
 
+! check | Conditions added
+Each formula holds where the function is differentiable: $\log x$ needs $x > 0$ and $a^x$ needs $a > 0$; for a general real $n$, $x^n$ needs $x > 0$. $\sin^{-1} x$ and $\cos^{-1} x$ need $\lvert x \rvert < 1$; $\sec^{-1} x$ and $\text{cosec}^{-1} x$ need $\lvert x \rvert > 1$ (at $x = \pm 1$ none of these four has a derivative).
+
 ! example | Question D1 — from the notes (chain rule)
 Differentiate (a) $\sin(x^2)$, (b) $\sin(\cos x^2)$.
-**Solution.** (a) $\cos(x^2) \cdot 2x = \boxed{2x\cos x^2}$. (b) $\cos(\cos x^2) \cdot (-\sin x^2) \cdot 2x = \boxed{-2x\sin x^2\cos(\cos x^2)}$.
+**Solution.** (a) $\cos(x^2) \cdot 2x = \boxed{2x\cos x^2}$. (b)
+$$\begin{aligned} &\cos(\cos x^2) \cdot (-\sin x^2) \cdot 2x \\ &= \boxed{-2x\sin x^2\cos(\cos x^2)}. \end{aligned}$$
 
 ! example | Question D2 — from the notes (implicit)
 Find $\frac{dy}{dx}$ if (a) $x - y = \pi$, (b) $y + \sin y = \cos x$, (c) $xy + y^2 = \tan x + y$.
@@ -34,19 +38,23 @@ Differentiate (a) $y = \sin^{-1}\frac{2x}{1 + x^2}$, (b) $y = \sin^{-1}\frac{1 -
 
 ! example | Question D4 — from the notes (exponential, quotient)
 Differentiate (a) $e^{x^3}$, (b) $e^x + e^{x^2} + \cdots + e^{x^5}$, (c) $\frac{\cos x}{\log x}$.
-**Solution.** (a) $\boxed{3x^2e^{x^3}}$. (b) $\boxed{e^x + 2xe^{x^2} + 3x^2e^{x^3} + 4x^3e^{x^4} + 5x^4e^{x^5}}$. (c)
-$$\frac{\log x(-\sin x) - \cos x \cdot \frac{1}{x}}{(\log x)^2} = \boxed{-\frac{x\sin x\log x + \cos x}{x(\log x)^2}}.$$
+**Solution.** (a) $\boxed{3x^2e^{x^3}}$. (b)
+$$\begin{aligned} &e^x + 2xe^{x^2} + 3x^2e^{x^3} \\ &\quad + 4x^3e^{x^4} + 5x^4e^{x^5}. \end{aligned}$$
+(c)
+$$\begin{aligned} &\frac{\log x(-\sin x) - \cos x \cdot \frac{1}{x}}{(\log x)^2} \\ &= \boxed{-\frac{x\sin x\log x + \cos x}{x(\log x)^2}}. \end{aligned}$$
 
 ! example | Question D5 — from the notes (logarithmic differentiation)
 Differentiate (a) $y = \sqrt{\frac{(x - 3)(x^2 + 4)}{3x^2 + 4x + 5}}$, (b) $y = x^{\sin x}$, (c) $y = x^x - 2^{\sin x}$.
-**Solution.** (a) $\log y = \frac{1}{2}[\log(x - 3) + \log(x^2 + 4) - \log(3x^2 + 4x + 5)]$, so
-$$y' = \boxed{\frac{y}{2}\left[\frac{1}{x - 3} + \frac{2x}{x^2 + 4} - \frac{6x + 4}{3x^2 + 4x + 5}\right]}.$$
-(b) $\log y = \sin x\log x \Rightarrow \frac{y'}{y} = \cos x\log x + \frac{\sin x}{x} \Rightarrow y' = \boxed{x^{\sin x}\left[\frac{\sin x}{x} + \cos x\log x\right]}$. (c) $\frac{d}{dx}x^x = x^x(1 + \log x)$, $\frac{d}{dx}2^{\sin x} = 2^{\sin x}\cos x\log 2$: $y' = \boxed{x^x(1 + \log x) - 2^{\sin x}\cos x\log 2}$.
+**Solution.** (a)
+$$\begin{aligned} &\log y = \frac{1}{2}\big[\log(x - 3) \\ &\quad + \log(x^2 + 4) \\ &\quad - \log(3x^2 + 4x + 5)\big], \end{aligned}$$
+so
+$$y' = \boxed{\begin{aligned} &\frac{y}{2}\left[\frac{1}{x - 3} + \frac{2x}{x^2 + 4}\right. \\ &\left.\quad - \frac{6x + 4}{3x^2 + 4x + 5}\right] \end{aligned}}.$$
+(b) $\log y = \sin x\log x \Rightarrow \frac{y'}{y} = \cos x\log x + \frac{\sin x}{x}$ $\Rightarrow y' = \boxed{x^{\sin x}\left[\frac{\sin x}{x} + \cos x\log x\right]}$. (c) $\frac{d}{dx}x^x = x^x(1 + \log x)$, $\frac{d}{dx}2^{\sin x} = 2^{\sin x}\cos x\log 2$: $y' = \boxed{x^x(1 + \log x) - 2^{\sin x}\cos x\log 2}$.
 
 ! example | Question D6 — from the notes
 If $y^x + x^y + x^x = a^b$, find $\frac{dy}{dx}$.
 **Solution.** $\frac{d}{dx}y^x = y^x\left(\log y + \frac{x}{y}y'\right)$, $\frac{d}{dx}x^y = x^y\left(y'\log x + \frac{y}{x}\right)$, $\frac{d}{dx}x^x = x^x(1 + \log x)$. Sum $= 0$:
-$$y' = \boxed{-\frac{y^x\log y + yx^{y-1} + x^x(1 + \log x)}{xy^{x-1} + x^y\log x}}$$
+$$y' = \boxed{-\frac{\begin{gathered} y^x\log y + yx^{y-1} \\ + x^x(1 + \log x) \end{gathered}}{xy^{x-1} + x^y\log x}}$$
 
 ! example | Question D7 — from the notes (parametric, second order)
 (a) $x = a\cos\theta$, $y = a\sin\theta$: find $\frac{dy}{dx}$. (b) $y = x^3 + \tan x$: find $y''$. (c) $y = \sin^{-1} x$: show $(1 - x^2)y'' - xy' = 0$.
@@ -54,6 +62,9 @@ $$y' = \boxed{-\frac{y^x\log y + yx^{y-1} + x^x(1 + \log x)}{xy^{x-1} + x^y\log 
 
 ! trick | Shortcut / time-saver
 For $\sin^{-1}\frac{2x}{1 + x^2}$, $\cos^{-1}\frac{1 - x^2}{1 + x^2}$, $\tan^{-1}\frac{2x}{1 - x^2}$ put $x = \tan\theta$ (answer $\pm\frac{2}{1 + x^2}$). For $\sqrt{1 - x^2}$ put $x = \sin\theta$; for $\sqrt{\frac{1 - x}{1 + x}}$ put $x = \cos 2\theta$. Always: $\frac{d}{dx}f^g = f^g\left[g'\log f + \frac{g}{f}f'\right]$.
+
+! check | A condition added
+The rule for $f^g$ needs $f > 0$: it comes from writing $f^g = e^{g\log f}$ and differentiating the exponent, $g\log f$.
 
 ## What it means
 
@@ -69,7 +80,7 @@ Differentiate $f(x) = \sqrt{x}$ from first principles.
 
 ! example | Example 2 — a parametric second derivative
 For $x = t^2$, $y = t^3$, find $\frac{d^2y}{dx^2}$.
-**Solution.** $\frac{dy}{dx} = \frac{3t^2}{2t} = \frac{3t}{2}$. Then $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{3t}{2}\right) \div 2t = \frac{3}{2} \cdot \frac{1}{2t} = \boxed{\frac{3}{4t}}$.
+**Solution.** $\frac{dy}{dx} = \frac{3t^2}{2t} = \frac{3t}{2}$. Then $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{3t}{2}\right) \div 2t = \frac{3}{2} \cdot \frac{1}{2t} = \boxed{\frac{3}{4t}}$ (for $t \neq 0$).
 
 ! example | Example 3 — the derivative of $x^x$ at a point
 Find the slope of $y = x^x$ at $x = 1$ and at $x = e$.

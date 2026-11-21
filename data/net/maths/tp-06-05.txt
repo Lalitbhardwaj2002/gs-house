@@ -8,10 +8,13 @@
 ! note | Maxima and minima
 ^ data/net/maths/fig/max-min.svg | horizontal tangents ($f' = 0$) at a local maximum and a local minimum
 - **Critical points**: $f'(c) = 0$ or $f'(c)$ does not exist. Every local extremum is a critical point (not conversely).
-- **First derivative test**: $f'$ changes $+ \to -$: local max; $- \to +$: local min; no change: point of inflection.
+- **First derivative test**: $f'$ changes $+ \to -$: local max; $- \to +$: local min; no change: neither (often a point of inflection).
 - **Second derivative test**: $f'(c) = 0$ and $f''(c) < 0$: max; $f''(c) > 0$: min; $f''(c) = 0$: test fails.
 - **Absolute** max/min on $[a, b]$: compare $f$ at all critical points and at $a, b$.
 - Two variables: at a stationary point with $r = f_{xx}$, $s = f_{xy}$, $t = f_{yy}$: $rt - s^2 > 0, \ r < 0$ max; $rt - s^2 > 0, \ r > 0$ min; $rt - s^2 < 0$ saddle; $rt - s^2 = 0$ doubtful.
+
+! check | A statement made precise
+When $f'$ keeps its sign on both sides of $c$, $f$ has neither a maximum nor a minimum at $c$. NCERT calls such a point a point of inflection, and for $x^3$ at 0 it is one; but not always: $f(x) = 3x + \lvert x \rvert$ has the critical point 0 ($f'$ is 2 on the left, 4 on the right) and is convex, so its bending never changes.
 
 ! example | Question MM1 — from the notes (NCERT Ex. 29)
 Find the local maxima and minima of $f(x) = x^3 - 3x + 3$.
@@ -35,7 +38,10 @@ Find two numbers whose sum is 15 and the sum of whose squares is minimum.
 Find the shortest distance of the point $(0, c)$ from the parabola $y = x^2$.
 **Solution.**
 ^ data/net/maths/fig/nearest-point.svg | the nearest point of $y = x^2$ to $(0, c)$
-Point $(h, k)$ on the parabola: $h^2 = k$. $D^2 = h^2 + (k - c)^2 = k + (k - c)^2$. $\frac{d(D^2)}{dk} = 1 + 2(k - c) = 0 \Rightarrow k = \frac{2c - 1}{2}$ (needs $k \geq 0$, i.e. $c \geq \frac{1}{2}$); second derivative $2 > 0$ (min). Then $D^2 = \frac{2c - 1}{2} + \frac{1}{4} = \frac{4c - 1}{4}$. If $c \geq \frac{1}{2}$: $\boxed{D = \frac{\sqrt{4c - 1}}{2}}$ (NCERT states the range $\frac{1}{2} \leq c \leq 5$). If $c \leq \frac{1}{2}$: nearest point is the origin, $D = c$.
+Point $(h, k)$ on the parabola: $h^2 = k$. $D^2 = h^2 + (k - c)^2 = k + (k - c)^2$. $\frac{d(D^2)}{dk} = 1 + 2(k - c) = 0 \Rightarrow k = \frac{2c - 1}{2}$ (needs $k \geq 0$, i.e. $c \geq \frac{1}{2}$); second derivative $2 > 0$ (min). Then $D^2 = \frac{2c - 1}{2} + \frac{1}{4} = \frac{4c - 1}{4}$. If $c \geq \frac{1}{2}$: $\boxed{D = \frac{\sqrt{4c - 1}}{2}}$ (NCERT states the range $\frac{1}{2} \leq c \leq 5$). If $c \leq \frac{1}{2}$: nearest point is the origin, $D = \lvert c \rvert$.
+
+! check | A slip in the notes
+The notes give $D = c$ for $c \leq \frac{1}{2}$, which is negative when $c < 0$. For $c < \frac{1}{2}$ and every $k \geq 0$, $\frac{d(D^2)}{dk} = 1 + 2(k - c) > 0$, so the least $D^2$ is at $k = 0$, the origin: $D = \lvert c \rvert$. For $c \geq \frac{1}{2}$ there are two nearest points, $\left(\pm\sqrt{c - \frac{1}{2}}, c - \frac{1}{2}\right)$; at $c = \frac{1}{2}$ both answers give $\frac{1}{2}$.
 
 ! example | Question MM6 — from the notes (NCERT Ex. 38)
 Show that the cylinder of greatest curved surface inscribed in a cone of radius $r$ and height $h$ has radius $\frac{r}{2}$.
@@ -60,6 +66,9 @@ Find the extreme values of $f = x^3 + y^3 - 3axy$ ($a > 0$).
 - Cylinder in a sphere of radius $R$: max volume when $h = \frac{2R}{\sqrt{3}}$. Cone in a sphere: max volume when $h = \frac{4R}{3}$.
 - Open box from a square sheet of side $a$: cut squares of side $\frac{a}{6}$. Closed cylinder of given volume, least surface: $h = 2r$.
 - $a\sin x + b\cos x$ lies between $\pm\sqrt{a^2 + b^2}$; for $x > 0$, $x + \frac{k}{x} \geq 2\sqrt{k}$.
+
+! check | A condition added
+$x + \frac{k}{x} \geq 2\sqrt{k}$ needs $k > 0$; equality holds at $x = \sqrt{k}$. For $k < 0$ the sum takes every real value on $x > 0$.
 
 ## What it means
 

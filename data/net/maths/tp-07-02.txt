@@ -25,12 +25,12 @@ Evaluate $\int \frac{2x}{1 + x^2}\,dx$ and $\int \sin^3 x\cos x\,dx$.
 ! example | Question IN2 — standard (by parts)
 Evaluate $\int xe^x\,dx$ and $\int \log x\,dx$.
 **Solution.** (i) $u = x$: $xe^x - \int e^x\,dx = \boxed{e^x(x - 1) + C}$. (ii)
-$$\begin{aligned} \int 1 \cdot \log x\,dx &= x\log x - \int x \cdot \frac{1}{x}\,dx \\ &= \boxed{x\log x - x + C}. \end{aligned}$$
+$$\begin{aligned} &\int 1 \cdot \log x\,dx \\ &= x\log x - \int x \cdot \frac{1}{x}\,dx \\ &= \boxed{x\log x - x + C}. \end{aligned}$$
 
 ! example | Question IN3 — standard (partial fractions)
 Evaluate $\int \frac{x + 1}{(x - 1)(x - 2)}\,dx$.
 **Solution.** Cover-up: $A = \frac{1 + 1}{1 - 2} = -2$, $B = \frac{2 + 1}{2 - 1} = 3$.
-$$\begin{aligned} &\int \left(\frac{-2}{x - 1} + \frac{3}{x - 2}\right)dx \\ &= \boxed{-2\log\lvert x - 1 \rvert + 3\log\lvert x - 2 \rvert + C}. \end{aligned}$$
+$$\begin{aligned} &\int \left(\frac{-2}{x - 1} + \frac{3}{x - 2}\right)dx \\ &= \boxed{\begin{aligned} &-2\log\lvert x - 1 \rvert \\ &+ 3\log\lvert x - 2 \rvert + C \end{aligned}}. \end{aligned}$$
 
 ! example | Question IN4 — standard ($e^x[f + f']$ rule)
 Evaluate $\int e^x(\tan x + \sec^2 x)\,dx$.
@@ -50,7 +50,7 @@ Evaluate $\int e^x(\tan x + \sec^2 x)\,dx$.
 ! example | Example 1 — by parts twice
 Evaluate $\int x^2e^x\,dx$.
 **Solution.** By parts with $u = x^2$, then IN2 (i) for $\int xe^x\,dx$:
-$$\begin{aligned} \int x^2e^x\,dx &= x^2e^x - \int 2xe^x\,dx \\ &= x^2e^x - 2(x - 1)e^x \\ &= \boxed{e^x(x^2 - 2x + 2) + C}. \end{aligned}$$
+$$\begin{aligned} &\int x^2e^x\,dx \\ &= x^2e^x - \int 2xe^x\,dx \\ &= x^2e^x - 2(x - 1)e^x \\ &= \boxed{e^x(x^2 - 2x + 2) + C}. \end{aligned}$$
 
 ! example | Example 2 — a repeated factor
 Evaluate $\int \frac{dx}{(x - 1)^2(x + 2)}$.

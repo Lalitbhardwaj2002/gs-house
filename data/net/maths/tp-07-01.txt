@@ -18,8 +18,8 @@ Integration is the reverse of differentiation: $\int f(x)\,dx = F(x) + C$ where 
 | $\int \frac{dx}{x^2 - a^2}$ | $\frac{1}{2a}\log\left\lvert \frac{x - a}{x + a} \right\rvert$ | $\int \frac{dx}{a^2 - x^2}$ | $\frac{1}{2a}\log\left\lvert \frac{a + x}{a - x} \right\rvert$ |
 | $\int \frac{dx}{x^2 + a^2}$ | $\frac{1}{a}\tan^{-1}\frac{x}{a}$ | $\int \frac{dx}{\sqrt{a^2 - x^2}}$ | $\sin^{-1}\frac{x}{a}$ |
 | $\int \frac{dx}{\sqrt{x^2 \pm a^2}}$ | $\log\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert$ | $\int \frac{dx}{x\sqrt{x^2 - 1}}$ | $\sec^{-1} x$ |
-$$\int \sqrt{a^2 - x^2}\,dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\frac{x}{a}$$
-$$\int \sqrt{x^2 \pm a^2}\,dx = \frac{x}{2}\sqrt{x^2 \pm a^2} \pm \frac{a^2}{2}\log\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert$$
+$$\begin{aligned} &\int \sqrt{a^2 - x^2}\,dx \\ &= \frac{x}{2}\sqrt{a^2 - x^2} \\ &\quad + \frac{a^2}{2}\sin^{-1}\frac{x}{a} \end{aligned}$$
+$$\begin{aligned} &\int \sqrt{x^2 \pm a^2}\,dx \\ &= \frac{x}{2}\sqrt{x^2 \pm a^2} \\ &\quad \pm \frac{a^2}{2}\log\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert \end{aligned}$$
 $$\int e^x[f(x) + f'(x)]\,dx = e^xf(x)$$
 
 ! check | A modulus and conditions added
@@ -27,9 +27,9 @@ The two $\log\tan$ forms need a modulus, now written in: $\sec x + \tan x = \tan
 
 ## What it means
 
-- **The constant $C$**: two functions with the same derivative differ by a constant, so every indefinite integral carries "$+ C$". Two answers that look different may both be right: $\int \sin x\cos x\,dx$ is $\frac{\sin^2 x}{2}$ or $-\frac{\cos^2 x}{2}$, which differ by $\frac{1}{2}$.
+- **The constant $C$**: two functions with the same derivative on an interval differ by a constant there, so every indefinite integral carries "$+ C$". Two answers that look different may both be right: $\int \sin x\cos x\,dx$ is $\frac{\sin^2 x}{2}$ or $-\frac{\cos^2 x}{2}$, which differ by $\frac{1}{2}$.
 - **Check by differentiating**: the derivative of the answer must give back the integrand. For example
-$$\begin{aligned} \frac{d}{dx}\log\lvert \sec x + \tan x \rvert &= \frac{\sec x\tan x + \sec^2 x}{\sec x + \tan x} \\ &= \sec x. \end{aligned}$$
+$$\begin{aligned} &\frac{d}{dx}\log\lvert \sec x + \tan x \rvert \\ &= \frac{\sec x\tan x + \sec^2 x}{\sec x + \tan x} = \sec x. \end{aligned}$$
 - **Linear substitution**: if $\int f(x)\,dx = F(x)$ and $a \neq 0$, then $\int f(ax + b)\,dx = \frac{1}{a}F(ax + b)$. So $\int \cos 3x\,dx = \frac{\sin 3x}{3}$ and $\int e^{2x + 1}\,dx = \frac{e^{2x+1}}{2}$.
 - The form $\int e^x[f + f']\,dx = e^xf$ follows from $(e^xf)' = e^x(f + f')$.
 

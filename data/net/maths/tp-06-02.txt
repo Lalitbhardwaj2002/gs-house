@@ -7,14 +7,21 @@
 
 ! note | Partial differentiation and Euler's theorem
 $u_x = \frac{\partial u}{\partial x}$ is found by treating $y$ as a constant. If $u$ is **homogeneous of degree** $n$ (i.e. $u = x^n f(y/x)$, or $u(tx, ty) = t^n u$), then (Euler)
-$$xu_x + yu_y = nu, \qquad x^2u_{xx} + 2xyu_{xy} + y^2u_{yy} = n(n - 1)u.$$
+$$\begin{aligned} &xu_x + yu_y = nu, \\ &x^2u_{xx} + 2xyu_{xy} + y^2u_{yy} \\ &\quad = n(n - 1)u. \end{aligned}$$
+
+! check | Conditions added
+Euler's theorem needs $u$ to have continuous first partial derivatives, and the second formula continuous second partial derivatives. $u(tx, ty) = t^nu$ is asked for every $t > 0$: $\sqrt{x^2 + y^2}$ is homogeneous of degree 1 in this sense, and $xu_x + yu_y = u$ holds away from the origin, where its derivatives exist.
 
 ! addon | Corollaries, total derivative, Jacobian
 If $f(u)$ is homogeneous of degree $n$: $xu_x + yu_y = n\frac{f(u)}{f'(u)}$. Total derivative $\frac{du}{dt} = u_x\frac{dx}{dt} + u_y\frac{dy}{dt}$; implicit $\frac{dy}{dx} = -\frac{f_x}{f_y}$; Jacobian $\frac{\partial(x, y)}{\partial(r, \theta)} = r$.
 
+! check | Conditions added
+The corollary divides by $f'(u)$, so it needs $f'(u) \neq 0$ (in PD2, $f(u) = \tan u$ has $f'(u) = \sec^2 u \neq 0$). The implicit derivative $-\frac{f_x}{f_y}$ needs $f_y \neq 0$.
+
 ! example | Question PD1 — standard
 If $u = x^3 + y^3 + 3x^2y$, verify Euler's theorem.
-**Solution.** Degree $n = 3$. $u_x = 3x^2 + 6xy$, $u_y = 3y^2 + 3x^2$. $xu_x + yu_y = 3x^3 + 6x^2y + 3y^3 + 3x^2y = 3(x^3 + y^3 + 3x^2y) = 3u$ ✓.
+**Solution.** Degree $n = 3$. $u_x = 3x^2 + 6xy$, $u_y = 3y^2 + 3x^2$.
+$$\begin{aligned} &xu_x + yu_y \\ &= 3x^3 + 6x^2y + 3y^3 + 3x^2y \\ &= 3(x^3 + y^3 + 3x^2y) \\ &= 3u \ \checkmark. \end{aligned}$$
 
 ! example | Question PD2 — standard
 If $u = \tan^{-1}\frac{x^3 + y^3}{x - y}$, show that $xu_x + yu_y = \sin 2u$.

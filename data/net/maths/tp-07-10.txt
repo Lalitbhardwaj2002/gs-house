@@ -38,7 +38,7 @@ A metal sphere of radius 6 cm is melted and recast into a cylinder of radius 4 c
 ! example | Example 2 — a bucket (frustum)
 A bucket is 30 cm deep, with radii 20 cm at the top and 10 cm at the bottom. How many litres does it hold? ($\pi = \frac{22}{7}$)
 **Solution.**
-$$V = \frac{1}{3}\pi \cdot 30(400 + 100 + 200) = 7000\pi = 7000 \cdot \frac{22}{7} = 22000\text{ cm}^3 = \boxed{22\text{ litres}}.$$
+$$\begin{aligned} &V = \frac{1}{3}\pi \cdot 30(400 + 100 + 200) \\ &= 7000\pi = 7000 \cdot \frac{22}{7} \\ &= 22000\text{ cm}^3 = \boxed{22\text{ litres}}. \end{aligned}$$
 
 ! example | Example 3 — a change of scale
 The radius of a sphere is increased by 10%. By what percentage do its surface and its volume increase?

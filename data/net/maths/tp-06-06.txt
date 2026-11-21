@@ -20,6 +20,14 @@ $$f'(c) = \frac{f(b) - f(a)}{b - a}$$
 - **L'Hospital**: for $\frac{0}{0}$ or $\frac{\infty}{\infty}$, $\lim\frac{f}{g} = \lim\frac{f'}{g'}$.
 - **Leibnitz**: $(uv)_n = \sum_{r=0}^{n} {}^nC_r\, u_{n-r}v_r$. $\frac{d^n}{dx^n}(ax + b)^{-1} = \frac{(-1)^n n!\,a^n}{(ax + b)^{n+1}}$; $\frac{d^n}{dx^n}\sin(ax + b) = a^n\sin\left(ax + b + \frac{n\pi}{2}\right)$; $\frac{d^n}{dx^n}(ax + b)^m = \frac{m!}{(m - n)!}a^n(ax + b)^{m-n}$; $\frac{d^n}{dx^n}\log(ax + b) = \frac{(-1)^{n-1}(n - 1)!\,a^n}{(ax + b)^n}$; $\frac{d^n}{dx^n}e^{ax}\sin(bx + c) = r^ne^{ax}\sin(bx + c + n\phi)$ with $r = \sqrt{a^2 + b^2}$, $\phi = \tan^{-1}\frac{b}{a}$.
 
+! check | Conditions added
+- Cauchy's theorem needs $f$ and $g$ continuous on $[a, b]$ and differentiable on $(a, b)$, with $g' \neq 0$ on $(a, b)$.
+- $c = \sqrt{ab}$ for $\frac{1}{x}$ needs $0 < a < b$ (for $a < b < 0$ it is $c = -\sqrt{ab}$); the value for $\sqrt{x}$ needs $0 \leq a < b$.
+- Taylor's theorem with remainder $R_n$ needs $f^{(n-1)}$ continuous on $[a, a + h]$ and $f^{(n)}$ to exist between; the infinite series equals $f(a + h)$ only when $R_n \to 0$.
+- L'Hospital's rule needs $\lim\frac{f'}{g'}$ to exist (or to be $\pm\infty$): as $x \to \infty$, $\frac{x + \sin x}{x} \to 1$, although $\frac{f'}{g'} = 1 + \cos x$ has no limit.
+- $\frac{m!}{(m - n)!}$ is for whole numbers $n \leq m$ (for $n > m$ the $n$th derivative is 0); for any other $m$ read it as $m(m - 1)\cdots(m - n + 1)$.
+- In the last formula $\phi$ is fixed by $\cos\phi = \frac{a}{r}$, $\sin\phi = \frac{b}{r}$; this is $\tan^{-1}\frac{b}{a}$ only when $a > 0$.
+
 ! example | Question MV1 — standard (Rolle)
 Verify Rolle's theorem for $f(x) = x^2 - 4x + 3$ on $[1, 3]$.
 **Solution.** Polynomial: continuous and differentiable. $f(1) = 0 = f(3)$. $f'(c) = 2c - 4 = 0 \Rightarrow c = 2 \in (1, 3)$ ✓.
@@ -30,7 +38,9 @@ Find $c$ of Lagrange's MVT for $f(x) = x^3$ on $[1, 2]$.
 
 ! example | Question MV3 — standard (Leibnitz)
 If $y = \sin^{-1} x$, show that $(1 - x^2)y_{n+2} - (2n + 1)xy_{n+1} - n^2y_n = 0$.
-**Solution.** From D7(c) (in the topic on derivatives): $(1 - x^2)y_2 - xy_1 = 0$. Differentiate $n$ times by Leibnitz: $(1 - x^2)y_{n+2} + n(-2x)y_{n+1} + \frac{n(n - 1)}{2}(-2)y_n - [xy_{n+1} + ny_n] = 0$, which simplifies to $(1 - x^2)y_{n+2} - (2n + 1)xy_{n+1} - n^2y_n = 0$.
+**Solution.** From D7(c) (in the topic on derivatives): $(1 - x^2)y_2 - xy_1 = 0$. Differentiate $n$ times by Leibnitz:
+$$\begin{aligned} &(1 - x^2)y_{n+2} \\ &\quad + n(-2x)y_{n+1} \\ &\quad + \tfrac{n(n - 1)}{2}(-2)y_n \\ &\quad - [xy_{n+1} + ny_n] = 0, \end{aligned}$$
+which simplifies to $(1 - x^2)y_{n+2} - (2n + 1)xy_{n+1} - n^2y_n = 0$.
 
 ## What it means
 
@@ -51,7 +61,8 @@ Find $\lim_{x \to 0} \frac{x - \sin x}{x^3}$.
 
 ! example | Example 3 — Leibnitz with $x^2$
 Find $y_n$ for $y = x^2e^x$.
-**Solution.** Take $u = e^x$, $v = x^2$; only $v$, $v' = 2x$, $v'' = 2$ are non-zero: $y_n = e^x x^2 + n \cdot e^x \cdot 2x + \frac{n(n - 1)}{2}e^x \cdot 2 = \boxed{e^x\left(x^2 + 2nx + n(n - 1)\right)}$.
+**Solution.** Take $u = e^x$, $v = x^2$; only $v$, $v' = 2x$, $v'' = 2$ are non-zero:
+$$\begin{aligned} &y_n = e^x x^2 + n \cdot e^x \cdot 2x \\ &\quad + \tfrac{n(n - 1)}{2}e^x \cdot 2 \\ &= \boxed{e^x\left(x^2 + 2nx + n(n - 1)\right)}. \end{aligned}$$
 
 ? State Rolle's theorem. :: If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$ and $f(a) = f(b)$, then $f'(c) = 0$ for some $c$ in $(a, b)$.
 ? For $f(x) = x^2$ on $[a, b]$, what is $c$ in Lagrange's theorem? :: The arithmetic mean $\frac{a + b}{2}$.

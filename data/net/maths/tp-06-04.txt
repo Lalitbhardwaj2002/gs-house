@@ -12,6 +12,9 @@
 - Normal ($\perp$ tangent): $y - y_0 = -\frac{1}{f'(x_0)}(x - x_0)$.
 - $f'(x_0) = 0$: tangent parallel to the $x$-axis ($y = y_0$). $f'(x_0) \to \infty$: tangent parallel to the $y$-axis ($x = x_0$).
 
+! check | A condition added
+The equation of the normal needs $f'(x_0) \neq 0$. When $f'(x_0) = 0$ the tangent is $y = y_0$ and the normal is the vertical line $x = x_0$; when the tangent is vertical ($x = x_0$), the normal is $y = y_0$.
+
 ! example | Question TN1 — from the notes (NCERT Ex. 15)
 Find the point on the curve $y = \sqrt{4x - 3} - 1$ where the slope of the tangent is $\frac{2}{3}$.
 **Solution.** $\frac{dy}{dx} = \frac{4}{2\sqrt{4x - 3}} = \frac{2}{\sqrt{4x - 3}} = \frac{2}{3} \Rightarrow \sqrt{4x - 3} = 3 \Rightarrow x = 3$, $y = 3 - 1 = 2$. Point $\boxed{(3, 2)}$.

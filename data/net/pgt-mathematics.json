@@ -7,7 +7,7 @@
  "theme": "maths",
  "title": { "en": "PGT Mathematics" },
  "subtitle": { "en": "UPESSC PGT (Lecturer) · subject code 08 · topic-wise notes on the official 2026 syllabus" },
- "pdf": { "href": "data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf", "en": "Full notes PDF" },
+ "pdf": { "en": "Full notes PDF" },
  "about": {
   "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 7 of the notes are ready; the other chapters are being added."
  },
@@ -69,7 +69,7 @@
       { "id": "tp-05-07", "en": "5.7 Continuity and differentiability",
         "key": { "en": "Continuity and kinds of discontinuity · differentiability · continuous functions on a closed interval · Rolle's theorem" } },
       { "id": "tp-06-01", "en": "6.1 Derivative: meaning and rules",
-        "key": { "en": "Derivative from first principles · sum, product, quotient and chain rules · standard derivatives" } },
+        "key": { "en": "Derivative from first principles · sum, product, quotient and chain rules · implicit, logarithmic and parametric differentiation · standard derivatives" } },
       { "id": "tp-06-06", "en": "6.6 Mean value theorems",
         "key": { "en": "Rolle's theorem · Lagrange's and Cauchy's mean value theorems · Taylor's series · L'Hospital's rule · Leibnitz's theorem" } },
       { "id": "tp-06-04", "en": "6.4 Tangents and normals",
@@ -77,7 +77,12 @@
       { "id": "tp-06-03", "en": "6.3 Increasing and decreasing functions",
         "key": { "en": "Sign of the derivative · intervals of increase and decrease · monotonic functions" } },
       { "id": "tp-06-05", "en": "6.5 Maxima and minima",
-        "key": { "en": "Stationary points · first and second derivative tests · greatest and least values · word problems" } },
+        "key": { "en": "Stationary points · first and second derivative tests · greatest and least values · word problems · extrema of functions of two variables" } }
+     ]
+    },
+    {
+     "en": "Partial differentiation and curves",
+     "chapters": [
       { "id": "tp-06-02", "en": "6.2 Partial differentiation and Euler's theorem",
         "key": { "en": "Partial derivatives · homogeneous functions · Euler's theorem and its corollaries · total derivative · Jacobian" } },
       { "id": "tp-06-07", "en": "6.7 Curvature, asymptotes and curve tracing",
@@ -94,7 +99,7 @@
       { "id": "tp-05-05", "en": "5.5 Series",
         "key": { "en": "Definite integral as the limit of a sum · tests of convergence of series" } },
       { "id": "tp-07-03", "en": "7.3 Definite integrals",
-        "key": { "en": "The definite integral · its properties P1–P8 · evaluation" } },
+        "key": { "en": "The definite integral as the limit of a sum · its properties P1–P8 · evaluation" } },
       { "id": "tp-07-04", "en": "7.4 Beta and Gamma functions; Wallis' formula",
         "key": { "en": "Beta and Gamma functions · Wallis' formula · Riemann integration" } },
       { "id": "tp-07-05", "en": "7.5 Area under and between curves",

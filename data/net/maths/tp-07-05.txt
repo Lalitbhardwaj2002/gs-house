@@ -6,7 +6,7 @@
 ## Areas
 
 ! note | Area under and between curves
-^ data/net/maths/fig/two-parabolas.svg | the region between $y^2 = 4ax$ and $x^2 = 4by$, cut into thin vertical strips
+^ data/net/maths/fig/two-parabolas.svg | the region between $y^2 = 4ax$ and $x^2 = 4by$, with one thin vertical strip
 - Area bounded by $y = f(x)$, the $x$-axis and $x = a$, $x = b$: $\int_a^b \lvert y \rvert\,dx$.
 - By $x = g(y)$, the $y$-axis and $y = c$, $y = d$: $\int_c^d \lvert x \rvert\,dy$.
 - Between two curves: $\int_a^b (y_{\text{upper}} - y_{\text{lower}})\,dx$, where $a, b$ are the $x$-coordinates of the intersection points.
@@ -17,7 +17,7 @@
 
 ! example | Question AR1 — standard
 Find the area enclosed by $y^2 = 4ax$ and $x^2 = 4ay$.
-**Solution.** Intersections: $x^4 = 16a^2y^2 = 64a^3x \Rightarrow x = 0, 4a$ (take $a > 0$). Area
+**Solution.** Intersections: $x^4 = 16a^2y^2 = 64a^3x \Rightarrow x = 0, 4a$. Area
 $$\begin{aligned} &= \int_0^{4a}\left(2\sqrt{ax} - \frac{x^2}{4a}\right)dx \\ &= \left[\frac{4}{3}\sqrt{a}\,x^{3/2} - \frac{x^3}{12a}\right]_0^{4a} \\ &= \frac{32a^2}{3} - \frac{16a^2}{3} = \boxed{\frac{16a^2}{3}}. \end{aligned}$$
 
 ! example | Question AR2 — standard
@@ -32,14 +32,14 @@ Find the area bounded by $y = x^2$ and $y = x$.
 Ellipse $\pi ab$. $y^2 = 4ax$ and its latus rectum: $\frac{8a^2}{3}$. $y^2 = 4ax$ and $y = mx$: $\frac{8a^2}{3m^3}$. Parabolic segment $= \frac{2}{3} \times$ enclosing rectangle. One arch of $\sin x$: 2. Cycloid arch $3\pi a^2$; astroid $\frac{3}{8}\pi a^2$; cardioid $\frac{3}{2}\pi a^2$.
 
 ! check | Conditions added
-Here $a > 0$, and $m > 0$ for the line $y = mx$ (for $m < 0$ the area is $\frac{8a^2}{3\lvert m \rvert^3}$). The curves are the cycloid $x = a(t - \sin t)$, $y = a(1 - \cos t)$ (area under one arch), the astroid $x^{2/3} + y^{2/3} = a^{2/3}$ and the cardioid $r = a(1 + \cos\theta)$.
+Here, as in AR1, $a > 0$; and $m > 0$ for the line $y = mx$ (for $m < 0$ the area is $\frac{8a^2}{3\lvert m \rvert^3}$). The curves are the cycloid $x = a(t - \sin t)$, $y = a(1 - \cos t)$ (area under one arch), the astroid $x^{2/3} + y^{2/3} = a^{2/3}$ and the cardioid $r = a(1 + \cos\theta)$.
 
 ## What it means
 
 - **Steps**: sketch; find the points of intersection; decide which curve is above (or to the right); integrate the difference; use symmetry to halve or quarter the work.
 - **Strips the other way**: if the region is easier to describe as "right curve minus left curve", integrate with respect to $y$.
 - **Signs**: where a curve lies below the $x$-axis, $\int y\,dx$ is negative; split the interval at the crossings and add the absolute values.
-- The **general $y^2 = 4ax$, $x^2 = 4by$** of the figure enclose $\frac{16ab}{3}$; Question AR1 is the case $b = a$.
+- The **general $y^2 = 4ax$, $x^2 = 4by$** of the figure ($a, b > 0$) meet at $x = 0$ and $x = 4a^{1/3}b^{2/3}$ and enclose $\frac{16ab}{3}$; Question AR1 is the case $b = a$.
 - **Polar areas** use thin sectors of area $\frac{1}{2}r^2\,d\theta$ instead of strips.
 
 ! example | Example 1 — a parabola and its latus rectum
@@ -53,7 +53,7 @@ Find the area between $x = y^2$ and $x = 2 - y^2$.
 ! example | Example 3 — a polar area
 Find the area of the cardioid $r = a(1 + \cos\theta)$.
 **Solution.** $(1 + \cos\theta)^2 = 1 + 2\cos\theta + \cos^2\theta$, whose three terms integrate over $[0, 2\pi]$ to $2\pi$, $0$ and $\pi$:
-$$\begin{aligned} \frac{1}{2}\int_0^{2\pi} a^2(1 + \cos\theta)^2\,d\theta &= \frac{a^2}{2}\left(2\pi + 0 + \pi\right) \\ &= \boxed{\frac{3}{2}\pi a^2}. \end{aligned}$$
+$$\begin{aligned} &\frac{1}{2}\int_0^{2\pi} a^2(1 + \cos\theta)^2\,d\theta \\ &= \frac{a^2}{2}\left(2\pi + 0 + \pi\right) = \boxed{\frac{3}{2}\pi a^2}. \end{aligned}$$
 
 ? Area between two curves from $x = a$ to $x = b$? :: $\int_a^b (y_{\text{upper}} - y_{\text{lower}})\,dx$.
 ? Area of the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$? :: $\pi ab$.

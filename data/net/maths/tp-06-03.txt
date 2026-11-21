@@ -21,6 +21,9 @@ Find the intervals in which $f(x) = 4x^3 - 6x^2 - 72x + 30$ is strictly increasi
 ^ data/net/maths/fig/sign-scheme.svg | sign scheme of $f'(x)$
 $f'(x) = 12x^2 - 12x - 72 = 12(x - 3)(x + 2)$; zeros $x = -2, 3$. Sign of $f'$: $+$ on $(-\infty, -2)$, $-$ on $(-2, 3)$, $+$ on $(3, \infty)$. Strictly increasing on $\boxed{(-\infty, -2) \cup (3, \infty)}$, strictly decreasing on $\boxed{(-2, 3)}$.
 
+! check | Each interval separately
+$f$ is strictly increasing on $(-\infty, -2)$ and on $(3, \infty)$ separately, not on their union: $-3 < 4$, yet $f(-3) = 84 > f(4) = -98$. The unions in ID3 (b) are read the same way.
+
 ! example | Question ID3 — from the notes
 Find where (a) $f(x) = \sin 3x$ on $\left[0, \frac{\pi}{2}\right]$, (b) $f(x) = \sin x + \cos x$ on $[0, 2\pi]$ is increasing or decreasing.
 **Solution.** (a) $f' = 3\cos 3x = 0$ at $3x = \frac{\pi}{2}, \frac{3\pi}{2}$, i.e. $x = \frac{\pi}{6}, \frac{\pi}{2}$. Increasing on $\left[0, \frac{\pi}{6}\right]$, decreasing on $\left[\frac{\pi}{6}, \frac{\pi}{2}\right]$. (b) $f' = \cos x - \sin x = 0$ at $x = \frac{\pi}{4}, \frac{5\pi}{4}$. Strictly increasing on $\left[0, \frac{\pi}{4}\right) \cup \left(\frac{5\pi}{4}, 2\pi\right]$, strictly decreasing on $\left(\frac{\pi}{4}, \frac{5\pi}{4}\right)$.

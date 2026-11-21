@@ -8,8 +8,11 @@
 ! addon | Radius of curvature
 ^ data/net/maths/fig/curvature-circle.svg | the circle of curvature at $P$, of radius $\rho$
 The circle of curvature at $P$ fits the curve most closely; its radius is
-$$\rho = \frac{ds}{d\psi} = \frac{(1 + y_1^2)^{3/2}}{y_2}, \qquad \rho = \frac{(\dot{x}^2 + \dot{y}^2)^{3/2}}{\dot{x}\ddot{y} - \dot{y}\ddot{x}}, \qquad \rho = \frac{(r^2 + r_1^2)^{3/2}}{r^2 + 2r_1^2 - rr_2}.$$
+$$\begin{aligned} \rho &= \frac{ds}{d\psi} = \frac{(1 + y_1^2)^{3/2}}{y_2}, \\ \rho &= \frac{(\dot{x}^2 + \dot{y}^2)^{3/2}}{\dot{x}\ddot{y} - \dot{y}\ddot{x}}, \\ \rho &= \frac{(r^2 + r_1^2)^{3/2}}{r^2 + 2r_1^2 - rr_2}. \end{aligned}$$
 Standard values: circle $a$; parabola $y^2 = 4ax$ at the vertex $2a$; ellipse at the end of the major axis $\frac{b^2}{a}$; catenary $\frac{y^2}{c}$; cardioid $\frac{2}{3}\sqrt{2ar}$.
+
+! check | Conditions added
+Each formula needs a non-zero denominator; where it is 0 (for example $y_2 = 0$) the curvature is 0 and there is no circle of curvature. The sign of the result only shows which way the curve bends, so $\rho$ is its absolute value. The standard values are for the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b$) at $(\pm a, 0)$, the catenary $y = c\cosh\frac{x}{c}$ and the cardioid $r = a(1 + \cos\theta)$.
 
 ## Tracing a curve
 
@@ -19,6 +22,9 @@ Standard values: circle $a$; parabola $y^2 = 4ax$ at the vertex $2a$; ellipse at
 - (3) **Intercepts** and tangents at them. **Region**: where $y^2 < 0$ there is no curve.
 - (4) **Asymptotes**: parallel to the $x$-axis: coefficient of the highest power of $x = 0$; parallel to the $y$-axis: coefficient of the highest power of $y = 0$; oblique $y = mx + c$: $\phi_n(m) = 0$, $c = -\frac{\phi_{n-1}(m)}{\phi_n'(m)}$.
 - (5) **Monotonicity**, max/min, points of inflection ($y'' = 0$ with a sign change).
+
+! check | Conditions added
+The asymptote rules are for algebraic curves, and an asymptote parallel to an axis comes only from a coefficient that is not a constant. The formula for $c$ needs $\phi_n'(m) \neq 0$; if $\phi_n'(m) = \phi_{n-1}(m) = 0$, then $c$ comes from $\frac{c^2}{2}\phi_n''(m) + c\phi_{n-1}'(m) + \phi_{n-2}(m) = 0$ (two parallel asymptotes). For the folium, $\phi_3(m) = 1 + m^3 = 0$ gives $m = -1$, and $\phi_2(m) = -3am$ gives $c = -\frac{3a}{3} = -a$: the asymptote $x + y + a = 0$.
 
 ^ data/net/maths/fig/folium.svg | the folium $x^3 + y^3 = 3axy$ with its asymptote $x + y + a = 0$
 

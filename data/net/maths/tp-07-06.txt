@@ -14,10 +14,13 @@
 - polar curve: put $x = r\cos\theta$, $y = r\sin\theta$ and use the parametric form.
 **Polar area revolved.** The area bounded by $r = f(\theta)$ and the radii $\theta_1, \theta_2$, revolved: about the initial line $V = \int_{\theta_1}^{\theta_2} \frac{2}{3}\pi r^3\sin\theta\,d\theta$; about $\theta = \frac{\pi}{2}$: $\int \frac{2}{3}\pi r^3\cos\theta\,d\theta$; about $\theta = \gamma$: $\int \frac{2}{3}\pi r^3\sin(\theta - \gamma)\,d\theta$.
 **Surface.** A small arc $\delta s$ at distance $y$ from the axis sweeps a band of area $2\pi y\,\delta s$:
-$$S = \int 2\pi y\frac{ds}{dx}\,dx \ (x\text{-axis}), \qquad S = \int 2\pi x\frac{ds}{dy}\,dy \ (y\text{-axis}),$$
-$$\frac{ds}{dx} = \sqrt{1 + \left(\frac{dy}{dx}\right)^2}, \qquad \frac{ds}{dy} = \sqrt{1 + \left(\frac{dx}{dy}\right)^2}$$
-$$\text{parametric: } \frac{ds}{dt} = \sqrt{\dot{x}^2 + \dot{y}^2}; \qquad \text{polar: } \frac{ds}{d\theta} = \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2},$$
-$$S = \int 2\pi(r\sin\theta)\frac{ds}{d\theta}\,d\theta \ (\text{about the initial line}), \qquad S = \int 2\pi(r\cos\theta)\frac{ds}{d\theta}\,d\theta \ \left(\text{about } \theta = \tfrac{\pi}{2}\right).$$
+$$\begin{aligned} S &= \int 2\pi y\frac{ds}{dx}\,dx \ (x\text{-axis}), \\ S &= \int 2\pi x\frac{ds}{dy}\,dy \ (y\text{-axis}), \end{aligned}$$
+$$\begin{aligned} &\frac{ds}{dx} = \sqrt{1 + \left(\frac{dy}{dx}\right)^2}, \\ &\frac{ds}{dy} = \sqrt{1 + \left(\frac{dx}{dy}\right)^2} \end{aligned}$$
+$$\begin{aligned} &\text{parametric: } \frac{ds}{dt} = \sqrt{\dot{x}^2 + \dot{y}^2}; \\ &\text{polar: } \frac{ds}{d\theta} = \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2}, \end{aligned}$$
+$$\begin{aligned} &S = \int 2\pi(r\sin\theta)\frac{ds}{d\theta}\,d\theta \\ &\qquad (\text{about initial line}), \\ &S = \int 2\pi(r\cos\theta)\frac{ds}{d\theta}\,d\theta \\ &\qquad \left(\text{about } \theta = \tfrac{\pi}{2}\right). \end{aligned}$$
+
+! check | Condition added
+In the surface formulas $y$, $x$, $r\sin\theta$ and $r\cos\theta$ stand for the distance from the axis, so they must be $\geq 0$ on the arc (otherwise take the absolute value); likewise the polar volume formulas need the region on one side of the axis: $0 \leq \theta_1 < \theta_2 \leq \pi$ about the initial line, $\cos\theta \geq 0$ about $\theta = \frac{\pi}{2}$, $\sin(\theta - \gamma) \geq 0$ about $\theta = \gamma$. For a curve symmetric about the axis take the half on one side only, as in all the questions.
 
 ! note | Figure-tracing tips — How to trace the curve before integrating
 - (1) **Symmetry first.** Only $y^2$ present $\Rightarrow$ symmetric about $x$-axis (integrate over the upper half, then double *only if the region is on both sides of the axis you are NOT revolving about*). Only $x^2$ $\Rightarrow$ about $y$-axis. Polar curve with only $\cos\theta$ $\Rightarrow$ symmetric about the initial line.
@@ -29,9 +32,9 @@ $$S = \int 2\pi(r\sin\theta)\frac{ds}{d\theta}\,d\theta \ (\text{about the initi
 
 ## What it means
 
-- **Discs and washers**: if the region lies between two curves $y_1 \leq y \leq y_2$ and turns about the $x$-axis, each strip makes a washer, and $V = \int \pi(y_2^2 - y_1^2)\,dx$.
+- **Discs and washers**: if the region lies between two curves $0 \leq y_1 \leq y \leq y_2$ and turns about the $x$-axis, each strip makes a washer, and $V = \int \pi(y_2^2 - y_1^2)\,dx$.
 - **The three solids of the TGT syllabus** come from simple regions: a **cylinder** from a rectangle, a **cone** from a right triangle, a **sphere** from a semicircle (see the examples below).
-- **Pappus's theorems** (a quick check): the volume swept is the area of the region times the distance travelled by its centroid; the surface swept is the length of the arc times the distance travelled by its centroid.
+- **Pappus's theorems** (a quick check): for an axis that does not cross the region, the volume swept is the area of the region times the distance travelled by its centroid; the surface swept is the length of the arc times the distance travelled by its centroid.
 
 ! example | Example 1 — the cone
 Find the volume of the cone formed by turning the line $y = \frac{r}{h}x$, $0 \leq x \leq h$, about the $x$-axis.

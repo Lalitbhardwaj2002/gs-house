@@ -7,7 +7,7 @@
  "theme": "maths",
  "title": { "en": "TGT Mathematics" },
  "subtitle": { "en": "UPESSC TGT · subject code 07 · topic-wise notes on the official 2026 syllabus" },
- "pdf": { "href": "data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf", "en": "Full notes PDF" },
+ "pdf": { "en": "Full notes PDF" },
  "about": {
   "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 7 of the notes are ready; the other chapters are being added."
  },
@@ -145,13 +145,13 @@
      "en": "Differentiation",
      "chapters": [
       { "id": "tp-06-01", "en": "6.1 Derivative: meaning and rules",
-        "key": { "en": "Derivative from first principles · sum, product, quotient and chain rules · standard derivatives" } },
+        "key": { "en": "Derivative from first principles · sum, product, quotient and chain rules · implicit, logarithmic and parametric differentiation · standard derivatives" } },
       { "id": "tp-06-04", "en": "6.4 Tangents and normals",
         "key": { "en": "Equations of the tangent and the normal · lengths of tangent and normal · angle between two curves" } },
       { "id": "tp-06-03", "en": "6.3 Increasing and decreasing functions",
         "key": { "en": "Sign of the derivative · intervals of increase and decrease · monotonic functions" } },
       { "id": "tp-06-05", "en": "6.5 Maxima and minima",
-        "key": { "en": "Stationary points · first and second derivative tests · greatest and least values · word problems" } },
+        "key": { "en": "Stationary points · first and second derivative tests · greatest and least values · word problems · extrema of functions of two variables" } },
       { "id": "tp-06-07", "en": "6.7 Curvature, asymptotes and curve tracing",
         "key": { "en": "Radius of curvature · asymptotes · how to trace a curve · standard curves" } }
      ]
@@ -164,7 +164,7 @@
       { "id": "tp-07-02", "en": "7.2 Methods of integration",
         "key": { "en": "Substitution · integration by parts · partial fractions" } },
       { "id": "tp-07-03", "en": "7.3 Definite integrals",
-        "key": { "en": "The definite integral · its properties P1–P8 · evaluation" } },
+        "key": { "en": "The definite integral as the limit of a sum · its properties P1–P8 · evaluation" } },
       { "id": "tp-07-05", "en": "7.5 Area under and between curves",
         "key": { "en": "Area under a curve · area between two curves · areas of standard curves" } },
       { "id": "tp-07-06", "en": "7.6 Volumes and surfaces of solids of revolution — formulas",
