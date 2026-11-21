@@ -1,0 +1,80 @@
+@en
+# Methods of integration
+
+> Three methods do almost all the work: substitution changes the variable so that a standard form appears; integration by parts trades a product for a simpler integral; partial fractions split a rational function into simple pieces.
+
+## Substitution, parts, partial fractions
+
+! note | Substitution, parts, partial fractions
+**Substitution**: put $u = g(x)$ so that $g'(x)\,dx = du$. Key case $\int \frac{f'(x)}{f(x)}\,dx = \log\lvert f(x) \rvert$.
+**By parts**: $\int uv\,dx = u\int v\,dx - \int \left(u'\int v\,dx\right)dx$; choose $u$ by **ILATE** (Inverse trig, Log, Algebraic, Trig, Exponential).
+**Partial fractions** (five forms):
+- (1) $\frac{px + q}{(x - a)(x - b)} = \frac{A}{x - a} + \frac{B}{x - b}$
+- (2) $\frac{px + q}{(x - a)^2} = \frac{A}{x - a} + \frac{B}{(x - a)^2}$
+- (3) $\frac{px^2 + qx + r}{(x - a)(x - b)(x - c)} = \frac{A}{x - a} + \frac{B}{x - b} + \frac{C}{x - c}$
+- (4) $\frac{px^2 + qx + r}{(x - a)^2(x - b)} = \frac{A}{x - a} + \frac{B}{(x - a)^2} + \frac{C}{x - b}$
+- (5) $\frac{px^2 + qx + r}{(x - a)(x^2 + bx + c)} = \frac{A}{x - a} + \frac{Bx + C}{x^2 + bx + c}$
+
+! check | Conditions added
+The five forms are for proper fractions (numerator of lower degree than the denominator; otherwise divide first). In (1), (3) and (4) the numbers $a, b, c$ are distinct. In (5) the quadratic $x^2 + bx + c$ has no real roots ($b^2 < 4c$); if it had, it would split into linear factors and form (3) or (4) would apply.
+
+! example | Question IN1 — standard (substitution)
+Evaluate $\int \frac{2x}{1 + x^2}\,dx$ and $\int \sin^3 x\cos x\,dx$.
+**Solution.** (i) $u = 1 + x^2$: $\int \frac{du}{u} = \boxed{\log(1 + x^2) + C}$. (ii) $u = \sin x$: $\int u^3\,du = \boxed{\frac{\sin^4 x}{4} + C}$.
+
+! example | Question IN2 — standard (by parts)
+Evaluate $\int xe^x\,dx$ and $\int \log x\,dx$.
+**Solution.** (i) $u = x$: $xe^x - \int e^x\,dx = \boxed{e^x(x - 1) + C}$. (ii)
+$$\begin{aligned} &\int 1 \cdot \log x\,dx \\ &= x\log x - \int x \cdot \frac{1}{x}\,dx \\ &= \boxed{x\log x - x + C}. \end{aligned}$$
+
+! example | Question IN3 — standard (partial fractions)
+Evaluate $\int \frac{x + 1}{(x - 1)(x - 2)}\,dx$.
+**Solution.** Cover-up: $A = \frac{1 + 1}{1 - 2} = -2$, $B = \frac{2 + 1}{2 - 1} = 3$.
+$$\begin{aligned} &\int \left(\frac{-2}{x - 1} + \frac{3}{x - 2}\right)dx \\ &= \boxed{\begin{aligned} &-2\log\lvert x - 1 \rvert \\ &+ 3\log\lvert x - 2 \rvert + C \end{aligned}}. \end{aligned}$$
+
+! example | Question IN4 — standard ($e^x[f + f']$ rule)
+Evaluate $\int e^x(\tan x + \sec^2 x)\,dx$.
+**Solution.** $f = \tan x$, $f' = \sec^2 x$: answer $\boxed{e^x\tan x + C}$.
+
+! trick | Shortcut / time-saver
+**Cover-up rule**: for a non-repeated factor $(x - a)$, $A$ = the rest of the fraction evaluated at $x = a$. $\int e^{ax}\sin bx\,dx = \frac{e^{ax}}{a^2 + b^2}(a\sin bx - b\cos bx)$, $\int e^{ax}\cos bx\,dx = \frac{e^{ax}}{a^2 + b^2}(a\cos bx + b\sin bx)$. $\int \frac{dx}{a + b\cos x}$: put $t = \tan\frac{x}{2}$. $\int \frac{px + q}{ax^2 + bx + c}$: write $px + q = A(2ax + b) + B$.
+
+## What it means
+
+- **Choosing a substitution**: look for a function whose derivative is also present (up to a constant). In $\int x\cos(x^2)\,dx$, put $u = x^2$: $\frac{1}{2}\int \cos u\,du = \frac{1}{2}\sin x^2$.
+- **ILATE** picks $u$ as the factor that becomes simpler when differentiated; the other factor must be easy to integrate. When the integrand is a log or an inverse trigonometric function alone (as in $\int \log x\,dx$), take 1 as the second factor.
+- **Repeating parts**: for $\int e^{ax}\sin bx\,dx$, integrating by parts twice brings back the same integral; solving for it gives the formula in the shortcut box.
+- **Partial fractions** need a proper fraction (degree of numerator less than that of the denominator); otherwise divide first. Repeated factors (form 2, 4) and irreducible quadratics (form 5) need the extra terms shown.
+- **$\int \frac{px + q}{ax^2 + bx + c}\,dx$**: the part $A(2ax + b)$ gives $A\log\lvert ax^2 + bx + c \rvert$; the constant $B$ is handled by completing the square.
+
+! example | Example 1 — by parts twice
+Evaluate $\int x^2e^x\,dx$.
+**Solution.** By parts with $u = x^2$, then IN2 (i) for $\int xe^x\,dx$:
+$$\begin{aligned} &\int x^2e^x\,dx \\ &= x^2e^x - \int 2xe^x\,dx \\ &= x^2e^x - 2(x - 1)e^x \\ &= \boxed{e^x(x^2 - 2x + 2) + C}. \end{aligned}$$
+
+! example | Example 2 — a repeated factor
+Evaluate $\int \frac{dx}{(x - 1)^2(x + 2)}$.
+**Solution.** $\frac{1}{(x - 1)^2(x + 2)} = \frac{A}{x - 1} + \frac{B}{(x - 1)^2} + \frac{C}{x + 2}$ with $B = \frac{1}{3}$, $C = \frac{1}{9}$ (cover-up), and $A = -\frac{1}{9}$ (compare the coefficients of $x^2$: $A + C = 0$). So the integral is
+$$\boxed{\begin{aligned} &-\frac{1}{9}\log\lvert x - 1 \rvert - \frac{1}{3(x - 1)} \\ &+ \frac{1}{9}\log\lvert x + 2 \rvert + C \end{aligned}}$$
+
+! example | Example 3 — the $\tan\frac{x}{2}$ substitution
+Evaluate $\int \frac{dx}{1 + \cos x}$.
+**Solution.** $1 + \cos x = 2\cos^2\frac{x}{2}$, so $\int \frac{1}{2}\sec^2\frac{x}{2}\,dx = \boxed{\tan\frac{x}{2} + C}$.
+
+? What is $\int \frac{f'(x)}{f(x)}\,dx$? :: $\log\lvert f(x) \rvert + C$.
+? What does ILATE decide? :: Which factor to take as $u$ in integration by parts: Inverse trigonometric, Log, Algebraic, Trigonometric, Exponential.
+? What is the cover-up value $A$ for the factor $x - a$? :: The rest of the fraction evaluated at $x = a$.
+? $\int \log x\,dx$? :: $x\log x - x + C$.
+
+! exam | What the exam asks
+- Integrals by substitution, by parts (including $e^{ax}\sin bx$) and by partial fractions.
+- Choosing the right method; the $\tan\frac{x}{2}$ and $px + q = A(2ax + b) + B$ devices.
+- Checking a given answer by differentiation.
+
+! recap | One-minute revision
+- Substitution: look for a function and its derivative; $\int \frac{f'}{f} = \log\lvert f \rvert$.
+- Parts: $\int uv = u\int v - \int (u'\int v)$, $u$ by ILATE.
+- Partial fractions: five forms; cover-up for non-repeated linear factors.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 7 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part II, chapter 7: Integrals | https://ncert.nic.in/textbook.php?lemh2=1-6

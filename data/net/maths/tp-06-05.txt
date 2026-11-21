@@ -1,0 +1,104 @@
+@en
+# Maxima and minima
+
+> Extreme values occur where the tangent is horizontal or the derivative fails to exist. The first and second derivative tests decide which critical points are maxima or minima; word problems end with the same steps once the quantity is written in one variable.
+
+## Finding extreme values
+
+! note | Maxima and minima
+^ data/net/maths/fig/max-min.svg | horizontal tangents ($f' = 0$) at a local maximum and a local minimum
+- **Critical points**: $f'(c) = 0$ or $f'(c)$ does not exist. Every local extremum is a critical point (not conversely).
+- **First derivative test**: $f'$ changes $+ \to -$: local max; $- \to +$: local min; no change: neither (often a point of inflection).
+- **Second derivative test**: $f'(c) = 0$ and $f''(c) < 0$: max; $f''(c) > 0$: min; $f''(c) = 0$: test fails.
+- **Absolute** max/min on $[a, b]$: compare $f$ at all critical points and at $a, b$.
+- Two variables: at a stationary point with $r = f_{xx}$, $s = f_{xy}$, $t = f_{yy}$: $rt - s^2 > 0, \ r < 0$ max; $rt - s^2 > 0, \ r > 0$ min; $rt - s^2 < 0$ saddle; $rt - s^2 = 0$ doubtful.
+
+! check | A statement made precise
+When $f'$ keeps its sign on both sides of $c$, $f$ has neither a maximum nor a minimum at $c$. NCERT calls such a point a point of inflection, and for $x^3$ at 0 it is one; but not always: $f(x) = 3x + \lvert x \rvert$ has the critical point 0 ($f'$ is 2 on the left, 4 on the right) and is convex, so its bending never changes.
+
+! example | Question MM1 — from the notes (NCERT Ex. 29)
+Find the local maxima and minima of $f(x) = x^3 - 3x + 3$.
+**Solution.** $f' = 3x^2 - 3 = 3(x - 1)(x + 1) = 0 \Rightarrow x = \pm 1$. $f'' = 6x$: $f''(1) = 6 > 0 \Rightarrow$ local min at $x = 1$, value 1; $f''(-1) = -6 < 0 \Rightarrow$ local max at $x = -1$, value 5.
+
+! example | Question MM2 — from the notes (NCERT Ex. 32)
+Find all local extrema of $f(x) = 3x^4 + 4x^3 - 12x^2 + 12$.
+**Solution.** $f' = 12x^3 + 12x^2 - 24x = 12x(x + 2)(x - 1)$; critical points $0, -2, 1$. $f'' = 36x^2 + 24x - 24$. $f''(0) = -24 < 0$: **max** $f(0) = 12$. $f''(-2) = 72 > 0$: **min** $f(-2) = -20$. $f''(1) = 36 > 0$: **min** $f(1) = 7$.
+
+! example | Question MM3 — from the notes (NCERT Ex. 31)
+Find the local extremum of $f(x) = 3 + \lvert x \rvert$.
+**Solution.**
+^ data/net/maths/fig/abs-min.svg | $y = 3 + \lvert x \rvert$
+$f$ is not differentiable at 0. For $x < 0$, $f' = -1$; for $x > 0$, $f' = +1$. $f'$ changes from $-$ to $+$, so **local minimum** at $x = 0$ with value $\boxed{3}$.
+
+! example | Question MM4 — from the notes
+Find two numbers whose sum is 15 and the sum of whose squares is minimum.
+**Solution.** $S = x^2 + (15 - x)^2$, $S' = 4x - 30 = 0 \Rightarrow x = \frac{15}{2}$; $S'' = 4 > 0$. Numbers $\boxed{\frac{15}{2}, \frac{15}{2}}$.
+
+! example | Question MM5 — from the notes (NCERT Ex. 35)
+Find the shortest distance of the point $(0, c)$ from the parabola $y = x^2$.
+**Solution.**
+^ data/net/maths/fig/nearest-point.svg | the nearest point of $y = x^2$ to $(0, c)$
+Point $(h, k)$ on the parabola: $h^2 = k$. $D^2 = h^2 + (k - c)^2 = k + (k - c)^2$. $\frac{d(D^2)}{dk} = 1 + 2(k - c) = 0 \Rightarrow k = \frac{2c - 1}{2}$ (needs $k \geq 0$, i.e. $c \geq \frac{1}{2}$); second derivative $2 > 0$ (min). Then $D^2 = \frac{2c - 1}{2} + \frac{1}{4} = \frac{4c - 1}{4}$. If $c \geq \frac{1}{2}$: $\boxed{D = \frac{\sqrt{4c - 1}}{2}}$ (NCERT states the range $\frac{1}{2} \leq c \leq 5$). If $c \leq \frac{1}{2}$: nearest point is the origin, $D = \lvert c \rvert$.
+
+! check | A slip in the notes
+The notes give $D = c$ for $c \leq \frac{1}{2}$, which is negative when $c < 0$. For $c < \frac{1}{2}$ and every $k \geq 0$, $\frac{d(D^2)}{dk} = 1 + 2(k - c) > 0$, so the least $D^2$ is at $k = 0$, the origin: $D = \lvert c \rvert$. For $c \geq \frac{1}{2}$ there are two nearest points, $\left(\pm\sqrt{c - \frac{1}{2}}, c - \frac{1}{2}\right)$; at $c = \frac{1}{2}$ both answers give $\frac{1}{2}$.
+
+! example | Question MM6 — from the notes (NCERT Ex. 38)
+Show that the cylinder of greatest curved surface inscribed in a cone of radius $r$ and height $h$ has radius $\frac{r}{2}$.
+**Solution.**
+^ data/net/maths/fig/cone-cylinder.svg | a cylinder of radius $x$ and height $H$ inside the cone
+Let the cylinder have radius $x$ and height $H$. Similar triangles: $\frac{H}{h} = \frac{r - x}{r} \Rightarrow H = \frac{h(r - x)}{r}$. Curved surface $S = 2\pi xH = \frac{2\pi h}{r}(rx - x^2)$; $S' = \frac{2\pi h}{r}(r - 2x) = 0 \Rightarrow \boxed{x = \frac{r}{2}}$; $S'' < 0$, so maximum.
+
+! example | Question MM7 — from the notes (NCERT Ex. 40)
+Find the absolute maximum and minimum of $f(x) = 12x^{4/3} - 6x^{1/3}$ on $[-1, 1]$.
+**Solution.** $f' = 16x^{1/3} - 2x^{-2/3} = \frac{2(8x - 1)}{x^{2/3}}$; critical points $x = \frac{1}{8}$ ($f' = 0$) and $x = 0$ ($f'$ undefined). $f(-1) = 18$, $f(0) = 0$, $f\left(\frac{1}{8}\right) = 12 \cdot \frac{1}{16} - 6 \cdot \frac{1}{2} = -\frac{9}{4}$, $f(1) = 6$. Absolute max $\boxed{18}$ at $x = -1$; absolute min $\boxed{-\frac{9}{4}}$ at $x = \frac{1}{8}$.
+
+! example | Question MM8 — from the notes (RS Aggarwal)
+Show that among all rectangles of given perimeter $p$, the square has the largest area.
+**Solution.** Sides $x$ and $\frac{p}{2} - x$: $A = x\left(\frac{p}{2} - x\right)$, $A' = \frac{p}{2} - 2x = 0 \Rightarrow x = \frac{p}{4}$, other side $\frac{p}{4}$. $A'' = -2 < 0$: maximum. So a square.
+
+! example | Question MM9 — standard (two variables)
+Find the extreme values of $f = x^3 + y^3 - 3axy$ ($a > 0$).
+**Solution.** $f_x = 3x^2 - 3ay = 0$, $f_y = 3y^2 - 3ax = 0 \Rightarrow (0, 0)$ and $(a, a)$. $r = 6x$, $s = -3a$, $t = 6y$. At $(a, a)$: $rt - s^2 = 36a^2 - 9a^2 > 0$, $r > 0 \Rightarrow$ **minimum** $f = -a^3$. At $(0, 0)$: $rt - s^2 = -9a^2 < 0 \Rightarrow$ saddle point.
+
+! trick | Shortcut / time-saver — Standard optimisation results
+- Fixed perimeter: square has maximum area. Rectangle in a circle of radius $r$: square, max area $2r^2$; in an ellipse: max area $2ab$.
+- Cylinder in a sphere of radius $R$: max volume when $h = \frac{2R}{\sqrt{3}}$. Cone in a sphere: max volume when $h = \frac{4R}{3}$.
+- Open box from a square sheet of side $a$: cut squares of side $\frac{a}{6}$. Closed cylinder of given volume, least surface: $h = 2r$.
+- $a\sin x + b\cos x$ lies between $\pm\sqrt{a^2 + b^2}$; for $x > 0$, $x + \frac{k}{x} \geq 2\sqrt{k}$.
+
+! check | A condition added
+$x + \frac{k}{x} \geq 2\sqrt{k}$ needs $k > 0$; equality holds at $x = \sqrt{k}$. For $k < 0$ the sum takes every real value on $x > 0$.
+
+## What it means
+
+- **Local and absolute**: a local maximum is the largest value near the point; the absolute maximum is the largest value on the whole domain. On a closed interval a continuous function always has both an absolute maximum and an absolute minimum (attained at critical points or at the ends).
+- **When the second derivative test fails** ($f''(c) = 0$), use the first derivative test: $x^4$ has a minimum at 0, $-x^4$ a maximum, and $x^3$ neither.
+- **No sign change** of $f'$ means no extremum; the point may be a point of inflection (as for $x^3$ at 0).
+- **Word problems**: write the quantity to be optimised, use the given condition to reduce it to one variable, then apply the derivative tests and check the answer makes sense (lengths positive, and so on).
+
+! example | Example 1 — an open box
+A square sheet of side 12 cm has equal squares cut from its corners and the sides folded up. Find the largest volume of the box.
+**Solution.** With squares of side $x$: $V = x(12 - 2x)^2$. $V' = (12 - 2x)(12 - 6x) = 0 \Rightarrow x = 2$ (the other root, 6, gives no box). $V'' < 0$ there, so the largest volume is $2 \cdot 8^2 = \boxed{128 \text{ cm}^3}$, with $x = 2 = \frac{12}{6}$ as the shortcut says.
+
+! example | Example 2 — when the second derivative test fails
+Classify the critical point of $f(x) = x^4 - 4x^3$ at $x = 0$.
+**Solution.** $f' = 4x^3 - 12x^2 = 4x^2(x - 3)$; $f''(0) = 0$. Near 0, $f' < 0$ on both sides (the factor $x^2$ keeps its sign), so there is **no extremum** at 0: it is a point of inflection. (The minimum is at $x = 3$.)
+
+? What is a critical point? :: A point where $f'(c) = 0$ or $f'(c)$ does not exist.
+? What does $f'(c) = 0$, $f''(c) > 0$ give? :: A local minimum.
+? How is the absolute maximum on $[a, b]$ found? :: Compare $f$ at all critical points in $(a, b)$ and at $a$ and $b$.
+? Two variables: what does $rt - s^2 < 0$ mean? :: A saddle point (no extremum).
+
+! exam | What the exam asks
+- Local and absolute extrema of polynomials and of functions such as $3 + \lvert x \rvert$.
+- Optimisation problems: areas, volumes, distances, numbers with a fixed sum.
+- Extrema of functions of two variables by $rt - s^2$.
+
+! recap | One-minute revision
+- Critical points: $f' = 0$ or undefined; first test by sign change, second test by $f''$.
+- Absolute extrema on $[a, b]$: critical points and ends.
+- Two variables: $rt - s^2 > 0$ with $r < 0$ max, $r > 0$ min; $< 0$ saddle.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 6 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 6: Application of Derivatives | https://ncert.nic.in/textbook.php?lemh1=6-6

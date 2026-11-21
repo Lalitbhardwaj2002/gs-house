@@ -1,0 +1,55 @@
+@en
+# Figure gallery: curves used in these questions
+
+> The volume and surface questions use the same dozen curves again and again. Knowing their shapes, where they cross the axes, their loops and their asymptotes, settles the limits of integration before any calculation begins.
+
+## The gallery
+
+^ data/net/maths/fig/curve-cycloid.svg | Cycloid $x = a(\theta - \sin\theta)$, $y = a(1 - \cos\theta)$
+^ data/net/maths/fig/curve-astroid.svg | Astroid $x^{2/3} + y^{2/3} = a^{2/3}$
+^ data/net/maths/fig/curve-cardioid.svg | Cardioid $r = a(1 + \cos\theta)$
+^ data/net/maths/fig/curve-catenary.svg | Catenary $y = c\cosh\frac{x}{c}$
+^ data/net/maths/fig/curve-witch.svg | Witch $y = \frac{a^3}{a^2 + x^2}$
+^ data/net/maths/fig/curve-strophoid.svg | Strophoid $y^2(a + x) = x^2(a - x)$
+^ data/net/maths/fig/curve-loop.svg | Loop $y^2 = x^2(a - x)$
+^ data/net/maths/fig/curve-cissoid.svg | Cissoid $y^2(2a - x) = x^3$
+^ data/net/maths/fig/curve-witchlike.svg | $(a - x)y^2 = a^2x$
+
+! trick | Shortcut / time-saver — Read the figure from the equation
+$y^2 = (\dots)(a - x)$: curve stops at $x = a$ where $y = 0$ (vertical tangent there). $y^2(b - x) = \dots$: asymptote $x = b$. Highest power of $x$ in the denominator larger than in the numerator: $x$-axis is an asymptote. Cusp at origin when lowest terms are a perfect square like $y^2$ with $x^3$ on the other side (cissoid, semi-cubical parabola $ay^2 = x^3$).
+
+## The curves one by one
+
+| Curve | Key features |
+| Cycloid | traced by a point on a rolling circle of radius $a$; one arch for $0 \leq \theta \leq 2\pi$, from $x = 0$ to $x = 2\pi a$, highest point $2a$ |
+| Astroid | four cusps at $(\pm a, 0)$ and $(0, \pm a)$; symmetric about both axes; parametric $x = a\cos^3 t$, $y = a\sin^3 t$ |
+| Cardioid | heart shape, symmetric about the initial line; $r = 2a$ at $\theta = 0$ and a cusp at the origin ($\theta = \pi$) |
+| Catenary | the shape of a hanging chain; lowest point $(0, c)$, symmetric about the $y$-axis |
+| Witch | bell shape, greatest height $a$ at $x = 0$; the $x$-axis is an asymptote |
+| Strophoid | loop between $x = 0$ and $x = a$, node at the origin, asymptote $x = -a$ |
+| Loop $y^2 = x^2(a - x)$ | node at the origin, loop for $0 \leq x \leq a$, branches for $x < 0$ |
+| Cissoid | cusp at the origin, exists for $0 \leq x < 2a$, asymptote $x = 2a$ |
+| $(a - x)y^2 = a^2x$ | through the origin with a vertical tangent there, exists for $0 \leq x < a$, asymptote $x = a$ |
+
+## What it means
+
+- **Node and cusp**: at a **node** two branches cross with different tangents (the loop, the strophoid); at a **cusp** two branches meet with the same tangent and stop (the cissoid, the astroid's corners, the cardioid at the origin).
+- **Where the curve exists**: in $y^2 = g(x)$ only the $x$ with $g(x) \geq 0$ give points. For the cissoid, $\frac{x^3}{2a - x} \geq 0$ needs $0 \leq x < 2a$.
+- **Limits of integration** come straight from the figure: a loop between $x = 0$ and $x = a$; an arch of the cycloid from $\theta = 0$ to $2\pi$; a cardioid from $\theta = 0$ to $\pi$ for the upper half.
+
+? Where is the asymptote of the cissoid $y^2(2a - x) = x^3$? :: The line $x = 2a$.
+? What kind of point has $y^2 = x^2(a - x)$ at the origin? :: A node (double point): two branches cross there.
+? Between which $x$-values does one arch of the cycloid lie? :: From $x = 0$ to $x = 2\pi a$.
+? Which line is an asymptote of the witch $y = \frac{a^3}{a^2 + x^2}$? :: The $x$-axis.
+
+! exam | What the exam asks
+- Recognising a curve from its equation, and its loops, cusps and asymptotes.
+- Choosing the limits of integration for areas, volumes and surfaces of these curves.
+
+! recap | One-minute revision
+- Factor $(a - x)$ on the right: curve stops at $x = a$; factor $(b - x)$ with $y^2$: asymptote $x = b$.
+- Node: two crossing branches; cusp: two branches meeting with one tangent.
+- Cycloid arch $0$ to $2\pi a$; astroid cusps at $\pm a$; cardioid $r = 2a$ at $\theta = 0$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 7 (the full PDF is linked on the subject page)
+& Shanti Narayan and P. K. Mittal, Differential Calculus, the chapter on curve tracing

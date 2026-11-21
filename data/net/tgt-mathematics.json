@@ -7,9 +7,9 @@
  "theme": "maths",
  "title": { "en": "TGT Mathematics" },
  "subtitle": { "en": "UPESSC TGT · subject code 07 · topic-wise notes on the official 2026 syllabus" },
- "pdf": { "href": "data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf", "en": "Full notes PDF" },
+ "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 5 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 7 of the notes are ready; the other chapters are being added."
  },
  "units": [
   { "id": "u1", "icon": "💰", "en": "Commercial Mathematics", "line": { "en": "Work and time · speed · interest · banking · taxation" } },
@@ -126,7 +126,9 @@
       { "id": "tp-05-06", "en": "5.6 Limits",
         "key": { "en": "Left and right limits · standard limits · limits at infinity · the 1^∞ form" } },
       { "id": "tp-05-07", "en": "5.7 Continuity and differentiability",
-        "key": { "en": "Types of discontinuity · continuous functions on a closed interval · continuity against differentiability · Rolle's theorem" } }
+        "key": { "en": "Types of discontinuity · continuous functions on a closed interval · continuity against differentiability · Rolle's theorem" } },
+      { "id": "tp-06-06", "en": "6.6 Mean value theorems",
+        "key": { "en": "Rolle's theorem · Lagrange's and Cauchy's mean value theorems · Taylor's series · L'Hospital's rule · Leibnitz's theorem" } }
      ]
     }
    ]
@@ -135,7 +137,50 @@
   { "id": "u8", "icon": "🌀", "en": "Complex Numbers", "line": { "en": "De Moivre's theorem · complex functions · real and imaginary parts · heights and distances" } },
   { "id": "u9", "icon": "⭕", "en": "Geometry", "line": { "en": "Pythagoras · circles, chords and tangents · alternate segment · congruence" } },
   { "id": "u10", "icon": "🧭", "en": "Coordinate Geometry", "line": { "en": "Pair of lines · conics · tangents and normals · polar equation · sphere, cone and cylinder" } },
-  { "id": "u11", "icon": "📉", "en": "Calculus", "line": { "en": "Differentiation and its uses · integration · areas and volumes · differential equations" } },
+  {
+   "id": "u11", "icon": "📉", "en": "Calculus",
+   "line": { "en": "Differentiation and its uses · integration · areas and volumes · differential equations" },
+   "parts": [
+    {
+     "en": "Differentiation",
+     "chapters": [
+      { "id": "tp-06-01", "en": "6.1 Derivative: meaning and rules",
+        "key": { "en": "Derivative from first principles · sum, product, quotient and chain rules · implicit, logarithmic and parametric differentiation · standard derivatives" } },
+      { "id": "tp-06-04", "en": "6.4 Tangents and normals",
+        "key": { "en": "Equations of the tangent and the normal · lengths of tangent and normal · angle between two curves" } },
+      { "id": "tp-06-03", "en": "6.3 Increasing and decreasing functions",
+        "key": { "en": "Sign of the derivative · intervals of increase and decrease · monotonic functions" } },
+      { "id": "tp-06-05", "en": "6.5 Maxima and minima",
+        "key": { "en": "Stationary points · first and second derivative tests · greatest and least values · word problems · extrema of functions of two variables" } },
+      { "id": "tp-06-07", "en": "6.7 Curvature, asymptotes and curve tracing",
+        "key": { "en": "Radius of curvature · asymptotes · how to trace a curve · standard curves" } }
+     ]
+    },
+    {
+     "en": "Integration",
+     "chapters": [
+      { "id": "tp-07-01", "en": "7.1 Indefinite integrals: standard forms",
+        "key": { "en": "Integration as the reverse of differentiation · the table of standard integrals" } },
+      { "id": "tp-07-02", "en": "7.2 Methods of integration",
+        "key": { "en": "Substitution · integration by parts · partial fractions" } },
+      { "id": "tp-07-03", "en": "7.3 Definite integrals",
+        "key": { "en": "The definite integral as the limit of a sum · its properties P1–P8 · evaluation" } },
+      { "id": "tp-07-05", "en": "7.5 Area under and between curves",
+        "key": { "en": "Area under a curve · area between two curves · areas of standard curves" } },
+      { "id": "tp-07-06", "en": "7.6 Volumes and surfaces of solids of revolution — formulas",
+        "key": { "en": "Volume and surface of revolution · Cartesian, parametric and polar forms" } },
+      { "id": "tp-07-07", "en": "7.7 Figure gallery: curves used in these questions",
+        "key": { "en": "Shapes of the cycloid, astroid, cardioid, catenary, witch, strophoid, cissoid and loops" } },
+      { "id": "tp-07-08", "en": "7.8 Volumes: all questions of the exercise, fully solved",
+        "key": { "en": "Caps, reels, spheroids, loops, cycloids, astroids and cardioids, solved in full" } },
+      { "id": "tp-07-09", "en": "7.9 Surfaces: all questions of the exercise, fully solved",
+        "key": { "en": "Spheres, zones, paraboloids, spheroids, cycloids, cardioids and loops · ready answers" } },
+      { "id": "tp-07-10", "en": "7.10 Mensuration (TGT)",
+        "key": { "en": "Cube, cuboid, cylinder, cone, sphere, hemisphere and frustum · recasting · Heron's formula" } }
+     ]
+    }
+   ]
+  },
   { "id": "u12", "icon": "➡️", "en": "Vector Analysis", "line": { "en": "Vectors · scalar and vector products · work and moment · triple products" } },
   { "id": "u13", "icon": "⚖️", "en": "Statics", "line": { "en": "Three forces · Lami's theorem · equilibrium · centre of gravity · catenary" } },
   { "id": "u14", "icon": "🚀", "en": "Dynamics", "line": { "en": "Projectiles · radial and transverse · tangential and normal components" } }

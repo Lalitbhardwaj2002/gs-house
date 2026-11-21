@@ -273,3 +273,176 @@ Source: UP_TGT_PGT_Maths_Notes_ComicSans.pdf, PDF pages 46 to 55 (printed 45 to 
 
 ### Checker
 `python -I -X utf8 tools/check_net.py`: last line `0 problems`.
+
+## Chapter 6, check of 22 November 2026
+
+Source: `pdfclean\clean.pdf`, PDF pages 56 to 68 (printed 55 to 67), read from the page images (100 dpi, `p-056.png` to `p-068.png` in this folder). PDF page 69 was read too: it starts with 7.1, so 6.7 ends on page 68.
+
+Nothing of the PDF was missing. Every box, bullet, formula, table, question (D1 to D7, PD1, PD2, ID1 to ID3, TN1, TN2, MM1 to MM9, MV1 to MV3), solution, boxed answer, shortcut, figure and caption is in the pages with the same mathematics and wording. Meta labels (dates, "formula pages p.2") are dropped as allowed.
+
+Every derivative, limit, extremum, value of $c$, radius of curvature and standard-curve fact, in the PDF text and in the additions, was recomputed with sympy (script `ch6.py`). All agree, except MM5 (a slip, below). Formula widths were checked with `width.py`. Figures were rendered (`fig-*.png`, `figs-montage.png`) and measured from their SVG coordinates (`figcheck*.py`).
+
+### tp-06-01 (Derivative: meaning and rules)
+- Checked: the definition, the rules, the standard-derivative table (sec⁻¹ and cosec⁻¹ numerically), D1 to D7, the shortcut. D3's range remarks checked at x = 0.3, −0.5, 2, −2: correct.
+- Added `! check | Conditions added` after the table: log x needs x > 0, aˣ needs a > 0, xⁿ for real n needs x > 0, sin⁻¹ and cos⁻¹ need |x| < 1, sec⁻¹ and cosec⁻¹ need |x| > 1.
+- Added `! check | A condition added` after the shortcut: the rule for f^g needs f > 0.
+- Additions: Example 2 now says "for t ≠ 0" (the answer 3/(4t)). The rest (first principles, x^x slopes, flash cards, exam, recap) is correct.
+- Layout only: D1 (b) and D5 (a) moved to display lines, D5 (b) split into two inline formulas (they were too wide for a phone).
+
+### tp-06-02 (Partial differentiation and Euler's theorem)
+- Checked PD1, PD2, Examples 1 to 3, the polar Jacobian: correct.
+- Added `! check | Conditions added` after the first box: Euler's theorem needs continuous first partial derivatives (second partials for the second formula), and u(tx, ty) = tⁿu for t > 0 (example √(x² + y²)).
+- Added `! check | Conditions added` after the add-on: the corollary needs f′(u) ≠ 0; the implicit derivative needs f_y ≠ 0.
+- Layout only: PD1's long line put on an aligned display.
+
+### tp-06-03 (Increasing and decreasing functions)
+- Checked ID1 to ID3, Examples 1 to 3, the −1/x remark: correct.
+- Added `! check | Each interval separately` after ID2: the boxed union means each interval on its own (f(−3) = 84 > f(4) = −98); the same for ID3 (b). The PDF's boxed answer is kept.
+
+### tp-06-04 (Tangents and normals)
+- Checked TN1, TN2, Examples 1 to 3, the subnormal 2a: correct.
+- Added `! check | A condition added` after the first box: the normal formula needs f′(x₀) ≠ 0; the normals for a horizontal and a vertical tangent.
+
+### tp-06-05 (Maxima and minima)
+- Checked MM1 to MM9, the shortcut results (cylinder and cone in a sphere, open box, closed cylinder), Examples 1 and 2: correct.
+- First derivative test: "no change: point of inflection" now reads "no change: neither (often a point of inflection)", with `! check | A statement made precise` (no extremum; 3x + |x| has a critical point without inflection).
+- Slip corrected in MM5: "D = c" for c ≤ 1/2 now reads "D = |c|", with `! check | A slip in the notes` (D = c is negative for c < 0; the two nearest points for c ≥ 1/2). Checked numerically for c = −2, 0, 0.3, 0.5, 1, 3.
+- Added `! check | A condition added` after the shortcut: x + k/x ≥ 2√k needs k > 0.
+
+### tp-06-06 (Mean value theorems)
+- Checked MV1 to MV3 (MV3 numerically for n = 3), the values of c for x², 1/x and √x, the tan x and log(1 + x) series, the nth-derivative formulas, Examples 1 to 3: correct.
+- Added `! check | Conditions added` after the add-on: Cauchy's hypotheses; 0 < a < b for √(ab) (−√(ab) if a < b < 0) and 0 ≤ a < b for √x; the hypotheses of Taylor's theorem and Rₙ → 0 for the series; L'Hospital needs lim f′/g′ (example (x + sin x)/x); m!/(m − n)! is for whole numbers n ≤ m; φ = tan⁻¹(b/a) only when a > 0 (checked: the formula fails for a = −2).
+- Layout only: MV3's Leibnitz step and Example 3 put on aligned displays.
+
+### tp-06-07 (Curvature, asymptotes and curve tracing)
+- Checked the three radius formulas and the standard values (parabola 2a, ellipse b²/a, catenary y²/c, cardioid (2/3)√(2ar)), the standard-curves table (cycloid 8a and 3πa², astroid 3πa²/8 and 6a, cardioid 3πa²/2 and 8a, lemniscate a², folium loop 3a²/2 and its asymptote), Examples 1 to 3: correct.
+- Added `! check | Conditions added` after the curvature box: a non-zero denominator, ρ is the absolute value, and which ellipse, catenary and cardioid the values are for.
+- Added `! check | Conditions added` after the checklist: algebraic curves; a non-constant coefficient; φₙ′(m) ≠ 0, and the rule when φₙ′(m) = φₙ₋₁(m) = 0; the folium's asymptote worked out by the rule.
+
+### Figures (not changed; for the owner)
+- folium.svg: only the loop and the second-quadrant branch are drawn. The fourth-quadrant branch (t < −1 in x = 3at/(1 + t³), y = 3at²/(1 + t³)) is missing: it leaves the origin tangent to the y-axis and approaches x + y + a = 0. The PDF figure has the same gap.
+- tangent-normal.svg: the normal meets the tangent at about 79°, not 90° (slopes 0.98 and −0.68 in the SVG). The PDF figure also marks the right angle and the angle θ; the SVG has neither, though the text refers to θ.
+- nearest-point.svg: the red segment ends on the parabola but not at the nearest point (it meets the curve at about 78°; the true foot is near (177, 97) instead of (185, 79)). Minor.
+- rise-fall.svg: the label "f′ < 0" overlaps the y-axis. Cosmetic.
+- chord-tangent, sign-scheme, max-min, abs-min, cone-cylinder, mean-value (tangent at c parallel to AB), curvature-circle (circle radius equals the radius of curvature of the drawn parabola): correct.
+
+### Placement (not changed)
+- TGT: 6.1, 6.4, 6.3, 6.5 and 6.7 are under Unit 11, Differentiation (differentiation, tangent and normal, maxima and minima, tracing of simple curves); 6.6 under Unit 6 with Rolle's theorem. Correct. 6.2 is rightly not in TGT.
+- PGT: all seven pages are under Unit 2, "Functions of one variable", in syllabus order. Remark: 6.2 (partial differentiation) is about functions of two variables and is not named in the PGT syllabus (it supports Unit 8, gradient and directional derivatives); 6.7 is not named either. Both can stay, but the owner may prefer a part of their own.
+- Keys describe the pages. Suggestions: the 6.1 key could add "implicit, logarithmic and parametric differentiation"; the 6.5 key could add "extrema of functions of two variables".
+
+`python -I -X utf8 tools/check_net.py`: last line `0 problems`.
+
+## Chapter 7, sections 7.1 to 7.5, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 69 to 75 (printed 68 to 74), read from the page images (rendered at 140 dpi, files c-69-0.png to c-75-1.png in this folder); the text layer was used only to confirm that no sentence was missed. 7.5 ends on PDF page 75, where the heading of 7.6 starts.
+
+Nothing of the PDF was missing. Every box, bullet, formula, the table of standard integrals, the five partial-fraction forms, the properties P1 to P8, the questions IN1 to IN4, DI1 to DI4, BG1, AR1 to AR3, their solutions and boxed answers, the three shortcut boxes, the Riemann add-on, the figures and the two captions are on the pages with the same mathematics and wording. Meta labels ("From your notes", "Formula pages 1–27", "your volume notes") were already dropped or reworded as the brief says.
+
+Every formula, integral, limit, area and boxed answer, in the PDF text and in the additions, was recomputed with sympy (script ch7.py in this folder; sympy installed in lib\). All are correct: each antiderivative of the table differentiates back to its integrand; DI1 to DI4, the ready answers, BG1, AR1 to AR3, the ready-made areas, and all added examples agree. Wallis' formula and the Gamma form were checked against the integral for all m, n from 0 to 8.
+
+### tp-07-01 (Indefinite integrals: standard forms)
+- Slip in the notes corrected: $\log\tan\left(\frac{\pi}{4} + \frac{x}{2}\right)$ and $\log\tan\frac{x}{2}$ now carry a modulus (the tangent is negative at $x = 2$ and $x = -1$). Red box "A modulus and conditions added" after the table box.
+- Conditions added in the same box: $a > 0$, and $a \neq 1$ for $\int a^x$; $\int \frac{dx}{x\sqrt{x^2 - 1}} = \sec^{-1} x$ for $x > 1$, $\sec^{-1}\lvert x \rvert$ in general.
+- Additions: "same derivative differ by a constant" now says "on an interval"; linear substitution now says $a \neq 0$; the derivative of $\log\lvert \sec x + \tan x \rvert$ moved to a two-line display (it was too long inline for a phone).
+- Examples 1 to 3 and the cards: correct, no change.
+
+### tp-07-02 (Methods of integration)
+- Conditions added (red box after the partial-fraction forms): proper fractions only; $a, b, c$ distinct in forms (1), (3), (4); in form (5) $x^2 + bx + c$ has no real roots ($b^2 < 4c$).
+- Long inline solutions put on display lines, same mathematics: IN2 (ii), IN3, Example 1 (now says which step uses IN2 (i)), the boxed answer of Example 2.
+- ILATE bullet reworded: "when the integrand is a log or an inverse trigonometric function alone (as in $\int \log x\,dx$), take 1 as the second factor".
+- IN1 to IN4, the shortcut formulas ($e^{ax}\sin bx$, $e^{ax}\cos bx$, $t = \tan\frac{x}{2}$, $px + q = A(2ax + b) + B$) and Examples 1 to 3: correct.
+
+### tp-07-03 (Definite integrals)
+- Conditions added (red box after the first box): $f$ integrable on $[a, b]$, and $F' = f$ on the whole of $[a, b]$, with the counter-example $\int_{-1}^1 \frac{dx}{x^2}$.
+- Conditions added (red box after the ready answers): $\frac{b - a}{2}$ needs $f(x) + f(a + b - x) \neq 0$; in the period rule $n$ is a whole number (counter-example $n = \frac{1}{2}$ with $\sin x$).
+- DI3 solution split into a three-line display (it was one inline line of about 64 characters).
+- DI1 is titled "P4" but uses P5; the page already explains P5 is P4 with $a = 0$. No change.
+- DI1 to DI4, the ready answers ($\frac{\pi}{4}$ for every $n$ tested, $-\frac{\pi}{2}\log 2$, the $x f(\sin x)$ rule) and Examples 1 to 3 ($\frac{\pi^2}{4}$, $\frac{5}{2}$, 20): correct.
+
+### tp-07-04 (Beta and Gamma functions; Wallis' formula)
+- Conditions added (red box after the note box): $m, n > 0$ for $B$, $n > 0$ for $\Gamma$; $\Gamma(n) = (n - 1)\Gamma(n - 1)$ for $n > 1$, $= (n - 1)!$ for positive integers; the Gamma form of $\int_0^{\pi/2}\sin^m\cos^n$ for $m, n > -1$; Wallis for whole numbers $m, n \geq 0$.
+- Conditions added (red box after the Riemann add-on): $f$ bounded on a closed interval $[a, b]$, inf and sup over all partitions, with the example $\frac{1}{\sqrt{x}}$ on $[0, 1]$.
+- Wallis display split into three lines (it was about 61 characters wide).
+- Additions corrected: "refining a partition lowers $U$ and raises $L$" now "never raises $U$ and never lowers $L$" (they can stay equal); Leibnitz's rule now states "continuous $f$, differentiable $g$".
+- BG1 ($\frac{5\pi}{32}$, $\frac{16}{315}$, $\frac{3\sqrt{\pi}}{4}$) and Examples 1 to 3 ($\frac{1}{280}$, $\frac{2}{35}$, $2x\cos x^2$): correct.
+
+### tp-07-05 (Area under and between curves)
+- Conditions added (red box after the note box): "upper minus lower" needs the curves not to cross between $a$ and $b$; meaning of the polar and parametric formulas ($x$ increasing, $y \geq 0$).
+- Conditions added (red box after the ready-made areas): $a > 0$ (also in AR1), $m > 0$ for $y = mx$ (else $\frac{8a^2}{3\lvert m \rvert^3}$); the equations of the cycloid, astroid and cardioid meant.
+- AR1 solution and Example 3 put on display lines; Example 3 now shows the three terms of $(1 + \cos\theta)^2$.
+- The general bullet now gives $a, b > 0$ and the meeting point $x = 4a^{1/3}b^{2/3}$ (checked: area $\frac{16ab}{3}$).
+- Figure caption (a page addition; the PDF figure has none) changed from "cut into thin vertical strips" to "with one thin vertical strip", which is what the figure shows.
+- AR1 to AR3, the ready-made areas and Examples 1 to 3: correct.
+
+### Figures (not edited)
+- area-even.svg and area-odd.svg: correct (the odd one shades both parts between the curve and the $x$-axis).
+- riemann-sum.svg: rectangles correct (left end points, heights $f(a + rh)$, last one ends at $b$). Defect: the curve leaves the top of the picture and its label "y = f(x)" sits at y = -25 in the SVG, outside the viewBox (0 to 186), so it does not show (the PDF figure shows it). Fix: move the label inside, e.g. to about x 200, y 40, or flatten the curve.
+- two-parabolas.svg: defect. The curves meet at (224, -24), above the top of the viewBox, so the region is cut open at the top and the meeting point is not seen; both labels "y² = 4ax" (y -29) and "x² = 4by" (y -53) are outside the picture and do not show. The PDF figure shows the meeting point and both labels. Fix: scale the curves so they meet at about y 30 and put the labels inside the viewBox. The strip itself is correct.
+
+### Placement (JSON, not edited)
+- tgt-mathematics.json, u11 Calculus / Integration: tp-07-01, 02, 03, 05. Correct; tp-07-04 is rightly left out (Beta, Gamma and Riemann integration are not in the TGT syllabus).
+- pgt-mathematics.json, u2 Calculus / Integration: tp-07-01 to 05. Correct (methods of integration, limit of a sum, properties, area, Riemann integration).
+- Key lines describe the pages. Suggestion only: the key of tp-07-03 could name "limit of a sum" (a PGT syllabus item).
+
+### Checker
+`python -I -X utf8 tools/check_net.py`: last line `0 problems`.
+
+## Chapter 7, sections 7.6 to 7.10, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 75 to 92 (printed 74 to 91), read from the page images (`p75-075.png` to `p92-092.png` in this folder). Section 7.6 starts at the foot of PDF page 75; Chapter 8 starts on PDF page 93.
+
+Nothing of the PDF was missing. Every box, bullet, formula, figure, caption, table, question, solution, boxed answer, note, shortcut and check box of 7.6 to 7.10 is on the pages with the same mathematics. The PDF has these questions: V1 to V7, V9, V10, V12 / V22, V13, V14, V15, V18, V19, V21, V23, V24, V25 (7.8); S1 to S4, S6 to S11, S13, S14, S15 (7.9); ME1 (7.10). All are on the pages. The gaps in the numbering (no V8, V11, V16, V17, V20, S5, S12) are in the PDF itself.
+
+Every result, of the PDF text and of the additions, was recomputed numerically with mpmath (script `verify.py` in this folder, 75 checks, all agree). The only wrong value in these sections is the notebook's S15 value, which the PDF itself already corrects in a red box; the page has that box.
+
+Display lines were measured with `width.py` (rough count of visible characters). Every displayed row is now under about 43 characters, and no inline formula is over about 33. `fmt.py` checks dollars, braces, `\left`/`\right`, aligned blocks, boxes and spelling: 0 problems.
+
+### tp-07-06 (Volumes and surfaces of solids of revolution — formulas)
+- Checked against PDF pages 75 to 77: strip method, the four volume formulas, polar area revolved (three axes), surface formulas, the six figure-tracing tips. Box title "Chapter 8 of your notes" (a notebook reference) is "Volumes and surfaces of revolution"; the teal box is a `! note`, as in tp-06-07.
+- Split three surface-formula display lines (the widest about 75 characters) into aligned rows. "(about the initial line)" now reads "(about initial line)", as in the PDF.
+- Added `! check | Condition added` after the formula box: in the surface formulas $y$, $x$, $r\sin\theta$, $r\cos\theta$ are distances, so they must be $\geq 0$ on the arc; the polar volume formulas need the region on one side of the axis ($0 \leq \theta_1 < \theta_2 \leq \pi$ about the initial line, and the matching conditions about $\theta = \frac{\pi}{2}$ and $\theta = \gamma$).
+- Additions corrected: the washer formula now says $0 \leq y_1 \leq y \leq y_2$ (it is wrong for a region that crosses the axis); Pappus's theorems now say the axis must not cross the region.
+- Examples 1 to 3 (cone, sphere, cylinder), flash cards, exam and recap boxes: correct.
+
+### tp-07-07 (Figure gallery: curves used in these questions)
+- Checked against PDF pages 77 and 78: the nine figures and captions, and the shortcut box "Read the figure from the equation". All present and correct.
+- Additions checked: the table of the nine curves (cusps, nodes, asymptotes, where each curve exists), "What it means", flash cards, recap. All correct. No change.
+
+### tp-07-08 (Volumes: all questions of the exercise, fully solved)
+- Checked against PDF pages 78 to 86: all 19 question boxes, including the figures, the V4 note and the V18 table. All answers correct: $\frac{2}{3}\pi a^3$, $\pi h^2(a - \frac{h}{3})$, $\frac{5}{32}$, $\frac{4}{5}\pi a^3$, the mean proportional, the catenary, $\frac{\pi^2a^3}{2}$, $2\pi a^3(\log 2 - \frac{2}{3})$, $\frac{\pi a^4}{12}$, $\frac{16\pi a^3}{105}$ and $\frac{32\pi a^3}{105}$, $\frac{23\pi a^3}{60}$, $\frac{1536\pi}{5}$, $\frac{1}{2}\pi^2a^3$, $\pi^2a^3$ and $5\pi^2a^3$, $\pi a^3(\frac{3}{2}\pi^2 - \frac{8}{3})$, $\frac{3}{4}\pi$, $2\pi^2a^3$, $\frac{4}{3}\pi a^3$, $\frac{8}{3}\pi a^3$.
+- Split into aligned rows the 20 display lines that were too wide for a phone (up to about 90 characters), and moved the long inline formulas of V18 (i), V19 and V21 onto display lines. In V19 the three integrals $I_1$, $I_2$, $I_3$ are now one aligned display instead of a bullet list. V18 (i) now starts "(i) About the $x$-axis:" to match "(ii) About $y = 2a$".
+- "What it means" claimed that the missing numbers (V8, V11, V16, V17, V20) "are not part of" the exercise, which the PDF does not say. It now says only that the notes give no V8, V11, V16, V17 or V20, and solve V12 and V22 together.
+- V14 caption: the figure shows both halves of the basin, but $x^3 = 64y$ has $y < 0$ for $x < 0$. Caption now: "section of the basin: the curve $x^3 = 64y$ ($x \geq 0$) up to $y = 8$ and its mirror image in the $y$-axis".
+- Flash cards, exam and recap boxes: correct.
+
+### tp-07-09 (Surfaces: all questions of the exercise, fully solved)
+- Checked against PDF pages 86 to 91: all 13 question boxes, the red box on S15, and the "Ready answers for MCQs" shortcut (10 items). All answers correct, including S15 $= \frac{48\sqrt{2}}{5}\pi a^2$ (the notebook's $\frac{32}{5}\pi a^2$ is the S14 value, as the red box says).
+- Split six wide display rows (S8, S9, S10 area, S11 twice, Example 3) and moved the long inline formula of S14 onto an aligned display.
+- Addition corrected: Archimedes' zone result holds between planes perpendicular to the axis of the cylinder, not "any two parallel planes".
+- Examples 1 to 3 (torus by Pappus, cone surface $\pi rl$, astroid $\frac{12}{5}\pi a^2$), flash cards, exam and recap: correct.
+
+### tp-07-10 (Mensuration (TGT))
+- Checked against PDF page 92: figure, formula sheet (6 rows), green add-on box, ME1 ($R^3 = 294$, $R \approx 6.65$ cm; CSA $175\pi \approx 550$ cm²). Box title "Formula sheet p.1" is "Formula sheet" (page reference dropped).
+- Split the bucket example's display line (about 60 characters) into two rows.
+- Examples 1 to 5 (18 cm, 22 litres, 21 % and 33.1 %, 84 cm², 22 cm and 154 cm²), flash cards, exam and recap: correct.
+
+### Figures (not edited)
+- disc-method.svg: the blue curve $y = f(x)$ is drawn only from $x = 60$ to $x = 152.5$ (viewBox units); from there to $b$ the curve is only the thin black edge of the shaded region, and the blue label "$y = f(x)$" sits next to the black part. Extending the blue polyline to $x = 260$ fixes it.
+- curve-strophoid.svg: the loop is not closed at $(a, 0)$. Both polylines stop at $x = 126.8$ ($y = 57.9$ and $62.1$), leaving a visible gap at the tip of the loop, where the curve should cross the axis with a vertical tangent. Adding the point $(127, 60)$ to both polylines closes it.
+- vol-hemisphere.svg: the end of the arc runs through the label "(a, 0)"; moving the label a little right or down would make it easier to read. Cosmetic only.
+- vol-basin.svg: shows both halves (the section of the basin); the caption now says so.
+- All other figures (the other eight gallery curves, vol-cap, vol-reel with the region between arc and axis shaded, vol-cycloid-vertex, vol-param-loop, vol-cardioid, surf-cycloid-arch, solids) show what their captions and the text say. Several are drawn with different horizontal and vertical scales (witch, basin, cycloid arch); this is fine for sketches.
+
+### Placement (JSON, not edited)
+- tgt-mathematics.json, unit u11 Calculus, part "Integration": tp-07-06 to tp-07-10. Correct: the TGT syllabus asks for "definite integrals and their applications in finding the area between curves, and the volumes and surfaces of the cylinder, the cone and the sphere". The key lines describe the pages.
+- pgt-mathematics.json, unit u2 Calculus, part "Integration": tp-07-06 to tp-07-09. The PGT syllabus names only "applications in finding the area under simple curves", not volumes or surfaces. The pages do no harm there, but the owner may want to remove them from PGT, or keep them as extra practice. tp-07-10 is rightly TGT only.
+
+### Checker
+`python -I -X utf8 tools/check_net.py`: last line `0 problems`.
+
+## Chapters 6 and 7, after the checks (22 November 2026)
+
+- Figures redrawn as the checkers asked: `folium.svg` now has its fourth-quadrant branch (missing in the PDF figure too); `tangent-normal.svg` is drawn to one scale, so the normal meets the tangent at a right angle, and shows the angle θ and the right-angle mark; `nearest-point.svg` is drawn to one scale, so the segment meets the parabola at its true nearest point $(h, k)$; the labels of `rise-fall.svg`, `riemann-sum.svg`, `two-parabolas.svg` (which now shows the meeting point $(4a, 4b)$) and `vol-hemisphere.svg` sit inside the frame and clear of the curves; `disc-method.svg` draws the curve in full; the loop of `curve-strophoid.svg` closes at $(a, 0)$.
+- Placement: in PGT, 6.2 (partial differentiation, two variables) and 6.7 (curvature, asymptotes, tracing) moved to a part of their own, "Partial differentiation and curves"; key lines of 6.1, 6.5 and 7.3 extended as suggested.
+- Phone width: 75 display formulas of 6.1–7.10 were still wider than a 375-pixel screen. They were split into one step per line (mostly at their top-level "="; a few by hand at a "+" or "×"). A script compared every split formula with its checked text, ignoring line breaks, alignment marks and spacing: the mathematics is unchanged (the only difference is answer (b) of 6.1, moved from an inline formula to a display of its own). In the browser at 375 pixels all 17 pages render with no KaTeX error, no formula wider than the screen and every figure loaded.

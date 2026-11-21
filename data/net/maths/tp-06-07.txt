@@ -1,0 +1,78 @@
+@en
+# Curvature, asymptotes and curve tracing
+
+> Tracing a curve means sketching it from its equation: symmetry, intercepts, the region where it exists, asymptotes and turning points. Curvature measures how sharply it bends. The TGT syllabus asks for the tracing of simple curves.
+
+## Radius of curvature
+
+! addon | Radius of curvature
+^ data/net/maths/fig/curvature-circle.svg | the circle of curvature at $P$, of radius $\rho$
+The circle of curvature at $P$ fits the curve most closely; its radius is
+$$\begin{aligned} \rho &= \frac{ds}{d\psi} = \frac{(1 + y_1^2)^{3/2}}{y_2}, \\ \rho &= \frac{(\dot{x}^2 + \dot{y}^2)^{3/2}}{\dot{x}\ddot{y} - \dot{y}\ddot{x}}, \\ \rho &= \frac{(r^2 + r_1^2)^{3/2}}{r^2 + 2r_1^2 - rr_2}. \end{aligned}$$
+Standard values: circle $a$; parabola $y^2 = 4ax$ at the vertex $2a$; ellipse at the end of the major axis $\frac{b^2}{a}$; catenary $\frac{y^2}{c}$; cardioid $\frac{2}{3}\sqrt{2ar}$.
+
+! check | Conditions added
+Each formula needs a non-zero denominator; where it is 0 (for example $y_2 = 0$) the curvature is 0 and there is no circle of curvature. The sign of the result only shows which way the curve bends, so $\rho$ is its absolute value. The standard values are for the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b$) at $(\pm a, 0)$, the catenary $y = c\cosh\frac{x}{c}$ and the cardioid $r = a(1 + \cos\theta)$.
+
+## Tracing a curve
+
+! addon | Curve tracing checklist
+- (1) **Symmetry**: only even powers of $y \to$ about the $x$-axis; only even powers of $x \to$ about the $y$-axis; unchanged under $(x, y) \to (-x, -y) \to$ opposite quadrants; under $x \leftrightarrow y \to$ about $y = x$.
+- (2) **Origin**: no constant term $\Rightarrow$ passes through the origin; tangents there = lowest-degree terms equated to 0.
+- (3) **Intercepts** and tangents at them. **Region**: where $y^2 < 0$ there is no curve.
+- (4) **Asymptotes**: parallel to the $x$-axis: coefficient of the highest power of $x = 0$; parallel to the $y$-axis: coefficient of the highest power of $y = 0$; oblique $y = mx + c$: $\phi_n(m) = 0$, $c = -\frac{\phi_{n-1}(m)}{\phi_n'(m)}$.
+- (5) **Monotonicity**, max/min, points of inflection ($y'' = 0$ with a sign change).
+
+! check | Conditions added
+The asymptote rules are for algebraic curves, and an asymptote parallel to an axis comes only from a coefficient that is not a constant. The formula for $c$ needs $\phi_n'(m) \neq 0$; if $\phi_n'(m) = \phi_{n-1}(m) = 0$, then $c$ comes from $\frac{c^2}{2}\phi_n''(m) + c\phi_{n-1}'(m) + \phi_{n-2}(m) = 0$ (two parallel asymptotes). For the folium, $\phi_3(m) = 1 + m^3 = 0$ gives $m = -1$, and $\phi_2(m) = -3am$ gives $c = -\frac{3a}{3} = -a$: the asymptote $x + y + a = 0$.
+
+^ data/net/maths/fig/folium.svg | the folium $x^3 + y^3 = 3axy$ with its asymptote $x + y + a = 0$
+
+! note | Figure-tracing tips
+Worked tracing of the cycloid, astroid, cardioid, strophoid, cissoid, catenary and loops, with a figure gallery, is in Chapter 7 (*Volumes and surfaces of solids of revolution*).
+
+! addon | Standard curves
+| Curve | Facts |
+| Cycloid $x = a(\theta - \sin\theta)$, $y = a(1 - \cos\theta)$ | arch length $8a$, area $3\pi a^2$ |
+| Astroid $x^{2/3} + y^{2/3} = a^{2/3}$ | area $\frac{3}{8}\pi a^2$, perimeter $6a$ |
+| Cardioid $r = a(1 + \cos\theta)$ | area $\frac{3}{2}\pi a^2$, perimeter $8a$ |
+| Lemniscate $r^2 = a^2\cos 2\theta$ | area $a^2$ |
+| Folium $x^3 + y^3 = 3axy$ | asymptote $x + y + a = 0$, loop area $\frac{3}{2}a^2$ |
+| Rose $r = a\sin n\theta$ | $n$ petals ($n$ odd), $2n$ petals ($n$ even) |
+
+## What it means
+
+- **Curvature** $\kappa = \frac{1}{\rho}$ is the rate at which the tangent turns per unit length of arc. A straight line has $\kappa = 0$ ($\rho = \infty$); a circle of radius $a$ has $\rho = a$ everywhere. In the first formula take $\lvert y_2 \rvert$ when only the size of $\rho$ is wanted.
+- **Asymptote**: a straight line that the curve approaches as it goes to infinity. In the notation of the checklist, $\phi_n(m)$ is what the terms of highest degree $n$ become when $x = 1$, $y = m$, and $\phi_{n-1}(m)$ the same for the terms of degree $n - 1$.
+- **Points of inflection** are where the curve changes from bending upwards ($y'' > 0$) to bending downwards ($y'' < 0$) or back.
+- **Polar curves**: use symmetry in $\theta$ (if $r(\theta) = r(-\theta)$ the curve is symmetric about the initial line) and tabulate $r$ for the angles $0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}, \dots$
+
+! example | Example 1 — radius of curvature
+Find the radius of curvature of $y = x^2$ at the origin.
+**Solution.** $y_1 = 2x = 0$ and $y_2 = 2$ at the origin, so $\rho = \frac{(1 + 0)^{3/2}}{2} = \boxed{\frac{1}{2}}$. (The curve is the parabola $x^2 = 4ay$ with $a = \frac{1}{4}$, whose radius at the vertex is $2a = \frac{1}{2}$ ✓.)
+
+! example | Example 2 — asymptotes of a rational curve
+Find the asymptotes of $y = \frac{2x + 1}{x - 3}$.
+**Solution.** As $x \to 3$, $y \to \pm\infty$: vertical asymptote $\boxed{x = 3}$. As $x \to \pm\infty$, $y \to 2$: horizontal asymptote $\boxed{y = 2}$.
+
+! example | Example 3 — tracing $y^2 = x^3$ (semi-cubical parabola)
+Describe the curve $y^2 = x^3$.
+**Solution.** Only $y^2$ appears: symmetric about the $x$-axis. It passes through the origin, where the lowest-degree term $y^2 = 0$ gives the $x$-axis as a double tangent (a cusp). $y^2 = x^3 < 0$ for $x < 0$, so the curve lies in $x \geq 0$, and $\lvert y \rvert$ grows without bound as $x$ grows; there are no asymptotes.
+
+? Radius of curvature in Cartesian form? :: $\rho = \frac{(1 + y_1^2)^{3/2}}{y_2}$.
+? Radius of curvature of $y^2 = 4ax$ at its vertex? :: $2a$.
+? When is a curve symmetric about the $x$-axis? :: When its equation contains only even powers of $y$.
+? Area of the cardioid $r = a(1 + \cos\theta)$? :: $\frac{3}{2}\pi a^2$.
+
+! exam | What the exam asks
+- Radius of curvature of standard curves at given points.
+- Asymptotes of algebraic curves; symmetry and the region of a curve.
+- Facts about the cycloid, astroid, cardioid, lemniscate, folium and rose curves.
+
+! recap | One-minute revision
+- $\rho = \frac{(1 + y_1^2)^{3/2}}{y_2}$; parabola at vertex $2a$; ellipse at end of major axis $\frac{b^2}{a}$.
+- Tracing: symmetry, origin, intercepts, region, asymptotes, monotonicity.
+- Cycloid arch $8a$, area $3\pi a^2$; astroid area $\frac{3}{8}\pi a^2$; cardioid area $\frac{3}{2}\pi a^2$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 6 (the full PDF is linked on the subject page)
+& Shanti Narayan and P. K. Mittal, Differential Calculus, the chapters on curvature, asymptotes and curve tracing

@@ -1,0 +1,67 @@
+@en
+# Volumes and surfaces of solids of revolution — formulas
+
+> When a region turns about an axis it sweeps out a solid. Cutting the region into thin strips perpendicular to the axis turns each strip into a thin disc; adding the discs gives the volume, and adding thin bands gives the curved surface. The TGT syllabus asks for the volumes and surfaces of the cylinder, cone and sphere this way.
+
+## Volumes and surfaces
+
+! note | Volumes and surfaces of revolution
+^ data/net/maths/fig/disc-method.svg | a thin strip of width $\delta x$ at $P$ turns into a thin disc of radius $y$
+**Strip (disc) method.** Take a thin strip $PMNQ$ of width $\delta x$ perpendicular to the axis of rotation. When it turns about the axis it makes a thin disc of radius $PM = y$, so its volume is $\pi y^2\,\delta x$. Adding all discs:
+- about $x$-axis: $V = \int_a^b \pi y^2\,dx$;
+- about $y$-axis: $V = \int_c^d \pi x^2\,dy$;
+- parametric $x = f(t)$, $y = g(t)$: $V = \int \pi y^2\frac{dx}{dt}\,dt$ (or $\int \pi x^2\frac{dy}{dt}\,dt$);
+- polar curve: put $x = r\cos\theta$, $y = r\sin\theta$ and use the parametric form.
+**Polar area revolved.** The area bounded by $r = f(\theta)$ and the radii $\theta_1, \theta_2$, revolved: about the initial line $V = \int_{\theta_1}^{\theta_2} \frac{2}{3}\pi r^3\sin\theta\,d\theta$; about $\theta = \frac{\pi}{2}$: $\int \frac{2}{3}\pi r^3\cos\theta\,d\theta$; about $\theta = \gamma$: $\int \frac{2}{3}\pi r^3\sin(\theta - \gamma)\,d\theta$.
+**Surface.** A small arc $\delta s$ at distance $y$ from the axis sweeps a band of area $2\pi y\,\delta s$:
+$$\begin{aligned} S &= \int 2\pi y\frac{ds}{dx}\,dx \ (x\text{-axis}), \\ S &= \int 2\pi x\frac{ds}{dy}\,dy \ (y\text{-axis}), \end{aligned}$$
+$$\begin{aligned} &\frac{ds}{dx} = \sqrt{1 + \left(\frac{dy}{dx}\right)^2}, \\ &\frac{ds}{dy} = \sqrt{1 + \left(\frac{dx}{dy}\right)^2} \end{aligned}$$
+$$\begin{aligned} &\text{parametric: } \frac{ds}{dt} = \sqrt{\dot{x}^2 + \dot{y}^2}; \\ &\text{polar: } \frac{ds}{d\theta} = \sqrt{r^2 + \left(\frac{dr}{d\theta}\right)^2}, \end{aligned}$$
+$$\begin{aligned} &S = \int 2\pi(r\sin\theta)\frac{ds}{d\theta}\,d\theta \\ &\qquad (\text{about initial line}), \\ &S = \int 2\pi(r\cos\theta)\frac{ds}{d\theta}\,d\theta \\ &\qquad \left(\text{about } \theta = \tfrac{\pi}{2}\right). \end{aligned}$$
+
+! check | Condition added
+In the surface formulas $y$, $x$, $r\sin\theta$ and $r\cos\theta$ stand for the distance from the axis, so they must be $\geq 0$ on the arc (otherwise take the absolute value); likewise the polar volume formulas need the region on one side of the axis: $0 \leq \theta_1 < \theta_2 \leq \pi$ about the initial line, $\cos\theta \geq 0$ about $\theta = \frac{\pi}{2}$, $\sin(\theta - \gamma) \geq 0$ about $\theta = \gamma$. For a curve symmetric about the axis take the half on one side only, as in all the questions.
+
+! note | Figure-tracing tips — How to trace the curve before integrating
+- (1) **Symmetry first.** Only $y^2$ present $\Rightarrow$ symmetric about $x$-axis (integrate over the upper half, then double *only if the region is on both sides of the axis you are NOT revolving about*). Only $x^2$ $\Rightarrow$ about $y$-axis. Polar curve with only $\cos\theta$ $\Rightarrow$ symmetric about the initial line.
+- (2) **Where does it cut the axes?** Put $y = 0$ (gives the ends of a loop) and $x = 0$. A factor $x^2$ on the right (like $y^2 = x^2(a - x)$) means the curve has a *double point* (node) at the origin — two branches cross there.
+- (3) **Where does it exist?** $y^2 \geq 0$ is required. E.g. $y^2 = x^2(a - x)$ exists only for $x \leq a$; the loop is between the two consecutive zeros $x = 0$ and $x = a$.
+- (4) **Asymptotes.** Equate the coefficient of the highest power of $y$ to zero: $y^2(a + x) = \cdots \Rightarrow x = -a$; $(a - x)y^2 = \cdots \Rightarrow x = a$. If $y \to 0$ as $x \to \infty$ the $x$-axis is an asymptote.
+- (5) **Parametric / polar curves: make a table.** Put $\theta = 0, \frac{\pi}{2}, \pi$ (and $-\frac{\pi}{2}, -\pi$) and plot the points; join smoothly.
+- (6) **Choose the strip perpendicular to the axis of rotation**; its radius is the distance from that axis (e.g. revolving about the asymptote $x = a$: radius $= a - x$, thickness $\delta y$).
+
+## What it means
+
+- **Discs and washers**: if the region lies between two curves $0 \leq y_1 \leq y \leq y_2$ and turns about the $x$-axis, each strip makes a washer, and $V = \int \pi(y_2^2 - y_1^2)\,dx$.
+- **The three solids of the TGT syllabus** come from simple regions: a **cylinder** from a rectangle, a **cone** from a right triangle, a **sphere** from a semicircle (see the examples below).
+- **Pappus's theorems** (a quick check): for an axis that does not cross the region, the volume swept is the area of the region times the distance travelled by its centroid; the surface swept is the length of the arc times the distance travelled by its centroid.
+
+! example | Example 1 — the cone
+Find the volume of the cone formed by turning the line $y = \frac{r}{h}x$, $0 \leq x \leq h$, about the $x$-axis.
+**Solution.** $V = \int_0^h \pi\frac{r^2}{h^2}x^2\,dx = \pi\frac{r^2}{h^2} \cdot \frac{h^3}{3} = \boxed{\frac{1}{3}\pi r^2h}$.
+
+! example | Example 2 — the sphere
+Find the volume and the surface of the sphere formed by turning the semicircle $y = \sqrt{a^2 - x^2}$, $-a \leq x \leq a$, about the $x$-axis.
+**Solution.** $V = \int_{-a}^a \pi(a^2 - x^2)\,dx = \pi\left(2a^3 - \frac{2a^3}{3}\right) = \boxed{\frac{4}{3}\pi a^3}$. For the surface, $y\frac{ds}{dx} = y\sqrt{1 + \frac{x^2}{y^2}} = a$, so $S = \int_{-a}^a 2\pi a\,dx = \boxed{4\pi a^2}$.
+
+! example | Example 3 — the cylinder
+Find the volume and curved surface of the cylinder formed by turning the line $y = r$, $0 \leq x \leq h$, about the $x$-axis.
+**Solution.** $V = \int_0^h \pi r^2\,dx = \boxed{\pi r^2h}$; $\frac{ds}{dx} = 1$, so $S = \int_0^h 2\pi r\,dx = \boxed{2\pi rh}$.
+
+? Volume of revolution about the $x$-axis? :: $\int_a^b \pi y^2\,dx$.
+? Curved surface of revolution about the $x$-axis? :: $\int 2\pi y\,\frac{ds}{dx}\,dx$, with $\frac{ds}{dx} = \sqrt{1 + y'^2}$.
+? Which way should the strip be cut? :: Perpendicular to the axis of rotation.
+? What does a factor $x^2$ on the right of $y^2 = x^2(a - x)$ tell you? :: The curve has a double point (node) at the origin.
+
+! exam | What the exam asks
+- Volumes and surfaces of the cylinder, cone, sphere, cap and paraboloid by integration.
+- Volumes of revolution of standard curves (cycloid, astroid, cardioid, loops) about an axis or an asymptote.
+- Setting up the right integral: which variable, which limits, disc or washer.
+
+! recap | One-minute revision
+- $V = \int \pi y^2\,dx$ (about $x$-axis), $\int \pi x^2\,dy$ (about $y$-axis); washers $\int \pi(y_2^2 - y_1^2)\,dx$.
+- $S = \int 2\pi y\,ds$ with $ds = \sqrt{1 + y'^2}\,dx$, $\sqrt{\dot{x}^2 + \dot{y}^2}\,dt$ or $\sqrt{r^2 + r'^2}\,d\theta$.
+- Polar region about the initial line: $\int \frac{2}{3}\pi r^3\sin\theta\,d\theta$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 7 (the full PDF is linked on the subject page)
+& Shanti Narayan and P. K. Mittal, Integral Calculus, the chapter on volumes and surfaces of solids of revolution

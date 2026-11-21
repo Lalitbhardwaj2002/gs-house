@@ -1,0 +1,71 @@
+@en
+# Mensuration (TGT)
+
+> Surface areas and volumes of the cube, cuboid, cylinder, cone, sphere, hemisphere and frustum. The TGT syllabus asks for the volumes and surfaces of the cylinder, the cone and the sphere; the usual questions recast one solid into another (the volume stays the same) or ask for a curved surface or a cost.
+
+## Solids: the formula sheet
+
+^ data/net/maths/fig/solids.svg | cylinder, cone, sphere and frustum: radius $r$ (and $R$), height $h$, slant height $l$
+
+! note | Formula sheet
+| Solid | Total surface | Lateral/curved surface | Volume |
+| Cube (side $a$) | $6a^2$ | $4a^2$ | $a^3$ |
+| Cuboid | $2(lb + bh + hl)$ | $2h(l + b)$ | $lbh$ |
+| Cylinder | $2\pi r(r + h)$ | $2\pi rh$ | $\pi r^2h$ |
+| Cone ($l = \sqrt{r^2 + h^2}$) | $\pi r(r + l)$ | $\pi rl$ | $\frac{1}{3}\pi r^2h$ |
+| Sphere | $4\pi r^2$ | — | $\frac{4}{3}\pi r^3$ |
+| Hemisphere | $3\pi r^2$ | $2\pi r^2$ | $\frac{2}{3}\pi r^3$ |
+
+! addon | Frustum, diagonals, Heron's formula and scale
+Frustum: $V = \frac{1}{3}\pi h(R^2 + r^2 + Rr)$, curved surface $\pi l(R + r)$, $l = \sqrt{h^2 + (R - r)^2}$. Diagonal of cube $a\sqrt{3}$; of cuboid $\sqrt{l^2 + b^2 + h^2}$. Heron's formula $\sqrt{s(s - a)(s - b)(s - c)}$; equilateral triangle $\frac{\sqrt{3}}{4}a^2$. If all lengths are multiplied by $k$: areas $\times k^2$, volumes $\times k^3$.
+
+! example | Question ME1 — standard
+A cone of height 24 cm and base radius 7 cm is made of clay and reshaped into a sphere. Find the radius of the sphere and the curved surface of the cone.
+**Solution.** $\frac{1}{3}\pi \cdot 49 \cdot 24 = \frac{4}{3}\pi R^3 \Rightarrow R^3 = 294 \Rightarrow R \approx \boxed{6.65\text{ cm}}$. Slant height $l = \sqrt{49 + 576} = 25$; CSA $= \pi \cdot 7 \cdot 25 = \boxed{175\pi \approx 550\text{ cm}^2}$.
+
+## What it means
+
+- **Total = curved + flat faces.** Cylinder: $2\pi rh + 2\pi r^2$; cone: $\pi rl + \pi r^2$; hemisphere: $2\pi r^2 + \pi r^2 = 3\pi r^2$. A hollow (open) solid leaves out the faces that are missing.
+- **Recasting** (melting one solid into others) keeps the **volume**, not the surface: (volume of the old solid) = (number of new pieces) × (volume of one piece).
+- **Where the formulas come from**: the cone is one third of the cylinder on the same base and height; the sphere's volume is $\int_{-r}^{r}\pi(r^2 - x^2)\,dx$ and its surface $\int 2\pi y\,ds$ (see the volumes and surfaces pages). The frustum is a cone with a smaller cone cut off its top.
+- **Units**: $1\text{ m}^3 = 1000$ litres; $1\text{ litre} = 1000\text{ cm}^3$. With $\pi = \frac{22}{7}$, choose numbers so that 7 cancels.
+- **Plane figures** used inside these questions: circle area $\pi r^2$, circumference $2\pi r$; a sector of angle $\theta°$ has arc $\frac{\theta}{360} \cdot 2\pi r$ and area $\frac{\theta}{360} \cdot \pi r^2$; a trapezium has area $\frac{1}{2}(a + b)h$.
+
+! example | Example 1 — a sphere recast as a cylinder
+A metal sphere of radius 6 cm is melted and recast into a cylinder of radius 4 cm. Find the height of the cylinder.
+**Solution.** $\frac{4}{3}\pi \cdot 6^3 = \pi \cdot 4^2 \cdot h \Rightarrow 288 = 16h \Rightarrow h = \boxed{18\text{ cm}}$.
+
+! example | Example 2 — a bucket (frustum)
+A bucket is 30 cm deep, with radii 20 cm at the top and 10 cm at the bottom. How many litres does it hold? ($\pi = \frac{22}{7}$)
+**Solution.**
+$$\begin{aligned} &V = \frac{1}{3}\pi \cdot 30(400 + 100 + 200) \\ &= 7000\pi = 7000 \cdot \frac{22}{7} \\ &= 22000\text{ cm}^3 = \boxed{22\text{ litres}}. \end{aligned}$$
+
+! example | Example 3 — a change of scale
+The radius of a sphere is increased by 10%. By what percentage do its surface and its volume increase?
+**Solution.** Lengths $\times 1.1$: surface $\times 1.1^2 = 1.21$, an increase of $\boxed{21\%}$; volume $\times 1.1^3 = 1.331$, an increase of $\boxed{33.1\%}$.
+
+! example | Example 4 — Heron's formula
+Find the area of a triangle with sides 13, 14 and 15 cm.
+**Solution.** $s = \frac{13 + 14 + 15}{2} = 21$; area $= \sqrt{21 \cdot 8 \cdot 7 \cdot 6} = \sqrt{7056} = \boxed{84\text{ cm}^2}$.
+
+! example | Example 5 — a sector
+Find the arc length and the area of a sector of radius 14 cm and angle $90°$. ($\pi = \frac{22}{7}$)
+**Solution.** Arc $= \frac{90}{360} \cdot 2 \cdot \frac{22}{7} \cdot 14 = \boxed{22\text{ cm}}$; area $= \frac{90}{360} \cdot \frac{22}{7} \cdot 14^2 = \boxed{154\text{ cm}^2}$.
+
+? Total surface of a hemisphere of radius $r$? :: $3\pi r^2$ (curved $2\pi r^2$ plus the flat circle $\pi r^2$).
+? Volume of a frustum with radii $R$, $r$ and height $h$? :: $\frac{1}{3}\pi h(R^2 + r^2 + Rr)$.
+? A cone and a cylinder have the same base and height; ratio of volumes? :: $1 : 3$.
+? All lengths of a solid are doubled; what happens to its surface and volume? :: Surface $\times 4$, volume $\times 8$.
+
+! exam | What the exam asks
+- Recasting: sphere into wires, coins or cones; number of pieces.
+- Curved and total surfaces, often with a cost per square metre.
+- Frustums (buckets, glasses), diagonals of cubes and cuboids, Heron's formula, scale factors.
+
+! recap | One-minute revision
+- Cylinder $\pi r^2h$, $2\pi rh$; cone $\frac{1}{3}\pi r^2h$, $\pi rl$; sphere $\frac{4}{3}\pi r^3$, $4\pi r^2$; hemisphere $\frac{2}{3}\pi r^3$, total $3\pi r^2$.
+- Frustum $\frac{1}{3}\pi h(R^2 + r^2 + Rr)$, curved $\pi l(R + r)$.
+- Recasting keeps the volume; scale $k$: areas $k^2$, volumes $k^3$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 7 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 9, chapter 13, and Class 10, chapter 13 (Surface areas and volumes)

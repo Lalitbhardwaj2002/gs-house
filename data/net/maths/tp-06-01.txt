@@ -1,0 +1,105 @@
+@en
+# Derivative: meaning and rules
+
+> The derivative is the slope of the tangent: the limit of the slope of a chord as its second point slides to the first. With a short table of standard derivatives and four rules (sum, product, quotient, chain), every function in the syllabus can be differentiated.
+
+## The derivative
+
+! note | The derivative and its rules
+^ data/net/maths/fig/chord-tangent.svg | the chord $PQ$ turns into the tangent at $P$ as $Q \to P$
+The derivative $f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}$ is the **slope of the tangent** at $P(a, f(a))$: the chord $PQ$ turns into the tangent as $Q \to P$.
+- $(u \pm v)' = u' \pm v'$, $(uv)' = u'v + uv'$, $\left(\frac{u}{v}\right)' = \frac{vu' - uv'}{v^2}$.
+- Chain rule: $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$. Parametric: $\frac{dy}{dx} = \frac{dy/dt}{dx/dt}$.
+
+! note | Standard derivatives
+| Function | Derivative | Function | Derivative |
+| $x^n$ | $nx^{n-1}$ | $e^x$, $a^x$, $\log x$ | $e^x$, $a^x\log a$, $\frac{1}{x}$ |
+| $\sin x$, $\cos x$ | $\cos x$, $-\sin x$ | $\tan x$, $\cot x$ | $\sec^2 x$, $-\text{cosec}^2 x$ |
+| $\sec x$ | $\sec x\tan x$ | $\text{cosec}\, x$ | $-\text{cosec}\, x\cot x$ |
+| $\sin^{-1} x$, $\cos^{-1} x$ | $\frac{1}{\sqrt{1 - x^2}}$, $-\frac{1}{\sqrt{1 - x^2}}$ | $\tan^{-1} x$, $\cot^{-1} x$ | $\frac{1}{1 + x^2}$, $-\frac{1}{1 + x^2}$ |
+| $\sec^{-1} x$ | $\frac{1}{\lvert x \rvert\sqrt{x^2 - 1}}$ | $\text{cosec}^{-1} x$ | $-\frac{1}{\lvert x \rvert\sqrt{x^2 - 1}}$ |
+| $\sinh x$, $\cosh x$ | $\cosh x$, $\sinh x$ | $\tanh x$ | $\text{sech}^2 x$ |
+
+! check | Conditions added
+Each formula holds where the function is differentiable: $\log x$ needs $x > 0$ and $a^x$ needs $a > 0$; for a general real $n$, $x^n$ needs $x > 0$. $\sin^{-1} x$ and $\cos^{-1} x$ need $\lvert x \rvert < 1$; $\sec^{-1} x$ and $\text{cosec}^{-1} x$ need $\lvert x \rvert > 1$ (at $x = \pm 1$ none of these four has a derivative).
+
+! example | Question D1 — from the notes (chain rule)
+Differentiate (a) $\sin(x^2)$, (b) $\sin(\cos x^2)$.
+**Solution.** (a) $\cos(x^2) \cdot 2x = \boxed{2x\cos x^2}$. (b)
+$$\begin{aligned} &\cos(\cos x^2) \cdot (-\sin x^2) \cdot 2x \\ &= \boxed{-2x\sin x^2\cos(\cos x^2)}. \end{aligned}$$
+
+! example | Question D2 — from the notes (implicit)
+Find $\frac{dy}{dx}$ if (a) $x - y = \pi$, (b) $y + \sin y = \cos x$, (c) $xy + y^2 = \tan x + y$.
+**Solution.** (a) $1 - y' = 0 \Rightarrow \boxed{y' = 1}$. (b) $y' + \cos y\, y' = -\sin x \Rightarrow \boxed{y' = \frac{-\sin x}{1 + \cos y}}$, $y \neq (2n + 1)\pi$. (c) $y + xy' + 2yy' = \sec^2 x + y' \Rightarrow \boxed{y' = \frac{\sec^2 x - y}{x + 2y - 1}}$.
+
+! example | Question D3 — from the notes (substitution)
+Differentiate (a) $y = \sin^{-1}\frac{2x}{1 + x^2}$, (b) $y = \sin^{-1}\frac{1 - x^2}{1 + x^2}$.
+**Solution.** Put $x = \tan\theta$. (a) $\frac{2\tan\theta}{1 + \tan^2\theta} = \sin 2\theta \Rightarrow y = 2\theta = 2\tan^{-1} x$, $y' = \boxed{\frac{2}{1 + x^2}}$. (b) $\frac{1 - \tan^2\theta}{1 + \tan^2\theta} = \cos 2\theta = \sin\left(\frac{\pi}{2} - 2\theta\right) \Rightarrow y = \frac{\pi}{2} - 2\tan^{-1} x$, $y' = \boxed{-\frac{2}{1 + x^2}}$. *Range*: (a) holds for $\lvert x \rvert < 1$ and (b) for $x > 0$, because $2\theta$ must stay in the principal range. For $\lvert x \rvert > 1$ in (a) the answer is $-\frac{2}{1 + x^2}$; for $x < 0$ in (b) it is $+\frac{2}{1 + x^2}$.
+
+! example | Question D4 — from the notes (exponential, quotient)
+Differentiate (a) $e^{x^3}$, (b) $e^x + e^{x^2} + \cdots + e^{x^5}$, (c) $\frac{\cos x}{\log x}$.
+**Solution.** (a) $\boxed{3x^2e^{x^3}}$. (b)
+$$\begin{aligned} &e^x + 2xe^{x^2} + 3x^2e^{x^3} \\ &\quad + 4x^3e^{x^4} + 5x^4e^{x^5}. \end{aligned}$$
+(c)
+$$\begin{aligned} &\frac{\log x(-\sin x) - \cos x \cdot \frac{1}{x}}{(\log x)^2} \\ &= \boxed{-\frac{x\sin x\log x + \cos x}{x(\log x)^2}}. \end{aligned}$$
+
+! example | Question D5 — from the notes (logarithmic differentiation)
+Differentiate (a) $y = \sqrt{\frac{(x - 3)(x^2 + 4)}{3x^2 + 4x + 5}}$, (b) $y = x^{\sin x}$, (c) $y = x^x - 2^{\sin x}$.
+**Solution.** (a)
+$$\begin{aligned} &\log y = \frac{1}{2}\big[\log(x - 3) \\ &\quad + \log(x^2 + 4) \\ &\quad - \log(3x^2 + 4x + 5)\big], \end{aligned}$$
+so
+$$y' = \boxed{\begin{aligned} &\frac{y}{2}\left[\frac{1}{x - 3} + \frac{2x}{x^2 + 4}\right. \\ &\left.\quad - \frac{6x + 4}{3x^2 + 4x + 5}\right] \end{aligned}}.$$
+(b) $\log y = \sin x\log x \Rightarrow \frac{y'}{y} = \cos x\log x + \frac{\sin x}{x}$ $\Rightarrow y' = \boxed{x^{\sin x}\left[\frac{\sin x}{x} + \cos x\log x\right]}$. (c) $\frac{d}{dx}x^x = x^x(1 + \log x)$, $\frac{d}{dx}2^{\sin x} = 2^{\sin x}\cos x\log 2$: $y' = \boxed{x^x(1 + \log x) - 2^{\sin x}\cos x\log 2}$.
+
+! example | Question D6 — from the notes
+If $y^x + x^y + x^x = a^b$, find $\frac{dy}{dx}$.
+**Solution.** $\frac{d}{dx}y^x = y^x\left(\log y + \frac{x}{y}y'\right)$, $\frac{d}{dx}x^y = x^y\left(y'\log x + \frac{y}{x}\right)$, $\frac{d}{dx}x^x = x^x(1 + \log x)$. Sum $= 0$:
+$$y' = \boxed{-\frac{\begin{gathered} y^x\log y + yx^{y-1} \\ + x^x(1 + \log x) \end{gathered}}{xy^{x-1} + x^y\log x}}$$
+
+! example | Question D7 — from the notes (parametric, second order)
+(a) $x = a\cos\theta$, $y = a\sin\theta$: find $\frac{dy}{dx}$. (b) $y = x^3 + \tan x$: find $y''$. (c) $y = \sin^{-1} x$: show $(1 - x^2)y'' - xy' = 0$.
+**Solution.** (a) $\frac{dy}{dx} = \frac{a\cos\theta}{-a\sin\theta} = \boxed{-\cot\theta}$. (b) $y' = 3x^2 + \sec^2 x$, $y'' = \boxed{6x + 2\sec^2 x\tan x}$. (c) $y' = \frac{1}{\sqrt{1 - x^2}} \Rightarrow \sqrt{1 - x^2}\,y' = 1$; differentiate: $\sqrt{1 - x^2}\,y'' - \frac{x}{\sqrt{1 - x^2}}y' = 0$; multiply by $\sqrt{1 - x^2}$: $(1 - x^2)y'' - xy' = 0$.
+
+! trick | Shortcut / time-saver
+For $\sin^{-1}\frac{2x}{1 + x^2}$, $\cos^{-1}\frac{1 - x^2}{1 + x^2}$, $\tan^{-1}\frac{2x}{1 - x^2}$ put $x = \tan\theta$ (answer $\pm\frac{2}{1 + x^2}$). For $\sqrt{1 - x^2}$ put $x = \sin\theta$; for $\sqrt{\frac{1 - x}{1 + x}}$ put $x = \cos 2\theta$. Always: $\frac{d}{dx}f^g = f^g\left[g'\log f + \frac{g}{f}f'\right]$.
+
+! check | A condition added
+The rule for $f^g$ needs $f > 0$: it comes from writing $f^g = e^{g\log f}$ and differentiating the exponent, $g\log f$.
+
+## What it means
+
+- **Derivative as a rate**: $f'(a)$ also measures how fast $f$ changes at $a$: velocity is the derivative of position, and marginal cost the derivative of cost.
+- **From the definition**: for $f(x) = x^2$, $\frac{(x + h)^2 - x^2}{h} = 2x + h \to 2x$. The table of standard derivatives is obtained the same way, once and for all.
+- **Implicit functions**: differentiate both sides with respect to $x$, remembering that $y$ is a function of $x$ (so $\frac{d}{dx}y^2 = 2yy'$), then solve for $y'$.
+- **Logarithmic differentiation** suits a variable power ($x^x$, $x^{\sin x}$) and long products and quotients: take logs first, then differentiate.
+- **Second derivative of a parametric curve**: $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{dy}{dx}\right) \div \frac{dx}{dt}$, not $\frac{d^2y/dt^2}{d^2x/dt^2}$.
+
+! example | Example 1 — from the definition
+Differentiate $f(x) = \sqrt{x}$ from first principles.
+**Solution.** $\frac{\sqrt{x + h} - \sqrt{x}}{h} = \frac{1}{\sqrt{x + h} + \sqrt{x}} \to \boxed{\frac{1}{2\sqrt{x}}}$ (for $x > 0$).
+
+! example | Example 2 — a parametric second derivative
+For $x = t^2$, $y = t^3$, find $\frac{d^2y}{dx^2}$.
+**Solution.** $\frac{dy}{dx} = \frac{3t^2}{2t} = \frac{3t}{2}$. Then $\frac{d^2y}{dx^2} = \frac{d}{dt}\left(\frac{3t}{2}\right) \div 2t = \frac{3}{2} \cdot \frac{1}{2t} = \boxed{\frac{3}{4t}}$ (for $t \neq 0$).
+
+! example | Example 3 — the derivative of $x^x$ at a point
+Find the slope of $y = x^x$ at $x = 1$ and at $x = e$.
+**Solution.** $y' = x^x(1 + \log x)$: at $x = 1$, $1 \cdot 1 = \boxed{1}$; at $x = e$, $e^e \cdot 2 = \boxed{2e^e}$.
+
+? What is the geometric meaning of $f'(a)$? :: The slope of the tangent to $y = f(x)$ at $(a, f(a))$.
+? Derivative of $\tan^{-1} x$? :: $\frac{1}{1 + x^2}$.
+? $\frac{dy}{dx}$ for $x = a\cos\theta$, $y = a\sin\theta$? :: $-\cot\theta$.
+? How is $x^x$ differentiated? :: By logarithms: $\frac{d}{dx}x^x = x^x(1 + \log x)$.
+
+! exam | What the exam asks
+- Derivatives by the chain rule, implicit differentiation, substitution and logarithms.
+- Parametric derivatives and second derivatives; identities such as $(1 - x^2)y'' - xy' = 0$.
+- Standard derivatives of inverse trigonometric and hyperbolic functions.
+
+! recap | One-minute revision
+- $f'(a) = \lim \frac{f(a + h) - f(a)}{h}$: slope of the tangent.
+- Product, quotient, chain; parametric $\frac{dy/dt}{dx/dt}$; implicit: differentiate, then solve for $y'$.
+- $\frac{d}{dx}f^g = f^g\left[g'\log f + \frac{g}{f}f'\right]$; substitutions $x = \tan\theta$, $\sin\theta$, $\cos 2\theta$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 6 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 5: Continuity and Differentiability | https://ncert.nic.in/textbook.php?lemh1=5-6
