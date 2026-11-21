@@ -1,0 +1,50 @@
+@en
+# Argument (amplitude) of a complex number
+
+> In polar coordinates $z = a + ib = r(\cos\theta + i\sin\theta)$: $r = \lvert z \rvert$ and $\theta$ is the argument, the angle that $OP$ makes with the positive real axis. The argument has infinitely many values, $2\pi$ apart.
+
+## Modulus and argument
+
+! note | The argument
+^ data/net/maths/fig/argument.svg | the point $P(a, b)$ at distance $r$ from $O$ and angle $\theta$; $\theta + 2\pi$ gives the same point
+Write $a = r\cos\theta$, $b = r\sin\theta$ (equate real and imaginary parts of $a + ib = r(\cos\theta + i\sin\theta)$). Squaring and adding: $r^2 = a^2 + b^2$, so $r = \lvert z \rvert$.
+**Basic angle**: dividing and ignoring signs, find the acute angle $\alpha$ from
+$$\begin{aligned} &\tan\alpha = \left\lvert \frac{b}{a} \right\rvert, \\ &\alpha = \tan^{-1}\left\lvert \frac{b}{a} \right\rvert, \\ &0 \leq \alpha \leq \frac{\pi}{2}. \end{aligned}$$
+This $\alpha$ is only the angle that $OP$ makes with the real axis. The actual argument $\theta$ is then found from $\alpha$ according to the quadrant in which $z$ lies (see the next section).
+The angle $\theta$ which the line $OP$ makes with the positive real axis is called the **argument** or **amplitude** of $z$, written $\arg z$ or $\operatorname{amp} z$.
+The argument is **not unique**: if $\theta$ is one value, then $\theta + 2n\pi$ ($n \in \mathbb{Z}$) are also values, because $\cos$ and $\sin$ have period $2\pi$. These are the **general values** of the argument.
+
+! check | Conditions added
+The argument is defined only for $z \neq 0$: for $z = 0$, $r = 0$ and every $\theta$ fits. The formula $\tan\alpha = \left\lvert \frac{b}{a} \right\rvert$ needs $a \neq 0$; for $a = 0$ (and $b \neq 0$) take $\alpha = \frac{\pi}{2}$.
+
+## What it means
+
+- **Two coordinates for one point**: $(a, b)$ in Cartesian form, $(r, \theta)$ in polar form. Going from polar to Cartesian is direct ($a = r\cos\theta$, $b = r\sin\theta$); going back needs the quadrant, which is why the basic angle $\alpha$ comes first.
+- **Why the quadrant matters**: $1 + i$ and $-1 - i$ both have $\frac{b}{a} = 1$, yet they point in opposite directions; their arguments are $\frac{\pi}{4}$ and $-\frac{3\pi}{4}$.
+- **Arguments of products**: $\arg(z_1z_2) = \arg z_1 + \arg z_2$ and $\arg\frac{z_1}{z_2} = \arg z_1 - \arg z_2$, up to multiples of $2\pi$; this is why polar form makes multiplication easy (10.4).
+
+! example | Example 1 — modulus and basic angle
+Find the modulus and the basic angle of $z = -\sqrt{3} + i$.
+**Solution.** $r = \sqrt{3 + 1} = \boxed{2}$; $\tan\alpha = \frac{1}{\sqrt{3}}$, $\alpha = \boxed{\frac{\pi}{6}}$. (The point is in the second quadrant, so an argument is $\pi - \frac{\pi}{6} = \frac{5\pi}{6}$.)
+
+! example | Example 2 — general values
+Write the general values of the argument of $z = i$.
+**Solution.** $z = i$ lies on the positive imaginary axis: one value is $\frac{\pi}{2}$, so the general values are $\boxed{\frac{\pi}{2} + 2n\pi}$, $n \in \mathbb{Z}$.
+
+? $r$ in terms of $a$ and $b$? :: $r = \lvert z \rvert = \sqrt{a^2 + b^2}$.
+? What is the basic angle $\alpha$? :: The acute angle with $\tan\alpha = \left\lvert \frac{b}{a} \right\rvert$, signs ignored.
+? Why is the argument not unique? :: Adding $2n\pi$ gives the same point, since $\cos$ and $\sin$ have period $2\pi$.
+? Is $\arg 0$ defined? :: No.
+
+! exam | What the exam asks
+- Modulus and argument of a given number; the basic angle and the quadrant.
+- General values $\theta + 2n\pi$.
+- $\arg(z_1z_2)$, $\arg\frac{z_1}{z_2}$.
+
+! recap | One-minute revision
+- $a = r\cos\theta$, $b = r\sin\theta$, $r = \sqrt{a^2 + b^2}$.
+- Basic angle $\alpha = \tan^{-1}\left\lvert \frac{b}{a} \right\rvert$; then fix the quadrant.
+- General values: $\theta + 2n\pi$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 11, chapter 4 (Complex numbers and quadratic equations)

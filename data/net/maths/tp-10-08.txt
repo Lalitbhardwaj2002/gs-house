@@ -1,0 +1,166 @@
+@en
+# Separation into real and imaginary parts
+
+> To split $f(\alpha + i\beta)$ into real and imaginary parts, expand with the addition formulas and the bridge $\sin i\beta = i\sinh\beta$, $\cos i\beta = \cosh\beta$. For fractions ($\tan$, $\sec$, $\coth$, …) multiply above and below by the conjugate. Most questions then compare real and imaginary parts, or square and add.
+
+## Standard separations
+
+! note | Standard separations
+| Function | Real part $+ i$ (imaginary part) |
+| $\sin(\alpha + i\beta)$ | $\sin\alpha\cosh\beta + i\cos\alpha\sinh\beta$ |
+| $\cos(\alpha + i\beta)$ | $\cos\alpha\cosh\beta - i\sin\alpha\sinh\beta$ |
+| $\tan(\alpha + i\beta)$ | $\frac{\sin 2\alpha + i\sinh 2\beta}{\cos 2\alpha + \cosh 2\beta}$ |
+| $\sec(\alpha + i\beta)$ | $\frac{2(\cos\alpha\cosh\beta + i\sin\alpha\sinh\beta)}{\cos 2\alpha + \cosh 2\beta}$ |
+| $\operatorname{cosec}(\alpha - i\beta)$ | $\frac{2(\sin\alpha\cosh\beta + i\cos\alpha\sinh\beta)}{\cosh 2\beta - \cos 2\alpha}$ |
+| $\cosh(\alpha + i\beta)$ | $\cosh\alpha\cos\beta + i\sinh\alpha\sin\beta$ |
+| $\sinh(\alpha + i\beta)$ | $\sinh\alpha\cos\beta + i\cosh\alpha\sin\beta$ |
+| $\coth(\alpha + i\beta)$ | $\frac{\sinh 2\alpha - i\sin 2\beta}{\cosh 2\alpha - \cos 2\beta}$ |
+**Method for fractions**: multiply numerator and denominator by the conjugate of the denominator, then use $2\sin A\cos B$, $2\cos A\cos B$ etc. with $A = \alpha + i\beta$, $B = \alpha - i\beta$ (so $A + B = 2\alpha$, $A - B = 2i\beta$).
+
+! check | A condition added
+Throughout, $\alpha$ and $\beta$ (and $x$, $y$, $\theta$, $\phi$ below) are real, and each fraction is used where its denominator is not $0$.
+
+! example | Question E1.7(iii) — from the notes
+Separate $\tan(\alpha + i\beta)$ into real and imaginary parts.
+**Solution.**
+$$\begin{aligned} &\tan(\alpha + i\beta) \\ &= \frac{\sin(\alpha + i\beta)}{\cos(\alpha + i\beta)} \cdot \frac{2\cos(\alpha - i\beta)}{2\cos(\alpha - i\beta)} \\ &= \frac{\sin 2\alpha + \sin 2i\beta}{\cos 2\alpha + \cos 2i\beta} \\ &= \boxed{\frac{\sin 2\alpha + i\sinh 2\beta}{\cos 2\alpha + \cosh 2\beta}}. \end{aligned}$$
+
+! example | Question E1.8, E1.9 — from the notes
+Separate (a) $e^{\cosh(x + iy)}$, (b) $e^{\sinh(x + iy)}$ into real and imaginary parts.
+**Solution.** (a) $\cosh(x + iy) = \cosh x\cos y + i\sinh x\sin y$, so
+$$\begin{aligned} &e^{\cosh(x + iy)} \\ &= e^{\cosh x\cos y}\big[\cos(\sinh x\sin y) \\ &\quad + i\sin(\sinh x\sin y)\big]. \end{aligned}$$
+(b) $\sinh(x + iy) = \sinh x\cos y + i\cosh x\sin y$, so
+$$\begin{aligned} &e^{\sinh(x + iy)} \\ &= e^{\sinh x\cos y}\big[\cos(\cosh x\sin y) \\ &\quad + i\sin(\cosh x\sin y)\big]. \end{aligned}$$
+
+## Comparing real and imaginary parts
+
+! example | Question E1.10 — from the notes
+If $\sin(\alpha + i\beta) = x + iy$, prove (i) $x^2\operatorname{cosec}^2\alpha - y^2\sec^2\alpha = 1$; (ii) $x^2\operatorname{sech}^2\beta + y^2\operatorname{cosech}^2\beta = 1$.
+**Solution.** $x = \sin\alpha\cosh\beta$, $y = \cos\alpha\sinh\beta$. (i) $\frac{x^2}{\sin^2\alpha} - \frac{y^2}{\cos^2\alpha} = \cosh^2\beta - \sinh^2\beta = 1$. (ii) $\frac{x^2}{\cosh^2\beta} + \frac{y^2}{\sinh^2\beta} = \sin^2\alpha + \cos^2\alpha = 1$.
+
+! example | Question E1.11 — from the notes
+If $\cos^{-1}(x + iy) = A + iB$, prove (i) $x^2\operatorname{sech}^2 B + y^2\operatorname{cosech}^2 B = 1$; (ii) $x^2\sec^2 A - y^2\operatorname{cosec}^2 A = 1$.
+**Solution.** $x + iy = \cos(A + iB)$ $= \cos A\cosh B - i\sin A\sinh B$: $x = \cos A\cosh B$, $y = -\sin A\sinh B$. (i) $\frac{x^2}{\cosh^2 B} + \frac{y^2}{\sinh^2 B} = \cos^2 A + \sin^2 A = 1$. (ii) $\frac{x^2}{\cos^2 A} - \frac{y^2}{\sin^2 A} = \cosh^2 B - \sinh^2 B = 1$.
+
+! example | Question E1.12, E1.13 — from the notes
+(a) If $\tan(\theta + i\phi) = \sin(x + iy)$, prove $\coth y\sinh 2\phi = \cot x\sin 2\theta$. (b) If $\tanh(\alpha + i\beta) = \sin(x + iy)$, prove $\sinh 2\alpha\operatorname{cosec} 2\beta = \tan x\coth y$.
+**Solution.** (a) $\frac{\sin 2\theta + i\sinh 2\phi}{\cos 2\theta + \cosh 2\phi}$ $= \sin x\cosh y + i\cos x\sinh y$. Dividing imaginary by real parts: $\frac{\sinh 2\phi}{\sin 2\theta} = \frac{\cos x\sinh y}{\sin x\cosh y}$, i.e. $\coth y\sinh 2\phi = \cot x\sin 2\theta$. (b) $\tanh(\alpha + i\beta) = \frac{\sinh 2\alpha + i\sin 2\beta}{\cosh 2\alpha + \cos 2\beta}$; dividing real by imaginary parts: $\frac{\sinh 2\alpha}{\sin 2\beta} = \frac{\sin x\cosh y}{\cos x\sinh y} = \tan x\coth y$.
+
+! example | Question E1.14 — from the notes
+If $\tan(\alpha + i\beta) = x + iy$, prove (i) $x^2 + y^2 + 2x\cot 2\alpha = 1$; (ii) $x^2 + y^2 - 2y\coth 2\beta + 1 = 0$.
+**Solution.** $\tan(\alpha - i\beta) = x - iy$. Then
+$$\begin{aligned} &\tan 2\alpha \\ &= \tan[(\alpha + i\beta) + (\alpha - i\beta)] \\ &= \frac{2x}{1 - (x^2 + y^2)}, \end{aligned}$$
+giving (i).
+$$\begin{aligned} &\tan 2i\beta \\ &= \tan[(\alpha + i\beta) - (\alpha - i\beta)] \\ &= \frac{2iy}{1 + x^2 + y^2} \\ &\Rightarrow \tanh 2\beta = \frac{2y}{1 + x^2 + y^2}, \end{aligned}$$
+giving (ii).
+
+! example | Question E1.15 — from the notes
+If $\tan(\theta + i\phi) = \cos\alpha + i\sin\alpha$ $\left(-\frac{\pi}{2} < \alpha < \frac{\pi}{2}\right)$, prove that $\theta = \frac{n\pi}{2} + \frac{\pi}{4}$ (the real part then selects $\theta = n\pi + \frac{\pi}{4}$) and $\phi = \frac{1}{2}\log\tan\left(\frac{\pi}{4} + \frac{\alpha}{2}\right)$.
+**Solution.** $\tan(\theta - i\phi) = \cos\alpha - i\sin\alpha$. $\tan 2\theta = \frac{2\cos\alpha}{1 - (\cos^2\alpha + \sin^2\alpha)} = \infty$ $\Rightarrow 2\theta = n\pi + \frac{\pi}{2}$.
+$$\begin{aligned} &\tan 2i\phi = \frac{2i\sin\alpha}{1 + 1} \\ &\Rightarrow \tanh 2\phi = \sin\alpha \\ &\Rightarrow e^{4\phi} = \frac{1 + \sin\alpha}{1 - \sin\alpha} \\ &= \tan^2\left(\frac{\pi}{4} + \frac{\alpha}{2}\right) \\ &\Rightarrow \phi = \frac{1}{2}\log\tan\left(\frac{\pi}{4} + \frac{\alpha}{2}\right). \end{aligned}$$
+
+! example | Question E1.16 — from the notes
+If $\tan(\alpha + i\beta) = i$ ($\alpha$, $\beta$ real), prove that $\alpha$ is indeterminate and $\beta$ is infinite.
+**Solution.** $\tan(\alpha - i\beta) = -i$. $\tan 2\alpha = \frac{i + (-i)}{1 - i(-i)} = \frac{0}{0}$: indeterminate. $\tan 2i\beta = \frac{i - (-i)}{1 + i(-i)} = \frac{2i}{2} = i$ $\Rightarrow \tanh 2\beta = 1 \Rightarrow \beta = \infty$.
+
+! check | A note added
+"$\beta = \infty$" means no real $\beta$ works: $\tanh 2\beta < 1$ for every real $\beta$, and $\tanh 2\beta \to 1$ only as $\beta \to \infty$. So $\tan z = i$ has no solution in the complex plane.
+
+! example | Question E1.17 — from the notes
+If $\sin(\theta + i\phi) = \tan\alpha + i\sec\alpha$, prove that $\cos 2\theta\cosh 2\phi = 3$.
+**Solution.** $\sin\theta\cosh\phi = \tan\alpha$, $\cos\theta\sinh\phi = \sec\alpha$. Since $\sec^2\alpha - \tan^2\alpha = 1$: $\cos^2\theta\sinh^2\phi - \sin^2\theta\cosh^2\phi = 1$. With $c = \cos 2\theta$, $C = \cosh 2\phi$:
+$$\begin{aligned} &\tfrac{1}{4}\big[(1 + c)(C - 1) \\ &\qquad - (1 - c)(C + 1)\big] \\ &= \frac{cC - 1}{2} = 1 \\ &\Rightarrow cC = 3. \end{aligned}$$
+
+! example | Question E1.18 — from the notes
+If $\cos(x + iy) = \cos\alpha + i\sin\alpha$, prove (i) $\cos 2x + \cosh 2y = 2$; (ii) $\sin^4 x = \sin^2\alpha$ (i.e. $\sin^2 x = \pm\sin\alpha$).
+**Solution.** $\cos x\cosh y = \cos\alpha$, $\sin x\sinh y = -\sin\alpha$. (i) Squaring and adding: $\cos^2 x\cosh^2 y + \sin^2 x\sinh^2 y = 1$; in double angles this is $\frac{\cosh 2y + \cos 2x}{2} = 1$. (ii) With $s = \sin^2 x$, $S = \sinh^2 y$: $(1 - s)(1 + S) = \cos^2\alpha$ and $sS = \sin^2\alpha$. Adding: $1 + S - s = 1 \Rightarrow S = s \Rightarrow s^2 = \sin^2\alpha$.
+
+! example | Question E1.19 — from the notes
+If $\cos(\theta + i\phi) = r(\cos\alpha + i\sin\alpha)$, prove that $\phi = \frac{1}{2}\log\frac{\sin(\theta - \alpha)}{\sin(\theta + \alpha)}$.
+**Solution.** $\cos\theta\cosh\phi = r\cos\alpha$, $-\sin\theta\sinh\phi = r\sin\alpha$. Dividing: $\tanh\phi = -\frac{\sin\alpha\cos\theta}{\cos\alpha\sin\theta}$.
+$$\begin{aligned} &e^{2\phi} = \frac{1 + \tanh\phi}{1 - \tanh\phi} \\ &= \frac{\cos\alpha\sin\theta - \sin\alpha\cos\theta}{\cos\alpha\sin\theta + \sin\alpha\cos\theta} \\ &= \frac{\sin(\theta - \alpha)}{\sin(\theta + \alpha)}. \end{aligned}$$
+
+! example | Question E1.20 — from the notes
+If $\cosh u = \sec\theta$, prove that $u = \log\tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right)$ and $\tanh^2\frac{u}{2} = \tan^2\frac{\theta}{2}$.
+**Solution.**
+$$\begin{aligned} &e^u = \sec\theta + \sqrt{\sec^2\theta - 1} \\ &= \sec\theta + \tan\theta \\ &= \frac{1 + \sin\theta}{\cos\theta} \\ &= \tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right). \end{aligned}$$
+Then by E1.6(i), $\tanh\frac{u}{2} = \tan\frac{\theta}{2}$.
+
+! check | A condition added
+Taking $+\sqrt{\sec^2\theta - 1} = \tan\theta$ chooses $u \geq 0$ with $0 \leq \theta < \frac{\pi}{2}$; in general $u = \pm\log\tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right)$, which is why the result is stated with squares, $\tanh^2\frac{u}{2} = \tan^2\frac{\theta}{2}$.
+
+! example | Question E1.21, E1.22 — from the notes
+(a) If $A + iB = c\tan(x + iy)$, prove $\tan 2x = \frac{2cA}{c^2 - A^2 - B^2}$. (b) If $u + iv = \cot(x + iy)$, find $u$ and $v$.
+**Solution.** (a) $\tan(x \pm iy) = \frac{A \pm iB}{c}$; $\tan 2x = \frac{\frac{2A}{c}}{1 - \frac{A^2 + B^2}{c^2}} = \frac{2cA}{c^2 - A^2 - B^2}$. (b)
+$$\begin{aligned} &\cot(x + iy) \\ &= \frac{2\cos(x + iy)\sin(x - iy)}{2\sin(x + iy)\sin(x - iy)} \\ &= \frac{\sin 2x - i\sinh 2y}{\cosh 2y - \cos 2x}: \end{aligned}$$
+$u = \frac{\sin 2x}{\cosh 2y - \cos 2x}$, $v = \frac{-\sinh 2y}{\cosh 2y - \cos 2x}$.
+
+! example | Question E1.23, E1.24 — from the notes
+(a) If $\cos(u + iv) = x + iy$, prove $(1 + x)^2 + y^2 = (\cosh v + \cos u)^2$ and $(1 - x)^2 + y^2 = (\cosh v - \cos u)^2$. (b) If $\cosh(x + iy) = p + iq$, prove $\frac{p^2}{\cos^2 y} - \frac{q^2}{\sin^2 y} = 1$.
+**Solution.** (a) $x = \cos u\cosh v$, $y = -\sin u\sinh v$;
+$$\begin{aligned} &x^2 + y^2 = \cos^2 u\cosh^2 v \\ &\quad + (1 - \cos^2 u)(\cosh^2 v - 1) \\ &= \cosh^2 v + \cos^2 u - 1. \end{aligned}$$
+So
+$$\begin{aligned} &(1 \pm x)^2 + y^2 \\ &= \cosh^2 v \pm 2\cos u\cosh v \\ &\quad + \cos^2 u \\ &= (\cosh v \pm \cos u)^2. \end{aligned}$$
+(b) $p = \cosh x\cos y$, $q = \sinh x\sin y$: $\frac{p^2}{\cos^2 y} - \frac{q^2}{\sin^2 y} = \cosh^2 x - \sinh^2 x = 1$.
+
+! example | Question E1.25 — from the notes
+If $\sin(x + iy)\sin(\theta + i\phi) = 1$, prove (i) $\tanh^2 y\cosh^2\phi = \cos^2\theta$; (ii) $\tanh^2\phi\cosh^2 y = \cos^2 x$.
+**Solution.** $\sin(\theta + i\phi) = \operatorname{cosec}(x + iy)$, so $\sin(\theta - i\phi) = \operatorname{cosec}(x - iy)$. Multiplying, $\sin(\theta + i\phi)\sin(\theta - i\phi)$ $= \frac{1}{\sin(x + iy)\sin(x - iy)}$, i.e. $\sin^2\theta + \sinh^2\phi = \frac{1}{\sin^2 x + \sinh^2 y}$. Let $D = \sin^2 x + \sinh^2 y$. Separating $\sin(\theta + i\phi) = \frac{\sin(x - iy)}{D}$: $\sin\theta\cosh\phi = \frac{\sin x\cosh y}{D}$, $\cos\theta\sinh\phi = -\frac{\cos x\sinh y}{D}$. With $s = \sin^2\theta$, $S = \sinh^2\phi$: $s + S = \frac{1}{D}$ (above) and $s(1 + S) = \frac{\sin^2 x\cosh^2 y}{D^2}$. Eliminating $S$:
+$$\begin{aligned} &s^2 - \left(1 + \frac{1}{D}\right)s \\ &\quad + \frac{\sin^2 x\cosh^2 y}{D^2} = 0, \end{aligned}$$
+whose roots are $\frac{\sin^2 x}{D}$ and $\frac{\cosh^2 y}{D}$. The second is $\geq 1$ (since $\cosh^2 y = 1 + \sinh^2 y \geq \sin^2 x + \sinh^2 y$), so $\sin^2\theta = \frac{\sin^2 x}{D}$. Hence $\cos^2\theta = \frac{\sinh^2 y}{D}$ and $\sinh^2\phi = \frac{1}{D} - \frac{\sin^2 x}{D} = \frac{\cos^2 x}{D}$, so $\cosh^2\phi = \frac{\cosh^2 y}{D}$. Therefore
+$$\begin{aligned} &\tanh^2 y\cosh^2\phi \\ &= \frac{\sinh^2 y}{\cosh^2 y} \cdot \frac{\cosh^2 y}{D} \\ &= \frac{\sinh^2 y}{D} = \cos^2\theta, \end{aligned}$$
+which is (i). The hypothesis is symmetric in $(x, y)$ and $(\theta, \phi)$, so (ii) follows by interchanging them.
+
+! check | A note added
+If $\sin^2 x = 1$ the second root equals $1$. It is still excluded, because it would give $\sinh^2\phi = \frac{1}{D} - \frac{\cosh^2 y}{D} = -\frac{\sinh^2 y}{D} < 0$ (for $y = 0$ the two roots are equal).
+
+! example | Question E1.27 — from the notes
+If $x = 2\cos\alpha\cosh\beta$ and $y = 2\sin\alpha\sinh\beta$, prove (a) $\sec(\alpha + i\beta) + \sec(\alpha - i\beta) = \frac{4x}{x^2 + y^2}$; (b) $\sec(\alpha + i\beta) - \sec(\alpha - i\beta) = \frac{4iy}{x^2 + y^2}$.
+**Solution.** $2\cos(\alpha + i\beta) = x - iy$ and $2\cos(\alpha - i\beta) = x + iy$. So the sum is $\frac{2}{x - iy} + \frac{2}{x + iy} = \frac{4x}{x^2 + y^2}$ and the difference is $\frac{2(x + iy) - 2(x - iy)}{x^2 + y^2} = \frac{4iy}{x^2 + y^2}$.
+
+! example | Question E1.28 — from the notes
+If $\alpha$, $\beta$ are the imaginary cube roots of unity, prove that $\alpha e^{\alpha x} + \beta e^{\beta x} = -e^{-x/2}\left[\cos\frac{\sqrt{3}x}{2} + \sqrt{3}\sin\frac{\sqrt{3}x}{2}\right]$.
+**Solution.** $\alpha = -\frac{1}{2} + \frac{\sqrt{3}}{2}i$, $\beta = \bar{\alpha}$, so the sum is $2\operatorname{Re}(\alpha e^{\alpha x})$:
+$$\begin{aligned} &2e^{-x/2}\operatorname{Re}\Big[\left(-\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}i\right) \\ &\quad \times \left(\cos\tfrac{\sqrt{3}x}{2} + i\sin\tfrac{\sqrt{3}x}{2}\right)\Big] \\ &= 2e^{-x/2}\Big[-\tfrac{1}{2}\cos\tfrac{\sqrt{3}x}{2} \\ &\qquad - \tfrac{\sqrt{3}}{2}\sin\tfrac{\sqrt{3}x}{2}\Big]. \end{aligned}$$
+
+! check | A condition added
+$x$ is real here; that is what makes $\beta e^{\beta x}$ the conjugate of $\alpha e^{\alpha x}$.
+
+! example | Question E1.29 — from the notes
+Show that
+$$\begin{aligned} &\frac{\sin(\alpha + i\beta)}{\sin(\alpha - i\beta)} + \frac{\sin(\alpha - i\beta)}{\sin(\alpha + i\beta)} \\ &= \frac{2(1 - \cos 2\alpha\cosh 2\beta)}{\cosh 2\beta - \cos 2\alpha}. \end{aligned}$$
+**Solution.** With $A = \alpha + i\beta$, $B = \alpha - i\beta$: LHS $= \frac{\sin^2 A + \sin^2 B}{\sin A\sin B}$. Numerator $= 1 - \frac{1}{2}(\cos 2A + \cos 2B)$ $= 1 - \cos 2\alpha\cosh 2\beta$; denominator $= \frac{1}{2}(\cos 2i\beta - \cos 2\alpha)$ $= \frac{1}{2}(\cosh 2\beta - \cos 2\alpha)$.
+
+## What it means
+
+- **Two real equations from one**: $f(\alpha + i\beta) = x + iy$ gives $x$ and $y$ as real functions of $\alpha$ and $\beta$. To eliminate $\beta$, use $\cosh^2 - \sinh^2 = 1$; to eliminate $\alpha$, use $\cos^2 + \sin^2 = 1$ (E1.10, E1.11).
+- **The conjugate trick**: if $f(\alpha + i\beta) = x + iy$ for a function with real coefficients, then $f(\alpha - i\beta) = x - iy$. Adding or subtracting the two arguments isolates $2\alpha$ or $2i\beta$ (E1.14 to E1.16).
+- **Squaring and adding** turns products like $\cos x\cosh y$ into double-angle expressions (E1.18).
+
+! example | Example 1 — a quick separation
+Find the real and imaginary parts of $\sin(i)$ and $\cos(1 + i)$.
+**Solution.** $\sin i = i\sinh 1$: real part $\boxed{0}$, imaginary part $\boxed{\sinh 1}$. $\cos(1 + i) = \cos 1\cosh 1 - i\sin 1\sinh 1$.
+
+! example | Example 2 — modulus of $\sin z$
+Show that $\lvert \sin(x + iy) \rvert^2 = \sin^2 x + \sinh^2 y$.
+**Solution.**
+$$\begin{aligned} &\sin^2 x\cosh^2 y + \cos^2 x\sinh^2 y \\ &= \sin^2 x(1 + \sinh^2 y) \\ &\quad + (1 - \sin^2 x)\sinh^2 y \\ &= \sin^2 x + \sinh^2 y. \end{aligned}$$
+So $\sin z$ is not bounded: it grows like $\sinh y$.
+
+? $\sin(\alpha + i\beta)$? :: $\sin\alpha\cosh\beta + i\cos\alpha\sinh\beta$.
+? $\cos(\alpha + i\beta)$? :: $\cos\alpha\cosh\beta - i\sin\alpha\sinh\beta$.
+? $\tan(\alpha + i\beta)$? :: $\frac{\sin 2\alpha + i\sinh 2\beta}{\cos 2\alpha + \cosh 2\beta}$.
+? If $\tan(\alpha + i\beta) = x + iy$, what is $\tan(\alpha - i\beta)$? :: $x - iy$.
+
+! exam | What the exam asks
+- Real and imaginary parts of $\sin$, $\cos$, $\tan$, $\sec$, $\cosh$, $\sinh$, $\coth$ of $\alpha + i\beta$.
+- "If $f(\alpha + i\beta) = x + iy$, prove …": square and add, or use the conjugate.
+- Inverse forms such as $\cos^{-1}(x + iy) = A + iB$.
+
+! recap | One-minute revision
+- $\sin(\alpha + i\beta) = \sin\alpha\cosh\beta + i\cos\alpha\sinh\beta$; $\cos(\alpha + i\beta) = \cos\alpha\cosh\beta - i\sin\alpha\sinh\beta$.
+- $\tan(\alpha + i\beta) = \frac{\sin 2\alpha + i\sinh 2\beta}{\cos 2\alpha + \cosh 2\beta}$.
+- Use $f(\alpha - i\beta) = x - iy$; $\tan 2\alpha$ and $\tan 2i\beta$ from the sum and difference.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part II, chapter 6 (separation into real and imaginary parts)

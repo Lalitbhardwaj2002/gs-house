@@ -1,0 +1,77 @@
+@en
+# Polar form, Euler's form and De Moivre's theorem
+
+> In polar form $z = r(\cos\theta + i\sin\theta) = re^{i\theta}$, multiplication adds the angles. De Moivre's theorem raises $\cos\theta + i\sin\theta$ to a power by multiplying the angle, and gives the $n$ roots of a complex number at the vertices of a regular polygon.
+
+## Polar and exponential forms
+
+! note | Polar form, Euler's form and De Moivre's theorem
+- **Polar (trigonometrical / modulus–argument) form**: $z = r(\cos\theta + i\sin\theta)$, $r = \lvert z \rvert$, $\theta = \arg z$.
+- **Euler's theorem**: $e^{i\theta} = \cos\theta + i\sin\theta$, $e^{-i\theta} = \cos\theta - i\sin\theta$; hence $z = re^{i\theta}$ and
+$$\begin{aligned} &\cos\theta = \frac{e^{i\theta} + e^{-i\theta}}{2}, \\ &\sin\theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}. \end{aligned}$$
+- **Product**:
+$$\begin{aligned} &(\cos\theta_1 + i\sin\theta_1) \\ &\quad \times (\cos\theta_2 + i\sin\theta_2) \\ &= \cos(\theta_1 + \theta_2) + i\sin(\theta_1 + \theta_2); \end{aligned}$$
+for $n$ factors the angles add.
+- **De Moivre's theorem**: $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$ for every integer $n$ (positive, negative or zero); for a fraction $n = \frac{p}{q}$ it gives *one* of the $q$ values.
+- $i = e^{i\pi/2}$, $-1 = e^{i\pi}$, $1 = e^{2n\pi i}$, $-1 = e^{(2n + 1)\pi i}$.
+
+! check | Conditions added
+For $n = \frac{p}{q}$ the fraction should be in lowest terms ($q > 0$); then $(\cos\theta + i\sin\theta)^{p/q}$ has exactly $q$ distinct values, $\cos\frac{p(\theta + 2k\pi)}{q} + i\sin\frac{p(\theta + 2k\pi)}{q}$, $k = 0, 1, \ldots, q - 1$, and $\cos\frac{p\theta}{q} + i\sin\frac{p\theta}{q}$ is the one with $k = 0$. In $1 = e^{2n\pi i}$ and $-1 = e^{(2n + 1)\pi i}$, $n$ is an integer.
+
+! example | Question DM1 — from the notes
+Prove that
+$$\begin{aligned} &(1 + \cos\theta + i\sin\theta)^n \\ &\quad + (1 + \cos\theta - i\sin\theta)^n \\ &= 2^{n+1}\cos^n\frac{\theta}{2}\cos\frac{n\theta}{2}. \end{aligned}$$
+**Solution.**
+$$\begin{aligned} &1 + \cos\theta \pm i\sin\theta \\ &= 2\cos^2\tfrac{\theta}{2} \pm 2i\sin\tfrac{\theta}{2}\cos\tfrac{\theta}{2} \\ &= 2\cos\tfrac{\theta}{2}\left(\cos\tfrac{\theta}{2} \pm i\sin\tfrac{\theta}{2}\right). \end{aligned}$$
+By De Moivre the sum is $2^n\cos^n\frac{\theta}{2}\left[2\cos\frac{n\theta}{2}\right] = 2^{n+1}\cos^n\frac{\theta}{2}\cos\frac{n\theta}{2}$.
+
+! check | Condition added
+Here $n$ is an integer, as in De Moivre's theorem. For $n < 0$ also $\cos\frac{\theta}{2} \neq 0$: when $\theta$ is an odd multiple of $\pi$, both sides are undefined.
+
+! example | Question DM2 — standard
+Evaluate $(\sqrt{3} + i)^6$ and $\left(\frac{1 + i}{1 - i}\right)^{10}$.
+**Solution.** $\sqrt{3} + i = 2e^{i\pi/6}$: $(\sqrt{3} + i)^6 = 64e^{i\pi} = \boxed{-64}$. $\frac{1 + i}{1 - i} = i$, so the second is $i^{10} = i^2 = \boxed{-1}$.
+
+! addon | Roots of a complex number
+The $n$ values of $z^{1/n}$ for $z = re^{i\theta}$ are $r^{1/n}e^{i(\theta + 2k\pi)/n}$, $k = 0, 1, \ldots, n - 1$; they are vertices of a regular $n$-gon. The $n$th roots of unity $e^{2k\pi i/n}$ have sum $0$ and product $(-1)^{n-1}$. Cube roots: $1, \omega, \omega^2$ with $\omega = \frac{-1 + i\sqrt{3}}{2}$, $1 + \omega + \omega^2 = 0$, $\omega^3 = 1$.
+
+! check | Conditions added
+The roots formula needs $z \neq 0$ and $n \geq 1$; they form a regular $n$-gon for $n \geq 3$. The sum of the $n$th roots of unity is $0$ for $n \geq 2$ (for $n = 1$ the only root is $1$).
+
+^ data/net/maths/fig/roots-unity.svg | the sixth roots of unity: a regular hexagon on the unit circle
+
+## What it means
+
+- **Why angles add**: multiply out $(\cos\theta_1 + i\sin\theta_1)(\cos\theta_2 + i\sin\theta_2)$ and use the compound-angle formulas; Euler's form says it in one line, $e^{i\theta_1}e^{i\theta_2} = e^{i(\theta_1 + \theta_2)}$.
+- **Multiplying by $z$** stretches by $\lvert z \rvert$ and rotates by $\arg z$; multiplying by $i$ is a quarter-turn.
+- **Multiple-angle formulas**: expanding $(\cos\theta + i\sin\theta)^3$ and comparing with $\cos 3\theta + i\sin 3\theta$ gives $\cos 3\theta = \cos^3\theta - 3\cos\theta\sin^2\theta$ and $\sin 3\theta = 3\cos^2\theta\sin\theta - \sin^3\theta$.
+
+! example | Example 1 — cube roots of $-8$
+Find the cube roots of $-8$.
+**Solution.** $-8 = 8e^{i\pi}$: roots $2e^{i(\pi + 2k\pi)/3}$, $k = 0, 1, 2$: $2e^{i\pi/3} = 1 + i\sqrt{3}$, $2e^{i\pi} = -2$, $2e^{i5\pi/3} = 1 - i\sqrt{3}$. So $\boxed{-2, \ 1 \pm i\sqrt{3}}$.
+
+! example | Example 2 — the cube roots of unity
+Find $(1 + \omega - \omega^2)(1 - \omega + \omega^2)$.
+**Solution.** $1 + \omega = -\omega^2$ and $1 + \omega^2 = -\omega$: the product is $(-2\omega^2)(-2\omega) = 4\omega^3 = \boxed{4}$.
+
+! example | Example 3 — a negative power
+Find $(1 + i)^{-8}$.
+**Solution.** $1 + i = \sqrt{2}e^{i\pi/4}$: $(1 + i)^{-8} = 2^{-4}e^{-2\pi i} = \boxed{\frac{1}{16}}$.
+
+? Euler's formula? :: $e^{i\theta} = \cos\theta + i\sin\theta$.
+? De Moivre's theorem for an integer $n$? :: $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$.
+? Sum and product of the $n$th roots of unity? :: Sum $0$ (for $n \geq 2$); product $(-1)^{n-1}$.
+? $1 + \omega + \omega^2$ and $\omega^3$? :: $0$ and $1$.
+
+! exam | What the exam asks
+- Powers by De Moivre: $(\sqrt{3} + i)^n$, $\left(\frac{1 + i}{1 - i}\right)^n$.
+- Roots of a complex number; cube roots of unity identities.
+- Proving identities such as DM1; multiple-angle formulas.
+
+! recap | One-minute revision
+- $z = re^{i\theta}$; products add angles, powers multiply them.
+- $z^{1/n} = r^{1/n}e^{i(\theta + 2k\pi)/n}$, $k = 0, \ldots, n - 1$.
+- $\omega = \frac{-1 + i\sqrt{3}}{2}$: $1 + \omega + \omega^2 = 0$, $\omega^3 = 1$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part II, chapters 1 to 3 (De Moivre's theorem)

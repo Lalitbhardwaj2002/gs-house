@@ -1,0 +1,70 @@
+@en
+# Important results and exam tips: complex numbers
+
+> All of Chapter 10 on one page: eighteen results to remember and a plan of attack for the standard question types.
+
+## Results to remember
+
+! trick | Important results to remember
+- (1) $\operatorname{Re} z = \frac{z + \bar{z}}{2}$, $\operatorname{Im} z = \frac{z - \bar{z}}{2i}$, $z\bar{z} = \lvert z \rvert^2$, $\lvert z_1z_2 \rvert = \lvert z_1 \rvert\lvert z_2 \rvert$.
+- (2) $i^{4k} = 1$; $i + i^2 + i^3 + i^4 = 0$; $(1 + i)^2 = 2i$; $(1 - i)^2 = -2i$; $\frac{1 + i}{1 - i} = i$.
+- (3) Principal argument lies in $(-\pi, \pi]$: Q1 $\alpha$, Q2 $\pi - \alpha$, Q3 $-\pi + \alpha$, Q4 $-\alpha$.
+- (4) $\sqrt{a + ib} = \pm\left(\sqrt{\frac{\lvert z \rvert + a}{2}} \pm i\sqrt{\frac{\lvert z \rvert - a}{2}}\right)$, inner sign $=$ sign of $b$.
+- (5) De Moivre: $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$; $z^{1/n}$ has $n$ values.
+- (6) Sum of $n$th roots of unity $= 0$; $1 + \omega + \omega^2 = 0$, $\omega^3 = 1$.
+- (7) C–R: $u_x = v_y$, $u_y = -v_x$; polar $ru_r = v_\theta$, $rv_r = -u_\theta$. C–R fail $\Rightarrow$ not differentiable; C–R hold $\not\Rightarrow$ differentiable.
+- (8) $\bar{z}$ is nowhere differentiable; $\lvert z \rvert^2$ is differentiable only at $0$.
+- (9) $\sin ix = i\sinh x$, $\cos ix = \cosh x$, $\tan ix = i\tanh x$; $\sinh ix = i\sin x$, $\cosh ix = \cos x$.
+- (10) $\cosh^2 x - \sinh^2 x = 1$; $1 - \tanh^2 x = \operatorname{sech}^2 x$; $\cosh 2x = 1 + 2\sinh^2 x$.
+- (11) $\sin(x + iy) = \sin x\cosh y + i\cos x\sinh y$; $\cos(x + iy) = \cos x\cosh y - i\sin x\sinh y$.
+- (12) $\tan(x + iy) = \frac{\sin 2x + i\sinh 2y}{\cos 2x + \cosh 2y}$; $\lvert \sin(x + iy) \rvert^2 = \sin^2 x + \sinh^2 y$; $\lvert \cos(x + iy) \rvert^2 = \cos^2 x + \sinh^2 y$.
+- (13) $\log z = \log\lvert z \rvert + i\operatorname{Arg} z$; $\operatorname{Log} z = \log z + 2n\pi i$.
+- (14) $\log i = \frac{i\pi}{2}$; $\log(-1) = i\pi$; $\log(-x) = \log x + i\pi$; $i^i = e^{-\pi/2}$ (all values $e^{-(4n + 1)\pi/2}$, all real).
+- (15) $\log(1 + i\tan\alpha) = \log\sec\alpha + i\alpha$; $\log\frac{a + ib}{a - ib} = 2i\tan^{-1}\frac{b}{a}$.
+- (16) $a^z = e^{z\operatorname{Log} a}$; $\log_i i = \frac{4m + 1}{4n + 1}$.
+- (17) $\sinh^{-1}x = \log\left(x + \sqrt{x^2 + 1}\right)$, $\cosh^{-1}x = \log\left(x + \sqrt{x^2 - 1}\right)$, $\tanh^{-1}x = \frac{1}{2}\log\frac{1 + x}{1 - x}$.
+- (18) $\operatorname{Sin}^{-1}z = n\pi + (-1)^n\sin^{-1}z$; $\sin^{-1}(ix) = i\sinh^{-1}x$.
+
+! check | Conditions added
+(6): for $n \geq 2$. (8): $\lvert z \rvert^2$ is differentiable at $0$ but analytic nowhere. (15): $-\frac{\pi}{2} < \alpha < \frac{\pi}{2}$ and $a > 0$. (16): $a \neq 0$; the principal value of $a^z$ uses the principal value $\log a$. (17): $x \geq 1$ for $\cosh^{-1}$, $\lvert x \rvert < 1$ for $\tanh^{-1}$.
+
+## How to attack the questions
+
+! trick | Shortcut / time-saver — How to attack complex-number questions quickly
+- **"If $f(\alpha + i\beta) = x + iy$, prove …"**: write $f(\alpha - i\beta) = x - iy$ as well. Then the *sum* and *difference* of the angles give $f(2\alpha)$ and $f(2i\beta)$ (see E1.14, E1.15, E1.16).
+- **Two equations from one**: separate real and imaginary parts, then eliminate using $\cos^2 + \sin^2 = 1$ or $\cosh^2 - \sinh^2 = 1$ (E1.10, E1.11, E1.24).
+- **Quantities like $\cos 2\theta\cosh 2\phi$**: convert squares to double angles: $\cos^2\theta = \frac{1 + \cos 2\theta}{2}$, $\sinh^2\phi = \frac{\cosh 2\phi - 1}{2}$ (E1.17, E1.18).
+- **Logs**: always write the number as $re^{i\theta}$ first; the log is then $\log r + i\theta$.
+- **Inverse functions**: put the inverse equal to $x + iy$, take the direct function, separate, eliminate.
+- **MCQs**: put $\alpha = 0$ or $\beta = 0$ into the options to test them (real case).
+
+## What it means
+
+- The chapter has three layers: **algebra** of $a + ib$ (10.1 to 10.5), **analysis** (10.6, differentiability), and **functions** of a complex variable (10.7 to 10.10). The UP TGT syllabus names the first and the third layer (De Moivre's theorem; exponential, circular and hyperbolic functions; separation into real and imaginary parts); the PGT syllabus names complex numbers and De Moivre's theorem with its applications.
+- When stuck, convert to $re^{i\theta}$: products, powers, roots and logarithms all become easy in that form.
+
+! example | Example 1 — testing an option in an MCQ
+If $\sin(\alpha + i\beta) = x + iy$, which is true: (A) $\frac{x^2}{\cosh^2\beta} + \frac{y^2}{\sinh^2\beta} = 1$, (B) $\frac{x^2}{\cosh^2\beta} - \frac{y^2}{\sinh^2\beta} = 1$?
+**Solution.** Put $\alpha = \frac{\pi}{2}$: $x = \cosh\beta$, $y = 0$, both give $1$. Put $\alpha = 0$: $x = 0$, $y = \sinh\beta$: (A) gives $1$, (B) gives $-1$. So $\boxed{\text{(A)}}$.
+
+! example | Example 2 — a quick value
+Find $\lvert \cos(i) \rvert$ and $\operatorname{Arg}\left((1 + i)^4\right)$.
+**Solution.** $\cos i = \cosh 1 \approx 1.543$, so $\lvert \cos i \rvert = \boxed{\cosh 1}$. $(1 + i)^4 = (2i)^2 = -4$: $\operatorname{Arg} = \boxed{\pi}$.
+
+? $\lvert \cos(x + iy) \rvert^2$? :: $\cos^2 x + \sinh^2 y$.
+? All values of $i^i$? :: $e^{-(4n + 1)\pi/2}$, all real.
+? $\frac{1 + i}{1 - i}$? :: $i$.
+? First step for a logarithm question? :: Write the number as $re^{i\theta}$.
+
+! exam | What the exam asks
+- One-mark facts from the list above (powers of $i$, $\omega$, $i^i$, $\log(-1)$).
+- "Prove that" questions on separation and logarithms (E1, L series).
+- Analyticity tests (C–R).
+
+! recap | One-minute revision
+- $re^{i\theta}$ first; Arg by quadrant; De Moivre for powers and roots.
+- $\sin(x + iy)$, $\cos(x + iy)$, $\tan(x + iy)$ separations; $f(\alpha - i\beta) = x - iy$.
+- $\log z = \log\lvert z \rvert + i\operatorname{Arg} z$; $a^z = e^{z\operatorname{Log} a}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part II

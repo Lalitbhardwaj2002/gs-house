@@ -9,7 +9,7 @@
  "subtitle": { "en": "UPESSC PGT (Lecturer) · subject code 08 · topic-wise notes on the official 2026 syllabus" },
  "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 9 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 10 of the notes are ready; the other chapters are being added."
  },
  "units": [
   {
@@ -213,6 +213,33 @@
         "key": { "en": "Principal ranges · properties and addition formulas · why the ranges are restricted" } },
       { "id": "tp-09-06", "en": "9.6 Heights and distances",
         "key": { "en": "Angles of elevation and depression · the two-position formula" } }
+     ]
+    },
+    {
+     "en": "Complex numbers",
+     "chapters": [
+      { "id": "tp-10-01", "en": "10.1 Complex numbers: basic definitions",
+        "key": { "en": "Real and imaginary parts · powers of i · conjugate · modulus · triangle inequality" } },
+      { "id": "tp-10-02", "en": "10.2 Argument (amplitude) of a complex number",
+        "key": { "en": "Polar coordinates r and θ · the basic angle · general values of the argument" } },
+      { "id": "tp-10-03", "en": "10.3 Principal argument",
+        "key": { "en": "The quadrant rule · arguments of products, quotients and powers" } },
+      { "id": "tp-10-04", "en": "10.4 Polar form, Euler's form and De Moivre's theorem",
+        "key": { "en": "Polar and exponential forms · De Moivre's theorem · roots of a complex number · cube roots of unity" } },
+      { "id": "tp-10-05", "en": "10.5 Square root of a complex number",
+        "key": { "en": "The square-root formula and its signs · quadratics with complex coefficients" } },
+      { "id": "tp-10-06", "en": "10.6 Analytic functions and Cauchy–Riemann equations",
+        "key": { "en": "Differentiability · Cauchy–Riemann equations · harmonic functions · Milne–Thomson's method" } },
+      { "id": "tp-10-07", "en": "10.7 Exponential, circular and hyperbolic functions",
+        "key": { "en": "e^z, cos z, sin z, cosh z, sinh z · sin iθ = i sinh θ · Osborn's rule · proofs" } },
+      { "id": "tp-10-08", "en": "10.8 Separation into real and imaginary parts",
+        "key": { "en": "sin, cos, tan, sec, cosh, sinh of α + iβ · \"if f(α + iβ) = x + iy, prove …\"" } },
+      { "id": "tp-10-09", "en": "10.9 Logarithm of a complex number",
+        "key": { "en": "Principal and general values · logs of i and negative numbers · complex powers such as i^i" } },
+      { "id": "tp-10-10", "en": "10.10 Inverse circular and inverse hyperbolic functions",
+        "key": { "en": "General values · sinh⁻¹, cosh⁻¹, tanh⁻¹ as logarithms · inverse functions of complex numbers" } },
+      { "id": "tp-10-11", "en": "10.11 Important results and exam tips: complex numbers",
+        "key": { "en": "Eighteen results to remember · how to attack the standard questions" } }
      ]
     }
    ]

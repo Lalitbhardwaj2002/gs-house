@@ -1,0 +1,63 @@
+@en
+# Principal argument
+
+> Of all the values of the argument, the principal one lies in $(-\pi, \pi]$. Find the basic angle $\alpha$ with the signs ignored, then read the principal argument off the quadrant of the point.
+
+## The quadrant rule
+
+! note | Quadrant rule
+The **principal argument** $\operatorname{Arg} z$ is the unique value of the argument with $-\pi < \operatorname{Arg} z \leq \pi$.
+**Method**: first find the basic angle $\alpha = \tan^{-1}\left\lvert \frac{b}{a} \right\rvert$, $0 \leq \alpha \leq \frac{\pi}{2}$ (signs ignored), then use the quadrant of the point $(a, b)$:
+| Position of $z = a + ib$ | Sign of $a, b$ | $\operatorname{Arg} z$ |
+| Quadrant I | $a > 0, b > 0$ | $\alpha$ |
+| Quadrant II | $a < 0, b > 0$ | $\pi - \alpha$ |
+| Quadrant III | $a < 0, b < 0$ | $-\pi + \alpha$ |
+| Quadrant IV | $a > 0, b < 0$ | $-\alpha$ |
+| Positive real axis | $a > 0, b = 0$ | $0$ |
+| Negative real axis | $a < 0, b = 0$ | $\pi$ |
+| Positive imaginary axis | $a = 0, b > 0$ | $\frac{\pi}{2}$ |
+| Negative imaginary axis | $a = 0, b < 0$ | $-\frac{\pi}{2}$ |
+
+^ data/net/maths/fig/arg-quadrants.svg | I: $\operatorname{Arg} z = \alpha$; II: $\pi - \alpha$; III: $-(\pi - \alpha)$; IV: $-\alpha$. Upper half-plane: argument measured anticlockwise (positive); lower half-plane: clockwise (negative)
+
+! example | Question AR1 — standard
+Find the modulus and principal argument of (a) $1 + i\sqrt{3}$, (b) $-1 + i\sqrt{3}$, (c) $-1 - i\sqrt{3}$, (d) $1 - i\sqrt{3}$, (e) $-5$, (f) $-3i$.
+**Solution.** Modulus is 2 in (a)–(d); the acute angle is $\alpha = \tan^{-1}\sqrt{3} = \frac{\pi}{3}$. (a) Q1: $\boxed{\frac{\pi}{3}}$. (b) Q2: $\pi - \frac{\pi}{3} = \boxed{\frac{2\pi}{3}}$. (c) Q3: $-\pi + \frac{\pi}{3} = \boxed{-\frac{2\pi}{3}}$. (d) Q4: $\boxed{-\frac{\pi}{3}}$. (e) $\lvert z \rvert = 5$, negative real axis: $\boxed{\pi}$. (f) $\lvert z \rvert = 3$, negative imaginary axis: $\boxed{-\frac{\pi}{2}}$.
+
+! trick | Shortcut / time-saver
+$\arg(z_1z_2) = \arg z_1 + \arg z_2$, $\arg\frac{z_1}{z_2} = \arg z_1 - \arg z_2$, $\arg\bar{z} = -\arg z$, $\arg z^n = n\arg z$ (each up to a multiple of $2\pi$; adjust to $(-\pi, \pi]$ at the end).
+
+! check | Conditions added
+All four rules need the numbers non-zero. $\arg\bar{z} = -\arg z$ holds for principal values except on the negative real axis, where $\operatorname{Arg}\bar{z} = \operatorname{Arg} z = \pi$.
+
+## What it means
+
+- **Why $(-\pi, \pi]$**: a half-open interval of length $2\pi$ contains exactly one value of the argument. Some books use $[0, 2\pi)$ instead; read the question's convention.
+- **No $\tan^{-1}\frac{b}{a}$ without the quadrant**: $\tan^{-1}$ only returns angles in $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$, so for points in quadrants II and III the formula $\tan^{-1}\frac{b}{a}$ alone is wrong by $\pi$.
+- **Adjusting**: if a sum of arguments falls outside $(-\pi, \pi]$, add or subtract $2\pi$.
+
+! example | Example 1 — a product
+Find $\operatorname{Arg}\left((1 + i)(-1 + i)\right)$.
+**Solution.** $\frac{\pi}{4} + \frac{3\pi}{4} = \pi$, already in $(-\pi, \pi]$: $\boxed{\pi}$. Check: $(1 + i)(-1 + i) = -1 - 1 = -2$ ✓.
+
+! example | Example 2 — a power
+Find $\operatorname{Arg}\left((-1 - i)^3\right)$.
+**Solution.** $\operatorname{Arg}(-1 - i) = -\frac{3\pi}{4}$; times 3: $-\frac{9\pi}{4}$; add $2\pi$: $\boxed{-\frac{\pi}{4}}$. Check: $(-1 - i)^3 = 2 - 2i$ ✓.
+
+? Range of the principal argument? :: $(-\pi, \pi]$.
+? $\operatorname{Arg}$ of a point in the third quadrant with basic angle $\alpha$? :: $-\pi + \alpha$.
+? $\operatorname{Arg}(-3i)$? :: $-\frac{\pi}{2}$.
+? $\arg z^n$? :: $n\arg z$, adjusted by a multiple of $2\pi$.
+
+! exam | What the exam asks
+- Principal arguments of numbers in all four quadrants and on the axes.
+- Arguments of products, quotients, conjugates and powers.
+- Loci such as $\arg(z - z_0) = \theta$ (a ray from $z_0$).
+
+! recap | One-minute revision
+- Basic angle $\alpha$ first; then I $\alpha$, II $\pi - \alpha$, III $-\pi + \alpha$, IV $-\alpha$.
+- Axes: $0$, $\pi$, $\frac{\pi}{2}$, $-\frac{\pi}{2}$.
+- Products add arguments; adjust to $(-\pi, \pi]$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 11, chapter 4 (Complex numbers and quadratic equations)

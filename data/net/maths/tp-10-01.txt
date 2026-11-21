@@ -1,0 +1,59 @@
+@en
+# Complex numbers: basic definitions
+
+> A complex number $z = a + ib$ is a point $(a, b)$ of the Argand plane. Its conjugate is the mirror image in the real axis and its modulus is the distance from the origin; the rules for conjugates and moduli of sums, products and quotients follow.
+
+## Real and imaginary parts, conjugate, modulus
+
+! note | Basic definitions
+- $z = a + ib$, $i = \sqrt{-1}$: $a = \operatorname{Re}(z)$ is the **real part**, $b = \operatorname{Im}(z)$ the **imaginary part**.
+- $i^2 = -1$, $i^3 = -i$, $i^4 = 1$; in general $i^{4k} = 1$, so $i^n$ depends only on the remainder of $n$ on division by 4.
+- **Conjugate**: $\bar{z} = a - ib$. Then $z + \bar{z} = 2a$ and $z - \bar{z} = 2ib$, so
+$$\begin{aligned} &\operatorname{Re}(z) = \frac{z + \bar{z}}{2}, \\ &\operatorname{Im}(z) = \frac{z - \bar{z}}{2i}. \end{aligned}$$
+- **Modulus**: $\lvert z \rvert = \sqrt{a^2 + b^2}$ (distance of the point $(a, b)$ from the origin); $z\bar{z} = \lvert z \rvert^2$.
+- $\overline{z_1 \pm z_2} = \bar{z}_1 \pm \bar{z}_2$, $\overline{z_1z_2} = \bar{z}_1\bar{z}_2$, $\lvert z_1z_2 \rvert = \lvert z_1 \rvert\lvert z_2 \rvert$, $\left\lvert \frac{z_1}{z_2} \right\rvert = \frac{\lvert z_1 \rvert}{\lvert z_2 \rvert}$.
+- Triangle inequality: $\lvert z_1 + z_2 \rvert \leq \lvert z_1 \rvert + \lvert z_2 \rvert$, with equality when $\arg z_1 = \arg z_2$.
+
+! check | Conditions added
+$a$ and $b$ are real. The quotient rule needs $z_2 \neq 0$. Equality in the triangle inequality holds exactly when one of the numbers is $0$ or both have the same argument (one is a positive multiple of the other).
+
+^ data/net/maths/fig/argand.svg | Argand plane: $\bar{z}$ is the mirror image of $z$ in the real axis
+
+## What it means
+
+- **Equality**: $a + ib = c + id$ exactly when $a = c$ and $b = d$; one complex equation gives two real ones.
+- **Division**: multiply above and below by the conjugate of the denominator, $\frac{z_1}{z_2} = \frac{z_1\bar{z}_2}{\lvert z_2 \rvert^2}$, so the denominator becomes real.
+- **Real and purely imaginary**: $z$ is real iff $z = \bar{z}$; purely imaginary iff $z = -\bar{z}$.
+- **Distance**: $\lvert z_1 - z_2 \rvert$ is the distance between the points $z_1$ and $z_2$; $\lvert z - z_0 \rvert = r$ is a circle.
+
+! example | Example 1 — powers of $i$
+Find $i^{103}$ and $i + i^2 + i^3 + \cdots + i^{100}$.
+**Solution.** $103 = 4 \cdot 25 + 3$, so $i^{103} = i^3 = \boxed{-i}$. Every four consecutive powers add to $i - 1 - i + 1 = 0$; 100 terms are 25 such groups: the sum is $\boxed{0}$.
+
+! example | Example 2 — a quotient
+Write $\frac{3 + 4i}{1 - 2i}$ in the form $a + ib$ and find its modulus.
+**Solution.**
+$$\begin{aligned} &\frac{(3 + 4i)(1 + 2i)}{1 + 4} \\ &= \frac{3 + 6i + 4i - 8}{5} \\ &= \boxed{-1 + 2i}, \end{aligned}$$
+and its modulus is $\frac{\lvert 3 + 4i \rvert}{\lvert 1 - 2i \rvert} = \frac{5}{\sqrt{5}} = \boxed{\sqrt{5}}$.
+
+! example | Example 3 — an equation in $z$
+Find $z$ if $z + 2\bar{z} = 6 - i$.
+**Solution.** With $z = a + ib$: $3a - ib = 6 - i$, so $a = 2$, $b = 1$: $\boxed{z = 2 + i}$.
+
+? $i^n$ depends on what? :: Only on the remainder of $n$ when divided by 4.
+? $z\bar{z}$ equals? :: $\lvert z \rvert^2$.
+? When is $z$ real? :: When $z = \bar{z}$.
+? When does $\lvert z_1 + z_2 \rvert = \lvert z_1 \rvert + \lvert z_2 \rvert$? :: When one is $0$ or both have the same argument.
+
+! exam | What the exam asks
+- Powers of $i$ and sums of them.
+- Conjugates, moduli, $\operatorname{Re}$ and $\operatorname{Im}$ of quotients.
+- Equations in $z$ and $\bar{z}$; loci such as $\lvert z - z_0 \rvert = r$.
+
+! recap | One-minute revision
+- $i^2 = -1$; $i^n$ by $n \bmod 4$.
+- $\bar{z} = a - ib$; $\operatorname{Re} z = \frac{z + \bar{z}}{2}$; $z\bar{z} = \lvert z \rvert^2$.
+- $\lvert z_1z_2 \rvert = \lvert z_1 \rvert\lvert z_2 \rvert$; $\lvert z_1 + z_2 \rvert \leq \lvert z_1 \rvert + \lvert z_2 \rvert$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 11, chapter 4 (Complex numbers and quadratic equations)
