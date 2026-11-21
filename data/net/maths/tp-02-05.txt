@@ -1,0 +1,77 @@
+@en
+# Eigenvalues and the Cayley–Hamilton theorem
+
+> An eigenvector of a square matrix is a non-zero vector that the matrix only stretches; the stretch factor is the eigenvalue. The Cayley–Hamilton theorem then gives inverses and high powers of a matrix without long multiplication. The two syllabi do not name this topic, but matrix questions often use it.
+
+## Eigenvalues and eigenvectors
+
+! note | Eigenvalues and the Cayley–Hamilton theorem
+- $\lambda$ is an eigenvalue if $AX = \lambda X$ for some $X \neq 0$, i.e. $\lvert A - \lambda I \rvert = 0$ (characteristic equation).
+- An eigenvector cannot belong to two different eigenvalues: $\lambda_1 X = \lambda_2 X \Rightarrow (\lambda_1 - \lambda_2)X = 0 \Rightarrow \lambda_1 = \lambda_2$.
+- **Cayley–Hamilton**: every square matrix satisfies its own characteristic equation.
+- $2 \times 2$: $\lambda^2 - (\text{tr}\,A)\lambda + \lvert A \rvert = 0$, with $\text{tr}\,A = \lambda_1 + \lambda_2$, $\lvert A \rvert = \lambda_1\lambda_2$.
+- $3 \times 3$: $\lambda^3 - (\text{tr}\,A)\lambda^2 + (\text{tr}\,\text{adj}\,A)\lambda - \lvert A \rvert = 0$, $\text{tr}\,\text{adj}\,A = \lambda_1\lambda_2 + \lambda_2\lambda_3 + \lambda_3\lambda_1$, $\lvert A \rvert = \lambda_1\lambda_2\lambda_3$.
+
+! addon | Eigenvalue facts
+Eigenvalues of $A^{-1}$: $\frac{1}{\lambda}$; of $A^k$: $\lambda^k$; of $kA$: $k\lambda$; of $A + kI$: $\lambda + k$; of $\text{adj}\,A$: $\frac{\lvert A \rvert}{\lambda}$ (these two for non-singular $A$). Triangular matrix: the diagonal entries. $A$ is singular iff $0$ is an eigenvalue.
+
+! check | The condition behind two of these facts
+The rules "eigenvalues of $A^{-1}$ are $\frac{1}{\lambda}$" and "eigenvalues of $\text{adj}\,A$ are $\frac{\lvert A \rvert}{\lambda}$" need $A$ to be **non-singular**, so that no $\lambda$ is 0. (For a singular $A$ there is no $A^{-1}$, and the eigenvalues of $\text{adj}\,A$ must be found another way.)
+
+! example | Question EV1 — standard
+Find the eigenvalues of $A = \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix}$ and an eigenvector for each.
+**Solution.** $\lambda^2 - 7\lambda + 10 = 0 \Rightarrow \lambda = 2, 5$. $\lambda = 5$: $(A - 5I)X = 0 \Rightarrow -x + y = 0 \Rightarrow X = (1, 1)$. $\lambda = 2$: $2x + y = 0 \Rightarrow X = (1, -2)$.
+
+! example | Question EV2 — standard (Cayley–Hamilton)
+For $A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$ find $A^{-1}$ using the Cayley–Hamilton theorem.
+**Solution.** $\lambda^2 - 5\lambda - 2 = 0 \Rightarrow A^2 - 5A - 2I = O \Rightarrow A - 5I - 2A^{-1} = O \Rightarrow A^{-1} = \frac{1}{2}(A - 5I) = \boxed{\frac{1}{2}\begin{bmatrix} -4 & 2 \\ 3 & -1 \end{bmatrix}}$.
+
+! trick | Shortcut / time-saver
+Cayley–Hamilton also gives powers without multiplying: here $A^2 = 5A + 2I$, $A^3 = 5A^2 + 2A = 27A + 10I$.
+
+## What it means
+
+- **How to find them**: solve the characteristic equation $\lvert A - \lambda I \rvert = 0$ for $\lambda$; for each root, solve $(A - \lambda I)X = 0$ for a non-zero $X$. Any non-zero multiple of an eigenvector is again an eigenvector.
+- The step $(\lambda_1 - \lambda_2)X = 0 \Rightarrow \lambda_1 = \lambda_2$ uses $X \neq 0$; that is why the zero vector is never called an eigenvector.
+- The **sum** of the eigenvalues is the trace and their **product** is the determinant (each eigenvalue counted as often as it is repeated). So a matrix with a zero eigenvalue has determinant 0.
+- In the $3 \times 3$ equation, $\text{tr}\,\text{adj}\,A$ is the sum of the three $2 \times 2$ minors on the diagonal (delete row 1 and column 1, then row 2 and column 2, then row 3 and column 3).
+- $A$ and $A'$ have the same eigenvalues (same characteristic equation). Eigenvectors for **different** eigenvalues are linearly independent.
+- A real matrix can have complex eigenvalues: $\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ has $\lambda^2 + 1 = 0$, so $\lambda = \pm i$. A real symmetric matrix never does.
+- **Using Cayley–Hamilton for the inverse**: from $\lambda^2 - (\text{tr}\,A)\lambda + \lvert A \rvert = 0$ get $A^2 - (\text{tr}\,A)A + \lvert A \rvert I = O$, multiply by $A^{-1}$ and solve: $A^{-1} = \frac{(\text{tr}\,A)I - A}{\lvert A \rvert}$ for a $2 \times 2$ matrix with $\lvert A \rvert \neq 0$.
+
+! example | Example 1 — a triangular matrix
+Find the eigenvalues of $A = \begin{bmatrix} 2 & 1 & 0 \\ 0 & 3 & 4 \\ 0 & 0 & 5 \end{bmatrix}$, and of $A^2$ and $A^{-1}$.
+**Solution.** Triangular, so $\lambda = \boxed{2, 3, 5}$. Then $A^2$ has $4, 9, 25$ and $A^{-1}$ has $\frac{1}{2}, \frac{1}{3}, \frac{1}{5}$. Check: trace $2 + 3 + 5 = 10$ and determinant $2 \cdot 3 \cdot 5 = 30$.
+
+! example | Example 2 — the missing eigenvalue
+A $3 \times 3$ matrix has trace 6, determinant 6, and two eigenvalues 1 and 2. Find the third.
+**Solution.** Sum: $1 + 2 + \lambda_3 = 6 \Rightarrow \lambda_3 = 3$; product $1 \cdot 2 \cdot 3 = 6$ ✓. So $\lambda_3 = \boxed{3}$.
+
+! example | Example 3 — a high power
+If $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$, find $A^n$.
+**Solution.** The characteristic equation is $(\lambda - 1)^2 = 0$, so $A^2 = 2A - I$, which gives $A^n = nA - (n - 1)I$ by induction. So $A^n = \boxed{\begin{bmatrix} 1 & n \\ 0 & 1 \end{bmatrix}}$.
+
+! example | Example 4 — a $3 \times 3$ characteristic equation
+Find the characteristic equation and the eigenvalues of $A = \begin{bmatrix} 2 & 1 & 1 \\ 1 & 2 & 1 \\ 1 & 1 & 2 \end{bmatrix}$, and find $A^{-1}$ by the Cayley–Hamilton theorem.
+**Solution.** $\text{tr}\,A = 6$; each diagonal $2 \times 2$ minor is $4 - 1 = 3$, so $\text{tr}\,\text{adj}\,A = 9$; $\lvert A \rvert = 2(3) - 1(1) + 1(-1) = 4$. The characteristic equation is
+$$\lambda^3 - 6\lambda^2 + 9\lambda - 4 = 0,$$
+that is $(\lambda - 1)^2(\lambda - 4) = 0$, so $\lambda = \boxed{1, 1, 4}$ (sum 6 ✓, product 4 ✓). By Cayley–Hamilton $A^3 - 6A^2 + 9A - 4I = O$; multiplying by $A^{-1}$ gives $A^{-1} = \frac{1}{4}(A^2 - 6A + 9I)$, and with $A^2$ having 6 on the diagonal and 5 elsewhere,
+$$A^{-1} = \frac{1}{4}\begin{bmatrix} 3 & -1 & -1 \\ -1 & 3 & -1 \\ -1 & -1 & 3 \end{bmatrix}.$$
+
+? What is the sum of the eigenvalues of a matrix? :: Its trace (and the product is its determinant).
+? What are the eigenvalues of a triangular matrix? :: Its diagonal entries.
+? What does the Cayley–Hamilton theorem say? :: Every square matrix satisfies its own characteristic equation.
+? If $\lambda$ is an eigenvalue of $A$, what is the eigenvalue of $A + 3I$? :: $\lambda + 3$.
+
+! exam | What the exam asks
+- Eigenvalues of a given $2 \times 2$ or triangular matrix, and of $A^{-1}$, $A^k$, $kA$, $\text{adj}\,A$.
+- Using trace and determinant to find a missing eigenvalue.
+- $A^{-1}$ or $A^n$ from the Cayley–Hamilton theorem.
+
+! recap | One-minute revision
+- $\lvert A - \lambda I \rvert = 0$; sum of eigenvalues $= \text{tr}\,A$, product $= \lvert A \rvert$.
+- $A^{-1}$: $\frac{1}{\lambda}$; $A^k$: $\lambda^k$; $kA$: $k\lambda$; $\text{adj}\,A$: $\frac{\lvert A \rvert}{\lambda}$ (for non-singular $A$).
+- $2 \times 2$: $A^2 - (\text{tr}\,A)A + \lvert A \rvert I = O$, so $A^{-1} = \frac{(\text{tr}\,A)I - A}{\lvert A \rvert}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 2 (the full PDF is linked on the subject page)
+& B. S. Grewal, Higher Engineering Mathematics, the chapter on matrices (eigenvalues and the Cayley–Hamilton theorem)

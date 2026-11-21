@@ -1670,8 +1670,8 @@ function renderHome() {
 // themselves are shared (data/net/maths/), and the full notes PDF is offered as it is. English only.
 const MATHS_PDF = 'data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf';
 const MATHS_SUBJECTS = [
-  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapter 1 notes ready' },
-  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapter 1 notes ready' },
+  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapters 1 to 5 notes ready' },
+  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapters 1 to 5 notes ready' },
 ];
 function mathsHTML() {
   const doors = MATHS_SUBJECTS.map((s) => `
@@ -1682,8 +1682,141 @@ function mathsHTML() {
     <section class="card maths-entry" lang="en">
       <div class="book-entry-head"><span class="book-emoji">➗</span><div><h2>UP TGT / PGT Mathematics</h2><p class="muted small">Topic-wise notes on the official 2026 syllabus, with worked examples and shortcuts · English</p></div></div>
       <div class="topics">${doors}</div>
-      <a class="btn maths-pdf" href="${MATHS_PDF}" target="_blank" rel="noopener">📄 Full notes PDF (218 pages, 1.6 MB)</a>
+      <button class="btn maths-pdf" data-action="maths-pdf">📄 Full notes PDF</button>
     </section>`;
+}
+
+// The full notes PDF is locked with a password. A one-time fee of ₹10 by UPI unlocks it, on trust (the
+// owner's choice, 22 November 2026; a static site cannot check a payment by itself): the reader pays by
+// the QR code or a UPI app, then gives a name, an email and the 12-digit UPI reference. These are sent to
+// the owner by email (FormSubmit), who matches the reference in his bank app later, and the reader is
+// shown the password at once. The password is only lightly encoded here, so that it is not plain text.
+// A device that has unlocked is remembered (localStorage), so the button then goes straight to the password.
+const MATHS_PAY = {
+  upi: 'lalitbhardwaj2002asr@okhdfcbank',
+  payee: 'Lalit Bhardwaj',
+  fee: 10,
+  qr: 'data/net/maths/upi-qr.svg',          // made from the same upi://pay link, amount included
+  mail: 'https://formsubmit.co/ajax/lalitbhardwaj2001asr@gmail.com',
+  key: 'U0dAdGlsYUw=',
+  saved: 'gsh-maths-pdf',
+};
+const mathsPdfPass = () => atob(MATHS_PAY.key).split('').reverse().join('');
+const upiLink = () => `upi://pay?pa=${MATHS_PAY.upi}&pn=${encodeURIComponent(MATHS_PAY.payee)}&am=${MATHS_PAY.fee}.00&cu=INR&tn=${encodeURIComponent('GS HOUSE maths notes PDF')}`;
+function mathsPaid() {
+  try { return JSON.parse(localStorage.getItem(MATHS_PAY.saved) || 'null'); } catch { return null; }
+}
+
+function openMathsPdf() {
+  if (document.querySelector('.dialog-backdrop')) return;
+  const P = MATHS_PAY;
+  const box = document.createElement('div');
+  box.className = 'dialog-backdrop';
+  let step = '';
+  const steps = {
+    intro: () => `
+      <h2 id="dialog-title">🔒 Full notes PDF</h2>
+      <p>The full notes PDF opens with a password. Unlock it for a one-time fee of <b>₹${P.fee}</b>.</p>
+      <p class="small">Pay by UPI, type the payment's reference number, and you get the password at once.</p>
+      <div class="dialog-actions">
+        <button class="btn" data-pay="close">Not now</button>
+        <button class="btn primary" data-pay="pay">Pay ₹${P.fee} ▶</button>
+      </div>`,
+    pay: () => `
+      <h2 id="dialog-title">Pay ₹${P.fee} by UPI</h2>
+      <p>Scan with any UPI app: Google Pay, PhonePe, Paytm or BHIM.</p>
+      <img class="upi-qr" src="${P.qr}" width="220" height="220" alt="UPI QR code: pay ₹${P.fee} to ${P.payee}">
+      <p class="upi-to"><b>${P.payee}</b> · ₹${P.fee}</p>
+      <div class="upi-id"><code>${P.upi}</code><button class="btn" data-pay="copy-upi">Copy</button></div>
+      <a class="btn upi-app" href="${esc(upiLink())}">📱 Pay with a UPI app on this phone</a>
+      <div class="dialog-actions">
+        <button class="btn" data-pay="intro">‹ Back</button>
+        <button class="btn primary" data-pay="form">I have paid ▶</button>
+      </div>`,
+    form: () => `
+      <h2 id="dialog-title">Your payment</h2>
+      <form class="pay-form" novalidate>
+        <label class="field">Your name<input name="payer" autocomplete="name" maxlength="80"></label>
+        <label class="field">Your email<input name="mail" type="email" autocomplete="email" maxlength="120"></label>
+        <label class="field">UPI reference number (12 digits)<input name="utr" inputmode="numeric" autocomplete="off" maxlength="14"></label>
+        <p class="small">It is in your UPI app, in the details of this payment (UPI Ref. No. or UTR). Your name, email and reference go to the site owner by email (through FormSubmit), only to match your payment.</p>
+        <p class="pay-err" role="alert" hidden></p>
+        <div class="dialog-actions">
+          <button type="button" class="btn" data-pay="pay">‹ Back</button>
+          <button type="submit" class="btn primary">Unlock ▶</button>
+        </div>
+      </form>`,
+    done: () => `
+      <h2 id="dialog-title">✅ PDF unlocked</h2>
+      <p>Thank you! The password of the PDF is:</p>
+      <div class="upi-id"><code>${esc(mathsPdfPass())}</code><button class="btn" data-pay="copy-pass">Copy</button></div>
+      <p class="small">Your PDF app asks for it when the file opens. It works on any device, and this device remembers it.</p>
+      <div class="dialog-actions">
+        <button class="btn" data-pay="close">Close</button>
+        <a class="btn primary" href="${MATHS_PDF}" target="_blank" rel="noopener">📄 Open the PDF</a>
+      </div>`,
+  };
+  const show = (name) => {
+    step = name;
+    box.innerHTML = `<div class="dialog pay-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" lang="en">${steps[name]()}</div>`;
+    const first = box.querySelector('input, .btn.primary');
+    if (first) first.focus();
+  };
+  const close = () => { document.removeEventListener('keydown', onKey, true); box.remove(); };
+  const onKey = (e) => { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); close(); } };
+  const copy = async (btn, text) => {
+    try { await navigator.clipboard.writeText(text); btn.textContent = 'Copied ✓'; } catch { btn.textContent = 'Select and copy'; }
+    setTimeout(() => { btn.textContent = 'Copy'; }, 1800);
+  };
+  box.addEventListener('click', (e) => {
+    if (e.target === box) { if (step !== 'form') close(); return; }   // a stray tap must not lose a half-filled form
+    const b = e.target.closest('[data-pay]');
+    if (!b) return;
+    const k = b.dataset.pay;
+    if (k === 'close') close();
+    else if (k === 'copy-upi') copy(b, P.upi);
+    else if (k === 'copy-pass') copy(b, mathsPdfPass());
+    else show(k);
+  });
+  box.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const err = f.querySelector('.pay-err');
+    const payer = f.elements.payer.value.trim();
+    const mail = f.elements.mail.value.trim();
+    const utr = f.elements.utr.value.replace(/\s+/g, '');
+    const problem = !payer ? 'Please type your name.'
+      : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail) ? 'Please type a correct email address.'
+      : !/^\d{12}$/.test(utr) ? 'The UPI reference number has 12 digits.' : '';
+    if (problem) { err.textContent = problem; err.hidden = false; return; }
+    const go = f.querySelector('[type="submit"]');
+    go.disabled = true;
+    go.textContent = 'Sending…';
+    try {
+      const res = await fetch(P.mail, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          _subject: `GS HOUSE: ₹${P.fee} paid for the maths notes PDF (UPI ref ${utr})`,
+          _template: 'table', _captcha: 'false',
+          Name: payer, email: mail, 'UPI reference': utr, Amount: `₹${P.fee}`, 'Paid to': P.upi,
+          Time: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+        }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    } catch {
+      err.textContent = 'Your details could not be sent just now. Check the internet connection and try again.';
+      err.hidden = false;
+      go.disabled = false;
+      go.textContent = 'Unlock ▶';
+      return;
+    }
+    try { localStorage.setItem(P.saved, JSON.stringify({ utr, at: Date.now() })); } catch { /* private window: shown this time only */ }
+    show('done');
+  });
+  document.addEventListener('keydown', onKey, true);
+  document.body.appendChild(box);
+  show(mathsPaid() ? 'done' : 'intro');
 }
 
 // NET / JRF corner on the home screen. The subjects are still to come, so each is a locked "door".
@@ -2331,7 +2464,7 @@ function studySubjectHTML(s, syllabus) {
       <div class="book-emoji">${s.icon}</div>
       <h1 class="book-title">${bookName(s.title)}</h1>
       <p class="tagline">${bookName(s.subtitle)}</p>
-      ${s.pdf ? `<a class="btn maths-pdf" href="${esc(s.pdf.href)}" target="_blank" rel="noopener">📄 ${bookName(s.pdf)}</a>` : ''}
+      ${s.pdf ? `<button class="btn maths-pdf" data-action="maths-pdf">📄 ${bookName(s.pdf)}</button>` : ''}
     </section>
     <section class="card">
       <h2>${t('netUnitsTitle')}</h2>
@@ -2643,6 +2776,7 @@ const actions = {
   // ----- book companion -----
   book: () => openBook('book'),
   'book-go': (btn) => openBook(btn.dataset.route),
+  'maths-pdf': () => openMathsPdf(),
   'book-home'() { history.pushState(null, '', location.pathname); renderHome(); },
   'book-quiz': (btn) => startBookQuiz(btn.dataset.topic, btn.dataset.id),
   'book-again'() {

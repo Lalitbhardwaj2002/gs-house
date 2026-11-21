@@ -1,0 +1,66 @@
+@en
+# Order of an element
+
+> The order of an element is the number of times it must be combined with itself to give the identity. It decides the structure of cyclic groups, and in a finite group it always divides the order of the group.
+
+## Order of an element
+
+! note | Order of an element
+- $a^0 = e$ (not necessarily 1: in $(\mathbb{Z}, +)$, $2^0 = 0$ and $2^{-1} = -2$). **Order** $o(a)$ = least $n \geq 1$ with $a^n = e$; infinite if no such $n$ (e.g. $o(2)$ in $(\mathbb{Z}, +)$).
+- In a finite group every element has finite order, and $o(a)$ divides $o(G)$.
+- $o(a) = o(a^{-1}) = o(x^{-1}ax)$; $o(ab) = o(ba)$; $o(a^k) \leq o(a)$.
+- If $o(a) = n$: $a^m = e \iff n \mid m$; $o(a^m) = \frac{n}{\gcd(m, n)}$; if $\gcd(p, n) = 1$ then $o(a^p) = n$.
+
+! example | Question O1 — from the notes
+Find the orders of the elements of (a) $\{1, -1, i, -i\}$, (b) $\{1, 2, 3, 4\}$ under $\times_5$, (c) $\mathbb{Z}_5$, and of $4$ in $\mathbb{Z}_6$.
+**Solution.** (a) $o(1) = 1$, $o(-1) = 2$, $o(i) = o(-i) = 4$. (b) $2 \to 4 \to 3 \to 1$: $o(2) = 4$; $o(3) = 4$; $o(4) = 2$; $o(1) = 1$. (c) every non-zero element has order 5. In $\mathbb{Z}_6$: $4, 2, 0$, so $o(4) = 3$.
+
+! trick | Shortcut / time-saver
+In $(\mathbb{Z}_n, +_n)$: $o(k) = \frac{n}{\gcd(k, n)}$, e.g. in $\mathbb{Z}_{12}$, $o(8) = \frac{12}{4} = 3$. A cyclic group of order $n$ has exactly $\varphi(d)$ elements of order $d$ for each $d \mid n$.
+
+## What it means
+
+- **Elements of each order**: in a cyclic group of order $n$, each divisor $d$ of $n$ accounts for $\varphi(d)$ elements. For $\mathbb{Z}_{12}$: one element of order 1, one of order 2, two of order 3, two of order 4 (3 and 9), two of order 6 and four of order 12. Adding over all divisors gives $\sum_{d \mid n} \varphi(d) = n$.
+- **In additive notation** "$a^n$" means $a + a + \cdots + a$ ($n$ times), written $na$, and $e$ is 0. So the order of $k$ in $\mathbb{Z}_n$ is the least $m$ with $mk$ a multiple of $n$.
+- Only the identity has order 1. Elements of order 2 are those with $a = a^{-1}$, $a \neq e$.
+- **More than $o(a^k) \leq o(a)$**: when $o(a) = n$ is finite, $(a^k)^n = (a^n)^k = e$, so $o(a^k)$ divides $n$. In $\mathbb{Z}_{12}$, $o(1) = 12$ and the multiples of 1 have orders 1, 2, 3, 4, 6, 12, all divisors of 12.
+- **Why $o(a)$ divides $o(G)$**: the powers of $a$ form a subgroup with $o(a)$ elements, and Lagrange's theorem says the order of a subgroup divides the order of the group.
+- **Why $o(x^{-1}ax) = o(a)$**: $(x^{-1}ax)^n = x^{-1}a^nx$, which is $e$ exactly when $a^n = e$. Conjugate elements have the same order.
+- In an infinite group an element can have finite order: $-1$ has order 2 in $(\mathbb{R}^*, \times)$, and $i$ has order 4 in $(\mathbb{C}^*, \times)$.
+
+| Group | Element | Order |
+| $(\mathbb{Z}, +)$ | any $a \neq 0$ | infinite |
+| $(\mathbb{C}^*, \times)$ | $\omega = e^{2\pi i/3}$ | 3 |
+| $(\mathbb{Z}_{10}, +)$ | 4 | $\frac{10}{\gcd(4, 10)} = 5$ |
+| $U(7)$ | 3 | 6 ($3, 2, 6, 4, 5, 1$) |
+| $S_4$ | $(1\,2)(3\,4)$ | 2 |
+
+! example | Example 1 — order of a power
+If $o(a) = 12$, find $o(a^8)$ and $o(a^5)$.
+**Solution.** $o(a^8) = \frac{12}{\gcd(8, 12)} = \frac{12}{4} = \boxed{3}$; $o(a^5) = \frac{12}{\gcd(5, 12)} = \boxed{12}$.
+
+! example | Example 2 — elements of each order
+How many elements of order 6 has $\mathbb{Z}_{18}$?
+**Solution.** $\varphi(6) = 2$: they are $3$ and $15$ (check: $o(3) = \frac{18}{3} = 6$ and $o(15) = \frac{18}{3} = 6$). Answer $\boxed{2}$.
+
+! example | Example 3 — $o(ab) = o(ba)$
+Show that $ab$ and $ba$ have the same order.
+**Solution.** $ba = a^{-1}(ab)a$, a conjugate of $ab$, and conjugates have the same order.
+
+? What is the order of the identity? :: 1, and it is the only element of order 1.
+? Order of 8 in $\mathbb{Z}_{12}$? :: $\frac{12}{\gcd(8, 12)} = 3$.
+? If $o(a) = n$, when is $a^m = e$? :: Exactly when $n$ divides $m$.
+? How many elements of order $d$ does a cyclic group of order $n$ have, for $d \mid n$? :: $\varphi(d)$.
+
+! exam | What the exam asks
+- Orders of elements of $\mathbb{Z}_n$, $U(n)$, the fourth roots of unity and $S_n$.
+- $o(a^m) = \frac{n}{\gcd(m, n)}$; the number of elements of a given order in a cyclic group.
+- Properties such as $o(a) = o(a^{-1})$ and $o(ab) = o(ba)$.
+
+! recap | One-minute revision
+- $o(a)$: least $n \geq 1$ with $a^n = e$; in a finite group $o(a) \mid o(G)$.
+- $o(a^m) = \frac{n}{\gcd(m, n)}$; in $\mathbb{Z}_n$, $o(k) = \frac{n}{\gcd(k, n)}$.
+- Cyclic group of order $n$: $\varphi(d)$ elements of order $d$ for each $d \mid n$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapters 3 and 4

@@ -1,0 +1,74 @@
+@en
+# Addition and multiplication modulo $m$
+
+> Arithmetic "on a clock" gives the most important small groups: the integers modulo $m$ under addition, and the numbers coprime to $m$ under multiplication. They supply most of the examples in group theory questions.
+
+## Addition and multiplication modulo $m$
+
+! note | Groups modulo $m$
+- $a +_m b$ = least non-negative remainder of $a + b$ on division by $m$. $\{0, 1, \dots, m - 1\}$ is an abelian group under $+_m$ (identity $0$, inverse of $a$ is $m - a$). In $\mathbb{Z}_6$: inverses $1 \leftrightarrow 5$, $2 \leftrightarrow 4$, $3 \leftrightarrow 3$.
+- If $p$ is prime, $\{1, 2, \dots, p - 1\}$ is a group under $\times_p$.
+- $\{1, 2, 3, 4\}$ under $\times_5$: inverses $1 \to 1$, $2 \to 3$, $3 \to 2$, $4 \to 4$. $\{1, 3, 4, 5, 9\}$ under $\times_{11}$: abelian of order 5 ($3^{-1} = 4$, $5^{-1} = 9$). $\{1, 10\}$ under $\times_{11}$: order 2.
+- Not groups: $\{1, 2, 3, 4, 5\}$ under $+_6$ or $\times_6$ (the result 0 is not in the set).
+
+! check | The inverse of 0
+"Inverse of $a$ is $m - a$" holds for $a \neq 0$. The element $0$ is its own inverse, since $m - 0 = m$ is not in $\{0, 1, \dots, m - 1\}$.
+
+! example | Question MD1 — from the notes
+Show that $\{1, 3, 4, 5, 9\}$ is a group under multiplication modulo 11.
+**Solution.** Products mod 11 stay in the set (e.g. $3 \cdot 4 = 12 \equiv 1$, $3 \cdot 5 = 15 \equiv 4$, $4 \cdot 5 = 20 \equiv 9$, $5 \cdot 9 = 45 \equiv 1$, $9 \cdot 9 = 81 \equiv 4$); associativity is inherited; identity 1; inverses $1^{-1} = 1$, $3^{-1} = 4$, $4^{-1} = 3$, $5^{-1} = 9$, $9^{-1} = 5$. Abelian group of order 5.
+
+! trick | Shortcut / time-saver
+$\{1, \dots, n - 1\}$ under $\times_n$ ($n \geq 2$) is a group iff $n$ is prime. In general the units $U(n) = \{a : 1 \leq a \leq n - 1,\ \gcd(a, n) = 1\}$ form a group under $\times_n$ of order $\varphi(n)$.
+
+! check | Conditions added
+The shortcut needs $n \geq 2$, and in $U(n)$ the number $a$ runs over $1, 2, \dots, n - 1$: without that range, $\{a : \gcd(a, n) = 1\}$ is an infinite set of integers, not a group of order $\varphi(n)$. The operation is $\times_n$.
+
+## What it means
+
+- $a \equiv b \pmod{m}$ means $m$ divides $a - b$: the two numbers leave the same remainder on division by $m$.
+- **Why $\times_n$ needs $n$ prime**: if $n = rs$ with $1 < r, s < n$, then $r \times_n s = 0$, which is not in $\{1, \dots, n - 1\}$, so the set is not closed. For prime $p$, every $a$ with $1 \leq a \leq p - 1$ is coprime to $p$ and has an inverse.
+- **Finding an inverse modulo $n$**: look for $b$ with $ab \equiv 1$. For small numbers try multiples: $7 \times_{10} 3 = 21 \equiv 1$, so $7^{-1} = 3$ in $U(10)$.
+- **Euler's function** $\varphi(n)$ counts the numbers from 1 to $n$ coprime to $n$, which is the order of $U(n)$. For a prime $p$, $\varphi(p) = p - 1$.
+
+| Group | Elements | Order |
+| $(\mathbb{Z}_6, +_6)$ | $0, 1, 2, 3, 4, 5$ | 6 |
+| $U(5)$ | $1, 2, 3, 4$ | 4 |
+| $U(8)$ | $1, 3, 5, 7$ | 4 (every element has square 1) |
+| $U(10)$ | $1, 3, 7, 9$ | 4 |
+| $U(12)$ | $1, 5, 7, 11$ | 4 |
+
+! example | Example 1 — the table of $U(8)$
+Write the multiplication table of $U(8) = \{1, 3, 5, 7\}$ modulo 8.
+**Solution.** $3 \cdot 3 = 9 \equiv 1$, $5 \cdot 5 = 25 \equiv 1$, $7 \cdot 7 = 49 \equiv 1$, $3 \cdot 5 = 15 \equiv 7$, $3 \cdot 7 = 21 \equiv 5$, $5 \cdot 7 = 35 \equiv 3$. Every element is its own inverse, so $U(8)$ is abelian of order 4 but has no element of order 4: it is not cyclic.
+| $\times_8$ | $1$ | $3$ | $5$ | $7$ |
+| $1$ | $1$ | $3$ | $5$ | $7$ |
+| $3$ | $3$ | $1$ | $7$ | $5$ |
+| $5$ | $5$ | $7$ | $1$ | $3$ |
+| $7$ | $7$ | $5$ | $3$ | $1$ |
+
+! example | Example 2 — an inverse modulo 13
+Find the inverse of 5 in the group $\{1, 2, \dots, 12\}$ under $\times_{13}$.
+**Solution.** $5 \cdot 8 = 40 = 3 \cdot 13 + 1 \equiv 1$, so $5^{-1} = \boxed{8}$.
+
+! example | Example 3 — an equation in $\mathbb{Z}_7$
+Solve $3x + 4 \equiv 2 \pmod 7$.
+**Solution.** $3x \equiv -2 \equiv 5$. The inverse of 3 modulo 7 is 5 ($3 \cdot 5 = 15 \equiv 1$), so $x \equiv 5 \cdot 5 = 25 \equiv \boxed{4}$. Check: $3 \cdot 4 + 4 = 16 \equiv 2$ ✓.
+
+? What is the inverse of $a$ in $(\mathbb{Z}_m, +_m)$? :: $m - a$ (and $0$ is its own inverse).
+? For which $n$ is $\{1, \dots, n - 1\}$ a group under $\times_n$? :: Exactly when $n$ is prime.
+? What is the order of $U(n)$? :: $\varphi(n)$, the number of integers from 1 to $n$ coprime to $n$.
+? What is $3^{-1}$ in $U(11)$? :: 4, since $3 \cdot 4 = 12 \equiv 1$.
+
+! exam | What the exam asks
+- Whether a given set is a group under $+_m$ or $\times_m$.
+- Inverses and orders of elements modulo $m$.
+- The groups $U(n)$ and their orders.
+
+! recap | One-minute revision
+- $(\mathbb{Z}_m, +_m)$: identity 0, inverse $m - a$.
+- $\{1, \dots, n - 1\}$ under $\times_n$ is a group iff $n$ is prime; $U(n)$ has order $\varphi(n)$.
+- Find inverses by solving $ab \equiv 1$; $U(8)$ is not cyclic.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapters 0 and 2

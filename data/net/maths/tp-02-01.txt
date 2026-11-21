@@ -1,0 +1,106 @@
+@en
+# Types of matrices and transpose
+
+> A matrix is a rectangular array of numbers. The exam asks about the kinds of matrices (symmetric, skew-symmetric, orthogonal, idempotent and so on), the rules of the transpose, and how to split a square matrix into a symmetric and a skew-symmetric part.
+
+## Matrices, products and transposes
+
+! note | Matrices and their kinds
+A matrix $A = [a_{ij}]_{m \times n}$ has $m$ rows and $n$ columns. Matrices of the same order are added entry by entry; the product $AB$ ($m \times n$ times $n \times p$) has $(i, j)$ entry = row $i$ of $A \cdot$ column $j$ of $B$. In general $AB \neq BA$.
+- **Symmetric**: $A' = A$. **Skew-symmetric**: $A' = -A$ (diagonal entries are $0$).
+- $(A')' = A$, $(kA)' = kA'$, $(A + B)' = A' + B'$, $(AB)' = B'A'$ (order reverses).
+- For any square $A$: $A + A'$ is symmetric and $A - A'$ is skew-symmetric, since $(A + A')' = A' + A$ and $(A - A')' = -(A - A')$.
+- Every square matrix is uniquely $A = P + Q$ with $P = \frac{1}{2}(A + A')$ symmetric and $Q = \frac{1}{2}(A - A')$ skew-symmetric.
+- **Hermitian**: $(\bar{A})' = A$; **skew-Hermitian**: $(\bar{A})' = -A$; $A = H + S$ with $H = \frac{1}{2}(A + A^\theta)$, $S = \frac{1}{2}(A - A^\theta)$.
+- **Idempotent** $A^2 = A$; **involutory** $A^2 = I$; **nilpotent** $A^k = O$ (least such $k$ = index); **orthogonal** $A'A = AA' = I$; **unitary** $A^\theta A = AA^\theta = I$; $(kA)^\theta = \bar{k}A^\theta$; $(AB)^\theta = B^\theta A^\theta$.
+
+$$\begin{aligned} (AB)_{11} &= \underbrace{(a_{11},\ a_{12})}_{\text{row 1 of } A} \cdot \underbrace{(b_{11},\ b_{21})}_{\text{column 1 of } B} \\ &= a_{11}b_{11} + a_{12}b_{21} \end{aligned}$$
+
+! example | Question M1 — from the notes
+Express $B = \begin{bmatrix} 2 & -2 & -4 \\ -1 & 3 & 4 \\ 1 & -2 & -3 \end{bmatrix}$ as the sum of a symmetric and a skew-symmetric matrix.
+**Solution.**
+$$B' = \begin{bmatrix} 2 & -1 & 1 \\ -2 & 3 & -2 \\ -4 & 4 & -3 \end{bmatrix}.$$
+$$\begin{aligned} P &= \tfrac{1}{2}(B + B') \text{ (symmetric)} \\ &= \begin{bmatrix} 2 & -\frac{3}{2} & -\frac{3}{2} \\ -\frac{3}{2} & 3 & 1 \\ -\frac{3}{2} & 1 & -3 \end{bmatrix}, \end{aligned}$$
+$$\begin{aligned} Q &= \tfrac{1}{2}(B - B') \text{ (skew)} \\ &= \begin{bmatrix} 0 & -\frac{1}{2} & -\frac{5}{2} \\ \frac{1}{2} & 0 & 3 \\ \frac{5}{2} & -3 & 0 \end{bmatrix}. \end{aligned}$$
+$P + Q = B$ ✓.
+
+! addon | Facts asked as MCQs
+The determinant of an odd-order skew-symmetric matrix is $0$. Eigenvalues: real symmetric/Hermitian — real; skew-Hermitian — purely imaginary or $0$; real orthogonal/unitary — modulus $1$; idempotent — $0$ or $1$; nilpotent — all $0$. $\text{tr}(A + B) = \text{tr}\,A + \text{tr}\,B$, $\text{tr}(AB) = \text{tr}(BA)$, so $AB - BA = I$ is impossible.
+
+! check | A condition added: real entries
+"Symmetric — real eigenvalues" and "orthogonal — modulus 1" hold for **real** matrices (a real symmetric matrix is Hermitian, a real orthogonal one is unitary). With complex entries they can fail: $\begin{bmatrix} 1 & i \\ i & 1 \end{bmatrix}$ is symmetric, yet $\lambda^2 - 2\lambda + 2 = 0$ gives $\lambda = 1 \pm i$. The trace argument rules out $AB - BA = I$ for real or complex $n \times n$ matrices.
+
+## What it means
+
+| Kind | Condition | Example |
+| Row matrix | one row, $1 \times n$ | $\begin{bmatrix} 1 & 2 & 3 \end{bmatrix}$ |
+| Column matrix | one column, $m \times 1$ | $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ |
+| Square matrix | $m = n$ | any $n \times n$ matrix |
+| Diagonal matrix | square, $a_{ij} = 0$ for $i \neq j$ | $\text{diag}(2, 5)$ |
+| Scalar matrix | diagonal with equal diagonal entries | $3I$ |
+| Identity matrix | diagonal entries 1, others 0 | $I_2 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ |
+| Zero matrix | every entry 0 | $O$ |
+| Upper (lower) triangular | square, zeros below (above) the diagonal | $\begin{bmatrix} 1 & 4 \\ 0 & 2 \end{bmatrix}$ |
+| Symmetric | square, $a_{ji} = a_{ij}$ | $\begin{bmatrix} 1 & 4 \\ 4 & 2 \end{bmatrix}$ |
+| Skew-symmetric | square, $a_{ji} = -a_{ij}$ | $\begin{bmatrix} 0 & 3 \\ -3 & 0 \end{bmatrix}$ |
+
+- **Equal matrices** have the same order and the same entries. $A + B$ needs $A$ and $B$ of the same order. $AB$ is defined only when the number of columns of $A$ equals the number of rows of $B$; then $AB$ has as many rows as $A$ and as many columns as $B$.
+- Matrix multiplication is **associative** and **distributive**, but **not commutative**, and $AB = O$ does not force $A = O$ or $B = O$: with $A = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}$, $A \cdot A = O$ although $A \neq O$.
+- The **trace** $\text{tr}\,A$ is the sum of the diagonal entries of a square matrix. $A^\theta = (\bar{A})'$ is the **conjugate transpose**; for real matrices "Hermitian" is the same as "symmetric" and "unitary" the same as "orthogonal".
+- In a skew-symmetric matrix $a_{ii} = -a_{ii}$, so every diagonal entry is 0. For odd $n$, $\lvert A \rvert = \lvert A' \rvert = \lvert -A \rvert = (-1)^n \lvert A \rvert = -\lvert A \rvert$, so $\lvert A \rvert = 0$: that is why the determinant of an odd-order skew-symmetric matrix is 0.
+- Why $(AB)' = B'A'$: the $(i, j)$ entry of $(AB)'$ is the $(j, i)$ entry of $AB$, row $j$ of $A$ times column $i$ of $B$; that is row $i$ of $B'$ times column $j$ of $A'$, the $(i, j)$ entry of $B'A'$.
+
+## Counting matrices
+
+- A matrix with $N$ entries can have as many orders as $N$ has divisors: 12 entries allow $1 \times 12$, $2 \times 6$, $3 \times 4$, $4 \times 3$, $6 \times 2$, $12 \times 1$, that is 6 orders.
+- Matrices of order $m \times n$ with entries from a set of $k$ values: $k^{mn}$. Symmetric $n \times n$ ones: $k^{n(n+1)/2}$ (the diagonal and the entries above it are free). Skew-symmetric ones with entries from $\{-1, 0, 1\}$: $3^{n(n-1)/2}$.
+
+! example | Example 1 — a product
+Find $AB$ and $BA$ for $A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$ and $B = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$.
+**Solution.**
+$$\begin{aligned} AB &= \begin{bmatrix} 2 & 1 \\ 4 & 3 \end{bmatrix}, \\ BA &= \begin{bmatrix} 3 & 4 \\ 1 & 2 \end{bmatrix}. \end{aligned}$$
+In $AB$ the columns of $A$ are swapped; in $BA$ the rows are swapped. So $AB \neq BA$.
+
+! example | Example 2 — sum and product of $3 \times 3$ matrices
+For $A = \begin{bmatrix} 1 & 2 & 0 \\ 0 & 1 & 3 \\ 2 & 0 & 1 \end{bmatrix}$ and $B = \begin{bmatrix} 1 & 0 & 1 \\ 2 & 1 & 0 \\ 0 & 1 & 1 \end{bmatrix}$ find $A + B$, $AB$ and $BA$, and check that $(AB)' = B'A'$.
+**Solution.** Entry by entry, $A + B = \begin{bmatrix} 2 & 2 & 1 \\ 2 & 2 & 3 \\ 2 & 1 & 2 \end{bmatrix}$. Each entry of $AB$ is a row of $A$ times a column of $B$, for example $(AB)_{11} = 1 \cdot 1 + 2 \cdot 2 + 0 \cdot 0 = 5$ and $(AB)_{23} = 0 \cdot 1 + 1 \cdot 0 + 3 \cdot 1 = 3$:
+$$AB = \begin{bmatrix} 5 & 2 & 1 \\ 2 & 4 & 3 \\ 2 & 1 & 3 \end{bmatrix},$$
+$$BA = \begin{bmatrix} 3 & 2 & 1 \\ 2 & 5 & 3 \\ 2 & 1 & 4 \end{bmatrix} \neq AB.$$
+Transposing, $(AB)' = \begin{bmatrix} 5 & 2 & 2 \\ 2 & 4 & 1 \\ 1 & 3 & 3 \end{bmatrix}$, and the product $B'A'$ gives the same matrix ✓.
+
+! example | Example 3 — an orthogonal matrix
+Show that $A = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$ is orthogonal.
+**Solution.**
+$$A' = \begin{bmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{bmatrix}.$$
+In $A'A$ each diagonal entry is $\cos^2\theta + \sin^2\theta = 1$ and each off-diagonal entry is $\pm(\sin\theta\cos\theta - \cos\theta\sin\theta) = 0$, so $A'A = I$; in the same way $AA' = I$. So $A^{-1} = A'$.
+
+! example | Example 4 — idempotent and nilpotent
+Show that $A = \begin{bmatrix} 2 & -2 \\ 1 & -1 \end{bmatrix}$ is idempotent and $N = \begin{bmatrix} 1 & 1 \\ -1 & -1 \end{bmatrix}$ is nilpotent of index 2.
+**Solution.**
+$$A^2 = \begin{bmatrix} 4 - 2 & -4 + 2 \\ 2 - 1 & -2 + 1 \end{bmatrix} = A,$$
+$$N^2 = \begin{bmatrix} 1 - 1 & 1 - 1 \\ -1 + 1 & -1 + 1 \end{bmatrix} = O,$$
+while $N \neq O$, so the index is $\boxed{2}$.
+
+! example | Example 5 — counting
+How many $2 \times 2$ matrices with entries 0 or 1 are there, and how many of them are symmetric?
+**Solution.** $2^4 = \boxed{16}$ matrices; symmetric: $2^{2 \cdot 3/2} = 2^3 = \boxed{8}$.
+
+? What is $(AB)'$? :: $B'A'$: the order reverses.
+? Determinant of a $3 \times 3$ skew-symmetric matrix? :: 0, as for every skew-symmetric matrix of odd order.
+? What are the possible eigenvalues of an idempotent matrix? :: 0 and 1.
+? Why is $AB - BA = I$ impossible for square matrices? :: $\text{tr}(AB - BA) = 0$ but $\text{tr}\,I = n \neq 0$.
+? $A$ is $2 \times 3$ and $B$ is $3 \times 4$. Which of $AB$, $BA$ exists, and of what order? :: Only $AB$, of order $2 \times 4$.
+
+! exam | What the exam asks
+- Recognising symmetric, skew-symmetric, orthogonal, idempotent, involutory and nilpotent matrices.
+- Sums and products of matrices up to order $3 \times 3$.
+- Splitting a matrix into symmetric and skew-symmetric parts; rules of the transpose.
+- Counting matrices of a given kind and the possible orders of a matrix.
+
+! recap | One-minute revision
+- $(AB)' = B'A'$; $A = \frac{1}{2}(A + A') + \frac{1}{2}(A - A')$.
+- Skew-symmetric: zero diagonal; odd order $\Rightarrow$ determinant 0.
+- Idempotent $A^2 = A$, involutory $A^2 = I$, nilpotent $A^k = O$, orthogonal $A'A = I$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 2 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 3: Matrices | https://ncert.nic.in/textbook.php?lemh1=3-6

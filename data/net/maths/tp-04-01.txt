@@ -1,0 +1,85 @@
+@en
+# Binary operations and groups
+
+> A group is a set with one operation that is closed and associative, has an identity, and gives every element an inverse. Most questions hand you a set and an operation and ask: what is the identity, what is the inverse of $a$, and is it a group?
+
+## Binary operations and the group axioms
+
+! note | Group & Ring notebook
+A **binary operation** $*$ on $A$ combines two elements of $A$ to give an element of $A$ (closure). On $\mathbb{N}$: $+$ and $\times$ are binary operations, but $-$ and $\div$ are not ($2 - 3 \notin \mathbb{N}$, $2 \div 3 \notin \mathbb{N}$). On $\mathbb{Z}$: $+, -, \times$ are, $\div$ is not. On $\mathbb{R}$: $\div$ fails because of division by $0$.
+$(G, *)$ is a **group** if:
+- (1) **closure**: $a, b \in G \Rightarrow a * b \in G$;
+- (2) **associativity**: $(a * b) * c = a * (b * c)$;
+- (3) **identity**: there is $e \in G$ with $a * e = e * a = a$ for every $a \in G$ (if the candidate $e \notin G$, there is no identity);
+- (4) **inverse**: for each $a$ there is $a^{-1} \in G$ with $a * a^{-1} = a^{-1} * a = e$.
+If also $a * b = b * a$, the group is **abelian**. The **order** $o(G)$ is the number of elements.
+
+! note | Standard examples from the notes
+- **Groups**: $(\mathbb{Z}, +)$, $(\mathbb{Q}, +)$, $(\mathbb{R}, +)$, $(\mathbb{C}, +)$, $(\mathbb{R}^*, \times)$, $(\mathbb{Q}^+, \times)$, even integers under $+$, $\{a + b\sqrt{2} : a, b \in \mathbb{Q}\}$ under $+$, $\{3^x : x \in \mathbb{Z}\}$ under $\times$, $\{m/2^n\}$ ($m \in \mathbb{Z}$, $n = 0, 1, 2, \dots$) under $+$.
+- **Not groups**: $(\mathbb{N}, +)$ (no identity/inverses; only a semigroup); $(\mathbb{N}, \times)$ and $(\mathbb{Z}, \times)$ (no inverses); non-negative integers under $+$; odd integers under $+$ (not closed).
+- **Finite groups**: $\{1, -1, i, -i\}$ under $\times$ (inverse of $i$ is $-i$); $\{1, \omega, \omega^2\}$ ($\omega^{-1} = \omega^2$); $\{1, -1\}$.
+- **Matrix groups** (real $a, b$, under matrix multiplication): $\left\{\begin{bmatrix} a & 0 \\ 0 & b \end{bmatrix} : ab \neq 0\right\}$; $\left\{\begin{bmatrix} a & b \\ -b & a \end{bmatrix} : a^2 + b^2 \neq 0\right\}$ with inverse $\frac{1}{a^2 + b^2}\begin{bmatrix} a & -b \\ b & a \end{bmatrix}$.
+
+! check | Conditions added
+The identity must work for **every** element: $a * e = e * a = a$ for all $a \in G$. In $\{m/2^n\}$, $m$ is any integer and $n = 0, 1, 2, \dots$ (sums such as $\frac{1}{2} + \frac{3}{4} = \frac{5}{4}$ stay in the set). The two sets of matrices are groups under matrix **multiplication**, with real $a$ and $b$.
+
+| $\times$ | $1$ | $-1$ | $i$ | $-i$ |
+| $1$ | $1$ | $-1$ | $i$ | $-i$ |
+| $-1$ | $-1$ | $1$ | $-i$ | $i$ |
+| $i$ | $i$ | $-i$ | $-1$ | $1$ |
+| $-i$ | $-i$ | $i$ | $1$ | $-1$ |
+
+Cayley table of $\{1, -1, i, -i\}$: each element once in every row and column.
+
+! example | Question G1 — from the notes
+Find the identity and the inverse of $a$ for each operation, and say whether it gives a group: (a) $\mathbb{Q}^+$, $a * b = \frac{ab}{4}$; (b) $\mathbb{Z}$, $a * b = a + b + 1$; (c) $\mathbb{Z}$, $a * b = a + b + 2$; (d) $\mathbb{Q} \setminus \{-1\}$, $a * b = a + b + ab$; (e) $\mathbb{Q} \setminus \{1\}$, $a * b = a + b - ab$.
+**Solution.**
+| Set, operation | Identity $e$ | Inverse of $a$ | Group? |
+| (a) $\mathbb{Q}^+$, $\frac{ab}{4}$ | $\frac{ae}{4} = a \Rightarrow e = 4$ | $\frac{ab}{4} = 4 \Rightarrow b = \frac{16}{a}$ | yes, abelian |
+| (b) $\mathbb{Z}$, $a + b + 1$ | $e = -1$ | $-2 - a$ | yes, abelian |
+| (c) $\mathbb{Z}$, $a + b + 2$ | $e = -2$ | $-4 - a$ | yes, abelian |
+| (d) $\mathbb{Q} \setminus \{-1\}$, $a + b + ab$ | $e = 0$ | $\frac{-a}{1 + a}$ | yes |
+| (e) $\mathbb{Q} \setminus \{1\}$, $a + b - ab$ | $e = 0$ | $\frac{a}{a - 1}$ | yes, abelian |
+
+! trick | Shortcut / time-saver — Identity in 5 seconds
+$a * b = a + b + k$: $e = -k$, $a^{-1} = -a - 2k$. $a * b = \frac{ab}{k}$: $e = k$, $a^{-1} = \frac{k^2}{a}$. $a * b = a + b \pm ab$: $e = 0$; solve $a + b \pm ab = 0$ for $b$.
+
+## What it means
+
+- **Closure** is part of being a binary operation: the answer must stay inside the set. That is why $-$ is not a binary operation on $\mathbb{N}$.
+- **Order of checking**: closure, then the identity (solve $a * e = a$ for $e$ and check that $e$ lies in the set), then inverses (solve $a * b = e$ for $b$ and check it lies in the set for **every** $a$), then associativity.
+- Why the sets in (d) and (e) leave out one number: in (d) the inverse $\frac{-a}{1 + a}$ needs $a \neq -1$, and $a + b + ab = -1$ only if $a = -1$ or $b = -1$, so leaving out $-1$ keeps the operation closed. In (e) the same happens with 1.
+- The operation in (d) is commutative as well, since $a + b + ab = b + a + ba$; so that group is abelian too.
+- In a **Cayley table** of a group each element appears exactly once in every row and every column (a Latin square); the table is symmetric about the diagonal exactly when the group is abelian.
+- Names for weaker structures: a **groupoid** has closure only; a **semigroup** adds associativity; a **monoid** adds an identity; a **group** adds inverses.
+
+! example | Example 1 — testing a group
+Is $\mathbb{R} \setminus \{0\}$ a group under $a * b = \frac{a}{b}$?
+**Solution.** It is closed, but $(a * b) * c = \frac{a}{bc}$ while $a * (b * c) = \frac{ac}{b}$, so the operation is **not associative**: $(8 * 4) * 2 = 1$ but $8 * (4 * 2) = 4$. Not a group.
+
+! example | Example 2 — inverse under a strange operation
+On $\mathbb{Z}$, $a * b = a + b - 5$. Find the identity and the inverse of 7.
+**Solution.** $a + e - 5 = a \Rightarrow e = \boxed{5}$. $7 + b - 5 = 5 \Rightarrow b = \boxed{3}$. (By the shortcut with $k = -5$: $a^{-1} = -a + 10$.)
+
+! example | Example 3 — a group of matrices
+Show that the matrices $\begin{bmatrix} 1 & x \\ 0 & 1 \end{bmatrix}$, $x \in \mathbb{R}$, form a group under multiplication.
+**Solution.** $\begin{bmatrix} 1 & x \\ 0 & 1 \end{bmatrix}\begin{bmatrix} 1 & y \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 1 & x + y \\ 0 & 1 \end{bmatrix}$: closed. Matrix multiplication is associative; the identity is $x = 0$; the inverse of $x$ is $-x$. A group, and abelian, since $x + y = y + x$.
+
+? What makes $(\mathbb{N}, +)$ fail to be a group? :: There is no identity (0 is not in $\mathbb{N}$) and no inverses.
+? Identity and inverse for $a * b = a + b + 3$ on $\mathbb{Z}$? :: $e = -3$ and $a^{-1} = -a - 6$.
+? Is $(\mathbb{Z}, \times)$ a group? :: No: only $1$ and $-1$ have inverses in $\mathbb{Z}$.
+? How do you see from a Cayley table that a group is abelian? :: The table is symmetric about its main diagonal.
+
+! exam | What the exam asks
+- Identity and inverse for operations such as $a + b + k$, $\frac{ab}{k}$, $a + b \pm ab$.
+- Which of several (set, operation) pairs are groups, and which are only semigroups.
+- Cayley tables of small groups such as $\{1, -1, i, -i\}$ and $\{1, \omega, \omega^2\}$.
+
+! recap | One-minute revision
+- Group: closure, associativity, identity in the set, inverse in the set; abelian if commutative.
+- $a + b + k$: $e = -k$, $a^{-1} = -a - 2k$; $\frac{ab}{k}$: $e = k$, $a^{-1} = \frac{k^2}{a}$.
+- $(\mathbb{N}, +)$ semigroup; $(\mathbb{Z}, \times)$ not a group; $(\mathbb{Q}^+, \times)$ a group.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapters 2 and 3
+& I. N. Herstein, Topics in Algebra, chapter 2

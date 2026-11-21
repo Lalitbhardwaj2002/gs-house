@@ -1,0 +1,84 @@
+@en
+# Rank and systems of linear equations
+
+> Whether a system of linear equations has one solution, infinitely many or none is decided by ranks. For a square system with a non-zero determinant, Cramer's rule and the inverse give the unique solution directly.
+
+## Rank and consistency
+
+! note | Rank and systems of equations
+- **Rank** $\rho(A)$ = number of non-zero rows in echelon form = order of the largest non-vanishing minor.
+- $AX = B$ with $\lvert A \rvert \neq 0$: unique solution $X = A^{-1}B$.
+- Augmented matrix $[A : B]$: if $\rho(A) = \rho(A : B) = n$ (unknowns) — unique solution; $\rho(A) = \rho(A : B) < n$ — infinitely many; $\rho(A) \neq \rho(A : B)$ — inconsistent (no solution).
+- Homogeneous $AX = O$: always consistent; non-trivial solution iff $\lvert A \rvert = 0$ (square $A$); number of free parameters $= n - \rho(A)$.
+
+! check | A condition added
+"Non-trivial solution iff $\lvert A \rvert = 0$" is for a **square** $A$ ($n$ equations in $n$ unknowns). In general $AX = O$ has a non-trivial solution iff $\rho(A) < n$, so fewer equations than unknowns always give one: $x + y + z = 0$, $x - y = 0$ is solved by $(1, 1, -2)$.
+
+! addon | Cramer's rule (TGT)
+For $AX = B$ with $\Delta = \lvert A \rvert \neq 0$: $x = \frac{\Delta_1}{\Delta}$, $y = \frac{\Delta_2}{\Delta}$, $z = \frac{\Delta_3}{\Delta}$, where $\Delta_i$ is $\Delta$ with the $i$th column replaced by $B$. If $\Delta = 0$ and some $\Delta_i \neq 0$: no solution.
+
+! example | Question LS1 — standard (Cramer)
+Solve $x + y + z = 6$, $x - y + z = 2$, $2x + y - z = 1$.
+**Solution.**
+$$\begin{aligned} \Delta &= \begin{vmatrix} 1 & 1 & 1 \\ 1 & -1 & 1 \\ 2 & 1 & -1 \end{vmatrix} \\ &= 1(1 - 1) - 1(-1 - 2) \\ &\quad + 1(1 + 2) = 6. \end{aligned}$$
+$$\begin{aligned} \Delta_1 &= \begin{vmatrix} 6 & 1 & 1 \\ 2 & -1 & 1 \\ 1 & 1 & -1 \end{vmatrix} \\ &= 6(0) - 1(-3) + 1(3) = 6, \end{aligned}$$
+$$\Delta_2 = \begin{vmatrix} 1 & 6 & 1 \\ 1 & 2 & 1 \\ 2 & 1 & -1 \end{vmatrix} = 12,$$
+$$\Delta_3 = \begin{vmatrix} 1 & 1 & 6 \\ 1 & -1 & 2 \\ 2 & 1 & 1 \end{vmatrix} = 18.$$
+$x = \frac{6}{6} = 1$, $y = \frac{12}{6} = 2$, $z = \frac{18}{6} = 3$. Check in the third equation: $2 + 2 - 3 = 1$ ✓.
+
+! example | Question LS2 — standard (rank test)
+For what $\lambda$ does $x + y + z = 1$, $x + 2y + 3z = 2$, $x + 3y + 5z = \lambda$ have a solution?
+**Solution.** ($R_2 \to R_2 - R_1$, $R_3 \to R_3 - R_1$, then $R_3 \to R_3 - 2R_2$.)
+$$[A : B] \to \begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 2 & 4 & \lambda - 1 \end{bmatrix}$$
+$$\to \begin{bmatrix} 1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 1 \\ 0 & 0 & 0 & \lambda - 3 \end{bmatrix}.$$
+$\rho(A) = 2$; consistent iff $\lambda = 3$ (then infinitely many solutions).
+
+! check | When $\Delta = 0$ and every $\Delta_i = 0$
+Cramer's rule then decides nothing: the system may have infinitely many solutions **or none**. For example $x + y + z = 1$, $x + y + z = 2$, $x + y + z = 3$ has $\Delta = \Delta_1 = \Delta_2 = \Delta_3 = 0$ but no solution. Use ranks in this case.
+
+## What it means
+
+- **Echelon form**: use row operations until each non-zero row starts with more zeros than the row above it, and any zero rows are at the bottom. The number of non-zero rows is the rank. Row operations never change the rank.
+- $\rho(A) \leq \min(m, n)$ for an $m \times n$ matrix; $\rho(A) = 0$ only for the zero matrix; an $n \times n$ matrix has rank $n$ exactly when $\lvert A \rvert \neq 0$.
+- **Reading the last row**: a row $[0 \ 0 \ 0 \mid k]$ with $k \neq 0$ means $0 = k$, so no solution; with $k = 0$ the equation disappears and a free variable appears.
+- For two equations in two unknowns, unique, none and infinitely many solutions correspond to lines that meet in a point, are parallel, or coincide.
+- In LS2, with $\lambda = 3$, put $z = t$: then $y = 1 - 2t$ and $x = 1 - y - z = t$, so the solutions are $(t, 1 - 2t, t)$, one for each value of $t$.
+- **Three ways for a $3 \times 3$ system with $\Delta \neq 0$**: Cramer's rule, $X = A^{-1}B$ (see the topic on the inverse), or elimination; all give the same unique solution.
+
+! example | Example 1 — the rank of a matrix
+Find the rank of $\begin{bmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 0 & 1 \end{bmatrix}$.
+**Solution.** $R_2 \to R_2 - 2R_1$ gives a zero row; $R_3 \to R_3 - R_1$ gives $(0, -2, -2)$. Two non-zero rows remain, so the rank is $\boxed{2}$. (The determinant is 0, since row 2 is twice row 1, so the rank is less than 3.)
+
+! example | Example 2 — a homogeneous system
+For which $k$ has $x + y + z = 0$, $x + 2y + kz = 0$, $x + 3y + 4z = 0$ a non-trivial solution?
+**Solution.**
+$$\begin{aligned} &\begin{vmatrix} 1 & 1 & 1 \\ 1 & 2 & k \\ 1 & 3 & 4 \end{vmatrix} \\ &= 1(8 - 3k) - 1(4 - k) \\ &\quad + 1(3 - 2) = 5 - 2k, \end{aligned}$$
+which is $0$ for $k = \boxed{\frac{5}{2}}$.
+
+! example | Example 3 — Cramer's rule for two unknowns
+Solve $3x + 2y = 7$, $x - y = -1$.
+**Solution.** $\Delta = -3 - 2 = -5$, $\Delta_1 = -7 + 2 = -5$, $\Delta_2 = -3 - 7 = -10$. So $x = \frac{-5}{-5} = 1$ and $y = \frac{-10}{-5} = 2$: $\boxed{(1, 2)}$.
+
+! example | Example 4 — unique, none or infinitely many
+For which $\lambda$, $\mu$ does $x + y + z = 6$, $x + 2y + 3z = 10$, $x + 2y + \lambda z = \mu$ have (i) a unique solution, (ii) no solution, (iii) infinitely many solutions?
+**Solution.** On $[A : B]$ do $R_3 \to R_3 - R_2$, then $R_2 \to R_2 - R_1$:
+$$\begin{bmatrix} 1 & 1 & 1 & 6 \\ 0 & 1 & 2 & 4 \\ 0 & 0 & \lambda - 3 & \mu - 10 \end{bmatrix}.$$
+(i) $\boxed{\lambda \neq 3}$ (any $\mu$): $\rho(A) = \rho(A : B) = 3$. (ii) $\boxed{\lambda = 3, \ \mu \neq 10}$: $\rho(A) = 2$ but $\rho(A : B) = 3$. (iii) $\boxed{\lambda = 3, \ \mu = 10}$: both ranks are $2 < 3$, one free unknown.
+
+? When is $AX = B$ inconsistent? :: When $\rho(A) \neq \rho(A : B)$.
+? When does $AX = O$ (square $A$) have a non-trivial solution? :: Exactly when $\lvert A \rvert = 0$.
+? What does Cramer's rule give for $x$? :: $x = \frac{\Delta_1}{\Delta}$, $\Delta_1$ being $\Delta$ with the first column replaced by the constants.
+? A $3 \times 3$ matrix has $\lvert A \rvert = 0$ and is not zero. What can its rank be? :: 1 or 2.
+
+! exam | What the exam asks
+- Values of a parameter for which a system has a unique solution, infinitely many or none.
+- Solving three equations by Cramer's rule or by the inverse.
+- The rank of a given matrix; the number of free parameters of a homogeneous system.
+
+! recap | One-minute revision
+- $\rho(A) = \rho(A : B) = n$: unique; $= r < n$: infinitely many ($n - r$ free); $\rho(A) \neq \rho(A : B)$: none.
+- Cramer: $x_i = \frac{\Delta_i}{\Delta}$ when $\Delta \neq 0$; $\Delta = 0$ with some $\Delta_i \neq 0$: none.
+- Homogeneous: always $X = O$; more solutions iff $\rho(A) < n$, that is iff $\lvert A \rvert = 0$ for square $A$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 2 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 4: Determinants (applications to linear equations) | https://ncert.nic.in/textbook.php?lemh1=4-6

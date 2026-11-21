@@ -1,0 +1,67 @@
+@en
+# Sequences
+
+> A sequence converges to $l$ when its terms eventually stay as close to $l$ as we please. The exam asks for limits of standard sequences, for the link between bounded, monotone and convergent sequences, and for Cauchy's criterion and Cauchy's two limit theorems.
+
+## Convergence
+
+! addon | Sequences
+^ data/net/maths/fig/sequence-band.svg | after the index $N$ all terms lie in the band $(l - \varepsilon, l + \varepsilon)$
+- $a_n \to l$ if for every $\varepsilon > 0$ there is $N$ with $\lvert a_n - l \rvert < \varepsilon$ for all $n \geq N$: eventually all terms lie in the band $(l - \varepsilon, l + \varepsilon)$.
+- A limit is unique; convergent $\Rightarrow$ bounded (not conversely: $(-1)^n$).
+- **Monotone and bounded $\Rightarrow$ convergent**; e.g. $\left(1 + \frac{1}{n}\right)^n \uparrow e$.
+- **Cauchy sequence**: for every $\varepsilon > 0$ there is $N$ with $\lvert a_m - a_n \rvert < \varepsilon$ for $m, n \geq N$. In $\mathbb{R}$, convergent $\iff$ Cauchy.
+- **Cauchy's first theorem**: $a_n \to l \Rightarrow \frac{a_1 + \cdots + a_n}{n} \to l$. Second: $a_n > 0$, $a_n \to l \Rightarrow (a_1 \cdots a_n)^{1/n} \to l$; hence $\lim a_n^{1/n} = \lim \frac{a_{n+1}}{a_n}$ when the latter exists.
+- Standard limits: $n^{1/n} \to 1$, $\frac{\log n}{n} \to 0$, $x^n \to 0$ ($\lvert x \rvert < 1$), $\frac{x^n}{n!} \to 0$, $\left(1 + \frac{x}{n}\right)^n \to e^x$.
+
+! example | Question SQ1 — standard
+Find $\lim_{n \to \infty} \frac{(n!)^{1/n}}{n}$.
+**Solution.** Let $a_n = \frac{n!}{n^n}$; then $\frac{(n!)^{1/n}}{n} = a_n^{1/n}$ and $\frac{a_{n+1}}{a_n} = \left(\frac{n}{n+1}\right)^n \to \frac{1}{e}$. By Cauchy's second theorem the limit is $\boxed{\frac{1}{e}}$.
+
+## What it means
+
+- **Divergent** sequences either tend to $\pm\infty$ (like $n$ or $-n^2$) or **oscillate** (like $(-1)^n$, finitely, or $(-1)^n n$, infinitely).
+- **Monotone**: increasing ($a_{n+1} \geq a_n$) or decreasing. An increasing sequence bounded above converges to its supremum; one not bounded above tends to $+\infty$.
+- **Subsequences**: if $a_n \to l$, every subsequence tends to $l$. So two subsequences with different limits prove divergence: for $(-1)^n$ the even terms tend to 1 and the odd terms to $-1$.
+- **Algebra of limits**: limits of sums, products and quotients (non-zero denominator) are the sums, products and quotients of the limits. **Sandwich**: if $a_n \leq b_n \leq c_n$ and $a_n, c_n \to l$, then $b_n \to l$.
+- **Cauchy's criterion** tests convergence without knowing the limit. It works because $\mathbb{R}$ is complete; in $\mathbb{Q}$ a Cauchy sequence (decimals of $\sqrt{2}$) need not converge.
+- **Limit points of a sequence**: the limits of its subsequences. For a bounded sequence they exist (Bolzano–Weierstrass); the largest is $\limsup$ and the smallest $\liminf$, and the sequence converges exactly when these two are equal. For $(-1)^n$: $\limsup = 1$, $\liminf = -1$.
+
+! example | Example 1 — a monotone bounded sequence
+$a_1 = \sqrt{2}$, $a_{n+1} = \sqrt{2 + a_n}$. Find $\lim a_n$.
+**Solution.** By induction $a_n < 2$ and $a_{n+1} > a_n$, so the sequence is increasing and bounded, hence convergent. If $a_n \to l$, then $l = \sqrt{2 + l}$, so $l^2 - l - 2 = 0$ and $l = 2$ (not $-1$, since $a_n > 0$). Limit $\boxed{2}$.
+
+! example | Example 2 — Cauchy's first theorem
+Find $\lim_{n \to \infty} \frac{1}{n}\left(1 + \frac{1}{2} + \cdots + \frac{1}{n}\right)$.
+**Solution.** $\frac{1}{n} \to 0$, so by Cauchy's first theorem the averages tend to $\boxed{0}$.
+
+! example | Example 3 — the sandwich rule
+Find $\lim_{n \to \infty} \frac{\sin n}{n}$.
+**Solution.** $-\frac{1}{n} \leq \frac{\sin n}{n} \leq \frac{1}{n}$, and both bounds tend to 0. So the limit is $\boxed{0}$.
+
+! example | Example 4 — a standard limit
+Find $\lim_{n \to \infty} \left(1 + \frac{3}{n}\right)^{2n}$.
+**Solution.** $\left[\left(1 + \frac{3}{n}\right)^n\right]^2 \to (e^3)^2 = \boxed{e^6}$.
+
+! example | Example 5 — Cauchy's criterion
+Show that $a_n = 1 + \frac{1}{2} + \cdots + \frac{1}{n}$ does not converge.
+**Solution.** $a_{2n} - a_n = \frac{1}{n + 1} + \cdots + \frac{1}{2n}$ has $n$ terms, each at least $\frac{1}{2n}$, so $a_{2n} - a_n \geq \frac{1}{2}$ for every $n$. With $\varepsilon = \frac{1}{2}$ no $N$ works, so $(a_n)$ is not a Cauchy sequence and, by Cauchy's criterion, it **diverges** (to $+\infty$, being increasing).
+
+? Is every bounded sequence convergent? :: No: $(-1)^n$ is bounded but oscillates. A bounded **monotone** sequence converges.
+? When does a real sequence converge, by Cauchy's criterion? :: Exactly when it is a Cauchy sequence.
+? What is $\lim n^{1/n}$? :: 1.
+? What does Cauchy's second theorem give for positive $a_n$? :: $\lim a_n^{1/n} = \lim \frac{a_{n+1}}{a_n}$ whenever the second limit exists.
+
+! exam | What the exam asks
+- Limits of standard sequences and of sequences given by a recurrence.
+- True or false: bounded, monotone, convergent, Cauchy; subsequences and limit points.
+- Limits found with Cauchy's first and second theorems.
+
+! recap | One-minute revision
+- Convergent $\Rightarrow$ bounded; monotone + bounded $\Rightarrow$ convergent; Cauchy $\iff$ convergent in $\mathbb{R}$.
+- Cauchy I: averages keep the limit; Cauchy II: $\lim a_n^{1/n} = \lim \frac{a_{n+1}}{a_n}$.
+- $n^{1/n} \to 1$, $\frac{x^n}{n!} \to 0$, $\left(1 + \frac{x}{n}\right)^n \to e^x$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 5 (the full PDF is linked on the subject page)
+& S. C. Malik and Savita Arora, Mathematical Analysis, chapter 3
+& R. G. Bartle and D. R. Sherbert, Introduction to Real Analysis, chapter 3

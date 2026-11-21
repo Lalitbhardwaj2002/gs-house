@@ -1,0 +1,76 @@
+@en
+# Inverse of a matrix
+
+> A square matrix has an inverse exactly when its determinant is not zero. The inverse is found by the adjoint formula or by row operations, and it is the key to solving a system of linear equations in matrix form.
+
+## The inverse
+
+! note | Inverse of a matrix
+- $B$ is the inverse of $A$ if $AB = BA = I$. The inverse is unique: if $B, C$ are both inverses, $B = BI = B(AC) = (BA)C = C$.
+- $(AB)^{-1} = B^{-1}A^{-1}$; $(A')^{-1} = (A^{-1})'$ (for invertible $A$, $B$ of the same order).
+- **By elementary row operations**: write $A = IA$, apply row operations to $A$ on the left and to $I$ on the right until $I = BA$; then $A^{-1} = B$.
+
+! check | A condition added
+$(AB)^{-1} = B^{-1}A^{-1}$ is for invertible square matrices $A$, $B$ of the same order, and $(A')^{-1} = (A^{-1})'$ needs $A$ invertible. The order reverses because $(AB)(B^{-1}A^{-1}) = A(BB^{-1})A^{-1} = AA^{-1} = I$.
+
+! example | Question I1 — from the notes
+Find the inverse of $A = \begin{bmatrix} 1 & 2 \\ 2 & -1 \end{bmatrix}$ by elementary row operations.
+**Solution.**
+$$\begin{bmatrix} 1 & 2 \\ 2 & -1 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} A.$$
+$R_2 \to R_2 - 2R_1$:
+$$\begin{bmatrix} 1 & 2 \\ 0 & -5 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ -2 & 1 \end{bmatrix} A.$$
+$R_2 \to -\tfrac{1}{5}R_2$:
+$$\begin{bmatrix} 1 & 2 \\ 0 & 1 \end{bmatrix} = \begin{bmatrix} 1 & 0 \\ \frac{2}{5} & -\frac{1}{5} \end{bmatrix} A.$$
+$R_1 \to R_1 - 2R_2$:
+$$I = \begin{bmatrix} \frac{1}{5} & \frac{2}{5} \\ \frac{2}{5} & -\frac{1}{5} \end{bmatrix} A.$$
+So $A^{-1} = \boxed{\begin{bmatrix} \frac{1}{5} & \frac{2}{5} \\ \frac{2}{5} & -\frac{1}{5} \end{bmatrix}}$.
+
+! trick | Shortcut / time-saver — $2 \times 2$ inverse in one line
+$$\begin{aligned} &\begin{bmatrix} a & b \\ c & d \end{bmatrix}^{-1} \\ &= \frac{1}{ad - bc} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}: \end{aligned}$$
+swap the diagonal, change the signs of the other two, divide by the determinant. For I1: $\frac{1}{-5} \begin{bmatrix} -1 & -2 \\ -2 & 1 \end{bmatrix}$ ✓.
+
+## What it means
+
+- **When does $A^{-1}$ exist?** Exactly when $\lvert A \rvert \neq 0$; such a matrix is called **non-singular** (or invertible). If $\lvert A \rvert = 0$ the matrix is **singular** and has no inverse: $\begin{bmatrix} 2 & 4 \\ 1 & 2 \end{bmatrix}$ has determinant $4 - 4 = 0$. Only square matrices can have inverses.
+- Why the determinant decides: if $AB = I$ then $\lvert A \rvert \lvert B \rvert = \lvert I \rvert = 1$, so $\lvert A \rvert \neq 0$; conversely, if $\lvert A \rvert \neq 0$ the adjoint formula below gives the inverse.
+- **Adjoint formula**: $A^{-1} = \frac{1}{\lvert A \rvert}\,\text{adj}\,A$, where $\text{adj}\,A$ is the transpose of the matrix of cofactors (see the topic on determinants).
+- Further rules: $(A^{-1})^{-1} = A$, $(kA)^{-1} = \frac{1}{k}A^{-1}$ for $k \neq 0$, $\lvert A^{-1} \rvert = \frac{1}{\lvert A \rvert}$, $(A^n)^{-1} = (A^{-1})^n$.
+- If $AB = I$ for square matrices, then automatically $BA = I$ as well.
+- **Solving equations**: the system $AX = B$ with $\lvert A \rvert \neq 0$ has the unique solution $X = A^{-1}B$. This is the method the TGT syllabus names for three equations in three unknowns.
+- Row operations for an inverse must be **all row** operations (or all column operations); mixing them gives a wrong answer.
+
+! example | Example 1 — a $3 \times 3$ inverse by the adjoint
+Find the inverse of $A = \begin{bmatrix} 1 & 0 & 1 \\ 0 & 2 & 1 \\ 1 & 1 & 1 \end{bmatrix}$.
+**Solution.** $\lvert A \rvert = 1(2 - 1) - 0 + 1(0 - 2) = -1$. The cofactors are $C_{11} = 1$, $C_{12} = 1$, $C_{13} = -2$; $C_{21} = 1$, $C_{22} = 0$, $C_{23} = -1$; $C_{31} = -2$, $C_{32} = -1$, $C_{33} = 2$. So
+$$\text{adj}\,A = \begin{bmatrix} 1 & 1 & -2 \\ 1 & 0 & -1 \\ -2 & -1 & 2 \end{bmatrix},$$
+$$\begin{aligned} A^{-1} &= \frac{1}{-1}\,\text{adj}\,A \\ &= \begin{bmatrix} -1 & -1 & 2 \\ -1 & 0 & 1 \\ 2 & 1 & -2 \end{bmatrix}. \end{aligned}$$
+Check one entry of $AA^{-1}$: row 1 of $A$ times column 1 of $A^{-1}$ is $-1 + 0 + 2 = 1$ ✓.
+
+! example | Example 2 — solving three equations with the inverse
+Solve $x + z = 2$, $2y + z = 3$, $x + y + z = 3$ using the matrix of Example 1.
+**Solution.** The system is $AX = B$ with $B = (2, 3, 3)'$. Then
+$$\begin{aligned} X &= A^{-1}B \\ &= \begin{bmatrix} -1 & -1 & 2 \\ -1 & 0 & 1 \\ 2 & 1 & -2 \end{bmatrix} \begin{bmatrix} 2 \\ 3 \\ 3 \end{bmatrix} \\ &= \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}, \end{aligned}$$
+so $\boxed{x = y = z = 1}$. Check: $1 + 1 = 2$, $2 + 1 = 3$, $1 + 1 + 1 = 3$ ✓.
+
+! example | Example 3 — an inverse from an equation
+If $A^2 - 3A + 2I = O$, express $A^{-1}$ in terms of $A$.
+**Solution.** $A^2 - 3A = -2I$, so $A(A - 3I) = -2I$ and $A \cdot \left(-\frac{1}{2}(A - 3I)\right) = I$. Hence $A^{-1} = \boxed{\frac{1}{2}(3I - A)}$.
+
+? When does a square matrix have an inverse? :: Exactly when its determinant is non-zero.
+? What is $(AB)^{-1}$? :: $B^{-1}A^{-1}$, for invertible $A$ and $B$.
+? Inverse of $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$? :: $\frac{1}{ad - bc}\begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$, when $ad - bc \neq 0$.
+? What is $\lvert A^{-1} \rvert$? :: $\frac{1}{\lvert A \rvert}$.
+? Is $\begin{bmatrix} 2 & 4 \\ 1 & 2 \end{bmatrix}$ singular? :: Yes: its determinant is $4 - 4 = 0$, so it has no inverse.
+
+! exam | What the exam asks
+- Singular and non-singular matrices; the inverse of a $2 \times 2$ or $3 \times 3$ matrix, by the adjoint or by row operations.
+- Rules such as $(AB)^{-1} = B^{-1}A^{-1}$ and $\lvert A^{-1} \rvert = \frac{1}{\lvert A \rvert}$.
+- Solving a system $AX = B$ by $X = A^{-1}B$; finding $A^{-1}$ from a matrix equation.
+
+! recap | One-minute revision
+- $A^{-1}$ exists $\iff \lvert A \rvert \neq 0$; $A^{-1} = \frac{\text{adj}\,A}{\lvert A \rvert}$.
+- $2 \times 2$: swap the diagonal, change the other signs, divide by $ad - bc$.
+- $(AB)^{-1} = B^{-1}A^{-1}$, $(A')^{-1} = (A^{-1})'$; $AX = B \Rightarrow X = A^{-1}B$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 2 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapters 3 and 4: Matrices; Determinants | https://ncert.nic.in/textbook.php?lemh1=3-6

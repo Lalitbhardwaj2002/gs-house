@@ -1,0 +1,75 @@
+@en
+# Rings, integral domains, fields, ideals
+
+> A ring has two operations, addition and multiplication, linked by the distributive laws. Integral domains are rings without zero divisors, and fields are rings in which every non-zero element can be divided by. Ideals play for rings the part that normal subgroups play for groups.
+
+## Rings and fields
+
+! note | Rings, integral domains, fields, ideals
+- **Ring** $(R, +, \cdot)$: $(R, +)$ abelian group; $(R, \cdot)$ closed and associative; both distributive laws.
+- Commutative ring; ring with unity; **zero divisors**: $a \neq 0$, $b \neq 0$ with $ab = 0$.
+- **Integral domain**: commutative ring with unity ($1 \neq 0$) and no zero divisors. **Field**: commutative ring with unity ($1 \neq 0$) in which every non-zero element has an inverse. **Skew field**: ring with unity ($1 \neq 0$) where every non-zero element is invertible (not necessarily commutative).
+- $a0 = 0a = 0$; $a(-b) = (-a)b = -(ab)$; $(-a)(-b) = ab$.
+- No zero divisors $\iff$ cancellation laws hold ($ab = ac$ with $a \neq 0$ gives $b = c$). Every field is an integral domain; every *finite* integral domain is a field.
+- **Subring** test: a non-empty $S \subseteq R$ is a subring if $a - b \in S$ and $ab \in S$ for all $a, b \in S$. **Ideal**: subgroup $S$ of $(R, +)$ with $rs, sr \in S$ for all $r \in R$, $s \in S$. $m\mathbb{Z}$ is an ideal of $\mathbb{Z}$; $R$ and $\{0\}$ are the trivial ideals. A field has no ideals other than $\{0\}$ and itself.
+
+! check | Conditions added
+Integral domains, fields and skew fields need $1 \neq 0$; otherwise the one-element ring $\{0\}$ would count as a field (it has no non-zero elements to test), and it has characteristic 1, neither 0 nor a prime. Cancellation is of a **non-zero** factor. The subring test is for a **non-empty** $S$, with $a, b$ any two elements of $S$.
+
+^ data/net/maths/fig/rings-fields.svg | fields inside integral domains inside commutative rings with unity ($p$ prime)
+
+! example | Question RG1 — standard
+Is $\mathbb{Z}_6$ an integral domain? Is $\mathbb{Z}_7$ a field?
+**Solution.** In $\mathbb{Z}_6$, $2 \cdot 3 = 0$ with $2, 3 \neq 0$: zero divisors, so **not** an integral domain. $7$ is prime, so $\mathbb{Z}_7$ is a finite integral domain, hence a **field**.
+
+! addon | $\mathbb{Z}_n$, characteristic and ideals
+$\mathbb{Z}_n$ ($n \geq 2$) is a field $\iff$ integral domain $\iff$ $n$ prime. Zero divisors of $\mathbb{Z}_n$: non-zero $a$ with $\gcd(a, n) > 1$. The characteristic of an integral domain is $0$ or prime. In a commutative ring $R$ with unity: maximal ideal $M$: $R/M$ is a field; prime ideal $P$: $R/P$ is an integral domain.
+
+! check | Conditions added
+The $\mathbb{Z}_n$ facts need $n \geq 2$ ($\mathbb{Z}_1 = \{0\}$ is not a field). The two ideal facts are for a **commutative ring with unity** and an ideal other than $R$, and both go both ways: $M$ is maximal $\iff$ $R/M$ is a field; $P$ is prime $\iff$ $R/P$ is an integral domain.
+
+## What it means
+
+- **Subring test in use**: $2\mathbb{Z}$ is a subring of $\mathbb{Z}$, since $2a - 2b = 2(a - b)$ and $(2a)(2b) = 2(2ab)$ are even; it is even an ideal. The odd integers are not a subring: $3 - 1 = 2$ is not odd.
+- **Examples**: $\mathbb{Z}$ is an integral domain but not a field (2 has no inverse); $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{Z}_p$ are fields; $2\mathbb{Z}$ is a ring without unity; the $2 \times 2$ real matrices form a ring with unity that is not commutative and has zero divisors; the quaternions form a skew field.
+- **Units** are the elements with a multiplicative inverse. In $\mathbb{Z}_n$ the units are the $a$ with $\gcd(a, n) = 1$, and every non-zero non-unit is a zero divisor.
+- The **characteristic** of a ring with unity is the least $n \geq 1$ with $n \cdot 1 = 0$, or 0 if there is none: $\mathbb{Z}_n$ has characteristic $n$; $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$ have characteristic 0.
+- The sign rules in the note come from the distributive law: $a0 = a(0 + 0) = a0 + a0$, so $a0 = 0$; then $ab + a(-b) = a(b - b) = a0 = 0$, so $a(-b) = -(ab)$.
+- **Ideals of $\mathbb{Z}$** are exactly the $n\mathbb{Z}$. For $n \geq 2$, the ideal $n\mathbb{Z}$ is maximal, and also prime, exactly when $n$ is prime, which matches $\mathbb{Z}/n\mathbb{Z} = \mathbb{Z}_n$ being a field exactly for prime $n$.
+- For a commutative ring with unity, every maximal ideal is prime (a field is an integral domain), but not conversely: $\{0\}$ is a prime ideal of $\mathbb{Z}$ that is not maximal.
+
+! example | Example 1 — zero divisors of $\mathbb{Z}_{12}$
+List the zero divisors and the units of $\mathbb{Z}_{12}$.
+**Solution.** Units: $\gcd(a, 12) = 1$, that is $\boxed{1, 5, 7, 11}$. Zero divisors: the other non-zero elements, $\boxed{2, 3, 4, 6, 8, 9, 10}$ (e.g. $3 \cdot 4 = 0$, $2 \cdot 6 = 0$).
+
+! example | Example 2 — a subring that is not an ideal
+Is $\mathbb{Z}$ an ideal of $\mathbb{Q}$?
+**Solution.** $\mathbb{Z}$ is a subring of $\mathbb{Q}$, but $\frac{1}{2} \cdot 1 = \frac{1}{2} \notin \mathbb{Z}$, so it is **not** an ideal. (Indeed a field has only the trivial ideals.)
+
+! example | Example 3 — the characteristic
+Find the characteristic of $\mathbb{Z}_3 \times \mathbb{Z}_4$.
+**Solution.** The unity is $(1, 1)$, and $n(1, 1) = (0, 0)$ needs $3 \mid n$ and $4 \mid n$. The least such $n$ is $\boxed{12}$.
+
+! example | Example 4 — a field between $\mathbb{Q}$ and $\mathbb{R}$
+Show that $\mathbb{Q}(\sqrt{2}) = \{a + b\sqrt{2} : a, b \in \mathbb{Q}\}$ is a field.
+**Solution.** Differences stay in the set, and $(a + b\sqrt{2})(c + d\sqrt{2}) = (ac + 2bd) + (ad + bc)\sqrt{2}$, so it is a subring of $\mathbb{R}$ containing 1: commutative, with no zero divisors.
+If $a + b\sqrt{2} \neq 0$ then $a^2 - 2b^2 \neq 0$, because $\sqrt{2}$ is irrational. So the inverse $\frac{1}{a + b\sqrt{2}} = \frac{a - b\sqrt{2}}{a^2 - 2b^2}$ again has rational coefficients, and the set is a **field**.
+By contrast the Gaussian integers $\mathbb{Z}[i] = \{a + bi : a, b \in \mathbb{Z}\}$ form an integral domain that is **not** a field: $\frac{1}{2}$ is not in it, so 2 has no inverse.
+
+? Is every integral domain a field? :: No ($\mathbb{Z}$ is not), but every finite integral domain is a field.
+? When is $\mathbb{Z}_n$ a field? :: Exactly when $n$ is prime.
+? What are the zero divisors of $\mathbb{Z}_n$? :: The non-zero $a$ with $\gcd(a, n) > 1$.
+? What can the characteristic of an integral domain be? :: 0 or a prime.
+
+! exam | What the exam asks
+- Whether a given ring is commutative, has unity, has zero divisors, is an integral domain or a field.
+- Units and zero divisors of $\mathbb{Z}_n$; the characteristic of a ring.
+- Ideals of $\mathbb{Z}$ and of fields; maximal and prime ideals.
+
+! recap | One-minute revision
+- Field $\subset$ integral domain $\subset$ commutative ring with unity; finite integral domain $\Rightarrow$ field.
+- $\mathbb{Z}_n$: field $\iff$ integral domain $\iff$ $n$ prime.
+- $R$ commutative with unity: $R/M$ field $\iff M$ maximal; $R/P$ integral domain $\iff P$ prime.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 4 (the full PDF is linked on the subject page)
+& Joseph A. Gallian, Contemporary Abstract Algebra, chapters 12 to 14

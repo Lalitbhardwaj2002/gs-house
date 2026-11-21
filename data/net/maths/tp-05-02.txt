@@ -1,0 +1,90 @@
+@en
+# Countability and cardinal numbers
+
+> Two sets have the same size when their elements can be paired off exactly. Measured this way, the integers and the rationals are no larger than the natural numbers, while the real numbers are strictly larger. Questions ask which sets are countable.
+
+## Countability
+
+! note | Countability and cardinal numbers
+- $A \sim B$ (**equipotent**) if there is a bijection $A \to B$. $X$ is **finite** if $X \sim \{1, \dots, n\}$; otherwise transfinite. **Countable**: finite or $\sim \mathbb{N}$.
+- Axiom I: an onto map $A \to B$ gives $\lvert A \rvert \geq \lvert B \rvert$. Axiom II: a one–one map $A \to B$ gives $\lvert A \rvert \leq \lvert B \rvert$.
+- **Cantor's theorem**: there is no onto map $X \to P(X)$, so $\lvert X \rvert < \lvert P(X) \rvert$. $\lvert \mathbb{N} \rvert = \aleph_0$, $\lvert P(\mathbb{N}) \rvert = c = 2^{\aleph_0}$.
+- Every transfinite set contains a countably infinite subset ($\aleph_0$ is the smallest transfinite cardinal). Removing a finite set from a transfinite set, or a countable set from an uncountable one, does not change the cardinality ($\mathbb{R} \sim \mathbb{R} - \mathbb{Q}$).
+- Any two intervals (with more than one point) are equivalent: $[a, b] \sim [c, d]$ via $f(x) = \frac{d - c}{b - a}(x - a) + c$; $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right) \sim \mathbb{R}$ via $\tan x$. So every interval has cardinality $c$.
+- **Continuum hypothesis**: there is no cardinal strictly between $\aleph_0$ and $2^{\aleph_0}$.
+- $(0, 1)$ is uncountable (Cantor's diagonal argument): list any sequence of decimals and build a number that differs from the $n$th one in its $n$th digit.
+
+! check | Conditions added
+"Contains a countable subset" is now "countably infinite": the empty set is a countable subset of every set. Removing a finite set keeps the cardinality only for an infinite set ($\{1, 2\}$ minus $\{1\}$ is smaller). The intervals need $a < b$ and $c < d$: the one-point interval $[a, a]$ is not equivalent to $[0, 1]$. Axiom I and the countably infinite subset use the **axiom of choice** (to pick one pre-image of each point, or the terms of a sequence), which standard mathematics assumes.
+
+^ data/net/maths/fig/rationals-listing.svg | Cantor's diagonal listing of the positive rationals: every $\frac{p}{q}$ is reached, so $\mathbb{Q}$ is countable
+
+! note | Tools for countability
+- T1 A one–one map into a countable set $\Rightarrow$ countable. T2: every subset of a countable set is countable.
+- T3 $\mathbb{N} \times \mathbb{N}$ is countable ($f(m, n) = 2^m 3^n$). T4: $A, B$ countably infinite $\Rightarrow A \times B$ countably infinite.
+- T5 Finite products of countable sets are countable; $\{0, 1\}^{\mathbb{N}}$ (infinite product) is uncountable ($= c$); the set of all *finite* 0–1 strings is countable.
+- T6 $\mathbb{Z}$, $\mathbb{Z} \times \mathbb{Z}$, $\mathbb{Q}$ are countable. T7: a countable union of countable sets is countable.
+Countable: $\mathbb{Q}$, $[0, 1] \cap \mathbb{Q}$, polynomials with rational coefficients, real algebraic numbers, finite subsets of $\mathbb{N}$, any family of disjoint open intervals, lines through two rational points. Uncountable: $\mathbb{R}$, every interval, irrationals, transcendental numbers, $P(\mathbb{N})$, the infinite subsets of $\mathbb{N}$, the Cantor set.
+
+! check | Two points made precise
+T7 uses the **axiom of choice**, to pick one listing of each of the countably many sets; then the union is listed like $\mathbb{N} \times \mathbb{N}$. The disjoint open intervals must be non-empty: each then contains a rational, and disjoint intervals contain different rationals, so the family maps one–one into $\mathbb{Q}$. "Every interval" in the uncountable list means an interval with more than one point.
+
+! note | Cantor set and cardinal arithmetic
+- **Cantor set** $C$: from $[0, 1]$ remove the open middle third, then the middle thirds of what remains, and so on. $x \in C$ iff it has a ternary expansion using only 0 and 2, so $C \sim \{0, 2\}^{\mathbb{N}}$ is uncountable, but its length is $1 - \sum_{r \geq 1} \frac{2^{r-1}}{3^r} = 0$.
+- $\lvert A \times B \rvert = \alpha\beta$, $\lvert B^A \rvert = \beta^\alpha$, $(\alpha^\beta)^\gamma = \alpha^{\beta\gamma}$; for transfinite cardinals $\alpha + \beta = \alpha\beta = \max(\alpha, \beta)$; $\aleph_0^{\aleph_0} = c$; $c^c = 2^c$.
+- $(0, 1) \sim (0, 1) \times (0, 1) \times (0, 1)$ (interleave decimals), so $\mathbb{R} \sim \mathbb{R}^2 \sim \mathbb{R}^3$.
+- $\mathbb{R}$ as a vector space over $\mathbb{Q}$ is infinite dimensional ($1, \pi, \pi^2, \dots$ are independent since $\pi$ is transcendental).
+
+! check | The axiom of choice again
+$\alpha + \beta = \alpha\beta = \max(\alpha, \beta)$ for arbitrary transfinite cardinals is proved with the axiom of choice. For the cardinals met in the exam ($\aleph_0$ and $c$) it can be checked directly: $\aleph_0 + c = \aleph_0 c = c \cdot c = c$.
+
+^ data/net/maths/fig/cantor-set.svg | Cantor set: remove middle thirds again and again
+
+! example | Question CT1 — standard
+Which are countable: (a) the set of algebraic numbers, (b) the set of irrational numbers, (c) the set of all finite subsets of $\mathbb{N}$, (d) $P(\mathbb{N})$?
+**Solution.** (a) countable (countably many rational polynomials, each with finitely many roots); (b) uncountable ($\mathbb{R} = \mathbb{Q} \cup \mathbb{Q}^c$ with $\mathbb{Q}$ countable); (c) countable (union over $n$ of finite subsets of $\{1, \dots, n\}$); (d) uncountable (Cantor's theorem).
+
+! trick | Shortcut / time-saver — Countable or not
+Countable: anything you can *list* using finitely many integers each time (finite strings, rational polynomials, algebraic numbers). Uncountable: anything needing an *infinite* sequence of free choices (infinite 0–1 sequences, subsets of $\mathbb{N}$, intervals).
+
+## What it means
+
+- **Countably infinite** means the elements can be listed as a first, second, third, … with every element appearing. $\mathbb{Z}$ is listed as $0, 1, -1, 2, -2, \dots$; the picture above lists the positive rationals (skipping repeats such as $\frac{2}{2}$). Some books use "countable" for countably infinite only (also called **denumerable**); here countable includes the finite sets.
+- **Schröder–Bernstein theorem**: if there are one–one maps $A \to B$ and $B \to A$, then $A \sim B$. So it is enough to fit each set inside the other. For example $(0, 1) \subseteq [0, 1] \subseteq (-1, 2) \sim (0, 1)$, so $[0, 1] \sim (0, 1)$. Interleaving decimals (using the expansions that do not end in 9s) maps $(0, 1)^3$ one–one into $(0, 1)$, though not onto; Schröder–Bernstein then gives $(0, 1)^3 \sim (0, 1)$.
+- **Notation**: in the cardinal rules $\alpha = \lvert A \rvert$ and $\beta = \lvert B \rvert$. $B^A$ is the set of all maps $A \to B$; for finite sets it has $\lvert B \rvert^{\lvert A \rvert}$ elements. A subset of $X$ is the same as a map $X \to \{0, 1\}$ (1 on the subset), so $\lvert P(X) \rvert = 2^{\lvert X \rvert}$.
+- **The continuum hypothesis** can be neither proved nor disproved from the usual axioms of set theory (Gödel, 1940; Cohen, 1963).
+- **Surprises of infinite sets**: a set can be equivalent to a proper part of itself. The even numbers are as many as the natural numbers ($n \mapsto 2n$); $(0, 1)$ is as large as $\mathbb{R}$.
+- **Cantor's diagonal argument**: given any list of numbers in $(0, 1)$, make a new number whose $n$th decimal digit differs from the $n$th digit of the $n$th number (avoiding 0 and 9). It differs from every number in the list, so no list contains all of $(0, 1)$.
+- **Cardinal numbers in order**: $0, 1, 2, \dots, \aleph_0 < c = 2^{\aleph_0} < 2^c < \cdots$; by Cantor's theorem there is no largest cardinal.
+- "Uncountable" is about size, not length: the Cantor set is uncountable but has length 0, while $\mathbb{Q} \cap [0, 1]$ is countable yet dense in $[0, 1]$.
+
+! example | Example 1 — a bijection between intervals
+Give a bijection from $(0, 1)$ onto $(2, 5)$.
+**Solution.** $f(x) = 3x + 2$: it is strictly increasing, $f(0) = 2$, $f(1) = 5$, and $f^{-1}(y) = \frac{y - 2}{3}$. So $(0, 1) \sim (2, 5)$.
+
+! example | Example 2 — a product of countable sets
+Is the set of all points of the plane with rational coordinates countable?
+**Solution.** It is $\mathbb{Q} \times \mathbb{Q}$, a product of two countable sets, so it is **countable** (T4).
+
+! example | Example 3 — cardinal arithmetic
+Find $\aleph_0 + c$, $\aleph_0 \cdot c$ and $c \cdot c$.
+**Solution.** For transfinite cardinals the sum and the product are the larger one: $\aleph_0 + c = \aleph_0 \cdot c = c \cdot c = \boxed{c}$.
+
+? Is $\mathbb{Q}$ countable? :: Yes; its elements can be listed, for example by Cantor's diagonal listing.
+? What does Cantor's theorem say? :: No set can be mapped onto its power set, so $\lvert X \rvert < \lvert P(X) \rvert$.
+? Is the Cantor set countable? :: No; it is uncountable (in fact of cardinality $c$), although its total length is 0.
+? Are $[0, 1]$ and $\mathbb{R}$ of the same cardinality? :: Yes; every interval has cardinality $c$.
+
+! exam | What the exam asks
+- Which of several given sets are countable.
+- Equivalent sets, bijections between intervals, Cantor's theorem and the diagonal argument.
+- Cardinal arithmetic with $\aleph_0$ and $c$; the Cantor set.
+
+! recap | One-minute revision
+- Countable: $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{N} \times \mathbb{N}$, algebraic numbers, finite subsets of $\mathbb{N}$.
+- Uncountable: $\mathbb{R}$, intervals, irrationals, transcendentals, $P(\mathbb{N})$, the Cantor set.
+- $\lvert X \rvert < \lvert P(X) \rvert$; $\aleph_0 < c = 2^{\aleph_0}$; transfinite sums and products give the larger cardinal.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 5 (the full PDF is linked on the subject page)
+& Paul R. Halmos, Naive Set Theory, the sections on cardinal numbers
+& S. C. Malik and Savita Arora, Mathematical Analysis, chapter 1
