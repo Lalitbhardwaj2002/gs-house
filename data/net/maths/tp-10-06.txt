@@ -1,0 +1,68 @@
+@en
+# Analytic functions and Cauchy–Riemann equations
+
+> A complex function $f = u + iv$ is differentiable at a point when its difference quotient has the same limit from every direction. The Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ are necessary for this; with continuous partial derivatives they are also sufficient.
+
+## Differentiability and the Cauchy–Riemann equations
+
+! note | Analytic functions
+- $f(z) = u(x, y) + iv(x, y)$ is **differentiable** at $z_0$ if $\lim_{h \to 0}\frac{f(z_0 + h) - f(z_0)}{h}$ exists (the same for every direction of approach). It is **analytic** in a region if it is differentiable at every point of it.
+- **Cauchy–Riemann equations**: $u_x = v_y$, $u_y = -v_x$. Complex form: $\frac{\partial f}{\partial\bar{z}} = 0$.
+- Polar form ($z = re^{i\theta}$): $u_r = \frac{1}{r}v_\theta$, $v_r = -\frac{1}{r}u_\theta$, i.e. $ru_r = v_\theta$, $rv_r = -u_\theta$.
+- Real and imaginary parts of an analytic function are **harmonic**: $u_{xx} + u_{yy} = 0$, $v_{xx} + v_{yy} = 0$.
+
+! check | Conditions added
+$h$ is complex ($h \to 0$ in the plane, from every direction). "Analytic at a point" means differentiable in some neighbourhood of it. The polar form needs $z \neq 0$ ($r > 0$). The harmonic property uses that $u$ and $v$ have continuous second partial derivatives, which is true for an analytic function (its derivative is again analytic).
+
+! note | Necessary but not sufficient
+- If $f$ is differentiable at $z_0$, the C–R equations hold there. So **if the C–R equations are not satisfied, $f$ is not differentiable.**
+- But **satisfying the C–R equations does not imply differentiability**: C–R $\not\Rightarrow$ differentiable.
+- **Sufficient condition**: C–R equations hold *and* $u_x, u_y, v_x, v_y$ are continuous (in a neighbourhood).
+
+! example | Question CR1 — standard
+Show that $f(z) = z^2$ is analytic and $f(z) = \bar{z}$ is not.
+**Solution.** $z^2 = (x^2 - y^2) + i(2xy)$: $u_x = 2x = v_y$, $u_y = -2y = -v_x$, all partials continuous $\Rightarrow$ analytic everywhere. $\bar{z} = x - iy$: $u_x = 1 \neq -1 = v_y$, so C–R fail $\Rightarrow$ not differentiable anywhere.
+
+! example | Question CR2 — standard (C–R hold, still not differentiable)
+Show that $f(z) = \sqrt{\lvert xy \rvert}$ satisfies the C–R equations at $z = 0$ but is not differentiable there.
+**Solution.** $u = \sqrt{\lvert xy \rvert}$, $v = 0$. At the origin: $u_x = \lim\frac{u(h, 0) - 0}{h} = 0$, $u_y = 0$, $v_x = v_y = 0$: C–R hold. Approach along $y = mx$ ($x > 0$):
+$$\begin{aligned} &\frac{f(z) - f(0)}{z} = \frac{\sqrt{\lvert m \rvert}\,x}{x(1 + im)} \\ &= \frac{\sqrt{\lvert m \rvert}}{1 + im}, \end{aligned}$$
+which depends on $m$. The limit does not exist, so $f$ is **not differentiable** at $0$ although C–R hold.
+
+! addon | Milne–Thomson's method
+Milne–Thomson (to find $f$ from $u$): $f'(z) = u_x(z, 0) - iu_y(z, 0)$; integrate. E.g. $u = x^2 - y^2$: $f'(z) = 2z$, $f = z^2$, $v = 2xy$. $\lvert z \rvert^2$ is differentiable only at $z = 0$ and analytic nowhere.
+
+! check | A condition added
+$f$ is found up to an added constant: $f = z^2 + ic$ ($c$ real) when only $u$ is given. The method needs $u$ harmonic, so that an analytic $f$ with real part $u$ exists.
+
+## What it means
+
+- **Where C–R come from**: approach $z_0$ along the real direction ($h$ real) and along the imaginary direction ($h = ik$). The two limits are $u_x + iv_x$ and $v_y - iu_y$; equating real and imaginary parts gives $u_x = v_y$ and $v_x = -u_y$.
+- **A quick test**: an expression that depends on $\bar{z}$ (such as $\bar{z}$, $\lvert z \rvert^2 = z\bar{z}$, $\operatorname{Re} z$) is not analytic, because $\frac{\partial f}{\partial\bar{z}} \neq 0$.
+- **Harmonic conjugate**: given a harmonic $u$, the $v$ with $u + iv$ analytic is found from $v_x = -u_y$, $v_y = u_x$ (or by Milne–Thomson).
+
+! example | Example 1 — a harmonic conjugate
+Find the analytic $f$ with real part $u = e^x\cos y$.
+**Solution.** $u_x = e^x\cos y$, $u_y = -e^x\sin y$. Milne–Thomson: $f'(z) = e^z - i \cdot 0 = e^z$, so $\boxed{f = e^z + ic}$ and $v = e^x\sin y$.
+
+! example | Example 2 — where is it differentiable?
+Where is $f(z) = \lvert z \rvert^2$ differentiable?
+**Solution.** $u = x^2 + y^2$, $v = 0$: C–R need $2x = 0$ and $2y = 0$, so only at $z = 0$; the partials are continuous, so $f$ is differentiable there and nowhere else. It is $\boxed{\text{analytic nowhere}}$ (no neighbourhood works).
+
+? Cauchy–Riemann equations? :: $u_x = v_y$ and $u_y = -v_x$.
+? Do the C–R equations alone guarantee differentiability? :: No; they also need continuous partial derivatives.
+? Is $\bar{z}$ analytic? :: No: $u_x = 1 \neq -1 = v_y$.
+? Milne–Thomson's formula? :: $f'(z) = u_x(z, 0) - iu_y(z, 0)$.
+
+! exam | What the exam asks
+- Testing C–R for given functions; which of the options is analytic.
+- Functions that satisfy C–R but are not differentiable.
+- Harmonic functions and conjugates; Milne–Thomson.
+
+! recap | One-minute revision
+- C–R: $u_x = v_y$, $u_y = -v_x$ (polar: $ru_r = v_\theta$, $rv_r = -u_\theta$).
+- Necessary, not sufficient; add continuity of the partials.
+- $u$, $v$ of an analytic $f$ are harmonic.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& R. V. Churchill and J. W. Brown, Complex Variables and Applications, chapter 2

@@ -1,0 +1,132 @@
+@en
+# Logarithm of a complex number
+
+> Write the number as $re^{i\theta}$; its logarithm is $\log r + i\theta$. Because $\theta$ can be changed by $2n\pi$, the logarithm has infinitely many values: the principal value uses the principal argument, the general value adds $2n\pi i$. Complex powers are defined through the logarithm, $a^z = e^{z\operatorname{Log} a}$.
+
+## Principal and general values
+
+! note | Logarithm of a complex number
+- Let $x + iy = r(\cos\theta + i\sin\theta) = re^{i\theta}$. Then **principal value**
+$$\begin{aligned} &\log(x + iy) = \log r + i\theta \\ &= \frac{1}{2}\log(x^2 + y^2) \\ &\quad + i\operatorname{Arg}(x + iy). \end{aligned}$$
+($\operatorname{Arg} = \tan^{-1}\frac{y}{x}$ only when $x > 0$; otherwise use the quadrant rule.)
+- **General value**: $\operatorname{Log}(x + iy) = 2n\pi i + \log(x + iy)$ (capital L for the general value).
+- $\log i = \log 1 + i\frac{\pi}{2} = \frac{i\pi}{2}$; $\operatorname{Log} i = \frac{(4n + 1)\pi i}{2}$.
+- **Logarithm of a negative real number**: $-x = x(\cos\pi + i\sin\pi) = xe^{i\pi}$, so $\log(-x) = \log x + i\pi$ ($x > 0$); e.g. $\log(-2) = \log 2 + i\pi$, $\operatorname{Log}(-2) = \log 2 + (2n + 1)\pi i$.
+- **Complex powers**: $a^z = e^{z\operatorname{Log} a}$ (multi-valued; principal value uses $\log a$).
+
+! check | Conditions added
+The logarithm is defined only for $x + iy \neq 0$. The laws of real logarithms hold for general values only "up to $2n\pi i$": for principal values $\log(z_1z_2) = \log z_1 + \log z_2$ can fail (e.g. $z_1 = z_2 = -1$: the left side is $\log 1 = 0$, the right side $2\pi i$).
+
+! example | Question L1, L2, L3 — from the notes
+Prove (a) $\operatorname{Log}(1 + i) = \frac{1}{2}\log 2 + i\left(2n\pi + \frac{\pi}{4}\right)$; (b) $\operatorname{Log}(-5) = \log 5 + (2n + 1)\pi i$; (c) the general value of $\log i$ is $\frac{(4n + 1)\pi i}{2}$.
+**Solution.** (a) $\lvert 1 + i \rvert = \sqrt{2}$, $\operatorname{Arg} = \frac{\pi}{4}$. (b) $-5 = 5e^{i\pi}$. (c) $i = e^{i\pi/2}$, add $2n\pi i$.
+
+! example | Question L6–L10 — from the notes
+Prove: (a) $\log(1 + e^{i\theta}) = \log\left(2\cos\frac{\theta}{2}\right) + \frac{i\theta}{2}$ ($-\pi < \theta < \pi$); (b) $\log\frac{a + ib}{a - ib} = 2i\tan^{-1}\frac{b}{a}$ ($a > 0$); (c) $i\log\frac{x - i}{x + i} = \pi - 2\tan^{-1}x$ ($x > 0$); (d) $\tan\left[i\log\frac{a - ib}{a + ib}\right] = \frac{2ab}{a^2 - b^2}$; (e) $\log(1 + i\tan\alpha) = \log\sec\alpha + i\alpha$.
+**Solution.** (a) $1 + e^{i\theta} = e^{i\theta/2}\left(e^{-i\theta/2} + e^{i\theta/2}\right) = 2\cos\frac{\theta}{2}e^{i\theta/2}$. (b) $a \pm ib$ have equal moduli and arguments $\pm\tan^{-1}\frac{b}{a}$. (c) $\log\frac{x - i}{x + i} = -2i\tan^{-1}\frac{1}{x}$, so $i\log(\cdot) = 2\tan^{-1}\frac{1}{x} = 2\left(\frac{\pi}{2} - \tan^{-1}x\right)$. (d) $i\log\frac{a - ib}{a + ib} = 2\tan^{-1}\frac{b}{a}$; $\tan(2\phi) = \frac{2b/a}{1 - b^2/a^2} = \frac{2ab}{a^2 - b^2}$. (e) $1 + i\tan\alpha = \sec\alpha(\cos\alpha + i\sin\alpha) = \sec\alpha\,e^{i\alpha}$.
+
+! check | Conditions added
+(d) needs $a^2 \neq b^2$ (otherwise neither side is defined); it then holds for every value of the logarithm, since the values differ by $2n\pi i$ and $\tan$ has period $\pi$. (e) needs $-\frac{\pi}{2} < \alpha < \frac{\pi}{2}$, so that $\sec\alpha > 0$ is the modulus and $\alpha$ the principal argument.
+
+! example | Question L11, L13, L14 — from the notes
+Prove: (a) $\sin(\log i^i) = -1$; (b) $\log(1 + \cos 2\theta + i\sin 2\theta)$ $= \log(2\cos\theta) + i\theta$ ($-\frac{\pi}{2} < \theta < \frac{\pi}{2}$); (c) $\log(i\beta) = \log\lvert \beta \rvert \pm \frac{i\pi}{2}$ ($+$ or $-$ as $\beta > 0$ or $\beta < 0$).
+**Solution.** (a) $\log i^i = i\log i = i \cdot \frac{i\pi}{2} = -\frac{\pi}{2}$, and $\sin\left(-\frac{\pi}{2}\right) = -1$. (b) $1 + \cos 2\theta + i\sin 2\theta$ $= 2\cos\theta(\cos\theta + i\sin\theta)$ $= 2\cos\theta\,e^{i\theta}$. (c) $i\beta$ lies on the positive or negative imaginary axis: $\operatorname{Arg} = \pm\frac{\pi}{2}$, modulus $\lvert \beta \rvert$.
+
+! example | Question L15–L18 — from the notes
+Separate into real and imaginary parts: (a) $\log\sin(x + iy)$, (b) $\log\cos(x + iy)$; and deduce (c) $\log\frac{\sin(x + iy)}{\sin(x - iy)} = 2i\tan^{-1}(\cot x\tanh y)$, (d) $\log\frac{\cos(x - iy)}{\cos(x + iy)} = 2i\tan^{-1}(\tan x\tanh y)$.
+**Solution.** (a) $\sin(x + iy) = \sin x\cosh y + i\cos x\sinh y$; $\lvert \cdot \rvert^2 = \sin^2 x + \sinh^2 y = \frac{\cosh 2y - \cos 2x}{2}$:
+$$\begin{aligned} &\log\sin(x + iy) \\ &= \boxed{\begin{aligned} &\frac{1}{2}\log\frac{\cosh 2y - \cos 2x}{2} \\ &+ i\tan^{-1}(\cot x\tanh y) \end{aligned}}. \end{aligned}$$
+(b) $\cos(x + iy) = \cos x\cosh y - i\sin x\sinh y$; $\lvert \cdot \rvert^2 = \frac{\cosh 2y + \cos 2x}{2}$:
+$$\begin{aligned} &\log\cos(x + iy) \\ &= \boxed{\begin{aligned} &\frac{1}{2}\log\frac{\cosh 2y + \cos 2x}{2} \\ &- i\tan^{-1}(\tan x\tanh y) \end{aligned}}. \end{aligned}$$
+(c), (d): the moduli cancel, the arguments double.
+
+! check | A condition added
+The arguments $\tan^{-1}(\cot x\tanh y)$ and $-\tan^{-1}(\tan x\tanh y)$ are the principal arguments only when the real parts are positive ($\sin x > 0$ in (a), $\cos x > 0$ in (b)); otherwise $\pm\pi$ is added.
+
+! example | Question L19 — from the notes
+Show that one value of $\log\frac{(1 + i)(1 + i\sqrt{3})}{\sqrt{3} + i}$ is $\frac{1}{2}\log 2 + \frac{5\pi i}{12}$.
+**Solution.** Modulus $= \frac{\sqrt{2} \cdot 2}{2} = \sqrt{2}$; argument $= \frac{\pi}{4} + \frac{\pi}{3} - \frac{\pi}{6} = \frac{5\pi}{12}$. So $\log = \log\sqrt{2} + \frac{5\pi i}{12} = \frac{1}{2}\log 2 + \frac{5\pi i}{12}$.
+
+! example | Question L20–L22 — from the notes
+(a) If $\tan\log(x + iy) = a + ib$ ($a^2 + b^2 \neq 1$), prove $\tan\log(x^2 + y^2) = \frac{2a}{1 - a^2 - b^2}$. (b) If $\log\log(x + iy) = p + iq$, prove $y = x\tan\left[\tan q \cdot \log\sqrt{x^2 + y^2}\right]$. (c) If $\log\log(\alpha + i\beta) = p + iq$, prove $\alpha = e^{e^p\cos q}\cos(e^p\sin q)$ and $\beta = e^{e^p\cos q}\sin(e^p\sin q)$.
+**Solution.** (a) $\log(x \pm iy) = \tan^{-1}(a \pm ib)$; adding, $\log(x^2 + y^2) = \tan^{-1}\frac{2a}{1 - (a^2 + b^2)}$. (b) $\log(x + iy) = e^{p + iq}$: $\log\sqrt{x^2 + y^2} = e^p\cos q$, $\tan^{-1}\frac{y}{x} = e^p\sin q = \tan q \cdot \log\sqrt{x^2 + y^2}$. (c)
+$$\begin{aligned} &\alpha + i\beta \\ &= \exp(e^p\cos q + ie^p\sin q) \\ &= e^{e^p\cos q}\big[\cos(e^p\sin q) \\ &\qquad + i\sin(e^p\sin q)\big]. \end{aligned}$$
+
+! example | Question L23 — from the notes
+Prove that
+$$\begin{aligned} &\operatorname{Log}\frac{(a - b) + i(a + b)}{(a + b) + i(a - b)} \\ &= i\left[2n\pi + \tan^{-1}\frac{2ab}{a^2 - b^2}\right]. \end{aligned}$$
+**Solution.** Both numbers have modulus $\sqrt{2(a^2 + b^2)}$, so the real part is $\log 1 = 0$. Argument
+$$\begin{aligned} &= \tan^{-1}\frac{a + b}{a - b} - \tan^{-1}\frac{a - b}{a + b} \\ &= \tan^{-1}\frac{(a + b)^2 - (a - b)^2}{2(a^2 - b^2)} \\ &= \tan^{-1}\frac{2ab}{a^2 - b^2}; \end{aligned}$$
+add $2n\pi$.
+
+! check | A condition added
+The result needs $a^2 > b^2$ (for example $a > \lvert b \rvert$, where the two $\tan^{-1}$ above are the arguments). The quotient is $\frac{a + ib}{a - ib}$; when $a^2 < b^2$ its Log is $i\left[(2n + 1)\pi + \tan^{-1}\frac{2ab}{a^2 - b^2}\right]$, e.g. $a = 0$, $b = 1$ gives $\operatorname{Log}(-1) = (2n + 1)\pi i$.
+
+! example | Question L24, L25 — from the notes
+If $(a_1 + ib_1)(a_2 + ib_2)\cdots(a_n + ib_n) = A + iB$, prove (i) $\sum\tan^{-1}\frac{b_k}{a_k} = \tan^{-1}\frac{B}{A}$ (up to multiples of $\pi$); (ii) $(a_1^2 + b_1^2)\cdots(a_n^2 + b_n^2) = A^2 + B^2$. Deduce: if $(1 + i)(1 + 2i)\cdots(1 + ni) = A + iB$, then $2 \cdot 5 \cdot 10\cdots(1 + n^2) = A^2 + B^2$.
+**Solution.** Take logs:
+$$\begin{aligned} &\sum\Big[\tfrac{1}{2}\log(a_k^2 + b_k^2) \\ &\qquad + i\tan^{-1}\tfrac{b_k}{a_k}\Big] \\ &= \tfrac{1}{2}\log(A^2 + B^2) + i\tan^{-1}\tfrac{B}{A}; \end{aligned}$$
+equate real and imaginary parts. For the deduction put $a_k = 1$, $b_k = k$.
+
+## Exercise 2 (the notes) — complex powers
+
+! example | Question P1 — from the notes
+Show that the principal value of $\frac{(a + ib)^{p + iq}}{(a - ib)^{p - iq}}$ is $\cos 2(p\alpha + q\log r) + i\sin 2(p\alpha + q\log r)$, where $r = \sqrt{a^2 + b^2}$, $\alpha = \tan^{-1}\frac{b}{a}$ ($a > 0$).
+**Solution.** The log of the expression is
+$$\begin{aligned} &(p + iq)(\log r + i\alpha) \\ &\quad - (p - iq)(\log r - i\alpha) \\ &= 2i(p\alpha + q\log r); \end{aligned}$$
+take $e^{(\cdot)}$.
+
+! example | Question P7, P8 — from the notes
+(a) Prove that the real part of the principal value of $i^{\log(1 + i)}$ is $e^{-\pi^2/8}\cos\left(\frac{\pi}{4}\log 2\right)$. (b) Prove that $(x + ix\tan y)^{\log(x\sec y) - iy}$ is real (principal values).
+**Solution.** (a) $\log(1 + i) \cdot \log i = \left(\frac{1}{2}\log 2 + \frac{i\pi}{4}\right)\frac{i\pi}{2}$ $= -\frac{\pi^2}{8} + \frac{i\pi}{4}\log 2$; so
+$$\begin{aligned} &i^{\log(1 + i)} = e^{-\pi^2/8}\Big[\cos\left(\tfrac{\pi}{4}\log 2\right) \\ &\qquad + i\sin\left(\tfrac{\pi}{4}\log 2\right)\Big]. \end{aligned}$$
+(b) $x + ix\tan y = x\sec y\,e^{iy}$, so its log is $\log(x\sec y) + iy$. The exponent times this log is $(\log x\sec y)^2 + y^2$, which is real.
+
+! check | A condition added
+(b) needs $x\sec y > 0$ and $-\pi < y \leq \pi$, so that $x\sec y$ is the modulus and $y$ the principal argument (for example $x > 0$ and $-\frac{\pi}{2} < y < \frac{\pi}{2}$).
+
+! example | Question P10, P11 — from the notes
+(a) Show that the general value of $(1 + i\tan\alpha)^{-i}$ is
+$$\begin{aligned} &e^{\alpha + 2m\pi}\big[\cos(\log\cos\alpha) \\ &\qquad + i\sin(\log\cos\alpha)\big]. \end{aligned}$$
+(b) Prove that $\log_i i = \frac{4m + 1}{4n + 1}$ ($m$, $n$ integers).
+**Solution.** (a) $\operatorname{Log}(1 + i\tan\alpha) = \log\sec\alpha + i(\alpha + 2m\pi)$; multiply by $-i$: $(\alpha + 2m\pi) - i\log\sec\alpha$; and $-\log\sec\alpha = \log\cos\alpha$. (b) $\log_i i = \frac{\operatorname{Log} i}{\operatorname{Log} i} = \frac{(4m + 1)\pi i/2}{(4n + 1)\pi i/2}$ (independent general values).
+
+! check | A condition added
+(a) needs $\cos\alpha > 0$ (e.g. $-\frac{\pi}{2} < \alpha < \frac{\pi}{2}$), as in L10: then $\sec\alpha$ is the modulus of $1 + i\tan\alpha$ and $\log\cos\alpha$ is real. For $\cos\alpha < 0$ the factor is $e^{\alpha + (2m + 1)\pi}$ and $\cos\alpha$ is replaced by $\lvert \cos\alpha \rvert$.
+
+! example | Question P13, P16 — from the notes
+(a) If $\frac{(1 + i)^{p + iq}}{(1 - i)^{p - iq}} = \alpha + i\beta$, prove one value of $\tan^{-1}\frac{\beta}{\alpha}$ is $\frac{p\pi}{2} + q\log 2$. (b) If $i^{\alpha + i\beta} = \alpha + i\beta$, prove $\alpha^2 + \beta^2 = e^{-(4n + 1)\pi\beta}$.
+**Solution.** (a) By P1 with $a = b = 1$ ($r = \sqrt{2}$, angle $\frac{\pi}{4}$): argument $= 2\left(\frac{p\pi}{4} + q\log\sqrt{2}\right) = \frac{p\pi}{2} + q\log 2$. (b) $\operatorname{Log}(\alpha + i\beta) = (\alpha + i\beta)\frac{(4n + 1)\pi i}{2}$; real part: $\frac{1}{2}\log(\alpha^2 + \beta^2) = -\frac{(4n + 1)\pi\beta}{2}$.
+
+## What it means
+
+- **Why many values**: $e^{2\pi i} = 1$, so if $e^w = z$ then also $e^{w + 2n\pi i} = z$. The logarithm undoes $e^w$ only up to $2n\pi i$.
+- **Recipe**: modulus $\to$ real part $\log r$; argument $\to$ imaginary part. Every question above is that recipe plus algebra.
+- **$i^i$ is real**: $i^i = e^{i\operatorname{Log} i} = e^{-(4n + 1)\pi/2}$; the principal value is $e^{-\pi/2} \approx 0.208$.
+
+! example | Example 1 — principal value of a power
+Find the principal value of $(1 + i)^i$.
+**Solution.** $\log(1 + i) = \frac{1}{2}\log 2 + \frac{i\pi}{4}$; times $i$: $-\frac{\pi}{4} + \frac{i}{2}\log 2$. So
+$$(1 + i)^i = \boxed{\begin{aligned} &e^{-\pi/4}\big[\cos\left(\tfrac{1}{2}\log 2\right) \\ &\quad + i\sin\left(\tfrac{1}{2}\log 2\right)\big] \end{aligned}}.$$
+
+! example | Example 2 — logarithm of a number in the third quadrant
+Find $\log(-1 - i)$.
+**Solution.** $r = \sqrt{2}$, $\operatorname{Arg} = -\frac{3\pi}{4}$: $\boxed{\frac{1}{2}\log 2 - \frac{3\pi i}{4}}$.
+
+? Principal value of $\log(x + iy)$? :: $\frac{1}{2}\log(x^2 + y^2) + i\operatorname{Arg}(x + iy)$.
+? General value of $\log i$? :: $\frac{(4n + 1)\pi i}{2}$.
+? $\log(-2)$ (principal)? :: $\log 2 + i\pi$.
+? Principal value of $i^i$? :: $e^{-\pi/2}$, a real number.
+
+! exam | What the exam asks
+- Principal and general values of logs of $1 + i$, $-5$, $i$, $i\beta$.
+- Proofs like L6 to L10 and L15 to L18 (separate, then compare).
+- Complex powers: $i^i$, $(1 + i)^i$, $i^{\log(1 + i)}$; $\log_i i$.
+
+! recap | One-minute revision
+- $\log z = \log\lvert z \rvert + i\operatorname{Arg} z$; $\operatorname{Log} z = \log z + 2n\pi i$.
+- $\log i = \frac{i\pi}{2}$; $\log(-x) = \log x + i\pi$.
+- $a^z = e^{z\operatorname{Log} a}$; $i^i = e^{-(4n + 1)\pi/2}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part II, chapter 7 (logarithms of complex quantities)

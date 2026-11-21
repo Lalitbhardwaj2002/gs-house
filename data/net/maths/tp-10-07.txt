@@ -1,0 +1,83 @@
+@en
+# Exponential, circular and hyperbolic functions
+
+> The exponential series defines $e^z$ for every complex $z$; $\cos$, $\sin$, $\cosh$ and $\sinh$ are its even and odd parts. The bridge $\sin i\theta = i\sinh\theta$, $\cos i\theta = \cosh\theta$ turns every circular identity into a hyperbolic one (Osborn's rule).
+
+## Definitions and the bridge between them
+
+! note | Definitions
+- $e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots$ for every complex $z$; $e^{z_1}e^{z_2} = e^{z_1 + z_2}$; $(e^z)^n = e^{nz}$.
+- $\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots$, $\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots$; $\cosh x = 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \cdots$, $\sinh x = x + \frac{x^3}{3!} + \frac{x^5}{5!} + \cdots$.
+- **Hyperbolic functions**: $\cosh z = \frac{e^z + e^{-z}}{2}$, $\sinh z = \frac{e^z - e^{-z}}{2}$, $\tanh z = \frac{\sinh z}{\cosh z} = \frac{e^z - e^{-z}}{e^z + e^{-z}}$; $\coth$, $\operatorname{sech}$, $\operatorname{cosech}$ are the reciprocals.
+- **Relations with circular functions**: $\sin i\theta = i\sinh\theta$, $\cos i\theta = \cosh\theta$, $\tan i\theta = i\tanh\theta$, $\cot i\theta = -i\coth\theta$; conversely $\sinh i\theta = i\sin\theta$, $\cosh i\theta = \cos\theta$.
+*Proof*:
+$$\begin{aligned} &\sin i\theta = \frac{e^{i(i\theta)} - e^{-i(i\theta)}}{2i} \\ &= \frac{e^{-\theta} - e^{\theta}}{2i} \\ &= i \cdot \frac{e^{\theta} - e^{-\theta}}{2} \\ &= i\sinh\theta. \end{aligned}$$
+
+! check | A condition added
+"$(e^z)^n = e^{nz}$" is for integer $n$; for non-integer powers of a complex number the logarithm (10.9) decides which value is meant.
+
+! note | Properties of hyperbolic functions
+- $\cosh^2 x - \sinh^2 x = 1$; $\operatorname{sech}^2 x = 1 - \tanh^2 x$; $\operatorname{cosech}^2 x = \coth^2 x - 1$.
+- $\sinh 2x = 2\sinh x\cosh x$; $\cosh 2x = \cosh^2 x + \sinh^2 x$ $= 2\cosh^2 x - 1 = 1 + 2\sinh^2 x$; $\sinh 3x = 3\sinh x + 4\sinh^3 x$; $\cosh 3x = 4\cosh^3 x - 3\cosh x$.
+- $\tanh(x + y) = \frac{\tanh x + \tanh y}{1 + \tanh x\tanh y}$; $\sinh x + \sinh y = 2\sinh\frac{x + y}{2}\cosh\frac{x - y}{2}$; $\cosh x - \cosh y = 2\sinh\frac{x + y}{2}\sinh\frac{x - y}{2}$.
+- *Method*: write the circular identity, put $A = ix$, $B = iy$ and use the relations above.
+
+^ data/net/maths/fig/hyperbolic.svg | $y = \cosh x$, $y = \sinh x$ and $y = \tanh x$
+
+! trick | Shortcut / time-saver — Osborn's rule
+Change $\cos \to \cosh$, $\sin \to \sinh$ and change the sign of every term containing a product of two $\sinh$'s: $\cos^2 + \sin^2 = 1 \to \cosh^2 - \sinh^2 = 1$; $\tan 2x = \frac{2\tan x}{1 - \tan^2 x} \to \tanh 2x = \frac{2\tanh x}{1 + \tanh^2 x}$.
+
+! check | A condition added
+In Osborn's rule a $\tan^2$ (or $\tan\cdot\tan$) term counts as a product of two $\sinh$'s, since $\tanh = \frac{\sinh}{\cosh}$; that is why the sign of $\tan^2 x$ changes in the $\tanh 2x$ example. The rule is a memory aid; the proof is always by $A = ix$.
+
+## Exercise 1 (the notes) — proofs
+
+! example | Question E1.1
+Prove that $\sin(\alpha + \theta) - e^{i\alpha}\sin\theta = e^{-i\theta}\sin\alpha$, and hence $\left[\sin(\alpha - \theta) + e^{-i\alpha}\sin\theta\right]^n = \sin^n\alpha\,e^{-in\theta}$.
+**Solution.**
+$$\begin{aligned} &\text{LHS} = \sin\alpha\cos\theta + \cos\alpha\sin\theta \\ &\quad - (\cos\alpha + i\sin\alpha)\sin\theta \\ &= \sin\alpha(\cos\theta - i\sin\theta) \\ &= e^{-i\theta}\sin\alpha. \end{aligned}$$
+Similarly $\sin(\alpha - \theta) + e^{-i\alpha}\sin\theta$ $= \sin\alpha(\cos\theta - i\sin\theta)$ $= \sin\alpha\,e^{-i\theta}$; raise to the power $n$.
+
+! example | Question E1.3–E1.5
+Prove: (a) $\frac{1 + \tanh x}{1 - \tanh x} = \cosh 2x + \sinh 2x$; (b) $\tanh(x + y) = \frac{\tanh x + \tanh y}{1 + \tanh x\tanh y}$; (c) $\cosh x - \cosh y = 2\sinh\frac{x + y}{2}\sinh\frac{x - y}{2}$.
+**Solution.** (a) $\frac{\cosh x + \sinh x}{\cosh x - \sinh x} = \frac{e^x}{e^{-x}}$ $= e^{2x} = \cosh 2x + \sinh 2x$. (b) In $\tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A\tan B}$ put $A = ix$, $B = iy$: $i\tanh(x + y) = \frac{i(\tanh x + \tanh y)}{1 - i^2\tanh x\tanh y}$; cancel $i$. (c) From $\cos A - \cos B = -2\sin\frac{A + B}{2}\sin\frac{A - B}{2}$ with $A = ix$, $B = iy$:
+$$\begin{aligned} &\cosh x - \cosh y \\ &= -2\left(i\sinh\tfrac{x + y}{2}\right)\left(i\sinh\tfrac{x - y}{2}\right) \\ &= 2\sinh\tfrac{x + y}{2}\sinh\tfrac{x - y}{2}. \end{aligned}$$
+
+! example | Question E1.6 — from the notes
+If $\alpha = \log\tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right)$, prove: (i) $\tanh\frac{\alpha}{2} = \tan\frac{\theta}{2}$; (ii) $\cosh\alpha\cos\theta = 1$; (iii) $\sinh\alpha = \tan\theta$; (iv) $\tanh\alpha = \sin\theta$.
+**Solution.** Let $t = \tan\frac{\theta}{2}$: $e^\alpha = \tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right) = \frac{1 + t}{1 - t}$. (i) $\tanh\frac{\alpha}{2} = \frac{e^\alpha - 1}{e^\alpha + 1} = \frac{2t}{2} = t$. (ii) $\cosh\alpha = \frac{1}{2}\left[\frac{1 + t}{1 - t} + \frac{1 - t}{1 + t}\right] = \frac{1 + t^2}{1 - t^2} = \sec\theta$. (iii) $\sinh\alpha = \frac{1}{2}\left[\frac{1 + t}{1 - t} - \frac{1 - t}{1 + t}\right] = \frac{2t}{1 - t^2} = \tan\theta$. (iv) $\tanh\alpha = \frac{\tan\theta}{\sec\theta} = \sin\theta$.
+
+! check | A condition added
+The logarithm needs $\tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right) > 0$, e.g. $-\frac{\pi}{2} < \theta < \frac{\pi}{2}$, where also $t \neq \pm 1$.
+
+## What it means
+
+- **Even and odd parts**: $\cosh x$ is the even part of $e^x$ and $\sinh x$ its odd part; $\cos x$ and $i\sin x$ are the even and odd parts of $e^{ix}$. So the hyperbolic functions are the circular ones with $x$ replaced by $ix$.
+- **The hyperbola**: $(\cosh t, \sinh t)$ lies on $x^2 - y^2 = 1$, as $(\cos t, \sin t)$ lies on the circle $x^2 + y^2 = 1$.
+- **Graphs**: $\cosh x \geq 1$ (a catenary shape), $\sinh x$ is increasing and odd, $\tanh x$ rises from $-1$ to $1$.
+
+! example | Example 1 — a hyperbolic equation
+Solve $\cosh x = \frac{5}{4}$.
+**Solution.** $e^x + e^{-x} = \frac{5}{2}$, so $2e^{2x} - 5e^x + 2 = 0$: $e^x = 2$ or $\frac{1}{2}$, $\boxed{x = \pm\log 2}$.
+
+! example | Example 2 — Osborn's rule
+Write the hyperbolic form of $\cos 2x = 1 - 2\sin^2 x$.
+**Solution.** $\sin^2 x$ is a product of two sines, so its sign changes: $\boxed{\cosh 2x = 1 + 2\sinh^2 x}$.
+
+? $\sin i\theta$ and $\cos i\theta$? :: $i\sinh\theta$ and $\cosh\theta$.
+? $\cosh^2 x - \sinh^2 x$? :: $1$.
+? $\sinh 3x$? :: $3\sinh x + 4\sinh^3 x$.
+? Osborn's rule? :: $\cos \to \cosh$, $\sin \to \sinh$, and change the sign of each product of two $\sinh$'s.
+
+! exam | What the exam asks
+- Values and identities of $\cosh$, $\sinh$, $\tanh$; proofs by $A = ix$.
+- Relations $\sin i\theta = i\sinh\theta$, $\cos i\theta = \cosh\theta$.
+- Problems like E1.6 ($\alpha = \log\tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right)$, i.e. $\theta$ is the Gudermannian of $\alpha$).
+
+! recap | One-minute revision
+- $\cosh z = \frac{e^z + e^{-z}}{2}$, $\sinh z = \frac{e^z - e^{-z}}{2}$.
+- $\sin i\theta = i\sinh\theta$, $\cos i\theta = \cosh\theta$, $\tan i\theta = i\tanh\theta$.
+- Osborn: change the sign of products of two $\sinh$'s.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part II, chapters 5 and 6 (exponential and hyperbolic functions)

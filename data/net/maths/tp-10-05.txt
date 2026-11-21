@@ -1,0 +1,53 @@
+@en
+# Square root of a complex number
+
+> The square roots of $a + ib$ are $\pm(x + iy)$ with $x^2 = \frac{\lvert z \rvert + a}{2}$ and $y^2 = \frac{\lvert z \rvert - a}{2}$; the only care needed is the sign of $y$, which follows the sign of $b$.
+
+## The formula and its signs
+
+! note | Corrected formula
+For $z = a + ib$ (with $\lvert z \rvert = \sqrt{a^2 + b^2}$):
+$$\begin{aligned} &\sqrt{a + ib} = \pm\Big(\sqrt{\tfrac{\lvert z \rvert + a}{2}} \\ &\qquad \pm i\sqrt{\tfrac{\lvert z \rvert - a}{2}}\Big) \end{aligned}$$
+where the **inner sign** is $+$ when $b > 0$ and $-$ when $b < 0$ (the outer $\pm$ gives the two square roots).
+**Why**: put $\sqrt{a + ib} = x + iy$. Then $x^2 - y^2 = a$, $2xy = b$ and $x^2 + y^2 = \lvert z \rvert$. Hence $x^2 = \frac{\lvert z \rvert + a}{2}$, $y^2 = \frac{\lvert z \rvert - a}{2}$, and $xy$ has the same sign as $b$.
+
+! check | A condition added
+For $b = 0$ the formula gives $\pm\sqrt{a}$ when $a \geq 0$ and $\pm i\sqrt{-a}$ when $a < 0$; either inner sign works, since one of the two square roots under it is $0$.
+
+! example | Question SR1 — from the notes
+Find (a) $\sqrt{3 - 4i}$, (b) $\sqrt{-5 + 12i}$.
+**Solution.** (a) $\lvert z \rvert = 5$, $a = 3$, $b < 0$:
+$$\begin{aligned} &\pm\left(\sqrt{\frac{5 + 3}{2}} - i\sqrt{\frac{5 - 3}{2}}\right) \\ &= \boxed{\pm(2 - i)}. \end{aligned}$$
+Check: $(2 - i)^2 = 4 - 4i - 1 = 3 - 4i$ ✓. (b) $\lvert z \rvert = 13$, $a = -5$, $b > 0$: $\pm\left(\sqrt{4} + i\sqrt{9}\right) = \boxed{\pm(2 + 3i)}$.
+
+## What it means
+
+- **Two roots, opposite points**: the square roots of $z$ are $\pm w$, symmetric about the origin, with $\lvert w \rvert = \sqrt{\lvert z \rvert}$ and argument $\frac{1}{2}\arg z$ (or that plus $\pi$).
+- **Why the sign rule**: $2xy = b$, so if $b > 0$ then $x$ and $y$ have the same sign; if $b < 0$, opposite signs.
+- **Polar check**: $\sqrt{re^{i\theta}} = \pm\sqrt{r}e^{i\theta/2}$, which is quick when the argument is a known angle.
+
+! example | Example 1 — a purely imaginary number
+Find the square roots of $2i$.
+**Solution.** $\lvert z \rvert = 2$, $a = 0$, $b > 0$: $\pm(1 + i)$. Check: $(1 + i)^2 = 2i$ ✓. So $\boxed{\pm(1 + i)}$.
+
+! example | Example 2 — a quadratic with complex coefficients
+Solve $z^2 - (3 + i)z + (2 + 2i) = 0$.
+**Solution.** Discriminant $(3 + i)^2 - 4(2 + 2i) = 8 + 6i - 8 - 8i = -2i$, whose square roots are $\pm(1 - i)$. So $z = \frac{(3 + i) \pm (1 - i)}{2}$: $\boxed{z = 2 \text{ or } 1 + i}$.
+
+? $\sqrt{a + ib}$ when $b < 0$? :: $\pm\left(\sqrt{\frac{\lvert z \rvert + a}{2}} - i\sqrt{\frac{\lvert z \rvert - a}{2}}\right)$.
+? Square roots of $3 - 4i$? :: $\pm(2 - i)$.
+? Square roots of $-5 + 12i$? :: $\pm(2 + 3i)$.
+? Square roots of $i$? :: $\pm\frac{1 + i}{\sqrt{2}}$.
+
+! exam | What the exam asks
+- Square roots of $a + ib$ (watch the sign of $b$).
+- Quadratic equations with complex coefficients.
+- Polar-form square roots.
+
+! recap | One-minute revision
+- $x^2 = \frac{\lvert z \rvert + a}{2}$, $y^2 = \frac{\lvert z \rvert - a}{2}$.
+- Inner sign follows the sign of $b$.
+- $\sqrt{3 - 4i} = \pm(2 - i)$, $\sqrt{-5 + 12i} = \pm(2 + 3i)$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 11, chapter 4 (Complex numbers and quadratic equations)

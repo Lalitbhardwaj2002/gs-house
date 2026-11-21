@@ -1,0 +1,89 @@
+@en
+# Inverse circular and inverse hyperbolic functions
+
+> The inverse hyperbolic functions are logarithms: $\sinh^{-1}z = \log\left(z + \sqrt{z^2 + 1}\right)$ and so on. For the inverse of a circular function at a complex number, put it equal to $x + iy$, apply the direct function, separate real and imaginary parts, and eliminate.
+
+## General values and logarithmic forms
+
+! note | Inverse circular and inverse hyperbolic functions
+- General values: $\operatorname{Sin}^{-1}z = n\pi + (-1)^n\sin^{-1}z$, $\operatorname{Cos}^{-1}z = 2n\pi \pm \cos^{-1}z$, $\operatorname{Tan}^{-1}z = n\pi + \tan^{-1}z$.
+- $\sinh^{-1}z = \log\left(z + \sqrt{z^2 + 1}\right)$; $\cosh^{-1}z = \log\left(z + \sqrt{z^2 - 1}\right)$; $\tanh^{-1}z = \frac{1}{2}\log\frac{1 + z}{1 - z}$; $\coth^{-1}z = \frac{1}{2}\log\frac{z + 1}{z - 1}$.
+*Proof* ($\sinh^{-1}$): let $\sinh^{-1}z = \theta$, so $z = \sinh\theta$, $\cosh\theta = \sqrt{1 + z^2}$; $e^\theta = \cosh\theta + \sinh\theta = z + \sqrt{1 + z^2}$.
+- $\sinh^{-1}x = -i\sin^{-1}(ix)$ (i.e. $\sin^{-1}(ix) = i\sinh^{-1}x$); $\cosh^{-1}x = \pm i\cos^{-1}x$; $\tanh^{-1}x = -i\tan^{-1}(ix)$.
+- Method for $\sin^{-1}$(complex) $= x + iy$: take $\sin$ of both sides, separate real and imaginary parts, eliminate.
+
+! check | Conditions added
+For real arguments the formulas need: $\cosh^{-1}x$, $x \geq 1$ (principal value $\geq 0$); $\tanh^{-1}x$, $\lvert x \rvert < 1$; $\coth^{-1}x$, $\lvert x \rvert > 1$. For complex $z$ the square roots and logarithms are many-valued, and the formulas give one value each.
+
+! example | Question IN1 — from the notes
+Prove that
+$$\begin{aligned} &\sin^{-1}(\cos\theta + i\sin\theta) \\ &= \cos^{-1}\sqrt{\sin\theta} \\ &\quad + i\log\left[\sqrt{\sin\theta} + \sqrt{1 + \sin\theta}\right] \end{aligned}$$
+($\theta$ a positive acute angle).
+**Solution.** Let $\sin^{-1}(\cos\theta + i\sin\theta) = x + iy$: $\cos\theta = \sin x\cosh y$, $\sin\theta = \cos x\sinh y$. Eliminating $y$ (as in E1.18) gives $\cos^2 x = \sin\theta$, so $x = \cos^{-1}\sqrt{\sin\theta}$; then $\sinh y = \frac{\sin\theta}{\cos x} = \sqrt{\sin\theta}$, so
+$$\begin{aligned} &y = \sinh^{-1}\sqrt{\sin\theta} \\ &= \log\left[\sqrt{\sin\theta} + \sqrt{1 + \sin\theta}\right]. \end{aligned}$$
+Check: $\sin x\cosh y = \sqrt{1 - \sin\theta}\sqrt{1 + \sin\theta} = \cos\theta$ ✓.
+
+! example | Question IN4, IN5 — from the notes
+(a) Separate $\cos^{-1}(\cos\theta + i\sin\theta)$ into real and imaginary parts. (b) If $\cos^{-1}(\alpha + i\beta) = \theta + i\phi$, prove $\alpha^2\sec^2\theta - \beta^2\operatorname{cosec}^2\theta = 1$.
+**Solution.** (a) $\cos^{-1}z = \frac{\pi}{2} - \sin^{-1}z$; using IN1:
+$$\begin{aligned} &\cos^{-1}(\cos\theta + i\sin\theta) \\ &= \sin^{-1}\sqrt{\sin\theta} \\ &+ i\log\left[\sqrt{1 + \sin\theta} - \sqrt{\sin\theta}\right]. \end{aligned}$$
+(b) $\alpha = \cos\theta\cosh\phi$, $\beta = -\sin\theta\sinh\phi$: $\frac{\alpha^2}{\cos^2\theta} - \frac{\beta^2}{\sin^2\theta} = \cosh^2\phi - \sinh^2\phi = 1$.
+
+! example | Question IN6 — from the notes
+If $\sin^{-1}(x + iy) = \tan^{-1}(u + iv)$, prove that
+$$\begin{aligned} &[(x + 1)^2 + y^2][(x - 1)^2 + y^2] \\ &= \left(\frac{x^2 + y^2}{u^2 + v^2}\right)^2. \end{aligned}$$
+**Solution.** Let $z = x + iy = \sin\theta$, $w = u + iv = \tan\theta = \frac{z}{\sqrt{1 - z^2}}$. Then $\lvert w \rvert^2 = \frac{\lvert z \rvert^2}{\lvert 1 - z^2 \rvert}$, so $\lvert 1 - z \rvert\lvert 1 + z \rvert = \frac{\lvert z \rvert^2}{\lvert w \rvert^2}$. Squaring:
+$$\begin{aligned} &[(1 - x)^2 + y^2][(1 + x)^2 + y^2] \\ &= \left(\frac{x^2 + y^2}{u^2 + v^2}\right)^2. \end{aligned}$$
+
+! example | Question IN7, IN8 — from the notes
+Prove (a) $\operatorname{Sin}^{-1}(\operatorname{cosec}\theta)$ $= [2n + (-1)^n]\frac{\pi}{2} + i(-1)^n\log\cot\frac{\theta}{2}$; (b) $\operatorname{Sin}^{-1}(ix) = n\pi + i(-1)^n\log\left(x + \sqrt{1 + x^2}\right)$.
+**Solution.** (a) Let $\sin^{-1}(\operatorname{cosec}\theta) = x + iy$: $\sin x\cosh y = \operatorname{cosec}\theta$, $\cos x\sinh y = 0$. As $\operatorname{cosec}\theta > 1$, $y \neq 0$, so $\cos x = 0$, $x = \frac{\pi}{2}$, $\cosh y = \operatorname{cosec}\theta$, $y = \log(\operatorname{cosec}\theta + \cot\theta) = \log\cot\frac{\theta}{2}$. Then use $\operatorname{Sin}^{-1} = n\pi + (-1)^n\sin^{-1}$. (b) $\sin^{-1}(ix) = i\sinh^{-1}x = i\log\left(x + \sqrt{1 + x^2}\right)$; then the general value.
+
+! check | A condition added
+(a) is for $0 < \theta < \frac{\pi}{2}$, where $\operatorname{cosec}\theta > 1$ and $\cot\theta > 0$; (b) is for real $x$.
+
+! example | Question IN9, IN11, IN12 — from the notes
+Prove: (a) $\operatorname{Tan}^{-1}(\cos\theta + i\sin\theta)$ $= n\pi + \frac{\pi}{4} + \frac{i}{2}\log\tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right)$ for $-\frac{\pi}{2} < \theta < \frac{\pi}{2}$; (b) for $x > y > 0$, $\tan^{-1}\frac{x + iy}{x - iy} = \frac{\pi}{4} + \frac{i}{2}\log\frac{x + y}{x - y}$; (c) $\tan^{-1}\left[i\frac{x - a}{x + a}\right] = \frac{i}{2}\log\frac{x}{a}$.
+**Solution.** (a) Let $\tan^{-1}(\cos\theta \pm i\sin\theta) = x \pm iy$. $\tan 2x = \frac{2\cos\theta}{1 - 1} = \infty \Rightarrow x = \frac{\pi}{4}$; $\tanh 2y = \sin\theta \Rightarrow y = \frac{1}{2}\log\tan\left(\frac{\pi}{4} + \frac{\theta}{2}\right)$ (as in E1.15). (b) $\frac{x + iy}{x - iy} = \cos 2\phi + i\sin 2\phi$ with $\sin 2\phi = \frac{2xy}{x^2 + y^2}$; by (a), imaginary part $= \frac{1}{4}\log\frac{1 + \sin 2\phi}{1 - \sin 2\phi} = \frac{1}{4}\log\frac{(x + y)^2}{(x - y)^2}$. (c) $\tan^{-1}(it) = i\tanh^{-1}t = \frac{i}{2}\log\frac{1 + t}{1 - t}$ with $t = \frac{x - a}{x + a}$: $\frac{1 + t}{1 - t} = \frac{2x}{2a}$.
+
+! check | A condition added
+(c) needs $\frac{x}{a} > 0$ (e.g. $x, a > 0$), so that $\lvert t \rvert < 1$ and the real logarithm applies.
+
+! example | Question IN13, IN14, IN18 — from the notes
+(a) If $\cosh x = \sec\theta$, prove $x = \log(\sec\theta + \tan\theta)$. (b) Prove $\sinh^{-1}x = \tanh^{-1}\frac{x}{\sqrt{1 + x^2}}$. (c) If $\cos^{-1}(u + iv) = \alpha + i\beta$, prove that $\cos^2\alpha$ and $\cosh^2\beta$ are the roots of $x^2 - (1 + u^2 + v^2)x + u^2 = 0$.
+**Solution.** (a) $x = \cosh^{-1}\sec\theta = \log\left(\sec\theta + \sqrt{\sec^2\theta - 1}\right)$. (b) Put $x = \sinh t$: $\frac{x}{\sqrt{1 + x^2}} = \tanh t$. (c) $u = \cos\alpha\cosh\beta$, $v = -\sin\alpha\sinh\beta$. Sum: $\cos^2\alpha + \cosh^2\beta = 1 + u^2 + v^2$ (from $u^2 + v^2 = \cosh^2\beta + \cos^2\alpha - 1$); product $\cos^2\alpha\cosh^2\beta = u^2$.
+
+! check | A condition added
+(a) needs $-\frac{\pi}{2} < \theta < \frac{\pi}{2}$, so that $\sec\theta \geq 1$. As $\cosh$ is even, the full answer is $x = \pm\log(\sec\theta + \tan\theta)$; the value $\log(\sec\theta + \tan\theta)$ is the one with the same sign as $\theta$ (as in E1.20).
+
+## What it means
+
+- **Why logarithms appear**: $\sinh\theta = z$ is a quadratic in $e^\theta$, $e^{2\theta} - 2ze^\theta - 1 = 0$; solving gives $e^\theta = z + \sqrt{z^2 + 1}$ and so $\theta$ is a logarithm.
+- **Inverse circular of an imaginary number** is an imaginary multiple of an inverse hyperbolic: $\sin^{-1}(ix) = i\sinh^{-1}x$, $\tan^{-1}(ix) = i\tanh^{-1}x$.
+- **General values** add the periods: $n\pi$ (with $(-1)^n$) for $\sin^{-1}$, $2n\pi$ with $\pm$ for $\cos^{-1}$, $n\pi$ for $\tan^{-1}$.
+
+! example | Example 1 — a numerical value
+Find $\sinh^{-1}\frac{3}{4}$ and $\tanh^{-1}\frac{1}{2}$.
+**Solution.** $\log\left(\frac{3}{4} + \frac{5}{4}\right) = \boxed{\log 2}$; $\frac{1}{2}\log\frac{3/2}{1/2} = \boxed{\frac{1}{2}\log 3}$.
+
+! example | Example 2 — the inverse sine of a number larger than 1
+Find one value of $\sin^{-1}2$.
+**Solution.** As in IN7, $x = \frac{\pi}{2}$ and $\cosh y = 2$, $y = \log(2 + \sqrt{3})$: $\boxed{\frac{\pi}{2} + i\log(2 + \sqrt{3})}$.
+
+? $\sinh^{-1}z$ as a logarithm? :: $\log\left(z + \sqrt{z^2 + 1}\right)$.
+? $\tanh^{-1}z$ as a logarithm? :: $\frac{1}{2}\log\frac{1 + z}{1 - z}$.
+? General value $\operatorname{Sin}^{-1}z$? :: $n\pi + (-1)^n\sin^{-1}z$.
+? $\sin^{-1}(ix)$? :: $i\sinh^{-1}x = i\log\left(x + \sqrt{1 + x^2}\right)$.
+
+! exam | What the exam asks
+- Logarithmic forms of $\sinh^{-1}$, $\cosh^{-1}$, $\tanh^{-1}$ and their values.
+- $\sin^{-1}$, $\cos^{-1}$, $\tan^{-1}$ of complex numbers (IN1, IN9).
+- General values; $\sin^{-1}$ of numbers greater than 1.
+
+! recap | One-minute revision
+- $\sinh^{-1}z = \log(z + \sqrt{z^2 + 1})$, $\cosh^{-1}z = \log(z + \sqrt{z^2 - 1})$, $\tanh^{-1}z = \frac{1}{2}\log\frac{1 + z}{1 - z}$.
+- $\sin^{-1}(ix) = i\sinh^{-1}x$, $\tan^{-1}(ix) = i\tanh^{-1}x$.
+- Complex argument: put $= x + iy$, apply the direct function, separate, eliminate.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 10 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part II, chapter 8 (inverse functions)

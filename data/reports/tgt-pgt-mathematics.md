@@ -552,3 +552,126 @@ TGT: 9.1 to 9.5 are in Unit 7 (Trigonometry), 9.6 in Unit 8, which in the offici
 - `clairaut.svg`: the label moved below the plot, so that nothing covers the parabola.
 - Single-asterisk italics (`*…*`) used to show their asterisks on every notes page (19 places in the maths notes). `fmt` in `app.js` now turns them into italics, but only outside formulas, so stars inside `$…$` such as $T^*$ stay as they are (checked on the CSIR NET page with twelve such formulas).
 - Phone width: 22 display formulas of 8.2, 8.4 and 9.1 to 9.6 were still wider than a 375-pixel screen. They were split into one step per line; a script compared every display formula with the checked text, ignoring line breaks, alignment marks and spacing: no difference. In the browser at 375 pixels all 11 pages render with no KaTeX error and nothing wider than the screen.
+
+## Chapter 10, sections 10.1 to 10.6, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 109 to 114 (printed 108 to 113), read from the page images (`p-109.png` to `p-114.png` in this folder) and the text layer (`p109-114.txt`).
+
+Nothing of the PDF was missing. Every box, bullet, formula, table, figure, question (AR1, DM1, DM2, SR1, CR1, CR2), solution, boxed answer, shortcut box and add-on box of 10.1 to 10.6 is on the pages, with the same mathematics and words. Box titles that were only meta labels ("Complex notes, Chapter 1", "Complex notes, Chapter 1–2", "Complex LT, 25/04/26", "Your notes p.19") are replaced by short titles, as allowed.
+
+Every number, identity and step, of the PDF text and of the additions, was recomputed numerically (`verify.py`, 20636 checks, all agree): powers of i, conjugate and modulus rules on random numbers, the quadrant table against `cmath.phase` on 500 random points and the axes, AR1 (a) to (f), De Moivre for n = −6 to 6, DM1 for n = −4 to 7 and random θ, DM2, roots of complex numbers and of unity (sum, product, regular polygon), the square-root formula with its sign rule on 500 random numbers, the Cauchy–Riemann equations by finite differences (z², z̄, eᶻ, |z|², polar form for z³), CR2 along y = mx, Milne–Thomson. No slip was found in the PDF.
+
+Formula widths were measured with `width.py` (rough count of visible characters, as in the earlier checks): every display row is now at most 35, every inline formula at most 31. `fmt.py` (dollars, braces, aligned blocks, boxes, cards, spelling, LF endings): 0 problems. `tools/check_net.py`: 0 problems.
+
+### tp-10-01 (Complex numbers: basic definitions)
+- Checked against PDF page 109: six bullets, the Re/Im display, the Argand figure and its caption. All present and correct.
+- The check box (a, b real; z₂ ≠ 0 in the quotient rule; equality in the triangle inequality only when one number is 0 or one is a positive multiple of the other) is correct.
+- Additions (equality, division by the conjugate, real/imaginary tests, distance; Examples 1 to 3: i¹⁰³ = −i, sum 0, (3 + 4i)/(1 − 2i) = −1 + 2i with modulus √5, z = 2 + i; cards, exam, recap): correct.
+- No change.
+
+### tp-10-02 (Argument (amplitude) of a complex number)
+- Checked against PDF pages 109 and 110: the figure, a = r cos θ, b = r sin θ, the basic-angle display, the paragraphs on the argument and general values. All present and correct.
+- Change: in the PDF the figure is the first item inside the "From your notes" box; on the page it stood before the box. The `^` line is now the first line of the note box.
+- The check box (z ≠ 0; a ≠ 0 in tan α = |b/a|, α = π/2 when a = 0) is correct.
+- Additions (two coordinates for one point, why the quadrant matters, arguments of products; Examples 1 and 2: −√3 + i has r = 2, α = π/6, argument 5π/6; general values of arg i; cards): correct.
+
+### tp-10-03 (Principal argument)
+- Checked against PDF pages 110 and 111: definition, method, the eight-row table, the four-panel figure with its captions, AR1, the shortcut box. All present and correct.
+- The check box (non-zero numbers; Arg z̄ = −Arg z fails on the negative real axis, where both are π) is correct.
+- Additions (why (−π, π], tan⁻¹(b/a) wrong by π in quadrants II and III, adjusting; Example 1: (1 + i)(−1 + i) = −2, Arg π; Example 2: (−1 − i)³ = 2 − 2i, Arg −π/4; cards): correct.
+- No change.
+
+### tp-10-04 (Polar form, Euler's form and De Moivre's theorem)
+- Checked against PDF page 112: five bullets, the cos/sin display, DM1, DM2, the add-on on roots. All present and correct. roots-unity.svg is an addition.
+- Change: the Product bullet (inline formula about 48 characters) now has its formula on a two-row display; the words "for n factors the angles add" follow it.
+- Change: the DM1 statement (inline, about 47) is now a two-row display; the first display of the solution (about 48) is split into two aligned rows.
+- Added `! check | Condition added` after DM1: n is an integer, as in De Moivre's theorem, and for n < 0 also cos(θ/2) ≠ 0 (for θ an odd multiple of π both sides are undefined). The identity is false in general for other n (with principal powers, n = 1/2, θ = 4 gives 1.535 against 0.986i).
+- Change: the check box after the note box ("A condition added", on p/q in lowest terms) is now "Conditions added" and also says that n is an integer in 1 = e^{2nπi} and −1 = e^{(2n+1)πi}.
+- The check box on roots (z ≠ 0, n ≥ 1; polygon for n ≥ 3; sum 0 for n ≥ 2) is correct.
+- Additions (why angles add, multiplying by z, cos 3θ and sin 3θ; Examples 1 to 3: cube roots of −8 are −2 and 1 ± i√3, (1 + ω − ω²)(1 − ω + ω²) = 4, (1 + i)⁻⁸ = 1/16; cards, exam, recap): correct.
+
+### tp-10-05 (Square root of a complex number)
+- Checked against PDF page 113: the corrected formula, the sign rule, the derivation, SR1. All present and correct.
+- The check box (b = 0: ±√a for a ≥ 0, ±i√(−a) for a < 0, either inner sign) is correct.
+- Additions (two opposite roots, why the sign rule, polar check; Example 1: √(2i) = ±(1 + i); Example 2: discriminant −2i, roots 2 and 1 + i; card √i = ±(1 + i)/√2): correct.
+- No change.
+
+### tp-10-06 (Analytic functions and Cauchy–Riemann equations)
+- Checked against PDF pages 113 and 114: four bullets, the box "Necessary but not sufficient", CR1, CR2, the Milne–Thomson add-on. All present and correct.
+- Change: the first check box now also says that the polar form of the C–R equations needs z ≠ 0 (r > 0); the PDF leaves this out.
+- The Milne–Thomson check box (f up to an added constant ic; u must be harmonic) is correct.
+- Additions (where C–R come from, the ∂f/∂z̄ test, harmonic conjugates; Example 1: u = eˣ cos y gives f = eᶻ + ic; Example 2: |z|² differentiable only at 0, analytic nowhere; cards): correct.
+
+### Figures
+All four figures rendered (`fig-*.png`) and checked.
+- argand.svg: z = a + ib, z̄ = a − ib mirrored in the real axis, |z|, a, b. Correct.
+- arg-quadrants.svg: the four arcs are centred at the origin and run anticlockwise in I and II (α, π − α) and clockwise in III and IV (−(π − α), −α), as the caption says. Correct. Small difference from the PDF: the PDF marks the basic angle α in each panel; the SVG does not. Optional.
+- roots-unity.svg: six points at 0°, 60°, …, 300° on the circle, hexagon drawn, labels 1 and e^{iπ/3} at the right points. Correct.
+- argument.svg: **one fault, left for the owner.** The grey "θ + 2π" arc, `M61.0,112.0 A11,11 0 1 0 59.0,105.7`, has large-arc 1 and sweep 0, so the renderer puts its centre at (70, 105.7), not at the origin O (50, 112); it appears as a small circle beside O, crossing the θ arc. With sweep flag 1 (`A11,11 0 1 1 59.0,105.7`) the arc is centred at O, as in the PDF; a test render of that change is `fig-argument-sweep1.png` (the figure file itself was not changed). The red θ arc is correctly centred at O.
+
+### Placement
+TGT: 10.1 to 10.5 are in Unit 8 (Complex Numbers), part "Complex numbers and De Moivre's theorem", matching "Addition and multiplication of complex numbers" and "De Moivre's theorem and its applications". 10.6 is in the part "Functions of a complex variable" of the same unit, the nearest syllabus item. PGT: all six in Unit 10 (Trigonometry), part "Complex numbers", matching "Complex numbers; De Moivre's theorem and its applications". The `key` lines describe the pages. No change suggested.
+
+### Left for the owner
+- argument.svg: change the sweep flag of the grey arc from 0 to 1 (see Figures).
+- arg-quadrants.svg: optionally label α in each panel, as in the PDF.
+
+## Chapter 10, sections 10.7 to 10.11, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 115 to 128 (printed 114 to 127), read from the page images (`p-115.png` to `p-128.png` in this folder) and the text layer (`p115-128.txt`).
+
+Nothing of the PDF was missing. Every box, bullet, table, figure, shortcut box and question of 10.7 to 10.11 is on the pages with the same mathematics and words: E1.1, E1.3 to E1.25, E1.27 to E1.29; L1 to L3, L6 to L11, L13 to L25; P1, P7, P8, P10, P11, P13, P16; IN1, IN4 to IN9, IN11 to IN14, IN18; the 18 results and the "how to attack" box. The missing numbers (E1.2, E1.26, L4, L5, L12, P2 to P6, P9, P12, P14, P15, IN2, IN3, IN10, IN15 to IN17) are not in the PDF either (searched the text layer; the question titles match one to one).
+
+Every identity and step, of the PDF text and of the additions, was checked numerically with mpmath at 40 digits (`verify.py`, 1640 checks, all agree). Identities for complex arguments were tested at six random complex points each. "If f(α + iβ) = x + iy, prove …" questions were tested by solving the hypothesis with asin, acos or atan and checking the claim. General values were tested for several n. Edge cases were tested in `edge.py`. One condition was missing in the PDF (L23) and several conditions were added for the additions; no slip in a formula was found.
+
+Formula widths were measured with `width.py`: every display row is now at most 41, every inline formula at most 33. `fmt.py` (dollars, braces, aligned blocks, \left/\right per row, boxes, flash cards, LF endings): 0 problems. `tools/check_net.py`: 0 problems.
+
+### tp-10-07 (Exponential, circular and hyperbolic functions)
+- Checked against PDF pages 115 and 116: definitions box with the proof, properties box, figure, Osborn shortcut, E1.1, E1.3 to E1.5, E1.6. All present and correct. The three check boxes ((e^z)^n for integer n; tan² counts as a product of two sinh's; the domain of E1.6) are correct.
+- Change: the sin iθ proof (display, about 42 characters) split into two aligned rows.
+- Change: the cosh 2x chain (about 42 inline) is now two inline formulas.
+- Change: E1.1, the "Similarly …" chain (about 43 inline) is now three inline formulas; E1.3(a) (about 36 inline) two formulas.
+- Change: E1.5, the display line (about 50) split into two aligned rows.
+- Change: exam box said "the Gudermannian α = log tan(π/4 + θ/2)". α is the inverse Gudermannian of θ; it now says "i.e. θ is the Gudermannian of α".
+- Additions (even and odd parts, hyperbola, graphs, Example 1 cosh x = 5/4 gives x = ± log 2, Example 2 Osborn, cards): correct.
+
+### tp-10-08 (Separation into real and imaginary parts)
+- Checked against PDF pages 117 to 121: the table of eight separations with the method for fractions, E1.7(iii) to E1.25, E1.27 to E1.29. All present and correct. The check boxes (real variables; tan z = i has no solution; E1.20 sign of u; x real in E1.28) are correct.
+- Added `! check | A note added` after E1.25: the proof says the second root is ≥ 1, so sin²θ is the first; when sin²x = 1 the second root is exactly 1, and it is excluded only because it would give sinh²φ = −sinh²y/D < 0.
+- Changes for phone width: E1.7(iii) (62), E1.8 and E1.9 (46 each), E1.14 two displays (about 42 and 51), E1.15 (66), E1.19 (42), E1.20 (47 inline, now a display), E1.22 (46), E1.23 (52 and 46 inline, now two displays), E1.28 (54), Example 2 (67 inline, now a display) split into aligned rows; E1.11, E1.12, E1.15, E1.16, E1.25 and E1.29 long inline chains split into two inline formulas.
+- Additions (two equations from one, conjugate trick, Example 1 sin i and cos(1 + i), Example 2 |sin z|², cards): correct.
+
+### tp-10-09 (Logarithm of a complex number)
+- Checked against PDF pages 121 to 125: the note box, L1 to L25 (as numbered), Exercise 2 P1 to P16 (as numbered). All present and correct. The check boxes (log(z₁z₂) can fail for principal values; principal arguments in L15/L16; P8 needs x sec y > 0) are correct.
+- Change: the check box after L6 to L10 was garbled ("(b) also needs |b| < a is **not** required — but (d) uses (b), so it needs a > 0 …"). (d) in fact holds for any a, b with a² ≠ b² and for every value of the log (tan has period π). Rewritten.
+- Added `! check | A condition added` after L23 (missing condition in the PDF): the result needs a² > b². The quotient is (a + ib)/(a − ib); for a² < b² its Log is i[(2n + 1)π + tan⁻¹(2ab/(a² − b²))] (a = 0, b = 1 gives Log(−1) = (2n + 1)πi, not 2nπi). Verified numerically.
+- Added `! check | A condition added` after P10 and P11: (a) needs cos α > 0, as in L10; for cos α < 0 the factor is e^{α + (2m+1)π} with |cos α|. Verified numerically.
+- Changes for phone width: the principal-value display (42), L15 and L16 boxed results (50 each, now boxed two-row blocks), L22 (54), L23 statement (34 inline, now a display) and argument (51), L24 (42), P1 (45) split; L13 and P7 inline chains split.
+- Additions (why many values, i^i = e^{−π/2} ≈ 0.208, Example 1 (1 + i)^i, Example 2 log(−1 − i) = ½ log 2 − 3πi/4, cards): correct. L20 was also tested on the negative real axis (y = 0, x < 0): it still holds.
+
+### tp-10-10 (Inverse circular and inverse hyperbolic functions)
+- Checked against PDF pages 125 to 127: the note box with the sinh⁻¹ proof, IN1, IN4 to IN9, IN11 to IN14, IN18. All present and correct. IN1, IN4, IN9, IN11 and IN12 agree with mpmath's principal values. The check boxes (real domains; IN7 for 0 < θ < π/2; IN12 needs x/a > 0) are correct.
+- Added `! check | A condition added` after IN13, IN14, IN18: (a) needs −π/2 < θ < π/2; as cosh is even the full answer is x = ± log(sec θ + tan θ), and log(sec θ + tan θ) is the value with the sign of θ (the solution's √(sec²θ − 1) = tan θ needs θ ≥ 0).
+- Changes for phone width: IN1 statement (49 inline, now a display) and IN4 (49) split into two rows; IN7 and IN9 statements (38 inline) split into two inline formulas.
+- Additions (why logarithms appear, Example 1 sinh⁻¹(3/4) = log 2 and tanh⁻¹(1/2) = ½ log 3, Example 2 sin⁻¹2 = π/2 + i log(2 + √3), cards): correct.
+
+### tp-10-11 (Important results and exam tips: complex numbers)
+- Checked against PDF pages 127 and 128: the 18 results and the "how to attack" box. All present and correct; each result was recomputed.
+- Change: the check box item "(16): principal value of log a, a ≠ 0" reworded to "(16): a ≠ 0; the principal value of a^z uses the principal value log a".
+- Change: "What it means" said "Most UP PGT questions come from the third layer, most TGT questions from the first". The syllabus texts say the opposite of what this suggests: the TGT syllabus names exponential, circular and hyperbolic functions and separation into real and imaginary parts, the PGT syllabus only complex numbers and De Moivre's theorem. Replaced by a sentence saying what each syllabus names.
+- Additions (Example 1 MCQ test, Example 2 |cos i| = cosh 1 ≈ 1.543 and Arg(1 + i)⁴ = π, cards): correct.
+
+### Figures
+hyperbolic.svg rendered (`fig-hyperbolic.png`) and measured from its coordinates: cosh x has its minimum 1 at 0 and touches the dashed line y = 1; sinh x is odd, increasing and below cosh x; tanh x goes through 0 with slope 1 and lies between the dashed lines y = ±1 (1 unit = 26 px, scales consistent). Correct. Two small cosmetic points for the owner: the label "cosh x" touches the blue curve at its last letter, and the dashed lines y = 1 and y = −1 carry no labels.
+
+### Placement
+TGT: 10.7 to 10.11 are in Unit 8 (Complex Numbers), part "Functions of a complex variable"; the syllabus names exponential, circular and hyperbolic functions of a complex variable and separation into real and imaginary parts, and 10.9 and 10.10 belong with them. PGT: all five in Unit 10, part "Complex numbers" (syllabus: complex numbers; De Moivre's theorem and its applications). The `key` lines describe the pages. No change suggested.
+
+### Left for the owner
+- L23 in the notes themselves needs the condition a² > b² (now stated on the page).
+- The figure label points above.
+
+## Chapter 10, after the checks (22 November 2026)
+
+- `argument.svg`: the grey "θ + 2π" mark was an arc drawn about the wrong centre; it is now a full dashed circle about $O$. `arg-quadrants.svg` labels the basic angle $\alpha$ in each panel, as the PDF does. `hyperbolic.svg`: the "cosh x" label moved off its curve and the lines $y = \pm 1$ are labelled.
+- Phone width: 63 display formulas of 10.1 to 10.10 were still wider than a 375-pixel screen, and two long inline formulas in 10.9 could not wrap. They were split into one step per line (two inline formulas became displays; one fraction of E1.7(iii) is written as a product of two fractions, and $\frac{[\ldots]}{4}$ in E1.17 as $\frac{1}{4}[\ldots]$, the same values). A script compared every other display formula with the checked text, ignoring line breaks, alignment marks and spacing: no difference. In the browser at 375 pixels all 11 pages render with no KaTeX error and nothing wider than the screen.
