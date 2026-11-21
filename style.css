@@ -474,6 +474,40 @@ button.pill:hover { background: var(--soft-3); }
 .book-foot { margin-top: 14px; text-align: center; }
 .book-entry { display: flex; flex-direction: column; gap: 12px; }
 
+/* ---------- figures in the notes ---------- */
+.nb-figs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.nb-fig { margin: 0; padding: 8px 8px 6px; border: 1px solid var(--line); border-radius: 12px; background: #fff; text-align: center; max-width: 100%; }
+.nb-fig img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+/* several figures in a row: two per row on a phone, more on wider screens */
+.nb-fig:not(:only-child) { flex: 1 1 128px; max-width: 200px; }
+.nb-fig:not(:only-child) img { width: 100%; }
+.nb-fig figcaption { margin-top: 4px; color: #2f2a24; font-size: 0.9em; line-height: 1.35; }
+
+/* ---------- UP TGT / PGT Mathematics: slightly warm and light, with a faint graph-paper grid ---------- */
+:root { --m-paper: #fffaf2; --m-grid: rgba(214, 128, 64, 0.075); --m-accent: #b8502f; --m-soft: #fff1e2; --m-line: #f0d6bd; }
+:root[data-theme='dark'] { --m-paper: #241c16; --m-grid: rgba(255, 196, 150, 0.05); --m-accent: #f2a582; --m-soft: #2e231b; --m-line: #4a3828; }
+.maths-entry, body[data-subject='maths'] .card {
+  background-color: var(--m-paper);
+  background-image: linear-gradient(var(--m-grid) 1px, transparent 1px), linear-gradient(90deg, var(--m-grid) 1px, transparent 1px);
+  background-size: 22px 22px;
+  border-color: var(--m-line);
+}
+.maths-entry { position: relative; overflow: hidden; }
+.maths-entry::after { content: '∑  π  ∫  √'; position: absolute; top: 12px; right: 16px; font-size: calc(24px * var(--fs)); letter-spacing: 2px; color: var(--m-accent); opacity: 0.16; pointer-events: none; }
+.maths-entry h2 { color: var(--m-accent); }
+body[data-subject='maths'] .book-title, body[data-subject='maths'] .reader-title, body[data-subject='maths'] .ornate,
+body[data-subject='maths'] .card > h2, body[data-subject='maths'] .part-h { color: var(--m-accent); }
+body[data-subject='maths'] .nb-h { color: var(--m-accent); border-bottom: 2px dotted var(--m-line); }
+body[data-subject='maths'] .nb-lead { background: var(--m-soft); border-left-color: var(--m-accent); }
+body[data-subject='maths'] .reader .katex-display { padding: 8px 10px; border-radius: 10px; background: var(--m-soft); }
+body[data-subject='maths'] .nb-box { border-width: 1px 1px 1px 5px; border-radius: 12px; }
+body[data-subject='maths'] .nb-box .katex-display { background: transparent; padding: 4px 0; }
+body[data-subject='maths'] .nb-example .nb-sol { padding-top: 8px; border-top: 1px dashed var(--m-line); }
+body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { background: var(--m-paper); border-color: var(--m-line); }
+/* UP TGT / PGT Mathematics on the home screen, and the link to its full notes PDF */
+.maths-entry { display: flex; flex-direction: column; gap: 12px; }
+.maths-pdf { width: 100%; text-align: center; }
+
 /* NET / JRF corner on the home screen: warm and light like the rest of the app, with a dashed gold
    edge and a ribbon to mark it out. Each subject is a locked "door" that opens to show its syllabus,
    unit by unit, and what is planned. UGC NET has its own English / Hindi switch. */
@@ -598,6 +632,16 @@ button.topic { cursor: pointer; }
 .nb-box h3 { font-size: 1em; color: var(--head); }
 .nb-box > * + * { margin-top: 8px; }
 .nb-trick { background: var(--warn-bg); border-color: var(--gold); }
+/* Boxes of the TGT / PGT maths notes, as in the notes PDF: key notes (blue), syllabus add-ons (green),
+   worked examples (orange) and traps or corrections (red). Shortcuts use the trick box above. */
+.nb-note { background: var(--soft-2); border-color: var(--teal); }
+.nb-note h3 { color: var(--teal); }
+.nb-addon { background: var(--right-bg); border-color: var(--right); }
+.nb-addon h3 { color: var(--right-ink); }
+.nb-example { background: var(--soft-3); border-color: var(--saffron); }
+.nb-example h3 { color: var(--head); }
+.nb-check { background: var(--wrong-bg); border-color: var(--wrong); }
+.nb-check h3, .nb-check b { color: var(--wrong-ink); }
 .nb-trick h3, .nb-trick b { color: var(--warn-ink); }
 .nb-exam { background: var(--wrong-bg); border-color: var(--wrong); }
 .nb-exam h3, .nb-exam b { color: var(--wrong-ink); }
@@ -612,6 +656,14 @@ button.topic { cursor: pointer; }
 .nb-card summary::after { content: '👆'; flex: none; }
 .nb-card[open] summary::after { content: '✓'; color: var(--right); font-weight: 700; }
 .nb-card p { padding: 0 14px 12px; color: var(--right-ink); font-weight: 700; }
+/* A solved question of a past paper: where it is from, the question, its numbered options, and the
+   answer with the solution behind a tap. */
+.nb-mcq { margin: 14px 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
+.mcq-tag { display: inline-block; margin: 0 0 8px; padding: 2px 10px; border-radius: 999px; background: var(--chip); color: var(--note-ink); font-size: calc(12.5px * var(--fs)); font-weight: 700; }
+.mcq-q { margin: 0 0 8px; font-weight: 700; }
+.mcq-opts { margin: 0 0 12px; padding-left: 1.7em; }
+.mcq-opts li { margin: 5px 0; padding-left: 2px; }
+.mcq-ans .mcq-why { color: var(--ink); font-weight: 400; }
 .reader-end { text-align: center; padding: 14px; border-radius: 14px; background: var(--right-bg); color: var(--right-ink); font-weight: 700; margin-top: 24px !important; }
 .reader-pdf { width: 100%; }
 /* The printable page with all the notes of a topic. */
@@ -710,7 +762,7 @@ body:not([data-screen='home']) .about { display: none; }
   .reader, .reader[lang='hi'] { font-size: 11.5pt; }
   .reader-title { font-size: 18pt; }
   .nb-h { font-size: 13pt; break-after: avoid; }
-  .nb-box, .nb-card, .nb-lead, .nb-time li, .nb-table tr { break-inside: avoid; }
+  .nb-box, .nb-card, .nb-lead, .nb-time li, .nb-table tr, .nb-mcq, .nb-fig { break-inside: avoid; }
   .nb-table { overflow: visible; }
   .nb-table.wide table { min-width: 0; }
   .nb-card summary::after, .nb-card[open] summary::after { content: none; }

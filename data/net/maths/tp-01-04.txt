@@ -1,0 +1,78 @@
+@en
+# Binomial theorem
+
+> The binomial theorem expands $(a + b)^n$ without multiplying it out. Exam questions ask for a particular term: the general term, the middle term, the term independent of $x$, or a coefficient.
+
+## The theorem
+
+! note | Binomial theorem
+$$(a + b)^n = \sum_{r=0}^{n} {}^nC_r\, a^{n-r} b^r, \qquad T_{r+1} = {}^nC_r\, a^{n-r} b^r \text{ (general term).}$$
+There are $n + 1$ terms. Middle term: $n$ even $\Rightarrow \left(\frac{n}{2} + 1\right)$th; $n$ odd $\Rightarrow \frac{n+1}{2}$th and $\frac{n+3}{2}$th. In $\left(x + \frac{1}{x}\right)^{2n}$ the middle, $(n+1)$th, term is ${}^{2n}C_n$, independent of $x$.
+
+^ data/net/maths/fig/pascal.svg | Pascal's triangle: each entry = sum of the two above it
+
+! addon | Useful results
+$\sum {}^nC_r = 2^n$; sum of even-placed = sum of odd-placed coefficients $= 2^{n-1}$ ($n \geq 1$); $\sum r\, {}^nC_r = n 2^{n-1}$; $\sum ({}^nC_r)^2 = {}^{2n}C_n$. Greatest coefficient of $(1 + x)^n$: ${}^nC_{n/2}$ ($n$ even). Any index: $(1 + x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \cdots$ for $\lvert x \rvert < 1$.
+
+! check | A condition added
+The even-placed and odd-placed sums are equal only for $n \geq 1$. For $n = 0$ the expansion is just $1$: the sums are $1$ and $0$, and $2^{n-1} = \frac{1}{2}$ is neither.
+
+## What it means
+
+- Each term of $(a + b)^n$ is made by choosing $b$ from $r$ of the $n$ brackets and $a$ from the rest; this can be done in ${}^nC_r$ ways. That is why the coefficients are the numbers ${}^nC_r$, the rows of Pascal's triangle.
+- The general term is $T_{r+1}$, not $T_r$: the first term has $r = 0$. To find the term containing $x^k$, write $T_{r+1}$, collect the powers of $x$, and set the power equal to $k$.
+- In $(a - b)^n$ the signs alternate: $T_{r+1} = (-1)^r\, {}^nC_r\, a^{n-r} b^r$.
+- **Greatest coefficient**: ${}^nC_{n/2}$ if $n$ is even; if $n$ is odd, the two middle coefficients ${}^nC_{(n-1)/2} = {}^nC_{(n+1)/2}$ are equal and greatest.
+- **Sums of coefficients**: put $x = 1$ in $(1 + x)^n$ to get $\sum {}^nC_r = 2^n$; put $x = -1$ to get $\sum (-1)^r\, {}^nC_r = 0$, so the even-placed and odd-placed sums are equal, each $2^{n-1}$. For any polynomial, the sum of all coefficients is its value at $x = 1$.
+- **Any index**: for a negative or fractional $n$ the series does not stop, and it is valid only for $\lvert x \rvert < 1$. Two that are used again and again: $(1 - x)^{-1} = 1 + x + x^2 + \cdots$ and $(1 - x)^{-2} = 1 + 2x + 3x^2 + \cdots$.
+
+! example | Question BT1 — standard
+Find the term independent of $x$ in $\left(x^2 + \frac{1}{x}\right)^9$.
+**Solution.** $T_{r+1} = {}^9C_r (x^2)^{9-r} x^{-r} = {}^9C_r\, x^{18 - 3r}$. Put $18 - 3r = 0 \Rightarrow r = 6$: $T_7 = {}^9C_6 = \boxed{84}$.
+
+! example | Question BT2 — standard
+Find the middle term in the expansion of $\left(2x - \frac{x^2}{4}\right)^8$.
+**Solution.** $n = 8$ even $\Rightarrow$ middle term $T_5 = {}^8C_4 (2x)^4 \left(-\frac{x^2}{4}\right)^4 = 70 \cdot 16x^4 \cdot \frac{x^8}{256} = \boxed{\frac{35}{8} x^{12}}$.
+
+## More worked examples
+
+! example | Example 1 — a coefficient
+Find the coefficient of $x^5$ in $(1 + 2x)^8$.
+**Solution.** $T_{r+1} = {}^8C_r (2x)^r$. For $x^5$, $r = 5$: ${}^8C_5 \cdot 2^5 = 56 \cdot 32 = \boxed{1792}$.
+
+! example | Example 2 — the middle terms when $n$ is odd
+Find the middle terms of $\left(x - \frac{1}{x}\right)^7$.
+**Solution.** $n = 7$: the 4th and 5th terms. $T_4 = {}^7C_3 x^4 \left(-\frac{1}{x}\right)^3 = -35x$ and $T_5 = {}^7C_4 x^3 \left(-\frac{1}{x}\right)^4 = \frac{35}{x}$. So the middle terms are $\boxed{-35x}$ and $\boxed{\frac{35}{x}}$.
+
+! example | Example 3 — sum of coefficients
+Find the sum of the coefficients in $(3x - 2)^{10}$.
+**Solution.** Put $x = 1$: $(3 - 2)^{10} = \boxed{1}$.
+
+! example | Example 4 — a remainder
+Find the remainder when $2^{30}$ is divided by 7.
+**Solution.** $2^{30} = (2^3)^{10} = 8^{10} = (7 + 1)^{10} = 7k + 1$, since every term except the last contains 7. Remainder $= \boxed{1}$.
+
+! example | Example 5 — any index
+Expand $(1 + x)^{1/2}$ up to the term in $x^2$, and use it to estimate $\sqrt{1.02}$.
+**Solution.** $(1 + x)^{1/2} = 1 + \frac{1}{2}x + \frac{\frac{1}{2}\left(-\frac{1}{2}\right)}{2!}x^2 + \cdots = 1 + \frac{x}{2} - \frac{x^2}{8} + \cdots$, valid for $\lvert x \rvert < 1$. With $x = 0.02$: $\sqrt{1.02} \approx 1 + 0.01 - 0.00005 = \boxed{1.00995}$ (the true value is $1.0099505\ldots$).
+
+! trick | Finding a term fast
+Write the power of $x$ in $T_{r+1}$ as a linear expression in $r$, set it equal to the power you want, and solve. If $r$ is not a whole number between 0 and $n$, there is no such term and the answer is 0.
+
+? Which term is the general term of $(a + b)^n$? :: $T_{r+1} = {}^nC_r\, a^{n-r} b^r$.
+? How many terms has $(a + b)^{10}$, and which is the middle term? :: 11 terms; the 6th term is the middle term.
+? What is $\sum_{r=0}^{n} ({}^nC_r)^2$? :: ${}^{2n}C_n$.
+? Expand $(1 - x)^{-1}$. :: $1 + x + x^2 + x^3 + \cdots$ for $\lvert x \rvert < 1$.
+
+! exam | What the exam asks
+- The term independent of $x$, the middle term(s), or the coefficient of a given power.
+- Sums of binomial coefficients and identities such as $\sum r\, {}^nC_r = n 2^{n-1}$.
+- Remainders of large powers, and the expansion for any index.
+
+! recap | One-minute revision
+- $T_{r+1} = {}^nC_r\, a^{n-r} b^r$; $n + 1$ terms.
+- $n$ even: one middle term $T_{n/2 + 1}$; $n$ odd: two, $T_{(n+1)/2}$ and $T_{(n+3)/2}$.
+- $\sum {}^nC_r = 2^n$; even-placed $=$ odd-placed $= 2^{n-1}$; $\sum ({}^nC_r)^2 = {}^{2n}C_n$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 1 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XI, chapter 7: Binomial Theorem | https://ncert.nic.in/textbook.php?kemh1=7-14

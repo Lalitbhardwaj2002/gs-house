@@ -1,0 +1,55 @@
+{
+ "id": "pgt-mathematics",
+ "icon": "📐",
+ "math": true,
+ "langs": ["en"],
+ "notes": "maths",
+ "theme": "maths",
+ "title": { "en": "PGT Mathematics" },
+ "subtitle": { "en": "UPESSC PGT (Lecturer) · subject code 08 · topic-wise notes on the official 2026 syllabus" },
+ "pdf": { "href": "data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf", "en": "Full notes PDF (218 pages)" },
+ "about": {
+  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapter 1 of the notes is ready; the other chapters are being added."
+ },
+ "units": [
+  {
+   "id": "u1", "icon": "🔢", "en": "Algebra",
+   "line": { "en": "Relations and functions · matrices and determinants · equations and series · probability" },
+   "parts": [
+    {
+     "en": "Relations and functions",
+     "chapters": [
+      { "id": "tp-01-01", "en": "1.1 Sets and set operations",
+        "key": { "en": "Subsets and power set · laws of set algebra · De Morgan's laws · counting with Venn diagrams" } },
+      { "id": "tp-01-02", "en": "1.2 Relations and functions",
+        "key": { "en": "Equivalence relations and classes · one-one and onto functions · composition and inverse · binary operations" } }
+     ]
+    },
+    {
+     "en": "Equations and series",
+     "chapters": [
+      { "id": "tp-01-08", "en": "1.8 Quadratic equations and theory of equations",
+        "key": { "en": "Discriminant · relations between roots and coefficients · symmetric functions · transformations" } },
+      { "id": "tp-01-06", "en": "1.6 Sequences and series: AP, GP, HP",
+        "key": { "en": "nth term and sum · AM, GM, HM · sums of squares and cubes" } },
+      { "id": "tp-01-03", "en": "1.3 Permutations and combinations",
+        "key": { "en": "Counting principles · nPr and nCr · circular arrangements · derangements" } },
+      { "id": "tp-01-04", "en": "1.4 Binomial theorem",
+        "key": { "en": "General term · middle term · term independent of x · binomial coefficients" } },
+      { "id": "tp-01-05", "en": "1.5 Exponential and logarithmic series",
+        "key": { "en": "Series for e^x, a^x and log(1 + x) · sums with n!" } }
+     ]
+    }
+   ]
+  },
+  { "id": "u2", "icon": "📉", "en": "Calculus", "line": { "en": "Limits, continuity, differentiability · mean value theorems · series expansions · integration" } },
+  { "id": "u3", "icon": "🌊", "en": "Ordinary Differential Equations", "line": { "en": "Order and degree · first order equations · singular solutions · constant coefficients" } },
+  { "id": "u4", "icon": "🧭", "en": "Coordinate Geometry of Two Dimensions", "line": { "en": "General second-degree equation · conics · tangents and normals · chord of contact" } },
+  { "id": "u5", "icon": "🧊", "en": "Vectors and Three-Dimensional Geometry", "line": { "en": "Dot and cross products · lines and planes · skew lines · sphere, cone and cylinder" } },
+  { "id": "u6", "icon": "🧩", "en": "Abstract Algebra", "line": { "en": "Groups · subgroups · homomorphisms · Lagrange and Fermat · normal subgroups · rings and fields" } },
+  { "id": "u7", "icon": "🔷", "en": "Linear Algebra", "line": { "en": "Vector spaces · basis and dimension · linear transformations · rank-nullity" } },
+  { "id": "u8", "icon": "🌐", "en": "Vector Calculus", "line": { "en": "Gradient, divergence and curl · line, surface and volume integrals · Green, Gauss and Stokes" } },
+  { "id": "u9", "icon": "⚖️", "en": "Mechanics", "line": { "en": "Statics · centre of gravity · catenary · moment of inertia · projectiles · central orbits" } },
+  { "id": "u10", "icon": "📐", "en": "Trigonometry", "line": { "en": "Equations · triangles · inverse functions · heights and distances · De Moivre's theorem" } }
+ ]
+}

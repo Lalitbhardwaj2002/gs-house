@@ -192,6 +192,8 @@ const T = {
     netTopicOf: (i, n) => `Topic ${i} of ${n}`, netAllUnits: 'All units', netAllTopics: 'All topics', netUnitsTitle: 'Syllabus, unit by unit',
     netSeeSyllabus: 'Tap to see the syllabus', netUnitSyllabus: 'Official syllabus of this unit', netRefs: 'References and further reading',
     netTopicDone: 'Topic finished.', netNextTopic: 'Next topic', netSavePdf: 'Save this topic as PDF',
+    netAnswer: 'Answer and solution', netAnsIs: (a) => `Answer: ${a}`, netMore: 'Past papers and exam guide', netOpen: 'Open',
+    netPagesRead: (a, n) => `${a} of ${n} read`,
     bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank: all 17 topics, from current affairs to computers, each with a full test.',
     bookRefLine: 'Reference',
     notesPdf: 'All notes as one PDF', chapterPdf: 'Save this chapter as PDF', pdfTitle: 'Notes for offline reading',
@@ -270,6 +272,8 @@ const T = {
     netTopicOf: (i, n) => `विषय ${i} / ${n}`, netAllUnits: 'सभी इकाइयाँ', netAllTopics: 'सभी विषय', netUnitsTitle: 'पाठ्यक्रम, इकाई दर इकाई',
     netSeeSyllabus: 'पाठ्यक्रम देखने के लिए टैप करें', netUnitSyllabus: 'इस इकाई का आधिकारिक पाठ्यक्रम', netRefs: 'संदर्भ एवं आगे का अध्ययन',
     netTopicDone: 'विषय पूरा हुआ।', netNextTopic: 'अगला विषय', netSavePdf: 'इस विषय को PDF में सहेजें',
+    netAnswer: 'उत्तर और हल', netAnsIs: (a) => `उत्तर: ${a}`, netMore: 'पिछले प्रश्नपत्र और परीक्षा मार्गदर्शन', netOpen: 'खोलें',
+    netPagesRead: (a, n) => `${n} में से ${a} पढ़े`,
     bookRefLine: 'संदर्भ',
     notesPdf: 'सभी नोट्स एक PDF में', chapterPdf: 'इस अध्याय को PDF में सहेजें', pdfTitle: 'बिना इंटरनेट पढ़ने के लिए नोट्स',
     pdfHow: 'नीचे का बटन दबाएँ, फिर प्रिंटर के रूप में "Save as PDF" चुनें। फोन पर यही बटन प्रिंट खोलता है, जहाँ से PDF सहेजी जा सकती है।',
@@ -283,8 +287,11 @@ const T = {
     minRead: (m) => `${m} मिनट का पाठ`,
   },
 };
+// A page in one language only (an English-only subject) shows the app's own words in that language too.
+let pageLang = null;
 const t = (key, ...args) => {
-  const v = has(T[lang], key) ? T[lang][key] : T.en[key];
+  const l = pageLang || lang;
+  const v = has(T[l], key) ? T[l][key] : T.en[key];
   return typeof v === 'function' ? v(...args) : v;
 };
 function setLang(l) {
@@ -1041,6 +1048,7 @@ function networkHelp(err) {
 const app = $('#app');
 
 function setScreen(name) {
+  if (name !== 'book') { pageLang = null; delete document.body.dataset.subject; }
   ui.screen = name;
   ui.stageKey = '';
   document.body.dataset.screen = name;
@@ -1652,8 +1660,30 @@ function renderHome() {
       <div class="book-entry-head"><span class="book-emoji">📚</span><div><h2>${t('bookCardTitle')}</h2><p class="muted small">${t('bookCardSub')}</p></div></div>
       <button class="btn big" data-action="book">${t('bookOpen')} ▶</button>
     </section>
+    ${mathsHTML()}
     ${netHTML()}`}
     ${historyHTML()}`;
+}
+
+// UP TGT / PGT Mathematics on the home screen: two subjects, each with topic-wise notes arranged by
+// its own official syllabus (data/net/tgt-mathematics.json, data/net/pgt-mathematics.json). The notes
+// themselves are shared (data/net/maths/), and the full notes PDF is offered as it is. English only.
+const MATHS_PDF = 'data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf';
+const MATHS_SUBJECTS = [
+  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapter 1 notes ready' },
+  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapter 1 notes ready' },
+];
+function mathsHTML() {
+  const doors = MATHS_SUBJECTS.map((s) => `
+        <button class="topic ready" data-action="book-go" data-route="net/${s.id}"><span class="topic-icon">${s.icon}</span>
+          <span><span class="topic-name">${s.name}</span><span class="topic-meta">${s.meta}</span></span><span class="badge go">Open ▶</span>
+          <span class="topic-more">📖 ${s.ready}</span></button>`).join('');
+  return `
+    <section class="card maths-entry" lang="en">
+      <div class="book-entry-head"><span class="book-emoji">➗</span><div><h2>UP TGT / PGT Mathematics</h2><p class="muted small">Topic-wise notes on the official 2026 syllabus, with worked examples and shortcuts · English</p></div></div>
+      <div class="topics">${doors}</div>
+      <a class="btn maths-pdf" href="${MATHS_PDF}" target="_blank" rel="noopener">📄 Full notes PDF (218 pages, 1.6 MB)</a>
+    </section>`;
 }
 
 // NET / JRF corner on the home screen. The subjects are still to come, so each is a locked "door".
@@ -1847,6 +1877,8 @@ function openBook(route) {
 
 async function showBook(route, keepScroll = false) {
   book.route = route;
+  pageLang = null;
+  delete document.body.dataset.subject;
   setScreen('book');
   if (route.startsWith('net/')) { await showStudy(route, keepScroll); return; }
   if (!book.data) {
@@ -1953,12 +1985,19 @@ function bookTopicHTML(topic) {
 // Notes are plain text with a few marks, one per line:
 //   # title      ## heading      > opening line      - point      | a | b |  table row (first row = header)
 //   ~ year :: event  (timeline)      ? question :: answer  (tap-to-reveal card)
-//   ! kind | title   starts a box (remember, trick, exam, recap); its lines run until a blank line
+//   ! kind | title   starts a box (remember, trick, exam, recap; and for the TGT / PGT maths notes also note,
+//                    addon, example, check); its lines run until a blank line
 //   & source | link  a reference (the link is optional); the references are shown as a list at the end
+//   ^ file | caption  a figure (an .svg or .png file of the site, under data/); figures on consecutive lines
+//                     sit side by side
+//   % tag | question  a solved question: its options follow as "1) ...", "2) ...", then "= answer :: solution".
+//                     Plain lines before the options continue the question; lines after the answer continue
+//                     the solution. A blank line ends the question.
 // Inside a line, **bold** and ==highlight== work.
 function parseNotes(text) {
   const blocks = [];
   let box = null;
+  let mcq = null; // the running solved question; a blank line ends it
   let gap = true; // a blank line ends the running table, list, timeline or card group
   const target = () => (box ? box.items : blocks);
   const group = (type, item) => {
@@ -1970,7 +2009,26 @@ function parseNotes(text) {
   const cells = (s, sep) => s.split(sep).map((c) => c.trim());
   for (const raw of text.split('\n')) {
     const line = raw.trim();
-    if (!line) { box = null; gap = true; continue; }
+    if (!line) { box = null; mcq = null; gap = true; continue; }
+    if (line.startsWith('% ')) {
+      const at = line.indexOf(' | ');
+      mcq = { type: 'mcq', tag: at > 0 ? line.slice(2, at).trim() : '', q: [at > 0 ? line.slice(at + 3).trim() : line.slice(2)], opts: [], ans: null, why: [] };
+      target().push(mcq);
+      gap = true;
+      continue;
+    }
+    if (mcq) {
+      const opt = line.match(/^\d\)\s+(.+)$/);
+      if (mcq.ans !== null) mcq.why.push(line);
+      else if (line.startsWith('= ')) {
+        const at = line.indexOf('::');
+        mcq.ans = (at < 0 ? line.slice(2) : line.slice(2, at)).trim();
+        if (at >= 0 && line.slice(at + 2).trim()) mcq.why.push(line.slice(at + 2).trim());
+      } else if (opt) mcq.opts.push(opt[1]);
+      else if (mcq.opts.length) mcq.opts[mcq.opts.length - 1] += ` ${line}`;
+      else mcq.q.push(line);
+      continue;
+    }
     const start = line.match(/^!\s*(\w+)\s*\|\s*(.+)$/);
     if (start) { box = { type: 'box', kind: start[1], title: start[2], items: [] }; blocks.push(box); continue; }
     if (line.startsWith('## ')) { box = null; blocks.push({ type: 'h', text: line.slice(3) }); continue; }
@@ -1981,6 +2039,7 @@ function parseNotes(text) {
     else if (line.startsWith('~ ')) group('time', cells(line.slice(2), '::'));
     else if (line.startsWith('? ')) group('cards', cells(line.slice(2), '::'));
     else if (line.startsWith('& ')) group('refs', cells(line.slice(2), ' | '));
+    else if (line.startsWith('^ ')) group('figs', cells(line.slice(2), ' | '));
     else target().push({ type: 'p', text: line });
   }
   return blocks;
@@ -1988,7 +2047,7 @@ function parseNotes(text) {
 
 // `==text==` in the notes files once drew a highlighter stroke; the owner asked for it to go, so it is plain text now.
 const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/==(.+?)==/g, '$1');
-const BOX_ICON = { remember: '📌', trick: '🧠', exam: '🔥', recap: '⚡' };
+const BOX_ICON = { remember: '📌', trick: '🧠', exam: '🔥', recap: '⚡', note: '📘', addon: '➕', example: '✏️', check: '⚠️' };
 // One reference: a name, and a link if the line gave an https address.
 const refItem = ([text, url]) => `<li>${url && /^https:\/\//.test(url) ? `<a href="${esc(url)}" target="_blank" rel="noopener">${fmt(text)}</a>` : fmt(text)}</li>`;
 function notesHTML(blocks, open = false) {
@@ -1996,7 +2055,7 @@ function notesHTML(blocks, open = false) {
     switch (b.type) {
       case 'lead': return `<p class="nb-lead">${fmt(b.text)}</p>`;
       case 'h': return `<h2 class="nb-h">${fmt(b.text)}</h2>`;
-      case 'p': return `<p>${fmt(b.text)}</p>`;
+      case 'p': return `<p${/^\*\*Solution\.\*\*/.test(b.text) ? ' class="nb-sol"' : ''}>${fmt(b.text)}</p>`;   // the start of a worked solution
       case 'list': return `<ul class="nb-list">${b.items.map((i) => `<li>${fmt(i)}</li>`).join('')}</ul>`;
       case 'table': {
         const [head, ...rows] = b.items;
@@ -2006,6 +2065,11 @@ function notesHTML(blocks, open = false) {
       case 'time': return `<ol class="nb-time">${b.items.map(([when, what]) => `<li><b>${fmt(when)}</b><span>${fmt(what || '')}</span></li>`).join('')}</ol>`;
       case 'cards': return `<div class="nb-cards">${b.items.map(([q, a]) => `<details class="nb-card" ${open ? 'open' : ''}><summary><span>${fmt(q)}</span></summary><p>${fmt(a || '')}</p></details>`).join('')}</div>`;
       case 'refs': return `<aside class="nb-refs"><h3>📚 ${t('netRefs')}</h3><ol>${b.items.map(refItem).join('')}</ol></aside>`;
+      case 'figs': return `<div class="nb-figs">${b.items.filter(([src]) => /^data\/[\w./-]+\.(svg|png)$/.test(src)).map(([src, cap]) => `<figure class="nb-fig">
+        <img src="${esc(src)}" alt="${esc((cap || '').replace(/\$/g, ''))}" loading="lazy">${cap ? `<figcaption>${fmt(cap)}</figcaption>` : ''}</figure>`).join('')}</div>`;
+      case 'mcq': return `<div class="nb-mcq">${b.tag ? `<p class="mcq-tag">${fmt(b.tag)}</p>` : ''}${b.q.map((p) => `<p class="mcq-q">${fmt(p)}</p>`).join('')}
+        <ol class="mcq-opts">${b.opts.map((o) => `<li>${fmt(o)}</li>`).join('')}</ol>
+        <details class="nb-card mcq-ans" ${open ? 'open' : ''}><summary><span>${t('netAnswer')}</span></summary><p class="mcq-key">${t('netAnsIs', fmt(b.ans || ''))}</p>${b.why.map((p) => `<p class="mcq-why">${fmt(p)}</p>`).join('')}</details></div>`;
       case 'box': return `<aside class="nb-box nb-${esc(b.kind)}"><h3>${BOX_ICON[b.kind] || '📌'} ${fmt(b.title)}</h3>${notesHTML(b.items, open)}</aside>`;
       default: return '';
     }
@@ -2156,7 +2220,7 @@ function setBookQuiz(value) {
 const study = {};   // subject id -> its JSON
 const studyChapters = (unit) => (unit.parts || []).flatMap((part) => part.chapters);
 const isRead = (c) => Boolean((bookProgress[c.id] || {}).read);
-const readMeter = (read, n) => `<div class="meter"><span class="m-label">${t('netReadN', read, n)}</span><span class="m-bar"><i style="--w:${pct(read, n)}%" class="hi"></i></span><span class="m-val">${pct(read, n)}%</span></div>`;
+const readMeter = (read, n, words = 'netReadN') => `<div class="meter"><span class="m-label">${t(words, read, n)}</span><span class="m-bar"><i style="--w:${pct(read, n)}%" class="hi"></i></span><span class="m-val">${pct(read, n)}%</span></div>`;
 
 // Mathematics in the notes of a subject marked "math" is written as LaTeX between $ signs ($$ for a
 // displayed line) and drawn by KaTeX, which is fetched the first time such a note is opened. Without
@@ -2225,7 +2289,9 @@ async function showStudy(route, keepScroll) {
     if (!still()) return;
   }
   const subject = study[subjectId];
-  const unit = unitId ? subject.units.find((u) => u.id === unitId && u.parts) : null;
+  pageLang = subject.langs && subject.langs.length === 1 ? subject.langs[0] : null;
+  if (subject.theme) document.body.dataset.subject = subject.theme;
+  const unit = unitId ? [...subject.units, ...(subject.extras || [])].find((u) => u.id === unitId && u.parts) : null;
   const chapter = unit && chapterId ? studyChapters(unit).find((c) => c.id === chapterId) : null;
   if (chapter) { await showStudyChapter(subject, unit, chapter, keepScroll); return; }
   const syllabus = await studySyllabus(subjectId);
@@ -2235,7 +2301,8 @@ async function showStudy(route, keepScroll) {
 }
 
 // The subject: its units in syllabus order. A unit with notes opens them; the others unfold to
-// show what the official syllabus lists for them.
+// show what the official syllabus lists for them. Below the units come the subject's "extras":
+// groups of pages that are not units of the syllabus (solved past papers, the exam guide).
 function studySubjectHTML(s, syllabus) {
   const all = s.units.flatMap(studyChapters);
   const row = (u, i) => {
@@ -2250,22 +2317,33 @@ function studySubjectHTML(s, syllabus) {
     return `<details class="unit-soon"><summary class="topic soon">${head}<span class="badge">${t('comingSoon')}</span><span class="topic-more">${t('netSeeSyllabus')}</span></summary>
         <ul class="unit-syl">${items}</ul></details>`;
   };
+  const extra = (u) => {
+    const list = studyChapters(u);
+    const head = `<span class="topic-icon">${u.icon}</span><span><span class="topic-name">${bookName(u)}</span><span class="topic-meta">${u.line ? bookName(u.line) : ''}</span></span>`;
+    return list.length
+      ? `<button class="topic ready" data-action="book-go" data-route="net/${s.id}/${u.id}">${head}<span class="badge go">${t('netOpen')} ▶</span>
+        <span class="topic-more">${t('netPagesRead', list.filter(isRead).length, list.length)}</span></button>`
+      : `<div class="topic soon">${head}<span class="badge">${t('comingSoon')}</span></div>`;
+  };
   return `
     ${bookBar('')}
     <section class="hero book-hero">
       <div class="book-emoji">${s.icon}</div>
       <h1 class="book-title">${bookName(s.title)}</h1>
       <p class="tagline">${bookName(s.subtitle)}</p>
+      ${s.pdf ? `<a class="btn maths-pdf" href="${esc(s.pdf.href)}" target="_blank" rel="noopener">📄 ${bookName(s.pdf)}</a>` : ''}
     </section>
     <section class="card">
       <h2>${t('netUnitsTitle')}</h2>
       ${all.length ? readMeter(all.filter(isRead).length, all.length) : ''}
       <div class="topics">${s.units.map(row).join('')}</div>
     </section>
+    ${(s.extras || []).length ? `<section class="card"><h2>${t('netMore')}</h2><div class="topics">${s.extras.map(extra).join('')}</div></section>` : ''}
     <p class="muted small center">${bookName(s.about)}</p>`;
 }
 
 // One unit: the official syllabus (folded), the topics in their parts, and the unit's references.
+// An "extra" group uses the same page, without a unit number or a syllabus.
 function studyUnitHTML(s, unit, syllabus) {
   const list = studyChapters(unit);
   const no = s.units.indexOf(unit) + 1;
@@ -2280,17 +2358,18 @@ function studyUnitHTML(s, unit, syllabus) {
           <div>
             <h3>${bookName(c)}</h3>
             ${c.key ? `<p class="muted small ch-key">${bookName(c.key)}</p>` : ''}
-            <div class="ch-actions"><button class="btn" data-action="book-go" data-route="net/${s.id}/${unit.id}/${c.id}">📖 ${t('readNotes')}</button></div>
+            <div class="ch-actions"><button class="btn" data-action="book-go" data-route="net/${s.id}/${unit.id}/${c.id}">📖 ${no ? t('readNotes') : t('netOpen')}</button></div>
           </div>
         </article>`;
       }).join('')}</div>`).join('');
-  const items = unitSyllabusItems(syllabus, no - 1);
+  const items = no ? unitSyllabusItems(syllabus, no - 1) : '';
   return `
     ${bookBar(`net/${s.id}`, t('netAllUnits'))}
     <section class="card">
-      <p class="eyebrow center">${bookName(s.title)} · ${t('netUnitNo', no)}</p>
+      <p class="eyebrow center">${bookName(s.title)}${no ? ` · ${t('netUnitNo', no)}` : ''}</p>
       <h2 class="ornate">${unit.icon} ${bookName(unit)}</h2>
-      ${readMeter(list.filter(isRead).length, list.length)}
+      ${unit.about ? `<p class="muted small center">${bookName(unit.about)}</p>` : ''}
+      ${readMeter(list.filter(isRead).length, list.length, no ? 'netReadN' : 'netPagesRead')}
       ${items ? `<details class="unit-official"><summary>📜 ${t('netUnitSyllabus')}</summary><ul class="unit-syl">${items}</ul></details>` : ''}
       ${parts}
       ${unit.refs ? `<aside class="nb-refs"><h3>📚 ${t('netRefs')}</h3><ol>${unit.refs.map((r) => refItem([r.text, r.url])).join('')}</ol></aside>` : ''}
@@ -2301,7 +2380,7 @@ async function showStudyChapter(s, unit, chapter, keepScroll) {
   const route = book.route;
   if (!book.notes[chapter.id]) {
     app.innerHTML = SPINNER;
-    try { await loadNotes(chapter.id, `data/net/${s.id}`); } catch { showError(t('broken')); return; }
+    try { await loadNotes(chapter.id, `data/net/${s.notes || s.id}`); } catch { showError(t('broken')); return; }
     if (book.route !== route || ui.screen !== 'book') return;
   }
   const notes = book.notes[chapter.id];
@@ -2311,10 +2390,11 @@ async function showStudyChapter(s, unit, chapter, keepScroll) {
   const title = (blocks.find((b) => b.type === 'title') || {}).text || chapter[lang] || chapter.en;
   const words = JSON.stringify(blocks).split(/\s+/).length;
   const go = (c, label) => (c ? `<button class="btn" data-action="book-go" data-route="net/${s.id}/${unit.id}/${c.id}">${label}</button>` : '');
+  const no = s.units.indexOf(unit) + 1;   // 0 for a group that is not a unit of the syllabus
   app.innerHTML = `
-    ${bookBar(`net/${s.id}/${unit.id}`, t('netAllTopics'))}
-    <article class="card reader${s.math ? ' has-math' : ''}" lang="${lang === 'hi' ? 'hi' : 'en'}">
-      <p class="eyebrow">${t('netUnitNo', s.units.indexOf(unit) + 1)} · ${t('netTopicOf', at + 1, list.length)} · ${t('minRead', Math.max(1, Math.round(words / 170)))}</p>
+    ${bookBar(`net/${s.id}/${unit.id}`, no ? t('netAllTopics') : bookName(unit))}
+    <article class="card reader${s.math ? ' has-math' : ''}" lang="${(pageLang || lang) === 'hi' ? 'hi' : 'en'}">
+      <p class="eyebrow">${no ? `${t('netUnitNo', no)} · ${t('netTopicOf', at + 1, list.length)}` : `${bookName(unit)} · ${at + 1} / ${list.length}`} · ${t('minRead', Math.max(1, Math.round(words / 170)))}</p>
       <h1 class="reader-title">${fmt(title)}</h1>
       ${notesHTML(blocks)}
       <p class="reader-end no-print" id="reader-end">🎉 ${t('netTopicDone')}</p>

@@ -12,6 +12,11 @@ per chapter in data/net/<subject>/. For these the script checks that every chapt
 the English and the Hindi part have the same structure, and that every note ends in references.
 A subject with "langs": ["en"] is in English only. Formulas are LaTeX between $ signs; the script
 checks that every line has an even number of them.
+
+A subject may also have "extras": groups of pages that are not units of the syllabus (solved past
+papers, the exam guide). Their pages are notes files too. A solved question in a notes file is
+'% tag | question', then four options '1) ...' to '4) ...', then '= answer :: solution' (the answer
+is one option number, or several separated by commas); a blank line ends it.
 """
 import json
 import re
@@ -63,17 +68,57 @@ for path in sorted(folder.glob('*.txt')):
 # ---- Subjects that have notes: data/net/<subject>.json and data/net/<subject>/<chapter id>.txt ----
 # The notes use the format of the book companion (see parseNotes in app.js), with reference lines
 # "& source | link" at the end. English and Hindi must have the same structure.
-MARKS = ['# ', '## ', '> ', '- ', '|', '~ ', '? ', '! ', '& ']
+MARKS = ['# ', '## ', '> ', '- ', '|', '~ ', '? ', '! ', '& ', '% ', '^ ']
+SITE = folder.parent.parent      # figures are named by their path from the site root
 
 
 def shape(text):
     """The sequence of line kinds of one language part, and its problems."""
     kinds, bad = [], []
     width = None
-    for raw in text.splitlines():
+    mcq = None      # the running solved question: [its first words, number of options, answered?]
+
+    def close():
+        if mcq and mcq[1] != 4:
+            bad.append(f'solved question with {mcq[1]} options, not 4: {mcq[0]}')
+        if mcq and not mcq[2]:
+            bad.append(f'solved question without an "= answer :: solution" line: {mcq[0]}')
+
+    for raw in text.splitlines() + ['']:
         line = raw.strip()
+        if line.count('$') % 2:
+            bad.append(f'a formula is not closed (odd number of $): {line[:50]}')
+        if '==' in line or '__' in line:
+            bad.append(f'only **bold** is allowed: {line[:40]}')
         if not line:
             width = None
+            close()
+            mcq = None
+            continue
+        if line.startswith('% '):
+            close()
+            mcq = [line[:40], 0, False]
+            kinds.append('%')
+            continue
+        if mcq:
+            if mcq[2]:
+                kinds.append('=+')
+            elif line.startswith('= '):
+                mcq[2] = True
+                kinds.append('=')
+                answer, _, why = line[2:].partition('::')
+                picks = [a.strip() for a in answer.split(',')]
+                if not all(re.fullmatch(r'[1-9]', a) and int(a) <= mcq[1] for a in picks) or len(set(picks)) != len(picks):
+                    bad.append(f'answer is not a list of option numbers: {line[:40]}')
+                if not why.strip():
+                    bad.append(f'answer without a solution: {mcq[0]}')
+            elif re.match(r'^\d\)\s+\S', line):
+                mcq[1] += 1
+                kinds.append(')')
+                if not line.startswith(f'{mcq[1]}) '):
+                    bad.append(f'options are not numbered in order: {line[:40]}')
+            else:
+                kinds.append('%+')
             continue
         kind = next((m.strip() for m in MARKS if line.startswith(m)), 'p')
         kinds.append(kind)
@@ -86,24 +131,27 @@ def shape(text):
             width = None
         if kind in ('~', '?') and ' :: ' not in line:
             bad.append(f'no " :: " in: {line[:40]}')
+        if kind == '^':
+            src = line[2:].split(' | ', 1)[0].strip()
+            if not re.fullmatch(r'data/[\w./-]+\.(svg|png)', src) or not (SITE / src).is_file():
+                bad.append(f'figure file not found: {src}')
         if kind == '&' and ' | ' in line and not line.split(' | ', 1)[1].startswith('https://'):
             bad.append(f'reference link is not https: {line[:60]}')
-        if kind == '!' and not re.match(r'^! (remember|trick|exam|recap) \| .+', line):
+        if kind == '!' and not re.match(r'^! (remember|trick|exam|recap|note|addon|example|check) \| .+', line):
             bad.append(f'unknown box: {line[:40]}')
-        if '==' in line or '__' in line:
-            bad.append(f'only **bold** is allowed: {line[:40]}')
-        if line.count('$') % 2:
-            bad.append(f'a formula is not closed (odd number of $): {line[:50]}')
     return kinds, bad
 
 
+used = {}      # notes folder -> chapter ids that use a file in it (two subjects may share one folder)
 for path in sorted(folder.glob('*.json')):
     subject = json.loads(path.read_text(encoding='utf-8'))
+    notes_dir = folder / subject.get('notes', path.stem)
+    used.setdefault(notes_dir, set())
     seen = set()
     chapters = 0
     wanted = subject.get('langs', ['en', 'hi'])     # a subject may be in English only ("langs": ["en"])
     words = {w: 0 for w in wanted}
-    for unit in subject['units']:
+    for unit in subject['units'] + subject.get('extras', []):
         for key in ('id', 'icon', *wanted):
             if not unit.get(key):
                 print(f"{path.name}: unit {unit.get('id')} has no {key}"); problems += 1
@@ -113,9 +161,10 @@ for path in sorted(folder.glob('*.json')):
                 if c['id'] in seen:
                     print(f"{path.name}: chapter id {c['id']} is used twice"); problems += 1
                 seen.add(c['id'])
+                used[notes_dir].add(c['id'])
                 if any(not c.get(w) for w in wanted):
                     print(f"{path.name}: chapter {c['id']} needs a name in: {', '.join(wanted)}"); problems += 1
-                notes = folder / path.stem / f"{c['id']}.txt"
+                notes = notes_dir / f"{c['id']}.txt"
                 if not notes.exists():
                     print(f'{path.name}: no notes file for {c["id"]}'); problems += 1
                     continue
@@ -138,9 +187,10 @@ for path in sorted(folder.glob('*.json')):
                 if 'hi' in shapes and shapes['en'] != shapes['hi']:
                     at = next((i for i, (a, b) in enumerate(zip(shapes['en'], shapes['hi'])) if a != b), min(len(shapes['en']), len(shapes['hi'])))
                     print(f"{notes.name}: English and Hindi differ in structure at line-item {at + 1} ({len(shapes['en'])} and {len(shapes['hi'])} items)"); problems += 1
-    extra = sorted(f.stem for f in (folder / path.stem).glob('*.txt') if f.stem not in seen) if (folder / path.stem).is_dir() else []
-    if extra:
-        print(f'{path.name}: notes files that no chapter uses: {extra}'); problems += 1
     print(f"{path.name}: {len(subject['units'])} units, {chapters} chapters with notes; words " + ', '.join(f'{w} {n}' for w, n in words.items()))
+for notes_dir, ids in used.items():
+    extra = sorted(f.stem for f in notes_dir.glob('*.txt') if f.stem not in ids) if notes_dir.is_dir() else []
+    if extra:
+        print(f'{notes_dir.name}/: notes files that no chapter uses: {extra}'); problems += 1
 print(f'{problems} problems')
 sys.exit(1 if problems else 0)
