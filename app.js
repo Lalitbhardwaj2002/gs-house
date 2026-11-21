@@ -1667,8 +1667,7 @@ function renderHome() {
 
 // UP TGT / PGT Mathematics on the home screen: two subjects, each with topic-wise notes arranged by
 // its own official syllabus (data/net/tgt-mathematics.json, data/net/pgt-mathematics.json). The notes
-// themselves are shared (data/net/maths/), and the full notes PDF is offered as it is. English only.
-const MATHS_PDF = 'data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf';
+// themselves are shared (data/net/maths/); the full notes PDF is sold by email (below). English only.
 const MATHS_SUBJECTS = [
   { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapters 1 to 5 notes ready' },
   { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapters 1 to 5 notes ready' },
@@ -1686,24 +1685,22 @@ function mathsHTML() {
     </section>`;
 }
 
-// The full notes PDF is locked with a password. A one-time fee of ₹10 by UPI unlocks it, on trust (the
-// owner's choice, 22 November 2026; a static site cannot check a payment by itself): the reader pays by
-// the QR code or a UPI app, then gives a name, an email and the 12-digit UPI reference. These are sent to
-// the owner by email (FormSubmit), who matches the reference in his bank app later, and the reader is
-// shown the password at once. The password is only lightly encoded here, so that it is not plain text.
-// A device that has unlocked is remembered (localStorage), so the button then goes straight to the password.
+// The full notes PDF is sold for a one-time fee of ₹10 by UPI. A static site cannot check a payment,
+// and the first version (an instant password on trust) let anyone in with a made-up reference, so for now
+// delivery is by hand (owner's choice, 22 November 2026): the reader pays by the QR code or a UPI app,
+// then gives a name, an email and the 12-digit UPI reference; these reach the owner by email (FormSubmit),
+// the owner finds the payment in the bank app and emails the PDF. The PDF is no longer on the site.
+// A device that has sent its details is remembered (localStorage), so the button then says so.
 const MATHS_PAY = {
   upi: 'lalitbhardwaj2002asr@okhdfcbank',
   payee: 'Lalit Bhardwaj',
   fee: 10,
   qr: 'data/net/maths/upi-qr.svg',          // made from the same upi://pay link, amount included
   mail: 'https://formsubmit.co/ajax/lalitbhardwaj2001asr@gmail.com',
-  key: 'U0dAdGlsYUw=',
-  saved: 'gsh-maths-pdf',
+  saved: 'gsh-maths-pdf-sent',
 };
-const mathsPdfPass = () => atob(MATHS_PAY.key).split('').reverse().join('');
 const upiLink = () => `upi://pay?pa=${MATHS_PAY.upi}&pn=${encodeURIComponent(MATHS_PAY.payee)}&am=${MATHS_PAY.fee}.00&cu=INR&tn=${encodeURIComponent('GS HOUSE maths notes PDF')}`;
-function mathsPaid() {
+function mathsSent() {
   try { return JSON.parse(localStorage.getItem(MATHS_PAY.saved) || 'null'); } catch { return null; }
 }
 
@@ -1715,9 +1712,9 @@ function openMathsPdf() {
   let step = '';
   const steps = {
     intro: () => `
-      <h2 id="dialog-title">🔒 Full notes PDF</h2>
-      <p>The full notes PDF opens with a password. Unlock it for a one-time fee of <b>₹${P.fee}</b>.</p>
-      <p class="small">Pay by UPI, type the payment's reference number, and you get the password at once.</p>
+      <h2 id="dialog-title">📄 Full notes PDF</h2>
+      <p>The full notes PDF costs a one-time fee of <b>₹${P.fee}</b>.</p>
+      <p class="small">Pay by UPI and send the payment's reference number. The PDF is emailed to you as soon as the payment is confirmed.</p>
       <div class="dialog-actions">
         <button class="btn" data-pay="close">Not now</button>
         <button class="btn primary" data-pay="pay">Pay ₹${P.fee} ▶</button>
@@ -1739,22 +1736,24 @@ function openMathsPdf() {
         <label class="field">Your name<input name="payer" autocomplete="name" maxlength="80"></label>
         <label class="field">Your email<input name="mail" type="email" autocomplete="email" maxlength="120"></label>
         <label class="field">UPI reference number (12 digits)<input name="utr" inputmode="numeric" autocomplete="off" maxlength="14"></label>
-        <p class="small">It is in your UPI app, in the details of this payment (UPI Ref. No. or UTR). Your name, email and reference go to the site owner by email (through FormSubmit), only to match your payment.</p>
+        <p class="small">It is in your UPI app, in the details of this payment (UPI Ref. No. or UTR). Your name, email and reference go to the site owner by email (through FormSubmit), only to find your payment and send you the PDF.</p>
         <p class="pay-err" role="alert" hidden></p>
         <div class="dialog-actions">
           <button type="button" class="btn" data-pay="pay">‹ Back</button>
-          <button type="submit" class="btn primary">Unlock ▶</button>
+          <button type="submit" class="btn primary">Send ▶</button>
         </div>
       </form>`,
-    done: () => `
-      <h2 id="dialog-title">✅ PDF unlocked</h2>
-      <p>Thank you! The password of the PDF is:</p>
-      <div class="upi-id"><code>${esc(mathsPdfPass())}</code><button class="btn" data-pay="copy-pass">Copy</button></div>
-      <p class="small">Your PDF app asks for it when the file opens. It works on any device, and this device remembers it.</p>
+    sent: () => {
+      const s = mathsSent() || {};
+      return `
+      <h2 id="dialog-title">✅ Details sent</h2>
+      <p>Thank you! Once your payment${s.utr ? ` (UPI ref ${esc(s.utr)})` : ''} is confirmed, the PDF is emailed to <b>${esc(s.mail || 'you')}</b>.</p>
+      <p class="small">If it has not arrived within a day, check the spam folder, then send your details again.</p>
       <div class="dialog-actions">
-        <button class="btn" data-pay="close">Close</button>
-        <a class="btn primary" href="${MATHS_PDF}" target="_blank" rel="noopener">📄 Open the PDF</a>
-      </div>`,
+        <button class="btn" data-pay="form">Send again</button>
+        <button class="btn primary" data-pay="close">Close</button>
+      </div>`;
+    },
   };
   const show = (name) => {
     step = name;
@@ -1775,7 +1774,6 @@ function openMathsPdf() {
     const k = b.dataset.pay;
     if (k === 'close') close();
     else if (k === 'copy-upi') copy(b, P.upi);
-    else if (k === 'copy-pass') copy(b, mathsPdfPass());
     else show(k);
   });
   box.addEventListener('submit', async (e) => {
@@ -1797,26 +1795,28 @@ function openMathsPdf() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          _subject: `GS HOUSE: ₹${P.fee} paid for the maths notes PDF (UPI ref ${utr})`,
+          _subject: `GS HOUSE: check ₹${P.fee} for the maths notes PDF (UPI ref ${utr}), then email the PDF`,
           _template: 'table', _captcha: 'false',
           Name: payer, email: mail, 'UPI reference': utr, Amount: `₹${P.fee}`, 'Paid to': P.upi,
           Time: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+          'To do': 'Find this reference and ₹10 in the bank app; if it is there, reply to this email with the PDF.',
         }),
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok || String(out.success) !== 'true') throw new Error(out.message || `HTTP ${res.status}`);
     } catch {
       err.textContent = 'Your details could not be sent just now. Check the internet connection and try again.';
       err.hidden = false;
       go.disabled = false;
-      go.textContent = 'Unlock ▶';
+      go.textContent = 'Send ▶';
       return;
     }
-    try { localStorage.setItem(P.saved, JSON.stringify({ utr, at: Date.now() })); } catch { /* private window: shown this time only */ }
-    show('done');
+    try { localStorage.setItem(P.saved, JSON.stringify({ utr, mail, at: Date.now() })); } catch { /* private window */ }
+    show('sent');
   });
   document.addEventListener('keydown', onKey, true);
   document.body.appendChild(box);
-  show(mathsPaid() ? 'done' : 'intro');
+  show(mathsSent() ? 'sent' : 'intro');
 }
 
 // NET / JRF corner on the home screen. The subjects are still to come, so each is a locked "door".
