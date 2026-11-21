@@ -1,0 +1,62 @@
+@en
+# Tangents and normals
+
+> The derivative at a point is the slope of the tangent there; the normal is the line through the same point perpendicular to it. Questions ask for their equations, for points where the tangent has a given slope, and for the angle between two curves.
+
+## Tangent and normal
+
+! note | Tangents and normals
+^ data/net/maths/fig/tangent-normal.svg | the tangent and the normal at $P(x_0, y_0)$
+- Slope of the tangent at $(x_0, y_0)$: $m = f'(x_0) = \tan\theta$ ($\theta$ = angle with the positive $x$-axis).
+- Tangent: $y - y_0 = f'(x_0)(x - x_0)$.
+- Normal ($\perp$ tangent): $y - y_0 = -\frac{1}{f'(x_0)}(x - x_0)$.
+- $f'(x_0) = 0$: tangent parallel to the $x$-axis ($y = y_0$). $f'(x_0) \to \infty$: tangent parallel to the $y$-axis ($x = x_0$).
+
+! example | Question TN1 — from the notes (NCERT Ex. 15)
+Find the point on the curve $y = \sqrt{4x - 3} - 1$ where the slope of the tangent is $\frac{2}{3}$.
+**Solution.** $\frac{dy}{dx} = \frac{4}{2\sqrt{4x - 3}} = \frac{2}{\sqrt{4x - 3}} = \frac{2}{3} \Rightarrow \sqrt{4x - 3} = 3 \Rightarrow x = 3$, $y = 3 - 1 = 2$. Point $\boxed{(3, 2)}$.
+
+! example | Question TN2 — from the notes (NCERT Ex. 16)
+Find the equations of all tangents to $y + \frac{2}{x - 3} = 0$ with slope 2.
+**Solution.** $y = -\frac{2}{x - 3}$, $y' = \frac{2}{(x - 3)^2} = 2 \Rightarrow (x - 3)^2 = 1 \Rightarrow x = 4$ or 2. $x = 4$: $y = -2$; tangent $y + 2 = 2(x - 4)$, i.e. $\boxed{y - 2x + 10 = 0}$. $x = 2$: $y = 2$; tangent $\boxed{y - 2x + 2 = 0}$.
+
+! addon | Lengths, angle between curves
+Subtangent $= \left\lvert \frac{y}{y'} \right\rvert$, subnormal $= \lvert yy' \rvert$, length of tangent $= \left\lvert \frac{y}{y'}\sqrt{1 + y'^2} \right\rvert$, length of normal $= \left\lvert y\sqrt{1 + y'^2} \right\rvert$. (Parabola $y^2 = 4ax$ has constant subnormal $2a$.) Angle between two curves at a common point: $\tan\theta = \left\lvert \frac{m_1 - m_2}{1 + m_1m_2} \right\rvert$; orthogonal if $m_1m_2 = -1$. Polar curves: $\tan\phi = r\frac{d\theta}{dr}$ (angle between radius vector and tangent); $p = r\sin\phi$.
+
+## What it means
+
+- **Steps**: find $y_0$ if only $x_0$ is given; compute $f'(x_0)$; put it in the point–slope form. For the normal use the negative reciprocal of the slope.
+- **Parametric curves**: the slope is $\frac{dy/dt}{dx/dt}$ at the parameter value of the point.
+- **Tangent from a slope**: set $f'(x) = m$, solve for $x$, and find each point; there may be several tangents with the same slope (TN2 has two).
+- **Subtangent and subnormal** are the projections on the $x$-axis of the tangent and normal segments between the point and the $x$-axis.
+- **Angle between curves** is the angle between their tangents at the point where they meet. They cut **orthogonally** if the tangents are perpendicular.
+
+! example | Example 1 — tangent and normal
+Find the tangent and normal to $y = x^2 - 2x + 3$ at $x = 2$.
+**Solution.** $y_0 = 3$, $y' = 2x - 2 = 2$ at $x = 2$. Tangent: $y - 3 = 2(x - 2)$, i.e. $\boxed{y = 2x - 1}$. Normal: $y - 3 = -\frac{1}{2}(x - 2)$, i.e. $\boxed{x + 2y = 8}$.
+
+! example | Example 2 — a parametric curve
+Find the tangent to $x = a\cos^3 t$, $y = a\sin^3 t$ at $t = \frac{\pi}{4}$.
+**Solution.** $\frac{dy}{dx} = \frac{3a\sin^2 t\cos t}{-3a\cos^2 t\sin t} = -\tan t = -1$. The point is $\left(\frac{a}{2\sqrt{2}}, \frac{a}{2\sqrt{2}}\right)$, so the tangent is $\boxed{x + y = \frac{a}{\sqrt{2}}}$.
+
+! example | Example 3 — orthogonal curves
+Show that $x^2 = 4y$ and $4y + x^2 = 8$ cut at right angles.
+**Solution.** Adding, $2x^2 = 8$: they meet at $(\pm 2, 1)$. At $(2, 1)$: for $x^2 = 4y$, $m_1 = \frac{x}{2} = 1$; for $4y = 8 - x^2$, $m_2 = -\frac{x}{2} = -1$. $m_1m_2 = -1$: orthogonal (and likewise at $(-2, 1)$).
+
+? Equation of the tangent to $y = f(x)$ at $(x_0, y_0)$? :: $y - y_0 = f'(x_0)(x - x_0)$.
+? When is the tangent parallel to the $x$-axis? :: When $f'(x_0) = 0$.
+? What is the subnormal of the parabola $y^2 = 4ax$? :: $2a$, the same at every point.
+? When do two curves cut orthogonally? :: When the slopes of their tangents at the common point satisfy $m_1m_2 = -1$.
+
+! exam | What the exam asks
+- Equations of tangents and normals at a point, or with a given slope.
+- Points where the tangent is horizontal or vertical; parametric curves.
+- Angle between two curves, subtangent and subnormal.
+
+! recap | One-minute revision
+- Slope $= f'(x_0)$; tangent $y - y_0 = m(x - x_0)$; normal slope $-\frac{1}{m}$.
+- Horizontal tangent: $f' = 0$; vertical: $f' \to \infty$.
+- Angle between curves $\tan\theta = \left\lvert \frac{m_1 - m_2}{1 + m_1m_2} \right\rvert$; parabola subnormal $2a$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 6 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 6: Application of Derivatives | https://ncert.nic.in/textbook.php?lemh1=6-6

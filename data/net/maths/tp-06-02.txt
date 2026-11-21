@@ -1,0 +1,59 @@
+@en
+# Partial differentiation and Euler's theorem
+
+> For a function of two variables, a partial derivative lets one variable change while the other is held fixed. Euler's theorem on homogeneous functions turns many long calculations into one line.
+
+## Partial derivatives and Euler's theorem
+
+! note | Partial differentiation and Euler's theorem
+$u_x = \frac{\partial u}{\partial x}$ is found by treating $y$ as a constant. If $u$ is **homogeneous of degree** $n$ (i.e. $u = x^n f(y/x)$, or $u(tx, ty) = t^n u$), then (Euler)
+$$xu_x + yu_y = nu, \qquad x^2u_{xx} + 2xyu_{xy} + y^2u_{yy} = n(n - 1)u.$$
+
+! addon | Corollaries, total derivative, Jacobian
+If $f(u)$ is homogeneous of degree $n$: $xu_x + yu_y = n\frac{f(u)}{f'(u)}$. Total derivative $\frac{du}{dt} = u_x\frac{dx}{dt} + u_y\frac{dy}{dt}$; implicit $\frac{dy}{dx} = -\frac{f_x}{f_y}$; Jacobian $\frac{\partial(x, y)}{\partial(r, \theta)} = r$.
+
+! example | Question PD1 — standard
+If $u = x^3 + y^3 + 3x^2y$, verify Euler's theorem.
+**Solution.** Degree $n = 3$. $u_x = 3x^2 + 6xy$, $u_y = 3y^2 + 3x^2$. $xu_x + yu_y = 3x^3 + 6x^2y + 3y^3 + 3x^2y = 3(x^3 + y^3 + 3x^2y) = 3u$ ✓.
+
+! example | Question PD2 — standard
+If $u = \tan^{-1}\frac{x^3 + y^3}{x - y}$, show that $xu_x + yu_y = \sin 2u$.
+**Solution.** $\tan u = \frac{x^3 + y^3}{x - y}$ is homogeneous of degree 2. So $xu_x + yu_y = 2\frac{\tan u}{\sec^2 u} = 2\sin u\cos u = \sin 2u$.
+
+## What it means
+
+- **Homogeneous of degree $n$**: replacing $x, y$ by $tx, ty$ multiplies the function by $t^n$. Every term of a homogeneous polynomial has the same total degree; $\frac{x^3 + y^3}{x - y}$ has degree $3 - 1 = 2$; $\frac{x}{y}$ and $\sin\frac{y}{x}$ have degree 0.
+- **Mixed partial derivatives**: $u_{xy} = u_{yx}$ whenever these derivatives are continuous.
+- **Why the corollary holds**: if $v = f(u)$ is homogeneous of degree $n$, Euler gives $xv_x + yv_y = nv$, and $v_x = f'(u)u_x$, $v_y = f'(u)u_y$; divide by $f'(u)$.
+- **Implicit derivative**: for $f(x, y) = 0$, $\frac{dy}{dx} = -\frac{f_x}{f_y}$. For $x^2 + y^2 = 25$, $\frac{dy}{dx} = -\frac{x}{y}$.
+- **Jacobian** $\frac{\partial(x, y)}{\partial(r, \theta)}$ is the determinant of the partial derivatives; for polar coordinates $x = r\cos\theta$, $y = r\sin\theta$ it equals $r$, which is why $dx\,dy = r\,dr\,d\theta$.
+
+! example | Example 1 — partial derivatives
+Find $u_x$, $u_y$ and $u_{xy}$ for $u = x^2y + e^{xy}$.
+**Solution.** $u_x = 2xy + ye^{xy}$, $u_y = x^2 + xe^{xy}$, $u_{xy} = 2x + e^{xy} + xye^{xy}$, which equals $u_{yx}$.
+
+! example | Example 2 — Euler with degree 0
+If $u = \sin^{-1}\frac{x}{y} + \tan^{-1}\frac{y}{x}$, find $xu_x + yu_y$.
+**Solution.** $u$ depends only on $\frac{y}{x}$, so it is homogeneous of degree 0: $xu_x + yu_y = \boxed{0}$.
+
+! example | Example 3 — the second-order form
+If $u = x^4 + y^4 + 2x^2y^2$, find $x^2u_{xx} + 2xyu_{xy} + y^2u_{yy}$.
+**Solution.** $n = 4$: $n(n - 1)u = \boxed{12u}$.
+
+? What is $xu_x + yu_y$ for $u$ homogeneous of degree $n$? :: $nu$ (Euler's theorem).
+? What is $x^2u_{xx} + 2xyu_{xy} + y^2u_{yy}$ for such $u$? :: $n(n - 1)u$.
+? Degree of $\frac{x^2 + y^2}{x + y}$? :: 1.
+? What is $\frac{\partial(x, y)}{\partial(r, \theta)}$ for polar coordinates? :: $r$.
+
+! exam | What the exam asks
+- Degree of homogeneity and $xu_x + yu_y$ by Euler's theorem, including the $\frac{f(u)}{f'(u)}$ form.
+- Partial derivatives and mixed derivatives of given functions.
+- Total derivative, implicit derivative and the polar Jacobian.
+
+! recap | One-minute revision
+- Homogeneous of degree $n$: $u(tx, ty) = t^nu$.
+- $xu_x + yu_y = nu$; second order $n(n - 1)u$; with $f(u)$: $n\frac{f(u)}{f'(u)}$.
+- $\frac{dy}{dx} = -\frac{f_x}{f_y}$; polar Jacobian $= r$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 6 (the full PDF is linked on the subject page)
+& Shanti Narayan and P. K. Mittal, Differential Calculus, the chapter on partial differentiation

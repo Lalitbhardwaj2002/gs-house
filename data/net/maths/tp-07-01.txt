@@ -1,0 +1,64 @@
+@en
+# Indefinite integrals: standard forms
+
+> Integration reverses differentiation. Almost every integral in the syllabus is brought, by a substitution or by parts, to one of the standard forms below, so these must be known by heart.
+
+## The standard forms
+
+! note | Standard integrals
+Integration is the reverse of differentiation: $\int f(x)\,dx = F(x) + C$ where $F' = f$.
+| Integral | Value | Integral | Value |
+| $\int x^n\,dx$ ($n \neq -1$) | $\frac{x^{n+1}}{n+1}$ | $\int \frac{1}{x}\,dx$ | $\log\lvert x \rvert$ |
+| $\int e^x\,dx$ | $e^x$ | $\int a^x\,dx$ | $\frac{a^x}{\log a}$ |
+| $\int \sin x$, $\int \cos x$ | $-\cos x$, $\sin x$ | $\int \sec^2 x$, $\int \text{cosec}^2 x$ | $\tan x$, $-\cot x$ |
+| $\int \sec x\tan x$ | $\sec x$ | $\int \text{cosec}\, x\cot x$ | $-\text{cosec}\, x$ |
+| $\int \tan x$ | $\log\lvert \sec x \rvert$ | $\int \cot x$ | $\log\lvert \sin x \rvert$ |
+| $\int \sec x$ | $\log\lvert \sec x + \tan x \rvert = \log\left\lvert \tan\left(\frac{\pi}{4} + \frac{x}{2}\right) \right\rvert$ | $\int \text{cosec}\, x$ | $\log\lvert \text{cosec}\, x - \cot x \rvert = \log\left\lvert \tan\frac{x}{2} \right\rvert$ |
+| $\int \frac{dx}{\sqrt{1 - x^2}}$ | $\sin^{-1} x$ | $\int \frac{dx}{1 + x^2}$ | $\tan^{-1} x$ |
+| $\int \frac{dx}{x^2 - a^2}$ | $\frac{1}{2a}\log\left\lvert \frac{x - a}{x + a} \right\rvert$ | $\int \frac{dx}{a^2 - x^2}$ | $\frac{1}{2a}\log\left\lvert \frac{a + x}{a - x} \right\rvert$ |
+| $\int \frac{dx}{x^2 + a^2}$ | $\frac{1}{a}\tan^{-1}\frac{x}{a}$ | $\int \frac{dx}{\sqrt{a^2 - x^2}}$ | $\sin^{-1}\frac{x}{a}$ |
+| $\int \frac{dx}{\sqrt{x^2 \pm a^2}}$ | $\log\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert$ | $\int \frac{dx}{x\sqrt{x^2 - 1}}$ | $\sec^{-1} x$ |
+$$\int \sqrt{a^2 - x^2}\,dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\frac{x}{a}$$
+$$\int \sqrt{x^2 \pm a^2}\,dx = \frac{x}{2}\sqrt{x^2 \pm a^2} \pm \frac{a^2}{2}\log\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert$$
+$$\int e^x[f(x) + f'(x)]\,dx = e^xf(x)$$
+
+! check | A modulus and conditions added
+The two $\log\tan$ forms need a modulus, now written in: $\sec x + \tan x = \tan\left(\frac{\pi}{4} + \frac{x}{2}\right)$ and $\text{cosec}\, x - \cot x = \tan\frac{x}{2}$ can be negative (at $x = 2$ and at $x = -1$, for instance), and then $\log\tan$ is not defined. In the table $a > 0$, and $a \neq 1$ in $\int a^x\,dx$. The form $\int \frac{dx}{x\sqrt{x^2 - 1}} = \sec^{-1} x$ holds for $x > 1$; the answer $\sec^{-1}\lvert x \rvert$ covers $x < -1$ as well.
+
+## What it means
+
+- **The constant $C$**: two functions with the same derivative differ by a constant, so every indefinite integral carries "$+ C$". Two answers that look different may both be right: $\int \sin x\cos x\,dx$ is $\frac{\sin^2 x}{2}$ or $-\frac{\cos^2 x}{2}$, which differ by $\frac{1}{2}$.
+- **Check by differentiating**: the derivative of the answer must give back the integrand. For example
+$$\begin{aligned} \frac{d}{dx}\log\lvert \sec x + \tan x \rvert &= \frac{\sec x\tan x + \sec^2 x}{\sec x + \tan x} \\ &= \sec x. \end{aligned}$$
+- **Linear substitution**: if $\int f(x)\,dx = F(x)$ and $a \neq 0$, then $\int f(ax + b)\,dx = \frac{1}{a}F(ax + b)$. So $\int \cos 3x\,dx = \frac{\sin 3x}{3}$ and $\int e^{2x + 1}\,dx = \frac{e^{2x+1}}{2}$.
+- The form $\int e^x[f + f']\,dx = e^xf$ follows from $(e^xf)' = e^x(f + f')$.
+
+! example | Example 1 — using the table
+Evaluate $\int \left(3x^2 + \frac{2}{x} + e^x - \sec^2 x\right)dx$.
+**Solution.** $\boxed{x^3 + 2\log\lvert x \rvert + e^x - \tan x + C}$.
+
+! example | Example 2 — a square root
+Evaluate $\int \frac{dx}{\sqrt{9 - 4x^2}}$.
+**Solution.** $\int \frac{dx}{2\sqrt{\frac{9}{4} - x^2}} = \frac{1}{2}\sin^{-1}\frac{x}{3/2} = \boxed{\frac{1}{2}\sin^{-1}\frac{2x}{3} + C}$.
+
+! example | Example 3 — completing the square
+Evaluate $\int \frac{dx}{x^2 + 4x + 13}$.
+**Solution.** $x^2 + 4x + 13 = (x + 2)^2 + 9$, so the integral is $\boxed{\frac{1}{3}\tan^{-1}\frac{x + 2}{3} + C}$.
+
+? $\int \tan x\,dx$? :: $\log\lvert \sec x \rvert + C$.
+? $\int \frac{dx}{x^2 + a^2}$? :: $\frac{1}{a}\tan^{-1}\frac{x}{a} + C$.
+? $\int \sqrt{a^2 - x^2}\,dx$? :: $\frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\frac{x}{a} + C$.
+? $\int e^x(\sin x + \cos x)\,dx$? :: $e^x\sin x + C$, by the $e^x[f + f']$ form.
+
+! exam | What the exam asks
+- Direct use of the standard forms, often after completing the square.
+- Integrals of the form $e^x[f + f']$.
+- Recognising which of several answers differ only by a constant.
+
+! recap | One-minute revision
+- $\int x^n = \frac{x^{n+1}}{n+1}$, $\int \frac{1}{x} = \log\lvert x \rvert$, $\int \tan x = \log\lvert \sec x \rvert$, $\int \sec x = \log\lvert \sec x + \tan x \rvert$.
+- $\frac{1}{x^2 + a^2} \to \frac{1}{a}\tan^{-1}\frac{x}{a}$; $\frac{1}{\sqrt{a^2 - x^2}} \to \sin^{-1}\frac{x}{a}$; $\frac{1}{\sqrt{x^2 \pm a^2}} \to \log\lvert x + \sqrt{x^2 \pm a^2} \rvert$.
+- $\int f(ax + b) = \frac{1}{a}F(ax + b)$; $\int e^x(f + f') = e^xf$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 7 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part II, chapter 7: Integrals | https://ncert.nic.in/textbook.php?lemh2=1-6

@@ -1,0 +1,86 @@
+@en
+# Definite integrals
+
+> A definite integral is the limit of a sum of thin rectangles, and it equals the change $F(b) - F(a)$ in an antiderivative. Its properties, P1 to P8 below, evaluate most exam integrals without finding an antiderivative at all.
+
+## The definite integral and its properties
+
+! note | The definite integral
+^ data/net/maths/fig/riemann-sum.svg | the area under $y = f(x)$ as the limit of the sum of thin rectangles of width $h$
+$\int_a^b f(x)\,dx = F(b) - F(a)$. Geometrically it is the (signed) **area** under $y = f(x)$ from $a$ to $b$: the limit of the sum of thin rectangles,
+$$\int_a^b f(x)\,dx = \lim_{h \to 0} h\sum_{r=0}^{n-1} f(a + rh), \quad nh = b - a.$$
+Areas below the $x$-axis count as negative.
+
+! check | Conditions added
+Both formulas need $f$ integrable on $[a, b]$ (for instance continuous there), and $F(b) - F(a)$ needs $F' = f$ on the whole of $[a, b]$. Without that the formula can fail: $F = -\frac{1}{x}$ has $F' = \frac{1}{x^2}$, but $\int_{-1}^1 \frac{dx}{x^2}$ is not $F(1) - F(-1) = -2$; the integrand is unbounded at 0 and the integral diverges.
+
+! note | Properties P1–P8 (marked important)
+- P1 $\int_a^b f(x)\,dx = \int_a^b f(t)\,dt$. P2: $\int_a^b f = -\int_b^a f$. P3: $\int_a^b f = \int_a^c f + \int_c^b f$.
+- P4 $\int_a^b f(x)\,dx = \int_a^b f(a + b - x)\,dx$. P5: $\int_0^a f(x)\,dx = \int_0^a f(a - x)\,dx$.
+- P6 $\int_0^{2a} f(x)\,dx = \int_0^a f(x)\,dx + \int_0^a f(2a - x)\,dx$.
+- P7 $\int_0^{2a} f = 2\int_0^a f$ if $f(2a - x) = f(x)$; $= 0$ if $f(2a - x) = -f(x)$.
+- P8 $\int_{-a}^a f = 2\int_0^a f$ if $f$ is even; $= 0$ if $f$ is odd.
+
+^ data/net/maths/fig/area-even.svg | even: equal halves, $2\int_0^a$
+^ data/net/maths/fig/area-odd.svg | odd: areas cancel, integral $= 0$
+
+! example | Question DI1 — standard (King's property P4)
+Evaluate $I = \int_0^{\pi/2} \frac{\sin x}{\sin x + \cos x}\,dx$.
+**Solution.** By P5 ($x \to \frac{\pi}{2} - x$): $I = \int_0^{\pi/2} \frac{\cos x}{\cos x + \sin x}\,dx$. Adding: $2I = \int_0^{\pi/2} 1\,dx = \frac{\pi}{2} \Rightarrow \boxed{I = \frac{\pi}{4}}$.
+
+! example | Question DI2 — standard (odd function P8)
+Evaluate $\int_{-1}^1 x^3\cos x\,dx$ and $\int_{-2}^2 x^2\,dx$.
+**Solution.** $x^3\cos x$ is odd $\Rightarrow \boxed{0}$. $x^2$ is even $\Rightarrow 2\int_0^2 x^2\,dx = 2 \cdot \frac{8}{3} = \boxed{\frac{16}{3}}$.
+
+! example | Question DI3 — standard (limit of a sum)
+Evaluate $\int_0^2 x^2\,dx$ as the limit of a sum.
+**Solution.** $h = \frac{2}{n}$:
+$$\begin{aligned} &\lim h\sum_{r=0}^{n-1}(rh)^2 = \lim h^3\frac{(n-1)n(2n-1)}{6} \\ &= \lim \frac{8}{n^3} \cdot \frac{(n-1)n(2n-1)}{6} \\ &= \frac{8 \cdot 2}{6} = \boxed{\frac{8}{3}}. \end{aligned}$$
+
+! example | Question DI4 — standard
+Evaluate $\lim_{n \to \infty} \sum_{r=1}^{n} \frac{n}{n^2 + r^2}$.
+**Solution.** $= \lim \sum \frac{1}{n} \cdot \frac{1}{1 + (r/n)^2} = \int_0^1 \frac{dx}{1 + x^2} = \boxed{\frac{\pi}{4}}$.
+
+! trick | Shortcut / time-saver — Ready answers
+$\int_0^{\pi/2} \frac{\sin^n x}{\sin^n x + \cos^n x}\,dx = \frac{\pi}{4}$; $\int_a^b \frac{f(x)}{f(x) + f(a + b - x)}\,dx = \frac{b - a}{2}$; $\int_0^{\pi/2} \log\sin x\,dx = -\frac{\pi}{2}\log 2$; $\int_0^\pi xf(\sin x)\,dx = \frac{\pi}{2}\int_0^\pi f(\sin x)\,dx$. Period $T$: $\int_0^{nT} f = n\int_0^T f$.
+
+! check | Conditions added
+The $\frac{b - a}{2}$ answer needs $f(x) + f(a + b - x) \neq 0$ on $[a, b]$. In the period rule $n$ is a whole number (for $n = \frac{1}{2}$ it fails: $\int_0^{\pi} \sin x\,dx = 2$, not $\frac{1}{2}\int_0^{2\pi} \sin x\,dx = 0$).
+
+## What it means
+
+- **Fundamental theorem**: if $F' = f$ on $[a, b]$ (with $f$ continuous), then $\int_a^b f = F(b) - F(a)$; no "$+ C$" is needed, since it cancels.
+- **Substitution in a definite integral**: change the limits too. For $\int_0^1 2x e^{x^2}\,dx$ put $u = x^2$: $\int_0^1 e^u\,du = e - 1$.
+- **P4 and P5 ("King's property")**: replacing $x$ by $a + b - x$ reflects the interval onto itself. Adding the two forms of the integral often cancels the hard part, as in DI1. (DI1 uses P5, which is P4 with $a = 0$.)
+- **Even and odd**: $f$ is even if $f(-x) = f(x)$ (graph symmetric about the $y$-axis) and odd if $f(-x) = -f(x)$ (symmetric about the origin). Products: even $\times$ even and odd $\times$ odd are even; even $\times$ odd is odd.
+- **Area and integral differ** when the curve goes below the axis: $\int_0^{2\pi}\sin x\,dx = 0$, but the area between the curve and the axis is 4.
+
+! example | Example 1 — P4 with $x$ in front
+Evaluate $\int_0^\pi \frac{x\sin x}{1 + \cos^2 x}\,dx$.
+**Solution.** By the ready answer, $I = \frac{\pi}{2}\int_0^\pi \frac{\sin x}{1 + \cos^2 x}\,dx$. Put $u = \cos x$: $\frac{\pi}{2}\int_{-1}^{1}\frac{du}{1 + u^2} = \frac{\pi}{2} \cdot \frac{\pi}{2} = \boxed{\frac{\pi^2}{4}}$.
+
+! example | Example 2 — a modulus
+Evaluate $\int_{-1}^2 \lvert x \rvert\,dx$.
+**Solution.** Split at 0 (P3): $\int_{-1}^0 (-x)\,dx + \int_0^2 x\,dx = \frac{1}{2} + 2 = \boxed{\frac{5}{2}}$.
+
+! example | Example 3 — a periodic integrand
+Evaluate $\int_0^{10\pi} \lvert \sin x \rvert\,dx$.
+**Solution.** $\lvert \sin x \rvert$ has period $\pi$ and $\int_0^\pi \sin x\,dx = 2$, so the integral is $10 \times 2 = \boxed{20}$.
+
+? What is $\int_{-a}^a f(x)\,dx$ for an odd function $f$? :: 0.
+? State the property P5. :: $\int_0^a f(x)\,dx = \int_0^a f(a - x)\,dx$.
+? What is $\int_0^{\pi/2} \frac{\sin^n x}{\sin^n x + \cos^n x}\,dx$? :: $\frac{\pi}{4}$.
+? $\int_0^{\pi/2} \log\sin x\,dx$? :: $-\frac{\pi}{2}\log 2$.
+
+! exam | What the exam asks
+- Definite integrals by the properties P1 to P8, especially King's property and even/odd functions.
+- Definite integrals as limits of sums, and limits of sums as integrals.
+- Integrals of $\lvert f \rvert$, of periodic functions, and with a change of limits.
+
+! recap | One-minute revision
+- $\int_a^b f = F(b) - F(a)$; limit of sums $h\sum f(a + rh)$.
+- P4 $x \to a + b - x$; P8 even $2\int_0^a$, odd $0$.
+- Ready: $\frac{\pi}{4}$ for the $\sin^n$ type; $\frac{b - a}{2}$ for $\frac{f(x)}{f(x) + f(a + b - x)}$; $-\frac{\pi}{2}\log 2$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 7 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part II, chapter 7: Integrals | https://ncert.nic.in/textbook.php?lemh2=1-6

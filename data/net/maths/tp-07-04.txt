@@ -1,0 +1,64 @@
+@en
+# Beta and Gamma functions; Wallis' formula
+
+> The Beta and Gamma functions turn whole families of definite integrals into factorials. With Wallis' formula, integrals of $\sin^m\theta\cos^n\theta$ over $\left[0, \frac{\pi}{2}\right]$ take one line. The PGT syllabus also asks for Riemann integration, summarised at the end.
+
+## Beta, Gamma and Wallis
+
+! note | Beta and Gamma functions
+- $B(m, n) = \int_0^1 x^{m-1}(1 - x)^{n-1}\,dx = B(n, m)$; for positive integers $B(m, n) = \frac{(m - 1)!\,(n - 1)!}{(m + n - 1)!}$.
+- $\Gamma(n) = \int_0^\infty x^{n-1}e^{-x}\,dx$; $\Gamma(n) = (n - 1)\Gamma(n - 1) = (n - 1)!$; $\Gamma\left(\frac{1}{2}\right) = \sqrt{\pi}$; $\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}$.
+- $B(m, n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m + n)}$; $\int_0^{\pi/2} \sin^m\theta\cos^n\theta\,d\theta = \frac{\Gamma\left(\frac{m+1}{2}\right)\Gamma\left(\frac{n+1}{2}\right)}{2\Gamma\left(\frac{m+n+2}{2}\right)}$.
+**Wallis / reduction formula** (from the volume notes):
+$$\begin{aligned} &\int_0^{\pi/2} \sin^m\theta\cos^n\theta\,d\theta \\ &= \frac{[(m - 1)(m - 3)\cdots][(n - 1)(n - 3)\cdots]}{(m + n)(m + n - 2)\cdots} \\ &\quad \times \begin{cases} \frac{\pi}{2} & m, n \text{ both even} \\ 1 & \text{otherwise} \end{cases} \end{aligned}$$
+
+! check | Conditions added
+The integral for $B(m, n)$ converges only for $m, n > 0$, and the one for $\Gamma(n)$ only for $n > 0$. $\Gamma(n) = (n - 1)\Gamma(n - 1)$ holds for $n > 1$, and $\Gamma(n) = (n - 1)!$ for positive integers $n$. The $\Gamma$ form of $\int_0^{\pi/2} \sin^m\theta\cos^n\theta\,d\theta$ holds for $m, n > -1$; Wallis' formula is for whole numbers $m, n \geq 0$ (an empty product counts as 1).
+
+! example | Question BG1 — standard
+Evaluate (a) $\int_0^{\pi/2} \sin^6 x\,dx$, (b) $\int_0^{\pi/2} \sin^7 t\cos^2 t\,dt$, (c) $\Gamma\left(\frac{5}{2}\right)$.
+**Solution.** (a) $\frac{5 \cdot 3 \cdot 1}{6 \cdot 4 \cdot 2} \cdot \frac{\pi}{2} = \boxed{\frac{5\pi}{32}}$. (b) $\frac{6 \cdot 4 \cdot 2 \cdot 1}{9 \cdot 7 \cdot 5 \cdot 3 \cdot 1} = \boxed{\frac{16}{315}}$. (c) $\frac{3}{2} \cdot \frac{1}{2}\Gamma\left(\frac{1}{2}\right) = \boxed{\frac{3\sqrt{\pi}}{4}}$.
+
+! addon | Riemann integration (PGT)
+Upper sum $U(P, f) = \sum M_i\Delta x_i$, lower sum $L(P, f) = \sum m_i\Delta x_i$. $f$ is Riemann integrable iff $\inf U = \sup L$, iff for every $\varepsilon > 0$ some partition has $U - L < \varepsilon$. Continuous and monotone functions are integrable; so are bounded functions with finitely many discontinuities. The Dirichlet function (1 on $\mathbb{Q}$, 0 elsewhere) is not ($U = 1$, $L = 0$ on $[0, 1]$). Fundamental theorem: $\frac{d}{dx}\int_a^x f(t)\,dt = f(x)$ for continuous $f$.
+
+! check | Conditions added
+All of this is for a function $f$ **bounded** on a closed interval $[a, b]$, with $P$ running over the partitions of $[a, b]$ and $\inf U$, $\sup L$ taken over all of them. "Continuous", "monotone" and "finitely many discontinuities" refer to $[a, b]$. An unbounded function, such as $\frac{1}{\sqrt{x}}$ on $(0, 1]$ (with any value at 0), is not Riemann integrable on $[0, 1]$, although its improper integral exists.
+
+## What it means
+
+- **Each product in Wallis' formula** runs down in steps of 2 and stops at 1 or 2; an exponent 0 or 1 contributes the factor 1. For $\int_0^{\pi/2}\sin^n x\,dx$ alone, take $m = n$ and the second exponent 0.
+- $\Gamma$ extends the factorial to non-integers: $\Gamma(n + 1) = n!$, so $\Gamma(1) = \Gamma(2) = 1$ and $\Gamma(5) = 24$. Its value at $\frac{1}{2}$ gives the Gaussian integral $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}$.
+- **Riemann integrability** needs $f$ bounded on $[a, b]$; then $M_i$ and $m_i$ are the greatest and least values (supremum and infimum) of $f$ on the $i$th piece of the partition. Refining a partition never raises $U$ and never lowers $L$.
+- **Leibnitz's rule for a variable limit** (for continuous $f$ and differentiable $g$): $\frac{d}{dx}\int_{a}^{g(x)} f(t)\,dt = f(g(x))\,g'(x)$.
+
+! example | Example 1 — a Beta integral
+Evaluate $\int_0^1 x^3(1 - x)^4\,dx$.
+**Solution.** $B(4, 5) = \frac{3!\,4!}{8!} = \frac{6 \cdot 24}{40320} = \boxed{\frac{1}{280}}$.
+
+! example | Example 2 — Wallis with an odd power
+Evaluate $\int_0^{\pi/2} \sin^4 x\cos^3 x\,dx$.
+**Solution.** $\frac{(3 \cdot 1)(2)}{7 \cdot 5 \cdot 3 \cdot 1} \times 1 = \frac{6}{105} = \boxed{\frac{2}{35}}$.
+
+! example | Example 3 — differentiating an integral
+Find $\frac{d}{dx}\int_0^{x^2} \cos t\,dt$.
+**Solution.** $\cos(x^2) \cdot 2x = \boxed{2x\cos x^2}$.
+
+? What is $\Gamma\left(\frac{1}{2}\right)$? :: $\sqrt{\pi}$.
+? Relation between $B$ and $\Gamma$? :: $B(m, n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m + n)}$.
+? $\int_0^{\pi/2} \sin^6 x\,dx$? :: $\frac{5 \cdot 3 \cdot 1}{6 \cdot 4 \cdot 2} \cdot \frac{\pi}{2} = \frac{5\pi}{32}$.
+? Is the Dirichlet function Riemann integrable on $[0, 1]$? :: No: every upper sum is 1 and every lower sum is 0.
+
+! exam | What the exam asks
+- Values of $\Gamma$ and $B$ at given points; integrals reduced to Beta and Gamma.
+- Wallis' formula for $\int_0^{\pi/2}\sin^m\cos^n$.
+- Riemann integrability of given functions; the derivative of an integral with a variable limit.
+
+! recap | One-minute revision
+- $\Gamma(n) = (n - 1)!$, $\Gamma\left(\frac{1}{2}\right) = \sqrt{\pi}$, $B(m, n) = \frac{\Gamma(m)\Gamma(n)}{\Gamma(m + n)}$.
+- Wallis: falling products in steps of 2; times $\frac{\pi}{2}$ only when both exponents are even.
+- Integrable iff $U - L$ can be made as small as we like; Dirichlet function is not.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 7 (the full PDF is linked on the subject page)
+& Shanti Narayan and P. K. Mittal, Integral Calculus, the chapters on Beta and Gamma functions and on reduction formulae
+& S. C. Malik and Savita Arora, Mathematical Analysis, the chapter on the Riemann integral

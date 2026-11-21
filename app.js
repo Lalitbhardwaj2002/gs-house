@@ -1670,8 +1670,8 @@ function renderHome() {
 // themselves are shared (data/net/maths/), and the full notes PDF is offered as it is. English only.
 const MATHS_PDF = 'data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf';
 const MATHS_SUBJECTS = [
-  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapters 1 to 5 notes ready' },
-  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapters 1 to 5 notes ready' },
+  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapters 1 to 7 notes ready' },
+  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapters 1 to 7 notes ready' },
 ];
 function mathsHTML() {
   const doors = MATHS_SUBJECTS.map((s) => `
