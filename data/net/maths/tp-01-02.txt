@@ -1,0 +1,126 @@
+@en
+# Relations and functions
+
+> A relation pairs elements of two sets; a function is a relation that sends every element to exactly one image. The exam tests the properties of relations (reflexive, symmetric, transitive), the kinds of functions (one-one, onto) and, above all, counting them.
+
+## Relations
+
+! note | Relations and their kinds
+- A **relation** $R$ from $A$ to $B$ is a subset of $A \times B$; on $A$ it is a subset of $A \times A$. If $\lvert A \rvert = n$ there are $2^{n^2}$ relations on $A$.
+- **Reflexive**: $(a, a) \in R$ for all $a$. **Symmetric**: $(a, b) \in R \Rightarrow (b, a) \in R$. **Transitive**: $(a, b), (b, c) \in R \Rightarrow (a, c) \in R$. **Antisymmetric**: $(a, b), (b, a) \in R \Rightarrow a = b$.
+- **Equivalence relation** = reflexive + symmetric + transitive. Its equivalence classes $[a] = \{x : xRa\}$ split $A$ into disjoint parts (a partition).
+- Counting on an $n$-element set: reflexive $2^{n(n-1)}$; symmetric $2^{n(n+1)/2}$; antisymmetric $2^n \cdot 3^{n(n-1)/2}$; reflexive and symmetric $2^{n(n-1)/2}$.
+- Number of equivalence relations = Bell number $B_n$: $1, 2, 5, 15, 52$ for $n = 1, \dots, 5$.
+
+## What it means
+
+- $(a, b) \in R$ is also written $aRb$, "$a$ is related to $b$". The **domain** of $R$ is the set of first entries, the **range** the set of second entries, and the **inverse relation** is $R^{-1} = \{(b, a) : (a, b) \in R\}$.
+- Special relations on $A$: the **empty** relation $\phi$, the **universal** relation $A \times A$ and the **identity** relation $I_A = \{(a, a) : a \in A\}$. The identity and the universal relations are equivalence relations.
+- Why the counts hold: a relation on $A$ chooses, for each of the $n^2$ ordered pairs, "in" or "out". Reflexive relations must contain the $n$ diagonal pairs, leaving $n^2 - n$ free choices, hence $2^{n(n-1)}$. A symmetric relation decides the $n$ diagonal pairs and the $\frac{n(n-1)}{2}$ unordered pairs $\{a, b\}$, hence $2^{n + n(n-1)/2} = 2^{n(n+1)/2}$.
+- An equivalence relation and a partition are the same thing seen two ways: the classes of the relation form a partition, and every partition defines the relation "lies in the same part".
+
+| Relation | Reflexive | Symmetric | Transitive | Equivalence? |
+| $=$ on any set | Yes | Yes | Yes | Yes |
+| $\leq$ on $\mathbb{R}$ | Yes | No | Yes | No (it is antisymmetric) |
+| $<$ on $\mathbb{R}$ | No | No | Yes | No |
+| "is parallel to" on lines (a line parallel to itself) | Yes | Yes | Yes | Yes |
+| "is perpendicular to" on lines | No | Yes | No | No |
+| $a \equiv b \pmod{n}$ on $\mathbb{Z}$ | Yes | Yes | Yes | Yes, with $n$ classes |
+| $R = \{(1, 1)\}$ on $\{1, 2\}$ | No | Yes | Yes | No: symmetric and transitive is not enough |
+
+! example | Example 1 — classes of congruence
+Show that $aRb \iff 3 \mid (a - b)$ is an equivalence relation on $\mathbb{Z}$ and find its classes.
+**Solution.** $3 \mid 0$ (reflexive); if $3 \mid (a - b)$ then $3 \mid (b - a)$ (symmetric); if $3 \mid (a - b)$ and $3 \mid (b - c)$ then $3 \mid (a - c)$ (transitive). The classes are $[0] = \{\dots, -3, 0, 3, \dots\}$, $[1] = \{\dots, -2, 1, 4, \dots\}$ and $[2] = \{\dots, -1, 2, 5, \dots\}$: $\boxed{3}$ classes that together make up $\mathbb{Z}$.
+
+! example | Example 2 — counting equivalence relations
+How many equivalence relations are there on $\{1, 2, 3\}$?
+**Solution.** Count the partitions: $\{1\}\{2\}\{3\}$; $\{1, 2\}\{3\}$; $\{1, 3\}\{2\}$; $\{2, 3\}\{1\}$; $\{1, 2, 3\}$. That is $\boxed{5} = B_3$.
+
+## Functions
+
+^ data/net/maths/fig/map-one-one.svg | one–one, not onto
+^ data/net/maths/fig/map-onto.svg | onto, not one–one
+^ data/net/maths/fig/map-bijection.svg | bijection
+
+! note | Functions and counting
+- A **function** $f : A \to B$ assigns to *every* element of $A$ *exactly one* element of $B$.
+- **One–one (injective)**: different elements of $A$ have different images, i.e. $f(a) = f(b) \Rightarrow a = b$ (equivalently $a \neq b \Rightarrow f(a) \neq f(b)$).
+- **Onto (surjective)**: every element of $B$ is the image of some element of $A$, i.e. range $= B$.
+- **Bijective**: both one–one and onto; only then does the inverse $f^{-1}$ exist.
+With $\lvert A \rvert = n$, $\lvert B \rvert = m$:
+- all functions: $m^n$; one–one functions ($n \leq m$): ${}^mP_n = \frac{m!}{(m - n)!}$; bijections ($n = m$): $n!$;
+- onto functions ($n \geq m$): $m^n - {}^mC_1 (m-1)^n + {}^mC_2 (m-2)^n - \cdots$ (inclusion–exclusion).
+Composition $(g \circ f)(x) = g(f(x))$; $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$ (for bijections $f$, $g$). If $g \circ f$ is one–one then $f$ is one–one; if $g \circ f$ is onto then $g$ is onto.
+
+! check | A condition added
+$(g \circ f)^{-1} = f^{-1} \circ g^{-1}$ needs $f : A \to B$ and $g : B \to C$ to be bijections, so that $f^{-1}$ and $g^{-1}$ exist; then $g \circ f$ is a bijection too. The order reverses: socks go on before shoes but come off after them.
+
+! example | Question R1 — from the notes
+Find the number of onto functions from a set with 5 elements to a set with 3 elements.
+**Solution.** $3^5 - {}^3C_1\, 2^5 + {}^3C_2\, 1^5 = 243 - 96 + 3 = \boxed{150}$.
+
+! example | Question R2 — standard
+$A = \{1, 2, 3\}$. How many relations on $A$ are (i) reflexive, (ii) symmetric? Is $R = \{(1, 1), (2, 2), (3, 3),$ $(1, 2), (2, 1)\}$ an equivalence relation?
+**Solution.** (i) $2^{n(n-1)} = 2^6 = \boxed{64}$. (ii) $2^{n(n+1)/2} = 2^6 = \boxed{64}$. $R$ contains all $(a, a)$ (reflexive), contains $(2, 1)$ with $(1, 2)$ (symmetric), and every chain such as $(1, 2), (2, 1) \Rightarrow (1, 1)$ is present (transitive). So **yes**; classes $\{1, 2\}$ and $\{3\}$.
+
+! addon | Binary operations
+A binary operation on $A$ is a map $A \times A \to A$. Number of binary operations on an $n$-set $= n^{n^2}$; commutative ones $= n^{n(n+1)/2}$. (Groups built on binary operations are in Chapter 4.)
+
+## Testing a function
+
+- **One–one test**: assume $f(a) = f(b)$ and try to prove $a = b$. For a real function, a function that is strictly increasing or strictly decreasing on its domain is one–one; on a graph, no horizontal line meets the curve twice.
+- **Onto test**: take any $y$ in the codomain, solve $f(x) = y$ for $x$ and check that $x$ lies in the domain.
+- **Inverse**: if $f$ is a bijection, solve $y = f(x)$ for $x$; then $f^{-1}(y)$ is that expression, and $f^{-1}(f(x)) = x$, $f(f^{-1}(y)) = y$.
+- Composition is associative, $h \circ (g \circ f) = (h \circ g) \circ f$, but in general **not commutative**.
+- Older books use four names: **one–one into** (one–one, not onto), **one–one onto** (a bijection), **many–one into** and **many–one onto**; "many–one" means not one–one and "into" means not onto. A constant function on a set with more than one element is many–one.
+
+| Function | One–one? | Onto? | Why |
+| $f : \mathbb{R} \to \mathbb{R}$, $f(x) = 2x + 3$ | Yes | Yes | $f^{-1}(y) = \frac{y - 3}{2}$ |
+| $f : \mathbb{R} \to \mathbb{R}$, $f(x) = x^2$ | No | No | $f(-1) = f(1)$; $-1$ has no pre-image |
+| $f : [0, \infty) \to [0, \infty)$, $f(x) = x^2$ | Yes | Yes | inverse $\sqrt{y}$ |
+| $f : \mathbb{R} \to \mathbb{R}$, $f(x) = x^3$ | Yes | Yes | inverse $\sqrt[3]{y}$ |
+| $f : \mathbb{N} \to \mathbb{N}$, $f(n) = 2n$ | Yes | No | odd numbers have no pre-image |
+| $f : \mathbb{R} \to \mathbb{R}$, $f(x) = \sin x$ | No | No | range is $[-1, 1]$ |
+
+! example | Example 3 — composition is not commutative
+$f(x) = x^2$ and $g(x) = x + 1$ on $\mathbb{R}$. Find $g \circ f$ and $f \circ g$.
+**Solution.** $(g \circ f)(x) = g(x^2) = x^2 + 1$, while $(f \circ g)(x) = f(x + 1) = (x + 1)^2 = x^2 + 2x + 1$. They differ, so $g \circ f \neq f \circ g$.
+
+! example | Example 4 — counting functions
+$A = \{1, 2, 3\}$, $B = \{a, b, c, d\}$. How many functions $A \to B$ are there, and how many are one–one? How many functions $B \to A$ are onto?
+**Solution.** All functions $A \to B$: $4^3 = \boxed{64}$. One–one: ${}^4P_3 = 4 \cdot 3 \cdot 2 = \boxed{24}$. Onto $B \to A$: $3^4 - {}^3C_1\, 2^4 + {}^3C_2\, 1^4 = 81 - 48 + 3 = \boxed{36}$.
+
+! example | Example 5 — an inverse
+Show that $f : \mathbb{R} - \{1\} \to \mathbb{R} - \{1\}$, $f(x) = \frac{x + 1}{x - 1}$, is a bijection and find $f^{-1}$.
+**Solution.** Put $y = \frac{x + 1}{x - 1}$; then $xy - y = x + 1$, so $x = \frac{y + 1}{y - 1}$, which is defined for every $y \neq 1$ and is never equal to 1. So $f$ is onto, and the formula for $x$ is unique, so $f$ is one–one. (Also $f(x) = 1$ is impossible, since $x + 1 \neq x - 1$, so $f$ really maps into $\mathbb{R} - \{1\}$.) Hence $f^{-1}(x) = \frac{x + 1}{x - 1}$: this $f$ is its own inverse.
+
+## Binary operations
+
+- A **binary operation** $*$ on $A$ combines any two elements of $A$ into an element of $A$, as $+$ and $\times$ do on $\mathbb{N}$. Subtraction is not a binary operation on $\mathbb{N}$, since $2 - 5 \notin \mathbb{N}$.
+- $*$ is **commutative** if $a * b = b * a$ and **associative** if $(a * b) * c = a * (b * c)$. An **identity** is an $e$ with $a * e = e * a = a$ for all $a$; an **inverse** of $a$ is a $b$ with $a * b = b * a = e$.
+- Why $n^{n^2}$: the operation table of an $n$-set has $n^2$ cells, each filled with one of $n$ elements. A commutative operation is fixed by the $\frac{n(n+1)}{2}$ cells on and above the diagonal, hence $n^{n(n+1)/2}$.
+
+! example | Example 6 — identity and inverse
+On $\mathbb{Z}$ define $a * b = a + b + 1$. Is $*$ commutative and associative? Find its identity and the inverse of $a$.
+**Solution.** $a * b = b * a$, so it is commutative; $(a * b) * c = a + b + c + 2 = a * (b * c)$, so it is associative. Identity: $a * e = a + e + 1 = a$ gives $e = \boxed{-1}$. Inverse: $a * b = -1$ gives $b = \boxed{-a - 2}$, an integer, so every element has an inverse.
+
+! check | A common trap
+"Symmetric and transitive implies reflexive" is false. The argument $aRb \Rightarrow bRa \Rightarrow aRa$ needs some $b$ with $aRb$; an element related to nothing breaks it, as in $R = \{(1, 1)\}$ on $\{1, 2\}$.
+
+? How many relations are there on a set with $n$ elements? :: $2^{n^2}$.
+? How many onto functions are there from a 4-element set to a 2-element set? :: $2^4 - 2 = 14$.
+? If $g \circ f$ is one–one, which of $f$, $g$ must be one–one? :: $f$ must be one–one ($g$ need not be).
+? How many equivalence relations are there on a set of 4 elements? :: $B_4 = 15$.
+
+! exam | What the exam asks
+- Whether a given relation is reflexive, symmetric, transitive or an equivalence relation, and its classes.
+- Counting relations, functions, one–one and onto functions, and binary operations.
+- Composition and inverse of given functions.
+
+! recap | One-minute revision
+- Relations on an $n$-set: all $2^{n^2}$, reflexive $2^{n(n-1)}$, symmetric $2^{n(n+1)/2}$; equivalence relations $= B_n$.
+- Functions $A \to B$: $m^n$; one–one ${}^mP_n$; onto $\sum (-1)^k\, {}^mC_k (m - k)^n$.
+- $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$; $g \circ f$ one–one $\Rightarrow f$ one–one; $g \circ f$ onto $\Rightarrow g$ onto.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 1 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XII, Part I, chapter 1: Relations and Functions | https://ncert.nic.in/textbook.php?lemh1=1-6

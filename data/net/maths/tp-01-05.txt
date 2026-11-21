@@ -1,0 +1,70 @@
+@en
+# Exponential and logarithmic series
+
+> A few infinite series, for $e^x$, $a^x$ and $\log(1 + x)$, give quick answers to many sums. Here $\log$ means the natural logarithm, to base $e$.
+
+## The series
+
+! addon | The exponential and logarithmic series
+$$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots, \qquad e = \sum_{n \geq 0} \frac{1}{n!} \approx 2.71828, \qquad a^x = 1 + x \log a + \frac{(x \log a)^2}{2!} + \cdots \ (a > 0)$$
+$$\log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots \ (-1 < x \leq 1), \qquad \log(1 - x) = -\left(x + \frac{x^2}{2} + \frac{x^3}{3} + \cdots\right) \ (-1 \leq x < 1)$$
+$$\log \frac{1 + x}{1 - x} = 2\left(x + \frac{x^3}{3} + \frac{x^5}{5} + \cdots\right) \ (\lvert x \rvert < 1), \qquad \frac{e^x + e^{-x}}{2} = 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \cdots$$
+
+! check | Conditions added
+Only the series for $\log(1 + x)$ came with its range. The others need: $a > 0$ for $a^x$ (so that $\log a$ exists); $-1 \leq x < 1$ for $\log(1 - x)$; $\lvert x \rvert < 1$ for $\log \frac{1 + x}{1 - x}$. The series for $e^x$ and $\frac{e^x + e^{-x}}{2}$ hold for every real $x$.
+
+! note | Bell-type sums
+$$\sum_{n=1}^{\infty} \frac{n}{n!} = e, \qquad \sum_{n=1}^{\infty} \frac{n^2}{n!} = 2e, \qquad \sum_{n=1}^{\infty} \frac{n^3}{n!} = 5e, \qquad \sum_{n=1}^{\infty} \frac{n^4}{n!} = 15e.$$
+
+! example | Question ES1 — standard
+Show that $\sum_{n=1}^{\infty} \frac{n^2}{n!} = 2e$.
+**Solution.** $\frac{n^2}{n!} = \frac{n}{(n-1)!} = \frac{(n-1)+1}{(n-1)!} = \frac{1}{(n-2)!} + \frac{1}{(n-1)!}$ (first term absent for $n = 1$). Summing: $e + e = \boxed{2e}$.
+
+! trick | Shortcut / time-saver
+The multipliers $1, 2, 5, 15, 52$ are Bell numbers: $\sum n^k / n! = B_k\, e$. Also $\sum_{n \geq 0} \frac{n+1}{n!} = e + e = 2e$ (from $n = 1$ it is $2e - 1$).
+
+## What it means
+
+- The series for $e^x$ converges for **every** real $x$; the series for $\log(1 + x)$ only for $-1 < x \leq 1$. At $x = 1$ it gives $\log 2 = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots$.
+- Putting $x = -1$ in the series for $e^x$ gives $e^{-1} = \frac{1}{2!} - \frac{1}{3!} + \frac{1}{4!} - \cdots$ (the first two terms cancel).
+- Adding and subtracting the series for $e^x$ and $e^{-x}$ separates the even and odd powers: $\frac{e^x + e^{-x}}{2} = \cosh x$ has only even powers, and $\frac{e^x - e^{-x}}{2} = \sinh x = x + \frac{x^3}{3!} + \frac{x^5}{5!} + \cdots$ only odd ones.
+- **Coefficient of $x^n$**: in $e^{kx}$ it is $\frac{k^n}{n!}$; in $\log(1 + x)$ it is $\frac{(-1)^{n-1}}{n}$; in $\log(1 - x)$ it is $-\frac{1}{n}$.
+- **The method for sums with $n!$**: write the numerator as a combination of $1$, $n$, $n(n-1)$, $n(n-1)(n-2)$, and so on. Each part cancels against $n!$: $\frac{n(n-1)}{n!} = \frac{1}{(n-2)!}$, and each resulting sum is $e$.
+
+! example | Example 1 — even terms only
+Find the sum $1 + \frac{1}{2!} + \frac{1}{4!} + \frac{1}{6!} + \cdots$.
+**Solution.** This is $\frac{e^x + e^{-x}}{2}$ at $x = 1$: $\boxed{\frac{e + e^{-1}}{2}} = \frac{e^2 + 1}{2e}$.
+
+! example | Example 2 — a sum with $n!$
+Find $\sum_{n=0}^{\infty} \frac{2n + 1}{n!}$.
+**Solution.** $\sum \frac{2n}{n!} + \sum \frac{1}{n!} = 2e + e = \boxed{3e}$.
+
+! example | Example 3 — the cube
+Show that $\sum_{n=1}^{\infty} \frac{n^3}{n!} = 5e$.
+**Solution.** $n^3 = n(n-1)(n-2) + 3n(n-1) + n$. So $\sum \frac{n^3}{n!} = \sum \frac{1}{(n-3)!} + 3\sum \frac{1}{(n-2)!} + \sum \frac{1}{(n-1)!} = e + 3e + e = \boxed{5e}$.
+
+! example | Example 4 — a logarithmic sum
+Find $\frac{1}{2} + \frac{1}{2 \cdot 2^2} + \frac{1}{3 \cdot 2^3} + \cdots$.
+**Solution.** This is $x + \frac{x^2}{2} + \frac{x^3}{3} + \cdots = -\log(1 - x)$ at $x = \frac{1}{2}$: $-\log \frac{1}{2} = \boxed{\log 2}$.
+
+! example | Example 5 — a coefficient
+Find the coefficient of $x^3$ in $e^{2x} \cdot e^{3x}$.
+**Solution.** $e^{2x} e^{3x} = e^{5x}$, so the coefficient is $\frac{5^3}{3!} = \boxed{\frac{125}{6}}$.
+
+? Write the series for $e^x$. :: $1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots$, valid for all real $x$.
+? For which $x$ is $\log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots$ valid? :: $-1 < x \leq 1$.
+? What is $\sum_{n=1}^{\infty} \frac{n^2}{n!}$? :: $2e$.
+? What is $\frac{e^x + e^{-x}}{2}$ as a series? :: $1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \cdots$ (only even powers).
+
+! exam | What the exam asks
+- Sums such as $\sum \frac{n^k}{n!}$ or $\sum \frac{an + b}{n!}$, in terms of $e$.
+- Recognising a given series as $e^x$, $\log(1 \pm x)$ or $\log \frac{1+x}{1-x}$ at a particular $x$.
+- The coefficient of $x^n$ in an exponential or logarithmic expression.
+
+! recap | One-minute revision
+- $e^x = \sum \frac{x^n}{n!}$ (all $x$); $\log(1 + x) = x - \frac{x^2}{2} + \cdots$ ($-1 < x \leq 1$).
+- $\sum \frac{n}{n!} = e$, $\sum \frac{n^2}{n!} = 2e$, $\sum \frac{n^3}{n!} = 5e$, $\sum \frac{n^4}{n!} = 15e$.
+- Break the numerator into $n(n-1)\cdots$ factors; each piece gives $e$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 1 (the full PDF is linked on the subject page)
+& Hall and Knight, Higher Algebra, the chapters on the exponential and logarithmic series

@@ -1,0 +1,73 @@
+{
+ "id": "tgt-mathematics",
+ "icon": "📏",
+ "math": true,
+ "langs": ["en"],
+ "notes": "maths",
+ "theme": "maths",
+ "title": { "en": "TGT Mathematics" },
+ "subtitle": { "en": "UPESSC TGT · subject code 07 · topic-wise notes on the official 2026 syllabus" },
+ "pdf": { "href": "data/net/maths/UP-TGT-PGT-Mathematics-Notes.pdf", "en": "Full notes PDF (218 pages)" },
+ "about": {
+  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapter 1 of the notes is ready; the other chapters are being added."
+ },
+ "units": [
+  { "id": "u1", "icon": "💰", "en": "Commercial Mathematics", "line": { "en": "Work and time · speed · interest · banking · taxation" } },
+  { "id": "u2", "icon": "📊", "en": "Statistics", "line": { "en": "Frequency distribution · central tendency · dispersion · vital statistics · index numbers" } },
+  {
+   "id": "u3", "icon": "🔢", "en": "Algebra",
+   "line": { "en": "Numbers and polynomials · equations · determinants and matrices · series · counting" },
+   "parts": [
+    {
+     "en": "Numbers, polynomials and equations",
+     "chapters": [
+      { "id": "tp-01-07", "en": "1.7 Number system, surds, logarithms, polynomials",
+        "key": { "en": "Rational numbers · surds · laws of logarithms · remainder and factor theorems · linear equations" } },
+      { "id": "tp-01-08", "en": "1.8 Quadratic equations and theory of equations",
+        "key": { "en": "Discriminant · sum and product of roots · relations between roots and coefficients · transformations" } }
+     ]
+    },
+    {
+     "en": "Series and counting",
+     "chapters": [
+      { "id": "tp-01-06", "en": "1.6 Sequences and series: AP, GP, HP",
+        "key": { "en": "nth term and sum · AM, GM, HM · sums of squares and cubes" } },
+      { "id": "tp-01-03", "en": "1.3 Permutations and combinations",
+        "key": { "en": "Counting principles · nPr and nCr · circular arrangements · derangements" } },
+      { "id": "tp-01-04", "en": "1.4 Binomial theorem",
+        "key": { "en": "General term · middle term · term independent of x · binomial coefficients" } },
+      { "id": "tp-01-05", "en": "1.5 Exponential and logarithmic series",
+        "key": { "en": "Series for e^x, a^x and log(1 + x) · sums with n!" } }
+     ]
+    }
+   ]
+  },
+  { "id": "u4", "icon": "🎲", "en": "Probability", "line": { "en": "Addition and multiplication theorems" } },
+  {
+   "id": "u5", "icon": "🧩", "en": "Set Theory",
+   "line": { "en": "Sets · relations and mappings · induction · groups · Lagrange's theorem" },
+   "parts": [
+    {
+     "en": "Sets, relations and induction",
+     "chapters": [
+      { "id": "tp-01-01", "en": "1.1 Sets and set operations",
+        "key": { "en": "Subsets and power set · laws of set algebra · De Morgan's laws · counting with Venn diagrams" } },
+      { "id": "tp-01-02", "en": "1.2 Relations and functions",
+        "key": { "en": "Equivalence relations · one-one and onto mappings · composition and inverse · counting" } },
+      { "id": "tp-01-09", "en": "1.9 Peano's postulates and mathematical induction",
+        "key": { "en": "Peano's five postulates · principle of mathematical induction · proofs by induction" } }
+     ]
+    }
+   ]
+  },
+  { "id": "u6", "icon": "📈", "en": "Real Analysis", "line": { "en": "Real numbers · countability · sets of points · sequences · limits and continuity" } },
+  { "id": "u7", "icon": "📐", "en": "Trigonometry", "line": { "en": "Ratios and identities · equations · triangles · inverse functions" } },
+  { "id": "u8", "icon": "🌀", "en": "Complex Numbers", "line": { "en": "De Moivre's theorem · complex functions · real and imaginary parts · heights and distances" } },
+  { "id": "u9", "icon": "⭕", "en": "Geometry", "line": { "en": "Pythagoras · circles, chords and tangents · alternate segment · congruence" } },
+  { "id": "u10", "icon": "🧭", "en": "Coordinate Geometry", "line": { "en": "Pair of lines · conics · tangents and normals · polar equation · sphere, cone and cylinder" } },
+  { "id": "u11", "icon": "📉", "en": "Calculus", "line": { "en": "Differentiation and its uses · integration · areas and volumes · differential equations" } },
+  { "id": "u12", "icon": "➡️", "en": "Vector Analysis", "line": { "en": "Vectors · scalar and vector products · work and moment · triple products" } },
+  { "id": "u13", "icon": "⚖️", "en": "Statics", "line": { "en": "Three forces · Lami's theorem · equilibrium · centre of gravity · catenary" } },
+  { "id": "u14", "icon": "🚀", "en": "Dynamics", "line": { "en": "Projectiles · radial and transverse · tangential and normal components" } }
+ ]
+}

@@ -1,0 +1,122 @@
+@en
+# Sets and set operations
+
+> Sets are the language of all of mathematics: relations, functions, groups and probability are all built on them. In the exam, questions on sets are mostly about counting: how many subsets, and how many elements lie in a region of a Venn diagram.
+
+## The basics
+
+! note | Sets, subsets and Venn diagrams
+A **set** is a well-defined collection of distinct objects. $\phi$ (empty set) is a subset of every set, and every set is a subset of itself. A set with $n$ elements has $2^n$ subsets, $2^n - 1$ proper subsets and $2^n - 2$ non-empty proper subsets ($n \geq 1$).
+The universal set $U$ is drawn as a rectangle and sets as circles inside it (Venn diagram). The shaded part shows the result of each operation:
+
+^ data/net/maths/fig/venn-union.svg | $A \cup B$
+^ data/net/maths/fig/venn-intersection.svg | $A \cap B$
+^ data/net/maths/fig/venn-difference.svg | $A - B = A \cap B'$
+^ data/net/maths/fig/venn-complement.svg | $A' = U - A$
+^ data/net/maths/fig/venn-symmetric.svg | $A \Delta B = (A - B) \cup (B - A)$
+
+! check | A condition added
+The count $2^n - 2$ of non-empty proper subsets needs $n \geq 1$: the empty set ($n = 0$) has no non-empty proper subset at all, while $2^0 - 2 = -1$.
+
+## What it means
+
+- **Well-defined** means that for any object we can say for certain whether it belongs to the set. "The even numbers below 10" is a set; "the good students of a class" is not.
+- A set can be written in **roster form**, $A = \{2, 4, 6, 8\}$, or in **set-builder form**, $A = \{x : x$ is an even natural number less than $10\}$. Order and repetition do not matter: $\{1, 2, 2, 3\} = \{3, 2, 1\}$.
+- $A$ is a **subset** of $B$ ($A \subseteq B$) if every element of $A$ is in $B$. It is a **proper subset** ($A \subset B$) if, in addition, $A \neq B$.
+- The **power set** $P(A)$ is the set of all subsets of $A$. If $A$ has $n$ elements, $P(A)$ has $2^n$ elements, because each element is either taken or left out.
+- **Kinds of sets**: the **empty** set $\phi$ has no element, a **singleton** has exactly one, a **finite** set has $n$ elements for some whole number $n$ (written $n(A) = n$), and an **infinite** set, such as $\mathbb{N}$, has no such $n$. Note that $\{0\}$ and $\{\phi\}$ are singletons, not empty sets.
+- **Equal sets** have exactly the same elements; **equivalent sets** have the same number of elements. Two sets are **disjoint** if $A \cap B = \phi$.
+
+| Operation | Definition | Example with $A = \{1, 2, 3, 4\}$, $B = \{3, 4, 5\}$, $U = \{1, 2, \dots, 6\}$ |
+| Union | $A \cup B = \{x : x \in A \text{ or } x \in B\}$ | $\{1, 2, 3, 4, 5\}$ |
+| Intersection | $A \cap B = \{x : x \in A \text{ and } x \in B\}$ | $\{3, 4\}$ |
+| Difference | $A - B = \{x : x \in A, \ x \notin B\}$ | $\{1, 2\}$ |
+| Complement | $A' = U - A$ | $\{5, 6\}$ |
+| Symmetric difference | $A \Delta B = (A - B) \cup (B - A)$ | $\{1, 2, 5\}$ |
+| Cartesian product | $A \times B = \{(a, b) : a \in A, \ b \in B\}$ | 12 ordered pairs, since $n(A \times B) = n(A)\,n(B)$ |
+
+! example | Example 1 — power set
+Write the power set of $A = \{a, b, c\}$ and count its proper subsets.
+**Solution.** $P(A)$ has the $2^3 = 8$ elements $\phi$, $\{a\}$, $\{b\}$, $\{c\}$, $\{a, b\}$, $\{a, c\}$, $\{b, c\}$ and $\{a, b, c\}$. Leaving out $A$ itself gives $2^3 - 1 = \boxed{7}$ proper subsets; leaving out $\phi$ as well gives $2^3 - 2 = 6$ non-empty proper subsets.
+
+! example | Example 2 — subsets with a condition
+How many subsets of $\{1, 2, 3, 4, 5\}$ contain the element 1?
+**Solution.** Put 1 in; each of the other 4 elements is in or out: $2^4 = \boxed{16}$. (In general, exactly half of the $2^n$ subsets contain a given element.)
+
+## Laws of the algebra of sets
+
+! note | Laws of the algebra of sets
+- **Commutative**: $A \cup B = B \cup A$, $A \cap B = B \cap A$. **Associative**: $(A \cup B) \cup C = A \cup (B \cup C)$, same for $\cap$.
+- **Distributive**: $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$.
+- **Identity**: $A \cup \phi = A$, $A \cap U = A$. **Idempotent**: $A \cup A = A$, $A \cap A = A$. **Complement**: $A \cup A' = U$, $A \cap A' = \phi$.
+- **De Morgan's laws**: $(A \cup B)' = A' \cap B'$ and $(A \cap B)' = A' \cup B'$.
+
+^ data/net/maths/fig/venn-not-union.svg | $(A \cup B)' = A' \cap B'$
+^ data/net/maths/fig/venn-not-intersection.svg | $(A \cap B)' = A' \cup B'$
+
+- Two more laws that are often asked: **absorption**, $A \cup (A \cap B) = A$ and $A \cap (A \cup B) = A$; and **difference as intersection**, $A - B = A \cap B'$, so $A - (B \cup C) = (A - B) \cap (A - C)$ and $A - (B \cap C) = (A - B) \cup (A - C)$.
+- $(A')' = A$, $U' = \phi$, $\phi' = U$.
+- In words, De Morgan's laws say: "not in $A$ or $B$" means "not in $A$ **and** not in $B$"; "not in both" means "not in $A$ **or** not in $B$".
+
+! example | Example 3 — checking De Morgan's law
+With $U = \{1, 2, \dots, 6\}$, $A = \{1, 2, 3, 4\}$, $B = \{3, 4, 5\}$, verify $(A \cup B)' = A' \cap B'$.
+**Solution.** $A \cup B = \{1, 2, 3, 4, 5\}$, so $(A \cup B)' = \{6\}$. Also $A' = \{5, 6\}$ and $B' = \{1, 2, 6\}$, so $A' \cap B' = \{6\}$. Both sides equal $\{6\}$.
+
+## Counting with Venn diagrams
+
+! note | Counting with Venn diagrams (inclusion–exclusion)
+$$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$
+$$n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(B \cap C) - n(C \cap A) + n(A \cap B \cap C)$$
+Only $A$: $n(A) - n(A \cap B)$. Exactly one of $A, B$: $n(A) + n(B) - 2n(A \cap B)$. Neither: $n(U) - n(A \cup B)$.
+
+^ data/net/maths/fig/venn-three.svg | The seven regions of three sets
+
+- only $A$: $a$; only $A$ and $B$: $d$
+- all three: $g$
+- $n(A) = a + d + f + g$
+- exactly one: $a + b + c$
+- exactly two: $d + e + f$
+
+! example | Question S1 — standard
+In a class of 50 students, 30 study Maths, 25 study Physics and 10 study both. How many study neither?
+**Solution.** $n(M \cup P) = 30 + 25 - 10 = 45$. Neither $= 50 - 45 = \boxed{5}$. (Only Maths $= 20$, only Physics $= 15$.)
+
+! example | Question S2 — standard (three sets)
+In a survey of 100 people: 45 read newspaper $A$, 40 read $B$, 30 read $C$; 15 read $A$ and $B$, 10 read $B$ and $C$, 12 read $A$ and $C$, and 5 read all three. How many read (i) at least one, (ii) none, (iii) exactly one paper?
+**Solution.** (i) $n(A \cup B \cup C) = 45 + 40 + 30 - 15 - 10 - 12 + 5 = \boxed{83}$. (ii) $100 - 83 = \boxed{17}$. (iii) Fill the Venn diagram from the centre: $g = 5$; $d = 15 - 5 = 10$, $e = 10 - 5 = 5$, $f = 12 - 5 = 7$; only $A = 45 - 10 - 7 - 5 = 23$, only $B = 40 - 10 - 5 - 5 = 20$, only $C = 30 - 7 - 5 - 5 = 13$. Exactly one $= 23 + 20 + 13 = \boxed{56}$.
+
+! trick | Shortcut / time-saver
+Always fill a three-set Venn diagram *from the centre outwards*: all three first, then the "exactly two" regions, then the "only" regions.
+
+## More counting results
+
+- $n(A - B) = n(A) - n(A \cap B)$ and $n(A \Delta B) = n(A) + n(B) - 2\,n(A \cap B)$.
+- Exactly two of three sets: $n(A \cap B) + n(B \cap C) + n(C \cap A) - 3\,n(A \cap B \cap C)$.
+- Exactly one of three sets: $\sum n(A) - 2 \sum n(A \cap B) + 3\,n(A \cap B \cap C)$.
+- **Largest and smallest possible overlap**: $\max n(A \cap B) = \min\{n(A), n(B)\}$ and $\min n(A \cap B) = \max\{0, \ n(A) + n(B) - n(U)\}$.
+
+! example | Example 4 — least possible overlap
+In a town 70% of the people drink tea and 80% drink coffee. At least what percentage drink both?
+**Solution.** $n(T \cap C) \geq n(T) + n(C) - n(U) = 70 + 80 - 100 = \boxed{50\%}$. At most, $\min(70, 80) = 70\%$ drink both.
+
+! example | Example 5 — exactly two
+With the numbers of Question S2, how many read exactly two papers?
+**Solution.** $d + e + f = 10 + 5 + 7 = \boxed{22}$. Check by the formula: $(15 + 10 + 12) - 3 \times 5 = 22$. And $56 + 22 + 5 = 83$, the number who read at least one.
+
+? How many subsets has a set of $n$ elements, and how many proper subsets? :: $2^n$ subsets and $2^n - 1$ proper subsets ($2^n - 2$ non-empty proper subsets).
+? Complete De Morgan's law: $(A \cap B)' = \;?$ :: $A' \cup B'$.
+? Write $A - B$ with an intersection. :: $A - B = A \cap B'$.
+? If $n(A) = 30$, $n(B) = 25$, $n(A \cup B) = 45$, what is $n(A \cap B)$? :: $30 + 25 - 45 = 10$.
+
+! exam | What the exam asks
+- Number of subsets, proper subsets and elements of a power set.
+- Two-set and three-set counting problems: at least one, none, exactly one, exactly two.
+- Identities of set algebra, De Morgan's laws, and the least or greatest possible overlap.
+
+! recap | One-minute revision
+- $n$ elements: $2^n$ subsets, $2^n - 1$ proper, $2^n - 2$ non-empty proper.
+- $(A \cup B)' = A' \cap B'$, $(A \cap B)' = A' \cup B'$, $A - B = A \cap B'$.
+- $n(A \cup B \cup C) = \sum n(A) - \sum n(A \cap B) + n(A \cap B \cap C)$; fill Venn diagrams from the centre.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 1 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XI, chapter 1: Sets | https://ncert.nic.in/textbook.php?kemh1=1-14

@@ -1,0 +1,62 @@
+@en
+# Peano's postulates and mathematical induction
+
+> Peano's postulates build the natural numbers from 1 and a "next number" rule. The last postulate is the principle of mathematical induction, the standard way to prove that a statement holds for every natural number. This topic is in the TGT syllabus (Set Theory); the PGT syllabus does not name it.
+
+## The postulates and the principle
+
+! addon | Peano's postulates and induction
+**Peano's postulates** (with successor $S$): (1) $1 \in \mathbb{N}$; (2) $n \in \mathbb{N} \Rightarrow S(n) \in \mathbb{N}$; (3) $S(n) \neq 1$; (4) $S(m) = S(n) \Rightarrow m = n$; (5) if $M \subseteq \mathbb{N}$, $1 \in M$ and $n \in M \Rightarrow S(n) \in M$, then $M = \mathbb{N}$ (axiom of induction).
+**Principle of mathematical induction**: if $P(1)$ is true and $P(k) \Rightarrow P(k + 1)$ for every $k$, then $P(n)$ is true for all $n \in \mathbb{N}$.
+
+## What it means
+
+- The **successor** $S(n)$ is "the next number", $n + 1$. Postulate (3) says 1 is not the next number of anything, so the counting has a first element; postulate (4) says different numbers have different successors, so the counting never loops back.
+- Some books start the natural numbers at 0 and write the postulates with 0 in place of 1; the reasoning is the same. These notes start at 1.
+- Addition is defined from the successor: $n + 1 = S(n)$ and $n + S(m) = S(n + m)$. Writing $2 = S(1)$, $3 = S(2)$ and $4 = S(3)$: $2 + 2 = 2 + S(1) = S(2 + 1) = S(3) = 4$.
+- Why induction works: let $M$ be the set of $n$ for which $P(n)$ is true. The two steps say $1 \in M$ and $n \in M \Rightarrow S(n) \in M$; postulate (5) then gives $M = \mathbb{N}$.
+- **Both steps are needed.** Without the base case, "$n = n + 1$" passes the inductive step ($k = k + 1 \Rightarrow k + 1 = k + 2$) though it is never true. Checking many cases is not a proof either: $n^2 + n + 41$ is prime for $n = 1$ to $39$ but not for $n = 40$, where it equals $41^2$.
+- **Variants**: the base case may start at any $n_0$ (then the result holds for all $n \geq n_0$). In **strong induction** one assumes $P(1), \dots, P(k)$ all true to prove $P(k + 1)$. Induction is equivalent to the **well-ordering principle**: every non-empty set of natural numbers has a least element.
+
+! example | Question PMI1 — standard
+Prove that $1 + 2 + \cdots + n = \frac{n(n+1)}{2}$.
+**Solution.** $P(1)$: $1 = \frac{1 \cdot 2}{2}$ ✓. Assume $P(k)$. Then $1 + \cdots + k + (k + 1) = \frac{k(k+1)}{2} + (k + 1) = \frac{(k+1)(k+2)}{2}$, which is $P(k + 1)$. Hence true for all $n$.
+
+! example | Question PMI2 — from the notes
+If $A = \begin{bmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{bmatrix}$, prove that $A^n = \begin{bmatrix} \cos n\theta & \sin n\theta \\ -\sin n\theta & \cos n\theta \end{bmatrix}$.
+**Solution.** True for $n = 1$. If true for $k$: $A^{k+1} = A^k A$; the $(1, 1)$ entry is $\cos k\theta \cos\theta - \sin k\theta \sin\theta = \cos(k + 1)\theta$ and the $(1, 2)$ entry is $\cos k\theta \sin\theta + \sin k\theta \cos\theta = \sin(k + 1)\theta$; similarly the others. Hence true for all $n$.
+
+## More worked examples
+
+! example | Example 1 — a divisibility
+Prove that $7^n - 1$ is divisible by 6 for every $n \in \mathbb{N}$.
+**Solution.** $n = 1$: $7 - 1 = 6$ ✓. Assume $7^k - 1 = 6m$. Then $7^{k+1} - 1 = 7 \cdot 7^k - 1 = 7(6m + 1) - 1 = 42m + 6 = 6(7m + 1)$, divisible by 6. Hence true for all $n$.
+
+! example | Example 2 — an inequality
+Prove that $2^n > n$ for every $n \in \mathbb{N}$.
+**Solution.** $n = 1$: $2 > 1$ ✓. Assume $2^k > k$. Then $2^{k+1} = 2 \cdot 2^k > 2k = k + k \geq k + 1$, since $k \geq 1$. Hence $2^{k+1} > k + 1$, and the result holds for all $n$.
+
+! example | Example 3 — the sum of squares
+Prove that $1^2 + 2^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}$.
+**Solution.** $n = 1$: $1 = \frac{1 \cdot 2 \cdot 3}{6}$ ✓. Assume it for $k$. Then the sum up to $k + 1$ is $\frac{k(k+1)(2k+1)}{6} + (k+1)^2 = \frac{(k+1)[k(2k+1) + 6(k+1)]}{6} = \frac{(k+1)(2k^2 + 7k + 6)}{6} = \frac{(k+1)(k+2)(2k+3)}{6}$, which is the formula for $k + 1$.
+
+! trick | Writing an induction proof quickly
+Write three lines: **Base**: check $n = 1$ (or the first $n$). **Hypothesis**: assume the result for $n = k$. **Step**: start from the left side for $k + 1$, split off the last term or factor, use the hypothesis, and reach the right side for $k + 1$.
+
+? What does Peano's fifth postulate say? :: If a set $M$ of natural numbers contains 1 and contains $S(n)$ whenever it contains $n$, then $M = \mathbb{N}$; it is the axiom of induction.
+? What are the two steps of a proof by induction? :: The base case $P(1)$, and the inductive step $P(k) \Rightarrow P(k + 1)$.
+? Is checking $P(1), P(2), \dots, P(100)$ a proof? :: No; a statement can hold for many values and fail later (e.g. $n^2 + n + 41$ at $n = 40$).
+? What is the successor of $n$? :: $S(n) = n + 1$.
+
+! exam | What the exam asks
+- Statements of Peano's postulates; which postulate is the axiom of induction.
+- Proving sums, divisibility results and inequalities by induction.
+- Spotting a wrong "proof" that misses the base case.
+
+! recap | One-minute revision
+- Peano: $1 \in \mathbb{N}$; successors stay in $\mathbb{N}$; $S(n) \neq 1$; $S$ is one–one; induction axiom.
+- Induction: base case plus $P(k) \Rightarrow P(k + 1)$.
+- Strong induction and well-ordering are equivalent forms.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 1 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class XI (2006 edition), chapter 4: Principle of Mathematical Induction

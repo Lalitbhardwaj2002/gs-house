@@ -1,0 +1,100 @@
+@en
+# Quadratic equations and theory of equations
+
+> For a quadratic the discriminant tells the nature of the roots, and the coefficients give their sum and product. The same idea, for an equation of any degree, links the roots to the coefficients; it is the heart of the "theory of equations" in both syllabi.
+
+## Quadratic equations
+
+! addon | Quadratic $ax^2 + bx + c = 0$
+Roots $\frac{-b \pm \sqrt{D}}{2a}$, $D = b^2 - 4ac$ (real $a, b, c$; $a \neq 0$): $D > 0$ real distinct; $D = 0$ equal; $D < 0$ complex conjugates. $\alpha + \beta = -\frac{b}{a}$, $\alpha\beta = \frac{c}{a}$. Equation with roots $\alpha, \beta$: $x^2 - (\alpha + \beta)x + \alpha\beta = 0$. $\lvert \alpha - \beta \rvert = \frac{\sqrt{D}}{\lvert a \rvert}$ ($D \geq 0$).
+
+^ data/net/maths/fig/quad-two-roots.svg | $D > 0$: two roots
+^ data/net/maths/fig/quad-equal-roots.svg | $D = 0$: equal roots
+^ data/net/maths/fig/quad-no-root.svg | $D < 0$: no real root
+
+! check | Conditions added
+Reading the nature of the roots from $D$ needs **real** coefficients: $x^2 - ix = 0$ has $D = -1 < 0$, yet its roots $0$ and $i$ are not a conjugate pair. The formula $\lvert \alpha - \beta \rvert = \frac{\sqrt{D}}{\lvert a \rvert}$ is for $D \geq 0$; when $D < 0$ the roots are $\frac{-b \pm i\sqrt{-D}}{2a}$ and $\lvert \alpha - \beta \rvert = \frac{\sqrt{-D}}{\lvert a \rvert}$.
+
+## What it means
+
+- The roots are where the parabola $y = ax^2 + bx + c$ meets the $x$-axis, as the pictures show (drawn for $a > 0$; for $a < 0$ the parabola opens downwards).
+- With **rational** coefficients: if $D$ is the square of a rational number the roots are rational; if $D > 0$ is not such a square they are irrational and come as a pair $p \pm \sqrt{q}$.
+- **Sign of a quadratic**: if $a > 0$ and $D < 0$, then $ax^2 + bx + c > 0$ for every real $x$. For $a > 0$ the least value of $ax^2 + bx + c$ is $-\frac{D}{4a}$, at $x = -\frac{b}{2a}$; for $a < 0$ the same number is its greatest value.
+- **Common root**: $a_1 x^2 + b_1 x + c_1 = 0$ and $a_2 x^2 + b_2 x + c_2 = 0$ have a common root when $(c_1 a_2 - c_2 a_1)^2 = (a_1 b_2 - a_2 b_1)(b_1 c_2 - b_2 c_1)$; both roots are common when $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$.
+- Useful symmetric expressions: $\alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha\beta$, $\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3\alpha\beta(\alpha + \beta)$, $\frac{1}{\alpha} + \frac{1}{\beta} = \frac{\alpha + \beta}{\alpha\beta}$.
+
+! example | Example 1 — equal roots
+For which $k$ does $x^2 + kx + 9 = 0$ have equal roots?
+**Solution.** $D = k^2 - 36 = 0 \Rightarrow k = \boxed{\pm 6}$.
+
+! example | Example 2 — an equation with new roots
+If $\alpha, \beta$ are the roots of $x^2 - 5x + 6 = 0$, form the equation whose roots are $\alpha^2$ and $\beta^2$.
+**Solution.** $\alpha + \beta = 5$, $\alpha\beta = 6$. $\alpha^2 + \beta^2 = 25 - 12 = 13$ and $\alpha^2\beta^2 = 36$. The equation is $\boxed{x^2 - 13x + 36 = 0}$ (roots 4 and 9, the squares of 2 and 3).
+
+! example | Example 3 — the least value
+Find the least value of $2x^2 - 8x + 11$.
+**Solution.** $a = 2 > 0$, $D = 64 - 88 = -24$. Least value $-\frac{D}{4a} = \frac{24}{8} = \boxed{3}$, at $x = 2$.
+
+## Theory of equations
+
+! addon | Theory of equations
+For $a_0 x^n + a_1 x^{n-1} + \cdots + a_n = 0$ with roots $\alpha_1, \dots, \alpha_n$:
+$$\sum \alpha_i = -\frac{a_1}{a_0}, \quad \sum \alpha_i \alpha_j = \frac{a_2}{a_0}, \quad \sum \alpha_i \alpha_j \alpha_k = -\frac{a_3}{a_0}, \quad \dots, \quad \prod \alpha_i = (-1)^n \frac{a_n}{a_0}.$$
+- Symmetric functions: $\sum \alpha^2 = (\sum \alpha)^2 - 2\sum \alpha\beta$; $\sum \frac{1}{\alpha} = \frac{\sum \alpha\beta}{\alpha\beta\gamma}$.
+- Complex roots (real coefficients) and $a \pm \sqrt{b}$ roots (rational coefficients) occur in conjugate pairs.
+- Descartes' rule: number of positive roots $\leq$ number of sign changes in $f(x)$; negative roots from $f(-x)$.
+- Transformations: roots $k\alpha$: put $x \to \frac{x}{k}$; roots $\alpha + h$: $x \to x - h$; roots $\frac{1}{\alpha}$: $x \to \frac{1}{x}$.
+- Roots in AP: take $a - d, a, a + d$; in GP: $\frac{a}{r}, a, ar$.
+- If $\alpha$ is an $r$-fold root of $f$, then it is an $(r - 1)$-fold root of $f'$. Conversely, an $(r - 1)$-fold root of $f'$ that is *also a root of* $f$ is an $r$-fold root of $f$ (e.g. 0 is a root of $(x^2 + 1)' = 2x$ but not of $x^2 + 1$).
+
+- For a cubic $ax^3 + bx^2 + cx + d = 0$ with roots $\alpha, \beta, \gamma$: $\alpha + \beta + \gamma = -\frac{b}{a}$, $\alpha\beta + \beta\gamma + \gamma\alpha = \frac{c}{a}$, $\alpha\beta\gamma = -\frac{d}{a}$. The formula $\sum \frac{1}{\alpha} = \frac{\sum \alpha\beta}{\alpha\beta\gamma}$ above is for this cubic case.
+- An equation of degree $n$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity. With real coefficients, an odd-degree equation has at least one real root.
+- Descartes' rule counts *at most*; the true number of positive roots is the number of sign changes or less than it by an even number.
+
+! example | Question TE1 — standard
+Solve $x^3 - 12x^2 + 39x - 28 = 0$, given that the roots are in AP.
+**Solution.** Roots $a - d, a, a + d$: sum $3a = 12 \Rightarrow a = 4$. Product $(4 - d) \cdot 4 \cdot (4 + d) = 28 \Rightarrow 16 - d^2 = 7 \Rightarrow d = \pm 3$. Roots $\boxed{1, 4, 7}$. (Check: $1 \cdot 4 + 4 \cdot 7 + 7 \cdot 1 = 39$ ✓.)
+
+! example | Question TE2 — standard
+If $\alpha, \beta, \gamma$ are the roots of $x^3 - 2x^2 + 3x - 4 = 0$, find $\sum \alpha^2$ and $\sum \frac{1}{\alpha}$.
+**Solution.** $\sum \alpha = 2$, $\sum \alpha\beta = 3$, $\alpha\beta\gamma = 4$. $\sum \alpha^2 = 4 - 6 = \boxed{-2}$ (so not all roots are real). $\sum \frac{1}{\alpha} = \frac{3}{4}$.
+
+! trick | Shortcut / time-saver
+Sum of coefficients $= 0 \Rightarrow x = 1$ is a root; alternating sum $= 0 \Rightarrow x = -1$ is a root. In MCQs substitute the options.
+
+## More worked examples
+
+! example | Example 4 — roots in GP
+Solve $x^3 - 7x^2 + 14x - 8 = 0$, given that the roots are in GP.
+**Solution.** Roots $\frac{a}{r}, a, ar$: product $a^3 = 8 \Rightarrow a = 2$. Sum $\frac{2}{r} + 2 + 2r = 7 \Rightarrow 2r^2 - 5r + 2 = 0 \Rightarrow r = 2$ or $\frac{1}{2}$. Roots $\boxed{1, 2, 4}$.
+
+! example | Example 5 — increasing the roots
+Form the equation whose roots are those of $x^3 - 3x^2 + 2x - 1 = 0$, each increased by 1.
+**Solution.** Put $x \to x - 1$: $(x-1)^3 - 3(x-1)^2 + 2(x-1) - 1 = x^3 - 6x^2 + 11x - 7$. The equation is $\boxed{x^3 - 6x^2 + 11x - 7 = 0}$.
+
+! example | Example 6 — a conjugate root
+One root of $x^3 - 5x^2 + 9x - 5 = 0$ is $2 + i$. Find the others.
+**Solution.** Real coefficients, so $2 - i$ is a root too. Their sum is 4 and the sum of all three is 5, so the third root is $\boxed{1}$. (Check: $(2 + i)(2 - i) \cdot 1 = 5 = -\frac{d}{a}$.)
+
+! example | Example 7 — Descartes' rule
+How many positive and negative real roots can $x^3 + 2x - 5 = 0$ have?
+**Solution.** $f(x) = x^3 + 2x - 5$ has signs $+ + -$: one change, so exactly one positive root. $f(-x) = -x^3 - 2x - 5$ has no change: no negative root. The other two roots are complex.
+
+? What does $D < 0$ tell you about $ax^2 + bx + c = 0$ with real coefficients? :: The roots are complex conjugates; there is no real root.
+? Sum and product of the roots of $ax^2 + bx + c = 0$? :: $-\frac{b}{a}$ and $\frac{c}{a}$.
+? Product of the roots of $a_0 x^n + \cdots + a_n = 0$? :: $(-1)^n \frac{a_n}{a_0}$.
+? To get an equation whose roots are the reciprocals, what do you substitute? :: Replace $x$ by $\frac{1}{x}$ (and clear the fractions).
+
+! exam | What the exam asks
+- Nature of roots from the discriminant; values of $k$ for equal or real roots.
+- Symmetric functions of the roots; equations with transformed roots.
+- Cubics with roots in AP or GP, conjugate roots, and Descartes' rule.
+
+! recap | One-minute revision
+- $D = b^2 - 4ac$; $\alpha + \beta = -\frac{b}{a}$, $\alpha\beta = \frac{c}{a}$; extreme value $-\frac{D}{4a}$ at $x = -\frac{b}{2a}$.
+- Cubic: $\sum \alpha = -\frac{b}{a}$, $\sum \alpha\beta = \frac{c}{a}$, $\alpha\beta\gamma = -\frac{d}{a}$.
+- AP roots $a - d, a, a + d$; GP roots $\frac{a}{r}, a, ar$; conjugates come in pairs.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 1 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class X, chapter 4: Quadratic Equations | https://ncert.nic.in/textbook.php?jemh1=4-14
+& Hall and Knight, Higher Algebra, the chapter on the theory of equations

@@ -1,0 +1,106 @@
+@en
+# Number system, surds, logarithms, polynomials
+
+> This topic is the toolkit of school algebra that the TGT paper tests directly: kinds of numbers, simplifying surds, the laws of logarithms, factorising polynomials with the remainder and factor theorems, ratio and proportion, and when a pair of linear equations has a solution.
+
+## The essentials
+
+! addon | Numbers, surds, logarithms and polynomials
+- $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$. A rational number has a terminating or recurring decimal; $\frac{p}{q}$ (lowest terms) terminates iff $q = 2^m 5^n$.
+- Euclid's (division) lemma $a = bq + r$, $0 \leq r < b$ (integers $a$ and $b > 0$); HCF $\times$ LCM $= ab$ (two positive integers $a$, $b$); unique prime factorisation.
+- Surds: $\frac{1}{\sqrt{a} + \sqrt{b}} = \frac{\sqrt{a} - \sqrt{b}}{a - b}$ ($a \neq b$); $\sqrt{a + 2\sqrt{b}} = \sqrt{x} + \sqrt{y}$ where $x + y = a$, $xy = b$.
+- Logarithms ($m, n, b > 0$; base $a > 0$, $a \neq 1$): $\log mn = \log m + \log n$, $\log \frac{m}{n} = \log m - \log n$, $\log m^p = p \log m$, $\log_a b = \frac{\log b}{\log a}$, $a^{\log_a b} = b$.
+- Remainder theorem: $p(x) \div (x - a)$ leaves $p(a)$; factor theorem: $p(a) = 0 \iff (x - a) \mid p(x)$.
+- $a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)$; if $a + b + c = 0$ then $a^3 + b^3 + c^3 = 3abc$.
+- Two linear equations $a_1 x + b_1 y = c_1$, $a_2 x + b_2 y = c_2$: unique solution if $\frac{a_1}{a_2} \neq \frac{b_1}{b_2}$; none if $\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}$; infinitely many if all three ratios are equal.
+
+! check | A name and conditions added
+- $a = bq + r$ is Euclid's **division** lemma; the name "Euclid's lemma" usually means a different result: a prime that divides $ab$ divides $a$ or $b$.
+- HCF $\times$ LCM $= ab$ holds for **two** numbers only: for $2, 2, 2$ the HCF and LCM are both 2, and $2 \times 2 \neq 2 \times 2 \times 2$.
+- The surd formula needs $a \neq b$. The log laws need positive numbers: $\log x^2 = 2 \log x$ is false for $x < 0$, where the right side is not defined; the correct form is $\log x^2 = 2 \log \lvert x \rvert$.
+
+! note | Useful algebra
+$x + \frac{1}{x} = a \Rightarrow x^2 + \frac{1}{x^2} = a^2 - 2$ and $x^3 + \frac{1}{x^3} = a^3 - 3a$. Cube roots of unity: $1, \omega, \omega^2$ with $\omega^3 = 1$, $1 + \omega + \omega^2 = 0$, $\omega = \frac{-1 + i\sqrt{3}}{2}$.
+
+! example | Question N1 — standard
+Simplify $\sqrt{7 + 4\sqrt{3}}$ and find $\log_2 32 + \log_3 \frac{1}{9}$.
+**Solution.** $7 + 4\sqrt{3} = 7 + 2\sqrt{12}$: $x + y = 7$, $xy = 12 \Rightarrow x = 4, y = 3$; so $\sqrt{7 + 4\sqrt{3}} = \boxed{2 + \sqrt{3}}$. $\log_2 32 + \log_3 \frac{1}{9} = 5 + (-2) = \boxed{3}$.
+
+## Numbers
+
+- **Natural** numbers $\mathbb{N} = \{1, 2, 3, \dots\}$; **whole** numbers add 0; **integers** $\mathbb{Z}$ add the negatives; **rationals** $\mathbb{Q}$ are the fractions $\frac{p}{q}$ with $q \neq 0$; **irrationals** such as $\sqrt{2}$, $\pi$, $e$ have non-terminating, non-recurring decimals; rationals and irrationals together make the **reals** $\mathbb{R}$.
+- $\sqrt{2}$ is irrational: if $\sqrt{2} = \frac{p}{q}$ in lowest terms, then $p^2 = 2q^2$, so $p$ is even, say $p = 2k$; then $q^2 = 2k^2$ and $q$ is even too, which contradicts "lowest terms".
+- A recurring decimal is turned into a fraction by subtraction: if $x = 0.\overline{36}$, then $100x - x = 36$, so $x = \frac{36}{99} = \frac{4}{11}$.
+- **HCF by Euclid's algorithm**: divide, then divide the divisor by the remainder, and repeat; the last non-zero remainder is the HCF. For example, $\text{HCF}(420, 130)$: $420 = 3 \cdot 130 + 30$, $130 = 4 \cdot 30 + 10$, $30 = 3 \cdot 10$, so the HCF is 10, and the LCM is $\frac{420 \cdot 130}{10} = 5460$.
+
+## Surds and logarithms
+
+- A **surd** is an irrational root of a rational number, such as $\sqrt{3}$ or $\sqrt[3]{5}$. To **rationalise** a denominator $\sqrt{a} + \sqrt{b}$, multiply above and below by its conjugate $\sqrt{a} - \sqrt{b}$.
+- $\log_a b = c$ means $a^c = b$ (with $a > 0$, $a \neq 1$, $b > 0$). So $\log_a 1 = 0$, $\log_a a = 1$, and $\log_a b \cdot \log_b a = 1$.
+- **Number of digits**: if $\log_{10} N = k.\text{something}$, then $N$ has $k + 1$ digits before the decimal point.
+
+! example | Example 1 — rationalising
+Rationalise $\frac{1}{\sqrt{5} + \sqrt{3}}$.
+**Solution.** $\frac{1}{\sqrt{5} + \sqrt{3}} \cdot \frac{\sqrt{5} - \sqrt{3}}{\sqrt{5} - \sqrt{3}} = \boxed{\frac{\sqrt{5} - \sqrt{3}}{2}}$.
+
+! example | Example 2 — digits of a large power
+Given $\log_{10} 2 = 0.30103$, how many digits has $2^{50}$?
+**Solution.** $\log_{10} 2^{50} = 50 \times 0.30103 = 15.0515$, so $2^{50}$ has $15 + 1 = \boxed{16}$ digits.
+
+! example | Example 3 — a logarithmic equation
+Solve $\log_2 x + \log_2 (x - 2) = 3$.
+**Solution.** $\log_2 x(x - 2) = 3 \Rightarrow x^2 - 2x = 8 \Rightarrow (x - 4)(x + 2) = 0$. Since $x > 2$ is needed for both logarithms, $x = \boxed{4}$.
+
+## Polynomials
+
+- A **second-degree polynomial** $ax^2 + bx + c$ is factorised by splitting the middle term: find two numbers with product $ac$ and sum $b$. For $6x^2 + 5x - 6$, $ac = -36$ and $9 - 4 = 5$, so $6x^2 + 9x - 4x - 6 = (2x + 3)(3x - 2)$.
+- The **HCF of polynomials** is the product of the common factors; the **LCM** is the product of all factors, each to its highest power. For any two polynomials, HCF $\times$ LCM $=$ their product (up to a constant).
+- **Ratio and proportion**: if $a : b = c : d$, then $ad = bc$. The **mean proportional** of $a$ and $b$ is $\sqrt{ab}$, the **third proportional** to $a, b$ is $\frac{b^2}{a}$, and the **fourth proportional** to $a, b, c$ is $\frac{bc}{a}$. **Componendo and dividendo**: if $\frac{a}{b} = \frac{c}{d}$ (with $a \neq b$), then $\frac{a + b}{a - b} = \frac{c + d}{c - d}$.
+
+! example | Example 4 — the factor theorem
+Find $k$ if $x - 2$ is a factor of $x^3 - 3x^2 + kx - 4$, and then factorise.
+**Solution.** $p(2) = 8 - 12 + 2k - 4 = 0 \Rightarrow k = \boxed{4}$. Dividing $x^3 - 3x^2 + 4x - 4$ by $x - 2$ gives $x^2 - x + 2$, so $p(x) = (x - 2)(x^2 - x + 2)$; the quadratic has no real factors since $1 - 8 < 0$.
+
+! example | Example 5 — HCF and LCM of polynomials
+Find the HCF and LCM of $x^2 - 1$ and $x^2 + 3x + 2$.
+**Solution.** $x^2 - 1 = (x - 1)(x + 1)$ and $x^2 + 3x + 2 = (x + 1)(x + 2)$. HCF $= \boxed{x + 1}$; LCM $= \boxed{(x - 1)(x + 1)(x + 2)}$.
+
+! example | Example 6 — consistency of two equations
+For which $k$ has the pair $2x + 3y = 5$, $4x + ky = 10$ (i) a unique solution, (ii) infinitely many?
+**Solution.** $\frac{2}{4} = \frac{3}{k}$ when $k = 6$, and then $\frac{5}{10}$ is equal too. So (i) unique for $k \neq 6$; (ii) infinitely many for $\boxed{k = 6}$. There is no $k$ that gives no solution.
+
+! example | Example 7 — using $a + b + c = 0$
+Find $(x - y)^3 + (y - z)^3 + (z - x)^3$.
+**Solution.** The three terms add to 0, so the sum is $\boxed{3(x - y)(y - z)(z - x)}$.
+
+## Linear equations in two and three unknowns
+
+- **Two unknowns** are found by substitution, by elimination (make the coefficients of one unknown equal, then subtract) or by **cross-multiplication**: for $a_1 x + b_1 y + c_1 = 0$ and $a_2 x + b_2 y + c_2 = 0$, $\frac{x}{b_1 c_2 - b_2 c_1} = \frac{y}{c_1 a_2 - c_2 a_1} = \frac{1}{a_1 b_2 - a_2 b_1}$, provided $a_1 b_2 - a_2 b_1 \neq 0$.
+- **Three unknowns**: eliminate the same unknown from two different pairs of the equations, solve the two equations that remain, then substitute back to find the third unknown. (Cramer's rule and the inverse matrix, which solve the same problem, are in Chapter 2.)
+
+! example | Example 8 — two unknowns by cross-multiplication
+Solve $2x + 3y = 8$, $3x - y = 1$.
+**Solution.** Write them as $2x + 3y - 8 = 0$ and $3x - y - 1 = 0$. Then $\frac{x}{(3)(-1) - (-1)(-8)} = \frac{y}{(-8)(3) - (-1)(2)} = \frac{1}{(2)(-1) - (3)(3)}$, that is $\frac{x}{-11} = \frac{y}{-22} = \frac{1}{-11}$. So $\boxed{x = 1, \ y = 2}$.
+
+! example | Example 9 — three unknowns
+Solve $x + y + z = 6$, $x - y + z = 2$, $2x + y - z = 1$.
+**Solution.** The first minus the second gives $2y = 4$, so $y = 2$. Then the first and third equations become $x + z = 4$ and $2x - z = -1$; adding, $3x = 3$. So $\boxed{x = 1, \ y = 2, \ z = 3}$. (Check in the third: $2 + 2 - 3 = 1$.)
+
+? When does $\frac{p}{q}$ (in lowest terms) have a terminating decimal? :: When $q$ has no prime factors other than 2 and 5, i.e. $q = 2^m 5^n$.
+? What is $a^{\log_a b}$? :: $b$.
+? What remainder does $p(x)$ leave on division by $x - a$? :: $p(a)$.
+? If $x + \frac{1}{x} = 3$, what is $x^2 + \frac{1}{x^2}$? :: $3^2 - 2 = 7$.
+
+! exam | What the exam asks
+- Simplifying surds and nested roots; rationalising denominators.
+- Laws of logarithms, change of base, number of digits.
+- Factor and remainder theorems, HCF and LCM, ratio and proportion.
+- Consistency of a pair of linear equations, and solving equations in two or three unknowns.
+
+! recap | One-minute revision
+- $\frac{p}{q}$ terminates iff $q = 2^m 5^n$; HCF $\times$ LCM $= ab$.
+- $\sqrt{a + 2\sqrt{b}} = \sqrt{x} + \sqrt{y}$ with $x + y = a$, $xy = b$; $\log_a b = \frac{\log b}{\log a}$.
+- $a + b + c = 0 \Rightarrow a^3 + b^3 + c^3 = 3abc$; $\omega^3 = 1$, $1 + \omega + \omega^2 = 0$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 1 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class X, chapters 1 to 4: Real Numbers, Polynomials, Pair of Linear Equations, Quadratic Equations | https://ncert.nic.in/textbook.php?jemh1=1-14
