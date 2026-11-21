@@ -1,0 +1,68 @@
+@en
+# Trigonometric equations
+
+> A trigonometric equation has infinitely many solutions, collected in a general solution with an integer $n$. Reduce the equation to one of the standard forms $\sin\theta = \sin\alpha$, $\cos\theta = \cos\alpha$, $\tan\theta = \tan\alpha$, or to $a\cos\theta + b\sin\theta = c$.
+
+## General solutions
+
+! note | General solutions
+| Equation | General solution ($n \in \mathbb{Z}$) |
+| $\sin\theta = 0$; $\cos\theta = 0$; $\tan\theta = 0$ | $n\pi$; $(2n + 1)\frac{\pi}{2}$; $n\pi$ |
+| $\sin\theta = \sin\alpha$ | $\theta = n\pi + (-1)^n\alpha$ |
+| $\cos\theta = \cos\alpha$ | $\theta = 2n\pi \pm \alpha$ |
+| $\tan\theta = \tan\alpha$ | $\theta = n\pi + \alpha$ |
+| $\sin^2\theta = \sin^2\alpha$ (also $\cos^2$, $\tan^2$) | $\theta = n\pi \pm \alpha$ |
+| $a\cos\theta + b\sin\theta = c$ | divide by $\sqrt{a^2 + b^2}$: $\cos(\theta - \alpha) = \frac{c}{\sqrt{a^2 + b^2}}$ |
+
+! check | Conditions added
+In the last row $\alpha$ is the angle with $\cos\alpha = \frac{a}{\sqrt{a^2 + b^2}}$, $\sin\alpha = \frac{b}{\sqrt{a^2 + b^2}}$, and the equation has solutions only when $\lvert c \rvert \leq \sqrt{a^2 + b^2}$. In $\tan\theta = \tan\alpha$, $\alpha \neq (2k + 1)\frac{\pi}{2}$. The $\tan^2$ case needs $\tan\alpha$ defined.
+
+! example | Question TE1 — standard
+Solve $2\cos^2\theta + 3\sin\theta = 0$.
+**Solution.**
+$$\begin{aligned} &2(1 - \sin^2\theta) + 3\sin\theta = 0 \\ &\Rightarrow 2\sin^2\theta - 3\sin\theta - 2 = 0 \\ &\Rightarrow (2\sin\theta + 1)(\sin\theta - 2) = 0. \end{aligned}$$
+$\sin\theta = 2$ is impossible, so $\sin\theta = -\frac{1}{2} = \sin\left(-\frac{\pi}{6}\right)$:
+$$\boxed{\theta = n\pi + (-1)^n\left(-\frac{\pi}{6}\right)}.$$
+
+! example | Question TE2 — standard
+Solve $\sqrt{3}\cos\theta + \sin\theta = \sqrt{2}$.
+**Solution.** Divide by 2:
+$$\begin{aligned} &\cos\theta\cos\frac{\pi}{6} + \sin\theta\sin\frac{\pi}{6} = \frac{1}{\sqrt{2}} \\ &\Rightarrow \cos\left(\theta - \frac{\pi}{6}\right) = \cos\frac{\pi}{4}. \end{aligned}$$
+So $\theta - \frac{\pi}{6} = 2n\pi \pm \frac{\pi}{4}$: $\boxed{\theta = 2n\pi + \frac{\pi}{6} \pm \frac{\pi}{4}}$.
+
+## What it means
+
+- **Why $(-1)^n$**: $\sin$ takes the value $\sin\alpha$ at $\alpha$ and $\pi - \alpha$ in each turn; the two families $2k\pi + \alpha$ and $(2k + 1)\pi - \alpha$ combine into $n\pi + (-1)^n\alpha$.
+- **Principal solution**: the solution in $[0, 2\pi)$ (or the one of least absolute value); the general solution adds the period.
+- **Checking**: squaring or multiplying by an expression containing $\theta$ can bring in false roots; put each answer back into the original equation.
+- **Restricted intervals**: list $n = 0, \pm 1, \pm 2, \ldots$ in the general solution and keep the values inside the interval.
+
+! example | Example 1 — solutions in an interval
+Solve $\tan 2\theta = \sqrt{3}$ for $0 \leq \theta < \pi$.
+**Solution.** $2\theta = n\pi + \frac{\pi}{3}$, $\theta = \frac{n\pi}{2} + \frac{\pi}{6}$. In $[0, \pi)$: $n = 0, 1$ give $\boxed{\frac{\pi}{6}, \frac{2\pi}{3}}$.
+
+! example | Example 2 — a sum turned into a product
+Solve $\sin 3\theta + \sin\theta = 0$.
+**Solution.** $2\sin 2\theta\cos\theta = 0$: $\sin 2\theta = 0 \Rightarrow \theta = \frac{n\pi}{2}$, or $\cos\theta = 0 \Rightarrow \theta = (2n + 1)\frac{\pi}{2}$, which is already contained in the first family. So $\boxed{\theta = \frac{n\pi}{2}}$.
+
+! example | Example 3 — no solution
+Does $3\sin x + 4\cos x = 6$ have a solution?
+**Solution.** $\sqrt{9 + 16} = 5 < 6$: $\boxed{\text{no}}$.
+
+? General solution of $\cos\theta = \cos\alpha$? :: $\theta = 2n\pi \pm \alpha$.
+? General solution of $\sin\theta = \sin\alpha$? :: $\theta = n\pi + (-1)^n\alpha$.
+? General solution of $\tan^2\theta = \tan^2\alpha$? :: $\theta = n\pi \pm \alpha$.
+? When is $a\cos\theta + b\sin\theta = c$ solvable? :: When $\lvert c \rvert \leq \sqrt{a^2 + b^2}$.
+
+! exam | What the exam asks
+- General solutions of $\sin$, $\cos$, $\tan$ and their squares.
+- Quadratics in $\sin\theta$ or $\cos\theta$; equations of the form $a\cos\theta + b\sin\theta = c$.
+- The number of solutions in a given interval.
+
+! recap | One-minute revision
+- $\sin$: $n\pi + (-1)^n\alpha$; $\cos$: $2n\pi \pm \alpha$; $\tan$: $n\pi + \alpha$; squares: $n\pi \pm \alpha$.
+- $a\cos\theta + b\sin\theta = c$: divide by $\sqrt{a^2 + b^2}$.
+- Reject impossible values ($\lvert\sin\theta\rvert > 1$) and check for false roots.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 9 (the full PDF is linked on the subject page)
+& S. L. Loney, Plane Trigonometry, Part I, chapter 6 (general values)

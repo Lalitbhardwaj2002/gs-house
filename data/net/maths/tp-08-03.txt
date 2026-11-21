@@ -1,0 +1,61 @@
+@en
+# Higher degree equations; singular solutions (PGT)
+
+> Equations of the first order but higher degree in $p = \frac{dy}{dx}$ are solved by solving for $p$, for $y$ or for $x$. Clairaut's equation $y = px + f(p)$ is the model case: its general solution is a family of straight lines, and their envelope is a singular solution.
+
+## Solving for $p$, $y$ or $x$; Clairaut's equation
+
+! addon | Equations of higher degree and singular solutions
+Write $p = \frac{dy}{dx}$.
+- Solvable for $p$: factorise $(p - f_1)(p - f_2)\cdots = 0$ and combine the solutions.
+- Solvable for $y$: $y = f(x, p)$, differentiate with respect to $x$; solvable for $x$: differentiate with respect to $y$.
+- **Clairaut's equation** $y = px + f(p)$: general solution $y = cx + f(c)$ (a family of lines); **singular solution** by eliminating $p$ from $y = px + f(p)$ and $x + f'(p) = 0$ — the envelope of the lines.
+- A singular solution satisfies the DE but is not obtained from the general solution. Discriminants: $c$-disc $= EN^2C^3$, $p$-disc $= ET^2C$ ($E$ envelope = singular solution, $N$ node locus, $T$ tac locus, $C$ cusp locus).
+
+^ data/net/maths/fig/clairaut.svg | Clairaut: lines $y = cx + \frac{a}{c}$ and their envelope (singular solution)
+
+! check | Conditions added
+"Combine the solutions" means the general solution is the product $\phi_1(x, y, c)\,\phi_2(x, y, c)\cdots = 0$ with **one** constant $c$ (the equation has order 1). In the discriminant rule, each locus may be absent; only a factor that also satisfies the DE is a singular solution (the envelope $E$); the tac, node and cusp loci in general do not.
+
+! example | Question CL1 — standard
+Find the general and singular solutions of $y = px + \frac{a}{p}$.
+**Solution.** General: $\boxed{y = cx + \frac{a}{c}}$. Singular: $x - \frac{a}{p^2} = 0 \Rightarrow p = \sqrt{a/x}$; then $y = \sqrt{ax} + \sqrt{ax} = 2\sqrt{ax}$, i.e. $\boxed{y^2 = 4ax}$ (the parabola touched by all the lines).
+
+! check | A sign added
+Taking $p = -\sqrt{a/x}$ as well gives $y = -2\sqrt{ax}$; both halves together are the parabola $y^2 = 4ax$ (for $a > 0$, $x > 0$).
+
+## What it means
+
+- **Degree in $p$**: $p^2 - 5p + 6 = 0$ is first order but second degree; it splits into two first-order, first-degree equations.
+- **Clairaut's trick**: differentiating $y = px + f(p)$ gives $p = p + \left(x + f'(p)\right)\frac{dp}{dx}$, so either $\frac{dp}{dx} = 0$ ($p = c$, the lines) or $x + f'(p) = 0$ (the envelope).
+- **Singular solution** = the envelope of the family of general solutions: at each of its points it touches one member of the family, so it has the same slope there and satisfies the DE, yet no choice of $c$ gives it.
+
+! example | Example 1 — solvable for $p$
+Solve $p^2 - 5p + 6 = 0$.
+**Solution.** $(p - 2)(p - 3) = 0$: $y = 2x + c$ or $y = 3x + c$. General solution $\boxed{(y - 2x - c)(y - 3x - c) = 0}$.
+
+! example | Example 2 — Clairaut's equation
+Find the general and singular solutions of $y = px + p^2$.
+**Solution.** General: $\boxed{y = cx + c^2}$. Singular: $x + 2p = 0 \Rightarrow p = -\frac{x}{2}$, so $y = -\frac{x^2}{2} + \frac{x^2}{4}$, i.e. $\boxed{x^2 + 4y = 0}$. Check: on it $p = -\frac{x}{2}$ and $px + p^2 = -\frac{x^2}{4} = y$ ✓.
+
+! example | Example 3 — Clairaut's form with a square root
+Solve $y = px + \sqrt{1 + p^2}$ and find its singular solution.
+**Solution.** It is already Clairaut's form: $y = cx + \sqrt{1 + c^2}$. Singular: $x + \frac{p}{\sqrt{1 + p^2}} = 0$. Then $x = -\frac{p}{\sqrt{1 + p^2}}$ and $y = \frac{1}{\sqrt{1 + p^2}}$, so $\boxed{x^2 + y^2 = 1}$: the lines are the tangents of the unit circle.
+
+? General solution of Clairaut's equation $y = px + f(p)$? :: $y = cx + f(c)$: replace $p$ by $c$.
+? How is the singular solution of Clairaut's equation found? :: Eliminate $p$ between $y = px + f(p)$ and $x + f'(p) = 0$.
+? What is a singular solution geometrically? :: The envelope of the family of curves of the general solution.
+? In the $c$-discriminant $EN^2C^3$, which factor is the singular solution? :: $E$, the envelope.
+
+! exam | What the exam asks
+- General and singular solutions of Clairaut's equation (lines and their envelope: parabola, circle).
+- Equations solvable for $p$ by factorising.
+- Which locus of the discriminant is the singular solution.
+
+! recap | One-minute revision
+- $y = px + f(p) \Rightarrow y = cx + f(c)$; singular from $x + f'(p) = 0$.
+- $y = px + \frac{a}{p}$: envelope $y^2 = 4ax$; $y = px + p^2$: $x^2 + 4y = 0$.
+- $c$-disc $EN^2C^3$, $p$-disc $ET^2C$; only $E$ is a solution.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 8 (the full PDF is linked on the subject page)
+& M. D. Raisinghania, Ordinary and Partial Differential Equations, chapter 4 (equations of the first order but not of the first degree)

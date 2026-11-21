@@ -9,7 +9,7 @@
  "subtitle": { "en": "UPESSC PGT (Lecturer) · subject code 08 · topic-wise notes on the official 2026 syllabus" },
  "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 7 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 9 of the notes are ready; the other chapters are being added."
  },
  "units": [
   {
@@ -116,7 +116,27 @@
     }
    ]
   },
-  { "id": "u3", "icon": "🌊", "en": "Ordinary Differential Equations", "line": { "en": "Order and degree · first order equations · singular solutions · constant coefficients" } },
+  {
+   "id": "u3", "icon": "🌊", "en": "Ordinary Differential Equations",
+   "line": { "en": "Order and degree · first order equations · singular solutions · constant coefficients" },
+   "parts": [
+    {
+     "en": "Differential equations",
+     "chapters": [
+      { "id": "tp-08-01", "en": "8.1 Order, degree and formation",
+        "key": { "en": "Order and degree · when the degree is not defined · forming the DE of a family of curves" } },
+      { "id": "tp-08-02", "en": "8.2 First order, first degree equations",
+        "key": { "en": "Separable, homogeneous, linear and exact equations · integrating factors · Bernoulli's equation" } },
+      { "id": "tp-08-03", "en": "8.3 Higher degree equations; singular solutions (PGT)",
+        "key": { "en": "Equations solvable for p, y or x · Clairaut's equation · singular solutions and discriminants" } },
+      { "id": "tp-08-04", "en": "8.4 Linear equations with constant coefficients (PGT)",
+        "key": { "en": "Complementary function · particular integrals for e^(ax), sin ax, x^m, e^(ax)V · Cauchy–Euler equations" } },
+      { "id": "tp-08-05", "en": "8.5 Orthogonal trajectories",
+        "key": { "en": "Curves cutting a family at right angles, in Cartesian and polar form" } }
+     ]
+    }
+   ]
+  },
   { "id": "u4", "icon": "🧭", "en": "Coordinate Geometry of Two Dimensions", "line": { "en": "General second-degree equation · conics · tangents and normals · chord of contact" } },
   { "id": "u5", "icon": "🧊", "en": "Vectors and Three-Dimensional Geometry", "line": { "en": "Dot and cross products · lines and planes · skew lines · sphere, cone and cylinder" } },
   {
@@ -174,6 +194,28 @@
   },
   { "id": "u8", "icon": "🌐", "en": "Vector Calculus", "line": { "en": "Gradient, divergence and curl · line, surface and volume integrals · Green, Gauss and Stokes" } },
   { "id": "u9", "icon": "⚖️", "en": "Mechanics", "line": { "en": "Statics · centre of gravity · catenary · moment of inertia · projectiles · central orbits" } },
-  { "id": "u10", "icon": "📐", "en": "Trigonometry", "line": { "en": "Equations · triangles · inverse functions · heights and distances · De Moivre's theorem" } }
+  {
+   "id": "u10", "icon": "📐", "en": "Trigonometry",
+   "line": { "en": "Equations · triangles · inverse functions · heights and distances · De Moivre's theorem" },
+   "parts": [
+    {
+     "en": "Trigonometry",
+     "chapters": [
+      { "id": "tp-09-01", "en": "9.1 Trigonometric ratios and the unit circle",
+        "key": { "en": "Radians · arc and sector · ASTC signs · allied angles · values at special angles" } },
+      { "id": "tp-09-02", "en": "9.2 Trigonometric identities",
+        "key": { "en": "Compound, multiple and sub-multiple angles · sum and product formulas · range of a sin x + b cos x" } },
+      { "id": "tp-09-03", "en": "9.3 Trigonometric equations",
+        "key": { "en": "General solutions of sin, cos and tan equations · a cos θ + b sin θ = c" } },
+      { "id": "tp-09-05", "en": "9.5 Properties and solution of triangles",
+        "key": { "en": "Sine, cosine and projection rules · half-angle formulas · area · R, r, r₁ · solving a triangle" } },
+      { "id": "tp-09-04", "en": "9.4 Inverse circular functions",
+        "key": { "en": "Principal ranges · properties and addition formulas · why the ranges are restricted" } },
+      { "id": "tp-09-06", "en": "9.6 Heights and distances",
+        "key": { "en": "Angles of elevation and depression · the two-position formula" } }
+     ]
+    }
+   ]
+  }
  ]
 }

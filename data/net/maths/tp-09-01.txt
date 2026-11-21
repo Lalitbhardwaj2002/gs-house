@@ -1,0 +1,69 @@
+@en
+# Trigonometric ratios and the unit circle
+
+> Angles are measured in radians; on the unit circle the point at angle $\theta$ is $(\cos\theta, \sin\theta)$. The signs in the four quadrants (ASTC), the allied-angle rules and the values at special angles answer most one-mark questions.
+
+## Radians, the unit circle and the signs
+
+^ data/net/maths/fig/unit-circle.svg | the unit circle: $P(\cos\theta, \sin\theta)$, with the quadrants where All, Sin, Tan and Cos are positive
+
+! note | Circular measure and the unit circle
+**Circular measure**: $\pi$ radians $= 180°$; arc length $l = r\theta$; sector area $\frac{1}{2}r^2\theta$.
+On the unit circle, the point at angle $\theta$ is $P(\cos\theta, \sin\theta)$; $\tan\theta = \frac{\sin\theta}{\cos\theta}$.
+**Signs (ASTC)**: Quadrant I all positive; II only $\sin$, $\operatorname{cosec}$; III only $\tan$, $\cot$; IV only $\cos$, $\sec$.
+**Allied angles**: $\sin(\pi - \theta) = \sin\theta$, $\cos(\pi - \theta) = -\cos\theta$, $\sin(\pi + \theta) = -\sin\theta$, $\sin\left(\frac{\pi}{2} - \theta\right) = \cos\theta$, $\sin(-\theta) = -\sin\theta$, $\cos(-\theta) = \cos\theta$.
+
+! check | A condition added
+$l = r\theta$ and the sector area $\frac{1}{2}r^2\theta$ need $\theta$ in **radians**; in degrees they read $l = \frac{\pi r\theta}{180}$ and $\frac{\pi r^2\theta}{360}$. $\tan\theta = \frac{\sin\theta}{\cos\theta}$ is defined only where $\cos\theta \neq 0$.
+
+## Values at special angles
+
+! note | Values of special angles
+| $\theta$ | $0°$ | $30°$ | $45°$ | $60°$ | $90°$ |
+| $\sin\theta$ | $0$ | $\frac{1}{2}$ | $\frac{1}{\sqrt{2}}$ | $\frac{\sqrt{3}}{2}$ | $1$ |
+| $\cos\theta$ | $1$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{\sqrt{2}}$ | $\frac{1}{2}$ | $0$ |
+| $\tan\theta$ | $0$ | $\frac{1}{\sqrt{3}}$ | $1$ | $\sqrt{3}$ | $\infty$ |
+Also $\sin 18° = \frac{\sqrt{5} - 1}{4}$, $\cos 36° = \frac{\sqrt{5} + 1}{4}$, $\tan 15° = 2 - \sqrt{3}$, $\tan 75° = 2 + \sqrt{3}$, $\tan 22\frac{1}{2}° = \sqrt{2} - 1$.
+
+! check | A condition added
+"$\tan 90° = \infty$" is shorthand: $\tan\theta$ is **not defined** at $90°$; it grows without bound as $\theta \to 90°$ from below (and to $-\infty$ from above).
+
+^ data/net/maths/fig/sin-cos.svg | $y = \sin x$ and $y = \cos x$ on $[0, 2\pi]$
+
+## What it means
+
+- **Radian**: the angle that cuts off an arc equal to the radius. A full turn is $2\pi$ radians, so $1 \text{ rad} = \frac{180°}{\pi} \approx 57.3°$ and $1° = \frac{\pi}{180}$ rad.
+- **Allied angles in one rule**: for $\frac{n\pi}{2} \pm \theta$, the function stays the same when $n$ is even and changes to its co-function ($\sin \leftrightarrow \cos$, $\tan \leftrightarrow \cot$, $\sec \leftrightarrow \operatorname{cosec}$) when $n$ is odd; the sign is the sign of the original function in the quadrant where $\frac{n\pi}{2} \pm \theta$ lies (take $\theta$ acute).
+- **Periods**: $\sin$, $\cos$, $\sec$, $\operatorname{cosec}$ repeat every $2\pi$; $\tan$ and $\cot$ every $\pi$.
+- **Ranges**: $-1 \leq \sin\theta, \cos\theta \leq 1$; $\lvert \sec\theta \rvert, \lvert \operatorname{cosec}\theta \rvert \geq 1$; $\tan$ and $\cot$ take every real value.
+
+! example | Example 1 — degrees to radians
+Express $40°20'$ in radians.
+**Solution.** $40°20' = 40\frac{1}{3}° = \frac{121}{3}°$, and $\frac{121}{3} \cdot \frac{\pi}{180} = \boxed{\frac{121\pi}{540}}$ rad.
+
+! example | Example 2 — allied angles
+Find $\sin 120°$, $\cos 210°$ and $\tan(-300°)$.
+**Solution.** $\sin 120° = \sin(180° - 60°) = \boxed{\frac{\sqrt{3}}{2}}$. $\cos 210° = \cos(180° + 30°) = \boxed{-\frac{\sqrt{3}}{2}}$. And
+$$\begin{aligned} &\tan(-300°) = -\tan 300° \\ &= -\tan(360° - 60°) \\ &= \tan 60° = \boxed{\sqrt{3}}. \end{aligned}$$
+
+! example | Example 3 — arc and sector
+A wheel of radius 35 cm turns through $72°$. How far does a point on its rim move? ($\pi = \frac{22}{7}$)
+**Solution.** $\theta = \frac{72\pi}{180} = \frac{2\pi}{5}$; $l = r\theta = 35 \cdot \frac{2}{5} \cdot \frac{22}{7} = \boxed{44\text{ cm}}$.
+
+? Which ratios are positive in the third quadrant? :: Only $\tan$ and $\cot$.
+? $\sin 18°$ and $\cos 36°$? :: $\frac{\sqrt{5} - 1}{4}$ and $\frac{\sqrt{5} + 1}{4}$.
+? Arc length and sector area for radius $r$ and angle $\theta$ radians? :: $l = r\theta$; area $\frac{1}{2}r^2\theta$.
+? $\cos\left(\frac{3\pi}{2} + \theta\right)$? :: $\sin\theta$ (odd multiple: co-function; fourth quadrant: $\cos$ positive).
+
+! exam | What the exam asks
+- Degree–radian conversion, arc length, sector area.
+- Signs and allied angles; values at $15°$, $18°$, $22\frac{1}{2}°$, $36°$.
+- Periods and ranges of the six functions.
+
+! recap | One-minute revision
+- $\pi$ rad $= 180°$; $l = r\theta$; area $\frac{1}{2}r^2\theta$.
+- ASTC; $\frac{n\pi}{2} \pm \theta$: co-function when $n$ is odd, sign by quadrant.
+- $\tan 15° = 2 - \sqrt{3}$, $\tan 75° = 2 + \sqrt{3}$, $\tan 22\frac{1}{2}° = \sqrt{2} - 1$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 9 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 11, chapter 3 (Trigonometric functions)

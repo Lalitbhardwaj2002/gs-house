@@ -1,0 +1,56 @@
+@en
+# Orthogonal trajectories
+
+> The orthogonal trajectories of a family of curves are the curves that cut every member of the family at right angles. Form the family's differential equation, replace the slope by its negative reciprocal (or, in polar form, $\frac{dr}{d\theta}$ by $-r^2\frac{d\theta}{dr}$), and solve.
+
+## Curves cutting a family at right angles
+
+! addon | Orthogonal trajectories
+^ data/net/maths/fig/orth-circles.svg | circles and their orthogonal lines
+Curves cutting every member of a family at right angles. Cartesian: form the DE of the family, replace $\frac{dy}{dx}$ by $-\frac{dx}{dy}$, solve. Polar: replace $\frac{dr}{d\theta}$ by $-r^2\frac{d\theta}{dr}$.
+- circles $x^2 + y^2 = a^2 \to$ lines $y = cx$;
+- parabolas $y^2 = 4ax \to$ ellipses $2x^2 + y^2 = c$;
+- $xy = c \to x^2 - y^2 = c$;
+- cardioids $r = a(1 + \cos\theta) \to r = b(1 - \cos\theta)$.
+
+! check | A condition added
+The parameter $a$ must be eliminated before the slope is replaced: the trajectories come from the family's differential equation, which no longer contains $a$. In the polar rule, $\frac{dr}{d\theta}$ is replaced by $-r^2\frac{d\theta}{dr}$ because the angle $\phi$ between the radius and the tangent satisfies $\tan\phi = r\frac{d\theta}{dr}$, and two curves cut at right angles when $\tan\phi_1\tan\phi_2 = -1$.
+
+! example | Question OT1 — standard
+Find the orthogonal trajectories of the parabolas $y^2 = 4ax$.
+**Solution.** $2yy' = 4a = \frac{y^2}{x} \Rightarrow y' = \frac{y}{2x}$. Replace $y'$ by $-\frac{1}{y'}$: $-\frac{dx}{dy} = \frac{y}{2x} \Rightarrow 2x\,dx + y\,dy = 0 \Rightarrow \boxed{2x^2 + y^2 = c}$ (ellipses).
+
+## What it means
+
+- **Why the negative reciprocal**: two curves cross at right angles when the product of their slopes at the crossing point is $-1$. Replacing $y'$ by $-\frac{1}{y'}$ in the family's equation describes curves with exactly that property.
+- **Where it appears**: lines of force and equipotentials in physics, streamlines and level curves; the circles and radial lines of the figure are the simplest pair.
+- A family can be **self-orthogonal**: the confocal conics $\frac{x^2}{a^2 + \lambda} + \frac{y^2}{b^2 + \lambda} = 1$ are their own orthogonal trajectories.
+
+! example | Example 1 — parabolas $y = cx^2$
+Find the orthogonal trajectories of $y = cx^2$.
+**Solution.** $y' = 2cx = \frac{2y}{x}$. Replace: $-\frac{dx}{dy} = \frac{2y}{x} \Rightarrow x\,dx + 2y\,dy = 0 \Rightarrow \boxed{x^2 + 2y^2 = k}$ (ellipses).
+
+! example | Example 2 — a polar family
+Find the orthogonal trajectories of the circles $r = a\cos\theta$.
+**Solution.** $\log r = \log a + \log\cos\theta$, so $\frac{1}{r}\frac{dr}{d\theta} = -\tan\theta$. Replace $\frac{dr}{d\theta}$ by $-r^2\frac{d\theta}{dr}$: $-r\frac{d\theta}{dr} = -\tan\theta$, i.e. $\cot\theta\,d\theta = \frac{dr}{r}$. Then $\log\sin\theta = \log r - \log b$: $\boxed{r = b\sin\theta}$, circles through the origin with centres on the line $\theta = \frac{\pi}{2}$.
+
+! example | Example 3 — rectangular hyperbolas
+Check the pair $xy = c$ and $x^2 - y^2 = k$.
+**Solution.** On $xy = c$: $y' = -\frac{y}{x}$. On $x^2 - y^2 = k$: $y' = \frac{x}{y}$. Product $= -1$ at every crossing ✓.
+
+? Cartesian rule for orthogonal trajectories? :: Form the family's DE, replace $\frac{dy}{dx}$ by $-\frac{dx}{dy}$, solve.
+? Polar rule? :: Replace $\frac{dr}{d\theta}$ by $-r^2\frac{d\theta}{dr}$.
+? Orthogonal trajectories of $x^2 + y^2 = a^2$? :: The lines through the origin, $y = cx$.
+? Orthogonal trajectories of $r = a(1 + \cos\theta)$? :: The cardioids $r = b(1 - \cos\theta)$.
+
+! exam | What the exam asks
+- Orthogonal trajectories of circles, parabolas, hyperbolas and cardioids.
+- The polar rule.
+- Recognising a pair of orthogonal families in an MCQ.
+
+! recap | One-minute revision
+- Cartesian: $y' \to -\frac{1}{y'}$; polar: $\frac{dr}{d\theta} \to -r^2\frac{d\theta}{dr}$.
+- $y^2 = 4ax \to 2x^2 + y^2 = c$; $xy = c \to x^2 - y^2 = c$; $r = a(1 + \cos\theta) \to r = b(1 - \cos\theta)$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 8 (the full PDF is linked on the subject page)
+& M. D. Raisinghania, Ordinary and Partial Differential Equations, chapter 3 (trajectories)

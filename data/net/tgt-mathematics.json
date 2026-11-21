@@ -9,7 +9,7 @@
  "subtitle": { "en": "UPESSC TGT · subject code 07 · topic-wise notes on the official 2026 syllabus" },
  "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 7 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 9 of the notes are ready; the other chapters are being added."
  },
  "units": [
   { "id": "u1", "icon": "💰", "en": "Commercial Mathematics", "line": { "en": "Work and time · speed · interest · banking · taxation" } },
@@ -133,8 +133,45 @@
     }
    ]
   },
-  { "id": "u7", "icon": "📐", "en": "Trigonometry", "line": { "en": "Ratios and identities · equations · triangles · inverse functions" } },
-  { "id": "u8", "icon": "🌀", "en": "Complex Numbers", "line": { "en": "De Moivre's theorem · complex functions · real and imaginary parts · heights and distances" } },
+  {
+   "id": "u7", "icon": "📐", "en": "Trigonometry",
+   "line": { "en": "Ratios and identities · equations · triangles · inverse functions" },
+   "parts": [
+    {
+     "en": "Ratios, identities and equations",
+     "chapters": [
+      { "id": "tp-09-01", "en": "9.1 Trigonometric ratios and the unit circle",
+        "key": { "en": "Radians · arc and sector · ASTC signs · allied angles · values at special angles" } },
+      { "id": "tp-09-02", "en": "9.2 Trigonometric identities",
+        "key": { "en": "Compound, multiple and sub-multiple angles · sum and product formulas · range of a sin x + b cos x" } },
+      { "id": "tp-09-03", "en": "9.3 Trigonometric equations",
+        "key": { "en": "General solutions of sin, cos and tan equations · a cos θ + b sin θ = c" } }
+     ]
+    },
+    {
+     "en": "Triangles and inverse functions",
+     "chapters": [
+      { "id": "tp-09-05", "en": "9.5 Properties and solution of triangles",
+        "key": { "en": "Sine, cosine and projection rules · half-angle formulas · area · R, r, r₁ · solving a triangle" } },
+      { "id": "tp-09-04", "en": "9.4 Inverse circular functions",
+        "key": { "en": "Principal ranges · properties and addition formulas · why the ranges are restricted" } }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u8", "icon": "🌀", "en": "Complex Numbers",
+   "line": { "en": "De Moivre's theorem · complex functions · real and imaginary parts · heights and distances" },
+   "parts": [
+    {
+     "en": "Heights and distances",
+     "chapters": [
+      { "id": "tp-09-06", "en": "9.6 Heights and distances",
+        "key": { "en": "Angles of elevation and depression · the two-position formula" } }
+     ]
+    }
+   ]
+  },
   { "id": "u9", "icon": "⭕", "en": "Geometry", "line": { "en": "Pythagoras · circles, chords and tangents · alternate segment · congruence" } },
   { "id": "u10", "icon": "🧭", "en": "Coordinate Geometry", "line": { "en": "Pair of lines · conics · tangents and normals · polar equation · sphere, cone and cylinder" } },
   {
@@ -177,6 +214,15 @@
         "key": { "en": "Spheres, zones, paraboloids, spheroids, cycloids, cardioids and loops · ready answers" } },
       { "id": "tp-07-10", "en": "7.10 Mensuration (TGT)",
         "key": { "en": "Cube, cuboid, cylinder, cone, sphere, hemisphere and frustum · recasting · Heron's formula" } }
+     ]
+    },
+    {
+     "en": "Differential equations",
+     "chapters": [
+      { "id": "tp-08-01", "en": "8.1 Order, degree and formation",
+        "key": { "en": "Order and degree · when the degree is not defined · forming the DE of a family of curves" } },
+      { "id": "tp-08-02", "en": "8.2 First order, first degree equations",
+        "key": { "en": "Separable, homogeneous, linear and exact equations · integrating factors · Bernoulli's equation" } }
      ]
     }
    ]

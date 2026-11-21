@@ -1,0 +1,64 @@
+@en
+# Heights and distances
+
+> Heights of towers and widths of rivers are found from angles of elevation and depression with right-triangle trigonometry. The model question: an observer moves a distance $d$ towards a tower and the angle of elevation changes from $\alpha$ to $\beta$.
+
+## Elevation, depression and the two-position formula
+
+^ data/net/maths/fig/heights.svg | angles of elevation $\alpha$ from $A$ and $\beta$ from $B$, $d = AB$, height $h$
+
+! note | Heights and distances
+Angle of **elevation**: measured upwards from the horizontal; angle of **depression**: downwards. In the right triangle, height $=$ distance $\times \tan$(angle).
+Observer moves a distance $d$ towards a tower; the elevations are $\alpha$ then $\beta$ ($\beta > \alpha$):
+$$\begin{aligned} &h = \frac{d\tan\alpha\tan\beta}{\tan\beta - \tan\alpha} \\ &= \frac{d\sin\alpha\sin\beta}{\sin(\beta - \alpha)}. \end{aligned}$$
+
+! check | A condition added
+The formula assumes $A$, $B$ and the foot of the tower are on one level line, with $B$ between $A$ and the foot, and the observer's height neglected (or added to $h$ afterwards).
+
+! example | Question HD1 — standard
+From a point on the ground the angle of elevation of the top of a tower is $30°$. On walking $20$ m towards the tower it becomes $60°$. Find the height of the tower.
+**Solution.**
+$$\begin{aligned} &h = \frac{d\sin\alpha\sin\beta}{\sin(\beta - \alpha)} \\ &= \frac{20 \cdot \frac{1}{2} \cdot \frac{\sqrt{3}}{2}}{\sin 30°} \\ &= \boxed{10\sqrt{3} \approx 17.3\text{ m}}. \end{aligned}$$
+(The second point is $10$ m from the foot.)
+
+! trick | Shortcut / time-saver
+$30°$–$60°$–$90°$ sides $1 : \sqrt{3} : 2$; $45°$ sides $1 : 1 : \sqrt{2}$. Elevations $30°$ then $60°$ after walking $d$: $h = \frac{\sqrt{3}}{2}d$. Complementary elevations from distances $a$, $b$: $h = \sqrt{ab}$.
+
+! check | A condition added
+In the rule $h = \sqrt{ab}$, $a$ and $b$ are the distances of the two points from the **foot** of the tower (not from each other), on level ground, with elevations $\theta$ and $90° - \theta$: then $\tan\theta = \frac{h}{a}$ and $\cot\theta = \frac{h}{b}$, so $h^2 = ab$. It holds whether the points are on the same side of the tower or on opposite sides.
+
+## What it means
+
+- **Where the formula comes from**: if the second point is $x$ from the foot, $h = x\tan\beta = (x + d)\tan\alpha$. Eliminate $x$: $x = \frac{d\tan\alpha}{\tan\beta - \tan\alpha}$, then $h = x\tan\beta$.
+- **Depression equals elevation**: the angle of depression of $B$ seen from $A$ equals the angle of elevation of $A$ seen from $B$ (alternate angles with parallel horizontals).
+- **Draw first**: mark the right angle at the foot, the horizontal line, then the given angles; each right triangle gives one $\tan$ equation.
+
+! example | Example 1 — angle of depression
+From the top of a cliff 50 m high, the angle of depression of a boat is $30°$. How far is the boat from the foot of the cliff?
+**Solution.** $\tan 30° = \frac{50}{x}$, so $x = 50\sqrt{3} \approx \boxed{86.6\text{ m}}$.
+
+! example | Example 2 — complementary elevations
+The elevations of the top of a tower from two points 4 m and 9 m from its foot, on the same side, are complementary. Find the height.
+**Solution.** $h = \sqrt{4 \cdot 9} = \boxed{6\text{ m}}$.
+
+! example | Example 3 — a flagstaff on a tower
+From a point 30 m from the foot of a tower, the elevations of the top of the tower and of the top of a flagstaff on it are $30°$ and $45°$. Find the length of the flagstaff.
+**Solution.** Tower: $30\tan 30° = 10\sqrt{3}$. Tower + flagstaff: $30\tan 45° = 30$. Flagstaff $= 30 - 10\sqrt{3} \approx \boxed{12.7\text{ m}}$.
+
+? Height from two elevations $\alpha < \beta$ with the points $d$ apart? :: $h = \frac{d\sin\alpha\sin\beta}{\sin(\beta - \alpha)}$.
+? Height when the elevations from distances $a$ and $b$ are complementary? :: $\sqrt{ab}$.
+? Sides of a $30°$–$60°$–$90°$ triangle? :: $1 : \sqrt{3} : 2$.
+? Elevations $30°$ then $60°$ after walking $d$ towards a tower: height? :: $\frac{\sqrt{3}}{2}d$.
+
+! exam | What the exam asks
+- Heights from one or two angles of elevation; distances from angles of depression.
+- Towers with flagstaffs, two towers, a man on a building, a river's width.
+- The shortcut values ($\frac{\sqrt{3}}{2}d$, $\sqrt{ab}$).
+
+! recap | One-minute revision
+- height $=$ distance $\times \tan$(elevation).
+- $h = \frac{d\tan\alpha\tan\beta}{\tan\beta - \tan\alpha} = \frac{d\sin\alpha\sin\beta}{\sin(\beta - \alpha)}$.
+- Complementary elevations: $h = \sqrt{ab}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 9 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 10, chapter 9 (Some applications of trigonometry)
