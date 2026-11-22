@@ -9,7 +9,7 @@
  "subtitle": { "en": "UPESSC PGT (Lecturer) · subject code 08 · topic-wise notes on the official 2026 syllabus" },
  "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 15 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of PGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. All 18 chapters of the notes are ready."
  },
  "units": [
   {
@@ -53,6 +53,21 @@
         "key": { "en": "General term · middle term · term independent of x · binomial coefficients" } },
       { "id": "tp-01-05", "en": "1.5 Exponential and logarithmic series",
         "key": { "en": "Series for e^x, a^x and log(1 + x) · sums with n!" } }
+     ]
+    },
+    {
+     "en": "Probability",
+     "chapters": [
+      { "id": "tp-16-01", "en": "16.1 Basic probability and the addition theorem",
+        "key": { "en": "Sample space and events · classical probability · P(A ∪ B) · a pack of cards · at least one" } },
+      { "id": "tp-16-02", "en": "16.2 Conditional probability, multiplication theorem, independent events",
+        "key": { "en": "P(A|B) · multiplication theorem · independence · series and parallel systems" } },
+      { "id": "tp-16-03", "en": "16.3 Total probability and Bayes' theorem",
+        "key": { "en": "Partitions · total probability · Bayes' theorem · the tree method" } },
+      { "id": "tp-16-04", "en": "16.4 Random variables and probability distributions",
+        "key": { "en": "Distribution tables · mean (expectation) · variance and SD" } },
+      { "id": "tp-16-05", "en": "16.5 Bernoulli trials and the binomial distribution",
+        "key": { "en": "B(n, p) · mean np, variance npq · Poisson and normal distributions" } }
      ]
     }
    ]
@@ -354,6 +369,21 @@
         "key": { "en": "General values · sinh⁻¹, cosh⁻¹, tanh⁻¹ as logarithms · inverse functions of complex numbers" } },
       { "id": "tp-10-11", "en": "10.11 Important results and exam tips: complex numbers",
         "key": { "en": "Eighteen results to remember · how to attack the standard questions" } }
+     ]
+    }
+   ]
+  }
+ ],
+ "extras": [
+  {
+   "id": "x1", "icon": "⚡", "en": "Last-day rapid revision",
+   "line": { "en": "131 one-line facts from all chapters · exam-hall strategy" },
+   "parts": [
+    {
+     "en": "Rapid revision",
+     "chapters": [
+      { "id": "tp-18-01", "en": "18 Last-day rapid revision: 131 one-line facts",
+        "key": { "en": "Algebra, analysis, calculus, trigonometry, geometry, vectors, mechanics, probability and statistics in one line each" } }
      ]
     }
    ]

@@ -1,0 +1,56 @@
+@en
+# Work and time
+
+> Turn every worker or pipe into a rate, work done per day or per hour. Rates add when people work together (and subtract for a pipe that empties); the time is the whole work divided by the combined rate.
+
+## Work, time and pipes
+
+! addon | Work and time
+- If A finishes a work in $a$ days, A's one day's work is $\frac{1}{a}$.
+- A and B together: $\frac{1}{a} + \frac{1}{b}$ per day, so $\frac{ab}{a + b}$ days. A, B, C together: $\frac{abc}{ab + bc + ca}$ days.
+- If A and B together take $x$ days and A alone $a$ days, B alone takes $\frac{ax}{a - x}$ days.
+- $\frac{M_1D_1H_1}{W_1} = \frac{M_2D_2H_2}{W_2}$ (men × days × hours per unit of work).
+- Pipes: a filling pipe counts $+\frac{1}{a}$ per hour, an emptying pipe $-\frac{1}{b}$.
+- Wages are shared in the ratio of work done.
+
+! check | Conditions added
+Each worker keeps a steady rate, and in the $M_1D_1H_1$ rule all workers are equally efficient. In $\frac{ax}{a - x}$, $a > x$ (working together is quicker). A tank with a filling and an emptying pipe fills only if the filling rate is the larger.
+
+! example | Question W1 — standard
+A can do a work in $12$ days and B in $18$ days. In how many days will they finish it together?
+**Solution.** LCM method: total work $= 36$ units; A does $3$, B does $2$ units per day. Together $5$ units/day: $\frac{36}{5} = \boxed{7\frac{1}{5} \text{ days}}$.
+
+! example | Question W2 — standard
+A pipe fills a tank in $6$ hours and another empties it in $9$ hours. If both are opened, when is the tank full?
+**Solution.** Net per hour $\frac{1}{6} - \frac{1}{9} = \frac{1}{18}$: $\boxed{18 \text{ hours}}$.
+
+## What it means
+
+- **Rates add, times do not**: two workers taking $12$ and $18$ days do not take $15$ or $30$ days together; their daily fractions $\frac{1}{12}$ and $\frac{1}{18}$ add.
+- **The LCM method** avoids fractions: take the total work as the LCM of the days, so every daily rate is a whole number of units.
+- **Wages follow work**: if they work for the same number of days, the shares are in the ratio of the daily rates.
+
+! example | Example 1 — sharing wages
+A can do a job in $10$ days and B in $15$ days. Working together they earn ₹1500. Find each share.
+**Solution.** Rates $\frac{1}{10} : \frac{1}{15} = 3 : 2$. A gets $\frac{3}{5} \times 1500 = $ ₹900, B gets ₹600.
+
+! example | Example 2 — men, days and hours
+$12$ men working $8$ hours a day finish a work in $10$ days. In how many days will $16$ men working $6$ hours a day finish it?
+**Solution.** $12 \cdot 10 \cdot 8 = 16 \cdot D \cdot 6 \Rightarrow D = \boxed{10}$ days.
+
+? A alone $a$ days, B alone $b$ days: together? :: $\frac{ab}{a + b}$ days.
+? A and B together $x$ days, A alone $a$ days: B alone? :: $\frac{ax}{a - x}$ days.
+? Rule for men, days and hours? :: $\frac{M_1D_1H_1}{W_1} = \frac{M_2D_2H_2}{W_2}$.
+
+! exam | What the exam asks
+- Time taken together; one worker leaving part way.
+- Pipes and cisterns with filling and emptying pipes.
+- Sharing wages; men-days-hours problems.
+
+! recap | One-minute revision
+- One day's work $= \frac{1}{\text{days}}$; rates add.
+- Together: $\frac{ab}{a + b}$; three: $\frac{abc}{ab + bc + ca}$.
+- $M_1D_1H_1W_2 = M_2D_2H_2W_1$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 17 (the full PDF is linked on the subject page)
+& R. S. Aggarwal, Quantitative Aptitude, the chapters on time and work and on pipes and cisterns

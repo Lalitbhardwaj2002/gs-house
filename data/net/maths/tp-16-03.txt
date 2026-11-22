@@ -1,0 +1,99 @@
+@en
+# Total probability and Bayes' theorem
+
+> When an event can happen in several mutually exclusive ways, its probability is the sum over the ways (total probability). Bayes' theorem turns this round: given that the event happened, it gives the chance of each way, the branch you want divided by the sum of all branches.
+
+## Total probability and Bayes' theorem
+
+! note | Total probability and Bayes' theorem
+If $E_1, E_2, \ldots, E_n$ are mutually exclusive and exhaustive (a partition of $S$) and $A$ is any event:
+**Total probability**:
+$$P(A) = \sum_{i=1}^{n} P(E_i)P(A|E_i)$$
+**Bayes' theorem**:
+$$P(E_i|A) = \frac{P(E_i)P(A|E_i)}{\sum_j P(E_j)P(A|E_j)}$$
+$P(E_i)$ = prior probabilities, $P(E_i|A)$ = posterior probabilities.
+^ data/net/maths/fig/prob-tree.svg | tree: from Start to $E_i$ with $P(E_i)$, then to $A$ with $P(A|E_i)$; each branch gives $P(E_i)P(A|E_i)$
+
+! check | Conditions added
+Each $P(E_i) > 0$ (so that $P(A|E_i)$ is defined), and Bayes' theorem needs $P(A) > 0$. The $E_i$ must be mutually exclusive **and** exhaustive: every outcome lies in exactly one of them.
+
+! trick | Shortcut / time-saver — Tree method
+Multiply along each branch, add all branches ending in $A$ (= total probability). Bayes = (the branch you want) $\div$ (sum of all branches). Or imagine $1000$ cases and count.
+
+! example | Question BY1 — from the notes
+Bag I contains 4 red and 4 black balls; Bag II contains 2 red and 6 black balls. A bag is chosen at random and a ball drawn is red. Find the probability that it came from Bag I.
+**Solution.** $P(E_1) = P(E_2) = \frac{1}{2}$; $P(R|E_1) = \frac{4}{8} = \frac{1}{2}$, $P(R|E_2) = \frac{2}{8} = \frac{1}{4}$.
+$$\begin{aligned} P(E_1|R) &= \frac{\frac{1}{2} \cdot \frac{1}{2}}{\frac{1}{2} \cdot \frac{1}{2} + \frac{1}{2} \cdot \frac{1}{4}} \\ &= \frac{\frac{1}{4}}{\frac{3}{8}} = \boxed{\frac{2}{3}} \end{aligned}$$
+Shortcut: equal priors and equal bag sizes $\Rightarrow \frac{\text{red in Bag I}}{\text{total red}} = \frac{4}{6} = \frac{2}{3}$.
+
+! example | Question BY2 — RS Aggarwal Ex.2 (CBSE 2006, '10)
+In a bolt factory, machines A, B, C manufacture 25%, 35% and 40% of the output; of their outputs 5%, 4% and 2% are defective. A bolt drawn at random is defective. Find the probability that it was made by machine C.
+**Solution.**
+$$\begin{aligned} P(D) &= 0.25 \times 0.05 \\ &\quad + 0.35 \times 0.04 \\ &\quad + 0.40 \times 0.02 \\ &= 0.0125 + 0.014 + 0.008 \\ &= 0.0345. \end{aligned}$$
+$P(C|D) = \frac{0.008}{0.0345} = \frac{80}{345} = \boxed{\frac{16}{69}}$.
+
+! example | Question BY3 — RS Aggarwal Ex.3 (CBSE 2003)
+A company has two plants. Plant I makes 60% and plant II 40% of the bicycles. 80% of plant I's and 90% of plant II's bicycles are of standard quality. A bicycle chosen at random is of standard quality. Find the probability that it came from plant II.
+**Solution.**
+$$\begin{aligned} P(\text{II}|S) &= \frac{0.4 \times 0.9}{0.6 \times 0.8 + 0.4 \times 0.9} \\ &= \frac{0.36}{0.84} = \boxed{\frac{3}{7}}. \end{aligned}$$
+
+! example | Question BY4 — RS Aggarwal Ex.4 (CBSE 2000, '02, '08)
+An insurance company insured 2000 scooter drivers, 4000 car drivers and 6000 truck drivers. The probabilities of an accident are 0.01, 0.03 and 0.15. One insured person meets with an accident. What is the probability that he is a scooter driver?
+**Solution.** Total $12000$: $P(E_1) = \frac{1}{6}$, $P(E_2) = \frac{1}{3}$, $P(E_3) = \frac{1}{2}$.
+$$\begin{aligned} &P(E_1|A) \\ &= \frac{\frac{1}{6} \cdot \frac{1}{100}}{\frac{1}{6} \cdot \frac{1}{100} + \frac{1}{3} \cdot \frac{3}{100} + \frac{1}{2} \cdot \frac{15}{100}} \\ &= \frac{1/600}{(1 + 6 + 45)/600} = \boxed{\frac{1}{52}} \end{aligned}$$
+
+! example | Question BY5 — RS Aggarwal Ex.5 (CBSE 2008C)
+A doctor visits a patient. The probabilities that he comes by train, bus, scooter or car are $\frac{3}{10}$, $\frac{1}{5}$, $\frac{1}{10}$, $\frac{2}{5}$. The probabilities that he will be late are $\frac{1}{4}$, $\frac{1}{3}$, $\frac{1}{12}$ respectively, and he is never late by car. He arrives late. What is the probability that he came by train?
+**Solution.**
+$$\begin{aligned} P(L) &= \tfrac{3}{10} \cdot \tfrac{1}{4} + \tfrac{1}{5} \cdot \tfrac{1}{3} \\ &\quad + \tfrac{1}{10} \cdot \tfrac{1}{12} + \tfrac{2}{5} \cdot 0 \\ &= \frac{9 + 8 + 1}{120} = \frac{18}{120}. \end{aligned}$$
+$P(T|L) = \frac{9/120}{18/120} = \boxed{\frac{1}{2}}$.
+
+! example | Question BY6 — RS Aggarwal Ex.6 (CBSE 2005, '11)
+A man is known to speak the truth 3 out of 4 times. He throws a die and reports that it is a six. Find the probability that it is actually a six.
+**Solution.** $E_1$: six occurs, $P = \frac{1}{6}$; $E_2$: not six, $P = \frac{5}{6}$. $P(\text{reports six}|E_1) = \frac{3}{4}$, $P(\text{reports six}|E_2) = \frac{1}{4}$. ($R$: he reports a six.)
+$$\begin{aligned} P(E_1|R) &= \frac{\frac{1}{6} \cdot \frac{3}{4}}{\frac{1}{6} \cdot \frac{3}{4} + \frac{5}{6} \cdot \frac{1}{4}} \\ &= \frac{3}{3 + 5} = \boxed{\frac{3}{8}}. \end{aligned}$$
+
+! check | Condition added
+$P(\text{reports six}|E_2) = \frac{1}{4}$ takes every lie about a non-six to be the report "six". This is the textbook reading, and $\frac{3}{8}$ is the exam answer. If a lie named any of the other five faces equally, this probability would be $\frac{1}{20}$ and the answer $\frac{3}{4}$.
+
+! example | Question BY7 — RS Aggarwal Ex.7
+In an examination an examinee either guesses, copies or knows the answer to a multiple-choice question with four choices. The probability that he guesses is $\frac{1}{3}$ and that he copies is $\frac{1}{6}$. The probability that his answer is correct given that he copied is $\frac{1}{8}$. Find the probability that he knew the answer, given that he answered correctly.
+**Solution.** $P(\text{knows}) = 1 - \frac{1}{3} - \frac{1}{6} = \frac{1}{2}$. $P(C|\text{guess}) = \frac{1}{4}$, $P(C|\text{copy}) = \frac{1}{8}$, $P(C|\text{knows}) = 1$.
+$$\begin{aligned} &P(\text{knows}|C) \\ &= \frac{\frac{1}{2} \cdot 1}{\frac{1}{3} \cdot \frac{1}{4} + \frac{1}{6} \cdot \frac{1}{8} + \frac{1}{2}} \\ &= \frac{24/48}{(4 + 1 + 24)/48} = \boxed{\frac{24}{29}}. \end{aligned}$$
+
+! example | Question BY8 — RS Aggarwal Ex.8
+By examining the chest X-ray, the probability that TB is detected when a person actually has it is 0.99; the probability that a healthy person is wrongly diagnosed is 0.001. In a city 1 in 1000 persons has TB. A person selected at random is diagnosed with TB. What is the chance that he actually has TB?
+**Solution.** $P(T) = 0.001$, $P(T') = 0.999$; $P(D|T) = 0.99$, $P(D|T') = 0.001$.
+$$\begin{aligned} &P(T|D) \\ &= \frac{0.001(0.99)}{0.001(0.99) + 0.999(0.001)} \\ &= \frac{990}{990 + 999} = \frac{990}{1989} \\ &= \boxed{\frac{110}{221}} \approx 0.5. \end{aligned}$$
+
+## What it means
+
+- **Total probability** splits a hard question ("how likely is $A$?") into easy ones ("how likely is $A$ in each case?") and weights them by how likely each case is.
+- **Bayes reverses the condition**: from $P(A|E_i)$, which the question gives, to $P(E_i|A)$, which it asks.
+- **BY8 is a warning**: when a disease is rare, a positive result of even a very good test is right only about half the time, because the few true cases are matched by about as many false alarms among the many healthy people.
+
+! example | Example 1 — the 1000-cases method
+Use $1000$ cases to solve Question BY1.
+**Solution.** Imagine $1000$ draws: $500$ from each bag. Red from Bag I: $500 \cdot \frac{1}{2} = 250$; red from Bag II: $500 \cdot \frac{1}{4} = 125$. Of the $375$ reds, $250$ came from Bag I: $\frac{250}{375} = \boxed{\frac{2}{3}}$.
+
+! example | Example 2 — two urns, total probability
+Urn I has 3 white and 2 black balls, urn II has 2 white and 3 black. A coin decides the urn (head: urn I). Find the probability of drawing a white ball.
+**Solution.** $P(W) = \frac{1}{2} \cdot \frac{3}{5} + \frac{1}{2} \cdot \frac{2}{5} = \boxed{\frac{1}{2}}$.
+
+? Theorem of total probability? :: $P(A) = \sum P(E_i)P(A|E_i)$ for a partition $E_1, \ldots, E_n$.
+? Bayes' theorem? :: $P(E_i|A) = \frac{P(E_i)P(A|E_i)}{\sum_j P(E_j)P(A|E_j)}$.
+? Prior and posterior probabilities? :: $P(E_i)$ before the event $A$ is known; $P(E_i|A)$ after.
+? Bayes by the tree method? :: The wanted branch divided by the sum of the branches ending in $A$.
+
+! exam | What the exam asks
+- Bags and balls; machines and defective items; insurance and accidents.
+- Truth-telling and guessing problems.
+- Medical tests (false positives).
+
+! recap | One-minute revision
+- Partition $E_1, \ldots, E_n$: $P(A) = \sum P(E_i)P(A|E_i)$.
+- $P(E_i|A) = \frac{P(E_i)P(A|E_i)}{P(A)}$.
+- Tree: multiply along branches, add the branches ending in $A$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 16 (the full PDF is linked on the subject page)
+& R. S. Aggarwal, Senior Secondary School Mathematics for Class 12, the chapter on Bayes' theorem

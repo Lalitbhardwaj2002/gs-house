@@ -1,0 +1,100 @@
+@en
+# Measures of dispersion
+
+> Dispersion measures how widely the values spread around the centre: the mean deviation averages the distances, the variance averages their squares, and the standard deviation is its square root. A shift of origin changes none of them; a change of scale multiplies them.
+
+## Mean deviation, variance and standard deviation
+
+! note | Measures of dispersion
+- **Mean deviation** about $A$ ($A = \bar{x}$ or $M$): $\frac{\sum \lvert x - A \rvert}{n}$; frequency data $\frac{\sum f\lvert x - A \rvert}{N}$. MD is least about the median.
+- **Variance** $\sigma^2 = \frac{1}{N}\sum f(x - \bar{x})^2$; shortcut $\sigma^2 = \frac{1}{N^2}\left[N\sum fx^2 - \left(\sum fx\right)^2\right]$, $\sigma = \frac{1}{N}\sqrt{N\sum fx^2 - \left(\sum fx\right)^2}$.
+- **Change of origin and scale**: adding $a$ to every value: mean $\bar{x} + a$, variance and SD unchanged; adding $a_i$ to $x_i$: mean $\bar{x} + \frac{\sum a_i}{n}$; multiplying by $a$: mean $a\bar{x}$, variance $a^2\sigma^2$, SD $\lvert a \rvert\sigma$; dividing by $a$: $\frac{\bar{x}}{a}$, $\frac{\sigma^2}{a^2}$, $\frac{\sigma}{\lvert a \rvert}$.
+
+! check | Conditions added
+Dividing by $a$ needs $a \neq 0$. "Adding $a_i$ to $x_i$" changes the mean as stated, but the variance is then in general different (it is unchanged when all $a_i$ are equal). For grouped data, $x$ in these formulas is the mid-point of each class.
+
+! example | Question D1 — from the notes
+Find the mean deviation about the mean of $6, 7, 10, 12, 13, 4, 8, 12$.
+**Solution.** $\bar{x} = \frac{72}{8} = 9$. $\lvert x - 9 \rvert$: $3, 2, 1, 3, 4, 5, 1, 3$, sum $22$. MD $= \frac{22}{8} = \boxed{2.75}$.
+
+! example | Question D2 — from the notes
+Find the mean deviation about the median of $3, 9, 5, 3, 12, 10, 18, 4, 7, 19, 21$.
+**Solution.** Ascending: $3, 3, 4, 5, 7, 9, 10, 12, 18, 19, 21$; $n = 11$, median $=$ 6th value $= 9$. $\lvert x - 9 \rvert$: $6, 6, 5, 4, 2, 0, 1, 3, 9, 10, 12$, sum $58$. MD $= \frac{58}{11} \approx \boxed{5.27}$.
+
+! example | Question D3 — from the notes
+Find the mean deviation about the mean: $x$: $2, 5, 6, 8, 10, 12$; $f$: $2, 8, 10, 7, 8, 5$.
+**Solution.** $N = 40$, $\sum fx = 4 + 40 + 60 + 56 + 80 + 60 = 300$, $\bar{x} = 7.5$. $\lvert x - 7.5 \rvert$: $5.5, 2.5, 1.5, 0.5, 2.5, 4.5$; $f\lvert x - \bar{x} \rvert$: $11, 20, 15, 3.5, 20, 22.5$, sum $92$. MD $= \frac{92}{40} = \boxed{2.3}$.
+
+! example | Question D4 — from the notes
+Find the mean deviation about the median: $x$: $3, 6, 9, 12, 13, 15, 21, 22$; $f$: $3, 4, 5, 2, 4, 5, 4, 3$.
+**Solution.** $N = 30$; c.f.: $3, 7, 12, 14, 18, 23, 27, 30$. The 15th and 16th values both lie in c.f. $18 \Rightarrow M = 13$. $\lvert x - 13 \rvert$: $10, 7, 4, 1, 0, 2, 8, 9$; $f\lvert x - M \rvert$: $30, 28, 20, 2, 0, 10, 32, 27$, sum $149$. MD $= \frac{149}{30} \approx \boxed{4.97}$.
+
+! example | Question D5 — from the notes
+Find the mean deviation about the mean of the marks in M1.
+**Solution.** $\bar{x} = 45$; $\lvert x - 45 \rvert$: $30, 20, 10, 0, 10, 20, 30$; $f\lvert x - \bar{x} \rvert$: $60, 60, 80, 0, 80, 60, 60$, sum $400$. MD $= \frac{400}{40} = \boxed{10}$.
+
+! example | Question D6 — from the notes
+Find the mean deviation about the median for the data in M2.
+**Solution.** $M = 28$. Mid-points $5, 15, 25, 35, 45, 55$; $\lvert x - 28 \rvert$: $23, 13, 3, 7, 17, 27$; $f\lvert x - M \rvert$: $138, 91, 45, 112, 68, 54$, sum $508$. MD $= \frac{508}{50} = \boxed{10.16}$.
+
+! example | Question D7 — standard (variance shortcut)
+Find the variance and SD of $x$: $1, 2, 3, 4, 5$ with frequencies 1 each.
+**Solution.** $N = 5$, $\sum fx = 15$, $\sum fx^2 = 55$. $\sigma^2 = \frac{5 \cdot 55 - 15^2}{25} = \frac{50}{25} = \boxed{2}$, $\sigma = \boxed{\sqrt{2}}$. (Check: $\frac{n^2 - 1}{12} = \frac{24}{12} = 2$ ✓.)
+
+! example | Question D8 — standard (change of origin and scale)
+The mean and variance of $x_1, \ldots, x_n$ are $10$ and $4$. Find the mean, variance and SD of $y_i = 3x_i + 2$.
+**Solution.** Mean $= 3 \cdot 10 + 2 = \boxed{32}$; variance $= 3^2 \cdot 4 = \boxed{36}$ (adding $2$ does not change it); SD $= \boxed{6}$.
+
+## More measures
+
+! addon | More measures
+- $\text{GM} = (x_1 \cdots x_n)^{1/n}$, $\text{HM} = \frac{n}{\sum \frac{1}{x}}$; AM $\geq$ GM $\geq$ HM; for two numbers $\text{GM}^2 = \text{AM} \times \text{HM}$.
+- Combined mean $\frac{n_1\bar{x}_1 + n_2\bar{x}_2}{n_1 + n_2}$; combined variance $\frac{n_1(\sigma_1^2 + d_1^2) + n_2(\sigma_2^2 + d_2^2)}{n_1 + n_2}$, $d_i = \bar{x}_i - \bar{x}$.
+- Quartiles $Q_1 = l + \frac{\frac{N}{4} - C}{f}h$; quartile deviation $\frac{Q_3 - Q_1}{2}$; coefficient of variation $\frac{\sigma}{\bar{x}} \times 100$; range $= L - S$, coefficient of range $\frac{L - S}{L + S}$.
+- Variance of the first $n$ natural numbers $= \frac{n^2 - 1}{12}$.
+- Pictorial representation: bar diagram, histogram (area $\propto$ frequency), frequency polygon (joins mid-points of histogram tops), ogive, pie chart (sector angle $= \frac{f}{N} \times 360°$).
+
+! check | A condition added
+GM and HM are for positive values (AM $\geq$ GM $\geq$ HM then holds, with equality only when all values are equal). In the combined variance, $\bar{x}$ is the combined mean. The coefficient of variation is used for positive data ($\bar{x} > 0$).
+
+! example | Question D9 — standard (combined mean)
+The mean marks of 30 boys are 60 and of 20 girls are 70. Find the mean of all 50 students.
+**Solution.** $\bar{x} = \frac{30 \cdot 60 + 20 \cdot 70}{50} = \frac{1800 + 1400}{50} = \boxed{64}$.
+
+! trick | Shortcut / time-saver
+Mean deviation is least about the median; sum of squared deviations is least about the mean. Symmetric data: mean $=$ median $=$ mode. Moderately skewed: $\text{QD} \approx \frac{2}{3}\sigma$, $\text{MD} \approx \frac{4}{5}\sigma$.
+
+! check | Conditions added
+Mean $=$ median $=$ mode needs a symmetric distribution with a single peak (a symmetric two-peaked distribution has mean $=$ median but two modes). $\text{QD} \approx \frac{2}{3}\sigma$ and $\text{MD} \approx \frac{4}{5}\sigma$ come from the normal distribution ($0.6745\sigma$ and $0.7979\sigma$); for other data they are rough guides only.
+
+## What it means
+
+- **Why squares**: deviations from the mean add up to zero, so they cannot be averaged directly; the mean deviation drops the signs, the variance squares them (easier algebra).
+- **Shift and scale**: adding a constant slides all values together, so the spread does not change; multiplying by $a$ stretches every distance by $\lvert a \rvert$.
+- **Comparing spreads**: the coefficient of variation compares variability of data with different units or means; the smaller CV is the more consistent.
+
+! example | Example 1 — combined variance
+Group 1: $n_1 = 10$, mean $20$, variance $4$. Group 2: $n_2 = 10$, mean $30$, variance $9$. Find the combined mean and variance.
+**Solution.** $\bar{x} = 25$, $d_1 = -5$, $d_2 = 5$. Variance $= \frac{10(4 + 25) + 10(9 + 25)}{20} = \frac{290 + 340}{20} = \boxed{31.5}$.
+
+! example | Example 2 — the more consistent player
+Batsman A: mean $50$, SD $10$; batsman B: mean $40$, SD $6$. Who is more consistent?
+**Solution.** CV: A $= 20\%$, B $= 15\%$. B has the smaller CV, so **B** is more consistent.
+
+? Mean deviation is least about which average? :: The median.
+? Variance by the shortcut? :: $\frac{1}{N^2}\left[N\sum fx^2 - (\sum fx)^2\right]$.
+? Effect of $y = ax + b$ on the SD? :: SD is multiplied by $\lvert a \rvert$; $b$ has no effect.
+? Variance of $1, 2, \ldots, n$? :: $\frac{n^2 - 1}{12}$.
+
+! exam | What the exam asks
+- Mean deviation about the mean or median, for lists and frequency tables.
+- Variance and SD; change of origin and scale.
+- Combined mean and variance; coefficient of variation; pictorial representation.
+
+! recap | One-minute revision
+- MD $= \frac{\sum f\lvert x - A \rvert}{N}$, least about $M$.
+- $\sigma^2 = \frac{\sum fx^2}{N} - \bar{x}^2$; $y = ax + b$: $\sigma_y = \lvert a \rvert\sigma_x$.
+- CV $= \frac{\sigma}{\bar{x}} \times 100$; combined variance uses $\sigma_i^2 + d_i^2$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 16 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 11, the chapter on statistics

@@ -1,0 +1,69 @@
+@en
+# Banking, shares, profit and loss, taxation
+
+> Everyday money questions: interest on recurring deposits and savings accounts, discounts on bills, income from shares, profit and loss with successive discounts, and GST and income tax. Most reduce to one percentage formula used carefully.
+
+## Banking, shares, profit and loss, taxation
+
+! addon | Banking, shares, profit and loss, taxation
+- **Recurring deposit**: instalment $P$ per month for $n$ months at $r\%$: interest $= P \cdot \frac{n(n + 1)}{2} \cdot \frac{r}{1200}$; maturity value $= Pn +$ interest.
+- **Savings account**: interest on the minimum balance between the 10th and the last day of each month: $I = \left(\sum \text{min balances}\right)\frac{r}{1200}$.
+- **Discount**: true discount $\text{TD} = \frac{A \cdot RT}{100 + RT}$, banker's discount $\text{BD} = \frac{ART}{100}$, banker's gain $= \text{BD} - \text{TD} = \frac{\text{TD}^2}{\text{PW}}$.
+- **Shares**: income $=$ number of shares × face value × $\frac{\text{dividend}\%}{100}$; return % $= \frac{\text{dividend on FV}}{\text{market value}} \times 100$.
+- **Profit & loss**: profit % $= \frac{\text{SP} - \text{CP}}{\text{CP}} \times 100$; successive discounts $a\%$, $b\%$ equal one discount of $\left(a + b - \frac{ab}{100}\right)\%$.
+- **GST**: price including tax $=$ price $\times \left(1 + \frac{t}{100}\right)$; within a state CGST $=$ SGST $= \frac{t}{2}\%$; between states IGST $= t\%$; tax payable $=$ output tax $-$ input tax credit.
+- **Income tax**: taxable income $=$ gross income $-$ deductions; tax slab by slab, then cess on the tax.
+
+! check | Conditions added
+In the discount formulas $A$ is the amount due (face value of the bill), $R$ the rate per cent per year, $T$ the time in years and PW $= A - \text{TD}$ the present worth. The recurring-deposit formula uses simple interest on each instalment. Tax slabs and the cess change with each year's Finance Act; use the figures given in the question.
+
+! example | Question B1 — standard (RD)
+Rs 500 is deposited every month for 2 years in a recurring deposit at $8\%$ per annum. Find the maturity value.
+**Solution.** $n = 24$: interest $= 500 \cdot \frac{24 \cdot 25}{2} \cdot \frac{8}{1200} = 500 \cdot 300 \cdot \frac{1}{150} = 1000$. Maturity $= 500 \cdot 24 + 1000 = \boxed{\text{Rs } 13{,}000}$.
+
+! example | Question B2 — standard (discounts)
+A shopkeeper gives successive discounts of $20\%$ and $10\%$. What single discount is this equivalent to?
+**Solution.** $20 + 10 - \frac{200}{100} = \boxed{28\%}$.
+
+! example | Question B3 — standard (GST)
+An article costs Rs 2000 before GST at $18\%$, sold within the state. Find CGST, SGST and the final price.
+**Solution.** GST $= 360$; CGST $=$ SGST $= \boxed{\text{Rs } 180}$ each; final price $= \boxed{\text{Rs } 2360}$.
+
+! trick | Shortcut / time-saver — Percentage shortcuts
+Successive changes $a\%$ and $b\%$: net $a + b + \frac{ab}{100}$ (with signs). Price up $r\%$, to keep spending the same cut consumption by $\frac{r}{100 + r} \times 100\%$. Two items sold at the same price, one at $x\%$ profit and one at $x\%$ loss: always a loss of $\frac{x^2}{100}\%$.
+
+## What it means
+
+- **Successive changes multiply**: $20\%$ off then $10\%$ off leaves $0.8 \times 0.9 = 0.72$ of the price, a $28\%$ discount, not $30\%$.
+- **Profit and loss are on the cost price**; discounts are on the marked price.
+- **GST within a state** is split equally between the Centre (CGST) and the state (SGST); between states the whole tax is IGST.
+
+! example | Example 1 — same selling price, profit and loss
+Two articles are sold at ₹990 each, one at a $10\%$ gain and the other at a $10\%$ loss. Find the overall result.
+**Solution.** Costs $\frac{990}{1.1} = 900$ and $\frac{990}{0.9} = 1100$; total cost $2000$, total sale $1980$: a loss of ₹20, i.e. $\boxed{1\%} = \frac{10^2}{100}\%$.
+
+! example | Example 2 — keeping spending the same
+The price of sugar rises by $25\%$. By how much must a family cut its consumption to spend the same?
+**Solution.** $\frac{25}{125} \times 100\% = \boxed{20\%}$.
+
+! example | Example 3 — dividend and return
+A man buys ₹100 shares at ₹125, paying a $10\%$ dividend. Find his percentage return.
+**Solution.** Dividend per share ₹10 on an outlay of ₹125: return $= \frac{10}{125} \times 100 = \boxed{8\%}$.
+
+? Interest on a recurring deposit? :: $P \cdot \frac{n(n + 1)}{2} \cdot \frac{r}{1200}$.
+? Single discount equal to $a\%$ and $b\%$? :: $a + b - \frac{ab}{100}$ per cent.
+? Banker's gain? :: BD $-$ TD $= \frac{\text{TD}^2}{\text{PW}}$.
+? GST within a state? :: CGST $=$ SGST $=$ half the rate each.
+
+! exam | What the exam asks
+- Recurring deposits and savings-account interest.
+- True and banker's discount; shares and dividends.
+- Successive discounts, profit and loss; GST and income tax.
+
+! recap | One-minute revision
+- RD interest $P\frac{n(n + 1)}{2}\frac{r}{1200}$.
+- Successive: $a + b + \frac{ab}{100}$ (signed); same SP, $x\%$ up and down: loss $\frac{x^2}{100}\%$.
+- GST: CGST $=$ SGST $= \frac{t}{2}\%$ within a state; IGST $t\%$ between states.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 17 (the full PDF is linked on the subject page)
+& ICSE Mathematics for Class 10 (banking, shares and dividends, GST); R. S. Aggarwal, Quantitative Aptitude, the chapters on profit and loss and on true and banker's discount

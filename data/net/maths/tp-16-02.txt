@@ -1,0 +1,129 @@
+@en
+# Conditional probability, multiplication theorem, independent events
+
+> The probability of $A$ given that $B$ has happened is $P(A \cap B)$ out of $P(B)$. Turned round, this is the multiplication theorem. Two events are independent when knowing one does not change the chance of the other; then the probabilities simply multiply.
+
+## Conditional probability and independence
+
+! note | Conditional probability and independent events (RS Aggarwal)
+- **Conditional probability**: $P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{n(A \cap B)}{n(B)}$, $P(B) \neq 0$.
+- **Properties**: $P(S|F) = P(F|F) = 1$; $P((A \cup B)|F) = P(A|F) + P(B|F) - P(A \cap B|F)$; $P(E'|F) = 1 - P(E|F)$.
+- **Multiplication theorem**: $P(E \cap F) = P(F)\,P(E|F) = P(E)\,P(F|E)$; for three events $P(E \cap F \cap G) = P(E)P(F|E)P(G|E \cap F)$.
+- **Independent events**: $P(F|E) = P(F)$, equivalently $P(E \cap F) = P(E)P(F)$. Then $E'$ and $F$, $E$ and $F'$, $E'$ and $F'$ are also independent.
+- Independent $\neq$ mutually exclusive: independent events may have common outcomes.
+- $A, B, C$ are mutually independent iff they are pairwise independent and $P(A \cap B \cap C) = P(A)P(B)P(C)$.
+- For independent events: $P(\text{at least one}) = 1 - P(E_1')P(E_2') \cdots P(E_n')$.
+
+! check | Conditions added
+$P(A|B)$ needs $P(B) > 0$, and the form $\frac{n(A \cap B)}{n(B)}$ needs equally likely outcomes. Two mutually exclusive events with non-zero probabilities are never independent ($P(A \cap B) = 0 \neq P(A)P(B)$). The test $P(F|E) = P(F)$ needs $P(E) > 0$; the product test works always. In the "at least one" formula the $n$ events must be mutually independent; pairwise independence is not enough (Example 1 below).
+
+! example | Question I1 — RS Aggarwal Ex.1
+Let $E_1, E_2$ be two events with $P(E_1) = \frac{4}{7}$, $P(E_2) = \frac{1}{4}$. Find (i) $P(E_1 \text{ or } E_2)$ if they are mutually exclusive, (ii) $P(E_1 \text{ and } E_2)$ if they are independent.
+**Solution.** (i) $E_1 \cap E_2 = \phi$: $P(E_1 \cup E_2) = \frac{4}{7} + \frac{1}{4} = \boxed{\frac{23}{28}}$.
+(ii) $P(E_1 \cap E_2) = \frac{4}{7} \cdot \frac{1}{4} = \boxed{\frac{1}{7}}$.
+
+! example | Question I2 — RS Aggarwal Ex.2
+$P(E_1) = 0.3$, $P(E_1 \cup E_2) = 0.4$ and $P(E_2) = x$. Find $x$ if (i) $E_1, E_2$ are mutually exclusive, (ii) they are independent.
+**Solution.** (i) $0.4 = 0.3 + x \Rightarrow \boxed{x = 0.1}$. (ii) $P(E_1 \cap E_2) = 0.3x$, so $0.4 = 0.3 + x - 0.3x \Rightarrow 0.7x = 0.1 \Rightarrow \boxed{x = \frac{1}{7}}$.
+
+! example | Question I3 — RS Aggarwal Ex.3 (CBSE 2003C)
+If $E_1$ and $E_2$ are independent with $P(E_1) = 0.35$ and $P(E_1 \cup E_2) = 0.60$, find $P(E_2)$.
+**Solution.** Let $P(E_2) = x$: $0.60 = 0.35 + x - 0.35x \Rightarrow 0.65x = 0.25 \Rightarrow x = \frac{25}{65} = \boxed{\frac{5}{13}}$.
+
+! example | Question I4 — RS Aggarwal Ex.4 (CBSE 1997)
+A coin is tossed thrice. $E$: the first throw results in a head; $F$: the last throw results in a tail. Are $E$ and $F$ independent?
+**Solution.** $S$ = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}. $E$ = {HHH, HHT, HTH, HTT}, $F$ = {HHT, HTT, THT, TTT}, $E \cap F$ = {HHT, HTT}. $P(E) = \frac{1}{2}$, $P(F) = \frac{1}{2}$, $P(E \cap F) = \frac{2}{8} = \frac{1}{4} = P(E)P(F)$. Hence **independent**.
+
+! example | Question I5 — RS Aggarwal Ex.5
+A die is tossed twice. Find the probability of getting 4, 5 or 6 on the first toss and 1, 2, 3 or 4 on the second toss.
+**Solution.** The tosses are independent: $P = \frac{3}{6} \cdot \frac{4}{6} = \boxed{\frac{1}{3}}$.
+
+! example | Question I6 — RS Aggarwal Ex.6
+Amit and Nisha appear for an interview for two vacancies. The probability of Amit's selection is $\frac{1}{5}$ and of Nisha's is $\frac{1}{6}$. Find the probability that (i) both, (ii) only one, (iii) none of them is selected.
+**Solution.** $P(A) = \frac{1}{5}$, $P(A') = \frac{4}{5}$; $P(N) = \frac{1}{6}$, $P(N') = \frac{5}{6}$; independent. (i) $\frac{1}{5} \cdot \frac{1}{6} = \boxed{\frac{1}{30}}$.
+(ii) $P(A)P(N') + P(A')P(N) = \frac{1}{5} \cdot \frac{5}{6} + \frac{4}{5} \cdot \frac{1}{6} = \frac{5 + 4}{30} = \boxed{\frac{3}{10}}$.
+(iii) $\frac{4}{5} \cdot \frac{5}{6} = \boxed{\frac{2}{3}}$. Check: $\frac{1}{30} + \frac{9}{30} + \frac{20}{30} = 1$ ✓.
+
+! example | Question I7 — RS Aggarwal Ex.7 (CBSE 2001)
+Ramesh appears for two posts A and B, for which selection is independent. The probability of selection for A is $\frac{1}{6}$ and for B is $\frac{1}{7}$. Find the probability that he is selected for at least one post.
+**Solution.** $P = 1 - \left(1 - \frac{1}{6}\right)\left(1 - \frac{1}{7}\right) = 1 - \frac{5}{6} \cdot \frac{6}{7} = 1 - \frac{5}{7} = \boxed{\frac{2}{7}}$.
+
+! example | Question I8 — RS Aggarwal Ex.8
+A can solve 90% of the problems in a book and B can solve 70%. What is the probability that at least one of them will solve a problem selected at random?
+**Solution.** $P = 1 - (1 - 0.9)(1 - 0.7) = 1 - 0.1 \times 0.3 = \boxed{0.97}$.
+
+! check | Condition added
+I8, I9 and I10 do not say so, but A and B are taken to act independently: the product of their probabilities needs it.
+
+! example | Question I9 — RS Aggarwal Ex.9
+The probability that A hits a target is $\frac{1}{3}$ and that B hits it is $\frac{2}{5}$. If both fire, what is the probability that the target is hit?
+**Solution.** $P(\text{hit}) = 1 - P(A')P(B') = 1 - \frac{2}{3} \cdot \frac{3}{5} = 1 - \frac{2}{5} = \boxed{\frac{3}{5}}$.
+
+! example | Question I10 — RS Aggarwal Ex.10 (CBSE 2001)
+A speaks the truth in 60% of cases and B in 90%. In what percentage of cases are they likely to contradict each other in stating the same fact?
+**Solution.** They contradict when one tells the truth and the other lies:
+$$\begin{aligned} P &= P(A)P(B') + P(A')P(B) \\ &= 0.6 \times 0.1 + 0.4 \times 0.9 \\ &= 0.06 + 0.36 \\ &= \boxed{0.42 = 42\%}. \end{aligned}$$
+
+! example | Question I11 — RS Aggarwal Ex.11 (CBSE 2011)
+The probabilities of solving a problem independently by A and B are $\frac{1}{2}$ and $\frac{1}{3}$. If both try, find the probability that (i) the problem is solved, (ii) exactly one of them solves it.
+**Solution.** (i) $1 - \frac{1}{2} \cdot \frac{2}{3} = \boxed{\frac{2}{3}}$.
+(ii) $\frac{1}{2} \cdot \frac{2}{3} + \frac{1}{2} \cdot \frac{1}{3} = \frac{1}{3} + \frac{1}{6} = \boxed{\frac{1}{2}}$.
+
+## Conditional probability by formula
+
+! example | Question C1 — Conditional, RS Aggarwal
+For events $A, B$: $P(A) = 0.5$, $P(B) = 0.6$, $P(A \cup B) = 0.8$. Find $P(A|B)$ and $P(B|A)$.
+**Solution.** $P(A \cap B) = 0.5 + 0.6 - 0.8 = 0.3$. $P(A|B) = \frac{0.3}{0.6} = \boxed{0.5}$, $P(B|A) = \frac{0.3}{0.5} = \boxed{0.6}$.
+
+! example | Question C2 — RS Aggarwal
+$P(A) = \frac{1}{3}$, $P(B) = \frac{1}{4}$, $P(A \cap B) = \frac{1}{5}$. Find $P(A|B)$, $P(B|A)$, $P(A \cup B)$ and $P(B'|A')$.
+**Solution.** $P(A|B) = \frac{1/5}{1/4} = \boxed{\frac{4}{5}}$; $P(B|A) = \frac{1/5}{1/3} = \boxed{\frac{3}{5}}$; $P(A \cup B) = \frac{1}{3} + \frac{1}{4} - \frac{1}{5} = \frac{20 + 15 - 12}{60} = \boxed{\frac{23}{60}}$.
+$$\begin{aligned} P(B'|A') &= \frac{P(A' \cap B')}{P(A')} \\ &= \frac{1 - P(A \cup B)}{1 - P(A)} \\ &= \frac{37/60}{2/3} = \boxed{\frac{37}{40}}. \end{aligned}$$
+
+! example | Question C3 — RS Aggarwal
+$P(A) = 0.4$, $P(B) = 0.8$, $P(B|A) = 0.6$. Find $P(A \cap B)$, $P(A \cup B)$ and $P(A|B)$.
+**Solution.** $P(A \cap B) = P(A)P(B|A) = 0.4 \times 0.6 = \boxed{0.24}$; $P(A \cup B) = 0.4 + 0.8 - 0.24 = \boxed{0.96}$; $P(A|B) = \frac{0.24}{0.8} = \boxed{0.3}$.
+
+! example | Question C4 — RS Aggarwal (CBSE 1998)
+$P(B) = 0.35$, $P(A \text{ or } B) = 0.85$, $P(A \text{ and } B) = 0.15$. Find $P(A)$.
+**Solution.** $0.85 = P(A) + 0.35 - 0.15 \Rightarrow P(A) = \boxed{0.65}$.
+
+! example | Question C5 — RS Aggarwal
+A die is rolled. If the outcome is an odd number, what is the probability that it is prime?
+**Solution.** Odd $B = \{1, 3, 5\}$, prime $A = \{2, 3, 5\}$, $A \cap B = \{3, 5\}$. $P(A|B) = \frac{n(A \cap B)}{n(B)} = \boxed{\frac{2}{3}}$.
+
+! trick | Shortcut / time-saver — Series and parallel circuits
+^ data/net/maths/fig/prob-circuits.svg | switches $S_1$, $S_2$ closed with probabilities $p_1$, $p_2$: series $p_1p_2$; parallel $1 - (1 - p_1)(1 - p_2)$
+Current flows in series only if *all* switches are closed; in parallel if *at least one* is closed. "Problem solved by at least one student" is a parallel system.
+
+## What it means
+
+- **Conditioning shrinks the sample space**: given $B$, only the outcomes in $B$ remain, and $A$ can happen only through $A \cap B$.
+- **Independence is about information**: knowing that $E$ happened tells you nothing about $F$. It is not the same as "cannot happen together", which is mutual exclusion.
+- **Pairwise is not enough**: three events can be independent in pairs and still fail $P(A \cap B \cap C) = P(A)P(B)P(C)$.
+
+! example | Example 1 — pairwise but not mutually independent
+Two fair coins are tossed. $A$: first is a head; $B$: second is a head; $C$: exactly one head. Are $A$, $B$, $C$ mutually independent?
+**Solution.** Each has probability $\frac{1}{2}$ and each pair meets in one outcome of four: $P(A \cap B) = P(A \cap C) = P(B \cap C) = \frac{1}{4}$, so they are pairwise independent. But $A \cap B \cap C = \phi$, so $P(A \cap B \cap C) = 0 \neq \frac{1}{8}$: **not** mutually independent. The "at least one" formula fails here too: $A \cup B \cup C$ has $3$ outcomes of $4$, and $P(A \cup B \cup C) = \frac{3}{4}$, not $1 - \frac{1}{8} = \frac{7}{8}$.
+
+! example | Example 2 — drawing without replacement
+Two cards are drawn one after the other without replacement. Find the probability that both are aces.
+**Solution.** Multiplication theorem: $P = \frac{4}{52} \cdot \frac{3}{51} = \boxed{\frac{1}{221}}$ (the second factor is conditional on the first ace).
+
+? Conditional probability $P(A|B)$? :: $\frac{P(A \cap B)}{P(B)}$, $P(B) \neq 0$.
+? Test for independence of $E$ and $F$? :: $P(E \cap F) = P(E)P(F)$.
+? $P$(at least one) for independent events? :: $1 - P(E_1')P(E_2') \cdots P(E_n')$.
+? Series and parallel systems of two switches? :: $p_1p_2$ and $1 - (1 - p_1)(1 - p_2)$.
+
+! exam | What the exam asks
+- $P(A|B)$ from given probabilities; the multiplication theorem.
+- Testing independence; "at least one", "exactly one", "none" for independent events.
+- Truth-telling, targets and selection problems.
+
+! recap | One-minute revision
+- $P(A|B) = \frac{P(A \cap B)}{P(B)}$; $P(A \cap B) = P(B)P(A|B)$.
+- Independent: $P(A \cap B) = P(A)P(B)$; complements also independent.
+- At least one (independent events) $= 1 - \prod P(E_i')$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 16 (the full PDF is linked on the subject page)
+& R. S. Aggarwal, Senior Secondary School Mathematics for Class 12, the chapter on probability

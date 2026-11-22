@@ -1,0 +1,211 @@
+@en
+# Last-day rapid revision: 131 one-line facts
+
+> The whole syllabus in 131 one-line facts, chapter by chapter, for the evening before the exam, followed by a plan for using the time in the exam hall. Each fact is worked out on the topic pages; a red box after the facts adds the conditions some of them need.
+
+## Algebra & groups
+
+- (1) Onto maps $5 \to 3$: $150$. One–one $n \to m$: ${}^mP_n$.
+- (2) Relations on $n$-set: $2^{n^2}$; reflexive $2^{n^2 - n}$; symmetric $2^{n(n+1)/2}$.
+- (3) Equivalence relations on 3-set: $5$; on 4-set: $15$.
+- (4) $\sum \frac{n^2}{n!} = 2e$, $\sum \frac{n^3}{n!} = 5e$, $\sum \frac{n^4}{n!} = 15e$.
+- (5) Groups of prime order are cyclic, abelian, simple.
+- (6) Generators of cyclic group of order $n$: $\varphi(n)$; subgroups: $\tau(n)$.
+- (7) $o(a^m) = \frac{n}{\gcd(m, n)}$; in $\mathbb{Z}_n$: $o(k) = \frac{n}{\gcd(k, n)}$.
+- (8) Order of permutation = LCM of cycle lengths.
+- (9) $r$-cycle $= r - 1$ transpositions; odd-length cycle is even.
+- (10) $\lvert S_n \rvert = n!$, $\lvert A_n \rvert = \frac{n!}{2}$; $S_3$ smallest non-abelian.
+- (11) Klein 4-group: abelian, not cyclic, every element order $\leq 2$.
+- (12) Index-2 subgroup is normal; subgroups of abelian groups are normal.
+- (13) $a^2 = e\ \forall a \Rightarrow$ abelian.
+- (14) Homomorphisms $\mathbb{Z}_m \to \mathbb{Z}_n$: $\gcd(m, n)$; $\text{Aut}(\mathbb{Z}_n)$: $\varphi(n)$.
+- (15) Finite integral domain $\Rightarrow$ field; $\mathbb{Z}_n$ field $\iff n$ prime.
+- (16) Field has no proper ideals.
+- (17) Fermat: $a^{p-1} \equiv 1 \pmod{p}$ ($p$ prime, $p \nmid a$); Wilson: $(p - 1)! \equiv -1 \pmod{p}$.
+- (18) dim of symmetric $n \times n$: $\frac{n(n+1)}{2}$; skew: $\frac{n(n-1)}{2}$.
+- (19) Rank + nullity $= \dim V$.
+- (20) $\lvert \text{adj}\,A \rvert = \lvert A \rvert^{n-1}$; $\lvert kA \rvert = k^n\lvert A \rvert$.
+- (21) Odd-order skew-symmetric determinant $= 0$.
+- (22) Eigenvalues: sum = trace, product = det.
+- (23) $\rho(A) = \rho(A : B) = n$ unique; $< n$ infinite; unequal none.
+
+## Real analysis
+
+- (24) $\mathbb{Q}$, algebraic numbers, finite subsets of $\mathbb{N}$: countable.
+- (25) $\mathbb{R}$, irrationals, transcendentals, $P(\mathbb{N})$, Cantor set: uncountable.
+- (26) Cantor set: uncountable, measure $0$, perfect, nowhere dense.
+- (27) $\phi$, $\mathbb{R}$: only clopen subsets of $\mathbb{R}$.
+- (28) $\bar{\mathbb{Q}} = \mathbb{R}$, $\mathbb{Q}^\circ = \phi$, $\mathbb{Q}' = \mathbb{R}$.
+- (29) Compact in $\mathbb{R} \iff$ closed and bounded.
+- (30) Bounded sequence has convergent subsequence (B–W).
+- (31) Cauchy $\iff$ convergent (in $\mathbb{R}$).
+- (32) $\sum \frac{1}{n^p}$ converges iff $p > 1$.
+- (33) Ratio $= 1$: use Raabe.
+- (34) $n^{1/n} \to 1$; $\frac{(n!)^{1/n}}{n} \to \frac{1}{e}$.
+- (35) Differentiable $\Rightarrow$ continuous; not conversely ($\lvert x \rvert$).
+- (36) $x^2\sin\frac{1}{x}$: differentiable at $0$, $f'$ not continuous.
+- (37) MVT point: $x^2 \to$ AM; $\frac{1}{x} \to$ GM.
+- (38) $\lim \frac{\tan x - \sin x}{x^3} = \frac{1}{2}$; $\lim \frac{x - \sin x}{x^3} = \frac{1}{6}$.
+- (39) $1^\infty$: $e^{\lim (f - 1)g}$.
+
+## Calculus & DE
+
+- (40) Euler: $xu_x + yu_y = nu$.
+- (41) $rt - s^2 > 0$, $r < 0$ max; $r > 0$ min; $< 0$ saddle.
+- (42) Max area rectangle in circle: square $2r^2$.
+- (43) Cylinder in cone (max CSA): radius $\frac{r}{2}$.
+- (44) $\Gamma\left(\frac{1}{2}\right) = \sqrt{\pi}$; $\int_0^\infty e^{-x^2} = \frac{\sqrt{\pi}}{2}$.
+- (45) $\int_0^{\pi/2} \frac{\sin^n}{\sin^n + \cos^n} = \frac{\pi}{4}$.
+- (46) $\int_0^{\pi/2} \log\sin x = -\frac{\pi}{2}\log 2$.
+- (47) Area $y^2 = 4ax$, $x^2 = 4by$: $\frac{16ab}{3}$.
+- (48) Cycloid arch area $3\pi a^2$; length $8a$.
+- (49) Cardioid area $\frac{3}{2}\pi a^2$; length $8a$.
+- (50) Astroid area $\frac{3}{8}\pi a^2$; perimeter $6a$.
+- (51) Sphere zone area $2\pi ah$.
+- (52) Spherical cap volume $\pi h^2\left(a - \frac{h}{3}\right)$.
+- (53) Pappus: $V = 2\pi\bar{y}A$; torus $2\pi^2a^2b$.
+- (54) Cardioid about initial line: $V = \frac{8}{3}\pi a^3$, $S = \frac{32}{5}\pi a^2$.
+- (55) Order of DE = number of arbitrary constants.
+- (56) Linear DE: IF $= e^{\int P}$.
+- (57) Homogeneous & $Mx + Ny \neq 0$: IF $= \frac{1}{Mx + Ny}$.
+- (58) Clairaut $y = px + f(p)$: $y = cx + f(c)$.
+- (59) $\frac{1}{D^2 + a^2}\sin ax = -\frac{x}{2a}\cos ax$.
+
+## Trigonometry & complex
+
+- (60) $\sin 18° = \frac{\sqrt{5} - 1}{4}$; $\cos 36° = \frac{\sqrt{5} + 1}{4}$.
+- (61) $r_1 + r_2 + r_3 - r = 4R$; $R \geq 2r$.
+- (62) $3, 4, 5$ triangle: $R = 2.5$, $r = 1$.
+- (63) $\tan^{-1} 1 + \tan^{-1} 2 + \tan^{-1} 3 = \pi$.
+- (64) $i^i = e^{-\pi/2}$ (principal).
+- (65) $\log(-1) = i\pi$; $\log i = \frac{i\pi}{2}$.
+- (66) $\sin ix = i\sinh x$, $\cos ix = \cosh x$.
+- (67) $\sinh^{-1} x = \log\left(x + \sqrt{x^2 + 1}\right)$.
+- (68) C–R: $u_x = v_y$, $u_y = -v_x$; polar $ru_r = v_\theta$.
+- (69) $\lvert z \rvert^2$ differentiable only at $0$; $\bar{z}$ nowhere.
+- (70) Sum of $n$th roots of unity $= 0$.
+- (71) $(1 + i)^2 = 2i$; $\frac{1 + i}{1 - i} = i$.
+- (72) Heights: complementary elevations from $a$, $b$: $h = \sqrt{ab}$.
+
+## Coordinate geometry
+
+- (73) Pair of lines: $\Delta = 0$; $\perp$: $a + b = 0$.
+- (74) Angle: $\tan\theta = \frac{2\sqrt{h^2 - ab}}{a + b}$.
+- (75) Bisectors: $\frac{x^2 - y^2}{a - b} = \frac{xy}{h}$.
+- (76) $h^2 = ab$ parabola; $<$ ellipse; $>$ hyperbola.
+- (77) Rectangular hyperbola: $a + b = 0$, $e = \sqrt{2}$.
+- (78) Tangent $T = 0$; chord with midpoint $T = S_1$; pair $SS_1 = T^2$.
+- (79) Parabola tangent $y = mx + \frac{a}{m}$; normal $y = mx - 2am - am^3$.
+- (80) Ellipse tangent $y = mx \pm \sqrt{a^2m^2 + b^2}$.
+- (81) Director circle $x^2 + y^2 = a^2 + b^2$ (ellipse), $a^2 - b^2$ (hyperbola), $2a^2$ (circle $x^2 + y^2 = a^2$).
+- (82) Focal chord of parabola: $t_1t_2 = -1$.
+- (83) Conjugate diameters: $mm' = -\frac{b^2}{a^2}$.
+- (84) Polar conic $\frac{l}{r} = 1 + e\cos\theta$.
+- (85) Orthogonal circles: $2g_1g_2 + 2f_1f_2 = c_1 + c_2$.
+- (86) Common tangents: separate 4, touch ext. 3, cut 2, touch int. 1.
+
+## 3D & vectors
+
+- (87) SD skew lines $\frac{\lvert(\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2)\rvert}{\lvert \vec{b}_1 \times \vec{b}_2 \rvert}$.
+- (88) Line $\angle$ plane: $\sin\theta$; plane $\angle$ plane: $\cos\theta$.
+- (89) Cube: $\sum\cos^2$ (4 diagonals) $= \frac{4}{3}$.
+- (90) Sphere through circle: $S + \lambda P = 0$.
+- (91) Orthogonal spheres: $2\sum u_1u_2 = d_1 + d_2$.
+- (92) Cone vertex origin: homogeneous degree 2.
+- (93) 3 $\perp$ generators: $a + b + c = 0$.
+- (94) Reciprocal cone: cofactors $A = bc - f^2$, $F = gh - af$.
+- (95) $[\vec{a} + \vec{b}\ \ \vec{b} + \vec{c}\ \ \vec{c} + \vec{a}] = 2[\vec{a}\ \vec{b}\ \vec{c}]$.
+- (96) $\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}$.
+- (97) $\nabla r^n = nr^{n-2}\vec{r}$; $\text{div}(r^n\vec{r}) = (n + 3)r^n$.
+- (98) curl grad $= \vec{0}$, div curl $= 0$.
+- (99) Max directional derivative $= \lvert \nabla\phi \rvert$.
+- (100) Flux of $\vec{r}$ through closed $S$ $= 3V$.
+
+## Mechanics
+
+- (101) Lami: $\frac{F}{\sin(\text{opposite angle})}$ equal.
+- (102) Like parallel: $R = P + Q$, $P \cdot AC = Q \cdot BC$.
+- (103) $\tan\lambda = \mu$; angle of repose = angle of friction.
+- (104) CG: semicircular lamina $\frac{4r}{3\pi}$; arc $\frac{2r}{\pi}$.
+- (105) CG: solid hemisphere $\frac{3r}{8}$; hollow $\frac{r}{2}$.
+- (106) CG: solid cone $\frac{h}{4}$ from base; hollow $\frac{h}{3}$.
+- (107) Catenary: $s = c\tan\psi$, $y = c\sec\psi$, $y^2 = c^2 + s^2$, $T = wy$.
+- (108) MI: sphere $\frac{2}{5}Ma^2$; disc $\frac{1}{2}Ma^2$; rod $\frac{Ml^2}{12}$.
+- (109) Projectile: $R = \frac{u^2\sin 2\theta}{g}$, $H = \frac{u^2\sin^2\theta}{2g}$, $R = 4H\cot\theta$.
+- (110) SHM: $T = \frac{2\pi}{\sqrt{\mu}}$, $v^2 = \mu(a^2 - x^2)$.
+- (111) $a_r = \ddot{r} - r\dot{\theta}^2$; $a_\theta = \frac{1}{r}\frac{d}{dt}(r^2\dot{\theta})$.
+- (112) $a_t = v\frac{dv}{ds}$; $a_n = \frac{v^2}{\rho}$.
+- (113) $e = 1$ elastic (equal masses swap velocities); $e = 0$ stick.
+- (114) Central orbit: $\frac{d^2u}{d\theta^2} + u = \frac{P}{h^2u^2}$.
+- (115) Inverse square $\Rightarrow$ conic; ellipse: $v^2 = \mu\left(\frac{2}{r} - \frac{1}{a}\right)$.
+- (116) Escape velocity $= \sqrt{2} \times$ orbital velocity.
+
+## Probability, statistics, commercial
+
+- (117) Independent $\Rightarrow$ complements independent.
+- (118) Binomial: mean $np$, variance $npq <$ mean.
+- (119) Poisson: mean $=$ variance.
+- (120) Mode $= 3$ median $- 2$ mean.
+- (121) MD least about median.
+- (122) Variance unchanged by shift; scaled by $a^2$.
+- (123) Variance of $1..n$: $\frac{n^2 - 1}{12}$.
+- (124) Fisher index $= \sqrt{LP}$; satisfies both reversal tests.
+- (125) CBR, CDR per 1000 mid-year population; IMR per 1000 live births.
+- (126) CI $-$ SI (2 yrs) $= P\left(\frac{R}{100}\right)^2$.
+- (127) Successive discounts: $a + b - \frac{ab}{100}$.
+- (128) Equal SP, $x\%$ gain and $x\%$ loss: loss $\frac{x^2}{100}\%$.
+- (129) Average speed (equal distances): $\frac{2uv}{u + v}$.
+- (130) A, B together: $\frac{ab}{a + b}$ days.
+- (131) Intersecting chords: $PA \cdot PB = PC \cdot PD$; $PT^2 = PA \cdot PB$.
+
+! check | Conditions added
+- (7) $a$ is an element of order $n$.
+- (10) $\lvert A_n \rvert = \frac{n!}{2}$ needs $n \geq 2$.
+- (14) These are group homomorphisms; ring homomorphisms are counted differently.
+- (16) A field has no ideals other than $\{0\}$ and itself (no proper non-zero ideal).
+- (19) For a linear map on a finite-dimensional space $V$.
+- (22) The eigenvalues are counted with multiplicity, complex ones included.
+- (23) $n$ is the number of unknowns.
+- (33) "Ratio $= 1$" means the ratio test's limit is $1$ (the test fails); Raabe's test may then decide.
+- (36) With $f(0) = 0$.
+- (37) For $x^2$ on $[a, b]$ the mean value point is $\frac{a + b}{2}$; for $\frac{1}{x}$ on $[a, b]$ with $0 < a < b$ it is $\sqrt{ab}$.
+- (38) Both limits are taken as $x \to 0$.
+- (39) For $\lim f = 1$ and $\lim g = \infty$.
+- (40) $u$ is a homogeneous function of $x$, $y$ of degree $n$.
+- (41) At a stationary point ($p = q = 0$); $rt - s^2 = 0$ needs further study.
+- (53) The area lies on one side of the axis and $\bar{y}$ is the distance of its centroid from the axis; the torus comes from a circle of radius $a$ whose centre is at distance $b \geq a$ from the axis.
+- (55) Only independent (essential) arbitrary constants count.
+- (65) Principal values; in general $\log(-1) = (2k + 1)i\pi$.
+- (68) The second polar equation is $rv_r = -u_\theta$.
+- (70) $n \geq 2$ (for $n = 1$ the sum is $1$).
+- (73) For $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$, $\Delta = abc + 2fgh - af^2 - bg^2 - ch^2$; the lines are real when also $h^2 \geq ab$.
+- (74) For $ax^2 + 2hxy + by^2 = 0$ with $h^2 \geq ab$; with the modulus, $\lvert \tan\theta \rvert$ gives the acute angle; $\theta = 90°$ when $a + b = 0$.
+- (76), (77) For a non-degenerate conic ($\Delta \neq 0$).
+- (81) The director circle of the hyperbola is real only when $a > b$.
+- (83) For the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$; for the hyperbola $mm' = \frac{b^2}{a^2}$.
+- (86) No common tangent when one circle lies inside the other.
+- (101) Three forces acting at a point and in equilibrium.
+- (104), (105) Distances from the centre along the axis of symmetry; in (106) from the base along the axis. "Hollow" means a thin shell (the curved surface only).
+- (108) Solid sphere about a diameter, disc about its own axis, rod about the perpendicular axis through its centre.
+- (109) Landing at the level of projection, without air resistance.
+- (113) Equal masses swap velocities in a direct (head-on) impact.
+- (116) Both speeds at the same distance from the centre, the orbit circular.
+- (118) $p > 0$ (for $p = 0$ both are $0$).
+- (120) Only approximately, for moderately skewed data.
+- (122) Multiplying every value by $a$ multiplies the variance by $a^2$.
+- (123) The variance with divisor $n$.
+
+## Exam-hall strategy
+
+! trick | Exam-hall strategy for speed
+- (1) **First pass** ($40\%$ of time): attempt all one-step formula questions (use the facts above). Mark the rest.
+- (2) **Option elimination**: put special values ($x = 0, 1$; $a = b$; $n = 1, 2$) into options; check dimensions/symmetry; a probability can never exceed 1 and a variance can never exceed the binomial mean.
+- (3) **Don't integrate if a standard result exists**: Wallis, Beta–Gamma, King's rule, Pappus, ready-made areas/volumes.
+- (4) **Geometry questions**: classify a conic by $h^2 - ab$ and $\Delta$ before doing any algebra; for 3D distances always use the normal vector directly.
+- (5) **Group questions**: reduce to orders of elements and divisibility (Lagrange) — most MCQs fall to $o(a) \mid o(G)$, $\varphi(n)$, $\tau(n)$.
+- (6) **Second pass**: lengthy computations; leave guess-work to the very end.
+
+! check | A note on strategy point 2
+"A variance can never exceed the binomial mean" is true for binomial variables ($npq \leq np$, as $q \leq 1$); for other distributions the variance can exceed the mean.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 18 (the full PDF is linked on the subject page)

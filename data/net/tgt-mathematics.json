@@ -9,11 +9,45 @@
  "subtitle": { "en": "UPESSC TGT · subject code 07 · topic-wise notes on the official 2026 syllabus" },
  "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 15 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. All 18 chapters of the notes are ready."
  },
  "units": [
-  { "id": "u1", "icon": "💰", "en": "Commercial Mathematics", "line": { "en": "Work and time · speed · interest · banking · taxation" } },
-  { "id": "u2", "icon": "📊", "en": "Statistics", "line": { "en": "Frequency distribution · central tendency · dispersion · vital statistics · index numbers" } },
+  {
+   "id": "u1", "icon": "💰", "en": "Commercial Mathematics",
+   "line": { "en": "Work and time · speed · interest · banking · taxation" },
+   "parts": [
+    {
+     "en": "Commercial mathematics",
+     "chapters": [
+      { "id": "tp-17-01", "en": "17.1 Work and time",
+        "key": { "en": "Rates of work · working together · pipes and cisterns · wages" } },
+      { "id": "tp-17-02", "en": "17.2 Speed, time and distance",
+        "key": { "en": "Average speed · relative speed · trains · boats and streams" } },
+      { "id": "tp-17-03", "en": "17.3 Simple and compound interest",
+        "key": { "en": "SI and CI · CI − SI · growth and depreciation · effective rate" } },
+      { "id": "tp-17-04", "en": "17.4 Banking, shares, profit and loss, taxation",
+        "key": { "en": "Recurring deposits · discount · shares · successive discounts · GST and income tax" } }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u2", "icon": "📊", "en": "Statistics",
+   "line": { "en": "Frequency distribution · central tendency · dispersion · vital statistics · index numbers" },
+   "parts": [
+    {
+     "en": "Statistics",
+     "chapters": [
+      { "id": "tp-16-06", "en": "16.6 Measures of central tendency",
+        "key": { "en": "Mean by step deviation · grouped median and mode · ogives · empirical relation" } },
+      { "id": "tp-16-07", "en": "16.7 Measures of dispersion",
+        "key": { "en": "Mean deviation · variance and SD · change of origin and scale · combined mean · pictorial representation" } },
+      { "id": "tp-16-08", "en": "16.8 Vital statistics and index numbers (TGT)",
+        "key": { "en": "Birth, death and infant mortality rates · Laspeyres, Paasche and Fisher indices · real wages" } }
+     ]
+    }
+   ]
+  },
   {
    "id": "u3", "icon": "🔢", "en": "Algebra",
    "line": { "en": "Numbers and polynomials · equations · determinants and matrices · series · counting" },
@@ -57,7 +91,21 @@
     }
    ]
   },
-  { "id": "u4", "icon": "🎲", "en": "Probability", "line": { "en": "Addition and multiplication theorems" } },
+  {
+   "id": "u4", "icon": "🎲", "en": "Probability",
+   "line": { "en": "Addition and multiplication theorems" },
+   "parts": [
+    {
+     "en": "Probability",
+     "chapters": [
+      { "id": "tp-16-01", "en": "16.1 Basic probability and the addition theorem",
+        "key": { "en": "Sample space and events · classical probability · P(A ∪ B) · a pack of cards · at least one" } },
+      { "id": "tp-16-02", "en": "16.2 Conditional probability, multiplication theorem, independent events",
+        "key": { "en": "P(A|B) · multiplication theorem · independence · series and parallel systems" } }
+     ]
+    }
+   ]
+  },
   {
    "id": "u5", "icon": "🧩", "en": "Set Theory",
    "line": { "en": "Sets · relations and mappings · induction · groups · Lagrange's theorem" },
@@ -204,7 +252,21 @@
     }
    ]
   },
-  { "id": "u9", "icon": "⭕", "en": "Geometry", "line": { "en": "Pythagoras · circles, chords and tangents · alternate segment · congruence" } },
+  {
+   "id": "u9", "icon": "⭕", "en": "Geometry",
+   "line": { "en": "Pythagoras · circles, chords and tangents · alternate segment · congruence" },
+   "parts": [
+    {
+     "en": "Euclidean geometry",
+     "chapters": [
+      { "id": "tp-17-05", "en": "17.5 Euclidean geometry: triangles",
+        "key": { "en": "Baudhayana–Pythagoras and its extensions · Apollonius · congruence, similarity, centres" } },
+      { "id": "tp-17-06", "en": "17.6 Euclidean geometry: circles",
+        "key": { "en": "Chords and angles · cyclic quadrilaterals · tangents and the alternate segment · intersecting chords · arc, sector and segment" } }
+     ]
+    }
+   ]
+  },
   {
    "id": "u10", "icon": "🧭", "en": "Coordinate Geometry",
    "line": { "en": "Pair of lines · conics · tangents and normals · polar equation · sphere, cone and cylinder" },
@@ -372,6 +434,21 @@
         "key": { "en": "Velocity and acceleration in polar coordinates · equiangular spiral" } },
       { "id": "tp-15-13", "en": "15.13 Tangential and normal components",
         "key": { "en": "dv/dt along the tangent · v²/ρ along the normal" } }
+     ]
+    }
+   ]
+  }
+ ],
+ "extras": [
+  {
+   "id": "x1", "icon": "⚡", "en": "Last-day rapid revision",
+   "line": { "en": "131 one-line facts from all chapters · exam-hall strategy" },
+   "parts": [
+    {
+     "en": "Rapid revision",
+     "chapters": [
+      { "id": "tp-18-01", "en": "18 Last-day rapid revision: 131 one-line facts",
+        "key": { "en": "Algebra, analysis, calculus, trigonometry, geometry, vectors, mechanics, probability and statistics in one line each" } }
      ]
     }
    ]

@@ -1,0 +1,71 @@
+@en
+# Euclidean geometry: circles
+
+> Chords, angles and tangents of a circle obey a handful of theorems: the perpendicular from the centre bisects a chord, the angle at the centre is twice the angle at the circumference, a tangent is perpendicular to the radius, and the products of chord segments through a point are equal.
+
+## Chords, angles and tangents
+
+! addon | Euclidean geometry: circles
+- The perpendicular from the centre to a chord bisects it; equal chords are equidistant from the centre.
+- The angle subtended by an arc at the centre is twice the angle at any point on the remaining arc; the angle in a semicircle is $90°$; angles in the same segment are equal.
+- **Cyclic quadrilateral**: opposite angles add to $180°$; an exterior angle equals the interior opposite angle.
+- A **tangent** is perpendicular to the radius at the point of contact; the two tangents from an external point are equal.
+- **Alternate segment theorem**: the angle between a tangent and a chord through the point of contact equals the angle in the alternate segment.
+- **Intersecting chords**: $PA \cdot PB = PC \cdot PD$ (inside or outside); tangent–secant: $PT^2 = PA \cdot PB$.
+- Arc $l = r\theta$; sector $\frac{1}{2}r^2\theta$; segment $\frac{r^2}{2}(\theta - \sin\theta)$. A quadrilateral circumscribing a circle has $AB + CD = AD + BC$.
+^ data/net/maths/fig/geo-centre-angle.svg | centre angle $= 2 \times$ circumference angle
+^ data/net/maths/fig/geo-alt-segment.svg | alternate segment: the two angles $\alpha$ are equal
+^ data/net/maths/fig/geo-chords.svg | $PA \cdot PB = PC \cdot PD$
+
+! check | Conditions added
+In arc, sector and segment, $\theta$ is in radians; the segment formula gives the minor segment when $\theta < \pi$. "Twice the angle" compares the angle at the centre and at the circumference standing on the **same** arc. In $PT^2 = PA \cdot PB$, $P$ is outside the circle, $PT$ a tangent and $PAB$ a secant.
+
+! example | Question EG2 — standard
+Chords $AB$ and $CD$ of a circle intersect at $P$. If $PA = 4$, $PB = 6$, $PC = 3$, find $PD$. Also find the length of the tangent from a point $13$ cm from the centre of a circle of radius $5$ cm.
+**Solution.** $PA \cdot PB = PC \cdot PD \Rightarrow PD = \frac{24}{3} = \boxed{8}$. Tangent $\perp$ radius: $\sqrt{13^2 - 5^2} = \boxed{12\ \text{cm}}$.
+
+! example | Question EG3 — standard
+$ABCD$ is a cyclic quadrilateral with $\angle A = 70°$ and $\angle B = 95°$. Find $\angle C$ and $\angle D$.
+**Solution.** Opposite angles are supplementary: $\angle C = 180° - 70° = \boxed{110°}$, $\angle D = 180° - 95° = \boxed{85°}$.
+
+! trick | Shortcut / time-saver
+Pythagorean triples: $(3, 4, 5)$, $(5, 12, 13)$, $(8, 15, 17)$, $(7, 24, 25)$, $(20, 21, 29)$, $(9, 40, 41)$; in general $(m^2 - n^2, 2mn, m^2 + n^2)$. Interior angle of a regular $n$-gon $= \frac{(n - 2)180°}{n}$; exterior angles always add to $360°$.
+
+! check | Conditions added
+In $(m^2 - n^2, 2mn, m^2 + n^2)$, $m > n > 0$ are integers; every Pythagorean triple is, up to the order of the two legs, a multiple $k(m^2 - n^2, 2mn, m^2 + n^2)$ (for example $(9, 12, 15) = 3(3, 4, 5)$). The exterior angles are taken one at each vertex of a convex polygon.
+
+## What it means
+
+- **Angle at the centre**: join the point on the circle to the centre and produce the line; the two isosceles triangles formed show that each part of the centre angle is twice the matching part at the circumference.
+- **Equal tangents**: the two right triangles formed by the radii, the tangents and the line to the centre are congruent (RHS).
+- **Products of segments**: triangles $PAC$ and $PDB$ are similar (angles in the same segment), so $\frac{PA}{PD} = \frac{PC}{PB}$.
+
+! example | Example 1 — distance of a chord
+A chord of length $16$ cm lies in a circle of radius $10$ cm. Find its distance from the centre.
+**Solution.** The perpendicular bisects the chord: $\sqrt{10^2 - 8^2} = \boxed{6\ \text{cm}}$.
+
+! example | Example 2 — alternate segment
+The tangent at $T$ makes an angle of $50°$ with the chord $TC$. Find the angle that $TC$ subtends at a point $D$ of the alternate segment.
+**Solution.** By the alternate segment theorem, $\angle TDC = \boxed{50°}$.
+
+! example | Example 3 — a regular polygon
+Find the interior angle of a regular hexagon and the number of sides of a regular polygon whose exterior angle is $24°$.
+**Solution.** $\frac{4 \cdot 180°}{6} = \boxed{120°}$; $\frac{360°}{24°} = \boxed{15}$ sides.
+
+? Angle in a semicircle? :: $90°$.
+? Opposite angles of a cyclic quadrilateral? :: They add up to $180°$.
+? Tangent–secant theorem? :: $PT^2 = PA \cdot PB$.
+? Interior angle of a regular $n$-gon? :: $\frac{(n - 2)180°}{n}$.
+
+! exam | What the exam asks
+- Angles at the centre and circumference; cyclic quadrilaterals.
+- Tangents: lengths, equal tangents, alternate segment theorem.
+- Intersecting chords; arc, sector and segment.
+
+! recap | One-minute revision
+- Centre angle $= 2 \times$ circumference angle; semicircle $90°$.
+- Tangent $\perp$ radius; tangents from a point are equal.
+- $PA \cdot PB = PC \cdot PD$; $PT^2 = PA \cdot PB$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 17 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Classes 9 and 10, the chapters on circles

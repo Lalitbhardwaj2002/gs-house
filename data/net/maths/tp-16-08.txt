@@ -1,0 +1,71 @@
+@en
+# Vital statistics and index numbers (TGT)
+
+> Vital statistics measure births and deaths per thousand of a population. Index numbers compare prices (or quantities) with a base year, as a percentage; Laspeyres weights by base-year quantities, Paasche by current ones, and Fisher's "ideal" index is the geometric mean of the two.
+
+## Vital statistics
+
+! addon | Vital (birth and death) statistics
+- **Crude birth rate** (CBR) $= \frac{\text{live births in the year}}{\text{mid-year population}} \times 1000$; **crude death rate** (CDR) similarly with deaths.
+- **Age-specific death rate** $= \frac{\text{deaths in the age group}}{\text{population of the group}} \times 1000$; **standardised death rate** $= \frac{\sum(\text{ASDR} \times \text{standard population})}{\sum \text{standard population}}$.
+- **Infant mortality rate** $= \frac{\text{deaths under 1 year}}{\text{live births}} \times 1000$.
+- **General fertility rate** $= \frac{\text{live births}}{\text{women aged 15–49}} \times 1000$; **total fertility rate** $=$ sum of age-specific fertility rates $\times$ class width.
+- **Natural growth rate** $=$ CBR $-$ CDR. Gross and net reproduction rates use female births only.
+
+! check | A condition added
+With five-year age groups the class width is $5$, so TFR $= 5 \times \sum$ ASFR. If the age-specific rates are per 1000 women, the TFR is per 1000 women too (divide by $1000$ for births per woman).
+
+! example | Question VS1 — standard
+A town of mid-year population 80,000 recorded 2400 live births, 960 deaths and 60 infant deaths in a year. Find the CBR, CDR, IMR and the natural growth rate.
+**Solution.** CBR $= \frac{2400}{80000} \times 1000 = \boxed{30}$; CDR $= \frac{960}{80000} \times 1000 = \boxed{12}$ per 1000; IMR $= \frac{60}{2400} \times 1000 = \boxed{25}$ per 1000 live births; growth rate $= 30 - 12 = \boxed{18}$ per 1000 ($1.8\%$).
+
+## Index numbers
+
+! addon | Index numbers
+- **Simple aggregate** $P_{01} = \frac{\sum p_1}{\sum p_0} \times 100$; average of price relatives $\frac{1}{n}\sum \frac{p_1}{p_0} \times 100$.
+- **Laspeyres** $\frac{\sum p_1q_0}{\sum p_0q_0} \times 100$ (base-year quantities); **Paasche** $\frac{\sum p_1q_1}{\sum p_0q_1} \times 100$ (current-year quantities); **Fisher** $\sqrt{L \times P}$; **Marshall–Edgeworth** $\frac{\sum p_1(q_0 + q_1)}{\sum p_0(q_0 + q_1)} \times 100$; **Bowley** $\frac{L + P}{2}$.
+- **Time reversal test** $P_{01} \times P_{10} = 1$; **factor reversal test** $P_{01} \times Q_{01} = \frac{\sum p_1q_1}{\sum p_0q_0}$. Fisher's index satisfies both, hence "ideal".
+- **Cost of living index** $= \frac{\sum IW}{\sum W}$; **real wage** $= \frac{\text{money wage}}{\text{CLI}} \times 100$. **Chain index** $=$ product of link relatives $\frac{p_n}{p_{n-1}} \times 100$.
+
+! check | A condition added
+In the two reversal tests the indices are written as ratios (not multiplied by $100$). In the cost of living index $I$ is the price index of each group and $W$ its weight. The chain index of year $n$ is the product of the link relatives taken as ratios, times $100$ (for one commodity this is $\frac{p_n}{p_0} \times 100$).
+
+! example | Question IN1 — standard
+Commodity A: $p_0 = 2$, $q_0 = 10$, $p_1 = 3$, $q_1 = 8$. Commodity B: $p_0 = 5$, $q_0 = 4$, $p_1 = 6$, $q_1 = 5$. Find Laspeyres', Paasche's and Fisher's price index numbers.
+**Solution.** $\sum p_1q_0 = 30 + 24 = 54$, $\sum p_0q_0 = 20 + 20 = 40$, $\sum p_1q_1 = 24 + 30 = 54$, $\sum p_0q_1 = 16 + 25 = 41$. $L = \frac{54}{40} \times 100 = \boxed{135}$; $P = \frac{54}{41} \times 100 \approx \boxed{131.7}$; Fisher $= \sqrt{135 \times 131.7} \approx \boxed{133.3}$.
+
+! example | Question IN2 — standard
+A worker's wage rose from 8000 to 12000 while the cost of living index rose from 100 to 160. Find his real wage now and say whether he is better off.
+**Solution.** Real wage $= \frac{12000}{160} \times 100 = \boxed{7500}$, which is less than 8000, so he is **worse off**.
+
+## What it means
+
+- **Per thousand**: dividing by the population and multiplying by $1000$ makes towns of different sizes comparable.
+- **Base and current quantities**: Laspeyres compares what the base-year basket costs now with what it cost in the base year; Paasche does the same with the current year's basket. Fisher's geometric mean sits between them.
+- **Real wage**: the money wage measured in base-year prices; it rises only if the wage rises faster than the cost of living.
+
+! example | Example 1 — infant mortality
+A district had $5000$ live births and $150$ deaths of infants under one year. Find the IMR.
+**Solution.** $\frac{150}{5000} \times 1000 = \boxed{30}$ per 1000 live births.
+
+! example | Example 2 — a simple aggregate index
+Prices of three items in the base year: $10, 20, 30$; now: $15, 25, 40$. Find the simple aggregate price index.
+**Solution.** $\frac{15 + 25 + 40}{10 + 20 + 30} \times 100 = \frac{80}{60} \times 100 \approx \boxed{133.3}$.
+
+? Crude birth rate? :: Live births in the year per 1000 of the mid-year population.
+? Infant mortality rate? :: Deaths under one year per 1000 live births.
+? Fisher's ideal index? :: $\sqrt{L \times P}$; it satisfies the time and factor reversal tests.
+? Real wage? :: $\frac{\text{money wage}}{\text{CLI}} \times 100$.
+
+! exam | What the exam asks
+- CBR, CDR, IMR and the natural growth rate.
+- Laspeyres, Paasche, Fisher, Marshall–Edgeworth indices; the reversal tests.
+- Cost of living index and real wages.
+
+! recap | One-minute revision
+- CBR, CDR per 1000 of the mid-year population; IMR per 1000 live births; growth $=$ CBR $-$ CDR.
+- $L = \frac{\sum p_1q_0}{\sum p_0q_0}100$, $P = \frac{\sum p_1q_1}{\sum p_0q_1}100$, Fisher $\sqrt{LP}$.
+- Real wage $= \frac{\text{wage}}{\text{CLI}} \times 100$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 16 (the full PDF is linked on the subject page)
+& S. C. Gupta and V. K. Kapoor, Fundamentals of Applied Statistics, the chapters on index numbers and vital statistics

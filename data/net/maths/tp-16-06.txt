@@ -1,0 +1,66 @@
+@en
+# Statistics: measures of central tendency
+
+> Mean, median and mode each give one number that stands for the whole data: the balance point, the middle value and the most frequent value. For grouped data the median and mode are found inside one class by straight-line interpolation.
+
+## Mean, median and mode
+
+! note | Measures of central tendency
+- **Mean**: $\bar{x} = \frac{\sum x}{n}$; frequency data $\bar{x} = \frac{\sum fx}{N}$; step deviation $\bar{x} = a + \frac{\sum fd}{N} \times h$, $d = \frac{x - a}{h}$ ($a$ assumed mean, $h$ class width).
+- **Median**: arrange in order; $n$ odd: $\left(\frac{n + 1}{2}\right)$th value; $n$ even: average of the $\frac{n}{2}$th and $\left(\frac{n}{2} + 1\right)$th values. Discrete frequency data: use cumulative frequencies.
+- Grouped data: $M = l + \frac{\frac{N}{2} - C}{f} \times h$ ($l$ lower limit of the median class, $C$ cumulative frequency before it, $f$ its frequency).
+- **Mode** (grouped): $l + h \cdot \frac{f_m - f_1}{(f_m - f_1) + (f_m - f_2)}$ ($f_m$ modal class frequency, $f_1$ class before, $f_2$ class after).
+- **Empirical relation**: mode $= 3$ median $- 2$ mean.
+
+! check | Conditions added
+The grouped formulas assume continuous classes of equal width $h$ (write $10$–$20$, $20$–$30$, …; for classes like $10$–$19$, $20$–$29$ first move the limits to $9.5$–$19.5$, …) and values spread evenly within each class. The empirical relation holds only roughly, for moderately skewed data.
+
+^ data/net/maths/fig/stat-ogive.svg | histogram and "less than" ogive (data of Question M2): the ogive reaches $\frac{N}{2}$ above the median
+
+! note | Median from the ogive
+The "less than" ogive (cumulative frequency curve) meets the horizontal line at height $\frac{N}{2}$ at the median. The "less than" and "more than" ogives intersect at the median.
+
+! example | Question M1 — from the notes (step deviation)
+Find the mean of the marks: classes 10–20, 20–30, …, 70–80 with frequencies $2, 3, 8, 14, 8, 3, 2$.
+**Solution.** Mid-points $15, 25, \ldots, 75$; take $a = 45$, $h = 10$, $d = -3, -2, -1, 0, 1, 2, 3$. $\sum fd = -6 - 6 - 8 + 0 + 8 + 6 + 6 = 0$, $N = 40$. $\bar{x} = 45 + \frac{0}{40} \cdot 10 = \boxed{45}$.
+
+! example | Question M2 — from the notes (grouped median)
+Find the median: classes 0–10, …, 50–60 with frequencies $6, 7, 15, 16, 4, 2$.
+**Solution.** c.f.: $6, 13, 28, 44, 48, 50$; $N = 50$, $\frac{N}{2} = 25 \Rightarrow$ median class 20–30; $l = 20$, $C = 13$, $f = 15$, $h = 10$. $M = 20 + \frac{25 - 13}{15} \times 10 = 20 + 8 = \boxed{28}$.
+
+! example | Question M3 — standard (grouped mode)
+Find the mode: classes 0–10, …, 40–50 with frequencies $5, 8, 12, 7, 3$.
+**Solution.** Modal class 20–30 ($f_m = 12$); $f_1 = 8$, $f_2 = 7$, $l = 20$, $h = 10$.
+$$\begin{aligned} &\text{Mode} \\ &= 20 + \frac{10(12 - 8)}{(12 - 8) + (12 - 7)} \\ &= 20 + \frac{40}{9} \approx \boxed{24.44}. \end{aligned}$$
+
+## What it means
+
+- **Mean** uses every value and can be pulled by one very large or small value; the **median** cannot; the **mode** is the only one that also works for data that are mere categories (colours, brands).
+- **Step deviation** only makes the arithmetic smaller: subtract a convenient $a$, divide by $h$, average, then undo both steps.
+- **Grouped median**: the median class holds the $\frac{N}{2}$th value; inside it the values are taken to be spread evenly, so we move $\frac{\frac{N}{2} - C}{f}$ of the way across the class.
+
+! example | Example 1 — median of a list
+Find the median of $7, 3, 9, 4, 12, 5$.
+**Solution.** In order: $3, 4, 5, 7, 9, 12$; $n = 6$, so the median is the average of the 3rd and 4th values: $\frac{5 + 7}{2} = \boxed{6}$.
+
+! example | Example 2 — the empirical relation
+For a moderately skewed distribution the mean is $35$ and the median is $34$. Estimate the mode.
+**Solution.** Mode $\approx 3 \times 34 - 2 \times 35 = \boxed{32}$.
+
+? Mean by step deviation? :: $\bar{x} = a + \frac{\sum fd}{N} \times h$, $d = \frac{x - a}{h}$.
+? Median of grouped data? :: $l + \frac{\frac{N}{2} - C}{f} \times h$.
+? Mode of grouped data? :: $l + h \cdot \frac{f_m - f_1}{2f_m - f_1 - f_2}$.
+? Empirical relation of mean, median and mode? :: Mode $= 3$ median $- 2$ mean.
+
+! exam | What the exam asks
+- Mean of grouped data by the assumed-mean or step-deviation method.
+- Median and mode of grouped data; the median from ogives.
+- The empirical relation.
+
+! recap | One-minute revision
+- $\bar{x} = \frac{\sum fx}{N} = a + \frac{\sum fd}{N}h$.
+- $M = l + \frac{N/2 - C}{f}h$; mode $= l + h\frac{f_m - f_1}{2f_m - f_1 - f_2}$.
+- Ogives cross at the median; mode $= 3M - 2\bar{x}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 16 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 10, the chapter on statistics
