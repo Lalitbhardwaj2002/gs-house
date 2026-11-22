@@ -1,0 +1,75 @@
+@en
+# Basic probability and the addition theorem
+
+> Probability counts favourable outcomes against all equally likely outcomes. The addition theorem corrects for outcomes counted twice, $P(A \cup B) = P(A) + P(B) - P(A \cap B)$, and "at least one" is easiest through the complement.
+
+## Events and the addition theorem
+
+! note | Basic probability
+- **Random experiment**: outcome not known in advance. **Sample space** $S$: set of all outcomes. **Event**: a subset of $S$.
+- **Classical probability**: $P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of equally likely outcomes}} = \frac{n(E)}{n(S)}$, $0 \leq P(E) \leq 1$, $P(S) = 1$, $P(\phi) = 0$, $P(E') = 1 - P(E)$.
+- **Mutually exclusive**: $E \cap F = \phi$, then $P(E \cup F) = P(E) + P(F)$. **Exhaustive**: $E \cup F = S$.
+- **Addition theorem**: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
+- $P(A \cap B') = P(A) - P(A \cap B)$ (only $A$); exactly one of $A, B$: $P(A) + P(B) - 2P(A \cap B)$.
+- Three events: $P(A \cup B \cup C) = \sum P(A) - \sum P(A \cap B) + P(A \cap B \cap C)$.
+^ data/net/maths/fig/prob-venn.svg | $A$ and $B$ in the sample space $S$: only $A$ ($A \cap B'$), both ($A \cap B$), only $B$ ($A' \cap B$)
+
+! check | Conditions added
+The classical formula $\frac{n(E)}{n(S)}$ needs a finite sample space whose outcomes are **equally likely**; the addition theorem holds for any two events. In the three-event formula $\sum P(A \cap B)$ is the sum over the three pairs.
+
+! note | A pack of 52 cards
+4 suits of 13 cards: spades ♠, clubs ♣ (black, 26); hearts ♥, diamonds ♦ (red, 26). Each suit: A, 2–10, J, Q, K. Face (court) cards J, Q, K: 12. Aces: 4. Number cards 2–10: 36.
+
+! example | Question B1 — standard
+A card is drawn from a well-shuffled pack of 52 cards. Find the probability that it is a king or a heart.
+**Solution.** $P(K) = \frac{4}{52}$, $P(H) = \frac{13}{52}$, $P(K \cap H) = \frac{1}{52}$ (king of hearts). $P(K \cup H) = \frac{4 + 13 - 1}{52} = \frac{16}{52} = \boxed{\frac{4}{13}}$.
+
+! example | Question B2 — standard
+Two dice are thrown. Find the probability that the sum is 7.
+**Solution.** $n(S) = 36$. Favourable: $(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)$, i.e. $6$ outcomes. $P = \frac{6}{36} = \boxed{\frac{1}{6}}$.
+
+! example | Question B3 — standard
+Three coins are tossed. Find the probability of getting at least one head.
+**Solution.** $P(\text{no head}) = P(TTT) = \frac{1}{8}$. $P(\text{at least one head}) = 1 - \frac{1}{8} = \boxed{\frac{7}{8}}$.
+
+! trick | Shortcut / time-saver
+"At least one" $\Rightarrow$ always do $1 - P(\text{none})$. Sums with two dice: number of ways to get sum $s$ is $6 - \lvert s - 7 \rvert$ (sum $7$: $6$ ways; sum $2$ or $12$: $1$ way).
+
+! check | Condition added
+The count $6 - \lvert s - 7 \rvert$ holds only for $2 \leq s \leq 12$. Any other sum has no ways; there the formula gives $0$ or a negative number and must not be used.
+
+## What it means
+
+- **Why subtract $P(A \cap B)$**: adding $P(A)$ and $P(B)$ counts the outcomes in both events twice; taking $P(A \cap B)$ away once counts every outcome exactly once.
+- **Mutually exclusive** means "cannot happen together" ($A \cap B = \phi$); **exhaustive** means "together they cover every outcome".
+- **The complement is often shorter**: "at least one" has many cases, "none" has one.
+
+! example | Example 1 — a sum of at least 10
+Two dice are thrown. Find the probability that the sum is at least $10$.
+**Solution.** By the shortcut, sums $10$, $11$, $12$ have $3$, $2$, $1$ ways: $P = \frac{6}{36} = \boxed{\frac{1}{6}}$.
+
+! example | Example 2 — exactly one event
+$P(A) = 0.5$, $P(B) = 0.4$, $P(A \cap B) = 0.2$. Find the probability that exactly one of $A$, $B$ happens.
+**Solution.** $P(A) + P(B) - 2P(A \cap B) = 0.5 + 0.4 - 0.4 = \boxed{0.5}$.
+
+! example | Example 3 — three events
+A number is chosen from $1$ to $30$. Find the probability that it is divisible by $2$, $3$ or $5$.
+**Solution.** Counts: $15 + 10 + 6 - 5 - 3 - 2 + 1 = 22$ (by $2$, $3$, $5$; by $6$, $10$, $15$; by $30$). $P = \frac{22}{30} = \boxed{\frac{11}{15}}$.
+
+? Addition theorem for two events? :: $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
+? Probability that only $A$ happens? :: $P(A) - P(A \cap B)$.
+? Number of ways to get the sum $s$ with two dice? :: $6 - \lvert s - 7 \rvert$, for $2 \leq s \leq 12$.
+? Face (court) cards in a pack? :: $12$ (J, Q, K of each suit).
+
+! exam | What the exam asks
+- Cards, dice and coins: direct counting.
+- The addition theorem; "only A", "exactly one", "at least one".
+- Three events by inclusion and exclusion.
+
+! recap | One-minute revision
+- $P(E) = \frac{n(E)}{n(S)}$; $P(E') = 1 - P(E)$.
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$; exactly one: $P(A) + P(B) - 2P(A \cap B)$.
+- At least one $= 1 - P(\text{none})$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 16 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 11, the chapter on probability

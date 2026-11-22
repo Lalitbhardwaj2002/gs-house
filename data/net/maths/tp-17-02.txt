@@ -1,0 +1,55 @@
+@en
+# Speed, time and distance
+
+> Distance = speed × time. Convert km/h to m/s with $\frac{5}{18}$, average speed over equal distances is the harmonic mean $\frac{2uv}{u + v}$, and two moving things are handled with their relative speed.
+
+## Speed, trains and boats
+
+! addon | Speed, time and distance
+- Distance $=$ speed × time; $x$ km/h $= x \cdot \frac{5}{18}$ m/s.
+- Average speed over equal distances at $u$ and $v$: $\frac{2uv}{u + v}$.
+- Relative speed: same direction $u - v$, opposite directions $u + v$.
+- Train of length $L$ passing a pole: $\frac{L}{s}$; passing a platform of length $P$: $\frac{L + P}{s}$.
+- Boats: downstream speed $D = u + v$, upstream $U = u - v$; still water $u = \frac{D + U}{2}$, stream $v = \frac{D - U}{2}$.
+
+! check | Conditions added
+Speeds are constant and in matching units; in the train formulas $s$ is the speed of the train. In "same direction $u - v$", $u > v$ (otherwise take $v - u$). For the boat, the speed in still water exceeds the stream speed ($u > v$), or it cannot go upstream.
+
+! example | Question ST1 — standard
+A train $150$ m long runs at $54$ km/h. How long does it take to cross a platform $300$ m long?
+**Solution.** $54 \cdot \frac{5}{18} = 15$ m/s. Distance $150 + 300 = 450$ m. Time $= \frac{450}{15} = \boxed{30\ \text{s}}$.
+
+! example | Question ST2 — standard
+A man goes from A to B at $40$ km/h and returns at $60$ km/h. Find his average speed.
+**Solution.** $\frac{2 \cdot 40 \cdot 60}{40 + 60} = \boxed{48\ \text{km/h}}$ (not $50$).
+
+## What it means
+
+- **Why not $50$ in ST2**: he spends longer at the lower speed ($1.5$ times as long), so the average is pulled towards $40$. Average speed is always total distance over total time.
+- **Relative speed**: for two trains, imagine one standing still; the other then moves at the sum (opposite directions) or difference (same direction) of the speeds.
+- **Crossing distance**: a train has to cover its own length to pass a pole, and its length plus the platform's to pass a platform.
+
+! example | Example 1 — two trains crossing
+Trains $100$ m and $120$ m long run in opposite directions at $54$ km/h and $36$ km/h. How long do they take to cross each other?
+**Solution.** Relative speed $90$ km/h $= 25$ m/s; distance $220$ m; time $= \frac{220}{25} = \boxed{8.8\ \text{s}}$.
+
+! example | Example 2 — a boat
+A boat goes $12$ km downstream in $2$ hours and comes back in $3$ hours. Find its speed in still water and the speed of the stream.
+**Solution.** $D = 6$, $U = 4$ km/h: $u = \frac{6 + 4}{2} = \boxed{5\ \text{km/h}}$, $v = \frac{6 - 4}{2} = \boxed{1\ \text{km/h}}$.
+
+? Convert $x$ km/h to m/s? :: Multiply by $\frac{5}{18}$.
+? Average speed over two equal distances at $u$ and $v$? :: $\frac{2uv}{u + v}$.
+? Speed in still water from downstream $D$ and upstream $U$? :: $\frac{D + U}{2}$.
+
+! exam | What the exam asks
+- Trains passing poles, platforms and other trains.
+- Average speed; boats and streams.
+- Relative speed: meeting and overtaking.
+
+! recap | One-minute revision
+- $\frac{5}{18}$: km/h to m/s; $\frac{18}{5}$ back.
+- Average (equal distances) $\frac{2uv}{u + v}$.
+- Boat: $u = \frac{D + U}{2}$, $v = \frac{D - U}{2}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 17 (the full PDF is linked on the subject page)
+& R. S. Aggarwal, Quantitative Aptitude, the chapters on time and distance, trains, and boats and streams

@@ -996,3 +996,180 @@ Format: `python -I -X utf8 tools/check_net.py` ends with `0 problems`. All eight
 - The subject files list tp-15-12 as "Motion in a plane: radial and transverse components", the page's own title.
 - Not changed: 15.8 (simple harmonic motion) and 15.11 (impact) are not named in either syllabus, but they are kept in TGT Unit 14 and PGT Unit 9 with the other dynamics of the notes.
 - Phone width: all display formulas were split before the checks where needed; after the checks, in the browser at 375 pixels, all 14 pages render with no KaTeX error and nothing wider than the screen.
+
+## Chapter 16, sections 16.1 to 16.4, check of 22 November 2026
+
+Source pages read: clean.pdf, PDF pages 189 to 199 (printed 188 to 198), from the page images in scratchpad\pdfview\c16 and the text layer text.txt, up to the end of Question RD4.
+
+Missing from the pages: one item. The bar chart of Question RD1 (PDF page 198) has no figure on tp-16-04 (see below). Every other box, bullet, formula, table, question, solution, boxed answer, shortcut and figure of 16.1 to 16.4 is on the pages, with the same words. All questions are there: B1 to B3, I1 to I11, C1 to C5, BY1 to BY8, RD1 to RD4.
+
+All numbers in the PDF text and in the additions were recomputed with exact fractions in Python (script ckBD\verify.py). No slip was found in the PDF.
+
+### tp-16-01 (Basic probability and the addition theorem)
+
+- Checked: note box, pack-of-cards box, B1 to B3, shortcut, the existing check box, What it means, Examples 1 to 3, flash cards, exam and recap boxes. All correct (B1 4/13, B2 1/6, B3 7/8, sums of at least 10: 1/6, exactly one: 0.5, divisible by 2, 3 or 5: 22/30 = 11/15).
+- Change: added a red box "Condition added" after the shortcut. The count 6 − |s − 7| of ways to get the sum s with two dice holds only for 2 ≤ s ≤ 12; outside it gives 0 or a negative number.
+- Change: the flash card on the same count now says "for 2 ≤ s ≤ 12".
+- Figure prob-venn: labels S, A, B, A ∩ B′, A ∩ B, A′ ∩ B are right and match the PDF. Small remark for the owner: the PDF shades only A ∩ B; the new figure tints both circles, so the overlap is less clearly marked. Optional.
+
+### tp-16-02 (Conditional probability, multiplication theorem, independent events)
+
+- Checked: note box (all seven bullets), I1 to I11, C1 to C5, series and parallel shortcut, existing check box, What it means, Examples 1 and 2, flash cards, exam and recap boxes. All correct (for example I2 x = 1/7, I3 5/13, I6 1/30, 3/10, 2/3, I10 0.42, C2 37/40, aces without replacement 1/221).
+- Change: two sentences added to the existing check box. The test P(F|E) = P(F) needs P(E) > 0 (the product test does not). The "at least one" formula 1 − P(E₁′)…P(Eₙ′) needs the n events to be mutually independent; pairwise independence is not enough.
+- Change: Example 1 (pairwise but not mutually independent) now shows this: P(A ∪ B ∪ C) = 3/4, not 1 − 1/8 = 7/8.
+- Change: added a red box "Condition added" after I8. I8, I9 and I10 do not say that A and B act independently, but the product of their probabilities needs it.
+- Change: recap line "At least one = 1 − ∏ P(Eᵢ′)" now says "(independent events)"; without that it is false.
+- Figure prob-circuits: series and parallel circuits with S₁, S₂ and the labels "series: p₁p₂", "parallel: 1 − (1 − p₁)(1 − p₂)" match the PDF. No problem.
+
+### tp-16-03 (Total probability and Bayes' theorem)
+
+- Checked: note box, tree figure, tree shortcut, existing check box, BY1 to BY8, What it means, Examples 1 and 2, flash cards, exam and recap boxes. All correct (BY1 2/3, BY2 16/69, BY3 3/7, BY4 1/52, BY5 1/2, BY6 3/8, BY7 24/29, BY8 110/221 ≈ 0.498).
+- Change: BY6 uses R in P(E₁|R) without saying what it is (also in the PDF). Added "(R: he reports a six.)" after the given probabilities.
+- Change: added a red box "Condition added" after BY6. The value P(reports six | not six) = 1/4 assumes that every lie about a non-six is the report "six" (the textbook reading; 3/8 is the exam answer). If a lie named any of the other five faces equally, it would be 1/20 and the answer 3/4.
+- Change: in What it means, "even a very good test is right only about half the time for a rare disease" was not right as worded (a negative result is almost always right). It now reads: when a disease is rare, a positive result of even a very good test is right only about half the time.
+- Figure prob-tree: Start, branches P(E₁), P(E₂), P(E₃) to E₁, E₂, E₃, then P(A|Eᵢ) to A, with the products P(Eᵢ)P(A|Eᵢ). Matches the PDF (the PDF draws Start in a circle; the figure uses a dot). No problem.
+
+### tp-16-04 (Random variables and probability distributions)
+
+- Checked: note box, existing check box, RD1 to RD4 (vertical tables), What it means, Examples 1 and 2, flash cards, exam and recap boxes. All correct (RD1 mean 1, variance 1/2; RD2 table 625/1296, 125/324, 25/216, 5/324, 1/1296, sum 1, mean 2/3, variance 5/9; RD3 188/221, 32/221, 1/221, mean 2/13, variance 400/2873; RD4 64/81, 16/81, 1/81; Example 1 k = 1/10, E(X) = 2; Example 2 expected gain −1.5).
+- Change: in the existing check box, the sums must converge "(absolutely)" for the mean and variance to exist.
+- Change: added a red box "Condition added" after RD3. ⁵²C₂ assumes the two cards are drawn together or without replacement; with replacement X would be B(2, 1/13) with variance 24/169.
+- Change: Example 2 was titled "a fair game", but the game in it is not fair (expected gain −1.5). Title now "is the game fair?"; the question asks it and the solution ends: a fair game has expected gain 0, so this one is not fair; a fee of ₹3.50 would make it fair.
+- Left for the owner (figure missing): the PDF's RD1 solution has a bar chart (PDF page 198) that is not on the page and has no figure file. It shows p against x: bars at x = 0, 1, 2 of heights 1/4, 1/2, 1/4, with ticks 1/4 and 1/2 on the p axis and axis labels p and x. Suggested: add it to fig_ch16.py (for example prob-rd1-bars.svg) and put a line `^ data/net/maths/fig/prob-rd1-bars.svg | the distribution of RD1: bars of height 1/4, 1/2, 1/4 at x = 0, 1, 2` in the RD1 box right after "**Solution.**", before the table, with no blank line.
+
+### Placement
+
+- TGT Unit 4 (Probability: theorems of addition and multiplication) lists tp-16-01 and tp-16-02. Right: 16.1 is the addition theorem, 16.2 the multiplication theorem.
+- PGT Unit 1, part "Probability" (multiplication theorem, conditional probability, independent events, total probability) lists tp-16-01 to tp-16-05. Right for 16.1 (basis), 16.2 and 16.3. 16.4 (random variables) and 16.5 (binomial) are not named in the PGT syllabus; this is still the best place for them as background, so no change is suggested.
+- The key lines of tp-16-01 to tp-16-04 describe the pages correctly.
+
+check_net.py: last line "0 problems".
+
+## Chapter 16, sections 16.5 to 16.8, check of 22 November 2026
+
+Source pages read: clean.pdf, PDF pages 199 to 207 (printed 198 to 206), from the images p-199.png to p-207.png and the text layer text.txt. Section 16.5 starts after Question RD4 on PDF page 199.
+
+Nothing of the PDF was missing. Every box, bullet, formula, worked question, boxed answer, shortcut and figure of 16.5 to 16.8 is on the pages, with the same words (meta labels dropped as agreed, "(your notes p.63)" dropped, source labels kept).
+
+Every number was recomputed in Python (script ckBE\verify.py): all PDF answers and all additions are correct. No slip in the PDF.
+
+### tp-16-05 (Bernoulli trials and the binomial distribution)
+
+Checked: the note box, BI1 to BI6, the shortcut, the Poisson/normal add-on, both figures and all additions (Examples 1 to 3, flash cards, exam and recap boxes). BI2 roots 1/5 and 9/5; BI3 roots 1/2 and 2, n = 32 gives mean 16 and variance 8 (sum 24, product 128); BI6 21/32 and 1/2; Example 1 671/1296; Example 2 C(9,4) = C(9,5) = 126; e^(-2) = 0.1353. The mode rule was tested for all n up to 24 and p = k/20: no exception when 0 < p < 1. The 68-95-99.7 figures are right (68.3, 95.4, 99.7).
+
+Changes:
+- New red box "Conditions added" right after the shortcut box: the odd/even remark needs a fair coin and n ≥ 1 (moved here from the box after the add-on, so it sits next to the statement it qualifies); new: the mode rule needs 0 < p < 1 (for p = 1 it would give n + 1 and n, for p = 0 it would give 0 and -1).
+- The red box after the add-on now holds only the independence condition for E(XY) and Var(X ± Y).
+
+Figures: prob-binomial shows bars 1 : 4 : 6 : 4 : 1 over r = 0 to 4 with the right labels, as in the PDF. prob-normal is a Gaussian with σ = 36 px; the shaded band runs from μ − σ to μ + σ and is labelled 68%, as in the PDF. Both fine. (Small difference: the PDF's normal figure labels the axis x; the new one does not. Not needed.)
+
+Placement: PGT Unit 1, part "Probability". The PGT syllabus does not name the binomial distribution, but this is the closest part (16.4 sits there too); the TGT syllabus has no place for it. The key line describes the page. Right.
+
+### tp-16-06 (Statistics: measures of central tendency)
+
+Checked: the note box, the ogive box, M1 to M3, the figure and all additions. M1 Σfd = 0, mean 45 (also by direct mid-points); M2 c.f. and median 28; M3 mode 220/9 ≈ 24.44; Example 1 median 6; Example 2 mode 32.
+
+Changes:
+- "What it means": "the mode is the only one that also works for non-numerical data" changed to "... for data that are mere categories (colours, brands)". Reason: the median also works for ordered non-numerical data (grades), so the old sentence was too strong.
+
+Left as is: the existing red box (continuous classes of equal width, values spread evenly, empirical relation only rough). It is a sufficient condition; strictly, the median formula needs only h = width of the median class, and the mode formula needs the modal class and its two neighbours of equal width.
+
+Figure stat-ogive: bar heights are 6, 7, 15, 16, 4, 2 (Question M2); the ogive joins (upper boundary, c.f.) from (0, 0) to (60, 50); the N/2 = 25 line meets it above x = 28, inside the class 20–30. Matches the caption and the PDF. Histogram and ogive use different vertical scales (1 unit of f = 2 units of c.f.); fine for a sketch.
+
+Placement: TGT Unit 2, Statistics. Right; the key line describes the page.
+
+### tp-16-07 (Measures of dispersion)
+
+Checked: the note box, D1 to D9, the "More measures" add-on, the shortcut and all additions. D1 2.75; D2 58/11 ≈ 5.27; D3 2.3; D4 median 13, 149/30 ≈ 4.97; D5 10; D6 508/50 = 10.16; D7 2; D8 32, 36, 6; D9 64; combined variance example 31.5 (also checked on built data); CV 20% and 15%; (n² − 1)/12 checked for n = 5, 7, 10; GM² = AM × HM checked.
+
+Changes:
+- Red box after the note box: "the variance changes too unless all a_i are equal" became "the variance is then in general different (it is unchanged when all a_i are equal)". Reason: unequal a_i can leave the variance unchanged (x = 0, 1 with a = 1, -1), so the old wording was not exact.
+- Red box after the add-on: added "The coefficient of variation is used for positive data (x̄ > 0)."
+- New red box "Conditions added" after the shortcut box: mean = median = mode needs a symmetric distribution with a single peak; QD ≈ 2σ/3 and MD ≈ 4σ/5 come from the normal distribution (0.6745σ and 0.7979σ) and are rough guides otherwise.
+
+Placement: TGT Unit 2, Statistics. Right (it also carries "pictorial representation" of the syllabus, which the key line names).
+
+### tp-16-08 (Vital statistics and index numbers (TGT))
+
+Checked: both add-on boxes, VS1, IN1, IN2 and all additions. VS1 30, 12, 25, 18; IN1 sums 54, 40, 54, 41, L = 135, P = 131.71, Fisher = 133.34; Fisher's index checked numerically to satisfy the time and factor reversal tests; IN2 7500; Example 1 30; Example 2 133.3.
+
+Changes:
+- Red box after the vital statistics box: the total fertility rate note was reworded. The old text said the age-specific rates "are per woman"; that is one convention only. Now: with five-year groups TFR = 5 × Σ ASFR; with rates per 1000 women the TFR is per 1000 women (divide by 1000 for births per woman).
+- Red box after the index numbers box: added that the chain index is the product of the link relatives taken as ratios, times 100 (the PDF's "product of link relatives p_n/p_(n-1) × 100" would otherwise multiply in a factor 100 for each link).
+- "What it means": the Laspeyres/Paasche sentence now says what is compared (the base-year basket now against then; Paasche the same with the current basket) instead of only the numerator or denominator question.
+
+Placement: TGT Unit 2, Statistics. Right; the key line describes the page.
+
+Run of tools/check_net.py after the edits: 0 problems.
+
+## Chapters 17 and 18, check of 22 November 2026
+
+Source pages read: clean.pdf pages 208 to 218 (printed 207 to 217), from the page images (80 dpi) and the text layer in pdfview\c1718. Also read: tgt-mathematics.txt (Units 1 and 9), pgt-mathematics.txt, and the placement in tgt-mathematics.json and pgt-mathematics.json.
+
+Was anything of the PDF missing? No. Every box, bullet, question, solution, boxed answer, shortcut, figure and caption of sections 17.1 to 17.6 is on tp-17-01 to tp-17-06. All 131 facts are on tp-18-01, in order (checked by script: (1) to (131), none missing or doubled) and under the PDF's eight group headings. All six strategy points are there. The only differences are the allowed ones: the chapter title line is not repeated, and "(your notes p.1)" in 17.5 is dropped.
+
+Numbers were recomputed by hand and in Python (sympy, mpmath). Script files: ckBF\facts.py (Chapter 18 facts), ckBF\figcheck.py (figure geometry), ckBF\render.py (figure images).
+
+### tp-17-01 (Work and time)
+
+- Checked: the add-on box (six bullets), the conditions box, W1 ($\frac{36}{5} = 7\frac{1}{5}$ days), W2 (18 hours), the additions (wages 900 : 600; men-days-hours $D = 10$), cards, exam and recap boxes. All correct and complete.
+- Changes: none.
+
+### tp-17-02 (Speed, time and distance)
+
+- Checked: the add-on box, ST1 (30 s), ST2 (48 km/h), Example 1 (8.8 s), Example 2 (5 and 1 km/h), "1.5 times as long". All correct and complete.
+- Change: in the conditions box I added that $s$ in the train formulas is the speed of the train. The PDF uses $s$ without saying what it is.
+
+### tp-17-03 (Simple and compound interest)
+
+- Checked: the add-on box, CI1 (Rs 100), CI2 (54,080), the CI − SI formulas for 2 and 3 years, Example 1 (₹310), Example 2 ($1.03^4 - 1 = 12.55\%$), Example 3 (₹40,500), and the rule-of-72 range (the error is under about 4% from 4% to 15%). All correct and complete.
+- Changes: none.
+
+### tp-17-04 (Banking, shares, profit and loss, taxation)
+
+- Checked: the add-on box (seven bullets), B1 (interest 1000, maturity Rs 13,000), B2 (28%), B3 (Rs 180 each, Rs 2360), the shortcut box, Examples 1 to 3 (1% loss, 20%, 8%). I also checked that BD − TD = TD²/PW, with PW = A − TD.
+- Change: the shares bullet now uses the PDF's form, "income = number of shares × face value × $\frac{\text{dividend}\%}{100}$". The page had put the whole product into one long fraction. It was the same mathematics, but too wide for a phone.
+
+### tp-17-05 (Euclidean geometry: triangles)
+
+- Checked: the figure, the four bullets, the conditions box, the congruence box (word for word), EG1 ($BD = 6$, $AB = 2\sqrt{13}$, $BC = 3\sqrt{13}$, $52 + 117 = 169$), Example 1 ($AD = 7$), Example 2 ($BD = 4$), Example 3 (50 cm²). The obtuse and acute extensions agree with the cosine rule.
+- Change: "What it means" said "$BC \cdot CD = \pm BC \cdot AC\cos C$" without saying which sign goes with which case. It now gives the cosine rule, $CD = AC\,\lvert\cos C\rvert$, and says that $\cos C < 0$ exactly when $\angle C$ is obtuse.
+- Change: I added a red box "Condition added" after the congruence box. The Euler line needs a triangle that is not equilateral; in an equilateral triangle the centres coincide.
+
+### tp-17-06 (Euclidean geometry: circles)
+
+- Checked: the add-on box (seven bullets), the three figures and captions, the conditions box, EG2 ($PD = 8$, tangent 12 cm), EG3 (110°, 85°), the shortcut box (every triple checked), Example 1 (6 cm), Example 2 (50°), Example 3 (120°, 15 sides). I also checked the similar-triangles argument $\triangle PAC \sim \triangle PDB$.
+- Change: added "and produce the line" to the proof idea for the angle at the centre. The two parts of the centre angle appear only when $PO$ is extended.
+- Change: I added a red box "Conditions added" after the shortcut box. In $(m^2 - n^2, 2mn, m^2 + n^2)$, $m > n > 0$ are integers. Every triple is a multiple of one of these, up to the order of the legs; for example $(9, 12, 15)$. The exterior angles are one at each vertex of a convex polygon.
+
+### tp-18-01 (Last-day rapid revision: 131 one-line facts)
+
+- Checked every one of the 131 facts. These were computed: (1) 150; (2) the counts; (3) the Bell numbers 5 and 15; (4) $2e$, $5e$, $15e$; (7) and (14) by brute force; (34); (38); (44) to (54) by quadrature or sympy (areas, lengths, cap, cardioid $V$ and $S$); (59); (60) to (64); (71); (89); (97); (104) to (106); (108); (109); (123). All 131 are correct as stated, under the conditions listed below. No fact is false.
+- Change: Euler's function is now $\varphi(n)$ (in (6), (14) and strategy point 5), as in the PDF and the rest of the site. The page had $\phi(n)$, the same symbol it uses for the empty set in (27) and (28).
+- Change: the red box "Conditions added" now has 35 entries. Kept or corrected: (16), (23), (33), (37), (41), (70), (74) (reworded: needs $h^2 \geq ab$; with the modulus it gives the acute angle), (76) (now also covers (77)), (108) (now says "solid sphere"), (120), (122). New: (7) $o(a) = n$; (10) $n \geq 2$; (14) group, not ring, homomorphisms; (19) $V$ finite-dimensional; (22) eigenvalues counted with multiplicity; (36) $f(0) = 0$; (38) $x \to 0$; (39) $f \to 1$, $g \to \infty$; (40) $u$ homogeneous of degree $n$; (53) the area on one side of the axis, and $b \geq a$ for the torus; (55) essential constants; (65) principal values; (68) the second polar equation $rv_r = -u_\theta$; (73) the formula for $\Delta$, and real lines need $h^2 \geq ab$; (81) the hyperbola's director circle is real only if $a > b$; (83) ellipse ($mm' = \frac{b^2}{a^2}$ for the hyperbola); (86) no common tangent when one circle lies inside the other; (101) three forces at a point; (104) to (106) where each distance is measured, and what "hollow" means; (109) landing at the level of projection, no air resistance; (113) a direct impact; (116) the same distance, circular orbit; (118) $p > 0$; (123) divisor $n$.
+- Change: the PDF's purple box "Exam-hall strategy for speed" is now a `! trick` box with that title. The section heading is now "## Exam-hall strategy". Before, the six points were plain bullets under a heading.
+- Change: in strategy point 5 the PDF's dash "(Lagrange) — most MCQs …" is restored; the page had a semicolon.
+- Change: the note on strategy point 2 now says $npq \leq np$ (as $q \leq 1$) instead of $<$, which fails when $p = 0$. The lead now says the red box comes "after the facts", not "at the end".
+
+### Figures (geo-altitude, geo-centre-angle, geo-alt-segment, geo-chords)
+
+- All four agree with the PDF figures and with the mathematics. Measured from the SVG coordinates: $\angle B = 90.005°$, and $BD^2 = 7691$ against $AD \cdot DC = 7693$. $\angle AOB = 109.9°$ and $\angle APB = 55.0°$, with $P$ on the major arc and the $2\theta$ mark inside the non-reflex angle. The tangent–chord angle is $55.03°$ and $\angle TDC = 55.02°$, with $D$ in the alternate segment. All four chord ends lie on the circle, and $PA \cdot PB = 3564.3$ against $PC \cdot PD = 3564.1$.
+- For the owner (cosmetic): geo-altitude and geo-chords carry the formula as text inside the SVG, and the page caption repeats it. The two circle-angle figures have no text inside. fig_ch17.py could drop the in-figure line for consistency. No change is needed for correctness.
+
+### Placement
+
+- Right. tp-17-01 to 04 are in TGT Unit 1, which lists work and time, speed and time, SI, CI, banking and taxation; shares and profit and loss are extra. tp-17-05 and 06 are in TGT Unit 9. The PGT syllabus has no commercial mathematics or Euclidean geometry, so Chapter 17 is rightly TGT only. Chapter 18 is an "extra" in both subjects.
+- Unit 9 is fully covered. Baudhayana–Pythagoras and its extension: 17.5. Circle, sector (segment in the Hindi text), arc and chord: 17.6 (the arc, sector and segment formulas, the chord bisector, equal chords). Tangent: 17.6. Alternate segment: 17.6. Segments of a chord and their rectangle: 17.6 (intersecting chords). Congruence (similarity in the Hindi text): 17.5. "Congruence of linear figures" (equal segments and angles) appears only through the triangle tests; that is enough at this level.
+- Suggestion (JSON not edited): the key of tp-17-06 could add "arc, sector and segment", since that is a Unit 9 item, e.g. "Chords and angles · cyclic quadrilaterals · tangents and the alternate segment · intersecting chords · arc, sector and segment".
+
+### Final check
+
+- `python -I -X utf8 tools/check_net.py`: last line `0 problems`. All seven files are UTF-8 with LF line endings. Nothing was committed, and no other file was touched.
+
+## Chapters 16 to 18, after the checks (22 November 2026)
+
+- The bar chart of Question RD1, missing from tp-16-04, was drawn (`prob-rd1-bars.svg`) and placed in the solution; `prob-venn.svg` now shades only $A \cap B$, as the PDF does.
+- The key line of tp-17-06 in TGT Unit 9 names arc, sector and segment.
+- Not changed: geo-altitude and geo-chords keep their relation written inside the figure (as in the PDF), although the caption repeats it.
+- Placement: tp-16-04 (random variables) and tp-16-05 (binomial distribution) are not named in the PGT syllabus; both checkers agreed that PGT Unit 1, part "Probability", is the best place for them. Chapter 18 is listed in both subjects as an extra ("Past papers and exam guide"), not under a unit.
+- Phone width: 19 display formulas and two horizontal tables were made narrower before the checks (the tables of RD1 and RD2 now list $x$ and $p$ in two columns). After the checks, in the browser at 375 pixels, all 15 pages render with no KaTeX error and nothing wider than the screen.

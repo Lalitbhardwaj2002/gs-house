@@ -11,7 +11,7 @@ const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js',
 
 // Every question file, every notes file of the book companion and every syllabus file of the NET
 // corner is saved at install too, so the installed app works fully offline for solo practice and reading.
-// (List last extended on 22 November 2026: UP TGT / PGT Mathematics, Chapters 1 to 15. A change in this
+// (List last extended on 22 November 2026: UP TGT / PGT Mathematics, Chapters 1 to 18. A change in this
 // file makes installed copies fetch the list again.)
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE)

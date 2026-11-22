@@ -1669,8 +1669,8 @@ function renderHome() {
 // its own official syllabus (data/net/tgt-mathematics.json, data/net/pgt-mathematics.json). The notes
 // themselves are shared (data/net/maths/); the full notes PDF is sold by email (below). English only.
 const MATHS_SUBJECTS = [
-  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'Chapters 1 to 15 notes ready' },
-  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'Chapters 1 to 15 notes ready' },
+  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'All 18 chapters of notes ready' },
+  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'All 18 chapters of notes ready' },
 ];
 function mathsHTML() {
   const doors = MATHS_SUBJECTS.map((s) => `

@@ -1,0 +1,62 @@
+@en
+# Euclidean geometry: triangles
+
+> The right triangle gives the Baudhayana–Pythagoras theorem and, with the altitude to the hypotenuse, three similar triangles. Its extensions handle obtuse and acute angles; congruence and similarity tests, the proportionality theorems and the four centres complete the toolkit.
+
+## Right triangles and their extensions
+
+! addon | Euclidean geometry: triangles
+^ data/net/maths/fig/geo-altitude.svg | right triangle $ABC$ with $\angle B = 90°$ and the altitude $BD$: $BD^2 = AD \cdot DC$
+- **Baudhayana–Pythagoras**: in a right triangle $c^2 = a^2 + b^2$ (stated in the Baudhayana Sulba Sutra); the converse also holds.
+- In a right triangle with altitude $BD$ to the hypotenuse: $BD^2 = AD \cdot DC$, $AB^2 = AD \cdot AC$.
+- **Extensions**: $AD \perp BC$: if $\angle C$ is obtuse, $AB^2 = AC^2 + BC^2 + 2BC \cdot CD$; if acute, $AB^2 = AC^2 + BC^2 - 2BC \cdot CD$.
+- **Apollonius**: $D$ midpoint of $BC$: $AB^2 + AC^2 = 2(AD^2 + BD^2)$.
+
+! check | Conditions added
+In the extensions, $D$ is the foot of the perpendicular from $A$ to the line $BC$ (on $BC$ produced when $\angle C$ is obtuse) and $CD$ is a length. In the second bullet the triangle is right-angled at $B$ and $BD$ is the altitude to the hypotenuse $AC$; similarly $BC^2 = CD \cdot CA$.
+
+! addon | Congruence, similarity, centres
+**Congruence**: SSS, SAS, ASA, AAS, RHS. **Similarity**: AAA, SSS, SAS; areas of similar triangles are in the ratio of the squares of corresponding sides. **Basic proportionality** (Thales): a line parallel to one side divides the other two in the same ratio. The **angle bisector** divides the opposite side in the ratio of the adjacent sides. **Midpoint theorem**: the segment joining two midpoints is parallel to the third side and half of it. **Centroid** (medians, $2 : 1$), **incentre** (angle bisectors), **circumcentre** (perpendicular bisectors), **orthocentre** (altitudes); centroid, circumcentre and orthocentre lie on the **Euler line**.
+
+! check | Condition added
+The Euler line needs a triangle that is not equilateral; in an equilateral triangle the four centres coincide.
+
+! example | Question EG1 — standard
+In right $\triangle ABC$ ($\angle B = 90°$), $BD \perp AC$, $AD = 4$, $DC = 9$. Find $BD$, $AB$ and $BC$.
+**Solution.** $BD^2 = AD \cdot DC = 36 \Rightarrow \boxed{BD = 6}$; $AB^2 = AD \cdot AC = 4 \cdot 13 \Rightarrow \boxed{AB = 2\sqrt{13}}$; $BC^2 = CD \cdot CA = 9 \cdot 13 \Rightarrow \boxed{BC = 3\sqrt{13}}$. (Check $52 + 117 = 169 = 13^2$ ✓.)
+
+## What it means
+
+- **Why $BD^2 = AD \cdot DC$**: the altitude splits the right triangle into two triangles similar to it and to each other; matching sides of $\triangle ABD$ and $\triangle BCD$ gives $\frac{BD}{AD} = \frac{DC}{BD}$.
+- **The extensions are the cosine rule** $AB^2 = AC^2 + BC^2 - 2BC \cdot AC\cos C$ written without cosines: $CD = AC\,\lvert\cos C\rvert$, and $\cos C < 0$ exactly when $\angle C$ is obtuse.
+- **Apollonius** gives a median from the three sides: $AD^2 = \frac{2AB^2 + 2AC^2 - BC^2}{4}$.
+
+! example | Example 1 — a median
+In $\triangle ABC$, $AB = 7$, $AC = 9$, $BC = 8$. Find the median $AD$.
+**Solution.** $49 + 81 = 2(AD^2 + 16) \Rightarrow AD^2 = 49 \Rightarrow \boxed{AD = 7}$.
+
+! example | Example 2 — the angle bisector
+In $\triangle ABC$, $AB = 6$, $AC = 9$, $BC = 10$, and the bisector of $\angle A$ meets $BC$ at $D$. Find $BD$.
+**Solution.** $\frac{BD}{DC} = \frac{6}{9}$, so $BD = 10 \cdot \frac{6}{15} = \boxed{4}$.
+
+! example | Example 3 — areas of similar triangles
+Two similar triangles have corresponding sides $3$ cm and $5$ cm. The smaller has area $18$ cm$^2$. Find the area of the larger.
+**Solution.** Areas are as $9 : 25$: $18 \cdot \frac{25}{9} = \boxed{50\ \text{cm}^2}$.
+
+? Altitude to the hypotenuse? :: $BD^2 = AD \cdot DC$.
+? Apollonius' theorem? :: $AB^2 + AC^2 = 2(AD^2 + BD^2)$, $D$ the midpoint of $BC$.
+? Ratio of areas of similar triangles? :: The square of the ratio of corresponding sides.
+? Which centres lie on the Euler line? :: Centroid, circumcentre and orthocentre.
+
+! exam | What the exam asks
+- Pythagoras and its converse; Pythagorean triples.
+- The altitude to the hypotenuse; Apollonius' theorem; obtuse and acute extensions.
+- Congruence and similarity tests; Thales, the angle bisector theorem; the centres of a triangle.
+
+! recap | One-minute revision
+- $c^2 = a^2 + b^2$; $BD^2 = AD \cdot DC$, $AB^2 = AD \cdot AC$.
+- Obtuse $C$: $AB^2 = AC^2 + BC^2 + 2BC \cdot CD$; acute: $-$.
+- Areas of similar triangles $\propto$ (side)$^2$; bisector divides in the ratio of the sides.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 17 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Classes 9 and 10, the chapters on triangles

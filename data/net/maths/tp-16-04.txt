@@ -1,0 +1,76 @@
+@en
+# Random variables and probability distributions
+
+> A random variable turns each outcome into a number. Its distribution lists the values with their probabilities; the mean is the probability-weighted average, and the variance is the mean square distance from it, most quickly found as $E(X^2) - [E(X)]^2$.
+
+## Distribution, mean and variance
+
+! note | Random variables and probability distributions
+- A **random variable** $X$ assigns a real number to each outcome. Its **probability distribution**: values $x_i$ with probabilities $p_i \geq 0$, $\sum p_i = 1$.
+- **Mean** (expectation) $\mu = E(X) = \sum x_ip_i$.
+- **Variance** $\sigma^2 = \sum(x_i - \mu)^2p_i = \sum x_i^2p_i - \mu^2 = E(X^2) - [E(X)]^2$; SD $\sigma = \sqrt{\text{Var}(X)}$.
+
+! check | A condition added
+Here $X$ takes finitely many (or countably many) values: a discrete random variable. For infinitely many values the sums must converge (absolutely) for the mean and variance to exist.
+
+! example | Question RD1 — RS Aggarwal Ex.3 Q2
+A coin is tossed twice. Let $X$ be the number of heads. Find the distribution, mean and variance of $X$.
+**Solution.**
+^ data/net/maths/fig/prob-rd1-bars.svg | the distribution of RD1: bars of height $\frac{1}{4}$, $\frac{1}{2}$, $\frac{1}{4}$ at $x = 0, 1, 2$
+| $x$ | $p$ |
+| $0$ | $\frac{1}{4}$ |
+| $1$ | $\frac{1}{2}$ |
+| $2$ | $\frac{1}{4}$ |
+$\mu = 0 + \frac{1}{2} + \frac{2}{4} = \boxed{1}$; $E(X^2) = 0 + \frac{1}{2} + 1 = \frac{3}{2}$; $\sigma^2 = \frac{3}{2} - 1 = \boxed{\frac{1}{2}}$.
+
+! example | Question RD2 — RS Aggarwal
+Find the probability distribution of the number of doublets in four throws of a pair of dice, and its mean and variance.
+**Solution.** $p = P(\text{doublet}) = \frac{6}{36} = \frac{1}{6}$, $q = \frac{5}{6}$, $n = 4$: $P(X = r) = {}^4C_r\left(\frac{1}{6}\right)^r\left(\frac{5}{6}\right)^{4-r}$.
+| $x$ | $p$ |
+| $0$ | $\frac{625}{1296}$ |
+| $1$ | $\frac{125}{324}$ |
+| $2$ | $\frac{25}{216}$ |
+| $3$ | $\frac{5}{324}$ |
+| $4$ | $\frac{1}{1296}$ |
+Mean $= np = \boxed{\frac{2}{3}}$, variance $= npq = 4 \cdot \frac{1}{6} \cdot \frac{5}{6} = \boxed{\frac{5}{9}}$.
+
+! example | Question RD3 — RS Aggarwal (CBSE 2007)
+Two cards are drawn from a pack of 52 cards. Find the probability distribution of the number of kings, and its variance.
+**Solution.** $n(S) = {}^{52}C_2 = 1326$. $P(0) = \frac{{}^{48}C_2}{1326} = \frac{1128}{1326} = \frac{188}{221}$, $P(1) = \frac{4 \cdot 48}{1326} = \frac{32}{221}$, $P(2) = \frac{{}^4C_2}{1326} = \frac{1}{221}$. $\mu = \frac{32 + 2}{221} = \frac{2}{13}$; $E(X^2) = \frac{32 + 4}{221} = \frac{36}{221}$;
+$$\begin{aligned} \sigma^2 &= \frac{36}{221} - \frac{4}{169} \\ &= \frac{468 - 68}{2873} = \boxed{\frac{400}{2873}}. \end{aligned}$$
+
+! check | Condition added
+${}^{52}C_2$ assumes that the two cards are drawn together, or one after the other without replacement. With replacement $X$ would be binomial, $B\left(2, \frac{1}{13}\right)$, with variance $\frac{24}{169}$.
+
+! example | Question RD4 — RS Aggarwal
+Let $X$ be the number of times "a total of 9" appears in two throws of a pair of dice. Find the distribution of $X$.
+**Solution.** Total 9: $(3, 6), (4, 5), (5, 4), (6, 3)$, so $p = \frac{4}{36} = \frac{1}{9}$, $q = \frac{8}{9}$. $P(0) = \left(\frac{8}{9}\right)^2 = \boxed{\frac{64}{81}}$, $P(1) = 2 \cdot \frac{1}{9} \cdot \frac{8}{9} = \boxed{\frac{16}{81}}$, $P(2) = \left(\frac{1}{9}\right)^2 = \boxed{\frac{1}{81}}$.
+
+## What it means
+
+- **The mean is a long-run average**: over many repetitions the average value of $X$ settles near $E(X)$, though $E(X)$ itself need not be a possible value (RD3: $\frac{2}{13}$ kings).
+- **Variance measures spread**: it is the expected squared distance from the mean; its square root, the SD, is in the same units as $X$.
+- **Check a distribution**: every $p_i \geq 0$ and the $p_i$ add up to $1$.
+
+! example | Example 1 — an unknown probability
+$X$ takes the values $0, 1, 2, 3$ with probabilities $k$, $2k$, $3k$, $4k$. Find $k$ and $E(X)$.
+**Solution.** $10k = 1 \Rightarrow k = \boxed{\frac{1}{10}}$. $E(X) = 0 + \frac{2}{10} + \frac{6}{10} + \frac{12}{10} = \boxed{2}$.
+
+! example | Example 2 — is the game fair?
+A player pays ₹5 to throw a die and receives ₹(the number shown). Find the expected gain. Is the game fair?
+**Solution.** Expected receipt $= \frac{1 + 2 + \cdots + 6}{6} = 3.5$, so the expected gain is $3.5 - 5 = \boxed{-1.5}$, a loss of ₹1.50 per throw. A game is fair when the expected gain is $0$, so this game is **not** fair; a fee of ₹3.50 would make it fair.
+
+? Mean of a discrete random variable? :: $E(X) = \sum x_ip_i$.
+? Quick formula for the variance? :: $E(X^2) - [E(X)]^2$.
+? Conditions on a probability distribution? :: $p_i \geq 0$ and $\sum p_i = 1$.
+
+! exam | What the exam asks
+- The distribution of the number of heads, doublets, kings, defectives.
+- Mean and variance from a table; an unknown $k$ in the table.
+
+! recap | One-minute revision
+- $p_i \geq 0$, $\sum p_i = 1$.
+- $\mu = \sum x_ip_i$; $\sigma^2 = \sum x_i^2p_i - \mu^2$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 16 (the full PDF is linked on the subject page)
+& R. S. Aggarwal, Senior Secondary School Mathematics for Class 12, the chapter on probability distributions
