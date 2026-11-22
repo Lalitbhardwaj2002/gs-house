@@ -1,0 +1,82 @@
+@en
+# Line, surface and volume integrals; integral theorems
+
+> Three theorems turn an integral over a boundary into an integral over what it encloses: Green (a plane curve and its region), Stokes (a curve and a surface spanning it) and Gauss (a closed surface and its volume). Conservative fields have path-independent line integrals.
+
+## The three theorems
+
+! note | Green, Gauss and Stokes
+- **Green** (plane region $R$ bounded by a closed curve $C$, anticlockwise):
+$$\begin{aligned} &\oint_C (M\,dx + N\,dy) \\ &= \iint_R \left(\frac{\partial N}{\partial x} - \frac{\partial M}{\partial y}\right)dx\,dy. \end{aligned}$$
+- **Gauss divergence** (closed surface $S$ enclosing volume $V$, outward normal):
+$$\iiint_V \nabla \cdot \vec{F}\,dV = \iint_S \vec{F} \cdot \hat{n}\,dS.$$
+- **Stokes** (open surface $S$ with boundary curve $C$):
+$$\oint_C \vec{F} \cdot d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot \hat{n}\,dS.$$
+
+! check | Conditions added
+The fields and their first partial derivatives must be continuous on the region (and on its boundary); the curves and surfaces piecewise smooth. In Stokes' theorem the direction round $C$ and the side of $S$ (the normal $\hat{n}$) must agree by the right-hand rule.
+
+^ data/net/maths/fig/thm-green.svg | Green: plane region $R$ inside the curve $C$
+^ data/net/maths/fig/thm-stokes.svg | Stokes: open surface with boundary $C$
+^ data/net/maths/fig/thm-gauss.svg | Gauss: closed surface enclosing $V$
+
+! addon | Line and surface integrals
+Work $= \int_C \vec{F} \cdot d\vec{r} = \int(F_1\,dx + F_2\,dy + F_3\,dz)$ (circulation if $C$ is closed). $\vec{F}$ is **conservative** $\iff \operatorname{curl}\vec{F} = \vec{0} \iff \vec{F} = \nabla\phi \iff$ the line integral depends only on the end points (zero round every closed curve). Flux $= \iint_S \vec{F} \cdot \hat{n}\,dS$; projecting on the $xy$-plane, $dS = \frac{dx\,dy}{\lvert \hat{n} \cdot \hat{k} \rvert}$. Area enclosed by $C$: $\frac{1}{2}\oint(x\,dy - y\,dx)$.
+
+! check | A condition added
+"$\operatorname{curl}\vec{F} = \vec{0} \Rightarrow \vec{F} = \nabla\phi$" needs the region to be simply connected (no holes the curves can wind round), e.g. all of space.
+
+! example | Question IT1 — standard (Gauss)
+Evaluate $\iint_S \vec{F} \cdot \hat{n}\,dS$ for $\vec{F} = 4xz\hat{i} - y^2\hat{j} + yz\hat{k}$ over the cube $0 \leq x, y, z \leq 1$.
+**Solution.** $\nabla \cdot \vec{F} = 4z - 2y + y = 4z - y$.
+$$\begin{aligned} &\text{Flux} \\ &= \int_0^1\!\!\int_0^1\!\!\int_0^1 (4z - y)\,dx\,dy\,dz \\ &= 4 \cdot \tfrac{1}{2} - \tfrac{1}{2} \\ &= \boxed{\tfrac{3}{2}}. \end{aligned}$$
+
+! example | Question IT2 — standard (Green)
+Evaluate $\oint_C (x^2 - 2xy)\,dx + (x^2y + 3)\,dy$ round the square with vertices $(0, 0), (1, 0), (1, 1), (0, 1)$.
+**Solution.** $M = x^2 - 2xy$, $N = x^2y + 3$: $N_x - M_y = 2xy + 2x$. $\iint(2xy + 2x)\,dx\,dy = 2 \cdot \frac{1}{4} + 2 \cdot \frac{1}{2} = \boxed{\frac{3}{2}}$.
+
+! example | Question IT3 — standard (Gauss, quick)
+Evaluate $\iint_S \vec{r} \cdot \hat{n}\,dS$ over the sphere $x^2 + y^2 + z^2 = a^2$.
+**Solution.** $\nabla \cdot \vec{r} = 3$, so the integral $= 3V = 3 \cdot \frac{4}{3}\pi a^3 = \boxed{4\pi a^3}$.
+
+! example | Question IT4 — standard (conservative field)
+Show that $\vec{F} = (2xy + z^3)\hat{i} + x^2\hat{j} + 3xz^2\hat{k}$ is conservative and find the work done from $(1, -2, 1)$ to $(3, 1, 4)$.
+**Solution.** $\operatorname{curl}\vec{F} = (0 - 0)\hat{i} - (3z^2 - 3z^2)\hat{j} + (2x - 2x)\hat{k} = \vec{0}$. Potential $\phi = x^2y + xz^3$ ($\nabla\phi = \vec{F}$). Work $= \phi(3, 1, 4) - \phi(1, -2, 1) = (9 + 192) - (-2 + 1) = \boxed{202}$.
+
+! trick | Shortcut / time-saver
+$\operatorname{curl}\vec{F} = \vec{0} \Rightarrow$ every closed line integral is $0$ (Stokes). $\operatorname{div}\vec{F} = 0 \Rightarrow$ flux through every closed surface is $0$ (Gauss). For a closed surface try Gauss first; for a closed curve try Green/Stokes first.
+
+! check | Conditions added
+Both statements need $\vec{F}$ smooth everywhere inside the closed surface, or on a surface spanning the closed curve. $\vec{F} = \frac{\vec{r}}{r^3}$ has $\nabla \cdot \vec{F} = 0$ for $r \neq 0$, yet its flux through any sphere about the origin is $4\pi$; $\vec{F} = \frac{-y\hat{i} + x\hat{j}}{x^2 + y^2}$ has curl $\vec{0}$, yet its circulation round the unit circle is $2\pi$.
+
+## What it means
+
+- **One idea, three dimensions**: the integral of a "derivative" (curl or divergence) over a region equals the integral of the field over the region's boundary, like $\int_a^b f'(x)\,dx = f(b) - f(a)$.
+- **Green is Stokes in the plane**: take $\vec{F} = M\hat{i} + N\hat{j}$ and $\hat{n} = \hat{k}$; then $(\nabla \times \vec{F}) \cdot \hat{k} = N_x - M_y$.
+- **Finding a potential**: integrate $F_1$ in $x$, then add whatever terms of $F_2$ (in $y$) and $F_3$ (in $z$) are still missing.
+
+! example | Example 1 — area by Green's theorem
+Find the area of the ellipse $x = a\cos t$, $y = b\sin t$ by $\frac{1}{2}\oint(x\,dy - y\,dx)$.
+**Solution.** $\frac{1}{2}\int_0^{2\pi}(ab\cos^2 t + ab\sin^2 t)\,dt = \frac{1}{2} \cdot ab \cdot 2\pi = \boxed{\pi ab}$.
+
+! example | Example 2 — flux of a constant field
+Find the flux of $\vec{F} = \hat{k}$ through any closed surface.
+**Solution.** $\nabla \cdot \vec{F} = 0$, so by Gauss the flux is $\boxed{0}$ (what enters at the bottom leaves at the top).
+
+? Green's theorem? :: $\oint_C (M\,dx + N\,dy) = \iint_R (N_x - M_y)\,dx\,dy$.
+? Gauss divergence theorem? :: $\iiint_V \nabla \cdot \vec{F}\,dV = \iint_S \vec{F} \cdot \hat{n}\,dS$.
+? Stokes' theorem? :: $\oint_C \vec{F} \cdot d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot \hat{n}\,dS$.
+? $\iint_S \vec{r} \cdot \hat{n}\,dS$ over a closed surface? :: $3V$.
+
+! exam | What the exam asks
+- Flux through cubes and spheres by Gauss; circulation by Green or Stokes.
+- Conservative fields: test the curl, find the potential, the work done.
+- Areas by $\frac{1}{2}\oint(x\,dy - y\,dx)$.
+
+! recap | One-minute revision
+- Green: $\oint(M\,dx + N\,dy) = \iint(N_x - M_y)$; Gauss: $\iiint_V\nabla\cdot\vec{F} = \iint_S\vec{F}\cdot\hat{n}$; Stokes: $\oint\vec{F}\cdot d\vec{r} = \iint(\nabla\times\vec{F})\cdot\hat{n}$.
+- Conservative $\iff$ curl $= \vec{0}$ $\iff$ $\vec{F} = \nabla\phi$; work $= \phi(B) - \phi(A)$.
+- $\iint\vec{r}\cdot\hat{n}\,dS = 3V$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 14 (the full PDF is linked on the subject page)
+& M. R. Spiegel, Vector Analysis (Schaum's Outline), chapters 5 and 6

@@ -1,0 +1,97 @@
+@en
+# Gradient, divergence and curl
+
+> The operator $\nabla$ acting on a scalar gives the gradient (normal to level surfaces, direction of fastest increase); dotted with a vector field it gives the divergence (outflow per unit volume); crossed with it, the curl (rotation). A small table of identities and of results for $\vec{r}$ and $r$ answers most questions.
+
+## The operator $\nabla$
+
+! note | Gradient, divergence and curl
+^ data/net/maths/fig/grad-normal.svg | $\nabla\phi$ at $P$ is normal to the level surface $\phi = c_1$ through $P$ and points towards the higher level $\phi = c_2$
+$\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z}$.
+- $\operatorname{grad}\phi = \nabla\phi$ (vector). It is **normal** to the level surface $\phi = c$; unit normal $\frac{\nabla\phi}{\lvert \nabla\phi \rvert}$.
+- **Directional derivative** along $\hat{e}$: $\nabla\phi \cdot \hat{e}$; greatest in the direction of $\nabla\phi$, with value $\lvert \nabla\phi \rvert$.
+- Angle between surfaces: $\cos\theta = \frac{\nabla\phi_1 \cdot \nabla\phi_2}{\lvert \nabla\phi_1 \rvert\lvert \nabla\phi_2 \rvert}$; orthogonal if $\nabla\phi_1 \cdot \nabla\phi_2 = 0$.
+- $\operatorname{div}\vec{f} = \nabla \cdot \vec{f} = \frac{\partial f_1}{\partial x} + \frac{\partial f_2}{\partial y} + \frac{\partial f_3}{\partial z}$ (scalar); **solenoidal** if $0$.
+- $\operatorname{curl}\vec{f} = \nabla \times \vec{f} = \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \partial_x & \partial_y & \partial_z \\ f_1 & f_2 & f_3 \end{vmatrix}$; **irrotational** if $\vec{0}$.
+
+! check | Conditions added
+The unit normal and the angle between surfaces need $\nabla\phi \neq \vec{0}$ at the point; the angle between surfaces is taken at a common point, and the acute angle uses $\lvert \nabla\phi_1 \cdot \nabla\phi_2 \rvert$. $\hat{e}$ in the directional derivative must be a **unit** vector.
+
+! note | Standard results
+- $\nabla(fg) = f\nabla g + g\nabla f$; $\nabla\frac{f}{g} = \frac{g\nabla f - f\nabla g}{g^2}$.
+- With $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$, $r = \lvert \vec{r} \rvert$: $\nabla r = \frac{\vec{r}}{r}$; $\nabla f(r) = f'(r)\frac{\vec{r}}{r}$; $\nabla r^n = nr^{n-2}\vec{r}$; $\nabla\frac{1}{r} = -\frac{\vec{r}}{r^3}$; $\nabla\log r = \frac{\vec{r}}{r^2}$; $\nabla f(r) \times \vec{r} = \vec{0}$; $\operatorname{div}(r^n\vec{r}) = (n + 3)r^n$; $\nabla^2 r^n = n(n + 1)r^{n-2}$.
+- $\nabla \cdot (\phi\vec{a}) = \nabla\phi \cdot \vec{a} + \phi\nabla \cdot \vec{a}$; $\nabla \times (\phi\vec{a}) = \nabla\phi \times \vec{a} + \phi\nabla \times \vec{a}$; $\nabla \cdot (\vec{a} \times \vec{b}) = \vec{b} \cdot (\nabla \times \vec{a}) - \vec{a} \cdot (\nabla \times \vec{b})$; $\nabla \times (\vec{a} \times \vec{b}) = (\vec{b} \cdot \nabla)\vec{a} - (\vec{a} \cdot \nabla)\vec{b} + \vec{a}(\nabla \cdot \vec{b}) - \vec{b}(\nabla \cdot \vec{a})$.
+- $\operatorname{div}\operatorname{grad}\phi = \nabla^2\phi$; $\operatorname{curl}\operatorname{grad}\phi = \vec{0}$; $\operatorname{div}\operatorname{curl}\vec{a} = 0$. Harmonic: $\nabla^2 f = 0$.
+- $\operatorname{grad}(\vec{r} \cdot \vec{a}) = \vec{a}$; $\operatorname{grad}[\vec{r}\ \vec{a}\ \vec{b}] = \vec{a} \times \vec{b}$; $(\vec{a} \cdot \nabla)\vec{r} = \vec{a}$ ($\vec{a}$ constant).
+
+! check | Conditions added
+$\nabla\frac{f}{g}$ needs $g \neq 0$. The results for $r$ hold for $r \neq 0$. $\operatorname{curl}\operatorname{grad}\phi = \vec{0}$ and $\operatorname{div}\operatorname{curl}\vec{a} = 0$ need continuous second partial derivatives (so that mixed partials are equal). In the last line, $\vec{a}$ and $\vec{b}$ are constant vectors.
+
+! example | Question G1 — from the notes (11/03/26)
+If $f = 3x^2y - y^3z^2$, find $\operatorname{grad} f$ at $(1, -2, -1)$.
+**Solution.** $\nabla f = 6xy\,\hat{i} + (3x^2 - 3y^2z^2)\hat{j} - 2y^3z\,\hat{k}$. At $(1, -2, -1)$: $6(1)(-2) = -12$; $3 - 3 \cdot 4 \cdot 1 = -9$; $-2(-8)(-1) = -16$. $\nabla f = \boxed{-12\hat{i} - 9\hat{j} - 16\hat{k}}$.
+
+! example | Question G2 — LT 2025, from the notes
+If $\phi = x^2y + y^2x + z^2$, find $\nabla\phi$ at $(1, 1, 1)$.
+**Solution.** $\nabla\phi = (2xy + y^2)\hat{i} + (x^2 + 2xy)\hat{j} + 2z\hat{k} = \boxed{3\hat{i} + 3\hat{j} + 2\hat{k}}$.
+
+! example | Question G3 — from the notes (unit normal)
+Find the unit normal to the surface $x^2y + 2xz = 4$ at $(2, -2, 3)$.
+**Solution.** $\nabla f = (2xy + 2z)\hat{i} + x^2\hat{j} + 2x\hat{k} = -2\hat{i} + 4\hat{j} + 4\hat{k}$; $\lvert \nabla f \rvert = 6$. Unit normal $= \boxed{-\frac{1}{3}\hat{i} + \frac{2}{3}\hat{j} + \frac{2}{3}\hat{k}}$.
+
+! example | Question G4 — from the notes (directional derivative)
+Find the directional derivative of $f = x^2yz + 4xz^2$ at $(1, -2, -1)$ in the direction $2\hat{i} - \hat{j} - 2\hat{k}$.
+**Solution.** $\nabla f = (2xyz + 4z^2)\hat{i} + x^2z\hat{j} + (x^2y + 8xz)\hat{k} = 8\hat{i} - \hat{j} - 10\hat{k}$; $\hat{e} = \frac{2\hat{i} - \hat{j} - 2\hat{k}}{3}$. $\nabla f \cdot \hat{e} = \frac{16 + 1 + 20}{3} = \boxed{\frac{37}{3}}$.
+
+! example | Question G5 — from the notes
+Prove: (a) $\nabla r = \frac{\vec{r}}{r}$, (b) $\nabla r^n = nr^{n-2}\vec{r}$, (c) $\nabla\log r = \frac{\vec{r}}{r^2}$, (d) $\operatorname{grad}(\vec{r} \cdot \vec{a}) = \vec{a}$, (e) $(\vec{a} \cdot \nabla)\vec{r} = \vec{a}$.
+**Solution.** (a) $r^2 = x^2 + y^2 + z^2 \Rightarrow \frac{\partial r}{\partial x} = \frac{x}{r}$ etc., so $\nabla r = \frac{x\hat{i} + y\hat{j} + z\hat{k}}{r} = \frac{\vec{r}}{r}$. (b) $\nabla r^n = nr^{n-1}\nabla r = nr^{n-2}\vec{r}$. (c) $\nabla\log r = \frac{1}{r}\nabla r = \frac{\vec{r}}{r^2}$. (d) $\vec{r} \cdot \vec{a} = a_1x + a_2y + a_3z$, whose gradient is $(a_1, a_2, a_3) = \vec{a}$. (e) $(\vec{a} \cdot \nabla)\vec{r} = a_1\frac{\partial\vec{r}}{\partial x} + a_2\frac{\partial\vec{r}}{\partial y} + a_3\frac{\partial\vec{r}}{\partial z} = a_1\hat{i} + a_2\hat{j} + a_3\hat{k} = \vec{a}$.
+
+! example | Question G6 — LT 2025, from the notes
+If $\vec{A} = x^2yz\,\hat{i} - 2xz^3\hat{j} + xz^2\hat{k}$ and $\vec{B} = 2z\hat{i} + y\hat{j} - x^2\hat{k}$, find $\frac{\partial^2}{\partial x\partial y}(\vec{A} \times \vec{B})$ at $(1, 0, -2)$.
+**Solution.** Expanding the determinant:
+$$\begin{aligned} &\vec{A} \times \vec{B} = (2x^3z^3 - xyz^2)\hat{i} \\ &\quad + (x^4yz + 2xz^3)\hat{j} \\ &\quad + (x^2y^2z + 4xz^4)\hat{k}. \end{aligned}$$
+$\frac{\partial}{\partial y}$: $-xz^2\hat{i} + x^4z\hat{j} + 2x^2yz\hat{k}$; then $\frac{\partial}{\partial x}$: $-z^2\hat{i} + 4x^3z\hat{j} + 4xyz\hat{k}$. At $(1, 0, -2)$: $\boxed{-4\hat{i} - 8\hat{j}}$.
+
+! example | Question G7 — standard
+Find $\operatorname{div}\vec{F}$ and $\operatorname{curl}\vec{F}$ for $\vec{F} = xy\hat{i} + yz\hat{j} + zx\hat{k}$.
+**Solution.** $\operatorname{div}\vec{F} = y + z + x$.
+$$\begin{aligned} &\operatorname{curl}\vec{F} \\ &= \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ \partial_x & \partial_y & \partial_z \\ xy & yz & zx \end{vmatrix} \\ &= (0 - y)\hat{i} - (z - 0)\hat{j} \\ &\quad + (0 - x)\hat{k} \\ &= \boxed{-y\hat{i} - z\hat{j} - x\hat{k}}. \end{aligned}$$
+
+! trick | Shortcut / time-saver
+$\operatorname{div}\vec{r} = 3$, $\operatorname{curl}\vec{r} = \vec{0}$; $r^n\vec{r}$ is solenoidal iff $n = -3$; $\nabla^2 r^n = 0$ iff $n = 0$ or $-1$ ($\frac{1}{r}$ is harmonic); every $f(r)\vec{r}$ is irrotational; for $\vec{F} = \vec{\omega} \times \vec{r}$: $\operatorname{curl}\vec{F} = 2\vec{\omega}$.
+
+! check | Conditions added
+In the shortcut $\vec{\omega}$ is a constant vector, $f$ is differentiable, and the results for $r^n$ hold for $r \neq 0$.
+
+## What it means
+
+- **Gradient**: the vector of partial derivatives points uphill, its length is the steepest slope, and it is perpendicular to the contour (level surface) through the point.
+- **Divergence**: net outflow per unit volume; $\nabla \cdot \vec{r} = 3$ says the field $\vec{r}$ spreads out equally in all directions.
+- **Curl**: twice the local angular velocity; the rotation field $\vec{\omega} \times \vec{r}$ has curl $2\vec{\omega}$.
+
+! example | Example 1 — the angle between two surfaces
+Find the angle between $x^2 + y^2 + z^2 = 9$ and $z = x^2 + y^2 - 3$ at $(2, -1, 2)$.
+**Solution.** $\nabla\phi_1 = (4, -2, 4)$, $\nabla\phi_2 = (4, -2, -1)$ (for $x^2 + y^2 - z - 3 = 0$). $\cos\theta = \frac{16 + 4 - 4}{6\sqrt{21}} = \boxed{\frac{8}{3\sqrt{21}}}$.
+
+! example | Example 2 — a solenoidal field
+For what $a$ is $\vec{F} = (x + 3y)\hat{i} + (y - 2z)\hat{j} + (x + az)\hat{k}$ solenoidal?
+**Solution.** $\nabla \cdot \vec{F} = 1 + 1 + a = 0 \Rightarrow \boxed{a = -2}$.
+
+? Unit normal to the surface $\phi = c$? :: $\frac{\nabla\phi}{\lvert \nabla\phi \rvert}$.
+? Maximum directional derivative of $\phi$? :: $\lvert \nabla\phi \rvert$, in the direction of $\nabla\phi$.
+? $\operatorname{div}(r^n\vec{r})$? :: $(n + 3)r^n$; zero for $n = -3$.
+? $\operatorname{curl}\operatorname{grad}\phi$ and $\operatorname{div}\operatorname{curl}\vec{a}$? :: $\vec{0}$ and $0$.
+
+! exam | What the exam asks
+- Gradients, unit normals, directional derivatives (LT 2025).
+- Divergence and curl; solenoidal and irrotational fields.
+- Identities with $\nabla$ and results for $\vec{r}$, $r^n$.
+
+! recap | One-minute revision
+- $\nabla\phi$ normal; directional derivative $\nabla\phi \cdot \hat{e}$, max $\lvert\nabla\phi\rvert$.
+- $\nabla r^n = nr^{n-2}\vec{r}$; $\nabla \cdot (r^n\vec{r}) = (n + 3)r^n$; $\nabla^2 r^n = n(n + 1)r^{n-2}$.
+- $\operatorname{curl}\operatorname{grad} = \vec{0}$, $\operatorname{div}\operatorname{curl} = 0$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 14 (the full PDF is linked on the subject page)
+& M. R. Spiegel, Vector Analysis (Schaum's Outline), chapter 4

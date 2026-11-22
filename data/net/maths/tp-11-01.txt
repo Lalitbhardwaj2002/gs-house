@@ -1,0 +1,84 @@
+@en
+# Points and straight lines
+
+> Distance, section and area formulas for points; the five standard forms of a straight line; the angle between two lines, the distance of a point from a line, and the image of a point in a line.
+
+## Points
+
+! addon | Basic formulas
+Distance $PQ = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. Section formula (ratio $m : n$): $\left(\frac{mx_2 + nx_1}{m + n}, \frac{my_2 + ny_1}{m + n}\right)$ (external: $m - n$). Centroid $\left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3}\right)$; incentre $\left(\frac{ax_1 + bx_2 + cx_3}{a + b + c}, \ldots\right)$. Area of a triangle $= \frac{1}{2}\lvert x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \rvert$.
+
+! check | Conditions added
+For the external division the formula is $\left(\frac{mx_2 - nx_1}{m - n}, \frac{my_2 - ny_1}{m - n}\right)$ with $m \neq n$. In the incentre, $a$, $b$, $c$ are the lengths of the sides opposite the vertices $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$. Three points are collinear exactly when the area formula gives $0$.
+
+## Forms of a straight line
+
+! note | Forms of a straight line
+^ data/net/maths/fig/line-forms.svg | the line with intercepts $a$ and $b$, and the perpendicular $p$ from the origin at angle $\alpha$
+- Slope–intercept: $y = mx + c$ ($m = \tan\theta$).
+- Point–slope: $y - y_1 = m(x - x_1)$; two-point: $\frac{y - y_1}{y_2 - y_1} = \frac{x - x_1}{x_2 - x_1}$.
+- Intercept form: $\frac{x}{a} + \frac{y}{b} = 1$.
+- Normal form: $x\cos\alpha + y\sin\alpha = p$ ($p$ = perpendicular from the origin, $\alpha$ its angle).
+- General: $ax + by + c = 0$, slope $-\frac{a}{b}$.
+
+! check | Conditions added
+$y = mx + c$ cannot describe a vertical line ($x = k$); the two-point form needs $x_1 \neq x_2$ and $y_1 \neq y_2$ as written (otherwise the line is $x = x_1$ or $y = y_1$); the intercept form needs a line that cuts both axes away from the origin ($a, b \neq 0$: not through the origin and not parallel to an axis); the slope $-\frac{a}{b}$ needs $b \neq 0$; in the normal form $p \geq 0$.
+
+## Angle, distance, image
+
+! note | Angle, distance, image
+^ data/net/maths/fig/line-image.svg | the perpendicular distance $d$ from $P(x_1, y_1)$ to $ax + by + c = 0$, the foot $M$ and the image $P'$
+- Angle between lines: $\tan\theta = \left\lvert \frac{m_1 - m_2}{1 + m_1m_2} \right\rvert$; parallel: $m_1 = m_2$; perpendicular: $m_1m_2 = -1$.
+- Distance of $(x_1, y_1)$ from $ax + by + c = 0$: $d = \frac{\lvert ax_1 + by_1 + c \rvert}{\sqrt{a^2 + b^2}}$.
+- Distance between parallel lines $ax + by + c_1 = 0$, $ax + by + c_2 = 0$: $\frac{\lvert c_1 - c_2 \rvert}{\sqrt{a^2 + b^2}}$.
+- Image of $(x_1, y_1)$ in $ax + by + c = 0$: $\frac{\alpha - x_1}{a} = \frac{\beta - y_1}{b} = \frac{-2(ax_1 + by_1 + c)}{a^2 + b^2}$ (foot of the perpendicular: replace $-2$ by $-1$).
+- Three lines are concurrent iff
+$$\begin{vmatrix} a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \\ a_3 & b_3 & c_3 \end{vmatrix} = 0.$$
+
+! check | Conditions added
+The angle formula needs $m_1m_2 \neq -1$ (otherwise the lines are perpendicular) and gives the acute angle; for a vertical line use $\theta = 90° - \tan^{-1}\lvert m \rvert$ directly. The image formula as written needs $a, b \neq 0$: if $a = 0$ read it as $\alpha = x_1$, if $b = 0$ as $\beta = y_1$. The determinant test means concurrent **or parallel**: the determinant is also $0$ for three parallel lines, which have no common point.
+
+! example | Question L1 — standard
+Find the distance of $(3, -5)$ from $3x - 4y - 26 = 0$, and the image of $(1, 2)$ in $x - y + 3 = 0$.
+**Solution.** $d = \frac{\lvert 9 + 20 - 26 \rvert}{5} = \boxed{\frac{3}{5}}$. Image: $\frac{\alpha - 1}{1} = \frac{\beta - 2}{-1} = \frac{-2(1 - 2 + 3)}{2} = -2 \Rightarrow \alpha = -1$, $\beta = 4$. Image $\boxed{(-1, 4)}$.
+
+! example | Question L2 — standard
+Find the angle between $y = 3x + 1$ and $y = \frac{1}{2}x - 2$.
+**Solution.** $\tan\theta = \left\lvert \frac{3 - \frac{1}{2}}{1 + \frac{3}{2}} \right\rvert = 1 \Rightarrow \boxed{\theta = 45°}$.
+
+## What it means
+
+- **Slope** is the tangent of the angle the line makes with the positive $x$-axis; parallel lines share it, perpendicular slopes multiply to $-1$.
+- **Normal form**: $p$ is the length of the perpendicular from the origin and $\alpha$ the angle that perpendicular makes with the $x$-axis. Dividing $ax + by + c = 0$ by $\pm\sqrt{a^2 + b^2}$ (sign chosen so that the constant goes to the right as a positive $p$) gives it.
+- **Signed distance**: the sign of $ax_1 + by_1 + c$ tells on which side of the line the point lies; two points are on the same side when the signs agree.
+- **Family of lines through the intersection** of $L_1 = 0$ and $L_2 = 0$: $L_1 + \lambda L_2 = 0$.
+
+! example | Example 1 — intercept form
+Find the line through $(2, 3)$ making equal intercepts on the axes.
+**Solution.** $\frac{x}{a} + \frac{y}{a} = 1$ with $2 + 3 = a$: $\boxed{x + y = 5}$. (The line $y = \frac{3}{2}x$ through the origin also has equal, zero, intercepts.)
+
+! example | Example 2 — distance between parallel lines
+Find the distance between $3x + 4y - 7 = 0$ and $6x + 8y + 6 = 0$.
+**Solution.** Write the second as $3x + 4y + 3 = 0$: $d = \frac{\lvert -7 - 3 \rvert}{5} = \boxed{2}$.
+
+! example | Example 3 — area of a triangle
+Find the area of the triangle with vertices $(1, 2)$, $(4, 6)$, $(7, 2)$.
+**Solution.** $\frac{1}{2}\lvert 1(6 - 2) + 4(2 - 2) + 7(2 - 6) \rvert = \frac{1}{2}\lvert 4 - 28 \rvert = \boxed{12}$.
+
+? Distance of $(x_1, y_1)$ from $ax + by + c = 0$? :: $\frac{\lvert ax_1 + by_1 + c \rvert}{\sqrt{a^2 + b^2}}$.
+? Condition for $y = m_1x + c_1$ and $y = m_2x + c_2$ to be perpendicular? :: $m_1m_2 = -1$.
+? Normal form of a line? :: $x\cos\alpha + y\sin\alpha = p$.
+? Image of a point: what replaces $-2$ to get the foot of the perpendicular? :: $-1$.
+
+! exam | What the exam asks
+- Distance, section, centroid and area formulas; collinearity.
+- Equations of lines in the five forms; angle between lines.
+- Distance of a point from a line, between parallel lines; image and foot of the perpendicular; concurrency.
+
+! recap | One-minute revision
+- $\frac{x}{a} + \frac{y}{b} = 1$; $x\cos\alpha + y\sin\alpha = p$; slope of $ax + by + c = 0$ is $-\frac{a}{b}$.
+- $\tan\theta = \left\lvert \frac{m_1 - m_2}{1 + m_1m_2} \right\rvert$; $d = \frac{\lvert ax_1 + by_1 + c \rvert}{\sqrt{a^2 + b^2}}$.
+- Image: $\frac{\alpha - x_1}{a} = \frac{\beta - y_1}{b} = \frac{-2(ax_1 + by_1 + c)}{a^2 + b^2}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapters on coordinates and on the straight line

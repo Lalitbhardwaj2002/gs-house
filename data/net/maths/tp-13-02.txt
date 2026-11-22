@@ -1,0 +1,118 @@
+@en
+# The plane
+
+> A plane is fixed by a point and a normal direction: $a(x - x_1) + b(y - y_1) + c(z - z_1) = 0$. From the normal come the angle between planes, the angle between a line and a plane, distances, images, coplanarity of lines and the shortest distance between skew lines.
+
+## Equations of a plane
+
+! note | The plane
+^ data/net/maths/fig/plane-normal.svg | the plane through $A(x_1, y_1, z_1)$ with normal $\vec{n} = (a, b, c)$; $\vec{AP} \perp \vec{n}$ for every point $P$ of the plane
+- General: $ax + by + cz + d = 0$; $(a, b, c)$ are DRs of the **normal**.
+- Through $(x_1, y_1, z_1)$ with normal DRs $a, b, c$: $a(x - x_1) + b(y - y_1) + c(z - z_1) = 0$; vector $(\vec{r} - \vec{a}) \cdot \vec{n} = 0$.
+- Intercept form: $\frac{x}{a} + \frac{y}{b} + \frac{z}{c} = 1$.
+- Normal form: $\vec{r} \cdot \hat{n} = d$ ($d$ = distance from the origin).
+- Through three points:
+$$\begin{aligned} &\begin{vmatrix} x - x_1 & y - y_1 & z - z_1 \\ x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\ x_3 - x_1 & y_3 - y_1 & z_3 - z_1 \end{vmatrix} \\ &= 0. \end{aligned}$$
+- Through the intersection of two planes: $P_1 + \lambda P_2 = 0$.
+- Coordinate planes: $xy$: $z = 0$; $yz$: $x = 0$; $zx$: $y = 0$.
+
+! check | Conditions added
+The intercept form needs non-zero intercepts (a plane not through the origin and not parallel to an axis). In the normal form $\hat{n}$ is a unit vector and $d \geq 0$. The three points must not be collinear. $P_1 + \lambda P_2 = 0$ gives every plane through the common line except $P_2 = 0$ itself.
+
+## Angles and distances
+
+! note | Angles and distances
+- Angle between planes: $\cos\theta = \frac{\lvert \vec{n}_1 \cdot \vec{n}_2 \rvert}{\lvert \vec{n}_1 \rvert\lvert \vec{n}_2 \rvert}$; parallel if $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$; perpendicular if $a_1a_2 + b_1b_2 + c_1c_2 = 0$.
+- Angle between a line (direction $\vec{b}$) and a plane (normal $\vec{n}$): $\sin\theta = \frac{\lvert \vec{b} \cdot \vec{n} \rvert}{\lvert \vec{b} \rvert\lvert \vec{n} \rvert}$.
+- Distance of $(x_1, y_1, z_1)$ from $ax + by + cz + d = 0$: $\frac{\lvert ax_1 + by_1 + cz_1 + d \rvert}{\sqrt{a^2 + b^2 + c^2}}$; vector: $\frac{\lvert \vec{a} \cdot \vec{n} - d \rvert}{\lvert \vec{n} \rvert}$. Between parallel planes: $\frac{\lvert d_1 - d_2 \rvert}{\sqrt{a^2 + b^2 + c^2}}$.
+- Image of a point in a plane: $\frac{\alpha - x_1}{a} = \frac{\beta - y_1}{b} = \frac{\gamma - z_1}{c} = \frac{-2(ax_1 + by_1 + cz_1 + d)}{a^2 + b^2 + c^2}$.
+- A line parallel to a plane: distance = distance of any point of the line; otherwise they meet (distance $0$).
+
+^ data/net/maths/fig/line-plane.svg | angle between line and plane: $\sin\theta$
+^ data/net/maths/fig/skew-lines.svg | skew lines $L_1$, $L_2$ and their shortest distance
+
+! check | Conditions added
+In the vector distance formula the plane is $\vec{r} \cdot \vec{n} = d$ and $\vec{a}$ is the position vector of the point. Between parallel planes the two equations must be written with the **same** $a, b, c$ (scale one of them first). In the image formula $(\alpha, \beta, \gamma)$ is the image of $(x_1, y_1, z_1)$; with $-1$ in place of $-2$ the same ratios give the foot of the perpendicular.
+
+! note | Coplanarity and shortest distance
+- Lines $\vec{r} = \vec{a}_1 + \lambda\vec{b}_1$, $\vec{r} = \vec{a}_2 + \mu\vec{b}_2$ are coplanar iff $(\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2) = 0$; Cartesian:
+$$\begin{aligned} &\begin{vmatrix} x_2 - x_1 & y_2 - y_1 & z_2 - z_1 \\ a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \end{vmatrix} \\ &= 0. \end{aligned}$$
+- **Skew lines** (neither parallel nor intersecting): shortest distance $d = \frac{\lvert (\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2) \rvert}{\lvert \vec{b}_1 \times \vec{b}_2 \rvert}$.
+- Parallel lines ($\vec{b}_1 = \vec{b}_2 = \vec{b}$): $d = \frac{\lvert (\vec{a}_2 - \vec{a}_1) \times \vec{b} \rvert}{\lvert \vec{b} \rvert}$.
+
+! example | Question PL1 — from the notes (Ex. 14–16)
+For the plane $2x - 3y + 4z - 6 = 0$, find (a) its distance from the origin, (b) the foot of the perpendicular from the origin. Also find the DCs of the unit normal of $\vec{r} \cdot (6\hat{i} - 3\hat{j} - 2\hat{k}) + 1 = 0$.
+**Solution.** (a) $\frac{6}{\sqrt{4 + 9 + 16}} = \boxed{\frac{6}{\sqrt{29}}}$. (b) Foot $= (2k, -3k, 4k)$ with $4k + 9k + 16k = 6 \Rightarrow k = \frac{6}{29}$: $\boxed{\left(\frac{12}{29}, -\frac{18}{29}, \frac{24}{29}\right)}$. Write $\vec{r} \cdot (-6\hat{i} + 3\hat{j} + 2\hat{k}) = 1$, $\lvert \vec{n} \rvert = 7$: DCs $\boxed{-\frac{6}{7}, \frac{3}{7}, \frac{2}{7}}$.
+
+! example | Question PL2 — from the notes (Ex. 17, Ex. 19)
+(a) Find the plane through $(5, 2, -4)$ perpendicular to the line with DRs $2, 3, -1$. (b) Find the plane with intercepts $2, 3, 4$.
+**Solution.** (a) $2(x - 5) + 3(y - 2) - (z + 4) = 0 \Rightarrow \boxed{2x + 3y - z = 20}$. (b) $\frac{x}{2} + \frac{y}{3} + \frac{z}{4} = 1 \Rightarrow \boxed{6x + 4y + 3z = 12}$.
+
+! example | Question PL3 — from the notes (Ex. 18)
+Find the plane through $R(2, 5, -3)$, $S(-2, -3, 5)$, $T(5, 3, -3)$.
+**Solution.** $\vec{RS} = (-4, -8, 8)$, $\vec{RT} = (3, -2, 0)$. $\vec{n} = \vec{RS} \times \vec{RT} = (16, 24, 32) \parallel (2, 3, 4)$. $2(x - 2) + 3(y - 5) + 4(z + 3) = 0 \Rightarrow \boxed{2x + 3y + 4z = 7}$.
+
+! example | Question PL4 — from the notes (Ex. 20)
+Find the plane through the intersection of $\vec{r} \cdot (\hat{i} + \hat{j} + \hat{k}) = 6$ and $\vec{r} \cdot (2\hat{i} + 3\hat{j} + 4\hat{k}) = -5$ and the point $(1, 1, 1)$.
+**Solution.** $(x + y + z - 6) + \lambda(2x + 3y + 4z + 5) = 0$; at $(1, 1, 1)$: $-3 + 14\lambda = 0 \Rightarrow \lambda = \frac{3}{14}$. So $14(x + y + z - 6) + 3(2x + 3y + 4z + 5) = 0 \Rightarrow \boxed{20x + 23y + 26z = 69}$.
+
+! example | Question PL5 — from the notes (Ex. 21)
+Show that $\frac{x + 3}{-3} = \frac{y - 1}{1} = \frac{z - 5}{5}$ and $\frac{x + 1}{-1} = \frac{y - 2}{2} = \frac{z - 5}{5}$ are coplanar.
+**Solution.**
+$$\begin{aligned} &\begin{vmatrix} 2 & 1 & 0 \\ -3 & 1 & 5 \\ -1 & 2 & 5 \end{vmatrix} \\ &= 2(5 - 10) - 1(-15 + 5) + 0 \\ &= -10 + 10 = 0. \end{aligned}$$
+Hence coplanar.
+
+! example | Question PL6 — from the notes (Ex. 22, 23)
+Find the angle between the planes (a) $2x + y - 2z = 5$ and $3x - 6y - 2z = 7$; (b) $3x - 6y + 2z = 7$ and $2x + 2y - 2z = 5$.
+**Solution.** (a) $\cos\theta = \frac{\lvert 6 - 6 + 4 \rvert}{3 \cdot 7} = \boxed{\frac{4}{21}}$. (b) $\cos\theta = \frac{\lvert 6 - 12 - 4 \rvert}{7 \cdot 2\sqrt{3}} = \frac{10}{14\sqrt{3}} = \boxed{\frac{5}{7\sqrt{3}}}$.
+
+! example | Question PL7 — from the notes (Ex. 24, 25)
+(a) Find the distance of $(2, 5, -3)$ from $\vec{r} \cdot (6\hat{i} - 3\hat{j} + 2\hat{k}) = 4$. (b) Find the angle between the line $\frac{x + 1}{2} = \frac{y}{3} = \frac{z - 3}{6}$ and the plane $10x + 2y - 11z = 3$.
+**Solution.** (a) $\frac{\lvert 12 - 15 - 6 - 4 \rvert}{7} = \boxed{\frac{13}{7}}$. (b) $\sin\theta = \frac{\lvert 20 + 6 - 66 \rvert}{7 \cdot 15} = \frac{40}{105} = \boxed{\frac{8}{21}}$.
+
+! example | Question PL8 — from the notes (Ex. 27, 28)
+(a) Find the plane through $(1, -1, 2)$ perpendicular to the planes $2x + 3y - 2z = 5$ and $x + 2y - 3z = 8$. (b) Find the distance of $P(6, 5, 9)$ from the plane through $A(3, -1, 2)$, $B(5, 2, 4)$, $C(-1, -1, 6)$.
+**Solution.** (a) Normal $= (2, 3, -2) \times (1, 2, -3) = (-5, 4, 1)$: $-5(x - 1) + 4(y + 1) + (z - 2) = 0 \Rightarrow \boxed{5x - 4y - z = 7}$. (b) $\vec{AB} = (2, 3, 2)$, $\vec{AC} = (-4, 0, 4)$, $\vec{n} = (12, -16, 12)$, $\vec{AP} = (3, 6, 7)$:
+$$\begin{aligned} &d = \frac{\lvert 36 - 96 + 84 \rvert}{\sqrt{544}} \\ &= \frac{24}{\sqrt{544}} = \boxed{\frac{6}{\sqrt{34}}}. \end{aligned}$$
+
+! example | Question PL9 — standard (skew lines)
+Find the shortest distance between $\vec{r} = (\hat{i} + 2\hat{j} + \hat{k}) + \lambda(\hat{i} - \hat{j} + \hat{k})$ and $\vec{r} = (2\hat{i} - \hat{j} - \hat{k}) + \mu(2\hat{i} + \hat{j} + 2\hat{k})$.
+**Solution.** $\vec{a}_2 - \vec{a}_1 = (1, -3, -2)$; $\vec{b}_1 \times \vec{b}_2 = (-3, 0, 3)$, $\lvert \vec{b}_1 \times \vec{b}_2 \rvert = 3\sqrt{2}$. $d = \frac{\lvert -3 + 0 - 6 \rvert}{3\sqrt{2}} = \frac{9}{3\sqrt{2}} = \boxed{\frac{3}{\sqrt{2}}}$.
+
+! trick | Shortcut / time-saver
+Distance of the origin from $ax + by + cz = d$ is $\frac{\lvert d \rvert}{\sqrt{a^2 + b^2 + c^2}}$; the foot is $\frac{d}{a^2 + b^2 + c^2}(a, b, c)$. A line lies in a plane iff its direction is perpendicular to the normal and one of its points satisfies the plane. Volume of a tetrahedron $= \frac{1}{6}\lvert [\vec{a}\ \vec{b}\ \vec{c}] \rvert$.
+
+! check | A condition added
+In the volume formula $\vec{a}$, $\vec{b}$, $\vec{c}$ are the three edges of the tetrahedron that start from one vertex.
+
+## What it means
+
+- **Normal first**: everything about a plane is in its normal vector; to find a plane, find a point and a normal (often a cross product of two directions in the plane).
+- **Angle between a line and a plane** uses $\sin$, because the angle with the normal is $90° - \theta$.
+- **Skew lines**: the shortest segment is perpendicular to both, so it lies along $\vec{b}_1 \times \vec{b}_2$; the distance is the projection of $\vec{a}_2 - \vec{a}_1$ on that direction.
+
+! example | Example 1 — a parallel plane through a point
+Find the plane through $(1, 0, 1)$ parallel to $x - y + 2z = 5$.
+**Solution.** Same normal: $(x - 1) - y + 2(z - 1) = 0$, i.e. $\boxed{x - y + 2z = 3}$.
+
+! example | Example 2 — distance between parallel planes
+Find the distance between $x + 2y - 2z + 1 = 0$ and $2x + 4y - 4z + 5 = 0$.
+**Solution.** Write the second as $x + 2y - 2z + \frac{5}{2} = 0$: $d = \frac{\lvert 1 - \frac{5}{2} \rvert}{3} = \boxed{\frac{1}{2}}$.
+
+? Distance of $(x_1, y_1, z_1)$ from $ax + by + cz + d = 0$? :: $\frac{\lvert ax_1 + by_1 + cz_1 + d \rvert}{\sqrt{a^2 + b^2 + c^2}}$.
+? Angle between a line and a plane: which function? :: $\sin\theta = \frac{\lvert \vec{b} \cdot \vec{n} \rvert}{\lvert \vec{b} \rvert\lvert \vec{n} \rvert}$.
+? Condition for two lines to be coplanar? :: $(\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2) = 0$.
+? Shortest distance between skew lines? :: $\frac{\lvert (\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2) \rvert}{\lvert \vec{b}_1 \times \vec{b}_2 \rvert}$.
+
+! exam | What the exam asks
+- Plane through a point with a normal, through three points, through the intersection of two planes.
+- Angles between planes and between a line and a plane; distances; images and feet.
+- Coplanar lines and the shortest distance between skew lines.
+
+! recap | One-minute revision
+- $a(x - x_1) + b(y - y_1) + c(z - z_1) = 0$; $P_1 + \lambda P_2 = 0$.
+- $d = \frac{\lvert ax_1 + by_1 + cz_1 + d \rvert}{\sqrt{a^2 + b^2 + c^2}}$; line–plane angle by $\sin$.
+- Skew lines $d = \frac{\lvert(\vec{a}_2 - \vec{a}_1)\cdot(\vec{b}_1 \times \vec{b}_2)\rvert}{\lvert\vec{b}_1 \times \vec{b}_2\rvert}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 13 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 12, Part II, chapter 11 (Three dimensional geometry); the plane is in the older editions (the current one leaves it out)

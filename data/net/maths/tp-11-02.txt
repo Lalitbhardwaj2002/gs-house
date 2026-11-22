@@ -1,0 +1,74 @@
+@en
+# Pair of straight lines
+
+> A homogeneous second-degree equation $ax^2 + 2hxy + by^2 = 0$ is a pair of lines through the origin; the general second-degree equation is a pair of lines exactly when its determinant $\Delta$ vanishes. The angle, the bisectors, the distance between parallel lines and the point of intersection all come from $a$, $h$, $b$, $g$, $f$, $c$.
+
+## Lines through the origin and the general pair
+
+! note | Pair of straight lines (LT 2018, LT 2025)
+^ data/net/maths/fig/pair-lines.svg | the lines $y = m_1x$, $y = m_2x$ and their angle bisectors
+- $ax^2 + 2hxy + by^2 = 0$ is a pair of lines through the origin, $y = m_1x$ and $y = m_2x$, with $m_1 + m_2 = -\frac{2h}{b}$, $m_1m_2 = \frac{a}{b}$.
+- Angle: $\tan\theta = \left\lvert \frac{2\sqrt{h^2 - ab}}{a + b} \right\rvert$; perpendicular iff $a + b = 0$; coincident iff $h^2 = ab$.
+- **Real or imaginary lines?** The slopes $m_1, m_2$ are the roots of $bm^2 + 2hm + a = 0$, whose discriminant is $4(h^2 - ab)$. So $ax^2 + 2hxy + by^2 = 0$ represents
+- two **real and distinct** lines if $h^2 - ab > 0$;
+- two **coincident** lines if $h^2 - ab = 0$;
+- two **imaginary** lines (only the origin is a real point) if $h^2 - ab < 0$.
+Example: $x^2 - 5xy + 6y^2 = 0$: $h^2 - ab = \frac{25}{4} - 6 > 0$, real lines $x = 2y$, $x = 3y$. $x^2 + xy + y^2 = 0$: $\frac{1}{4} - 1 < 0$, imaginary lines.
+- Pair of angle bisectors: $\frac{x^2 - y^2}{a - b} = \frac{xy}{h}$.
+- The general equation $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$ is a pair of lines iff $\Delta = abc + 2fgh - af^2 - bg^2 - ch^2 = 0$.
+- **Distance between a pair of parallel lines** ($\Delta = 0$, $h^2 = ab$): both forms give the same value —
+$$\begin{aligned} &d = 2\sqrt{\frac{g^2 - ac}{a(a + b)}} \\ &\text{or} \\ &d = 2\sqrt{\frac{f^2 - bc}{b(a + b)}}. \end{aligned}$$
+Use the first when $a \neq 0$, the second when $b \neq 0$. Example: $x^2 + 4xy + 4y^2 + 3x + 6y - 4 = 0$ is $(x + 2y + 4)(x + 2y - 1) = 0$; $a = 1$, $b = 4$, $g = \frac{3}{2}$, $c = -4$: $d = 2\sqrt{\frac{9/4 + 4}{5}} = 2\sqrt{\frac{5}{4}} = \sqrt{5}$; check: $\frac{\lvert 4 - (-1) \rvert}{\sqrt{1 + 4}} = \sqrt{5}$ ✓.
+- Point of intersection: $\left(\frac{hf - bg}{ab - h^2}, \frac{gh - af}{ab - h^2}\right)$.
+
+! check | Conditions added
+The slope formulas need $b \neq 0$ (if $b = 0$ one of the lines is the $y$-axis). The bisector equation needs $h \neq 0$ (if $h = 0$ the bisectors are the axes, $xy = 0$) and, when $a = b$, reads $h(x^2 - y^2) = 0$. The point of intersection needs $ab \neq h^2$ (the lines not parallel).
+
+! example | Question PL1 — LT 2018
+Find the angle between the lines $y^2 - xy - 6x^2 = 0$.
+**Solution.** $a = -6$, $2h = -1 \Rightarrow h = -\frac{1}{2}$, $b = 1$.
+$$\begin{aligned} &\tan\theta = \left\lvert \frac{2\sqrt{\frac{1}{4} + 6}}{-5} \right\rvert \\ &= \frac{2 \cdot \frac{5}{2}}{5} \\ &= 1 \\ &\Rightarrow \boxed{\theta = 45°}. \end{aligned}$$
+(Factor check: $(y - 3x)(y + 2x) = 0$.)
+
+! example | Question PL2 — standard
+Show that $x^2 - 5xy + 4y^2 + x + 2y - 2 = 0$ represents a pair of lines.
+**Solution.** $a = 1$, $h = -\frac{5}{2}$, $b = 4$, $g = \frac{1}{2}$, $f = 1$, $c = -2$.
+$$\begin{aligned} &\Delta = 1 \cdot 4 \cdot (-2) \\ &\quad + 2 \cdot 1 \cdot \tfrac{1}{2} \cdot \left(-\tfrac{5}{2}\right) - 1 \cdot 1 \\ &\quad - 4 \cdot \tfrac{1}{4} - (-2) \cdot \tfrac{25}{4} \\ &= -8 - \tfrac{5}{2} - 1 - 1 + \tfrac{25}{2} \\ &= 0 \ ✓. \end{aligned}$$
+
+! addon | Homogenisation
+The lines joining the origin to the points where $S = 0$ meets $lx + my = n$: make $S$ homogeneous using $\left(\frac{lx + my}{n}\right)$. They are perpendicular iff (coefficient of $x^2$) + (coefficient of $y^2$) $= 0$.
+
+! check | A condition added
+Homogenising needs $n \neq 0$ (the line not through the origin): each first-degree term is multiplied by $\frac{lx + my}{n}$ and the constant by $\left(\frac{lx + my}{n}\right)^2$.
+
+## What it means
+
+- **Why a pair**: a homogeneous quadratic factorises as $b(y - m_1x)(y - m_2x)$, each factor a line through the origin.
+- **$\Delta = 0$** is the condition for a second-degree polynomial to split into two linear factors; it is the determinant $\begin{vmatrix} a & h & g \\ h & b & f \\ g & f & c \end{vmatrix}$.
+- **Angle between the lines** of the general pair is the same as for $ax^2 + 2hxy + by^2 = 0$, since the second-degree terms fix the directions.
+
+! example | Example 1 — the separate lines
+Find the separate equations of $6x^2 - 5xy - 6y^2 = 0$ and the angle between them.
+**Solution.** $(3x + 2y)(2x - 3y) = 0$: $3x + 2y = 0$ and $2x - 3y = 0$. $a + b = 6 - 6 = 0$, so they are $\boxed{\text{perpendicular}}$.
+
+! example | Example 2 — a value of $\lambda$
+For what $\lambda$ does $x^2 + 3xy + 2y^2 + 3x + \lambda y + 1 = 0$ represent a pair of lines? (Short method.)
+**Solution.** $x^2 + 3xy + 2y^2 = (x + y)(x + 2y)$, so try $(x + y + p)(x + 2y + q)$: $p + q = 3$, $pq = 1$, $2p + q = \lambda$. From $p + q = 3$, $pq = 1$: $p = \frac{3 \pm \sqrt{5}}{2}$, so $\lambda = 2p + q = p + 3 = \boxed{\frac{9 \pm \sqrt{5}}{2}}$.
+
+? Condition for $ax^2 + 2hxy + by^2 = 0$ to be perpendicular lines? :: $a + b = 0$.
+? Angle between the lines $ax^2 + 2hxy + by^2 = 0$? :: $\tan\theta = \left\lvert \frac{2\sqrt{h^2 - ab}}{a + b} \right\rvert$.
+? Condition for the general second-degree equation to be a pair of lines? :: $abc + 2fgh - af^2 - bg^2 - ch^2 = 0$.
+? Equation of the bisectors of $ax^2 + 2hxy + by^2 = 0$? :: $\frac{x^2 - y^2}{a - b} = \frac{xy}{h}$.
+
+! exam | What the exam asks
+- Angle between the lines; perpendicular, coincident, real or imaginary.
+- $\Delta = 0$ for a pair; values of a parameter; the separate lines.
+- Distance between parallel lines, point of intersection, bisectors, homogenisation.
+
+! recap | One-minute revision
+- $m_1 + m_2 = -\frac{2h}{b}$, $m_1m_2 = \frac{a}{b}$; $\tan\theta = \left\lvert\frac{2\sqrt{h^2 - ab}}{a + b}\right\rvert$.
+- Pair iff $\Delta = 0$; parallel iff $h^2 = ab$; perpendicular iff $a + b = 0$.
+- Bisectors $\frac{x^2 - y^2}{a - b} = \frac{xy}{h}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapter on equations representing two or more straight lines

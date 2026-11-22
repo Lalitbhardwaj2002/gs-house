@@ -1,0 +1,55 @@
+@en
+# Vector algebra: basics
+
+> A vector has magnitude and direction; vectors add by the triangle (or parallelogram) law and are written in components along $\hat{i}$, $\hat{j}$, $\hat{k}$. Position vectors turn geometry (section formula, centroid) into algebra.
+
+## Vectors, components and the laws of addition
+
+! addon | Basic terms (TGT)
+^ data/net/maths/fig/vec-parallelogram.svg | $\vec{a}$, $\vec{b}$, the diagonal $\vec{a} + \vec{b}$ and the other diagonal $\vec{b} - \vec{a}$
+- A **vector** has magnitude and direction. Position vector of $P$: $\vec{OP}$; displacement $\vec{AB} = \vec{b} - \vec{a}$.
+- Free vector: only magnitude and direction matter. Unit vector $\hat{a} = \frac{\vec{a}}{\lvert \vec{a} \rvert}$.
+- $\vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$: $\lvert \vec{r} \rvert = \sqrt{x^2 + y^2 + z^2}$, DCs $\frac{x}{\lvert \vec{r} \rvert}, \frac{y}{\lvert \vec{r} \rvert}, \frac{z}{\lvert \vec{r} \rvert}$.
+- **Triangle law**: $\vec{AB} + \vec{BC} = \vec{AC}$. **Parallelogram law**: the diagonal from the common tail is $\vec{a} + \vec{b}$; $\lvert \vec{a} + \vec{b} \rvert^2 = a^2 + b^2 + 2ab\cos\theta$.
+- Section formula: $\frac{m\vec{b} + n\vec{a}}{m + n}$. Composition of forces, velocities and accelerations follows the same laws.
+
+! check | Conditions added
+The unit vector needs $\vec{a} \neq \vec{0}$, and so do the direction cosines. In the section formula the point divides $AB$ (position vectors $\vec{a}$, $\vec{b}$) internally in the ratio $m : n$; externally it is $\frac{m\vec{b} - n\vec{a}}{m - n}$. In the parallelogram law $a = \lvert \vec{a} \rvert$, $b = \lvert \vec{b} \rvert$ and $\theta$ is the angle between the vectors.
+
+## What it means
+
+- **Equal vectors** have the same magnitude and direction, wherever they are drawn; that is what "free" means.
+- **Components**: $\vec{a} = a_1\hat{i} + a_2\hat{j} + a_3\hat{k}$; adding vectors adds components, multiplying by a scalar multiplies them. The components $a_1, a_2, a_3$ (or the same non-zero multiple of all three) are direction ratios of $\vec{a}$.
+- **Difference and relative velocity**: $\vec{a} - \vec{b} = \vec{a} + (-\vec{b})$; the velocity of $A$ relative to $B$ is $\vec{v}_A - \vec{v}_B$.
+- **Collinear points**: $A$, $B$, $C$ (with $A \neq C$) are collinear iff $\vec{AB} = \lambda\vec{AC}$ for some scalar $\lambda$.
+- **Centroid** of a triangle with position vectors $\vec{a}$, $\vec{b}$, $\vec{c}$: $\frac{\vec{a} + \vec{b} + \vec{c}}{3}$.
+
+! example | Example 1 — a unit vector and direction cosines
+Find the unit vector along $\vec{a} = 2\hat{i} - \hat{j} + 2\hat{k}$ and its direction cosines.
+**Solution.** $\lvert \vec{a} \rvert = 3$: $\hat{a} = \boxed{\frac{2}{3}\hat{i} - \frac{1}{3}\hat{j} + \frac{2}{3}\hat{k}}$; direction cosines $\frac{2}{3}, -\frac{1}{3}, \frac{2}{3}$.
+
+! example | Example 2 — the resultant of two forces
+Two forces of 3 N and 5 N act at a point at $60°$. Find the magnitude of the resultant.
+**Solution.** $R^2 = 9 + 25 + 2 \cdot 15 \cdot \frac{1}{2} = 49$, $R = \boxed{7\text{ N}}$.
+
+! example | Example 3 — dividing a segment
+Find the point dividing $A(1, 2, 3)$, $B(4, -1, 6)$ in the ratio $2 : 1$ internally.
+**Solution.** $\frac{2(4, -1, 6) + 1(1, 2, 3)}{3} = \boxed{(3, 0, 5)}$.
+
+? Unit vector along $\vec{a}$? :: $\frac{\vec{a}}{\lvert \vec{a} \rvert}$.
+? $\lvert \vec{a} + \vec{b} \rvert^2$? :: $a^2 + b^2 + 2ab\cos\theta$.
+? Position vector of the point dividing $AB$ in the ratio $m : n$? :: $\frac{m\vec{b} + n\vec{a}}{m + n}$.
+? Displacement vector $\vec{AB}$? :: $\vec{b} - \vec{a}$.
+
+! exam | What the exam asks
+- Magnitudes, unit vectors, direction cosines.
+- Resultant of two vectors or forces; collinearity.
+- Section formula and centroid.
+
+! recap | One-minute revision
+- $\vec{AB} = \vec{b} - \vec{a}$; $\hat{a} = \frac{\vec{a}}{\lvert\vec{a}\rvert}$.
+- $\lvert \vec{a} + \vec{b} \rvert^2 = a^2 + b^2 + 2ab\cos\theta$.
+- Section point $\frac{m\vec{b} + n\vec{a}}{m + n}$; centroid $\frac{\vec{a} + \vec{b} + \vec{c}}{3}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 12 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 12, Part II, chapter 10 (Vector algebra)

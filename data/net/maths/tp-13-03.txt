@@ -1,0 +1,184 @@
+@en
+# The Sphere
+
+> A sphere is the set of points at a fixed distance from a centre. Its general equation has $x^2 + y^2 + z^2$ with coefficient 1 and no product terms; a plane cuts it in a circle, touches it when the distance from the centre equals the radius, and two spheres meet in a circle that lies in the plane $S_1 - S_2 = 0$.
+
+## Equations of a sphere
+
+! note | The sphere
+^ data/net/maths/fig/sphere.svg | the sphere with centre $C(x_1, y_1, z_1)$ and radius $r$; $P(x, y, z)$ on it
+**Definition.** Locus of a point $P(x, y, z)$ whose distance from a fixed point $C$ (centre) is constant ($r$, radius).
+$$\begin{aligned} &(x - x_1)^2 + (y - y_1)^2 \\ &\quad + (z - z_1)^2 = r^2 \end{aligned}$$
+Centre at origin: $x^2 + y^2 + z^2 = r^2$.
+**General equation**
+$$\begin{aligned} &x^2 + y^2 + z^2 \\ &\quad + 2ux + 2vy + 2wz + d = 0 \end{aligned}$$
+centre $(-u, -v, -w)$, radius $\sqrt{u^2 + v^2 + w^2 - d}$, where $u = \frac{\text{coeff. of } x}{2}$, $v = \frac{\text{coeff. of } y}{2}$, $w = \frac{\text{coeff. of } z}{2}$.
+^ data/net/maths/fig/sphere-diameter.svg | $AB$ a diameter: the angle $APB$ is a right angle
+**Diameter form.** If $A(x_1, y_1, z_1)$, $B(x_2, y_2, z_2)$ are ends of a diameter, then $\angle APB = 90°$ (angle in a semicircle), so $\vec{AP} \cdot \vec{BP} = 0$:
+$$\begin{aligned} &(x - x_1)(x - x_2) \\ &\quad + (y - y_1)(y - y_2) \\ &\quad + (z - z_1)(z - z_2) = 0. \end{aligned}$$
+**Four-point form.** Put the four points in the general equation and eliminate $u, v, w, d$.
+
+! check | Conditions added
+The general equation is a real sphere only when $u^2 + v^2 + w^2 - d > 0$ (equal to $0$: a point sphere; less: no real points), and only after the coefficients of $x^2$, $y^2$, $z^2$ are made equal to $1$. The four points must not lie in one plane.
+
+! example | Question Sp1
+Find the equation of the sphere whose centre is $(2, -3, 4)$ and radius 5.
+**Solution.**
+$$\begin{aligned} &(x - 2)^2 + (y + 3)^2 + (z - 4)^2 \\ &= 25 \\ &\Rightarrow x^2 - 4x + 4 + y^2 + 6y + 9 \\ &\quad + z^2 - 8z + 16 = 25 \end{aligned}$$
+$$\boxed{\begin{aligned} &x^2 + y^2 + z^2 - 4x \\ &\quad + 6y - 8z + 4 = 0 \end{aligned}}$$
+
+! example | Question Sp2
+Find the centre and radius of the sphere $x^2 + y^2 + z^2 - 4x + 6y + 2z + 5 = 0$.
+**Solution.** Comparing with $x^2 + y^2 + z^2 + 2ux + 2vy + 2wz + d = 0$: $2u = -4$, $2v = 6$, $2w = 2$, $d = 5 \Rightarrow u = -2$, $v = 3$, $w = 1$.
+Centre $(-u, -v, -w) = \boxed{(2, -3, -1)}$, radius $= \sqrt{4 + 9 + 1 - 5} = \sqrt{9} = \boxed{3}$.
+
+! example | Question Sp3
+A sphere passes through the origin $O$ and cuts the axes at $A, B, C$ such that $OA = a$, $OB = b$, $OC = c$. Find its equation.
+**Solution.** Let the sphere be $x^2 + y^2 + z^2 + 2ux + 2vy + 2wz + d = 0$. It passes through $O(0, 0, 0) \Rightarrow d = 0$. $A(a, 0, 0)$: $a^2 + 2ua = 0 \Rightarrow u = -\frac{a}{2}$. Similarly $v = -\frac{b}{2}$, $w = -\frac{c}{2}$.
+$$\boxed{\begin{aligned} &x^2 + y^2 + z^2 \\ &\quad - ax - by - cz = 0 \end{aligned}}$$
+
+! example | Question Sp4
+Find the equation of the sphere whose diameter has end points $(1, -2, 3)$ and $(-2, 3, -1)$.
+**Solution.** Diameter form: $(x - 1)(x + 2) + (y + 2)(y - 3) + (z - 3)(z + 1) = 0 \Rightarrow$
+$$\begin{aligned} &x^2 + x - 2 + y^2 - y - 6 \\ &\quad + z^2 - 2z - 3 = 0 \end{aligned}$$
+$$\boxed{\begin{aligned} &x^2 + y^2 + z^2 \\ &\quad + x - y - 2z - 11 = 0 \end{aligned}}$$
+
+! example | Question Sp5
+Find the equation of the sphere whose centre is $(2, 3, -4)$ and which touches the plane $2x + 6y - 3z + 15 = 0$.
+**Solution.**
+^ data/net/maths/fig/sphere-touch.svg | a sphere touching a plane: the radius is the perpendicular from the centre
+For a sphere touching a plane, radius $=$ perpendicular distance from the centre to the plane:
+$$\begin{aligned} &r = \frac{\lvert 2(2) + 6(3) - 3(-4) + 15 \rvert}{\sqrt{4 + 36 + 9}} \\ &= \frac{49}{7} = 7. \end{aligned}$$
+$(x - 2)^2 + (y - 3)^2 + (z + 4)^2 = 49$
+$$\boxed{\begin{aligned} &x^2 + y^2 + z^2 \\ &\quad - 4x - 6y + 8z - 20 = 0 \end{aligned}}$$
+
+## Circles on a sphere
+
+! note | Intersection of two spheres; sphere through a circle
+^ data/net/maths/fig/sphere-section.svg | a plane cuts the sphere in a circle: centre $N$ (foot of the perpendicular from $C$), radius $\sqrt{R^2 - p^2}$
+**Two spheres** $S_1 = 0$, $S_2 = 0$ meet in a circle. Every common point also satisfies $S_1 - S_2 = 0$:
+$$\begin{aligned} &2(u_1 - u_2)x + 2(v_1 - v_2)y \\ &\quad + 2(w_1 - w_2)z \\ &\quad + d_1 - d_2 = 0, \end{aligned}$$
+which is a plane. So the curve of intersection is the circle $S_1 = 0$, $S_1 - S_2 = 0$.
+**Sphere through a circle** $S = 0$, $P = 0$: $S + \lambda P = 0$ (for every $\lambda$ this is a sphere: the $x^2, y^2, z^2$ coefficients are 1 and there is no $xy, yz, zx$ term). Through the circle $S_1 = 0$, $S_2 = 0$: $S_1 + \lambda S_2 = 0$.
+**Radius of the circle**: $\sqrt{R^2 - p^2}$, $p = CN$ = distance of the centre from the plane; the centre of the circle is $N$, the foot of the perpendicular from $C$.
+
+! check | Conditions added
+Two spheres meet in a real circle only when the distance between their centres lies strictly between $\lvert r_1 - r_2 \rvert$ and $r_1 + r_2$ (and the spheres are not concentric); at either end they touch at one point. $S_1 + \lambda S_2 = 0$ needs $\lambda \neq -1$ (for $\lambda = -1$ it is the plane of the circle) and must be divided by $1 + \lambda$ to have coefficient 1.
+
+! example | Question Sp6
+Find the equation of the sphere through the circle $x^2 + y^2 + z^2 = 9$, $2x + 3y + 4z = 5$ and the point $(1, 2, 3)$.
+**Solution.** Any sphere through the circle: $(x^2 + y^2 + z^2 - 9) + \lambda(2x + 3y + 4z - 5) = 0$. It passes through $(1, 2, 3)$:
+$$\begin{aligned} &(1 + 4 + 9 - 9) \\ &\quad + \lambda(2 + 6 + 12 - 5) = 0 \\ &\Rightarrow 5 + 15\lambda = 0 \\ &\Rightarrow \lambda = -\tfrac{1}{3}. \end{aligned}$$
+$(x^2 + y^2 + z^2 - 9) - \frac{1}{3}(2x + 3y + 4z - 5) = 0 \Rightarrow \boxed{3(x^2 + y^2 + z^2) - 2x - 3y - 4z - 22 = 0}$
+
+! example | Question Sp7
+Find the equation of the sphere through the circle $x^2 + y^2 = a^2$, $z = 0$ and the point $(\alpha, \beta, \gamma)$.
+**Solution.** Write the circle as $x^2 + y^2 + z^2 - a^2 = 0$, $z = 0$. Any sphere through it: $(x^2 + y^2 + z^2 - a^2) + \lambda z = 0$. Through $(\alpha, \beta, \gamma)$: $\alpha^2 + \beta^2 + \gamma^2 - a^2 + \lambda\gamma = 0 \Rightarrow \lambda = -\frac{\alpha^2 + \beta^2 + \gamma^2 - a^2}{\gamma}$.
+$$\boxed{\begin{aligned} &\gamma(x^2 + y^2 + z^2 - a^2) \\ &- (\alpha^2 + \beta^2 + \gamma^2 - a^2)z = 0 \end{aligned}}$$
+
+! check | A condition added
+Sp7 needs $\gamma \neq 0$ (the point not in the plane of the circle).
+
+! example | Question Sp8
+Find the equations of the spheres which pass through the circle $x^2 + y^2 + z^2 = 5$, $x + 2y + 3z = 3$ and touch the plane $4x + 3y = 15$.
+**Solution.** Sphere: $x^2 + y^2 + z^2 + \lambda x + 2\lambda y + 3\lambda z - (3\lambda + 5) = 0$. Centre $\left(-\frac{\lambda}{2}, -\lambda, -\frac{3\lambda}{2}\right)$, radius
+$$\begin{aligned} &r = \sqrt{\tfrac{\lambda^2}{4} + \lambda^2 + \tfrac{9\lambda^2}{4} + 3\lambda + 5} \\ &= \tfrac{1}{2}\sqrt{14\lambda^2 + 12\lambda + 20}. \end{aligned}$$
+Touches $4x + 3y - 15 = 0$: $r = \frac{\lvert -2\lambda - 3\lambda - 15 \rvert}{5} = \lvert \lambda + 3 \rvert$.
+Squaring: $\frac{1}{4}(14\lambda^2 + 12\lambda + 20) = \lambda^2 + 6\lambda + 9 \Rightarrow 10\lambda^2 - 12\lambda - 16 = 0 \Rightarrow 5\lambda^2 - 6\lambda - 8 = 0 \Rightarrow (5\lambda + 4)(\lambda - 2) = 0$.
+$\lambda = -\frac{4}{5}$: $\boxed{5(x^2 + y^2 + z^2) - 4x - 8y - 12z - 13 = 0}$; $\lambda = 2$: $\boxed{x^2 + y^2 + z^2 + 2x + 4y + 6z - 11 = 0}$.
+
+! example | Question Sp9 — LT pre 2025
+Find the equation of the sphere for which the circle $x^2 + y^2 + z^2 + 7y - 2z + 2 = 0$, $2x + 3y + 4z = 8$ is a great circle.
+**Solution.** Sphere through the circle: $x^2 + y^2 + z^2 + 2\lambda x + (7 + 3\lambda)y + (4\lambda - 2)z + (2 - 8\lambda) = 0$. Centre $\left(-\lambda, -\frac{3\lambda + 7}{2}, -(2\lambda - 1)\right)$. For a *great* circle the centre of the sphere lies on the plane:
+$$\begin{aligned} &2(-\lambda) + 3\left(-\tfrac{3\lambda + 7}{2}\right) + 4(1 - 2\lambda) \\ &= 8 \\ &\Rightarrow -\tfrac{29}{2}\lambda = \tfrac{29}{2} \\ &\Rightarrow \lambda = -1. \end{aligned}$$
+$$\boxed{\begin{aligned} &x^2 + y^2 + z^2 \\ &\quad - 2x + 4y - 6z + 10 = 0 \end{aligned}}$$
+
+! example | Question Sp10 — Centre and radius of a circle (standard)
+Find the centre and radius of the circle $x^2 + y^2 + z^2 - 2y - 4z = 11$, $x + 2y + 2z = 15$.
+**Solution.** Sphere: centre $C(0, 1, 2)$, $R = \sqrt{0 + 1 + 4 + 11} = 4$. Distance of $C$ from the plane: $p = \frac{\lvert 0 + 2 + 4 - 15 \rvert}{3} = 3$. Radius of circle $= \sqrt{R^2 - p^2} = \sqrt{16 - 9} = \boxed{\sqrt{7}}$. Centre $N$: foot of perpendicular from $C$: $(0 + t, 1 + 2t, 2 + 2t)$ on the plane $\Rightarrow t + 2 + 4t + 4 + 4t = 15 \Rightarrow t = 1$. Centre $= \boxed{(1, 3, 4)}$.
+
+## Tangent planes, pole and polar
+
+! note | 1. Tangent plane at a point
+The tangent plane to $x^2 + y^2 + z^2 + 2ux + 2vy + 2wz + d = 0$ at a point $(x_1, y_1, z_1)$ of the sphere is
+$$\begin{aligned} &xx_1 + yy_1 + zz_1 \\ &\quad + u(x + x_1) + v(y + y_1) \\ &\quad + w(z + z_1) + d = 0. \end{aligned}$$
+*Rule*: replace $x^2 \to xx_1$, $y^2 \to yy_1$, $z^2 \to zz_1$, $2x \to x + x_1$, $2y \to y + y_1$, $2z \to z + z_1$, keep $d$. (It is the plane through $(x_1, y_1, z_1)$ perpendicular to the radius joining the centre to that point.)
+
+! note | 2. Condition of tangency — steps
+To test whether the plane $lx + my + nz = p$ touches the sphere $x^2 + y^2 + z^2 + 2ux + 2vy + 2wz + d = 0$:
+- (1) Find the centre $C(-u, -v, -w)$ and the radius $r = \sqrt{u^2 + v^2 + w^2 - d}$.
+- (2) Find the perpendicular distance of $C$ from the plane: $\delta = \frac{\lvert -ul - vm - wn - p \rvert}{\sqrt{l^2 + m^2 + n^2}}$.
+- (3) Compare: $\delta = r \Rightarrow$ the plane **touches** the sphere; $\delta < r \Rightarrow$ it cuts it in a circle; $\delta > r \Rightarrow$ it does not meet it.
+- (4) Squaring $\delta = r$ gives the **condition of tangency**: $(ul + vm + wn + p)^2 = (l^2 + m^2 + n^2)(u^2 + v^2 + w^2 - d)$. For $x^2 + y^2 + z^2 = a^2$ this is $p^2 = a^2(l^2 + m^2 + n^2)$.
+- (5) **Point of contact** = foot of the perpendicular from $C$ to the plane: go from $C$ along the normal $(l, m, n)$, i.e. $(x, y, z) = (-u + lt, -v + mt, -w + nt)$, and find $t$ from the plane.
+
+! note | 3. Pole and polar
+The polar plane of $(x_1, y_1, z_1)$ with respect to $x^2 + y^2 + z^2 = a^2$ is $xx_1 + yy_1 + zz_1 = a^2$ (same form as the tangent plane); the point is the pole of the plane.
+
+! example | Question Sp11
+A tangent plane to the sphere $x^2 + y^2 + z^2 = r^2$ makes intercepts $a, b, c$ on the axes. Prove that $a^{-2} + b^{-2} + c^{-2} = r^{-2}$.
+**Solution.** Let $P(x_1, y_1, z_1)$ be the point of contact; then $x_1^2 + y_1^2 + z_1^2 = r^2$ …(1). Tangent plane: $xx_1 + yy_1 + zz_1 = r^2$, i.e.
+$$\frac{x}{r^2/x_1} + \frac{y}{r^2/y_1} + \frac{z}{r^2/z_1} = 1.$$
+Intercepts: $a = \frac{r^2}{x_1}$, $b = \frac{r^2}{y_1}$, $c = \frac{r^2}{z_1} \Rightarrow x_1 = \frac{r^2}{a}$, $y_1 = \frac{r^2}{b}$, $z_1 = \frac{r^2}{c}$. Put in (1): $\frac{r^4}{a^2} + \frac{r^4}{b^2} + \frac{r^4}{c^2} = r^2 \Rightarrow \boxed{a^{-2} + b^{-2} + c^{-2} = r^{-2}}$.
+
+! example | Question Sp12
+Show that the plane $2x - 2y + z + 12 = 0$ touches the sphere $x^2 + y^2 + z^2 - 2x - 4y + 2z - 3 = 0$ and find the point of contact.
+**Solution.**
+^ data/net/maths/fig/sphere-touch.svg | the plane touches the sphere at $P$; $CP = r = 3$
+$u = -1$, $v = -2$, $w = 1$, $d = -3$: centre $C(1, 2, -1)$, $r = \sqrt{1 + 4 + 1 + 3} = 3$. Distance of $C$ from the plane: $\frac{\lvert 2 - 4 - 1 + 12 \rvert}{\sqrt{4 + 4 + 1}} = \frac{9}{3} = 3 = r$. So the plane touches the sphere.
+**Point of contact** = foot of perpendicular from $C$. Line $CP$ has DRs $2, -2, 1$ (normal of plane): $\frac{x - 1}{2} = \frac{y - 2}{-2} = \frac{z + 1}{1} = t \Rightarrow (2t + 1, -2t + 2, t - 1)$. On the plane: $2(2t + 1) - 2(-2t + 2) + (t - 1) + 12 = 0 \Rightarrow 9t + 9 = 0 \Rightarrow t = -1$. Point of contact $\boxed{(-1, 4, -2)}$.
+
+! example | Question Sp13
+Find the pole of the plane $lx + my + nz = p$ with respect to the sphere $x^2 + y^2 + z^2 = a^2$.
+**Solution.** Let the pole be $(x_1, y_1, z_1)$. Its polar plane is $xx_1 + yy_1 + zz_1 = a^2$. This must be the same plane as $lx + my + nz = p$: $\frac{x_1}{l} = \frac{y_1}{m} = \frac{z_1}{n} = \frac{a^2}{p}$. Pole $= \boxed{\left(\frac{la^2}{p}, \frac{ma^2}{p}, \frac{na^2}{p}\right)}$.
+
+! check | A condition added
+Sp13 needs $p \neq 0$: a plane through the centre is the polar of no point.
+
+! note | Angle between two spheres; orthogonal and touching spheres
+^ data/net/maths/fig/two-spheres.svg | two spheres meeting at $P$, centres $C_1$, $C_2$
+- Angle of intersection: $\cos\theta = \frac{r_1^2 + r_2^2 - d^2}{2r_1r_2}$, $d = C_1C_2$.
+- Orthogonal ($\theta = 90°$): $r_1^2 + r_2^2 = d^2$, i.e. $2u_1u_2 + 2v_1v_2 + 2w_1w_2 = d_1 + d_2$.
+- Touch internally: $C_1C_2 = \lvert r_1 - r_2 \rvert$; externally: $C_1C_2 = r_1 + r_2$.
+- Length of tangent from $(x_1, y_1, z_1)$: $\sqrt{x_1^2 + y_1^2 + z_1^2 + 2ux_1 + 2vy_1 + 2wz_1 + d}$.
+
+! check | Conditions added
+$\theta$ is the angle $C_1PC_2$ between the radii to a common point $P$, i.e. between the normals of the two tangent planes at $P$; the spheres must meet ($\lvert r_1 - r_2 \rvert \leq C_1C_2 \leq r_1 + r_2$). In the orthogonality condition $d_1$, $d_2$ are the constant terms of the two spheres, not the distance $d = C_1C_2$ of the line above. The tangent length needs the point outside the sphere (the expression under the root positive).
+
+! trick | Shortcut / time-saver — Sphere in 10 seconds
+Centre $= -\frac{1}{2}$(coefficients of $x, y, z$) *only after* making the coefficient of $x^2$ equal to 1. Great circle $\iff$ plane passes through the centre. Point of contact of a tangent plane $=$ foot of perpendicular from the centre $= C - \frac{(\text{plane value at } C)}{a^2 + b^2 + c^2}(a, b, c)$.
+
+! check | A condition added
+In the last formula the plane is written $ax + by + cz + d = 0$, and the plane value at $C$ is the left side $ax + by + cz + d$ worked out at $C$.
+
+## What it means
+
+- **Reading a sphere's equation**: complete the squares in $x$, $y$, $z$; or read off $u$, $v$, $w$, $d$ after making the square terms' coefficients 1.
+- **Plane and sphere**: compare the distance $p$ of the centre from the plane with $R$: $p < R$ a circle of radius $\sqrt{R^2 - p^2}$, $p = R$ tangent, $p > R$ no meeting. A **great circle** is a section through the centre ($p = 0$).
+- **$S + \lambda P = 0$** is the whole family of spheres through a given circle; one condition (a point, tangency, great circle) fixes $\lambda$.
+
+! example | Example 1 — a great circle's radius
+Find the radius of the circle cut from $x^2 + y^2 + z^2 = 25$ by the plane $x + y + z = 0$.
+**Solution.** The plane passes through the centre, so it is a great circle: radius $\boxed{5}$.
+
+! example | Example 2 — tangency of a family
+For what $k$ does $x + y + z = k$ touch $x^2 + y^2 + z^2 = 12$?
+**Solution.** $\frac{\lvert k \rvert}{\sqrt{3}} = \sqrt{12} \Rightarrow \boxed{k = \pm 6}$.
+
+? Centre and radius of $x^2 + y^2 + z^2 + 2ux + 2vy + 2wz + d = 0$? :: Centre $(-u, -v, -w)$; radius $\sqrt{u^2 + v^2 + w^2 - d}$.
+? Radius of the circle cut by a plane at distance $p$ from the centre? :: $\sqrt{R^2 - p^2}$.
+? Condition for two spheres to cut orthogonally? :: $2u_1u_2 + 2v_1v_2 + 2w_1w_2 = d_1 + d_2$.
+? When is a section a great circle? :: When the plane passes through the centre.
+
+! exam | What the exam asks
+- Centre, radius; sphere on a diameter; through four points or the origin and intercepts.
+- Sphere through a circle; circles of intersection (centre and radius); great circles (LT pre 2025).
+- Tangent planes, condition of tangency, point of contact; orthogonal spheres; pole and polar.
+
+! recap | One-minute revision
+- $(-u, -v, -w)$, $\sqrt{u^2 + v^2 + w^2 - d}$; diameter form $\sum(x - x_1)(x - x_2) = 0$.
+- $S + \lambda P = 0$; circle radius $\sqrt{R^2 - p^2}$, centre the foot $N$.
+- Tangent plane by $x^2 \to xx_1$, $2x \to x + x_1$; orthogonal: $2\sum u_1u_2 = d_1 + d_2$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 13 (the full PDF is linked on the subject page)
+& Shanti Narayan and P. K. Mittal, Analytical Solid Geometry, the chapter on the sphere

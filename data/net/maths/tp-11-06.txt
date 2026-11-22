@@ -1,0 +1,55 @@
+@en
+# Ellipse
+
+> An ellipse is the locus of points whose distances from two foci add up to the major axis $2a$; its eccentricity is less than 1. The tangent forms, the director and auxiliary circles and the parametric point $(a\cos\theta, b\sin\theta)$ answer most questions.
+
+## The standard ellipse
+
+^ data/net/maths/fig/ellipse.svg | $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$: foci $S_1(-ae, 0)$, $S_2(ae, 0)$, $PS_1 + PS_2 = 2a$, directrix $x = \frac{a}{e}$
+
+! note | Ellipse
+- $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b$): $c^2 = a^2 - b^2$, $c = ae$, $e = \sqrt{1 - \frac{b^2}{a^2}} < 1$; major axis $2a$, minor axis $2b$; directrices $x = \pm\frac{a}{e}$; latus rectum $\frac{2b^2}{a}$. Vertical ellipse $\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1$.
+- Conjugate diameters $y = mx$, $y = m'x$: $mm' = -\frac{b^2}{a^2}$.
+- Line $y = mx + c$: $a^2m^2 + b^2 > c^2$ two points; $=$ tangent; $<$ none. Tangent at $(x_1, y_1)$: $\frac{xx_1}{a^2} + \frac{yy_1}{b^2} = 1$; slope form $y = mx \pm \sqrt{a^2m^2 + b^2}$.
+
+! addon | Parametric form and other results
+Parametric $(a\cos\theta, b\sin\theta)$: tangent $\frac{x\cos\theta}{a} + \frac{y\sin\theta}{b} = 1$; normal $\frac{ax}{\cos\theta} - \frac{by}{\sin\theta} = a^2 - b^2$. Director circle $x^2 + y^2 = a^2 + b^2$; auxiliary circle $x^2 + y^2 = a^2$; focal distances $a \pm ex$; area $\pi ab$.
+
+! check | Conditions added
+The normal form needs $\sin\theta \neq 0$ and $\cos\theta \neq 0$ (at the ends of the axes the normal is the axis itself). The focal distances $a \pm ex$ are for the point $(x, y)$ on the ellipse: $PS_1 = a + ex$, $PS_2 = a - ex$, so they add to $2a$.
+
+! example | Question E1 — standard
+For $9x^2 + 25y^2 = 225$ find $a, b, e$, foci, directrices and latus rectum.
+**Solution.** $\frac{x^2}{25} + \frac{y^2}{9} = 1$: $a = 5$, $b = 3$, $e = \sqrt{1 - \frac{9}{25}} = \frac{4}{5}$. Foci $(\pm 4, 0)$; directrices $x = \pm\frac{25}{4}$; latus rectum $\frac{2 \cdot 9}{5} = \frac{18}{5}$.
+
+## What it means
+
+- **Two definitions**: $PS_1 + PS_2 = 2a$ (sum of focal distances), or $PS = e \cdot PM$ with $e < 1$ (focus–directrix). Both give the same curve.
+- **Auxiliary circle**: the point $(a\cos\theta, b\sin\theta)$ is found by taking the point at angle $\theta$ on the circle $x^2 + y^2 = a^2$ and multiplying its $y$-coordinate by $\frac{b}{a}$; $\theta$ is the eccentric angle.
+- **Director circle**: the locus of points from which the two tangents are perpendicular.
+
+! example | Example 1 — an ellipse from its data
+Find the ellipse with foci $(\pm 3, 0)$ and major axis 10.
+**Solution.** $a = 5$, $ae = 3$, $b^2 = 25 - 9 = 16$: $\boxed{\frac{x^2}{25} + \frac{y^2}{16} = 1}$.
+
+! example | Example 2 — a tangent of given slope
+Find the tangents to $\frac{x^2}{16} + \frac{y^2}{9} = 1$ with slope 1.
+**Solution.** $y = x \pm \sqrt{16 + 9}$, i.e. $\boxed{y = x \pm 5}$.
+
+? Eccentricity of $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ($a > b$)? :: $\sqrt{1 - \frac{b^2}{a^2}}$.
+? Latus rectum of the ellipse? :: $\frac{2b^2}{a}$.
+? Tangent of slope $m$? :: $y = mx \pm \sqrt{a^2m^2 + b^2}$.
+? Director circle of the ellipse? :: $x^2 + y^2 = a^2 + b^2$.
+
+! exam | What the exam asks
+- $a$, $b$, $e$, foci, directrices, latus rectum from an equation.
+- Tangents and normals; condition of tangency; director and auxiliary circles.
+- Area $\pi ab$; conjugate diameters.
+
+! recap | One-minute revision
+- $b^2 = a^2(1 - e^2)$; foci $(\pm ae, 0)$; directrices $x = \pm\frac{a}{e}$; LR $\frac{2b^2}{a}$.
+- Tangent $\frac{xx_1}{a^2} + \frac{yy_1}{b^2} = 1$, $y = mx \pm \sqrt{a^2m^2 + b^2}$.
+- $PS_1 + PS_2 = 2a$; area $\pi ab$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapter on the ellipse

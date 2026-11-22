@@ -9,7 +9,7 @@
  "subtitle": { "en": "UPESSC TGT · subject code 07 · topic-wise notes on the official 2026 syllabus" },
  "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 10 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 14 of the notes are ready; the other chapters are being added."
  },
  "units": [
   { "id": "u1", "icon": "💰", "en": "Commercial Mathematics", "line": { "en": "Work and time · speed · interest · banking · taxation" } },
@@ -205,7 +205,53 @@
    ]
   },
   { "id": "u9", "icon": "⭕", "en": "Geometry", "line": { "en": "Pythagoras · circles, chords and tangents · alternate segment · congruence" } },
-  { "id": "u10", "icon": "🧭", "en": "Coordinate Geometry", "line": { "en": "Pair of lines · conics · tangents and normals · polar equation · sphere, cone and cylinder" } },
+  {
+   "id": "u10", "icon": "🧭", "en": "Coordinate Geometry",
+   "line": { "en": "Pair of lines · conics · tangents and normals · polar equation · sphere, cone and cylinder" },
+   "parts": [
+    {
+     "en": "Lines and pairs of lines",
+     "chapters": [
+      { "id": "tp-11-01", "en": "11.1 Points and straight lines",
+        "key": { "en": "Distance, section and area formulas · five forms of a line · angle, distance, image and concurrency" } },
+      { "id": "tp-11-02", "en": "11.2 Pair of straight lines",
+        "key": { "en": "ax² + 2hxy + by² = 0 · angle and bisectors · the general pair (Δ = 0) · homogenisation" } }
+     ]
+    },
+    {
+     "en": "Conics",
+     "chapters": [
+      { "id": "tp-11-03", "en": "11.3 General equation of the second degree",
+        "key": { "en": "Identifying the conic from Δ and h² − ab · centre · rotation and reduction · eccentricity shortcuts" } },
+      { "id": "tp-11-04", "en": "11.4 Circle",
+        "key": { "en": "Centre and radius · tangent, chord of contact, mid-point chord (T, S₁) · two circles · orthogonality" } },
+      { "id": "tp-11-05", "en": "11.5 Parabola",
+        "key": { "en": "Focus and directrix · tangents and normals · parametric point · focal chords" } },
+      { "id": "tp-11-06", "en": "11.6 Ellipse",
+        "key": { "en": "a, b, e, foci and directrices · tangents and normals · director and auxiliary circles" } },
+      { "id": "tp-11-07", "en": "11.7 Hyperbola",
+        "key": { "en": "Eccentricity and asymptotes · conjugate hyperbola · rectangular hyperbola xy = c²" } },
+      { "id": "tp-11-08", "en": "11.8 Polar equation of a conic; common tangents (PGT)",
+        "key": { "en": "l/r = 1 + e cos θ · chords, tangents and directrices · focal chords · common tangents" } }
+     ]
+    },
+    {
+     "en": "Three-dimensional geometry",
+     "chapters": [
+      { "id": "tp-13-01", "en": "13.1 Direction cosines and the straight line",
+        "key": { "en": "Direction cosines and ratios · equation of a line · angle between lines" } },
+      { "id": "tp-13-02", "en": "13.2 The plane",
+        "key": { "en": "Forms of a plane · angles and distances · coplanar and skew lines, shortest distance" } },
+      { "id": "tp-13-03", "en": "13.3 The Sphere",
+        "key": { "en": "Equations of a sphere · circles, great circles, sphere through a circle · tangent planes · orthogonal spheres" } },
+      { "id": "tp-13-04", "en": "13.4 The Cone",
+        "key": { "en": "Cone with vertex at the origin · the general equation as a cone and its vertex · reciprocal cones · right circular cone" } },
+      { "id": "tp-13-05", "en": "13.5 The Cylinder",
+        "key": { "en": "Generators parallel to an axis or a line · right circular cylinder · enveloping cylinder" } }
+     ]
+    }
+   ]
+  },
   {
    "id": "u11", "icon": "📉", "en": "Calculus",
    "line": { "en": "Differentiation and its uses · integration · areas and volumes · differential equations" },
@@ -259,7 +305,21 @@
     }
    ]
   },
-  { "id": "u12", "icon": "➡️", "en": "Vector Analysis", "line": { "en": "Vectors · scalar and vector products · work and moment · triple products" } },
+  {
+   "id": "u12", "icon": "➡️", "en": "Vector Analysis",
+   "line": { "en": "Vectors · scalar and vector products · work and moment · triple products" },
+   "parts": [
+    {
+     "en": "Vectors",
+     "chapters": [
+      { "id": "tp-12-01", "en": "12.1 Vector algebra: basics",
+        "key": { "en": "Position and unit vectors · direction cosines · triangle and parallelogram laws · section formula" } },
+      { "id": "tp-12-02", "en": "12.2 Scalar (dot) and vector (cross) products",
+        "key": { "en": "Dot and cross products · projections, work, areas, moments · triple products" } }
+     ]
+    }
+   ]
+  },
   { "id": "u13", "icon": "⚖️", "en": "Statics", "line": { "en": "Three forces · Lami's theorem · equilibrium · centre of gravity · catenary" } },
   { "id": "u14", "icon": "🚀", "en": "Dynamics", "line": { "en": "Projectiles · radial and transverse · tangential and normal components" } }
  ]

@@ -1,0 +1,56 @@
+@en
+# Hyperbola
+
+> A hyperbola is the locus of points whose distances from two foci differ by $2a$; its eccentricity exceeds 1 and it approaches two asymptotes. The rectangular hyperbola $xy = c^2$ has its own parametric point $\left(ct, \frac{c}{t}\right)$.
+
+## The standard hyperbola
+
+^ data/net/maths/fig/hyperbola.svg | $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ with foci $S_1$, $S_2$, $\lvert PS_1 - PS_2 \rvert = 2a$, and the asymptotes $y = \pm\frac{b}{a}x$
+
+! note | Hyperbola
+$\lvert PS_1 - PS_2 \rvert = 2a$. $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$: $c^2 = a^2 + b^2$, $e = \sqrt{1 + \frac{b^2}{a^2}} > 1$; vertical form $\frac{y^2}{a^2} - \frac{x^2}{b^2} = 1$; $a = b$: rectangular (equilateral) hyperbola, $e = \sqrt{2}$; latus rectum $\frac{2b^2}{a}$.
+
+! addon | Asymptotes, conjugate and rectangular hyperbolas
+Asymptotes $\frac{x}{a} = \pm\frac{y}{b}$; tangent $y = mx \pm \sqrt{a^2m^2 - b^2}$; director circle $x^2 + y^2 = a^2 - b^2$. Conjugate hyperbola $\frac{x^2}{a^2} - \frac{y^2}{b^2} = -1$, with $\frac{1}{e^2} + \frac{1}{e'^2} = 1$. Rectangular hyperbola $xy = c^2$: point $\left(ct, \frac{c}{t}\right)$, tangent $x + t^2y = 2ct$, normal $t^3x - ty = c(t^4 - 1)$.
+
+! check | Conditions added
+The tangent of slope $m$ exists only when $a^2m^2 > b^2$, i.e. $\lvert m \rvert > \frac{b}{a}$ (steeper than the asymptotes). The director circle is real only when $a > b$; for $a = b$ it shrinks to the centre and for $a < b$ there is no point from which perpendicular tangents can be drawn.
+
+! example | Question H1 — standard
+Find the eccentricity and foci of $16x^2 - 9y^2 = 144$.
+**Solution.** $\frac{x^2}{9} - \frac{y^2}{16} = 1$: $a = 3$, $b = 4$, $e = \sqrt{1 + \frac{16}{9}} = \frac{5}{3}$; foci $(\pm 5, 0)$; asymptotes $y = \pm\frac{4}{3}x$.
+
+! trick | Shortcut / time-saver
+The equations of a hyperbola, its asymptotes and its conjugate differ only in the constant: $H + C = 2A$.
+
+## What it means
+
+- **Asymptotes**: for large $x$, $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ is almost $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 0$, i.e. the two lines $y = \pm\frac{b}{a}x$; the curve approaches them but never meets them.
+- **Conjugate hyperbola** swaps the roles of the axes; its eccentricity $e'$ satisfies $\frac{1}{e^2} + \frac{1}{e'^2} = 1$.
+- **$H + C = 2A$**: if $H \equiv \frac{x^2}{a^2} - \frac{y^2}{b^2} - 1$, then $A$ (asymptotes) is the same with constant $0$ and $C$ (conjugate) with constant $+1$.
+
+! example | Example 1 — asymptotes from the equation
+Find the asymptotes of $x^2 - 4y^2 + 2x - 8y - 7 = 0$.
+**Solution.** The asymptotes are $x^2 - 4y^2 + 2x - 8y + k = 0$ for the $k$ that makes it a pair of lines: $(x + 1)^2 - 4(y + 1)^2 = 1 - 4 - k$ is a pair iff $k = -3$. Asymptotes $\boxed{x + 1 = \pm 2(y + 1)}$.
+
+! example | Example 2 — rectangular hyperbola
+Find the tangent to $xy = 4$ at $t = 2$.
+**Solution.** $c = 2$: $x + 4y = 8$; the point is $(4, 1)$ ✓. $\boxed{x + 4y = 8}$.
+
+? Eccentricity of $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$? :: $\sqrt{1 + \frac{b^2}{a^2}}$.
+? Eccentricity of a rectangular hyperbola? :: $\sqrt{2}$.
+? Asymptotes of $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$? :: $y = \pm\frac{b}{a}x$.
+? Tangent to $xy = c^2$ at $\left(ct, \frac{c}{t}\right)$? :: $x + t^2y = 2ct$.
+
+! exam | What the exam asks
+- $e$, foci, directrices, latus rectum, asymptotes.
+- Conjugate hyperbola and $\frac{1}{e^2} + \frac{1}{e'^2} = 1$.
+- Rectangular hyperbola $xy = c^2$: tangents and normals.
+
+! recap | One-minute revision
+- $b^2 = a^2(e^2 - 1)$; foci $(\pm ae, 0)$; asymptotes $y = \pm\frac{b}{a}x$.
+- Tangent $y = mx \pm \sqrt{a^2m^2 - b^2}$; director circle $x^2 + y^2 = a^2 - b^2$.
+- $xy = c^2$: $\left(ct, \frac{c}{t}\right)$, tangent $x + t^2y = 2ct$; $H + C = 2A$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapter on the hyperbola

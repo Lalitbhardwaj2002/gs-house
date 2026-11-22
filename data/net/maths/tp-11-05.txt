@@ -1,0 +1,63 @@
+@en
+# Parabola
+
+> A parabola is the locus of points equidistant from a focus and a directrix ($e = 1$). For $y^2 = 4ax$ the focus is $(a, 0)$, and tangents and normals have neat slope and parametric forms.
+
+## The standard parabola
+
+^ data/net/maths/fig/parabola.svg | $y^2 = 4ax$: focus $S(a, 0)$, directrix $x = -a$, latus rectum from $(a, 2a)$ to $(a, -2a)$; $PS = PM$
+
+! note | Parabola
+- Locus of a point equidistant from a fixed point (focus) and a fixed line (directrix): $e = 1$.
+- $y^2 = 4ax$: vertex $(0, 0)$, focus $(a, 0)$, directrix $x = -a$, latus rectum $4a$ with ends $(a, \pm 2a)$. Other forms: $y^2 = -4ax$, $x^2 = \pm 4ay$; shifted $(y - k)^2 = \pm 4a(x - h)$.
+- Line $y = mx + c$ and $y^2 = 4ax$: $mc < a$ two points; $mc = a$ tangent; $mc > a$ none (for $m > 0$ this reads $c < \frac{a}{m}$, $c = \frac{a}{m}$, $c > \frac{a}{m}$). Tangent of slope $m$: $y = mx + \frac{a}{m}$.
+- Tangent at $(x_1, y_1)$: $yy_1 = 2a(x + x_1)$. Normal at $(x_1, y_1)$: $y - y_1 = -\frac{y_1}{2a}(x - x_1)$; normal of slope $m$: $y = mx - 2am - am^3$.
+
+! check | Conditions added
+$a > 0$. The intersection test assumes $m \neq 0$ (a horizontal line $y = c$ meets the parabola in exactly one point but is not a tangent). The normal of slope $m$ meets the curve at $(am^2, -2am)$.
+
+! example | Question P1 — from the notes
+Find the equation of the normal to $y^2 = 10x$ with slope 2.
+**Solution.** $4a = 10 \Rightarrow a = \frac{5}{2}$. $y = mx - 2am - am^3 = 2x - 10 - 20 \Rightarrow \boxed{y = 2x - 30}$. (Foot of the normal: $(10, -10)$.)
+
+! example | Question P2 — from the notes
+Find the tangent to $y^2 = 4x$ perpendicular to $x + 2y - 3 = 0$.
+**Solution.** Given slope $-\frac{1}{2}$, so $m = 2$; $a = 1$: $\boxed{y = 2x + \frac{1}{2}}$.
+
+! addon | Parametric results
+Point $(at^2, 2at)$: tangent $ty = x + at^2$; normal $y + tx = 2at + at^3$. Focal chord: $t_1t_2 = -1$, length $a\left(t + \frac{1}{t}\right)^2$. Normal at $t_1$ meets the curve again at $t_2 = -t_1 - \frac{2}{t_1}$. Tangents at the ends of a focal chord meet at right angles on the directrix.
+
+! check | A condition added
+The focal-chord and normal results need $t \neq 0$, $t_1 \neq 0$: at the vertex ($t = 0$) the line through the focus and the normal are both the axis, which meets the parabola only once.
+
+## What it means
+
+- **Focus–directrix**: for every point $P$ of the parabola, $PS$ (to the focus) equals $PM$ (to the directrix). That gives $y^2 = 4ax$ directly: $(x - a)^2 + y^2 = (x + a)^2$.
+- **Parameters**: $x = at^2$, $y = 2at$ turns the curve into one variable $t$; most chord, tangent and normal results become short algebra in $t$.
+- **Reflection**: a ray parallel to the axis reflects through the focus; that is why dish antennas and headlamps are paraboloids.
+
+! example | Example 1 — focus and directrix
+Find the focus, directrix and latus rectum of $x^2 = -12y$.
+**Solution.** $4a = 12$, $a = 3$, opening downwards: focus $\boxed{(0, -3)}$, directrix $\boxed{y = 3}$, latus rectum $\boxed{12}$.
+
+! example | Example 2 — a focal chord
+One end of a focal chord of $y^2 = 4ax$ is $(a, 2a)$ ($t_1 = 1$). Find the other end and the length.
+**Solution.** $t_2 = -\frac{1}{t_1} = -1$: the other end is $\boxed{(a, -2a)}$ (it is the latus rectum), length $a(1 + 1)^2 = \boxed{4a}$.
+
+? Focus and directrix of $y^2 = 4ax$? :: Focus $(a, 0)$, directrix $x = -a$.
+? Condition for $y = mx + c$ to touch $y^2 = 4ax$? :: $c = \frac{a}{m}$.
+? Normal of slope $m$ to $y^2 = 4ax$? :: $y = mx - 2am - am^3$.
+? Condition for a focal chord in parameters? :: $t_1t_2 = -1$.
+
+! exam | What the exam asks
+- Focus, directrix, latus rectum of shifted and turned parabolas.
+- Tangents and normals of a given slope or at a point.
+- Focal chords; parametric tangents and normals.
+
+! recap | One-minute revision
+- $y^2 = 4ax$: $S(a, 0)$, $x = -a$, LR $4a$.
+- Tangent $y = mx + \frac{a}{m}$, $yy_1 = 2a(x + x_1)$; normal $y = mx - 2am - am^3$.
+- Parametric $(at^2, 2at)$: tangent $ty = x + at^2$; focal chord $t_1t_2 = -1$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapters on the parabola
