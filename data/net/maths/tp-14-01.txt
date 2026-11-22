@@ -1,0 +1,48 @@
+@en
+# Differentiation of vector functions
+
+> A vector function $\vec{r}(t)$ traces a curve; its derivative is the tangent (velocity) vector. The product rules work as for scalars, as long as the order in cross products is kept.
+
+## Derivatives of vector functions
+
+! note | Differentiation of vector functions
+^ data/net/maths/fig/vec-tangent.svg | the curve traced by $\vec{r}(t)$ and the tangent vector $\frac{d\vec{r}}{dt}$
+- $\frac{d}{dt}(\vec{a} \pm \vec{b}) = \vec{a}' \pm \vec{b}'$; $\frac{d}{dt}(\vec{a} \cdot \vec{b}) = \vec{a}' \cdot \vec{b} + \vec{a} \cdot \vec{b}'$; $\frac{d}{dt}(\vec{a} \times \vec{b}) = \vec{a}' \times \vec{b} + \vec{a} \times \vec{b}'$ (keep the order); $\frac{d}{dt}(\phi\vec{a}) = \phi'\vec{a} + \phi\vec{a}'$.
+- $\frac{d}{dt}[\vec{a}\ \vec{b}\ \vec{c}] = [\vec{a}'\ \vec{b}\ \vec{c}] + [\vec{a}\ \vec{b}'\ \vec{c}] + [\vec{a}\ \vec{b}\ \vec{c}']$.
+- For $\vec{r}(t)$, $\frac{d\vec{r}}{dt} = \dot{x}\hat{i} + \dot{y}\hat{j} + \dot{z}\hat{k}$ is **tangent** to the curve (velocity); $\frac{d\vec{r}}{dt} = \frac{d\vec{r}}{ds}\frac{ds}{dt}$.
+- $\lvert \vec{a} \rvert$ constant $\iff \vec{a} \cdot \vec{a}' = 0$; direction constant $\iff \vec{a} \times \vec{a}' = \vec{0}$.
+
+! check | Conditions added
+The last two statements are for a non-zero, differentiable $\vec{a}(t)$ on an interval. $\frac{d\vec{r}}{dt}$ is a tangent vector where it is not $\vec{0}$; $\frac{d\vec{r}}{ds}$ (with $s$ the arc length) is the unit tangent.
+
+## What it means
+
+- **Componentwise**: differentiate $\vec{r} = x(t)\hat{i} + y(t)\hat{j} + z(t)\hat{k}$ coordinate by coordinate, since $\hat{i}, \hat{j}, \hat{k}$ are constant.
+- **Velocity and acceleration**: if $\vec{r}(t)$ is a position, $\dot{\vec{r}}$ is the velocity and $\ddot{\vec{r}}$ the acceleration.
+- **Constant length**: $\vec{a} \cdot \vec{a} = \lvert \vec{a} \rvert^2$; differentiating, $2\vec{a} \cdot \vec{a}' = 0$, so a vector of constant length is perpendicular to its own derivative (circular motion: velocity $\perp$ radius).
+
+! example | Example 1 — velocity and acceleration
+For $\vec{r} = \cos t\,\hat{i} + \sin t\,\hat{j} + t\hat{k}$, find $\lvert \dot{\vec{r}} \rvert$ and $\ddot{\vec{r}}$.
+**Solution.** $\dot{\vec{r}} = -\sin t\,\hat{i} + \cos t\,\hat{j} + \hat{k}$, $\lvert \dot{\vec{r}} \rvert = \boxed{\sqrt{2}}$; $\ddot{\vec{r}} = \boxed{-\cos t\,\hat{i} - \sin t\,\hat{j}}$ (pointing to the axis of the helix).
+
+! example | Example 2 — derivative of a product
+If $\vec{a} = t\hat{i} + t^2\hat{j}$ and $\vec{b} = \hat{i} + t\hat{k}$, find $\frac{d}{dt}(\vec{a} \cdot \vec{b})$.
+**Solution.** $\vec{a} \cdot \vec{b} = t$, so the derivative is $\boxed{1}$. (By the rule: $\vec{a}' \cdot \vec{b} + \vec{a} \cdot \vec{b}' = (\hat{i} + 2t\hat{j}) \cdot (\hat{i} + t\hat{k}) + (t\hat{i} + t^2\hat{j}) \cdot \hat{k} = 1 + 0$ ✓.)
+
+? $\frac{d}{dt}(\vec{a} \times \vec{b})$? :: $\vec{a}' \times \vec{b} + \vec{a} \times \vec{b}'$ (order kept).
+? Condition for $\vec{a}(t)$ to have constant length? :: $\vec{a} \cdot \vec{a}' = 0$.
+? Condition for constant direction? :: $\vec{a} \times \vec{a}' = \vec{0}$.
+? What does $\frac{d\vec{r}}{dt}$ represent? :: A tangent (velocity) vector to the curve.
+
+! exam | What the exam asks
+- Derivatives of dot, cross and triple products.
+- Tangent vectors, velocity and acceleration.
+- Constant length and constant direction tests.
+
+! recap | One-minute revision
+- Product rules; keep the order in $\times$.
+- $\dot{\vec{r}}$ tangent; $\ddot{\vec{r}}$ acceleration.
+- $\lvert\vec{a}\rvert$ constant $\iff \vec{a} \cdot \vec{a}' = 0$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 14 (the full PDF is linked on the subject page)
+& M. R. Spiegel, Vector Analysis (Schaum's Outline), chapter 3

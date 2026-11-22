@@ -675,3 +675,211 @@ TGT: 10.7 to 10.11 are in Unit 8 (Complex Numbers), part "Functions of a complex
 
 - `argument.svg`: the grey "θ + 2π" mark was an arc drawn about the wrong centre; it is now a full dashed circle about $O$. `arg-quadrants.svg` labels the basic angle $\alpha$ in each panel, as the PDF does. `hyperbolic.svg`: the "cosh x" label moved off its curve and the lines $y = \pm 1$ are labelled.
 - Phone width: 63 display formulas of 10.1 to 10.10 were still wider than a 375-pixel screen, and two long inline formulas in 10.9 could not wrap. They were split into one step per line (two inline formulas became displays; one fraction of E1.7(iii) is written as a product of two fractions, and $\frac{[\ldots]}{4}$ in E1.17 as $\frac{1}{4}[\ldots]$, the same values). A script compared every other display formula with the checked text, ignoring line breaks, alignment marks and spacing: no difference. In the browser at 375 pixels all 11 pages render with no KaTeX error and nothing wider than the screen.
+
+## Chapter 11, sections 11.1 to 11.4, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 129 to 136 (printed 128 to 135), read from the page images (`p-129.png` to `p-136.png` in this folder) and the text layer (`p129-136.txt`). 11.5 starts on PDF page 136; nothing after the 11.4 shortcut box was used.
+
+Nothing of the PDF was missing. Every box, bullet, sub-bullet, table, figure, question (L1, L2, PL1, PL2, GE1 to GE4, C1, C2), boxed answer and shortcut box of 11.1 to 11.4 is on the pages with the same mathematics and words. The "LT 2018", "LT 2025" titles stay.
+
+Every number and step, of the PDF text and of the additions, was recomputed in `verify.py` (exact fractions for the questions, random tests for the general formulas; 4648 checks, all agree). No slip was found in the PDF. Conditions and notes were added as listed below.
+
+The five figures were rendered (`fig-*.png`) and measured from the SVG coordinates: they are correct (see each page).
+
+`tools/check_net.py`: 0 problems. All four files have LF line endings.
+
+### tp-11-01 (Points and straight lines)
+- Checked against PDF pages 129 and 130: the basic formulas add-on, the forms box with its figure, the angle, distance and image box with its figure, L1, L2. All present and correct. L1: d = 3/5, image (−1, 4) (mid-point (0, 3) is on the line). L2: tan θ = 1.
+- Section, external division, incentre, area, image, foot and distance formulas tested at random points: all correct.
+- Change: in the check box on the forms, the intercept form needs a line that cuts both axes away from the origin; "not parallel to an axis" was added (a line parallel to an axis has no intercept on it).
+- Change: added to the check box on the angle, distance and image: the image formula needs a, b ≠ 0; if a = 0 read α = x₁, if b = 0 read β = y₁.
+- Change: the Loney reference gave "chapters 1 to 6". I could not check the chapter numbers offline; as I recall the book, chapter 6 is on equations representing two or more straight lines (the pair of lines). The reference now names the chapters by subject ("the chapters on coordinates and on the straight line").
+- Additions (what it means, Example 1 x + y = 5, Example 2 d = 2, Example 3 area 12, cards, exam, recap): correct.
+- Figures: line-forms (p is perpendicular to the line, α is its angle) and line-image (PM ⊥ line, M is the mid-point of PP′) are correct. The PDF figure has a right-angle mark at the foot of p; the SVG has none (not needed).
+- Placement: TGT Unit 10 (Cartesian plane, straight line) and PGT Unit 4. Right; the key describes the page.
+
+### tp-11-02 (Pair of straight lines)
+- Checked against PDF pages 131 and 132: the box (figure, slopes, angle, real or imaginary lines with the three sub-bullets and the examples, bisectors, Δ, distance between parallel lines with the example, point of intersection), PL1, PL2, the homogenisation add-on. All present and correct.
+- Distance example: (x + 2y + 4)(x + 2y − 1) expands correctly; both forms give √5. PL1: h² − ab = 25/4, tan θ = 1, factors (y − 3x)(y + 2x). PL2: the five terms are −8, −5/2, −1, −1, 25/2, so Δ = 0; the lines are (x − y − 1)(x − 4y + 2).
+- Slopes, angle, bisector, both distance formulas and the point of intersection tested on random pairs: correct. The existing check boxes (b ≠ 0, h ≠ 0, ab ≠ h², n ≠ 0 for homogenising) are correct.
+- Change: the Loney reference gave "chapter 7" (as I recall, chapter 7 is the transformation of coordinates). It now reads "the chapter on equations representing two or more straight lines".
+- Additions (what it means, Example 1 perpendicular lines, Example 2 λ = (9 ± √5)/2, also confirmed by Δ = 0, cards, exam, recap): correct.
+- Figure pair-lines: the two green lines are the exact bisectors of the blue and red lines (18.4° and 108.4°). Correct.
+- Placement: TGT Unit 10 ("homogeneous equation of the second degree and pair of straight lines; bisectors and angle") and PGT Unit 4. Right; the key describes the page.
+
+### tp-11-03 (General equation of the second degree)
+- Checked against PDF pages 132 to 134: the box with Δ, the table of six rows, the centre rule, GE1 to GE3, the transformation add-on, GE4, the shortcut box. All present and correct.
+- GE1: the five terms 250, 90, −45, −125, −90 give Δ = 80; the centre (−1, 0) and the reduced equation 5X² − 6XY + 5Y² + 5 = 0 are correct. GE2: centre (1, 1). GE3: Δ = −192, a real ellipse 3(x − 3)² + 4(y − 3)² = 16. GE4: a′, b′ = 2, 8, e = √3/2. Shortcut: e = 4/5 and 5/3.
+- The real or imaginary ellipse rule (Δ(a + b) < 0) was tested on 300 random ellipses; c′ = Δ/(ab − h²) holds. Rotation by tan 2θ = 2h/(a − b) removes the xy term, and a + b, ab − h² are invariant (random tests).
+- Change: the circle check box said "needs Δ ≠ 0 and g² + f² − ac ≥ 0"; together these mean > 0, which was unclear. Rewritten: a ≠ 0; Δ = a(ac − g² − f²); real circle when g² + f² − ac > 0 (that is Δ(a + b) < 0, as for a real ellipse), point circle when it is 0 (Δ = 0), no real points when it is negative.
+- Added `! check | A note added` after GE2: like GE1, this conic has no real points (Δ = 16, Δ(a + b) > 0; it becomes 5X² − 6XY + 5Y² + 1 = 0). The centre (1, 1) is still right. This is not a slip in the question, but the notes treat GE1 the same way.
+- Change: the Loney reference gave "chapter 15"; as I recall, chapter 15 is the polar equation of a conic and the general equation is in chapters 16 and 17. It now reads "the chapters on the general equation of the second degree".
+- Additions (what it means, Example 1 parabola Δ = −1, Example 2 rectangular hyperbola Δ = −25/4, cards, exam, recap): correct.
+- Placement: TGT Unit 10 (conditions for the general equation; transformation of axes) and PGT Unit 4 (classification of the general equation). Right; the key describes the page.
+
+### tp-11-04 (Circle)
+- Checked against PDF pages 134 to 136: the circle box with its figure and the two sub-bullets, the sector and segment box, the two-circles figure, the "more circle results" add-on, C1, C2, the shortcut box. All present and correct.
+- C1: r = 5, S₁ = 9 (also (distance)² − r² = 34 − 25), L = 3. C2: 3x + 4y = 25; the chord x + 2y = 5 meets the circle at (5, 0) and (−3, 4), mid-point (1, 2). The area RL³/(R² + L²), the tangency condition, the director circle, both common tangent lengths and T = S₁ were tested at random: correct.
+- Change: the circle figure stood above the box; in the PDF it is inside the box. Moved inside (first line of the box).
+- Change: the check box said T = 0, T = S₁ and L = √S₁ all need the normal form. Only L = √S₁ does; T = 0, T = S₁ and SS₁ = T² do not change when the equation is multiplied by a constant. Rewritten.
+- Added `! check | A condition added` after the sector box: θ is the angle at the centre in radians; (r²/2)(θ − sin θ) is the segment on the arc of angle θ, the minor segment when θ < π.
+- Change: added to the add-on check box that S₁ − S₂ = 0 needs both circles with x² and y² coefficients 1.
+- Kept the Loney reference "chapters 8 and 9 (the circle)": it agrees with my memory of the book (the circle; systems of circles), but I could not check it offline.
+- Additions (what it means, Example 1 x² + y² − 4x − 6y = 0, Example 2 orthogonal, d² = r₁² + r₂² = 10, cards, exam, recap): correct.
+- Figures: circle-tangents (the tangent points satisfy cos φ = R/d, so the lines are tangent; the chord of contact joins them) and two-circles (d = 38, 32, 22, 8, 3 against radii 20 and 12 give exactly 4, 3, 2, 1, 0 common tangents) are correct.
+- Placement: TGT Unit 10 (conics, tangent, pair of tangents) and PGT Unit 4 (pair of tangents and chord of contact). Right; the key describes the page. Suggestion for the owner: TGT Unit 9 (Geometry: circle and sector, segment, arc and chord, tangent to a circle) has no pages; tp-11-04 (sector, segment, arc, tangents) could also be listed there.
+
+### Left for the owner
+- The Loney chapter numbers on tp-11-05 to tp-11-08 (parabola 10, ellipse 11, hyperbola 12, polar 14) follow the same numbering as the old references here; as I recall the book they are parabola 10 and 11, ellipse 12 and 13, hyperbola 14, polar equation 15. Please check against your copy (those pages are outside this check).
+
+## Chapter 11, sections 11.5 to 11.8, and Chapter 12, check of 22 November 2026
+
+Source: clean.pdf, PDF pages 136 to 143 (printed 135 to 142), read from the page images (`p-136.png` to `p-143.png` at 80 dpi, `h-136.png` to `h-143.png` at 150 dpi, and clips `c136b.png` to `c143a.png` at 170 dpi, all in this folder). 11.5 starts partway down PDF page 136; Chapter 12 ends on PDF page 143.
+
+Nothing of the PDF was missing. Every box, bullet, formula, figure, shortcut box and question of 11.5 to 11.8, 12.1 and 12.2 is on the pages with the same mathematics and words: P1, P2, the parametric add-on; the ellipse note, add-on and E1; the hyperbola note, add-on, H1 and the H + C = 2A shortcut; the polar add-on with its figure and PC1; the 12.1 add-on with its figure; the three 12.2 note boxes (dot, cross, triple products) with their figures, V1 to V4, the "More identities" add-on and the shortcut box. No slip was found in the PDF mathematics.
+
+Every formula, step and boxed answer, of the PDF text and of the additions, was checked numerically in `verify.py` (plain Python floats, random test values: 2703 checks, all agree). It covers the intersection discriminants of line and parabola, ellipse and hyperbola; slope-form tangents; parametric tangents and normals of all three conics and of xy = c²; focal chords; director circles; conjugate diameters; focal distances; the conjugate-eccentricity relation; the polar chord, tangent, directrix and focal-chord results (also for a hyperbola line meeting both branches); the common tangent; Lagrange, Binet–Cauchy, BAC–CAB, [a+b b+c c+a], [a×b b×c c×a], the moment about a line, the half-angle formulas and every numbered question and example. `tools/check_net.py`: 0 problems. LF line endings kept.
+
+### tp-11-05 (Parabola)
+- Checked against PDF pages 136 and 137: figure, note box (4 bullets), P1 (normal y = 2x − 30, foot (10, −10)), P2 (y = 2x + ½), parametric add-on. All present and correct. The existing check box (a > 0; m ≠ 0 in the intersection test; foot of the normal (am², −2am)) is correct.
+- Added `! check | A condition added` after the parametric add-on: the focal-chord and normal results use 1/t and 2/t₁, so they need t ≠ 0, t₁ ≠ 0 (at the vertex the focal line and the normal are both the axis, which meets the curve once).
+- Additions (focus–directrix derivation, Example 1 x² = −12y, Example 2 latus rectum as a focal chord, cards, exam and recap boxes): correct.
+
+### tp-11-06 (Ellipse)
+- Checked against PDF pages 137 and 138: figure, note box (3 bullets), add-on (parametric form, director and auxiliary circles, focal distances, area), E1 (a = 5, b = 3, e = 4/5, foci (±4, 0), directrices x = ±25/4, LR 18/5). All present and correct. The check box (normal form needs sin θ, cos θ ≠ 0; PS₁ = a + ex, PS₂ = a − ex) is correct.
+- Change: "What it means" said the y-coordinate is "shrunk by b/a"; it now says "multiplied by b/a" (the factor, not a subtraction).
+- Change: Example 2 boxed "x ± 5" at the end of "y = x ± √(16 + 9) = …"; the box now holds the whole answer y = x ± 5.
+- Additions (two definitions, eccentric angle, Example 1 x²/25 + y²/16 = 1, cards): correct.
+
+### tp-11-07 (Hyperbola)
+- Checked against PDF pages 138 and 139: figure, note box, add-on (asymptotes, tangent, director circle, conjugate hyperbola, xy = c²), H1 (e = 5/3, foci (±5, 0), asymptotes y = ±4x/3), shortcut H + C = 2A. All present and correct. The check box (slope-form tangent only for |m| > b/a; director circle real only for a > b, a point for a = b) is correct.
+- No change.
+- Additions (asymptotes as the limit, conjugate hyperbola, Example 1 asymptotes x + 1 = ±2(y + 1) with k = −3 confirmed by Δ = 0, Example 2 x + 4y = 8 at (4, 1), cards): correct.
+
+### tp-11-08 (Polar equation of a conic; common tangents (PGT))
+- Checked against PDF page 139: the add-on with its figure (l/r = 1 + e cos θ, axis at angle α, chord, tangent, directrix, focal chord, common tangents with the example x + y + a = 0) and PC1 (e = 5/4, hyperbola, l = 2). All present and correct. The orientation in the existing check box (initial line from the focus towards its directrix, θ = 0 gives the nearer vertex at l/(1 + e)) agrees with the formula and with the figure.
+- Added to the existing check box: r₁, r₂ in the focal chord property are signed; for a hyperbola whose line through S meets both branches the distances satisfy |1/SP − 1/SQ| = 2/l (verified numerically).
+- Change: "What it means" now says "($S$ between $P$ and $Q$)" after "every chord PQ through the focus", for the same reason.
+- Change: the exam box wrote "l/r = A + B cos θ"; with l already the semi-latus rectum this is confusing, so it is now "k/r = A + B cos θ" (after dividing by A, l = k/A).
+- Additions (derivation of the polar form, minus sign, Example 1 r = 6/(1 + cos θ): parabola, LR 12, Example 2 common tangent, cards): correct.
+
+### tp-12-01 (Vector algebra: basics)
+- Checked against PDF page 140: the add-on with its figure (5 bullets). All present and correct. The check box (non-zero vector for unit vector and DCs; internal and external section; meaning of a, b, θ) is correct.
+- Change: "Collinear points" now says "(with A ≠ C)"; if A = C ≠ B the test AB = λ·AC fails although the points are collinear.
+- Added to "What it means": direction ratios (the components, or the same non-zero multiple of all three; PGT syllabus) and a bullet on the difference of vectors and relative velocity, v_A − v_B (TGT syllabus, Unit 12, names both; neither the PDF nor the page had them).
+- Additions (Example 1 unit vector ⅔, −⅓, ⅔; Example 2 resultant 7 N; Example 3 point (3, 0, 5); cards): correct.
+
+### tp-12-02 (Scalar (dot) and vector (cross) products)
+- Checked against PDF pages 140 to 143: the dot-product box with figure and the work bullet, the cross-product box with figure, the triple-products box with figure, V1 (a·b = −4, θ = cos⁻¹(−4/9), projection −4/3), V2 (area √21/2), V3 (det = 3λ − 12, λ = 4), V4 (W = 40), the "More identities" add-on, the shortcut box (cube angles cos⁻¹⅓ and cos⁻¹(1/√3)). All present and correct. The three check boxes (non-zero vectors for a·b = 0; zero vector parallel to all; volume = |[a b c]|) are correct.
+- Change: the recap gave "volume [a b c]; tetrahedron ⅙[a b c]" without absolute values, against the page's own check box; now |[a b c]| and ⅙|[a b c]|.
+- Change: "What it means" says a·b̂ is the "(signed)" length of the shadow (it is negative for an obtuse angle, as in V1).
+- Additions (Example 1 ±(i − j + k)/√3, Example 2 volume 2, BAC–CAB, cards): correct.
+
+### Figures
+All eight figures were rendered (`fig-*.png`) and measured from their coordinates.
+- parabola.svg: a = 20 px; directrix, latus rectum ends (a, ±2a) and P on the curve are exact (PS = PM = 71.2 px). Correct.
+- ellipse.svg: foci at ±ae and directrix at a/e match a = 88, b = 57.2 px; P lies on the curve. Correct.
+- hyperbola.svg: foci at ±ae match a = 35.2 px and the asymptote slope b/a = 0.875. Correct. The caption names P, but no point P is drawn (the PDF figure has none either).
+- polar-conic.svg: S is the right focus of the drawn ellipse, P is on it, θ is measured from the initial line. Correct and consistent with l/r = 1 + e cos θ. The PDF figure also draws the semi-latus rectum l as a red segment from S; the SVG leaves it out (cosmetic).
+- vec-parallelogram.svg: geometry correct (b − a runs from the tip of a to the tip of b). **The label "a + b" starts at x = 194 in a 200-wide viewBox, so it is cut off at the right edge (only "a" shows).** Move it left or widen the viewBox.
+- vec-projection.svg, vec-cross.svg, vec-triple.svg: correct.
+
+### Placement
+TGT: 11.5 to 11.8 are in Unit 10 (Coordinate Geometry), part "Conics" (syllabus: standard equations of the conics, tangents and normals, parametric equations, standard polar equation of a conic); 12.1 and 12.2 in Unit 12 (Vector Analysis), part "Vectors" (position, displacement, free and unit vectors; composition; scalar, vector and triple products; work and moment). PGT: 11.5 to 11.8 in Unit 4 (Coordinate Geometry of Two Dimensions; syllabus names tangents and normals and common tangents to two conics); 12.1 and 12.2 in Unit 5, part "Vectors". The `key` lines describe the pages. No change suggested. One remark: the PDF heading of 11.8 says "(PGT)", but the polar equation of a conic is named in the TGT syllabus only and common tangents in the PGT syllabus only; the page is rightly listed in both.
+
+### Left for the owner
+- The cut-off "a + b" label in vec-parallelogram.svg.
+- Optional: the semi-latus rectum l in polar-conic.svg, and a point P in hyperbola.svg.
+
+## Chapter 13, sections 13.1 to 13.3, check of 22 November 2026
+
+Source pages read: clean.pdf, PDF pages 144 to 155 (printed 143 to 154), as page images at 80 dpi, plus the pdftotext layer for the running words. 13.4 starts on PDF page 156 and was not checked here.
+
+Completeness: nothing of the PDF was missing. Every box, bullet, formula, figure, worked question (DL1 to DL2, PL1 to PL9, Sp1 to Sp13), boxed answer and shortcut box is on the pages, with the same mathematics and wording. Notebook headings in box titles ("3D LT Mains, 12-22/02/26", "The Sphere (B.Sc. I yr), 23-26/02/26") were already replaced by plain titles ("The plane", "The sphere"), as on the published chapters. "LT pre 2025" on Sp9 and the "(Ex. 14-16)" style labels stay.
+
+Mathematics: every number, determinant, cross product, distance, angle, boxed answer and step was recomputed in Python (verify.py in this folder, 68 checks, all pass). This includes the additions (examples, flash cards, tricks). No slip was found in the PDF or in the additions.
+
+Figures: dir-cosines, plane-normal, line-plane, skew-lines, sphere, sphere-diameter, sphere-touch, sphere-section and two-spheres were rendered and looked at. Each shows what its caption and the text say (P on both circles in two-spheres, P on the circle with the right angle in sphere-diameter, N, p, R, C in sphere-section, the right angle at L1 in skew-lines). No figure problem.
+
+Placement: tp-13-01 to tp-13-03 are in the "Three-dimensional geometry" part of TGT unit u10 (Coordinate Geometry, whose syllabus names the sphere, cone and cylinder; the line and the plane are their groundwork) and of PGT unit u5 (Vectors and Three-Dimensional Geometry, whose syllabus names lines, planes, angles, distances and the sphere). The key lines describe the pages. No change suggested. One remark: the PGT syllabus names "intersection of two lines"; no page works an example of it (only line and plane, and two planes).
+
+check_net.py: last line "0 problems".
+
+### tp-13-01 (Direction cosines and the straight line)
+- Checked against PDF pages 144 to 145: the notes box with its figure, DL1, DL2; the existing "Conditions added" box is correct.
+- Recomputed DL1 (DRs 2, -3, 5; point (13/5, 23/5, 0)), DL2 (sum 4/3, checked for random directions), the sin^2 sum 2, Examples 1 and 2 (60 degrees) and the cube flash card.
+- Change: in "What it means" the projection bullet now names P(x1, y1, z1) and Q(x2, y2, z2), because the formula uses these coordinates and the points were not defined.
+- Left for the owner: in DL2 the PDF lists the diagonals as (1/sqrt3)(+-1, +-1, 1) but writes cos delta for (1, 1, -1); this is the same diagonal with the opposite sense, and the squares are equal, so nothing was changed.
+
+### tp-13-02 (The plane)
+- Checked against PDF pages 145 to 149: the three notes boxes, the two figures between them, PL1 to PL9 and the shortcut box.
+- Recomputed PL1 (6/sqrt29, foot (12/29, -18/29, 24/29), DCs -6/7, 3/7, 2/7), PL2, PL3 (normal (16, 24, 32)), PL4 (20x + 23y + 26z = 69, also checked on a point of the common line), PL5 (determinant 0), PL6 (4/21, 5/(7 sqrt3)), PL7 (13/7, 8/21), PL8 (5x - 4y - z = 7; 6/sqrt34), PL9 (3/sqrt2), the image formula and Examples 1 and 2.
+- Change: the check box after the figures now also says that (alpha, beta, gamma) is the image of (x1, y1, z1) and that -1 in place of -2 gives the foot. Reason: the PDF does not name alpha, beta, gamma. Title changed to "Conditions added".
+- Change: new check box after the shortcut box: in the tetrahedron volume, a, b, c are the three edges from one vertex. Reason: the PDF leaves this out.
+- Left for the owner: the second reference is NCERT Class 12 Part II chapter 11; the rationalised NCERT edition (2023 on) dropped the plane from that chapter, so an older edition is meant.
+
+### tp-13-03 (The Sphere)
+- Checked against PDF pages 149 to 155: the notes boxes (sphere, two spheres, tangent plane, tangency steps, pole and polar, angle between spheres), the three figures inside boxes, Sp1 to Sp13 and the shortcut box.
+- Recomputed Sp1 to Sp13: constants 4, -11, -20, -22, -13 and -11; Sp2 centre (2, -3, -1), r = 3; Sp5 r = 7; Sp8 both lambdas give tangency; Sp9 centre (1, -2, 3) on the plane and circle radius equal to sphere radius 2; Sp10 radius sqrt7, centre (1, 3, 4); Sp11 numerically; Sp12 point (-1, 4, -2) lies on both sphere and plane; the tangency condition, the orthogonality equivalence and the shortcut formula for the point of contact; Examples 1 and 2.
+- Change: in the "Conditions added" box on two spheres, "between" became "strictly between", with "at either end they touch at one point". Reason: at the end values the spheres touch and there is no circle.
+- Change: new check box after Sp13: it needs p != 0, since a plane through the centre is the polar of no point.
+- Change: the check box after the angle-between-spheres box now says that theta is the angle C1PC2 between the radii (the normals of the tangent planes) and that the spheres must meet. Title changed to "Conditions added".
+- Change: new check box after the "Sphere in 10 seconds" shortcut: the plane is written ax + by + cz + d = 0 and the plane value is that left side at C. Reason: with the form lx + my + nz = p used just above, the sign of the value would otherwise be unclear.
+- Left for the owner: nothing else.
+
+## Chapter 13, sections 13.4 and 13.5, and Chapter 14, check of 22 November 2026
+
+Source pages read: clean.pdf pages 156 to 167 (printed 155 to 166), as page images at 80 dpi, plus page 168 to confirm that section 14.3 ends on page 167 (page 168 starts chapter 15).
+
+Nothing of the PDF was missing. Every box, bullet, formula, worked question, solution, boxed answer, shortcut and figure of sections 13.4, 13.5, 14.1, 14.2 and 14.3 is on the pages, in order, with the same words (meta labels dropped as the brief says; titles "page G-266", "05/03/26", "11/03/26", "LT 2025" kept). No slip in the PDF was found.
+
+Every number, expansion, derivative and integral of the PDF text and of the additions was recomputed with sympy (script `verify.py` in this folder). All agree. One sympy line (the Laplacian of $r^n$) needed a numerical check because the simplifier did not close it; the formula $n(n+1)r^{n-2}$ is right.
+
+### tp-13-04 (The Cone)
+
+- Checked: definition, $\Delta$ and its expansion, generator test, cone through the axes; Co1, Co2 (expansions); the 4 × 4 cone condition; Co3 (vertex and condition; the 4 × 4 determinant is $abc(d - u^2/a - v^2/b - w^2/c)$); Co4 (vertex $(2, 2, 1)$, $F = 0$ there, $\Delta = -72$); cofactors $A \dots H$; self-reciprocal example; Co5; Co6 ($a + b + c = 0$, $A + B + C = -7$); right circular cone formula and the $z$-axis case; Co7. Additions: Example 1 ($yz - 8zx + 9xy = 0$ contains both lines), Example 2 (a point at $60°$ to the axis lies on it), flash cards, exam and recap boxes. The three check boxes already on the page are correct.
+- Change: added a check box after Co3: $a, b, c \neq 0$ are needed, and then the condition is exactly the cone condition. Reason: the PDF divides by $a, b, c$ without saying so.
+- Change: added a check box after Co4: $\Delta = -72 \neq 0$, so the cone is proper (the PDF finds the vertex but does not test $\Delta$).
+- Change: rewrote the "Why homogeneous" bullet of What it means. The old sentence ("a polynomial with that property in every degree is homogeneous") was unclear; the new one states $f(tx, ty, tz) = t^2 f(x, y, z)$.
+
+### tp-13-05 (The Cylinder)
+
+- Checked: definition, types 1 and 2; Cy1 (full expansion); Cy2 (meeting point and the boxed equation); right circular cylinder (projection, and the simplified form equals $\lvert \vec{AP} \times \vec{b} \rvert^2$); Cy3 (expansion of the square, $AP^2$, boxed answer); Cy4; enveloping cylinder (checked by the tangency discriminant). Additions: both examples, flash cards, exam and recap boxes. The check box already on the page is correct.
+- No change.
+
+### tp-14-01 (Differentiation of vector functions)
+
+- Checked: product rules, triple product rule, tangent vector, constant length and direction; Example 1 (speed $\sqrt{2}$, acceleration), Example 2; flash cards. The check box already on the page is correct.
+- No change.
+
+### tp-14-02 (Gradient, divergence and curl)
+
+- Checked: all standard results for $r$ (gradients, $\operatorname{div}(r^n\vec{r})$, $\nabla^2 r^n$), all four product identities with general fields, curl grad, div curl, grad of $\vec{r} \cdot \vec{a}$ and of $[\vec{r}\ \vec{a}\ \vec{b}]$, $(\vec{a} \cdot \nabla)\vec{r}$; G1 to G7 (G6: the cross product and $-4\hat{i} - 8\hat{j}$); shortcut ($\operatorname{curl}(\vec{\omega} \times \vec{r}) = 2\vec{\omega}$, $f(r)\vec{r}$ irrotational). Additions: Example 1 (the point lies on both surfaces, $\cos\theta = \frac{8}{3\sqrt{21}}$), Example 2 ($a = -2$), flash cards.
+- Change: in the second check box, added "$\nabla\frac{f}{g}$ needs $g \neq 0$".
+- Change: added a check box after the shortcut: $\vec{\omega}$ constant, $f$ differentiable, $r \neq 0$ for the $r^n$ results. Reason: the PDF shortcut leaves these out.
+
+### tp-14-03 (Line, surface and volume integrals; integral theorems)
+
+- Checked: Green, Gauss and Stokes statements; addon formulas; IT1 by the divergence theorem and by summing the six face integrals (both $\frac{3}{2}$); IT2 by Green and by the four sides directly (both $\frac{3}{2}$); IT3; IT4 (curl $\vec{0}$, potential, work $202$). Additions: ellipse area $\pi ab$, flux of $\hat{k}$, flash cards. The two check boxes already on the page are correct.
+- Change: added a check box after the shortcut: "curl $\vec{0}$ gives zero circulation" and "div $0$ gives zero flux" need $\vec{F}$ smooth on the whole region inside. Counterexamples checked: $\vec{r}/r^3$ (flux $4\pi$ through a sphere about the origin) and $(-y\hat{i} + x\hat{j})/(x^2 + y^2)$ (circulation $2\pi$ round the unit circle).
+
+### Figures
+
+All nine figures were rendered and checked (cone, right-cone, cylinder, right-cylinder, vec-tangent, grad-normal, thm-green, thm-stokes, thm-gauss). They match their captions: the $\theta$ arc in right-cone lies between the axis and $VP$; $PQ$ is perpendicular to the axis in right-cylinder; in vec-tangent the red vector is tangent to the curve at the tip of $\vec{r}(t)$ (slopes agree); in grad-normal the green line is tangent at $P$ and the red $\nabla\phi$ is perpendicular to it; thm-green is traversed anticlockwise; in thm-stokes the arrow on $C$ agrees with the upward $\hat{n}$ by the right-hand rule; thm-gauss shows radial outward normals.
+- Small remarks for the owner (no change made): the labels in vec-tangent read "r(t)" and "dr/dt" without vector arrows; in grad-normal the upper (lighter) level curve has no label, where the PDF figure labels it $= c_2$.
+
+### Placement
+
+- tp-13-04 and tp-13-05: TGT unit "Coordinate Geometry", chapter "Three-dimensional geometry" (syllabus Unit-10: "Three-dimensional geometry of the sphere, the cone and the cylinder"); PGT unit "Vectors and Three-Dimensional Geometry" (syllabus: "Equations of the sphere, the cone and the cylinder"). Correct.
+- tp-14-01 to tp-14-03: PGT unit "Vector Calculus" only (syllabus Unit-8). Correct; the TGT syllabus has no vector calculus.
+- The `key` lines describe the pages. No suggestion.
+
+`python -I -X utf8 tools/check_net.py`: last line `0 problems`.
+
+## Chapters 11 to 14, after the checks (22 November 2026)
+
+- Figures: `vec-parallelogram.svg` is wider, so the label a + b is no longer cut off; `hyperbola.svg` now shows the point P with PS₁ and PS₂; `polar-conic.svg` draws the semi-latus rectum l, as the PDF figure does; `grad-normal.svg` labels both level curves, φ = c₁ through P and the higher φ = c₂, as the PDF does (the captions say so). The labels of `vec-tangent.svg` are left without vector arrows.
+- Book references: the Loney references on tp-11-04 to tp-11-08 and the Shanti Narayan references on tp-13-03 to tp-13-05 now name the chapters by subject, since the chapter numbers could not be checked offline. The NCERT reference on tp-13-02 says that the plane is in the older editions.
+- tp-13-01 gained Example 3 (where two lines meet), a card and an exam line, because the PGT syllabus names the intersection of two lines and no page worked it.
+- The suggestion to list tp-11-04 also under TGT Unit 9 was not taken: Unit 9 is Euclidean geometry, which Chapter 17 of the notes covers; tp-11-04 is coordinate geometry.
+- Phone width: 53 display formulas of 11.2 to 14.3 were wider than a 375-pixel screen. They were split one step per line, and long boxed answers are boxed over two or three lines. Two were rewritten with the same value: in the right circular cone of 13.4 the factor cos²θ stands before the bracket, and in 13.5 AQ = [...]/√(a² + b² + c²) is written as 1/√(a² + b² + c²) × [...]. A script compared every other display formula with the checked text, ignoring line breaks, alignment marks and spacing: no difference. In the browser at 375 pixels all 18 pages render with no KaTeX error and nothing wider than the screen.

@@ -1,0 +1,54 @@
+@en
+# Polar equation of a conic; common tangents (PGT)
+
+> With a focus as the pole, every conic is $\frac{l}{r} = 1 + e\cos\theta$: $e$ tells whether it is an ellipse, a parabola or a hyperbola, and $l$ is the semi-latus rectum. Chords, tangents and directrices have matching polar forms.
+
+## The polar equation
+
+! addon | Polar equation of a conic; common tangents
+^ data/net/maths/fig/polar-conic.svg | a conic with the focus $S$ as pole and the axis as initial line; $P(r, \theta)$ and the semi-latus rectum $l$
+With a focus $S$ as pole and the axis as initial line:
+$$\frac{l}{r} = 1 + e\cos\theta$$
+($l$ = semi-latus rectum). Axis at angle $\alpha$: $\frac{l}{r} = 1 + e\cos(\theta - \alpha)$.
+- Chord joining the points $\alpha - \beta$ and $\alpha + \beta$: $\frac{l}{r} = e\cos\theta + \sec\beta\cos(\theta - \alpha)$; tangent at $\alpha$: $\frac{l}{r} = e\cos\theta + \cos(\theta - \alpha)$; directrix: $\frac{l}{r} = e\cos\theta$.
+- Focal chord: $\frac{1}{r_1} + \frac{1}{r_2} = \frac{2}{l}$.
+- Common tangents: write the tangent of one conic in slope form and impose the tangency condition of the other. E.g. $y^2 = 4ax$ and $x^2 = 4ay$: $x + y + a = 0$.
+
+! check | Conditions added
+In $\frac{l}{r} = 1 + e\cos\theta$ the initial line points from the focus towards the corresponding directrix, so $\theta = 0$ gives the nearer vertex, at distance $\frac{l}{1 + e}$. $e < 1$ ellipse, $e = 1$ parabola, $e > 1$ hyperbola (for $e > 1$, $r < 0$ values describe the other branch). In the chord formula, the angles $\alpha \pm \beta$ are the vectorial angles of the two ends. In the focal chord property $r_1$, $r_2$ are signed: for a hyperbola whose line through $S$ meets both branches, the distances satisfy $\left\lvert \frac{1}{SP} - \frac{1}{SQ} \right\rvert = \frac{2}{l}$.
+
+! example | Question PC1 — standard
+Identify the conic $\frac{8}{r} = 4 - 5\cos\theta$.
+**Solution.** $\frac{2}{r} = 1 - \frac{5}{4}\cos\theta$: $e = \frac{5}{4} > 1 \Rightarrow$ **hyperbola**, semi-latus rectum $l = 2$.
+
+## What it means
+
+- **Where the polar form comes from**: $SP = e \cdot PM$ with the directrix at distance $\frac{l}{e}$ from the focus gives $r = e\left(\frac{l}{e} - r\cos\theta\right)$, i.e. $\frac{l}{r} = 1 + e\cos\theta$.
+- **A minus sign** ($\frac{l}{r} = 1 - e\cos\theta$) only turns the conic round: the axis points the other way.
+- **Focal chord harmonic property**: $\frac{1}{SP} + \frac{1}{SQ} = \frac{2}{l}$ for every chord $PQ$ through the focus ($S$ between $P$ and $Q$); the semi-latus rectum is the harmonic mean of the segments.
+
+! example | Example 1 — a parabola
+Identify $r = \frac{6}{1 + \cos\theta}$ and give its latus rectum.
+**Solution.** $\frac{6}{r} = 1 + \cos\theta$: $e = 1$, a $\boxed{\text{parabola}}$, semi-latus rectum 6, latus rectum $\boxed{12}$.
+
+! example | Example 2 — the common tangent of two parabolas
+Find the common tangent of $y^2 = 4ax$ and $x^2 = 4ay$.
+**Solution.** Tangent to the first: $y = mx + \frac{a}{m}$. For the second, $y = mx + c$ touches $x^2 = 4ay$ when $c = -am^2$. So $\frac{a}{m} = -am^2$, $m^3 = -1$, $m = -1$: $\boxed{x + y + a = 0}$.
+
+? Polar equation of a conic with focus at the pole? :: $\frac{l}{r} = 1 + e\cos\theta$.
+? What is $l$? :: The semi-latus rectum.
+? Focal chord property? :: $\frac{1}{r_1} + \frac{1}{r_2} = \frac{2}{l}$.
+? Equation of the directrix in polar form? :: $\frac{l}{r} = e\cos\theta$.
+
+! exam | What the exam asks
+- Identifying a conic from $\frac{k}{r} = A + B\cos\theta$ (divide by $A$ first).
+- Tangent, chord and directrix in polar form; the focal chord property.
+- Common tangents of two conics.
+
+! recap | One-minute revision
+- $\frac{l}{r} = 1 + e\cos\theta$; divide to make the constant term 1, then read $e$ and $l$.
+- Tangent at $\alpha$: $\frac{l}{r} = e\cos\theta + \cos(\theta - \alpha)$.
+- $\frac{1}{r_1} + \frac{1}{r_2} = \frac{2}{l}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapter on the polar equation of a conic

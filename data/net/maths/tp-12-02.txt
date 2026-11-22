@@ -1,0 +1,108 @@
+@en
+# Scalar (dot) and vector (cross) products
+
+> The dot product measures how much two vectors point the same way (projections, angles, work); the cross product gives a perpendicular vector whose length is the area of the parallelogram (areas, moments). The scalar triple product is a volume and tests coplanarity.
+
+## Dot product
+
+! note | Dot product
+^ data/net/maths/fig/vec-projection.svg | the projection $\lvert \vec{a} \rvert\cos\theta$ of $\vec{a}$ on $\vec{b}$
+**Dot product**: $\vec{a} \cdot \vec{b} = \lvert \vec{a} \rvert\lvert \vec{b} \rvert\cos\theta = a_1b_1 + a_2b_2 + a_3b_3$ (a scalar).
+- $\vec{a} \cdot \vec{b} = 0 \iff \vec{a} \perp \vec{b}$; $\vec{a} \cdot \vec{a} = \lvert \vec{a} \rvert^2$.
+- **Projection** of $\vec{a}$ on $\vec{b}$: scalar $\frac{\vec{a} \cdot \vec{b}}{\lvert \vec{b} \rvert}$; vector $\frac{\vec{a} \cdot \vec{b}}{\lvert \vec{b} \rvert^2}\vec{b}$.
+- Cauchy–Schwarz $\lvert \vec{a} \cdot \vec{b} \rvert \leq \lvert \vec{a} \rvert\lvert \vec{b} \rvert$; triangle inequality $\lvert \vec{a} + \vec{b} \rvert \leq \lvert \vec{a} \rvert + \lvert \vec{b} \rvert$.
+- **Work** done by $\vec{F}$ in displacement $\vec{d}$: $W = \vec{F} \cdot \vec{d}$.
+
+! check | A condition added
+"$\vec{a} \cdot \vec{b} = 0 \iff \vec{a} \perp \vec{b}$" is for non-zero vectors (the zero vector has dot product $0$ with everything). The projection needs $\vec{b} \neq \vec{0}$.
+
+## Cross product
+
+! note | Cross product
+^ data/net/maths/fig/vec-cross.svg | $\vec{a} \times \vec{b}$ is perpendicular to both; its length is the area of the parallelogram on $\vec{a}$, $\vec{b}$
+$$\begin{aligned} &\vec{a} \times \vec{b} = \lvert \vec{a} \rvert\lvert \vec{b} \rvert\sin\theta\,\hat{n} \\ &= \begin{vmatrix} \hat{i} & \hat{j} & \hat{k} \\ a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \end{vmatrix} \end{aligned}$$
+($\hat{n} \perp$ both, right-hand rule).
+- $\vec{a} \times \vec{b} = -\vec{b} \times \vec{a}$; $\vec{a} \times \vec{a} = \vec{0}$; $\vec{a} \times \vec{b} = \vec{0} \iff \vec{a} \parallel \vec{b}$; $\sin\theta = \frac{\lvert \vec{a} \times \vec{b} \rvert}{\lvert \vec{a} \rvert\lvert \vec{b} \rvert}$.
+- **Area** of the parallelogram with sides $\vec{a}, \vec{b}$: $\lvert \vec{a} \times \vec{b} \rvert$; of the triangle: $\frac{1}{2}\lvert \vec{a} \times \vec{b} \rvert$; parallelogram with diagonals $\vec{d}_1, \vec{d}_2$: $\frac{1}{2}\lvert \vec{d}_1 \times \vec{d}_2 \rvert$.
+- Lagrange identity: $\lvert \vec{a} \times \vec{b} \rvert^2 = \lvert \vec{a} \rvert^2\lvert \vec{b} \rvert^2 - (\vec{a} \cdot \vec{b})^2$.
+- $\vec{a} + \vec{b} + \vec{c} = \vec{0} \Rightarrow \vec{a} \times \vec{b} = \vec{b} \times \vec{c} = \vec{c} \times \vec{a}$.
+- **Moment** of $\vec{F}$ acting at $\vec{r}$ about $O$: $\vec{M} = \vec{r} \times \vec{F}$.
+
+! check | A condition added
+"$\vec{a} \times \vec{b} = \vec{0} \iff \vec{a} \parallel \vec{b}$" counts the zero vector as parallel to every vector.
+
+## Triple products
+
+! note | Triple products
+^ data/net/maths/fig/vec-triple.svg | the parallelepiped on $\vec{a}$, $\vec{b}$, $\vec{c}$: volume $= [\vec{a}\ \vec{b}\ \vec{c}]$
+**Scalar triple product**
+$$\begin{aligned} &[\vec{a}\ \vec{b}\ \vec{c}] \\ &= (\vec{a} \times \vec{b}) \cdot \vec{c} \\ &= \begin{vmatrix} a_1 & a_2 & a_3 \\ b_1 & b_2 & b_3 \\ c_1 & c_2 & c_3 \end{vmatrix} \end{aligned}$$
+= volume of the parallelepiped with edges $\vec{a}, \vec{b}, \vec{c}$.
+- Cyclic order unchanged; swapping two changes the sign; $[\lambda\vec{a}\ \vec{b}\ \vec{c}] = \lambda[\vec{a}\ \vec{b}\ \vec{c}]$.
+- $[\vec{a}\ \vec{b}\ \vec{c}] = 0 \iff$ coplanar (or two parallel).
+- $[\vec{a} + \vec{b}\ \ \vec{b} + \vec{c}\ \ \vec{c} + \vec{a}] = 2[\vec{a}\ \vec{b}\ \vec{c}]$; tetrahedron volume $\frac{1}{6}[\vec{a}\ \vec{b}\ \vec{c}]$.
+- **Vector triple product**: $\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}$.
+- Unit vectors at angle $\theta$: $\cos\frac{\theta}{2} = \frac{1}{2}\lvert \hat{a} + \hat{b} \rvert$, $\sin\frac{\theta}{2} = \frac{1}{2}\lvert \hat{a} - \hat{b} \rvert$.
+
+! check | A condition added
+The volume is $\lvert [\vec{a}\ \vec{b}\ \vec{c}] \rvert$ (the triple product is negative for a left-handed set), and the tetrahedron's volume is $\frac{1}{6}\lvert [\vec{a}\ \vec{b}\ \vec{c}] \rvert$, with $\vec{a}$, $\vec{b}$, $\vec{c}$ along three edges from one vertex.
+
+! example | Question V1 — standard
+$\vec{a} = 2\hat{i} - \hat{j} + 2\hat{k}$, $\vec{b} = \hat{i} + 2\hat{j} - 2\hat{k}$. Find $\vec{a} \cdot \vec{b}$, the angle between them, and the projection of $\vec{a}$ on $\vec{b}$.
+**Solution.** $\vec{a} \cdot \vec{b} = 2 - 2 - 4 = -4$; $\lvert \vec{a} \rvert = \lvert \vec{b} \rvert = 3$; $\cos\theta = -\frac{4}{9} \Rightarrow \boxed{\theta = \cos^{-1}\left(-\frac{4}{9}\right)}$; projection $= \frac{-4}{3} = \boxed{-\frac{4}{3}}$.
+
+! example | Question V2 — standard
+Find the area of the triangle with vertices $A(1, 1, 1)$, $B(1, 2, 3)$, $C(2, 3, 1)$.
+**Solution.** $\vec{AB} = (0, 1, 2)$, $\vec{AC} = (1, 2, 0)$; $\vec{AB} \times \vec{AC} = (0 - 4, 2 - 0, 0 - 1) = (-4, 2, -1)$, magnitude $\sqrt{21}$. Area $= \boxed{\frac{\sqrt{21}}{2}}$.
+
+! example | Question V3 — standard
+Find $\lambda$ if $\hat{i} + \hat{j} + \hat{k}$, $2\hat{i} + \lambda\hat{j} - \hat{k}$, $\hat{i} - \hat{j} + 4\hat{k}$ are coplanar.
+**Solution.**
+$$\begin{aligned} &\begin{vmatrix} 1 & 1 & 1 \\ 2 & \lambda & -1 \\ 1 & -1 & 4 \end{vmatrix} \\ &= (4\lambda - 1) - (8 + 1) \\ &\quad + (-2 - \lambda) \\ &= 3\lambda - 12 = 0 \\ &\Rightarrow \boxed{\lambda = 4}. \end{aligned}$$
+
+! example | Question V4 — from the notes (work)
+Forces $4\hat{i} + \hat{j} - 3\hat{k}$ and $3\hat{i} + \hat{j} - \hat{k}$ displace a particle from $\hat{i} + 2\hat{j} + 3\hat{k}$ to $5\hat{i} + 4\hat{j} + \hat{k}$. Find the work done.
+**Solution.** $\vec{R} = 7\hat{i} + 2\hat{j} - 4\hat{k}$, $\vec{d} = 4\hat{i} + 2\hat{j} - 2\hat{k}$; $W = 28 + 4 + 8 = \boxed{40 \text{ units}}$.
+
+! addon | More identities
+$[\vec{a} \times \vec{b}\ \ \vec{b} \times \vec{c}\ \ \vec{c} \times \vec{a}] = [\vec{a}\ \vec{b}\ \vec{c}]^2$;
+$$(\vec{a} \times \vec{b}) \cdot (\vec{c} \times \vec{d}) = \begin{vmatrix} \vec{a} \cdot \vec{c} & \vec{a} \cdot \vec{d} \\ \vec{b} \cdot \vec{c} & \vec{b} \cdot \vec{d} \end{vmatrix};$$
+moment of $\vec{F}$ about a line through $A$ with unit vector $\hat{n}$: $[(\vec{r} - \vec{a}) \times \vec{F}] \cdot \hat{n}$.
+
+! trick | Shortcut / time-saver
+$\lvert \vec{a} + \vec{b} \rvert = \lvert \vec{a} - \vec{b} \rvert \iff \vec{a} \perp \vec{b}$. If $\lvert \vec{a} \rvert = \lvert \vec{b} \rvert$ then $(\vec{a} + \vec{b}) \perp (\vec{a} - \vec{b})$. Angle between two diagonals of a cube: $\cos^{-1}\frac{1}{3}$; between a diagonal and an edge: $\cos^{-1}\frac{1}{\sqrt{3}}$.
+
+## What it means
+
+- **Dot = "how much along"**: $\vec{a} \cdot \hat{b}$ is the (signed) length of the shadow of $\vec{a}$ on the line of $\vec{b}$; work is force times the distance moved *along* the force.
+- **Cross = "how much across"**: $\lvert \vec{a} \times \vec{b} \rvert$ is base times height of the parallelogram; the direction follows the right hand (fingers from $\vec{a}$ to $\vec{b}$, thumb along $\vec{a} \times \vec{b}$).
+- **Triple product as a determinant**: three vectors are coplanar exactly when the determinant of their components is $0$.
+- **BAC–CAB**: $\vec{a} \times (\vec{b} \times \vec{c}) = \vec{b}(\vec{a} \cdot \vec{c}) - \vec{c}(\vec{a} \cdot \vec{b})$ lies in the plane of $\vec{b}$ and $\vec{c}$.
+
+! example | Example 1 — a perpendicular unit vector
+Find a unit vector perpendicular to both $\hat{i} + \hat{j}$ and $\hat{j} + \hat{k}$.
+**Solution.** $(\hat{i} + \hat{j}) \times (\hat{j} + \hat{k}) = \hat{i} - \hat{j} + \hat{k}$, length $\sqrt{3}$: $\boxed{\pm\frac{1}{\sqrt{3}}(\hat{i} - \hat{j} + \hat{k})}$.
+
+! example | Example 2 — a volume
+Find the volume of the parallelepiped with edges $\hat{i} + \hat{j}$, $\hat{j} + \hat{k}$, $\hat{k} + \hat{i}$.
+**Solution.**
+$$\begin{aligned} &\begin{vmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{vmatrix} \\ &= 1(1) - 1(0 - 1) + 0 = 2: \end{aligned}$$
+volume $\boxed{2}$.
+
+? Condition for $\vec{a} \perp \vec{b}$? :: $\vec{a} \cdot \vec{b} = 0$.
+? Area of the triangle with sides $\vec{a}$, $\vec{b}$? :: $\frac{1}{2}\lvert \vec{a} \times \vec{b} \rvert$.
+? Condition for three vectors to be coplanar? :: $[\vec{a}\ \vec{b}\ \vec{c}] = 0$.
+? $\vec{a} \times (\vec{b} \times \vec{c})$? :: $(\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}$.
+
+! exam | What the exam asks
+- Angle between vectors; projections; work done.
+- Areas by the cross product; moments; perpendicular unit vectors.
+- Coplanarity and volumes by the scalar triple product; vector triple product.
+
+! recap | One-minute revision
+- $\vec{a} \cdot \vec{b} = ab\cos\theta$; $\lvert\vec{a} \times \vec{b}\rvert = ab\sin\theta$.
+- Area $\frac{1}{2}\lvert\vec{a} \times \vec{b}\rvert$; volume $\lvert[\vec{a}\ \vec{b}\ \vec{c}]\rvert$; tetrahedron $\frac{1}{6}\lvert[\vec{a}\ \vec{b}\ \vec{c}]\rvert$.
+- $\vec{a} \times (\vec{b} \times \vec{c}) = (\vec{a} \cdot \vec{c})\vec{b} - (\vec{a} \cdot \vec{b})\vec{c}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 12 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 12, Part II, chapter 10 (Vector algebra)

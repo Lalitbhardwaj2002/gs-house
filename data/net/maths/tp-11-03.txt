@@ -1,0 +1,84 @@
+@en
+# General equation of the second degree
+
+> $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$ is a pair of lines, a circle, a parabola, an ellipse or a hyperbola. Two numbers decide which: the determinant $\Delta$ and the sign of $h^2 - ab$. Rotating the axes removes the $xy$ term and gives the standard form.
+
+## Identifying the conic
+
+! note | The general equation of the second degree
+$$\begin{aligned} &ax^2 + 2hxy + by^2 \\ &\quad + 2gx + 2fy + c = 0, \\ &\Delta = \begin{vmatrix} a & h & g \\ h & b & f \\ g & f & c \end{vmatrix} \end{aligned}$$
+($h, g, f$ are half the coefficients of $xy, x, y$).
+| Condition | Curve |
+| $\Delta = 0$ | pair of lines ($\perp$ if $a + b = 0$; $\parallel$ if $h^2 = ab$) |
+| $a = b$, $h = 0$ | circle |
+| $\Delta \neq 0$, $h^2 = ab$ | parabola |
+| $\Delta \neq 0$, $h^2 < ab$ | ellipse (real if $\Delta(a + b) < 0$; imaginary — no real points — if $\Delta(a + b) > 0$) |
+| $\Delta \neq 0$, $h^2 > ab$ | hyperbola |
+| $\Delta \neq 0$, $h^2 > ab$, $a + b = 0$ | rectangular hyperbola |
+**Centre** (of a central conic): solve $\frac{\partial F}{\partial x} = 0$, $\frac{\partial F}{\partial y} = 0$.
+
+! check | Conditions added
+The circle row needs $a \neq 0$. Then $\Delta = a(ac - g^2 - f^2)$: the circle is real when $g^2 + f^2 - ac > 0$ (that is $\Delta(a + b) < 0$, as for a real ellipse), a point circle when $g^2 + f^2 - ac = 0$ (then $\Delta = 0$), and has no real points when $g^2 + f^2 - ac < 0$. A central conic is one with $h^2 \neq ab$ (ellipse or hyperbola); the parabola has no centre.
+
+! example | Question GE1 — LT 2025
+Identify the conic $5x^2 - 6xy + 5y^2 + 10x - 6y + 10 = 0$.
+**Solution.** $a = b = 5$, $h = -3$, $g = 5$, $f = -3$, $c = 10$. $\Delta = 250 + 90 - 45 - 125 - 90 = 80 \neq 0$; $h^2 - ab = 9 - 25 < 0 \Rightarrow$ **ellipse**. (Strictly an *imaginary* ellipse: $\Delta(a + b) = 80 \cdot 10 > 0$. The centre is $(-1, 0)$ and the equation becomes $5X^2 - 6XY + 5Y^2 + 5 = 0$, which no real point satisfies.)
+
+! example | Question GE2 — LT 2025
+Find the centre of $5x^2 - 6xy + 5y^2 - 4x - 4y + 5 = 0$.
+**Solution.** $F_x = 10x - 6y - 4 = 0$, $F_y = -6x + 10y - 4 = 0$. Adding: $4x + 4y = 8$; subtracting: $16x - 16y = 0$. Centre $\boxed{(1, 1)}$.
+
+! check | A note added
+Like GE1, this conic has no real points: $\Delta = 16$ and $\Delta(a + b) > 0$. At the centre the constant is $c' = g + f + c = -2 - 2 + 5 = 1$, so the equation becomes $5X^2 - 6XY + 5Y^2 + 1 = 0$. The centre $(1, 1)$ is still found as above.
+
+! example | Question GE3 — LT 2025
+Identify $3x^2 + 4y^2 - 18x - 24y + 47 = 0$.
+**Solution.** $a = 3$, $b = 4$, $h = 0$, $g = -9$, $f = -12$, $c = 47$: $\Delta = 564 - 432 - 324 = -192 \neq 0$, $h^2 < ab \Rightarrow$ **ellipse**.
+
+! addon | Transformation of axes and reduction
+Shift of origin to $(h, k)$: $x = X + h$, $y = Y + k$. Rotation by $\theta$: $x = X\cos\theta - Y\sin\theta$, $y = X\sin\theta + Y\cos\theta$; the $xy$ term disappears when $\tan 2\theta = \frac{2h}{a - b}$. Invariants: $a + b$, $ab - h^2$, $\Delta$. After moving the origin to the centre $(\alpha, \beta)$ the constant becomes $c' = g\alpha + f\beta + c$.
+
+! check | A condition added
+In the shift of origin, $h$ and $k$ are the new origin's coordinates (not the coefficient $h$ of $xy$). If $a = b$, the $xy$ term disappears for $\theta = 45°$.
+
+! example | Question GE4 — standard (reduction)
+Reduce $5x^2 - 6xy + 5y^2 = 8$ to standard form and find its eccentricity.
+**Solution.** $a' + b' = 10$, $a'b' = 25 - 9 = 16 \Rightarrow a', b' = 2, 8$: $2X^2 + 8Y^2 = 8 \Rightarrow \frac{X^2}{4} + \frac{Y^2}{1} = 1$. Semi-axes $2, 1$, $e = \sqrt{1 - \frac{1}{4}} = \boxed{\frac{\sqrt{3}}{2}}$.
+
+! trick | Shortcut / time-saver
+For a conic with no $xy$ term, let $A$ = coefficient of $x^2$ and $B$ = coefficient of $y^2$ (take them positive):
+- **Ellipse** $Ax^2 + By^2 + \cdots = 0$: $e = \sqrt{1 - \frac{\text{smaller of } A, B}{\text{larger of } A, B}}$. E.g. $9x^2 + 25y^2 = 225$: $e = \sqrt{1 - \frac{9}{25}} = \frac{4}{5}$. (The linear terms do not matter: completing squares only shifts the centre.)
+- **Hyperbola** $Ax^2 - By^2 + \cdots = 0$: if, after completing squares, the $x$-term is the positive one (transverse axis along $x$), $e = \sqrt{1 + \frac{A}{B}}$; if the $y$-term is positive, $e = \sqrt{1 + \frac{B}{A}}$. E.g. $16x^2 - 9y^2 = 144$: $e = \sqrt{1 + \frac{16}{9}} = \frac{5}{3}$.
+- Rectangular hyperbola ($A = B$): always $e = \sqrt{2}$.
+
+## What it means
+
+- **$h^2 - ab$** decides the shape at infinity: two real directions (hyperbola), one (parabola), none (ellipse). $\Delta$ decides whether the curve breaks into two lines.
+- **Invariants**: rotating the axes changes the coefficients but not $a + b$, $ab - h^2$ and $\Delta$; that is how GE4 finds $a'$, $b'$ without computing the angle.
+- **Reduction recipe**: centre (solve $F_x = F_y = 0$), new constant $c' = g\alpha + f\beta + c$, then rotate: $a'X^2 + b'Y^2 + c' = 0$ with $a'$, $b'$ the roots of $t^2 - (a + b)t + (ab - h^2) = 0$.
+
+! example | Example 1 — a parabola
+Identify $x^2 + 2xy + y^2 - 2x - 1 = 0$.
+**Solution.** $h^2 = 1 = ab$; $\Delta = 1 \cdot 1 \cdot (-1) + 2 \cdot 0 \cdot (-1) \cdot 1 - 1 \cdot 0 - 1 \cdot 1 - (-1) \cdot 1 = -1 - 1 + 1 = -1 \neq 0$: $\boxed{\text{parabola}}$.
+
+! example | Example 2 — a rectangular hyperbola
+Identify $x^2 - y^2 + 3xy + x + 2 = 0$.
+**Solution.** $a = 1$, $b = -1$, $h = \frac{3}{2}$, $g = \frac{1}{2}$, $f = 0$, $c = 2$. $h^2 - ab = \frac{9}{4} + 1 > 0$ and $a + b = 0$; $\Delta = -2 + 0 - 0 + \frac{1}{4} - \frac{9}{2} = -\frac{25}{4} \neq 0$: $\boxed{\text{rectangular hyperbola}}$.
+
+? Condition for the general second-degree equation to be a parabola? :: $\Delta \neq 0$ and $h^2 = ab$.
+? Ellipse or hyperbola: which sign of $h^2 - ab$? :: Ellipse $h^2 < ab$; hyperbola $h^2 > ab$.
+? When is a hyperbola rectangular? :: When $a + b = 0$ (and $\Delta \neq 0$).
+? Angle that removes the $xy$ term? :: $\tan 2\theta = \frac{2h}{a - b}$.
+
+! exam | What the exam asks
+- Identifying the conic from $\Delta$ and $h^2 - ab$ (LT 2025).
+- Centre of a central conic; reduction to standard form; eccentricity.
+- Invariants under rotation.
+
+! recap | One-minute revision
+- $\Delta = abc + 2fgh - af^2 - bg^2 - ch^2$.
+- $\Delta = 0$ lines; $h^2 = ab$ parabola; $h^2 < ab$ ellipse; $h^2 > ab$ hyperbola; $a + b = 0$ rectangular.
+- Centre from $F_x = F_y = 0$; $\tan 2\theta = \frac{2h}{a - b}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapters on the general equation of the second degree

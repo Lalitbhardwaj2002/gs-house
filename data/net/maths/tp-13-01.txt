@@ -1,0 +1,66 @@
+@en
+# Direction cosines and the straight line
+
+> A direction in space is given by the cosines of its angles with the three axes, or by any three numbers proportional to them. A line is a point plus a direction; the angle between two lines comes from their direction ratios.
+
+## Direction cosines and ratios; the line
+
+! note | Direction cosines and the straight line
+^ data/net/maths/fig/dir-cosines.svg | the line $OP$ making angles $\alpha$, $\beta$, $\gamma$ with the $x$-, $y$- and $z$-axes
+If a line makes angles $\alpha, \beta, \gamma$ with the axes, its **direction cosines** are $l = \cos\alpha$, $m = \cos\beta$, $n = \cos\gamma$, with
+$$\begin{aligned} &l^2 + m^2 + n^2 = 1 \\ &(\text{so } \sin^2\alpha + \sin^2\beta + \sin^2\gamma \\ &= 2). \end{aligned}$$
+**Direction ratios** $a, b, c$ are any numbers proportional to $l, m, n$: $l = \frac{a}{\sqrt{a^2 + b^2 + c^2}}$, etc. The line through $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ has DRs $x_2 - x_1$, $y_2 - y_1$, $z_2 - z_1$.
+- Line: $\frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{z - z_1}{c}$; vector form $\vec{r} = \vec{a} + \lambda\vec{b}$.
+- Angle between lines:
+$$\begin{aligned} &\cos\theta = \\ &\frac{\lvert a_1a_2 + b_1b_2 + c_1c_2 \rvert}{\sqrt{a_1^2 + b_1^2 + c_1^2}\sqrt{a_2^2 + b_2^2 + c_2^2}}. \end{aligned}$$
+
+! check | Conditions added
+Direction ratios are not all zero; the conversion to direction cosines fixes them up to a common sign ($\pm$). In the symmetric form a zero denominator means the numerator is zero too (e.g. $c = 0$ gives $z = z_1$). With the modulus the formula gives the acute angle between the lines; the lines are perpendicular iff $a_1a_2 + b_1b_2 + c_1c_2 = 0$ and parallel iff $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$.
+
+! example | Question DL1 — from the notes (Ex. 30)
+Find the equation of the line through $(3, 4, 1)$ and $(5, 1, 6)$, and the point where it meets the $xy$-plane.
+**Solution.** DRs $2, -3, 5$: $\boxed{\frac{x - 3}{2} = \frac{y - 4}{-3} = \frac{z - 1}{5}} = \lambda$. On the $xy$-plane $z = 0 \Rightarrow \lambda = -\frac{1}{5}$: point $\left(3 - \frac{2}{5}, 4 + \frac{3}{5}, 0\right) = \boxed{\left(\frac{13}{5}, \frac{23}{5}, 0\right)}$.
+
+! example | Question DL2 — from the notes (Ex. 26)
+A line makes angles $\alpha, \beta, \gamma, \delta$ with the four diagonals of a cube. Prove that $\cos^2\alpha + \cos^2\beta + \cos^2\gamma + \cos^2\delta = \frac{4}{3}$.
+**Solution.** The diagonals have DCs $\frac{1}{\sqrt{3}}(\pm 1, \pm 1, 1)$. For a line with DCs $l, m, n$:
+$$\begin{aligned} &\cos\alpha = \tfrac{l + m + n}{\sqrt{3}}, \ \cos\beta \\ &= \tfrac{-l + m + n}{\sqrt{3}}, \ \cos\gamma \\ &= \tfrac{l - m + n}{\sqrt{3}}, \ \cos\delta \\ &= \tfrac{l + m - n}{\sqrt{3}}. \end{aligned}$$
+Squaring and adding, the cross terms cancel: $\frac{4(l^2 + m^2 + n^2)}{3} = \frac{4}{3}$.
+
+## What it means
+
+- **Why $l^2 + m^2 + n^2 = 1$**: a unit vector along the line has components $(\cos\alpha, \cos\beta, \cos\gamma)$, and its length is 1.
+- **Ratios are enough for a direction**: multiplying $a, b, c$ by any non-zero number does not change the line's direction.
+- **Projection** of the segment joining $P(x_1, y_1, z_1)$ and $Q(x_2, y_2, z_2)$ on a line with DCs $l, m, n$: $\lvert l(x_2 - x_1) + m(y_2 - y_1) + n(z_2 - z_1) \rvert$.
+
+! example | Example 1 — direction cosines from ratios
+Find the direction cosines of the line with direction ratios $2, -1, 2$.
+**Solution.** $\sqrt{4 + 1 + 4} = 3$: $\boxed{\frac{2}{3}, -\frac{1}{3}, \frac{2}{3}}$ (or all with the opposite sign).
+
+! example | Example 2 — an angle between lines
+Find the angle between the lines with DRs $1, 1, 2$ and $\sqrt{3} - 1, -\sqrt{3} - 1, 4$.
+**Solution.** $a_1a_2 + b_1b_2 + c_1c_2 = \sqrt{3} - 1 - \sqrt{3} - 1 + 8 = 6$; lengths $\sqrt{6}$ and $\sqrt{4 - 2\sqrt{3} + 4 + 2\sqrt{3} + 16} = \sqrt{24}$. $\cos\theta = \frac{6}{\sqrt{144}} = \frac{1}{2}$: $\boxed{\theta = 60°}$.
+
+! example | Example 3 — where two lines meet
+Show that the lines $\frac{x - 1}{2} = \frac{y - 2}{3} = \frac{z - 3}{4}$ and $\frac{x - 4}{5} = \frac{y - 1}{2} = \frac{z}{1}$ intersect, and find the common point.
+**Solution.** General points of the two lines: $(1 + 2\lambda, 2 + 3\lambda, 3 + 4\lambda)$ and $(4 + 5\mu, 1 + 2\mu, \mu)$. The $z$-coordinates give $\mu = 3 + 4\lambda$; the $x$-coordinates give $1 + 2\lambda = 4 + 5(3 + 4\lambda)$, so $\lambda = -1$ and $\mu = -1$. Test the $y$-coordinates: $2 - 3 = -1$ and $1 - 2 = -1$ ✓. The lines meet at $\boxed{(-1, -1, -1)}$. (Had the third pair not agreed, the lines would not meet: they would be parallel or skew.)
+
+? Relation between the direction cosines? :: $l^2 + m^2 + n^2 = 1$.
+? $\sin^2\alpha + \sin^2\beta + \sin^2\gamma$? :: 2.
+? Direction ratios of the line through $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$? :: $x_2 - x_1$, $y_2 - y_1$, $z_2 - z_1$.
+? Angle between a diagonal of a cube and an edge? :: $\cos^{-1}\frac{1}{\sqrt{3}}$.
+? How do you test whether two lines meet? :: Equate their general points; two coordinates fix $\lambda$ and $\mu$, and the third must then agree.
+
+! exam | What the exam asks
+- Direction cosines from ratios; $l^2 + m^2 + n^2 = 1$ problems.
+- Equation of a line through two points; where it meets a coordinate plane.
+- Angles between lines; the cube's diagonals (DL2).
+- Whether two lines meet, and the point where they meet.
+
+! recap | One-minute revision
+- $l^2 + m^2 + n^2 = 1$; $l = \frac{a}{\sqrt{a^2 + b^2 + c^2}}$.
+- Line $\frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{z - z_1}{c}$.
+- $\cos\theta = \frac{\lvert a_1a_2 + b_1b_2 + c_1c_2\rvert}{\sqrt{\sum a_1^2}\sqrt{\sum a_2^2}}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 13 (the full PDF is linked on the subject page)
+& NCERT Mathematics, Class 12, Part II, chapter 11 (Three dimensional geometry)

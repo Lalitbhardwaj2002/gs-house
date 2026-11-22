@@ -1,0 +1,76 @@
+@en
+# Circle
+
+> A circle is fixed by its centre and radius. With the shorthand $S$, $S_1$ and $T$, one rule gives the tangent at a point, the chord of contact, the chord with a given mid-point and the pair of tangents; $\sqrt{S_1}$ is the length of the tangent.
+
+## Equations, tangents and chords
+
+! note | Circle
+^ data/net/maths/fig/circle-tangents.svg | the two tangents from $P(x_1, y_1)$, of length $L$, and the chord of contact; centre $C$, radius $R$
+- $(x - h)^2 + (y - k)^2 = r^2$; general $x^2 + y^2 + 2gx + 2fy + c = 0$: centre $(-g, -f)$, $r = \sqrt{g^2 + f^2 - c}$; $r = 0$: point circle.
+- Diameter form: $(x - x_1)(x - x_2) + (y - y_1)(y - y_2) = 0$.
+- With $S_1 = S(x_1, y_1)$ and $T = xx_1 + yy_1 + g(x + x_1) + f(y + y_1) + c$:
+- tangent at $(x_1, y_1)$: $T = 0$; chord of contact from an external point: $T = 0$;
+- chord with mid-point $(x_1, y_1)$: $T = S_1$; pair of tangents: $SS_1 = T^2$.
+- Length of tangent from $(x_1, y_1)$: $L = \sqrt{S_1}$. $S_1 > 0$ outside (2 tangents), $= 0$ on, $< 0$ inside.
+- Area of triangle formed by the tangents and the chord of contact $= \frac{RL^3}{R^2 + L^2}$.
+
+! check | Conditions added
+The general equation is a real circle only when $g^2 + f^2 - c \geq 0$ (for $< 0$ there are no real points). $S$ means the left side of the circle's equation with the coefficients of $x^2$ and $y^2$ equal to $1$. The length $L = \sqrt{S_1}$ needs that normal form; $T = 0$, $T = S_1$ and $SS_1 = T^2$ do not change when the whole equation is multiplied by a constant.
+
+! note | Sector, segment; two circles
+Sector area $\frac{r^2}{2}\theta$; triangle $OAB = \frac{r^2}{2}\sin\theta$; minor segment $\frac{r^2}{2}(\theta - \sin\theta)$; arc $l = r\theta$. The largest rectangle in a circle is a square of area $2r^2$.
+
+! check | A condition added
+$\theta$ is the angle $AOB$ at the centre, in radians. $\frac{r^2}{2}(\theta - \sin\theta)$ is the segment on the arc $AB$ of angle $\theta$; it is the minor segment when $\theta < \pi$.
+
+^ data/net/maths/fig/two-circles.svg | two circles: separate (4 common tangents), touching externally (3), intersecting (2), touching internally (1), one inside the other (0)
+
+! addon | More circle results
+$y = mx + c$ touches $x^2 + y^2 = a^2$ iff $c^2 = a^2(1 + m^2)$: tangent $y = mx \pm a\sqrt{1 + m^2}$. Director circle of $x^2 + y^2 = a^2$: $x^2 + y^2 = 2a^2$. Radical axis $S_1 - S_2 = 0$; family through intersections $S_1 + \lambda S_2 = 0$. Orthogonal circles: $2g_1g_2 + 2f_1f_2 = c_1 + c_2$. Direct common tangent length $\sqrt{d^2 - (r_1 - r_2)^2}$, transverse $\sqrt{d^2 - (r_1 + r_2)^2}$.
+
+! check | Conditions added
+In the addon, $S_1$ and $S_2$ are the two circles' equations (not $S$ at a point), both with the coefficients of $x^2$ and $y^2$ equal to $1$. $d$ is the distance between the centres; the transverse tangents exist only when $d > r_1 + r_2$. $S_1 + \lambda S_2 = 0$ ($\lambda \neq -1$) gives the circles through the common points.
+
+! example | Question C1 — standard
+Find the centre and radius of $x^2 + y^2 - 4x + 6y - 12 = 0$ and the length of the tangent from $(5, 2)$.
+**Solution.** Centre $(2, -3)$, $r = \sqrt{4 + 9 + 12} = \boxed{5}$. $S_1 = 25 + 4 - 20 + 12 - 12 = 9$, length $= \sqrt{9} = \boxed{3}$.
+
+! example | Question C2 — standard
+Find the equation of the tangent to $x^2 + y^2 = 25$ at $(3, 4)$ and the chord of $x^2 + y^2 = 25$ with mid-point $(1, 2)$.
+**Solution.** Tangent $T = 0$: $\boxed{3x + 4y = 25}$. Chord: $T = S_1 \Rightarrow x + 2y - 25 = 1 + 4 - 25 \Rightarrow \boxed{x + 2y = 5}$.
+
+! trick | Shortcut / time-saver
+$T = 0$, $T = S_1$, $SS_1 = T^2$ work for every conic: build $T$ by the rule $x^2 \to xx_1$, $y^2 \to yy_1$, $2xy \to xy_1 + x_1y$, $2x \to x + x_1$, $2y \to y + y_1$, constant unchanged.
+
+## What it means
+
+- **$S_1$ is a power**: for a point outside, $S_1 = (\text{distance to centre})^2 - r^2$, which is exactly the square of the tangent length (Pythagoras in the right angle at the point of contact).
+- **Two circles**: compare $d$ (distance between centres) with $r_1 + r_2$ and $\lvert r_1 - r_2 \rvert$ to know how many common tangents there are.
+- **Radical axis** $S_1 - S_2 = 0$: the points with equal tangent lengths to both circles; for intersecting circles it is the common chord.
+
+! example | Example 1 — circle through three points
+Find the circle through $(0, 0)$, $(4, 0)$ and $(0, 6)$.
+**Solution.** $c = 0$; $16 + 8g = 0 \Rightarrow g = -2$; $36 + 12f = 0 \Rightarrow f = -3$: $\boxed{x^2 + y^2 - 4x - 6y = 0}$ (centre $(2, 3)$; the right angle at the origin makes the hypotenuse a diameter).
+
+! example | Example 2 — orthogonal circles
+Are $x^2 + y^2 - 2x + 4y + 1 = 0$ and $x^2 + y^2 + 4x + 2y - 1 = 0$ orthogonal?
+**Solution.** $2g_1g_2 + 2f_1f_2 = 2(-1)(2) + 2(2)(1) = 0$, and $c_1 + c_2 = 1 - 1 = 0$: $\boxed{\text{yes}}$.
+
+? Centre and radius of $x^2 + y^2 + 2gx + 2fy + c = 0$? :: Centre $(-g, -f)$, radius $\sqrt{g^2 + f^2 - c}$.
+? Length of the tangent from $(x_1, y_1)$? :: $\sqrt{S_1}$.
+? Chord with a given mid-point? :: $T = S_1$.
+? Condition for two circles to cut orthogonally? :: $2g_1g_2 + 2f_1f_2 = c_1 + c_2$.
+
+! exam | What the exam asks
+- Centre, radius, tangent length; tangent at a point and of a given slope.
+- Chord of contact, chord with a mid-point, pair of tangents.
+- Two circles: common tangents, radical axis, orthogonality.
+
+! recap | One-minute revision
+- Centre $(-g, -f)$, $r = \sqrt{g^2 + f^2 - c}$; $L = \sqrt{S_1}$.
+- Tangent $T = 0$; mid-point chord $T = S_1$; pair of tangents $SS_1 = T^2$.
+- Tangent of slope $m$ to $x^2 + y^2 = a^2$: $y = mx \pm a\sqrt{1 + m^2}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 11 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Coordinate Geometry, Part I, the chapters on the circle and on systems of circles
