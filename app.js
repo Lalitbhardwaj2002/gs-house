@@ -582,6 +582,7 @@ function handleAction(pid, msg, conn = null) {
       if (Array.isArray(msg.sections)) st.sections = [...new Set(msg.sections.filter((id) => sectionById[id]))];
       if (CONFIG.counts.includes(msg.count)) st.count = msg.count;
       if (CONFIG.timers.includes(msg.timer)) st.timer = msg.timer;
+      if (Number.isInteger(msg.clock) && msg.clock >= 0 && msg.clock <= 240) st.clock = msg.clock;
       if (CONFIG.negatives.includes(msg.negative)) st.negative = msg.negative;
       if (['all', 'tgt', 'higher'].includes(msg.track) && msg.track !== st.track) {
         st.track = msg.track;
@@ -642,7 +643,8 @@ function handleAction(pid, msg, conn = null) {
 
 function backToLobby(s) {
   s.players = s.players.filter((p) => p.connected);
-  Object.assign(s, { phase: 'lobby', round: 0, total: 0, qids: [], reports: {}, locked: false, paused: false, pauseLeft: 0, planned: 0 });
+  Object.assign(s, { phase: 'lobby', round: 0, total: 0, qids: [], reports: {}, locked: false, paused: false, pauseLeft: 0, planned: 0, clockEndsAt: 0, clockLeft: 0, timeUp: false });
+  clearTimeout(host.clockTimer);
   host.answers = {};
 }
 
@@ -706,7 +708,30 @@ async function startQuiz(only = null) {
   s.planned = 0;
   host.answers = {};
   s.players.forEach((p) => Object.assign(p, blankStats(), { answered: false }));
+  // A whole-test clock (maths mocks): one countdown for all the questions, from the first one.
+  s.timeUp = false;
+  s.clockLeft = 0;
+  s.clockEndsAt = s.settings.clock ? Date.now() + s.settings.clock * 60 * 1000 : 0;
+  armClock();
   nextRound();
+}
+
+function armClock() {
+  const s = host.state;
+  clearTimeout(host.clockTimer);
+  if (s && s.phase !== 'over' && s.clockEndsAt) host.clockTimer = setTimeout(clockUp, Math.max(0, s.clockEndsAt - Date.now()));
+}
+
+// The whole-test clock has run out: the question on screen and those not reached count as skipped.
+function clockUp() {
+  const s = host.state;
+  if (!s || !['question', 'loading'].includes(s.phase)) return;
+  if (s.phase === 'question' && !s.locked) for (const p of s.players) if (!p.answered) { p.skipped += 1; p.streak = 0; }
+  s.timeUp = true;
+  s.paused = false;
+  s.pauseLeft = 0;
+  s.clockEndsAt = 0;
+  finishQuiz();
 }
 
 function nextRound() {
@@ -792,6 +817,7 @@ function pauseQuiz() {
   clearTimeout(host.timer);
   s.pauseLeft = s.endsAt && !s.locked ? Math.max(0, s.endsAt - Date.now()) : 0;
   s.endsAt = 0;
+  if (s.clockEndsAt) { clearTimeout(host.clockTimer); s.clockLeft = Math.max(0, s.clockEndsAt - Date.now()); s.clockEndsAt = 0; }
   s.paused = true;
   hostChanged();
 }
@@ -804,6 +830,7 @@ function resumeQuiz() {
     host.timer = setTimeout(lockRound, s.pauseLeft);
   }
   s.pauseLeft = 0;
+  if (s.clockLeft) { s.clockEndsAt = Date.now() + s.clockLeft; s.clockLeft = 0; armClock(); }
   hostChanged();
 }
 
@@ -832,6 +859,7 @@ function submitQuiz() {
 function finishQuiz() {
   const s = host.state;
   clearTimeout(host.timer);
+  clearTimeout(host.clockTimer);
   s.phase = 'over';
   s.reports = Object.fromEntries(s.players.map((p) => [p.id, reportFor(p)]));
   rememberSeen(s.qids);
@@ -872,6 +900,7 @@ function resumeHostTimer() {
   const s = host.state;
   clearTimeout(host.timer);
   if (s.phase === 'question' && !s.locked && s.endsAt) host.timer = setTimeout(lockRound, Math.max(0, s.endsAt - Date.now()));
+  armClock();
 }
 
 function hostChanged() {
@@ -896,6 +925,7 @@ function snapshot(now) {
     type: 'state', code: s.code, solo: s.solo, phase: s.phase, hostId: s.hostId, settings: s.settings,
     round: s.round, total: s.total, locked: s.locked, paused: !!s.paused, planned: s.planned || 0,
     timeLeft: s.phase !== 'question' || s.locked ? 0 : s.paused ? s.pauseLeft || 0 : s.endsAt ? Math.max(0, s.endsAt - now) : 0,
+    clockLeft: s.phase !== 'question' ? 0 : s.paused ? s.clockLeft || 0 : s.clockEndsAt ? Math.max(0, s.clockEndsAt - now) : 0, timeUp: !!s.timeUp,
     players: s.players.map((p) => ({
       id: p.id, name: p.name, color: p.color, connected: p.connected, answered: p.answered,
       score: p.score, correct: p.correct, wrong: p.wrong, skipped: p.skipped, streak: p.streak, timeMs: p.timeMs,
@@ -907,6 +937,7 @@ function snapshot(now) {
 function closeRoom() {
   for (const conn of host.conns.values()) if (conn.open) try { conn.send({ type: 'closed' }); } catch { /* ignore */ }
   clearTimeout(host.timer);
+  clearTimeout(host.clockTimer);
   clearInterval(host.loop);
   const peer = host.peer;
   setTimeout(() => peer && peer.destroy(), 400);
@@ -1041,7 +1072,7 @@ function act(msg) {
 // Ends the quiz on this device. `stay` = 'none' only stops it, for a caller that shows the next screen itself.
 function leaveGame(stay = '') {
   if (net && net.role === 'host') {
-    if (net.solo) { clearTimeout(host.timer); host.state = null; } else closeRoom();
+    if (net.solo) { clearTimeout(host.timer); clearTimeout(host.clockTimer); host.state = null; } else closeRoom();
   }
   if (net && net.role === 'guest') {
     const g = net;
@@ -1095,6 +1126,8 @@ function receiveState(st) {
   const paused = st.phase === 'question' && st.paused;
   ui.endsAt = st.timeLeft && !paused ? Date.now() + st.timeLeft : 0;
   ui.pauseLeft = paused ? st.timeLeft : 0;
+  ui.clockEndsAt = st.clockLeft && !paused ? Date.now() + st.clockLeft : 0;   // the whole-test clock
+  ui.clockLeft = paused ? st.clockLeft : 0;
   // Time spent paused is not counted in the time taken to answer.
   if (paused && !local.pausedAt) { local.pausedAt = Date.now(); saveLocal(); }
   if (!paused && local.pausedAt) {
@@ -1246,8 +1279,8 @@ function setupHTML(v, amHost) {
     return `
     <div class="setup-grid mq-setup" lang="en">
       <div class="setup-rules">
-        <p class="field-label">⏱️ ${t('timer')}</p>
-        <div class="segs segs-5">${seg('timer', CONFIG.timers, (n) => (n ? t('secs', n) : t('noLimit')))}</div>
+        <p class="field-label">⏱️ One clock for the whole test</p>
+        <div class="segs segs-4">${seg('clock', [...new Set([0, st.mq.clock || 0, 60, 100, 120])].sort((a, b) => a - b).slice(0, 4), (n) => (n ? `${n} min` : t('noLimit')))}</div>
         <p class="field-label">➖ ${t('negative')}</p>
         <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '1/3' : '1/4'}` : t('none')))}</div>
       </div>
@@ -1357,6 +1390,7 @@ function questionHTML(v, amHost) {
     <section class="q-head">
       <div class="progress"><span>${t('qOf', v.round, v.total)}</span><div class="bar"><span style="width:${pct(v.round - 1, v.total)}%"></span></div></div>
       ${v.settings.timer ? '<div class="timer" id="timer"><svg viewBox="0 0 36 36"><circle class="track" cx="18" cy="18" r="16"/><circle class="fill" id="timer-fill" cx="18" cy="18" r="16" pathLength="100"/></svg><span data-countdown></span></div>' : ''}
+      ${v.settings.clock ? '<div class="exam-clock" id="exam-clock" title="Time left for the whole test">⏱️ <span data-clock></span></div>' : ''}
     </section>${controls}`;
   const board = v.solo ? '' : `<section class="card"><h2>${t('leaderboard')} <span class="muted small" id="answered-count"></span></h2><div class="board" id="board"></div></section>`;
   // While the quiz is paused the question is hidden, so that a pause cannot be used as thinking time.
@@ -1419,16 +1453,14 @@ function feedbackHTML(q, body, mine, ql) {
 }
 
 // The solution of a maths question: the steps (a "$$…$$" line is a displayed formula), the point to
-// remember, notes on the other options when there are any, the paper and question number, and the
-// notes topic that teaches it. Where the board's official key differs from the worked answer, it says so.
+// remember, the paper and question number, and the notes topic that teaches it (the option-by-option
+// notes are left out, as the owner asked). Where the board's official key differs from the worked answer, it says so.
 function mathsFeedbackHTML(q, body, mine) {
   const right = `${LETTERS[q.answer]}. ${mtext(body.options[q.answer])}`;
   const verdict = !mine ? `<div class="verdict missed">⏳ ${t('missed')} — ${t('rightAnswer')}: <b>${right}</b></div>`
     : mine.choice === q.answer ? `<div class="verdict good">${DIYA_SVG}<b>${t('correct')}</b>${streakNote()}</div>`
       : `<div class="verdict bad">✗ <b>${t('wrong')}</b> — ${t('rightAnswer')}: <b>${right}</b></div>`;
   const flow = (body.path || []).map((step) => `<span class="node">${esc(step)}</span>`).join('<span class="arrow">➜</span>');
-  const notes = (body.notes || []).some((n) => n) ? `<details class="more" data-keep="notes" ${prefs.notes ? 'open' : ''}><summary>🔎 About the options</summary><div class="notes">${body.options.map((o, i) => (body.notes[i]
-    ? `<div class="note ${i === q.answer ? 'ok' : mine && mine.choice === i ? 'bad' : ''}"><b class="note-letter">${LETTERS[i]}</b><p class="note-text">${mtext(body.notes[i])}</p></div>` : '')).join('')}</div></details>` : '';
   const topic = q.topic && sectionById[`mt/${q.topic}`] ? sectionById[`mt/${q.topic}`].en : '';
   const keyNote = Number.isInteger(q.key) && q.key !== q.answer ? ` · the board's key gave ${LETTERS[q.key]}; see the solution` : '';
   return `
@@ -1437,7 +1469,6 @@ function mathsFeedbackHTML(q, body, mine) {
       ${flow ? `<div class="flow" aria-label="Topic">${flow}</div>` : ''}
       <div class="why"><h3>📖 Solution</h3>${mparas(body.explanation)}</div>
       ${(body.facts || []).length ? `<div class="facts"><h3>📜 ${t('remember')}</h3><ul>${body.facts.map((f) => `<li>${mtext(f)}</li>`).join('')}</ul></div>` : ''}
-      ${notes}
       <p class="refs">📝 ${esc(q.src ? q.src.label : '')}${keyNote}${topic ? ` · 📖 Notes: ${esc(topic)}` : ''}</p>
     </section>`;
 }
@@ -1488,6 +1519,7 @@ function resultsHTML(v, amHost) {
     ? `<button class="btn big" data-action="retry">🔁 ${t('retryWrong', missed.length)}</button>` : '';
   return `
     ${v.planned ? `<p class="early-note results-wide">🏁 ${t('submittedEarly', v.total, v.planned)}</p>` : ''}
+    ${v.timeUp ? '<p class="early-note results-wide">⏰ Time is up: the questions not answered count as skipped.</p>' : ''}
     ${rep ? assessmentHTML(rep, amHost && v.solo) : ''}
     ${v.solo ? '' : `<section class="card results-wide"><h2 class="ornate">${t('leaderboard')}</h2><div class="lb">${board}</div></section>`}
     ${historyHTML('results-wide')}
@@ -1686,6 +1718,15 @@ function setText(id, text) {
 // Countdown ring, driven by the local clock between host updates.
 function frame() {
   const v = ui.view;
+  if (ui.screen === 'game' && v && v.phase === 'question' && v.settings.clock && !ui.sheet) {
+    const left = v.paused ? ui.clockLeft || 0 : ui.clockEndsAt ? Math.max(0, ui.clockEndsAt - Date.now()) : 0;
+    const secs = Math.ceil(left / 1000);
+    const el = document.querySelector('[data-clock]');
+    const text = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`;
+    if (el && el.textContent !== text) el.textContent = text;
+    const box = document.getElementById('exam-clock');
+    if (box) box.classList.toggle('hurry', secs <= 300);
+  }
   if (ui.screen === 'game' && v && v.phase === 'question' && v.settings.timer && !ui.sheet) {
     const left = v.paused ? ui.pauseLeft || 0 : ui.endsAt ? Math.max(0, ui.endsAt - Date.now()) : 0;
     const secs = Math.ceil(left / 1000);
@@ -2589,7 +2630,7 @@ function mqPick(pool, count) {
 }
 function applyMq(s, spec) {
   s.mq = { qids: spec.qids, order: spec.order || '' };
-  Object.assign(s.settings, { timer: spec.timer, negative: spec.negative, mq: { title: spec.title, n: spec.qids.length, note: spec.note || '' } });
+  Object.assign(s.settings, { timer: 0, clock: spec.clock || 0, negative: spec.negative, mq: { title: spec.title, n: spec.qids.length, note: spec.note || '', clock: spec.clock || 0 } });
 }
 // Starts a maths quiz alone, or opens a room for it: friends join with the code and the host starts.
 function startMq(spec) {
@@ -2605,13 +2646,18 @@ function startMq(spec) {
   applyMq(host.state, spec);
   handleAction(me.id, { type: 'quick', qids: spec.qids });
 }
+// The whole-test clock in minutes: 100 for 90 questions, at the same pace for any other number; a past
+// paper keeps its own length. None when the player turned the clock off.
+const mqClock = (n, minutes = 0) => (ui.mqClock === false ? 0 : minutes || Math.round((n * 100) / 90));
 const mqNeg = (n) => (n ? `−${n === 0.33 ? '1/3' : n === 0.25 ? '1/4' : n} for a wrong answer` : 'no negative marking');
 async function showMqPractice(s, route, keepScroll) {
   if (!mq.index) app.innerHTML = SPINNER;
   const ix = await loadMqIndex();
   if (book.route !== route || ui.screen !== 'book') return;
   const level = s.practice.level;
-  const papers = ix.papers.filter((p) => p.level === level);
+  const all = ix.papers.filter((p) => p.level === level);
+  const expected = all.filter((p) => p.kind === 'expected');   // mocks written for the coming exam
+  const papers = all.filter((p) => p.kind !== 'expected');       // past papers
   const seen = new Set(readList('pp-seen'));
   const units = s.units.map((u, i) => {
     const pool = mqPool(level, studyChapters(u).map((c) => c.id));
@@ -2619,9 +2665,11 @@ async function showMqPractice(s, route, keepScroll) {
   }).filter((x) => x.n);
   const total = mqPool(level).length;
   const seg = (on, val, label) => `<button class="seg ${on ? 'on' : ''}" data-action="mq-players" data-val="${val}">${label}</button>`;
-  const paperRows = papers.map((p) => `
-      <div class="mq-row"><span class="topic-icon">📝</span><span class="mq-what"><b>${esc(p.title)}</b><span class="muted small">${p.ns.length} questions · about ${p.minutes} minutes · ${mqNeg(p.negative)}</span></span>
+  const clockSeg = (on, val, label) => `<button class="seg ${on ? 'on' : ''}" data-action="mq-clock" data-val="${val}">${label}</button>`;
+  const rowsOf = (list, icon) => list.map((p) => `
+      <div class="mq-row"><span class="topic-icon">${icon}</span><span class="mq-what"><b>${esc(p.title)}</b><span class="muted small">${p.ns.length} questions · about ${p.minutes} minutes · ${mqNeg(p.negative)}</span></span>
         <button class="btn" data-action="mq-paper" data-id="${esc(p.id)}">Start ▶</button></div>`).join('');
+  const paperRows = rowsOf(papers, '📝');
   const unitRows = units.map(({ u, i, n, seenN }) => `
       <div class="mq-row"><span class="topic-icon">${u.icon}</span><span class="mq-what"><b>${bookName(u)}</b><span class="muted small">Unit ${i + 1} · ${n} questions · ${seenN} seen</span></span>
         <button class="btn" data-action="mq-unit" data-id="${esc(u.id)}">${Math.min(20, n)} ▶</button></div>`).join('');
@@ -2632,12 +2680,16 @@ async function showMqPractice(s, route, keepScroll) {
       <p class="tagline">${esc(s.practice.about || '')}</p></section>
     <section class="card" lang="en"><h2>👥 Who is playing?</h2>
       <div class="segs segs-2">${seg(!ui.mqRoom, 'solo', '🪔 Alone')}${seg(ui.mqRoom, 'room', '👥 With friends')}</div>
+      <p class="field-label">⏱️ Clock</p>
+      <div class="segs segs-2">${clockSeg(ui.mqClock !== false, 'on', 'One clock for the test')}${clockSeg(ui.mqClock === false, 'off', 'No clock')}</div>
+      <p class="muted small">One countdown for the whole test, as in the exam: 100 minutes for 90 questions (a past paper keeps its own length); when it runs out, the test ends.</p>
       ${ui.mqRoom ? `<label class="field" id="name-field"><span>${t('yourName')}</span><input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(me.name)}"></label>
       <p class="muted small">You get a room code to share; up to ${CONFIG.maxPlayers} players join with it from their own phones, and you start when everyone is in.</p>` : ''}
     </section>
+    ${expected.length ? `<section class="card" lang="en"><h2>🔮 Expected papers for December 2026</h2><p class="muted small">Full mocks of ${expected[0].ns.length} mathematics questions in the pattern of the latest UP ${level} paper and the official syllabus: past questions whose ideas keep coming back, and new questions in the board's style. Each was solved and then checked by a second mathematician.</p><div class="mq-list">${rowsOf(expected, '🔮')}</div></section>` : ''}
     ${papers.length ? `<section class="card" lang="en"><h2>📝 Full papers (mock tests)</h2><p class="muted small">Every question of the paper in its order, at about the exam's pace per question and with its negative marking. Where a paper also had general studies, only its mathematics questions are here.</p><div class="mq-list">${paperRows}</div></section>` : ''}
-    ${total ? `<section class="card" lang="en"><h2>🔀 Mixed mocks</h2><p class="muted small">Questions from all ${papers.length} papers, those you have not seen first; 60 seconds each.</p><div class="row">${mixes.map((n) => `<button class="btn" data-action="mq-mixed" data-n="${n}">${Math.min(n, total)} questions</button>`).join('')}</div></section>` : ''}
-    ${units.length ? `<section class="card" lang="en"><h2>📚 Topic-wise practice</h2><p class="muted small">Past-paper questions on one unit of the syllabus, with no clock and no negative marking.</p><div class="mq-list">${unitRows}</div></section>` : ''}
+    ${total ? `<section class="card" lang="en"><h2>🔀 Mixed mocks</h2><p class="muted small">Questions from all ${all.length} papers${expected.length ? ' (past and expected)' : ''}, those you have not seen first.</p><div class="row">${mixes.map((n) => `<button class="btn" data-action="mq-mixed" data-n="${n}">${Math.min(n, total)} questions</button>`).join('')}</div></section>` : ''}
+    ${units.length ? `<section class="card" lang="en"><h2>📚 Topic-wise practice</h2><p class="muted small">Questions on one unit of the syllabus, without negative marking.</p><div class="mq-list">${unitRows}</div></section>` : ''}
     ${papers.length ? '' : '<section class="card" lang="en"><p class="muted">The solved papers are being added.</p></section>'}`;
   if (!keepScroll) window.scrollTo(0, 0);
 }
@@ -2959,26 +3011,33 @@ const actions = {
   // A weak section to revise; for maths, a weak notes topic gives a set of its past-paper questions.
   revise(btn) {
     const id = btn.dataset.id;
-    if (id.startsWith('mt/')) act({ type: 'quick', qids: mqPick(mqPool(null, [id.slice(3)]), 20) });
+    if (id.startsWith('mt/')) {
+      const qids = mqPick(mqPool(null, [id.slice(3)]), 20);
+      if (host.state) host.state.settings.clock = mqClock(qids.length);   // its own clock, not the mock's
+      act({ type: 'quick', qids });
+    }
     else act({ type: 'quick', sections: [id] });
   },
   // ----- maths practice page -----
   'mq-players'(btn) { ui.mqRoom = btn.dataset.val === 'room'; showBook(book.route, true); },
+  'mq-clock'(btn) { ui.mqClock = btn.dataset.val !== 'off'; showBook(book.route, true); },
   'mq-paper'(btn) {
     const p = ((mq.index || {}).papers || []).find((x) => x.id === btn.dataset.id);
     if (!p || (ui.mqRoom && !readName())) return;
-    startMq({ qids: p.ns.map((n) => mqId(p.id, n)), title: p.title, timer: p.timer, negative: p.negative, order: 'paper', note: `about ${p.minutes} minutes at the exam's pace` });
+    startMq({ qids: p.ns.map((n) => mqId(p.id, n)), title: p.title, clock: mqClock(p.ns.length, p.kind === 'expected' ? 0 : p.minutes), negative: p.negative, order: 'paper', note: p.kind === 'expected' ? 'expected paper' : 'past paper' });
   },
   'mq-mixed'(btn) {
     const s = mqSubject();
     if (!s || (ui.mqRoom && !readName())) return;
-    startMq({ qids: mqPick(mqPool(s.practice.level), Number(btn.dataset.n)), title: `Mixed mock · ${s.practice.level} past papers`, timer: 60, negative: 0 });
+    const qids = mqPick(mqPool(s.practice.level), Number(btn.dataset.n));
+    startMq({ qids, title: `Mixed mock · ${s.practice.level}`, clock: mqClock(qids.length), negative: 0 });
   },
   'mq-unit'(btn) {
     const s = mqSubject();
     const u = s && s.units.find((x) => x.id === btn.dataset.id);
     if (!u || (ui.mqRoom && !readName())) return;
-    startMq({ qids: mqPick(mqPool(s.practice.level, studyChapters(u).map((c) => c.id)), 20), title: `${u.en} · past-paper questions`, timer: 0, negative: 0 });
+    const qids = mqPick(mqPool(s.practice.level, studyChapters(u).map((c) => c.id)), 20);
+    startMq({ qids, title: `${u.en} · practice set`, clock: mqClock(qids.length), negative: 0 });
   },
   set(btn) {
     const v = ui.view;

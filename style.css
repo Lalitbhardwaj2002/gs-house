@@ -250,6 +250,8 @@ button.menu-row:hover { background: var(--soft-3); }
 .q-card .katex-display, .mq-explain .katex-display, .sheet .katex-display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 .mq-explain .why p { margin: 0 0 6px; }
 .katex-wide { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+.exam-clock { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 999px; background: var(--chip); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.exam-clock.hurry { color: var(--wrong); }
 .setup-rules { padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
 .units { display: flex; flex-direction: column; gap: 8px; }
 .unit { border: 1px solid var(--line); border-radius: 14px; background: var(--soft-2); overflow: hidden; }
