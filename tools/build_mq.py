@@ -4,7 +4,8 @@ numbers of each notes topic, and the title of every topic.
 
 A paper file is {"paper": {...}, "questions": [...]}:
   paper: id, title, exam, date, level ("TGT" or "PGT"), minutes (the exam's length), negative (0,
-         0.25 or 0.33), source (where the paper was found), optional note.
+         0.25 or 0.33), source (where the paper was found), optional note; kind "expected" for a mock
+         written for a coming exam (default "past").
   question: id "mq/<paper>-NNN", level, math: true, answer (0-3), key (the board's key, 0-3 or null),
             topic (a notes page id, tp-CC-SS), src {paper, n, label},
             en {q, options[4], explanation, notes[4], path[], facts[]}.
@@ -47,6 +48,8 @@ for f in sorted(MQ.glob('*.json')):
     for k in ('title', 'exam', 'date', 'level', 'minutes', 'source'):
         if not p.get(k):
             bad(f.name, f'paper has no {k}')
+    if p.get('kind', 'past') not in ('past', 'expected'):
+        bad(f.name, 'kind must be past or expected')
     if p.get('level') not in ('TGT', 'PGT'):
         bad(f.name, 'level must be TGT or PGT')
     if p.get('negative') not in (0, 0.25, 0.33):
@@ -85,7 +88,7 @@ for f in sorted(MQ.glob('*.json')):
     per_q = (p.get('minutes', 0) * 60) / max(1, len(ns))
     timer = min(TIMERS, key=lambda t: abs(t - per_q))
     papers.append({
-        'id': pid, 'title': p.get('title'), 'exam': p.get('exam'), 'date': p.get('date'), 'level': p.get('level'),
+        'id': pid, 'kind': p.get('kind', 'past'), 'title': p.get('title'), 'exam': p.get('exam'), 'date': p.get('date'), 'level': p.get('level'),
         'minutes': p.get('minutes'), 'negative': p.get('negative', 0), 'timer': timer,
         'ns': ns, 'topics': {k: v for k, v in sorted(by_topic.items())},
     })
@@ -95,7 +98,7 @@ EXAMS = ['UP TGT', 'UP LT Grade', 'UP PGT', 'UP GIC Lecturer', 'DSSSB TGT', 'DSS
 def year(p):
     m = re.search(r'\d{4}', p['date'] or '')
     return int(m.group(0)) if m else 0
-papers.sort(key=lambda p: (p['level'] != 'TGT', EXAMS.index(p['exam']) if p['exam'] in EXAMS else 99, -year(p), p['id']))
+papers.sort(key=lambda p: (p['level'] != 'TGT', p['kind'] != 'expected', EXAMS.index(p['exam']) if p['exam'] in EXAMS else 99, -year(p), p['id']))
 used = sorted({t for p in papers for t in p['topics']})
 index = {'papers': papers, 'topics': {t: topics[t] for t in used if t in topics}}
 (MQ / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1) + '\n', 'utf-8', newline='\n')
