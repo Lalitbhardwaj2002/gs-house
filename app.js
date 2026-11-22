@@ -2620,7 +2620,7 @@ async function showMqPractice(s, route, keepScroll) {
   const total = mqPool(level).length;
   const seg = (on, val, label) => `<button class="seg ${on ? 'on' : ''}" data-action="mq-players" data-val="${val}">${label}</button>`;
   const paperRows = papers.map((p) => `
-      <div class="mq-row"><span class="topic-icon">📝</span><span class="mq-what"><b>${esc(p.title)}</b><span class="muted small">${p.ns.length} questions · ${p.minutes} minutes in the exam · ${mqNeg(p.negative)}</span></span>
+      <div class="mq-row"><span class="topic-icon">📝</span><span class="mq-what"><b>${esc(p.title)}</b><span class="muted small">${p.ns.length} questions · about ${p.minutes} minutes · ${mqNeg(p.negative)}</span></span>
         <button class="btn" data-action="mq-paper" data-id="${esc(p.id)}">Start ▶</button></div>`).join('');
   const unitRows = units.map(({ u, i, n, seenN }) => `
       <div class="mq-row"><span class="topic-icon">${u.icon}</span><span class="mq-what"><b>${bookName(u)}</b><span class="muted small">Unit ${i + 1} · ${n} questions · ${seenN} seen</span></span>
@@ -2635,7 +2635,7 @@ async function showMqPractice(s, route, keepScroll) {
       ${ui.mqRoom ? `<label class="field" id="name-field"><span>${t('yourName')}</span><input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(me.name)}"></label>
       <p class="muted small">You get a room code to share; up to ${CONFIG.maxPlayers} players join with it from their own phones, and you start when everyone is in.</p>` : ''}
     </section>
-    ${papers.length ? `<section class="card" lang="en"><h2>📝 Full papers (mock tests)</h2><p class="muted small">Every question of the paper in its order, with about the exam's time per question and its negative marking.</p><div class="mq-list">${paperRows}</div></section>` : ''}
+    ${papers.length ? `<section class="card" lang="en"><h2>📝 Full papers (mock tests)</h2><p class="muted small">Every question of the paper in its order, at about the exam's pace per question and with its negative marking. Where a paper also had general studies, only its mathematics questions are here.</p><div class="mq-list">${paperRows}</div></section>` : ''}
     ${total ? `<section class="card" lang="en"><h2>🔀 Mixed mocks</h2><p class="muted small">Questions from all ${papers.length} papers, those you have not seen first; 60 seconds each.</p><div class="row">${mixes.map((n) => `<button class="btn" data-action="mq-mixed" data-n="${n}">${Math.min(n, total)} questions</button>`).join('')}</div></section>` : ''}
     ${units.length ? `<section class="card" lang="en"><h2>📚 Topic-wise practice</h2><p class="muted small">Past-paper questions on one unit of the syllabus, with no clock and no negative marking.</p><div class="mq-list">${unitRows}</div></section>` : ''}
     ${papers.length ? '' : '<section class="card" lang="en"><p class="muted">The solved papers are being added.</p></section>'}`;
@@ -2967,7 +2967,7 @@ const actions = {
   'mq-paper'(btn) {
     const p = ((mq.index || {}).papers || []).find((x) => x.id === btn.dataset.id);
     if (!p || (ui.mqRoom && !readName())) return;
-    startMq({ qids: p.ns.map((n) => mqId(p.id, n)), title: p.title, timer: p.timer, negative: p.negative, order: 'paper', note: `${p.minutes} minutes in the exam` });
+    startMq({ qids: p.ns.map((n) => mqId(p.id, n)), title: p.title, timer: p.timer, negative: p.negative, order: 'paper', note: `about ${p.minutes} minutes at the exam's pace` });
   },
   'mq-mixed'(btn) {
     const s = mqSubject();
