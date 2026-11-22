@@ -1,0 +1,69 @@
+@en
+# Coplanar forces, moments and parallel forces
+
+> The turning effect of a force is its moment, force times perpendicular distance. Two parallel forces have a resultant that acts at the point about which their moments balance (between them for like forces, outside for unlike forces); a body in one plane is in equilibrium when both components and the moment are zero.
+
+## Moments and parallel forces
+
+! note | Coplanar forces, moments and parallel forces
+- **Coplanar forces**: (A) concurrent (e.g. three strings tied at a ring); (B) non-concurrent (beam problems).
+- **Moment** of $F$ about $O$: $M = F \times d$ ($d$ = perpendicular distance of the line of action from $O$). Anticlockwise $+$, clockwise $-$.
+- **Varignon's theorem**: the moment of the resultant about any point = algebraic sum of the moments of the forces.
+- **Equilibrium of coplanar forces**: $\sum F_x = 0$, $\sum F_y = 0$, $\sum M = 0$.
+^ data/net/maths/fig/mech-parallel.svg | like forces: $R = P + Q$ acts between $A$ and $B$; unlike forces ($P = 2$, $Q = 1$): $R = P - Q = 1$ acts beyond $A$, with $P \cdot AC = Q \cdot BC$ ($2 \cdot 2 = 1 \cdot 4$)
+**Like parallel forces** $P, Q$ at $A, B$: $R = P + Q$, acting at $C$ between $A$ and $B$ with
+$$P \cdot AC = Q \cdot CB,$$
+$$\frac{P}{CB} = \frac{Q}{AC} = \frac{R}{AB}.$$
+**Unlike parallel forces** ($P > Q$): $R = P - Q$ in the direction of $P$, acting at $C$ on $BA$ produced beyond $A$ (outside, on the side of the larger force): $P \cdot AC = Q \cdot BC$, $\frac{P}{BC} = \frac{Q}{AC} = \frac{P - Q}{AB}$.
+- If like forces $P, Q$ are interchanged, the resultant moves through $\frac{\lvert P - Q \rvert}{P + Q}AB$.
+- If one force is moved parallel to itself through $x$, the resultant moves through $\frac{\text{moved force}}{\text{sum of forces}} \cdot x$.
+
+! check | Conditions added
+Unlike forces need $P \neq Q$: two equal unlike parallel forces form a couple, which has no single resultant. The last rule is for like forces; for unlike forces the resultant moves through $\frac{\text{moved force}}{P - Q} \cdot x$ (the algebraic sum of the forces). In $M = F \times d$, $d$ is the perpendicular distance of the line of action, not the distance to the point where the force is applied.
+
+! example | Question P1 — from the notes
+The resultant of two like parallel forces $6$ N and $4$ N acts at a distance of $12$ cm from the smaller force. Find the distance between the forces.
+**Solution.** Let $P = 6$ N at $A$, $Q = 4$ N at $B$; resultant at $C$ with $CB = 12$ cm. $P \cdot AC = Q \cdot CB \Rightarrow 6 \cdot AC = 4 \cdot 12 \Rightarrow AC = 8$ cm. Distance $AB = AC + CB = 8 + 12 = \boxed{20\ \text{cm}}$. (Resultant $= 10$ N.)
+
+! example | Question P2 — standard
+Two unlike parallel forces $8$ N and $5$ N act at points $A$, $B$, $6$ cm apart. Find the resultant and its position.
+**Solution.** $R = 8 - 5 = \boxed{3\ \text{N}}$, in the direction of the $8$ N force, at $C$ on $BA$ produced beyond $A$. $P \cdot AC = Q \cdot BC \Rightarrow 8\,AC = 5(AC + 6) \Rightarrow 3AC = 30 \Rightarrow \boxed{AC = 10\ \text{cm}}$ (outside, on the side of the larger force).
+
+! example | Question P3 — standard (moments)
+A uniform rod $AB$ of length $2$ m and weight $50$ N rests horizontally on two supports at $A$ and $B$. A load of $100$ N hangs at $0.5$ m from $A$. Find the reactions.
+**Solution.** Weight of rod acts at the middle ($1$ m from $A$). Moments about $A$: $R_B \cdot 2 = 50 \cdot 1 + 100 \cdot 0.5 = 100 \Rightarrow \boxed{R_B = 50\ \text{N}}$. Vertical: $R_A + R_B = 150 \Rightarrow \boxed{R_A = 100\ \text{N}}$.
+
+! trick | Shortcut / time-saver
+For beam problems take moments about the point where the *unknown* force acts: it disappears. A **couple** (two equal unlike parallel forces) has moment $= F \times$ arm, the same about every point, and cannot be balanced by a single force.
+
+## What it means
+
+- **Moment = turning effect**: a door is easiest to push far from its hinges; doubling the distance $d$ doubles the moment.
+- **Where the resultant of parallel forces acts** follows from Varignon's theorem: about the point $C$ where it acts its moment is $0$, so the moments of $P$ and $Q$ about $C$ cancel. This is the lever rule $P \cdot AC = Q \cdot CB$.
+- **Three equations, three unknowns**: for a body in one plane, $\sum F_x = 0$, $\sum F_y = 0$ and one moment equation can find at most three unknown forces.
+
+! example | Example 1 — a see-saw
+A light rod $AB$, $3$ m long, carries $40$ N at $A$ and $20$ N at $B$. Where must it be supported to balance, and what is the reaction there?
+**Solution.** Support at $C$: $40 \cdot AC = 20(3 - AC) \Rightarrow 60\,AC = 60 \Rightarrow \boxed{AC = 1\ \text{m}}$. Reaction $= 40 + 20 = \boxed{60\ \text{N}}$.
+
+! example | Example 2 — a moment by Varignon's theorem
+A force with components $F_x = 3$ N, $F_y = 4$ N acts at the point $(2, 1)$ (in metres). Find its moment about the origin.
+**Solution.** Add the moments of the components: $F_y$ at distance $x = 2$ turns anticlockwise, $F_x$ at height $y = 1$ turns clockwise. $M = xF_y - yF_x = 2 \cdot 4 - 1 \cdot 3 = \boxed{5\ \text{N m}}$, anticlockwise.
+
+? Moment of a force about a point? :: Force × perpendicular distance of its line of action from the point.
+? Resultant of like parallel forces $P$ and $Q$: where does it act? :: At $C$ between them, with $P \cdot AC = Q \cdot CB$; $R = P + Q$.
+? Can a couple be balanced by a single force? :: No, only by another couple.
+? Varignon's theorem? :: The moment of the resultant equals the algebraic sum of the moments of the forces.
+
+! exam | What the exam asks
+- The size and position of the resultant of like or unlike parallel forces.
+- Reactions of a loaded beam on two supports (moments about a support).
+- Couples; Varignon's theorem.
+
+! recap | One-minute revision
+- $M = F \times d$, anticlockwise $+$; a couple has the same moment about every point.
+- Like: $R = P + Q$ between them; unlike: $R = P - Q$ outside, beyond the larger; $P \cdot AC = Q \cdot BC$.
+- Equilibrium: $\sum F_x = \sum F_y = 0$ and $\sum M = 0$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Statics and Dynamics, Part I (Statics), the chapters on parallel forces, moments and couples

@@ -1,0 +1,93 @@
+@en
+# Three forces in equilibrium: triangle law and Lami's theorem
+
+> Three forces that keep a body at rest lie in one plane and pass through one point (or are all parallel). Drawn head to tail they close into a triangle, and Lami's theorem, each force over the sine of the angle between the other two, gives the unknown forces in one line.
+
+## Triangle of forces and Lami's theorem
+
+! note | Three forces in equilibrium
+- Three forces in equilibrium are coplanar and concurrent (or all parallel), and $\vec{F}_1 + \vec{F}_2 + \vec{F}_3 = \vec{0}$.
+- **Triangle of forces**: if three forces acting at a point can be represented in magnitude and direction by the sides of a triangle taken in order, they are in equilibrium (e.g. $3, 4, 5$ N). **Polygon of forces**: same for more than three forces.
+^ data/net/maths/fig/mech-lami.svg | $\alpha$ is the angle between $F_2$ and $F_3$, $\beta$ between $F_3$ and $F_1$, $\gamma$ between $F_1$ and $F_2$
+**Lami's theorem.** If three forces acting at a point are in equilibrium, each is proportional to the sine of the angle between the other two:
+$$\frac{F_1}{\sin\alpha} = \frac{F_2}{\sin\beta} = \frac{F_3}{\sin\gamma}$$
+where $\alpha$ is the angle between $F_2$ and $F_3$, etc. **Proof idea**: draw the triangle of forces; its angles are $180° - \alpha$, $180° - \beta$, $180° - \gamma$; apply the sine rule and use $\sin(180° - x) = \sin x$.
+
+! example | Question L1 — from the notes
+A body of weight $100$ N is suspended by two strings which make angles $30°$ and $60°$ with the horizontal. Find the tensions in the strings.
+**Solution.**
+^ data/net/maths/fig/mech-lami-strings.svg | the knot: $T_1$ along the string at $30°$, $T_2$ along the string at $60°$, $W = 100$ N
+At the knot three forces act: $T_1$ (string at $30°$), $T_2$ (string at $60°$), $W = 100$ N downward. Angles: between $T_2$ and $W$: $90° + 60° = 150°$; between $T_1$ and $W$: $90° + 30° = 120°$; between $T_1$ and $T_2$: $180° - 30° - 60° = 90°$. Lami:
+$$\frac{T_1}{\sin 150°} = \frac{T_2}{\sin 120°} = \frac{100}{\sin 90°}$$
+$$T_1 = 100 \cdot \tfrac{1}{2} = \boxed{50\ \text{N}},$$
+$$\begin{aligned} T_2 &= 100 \cdot \tfrac{\sqrt{3}}{2} \\ &= \boxed{50\sqrt{3} \approx 86.6\ \text{N}} \end{aligned}$$
+
+! example | Question L2 — corrected version of the question in the notes
+Three forces $40$ N, $P$ and $Q$ keep a particle in equilibrium. The angles opposite to them (i.e. between the other two forces) are $150°$, $90°$ and $120°$ respectively. Find $P$ and $Q$.
+**Solution.** Check: $150° + 90° + 120° = 360°$ ✓. Lami:
+$$\begin{aligned} &\frac{40}{\sin 150°} = \frac{P}{\sin 90°} = \frac{Q}{\sin 120°} \\ &= \frac{40}{1/2} = 80 \end{aligned}$$
+$$\Rightarrow \boxed{P = 80\ \text{N}},$$
+$$\boxed{Q = 80 \cdot \tfrac{\sqrt{3}}{2} = 40\sqrt{3} \approx 69.3\ \text{N}}$$
+
+! check | The original L2 data in the notebook
+The notebook gives forces $40$ N, $50$ N, $P$ with opposite angles $60°$, $45°$, $90°$ and answers $P = \frac{80}{\sqrt{3}}$. These data cannot occur: the three angles between the forces must add up to $360°$ (here $195°$), and with $40$ N opposite $60°$ Lami would need $\sin\beta = \frac{50\sin 60°}{40} = 1.08 > 1$ for the $50$ N force. Use the corrected question above. Quick check for any Lami question: the three angles must total $360°$, each less than $180°$.
+
+! example | Question L3 — standard
+A weight of $10$ N is tied to a point $C$ of a string whose ends are fastened to two points $A$, $B$ in the same horizontal line, $AB = 5$ m, $AC = 3$ m, $CB = 4$ m. Find the tensions.
+**Solution.**
+^ data/net/maths/fig/mech-lami-345.svg | $AB = 5$ m, $AC = 3$ m, $CB = 4$ m and $10$ N at $C$; the angle $ACB$ is $90°$
+$3^2 + 4^2 = 5^2 \Rightarrow \angle ACB = 90°$. Let $\angle CAB = A$, $\angle CBA = B$: $\cos A = \frac{3}{5}$, $\cos B = \frac{4}{5}$. At $C$: angle between $T_2$ (along $CB$) and $W$ is $90° + B$; between $T_1$ and $W$ is $90° + A$; between $T_1$, $T_2$ is $90°$.
+$$\begin{aligned} \frac{T_1}{\sin(90° + B)} &= \frac{T_2}{\sin(90° + A)} \\ &= \frac{10}{\sin 90°} \end{aligned}$$
+$T_1 = 10\cos B = \boxed{8\ \text{N}}$ (in $AC$), $T_2 = 10\cos A = \boxed{6\ \text{N}}$ (in $CB$).
+
+! trick | Shortcut / time-saver — Lami in one step
+For a weight $W$ hung by two strings making angles $\alpha$, $\beta$ with the *vertical*: $T_1 = \frac{W\sin\beta}{\sin(\alpha + \beta)}$, $T_2 = \frac{W\sin\alpha}{\sin(\alpha + \beta)}$. The string nearer the vertical carries the larger tension.
+
+! check | Conditions added
+Lami's theorem is for exactly three forces, acting at one point and in equilibrium; each angle is measured between two forces drawn away from that point. In the shortcut $T_1$ is the tension of the string at the angle $\alpha$ to the vertical and $T_2$ that of the string at $\beta$, with $0 < \alpha + \beta < 180°$.
+
+## What it means
+
+- **Lami from the triangle**: the three forces drawn head to tail close up into a triangle. Its angle opposite the side $F_1$ is $180° - \alpha$, so the sine rule gives $\frac{F_1}{\sin(180° - \alpha)} = \cdots$, and $\sin(180° - \alpha) = \sin\alpha$.
+- **Choosing the method**: two unknown tensions at a knot, Lami; many forces or awkward angles, resolve horizontally and vertically.
+- **A check on answers**: the largest of the three forces is the one opposite the angle whose sine is largest (the angle nearest $90°$).
+
+! example | Example 1 — Question L1 by resolving
+Solve Question L1 by resolving horizontally and vertically.
+**Solution.** Horizontally: $T_1\cos 30° = T_2\cos 60° \Rightarrow T_2 = \sqrt{3}\,T_1$. Vertically: $T_1\sin 30° + T_2\sin 60° = 100 \Rightarrow \frac{T_1}{2} + \frac{3T_1}{2} = 100$. So $T_1 = \boxed{50\ \text{N}}$ and $T_2 = \boxed{50\sqrt{3}\ \text{N}}$, as by Lami.
+
+! example | Example 2 — the one-step formula
+A lamp of weight $20$ N hangs from two wires making $30°$ and $60°$ with the vertical. Find the tensions.
+**Solution.** $\alpha = 30°$, $\beta = 60°$, $\sin(\alpha + \beta) = 1$: $T_1 = 20\sin 60° = \boxed{10\sqrt{3}\ \text{N}}$ (the wire at $30°$), $T_2 = 20\sin 30° = \boxed{10\ \text{N}}$. The wire nearer the vertical carries more.
+
+! addon | The trigonometrical theorem (TGT syllabus)
+If $D$ divides the side $BC$ of a triangle $ABC$ so that $BD : DC = m : n$, and $\angle ADC = \theta$, $\angle BAD = \alpha$, $\angle DAC = \beta$, then
+$$\begin{aligned} &(m + n)\cot\theta \\ &= m\cot\alpha - n\cot\beta \\ &= n\cot B - m\cot C. \end{aligned}$$
+Use in statics: when three forces keep a rod $AB$ at rest, they meet at a point $O$ and the weight acts along the vertical $OG$; apply the theorem to the triangle $OAB$ with $G$ in place of $D$.
+
+! example | Example 3 — a rod on two smooth planes
+A uniform rod rests with its ends $A$, $B$ on two smooth planes inclined at $30°$ and $60°$ to the horizontal, the rod lying in a vertical plane at right angles to the line in which the planes meet. Find the inclination of the rod to the horizontal.
+**Solution.** The reactions are normal to the planes, so they make $30°$ and $60°$ with the vertical, and they meet the weight at a point $O$ above the middle point $G$. In the triangle $OAB$: $AG : GB = 1 : 1$, $\angle AOG = 30°$, $\angle GOB = 60°$, and $\angle OGB = 90° - \phi$ if $B$ is higher than $A$ by the angle $\phi$:
+$$\begin{aligned} &2\cot(90° - \phi) \\ &= \cot 30° - \cot 60° \end{aligned}$$
+$$\Rightarrow 2\tan\phi = \sqrt{3} - \tfrac{1}{\sqrt{3}} = \tfrac{2}{\sqrt{3}}$$
+So $\tan\phi = \frac{1}{\sqrt{3}}$, $\boxed{\phi = 30°}$; the end on the steeper plane is the higher one. In general $\tan\phi = \frac{1}{2}(\cot\alpha - \cot\beta)$ when the plane under $A$ is inclined at $\alpha$ and the plane under $B$ at $\beta$.
+
+? Lami's theorem? :: $\frac{F_1}{\sin\alpha} = \frac{F_2}{\sin\beta} = \frac{F_3}{\sin\gamma}$, each angle being the one between the other two forces.
+? Sum of the three angles between three concurrent forces in equilibrium? :: $360°$.
+? Forces $3$, $4$, $5$ N in equilibrium: the angle between the $3$ N and $4$ N forces? :: $90°$ (their triangle of forces is right-angled).
+? Weight on two strings: which string has the larger tension? :: The one nearer the vertical.
+? The trigonometrical theorem? :: With $BD : DC = m : n$, $\angle ADC = \theta$, $\angle BAD = \alpha$, $\angle DAC = \beta$: $(m + n)\cot\theta = m\cot\alpha - n\cot\beta$, and also $= n\cot B - m\cot C$.
+
+! exam | What the exam asks
+- Tensions in two strings holding a weight (Lami, or by resolving).
+- Whether given forces and angles can be in equilibrium.
+- The triangle and polygon of forces.
+- The trigonometrical theorem for a rod held by three forces.
+
+! recap | One-minute revision
+- Three forces in equilibrium: coplanar, concurrent (or parallel), sum $\vec{0}$.
+- Lami: $F_1 : F_2 : F_3 = \sin\alpha : \sin\beta : \sin\gamma$; the angles add up to $360°$.
+- Weight $W$ on strings at $\alpha$, $\beta$ to the vertical: $T_1 = \frac{W\sin\beta}{\sin(\alpha + \beta)}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Statics and Dynamics, Part I (Statics), the chapters on the composition and resolution of forces

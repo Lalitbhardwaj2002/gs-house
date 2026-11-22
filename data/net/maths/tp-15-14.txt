@@ -1,0 +1,60 @@
+@en
+# Central orbits (PGT)
+
+> A central force always points to a fixed centre, so the transverse acceleration is zero and $r^2\dot{\theta}$ stays constant. With $u = \frac{1}{r}$ the path satisfies one second-order equation; the inverse-square law gives the conics of planetary motion.
+
+## Central orbits
+
+^ data/net/maths/fig/mech-orbit.svg | a central orbit: the force $P$ on the particle at $Q$ always points to the fixed centre $S$
+
+! addon | Central orbits
+- Central force: $a_\theta = 0 \Rightarrow r^2\dot{\theta} = h$ (constant); areal velocity $\frac{h}{2}$ (Kepler's 2nd law).
+- **Differential equation of the orbit** ($u = \frac{1}{r}$):
+$$\frac{d^2u}{d\theta^2} + u = \frac{P}{h^2u^2}.$$
+Pedal form $\frac{h^2}{p^3}\frac{dp}{dr} = P$; $v = \frac{h}{p}$; $v^2 = h^2\left[u^2 + \left(\frac{du}{d\theta}\right)^2\right]$.
+- Inverse square law $P = \frac{\mu}{r^2} \Rightarrow$ conic $\frac{l}{r} = 1 + e\cos\theta$ with $h^2 = \mu l$; $v^2 = \mu\left(\frac{2}{r} - \frac{1}{a}\right)$ (ellipse), $\frac{2\mu}{r}$ (parabola), $\mu\left(\frac{2}{r} + \frac{1}{a}\right)$ (hyperbola); period $T = \frac{2\pi}{\sqrt{\mu}}a^{3/2}$ (Kepler's 3rd law).
+- Escape velocity $= \sqrt{2} \times$ circular velocity.
+
+! check | Conditions added
+$P$ is the force per unit mass directed **towards** the centre (an attraction is positive), and $h \neq 0$ (a particle moving along a line through the centre has $h = 0$). $p$ is the perpendicular from the centre to the tangent. In the inverse-square results $a$ is the semi-major axis and $l$ the semi-latus rectum; the period is for the ellipse. The escape and circular velocities are compared at the same distance from the centre.
+
+! example | Question CO1 — standard
+A particle describes the circle $r = a\cos\theta$ (passing through the pole) under a force to the pole. Find the law of force.
+**Solution.** $u = \frac{\sec\theta}{a}$, $\frac{du}{d\theta} = \frac{\sec\theta\tan\theta}{a}$, $\frac{d^2u}{d\theta^2} = \frac{\sec\theta\tan^2\theta + \sec^3\theta}{a}$.
+$$\begin{aligned} &\frac{d^2u}{d\theta^2} + u \\ &= \frac{\sec\theta(\tan^2\theta + 1) + \sec^3\theta}{a} \\ &= \frac{2\sec^3\theta}{a} = 2a^2u^3. \end{aligned}$$
+$P = h^2u^2 \cdot 2a^2u^3 = 2a^2h^2u^5 = \boxed{\frac{2a^2h^2}{r^5}}$, i.e. $P \propto \frac{1}{r^5}$.
+
+! trick | Shortcut / time-saver — Force laws for standard orbits
+Circle through the pole: $\frac{1}{r^5}$; equiangular spiral: $\frac{1}{r^3}$; cardioid: $\frac{1}{r^4}$; ellipse about its centre: $\propto r$; conic about a focus: $\frac{1}{r^2}$; $r^n = a^n\cos n\theta$: $\frac{1}{r^{2n+3}}$.
+
+## What it means
+
+- **Equal areas in equal times**: with no transverse force, $r^2\dot{\theta} = h$ is constant, and the radius sweeps out area at the steady rate $\frac{h}{2}$.
+- **Why $u = \frac{1}{r}$**: it turns the radial equation $\ddot{r} - r\dot{\theta}^2 = -P$ into the linear-looking $\frac{d^2u}{d\theta^2} + u = \frac{P}{h^2u^2}$, which is easy to use when the path is known.
+- **Speed and energy**: for the inverse-square law, $v^2 = \mu\left(\frac{2}{r} - \frac{1}{a}\right)$ is the energy equation; $v^2$ less than, equal to or greater than $\frac{2\mu}{r}$ gives an ellipse (closed), a parabola or a hyperbola (open).
+
+! example | Example 1 — circular and escape speeds
+Under the attraction $\frac{\mu}{r^2}$, find the speed in a circular orbit of radius $r$ and the speed needed to escape from that distance.
+**Solution.** Circle: $a = r$, so $v^2 = \mu\left(\frac{2}{r} - \frac{1}{r}\right) = \frac{\mu}{r}$, $v = \boxed{\sqrt{\frac{\mu}{r}}}$. Escape (parabola): $v^2 = \frac{2\mu}{r}$, $v = \boxed{\sqrt{\frac{2\mu}{r}}}$, that is $\sqrt{2}$ times the circular speed.
+
+! example | Example 2 — the equiangular spiral
+Find the law of force for the equiangular spiral $r = ae^{\theta\cot\alpha}$ described about the pole.
+**Solution.** $u = \frac{1}{a}e^{-\theta\cot\alpha}$, so $\frac{d^2u}{d\theta^2} = u\cot^2\alpha$ and $\frac{d^2u}{d\theta^2} + u = u\csc^2\alpha$. Then $P = h^2u^2 \cdot u\csc^2\alpha = h^2\csc^2\alpha \cdot u^3$: $\boxed{P \propto \frac{1}{r^3}}$.
+
+? Constant of a central orbit? :: $h = r^2\dot{\theta}$, twice the areal velocity.
+? Differential equation of a central orbit? :: $\frac{d^2u}{d\theta^2} + u = \frac{P}{h^2u^2}$, $u = \frac{1}{r}$.
+? Speed in an elliptic orbit under $\frac{\mu}{r^2}$? :: $v^2 = \mu\left(\frac{2}{r} - \frac{1}{a}\right)$.
+? Law of force for a circle through the pole? :: $P \propto \frac{1}{r^5}$.
+
+! exam | What the exam asks
+- The law of force for a given orbit (circle through the pole, cardioid, spiral, conic).
+- Speed and period in the inverse-square orbit; Kepler's laws.
+- Escape and circular velocities.
+
+! recap | One-minute revision
+- $r^2\dot{\theta} = h$; $\frac{d^2u}{d\theta^2} + u = \frac{P}{h^2u^2}$; $v = \frac{h}{p}$.
+- $\frac{\mu}{r^2}$: conic $\frac{l}{r} = 1 + e\cos\theta$, $h^2 = \mu l$, $T = \frac{2\pi}{\sqrt{\mu}}a^{3/2}$.
+- Escape speed $= \sqrt{2} \times$ circular speed.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapter on central orbits

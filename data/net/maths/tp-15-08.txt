@@ -1,0 +1,71 @@
+@en
+# Rectilinear motion and simple harmonic motion
+
+> Motion in a straight line is described by $x$, $v = \dot{x}$ and $a = \ddot{x}$; when the acceleration depends on position, write it as $v\frac{dv}{dx}$. Simple harmonic motion is the case $\ddot{x} = -\mu x$: an acceleration towards a centre, proportional to the distance from it, with a period that does not depend on the amplitude.
+
+## Rectilinear motion and SHM
+
+! note | Rectilinear motion and SHM
+- **Velocity** $v = \frac{dx}{dt}$; **acceleration** $a = \frac{dv}{dt} = \frac{d^2x}{dt^2} = v\frac{dv}{dx}$ (use $v\frac{dv}{dx}$ when acceleration is given in terms of $x$).
+- **SHM**: $\ddot{x} = -\mu x$ (centre $O$ at $x = 0$). Multiply by $2\dot{x}$ and integrate: $v^2 = \mu(a^2 - x^2)$ ($a$ = amplitude).
+- $x = a\cos\sqrt{\mu}\,t$; period $T = \frac{2\pi}{\sqrt{\mu}}$ (independent of amplitude); frequency $\frac{1}{T}$.
+- $v_{\max} = a\sqrt{\mu}$ at the centre; $v = 0$ at the extremities $x = \pm a$; max acceleration $\mu a$ at the extremities. Speed is half the maximum at $x = \pm\frac{\sqrt{3}}{2}a$.
+- Centre at $x = b$: $\ddot{x} = -\mu(x - b)$.
+- **Hooke's law**: tension in an elastic string $T = \lambda\frac{x}{l}$ ($x$ = extension, $l$ = natural length, $\lambda$ = modulus of elasticity).
+^ data/net/maths/fig/mech-shm.svg | the particle $P$ between $A'(-a)$ and $A(a)$; the acceleration $\mu x$ points towards $O$; $v = 0$ at $A$ and $A'$, $v_{\max} = a\sqrt{\mu}$ at $O$
+
+! check | Conditions added
+$\mu > 0$. $x = a\cos\sqrt{\mu}\,t$ is the motion that starts from rest at $x = a$ when $t = 0$; in general $x = a\cos(\sqrt{\mu}\,t + \epsilon)$. Hooke's law holds while the string is stretched ($x > 0$) and within its elastic limit; a slack string has no tension.
+
+! example | Question SH1 — from the notes
+A particle moves in a straight line with $v^2 = a + 2bx - cx^2$. Show that its motion is simple harmonic; find the centre, period and amplitude.
+**Solution.**
+$$\begin{aligned} \ddot{x} &= v\frac{dv}{dx} = \frac{1}{2}\frac{d}{dx}(v^2) \\ &= b - cx = -c\left(x - \frac{b}{c}\right). \end{aligned}$$
+This is SHM with centre $\boxed{x = \frac{b}{c}}$ and $\mu = c$, so $T = \boxed{\frac{2\pi}{\sqrt{c}}}$. Amplitude: $v = 0$ at the extremities $\Rightarrow cx^2 - 2bx - a = 0$, roots $x = \frac{b \pm \sqrt{b^2 + ac}}{c}$; half the distance between them $= \boxed{\frac{\sqrt{b^2 + ac}}{c}}$.
+
+! check | A condition added
+SH1 needs $c > 0$ (for $c \leq 0$ there is no oscillation) and $b^2 + ac > 0$, so that $v^2 > 0$ somewhere and the two extremities are real.
+
+! example | Question SH2 — standard
+A particle executing SHM has speeds $8$ cm/s and $6$ cm/s at distances $3$ cm and $4$ cm from the centre. Find the amplitude and period.
+**Solution.** $64 = \mu(a^2 - 9)$, $36 = \mu(a^2 - 16)$. Subtract: $28 = 7\mu \Rightarrow \mu = 4$. Then $a^2 - 9 = 16 \Rightarrow \boxed{a = 5\ \text{cm}}$. $T = \frac{2\pi}{\sqrt{4}} = \boxed{\pi\ \text{s}}$. ($v_{\max} = a\sqrt{\mu} = 10$ cm/s.)
+
+! trick | Shortcut / time-saver
+Two positions: $\mu = \frac{v_1^2 - v_2^2}{x_2^2 - x_1^2}$, $a^2 = \frac{v_1^2x_2^2 - v_2^2x_1^2}{v_1^2 - v_2^2}$. Simple pendulum $T = 2\pi\sqrt{l/g}$.
+
+## What it means
+
+- **A restoring pull**: in SHM the acceleration always points to the centre and grows with the distance from it, so the particle is pulled back, overshoots and swings again.
+- **The energy view**: $v^2 = \mu(a^2 - x^2)$ says that $\frac{1}{2}v^2 + \frac{1}{2}\mu x^2 = \frac{1}{2}\mu a^2$ (per unit mass): kinetic energy plus "spring" energy stays the same.
+- **Why the period does not depend on the amplitude**: a larger swing has a larger pull at every point in the same proportion, so it is covered in the same time.
+- **The pendulum** is SHM for small swings: $\ddot{x} \approx -\frac{g}{l}x$, so $\mu = \frac{g}{l}$.
+
+! example | Example 1 — the greatest speed and acceleration
+A particle moves in SHM with period $4$ s and amplitude $3$ m. Find its greatest speed and greatest acceleration.
+**Solution.** $\sqrt{\mu} = \frac{2\pi}{4} = \frac{\pi}{2}$. $v_{\max} = a\sqrt{\mu} = \boxed{\frac{3\pi}{2}\ \text{m/s}}$, $a_{\max} = \mu a = \frac{\pi^2}{4} \cdot 3 = \boxed{\frac{3\pi^2}{4}\ \text{m/s}^2}$.
+
+! example | Example 2 — time to half the amplitude
+How long does a particle in SHM take to go from an extremity to the point midway between it and the centre?
+**Solution.** $x = a\cos\sqrt{\mu}\,t = \frac{a}{2} \Rightarrow \sqrt{\mu}\,t = \frac{\pi}{3} \Rightarrow t = \frac{\pi}{3\sqrt{\mu}} = \boxed{\frac{T}{6}}$.
+
+! example | Example 3 — a weight on an elastic string
+A particle hangs at rest from an elastic string, stretching it by $e$. It is pulled down a little and let go. Show that it moves in SHM and find the period.
+**Solution.** At rest $mg = \lambda\frac{e}{l}$. With a further extension $x$: $m\ddot{x} = mg - \lambda\frac{e + x}{l} = -\frac{\lambda}{l}x = -\frac{mg}{e}x$. So $\ddot{x} = -\frac{g}{e}x$, SHM with $T = \boxed{2\pi\sqrt{\frac{e}{g}}}$ (while the string stays stretched).
+
+? Acceleration in terms of $v$ and $x$? :: $v\frac{dv}{dx}$.
+? Speed in SHM at distance $x$ from the centre? :: $v = \sqrt{\mu(a^2 - x^2)}$.
+? Period of SHM $\ddot{x} = -\mu x$? :: $\frac{2\pi}{\sqrt{\mu}}$, independent of the amplitude.
+? Where is the speed half its greatest value? :: At $x = \pm\frac{\sqrt{3}}{2}a$.
+
+! exam | What the exam asks
+- Showing that a given motion is SHM; its centre, period and amplitude.
+- Amplitude and period from speeds at two positions.
+- Hooke's law; the simple pendulum.
+
+! recap | One-minute revision
+- $a = v\frac{dv}{dx}$; SHM $\ddot{x} = -\mu x$, $v^2 = \mu(a^2 - x^2)$.
+- $T = \frac{2\pi}{\sqrt{\mu}}$, $v_{\max} = a\sqrt{\mu}$, $a_{\max} = \mu a$.
+- Two positions: $\mu = \frac{v_1^2 - v_2^2}{x_2^2 - x_1^2}$; pendulum $T = 2\pi\sqrt{l/g}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapters on motion in a straight line and on simple harmonic motion

@@ -1,0 +1,78 @@
+@en
+# Projectiles
+
+> A projectile moves with constant speed horizontally and with constant downward acceleration $g$ vertically; together these give a parabola. Time of flight, greatest height and range follow from the two motions; on an inclined plane and in relative-velocity problems the same idea is used with other axes.
+
+## Projectile on level ground
+
+^ data/net/maths/fig/mech-projectile.svg | projection with speed $u$ at the angle $\theta$: greatest height $H$, range $R$; at the top the velocity $u\cos\theta$ is horizontal
+
+! note | Projectiles
+Assumptions: no air resistance, $g$ constant, flat earth, only gravity acts.
+- Horizontal velocity $u\cos\theta$ (constant); vertical $u\sin\theta - gt$.
+- $x = u\cos\theta\,t$, $y = u\sin\theta\,t - \frac{1}{2}gt^2$. Eliminating $t$: **trajectory** $y = x\tan\theta - \frac{gx^2}{2u^2\cos^2\theta}$, a parabola.
+- **Time of flight** $T = \frac{2u\sin\theta}{g}$; **greatest height** $H = \frac{u^2\sin^2\theta}{2g}$; speed at the top $u\cos\theta$.
+- **Horizontal range** $R = \frac{u^2\sin 2\theta}{g}$; $R = 4H\cot\theta$; maximum range $\frac{u^2}{g}$ at $\theta = 45°$; complementary angles $\theta$ and $90° - \theta$ give the same range.
+
+! check | Conditions added
+$T$ and $R$ are for landing at the level of projection, with $0° < \theta < 90°$. "Complementary angles give the same range" holds for the same speed $u$; the two paths have different heights and times.
+
+! example | Question Pr1 — from the notes
+A ball is projected at $45°$ with speed $14$ m/s. Find its horizontal range ($g = 9.8$).
+**Solution.** $R = \frac{u^2\sin 90°}{g} = \frac{196}{9.8} = \boxed{20\ \text{m}}$ (this is also the maximum range for this speed).
+
+! example | Question Pr2 — standard
+A particle is projected with $20$ m/s at $30°$ to the horizontal ($g = 10$). Find the time of flight, greatest height and range.
+**Solution.** $T = \frac{2 \cdot 20 \cdot \frac{1}{2}}{10} = \boxed{2\ \text{s}}$, $H = \frac{400 \cdot \frac{1}{4}}{20} = \boxed{5\ \text{m}}$, $R = \frac{400\sin 60°}{10} = \boxed{20\sqrt{3} \approx 34.6\ \text{m}}$. Check: $R = 4H\cot 30° = 20\sqrt{3}$ ✓.
+
+! example | Question Pr3 — standard
+Show that for the two angles of projection giving the same range $R$ with speed $u$: $H_1 + H_2 = \frac{u^2}{2g}$ and $R = 4\sqrt{H_1H_2}$.
+**Solution.** Angles $\theta$ and $90° - \theta$: $H_1 + H_2 = \frac{u^2(\sin^2\theta + \cos^2\theta)}{2g} = \frac{u^2}{2g}$.
+$$\begin{aligned} H_1H_2 &= \frac{u^4\sin^2\theta\cos^2\theta}{4g^2} = \frac{R^2}{16} \\ &\Rightarrow R = 4\sqrt{H_1H_2}. \end{aligned}$$
+
+## Inclined plane and relative velocity
+
+! addon | Inclined plane; relative velocity
+Plane inclined at $\beta$, projection at $\alpha$ to the horizontal: range up the plane
+$$\frac{2u^2\cos\alpha\sin(\alpha - \beta)}{g\cos^2\beta},$$
+time $\frac{2u\sin(\alpha - \beta)}{g\cos\beta}$, maximum range $\frac{u^2}{g(1 + \sin\beta)}$ when $\alpha = \frac{\pi}{4} + \frac{\beta}{2}$.
+Relative velocity of $A$ w.r.t. $B$: $\vec{v}_A - \vec{v}_B$. River of width $d$, boat speed $v$, stream $u$: shortest time $\frac{d}{v}$ (drift $\frac{ud}{v}$); shortest path (if $v > u$) heading upstream at $\sin^{-1}\frac{u}{v}$ to the perpendicular.
+
+! check | Conditions added
+The inclined-plane results are for a projection up the plane, in the vertical plane through a line of greatest slope, with $\alpha > \beta$. In the river, the shortest time comes from heading straight across; if $v \leq u$ the boat cannot cross straight; for $v < u$ the least drift comes from heading upstream at $\sin^{-1}\frac{v}{u}$ to the perpendicular.
+
+! example | Question RV1 — standard
+Rain falls vertically at $4$ m/s. A man walks at $3$ m/s. In which direction should he hold his umbrella?
+**Solution.** Velocity of rain relative to man $= \vec{v}_r - \vec{v}_m$: $4$ m/s down and $3$ m/s backwards, magnitude $\boxed{5\ \text{m/s}}$. Hold the umbrella tilted forward at $\tan^{-1}\frac{3}{4} \approx \boxed{37°}$ to the vertical.
+
+## What it means
+
+- **Two motions at once**: horizontally nothing acts, so the speed stays $u\cos\theta$; vertically the motion is that of a ball thrown straight up with $u\sin\theta$. The time links them.
+- **Symmetry on level ground**: the climb to the top takes half the flight time, and the particle lands with the speed it was thrown with.
+- **Relative velocity**: subtract the observer's velocity. Rain seems to come from in front because you walk into it.
+
+! example | Example 1 — thrown horizontally
+A stone is thrown horizontally at $10$ m/s from the top of a cliff $20$ m high ($g = 10$). When and where does it land?
+**Solution.** Vertically $20 = \frac{1}{2} \cdot 10 \cdot t^2 \Rightarrow t = \boxed{2\ \text{s}}$; horizontally $x = 10 \cdot 2 = \boxed{20\ \text{m}}$ from the foot of the cliff.
+
+! example | Example 2 — height at the greatest range
+With speed $u$, how high does a projectile rise when it is thrown for the greatest range?
+**Solution.** $\theta = 45°$: $H = \frac{u^2 \cdot \frac{1}{2}}{2g} = \frac{u^2}{4g}$, a quarter of the greatest range $\frac{u^2}{g}$.
+
+? Time of flight, greatest height and range? :: $\frac{2u\sin\theta}{g}$, $\frac{u^2\sin^2\theta}{2g}$, $\frac{u^2\sin 2\theta}{g}$.
+? Angle for the greatest range on level ground? :: $45°$; the range is then $\frac{u^2}{g}$.
+? Two angles giving the same range? :: $\theta$ and $90° - \theta$.
+? Greatest range up a plane of inclination $\beta$? :: $\frac{u^2}{g(1 + \sin\beta)}$.
+
+! exam | What the exam asks
+- Time of flight, greatest height and range; the angle for a given range.
+- Complementary angles: $H_1 + H_2$, $R = 4\sqrt{H_1H_2}$.
+- Range on an inclined plane; relative velocity (rain, river, two moving bodies).
+
+! recap | One-minute revision
+- $T = \frac{2u\sin\theta}{g}$, $H = \frac{u^2\sin^2\theta}{2g}$, $R = \frac{u^2\sin 2\theta}{g}$, $R = 4H\cot\theta$.
+- Path $y = x\tan\theta - \frac{gx^2}{2u^2\cos^2\theta}$.
+- Relative velocity $\vec{v}_A - \vec{v}_B$; river: shortest time $\frac{d}{v}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapter on projectiles

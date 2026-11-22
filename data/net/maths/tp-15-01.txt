@@ -1,0 +1,74 @@
+@en
+# Force, resultant and resolution
+
+> Mechanics is statics (bodies at rest under forces) and dynamics (bodies in motion). Two forces at a point combine by the parallelogram law; many forces are handled by resolving each into two perpendicular components and adding.
+
+## Force and the parallelogram law
+
+! note | Statics and Dynamics (GIC notebook)
+- **Mechanics** = **Statics** (bodies at rest under forces) + **Dynamics** (bodies in motion).
+- **Force**: a push or pull; vector; unit newton, $1\ \text{N} = 1\ \text{kg m/s}^2$.
+- **Equilibrium**: net force $\sum\vec{F} = \vec{0}$ and net moment $\sum M = 0$.
+- **Concurrent forces**: lines of action meet in one point (e.g. a weight hung by two strings).
+^ data/net/maths/fig/mech-parallelogram.svg | forces $P$ and $Q$ at angle $\theta$; the diagonal $R$ makes the angle $\alpha$ with $P$
+**Parallelogram law.** If $P$ and $Q$ act at a point at angle $\theta$,
+$$R = \sqrt{P^2 + Q^2 + 2PQ\cos\theta},$$
+$$\tan\alpha = \frac{Q\sin\theta}{P + Q\cos\theta}$$
+($\alpha$ = angle of $R$ with $P$). Special cases: same direction $R = P + Q$; opposite $R = \lvert P - Q \rvert$; perpendicular $R = \sqrt{P^2 + Q^2}$. Equal forces $P, P$: $R = 2P\cos\frac{\theta}{2}$ (at $90°$: $P\sqrt{2}$; at $120°$: $P$; opposite: $0$).
+**Resolution.** $F_x = F\cos\theta$, $F_y = F\sin\theta$; for many forces $R_x = \sum F_x$, $R_y = \sum F_y$, $R = \sqrt{R_x^2 + R_y^2}$, $\tan\phi = \frac{R_y}{R_x}$.
+
+! check | Conditions added
+$\theta$ is the angle between the two forces drawn **away from** their common point (the triangle drawn head to tail has the angle $180° - \theta$ there). $\tan\phi = \frac{R_y}{R_x}$ fixes $\phi$ only up to $180°$: read the quadrant from the signs of $R_x$ and $R_y$. The formula for $\tan\alpha$ needs $P + Q\cos\theta \neq 0$; when it is $0$, the resultant is perpendicular to $P$.
+
+! example | Question F1
+Two forces of $3$ N and $4$ N act at a point at right angles. Find the magnitude and direction of their resultant.
+**Solution.** $R = \sqrt{3^2 + 4^2} = \boxed{5\ \text{N}}$, making $\tan\alpha = \frac{4}{3}$, i.e. $\alpha = \tan^{-1}\frac{4}{3} \approx 53°$ with the $3$ N force.
+
+! example | Question F2
+Resolve a force of $10$ N acting at $30°$ to the horizontal into horizontal and vertical components.
+**Solution.** $F_x = 10\cos 30° = 5\sqrt{3} \approx \boxed{8.66\ \text{N}}$, $F_y = 10\sin 30° = \boxed{5\ \text{N}}$.
+
+! example | Question F3 — standard
+Two forces of $3$ N and $5$ N act at a point at an angle of $60°$. Find the resultant.
+**Solution.** $R^2 = 9 + 25 + 2 \cdot 3 \cdot 5\cos 60° = 34 + 15 = 49 \Rightarrow \boxed{R = 7\ \text{N}}$.
+$$\begin{aligned} \tan\alpha &= \frac{5\sin 60°}{3 + 5\cos 60°} \\ &= \frac{5\sqrt{3}/2}{11/2} = \boxed{\frac{5\sqrt{3}}{11}} \end{aligned}$$
+(with the $3$ N force).
+
+! trick | Shortcut / time-saver
+The resultant always lies between $\lvert P - Q \rvert$ and $P + Q$. If the resultant of $P$ and $Q$ is perpendicular to $P$, then $P + Q\cos\theta = 0$. If $R = P = Q$ the angle is $120°$.
+
+## What it means
+
+- **Why a plus sign**: the diagonal $R$ is the third side of a triangle with sides $P$ and $Q$ and the angle $180° - \theta$ between them. The cosine rule gives $R^2 = P^2 + Q^2 - 2PQ\cos(180° - \theta)$, and $\cos(180° - \theta) = -\cos\theta$.
+- **Resolving is the parallelogram law backwards**: one force is replaced by two perpendicular forces that have it as their resultant. With three or more forces, adding components is the quickest method.
+- **Equilibrium of concurrent forces**: $R_x = 0$ and $R_y = 0$; no moment condition is needed, because all the forces pass through one point.
+
+! example | Example 1 — three forces that balance
+Forces of $10$ N towards the east, $10$ N towards the north and $10\sqrt{2}$ N towards the south-west act at a point. Find their resultant.
+**Solution.** $R_x = 10 - 10\sqrt{2}\cos 45° = 10 - 10 = 0$ and $R_y = 10 - 10\sqrt{2}\sin 45° = 0$. The resultant is $\boxed{0}$: the forces are in equilibrium.
+
+! example | Example 2 — finding the angle
+Forces of $5$ N and $3$ N have a resultant of $7$ N. Find the angle between them.
+**Solution.** $49 = 25 + 9 + 30\cos\theta \Rightarrow \cos\theta = \frac{1}{2} \Rightarrow \boxed{\theta = 60°}$.
+
+! example | Example 3 — resultant at right angles to one force
+The resultant of forces $5$ N and $10$ N is perpendicular to the $5$ N force. Find the angle between the forces and the resultant.
+**Solution.** $P + Q\cos\theta = 0$: $5 + 10\cos\theta = 0 \Rightarrow \cos\theta = -\frac{1}{2} \Rightarrow \boxed{\theta = 120°}$. $R^2 = 25 + 100 - 50 = 75$, so $\boxed{R = 5\sqrt{3}\ \text{N}}$. (Check: $R$, $P$ and $Q$ form a right triangle, $R^2 = Q^2 - P^2$.)
+
+? Resultant of $P$ and $Q$ at angle $\theta$? :: $R = \sqrt{P^2 + Q^2 + 2PQ\cos\theta}$.
+? Resultant of two equal forces $P$ at angle $\theta$? :: $2P\cos\frac{\theta}{2}$.
+? Least and greatest resultant of $P$ and $Q$? :: $\lvert P - Q \rvert$ and $P + Q$.
+? Two equal forces whose resultant equals each of them: the angle? :: $120°$.
+
+! exam | What the exam asks
+- Resultant of two forces and its direction; the angle from the resultant.
+- Components of a force; the resultant of several forces by components.
+- The special cases: equal forces, a resultant perpendicular to one force.
+
+! recap | One-minute revision
+- $R^2 = P^2 + Q^2 + 2PQ\cos\theta$; $\tan\alpha = \frac{Q\sin\theta}{P + Q\cos\theta}$.
+- Equal forces: $R = 2P\cos\frac{\theta}{2}$; $R \perp P \iff P + Q\cos\theta = 0$.
+- Components: $R_x = \sum F\cos\theta$, $R_y = \sum F\sin\theta$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Statics and Dynamics, Part I (Statics), the chapters on the composition and resolution of forces

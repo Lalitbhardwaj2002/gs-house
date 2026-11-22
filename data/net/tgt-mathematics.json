@@ -9,7 +9,7 @@
  "subtitle": { "en": "UPESSC TGT · subject code 07 · topic-wise notes on the official 2026 syllabus" },
  "pdf": { "en": "Full notes PDF" },
  "about": {
-  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 14 of the notes are ready; the other chapters are being added."
+  "en": "The units follow the official 2026 syllabus of TGT Mathematics. Each topic keeps the full text of the notes PDF, with explanations, worked examples and shortcuts added. Chapters 1 to 15 of the notes are ready; the other chapters are being added."
  },
  "units": [
   { "id": "u1", "icon": "💰", "en": "Commercial Mathematics", "line": { "en": "Work and time · speed · interest · banking · taxation" } },
@@ -320,7 +320,61 @@
     }
    ]
   },
-  { "id": "u13", "icon": "⚖️", "en": "Statics", "line": { "en": "Three forces · Lami's theorem · equilibrium · centre of gravity · catenary" } },
-  { "id": "u14", "icon": "🚀", "en": "Dynamics", "line": { "en": "Projectiles · radial and transverse · tangential and normal components" } }
+  {
+   "id": "u13", "icon": "⚖️", "en": "Statics",
+   "line": { "en": "Three forces · Lami's theorem · equilibrium · centre of gravity · catenary" },
+   "parts": [
+    {
+     "en": "Forces and equilibrium",
+     "chapters": [
+      { "id": "tp-15-01", "en": "15.1 Force, resultant and resolution",
+        "key": { "en": "Parallelogram law · equal forces · components and the resultant of many forces" } },
+      { "id": "tp-15-02", "en": "15.2 Three forces in equilibrium: Lami's theorem",
+        "key": { "en": "Triangle and polygon of forces · Lami's theorem · tensions in strings · the trigonometrical theorem" } },
+      { "id": "tp-15-03", "en": "15.3 Coplanar forces, moments and parallel forces",
+        "key": { "en": "Moments and Varignon's theorem · like and unlike parallel forces · couples · beams" } },
+      { "id": "tp-15-04", "en": "15.4 Friction",
+        "key": { "en": "Coulomb's laws · coefficient and angle of friction · inclined plane · ladder" } }
+     ]
+    },
+    {
+     "en": "Centre of gravity and catenary",
+     "chapters": [
+      { "id": "tp-15-05", "en": "15.5 Centre of gravity",
+        "key": { "en": "Arcs, areas and solids by integration · table of standard positions · stability of equilibrium" } },
+      { "id": "tp-15-06", "en": "15.6 Common catenary",
+        "key": { "en": "y = c cosh(x/c), s = c tan ψ · tension T = wy · length, sag and span" } }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u14", "icon": "🚀", "en": "Dynamics",
+   "line": { "en": "Projectiles · radial and transverse · tangential and normal components" },
+   "parts": [
+    {
+     "en": "Motion of a particle",
+     "chapters": [
+      { "id": "tp-15-08", "en": "15.8 Rectilinear motion and simple harmonic motion",
+        "key": { "en": "a = v dv/dx · SHM: period, amplitude, speeds · Hooke's law" } },
+      { "id": "tp-15-09", "en": "15.9 Projectiles",
+        "key": { "en": "Time of flight, height and range · complementary angles · inclined plane · relative velocity" } },
+      { "id": "tp-15-10", "en": "15.10 Work, power and energy",
+        "key": { "en": "Work by vector forces · kinetic and potential energy · power and horsepower" } },
+      { "id": "tp-15-11", "en": "15.11 Direct impact of smooth bodies",
+        "key": { "en": "Momentum and restitution · loss of kinetic energy · bouncing ball" } }
+     ]
+    },
+    {
+     "en": "Components of velocity and acceleration",
+     "chapters": [
+      { "id": "tp-15-12", "en": "15.12 Motion in a plane: radial and transverse components",
+        "key": { "en": "Velocity and acceleration in polar coordinates · equiangular spiral" } },
+      { "id": "tp-15-13", "en": "15.13 Tangential and normal components",
+        "key": { "en": "dv/dt along the tangent · v²/ρ along the normal" } }
+     ]
+    }
+   ]
+  }
  ]
 }
