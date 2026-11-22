@@ -2,7 +2,7 @@
 
 Each paper below was transcribed and solved by one agent from the page images of a copy shared after the exam (the copies stay outside the repository), then checked by a second, independent mathematician agent, who compared every question and option with the page images, solved every question before looking at the first answers, recomputed answers by script where possible, and corrected the solutions and the option notes. A question with no defensible answer (no correct option, two defensible answers, impossible data, or a printed text whose intended meaning is a guess) is left out of the quiz; the table lists them. Where a paper prints its board's key (DSSSB) and the worked answer differs, the solution says so and why.
 
-Questions shown to players: 620 from 6 papers (22 November 2026).
+Questions shown to players: 745 from 7 papers (22 November 2026).
 
 | Paper | Level | Transcribed | In the quiz | Left out |
 |---|---|---|---|---|
@@ -11,6 +11,7 @@ Questions shown to players: 620 from 6 papers (22 November 2026).
 | UPPSC LT Grade Mathematics 2025 (6 December) | TGT | 120 | 107 | Q32, Q61, Q74, Q94, Q101, Q104, Q115, Q122, Q133, Q135, Q137, Q144, Q145 |
 | UPPSC LT Grade Mathematics 2018 (29 July) | TGT | 112 | 108 | Q72, Q102, Q111, Q142 |
 | DSSSB TGT Mathematics 2021 (2 September, shift 3) | TGT | 90 | 84 | Q101, Q126, Q128, Q136, Q185, Q190 |
+| UP PGT Mathematics 2026 (10 May) | PGT | 125 | 125 | — |
 | UPPSC GIC Lecturer Mathematics 2026 (14 June) | PGT | 80 | 76 | Q98, Q110, Q115, Q119 |
 
 ## UP TGT Mathematics 2026 (3 June)
@@ -606,6 +607,230 @@ Output: `questions.checked.jsonl` (90 lines, 5 with `"drop": true`).
 
 ##### Count
 90 questions checked; 5 dropped (n 1, 26, 36, 85, 90); 85 kept. Answer = green key on 83 of the kept 85; differs on n 28 and n 70. 32 lines carry a flag.
+
+## UP PGT Mathematics 2026 (10 May)
+
+- Source: UPESSC PGT written examination, Mathematics, held on 10 May 2026 (question booklet as shared after the exam).
+- In the app: `data/mq/up-pgt-2026.json`, 125 questions; full mock 60 seconds a question, negative marking none.
+
+### Transcription and first solution
+
+### UP PGT (UPESSC) Mathematics, written examination of 10 May 2026
+
+#### Source
+- File: `papers/up-pgt-2026/paper.pdf`, 31 PDF pages with no text layer.
+- It is a scanned bilingual (Hindi/English) question booklet distributed by a coaching site. Every page carries the site's logo watermark, a vertical serial number, small QR codes and the booklet series code "06".
+- A candidate's handwritten ticks and rough work are on most pages. They were ignored; in several places (e.g. Q82, Q93, Q100, Q115, Q117) the ticks differ from the worked answers.
+
+#### Page map
+| PDF page | Booklet page | Questions |
+|---|---|---|
+| p1 | 2 (under the site's title strip) | Q1–Q2 |
+| p2 | advertisement (skipped) | none |
+| p3 | 3 | Q3–Q9 |
+| p4 | 4 | Q10–Q14 |
+| p5 | 5 | Q15–Q19 |
+| p6 | 6 | Q20 |
+| p7 | 7 | Q21–Q25 |
+| p8 | 8 | Q26–Q29 |
+| p9 | 9 | Q30 |
+| p10 | 10 | Q31–Q34 |
+| p11 | 11 | Q35–Q37 |
+| p12 | 12 | Q38–Q40 |
+| p13 | 13 | Q41–Q46 |
+| p14 | 14 | Q47–Q52 |
+| p15 | 15 | Q53–Q58 |
+| p16 | 16 | Q59–Q63 |
+| p17 | 17 | Q64–Q66 |
+| p18 | 18 | Q67–Q70 |
+| p19 | 19 | Q71–Q74 |
+| p20 | 20 | Q75–Q79 |
+| p21 | 21 | Q80–Q84 |
+| p22 | 22 | Q85 |
+| p23 | 23 | Q86–Q89 |
+| p24 | 24 | Q90–Q95 |
+| p25 | 25 | Q96–Q99 |
+| p26 | 26 | Q100–Q105 |
+| p27 | 27 | Q106–Q109 |
+| p28 | 28 | Q110–Q114 |
+| p29 | 29 | Q115–Q120 |
+| p30 | advertisement (skipped) | none |
+| p31 | 30 | Q121–Q125 |
+
+- Booklet page 1, the cover with instructions, is not in the PDF. It holds no questions, since Q1 starts on booklet page 2.
+- **No question pages are missing.**
+
+#### Questions
+- Range: **Q1–Q125, all mathematics**, as expected. `questions.jsonl` has 125 lines, numbered 1–125 in order with none repeated. No questions were skipped.
+- Official key: none is printed, so `"key": null` everywhere. Level is `"PGT"` everywhere.
+- Text: the English half was used and compared with the Hindi where needed. No misprints were corrected. Kept as printed:
+  - Q11: the English shows vertical bars around $P/Q$ and $Q/P$; the Hindi has plain fractions. They were written as plain fractions. Forces are positive magnitudes, so this does not change the answer.
+  - Q52 (A) is printed as "$y^3=\dots$".
+  - Q41 uses $\phi$ for the empty set.
+  - Grammar is kept as printed, e.g. Q63 "The partial differential equation represents the curve …".
+- Answers set by me: A = 27, B = 27, C = 38, D = 33.
+- Topic choices with no exact page:
+  - No page covers partial differential equations. Q52 (complete integral) and Q90 (Clairaut-form PDE of planes) are under tp-08-03. Q63 (forming a PDE) is under tp-08-01.
+  - Q111 (Atwood's machine) is under tp-15-08.
+  - Q28 (rods resting on a circle; height of the centre of gravity stationary) is under tp-15-05, the stability-of-equilibrium page.
+
+#### Verification
+`verify.py` recomputes **115 of the 125 answers** a second way. The methods are numerical integration and differentiation, exact Fraction arithmetic, numpy linear algebra, brute-force enumeration, substitution, and an RK4 run of the pendulum (Q50). Each check tests every option independently.
+- 114 checks confirm my answer as the only passing option.
+- Q109 passes two options, (B) and (C), as flagged below.
+- No check disagrees with my answer.
+
+The 10 questions not checked by script are pure theory with nothing to compute: Q26, Q30, Q34, Q43, Q47, Q70, Q80, Q86, Q99 and Q100 (group property, order/degree, triangle of forces, statements about determinants, definitions). I checked those by hand.
+
+`build.py` also checks the file format: every line is valid JSON (reloaded with `json.loads`), there are exactly four options and four notes, `$` signs are balanced, `$$` appears only in solutions, every topic id exists in `topics.txt`, and the numbering runs 1–125. `cmds.py` lists the LaTeX commands used; all of them are standard KaTeX.
+
+#### Flags (3)
+- **Q4**: Matrix of $T(x,y)=(2x-3y,x+y)$. (D) is the usual column convention, $T(e_j)$ as columns. (B) is its transpose, the convention a few books use. (D) is taken because the paper itself uses the column convention in Q73.
+- **Q59**: $(\det M)^2=4$ gives $\det M=\pm2$. Only $+2$ is offered, so (C) is taken.
+- **Q109**: There are two tangents to $x^2-9y^2=9$ from $(3,2)$, and both are options: (B) $x=3$, the tangent at the vertex $(3,0)$, and (C) $12y-5x-9=0$. (C), the tangent found by the slope method, is taken as intended. Distractor (A) is (C) with its coefficients swapped, which suggests (C) is the designed answer.
+
+#### Pattern of the paper (for the exam-pattern study)
+
+##### Questions per topic id
+| Topic id | Page | Qs | Question numbers |
+|---|---|---|---|
+| tp-01-01 | Sets and set operations | 2 | 41, 61 |
+| tp-01-02 | Relations and functions | 1 | 29 |
+| tp-01-03 | Permutations and combinations | 3 | 14, 96, 118 |
+| tp-01-04 | Binomial theorem | 1 | 8 |
+| tp-01-05 | Exponential and logarithmic series | 1 | 104 |
+| tp-01-06 | Sequences and series | 2 | 10, 79 |
+| tp-01-08 | Quadratic equations | 2 | 5, 112 |
+| tp-02-01 | Types of matrices, products | 7 | 32, 45, 54, 69, 91, 106, 122 |
+| tp-02-02 | Inverse of a matrix | 1 | 92 |
+| tp-02-03 | Determinants, adjoint | 7 | 19, 25, 59, 64, 70, 75, 85 |
+| tp-02-04 | Rank and linear systems | 1 | 107 |
+| tp-02-05 | Eigenvalues, Cayley–Hamilton | 4 | 7, 35, 57, 82 |
+| tp-03-01 | Vector spaces and subspaces | 2 | 47, 99 |
+| tp-03-02 | Linear dependence, basis, dimension | 5 | 16, 17, 74, 78, 115 |
+| tp-03-03 | Linear transformations | 7 | 1, 4, 22, 48, 73, 89, 121 |
+| tp-04-02 | Elementary properties of groups | 1 | 26 |
+| tp-04-04 | Permutations, Sn | 1 | 56 |
+| tp-04-07 | Cosets and Lagrange | 2 | 37, 77 |
+| tp-04-08 | Cyclic groups | 1 | 15 |
+| tp-05-06 | Limits | 2 | 51, 102 |
+| tp-05-07 | Continuity | 1 | 86 |
+| tp-06-01 | Derivatives | 3 | 62, 113, 123 |
+| tp-06-04 | Tangents and normals | 1 | 46 |
+| tp-06-05 | Maxima and minima | 1 | 33 |
+| tp-06-07 | Curvature | 1 | 105 |
+| tp-07-01 | Standard integrals | 2 | 20, 114 |
+| tp-07-02 | Methods of integration | 5 | 31, 87, 95, 101, 116 |
+| tp-07-03 | Definite integrals | 5 | 36, 44, 55, 68, 81 |
+| tp-07-05 | Area | 2 | 6, 12 |
+| tp-07-06 | Volumes and surfaces: formulas | 1 | 117 |
+| tp-07-08 | Volumes: solved exercise | 1 | 9 |
+| tp-08-01 | Order, degree, formation (incl. PDE formation) | 5 | 30, 43, 63, 100, 125 |
+| tp-08-03 | Higher degree; Clairaut (incl. PDE) | 2 | 52, 90 |
+| tp-09-02 | Trigonometric identities | 2 | 3, 108 |
+| tp-09-03 | Trigonometric equations | 1 | 66 |
+| tp-09-04 | Inverse circular functions | 1 | 40 |
+| tp-09-05 | Properties of triangles | 1 | 124 |
+| tp-10-01 | Complex numbers: basics | 1 | 27 |
+| tp-10-03 | Argument | 1 | 83 |
+| tp-10-10 | Inverse hyperbolic functions | 1 | 2 |
+| tp-11-01 | Points and straight lines | 1 | 23 |
+| tp-11-02 | Pair of straight lines | 4 | 80, 97, 110, 120 |
+| tp-11-03 | General second-degree equation | 1 | 38 |
+| tp-11-04 | Circle | 1 | 119 |
+| tp-11-05 | Parabola | 3 | 39, 53, 84 |
+| tp-11-06 | Ellipse | 2 | 18, 98 |
+| tp-11-07 | Hyperbola | 3 | 58, 60, 109 |
+| tp-12-02 | Dot and cross products | 5 | 13, 42, 71, 76, 103 |
+| tp-13-03 | Sphere | 1 | 88 |
+| tp-14-01 | Differentiation of vectors | 1 | 24 |
+| tp-14-02 | Gradient, divergence, curl | 2 | 72, 94 |
+| tp-15-01 | Resultant of forces | 1 | 93 |
+| tp-15-02 | Triangle of forces, Lami | 1 | 34 |
+| tp-15-03 | Parallel forces | 1 | 11 |
+| tp-15-05 | Centre of gravity, equilibrium | 1 | 28 |
+| tp-15-07 | Moment of inertia | 1 | 65 |
+| tp-15-08 | Rectilinear motion, SHM | 2 | 50, 111 |
+| tp-15-09 | Projectiles | 2 | 21, 49 |
+| tp-15-10 | Work, power, energy | 1 | 67 |
+| **Total** | 59 topic ids | **125** | |
+
+By chapter:
+| Chapter | Questions |
+|---|---|
+| Matrices and determinants (tp-02) | 20 |
+| Integral calculus (tp-07) | 16 |
+| Coordinate geometry 2D (tp-11) | 15 |
+| Linear algebra (tp-03) | 14 |
+| Algebra (tp-01) | 12 |
+| Mechanics (tp-15) | 10 |
+| Differential equations, with PDE (tp-08) | 7 |
+| Differential calculus (tp-06) | 6 |
+| Groups (tp-04) | 5 |
+| Trigonometry (tp-09) | 5 |
+| Vectors (tp-12) | 5 |
+| Real analysis (tp-05) | 3 |
+| Complex numbers (tp-10) | 3 |
+| Vector calculus (tp-14) | 3 |
+| 3D geometry (tp-13) | 1 |
+
+Nothing at all on probability and statistics (tp-16), commercial maths and Euclidean geometry (tp-17), rings and fields, sequences and series of real numbers, or 3D lines and planes. There is only one 3D question, on the sphere.
+
+##### Style and difficulty
+**One-line note:** a moderate, B.Sc.-level paper of mostly one- or two-step computations with standard textbook results (about 80 of 125). About 28 are direct recall of a definition, formula or theorem, and about 17 need genuinely multi-step work (e.g. Q9, Q28, Q46, Q60, Q64, Q95, Q98, Q109). It leans to computation over theory, though linear algebra and group questions are theory-flavoured. Matrices, determinants and linear algebra make up 34 of 125.
+
+Formats: 5 match-the-list questions (Q2, Q20, Q30, Q38, Q85), 3 "which statements are correct" questions (Q15, Q61, Q70), and the rest direct single-answer MCQs. This split into recall, short computation and multi-step is my own judgement.
+
+### Independent check
+
+#### UP PGT Mathematics, 10 May 2026: check of 22 November 2026
+
+Independent check of `pyq/up-pgt-2026/questions.jsonl` (UPESSC PGT Mathematics, 10 May 2026; scanned bilingual booklet, series 06; no official key). Output: `questions.checked.jsonl` in this folder (125 lines, Q1–Q125, all PGT, `key` null everywhere).
+
+##### Method
+- Rendered all 31 PDF pages with PyMuPDF at zoom 2 (`img/pNN.png`) and cropped doubtful spots at zoom 3–6 (`img/c_*.png`). Compared every question stem and all four options with the English half, using the Hindi where the print was unclear. PDF p2 and p30 are advertisements; the page map in the transcriber's log is right.
+- Solved all 125 questions myself before reading the transcriber's answers (`mine.json`), then compared.
+- `mycheck.py` (numpy and fractions; sympy is not installed here) checks **106 answers** by an independent computation that tests each option: numerical integration and differentiation, exact fractions, matrix algebra, brute-force counting, substitution. Each check gives my answer as the only passing option. The other 19 (Q15, 17, 26, 30, 34, 41, 43, 45, 50, 58, 65, 70, 80, 86, 94, 97, 99, 100, 105) are theory or one-line recall and were checked by hand.
+- Format: every line reloads with `json.loads`; 4 options and 4 notes each; `answer` 0–3; even number of `$` in every string; `$$` only in solutions; no `align`/`\displaystyle`; every LaTeX command is standard KaTeX (`cmds.py`); every topic id is in `topics.txt`.
+
+##### Result
+- **Answers:** mine agree with the transcriber's on 124 of 125. The one difference is Q109, caused by a transcription error (below).
+- **Dropped:** none. No question as printed has two correct options or none.
+- **Transcription:** one error, in Q109 option (C). Everything else matches the page, including the signs, exponents, matrix entries and option order.
+
+##### Changes made (7 questions)
+| Q | What was wrong | Now |
+|---|---|---|
+| 109 | **Transcription:** option (C) was written $12y-5x-9=0$; the booklet prints $12y-5x+9=0$ (zoomed crop `img/c_p27_81_85.png`). With the wrong sign, (B) and (C) both looked like tangents from $(3,2)$, so (C) was taken. | As printed, (C) touches $x^2-9y^2=9$ at $(5,\frac43)$ but does not pass through $(3,2)$ ($24-15+9=18$). The only correct option is **(B) $x=3$**, the tangent at the vertex $(3,0)$, which passes through $(3,2)$. **Answer changed C → B.** The solution, notes, fact and flag are rewritten to say this. The second tangent from $(3,2)$, $12y-5x-9=0$, is not offered. |
+| 4 | The solution did not say how the convention is settled (the brief requires it). | Answer (D) kept. The solution now says that this paper uses the column convention: in its Q73, $T(x,y,z)=(3x+z,-2x+y,-x+2y+4z)$, the only matching option is the coefficient matrix (columns $T(e_j)$), and the transpose is not offered. It also says the row convention gives (B). Flag reworded. |
+| 28 | Topic tp-15-05 (centre of gravity / stability of a body on a curved surface) teaches nothing this question uses. The solution relied on "height of G stationary" (virtual work), which no notes page states. | Topic **tp-15-03** (coplanar forces and moments: "equilibrium when both components and the moment are zero"). New solution: resolve vertically, $2R\sin\theta=2W$, then take moments about $A$, $R\cdot r\cot\theta=Wl\sin\theta$, giving $r\cot\theta=l\sin^2\theta$. The CG-height method is kept as a one-line check. The fact is updated. Answer (D) unchanged. |
+| 46 | Note on (D) said "$(4,4)$ is not on the curve". It is on the curve: $16=4\cdot(2-4)^2$. | "On the curve but not on the tangent $y=\frac{3-x}{2}$." |
+| 24 | Note on (B) ("not even a number at a given point") was inaccurate. | "Still contains $x$ and $y$, but at a fixed point the answer is a constant vector." |
+| 90 | The solution took $c=a\sqrt{p^2+q^2+1}$ without the $\pm$. | Now $c=\pm a\sqrt{\cdots}$, with the sign offered, plus the line analogue $y=px+a\sqrt{1+p^2}$ (the Clairaut example on tp-08-03). |
+| 111 | The value of $g$ was not stated. | States $g=9.8$ m/s$^2$. (With $g=10$ the difference would be 4.9 kg, still closest to (B) 5 kg.) |
+
+##### Flags re-checked (as asked)
+- **Q4** (column vs row convention): **kept, (D).** The paper fixes the convention in Q73. There, Q73's option (B), the coefficient matrix, is the only one of either convention that is offered; under the row convention no option of Q73 would be correct. The solution and flag say so. If you want zero exposure to this convention dispute, Q4 is the one to drop, but by the stated rule it can stay.
+- **Q59** ($\det M=\pm2$, only $+2$ offered): **kept, (C).** No other option is possible, so no careful student would dispute it. The solution and flag already say $\pm2$.
+- **Q109**: the "two tangents" problem came from the transcription error. As printed it has exactly one correct option, **(B)**, so it is **kept, not dropped**. One caveat: the setters may have meant $12y-5x-9=0$ in (C) and misprinted the sign. In that case an official key, if one is ever published, could say (C). Against that, distractor (A) $5y-12x+9=0$ is the *printed* (C) with its coefficients swapped, which suggests the $+9$ is what the setter wrote. On the printed paper, (B) is the only defensible answer. Drop Q109 only if you would rather not risk a clash with a future official key.
+
+##### Topic ids re-checked (as asked)
+No notes page covers partial differential equations, and none covers Atwood's machine (I searched the notes texts). The choices below are the nearest pages:
+- **Q63** (form the PDE of $z=ax+y$): **tp-08-01** kept. It is formation by eliminating an arbitrary constant, as taught there.
+- **Q90** (PDE of planes at distance $a$ from the origin): **tp-08-03** kept. The answer is Clairaut's form, and tp-08-03 works the line analogue $y=cx+\sqrt{1+c^2}$ (tangents of a circle).
+- **Q52** (complete integral of $(p+y)^2+(q+x)^2=1$): **tp-08-03** kept. That page has the idea of a complete solution with arbitrary constants in Clairaut form. tp-06-02 (partial derivatives, for checking the options) is the only alternative.
+- **Q111** (Atwood's machine): **tp-15-08** kept. The question is uniform-acceleration kinematics with Newton's law.
+- **Q28**: changed to **tp-15-03** (see the table).
+- All other topic ids were looked over and are reasonable.
+
+##### Other remarks (no change made)
+- Q11: the vertical bars around $\frac PQ$, $\frac QP$ in the English line are pen strokes by the candidate; the Hindi has none. Writing plain fractions is right.
+- Q42 ($\theta=\frac{3\pi}{4}$ also works but is not offered), Q64 (the determinant also vanishes when $a=b=c$, not offered), Q105 ((B) is linear only if $a=0$) and Q113 (the domain $0<x<\pi$ is assumed) each have a single defensible option. The solutions mention the point where needed.
+- Handwritten ticks on the booklet were ignored. They differ from the correct answers in many places, e.g. Q15, Q16, Q17, Q55, Q60, Q74, Q82, Q93, Q96, Q100, Q115, Q117, Q123.
+
+##### Doubtful
+- Nothing unresolved in the transcription.
+- The only judgement calls are Q4 (kept on the strength of Q73) and Q109 (kept with answer (B) as printed). Both are explained in the solutions and flags.
 
 ## UPPSC GIC Lecturer Mathematics 2026 (14 June)
 
