@@ -1,0 +1,67 @@
+@en
+# Direct impact of smooth bodies
+
+> When two smooth balls collide head-on, the total momentum is unchanged and Newton's law of restitution fixes how fast they separate: $e$ times as fast as they approached. These two equations give both velocities after impact and the loss of kinetic energy.
+
+## Momentum and restitution
+
+^ data/net/maths/fig/mech-impact.svg | direct impact: both velocities $u_1$, $u_2$ along the line of centres
+
+! note | Direct impact of smooth bodies
+- **Direct impact**: velocities before impact are along the line of centres. **Smooth**: no friction, so momentum perpendicular to the line of centres is unchanged.
+- **Conservation of momentum**: $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$.
+- **Newton's law of restitution**: $v_2 - v_1 = e(u_1 - u_2)$, i.e. $e = \frac{\text{velocity of separation}}{\text{velocity of approach}}$, $0 \leq e \leq 1$.
+- $e = 1$: perfectly elastic (KE conserved; equal masses exchange velocities). $e = 0$: perfectly inelastic (bodies move together; maximum loss of KE). $0 < e < 1$: partially elastic.
+
+! check | Conditions added
+All velocities are measured along the line of centres with one direction taken as positive, so a velocity in the other direction is negative. For a ball striking a fixed wall or floor normally, the rebound speed is $e$ times the striking speed. The bouncing-ball totals in the shortcut need $e < 1$.
+
+! example | Question I1 — from the notes
+A ball hits a fixed wall normally at $12$ m/s and rebounds at $9$ m/s. Find $e$.
+**Solution.** $e = \frac{\text{separation}}{\text{approach}} = \frac{9}{12} = \boxed{0.75}$.
+
+! example | Question I2 — standard
+A ball of mass $2$ kg moving at $6$ m/s strikes directly a ball of mass $4$ kg at rest. If $e = \frac{1}{2}$, find the velocities after impact and the loss of KE.
+**Solution.** Momentum: $2 \cdot 6 = 2v_1 + 4v_2 \Rightarrow v_1 + 2v_2 = 6$. Restitution: $v_2 - v_1 = \frac{1}{2}(6 - 0) = 3$. Adding: $3v_2 = 9 \Rightarrow \boxed{v_2 = 3\ \text{m/s}}$, $\boxed{v_1 = 0}$. KE before $= \frac{1}{2} \cdot 2 \cdot 36 = 36$ J; after $= \frac{1}{2} \cdot 4 \cdot 9 = 18$ J; loss $= \boxed{18\ \text{J}}$. Check with formula:
+$$\begin{aligned} &\frac{m_1m_2}{2(m_1 + m_2)}(1 - e^2)(u_1 - u_2)^2 \\ &= \frac{8}{12} \cdot \frac{3}{4} \cdot 36 = 18 \ ✓. \end{aligned}$$
+
+! trick | Shortcut / time-saver
+$$\begin{aligned} v_1 &= \frac{1}{m_1 + m_2}\big[(m_1 - em_2)u_1 \\ &\qquad + (1 + e)m_2u_2\big], \end{aligned}$$
+$$\begin{aligned} v_2 &= \frac{1}{m_1 + m_2}\big[(m_2 - em_1)u_2 \\ &\qquad + (1 + e)m_1u_1\big]. \end{aligned}$$
+Ball dropped from height $h$: rebounds to $e^2h$, then $e^4h, \ldots$; total distance $h\frac{1 + e^2}{1 - e^2}$; total time $\sqrt{\frac{2h}{g}} \cdot \frac{1 + e}{1 - e}$.
+
+## What it means
+
+- **Two equations, two unknowns**: momentum is conserved because the forces of the impact are equal and opposite; restitution is an experimental law that describes the bounce.
+- **$e$ measures bounce**: $e = 1$ is a perfect bounce with no loss of kinetic energy; $e = 0$ is "sticking together".
+- **The loss of kinetic energy** is $\frac{m_1m_2}{2(m_1 + m_2)}(1 - e^2)(u_1 - u_2)^2$: zero only when $e = 1$, greatest when $e = 0$.
+
+! example | Example 1 — equal masses, perfectly elastic
+A ball moving at $5$ m/s strikes an equal ball at rest, $e = 1$. Find the velocities after impact.
+**Solution.** $v_1 + v_2 = 5$ and $v_2 - v_1 = 5$: $\boxed{v_1 = 0}$, $\boxed{v_2 = 5\ \text{m/s}}$. The balls exchange velocities.
+
+! example | Example 2 — a bouncing ball
+A ball is dropped from $9$ m on to a floor with $e = \frac{1}{3}$. Find the height of the first rebound and the total distance travelled.
+**Solution.** First rebound $e^2h = \frac{9}{9} = \boxed{1\ \text{m}}$. Total distance $= 9 \cdot \frac{1 + \frac{1}{9}}{1 - \frac{1}{9}} = 9 \cdot \frac{10}{8} = \boxed{11.25\ \text{m}}$.
+
+! example | Example 3 — sticking together
+A $3$ kg ball moving at $4$ m/s strikes a $1$ kg ball at rest and they move on together. Find the common velocity and the loss of KE.
+**Solution.** $3 \cdot 4 = 4v \Rightarrow \boxed{v = 3\ \text{m/s}}$. KE: $24$ J before, $18$ J after, loss $\boxed{6\ \text{J}}$ (formula: $\frac{3 \cdot 1}{2 \cdot 4} \cdot 1 \cdot 16 = 6$).
+
+? Newton's law of restitution? :: $v_2 - v_1 = e(u_1 - u_2)$: separation $= e \times$ approach.
+? $e$ for a perfectly elastic and a perfectly inelastic impact? :: $1$ and $0$.
+? Equal masses, $e = 1$, one at rest: after impact? :: They exchange velocities.
+? Height of the $n$-th rebound of a ball dropped from $h$? :: $e^{2n}h$.
+
+! exam | What the exam asks
+- Velocities after a direct impact; the value of $e$.
+- Loss of kinetic energy.
+- A ball bouncing on a floor: rebound heights, total distance and time.
+
+! recap | One-minute revision
+- $m_1u_1 + m_2u_2 = m_1v_1 + m_2v_2$; $v_2 - v_1 = e(u_1 - u_2)$.
+- Loss of KE $= \frac{m_1m_2}{2(m_1 + m_2)}(1 - e^2)(u_1 - u_2)^2$.
+- Bouncing: heights $e^2h, e^4h, \ldots$; distance $h\frac{1 + e^2}{1 - e^2}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapter on direct collision of elastic bodies

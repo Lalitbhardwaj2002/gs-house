@@ -1,0 +1,65 @@
+@en
+# Work, power and energy
+
+> Work is force times displacement along the force; power is the rate of doing work. The work done by the net force equals the change of kinetic energy, and when only gravity or elastic forces act, kinetic plus potential energy stays constant.
+
+## Work, power and energy
+
+! note | Work, power and energy
+- **Work** $W = \vec{F} \cdot \vec{d} = Fd\cos\theta$ (joule). $\theta = 0$: positive; $\theta = 180°$: negative (friction); $\theta = 90°$: zero (centripetal force, normal reaction).
+- **KE** $= \frac{1}{2}mv^2$ (double the speed $\Rightarrow$ four times the KE); **PE** $= mgh$; mechanical energy $E = \text{KE} + \text{PE}$ (conserved if only gravity/elastic forces act).
+- **Work–energy theorem**: work done by the net force $= \Delta\text{KE}$.
+- **Power** $P = \frac{W}{t} = Fv$; $1$ HP $= 746$ W.
+
+! check | Conditions added
+$W = \vec{F} \cdot \vec{d}$ is for a constant force; for a varying force $W = \int \vec{F} \cdot d\vec{r}$. $P = Fv$ when the force acts along the velocity (in general $P = \vec{F} \cdot \vec{v}$). $746$ W is the British horsepower; the metric horsepower is about $735.5$ W.
+
+! example | Question W1 — from the notes
+Forces $4\hat{i} + \hat{j} - 3\hat{k}$ and $3\hat{i} + \hat{j} - \hat{k}$ act on a particle and displace it from $\hat{i} + 2\hat{j} + 3\hat{k}$ to $5\hat{i} + 4\hat{j} + \hat{k}$. Find the work done.
+**Solution.** Resultant $\vec{R} = 7\hat{i} + 2\hat{j} - 4\hat{k}$; displacement
+$$\begin{aligned} \vec{d} &= (5 - 1)\hat{i} + (4 - 2)\hat{j} \\ &\quad + (1 - 3)\hat{k} \\ &= 4\hat{i} + 2\hat{j} - 2\hat{k}. \end{aligned}$$
+$W = \vec{R} \cdot \vec{d} = 28 + 4 + 8 = \boxed{40 \text{ units}}$.
+
+! example | Question W2 — standard
+A car moves at a steady $20$ m/s against a total resistance of $500$ N. Find the power of the engine.
+**Solution.** Steady speed $\Rightarrow$ tractive force $= 500$ N. $P = Fv = 500 \times 20 = \boxed{10\,000\ \text{W} = 10\ \text{kW}} \approx 13.4$ HP.
+
+! example | Question W3 — standard
+A body of mass $2$ kg falls from a height of $20$ m. Find its speed just before hitting the ground ($g = 10$).
+**Solution.** Energy conservation: $mgh = \frac{1}{2}mv^2 \Rightarrow v = \sqrt{2gh} = \sqrt{400} = \boxed{20\ \text{m/s}}$.
+
+## What it means
+
+- **Only the part along the motion works**: a force at right angles to the motion (the pull of a string on a particle going round a circle, the reaction of a smooth floor) does no work.
+- **Energy is the bookkeeping of work**: the work done by the net force goes into kinetic energy; work done against gravity is stored as potential energy and comes back on the way down.
+- **Power and speed**: at steady speed the engine's force equals the resistance, so $P = (\text{resistance}) \times v$.
+
+! example | Example 1 — lifting
+How much work is done in lifting a $5$ kg mass through $4$ m ($g = 9.8$)?
+**Solution.** $W = mgh = 5 \times 9.8 \times 4 = \boxed{196\ \text{J}}$.
+
+! example | Example 2 — braking by the work–energy theorem
+A car of mass $1000$ kg moving at $20$ m/s is braked to rest in $50$ m. Find the average braking force.
+**Solution.** Work of the brakes $=$ loss of KE: $F \times 50 = \frac{1}{2} \cdot 1000 \cdot 20^2 = 200\,000$, so $F = \boxed{4000\ \text{N}}$.
+
+! example | Example 3 — the power of a pump
+A pump lifts $600$ kg of water through $10$ m every minute. Find its power ($g = 9.8$).
+**Solution.** Work per second $= \frac{600 \times 9.8 \times 10}{60} = \boxed{980\ \text{W}}$ (about $1.3$ HP).
+
+? Work done by a force perpendicular to the motion? :: Zero.
+? Work–energy theorem? :: Work done by the net force equals the change in kinetic energy.
+? Power in terms of force and velocity? :: $P = Fv$.
+? Doubling the speed changes the kinetic energy by what factor? :: Four times.
+
+! exam | What the exam asks
+- Work done by constant forces given as vectors.
+- Power of an engine at steady speed; horsepower.
+- Speed from energy conservation; the work–energy theorem.
+
+! recap | One-minute revision
+- $W = \vec{F} \cdot \vec{d} = Fd\cos\theta$; $P = \frac{W}{t} = Fv$; $1$ HP $= 746$ W.
+- KE $= \frac{1}{2}mv^2$, PE $= mgh$; net work $= \Delta$KE.
+- Fall from height $h$: $v = \sqrt{2gh}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapter on work, power and energy

@@ -1,0 +1,68 @@
+@en
+# Friction
+
+> Friction is the part of a surface's reaction along the surface. It grows as needed to stop sliding, up to the limiting value $\mu N$; the angle of friction $\lambda$, with $\tan\lambda = \mu$, is also the steepest slope on which a body can rest.
+
+## Laws of friction
+
+! note | Friction
+- Friction opposes relative motion. **Static friction** (adjusts itself), **limiting friction** $F_L$ (maximum static), **kinetic friction** $F_k < F_L$.
+- **Coulomb's laws**: (i) opposes the tendency of motion; (ii) $F_L \propto$ normal reaction $N$; (iii) independent of the area of contact; (iv) $F_k < F_L$.
+- **Coefficient of friction** $\mu = \frac{F_L}{N}$ (no unit). **Angle of friction** $\lambda$: angle between the resultant reaction and the normal, $\tan\lambda = \mu$.
+- On an inclined plane: $N = W\cos\theta$, $F_L = \mu W\cos\theta$. **Angle of repose** (steepest angle at which a body rests) = angle of friction.
+^ data/net/maths/fig/mech-incline.svg | about to slide down: $W\sin\theta = \mu W\cos\theta \Rightarrow \tan\theta = \mu$
+
+! check | Conditions added
+$F = \mu N$ only when motion is about to start (limiting friction); before that, friction is only as large as is needed to prevent motion, $F \leq \mu N$. Once the body moves, the smaller kinetic friction acts. $N = W\cos\theta$ holds when no other force pushes or pulls across the plane; a force $P$ at an angle to the plane changes $N$ (as in Example 1 below).
+
+! example | Question Fr1 — standard
+A body of mass $10$ kg rests on a rough horizontal table, $\mu = 0.3$. Find the least horizontal force needed to move it ($g = 9.8$).
+**Solution.** $N = mg = 98$ N, $F_L = \mu N = 0.3 \times 98 = \boxed{29.4\ \text{N}}$.
+
+! example | Question Fr2 — standard
+A body is just on the point of sliding down a rough plane inclined at $30°$. Find $\mu$ and the angle of friction.
+**Solution.** Along the plane: $W\sin 30° = \mu W\cos 30° \Rightarrow \mu = \tan 30° = \boxed{\frac{1}{\sqrt{3}}}$; angle of friction = angle of repose = $\boxed{30°}$.
+
+! example | Question Fr3 — standard (ladder)
+A uniform ladder rests against a smooth vertical wall with its foot on rough ground ($\mu$). Show that it is on the point of slipping when $\tan\theta = \frac{1}{2\mu}$, $\theta$ being the inclination of the ladder to the ground.
+**Solution.**
+^ data/net/maths/fig/mech-ladder.svg | the ladder: $R$ from the smooth wall, $N$ and $\mu N$ at the foot $A$, $W$ at the middle
+Length $2l$, weight $W$ at the middle. Forces: $R$ (wall, horizontal), $N$ and $F = \mu N$ (ground). Vertical: $N = W$. Horizontal: $R = F = \mu W$. Moments about the foot $A$:
+$$\begin{aligned} R \cdot 2l\sin\theta &= W \cdot l\cos\theta \\ \Rightarrow \mu W \cdot 2\sin\theta &= W\cos\theta \\ \Rightarrow \tan\theta &= \boxed{\frac{1}{2\mu}} \end{aligned}$$
+
+! check | A condition added
+The ladder rests whenever $\tan\theta \geq \frac{1}{2\mu}$, that is when it is at least as steep as the slipping position; flatter than that, it slips.
+
+## What it means
+
+- **Why $\tan\lambda = \mu$**: the reaction of a rough surface has a normal part $N$ and a part $F$ along the surface. At the limit $F = \mu N$, so the total reaction leans away from the normal by $\lambda$, with $\tan\lambda = \frac{F}{N} = \mu$.
+- **Angle of repose = angle of friction**: a body about to slide is held by its weight and the total reaction only, so the reaction is vertical. It leans $\lambda$ from the normal, and the normal leans $\theta$ from the vertical, so $\theta = \lambda$.
+- **Pulling at an angle**: lifting a little lowers $N$ and so the friction; the least pull is at the angle of friction above the horizontal.
+
+! example | Example 1 — the least pull
+A box of weight $100$ N rests on a rough floor with $\mu = \frac{1}{\sqrt{3}}$. Find the least force that will move it, and its direction.
+**Solution.** Pull $P$ at the angle $\phi$ above the horizontal: $P\cos\phi = \mu(100 - P\sin\phi)$, so
+$$\begin{aligned} P &= \frac{100\mu}{\cos\phi + \mu\sin\phi} \\ &= \frac{100\sin\lambda}{\cos(\phi - \lambda)} \end{aligned}$$
+with $\lambda = 30°$. It is least when $\phi = \lambda$: $\boxed{P = 50\ \text{N}}$ at $30°$ above the horizontal. (A horizontal pull needs $\frac{100}{\sqrt{3}} \approx 57.7$ N.)
+
+! example | Example 2 — dragging up a slope
+Find the least force parallel to a rough plane of inclination $30°$, $\mu = \frac{1}{\sqrt{3}}$, that will drag a body of weight $10$ N up it.
+**Solution.** Up the plane the force must overcome $W\sin\theta$ and the limiting friction $\mu W\cos\theta$, which now acts down the plane: $P = W(\sin\theta + \mu\cos\theta) = 10\left(\frac{1}{2} + \frac{1}{2}\right) = \boxed{10\ \text{N}}$.
+
+? Coefficient of friction? :: $\mu = \frac{F_L}{N}$, a pure number.
+? The angle of friction $\lambda$ and $\mu$? :: $\tan\lambda = \mu$.
+? Angle of repose? :: The steepest slope on which a body rests; it equals the angle of friction.
+? Least force to move a weight $W$ on a rough horizontal plane? :: $W\sin\lambda$, applied at the angle $\lambda$ above the horizontal.
+
+! exam | What the exam asks
+- Limiting friction on a level or inclined plane; $\mu$ from the angle of repose.
+- The ladder against a wall; the least force to move a body.
+- Coulomb's laws as statements.
+
+! recap | One-minute revision
+- $F \leq \mu N$; $F = \mu N$ at the point of moving.
+- $\tan\lambda = \mu$; angle of repose $= \lambda$.
+- Ladder (smooth wall, rough ground): slips when $\tan\theta = \frac{1}{2\mu}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Statics and Dynamics, Part I (Statics), the chapter on friction

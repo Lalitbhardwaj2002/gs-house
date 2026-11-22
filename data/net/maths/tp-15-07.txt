@@ -1,0 +1,70 @@
+@en
+# Moment of inertia (PGT)
+
+> The moment of inertia measures how hard a body is to set turning about an axis: each bit of mass counts with the square of its distance from the axis. A short table of standard bodies and two theorems (parallel and perpendicular axes) answer most questions.
+
+## Moment of inertia
+
+! addon | Moment of inertia
+$I = \sum mr^2 = \int r^2\,dm = Mk^2$ ($k$ = radius of gyration). **Parallel axes**: $I = I_G + Md^2$. **Perpendicular axes** (lamina in $xy$-plane): $I_z = I_x + I_y$.
+| Body and axis | Moment of inertia |
+| Rod of length $l$: about centre (perpendicular) / about an end | $\frac{Ml^2}{12}$ / $\frac{Ml^2}{3}$ |
+| Rectangle $2a \times 2b$, axis through centre parallel to side $2b$ | $\frac{Ma^2}{3}$; perpendicular axis $\frac{M(a^2 + b^2)}{3}$ |
+| Ring: diameter / perpendicular axis | $\frac{Ma^2}{2}$ / $Ma^2$ |
+| Disc: diameter / perpendicular axis | $\frac{Ma^2}{4}$ / $\frac{Ma^2}{2}$ |
+| Solid sphere / hollow sphere (diameter) | $\frac{2}{5}Ma^2$ / $\frac{2}{3}Ma^2$ |
+| Solid cylinder (axis) / solid cone (axis) | $\frac{Ma^2}{2}$ / $\frac{3}{10}Ma^2$ |
+| Elliptic disc about major / minor axis | $\frac{Mb^2}{4}$ / $\frac{Ma^2}{4}$ |
+
+! check | Conditions added
+In $I = I_G + Md^2$ one of the two parallel axes must pass through $G$, the centre of mass, and $d$ is the distance between them. The perpendicular-axes rule is for a plane lamina only, with the $z$-axis perpendicular to it through the point where the $x$- and $y$-axes meet. The table is for uniform bodies; $a$ is the radius (for the ellipse, $a$ and $b$ are the semi-axes).
+
+! example | Question MI1
+Find the MI of a uniform rod of mass $M$, length $l$ about (i) a perpendicular axis through one end, (ii) through its centre.
+**Solution.** (i) Mass per length $\frac{M}{l}$: $I = \int_0^l \frac{M}{l}x^2\,dx = \boxed{\frac{Ml^2}{3}}$. (ii) Parallel axes: $I_G = I - M\left(\frac{l}{2}\right)^2 = \frac{Ml^2}{3} - \frac{Ml^2}{4} = \boxed{\frac{Ml^2}{12}}$.
+
+! example | Question MI2
+Find the MI of a uniform circular disc about a diameter, given that about the perpendicular axis through the centre it is $\frac{Ma^2}{2}$.
+**Solution.** Perpendicular axes: $I_z = I_x + I_y$ and by symmetry $I_x = I_y$, so $I_x = \frac{1}{2} \cdot \frac{Ma^2}{2} = \boxed{\frac{Ma^2}{4}}$.
+
+! trick | Shortcut / time-saver — Routh's rule
+$I$ about an axis of symmetry $= M \times \frac{\text{sum of squares of the other two semi-axes}}{3,\ 4 \text{ or } 5}$ for rectangular, elliptic (circular), ellipsoidal (spherical) bodies. Sphere: $M\frac{a^2 + a^2}{5} = \frac{2}{5}Ma^2$.
+
+! check | A condition added
+In Routh's rule the "other two semi-axes" are the two at right angles to the axis (a lamina has thickness $0$, so one of them is $0$ for an axis in its plane), and the body must be uniform. Rectangle $2a \times 2b$ about the axis parallel to $2b$: $M\frac{a^2 + 0}{3} = \frac{Ma^2}{3}$, as in the table.
+
+## What it means
+
+- **Rotational mass**: mass resists a change of velocity; the moment of inertia resists a change of angular velocity. Mass far from the axis counts much more, with $r^2$.
+- **Radius of gyration**: the distance $k = \sqrt{\frac{I}{M}}$ at which the whole mass, put at one distance from the axis, would have the same $I$.
+- **Working rule**: a table value, then one parallel shift ($+Md^2$) or one use of the perpendicular-axes rule.
+
+! example | Example 1 — a ring about a tangent
+Find the MI of a uniform ring of mass $M$, radius $a$, about a tangent in its plane.
+**Solution.** The tangent is parallel to a diameter, at distance $a$: $I = \frac{Ma^2}{2} + Ma^2 = \boxed{\frac{3}{2}Ma^2}$.
+
+! example | Example 2 — a sphere about a tangent
+Find the MI and the radius of gyration of a uniform solid sphere about a tangent line.
+**Solution.** $I = \frac{2}{5}Ma^2 + Ma^2 = \boxed{\frac{7}{5}Ma^2}$, so $k = \boxed{a\sqrt{\frac{7}{5}}}$.
+
+! example | Example 3 — a rectangle about its centre
+Find the MI of a uniform rectangular plate $2a \times 2b$ about the axis through its centre perpendicular to the plate.
+**Solution.** Perpendicular axes: $I_z = \frac{Ma^2}{3} + \frac{Mb^2}{3} = \boxed{\frac{M(a^2 + b^2)}{3}}$, as in the table.
+
+? Parallel axes theorem? :: $I = I_G + Md^2$, with $G$ the centre of mass.
+? Perpendicular axes theorem? :: For a lamina, $I_z = I_x + I_y$.
+? MI of a solid sphere about a diameter? :: $\frac{2}{5}Ma^2$ (hollow: $\frac{2}{3}Ma^2$).
+? MI of a thin rod about a perpendicular axis through its centre and through an end? :: $\frac{Ml^2}{12}$ and $\frac{Ml^2}{3}$.
+
+! exam | What the exam asks
+- The table of standard moments of inertia.
+- A shift by the parallel axes theorem; a diameter from the perpendicular axis.
+- The radius of gyration; Routh's rule.
+
+! recap | One-minute revision
+- $I = \int r^2\,dm = Mk^2$; $I = I_G + Md^2$; lamina: $I_z = I_x + I_y$.
+- Rod $\frac{Ml^2}{12}$ (centre), $\frac{Ml^2}{3}$ (end); ring $Ma^2$, disc $\frac{Ma^2}{2}$ (axis).
+- Sphere $\frac{2}{5}Ma^2$, shell $\frac{2}{3}Ma^2$, cylinder $\frac{Ma^2}{2}$, cone $\frac{3}{10}Ma^2$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapter on moments of inertia

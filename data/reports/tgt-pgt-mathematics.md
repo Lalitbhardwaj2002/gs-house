@@ -883,3 +883,116 @@ All nine figures were rendered and checked (cone, right-cone, cylinder, right-cy
 - tp-13-01 gained Example 3 (where two lines meet), a card and an exam line, because the PGT syllabus names the intersection of two lines and no page worked it.
 - The suggestion to list tp-11-04 also under TGT Unit 9 was not taken: Unit 9 is Euclidean geometry, which Chapter 17 of the notes covers; tp-11-04 is coordinate geometry.
 - Phone width: 53 display formulas of 11.2 to 14.3 were wider than a 375-pixel screen. They were split one step per line, and long boxed answers are boxed over two or three lines. Two were rewritten with the same value: in the right circular cone of 13.4 the factor cos²θ stands before the bracket, and in 13.5 AQ = [...]/√(a² + b² + c²) is written as 1/√(a² + b² + c²) × [...]. A script compared every other display formula with the checked text, ignoring line breaks, alignment marks and spacing: no difference. In the browser at 375 pixels all 18 pages render with no KaTeX error and nothing wider than the screen.
+
+## Chapter 15, sections 15.1 to 15.6, check of 22 November 2026
+
+Source pages read: clean.pdf, PDF pages 168 to 179 (printed 167 to 178), from page images rendered at 110 dpi (and a 300 dpi crop of the parallelogram figure), with the text layer for exact wording. Stopped at the 15.6 shortcut box on PDF page 179.
+
+Nothing of the PDF was missing. Every box, bullet, formula, table row, figure, caption, worked question, solution, boxed answer and shortcut of 15.1 to 15.6 is on the pages, with the same mathematics and wording (allowed changes only: box kinds, "your notes" read "the notes", formulas split for phone width, a header row added to the CG table).
+
+All numbers, angles, integrals and boxed answers of the PDF text and of the additions were recomputed in Python (num.py, trig.py in this folder): every one is correct. The existing red check boxes on all six pages were checked and are correct.
+
+Figures were rendered with PyMuPDF and compared with the PDF figures and with the script fig_ch15.py. Placement in tgt-mathematics.json (unit u13 Statics) and pgt-mathematics.json (unit u9 Mechanics, part Statics) was checked against the syllabus texts.
+
+### tp-15-01 (Force, resultant and resolution)
+- Checked: note box, parallelogram law, special cases, resolution, F1 to F3, shortcut, the conditions box, What it means, Examples 1 to 3, flash cards, exam and recap boxes. All correct.
+- No change to the text.
+- Figure problem (mech-parallelogram.svg): the arc labelled θ runs from the resultant R to Q (about 22° to 55°), so it marks the angle QOR = θ − α, not the angle between P and Q. In the PDF the θ arc starts on P. Fix in fig_ch15.py line 78: `arc(*O, 16, alpha + 2, th)` should be `arc(*O, 16, 0, th)` (the θ arc then sits inside the α arc, which has radius 30, as in the PDF).
+
+### tp-15-02 (Three forces in equilibrium: triangle law and Lami's theorem)
+- Checked: note box, Lami's theorem and proof idea, L1, L2 (corrected), the check box on the original L2 data (195°, sin β = 1.08), L3, shortcut, conditions box, What it means, Examples 1 and 2, flash cards. All correct.
+- Change: "with the vertical" in the shortcut now reads "with the *vertical*", as the PDF has it in italics.
+- Addition: the TGT syllabus (Unit 13) lists "Trigonometrical theorem", which no page covered. Added an `! addon | The trigonometrical theorem (TGT syllabus)` box ((m + n) cot θ = m cot α − n cot β = n cot B − m cot C), Example 3 (uniform rod on two smooth planes at 30° and 60°: φ = 30°, tan φ = ½(cot α − cot β)), one flash card and one line in the exam box. The theorem was checked numerically on random triangles and the rod result by solving the equilibrium directly.
+- Figures mech-lami, mech-lami-strings, mech-lami-345: correct (angles α, β, γ as in the caption; strings at 30° and 60°; right angle at C, sides 3, 4, 5).
+
+### tp-15-03 (Coplanar forces, moments and parallel forces)
+- Checked: note box, like and unlike parallel forces, the two bullet rules, the conditions box (including the moved-force rule for unlike forces), P1 to P3, shortcut, What it means, Examples 1 and 2. All correct.
+- Change: "the unknown force" in the shortcut now reads "the *unknown* force", as in the PDF.
+- Figure mech-parallel: correct (like: AC = AB/3 for P = 2, Q = 1, R = 3; unlike: AC = AB, so AC : BC = 2 : 4, matching "2 · 2 = 1 · 4").
+
+### tp-15-04 (Friction)
+- Checked: note box, Fr1 to Fr3, the conditions box, the ladder condition box (tan θ ≥ 1/(2µ)), What it means, Examples 1 and 2 (least pull 50 N at 30°; 10 N up the slope), flash cards. All correct.
+- Condition added to the existing conditions box: N = W cos θ holds only when no other force acts across the plane (a pull at an angle changes N, as in Example 1).
+- Figures mech-incline and mech-ladder: correct (friction up the plane for a block about to slide down; R away from the smooth wall, friction at the foot towards the wall, θ between ladder and ground).
+
+### tp-15-05 (Centre of gravity)
+- Checked: note box, CG1 (astroid, 2a/5), CG2 (cardioid, 4a/5, 4a/5), CG3 (cone, 3h/4), CG4 (parabola, 3a/5; upper half 3a/4), CG5 (4a/(3π), 3a/8), every row of the table (arc a sin α/α, sector 2a sin α/(3α), hollow cone h/3, hollow hemisphere a/2 checked by integration), the stability add-on and its conditions box, St1, What it means, Examples 1 and 2, flash cards. All correct.
+- Conditions added to the existing conditions box: r₁ = dr/dθ in the arc formula; the area formulas take y ≥ 0.
+- Figures mech-cg-astroid and mech-cg-cone: correct (G on y = x at 0.4a, just outside the arc; G at 3h/4 from the vertex).
+
+### tp-15-06 (Common catenary)
+- Checked: figure, note box (all relations, ρ = c sec²ψ = y²/c checked numerically), derivation, Ca1, Ca2, shortcut, conditions box, What it means, Example 1 (26w, 24 m, 12/5), Example 2 (c = 10.5 m, span ≈ 17.8 m), flash cards. All correct.
+- Change in What it means: "the weight of chain below P over the horizontal pull" now reads "the weight ws of the arc AP over the horizontal pull wc" (the old wording could include the chain on the other side of A).
+- Small differences left as they are: the PDF does not box T = w√(c² + l²) in Ca2, h/4 in CG3 or 3a/4 in CG4; the pages box them. Harmless.
+- Figure mech-catenary: correct.
+
+### Placement
+- All six pages are in TGT unit u13 (Statics) and PGT unit u9 (Mechanics, part Statics). Correct for both syllabuses. The keys describe the pages.
+- Suggestion for the owner: the JSON title of tp-15-02 is "15.2 Three forces in equilibrium: Lami's theorem", while the page title is "Three forces in equilibrium: triangle law and Lami's theorem"; the key could add "trigonometrical theorem" now that the page has it.
+
+check_net.py: 0 problems.
+
+## Chapter 15, sections 15.7 to 15.14, check of 22 November 2026
+
+Source pages read: clean.pdf, PDF pages 179 to 188 (printed 178 to 187), from the page images (p-179.png to p-188.png; pages 182 and 187 again at 150 dpi to see the bold words) and the text layer. Pages checked: tp-15-07 to tp-15-14. Figures looked at: mech-shm, mech-projectile, mech-impact, mech-radial, mech-tangent-normal, mech-orbit (rendered with PyMuPDF and read in the SVG source; PyMuPDF does not draw the arrow-head markers, the source has them).
+
+Completeness: nothing of the PDF was missing. A word-by-word count of the text layer against each page (script words.py) finds every word of the PDF on the page; the only differences are the dropped meta labels ("From your notes", "Exam add-on (syllabus topic not in your notes)"), "your notes" read as "the notes", words split by a hyphen at a line end in the PDF ("per-pendicular", "back-wards"), and words that are LaTeX commands on the page (cos, sin, log, v_max). Every box, bullet, display, table row, question, solution, boxed answer, shortcut and figure is in its place.
+
+Mathematics: every formula and number of the PDF and of the additions was recomputed with sympy (script verify.py): the moment-of-inertia table by integration (rod, rectangle, ring, disc, spheres, cone, elliptic disc), SHM (SH1, SH2, the two-position formulas, the examples), projectiles (Pr1 to Pr3, the inclined-plane range, time and greatest range, the river and the rain), work and power, impact (the v₁, v₂ formulas from momentum and restitution, the loss of KE, I2, the bouncing-ball sums), the radial and transverse formulas from the position vector, tangential and normal parts, and the central-orbit laws (CO1, spiral, cardioid, ellipse about the centre, conic about a focus, rⁿ = aⁿ cos nθ, v² for the ellipse, the period, escape speed). All are right. The phone-width rewrites keep the value: v₁, v₂ written as 1/(m₁ + m₂)·[…] equal the PDF fractions; the split displays of W1, SH1, Pr3, CO1 and the loss-of-KE check are the PDF formulas.
+
+Format: `python -I -X utf8 tools/check_net.py` ends with `0 problems`. All eight pages keep LF line endings.
+
+### tp-15-07 (Moment of inertia (PGT))
+- Checked the add-on box, the table (header row added by the owner), MI1, MI2, Routh's rule, the two red boxes, the What it means part, Examples 1 to 3, the flash cards, the exam and recap boxes. All right; the table rows were integrated one by one.
+- No change.
+
+### tp-15-08 (Rectilinear motion and simple harmonic motion)
+- Checked the note box, the figure, SH1, SH2, the shortcut (both two-position formulas derived), the red boxes (μ > 0; c > 0 and b² + ac > 0 in SH1), the additions (energy view, pendulum, Examples 1 to 3). All right.
+- No change.
+- Figure mech-shm: right (A′, O, P, A at −a, 0, x, a; the μx arrow at P points to O).
+
+### tp-15-09 (Projectiles)
+- Checked the note box, Pr1 to Pr3, the inclined-plane and relative-velocity add-on (range, time, greatest range and the angle π/4 + β/2 derived and also checked numerically), RV1, the red boxes and the additions. All right.
+- Change: "trajectory" set in bold, as in the PDF.
+- Change: red box "Conditions added", river sentence. It said "if v ≤ u … the least drift comes from heading upstream at sin⁻¹(v/u)". For v = u that angle is 90°, heading straight upstream, and the boat never crosses; the least drift is only approached. Now: "if v ≤ u the boat cannot cross straight; for v < u the least drift comes from heading upstream at sin⁻¹(v/u) to the perpendicular" (derived: drift ∝ (u − v sin φ)/cos φ, least at sin φ = v/u).
+- Left for the owner: the PDF has "— a parabola", the page ", a parabola" (punctuation only, kept).
+- Figure mech-projectile: shape, angle and arrows are right (the u arrow is the tangent at the start, at the angle drawn). Suggestion: the label R stands alone under the foot of the H line and can be read as a point; the PDF draws a double arrow under the axis from the start to the landing point with R on it. Adding that dimension line (x from 20 to 230, both arrow heads) in fig_ch15.py would match the PDF.
+
+### tp-15-10 (Work, power and energy)
+- Checked the note box, W1 to W3, the red box (constant force, P = F·v, British and metric horsepower), the additions (lifting 196 J, braking 4000 N, pump 980 W ≈ 1.3 HP). All right.
+- No change.
+
+### tp-15-11 (Direct impact of smooth bodies)
+- Checked the note box, I1, I2 (velocities 0 and 3 m/s, loss 18 J, the formula check), the shortcut (v₁, v₂ solved from the two laws; total distance h(1 + e²)/(1 − e²) and total time √(2h/g)·(1 + e)/(1 − e) summed), the red box and the additions (exchange of velocities, 1 m and 11.25 m, 3 m/s and 6 J). All right.
+- No change.
+- Figure mech-impact: right (u₁ longer than u₂, both along the line of centres).
+
+### tp-15-12 (Motion in a plane: radial and transverse components)
+- Checked the four formulas (derived from r(cos θ, sin θ)), the circle line, RT1, RT2 (including tan φ = 1/k), the red boxes and the additions (spiral of Archimedes, circle of radius 2 m). All right.
+- No change.
+- Figure mech-radial: the drawing is right (radial arrow along OP, transverse arrow at right angles towards increasing θ, angle θ and "initial line"). A slip in the SVG title (tooltip) text: "Radial direction along OP (θ increasing makes no change in it)". The radial direction turns when θ changes; that is where −rθ̇² comes from. Suggest "(the direction of increasing r)" in fig_ch15.py.
+
+### tp-15-13 (Tangential and normal components)
+- Checked the note box, TN1 (√333 ≈ 18.2 m/s², tan⁻¹ 6 with the tangent), the red box and the additions (bend: √73 ≈ 8.54 m/s²; constant speed gives a normal acceleration). All right.
+- No change.
+- Figure mech-tangent-normal (no PDF figure): right; aₜ is along the tangent at P and aₙ at right angles towards the concave side of the curve.
+
+### tp-15-14 (Central orbits (PGT))
+- Checked the add-on box, CO1, the force-law shortcut (each law derived from d²u/dθ² + u = P/(h²u²)), the red box and the additions (circular and escape speeds, the equiangular spiral). All right.
+- Change: "Differential equation of the orbit" set in bold, as in the PDF.
+- Change: red box "Conditions added": one sentence added, "The escape and circular velocities are compared at the same distance from the centre." (the PDF line "Escape velocity = √2 × circular velocity" holds only at the same distance).
+- Change (addition, What it means): "the sign of 1/a tells whether the orbit is closed (ellipse) or open" did not fit the page's own formulas, where the hyperbola has +1/a with a > 0. Now: "v² less than, equal to or greater than 2μ/r gives an ellipse (closed), a parabola or a hyperbola (open)."
+- Figure mech-orbit (no PDF figure): S is at a focus of the drawn ellipse (centre 138, a = 80, b = 64, c = 48), Q is on the ellipse and the arrow P points from Q to S. Suggestion: the label "S (centre of force)", centred at x = 88, runs over the left side of the orbit (the curve is at x ≈ 60 at that height); start it at S (text-anchor start, x ≈ 95) in fig_ch15.py.
+
+### Placement
+- tgt-mathematics.json and pgt-mathematics.json list the pages in the right units: 15.7 and 15.14 only in PGT (Statics: moment of inertia; Dynamics: central orbits); 15.9, 15.12, 15.13 in both (named in both syllabuses); 15.10 in both (named in PGT; in TGT it backs "work done" of Unit 12). The keys describe the pages.
+- For the owner: 15.8 (rectilinear motion, SHM) and 15.11 (direct impact) are not named in either syllabus; they sit in the Dynamics units as background. That seems fine, but it is a choice to confirm.
+- For the owner: the JSON title of tp-15-12 is "15.12 Radial and transverse components", the PDF and page title "Motion in a plane: radial and transverse components". The TGT syllabus item starts "Motion of a particle in a plane", so the full title would match it better.
+
+## Chapter 15, after the checks (22 November 2026)
+
+- The trigonometrical theorem added by the checker to tp-15-02 (TGT Unit 13 names it) was recomputed independently: for the rod on smooth planes at 30° and 60° the equilibrium position has the rod at 30° to the horizontal, with the end on the steeper plane higher. Its three formulas were split for the phone, and the key line of tp-15-02 in both subjects now names the theorem.
+- Figures: in `mech-parallelogram.svg` the θ arc now runs from P to Q (it marked θ − α); `mech-projectile.svg` shows the range R as a span under the axis; the title text of `mech-radial.svg` was corrected; the label S of `mech-orbit.svg` no longer crosses the orbit.
+- The subject files list tp-15-12 as "Motion in a plane: radial and transverse components", the page's own title.
+- Not changed: 15.8 (simple harmonic motion) and 15.11 (impact) are not named in either syllabus, but they are kept in TGT Unit 14 and PGT Unit 9 with the other dynamics of the notes.
+- Phone width: all display formulas were split before the checks where needed; after the checks, in the browser at 375 pixels, all 14 pages render with no KaTeX error and nothing wider than the screen.

@@ -1,0 +1,51 @@
+@en
+# Tangential and normal components
+
+> Along a curve the velocity is always along the tangent. The acceleration has a tangential part $\frac{dv}{dt}$, which changes the speed, and a normal part $\frac{v^2}{\rho}$ towards the centre of curvature, which changes the direction.
+
+## Tangential and normal components
+
+! note | Tangential and normal components
+$$v = \frac{ds}{dt}$$
+(along the tangent; normal velocity $= 0$),
+$$a_t = \frac{dv}{dt} = \frac{d^2s}{dt^2} = v\frac{dv}{ds},$$
+$$a_n = \frac{v^2}{\rho} = v\frac{d\psi}{dt}.$$
+$a_t$ changes only the speed; $a_n$ changes only the direction. $a = \sqrt{a_t^2 + a_n^2}$. Circle ($\rho = r$): $a_n = \frac{v^2}{r} = r\omega^2 = v\omega$. Straight line ($\rho = \infty$): $a_n = 0$. Uniform circular motion: $a_t = 0$.
+^ data/net/maths/fig/mech-tangent-normal.svg | at $P$: $a_t$ along the tangent and $a_n$ along the normal, towards the centre of curvature
+
+! check | A condition added
+$a_n$ points towards the centre of curvature (the concave side of the path) and $\rho$ is the radius of curvature at the point; $\psi$ is the angle of the tangent with a fixed direction.
+
+! example | Question TN1 — standard
+A particle moves on a circle of radius $2$ m with speed $v = 3t$ m/s. Find its acceleration at $t = 2$ s.
+**Solution.** $a_t = \frac{dv}{dt} = 3$; at $t = 2$, $v = 6$, $a_n = \frac{v^2}{r} = \frac{36}{2} = 18$. $a = \sqrt{9 + 324} = \sqrt{333} \approx \boxed{18.2\ \text{m/s}^2}$, making $\tan^{-1} 6$ with the tangent.
+
+## What it means
+
+- **Speed versus direction**: pressing the accelerator changes $v$ ($a_t$); turning the steering wheel changes the direction ($a_n$). Both together give the full acceleration.
+- **$a_n = \frac{v^2}{\rho}$**: the sharper the bend (small $\rho$) or the faster the motion, the larger the sideways acceleration.
+- **Link with the radial form**: on a circle about the pole the normal direction is the inward radial one, so $a_n = -a_r = r\dot{\theta}^2$.
+
+! example | Example 1 — a car on a bend
+A car goes round a bend of radius $50$ m at $20$ m/s and slows down at $3$ m/s$^2$. Find the size of its acceleration.
+**Solution.** $a_n = \frac{400}{50} = 8$, $a_t = -3$: $a = \sqrt{64 + 9} = \sqrt{73} \approx \boxed{8.54\ \text{m/s}^2}$.
+
+! example | Example 2 — when the acceleration is along the normal
+A particle moves along a curve with constant speed. Show that its acceleration is along the normal.
+**Solution.** $v$ constant $\Rightarrow a_t = \frac{dv}{dt} = 0$, so $\vec{a}$ has only the normal part $\frac{v^2}{\rho}$: it is at right angles to the velocity.
+
+? Tangential acceleration? :: $\frac{dv}{dt} = v\frac{dv}{ds}$.
+? Normal acceleration? :: $\frac{v^2}{\rho}$, towards the centre of curvature.
+? Normal acceleration in uniform circular motion? :: $\frac{v^2}{r} = r\omega^2$.
+? Normal acceleration on a straight line? :: $0$ ($\rho = \infty$).
+
+! exam | What the exam asks
+- The size and direction of the acceleration on a circle with changing speed.
+- $a_n = \frac{v^2}{\rho}$ with the radius of curvature of a given curve.
+
+! recap | One-minute revision
+- $a_t = \frac{dv}{dt}$, $a_n = \frac{v^2}{\rho}$; $a = \sqrt{a_t^2 + a_n^2}$.
+- Circle: $a_n = \frac{v^2}{r} = r\omega^2$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapter on motion in two dimensions (tangential and normal components)

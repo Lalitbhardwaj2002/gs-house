@@ -1,0 +1,61 @@
+@en
+# Motion in a plane: radial and transverse components
+
+> In polar coordinates the velocity and acceleration split into a part along the radius vector (radial) and a part at right angles to it (transverse). The extra terms $-r\dot{\theta}^2$ and $2\dot{r}\dot{\theta}$ come from the turning of these two directions.
+
+## Radial and transverse components
+
+^ data/net/maths/fig/mech-radial.svg | at $P(r, \theta)$: the radial direction along $OP$ and the transverse direction at right angles, towards increasing $\theta$
+
+! note | Radial and transverse components
+$$v_r = \dot{r}, \qquad v_\theta = r\dot{\theta},$$
+$$v = \sqrt{\dot{r}^2 + r^2\dot{\theta}^2};$$
+$$a_r = \ddot{r} - r\dot{\theta}^2,$$
+$$a_\theta = \frac{1}{r}\frac{d}{dt}(r^2\dot{\theta}) = r\ddot{\theta} + 2\dot{r}\dot{\theta}.$$
+Circle ($r$ constant): $v_r = 0$, $v = r\dot{\theta}$, $a_r = -r\dot{\theta}^2 = -\frac{v^2}{r}$ (towards the centre); uniform circular motion: $a_\theta = 0$.
+
+! check | Conditions added
+$a_r$ is measured outwards along $OP$ (a negative value points towards $O$) and $a_\theta$ in the direction of increasing $\theta$. The form $\frac{1}{r}\frac{d}{dt}(r^2\dot{\theta})$ needs $r \neq 0$.
+
+! example | Question RT1 — from the notes
+A particle describes the curve $r = ae^{\theta}$ with constant angular velocity $\omega$. Show that its radial acceleration is zero and find the transverse acceleration.
+**Solution.** $\dot{\theta} = \omega$, $\ddot{\theta} = 0$; $\dot{r} = ae^{\theta}\omega = r\omega$, $\ddot{r} = r\omega^2$. $a_r = \ddot{r} - r\dot{\theta}^2 = r\omega^2 - r\omega^2 = \boxed{0}$. $a_\theta = r\ddot{\theta} + 2\dot{r}\dot{\theta} = \boxed{2r\omega^2}$.
+
+! example | Question RT2 — from the notes
+If the radial and transverse velocities of a particle are always proportional, show that the path is an equiangular spiral.
+**Solution.** $\dot{r} = kr\dot{\theta} \Rightarrow \frac{dr}{r} = k\,d\theta \Rightarrow \log r = k\theta + C \Rightarrow \boxed{r = Ae^{k\theta}}$, an equiangular spiral (the angle between the radius vector and the tangent is constant, $\tan\phi = \frac{r\dot{\theta}}{\dot{r}} = \frac{1}{k}$).
+
+! check | A condition added
+In RT2, $k \neq 0$: with $k = 0$ the radial velocity is $0$ and the path is a circle about $O$ (the limiting case $\phi = 90°$).
+
+## What it means
+
+- **Why the extra terms**: the radial and transverse directions turn as $\theta$ changes. The term $-r\dot{\theta}^2$ is the centripetal acceleration of the turning radius; $2\dot{r}\dot{\theta}$ appears when the particle moves outwards while the radius turns.
+- **The circle as a check**: with $r$ constant, $a_r = -r\dot{\theta}^2$ is the familiar $\frac{v^2}{r}$ towards the centre.
+- **$r^2\dot{\theta}$** is twice the rate at which the radius sweeps out area; it is constant exactly when $a_\theta = 0$, the starting point of central orbits.
+
+! example | Example 1 — the spiral of Archimedes
+A particle moves on $r = a\theta$ with constant $\dot{\theta} = \omega$. Find its radial and transverse accelerations.
+**Solution.** $\dot{r} = a\omega$, $\ddot{r} = 0$. $a_r = 0 - r\omega^2 = \boxed{-r\omega^2}$ (towards $O$), $a_\theta = 0 + 2a\omega \cdot \omega = \boxed{2a\omega^2}$.
+
+! example | Example 2 — uniform motion on a circle
+A particle goes round a circle of radius $2$ m with $\dot{\theta} = 3$ rad/s. Find its speed and acceleration.
+**Solution.** $v = r\dot{\theta} = \boxed{6\ \text{m/s}}$; $a_r = -r\dot{\theta}^2 = -18$, i.e. $\boxed{18\ \text{m/s}^2}$ towards the centre; $a_\theta = 0$.
+
+? Radial and transverse velocities? :: $\dot{r}$ and $r\dot{\theta}$.
+? Radial acceleration? :: $\ddot{r} - r\dot{\theta}^2$.
+? Transverse acceleration? :: $\frac{1}{r}\frac{d}{dt}(r^2\dot{\theta}) = r\ddot{\theta} + 2\dot{r}\dot{\theta}$.
+? Path when the radial and transverse velocities are proportional? :: An equiangular spiral $r = Ae^{k\theta}$.
+
+! exam | What the exam asks
+- The four component formulas.
+- Accelerations on a given curve with constant angular velocity.
+- Paths from conditions on the components (equiangular spiral, circle).
+
+! recap | One-minute revision
+- $v_r = \dot{r}$, $v_\theta = r\dot{\theta}$.
+- $a_r = \ddot{r} - r\dot{\theta}^2$, $a_\theta = r\ddot{\theta} + 2\dot{r}\dot{\theta}$.
+- Circle: $a_r = -\frac{v^2}{r}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, An Elementary Treatise on the Dynamics of a Particle and of Rigid Bodies, the chapter on motion in two dimensions (radial and transverse components)

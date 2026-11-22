@@ -1,0 +1,62 @@
+@en
+# Common catenary
+
+> A uniform chain hanging under its own weight takes the shape $y = c\cosh\frac{x}{c}$. The horizontal pull is the same all along the chain, and the tension at any point equals the weight of a piece of chain as long as that point's height above the directrix.
+
+## The catenary
+
+^ data/net/maths/fig/mech-catenary.svg | the vertex $A$ at height $c$ above the directrix; at $P$ the tangent makes $\psi$ with the horizontal, the arc $AP = s$ and the tension $T$ acts along the tangent
+
+! note | The common catenary
+**Catenary**: the curve in which a uniform, perfectly flexible, inextensible chain hangs under gravity. With the lowest point $A$ (vertex) at height $c$ (parameter) above the directrix:
+- Cartesian: $y = c\cosh\frac{x}{c}$; intrinsic: $s = c\tan\psi$ ($s$ measured from $A$);
+- $s = c\sinh\frac{x}{c}$, $y = c\sec\psi$, $y^2 = c^2 + s^2$, $x = c\log(\sec\psi + \tan\psi) = c\log\frac{y + s}{c}$;
+- tension $T = wy$, $T_0 = wc$ (at the lowest point), $T\cos\psi = wc$, $T\sin\psi = ws$;
+- radius of curvature $\rho = \frac{ds}{d\psi} = c\sec^2\psi = \frac{y^2}{c}$ ($\rho = c$ at the vertex).
+**Derivation in one line**: for the portion $AP$ (weight $ws$) in equilibrium under $T_0$ (horizontal at $A$) and $T$ (along the tangent at $P$): $T\cos\psi = T_0 = wc$, $T\sin\psi = ws \Rightarrow \tan\psi = \frac{s}{c}$.
+
+! check | Conditions added
+$w$ is the weight per unit length of the chain and $\psi$ the angle of the tangent at $P$ with the horizontal. $y$ is measured from the directrix, a line at the depth $c = \frac{T_0}{w}$ below the lowest point (not from the ground); $x$ is measured from the vertical through the lowest point.
+
+! example | Question Ca1 — standard
+A uniform chain of length $2l$ hangs between two points at the same level, and the sag at the middle is $k$. Prove that the parameter is $c = \frac{l^2 - k^2}{2k}$ and find the tension at a point of support.
+**Solution.** At a point of support $s = l$ and $y = c + k$. Using $y^2 = c^2 + s^2$: $(c + k)^2 = c^2 + l^2 \Rightarrow 2ck + k^2 = l^2 \Rightarrow \boxed{c = \frac{l^2 - k^2}{2k}}$. Tension there $T = wy = w(c + k) = \boxed{\frac{w(l^2 + k^2)}{2k}}$.
+
+! example | Question Ca2 — standard
+A chain of length $2l$ hangs with its ends at the same level, span $2a$. Show that $l = c\sinh\frac{a}{c}$ and find the tension at the ends in terms of $w$, $c$ and $l$.
+**Solution.** At an end $x = a$, $s = l$ and $s = c\sinh\frac{x}{c} \Rightarrow l = c\sinh\frac{a}{c}$. Tension at the ends $T = wy = wc\cosh\frac{a}{c} = \boxed{w\sqrt{c^2 + l^2}}$ (since $y^2 = c^2 + s^2$).
+
+! trick | Shortcut / time-saver
+Tension at any point = weight of a length of chain equal to the height of that point above the directrix ($T = wy$). Horizontal component of tension is the same everywhere ($wc$).
+
+## What it means
+
+- **Why the horizontal pull is constant**: the only horizontal forces on any piece $AP$ are the two end tensions, so their horizontal parts balance all along the chain.
+- **Where $\cosh$ comes from**: the slope at $P$ is $\tan\psi = \frac{s}{c}$, the weight $ws$ of the arc $AP$ over the horizontal pull $wc$. Solving $\frac{dy}{dx} = \frac{s}{c}$ with $\frac{ds}{dx} = \sqrt{1 + y'^2}$ gives $y = c\cosh\frac{x}{c}$.
+- **$c$ sets the shape**: a large $c$ (a tight chain) gives a flat curve, a small $c$ a deep sag.
+
+! example | Example 1 — tension and position on the chain
+A chain with parameter $c = 10$ m and weight $w$ per metre hangs freely. At a point $P$ the height above the directrix is $26$ m. Find the tension at $P$, the arc $AP$ and the slope there.
+**Solution.** $T = wy = \boxed{26w}$. $s = \sqrt{y^2 - c^2} = \sqrt{676 - 100} = \boxed{24\ \text{m}}$. $\tan\psi = \frac{s}{c} = \boxed{\frac{12}{5}}$.
+
+! example | Example 2 — span from length and sag
+A chain $20$ m long hangs between two points at the same level with a sag of $4$ m. Find the parameter and the span.
+**Solution.** $l = 10$, $k = 4$: $c = \frac{100 - 16}{8} = \boxed{10.5\ \text{m}}$. At an end $y = c + k = 14.5$ and $s = 10$, so $x = c\log\frac{y + s}{c} = 10.5\log\frac{24.5}{10.5} = 10.5\log\frac{7}{3} \approx 8.90$ m. Span $2x \approx \boxed{17.8\ \text{m}}$.
+
+? Cartesian and intrinsic equations of the catenary? :: $y = c\cosh\frac{x}{c}$ and $s = c\tan\psi$.
+? Tension at a point at height $y$ above the directrix? :: $T = wy$.
+? Tension at the lowest point? :: $T_0 = wc$, the horizontal part of the tension everywhere.
+? Relation between $y$, $s$ and $c$? :: $y^2 = c^2 + s^2$.
+
+! exam | What the exam asks
+- The equations of the catenary and the relations $y^2 = c^2 + s^2$, $T = wy$.
+- The parameter from the length and the sag; the tension at the supports.
+- The radius of curvature $\rho = c\sec^2\psi$.
+
+! recap | One-minute revision
+- $y = c\cosh\frac{x}{c}$, $s = c\sinh\frac{x}{c} = c\tan\psi$, $y = c\sec\psi$.
+- $T = wy$, $T\cos\psi = wc$, $T\sin\psi = ws$.
+- Sag $k$, length $2l$: $c = \frac{l^2 - k^2}{2k}$.
+
+& UP TGT & PGT Mathematics: Compiled Notes, Examples & Shortcut Tricks, chapter 15 (the full PDF is linked on the subject page)
+& S. L. Loney, The Elements of Statics and Dynamics, Part I (Statics), the chapter on the common catenary
