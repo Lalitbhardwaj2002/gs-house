@@ -1,0 +1,3207 @@
+{
+ "paper": {
+  "id": "dsssb-tgt-2021",
+  "title": "DSSSB TGT Mathematics 2021 (2 September, shift 3)",
+  "exam": "DSSSB TGT",
+  "date": "2 September 2021",
+  "level": "TGT",
+  "minutes": 54,
+  "negative": 0.25,
+  "source": "DSSSB TGT Mathematics (Male), computer-based test of 2 September 2021, shift 3: the mathematics section (questions 101 to 190) of the board's question-paper preview, with the board's answer key",
+  "note": "The mathematics section of the paper; the whole paper had 200 questions in 120 minutes."
+ },
+ "questions": [
+  {
+   "id": "mq/dsssb-tgt-2021-002",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 2,
+    "label": "DSSSB TGT 2021 · Q102"
+   },
+   "en": {
+    "q": "What is domain of definition of exponential function?",
+    "options": [
+     "real numbers",
+     "integers",
+     "whole numbers",
+     "rational number"
+    ],
+    "explanation": "$e^x$ (or $a^x$ with $a>0$) is defined for every real $x$, so its domain is $\\mathbb{R}$; its range is $(0,\\infty)$.",
+    "notes": [
+     "Correct.",
+     "Too small: $e^x$ is defined between the integers too.",
+     "Too small: negative and fractional $x$ are allowed.",
+     "Too small: irrational exponents such as $e^{\\sqrt2}$ are defined too."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Exponential function: domain $\\mathbb{R}$, range $(0,\\infty)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-003",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-09-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 3,
+    "label": "DSSSB TGT 2021 · Q103"
+   },
+   "en": {
+    "q": "In what range does $\\sec(x)$ become invertible?",
+    "options": [
+     "$\\mathbb{R}$",
+     "$\\mathbb{R}-(-1,1)$",
+     "$\\mathbb{R}-\\{0\\}$",
+     "$\\mathbb{Z}$"
+    ],
+    "explanation": "$|\\sec x|=1/|\\cos x|\\ge1$, so the range of $\\sec x$ is $\\mathbb{R}-(-1,1)$. Restricted to $[0,\\pi]-\\{\\pi/2\\}$ it is one-one onto this set, so $\\sec^{-1}x$ is defined exactly for $x\\in\\mathbb{R}-(-1,1)$.",
+    "notes": [
+     "$\\sec x$ never takes values in $(-1,1)$.",
+     "Correct: the range of sec, i.e. the domain of $\\sec^{-1}$.",
+     "Values such as $0.5$ must still be excluded.",
+     "Not related to the values of sec."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.4 Inverse circular functions"
+    ],
+    "facts": [
+     "Domain of $\\sec^{-1}x$ and $\\csc^{-1}x$: $|x|\\ge1$, i.e. $\\mathbb{R}-(-1,1)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-004",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-06-07",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 4,
+    "label": "DSSSB TGT 2021 · Q104"
+   },
+   "en": {
+    "q": "Asymptotes are the tangents to the curve at which point?",
+    "options": [
+     "infinity",
+     "one point",
+     "two points",
+     "three points"
+    ],
+    "explanation": "An asymptote is a straight line whose distance from a point of the curve tends to $0$ as the point moves off to infinity along the curve. It is the limiting position of the tangent, i.e. the tangent at infinity.",
+    "notes": [
+     "Correct: an asymptote touches the curve at infinity.",
+     "A tangent at a finite point is an ordinary tangent.",
+     "Touching at finite points does not make a line an asymptote.",
+     "Touching at finite points does not make a line an asymptote."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.7 Curvature, asymptotes and curve tracing"
+    ],
+    "facts": [
+     "An asymptote is a tangent to the curve at infinity."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-005",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-06-07",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 5,
+    "label": "DSSSB TGT 2021 · Q105"
+   },
+   "en": {
+    "q": "The curve given by $xy=15$ is symmetrical about what?",
+    "options": [
+     "$x$ axis",
+     "$y$ axis",
+     "about the line $x=y$",
+     "about the origin"
+    ],
+    "explanation": "Interchanging $x$ and $y$ leaves $xy=15$ unchanged, so the curve is symmetric about the line $y=x$. Replacing $(x,y)$ by $(-x,-y)$ also leaves it unchanged, so it is symmetric about the origin too. Changing only the sign of $y$ (or of $x$) gives $xy=-15$: no symmetry about either axis. So (d) is also correct; the board's key is (c).",
+    "notes": [
+     "$(x,-y)$ gives $xy=-15$: not symmetric.",
+     "$(-x,y)$ gives $xy=-15$: not symmetric.",
+     "Correct (key): swapping $x$ and $y$ leaves the equation unchanged.",
+     "Also true: $(-x)(-y)=xy$; the branches lie in opposite quadrants."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.7 Curvature, asymptotes and curve tracing"
+    ],
+    "facts": [
+     "Equation unchanged when $x\\leftrightarrow y$: symmetric about $y=x$; unchanged when $(x,y)\\to(-x,-y)$: symmetric about the origin."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-006",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 6,
+    "label": "DSSSB TGT 2021 · Q106"
+   },
+   "en": {
+    "q": "What is the volume of curve between the ordinate 0 to 4 around the curve $x=y$?",
+    "options": [
+     "$21\\pi$",
+     "$21.33\\pi$",
+     "$31\\pi$",
+     "$31.33$"
+    ],
+    "explanation": "The paper's wording is garbled; it is read as: the region under the line $y=x$ between the ordinates $x=0$ and $x=4$ is revolved about the $x$-axis. It sweeps out a cone of radius 4 and height 4.\n$$V=\\pi\\int_0^4x^2\\,dx=\\frac{64\\pi}{3}\\approx21.33\\pi$$\nCheck: $\\tfrac13\\pi r^2h=\\tfrac13\\pi\\cdot16\\cdot4$.",
+    "notes": [
+     "$64/3$ rounded down; the exact value is $21\\tfrac13\\pi$.",
+     "Correct: $64\\pi/3$.",
+     "Arithmetic slip.",
+     "The factor $\\pi$ is missing."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.6 Volumes and surfaces of solids of revolution — formulas"
+    ],
+    "facts": [
+     "Volume about the $x$-axis: $V=\\pi\\int_a^by^2\\,dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-007",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-07-10",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 7,
+    "label": "DSSSB TGT 2021 · Q107"
+   },
+   "en": {
+    "q": "What is the curved surface area of cone in general form?",
+    "options": [
+     "$\\pi rl$",
+     "$\\pi r(r+l)$",
+     "$\\pi rh$",
+     "$\\pi rhl$"
+    ],
+    "explanation": "Cut the curved surface along a slant line and open it out: it is a sector of radius $l$ and arc length $2\\pi r$, of area $\\tfrac12\\cdot2\\pi r\\cdot l=\\pi rl$, where $l=\\sqrt{r^2+h^2}$ is the slant height.",
+    "notes": [
+     "Correct.",
+     "That is the total surface area (it adds the base $\\pi r^2$).",
+     "Uses the height instead of the slant height.",
+     "Not even an area (it has the dimension of a volume)."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.10 Mensuration (TGT)"
+    ],
+    "facts": [
+     "Cone: CSA $=\\pi rl$, TSA $=\\pi r(r+l)$, $l=\\sqrt{r^2+h^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-008",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 8,
+    "label": "DSSSB TGT 2021 · Q108"
+   },
+   "en": {
+    "q": "If the inner product between the vectors vanishes then what will be the angle between them?",
+    "options": [
+     "0",
+     "35",
+     "45",
+     "90"
+    ],
+    "explanation": "$\\vec a\\cdot\\vec b=|\\vec a||\\vec b|\\cos\\theta$. For non-zero vectors, $\\vec a\\cdot\\vec b=0$ gives $\\cos\\theta=0$, so $\\theta=90^\\circ$: the vectors are perpendicular.",
+    "notes": [
+     "At $0^\\circ$ the dot product is $|\\vec a||\\vec b|$, its largest value.",
+     "$\\cos35^\\circ\\ne0$.",
+     "$\\cos45^\\circ=1/\\sqrt2\\ne0$.",
+     "Correct: perpendicular vectors."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "Non-zero vectors: $\\vec a\\perp\\vec b\\iff\\vec a\\cdot\\vec b=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-009",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 9,
+    "label": "DSSSB TGT 2021 · Q109"
+   },
+   "en": {
+    "q": "Find the gradient of the scalar field if $f(x,y)=x+y$ at $(1,2)$?",
+    "options": [
+     "$\\hat i+\\hat j$",
+     "$\\hat i+2\\hat j$",
+     "$\\hat j-\\hat i$",
+     "$\\hat j+2\\hat i$"
+    ],
+    "explanation": "$\\nabla f=f_x\\,\\hat i+f_y\\,\\hat j=1\\,\\hat i+1\\,\\hat j$, the same at every point, so at $(1,2)$ it is $\\hat i+\\hat j$.",
+    "notes": [
+     "Correct.",
+     "Puts the coordinates of the point in place of the partial derivatives.",
+     "Sign error in $f_x$.",
+     "Puts the coordinates of the point in place of the partial derivatives."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$\\nabla f=(f_x,f_y,f_z)$; a linear $f$ has a constant gradient."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-010",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 10,
+    "label": "DSSSB TGT 2021 · Q110"
+   },
+   "en": {
+    "q": "If $\\vec A=3\\hat i+\\hat j+\\hat k$; $\\vec B=5\\hat i+\\hat j-\\hat k$; $\\vec C=\\hat i+\\hat j-\\hat k$ then find the volume of parallelopiped if $\\vec A,\\vec B,\\vec C$ are sides of parallelopiped respectively?",
+    "options": [
+     "0",
+     "8",
+     "16",
+     "32"
+    ],
+    "explanation": "Volume $=|[\\vec A\\,\\vec B\\,\\vec C]|$:\n$$\\begin{vmatrix}3&1&1\\\\5&1&-1\\\\1&1&-1\\end{vmatrix}=3(0)-1(-4)+1(4)=8$$",
+    "notes": [
+     "Zero would mean the three vectors are coplanar.",
+     "Correct.",
+     "Twice the triple product.",
+     "Four times the triple product."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "Volume of the parallelepiped on $\\vec a,\\vec b,\\vec c$: $|[\\vec a\\,\\vec b\\,\\vec c]|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-011",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 11,
+    "label": "DSSSB TGT 2021 · Q111"
+   },
+   "en": {
+    "q": "Find the middle term of A.P. if it is given that sum of three numbers in A.P. is 15?",
+    "options": [
+     "5",
+     "10",
+     "15",
+     "20"
+    ],
+    "explanation": "Take the numbers as $a-d,\\ a,\\ a+d$. Their sum is $3a=15$, so the middle term is $a=5$, whatever $d$ is.",
+    "notes": [
+     "Correct.",
+     "",
+     "That is the sum itself.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "For three numbers in AP take $a-d,a,a+d$: the middle term is the sum divided by 3."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-012",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 12,
+    "label": "DSSSB TGT 2021 · Q112"
+   },
+   "en": {
+    "q": "A polynomial with real coefficients of $n$ degree has ________ roots?",
+    "options": [
+     "$n$ real roots",
+     "$n$ imaginary roots",
+     "$n$ (may be real or imaginary)",
+     "$n-1$ roots"
+    ],
+    "explanation": "By the fundamental theorem of algebra a polynomial of degree $n$ has exactly $n$ roots in $\\mathbb{C}$, counted with multiplicity. With real coefficients the non-real roots come in conjugate pairs, so some roots may be real and some imaginary.",
+    "notes": [
+     "$x^2+1$ has no real root.",
+     "$x^2-1$ has two real roots.",
+     "Correct.",
+     "Degree $n$ gives $n$ roots, not $n-1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Degree $n$ ⇒ exactly $n$ complex roots (with multiplicity); non-real roots of a real polynomial come in conjugate pairs."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-013",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 13,
+    "label": "DSSSB TGT 2021 · Q113"
+   },
+   "en": {
+    "q": "If discriminant $D>0$ then what can you say about nature of roots?",
+    "options": [
+     "equal roots",
+     "imaginary roots",
+     "distinct real roots",
+     "no real roots"
+    ],
+    "explanation": "The roots of $ax^2+bx+c=0$ are $\\frac{-b\\pm\\sqrt D}{2a}$. If $D>0$, $\\sqrt D$ is real and non-zero, so the two roots are real and unequal.",
+    "notes": [
+     "That is $D=0$.",
+     "That is $D<0$.",
+     "Correct.",
+     "That is $D<0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$D>0$: real and distinct; $D=0$: real and equal; $D<0$: non-real conjugates."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-014",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 14,
+    "label": "DSSSB TGT 2021 · Q114"
+   },
+   "en": {
+    "q": "Find total number of asymmetric relations on a set $A=\\{e,f,g\\}$?",
+    "options": [
+     "27",
+     "64",
+     "128",
+     "34"
+    ],
+    "explanation": "An asymmetric relation contains no pair $(a,a)$, and for each of the $\\binom32=3$ pairs of distinct elements $\\{a,b\\}$ it contains $(a,b)$, or $(b,a)$, or neither: 3 choices. So the number is $3^3=27$; in general $3^{n(n-1)/2}$.",
+    "notes": [
+     "Correct.",
+     "$2^6$ counts the irreflexive relations; asymmetry is ignored.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "On an $n$-element set: asymmetric relations $3^{n(n-1)/2}$; antisymmetric $2^n\\,3^{n(n-1)/2}$; irreflexive $2^{n^2-n}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-015",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 15,
+    "label": "DSSSB TGT 2021 · Q115"
+   },
+   "en": {
+    "q": "$2587322568103$ is a number which is divisible by which number?",
+    "options": [
+     "7",
+     "9",
+     "11",
+     "2"
+    ],
+    "explanation": "It is odd, so not divisible by 2. Its digit sum is 52, not a multiple of 9. Its alternating digit sum is $-2$, not a multiple of 11. For 7, split into 3-digit groups from the right, $2|587|322|568|103$, and alternate signs: $103-568+322-587+2=-728=-7\\times104$. So it is divisible by 7.",
+    "notes": [
+     "Correct.",
+     "The digit sum 52 is not a multiple of 9.",
+     "The alternating digit sum is $-2$.",
+     "The number is odd."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Test for 7, 11 and 13 at once: alternating sum of 3-digit groups from the right (because $1001=7\\cdot11\\cdot13$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-016",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 16,
+    "label": "DSSSB TGT 2021 · Q116"
+   },
+   "en": {
+    "q": "Euler function tends to infinity if which condition follows?",
+    "options": [
+     "$n$ tends to zero",
+     "$n$ tends to infinity",
+     "$n$ tends to a positive limit",
+     "$n$ tends to a negative limit"
+    ],
+    "explanation": "Euler's function $\\phi(n)$ counts the $k$, $1\\le k\\le n$, coprime to $n$. It satisfies $\\phi(n)\\ge\\sqrt{n/2}$, so $\\phi(n)\\to\\infty$ as $n\\to\\infty$ (e.g. $\\phi(p)=p-1$ for primes). It is defined only for positive integers, so the other options make no sense.",
+    "notes": [
+     "$\\phi$ is defined only on positive integers.",
+     "Correct.",
+     "On a bounded set of integers $\\phi$ stays bounded.",
+     "$\\phi$ is not defined for negative $n$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "$\\phi(n)\\to\\infty$ as $n\\to\\infty$; indeed $\\phi(n)\\ge\\sqrt{n/2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-017",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 17,
+    "label": "DSSSB TGT 2021 · Q117"
+   },
+   "en": {
+    "q": "How many subsets of set $A$ occurs if $A=\\{1,2,3,4\\}$?",
+    "options": [
+     "2",
+     "4",
+     "8",
+     "16"
+    ],
+    "explanation": "Each element is either in a subset or not, so a set of $n$ elements has $2^n$ subsets: $2^4=16$.",
+    "notes": [
+     "",
+     "That is the number of elements.",
+     "That is $2^3$, for a 3-element set.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$|P(A)|=2^{|A|}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-018",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 18,
+    "label": "DSSSB TGT 2021 · Q118"
+   },
+   "en": {
+    "q": "For any matrix to be in row reduced form which of the following conditions is not satisfied?",
+    "options": [
+     "Any row if has zero is at the bottom",
+     "any leading entry is one",
+     "Each leading one is to the right of one preceding row",
+     "zero row is at the top of the matrix"
+    ],
+    "explanation": "Row echelon (reduced) form: zero rows lie at the bottom; the leading entry of each non-zero row is 1; each leading 1 lies to the right of the leading 1 of the row above (and in reduced form is the only non-zero entry of its column). Zero rows at the top break the first rule.",
+    "notes": [
+     "A genuine condition.",
+     "A genuine condition.",
+     "A genuine condition (the staircase).",
+     "Correct: zero rows go to the bottom, not the top."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Echelon form: zero rows at the bottom, leading 1s stepping to the right."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-019",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 19,
+    "label": "DSSSB TGT 2021 · Q119"
+   },
+   "en": {
+    "q": "What will be the rank of every non singular matrix of order $n$?",
+    "options": [
+     "$n$",
+     "$n+1$",
+     "$2n$",
+     "$2n+1$"
+    ],
+    "explanation": "A non-singular $n\\times n$ matrix has $|A|\\ne0$, a non-zero minor of order $n$, and there are no minors of larger order. So its rank is $n$.",
+    "notes": [
+     "Correct.",
+     "The rank can never exceed the order.",
+     "The rank can never exceed the order.",
+     "The rank can never exceed the order."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "$A_{n\\times n}$ is non-singular $\\iff\\rho(A)=n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-020",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 20,
+    "label": "DSSSB TGT 2021 · Q120"
+   },
+   "en": {
+    "q": "The rank of a matrix in echelon form is equal to:",
+    "options": [
+     "Number of non zero rows of the matrix",
+     "number of zero rows of the matrix",
+     "order of matrix",
+     "number of variables"
+    ],
+    "explanation": "In echelon form the non-zero rows are linearly independent (their leading entries lie in different columns) and zero rows add nothing, so the rank equals the number of non-zero rows.",
+    "notes": [
+     "Correct.",
+     "Zero rows contribute nothing to the rank.",
+     "Only for a non-singular matrix.",
+     "That belongs to a system of equations, not to the matrix."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Rank = number of non-zero rows of an echelon form."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-021",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 21,
+    "label": "DSSSB TGT 2021 · Q121"
+   },
+   "en": {
+    "q": "What is the limit point of the sequence $\\langle f\\rangle=1$?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "infinity"
+    ],
+    "explanation": "The paper prints '<f>= 1' (the subscript is lost); it is read as the constant sequence $f_n=1$, i.e. $1,1,1,\\dots$. Every neighbourhood of $1$ contains $f_n$ for all $n$, and no other point has this property. So its only limit point is $1$; the sequence also converges to 1.",
+    "notes": [
+     "No term is near 0.",
+     "Correct.",
+     "No term is near 2.",
+     "The sequence is bounded."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "A constant sequence $\\langle c\\rangle$ has the single limit point $c$ (though its range $\\{c\\}$, as a set, has none)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-022",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 22,
+    "label": "DSSSB TGT 2021 · Q122"
+   },
+   "en": {
+    "q": "The greatest limit point of a bounded sequence is called?",
+    "options": [
+     "limit superior of $f$",
+     "limit inferior of $f$",
+     "maximum point of $f$",
+     "minimum point of $f$"
+    ],
+    "explanation": "A bounded sequence has a greatest and a least limit point (Bolzano–Weierstrass). The greatest is the limit superior $\\limsup f_n$ (upper limit); the least is $\\liminf f_n$.",
+    "notes": [
+     "Correct.",
+     "That is the least limit point.",
+     "A largest term need not be a limit point.",
+     "A smallest term need not be a limit point."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "$\\limsup$ = greatest limit point, $\\liminf$ = least; a bounded sequence converges iff they are equal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-023",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 23,
+    "label": "DSSSB TGT 2021 · Q123"
+   },
+   "en": {
+    "q": "Any non-empty set of $\\mathbb{R}$ which is bounded above has a ________?",
+    "options": [
+     "l.u.b",
+     "g.l.b",
+     "both exists finitely",
+     "one exist infinitely"
+    ],
+    "explanation": "This is the completeness (least upper bound) axiom of $\\mathbb{R}$: a non-empty subset bounded above has a supremum (l.u.b.) in $\\mathbb{R}$. It need not have a g.l.b.: $(-\\infty,0)$ is bounded above but not below.",
+    "notes": [
+     "Correct.",
+     "A g.l.b. needs the set to be bounded below.",
+     "Fails for $(-\\infty,0)$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Completeness: non-empty and bounded above ⇒ $\\sup$ exists in $\\mathbb{R}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-024",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 24,
+    "label": "DSSSB TGT 2021 · Q124"
+   },
+   "en": {
+    "q": "If cardinality of a set $A$ is 6 and that of set $B$ is 7 then find the cardinality of $A\\Delta B$?",
+    "options": [
+     "7",
+     "5",
+     "35",
+     "can not be determined"
+    ],
+    "explanation": "$|A\\Delta B|=|A|+|B|-2|A\\cap B|=13-2|A\\cap B|$. Since $|A\\cap B|$ can be anything from 0 to 6, $|A\\Delta B|$ can be 13, 11, 9, 7, 5, 3 or 1: it cannot be determined from the data.",
+    "notes": [
+     "Possible (when $|A\\cap B|=3$) but not forced.",
+     "Possible (when $|A\\cap B|=4$) but not forced.",
+     "Too large: $|A\\Delta B|\\le13$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$|A\\Delta B|=|A|+|B|-2|A\\cap B|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-025",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 25,
+    "label": "DSSSB TGT 2021 · Q125"
+   },
+   "en": {
+    "q": "Every bounded sequence with a unique limit point is ________?",
+    "options": [
+     "convergent",
+     "divergent",
+     "oscillatory",
+     "doesn't exist"
+    ],
+    "explanation": "For a bounded sequence $\\limsup$ and $\\liminf$ are its greatest and least limit points. If there is only one limit point $l$, then $\\limsup=\\liminf=l$, so the sequence converges to $l$.",
+    "notes": [
+     "Correct.",
+     "A bounded sequence cannot diverge to $\\pm\\infty$.",
+     "A bounded oscillating sequence has at least two limit points.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "Bounded with exactly one limit point ⇔ convergent."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-027",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 27,
+    "label": "DSSSB TGT 2021 · Q127"
+   },
+   "en": {
+    "q": "Pick the wrong statement?",
+    "options": [
+     "Any Cauchy sequence is bounded.",
+     "Any convergent sequence is Cauchy",
+     "Any real Cauchy sequence is convergent",
+     "In real every bounded monotonic sequence is divergent"
+    ],
+    "explanation": "(a), (b) and (c) are standard theorems; (c) is Cauchy's general principle of convergence in $\\mathbb{R}$. (d) is false: a bounded monotonic real sequence converges, to its supremum if increasing and to its infimum if decreasing.",
+    "notes": [
+     "True.",
+     "True.",
+     "True: $\\mathbb{R}$ is complete.",
+     "Correct (the wrong statement): bounded monotonic sequences converge."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "Monotone convergence theorem: bounded and monotonic ⇒ convergent."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-029",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 29,
+    "label": "DSSSB TGT 2021 · Q129"
+   },
+   "en": {
+    "q": "Let $\\langle f_n\\rangle$ be a sequence of bounded functions and the sequence is uniformly convergent to some function, say $g$; then ________.",
+    "options": [
+     "$g$ is bounded",
+     "$g$ is unbounded",
+     "$g$ is infinite",
+     "$g$ occurs virtually to follow 1"
+    ],
+    "explanation": "The paper prints 'series given by f is uniformly continous to some function'; it is read as: the sequence $\\langle f_n\\rangle$ converges uniformly to $g$. Choose $N$ with $|f_N(x)-g(x)|<1$ for all $x$ (uniform convergence). If $|f_N(x)|\\le M$, then $|g(x)|\\le|f_N(x)|+1\\le M+1$ for all $x$. So the uniform limit of bounded functions is bounded.",
+    "notes": [
+     "Correct.",
+     "Uniform closeness to a bounded $f_N$ rules this out.",
+     "$|g|\\le M+1$ everywhere.",
+     "Meaningless option."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "A uniform limit of bounded functions is bounded; of continuous functions, continuous."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-030",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 30,
+    "label": "DSSSB TGT 2021 · Q130"
+   },
+   "en": {
+    "q": "What condition is satisfied if sequence of functions $f$ is said to be uniformly bounded?",
+    "options": [
+     "$|f(x)|\\le M$ for some constant $M$ and for all values of $x$",
+     "$|f(x)|=M$ for some constant $M$",
+     "$f(x)$ converge to a finite point",
+     "$f(x)$ converge to an infinite point"
+    ],
+    "explanation": "A sequence $\\langle f_n\\rangle$ is uniformly bounded when one constant $M$ works for every $n$ and every $x$: $|f_n(x)|\\le M$. (Pointwise bounded would let $M$ depend on $x$.)",
+    "notes": [
+     "Correct.",
+     "Equality would force $|f|$ to be constant.",
+     "That is about convergence, not boundedness.",
+     "That is about convergence, not boundedness."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "Uniformly bounded: one $M$ with $|f_n(x)|\\le M$ for all $n$ and all $x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-031",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 31,
+    "label": "DSSSB TGT 2021 · Q131"
+   },
+   "en": {
+    "q": "The solution of the curve given $y=f(x)$, where $y$ is the function of $x$, also $x$ and $y$ are real numbers and is termed as what?",
+    "options": [
+     "solution curve",
+     "polynomial curve",
+     "bitsman curve",
+     "functional curve"
+    ],
+    "explanation": "The graph of a solution $y=f(x)$ of a differential equation is called a solution curve (integral curve). The general solution gives a one-parameter family of such curves.",
+    "notes": [
+     "Correct.",
+     "A solution need not be a polynomial.",
+     "No such term.",
+     "Not a standard term."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "Graph of a particular solution of a differential equation = solution (integral) curve."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-032",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-08-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 32,
+    "label": "DSSSB TGT 2021 · Q132"
+   },
+   "en": {
+    "q": "How many singular solutions occur for $n$th order ordinary linear differential equation?",
+    "options": [
+     "one",
+     "two",
+     "three",
+     "no singular solutions"
+    ],
+    "explanation": "Every solution of a linear equation $y^{(n)}+p_1y^{(n-1)}+\\dots+p_ny=q$ is contained in its general solution $y=c_1y_1+\\dots+c_ny_n+y_p$. A singular solution is one not obtainable from the general solution, so a linear equation has none; they occur in non-linear equations such as Clairaut's.",
+    "notes": [
+     "Linear equations have none.",
+     "Linear equations have none.",
+     "Linear equations have none.",
+     "Correct: the general solution contains every solution."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.3 Higher degree equations; singular solutions (PGT)"
+    ],
+    "facts": [
+     "Linear ODEs have no singular solutions; Clairaut's equation $y=px+f(p)$ does."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-033",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 33,
+    "label": "DSSSB TGT 2021 · Q133"
+   },
+   "en": {
+    "q": "When the per capita rate of increase $(r)$ takes the same positive value regardless of the population size, then we get which growth?",
+    "options": [
+     "logistics growth",
+     "exponential growth",
+     "both logistic and exponential",
+     "transversal growth"
+    ],
+    "explanation": "A constant per-capita rate means $\\frac1N\\frac{dN}{dt}=r$, i.e. $\\frac{dN}{dt}=rN$, whose solution is $N=N_0e^{rt}$: exponential growth. In logistic growth the per-capita rate $r(1-N/K)$ falls as $N$ grows.",
+    "notes": [
+     "Logistic: the per-capita rate decreases as $N$ grows.",
+     "Correct.",
+     "Only one model has a constant rate.",
+     "No such model."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$dN/dt=rN\\Rightarrow N=N_0e^{rt}$ (J-shaped); logistic $dN/dt=rN(1-N/K)$ is S-shaped."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-034",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 34,
+    "label": "DSSSB TGT 2021 · Q134"
+   },
+   "en": {
+    "q": "The curve obtained in exponential growth is of which type?",
+    "options": [
+     "J shaped curve",
+     "S shaped curve",
+     "T shaped curve",
+     "W shaped curve"
+    ],
+    "explanation": "$N=N_0e^{rt}$ rises slowly at first and then ever more steeply, without levelling off: a J-shaped curve. The logistic curve levels off at the carrying capacity $K$ and is S-shaped (sigmoid).",
+    "notes": [
+     "Correct.",
+     "That is logistic growth.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Exponential growth: J-curve; logistic growth: S-curve."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-035",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 35,
+    "label": "DSSSB TGT 2021 · Q135"
+   },
+   "en": {
+    "q": "Change in number of individuals in population over time is called?",
+    "options": [
+     "Population growth rate",
+     "mortality rate",
+     "immigration rate",
+     "remainder rate"
+    ],
+    "explanation": "The change in population size per unit time, $\\frac{dN}{dt}$ (or $\\frac{\\Delta N}{\\Delta t}$), is the population growth rate. Mortality (deaths) and immigration (arrivals) are only parts of that change.",
+    "notes": [
+     "Correct.",
+     "Counts only deaths.",
+     "Counts only arrivals.",
+     "No such term."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Growth rate $dN/dt$ = (births + immigrants) − (deaths + emigrants) per unit time."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-037",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 37,
+    "label": "DSSSB TGT 2021 · Q137"
+   },
+   "en": {
+    "q": "Which of the following is used in mathematical modelling in Boolean algebra?",
+    "options": [
+     "constructive solid geometry",
+     "lines figure",
+     "complex analysis",
+     "mines geometry"
+    ],
+    "explanation": "Constructive solid geometry builds complicated solids from simple ones (cubes, cylinders, spheres) by the Boolean operations union, intersection and difference: Boolean algebra of sets used to model shapes.",
+    "notes": [
+     "Correct.",
+     "Not a Boolean-algebra technique.",
+     "Works with complex numbers, not Boolean operations.",
+     "Not a standard term."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "CSG: solids combined by union ($\\cup$), intersection ($\\cap$) and difference ($-$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-038",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 38,
+    "label": "DSSSB TGT 2021 · Q138"
+   },
+   "en": {
+    "q": "Which model accounts for time dependent change of a model?",
+    "options": [
+     "static model",
+     "dynamic model",
+     "bi-model",
+     "generalized model"
+    ],
+    "explanation": "A dynamic model describes how the state of a system changes with time, usually through differential or difference equations. A static model describes the system at one time or at equilibrium, with no time dependence.",
+    "notes": [
+     "Static: no time dependence.",
+     "Correct.",
+     "Not a standard class of model.",
+     "Not a standard class of model."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "Static model: no time; dynamic model: the state changes with time."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-039",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 39,
+    "label": "DSSSB TGT 2021 · Q139"
+   },
+   "en": {
+    "q": "Which model is the one in which every set of variable states is uniquely determined by parameters in the model and by sets of previous states of these variables?",
+    "options": [
+     "deterministic model",
+     "probability model",
+     "discrete model",
+     "continuous model"
+    ],
+    "explanation": "If the parameters and the earlier states fix every later state uniquely, there is no randomness: the model is deterministic. A probabilistic (stochastic) model gives only a distribution of possible states.",
+    "notes": [
+     "Correct.",
+     "Random outcomes are not uniquely determined.",
+     "Discrete or continuous refers to time or values, not to determinism.",
+     "Discrete or continuous refers to time or values, not to determinism."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "Deterministic: the same inputs always give the same output; stochastic: outputs have a probability distribution."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-040",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 40,
+    "label": "DSSSB TGT 2021 · Q140"
+   },
+   "en": {
+    "q": "Find the limit of the function $f(x,y)=x+y-6$ at $x=1$; $y=2$?",
+    "options": [
+     "3",
+     "-3",
+     "4",
+     "-4"
+    ],
+    "explanation": "$f$ is a polynomial, hence continuous, so the limit equals the value: $1+2-6=-3$.",
+    "notes": [
+     "Sign slip.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "For continuous (e.g. polynomial) $f$: $\\lim_{(x,y)\\to(a,b)}f(x,y)=f(a,b)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-041",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 41,
+    "label": "DSSSB TGT 2021 · Q141"
+   },
+   "en": {
+    "q": "If $f(x,y)=0$ then find the directional derivative at $c=(0,0)$ along the direction $u=(a,b)$?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "explanation": "$D_uf(c)=\\lim_{t\\to0}\\frac{f(c+tu)-f(c)}{t}=\\lim_{t\\to0}\\frac{0-0}{t}=0$. A constant function has zero directional derivative in every direction.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$D_{\\hat u}f=\\nabla f\\cdot\\hat u$; a constant has $\\nabla f=\\vec0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-042",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 42,
+    "label": "DSSSB TGT 2021 · Q142"
+   },
+   "en": {
+    "q": "If $y$ is expressed in terms of a variable $x$ as $y=f(x)$, then $y$ is called what?",
+    "options": [
+     "implicit function",
+     "explicit function",
+     "convergent function",
+     "divergent function"
+    ],
+    "explanation": "When $y$ is given directly as $y=f(x)$ it is an explicit function of $x$. If the relation is only given as $F(x,y)=0$, e.g. $x^2+y^2=1$, $y$ is an implicit function of $x$.",
+    "notes": [
+     "Implicit: given by $F(x,y)=0$.",
+     "Correct.",
+     "Terms for sequences, not this.",
+     "Terms for sequences, not this."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "Explicit: $y=f(x)$; implicit: $F(x,y)=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-043",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 43,
+    "label": "DSSSB TGT 2021 · Q143"
+   },
+   "en": {
+    "q": "The sequence given by interval $[0,1]$ is ________.",
+    "options": [
+     "Bounded",
+     "unbounded",
+     "convergent",
+     "divergent"
+    ],
+    "explanation": "Read 'the sequence given by interval [0,1]' as a sequence whose terms all lie in $[0,1]$. Every term lies in $[0,1]$, so $0\\le a_n\\le1$ for all $n$: the sequence is bounded. It need not converge: $0,1,0,1,\\dots$ has its terms in $[0,1]$ but oscillates.",
+    "notes": [
+     "Correct.",
+     "All the terms lie between 0 and 1.",
+     "Not necessarily: $0,1,0,1,\\dots$.",
+     "Not necessarily: a constant sequence converges."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "Bounded sequence: $|a_n|\\le M$ for all $n$; bounded does not imply convergent."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-044",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 44,
+    "label": "DSSSB TGT 2021 · Q144"
+   },
+   "en": {
+    "q": "Suppose that $a$ is in the domain of the function $f$ such that, for all $x$ in the domain of $f$: $f(x)\\le f(a)$",
+    "options": [
+     "$f$ is said to have maximum value at $x=a$",
+     "$f$ is said to have minimum value at $x=a$",
+     "$f$ has both maximum and minimum values at $x=a$",
+     "$f$ is unbounded"
+    ],
+    "explanation": "The paper prints $f(x)<f(a)$, which fails at $x=a$ itself; it is read as $f(x)\\le f(a)$. If $f(x)\\le f(a)$ for every $x$ in the domain, then $f(a)$ is the greatest value of $f$: $f$ has its (absolute) maximum at $x=a$.",
+    "notes": [
+     "Correct.",
+     "A minimum needs $f(x)\\ge f(a)$.",
+     "Only a constant function has both at a point.",
+     "$f$ is bounded above by $f(a)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "Absolute maximum at $a$: $f(x)\\le f(a)$ for all $x$ in the domain."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-045",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 45,
+    "label": "DSSSB TGT 2021 · Q145"
+   },
+   "en": {
+    "q": "Which function defined on $\\mathbb{R}$ by $f(x)=x$ for every $x$ in $\\mathbb{R}$, is continuous in $\\mathbb{R}$?",
+    "options": [
+     "constant function",
+     "Riemann function",
+     "identity function",
+     "Dirichlet function"
+    ],
+    "explanation": "$f(x)=x$ is the identity function. $|f(x)-f(c)|=|x-c|<\\varepsilon$ whenever $|x-c|<\\delta=\\varepsilon$, so it is continuous at every point.",
+    "notes": [
+     "A constant function is $f(x)=c$.",
+     "Riemann's (Thomae's) function is continuous only at the irrationals.",
+     "Correct.",
+     "Dirichlet's function is continuous nowhere."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "The identity $f(x)=x$ is continuous: take $\\delta=\\varepsilon$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-046",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 46,
+    "label": "DSSSB TGT 2021 · Q146"
+   },
+   "en": {
+    "q": "Let $f$ and $g$ be two uniformly continuous functions on interval $I$ and also each function is bounded on $I$, then what can you say about product $f.g$?",
+    "options": [
+     "$f.g$ is bounded",
+     "$f.g$ is integrable",
+     "$f.g$ is uniformly continuous on $\\mathbb{R}$",
+     "$f.g$ is continuous"
+    ],
+    "explanation": "Let $|f|,|g|\\le M$ on $I$. Then\n$$|f(x)g(x)-f(y)g(y)|\\le M\\big(|g(x)-g(y)|+|f(x)-f(y)|\\big),$$\nwhich is small whenever $|x-y|$ is small, uniformly in $x,y$. So $fg$ is uniformly continuous on $I$. Boundedness is needed: $x\\cdot x$ is not uniformly continuous on $\\mathbb{R}$. As printed, (a) ($|fg|\\le M^2$) and (d) are also true, and (c) says 'on R' where 'on I' is meant; (c) is the theorem being tested and the strongest of the three, and it is the board's key.",
+    "notes": [
+     "Also true ($|fg|\\le M^2$), but not the theorem being asked.",
+     "Not guaranteed when $I$ is unbounded.",
+     "Correct (key): uniformly continuous on $I$; 'on R' should read 'on I'.",
+     "Also true (uniform continuity implies continuity), but weaker than (c)."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "The product of two bounded uniformly continuous functions is uniformly continuous; without boundedness it can fail ($x^2$ on $\\mathbb{R}$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-047",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 47,
+    "label": "DSSSB TGT 2021 · Q147"
+   },
+   "en": {
+    "q": "Which condition is not required in checking for Taylor's theorem?",
+    "options": [
+     "It's $(n-1)$th derivative is continuous on $[a,b]$",
+     "It's $(n-1)$th derivative is derivable on $(a,b)$",
+     "there exists a real number between $a$ and $b$",
+     "$f$ is necessarily bounded"
+    ],
+    "explanation": "Taylor's theorem needs $f^{(n-1)}$ continuous on $[a,b]$ and derivable on $(a,b)$. It then gives a number $c\\in(a,b)$ with\n$$f(b)=\\sum_{k=0}^{n-1}\\frac{f^{(k)}(a)}{k!}(b-a)^k+\\frac{f^{(n)}(c)}{n!}(b-a)^n.$$\nBoundedness of $f$ is not a hypothesis (it follows anyway from continuity on $[a,b]$). Option (c) is not a hypothesis either but the theorem's conclusion (the point $c$); the intended answer is (d), the key.",
+    "notes": [
+     "A hypothesis of the theorem.",
+     "A hypothesis of the theorem.",
+     "Part of the statement: the point $c$.",
+     "Correct: not a hypothesis."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "Taylor (Lagrange remainder): $f^{(n-1)}$ continuous on $[a,b]$ and derivable on $(a,b)$ ⇒ remainder $\\frac{(b-a)^n}{n!}f^{(n)}(c)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-048",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 48,
+    "label": "DSSSB TGT 2021 · Q148"
+   },
+   "en": {
+    "q": "Which of the following is not the application of Taylor's series?",
+    "options": [
+     "It is used to find value of whole function",
+     "It reduces mathematical proofs",
+     "It is used in optimization techniques",
+     "It fails to solve power flow analysis"
+    ],
+    "explanation": "Taylor series let us compute a function throughout its interval of convergence from the derivatives at one point, shorten proofs and approximations, and underlie Newton-type optimisation. They are also used in power-flow (load-flow) analysis: the Newton–Raphson load-flow method linearises by a Taylor expansion. So (d) is the false claim.",
+    "notes": [
+     "A genuine use: values from the derivatives at one point.",
+     "A genuine use: it simplifies proofs and limits.",
+     "A genuine use: Newton's method in optimisation.",
+     "Correct: Taylor series are used in power-flow analysis."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "Newton–Raphson (roots, optimisation, load flow) is a first-order Taylor expansion."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-049",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 49,
+    "label": "DSSSB TGT 2021 · Q149"
+   },
+   "en": {
+    "q": "What is interval of Taylor's series expansion of $\\tan(x)$?",
+    "options": [
+     "(0,90)",
+     "(-90,90)",
+     "$(-\\pi,\\pi)$",
+     "infinite region"
+    ],
+    "explanation": "$\\tan x=x+\\frac{x^3}{3}+\\frac{2x^5}{15}+\\dots$ The radius of convergence is the distance from 0 to the nearest singularity, $x=\\pm\\frac\\pi2$. So the series holds for $-\\frac\\pi2<x<\\frac\\pi2$, i.e. $(-90^\\circ,90^\\circ)$.",
+    "notes": [
+     "Only half the interval: the series also holds for negative $x$.",
+     "Correct: $|x|<\\pi/2$.",
+     "$\\tan x$ is infinite at $\\pm\\pi/2$, inside this interval.",
+     "The series diverges for $|x|>\\pi/2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "The Maclaurin series of $\\tan x$ converges for $|x|<\\pi/2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-050",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-06-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 50,
+    "label": "DSSSB TGT 2021 · Q150"
+   },
+   "en": {
+    "q": "When will be matrix of derivative of $f$ given by $f(x,y)=(x-y,xy)$ will be singular?",
+    "options": [
+     "if $x=y$",
+     "if $x=-y$",
+     "if $x=0$",
+     "if $y=0$"
+    ],
+    "explanation": "The derivative (Jacobian) matrix is\n$$J=\\begin{pmatrix}1&-1\\\\y&x\\end{pmatrix},\\qquad |J|=x+y.$$\nIt is singular when $x+y=0$, i.e. $x=-y$.",
+    "notes": [
+     "Then $|J|=2x\\ne0$ unless $x=0$.",
+     "Correct.",
+     "Then $|J|=y$, non-zero in general.",
+     "Then $|J|=x$, non-zero in general."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.2 Partial differentiation and Euler's theorem"
+    ],
+    "facts": [
+     "The derivative of $f:\\mathbb{R}^2\\to\\mathbb{R}^2$ is its Jacobian matrix; singular ⇔ Jacobian determinant $=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-051",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 51,
+    "label": "DSSSB TGT 2021 · Q151"
+   },
+   "en": {
+    "q": "Find the simultaneous limit of function $y\\sin(1/x)$?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "explanation": "The paper does not name the point; it is read as the limit as $(x,y)\\to(0,0)$. There $|y\\sin(1/x)|\\le|y|\\le\\sqrt{x^2+y^2}\\to0$, so the simultaneous (double) limit is $0$. The repeated limit $\\lim_{y\\to0}\\lim_{x\\to0}$ does not even exist, since $\\sin(1/x)$ oscillates: a double limit can exist without both repeated limits.",
+    "notes": [
+     "Correct.",
+     "$|y\\sin(1/x)|\\le|y|\\to0$.",
+     "$|y\\sin(1/x)|\\le|y|\\to0$.",
+     "$|y\\sin(1/x)|\\le|y|\\to0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "Bounded times (something tending to 0) tends to 0: $|y\\sin(1/x)|\\le|y|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-052",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 52,
+    "label": "DSSSB TGT 2021 · Q152"
+   },
+   "en": {
+    "q": "While finding maximum value of a function what will we get in the case if it's second derivative becomes zero?",
+    "options": [
+     "we get maxima at that point",
+     "we get minima at that point",
+     "we get possible inflection point",
+     "we get both maxima and minima"
+    ],
+    "explanation": "If $f'(c)=0$ and $f''(c)=0$ the second-derivative test fails: $c$ may be a maximum ($-x^4$), a minimum ($x^4$) or a point of inflection ($x^3$), all at $0$. One must look at higher derivatives or at the sign change of $f'$: the point is only a possible inflection point.",
+    "notes": [
+     "Not guaranteed: $x^3$ at 0.",
+     "Not guaranteed: $x^3$ at 0.",
+     "Correct: the test is inconclusive and an inflection is possible.",
+     "A point cannot be both."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "$f''(c)=0$: the test fails; use the first non-zero higher derivative (odd order ⇒ inflection, even order ⇒ extremum)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-053",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 53,
+    "label": "DSSSB TGT 2021 · Q153"
+   },
+   "en": {
+    "q": "Find curl $(\\vec r)$ if $\\vec r=2xy\\,\\hat i+\\hat j+\\hat k$.",
+    "options": [
+     "$-2x\\hat k$",
+     "$-2y\\hat k$",
+     "$-2z\\hat k$",
+     "0"
+    ],
+    "explanation": "$$\\nabla\\times\\vec r=\\begin{vmatrix}\\hat i&\\hat j&\\hat k\\\\\\partial_x&\\partial_y&\\partial_z\\\\2xy&1&1\\end{vmatrix}=\\hat k\\left(0-\\frac{\\partial(2xy)}{\\partial y}\\right)=-2x\\,\\hat k$$\nThe $\\hat i$ and $\\hat j$ components vanish because the components are free of $z$ and the last two are constants.",
+    "notes": [
+     "Correct.",
+     "Differentiates $2xy$ with respect to $x$ instead of $y$.",
+     "",
+     "The $\\hat k$ component $-\\partial_y(2xy)$ is not zero."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$\\hat k$-component of curl $\\vec F$: $\\partial_xF_2-\\partial_yF_1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-054",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 54,
+    "label": "DSSSB TGT 2021 · Q154"
+   },
+   "en": {
+    "q": "Find the double integral of $f(x,y,z)=(y+z)dx+(z+x)dy+(x+y)dz$.",
+    "options": [
+     "1",
+     "-1",
+     "0",
+     "2"
+    ],
+    "explanation": "The paper's 'double integral of f(x,y,z) = …' is garbled; it is read as the integral of this differential form round a closed curve (or, by Stokes' theorem, the flux of its curl), the only readings that give a number. The integrand is an exact differential: $(y+z)dx+(z+x)dy+(x+y)dz=d(xy+yz+zx)$; equivalently $\\vec F=(y+z,\\,z+x,\\,x+y)$ has $\\nabla\\times\\vec F=\\vec0$. So its integral round any closed curve is $0$.",
+    "notes": [
+     "",
+     "",
+     "Correct: an exact differential integrated round a closed path.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "If $\\vec F=\\nabla\\phi$ (curl $\\vec F=\\vec0$ on a simply connected region), then $\\oint_C\\vec F\\cdot d\\vec r=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-055",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 55,
+    "label": "DSSSB TGT 2021 · Q155"
+   },
+   "en": {
+    "q": "How do we find volume of a solid surface?",
+    "options": [
+     "By double integrating it",
+     "By triple integrating it over the surface",
+     "By finding it's line integral",
+     "By integrating over the surface"
+    ],
+    "explanation": "The volume of a solid region $V$ is $\\iiint_V dx\\,dy\\,dz$, a triple integral over the region bounded by the surface. A double integral $\\iint f\\,dA$ gives a volume only under a surface $z=f(x,y)$, and a surface integral gives area or flux.",
+    "notes": [
+     "Gives a volume only for the region under a surface $z=f(x,y)$.",
+     "Correct (strictly, over the region the surface encloses).",
+     "A line integral gives work or circulation.",
+     "A surface integral gives area or flux."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "Volume $=\\iiint_V dV$; area $=\\iint_R dA$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-056",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 56,
+    "label": "DSSSB TGT 2021 · Q156"
+   },
+   "en": {
+    "q": "Which theorem is valid in calculating integral for a multiple connected domain $R$?",
+    "options": [
+     "Green's theorem",
+     "Gauss divergence theorem",
+     "Stokes theorem",
+     "Iterated integrals"
+    ],
+    "explanation": "Green's theorem $\\oint_C(M\\,dx+N\\,dy)=\\iint_R\\left(\\frac{\\partial N}{\\partial x}-\\frac{\\partial M}{\\partial y}\\right)dx\\,dy$ also holds for a multiply connected plane region when $C$ is its whole boundary, the outer curve taken anticlockwise and the inner curves clockwise: cut the region into simply connected pieces and add.",
+    "notes": [
+     "Correct.",
+     "Relates a solid to its closed boundary surface, not a plane region.",
+     "Relates an open surface to its boundary curve.",
+     "A method of evaluation, not a theorem."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "Green's theorem extends to multiply connected regions if the holes are traversed clockwise."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-057",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 57,
+    "label": "DSSSB TGT 2021 · Q157"
+   },
+   "en": {
+    "q": "The functions which are present on one side of Green's theorem are of which kind?",
+    "options": [
+     "Continuous partial derivative",
+     "complete derivatives",
+     "discrete derivatives",
+     "only partial derivatives"
+    ],
+    "explanation": "Green's theorem needs $M(x,y)$, $N(x,y)$ and the partial derivatives $\\partial M/\\partial y$, $\\partial N/\\partial x$ to be continuous on $R$ and its boundary. The double-integral side contains $\\frac{\\partial N}{\\partial x}-\\frac{\\partial M}{\\partial y}$.",
+    "notes": [
+     "Correct.",
+     "Total derivatives do not appear.",
+     "No such notion here.",
+     "The partial derivatives must also be continuous."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "Green: $\\oint_C M\\,dx+N\\,dy=\\iint_R(N_x-M_y)\\,dA$, with $M,N,M_y,N_x$ continuous."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-058",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 58,
+    "label": "DSSSB TGT 2021 · Q158"
+   },
+   "en": {
+    "q": "The oscillation of a bounded function $f$ on an interval $[a,b]$ is the ________ of the set $\\{|f(x)-f(y)|\\}$ of the numbers.",
+    "options": [
+     "infimum",
+     "supremum",
+     "maximum",
+     "minimum"
+    ],
+    "explanation": "The oscillation is $\\omega=\\sup\\{|f(x)-f(y)|:x,y\\in[a,b]\\}=M-m$, where $M$ and $m$ are the supremum and infimum of $f$. It is a supremum, not a maximum, because the largest difference need not be attained.",
+    "notes": [
+     "The infimum is $0$ (take $x=y$).",
+     "Correct.",
+     "It need not be attained.",
+     "Always $0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "Oscillation $=M-m=\\sup|f(x)-f(y)|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-059",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 59,
+    "label": "DSSSB TGT 2021 · Q159"
+   },
+   "en": {
+    "q": "The necessary and sufficient condition for a function $f$ to be Riemann integrable is that for every partition $P$ for every $\\varepsilon>0$; which of the following condition must occur?",
+    "options": [
+     "$|U(f,P)-L(f,P)|<\\varepsilon$",
+     "$|U(f,P)-L(f,P)|>\\varepsilon$",
+     "$|U(f,P)-L(f,P)|=\\varepsilon$",
+     "Upper and lower sum vanishes"
+    ],
+    "explanation": "Riemann's criterion: a bounded $f$ is integrable on $[a,b]$ iff for every $\\varepsilon>0$ there is a partition $P$ with $U(f,P)-L(f,P)<\\varepsilon$; every refinement of $P$ then works too. (The paper's 'for every partition P' should read 'for some partition P'.)",
+    "notes": [
+     "Correct.",
+     "The gap must be made smaller than every $\\varepsilon$.",
+     "The gap must be made smaller than every $\\varepsilon$.",
+     "The sums need not vanish ($\\int_0^1 1\\,dx=1$)."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "Riemann's criterion: for every $\\varepsilon>0$ some partition $P$ has $U(f,P)-L(f,P)<\\varepsilon$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-060",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 60,
+    "label": "DSSSB TGT 2021 · Q160"
+   },
+   "en": {
+    "q": "Pick the correct statement?",
+    "options": [
+     "Every continuous function is Riemann integrable",
+     "Every monotonic increasing function $f$ is not Riemann integrable",
+     "Every continuous function is not Riemann integrable",
+     "If function is increasing in interval it is not increasing in each of its subinterval"
+    ],
+    "explanation": "On a closed interval $[a,b]$ a continuous function is uniformly continuous, so $U-L$ can be made as small as we like: it is Riemann integrable. Monotonic functions on $[a,b]$ are integrable too, so (b) and (c) are false; a function increasing on an interval is increasing on each subinterval, so (d) is false.",
+    "notes": [
+     "Correct (on $[a,b]$).",
+     "Monotonic functions on $[a,b]$ are integrable.",
+     "Contradicts (a).",
+     "Increasing on an interval ⇒ increasing on each subinterval."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "Continuous or monotonic on $[a,b]$ ⇒ Riemann integrable."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-061",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 61,
+    "label": "DSSSB TGT 2021 · Q161"
+   },
+   "en": {
+    "q": "Every absolutely convergent improper integral is ________.",
+    "options": [
+     "convergent",
+     "divergent",
+     "oscillatory",
+     "infinite"
+    ],
+    "explanation": "If $\\int_a^\\infty|f|\\,dx$ converges then, by the Cauchy criterion, $\\left|\\int_{x_1}^{x_2}f\\,dx\\right|\\le\\int_{x_1}^{x_2}|f|\\,dx\\to0$, so $\\int_a^\\infty f\\,dx$ converges. The converse fails: $\\int_1^\\infty\\frac{\\sin x}{x}dx$ converges, but not absolutely.",
+    "notes": [
+     "Correct.",
+     "Absolute convergence rules this out.",
+     "Absolute convergence rules this out.",
+     "Absolute convergence rules this out."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "Absolute convergence ⇒ convergence (for series and for improper integrals)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-062",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 62,
+    "label": "DSSSB TGT 2021 · Q162"
+   },
+   "en": {
+    "q": "If $f$ is the derivative of some function on $[a,b]$, then there exists a number $c$ in $(a,b)$ such that integral of $f$ with respect to $x$ (from $a$ to $b$) $=$ ________.",
+    "options": [
+     "$f(c)$",
+     "$f(c)\\cdot(b-a)$",
+     "$f(c)\\cdot(b+a)$",
+     "$(b+a-c)f(c)$"
+    ],
+    "explanation": "Let $f=F'$ (and $f$ integrable). Then $\\int_a^bf\\,dx=F(b)-F(a)$, and Lagrange's mean value theorem gives $F(b)-F(a)=F'(c)(b-a)=f(c)(b-a)$ for some $c\\in(a,b)$.",
+    "notes": [
+     "The length $b-a$ is missing.",
+     "Correct.",
+     "Uses $b+a$ instead of the length $b-a$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "Mean value theorem for integrals: $\\int_a^bf\\,dx=f(c)(b-a)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-063",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 63,
+    "label": "DSSSB TGT 2021 · Q163"
+   },
+   "en": {
+    "q": "Find the limit point of the sequence $\\langle1,2,\\tfrac12,3,\\tfrac13,\\dots\\rangle$",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "explanation": "The odd-placed terms $1,\\frac12,\\frac13,\\dots$ tend to $0$, so $0$ is a limit point. The even-placed terms $2,3,4,\\dots$ go to $\\infty$, and no other real number is approached by infinitely many terms. So $0$ is the only limit point (the sequence is unbounded, so it does not converge).",
+    "notes": [
+     "Correct.",
+     "1 occurs only once.",
+     "2 occurs only once.",
+     "3 occurs only once."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "A limit point of a sequence is the limit of some subsequence."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-064",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 64,
+    "label": "DSSSB TGT 2021 · Q164"
+   },
+   "en": {
+    "q": "Every uniformly continuous function on an interval is ________ on that interval.",
+    "options": [
+     "convergent",
+     "divergent",
+     "continuous",
+     "oscillatory"
+    ],
+    "explanation": "Uniform continuity: for every $\\varepsilon>0$ one $\\delta$ works for all pairs of points. Fixing one point of the pair gives ordinary continuity there, so uniform continuity implies continuity. The converse fails: $1/x$ on $(0,1)$.",
+    "notes": [
+     "A term for sequences, not functions.",
+     "A term for sequences, not functions.",
+     "Correct.",
+     "A term for sequences, not functions."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "Uniformly continuous ⇒ continuous; on $[a,b]$ the converse holds too."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-065",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 65,
+    "label": "DSSSB TGT 2021 · Q165"
+   },
+   "en": {
+    "q": "If $f=\\langle1/n\\rangle$, then what can you say about monotonic nature of $f$?",
+    "options": [
+     "monotonic",
+     "monotonically increasing",
+     "monotonically decreasing",
+     "both increasing and decreasing"
+    ],
+    "explanation": "The paper prints 'If =<1/n>', with $f$ missing; it is read as $f=\\langle1/n\\rangle$. $\\frac1{n+1}<\\frac1n$ for every $n$, so $f_{n+1}<f_n$: the sequence $1,\\frac12,\\frac13,\\dots$ is (strictly) monotonically decreasing. Option (a) 'monotonic' is also true, but (c) is the precise answer (key).",
+    "notes": [
+     "True, but less precise than (c).",
+     "The terms decrease.",
+     "Correct.",
+     "Only a constant sequence is both."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "$\\langle1/n\\rangle$ is strictly decreasing, bounded, and converges to 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-066",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-05",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 66,
+    "label": "DSSSB TGT 2021 · Q166"
+   },
+   "en": {
+    "q": "The expansion of power series having $R$ as the radius of convergence and $x,a$ be any two points in $\\mathbb{R}$, converges if ________.",
+    "options": [
+     "$|x-a|>R$",
+     "$|x-a|<R$",
+     "$|x-a|=R$",
+     "nowhere convergent"
+    ],
+    "explanation": "A power series $\\sum c_n(x-a)^n$ with radius of convergence $R$ converges (absolutely) for $|x-a|<R$ and diverges for $|x-a|>R$; at $|x-a|=R$ it may or may not converge.",
+    "notes": [
+     "It diverges there.",
+     "Correct.",
+     "The end points must be tested separately.",
+     "It always converges at $x=a$, and for $|x-a|<R$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.5 Series"
+    ],
+    "facts": [
+     "$R=\\lim|c_n/c_{n+1}|$ (when it exists): convergent inside, divergent outside, test the ends."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-067",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 67,
+    "label": "DSSSB TGT 2021 · Q167"
+   },
+   "en": {
+    "q": "What powers of $x$ does expansion of $\\sin(x)$ contains?",
+    "options": [
+     "odd powers of $x$",
+     "even powers of $x$",
+     "all powers of $x$",
+     "any alternate powers of $x$"
+    ],
+    "explanation": "$\\sin x=x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\dots$: only odd powers, because $\\sin x$ is an odd function. ($\\cos x$, an even function, has only even powers.)",
+    "notes": [
+     "Correct.",
+     "That is $\\cos x$.",
+     "That is $e^x$.",
+     "Too vague: it is the odd powers."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "An odd function has only odd powers in its Maclaurin series; an even function only even powers."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-068",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 68,
+    "label": "DSSSB TGT 2021 · Q168"
+   },
+   "en": {
+    "q": "Let $(X,d)$ be a metric space then what can you say about $X$ and $d$?",
+    "options": [
+     "$d$ is called metric and $X$ is called ground set",
+     "$d$ is called metric but can't say about $X$",
+     "both are called ground sets",
+     "$X$ is called metric and $d$ is called ground set"
+    ],
+    "explanation": "In $(X,d)$, $X$ is the underlying (ground) set and $d:X\\times X\\to\\mathbb{R}$ is the metric (distance function): $d\\ge0$, $d(x,y)=0\\iff x=y$, $d(x,y)=d(y,x)$, and the triangle inequality.",
+    "notes": [
+     "Correct.",
+     "$X$ is the underlying set.",
+     "$d$ is a function, not a set of points.",
+     "Roles reversed."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Metric space $(X,d)$: the set $X$ with the metric $d$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-069",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 69,
+    "label": "DSSSB TGT 2021 · Q169"
+   },
+   "en": {
+    "q": "If we are given two overlapping sets $A$ and $B$ in metric space then what can we say about $d(A,B)$?",
+    "options": [
+     "doesn't exist",
+     "zero",
+     "finite",
+     "infinity"
+    ],
+    "explanation": "$d(A,B)=\\inf\\{d(a,b):a\\in A,\\ b\\in B\\}$. If $A\\cap B\\ne\\varnothing$, take $a=b$ in the overlap: $d(a,b)=0$, so $d(A,B)=0$.",
+    "notes": [
+     "The infimum always exists, since distances are $\\ge0$.",
+     "Correct.",
+     "True but not precise: it is exactly 0.",
+     "It is 0."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "$d(A,B)=\\inf d(a,b)$; $A\\cap B\\ne\\varnothing\\Rightarrow d(A,B)=0$ (the converse fails)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-070",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 0,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 70,
+    "label": "DSSSB TGT 2021 · Q170"
+   },
+   "en": {
+    "q": "Let $(X,d)$ be a metric space and $P_n$ be the Cauchy sequence defined then $\\{P_n\\}$ is ________.",
+    "options": [
+     "convergent",
+     "divergent",
+     "Cauchy",
+     "bounded"
+    ],
+    "explanation": "Every Cauchy sequence is bounded: with $\\varepsilon=1$, all terms beyond some $N$ lie within 1 of $P_N$, and only finitely many come before. It need not converge unless $X$ is complete: in $\\mathbb{Q}$, $1,\\ 1.4,\\ 1.41,\\ 1.414,\\dots$ is Cauchy, but its limit $\\sqrt2$ is not in $\\mathbb{Q}$. The board's key is (a) 'convergent', which is wrong here: a Cauchy sequence converges only in a complete space, and the question says only that $(X,d)$ is a metric space. (c) merely repeats the hypothesis.",
+    "notes": [
+     "The key; true only when $X$ is complete.",
+     "A Cauchy sequence never diverges to infinity.",
+     "Given in the question.",
+     "Correct: every Cauchy sequence is bounded."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Cauchy ⇒ bounded always; Cauchy ⇒ convergent only in a complete space."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-071",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 71,
+    "label": "DSSSB TGT 2021 · Q171"
+   },
+   "en": {
+    "q": "Let $(X,d)$ be a metric space and $E$ is contained in $X$, $E$ is called nowhere dense set if ________.",
+    "options": [
+     "closure of $E$ is empty",
+     "closure of $E$ is finite",
+     "closure of $E$ is not defined",
+     "closure of $E$ terminate after some steps"
+    ],
+    "explanation": "$E$ is nowhere dense if the interior of its closure is empty: $(\\overline E)^\\circ=\\varnothing$. Examples: $\\mathbb{Z}$ in $\\mathbb{R}$, the Cantor set. The closure itself is empty only when $E=\\varnothing$. The paper's option (a) leaves out 'interior of': as printed, 'closure of E is empty' would force $E=\\varnothing$; it is still the intended answer (key), the other options being meaningless.",
+    "notes": [
+     "The intended answer, with 'interior of' missing: $(\\overline E)^\\circ=\\varnothing$.",
+     "$\\mathbb{Z}$ is nowhere dense but infinite.",
+     "The closure is always defined.",
+     "Meaningless."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Nowhere dense: $\\operatorname{int}(\\overline E)=\\varnothing$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-072",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 72,
+    "label": "DSSSB TGT 2021 · Q172"
+   },
+   "en": {
+    "q": "Which statement states that \"Every complete metric space is of second category\"?",
+    "options": [
+     "Baire sandwich theorem",
+     "Baire category theorem",
+     "Cantor Theorem",
+     "Fundamental theorem"
+    ],
+    "explanation": "Baire's category theorem: a complete metric space is not a countable union of nowhere dense sets, i.e. it is of the second category (in itself).",
+    "notes": [
+     "No such theorem.",
+     "Correct.",
+     "Cantor's intersection theorem is a tool in its proof, not this statement.",
+     "Not this statement."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Baire: a complete metric space is of the second category (not a countable union of nowhere dense sets)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-073",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 73,
+    "label": "DSSSB TGT 2021 · Q173"
+   },
+   "en": {
+    "q": "In metric space which function is always continuous?",
+    "options": [
+     "discrete function",
+     "distance function",
+     "continuous function",
+     "bounded function"
+    ],
+    "explanation": "For a fixed $y$, $|d(x,y)-d(x',y)|\\le d(x,x')$ by the triangle inequality, so $x\\mapsto d(x,y)$ is continuous (indeed 1-Lipschitz); $d$ is continuous on $X\\times X$ as well.",
+    "notes": [
+     "Not a standard notion here.",
+     "Correct: the metric itself.",
+     "Trivially continuous by its name; not a particular function.",
+     "Bounded functions can be discontinuous."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "$|d(x,z)-d(y,z)|\\le d(x,y)$: the distance function is continuous."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-074",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 74,
+    "label": "DSSSB TGT 2021 · Q174"
+   },
+   "en": {
+    "q": "If $f$ is a continuous function from $X$ to $Y$, then this property is called?",
+    "options": [
+     "continuous invariant",
+     "continous variant",
+     "distance variant",
+     "completeness of metric space"
+    ],
+    "explanation": "The stem is garbled ('then this property is called'); it is read as: what is a property called that a continuous map carries from $X$ to its image? A property of a space that passes to its image under every continuous map is called a continuous invariant: if $f:X\\to Y$ is continuous and onto and $X$ has the property, so does $Y$. Compactness and connectedness are examples.",
+    "notes": [
+     "Correct (key).",
+     "Not a standard term.",
+     "Not a standard term.",
+     "Completeness is not preserved: $\\tan^{-1}$ maps $\\mathbb{R}$ onto $(-\\pi/2,\\pi/2)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Compactness and connectedness are continuous invariants; completeness is not."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-075",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 75,
+    "label": "DSSSB TGT 2021 · Q175"
+   },
+   "en": {
+    "q": "Which of the following metric space is not complete?",
+    "options": [
+     "set of real numbers",
+     "set of rationals",
+     "set of complex numbers",
+     "set of irrationals"
+    ],
+    "explanation": "With the usual metric $\\mathbb{Q}$ is not complete: $1,\\ 1.4,\\ 1.41,\\dots$ (decimal approximations of $\\sqrt2$) is Cauchy with no limit in $\\mathbb{Q}$. $\\mathbb{R}$ and $\\mathbb{C}$ are complete. The irrationals are not complete either: $\\sqrt2/n$ is Cauchy, but its limit $0$ is rational. Both (b) and (d) are correct; the board keyed (b).",
+    "notes": [
+     "$\\mathbb{R}$ is complete.",
+     "Correct (key).",
+     "$\\mathbb{C}$ is complete.",
+     "Also not complete (usual metric): $\\sqrt2/n\\to0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "A subset of $\\mathbb{R}$ is complete iff it is closed; $\\mathbb{Q}$ and $\\mathbb{R}-\\mathbb{Q}$ are not closed."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-076",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 76,
+    "label": "DSSSB TGT 2021 · Q176"
+   },
+   "en": {
+    "q": "Let $(X,d)$ be a metric space and let $B$ be a subset of $X$ then if $B$ is closed then $B$ is also ________.",
+    "options": [
+     "complete",
+     "compact",
+     "bounded",
+     "unbounded"
+    ],
+    "explanation": "As printed no option always holds: in $X=\\mathbb{Q}$ the closed set $\\mathbb{Q}$ is not complete. The paper has evidently left out 'complete' for $X$. If $X$ is complete, a Cauchy sequence in $B$ converges in $X$, and since $B$ is closed its limit lies in $B$: $B$ is complete. Closed sets need not be compact or bounded ($[0,\\infty)$ in $\\mathbb{R}$), nor unbounded ($[0,1]$).",
+    "notes": [
+     "Correct when $X$ is complete.",
+     "$[0,\\infty)$ is closed but not compact.",
+     "$[0,\\infty)$ is closed but not bounded.",
+     "$[0,1]$ is closed and bounded."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "A closed subset of a complete metric space is complete; a complete subspace of any metric space is closed."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-077",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-09",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 77,
+    "label": "DSSSB TGT 2021 · Q177"
+   },
+   "en": {
+    "q": "Inner automorphism corresponding to every element of an abelian group is?",
+    "options": [
+     "trivial",
+     "non trivial",
+     "infinite",
+     "bounded"
+    ],
+    "explanation": "The inner automorphism by $a$ is $T_a(x)=axa^{-1}$. In an abelian group $axa^{-1}=aa^{-1}x=x$, so every $T_a$ is the identity map: $\\mathrm{Inn}(G)=\\{I\\}$ is trivial.",
+    "notes": [
+     "Correct.",
+     "$axa^{-1}=x$ for all $x$.",
+     "Not a property of a map.",
+     "Not a property of a map."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.9 Normal subgroups, quotient groups, homomorphisms"
+    ],
+    "facts": [
+     "$\\mathrm{Inn}(G)\\cong G/Z(G)$; it is trivial iff $G$ is abelian."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-078",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-01",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 78,
+    "label": "DSSSB TGT 2021 · Q178"
+   },
+   "en": {
+    "q": "A group is called abelian if it satisfies ________ property.",
+    "options": [
+     "commutative property",
+     "associative property",
+     "existence of identity",
+     "existence of inverse"
+    ],
+    "explanation": "Every group is associative and has an identity and inverses. It is abelian when, in addition, $ab=ba$ for all $a,b$: the commutative property.",
+    "notes": [
+     "Correct.",
+     "Every group has it.",
+     "Every group has it.",
+     "Every group has it."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.1 Binary operations and groups"
+    ],
+    "facts": [
+     "Abelian group = group + commutativity."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-079",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-09",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 79,
+    "label": "DSSSB TGT 2021 · Q179"
+   },
+   "en": {
+    "q": "Every element of a group $G$ when expressed as internal direct product of $a,b,c,\\dots z$ if and only if every element is uniquely expressed as?",
+    "options": [
+     "$G=a.b.c\\dots z$",
+     "$G=a+b+c+\\dots+z$",
+     "$G=a-b-c\\dots-z$",
+     "$G=a+b-c\\dots z$"
+    ],
+    "explanation": "The stem is garbled; it asks for the standard criterion. $G$ is the internal direct product of its normal subgroups $A,B,\\dots,Z$ iff every $g\\in G$ can be written uniquely as a product $g=ab\\cdots z$ with $a\\in A,\\ b\\in B,\\dots,z\\in Z$. The group operation is written as multiplication.",
+    "notes": [
+     "Correct.",
+     "The group operation is written as a product, not a sum.",
+     "Not a group-theoretic expression.",
+     "Not a group-theoretic expression."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.9 Normal subgroups, quotient groups, homomorphisms"
+    ],
+    "facts": [
+     "$G=A\\times B$ (internal) ⇔ $A,B\\trianglelefteq G$, $G=AB$ and $A\\cap B=\\{e\\}$ ⇔ each $g=ab$ uniquely (with normality)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-080",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-04-09",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 80,
+    "label": "DSSSB TGT 2021 · Q180"
+   },
+   "en": {
+    "q": "If a group $G$ is internal direct product of its subgroups $A,B,C,\\dots,Z$ then $G$ is isomorphic to ________.",
+    "options": [
+     "internal direct product of $A,B,C\\dots Z$",
+     "external direct product of $A,B,C\\dots Z$",
+     "$A,B,C,\\dots Z$",
+     "it is not isomorphic"
+    ],
+    "explanation": "The map $A\\times B\\times\\dots\\times Z\\to G$, $(a,b,\\dots,z)\\mapsto ab\\cdots z$, is an isomorphism: elements of different factors commute and the representation is unique. So an internal direct product is isomorphic to the external direct product of the same subgroups.",
+    "notes": [
+     "That is $G$ itself; trivially true but not the theorem.",
+     "Correct.",
+     "Not a single group.",
+     "It is isomorphic."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.9 Normal subgroups, quotient groups, homomorphisms"
+    ],
+    "facts": [
+     "Internal direct product ≅ external direct product of the same factors."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-081",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 81,
+    "label": "DSSSB TGT 2021 · Q181"
+   },
+   "en": {
+    "q": "The external direct product of two cyclic groups is ________.",
+    "options": [
+     "always cyclic",
+     "need not cyclic",
+     "abelian",
+     "never cyclic"
+    ],
+    "explanation": "$\\mathbb{Z}_m\\oplus\\mathbb{Z}_n$ is cyclic iff $\\gcd(m,n)=1$: $\\mathbb{Z}_2\\oplus\\mathbb{Z}_3\\cong\\mathbb{Z}_6$ is cyclic, but $\\mathbb{Z}_2\\oplus\\mathbb{Z}_2$ (the Klein four-group) is not. So it need not be cyclic. Option (c) 'abelian' is also true (cyclic groups are abelian, and so is their direct product); the board keyed (b).",
+    "notes": [
+     "$\\mathbb{Z}_2\\oplus\\mathbb{Z}_2$ is not cyclic.",
+     "Correct (key).",
+     "Also true: cyclic groups are abelian, and so is their product.",
+     "$\\mathbb{Z}_2\\oplus\\mathbb{Z}_3\\cong\\mathbb{Z}_6$ is cyclic."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "$\\mathbb{Z}_m\\oplus\\mathbb{Z}_n$ is cyclic ⇔ $\\gcd(m,n)=1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-082",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 82,
+    "label": "DSSSB TGT 2021 · Q182"
+   },
+   "en": {
+    "q": "Name the smallest non cyclic group.",
+    "options": [
+     "$K_4$",
+     "$Q_8$",
+     "abelian group of $p$ order",
+     "Matrix group"
+    ],
+    "explanation": "Groups of order 1, 2 and 3 (trivial or prime order) are cyclic. Of the two groups of order 4, $\\mathbb{Z}_4$ is cyclic, while the Klein four-group $K_4=\\{e,a,b,ab\\}$, in which every non-identity element has order 2, is not. So $K_4$ is the smallest non-cyclic group.",
+    "notes": [
+     "Correct.",
+     "Order 8: not the smallest.",
+     "A group of prime order $p$ is cyclic.",
+     "Not a specific group."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "$K_4\\cong\\mathbb{Z}_2\\oplus\\mathbb{Z}_2$ is the smallest non-cyclic group."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-083",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 83,
+    "label": "DSSSB TGT 2021 · Q183"
+   },
+   "en": {
+    "q": "What are no. of elements of order 100 of $\\mathbb{Z}_{200}$?",
+    "options": [
+     "40",
+     "80",
+     "120",
+     "160"
+    ],
+    "explanation": "In a cyclic group of order $n$, for each divisor $d$ of $n$ there are exactly $\\phi(d)$ elements of order $d$. Since $100\\mid200$, the number is $\\phi(100)=100\\cdot\\frac12\\cdot\\frac45=40$.",
+    "notes": [
+     "Correct.",
+     "That is $\\phi(200)$, the number of generators.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "Cyclic group of order $n$: $\\phi(d)$ elements of order $d$ for each $d\\mid n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-084",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-04",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 84,
+    "label": "DSSSB TGT 2021 · Q184"
+   },
+   "en": {
+    "q": "Multiply $(1\\ 2\\ 3)$ and $(5\\ 6\\ 4\\ 1)$?",
+    "options": [
+     "$(1\\ 5\\ 6\\ 4\\ 2\\ 3)$",
+     "$(1\\ 2\\ 3\\ 4\\ 5\\ 6)$",
+     "$(2\\ 3\\ 4\\ 5\\ 6\\ 7)$",
+     "$(3\\ 6\\ 3\\ 7\\ 3\\ 8)$"
+    ],
+    "explanation": "Compose right to left, applying $(5\\,6\\,4\\,1)$ first: $1\\to5\\to5$, $5\\to6$, $6\\to4$, $4\\to1\\to2$, $2\\to3$, $3\\to1$. So $(1\\,2\\,3)(5\\,6\\,4\\,1)=(1\\,5\\,6\\,4\\,2\\,3)$.",
+    "notes": [
+     "Correct (right-to-left composition).",
+     "Not this product: 1 must go to 5.",
+     "7 does not occur.",
+     "Not a valid cycle (3 repeated)."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.4 Permutations and the symmetric group Sn"
+    ],
+    "facts": [
+     "Multiply permutations right to left: follow each symbol through the right-hand factor first."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-086",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-07",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 86,
+    "label": "DSSSB TGT 2021 · Q186"
+   },
+   "en": {
+    "q": "Let $k$ be the number of the $p$-ssg of a finite group $G$. Then ________.",
+    "options": [
+     "$k$ divides $O(G)$",
+     "$k$ doesn't divide $O(G)$",
+     "$k$ doesn't exist",
+     "$k$ bipolarates"
+    ],
+    "explanation": "('$p$-ssg' = Sylow $p$-subgroup.) By Sylow's theorems the number $n_p$ of Sylow $p$-subgroups equals the index $[G:N(P)]$ of the normaliser of one of them, so it divides $o(G)$; moreover $n_p\\equiv1\\pmod p$. Example: $S_4$ has $n_3=4$, and $4\\mid24$.",
+    "notes": [
+     "Correct.",
+     "Contradicts Sylow's theorem.",
+     "Sylow $p$-subgroups always exist (if $p\\nmid o(G)$, $k=1$: the trivial subgroup).",
+     "Meaningless."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.7 Cosets and Lagrange's theorem"
+    ],
+    "facts": [
+     "Sylow: $n_p\\equiv1\\pmod p$ and $n_p\\mid o(G)/p^a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-087",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 87,
+    "label": "DSSSB TGT 2021 · Q187"
+   },
+   "en": {
+    "q": "If $f(z)$ is analytic function whose real part is constant then $f(z)$ is ________.",
+    "options": [
+     "constant",
+     "Function of $x$ only",
+     "Function of $y$ only",
+     "Function of $x$ and $y$ both"
+    ],
+    "explanation": "Let $f=u+iv$ with $u=c$. Then $u_x=u_y=0$, and the Cauchy–Riemann equations $u_x=v_y$, $u_y=-v_x$ give $v_x=v_y=0$, so $v$ is constant too. Hence $f'(z)=u_x+iv_x=0$ and $f$ is constant (on a domain).",
+    "notes": [
+     "Correct.",
+     "It is constant.",
+     "It is constant.",
+     "It is constant."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Analytic with constant real part, imaginary part or modulus ⇒ constant."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-088",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 88,
+    "label": "DSSSB TGT 2021 · Q188"
+   },
+   "en": {
+    "q": "Does C-R equations are necessary and sufficient for a function to be analytic?",
+    "options": [
+     "TRUE",
+     "FALSE",
+     "can't say about nature of equations",
+     "depend on range of functions"
+    ],
+    "explanation": "The Cauchy–Riemann equations are necessary but not sufficient. $f(z)=\\sqrt{|xy|}$ satisfies them at $0$ (all four partial derivatives are 0 there) but is not differentiable at $0$: along $y=x$ the difference quotient tends to $\\pm\\frac{1}{1+i}$, not 0. They become sufficient when the partial derivatives are also continuous.",
+    "notes": [
+     "Not sufficient on their own.",
+     "Correct: necessary but not sufficient.",
+     "The answer is definite.",
+     "Not the deciding factor."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "C–R equations + continuous first partial derivatives ⇒ analytic."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2021-089",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-tgt-2021",
+    "n": 89,
+    "label": "DSSSB TGT 2021 · Q189"
+   },
+   "en": {
+    "q": "Which theorem states that \"An integral function attains every finite value with atmost one possible exception\"?",
+    "options": [
+     "Picard's theorem",
+     "Jensen's inequality",
+     "Jensen's formula",
+     "Schwartz' lemma"
+    ],
+    "explanation": "Picard's (little) theorem: a non-constant entire (integral) function takes every finite complex value with at most one exception; $e^z$ omits only $0$.",
+    "notes": [
+     "Correct.",
+     "About convex functions.",
+     "Relates the zeros of $f$ to $\\log|f|$ on a circle.",
+     "Says $|f(z)|\\le|z|$ for analytic $f$ mapping the unit disc into itself with $f(0)=0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Picard: a non-constant entire function omits at most one value ($e^z$ omits 0)."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}

@@ -238,6 +238,18 @@ button.menu-row:hover { background: var(--soft-3); }
 .quick { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 4px; }
 .quick .btn { padding: 9px 10px; font-size: calc(16px * var(--fs)); line-height: 1.25; }
 .setup-secs, .setup-more { margin-top: 18px; }
+/* UP TGT / PGT Mathematics practice: the practice page, a maths mock in the lobby, maths in the game. */
+.segs-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.mq-list { display: grid; gap: 8px; }
+.mq-row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 12px; background: var(--row); }
+.mq-row .topic-icon { grid-row: auto; flex: none; }
+.mq-what { display: flex; flex-direction: column; gap: 2px; flex: 1 1 auto; min-width: 0; }
+.mq-row .btn { flex: none; }
+.mq-pick { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--row); }
+.mq-pick > span:last-child { display: flex; flex-direction: column; gap: 2px; }
+.q-card .katex-display, .mq-explain .katex-display, .sheet .katex-display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+.mq-explain .why p { margin: 0 0 6px; }
+.katex-wide { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 .setup-rules { padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
 .units { display: flex; flex-direction: column; gap: 8px; }
 .unit { border: 1px solid var(--line); border-radius: 14px; background: var(--soft-2); overflow: hidden; }
@@ -507,6 +519,8 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 /* UP TGT / PGT Mathematics on the home screen, and the link to its full notes PDF */
 .maths-entry { display: flex; flex-direction: column; gap: 12px; }
 .maths-pdf { width: 100%; text-align: center; }
+.mq-home { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 10px 0; }
+.mq-home .btn { padding: 9px 8px; font-size: calc(15px * var(--fs)); line-height: 1.25; }
 /* The ₹10 unlock of the maths notes PDF (a box like the app's own question box) */
 .pay-dialog .small { font-size: calc(14px * var(--fs)); margin-top: 8px; }
 .upi-qr { display: block; width: 220px; height: 220px; max-width: 100%; margin: 12px auto 6px; padding: 6px; background: #fff; border: 1px solid var(--line); border-radius: 12px; }

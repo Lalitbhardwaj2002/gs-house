@@ -25,6 +25,8 @@ index['book'] = sorted(f.name for f in (data / 'book').glob('*') if f.suffix in 
 # for offline reading too.
 net = data / 'net'
 index['net'] = sorted(f.relative_to(net).as_posix() for f in net.rglob('*') if f.suffix in ('.json', '.txt'))
+# The solved past papers of UP TGT / PGT Mathematics (data/mq/), with their index: saved for offline practice.
+index['mq'] = sorted(f.name for f in (data / 'mq').glob('*.json')) if (data / 'mq').is_dir() else []
 (data / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding='utf-8')
 total = sum(c['total'] for c in index['sections'].values())
 print(f'data/index.json: {len(index["sections"])} sections, {total} questions')
