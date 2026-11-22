@@ -117,6 +117,33 @@ function shuffle(list) {
 const sectionById = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 const unitById = Object.fromEntries(UNITS.map((u) => [u.id, u]));
 const sectionOf = (qid) => String(qid).replace(/-\d{3}$/, '');
+
+// UP TGT / PGT Mathematics practice (data/mq/): past papers, solved step by step, English only, with
+// formulas typeset by KaTeX. Each paper is a section "mq/<paper>" (data/mq/<paper>.json) whose questions
+// are "mq/<paper>-NNN"; in the report a maths question counts under its notes topic, "mt/<topic>".
+// data/mq/index.json lists the papers (with the question numbers of each topic) and the topic titles.
+const MATHS_UNIT = { id: 'maths', icon: '➗', en: 'Mathematics', hi: 'गणित' };
+UNITS.push(MATHS_UNIT);
+unitById.maths = MATHS_UNIT;
+const isMathsId = (qid) => /^mq\//.test(String(qid));
+const mq = { index: null, loading: null };
+function loadMqIndex() {
+  if (!mq.loading) {
+    mq.loading = fetch('data/mq/index.json', { cache: 'no-cache' })
+      .then((r) => { if (!r.ok) throw new Error('mq'); return r.json(); })
+      .then((ix) => {
+        mq.index = ix;
+        for (const p of ix.papers) sectionById[`mq/${p.id}`] = { id: `mq/${p.id}`, unit: 'maths', tracks: [], en: p.title, hi: p.title, scope: p.title };
+        for (const [id, title] of Object.entries(ix.topics || {})) sectionById[`mt/${id}`] = { id: `mt/${id}`, unit: 'maths', tracks: [], en: title, hi: title, scope: title };
+        return ix;
+      })
+      .catch(() => { mq.loading = null; return { papers: [], topics: {} }; });
+  }
+  return mq.loading;
+}
+// Text of a maths question: escaped HTML whose $…$ formulas KaTeX draws later; a solution keeps its lines.
+const mtext = (s) => esc(s || '').replace(/\n/g, '<br>');
+const mparas = (s) => String(s || '').split('\n').filter((l) => l.trim()).map((l) => `<p>${esc(l)}</p>`).join('');
 const readList = (key) => {
   try { const v = JSON.parse(store.get('localStorage', key) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; }
 };
@@ -465,7 +492,12 @@ function openRoom(code, saved = null, attempt = 0) {
     host.conns = new Map();
     host.lastSeen = {};
     if (saved) host.state.players.forEach((p) => { if (p.id !== me.id) p.connected = false; });
-    else { addPlayer(me.id, me.name); resetLocal(code); stats.event('room-created', 'Room created'); }
+    else {
+      addPlayer(me.id, me.name);
+      resetLocal(code);
+      stats.event('room-created', 'Room created');
+      if (ui.pendingMq) { applyMq(host.state, ui.pendingMq); ui.pendingMq = null; }   // a maths mock to play with friends
+    }
     net = { role: 'host', solo: false };
     store.set('sessionStorage', 'pp-role', 'host');
     setRoomInUrl(code);
@@ -561,7 +593,7 @@ function handleAction(pid, msg, conn = null) {
       return;
     }
     case 'start':
-      if (fromHost && s.phase === 'lobby') startQuiz();
+      if (fromHost && s.phase === 'lobby') startQuiz(s.mq ? s.mq.qids : null);
       return;
     case 'answer':
       recordAnswer(pid, msg);
@@ -588,8 +620,9 @@ function handleAction(pid, msg, conn = null) {
       // Start at once on a given list of questions (saved ones, past mistakes, a retry of the
       // questions just missed) or on one section, from the lobby or from the results screen.
       if (!fromHost || !['lobby', 'over'].includes(s.phase)) return;
+      // (A full maths paper has up to 150 questions, so up to 200 are taken.)
       const qids = Array.isArray(msg.qids)
-        ? [...new Set(msg.qids.filter((id) => typeof id === 'string' && sectionById[sectionOf(id)]))].slice(-100) : [];
+        ? [...new Set(msg.qids.filter((id) => typeof id === 'string' && (sectionById[sectionOf(id)] || isMathsId(id))))].slice(-200) : [];
       const secs = Array.isArray(msg.sections) ? [...new Set(msg.sections.filter((id) => sectionById[id]))] : [];
       if (!qids.length && !secs.length) { toast(t('noQs')); return; }
       if (s.phase === 'over') backToLobby(s);
@@ -655,7 +688,9 @@ async function startQuiz(only = null) {
   hostChanged();
   await loadBank(only ? [...new Set(only.map(sectionOf))] : s.settings.sections);
   if (host.state !== s || s.phase !== 'loading') return; // left the quiz while the questions were loading
-  const qids = only ? shuffle(only.filter((id) => findQuestion(id))) : pickQuestions(s.settings);
+  // A maths mock of one whole paper keeps the paper's order; every other list is shuffled.
+  const keep = only && s.mq && s.mq.order === 'paper';
+  const qids = only ? (keep ? only : shuffle(only)).filter((id) => findQuestion(id)) : pickQuestions(s.settings);
   if (!qids.length) {
     s.phase = 'lobby';
     hostChanged();
@@ -813,7 +848,7 @@ function reportFor(p) {
     const q = findQuestion(qid);
     if (!q) return;
     const a = (host.answers[i + 1] || {})[p.id];
-    const sec = qid.replace(/-\d{3}$/, '');
+    const sec = q.math && q.topic ? `mt/${q.topic}` : qid.replace(/-\d{3}$/, '');
     bySection[sec] = bySection[sec] || [0, 0];
     byLevel[q.level] = byLevel[q.level] || [0, 0];
     bySection[sec][0] += 1;
@@ -1021,8 +1056,8 @@ function leaveGame(stay = '') {
   const bq = ui.bookQuiz;
   setBookQuiz(null);
   if (bq && stay !== 'none') {
-    const route = bq.practice ? 'book' : `book/${bq.topic}`;
-    history.replaceState({ book: route }, '', `#${route}`);
+    const route = bq.route || (bq.practice ? 'book' : `book/${bq.topic}`);   // a maths practice page names its route
+    history.replaceState({ book: route }, '', `${location.pathname}#${route}`);   // (drops a room's ?room=)
     showBook(route);
   } else if (stay !== 'none') {
     history.replaceState(null, '', location.pathname);
@@ -1118,6 +1153,8 @@ function render() {
     ui.stageKey = key;
     app.innerHTML = topBar(v) + stageHTML(v, amHost);
     if (v.phase === 'lobby' && !v.solo) drawQr(v.code);
+    // Maths questions on screen (the question, or the answer sheet): draw their formulas.
+    if (ui.sheet ? Object.values(local.questions).some((x) => x && x.math) : q && q.math) typesetMath(app);
   }
   updateRegions(v, amHost);
 }
@@ -1204,6 +1241,21 @@ function setupHTML(v, amHost) {
   const dis = amHost ? '' : 'disabled';
   const seg = (name, values, label) => values.map((val) => `
     <button class="seg ${st[name] === val ? 'on' : ''}" ${amHost ? `data-action="set" data-key="${name}" data-val="${val}"` : 'disabled'}>${label(val)}</button>`).join('');
+  // A maths mock chosen on the practice page: its questions are fixed; only the rules can change.
+  if (st.mq) {
+    return `
+    <div class="setup-grid mq-setup" lang="en">
+      <div class="setup-rules">
+        <p class="field-label">⏱️ ${t('timer')}</p>
+        <div class="segs segs-5">${seg('timer', CONFIG.timers, (n) => (n ? t('secs', n) : t('noLimit')))}</div>
+        <p class="field-label">➖ ${t('negative')}</p>
+        <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '1/3' : '1/4'}` : t('none')))}</div>
+      </div>
+      <div class="setup-secs">
+        <div class="mq-pick"><span class="topic-icon">➗</span><span><b>${esc(st.mq.title)}</b><span class="muted small">${st.mq.n} questions${st.mq.note ? ` · ${esc(st.mq.note)}` : ''}</span></span></div>
+      </div>
+    </div>`;
+  }
   const tracks = [['all', t('trackAll')], ['tgt', t('trackTgt')], ['higher', t('trackHigher')]];
   const units = UNITS.map((u) => {
     const secs = SECTIONS.filter((s) => s.unit === u.id && trackOk(s, st.track));
@@ -1281,7 +1333,9 @@ function questionHTML(v, amHost) {
   const unit = sec ? unitById[sec.unit] : null;
   const mine = local.mine[v.round];
   const done = !!mine || v.locked;
+  const isM = !!q.math;   // a maths question: English only, formulas typeset after drawing
   const second = (text) => (alt ? `<span class="alt" lang="${altLang}">${esc(text)}</span>` : '');
+  const optText = (o) => (isM ? mtext(o) : esc(o));
   const options = body.options.map((o, i) => {
     let cls = '';
     if (done) {
@@ -1289,7 +1343,7 @@ function questionHTML(v, amHost) {
       else if (mine && mine.choice === i) cls = 'wrong';
       else cls = 'dim';
     }
-    return `<button class="opt ${cls}" data-action="pick" data-i="${i}" ${done ? 'disabled' : ''}><span class="opt-letter">${LETTERS[i]}</span><span class="opt-text">${esc(o)}${alt ? second(alt.options[i]) : ''}</span>${done && i === q.answer ? '<span class="opt-mark">✓</span>' : ''}${cls === 'wrong' ? '<span class="opt-mark">✗</span>' : ''}</button>`;
+    return `<button class="opt ${cls}" data-action="pick" data-i="${i}" ${done ? 'disabled' : ''}><span class="opt-letter">${LETTERS[i]}</span><span class="opt-text">${optText(o)}${alt ? second(alt.options[i]) : ''}</span>${done && i === q.answer ? '<span class="opt-mark">✓</span>' : ''}${cls === 'wrong' ? '<span class="opt-mark">✗</span>' : ''}</button>`;
   }).join('');
   const langBtn = (l, label) => `<button class="${mode === l ? 'on' : ''}" data-action="qlang" data-l="${l}">${label}</button>`;
   // Pause and Submit belong to whoever runs the quiz: the solo player, or the host of a room.
@@ -1320,12 +1374,12 @@ function questionHTML(v, amHost) {
     <section class="q-card ${done ? 'done' : ''}">
       <div class="q-main">
         <div class="q-meta">
-          <span class="q-sec">${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}</span>
+          <span class="q-sec">${isM ? `➗ ${esc(q.src ? q.src.label : sectionTitle(section, 'en'))}` : `${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}`}</span>
           <span class="q-level lvl-${q.level}">${esc(t(`level_${q.level}`))}</span>
-          <span class="q-lang">${langBtn('en', 'EN')}${langBtn('hi', 'हिं')}${langBtn('both', t('both'))}</span>
+          ${isM ? '' : `<span class="q-lang">${langBtn('en', 'EN')}${langBtn('hi', 'हिं')}${langBtn('both', t('both'))}</span>`}
           ${markButton(q.id)}
         </div>
-        <h1 class="q-text" lang="${ql === 'hi' ? 'hi' : 'en'}">${esc(body.q)}${alt ? second(alt.q) : ''}</h1>
+        <h1 class="q-text ${isM ? 'q-math' : ''}" lang="${ql === 'hi' && !isM ? 'hi' : 'en'}">${isM ? mtext(body.q) : esc(body.q)}${alt ? second(alt.q) : ''}</h1>
         <div class="opts" lang="${ql === 'hi' ? 'hi' : 'en'}">${options}</div>
         ${done ? '' : `<p class="keys-hint">${t('keysHint')}${runs ? t('keysPause') : ''}</p>`}
       </div>
@@ -1342,6 +1396,7 @@ function markButton(qid) {
 }
 
 function feedbackHTML(q, body, mine, ql) {
+  if (q.math) return mathsFeedbackHTML(q, body, mine);
   const verdict = !mine ? `<div class="verdict missed">⏳ ${t('missed')}</div>`
     : mine.choice === q.answer ? `<div class="verdict good">${DIYA_SVG}<b>${t('correct')}</b>${streakNote()}</div>`
       : `<div class="verdict bad">✗ <b>${t('wrong')}</b> — ${t('rightAnswer')}: <b>${LETTERS[q.answer]}. ${esc(body.options[q.answer])}</b></div>`;
@@ -1360,6 +1415,30 @@ function feedbackHTML(q, body, mine, ql) {
       <div class="facts"><h3>📜 ${t('remember')}</h3><ul>${body.facts.map((f) => `<li>${esc(f)}</li>`).join('')}</ul></div>
       <details class="more" data-keep="notes" ${prefs.notes ? 'open' : ''}><summary>🔎 ${t('aboutOptions')}</summary><div class="notes">${notes}</div></details>
       <p class="refs">📚 <b>${t('refs')}:</b> ${refsText(q.refs, ql)}</p>
+    </section>`;
+}
+
+// The solution of a maths question: the steps (a "$$…$$" line is a displayed formula), the point to
+// remember, notes on the other options when there are any, the paper and question number, and the
+// notes topic that teaches it. Where the board's official key differs from the worked answer, it says so.
+function mathsFeedbackHTML(q, body, mine) {
+  const right = `${LETTERS[q.answer]}. ${mtext(body.options[q.answer])}`;
+  const verdict = !mine ? `<div class="verdict missed">⏳ ${t('missed')} — ${t('rightAnswer')}: <b>${right}</b></div>`
+    : mine.choice === q.answer ? `<div class="verdict good">${DIYA_SVG}<b>${t('correct')}</b>${streakNote()}</div>`
+      : `<div class="verdict bad">✗ <b>${t('wrong')}</b> — ${t('rightAnswer')}: <b>${right}</b></div>`;
+  const flow = (body.path || []).map((step) => `<span class="node">${esc(step)}</span>`).join('<span class="arrow">➜</span>');
+  const notes = (body.notes || []).some((n) => n) ? `<details class="more" data-keep="notes" ${prefs.notes ? 'open' : ''}><summary>🔎 About the options</summary><div class="notes">${body.options.map((o, i) => (body.notes[i]
+    ? `<div class="note ${i === q.answer ? 'ok' : mine && mine.choice === i ? 'bad' : ''}"><b class="note-letter">${LETTERS[i]}</b><p class="note-text">${mtext(body.notes[i])}</p></div>` : '')).join('')}</div></details>` : '';
+  const topic = q.topic && sectionById[`mt/${q.topic}`] ? sectionById[`mt/${q.topic}`].en : '';
+  const keyNote = Number.isInteger(q.key) && q.key !== q.answer ? ` · the board's key gave ${LETTERS[q.key]}; see the solution` : '';
+  return `
+    ${verdict}
+    <section class="explain mq-explain" lang="en">
+      ${flow ? `<div class="flow" aria-label="Topic">${flow}</div>` : ''}
+      <div class="why"><h3>📖 Solution</h3>${mparas(body.explanation)}</div>
+      ${(body.facts || []).length ? `<div class="facts"><h3>📜 ${t('remember')}</h3><ul>${body.facts.map((f) => `<li>${mtext(f)}</li>`).join('')}</ul></div>` : ''}
+      ${notes}
+      <p class="refs">📝 ${esc(q.src ? q.src.label : '')}${keyNote}${topic ? ` · 📖 Notes: ${esc(topic)}` : ''}</p>
     </section>`;
 }
 
@@ -1401,7 +1480,8 @@ function resultsHTML(v, amHost) {
     : `<p class="muted center">${t('waitHost', esc(hostName(v)))}<span class="dots"></span></p>`;
   // After a quiz from the book companion: another set from the same chapter, or back to the book.
   const next = !bq ? again
-    : `${bq.practice ? again : `<button class="btn primary big" data-action="book-again">🎯 ${t('bookAgain')}</button>`}
+    : bq.route ? `${again}<button class="btn big" data-action="leave-now">➗ Back to maths practice</button>`
+      : `${bq.practice ? again : `<button class="btn primary big" data-action="book-again">🎯 ${t('bookAgain')}</button>`}
        <button class="btn big" data-action="leave-now">📚 ${t('bookBack')}</button>`;
   const missed = missedQids();
   const retry = amHost && v.solo && missed.length
@@ -1462,7 +1542,7 @@ function assessmentHTML(rep, canRevise = false) {
   // The five weakest sections, the ones with most questions missed first among equals.
   const weak = secRows.filter(([, [n, c]]) => pct(c, n) < 50)
     .sort((a, b) => pct(a[1][1], a[1][0]) - pct(b[1][1], b[1][0]) || (b[1][0] - b[1][1]) - (a[1][0] - a[1][1])).slice(0, 5);
-  const weakPills = weak.map(([k, [n, c]]) => (canRevise
+  const weakPills = weak.map(([k, [n, c]]) => (canRevise && (!k.startsWith('mt/') || mq.index)
     ? `<button class="pill" data-action="revise" data-id="${esc(k)}">${esc(sectionTitle(k))} · ${c}/${n}</button>`
     : `<span class="pill">${esc(sectionTitle(k))} · ${c}/${n}</span>`)).join('');
   const ringLen = Math.max(0, Math.min(100, acc));
@@ -1506,8 +1586,13 @@ function sheetHTML(v) {
   const items = rounds.map((r) => {
     const q = local.questions[r];
     const mine = local.mine[r];
-    const langs = sl === 'both' ? ['en', 'hi'] : [sl];
-    const blocks = langs.map((l) => {
+    const langs = q.math ? ['en'] : sl === 'both' ? ['en', 'hi'] : [sl];
+    const blocks = q.math ? [q.en].map((b) => `
+        <div class="sh-lang" lang="en">
+          <p class="sh-q">${mtext(b.q)}</p>
+          <ol class="sh-opts">${b.options.map((o, i) => `<li class="${i === q.answer ? 'right' : mine && mine.choice === i ? 'wrong' : ''}"><b>${LETTERS[i]}.</b> ${mtext(o)} ${i === q.answer ? '✓' : mine && mine.choice === i ? '✗' : ''}</li>`).join('')}</ol>
+          <div class="sh-expl"><b>Solution:</b> ${mparas(b.explanation)}</div>
+        </div>`).join('') : langs.map((l) => {
       const b = q[l] || q.en;
       return `
         <div class="sh-lang" lang="${l === 'hi' ? 'hi' : 'en'}">
@@ -1521,11 +1606,11 @@ function sheetHTML(v) {
     const hl = sl === 'hi' ? 'hi' : 'en';
     return `
       <article class="sh-item" id="sh-${r}">
-        <header><b>${r}.</b> <span>${esc(sectionTitle(sec, hl))}</span> <span class="q-level lvl-${q.level}">${esc(T[hl][`level_${q.level}`])}</span>
+        <header><b>${r}.</b> <span>${esc(q.math && q.src ? q.src.label : sectionTitle(sec, hl))}</span> <span class="q-level lvl-${q.level}">${esc(T[hl][`level_${q.level}`])}</span>
           <span class="no-print">${markButton(q.id)}</span>
           <span class="sh-ans">${t('rightAnswer')}: <b>${LETTERS[q.answer]}</b> · ${t('yourAnswerWas')}: <b>${mine ? LETTERS[mine.choice] : t('notAnswered')}</b></span></header>
         ${blocks}
-        <p class="refs">📚 ${refsText(q.refs, hl)}</p>
+        ${q.math ? '' : `<p class="refs">📚 ${refsText(q.refs, hl)}</p>`}
       </article>`;
   }).join('');
   const langBtn = (l, label) => `<button class="seg ${sl === l ? 'on' : ''}" data-action="sheet-lang" data-l="${l}">${label}</button>`;
@@ -1559,9 +1644,9 @@ function updateRegions(v, amHost) {
       ${p.id === v.hostId ? `<span class="tag">${t('host')}</span>` : p.id === me.id ? `<span class="tag">${t('you')}</span>` : ''}</li>`).join(''));
     setHTML('setup', setupHTML(v, amHost));
     const st = v.settings;
-    const avail = st.sections.reduce((sum, id) => sum + countFor(id, st), 0);
+    const avail = st.mq ? st.mq.n : st.sections.reduce((sum, id) => sum + countFor(id, st), 0);
     setHTML('start-area', amHost
-      ? `<p class="muted small center">${st.sections.length ? t('available', avail, st.sections.length) : t('pickSection')}</p>
+      ? `<p class="muted small center">${st.mq ? `${st.mq.n} questions ready` : st.sections.length ? t('available', avail, st.sections.length) : t('pickSection')}</p>
          <button class="btn primary big" data-action="start" ${avail ? '' : 'disabled'}>🪔 ${t('start')}</button>`
       : `<p class="muted center">${t('hostPicks', esc(hostName(v)))}<span class="dots"></span></p>`);
   }
@@ -1681,6 +1766,7 @@ function mathsHTML() {
     <section class="card maths-entry" lang="en">
       <div class="book-entry-head"><span class="book-emoji">➗</span><div><h2>UP TGT / PGT Mathematics</h2><p class="muted small">Topic-wise notes on the official 2026 syllabus, with worked examples and shortcuts · English</p></div></div>
       <div class="topics">${doors}</div>
+      <div class="row mq-home">${MATHS_SUBJECTS.map((s) => `<button class="btn" data-action="book-go" data-route="net/${s.id}/practice">🎯 ${s.name.split(' ')[0]} past papers &amp; mocks</button>`).join('')}</div>
       <button class="btn maths-pdf" data-action="maths-pdf">📄 Full notes PDF</button>
     </section>`;
 }
@@ -2472,8 +2558,90 @@ function typesetMath(el) {
       delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }],
       throwOnError: false,
     });
+    // An inline formula wider than its line (a long expression on a phone) scrolls sideways on its own
+    // instead of pushing the page wider.
+    el.querySelectorAll('.katex').forEach((k) => {
+      if (k.closest('.katex-display')) return;
+      const line = k.parentElement && k.parentElement.closest('p, li, h1, h2, h3, td, th, .opt-text, .note-text');
+      if (line && k.getBoundingClientRect().width > line.clientWidth + 1) k.classList.add('katex-wide');
+    });
   }).catch(() => {});
 }
+
+// ---------- UP TGT / PGT Mathematics: practice and mock tests ----------
+// The page "net/<subject>/practice" of a maths subject whose JSON has "practice": {"level": …}: a full
+// mock of each past paper of that level (in the paper's order, with its time per question and negative
+// marking), mixed mocks over all its papers, and topic-wise sets for each unit of the syllabus. Any of
+// them can be played alone or in a room with friends (the ordinary game engine: up to 20 players).
+const mqId = (paper, n) => `mq/${paper}-${String(n).padStart(3, '0')}`;
+// The questions of the papers of one level (all levels when `level` is null); with `topics`, only
+// those of these notes topics.
+function mqPool(level, topics = null) {
+  const papers = ((mq.index || {}).papers || []).filter((p) => !level || p.level === level);
+  return [...new Set(papers.flatMap((p) => (topics
+    ? topics.flatMap((tp) => (p.topics[tp] || []).map((n) => mqId(p.id, n)))
+    : p.ns.map((n) => mqId(p.id, n)))))];
+}
+// `count` questions of a pool, those this device has not seen first.
+function mqPick(pool, count) {
+  const seen = new Set(readList('pp-seen'));
+  return [...shuffle(pool.filter((id) => !seen.has(id))), ...shuffle(pool.filter((id) => seen.has(id)))].slice(0, count);
+}
+function applyMq(s, spec) {
+  s.mq = { qids: spec.qids, order: spec.order || '' };
+  Object.assign(s.settings, { timer: spec.timer, negative: spec.negative, mq: { title: spec.title, n: spec.qids.length, note: spec.note || '' } });
+}
+// Starts a maths quiz alone, or opens a room for it: friends join with the code and the host starts.
+function startMq(spec) {
+  if (!spec.qids.length) { toast(t('noQs')); return; }
+  setBookQuiz({ route: book.route, practice: true });
+  if (ui.mqRoom) {
+    if (typeof Peer === 'undefined') { setBookQuiz(null); showError(t('noPeer')); return; }
+    ui.pendingMq = spec;
+    openRoom(randomCode());
+    return;
+  }
+  startSolo();
+  applyMq(host.state, spec);
+  handleAction(me.id, { type: 'quick', qids: spec.qids });
+}
+const mqNeg = (n) => (n ? `−${n === 0.33 ? '1/3' : n === 0.25 ? '1/4' : n} for a wrong answer` : 'no negative marking');
+async function showMqPractice(s, route, keepScroll) {
+  if (!mq.index) app.innerHTML = SPINNER;
+  const ix = await loadMqIndex();
+  if (book.route !== route || ui.screen !== 'book') return;
+  const level = s.practice.level;
+  const papers = ix.papers.filter((p) => p.level === level);
+  const seen = new Set(readList('pp-seen'));
+  const units = s.units.map((u, i) => {
+    const pool = mqPool(level, studyChapters(u).map((c) => c.id));
+    return { u, i, n: pool.length, seenN: pool.filter((id) => seen.has(id)).length };
+  }).filter((x) => x.n);
+  const total = mqPool(level).length;
+  const seg = (on, val, label) => `<button class="seg ${on ? 'on' : ''}" data-action="mq-players" data-val="${val}">${label}</button>`;
+  const paperRows = papers.map((p) => `
+      <div class="mq-row"><span class="topic-icon">📝</span><span class="mq-what"><b>${esc(p.title)}</b><span class="muted small">${p.ns.length} questions · ${p.minutes} minutes in the exam · ${mqNeg(p.negative)}</span></span>
+        <button class="btn" data-action="mq-paper" data-id="${esc(p.id)}">Start ▶</button></div>`).join('');
+  const unitRows = units.map(({ u, i, n, seenN }) => `
+      <div class="mq-row"><span class="topic-icon">${u.icon}</span><span class="mq-what"><b>${bookName(u)}</b><span class="muted small">Unit ${i + 1} · ${n} questions · ${seenN} seen</span></span>
+        <button class="btn" data-action="mq-unit" data-id="${esc(u.id)}">${Math.min(20, n)} ▶</button></div>`).join('');
+  const mixes = [25, 50, 100].filter((n, k) => k === 0 || n <= total);
+  app.innerHTML = `
+    ${bookBar(`net/${s.id}`, bookName(s.title))}
+    <section class="hero book-hero" lang="en"><div class="book-emoji">🎯</div><h1 class="book-title">Practice and mock tests</h1>
+      <p class="tagline">${esc(s.practice.about || '')}</p></section>
+    <section class="card" lang="en"><h2>👥 Who is playing?</h2>
+      <div class="segs segs-2">${seg(!ui.mqRoom, 'solo', '🪔 Alone')}${seg(ui.mqRoom, 'room', '👥 With friends')}</div>
+      ${ui.mqRoom ? `<label class="field" id="name-field"><span>${t('yourName')}</span><input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(me.name)}"></label>
+      <p class="muted small">You get a room code to share; up to ${CONFIG.maxPlayers} players join with it from their own phones, and you start when everyone is in.</p>` : ''}
+    </section>
+    ${papers.length ? `<section class="card" lang="en"><h2>📝 Full papers (mock tests)</h2><p class="muted small">Every question of the paper in its order, with about the exam's time per question and its negative marking.</p><div class="mq-list">${paperRows}</div></section>` : ''}
+    ${total ? `<section class="card" lang="en"><h2>🔀 Mixed mocks</h2><p class="muted small">Questions from all ${papers.length} papers, those you have not seen first; 60 seconds each.</p><div class="row">${mixes.map((n) => `<button class="btn" data-action="mq-mixed" data-n="${n}">${Math.min(n, total)} questions</button>`).join('')}</div></section>` : ''}
+    ${units.length ? `<section class="card" lang="en"><h2>📚 Topic-wise practice</h2><p class="muted small">Past-paper questions on one unit of the syllabus, with no clock and no negative marking.</p><div class="mq-list">${unitRows}</div></section>` : ''}
+    ${papers.length ? '' : '<section class="card" lang="en"><p class="muted">The solved papers are being added.</p></section>'}`;
+  if (!keepScroll) window.scrollTo(0, 0);
+}
+const mqSubject = () => study[(book.route || '').split('/')[1]];
 
 // The official syllabus of the subject (the file behind its door on the home screen), or null.
 async function studySyllabus(id) {
@@ -2509,6 +2677,7 @@ async function showStudy(route, keepScroll) {
   const subject = study[subjectId];
   pageLang = subject.langs && subject.langs.length === 1 ? subject.langs[0] : null;
   if (subject.theme) document.body.dataset.subject = subject.theme;
+  if (unitId === 'practice' && subject.practice) { await showMqPractice(subject, route, keepScroll); return; }
   const unit = unitId ? [...subject.units, ...(subject.extras || [])].find((u) => u.id === unitId && u.parts) : null;
   const chapter = unit && chapterId ? studyChapters(unit).find((c) => c.id === chapterId) : null;
   if (chapter) { await showStudyChapter(subject, unit, chapter, keepScroll); return; }
@@ -2556,6 +2725,10 @@ function studySubjectHTML(s, syllabus) {
       ${all.length ? readMeter(all.filter(isRead).length, all.length) : ''}
       <div class="topics">${s.units.map(row).join('')}</div>
     </section>
+    ${s.practice ? `<section class="card" lang="en"><h2>🎯 Practice and mock tests</h2><div class="topics">
+      <button class="topic ready" data-action="book-go" data-route="net/${s.id}/practice"><span class="topic-icon">📝</span><span><span class="topic-name">Past papers, solved</span>
+        <span class="topic-meta">${esc(s.practice.line || 'Full mock of each paper · mixed mocks · topic-wise practice · alone or with friends')}</span></span><span class="badge go">${t('netOpen')} ▶</span></button>
+    </div></section>` : ''}
     ${(s.extras || []).length ? `<section class="card"><h2>${t('netMore')}</h2><div class="topics">${s.extras.map(extra).join('')}</div></section>` : ''}
     <p class="muted small center">${bookName(s.about)}</p>`;
 }
@@ -2783,7 +2956,30 @@ const actions = {
   'quick-marks': () => act({ type: 'quick', qids: [...marks] }),
   'quick-wrong': () => act({ type: 'quick', qids: [...mistakes] }),
   retry: () => act({ type: 'quick', qids: missedQids() }),
-  revise: (btn) => act({ type: 'quick', sections: [btn.dataset.id] }),
+  // A weak section to revise; for maths, a weak notes topic gives a set of its past-paper questions.
+  revise(btn) {
+    const id = btn.dataset.id;
+    if (id.startsWith('mt/')) act({ type: 'quick', qids: mqPick(mqPool(null, [id.slice(3)]), 20) });
+    else act({ type: 'quick', sections: [id] });
+  },
+  // ----- maths practice page -----
+  'mq-players'(btn) { ui.mqRoom = btn.dataset.val === 'room'; showBook(book.route, true); },
+  'mq-paper'(btn) {
+    const p = ((mq.index || {}).papers || []).find((x) => x.id === btn.dataset.id);
+    if (!p || (ui.mqRoom && !readName())) return;
+    startMq({ qids: p.ns.map((n) => mqId(p.id, n)), title: p.title, timer: p.timer, negative: p.negative, order: 'paper', note: `${p.minutes} minutes in the exam` });
+  },
+  'mq-mixed'(btn) {
+    const s = mqSubject();
+    if (!s || (ui.mqRoom && !readName())) return;
+    startMq({ qids: mqPick(mqPool(s.practice.level), Number(btn.dataset.n)), title: `Mixed mock · ${s.practice.level} past papers`, timer: 60, negative: 0 });
+  },
+  'mq-unit'(btn) {
+    const s = mqSubject();
+    const u = s && s.units.find((x) => x.id === btn.dataset.id);
+    if (!u || (ui.mqRoom && !readName())) return;
+    startMq({ qids: mqPick(mqPool(s.practice.level, studyChapters(u).map((c) => c.id)), 20), title: `${u.en} · past-paper questions`, timer: 0, negative: 0 });
+  },
   set(btn) {
     const v = ui.view;
     const key = btn.dataset.key;

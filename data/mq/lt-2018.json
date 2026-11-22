@@ -1,0 +1,4119 @@
+{
+ "paper": {
+  "id": "lt-2018",
+  "title": "UPPSC LT Grade Mathematics 2018 (29 July)",
+  "exam": "UP LT Grade",
+  "date": "29 July 2018",
+  "level": "TGT",
+  "minutes": 90,
+  "negative": 0.33,
+  "source": "UPPSC Assistant Teacher (LT grade) examination of 29 July 2018, Mathematics, booklet series C (DFMET-03): part II, questions 31 to 150, as shared after the exam; questions 119 to 126 are missing from the available copy",
+  "note": "The mathematics part; the whole paper had 150 questions in 2 hours. Questions 119 to 126 are missing from the available copy."
+ },
+ "questions": [
+  {
+   "id": "mq/lt-2018-031",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-07",
+   "src": {
+    "paper": "lt-2018",
+    "n": 31,
+    "label": "LT 2018 · Q31"
+   },
+   "en": {
+    "q": "If $\\theta$ is real, then",
+    "options": [
+     "$\\cos(i\\theta)=i\\cosh\\theta$",
+     "$\\sin(i\\theta)=i\\sinh\\theta$",
+     "$\\tan(i\\theta)=\\tanh\\theta$",
+     "$\\cot(i\\theta)=i\\coth\\theta$"
+    ],
+    "explanation": "$\\sin(i\\theta)=\\dfrac{e^{-\\theta}-e^{\\theta}}{2i}=\\dfrac{i(e^{\\theta}-e^{-\\theta})}{2}=i\\sinh\\theta$. The others: $\\cos(i\\theta)=\\cosh\\theta$, $\\tan(i\\theta)=i\\tanh\\theta$, $\\cot(i\\theta)=-i\\coth\\theta$.",
+    "notes": [
+     "$\\cos(i\\theta)=\\cosh\\theta$, with no factor $i$.",
+     "Correct: $\\sin(i\\theta)=i\\sinh\\theta$.",
+     "$\\tan(i\\theta)=i\\tanh\\theta$; the factor $i$ is missing.",
+     "$\\cot(i\\theta)=-i\\coth\\theta$; the sign is wrong."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.7 Exponential, circular and hyperbolic functions"
+    ],
+    "facts": [
+     "$\\cos(i\\theta)=\\cosh\\theta$, $\\sin(i\\theta)=i\\sinh\\theta$, $\\tan(i\\theta)=i\\tanh\\theta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-032",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-10-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 32,
+    "label": "LT 2018 · Q32"
+   },
+   "en": {
+    "q": "If $z=x+iy$, where $i=\\sqrt{-1}$, then $\\left|\\dfrac{z-3}{z+3}\\right|=2$ represents a circle, whose centre and radius, respectively, are",
+    "options": [
+     "$(5,0),\\ 5$",
+     "$(-5,0),\\ 2$",
+     "$(-5,0),\\ 3$",
+     "$(-5,0),\\ 4$"
+    ],
+    "explanation": "$|z-3|^2=4|z+3|^2$ gives $(x-3)^2+y^2=4[(x+3)^2+y^2]$.\n$$3x^2+3y^2+30x+27=0 \\Rightarrow x^2+y^2+10x+9=0$$\nCentre $(-5,0)$, radius $\\sqrt{25-9}=4$.",
+    "notes": [
+     "Sign of the centre and the radius are both wrong.",
+     "Radius is $\\sqrt{g^2-c}=\\sqrt{16}=4$, not 2.",
+     "$\\sqrt{25-9}=4$, not 3.",
+     "Correct: centre $(-5,0)$, radius 4."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.1 Complex numbers: basic definitions"
+    ],
+    "facts": [
+     "$|z-a|=k|z-b|$ ($k\\ne1$) is a circle (Apollonius); $k=1$ gives the perpendicular bisector."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-033",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 33,
+    "label": "LT 2018 · Q33"
+   },
+   "en": {
+    "q": "If $\\omega\\,(\\ne1)$ is a cube root of unity, then the value of $\\{(1-\\omega+\\omega^2)^5+(1+\\omega-\\omega^2)^5-32\\}$ is",
+    "options": [
+     "$0$",
+     "$-32$",
+     "$32$",
+     "$-64$"
+    ],
+    "explanation": "Since $1+\\omega+\\omega^2=0$: $1-\\omega+\\omega^2=-2\\omega$ and $1+\\omega-\\omega^2=-2\\omega^2$.\n$(-2\\omega)^5+(-2\\omega^2)^5=-32(\\omega^2+\\omega)=32$.\nSo the value is $32-32=0$.",
+    "notes": [
+     "Correct: the two powers add up to 32.",
+     "Sign slip: $-32(\\omega+\\omega^2)=+32$.",
+     "This is the sum of the two powers, before subtracting 32.",
+     "Comes from taking $\\omega+\\omega^2=1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "$1+\\omega+\\omega^2=0$, so $1-\\omega+\\omega^2=-2\\omega$ and $1+\\omega-\\omega^2=-2\\omega^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-034",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-10-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 34,
+    "label": "LT 2018 · Q34"
+   },
+   "en": {
+    "q": "The value of $\\sqrt{3-4i}$ is",
+    "options": [
+     "$2+i$",
+     "$1+i$",
+     "$1-i$",
+     "$2-i$"
+    ],
+    "explanation": "$(2-i)^2=4-4i+i^2=3-4i$. So $\\sqrt{3-4i}=\\pm(2-i)$, and $2-i$ is the option.",
+    "notes": [
+     "$(2+i)^2=3+4i$.",
+     "$(1+i)^2=2i$.",
+     "$(1-i)^2=-2i$.",
+     "Correct: $(2-i)^2=3-4i$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.5 Square root of a complex number"
+    ],
+    "facts": [
+     "Square each option: a quick test for $\\sqrt{a+ib}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-035",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-08",
+   "src": {
+    "paper": "lt-2018",
+    "n": 35,
+    "label": "LT 2018 · Q35"
+   },
+   "en": {
+    "q": "If $\\cos(x+iy)=\\cos\\alpha+i\\sin\\alpha$, then the value of $(\\cosh 2y+\\cos 2x)$ is",
+    "options": [
+     "$1$",
+     "$2$",
+     "$-2$",
+     "$\\sqrt2$"
+    ],
+    "explanation": "$\\cos(x+iy)=\\cos x\\cosh y-i\\sin x\\sinh y$, so $\\cos x\\cosh y=\\cos\\alpha$ and $\\sin x\\sinh y=-\\sin\\alpha$.\nSquaring and adding: $\\cos^2x\\cosh^2y+\\sin^2x\\sinh^2y=1$, which simplifies to $\\cos^2x+\\sinh^2y=1$.\n$\\cosh2y+\\cos2x=(1+2\\sinh^2y)+(2\\cos^2x-1)=2(\\sinh^2y+\\cos^2x)=2$.",
+    "notes": [
+     "This is $\\cos^2x+\\sinh^2y$, not the required sum.",
+     "Correct.",
+     "Impossible: $\\cosh2y\\ge1$ and $\\cos2x\\ge-1$, so the sum is never negative.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.8 Separation into real and imaginary parts"
+    ],
+    "facts": [
+     "$\\cos(x+iy)=\\cos x\\cosh y-i\\sin x\\sinh y$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-036",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 36,
+    "label": "LT 2018 · Q36"
+   },
+   "en": {
+    "q": "The three cube roots of $z=-8i$ are",
+    "options": [
+     "$2i,\\ -\\sqrt3-i,\\ \\sqrt3-i$",
+     "$-2i,\\ -\\sqrt3-i,\\ \\sqrt3-i$",
+     "$2i,\\ -\\sqrt3-i,\\ \\sqrt3+i$",
+     "$2i,\\ \\sqrt3-i,\\ -\\sqrt3+i$"
+    ],
+    "explanation": "$-8i=8e^{-i\\pi/2}$, so the roots are $2e^{i(-\\pi/6+2k\\pi/3)}$, $k=0,1,2$.\nAngles $-30^\\circ, 90^\\circ, 210^\\circ$ give $\\sqrt3-i,\\ 2i,\\ -\\sqrt3-i$.",
+    "notes": [
+     "Correct.",
+     "$(-2i)^3=8i$, not $-8i$.",
+     "$(\\sqrt3+i)^3=8i$.",
+     "$(-\\sqrt3+i)^3=8i$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "The $n$ cube roots lie on a circle, $120^\\circ$ apart; they add up to 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-037",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-10-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 37,
+    "label": "LT 2018 · Q37"
+   },
+   "en": {
+    "q": "If $\\mathrm{Im}\\left(\\dfrac{z-1}{2z+1}\\right)=-4$, then the locus of $z$ is",
+    "options": [
+     "an ellipse",
+     "a parabola",
+     "a straight line",
+     "a circle"
+    ],
+    "explanation": "With $z=x+iy$: $\\dfrac{(x-1)+iy}{(2x+1)+2iy}$ has imaginary part $\\dfrac{y(2x+1)-2y(x-1)}{(2x+1)^2+4y^2}=\\dfrac{3y}{(2x+1)^2+4y^2}$.\nSo $3y=-4[(2x+1)^2+4y^2]$, i.e. $16x^2+16y^2+16x+3y+4=0$: equal $x^2,y^2$ coefficients and no $xy$ term, a circle.",
+    "notes": [
+     "$x^2$ and $y^2$ have equal coefficients, so not an ellipse proper.",
+     "Both squares appear.",
+     "Only if the second-degree terms vanished.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.1 Complex numbers: basic definitions"
+    ],
+    "facts": [
+     "$x^2+y^2$ with equal coefficients and no $xy$ term means a circle."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-038",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 38,
+    "label": "LT 2018 · Q38"
+   },
+   "en": {
+    "q": "If $f(z)=(x^2+ay^2)+ibxy$ is a complex analytic function of $z=x+iy$, then the value of $a+b$ is",
+    "options": [
+     "$0$",
+     "$1$",
+     "$-1$",
+     "$2$"
+    ],
+    "explanation": "$u=x^2+ay^2$, $v=bxy$.\n$u_x=v_y$: $2x=bx\\Rightarrow b=2$. $u_y=-v_x$: $2ay=-by\\Rightarrow a=-1$.\nSo $a+b=1$.",
+    "notes": [
+     "",
+     "Correct: $a=-1$, $b=2$.",
+     "That is $a$ alone; a sign slip in $u_y=-v_x$ would give $a=1$, $a+b=3$.",
+     "This is $b$ alone."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Cauchy–Riemann: $u_x=v_y$, $u_y=-v_x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-039",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 39,
+    "label": "LT 2018 · Q39"
+   },
+   "en": {
+    "q": "Which one of the following is false?",
+    "options": [
+     "$f(z)=\\bar z$ is nowhere analytic.",
+     "$f(z)=z^2$ is analytic everywhere.",
+     "$f(z)=|z|^2$ is analytic at $z=0$.",
+     "$f(z)=e^z$ is analytic everywhere."
+    ],
+    "explanation": "For $|z|^2=x^2+y^2$: $u_x=2x$, $v_y=0$, $u_y=2y$, $v_x=0$; C–R hold only at $z=0$.\nSo $|z|^2$ is differentiable only at the single point 0 and analytic nowhere (analyticity needs a neighbourhood). Statement (c) is false.",
+    "notes": [
+     "True: C–R fail everywhere for $\\bar z$.",
+     "True: a polynomial is entire.",
+     "False: differentiable at 0 only, not analytic.",
+     "True: $e^z$ is entire."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Analytic at a point means differentiable in a whole neighbourhood of it."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-040",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-10-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 40,
+    "label": "LT 2018 · Q40"
+   },
+   "en": {
+    "q": "For $z\\in\\mathbb C$, the inequality $|z+i|>|z-i|$ is",
+    "options": [
+     "always true",
+     "never true",
+     "true for $\\mathrm{Re}\\,z>0$",
+     "true for $\\mathrm{Im}\\,z>0$"
+    ],
+    "explanation": "$|z+i|^2-|z-i|^2=(x^2+(y+1)^2)-(x^2+(y-1)^2)=4y$.\nSo the inequality holds exactly when $y=\\mathrm{Im}\\,z>0$: $z$ is nearer to $i$ than to $-i$.",
+    "notes": [
+     "Fails for $z=-i$.",
+     "Holds for $z=i$.",
+     "The real part does not enter: the difference is $4y$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.1 Complex numbers: basic definitions"
+    ],
+    "facts": [
+     "$|z-a|>|z-b|$ is the half-plane on $b$'s side of the perpendicular bisector of $ab$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-041",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 41,
+    "label": "LT 2018 · Q41"
+   },
+   "en": {
+    "q": "The value of $\\int_{-3}^{3}\\frac{x^2}{1+3^x}\\,dx$ is",
+    "options": [
+     "$\\dfrac13$",
+     "$\\dfrac19$",
+     "$3$",
+     "$9$"
+    ],
+    "explanation": "Replace $x$ by $-x$: $\\dfrac{x^2}{1+3^{-x}}=\\dfrac{3^x x^2}{1+3^x}$. Adding the two forms, $2I=\\int_{-3}^{3}x^2\\,dx=18$.\nSo $I=9$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: $I=\\int_0^3 x^2dx=9$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_{-a}^{a}\\dfrac{f(x)}{1+b^x}dx=\\int_0^a f(x)\\,dx$ for even $f$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-042",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-07-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 42,
+    "label": "LT 2018 · Q42"
+   },
+   "en": {
+    "q": "The area bounded by the curves $y=\\sin x$, $y=\\cos x$ and $y$-axis is",
+    "options": [
+     "$\\sqrt2+1$",
+     "$\\sqrt2-1$",
+     "$2(\\sqrt2-1)$",
+     "$\\dfrac{\\sqrt2+1}{2}$"
+    ],
+    "explanation": "The curves meet first at $x=\\pi/4$; between $0$ and $\\pi/4$, $\\cos x\\ge\\sin x$.\n$$\\int_0^{\\pi/4}(\\cos x-\\sin x)\\,dx=[\\sin x+\\cos x]_0^{\\pi/4}=\\sqrt2-1$$",
+    "notes": [
+     "Sign slip at the lower limit.",
+     "Correct.",
+     "Twice the area.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.5 Area under and between curves"
+    ],
+    "facts": [
+     "$\\sin x$ and $\\cos x$ cross at $\\pi/4$, where both equal $1/\\sqrt2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-043",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 43,
+    "label": "LT 2018 · Q43"
+   },
+   "en": {
+    "q": "If $\\lim_{x\\to2}\\frac{\\sqrt{ax+b}-3}{x-2}=\\frac12$, then the value of $a,\\ b$ will be",
+    "options": [
+     "$a=b=3$",
+     "$a\\ne b$",
+     "$a=0,\\ b=4$",
+     "$a=2,\\ b=1$"
+    ],
+    "explanation": "For a finite limit the numerator must vanish at 2: $\\sqrt{2a+b}=3$, so $2a+b=9$.\nThen the limit is the derivative $\\dfrac{a}{2\\sqrt{2a+b}}=\\dfrac a6=\\dfrac12$, so $a=3$, $b=3$.",
+    "notes": [
+     "Correct.",
+     "In fact $a=b$.",
+     "$2a+b=4\\ne9$.",
+     "$2a+b=5\\ne9$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "A finite limit of a $\\frac{?}{0}$ form forces the numerator to vanish too."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-044",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "lt-2018",
+    "n": 44,
+    "label": "LT 2018 · Q44"
+   },
+   "en": {
+    "q": "Consider the following statements: I. $y=|x|$ is differentiable at $x=0$. II. $y=x|x|$ is differentiable everywhere. Which of the above statements is/are true?",
+    "options": [
+     "Only I",
+     "Only II",
+     "Both I and II",
+     "Neither I nor II"
+    ],
+    "explanation": "I: the one-sided derivatives of $|x|$ at 0 are $-1$ and $1$; not differentiable. False.\nII: $x|x|$ is $x^2$ for $x\\ge0$ and $-x^2$ for $x<0$; its derivative $2|x|$ exists everywhere. True.",
+    "notes": [
+     "$|x|$ has a corner at 0.",
+     "Correct.",
+     "I is false.",
+     "II is true."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "$x|x|$ is differentiable everywhere with derivative $2|x|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-045",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 45,
+    "label": "LT 2018 · Q45"
+   },
+   "en": {
+    "q": "If $\\dfrac1u=\\sqrt{x^2+y^2+z^2}$, then $x\\dfrac{\\partial u}{\\partial x}+y\\dfrac{\\partial u}{\\partial y}+z\\dfrac{\\partial u}{\\partial z}$ is equal to",
+    "options": [
+     "$0$",
+     "$2u$",
+     "$-u$",
+     "$u^2$"
+    ],
+    "explanation": "$u=(x^2+y^2+z^2)^{-1/2}$ is homogeneous of degree $-1$.\nBy Euler's theorem the sum equals $(-1)u=-u$.",
+    "notes": [
+     "",
+     "Would need degree 2.",
+     "Correct: degree $-1$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.2 Partial differentiation and Euler's theorem"
+    ],
+    "facts": [
+     "Euler: $\\sum x\\,u_x=nu$ for $u$ homogeneous of degree $n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-046",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 46,
+    "label": "LT 2018 · Q46"
+   },
+   "en": {
+    "q": "The differential equation of the straight lines at a fixed distance $p$ from the origin is",
+    "options": [
+     "$(xy'-y)^2=p^2(1+y'^2)$",
+     "$(xy'+y)^2=p^2(1+y'^2)$",
+     "$(x-yy')^2=p^2(1+y'^2)$",
+     "$(x+yy')^2=p^2(1+y'^2)$"
+    ],
+    "explanation": "Such lines are $y=mx+c$ with $\\dfrac{|c|}{\\sqrt{1+m^2}}=p$.\nEliminate: $m=y'$, $c=y-xy'$, so $(y-xy')^2=p^2(1+y'^2)$, i.e. $(xy'-y)^2=p^2(1+y'^2)$.",
+    "notes": [
+     "Correct.",
+     "The intercept is $y-xy'$, not $y+xy'$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "For lines $y=mx+c$: $m=y'$ and $c=y-xy'$ (Clairaut form)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-047",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 47,
+    "label": "LT 2018 · Q47"
+   },
+   "en": {
+    "q": "The solution of the differential equation $y-x\\dfrac{dy}{dx}=a\\left(y^2+\\dfrac{dy}{dx}\\right)$ is",
+    "options": [
+     "$(x+a)(1-ay)=cy$",
+     "$(x+a)(1+ay)=cy$",
+     "$(x+a)(1+ay)=cx$",
+     "$(y+a)(1+ax)=cy$"
+    ],
+    "explanation": "Rearrange: $y-ay^2=(x+a)\\dfrac{dy}{dx}$, so $\\dfrac{dy}{y(1-ay)}=\\dfrac{dx}{x+a}$.\n$\\int\\left(\\dfrac1y+\\dfrac{a}{1-ay}\\right)dy=\\ln\\dfrac{y}{1-ay}=\\ln(x+a)+\\text{const}$.\nSo $y=k(x+a)(1-ay)$, i.e. $(x+a)(1-ay)=cy$.",
+    "notes": [
+     "Correct.",
+     "Sign of $ay$: the factor is $1-ay$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$\\dfrac{1}{y(1-ay)}=\\dfrac1y+\\dfrac{a}{1-ay}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-048",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 48,
+    "label": "LT 2018 · Q48"
+   },
+   "en": {
+    "q": "The value of $c$ in Lagrange's mean value theorem for $f(x)=x(x-1)$ in $[1,2]$ is",
+    "options": [
+     "$\\dfrac54$",
+     "$\\dfrac32$",
+     "$\\dfrac74$",
+     "$\\dfrac95$"
+    ],
+    "explanation": "$\\dfrac{f(2)-f(1)}{2-1}=\\dfrac{2-0}{1}=2$ and $f'(c)=2c-1$.\n$2c-1=2\\Rightarrow c=\\dfrac32$.",
+    "notes": [
+     "",
+     "Correct; for a quadratic $c$ is always the midpoint.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "For a quadratic, the Lagrange point $c$ is the midpoint of the interval."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-049",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 49,
+    "label": "LT 2018 · Q49"
+   },
+   "en": {
+    "q": "If $x=a(\\cos t+t\\sin t)$, $y=a(\\sin t-t\\cos t)$, then the value of $\\dfrac{d^2y}{dx^2}$ is",
+    "options": [
+     "$\\dfrac{t}{a}\\sec^3t$",
+     "$at\\sec^3t$",
+     "$\\dfrac1a\\dfrac{\\sec^3t}{t}$",
+     "$\\dfrac{a\\sec^3t}{t}$"
+    ],
+    "explanation": "$\\dfrac{dx}{dt}=at\\cos t$, $\\dfrac{dy}{dt}=at\\sin t$, so $\\dfrac{dy}{dx}=\\tan t$.\n$\\dfrac{d^2y}{dx^2}=\\dfrac{\\sec^2t}{dx/dt}=\\dfrac{\\sec^2t}{at\\cos t}=\\dfrac{\\sec^3t}{at}$.",
+    "notes": [
+     "$t$ belongs in the denominator.",
+     "",
+     "Correct.",
+     "$a$ belongs in the denominator."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "Second derivative from parameters: $\\dfrac{d^2y}{dx^2}=\\dfrac{d}{dt}\\left(\\dfrac{dy}{dx}\\right)\\Big/\\dfrac{dx}{dt}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-050",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 50,
+    "label": "LT 2018 · Q50"
+   },
+   "en": {
+    "q": "If $\\lim_{x\\to0}x\\sin\\frac1x=A$ and $\\lim_{x\\to\\infty}x\\sin\\frac1x=B$, then which of the following is true?",
+    "options": [
+     "$A=B=0$",
+     "$A=0$ and $B=\\infty$",
+     "$A=1$ and $B=\\infty$",
+     "$A=0$ and $B=1$"
+    ],
+    "explanation": "$|x\\sin(1/x)|\\le|x|\\to0$, so $A=0$.\nWith $t=1/x\\to0$: $x\\sin(1/x)=\\dfrac{\\sin t}{t}\\to1$, so $B=1$.",
+    "notes": [
+     "$B$ is the standard limit $\\frac{\\sin t}{t}\\to1$.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "Bounded times a quantity tending to 0 tends to 0 (sandwich)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-051",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 51,
+    "label": "LT 2018 · Q51"
+   },
+   "en": {
+    "q": "The solution of the differential equation $(x+2y^3)\\dfrac{dy}{dx}=y$, $y(0)=1$ is",
+    "options": [
+     "$x+y-y^3=0$",
+     "$x-y+y^3=0$",
+     "$-x+2y-2y^3=0$",
+     "$x+2y-2y^3=0$"
+    ],
+    "explanation": "Treat $x$ as a function of $y$: $\\dfrac{dx}{dy}-\\dfrac{x}{y}=2y^2$, linear with integrating factor $\\dfrac1y$.\n$\\dfrac{d}{dy}\\left(\\dfrac xy\\right)=2y\\Rightarrow \\dfrac xy=y^2+C$. At $y=1$, $x=0$: $C=-1$.\nSo $x=y^3-y$, i.e. $x+y-y^3=0$.",
+    "notes": [
+     "Correct.",
+     "Sign of $x$ reversed: $x=y-y^3$ does not satisfy the equation.",
+     "Passes through $(0,1)$, but $x=2y-2y^3$ does not satisfy the equation.",
+     "$x=2y^3-2y$ does not satisfy the equation."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "If $dy/dx$ has $y^n$ terms with $x$ linear, solve for $x$ as a function of $y$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-052",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 52,
+    "label": "LT 2018 · Q52"
+   },
+   "en": {
+    "q": "$\\lim_{x\\to0^+}\\frac{e^{1/x}-1}{e^{1/x}+1}$ is equal to",
+    "options": [
+     "$-1$",
+     "$1$",
+     "$0$",
+     "$2$"
+    ],
+    "explanation": "As $x\\to0^+$, $e^{1/x}\\to\\infty$. Divide by $e^{1/x}$: $\\dfrac{1-e^{-1/x}}{1+e^{-1/x}}\\to\\dfrac{1-0}{1+0}=1$.",
+    "notes": [
+     "This is the left-hand limit ($x\\to0^-$).",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "$e^{1/x}\\to\\infty$ as $x\\to0^+$ and $\\to0$ as $x\\to0^-$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-053",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 53,
+    "label": "LT 2018 · Q53"
+   },
+   "en": {
+    "q": "The function $\\phi(x)=(x-a)^m(x-b)^n$ satisfies the conditions of Rolle's theorem, when",
+    "options": [
+     "$m,n$ are positive integers",
+     "$m,n$ are positive integers and $a<b$",
+     "$a<b$",
+     "$m>n$"
+    ],
+    "explanation": "For positive integers $m,n$, $\\phi$ is a polynomial: continuous and differentiable everywhere, and $\\phi(a)=\\phi(b)=0$.\nRolle's theorem is stated on $[a,b]$, which needs $a<b$. Both conditions together: option (b). Option (a) leaves out $a<b$: for $a=b$ there is no interval at all, and for $a>b$ the theorem has to be applied on $[b,a]$ instead.",
+    "notes": [
+     "Enough for the function, but the interval $[a,b]$ also needs $a<b$.",
+     "Correct: polynomial, equal end values on $[a,b]$.",
+     "With $a<b$ alone, $m,n$ could be negative or fractional, and $\\phi$ may then be undefined or unbounded on $[a,b]$.",
+     "Irrelevant."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "Rolle: continuous on $[a,b]$, differentiable on $(a,b)$, $f(a)=f(b)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-054",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 54,
+    "label": "LT 2018 · Q54"
+   },
+   "en": {
+    "q": "Let $f:\\mathbb R\\to\\mathbb R$ be a differentiable function such that $f'(x^2)=4x^2-1$ for $x>0$ and $f(1)=1$. Then $f(4)$ is",
+    "options": [
+     "$64$",
+     "$30$",
+     "$42$",
+     "$28$"
+    ],
+    "explanation": "Put $t=x^2$: $f'(t)=4t-1$ for $t>0$.\n$f(4)=f(1)+\\int_1^4(4t-1)\\,dt=1+[2t^2-t]_1^4=1+28-1=28$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$f(b)=f(a)+\\int_a^b f'(t)\\,dt$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-055",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 55,
+    "label": "LT 2018 · Q55"
+   },
+   "en": {
+    "q": "If $y=x^{x^{x^{\\cdots\\text{to infinity}}}}$, then $x\\dfrac{dy}{dx}$ is equal to",
+    "options": [
+     "$\\dfrac{y^2}{y-x\\log_e x}$",
+     "$\\dfrac{y^2}{x-y\\log_e x}$",
+     "$\\dfrac{y^2}{1-y\\log_e x}$",
+     "$\\dfrac{y^2}{y\\log_e x-1}$"
+    ],
+    "explanation": "$y=x^y$, so $\\ln y=y\\ln x$.\nDifferentiate: $\\dfrac{y'}{y}=y'\\ln x+\\dfrac yx$, so $y'\\left(\\dfrac1y-\\ln x\\right)=\\dfrac yx$.\nHence $x\\,y'=\\dfrac{y^2}{1-y\\ln x}$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     "Sign of the denominator reversed."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "An infinite power tower satisfies $y=x^y$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-056",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 56,
+    "label": "LT 2018 · Q56"
+   },
+   "en": {
+    "q": "If $x=t$, $y=\\log_e(\\cos t)$, $t\\in\\left[0,\\dfrac\\pi4\\right]$, then the value of $\\int_0^{\\pi/4}\\sqrt{\\left(\\frac{dx}{dt}\\right)^2+\\left(\\frac{dy}{dt}\\right)^2}\\,dt$ is",
+    "options": [
+     "$\\log_e(\\sqrt2+1)$",
+     "$\\log_e(\\sqrt2-1)$",
+     "$\\sqrt2\\log_e(\\sqrt2+1)$",
+     "$\\sqrt2\\log_e(\\sqrt2-1)$"
+    ],
+    "explanation": "$\\dfrac{dx}{dt}=1$, $\\dfrac{dy}{dt}=-\\tan t$, so the integrand is $\\sqrt{1+\\tan^2t}=\\sec t$.\n$\\int_0^{\\pi/4}\\sec t\\,dt=[\\ln(\\sec t+\\tan t)]_0^{\\pi/4}=\\ln(\\sqrt2+1)$.",
+    "notes": [
+     "Correct (arc length of $y=\\ln\\cos x$).",
+     "$\\ln(\\sqrt2-1)<0$; a length cannot be negative.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int\\sec t\\,dt=\\ln|\\sec t+\\tan t|+C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-057",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 57,
+    "label": "LT 2018 · Q57"
+   },
+   "en": {
+    "q": "The value of $\\lim_{n\\to\\infty}\\left[\\frac1{n+1}+\\frac1{n+2}+\\cdots+\\frac1{6n}\\right]$ is",
+    "options": [
+     "$0$",
+     "$\\log_e2$",
+     "$\\log_e3$",
+     "$\\log_e6$"
+    ],
+    "explanation": "The sum is $\\sum_{r=1}^{5n}\\frac1n\\cdot\\frac{1}{1+r/n}\\to\\int_0^5\\frac{dx}{1+x}=\\ln6$.",
+    "notes": [
+     "There are $5n$ terms, each about $1/n$; the sum does not vanish.",
+     "This is the limit up to $\\frac1{2n}$.",
+     "This is the limit up to $\\frac1{3n}$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.5 Series"
+    ],
+    "facts": [
+     "$\\sum_{r=1}^{kn}\\frac{1}{n+r}\\to\\ln(k+1)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-058",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 58,
+    "label": "LT 2018 · Q58"
+   },
+   "en": {
+    "q": "$\\lim_{n\\to\\infty}\\left(1+\\sin\\frac an\\right)^n$ is equal to",
+    "options": [
+     "$e$",
+     "$e^a$",
+     "$e^{2a}$",
+     "$0$"
+    ],
+    "explanation": "A $1^\\infty$ form: the limit is $e^{L}$ with $L=\\lim n\\sin\\dfrac an=\\lim a\\cdot\\dfrac{\\sin(a/n)}{a/n}=a$.\nSo the limit is $e^a$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "$1^\\infty$ form: $\\lim f^g=e^{\\lim g(f-1)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-059",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 59,
+    "label": "LT 2018 · Q59"
+   },
+   "en": {
+    "q": "The value of $\\int_0^{1000}e^{x-[x]}\\,dx$ is",
+    "options": [
+     "$e^{1000}-1$",
+     "$\\dfrac{e^{1000}-1}{e-1}$",
+     "$1000(e-1)$",
+     "$\\dfrac{e-1}{1000}$"
+    ],
+    "explanation": "$x-[x]$ has period 1, so the integral is $1000\\int_0^1e^x\\,dx=1000(e-1)$.",
+    "notes": [
+     "Ignores $[x]$.",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "For period $T$: $\\int_0^{nT}f=n\\int_0^Tf$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-060",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 60,
+    "label": "LT 2018 · Q60"
+   },
+   "en": {
+    "q": "The value of $\\int x^2e^x\\,dx$ is",
+    "options": [
+     "$2e^x+c$",
+     "$(x^2+2)e^x+c$",
+     "$(x^2+2x+2)e^x+c$",
+     "$(x^2-2x+2)e^x+c$"
+    ],
+    "explanation": "By parts twice: $\\int x^2e^x\\,dx=x^2e^x-2\\int xe^x\\,dx=x^2e^x-2(x-1)e^x=(x^2-2x+2)e^x+c$.",
+    "notes": [
+     "",
+     "",
+     "Sign of the middle term: differentiate to check.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "$\\int p(x)e^x\\,dx=(p-p'+p''-\\cdots)e^x+C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-061",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 61,
+    "label": "LT 2018 · Q61"
+   },
+   "en": {
+    "q": "The value of $\\int_0^\\infty\\frac{x\\,dx}{(1+x)(1+x^2)}$ is",
+    "options": [
+     "$\\dfrac\\pi2$",
+     "$\\dfrac\\pi4$",
+     "$\\dfrac\\pi3$",
+     "$\\dfrac\\pi8$"
+    ],
+    "explanation": "$\\dfrac{x}{(1+x)(1+x^2)}=-\\dfrac{1}{2(1+x)}+\\dfrac{x+1}{2(1+x^2)}$.\nAntiderivative: $\\dfrac14\\ln\\dfrac{1+x^2}{(1+x)^2}+\\dfrac12\\tan^{-1}x$. The log term is 0 at both ends, so the value is $\\dfrac12\\cdot\\dfrac\\pi2=\\dfrac\\pi4$.",
+    "notes": [
+     "Forgets the factor $\\frac12$ on $\\tan^{-1}x$.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "Over $(0,\\infty)$, $x\\mapsto1/x$ shows $\\int\\frac{x\\,dx}{(1+x)(1+x^2)}=\\int\\frac{dx}{(1+x)(1+x^2)}$, and they add to $\\pi/2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-062",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-06-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 62,
+    "label": "LT 2018 · Q62"
+   },
+   "en": {
+    "q": "If $u=(x^2+y^2)^{\\frac12}$ and $x^3+y^3+3axy=5a^3$, then the value of $\\dfrac{du}{dx}$ at $(a,a)$ is",
+    "options": [
+     "$a$",
+     "$a^2$",
+     "$3a^2$",
+     "None of the above"
+    ],
+    "explanation": "From the curve: $3x^2+3y^2y'+3ay+3axy'=0$, so $y'=-\\dfrac{x^2+ay}{y^2+ax}=-1$ at $(a,a)$.\n$\\dfrac{du}{dx}=\\dfrac{x+yy'}{u}=\\dfrac{a-a}{a\\sqrt2}=0$, which is not among (a)–(c).\nThe booklet prints $5a^2$; the point $(a,a)$ lies on the curve only with $5a^3$. The slope $y'$ at $(a,a)$ does not involve the constant, so the answer is 0 either way.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: $du/dx=0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.2 Partial differentiation and Euler's theorem"
+    ],
+    "facts": [
+     "Total derivative: $\\dfrac{du}{dx}=u_x+u_y\\dfrac{dy}{dx}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-063",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 63,
+    "label": "LT 2018 · Q63"
+   },
+   "en": {
+    "q": "A solution of the differential equation $\\sqrt{1-x^2}\\,dy+\\sqrt{1-y^2}\\,dx=0$ $(|x|<1,\\ |y|<1)$ is",
+    "options": [
+     "$x\\sqrt{1-y^2}+y\\sqrt{1-x^2}=c$",
+     "$x\\sin^{-1}y+y\\sin^{-1}x=c$",
+     "$\\dfrac{x^2}{\\sqrt{1-x^2}}+\\dfrac{y^2}{\\sqrt{1-y^2}}=c$",
+     "$x\\sqrt{1-x^2}+y\\sqrt{1-y^2}=c$"
+    ],
+    "explanation": "Separate: $\\dfrac{dy}{\\sqrt{1-y^2}}+\\dfrac{dx}{\\sqrt{1-x^2}}=0$, so $\\sin^{-1}x+\\sin^{-1}y=k$.\nTaking sine: $\\sin(\\sin^{-1}x+\\sin^{-1}y)=x\\sqrt{1-y^2}+y\\sqrt{1-x^2}=c$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "The square roots are swapped."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$\\sin^{-1}x+\\sin^{-1}y=\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}+y\\sqrt{1-x^2}\\right)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-064",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-06-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 64,
+    "label": "LT 2018 · Q64"
+   },
+   "en": {
+    "q": "If $u=\\log\\dfrac{x^3+y^3}{x+y}$, then the value of $x\\dfrac{\\partial u}{\\partial x}+y\\dfrac{\\partial u}{\\partial y}$ is",
+    "options": [
+     "$u$",
+     "$2$",
+     "$0$",
+     "$u+1$"
+    ],
+    "explanation": "$e^u=\\dfrac{x^3+y^3}{x+y}$ is homogeneous of degree 2.\nFor $u=\\log f$ with $f$ of degree $n$: $xu_x+yu_y=n=2$.",
+    "notes": [
+     "$u$ itself is not homogeneous.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.2 Partial differentiation and Euler's theorem"
+    ],
+    "facts": [
+     "If $f(u)$ is homogeneous of degree $n$: $xu_x+yu_y=n\\,\\dfrac{f(u)}{f'(u)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-065",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 65,
+    "label": "LT 2018 · Q65"
+   },
+   "en": {
+    "q": "If $x+2y=8$, then the maximum value of $xy$ is",
+    "options": [
+     "$20$",
+     "$16$",
+     "$24$",
+     "$8$"
+    ],
+    "explanation": "$xy=(8-2y)y=8y-2y^2$, maximum at $y=2$: $16-8=8$ (with $x=4$).\nOr AM–GM: $x\\cdot2y\\le\\left(\\frac{x+2y}{2}\\right)^2=16$, so $xy\\le8$.",
+    "notes": [
+     "",
+     "This is the maximum of $x\\cdot2y$, not $xy$.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "With $x+2y$ fixed, $xy$ is largest when $x=2y$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-066",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 66,
+    "label": "LT 2018 · Q66"
+   },
+   "en": {
+    "q": "The equation of the tangent at $\\theta=\\dfrac\\pi2$ to the curve $x=a(\\theta+\\sin\\theta)$, $y=a(1+\\cos\\theta)$ is",
+    "options": [
+     "$x-y=a\\left(\\dfrac\\pi2+2\\right)$",
+     "$x-y=\\dfrac{a\\pi}2$",
+     "$x+y=a\\left(\\dfrac\\pi2+2\\right)$",
+     "$x+y=\\dfrac{a\\pi}{2}$"
+    ],
+    "explanation": "$\\dfrac{dx}{d\\theta}=a(1+\\cos\\theta)=a$, $\\dfrac{dy}{d\\theta}=-a\\sin\\theta=-a$, so the slope is $-1$.\nPoint: $\\left(a(\\frac\\pi2+1),\\ a\\right)$. Tangent: $y-a=-\\left(x-a(\\frac\\pi2+1)\\right)$, i.e. $x+y=a\\left(\\frac\\pi2+2\\right)$.",
+    "notes": [
+     "Slope is $-1$, not $+1$.",
+     "",
+     "Correct.",
+     "Forgets the $+a$ terms of the point."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.4 Tangents and normals"
+    ],
+    "facts": [
+     "Parametric slope: $\\dfrac{dy}{dx}=\\dfrac{dy/d\\theta}{dx/d\\theta}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-067",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-07-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 67,
+    "label": "LT 2018 · Q67"
+   },
+   "en": {
+    "q": "The area bounded by the curves $y=|x|-1$ and $y=-|x|+1$ is",
+    "options": [
+     "$1$",
+     "$2$",
+     "$2\\sqrt2$",
+     "$4$"
+    ],
+    "explanation": "The two curves form a square with vertices $(\\pm1,0)$ and $(0,\\pm1)$.\nIts diagonals are 2 and 2, so the area is $\\frac12\\cdot2\\cdot2=2$.",
+    "notes": [
+     "Half the square.",
+     "Correct.",
+     "Twice the side $\\sqrt2$; the area is side$^2=2$.",
+     "Area of the circumscribing square $[-1,1]^2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.5 Area under and between curves"
+    ],
+    "facts": [
+     "Area of a rhombus $=\\frac12d_1d_2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-068",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 68,
+    "label": "LT 2018 · Q68"
+   },
+   "en": {
+    "q": "The slope of the tangent at the point $P(x,y)$ on a curve is $-\\dfrac{y+3}{x+2}$. If the curve passes through the origin, then the equation of the curve is",
+    "options": [
+     "$xy+2y+3x=0$",
+     "$x^2-y^2+2x-3y=0$",
+     "$xy+6x=0$",
+     "$xy-2y+3x=0$"
+    ],
+    "explanation": "$\\dfrac{dy}{y+3}=-\\dfrac{dx}{x+2}$ gives $(x+2)(y+3)=C$. Through $(0,0)$: $C=6$.\nSo $xy+3x+2y+6=6$, i.e. $xy+2y+3x=0$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "Sign of $2y$ is wrong."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$\\dfrac{dy}{dx}=-\\dfrac{y+b}{x+a}$ gives the hyperbola $(x+a)(y+b)=C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-069",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 69,
+    "label": "LT 2018 · Q69"
+   },
+   "en": {
+    "q": "If $y(x)$ is a solution of the differential equation $\\dfrac{dy}{dx}+2xy=x$, $y(0)=0$ then $\\lim_{x\\to\\infty}y(x)$ is",
+    "options": [
+     "$-\\dfrac12$",
+     "$-1$",
+     "$\\dfrac12$",
+     "$1$"
+    ],
+    "explanation": "Integrating factor $e^{x^2}$: $ye^{x^2}=\\int xe^{x^2}dx=\\frac12e^{x^2}+C$. $y(0)=0$ gives $C=-\\frac12$.\nSo $y=\\frac12-\\frac12e^{-x^2}\\to\\frac12$.",
+    "notes": [
+     "The limit is $+\\frac12$: the $C$ term carries $e^{-x^2}\\to0$.",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Linear DE $y'+Py=Q$: multiply by $e^{\\int P\\,dx}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-070",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 70,
+    "label": "LT 2018 · Q70"
+   },
+   "en": {
+    "q": "If $y=y(x)$ and $\\dfrac{2+\\sin x}{y+1}\\left(\\dfrac{dy}{dx}\\right)=-\\cos x$, $y(0)=1$, then $y\\left(\\dfrac\\pi2\\right)$ is equal to",
+    "options": [
+     "$1$",
+     "$\\dfrac23$",
+     "$-\\dfrac13$",
+     "$\\dfrac13$"
+    ],
+    "explanation": "$\\dfrac{dy}{y+1}=-\\dfrac{\\cos x\\,dx}{2+\\sin x}$, so $\\ln(y+1)=-\\ln(2+\\sin x)+k$, i.e. $(y+1)(2+\\sin x)=C$.\n$y(0)=1$: $C=4$. At $\\frac\\pi2$: $(y+1)\\cdot3=4$, so $y=\\frac13$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|+C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-071",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 71,
+    "label": "LT 2018 · Q71"
+   },
+   "en": {
+    "q": "The mean weight of 9 items is 15 kg. If one more item is added, the mean weight becomes 16 kg. Then the weight of the 10th item is",
+    "options": [
+     "35 kg",
+     "30 kg",
+     "25 kg",
+     "20 kg"
+    ],
+    "explanation": "Total of 9 items $=9\\times15=135$ kg; total of 10 items $=10\\times16=160$ kg.\nThe 10th item weighs $160-135=25$ kg.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "New item $=$ new total $-$ old total; shortcut: $16+9\\times(16-15)=25$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-073",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-16-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 73,
+    "label": "LT 2018 · Q73"
+   },
+   "en": {
+    "q": "A coin is thrown 6 times. The probability of getting exactly four heads is",
+    "options": [
+     "$\\dfrac14$",
+     "$\\dfrac34$",
+     "$\\dfrac{5}{16}$",
+     "$\\dfrac{15}{64}$"
+    ],
+    "explanation": "Binomial with $n=6$, $p=\\frac12$: $P(X=4)=\\binom64\\left(\\frac12\\right)^6=\\dfrac{15}{64}$.",
+    "notes": [
+     "",
+     "",
+     "This is $P(X=3)=20/64$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.5 Bernoulli trials and the binomial distribution"
+    ],
+    "facts": [
+     "For a fair coin, $P(X=r)=\\binom nr/2^n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-074",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-16-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 74,
+    "label": "LT 2018 · Q74"
+   },
+   "en": {
+    "q": "A bag contains 8 red and 5 white balls. Three balls are drawn at random. The probability that one ball is red and two balls are white, is",
+    "options": [
+     "$\\dfrac{40}{143}$",
+     "$\\dfrac{80}{146}$",
+     "$\\dfrac{10}{296}$",
+     "$\\dfrac{5}{286}$"
+    ],
+    "explanation": "Favourable: $\\binom81\\binom52=8\\times10=80$. Total: $\\binom{13}{3}=286$.\nProbability $=\\dfrac{80}{286}=\\dfrac{40}{143}$.",
+    "notes": [
+     "Correct.",
+     "Wrong denominator: $\\binom{13}{3}=286$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Probability",
+     "16.1 Basic probability and the addition theorem"
+    ],
+    "facts": [
+     "Drawing without order: probability $=\\dfrac{\\text{product of }\\binom{}{}\\text{'s}}{\\binom{N}{r}}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-075",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 75,
+    "label": "LT 2018 · Q75"
+   },
+   "en": {
+    "q": "The mean of 1, 3, 4, 5, 7, 4 is $n$. The numbers 3, 2, 2, 4, 3, $p$, 3 have mean $n-1$ and median $q$. Then $p+q$ is",
+    "options": [
+     "$6$",
+     "$4$",
+     "$7$",
+     "$5$"
+    ],
+    "explanation": "$n=\\frac{24}{6}=4$. Second set: $\\frac{17+p}{7}=3$, so $p=4$.\nOrdered: 2, 2, 3, 3, 3, 4, 4; the median (4th value) is $q=3$. So $p+q=7$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "For an odd number $N$ of values, the median is the $\\frac{N+1}{2}$th value in order."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-076",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "lt-2018",
+    "n": 76,
+    "label": "LT 2018 · Q76"
+   },
+   "en": {
+    "q": "If a hyperbola, whose parametric equations are $x=ct$, $y=\\dfrac ct$, meets any circle with centre at $(0,0)$ in four points, determined by the parametric values $t_1,t_2,t_3$ and $t_4$, then the value of $t_1t_2t_3t_4$ is",
+    "options": [
+     "$c^2$",
+     "$-c^2$",
+     "$-1$",
+     "$1$"
+    ],
+    "explanation": "Put the point in $x^2+y^2=r^2$: $c^2t^2+\\dfrac{c^2}{t^2}=r^2$, i.e. $c^2t^4-r^2t^2+c^2=0$.\nThe product of the four roots is $\\dfrac{c^2}{c^2}=1$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "For $xy=c^2$ and a circle centred at the origin, $t_1t_2t_3t_4=1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-077",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 77,
+    "label": "LT 2018 · Q77"
+   },
+   "en": {
+    "q": "The product of the perpendiculars drawn from the foci of an ellipse $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$ on any tangent to it, is",
+    "options": [
+     "$a^2$",
+     "$b^2$",
+     "$-1$",
+     "$2$"
+    ],
+    "explanation": "Tangent $y=mx+\\sqrt{a^2m^2+b^2}$, foci $(\\pm ae,0)$.\nProduct $=\\dfrac{(a^2m^2+b^2)-a^2e^2m^2}{1+m^2}=\\dfrac{b^2m^2+b^2}{1+m^2}=b^2$ (using $a^2-a^2e^2=b^2$).",
+    "notes": [
+     "That is the product when the major axis is along the $y$-axis ($b>a$).",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.6 Ellipse"
+    ],
+    "facts": [
+     "Product of focal perpendiculars on any tangent of an ellipse $=b^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-078",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 78,
+    "label": "LT 2018 · Q78"
+   },
+   "en": {
+    "q": "Let $y=mx+c$ be the equation of normal to the parabola $y^2=4ax$ at $(am^2,-2am)$. Then $c$ is equal to",
+    "options": [
+     "$am^3$",
+     "$-2am+am^3$",
+     "$2am+am^3$",
+     "$-2am-am^3$"
+    ],
+    "explanation": "The point is $(at^2,2at)$ with $t=-m$. The normal there is $y=-tx+2at+at^3$.\nWith $t=-m$: $y=mx-2am-am^3$, so $c=-2am-am^3$.",
+    "notes": [
+     "",
+     "",
+     "Sign error: correct for the point $(am^2,2am)$ with slope $-m$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "Normal of $y^2=4ax$ in slope form: $y=mx-2am-am^3$, foot $(am^2,-2am)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-079",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 79,
+    "label": "LT 2018 · Q79"
+   },
+   "en": {
+    "q": "If the sum of the slopes of the lines $x^2-2\\lambda xy-7y^2=0$ is four times their product, then the value of $\\lambda$ is",
+    "options": [
+     "$-1$",
+     "$2$",
+     "$-2$",
+     "$1$"
+    ],
+    "explanation": "With $y=mx$: $7m^2+2\\lambda m-1=0$. Sum of slopes $=-\\dfrac{2\\lambda}{7}$, product $=-\\dfrac17$.\n$-\\dfrac{2\\lambda}{7}=-\\dfrac47\\Rightarrow\\lambda=2$.",
+    "notes": [
+     "",
+     "Correct.",
+     "Sign slip in the sum of slopes.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.2 Pair of straight lines"
+    ],
+    "facts": [
+     "For $ax^2+2hxy+by^2=0$: $m_1+m_2=-\\dfrac{2h}{b}$, $m_1m_2=\\dfrac ab$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-080",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "lt-2018",
+    "n": 80,
+    "label": "LT 2018 · Q80"
+   },
+   "en": {
+    "q": "The distance between the foci of a hyperbola is 16 units and its eccentricity is $\\sqrt2$. Its equation is",
+    "options": [
+     "$x^2-y^2=32$",
+     "$2x^2-y^2=32$",
+     "$x^2-2y^2=32$",
+     "$3x^2-3y^2=32$"
+    ],
+    "explanation": "$2ae=16$ and $e=\\sqrt2$, so $a=4\\sqrt2$, $a^2=32$.\n$b^2=a^2(e^2-1)=32$. Equation: $x^2-y^2=32$.",
+    "notes": [
+     "Correct (rectangular hyperbola).",
+     "$a^2\\ne b^2$ here, but $e=\\sqrt2$ needs $a=b$.",
+     "Gives $e=\\sqrt{3/2}$.",
+     "Rectangular, but $a^2=32/3$, foci too close."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "$e=\\sqrt2$ exactly when the hyperbola is rectangular ($a=b$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-081",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "lt-2018",
+    "n": 81,
+    "label": "LT 2018 · Q81"
+   },
+   "en": {
+    "q": "For what values of $k$, the line $y=kx+2$ will be tangent to the conic $4x^2-9y^2=36$?",
+    "options": [
+     "$\\pm\\dfrac23$",
+     "$\\pm\\dfrac{2\\sqrt2}{3}$",
+     "$\\pm\\dfrac89$",
+     "$\\pm\\dfrac{4\\sqrt2}{3}$"
+    ],
+    "explanation": "The conic is $\\dfrac{x^2}{9}-\\dfrac{y^2}{4}=1$. Tangency of $y=mx+c$: $c^2=a^2m^2-b^2$.\n$4=9k^2-4\\Rightarrow k^2=\\dfrac89\\Rightarrow k=\\pm\\dfrac{2\\sqrt2}{3}$.",
+    "notes": [
+     "",
+     "Correct.",
+     "This is $k^2$, not $k$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "$y=mx+c$ touches $\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$ iff $c^2=a^2m^2-b^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-082",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 82,
+    "label": "LT 2018 · Q82"
+   },
+   "en": {
+    "q": "The locus of the centres of circles, that passes through the origin and cuts off a length 6 from the line $y=4$, is",
+    "options": [
+     "$x^2-8y+25=0$",
+     "$x^2-8y-25=0$",
+     "$x^2+8y-25=0$",
+     "None of the above"
+    ],
+    "explanation": "Centre $(h,k)$, radius$^2=h^2+k^2$ (through the origin). Distance to $y=4$ is $|k-4|$; half-chord 3.\n$h^2+k^2=9+(k-4)^2\\Rightarrow h^2+8k-25=0$. Locus: $x^2+8y-25=0$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "Chord length $=2\\sqrt{r^2-d^2}$, $d$ the distance of the centre from the line."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-083",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-13-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 83,
+    "label": "LT 2018 · Q83"
+   },
+   "en": {
+    "q": "The image of the point $(3,5,7)$ in the plane $2x+y+z=6$ is",
+    "options": [
+     "$(5,1,3)$",
+     "$(5,-1,3)$",
+     "$(5,1,-3)$",
+     "$(-5,1,3)$"
+    ],
+    "explanation": "$\\dfrac{x-3}{2}=\\dfrac{y-5}{1}=\\dfrac{z-7}{1}=-2\\cdot\\dfrac{2(3)+5+7-6}{2^2+1^2+1^2}=-4$.\nImage: $(3-8,\\ 5-4,\\ 7-4)=(-5,1,3)$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.2 The plane"
+    ],
+    "facts": [
+     "Image in $ax+by+cz+d=0$: $\\frac{x-x_1}{a}=\\frac{y-y_1}{b}=\\frac{z-z_1}{c}=\\frac{-2(ax_1+by_1+cz_1+d)}{a^2+b^2+c^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-084",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 84,
+    "label": "LT 2018 · Q84"
+   },
+   "en": {
+    "q": "The direction cosines of a line segment whose projections on the coordinate axes are $-6,3,2$, are",
+    "options": [
+     "$-\\dfrac67,\\dfrac37,\\dfrac27$",
+     "$\\dfrac67,\\dfrac37,\\dfrac27$",
+     "$\\dfrac67,-\\dfrac37,\\dfrac27$",
+     "None of the above"
+    ],
+    "explanation": "Length $=\\sqrt{36+9+4}=7$. Projection on an axis $=$ length $\\times$ cosine, so the direction cosines are $-\\frac67,\\frac37,\\frac27$.",
+    "notes": [
+     "Correct.",
+     "The sign of the $x$-projection is lost.",
+     "Signs swapped.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "Projections on the axes are $l\\cdot L,\\ m\\cdot L,\\ n\\cdot L$ for a segment of length $L$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-085",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-13-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 85,
+    "label": "LT 2018 · Q85"
+   },
+   "en": {
+    "q": "If the lines $\\dfrac{x-2}{3}=\\dfrac{y-3}{4}=\\dfrac{z-4}{5}$ and $\\dfrac{x-1}{a}=\\dfrac{y-2}{3}=\\dfrac{z-3}{4}$ are coplanar, then $a$ is equal to",
+    "options": [
+     "$1$",
+     "$2$",
+     "$3$",
+     "$4$"
+    ],
+    "explanation": "Coplanar iff $\\begin{vmatrix}1&1&1\\\\3&4&5\\\\a&3&4\\end{vmatrix}=0$ (first row: $(2,3,4)-(1,2,3)$).\nExpanding: $1(16-15)-1(12-5a)+1(9-4a)=a-2=0$, so $a=2$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.2 The plane"
+    ],
+    "facts": [
+     "Two lines are coplanar iff $[\\vec a_2-\\vec a_1,\\ \\vec b_1,\\ \\vec b_2]=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-086",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 86,
+    "label": "LT 2018 · Q86"
+   },
+   "en": {
+    "q": "The length of perpendicular from $(1,2,3)$ to the line $\\dfrac{x-6}{3}=\\dfrac{y-7}{2}=\\dfrac{z-7}{-2}$ is",
+    "options": [
+     "$3$",
+     "$\\sqrt{17}$",
+     "$7$",
+     "$\\sqrt{20}$"
+    ],
+    "explanation": "From $P(1,2,3)$ to $A(6,7,7)$: $\\vec{PA}=(5,5,4)$, $|\\vec{PA}|^2=66$.\nProjection on $(3,2,-2)$: $\\dfrac{15+10-8}{\\sqrt{17}}=\\sqrt{17}$.\nDistance $=\\sqrt{66-17}=7$. (Foot: $(3,5,9)$.)",
+    "notes": [
+     "",
+     "This is the projection of $\\vec{PA}$ on the line, not the distance.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "Distance from a point to a line $=\\sqrt{|\\vec{PA}|^2-(\\text{projection on the line})^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-087",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 87,
+    "label": "LT 2018 · Q87"
+   },
+   "en": {
+    "q": "If $\\cos\\alpha,\\cos\\beta,\\cos\\gamma$ are the direction cosines of a straight line, then $(\\sin^2\\alpha+\\sin^2\\beta+\\sin^2\\gamma)$ is equal to",
+    "options": [
+     "$0$",
+     "$1$",
+     "$3$",
+     "$2$"
+    ],
+    "explanation": "$\\sum\\sin^2=3-\\sum\\cos^2=3-1=2$.",
+    "notes": [
+     "",
+     "This is $\\sum\\cos^2$.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "$\\cos^2\\alpha+\\cos^2\\beta+\\cos^2\\gamma=1$, so $\\sum\\sin^2=2$ and $\\sum\\cos2\\alpha=-1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-088",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-13-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 88,
+    "label": "LT 2018 · Q88"
+   },
+   "en": {
+    "q": "The radius of the sphere $x^2+y^2+z^2-x-y-z=0$ is",
+    "options": [
+     "$\\dfrac32$",
+     "$\\dfrac{\\sqrt3}{2}$",
+     "$\\sqrt{\\dfrac32}$",
+     "$\\sqrt3$"
+    ],
+    "explanation": "Centre $\\left(\\frac12,\\frac12,\\frac12\\right)$, $d=0$. Radius $=\\sqrt{\\frac14+\\frac14+\\frac14}=\\dfrac{\\sqrt3}{2}$.",
+    "notes": [
+     "$r^2=\\frac34$, so $r=\\frac{\\sqrt3}{2}$, not $\\frac32$.",
+     "Correct.",
+     "",
+     "Takes the centre as $(1,1,1)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.3 The Sphere"
+    ],
+    "facts": [
+     "Sphere $x^2+y^2+z^2+2ux+2vy+2wz+d=0$: radius $\\sqrt{u^2+v^2+w^2-d}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-089",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 89,
+    "label": "LT 2018 · Q89"
+   },
+   "en": {
+    "q": "The conic $5x^2-6xy+5y^2+26x-22y+29=0$ represents",
+    "options": [
+     "a circle",
+     "a parabola",
+     "a hyperbola",
+     "an ellipse"
+    ],
+    "explanation": "$a=5,\\ h=-3,\\ b=5$: $h^2-ab=9-25<0$, so an ellipse type; $\\Delta=-128\\ne0$.\nCentre $(-2,1)$; shifting gives $5X^2-6XY+5Y^2=8$, a real ellipse: rotating $45^\\circ$ gives $2X'^2+8Y'^2=8$, i.e. $\\frac{X'^2}{4}+Y'^2=1$ (semi-axes 2 and 1).",
+    "notes": [
+     "A circle needs $h=0$.",
+     "A parabola needs $h^2=ab$.",
+     "A hyperbola needs $h^2>ab$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.3 General equation of the second degree"
+    ],
+    "facts": [
+     "$\\Delta\\ne0$: $h^2<ab$ ellipse, $h^2=ab$ parabola, $h^2>ab$ hyperbola."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-090",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-13-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 90,
+    "label": "LT 2018 · Q90"
+   },
+   "en": {
+    "q": "The coordinates of the point, where the line $\\dfrac{x-2}{-1}=\\dfrac{y+3}{1}=\\dfrac{z-1}{6}$ intersects the plane $2x+y+z=7$, are",
+    "options": [
+     "$(2,1,-7)$",
+     "$(7,-1,2)$",
+     "$(1,-2,7)$",
+     "$(2,-7,1)$"
+    ],
+    "explanation": "General point $(2-t,\\ -3+t,\\ 1+6t)$. In the plane: $2(2-t)+(-3+t)+(1+6t)=2+5t=7$, so $t=1$.\nPoint: $(1,-2,7)$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.2 The plane"
+    ],
+    "facts": [
+     "Put the general point of the line into the plane and solve for the parameter."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-091",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 91,
+    "label": "LT 2018 · Q91"
+   },
+   "en": {
+    "q": "If $A$ is a $3\\times3$ non-singular matrix, then $\\det(\\mathrm{adj}\\,A)$ is equal to",
+    "options": [
+     "$2\\det A$",
+     "$3\\det A$",
+     "$(\\det A)^2$",
+     "$(\\det A)^3$"
+    ],
+    "explanation": "$A\\,\\mathrm{adj}A=|A|I_3$ gives $|A|\\,|\\mathrm{adj}A|=|A|^3$, so $|\\mathrm{adj}A|=|A|^2$.",
+    "notes": [
+     "",
+     "",
+     "Correct: $|A|^{n-1}$ with $n=3$.",
+     "This is $|\\,|A|I_3|$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "$|\\mathrm{adj}\\,A|=|A|^{n-1}$ for an $n\\times n$ matrix."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-092",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 92,
+    "label": "LT 2018 · Q92"
+   },
+   "en": {
+    "q": "The composite mapping $f\\circ g$ of the maps $f:\\mathbb R\\to\\mathbb R$, $f(x)=\\sin x$ and $g:\\mathbb R\\to\\mathbb R$, $g(x)=x^2$ is",
+    "options": [
+     "$\\sin x+x^2$",
+     "$\\sin(x^2)$",
+     "$(\\sin x)^2$",
+     "$\\dfrac{\\sin x}{x^2}$"
+    ],
+    "explanation": "$(f\\circ g)(x)=f(g(x))=f(x^2)=\\sin(x^2)$.",
+    "notes": [
+     "That is $f+g$.",
+     "Correct.",
+     "That is $g\\circ f$.",
+     "That is $f/g$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$f\\circ g$ means apply $g$ first, then $f$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-093",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 93,
+    "label": "LT 2018 · Q93"
+   },
+   "en": {
+    "q": "A square matrix $P$ satisfies $P^2=I-P$. If $P^n=5I-8P$, then $n$ is equal to",
+    "options": [
+     "$4$",
+     "$5$",
+     "$6$",
+     "$7$"
+    ],
+    "explanation": "$P^3=P-P^2=2P-I$, $P^4=2P^2-P=2I-3P$, $P^5=2P-3P^2=5P-3I$, $P^6=5P^2-3P=5I-8P$.\nSo $n=6$.",
+    "notes": [
+     "$P^4=2I-3P$.",
+     "$P^5=-3I+5P$.",
+     "Correct.",
+     "$P^7=-8I+13P$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "If $P^2=I-P$, the coefficients of $P^n$ follow the Fibonacci numbers with alternating signs."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-094",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "lt-2018",
+    "n": 94,
+    "label": "LT 2018 · Q94"
+   },
+   "en": {
+    "q": "The number of solutions of $\\log_4(x-1)=\\log_2(x-3)$ is",
+    "options": [
+     "$2$",
+     "$3$",
+     "$1$",
+     "$0$"
+    ],
+    "explanation": "$\\log_4(x-1)=\\frac12\\log_2(x-1)$, so $x-1=(x-3)^2$ with $x>3$.\n$x^2-7x+10=0\\Rightarrow x=2$ or $5$; only $x=5$ satisfies $x>3$. One solution.",
+    "notes": [
+     "$x=2$ makes $\\log_2(x-3)$ undefined.",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$\\log_{a^k}x=\\frac1k\\log_ax$; always check the domain after squaring."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-095",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 95,
+    "label": "LT 2018 · Q95"
+   },
+   "en": {
+    "q": "The eigenvalues of the matrix $A=\\begin{bmatrix}a&h&g\\\\0&b&0\\\\0&c&c\\end{bmatrix}$ are",
+    "options": [
+     "$a,h,g$",
+     "$a,g,c$",
+     "$a,h,c$",
+     "$a,b,c$"
+    ],
+    "explanation": "Expand $|A-\\lambda I|$ along the first column: $(a-\\lambda)\\begin{vmatrix}b-\\lambda&0\\\\c&c-\\lambda\\end{vmatrix}=(a-\\lambda)(b-\\lambda)(c-\\lambda)$.\nEigenvalues $a,b,c$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "Eigenvalues of a triangular (or block-triangular) matrix are its diagonal entries."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-096",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "lt-2018",
+    "n": 96,
+    "label": "LT 2018 · Q96"
+   },
+   "en": {
+    "q": "A cyclic group having only one generator can have at most",
+    "options": [
+     "1 element",
+     "2 elements",
+     "3 elements",
+     "4 elements"
+    ],
+    "explanation": "If $g$ generates $G$, so does $g^{-1}$. A unique generator forces $g=g^{-1}$, i.e. $g^2=e$.\nSo $|G|\\le2$ (equivalently $\\phi(n)=1$ only for $n=1,2$).",
+    "notes": [
+     "The trivial group qualifies, but so does $\\mathbb Z_2$.",
+     "Correct.",
+     "$\\mathbb Z_3$ has two generators.",
+     "$\\mathbb Z_4$ has two generators."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "A cyclic group of order $n$ has $\\phi(n)$ generators."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-097",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 97,
+    "label": "LT 2018 · Q97"
+   },
+   "en": {
+    "q": "Every diagonal element of a skew-symmetric matrix is",
+    "options": [
+     "zero",
+     "unity",
+     "non-zero",
+     "purely imaginary"
+    ],
+    "explanation": "$a_{ii}=-a_{ii}$ gives $a_{ii}=0$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "That is for skew-Hermitian matrices (zero or purely imaginary)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "Skew-symmetric: zero diagonal; skew-Hermitian: diagonal zero or purely imaginary."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-098",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "lt-2018",
+    "n": 98,
+    "label": "LT 2018 · Q98"
+   },
+   "en": {
+    "q": "The number of real solutions of the equation $|x|^2+5|x|+4=0$ is",
+    "options": [
+     "$4$",
+     "$2$",
+     "$1$",
+     "$0$"
+    ],
+    "explanation": "With $t=|x|\\ge0$: $t^2+5t+4=(t+1)(t+4)=0$ gives $t=-1,-4$, both negative.\nNo real solution.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: the left side is at least 4."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Substitute $t=|x|$ and keep only roots $t\\ge0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-099",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 99,
+    "label": "LT 2018 · Q99"
+   },
+   "en": {
+    "q": "The sum of the infinite series $1-\\dfrac12\\cdot\\dfrac12+\\dfrac12\\cdot\\dfrac34\\cdot\\dfrac1{2^2}-\\dfrac12\\cdot\\dfrac34\\cdot\\dfrac56\\cdot\\dfrac1{2^3}+\\cdots\\infty$ is",
+    "options": [
+     "$\\sqrt{\\dfrac23}$",
+     "$\\sqrt{\\dfrac13}$",
+     "$\\sqrt3$",
+     "$\\sqrt{\\dfrac32}$"
+    ],
+    "explanation": "$(1+x)^{-1/2}=1-\\frac12x+\\frac{1\\cdot3}{2\\cdot4}x^2-\\frac{1\\cdot3\\cdot5}{2\\cdot4\\cdot6}x^3+\\cdots$\nWith $x=\\frac12$: sum $=\\left(\\frac32\\right)^{-1/2}=\\sqrt{\\dfrac23}$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "That is $(1+x)^{+1/2}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "$1\\mp\\frac12x+\\frac{1\\cdot3}{2\\cdot4}x^2\\mp\\cdots=(1\\pm x)^{-1/2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-100",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 100,
+    "label": "LT 2018 · Q100"
+   },
+   "en": {
+    "q": "The sum of three numbers in arithmetic progression is 51 and the product of first and third terms is 273. The common difference of this progression is",
+    "options": [
+     "$5$",
+     "$4$",
+     "$3$",
+     "$6$"
+    ],
+    "explanation": "Terms $a-d,a,a+d$: $3a=51$, $a=17$. $(17-d)(17+d)=289-d^2=273$, so $d^2=16$, $d=\\pm4$.\nThe numbers are 13, 17, 21 (or reversed).",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Take three terms in AP as $a-d,\\ a,\\ a+d$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-101",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 101,
+    "label": "LT 2018 · Q101"
+   },
+   "en": {
+    "q": "The harmonic mean of two numbers is 4. If their arithmetic mean $A$ and geometric mean $G$ satisfy the equation $2A+G^2=27$, then the numbers are",
+    "options": [
+     "$1,3$",
+     "$1,4$",
+     "$3,6$",
+     "None of the above"
+    ],
+    "explanation": "$G^2=AH=4A$. Then $2A+4A=27$, so $A=\\frac92$ and $G^2=18$.\nSum 9, product 18: the numbers are 3 and 6.",
+    "notes": [
+     "",
+     "",
+     "Correct: $A=4.5$, $G^2=18$, $H=4$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "For two positive numbers, $G^2=AH$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-103",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 103,
+    "label": "LT 2018 · Q103"
+   },
+   "en": {
+    "q": "Let $G$ be a group with identity element $e$. Let $a,b\\in G$ be such that $a^5=e$ and $aba^{-1}=b^2$. Then $o(b)$ is",
+    "options": [
+     "$17$",
+     "$23$",
+     "$29$",
+     "$31$"
+    ],
+    "explanation": "Conjugating repeatedly: $a^kba^{-k}=b^{2^k}$. With $k=5$: $b=a^5ba^{-5}=b^{32}$, so $b^{31}=e$.\n31 is prime, so $o(b)=31$ (for $b\\ne e$).",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: $2^5-1=31$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.5 Order of an element"
+    ],
+    "facts": [
+     "If $aba^{-1}=b^m$ and $a^n=e$, then $b^{m^n-1}=e$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-104",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 104,
+    "label": "LT 2018 · Q104"
+   },
+   "en": {
+    "q": "Every square matrix can be expressed as",
+    "options": [
+     "a Hermitian matrix",
+     "a skew-symmetric matrix",
+     "sum of symmetric and skew-symmetric matrices",
+     "None of the above"
+    ],
+    "explanation": "$A=\\frac12(A+A')+\\frac12(A-A')$: the first part is symmetric, the second skew-symmetric.",
+    "notes": [
+     "",
+     "",
+     "Correct, and the split is unique.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "$A=\\frac12(A+A')+\\frac12(A-A')$; similarly $A$ = Hermitian + skew-Hermitian."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-105",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 105,
+    "label": "LT 2018 · Q105"
+   },
+   "en": {
+    "q": "The sum of the infinite series $\\dfrac{1}{2!}+\\dfrac{1+2}{3!}+\\dfrac{1+2+3}{4!}+\\dfrac{1+2+3+4}{5!}+\\cdots\\infty$ is",
+    "options": [
+     "$2e$",
+     "$3e$",
+     "$\\dfrac{3e}{2}$",
+     "$\\dfrac e2$"
+    ],
+    "explanation": "$n$th term $=\\dfrac{n(n+1)/2}{(n+1)!}=\\dfrac{1}{2\\,(n-1)!}$.\nSum $=\\frac12\\sum_{n\\ge1}\\frac{1}{(n-1)!}=\\dfrac e2$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.5 Exponential and logarithmic series"
+    ],
+    "facts": [
+     "$\\sum_{n\\ge0}\\frac1{n!}=e$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-106",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 106,
+    "label": "LT 2018 · Q106"
+   },
+   "en": {
+    "q": "The characteristic roots of the matrix $A=\\begin{bmatrix}5&4\\\\1&2\\end{bmatrix}$ are",
+    "options": [
+     "$1,6$",
+     "$-1,6$",
+     "$-1,-6$",
+     "$1,-6$"
+    ],
+    "explanation": "$\\lambda^2-(\\text{trace})\\lambda+\\det=\\lambda^2-7\\lambda+6=0$, so $\\lambda=1,6$.",
+    "notes": [
+     "Correct: sum 7, product 6.",
+     "Product would be $-6$.",
+     "Sum would be $-7$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "For a $2\\times2$ matrix: sum of eigenvalues = trace, product = determinant."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-107",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 107,
+    "label": "LT 2018 · Q107"
+   },
+   "en": {
+    "q": "For square matrices $A$ and $B$, which of the following is true?",
+    "options": [
+     "$(AB)'=A'B'$",
+     "$(A+B)'=A'+B'$",
+     "$(AB)^{-1}=A^{-1}B^{-1}$",
+     "$(A+B)^{-1}=A^{-1}+B^{-1}$"
+    ],
+    "explanation": "Transpose is linear: $(A+B)'=A'+B'$.\nThe product rules reverse the order: $(AB)'=B'A'$, $(AB)^{-1}=B^{-1}A^{-1}$; and inverse is not additive.",
+    "notes": [
+     "Order reverses: $(AB)'=B'A'$.",
+     "Correct.",
+     "Order reverses: $B^{-1}A^{-1}$.",
+     "False in general (try $A=B=I$)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "Reversal law: $(AB)'=B'A'$ and $(AB)^{-1}=B^{-1}A^{-1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-108",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 108,
+    "label": "LT 2018 · Q108"
+   },
+   "en": {
+    "q": "The characteristic roots of a Hermitian matrix are",
+    "options": [
+     "real",
+     "purely imaginary",
+     "complex numbers",
+     "None of the above"
+    ],
+    "explanation": "If $Ax=\\lambda x$ with $A^\\theta=A$, then $\\lambda\\,x^\\theta x=x^\\theta Ax=\\overline{\\lambda}\\,x^\\theta x$, so $\\lambda=\\bar\\lambda$: real.",
+    "notes": [
+     "Correct.",
+     "That is for skew-Hermitian matrices (or zero).",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "Hermitian: real eigenvalues; skew-Hermitian: purely imaginary or zero; unitary: modulus 1."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-109",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "lt-2018",
+    "n": 109,
+    "label": "LT 2018 · Q109"
+   },
+   "en": {
+    "q": "The generator/generators of the cyclic group $\\{a,a^2,a^3,a^4=e\\}$ is/are",
+    "options": [
+     "$a^4$",
+     "$a^2$",
+     "$a^4,\\ a^2$",
+     "$a,\\ a^3$"
+    ],
+    "explanation": "In a cyclic group of order 4, $a^k$ generates iff $\\gcd(k,4)=1$: $k=1,3$.\nSo the generators are $a$ and $a^3$.",
+    "notes": [
+     "$a^4=e$ generates only $\\{e\\}$.",
+     "$a^2$ has order 2.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "$a^k$ generates a cyclic group of order $n$ iff $\\gcd(k,n)=1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-110",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 110,
+    "label": "LT 2018 · Q110"
+   },
+   "en": {
+    "q": "The value of the determinant $\\begin{vmatrix}43&1&6\\\\35&7&4\\\\17&3&2\\end{vmatrix}$ is",
+    "options": [
+     "$0$",
+     "$56$",
+     "$756$",
+     "$964$"
+    ],
+    "explanation": "$C_1=C_2+7C_3$: $43=1+42$, $35=7+28$, $17=3+14$.\nSo $C_1-C_2-7C_3$ is a zero column and the determinant is 0.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "A determinant is 0 if one column is a combination of the others."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-112",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 112,
+    "label": "LT 2018 · Q112"
+   },
+   "en": {
+    "q": "The sum of the series $72+70+68+\\cdots+40$ is",
+    "options": [
+     "$950$",
+     "$952$",
+     "$954$",
+     "$956$"
+    ],
+    "explanation": "Number of terms: $\\frac{72-40}{2}+1=17$. Sum $=\\frac{17}{2}(72+40)=17\\times56=952$.",
+    "notes": [
+     "Arithmetic slip.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$S_n=\\frac n2(\\text{first}+\\text{last})$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-113",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 113,
+    "label": "LT 2018 · Q113"
+   },
+   "en": {
+    "q": "Given that the set $\\mathbb Z$ of integers forms a group under the binary operation $*$, defined by $a*b=a+b+1$; $a,b\\in\\mathbb Z$. The inverse of $-2$ in the group is",
+    "options": [
+     "$2$",
+     "$4$",
+     "$-2$",
+     "$0$"
+    ],
+    "explanation": "Identity: $a+e+1=a\\Rightarrow e=-1$.\nInverse of $-2$: $-2+b+1=-1\\Rightarrow b=0$.",
+    "notes": [
+     "Treats $*$ as ordinary addition (identity 0); here the identity is $-1$.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.1 Binary operations and groups"
+    ],
+    "facts": [
+     "For $a*b=a+b+k$: identity $-k$, inverse of $a$ is $-a-2k$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-114",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 114,
+    "label": "LT 2018 · Q114"
+   },
+   "en": {
+    "q": "The sum of first ten terms of the series $\\dfrac1{21}+\\dfrac1{77}+\\dfrac1{165}+\\cdots$ is",
+    "options": [
+     "$\\dfrac{10}{129}$",
+     "$\\dfrac{20}{129}$",
+     "$\\dfrac{30}{129}$",
+     "$\\dfrac{40}{129}$"
+    ],
+    "explanation": "$21=3\\cdot7$, $77=7\\cdot11$, $165=11\\cdot15$: $T_n=\\dfrac{1}{(4n-1)(4n+3)}=\\dfrac14\\left(\\dfrac1{4n-1}-\\dfrac1{4n+3}\\right)$.\n$S_{10}=\\dfrac14\\left(\\dfrac13-\\dfrac1{43}\\right)=\\dfrac14\\cdot\\dfrac{40}{129}=\\dfrac{10}{129}$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "Forgets the factor $\\frac14$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$\\dfrac1{ab}=\\dfrac1{b-a}\\left(\\dfrac1a-\\dfrac1b\\right)$: telescoping."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-115",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "lt-2018",
+    "n": 115,
+    "label": "LT 2018 · Q115"
+   },
+   "en": {
+    "q": "The condition that the equations $ax^2+bx+c=0$, $a'x^2+b'x+c'=0$ have a common root is",
+    "options": [
+     "$(bc'-b'c)^2=(ca'-c'a)(ab'-a'b)$",
+     "$(ab'-a'b)^2=(ca'-c'a)(bc'-b'c)$",
+     "$(ca'-c'a)^2=(bc'-b'c)(ab'-a'b)$",
+     "None of the above"
+    ],
+    "explanation": "By cross-multiplication with the common root $\\alpha$: $\\dfrac{\\alpha^2}{bc'-b'c}=\\dfrac{\\alpha}{ca'-c'a}=\\dfrac{1}{ab'-a'b}$.\nEliminating $\\alpha$: $(ca'-c'a)^2=(bc'-b'c)(ab'-a'b)$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Common root: $(ca'-c'a)^2=(bc'-b'c)(ab'-a'b)$, i.e. (middle)$^2$ = (first)(last)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-116",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "lt-2018",
+    "n": 116,
+    "label": "LT 2018 · Q116"
+   },
+   "en": {
+    "q": "The value of $p$ for which the sum of the squares of the roots of the equation $x^2-(p-2)x-p+1=0$ is minimum, will be",
+    "options": [
+     "$0$",
+     "$1$",
+     "$2$",
+     "$3$"
+    ],
+    "explanation": "$\\alpha+\\beta=p-2$, $\\alpha\\beta=1-p$.\n$\\alpha^2+\\beta^2=(p-2)^2-2(1-p)=p^2-2p+2=(p-1)^2+1$, least at $p=1$.",
+    "notes": [
+     "",
+     "Correct (minimum value 1).",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-117",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 117,
+    "label": "LT 2018 · Q117"
+   },
+   "en": {
+    "q": "The domain of the function $f(x)=\\dfrac{\\log_2(x+3)}{x^2+3x+2}$ is",
+    "options": [
+     "$\\mathbb R-\\{-1,-2\\}$",
+     "$(-2,\\infty)$",
+     "$\\mathbb R-\\{-1,-2,-3\\}$",
+     "$(-3,\\infty)-\\{-1,-2\\}$"
+    ],
+    "explanation": "Need $x+3>0$, i.e. $x>-3$, and $x^2+3x+2=(x+1)(x+2)\\ne0$.\nDomain: $(-3,\\infty)-\\{-1,-2\\}$.",
+    "notes": [
+     "Ignores the log condition $x>-3$.",
+     "Wrongly drops $(-3,-2)$ and still includes $-1$.",
+     "The log needs $x>-3$, not just $x\\ne-3$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$\\log g(x)$ needs $g(x)>0$; a denominator must not vanish."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-118",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-04-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 118,
+    "label": "LT 2018 · Q118"
+   },
+   "en": {
+    "q": "Let $*$ be a binary operation defined on the set of positive rational numbers $\\mathbb Q^+$ by the rule $a*b=\\dfrac{ab}{3}$, $\\forall a,b\\in\\mathbb Q^+$. Then the inverse of $4*6$ is",
+    "options": [
+     "$\\dfrac98$",
+     "$\\dfrac23$",
+     "$\\dfrac38$",
+     "$\\dfrac32$"
+    ],
+    "explanation": "Identity: $\\frac{ae}{3}=a\\Rightarrow e=3$. $4*6=\\frac{24}{3}=8$.\nInverse of 8: $\\frac{8b}{3}=3\\Rightarrow b=\\frac98$.",
+    "notes": [
+     "Correct.",
+     "",
+     "Uses identity 1 instead of 3.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.1 Binary operations and groups"
+    ],
+    "facts": [
+     "For $a*b=\\frac{ab}{k}$ on $\\mathbb Q^+$: identity $k$, inverse of $a$ is $\\frac{k^2}{a}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-127",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 127,
+    "label": "LT 2018 · Q127"
+   },
+   "en": {
+    "q": "If $f(x)=\\cos|x|$ and $g(x)=\\sin|x|$, then",
+    "options": [
+     "both $f$ and $g$ are even functions",
+     "both $f$ and $g$ are odd functions",
+     "$f$ is an even function and $g$ is an odd function",
+     "$f$ is an odd function and $g$ is an even function"
+    ],
+    "explanation": "Any function of $|x|$ is even, since $|-x|=|x|$. So $f(-x)=f(x)$ and $g(-x)=g(x)$.",
+    "notes": [
+     "Correct.",
+     "",
+     "$\\sin x$ is odd, but $\\sin|x|$ is even.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$h(|x|)$ is always an even function."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-128",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "lt-2018",
+    "n": 128,
+    "label": "LT 2018 · Q128"
+   },
+   "en": {
+    "q": "If $f(x)=\\begin{vmatrix}1&x&x^2\\\\x&x^2&1\\\\x^2&1&x\\end{vmatrix}$, then the value of $f(\\sqrt[3]{3})$ is",
+    "options": [
+     "$-6$",
+     "$6$",
+     "$4$",
+     "$-4$"
+    ],
+    "explanation": "Expanding: $f(x)=(x^3-1)-x\\cdot0+x^2(x-x^4)=-x^6+2x^3-1=-(x^3-1)^2$.\nWith $x^3=3$: $f=-(3-1)^2=-4$.",
+    "notes": [
+     "",
+     "",
+     "Sign error.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "This circulant determinant equals $-(x^3-1)^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-129",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 129,
+    "label": "LT 2018 · Q129"
+   },
+   "en": {
+    "q": "Let $R$ be a relation on a set $A$ and let $I_A$ denote the identity relation on $A$. Then $R$ is antisymmetric, if and only if",
+    "options": [
+     "$R=R^{-1}$",
+     "$R\\cup R^{-1}\\subseteq I_A$",
+     "$R\\cap R^{-1}\\subseteq I_A$",
+     "None of the above"
+    ],
+    "explanation": "Antisymmetric: $(a,b)\\in R$ and $(b,a)\\in R$ imply $a=b$.\n$(a,b)\\in R\\cap R^{-1}$ means exactly both pairs are in $R$, so the condition says $R\\cap R^{-1}\\subseteq I_A$.",
+    "notes": [
+     "That characterises symmetric relations.",
+     "Far too strong: forces $R\\subseteq I_A$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Symmetric: $R=R^{-1}$; antisymmetric: $R\\cap R^{-1}\\subseteq I_A$; transitive: $R\\circ R\\subseteq R$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-130",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 130,
+    "label": "LT 2018 · Q130"
+   },
+   "en": {
+    "q": "If $x$ is the first term of a geometric progression and the sum of its infinite terms is $\\dfrac13$, then $x$ lies in the interval",
+    "options": [
+     "$0<x<\\dfrac12$",
+     "$-1<x<\\dfrac14$",
+     "$-\\dfrac12<x<\\dfrac12$",
+     "$0<x<\\dfrac23$"
+    ],
+    "explanation": "$\\dfrac{x}{1-r}=\\dfrac13\\Rightarrow r=1-3x$. Convergence needs $-1<1-3x<1$, i.e. $0<x<\\dfrac23$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "An infinite GP converges iff $|r|<1$, with sum $\\frac{a}{1-r}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-131",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 131,
+    "label": "LT 2018 · Q131"
+   },
+   "en": {
+    "q": "If $\\sum_{n=0}^{\\infty}r^n=s$, $|r|<1$, then $\\sum_{n=0}^{\\infty}r^{2n}$ is equal to",
+    "options": [
+     "$\\dfrac{s^2}{2s+1}$",
+     "$\\dfrac{s^2}{2s-1}$",
+     "$\\dfrac{2s}{s^2-1}$",
+     "$s^2$"
+    ],
+    "explanation": "$s=\\frac1{1-r}$, so $r=\\frac{s-1}{s}$. Then $\\sum r^{2n}=\\dfrac1{1-r^2}=\\dfrac{s^2}{s^2-(s-1)^2}=\\dfrac{s^2}{2s-1}$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     "That is $\\sum r^n$ squared, a different series."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$\\sum r^{2n}=\\frac{1}{1-r^2}$: a GP with ratio $r^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-132",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-05",
+   "src": {
+    "paper": "lt-2018",
+    "n": 132,
+    "label": "LT 2018 · Q132"
+   },
+   "en": {
+    "q": "The infinite series $\\dfrac1{1^p}+\\dfrac1{2^p}+\\dfrac1{3^p}+\\dfrac1{4^p}+\\cdots\\infty$ is convergent, if",
+    "options": [
+     "$p=0$",
+     "$p<1$",
+     "$p=1$",
+     "$p>1$"
+    ],
+    "explanation": "The $p$-series converges iff $p>1$ (integral test: $\\int_1^\\infty x^{-p}dx$ is finite iff $p>1$).",
+    "notes": [
+     "Terms all equal 1; diverges.",
+     "Diverges.",
+     "Harmonic series diverges.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.5 Series"
+    ],
+    "facts": [
+     "$\\sum\\frac1{n^p}$ converges iff $p>1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-133",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 133,
+    "label": "LT 2018 · Q133"
+   },
+   "en": {
+    "q": "Which one of the following sequences is not convergent?",
+    "options": [
+     "$\\langle1+(-1)^n\\rangle$",
+     "$\\left\\langle\\dfrac{n}{n+1}\\right\\rangle$",
+     "$\\left\\langle1+\\dfrac{(-1)^n}{n}\\right\\rangle$",
+     "None of the above"
+    ],
+    "explanation": "$1+(-1)^n$ takes the values $0,2,0,2,\\dots$: it oscillates and does not converge.\nThe other two converge to 1.",
+    "notes": [
+     "Correct: oscillates between 0 and 2.",
+     "Tends to 1.",
+     "Tends to 1.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "A sequence with two subsequences tending to different limits diverges."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-134",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 134,
+    "label": "LT 2018 · Q134"
+   },
+   "en": {
+    "q": "If $(1-x+x^2)^n=a_0+a_1x+a_2x^2+\\cdots+a_{2n}x^{2n}$ then $(a_0+a_2+a_4+\\cdots+a_{2n})$ is equal to",
+    "options": [
+     "$\\dfrac{3^n-1}{2}$",
+     "$\\dfrac{3^n+1}{2}$",
+     "$\\dfrac{3^n+2}{2}$",
+     "$\\dfrac{3^n-2}{2}$"
+    ],
+    "explanation": "$x=1$: $\\sum a_k=1$. $x=-1$: $\\sum(-1)^ka_k=3^n$.\nAdding: $2(a_0+a_2+\\cdots)=3^n+1$.",
+    "notes": [
+     "That is the odd sum with sign: $a_1+a_3+\\cdots=\\frac{1-3^n}{2}$.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "Even-index sum $=\\frac{f(1)+f(-1)}{2}$, odd-index sum $=\\frac{f(1)-f(-1)}{2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-135",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-04-09",
+   "src": {
+    "paper": "lt-2018",
+    "n": 135,
+    "label": "LT 2018 · Q135"
+   },
+   "en": {
+    "q": "Every subgroup of an Abelian group is not",
+    "options": [
+     "cyclic",
+     "Abelian",
+     "normal",
+     "None of the above"
+    ],
+    "explanation": "Every subgroup of an Abelian group is Abelian and normal ($gHg^{-1}=H$). But it need not be cyclic: the Klein four-group is a subgroup of itself, Abelian but not cyclic.",
+    "notes": [
+     "Correct: not necessarily cyclic.",
+     "Always Abelian.",
+     "Always normal.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.9 Normal subgroups, quotient groups, homomorphisms"
+    ],
+    "facts": [
+     "In an Abelian group every subgroup is normal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-136",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 136,
+    "label": "LT 2018 · Q136"
+   },
+   "en": {
+    "q": "If $|\\vec a\\times\\vec b|^2+|\\vec a\\cdot\\vec b|^2=144$ and $|\\vec a|=4$, then $|\\vec b|$ is equal to",
+    "options": [
+     "$12$",
+     "$8$",
+     "$4$",
+     "$3$"
+    ],
+    "explanation": "$|\\vec a\\times\\vec b|^2+(\\vec a\\cdot\\vec b)^2=|\\vec a|^2|\\vec b|^2$ (Lagrange's identity).\n$16|\\vec b|^2=144\\Rightarrow|\\vec b|=3$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$|\\vec a\\times\\vec b|^2+(\\vec a\\cdot\\vec b)^2=a^2b^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-137",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 137,
+    "label": "LT 2018 · Q137"
+   },
+   "en": {
+    "q": "If $\\vec F=x^2y\\,\\hat i+xz\\,\\hat j+2yz\\,\\hat k$, then the value of $\\mathrm{div}\\,\\mathrm{curl}\\,\\vec F$ is",
+    "options": [
+     "$0$",
+     "$1$",
+     "$2$",
+     "$3$"
+    ],
+    "explanation": "$\\mathrm{div}\\,\\mathrm{curl}\\,\\vec F=0$ for every twice-differentiable field.\nHere $\\mathrm{curl}\\,\\vec F=(2z-x)\\hat i+0\\,\\hat j+(z-x^2)\\hat k$, whose divergence is $-1+0+1=0$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$\\nabla\\cdot(\\nabla\\times\\vec F)=0$ and $\\nabla\\times(\\nabla\\phi)=\\vec0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-138",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 138,
+    "label": "LT 2018 · Q138"
+   },
+   "en": {
+    "q": "If $\\vec a$ and $\\vec b$ are constant vectors, then $\\nabla([\\vec r,\\vec a,\\vec b])$ is equal to",
+    "options": [
+     "$\\vec 0$",
+     "$(\\vec a\\cdot\\vec b)\\vec r$",
+     "$\\vec a\\times\\vec b$",
+     "$(\\vec a\\times\\vec b)|\\vec r|$"
+    ],
+    "explanation": "$[\\vec r,\\vec a,\\vec b]=\\vec r\\cdot(\\vec a\\times\\vec b)=\\vec c\\cdot\\vec r$ with $\\vec c=\\vec a\\times\\vec b$ constant.\n$\\nabla(\\vec c\\cdot\\vec r)=\\vec c=\\vec a\\times\\vec b$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$\\nabla(\\vec c\\cdot\\vec r)=\\vec c$ for a constant vector $\\vec c$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-139",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 139,
+    "label": "LT 2018 · Q139"
+   },
+   "en": {
+    "q": "The value of $(\\vec c\\times\\vec a)\\times(\\vec a\\times\\vec b)$ is",
+    "options": [
+     "$\\vec 0$",
+     "$[\\vec b\\,\\vec c\\,\\vec a]\\,\\vec b$",
+     "$[\\vec c\\,\\vec a\\,\\vec b]\\,\\vec c$",
+     "$[\\vec a\\,\\vec b\\,\\vec c]\\,\\vec a$"
+    ],
+    "explanation": "With $\\vec u=\\vec c\\times\\vec a$: $\\vec u\\times(\\vec a\\times\\vec b)=(\\vec u\\cdot\\vec b)\\vec a-(\\vec u\\cdot\\vec a)\\vec b$.\n$\\vec u\\cdot\\vec a=0$ and $\\vec u\\cdot\\vec b=[\\vec c\\,\\vec a\\,\\vec b]=[\\vec a\\,\\vec b\\,\\vec c]$. So the result is $[\\vec a\\,\\vec b\\,\\vec c]\\,\\vec a$.",
+    "notes": [
+     "",
+     "The vector is along $\\vec a$, not $\\vec b$.",
+     "The vector is along $\\vec a$, not $\\vec c$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$(\\vec a\\times\\vec b)\\times(\\vec a\\times\\vec c)=[\\vec a\\,\\vec b\\,\\vec c]\\,\\vec a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-140",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 140,
+    "label": "LT 2018 · Q140"
+   },
+   "en": {
+    "q": "$\\mathrm{div}(\\vec r\\times\\vec a)$, where $\\vec a$ is a constant vector, is equal to",
+    "options": [
+     "$0$",
+     "$|\\vec a|$",
+     "$|\\vec r|$",
+     "$\\vec a\\cdot\\vec r$"
+    ],
+    "explanation": "$\\nabla\\cdot(\\vec r\\times\\vec a)=\\vec a\\cdot(\\nabla\\times\\vec r)-\\vec r\\cdot(\\nabla\\times\\vec a)=0-0=0$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$\\nabla\\times\\vec r=\\vec 0$ and $\\nabla\\cdot\\vec r=3$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-141",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 141,
+    "label": "LT 2018 · Q141"
+   },
+   "en": {
+    "q": "If vectors $\\vec A$ and $\\vec B$ are irrotational, then",
+    "options": [
+     "$\\vec A\\times\\vec B$ is irrotational",
+     "$\\vec A\\times\\vec B$ is solenoidal",
+     "$\\vec A-\\vec B$ is rotational",
+     "None of the above"
+    ],
+    "explanation": "$\\nabla\\cdot(\\vec A\\times\\vec B)=\\vec B\\cdot(\\nabla\\times\\vec A)-\\vec A\\cdot(\\nabla\\times\\vec B)=0$, so $\\vec A\\times\\vec B$ is solenoidal.",
+    "notes": [
+     "Not in general.",
+     "Correct.",
+     "$\\vec A-\\vec B$ is irrotational.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$\\nabla\\cdot(\\vec A\\times\\vec B)=\\vec B\\cdot\\mathrm{curl}\\vec A-\\vec A\\cdot\\mathrm{curl}\\vec B$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-143",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 143,
+    "label": "LT 2018 · Q143"
+   },
+   "en": {
+    "q": "If $\\vec A\\times\\vec B=\\vec C\\times\\vec D$ and $\\vec A\\times\\vec C=\\vec B\\times\\vec D$, then vectors $\\vec A-\\vec D$ and $\\vec B-\\vec C$ are",
+    "options": [
+     "equal",
+     "parallel",
+     "perpendicular",
+     "inclined at an angle of $60^\\circ$"
+    ],
+    "explanation": "Subtract: $\\vec A\\times(\\vec B-\\vec C)=\\vec C\\times\\vec D-\\vec B\\times\\vec D=\\vec D\\times(\\vec B-\\vec C)$.\nSo $(\\vec A-\\vec D)\\times(\\vec B-\\vec C)=\\vec 0$: the vectors are parallel.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$\\vec u\\times\\vec v=\\vec0$ with non-zero vectors means $\\vec u\\parallel\\vec v$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-144",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 144,
+    "label": "LT 2018 · Q144"
+   },
+   "en": {
+    "q": "If $\\vec a,\\vec b,\\vec c$ are non-coplanar unit vectors such that $\\vec a\\times(\\vec b\\times\\vec c)=\\dfrac{\\vec b+\\vec c}{\\sqrt2}$, then the angle between $\\vec a$ and $\\vec b$ is",
+    "options": [
+     "$\\dfrac{3\\pi}{4}$",
+     "$\\dfrac\\pi4$",
+     "$\\dfrac\\pi2$",
+     "$\\pi$"
+    ],
+    "explanation": "$\\vec a\\times(\\vec b\\times\\vec c)=(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$. Since $\\vec b,\\vec c$ are independent, compare coefficients:\n$\\vec a\\cdot\\vec c=\\frac1{\\sqrt2}$, $\\vec a\\cdot\\vec b=-\\frac1{\\sqrt2}$. So the angle between $\\vec a$ and $\\vec b$ is $\\dfrac{3\\pi}{4}$.",
+    "notes": [
+     "Correct.",
+     "That is the angle between $\\vec a$ and $\\vec c$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$\\vec a\\times(\\vec b\\times\\vec c)=(\\vec a\\cdot\\vec c)\\vec b-(\\vec a\\cdot\\vec b)\\vec c$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-145",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "lt-2018",
+    "n": 145,
+    "label": "LT 2018 · Q145"
+   },
+   "en": {
+    "q": "If $\\vec V_1,\\vec V_2,\\vec V_3$ are three non-zero vectors such that $\\vec V_1\\times\\vec V_2=\\vec V_3$, $\\vec V_2\\times\\vec V_3=\\vec V_1$, then",
+    "options": [
+     "$|\\vec V_1|=|\\vec V_2|$",
+     "$|\\vec V_2|=|\\vec V_3|$",
+     "$|\\vec V_1|=|\\vec V_3|$",
+     "$\\vec V_2=\\vec V_1\\times\\vec V_3$"
+    ],
+    "explanation": "The vectors are mutually perpendicular, so $|\\vec V_3|=|\\vec V_1||\\vec V_2|$ and $|\\vec V_1|=|\\vec V_2||\\vec V_3|$.\nThen $|\\vec V_3|=|\\vec V_2|^2|\\vec V_3|$, so $|\\vec V_2|=1$ and $|\\vec V_1|=|\\vec V_3|$.",
+    "notes": [
+     "Only $|\\vec V_2|=1$ is forced.",
+     "Only $|\\vec V_2|=1$ is forced.",
+     "Correct.",
+     "In fact $\\vec V_1\\times\\vec V_3=-|\\vec V_1|^2\\vec V_2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "For perpendicular vectors $|\\vec a\\times\\vec b|=|\\vec a||\\vec b|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-146",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-10-01",
+   "src": {
+    "paper": "lt-2018",
+    "n": 146,
+    "label": "LT 2018 · Q146"
+   },
+   "en": {
+    "q": "The equation $\\left|\\dfrac{z-3}{z+3}\\right|=2$ represents",
+    "options": [
+     "a parabola",
+     "a hyperbola",
+     "a circle",
+     "an ellipse"
+    ],
+    "explanation": "$|z-3|=2|z+3|$ gives $x^2+y^2+10x+9=0$: a circle with centre $(-5,0)$ and radius 4.",
+    "notes": [
+     "",
+     "A hyperbola needs a difference of distances.",
+     "Correct (circle of Apollonius).",
+     "An ellipse needs a sum of distances."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.1 Complex numbers: basic definitions"
+    ],
+    "facts": [
+     "$\\left|\\frac{z-a}{z-b}\\right|=k\\ne1$ is a circle; $k=1$ is a straight line."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-147",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 147,
+    "label": "LT 2018 · Q147"
+   },
+   "en": {
+    "q": "If $x_n=\\cos\\left(\\dfrac{\\pi}{2^n}\\right)+i\\sin\\left(\\dfrac{\\pi}{2^n}\\right)$, $n\\in\\mathbb N$, then $\\lim_{n\\to\\infty}(x_1x_2x_3\\cdots x_n)$ is",
+    "options": [
+     "$0$",
+     "$-1$",
+     "$1$",
+     "$2$"
+    ],
+    "explanation": "The product is $\\mathrm{cis}\\left(\\pi\\left(\\frac12+\\frac14+\\cdots+\\frac1{2^n}\\right)\\right)\\to\\mathrm{cis}\\,\\pi=-1$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "$\\prod\\mathrm{cis}\\,\\theta_k=\\mathrm{cis}\\sum\\theta_k$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-148",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "lt-2018",
+    "n": 148,
+    "label": "LT 2018 · Q148"
+   },
+   "en": {
+    "q": "If $f(z)=u(x,y)+iv(x,y)$ for $z\\ne0$, $f(0)=0$, where $u(x,y)=\\dfrac{x^3-y^3}{x^2+y^2}$, $v(x,y)=\\dfrac{x^3+y^3}{x^2+y^2}$, then the value of $\\lim_{z\\to0}\\frac{f(z)-f(0)}{z-0}$, along $y=x$, will be",
+    "options": [
+     "$1-i$",
+     "$\\dfrac{1-i}{2}$",
+     "$1+i$",
+     "$\\dfrac{1+i}{2}$"
+    ],
+    "explanation": "On $y=x$: $u=0$, $v=\\dfrac{2x^3}{2x^2}=x$, so $f(z)=ix$ and $z=x(1+i)$.\n$\\dfrac{f(z)}{z}=\\dfrac{i}{1+i}=\\dfrac{i(1-i)}{2}=\\dfrac{1+i}{2}$.",
+    "notes": [
+     "",
+     "Sign slip in $i(1-i)$.",
+     "This is the limit along the real axis; the function is not differentiable at 0.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Different limits along different paths show $f$ is not differentiable at 0, even though C–R hold there."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-149",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 149,
+    "label": "LT 2018 · Q149"
+   },
+   "en": {
+    "q": "If $a=\\cos\\dfrac{4\\pi}{3}+i\\sin\\dfrac{4\\pi}{3}$, then the value of $\\left(\\dfrac{1+a}{2}\\right)^{3n}$ is",
+    "options": [
+     "$(-1)^n$",
+     "$\\dfrac{1}{2^{3n}}$",
+     "$\\dfrac{(-1)^n}{2^{3n}}$",
+     "$(-1)^n+1$"
+    ],
+    "explanation": "$a=\\omega^2$, so $1+a=-\\omega$ and $\\left(\\dfrac{-\\omega}{2}\\right)^{3n}=\\dfrac{(-1)^{3n}\\omega^{3n}}{2^{3n}}=\\dfrac{(-1)^n}{2^{3n}}$.",
+    "notes": [
+     "Forgets the factor $2^{-3n}$.",
+     "Loses the sign $(-1)^n$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "$1+\\omega=-\\omega^2$ and $1+\\omega^2=-\\omega$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/lt-2018-150",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "lt-2018",
+    "n": 150,
+    "label": "LT 2018 · Q150"
+   },
+   "en": {
+    "q": "If $\\omega\\,(\\ne1)$ is cube root of unity, then the value of $(1+\\omega^2+2\\omega)^{3n}-(1+\\omega+2\\omega^2)^{3n}$ is",
+    "options": [
+     "$0$",
+     "$1$",
+     "$\\omega$",
+     "$\\omega^2$"
+    ],
+    "explanation": "$1+\\omega^2+2\\omega=(1+\\omega+\\omega^2)+\\omega=\\omega$ and $1+\\omega+2\\omega^2=\\omega^2$.\n$\\omega^{3n}-\\omega^{6n}=1-1=0$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "$\\omega^3=1$, so $\\omega^{3n}=1$ for every integer $n$."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}
