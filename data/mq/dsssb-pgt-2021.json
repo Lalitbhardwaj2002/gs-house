@@ -1,0 +1,5563 @@
+{
+ "paper": {
+  "id": "dsssb-pgt-2021",
+  "title": "DSSSB PGT Mathematics 2021 (31 July, male)",
+  "exam": "DSSSB PGT",
+  "date": "31 July 2021",
+  "level": "PGT",
+  "minutes": 108,
+  "negative": 0.25,
+  "source": "DSSSB PGT Mathematics (Male, post code 28/20), computer-based test of 31 July 2021: the mathematics section (questions 101 to 280) of the board's question paper, with the board's answer key",
+  "note": "The mathematics section of the paper; the whole paper had 300 questions in 180 minutes."
+ },
+ "questions": [
+  {
+   "id": "mq/dsssb-pgt-2021-001",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 1,
+    "label": "DSSSB PGT 2021 · Q101"
+   },
+   "en": {
+    "q": "Which of the following is true?",
+    "options": [
+     "$A \\cap \\emptyset = \\emptyset$",
+     "$A \\cup \\emptyset = \\emptyset$",
+     "$A \\cup A = \\emptyset$",
+     "$A \\cap A = \\emptyset$"
+    ],
+    "explanation": "No element lies in $\\emptyset$, so no element lies in $A \\cap \\emptyset$: it is $\\emptyset$ for every set $A$.\nThe others are wrong: $A \\cup \\emptyset = A$, $A \\cup A = A$ and $A \\cap A = A$, which are empty only when $A = \\emptyset$.",
+    "notes": [
+     "Null (domination) law: $A \\cap \\emptyset = \\emptyset$.",
+     "$A \\cup \\emptyset = A$.",
+     "Idempotent law: $A \\cup A = A$.",
+     "Idempotent law: $A \\cap A = A$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$A \\cup \\emptyset = A$, $A \\cap \\emptyset = \\emptyset$, $A \\cup A = A \\cap A = A$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-002",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 2,
+    "label": "DSSSB PGT 2021 · Q102"
+   },
+   "en": {
+    "q": "Which of the following is not true?",
+    "options": [
+     "$A - (B \\cap C) = (A - B) \\cup (A - C)$",
+     "$A \\Delta B = (A - B) \\cup (B - A)$",
+     "$A \\Delta \\emptyset = A$",
+     "$A \\Delta A = A$"
+    ],
+    "explanation": "$A \\Delta A = (A - A) \\cup (A - A) = \\emptyset$, not $A$ (unless $A = \\emptyset$).\n(a) is De Morgan's law for differences, (b) is the definition of the symmetric difference, and (c) holds because $A - \\emptyset = A$ and $\\emptyset - A = \\emptyset$.",
+    "notes": [
+     "True: De Morgan's law for differences.",
+     "True: definition of $A \\Delta B$.",
+     "True: $\\emptyset$ is the identity for $\\Delta$.",
+     "False: $A \\Delta A = \\emptyset$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$A \\Delta A = \\emptyset$ and $A \\Delta \\emptyset = A$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-003",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 3,
+    "label": "DSSSB PGT 2021 · Q103"
+   },
+   "en": {
+    "q": "If $A \\cap B = B$ holds for all sets $B$ of the universal set $S$, then",
+    "options": [
+     "$A' = B$",
+     "$A = S$",
+     "$A = B$",
+     "$A = \\emptyset$"
+    ],
+    "explanation": "$A \\cap B = B$ means $B \\subseteq A$.\nIf this holds for every $B \\subseteq S$, take $B = S$: then $S \\subseteq A$, so $A = S$.",
+    "notes": [
+     "",
+     "Only $A = S$ contains every subset of $S$.",
+     "$A$ cannot equal every $B$ at once.",
+     "$A = \\emptyset$ fails for any non-empty $B$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$A \\cap B = B \\iff B \\subseteq A$; $A \\cup B = B \\iff A \\subseteq B$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-004",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 4,
+    "label": "DSSSB PGT 2021 · Q104"
+   },
+   "en": {
+    "q": "Let $f : \\mathbb{R} - \\{1\\} \\to \\mathbb{R} - \\{1\\}$ defined by $f(x) = \\frac{x+1}{x-1}$, $x \\in \\mathbb{R} - \\{1\\}$, then $f^{-1}$ is",
+    "options": [
+     "$f^{-1}(x) = \\frac{x-1}{x+1}$, $x \\in \\mathbb{R}$",
+     "$f^{-1}(x) = \\frac{x-1}{x+1}$, $x \\in \\mathbb{R} - \\{1\\}$",
+     "$f^{-1}(x) = \\frac{x+1}{x-1}$, $x \\in \\mathbb{R} - \\{1\\}$",
+     "$f^{-1}(x) = \\frac{x+1}{x-1}$, $x \\in \\mathbb{R}$"
+    ],
+    "explanation": "Put $y = \\frac{x+1}{x-1}$: $xy - y = x + 1$, so $x(y - 1) = y + 1$ and $x = \\frac{y+1}{y-1}$.\nHence $f^{-1}(x) = \\frac{x+1}{x-1}$ on $\\mathbb{R} - \\{1\\}$: $f$ is its own inverse.",
+    "notes": [
+     "This is the reciprocal of $f$, not its inverse.",
+     "Reciprocal of $f$, not the inverse.",
+     "$f \\circ f = $ identity, so $f^{-1} = f$.",
+     "The formula is right but $x = 1$ must be excluded."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$f(x) = \\frac{x+1}{x-1}$ is self-inverse: $f(f(x)) = x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-005",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 5,
+    "label": "DSSSB PGT 2021 · Q105"
+   },
+   "en": {
+    "q": "Let $f : \\mathbb{Z} \\to \\mathbb{Q}$ defined by $f(x) = 2^x$, $x \\in \\mathbb{Z}$, then $f$ is",
+    "options": [
+     "Surjective but not injective",
+     "Injective but not surjective",
+     "Both injective and surjective",
+     "Neither injective nor surjective"
+    ],
+    "explanation": "$2^x = 2^y \\Rightarrow x = y$, so $f$ is injective.\nIts values are $\\ldots, \\frac14, \\frac12, 1, 2, 4, \\ldots$; a rational such as 3 is never reached, so $f$ is not surjective.",
+    "notes": [
+     "3 has no preimage.",
+     "One-one, and the range misses most rationals.",
+     "Not onto.",
+     "It is one-one."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$x \\mapsto a^x$ ($a > 0$, $a \\ne 1$) is one-one; its range is only the powers of $a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-006",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 6,
+    "label": "DSSSB PGT 2021 · Q106"
+   },
+   "en": {
+    "q": "$A$, $B$, $C$ are subsets of the universal set $S$ and if $A \\cup B = A \\cup C$ and $A' \\cup B = A' \\cup C$ then",
+    "options": [
+     "$B = C$",
+     "$A = B$",
+     "$B' = C$",
+     "$A' = B$"
+    ],
+    "explanation": "Intersect the two equalities.\nLeft sides: $(A \\cup B) \\cap (A' \\cup B) = (A \\cap A') \\cup B = \\emptyset \\cup B = B$; the right sides give $C$ in the same way. So $B = C$.",
+    "notes": [
+     "Distributive law: $(A \\cup B) \\cap (A' \\cup B) = B$.",
+     "Nothing forces $A = B$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$(A \\cup B) \\cap (A' \\cup B) = B$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-007",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 7,
+    "label": "DSSSB PGT 2021 · Q107"
+   },
+   "en": {
+    "q": "A relation $\\rho$ is defined on a set $\\mathbb{N}$ by '$a \\rho b$ if and only if $a$ is divisible by $b$' for all $a, b \\in \\mathbb{N}$. Then $\\rho$ is",
+    "options": [
+     "Reflexive and transitive",
+     "Reflexive and symmetric",
+     "Equivalence",
+     "Symmetric and transitive"
+    ],
+    "explanation": "Reflexive: $a$ is divisible by $a$.\nTransitive: if $b \\mid a$ and $c \\mid b$ then $c \\mid a$.\nNot symmetric: 4 is divisible by 2 but 2 is not divisible by 4. So $\\rho$ is reflexive and transitive (in fact a partial order).",
+    "notes": [
+     "Divisibility is a partial order on $\\mathbb{N}$.",
+     "Not symmetric: $4 \\rho 2$ but not $2 \\rho 4$.",
+     "Fails symmetry.",
+     "Fails symmetry."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Divisibility on $\\mathbb{N}$ is reflexive, antisymmetric and transitive: a partial order."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-010",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 3,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 10,
+    "label": "DSSSB PGT 2021 · Q110"
+   },
+   "en": {
+    "q": "The function $f : \\mathbb{R} \\to \\left[-\\frac12, \\frac12\\right]$, defined as $f(x) = \\frac{x}{1+x^2}$, is",
+    "options": [
+     "Surjective but not injective",
+     "Injective but not surjective",
+     "Neither injective nor surjective",
+     "Invertible"
+    ],
+    "explanation": "Not injective: $f(2) = \\frac25 = f\\left(\\frac12\\right)$; in general $f(x) = f\\left(\\frac1x\\right)$.\nSurjective: $y = \\frac{x}{1+x^2}$ gives $yx^2 - x + y = 0$, which has a real root iff $1 - 4y^2 \\ge 0$, i.e. $|y| \\le \\frac12$. Every $y$ in the codomain is reached.\nSo $f$ is onto but not one-one, hence not invertible.\nThe board's key (d) 'Invertible' is wrong: an invertible map must be one-one, and $f(2) = f\\left(\\frac12\\right)$.",
+    "notes": [
+     "Range is exactly $[-\\frac12, \\frac12]$, but $f(x) = f(1/x)$.",
+     "$f(2) = f(\\frac12)$ breaks one-one.",
+     "It is onto: the codomain equals the range.",
+     "Invertible needs one-one; $f(2) = f(\\frac12)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$\\frac{x}{1+x^2}$ has range $[-\\frac12, \\frac12]$ and $f(x) = f(1/x)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-011",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-04-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 11,
+    "label": "DSSSB PGT 2021 · Q111"
+   },
+   "en": {
+    "q": "How many elements (permutations) in $S_6$ commute with $\\sigma = (123)(34) \\in S_6$?",
+    "options": [
+     "2",
+     "5",
+     "8",
+     "6"
+    ],
+    "explanation": "The cycles overlap, so multiply first: right to left $\\sigma = (1\\,2\\,3)(3\\,4) = (1\\,2\\,3\\,4)$ (left to right gives $(1\\,2\\,4\\,3)$); either way a 4-cycle fixing 5 and 6.\nThe centraliser of cycle type $4 + 1 + 1$ has order $4 \\cdot 2! = 8$: the 4 powers of the 4-cycle times the 2 permutations of $\\{5, 6\\}$.\nCheck: the conjugacy class has $\\frac{720}{8} = 90$ elements, the number of 4-cycles in $S_6$.",
+    "notes": [
+     "Only $\\sigma$ and the identity: far too few.",
+     "",
+     "$|C(\\sigma)| = 4 \\times 2!$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.4 Permutations and the symmetric group Sn"
+    ],
+    "facts": [
+     "In $S_n$ the centraliser of a permutation with $m_k$ cycles of length $k$ has order $\\prod k^{m_k} m_k!$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-012",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 12,
+    "label": "DSSSB PGT 2021 · Q112"
+   },
+   "en": {
+    "q": "If $A$, $B$, $C$ are three sets, then the set $A - (B - C)$ is equal to",
+    "options": [
+     "$(A - B) \\cup (A \\cap C)$",
+     "$(A - B) \\cap C$",
+     "$(A - B) \\cap (B - C)$",
+     "$A \\cap (B - C)$"
+    ],
+    "explanation": "$A - (B - C) = A \\cap (B \\cap C')' = A \\cap (B' \\cup C)$\n$= (A \\cap B') \\cup (A \\cap C) = (A - B) \\cup (A \\cap C)$.",
+    "notes": [
+     "De Morgan, then distribute.",
+     "Misses elements of $A \\cap B \\cap C$ and of $(A - B) - C$.",
+     "Always empty: $A - B$ and $B - C$ are disjoint.",
+     "This is $A \\cap B \\cap C'$, the part removed."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$A - (B - C) = (A - B) \\cup (A \\cap C)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-014",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 14,
+    "label": "DSSSB PGT 2021 · Q114"
+   },
+   "en": {
+    "q": "Let $A$ be a set of $n$ elements and $B$ be a set of $m$ elements, then the total number of mapping from $A$ to $B$ is",
+    "options": [
+     "$n^m$",
+     "$m^n$",
+     "${}^nC_m$",
+     "$mn$"
+    ],
+    "explanation": "Each of the $n$ elements of $A$ can go to any of the $m$ elements of $B$, independently: $m \\times m \\times \\cdots \\times m = m^n$.",
+    "notes": [
+     "Counts maps from $B$ to $A$.",
+     "$m$ choices for each of $n$ elements.",
+     "",
+     "Counts ordered pairs in $A \\times B$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Number of maps $A \\to B$ is $|B|^{|A|}$; number of relations is $2^{|A||B|}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-015",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 15,
+    "label": "DSSSB PGT 2021 · Q115"
+   },
+   "en": {
+    "q": "Let $A$ be a set of 4 elements and $B$ be a set of 3 elements, then the total number of surjective mappings from $A$ to $B$ is",
+    "options": [
+     "36",
+     "12",
+     "72",
+     "144"
+    ],
+    "explanation": "Inclusion–exclusion: $3^4 - \\binom31 2^4 + \\binom32 1^4 = 81 - 48 + 3 = 36$.\nOr: choose the two elements of $A$ that share an image, $\\binom42 = 6$ ways, then map the 3 blocks one-one onto $B$ in $3! = 6$ ways: $36$.",
+    "notes": [
+     "$\\binom42 \\cdot 3!$.",
+     "",
+     "Double counting: the shared pair is not ordered.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Onto maps from an $n$-set to a 3-set: $3^n - 3 \\cdot 2^n + 3$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-016",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 16,
+    "label": "DSSSB PGT 2021 · Q116"
+   },
+   "en": {
+    "q": "If $f : \\mathbb{R} \\to \\mathbb{R}$ be defined by $f(x) = x^2$, $x \\in \\mathbb{R}$ then $f$ is",
+    "options": [
+     "Bijective",
+     "Injective",
+     "Surjective",
+     "Not bijective"
+    ],
+    "explanation": "$f(-1) = f(1) = 1$, so $f$ is not injective; negative numbers have no preimage, so it is not surjective.\nHence $f$ is not bijective (neither one-one nor onto).",
+    "notes": [
+     "Neither one-one nor onto.",
+     "$f(-1) = f(1)$.",
+     "$-1$ is never reached.",
+     "Fails both conditions."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$x^2$ on $\\mathbb{R} \\to \\mathbb{R}$ is neither one-one nor onto."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-017",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 17,
+    "label": "DSSSB PGT 2021 · Q117"
+   },
+   "en": {
+    "q": "Which of the following is not true?",
+    "options": [
+     "$A \\cap B = B \\cap A$",
+     "$A \\cup B = B \\cup A$",
+     "$A \\cup (B \\cup C) = (A \\cup B) \\cap C$",
+     "$A \\cap A' = \\emptyset$"
+    ],
+    "explanation": "Associativity gives $A \\cup (B \\cup C) = (A \\cup B) \\cup C$, not $\\cap\\, C$.\nCounter-example: $A = \\{1\\}$, $B = C = \\emptyset$: left side $\\{1\\}$, right side $\\emptyset$. The other three are the commutative and complement laws.",
+    "notes": [
+     "Commutative law.",
+     "Commutative law.",
+     "False: the correct right side is $(A \\cup B) \\cup C$.",
+     "Complement law."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "Union and intersection are each associative and commutative, but they cannot be mixed freely."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-019",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 19,
+    "label": "DSSSB PGT 2021 · Q119"
+   },
+   "en": {
+    "q": "Which of the following is true?",
+    "options": [
+     "$A \\times (B \\cap C) = (A \\times B) \\cup (A \\times C)$",
+     "$A \\times (B \\cup C) = (A \\times B) \\cap (A \\times C)$",
+     "$A \\times (B - C) = (A \\times C) - (A \\times B)$",
+     "$(A - B) \\times C = (A \\times C) - (B \\times C)$"
+    ],
+    "explanation": "$(x, y) \\in (A - B) \\times C \\iff x \\in A,\\ x \\notin B,\\ y \\in C \\iff (x, y) \\in A \\times C$ and $(x, y) \\notin B \\times C$. So (d) holds.\nThe correct forms of the others: $A \\times (B \\cap C) = (A \\times B) \\cap (A \\times C)$, $A \\times (B \\cup C) = (A \\times B) \\cup (A \\times C)$, $A \\times (B - C) = (A \\times B) - (A \\times C)$.",
+    "notes": [
+     "Should be $\\cap$ on the right.",
+     "Should be $\\cup$ on the right.",
+     "The two products are in the wrong order.",
+     "Cartesian product distributes over difference."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$\\times$ distributes over $\\cap$, $\\cup$ and $-$, with the same operation on both sides."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-020",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-04-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 20,
+    "label": "DSSSB PGT 2021 · Q120"
+   },
+   "en": {
+    "q": "The order of the permutation $\\begin{pmatrix}1&2&3&4&5&6\\\\4&6&3&5&1&2\\end{pmatrix}$ is",
+    "options": [
+     "8",
+     "4",
+     "6",
+     "12"
+    ],
+    "explanation": "Cycles: $1 \\to 4 \\to 5 \\to 1$ gives $(1\\,4\\,5)$; $2 \\to 6 \\to 2$ gives $(2\\,6)$; 3 is fixed.\nOrder $= \\operatorname{lcm}(3, 2) = 6$.",
+    "notes": [
+     "",
+     "",
+     "lcm of the cycle lengths 3 and 2.",
+     "Product-like guess; use the lcm."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.4 Permutations and the symmetric group Sn"
+    ],
+    "facts": [
+     "Order of a permutation = lcm of the lengths of its disjoint cycles."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-021",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 21,
+    "label": "DSSSB PGT 2021 · Q121"
+   },
+   "en": {
+    "q": "If the ratio of roots of an equation $x^2 - px + q = 0$ is $1 : 2$, then the relation between $p$ and $q$ is",
+    "options": [
+     "$p = q$",
+     "$2p^2 = 9q$",
+     "$9p = 2q^2$",
+     "$p^2 = q^3$"
+    ],
+    "explanation": "Let the roots be $\\alpha$ and $2\\alpha$. Sum: $3\\alpha = p$; product: $2\\alpha^2 = q$.\nSo $q = 2\\left(\\frac p3\\right)^2 = \\frac{2p^2}{9}$, i.e. $2p^2 = 9q$.",
+    "notes": [
+     "",
+     "Eliminate $\\alpha$ from $3\\alpha = p$, $2\\alpha^2 = q$.",
+     "$p$ and $q$ swapped.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Roots in ratio $m : n$ of $ax^2 + bx + c = 0$: $mn\\,b^2 = (m+n)^2 ac$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-022",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 22,
+    "label": "DSSSB PGT 2021 · Q122"
+   },
+   "en": {
+    "q": "If 4 be the root of the equation $x^2 + ax - 12 = 0$, then another root is",
+    "options": [
+     "$-2$",
+     "3",
+     "$-3$",
+     "$a - 4$"
+    ],
+    "explanation": "Product of the roots $= -12$, so the other root is $\\frac{-12}{4} = -3$ (and then $a = -1$).",
+    "notes": [
+     "",
+     "Sign lost: the product is negative.",
+     "$4 \\times (-3) = -12$.",
+     "Sum of roots is $-a$, so the other root is $-a - 4$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Knowing one root, use the product (or sum) of the roots for the other."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-023",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 23,
+    "label": "DSSSB PGT 2021 · Q123"
+   },
+   "en": {
+    "q": "If $b = c = 0$ in the equation $ax^2 + bx + c = 0$, then the value of roots are",
+    "options": [
+     "0, 1",
+     "1, 1",
+     "0, 0",
+     "1, 0"
+    ],
+    "explanation": "The equation becomes $ax^2 = 0$ with $a \\ne 0$, so $x = 0$ is a double root.",
+    "notes": [
+     "",
+     "",
+     "$ax^2 = 0$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$c = 0$ gives a zero root; $b = c = 0$ gives both roots zero."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-024",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 24,
+    "label": "DSSSB PGT 2021 · Q124"
+   },
+   "en": {
+    "q": "What is the nature of the roots of this equation $x^2 - 2\\sqrt7 x - 2 = 0$?",
+    "options": [
+     "Real, Unequal, Irrational",
+     "Complex, Unequal",
+     "Real, Unequal, Rational",
+     "Real, Equal, Rational"
+    ],
+    "explanation": "$D = (2\\sqrt7)^2 + 8 = 36 > 0$: real and unequal.\nRoots $= \\frac{2\\sqrt7 \\pm 6}{2} = \\sqrt7 \\pm 3$, which are irrational. A perfect-square $D$ guarantees rational roots only when the coefficients are rational.",
+    "notes": [
+     "Roots $\\sqrt7 \\pm 3$.",
+     "$D > 0$.",
+     "$D = 36$ is a perfect square, but $b$ is irrational.",
+     "$D \\ne 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "'Perfect-square discriminant ⟹ rational roots' needs rational coefficients."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-025",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 25,
+    "label": "DSSSB PGT 2021 · Q125"
+   },
+   "en": {
+    "q": "If $a$, $b$ and $c$ are real and rational and satisfies the condition $a + b + c = 0$, of the equation $ax^2 + bx + c = 0$, then the roots are",
+    "options": [
+     "Rational, Real",
+     "Irrational, Real",
+     "Complex",
+     "Not Existing"
+    ],
+    "explanation": "$a + b + c = 0$ means $x = 1$ is a root.\nThe other root is $\\frac ca$ (product of the roots), which is rational. So both roots are real and rational.",
+    "notes": [
+     "Roots $1$ and $\\frac ca$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$a + b + c = 0 \\Rightarrow$ roots $1$ and $\\frac ca$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-026",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 26,
+    "label": "DSSSB PGT 2021 · Q126"
+   },
+   "en": {
+    "q": "The roots of the equation $ax^2 + bx + c = 0$ being equal and having opposite signs can be possible only when",
+    "options": [
+     "$a = 0$",
+     "$b = 0$",
+     "$c = 0$",
+     "$a = b = c = 0$"
+    ],
+    "explanation": "Roots equal in magnitude and opposite in sign are $\\alpha$ and $-\\alpha$, so their sum $-\\frac ba = 0$, i.e. $b = 0$.",
+    "notes": [
+     "Then it is not a quadratic.",
+     "Sum of roots zero.",
+     "$c = 0$ makes one root zero.",
+     "Not an equation at all."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Roots $\\pm\\alpha$ $\\iff$ $b = 0$; reciprocal roots $\\iff$ $c = a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-027",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 27,
+    "label": "DSSSB PGT 2021 · Q127"
+   },
+   "en": {
+    "q": "What is the addition of two roots of the equation $3x^2 - 5x + 7 = 0$?",
+    "options": [
+     "5",
+     "$-\\frac53$",
+     "$\\frac53$",
+     "$-5$"
+    ],
+    "explanation": "Sum of the roots $= -\\frac ba = -\\frac{-5}{3} = \\frac53$ (the roots are complex, but the formula still holds).",
+    "notes": [
+     "Forgot to divide by $a = 3$.",
+     "Sign error: sum is $-b/a$.",
+     "$-b/a$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Sum $= -\\frac ba$, product $= \\frac ca$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-028",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 28,
+    "label": "DSSSB PGT 2021 · Q128"
+   },
+   "en": {
+    "q": "Which of the following equations is having the roots 2 and $(-3)$?",
+    "options": [
+     "$x^2 + x - 6 = 0$",
+     "$x^2 - x - 6 = 0$",
+     "$x^2 - x + 6 = 0$",
+     "$x^2 - 5x - 6 = 0$"
+    ],
+    "explanation": "$x^2 - (\\text{sum})x + \\text{product} = x^2 - (-1)x + (-6) = x^2 + x - 6 = 0$. Check: $(x - 2)(x + 3)$.",
+    "notes": [
+     "$(x-2)(x+3)$.",
+     "Roots $3, -2$.",
+     "Complex roots.",
+     "Roots $6, -1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Equation with roots $\\alpha, \\beta$: $x^2 - (\\alpha + \\beta)x + \\alpha\\beta = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-029",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 29,
+    "label": "DSSSB PGT 2021 · Q129"
+   },
+   "en": {
+    "q": "If the subtraction of two roots is 2, of the equation $2x^2 - 12x + m + 2 = 0$, then the value of $m$ is",
+    "options": [
+     "$m = 2$",
+     "$m = 7$",
+     "$m = 14$",
+     "$m = -2$"
+    ],
+    "explanation": "$\\alpha + \\beta = 6$ and $\\alpha\\beta = \\frac{m+2}{2}$.\n$(\\alpha - \\beta)^2 = (\\alpha + \\beta)^2 - 4\\alpha\\beta = 36 - 2(m + 2) = 4$, so $m + 2 = 16$ and $m = 14$ (roots 4 and 2).",
+    "notes": [
+     "",
+     "",
+     "Roots 4 and 2.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$(\\alpha - \\beta)^2 = (\\alpha + \\beta)^2 - 4\\alpha\\beta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-030",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 30,
+    "label": "DSSSB PGT 2021 · Q130"
+   },
+   "en": {
+    "q": "If one root of any equation is $(2 - 3i)$ (where $i = \\sqrt{-1}$), then what is the equation?",
+    "options": [
+     "$x^2 - 4x + 12 = 0$",
+     "$x^2 - 4x + 13 = 0$",
+     "$x^2 + 4x - 13 = 0$",
+     "$x^2 + 4x + 12 = 0$"
+    ],
+    "explanation": "With real coefficients the other root is the conjugate $2 + 3i$.\nSum $= 4$, product $= 4 + 9 = 13$: $x^2 - 4x + 13 = 0$.",
+    "notes": [
+     "Product taken as $4 + 8$.",
+     "Sum 4, product $|2 - 3i|^2 = 13$.",
+     "Wrong signs.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Complex roots of a real quadratic come in conjugate pairs: $x^2 - 2\\,\\mathrm{Re}(z)x + |z|^2 = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-031",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 31,
+    "label": "DSSSB PGT 2021 · Q131"
+   },
+   "en": {
+    "q": "The improper integral $\\int_0^1 \\frac{3}{2x(2x-1)}\\,dx$ has",
+    "options": [
+     "Point of infinite discontinuity of $1, \\frac12$",
+     "Point of infinite discontinuity at $0, \\frac12$",
+     "Point of infinite discontinuity at $0, 1$",
+     "Point of infinite discontinuity at $0$"
+    ],
+    "explanation": "The integrand blows up where $2x(2x - 1) = 0$: at $x = 0$ (an end point) and at $x = \\frac12$ (inside $[0, 1]$).\nAt $x = 1$ the integrand is $\\frac32$, finite.",
+    "notes": [
+     "The integrand is finite at $x = 1$.",
+     "Zeros of the denominator in $[0, 1]$.",
+     "Finite at $x = 1$.",
+     "Misses $x = \\frac12$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "Look for zeros of the denominator inside the interval, not only at the ends."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-032",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 0,
+   "topic": "tp-05-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 32,
+    "label": "DSSSB PGT 2021 · Q132"
+   },
+   "en": {
+    "q": "The integral $\\int_0^\\infty \\frac{|\\sin x|}{x}\\,dx$",
+    "options": [
+     "is convergent but not absolutely",
+     "is not convergent",
+     "is absolutely convergent",
+     "is absolutely divergent"
+    ],
+    "explanation": "The integrand is $\\ge 0$, so convergence and absolute convergence are the same thing here.\nOn $[k\\pi, (k+1)\\pi]$: $\\int \\frac{|\\sin x|}{x}\\,dx \\ge \\frac{1}{(k+1)\\pi}\\int_{k\\pi}^{(k+1)\\pi} |\\sin x|\\,dx = \\frac{2}{(k+1)\\pi}$.\nSumming, $\\int_0^{N\\pi} \\frac{|\\sin x|}{x}\\,dx \\ge \\frac2\\pi \\sum_{k=1}^{N} \\frac1k \\to \\infty$: the integral diverges. (It is $\\int_0^\\infty \\frac{\\sin x}{x}\\,dx = \\frac\\pi2$ that converges, but not absolutely.)\nThe board's key (a) is the known result for $\\int_0^\\infty \\frac{\\sin x}{x}\\,dx$; with the printed $|\\sin x|$ it is wrong.",
+    "notes": [
+     "True of $\\frac{\\sin x}{x}$, not of $\\frac{|\\sin x|}{x}$.",
+     "Bounded below by a harmonic series.",
+     "Would mean this very integral converges.",
+     "Not a standard term: for a non-negative integrand convergence and absolute convergence are the same, and the plain fact is (b)."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.5 Series"
+    ],
+    "facts": [
+     "$\\int_0^\\infty \\frac{\\sin x}{x}dx = \\frac\\pi2$ converges conditionally; $\\int_0^\\infty \\frac{|\\sin x|}{x}dx$ diverges."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-033",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 33,
+    "label": "DSSSB PGT 2021 · Q133"
+   },
+   "en": {
+    "q": "The integral $\\int_0^\\infty \\sin x\\,dx$",
+    "options": [
+     "Exists and is equal to 1",
+     "Exists and is equal to 0",
+     "Exists and is equal to $-1$",
+     "Does not exist"
+    ],
+    "explanation": "$\\int_0^t \\sin x\\,dx = 1 - \\cos t$, which oscillates between 0 and 2 as $t \\to \\infty$.\nThere is no limit, so the improper integral does not exist (it oscillates).",
+    "notes": [
+     "",
+     "",
+     "",
+     "$1 - \\cos t$ has no limit."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "An improper integral exists only if $\\lim_{t \\to \\infty}\\int_0^t$ exists."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-034",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 34,
+    "label": "DSSSB PGT 2021 · Q134"
+   },
+   "en": {
+    "q": "If $f(x)$ satisfies the requirements of Rolle's theorem in $[1, 2]$ and $f'(x)$ is continuous in $[1, 2]$, then the value of $\\int_1^2 f'(x)\\,dx$ is:",
+    "options": [
+     "0",
+     "1",
+     "$-1$",
+     "2"
+    ],
+    "explanation": "$\\int_1^2 f'(x)\\,dx = f(2) - f(1)$, and Rolle's theorem requires $f(1) = f(2)$. So the integral is 0.",
+    "notes": [
+     "$f(2) - f(1) = 0$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_a^b f'(x)\\,dx = f(b) - f(a)$; Rolle's hypothesis is $f(a) = f(b)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-035",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 35,
+    "label": "DSSSB PGT 2021 · Q135"
+   },
+   "en": {
+    "q": "The integral $\\int_1^\\infty \\frac{\\sin x}{x^p}\\,dx$ converges",
+    "options": [
+     "Absolutely for $p > -1$",
+     "Absolutely for $p > 0$",
+     "Absolutely for $p > 1$",
+     "Absolutely for $p = 1$"
+    ],
+    "explanation": "$\\left|\\frac{\\sin x}{x^p}\\right| \\le \\frac{1}{x^p}$ and $\\int_1^\\infty x^{-p}\\,dx$ converges for $p > 1$: absolute convergence by comparison.\nFor $0 < p \\le 1$ it converges only conditionally (Dirichlet's test), e.g. $p = 1$.",
+    "notes": [
+     "For $p \\le 0$ it does not even converge.",
+     "Only conditional for $0 < p \\le 1$.",
+     "Comparison with $\\int_1^\\infty x^{-p}dx$.",
+     "Conditional at $p = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.5 Series"
+    ],
+    "facts": [
+     "$\\int_1^\\infty \\frac{\\sin x}{x^p}dx$: absolutely convergent for $p > 1$, conditionally for $0 < p \\le 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-036",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 36,
+    "label": "DSSSB PGT 2021 · Q136"
+   },
+   "en": {
+    "q": "$\\int_0^\\infty e^{-a^2t^2}\\,dt$ is equal to:",
+    "options": [
+     "$\\frac{\\sqrt\\pi}{3a}$",
+     "$\\frac{\\sqrt\\pi}{2}$",
+     "$a\\sqrt\\pi$",
+     "$\\frac{\\sqrt\\pi}{2a}$"
+    ],
+    "explanation": "Put $u = at$ ($a > 0$): the integral becomes $\\frac1a\\int_0^\\infty e^{-u^2}\\,du$.\n$\\int_0^\\infty e^{-u^2}\\,du = \\frac12\\Gamma\\left(\\frac12\\right) = \\frac{\\sqrt\\pi}{2}$, so the answer is $\\frac{\\sqrt\\pi}{2a}$.",
+    "notes": [
+     "",
+     "This is the value for $a = 1$.",
+     "Multiplied by $a$ instead of dividing.",
+     "Scale the Gaussian integral by $\\frac1a$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "$\\int_0^\\infty e^{-x^2}dx = \\frac{\\sqrt\\pi}{2} = \\frac12\\Gamma\\left(\\frac12\\right)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-038",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 38,
+    "label": "DSSSB PGT 2021 · Q138"
+   },
+   "en": {
+    "q": "Which one of the following is not correct on an interval $[a, b]$?",
+    "options": [
+     "Every integrable function is bounded",
+     "Every discontinuous function is integrable",
+     "Every continuous function is integrable",
+     "Every continuous function has a primitive"
+    ],
+    "explanation": "The Dirichlet function (1 on rationals, 0 on irrationals) is discontinuous everywhere and not Riemann integrable: every upper sum is $b - a$ and every lower sum is 0.\nThe other three are standard: a Riemann integrable function is bounded, a continuous function is integrable, and $F(x) = \\int_a^x f$ is a primitive of a continuous $f$.",
+    "notes": [
+     "True: boundedness is part of Riemann integrability.",
+     "False: Dirichlet's function.",
+     "True.",
+     "True: fundamental theorem of calculus."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "Riemann integrable $\\iff$ bounded and continuous almost everywhere."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-039",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 39,
+    "label": "DSSSB PGT 2021 · Q139"
+   },
+   "en": {
+    "q": "Let $f : [a, b] \\to \\mathbb{R}$ and $P$ and $Q$ are partitions of $[a, b]$ such that $Q \\subset P$. Then",
+    "options": [
+     "$U(P, f) \\ge U(Q, f)$",
+     "$U(P, f) \\le L(Q, f)$",
+     "$L(P, f) \\le L(Q, f)$",
+     "$L(P, f) \\le U(Q, f)$"
+    ],
+    "explanation": "$Q \\subset P$ means $P$ refines $Q$, so $L(Q, f) \\le L(P, f) \\le U(P, f) \\le U(Q, f)$ (for bounded $f$).\nHence $L(P, f) \\le U(Q, f)$; in fact every lower sum is at most every upper sum. (a) and (c) have the inequalities reversed.",
+    "notes": [
+     "Refining lowers the upper sum.",
+     "An upper sum is never below a lower sum (unless equal).",
+     "Refining raises the lower sum.",
+     "Any lower sum $\\le$ any upper sum."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "Refinement: lower sums go up, upper sums go down."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-040",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 40,
+    "label": "DSSSB PGT 2021 · Q140"
+   },
+   "en": {
+    "q": "The value of definite integral $\\int_{-a}^{a} |x|\\,dx$ is equal to:",
+    "options": [
+     "$2a$",
+     "$a^2$",
+     "0",
+     "$a$"
+    ],
+    "explanation": "$|x|$ is even, so the integral is $2\\int_0^a x\\,dx = a^2$ (for $a > 0$).",
+    "notes": [
+     "",
+     "Even function: twice the integral over $[0, a]$.",
+     "That would be for an odd function such as $x$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_{-a}^{a} f = 2\\int_0^a f$ for even $f$ and $0$ for odd $f$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-041",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 41,
+    "label": "DSSSB PGT 2021 · Q141"
+   },
+   "en": {
+    "q": "If $x = 3 + 3^{2/3} + 3^{1/3}$, then find the value of $x^3 - 9x^2 + 18x - 12$",
+    "options": [
+     "$\\frac12$",
+     "1",
+     "0",
+     "$-1$"
+    ],
+    "explanation": "Let $t = 3^{1/3}$, so $t^3 = 3$ and $x - 3 = t + t^2$.\n$(x - 3)^3 = t^3 + 3t^4 + 3t^5 + t^6 = 3 + 9t + 9t^2 + 9 = 12 + 9(x - 3)$.\nSo $x^3 - 9x^2 + 27x - 27 = 9x - 15$, i.e. $x^3 - 9x^2 + 18x - 12 = 0$.",
+    "notes": [
+     "",
+     "",
+     "Cube $x - 3 = t + t^2$ and use $t^3 = 3$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "To clear cube roots, isolate the surd part and cube it."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-042",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 42,
+    "label": "DSSSB PGT 2021 · Q142"
+   },
+   "en": {
+    "q": "Arrange the values in ascending order $2^{63}, 3^{45}, 5^{27}, 6^{18}$",
+    "options": [
+     "$2^{63}, 5^{27}, 6^{18}, 3^{45}$",
+     "$5^{27}, 6^{18}, 2^{63}, 3^{45}$",
+     "$3^{45}, 5^{27}, 2^{63}, 6^{18}$",
+     "$6^{18}, 5^{27}, 2^{63}, 3^{45}$"
+    ],
+    "explanation": "All exponents are multiples of 9: $2^{63} = 128^9$, $3^{45} = 243^9$, $5^{27} = 125^9$, $6^{18} = 36^9$.\nCompare the bases: $36 < 125 < 128 < 243$, so $6^{18} < 5^{27} < 2^{63} < 3^{45}$.",
+    "notes": [
+     "",
+     "",
+     "Descending, not ascending.",
+     "Bases $36 < 125 < 128 < 243$ under the common power 9."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Compare powers by bringing them to a common exponent (here 9)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-044",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 44,
+    "label": "DSSSB PGT 2021 · Q144"
+   },
+   "en": {
+    "q": "If $x = \\sqrt{\\frac{\\sqrt5 + 1}{\\sqrt5 - 1}}$, then the value of $x^2 - x - 1$ is",
+    "options": [
+     "$-\\frac12$",
+     "$\\frac12$",
+     "0",
+     "1"
+    ],
+    "explanation": "$\\frac{\\sqrt5 + 1}{\\sqrt5 - 1} = \\frac{(\\sqrt5 + 1)^2}{4}$, so $x = \\frac{\\sqrt5 + 1}{2}$ (the golden ratio).\n$x^2 = \\frac{6 + 2\\sqrt5}{4} = \\frac{3 + \\sqrt5}{2} = x + 1$, so $x^2 - x - 1 = 0$.",
+    "notes": [
+     "",
+     "",
+     "$x$ is a root of $x^2 - x - 1 = 0$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$\\frac{1 + \\sqrt5}{2}$ satisfies $x^2 = x + 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-045",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-10-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 45,
+    "label": "DSSSB PGT 2021 · Q145"
+   },
+   "en": {
+    "q": "Find the argument of this complex number $(1 + i)(\\sqrt3 + i)$:",
+    "options": [
+     "$\\frac{5\\pi}{12}$",
+     "$\\frac{\\pi}{12}$",
+     "$\\pi$",
+     "$\\frac\\pi4$"
+    ],
+    "explanation": "$\\arg(1 + i) = \\frac\\pi4$ and $\\arg(\\sqrt3 + i) = \\frac\\pi6$.\nArguments add under multiplication: $\\frac\\pi4 + \\frac\\pi6 = \\frac{5\\pi}{12}$ (already in $(-\\pi, \\pi]$).",
+    "notes": [
+     "Sum of the two arguments.",
+     "Difference $\\frac\\pi4 - \\frac\\pi6$: that is the argument of the quotient.",
+     "",
+     "Argument of $1 + i$ alone."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.3 Principal argument"
+    ],
+    "facts": [
+     "$\\arg(z_1z_2) = \\arg z_1 + \\arg z_2$ (up to $2\\pi$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-046",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 46,
+    "label": "DSSSB PGT 2021 · Q146"
+   },
+   "en": {
+    "q": "If $\\omega$ be a cube root of 1, then what is the value of $(1 - \\omega)(1 - \\omega^2)(1 - \\omega^4)(1 - \\omega^5)$?",
+    "options": [
+     "9",
+     "8",
+     "7",
+     "1"
+    ],
+    "explanation": "Take $\\omega$ an imaginary cube root ($\\omega = 1$ would give 0). Then $\\omega^4 = \\omega$ and $\\omega^5 = \\omega^2$, so the product is $[(1 - \\omega)(1 - \\omega^2)]^2$.\n$(1 - \\omega)(1 - \\omega^2) = 1 - (\\omega + \\omega^2) + \\omega^3 = 1 + 1 + 1 = 3$. Answer: $3^2 = 9$.",
+    "notes": [
+     "$[(1-\\omega)(1-\\omega^2)]^2 = 3^2$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "$(1 - \\omega)(1 - \\omega^2) = 3$; $1 + \\omega + \\omega^2 = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-047",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 47,
+    "label": "DSSSB PGT 2021 · Q147"
+   },
+   "en": {
+    "q": "Complete the series: 34, ___, ___, ___, ___, 48",
+    "options": [
+     "36.4, 39.8, 42.6, 46.2",
+     "36.8, 39.6, 42.4, 45.2",
+     "36.9, 39.7, 42.6, 46.8",
+     "37.0, 39.9, 43.1, 46.2"
+    ],
+    "explanation": "Insert 4 arithmetic means between 34 and 48: there are 5 equal steps, $d = \\frac{48 - 34}{5} = 2.8$.\nTerms: 36.8, 39.6, 42.4, 45.2.",
+    "notes": [
+     "Unequal steps.",
+     "Common difference 2.8 throughout.",
+     "Unequal steps.",
+     "Unequal steps."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$n$ arithmetic means between $a$ and $b$: $d = \\frac{b - a}{n + 1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-048",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 48,
+    "label": "DSSSB PGT 2021 · Q148"
+   },
+   "en": {
+    "q": "If 5, $x$, 405 is in G.P., then what is the value of $x$?",
+    "options": [
+     "$+45$",
+     "$-45$",
+     "$\\pm 15$",
+     "$\\pm 45$"
+    ],
+    "explanation": "In a G.P. $x^2 = 5 \\times 405 = 2025$, so $x = \\pm 45$.\nBoth work: 5, 45, 405 (ratio 9) and 5, $-45$, 405 (ratio $-9$). Only if the terms must be positive (the geometric mean) is it $+45$.\nThe board's key (a) $+45$ keeps only the positive root; $-45$ is just as valid, so the answer is (d).",
+    "notes": [
+     "Only the positive geometric mean.",
+     "Only the negative choice.",
+     "$15^2 = 225 \\ne 2025$.",
+     "$x^2 = 2025$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$a, x, b$ in G.P. $\\iff x^2 = ab$; the geometric mean is the positive root."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-049",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 49,
+    "label": "DSSSB PGT 2021 · Q149"
+   },
+   "en": {
+    "q": "If the multiplication of two roots is $-3$, then what is the value of 'b' from this equation $2x^2 - 7x + b = 0$",
+    "options": [
+     "$-\\frac32$",
+     "$+\\frac32$",
+     "$-6$",
+     "$+6$"
+    ],
+    "explanation": "Product of the roots $= \\frac b2 = -3$, so $b = -6$.",
+    "notes": [
+     "Divided instead of multiplying by 2.",
+     "",
+     "$\\frac b2 = -3$.",
+     "Sign error."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Product of roots $= \\frac ca$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-050",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 50,
+    "label": "DSSSB PGT 2021 · Q150"
+   },
+   "en": {
+    "q": "If ${}^{2n+1}P_{n-1} : {}^{2n-1}P_n = 3 : 5$, then find the value of $n$.",
+    "options": [
+     "$-4$",
+     "4",
+     "5",
+     "3"
+    ],
+    "explanation": "${}^{2n+1}P_{n-1} = \\frac{(2n+1)!}{(n+2)!}$ and ${}^{2n-1}P_n = \\frac{(2n-1)!}{(n-1)!}$.\nRatio $= \\frac{(2n+1)(2n)(n-1)!}{(n+2)!} = \\frac{2(2n+1)}{(n+1)(n+2)} = \\frac35$.\nSo $3n^2 - 11n - 4 = 0$, $(n - 4)(3n + 1) = 0$, and $n = 4$.",
+    "notes": [
+     "$n$ must be a positive integer.",
+     "Root of $3n^2 - 11n - 4 = 0$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "${}^nP_r = \\frac{n!}{(n - r)!}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-051",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 51,
+    "label": "DSSSB PGT 2021 · Q151"
+   },
+   "en": {
+    "q": "If $a$, $b$, $c$ are positive real numbers then the least value of $\\frac{a+b}{c} + \\frac{b+c}{a} + \\frac{c+a}{b}$ is:",
+    "options": [
+     "5",
+     "6",
+     "2",
+     "1"
+    ],
+    "explanation": "Regroup: $\\left(\\frac ab + \\frac ba\\right) + \\left(\\frac bc + \\frac cb\\right) + \\left(\\frac ca + \\frac ac\\right)$.\nEach bracket is at least 2 (AM–GM), so the least value is 6, reached at $a = b = c$.",
+    "notes": [
+     "",
+     "Three pairs $t + \\frac1t \\ge 2$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$t + \\frac1t \\ge 2$ for $t > 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-052",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 52,
+    "label": "DSSSB PGT 2021 · Q152"
+   },
+   "en": {
+    "q": "If the arithmetic-mean of the two numbers $a$ and $b$ $(a, b > 0)$ is five times their geometric mean, then $\\frac{a+b}{a-b}$ is equal to:",
+    "options": [
+     "$\\frac{5\\sqrt6}{12}$",
+     "$\\frac{7\\sqrt3}{12}$",
+     "$\\frac{3\\sqrt2}{4}$",
+     "$\\frac{\\sqrt6}{2}$"
+    ],
+    "explanation": "$a + b = 10\\sqrt{ab}$, so $(a - b)^2 = (a + b)^2 - 4ab = 96ab$ and $a - b = 4\\sqrt6\\sqrt{ab}$ (taking $a > b$).\n$\\frac{a+b}{a-b} = \\frac{10}{4\\sqrt6} = \\frac{5}{2\\sqrt6} = \\frac{5\\sqrt6}{12}$.",
+    "notes": [
+     "$\\frac{10}{4\\sqrt6}$ rationalised.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "If $\\mathrm{AM} = k \\cdot \\mathrm{GM}$ then $\\frac{a+b}{a-b} = \\frac{k}{\\sqrt{k^2 - 1}}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-053",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 53,
+    "label": "DSSSB PGT 2021 · Q153"
+   },
+   "en": {
+    "q": "If $a$, $b$ are positive real numbers and $a + b = 4$, then the minimum value of $\\left(a + \\frac1a\\right)^2 + \\left(b + \\frac1b\\right)^2$ is",
+    "options": [
+     "$\\frac53$",
+     "$\\frac{25}{3}$",
+     "$\\frac{25}{2}$",
+     "$\\frac{15}{5}$"
+    ],
+    "explanation": "By $u^2 + v^2 \\ge \\frac{(u + v)^2}{2}$ with $u + v = 4 + \\frac1a + \\frac1b$.\nAlso $\\frac1a + \\frac1b \\ge \\frac{4}{a + b} = 1$, so $u + v \\ge 5$ and the sum is at least $\\frac{25}{2}$.\nEquality at $a = b = 2$: $2\\left(\\frac52\\right)^2 = \\frac{25}{2}$.",
+    "notes": [
+     "",
+     "",
+     "Reached at $a = b = 2$.",
+     "Equals 3, below the true minimum."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "For a symmetric convex expression with $a + b$ fixed, try $a = b$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-054",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 54,
+    "label": "DSSSB PGT 2021 · Q154"
+   },
+   "en": {
+    "q": "If $m$ is the AM (arithmetic mean) of two distinct real numbers $l$ and $n$ $(l, n > 1)$ and $G_1$, $G_2$ and $G_3$ are their geometric means between $l$ and $n$, then $G_1^4 + 2G_2^4 + G_3^4$ equals:",
+    "options": [
+     "$4lm^2n$",
+     "$4l^2mn$",
+     "$4l^2m^2n^2$",
+     "$4lmn^2$"
+    ],
+    "explanation": "$l, G_1, G_2, G_3, n$ is a G.P. with ratio $r$, $r^4 = \\frac nl$.\n$G_1^4 + 2G_2^4 + G_3^4 = l^4r^4(1 + 2r^4 + r^8) = l^4r^4(1 + r^4)^2 = l^4 \\cdot \\frac nl \\cdot \\frac{(l + n)^2}{l^2} = ln(l + n)^2$.\nWith $l + n = 2m$: $4lm^2n$.",
+    "notes": [
+     "$ln(l + n)^2$ with $l + n = 2m$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$n$ geometric means between $a$ and $b$: ratio $r = (b/a)^{1/(n+1)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-057",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 57,
+    "label": "DSSSB PGT 2021 · Q157"
+   },
+   "en": {
+    "q": "If $a$, $b$, $c$ are positive real numbers and $2a + 3b + 6c = 3$, then the minimum value of $a^2 + b^2 + c^2$ is:",
+    "options": [
+     "$\\frac{7}{49}$",
+     "$\\frac{9}{49}$",
+     "$\\frac{8}{49}$",
+     "$\\frac{6}{49}$"
+    ],
+    "explanation": "Cauchy–Schwarz: $(2a + 3b + 6c)^2 \\le (2^2 + 3^2 + 6^2)(a^2 + b^2 + c^2) = 49(a^2 + b^2 + c^2)$.\nSo $a^2 + b^2 + c^2 \\ge \\frac{9}{49}$, with equality when $a : b : c = 2 : 3 : 6$, i.e. $a = \\frac{6}{49}$, $b = \\frac{9}{49}$, $c = \\frac{18}{49}$.",
+    "notes": [
+     "",
+     "$\\frac{3^2}{2^2 + 3^2 + 6^2}$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Minimum of $x^2 + y^2 + z^2$ on the plane $ax + by + cz = d$ is $\\frac{d^2}{a^2 + b^2 + c^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-058",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 58,
+    "label": "DSSSB PGT 2021 · Q158"
+   },
+   "en": {
+    "q": "For any two positive numbers $a$ and $x$, least value of $ax + \\frac ax$ is:",
+    "options": [
+     "$a$",
+     "$2a$",
+     "$\\sqrt2 a^2$",
+     "$a^2$"
+    ],
+    "explanation": "$ax + \\frac ax = a\\left(x + \\frac1x\\right) \\ge 2a$, with equality at $x = 1$.",
+    "notes": [
+     "",
+     "AM–GM: $x + \\frac1x \\ge 2$.",
+     "",
+     "AM–GM gives $2\\sqrt{ax \\cdot \\frac ax} = 2a$, not $a^2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$x + \\frac1x \\ge 2$ for $x > 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-059",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 59,
+    "label": "DSSSB PGT 2021 · Q159"
+   },
+   "en": {
+    "q": "If $a$, $b$, $c$ are positive real numbers and all are not equal, and $a + b + c = 1$ then the least value of $\\left(\\frac1a - 1\\right)^2\\left(\\frac1b - 1\\right)^2\\left(\\frac1c - 1\\right)^2$ is:",
+    "options": [
+     "64",
+     "16",
+     "80",
+     "32"
+    ],
+    "explanation": "$\\frac1a - 1 = \\frac{b + c}{a} \\ge \\frac{2\\sqrt{bc}}{a}$, and similarly for $b$ and $c$.\nMultiplying: $\\left(\\frac1a - 1\\right)\\left(\\frac1b - 1\\right)\\left(\\frac1c - 1\\right) \\ge \\frac{8abc}{abc} = 8$; squaring gives at least 64.\nEquality only at $a = b = c = \\frac13$ (each factor 2).\nSince $a, b, c$ are not all equal, the value is always greater than 64, but it comes as close to 64 as we like as $a, b, c \\to \\frac13$. So 64 is the greatest lower bound, the intended 'least value'.",
+    "notes": [
+     "$8^2$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "If $a + b + c = 1$: $\\left(\\frac1a - 1\\right)\\left(\\frac1b - 1\\right)\\left(\\frac1c - 1\\right) \\ge 8$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-060",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 60,
+    "label": "DSSSB PGT 2021 · Q160"
+   },
+   "en": {
+    "q": "If the product of $n$ positive real numbers $a_1, a_2, a_3, \\ldots, a_n$ is unity, then their sum is:",
+    "options": [
+     "Divisible by $n$",
+     "A positive integer",
+     "Never less than $n$",
+     "Equal to $n^2$"
+    ],
+    "explanation": "AM ≥ GM: $\\frac{a_1 + \\cdots + a_n}{n} \\ge (a_1a_2\\cdots a_n)^{1/n} = 1$, so the sum is at least $n$ (equal when all are 1).",
+    "notes": [
+     "The sum need not be an integer.",
+     "E.g. $2 + \\frac12 = 2.5$.",
+     "AM–GM.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Product fixed at 1 $\\Rightarrow$ sum $\\ge n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-061",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 61,
+    "label": "DSSSB PGT 2021 · Q161"
+   },
+   "en": {
+    "q": "The hyperbolas $x^2 - y^2 = a^2$ and $xy = c^2$",
+    "options": [
+     "Intersect orthogonally",
+     "Intersect but not orthogonally",
+     "Do not intersect",
+     "Meet at imaginary points"
+    ],
+    "explanation": "At a common point: from $x^2 - y^2 = a^2$, $y' = \\frac xy$; from $xy = c^2$, $y' = -\\frac yx$.\nThe product of the slopes is $-1$, so they cut at right angles. They do meet: $x^2 - \\frac{c^4}{x^2} = a^2$ has a positive root for $x^2$.",
+    "notes": [
+     "Slopes $\\frac xy$ and $-\\frac yx$.",
+     "",
+     "They meet in two real points.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "$x^2 - y^2 = a^2$ and $xy = c^2$ are orthogonal for all $a$, $c$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-062",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 62,
+    "label": "DSSSB PGT 2021 · Q162"
+   },
+   "en": {
+    "q": "The locus of the middle points of the parallel chords of a parabola is",
+    "options": [
+     "A straight line passing through its vertex",
+     "A straight line parallel to the axis of the parabola",
+     "A directrix",
+     "A straight line perpendicular to the axis of the parabola"
+    ],
+    "explanation": "For $y^2 = 4ax$ and chords of slope $m$, the mid-point $(h, k)$ satisfies $T = S_1$, which gives $k = \\frac{2a}{m}$.\nSo the locus is the line $y = \\frac{2a}{m}$, parallel to the axis: a diameter of the parabola.",
+    "notes": [
+     "That is true for central conics (diameters pass through the centre).",
+     "$y = \\frac{2a}{m}$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "Every diameter of a parabola is parallel to its axis."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-063",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-11-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 63,
+    "label": "DSSSB PGT 2021 · Q163"
+   },
+   "en": {
+    "q": "If the straight lines $y = mx$ and $y = m'x$ be a pair of conjugate diameters of an ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$, then",
+    "options": [
+     "$mm' = \\frac{a^2}{b^2}$",
+     "$mm' = \\frac{b^2}{a^2}$",
+     "$mm' = -\\frac{a^2}{b^2}$",
+     "$mm' = -\\frac{b^2}{a^2}$"
+    ],
+    "explanation": "The diameter bisecting chords of slope $m$ is $y = -\\frac{b^2}{a^2m}x$.\nSo $y = mx$ and $y = m'x$ are conjugate when $mm' = -\\frac{b^2}{a^2}$.",
+    "notes": [
+     "",
+     "Sign: the product is negative.",
+     "$a$ and $b$ interchanged.",
+     "Conjugate-diameter condition."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.6 Ellipse"
+    ],
+    "facts": [
+     "Conjugate diameters: ellipse $mm' = -\\frac{b^2}{a^2}$; hyperbola $mm' = \\frac{b^2}{a^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-064",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 64,
+    "label": "DSSSB PGT 2021 · Q164"
+   },
+   "en": {
+    "q": "The equation $3x^2 + 2xy + 3y^2 - 16x + 20 = 0$ represents",
+    "options": [
+     "A parabola",
+     "An ellipse",
+     "A circle",
+     "A hyperbola"
+    ],
+    "explanation": "$a = 3$, $h = 1$, $b = 3$, $g = -8$, $f = 0$, $c = 20$: $h^2 - ab = 1 - 9 < 0$ and $\\Delta = abc + 2fgh - af^2 - bg^2 - ch^2 = 180 - 192 - 20 = -32 \\ne 0$.\nSo it is an ellipse (not a circle, since $h \\ne 0$). Centre $(3, -1)$; shifting there gives $3X^2 + 2XY + 3Y^2 = 4$, a real ellipse.",
+    "notes": [
+     "Needs $h^2 = ab$.",
+     "$h^2 < ab$, $\\Delta \\ne 0$.",
+     "A circle needs $a = b$ and $h = 0$.",
+     "Needs $h^2 > ab$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.3 General equation of the second degree"
+    ],
+    "facts": [
+     "$\\Delta \\ne 0$: $h^2 < ab$ ellipse, $= ab$ parabola, $> ab$ hyperbola."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-065",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 65,
+    "label": "DSSSB PGT 2021 · Q165"
+   },
+   "en": {
+    "q": "The eccentricity and semi-latus rectum of the curve $\\frac1r = 8 + 5\\cos\\theta$ are respectively",
+    "options": [
+     "$\\frac18, 8$",
+     "$\\frac58, \\frac18$",
+     "$\\frac18, \\frac58$",
+     "$\\frac58, 8$"
+    ],
+    "explanation": "Divide by 8: $\\frac{1/8}{r} = 1 + \\frac58\\cos\\theta$, the form $\\frac lr = 1 + e\\cos\\theta$.\nSo $e = \\frac58$ and the semi-latus rectum is $l = \\frac18$.",
+    "notes": [
+     "",
+     "$e = \\frac58$, $l = \\frac18$.",
+     "Order reversed.",
+     "$l$ is $\\frac18$, not 8."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.8 Polar equation of a conic; common tangents (PGT)"
+    ],
+    "facts": [
+     "Polar conic $\\frac lr = 1 + e\\cos\\theta$: make the constant term 1 first."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-066",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 66,
+    "label": "DSSSB PGT 2021 · Q166"
+   },
+   "en": {
+    "q": "The diameter of the parabola $x^2 = 4ay$ is parallel to",
+    "options": [
+     "$y$-axis",
+     "$x$-axis",
+     "A line equally inclined to co-ordinate axis",
+     "The straight line $y + 3x = 0$"
+    ],
+    "explanation": "Every diameter of a parabola (locus of mid-points of parallel chords) is parallel to its axis.\nThe axis of $x^2 = 4ay$ is the $y$-axis; chords of slope $m$ have mid-points on $x = 2am$.",
+    "notes": [
+     "Axis of $x^2 = 4ay$.",
+     "That is the axis of $y^2 = 4ax$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "Diameters of a parabola are parallel to its axis."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-067",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-11-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 67,
+    "label": "DSSSB PGT 2021 · Q167"
+   },
+   "en": {
+    "q": "The equation of the diameter of the ellipse $3x^2 + 4y^2 = 5$ conjugate to the diameter $y + 3x = 0$ is",
+    "options": [
+     "$3y - x = 0$",
+     "$y - 4x = 0$",
+     "$x - 4y = 0$",
+     "$y - 3x = 0$"
+    ],
+    "explanation": "$a^2 = \\frac53$, $b^2 = \\frac54$, so conjugate slopes satisfy $mm' = -\\frac{b^2}{a^2} = -\\frac34$.\nWith $m = -3$: $m' = \\frac14$, giving $y = \\frac x4$, i.e. $x - 4y = 0$.",
+    "notes": [
+     "Slope $\\frac13$ gives $mm' = -1$ (perpendicular, not conjugate).",
+     "",
+     "$mm' = -\\frac34$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.6 Ellipse"
+    ],
+    "facts": [
+     "Conjugate diameters of $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$: $mm' = -\\frac{b^2}{a^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-068",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-11-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 68,
+    "label": "DSSSB PGT 2021 · Q168"
+   },
+   "en": {
+    "q": "For what value of $a$, the equation $axy - 8x + 9y - 12 = 0$ represents a pair of straight lines?",
+    "options": [
+     "$a = 6$",
+     "$a = 0, 6$",
+     "$a = 0, 2$",
+     "$a = 0$"
+    ],
+    "explanation": "Coefficients of $x^2$, $y^2$ are 0; $h = \\frac a2$, $g = -4$, $f = \\frac92$, $c = -12$. $\\Delta = 2fgh - ch^2 = -18a + 3a^2 = 3a(a - 6) = 0$ gives $a = 0$ or 6.\n$a = 0$ leaves the single line $-8x + 9y - 12 = 0$, so $a = 6$: $6xy - 8x + 9y - 12 = (2x + 3)(3y - 4)$.",
+    "notes": [
+     "Factorises as $(2x + 3)(3y - 4)$.",
+     "$a = 0$ gives one line, not a pair.",
+     "",
+     "Only one line."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.2 Pair of straight lines"
+    ],
+    "facts": [
+     "Pair of lines: $\\Delta = abc + 2fgh - af^2 - bg^2 - ch^2 = 0$ (and the equation must be of second degree)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-069",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 69,
+    "label": "DSSSB PGT 2021 · Q169"
+   },
+   "en": {
+    "q": "The equation of the bisectors of the angle between the lines $x^2 - 4xy - y^2 = 0$ is",
+    "options": [
+     "$x^2 - y^2 - 2xy = 0$",
+     "$x^2 - y^2 + xy = 0$",
+     "$x^2 - y^2 - xy = 0$",
+     "$2x^2 - 2y^2 + xy = 0$"
+    ],
+    "explanation": "For $ax^2 + 2hxy + by^2 = 0$ the bisectors are $\\frac{x^2 - y^2}{a - b} = \\frac{xy}{h}$.\nHere $a = 1$, $h = -2$, $b = -1$: $\\frac{x^2 - y^2}{2} = \\frac{xy}{-2}$, i.e. $x^2 - y^2 + xy = 0$.",
+    "notes": [
+     "",
+     "Formula with $h = -2$.",
+     "Sign of $h$ lost.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.2 Pair of straight lines"
+    ],
+    "facts": [
+     "Bisectors of $ax^2 + 2hxy + by^2 = 0$: $\\frac{x^2 - y^2}{a - b} = \\frac{xy}{h}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-070",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 70,
+    "label": "DSSSB PGT 2021 · Q170"
+   },
+   "en": {
+    "q": "Which of the following is the eccentricity of parabola $x^2 = 4ay$?",
+    "options": [
+     "$\\sqrt{\\frac27}$",
+     "$\\frac12$",
+     "$\\frac52$",
+     "1"
+    ],
+    "explanation": "Every parabola has eccentricity 1: each point is equidistant from the focus $(0, a)$ and the directrix $y = -a$.",
+    "notes": [
+     "",
+     "$e < 1$ is an ellipse.",
+     "$e > 1$ is a hyperbola.",
+     "Parabola: $e = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "$e = 1$ parabola, $e < 1$ ellipse, $e > 1$ hyperbola."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-071",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 71,
+    "label": "DSSSB PGT 2021 · Q171"
+   },
+   "en": {
+    "q": "A solution-curve of the equation $xy' = 2y$, passing through $(1, 2)$ also passes through",
+    "options": [
+     "$(24, 5)$",
+     "$(0, 0)$",
+     "$(4, 12)$",
+     "$(2, 3)$"
+    ],
+    "explanation": "Separate: $\\frac{dy}{y} = \\frac{2\\,dx}{x}$, so $y = Cx^2$. Through $(1, 2)$: $C = 2$, $y = 2x^2$.\n$(0, 0)$ lies on it; at $x = 2, 4, 24$ the curve has $y = 8, 32, 1152$, so the other points do not.",
+    "notes": [
+     "",
+     "$y = 2x^2$ passes through the origin.",
+     "$2 \\cdot 16 = 32 \\ne 12$.",
+     "$2 \\cdot 4 = 8 \\ne 3$."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$xy' = ky$ gives $y = Cx^k$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-073",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 73,
+    "label": "DSSSB PGT 2021 · Q173"
+   },
+   "en": {
+    "q": "The singular solution of $(xp - y)^2 = p^2 - 1$, where $p = \\frac{dy}{dx}$ is",
+    "options": [
+     "$x^2 + y^2 = 2$",
+     "$x^2 - y^2 = 1$",
+     "$x^2 - y^2 = 2$",
+     "$x^2 + y^2 = 1$"
+    ],
+    "explanation": "Clairaut form $y = px \\mp \\sqrt{p^2 - 1}$; general solution $(cx - y)^2 = c^2 - 1$.\nAs a quadratic in $c$: $c^2(x^2 - 1) - 2cxy + (y^2 + 1) = 0$.\nIts discriminant: $x^2y^2 - (x^2 - 1)(y^2 + 1) = 0 \\Rightarrow y^2 - x^2 + 1 = 0$, i.e. $x^2 - y^2 = 1$.",
+    "notes": [
+     "",
+     "$c$-discriminant of $(cx - y)^2 = c^2 - 1$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.3 Higher degree equations; singular solutions (PGT)"
+    ],
+    "facts": [
+     "Singular solution of a Clairaut equation: eliminate $c$ between the general solution and its $c$-derivative."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-075",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 75,
+    "label": "DSSSB PGT 2021 · Q175"
+   },
+   "en": {
+    "q": "The differential equation $y\\,dx - 2x\\,dy = 0$, represents",
+    "options": [
+     "A family of parabolas",
+     "A family of catenaries",
+     "A family of straight lines",
+     "A family of circles"
+    ],
+    "explanation": "$\\frac{dx}{x} = \\frac{2\\,dy}{y}$ gives $\\log x = 2\\log y + \\log c$, i.e. $x = cy^2$.\nThese are parabolas with vertex at the origin and axis along the $x$-axis.",
+    "notes": [
+     "$x = cy^2$.",
+     "Catenaries are $y = c\\cosh\\frac xc$.",
+     "Would need $x = cy$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Separate the variables, then read off the curve family."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-076",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 76,
+    "label": "DSSSB PGT 2021 · Q176"
+   },
+   "en": {
+    "q": "If the equation $M\\,dx + N\\,dy = 0$ has one and only one solution, then the number of integrating-factor is",
+    "options": [
+     "Two",
+     "One",
+     "Infinite",
+     "Finite"
+    ],
+    "explanation": "If $\\mu$ is an integrating factor with $\\mu(M\\,dx + N\\,dy) = du$, then $\\mu\\,\\phi(u)$ is one too for every function $\\phi$:\n$\\mu\\phi(u)(M\\,dx + N\\,dy) = \\phi(u)\\,du = d\\left(\\int \\phi(u)\\,du\\right)$.\nSo there are infinitely many integrating factors.",
+    "notes": [
+     "",
+     "",
+     "$\\mu\\,\\phi(u)$ for any $\\phi$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "If $\\mu$ is an integrating factor, so is $\\mu\\,\\phi(u)$ where $u = c$ is the solution."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-077",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 77,
+    "label": "DSSSB PGT 2021 · Q177"
+   },
+   "en": {
+    "q": "Which of the following is not an integrating factor to the equation $x\\,dy - y\\,dx = 0$?",
+    "options": [
+     "$\\frac{1}{xy}$",
+     "$\\frac{1}{x^2}$",
+     "$\\frac1x$",
+     "$\\frac{1}{x^2 + y^2}$"
+    ],
+    "explanation": "$\\frac{x\\,dy - y\\,dx}{x^2} = d\\left(\\frac yx\\right)$, $\\frac{x\\,dy - y\\,dx}{xy} = d\\left(\\log\\frac yx\\right)$, $\\frac{x\\,dy - y\\,dx}{x^2 + y^2} = d\\left(\\tan^{-1}\\frac yx\\right)$: all exact.\nWith $\\frac1x$: $dy - \\frac yx\\,dx$, where $\\frac{\\partial}{\\partial y}\\left(-\\frac yx\\right) = -\\frac1x \\ne 0 = \\frac{\\partial}{\\partial x}(1)$: not exact.",
+    "notes": [
+     "Gives $d(\\log\\frac yx)$.",
+     "Gives $d(\\frac yx)$.",
+     "Not exact.",
+     "Gives $d(\\tan^{-1}\\frac yx)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$x\\,dy - y\\,dx$ has integrating factors $\\frac1{x^2}$, $\\frac1{y^2}$, $\\frac1{xy}$, $\\frac1{x^2 + y^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-078",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-08-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 78,
+    "label": "DSSSB PGT 2021 · Q178"
+   },
+   "en": {
+    "q": "The solution $y = 0$ of the equation $9yp^2 + 4 = 0$, $\\left(p = \\frac{dy}{dx}\\right)$ is",
+    "options": [
+     "Nodal-locus",
+     "Singular solution",
+     "Tac-locus",
+     "Cuspidal-locus"
+    ],
+    "explanation": "$p^2 = -\\frac{4}{9y}$ gives $\\frac32\\sqrt{-y}\\,dy = \\pm dx$, so the general solution is $(x - c)^2 + y^3 = 0$.\n$c$-discriminant: $\\frac{\\partial}{\\partial c} = 0 \\Rightarrow x = c$, giving $y^3 = 0$. $p$-discriminant of $9yp^2 + 4 = 0$: $0 - 4(9y)(4) = 0 \\Rightarrow y = 0$.\n$y$ appears once in the $p$-discriminant and cubed in the $c$-discriminant: a cusp locus. ($y = 0$ does not satisfy the equation, so it is not a singular solution.)",
+    "notes": [
+     "A node locus is squared in the $c$-discriminant and absent from the $p$-discriminant.",
+     "$y = 0$ does not satisfy the equation.",
+     "A tac locus is squared in the $p$-discriminant and absent from the $c$-discriminant.",
+     "Once in $p$-disc., cubed in $c$-disc."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.3 Higher degree equations; singular solutions (PGT)"
+    ],
+    "facts": [
+     "Cusp locus: once in the $p$-discriminant, cubed in the $c$-discriminant."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-079",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 79,
+    "label": "DSSSB PGT 2021 · Q179"
+   },
+   "en": {
+    "q": "The $p$-discriminant does not contain one of the following:",
+    "options": [
+     "Nodal-locus",
+     "Envelope",
+     "Tac-locus",
+     "Cuspidal-locus"
+    ],
+    "explanation": "The $p$-discriminant contains the envelope (singular solution), the tac-locus (squared) and the cusp-locus (once).\nThe nodal locus appears only in the $c$-discriminant (squared).",
+    "notes": [
+     "Only in the $c$-discriminant.",
+     "In both discriminants.",
+     "In the $p$-discriminant, squared.",
+     "In both."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.3 Higher degree equations; singular solutions (PGT)"
+    ],
+    "facts": [
+     "$p$-disc: $E \\cdot T^2 \\cdot C = 0$; $c$-disc: $E \\cdot N^2 \\cdot C^3 = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-080",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 80,
+    "label": "DSSSB PGT 2021 · Q180"
+   },
+   "en": {
+    "q": "The integrating factor of the differential equation $xp - y = x\\cos x$ is",
+    "options": [
+     "$e^{1/x}$",
+     "$\\frac1x$",
+     "$x$",
+     "$e^{-1/x^2}$"
+    ],
+    "explanation": "Divide by $x$: $\\frac{dy}{dx} - \\frac yx = \\cos x$, linear with $P = -\\frac1x$.\nIF $= e^{\\int -\\frac1x dx} = e^{-\\log x} = \\frac1x$.",
+    "notes": [
+     "",
+     "$e^{-\\log x}$.",
+     "Sign of $P$ lost.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Linear $y' + Py = Q$: IF $= e^{\\int P\\,dx}$, after making the coefficient of $y'$ equal to 1."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-081",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 81,
+    "label": "DSSSB PGT 2021 · Q181"
+   },
+   "en": {
+    "q": "If $A$ is an idempotent matrix and $A + B = I$, then $B$ is:",
+    "options": [
+     "An involutory matrix",
+     "An idempotent matrix",
+     "A null matrix",
+     "A nilpotent matrix"
+    ],
+    "explanation": "$B = I - A$, so $B^2 = I - 2A + A^2 = I - 2A + A = I - A = B$.\n$B$ is idempotent (and $AB = BA = O$).",
+    "notes": [
+     "$B^2 = B$, not $I$.",
+     "$(I - A)^2 = I - A$.",
+     "Only if $A = I$.",
+     "Only if $B = O$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "$A$ idempotent $\\Rightarrow I - A$ idempotent."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-084",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 84,
+    "label": "DSSSB PGT 2021 · Q184"
+   },
+   "en": {
+    "q": "If $A$ and $B$ are orthogonal matrices and $\\det(A) + \\det(B) = 0$ then $(A + B)$ is a",
+    "options": [
+     "Singular",
+     "Idempotent",
+     "Non-singular",
+     "Orthogonal"
+    ],
+    "explanation": "$A + B = A(B^T + A^T)B = A(A + B)^TB$, using $AA^T = I$ and $B^TB = I$.\nTaking determinants: $|A + B| = |A|\\,|A + B|\\,|B|$, and $|A|\\,|B| = -1$ (determinants $\\pm1$ of opposite signs).\nSo $|A + B| = -|A + B|$, i.e. $|A + B| = 0$.",
+    "notes": [
+     "$|A + B| = 0$.",
+     "",
+     "",
+     "E.g. $A = I$, $B = \\mathrm{diag}(-1, 1)$ give $A + B = \\mathrm{diag}(0, 2)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "Orthogonal $A$, $B$ with $|A| = -|B|$ $\\Rightarrow$ $A + B$ singular."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-085",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 85,
+    "label": "DSSSB PGT 2021 · Q185"
+   },
+   "en": {
+    "q": "For what value of $\\lambda$, the system of equation $3x + 2y + z = 10$, $2x + 3y + 2z = 10$, $x + 2y + \\lambda z = 10$ is inconsistent?",
+    "options": [
+     "1.3",
+     "1.5",
+     "1.4",
+     "1.6"
+    ],
+    "explanation": "$\\det = 3(3\\lambda - 4) - 2(2\\lambda - 2) + 1(4 - 3) = 5\\lambda - 7$, zero at $\\lambda = \\frac75 = 1.4$.\nThen the coefficient rank is 2 but the augmented rank is 3: $\\begin{vmatrix}3&2&10\\\\2&3&10\\\\1&2&10\\end{vmatrix} = 20 \\ne 0$. So the system is inconsistent.",
+    "notes": [
+     "Unique solution.",
+     "Unique solution.",
+     "$5\\lambda - 7 = 0$ and $D_z \\ne 0$.",
+     "Unique solution."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "No solution: $\\Delta = 0$ and some $\\Delta_i \\ne 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-086",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 86,
+    "label": "DSSSB PGT 2021 · Q186"
+   },
+   "en": {
+    "q": "The skew symmetric determinant of odd order is",
+    "options": [
+     "$-1$",
+     "0",
+     "1",
+     "Square of a polynomial function of its elements"
+    ],
+    "explanation": "$|A| = |A^T| = |-A| = (-1)^n|A| = -|A|$ for odd $n$, so $|A| = 0$.\n(For even order it is a perfect square, option (d).)",
+    "notes": [
+     "",
+     "$|A| = -|A|$.",
+     "",
+     "That is the even-order result."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "Skew-symmetric determinant: 0 for odd order, a perfect square for even order."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-089",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 89,
+    "label": "DSSSB PGT 2021 · Q189"
+   },
+   "en": {
+    "q": "Rank of singular matrix of order 5 can be at most",
+    "options": [
+     "5",
+     "2",
+     "3",
+     "4"
+    ],
+    "explanation": "Singular means $|A| = 0$, so the rank is less than 5.\nRank 4 is possible, e.g. $\\operatorname{diag}(1, 1, 1, 1, 0)$. So at most 4.",
+    "notes": [
+     "Rank 5 means non-singular.",
+     "Possible but not the maximum.",
+     "Possible but not the maximum.",
+     "$n - 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "An $n \\times n$ matrix is singular $\\iff$ its rank is less than $n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-090",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 90,
+    "label": "DSSSB PGT 2021 · Q190"
+   },
+   "en": {
+    "q": "If $A$ and $B$ are orthogonal matrices then $\\begin{pmatrix}A&O\\\\O&B\\end{pmatrix}$ is:",
+    "options": [
+     "Symmetric",
+     "Singular",
+     "Skew-symmetric",
+     "Orthogonal"
+    ],
+    "explanation": "Let $C = \\begin{pmatrix}A&O\\\\O&B\\end{pmatrix}$. Then $CC^T = \\begin{pmatrix}AA^T&O\\\\O&BB^T\\end{pmatrix} = I$, so $C$ is orthogonal.\n(Also $|C| = |A|\\,|B| = \\pm1$, so it is non-singular.)",
+    "notes": [
+     "Only if $A$ and $B$ are symmetric.",
+     "$|C| = \\pm1$.",
+     "",
+     "$CC^T = I$ block by block."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "A block-diagonal matrix of orthogonal blocks is orthogonal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-091",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 91,
+    "label": "DSSSB PGT 2021 · Q191"
+   },
+   "en": {
+    "q": "If LCM and HCF of two quadratic equations are $(x^3 + 2x^2 - x - 2)$ and $(x + 2)$ respectively then, the equations are -",
+    "options": [
+     "$x^2 - 3x + 2$ and $x^2 - x - 2$",
+     "$x^2 + 3x + 2$ and $x^2 + x - 2$",
+     "$x^2 + 3x + 2$ and $x^2 + x + 2$",
+     "$x^2 - 3x + 2$ and $x^2 + x - 2$"
+    ],
+    "explanation": "$x^3 + 2x^2 - x - 2 = x^2(x + 2) - (x + 2)$ $= (x + 2)(x - 1)(x + 1)$.\nEach quadratic contains the HCF $x + 2$ and one of the other factors: $(x + 2)(x + 1) = x^2 + 3x + 2$ and $(x + 2)(x - 1) = x^2 + x - 2$.",
+    "notes": [
+     "These are $(x - 1)(x - 2)$ and $(x - 2)(x + 1)$: neither has the factor $x + 2$.",
+     "Correct: $(x + 2)(x + 1)$ and $(x + 2)(x - 1)$.",
+     "$x^2 + x + 2$ has no factor $x + 2$.",
+     "$x^2 - 3x + 2 = (x - 1)(x - 2)$ lacks the HCF $x + 2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "HCF × LCM = product of the two polynomials; share out the LCM's factors around the HCF."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-092",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 92,
+    "label": "DSSSB PGT 2021 · Q192"
+   },
+   "en": {
+    "q": "Two polynomials $f(x)$ and $g(x)$ are having G.C.D. and L.C.M. $(x^2 + x - 2)$ and $(x^4 + 3x^3 - 3x^2 - 7x + 6)$ respectively. If $f(x) = x^3 + 4x^2 + x - 6$, then what is the value of $g(x)$ -",
+    "options": [
+     "$x^3 - 3x - 2$",
+     "$x^3 - 3x^2 - 2$",
+     "$x^3 - 3x^2 + 2$",
+     "$x^3 - 3x + 2$"
+    ],
+    "explanation": "$f(x)\\,g(x) = \\text{GCD} \\times \\text{LCM}$.\nDividing, $\\text{LCM} = f(x)(x - 1)$, so $g(x) = \\text{GCD} \\times (x - 1)$ $= (x^2 + x - 2)(x - 1) = x^3 - 3x + 2$.",
+    "notes": [
+     "$x^3 - 3x - 2 = (x + 1)^2(x - 2)$ does not contain the GCD.",
+     "Not divisible by the GCD $x^2 + x - 2$.",
+     "Not divisible by the GCD $x^2 + x - 2$.",
+     "Correct: $(x - 1)^2(x + 2)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "For polynomials, $f(x)\\,g(x) = \\text{GCD} \\times \\text{LCM}$ (up to a constant factor)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-094",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 94,
+    "label": "DSSSB PGT 2021 · Q194"
+   },
+   "en": {
+    "q": "If $x^n - px^2 + r = 0$ is having equal roots, then relation between $n$, $p$ and $r$ is -",
+    "options": [
+     "$n^n r^{n-2} = 4p^n (n - 2)^{n-2}$",
+     "$n^n r^{n-1} = 4p(n - 2)^{n-1}$",
+     "$n^n r^n = 4p(n - 2)^n$",
+     "$n^{n-2} r^{n-1} = 4p^n (n - 2)^{n-2}$"
+    ],
+    "explanation": "A repeated root also satisfies $f'(x) = nx^{n-1} - 2px = 0$, so $x^{n-2} = \\frac{2p}{n}$.\nThen $f(x) = x^2(x^{n-2} - p) + r = 0$ gives $x^2 = \\frac{nr}{p(n - 2)}$.\nEquate $(x^2)^{n-2} = (x^{n-2})^2$: $\\left(\\frac{nr}{p(n - 2)}\\right)^{n-2} = \\frac{4p^2}{n^2}$, i.e. $n^n r^{n-2} = 4p^n(n - 2)^{n-2}$.",
+    "notes": [
+     "Correct.",
+     "Wrong powers of $p$ and $r$.",
+     "Wrong powers of $p$ and $r$.",
+     "Wrong powers of $n$ and $r$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "A repeated root of $f(x) = 0$ is a common root of $f(x) = 0$ and $f'(x) = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-095",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 95,
+    "label": "DSSSB PGT 2021 · Q195"
+   },
+   "en": {
+    "q": "The sum of coefficients of integral power of $x$ in the binomial expansion of $(1 - 2\\sqrt{x})^{50}$ is -",
+    "options": [
+     "$\\frac{1}{2}(3^{50} - 1)$",
+     "$\\frac{1}{2}(2^{50} + 1)$",
+     "$\\frac{1}{2}(3^{50} + 1)$",
+     "$\\frac{1}{2}(3^{50})$"
+    ],
+    "explanation": "The term $\\binom{50}{k}(-2\\sqrt{x})^k$ has an integral power of $x$ when $k$ is even.\nWith $f(t) = (1 - 2t)^{50}$, the even-$k$ coefficients add up to $\\frac{f(1) + f(-1)}{2} = \\frac{(-1)^{50} + 3^{50}}{2} = \\frac{3^{50} + 1}{2}$.",
+    "notes": [
+     "The odd-$k$ sum is $\\frac{1 - 3^{50}}{2}$; this is its negative.",
+     "Uses 2 in place of 3.",
+     "Correct.",
+     "Misses the $+1$ that comes from $f(1) = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "Sum of the even-index coefficients of $f(t)$ is $\\frac{f(1) + f(-1)}{2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-097",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 97,
+    "label": "DSSSB PGT 2021 · Q197"
+   },
+   "en": {
+    "q": "Which of the following is an example of a polynomial equation not having any real roots?",
+    "options": [
+     "$x^4 - 9 = 0$",
+     "$x^3 + 7 = 0$",
+     "$x^2 - x + 4 = 0$",
+     "$x^3 + 3 = 0$"
+    ],
+    "explanation": "$x^2 - x + 4 = 0$ has discriminant $1 - 16 = -15 < 0$: no real roots.\n$x^4 = 9$ gives $x = \\pm\\sqrt3$, and every real polynomial of odd degree ($x^3 + 7$, $x^3 + 3$) has a real root.\nThe board cancelled this question, but as printed it is sound: exactly one option, (c), has no real root.",
+    "notes": [
+     "Real roots $\\pm\\sqrt{3}$.",
+     "Real root $-\\sqrt[3]{7}$.",
+     "Correct: discriminant $-15$.",
+     "Real root $-\\sqrt[3]{3}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "A real polynomial of odd degree always has at least one real root."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-098",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 98,
+    "label": "DSSSB PGT 2021 · Q198"
+   },
+   "en": {
+    "q": "Let $P(x)$ be a quadratic polynomial such that $P(0) = 1$. If $P(x)$ leaves remainder 4 when divided by $x - 1$ and it leaves remainder 6 when divided by $x + 1$, then",
+    "options": [
+     "$P(-2) = 11$",
+     "$P(-2) = 19$",
+     "$P(2) = 11$",
+     "$P(2) = 19$"
+    ],
+    "explanation": "Let $P(x) = ax^2 + bx + 1$. Then $P(1) = a + b + 1 = 4$ and $P(-1) = a - b + 1 = 6$, so $a = 4$, $b = -1$.\n$P(x) = 4x^2 - x + 1$: $P(-2) = 16 + 2 + 1 = 19$, while $P(2) = 15$.",
+    "notes": [
+     "$P(-2) = 19$.",
+     "Correct.",
+     "$P(2) = 15$.",
+     "$P(2) = 15$; 19 is $P(-2)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Remainder theorem: dividing $P(x)$ by $x - a$ leaves remainder $P(a)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-100",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 100,
+    "label": "DSSSB PGT 2021 · Q200"
+   },
+   "en": {
+    "q": "The value of $b$, if $x^3 - 5x^2 + 4bx + 3$ be divisible by $(x - 3)$, is -",
+    "options": [
+     "$\\frac{2}{5}$",
+     "$\\frac{7}{3}$",
+     "$\\frac{3}{4}$",
+     "$\\frac{5}{4}$"
+    ],
+    "explanation": "Factor theorem: $f(3) = 27 - 45 + 12b + 3 = 12b - 15 = 0$, so $b = \\frac{5}{4}$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: $12b = 15$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$(x - a)$ divides $f(x)$ exactly when $f(a) = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-101",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 101,
+    "label": "DSSSB PGT 2021 · Q201"
+   },
+   "en": {
+    "q": "The equation $(x - a)^3 + (x - b)^3 + (x - c)^3 + (x - d)^3 = 0$, where $a$, $b$, $c$, $d$ are positive and not all equal, has-",
+    "options": [
+     "Only one real root",
+     "Two real roots",
+     "No real root",
+     "All roots are equal"
+    ],
+    "explanation": "$f'(x) = 3[(x - a)^2 + (x - b)^2$ $+ (x - c)^2 + (x - d)^2] > 0$ for every $x$ (the squares cannot all vanish, as $a$, $b$, $c$, $d$ are not all equal).\nSo $f$ is strictly increasing; a cubic runs from $-\\infty$ to $\\infty$, hence exactly one real root.",
+    "notes": [
+     "Correct.",
+     "A strictly increasing function crosses zero only once.",
+     "An odd-degree polynomial always has a real root.",
+     "A repeated root would need $f' = 0$ there."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "If $f'(x) > 0$ everywhere, $f(x) = 0$ has at most one real root."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-102",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 102,
+    "label": "DSSSB PGT 2021 · Q202"
+   },
+   "en": {
+    "q": "The polynomial $ax^3 + bx + c$ is divisible by $x^2 + px + 1$ if:",
+    "options": [
+     "$ac = b^2$",
+     "$b^2 - c^2 = ab$",
+     "$a^2 + b^2 = ac$",
+     "$a^2 - c^2 = ab$"
+    ],
+    "explanation": "Write $ax^3 + bx + c = (x^2 + px + 1)(ax + c)$ (the quotient's constant term must be $c$).\nComparing coefficients: $x^2$: $c + ap = 0$; $x$: $a + pc = b$.\nSo $p = -\\frac{c}{a}$ and $b = a - \\frac{c^2}{a}$, i.e. $a^2 - c^2 = ab$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Write the dividend as divisor × (unknown quotient) and compare coefficients."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-103",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 103,
+    "label": "DSSSB PGT 2021 · Q203"
+   },
+   "en": {
+    "q": "The remainder when $4x^4 - 10x^2 + 1$ is divided by $(x + 2)$ is:",
+    "options": [
+     "2",
+     "32",
+     "24",
+     "25"
+    ],
+    "explanation": "Remainder $= f(-2) = 4(16) - 10(4) + 1$ $= 64 - 40 + 1 = 25$.",
+    "notes": [
+     "",
+     "",
+     "Forgets the $+1$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Remainder theorem: the remainder on division by $x + 2$ is $f(-2)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-104",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 104,
+    "label": "DSSSB PGT 2021 · Q204"
+   },
+   "en": {
+    "q": "The rate at which the radius of a sphere changes over time is $\\frac{1}{2\\pi}$. When the radius is 5 cm, then the rate of change of the surface area of the sphere will be:",
+    "options": [
+     "$20$ cm$^2$/sec",
+     "$10$ cm$^2$/sec",
+     "$15$ cm$^2$/sec",
+     "$5$ cm$^2$/sec"
+    ],
+    "explanation": "$S = 4\\pi r^2$, so $\\frac{dS}{dt} = 8\\pi r\\frac{dr}{dt} = 8\\pi(5) \\cdot \\frac{1}{2\\pi} = 20$ cm$^2$/sec.",
+    "notes": [
+     "Correct.",
+     "Half the answer: uses $4\\pi r$ instead of $8\\pi r$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "For a sphere, $\\frac{dS}{dt} = 8\\pi r\\frac{dr}{dt}$ and $\\frac{dV}{dt} = 4\\pi r^2\\frac{dr}{dt}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-105",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 105,
+    "label": "DSSSB PGT 2021 · Q205"
+   },
+   "en": {
+    "q": "The arm length of an equilateral triangle increases at a rate of $\\sqrt{3}$ cm/sec. When the length of arm is 10 cm, then the area of triangle will increase by–",
+    "options": [
+     "$10$ cm$^2$/sec",
+     "$20$ cm$^2$/sec",
+     "$15$ cm$^2$/sec",
+     "$25$ cm$^2$/sec"
+    ],
+    "explanation": "'Arm' means side. $A = \\frac{\\sqrt3}{4}a^2$, so $\\frac{dA}{dt} = \\frac{\\sqrt3}{2}a\\frac{da}{dt} = \\frac{\\sqrt3}{2}(10)(\\sqrt3) = 15$ cm$^2$/sec.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "Area of an equilateral triangle of side $a$ is $\\frac{\\sqrt3}{4}a^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-106",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 106,
+    "label": "DSSSB PGT 2021 · Q206"
+   },
+   "en": {
+    "q": "A particle moving in a straight line has displacement $x$ feet in $t$ second, where $x = t^3 + 6t^2 + 15t$. Then at the end of first second the velocity and acceleration of the particle will be –",
+    "options": [
+     "20 feet/sec and 12 feet/sec$^2$",
+     "30 feet/sec and 18 feet/sec$^2$",
+     "20 feet/sec and 18 feet/sec$^2$",
+     "30 feet/sec and 12 feet/sec$^2$"
+    ],
+    "explanation": "$v = \\frac{dx}{dt} = 3t^2 + 12t + 15 = 30$ feet/sec at $t = 1$.\n$a = \\frac{dv}{dt} = 6t + 12 = 18$ feet/sec$^2$ at $t = 1$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     "12 is the acceleration at $t = 0$, not $t = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "Velocity $= \\frac{dx}{dt}$, acceleration $= \\frac{d^2x}{dt^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-107",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 107,
+    "label": "DSSSB PGT 2021 · Q207"
+   },
+   "en": {
+    "q": "The arm length of a cube is 10 cm. If the error in measuring the length of arm is 0.08 cm, the approximate value of the error in the volume of the cube will be:",
+    "options": [
+     "24 cm$^3$",
+     "15 cm$^3$",
+     "8 cm$^3$",
+     "12 cm$^3$"
+    ],
+    "explanation": "$V = a^3$, so $\\Delta V \\approx 3a^2\\,\\Delta a = 3(100)(0.08) = 24$ cm$^3$.",
+    "notes": [
+     "Correct.",
+     "",
+     "Drops the factor 3: $a^2\\,\\Delta a = 8$.",
+     "Half the answer."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "Small errors: $\\Delta y \\approx f'(x)\\,\\Delta x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-112",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 112,
+    "label": "DSSSB PGT 2021 · Q212"
+   },
+   "en": {
+    "q": "Consider the integrals, $I_1 = \\oint_c \\frac{e^z}{(z + 1)^4}\\,dz$, where $c$ is a circle $|z| = 2$ And $I_2 = \\oint_c \\frac{\\sin 3z}{z^2}\\,dz$, where $c$ is a circle $|z| = 1$. Then:",
+    "options": [
+     "$I_1 = \\frac{\\pi i e}{3},\\ I_2 = 2\\pi i$",
+     "$I_1 = \\frac{\\pi i}{3e},\\ I_2 = -6\\pi i$",
+     "$I_1 = \\frac{\\pi i e}{3},\\ I_2 = 0$",
+     "$I_1 = \\frac{\\pi i}{3e},\\ I_2 = 6\\pi i$"
+    ],
+    "explanation": "Cauchy's formula for derivatives: $I_1 = \\frac{2\\pi i}{3!}\\frac{d^3}{dz^3}e^z\\Big|_{z=-1}$ $= \\frac{2\\pi i}{6}e^{-1} = \\frac{\\pi i}{3e}$.\n$\\frac{\\sin 3z}{z^2} = \\frac{3z - \\frac{9z^3}{2} + \\ldots}{z^2} = \\frac{3}{z} - \\ldots$, residue 3, so $I_2 = 2\\pi i \\cdot 3 = 6\\pi i$.",
+    "notes": [
+     "$e$ belongs in the denominator ($e^{-1}$), and $I_2 = 6\\pi i$.",
+     "Sign of $I_2$ is wrong.",
+     "$I_2 \\ne 0$: the residue at 0 is 3.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$\\oint_c \\frac{f(z)}{(z - a)^{n+1}}dz = \\frac{2\\pi i}{n!}f^{(n)}(a)$ for $a$ inside $c$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-113",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 113,
+    "label": "DSSSB PGT 2021 · Q213"
+   },
+   "en": {
+    "q": "Consider the bilinear transformation $\\omega = \\frac{z - 1}{z + 1}$. Which of the following is true?",
+    "options": [
+     "The fixed point are $z = \\pm i$ and the transformation is hyperbolic",
+     "The fixed point are $z = 1, 2$ and the transformation is elliptic",
+     "The fixed point are $z = \\pm i$ and the transformation is elliptic",
+     "The fixed point are $z = \\pm 1$ and the transformation is hyperbolic"
+    ],
+    "explanation": "Fixed points: $z = \\frac{z - 1}{z + 1} \\Rightarrow z^2 + z = z - 1 \\Rightarrow z^2 = -1$, so $z = \\pm i$.\nWith $a = 1$, $b = -1$, $c = 1$, $d = 1$: $\\frac{(a + d)^2}{ad - bc} = \\frac{4}{2} = 2$, real and in $[0, 4)$, so the map is elliptic (multiplier $k = \\frac{1 - i}{1 + i} = -i$, $|k| = 1$).",
+    "notes": [
+     "Fixed points are right, but $|k| = 1$ makes it elliptic.",
+     "$1$ and $2$ are not fixed points.",
+     "Correct.",
+     "$\\pm1$ go to $0$ and $\\infty$, not to themselves."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "For $\\omega = \\frac{az + b}{cz + d}$: $\\frac{(a + d)^2}{ad - bc}$ in $[0, 4)$ means elliptic, $= 4$ parabolic, $> 4$ hyperbolic, otherwise loxodromic."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-114",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 114,
+    "label": "DSSSB PGT 2021 · Q214"
+   },
+   "en": {
+    "q": "Let $T: \\mathbb{C} \\cup \\{\\infty\\} \\to \\mathbb{C} \\cup \\{\\infty\\}$ be the bilinear transformation such that $T(i) = 0$, $T(0) = -1$, $T(-i) = \\infty$. Then the image of the region $\\{z \\in \\mathbb{C} : \\operatorname{Im}(z) = 0\\}$ under the mapping $\\omega = T(z)$ is:",
+    "options": [
+     "$\\{\\omega \\in \\mathbb{C} : |\\omega| > 1\\}$",
+     "$\\{\\omega \\in \\mathbb{C} : |\\omega| < 1\\}$",
+     "$\\{\\omega \\in \\mathbb{C} : |\\omega| = 1\\}$",
+     "$\\{\\omega \\in \\mathbb{C} : \\operatorname{Re}(\\omega) = 0, \\operatorname{Im}(\\omega) = 0\\}$"
+    ],
+    "explanation": "$T(i) = 0$ and $T(-i) = \\infty$ give $T(z) = k\\frac{z - i}{z + i}$; $T(0) = -k = -1$, so $k = 1$.\nFor real $z$, $|z - i| = |z + i|$, so $|T(z)| = 1$: the real axis goes onto the unit circle (the point $\\omega = 1$ is the image of $z = \\infty$).",
+    "notes": [
+     "$|\\omega| > 1$ is the image of the lower half-plane.",
+     "$|\\omega| < 1$ is the image of the upper half-plane.",
+     "Correct.",
+     "That is the single point 0."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$\\omega = \\frac{z - i}{z + i}$ maps the real axis onto $|\\omega| = 1$ and the upper half-plane onto $|\\omega| < 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-115",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 115,
+    "label": "DSSSB PGT 2021 · Q215"
+   },
+   "en": {
+    "q": "Consider the series $\\sum_{n=1}^{\\infty} \\frac{1}{(z^2 + 1)^n}$. Which of the following is true?",
+    "options": [
+     "The sum of the series is $z^2 + 1$",
+     "The sum of the series is $\\frac{1}{z^2}$",
+     "The series converges if $|z| < 1$",
+     "The sum of the series is $z^2 - 1$"
+    ],
+    "explanation": "Geometric series with ratio $q = \\frac{1}{z^2 + 1}$; it converges when $|z^2 + 1| > 1$.\nSum $= \\frac{q}{1 - q} = \\frac{1}{z^2 + 1 - 1} = \\frac{1}{z^2}$.",
+    "notes": [
+     "",
+     "Correct (where $|z^2 + 1| > 1$).",
+     "False: for $z = \\frac{i}{2}$, $|z| < 1$ but $z^2 + 1 = \\frac34$ and the series diverges.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$\\sum_{n \\ge 1} q^n = \\frac{q}{1 - q}$ for $|q| < 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-116",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 116,
+    "label": "DSSSB PGT 2021 · Q216"
+   },
+   "en": {
+    "q": "Let $f(z) = \\frac{\\cos(z - 1)}{z - 1}$, then,",
+    "options": [
+     "$f(z)$ has isolated essential singularity at $z = 1$",
+     "$f(z)$ has simple pole at $z = 1$",
+     "Residue of $f$ at $z = 1$ is undefined",
+     "Residue of $f$ at $z = 1$ is not equal to 1"
+    ],
+    "explanation": "$\\cos(z - 1) = 1 - \\frac{(z - 1)^2}{2!} + \\ldots$, so $f(z) = \\frac{1}{z - 1} - \\frac{z - 1}{2} + \\ldots$\nOnly one negative power: a simple pole at $z = 1$, with residue 1.",
+    "notes": [
+     "Only one negative power appears, so it is a pole.",
+     "Correct.",
+     "The residue is 1.",
+     "The residue is $\\cos 0 = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "If $g(a) \\ne 0$, then $\\frac{g(z)}{z - a}$ has a simple pole at $a$ with residue $g(a)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-117",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 3,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 117,
+    "label": "DSSSB PGT 2021 · Q217"
+   },
+   "en": {
+    "q": "The function $f(z) = e^{-\\frac{1}{z^2}}$ has-",
+    "options": [
+     "An essential singularity at $z = 0$",
+     "A pole at $z = 0$",
+     "An essential singularity at $z = \\infty$",
+     "No singularity"
+    ],
+    "explanation": "$e^{-1/z^2} = \\sum_{n \\ge 0}\\frac{(-1)^n}{n!\\,z^{2n}}$ has infinitely many negative powers of $z$, so $z = 0$ is an isolated essential singularity.\nCheck: along the real axis $f \\to 0$, along the imaginary axis $f = e^{1/y^2} \\to \\infty$, so $f$ has no limit at 0. At $\\infty$, $f \\to e^0 = 1$ (removable).\nThe board's key (d) 'No singularity' is wrong: $f$ is not defined at $z = 0$ and has no limit there, so $0$ is a singularity, and an essential one.",
+    "notes": [
+     "Correct.",
+     "A pole has only finitely many negative powers.",
+     "At $\\infty$ the function tends to 1: removable.",
+     "The board's key, but $f$ is not defined at 0 and has no limit there."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$e^{1/z}$, $e^{-1/z^2}$ and $\\sin\\frac1z$ all have an essential singularity at $z = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-118",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 118,
+    "label": "DSSSB PGT 2021 · Q218"
+   },
+   "en": {
+    "q": "If $f(z) = |z|^2$, then:",
+    "options": [
+     "$f$ is continuous but not differentiable at 0",
+     "$f$ is neither continuous nor differentiable at 0",
+     "$f$ is continuous and differentiable at 0",
+     "$f$ is discontinuous at 1"
+    ],
+    "explanation": "$|z|^2 = x^2 + y^2$ is continuous everywhere. At 0, $\\frac{f(h) - f(0)}{h} = \\frac{|h|^2}{h} = \\bar{h} \\to 0$, so $f'(0) = 0$.\nCauchy–Riemann ($u_x = 2x = v_y = 0$, $u_y = 2y = -v_x = 0$) hold only at the origin: differentiable only at $z = 0$, analytic nowhere.",
+    "notes": [
+     "It is differentiable at 0, with $f'(0) = 0$.",
+     "It is continuous everywhere.",
+     "Correct.",
+     "A polynomial in $x$, $y$ is continuous everywhere."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$|z|^2$ is differentiable only at $z = 0$ and analytic nowhere."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-120",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 120,
+    "label": "DSSSB PGT 2021 · Q220"
+   },
+   "en": {
+    "q": "Let $f(z) = \\frac{z^2 + 1}{z(z - 1)}$ then the product of the residues of $f$ at the poles is:",
+    "options": [
+     "1",
+     "0",
+     "2",
+     "$-2$"
+    ],
+    "explanation": "Simple poles at 0 and 1. $\\operatorname{Res}_{z=0} = \\frac{0 + 1}{0 - 1} = -1$ and $\\operatorname{Res}_{z=1} = \\frac{1 + 1}{1} = 2$.\nProduct $= -2$.",
+    "notes": [
+     "",
+     "",
+     "Drops the sign of the residue $-1$ at 0.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "At a simple pole $a$ of $\\frac{g(z)}{(z - a)h(z)}$ the residue is $\\frac{g(a)}{h(a)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-121",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 121,
+    "label": "DSSSB PGT 2021 · Q221"
+   },
+   "en": {
+    "q": "Which one of the following is not a convex set?",
+    "options": [
+     "$X = \\{(x, y) : x \\ge 3, y \\le 5\\}$",
+     "$X = \\{(x, y) : x^2 + y^2 < 9\\}$",
+     "$X = \\{(x, y) : 4 \\le x^2 + y^2 \\le 9\\}$",
+     "$X = \\{(x, y) : x^2 + y^2 \\le 9\\}$"
+    ],
+    "explanation": "The annulus $4 \\le x^2 + y^2 \\le 9$ has a hole: $(2.5, 0)$ and $(-2.5, 0)$ lie in it but their midpoint $(0, 0)$ does not.\nThe region in (a) (two half-planes) and the open and closed discs are convex.",
+    "notes": [
+     "Intersection of two half-planes: convex.",
+     "Open disc: convex.",
+     "Correct: the annulus is not convex.",
+     "Closed disc: convex."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "A set is convex if the segment joining any two of its points lies in it; intersections of convex sets are convex."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-123",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 123,
+    "label": "DSSSB PGT 2021 · Q223"
+   },
+   "en": {
+    "q": "The number of basic solution to the system - $3x_1 + 4x_2 + 3x_3 + 8x_4 = 7$, $2x_1 - 3x_2 + 2x_3 - 6x_4 = 13$ is",
+    "options": [
+     "12",
+     "4",
+     "9",
+     "6"
+    ],
+    "explanation": "With 2 equations and 4 unknowns there are at most $\\binom42 = 6$ choices of two basic variables.\nColumns $a_1 = a_3 = (3, 2)$ are equal and $a_4 = (8, -6) = 2a_2$, so the pairs $\\{x_1, x_3\\}$ and $\\{x_2, x_4\\}$ give singular bases.\nThe other 4 pairs have non-zero determinants: 4 basic solutions.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     "$\\binom42 = 6$ is only the maximum; two of the bases are singular."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Number of basic solutions $\\le \\binom{n}{m}$; a set of columns counts only if its determinant is non-zero."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-124",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 124,
+    "label": "DSSSB PGT 2021 · Q224"
+   },
+   "en": {
+    "q": "If a constraint is multiplied by a non-zero constant of a L.P.P, then the solution",
+    "options": [
+     "Does not change with original solution",
+     "is increased by addition of that non-zero constant",
+     "is increased by multiplication of that non-zero constant",
+     "is decreased by subtraction of that non-zero constant"
+    ],
+    "explanation": "Multiplying a constraint by $k \\ne 0$ (reversing the inequality if $k < 0$) describes the same set of points, so the feasible region and the optimal solution do not change.",
+    "notes": [
+     "Correct.",
+     "",
+     "Scaling the objective function scales the optimal value, but scaling a constraint changes nothing.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Scaling a constraint leaves the feasible region, and so the solution, unchanged."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-125",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 125,
+    "label": "DSSSB PGT 2021 · Q225"
+   },
+   "en": {
+    "q": "For a L.P.P, Minimise $z = x_1 + 5x_2 - 3x_3$, Subjected to $2x_1 + x_2 + x_3 = 5$, $3x_1 - x_2 + 4x_3 = 5$, $x_1, x_2, x_3 \\ge 0$, the solution $(1, 2, 1)$ is –",
+    "options": [
+     "A basic but not feasible solution",
+     "A basic feasible solution",
+     "A feasible but not basic solution",
+     "Neither basic nor feasible solution"
+    ],
+    "explanation": "Check: $2 + 2 + 1 = 5$ and $3 - 2 + 4 = 5$, and all values are $\\ge 0$: feasible.\nWith 2 constraints a basic solution has at most 2 non-zero variables; here all 3 are non-zero, so it is not basic.",
+    "notes": [
+     "It is feasible, and not basic.",
+     "Not basic: three non-zero variables.",
+     "Correct.",
+     "It is feasible."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "In a system of $m$ equations, a basic solution has at most $m$ non-zero variables."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-126",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 126,
+    "label": "DSSSB PGT 2021 · Q226"
+   },
+   "en": {
+    "q": "The solution $(1, 0, 1)$ to the system $x_1 + x_2 + x_3 = 2$, $x_1 - 3x_2 + x_3 = 2$, $2x_1 + 3x_2 + 4x_3 = 6$ is",
+    "options": [
+     "A basic feasible solution",
+     "Not a basic solution",
+     "A basic but not feasible solution",
+     "A non-degenerate basic feasible solution"
+    ],
+    "explanation": "It satisfies all three equations and is non-negative.\nThe coefficient matrix has determinant $-8 \\ne 0$, so all three variables form a basis and $(1, 0, 1)$ is the unique, basic solution.\nA basic variable ($x_2$) is zero, so it is a degenerate basic feasible solution.",
+    "notes": [
+     "Correct.",
+     "With a non-singular $3 \\times 3$ matrix the unique solution is basic.",
+     "All values are $\\ge 0$, so it is feasible.",
+     "Degenerate: the basic variable $x_2$ is 0."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "A basic feasible solution with a basic variable equal to 0 is degenerate."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-127",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 127,
+    "label": "DSSSB PGT 2021 · Q227"
+   },
+   "en": {
+    "q": "The minimum cost of the assignment problem: $\\begin{array}{|c|c|c|}\\hline 12 & 24 & 15\\\\ \\hline 23 & 18 & 24\\\\ \\hline 30 & 14 & 28\\\\ \\hline\\end{array}$ is -",
+    "options": [
+     "52",
+     "45",
+     "60",
+     "50"
+    ],
+    "explanation": "The six one-to-one assignments (rows to columns) cost 58, 50, 75, 78, 52 and 63.\nThe least is row 1 → column 1, row 2 → column 3, row 3 → column 2: $12 + 24 + 14 = 50$ (the Hungarian method gives the same).",
+    "notes": [
+     "Second best: $15 + 23 + 14$.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "For a $3 \\times 3$ assignment problem, listing the $3! = 6$ assignments checks the Hungarian method."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-129",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 129,
+    "label": "DSSSB PGT 2021 · Q229"
+   },
+   "en": {
+    "q": "The pay - off matrix for a strictly determinable game is - $\\begin{array}{|c|c|c|}\\hline b & 5 & 2\\\\ \\hline -1 & b & -8\\\\ \\hline -2 & 3 & b\\\\ \\hline\\end{array}$ The value of $b$ is -",
+    "options": [
+     "$-1 \\le b \\le 2$",
+     "$0 \\le b \\le 2$",
+     "$-2 \\le b \\le 2$",
+     "$-8 \\le b \\le 5$"
+    ],
+    "explanation": "Ignoring $b$: row minima 2, $-8$, $-2$ give maximin 2; column maxima $-1$, 5, 2 give minimax $-1$.\nSo the value lies in $[-1, 2]$, and for $-1 \\le b \\le 2$ both maximin and minimax equal $b$ (saddle point at a diagonal cell).\nOutside this range they differ, so $-1 \\le b \\le 2$.",
+    "notes": [
+     "Correct.",
+     "Too narrow: $b = -\\frac12$ also works.",
+     "At $b = -2$, maximin $= -2$ but minimax $= -1$.",
+     "Far too wide."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "A game is strictly determinable when maximin = minimax; ignore the unknown entries first to bound the value."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-130",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 130,
+    "label": "DSSSB PGT 2021 · Q230"
+   },
+   "en": {
+    "q": "Which one of the following is not a non-degenerate basic solution in a system of 2 equations with 4 unknowns?",
+    "options": [
+     "$(10, -42, 0, 0)$",
+     "$(0, 22, -43, 0)$",
+     "$(0, 0, -8, 0)$",
+     "$(7, 0, -9, 0)$"
+    ],
+    "explanation": "A non-degenerate basic solution of 2 equations has exactly 2 non-zero (basic) variables.\n$(0, 0, -8, 0)$ has only one non-zero entry, so it is degenerate.",
+    "notes": [
+     "Two non-zero entries.",
+     "Two non-zero entries.",
+     "Correct: only one non-zero entry.",
+     "Two non-zero entries."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Non-degenerate basic solution: exactly $m$ non-zero variables for $m$ equations."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-131",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 131,
+    "label": "DSSSB PGT 2021 · Q231"
+   },
+   "en": {
+    "q": "If $A = [a, b]$ in $\\mathbb{R}$ with the usual metric, then $A^\\circ$ (interior of $A$) equals to-",
+    "options": [
+     "$[a, b]$",
+     "$[a, b)$",
+     "$(a, b)$",
+     "$(a, b]$"
+    ],
+    "explanation": "Every point of $(a, b)$ has a neighbourhood inside $[a, b]$, but every neighbourhood of $a$ or of $b$ leaves $[a, b]$.\nSo $A^\\circ = (a, b)$.",
+    "notes": [
+     "$[a, b]$ is not open.",
+     "Contains the end point $a$.",
+     "Correct.",
+     "Contains the end point $b$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Interior = largest open set inside $A$; in $\\mathbb{R}$, $[a, b]^\\circ = (a, b)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-132",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 132,
+    "label": "DSSSB PGT 2021 · Q232"
+   },
+   "en": {
+    "q": "In a metric space $(X, d)$, $A$ be a subset, then the largest open subset of $A^C$ (complement of $A$) is",
+    "options": [
+     "Interior of $A$",
+     "Exterior of $A$",
+     "Boundary of $A$",
+     "Closure of $A$"
+    ],
+    "explanation": "The largest open subset of $A^C$ is the interior of $A^C$, which is by definition the exterior of $A$: $\\operatorname{ext}(A) = (A^C)^\\circ = X \\setminus \\bar{A}$.",
+    "notes": [
+     "The interior of $A$ lies inside $A$, not $A^C$.",
+     "Correct.",
+     "The boundary is closed and may meet $A$.",
+     "The closure contains $A$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "$\\operatorname{ext}(A) = (A^C)^\\circ = X \\setminus \\bar{A}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-133",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 133,
+    "label": "DSSSB PGT 2021 · Q233"
+   },
+   "en": {
+    "q": "If there are two subsets $A$ and $B$ of a metric space $(X, d)$, then which of the following is false?",
+    "options": [
+     "$(A^\\circ)^\\circ = A^\\circ$",
+     "$(A \\cap B)^\\circ = A^\\circ \\cap B^\\circ$",
+     "$(A \\cup B)^\\circ = A^\\circ \\cup B^\\circ$",
+     "$A \\subseteq B \\Rightarrow A^\\circ \\subseteq B^\\circ$"
+    ],
+    "explanation": "Only $(A \\cup B)^\\circ \\supseteq A^\\circ \\cup B^\\circ$ holds in general. In $\\mathbb{R}$ take $A = \\mathbb{Q}$, $B = \\mathbb{R} \\setminus \\mathbb{Q}$: $A^\\circ = B^\\circ = \\emptyset$ but $(A \\cup B)^\\circ = \\mathbb{R}$.\nThe other three are standard properties of the interior.",
+    "notes": [
+     "True: the interior is open.",
+     "True for finite intersections.",
+     "Correct (the false statement).",
+     "True: the interior is monotone."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Interior distributes over finite intersections, not unions; closure distributes over finite unions, not intersections."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-134",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 134,
+    "label": "DSSSB PGT 2021 · Q234"
+   },
+   "en": {
+    "q": "In a metric space $(X, d)$, $A$ be any subset. A point $x \\in X$ is called a limit point of $A$, if for every open ball $B(x; r)$-\n1. $B(x; r) \\cap (A - \\{x\\}) \\ne \\emptyset$\n2. $(B(x; r) \\cap A) - \\{x\\} \\ne \\emptyset$\n3. $(B(x; r) - \\{x\\}) \\cap A \\ne \\emptyset$",
+    "options": [
+     "Only 1",
+     "Only 2 and 3",
+     "Only 1 and 3",
+     "1, 2 and 3"
+    ],
+    "explanation": "All three sets equal $B(x; r) \\cap A \\cap \\{x\\}^C$, written in different orders.\nSo each condition says the same thing: every ball about $x$ contains a point of $A$ other than $x$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: the three sets are equal."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "$x$ is a limit point of $A$ if every ball about $x$ meets $A$ in a point other than $x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-135",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 135,
+    "label": "DSSSB PGT 2021 · Q235"
+   },
+   "en": {
+    "q": "In any metric space $(X, d)$, if $A$ be any subset, then $A \\subset X$ is closed if and only if ____\n1. $A = A^\\circ$\n2. $A = \\bar{A}$\n3. $A \\subset A^\\circ$",
+    "options": [
+     "Only 1",
+     "Only 2",
+     "Only 3",
+     "Only 1 and 3"
+    ],
+    "explanation": "$A$ is closed iff it contains all its limit points, i.e. $A = \\bar{A}$.\nConditions 1 and 3 ($A = A^\\circ$, equivalently $A \\subseteq A^\\circ$) describe open sets.",
+    "notes": [
+     "$A = A^\\circ$ means $A$ is open.",
+     "Correct.",
+     "$A \\subset A^\\circ$ also means open.",
+     "Both describe open sets."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Closed ⇔ $A = \\bar{A}$; open ⇔ $A = A^\\circ$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-136",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 136,
+    "label": "DSSSB PGT 2021 · Q236"
+   },
+   "en": {
+    "q": "If a particle is thrown vertically upwards with a velocity $u$ and $v$ be its velocity at a time $t$ at a height $h$ above the starting point, then which of the following is not true?\n1. $h = ut - \\frac{1}{2}gt^2$\n2. $v^2 - u^2 = 2gh$\n3. $v = u - gt$",
+    "options": [
+     "Only 1 and 2",
+     "Only 2",
+     "Only 3",
+     "Only 2 and 3"
+    ],
+    "explanation": "With retardation $g$ upwards: $v = u - gt$, $h = ut - \\frac12gt^2$ and $v^2 = u^2 - 2gh$.\nSo $v^2 - u^2 = -2gh$: statement 2 has the wrong sign and is the only false one.",
+    "notes": [
+     "Statement 1 is true.",
+     "Correct.",
+     "Statement 3 is true.",
+     "Statement 3 is true."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "Upward throw: $v = u - gt$, $h = ut - \\frac12gt^2$, $v^2 = u^2 - 2gh$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-137",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-15-14",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 137,
+    "label": "DSSSB PGT 2021 · Q237"
+   },
+   "en": {
+    "q": "If a particle describes cardioid $r = a(1 - \\cos\\theta)$ under a force to the pole then the law of force $(P)$ is.",
+    "options": [
+     "$P \\propto \\frac{1}{r^3}$",
+     "$P \\propto \\frac{1}{r^4}$",
+     "$P \\propto \\frac{1}{r^2}$",
+     "$P \\propto \\frac{1}{r^5}$"
+    ],
+    "explanation": "With $u = \\frac1r$, $P = h^2u^2\\left(u + \\frac{d^2u}{d\\theta^2}\\right)$.\nFor $u = \\frac{1}{a(1 - \\cos\\theta)}$ one finds $u + \\frac{d^2u}{d\\theta^2} = 3au^2$, so $P = 3ah^2u^4 = \\frac{3ah^2}{r^4} \\propto \\frac{1}{r^4}$.",
+    "notes": [
+     "$\\frac{1}{r^3}$ is the law for the equiangular spiral.",
+     "Correct.",
+     "$\\frac{1}{r^2}$ gives conics.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.14 Central orbits (PGT)"
+    ],
+    "facts": [
+     "Central orbit: $P = h^2u^2\\left(u + \\frac{d^2u}{d\\theta^2}\\right)$, $u = \\frac1r$; a cardioid gives $P \\propto r^{-4}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-138",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-15-09",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 138,
+    "label": "DSSSB PGT 2021 · Q238"
+   },
+   "en": {
+    "q": "A stone is thrown horizontally with a velocity $\\sqrt{2gh}$ from the top of a tower of height $h$. At what distance will it strike the horizontal ground from the foot of the tower?",
+    "options": [
+     "$3h$",
+     "$h$",
+     "$2h$",
+     "$6h$"
+    ],
+    "explanation": "Time to fall $h$: $t = \\sqrt{\\frac{2h}{g}}$.\nHorizontal distance $= \\sqrt{2gh} \\cdot \\sqrt{\\frac{2h}{g}} = 2h$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.9 Projectiles"
+    ],
+    "facts": [
+     "Horizontal throw from height $h$: time $\\sqrt{2h/g}$, distance $u\\sqrt{2h/g}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-139",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-15-12",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 139,
+    "label": "DSSSB PGT 2021 · Q239"
+   },
+   "en": {
+    "q": "A particle describes an ellipse under a force which is always directed towards the major axis. The law of force $(F)$ is",
+    "options": [
+     "$F \\propto \\frac{1}{y^3}$",
+     "$F \\propto \\frac{1}{x^2}$",
+     "$F \\propto \\frac{1}{x^3}$",
+     "$F \\propto y^2$"
+    ],
+    "explanation": "The force is perpendicular to the major axis (along $y$), so $\\ddot{x} = 0$ and $x = ct$.\nOn $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$, differentiating twice gives $\\ddot{y} = -\\frac{b^4c^2}{a^2y^3}$.\nSo the force points towards the major axis and varies as $\\frac{1}{y^3}$.",
+    "notes": [
+     "Correct.",
+     "The force depends on $y$, the distance from the major axis.",
+     "The force depends on $y$, not $x$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.12 Motion in a plane: radial and transverse components"
+    ],
+    "facts": [
+     "An ellipse described under a force parallel to the minor axis needs $F \\propto \\frac{1}{y^3}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-140",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-15-14",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 140,
+    "label": "DSSSB PGT 2021 · Q240"
+   },
+   "en": {
+    "q": "If a particle describes a curve $r = ae^{k\\theta}$ under a central force towards the pole, then the law of force $(P)$ is -",
+    "options": [
+     "$P \\propto \\frac{1}{r^2}$",
+     "$P \\propto \\frac{1}{r}$",
+     "$P \\propto r^3$",
+     "$P \\propto \\frac{1}{r^3}$"
+    ],
+    "explanation": "$u = \\frac1a e^{-k\\theta}$, so $\\frac{d^2u}{d\\theta^2} = k^2u$.\n$P = h^2u^2(u + k^2u) = h^2(1 + k^2)u^3 \\propto \\frac{1}{r^3}$.",
+    "notes": [
+     "$\\frac{1}{r^2}$ gives conics.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.14 Central orbits (PGT)"
+    ],
+    "facts": [
+     "The equiangular spiral $r = ae^{k\\theta}$ is described under $P \\propto r^{-3}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-141",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 141,
+    "label": "DSSSB PGT 2021 · Q241"
+   },
+   "en": {
+    "q": "The distance $s$ of a particle moving in a straight line in terms of time $t$ is given by: $s = a\\cos(nt + \\epsilon)$, where $a$, $n$, $\\epsilon$ are constant. Then the retardation is proportional to:",
+    "options": [
+     "$s^2$",
+     "$\\frac{1}{s}$",
+     "$\\frac{1}{s^2}$",
+     "$s$"
+    ],
+    "explanation": "$\\frac{d^2s}{dt^2} = -an^2\\cos(nt + \\epsilon) = -n^2s$.\nThe acceleration is opposite to $s$ with size $n^2s$: the retardation is proportional to $s$ (simple harmonic motion).",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "$\\ddot{s} = -n^2s$ is simple harmonic motion with period $\\frac{2\\pi}{n}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-142",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 142,
+    "label": "DSSSB PGT 2021 · Q242"
+   },
+   "en": {
+    "q": "If a particle thrown vertically upwards takes $t$ sec to rise a height $h$ and $t'$ sec in the subsequent time to reach the ground again, then:",
+    "options": [
+     "$h = \\frac{1}{2}gtt'$",
+     "$h = \\frac{1}{2}g(t + t')^2$",
+     "$h = \\frac{1}{2}g(t + t')$",
+     "$h = u(t + t') - \\frac{1}{2}g(t + t')^2$"
+    ],
+    "explanation": "Total time of flight $t + t' = \\frac{2u}{g}$, so $u = \\frac{g(t + t')}{2}$.\n$h = ut - \\frac12gt^2 = \\frac{g(t + t')t}{2} - \\frac{gt^2}{2} = \\frac12gtt'$.",
+    "notes": [
+     "Correct.",
+     "",
+     "Not even a length (wrong dimensions).",
+     "This equals 0: it is the height at the end of the flight."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "If a projectile is at height $h$ at times $t_1$ and $t_2$, then $h = \\frac12gt_1t_2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-143",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-15-10",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 143,
+    "label": "DSSSB PGT 2021 · Q243"
+   },
+   "en": {
+    "q": "For rectilinear motion of a particle, if an impulse $I$ changes its velocity from $u$ to $v$ and $E$ is the change of kinetic energy, then:",
+    "options": [
+     "$E = I\\left(\\frac{u + 2v}{3}\\right)$",
+     "$E = I\\left(\\frac{2u + 3v}{5}\\right)$",
+     "$E = I\\left(\\frac{u + v}{2}\\right)$",
+     "$E = I\\left(\\frac{3u + 2v}{5}\\right)$"
+    ],
+    "explanation": "$I = m(v - u)$ and $E = \\frac12m(v^2 - u^2) = m(v - u) \\cdot \\frac{u + v}{2}$ $= I\\left(\\frac{u + v}{2}\\right)$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.10 Work, power and energy"
+    ],
+    "facts": [
+     "Change in kinetic energy = impulse × mean of the initial and final velocities."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-144",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-15-14",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 144,
+    "label": "DSSSB PGT 2021 · Q244"
+   },
+   "en": {
+    "q": "If a particle describes a curve whose equation is $\\frac{a}{r} = \\theta^2 + b$ under a force to the pole, then the law of force $(P)$ is –",
+    "options": [
+     "$P \\propto \\frac{2a + r}{r^3}$",
+     "$P \\propto \\frac{2r + a}{r^3}$",
+     "$P \\propto \\frac{2a + r}{r^2}$",
+     "$P \\propto \\frac{a}{r^3}$"
+    ],
+    "explanation": "$u = \\frac{\\theta^2 + b}{a}$, so $\\frac{d^2u}{d\\theta^2} = \\frac2a$.\n$P = h^2u^2\\left(u + \\frac2a\\right)$ $= \\frac{h^2}{r^2} \\cdot \\frac{a + 2r}{ar}$ $= \\frac{h^2}{a} \\cdot \\frac{2r + a}{r^3}$.",
+    "notes": [
+     "$a$ and $r$ swapped in the numerator.",
+     "Correct.",
+     "Wrong power of $r$.",
+     "Misses the $\\frac{d^2u}{d\\theta^2}$ term."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.14 Central orbits (PGT)"
+    ],
+    "facts": [
+     "Write the orbit as $u = f(\\theta)$ and use $P = h^2u^2\\left(u + \\frac{d^2u}{d\\theta^2}\\right)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-145",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 145,
+    "label": "DSSSB PGT 2021 · Q245"
+   },
+   "en": {
+    "q": "If a particle moves in a straight line according to the law $x = a\\sin(\\mu t + \\epsilon)$, then the velocity $V$ is related by:",
+    "options": [
+     "$V^2 = \\mu(x^2 - a^2)$",
+     "$V^2 = \\mu^2(a^2 - x^2)$",
+     "$V^2 = \\mu(a^2 - x^2)$",
+     "$V^2 = \\mu^2(x^2 - a^2)$"
+    ],
+    "explanation": "$V = a\\mu\\cos(\\mu t + \\epsilon)$, so $V^2 = a^2\\mu^2[1 - \\sin^2(\\mu t + \\epsilon)] = \\mu^2(a^2 - x^2)$.",
+    "notes": [
+     "Wrong power of $\\mu$ and wrong sign.",
+     "Correct.",
+     "Needs $\\mu^2$.",
+     "Wrong sign: $V^2$ would be negative."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "In SHM with amplitude $a$ and angular frequency $\\mu$, $v^2 = \\mu^2(a^2 - x^2)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-147",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 3,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 147,
+    "label": "DSSSB PGT 2021 · Q247"
+   },
+   "en": {
+    "q": "A one to one continuous map of compact space $X$ onto a Hausdorff space $Y$ is ____\n1. Open map\n2. Not an open map\n3. Not a homeomorphism",
+    "options": [
+     "Only 1",
+     "Only 2",
+     "Only 2 and 3",
+     "Neither 1 nor 2 nor 3"
+    ],
+    "explanation": "A continuous map from a compact space to a Hausdorff space is closed (a closed subset is compact, its image is compact, hence closed in $Y$).\nA continuous closed bijection is a homeomorphism, so the map is also open.\nStatement 1 holds and 2, 3 fail: 'Only 1'.\nThe board's key (d) 'Neither 1 nor 2 nor 3' is wrong for this wording: a homeomorphism is an open map, so statement 1 holds. (The Hindi version leaves out 'one to one … onto'; for a merely continuous map none of 1–3 need hold, which is what the key fits.)",
+    "notes": [
+     "Correct: the map is a homeomorphism, hence open.",
+     "A homeomorphism is an open map.",
+     "It is a homeomorphism.",
+     "The board's key; it fits only if 'one to one … onto' is dropped, as in the Hindi text."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "A continuous bijection from a compact space onto a Hausdorff space is a homeomorphism."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-149",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 149,
+    "label": "DSSSB PGT 2021 · Q249"
+   },
+   "en": {
+    "q": "Every topological space $(X, \\mathfrak{T})$ is compact if ____",
+    "options": [
+     "$X$ is not finite",
+     "$\\mathfrak{T}$ is not finite",
+     "Every open cover of $X$ is reducible to finite sub cover",
+     "$X$ is not compact at each points"
+    ],
+    "explanation": "By definition, $X$ is compact when every open cover of $X$ has a finite subcover.\n(The opposite of (b) is true: a space with a finite topology is always compact.)",
+    "notes": [
+     "$\\mathbb{R}$ is infinite and not compact.",
+     "An infinite topology does not force compactness; a finite one does.",
+     "Correct (the definition).",
+     "Not a meaningful condition."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Compact: every open cover has a finite subcover; any space with a finite topology is compact."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-151",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-08-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 151,
+    "label": "DSSSB PGT 2021 · Q251"
+   },
+   "en": {
+    "q": "Two linearly independent solutions of the differential equation $y'' - 2y' + y = 0$ are $y_1 = e^x$ and $y_2 = xe^x$ then a particular solution of $y'' - 2y' + y = e^x\\sin x$ is:",
+    "options": [
+     "$y_2(x\\cos x - \\sin x) - y_1\\cos x$",
+     "$y_1(x\\cos x + \\sin x) + y_2\\sin x$",
+     "$y_1(x\\cos x + \\sin x) - y_2(\\cos x - x\\sin x)$",
+     "$y_1(x\\cos x - \\sin x) - y_2\\cos x$"
+    ],
+    "explanation": "Variation of parameters: $W = y_1y_2' - y_2y_1' = e^{2x}$, $R = e^x\\sin x$.\n$u_1 = -\\int\\frac{y_2R}{W}dx = -\\int x\\sin x\\,dx = x\\cos x - \\sin x$ and $u_2 = \\int\\frac{y_1R}{W}dx = \\int\\sin x\\,dx = -\\cos x$.\n$y_p = u_1y_1 + u_2y_2 = y_1(x\\cos x - \\sin x) - y_2\\cos x$ $(= -e^x\\sin x)$.",
+    "notes": [
+     "$y_1$ and $y_2$ swapped.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.4 Linear equations with constant coefficients (PGT)"
+    ],
+    "facts": [
+     "Variation of parameters: $y_p = -y_1\\int\\frac{y_2R}{W}dx + y_2\\int\\frac{y_1R}{W}dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-154",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 154,
+    "label": "DSSSB PGT 2021 · Q254"
+   },
+   "en": {
+    "q": "For the differential equation $(2x^2 + 3x)y'' + (6x + 3)y' + 2y = (x + 1)e^x$, which of the following is correct?",
+    "options": [
+     "The equation is exact and its solution is $y(2x + 3) = e^x + c_1\\log x + c_2$",
+     "The equation is not exact and its solution is $y^2(2x - 3) = ye^x + c_1\\log x + c_2$",
+     "The equation is exact and its solution is $y^2(2x - 3) = ye^x + c_1\\log x + c_2$",
+     "The equation is not exact and its solution is $y(2x + 3) = e^x + c_1\\log x + c_2$"
+    ],
+    "explanation": "Exactness test: $P_2 - P_1' + P_0'' = 2 - 6 + 4 = 0$, so it is exact.\nFirst integral: $P_0y' + (P_1 - P_0')y = \\int(x + 1)e^x dx$, i.e. $(2x^2 + 3x)y' + 2xy = xe^x + c_1$.\nDivide by $x$: $\\frac{d}{dx}[(2x + 3)y] = e^x + \\frac{c_1}{x}$, so $y(2x + 3) = e^x + c_1\\log x + c_2$.",
+    "notes": [
+     "Correct.",
+     "It is exact, and the solution is linear in $y$.",
+     "The solution of a linear equation is linear in $y$.",
+     "It is exact."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.4 Linear equations with constant coefficients (PGT)"
+    ],
+    "facts": [
+     "$P_0y'' + P_1y' + P_2y = R$ is exact iff $P_2 - P_1' + P_0'' = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-155",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 155,
+    "label": "DSSSB PGT 2021 · Q255"
+   },
+   "en": {
+    "q": "A solution curve of the differential equation $(x^2 + xy + 4x + 2y + 4)\\frac{dy}{dx} - y^2 = 0$, $x > 0$, passes through the point $(1, 3)$. Then the solution curve –",
+    "options": [
+     "Intersects $y = x + 2$ exactly at two points",
+     "Intersects $y = (x + 2)^2$ exactly at four points",
+     "Intersects $y = x + 2$ exactly at one point",
+     "Intersects $y = (x + 2)^2$ exactly at six points"
+    ],
+    "explanation": "$x^2 + xy + 4x + 2y + 4 = (x + 2)(x + 2 + y)$; with $X = x + 2$ the equation $X(X + y)\\frac{dy}{dX} = y^2$ is homogeneous.\nPutting $y = vX$ gives $\\ln y + \\frac{y}{x + 2} = C$; through $(1, 3)$, $C = \\ln 3 + 1$.\nOn $y = x + 2$: $\\ln(x + 2) + 1 = \\ln 3 + 1$ only at $x = 1$. On $y = (x + 2)^2$: $2\\ln(x + 2) + x + 2 > \\ln 3 + 1$ for $x > 0$, so no intersection.",
+    "notes": [
+     "Only one intersection, at $(1, 3)$.",
+     "It does not meet $y = (x + 2)^2$ for $x > 0$.",
+     "Correct.",
+     "It does not meet $y = (x + 2)^2$ for $x > 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Shift the origin ($X = x + 2$) to make the equation homogeneous, then put $y = vX$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-156",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 156,
+    "label": "DSSSB PGT 2021 · Q256"
+   },
+   "en": {
+    "q": "If $x^h y^k$ be the integrating factor of $(y^3 - 2yx^2)dx + (2xy^2 - x^3)dy = 0$, then the value of $(h, k)$ is:",
+    "options": [
+     "$(-2, 3)$",
+     "$(2, -1)$",
+     "$(1, 1)$",
+     "$(1, -2)$"
+    ],
+    "explanation": "After multiplying: $M = x^hy^{k+3} - 2x^{h+2}y^{k+1}$, $N = 2x^{h+1}y^{k+2} - x^{h+3}y^k$.\n$\\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x}$ needs $k + 3 = 2(h + 1)$ and $2(k + 1) = h + 3$, so $h = k = 1$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "For an integrating factor $x^hy^k$, compare coefficients in $\\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-158",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 158,
+    "label": "DSSSB PGT 2021 · Q258"
+   },
+   "en": {
+    "q": "The orthogonal trajectories of the system of coaxial circles $x^2 + y^2 + 2\\lambda x + c = 0$ is (taking $\\mu$ as parameter)",
+    "options": [
+     "$x^2 + y^2 - 2\\mu xy + c = 0$",
+     "$x^2 + y^2 + 2\\mu y - c = 0$",
+     "$x^2 + y^2 + 2\\mu y + cx = 0$",
+     "$x^2 + y^2 - 2\\mu x + cy = 0$"
+    ],
+    "explanation": "Eliminate $\\lambda$ using $2x + 2yy' + 2\\lambda = 0$: $y^2 - x^2 - 2xyy' + c = 0$.\nReplace $y'$ by $-\\frac{1}{y'}$: $(x^2 - y^2 - c)y' = 2xy$.\nThe family $x^2 + y^2 + 2\\mu y - c = 0$ gives exactly this equation (eliminate $\\mu$ the same way): the conjugate coaxal system.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.5 Orthogonal trajectories"
+    ],
+    "facts": [
+     "The orthogonal trajectories of $x^2 + y^2 + 2\\lambda x + c = 0$ are $x^2 + y^2 + 2\\mu y - c = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-159",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 159,
+    "label": "DSSSB PGT 2021 · Q259"
+   },
+   "en": {
+    "q": "The complete primitive of $p^2 + px + py + xy = 0$, where $p \\equiv \\frac{dy}{dx}$, is:",
+    "options": [
+     "$(2y + x^2 - c)(x + \\log y - c) = 0$",
+     "$(2y - x^2 - c)(x - y\\log x - c) = 0$",
+     "$(y + x^2 - cxy)(x^3 + 2\\log y - c) = 0$",
+     "$(2y^2 - x^2 - c)(x - y\\log y - c) = 0$"
+    ],
+    "explanation": "Factor: $(p + x)(p + y) = 0$.\n$p = -x$: $y = -\\frac{x^2}{2} + \\text{const}$, i.e. $2y + x^2 - c = 0$. $p = -y$: $\\log y = -x + \\text{const}$, i.e. $x + \\log y - c = 0$.\nComplete primitive: $(2y + x^2 - c)(x + \\log y - c) = 0$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.3 Higher degree equations; singular solutions (PGT)"
+    ],
+    "facts": [
+     "Equation solvable for $p$: factor it, solve each factor, and multiply the solutions."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-160",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 160,
+    "label": "DSSSB PGT 2021 · Q260"
+   },
+   "en": {
+    "q": "The three linearly independent solutions of $x^3\\frac{d^3y}{dx^3} - 6x\\frac{dy}{dx} + 12y = 0$ of the form $y = x^r$ is –",
+    "options": [
+     "$x, x^2, x^3$",
+     "$x^2, x^3, x^{-2}$",
+     "$1, x, x^2$",
+     "$1, x^2, x^{-2}$"
+    ],
+    "explanation": "Put $y = x^r$: $r(r - 1)(r - 2) - 6r + 12 = 0$, i.e. $r^3 - 3r^2 - 4r + 12 = (r - 3)(r^2 - 4) = 0$.\nSo $r = 3, 2, -2$: the solutions are $x^3$, $x^2$, $x^{-2}$.",
+    "notes": [
+     "$y = x$ gives $-6x + 12x \\ne 0$.",
+     "Correct.",
+     "$y = 1$ gives $12 \\ne 0$.",
+     "$y = 1$ gives $12 \\ne 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.4 Linear equations with constant coefficients (PGT)"
+    ],
+    "facts": [
+     "Cauchy–Euler: $y = x^r$ turns the equation into a polynomial equation in $r$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-161",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 161,
+    "label": "DSSSB PGT 2021 · Q261"
+   },
+   "en": {
+    "q": "If in the first hundred natural numbers, $x$ be one of them, then the probability that $x + \\frac{100}{x}$ is greater than 50 is -",
+    "options": [
+     "$\\frac{9}{11}$",
+     "$\\frac{11}{20}$",
+     "$\\frac{13}{20}$",
+     "$\\frac{11}{21}$"
+    ],
+    "explanation": "$x + \\frac{100}{x} > 50 \\iff x^2 - 50x + 100 > 0$.\nThe roots are $25 \\pm \\sqrt{525}$, about $2.09$ and $47.9$, so $x < 2.09$ or $x > 47.9$.\nFavourable: $x = 1, 2$ and $48, \\ldots, 100$: $2 + 53 = 55$ numbers. Probability $= \\frac{55}{100} = \\frac{11}{20}$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.1 Basic probability and the addition theorem"
+    ],
+    "facts": [
+     "Turn the condition into a quadratic inequality and count the integers outside the roots."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-162",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 162,
+    "label": "DSSSB PGT 2021 · Q262"
+   },
+   "en": {
+    "q": "If a coin is tossed $(m + n)$ times (where $m > n$), then the probability of at least $m$ consecutive heads is -",
+    "options": [
+     "$\\frac{n + 1}{2^{n+1}}$",
+     "$\\frac{m + 2}{2^{n+1}}$",
+     "$\\frac{2 + n}{2^{m+1}}$",
+     "$\\frac{m + 1}{2^{m+1}}$"
+    ],
+    "explanation": "Split by where the first run of $m$ heads starts. Starting at toss 1: probability $\\frac{1}{2^m}$.\nStarting at toss $r + 1$ ($r = 1, \\ldots, n$): toss $r$ is a tail and the next $m$ are heads, probability $\\frac{1}{2^{m+1}}$ each (as $m > n$, these cases do not overlap).\nTotal $= \\frac{1}{2^m} + \\frac{n}{2^{m+1}} = \\frac{n + 2}{2^{m+1}}$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.2 Conditional probability, multiplication theorem, independent events"
+    ],
+    "facts": [
+     "Count runs by their starting toss; the toss just before the run must be a tail."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-163",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-16-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 163,
+    "label": "DSSSB PGT 2021 · Q263"
+   },
+   "en": {
+    "q": "A box contains $2^n$ tickets among which ${}^nC_i$ bear the number $i$, $(i = 0, 1, 2, \\ldots, n)$. A group of $m$ tickets is drawn. What's the expectation of the sum of the numbers?",
+    "options": [
+     "$\\frac{mn}{2}$",
+     "$\\frac{n(m + 2)}{2}$",
+     "$\\frac{n(n + 1)}{2}$",
+     "$\\frac{n}{2}$"
+    ],
+    "explanation": "One ticket: $E = \\frac{1}{2^n}\\sum_i i\\,{}^nC_i = \\frac{n2^{n-1}}{2^n} = \\frac{n}{2}$.\nBy linearity (with or without replacement), the sum of $m$ tickets has expectation $m \\cdot \\frac{n}{2} = \\frac{mn}{2}$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "That is the expectation for a single ticket."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.4 Random variables and probability distributions"
+    ],
+    "facts": [
+     "Expectation is additive even for dependent draws: $E(X_1 + \\cdots + X_m) = \\sum E(X_i)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-164",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 164,
+    "label": "DSSSB PGT 2021 · Q264"
+   },
+   "en": {
+    "q": "Which one of the following statements is false?",
+    "options": [
+     "Data that are on nominal scale are presented using frequency tables",
+     "Pie charts are better than bar graphs for comparing relative sizes",
+     "The scatter - plot is the basic graphic tool for investigating relationship between two intervals or ratio scaled variables",
+     "Means and standard deviation of ordinal data are meaning-less"
+    ],
+    "explanation": "Lengths of bars on a common baseline are judged far more accurately than the angles or areas of pie sectors, so bar graphs, not pie charts, are better for comparing relative sizes.\nThe other three are standard statements about scales of measurement.",
+    "notes": [
+     "True.",
+     "Correct (the false statement).",
+     "True.",
+     "True: ordinal data have order but no meaningful distances."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Use bar graphs to compare sizes; a pie chart only shows the parts of one whole."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-165",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-16-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 165,
+    "label": "DSSSB PGT 2021 · Q265"
+   },
+   "en": {
+    "q": "If random variable $X$ has the probability function $f(x) = \\frac{K}{x!}$, $(x = 0, 1, 2, \\ldots)$ the value of $K$ is ____",
+    "options": [
+     "$\\frac{1}{e}$",
+     "$e$",
+     "$1 - \\frac{1}{e}$",
+     "$e - 1$"
+    ],
+    "explanation": "$\\sum_{x \\ge 0}\\frac{K}{x!} = Ke = 1$, so $K = \\frac{1}{e}$ (a Poisson distribution with mean 1).",
+    "notes": [
+     "Correct.",
+     "Inverted: $K \\cdot e = 1$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.4 Random variables and probability distributions"
+    ],
+    "facts": [
+     "$\\sum_{x=0}^{\\infty}\\frac{1}{x!} = e$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-166",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 166,
+    "label": "DSSSB PGT 2021 · Q266"
+   },
+   "en": {
+    "q": "Which of the following comes under probability distribution?",
+    "options": [
+     "$f(x) = \\frac{x - 2}{2},\\ x = 1, 2, 3, 4$",
+     "$g(x) = \\frac{1}{4},\\ x = 1, 2, 3, 4$",
+     "$h(x) = \\frac{x^2}{25},\\ x = 1, 2, 3, 4$",
+     "$f(x) = \\frac{x - 2}{5},\\ x = 1, 2, 3, 4$"
+    ],
+    "explanation": "A probability function must be $\\ge 0$ and add up to 1. $g$: four values $\\frac14$, total 1.\n$\\frac{x - 2}{2}$ and $\\frac{x - 2}{5}$ are negative at $x = 1$; $\\frac{1 + 4 + 9 + 16}{25} = \\frac{30}{25} \\ne 1$.",
+    "notes": [
+     "Adds up to 1 but is negative at $x = 1$.",
+     "Correct.",
+     "Adds up to $\\frac{30}{25}$.",
+     "Negative at $x = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.4 Random variables and probability distributions"
+    ],
+    "facts": [
+     "A valid probability function: every value $\\ge 0$ and total 1."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-169",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-16-04",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 169,
+    "label": "DSSSB PGT 2021 · Q269"
+   },
+   "en": {
+    "q": "If $X_1$ and $X_2$ are two independent variables and $Y = a_1X_1 + a_2X_2$ then $E(Y)$ is ____",
+    "options": [
+     "$a_1E(X_1) + a_2E(X_2)$",
+     "$a_1X_1 + a_2X_2$",
+     "$X_1 + X_2$",
+     "$a_1X_2 + a_2X_1$"
+    ],
+    "explanation": "Expectation is linear: $E(a_1X_1 + a_2X_2) = a_1E(X_1) + a_2E(X_2)$ (independence is not even needed).",
+    "notes": [
+     "Correct.",
+     "That is $Y$ itself, a random variable, not a number.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.4 Random variables and probability distributions"
+    ],
+    "facts": [
+     "$E(aX + bY) = aE(X) + bE(Y)$ always; $\\operatorname{Var}(aX + bY) = a^2\\operatorname{Var}X + b^2\\operatorname{Var}Y$ holds when $X$, $Y$ are independent (uncorrelated is enough)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-170",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 170,
+    "label": "DSSSB PGT 2021 · Q270"
+   },
+   "en": {
+    "q": "A manufacturer of steel blades found 5 percent of its blades defective. He sells blades in packets, each containing 5 blades. The probability that a packet contains one defective blade is",
+    "options": [
+     "$e^{-0.25}$",
+     "$0.25e^{-0.25}$",
+     "0.5",
+     "0.25"
+    ],
+    "explanation": "Poisson approximation with $\\lambda = np = 5 \\times 0.05 = 0.25$: $P(X = 1) = \\lambda e^{-\\lambda} = 0.25e^{-0.25} \\approx 0.195$.\n(The exact binomial value is $5(0.05)(0.95)^4 \\approx 0.204$.)\nNo option is the exact value; the options are Poisson values, and (b) is the Poisson approximation the question intends.",
+    "notes": [
+     "That is $P(X = 0)$.",
+     "Correct.",
+     "",
+     "That is $\\lambda$ itself."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.5 Bernoulli trials and the binomial distribution"
+    ],
+    "facts": [
+     "Poisson: $P(0) = e^{-\\lambda}$, $P(1) = \\lambda e^{-\\lambda}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-171",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 171,
+    "label": "DSSSB PGT 2021 · Q271"
+   },
+   "en": {
+    "q": "Marks of a chemistry test follow a normal distribution with a mean of 65 and a standard deviation of 12. Approximately what percentage of the students have scored below 50?",
+    "options": [
+     "89 percent",
+     "18 percent",
+     "11 percent",
+     "15 percent"
+    ],
+    "explanation": "$z = \\frac{50 - 65}{12} = -1.25$.\n$P(Z < -1.25) = 1 - 0.8944 = 0.1056 \\approx 11\\%$.",
+    "notes": [
+     "That is the percentage above 50.",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.5 Bernoulli trials and the binomial distribution"
+    ],
+    "facts": [
+     "Standardise with $z = \\frac{x - \\mu}{\\sigma}$; $\\Phi(1.25) \\approx 0.894$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-172",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 172,
+    "label": "DSSSB PGT 2021 · Q272"
+   },
+   "en": {
+    "q": "Let $\\vec{x} = 2\\hat{i} + \\hat{j} - 2\\hat{k}$ and $\\vec{y} = \\hat{i} + \\hat{j}$. If $\\vec{z}$ is a vector such that $\\vec{x} \\cdot \\vec{z} = |\\vec{z}|$, $|\\vec{z} - \\vec{x}| = 2\\sqrt{2}$ and the angle between $\\vec{x} \\times \\vec{y}$ and $\\vec{z}$ is $30^\\circ$, then the magnitude of the vector $(\\vec{x} \\times \\vec{y}) \\times \\vec{z}$ is ____",
+    "options": [
+     "$\\frac{\\sqrt{3}}{2}$",
+     "$\\frac{3}{2}$",
+     "$\\frac{1}{2}$",
+     "$\\frac{3\\sqrt{2}}{2}$"
+    ],
+    "explanation": "$|\\vec z - \\vec x|^2 = |\\vec z|^2 - 2\\vec x \\cdot \\vec z + |\\vec x|^2$: $8 = |\\vec z|^2 - 2|\\vec z| + 9$, so $(|\\vec z| - 1)^2 = 0$ and $|\\vec z| = 1$.\n$\\vec x \\times \\vec y = 2\\hat i - 2\\hat j + \\hat k$, of magnitude 3.\n$|(\\vec x \\times \\vec y) \\times \\vec z| = 3 \\cdot 1 \\cdot \\sin 30^\\circ = \\frac{3}{2}$.",
+    "notes": [
+     "Uses $\\cos 30^\\circ$ with $|\\vec x \\times \\vec y| = 1$.",
+     "Correct.",
+     "Forgets $|\\vec x \\times \\vec y| = 3$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$|\\vec a \\times \\vec b| = |\\vec a||\\vec b|\\sin\\theta$; expand $|\\vec z - \\vec x|^2$ to find $|\\vec z|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-174",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 174,
+    "label": "DSSSB PGT 2021 · Q274"
+   },
+   "en": {
+    "q": "The work done in moving a particle in the force field $\\vec{F} = 3x^2\\hat{i} + (2xz - y)\\hat{j} + z\\hat{k}$ along the straight line from $(0, 0, 0)$ to $(2, 1, 3)$ is-",
+    "options": [
+     "22 units",
+     "14 units",
+     "16 units",
+     "42 units"
+    ],
+    "explanation": "On the line $x = 2t$, $y = t$, $z = 3t$ ($0 \\le t \\le 1$), $d\\vec r = (2, 1, 3)\\,dt$.\n$\\vec F \\cdot d\\vec r = [24t^2 + (12t^2 - t) + 9t]\\,dt$ $= (36t^2 + 8t)\\,dt$.\nWork $= \\int_0^1 (36t^2 + 8t)\\,dt = 12 + 4 = 16$ units.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "Work $= \\int_C \\vec F \\cdot d\\vec r$; parametrise the path first."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-175",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 175,
+    "label": "DSSSB PGT 2021 · Q275"
+   },
+   "en": {
+    "q": "The unit vector perpendicular to each of the vectors $\\vec{u} = 2\\hat{i} - 2\\hat{j} + \\hat{k}$, $\\vec{v} = \\hat{i} + \\hat{j} - \\hat{k}$ is-",
+    "options": [
+     "$\\frac{-\\hat{i} - 3\\hat{j} + 4\\hat{k}}{\\sqrt{26}}$",
+     "$\\frac{\\hat{i} + 3\\hat{j} + 4\\hat{k}}{\\sqrt{26}}$",
+     "$\\frac{\\hat{i} - 3\\hat{j} - 4\\hat{k}}{\\sqrt{26}}$",
+     "$\\frac{-\\hat{i} + 3\\hat{j} - 4\\hat{k}}{\\sqrt{26}}$"
+    ],
+    "explanation": "$\\vec u \\times \\vec v = \\hat i(2 - 1) - \\hat j(-2 - 1) + \\hat k(2 + 2)$ $= \\hat i + 3\\hat j + 4\\hat k$, of length $\\sqrt{26}$.\nThe unit vectors are $\\pm\\frac{\\hat i + 3\\hat j + 4\\hat k}{\\sqrt{26}}$; only the $+$ sign is offered.",
+    "notes": [
+     "Dot with $\\vec u$: $-2 + 6 + 4 \\ne 0$.",
+     "Correct.",
+     "Dot with $\\vec u$: $2 + 6 - 4 \\ne 0$.",
+     "Dot with $\\vec u$: $-2 - 6 - 4 \\ne 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$\\pm\\frac{\\vec u \\times \\vec v}{|\\vec u \\times \\vec v|}$ are the unit vectors perpendicular to both $\\vec u$ and $\\vec v$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-177",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 177,
+    "label": "DSSSB PGT 2021 · Q277"
+   },
+   "en": {
+    "q": "If $E = e_1e_2$ with $e_1 = 5.43$, $e_2 = 3.82$ and if error in both $e_1$, $e_2$ is 0.01, then the relative error of $E$ is-",
+    "options": [
+     "0.045",
+     "0.0054",
+     "0.0045",
+     "0.0425"
+    ],
+    "explanation": "For a product the relative errors add: $\\frac{\\Delta E}{E} = \\frac{0.01}{5.43} + \\frac{0.01}{3.82}$ $= 0.00184 + 0.00262 \\approx 0.0045$.",
+    "notes": [
+     "Ten times too large.",
+     "Digits swapped.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "Relative error of a product ≈ sum of the relative errors of the factors."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-178",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 178,
+    "label": "DSSSB PGT 2021 · Q278"
+   },
+   "en": {
+    "q": "The absolute error in approximate number $x_A = 0.333$ when exact number $x_T = \\frac{1}{3}$ up to two significant digits is",
+    "options": [
+     "0.0003",
+     "0.00033",
+     "0.033",
+     "0.0033"
+    ],
+    "explanation": "Absolute error $= |x_T - x_A| = \\frac13 - 0.333 = 0.000333\\ldots$, which to two significant digits is $0.00033$.",
+    "notes": [
+     "Only one significant digit.",
+     "Correct.",
+     "Wrong place value.",
+     "Ten times too large."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Absolute error $= |\\text{true} - \\text{approximate}|$; relative error divides it by the true value."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-179",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 179,
+    "label": "DSSSB PGT 2021 · Q279"
+   },
+   "en": {
+    "q": "Let $A$ be the set of rational numbers in the open interval $(0, 7)$ and $f : A \\to \\mathbb{R}$ be a uniformly continuous function. Which of the following is true?",
+    "options": [
+     "$f$ is necessarily a constant function",
+     "$f$ is bounded",
+     "$f$ is differentiable on $(0, 7)$",
+     "$f$ is differentiable at all the rational points in $(0, 7)$"
+    ],
+    "explanation": "A uniformly continuous function on a bounded set extends continuously to the closure $[0, 7]$, and a continuous function on the compact $[0, 7]$ is bounded.\n$f(x) = x$ is not constant, and $f(x) = |x - 1|$ is uniformly continuous but not differentiable at the rational point 1.",
+    "notes": [
+     "$f(x) = x$ is a counter-example.",
+     "Correct.",
+     "$f$ is defined only on rationals; and $|x - 1|$ has a corner.",
+     "$|x - 1|$ is not differentiable at 1."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "Uniformly continuous on a bounded subset of $\\mathbb{R}$ ⇒ bounded."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2021-180",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-05",
+   "src": {
+    "paper": "dsssb-pgt-2021",
+    "n": 180,
+    "label": "DSSSB PGT 2021 · Q280"
+   },
+   "en": {
+    "q": "Let $n$ be a fixed natural number. Thus, the series $\\sum_{m \\ge n}\\frac{(-1)^m}{m}$ is –",
+    "options": [
+     "Absolutely convergent if $n > 100$",
+     "Divergent",
+     "Convergent",
+     "Absolutely convergent"
+    ],
+    "explanation": "$\\frac1m$ decreases to 0, so the alternating series converges (Leibniz test).\n$\\sum_{m \\ge n}\\frac1m$ is a tail of the harmonic series and diverges for every $n$, so the convergence is only conditional.",
+    "notes": [
+     "Dropping finitely many terms cannot create absolute convergence.",
+     "Leibniz test gives convergence.",
+     "Correct.",
+     "$\\sum\\frac1m$ diverges."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.5 Series"
+    ],
+    "facts": [
+     "Removing finitely many terms never changes convergence or absolute convergence."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}

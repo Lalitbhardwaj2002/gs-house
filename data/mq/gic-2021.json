@@ -1,0 +1,2979 @@
+{
+ "paper": {
+  "id": "gic-2021",
+  "title": "UPPSC GIC Lecturer Mathematics 2021 (rebuilt from a question book)",
+  "exam": "UP GIC Lecturer",
+  "date": "19 September 2021",
+  "level": "PGT",
+  "minutes": 80,
+  "negative": 0,
+  "source": "UPPSC Lecturer (Government Inter College) examination of 19 September 2021, mathematics part: no copy of the booklet could be found, so the paper is rebuilt from the questions marked UPPSC GIC Lecturer 2021 in Youth TGT PGT Maths 2024-25, in the book's chapter order",
+  "note": "Rebuilt from a question book: the paper's questions in chapter order, not in the paper's own order or numbering."
+ },
+ "questions": [
+  {
+   "id": "mq/gic-2021-001",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "gic-2021",
+    "n": 1,
+    "label": "GIC 2021 (rebuilt) · Q1"
+   },
+   "en": {
+    "q": "The harmonic mean of the roots of the equation $ax^2 + bx + c = 0$ is",
+    "options": [
+     "$-\\frac{2c}{b}$",
+     "$\\frac{2c}{b}$",
+     "$\\frac{c}{b}$",
+     "$-\\frac{c}{b}$"
+    ],
+    "explanation": "$\\alpha + \\beta = -\\frac{b}{a}$ and $\\alpha\\beta = \\frac{c}{a}$.\nHM $= \\frac{2\\alpha\\beta}{\\alpha + \\beta} = \\frac{2c/a}{-b/a} = -\\frac{2c}{b}$.",
+    "notes": [
+     "HM $= \\frac{2\\alpha\\beta}{\\alpha+\\beta}$.",
+     "Sign lost: the sum of the roots is $-b/a$.",
+     "Drops both the factor 2 and the sign.",
+     "Drops the factor 2 of the HM formula."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "HM of the roots of $ax^2 + bx + c = 0$ is $-\\frac{2c}{b}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-002",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "gic-2021",
+    "n": 2,
+    "label": "GIC 2021 (rebuilt) · Q2"
+   },
+   "en": {
+    "q": "Find the condition that the roots of the cubic equation $x^3 - px^2 + qx - r = 0$ be in a geometric progression",
+    "options": [
+     "$p + q - r = 0$",
+     "$q^3 r - p^3 = 0$",
+     "$p^3 r - q^3 = 0$",
+     "$p - q + r = 0$"
+    ],
+    "explanation": "Take the roots $\\frac{\\alpha}{R}, \\alpha, \\alpha R$. Their product is $\\alpha^3 = r$.\nSum: $\\alpha\\left(\\frac1R + 1 + R\\right) = p$; sum of products in pairs: $\\alpha^2\\left(\\frac1R + 1 + R\\right) = q$.\nDividing, $\\alpha = \\frac{q}{p}$, so $\\frac{q^3}{p^3} = r$, i.e. $p^3 r - q^3 = 0$.",
+    "notes": [
+     "",
+     "$p$ and $q$ swapped: the middle root is $q/p$, not $p/q$.",
+     "Middle root $q/p$, and its cube is the product $r$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Roots of $x^3 - px^2 + qx - r = 0$ in GP $\\iff p^3 r = q^3$; in AP $\\iff 2p^3 - 9pq + 27r = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-003",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "gic-2021",
+    "n": 3,
+    "label": "GIC 2021 (rebuilt) · Q3"
+   },
+   "en": {
+    "q": "The roots of the equation $\\log_4(x^2 - 6x + 24) = 2$ are",
+    "options": [
+     "2, 3",
+     "4, 6",
+     "1, 5",
+     "2, 4"
+    ],
+    "explanation": "$x^2 - 6x + 24 = 4^2 = 16$, so $x^2 - 6x + 8 = 0$, i.e. $(x - 2)(x - 4) = 0$.\nBoth roots make the argument $16 > 0$, so $x = 2, 4$.",
+    "notes": [
+     "$x = 3$ gives $\\log_4 15 \\ne 2$.",
+     "$x = 6$ gives $\\log_4 24 \\ne 2$.",
+     "$x = 1$ gives $\\log_4 19 \\ne 2$.",
+     "Both satisfy $x^2 - 6x + 8 = 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$\\log_a N = k \\iff N = a^k$ (with $N > 0$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-004",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "gic-2021",
+    "n": 4,
+    "label": "GIC 2021 (rebuilt) · Q4"
+   },
+   "en": {
+    "q": "The sum of the roots of the equation $x^2 - 4|x - 2| - 4x + 8 = 0$ is",
+    "options": [
+     "8",
+     "9",
+     "6",
+     "4"
+    ],
+    "explanation": "For $x \\ge 2$: $x^2 - 4x + 8 - 4x + 8 = (x - 4)^2 = 0$, so $x = 4$.\nFor $x < 2$: $x^2 + 4x - 8 - 4x + 8 = x^2 = 0$, so $x = 0$.\nThe roots are 0 and 4; their sum is 4.",
+    "notes": [
+     "Counts the repeated root $x = 4$ of $(x-4)^2 = 0$ twice.",
+     "",
+     "",
+     "Roots $0$ and $4$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Split $|x - a|$ into the cases $x \\ge a$ and $x < a$, and keep only the roots that lie in each case's range."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-005",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 5,
+    "label": "GIC 2021 (rebuilt) · Q5"
+   },
+   "en": {
+    "q": "Let a relation R be defined on the set of non-zero rational numbers $\\mathbb{Q}^*$ by aRb if $a = \\frac{1}{b}$, then this relation R over $\\mathbb{Q}^*$ is",
+    "options": [
+     "reflexive, but not symmetric and transitive",
+     "symmetric, but not reflexive and transitive",
+     "transitive, but not reflexive and symmetric",
+     "reflexive and transitive, but not symmetric"
+    ],
+    "explanation": "aRb means $ab = 1$.\nNot reflexive: $2 \\cdot 2 \\ne 1$.\nSymmetric: $ab = 1 \\Rightarrow ba = 1$.\nNot transitive: $2R\\frac12$ and $\\frac12 R 2$, but $(2, 2) \\notin R$.",
+    "notes": [
+     "$a = \\frac1a$ only for $a = \\pm 1$, so not reflexive.",
+     "aRb is $ab = 1$, which is symmetric.",
+     "aRb and bRc give $a = c$, not $ac = 1$.",
+     "It is neither reflexive nor transitive."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "The relation $ab = 1$ is symmetric only."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-006",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 6,
+    "label": "GIC 2021 (rebuilt) · Q6"
+   },
+   "en": {
+    "q": "Let R be a relation on a set A such that $R = R^{-1}$, then R is",
+    "options": [
+     "Reflexive",
+     "Symmetric",
+     "Transitive",
+     "None of these"
+    ],
+    "explanation": "If $(a, b) \\in R$ then $(b, a) \\in R^{-1} = R$: R is symmetric.\nNothing more follows: $R = \\{(1,2), (2,1)\\}$ on $\\{1, 2\\}$ has $R = R^{-1}$ but is neither reflexive nor transitive.",
+    "notes": [
+     "$R = \\{(1,2),(2,1)\\}$ is not reflexive.",
+     "$R = R^{-1}$ is exactly the definition of symmetric.",
+     "$R = \\{(1,2),(2,1)\\}$ is not transitive.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "A relation R is symmetric $\\iff R = R^{-1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-007",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 7,
+    "label": "GIC 2021 (rebuilt) · Q7"
+   },
+   "en": {
+    "q": "Let $\\mathbb{R}$ be the set of real numbers, if $f : \\mathbb{R} \\to \\mathbb{R}$ is given by $f(x) = x^2 + 2$ and $g : \\mathbb{R} \\to \\mathbb{R}$ is given by $g(x) = \\frac{x}{x - 1}$, then the value of $(g \\circ f)(x)$ is",
+    "options": [
+     "$\\frac{x^2 + 2}{x^2 + 1}$",
+     "$\\frac{x^2 + 2}{(x - 1)}$",
+     "$\\frac{x^2 + 1}{x^2 + 2}$",
+     "$\\frac{x^2 + 2}{(x + 1)^2}$"
+    ],
+    "explanation": "$(g \\circ f)(x) = g(x^2 + 2) = \\frac{x^2 + 2}{(x^2 + 2) - 1} = \\frac{x^2 + 2}{x^2 + 1}$.",
+    "notes": [
+     "",
+     "Substituted $f(x)$ only in the numerator.",
+     "The fraction is upside down.",
+     "The denominator is $f(x) - 1 = x^2 + 1$, not squared."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$(g \\circ f)(x) = g(f(x))$: apply $f$ first."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-008",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 8,
+    "label": "GIC 2021 (rebuilt) · Q8"
+   },
+   "en": {
+    "q": "A binary operation on a non-empty set G is a mapping",
+    "options": [
+     "from G to G",
+     "from $G \\times G$ to G",
+     "from $\\mathbb{R} \\times G$ to G",
+     "from $\\mathbb{R} \\times G$ to $\\mathbb{R}$, where $\\mathbb{R}$ is the set of real numbers."
+    ],
+    "explanation": "A binary operation $*$ assigns to every ordered pair $(a, b)$ of elements of G an element $a * b$ of G. So it is a map $* : G \\times G \\to G$.",
+    "notes": [
+     "That is a unary operation.",
+     "Definition of a binary operation.",
+     "A map $\\mathbb{R} \\times G \\to G$ is a scalar action, as in a vector space.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Binary operation on G: a map $G \\times G \\to G$ (closure is built in)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-009",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 9,
+    "label": "GIC 2021 (rebuilt) · Q9"
+   },
+   "en": {
+    "q": "If $f(x) = \\frac{4x + 5}{x - 6}$, $x \\ne 6$, then $f^{-1}(x)$ is equal to",
+    "options": [
+     "$\\frac{5x + 6}{x + 4}, x \\ne -4$",
+     "$\\frac{5x + 6}{x - 4}, x \\ne 4$",
+     "$\\frac{6x + 5}{x - 4}, x \\ne 4$",
+     "$\\frac{6x + 5}{x + 4}, x \\ne -4$"
+    ],
+    "explanation": "$y = \\frac{4x + 5}{x - 6} \\Rightarrow xy - 6y = 4x + 5 \\Rightarrow x(y - 4) = 6y + 5 \\Rightarrow x = \\frac{6y + 5}{y - 4}$.\nSo $f^{-1}(x) = \\frac{6x + 5}{x - 4}$, $x \\ne 4$.",
+    "notes": [
+     "",
+     "",
+     "Check: $f(f^{-1}(x)) = x$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "The inverse of $\\frac{ax + b}{cx + d}$ is $\\frac{dx - b}{a - cx}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-010",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 10,
+    "label": "GIC 2021 (rebuilt) · Q10"
+   },
+   "en": {
+    "q": "If $\\mathbb{R}$ be the set of real numbers, which of the following is one-one?",
+    "options": [
+     "$f : \\mathbb{R} \\to \\mathbb{R}$, $f(x) = \\sin x$",
+     "$g : \\mathbb{R} \\to \\mathbb{R}$, $g(x) = \\cos x$",
+     "$h : \\mathbb{R} \\to \\mathbb{R}$, $h(x) = e^x$",
+     "$f_1 : \\mathbb{R} \\to \\mathbb{R}$, $f_1(x) = a$, where $a$ is a constant"
+    ],
+    "explanation": "$e^x$ is strictly increasing, so $e^{x_1} = e^{x_2} \\Rightarrow x_1 = x_2$: one-one.\n$\\sin 0 = \\sin \\pi$, $\\cos 0 = \\cos 2\\pi$, and a constant map sends everything to $a$.",
+    "notes": [
+     "$\\sin 0 = \\sin\\pi = 0$.",
+     "$\\cos 0 = \\cos 2\\pi = 1$.",
+     "Strictly increasing, hence one-one (though not onto).",
+     "A constant map is many-one."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "A strictly monotonic function is one-one."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-011",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-09",
+   "src": {
+    "paper": "gic-2021",
+    "n": 11,
+    "label": "GIC 2021 (rebuilt) · Q11"
+   },
+   "en": {
+    "q": "The relation of isomorphism in the set of all groups is",
+    "options": [
+     "Symmetric and transitive, but not reflexive",
+     "Reflexive and transitive, but not symmetric",
+     "Reflexive and symmetric, but not transitive",
+     "Reflexive, symmetric and transitive"
+    ],
+    "explanation": "Reflexive: the identity map $G \\to G$ is an isomorphism.\nSymmetric: the inverse of an isomorphism is an isomorphism.\nTransitive: a composite of isomorphisms is an isomorphism.\nSo isomorphism is an equivalence relation.",
+    "notes": [
+     "The identity map makes it reflexive.",
+     "The inverse map makes it symmetric.",
+     "Composition makes it transitive.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.9 Normal subgroups, quotient groups, homomorphisms"
+    ],
+    "facts": [
+     "Isomorphism of groups is an equivalence relation."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-012",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-04-05",
+   "src": {
+    "paper": "gic-2021",
+    "n": 12,
+    "label": "GIC 2021 (rebuilt) · Q12"
+   },
+   "en": {
+    "q": "In the group $\\{a, a^2, a^3, a^4, a^5, a^6 = e\\}$ the order of $a^5$ is",
+    "options": [
+     "5",
+     "6",
+     "2",
+     "3"
+    ],
+    "explanation": "The group is cyclic of order 6, generated by $a$.\n$o(a^k) = \\frac{6}{\\gcd(k, 6)}$, so $o(a^5) = \\frac{6}{1} = 6$.\n(Indeed $a^5 = a^{-1}$ has the same order as $a$.)",
+    "notes": [
+     "The exponent 5 is not the order.",
+     "Order of a generator.",
+     "That is the order of $a^3$.",
+     "That is the order of $a^2$ or $a^4$."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.5 Order of an element"
+    ],
+    "facts": [
+     "In a cyclic group of order n, $o(a^k) = \\frac{n}{\\gcd(k, n)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-013",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "gic-2021",
+    "n": 13,
+    "label": "GIC 2021 (rebuilt) · Q13"
+   },
+   "en": {
+    "q": "For the multiplicative group of residue classes $\\{\\bar 1, \\bar 2, \\bar 3, \\bar 4, \\bar 5, \\bar 6\\} \\pmod 7$, generating element is",
+    "options": [
+     "$\\bar 2$",
+     "$\\bar 3$",
+     "$\\bar 4$",
+     "$\\bar 6$"
+    ],
+    "explanation": "Powers of 3 mod 7: $3, 2, 6, 4, 5, 1$, all six classes, so $\\bar 3$ generates the group.\n$2^3 = 8 \\equiv 1$, $4^3 = 64 \\equiv 1$, $6^2 = 36 \\equiv 1$: these have orders 3, 3, 2.",
+    "notes": [
+     "$\\bar 2^3 = \\bar 1$: order 3.",
+     "Order 6 = order of the group.",
+     "$\\bar 4^3 = \\bar 1$: order 3.",
+     "$\\bar 6 = -\\bar 1$: order 2."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "The generators of $U(7)$ are $\\bar 3$ and $\\bar 5$ (the primitive roots mod 7)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-014",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 14,
+    "label": "GIC 2021 (rebuilt) · Q14"
+   },
+   "en": {
+    "q": "The alternating group $A_3$ on 3 symbols 1, 2, 3 is",
+    "options": [
+     "$\\{I, (1\\ 2)\\}$",
+     "$\\{I, (1\\ 3)\\}$",
+     "$\\{I, (2\\ 3)\\}$",
+     "$\\{I, (1\\ 2\\ 3), (1\\ 3\\ 2)\\}$"
+    ],
+    "explanation": "$A_3$ is the set of even permutations in $S_3$; it has $3!/2 = 3$ elements.\nTranspositions are odd; each 3-cycle is a product of two transpositions, so even. Hence $A_3 = \\{I, (1\\ 2\\ 3), (1\\ 3\\ 2)\\}$.",
+    "notes": [
+     "A transposition is odd.",
+     "A transposition is odd.",
+     "A transposition is odd.",
+     "The even permutations of $S_3$."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.4 Permutations and the symmetric group Sn"
+    ],
+    "facts": [
+     "$A_n$ = even permutations, $|A_n| = n!/2$; $A_3$ is cyclic of order 3."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-015",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-04-07",
+   "src": {
+    "paper": "gic-2021",
+    "n": 15,
+    "label": "GIC 2021 (rebuilt) · Q15"
+   },
+   "en": {
+    "q": "Let $\\mathbb{Z}$ be the additive group of integers and E the additive subgroup of even integers with zero, then the number of distinct cosets of E in $\\mathbb{Z}$ is",
+    "options": [
+     "2",
+     "3",
+     "1",
+     "$\\infty$"
+    ],
+    "explanation": "The cosets are $E$ (even integers) and $1 + E$ (odd integers); every integer lies in exactly one of them. So the index $[\\mathbb{Z} : 2\\mathbb{Z}] = 2$.",
+    "notes": [
+     "",
+     "That would be the index of $3\\mathbb{Z}$.",
+     "Only for $E = \\mathbb{Z}$.",
+     "E is infinite, but its index is finite."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.7 Cosets and Lagrange's theorem"
+    ],
+    "facts": [
+     "$[\\mathbb{Z} : n\\mathbb{Z}] = n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-016",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-09",
+   "src": {
+    "paper": "gic-2021",
+    "n": 16,
+    "label": "GIC 2021 (rebuilt) · Q16"
+   },
+   "en": {
+    "q": "Let $\\mathbb{R}^+$ be the multiplicative group of positive real numbers and $\\mathbb{R}$ be the additive group of real numbers, then the mapping $f : \\mathbb{R}^+ \\to \\mathbb{R}$ given by $f(x) = \\log x$ $\\forall x \\in \\mathbb{R}^+$ is",
+    "options": [
+     "One-one and onto, but not homomorphism",
+     "One-one and homomorphism, but not onto",
+     "Onto and homomorphism, but not one-one",
+     "One-one, onto and homomorphism"
+    ],
+    "explanation": "$\\log(xy) = \\log x + \\log y$: a homomorphism.\n$\\log x = \\log y \\Rightarrow x = y$: one-one. Every real $t$ equals $\\log e^t$: onto.\nSo $f$ is an isomorphism $(\\mathbb{R}^+, \\cdot) \\cong (\\mathbb{R}, +)$.",
+    "notes": [
+     "$\\log(xy) = \\log x + \\log y$.",
+     "$\\log$ takes every real value.",
+     "$\\log$ is strictly increasing.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.9 Normal subgroups, quotient groups, homomorphisms"
+    ],
+    "facts": [
+     "$\\log : (\\mathbb{R}^+, \\cdot) \\to (\\mathbb{R}, +)$ is an isomorphism; its inverse is $e^x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-017",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "gic-2021",
+    "n": 17,
+    "label": "GIC 2021 (rebuilt) · Q17"
+   },
+   "en": {
+    "q": "How many generators does a cyclic group of order 8 have?",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "6"
+    ],
+    "explanation": "If $G = \\langle a \\rangle$ has order 8, $a^k$ generates G exactly when $\\gcd(k, 8) = 1$: $k = 1, 3, 5, 7$.\nSo there are $\\varphi(8) = 4$ generators.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "A cyclic group of order n has $\\varphi(n)$ generators."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-018",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 18,
+    "label": "GIC 2021 (rebuilt) · Q18"
+   },
+   "en": {
+    "q": "The value of the determinant $\\begin{vmatrix} 1 & 1 & 1 \\\\ x & y & z \\\\ x^3 & y^3 & z^3 \\end{vmatrix}$ is",
+    "options": [
+     "$(x - y)(y - z)(z - x)(x + y + z)$",
+     "$(x - y)(y - z)(z - x)(x + y - z)$",
+     "$xyz(x + y + z)$",
+     "$(xy + yz + zx)(x^2 + y^2 + z^2)$"
+    ],
+    "explanation": "The determinant vanishes when $x = y$, $y = z$ or $z = x$, so $(x - y)(y - z)(z - x)$ is a factor. The other factor is symmetric of degree 1: $k(x + y + z)$.\nCheck with $x = 0, y = 1, z = 2$: the determinant is $1 \\cdot (8 - 2) = 6$ and $(-1)(-1)(2)(3) = 6$, so $k = 1$.",
+    "notes": [
+     "",
+     "Not symmetric in $x, y, z$; gives $-2$ at $(0, 1, 2)$.",
+     "Vanishes at $x = 0$, but the determinant does not.",
+     "Does not vanish when $x = y$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "$\\begin{vmatrix} 1 & 1 & 1 \\\\ x & y & z \\\\ x^3 & y^3 & z^3 \\end{vmatrix} = (x - y)(y - z)(z - x)(x + y + z)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-019",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 19,
+    "label": "GIC 2021 (rebuilt) · Q19"
+   },
+   "en": {
+    "q": "The value of the determinant $\\begin{vmatrix} x + y & z & 1 \\\\ y + z & x & 1 \\\\ z + x & y & 1 \\end{vmatrix}$ is",
+    "options": [
+     "$(x + y)(y + z)(z + x)$",
+     "$xyz$",
+     "1",
+     "0"
+    ],
+    "explanation": "$C_1 \\to C_1 + C_2$ makes every entry of the first column $x + y + z$.\nThen $C_1 = (x + y + z)\\, C_3$: two proportional columns, so the determinant is 0.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "A determinant with two proportional columns (or rows) is zero."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-020",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 20,
+    "label": "GIC 2021 (rebuilt) · Q20"
+   },
+   "en": {
+    "q": "If A is a square matrix of order n, then value of adj (adj A) is",
+    "options": [
+     "$|A|^{n} A$",
+     "$|A|^{n-1} A$",
+     "$|A|^{n-2} A$",
+     "None of these"
+    ],
+    "explanation": "For invertible A: $\\operatorname{adj} A = |A| A^{-1}$ and $|\\operatorname{adj} A| = |A|^{n-1}$.\nSo $\\operatorname{adj}(\\operatorname{adj} A) = |\\operatorname{adj} A|\\,(\\operatorname{adj} A)^{-1} = |A|^{n-1} \\cdot \\frac{A}{|A|} = |A|^{n-2} A$.\n(Both sides are polynomials in the entries, so it holds for singular A too, $n \\ge 2$.)",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "$\\operatorname{adj}(\\operatorname{adj} A) = |A|^{n-2} A$ and $|\\operatorname{adj} A| = |A|^{n-1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-021",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 21,
+    "label": "GIC 2021 (rebuilt) · Q21"
+   },
+   "en": {
+    "q": "If $3A - 2B = \\begin{bmatrix} 6 & -9 \\\\ 6 & -3 \\end{bmatrix}$ and $2A - B = \\begin{bmatrix} 8 & -10 \\\\ 8 & -2 \\end{bmatrix}$ then A is",
+    "options": [
+     "$\\begin{bmatrix} -10 & 11 \\\\ -10 & 1 \\end{bmatrix}$",
+     "$\\begin{bmatrix} 10 & -11 \\\\ 10 & -1 \\end{bmatrix}$",
+     "$\\begin{bmatrix} -10 & 11 \\\\ 10 & 1 \\end{bmatrix}$",
+     "None of these"
+    ],
+    "explanation": "$A = 2(2A - B) - (3A - 2B) = \\begin{bmatrix} 16 - 6 & -20 + 9 \\\\ 16 - 6 & -4 + 3 \\end{bmatrix} = \\begin{bmatrix} 10 & -11 \\\\ 10 & -1 \\end{bmatrix}$.",
+    "notes": [
+     "That is $-A$.",
+     "",
+     "Signs mixed up.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "Eliminate as with ordinary simultaneous equations: matrix addition and scalar multiplication obey the same rules."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-022",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 22,
+    "label": "GIC 2021 (rebuilt) · Q22"
+   },
+   "en": {
+    "q": "If a matrix $\\begin{bmatrix} 5 & 8 & 6 \\\\ 3 & 2 & 4 \\\\ 1 & 7 & 9 \\end{bmatrix}$ is expressed as A + B, where A is symmetric and B is skew-symmetric, then B is equal to",
+    "options": [
+     "$\\begin{bmatrix} 5 & 11/2 & 7/2 \\\\ 11/2 & 2 & 11/2 \\\\ 7/2 & 11/2 & 9 \\end{bmatrix}$",
+     "$\\begin{bmatrix} 0 & 5/2 & 5/2 \\\\ -5/2 & 0 & -3/2 \\\\ -5/2 & 3/2 & 0 \\end{bmatrix}$",
+     "$\\begin{bmatrix} 0 & -5/2 & -5/2 \\\\ 5/2 & 0 & 3/2 \\\\ 5/2 & -3/2 & 0 \\end{bmatrix}$",
+     "$\\begin{bmatrix} 5 & 11/2 & 7/2 \\\\ 11/2 & 2 & 11 \\\\ 7/2 & 11 & 9 \\end{bmatrix}$"
+    ],
+    "explanation": "$B = \\frac12(P - P^T)$, with $P - P^T = \\begin{bmatrix} 0 & 5 & 5 \\\\ -5 & 0 & -3 \\\\ -5 & 3 & 0 \\end{bmatrix}$.\nHalving gives (b). (Option (a) is the symmetric part $A = \\frac12(P + P^T)$.)",
+    "notes": [
+     "This is the symmetric part A.",
+     "",
+     "That is $\\frac12(P^T - P) = -B$.",
+     "Symmetric, with 11 in place of $11/2$: not the skew part."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "$P = \\frac12(P + P^T) + \\frac12(P - P^T)$: symmetric part plus skew-symmetric part."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-023",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-03-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 23,
+    "label": "GIC 2021 (rebuilt) · Q23"
+   },
+   "en": {
+    "q": "The rank and nullity of the linear transformation $T : \\mathbb{R}^2 \\to \\mathbb{R}^3$ defined by $T(a, b) = (a - b, b - a, -a)$ are respectively",
+    "options": [
+     "1, 1",
+     "2, 0",
+     "0, 2",
+     "2, 1"
+    ],
+    "explanation": "$T(a, b) = 0 \\Rightarrow a = 0$ and $a = b$, so $\\ker T = \\{0\\}$: nullity 0.\nRank–nullity: rank $= \\dim \\mathbb{R}^2 - 0 = 2$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.3 Linear transformations"
+    ],
+    "facts": [
+     "rank$(T)$ + nullity$(T) = \\dim V$ (the domain)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-024",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-03-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 24,
+    "label": "GIC 2021 (rebuilt) · Q24"
+   },
+   "en": {
+    "q": "If $W_1$ and $W_2$ are subspaces of a finite dimensional vector space V, then $\\dim W_1 + \\dim W_2$ is equal to",
+    "options": [
+     "$\\dim(W_1 + W_2)$",
+     "$\\dim(W_1 \\cap W_2)$",
+     "$\\dim(W_1 + W_2) - \\dim(W_1 \\cap W_2)$",
+     "$\\dim(W_1 + W_2) + \\dim(W_1 \\cap W_2)$"
+    ],
+    "explanation": "Extend a basis of $W_1 \\cap W_2$ to bases of $W_1$ and of $W_2$; together they give a basis of $W_1 + W_2$.\nHence $\\dim(W_1 + W_2) = \\dim W_1 + \\dim W_2 - \\dim(W_1 \\cap W_2)$.",
+    "notes": [
+     "True only for a direct sum.",
+     "",
+     "Wrong sign.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.2 Linear dependence, basis, dimension"
+    ],
+    "facts": [
+     "$\\dim(W_1 + W_2) = \\dim W_1 + \\dim W_2 - \\dim(W_1 \\cap W_2)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-025",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-03-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 25,
+    "label": "GIC 2021 (rebuilt) · Q25"
+   },
+   "en": {
+    "q": "Let V and W be two vector spaces over a field F. If $T : V \\to W$ is a linear transformation such that $\\dim V = 5$ and nullity$(T) = 2$, then rank$(T)$ is",
+    "options": [
+     "0",
+     "2",
+     "3",
+     "1"
+    ],
+    "explanation": "Rank–nullity: rank$(T) = \\dim V - $ nullity$(T) = 5 - 2 = 3$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.3 Linear transformations"
+    ],
+    "facts": [
+     "rank$(T)$ + nullity$(T) = \\dim V$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-026",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 26,
+    "label": "GIC 2021 (rebuilt) · Q26"
+   },
+   "en": {
+    "q": "What can be said about the solution of the following system of linear equations? $x + y + 2z = 4$, $2x - y + 3z = 6$, $x - y - z = 1$",
+    "options": [
+     "It has a unique non-zero solution",
+     "It has infinitely many solutions",
+     "It has no solution",
+     "None of the above is true"
+    ],
+    "explanation": "$\\Delta = \\begin{vmatrix} 1 & 1 & 2 \\\\ 2 & -1 & 3 \\\\ 1 & -1 & -1 \\end{vmatrix} = 4 + 5 - 2 = 7 \\ne 0$, so the solution is unique.\nSolving: $x = \\frac{15}{7}$, $y = \\frac37$, $z = \\frac57$, which is non-zero (the system is not homogeneous).",
+    "notes": [
+     "",
+     "Needs $\\Delta = 0$.",
+     "Needs $\\Delta = 0$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "$\\Delta \\ne 0 \\Rightarrow$ a unique solution (Cramer's rule)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-027",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-05-05",
+   "src": {
+    "paper": "gic-2021",
+    "n": 27,
+    "label": "GIC 2021 (rebuilt) · Q27"
+   },
+   "en": {
+    "q": "The value of $\\lim\\limits_{n \\to \\infty} \\sum_{r=0}^{n-1} \\frac{1}{\\sqrt{n^2 - r^2}}$ is",
+    "options": [
+     "$\\frac{\\pi}{4}$",
+     "$\\frac{\\pi}{2}$",
+     "$\\pi$",
+     "$\\frac{\\pi}{3}$"
+    ],
+    "explanation": "$\\sum_{r=0}^{n-1} \\frac1n \\cdot \\frac{1}{\\sqrt{1 - (r/n)^2}} \\to \\int_0^1 \\frac{dx}{\\sqrt{1 - x^2}} = \\sin^{-1} 1 = \\frac{\\pi}{2}$.",
+    "notes": [
+     "That is $\\int_0^1 \\frac{dx}{1 + x^2}$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.5 Series"
+    ],
+    "facts": [
+     "$\\lim \\frac1n \\sum_{r=0}^{n-1} f\\left(\\frac rn\\right) = \\int_0^1 f(x)\\,dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-028",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-14-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 28,
+    "label": "GIC 2021 (rebuilt) · Q28"
+   },
+   "en": {
+    "q": "If $\\vec r = (a \\sin t)\\hat i + (a \\cos t)\\hat j + (a t \\tan\\theta)\\hat k$, then the value of $\\left|\\frac{d\\vec r}{dt} \\times \\frac{d^2\\vec r}{dt^2}\\right|$ is",
+    "options": [
+     "$a^2 \\cos\\theta$",
+     "$a^2 \\sin\\theta$",
+     "$a^2 \\tan\\theta$",
+     "$a^2 \\sec\\theta$"
+    ],
+    "explanation": "$\\dot{\\vec r} = (a\\cos t, -a\\sin t, a\\tan\\theta)$, $\\ddot{\\vec r} = (-a\\sin t, -a\\cos t, 0)$.\n$\\dot{\\vec r} \\times \\ddot{\\vec r} = (a^2\\tan\\theta\\cos t,\\ -a^2\\tan\\theta\\sin t,\\ -a^2)$.\nIts length is $a^2\\sqrt{\\tan^2\\theta + 1} = a^2\\sec\\theta$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.1 Differentiation of vector functions"
+    ],
+    "facts": [
+     "For a helix, $|\\dot{\\vec r} \\times \\ddot{\\vec r}|$ is constant."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-029",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 29,
+    "label": "GIC 2021 (rebuilt) · Q29"
+   },
+   "en": {
+    "q": "The value of $\\hat i \\cdot (\\hat j \\times \\hat k) + \\hat j \\cdot (\\hat k \\times \\hat i) + \\hat k \\cdot (\\hat i \\times \\hat j)$ is",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "explanation": "$\\hat j \\times \\hat k = \\hat i$, $\\hat k \\times \\hat i = \\hat j$, $\\hat i \\times \\hat j = \\hat k$.\nSo the sum is $\\hat i \\cdot \\hat i + \\hat j \\cdot \\hat j + \\hat k \\cdot \\hat k = 1 + 1 + 1 = 3$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$[\\hat i\\ \\hat j\\ \\hat k] = 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-030",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 30,
+    "label": "GIC 2021 (rebuilt) · Q30"
+   },
+   "en": {
+    "q": "If V is the volume enclosed by a closed surface S and $\\vec F = x\\hat i + 2y\\hat j + 3z\\hat k$ then the value of $\\int_S \\vec F \\cdot \\hat n\\, dS$ is",
+    "options": [
+     "3V",
+     "4V",
+     "6V",
+     "5V"
+    ],
+    "explanation": "Gauss's divergence theorem: $\\int_S \\vec F \\cdot \\hat n\\, dS = \\int_V \\nabla \\cdot \\vec F\\, dV$.\n$\\nabla \\cdot \\vec F = 1 + 2 + 3 = 6$, so the flux is $6V$.",
+    "notes": [
+     "That is the flux of $\\vec r = x\\hat i + y\\hat j + z\\hat k$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "Flux of $\\vec r$ through a closed surface is $3V$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-031",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 31,
+    "label": "GIC 2021 (rebuilt) · Q31"
+   },
+   "en": {
+    "q": "If $\\vec F$ is a vector point function and S is an open surface bounded by a closed curve C, then the tangential line integral of $\\vec F$ along C is described",
+    "options": [
+     "By Green's theorem",
+     "By Stokes' theorem",
+     "By Gauss's theorem",
+     "By Leibnitz' theorem"
+    ],
+    "explanation": "Stokes: $\\oint_C \\vec F \\cdot d\\vec r = \\int_S (\\nabla \\times \\vec F) \\cdot \\hat n\\, dS$ for an open surface S whose boundary is C.",
+    "notes": [
+     "Green's theorem is the special case of a plane region.",
+     "",
+     "Gauss relates a closed surface to the volume inside.",
+     "Leibnitz's rule is about differentiating under the integral sign."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "Stokes: line integral round C = flux of the curl through any surface bounded by C."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-032",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 32,
+    "label": "GIC 2021 (rebuilt) · Q32"
+   },
+   "en": {
+    "q": "The unit normal to the surface $x^2 + 4y^2 - 3z^2 - 2 = 0$ at the point $(1, 1, 1)$ is",
+    "options": [
+     "$\\frac{1}{\\sqrt{26}}(\\hat i + 4\\hat j - 3\\hat k)$",
+     "$\\hat i + 4\\hat j - 3\\hat k$",
+     "$\\frac{1}{\\sqrt 3}(\\hat i + \\hat j + \\hat k)$",
+     "$\\frac{1}{\\sqrt{11}}(\\hat i - 3\\hat j - \\hat k)$"
+    ],
+    "explanation": "$\\nabla\\phi = (2x, 8y, -6z) = (2, 8, -6)$ at $(1, 1, 1)$, i.e. along $\\hat i + 4\\hat j - 3\\hat k$.\nIts length is $\\sqrt{1 + 16 + 9} = \\sqrt{26}$, so the unit normal is $\\frac{1}{\\sqrt{26}}(\\hat i + 4\\hat j - 3\\hat k)$.",
+    "notes": [
+     "",
+     "Normal, but not a unit vector.",
+     "That is the position vector direction.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "Unit normal to $\\phi = c$: $\\frac{\\nabla\\phi}{|\\nabla\\phi|}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-033",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 33,
+    "label": "GIC 2021 (rebuilt) · Q33"
+   },
+   "en": {
+    "q": "If $\\vec r = x\\hat i + y\\hat j + z\\hat k$ and $r = |\\vec r|$ then the value of curl $(r^n \\vec r)$, is",
+    "options": [
+     "$\\vec 0$",
+     "$n r^{n-2} \\vec r$",
+     "$n r^{n-1} \\vec r$",
+     "$(n + 3) r^n \\vec r$"
+    ],
+    "explanation": "$\\nabla \\times (\\phi\\vec r) = \\nabla\\phi \\times \\vec r + \\phi\\,(\\nabla \\times \\vec r)$.\n$\\nabla r^n = n r^{n-2}\\vec r$ is parallel to $\\vec r$, and $\\nabla \\times \\vec r = \\vec 0$. So the curl is $\\vec 0$.",
+    "notes": [
+     "",
+     "That is $\\nabla r^n$, not a curl.",
+     "",
+     "$(n + 3)r^n$ is the divergence (a scalar)."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "Every field $f(r)\\vec r$ is irrotational: $\\nabla \\times (f(r)\\vec r) = \\vec 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-034",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 34,
+    "label": "GIC 2021 (rebuilt) · Q34"
+   },
+   "en": {
+    "q": "The $n^{\\text{th}}$ roots of unity can be arranged as",
+    "options": [
+     "an arithmetic progression",
+     "a geometric progression",
+     "a harmonic progression",
+     "an arithmetico-geometric progression"
+    ],
+    "explanation": "The roots are $1, \\omega, \\omega^2, \\ldots, \\omega^{n-1}$ with $\\omega = e^{2\\pi i/n}$: a GP with common ratio $\\omega$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "The n-th roots of unity form a GP with ratio $e^{2\\pi i/n}$; their sum is 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-036",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "gic-2021",
+    "n": 36,
+    "label": "GIC 2021 (rebuilt) · Q36"
+   },
+   "en": {
+    "q": "The value of $\\lim\\limits_{x \\to 0} \\left(\\frac{a^x + b^x}{2}\\right)^{1/x}$ is",
+    "options": [
+     "$ab$",
+     "$\\frac{a + b}{2}$",
+     "$\\sqrt{ab}$",
+     "$a + b$"
+    ],
+    "explanation": "A $1^\\infty$ form: the limit is $e^L$ with $L = \\lim\\limits_{x \\to 0} \\frac1x\\left(\\frac{a^x + b^x}{2} - 1\\right) = \\frac{\\ln a + \\ln b}{2}$.\nSo the limit is $e^{\\ln\\sqrt{ab}} = \\sqrt{ab}$ ($a, b > 0$).",
+    "notes": [
+     "",
+     "That is the AM, the value of the base at $x = 1$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "$\\lim\\limits_{x \\to 0}\\left(\\frac{a^x + b^x}{2}\\right)^{1/x} = \\sqrt{ab}$, the GM."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-037",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "gic-2021",
+    "n": 37,
+    "label": "GIC 2021 (rebuilt) · Q37"
+   },
+   "en": {
+    "q": "Which function is not discontinuous at $x = 0$",
+    "options": [
+     "$\\sin(1/x)$",
+     "$1/x^2$",
+     "$\\tan^{-1}(1/x)$",
+     "$\\tan x$"
+    ],
+    "explanation": "$\\tan x$ is continuous at 0: $\\lim\\limits_{x \\to 0}\\tan x = 0 = \\tan 0$.\n$\\sin(1/x)$ oscillates, $1/x^2 \\to \\infty$, and $\\tan^{-1}(1/x)$ jumps from $-\\frac{\\pi}{2}$ to $\\frac{\\pi}{2}$; none of the three is even defined at 0.",
+    "notes": [
+     "Oscillates between $-1$ and $1$: no limit.",
+     "Tends to $\\infty$.",
+     "Left limit $-\\frac{\\pi}{2}$, right limit $\\frac{\\pi}{2}$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "$\\tan x$ is continuous wherever $\\cos x \\ne 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-038",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "gic-2021",
+    "n": 38,
+    "label": "GIC 2021 (rebuilt) · Q38"
+   },
+   "en": {
+    "q": "$\\lim\\limits_{x \\to 0} (1 + x)^{1/x}$ is equal to",
+    "options": [
+     "$1/e$",
+     "$e$",
+     "1",
+     "$e - 1$"
+    ],
+    "explanation": "Standard limit: $\\ln(1 + x)^{1/x} = \\frac{\\ln(1 + x)}{x} \\to 1$, so $(1 + x)^{1/x} \\to e$.",
+    "notes": [
+     "That is $\\lim (1 - x)^{1/x}$.",
+     "",
+     "A $1^\\infty$ form is not automatically 1.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "$\\lim\\limits_{x \\to 0}(1 + x)^{1/x} = e$; more generally $\\lim (1 + ax)^{b/x} = e^{ab}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-039",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "gic-2021",
+    "n": 39,
+    "label": "GIC 2021 (rebuilt) · Q39"
+   },
+   "en": {
+    "q": "Writing Lagrange's mean value theorem as $f(b) - f(a) = (b - a) f'(c)$, $a < c < b$, the value of c, if $f(x) = x(x - 1)$, $a = 0$, $b = \\frac12$ is",
+    "options": [
+     "$\\frac14$",
+     "$\\frac13$",
+     "$\\frac15$",
+     "$\\frac16$"
+    ],
+    "explanation": "$f(\\tfrac12) - f(0) = -\\tfrac14$ and $f'(c) = 2c - 1$.\n$\\tfrac12(2c - 1) = -\\tfrac14 \\Rightarrow c = \\tfrac14$.\nShortcut: for a quadratic, c is the midpoint of $[a, b]$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "For a quadratic $f$, Lagrange's $c = \\frac{a + b}{2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-040",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "gic-2021",
+    "n": 40,
+    "label": "GIC 2021 (rebuilt) · Q40"
+   },
+   "en": {
+    "q": "The function $\\sin^p\\theta \\cos^q\\theta$ attains its maximum value, when",
+    "options": [
+     "$\\theta = \\tan^{-1}\\sqrt{p/q}$",
+     "$\\theta = \\tan^{-1}\\sqrt{q/p}$",
+     "$\\theta = \\tan^{-1}(p/q)$",
+     "$\\theta = \\tan^{-1}(q/p)$"
+    ],
+    "explanation": "Take logs: $y = p\\ln\\sin\\theta + q\\ln\\cos\\theta$, $y' = p\\cot\\theta - q\\tan\\theta$.\n$y' = 0 \\Rightarrow \\tan^2\\theta = \\frac{p}{q}$; $y'$ changes from $+$ to $-$ there, so the maximum is at $\\theta = \\tan^{-1}\\sqrt{p/q}$ ($p, q > 0$, $0 < \\theta < \\frac{\\pi}{2}$).",
+    "notes": [
+     "",
+     "$p$ and $q$ interchanged.",
+     "Square root missing.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "$\\sin^p\\theta\\cos^q\\theta$ is greatest when $\\tan\\theta = \\sqrt{p/q}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-041",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "gic-2021",
+    "n": 41,
+    "label": "GIC 2021 (rebuilt) · Q41"
+   },
+   "en": {
+    "q": "When we expand $\\sin\\left(\\frac{\\pi}{4} + \\theta\\right)$ in powers of $\\theta$, the coefficient of $\\frac{\\theta^3}{3!}$ is",
+    "options": [
+     "$-\\frac{1}{\\sqrt 2}$",
+     "$\\frac{1}{\\sqrt 2}$",
+     "$-\\frac12$",
+     "$\\frac12$"
+    ],
+    "explanation": "Taylor: $f(a + \\theta) = \\sum f^{(k)}(a)\\frac{\\theta^k}{k!}$, so the coefficient of $\\frac{\\theta^3}{3!}$ is $f'''(\\frac{\\pi}{4})$.\nFor $f = \\sin$, $f''' = -\\cos$, giving $-\\cos\\frac{\\pi}{4} = -\\frac{1}{\\sqrt 2}$.",
+    "notes": [
+     "",
+     "Sign lost: the third derivative of sin is $-\\cos$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "In $f(a + h) = \\sum f^{(k)}(a)\\frac{h^k}{k!}$, the coefficient of $\\frac{h^k}{k!}$ is $f^{(k)}(a)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-042",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 42,
+    "label": "GIC 2021 (rebuilt) · Q42"
+   },
+   "en": {
+    "q": "If $u = \\sqrt x + \\sqrt y$, then the value of $x^2\\frac{\\partial^2 u}{\\partial x^2} + 2xy\\frac{\\partial^2 u}{\\partial x \\partial y} + y^2\\frac{\\partial^2 u}{\\partial y^2}$ is",
+    "options": [
+     "$u/4$",
+     "$4u$",
+     "$-\\frac{u}{4}$",
+     "$\\frac{u^2}{4}$"
+    ],
+    "explanation": "u is homogeneous of degree $n = \\frac12$.\nEuler: the expression equals $n(n - 1)u = \\frac12 \\cdot \\left(-\\frac12\\right)u = -\\frac{u}{4}$.",
+    "notes": [
+     "Sign lost: $n - 1 = -\\frac12$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.2 Partial differentiation and Euler's theorem"
+    ],
+    "facts": [
+     "For u homogeneous of degree n: $x^2u_{xx} + 2xyu_{xy} + y^2u_{yy} = n(n - 1)u$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-043",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-06-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 43,
+    "label": "GIC 2021 (rebuilt) · Q43"
+   },
+   "en": {
+    "q": "If $u = f(y/x)$, then the value of $x\\frac{\\partial u}{\\partial x} + y\\frac{\\partial u}{\\partial y}$ is",
+    "options": [
+     "0",
+     "u",
+     "2u",
+     "x + y"
+    ],
+    "explanation": "$u = f(y/x)$ is homogeneous of degree 0, so by Euler's theorem $xu_x + yu_y = 0 \\cdot u = 0$.\nDirectly: $xu_x = -\\frac{y}{x}f'$ and $yu_y = \\frac{y}{x}f'$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.2 Partial differentiation and Euler's theorem"
+    ],
+    "facts": [
+     "Euler: $xu_x + yu_y = nu$ for u homogeneous of degree n."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-044",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 44,
+    "label": "GIC 2021 (rebuilt) · Q44"
+   },
+   "en": {
+    "q": "A function f(x) is defined in [0, 2] as follows: $f(x) = \\begin{cases} x; & \\text{if } x \\text{ is rational} \\\\ x^2; & \\text{if } x \\text{ is irrational} \\end{cases}$ The value of the upper Riemann integral of f(x) over [0, 2] is",
+    "options": [
+     "14/3",
+     "4",
+     "8/3",
+     "17/6"
+    ],
+    "explanation": "Rationals and irrationals are dense, so on every small interval the supremum of f is the larger of $x$ and $x^2$: $x$ on $[0, 1]$, $x^2$ on $[1, 2]$.\nUpper integral $= \\int_0^1 x\\,dx + \\int_1^2 x^2\\,dx = \\frac12 + \\frac73 = \\frac{17}{6}$.",
+    "notes": [
+     "That is $\\int_0^2 (x + x^2)\\,dx$.",
+     "",
+     "That is $\\int_0^2 x^2\\,dx$; on $[0, 1]$, $x > x^2$.",
+     "The lower integral is $\\frac13 + \\frac32 = \\frac{11}{6}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "For such 'rational/irrational' functions: upper integral = $\\int \\max$, lower integral = $\\int \\min$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-045",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 45,
+    "label": "GIC 2021 (rebuilt) · Q45"
+   },
+   "en": {
+    "q": "The value of the integral $\\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}\\,dx}{\\sqrt{\\sin x} + \\sqrt{\\cos x}}$ is",
+    "options": [
+     "$\\pi$",
+     "$\\frac{3\\pi}{4}$",
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{\\pi}{4}$"
+    ],
+    "explanation": "Replacing $x$ by $\\frac{\\pi}{2} - x$ swaps sin and cos; adding the two forms, $2I = \\int_0^{\\pi/2} dx = \\frac{\\pi}{2}$, so $I = \\frac{\\pi}{4}$.",
+    "notes": [
+     "",
+     "",
+     "That is $2I$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_0^a f(x)\\,dx = \\int_0^a f(a - x)\\,dx$; such 'king' integrals equal half the length of the interval."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-046",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 46,
+    "label": "GIC 2021 (rebuilt) · Q46"
+   },
+   "en": {
+    "q": "The value of the integral $\\int \\left(u\\frac{d^2v}{dx^2} - v\\frac{d^2u}{dx^2}\\right)dx$ is",
+    "options": [
+     "$\\frac{dv}{dx} - \\frac{du}{dx}$",
+     "$u\\frac{dv}{dx} + v\\frac{du}{dx}$",
+     "$u\\frac{dv}{dx} - v\\frac{du}{dx}$",
+     "$\\frac{dv}{dx} + \\frac{du}{dx}$"
+    ],
+    "explanation": "$\\frac{d}{dx}\\left(uv' - vu'\\right) = u'v' + uv'' - v'u' - vu'' = uv'' - vu''$.\nSo the integral is $u\\frac{dv}{dx} - v\\frac{du}{dx}$ (+ C).",
+    "notes": [
+     "",
+     "Its derivative is $uv'' + vu'' + 2u'v'$, not $uv'' - vu''$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "$\\int (uv'' - vu'')\\,dx = uv' - vu'$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-047",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 47,
+    "label": "GIC 2021 (rebuilt) · Q47"
+   },
+   "en": {
+    "q": "The value of the integral $\\int_{1/4}^{3/4} \\frac{\\frac{\\pi}{2} + \\sin^{-1}x}{2\\cos^{-1}x + 3\\sin^{-1}x + \\sin^{-1}(1 - x)}\\,dx$ is",
+    "options": [
+     "$\\frac14$",
+     "$\\frac18$",
+     "$\\frac34$",
+     "1"
+    ],
+    "explanation": "$2\\cos^{-1}x + 3\\sin^{-1}x = 2(\\cos^{-1}x + \\sin^{-1}x) + \\sin^{-1}x = \\pi + \\sin^{-1}x$, so the denominator is $\\pi + \\sin^{-1}x + \\sin^{-1}(1 - x)$.\nReplacing $x$ by $1 - x$ (limits unchanged) and adding: $2I = \\int_{1/4}^{3/4} 1\\,dx = \\frac12$, so $I = \\frac14$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\sin^{-1}x + \\cos^{-1}x = \\frac{\\pi}{2}$, and $\\int_a^b f(x)\\,dx = \\int_a^b f(a + b - x)\\,dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-048",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 48,
+    "label": "GIC 2021 (rebuilt) · Q48"
+   },
+   "en": {
+    "q": "An appropriate substitution for the integral $\\int \\frac{1 + x^{1/2}}{1 + x^{1/3}}\\,dx$ is",
+    "options": [
+     "$x = t^2$",
+     "$x = t^3$",
+     "$x = t^6$",
+     "$x = t^{12}$"
+    ],
+    "explanation": "Take $x = t^k$ with k the LCM of the root indices 2 and 3, i.e. $k = 6$: $x^{1/2} = t^3$, $x^{1/3} = t^2$, $dx = 6t^5\\,dt$.\nThe integral becomes $\\int \\frac{6t^5(1 + t^3)}{1 + t^2}\\,dt$, a rational function.",
+    "notes": [
+     "Leaves $x^{1/3} = t^{2/3}$.",
+     "Leaves $x^{1/2} = t^{3/2}$.",
+     "",
+     "Also rationalises, but 6 (the LCM) is the natural choice."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "For $\\int R(x^{1/m}, x^{1/n})\\,dx$ put $x = t^{\\mathrm{lcm}(m, n)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-049",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 49,
+    "label": "GIC 2021 (rebuilt) · Q49"
+   },
+   "en": {
+    "q": "The value of the integral $\\int_4^7 \\frac{x^{10}}{x^{10} + (11 - x)^{10}}\\,dx$ is",
+    "options": [
+     "3",
+     "$3^{10}$",
+     "$7^{10} - 4^{10}$",
+     "$\\frac32$"
+    ],
+    "explanation": "With $x \\to 11 - x$ the integrand becomes $\\frac{(11 - x)^{10}}{(11 - x)^{10} + x^{10}}$; the two add to 1.\nSo $2I = \\int_4^7 dx = 3$ and $I = \\frac32$.",
+    "notes": [
+     "That is $2I$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_a^b \\frac{f(x)}{f(x) + f(a + b - x)}\\,dx = \\frac{b - a}{2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-050",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 50,
+    "label": "GIC 2021 (rebuilt) · Q50"
+   },
+   "en": {
+    "q": "An integrating factor of the differential equation $\\frac{dy}{dx} = y\\tan x - 2\\sin x$ is",
+    "options": [
+     "$\\sec x$",
+     "$\\cos x$",
+     "$\\sin x$",
+     "$\\tan x$"
+    ],
+    "explanation": "Write it as $\\frac{dy}{dx} - (\\tan x)y = -2\\sin x$, so $P = -\\tan x$.\nIF $= e^{\\int P\\,dx} = e^{\\ln\\cos x} = \\cos x$.",
+    "notes": [
+     "That is the IF for $\\frac{dy}{dx} + y\\tan x = Q$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "For $y' + Py = Q$ the integrating factor is $e^{\\int P\\,dx}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-051",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 51,
+    "label": "GIC 2021 (rebuilt) · Q51"
+   },
+   "en": {
+    "q": "The solution of the differential equation $\\frac{dy}{dx} - \\frac{y}{x} = x^3$ is",
+    "options": [
+     "$3y = x(x^3 + c)$",
+     "$y = x(x^3 + c)$",
+     "$y^2 = x(x^3 + c)$",
+     "$y = x^2(x^3 + c)$"
+    ],
+    "explanation": "IF $= e^{-\\int dx/x} = \\frac1x$: $\\frac{d}{dx}\\left(\\frac yx\\right) = x^2$.\nSo $\\frac yx = \\frac{x^3}{3} + C$, i.e. $3y = x(x^3 + c)$ with $c = 3C$.",
+    "notes": [
+     "",
+     "Gives $y' - \\frac yx = 3x^3$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Linear equation: $y \\cdot \\mathrm{IF} = \\int Q \\cdot \\mathrm{IF}\\,dx + C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-052",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 52,
+    "label": "GIC 2021 (rebuilt) · Q52"
+   },
+   "en": {
+    "q": "The order and degree of the differential equation $f(x, y)\\left(\\frac{d^my}{dx^m}\\right)^p + \\phi(x, y)\\left(\\frac{d^{m-1}y}{dx^{m-1}}\\right)^q + \\cdots = 0$ are respectively",
+    "options": [
+     "p and m",
+     "m and p",
+     "p and q",
+     "q and p"
+    ],
+    "explanation": "Order = order of the highest derivative, $\\frac{d^my}{dx^m}$: m.\nDegree = power of that highest derivative (the equation is a polynomial in the derivatives): p.",
+    "notes": [
+     "Order and degree interchanged.",
+     "",
+     "q is the power of a lower derivative.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "Order: highest derivative present; degree: its power once the equation is polynomial in the derivatives."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-053",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 53,
+    "label": "GIC 2021 (rebuilt) · Q53"
+   },
+   "en": {
+    "q": "The general solution of differential equation $\\frac{dy}{dx} = e^{x - y} + x^2e^{-y}$ is",
+    "options": [
+     "$e^y = e^x + \\frac{x^3}{3} + c$",
+     "$e^y = e^x + \\frac{x^3}{3}$",
+     "$y = x + e^{x^3/3} + c$",
+     "$e^x = e^y + \\frac{y^3}{3} + c$"
+    ],
+    "explanation": "$\\frac{dy}{dx} = e^{-y}(e^x + x^2) \\Rightarrow e^y\\,dy = (e^x + x^2)\\,dx$.\nIntegrating: $e^y = e^x + \\frac{x^3}{3} + c$.",
+    "notes": [
+     "",
+     "A particular solution: the arbitrary constant is missing.",
+     "",
+     "x and y interchanged."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Separate the variables: $e^{x - y} = e^x e^{-y}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-054",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-13-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 54,
+    "label": "GIC 2021 (rebuilt) · Q54"
+   },
+   "en": {
+    "q": "The equation $2x^2 - 6y^2 - 12z^2 + 18yz + 2xz + xy = 0$ represents",
+    "options": [
+     "a cylinder",
+     "a sphere",
+     "a pair of planes",
+     "none of the above"
+    ],
+    "explanation": "It factorises: $(2x - 3y + 6z)(x + 2y - 2z) = 0$ (expand to check).\nSo it is the pair of planes $2x - 3y + 6z = 0$ and $x + 2y - 2z = 0$.\nTest: $abc + 2fgh - af^2 - bg^2 - ch^2 = 144 + 9 - 162 + 6 + 3 = 0$.",
+    "notes": [
+     "",
+     "A sphere needs equal $x^2, y^2, z^2$ coefficients and no product terms.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.4 The Cone"
+    ],
+    "facts": [
+     "A homogeneous second-degree equation is a pair of planes when $abc + 2fgh - af^2 - bg^2 - ch^2 = 0$ (and it factorises)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-055",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-13-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 55,
+    "label": "GIC 2021 (rebuilt) · Q55"
+   },
+   "en": {
+    "q": "The general equation of the cone of second degree which passes through the coordinate axes is",
+    "options": [
+     "$ax^2 + by^2 + cz^2 = 0$",
+     "$\\sqrt{fx} + \\sqrt{gy} + \\sqrt{hz} = 0$",
+     "$ax^2 + by^2 + cz^2 + 2fyz + 2gzx$",
+     "$fyz + gzx + hxy = 0$"
+    ],
+    "explanation": "A cone with vertex at the origin: $ax^2 + by^2 + cz^2 + 2fyz + 2gzx + 2hxy = 0$.\nThe x-axis $(t, 0, 0)$ lies on it only if $a = 0$; likewise $b = c = 0$. What remains is $fyz + gzx + hxy = 0$.",
+    "notes": [
+     "Contains $(t, 0, 0)$ only if $a = 0$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.4 The Cone"
+    ],
+    "facts": [
+     "Cone through the three axes: $fyz + gzx + hxy = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-056",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "gic-2021",
+    "n": 56,
+    "label": "GIC 2021 (rebuilt) · Q56"
+   },
+   "en": {
+    "q": "The equation $xy = 1$ represents",
+    "options": [
+     "a pair of straight lines",
+     "a parabola",
+     "an ellipse",
+     "a hyperbola"
+    ],
+    "explanation": "Rotating the axes by $45^\\circ$ ($x = \\frac{X - Y}{\\sqrt2}$, $y = \\frac{X + Y}{\\sqrt2}$) gives $X^2 - Y^2 = 2$: a rectangular hyperbola with the coordinate axes as asymptotes.\nAlso $h^2 - ab = \\frac14 > 0$ and it is not a line pair.",
+    "notes": [
+     "$xy = 0$ would be a line pair.",
+     "A parabola needs $h^2 = ab$.",
+     "An ellipse needs $h^2 < ab$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "$xy = c^2$ is a rectangular hyperbola."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-057",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 57,
+    "label": "GIC 2021 (rebuilt) · Q57"
+   },
+   "en": {
+    "q": "The equation of the circle described on the line joining the points $(-1, -2)$ and $(1, 3)$ as diameter is",
+    "options": [
+     "$x^2 + y^2 - y - 7 = 0$",
+     "$x^2 + y^2 = 7$",
+     "$x^2 + y^2 - y - 6 = 0$",
+     "$x^2 + y^2 - x - 7 = 0$"
+    ],
+    "explanation": "Diameter form: $(x + 1)(x - 1) + (y + 2)(y - 3) = 0$.\n$x^2 - 1 + y^2 - y - 6 = 0$, i.e. $x^2 + y^2 - y - 7 = 0$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "Circle on the join of $(x_1, y_1), (x_2, y_2)$ as diameter: $(x - x_1)(x - x_2) + (y - y_1)(y - y_2) = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-058",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "gic-2021",
+    "n": 58,
+    "label": "GIC 2021 (rebuilt) · Q58"
+   },
+   "en": {
+    "q": "How many normals can be drawn from a given point to a given parabola?",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "6"
+    ],
+    "explanation": "Normal to $y^2 = 4ax$ with slope m: $y = mx - 2am - am^3$.\nThrough $(h, k)$: $am^3 + (2a - h)m - k = 0$, a cubic in m. So at most 3 normals can be drawn.",
+    "notes": [
+     "",
+     "",
+     "That is the number for an ellipse or hyperbola.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "From a point, at most 3 normals to a parabola (co-normal points); their feet have ordinates summing to 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-059",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 59,
+    "label": "GIC 2021 (rebuilt) · Q59"
+   },
+   "en": {
+    "q": "What is the equation of the chord of the circle $x^2 + y^2 = 49$, whose mid-point is $(-4, 5)$?",
+    "options": [
+     "$4x - 5y - 41 = 0$",
+     "$4x + 5y + 41 = 0$",
+     "$4x - 5y + 41 = 0$",
+     "$5x - 4y + 41 = 0$"
+    ],
+    "explanation": "$T = S_1$: $-4x + 5y - 49 = 16 + 25 - 49$, i.e. $-4x + 5y = 41$, or $4x - 5y + 41 = 0$.\nCheck: $(-4, 5)$ is on it ($-16 - 25 + 41 = 0$).",
+    "notes": [
+     "Does not pass through $(-4, 5)$.",
+     "Does not pass through $(-4, 5)$.",
+     "",
+     "Does not pass through $(-4, 5)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "Chord with given mid-point $(x_1, y_1)$: $T = S_1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-060",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 60,
+    "label": "GIC 2021 (rebuilt) · Q60"
+   },
+   "en": {
+    "q": "The area of the circle $x^2 + y^2 = 14x$ is",
+    "options": [
+     "208 sq. unit",
+     "516 sq. unit",
+     "108 sq. unit",
+     "154 sq. unit"
+    ],
+    "explanation": "$(x - 7)^2 + y^2 = 49$: radius 7.\nArea $= \\pi r^2 = \\frac{22}{7} \\times 49 = 154$ sq. units (with $\\pi = \\frac{22}{7}$).",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "$x^2 + y^2 = 2ax$ is the circle with centre $(a, 0)$ and radius $|a|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-061",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 61,
+    "label": "GIC 2021 (rebuilt) · Q61"
+   },
+   "en": {
+    "q": "The line $\\frac{x - 2}{3} = \\frac{y - 3}{4} = \\frac{z + 5}{-5}$ meets the plane $x + 3y - 5z + 4 = 0$ at the point",
+    "options": [
+     "$(-1, -1, 0)$",
+     "$(1, 1, 0)$",
+     "$(1, 0, 1)$",
+     "$(0, -1, -1)$"
+    ],
+    "explanation": "A point of the line: $(2 + 3t, 3 + 4t, -5 - 5t)$.\nIn the plane: $2 + 3t + 9 + 12t + 25 + 25t + 4 = 40 + 40t = 0$, so $t = -1$: the point $(-1, -1, 0)$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "Line meets plane: write the general point of the line with a parameter and substitute."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-062",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-13-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 62,
+    "label": "GIC 2021 (rebuilt) · Q62"
+   },
+   "en": {
+    "q": "The distance between the planes $2x + y + z = 1$ and $6x + 3y + 3z = 2$ is",
+    "options": [
+     "$\\frac{4}{3\\sqrt3}$",
+     "$\\frac{1}{3\\sqrt6}$",
+     "$\\frac{2}{3\\sqrt6}$",
+     "$\\frac{5}{2\\sqrt6}$"
+    ],
+    "explanation": "As printed, the second plane is $3x + 6y + 3z = 2$, which is not parallel to $2x + y + z = 1$ (the planes meet, so the distance would be 0 and no option fits); it is read as $6x + 3y + 3z = 2$ (3 and 6 swapped).\n$6x + 3y + 3z = 2$ is $2x + y + z = \\frac23$, parallel to $2x + y + z = 1$.\nDistance $= \\frac{|1 - \\frac23|}{\\sqrt{4 + 1 + 1}} = \\frac{1}{3\\sqrt6}$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.2 The plane"
+    ],
+    "facts": [
+     "Distance between $ax + by + cz = d_1$ and $ax + by + cz = d_2$ is $\\frac{|d_1 - d_2|}{\\sqrt{a^2 + b^2 + c^2}}$; make the coefficients equal first."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-063",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 63,
+    "label": "GIC 2021 (rebuilt) · Q63"
+   },
+   "en": {
+    "q": "A line lying in the yz-plane is inclined at an angle $\\alpha$ with z-axis. Its direction cosines are",
+    "options": [
+     "$0, \\sin\\alpha, \\cos\\alpha$",
+     "$0, \\cos\\alpha, \\sin\\alpha$",
+     "$\\sin\\alpha, \\cos\\alpha, 0$",
+     "$\\cos\\alpha, \\sin\\alpha, 0$"
+    ],
+    "explanation": "In the yz-plane the line is perpendicular to the x-axis: $l = 0$.\nIt makes $\\alpha$ with the z-axis ($n = \\cos\\alpha$) and $90^\\circ - \\alpha$ with the y-axis ($m = \\sin\\alpha$). Check: $0 + \\sin^2\\alpha + \\cos^2\\alpha = 1$.",
+    "notes": [
+     "",
+     "That line makes $\\alpha$ with the y-axis.",
+     "A line in the xy-plane.",
+     "A line in the xy-plane."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "A line in the yz-plane has $l = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-064",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-13-03",
+   "src": {
+    "paper": "gic-2021",
+    "n": 64,
+    "label": "GIC 2021 (rebuilt) · Q64"
+   },
+   "en": {
+    "q": "The radius of the circle $x^2 + y^2 + z^2 - 8x + 4y + 8z - 45 = 0$, $x - 2y + 2z = 3$ is",
+    "options": [
+     "4",
+     "$\\sqrt5$",
+     "$4\\sqrt5$",
+     "$2\\sqrt5$"
+    ],
+    "explanation": "Sphere: centre $(4, -2, -4)$, $R^2 = 16 + 4 + 16 + 45 = 81$, $R = 9$.\nDistance of the centre from the plane: $\\frac{|4 + 4 - 8 - 3|}{3} = 1$.\nRadius of the circle $= \\sqrt{81 - 1} = \\sqrt{80} = 4\\sqrt5$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.3 The Sphere"
+    ],
+    "facts": [
+     "Radius of a section of a sphere: $\\sqrt{R^2 - d^2}$, d = distance of the centre from the plane."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-065",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-13-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 65,
+    "label": "GIC 2021 (rebuilt) · Q65"
+   },
+   "en": {
+    "q": "The equation of the right circular cone, whose vertex is the origin, the axis is the z axis and semi-vertical angle is $\\alpha$, is",
+    "options": [
+     "$x^2 + y^2 = z^2\\sin^2\\alpha$",
+     "$x^2 + y^2 = z^2\\cos^2\\alpha$",
+     "$x^2 + y^2 = z^2\\tan^2\\alpha$",
+     "$x^2 + y^2 = z^2\\cot^2\\alpha$"
+    ],
+    "explanation": "A point $(x, y, z)$ of the cone is at distance $\\sqrt{x^2 + y^2}$ from the z-axis, at height $z$, and the line to it makes the angle $\\alpha$ with the axis.\nSo $\\sqrt{x^2 + y^2} = |z|\\tan\\alpha$, i.e. $x^2 + y^2 = z^2\\tan^2\\alpha$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "That cone has semi-vertical angle $90^\\circ - \\alpha$."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.4 The Cone"
+    ],
+    "facts": [
+     "Right circular cone, vertex O, axis Oz, semi-vertical angle $\\alpha$: $x^2 + y^2 = z^2\\tan^2\\alpha$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-066",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-16-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 66,
+    "label": "GIC 2021 (rebuilt) · Q66"
+   },
+   "en": {
+    "q": "If a coin is tossed three times, then the probability of getting at least one tail is",
+    "options": [
+     "$\\frac13$",
+     "$\\frac18$",
+     "$\\frac38$",
+     "$\\frac78$"
+    ],
+    "explanation": "$P(\\text{no tail}) = \\left(\\frac12\\right)^3 = \\frac18$, so $P(\\text{at least one tail}) = 1 - \\frac18 = \\frac78$.",
+    "notes": [
+     "",
+     "That is $P(\\text{no tail})$.",
+     "That is P(exactly one tail).",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.1 Basic probability and the addition theorem"
+    ],
+    "facts": [
+     "P(at least one) = 1 - P(none)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-067",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-16-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 67,
+    "label": "GIC 2021 (rebuilt) · Q67"
+   },
+   "en": {
+    "q": "If A and B are two events such that $P(A) = \\frac13$, $P(B) = \\frac14$ and $P(A \\cup B) = \\frac12$, then the value of $P(A|\\bar B)$ is",
+    "options": [
+     "$\\frac23$",
+     "$\\frac14$",
+     "$\\frac13$",
+     "$\\frac12$"
+    ],
+    "explanation": "$P(A \\cap B) = \\frac13 + \\frac14 - \\frac12 = \\frac{1}{12}$.\n$P(A \\cap \\bar B) = \\frac13 - \\frac{1}{12} = \\frac14$ and $P(\\bar B) = \\frac34$, so $P(A|\\bar B) = \\frac{1/4}{3/4} = \\frac13$.\n(Here $P(A \\cap B) = P(A)P(B)$: A and B are independent, so the answer is just $P(A)$.)",
+    "notes": [
+     "",
+     "That is $P(A \\cap \\bar B)$, not divided by $P(\\bar B)$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.2 Conditional probability, multiplication theorem, independent events"
+    ],
+    "facts": [
+     "$P(A|\\bar B) = \\frac{P(A) - P(A \\cap B)}{1 - P(B)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-068",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-16-01",
+   "src": {
+    "paper": "gic-2021",
+    "n": 68,
+    "label": "GIC 2021 (rebuilt) · Q68"
+   },
+   "en": {
+    "q": "What is the probability that a leap year, selected at random, will have 53 Sundays?",
+    "options": [
+     "$\\frac37$",
+     "$\\frac57$",
+     "$\\frac27$",
+     "$\\frac47$"
+    ],
+    "explanation": "366 days = 52 weeks + 2 days. The 2 extra days are one of 7 equally likely pairs (Sun–Mon, Mon–Tue, …, Sat–Sun).\nTwo of them contain a Sunday, so the probability is $\\frac27$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.1 Basic probability and the addition theorem"
+    ],
+    "facts": [
+     "53 Sundays: leap year $\\frac27$, ordinary year $\\frac17$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-069",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-09-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 69,
+    "label": "GIC 2021 (rebuilt) · Q69"
+   },
+   "en": {
+    "q": "The value of $\\cos^{-1}\\left(\\frac{1 - x^2}{1 + x^2}\\right)$ is",
+    "options": [
+     "$2\\cot^{-1}x$",
+     "$2\\sec^{-1}x$",
+     "$2\\tan^{-1}x$",
+     "$2\\sin^{-1}x$"
+    ],
+    "explanation": "Put $x = \\tan t$: $\\frac{1 - \\tan^2t}{1 + \\tan^2t} = \\cos 2t$, so the value is $2t = 2\\tan^{-1}x$ (for $x \\ge 0$; for $x < 0$ it is $-2\\tan^{-1}x$).",
+    "notes": [
+     "At $x = 1$: $2\\cot^{-1}1 = \\frac{\\pi}{2}$ and $\\cos^{-1}0 = \\frac{\\pi}{2}$, but at $x = \\sqrt3$ they differ.",
+     "At $x = 1$ it gives 0, not $\\frac{\\pi}{2}$.",
+     "",
+     "At $x = 1$ it gives $\\pi$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.4 Inverse circular functions"
+    ],
+    "facts": [
+     "$\\cos^{-1}\\frac{1 - x^2}{1 + x^2} = 2\\tan^{-1}x$ for $x \\ge 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-070",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-09-04",
+   "src": {
+    "paper": "gic-2021",
+    "n": 70,
+    "label": "GIC 2021 (rebuilt) · Q70"
+   },
+   "en": {
+    "q": "The principal value of $\\cot^{-1}\\left(-\\frac{1}{\\sqrt3}\\right)$ is",
+    "options": [
+     "$\\frac{\\pi}{3}$",
+     "$\\frac{2\\pi}{3}$",
+     "$\\frac{\\pi}{6}$",
+     "None of these"
+    ],
+    "explanation": "The principal range of $\\cot^{-1}$ is $(0, \\pi)$, and $\\cot^{-1}(-x) = \\pi - \\cot^{-1}x$.\nSo the value is $\\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$.",
+    "notes": [
+     "That is $\\cot^{-1}\\frac{1}{\\sqrt3}$.",
+     "",
+     "$\\cot\\frac{\\pi}{6} = \\sqrt3$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.4 Inverse circular functions"
+    ],
+    "facts": [
+     "$\\cot^{-1}(-x) = \\pi - \\cot^{-1}x$; range $(0, \\pi)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-072",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-15-12",
+   "src": {
+    "paper": "gic-2021",
+    "n": 72,
+    "label": "GIC 2021 (rebuilt) · Q72"
+   },
+   "en": {
+    "q": "If the radial and transverse velocities of a particle are always proportional to each other, then the particle will describe",
+    "options": [
+     "a straight line",
+     "a parabola",
+     "a hyperbola",
+     "an equiangular spiral"
+    ],
+    "explanation": "$\\dot r = k\\,r\\dot\\theta \\Rightarrow \\frac{dr}{r} = k\\,d\\theta \\Rightarrow r = Ae^{k\\theta}$, the equiangular spiral.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.12 Motion in a plane: radial and transverse components"
+    ],
+    "facts": [
+     "Radial velocity $\\propto$ transverse velocity $\\Rightarrow r = Ae^{k\\theta}$ (equiangular spiral)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-073",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-15-09",
+   "src": {
+    "paper": "gic-2021",
+    "n": 73,
+    "label": "GIC 2021 (rebuilt) · Q73"
+   },
+   "en": {
+    "q": "If the horizontal range of a projectile is four times of its maximum height, then the angle of projection will be",
+    "options": [
+     "$30^\\circ$",
+     "$45^\\circ$",
+     "$60^\\circ$",
+     "None of these"
+    ],
+    "explanation": "$R = \\frac{u^2\\sin2\\alpha}{g}$, $H = \\frac{u^2\\sin^2\\alpha}{2g}$.\n$R = 4H \\Rightarrow 2\\sin\\alpha\\cos\\alpha = 2\\sin^2\\alpha \\Rightarrow \\tan\\alpha = 1$, so $\\alpha = 45^\\circ$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.9 Projectiles"
+    ],
+    "facts": [
+     "$\\frac{R}{H} = 4\\cot\\alpha$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-074",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "gic-2021",
+    "n": 74,
+    "label": "GIC 2021 (rebuilt) · Q74"
+   },
+   "en": {
+    "q": "A body of mass m falls from rest through a height 1 km under gravitational acceleration $10\\ \\text{m/s}^2$ and is then brought to rest by penetrating through a depth 200 m into sand. The average deceleration of the body during penetration into sand is",
+    "options": [
+     "$50\\ \\text{m/s}^2$",
+     "$20\\ \\text{m/s}^2$",
+     "$250\\ \\text{m/s}^2$",
+     "$125\\ \\text{m/s}^2$"
+    ],
+    "explanation": "Speed on reaching the sand: $v^2 = 2gh = 2 \\times 10 \\times 1000 = 20000$.\nIn the sand: $0 = v^2 - 2a \\times 200 \\Rightarrow a = \\frac{20000}{400} = 50\\ \\text{m/s}^2$.\nShortcut: $a = g \\cdot \\frac{h}{d} = 10 \\times 5$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "Falling from rest through h, then stopped in a depth d: average deceleration $= g\\frac{h}{d}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-075",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-15-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 75,
+    "label": "GIC 2021 (rebuilt) · Q75"
+   },
+   "en": {
+    "q": "A uniform beam of length $2a$ rests in equilibrium against a smooth vertical wall upon a peg at a distance $b$ from the wall. The inclination of the beam to the vertical is",
+    "options": [
+     "$\\cos^{-1}\\left(\\frac ba\\right)^{2/3}$",
+     "$2\\cos^{-1}\\left(\\frac ab\\right)^{1/3}$",
+     "$\\sin^{-1}\\left(\\frac ba\\right)^{1/3}$",
+     "None of the above"
+    ],
+    "explanation": "Let $\\theta$ be the angle with the vertical. The lower end A is on the wall; the peg is at $AP = \\frac{b}{\\sin\\theta}$ along the beam. The peg's reaction S is perpendicular to the beam; the wall's reaction is horizontal.\nVertically: $S\\sin\\theta = W$. Moments about A: $S \\cdot \\frac{b}{\\sin\\theta} = Wa\\sin\\theta$.\nSo $\\sin^3\\theta = \\frac ba$ and $\\theta = \\sin^{-1}\\left(\\frac ba\\right)^{1/3}$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.2 Three forces in equilibrium: Lami's theorem"
+    ],
+    "facts": [
+     "Beam on a peg against a smooth wall: $b = a\\sin^3\\theta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-076",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-15-06",
+   "src": {
+    "paper": "gic-2021",
+    "n": 76,
+    "label": "GIC 2021 (rebuilt) · Q76"
+   },
+   "en": {
+    "q": "If T be the tension at any point P of a common catenary, $T_0$ tension at the lowest point A and W be the weight of the arc AP of the catenary, then",
+    "options": [
+     "$T^2 - T_0^2 = W^2$",
+     "$T^2 + T_0^2 = W^2$",
+     "$T_0^2 = T^2 + W^2$",
+     "$T_0 = T + W$"
+    ],
+    "explanation": "The arc AP is in equilibrium under $T_0$ (horizontal at A), W (vertical) and T (along the tangent at P).\n$T\\cos\\psi = T_0$, $T\\sin\\psi = W$; squaring and adding, $T^2 = T_0^2 + W^2$.",
+    "notes": [
+     "",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.6 Common catenary"
+    ],
+    "facts": [
+     "Catenary: $T = wy$, $T_0 = wc$, $W = ws$, and $y^2 = c^2 + s^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-077",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-15-05",
+   "src": {
+    "paper": "gic-2021",
+    "n": 77,
+    "label": "GIC 2021 (rebuilt) · Q77"
+   },
+   "en": {
+    "q": "The centre of gravity of a rod of length $l$, whose linear mass density varies as the cube of the distance from its one end, is at what distance from that end?",
+    "options": [
+     "$\\frac{l}{4}$",
+     "$\\frac{4l}{5}$",
+     "$\\frac{3l}{5}$",
+     "$\\frac{3l}{4}$"
+    ],
+    "explanation": "$\\bar x = \\frac{\\int_0^l x \\cdot kx^3\\,dx}{\\int_0^l kx^3\\,dx} = \\frac{l^5/5}{l^4/4} = \\frac{4l}{5}$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "That is for density proportional to the square of the distance."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.5 Centre of gravity"
+    ],
+    "facts": [
+     "Density $\\propto x^n$: centre of gravity at $\\frac{n + 1}{n + 2}\\,l$ from that end."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-078",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-15-12",
+   "src": {
+    "paper": "gic-2021",
+    "n": 78,
+    "label": "GIC 2021 (rebuilt) · Q78"
+   },
+   "en": {
+    "q": "The radial component of acceleration of particle moving in a plane curve is",
+    "options": [
+     "$\\ddot s$",
+     "$2\\dot r\\dot\\theta + r\\ddot\\theta$",
+     "$\\frac{\\dot s^2}{p}$",
+     "$\\ddot r - r\\dot\\theta^2$"
+    ],
+    "explanation": "With $\\vec r = r\\hat r$: $\\dot{\\vec r} = \\dot r\\hat r + r\\dot\\theta\\hat\\theta$ and $\\ddot{\\vec r} = (\\ddot r - r\\dot\\theta^2)\\hat r + (2\\dot r\\dot\\theta + r\\ddot\\theta)\\hat\\theta$.\nSo the radial component is $\\ddot r - r\\dot\\theta^2$.",
+    "notes": [
+     "Tangential component.",
+     "Transverse component.",
+     "Normal component $v^2/\\rho$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.12 Motion in a plane: radial and transverse components"
+    ],
+    "facts": [
+     "Radial $\\ddot r - r\\dot\\theta^2$; transverse $\\frac1r\\frac{d}{dt}(r^2\\dot\\theta)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-079",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-15-06",
+   "src": {
+    "paper": "gic-2021",
+    "n": 79,
+    "label": "GIC 2021 (rebuilt) · Q79"
+   },
+   "en": {
+    "q": "Which relation is not true for a common catenary?",
+    "options": [
+     "$y = c\\cosh\\left(\\frac xc\\right)$",
+     "$x = c\\log(\\sec\\psi + \\tan\\psi)$",
+     "$y = c\\sec\\psi$",
+     "$s = c\\sin\\psi$"
+    ],
+    "explanation": "The intrinsic equation is $s = c\\tan\\psi$, not $c\\sin\\psi$.\nThe others are standard: $y = c\\cosh\\frac xc$, $y = c\\sec\\psi$, $x = c\\log(\\sec\\psi + \\tan\\psi)$.",
+    "notes": [
+     "Cartesian equation.",
+     "From $\\frac{dx}{d\\psi} = c\\sec\\psi$.",
+     "From $y^2 = c^2 + s^2$.",
+     "Should be $s = c\\tan\\psi$."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.6 Common catenary"
+    ],
+    "facts": [
+     "Catenary: $s = c\\tan\\psi$, $y = c\\sec\\psi$, $y = c\\cosh\\frac xc$, $s = c\\sinh\\frac xc$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/gic-2021-080",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-13-02",
+   "src": {
+    "paper": "gic-2021",
+    "n": 80,
+    "label": "GIC 2021 (rebuilt) · Q80"
+   },
+   "en": {
+    "q": "The shortest distance between the lines $\\frac{x - 1}{2} = \\frac{y - 2}{3} = \\frac{z - 3}{4}$ and $\\frac{x - 2}{3} = \\frac{y - 3}{4} = \\frac{z - 4}{5}$ is",
+    "options": [
+     "0",
+     "$\\frac{1}{\\sqrt 6}$",
+     "$\\frac29$",
+     "$\\frac{5}{\\sqrt 6}$"
+    ],
+    "explanation": "The lines pass through $A(1, 2, 3)$ and $B(2, 3, 4)$ with directions $\\vec d_1 = (2, 3, 4)$ and $\\vec d_2 = (3, 4, 5)$.\n$\\vec d_1 \\times \\vec d_2 = (-1, 2, -1)$ and $\\vec{AB} = (1, 1, 1)$, so $\\vec{AB} \\cdot (\\vec d_1 \\times \\vec d_2) = -1 + 2 - 1 = 0$.\nSD $= \\frac{|\\vec{AB} \\cdot (\\vec d_1 \\times \\vec d_2)|}{|\\vec d_1 \\times \\vec d_2|} = 0$: the lines intersect, at $(-1, -1, -1)$ (parameter $-1$ on both).",
+    "notes": [
+     "The lines are coplanar and meet at $(-1, -1, -1)$.",
+     "The answer when the second line is $\\frac{x - 2}{3} = \\frac{y - 4}{4} = \\frac{z - 5}{5}$ instead.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.2 The plane"
+    ],
+    "facts": [
+     "SD $= \\frac{|(\\vec b - \\vec a) \\cdot (\\vec d_1 \\times \\vec d_2)|}{|\\vec d_1 \\times \\vec d_2|}$; it is 0 exactly when the (non-parallel) lines intersect."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}
