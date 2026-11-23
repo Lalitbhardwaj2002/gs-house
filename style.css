@@ -526,18 +526,18 @@ button.pill:hover { background: var(--soft-3); }
 .book-emoji { font-size: calc(46px * var(--fs)); line-height: 1; }
 .book-title { font-size: calc(30px * var(--fs)); line-height: 1.2; color: var(--head); margin-top: 6px; }
 .book-foot { margin-top: 14px; text-align: center; }
-/* the home card of the book: one compact light-green row with a clear-diamond frame (owner's requests, 24 November 2026; dark emerald before) */
+/* the home card of the book: one compact new-leaf-green row with a clear-diamond frame (owner's requests, 24 November 2026; emerald, then light green before) */
 .book-entry { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'icon title open' 'icon sub sub';
   align-items: center; gap: 2px 10px; padding: 12px 14px;
   border: 4px solid transparent;
-  background: linear-gradient(135deg, #e6f8ee 0%, #d3f1df 55%, #bfe8cf 100%) padding-box,
+  background: linear-gradient(135deg, #327a24 0%, #2b6c1f 55%, #225a18 100%) padding-box,
     linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box;
-  outline-color: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 0 0 1px #9eadb9, 0 10px 26px rgba(15, 122, 85, 0.18); }
+  outline-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 0 1px #9eadb9, 0 10px 26px rgba(45, 114, 32, 0.25); }
 .book-entry .book-emoji { grid-area: icon; font-size: calc(28px * var(--fs)); }
-.book-entry h2 { grid-area: title; display: block; margin: 0; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #0a5c40; }
-.book-entry p { grid-area: sub; margin: 0; color: #23664a; }
-.book-open { grid-area: open; min-height: 40px; padding: 6px 12px; font-size: calc(16px * var(--fs)); color: #0a5c40; border-color: #c9d2da;
+.book-entry h2 { grid-area: title; display: block; margin: 0; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #ffffff; }
+.book-entry p { grid-area: sub; margin: 0; color: #eef8e8; }
+.book-open { grid-area: open; min-height: 40px; padding: 6px 12px; font-size: calc(16px * var(--fs)); color: #2a6a1e; border-color: #c9d2da;
   background: linear-gradient(180deg, #ffffff 0%, #eef2f5 55%, #dde4ea 100%); box-shadow: inset 0 1px 0 #ffffff, 0 2px 6px rgba(0, 0, 0, 0.18); }
 .book-open:hover { background: linear-gradient(180deg, #ffffff 0%, #f4f7f9 55%, #e6ecf0 100%); }
 
@@ -585,6 +585,7 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
   box-shadow: 0 6px 16px rgba(21, 90, 138, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25); color: #ffffff; }
 .maths-entry .topic.ready .topic-name { color: #ffffff; }
 .maths-entry .topic.ready .topic-meta, .maths-entry .topic.ready .topic-more { color: #ffffff; }
+.maths-entry .topic.ready .topic-more { grid-column: 1 / -1; font-size: calc(14px * var(--fs)); line-height: 1.4; }   /* the syllabus units, full width */
 .mq-home .btn { background: linear-gradient(135deg, #9a2638 0%, #82192b 55%, #6a1222 100%); border-color: #4f0b18; color: #ffffff;
   box-shadow: 0 4px 12px rgba(106, 18, 34, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
 .mq-home .btn:hover { background: linear-gradient(135deg, #a82c40 0%, #8e1d31 55%, #741427 100%); }
@@ -599,16 +600,27 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 .pay-form .small { margin: 0; }
 .pay-err { margin: 0; color: var(--wrong); font-weight: 700; }
 
-/* NET / JRF corner on the home screen: warm and light like the rest of the app, with a dashed gold
-   edge and a ribbon to mark it out. Each subject is a locked "door" that opens to show its syllabus,
+/* NET / JRF corner on the home screen. Each subject is a locked "door" that opens to show its syllabus,
    unit by unit, and what is planned. UGC NET has its own English / Hindi switch. */
-.net-card { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 20px 16px 16px; border-radius: 18px; color: var(--ink);
-  background: linear-gradient(140deg, #ffffff 0%, #ffffff 55%, #f2f9fd 100%); border: 2px dashed var(--gold); box-shadow: 0 10px 26px var(--shadow); }
-[data-theme='dark'] .net-card { background: linear-gradient(140deg, #16181c 0%, #1b1e23 55%, #22252b 100%); }
+/* Closed, the corner is one compact amethyst row with a clear-diamond frame, like the book card
+   (owner's request, 24 November 2026); tapped, everything opens below it on the page colour. */
+.net-card { position: relative; border-radius: 18px; color: var(--ink); overflow: hidden; border: 4px solid transparent;
+  background: linear-gradient(135deg, #f3eefc 0%, #e8defa 55%, #dccdf5 100%) padding-box,
+    linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box;
+  box-shadow: 0 0 0 1px #9eadb9, 0 10px 26px rgba(92, 62, 160, 0.16); }
+.net-sum { list-style: none; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'icon title open' 'icon sub sub';
+  align-items: center; gap: 2px 10px; padding: 12px 14px; cursor: pointer; }
+.net-sum::-webkit-details-marker { display: none; }
+.net-emoji { grid-area: icon; font-size: calc(28px * var(--fs)); line-height: 1; }
+.net-title { grid-area: title; font-weight: 700; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #4a2a82; }
+.net-sub { grid-area: sub; font-size: calc(15px * var(--fs)); color: #5b3f8c; }
+.net-toggle { grid-area: open; display: inline-flex; align-items: center; min-height: 40px; padding: 6px 12px; border-radius: 12px; border: 1px solid #c9d2da;
+  font-weight: 700; font-size: calc(16px * var(--fs)); color: #4a2a82; white-space: nowrap;
+  background: linear-gradient(180deg, #ffffff 0%, #eef2f5 55%, #dde4ea 100%); box-shadow: inset 0 1px 0 #ffffff, 0 2px 6px rgba(0, 0, 0, 0.18); }
+.net-sum:hover .net-toggle { background: linear-gradient(180deg, #ffffff 0%, #f4f7f9 55%, #e6ecf0 100%); }
+.net-card[open] .when-shut, .net-card:not([open]) .when-open { display: none; }
+.net-body { display: flex; flex-direction: column; gap: 12px; padding: 14px 14px 16px; background: var(--card); border-top: 1px solid #c9b8ea; }
 .net-ribbon { align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: var(--gold-fill); color: var(--on-gold); font-weight: 700; letter-spacing: 0.04em; font-size: calc(13px * var(--fs)); box-shadow: 0 4px 10px rgba(184, 144, 31, 0.3); }
-.net-head { display: flex; align-items: center; gap: 12px; }
-.net-emoji { font-size: calc(42px * var(--fs)); line-height: 1; }
-.net-head h2 { font-size: calc(25px * var(--fs)); line-height: 1.2; color: var(--head); margin: 0; }
 .net-teaser { margin: 0; font-size: calc(17px * var(--fs)); line-height: 1.45; }
 .net-group { display: flex; flex-direction: column; gap: 8px; }
 .net-group-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-top: 6px; }
