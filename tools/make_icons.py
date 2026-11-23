@@ -1,6 +1,7 @@
 """Draws the GS HOUSE logo files and app icons.
 
-The logo: a house split into a light (white) and a dark (maroon) half, with a drawn G on the light
+The logo: a house split into a light half cut as a clear diamond and a dark half cut as a ruby, in a gold
+frame, with a drawn G on the light
 half, a drawn S on the dark half and a lamp under the roof; beside it the drawn wordmark
 "GS HOUSE", whose O is a little house. Nothing uses a font, so the artwork looks the same everywhere.
 app.js holds the same shapes as LOGO_MARK and LOGO_WORD (the wordmark there takes the theme
@@ -26,15 +27,43 @@ MAROON, CREAM, GOLD, SAFFRON, GLOW = '#7b1e1e', '#ffffff', '#c9972b', '#e07a1f',
 out = Path(__file__).resolve().parent.parent / 'icons'
 out.mkdir(exist_ok=True)
 
-# The mark, drawn on a 512 x 512 field.
-MARK = f'''
-  <path d="M256 40 L44 200 V452 Q44 472 64 472 H256 Z" fill="{CREAM}"/>
-  <path d="M256 40 L468 200 V452 Q468 472 448 472 H256 Z" fill="{MAROON}"/>
-  <path d="M256 40 L468 200 V452 Q468 472 448 472 H64 Q44 472 44 452 V200 Z" fill="none" stroke="{GOLD}" stroke-width="16" stroke-linejoin="round"/>
+# The mark, drawn on a 512 x 512 field. Both halves are step-cut gems (owner's request, 24 November 2026: a
+# diamond look): a table in the middle, facets around it in alternating light and shade, fine facet lines and
+# a few glints; the light half is a clear diamond (with pale lavender and icy-blue flashes), the dark half a ruby. The frame is polished gold (three
+# strokes, no gradients, so the drawing can sit in the page more than once).
+OUTLINE = 'M256 40 L468 200 V452 Q468 472 448 472 H64 Q44 472 44 452 V200 Z'
+DIAMOND = [  # light half: facets, then the table
+    ('M256 40 L44 200 L112 218 Z', '#ffffff'), ('M256 40 L112 218 L256 112 Z', '#e2e5f6'),
+    ('M44 200 V452 Q44 472 64 472 L112 418 Z', '#f2f5f8'), ('M44 200 L112 418 L112 218 Z', '#c4ced8'),
+    ('M64 472 H256 V418 Z', '#d8edf4'), ('M64 472 L256 418 H112 Z', '#b8c3ce'),
+    ('M256 112 L112 218 V418 Z', '#fbfcfe'), ('M256 112 L112 418 H256 Z', '#eef0fa')]
+RUBY = [  # dark half, the mirror image
+    ('M256 40 L468 200 L400 218 Z', '#a12d2d'), ('M256 40 L400 218 L256 112 Z', '#82201f'),
+    ('M468 200 V452 Q468 472 448 472 L400 418 Z', '#5c1414'), ('M468 200 L400 418 L400 218 Z', '#8e2525'),
+    ('M448 472 H256 V418 Z', '#521010'), ('M448 472 L256 418 H400 Z', '#6a1919'),
+    ('M256 112 L400 218 V418 Z', '#8a2323'), ('M256 112 L400 418 H256 Z', '#761c1c')]
+LINES_L = 'M256 40 L112 218 M44 200 L112 218 M44 200 L112 418 M64 472 L112 418 M64 472 L256 418 M112 218 V418 M256 112 L112 218 M112 418 H256 M256 112 L112 418'
+LINES_R = 'M256 40 L400 218 M468 200 L400 218 M468 200 L400 418 M448 472 L400 418 M448 472 L256 418 M400 218 V418 M256 112 L400 218 M400 418 H256 M256 112 L400 418'
+
+
+def glint(x, y, r):
+    """A four-pointed sparkle."""
+    q = r * 0.22
+    return f'M{x} {y - r} L{x + q:.1f} {y - q:.1f} L{x + r} {y} L{x + q:.1f} {y + q:.1f} L{x} {y + r} L{x - q:.1f} {y + q:.1f} L{x - r} {y} L{x - q:.1f} {y - q:.1f} Z'
+
+
+MARK = ''.join(f'\n  <path d="{d}" fill="{f}"/>' for d, f in DIAMOND + RUBY) + f'''
+  <path d="{LINES_L}" fill="none" stroke="#aab6c1" stroke-opacity=".85" stroke-width="2"/>
+  <path d="{LINES_R}" fill="none" stroke="#e08080" stroke-opacity=".45" stroke-width="2"/>
+  <path d="{OUTLINE}" fill="none" stroke="#8a6a12" stroke-width="20" stroke-linejoin="round"/>
+  <path d="{OUTLINE}" fill="none" stroke="#d4af37" stroke-width="13" stroke-linejoin="round"/>
+  <path d="{OUTLINE}" fill="none" stroke="#f8e7a8" stroke-width="4" stroke-linejoin="round"/>
   <path d="M256 92 C280 126 290 142 290 160 A34 34 0 0 1 222 160 C222 142 232 126 256 92 Z" fill="{SAFFRON}"/>
   <circle cx="256" cy="164" r="13" fill="{GLOW}"/>
   <path d="M194.4 271.4 A66 66 0 1 0 218 322 H166" fill="none" stroke="{MAROON}" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M388.6 272.5 A33 33 0 1 0 360 322 A33 33 0 1 1 331.4 371.5" fill="none" stroke="{CREAM}" stroke-width="38" stroke-linecap="round"/>'''
+  <path d="M388.6 272.5 A33 33 0 1 0 360 322 A33 33 0 1 1 331.4 371.5" fill="none" stroke="{CREAM}" stroke-width="38" stroke-linecap="round"/>
+  <path d="{glint(84, 238, 17)} {glint(228, 444, 9)}" fill="#ffffff" stroke="#9eadb9" stroke-width="1.5"/>
+  <path d="{glint(432, 238, 15)} {glint(296, 444, 8)}" fill="#ffffff" fill-opacity=".92"/>'''
 
 # The wordmark, drawn on a 600 x 100 field (letters 100 high).
 WORD = f'''
