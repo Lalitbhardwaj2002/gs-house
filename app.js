@@ -2667,7 +2667,7 @@ async function showMqPractice(s, route, keepScroll) {
   const seg = (on, val, label) => `<button class="seg ${on ? 'on' : ''}" data-action="mq-players" data-val="${val}">${label}</button>`;
   const clockSeg = (on, val, label) => `<button class="seg ${on ? 'on' : ''}" data-action="mq-clock" data-val="${val}">${label}</button>`;
   const rowsOf = (list, icon) => list.map((p) => `
-      <div class="mq-row"><span class="topic-icon">${icon}</span><span class="mq-what"><b>${esc(p.title)}</b><span class="muted small">${p.ns.length} questions · about ${p.minutes} minutes · ${mqNeg(p.negative)}</span></span>
+      <div class="mq-row"><span class="topic-icon">${icon}</span><span class="mq-what"><b>${esc(p.title)}</b><span class="muted small">${p.ns.length} questions${p.asked ? ` (${p.asked} asked before)` : ''} · about ${p.minutes} minutes · ${mqNeg(p.negative)}</span></span>
         <button class="btn" data-action="mq-paper" data-id="${esc(p.id)}">Start ▶</button></div>`).join('');
   const paperRows = rowsOf(papers, '📝');
   const unitRows = units.map(({ u, i, n, seenN }) => `
@@ -2686,7 +2686,7 @@ async function showMqPractice(s, route, keepScroll) {
       ${ui.mqRoom ? `<label class="field" id="name-field"><span>${t('yourName')}</span><input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(me.name)}"></label>
       <p class="muted small">You get a room code to share; up to ${CONFIG.maxPlayers} players join with it from their own phones, and you start when everyone is in.</p>` : ''}
     </section>
-    ${expected.length ? `<section class="card" lang="en"><h2>🔮 Expected papers for December 2026</h2><p class="muted small">Full mocks of ${expected[0].ns.length} mathematics questions in the pattern of the latest UP ${level} paper and the official syllabus: past questions whose ideas keep coming back, and new questions in the board's style. Each was solved and then checked by a second mathematician.</p><div class="mq-list">${rowsOf(expected, '🔮')}</div></section>` : ''}
+    ${expected.length ? `<section class="card" lang="en"><h2>🔮 Expected papers for December 2026</h2><p class="muted small">Full mocks of ${expected[0].ns.length} mathematics questions in the pattern of the latest UP ${level} paper and the official syllabus: past questions whose ideas keep coming back (each names the paper that asked it), and new questions in the board's style. Every question was solved, then checked by a second mathematician.</p><div class="mq-list">${rowsOf(expected, '🔮')}</div></section>` : ''}
     ${papers.length ? `<section class="card" lang="en"><h2>📝 Full papers (mock tests)</h2><p class="muted small">Every question of the paper in its order, at about the exam's pace per question and with its negative marking. Where a paper also had general studies, only its mathematics questions are here.</p><div class="mq-list">${paperRows}</div></section>` : ''}
     ${total ? `<section class="card" lang="en"><h2>🔀 Mixed mocks</h2><p class="muted small">Questions from all ${all.length} papers${expected.length ? ' (past and expected)' : ''}, those you have not seen first.</p><div class="row">${mixes.map((n) => `<button class="btn" data-action="mq-mixed" data-n="${n}">${Math.min(n, total)} questions</button>`).join('')}</div></section>` : ''}
     ${units.length ? `<section class="card" lang="en"><h2>📚 Topic-wise practice</h2><p class="muted small">Questions on one unit of the syllabus, without negative marking.</p><div class="mq-list">${unitRows}</div></section>` : ''}
