@@ -3308,7 +3308,7 @@ function toast(text) {
 function petals() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const box = $('#petals');
-  const colors = ['#cfeaf7', '#9fd3ea', '#e2d9fa', '#bfe3f2', '#f1f9fd'];   // diamond tints (the shine is in style.css)
+  const colors = ['#ffffff', '#e9eef2', '#d5dde4', '#f1ecf9', '#f8fafb'];   // clear diamond tints (the shine is in style.css)
   box.innerHTML = Array.from({ length: 70 }, () => {
     const c = colors[Math.floor(Math.random() * colors.length)];
     return `<i style="left:${Math.random() * 100}%;background-color:${c};animation-duration:${3 + Math.random() * 3}s;animation-delay:${Math.random() * 1.2}s"></i>`;
