@@ -1,0 +1,3055 @@
+{
+ "paper": {
+  "id": "dsssb-tgt-2018",
+  "title": "DSSSB TGT Mathematics 2018 (18 November, female)",
+  "exam": "DSSSB TGT",
+  "date": "18 November 2018",
+  "level": "TGT",
+  "minutes": 54,
+  "negative": 0.25,
+  "source": "DSSSB TGT Mathematics (Female), computer-based test of 18 November 2018, shift 1: the mathematics section (questions 101 to 190) of the board's own copy of the question paper, with its answer key",
+  "note": "The mathematics section of the paper; the whole paper had 200 questions in 120 minutes."
+ },
+ "questions": [
+  {
+   "id": "mq/dsssb-tgt-2018-001",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 1,
+    "label": "DSSSB TGT 2018 · Q101"
+   },
+   "en": {
+    "q": "By applying Euclid's division lemma, the cube of any positive integer is of the form:",
+    "options": [
+     "$9m$, $9m+2$ or $9m+7$",
+     "$9m$, $9m+3$ or $9m+6$",
+     "$9m$, $9m+4$ or $9m+5$",
+     "$9m$, $9m+1$ or $9m+8$"
+    ],
+    "explanation": "By the lemma with divisor 3, any integer is $3q$, $3q+1$ or $3q+2$.\n$(3q)^3=27q^3=9(3q^3)$.\n$(3q+1)^3=27q^3+27q^2+9q+1=9m+1$.\n$(3q+2)^3=27q^3+54q^2+36q+8=9m+8$.",
+    "notes": [
+     "2 and 7 are never remainders of a cube on division by 9.",
+     "3 and 6 never occur: a cube divisible by 3 is divisible by 27.",
+     "4 and 5 never occur (e.g. $1^3,2^3,3^3,4^3,5^3$ leave 1, 8, 0, 1, 8).",
+     "Correct: cubes leave remainder 0, 1 or 8 on division by 9."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "The cube of any integer is of the form $9m$, $9m+1$ or $9m+8$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-002",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 2,
+    "label": "DSSSB TGT 2018 · Q102"
+   },
+   "en": {
+    "q": "For any positive integers 'a' and 3, there exist unique integers 'q' and 'r' such that $a=3q+r$, where r must satisfy:",
+    "options": [
+     "$0<r\\le3$",
+     "$1<r<3$",
+     "$0\\le r<3$",
+     "$0<r<3$"
+    ],
+    "explanation": "Euclid's division lemma: for $a$ and $b>0$ there are unique $q,r$ with $a=bq+r$ and $0\\le r<b$. With $b=3$: $0\\le r<3$, i.e. $r\\in\\{0,1,2\\}$.",
+    "notes": [
+     "$r=3$ is not allowed and $r=0$ is (e.g. $a=6$).",
+     "Leaves out $r=0$ and $r=1$.",
+     "Correct: $0\\le r<b$.",
+     "Leaves out $r=0$ (multiples of 3)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Division lemma: $a=bq+r$ with $0\\le r<b$, and $q,r$ are unique."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-003",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 3,
+    "label": "DSSSB TGT 2018 · Q103"
+   },
+   "en": {
+    "q": "For what least value of $n$, the natural number $(24)^n$ is divisible by 8?",
+    "options": [
+     "$-1$",
+     "$0$",
+     "$1$",
+     "No value of $n$ is possible"
+    ],
+    "explanation": "$24=8\\times3$, so already $24^1$ is divisible by 8. $n=0$ gives $24^0=1$, not divisible by 8, and $n=-1$ gives $\\frac1{24}$, not a natural number. So the least value is $n=1$.",
+    "notes": [
+     "$24^{-1}=\\frac1{24}$ is not a natural number.",
+     "$24^0=1$ is not divisible by 8.",
+     "Correct: $24=8\\times3$.",
+     "$n=1$ already works."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$24^n=8^n\\cdot3^n$ is divisible by 8 for every $n\\ge1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-004",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 4,
+    "label": "DSSSB TGT 2018 · Q104"
+   },
+   "en": {
+    "q": "The HCF of 4052 and 12576 is:",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "6"
+    ],
+    "explanation": "Euclid's algorithm: $12576=3\\cdot4052+420$, $4052=9\\cdot420+272$, $420=1\\cdot272+148$, $272=1\\cdot148+124$, $148=1\\cdot124+24$, $124=5\\cdot24+4$, $24=6\\cdot4+0$. The last non-zero remainder is 4.",
+    "notes": [
+     "A common factor, but not the highest.",
+     "$4052$: digit sum 11, not divisible by 3.",
+     "Correct: last non-zero remainder.",
+     "Not a factor of 4052 (digit sum 11)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "HCF by Euclid's algorithm: divide repeatedly; the last non-zero remainder is the HCF."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-005",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 5,
+    "label": "DSSSB TGT 2018 · Q105"
+   },
+   "en": {
+    "q": "The decimal expansion of number $\\frac{441}{2^2\\times5^3\\times7}$ ____.",
+    "options": [
+     "terminates after two places of decimal",
+     "is non-terminating and non-repeating",
+     "is non-terminating but repeating",
+     "has a terminating decimal"
+    ],
+    "explanation": "$441=7\\times63$, so the fraction is $\\frac{63}{2^2\\times5^3}$. The denominator has only the primes 2 and 5, so it terminates: $\\frac{63\\times2}{10^3}=0.126$ (three decimal places).",
+    "notes": [
+     "It terminates after three places: $0.126$.",
+     "That describes an irrational number.",
+     "The reduced denominator $2^2\\cdot5^3$ has no prime other than 2 and 5.",
+     "Correct: $0.126$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "A fraction in lowest terms terminates iff its denominator is of the form $2^m5^n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-006",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 6,
+    "label": "DSSSB TGT 2018 · Q106"
+   },
+   "en": {
+    "q": "A number $2.\\overline{35}$ is:",
+    "options": [
+     "a rational number",
+     "an irrational number",
+     "a prime number",
+     "a rational number and a prime number"
+    ],
+    "explanation": "A non-terminating repeating decimal is rational: $x=2.\\overline{35}$, $100x-x=233$, so $x=\\frac{233}{99}$. It is not an integer, so it cannot be prime.",
+    "notes": [
+     "Correct: $\\frac{233}{99}$.",
+     "Recurring decimals are rational.",
+     "Primes are natural numbers; $2.\\overline{35}$ is not an integer.",
+     "Not an integer, so not prime."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Every recurring decimal is rational: $0.\\overline{ab}=\\frac{ab}{99}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-007",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 7,
+    "label": "DSSSB TGT 2018 · Q107"
+   },
+   "en": {
+    "q": "Which of the following statements is true?",
+    "options": [
+     "A number $n$ is odd if and only if $n(n+1)$ is even",
+     "A number is irrational if and only if its square is irrational.",
+     "An integer $n$ is odd if and only if $n^2+2n$ is odd.",
+     "A number is rational if and only if its square is rational."
+    ],
+    "explanation": "$n^2+2n=n(n+2)$, and $n$, $n+2$ have the same parity, so the product is odd exactly when $n$ is odd: (c) is true.\n(a) fails for $n=2$ ($n(n+1)=6$ is even). (b) and (d) fail for $\\sqrt2$: irrational, yet its square 2 is rational.",
+    "notes": [
+     "$n(n+1)$ is always even, so $n=2$ is a counterexample to 'only if'.",
+     "$\\sqrt2$ is irrational but $(\\sqrt2)^2=2$ is rational.",
+     "Correct: $n(n+2)$ is odd iff $n$ is odd.",
+     "$(\\sqrt2)^2$ is rational though $\\sqrt2$ is not."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "A product of integers is odd iff every factor is odd."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-008",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-04-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 8,
+    "label": "DSSSB TGT 2018 · Q108"
+   },
+   "en": {
+    "q": "The order of 2 modulo 101 is:",
+    "options": [
+     "97",
+     "98",
+     "99",
+     "100"
+    ],
+    "explanation": "101 is prime, so by Fermat $2^{100}\\equiv1$ and the order divides 100; 97, 98 and 99 do not divide 100.\n$2^{10}=1024\\equiv14$, so $2^{20}\\equiv196\\equiv95\\not\\equiv1$.\n$101\\equiv5\\pmod 8$, so 2 is a non-residue and $2^{50}\\equiv-1$ (Euler's criterion).\nA divisor of 100 that divides neither 20 nor 50 is 100 itself.",
+    "notes": [
+     "97 does not divide 100.",
+     "98 does not divide 100.",
+     "99 does not divide 100.",
+     "Correct: 2 is a primitive root mod 101."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.5 Order of an element"
+    ],
+    "facts": [
+     "The order of $a$ mod a prime $p$ divides $p-1$; test only the divisors."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-009",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 9,
+    "label": "DSSSB TGT 2018 · Q109"
+   },
+   "en": {
+    "q": "The Euclidean Algorithm is used to produce a sequence $X_1>X_2>X_3>X_4>X_5=0$ of positive integers where $X_t=q_{t+1}X_{t+1}+X_{t+2}$, $t=1,2,3$. The quotients are $q_2=3$, $q_3=2$ and $q_4=2$. Which of the following is correct?",
+    "options": [
+     "$\\gcd(X_1,X_2)=-2X_1-6X_2$",
+     "$\\gcd(X_1,X_2)=-2X_1+7X_2$",
+     "$\\gcd(X_1,X_2)=2X_1+7X_2$",
+     "$\\gcd(X_1,X_2)=-2X_1+6X_2$"
+    ],
+    "explanation": "$X_5=0$, so $\\gcd=X_4$. Back-substitute:\n$X_4=X_2-2X_3$ and $X_3=X_1-3X_2$.\nSo $X_4=X_2-2(X_1-3X_2)=-2X_1+7X_2$.\nCheck: $X_4=1$ gives $X_3=2$, $X_2=5$, $X_1=17$, and $-34+35=1$.",
+    "notes": [
+     "Sign slip and wrong coefficient of $X_2$.",
+     "Correct: back-substitution.",
+     "Both coefficients positive would exceed $X_2$.",
+     "Forgets the extra $X_2$ from $X_4=X_2-2X_3$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Back-substituting Euclid's algorithm writes the gcd as $ax+by$ (Bezout)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-011",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-04-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 11,
+    "label": "DSSSB TGT 2018 · Q111"
+   },
+   "en": {
+    "q": "If 'p' is a prime, then the congruence $x^2+1\\equiv0\\pmod p$ has a solution if and only if:",
+    "options": [
+     "$p=-2$ or $p\\equiv2\\pmod 3$",
+     "$p=1$ or $p\\equiv1\\pmod 3$",
+     "$p\\ne2$ or $p\\equiv1\\pmod 2$",
+     "$p=2$ or $p\\equiv1\\pmod 4$"
+    ],
+    "explanation": "$p=2$: $x=1$ works. For odd $p$, $-1$ is a square mod $p$ iff $(-1)^{(p-1)/2}=1$ (Euler's criterion), i.e. iff $p\\equiv1\\pmod4$.\nE.g. $p=5$: $2^2+1=5$; $p=3,7$: no solution.",
+    "notes": [
+     "$p=5\\equiv2\\pmod3$ works but $p=11\\equiv2\\pmod3$ does not.",
+     "1 is not prime, and $p=7\\equiv1\\pmod3$ has no solution.",
+     "Every odd prime would qualify, but $p=3$ fails.",
+     "Correct: $-1$ is a quadratic residue iff $p\\equiv1\\pmod4$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.7 Cosets and Lagrange's theorem"
+    ],
+    "facts": [
+     "$-1$ is a square mod an odd prime $p$ iff $p\\equiv1\\pmod4$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-012",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-04-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 12,
+    "label": "DSSSB TGT 2018 · Q112"
+   },
+   "en": {
+    "q": "Wilson's Theorem states that if 'p' is a prime, then:",
+    "options": [
+     "$(p-1)\\equiv-1\\pmod p$",
+     "$p!\\equiv-1\\pmod p$",
+     "$(p-1)!\\equiv-1\\pmod p$",
+     "$(p-1)!\\equiv-2\\pmod p$"
+    ],
+    "explanation": "Wilson: $(p-1)!\\equiv-1\\pmod p$ for every prime $p$. Check $p=5$: $4!=24=25-1\\equiv-1$.",
+    "notes": [
+     "$p-1\\equiv-1$ is trivially true; it is not Wilson's theorem.",
+     "$p!\\equiv0\\pmod p$.",
+     "Correct: Wilson's theorem.",
+     "Wrong constant: $4!=24\\equiv-1\\pmod5$, not $-2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.7 Cosets and Lagrange's theorem"
+    ],
+    "facts": [
+     "Wilson: $p$ is prime iff $(p-1)!\\equiv-1\\pmod p$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-013",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-03-03",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 13,
+    "label": "DSSSB TGT 2018 · Q113"
+   },
+   "en": {
+    "q": "The matrix representation of $T$ on $\\mathbb{R}^2$ defined by $T(x,y)=(2y,3x-y)$ relative to the basis $\\{(1,3),(2,5)\\}$ is:",
+    "options": [
+     "$\\begin{pmatrix}-30&-48\\\\18&29\\end{pmatrix}$",
+     "$\\begin{pmatrix}-31&-48\\\\18&29\\end{pmatrix}$",
+     "$\\begin{pmatrix}-30&-48\\\\19&29\\end{pmatrix}$",
+     "$\\begin{pmatrix}-30&-47\\\\18&29\\end{pmatrix}$"
+    ],
+    "explanation": "Coordinates: $(a,b)=(-5a+2b)(1,3)+(3a-b)(2,5)$.\n$T(1,3)=(6,0)=-30(1,3)+18(2,5)$.\n$T(2,5)=(10,1)=-48(1,3)+29(2,5)$.\nThese coordinate vectors are the columns.",
+    "notes": [
+     "Correct: columns are the coordinates of $T(u_1)$, $T(u_2)$.",
+     "$-31(1,3)+18(2,5)=(5,-3)\\ne(6,0)$.",
+     "$-30(1,3)+19(2,5)=(8,5)\\ne(6,0)$.",
+     "$-47(1,3)+29(2,5)=(11,4)\\ne(10,1)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.3 Linear transformations"
+    ],
+    "facts": [
+     "Matrix of $T$ in a basis: the $j$-th column is the coordinate vector of $T(u_j)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-015",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 15,
+    "label": "DSSSB TGT 2018 · Q115"
+   },
+   "en": {
+    "q": "The value of $\\lambda$ for which the system of equations $2x-y-z=2$, $x-2y+z=-4$, $x+y+\\lambda z=4$ has no solution, is:",
+    "options": [
+     "3",
+     "$-3$",
+     "$-2$",
+     "0"
+    ],
+    "explanation": "$\\begin{vmatrix}2&-1&-1\\\\1&-2&1\\\\1&1&\\lambda\\end{vmatrix}=-3\\lambda-6$, zero at $\\lambda=-2$.\nThen the first equation minus the second gives $x+y-2z=6$, while the third says $x+y-2z=4$: inconsistent, so no solution.",
+    "notes": [
+     "Determinant $\\ne0$: unique solution.",
+     "Determinant $=3\\ne0$: unique solution.",
+     "Correct: singular and inconsistent.",
+     "Determinant $=-6\\ne0$: unique solution."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "No solution needs $\\Delta=0$ and inconsistent equations (some $\\Delta_i\\ne0$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-016",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-03-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 16,
+    "label": "DSSSB TGT 2018 · Q116"
+   },
+   "en": {
+    "q": "Let W be the set of all triples $(x_1,x_2,x_3)$ of real numbers that satisfy the equation $2x_1-x_2+3x_3=k$. If W is to be a vector space, then the value of k is:",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "$-1$"
+    ],
+    "explanation": "A subspace must contain the zero vector: $(0,0,0)\\in W$ forces $k=0$. For $k=0$, $W$ is the solution set of a homogeneous equation, closed under addition and scalar multiples.",
+    "notes": [
+     "Correct: a plane through the origin.",
+     "$k\\ne0$: $(0,0,0)\\notin W$.",
+     "$k\\ne0$: not closed under addition.",
+     "$k\\ne0$: $(0,0,0)\\notin W$."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.1 Vector spaces and subspaces"
+    ],
+    "facts": [
+     "The solution set of $Ax=b$ is a subspace iff $b=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-017",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-03-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 17,
+    "label": "DSSSB TGT 2018 · Q117"
+   },
+   "en": {
+    "q": "Which of the following set of vectors $x=(x_1,x_2,x_3)$ in $\\mathbb{R}^3$ is a subspace of $\\mathbb{R}^3$?",
+    "options": [
+     "all $x$ such that $x_1\\ge0$",
+     "all $x$ such that $x_1+3x_2=x_3$",
+     "all $x$ such that $x_2=x_1^2$",
+     "all $x$ such that $x_2$ is rational"
+    ],
+    "explanation": "The paper prints 'and $\\mathbb{R}^3$', read as 'in $\\mathbb{R}^3$'.\n$x_1+3x_2-x_3=0$ is a homogeneous linear equation: it contains 0 and is closed under addition and scalar multiples, so (b) is a subspace (a plane through 0).",
+    "notes": [
+     "Not closed under $-1\\cdot x$: $(1,0,0)$ goes to $(-1,0,0)$.",
+     "Correct: homogeneous linear condition.",
+     "$(1,1,0)$ is in, but $2(1,1,0)=(2,2,0)$ is not.",
+     "$\\sqrt2\\cdot(0,1,0)$ leaves the set."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.1 Vector spaces and subspaces"
+    ],
+    "facts": [
+     "Homogeneous linear conditions give subspaces; inequalities and non-linear conditions do not."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-018",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 18,
+    "label": "DSSSB TGT 2018 · Q118"
+   },
+   "en": {
+    "q": "For the operator $T$ on $\\mathbb{R}^3$ defined by $T(x,y,z)=(x-y,\\ 2x+3y+2z,\\ x+y+2z)$, all eigenvalues and a basis for each eigenspace are",
+    "options": [
+     "$\\lambda_1=1$, $(1,0,-1)$; $\\lambda_2=2$, $(2,-2,-1)$; $\\lambda_3=3$, $(1,-2,-1)$",
+     "$\\lambda_1=1$, $(1,0,-1)$; $\\lambda_2=2$, $(2,2,-1)$; $\\lambda_3=3$, $(1,-2,1)$",
+     "$\\lambda_1=1$, $(1,0,1)$; $\\lambda_2=2$, $(2,-2,1)$; $\\lambda_3=3$, $(1,-2,-1)$",
+     "$\\lambda_1=1$, $(1,1,-1)$; $\\lambda_2=2$, $(2,-2,-1)$; $\\lambda_3=3$, $(1,-2,-1)$"
+    ],
+    "explanation": "Check $Tv=\\lambda v$ directly:\n$T(1,0,-1)=(1,0,-1)$, so $\\lambda=1$.\n$T(2,-2,-1)=(4,-4,-2)=2(2,-2,-1)$.\n$T(1,-2,-1)=(3,-6,-3)=3(1,-2,-1)$.\nThree distinct eigenvalues, so each eigenspace is one-dimensional.",
+    "notes": [
+     "Correct: each vector satisfies $Tv=\\lambda v$.",
+     "$T(2,2,-1)=(0,8,2)$, not a multiple of $(2,2,-1)$.",
+     "$T(1,0,1)=(1,4,3)$, not a multiple of $(1,0,1)$.",
+     "$T(1,1,-1)=(0,3,0)$, not $(1,1,-1)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "To test an eigenpair, just compute $Tv$ and compare with $\\lambda v$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-019",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-06-03",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 19,
+    "label": "DSSSB TGT 2018 · Q119"
+   },
+   "en": {
+    "q": "Let A denote the set of all polynomials $P(x)$ of degree less than or equal to 2 such that $P(1)=1$, $P(0)=0$ and $P'(x)>0$ for all $x\\in[0,1]$. Then:",
+    "options": [
+     "$A=\\{(1-a)x^2+ax: a\\in(0,1)\\}$",
+     "$A=\\{(1-a)x^2+ax: a\\in(0,\\infty)\\}$",
+     "$A$ is empty",
+     "$A=\\{(1-a)x^2+ax: a\\in(0,2)\\}$"
+    ],
+    "explanation": "$P(0)=0$ and $P(1)=1$ give $P(x)=(1-a)x^2+ax$.\n$P'(x)=2(1-a)x+a$ is linear, so it is positive on $[0,1]$ iff it is positive at both ends.\n$P'(0)=a>0$ and $P'(1)=2-a>0$, so $a\\in(0,2)$.",
+    "notes": [
+     "Misses $a\\in[1,2)$, e.g. $a=1$ gives $P=x$, which is in $A$.",
+     "$a=3$: $P'(1)=-1<0$.",
+     "$P(x)=x$ is in $A$.",
+     "Correct: $0<a<2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.3 Increasing and decreasing functions"
+    ],
+    "facts": [
+     "A linear function is positive on an interval iff it is positive at both end points."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-020",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 20,
+    "label": "DSSSB TGT 2018 · Q120"
+   },
+   "en": {
+    "q": "If two zeroes of the polynomial $x^4-6x^3-26x^2+138x-35$ are $2\\pm\\sqrt3$, then other zeroes are:",
+    "options": [
+     "3 and $-10$",
+     "7 and $-5$",
+     "5 and 8",
+     "2 and 5"
+    ],
+    "explanation": "$(x-2-\\sqrt3)(x-2+\\sqrt3)=x^2-4x+1$ is a factor.\nDividing: $x^4-6x^3-26x^2+138x-35$ $=(x^2-4x+1)(x^2-2x-35)$.\n$x^2-2x-35=(x-7)(x+5)$, so the other zeroes are 7 and $-5$.",
+    "notes": [
+     "Product $-30$; it must be $-35$.",
+     "Correct: sum 2, product $-35$.",
+     "Product 40, sum 13.",
+     "Product 10, sum 7."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Zeros $\\alpha\\pm\\sqrt\\beta$ give the factor $x^2-2\\alpha x+\\alpha^2-\\beta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-021",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 21,
+    "label": "DSSSB TGT 2018 · Q121"
+   },
+   "en": {
+    "q": "If the two of the zeroes of the cubic polynomial $ax^3+bx^2+cx+d$ are 0, then the third zero is:",
+    "options": [
+     "$\\frac{c}{a}$",
+     "$\\frac{b}{a}$",
+     "$\\frac{-d}{a}$",
+     "$\\frac{-b}{a}$"
+    ],
+    "explanation": "Zeros $0,0,\\gamma$: their sum is $-\\frac{b}{a}$, so $\\gamma=-\\frac{b}{a}$. (Then $c=d=0$ and the polynomial is $x^2(ax+b)$.)",
+    "notes": [
+     "$\\frac ca$ is the sum of products in pairs, here 0.",
+     "Sign error: the sum of zeros is $-\\frac ba$.",
+     "$-\\frac da$ is the product of the zeros, here 0.",
+     "Correct: sum of zeros."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Cubic $ax^3+bx^2+cx+d$: sum of zeros $-\\frac ba$, pair-sum $\\frac ca$, product $-\\frac da$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-022",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 22,
+    "label": "DSSSB TGT 2018 · Q122"
+   },
+   "en": {
+    "q": "The zeroes of the quadratic polynomial, the sum and product of whose zeroes are $\\sqrt2$ and $\\frac{-3}{2}$, respectively, are:",
+    "options": [
+     "$\\frac{-1}{\\sqrt2}$, $\\frac{3}{\\sqrt2}$",
+     "$\\frac{1}{\\sqrt2}$, $\\frac{-2}{\\sqrt3}$",
+     "$\\frac{-1}{\\sqrt2}$, $\\frac{-3}{\\sqrt2}$",
+     "$\\frac{-1}{\\sqrt2}$, $\\frac{\\sqrt3}{2}$"
+    ],
+    "explanation": "The polynomial is $x^2-\\sqrt2x-\\frac32$, i.e. $2x^2-2\\sqrt2x-3$.\n$x=\\frac{2\\sqrt2\\pm\\sqrt{8+24}}{4}=\\frac{2\\sqrt2\\pm4\\sqrt2}{4}$, so $x=\\frac{3}{\\sqrt2}$ or $-\\frac{1}{\\sqrt2}$.\nCheck: sum $\\frac{2}{\\sqrt2}=\\sqrt2$, product $-\\frac32$.",
+    "notes": [
+     "Correct: sum $\\sqrt2$, product $-\\frac32$.",
+     "Product $-\\frac{2}{\\sqrt6}$, not $-\\frac32$.",
+     "Sum $-2\\sqrt2$, product $+\\frac32$.",
+     "Product $-\\frac{\\sqrt3}{2\\sqrt2}$, not $-\\frac32$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Quadratic with given sum $S$ and product $P$: $x^2-Sx+P$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-023",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 23,
+    "label": "DSSSB TGT 2018 · Q123"
+   },
+   "en": {
+    "q": "If $\\alpha,\\beta,\\gamma$ are zeroes of cubic polynomial $kx^3-5x+9$, and if $\\alpha^3+\\beta^3+\\gamma^3=27$, then the value of k is:",
+    "options": [
+     "2",
+     "1",
+     "$-1$",
+     "$-2$"
+    ],
+    "explanation": "No $x^2$ term, so $\\alpha+\\beta+\\gamma=0$, hence $\\alpha^3+\\beta^3+\\gamma^3=3\\alpha\\beta\\gamma$.\n$\\alpha\\beta\\gamma=-\\frac9k$, so $3\\left(-\\frac9k\\right)=27$ and $k=-1$.",
+    "notes": [
+     "Gives $-\\frac{27}{2}$.",
+     "Sign: gives $-27$.",
+     "Correct: $-\\frac{27}{k}=27$.",
+     "Gives $\\frac{27}{2}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "If $\\alpha+\\beta+\\gamma=0$ then $\\alpha^3+\\beta^3+\\gamma^3=3\\alpha\\beta\\gamma$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-024",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 24,
+    "label": "DSSSB TGT 2018 · Q124"
+   },
+   "en": {
+    "q": "If the zeroes of the polynomial $x^3-3x^2+x+1$ are $a-b$, $a$ and $a+b$ respectively, then the values of 'a' and 'b' are respectively:",
+    "options": [
+     "$-1,\\sqrt2$",
+     "$1,\\pm\\sqrt2$",
+     "$3,-\\sqrt2$",
+     "$1,\\pm\\sqrt{3/2}$"
+    ],
+    "explanation": "Sum: $3a=3$, so $a=1$.\nProduct: $(a-b)a(a+b)=a(a^2-b^2)=-1$, so $1-b^2=-1$, $b^2=2$, $b=\\pm\\sqrt2$.\n(Zeros $1$, $1\\pm\\sqrt2$.)",
+    "notes": [
+     "The sum of zeros $3a$ must be 3, so $a=1$.",
+     "Correct.",
+     "$a=3$ makes the sum 9.",
+     "From the pair-sum $3a^2-b^2=1$ also $b^2=2$, not $\\frac32$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Zeros in AP: write them $a-d$, $a$, $a+d$; the sum gives $a$ at once."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-025",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 25,
+    "label": "DSSSB TGT 2018 · Q125"
+   },
+   "en": {
+    "q": "For what value of k, the linear equations $(3k+1)x+3y=2$, $(k^2+1)x+(k-2)y=5$ have no solution?",
+    "options": [
+     "0",
+     "1",
+     "$-1$",
+     "2"
+    ],
+    "explanation": "No solution: $\\frac{3k+1}{k^2+1}=\\frac{3}{k-2}\\ne\\frac25$.\n$(3k+1)(k-2)=3k^2+3$ gives $-5k-2=3$, so $k=-1$.\nThen $\\frac3{k-2}=-1\\ne\\frac25$, so the lines are parallel and distinct.",
+    "notes": [
+     "$k=0$: ratios $1$ and $-\\frac32$ differ, unique solution.",
+     "$k=1$: ratios $2$ and $-3$ differ, unique solution.",
+     "Correct.",
+     "$k=2$: second equation is $5x=5$, unique solution."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "No solution: $\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\ne\\frac{c_1}{c_2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-026",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 26,
+    "label": "DSSSB TGT 2018 · Q126"
+   },
+   "en": {
+    "q": "Reduce the pair of equations $\\frac{10}{x+y}+\\frac{2}{x-y}=4$, $\\frac{15}{x+y}-\\frac{5}{x-y}=-2$ into a pair of linear equations. Then find its solution from the following options:",
+    "options": [
+     "$x=-3$, $y=-2$",
+     "$x=3$, $y=-2$",
+     "$x=-3$, $y=2$",
+     "$x=3$, $y=2$"
+    ],
+    "explanation": "Put $u=\\frac1{x+y}$, $v=\\frac1{x-y}$: $10u+2v=4$, $15u-5v=-2$.\n$5\\times$(first)$+2\\times$(second): $80u=16$, so $u=\\frac15$, $v=1$.\n$x+y=5$, $x-y=1$, so $x=3$, $y=2$.",
+    "notes": [
+     "$x+y=-5$ gives $u=-\\frac15$.",
+     "$x+y=1$, $x-y=5$: $u$ and $v$ swapped.",
+     "$x+y=-1$: wrong signs.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Equations in $\\frac1{x+y}$, $\\frac1{x-y}$ become linear with $u=\\frac1{x+y}$, $v=\\frac1{x-y}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-027",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 27,
+    "label": "DSSSB TGT 2018 · Q127"
+   },
+   "en": {
+    "q": "The solution of pair of linear equations $3x-5y=4$, $9x-2y=7$ by the substitution method, is:",
+    "options": [
+     "$x=\\frac9{13}$, $y=\\frac5{13}$",
+     "$x=\\frac{-9}{13}$, $y=\\frac{-5}{13}$",
+     "$x=\\frac9{13}$, $y=\\frac{-5}{13}$",
+     "$x=\\frac{-9}{13}$, $y=\\frac5{13}$"
+    ],
+    "explanation": "From the first, $x=\\frac{4+5y}{3}$. Substituting: $3(4+5y)-2y=7$, so $13y=-5$, $y=-\\frac5{13}$.\nThen $x=\\frac{4-25/13}{3}=\\frac{9}{13}$.",
+    "notes": [
+     "$3\\cdot\\frac9{13}-5\\cdot\\frac5{13}=\\frac2{13}\\ne4$.",
+     "Gives $3x-5y=-\\frac2{13}$.",
+     "Correct: $\\frac{27+25}{13}=4$ and $\\frac{81+10}{13}=7$.",
+     "Gives $-4$ in the first equation."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Substitution: express one variable from one equation and put it in the other."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-028",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 28,
+    "label": "DSSSB TGT 2018 · Q128"
+   },
+   "en": {
+    "q": "The solution of pair of linear equations $\\frac12x+\\frac23y=-1$, $x-\\frac13y=3$ by the elimination method, is:",
+    "options": [
+     "$x=2$, $y=3$",
+     "$x=2$, $y=-3$",
+     "$x=-2$, $y=-3$",
+     "$x=-2$, $y=3$"
+    ],
+    "explanation": "Clear fractions: $3x+4y=-6$ and $3x-y=9$.\nSubtract: $5y=-15$, so $y=-3$; then $3x=9-3=6$, $x=2$.",
+    "notes": [
+     "$1+2=3\\ne-1$.",
+     "Correct: $1-2=-1$ and $2+1=3$.",
+     "$-1-2=-3\\ne-1$.",
+     "$-1+2=1\\ne-1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Elimination: make the coefficients of one variable equal, then subtract."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-029",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 29,
+    "label": "DSSSB TGT 2018 · Q129"
+   },
+   "en": {
+    "q": "For what value of $k$, the system of linear equations $3x+4y=12$, $x+ky=4$ has infinitely many solutions?",
+    "options": [
+     "$\\frac43$",
+     "$\\frac34$",
+     "$\\frac23$",
+     "$\\frac32$"
+    ],
+    "explanation": "Infinitely many: $\\frac31=\\frac4k=\\frac{12}4$. So $\\frac4k=3$ and $k=\\frac43$.",
+    "notes": [
+     "Correct: all three ratios equal 3.",
+     "Inverted ratio: $\\frac4{3/4}=\\frac{16}3\\ne3$.",
+     "$\\frac4{2/3}=6\\ne3$.",
+     "$\\frac4{3/2}=\\frac83\\ne3$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Infinitely many solutions: $\\frac{a_1}{a_2}=\\frac{b_1}{b_2}=\\frac{c_1}{c_2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-030",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 30,
+    "label": "DSSSB TGT 2018 · Q130"
+   },
+   "en": {
+    "q": "For what value of $k$, the system of linear equations $2x-y=3$, $4x+ky=4$ has no solution?",
+    "options": [
+     "2",
+     "$-2$",
+     "$-4$",
+     "$-1$"
+    ],
+    "explanation": "No solution: $\\frac24=\\frac{-1}{k}\\ne\\frac34$. So $k=-2$, and $\\frac12\\ne\\frac34$ holds.",
+    "notes": [
+     "$k=2$: ratios $\\frac12$, $-\\frac12$ differ: unique solution.",
+     "Correct: parallel distinct lines.",
+     "Ratios $\\frac12$ and $\\frac14$ differ: unique solution.",
+     "Ratios $\\frac12$ and $1$ differ: unique solution."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "No solution (parallel lines): $\\frac{a_1}{a_2}=\\frac{b_1}{b_2}\\ne\\frac{c_1}{c_2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-031",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 31,
+    "label": "DSSSB TGT 2018 · Q131"
+   },
+   "en": {
+    "q": "The solution of $|x^2-1|+(x-1)^2+\\sqrt{x^2-3x+2}=0$:",
+    "options": [
+     "does not exist",
+     "$-1$",
+     "2",
+     "1"
+    ],
+    "explanation": "Each term is $\\ge0$, so each must be 0: $x^2=1$, $x=1$, and $x^2-3x+2=0$ (i.e. $x=1$ or 2). The common value is $x=1$.",
+    "notes": [
+     "$x=1$ satisfies all three.",
+     "$(x-1)^2=4\\ne0$.",
+     "$|x^2-1|=3\\ne0$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "A sum of non-negative terms is 0 only when every term is 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-032",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-17-02",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 32,
+    "label": "DSSSB TGT 2018 · Q132"
+   },
+   "en": {
+    "q": "A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey, then the speed of the train is:",
+    "options": [
+     "45 km/h",
+     "40 km/h",
+     "30 km/h",
+     "50 km/h"
+    ],
+    "explanation": "$\\frac{360}{v}-\\frac{360}{v+5}=1$ gives $v(v+5)=1800$, $v^2+5v-1800=0$, $(v+45)(v-40)=0$, so $v=40$ km/h.\nCheck: 9 h at 40, 8 h at 45.",
+    "notes": [
+     "45 is the new speed, not the original.",
+     "Correct.",
+     "$12-\\frac{360}{35}\\ne1$.",
+     "$7.2-6.55\\ne1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Commercial Mathematics",
+     "17.2 Speed, time and distance"
+    ],
+    "facts": [
+     "Time difference problems: $\\frac{d}{v}-\\frac{d}{v+a}=t$ gives $v(v+a)=\\frac{ad}{t}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-033",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 33,
+    "label": "DSSSB TGT 2018 · Q133"
+   },
+   "en": {
+    "q": "If $x=2$ is a solution of a quadratic equation $3x^2-2kx+5=0$, then value of 'k' is:",
+    "options": [
+     "$\\frac74$",
+     "$\\frac{-17}{4}$",
+     "$\\frac{17}{4}$",
+     "$\\frac4{17}$"
+    ],
+    "explanation": "Put $x=2$: $12-4k+5=0$, so $k=\\frac{17}{4}$.",
+    "notes": [
+     "Sign slip on the constant: $12-4k-5=0$.",
+     "Sign error.",
+     "Correct.",
+     "Reciprocal of the answer."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "A root satisfies the equation: substitute it to find the unknown coefficient."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-034",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 34,
+    "label": "DSSSB TGT 2018 · Q134"
+   },
+   "en": {
+    "q": "The solution of a quadratic equation $\\frac{x+1}{x-1}+\\frac{x-1}{x+1}=\\frac{10}{3}$ is:",
+    "options": [
+     "$-2,2$",
+     "$-4,4$",
+     "$-2,3$",
+     "$2,4$"
+    ],
+    "explanation": "Combine: $\\frac{(x+1)^2+(x-1)^2}{x^2-1}=\\frac{2x^2+2}{x^2-1}=\\frac{10}3$.\n$6x^2+6=10x^2-10$, so $x^2=4$, $x=\\pm2$ (neither is $\\pm1$).",
+    "notes": [
+     "Correct.",
+     "$x=4$: $\\frac53+\\frac35=\\frac{34}{15}\\ne\\frac{10}3$.",
+     "$x=3$: $2+\\frac12\\ne\\frac{10}{3}$.",
+     "$x=4$ fails."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$\\frac{a}{b}+\\frac{b}{a}=\\frac{a^2+b^2}{ab}$; here $(x+1)^2+(x-1)^2=2x^2+2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-035",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 35,
+    "label": "DSSSB TGT 2018 · Q135"
+   },
+   "en": {
+    "q": "The solution of a quadratic equation $x^2+4\\sqrt2x+6=0$ is:",
+    "options": [
+     "$\\sqrt2,\\sqrt{18}$",
+     "$\\sqrt2,-\\sqrt{18}$",
+     "$-\\sqrt2,\\sqrt{18}$",
+     "$-\\sqrt2,-\\sqrt{18}$"
+    ],
+    "explanation": "Sum $-4\\sqrt2<0$ and product $6>0$: both roots negative.\n$x=\\frac{-4\\sqrt2\\pm\\sqrt{32-24}}{2}=-2\\sqrt2\\pm\\sqrt2$, so $x=-\\sqrt2$ or $-3\\sqrt2=-\\sqrt{18}$.",
+    "notes": [
+     "Sum would be $+4\\sqrt2$.",
+     "Product would be $-6$.",
+     "Product would be $-6$.",
+     "Correct: sum $-4\\sqrt2$, product 6."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Positive product and negative sum: both roots are negative."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-036",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 36,
+    "label": "DSSSB TGT 2018 · Q136"
+   },
+   "en": {
+    "q": "The diagonal of a rectangular plot is 60 m more than the shorter side 'b'. If the longer side 'a' is 30 m more than the shorter side, then the size 'a $\\times$ b' of the plot is:",
+    "options": [
+     "120 m $\\times$ 90 m",
+     "90 m $\\times$ 60 m",
+     "180 m $\\times$ 150 m",
+     "60 m $\\times$ 30 m"
+    ],
+    "explanation": "$b^2+(b+30)^2=(b+60)^2$ gives $b^2-60b-2700=0$, $(b-90)(b+30)=0$, so $b=90$, $a=120$ (diagonal 150).",
+    "notes": [
+     "Correct: $90^2+120^2=150^2$.",
+     "Diagonal would be 120, but $60^2+90^2\\ne120^2$.",
+     "Diagonal would be 210, but $150^2+180^2\\ne210^2$.",
+     "$30^2+60^2\\ne90^2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Set up Pythagoras with one unknown side; reject the negative root."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-037",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 37,
+    "label": "DSSSB TGT 2018 · Q137"
+   },
+   "en": {
+    "q": "Let $T_r$ be the $r^{th}$ term of an A.P. for $r=1,2,3,\\ldots$ If for some positive integers m and n, we have $T_m=\\frac1n$ and $T_n=\\frac1m$, then $T_{mn}$ equals:",
+    "options": [
+     "0",
+     "1",
+     "$\\frac1{mn}$",
+     "$\\frac1m+\\frac1n$"
+    ],
+    "explanation": "$d=\\frac{T_m-T_n}{m-n}=\\frac{1/n-1/m}{m-n}=\\frac1{mn}$.\n$a=T_m-(m-1)d=\\frac1n-\\frac{m-1}{mn}=\\frac1{mn}$.\nSo $T_r=\\frac{r}{mn}$ and $T_{mn}=1$.",
+    "notes": [
+     "$T_{mn}=\\frac{mn}{mn}=1$.",
+     "Correct: $T_r=\\frac r{mn}$.",
+     "That is the first term (and $d$).",
+     "That is $T_{m+n}=\\frac{m+n}{mn}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "If $T_m=\\frac1n$, $T_n=\\frac1m$ then $T_r=\\frac r{mn}$, so $T_{mn}=1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-038",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 38,
+    "label": "DSSSB TGT 2018 · Q138"
+   },
+   "en": {
+    "q": "The sum of the first '2n' terms of the A.P. 2, 5, 8, ... is equal to the sum of the first 'n' terms of the A.P. 57, 59, 61, ..., then 'n' equals:",
+    "options": [
+     "13",
+     "12",
+     "11",
+     "10"
+    ],
+    "explanation": "$S_{2n}=\\frac{2n}{2}[4+3(2n-1)]=n(6n+1)$.\n$S'_n=\\frac n2[114+2(n-1)]=n(n+56)$.\n$6n+1=n+56$, so $n=11$.",
+    "notes": [
+     "$13\\cdot79\\ne13\\cdot69$.",
+     "$12\\cdot73\\ne12\\cdot68$.",
+     "Correct: both sums are 737.",
+     "$10\\cdot61\\ne10\\cdot66$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$S_n=\\frac n2[2a+(n-1)d]$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-039",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 39,
+    "label": "DSSSB TGT 2018 · Q139"
+   },
+   "en": {
+    "q": "Sum to 'n' terms of the series $\\frac{1}{1\\cdot2\\cdot3}+\\frac{3}{2\\cdot3\\cdot4}+\\frac{5}{3\\cdot4\\cdot5}+\\frac{7}{4\\cdot5\\cdot6}+\\cdots$ is:",
+    "options": [
+     "$\\frac{n(n+2)}{(n+1)(n+4)}$",
+     "$\\frac{n(n+1)}{2(n+1)(n+4)}$",
+     "$\\frac{n(n+2)}{(n+3)(n+4)}$",
+     "$\\frac{n(3n+1)}{4(n+1)(n+2)}$"
+    ],
+    "explanation": "$T_r=\\frac{2r-1}{r(r+1)(r+2)}$ $=\\frac{2}{(r+1)(r+2)}-\\frac{1}{r(r+1)(r+2)}$.\nTelescoping: $\\sum\\frac2{(r+1)(r+2)}=\\frac{n}{n+2}$ and $\\sum\\frac1{r(r+1)(r+2)}$ $=\\frac14-\\frac1{2(n+1)(n+2)}$.\nTotal $=\\frac{n(3n+1)}{4(n+1)(n+2)}$. Quick check $n=1$: $\\frac{4}{24}=\\frac16$.",
+    "notes": [
+     "$n=1$ gives $\\frac3{10}\\ne\\frac16$.",
+     "$n=1$ gives $\\frac1{10}\\ne\\frac16$.",
+     "$n=1$ gives $\\frac3{20}\\ne\\frac16$.",
+     "Correct: $n=1,2$ give $\\frac16$, $\\frac7{24}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "For an MCQ on a sum to $n$ terms, test $n=1$ and $n=2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-040",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 40,
+    "label": "DSSSB TGT 2018 · Q140"
+   },
+   "en": {
+    "q": "A manufacturer has 600 L of a 12% solution of acid. How many litres of a 30% acid solution must be added to it such that acid content in the resulting mixture will be more than 15% but less than 18%?",
+    "options": [
+     "more than 140 L but less than 320 L",
+     "more than 110 L but less than 290 L",
+     "more than 220 L but less than 300 L",
+     "more than 120 L but less than 300 L"
+    ],
+    "explanation": "Acid: $72+0.3x$ in $600+x$ litres.\n$72+0.3x>0.15(600+x)$ gives $0.15x>18$, $x>120$.\n$72+0.3x<0.18(600+x)$ gives $0.12x<36$, $x<300$.",
+    "notes": [
+     "130 L already gives about 15.2%, and 310 L gives over 18%.",
+     "110 L gives only about 14.8%.",
+     "130 L already gives about 15.2%.",
+     "Correct: $120<x<300$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Mixture inequality: (acid amount) compared with (rate $\\times$ total volume)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-041",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 41,
+    "label": "DSSSB TGT 2018 · Q141"
+   },
+   "en": {
+    "q": "How many numbers must be selected from the set $\\{1,2,3,4,5,6\\}$ to guarantee that at least one pair of these numbers add up to 7?",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "5"
+    ],
+    "explanation": "Pairs with sum 7: $\\{1,6\\},\\{2,5\\},\\{3,4\\}$ (3 boxes). One number from each box (3 numbers) avoids a sum of 7; a 4th number must complete a pair (pigeonhole).",
+    "notes": [
+     "E.g. $\\{1,2\\}$ has no pair summing to 7.",
+     "$\\{1,2,3\\}$ has none.",
+     "Correct: 3 boxes, so 4 numbers.",
+     "Already 4 suffice."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "Pigeonhole: $k$ boxes force a repeat once $k+1$ objects are chosen."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-042",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 42,
+    "label": "DSSSB TGT 2018 · Q142"
+   },
+   "en": {
+    "q": "What is the coefficient of $x^{101}y^{99}$ in the expansion of $(2x-3y)^{200}$?",
+    "options": [
+     "$\\binom{200}{99}2^{101}3^{99}$",
+     "$-\\binom{101}{99}2^{101}3^{99}$",
+     "$\\binom{101}{99}2^{101}3^{99}$",
+     "$-\\binom{200}{99}2^{101}3^{99}$"
+    ],
+    "explanation": "$T_{r+1}=\\binom{200}{r}(2x)^{200-r}(-3y)^r$; $r=99$ gives $\\binom{200}{99}2^{101}(-3)^{99}$ $=-\\binom{200}{99}2^{101}3^{99}$ (odd power of $-3$).",
+    "notes": [
+     "Misses the sign: $(-3)^{99}<0$.",
+     "Wrong binomial coefficient (upper index is the power 200).",
+     "Wrong coefficient and sign.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "In $(a-b)^n$ the term with $b^r$ has sign $(-1)^r$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-043",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 43,
+    "label": "DSSSB TGT 2018 · Q143"
+   },
+   "en": {
+    "q": "The solution of the recurrence relation $a_n=6a_{n-1}-9a_{n-2}$, $a_0=1$, $a_1=6$ is:",
+    "options": [
+     "$a_n=(n-1)3^n$",
+     "$a_n=(1-n)3^n$",
+     "$a_n=(1+n)3^n$",
+     "$a_n=(1+n)6^n$"
+    ],
+    "explanation": "Characteristic equation $r^2-6r+9=0$ has the double root 3, so $a_n=(A+Bn)3^n$.\n$a_0=A=1$; $a_1=3(1+B)=6$ gives $B=1$. So $a_n=(1+n)3^n$.",
+    "notes": [
+     "$a_0=-1\\ne1$.",
+     "$a_1=0\\ne6$.",
+     "Correct.",
+     "$a_1=12\\ne6$; the root is 3, not 6."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "A double root $r$ of the characteristic equation gives $a_n=(A+Bn)r^n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-044",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 44,
+    "label": "DSSSB TGT 2018 · Q144"
+   },
+   "en": {
+    "q": "How many positive integers less than 200 are NOT divisible by three or more primes?",
+    "options": [
+     "197",
+     "168",
+     "122",
+     "65"
+    ],
+    "explanation": "Count $1,\\ldots,199$ with at least three distinct prime factors (four is impossible: $2\\cdot3\\cdot5\\cdot7=210$).\nSets $\\{2,3,5\\}$: 6; $\\{2,3,7\\}$: 4; $\\{2,3,11\\}$: 3; $\\{2,3,13\\}$: 2; $\\{2,3,p\\}$, $p=17$ to 31: 5; $\\{2,5,7\\}$: 2; $\\{2,5,p\\}$, $p=11$ to 19: 4; $\\{2,7,11\\},\\{2,7,13\\}$: 2; $\\{3,5,p\\}$, $p=7,11,13$: 3.\nTotal 31, so $199-31=168$.\n(Counting repeated factors, such as $8=2\\cdot2\\cdot2$, would give 109, not an option: 'three or more primes' means distinct primes.)",
+    "notes": [
+     "Far too many: 31 numbers (30, 42, 60, ...) are excluded.",
+     "Correct: $199-31$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "The smallest number with three distinct prime factors is $2\\cdot3\\cdot5=30$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-045",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 45,
+    "label": "DSSSB TGT 2018 · Q145"
+   },
+   "en": {
+    "q": "How many positive integers not exceeding 1000 are divisible by 7 or 11?",
+    "options": [
+     "12",
+     "90",
+     "142",
+     "220"
+    ],
+    "explanation": "$\\lfloor\\frac{1000}{7}\\rfloor=142$, $\\lfloor\\frac{1000}{11}\\rfloor=90$, $\\lfloor\\frac{1000}{77}\\rfloor=12$.\n$n(A\\cup B)=142+90-12=220$.",
+    "notes": [
+     "That is the number divisible by both (77).",
+     "Only the multiples of 11.",
+     "Only the multiples of 7.",
+     "Correct: inclusion–exclusion."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$n(A\\cup B)=n(A)+n(B)-n(A\\cap B)$; multiples of $k$ up to $N$: $\\lfloor N/k\\rfloor$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-047",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-06-03",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 47,
+    "label": "DSSSB TGT 2018 · Q147"
+   },
+   "en": {
+    "q": "If $f(x)=\\frac{x}{\\sin x}$ and $g(x)=\\frac{x}{\\tan x}$, where $0\\le x\\le1$, then in the interval:",
+    "options": [
+     "$f(x)$ is an increasing function",
+     "$g(x)$ is an increasing function",
+     "Both $f(x)$ and $g(x)$ are increasing functions",
+     "Both $f(x)$ and $g(x)$ are decreasing functions"
+    ],
+    "explanation": "$f'(x)=\\frac{\\sin x-x\\cos x}{\\sin^2x}=\\frac{\\cos x(\\tan x-x)}{\\sin^2x}>0$ since $\\tan x>x$ on $(0,1]$: $f$ increases.\n$g'(x)=\\frac{\\sin x\\cos x-x}{\\sin^2x}=\\frac{\\frac12\\sin2x-x}{\\sin^2x}<0$ since $\\sin2x<2x$: $g$ decreases.\n(At $x=0$ both quotients are $\\frac00$; they are given their limit 1 there.)",
+    "notes": [
+     "Correct.",
+     "$g$ decreases: $g'<0$ as $\\sin2x<2x$.",
+     "$g$ is decreasing.",
+     "$f$ is increasing."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.3 Increasing and decreasing functions"
+    ],
+    "facts": [
+     "On $(0,\\frac\\pi2)$: $\\sin x<x<\\tan x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-048",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 48,
+    "label": "DSSSB TGT 2018 · Q148"
+   },
+   "en": {
+    "q": "The set of all points where the function $f(x)=2x|x|$ is differentiable, is:",
+    "options": [
+     "$(0,\\infty)$",
+     "$[0,\\infty)$",
+     "$(-\\infty,\\infty)$",
+     "$(-\\infty,0)\\cup(0,\\infty)$"
+    ],
+    "explanation": "$f(x)=2x^2$ for $x\\ge0$ and $-2x^2$ for $x<0$. Away from 0 it is a polynomial. At 0: $\\frac{f(h)-f(0)}{h}=2|h|\\to0$ from both sides, so $f'(0)=0$. Hence $f'(x)=4|x|$ exists everywhere.",
+    "notes": [
+     "Misses $x\\le0$.",
+     "Misses $x<0$.",
+     "Correct: $f'(x)=4|x|$.",
+     "$f$ is differentiable at 0 as well."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "$x|x|$ is differentiable everywhere, with derivative $2|x|$; $|x|$ alone is not at 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-049",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 49,
+    "label": "DSSSB TGT 2018 · Q149"
+   },
+   "en": {
+    "q": "The second derivative of the function $f(x)=x^{1/x}$ at $x=e$ is:",
+    "options": [
+     "$e^{1/e}$",
+     "$e^{1/(e-2)}$",
+     "$e^{1/(e-3)}$",
+     "$-e^{\\frac1e-3}$"
+    ],
+    "explanation": "$\\ln f=\\frac{\\ln x}{x}$, so $f'=f\\cdot\\frac{1-\\ln x}{x^2}$, which is 0 at $x=e$.\n$f''=f'\\cdot\\frac{1-\\ln x}{x^2}+f\\cdot\\frac{2\\ln x-3}{x^3}$.\nAt $x=e$: $f''(e)=e^{1/e}\\cdot\\frac{-1}{e^3}=-e^{\\frac1e-3}$.",
+    "notes": [
+     "That is $f(e)$ itself.",
+     "",
+     "",
+     "Correct: $x=e$ is a maximum of $x^{1/x}$, so $f''<0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "$x^{1/x}$ has its maximum $e^{1/e}$ at $x=e$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-050",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 50,
+    "label": "DSSSB TGT 2018 · Q150"
+   },
+   "en": {
+    "q": "If the function $f(x)=\\begin{cases}ax^2-b, & |x|<1\\\\ -\\frac{1}{|x|}, & |x|\\ge1\\end{cases}$ is differentiable, then the values of a and b are respectively:",
+    "options": [
+     "0.5, 0.5",
+     "0.5, 1.5",
+     "1, 2",
+     "1, $-1$"
+    ],
+    "explanation": "At $x=1$: continuity gives $a-b=-1$.\nLeft derivative $2a$; for $x\\ge1$, $f=-\\frac1x$ with derivative $\\frac1{x^2}=1$. So $2a=1$, $a=\\frac12$, $b=\\frac32$. ($f$ is even, so $x=-1$ gives the same.)",
+    "notes": [
+     "$a-b=0\\ne-1$: not continuous.",
+     "Correct.",
+     "$2a=2\\ne1$.",
+     "$a-b=2\\ne-1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "Differentiable at a joint: values match (continuity) and slopes match."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-051",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 51,
+    "label": "DSSSB TGT 2018 · Q151"
+   },
+   "en": {
+    "q": "The value of the integral $\\int\\frac{e^x(1+\\sin x)}{1+\\cos x}dx$ is:",
+    "options": [
+     "$\\sin(\\log x)+C$",
+     "$e^x\\cot x+C$",
+     "$\\log|\\tan x|+C$",
+     "$e^x\\tan\\frac{x}{2}+C$"
+    ],
+    "explanation": "$\\frac{1+\\sin x}{1+\\cos x}=\\frac{1+2\\sin\\frac x2\\cos\\frac x2}{2\\cos^2\\frac x2}$ $=\\frac12\\sec^2\\frac x2+\\tan\\frac x2$.\nThis is $g+g'$ with $g=\\tan\\frac x2$, and $\\int e^x(g+g')dx=e^xg+C$.",
+    "notes": [
+     "",
+     "Derivative is $e^x(\\cot x-\\csc^2x)$.",
+     "No $e^x$ factor.",
+     "Correct: $\\int e^x(f+f')dx=e^xf+C$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "$\\int e^x\\{f(x)+f'(x)\\}dx=e^xf(x)+C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-052",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-17-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 52,
+    "label": "DSSSB TGT 2018 · Q152"
+   },
+   "en": {
+    "q": "Euclid's fifth postulate is:",
+    "options": [
+     "If a straight line, falling on two straight lines, makes the interior angles on the same side of it, taken together less than two right angles, then the two straight lines if produced indefinitely, meet on that side on which the sum of angles is less than two right angles.",
+     "The whole is greater than the part.",
+     "A circle may be described with any center and any radius.",
+     "All right angles are equal to one another."
+    ],
+    "explanation": "Euclid's fifth (parallel) postulate is the statement in (a). (b) is an axiom (common notion), (c) is the third postulate and (d) is the fourth.",
+    "notes": [
+     "Correct: the parallel postulate.",
+     "An axiom (common notion 5), not a postulate.",
+     "Postulate 3.",
+     "Postulate 4."
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.5 Euclidean geometry: triangles"
+    ],
+    "facts": [
+     "Euclid's fifth postulate is equivalent to Playfair's axiom: through a point there is exactly one parallel to a line."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-056",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-17-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 56,
+    "label": "DSSSB TGT 2018 · Q156"
+   },
+   "en": {
+    "q": "Identify the false statement given below:",
+    "options": [
+     "Ceva's theorem is concerned with concurrency of the lines.",
+     "Menelaus' theorem is concerned with the collinearity of the points.",
+     "Menelaus' theorem is not a dual version of Ceva's theorem.",
+     "If the quadrilateral is cyclic, then the product of the two diagonals is equal to the sum of the products of the opposite side lengths."
+    ],
+    "explanation": "The paper prints 'Menelau's theorem is a not dual version', read as 'Menelaus' theorem is not a dual version'.\nCeva: cevians are concurrent iff $\\frac{BD}{DC}\\cdot\\frac{CE}{EA}\\cdot\\frac{AF}{FB}=1$. Menelaus: points on the side lines are collinear iff the same product is $-1$ (signed). The two theorems are duals of each other, so (c) is false. (d) is Ptolemy's theorem.",
+    "notes": [
+     "True.",
+     "True.",
+     "False: Menelaus and Ceva are dual theorems.",
+     "True: Ptolemy's theorem $AC\\cdot BD=AB\\cdot CD+AD\\cdot BC$."
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.5 Euclidean geometry: triangles"
+    ],
+    "facts": [
+     "Ceva (concurrency, product $+1$) and Menelaus (collinearity, product $-1$) are duals."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-057",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 57,
+    "label": "DSSSB TGT 2018 · Q157"
+   },
+   "en": {
+    "q": "The area of the quadrilateral whose vertices, taken in order, are $(-4,-2)$, $(-3,-5)$, $(3,-2)$ and $(2,3)$, is:",
+    "options": [
+     "22 sq. units",
+     "26 sq. units",
+     "28 sq. units",
+     "23 sq. units"
+    ],
+    "explanation": "Shoelace: $\\sum x_iy_{i+1}=20+6+9-4=31$ and $\\sum y_ix_{i+1}=6-15-4-12=-25$.\nArea $=\\frac12|31-(-25)|=28$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Area of a polygon (vertices in order): $\\frac12|\\sum(x_iy_{i+1}-x_{i+1}y_i)|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-058",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 58,
+    "label": "DSSSB TGT 2018 · Q158"
+   },
+   "en": {
+    "q": "If $(1.5,0)$, $(1.5,6)$ and $(-1,6)$ are mid points of a triangle, then the incentre of the triangle is:",
+    "options": [
+     "$\\left(\\frac23,4\\right)$",
+     "$(1,2)$",
+     "$(2,3)$",
+     "$(4,0)$"
+    ],
+    "explanation": "Each vertex is (sum of two midpoints) $-$ (the third): $(4,0)$, $(-1,0)$, $(-1,12)$.\nRight angle at $(-1,0)$ with legs 5 and 12, hypotenuse 13.\n$r=\\frac{5+12-13}{2}=2$, so the incentre is $(-1+2,\\,0+2)=(1,2)$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     "That is a vertex."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "In a right triangle, $r=\\frac{a+b-c}{2}$ and the incentre is $r$ from both legs."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-059",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 2,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 59,
+    "label": "DSSSB TGT 2018 · Q159"
+   },
+   "en": {
+    "q": "In a triangle ABC with vertices $A(1,2)$, $B(2,3)$ and $C(3,1)$ and $\\angle C=\\cos^{-1}\\frac45$, $\\angle B=\\angle A=\\cos^{-1}\\frac1{\\sqrt{10}}$. Then the coordinates of circumcentre of the triangle are:",
+    "options": [
+     "$(11,2)$",
+     "$(2,13)$",
+     "$\\left(\\frac{11}6,2\\right)$",
+     "$\\left(\\frac{13}6,\\frac{11}6\\right)$"
+    ],
+    "explanation": "Let $O=(x,y)$. $OA=OB$: $x+y=4$. $OA=OC$: $4x-2y=5$.\nSo $x=\\frac{13}6$, $y=\\frac{11}6$. Check: $OA^2=OB^2=OC^2=\\frac{50}{36}$.\n(The $\\sin2A$-weighted formula gives the same: weights $0.6,0.6,0.96$.)\nThe board's key is (c) $(\\frac{11}6,2)$, which is wrong: its squared distances are $\\frac{25}{36}$ to A and $\\frac{37}{36}$ to B, so it is not equidistant from the vertices.",
+    "notes": [
+     "Far from all three vertices.",
+     "Far from all three vertices.",
+     "$OA^2=\\frac{25}{36}$ but $OB^2=\\frac{37}{36}$: not equidistant.",
+     "Correct: equidistant from A, B, C."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Circumcentre: solve $OA=OB$ and $OA=OC$; or use weights $\\sin2A$, $\\sin2B$, $\\sin2C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-060",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 60,
+    "label": "DSSSB TGT 2018 · Q160"
+   },
+   "en": {
+    "q": "The area of the triangle formed by the straight lines $7x-2y+10=0$, $7x+2y-10=0$ and $9x+y+2=0$ is:",
+    "options": [
+     "$\\frac{686}{275}$ sq. units",
+     "$\\frac{688}{275}$ sq. units",
+     "$\\frac{686}{255}$ sq. units",
+     "$\\frac{868}{275}$ sq. units"
+    ],
+    "explanation": "Vertices: $(0,5)$, $\\left(-\\frac{14}{25},\\frac{76}{25}\\right)$, $\\left(-\\frac{14}{11},\\frac{104}{11}\\right)$.\nArea $=\\frac12|\\sum x_1(y_2-y_3)|$ $=\\frac{686}{275}$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "Not the area: the numerator is 686, not 868."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Area of the triangle formed by three lines: find the vertices, then use the determinant formula."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-061",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 61,
+    "label": "DSSSB TGT 2018 · Q161"
+   },
+   "en": {
+    "q": "The distance between two parallel lines is unity. A point A lies between the lines at a distance 'a' from one of them. If the vertex B lies on one of the parallel lines and the vertex C lies on the other line, then the length of a side of an equilateral triangle ABC is:",
+    "options": [
+     "$\\frac2{\\sqrt3}\\sqrt{a^2+a+1}$ units",
+     "$\\frac2{\\sqrt3}\\sqrt{a^2+a-1}$ units",
+     "$\\frac{\\sqrt2}3\\sqrt{a^2-a+1}$ units",
+     "$\\frac2{\\sqrt3}\\sqrt{a^2-a+1}$ units"
+    ],
+    "explanation": "Take the lines $y=0$, $y=1$ and $A=(0,a)$. If $AB$ makes angle $\\theta$ below the horizontal: $s\\sin\\theta=a$.\n$AC$ is at $60^\\circ-\\theta$ above it: $s\\sin(60^\\circ-\\theta)=1-a$, which gives $s\\cos\\theta=\\frac{2-a}{\\sqrt3}$.\n$s^2=a^2+\\frac{(2-a)^2}{3}=\\frac{4(a^2-a+1)}{3}$.",
+    "notes": [
+     "Sign of the middle term wrong.",
+     "",
+     "Wrong constant factor.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Equilateral triangle between parallel lines at distance 1, apex at distance $a$: side $\\frac2{\\sqrt3}\\sqrt{a^2-a+1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-062",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 62,
+    "label": "DSSSB TGT 2018 · Q162"
+   },
+   "en": {
+    "q": "The angle $\\theta$ between the lines joining the points $(0,0)$, $(2,3)$ and $(2,-2)$, $(3,5)$ is:",
+    "options": [
+     "$\\tan^{-1}\\frac1{23}$",
+     "$\\tan^{-1}\\frac{11}3$",
+     "$\\tan^{-1}\\frac{11}{23}$",
+     "$\\tan^{-1}\\frac13$"
+    ],
+    "explanation": "Slopes $m_1=\\frac32$ and $m_2=\\frac{5+2}{3-2}=7$.\n$\\tan\\theta=\\left|\\frac{7-\\frac32}{1+7\\cdot\\frac32}\\right|=\\frac{11/2}{23/2}=\\frac{11}{23}$.",
+    "notes": [
+     "",
+     "Wrong denominator: $1+m_1m_2=\\frac{23}{2}$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "$\\tan\\theta=\\left|\\frac{m_1-m_2}{1+m_1m_2}\\right|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-063",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-17-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 63,
+    "label": "DSSSB TGT 2018 · Q163"
+   },
+   "en": {
+    "q": "Three circular coins each of radii 1 cm are kept in an equilateral triangle such that all the three coins touch each other and also the sides of the triangle. The area of the triangle is:",
+    "options": [
+     "$(6+4\\sqrt3)$ cm$^2$",
+     "$(4+2\\sqrt3)$ cm$^2$",
+     "$\\frac14(12+7\\sqrt3)$ cm$^2$",
+     "$\\frac14(48+7\\sqrt3)$ cm$^2$"
+    ],
+    "explanation": "The centres form an equilateral triangle of side 2 with inradius $\\frac1{\\sqrt3}$. The big triangle has the same centre, with inradius $1+\\frac1{\\sqrt3}$.\nSide $=2\\sqrt3\\,r=2\\sqrt3+2$.\nArea $=\\frac{\\sqrt3}4(2+2\\sqrt3)^2$ $=\\frac{\\sqrt3}4(16+8\\sqrt3)=6+4\\sqrt3$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.5 Euclidean geometry: triangles"
+    ],
+    "facts": [
+     "Equilateral triangle: side $=2\\sqrt3\\times$ inradius, area $=\\frac{\\sqrt3}{4}a^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-066",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-17-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 66,
+    "label": "DSSSB TGT 2018 · Q166"
+   },
+   "en": {
+    "q": "The perimeter of a triangle right angled at C is 70, and the in-radius is 6. Then $|a-b|$ equals:",
+    "options": [
+     "8",
+     "9",
+     "2",
+     "1"
+    ],
+    "explanation": "$r=\\frac{a+b-c}{2}=6$ and $a+b+c=70$ give $c=29$, $a+b=41$.\n$a^2+b^2=841$, so $2ab=41^2-841=840$.\n$(a-b)^2=841-840=1$, so $|a-b|=1$ (sides 20, 21, 29).",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: 20, 21, 29."
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.5 Euclidean geometry: triangles"
+    ],
+    "facts": [
+     "Right triangle with hypotenuse $c$: inradius $r=\\frac{a+b-c}{2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-067",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-10",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 67,
+    "label": "DSSSB TGT 2018 · Q167"
+   },
+   "en": {
+    "q": "The wheels of a taxi are of diameter 80 cm each. How many complete revolutions does each wheel make in 10 minutes when the taxi is traveling at a speed of 66 km/h?",
+    "options": [
+     "4355",
+     "4325",
+     "4735",
+     "4375"
+    ],
+    "explanation": "Distance in 10 min $=\\frac{66}{6}=11$ km $=1100000$ cm.\nCircumference $=\\frac{22}7\\cdot80=\\frac{1760}{7}$ cm.\nRevolutions $=1100000\\cdot\\frac7{1760}=4375$.\n(This uses $\\pi=\\frac{22}7$, as intended; the exact $\\pi$ gives 4376.8.)",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.10 Mensuration (TGT)"
+    ],
+    "facts": [
+     "Revolutions $=\\frac{\\text{distance}}{\\pi d}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-068",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-10",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 68,
+    "label": "DSSSB TGT 2018 · Q168"
+   },
+   "en": {
+    "q": "A vessel is in the form of a hollow hemisphere mounted by a hollow cylinder. The diameter of the hemisphere is 14 cm and the total height of the vessel is 13 cm. Then the inner surface area of the vessel is:",
+    "options": [
+     "527 cm$^2$",
+     "572 cm$^2$",
+     "562 cm$^2$",
+     "542 cm$^2$"
+    ],
+    "explanation": "$r=7$, cylinder height $13-7=6$.\nInner area $=2\\pi r^2+2\\pi rh$ $=2\\pi\\cdot7(7+6)$ $=2\\cdot\\frac{22}7\\cdot7\\cdot13=572$ cm$^2$.",
+    "notes": [
+     "Digits swapped.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.10 Mensuration (TGT)"
+    ],
+    "facts": [
+     "Curved area: hemisphere $2\\pi r^2$, cylinder $2\\pi rh$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-069",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-07-10",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 69,
+    "label": "DSSSB TGT 2018 · Q169"
+   },
+   "en": {
+    "q": "A medicine capsule is in the shape of cylinder with two hemispheres stuck to each of its ends. The length of the entire capsule is 14 mm and the diameter of the capsule is 5 mm. Then its surface area is:",
+    "options": [
+     "120 mm$^2$",
+     "210 mm$^2$",
+     "220 mm$^2$",
+     "if the radius of the cylinder is 60 cm and its height is 180 cm."
+    ],
+    "explanation": "$r=2.5$, cylinder length $14-5=9$.\nArea $=2\\pi rh+4\\pi r^2$ $=2\\pi(2.5)(9)+4\\pi(6.25)$ $=45\\pi+25\\pi=70\\pi$, which is 220 mm$^2$ with $\\pi=\\frac{22}7$.",
+    "notes": [
+     "",
+     "",
+     "Correct: $70\\pi$.",
+     "Not a value: a stray fragment of another question."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.10 Mensuration (TGT)"
+    ],
+    "facts": [
+     "A capsule's surface is a cylinder's curved area plus one full sphere: $2\\pi rh+4\\pi r^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-070",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-07-10",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 70,
+    "label": "DSSSB TGT 2018 · Q170"
+   },
+   "en": {
+    "q": "A solid consisting of a right circular cone of height 1.20 m and radius 0.60 m standing on a hemisphere of radius 0.60 m is placed upright in a right circular cylinder full of water such that it touches the bottom. If the radius of the cylinder is 0.60 m and its height is 1.80 m, then the volume of water left in the cylinder is:",
+    "options": [
+     "1.131 m$^3$",
+     "1.031 m$^3$",
+     "1.132 m$^3$",
+     "1.130 m$^3$"
+    ],
+    "explanation": "The paper prints the options as 1131, 1031, 1132 and 1130 m$^3$: the decimal points are lost (the whole cylinder holds only about 2 m$^3$). They are read as 1.131, 1.031, 1.132 and 1.130 m$^3$.\nWith $r=0.6$: water left $=\\pi r^2H-\\frac13\\pi r^2h-\\frac23\\pi r^3$\n$=\\pi(0.648-0.144-0.144)$ $=0.36\\pi\\approx1.131$ m$^3$.",
+    "notes": [
+     "Correct: $0.36\\pi\\approx1.131$.",
+     "",
+     "Too large: $0.36\\pi=1.1310$ to four places.",
+     "$0.36\\times3.14=1.1304$ uses the rough $\\pi\\approx3.14$; the exact $\\pi$ and $\\frac{22}7$ both give 1.131."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.10 Mensuration (TGT)"
+    ],
+    "facts": [
+     "Water left = cylinder $-$ cone $-$ hemisphere."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-071",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-09-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 71,
+    "label": "DSSSB TGT 2018 · Q171"
+   },
+   "en": {
+    "q": "In $\\triangle ABC$, right angled at B, if $\\tan A=\\frac1{\\sqrt3}$, then the value of $\\sin A\\cos C+\\cos A\\sin C$ is equal to:",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "4"
+    ],
+    "explanation": "$A=30^\\circ$, $C=60^\\circ$. The expression is $\\sin(A+C)=\\sin90^\\circ=1$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.1 Trigonometric ratios and the unit circle"
+    ],
+    "facts": [
+     "$\\sin A\\cos C+\\cos A\\sin C=\\sin(A+C)$; in a triangle right-angled at B, $A+C=90^\\circ$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-072",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 72,
+    "label": "DSSSB TGT 2018 · Q172"
+   },
+   "en": {
+    "q": "If $\\tan(A-B)=\\frac1{\\sqrt3}$, $\\tan(A+B)=\\sqrt3$, $0^\\circ<A+B<90^\\circ$ with $\\angle A$ is greater than $\\angle B$, then $\\angle A$ and $\\angle B$ are:",
+    "options": [
+     "$\\angle A=45^\\circ$, $\\angle B=15^\\circ$",
+     "$\\angle A=60^\\circ$, $\\angle B=15^\\circ$",
+     "$\\angle A=45^\\circ$, $\\angle B=25^\\circ$",
+     "$\\angle A=30^\\circ$, $\\angle B=15^\\circ$"
+    ],
+    "explanation": "$A+B=60^\\circ$ and $A-B=30^\\circ$, so $A=45^\\circ$, $B=15^\\circ$.",
+    "notes": [
+     "Correct.",
+     "$A+B=75^\\circ$.",
+     "$A+B=70^\\circ$.",
+     "$A+B=45^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "$\\tan30^\\circ=\\frac1{\\sqrt3}$, $\\tan60^\\circ=\\sqrt3$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-073",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-09-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 73,
+    "label": "DSSSB TGT 2018 · Q173"
+   },
+   "en": {
+    "q": "If $\\sec4A=\\csc(A-20^\\circ)$, where $4A$ is an acute angle, then the value of A is:",
+    "options": [
+     "$20^\\circ$",
+     "$21^\\circ$",
+     "$24^\\circ$",
+     "$22^\\circ$"
+    ],
+    "explanation": "$\\sec4A=\\csc(90^\\circ-4A)$, so $90^\\circ-4A=A-20^\\circ$, $5A=110^\\circ$, $A=22^\\circ$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.1 Trigonometric ratios and the unit circle"
+    ],
+    "facts": [
+     "$\\sec\\theta=\\csc(90^\\circ-\\theta)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-074",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 74,
+    "label": "DSSSB TGT 2018 · Q174"
+   },
+   "en": {
+    "q": "The value of $\\sin25^\\circ\\cos65^\\circ+\\cos25^\\circ\\sin65^\\circ$ is:",
+    "options": [
+     "0",
+     "1",
+     "$\\frac12$",
+     "2"
+    ],
+    "explanation": "It is $\\sin(25^\\circ+65^\\circ)=\\sin90^\\circ=1$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "$\\sin A\\cos B+\\cos A\\sin B=\\sin(A+B)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-075",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-09-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 75,
+    "label": "DSSSB TGT 2018 · Q175"
+   },
+   "en": {
+    "q": "The angle of elevation of the top of a building from the foot of a tower is $30^\\circ$ and the angle of elevation of the top of the tower from the foot of the building is $60^\\circ$. If the tower is 50 m high, then the height of the building is:",
+    "options": [
+     "$\\frac{50}3$ m",
+     "$\\frac{49}3$ m",
+     "$\\frac{51}3$ m",
+     "$\\frac{47}3$ m"
+    ],
+    "explanation": "Distance $d=\\frac{50}{\\tan60^\\circ}=\\frac{50}{\\sqrt3}$.\nBuilding $=d\\tan30^\\circ=\\frac{50}{\\sqrt3}\\cdot\\frac1{\\sqrt3}=\\frac{50}3$ m.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "9.6 Heights and distances"
+    ],
+    "facts": [
+     "Same base distance: building $=$ tower $\\times\\frac{\\tan30^\\circ}{\\tan60^\\circ}=\\frac{50}{3}$ m."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-076",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-09-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 76,
+    "label": "DSSSB TGT 2018 · Q176"
+   },
+   "en": {
+    "q": "A 120 cm tall boy spots a balloon moving with the wind in a horizontal line at a height of 8820 cm from the ground. The angle of elevation of the balloon from the eyes of the boy at one instant is $60^\\circ$. After some time, the angle of elevation reduces to $30^\\circ$. Then the distance travelled by the balloon during this interval is:",
+    "options": [
+     "$8700\\sqrt3$ cm",
+     "$2900\\sqrt3$ cm",
+     "$5800\\sqrt3$ cm",
+     "$5700\\sqrt3$ cm"
+    ],
+    "explanation": "Height above the eyes $h=8820-120=8700$ cm.\nDistance $=h(\\cot30^\\circ-\\cot60^\\circ)$ $=8700\\left(\\sqrt3-\\frac1{\\sqrt3}\\right)$ $=\\frac{2\\cdot8700}{\\sqrt3}=5800\\sqrt3$ cm.",
+    "notes": [
+     "That is the horizontal distance at $30^\\circ$.",
+     "That is the horizontal distance at $60^\\circ$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "9.6 Heights and distances"
+    ],
+    "facts": [
+     "Two angles $\\alpha>\\beta$ of a point at height $h$: shift $=h(\\cot\\beta-\\cot\\alpha)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-077",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 77,
+    "label": "DSSSB TGT 2018 · Q177"
+   },
+   "en": {
+    "q": "In a histogram, each class rectangle is constructed with base as:",
+    "options": [
+     "frequency",
+     "class interval",
+     "size of the class",
+     "range"
+    ],
+    "explanation": "In a histogram each rectangle stands on its class interval (base) and its area is proportional to the class frequency.",
+    "notes": [
+     "Frequency gives the height (or area).",
+     "Correct.",
+     "The base has length equal to the class size, but it represents the class interval.",
+     "Range is for the whole data."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Histogram: base = class interval, area $\\propto$ frequency."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-078",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 78,
+    "label": "DSSSB TGT 2018 · Q178"
+   },
+   "en": {
+    "q": "Construction of a cumulative frequency table is useful in determining the:",
+    "options": [
+     "mean",
+     "median",
+     "mode",
+     "all the three given measures"
+    ],
+    "explanation": "The median class is the first class whose cumulative frequency reaches $\\frac N2$, and the formula $l+\\frac{N/2-cf}{f}h$ uses the cumulative frequency.",
+    "notes": [
+     "Mean needs $\\sum fx$.",
+     "Correct.",
+     "Mode uses the frequencies of the modal class and its neighbours.",
+     "Only the median needs it."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "Cumulative frequency (ogive) gives the median and other quartiles."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-079",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 79,
+    "label": "DSSSB TGT 2018 · Q179"
+   },
+   "en": {
+    "q": "In a retail market, fruit vendors were selling apples kept in packing boxes. These boxes contained varying number of apples. The following was the distribution of apples according to the number of boxes.\nNo. of apples: 50–52, 53–55, 56–58, 59–61, 62–64\nNo. of boxes: 15, 110, 135, 115, 25\nThen the mean number of apples kept in a packing box was:",
+    "options": [
+     "59.16",
+     "61.54",
+     "57.19",
+     "52.64"
+    ],
+    "explanation": "Mid-values 51, 54, 57, 60, 63; $N=400$.\n$\\sum fx=765+5940+7695+6900+1575=22875$.\nMean $=\\frac{22875}{400}=57.19$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "Grouped mean: $\\bar x=\\frac{\\sum f_ix_i}{\\sum f_i}$ with class mid-values."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-080",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 80,
+    "label": "DSSSB TGT 2018 · Q180"
+   },
+   "en": {
+    "q": "If the median of the distribution given below is 28.5,\nClass: 0–10, 10–20, 20–30, 30–40, 40–50, 50–60\nFreq.: 5, a, 20, 15, b, 5 (Total 60)\nthen the missing values of a and b are respectively:",
+    "options": [
+     "3, 7",
+     "8, 7",
+     "8, 5",
+     "2, 5"
+    ],
+    "explanation": "Total: $45+a+b=60$, so $a+b=15$.\nMedian class 20–30: $28.5=20+\\frac{30-(5+a)}{20}\\cdot10$, so $25-a=17$, $a=8$, $b=7$.",
+    "notes": [
+     "$a+b=10$, but the total 60 needs $a+b=15$.",
+     "Correct.",
+     "$a+b$ must be 15.",
+     "$a+b$ must be 15."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "Median $=l+\\frac{N/2-cf}{f}\\times h$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-081",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 81,
+    "label": "DSSSB TGT 2018 · Q181"
+   },
+   "en": {
+    "q": "A boy noted the number of taxi passing through a spot on a road for 100 periods each of 3 minutes and summarized it in the table given below.\nNo. of taxi: 0–10, 10–20, 20–30, 30–40, 40–50, 50–60, 60–70, 70–80\nFrequency: 07, 14, 13, 12, 20, 11, 15, 08\nThen the mode is:",
+    "options": [
+     "37.5",
+     "29.8",
+     "32.1",
+     "44.7"
+    ],
+    "explanation": "Modal class 40–50 ($f_1=20$, $f_0=12$, $f_2=11$).\nMode $=40+\\frac{20-12}{40-12-11}\\cdot10=40+\\frac{80}{17}\\approx44.7$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "Mode $=l+\\frac{f_1-f_0}{2f_1-f_0-f_2}\\times h$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-082",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-01",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 82,
+    "label": "DSSSB TGT 2018 · Q182"
+   },
+   "en": {
+    "q": "Three identical dice are rolled. The probability that the same number will appear on each of them is:",
+    "options": [
+     "$\\frac1{18}$",
+     "$\\frac16$",
+     "$\\frac1{36}$",
+     "$\\frac1{12}$"
+    ],
+    "explanation": "6 favourable outcomes $(1,1,1),\\ldots,(6,6,6)$ out of $6^3=216$: $\\frac6{216}=\\frac1{36}$.",
+    "notes": [
+     "",
+     "That is the chance that two dice match.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Probability",
+     "16.1 Basic probability and the addition theorem"
+    ],
+    "facts": [
+     "All $n$ dice show the same number with probability $\\frac{1}{6^{n-1}}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-084",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-16-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 84,
+    "label": "DSSSB TGT 2018 · Q184"
+   },
+   "en": {
+    "q": "Let X be a Poisson random variable such that $2P(X=0)=P(X=2)$. Then the standard deviation of X is:",
+    "options": [
+     "$-\\sqrt2$",
+     "$\\sqrt2$",
+     "4",
+     "2"
+    ],
+    "explanation": "$2e^{-\\lambda}=\\frac{e^{-\\lambda}\\lambda^2}{2}$ gives $\\lambda^2=4$, $\\lambda=2$.\nVariance $=\\lambda=2$, so SD $=\\sqrt2$.",
+    "notes": [
+     "An SD is never negative.",
+     "Correct.",
+     "$\\lambda^2$, not $\\sqrt\\lambda$.",
+     "That is the variance (and mean)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.5 Bernoulli trials and the binomial distribution"
+    ],
+    "facts": [
+     "Poisson: mean $=$ variance $=\\lambda$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-085",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 85,
+    "label": "DSSSB TGT 2018 · Q185"
+   },
+   "en": {
+    "q": "The probability of getting 4 heads in 6 tosses of a fair coin is:",
+    "options": [
+     "$\\frac{15}{32}$",
+     "$\\frac{15}{128}$",
+     "$\\frac{15}{64}$",
+     "$\\frac{30}{32}$"
+    ],
+    "explanation": "$\\binom64\\left(\\frac12\\right)^6=\\frac{15}{64}$.",
+    "notes": [
+     "Divides by $2^5$ instead of $2^6$.",
+     "Divides by $2^7$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.5 Bernoulli trials and the binomial distribution"
+    ],
+    "facts": [
+     "Binomial: $P(X=r)=\\binom nr p^rq^{n-r}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-086",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 86,
+    "label": "DSSSB TGT 2018 · Q186"
+   },
+   "en": {
+    "q": "If two regression coefficients are $-0.1$ and $-0.9$, then correlation coefficient is:",
+    "options": [
+     "0.9",
+     "0.3",
+     "$-0.9$",
+     "$-0.3$"
+    ],
+    "explanation": "$r^2=b_{yx}b_{xy}=0.09$, and $r$ takes the common sign of the regression coefficients: $r=-0.3$.",
+    "notes": [
+     "",
+     "Wrong sign.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "$r=\\pm\\sqrt{b_{yx}b_{xy}}$, with the sign of the regression coefficients."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-087",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 87,
+    "label": "DSSSB TGT 2018 · Q187"
+   },
+   "en": {
+    "q": "The normal equations for finding a curve of the form $y=a+bx+cx^2$ for 'n' data are:",
+    "options": [
+     "$\\sum y=na+b\\sum x+c\\sum x^2$, $\\sum xy=a\\sum x+b\\sum x^2+c\\sum x^3$, $\\sum x^2y=a\\sum x^2+b\\sum x^3+c\\sum x^4$",
+     "$\\sum y=a+b\\sum x+c\\sum x^2$, $\\sum xy=a\\sum x+b\\sum x^2+c\\sum x^3$, $\\sum x^2y=a\\sum x^2+b\\sum x^3+c\\sum x^4$",
+     "$\\sum y=na+b\\sum x+c\\sum x^2$, $\\sum y^2=a\\sum xy+b\\sum x^2+c\\sum x^3$, $\\sum x^2y=a\\sum x^2+b\\sum x^3+c\\sum x^4$",
+     "$\\sum y=na+b\\sum x+c\\sum x^2$, $\\sum xy=a\\sum x+b\\sum x^2+c\\sum x^3$, $\\sum x^2y=a\\sum x^3+b\\sum x^4+c\\sum x^5$"
+    ],
+    "explanation": "Sum the equation $y=a+bx+cx^2$ over the data, then multiply by $x$ and sum, then by $x^2$ and sum. This gives the three equations in (a).",
+    "notes": [
+     "Correct.",
+     "Summing the constant $a$ gives $na$.",
+     "The second equation comes from multiplying by $x$, not $y$.",
+     "Multiplying by $x^2$ gives $a\\sum x^2+b\\sum x^3+c\\sum x^4$."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Normal equations: multiply the model by $1, x, x^2$ and sum over the data."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-088",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-04",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 88,
+    "label": "DSSSB TGT 2018 · Q188"
+   },
+   "en": {
+    "q": "A continuous random variable $x$ has a probability density function $f(x)=\\begin{cases}6x(1-x), & 0<x\\le1\\\\ 0, & \\text{otherwise}\\end{cases}$. Then the variance of $x$ is:",
+    "options": [
+     "$\\frac12$",
+     "$\\frac1{40}$",
+     "$\\frac1{20}$",
+     "$\\frac15$"
+    ],
+    "explanation": "$E(x)=\\int_0^1 6x^2(1-x)dx=\\frac12$.\n$E(x^2)=\\int_0^1 6x^3(1-x)dx$ $=6\\left(\\frac14-\\frac15\\right)=\\frac3{10}$.\nVariance $=\\frac3{10}-\\frac14=\\frac1{20}$.",
+    "notes": [
+     "That is the mean.",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.4 Random variables and probability distributions"
+    ],
+    "facts": [
+     "$\\text{Var}(X)=E(X^2)-[E(X)]^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-tgt-2018-089",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-16-05",
+   "src": {
+    "paper": "dsssb-tgt-2018",
+    "n": 89,
+    "label": "DSSSB TGT 2018 · Q189"
+   },
+   "en": {
+    "q": "If $\\log e^{x}$ is normally distributed with mean 1 and variance 4, then $P(0.5<x<2)$ is: (where the area between $z=0$ and $z=0.25$ is 0.0987 and the area between $z=0$ and $z=0.5$ is 0.1915)",
+    "options": [
+     "0.693",
+     "0.396",
+     "0.95",
+     "0.29"
+    ],
+    "explanation": "As printed the quantity is $\\log e^{x}$, and $\\log e^{x}=x$ (natural log). So $x\\sim N(1,2^2)$.\n$z=\\frac{0.5-1}{2}=-0.25$ and $z=\\frac{2-1}{2}=0.5$.\n$P=0.0987+0.1915=0.2902\\approx0.29$.\n(The areas supplied are exactly those for $z=0.25$ and $0.5$, which confirms this reading. Had $\\log_e x$ been meant, the answer would be about 0.240, not an option.)",
+    "notes": [
+     "That is $\\ln2$.",
+     "",
+     "",
+     "Correct: $\\log e^{x}=x$, so $x$ itself is $N(1,4)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.5 Bernoulli trials and the binomial distribution"
+    ],
+    "facts": [
+     "$P(z_1<Z<z_2)$ across 0 is the sum of the two areas from 0."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}
