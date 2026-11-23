@@ -7,7 +7,8 @@ A paper file is {"paper": {...}, "questions": [...]}:
          0.25 or 0.33), source (where the paper was found), optional note; kind "expected" for a mock
          written for a coming exam (default "past").
   question: id "mq/<paper>-NNN", level, math: true, answer (0-3), key (the board's key, 0-3 or null),
-            topic (a notes page id, tp-CC-SS), src {paper, n, label},
+            topic (a notes page id, tp-CC-SS), src {paper, n, label, from (an expected paper's question
+            asked before: the earlier paper, e.g. "UP TGT 2003")},
             en {q, options[4], explanation, notes[4], path[], facts[]}.
 Formulas are LaTeX between $ signs. Run from the repository root: python tools/build_mq.py
 """
@@ -55,7 +56,7 @@ for f in sorted(MQ.glob('*.json')):
     if p.get('negative') not in (0, 0.25, 0.33):
         bad(f.name, 'negative must be 0, 0.25 or 0.33')
     qs = d.get('questions', [])
-    ns, by_topic, seen = [], {}, set()
+    ns, by_topic, seen, asked = [], {}, set(), 0
     for q in qs:
         where = f'{f.name} {q.get("id")}'
         m = re.fullmatch(rf'mq/{re.escape(pid)}-(\d{{3}})', q.get('id', ''))
@@ -81,17 +82,22 @@ for f in sorted(MQ.glob('*.json')):
         if len(en.get('notes', [])) != 4: bad(where, 'notes must have four entries (empty allowed)')
         for k, v in [('q', en.get('q', ''))] + [(f'option {i + 1}', o) for i, o in enumerate(opts)] + [('solution', en.get('explanation', ''))] + [('fact', x) for x in en.get('facts', [])]:
             if not dollars_ok(v): bad(where, f'odd number of $ in the {k}')
+        if 'from' in src and not (isinstance(src['from'], str) and src['from'].strip()): bad(where, 'src.from must name the earlier paper')
         ns.append(n)
+        asked += 'from' in src
         by_topic.setdefault(q.get('topic'), []).append(n)
     if ns != sorted(ns):
         bad(f.name, 'questions are not in the order of their numbers')
     per_q = (p.get('minutes', 0) * 60) / max(1, len(ns))
     timer = min(TIMERS, key=lambda t: abs(t - per_q))
-    papers.append({
+    entry = {
         'id': pid, 'kind': p.get('kind', 'past'), 'title': p.get('title'), 'exam': p.get('exam'), 'date': p.get('date'), 'level': p.get('level'),
         'minutes': p.get('minutes'), 'negative': p.get('negative', 0), 'timer': timer,
         'ns': ns, 'topics': {k: v for k, v in sorted(by_topic.items())},
-    })
+    }
+    if entry['kind'] == 'expected':
+        entry['asked'] = asked   # questions taken from earlier papers
+    papers.append(entry)
 
 # Order on the practice page: by level, then UP exams before DSSSB, newest first.
 EXAMS = ['UP TGT', 'UP LT Grade', 'UP PGT', 'UP GIC Lecturer', 'DSSSB TGT', 'DSSSB PGT']

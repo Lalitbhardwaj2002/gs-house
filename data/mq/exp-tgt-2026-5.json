@@ -1,0 +1,3463 @@
+{
+ "paper": {
+  "id": "exp-tgt-2026-5",
+  "kind": "expected",
+  "title": "Expected TGT paper 5 · balanced",
+  "exam": "Expected UP TGT",
+  "date": "December 2026",
+  "level": "TGT",
+  "minutes": 100,
+  "negative": 0,
+  "source": "Written by GS HOUSE for the UP TGT Mathematics exam expected in December 2026, in the pattern of the UP TGT paper of 3 June 2026 and the official syllabus: 28 questions asked in earlier papers (16 from UP TGT 2003 and 12 from UP TGT 2001; each solved again, misprints repaired) and 62 new; every question checked by a second mathematician"
+ },
+ "questions": [
+  {
+   "id": "mq/exp-tgt-2026-5-001",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 1,
+    "label": "Expected TGT 5 · Q1 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The value of $\\int \\dfrac{a^{\\sqrt x}}{\\sqrt x}\\,dx$ is:",
+    "options": [
+     "$a^{\\sqrt x}\\log_e a + C$",
+     "$2a^{\\sqrt x}\\log_a e + C$",
+     "$2a^{\\sqrt x}\\log_{10} e + C$",
+     "$2a^{\\sqrt x}\\log_e a + C$"
+    ],
+    "explanation": "Put $\\sqrt x = t$, so $\\frac{dx}{2\\sqrt x} = dt$, i.e. $\\frac{dx}{\\sqrt x} = 2\\,dt$.\nThen $\\int \\frac{a^{\\sqrt x}}{\\sqrt x}dx = 2\\int a^t\\,dt = \\frac{2a^t}{\\log_e a} + C = 2a^{\\sqrt x}\\log_a e + C$, because $\\frac{1}{\\log_e a} = \\log_a e$.",
+    "notes": [
+     "Factor 2 lost, and $\\log_e a$ multiplied where it should divide.",
+     "$\\frac{2a^{\\sqrt x}}{\\log_e a} = 2a^{\\sqrt x}\\log_a e$.",
+     "$\\log_{10} e$ would belong to base 10, not base $a$.",
+     "Multiplies by $\\log_e a$ (as in $\\frac{d}{dx}a^x$) instead of dividing."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "$\\int a^x\\,dx = \\frac{a^x}{\\log_e a} + C = a^x\\log_a e + C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-002",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-11-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 2,
+    "label": "Expected TGT 5 · Q2 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "If one of the lines of the pair $ax^2 + 2hxy + by^2 = 0$ bisects the angle between the positive directions of the axes, then $a, b, h$ satisfy the relation:",
+    "options": [
+     "$a + b = -2h$",
+     "$a - b = 2|h|$",
+     "$(a - b)^2 = 4h^2$",
+     "$a + b = 2|h|$"
+    ],
+    "explanation": "The bisector of the positive axes is $y = x$. A line $y = mx$ belongs to the pair iff $a + 2hm + bm^2 = 0$; with $m = 1$: $a + 2h + b = 0$, i.e. $a + b = -2h$.\nExample: $(y - x)(y + 3x) = -3x^2 + 2xy + y^2$ gives $a = -3$, $h = 1$, $b = 1$ and $a + b = -2 = -2h$.",
+    "notes": [
+     "$y = x$ lies on the pair: $a + 2h + b = 0$.",
+     "Fails for the same example: $a - b = -4$.",
+     "Fails for the same example: $16 \\ne 4$.",
+     "True only when $h \\le 0$; fails for $y = x$, $y = -3x$ ($a = -3, h = 1, b = 1$)."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.2 Pair of straight lines"
+    ],
+    "facts": [
+     "$y = mx$ is one of the lines $ax^2 + 2hxy + by^2 = 0$ iff $bm^2 + 2hm + a = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-003",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-17-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 3,
+    "label": "Expected TGT 5 · Q3 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "A merchant sells a pen for ₹24.00. The trader makes a percentage profit equal to the cost price of the pen. What will be the cost price of the pen?",
+    "options": [
+     "₹18.00",
+     "₹24.00",
+     "₹15.00",
+     "₹20.00"
+    ],
+    "explanation": "Let the cost price be ₹$x$. The profit is $x\\%$ of $x$, i.e. $\\frac{x^2}{100}$.\n$$x + \\frac{x^2}{100} = 24 \\Rightarrow x^2 + 100x - 2400 = 0 \\Rightarrow (x + 120)(x - 20) = 0.$$\nSo $x = 20$ (the negative root is rejected). Check: $20\\%$ of ₹20 is ₹4 and $20 + 4 = 24$.",
+    "notes": [
+     "Profit would be $18\\%$ of ₹18 = ₹3.24, giving ₹21.24.",
+     "₹24 is the selling price itself.",
+     "Profit would be $15\\%$ of ₹15 = ₹2.25, giving ₹17.25.",
+     "Profit $20\\%$ of ₹20 is ₹4, and $20 + 4 = 24$."
+    ],
+    "path": [
+     "Mathematics",
+     "Commercial Mathematics",
+     "17.4 Banking, shares, profit and loss, taxation"
+    ],
+    "facts": [
+     "$SP = CP\\left(1 + \\frac{p}{100}\\right)$; when the profit per cent equals the cost price, solve $x + \\frac{x^2}{100} = SP$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-004",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-09-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 4,
+    "label": "Expected TGT 5 · Q4"
+   },
+   "en": {
+    "q": "A wheel makes 360 revolutions in one minute. Through how many radians does it turn in one second?",
+    "options": [
+     "$6\\pi$",
+     "$12\\pi$",
+     "$720\\pi$",
+     "$24\\pi$"
+    ],
+    "explanation": "360 revolutions per minute is $\\frac{360}{60} = 6$ revolutions per second. One revolution is $2\\pi$ radians, so in one second the wheel turns $6 \\times 2\\pi = 12\\pi$ radians.",
+    "notes": [
+     "$\\pi$ radians per revolution used in place of $2\\pi$.",
+     "$6$ rev/s $\\times\\ 2\\pi$.",
+     "That is the angle turned in one minute.",
+     "Double the correct value."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.1 Trigonometric ratios and the unit circle"
+    ],
+    "facts": [
+     "One revolution $= 360^\\circ = 2\\pi$ radians; $1$ radian $= \\frac{180^\\circ}{\\pi}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-005",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 5,
+    "label": "Expected TGT 5 · Q5"
+   },
+   "en": {
+    "q": "If $A$ is a $3 \\times 4$ matrix and $B$ is a matrix such that both $A^TB$ and $BA^T$ are defined, then the order of $B$ is:",
+    "options": [
+     "$3 \\times 4$",
+     "$4 \\times 3$",
+     "$3 \\times 3$",
+     "$4 \\times 4$"
+    ],
+    "explanation": "$A^T$ is $4 \\times 3$. For $A^TB$ to be defined, $B$ must have 3 rows (the number of columns of $A^T$); for $BA^T$ to be defined, $B$ must have 4 columns (the number of rows of $A^T$). So $B$ is $3 \\times 4$, the same order as $A$.",
+    "notes": [
+     "Correct: 3 rows for $A^TB$ and 4 columns for $BA^T$.",
+     "That is the order of $A^T$; then neither product is defined.",
+     "Makes $A^TB$ defined, but $BA^T$ needs $B$ to have 4 columns.",
+     "Makes $BA^T$ defined, but $A^TB$ needs $B$ to have 3 rows."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "$PQ$ is defined when the number of columns of $P$ equals the number of rows of $Q$; an $m \\times n$ matrix times an $n \\times p$ matrix is $m \\times p$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-006",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 6,
+    "label": "Expected TGT 5 · Q6 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The mean of the following data is 50: class intervals 0–20, 20–40, 40–60, 60–80, 80–100 with frequencies 17, $f_2$, 32, $f_4$, 19 (total 120). Then $f_2$ and $f_4$ will be:",
+    "options": [
+     "28, 24",
+     "20, 24",
+     "22, 28",
+     "18, 14"
+    ],
+    "explanation": "Total: $17 + f_2 + 32 + f_4 + 19 = 120 \\Rightarrow f_2 + f_4 = 52$.\nWith class marks 10, 30, 50, 70, 90: $\\sum fx = 170 + 30f_2 + 1600 + 70f_4 + 1710 = 120 \\times 50 = 6000$, so $3f_2 + 7f_4 = 252$.\nSubstituting $f_2 = 52 - f_4$: $156 + 4f_4 = 252 \\Rightarrow f_4 = 24$, $f_2 = 28$.",
+    "notes": [
+     "Satisfies both $f_2 + f_4 = 52$ and $3f_2 + 7f_4 = 252$.",
+     "Sum is 44, not 52.",
+     "Sum is 50, not 52.",
+     "Sum is 32, not 52."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "Two missing frequencies need two equations: $\\sum f = N$ and $\\sum fx = N\\bar x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-007",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-07-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 7,
+    "label": "Expected TGT 5 · Q7 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "Area bounded by the curve $y = x\\sin x$ and the $x$-axis, where $x = 0$ to $x = 2\\pi$, is:",
+    "options": [
+     "$\\pi$",
+     "$2\\pi$",
+     "$4\\pi$",
+     "$3\\pi$"
+    ],
+    "explanation": "$\\int x\\sin x\\,dx = -x\\cos x + \\sin x$. The curve is above the axis on $(0, \\pi)$ and below it on $(\\pi, 2\\pi)$.\n$\\int_0^{\\pi} x\\sin x\\,dx = \\pi$; $\\int_{\\pi}^{2\\pi} x\\sin x\\,dx = -2\\pi - \\pi = -3\\pi$.\nArea $= \\pi + |-3\\pi| = 4\\pi$.",
+    "notes": [
+     "Only the loop on $[0, \\pi]$.",
+     "Size of the signed integral $\\int_0^{2\\pi} x\\sin x\\,dx = -2\\pi$.",
+     "$\\pi + 3\\pi$.",
+     "Only the loop on $[\\pi, 2\\pi]$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.5 Area under and between curves"
+    ],
+    "facts": [
+     "Area $= \\int |y|\\,dx$: split the interval where the curve crosses the axis."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-008",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-17-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 8,
+    "label": "Expected TGT 5 · Q8"
+   },
+   "en": {
+    "q": "The number of common tangents to two circles which touch each other externally is:",
+    "options": [
+     "2",
+     "4",
+     "3",
+     "1"
+    ],
+    "explanation": "Two direct (external) common tangents, and the two transverse tangents merge into the single common tangent at the point of contact: 3 in all.",
+    "notes": [
+     "Forgets the tangent at the point of contact.",
+     "That is for two circles lying outside each other.",
+     "Two direct tangents and the tangent at the point of contact.",
+     "That is for circles touching internally."
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.6 Euclidean geometry: circles"
+    ],
+    "facts": [
+     "Common tangents of two circles: 4 (apart), 3 (touching externally), 2 (cutting), 1 (touching internally), 0 (one inside the other)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-009",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-07-10",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 9,
+    "label": "Expected TGT 5 · Q9"
+   },
+   "en": {
+    "q": "The volume of a sphere of radius 21 cm is (use $\\pi = \\frac{22}{7}$):",
+    "options": [
+     "38808 cm³",
+     "5544 cm³",
+     "19404 cm³",
+     "1848 cm³"
+    ],
+    "explanation": "$V = \\frac43\\pi r^3 = \\frac43 \\times \\frac{22}{7} \\times 21 \\times 21 \\times 21 = 4 \\times 22 \\times 441 = 38808$ cm³.",
+    "notes": [
+     "$\\frac43\\pi r^3$.",
+     "That is the surface area $4\\pi r^2$ (in cm²).",
+     "That is the volume of a hemisphere.",
+     "$\\frac43\\pi r^2$: radius squared instead of cubed."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.10 Mensuration (TGT)"
+    ],
+    "facts": [
+     "Sphere: $V = \\frac43\\pi r^3$, $S = 4\\pi r^2$; hemisphere: $V = \\frac23\\pi r^3$, total surface $3\\pi r^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-010",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 10,
+    "label": "Expected TGT 5 · Q10"
+   },
+   "en": {
+    "q": "If $\\log_{10} 2 = 0.3010$, then $\\log_{10} 50$ equals:",
+    "options": [
+     "$1.6990$",
+     "$2.3010$",
+     "$1.3010$",
+     "$0.6990$"
+    ],
+    "explanation": "$\\log_{10} 50 = \\log_{10}\\frac{100}{2} = 2 - \\log_{10} 2 = 2 - 0.3010 = 1.6990$.",
+    "notes": [
+     "$2 - 0.3010$.",
+     "That is $\\log_{10} 200$.",
+     "That is $\\log_{10} 20$.",
+     "That is $\\log_{10} 5$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$\\log_{10} 5 = 1 - \\log_{10} 2 = 0.6990$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-011",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 11,
+    "label": "Expected TGT 5 · Q11"
+   },
+   "en": {
+    "q": "The centre $Z(G) = \\{z \\in G : zg = gz \\text{ for all } g \\in G\\}$ of a group $G$ is:",
+    "options": [
+     "not necessarily a subgroup of $G$",
+     "a non-abelian subgroup of $G$",
+     "always equal to $G$",
+     "an abelian subgroup of $G$"
+    ],
+    "explanation": "$e \\in Z(G)$. If $z, w \\in Z(G)$, then $w^{-1}g = gw^{-1}$ for all $g$, so $(zw^{-1})g = z(gw^{-1}) = (gz)w^{-1} = g(zw^{-1})$: $zw^{-1} \\in Z(G)$, and $Z(G)$ is a subgroup. Its elements commute with every element of $G$, in particular with each other, so it is abelian.",
+    "notes": [
+     "The test $zw^{-1} \\in Z(G)$ always passes.",
+     "Its elements commute with all of $G$, hence with each other.",
+     "Only when $G$ is abelian; the centre of $S_3$ is $\\{e\\}$.",
+     "Subgroup test plus commutativity."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.6 Subgroups"
+    ],
+    "facts": [
+     "$Z(G)$ is an abelian (indeed normal) subgroup of $G$; $Z(G) = G$ exactly when $G$ is abelian."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-012",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-16-08",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 12,
+    "label": "Expected TGT 5 · Q12"
+   },
+   "en": {
+    "q": "The general fertility rate (GFR) of a region for a year is the number of live births in that year per 1000 of the:",
+    "options": [
+     "mid-year population",
+     "married couples",
+     "deaths in that year",
+     "women of child-bearing age (15–49 years)"
+    ],
+    "explanation": "GFR $= \\dfrac{\\text{live births in the year}}{\\text{women aged 15–49}} \\times 1000$. The crude birth rate uses the whole mid-year population instead.",
+    "notes": [
+     "That base gives the crude birth rate.",
+     "Not the standard base.",
+     "Not a fertility rate.",
+     "Only women who can bear children are counted."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.8 Vital statistics and index numbers (TGT)"
+    ],
+    "facts": [
+     "Crude birth and death rates use the mid-year population; GFR uses women aged 15–49; IMR uses the live births of the year."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-013",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 13,
+    "label": "Expected TGT 5 · Q13 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The circle $x^2 + y^2 + 4x - 7y + 12 = 0$ intersects the $y$-axis; then the length of the intercepted portion is:",
+    "options": [
+     "$1$",
+     "$4$",
+     "$7$",
+     "$3$"
+    ],
+    "explanation": "Put $x = 0$: $y^2 - 7y + 12 = 0 \\Rightarrow y = 3, 4$. Intercept $= 4 - 3 = 1$. (Formula: $2\\sqrt{f^2 - c} = 2\\sqrt{\\frac{49}{4} - 12} = 1$.)",
+    "notes": [
+     "Meets the $y$-axis at $y = 3$ and $y = 4$.",
+     "4 is one of the $y$-values.",
+     "7 is the sum of the $y$-values.",
+     "3 is one of the $y$-values."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "The $y$-intercept of $x^2 + y^2 + 2gx + 2fy + c = 0$ is $2\\sqrt{f^2 - c}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-014",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 14,
+    "label": "Expected TGT 5 · Q14"
+   },
+   "en": {
+    "q": "The general solution of a differential equation of order $n$ contains:",
+    "options": [
+     "$n - 1$ independent arbitrary constants",
+     "$n + 1$ independent arbitrary constants",
+     "$n$ independent arbitrary constants",
+     "no arbitrary constant"
+    ],
+    "explanation": "Solving an equation of order $n$ needs $n$ integrations, each bringing one constant; so the general solution has $n$ independent arbitrary constants. E.g. $y'' + y = 0$ (order 2) has $y = A\\cos x + B\\sin x$.",
+    "notes": [
+     "One constant too few.",
+     "One constant too many.",
+     "One constant for each order.",
+     "That describes a particular solution."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "Order of the DE = number of independent arbitrary constants in its general solution; a particular solution has none."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-015",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-10-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 15,
+    "label": "Expected TGT 5 · Q15"
+   },
+   "en": {
+    "q": "$\\tanh x$ is equal to:",
+    "options": [
+     "$\\dfrac{e^{2x} - 1}{e^{2x} + 1}$",
+     "$\\dfrac{e^{x} + e^{-x}}{e^{x} - e^{-x}}$",
+     "$\\dfrac{e^{x} - e^{-x}}{2}$",
+     "$\\dfrac{1 - e^{2x}}{1 + e^{2x}}$"
+    ],
+    "explanation": "$\\tanh x = \\dfrac{\\sinh x}{\\cosh x} = \\dfrac{e^x - e^{-x}}{e^x + e^{-x}}$; multiplying numerator and denominator by $e^x$ gives $\\dfrac{e^{2x} - 1}{e^{2x} + 1}$.",
+    "notes": [
+     "$\\frac{\\sinh x}{\\cosh x}$, multiplied through by $e^x$.",
+     "That is $\\coth x$.",
+     "That is $\\sinh x$.",
+     "That is $-\\tanh x$: sign reversed."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.7 Exponential, circular and hyperbolic functions"
+    ],
+    "facts": [
+     "$\\sinh x = \\frac{e^x - e^{-x}}{2}$, $\\cosh x = \\frac{e^x + e^{-x}}{2}$, $\\tanh x = \\frac{\\sinh x}{\\cosh x}$, and $-1 < \\tanh x < 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-016",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-15-09",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 16,
+    "label": "Expected TGT 5 · Q16"
+   },
+   "en": {
+    "q": "A particle is projected with a velocity of 20 m/s at an angle of 15° to the horizontal. Taking $g = 10$ m/s², its horizontal range is:",
+    "options": [
+     "40 m",
+     "10 m",
+     "20 m",
+     "$20\\sqrt3$ m"
+    ],
+    "explanation": "$R = \\dfrac{u^2\\sin 2\\alpha}{g} = \\dfrac{400 \\times \\sin 30^\\circ}{10} = \\dfrac{400 \\times \\frac12}{10} = 20$ m.",
+    "notes": [
+     "$\\frac{u^2}{g}$: the maximum range (at $45^\\circ$).",
+     "Divided by $2g$ instead of $g$.",
+     "$\\frac{400 \\times \\frac12}{10}$.",
+     "$\\sin 60^\\circ$ used, as if $2\\alpha = 60^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Dynamics",
+     "15.9 Projectiles"
+    ],
+    "facts": [
+     "$R = \\frac{u^2\\sin2\\alpha}{g}$: equal for $\\alpha$ and $90^\\circ - \\alpha$, greatest ($\\frac{u^2}{g}$) at $45^\\circ$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-017",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 17,
+    "label": "Expected TGT 5 · Q17"
+   },
+   "en": {
+    "q": "If $[x]$ denotes the greatest integer not exceeding $x$, then $\\lim_{x\\to 2^-} [x]$ is:",
+    "options": [
+     "$0$",
+     "$2$",
+     "does not exist",
+     "$1$"
+    ],
+    "explanation": "For $1 \\le x < 2$, $[x] = 1$, so the left-hand limit at 2 is 1. The right-hand limit is 2, so $\\lim_{x\\to2}[x]$ itself does not exist.",
+    "notes": [
+     "",
+     "That is the right-hand limit (and $[2]$).",
+     "The one-sided limit exists; only the two-sided one fails.",
+     "$[x] = 1$ for $1 \\le x < 2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "At an integer $n$: left limit of $[x]$ is $n - 1$, right limit is $n$ (a jump)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-018",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 18,
+    "label": "Expected TGT 5 · Q18 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The sum of the series $\\log_4 2 - \\log_8 2 + \\log_{16} 2 - \\dots$ is:",
+    "options": [
+     "$1 - \\log_e 2$",
+     "$1 + \\log_e 2$",
+     "$\\log_e 2 - 1$",
+     "$\\log_e 2$"
+    ],
+    "explanation": "$\\log_{2^k} 2 = \\frac1k$, so the series is $\\frac12 - \\frac13 + \\frac14 - \\frac15 + \\dots$.\nSince $\\log_e 2 = 1 - \\frac12 + \\frac13 - \\frac14 + \\dots$, the series equals $1 - \\log_e 2$.",
+    "notes": [
+     "$\\frac12 - \\frac13 + \\frac14 - \\dots = 1 - \\log_e 2 \\approx 0.307$.",
+     "Sign of the log term taken wrongly.",
+     "Negative, but the series is positive (its first term $\\frac12$ exceeds the second).",
+     "That is $1 - \\frac12 + \\frac13 - \\dots$, which starts one term earlier."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.5 Exponential and logarithmic series"
+    ],
+    "facts": [
+     "$\\log_e(1 + x) = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\dots$; at $x = 1$ it gives $\\log_e 2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-019",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-15-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 19,
+    "label": "Expected TGT 5 · Q19 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "$ABC$ is a uniform triangular lamina with centre of gravity $G$. If the portion $GBC$ is removed, the centre of gravity of the remaining portion is at $G'$. Then $GG'$ is equal to:",
+    "options": [
+     "$\\frac16 AG$",
+     "$\\frac13 AG$",
+     "$\\frac14 AG$",
+     "$\\frac15 AG$"
+    ],
+    "explanation": "Let $D$ be the mid-point of $BC$, so $AG = 2GD$. $\\triangle GBC$ has $\\frac13$ of the area; its centre $G_1$ lies on $GD$ with $GG_1 = \\frac23 GD = \\frac13 AG$.\nThe remaining part ($\\frac23$ of the weight) has its centre $G'$ on the other side of $G$, with $\\frac23 W \\cdot GG' = \\frac13 W \\cdot GG_1$.\nSo $GG' = \\frac12 \\cdot \\frac13 AG = \\frac16 AG$.",
+    "notes": [
+     "$GG' = \\frac12 GG_1$ with $GG_1 = \\frac13 AG$.",
+     "That is $GG_1$, the shift of the removed part's centre.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statics",
+     "15.5 Centre of gravity"
+    ],
+    "facts": [
+     "Removing a part: (remaining weight)$\\times GG'$ = (removed weight)$\\times GG_1$, on opposite sides of $G$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-020",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-17-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 20,
+    "label": "Expected TGT 5 · Q20"
+   },
+   "en": {
+    "q": "In how many years will a sum of ₹2,500 amount to ₹3,250 at 6% per annum simple interest?",
+    "options": [
+     "4 years",
+     "6 years",
+     "5 years",
+     "3 years"
+    ],
+    "explanation": "Interest = ₹3,250 − ₹2,500 = ₹750. Interest for one year = 6% of ₹2,500 = ₹150. Time $= \\frac{750}{150} = 5$ years.",
+    "notes": [
+     "Yearly interest taken on the amount (₹195): $750 \\div 195 \\approx 3.8$.",
+     "That is the rate, not the time.",
+     "$\\frac{750}{150} = 5$.",
+     "Yearly interest taken as 10% (₹250)."
+    ],
+    "path": [
+     "Mathematics",
+     "Commercial Mathematics",
+     "17.3 Simple and compound interest"
+    ],
+    "facts": [
+     "$SI = \\frac{PRT}{100}$, so $T = \\frac{100 \\times SI}{PR}$; simple interest is always on the principal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-021",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 21,
+    "label": "Expected TGT 5 · Q21"
+   },
+   "en": {
+    "q": "The sum of a two-digit number and the number obtained by reversing its digits is 121. If the tens digit exceeds the units digit by 3, the number is:",
+    "options": [
+     "47",
+     "83",
+     "74",
+     "65"
+    ],
+    "explanation": "Let the number be $10a + b$. Then $(10a + b) + (10b + a) = 11(a + b) = 121$, so $a + b = 11$; and $a - b = 3$. Hence $a = 7$, $b = 4$: the number is 74.",
+    "notes": [
+     "That is the reversed number (units digit larger).",
+     "Digit sum 11, but the digits differ by 5.",
+     "$a + b = 11$, $a - b = 3$.",
+     "Digit sum 11, but the digits differ by 1."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "A two-digit number with digits $a, b$ is $10a + b$; the number and its reverse add to $11(a + b)$ and differ by $9|a - b|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-022",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 22,
+    "label": "Expected TGT 5 · Q22 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "One root of the equation $\\begin{vmatrix}3x-8&3&3\\\\3&3x-8&3\\\\3&3&3x-8\\end{vmatrix} = 0$ is:",
+    "options": [
+     "$\\frac23$",
+     "$\\frac13$",
+     "$-\\frac23$",
+     "$\\frac83$"
+    ],
+    "explanation": "$C_1 \\to C_1 + C_2 + C_3$ makes every entry of $C_1$ equal to $3x - 2$; take it out.\nThen $R_2 - R_1$, $R_3 - R_1$ leave a triangular determinant: $(3x - 2)(3x - 11)^2 = 0$.\nSo $x = \\frac23$ or $\\frac{11}{3}$; among the options, $\\frac23$.",
+    "notes": [
+     "Roots are $\\frac23, \\frac{11}{3}, \\frac{11}{3}$.",
+     "Not a root.",
+     "Sign slip in $3x - 2 = 0$.",
+     "Makes the diagonal zero, but the determinant is then 54."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "If every row has the same sum, add all columns to the first and take that sum out."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-023",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-15-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 23,
+    "label": "Expected TGT 5 · Q23"
+   },
+   "en": {
+    "q": "Three forces $P$, $Q$, $R$ acting at a point are in equilibrium, and $\\alpha$, $\\beta$, $\\gamma$ are the angles between $Q$ and $R$, $R$ and $P$, $P$ and $Q$ respectively. By Lami's theorem:",
+    "options": [
+     "$\\frac{P}{\\cos\\alpha} = \\frac{Q}{\\cos\\beta} = \\frac{R}{\\cos\\gamma}$",
+     "$\\frac{P}{\\sin\\gamma} = \\frac{Q}{\\sin\\alpha} = \\frac{R}{\\sin\\beta}$",
+     "$P\\sin\\alpha = Q\\sin\\beta = R\\sin\\gamma$",
+     "$\\frac{P}{\\sin\\alpha} = \\frac{Q}{\\sin\\beta} = \\frac{R}{\\sin\\gamma}$"
+    ],
+    "explanation": "Lami's theorem: if three concurrent forces are in equilibrium, each is proportional to the sine of the angle between the other two: $\\frac{P}{\\sin\\alpha} = \\frac{Q}{\\sin\\beta} = \\frac{R}{\\sin\\gamma}$.",
+    "notes": [
+     "Cosine in place of sine.",
+     "Angles paired with the wrong forces.",
+     "Product in place of ratio.",
+     "Each force is proportional to the sine of the angle between the other two."
+    ],
+    "path": [
+     "Mathematics",
+     "Statics",
+     "15.2 Three forces in equilibrium: Lami's theorem"
+    ],
+    "facts": [
+     "Lami: $\\frac{P}{\\sin(\\widehat{Q,R})} = \\frac{Q}{\\sin(\\widehat{R,P})} = \\frac{R}{\\sin(\\widehat{P,Q})}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-024",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 24,
+    "label": "Expected TGT 5 · Q24"
+   },
+   "en": {
+    "q": "If $x = \\dfrac{\\sqrt3 + 1}{\\sqrt3 - 1}$, then $x + \\dfrac1x$ equals:",
+    "options": [
+     "$2 + \\sqrt3$",
+     "$2$",
+     "$2\\sqrt3$",
+     "$4$"
+    ],
+    "explanation": "Rationalise: $x = \\dfrac{(\\sqrt3 + 1)^2}{3 - 1} = \\dfrac{4 + 2\\sqrt3}{2} = 2 + \\sqrt3$, and $\\dfrac1x = \\dfrac{\\sqrt3 - 1}{\\sqrt3 + 1} = 2 - \\sqrt3$.\nSo $x + \\frac1x = 4$.",
+    "notes": [
+     "That is $x$ alone.",
+     "",
+     "That is $x - \\frac1x$.",
+     "$(2 + \\sqrt3) + (2 - \\sqrt3)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$(2 + \\sqrt3)(2 - \\sqrt3) = 1$: these two are reciprocals."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-025",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 25,
+    "label": "Expected TGT 5 · Q25"
+   },
+   "en": {
+    "q": "The sum to infinity of the geometric series $a + ar + ar^2 + \\dots$, where $|r| < 1$, is:",
+    "options": [
+     "$\\dfrac{a}{r - 1}$",
+     "$\\dfrac{a(1 - r^n)}{1 - r}$",
+     "$\\dfrac{a}{1 + r}$",
+     "$\\dfrac{a}{1 - r}$"
+    ],
+    "explanation": "$S_n = \\frac{a(1 - r^n)}{1 - r}$. For $|r| < 1$, $r^n \\to 0$ as $n \\to \\infty$, so $S_\\infty = \\frac{a}{1 - r}$.",
+    "notes": [
+     "Sign of the denominator reversed.",
+     "That is the sum of the first $n$ terms.",
+     "That is the sum of $a - ar + ar^2 - \\dots$ (ratio $-r$).",
+     "$S_n \\to \\frac{a}{1 - r}$ because $r^n \\to 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$S_\\infty = \\frac{a}{1 - r}$ exists only for $|r| < 1$; e.g. $1 + \\frac12 + \\frac14 + \\dots = 2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-026",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-17-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 26,
+    "label": "Expected TGT 5 · Q26"
+   },
+   "en": {
+    "q": "In $\\triangle ABC$, the bisector of $\\angle A$ meets $BC$ at $D$. Then $BD : DC$ equals:",
+    "options": [
+     "$AC : AB$",
+     "$AB : AC$",
+     "$AB^2 : AC^2$",
+     "$1 : 1$"
+    ],
+    "explanation": "Angle-bisector theorem: $\\frac{BD}{DC} = \\frac{AB}{AC}$. Reason: triangles $ABD$ and $ADC$ have the same height from $A$, so their areas are as $BD : DC$; their areas are also $\\frac12 AB \\cdot AD\\sin\\frac A2 : \\frac12 AC \\cdot AD\\sin\\frac A2 = AB : AC$.",
+    "notes": [
+     "Ratio inverted.",
+     "The sides containing the angle.",
+     "Squares belong to other results (areas of similar triangles).",
+     "Only when $AB = AC$."
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.5 Euclidean geometry: triangles"
+    ],
+    "facts": [
+     "Internal bisector of $\\angle A$: $BD : DC = AB : AC = c : b$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-027",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 27,
+    "label": "Expected TGT 5 · Q27"
+   },
+   "en": {
+    "q": "A set $N \\subseteq \\mathbb R$ is called a neighbourhood of a point $x \\in \\mathbb R$ if:",
+    "options": [
+     "$N$ contains the point $x$",
+     "$N$ is a closed interval with $x$ as an end point",
+     "$N = \\{x\\}$",
+     "$N$ contains an open interval containing $x$"
+    ],
+    "explanation": "By definition $N$ is a neighbourhood of $x$ if $(x - \\varepsilon, x + \\varepsilon) \\subseteq N$ for some $\\varepsilon > 0$, i.e. $N$ contains an open interval containing $x$. Example: $[0, 2]$ is a neighbourhood of 1 but not of 0.",
+    "notes": [
+     "$[0, 1]$ contains 0 but is not a neighbourhood of 0.",
+     "No open interval about an end point lies inside it.",
+     "A single point contains no open interval.",
+     "$(x - \\varepsilon, x + \\varepsilon) \\subseteq N$ for some $\\varepsilon > 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "A set is open exactly when it is a neighbourhood of each of its points."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-028",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 28,
+    "label": "Expected TGT 5 · Q28"
+   },
+   "en": {
+    "q": "The diagonals of a parallelogram are $3\\hat i + \\hat j - 2\\hat k$ and $\\hat i - 3\\hat j + 4\\hat k$. The area of the parallelogram is:",
+    "options": [
+     "$10\\sqrt3$",
+     "$5\\sqrt3$",
+     "$20\\sqrt3$",
+     "$\\sqrt{91}$"
+    ],
+    "explanation": "With diagonals $\\vec d_1, \\vec d_2$ the area is $\\frac12|\\vec d_1 \\times \\vec d_2|$.\n$\\vec d_1 \\times \\vec d_2 = \\begin{vmatrix}\\hat i&\\hat j&\\hat k\\\\3&1&-2\\\\1&-3&4\\end{vmatrix} = -2\\hat i - 14\\hat j - 10\\hat k$, of magnitude $\\sqrt{4 + 196 + 100} = 10\\sqrt3$.\nArea $= \\frac12 \\times 10\\sqrt3 = 5\\sqrt3$ square units.",
+    "notes": [
+     "$|\\vec d_1 \\times \\vec d_2|$: that formula is for adjacent sides, not diagonals.",
+     "$\\frac12|\\vec d_1 \\times \\vec d_2|$.",
+     "Doubled instead of halved.",
+     "$\\frac12|\\vec d_1||\\vec d_2|$: the sine of the angle is missing."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "Parallelogram: area $|\\vec a \\times \\vec b|$ for adjacent sides, $\\frac12|\\vec d_1 \\times \\vec d_2|$ for diagonals."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-029",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-17-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 29,
+    "label": "Expected TGT 5 · Q29"
+   },
+   "en": {
+    "q": "A can do a piece of work in 12 days and B can do it in 18 days. They work together for 4 days, after which A leaves. In how many more days will B finish the remaining work?",
+    "options": [
+     "8 days",
+     "10 days",
+     "6 days",
+     "14 days"
+    ],
+    "explanation": "In one day A and B together do $\\frac{1}{12} + \\frac{1}{18} = \\frac{5}{36}$ of the work. In 4 days: $\\frac{20}{36} = \\frac59$.\nLeft: $\\frac49$. B alone needs $\\frac49 \\times 18 = 8$ days.",
+    "notes": [
+     "Remaining $\\frac49$ of the work at B's rate $\\frac{1}{18}$ per day.",
+     "$\\frac59 \\times 18$: the part already done, not the part left.",
+     "Remaining work taken as $\\frac13$ instead of $\\frac49$.",
+     "$18 - 4$: days subtracted instead of work."
+    ],
+    "path": [
+     "Mathematics",
+     "Commercial Mathematics",
+     "17.1 Work and time"
+    ],
+    "facts": [
+     "Work done = time × (sum of the daily rates); a rate is the reciprocal of the time for the whole work."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-030",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 30,
+    "label": "Expected TGT 5 · Q30"
+   },
+   "en": {
+    "q": "The value of $\\begin{vmatrix}1&1&1\\\\1&1+x&1\\\\1&1&1+y\\end{vmatrix}$ is:",
+    "options": [
+     "$x + y$",
+     "$1 + x + y$",
+     "$xy$",
+     "$0$"
+    ],
+    "explanation": "$R_2 \\to R_2 - R_1$ and $R_3 \\to R_3 - R_1$ give $\\begin{vmatrix}1&1&1\\\\0&x&0\\\\0&0&y\\end{vmatrix}$, an upper triangular determinant, so its value is $1 \\cdot x \\cdot y = xy$.",
+    "notes": [
+     "Diagonal entries added instead of multiplied.",
+     "Adds the 1 of the first row as well.",
+     "Product of the diagonal after $R_2 - R_1$, $R_3 - R_1$.",
+     "Not zero unless $x = 0$ or $y = 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "Subtracting one row from another leaves a determinant unchanged; a triangular determinant is the product of its diagonal entries."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-031",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 31,
+    "label": "Expected TGT 5 · Q31"
+   },
+   "en": {
+    "q": "The general second-degree equation $ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0$ represents a pair of straight lines if:",
+    "options": [
+     "$h^2 = ab$",
+     "$a + b = 0$",
+     "$abc + 2fgh - af^2 - bg^2 - ch^2 \\ne 0$",
+     "$abc + 2fgh - af^2 - bg^2 - ch^2 = 0$"
+    ],
+    "explanation": "The equation splits into two linear factors exactly when $\\Delta = \\begin{vmatrix}a&h&g\\\\h&b&f\\\\g&f&c\\end{vmatrix} = abc + 2fgh - af^2 - bg^2 - ch^2 = 0$. If $\\Delta \\ne 0$ it is a proper conic (a parabola when $h^2 = ab$).",
+    "notes": [
+     "With $\\Delta \\ne 0$ that is the condition for a parabola.",
+     "That makes the two lines perpendicular when $\\Delta = 0$; it is not the condition itself.",
+     "$\\Delta \\ne 0$ means a proper (non-degenerate) conic.",
+     "$\\Delta = 0$: the conic degenerates into two lines."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.3 General equation of the second degree"
+    ],
+    "facts": [
+     "$\\Delta = abc + 2fgh - af^2 - bg^2 - ch^2$: $\\Delta = 0$ pair of lines; $\\Delta \\ne 0$ with $h^2 = ab$, $h^2 < ab$, $h^2 > ab$: parabola, ellipse, hyperbola."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-032",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 32,
+    "label": "Expected TGT 5 · Q32"
+   },
+   "en": {
+    "q": "$\\lim_{x\\to0} \\dfrac{3^x - 2^x}{x}$ is equal to:",
+    "options": [
+     "$\\log_e 6$",
+     "$1$",
+     "$\\dfrac32$",
+     "$\\log_e\\dfrac32$"
+    ],
+    "explanation": "Write $3^x - 2^x = (3^x - 1) - (2^x - 1)$. Since $\\lim_{x\\to0}\\frac{a^x - 1}{x} = \\log_e a$, the limit is $\\log_e 3 - \\log_e 2 = \\log_e\\frac32$. (Check by L'Hospital's rule: $3^x\\log_e 3 - 2^x\\log_e 2 \\to \\log_e 3 - \\log_e 2$.)",
+    "notes": [
+     "The two logarithms added instead of subtracted.",
+     "Subtracts the bases, $3 - 2$; the bases enter only through their logarithms.",
+     "The ratio of the bases without the logarithm.",
+     "Correct: $\\log_e 3 - \\log_e 2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "$\\lim_{x\\to0}\\frac{a^x - 1}{x} = \\log_e a$ ($a > 0$); for $a = e$ it is 1."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-033",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 33,
+    "label": "Expected TGT 5 · Q33"
+   },
+   "en": {
+    "q": "A sequence $\\langle a_n\\rangle$ of real numbers is said to converge to $l$ if:",
+    "options": [
+     "for every $\\varepsilon > 0$ there is $m \\in \\mathbb N$ with $|a_n - l| < \\varepsilon$ for all $n \\ge m$",
+     "$|a_n - l| < \\varepsilon$ for some $\\varepsilon > 0$ and all $n$",
+     "$a_n = l$ for infinitely many $n$",
+     "$|a_n - l|$ decreases as $n$ increases"
+    ],
+    "explanation": "By definition $a_n \\to l$ if, however small $\\varepsilon > 0$ is, all the terms from some stage on lie in $(l - \\varepsilon, l + \\varepsilon)$. E.g. $\\frac1n \\to 0$: given $\\varepsilon$, take $m > \\frac1\\varepsilon$.",
+    "notes": [
+     "From some stage on, the terms stay within every $\\varepsilon$ of $l$.",
+     "One fixed $\\varepsilon$ only makes the sequence bounded.",
+     "$(-1)^n$ equals 1 infinitely often but does not converge.",
+     "$|a_n - l|$ may decrease to a positive number."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "A convergent sequence has exactly one limit and is bounded."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-034",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 34,
+    "label": "Expected TGT 5 · Q34"
+   },
+   "en": {
+    "q": "If $\\sin A = \\frac35$ and $\\cos B = \\frac{5}{13}$, where $A$ and $B$ are acute angles, then $\\sin(A + B)$ equals:",
+    "options": [
+     "$\\frac{16}{65}$",
+     "$\\frac{56}{65}$",
+     "$\\frac{33}{65}$",
+     "$\\frac{63}{65}$"
+    ],
+    "explanation": "$\\cos A = \\frac45$, $\\sin B = \\frac{12}{13}$ (acute angles).\n$\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B = \\frac35 \\cdot \\frac{5}{13} + \\frac45 \\cdot \\frac{12}{13} = \\frac{63}{65}$.",
+    "notes": [
+     "That is $|\\cos(A + B)|$.",
+     "That is $\\cos(A - B)$.",
+     "That is $\\sin(B - A)$.",
+     "$\\frac{15 + 48}{65}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "$\\sin(A \\pm B) = \\sin A\\cos B \\pm \\cos A\\sin B$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-035",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 35,
+    "label": "Expected TGT 5 · Q35"
+   },
+   "en": {
+    "q": "A square matrix $A$ is called orthogonal if:",
+    "options": [
+     "$A^T = A$",
+     "$AA^T = I$",
+     "$A^2 = I$",
+     "$A^T = -A$"
+    ],
+    "explanation": "$A$ is orthogonal when $AA^T = A^TA = I$, i.e. $A^{-1} = A^T$; for example $\\begin{bmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{bmatrix}$. Taking determinants, $|A|^2 = 1$, so $|A| = \\pm1$.",
+    "notes": [
+     "Symmetric.",
+     "$A^{-1} = A^T$.",
+     "Involutory.",
+     "Skew-symmetric."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "Orthogonal: $AA^T = I$ and $|A| = \\pm1$; symmetric: $A^T = A$; skew-symmetric: $A^T = -A$; involutory: $A^2 = I$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-036",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-09-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 36,
+    "label": "Expected TGT 5 · Q36 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "Two straight roads intersect at an angle of 60°. A bus on one road is 2 km away from the intersection and a car on the other road is 3 km away from the intersection. Then the direct distance between the two vehicles is:",
+    "options": [
+     "4 km",
+     "$\\sqrt2$ km",
+     "1 km",
+     "$\\sqrt7$ km"
+    ],
+    "explanation": "The bus, the car and the crossing form a triangle with sides 2 km and 3 km enclosing $60^\\circ$.\n$d^2 = 2^2 + 3^2 - 2 \\cdot 2 \\cdot 3 \\cos 60^\\circ = 13 - 6 = 7$, so $d = \\sqrt7$ km.",
+    "notes": [
+     "Too long: with $\\cos 60^\\circ$ the third side is $\\sqrt7 \\approx 2.65$ km.",
+     "Not given by any rule here.",
+     "Just $3 - 2$, as if on one line.",
+     "Cosine rule with the included angle $60^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.5 Properties and solution of triangles"
+    ],
+    "facts": [
+     "Cosine rule: $c^2 = a^2 + b^2 - 2ab\\cos C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-037",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 37,
+    "label": "Expected TGT 5 · Q37"
+   },
+   "en": {
+    "q": "A homogeneous differential equation $\\dfrac{dy}{dx} = f\\left(\\dfrac yx\\right)$ is reduced to a separable equation by the substitution:",
+    "options": [
+     "$y = x + v$",
+     "$y = vx$",
+     "$xy = v$",
+     "$y = e^{v}$"
+    ],
+    "explanation": "Put $y = vx$: then $\\frac{dy}{dx} = v + x\\frac{dv}{dx}$, and the equation becomes $v + x\\frac{dv}{dx} = f(v)$, i.e. $\\frac{dv}{f(v) - v} = \\frac{dx}{x}$, which is separable.",
+    "notes": [
+     "Suits equations in $y - x$, not in $\\frac yx$.",
+     "$\\frac{dy}{dx} = v + x\\frac{dv}{dx}$ separates.",
+     "Suits equations in $xy$.",
+     "Does not remove the ratio $\\frac yx$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Homogeneous $\\frac{dy}{dx} = f\\left(\\frac yx\\right)$: put $y = vx$; for $\\frac{dy}{dx} = f(ax + by + c)$ put $v = ax + by + c$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-038",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 38,
+    "label": "Expected TGT 5 · Q38 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The magnitudes of the vectors $\\vec a, \\vec b, \\vec c$ are 3, 4, 5 respectively. If the vectors $\\vec a, \\vec b, \\vec c$ are respectively perpendicular to the vectors $\\vec b + \\vec c$, $\\vec c + \\vec a$, $\\vec a + \\vec b$, then the magnitude of $\\vec a + \\vec b + \\vec c$ will be:",
+    "options": [
+     "$5\\sqrt2$",
+     "$0$",
+     "$7$",
+     "$6\\sqrt2$"
+    ],
+    "explanation": "Adding $\\vec a\\cdot(\\vec b + \\vec c) = 0$, $\\vec b\\cdot(\\vec c + \\vec a) = 0$, $\\vec c\\cdot(\\vec a + \\vec b) = 0$ gives $2(\\vec a\\cdot\\vec b + \\vec b\\cdot\\vec c + \\vec c\\cdot\\vec a) = 0$.\n$|\\vec a + \\vec b + \\vec c|^2 = 9 + 16 + 25 + 0 = 50$, so the magnitude is $5\\sqrt2$.",
+    "notes": [
+     "$\\sqrt{9 + 16 + 25}$.",
+     "Would need $\\vec a + \\vec b + \\vec c = \\vec 0$.",
+     "",
+     "$\\sqrt{72}$: not from these data."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$|\\vec a + \\vec b + \\vec c|^2 = |\\vec a|^2 + |\\vec b|^2 + |\\vec c|^2 + 2(\\vec a\\cdot\\vec b + \\vec b\\cdot\\vec c + \\vec c\\cdot\\vec a)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-039",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-08",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 39,
+    "label": "Expected TGT 5 · Q39"
+   },
+   "en": {
+    "q": "For the conic $\\dfrac{l}{r} = 1 + e\\cos\\theta$ (focus at the pole), the length of the latus rectum is:",
+    "options": [
+     "$l$",
+     "$2l$",
+     "$\\dfrac{l}{e}$",
+     "$\\dfrac{2l}{e}$"
+    ],
+    "explanation": "The latus rectum is the focal chord perpendicular to the axis, along $\\theta = \\pm\\frac\\pi2$. There $\\cos\\theta = 0$, so $r = l$ on each side: the length is $2l$ ($l$ is the semi-latus rectum).",
+    "notes": [
+     "That is the semi-latus rectum.",
+     "$r = l$ at $\\theta = \\pm\\frac\\pi2$.",
+     "That is the distance from the focus to the directrix.",
+     "Twice the focus–directrix distance."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.8 Polar equation of a conic; common tangents (PGT)"
+    ],
+    "facts": [
+     "In $\\frac lr = 1 + e\\cos\\theta$: semi-latus rectum $l$, distance from focus to directrix $\\frac le$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-040",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 40,
+    "label": "Expected TGT 5 · Q40"
+   },
+   "en": {
+    "q": "If $n(A) = 3$ and $n(B) = 2$, then the number of relations from $A$ to $B$ is:",
+    "options": [
+     "6",
+     "32",
+     "64",
+     "9"
+    ],
+    "explanation": "A relation from $A$ to $B$ is any subset of $A \\times B$, which has $3 \\times 2 = 6$ elements. The number of subsets is $2^6 = 64$.",
+    "notes": [
+     "That is $n(A \\times B)$.",
+     "$2^5$: one element of $A \\times B$ missed.",
+     "$2^{n(A)\\,n(B)} = 2^6$.",
+     "$3^2$ counts the functions from $B$ to $A$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Relations from $A$ to $B$: $2^{mn}$; functions from $A$ to $B$: $n^m$ (with $m = n(A)$, $n = n(B)$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-041",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 41,
+    "label": "Expected TGT 5 · Q41 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The number of points at which the function $f(x) = |x - 0.5| + |x - 1| + \\tan x$ does not have derivative in the interval $[0, 2]$ is:",
+    "options": [
+     "$2$",
+     "$3$",
+     "$1$",
+     "$4$"
+    ],
+    "explanation": "$|x - 0.5|$ has a corner at $x = 0.5$ and $|x - 1|$ a corner at $x = 1$; there the one-sided derivatives differ by 2.\n$\\tan x$ is not defined at $x = \\frac{\\pi}{2} \\approx 1.571 \\in [0, 2]$, so $f$ has no derivative there either.\nElsewhere all terms are differentiable. Total: 3 points.",
+    "notes": [
+     "Counts the two corners but forgets that $\\tan x$ is undefined at $\\frac{\\pi}{2} \\approx 1.57$.",
+     "$x = \\frac12$, $x = 1$ and $x = \\frac{\\pi}{2}$.",
+     "Counts only one corner.",
+     "No fourth point: $\\tan x$ is smooth elsewhere in $[0, 2]$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "$|x - a|$ has a corner at $x = a$; a function has no derivative where it is not even defined."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-042",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 42,
+    "label": "Expected TGT 5 · Q42 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "If $\\omega$ is an imaginary cube root of unity, then the value of $(1 + \\omega + \\omega^2)(1 - \\omega + \\omega^2)$ is:",
+    "options": [
+     "$1$",
+     "$0$",
+     "$2$",
+     "$4$"
+    ],
+    "explanation": "For an imaginary cube root of unity $1 + \\omega + \\omega^2 = 0$, so the product is $0 \\times (1 - \\omega + \\omega^2) = 0$. (The second factor is $-2\\omega$, which is not zero.)",
+    "notes": [
+     "$\\omega^3 = 1$ does not make the product 1.",
+     "The first factor is 0.",
+     "",
+     "That is $(1 - \\omega + \\omega^2)(1 + \\omega - \\omega^2) = (-2\\omega)(-2\\omega^2)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "$1 + \\omega + \\omega^2 = 0$ and $\\omega^3 = 1$; hence $1 - \\omega + \\omega^2 = -2\\omega$ and $1 + \\omega - \\omega^2 = -2\\omega^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-043",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 43,
+    "label": "Expected TGT 5 · Q43"
+   },
+   "en": {
+    "q": "$\\sin C + \\sin D$ is equal to:",
+    "options": [
+     "$2\\cos\\dfrac{C + D}{2}\\sin\\dfrac{C - D}{2}$",
+     "$2\\cos\\dfrac{C + D}{2}\\cos\\dfrac{C - D}{2}$",
+     "$2\\sin\\dfrac{C + D}{2}\\cos\\dfrac{C - D}{2}$",
+     "$-2\\sin\\dfrac{C + D}{2}\\sin\\dfrac{C - D}{2}$"
+    ],
+    "explanation": "Put $C = A + B$, $D = A - B$ in $\\sin(A + B) + \\sin(A - B) = 2\\sin A\\cos B$. Then $A = \\frac{C + D}{2}$ and $B = \\frac{C - D}{2}$, so $\\sin C + \\sin D = 2\\sin\\frac{C + D}{2}\\cos\\frac{C - D}{2}$.",
+    "notes": [
+     "That is $\\sin C - \\sin D$.",
+     "That is $\\cos C + \\cos D$.",
+     "From $\\sin(A + B) + \\sin(A - B) = 2\\sin A\\cos B$.",
+     "That is $\\cos C - \\cos D$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "The four $C$–$D$ formulas come from adding and subtracting the compound-angle formulas."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-044",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 44,
+    "label": "Expected TGT 5 · Q44 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "If $\\sin y = x\\sin(a + y)$, then $\\dfrac{dy}{dx}$ is equal to:",
+    "options": [
+     "$\\dfrac{\\sin(a + y)}{\\sin a}$",
+     "$\\dfrac{\\sin^2(a + y)}{\\sin a}$",
+     "$\\sin(a + y)$",
+     "$\\sin^2(a + y)$"
+    ],
+    "explanation": "Make $x$ the subject: $x = \\dfrac{\\sin y}{\\sin(a + y)}$. Differentiate with respect to $y$ (quotient rule):\n$$\\frac{dx}{dy} = \\frac{\\cos y\\sin(a + y) - \\sin y\\cos(a + y)}{\\sin^2(a + y)} = \\frac{\\sin\\big((a + y) - y\\big)}{\\sin^2(a + y)} = \\frac{\\sin a}{\\sin^2(a + y)}.$$\nHence $\\dfrac{dy}{dx} = \\dfrac{1}{dx/dy} = \\dfrac{\\sin^2(a + y)}{\\sin a}$.",
+    "notes": [
+     "The square in the numerator is lost.",
+     "Reciprocal of $\\frac{dx}{dy} = \\frac{\\sin a}{\\sin^2(a + y)}$.",
+     "Neither the square nor the factor $\\frac{1}{\\sin a}$.",
+     "The factor $\\frac{1}{\\sin a}$ is dropped."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "If $x$ is easy to isolate, find $\\frac{dx}{dy}$ and invert: $\\frac{dy}{dx} = 1\\big/\\frac{dx}{dy}$; the numerator collapses by $\\sin(A - B) = \\sin A\\cos B - \\cos A\\sin B$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-045",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-13-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 45,
+    "label": "Expected TGT 5 · Q45"
+   },
+   "en": {
+    "q": "The equation of the tangent plane at the point $(x_1, y_1, z_1)$ of the sphere $x^2 + y^2 + z^2 = a^2$ is:",
+    "options": [
+     "$x + y + z = a^2$",
+     "$xx_1 + yy_1 + zz_1 = 0$",
+     "$xx_1 + yy_1 + zz_1 = a^2$",
+     "$(x - x_1)^2 + (y - y_1)^2 + (z - z_1)^2 = a^2$"
+    ],
+    "explanation": "The radius to $(x_1, y_1, z_1)$ has direction ratios $x_1, y_1, z_1$ and is normal to the tangent plane: $x_1(x - x_1) + y_1(y - y_1) + z_1(z - z_1) = 0$, i.e. $xx_1 + yy_1 + zz_1 = x_1^2 + y_1^2 + z_1^2 = a^2$.",
+    "notes": [
+     "Does not depend on the point of contact.",
+     "The parallel plane through the centre.",
+     "The radius is normal to the tangent plane.",
+     "A sphere of radius $a$ centred at the point, not a plane."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "13.3 The Sphere"
+    ],
+    "facts": [
+     "Tangent plane to $x^2 + y^2 + z^2 = a^2$ at $(x_1, y_1, z_1)$: $xx_1 + yy_1 + zz_1 = a^2$ (as for the tangent to a circle)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-046",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 46,
+    "label": "Expected TGT 5 · Q46"
+   },
+   "en": {
+    "q": "If the position vector of $A$ is $\\hat i + 2\\hat j - \\hat k$ and $\\overrightarrow{AB} = 2\\hat i - \\hat j + 3\\hat k$, then the position vector of $B$ is:",
+    "options": [
+     "$\\hat i - 3\\hat j + 4\\hat k$",
+     "$-\\hat i + 3\\hat j - 4\\hat k$",
+     "$\\frac32\\hat i + \\frac12\\hat j + \\hat k$",
+     "$3\\hat i + \\hat j + 2\\hat k$"
+    ],
+    "explanation": "$\\overrightarrow{AB} = \\vec b - \\vec a$, so $\\vec b = \\vec a + \\overrightarrow{AB} = (1 + 2)\\hat i + (2 - 1)\\hat j + (-1 + 3)\\hat k = 3\\hat i + \\hat j + 2\\hat k$.",
+    "notes": [
+     "$\\overrightarrow{AB} - \\vec a$.",
+     "$\\vec a - \\overrightarrow{AB}$.",
+     "Halved, as if a mid-point were wanted.",
+     "$\\vec b = \\vec a + \\overrightarrow{AB}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "$\\overrightarrow{AB} = \\vec b - \\vec a$: position vector of the head minus that of the tail."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-047",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 47,
+    "label": "Expected TGT 5 · Q47"
+   },
+   "en": {
+    "q": "The sum of all the binomial coefficients ${}^nC_0 + {}^nC_1 + {}^nC_2 + \\dots + {}^nC_n$ is:",
+    "options": [
+     "$2^{n-1}$",
+     "$2^n$",
+     "$n^2$",
+     "$2^n - 1$"
+    ],
+    "explanation": "Put $x = 1$ in $(1 + x)^n = {}^nC_0 + {}^nC_1x + \\dots + {}^nC_nx^n$: the sum is $(1 + 1)^n = 2^n$.",
+    "notes": [
+     "That is the sum of the odd-place (or of the even-place) coefficients.",
+     "$(1 + 1)^n$.",
+     "Grows too slowly: for $n = 3$ the sum is $1 + 3 + 3 + 1 = 8$, not 9.",
+     "Leaves out ${}^nC_0 = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "$\\sum_r {}^nC_r = 2^n$; ${}^nC_0 + {}^nC_2 + \\dots = {}^nC_1 + {}^nC_3 + \\dots = 2^{n-1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-048",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-10-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 48,
+    "label": "Expected TGT 5 · Q48"
+   },
+   "en": {
+    "q": "The multiplicative inverse of the complex number $3 + 4i$ is:",
+    "options": [
+     "$\\dfrac{3 + 4i}{25}$",
+     "$3 - 4i$",
+     "$\\dfrac{3 - 4i}{25}$",
+     "$\\dfrac{-3 + 4i}{25}$"
+    ],
+    "explanation": "For $z \\ne 0$, $z^{-1} = \\dfrac{\\bar z}{|z|^2}$, because $z\\bar z = |z|^2$. Here $\\bar z = 3 - 4i$ and $|z|^2 = 9 + 16 = 25$, so $(3 + 4i)^{-1} = \\dfrac{3 - 4i}{25}$. Check: $(3 + 4i)(3 - 4i) = 25$.",
+    "notes": [
+     "$\\frac{z}{|z|^2}$: the conjugate is missing; its product with $3 + 4i$ is $\\frac{-7 + 24i}{25}$, not 1.",
+     "Only the conjugate: $(3 + 4i)(3 - 4i) = 25$, so it must still be divided by 25.",
+     "Correct: $\\frac{\\bar z}{|z|^2}$.",
+     "Sign of the real part wrong: $(3 + 4i)\\cdot\\frac{-3 + 4i}{25} = -1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.1 Complex numbers: basic definitions"
+    ],
+    "facts": [
+     "$(a + ib)^{-1} = \\dfrac{a - ib}{a^2 + b^2}$ for $a + ib \\ne 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-049",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 49,
+    "label": "Expected TGT 5 · Q49 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The domain of the function $f(x) = \\dfrac{1}{\\sqrt{|x| - x}}$ is:",
+    "options": [
+     "$(-\\infty, -1)$",
+     "$(-\\infty, \\infty)$",
+     "$(-\\infty, 0]$",
+     "$(-\\infty, 0)$"
+    ],
+    "explanation": "Need $|x| - x > 0$. For $x \\ge 0$, $|x| - x = 0$ (not allowed). For $x < 0$, $|x| - x = -2x > 0$. So the domain is $(-\\infty, 0)$.",
+    "notes": [
+     "Misses $-1 \\le x < 0$, where $f$ is defined.",
+     "For $x \\ge 0$, $|x| - x = 0$.",
+     "At $x = 0$ the denominator is 0.",
+     "$|x| - x = -2x > 0$ exactly when $x < 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$|x| - x = 0$ for $x \\ge 0$ and $= -2x$ for $x < 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-050",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 50,
+    "label": "Expected TGT 5 · Q50"
+   },
+   "en": {
+    "q": "In how many ways can 6 different prizes be given to 3 students, if a student may receive any number of prizes?",
+    "options": [
+     "729",
+     "216",
+     "18",
+     "120"
+    ],
+    "explanation": "Each of the 6 prizes can go to any of the 3 students, independently: $3^6 = 729$ ways.",
+    "notes": [
+     "$3^6$: 3 choices for each of 6 prizes.",
+     "$6^3$: base and exponent interchanged.",
+     "$6 \\times 3$: the choices added up instead of multiplied.",
+     "${}^6P_3$: as if each student got exactly one prize."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "Distributing $n$ different objects among $r$ people without restriction: $r^n$ ways."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-051",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 51,
+    "label": "Expected TGT 5 · Q51"
+   },
+   "en": {
+    "q": "For $a > 0$, $a \\ne 1$ and $x > 0$, $a^{\\log_a x}$ equals:",
+    "options": [
+     "$a$",
+     "$\\log_a x$",
+     "$1$",
+     "$x$"
+    ],
+    "explanation": "$\\log_a x$ is the power to which $a$ must be raised to give $x$; so raising $a$ to that power gives $x$. E.g. $2^{\\log_2 8} = 2^3 = 8$.",
+    "notes": [
+     "Only when $x = a$.",
+     "The exponent itself, not the power.",
+     "Only when $x = 1$.",
+     "Definition of $\\log_a x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "$a^{\\log_a x} = x$ and $\\log_a a^x = x$; $\\log_a 1 = 0$, $\\log_a a = 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-052",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 52,
+    "label": "Expected TGT 5 · Q52"
+   },
+   "en": {
+    "q": "For the parabola $y^2 = 4ax$, the length of the subnormal at any point is:",
+    "options": [
+     "$x$",
+     "$2x$",
+     "$2a$",
+     "$a$"
+    ],
+    "explanation": "$2y\\frac{dy}{dx} = 4a$, so $y\\frac{dy}{dx} = 2a$. Subnormal $= \\left|y\\frac{dy}{dx}\\right| = 2a$, the same at every point. (The subtangent is $\\left|\\frac{y}{dy/dx}\\right| = \\frac{y^2}{2a} = 2x$.)",
+    "notes": [
+     "Half the subtangent.",
+     "That is the subtangent.",
+     "$y\\frac{dy}{dx} = 2a$.",
+     "Half the subnormal."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.4 Tangents and normals"
+    ],
+    "facts": [
+     "Subtangent $= \\left|\\frac{y}{y'}\\right|$, subnormal $= |yy'|$; for $y^2 = 4ax$ the subnormal is the constant $2a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-053",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-17-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 53,
+    "label": "Expected TGT 5 · Q53"
+   },
+   "en": {
+    "q": "The angle in a semicircle is:",
+    "options": [
+     "an acute angle",
+     "a straight angle",
+     "a right angle",
+     "an obtuse angle"
+    ],
+    "explanation": "The diameter subtends $180^\\circ$ at the centre; the angle at any point of the remaining arc is half of it, $90^\\circ$ (Thales).",
+    "notes": [
+     "Angles in a major segment are acute.",
+     "$180^\\circ$ is the angle at the centre, not on the circle.",
+     "Half of the $180^\\circ$ arc at the centre.",
+     "Angles in a minor segment are obtuse."
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.6 Euclidean geometry: circles"
+    ],
+    "facts": [
+     "Angle at the centre = 2 × angle on the circle on the same arc; so the angle in a semicircle is $90^\\circ$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-054",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-09-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 54,
+    "label": "Expected TGT 5 · Q54"
+   },
+   "en": {
+    "q": "For $-1 \\le x \\le 1$, $\\cos^{-1}(-x)$ is equal to:",
+    "options": [
+     "$-\\cos^{-1}x$",
+     "$\\pi - \\cos^{-1}x$",
+     "$\\pi + \\cos^{-1}x$",
+     "$\\dfrac{\\pi}{2} - \\cos^{-1}x$"
+    ],
+    "explanation": "If $\\cos^{-1}x = \\theta \\in [0, \\pi]$, then $\\cos(\\pi - \\theta) = -x$ and $\\pi - \\theta \\in [0, \\pi]$, so $\\cos^{-1}(-x) = \\pi - \\cos^{-1}x$. E.g. $\\cos^{-1}\\left(-\\frac12\\right) = \\pi - \\frac\\pi3 = \\frac{2\\pi}{3}$.",
+    "notes": [
+     "That rule holds for $\\sin^{-1}$ and $\\tan^{-1}$, not for $\\cos^{-1}$.",
+     "$\\pi - \\theta$ stays in $[0, \\pi]$.",
+     "Can exceed $\\pi$, outside the principal range.",
+     "That is $\\sin^{-1}x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.4 Inverse circular functions"
+    ],
+    "facts": [
+     "$\\sin^{-1}(-x) = -\\sin^{-1}x$ and $\\tan^{-1}(-x) = -\\tan^{-1}x$, but $\\cos^{-1}(-x) = \\pi - \\cos^{-1}x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-055",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-05-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 55,
+    "label": "Expected TGT 5 · Q55"
+   },
+   "en": {
+    "q": "If $a_1 = \\sqrt2$ and $a_{n+1} = \\sqrt{2 + a_n}$ for $n \\ge 1$, then $\\lim_{n\\to\\infty} a_n$ is:",
+    "options": [
+     "$\\sqrt2$",
+     "$-1$",
+     "$2$",
+     "$\\infty$"
+    ],
+    "explanation": "By induction $0 < a_n < 2$ (if $a_n < 2$, then $a_{n+1} < \\sqrt4 = 2$), and $a_{n+1} > a_n$ because $a_n^2 - a_n - 2 = (a_n - 2)(a_n + 1) < 0$, i.e. $a_n^2 < 2 + a_n$. So the sequence is increasing and bounded above, hence convergent. Its limit $L \\ge \\sqrt2$ satisfies $L = \\sqrt{2 + L}$, i.e. $L^2 - L - 2 = 0$, $(L - 2)(L + 1) = 0$, so $L = 2$.",
+    "notes": [
+     "That is the first term; the sequence increases.",
+     "The other root of $L^2 - L - 2 = 0$; impossible, as every term is positive.",
+     "Correct: the positive root of $L = \\sqrt{2 + L}$.",
+     "The sequence increases but stays below 2, so it is bounded and converges."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.4 Sequences"
+    ],
+    "facts": [
+     "A monotonic increasing sequence that is bounded above converges; for $a_{n+1} = f(a_n)$ find the limit from $L = f(L)$ and keep the root that fits the terms."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-056",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-15-09",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 56,
+    "label": "Expected TGT 5 · Q56"
+   },
+   "en": {
+    "q": "For a given velocity of projection, the horizontal range on a horizontal plane is maximum when the angle of projection is:",
+    "options": [
+     "30°",
+     "45°",
+     "90°",
+     "60°"
+    ],
+    "explanation": "$R = \\frac{u^2\\sin 2\\alpha}{g}$ is greatest when $\\sin2\\alpha = 1$, i.e. $\\alpha = 45^\\circ$; then $R_{\\max} = \\frac{u^2}{g}$.",
+    "notes": [
+     "Gives the same range as $60^\\circ$, less than at $45^\\circ$.",
+     "$\\sin 2\\alpha = 1$.",
+     "Vertical throw: range 0.",
+     "Same range as $30^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Dynamics",
+     "15.9 Projectiles"
+    ],
+    "facts": [
+     "Angles $\\alpha$ and $90^\\circ - \\alpha$ give equal ranges; the maximum range $\\frac{u^2}{g}$ is at $45^\\circ$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-057",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-09-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 57,
+    "label": "Expected TGT 5 · Q57"
+   },
+   "en": {
+    "q": "The angles of elevation of the top of a tower from two points on the ground, at distances $a$ and $b$ from its foot along the same straight line, are complementary. The height of the tower is:",
+    "options": [
+     "$ab$",
+     "$\\dfrac{a + b}{2}$",
+     "$\\sqrt{a^2 + b^2}$",
+     "$\\sqrt{ab}$"
+    ],
+    "explanation": "If the angles are $\\theta$ and $90^\\circ - \\theta$, then $\\tan\\theta = \\frac ha$ and $\\tan(90^\\circ - \\theta) = \\cot\\theta = \\frac hb$. Multiplying, $1 = \\frac{h^2}{ab}$, so $h = \\sqrt{ab}$.",
+    "notes": [
+     "Not even a length.",
+     "The arithmetic mean; the height is the geometric mean.",
+     "No right angle joins these lengths.",
+     "$\\tan\\theta\\cot\\theta = 1 \\Rightarrow h^2 = ab$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "9.6 Heights and distances"
+    ],
+    "facts": [
+     "Complementary angles of elevation from distances $a$ and $b$: height $= \\sqrt{ab}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-058",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 58,
+    "label": "Expected TGT 5 · Q58 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The locus of the centre of a circle which touches externally the circle $x^2 + y^2 - 6x - 6y + 14 = 0$ and also touches the $y$-axis is given by the equation:",
+    "options": [
+     "$y^2 - 10x - 6y + 14 = 0$",
+     "$x^2 - 10x - 6y + 14 = 0$",
+     "$y^2 - 6x - 10y + 14 = 0$",
+     "$x^2 - 6x - 10y + 14 = 0$"
+    ],
+    "explanation": "The given circle has centre $(3, 3)$ and radius $\\sqrt{9 + 9 - 14} = 2$. A circle with centre $(h, k)$ touching the $y$-axis has radius $|h|$; here $h > 0$.\nExternal contact: $(h - 3)^2 + (k - 3)^2 = (h + 2)^2 \\Rightarrow k^2 - 10h - 6k + 14 = 0$.\nLocus: $y^2 - 10x - 6y + 14 = 0$.",
+    "notes": [
+     "From $(h - 3)^2 + (k - 3)^2 = (h + 2)^2$.",
+     "Should be quadratic in $y$, since the circle touches the $y$-axis.",
+     "Coefficients of $x$ and $y$ swapped.",
+     "Roles of $x$ and $y$ swapped."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "Circles touch externally when the distance between centres equals the sum of the radii."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-059",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 59,
+    "label": "Expected TGT 5 · Q59 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "If the three lines $x + y = 1$, $x - y = 5$ and $2x + 3y = k$ are concurrent, then the value of $k$ is:",
+    "options": [
+     "$1$",
+     "$0$",
+     "$-1$",
+     "$2$"
+    ],
+    "explanation": "$x + y = 1$ and $x - y = 5$ meet at $(3, -2)$. The third line passes through it: $k = 2(3) + 3(-2) = 0$.",
+    "notes": [
+     "",
+     "$(3, -2)$ gives $6 - 6 = 0$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Three lines are concurrent when the third passes through the meet of the other two."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-060",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 60,
+    "label": "Expected TGT 5 · Q60"
+   },
+   "en": {
+    "q": "The points representing the three cube roots of unity in the Argand plane are the vertices of:",
+    "options": [
+     "a right-angled triangle",
+     "an equilateral triangle",
+     "an obtuse-angled triangle",
+     "a scalene triangle"
+    ],
+    "explanation": "The roots $1, \\omega, \\omega^2$ are $e^{0}$, $e^{2\\pi i/3}$, $e^{4\\pi i/3}$: on the unit circle, $120^\\circ$ apart. Equal arcs give equal chords (each $\\sqrt3$), so the triangle is equilateral, with centroid at the origin since $1 + \\omega + \\omega^2 = 0$.",
+    "notes": [
+     "Each angle is $60^\\circ$, none $90^\\circ$.",
+     "Three points $120^\\circ$ apart on the unit circle.",
+     "$120^\\circ$ is the angle at the centre, not at a vertex.",
+     "All three sides equal $\\sqrt3$."
+    ],
+    "path": [
+     "Mathematics",
+     "Complex Numbers",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "The $n$th roots of unity are the vertices of a regular $n$-gon inscribed in the unit circle."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-061",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-09-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 61,
+    "label": "Expected TGT 5 · Q61 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The general solution of the equation $\\tan^2\\alpha + 2\\sqrt3\\tan\\alpha = 1$ is:",
+    "options": [
+     "$\\alpha = (6n + 1)\\dfrac{\\pi}{12}$",
+     "$\\alpha = \\left(n + \\dfrac12\\right)\\pi$",
+     "$\\alpha = \\dfrac{n\\pi}{12}$",
+     "$\\alpha = \\dfrac{\\pi}{2}$"
+    ],
+    "explanation": "$1 - \\tan^2\\alpha = 2\\sqrt3\\tan\\alpha$ (and $\\tan^2\\alpha \\ne 1$, else $\\tan\\alpha = 0$), so\n$$\\tan 2\\alpha = \\frac{2\\tan\\alpha}{1 - \\tan^2\\alpha} = \\frac{1}{\\sqrt3} \\Rightarrow 2\\alpha = n\\pi + \\frac{\\pi}{6}.$$\nHence $\\alpha = \\frac{n\\pi}{2} + \\frac{\\pi}{12} = (6n + 1)\\frac{\\pi}{12}$. (Directly: $\\tan\\alpha = 2 - \\sqrt3$ or $-2 - \\sqrt3$, i.e. $15^\\circ$ or $105^\\circ$ plus multiples of $180^\\circ$.)",
+    "notes": [
+     "$\\tan 2\\alpha = \\frac{1}{\\sqrt3}$ gives $\\alpha = \\frac{n\\pi}{2} + \\frac{\\pi}{12}$.",
+     "$\\tan\\alpha$ is undefined at odd multiples of $\\frac{\\pi}{2}$.",
+     "$\\alpha = 0$ ($n = 0$) gives $0 \\ne 1$.",
+     "$\\tan\\alpha$ is undefined there."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.3 Trigonometric equations"
+    ],
+    "facts": [
+     "Spot $\\tan 2\\alpha = \\frac{2\\tan\\alpha}{1 - \\tan^2\\alpha}$ in a quadratic in $\\tan\\alpha$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-062",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-17-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 62,
+    "label": "Expected TGT 5 · Q62"
+   },
+   "en": {
+    "q": "The opposite angles of a cyclic quadrilateral are:",
+    "options": [
+     "supplementary",
+     "equal",
+     "always right angles",
+     "complementary"
+    ],
+    "explanation": "Opposite angles stand on arcs that together make the whole circle, so their sum is $\\frac12 \\times 360^\\circ = 180^\\circ$.",
+    "notes": [
+     "Their sum is $180^\\circ$.",
+     "Equal only for special shapes such as a rectangle.",
+     "Only for a rectangle.",
+     "Sum $90^\\circ$: wrong."
+    ],
+    "path": [
+     "Mathematics",
+     "Geometry",
+     "17.6 Euclidean geometry: circles"
+    ],
+    "facts": [
+     "In a cyclic quadrilateral $\\angle A + \\angle C = \\angle B + \\angle D = 180^\\circ$; an exterior angle equals the interior opposite angle."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-063",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 63,
+    "label": "Expected TGT 5 · Q63 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The set of values of $p$ for which the roots of the equation $3x^2 + 2x + p(p - 1) = 0$ are of opposite sign is:",
+    "options": [
+     "$(-\\infty, 0)$",
+     "$(1, \\infty)$",
+     "$(0, 1)$",
+     "$(0, \\infty)$"
+    ],
+    "explanation": "Roots of opposite sign means a negative product: $\\frac{p(p - 1)}{3} < 0 \\Rightarrow 0 < p < 1$. (A negative product also makes the discriminant $4 - 12p(p - 1)$ positive, so the roots are real.)",
+    "notes": [
+     "There $p(p - 1) > 0$: the product is positive.",
+     "There too $p(p - 1) > 0$.",
+     "$p(p - 1) < 0$.",
+     "Includes $p \\ge 1$, where the product is not negative."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "For $ax^2 + bx + c = 0$: roots of opposite sign $\\iff \\frac ca < 0$ (then they are real automatically)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-064",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 64,
+    "label": "Expected TGT 5 · Q64 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "If $U = \\{1, 2, 3, 4, 5, 6\\}$, $A = \\{1, 3, 6\\}$ and $B = \\{5, 6\\}$, then $(A \\cap B)'$ will be:",
+    "options": [
+     "$\\{1, 2, 3, 4, 5\\}$",
+     "$\\{6\\}$",
+     "$\\{2, 4\\}$",
+     "$\\{2, 4, 5\\}$"
+    ],
+    "explanation": "$A \\cap B = \\{6\\}$, so $(A \\cap B)' = U - \\{6\\} = \\{1, 2, 3, 4, 5\\}$. (Also $A' \\cup B' = \\{2, 4, 5\\} \\cup \\{1, 2, 3, 4\\}$, the same set.)",
+    "notes": [
+     "$U - \\{6\\}$.",
+     "This is $A \\cap B$ itself.",
+     "This is $(A \\cup B)'$.",
+     "This is $A'$."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "De Morgan: $(A \\cap B)' = A' \\cup B'$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-065",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-04-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 65,
+    "label": "Expected TGT 5 · Q65"
+   },
+   "en": {
+    "q": "In any group, the order of an element $a$ and the order of its inverse $a^{-1}$ are:",
+    "options": [
+     "related by $o(a^{-1}) = 2\\,o(a)$",
+     "always unequal",
+     "always equal",
+     "equal only when the group is abelian"
+    ],
+    "explanation": "$(a^{-1})^n = (a^n)^{-1}$, so $a^n = e$ exactly when $(a^{-1})^n = e$. The least such $n$ is the same: $o(a^{-1}) = o(a)$.",
+    "notes": [
+     "",
+     "$o(e) = o(e^{-1}) = 1$ already contradicts this.",
+     "$a^n = e \\iff (a^{-1})^n = e$.",
+     "Holds in every group."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.5 Order of an element"
+    ],
+    "facts": [
+     "$o(a) = o(a^{-1}) = o(gag^{-1})$ in every group."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-066",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 66,
+    "label": "Expected TGT 5 · Q66"
+   },
+   "en": {
+    "q": "If $A = \\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{bmatrix}$, then $A^{-1}$ is:",
+    "options": [
+     "$\\begin{bmatrix}-2&0&0\\\\0&-3&0\\\\0&0&-4\\end{bmatrix}$",
+     "$\\frac{1}{24}\\begin{bmatrix}2&0&0\\\\0&3&0\\\\0&0&4\\end{bmatrix}$",
+     "$\\begin{bmatrix}\\frac12&0&0\\\\0&\\frac13&0\\\\0&0&\\frac14\\end{bmatrix}$",
+     "$\\begin{bmatrix}\\frac14&0&0\\\\0&\\frac13&0\\\\0&0&\\frac12\\end{bmatrix}$"
+    ],
+    "explanation": "$|A| = 24 \\ne 0$ and $\\operatorname{adj}A = \\begin{bmatrix}12&0&0\\\\0&8&0\\\\0&0&6\\end{bmatrix}$, so $A^{-1} = \\frac{1}{24}\\operatorname{adj}A$, the diagonal matrix of the reciprocals $\\frac12, \\frac13, \\frac14$.",
+    "notes": [
+     "Negating is not inverting: $A(-A) \\ne I$.",
+     "$\\frac{1}{|A|}A$: $A$ used in place of $\\operatorname{adj}A$.",
+     "Reciprocals of the diagonal entries.",
+     "Reciprocals put in reverse order."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.2 Inverse of a matrix"
+    ],
+    "facts": [
+     "$\\operatorname{diag}(a, b, c)^{-1} = \\operatorname{diag}\\left(\\frac1a, \\frac1b, \\frac1c\\right)$ for $abc \\ne 0$; in general $A^{-1} = \\frac{\\operatorname{adj}A}{|A|}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-067",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-07-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 67,
+    "label": "Expected TGT 5 · Q67"
+   },
+   "en": {
+    "q": "$\\int \\operatorname{cosec} x\\,dx$ equals:",
+    "options": [
+     "$\\log|\\operatorname{cosec} x + \\cot x| + C$",
+     "$\\log|\\operatorname{cosec} x - \\cot x| + C$",
+     "$-\\operatorname{cosec} x\\cot x + C$",
+     "$\\log|\\sin x| + C$"
+    ],
+    "explanation": "$\\frac{d}{dx}\\log|\\operatorname{cosec} x - \\cot x| = \\frac{-\\operatorname{cosec} x\\cot x + \\operatorname{cosec}^2x}{\\operatorname{cosec} x - \\cot x} = \\operatorname{cosec} x$. Equivalently $\\int\\operatorname{cosec} x\\,dx = \\log\\left|\\tan\\frac x2\\right| + C$.",
+    "notes": [
+     "Its derivative is $-\\operatorname{cosec} x$.",
+     "Equals $\\log\\left|\\tan\\frac x2\\right| + C$.",
+     "That is the derivative of $\\operatorname{cosec} x$.",
+     "That is $\\int\\cot x\\,dx$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.1 Indefinite integrals: standard forms"
+    ],
+    "facts": [
+     "$\\int\\sec x\\,dx = \\log|\\sec x + \\tan x| + C$; $\\int\\operatorname{cosec} x\\,dx = \\log|\\operatorname{cosec} x - \\cot x| + C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-068",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 68,
+    "label": "Expected TGT 5 · Q68 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The rank of the matrix $\\begin{bmatrix}8&1&3&6\\\\0&3&2&2\\\\-8&-1&-3&4\\end{bmatrix}$ will be:",
+    "options": [
+     "2",
+     "3",
+     "4",
+     "1"
+    ],
+    "explanation": "$R_3 \\to R_3 + R_1$ gives $(0, 0, 0, 10)$. The rows $(8, 1, 3, 6)$, $(0, 3, 2, 2)$, $(0, 0, 0, 10)$ are in echelon form with three non-zero rows, so the rank is 3 (the most a matrix with 3 rows can have).",
+    "notes": [
+     "$R_3$ is not a combination of $R_1$ and $R_2$ (its last entry differs).",
+     "Three non-zero rows in echelon form.",
+     "A $3 \\times 4$ matrix has rank at most 3.",
+     "Rank 1 would need every row to be a multiple of one row."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Rank = number of non-zero rows of an echelon form; the rank of an $m \\times n$ matrix is at most $\\min(m, n)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-069",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-15-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 69,
+    "label": "Expected TGT 5 · Q69"
+   },
+   "en": {
+    "q": "If two forces $P$ and $Q$ act at a point at an angle $\\alpha$, the magnitude $R$ of their resultant is given by:",
+    "options": [
+     "$R^2 = P^2 + Q^2 - 2PQ\\cos\\alpha$",
+     "$R^2 = P^2 + Q^2 + 2PQ\\sin\\alpha$",
+     "$R^2 = P^2 + Q^2 + 2PQ\\cos\\alpha$",
+     "$R = P + Q\\cos\\alpha$"
+    ],
+    "explanation": "By the parallelogram law, $R^2 = P^2 + Q^2 + 2PQ\\cos\\alpha$; check: $\\alpha = 0$ gives $R = P + Q$, $\\alpha = 180^\\circ$ gives $|P - Q|$.",
+    "notes": [
+     "Gives $|\\vec P - \\vec Q|$.",
+     "Sine in place of cosine.",
+     "Parallelogram law.",
+     "Only the component along $P$."
+    ],
+    "path": [
+     "Mathematics",
+     "Statics",
+     "15.1 Force, resultant and resolution"
+    ],
+    "facts": [
+     "$R^2 = P^2 + Q^2 + 2PQ\\cos\\alpha$, $\\tan\\theta = \\frac{Q\\sin\\alpha}{P + Q\\cos\\alpha}$ (angle with $P$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-070",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 70,
+    "label": "Expected TGT 5 · Q70 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The total number of 9 digit numbers which have all different digits is:",
+    "options": [
+     "$10 \\times 10!$",
+     "$9 \\times 9!$",
+     "$9!$",
+     "$10!$"
+    ],
+    "explanation": "The first digit can be any of 1–9 (not 0): 9 ways. The remaining 8 places are filled from the 9 digits left, in order: $^9P_8 = 9!$ ways.\nTotal $= 9 \\times 9!$. (Equivalently $^{10}P_9 - {}^9P_8 = 10! - 9! = 9 \\times 9!$.)",
+    "notes": [
+     "Larger than $10!$, which already counts every arrangement of 9 different digits, leading 0 included.",
+     "9 choices for the first digit, then $^9P_8 = 9!$ for the rest.",
+     "Forgets that 0 may be used after the first place.",
+     "$^{10}P_9 = 10!$ also counts strings beginning with 0."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "Leading digit cannot be 0: count it first, then arrange the rest."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-071",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-15-10",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 71,
+    "label": "Expected TGT 5 · Q71"
+   },
+   "en": {
+    "q": "According to the work–energy principle, the work done by the resultant force on a body equals the change in its:",
+    "options": [
+     "potential energy",
+     "kinetic energy",
+     "velocity",
+     "momentum"
+    ],
+    "explanation": "Work–energy principle: $W_{\\text{net}} = \\frac12mv^2 - \\frac12mu^2$, the change in kinetic energy.",
+    "notes": [
+     "Potential energy changes by the work done against gravity, not by the work of the resultant force.",
+     "$W = \\frac12mv^2 - \\frac12mu^2$.",
+     "",
+     "Change of momentum equals the impulse."
+    ],
+    "path": [
+     "Mathematics",
+     "Dynamics",
+     "15.10 Work, power and energy"
+    ],
+    "facts": [
+     "Work = change in KE; impulse = change in momentum."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-072",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 72,
+    "label": "Expected TGT 5 · Q72 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The particles A and B are dropped from the heights of 5 m and 20 m respectively. Then the ratio of time taken by A to that taken by B, to reach the ground is:",
+    "options": [
+     "1 : 1",
+     "2 : 1",
+     "1 : 4",
+     "1 : 2"
+    ],
+    "explanation": "From rest, $h = \\frac12 gt^2$, so $t = \\sqrt{2h/g} \\propto \\sqrt h$. $t_A : t_B = \\sqrt5 : \\sqrt{20} = 1 : 2$.",
+    "notes": [
+     "Time depends on the height.",
+     "Ratio inverted.",
+     "Ratio of the heights, not of the times.",
+     "$t \\propto \\sqrt h$: $\\sqrt5 : \\sqrt{20}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Dynamics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "Free fall from rest: $t = \\sqrt{2h/g}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-073",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 73,
+    "label": "Expected TGT 5 · Q73"
+   },
+   "en": {
+    "q": "$\\int_0^{\\pi} \\frac{x\\sin x}{1 + \\cos^2 x}\\,dx$ equals:",
+    "options": [
+     "$\\frac{\\pi^2}{4}$",
+     "$\\pi^2$",
+     "$\\frac{\\pi}{4}$",
+     "$\\frac{\\pi^2}{2}$"
+    ],
+    "explanation": "Replace $x$ by $\\pi - x$: $I = \\int_0^{\\pi}\\frac{(\\pi - x)\\sin x}{1 + \\cos^2x}dx$. Adding,\n$$2I = \\pi\\int_0^{\\pi}\\frac{\\sin x}{1 + \\cos^2x}dx = \\pi\\left[-\\tan^{-1}(\\cos x)\\right]_0^{\\pi} = \\pi\\left(\\frac\\pi4 + \\frac\\pi4\\right) = \\frac{\\pi^2}{2}.$$\nSo $I = \\frac{\\pi^2}{4}$.",
+    "notes": [
+     "",
+     "",
+     "The factor $\\pi$ from the King's-rule step dropped.",
+     "$2I$: not halved."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_0^a f(x)\\,dx = \\int_0^a f(a - x)\\,dx$; with $x\\,g(\\sin x)$ on $[0, \\pi]$ it gives $\\frac\\pi2\\int_0^\\pi g(\\sin x)\\,dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-074",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 74,
+    "label": "Expected TGT 5 · Q74"
+   },
+   "en": {
+    "q": "$\\dfrac{d}{dx}\\left(a^x\\right)$, where $a > 0$, equals:",
+    "options": [
+     "$x\\,a^{x-1}$",
+     "$\\dfrac{a^x}{\\log_e a}$",
+     "$a^x\\log_e a$",
+     "$a^x$"
+    ],
+    "explanation": "$a^x = e^{x\\log_e a}$, so $\\frac{d}{dx}a^x = e^{x\\log_e a}\\cdot\\log_e a = a^x\\log_e a$.",
+    "notes": [
+     "Power rule wrongly applied to a variable exponent.",
+     "That is $\\int a^x\\,dx$.",
+     "$a^x = e^{x\\log_e a}$.",
+     "True only for $a = e$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "$\\frac{d}{dx}a^x = a^x\\log_e a$; $\\int a^x\\,dx = \\frac{a^x}{\\log_e a} + C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-075",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-11-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 75,
+    "label": "Expected TGT 5 · Q75"
+   },
+   "en": {
+    "q": "If $S$ and $S'$ are the foci of the ellipse $\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1$ $(a > b)$ and $P$ is any point on the ellipse, then $SP + S'P$ equals:",
+    "options": [
+     "$2a$",
+     "$2b$",
+     "$2ae$",
+     "$\\dfrac{2a}{e}$"
+    ],
+    "explanation": "For $P(x_1, y_1)$ on the ellipse, $SP = e \\times$ (distance of $P$ from the directrix $x = \\frac ae$) $= e\\left(\\frac ae - x_1\\right) = a - ex_1$, and in the same way $S'P = a + ex_1$. Adding, $SP + S'P = 2a$, the length of the major axis, the same for every point $P$.",
+    "notes": [
+     "Correct: $(a - ex_1) + (a + ex_1)$.",
+     "That is the length of the minor axis.",
+     "That is the distance $SS'$ between the foci.",
+     "That is the distance between the two directrices."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.6 Ellipse"
+    ],
+    "facts": [
+     "Focal distances of $(x_1, y_1)$ on $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$: $a \\mp ex_1$; their sum is the major axis $2a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-076",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 76,
+    "label": "Expected TGT 5 · Q76"
+   },
+   "en": {
+    "q": "The hyperbola conjugate to $\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 1$ is:",
+    "options": [
+     "$\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = 1$",
+     "$\\dfrac{y^2}{b^2} - \\dfrac{x^2}{a^2} = 1$",
+     "$\\dfrac{x^2}{b^2} - \\dfrac{y^2}{a^2} = 1$",
+     "$\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = 0$"
+    ],
+    "explanation": "The conjugate hyperbola has the transverse and conjugate axes interchanged: $\\frac{y^2}{b^2} - \\frac{x^2}{a^2} = 1$. The two share the asymptotes $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 0$, and their eccentricities satisfy $\\frac{1}{e_1^2} + \\frac{1}{e_2^2} = 1$.",
+    "notes": [
+     "An ellipse.",
+     "Axes interchanged, same $a$ and $b$.",
+     "Another hyperbola along the $x$-axis ($a$ and $b$ swapped).",
+     "That is the pair of asymptotes."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "A hyperbola and its conjugate have the same asymptotes, and $e_1^{-2} + e_2^{-2} = 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-077",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 77,
+    "label": "Expected TGT 5 · Q77 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The vector $\\vec a$ lies in the plane of vectors $\\vec b$ and $\\vec c$; which of the following is correct?",
+    "options": [
+     "$\\vec a\\cdot(\\vec b \\times \\vec c) = 0$",
+     "$\\vec a\\cdot(\\vec b \\times \\vec c) = 1$",
+     "$\\vec a\\cdot(\\vec b \\times \\vec c) = -1$",
+     "$\\vec a\\cdot(\\vec b \\times \\vec c) = 3$"
+    ],
+    "explanation": "$\\vec b \\times \\vec c$ is perpendicular to the plane of $\\vec b$ and $\\vec c$, hence to $\\vec a$; so $\\vec a\\cdot(\\vec b \\times \\vec c) = 0$ (the parallelepiped is flat).",
+    "notes": [
+     "Coplanar vectors have zero scalar triple product.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "$[\\vec a\\ \\vec b\\ \\vec c] = 0 \\iff \\vec a, \\vec b, \\vec c$ are coplanar."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-078",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 78,
+    "label": "Expected TGT 5 · Q78 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "If $x$ lies in the interval $[0, 1]$, then the minimum value of $x^2 + x + 1$ is:",
+    "options": [
+     "$1$",
+     "$\\frac34$",
+     "$0$",
+     "$3$"
+    ],
+    "explanation": "$f'(x) = 2x + 1 > 0$ on $[0, 1]$, so $f$ is increasing there and its least value is $f(0) = 1$.",
+    "notes": [
+     "Increasing on $[0, 1]$; least at $x = 0$.",
+     "Global minimum, at $x = -\\frac12$, outside $[0, 1]$.",
+     "The expression is never 0 (no real roots).",
+     "Value at $x = 1$: the maximum."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "On a closed interval compare end-point values with stationary points inside the interval only."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-079",
+   "level": "TGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-15-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 79,
+    "label": "Expected TGT 5 · Q79"
+   },
+   "en": {
+    "q": "A uniform beam $AB$, 4 m long and weighing 60 N, rests horizontally on two supports at its ends $A$ and $B$. A load of 40 N is placed on it 1 m from $A$. The reaction at $A$ is:",
+    "options": [
+     "60 N",
+     "40 N",
+     "50 N",
+     "70 N"
+    ],
+    "explanation": "Moments about $B$: $R_A \\times 4 = 60 \\times 2 + 40 \\times 3 = 240$, so $R_A = 60$ N. Then $R_B = 100 - 60 = 40$ N.",
+    "notes": [
+     "Moments about $B$: $4R_A = 60 \\times 2 + 40 \\times 3$.",
+     "That is the reaction at $B$.",
+     "Half the total load: the position of the 40 N ignored.",
+     "Whole 40 N load given to $A$."
+    ],
+    "path": [
+     "Mathematics",
+     "Statics",
+     "15.3 Coplanar forces, moments and parallel forces"
+    ],
+    "facts": [
+     "For a beam on two supports, take moments about one support to find the other reaction."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-080",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 80,
+    "label": "Expected TGT 5 · Q80 · asked in UP TGT 2003",
+    "from": "UP TGT 2003"
+   },
+   "en": {
+    "q": "The sum of the first $n$ natural numbers is $\\frac15$ times the sum of their squares; then the value of $n$ is:",
+    "options": [
+     "$6$",
+     "$7$",
+     "$8$",
+     "$5$"
+    ],
+    "explanation": "$$\\frac{n(n+1)}{2} = \\frac15 \\cdot \\frac{n(n+1)(2n+1)}{6} \\Rightarrow 2n + 1 = 15 \\Rightarrow n = 7.$$\nCheck: $1 + \\dots + 7 = 28$ and $1^2 + \\dots + 7^2 = 140 = 5 \\times 28$.",
+    "notes": [
+     "Gives the ratio $\\frac{3}{13}$.",
+     "$\\sum n = 28$, $\\sum n^2 = 140$.",
+     "Gives the ratio $\\frac{3}{17}$.",
+     "Gives the ratio $\\frac{3}{11}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$\\dfrac{\\sum n}{\\sum n^2} = \\dfrac{3}{2n + 1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-081",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 81,
+    "label": "Expected TGT 5 · Q81"
+   },
+   "en": {
+    "q": "In a metric space $(X, d)$, the triangle inequality states that for all $x, y, z \\in X$:",
+    "options": [
+     "$d(x, z) \\ge d(x, y) + d(y, z)$",
+     "$d(x, z) = d(x, y) + d(y, z)$",
+     "$d(x, z) \\le d(x, y) + d(y, z)$",
+     "$d(x, z) \\le d(x, y)\\,d(y, z)$"
+    ],
+    "explanation": "The metric axioms: $d(x, y) \\ge 0$ with equality iff $x = y$; $d(x, y) = d(y, x)$; and the triangle inequality $d(x, z) \\le d(x, y) + d(y, z)$. In $\\mathbb R$ with $d(x, y) = |x - y|$ it reads $|x - z| \\le |x - y| + |y - z|$.",
+    "notes": [
+     "Reversed; fails for $x = z \\ne y$.",
+     "Equality holds only in special positions (e.g. $y$ between $x$ and $z$ on $\\mathbb R$).",
+     "One side of a triangle is at most the sum of the other two.",
+     "Fails for $0, \\frac12, 1$ in $\\mathbb R$: $1 > \\frac14$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "A metric: $d(x, y) \\ge 0$, $d(x, y) = 0 \\iff x = y$, symmetry, triangle inequality."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-082",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 82,
+    "label": "Expected TGT 5 · Q82"
+   },
+   "en": {
+    "q": "Every subgroup of a cyclic group is:",
+    "options": [
+     "infinite",
+     "non-abelian",
+     "of prime order",
+     "cyclic"
+    ],
+    "explanation": "If $G = \\langle a\\rangle$ and $H \\ne \\{e\\}$ is a subgroup, let $m$ be the least positive integer with $a^m \\in H$; division with remainder shows $H = \\langle a^m\\rangle$. So every subgroup is cyclic.",
+    "notes": [
+     "Subgroups of $\\mathbb Z_n$ are finite.",
+     "A cyclic group is abelian, so are its subgroups.",
+     "False: $\\mathbb Z_6$ is a subgroup of itself, of order 6.",
+     "Generated by its least positive power of the generator."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "A cyclic group of order $n$ has exactly one subgroup of each order $d \\mid n$, and each is cyclic."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-083",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 83,
+    "label": "Expected TGT 5 · Q83"
+   },
+   "en": {
+    "q": "The mean deviation of a set of observations is least when the deviations are taken from the:",
+    "options": [
+     "mean",
+     "mode",
+     "median",
+     "largest observation"
+    ],
+    "explanation": "$\\sum|x_i - a|$ is smallest when $a$ is the median. E.g. for 1, 2, 9: about the median 2 the sum is $1 + 0 + 7 = 8$; about the mean 4 it is $3 + 2 + 5 = 10$.",
+    "notes": [
+     "The mean minimises the sum of squared deviations, not of absolute deviations.",
+     "Not in general.",
+     "Least $\\sum|x_i - a|$ at the median.",
+     "That makes the deviations larger."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "$\\sum|x_i - a|$ is least for $a$ = median; $\\sum(x_i - a)^2$ is least for $a$ = mean."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-084",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 84,
+    "label": "Expected TGT 5 · Q84"
+   },
+   "en": {
+    "q": "If one root of the equation $x^2 - 6x + k = 0$ is double the other, then $k$ equals:",
+    "options": [
+     "9",
+     "6",
+     "18",
+     "8"
+    ],
+    "explanation": "Let the roots be $\\alpha$ and $2\\alpha$. Sum: $3\\alpha = 6$, so $\\alpha = 2$; product: $k = \\alpha \\cdot 2\\alpha = 2\\alpha^2 = 8$ (roots 2 and 4).",
+    "notes": [
+     "Equal roots (zero discriminant), not roots in the ratio 1 : 2.",
+     "That is the sum of the roots.",
+     "$2\\alpha = 6$ used for the sum: roots 3 and 6.",
+     "Roots 2 and 4."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "For roots in a given ratio, write them as $\\alpha$ and $k\\alpha$ and use the sum and the product."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-085",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-16-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 85,
+    "label": "Expected TGT 5 · Q85"
+   },
+   "en": {
+    "q": "A letter is chosen at random from the letters of the word MATHEMATICS. The probability that it is a vowel is:",
+    "options": [
+     "$\\frac{7}{11}$",
+     "$\\frac{3}{8}$",
+     "$\\frac{3}{11}$",
+     "$\\frac{4}{11}$"
+    ],
+    "explanation": "MATHEMATICS has 11 letters; the vowels are A, E, A, I, i.e. 4 letters. P(vowel) $= \\frac{4}{11}$.",
+    "notes": [
+     "That is the probability of a consonant.",
+     "Distinct vowels over distinct letters: repeated letters must be counted.",
+     "The repeated A counted once.",
+     "4 vowel letters out of 11."
+    ],
+    "path": [
+     "Mathematics",
+     "Probability",
+     "16.1 Basic probability and the addition theorem"
+    ],
+    "facts": [
+     "Classical probability = favourable ÷ total equally likely outcomes; repeated letters count separately."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-086",
+   "level": "TGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-16-06",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 86,
+    "label": "Expected TGT 5 · Q86 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "The median of the numbers 50, 48, 47, 48.5, 50.5, 52, 48.8, 46 will be:",
+    "options": [
+     "50",
+     "48",
+     "48.65",
+     "48.5"
+    ],
+    "explanation": "In ascending order: 46, 47, 48, 48.5, 48.8, 50, 50.5, 52. Here $n = 8$ is even, so the median is the mean of the 4th and 5th values: $\\frac{48.5 + 48.8}{2} = 48.65$.",
+    "notes": [
+     "50 is the 6th ordered value (or the first number as listed).",
+     "48 is the 3rd ordered value.",
+     "Mean of the 4th and 5th ordered values.",
+     "Only the 4th ordered value; for even $n$ the two middle values are averaged."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.6 Measures of central tendency"
+    ],
+    "facts": [
+     "For even $n$, median $= \\frac12\\left[\\left(\\frac n2\\right)\\text{th} + \\left(\\frac n2 + 1\\right)\\text{th}\\right]$ ordered values."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-087",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 87,
+    "label": "Expected TGT 5 · Q87"
+   },
+   "en": {
+    "q": "By Cantor's theorem, for every set $A$:",
+    "options": [
+     "$A$ and its power set $P(A)$ have the same cardinality",
+     "$P(A)$ has exactly twice as many elements as $A$",
+     "$P(A)$ is countable whenever $A$ is countable",
+     "the cardinality of $P(A)$ is greater than that of $A$"
+    ],
+    "explanation": "$a \\mapsto \\{a\\}$ maps $A$ one-one into $P(A)$, so $|A| \\le |P(A)|$. No map $f: A \\to P(A)$ is onto: the set $B = \\{a \\in A : a \\notin f(a)\\}$ differs from every $f(a)$. Hence $|P(A)| > |A|$; e.g. $P(\\mathbb N)$ is uncountable.",
+    "notes": [
+     "No map from $A$ onto $P(A)$ exists.",
+     "For finite $A$ with $n$ elements, $P(A)$ has $2^n$, not $2n$.",
+     "$\\mathbb N$ is countable but $P(\\mathbb N)$ is not.",
+     "$|P(A)| > |A|$ for every set."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.2 Countability and cardinal numbers"
+    ],
+    "facts": [
+     "Cantor: $|P(A)| > |A|$; for a finite set of $n$ elements $|P(A)| = 2^n$; $P(\\mathbb N)$ has the cardinality $c$ of $\\mathbb R$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-088",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-16-02",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 88,
+    "label": "Expected TGT 5 · Q88 · asked in UP TGT 2001",
+    "from": "UP TGT 2001"
+   },
+   "en": {
+    "q": "A person draws a card from a pack of 52 cards and puts it back in the pack. He continues doing this until he gets a spade. What is the probability that he fails to draw a spade the first two times and draws a spade the third time?",
+    "options": [
+     "$\\frac{1}{64}$",
+     "$\\frac{1}{16}$",
+     "$\\frac{9}{16}$",
+     "$\\frac{9}{64}$"
+    ],
+    "explanation": "With replacement the draws are independent, and $P(\\text{spade}) = \\frac{13}{52} = \\frac14$ each time.\nP(no spade, no spade, spade) $= \\frac34 \\cdot \\frac34 \\cdot \\frac14 = \\frac{9}{64}$.\n(Given that the first two draws failed, the chance of a spade on the third alone would still be $\\frac14$: the draws are independent.)",
+    "notes": [
+     "$\\left(\\frac14\\right)^3$: spade all three times.",
+     "$\\left(\\frac14\\right)^2$.",
+     "$\\left(\\frac34\\right)^2$: only the two failures.",
+     "$\\frac34 \\cdot \\frac34 \\cdot \\frac14$."
+    ],
+    "path": [
+     "Mathematics",
+     "Probability",
+     "16.2 Conditional probability, multiplication theorem, independent events"
+    ],
+    "facts": [
+     "For independent events $P(A \\cap B \\cap C) = P(A)P(B)P(C)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-089",
+   "level": "TGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 89,
+    "label": "Expected TGT 5 · Q89"
+   },
+   "en": {
+    "q": "The parametric coordinates of a point on the parabola $y^2 = 12x$ are:",
+    "options": [
+     "$(3t, 6t^2)$",
+     "$(12t^2, 24t)$",
+     "$(6t^2, 3t)$",
+     "$(3t^2, 6t)$"
+    ],
+    "explanation": "$y^2 = 12x = 4 \\cdot 3 \\cdot x$, so $a = 3$ and the point is $(at^2, 2at) = (3t^2, 6t)$. Check: $(6t)^2 = 36t^2 = 12 \\times 3t^2$.",
+    "notes": [
+     "Powers of $t$ interchanged.",
+     "$4a$ used in place of $a$.",
+     "Coordinates interchanged.",
+     "$(at^2, 2at)$ with $a = 3$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "$y^2 = 4ax$: point $(at^2, 2at)$, tangent $ty = x + at^2$, focus $(a, 0)$, directrix $x = -a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-tgt-2026-5-090",
+   "level": "TGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "exp-tgt-2026-5",
+    "n": 90,
+    "label": "Expected TGT 5 · Q90"
+   },
+   "en": {
+    "q": "A vector whose initial point is not fixed, so that it may be moved parallel to itself anywhere, is called a:",
+    "options": [
+     "null vector",
+     "free vector",
+     "position vector",
+     "localised vector"
+    ],
+    "explanation": "A free vector is fixed only by its magnitude and direction; its initial point may be anywhere. A position vector has its initial point at the origin; a localised vector is tied to a line of action.",
+    "notes": [
+     "A null vector has zero magnitude.",
+     "",
+     "A position vector starts at the origin.",
+     "A localised vector has a fixed line of action."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Analysis",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "Free vector: initial point arbitrary; localised vector: tied to a line; position vector: from the origin."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}

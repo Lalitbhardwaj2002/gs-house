@@ -1,0 +1,3460 @@
+{
+ "paper": {
+  "id": "exp-pgt-2026-1",
+  "kind": "expected",
+  "title": "Expected PGT paper 1 · May 2026 pattern",
+  "exam": "Expected UP PGT",
+  "date": "December 2026",
+  "level": "PGT",
+  "minutes": 100,
+  "negative": 0,
+  "source": "Written by GS HOUSE for the UP PGT Mathematics exam expected in December 2026, in the pattern of the UP PGT paper of 10 May 2026 and the official syllabus: 25 questions asked in earlier papers (17 from UP PGT 2016 and 8 from UP PGT 2005; each solved again, misprints repaired) and 65 new; every question checked by a second mathematician"
+ },
+ "questions": [
+  {
+   "id": "mq/exp-pgt-2026-1-001",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 1,
+    "label": "Expected PGT 1 · Q1 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "The total number of words which can be formed out of the letters a, b, c, d, e, f taken three together, each word containing at least one vowel, is",
+    "options": [
+     "48",
+     "32",
+     "96",
+     "16"
+    ],
+    "explanation": "All three-letter words from 6 distinct letters: $^6P_3=120$. Words with no vowel use only b, c, d, f: $^4P_3=24$. So words with at least one vowel: $120-24=96$.",
+    "notes": [
+     "",
+     "",
+     "Correct: $^6P_3-{}^4P_3=120-24$.",
+     "The book's value; $120-24$ is 96, not 16."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "'At least one' = total minus 'none'."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-002",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-14-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 2,
+    "label": "Expected PGT 1 · Q2"
+   },
+   "en": {
+    "q": "By Green's theorem, $\\oint_C(x\\,dy-y\\,dx)$, where $C$ is the circle $x^2+y^2=4$ described anticlockwise, is equal to",
+    "options": [
+     "$8\\pi$",
+     "$4\\pi$",
+     "$16\\pi$",
+     "0"
+    ],
+    "explanation": "Green: $\\oint_C(M\\,dx+N\\,dy)=\\iint_R\\left(\\frac{\\partial N}{\\partial x}-\\frac{\\partial M}{\\partial y}\\right)dA$ with $M=-y$, $N=x$. The integrand is $1+1=2$, so the value is $2\\times$ area $=2\\cdot4\\pi=8\\pi$.",
+    "notes": [
+     "Correct: twice the area.",
+     "That is the area itself.",
+     "",
+     "The field $(-y,x)$ is not conservative, so the integral is not 0."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.3 Line, surface and volume integrals; integral theorems"
+    ],
+    "facts": [
+     "Area enclosed by $C$ $=\\frac12\\oint_C(x\\,dy-y\\,dx)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-003",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 3,
+    "label": "Expected PGT 1 · Q3"
+   },
+   "en": {
+    "q": "The number of binary operations that can be defined on the set $\\{a,b\\}$ is",
+    "options": [
+     "16",
+     "4",
+     "8",
+     "2"
+    ],
+    "explanation": "A binary operation on $A$ is a map $A\\times A\\to A$. Here $A\\times A$ has 4 elements and each can be sent to either of the 2 elements: $2^4=16$.",
+    "notes": [
+     "Correct: $2^{2\\times2}$.",
+     "That is the number of ordered pairs in $\\{a,b\\}\\times\\{a,b\\}$.",
+     "$2^3$: counts maps from a 3-element set.",
+     "That is the number of elements of the set."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "A set with $n$ elements has $n^{n^2}$ binary operations."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-004",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 4,
+    "label": "Expected PGT 1 · Q4 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "Let $\\alpha,\\beta$ be the roots of the equation $x^2+ax+a^3=0$, $a\\ne0$. If $(\\alpha,\\beta)$ lies on the parabola $y^2=x$, then the roots are",
+    "options": [
+     "$2,\\ 3$",
+     "$4,\\ -2$",
+     "$4,\\ 2$",
+     "$2,\\ -3$"
+    ],
+    "explanation": "$\\alpha+\\beta=-a$, $\\alpha\\beta=a^3$. The point $(\\alpha,\\beta)$ on $y^2=x$ means $\\alpha=\\beta^2$, so $\\alpha\\beta=\\beta^3=a^3$ and $\\beta=a$, $\\alpha=a^2$. Then $a^2+a=-a$, i.e. $a(a+2)=0$, so $a=-2$. The equation is $x^2-2x-8=0$ with roots $4$ and $-2$; check $(-2)^2=4$.",
+    "notes": [
+     "Product 6 cannot equal $a^3$ with sum $-a$.",
+     "Correct: $a=-2$ gives $x^2-2x-8=0$.",
+     "Sum 6 gives $a=-6$, but the product 8 is not $a^3=-216$.",
+     "$(-3)^2=9\\ne2$: the point is not on $y^2=x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Turn a condition on the roots into an equation in the parameter, then use the sum and the product of the roots."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-005",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 5,
+    "label": "Expected PGT 1 · Q5"
+   },
+   "en": {
+    "q": "The function $y=x\\log x$ $(x>0)$ is a solution of the differential equation",
+    "options": [
+     "$x\\frac{dy}{dx}=y$",
+     "$x\\frac{dy}{dx}+y=x$",
+     "$x\\frac{dy}{dx}-y=x$",
+     "$\\frac{dy}{dx}-\\frac yx=x$"
+    ],
+    "explanation": "$\\frac{dy}{dx}=\\log x+1$, so $x\\frac{dy}{dx}=x\\log x+x=y+x$, i.e. $x\\frac{dy}{dx}-y=x$ for every $x>0$. The others fail: in (a) $x\\frac{dy}{dx}=y+x\\neq y$; in (b) $x\\frac{dy}{dx}+y=2x\\log x+x\\neq x$; in (d) $\\frac{dy}{dx}-\\frac yx=1\\neq x$.",
+    "notes": [
+     "Drops the $+1$ of the product rule: takes $\\frac{dy}{dx}=\\log x$.",
+     "Sign slip: $x\\frac{dy}{dx}+y=2x\\log x+x$, not $x$.",
+     "Correct: $x(\\log x+1)-x\\log x=x$.",
+     "Divides the true equation by $x$ but not its right side: $\\frac{dy}{dx}-\\frac yx=1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "A function is a solution when it turns the equation into an identity on its domain: substitute $y$, $y'$, … and simplify."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-006",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 6,
+    "label": "Expected PGT 1 · Q6"
+   },
+   "en": {
+    "q": "$\\int e^x\\left(\\frac{1+x\\log x}{x}\\right)dx$ is equal to",
+    "options": [
+     "$\\frac{e^x}{x}+C$",
+     "$xe^x\\log x+C$",
+     "$e^x\\left(\\log x+\\frac1x\\right)+C$",
+     "$e^x\\log x+C$"
+    ],
+    "explanation": "The integrand is $e^x\\left(\\log x+\\frac1x\\right)=e^x\\{f(x)+f'(x)\\}$ with $f(x)=\\log x$. Since $\\frac{d}{dx}\\{e^xf(x)\\}=e^x\\{f(x)+f'(x)\\}$, the integral is $e^x\\log x+C$.",
+    "notes": [
+     "Takes $f=\\frac1x$, but then $f+f'=\\frac1x-\\frac1{x^2}$.",
+     "",
+     "That is $e^x$ times the bracket, not its integral.",
+     "Correct: $e^x\\{f+f'\\}$ with $f=\\log x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "$\\int e^x\\{f(x)+f'(x)\\}\\,dx=e^xf(x)+C$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-007",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 7,
+    "label": "Expected PGT 1 · Q7"
+   },
+   "en": {
+    "q": "If a square matrix $A$ satisfies $A^2-5A+7I=O$, then $A^{-1}$ is",
+    "options": [
+     "$\\frac17(5I-A)$",
+     "$\\frac17(A-5I)$",
+     "$5I-A$",
+     "$\\frac15(7I-A)$"
+    ],
+    "explanation": "$A^2-5A=-7I$ gives $A(5I-A)=7I$. So $A\\cdot\\frac17(5I-A)=I$ and $A^{-1}=\\frac17(5I-A)$.",
+    "notes": [
+     "Correct.",
+     "Sign slip.",
+     "Forgets to divide by 7.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.2 Inverse of a matrix"
+    ],
+    "facts": [
+     "From $A^2+pA+qI=O$ with $q\\ne0$: $A^{-1}=-\\frac1q(A+pI)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-008",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 8,
+    "label": "Expected PGT 1 · Q8"
+   },
+   "en": {
+    "q": "If the eigenvalues of a $3\\times3$ matrix $A$ are $1, 2, 3$, then the eigenvalues of $\\operatorname{adj}A$ are",
+    "options": [
+     "$1, \\frac12, \\frac13$",
+     "$1, 4, 9$",
+     "$6, 6, 6$",
+     "$6, 3, 2$"
+    ],
+    "explanation": "$|A|=1\\cdot2\\cdot3=6$ and $\\operatorname{adj}A=|A|A^{-1}$. The eigenvalues of $A^{-1}$ are $1,\\frac12,\\frac13$, so those of $\\operatorname{adj}A$ are $6,3,2$.",
+    "notes": [
+     "Those are the eigenvalues of $A^{-1}$.",
+     "Those are the eigenvalues of $A^2$.",
+     "That is $|A|$ repeated.",
+     "Correct: $\\frac{|A|}{\\lambda}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "If $\\lambda$ is an eigenvalue of a non-singular $A$, then $\\frac{|A|}{\\lambda}$ is an eigenvalue of $\\operatorname{adj}A$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-009",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-03-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 9,
+    "label": "Expected PGT 1 · Q9 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "Vectors $x=(1,0,1)$, $y=(-4,a,4)$ and $z=(a,-1,-a)$ are linearly dependent in $\\mathbb R^3$, if $a$ is equal to",
+    "options": [
+     "2 only",
+     "$-2$ only",
+     "$\\pm2$ both",
+     "0"
+    ],
+    "explanation": "Three vectors in $\\mathbb R^3$ are dependent iff their determinant is 0: $\\begin{vmatrix}1&0&1\\\\-4&a&4\\\\a&-1&-a\\end{vmatrix}=1(-a^2+4)-0+1(4-a^2)=8-2a^2=0$, so $a=\\pm2$.",
+    "notes": [
+     "Misses the negative root.",
+     "Misses the positive root.",
+     "Correct: $8-2a^2=0$.",
+     "At $a=0$ the determinant is 8."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.2 Linear dependence, basis, dimension"
+    ],
+    "facts": [
+     "$n$ vectors in $\\mathbb R^n$ are linearly dependent iff the determinant of their components is 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-010",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-15-09",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 10,
+    "label": "Expected PGT 1 · Q10 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "The motion of a projectile is described by the equation $y=ax-bx^2$. Range of the projectile is",
+    "options": [
+     "$\\frac a{2b}$",
+     "$\\frac{2a}b$",
+     "$\\frac{a^2}{4b}$",
+     "$\\frac ab$"
+    ],
+    "explanation": "The projectile is back on the ground ($y=0$) where $x(a-bx)=0$, i.e. at $x=0$ and $x=\\frac ab$. So the range is $\\frac ab$. (The greatest height $\\frac{a^2}{4b}$ is at $x=\\frac a{2b}$.)",
+    "notes": [
+     "That is the $x$ of the highest point.",
+     "Takes the top of the path at $x=\\frac ab$ (from $a-bx=0$: the 2 of $2bx$ dropped) and doubles it.",
+     "That is the greatest height, not the range.",
+     "Correct: $y=0$ at $x=\\frac ab$."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.9 Projectiles"
+    ],
+    "facts": [
+     "For a trajectory $y=ax-bx^2$: range $\\frac ab$, greatest height $\\frac{a^2}{4b}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-011",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-15-10",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 11,
+    "label": "Expected PGT 1 · Q11"
+   },
+   "en": {
+    "q": "A pump lifts 1800 kg of water per minute through a height of 20 m. Its power is ($g=10$ m/s$^2$)",
+    "options": [
+     "360 kW",
+     "0.6 kW",
+     "6 kW",
+     "3 kW"
+    ],
+    "explanation": "Work per minute $=mgh=1800\\times10\\times20=360000$ J. Power $=\\frac{360000}{60}=6000$ W $=6$ kW.",
+    "notes": [
+     "Work per minute taken as power (no division by 60).",
+     "Leaves out $g$.",
+     "Correct: $\\frac{1800\\cdot10\\cdot20}{60}$ W.",
+     "Takes half the work."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.10 Work, power and energy"
+    ],
+    "facts": [
+     "Power = work done per second; 1 kW = 1000 W."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-012",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-06-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 12,
+    "label": "Expected PGT 1 · Q12 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "The least possible value of '$a$' for which the function $f(x)=x^2+ax+1$ may be increasing in the interval $[1,2]$ is",
+    "options": [
+     "$-2$",
+     "2",
+     "1",
+     "0"
+    ],
+    "explanation": "$f'(x)=2x+a$ is least on $[1,2]$ at $x=1$. $f$ is increasing on $[1,2]$ when $2+a\\ge0$, i.e. $a\\ge-2$. The least value is $a=-2$ (then $f'(x)=2x-2>0$ for $x>1$).",
+    "notes": [
+     "Correct: $f'(1)=2+a\\ge0$.",
+     "Sign slip in $2+a\\ge0$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.3 Increasing and decreasing functions"
+    ],
+    "facts": [
+     "A function is increasing on an interval if $f'\\ge0$ there (zero only at isolated points)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-013",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-04-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 13,
+    "label": "Expected PGT 1 · Q13"
+   },
+   "en": {
+    "q": "Match List – I (Permutation in $S_6$) with List – II (Order). List – I: a. $(1\\ 2\\ 3)(4\\ 5)$, b. $\\begin{pmatrix}1&2&3&4&5&6\\\\2&3&4&1&6&5\\end{pmatrix}$, c. $(1\\ 2)(3\\ 4)(5\\ 6)$, d. $(1\\ 4\\ 2)(3\\ 6\\ 5)$. List – II: I. 4, II. 3, III. 6, IV. 2. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a – III, b – I, c – IV, d – II",
+     "a – III, b – IV, c – I, d – II",
+     "a – II, b – I, c – IV, d – III",
+     "a – I, b – III, c – IV, d – II"
+    ],
+    "explanation": "The order of a product of disjoint cycles is the l.c.m. of their lengths. a: lcm(3, 2) = 6 (III). b: $1\\to2\\to3\\to4\\to1$ and $5\\leftrightarrow6$, i.e. $(1\\ 2\\ 3\\ 4)(5\\ 6)$: lcm(4, 2) = 4 (I). c: lcm(2, 2, 2) = 2 (IV). d: lcm(3, 3) = 3 (II).",
+    "notes": [
+     "Correct.",
+     "Swaps b and c.",
+     "Swaps a and d.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.4 Permutations and the symmetric group Sn"
+    ],
+    "facts": [
+     "Order of a permutation = l.c.m. of the lengths of its disjoint cycles."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-014",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-14-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 14,
+    "label": "Expected PGT 1 · Q14 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "If $\\operatorname{div}(r^n\\vec r)=0$, then $n$ is equal to",
+    "options": [
+     "1",
+     "2",
+     "$-1$",
+     "$-3$"
+    ],
+    "explanation": "$\\operatorname{div}(r^n\\vec r)=r^n\\operatorname{div}\\vec r+\\nabla(r^n)\\cdot\\vec r=3r^n+nr^{n-2}\\vec r\\cdot\\vec r=(n+3)r^n$. This is 0 for $n=-3$.",
+    "notes": [
+     "",
+     "",
+     "Takes $\\operatorname{div}\\vec r=1$.",
+     "Correct: $(n+3)r^n=0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.2 Gradient, divergence and curl"
+    ],
+    "facts": [
+     "$\\operatorname{div}\\vec r=3$, $\\nabla r^n=nr^{n-2}\\vec r$, and $\\operatorname{div}(r^n\\vec r)=(n+3)r^n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-015",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 15,
+    "label": "Expected PGT 1 · Q15"
+   },
+   "en": {
+    "q": "The length of the latus rectum of the hyperbola $9x^2-16y^2=144$ is",
+    "options": [
+     "$\\frac{32}3$",
+     "$\\frac94$",
+     "$\\frac32$",
+     "$\\frac92$"
+    ],
+    "explanation": "Dividing by 144: $\\frac{x^2}{16}-\\frac{y^2}{9}=1$, so $a=4$, $b=3$. The latus rectum is $\\frac{2b^2}{a}=\\frac{2\\cdot9}{4}=\\frac92$.",
+    "notes": [
+     "That is $\\frac{2a^2}{b}$: the roles of $a$ and $b$ interchanged.",
+     "Forgets the factor 2: $\\frac{b^2}{a}$ is the semi-latus rectum.",
+     "$\\frac{2b}{a}$: $b$ not squared.",
+     "Correct: $\\frac{2b^2}{a}=\\frac{18}{4}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "For $\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1$ (as for the ellipse) the latus rectum is $\\frac{2b^2}{a}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-016",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 16,
+    "label": "Expected PGT 1 · Q16"
+   },
+   "en": {
+    "q": "$\\int\\frac{2x+3}{(x-1)(x+2)}dx$ is equal to",
+    "options": [
+     "$\\frac13\\log|x-1|+\\frac53\\log|x+2|+C$",
+     "$\\frac53\\log|x-1|-\\frac13\\log|x+2|+C$",
+     "$\\log|(x-1)(x+2)|+C$",
+     "$\\frac53\\log|x-1|+\\frac13\\log|x+2|+C$"
+    ],
+    "explanation": "$\\frac{2x+3}{(x-1)(x+2)}=\\frac A{x-1}+\\frac B{x+2}$. Cover-up: $A=\\frac{2+3}{1+2}=\\frac53$ (at $x=1$), $B=\\frac{-4+3}{-2-1}=\\frac13$ (at $x=-2$). Integrating each term gives $\\frac53\\log|x-1|+\\frac13\\log|x+2|+C$.",
+    "notes": [
+     "Coefficients interchanged.",
+     "Sign slip in the second coefficient.",
+     "That integrates $\\frac{2x+1}{(x-1)(x+2)}$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "Cover-up rule: for a simple factor $(x-a)$ of the denominator, $A$ = the rest of the fraction evaluated at $x=a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-017",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-10-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 17,
+    "label": "Expected PGT 1 · Q17"
+   },
+   "en": {
+    "q": "The modulus of $\\frac{1+7i}{(2-i)^2}$ is",
+    "options": [
+     "$5\\sqrt2$",
+     "$\\sqrt2$",
+     "$\\sqrt{10}$",
+     "2"
+    ],
+    "explanation": "$|1+7i|=\\sqrt{50}=5\\sqrt2$ and $|(2-i)^2|=|2-i|^2=5$. So the modulus is $\\frac{5\\sqrt2}{5}=\\sqrt2$.",
+    "notes": [
+     "Forgets the denominator.",
+     "Correct.",
+     "Divides by $|2-i|$ only once.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.1 Complex numbers: basic definitions"
+    ],
+    "facts": [
+     "$\\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|}$ and $|z^n|=|z|^n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-018",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-13-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 18,
+    "label": "Expected PGT 1 · Q18"
+   },
+   "en": {
+    "q": "The distance between the parallel planes $2x-2y+z+3=0$ and $4x-4y+2z+5=0$ is",
+    "options": [
+     "$\\frac23$",
+     "$\\frac16$",
+     "$\\frac{11}6$",
+     "$\\frac13$"
+    ],
+    "explanation": "Write the second plane as $2x-2y+z+\\frac52=0$. Distance $=\\frac{\\left|3-\\frac52\\right|}{\\sqrt{4+4+1}}=\\frac{1/2}{3}=\\frac16$.",
+    "notes": [
+     "Uses $|3-5|$ without first making the coefficients equal.",
+     "Correct.",
+     "Adds the constants.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.2 The plane"
+    ],
+    "facts": [
+     "Distance between $ax+by+cz+d_1=0$ and $ax+by+cz+d_2=0$ is $\\frac{|d_1-d_2|}{\\sqrt{a^2+b^2+c^2}}$ (same coefficients first)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-019",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 19,
+    "label": "Expected PGT 1 · Q19"
+   },
+   "en": {
+    "q": "Match List – I (Integral) with List – II (Value of the integral). List – I: a. $\\int\\frac{dx}{\\sqrt{a^2-x^2}}$, b. $\\int\\frac{dx}{\\sqrt{x^2-a^2}}$, c. $\\int\\frac{dx}{x\\sqrt{x^2-a^2}}$, d. $\\int\\sqrt{a^2-x^2}\\,dx$. List – II: I. $\\frac1a\\sec^{-1}\\frac xa+C$, II. $\\log\\left|x+\\sqrt{x^2-a^2}\\right|+C$, III. $\\frac x2\\sqrt{a^2-x^2}+\\frac{a^2}2\\sin^{-1}\\frac xa+C$, IV. $\\sin^{-1}\\frac xa+C$. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a – IV, b – I, c – II, d – III",
+     "a – III, b – II, c – I, d – IV",
+     "a – II, b – IV, c – III, d – I",
+     "a – IV, b – II, c – I, d – III"
+    ],
+    "explanation": "Standard forms: $\\int\\frac{dx}{\\sqrt{a^2-x^2}}=\\sin^{-1}\\frac xa$ (IV); $\\int\\frac{dx}{\\sqrt{x^2-a^2}}=\\log\\left|x+\\sqrt{x^2-a^2}\\right|$ (II); $\\int\\frac{dx}{x\\sqrt{x^2-a^2}}=\\frac1a\\sec^{-1}\\frac xa$ (I); $\\int\\sqrt{a^2-x^2}\\,dx=\\frac x2\\sqrt{a^2-x^2}+\\frac{a^2}2\\sin^{-1}\\frac xa$ (III).",
+    "notes": [
+     "Swaps b and c.",
+     "Swaps a and d.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.1 Indefinite integrals: standard forms"
+    ],
+    "facts": [
+     "Check a standard form by differentiating it: $\\frac{d}{dx}\\sec^{-1}\\frac xa=\\frac{a}{x\\sqrt{x^2-a^2}}$ for $x>a>0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-020",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-11-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 20,
+    "label": "Expected PGT 1 · Q20"
+   },
+   "en": {
+    "q": "The pair of lines $x^2-4xy+y^2=0$ and the line $x+y+\\sqrt6=0$ form a triangle which is",
+    "options": [
+     "right-angled",
+     "isosceles but not equilateral",
+     "equilateral",
+     "obtuse-angled"
+    ],
+    "explanation": "The slopes satisfy $m^2-4m+1=0$, so $m=2\\pm\\sqrt3=\\tan75^\\circ,\\ \\tan15^\\circ$: the two lines are inclined at $75^\\circ$ and $15^\\circ$, at $60^\\circ$ to each other. The line $x+y+\\sqrt6=0$ is inclined at $135^\\circ$, which makes $60^\\circ$ with each of them. All three angles are $60^\\circ$: the triangle is equilateral.",
+    "notes": [
+     "",
+     "It is isosceles, but in fact all three angles are $60^\\circ$.",
+     "Correct: every angle is $60^\\circ$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.2 Pair of straight lines"
+    ],
+    "facts": [
+     "For $ax^2+2hxy+by^2=0$ the angle between the lines is given by $\\tan\\theta=\\frac{2\\sqrt{h^2-ab}}{|a+b|}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-021",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 21,
+    "label": "Expected PGT 1 · Q21"
+   },
+   "en": {
+    "q": "The Cayley–Hamilton theorem states that",
+    "options": [
+     "every square matrix is similar to a diagonal matrix",
+     "the eigenvalues of a real symmetric matrix are real",
+     "the sum of the eigenvalues of a matrix equals its determinant",
+     "every square matrix satisfies its own characteristic equation"
+    ],
+    "explanation": "If the characteristic equation $|A-\\lambda I|=0$ is $\\lambda^n+c_1\\lambda^{n-1}+\\dots+c_n=0$, then $A^n+c_1A^{n-1}+\\dots+c_nI=O$: every square matrix satisfies its own characteristic equation.",
+    "notes": [
+     "False in general: $\\begin{bmatrix}0&1\\\\0&0\\end{bmatrix}$ is not diagonalisable.",
+     "True, but a different theorem.",
+     "The sum equals the trace; the product equals the determinant.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "Cayley–Hamilton gives $A^{-1}$ and high powers of $A$ from the characteristic polynomial."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-022",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 22,
+    "label": "Expected PGT 1 · Q22"
+   },
+   "en": {
+    "q": "The general solution of $x\\frac{dy}{dx}=y+x\\tan\\frac yx$ is",
+    "options": [
+     "$\\sin\\frac yx=Cx$",
+     "$\\cos\\frac yx=Cx$",
+     "$\\tan\\frac yx=Cx$",
+     "$\\sin\\frac yx=\\frac Cx$"
+    ],
+    "explanation": "The equation is homogeneous; put $y=vx$. Then $x\\left(v+x\\frac{dv}{dx}\\right)=vx+x\\tan v$, so $x\\frac{dv}{dx}=\\tan v$, i.e. $\\cot v\\,dv=\\frac{dx}x$. Integrating, $\\log\\sin v=\\log x+\\log C$: $\\sin\\frac yx=Cx$.",
+    "notes": [
+     "Correct.",
+     "Integrates $\\cot v$ as $\\log\\cos v$.",
+     "",
+     "Sign slip in $\\int\\frac{dx}x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "For $\\frac{dy}{dx}=F\\left(\\frac yx\\right)$ put $y=vx$ and separate."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-023",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-03-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 23,
+    "label": "Expected PGT 1 · Q23"
+   },
+   "en": {
+    "q": "Let $T:\\mathbb R^3\\to\\mathbb R^3$ be the linear map $T(x,y,z)=(x-y,\\ y-z,\\ z-x)$. The range of $T$ is",
+    "options": [
+     "$\\{(a,b,c):a=b=c\\}$",
+     "$\\{(a,b,c):a+b+c=0\\}$",
+     "$\\mathbb R^3$",
+     "$\\{(a,b,c):a-b+c=0\\}$"
+    ],
+    "explanation": "Every image vector satisfies $(x-y)+(y-z)+(z-x)=0$, so the range lies in the plane $a+b+c=0$. The kernel is $\\{(t,t,t)\\}$ (nullity 1), so the rank is $3-1=2$ and the range is the whole plane $\\{(a,b,c):a+b+c=0\\}$.",
+    "notes": [
+     "That is the kernel of $T$.",
+     "Correct: the components always add up to 0, and the rank is 2.",
+     "The rank is 2, not 3: $T$ is not onto.",
+     "$T(0,1,0)=(-1,1,0)$ does not satisfy $a-b+c=0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.3 Linear transformations"
+    ],
+    "facts": [
+     "Rank–nullity: $\\operatorname{rank}T+\\operatorname{nullity}T=\\dim(\\text{domain})$; the range is spanned by the images of a basis."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-024",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-09-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 24,
+    "label": "Expected PGT 1 · Q24"
+   },
+   "en": {
+    "q": "In a triangle $ABC$, if $a\\cos A=b\\cos B$, then the triangle is",
+    "options": [
+     "equilateral",
+     "right-angled only",
+     "isosceles or right-angled",
+     "isosceles only"
+    ],
+    "explanation": "By the sine rule, $\\sin A\\cos A=\\sin B\\cos B$, i.e. $\\sin2A=\\sin2B$. So $2A=2B$ or $2A=\\pi-2B$: $A=B$ (isosceles) or $A+B=\\frac\\pi2$ (right-angled at $C$).",
+    "notes": [
+     "",
+     "Misses the case $A=B$.",
+     "Correct.",
+     "Misses the case $A+B=90^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.5 Properties and solution of triangles"
+    ],
+    "facts": [
+     "In a triangle, $\\sin2A=\\sin2B\\Rightarrow A=B$ or $A+B=90^\\circ$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-025",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 25,
+    "label": "Expected PGT 1 · Q25"
+   },
+   "en": {
+    "q": "If $y=x^{\\sin x}$, then $\\frac{dy}{dx}$ at $x=\\frac\\pi2$ is",
+    "options": [
+     "0",
+     "$\\frac2\\pi$",
+     "$\\frac\\pi2$",
+     "1"
+    ],
+    "explanation": "$\\log y=\\sin x\\log x$, so $\\frac1y\\frac{dy}{dx}=\\cos x\\log x+\\frac{\\sin x}{x}$. At $x=\\frac\\pi2$: $y=\\frac\\pi2$ and the bracket is $0+\\frac2\\pi$. So $\\frac{dy}{dx}=\\frac\\pi2\\cdot\\frac2\\pi=1$.",
+    "notes": [
+     "Keeps only the term $\\cos x\\log x$.",
+     "Forgets to multiply by $y=\\frac\\pi2$.",
+     "That is the value of $y$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "For $f(x)^{g(x)}$ take logarithms first."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-026",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-03-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 26,
+    "label": "Expected PGT 1 · Q26"
+   },
+   "en": {
+    "q": "Match List – I (Real vector space) with List – II (Dimension). List – I: a. $3\\times3$ skew-symmetric matrices, b. polynomials of degree at most 4, c. $3\\times3$ upper triangular matrices, d. $3\\times3$ matrices with trace zero. List – II: I. 6, II. 8, III. 3, IV. 5. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a – I, b – IV, c – III, d – II",
+     "a – III, b – II, c – I, d – IV",
+     "a – III, b – IV, c – II, d – I",
+     "a – III, b – IV, c – I, d – II"
+    ],
+    "explanation": "a: the entries above the diagonal decide the matrix: $\\frac{3\\cdot2}2=3$ (III). b: basis $1,x,x^2,x^3,x^4$: 5 (IV). c: entries on and above the diagonal: $\\frac{3\\cdot4}2=6$ (I). d: one linear condition on 9 entries: $9-1=8$ (II).",
+    "notes": [
+     "Swaps the skew-symmetric (3) and upper triangular (6) counts.",
+     "Swaps b and d.",
+     "Swaps c and d.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.2 Linear dependence, basis, dimension"
+    ],
+    "facts": [
+     "$n\\times n$ matrices: symmetric and upper triangular $\\frac{n(n+1)}2$, skew-symmetric $\\frac{n(n-1)}2$, trace zero $n^2-1$; $\\dim P_n=n+1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-027",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 27,
+    "label": "Expected PGT 1 · Q27"
+   },
+   "en": {
+    "q": "If the coefficients of three consecutive terms in the expansion of $(1+x)^n$ are in the ratio $1:2:3$, then $n$ is equal to",
+    "options": [
+     "15",
+     "14",
+     "7",
+     "12"
+    ],
+    "explanation": "Let the coefficients be $\\binom n{r-1},\\binom nr,\\binom n{r+1}$. Then $\\frac{n-r+1}{r}=2$ gives $n=3r-1$, and $\\frac{n-r}{r+1}=\\frac32$ gives $2n=5r+3$. So $6r-2=5r+3$, $r=5$, $n=14$. Check: $\\binom{14}4:\\binom{14}5:\\binom{14}6=1001:2002:3003=1:2:3$.",
+    "notes": [
+     "Off-by-one ratio $\\frac{n-r}{r}$ in place of $\\frac{n-r+1}{r}$: then $n=3r$ and $2n=5r+5$, so $r=5$, $n=15$.",
+     "Correct: $1001:2002:3003$.",
+     "That is the value for the ratio $1:3:5$.",
+     "For $n=12$ the ratio 2 needs $\\frac{13-r}{r}=2$, i.e. $r=\\frac{13}3$: no such three terms."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "$\\binom nr\\Big/\\binom n{r-1}=\\frac{n-r+1}{r}$: the tool for ratios of consecutive binomial coefficients."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-028",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-10-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 28,
+    "label": "Expected PGT 1 · Q28 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "The value of $(1+i\\sqrt3)^{10}+(1-i\\sqrt3)^{10}$ is",
+    "options": [
+     "$-1024$",
+     "2048",
+     "1024",
+     "$-2048$"
+    ],
+    "explanation": "$1\\pm i\\sqrt3=2e^{\\pm i\\pi/3}$. The sum is $2^{10}\\cdot2\\cos\\frac{10\\pi}{3}=2^{11}\\cos\\frac{4\\pi}{3}=2048\\cdot\\left(-\\frac12\\right)=-1024$.",
+    "notes": [
+     "Correct.",
+     "Takes $\\cos\\frac{10\\pi}3=1$.",
+     "Sign of $\\cos\\frac{10\\pi}{3}$ missed.",
+     "Forgets the factor $\\frac12$ of the cosine."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.4 Polar form, Euler's form and De Moivre's theorem"
+    ],
+    "facts": [
+     "$z^n+\\bar z^n=2r^n\\cos n\\theta$ for $z=re^{i\\theta}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-029",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-11-06",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 29,
+    "label": "Expected PGT 1 · Q29 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "Let $S$ and $S'$ be the foci and $BB'$ be the minor axis of an ellipse. If $\\angle BSS'=\\theta$, then the eccentricity of the ellipse is",
+    "options": [
+     "$\\sin\\theta$",
+     "$\\tan\\theta$",
+     "$\\cos\\theta$",
+     "$\\cot\\theta$"
+    ],
+    "explanation": "With centre $O$, $S=(ae,0)$, $B=(0,b)$: $BS=\\sqrt{a^2e^2+b^2}=a$. In the right triangle $BOS$, $\\cos\\theta=\\frac{OS}{BS}=\\frac{ae}{a}=e$.",
+    "notes": [
+     "$\\sin\\theta=\\frac ba$.",
+     "$\\tan\\theta=\\frac{b}{ae}$.",
+     "Correct: $\\cos\\theta=\\frac{ae}{a}$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.6 Ellipse"
+    ],
+    "facts": [
+     "The distance from an end of the minor axis to either focus equals $a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-030",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-03-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 30,
+    "label": "Expected PGT 1 · Q30 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "The dimension of the subspace $W$ of the vector space $V$ of all $2\\times2$ matrices over the real numbers, defined by $W=\\left\\{\\begin{bmatrix}a&b\\\\c&a+b+c\\end{bmatrix}:a,b,c\\in\\mathbb R\\right\\}$, is",
+    "options": [
+     "1",
+     "3",
+     "2",
+     "4"
+    ],
+    "explanation": "$\\begin{bmatrix}a&b\\\\c&a+b+c\\end{bmatrix}=a\\begin{bmatrix}1&0\\\\0&1\\end{bmatrix}+b\\begin{bmatrix}0&1\\\\0&1\\end{bmatrix}+c\\begin{bmatrix}0&0\\\\1&1\\end{bmatrix}$. The three matrices are independent (compare the $(1,1)$, $(1,2)$, $(2,1)$ entries), so $\\dim W=3$.",
+    "notes": [
+     "",
+     "Correct: three free parameters.",
+     "",
+     "That is $\\dim V$; the $(2,2)$ entry is not free."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.2 Linear dependence, basis, dimension"
+    ],
+    "facts": [
+     "Dimension = number of free parameters after the defining conditions."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-031",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 31,
+    "label": "Expected PGT 1 · Q31"
+   },
+   "en": {
+    "q": "In how many ways can 5 boys and 5 girls sit at a round table so that no two girls are together?",
+    "options": [
+     "14400",
+     "576",
+     "1440",
+     "2880"
+    ],
+    "explanation": "Seat the boys first: $(5-1)!=24$ ways. The 5 gaps between them take the 5 girls in $5!=120$ ways. Total $24\\times120=2880$.",
+    "notes": [
+     "$5!\\times5!$: the boys arranged as in a row, not round a table.",
+     "$4!\\times4!$: the girls also arranged circularly.",
+     "Halves the count as if clockwise and anticlockwise were the same.",
+     "Correct: $4!\\times5!$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "$n$ people round a table: $(n-1)!$ ways; for 'no two together', seat the others first and fill the gaps."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-032",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 32,
+    "label": "Expected PGT 1 · Q32"
+   },
+   "en": {
+    "q": "If $A=\\begin{bmatrix}2&4&-6\\\\0&3&5\\\\2&1&7\\end{bmatrix}$ is expressed as $P+Q$, where $P$ is a symmetric and $Q$ a skew-symmetric matrix, then $Q$ is equal to",
+    "options": [
+     "$\\begin{bmatrix}0&2&-4\\\\-2&0&2\\\\4&-2&0\\end{bmatrix}$",
+     "$\\begin{bmatrix}0&-2&4\\\\2&0&-2\\\\-4&2&0\\end{bmatrix}$",
+     "$\\begin{bmatrix}0&4&-8\\\\-4&0&4\\\\8&-4&0\\end{bmatrix}$",
+     "$\\begin{bmatrix}2&2&-2\\\\2&3&3\\\\-2&3&7\\end{bmatrix}$"
+    ],
+    "explanation": "The decomposition is unique: $P=\\frac12(A+A^T)$ and $Q=\\frac12(A-A^T)$. Here $A-A^T=\\begin{bmatrix}0&4&-8\\\\-4&0&4\\\\8&-4&0\\end{bmatrix}$, so $Q=\\begin{bmatrix}0&2&-4\\\\-2&0&2\\\\4&-2&0\\end{bmatrix}$. (Check: $P=\\begin{bmatrix}2&2&-2\\\\2&3&3\\\\-2&3&7\\end{bmatrix}$ and $P+Q=A$.)",
+    "notes": [
+     "Correct: $Q=\\frac12(A-A^T)$.",
+     "This is $\\frac12(A^T-A)=-Q$: the transpose subtracted the wrong way round.",
+     "This is $A-A^T$: the factor $\\frac12$ is missing.",
+     "This is the symmetric part $P=\\frac12(A+A^T)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "Every square matrix is uniquely $A=\\frac12(A+A^T)+\\frac12(A-A^T)$: a symmetric part plus a skew-symmetric part."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-033",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 33,
+    "label": "Expected PGT 1 · Q33"
+   },
+   "en": {
+    "q": "$\\lim_{x\\to0}\\frac{1-\\cos2x}{x\\sin x}$ is equal to",
+    "options": [
+     "3",
+     "1",
+     "2",
+     "0"
+    ],
+    "explanation": "$1-\\cos2x=2\\sin^2x$, so the expression is $\\frac{2\\sin^2x}{x\\sin x}=\\frac{2\\sin x}{x}\\to2$.",
+    "notes": [
+     "",
+     "Uses $1-\\cos2x=\\sin^2x$ (the factor 2 is lost).",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "$1-\\cos2x=2\\sin^2x$ and $\\lim_{x\\to0}\\frac{\\sin x}x=1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-034",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 34,
+    "label": "Expected PGT 1 · Q34 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "If $h>0$ and the equation $9x^2+2hxy+4y^2+6x+2fy=3$ represents two parallel lines, then $(h+f)$ is equal to",
+    "options": [
+     "2",
+     "8",
+     "6",
+     "0"
+    ],
+    "explanation": "Parallel lines need $h^2=ab=36$ and $\\frac ah=\\frac hb=\\frac gf$ (here $g=3$). With $h>0$, $h=6$; then $\\frac96=\\frac3f$ gives $f=2$, so $h+f=8$. Check: $9x^2+12xy+4y^2+6x+4y-3=(3x+2y)^2+2(3x+2y)-3=(3x+2y+3)(3x+2y-1)$. (Without $h>0$, $h=-6$, $f=-2$ would also do, giving $-8$.)",
+    "notes": [
+     "That is $f$ alone.",
+     "Correct: $h=6$, $f=2$.",
+     "That is $h$ alone.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.2 Pair of straight lines"
+    ],
+    "facts": [
+     "$ax^2+2hxy+by^2+2gx+2fy+c=0$ is a pair of parallel lines when $h^2=ab$ and $af^2=bg^2$ (i.e. $\\frac ah=\\frac hb=\\frac gf$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-035",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-06",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 35,
+    "label": "Expected PGT 1 · Q35"
+   },
+   "en": {
+    "q": "The surface area of the solid generated by revolving the arc of the curve $y=f(x)$ from $x=a$ to $x=b$ about the $x$-axis is",
+    "options": [
+     "$\\pi\\int_a^by^2\\,dx$",
+     "$2\\pi\\int_a^by\\,dx$",
+     "$2\\pi\\int_a^bx\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}\\,dx$",
+     "$2\\pi\\int_a^by\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}\\,dx$"
+    ],
+    "explanation": "A small arc $ds=\\sqrt{1+y'^2}\\,dx$ at height $y$ sweeps a band of area $2\\pi y\\,ds$. So $S=2\\pi\\int_a^by\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}\\,dx$.",
+    "notes": [
+     "That is the volume of the solid.",
+     "Uses $dx$ in place of the arc element $ds$.",
+     "That is the surface for revolution about the $y$-axis.",
+     "Correct: $2\\pi\\int y\\,ds$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.6 Volumes and surfaces of solids of revolution — formulas"
+    ],
+    "facts": [
+     "Surface of revolution $=2\\pi\\int y\\,ds$; volume $=\\pi\\int y^2\\,dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-036",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-03-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 36,
+    "label": "Expected PGT 1 · Q36"
+   },
+   "en": {
+    "q": "Which of the following statements are correct? a. The intersection of two subspaces of a vector space $V$ is a subspace of $V$. b. The union of two subspaces of $V$ is always a subspace of $V$. c. $\\{(x,y,z)\\in\\mathbb R^3:x+y+z=0\\}$ is a subspace of $\\mathbb R^3$. d. $\\{(x,y,z)\\in\\mathbb R^3:x+y+z=1\\}$ is a subspace of $\\mathbb R^3$. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a, b and c only",
+     "a, c and d only",
+     "a and c only",
+     "b and d only"
+    ],
+    "explanation": "(a) True. (b) False: the $x$-axis $\\cup$ the $y$-axis in $\\mathbb R^2$ contains $(1,0)$ and $(0,1)$ but not their sum. (c) True: the solutions of a homogeneous linear equation. (d) False: $(0,0,0)$ is not in it. So a and c.",
+    "notes": [
+     "b is false.",
+     "d is false: it does not contain $\\vec 0$.",
+     "Correct.",
+     "Both b and d are false."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.1 Vector spaces and subspaces"
+    ],
+    "facts": [
+     "A union of two subspaces is a subspace only when one contains the other; every subspace contains $\\vec 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-037",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 37,
+    "label": "Expected PGT 1 · Q37"
+   },
+   "en": {
+    "q": "The value of $\\operatorname{cosec}10^\\circ-\\sqrt3\\sec10^\\circ$ is",
+    "options": [
+     "$2$",
+     "$8$",
+     "$4$",
+     "$1$"
+    ],
+    "explanation": "$\\operatorname{cosec}10^\\circ-\\sqrt3\\sec10^\\circ$ $=\\frac{\\cos10^\\circ-\\sqrt3\\sin10^\\circ}{\\sin10^\\circ\\cos10^\\circ}$.\nNumerator: $2\\left(\\frac12\\cos10^\\circ-\\frac{\\sqrt3}2\\sin10^\\circ\\right)$ $=2\\sin(30^\\circ-10^\\circ)=2\\sin20^\\circ$. Denominator: $\\sin10^\\circ\\cos10^\\circ=\\frac12\\sin20^\\circ$.\nSo the value is $\\frac{2\\sin20^\\circ}{\\frac12\\sin20^\\circ}=4$.",
+    "notes": [
+     "Drops the $\\frac12$: $\\sin10^\\circ\\cos10^\\circ=\\frac12\\sin20^\\circ$, not $\\sin20^\\circ$.",
+     "Takes $\\sin10^\\circ\\cos10^\\circ=\\frac14\\sin20^\\circ$; the factor is $\\frac12$.",
+     "Correct: $\\frac{2\\sin20^\\circ}{\\frac12\\sin20^\\circ}=4$.",
+     "Loses both factors: the 2 in $\\cos10^\\circ-\\sqrt3\\sin10^\\circ$ $=2\\sin20^\\circ$ and the $\\frac12$ in $\\sin10^\\circ\\cos10^\\circ=\\frac12\\sin20^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "$\\cos\\theta-\\sqrt3\\sin\\theta$ $=2\\sin(30^\\circ-\\theta)$: write $a\\cos\\theta+b\\sin\\theta$ as one sine or cosine, then use $2\\sin\\theta\\cos\\theta=\\sin2\\theta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-038",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-07-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 38,
+    "label": "Expected PGT 1 · Q38"
+   },
+   "en": {
+    "q": "The area (in sq. units) enclosed by the ellipse $4x^2+9y^2=36$ is",
+    "options": [
+     "$36\\pi$",
+     "$6\\pi$",
+     "$\\frac{3\\pi}2$",
+     "$12\\pi$"
+    ],
+    "explanation": "$\\frac{x^2}9+\\frac{y^2}4=1$: $a=3$, $b=2$. By symmetry the area is $4\\int_0^3\\frac23\\sqrt{9-x^2}\\,dx=4\\cdot\\frac23\\cdot\\frac{9\\pi}4=6\\pi$, i.e. $\\pi ab$.",
+    "notes": [
+     "Multiplies the denominators $9\\cdot4$ instead of $a\\cdot b$.",
+     "Correct: $\\pi ab=\\pi\\cdot3\\cdot2$.",
+     "That is one quadrant only.",
+     "Takes $2\\pi ab$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.5 Area under and between curves"
+    ],
+    "facts": [
+     "The ellipse $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$ encloses the area $\\pi ab$ (a circle when $a=b$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-039",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-05-06",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 39,
+    "label": "Expected PGT 1 · Q39 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "$\\lim_{x\\to0}\\frac{(x+1)^5-1}{(x+1)^7-1}$ is equal to",
+    "options": [
+     "$\\frac75$",
+     "$\\frac27$",
+     "$\\frac25$",
+     "$\\frac57$"
+    ],
+    "explanation": "$(1+x)^n-1=nx+\\dots$, so the ratio tends to $\\frac{5x}{7x}=\\frac57$. (Or L'Hospital: $\\frac{5(1+x)^4}{7(1+x)^6}\\to\\frac57$.)",
+    "notes": [
+     "Inverted ratio.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.6 Limits"
+    ],
+    "facts": [
+     "$\\lim_{x\\to0}\\frac{(1+x)^n-1}{x}=n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-040",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-16-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 40,
+    "label": "Expected PGT 1 · Q40"
+   },
+   "en": {
+    "q": "If $A$ and $B$ are independent events with $P(A)=0.4$ and $P(A\\cup B)=0.7$, then $P(B)$ is",
+    "options": [
+     "0.3",
+     "0.5",
+     "0.75",
+     "0.6"
+    ],
+    "explanation": "$P(A\\cup B)=P(A)+P(B)-P(A)P(B)$: $0.7=0.4+p-0.4p$, so $0.6p=0.3$ and $p=0.5$.",
+    "notes": [
+     "Treats $A$ and $B$ as mutually exclusive.",
+     "Correct.",
+     "",
+     "That is $P(A')$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "16.2 Conditional probability, multiplication theorem, independent events"
+    ],
+    "facts": [
+     "For independent events $P(A\\cap B)=P(A)P(B)$, so $P(A\\cup B)=1-P(A')P(B')$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-041",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 41,
+    "label": "Expected PGT 1 · Q41 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "If $y=2x+c$ touches the parabola $y^2=8(x+2)$, then",
+    "options": [
+     "$c=3$",
+     "$c=2$",
+     "$c=1$",
+     "$c=5$"
+    ],
+    "explanation": "Put $X=x+2$: the parabola is $y^2=8X$ ($a=2$) and the line is $y=2X+(c-4)$. Tangency of $y=mX+k$ to $y^2=4aX$ needs $k=\\frac am=1$, so $c-4=1$, $c=5$. Check: $(2x+5)^2=8(x+2)$ gives $(2x+3)^2=0$, a double root.",
+    "notes": [
+     "",
+     "",
+     "$c=\\frac am$ for $y^2=8x$, forgetting the shift of origin.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "$y=mx+c$ touches $y^2=4ax$ iff $c=\\frac am$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-042",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 42,
+    "label": "Expected PGT 1 · Q42"
+   },
+   "en": {
+    "q": "If $A$ is a $3\\times3$ matrix with $|A|=4$, then $|\\operatorname{adj}(2A)|$ is",
+    "options": [
+     "128",
+     "1024",
+     "64",
+     "32"
+    ],
+    "explanation": "For a $3\\times3$ matrix $B$, $|\\operatorname{adj}B|=|B|^2$. Here $|2A|=2^3\\cdot4=32$, so $|\\operatorname{adj}(2A)|=32^2=1024$.",
+    "notes": [
+     "That is $|2\\operatorname{adj}A|=2^3\\cdot16$.",
+     "Correct: $|2A|^2=32^2$.",
+     "$(2^2)^3$: forgets the factor $|\\operatorname{adj}A|=16$.",
+     "That is $|2A|$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "$|\\operatorname{adj}B|=|B|^{n-1}$ and $\\operatorname{adj}(kA)=k^{n-1}\\operatorname{adj}A$ for $n\\times n$ matrices."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-043",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 43,
+    "label": "Expected PGT 1 · Q43"
+   },
+   "en": {
+    "q": "If $y=\\tan^{-1}\\left(\\frac{3x-x^3}{1-3x^2}\\right)$, $|x|<\\frac1{\\sqrt3}$, then $\\frac{dy}{dx}$ is",
+    "options": [
+     "$\\frac1{1+x^2}$",
+     "$-\\frac3{1+x^2}$",
+     "$\\frac3{1+x^2}$",
+     "$\\frac3{1-x^2}$"
+    ],
+    "explanation": "Put $x=\\tan\\theta$ with $|\\theta|<\\frac\\pi6$: $\\frac{3x-x^3}{1-3x^2}=\\tan3\\theta$ and $3\\theta\\in\\left(-\\frac\\pi2,\\frac\\pi2\\right)$, so $y=3\\theta=3\\tan^{-1}x$ and $\\frac{dy}{dx}=\\frac3{1+x^2}$.",
+    "notes": [
+     "Misses the factor 3.",
+     "Sign slip.",
+     "Correct: $y=3\\tan^{-1}x$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "$\\tan3\\theta=\\frac{3\\tan\\theta-\\tan^3\\theta}{1-3\\tan^2\\theta}$; check that the angle stays in the principal range."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-044",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-09-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 44,
+    "label": "Expected PGT 1 · Q44"
+   },
+   "en": {
+    "q": "The general solution of $\\tan3x=\\tan x$ is",
+    "options": [
+     "$x=\\frac{n\\pi}2,\\ n\\in\\mathbb Z$",
+     "$x=\\frac{n\\pi}4,\\ n\\in\\mathbb Z$",
+     "$x=n\\pi,\\ n\\in\\mathbb Z$",
+     "$x=n\\pi+\\frac\\pi4,\\ n\\in\\mathbb Z$"
+    ],
+    "explanation": "$\\tan3x=\\tan x$ gives $3x=n\\pi+x$, i.e. $x=\\frac{n\\pi}2$. For odd $n$, $\\tan x$ and $\\tan3x$ are not defined, so these values are rejected. Hence $x=n\\pi$.",
+    "notes": [
+     "Includes $x=\\frac\\pi2$, where $\\tan x$ is not defined.",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.3 Trigonometric equations"
+    ],
+    "facts": [
+     "$\\tan\\alpha=\\tan\\beta\\Rightarrow\\alpha=n\\pi+\\beta$; then reject values where the tangent is undefined."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-045",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 45,
+    "label": "Expected PGT 1 · Q45"
+   },
+   "en": {
+    "q": "The value of $\\int_0^1\\frac{x^4(1-x)^4}{1+x^2}dx$ is",
+    "options": [
+     "$\\frac{22}7$",
+     "$\\frac{22}7+\\pi$",
+     "$\\frac{22}7-\\frac\\pi4$",
+     "$\\frac{22}7-\\pi$"
+    ],
+    "explanation": "$x^4(1-x)^4=x^8-4x^7+6x^6-4x^5+x^4$. Long division by $1+x^2$ gives $\\frac{x^4(1-x)^4}{1+x^2}=x^6-4x^5+5x^4-4x^2+4-\\frac4{1+x^2}$. Integrating from 0 to 1: $\\frac17-\\frac23+1-\\frac43+4-4\\cdot\\frac\\pi4=\\frac{22}7-\\pi$. The integrand is positive on $(0,1)$, so this also proves $\\pi<\\frac{22}7$.",
+    "notes": [
+     "Drops the remainder term $-\\frac4{1+x^2}$: integrates only the quotient.",
+     "Sign slip: the remainder is $-4$, not $+4$.",
+     "Forgets the factor 4: $\\int_0^1\\frac{4}{1+x^2}dx=\\pi$, not $\\frac\\pi4$.",
+     "Correct: small and positive, as the integrand is small and positive on $(0,1)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_0^1\\frac{x^4(1-x)^4}{1+x^2}dx=\\frac{22}7-\\pi>0$: divide first when the numerator's degree is not less than the denominator's."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-046",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-10-10",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 46,
+    "label": "Expected PGT 1 · Q46"
+   },
+   "en": {
+    "q": "The value of $\\sinh^{-1}\\frac34$ is",
+    "options": [
+     "$\\log 3$",
+     "$\\log\\frac32$",
+     "$\\frac12\\log7$",
+     "$\\log 2$"
+    ],
+    "explanation": "$\\sinh^{-1}x=\\log\\left(x+\\sqrt{x^2+1}\\right)$. With $x=\\frac34$: $\\sqrt{\\frac9{16}+1}=\\frac54$, so the value is $\\log\\left(\\frac34+\\frac54\\right)=\\log2$.",
+    "notes": [
+     "",
+     "",
+     "That is $\\tanh^{-1}\\frac34=\\frac12\\log\\frac{1+3/4}{1-3/4}$.",
+     "Correct: $\\log\\left(\\frac34+\\frac54\\right)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.10 Inverse circular and inverse hyperbolic functions"
+    ],
+    "facts": [
+     "$\\sinh^{-1}x=\\log\\left(x+\\sqrt{x^2+1}\\right)$, $\\cosh^{-1}x=\\log\\left(x+\\sqrt{x^2-1}\\right)$, $\\tanh^{-1}x=\\frac12\\log\\frac{1+x}{1-x}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-047",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-13-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 47,
+    "label": "Expected PGT 1 · Q47 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "If $2x-y+z+4=0$ is a tangent plane to the sphere whose centre is $(1,0,1)$, then the radius of the sphere is",
+    "options": [
+     "7",
+     "$\\frac{5}{\\sqrt6}$",
+     "$\\frac{7}{\\sqrt6}$",
+     "5"
+    ],
+    "explanation": "A tangent plane is at distance $r$ from the centre: $r=\\frac{|2(1)-0+1+4|}{\\sqrt{4+1+1}}=\\frac7{\\sqrt6}$.",
+    "notes": [
+     "Forgets to divide by $\\sqrt{2^2+1^2+1^2}$.",
+     "A sign slip in the numerator: $|2-1+4|$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.3 The Sphere"
+    ],
+    "facts": [
+     "Plane touches sphere $\\iff$ distance from centre to plane = radius."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-048",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-15-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 48,
+    "label": "Expected PGT 1 · Q48 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "The resultant of $\\vec P$ and $\\vec Q$ is $\\vec R$. If $\\vec P$ is reversed and $\\vec Q$ remains the same, the new resultant becomes $\\vec R'$. If $\\vec R$ is perpendicular to $\\vec R'$, then $|\\vec P|:|\\vec Q|$ is",
+    "options": [
+     "1 : 2",
+     "2 : 1",
+     "1 : 1",
+     "2 : 3"
+    ],
+    "explanation": "$\\vec R=\\vec Q+\\vec P$ and $\\vec R'=\\vec Q-\\vec P$. $\\vec R\\perp\\vec R'$ gives $(\\vec Q+\\vec P)\\cdot(\\vec Q-\\vec P)=Q^2-P^2=0$, so $|\\vec P|=|\\vec Q|$.",
+    "notes": [
+     "",
+     "",
+     "Correct: $Q^2-P^2=0$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.1 Force, resultant and resolution"
+    ],
+    "facts": [
+     "The diagonals of a parallelogram are perpendicular iff it is a rhombus (equal sides)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-049",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-15-07",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 49,
+    "label": "Expected PGT 1 · Q49"
+   },
+   "en": {
+    "q": "Match List – I (Uniform body of mass $M$ and radius $a$) with List – II (Moment of inertia). List – I: a. Ring, about the axis through its centre perpendicular to its plane, b. Disc, about the axis through its centre perpendicular to its plane, c. Solid sphere, about a diameter, d. Thin spherical shell, about a diameter. List – II: I. $\\frac25Ma^2$, II. $\\frac12Ma^2$, III. $\\frac23Ma^2$, IV. $Ma^2$. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a – II, b – IV, c – I, d – III",
+     "a – IV, b – II, c – III, d – I",
+     "a – IV, b – I, c – II, d – III",
+     "a – IV, b – II, c – I, d – III"
+    ],
+    "explanation": "Ring: all the mass at distance $a$: $Ma^2$ (IV). Disc: $\\int_0^ar^2\\cdot\\frac{2Mr}{a^2}dr=\\frac12Ma^2$ (II). Solid sphere about a diameter: $\\frac25Ma^2$ (I). Thin spherical shell about a diameter: $\\frac23Ma^2$ (III).",
+    "notes": [
+     "Swaps the ring and the disc.",
+     "Swaps the solid sphere and the shell.",
+     "Swaps the disc and the solid sphere.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.7 Moment of inertia (PGT)"
+    ],
+    "facts": [
+     "Ring $Ma^2$ and disc $\\frac12Ma^2$ about the perpendicular axis; solid sphere $\\frac25Ma^2$ and shell $\\frac23Ma^2$ about a diameter."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-050",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-11-08",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 50,
+    "label": "Expected PGT 1 · Q50"
+   },
+   "en": {
+    "q": "A common tangent to the circle $x^2+y^2=2$ and the parabola $y^2=8x$ is",
+    "options": [
+     "$y=x-2$",
+     "$y=2x+1$",
+     "$y=x+2$",
+     "$x+y=2$"
+    ],
+    "explanation": "A tangent to $y^2=8x$ is $y=mx+\\frac2m$. It touches $x^2+y^2=2$ when $\\frac{4/m^2}{1+m^2}=2$, i.e. $m^4+m^2-2=0$, so $m^2=1$. $m=1$ gives $y=x+2$ (and $m=-1$ gives $y=-x-2$).",
+    "notes": [
+     "Touches the circle but not the parabola.",
+     "Touches the parabola but not the circle.",
+     "Correct.",
+     "Touches the circle but not the parabola."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.8 Polar equation of a conic; common tangents (PGT)"
+    ],
+    "facts": [
+     "$y=mx+c$ touches $x^2+y^2=r^2$ iff $c^2=r^2(1+m^2)$, and touches $y^2=4ax$ iff $c=\\frac am$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-051",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 51,
+    "label": "Expected PGT 1 · Q51"
+   },
+   "en": {
+    "q": "The equation of the chord of the circle $x^2+y^2=25$ whose mid-point is $(2,1)$ is",
+    "options": [
+     "$x+2y=4$",
+     "$2x+y=5$",
+     "$2x+y=25$",
+     "$x-2y=0$"
+    ],
+    "explanation": "The chord with mid-point $(x_1,y_1)$ is $T=S_1$: $2x+y-25=4+1-25$, i.e. $2x+y=5$. (It is perpendicular to the radius through $(2,1)$.)",
+    "notes": [
+     "",
+     "Correct: $T=S_1$.",
+     "That is $T=0$, the polar of $(2,1)$.",
+     "That is the line through the centre and the mid-point."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "Chord bisected at $(x_1,y_1)$: $T=S_1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-052",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-03-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 52,
+    "label": "Expected PGT 1 · Q52"
+   },
+   "en": {
+    "q": "Let $P_3$ be the space of real polynomials of degree at most 3 and $D:P_3\\to P_3$, $D(p)=p'$. Then the rank and nullity of $D$ are, respectively,",
+    "options": [
+     "4 and 0",
+     "3 and 0",
+     "2 and 2",
+     "3 and 1"
+    ],
+    "explanation": "The image of $D$ is the space of polynomials of degree at most 2: dimension 3. The kernel is the constants: dimension 1. Check: $3+1=4=\\dim P_3$.",
+    "notes": [
+     "$D$ sends the constants to 0, so the nullity is not 0.",
+     "Rank + nullity must be $\\dim P_3=4$.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.3 Linear transformations"
+    ],
+    "facts": [
+     "$\\dim P_n=n+1$; differentiation lowers the degree by one and kills the constants."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-053",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-05-07",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 53,
+    "label": "Expected PGT 1 · Q53"
+   },
+   "en": {
+    "q": "Which of the following statements are correct? a. Every function differentiable at a point is continuous at that point. b. Every function continuous at a point is differentiable at that point. c. A function continuous on a closed interval $[a,b]$ is bounded and attains its greatest and least values on it. d. The greatest integer function $f(x)=[x]$ is continuous at $x=\\frac32$. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a, c and d only",
+     "a, b and c only",
+     "c and d only",
+     "a, b and d only"
+    ],
+    "explanation": "(a) True: differentiability implies continuity. (b) False: $|x|$ is continuous but not differentiable at 0. (c) True (extreme value theorem). (d) True: $[x]=1$ on $[1,2)$, so it is continuous at $\\frac32$; it jumps only at the integers. So a, c and d.",
+    "notes": [
+     "Correct.",
+     "b is false and d is true.",
+     "Leaves out a, which is true.",
+     "b is false."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "5.7 Continuity and differentiability"
+    ],
+    "facts": [
+     "Differentiable $\\Rightarrow$ continuous, not conversely; $[x]$ is discontinuous exactly at the integers."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-054",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 54,
+    "label": "Expected PGT 1 · Q54"
+   },
+   "en": {
+    "q": "The shortest distance between the lines $\\vec r=(\\hat i+2\\hat j+\\hat k)+\\lambda(\\hat i-\\hat j+\\hat k)$ and $\\vec r=(2\\hat i-\\hat j-\\hat k)+\\mu(2\\hat i+\\hat j+2\\hat k)$ is",
+    "options": [
+     "$3\\sqrt2$",
+     "$\\frac3{\\sqrt2}$",
+     "9",
+     "$\\frac1{\\sqrt2}$"
+    ],
+    "explanation": "$\\vec b_1\\times\\vec b_2=\\begin{vmatrix}\\hat i&\\hat j&\\hat k\\\\1&-1&1\\\\2&1&2\\end{vmatrix}=-3\\hat i+3\\hat k$, of length $3\\sqrt2$. $\\vec a_2-\\vec a_1=\\hat i-3\\hat j-2\\hat k$ and $(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)=-3-6=-9$. SD $=\\frac9{3\\sqrt2}=\\frac3{\\sqrt2}$.",
+    "notes": [
+     "That is $|\\vec b_1\\times\\vec b_2|$.",
+     "Correct.",
+     "Forgets to divide by $|\\vec b_1\\times\\vec b_2|$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "Shortest distance $=\\frac{|(\\vec a_2-\\vec a_1)\\cdot(\\vec b_1\\times\\vec b_2)|}{|\\vec b_1\\times\\vec b_2|}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-055",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 55,
+    "label": "Expected PGT 1 · Q55 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "The system of equations $2x+2y-3z-1=0$, $4x+4y+z-2=0$, $6x+6y-z-3=0$ has",
+    "options": [
+     "a unique solution",
+     "no solution",
+     "infinitely many solutions",
+     "only the zero solution"
+    ],
+    "explanation": "$R_2-2R_1$ gives $7z=0$ and $R_3-3R_1$ gives $8z=0$, so $z=0$ and the system reduces to the single equation $2x+2y=1$. Rank of $A$ = rank of $[A|B]$ = 2 < 3 unknowns: infinitely many solutions.",
+    "notes": [
+     "$\\det A=0$ (the first two columns are equal), so the solution is not unique.",
+     "The ranks are equal, so the system is consistent.",
+     "Correct: $\\operatorname{rank}A=\\operatorname{rank}[A|B]=2<3$.",
+     "$(0,0,0)$ does not satisfy $2x+2y-3z=1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Consistent with rank $r<n$ unknowns $\\Rightarrow$ infinitely many solutions ($n-r$ free parameters)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-056",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-14-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 56,
+    "label": "Expected PGT 1 · Q56"
+   },
+   "en": {
+    "q": "If a differentiable vector function $\\vec r(t)$ has constant magnitude, then",
+    "options": [
+     "$\\vec r\\times\\frac{d\\vec r}{dt}=\\vec 0$",
+     "$\\frac{d\\vec r}{dt}=\\vec 0$",
+     "$\\left|\\frac{d\\vec r}{dt}\\right|=|\\vec r|$",
+     "$\\vec r\\cdot\\frac{d\\vec r}{dt}=0$"
+    ],
+    "explanation": "$\\vec r\\cdot\\vec r=|\\vec r|^2$ is constant; differentiating, $2\\vec r\\cdot\\frac{d\\vec r}{dt}=0$.",
+    "notes": [
+     "That holds when $\\vec r$ has constant direction.",
+     "Only when $\\vec r$ is a constant vector.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Vector Calculus",
+     "14.1 Differentiation of vector functions"
+    ],
+    "facts": [
+     "Constant magnitude $\\iff\\vec r\\cdot\\vec r'=0$; constant direction $\\iff\\vec r\\times\\vec r'=\\vec 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-057",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 57,
+    "label": "Expected PGT 1 · Q57 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "$\\int_{1/e}^{e^2}\\left|\\frac{\\log_e x}{x}\\right|dx$ is equal to",
+    "options": [
+     "$\\frac52$",
+     "$\\frac32$",
+     "$\\frac12$",
+     "2"
+    ],
+    "explanation": "Put $t=\\log x$, $dt=\\frac{dx}{x}$; the limits become $-1$ and $2$: $\\int_{-1}^{2}|t|\\,dt=\\int_{-1}^0(-t)\\,dt+\\int_0^2t\\,dt=\\frac12+2=\\frac52$.",
+    "notes": [
+     "Correct: $\\frac12+2$.",
+     "Ignores the modulus: $\\int_{-1}^2t\\,dt$.",
+     "Only the part from $1/e$ to 1.",
+     "Only the part from 1 to $e^2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "Split an integral with a modulus at the zero of the expression inside."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-058",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 58,
+    "label": "Expected PGT 1 · Q58"
+   },
+   "en": {
+    "q": "The sum of the series $1+\\frac1{3\\cdot4}+\\frac1{5\\cdot4^2}+\\frac1{7\\cdot4^3}+\\dots$ is",
+    "options": [
+     "$\\log_e3$",
+     "$\\frac12\\log_e3$",
+     "$2\\log_e3$",
+     "$\\log_e\\frac43$"
+    ],
+    "explanation": "For $|x|<1$, $\\frac12\\log_e\\frac{1+x}{1-x}=x+\\frac{x^3}3+\\frac{x^5}5+\\dots$; dividing by $x$,\n$1+\\frac{x^2}3+\\frac{x^4}5+\\dots=\\frac1{2x}\\log_e\\frac{1+x}{1-x}$.\nThe given series is this with $x^2=\\frac14$, i.e. $x=\\frac12$: its sum is $\\frac1{2\\cdot\\frac12}\\log_e\\frac{3/2}{1/2}=\\log_e3$.",
+    "notes": [
+     "Correct: $\\frac1{2x}\\log_e\\frac{1+x}{1-x}$ at $x=\\frac12$.",
+     "This is $\\frac12+\\frac1{3\\cdot2^3}+\\frac1{5\\cdot2^5}+\\dots$, the series times $x=\\frac12$: forgets to divide by $x$.",
+     "Divides by $x$ but drops the $\\frac12$ in $\\frac12\\log_e\\frac{1+x}{1-x}$.",
+     "Reads it as $\\sum\\frac1n\\left(\\frac14\\right)^n=-\\log_e\\left(1-\\frac14\\right)$; the denominators are the odd numbers, not $n$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.5 Exponential and logarithmic series"
+    ],
+    "facts": [
+     "$\\log_e\\frac{1+x}{1-x}$ $=2\\left(x+\\frac{x^3}3+\\frac{x^5}5+\\dots\\right)$ for $|x|<1$: only odd powers, all with the + sign."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-059",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 59,
+    "label": "Expected PGT 1 · Q59 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "Two constant forces $\\vec P=2\\hat i-5\\hat j+6\\hat k$ and $\\vec Q=-\\hat i+2\\hat j-\\hat k$ act on a particle at the point $A(4,-3,-2)$. Moment of the resultant force about $O(0,0,0)$ is",
+    "options": [
+     "$21\\hat i+22\\hat j+9\\hat k$",
+     "$-21\\hat i-22\\hat j-9\\hat k$",
+     "$21\\hat i-22\\hat j+9\\hat k$",
+     "$21\\hat i-22\\hat j-9\\hat k$"
+    ],
+    "explanation": "Resultant $\\vec F=\\vec P+\\vec Q=\\hat i-3\\hat j+5\\hat k$; $\\vec r=\\overrightarrow{OA}=4\\hat i-3\\hat j-2\\hat k$. Moment $=\\vec r\\times\\vec F=\\begin{vmatrix}\\hat i&\\hat j&\\hat k\\\\4&-3&-2\\\\1&-3&5\\end{vmatrix}=(-15-6)\\hat i-(20+2)\\hat j+(-12+3)\\hat k=-21\\hat i-22\\hat j-9\\hat k$.",
+    "notes": [
+     "That is $\\vec F\\times\\vec r$ (order reversed).",
+     "Correct: $\\vec r\\times\\vec F$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "Moment of $\\vec F$ acting at $A$ about $O$ is $\\overrightarrow{OA}\\times\\vec F$ (order matters)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-060",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-06-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 60,
+    "label": "Expected PGT 1 · Q60"
+   },
+   "en": {
+    "q": "For the cardioid $r=a(1-\\cos\\theta)$, the angle $\\phi$ between the radius vector and the tangent at any point is",
+    "options": [
+     "$\\frac{3\\theta}2$",
+     "$\\frac\\theta2$",
+     "$\\frac\\pi2-\\frac\\theta2$",
+     "$\\frac\\pi2+\\frac\\theta2$"
+    ],
+    "explanation": "$\\tan\\phi=r\\frac{d\\theta}{dr}=\\frac{a(1-\\cos\\theta)}{a\\sin\\theta}=\\frac{2\\sin^2\\frac\\theta2}{2\\sin\\frac\\theta2\\cos\\frac\\theta2}=\\tan\\frac\\theta2$, so $\\phi=\\frac\\theta2$.",
+    "notes": [
+     "That is $\\psi=\\theta+\\phi$, the angle the tangent makes with the initial line.",
+     "Correct: $\\tan\\phi=\\frac{1-\\cos\\theta}{\\sin\\theta}=\\tan\\frac\\theta2$.",
+     "Inverted formula: $\\frac1r\\frac{dr}{d\\theta}=\\cot\\frac\\theta2$ is $\\cot\\phi$, not $\\tan\\phi$.",
+     "That is $\\phi$ for the other cardioid $r=a(1+\\cos\\theta)$, where $\\frac{dr}{d\\theta}=-a\\sin\\theta$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.4 Tangents and normals"
+    ],
+    "facts": [
+     "For a polar curve, $\\tan\\phi=r\\frac{d\\theta}{dr}$ ($\\phi$ = angle between radius vector and tangent); for $r=a(1-\\cos\\theta)$, $\\phi=\\frac\\theta2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-061",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 61,
+    "label": "Expected PGT 1 · Q61 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "Value of $\\int_{-\\pi/2}^{\\pi/2}\\sqrt{\\cos x-\\cos^3x}\\,dx$ is equal to",
+    "options": [
+     "$\\frac43$",
+     "0",
+     "$\\frac13$",
+     "$\\frac23$"
+    ],
+    "explanation": "$\\cos x-\\cos^3x=\\cos x\\sin^2x$, so the integrand is $|\\sin x|\\sqrt{\\cos x}$, an even function. Hence $2\\int_0^{\\pi/2}\\sin x\\sqrt{\\cos x}\\,dx=2\\int_0^1\\sqrt u\\,du=2\\cdot\\frac23=\\frac43$ (with $u=\\cos x$).",
+    "notes": [
+     "Correct: $2\\int_0^{\\pi/2}\\sin x\\sqrt{\\cos x}\\,dx$.",
+     "Writes $\\sqrt{\\sin^2x}=\\sin x$ and calls the integrand odd.",
+     "",
+     "Forgets to double the half-interval."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\sqrt{\\sin^2x}=|\\sin x|$, not $\\sin x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-062",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 62,
+    "label": "Expected PGT 1 · Q62"
+   },
+   "en": {
+    "q": "Match List – I (Equation) with List – II (Curve). List – I: a. $x^2+4xy+4y^2+2x-3y+1=0$, b. $x^2-3y^2+4x+6y-5=0$, c. $x^2+2y^2-4x+4y+2=0$, d. $x^2-y^2+2x+1=0$. List – II: I. Hyperbola, II. A pair of straight lines, III. Parabola, IV. Ellipse. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a – III, b – II, c – IV, d – I",
+     "a – III, b – I, c – IV, d – II",
+     "a – IV, b – I, c – III, d – II",
+     "a – II, b – I, c – IV, d – III"
+    ],
+    "explanation": "a: $h^2=4=ab$ and $\\Delta\\ne0$: a parabola (III). b: $(x+2)^2-3(y-1)^2=6$: a hyperbola (I). c: $(x-2)^2+2(y+1)^2=4$: an ellipse (IV). d: $(x+1)^2-y^2=0$, i.e. $(x+1-y)(x+1+y)=0$: a pair of straight lines (II).",
+    "notes": [
+     "Swaps b and d: both have $h^2>ab$, but only d has $\\Delta=0$.",
+     "Correct.",
+     "Swaps a and c.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.3 General equation of the second degree"
+    ],
+    "facts": [
+     "$\\Delta=0$ gives a pair of lines; otherwise $h^2<ab$, $h^2=ab$, $h^2>ab$ give an ellipse, a parabola, a hyperbola."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-063",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-03-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 63,
+    "label": "Expected PGT 1 · Q63"
+   },
+   "en": {
+    "q": "Let $T:\\mathbb R^2\\to\\mathbb R^2$ be the linear map $T(x,y)=(3x+y,\\ x+2y)$. $T$ maps the square with vertices $(0,0)$, $(1,0)$, $(1,1)$, $(0,1)$ onto a parallelogram of area",
+    "options": [
+     "7",
+     "5",
+     "6",
+     "$\\frac15$"
+    ],
+    "explanation": "The matrix of $T$ is $A=\\begin{bmatrix}3&1\\\\1&2\\end{bmatrix}$, and a linear map multiplies every area by $|\\det A|$.\n$\\det A=6-1=5$ and the square has area 1, so the image has area 5.\n(Directly: the image is spanned by $T(1,0)=(3,1)$ and $T(0,1)=(1,2)$; its area is $|3\\cdot2-1\\cdot1|=5$.)",
+    "notes": [
+     "Adds the cross term: $3\\cdot2+1\\cdot1$.",
+     "Correct: $|\\det A|=5$.",
+     "Product of the diagonal entries only.",
+     "$\\frac1{\\det A}$ is the area factor of $T^{-1}$, not of $T$."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.3 Linear transformations"
+    ],
+    "facts": [
+     "A linear map of the plane with matrix $A$ multiplies every area by $|\\det A|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-064",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-15-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 64,
+    "label": "Expected PGT 1 · Q64"
+   },
+   "en": {
+    "q": "A uniform rod $AB$ of weight $W$ is freely hinged at $A$ to a vertical wall and is kept horizontal by a light string joining $B$ to a point $C$ of the wall vertically above $A$, with $\\angle ABC=30^\\circ$. The tension in the string is",
+    "options": [
+     "$2W$",
+     "$\\frac W{\\sqrt3}$",
+     "$W$",
+     "$\\frac W2$"
+    ],
+    "explanation": "Three forces act on the rod: $W$ at its midpoint $G$, the tension $T$ along $BC$ and the reaction $R$ of the hinge.\nMoments about $A$ (where $R$ has none): $T\\cdot AB\\sin30^\\circ=W\\cdot\\frac{AB}2$, so $T=W$.\n(The three forces meet at the midpoint $M$ of $BC$, vertically above $G$; there each pair makes $120^\\circ$, so by Lami $T=R=W$.)",
+    "notes": [
+     "Puts the weight at $B$ instead of at the midpoint of the rod.",
+     "Uses $\\cos30^\\circ$ instead of $\\sin30^\\circ$ in the moment of $T$.",
+     "Correct: $T\\sin30^\\circ\\cdot AB=W\\cdot\\frac{AB}2$.",
+     "Takes the moment of $T$ about $A$ as $T\\cdot AB$, forgetting the factor $\\sin30^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.2 Three forces in equilibrium: Lami's theorem"
+    ],
+    "facts": [
+     "Three non-parallel forces in equilibrium are concurrent; moments about the hinge remove the unknown reaction."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-065",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 65,
+    "label": "Expected PGT 1 · Q65"
+   },
+   "en": {
+    "q": "If the vectors $2\\hat i-3\\hat j+\\hat k$ and $\\lambda\\hat i+6\\hat j-2\\hat k$ are collinear, then $\\lambda$ is",
+    "options": [
+     "4",
+     "10",
+     "$-2$",
+     "$-4$"
+    ],
+    "explanation": "Collinear vectors have proportional components: $\\frac\\lambda2=\\frac6{-3}=\\frac{-2}1=-2$, so $\\lambda=-4$.",
+    "notes": [
+     "Sign slip.",
+     "That is the value for perpendicular vectors.",
+     "That is the ratio, not $\\lambda$.",
+     "Correct: the second vector is $-2$ times the first."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "Collinear: components proportional; perpendicular: dot product zero."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-066",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 66,
+    "label": "Expected PGT 1 · Q66"
+   },
+   "en": {
+    "q": "If $A=\\begin{bmatrix}a&b\\\\0&a\\end{bmatrix}$, then $A^n$ ($n\\in\\mathbb N$) is",
+    "options": [
+     "$\\begin{bmatrix}a^n&b^n\\\\0&a^n\\end{bmatrix}$",
+     "$\\begin{bmatrix}a^n&na^nb\\\\0&a^n\\end{bmatrix}$",
+     "$\\begin{bmatrix}a^n&na^{n-1}b\\\\0&a^n\\end{bmatrix}$",
+     "$\\begin{bmatrix}na&nb\\\\0&na\\end{bmatrix}$"
+    ],
+    "explanation": "Write $A=aI+N$ with $N=\\begin{bmatrix}0&b\\\\0&0\\end{bmatrix}$, $N^2=O$. As $aI$ and $N$ commute, $A^n=a^nI+na^{n-1}N=\\begin{bmatrix}a^n&na^{n-1}b\\\\0&a^n\\end{bmatrix}$.",
+    "notes": [
+     "Powers of a matrix are not taken entry by entry.",
+     "The power of $a$ in the corner is $n-1$.",
+     "Correct.",
+     "That is $nA$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "If $N^2=O$ then $(aI+N)^n=a^nI+na^{n-1}N$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-067",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-07-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 67,
+    "label": "Expected PGT 1 · Q67"
+   },
+   "en": {
+    "q": "$\\int\\frac{dx}{x^2\\left(x^4+1\\right)^{3/4}}$ $(x>0)$ is equal to",
+    "options": [
+     "$\\left(1+\\frac1{x^4}\\right)^{1/4}+C$",
+     "$-\\frac14\\left(1+\\frac1{x^4}\\right)^{1/4}+C$",
+     "$-\\left(1+\\frac1{x^4}\\right)^{1/4}+C$",
+     "$-4\\left(1+\\frac1{x^4}\\right)^{1/4}+C$"
+    ],
+    "explanation": "For $x>0$, $x^2(x^4+1)^{3/4}=x^5\\left(1+x^{-4}\\right)^{3/4}$. Put $t=1+x^{-4}$, $dt=-4x^{-5}dx$: the integral is $-\\frac14\\int t^{-3/4}dt=-t^{1/4}+C=-\\left(1+\\frac1{x^4}\\right)^{1/4}+C$.",
+    "notes": [
+     "Sign lost from $dt=-\\frac4{x^5}dx$.",
+     "Forgets the factor 4 from $\\int t^{-3/4}dt=4t^{1/4}$.",
+     "Correct.",
+     "Forgets the factor $-\\frac14$ from $dt$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.2 Methods of integration"
+    ],
+    "facts": [
+     "For $\\int\\frac{dx}{x^m(x^n+1)^p}$, take the highest power of $x$ out of the bracket and put $t=1+x^{-n}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-068",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 68,
+    "label": "Expected PGT 1 · Q68"
+   },
+   "en": {
+    "q": "The image of the point $(1,2)$ in the line $x-y+3=0$ is",
+    "options": [
+     "$(0,3)$",
+     "$(-1,4)$",
+     "$(2,1)$",
+     "$(-3,6)$"
+    ],
+    "explanation": "For the image $(x,y)$: $\\frac{x-1}{1}=\\frac{y-2}{-1}=\\frac{-2(1-2+3)}{1+1}=-2$, so $x=-1$, $y=4$. (The foot of the perpendicular is the mid-point $(0,3)$.)",
+    "notes": [
+     "That is the foot of the perpendicular.",
+     "Correct.",
+     "That is the image in the line $y=x$.",
+     "Forgets to divide by $a^2+b^2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Image of $(x_1,y_1)$ in $ax+by+c=0$: $\\frac{x-x_1}a=\\frac{y-y_1}b=\\frac{-2(ax_1+by_1+c)}{a^2+b^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-069",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 69,
+    "label": "Expected PGT 1 · Q69"
+   },
+   "en": {
+    "q": "The value of $\\begin{vmatrix}1&a&b+c\\\\1&b&c+a\\\\1&c&a+b\\end{vmatrix}$ is",
+    "options": [
+     "3",
+     "1",
+     "2",
+     "0"
+    ],
+    "explanation": "Apply $C_3\\to C_3+C_2$: the third column becomes $(a+b+c,\\ a+b+c,\\ a+b+c)$, a multiple of the first column. A determinant with two proportional columns is 0.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: after $C_3\\to C_3+C_2$, $C_3=(a+b+c)C_1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "Two proportional rows or columns make a determinant zero."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-070",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 70,
+    "label": "Expected PGT 1 · Q70 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "$1^3-2^3+3^3-4^3+\\dots-10^3+11^3$ is equal to",
+    "options": [
+     "954",
+     "756",
+     "512",
+     "848"
+    ],
+    "explanation": "$1^3+2^3+\\dots+11^3=\\left(\\frac{11\\cdot12}{2}\\right)^2=4356$. The even cubes: $2^3+4^3+\\dots+10^3=8(1^3+\\dots+5^3)=8\\cdot225=1800$. Odd cubes $=4356-1800=2556$. The required value is $2556-1800=756$.",
+    "notes": [
+     "",
+     "Correct: $2556-1800$.",
+     "$8^3$: not related to the sum.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$2^3+4^3+\\dots+(2n)^3=8\\left(\\frac{n(n+1)}{2}\\right)^2$ and $\\sum_{k=1}^n k^3=\\left(\\frac{n(n+1)}{2}\\right)^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-071",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-03-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 71,
+    "label": "Expected PGT 1 · Q71"
+   },
+   "en": {
+    "q": "Let $T:\\mathbb R^2\\to\\mathbb R^2$ be defined by $T(x,y)=(x+2y,\\ 3x-y)$. The matrix of $T$ relative to the ordered basis $\\{(1,1),(1,0)\\}$ is",
+    "options": [
+     "$\\begin{bmatrix}2&3\\\\1&-2\\end{bmatrix}$",
+     "$\\begin{bmatrix}2&1\\\\3&-2\\end{bmatrix}$",
+     "$\\begin{bmatrix}1&2\\\\3&-1\\end{bmatrix}$",
+     "$\\begin{bmatrix}3&1\\\\2&3\\end{bmatrix}$"
+    ],
+    "explanation": "$T(1,1)=(3,2)=2(1,1)+1(1,0)$ and $T(1,0)=(1,3)=3(1,1)-2(1,0)$. The coordinate vectors $(2,1)$ and $(3,-2)$ are the columns: $\\begin{bmatrix}2&3\\\\1&-2\\end{bmatrix}$.",
+    "notes": [
+     "Correct.",
+     "The transpose: coordinates written as rows.",
+     "That is the matrix in the standard basis.",
+     "Images written in standard coordinates."
+    ],
+    "path": [
+     "Mathematics",
+     "Linear Algebra",
+     "3.3 Linear transformations"
+    ],
+    "facts": [
+     "The $j$-th column of $[T]_B$ is the coordinate vector of $T(v_j)$ in the basis $B$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-072",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-15-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 72,
+    "label": "Expected PGT 1 · Q72"
+   },
+   "en": {
+    "q": "Two like parallel forces of 4 N and 6 N act at the ends $A$ and $B$ of a rod $AB$ of length 50 cm. Their resultant acts at the point $C$ of $AB$ where $AC$ is",
+    "options": [
+     "25 cm",
+     "150 cm",
+     "30 cm",
+     "20 cm"
+    ],
+    "explanation": "The resultant (10 N) acts at $C$ with $4\\cdot AC=6\\cdot CB$, i.e. $AC:CB=3:2$. So $AC=\\frac35\\cdot50=30$ cm.",
+    "notes": [
+     "The mid-point: right only for equal forces.",
+     "That is the point for unlike forces (outside $AB$).",
+     "Correct: $4\\cdot AC=6\\cdot CB$.",
+     "Divides $AB$ in the ratio $4:6$; the resultant is nearer the larger force."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.3 Coplanar forces, moments and parallel forces"
+    ],
+    "facts": [
+     "Like parallel forces $P$, $Q$ at $A$, $B$: the resultant $P+Q$ divides $AB$ internally with $P\\cdot AC=Q\\cdot CB$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-073",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 73,
+    "label": "Expected PGT 1 · Q73 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "General solution of the differential equation $(D+3)(D-1)^3y=e^x$ is",
+    "options": [
+     "$(C_1+C_2x+C_3x^2)e^x+C_4e^{-3x}+\\frac1{24}x^3e^x$",
+     "$(C_1e^x+C_2e^{-2x})+\\frac1{24}x^3e^x$",
+     "$(C_1+C_2x+C_3x^2)e^x+C_4e^{-2x}+\\frac1{18}x^3e^x$",
+     "$(C_1e^x+C_2e^{-2x})+\\frac1{18}x^3e^x$"
+    ],
+    "explanation": "Auxiliary equation $(m+3)(m-1)^3=0$: $m=-3,1,1,1$, so CF $=(C_1+C_2x+C_3x^2)e^x+C_4e^{-3x}$. PI $=\\frac{1}{(D+3)(D-1)^3}e^x=e^x\\frac{1}{(D+4)D^3}1=e^x\\cdot\\frac14\\cdot\\frac{x^3}{6}=\\frac{x^3e^x}{24}$.",
+    "notes": [
+     "Correct.",
+     "A fourth-order equation needs four constants; the root is $-3$, not $-2$.",
+     "The root is $-3$, and the PI has $\\frac1{4\\cdot3!}=\\frac1{24}$.",
+     "Wrong CF and wrong PI."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.4 Linear equations with constant coefficients (PGT)"
+    ],
+    "facts": [
+     "$\\frac1{f(D)}e^{ax}V=e^{ax}\\frac1{f(D+a)}V$: shift $D$ when $a$ is a root of $f$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-074",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-15-08",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 74,
+    "label": "Expected PGT 1 · Q74"
+   },
+   "en": {
+    "q": "A particle executes simple harmonic motion of amplitude 10 cm. When it is 6 cm from the centre of motion its speed is 16 cm/s. The period of the motion is",
+    "options": [
+     "$2\\pi$ s",
+     "$\\pi$ s",
+     "$\\frac\\pi2$ s",
+     "$4\\pi$ s"
+    ],
+    "explanation": "$v^2=\\omega^2(a^2-x^2)$: $256=\\omega^2(100-36)=64\\omega^2$, so $\\omega=2$ rad/s and $T=\\frac{2\\pi}{\\omega}=\\pi$ s.",
+    "notes": [
+     "",
+     "Correct: $\\omega=2$ rad/s.",
+     "Uses $v=\\omega(a-x)$.",
+     "Takes $T=2\\pi\\omega$."
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.8 Rectilinear motion and simple harmonic motion"
+    ],
+    "facts": [
+     "SHM: $v^2=\\omega^2(a^2-x^2)$, $T=\\frac{2\\pi}\\omega$, $v_{\\max}=a\\omega$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-075",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-09-04",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 75,
+    "label": "Expected PGT 1 · Q75 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "Value of $\\tan^{-1}\\frac12+\\tan^{-1}\\frac15+\\tan^{-1}\\frac18$ is",
+    "options": [
+     "$\\frac\\pi2$",
+     "$\\frac\\pi4$",
+     "$\\pi$",
+     "$\\tan^{-1}2$"
+    ],
+    "explanation": "$\\tan^{-1}\\frac12+\\tan^{-1}\\frac15=\\tan^{-1}\\frac{7/10}{9/10}=\\tan^{-1}\\frac79$. Then $\\tan^{-1}\\frac79+\\tan^{-1}\\frac18=\\tan^{-1}\\frac{65/72}{65/72}=\\tan^{-1}1=\\frac\\pi4$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.4 Inverse circular functions"
+    ],
+    "facts": [
+     "$\\tan^{-1}x+\\tan^{-1}y=\\tan^{-1}\\frac{x+y}{1-xy}$ when $xy<1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-076",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 76,
+    "label": "Expected PGT 1 · Q76"
+   },
+   "en": {
+    "q": "Which of the following groups is cyclic?",
+    "options": [
+     "$U(8)$, the group of units modulo 8",
+     "$U(10)$, the group of units modulo 10",
+     "The Klein four-group $\\mathbb Z_2\\times\\mathbb Z_2$",
+     "The symmetric group $S_3$"
+    ],
+    "explanation": "$U(10)=\\{1,3,7,9\\}$: $3^1=3$, $3^2=9$, $3^3=27\\equiv7$, $3^4\\equiv1$, so 3 generates it and it is cyclic of order 4. In $U(8)=\\{1,3,5,7\\}$ every square is 1, so no element has order 4; the Klein group is the same. $S_3$ is non-abelian, hence not cyclic.",
+    "notes": [
+     "Every element of $U(8)=\\{1,3,5,7\\}$ has order 1 or 2.",
+     "Correct: 3 generates it.",
+     "Every non-identity element has order 2.",
+     "Not even abelian."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "A group of order $n$ is cyclic iff it has an element of order $n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-077",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 77,
+    "label": "Expected PGT 1 · Q77"
+   },
+   "en": {
+    "q": "The order of the differential equation whose general solution is $y=(c_1+c_2)\\cos(x+c_3)-c_4e^{x+c_5}$, where $c_1,\\dots,c_5$ are arbitrary constants, is",
+    "options": [
+     "3",
+     "1",
+     "2",
+     "0"
+    ],
+    "explanation": "$c_1+c_2=A$ and $c_4e^{c_5}=B$ are single constants, so $y=A\\cos(x+c_3)-Be^x$ has three essential constants $A$, $c_3$, $B$. The order is 3.",
+    "notes": [
+     "Correct: three essential constants.",
+     "",
+     "Counts $c_1+c_2$ and $c_4e^{c_5}$ but forgets $c_3$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "Order of the differential equation = number of essential (independent) arbitrary constants."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-078",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 78,
+    "label": "Expected PGT 1 · Q78"
+   },
+   "en": {
+    "q": "The greatest term of the sequence $a_n=\\frac{n^2}{n^3+200}$, $n\\in\\mathbb N$, is",
+    "options": [
+     "$\\frac{49}{543}$",
+     "$\\frac8{89}$",
+     "$\\frac1{13}$",
+     "$\\frac9{104}$"
+    ],
+    "explanation": "Let $f(x)=\\frac{x^2}{x^3+200}$. Then $f'(x)=\\frac{x(400-x^3)}{(x^3+200)^2}$, so $f$ increases up to $x=\\sqrt[3]{400}\\approx7.37$ and decreases after. The greatest term is $a_7$ or $a_8$: $a_7=\\frac{49}{543}\\approx0.0902$, $a_8=\\frac{64}{712}\\approx0.0899$. So it is $a_7=\\frac{49}{543}$.",
+    "notes": [
+     "Correct: $a_7$.",
+     "That is $a_8=\\frac{64}{712}$.",
+     "That is $a_5=\\frac{25}{325}$.",
+     "That is $a_6=\\frac{36}{416}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "For the greatest term of a sequence, maximise the continuous function and compare the integers on either side of the maximum."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-079",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-15-05",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 79,
+    "label": "Expected PGT 1 · Q79"
+   },
+   "en": {
+    "q": "The centre of gravity of a uniform circular arc of radius $a$, subtending an angle $2\\alpha$ at the centre, lies on its axis of symmetry at a distance from the centre equal to",
+    "options": [
+     "$\\frac{a\\sin\\alpha}{\\alpha}$",
+     "$\\frac{2a\\sin\\alpha}{3\\alpha}$",
+     "$\\frac{a\\alpha}{\\sin\\alpha}$",
+     "$\\frac{a\\sin2\\alpha}{2\\alpha}$"
+    ],
+    "explanation": "With the axis of symmetry as the $x$-axis, $\\bar x=\\frac{\\int_{-\\alpha}^{\\alpha}a\\cos\\theta\\cdot a\\,d\\theta}{\\int_{-\\alpha}^{\\alpha}a\\,d\\theta}=\\frac{2a^2\\sin\\alpha}{2a\\alpha}=\\frac{a\\sin\\alpha}{\\alpha}$.",
+    "notes": [
+     "Correct.",
+     "That is the centre of gravity of the sector.",
+     "Inverted.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Mechanics",
+     "15.5 Centre of gravity"
+    ],
+    "facts": [
+     "Distance of the C.G. from the centre: arc $\\frac{a\\sin\\alpha}{\\alpha}$, sector $\\frac{2a\\sin\\alpha}{3\\alpha}$; a semicircular arc gives $\\frac{2a}{\\pi}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-080",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-04-07",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 80,
+    "label": "Expected PGT 1 · Q80"
+   },
+   "en": {
+    "q": "The remainder when $3^{100}$ is divided by 7 is",
+    "options": [
+     "1",
+     "3",
+     "4",
+     "2"
+    ],
+    "explanation": "By Fermat's theorem $3^6\\equiv1\\pmod 7$. $100=6\\cdot16+4$, so $3^{100}\\equiv3^4=81\\equiv4\\pmod 7$.",
+    "notes": [
+     "Assumes $3^{100}\\equiv1$; Fermat gives $3^6\\equiv1$, and 100 is not a multiple of 6.",
+     "That is $3^1$.",
+     "Correct.",
+     "That is $3^2\\bmod 7$."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.7 Cosets and Lagrange's theorem"
+    ],
+    "facts": [
+     "Fermat: $a^{p-1}\\equiv1\\pmod p$ for a prime $p$ not dividing $a$; reduce the exponent modulo $p-1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-081",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 81,
+    "label": "Expected PGT 1 · Q81"
+   },
+   "en": {
+    "q": "If $\\vec a+\\vec b+\\vec c=\\vec 0$, $|\\vec a|=3$, $|\\vec b|=5$ and $|\\vec c|=7$, then the angle between $\\vec a$ and $\\vec b$ is",
+    "options": [
+     "$120^\\circ$",
+     "$30^\\circ$",
+     "$45^\\circ$",
+     "$60^\\circ$"
+    ],
+    "explanation": "$\\vec c=-(\\vec a+\\vec b)$, so $49=9+25+2\\vec a\\cdot\\vec b$ and $\\vec a\\cdot\\vec b=\\frac{15}2$. Then $\\cos\\theta=\\frac{15/2}{3\\cdot5}=\\frac12$ and $\\theta=60^\\circ$.",
+    "notes": [
+     "That is the angle of the triangle opposite the side 7, not the angle between the vectors.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "Vectors placed head to tail round a triangle make with each other the supplement of the triangle's angle."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-082",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 82,
+    "label": "Expected PGT 1 · Q82 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "If $X=\\{8^n-7n-1 : n\\in\\mathbb N\\}$ and $Y=\\{49n-49 : n\\in\\mathbb N\\}$, then",
+    "options": [
+     "$X\\subset Y$",
+     "$Y\\subset X$",
+     "$X=Y$",
+     "$X\\cap Y=\\phi$"
+    ],
+    "explanation": "$8^n=(1+7)^n=1+7n+\\binom n2 7^2+\\binom n3 7^3+\\dots$, so $8^n-7n-1$ is a multiple of 49: $X=\\{0,49,490,\\dots\\}$. $Y=\\{0,49,98,147,\\dots\\}$ is the set of all non-negative multiples of 49. Hence $X\\subseteq Y$, and $98\\in Y$, $98\\notin X$, so $X\\subset Y$ (proper).",
+    "notes": [
+     "Correct: every element of $X$ is a multiple of 49, but $98\\notin X$.",
+     "$98\\in Y$ but $98\\notin X$.",
+     "$X$ misses $98$, so the sets differ.",
+     "$0$ and $49$ are in both sets."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$(1+a)^n-na-1$ is divisible by $a^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-083",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-08-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 83,
+    "label": "Expected PGT 1 · Q83"
+   },
+   "en": {
+    "q": "The singular solution of $y=px+p^2$, where $p=\\frac{dy}{dx}$, is",
+    "options": [
+     "$x^2+4y=0$",
+     "$x^2-4y=0$",
+     "$y=cx+c^2$",
+     "$y^2+4x=0$"
+    ],
+    "explanation": "This is Clairaut's equation; its general solution is $y=cx+c^2$. Differentiating with respect to $c$: $x+2c=0$, $c=-\\frac x2$. Then $y=-\\frac{x^2}2+\\frac{x^2}4=-\\frac{x^2}4$, i.e. $x^2+4y=0$.",
+    "notes": [
+     "Correct.",
+     "Sign slip.",
+     "That is the general solution.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.3 Higher degree equations; singular solutions (PGT)"
+    ],
+    "facts": [
+     "Clairaut $y=px+f(p)$: general solution $y=cx+f(c)$; the singular solution is its envelope (eliminate $c$ using $x+f'(c)=0$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-084",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 84,
+    "label": "Expected PGT 1 · Q84"
+   },
+   "en": {
+    "q": "The number of onto functions from the set $\\{1,2,3\\}$ to the set $\\{a,b\\}$ is",
+    "options": [
+     "8",
+     "9",
+     "6",
+     "7"
+    ],
+    "explanation": "There are $2^3=8$ functions from a 3-element set to a 2-element set. Only the two constant functions miss an element of $\\{a,b\\}$, so $8-2=6$ are onto.",
+    "notes": [
+     "That counts all the functions.",
+     "$3^2$: the functions from $\\{a,b\\}$ to $\\{1,2,3\\}$.",
+     "Correct: $2^3-2$.",
+     "Removes only one of the two constant functions."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Onto maps from an $m$-element set to a 2-element set: $2^m-2$ (in general, inclusion–exclusion)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-085",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": null,
+   "topic": "tp-04-10",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 85,
+    "label": "Expected PGT 1 · Q85"
+   },
+   "en": {
+    "q": "Which of the following statements are correct? a. $\\mathbb Z_7$ is a field. b. Every field is an integral domain. c. $\\mathbb Z_9$ is an integral domain. d. Every finite integral domain is a field. Choose the most appropriate answer from the options given below:",
+    "options": [
+     "a, b and c only",
+     "a, b and d only",
+     "b, c and d only",
+     "a and b only"
+    ],
+    "explanation": "(a) True: 7 is prime. (b) True: a field has no zero divisors. (c) False: $3\\cdot3=9\\equiv0$ in $\\mathbb Z_9$, so 3 is a zero divisor. (d) True: in a finite integral domain, $x\\mapsto ax$ ($a\\ne0$) is one-one, hence onto, so $ax=1$ is solvable. So a, b and d.",
+    "notes": [
+     "c is false: $3\\cdot3=0$ in $\\mathbb Z_9$.",
+     "Correct.",
+     "c is false.",
+     "Leaves out d, which is true."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.10 Rings, integral domains, fields, ideals"
+    ],
+    "facts": [
+     "$\\mathbb Z_n$ is a field $\\iff$ it is an integral domain $\\iff$ $n$ is prime."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-086",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-01",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 86,
+    "label": "Expected PGT 1 · Q86"
+   },
+   "en": {
+    "q": "For any two square matrices $A$ and $B$ of the same order, $\\operatorname{tr}(AB-BA)$ is equal to",
+    "options": [
+     "0",
+     "$\\operatorname{tr}A\\cdot\\operatorname{tr}B$",
+     "1",
+     "$\\operatorname{tr}A-\\operatorname{tr}B$"
+    ],
+    "explanation": "$\\operatorname{tr}(AB)=\\sum_{i,j}a_{ij}b_{ji}=\\operatorname{tr}(BA)$, so $\\operatorname{tr}(AB-BA)=0$. (Hence $AB-BA=I$ is impossible for $n\\times n$ matrices.)",
+    "notes": [
+     "Correct: $\\operatorname{tr}(AB)=\\operatorname{tr}(BA)$.",
+     "$\\operatorname{tr}(AB)\\ne\\operatorname{tr}A\\cdot\\operatorname{tr}B$ in general, and here the two terms cancel.",
+     "Never 1: $\\operatorname{tr}(AB)=\\operatorname{tr}(BA)$ for all $A$, $B$, so the difference always has trace 0 (e.g. $A=B$ gives $O$).",
+     "The trace is linear, but $AB-BA$ is not $A-B$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.1 Types of matrices and transpose"
+    ],
+    "facts": [
+     "$\\operatorname{tr}(AB)=\\operatorname{tr}(BA)$, so the trace of $AB-BA$ is always 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-087",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": null,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 87,
+    "label": "Expected PGT 1 · Q87"
+   },
+   "en": {
+    "q": "If $\\alpha,\\beta,\\gamma$ are the roots of $x^3-x-1=0$, then $\\frac{1+\\alpha}{1-\\alpha}+\\frac{1+\\beta}{1-\\beta}+\\frac{1+\\gamma}{1-\\gamma}$ is equal to",
+    "options": [
+     "7",
+     "$-1$",
+     "1",
+     "$-7$"
+    ],
+    "explanation": "Put $y=\\frac{1+x}{1-x}$, so $x=\\frac{y-1}{y+1}$. Substituting in $x^3-x-1=0$ and multiplying by $(y+1)^3$: $(y-1)^3-(y-1)(y+1)^2-(y+1)^3=0$, which simplifies to $y^3+7y^2-y+1=0$. The required sum is the sum of its roots: $-7$.",
+    "notes": [
+     "Sign of the sum of the roots taken wrongly.",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "To add a function of the roots, transform the equation: put $y=g(x)$ and find the equation satisfied by $y$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-088",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-04-02",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 88,
+    "label": "Expected PGT 1 · Q88 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "If $x, y$ are elements of a group $G$ and $O(y)=3$, then $O(xyx^{-1})$ is",
+    "options": [
+     "3",
+     "1",
+     "2",
+     "6"
+    ],
+    "explanation": "$(xyx^{-1})^n=xy^nx^{-1}$, which equals $e$ iff $y^n=e$. So $O(xyx^{-1})=O(y)=3$.",
+    "notes": [
+     "Correct: conjugates have the same order.",
+     "Only the identity has order 1.",
+     "",
+     "Multiplies orders; conjugation does not change the order."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.2 Elementary properties of groups"
+    ],
+    "facts": [
+     "$O(xyx^{-1})=O(y)$ and $O(ab)=O(ba)$ in any group."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-089",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": null,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 89,
+    "label": "Expected PGT 1 · Q89 · asked in UP PGT 2016",
+    "from": "UP PGT 2016"
+   },
+   "en": {
+    "q": "Maclaurin's expansion of $\\tan^{-1}x$ is",
+    "options": [
+     "$x+\\frac{x^3}{3}+\\frac{x^5}{5}+\\dots$",
+     "$x+\\frac{x^3}{3!}+\\frac{x^5}{5!}+\\dots$",
+     "$x-\\frac{x^3}{3}+\\frac{x^5}{5}-\\dots$",
+     "$x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\dots$"
+    ],
+    "explanation": "$\\frac{d}{dx}\\tan^{-1}x=\\frac1{1+x^2}=1-x^2+x^4-\\dots$ for $|x|<1$. Integrating term by term from 0: $\\tan^{-1}x=x-\\frac{x^3}3+\\frac{x^5}5-\\dots$",
+    "notes": [
+     "That is $\\tanh^{-1}x=\\frac12\\log\\frac{1+x}{1-x}$.",
+     "That is $\\sinh x$.",
+     "Correct ($|x|\\le1$).",
+     "That is $\\sin x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "$\\tan^{-1}x=\\sum_{n\\ge0}(-1)^n\\frac{x^{2n+1}}{2n+1}$; with $x=1$ it gives $\\frac\\pi4=1-\\frac13+\\frac15-\\dots$"
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/exp-pgt-2026-1-090",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": null,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "exp-pgt-2026-1",
+    "n": 90,
+    "label": "Expected PGT 1 · Q90 · asked in UP PGT 2005",
+    "from": "UP PGT 2005"
+   },
+   "en": {
+    "q": "$A, B$ are two square matrices of the same order 3 and $\\det A=2$, $\\det B=3$, then $\\det(2AB)$ is equal to",
+    "options": [
+     "48",
+     "96",
+     "24",
+     "12"
+    ],
+    "explanation": "For an $n\\times n$ matrix $\\det(kM)=k^n\\det M$. So $\\det(2AB)=2^3\\det A\\det B=8\\cdot2\\cdot3=48$.",
+    "notes": [
+     "Correct: $2^3\\cdot2\\cdot3$.",
+     "Uses $2^4$ in place of $2^3$.",
+     "Uses $2^2$ in place of $2^3$.",
+     "Takes $\\det(2M)=2\\det M$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "$\\det(kA)=k^n\\det A$ for an $n\\times n$ matrix, and $\\det(AB)=\\det A\\det B$."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}
