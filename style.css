@@ -29,6 +29,7 @@
   --gold-fill: linear-gradient(180deg, #fbe9a6 0%, #ebc75a 46%, #d6a92e 54%, #c99a22 100%);
   --on-gold: #2e2104;    /* text on the gold fill */
   --gold-edge: #b8901f;
+  --veil: rgba(255, 255, 255, 0);   /* nothing over the diamond pattern on the white page */
   --right: #2e8b57;
   --right-bg: #e3f4e8;
   --right-ink: #1e6b41;
@@ -91,6 +92,7 @@
   --pattern: 0.07;
   --diamond: #6fb3d2;
   --diamond-soft: #1b2a31;
+  --veil: rgba(28, 21, 16, 0.82);   /* dims the bright diamonds on the dark page */
   color-scheme: dark;
 }
 
@@ -99,8 +101,11 @@ html, body { margin: 0; }
 body {
   min-height: 100vh;
   background:
-    /* the mandala of circles and petals, diamond-plated: a prismatic stroke and white diamond glints */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='d' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='.22' stop-color='%238fcbe6'/%3E%3Cstop offset='.42' stop-color='%23ffffff'/%3E%3Cstop offset='.6' stop-color='%23c3b4ee'/%3E%3Cstop offset='.8' stop-color='%236fb3d2'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23d)' stroke-width='1.5' stroke-opacity='.55'%3E%3Ccircle cx='120' cy='120' r='100'/%3E%3Ccircle cx='120' cy='120' r='70'/%3E%3Ccircle cx='120' cy='120' r='40'/%3E%3Cpath d='M120 20 Q150 70 120 120 Q90 70 120 20Z M120 220 Q150 170 120 120 Q90 170 120 220Z M20 120 Q70 90 120 120 Q70 150 20 120Z M220 120 Q170 90 120 120 Q170 150 220 120Z'/%3E%3C/g%3E%3Ccircle cx='120' cy='120' r='98.6' fill='none' stroke='%23ffffff' stroke-width='.8' stroke-opacity='.9'/%3E%3Cg fill='%23ffffff' stroke='%238fcbe6' stroke-width='.6'%3E%3Cpath d='M120 14l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M220 114l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M120 214l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M20 114l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M120 46l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M190 116l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M120 186l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M50 116l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M120 115l1.25 3.75 3.75 1.25-3.75 1.25-1.25 3.75-1.25-3.75-3.75-1.25 3.75-1.25z'/%3E%3C/g%3E%3C/svg%3E") center 40px / 240px repeat,
+    /* the mandala of circles and petals as cut diamonds (owner's request): each petal a crystal of four facets lit from the
+       upper left, with white edges, a specular streak, a soft shadow and a glint; a round brilliant at the heart; bevelled rings.
+       A veil (--veil, clear on the white page) dims it in the dark theme. */
+    linear-gradient(var(--veil), var(--veil)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='r' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='.22' stop-color='%238fcbe6'/%3E%3Cstop offset='.42' stop-color='%23ffffff'/%3E%3Cstop offset='.6' stop-color='%23c3b4ee'/%3E%3Cstop offset='.8' stop-color='%236fb3d2'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3CradialGradient id='c' cx='.38' cy='.32' r='.75'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='.55' stop-color='%23d4ecf7'/%3E%3Cstop offset='1' stop-color='%239fcbe3'/%3E%3C/radialGradient%3E%3Cg id='p'%3E%3Cpath d='M123 25L143 76L123 124L103 76Z' fill='%234f8fb0' fill-opacity='.10'/%3E%3Cpath d='M120 20L100 72L120 72Z' fill='%23ffffff' fill-opacity='.9'/%3E%3Cpath d='M120 20L140 72L120 72Z' fill='%23bfe2f2' fill-opacity='.75'/%3E%3Cpath d='M100 72L120 120L120 72Z' fill='%23ddd4f6' fill-opacity='.65'/%3E%3Cpath d='M140 72L120 120L120 72Z' fill='%238fc3dd' fill-opacity='.6'/%3E%3Cpath d='M120 20L120 120M100 72L140 72M110 46L120 72L130 46M110 96L120 72L130 96' fill='none' stroke='%23ffffff' stroke-opacity='.95' stroke-width='.7'/%3E%3Cpath d='M120 20L140 72L120 120L100 72Z' fill='none' stroke='%236fb3d2' stroke-opacity='.75' stroke-width='1'/%3E%3Cpath d='M117 31L106 61' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath d='M120 12l1.6 4.8 4.8 1.6-4.8 1.6-1.6 4.8-1.6-4.8-4.8-1.6 4.8-1.6z' fill='%23ffffff' stroke='%238fcbe6' stroke-width='.5'/%3E%3C/g%3E%3C/defs%3E%3Cg fill='none'%3E%3Ccircle cx='120' cy='120' r='100' stroke='url(%23r)' stroke-width='1.6' stroke-opacity='.6'/%3E%3Ccircle cx='120' cy='120' r='98.8' stroke='%23ffffff' stroke-width='.8'/%3E%3Ccircle cx='120' cy='120' r='70' stroke='url(%23r)' stroke-width='1.4' stroke-opacity='.55'/%3E%3Ccircle cx='120' cy='120' r='68.9' stroke='%23ffffff' stroke-width='.7'/%3E%3Ccircle cx='120' cy='120' r='40' stroke='url(%23r)' stroke-width='1.2' stroke-opacity='.5'/%3E%3C/g%3E%3Cuse href='%23p'/%3E%3Cuse href='%23p' transform='rotate(90 120 120)'/%3E%3Cuse href='%23p' transform='rotate(180 120 120)'/%3E%3Cuse href='%23p' transform='rotate(270 120 120)'/%3E%3Cg transform='translate(120 120)'%3E%3Cpolygon points='0,-15 10.6,-10.6 15,0 10.6,10.6 0,15 -10.6,10.6 -15,0 -10.6,-10.6' fill='url(%23c)' stroke='%236fb3d2' stroke-opacity='.75' stroke-width='.8'/%3E%3Cpolygon points='0,-7 5,-5 7,0 5,5 0,7 -5,5 -7,0 -5,-5' fill='%23ffffff' fill-opacity='.75' stroke='%238fcbe6' stroke-width='.5'/%3E%3Cpath d='M0 -15L0 -7M10.6 -10.6L5 -5M15 0L7 0M10.6 10.6L5 5M0 15L0 7M-10.6 10.6L-5 5M-15 0L-7 0M-10.6 -10.6L-5 -5' stroke='%23ffffff' stroke-width='.6'/%3E%3Cpath d='M-6 -11L-11 -6' stroke='%23ffffff' stroke-width='1.6' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E") center 40px / 240px repeat,
     radial-gradient(1200px 700px at 50% -10%, var(--glow), transparent 70%),
     linear-gradient(180deg, var(--paper), var(--paper-2));
   background-attachment: fixed;
@@ -210,6 +215,8 @@ button.menu-row:hover { background: var(--soft-3); }
 .tagline { color: var(--ink); font-size: calc(19px * var(--fs)); margin-top: 10px; }
 .stats { color: var(--muted); font-size: calc(16px * var(--fs)); margin-top: 4px; }
 .stats span { white-space: nowrap; }   /* each count wraps as a whole */
+/* text that sits on the page itself (not on a card) gets a soft halo of the page colour, so the diamonds behind it never get in the way */
+.hero .tagline, .hero .stats, .about h2, .about p { text-shadow: 0 0 6px var(--paper), 0 0 3px var(--paper), 0 0 1px var(--paper); }
 .big-code { font-family: var(--display); font-size: calc(54px * var(--fs)); font-weight: 700; letter-spacing: 0.2em; color: var(--head); padding-left: 0.2em; }
 .install-area:empty { display: none; }
 .install-area { display: flex; justify-content: center; }
