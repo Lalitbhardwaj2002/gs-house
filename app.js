@@ -223,6 +223,7 @@ const T = {
     netTitle: 'NET / JRF corner', netRibbon: 'Opening soon',
     netTeaser: 'Six doors, opening soon. Tap one to see its syllabus.',
     netFoot: 'Paper 1 topics are already in the quiz: Teaching & Research Aptitude and ICT.',
+    netSub: 'UGC & CSIR NET · 6 subjects',
     netUnitNo: (n) => `Unit ${n}`, netReadN: (a, n) => `${a} of ${n} topics read`, netNotesReady: 'Notes ready',
     netTopicOf: (i, n) => `Topic ${i} of ${n}`, netAllUnits: 'All units', netAllTopics: 'All topics', netUnitsTitle: 'Syllabus, unit by unit',
     netSeeSyllabus: 'Tap to see the syllabus', netUnitSyllabus: 'Official syllabus of this unit', netRefs: 'References and further reading',
@@ -303,6 +304,7 @@ const T = {
     netTitle: 'नेट / जेआरएफ कॉर्नर', netRibbon: 'शीघ्र खुल रहा है',
     netTeaser: 'छह द्वार, शीघ्र खुलेंगे। पाठ्यक्रम देखने के लिए किसी पर टैप करें।',
     netFoot: 'प्रश्नपत्र 1 के विषय प्रश्नोत्तरी में पहले से हैं: शिक्षण एवं शोध अभियोग्यता और आईसीटी।',
+    netSub: 'यूजीसी व सीएसआईआर नेट · 6 विषय',
     netUnitNo: (n) => `इकाई ${n}`, netReadN: (a, n) => `${n} में से ${a} विषय पढ़े`, netNotesReady: 'नोट्स तैयार',
     netTopicOf: (i, n) => `विषय ${i} / ${n}`, netAllUnits: 'सभी इकाइयाँ', netAllTopics: 'सभी विषय', netUnitsTitle: 'पाठ्यक्रम, इकाई दर इकाई',
     netSeeSyllabus: 'पाठ्यक्रम देखने के लिए टैप करें', netUnitSyllabus: 'इस इकाई का आधिकारिक पाठ्यक्रम', netRefs: 'संदर्भ एवं आगे का अध्ययन',
@@ -1804,14 +1806,16 @@ function renderHome() {
 // its own official syllabus (data/net/tgt-mathematics.json, data/net/pgt-mathematics.json). The notes
 // themselves are shared (data/net/maths/); the full notes PDF is sold by email (below). English only.
 const MATHS_SUBJECTS = [
-  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units', ready: 'All 18 chapters of notes ready' },
-  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units', ready: 'All 18 chapters of notes ready' },
+  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units',
+    syllabus: 'Commercial Maths, Statistics, Algebra, Probability, Sets, Real Analysis, Trigonometry, Complex Numbers, Geometry, Coordinate Geometry, Calculus, Vectors, Statics, Dynamics' },
+  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units',
+    syllabus: 'Algebra, Calculus, Differential Equations, 2D Coordinate Geometry, Vectors and 3D Geometry, Abstract Algebra, Linear Algebra, Vector Calculus, Mechanics, Trigonometry' },
 ];
 function mathsHTML() {
   const doors = MATHS_SUBJECTS.map((s) => `
         <button class="topic ready" data-action="book-go" data-route="net/${s.id}"><span class="topic-icon">${s.icon}</span>
           <span><span class="topic-name">${s.name}</span><span class="topic-meta">${s.meta}</span></span><span class="badge go">Open ▶</span>
-          <span class="topic-more">📖 ${s.ready}</span></button>`).join('');
+          <span class="topic-more">📖 Syllabus: ${s.syllabus}</span></button>`).join('');
   return `
     <section class="card maths-entry" lang="en">
       <div class="book-entry-head"><span class="book-emoji">➗</span><div><h2>UP TGT / PGT Mathematics</h2><p class="muted small">Topic-wise notes on the official 2026 syllabus, with worked examples and shortcuts · English</p></div></div>
@@ -2064,9 +2068,10 @@ const NET_TEXT = {
     chips: ['इकाईवार नोट्स', 'पिछले वर्षों के प्रश्न (PYQ)', 'परीक्षा-पैटर्न विश्लेषण', 'महत्त्वपूर्ण विषय', 'संभावित प्रश्न', 'बहुप्रतीक्षित विषय', 'समयबद्ध मॉक टेस्ट'],
     both: 'हिंदी + अंग्रेजी' },
 };
-// lang: the language chosen with the switch (null follows the app); open: the doors that are open;
+// lang: the language chosen with the switch (null follows the app); card: the corner itself is open
+// (it is one compact row until tapped); open: the doors that are open;
 // syllabus: the parsed files, 'wait' while one is being fetched, 'error' if that failed.
-const netView = { lang: null, open: new Set(), syllabus: {} };
+const netView = { lang: null, card: false, open: new Set(), syllabus: {} };
 const netGroupLang = (g) => (g.langs.includes(netView.lang || lang) ? (netView.lang || lang) : g.langs[0]);
 
 // A syllabus file: '@en' / '@hi' start a language; '# Unit-1: Title' a unit; '## ' a sub-heading;
@@ -2160,12 +2165,16 @@ function netHTML() {
       </div>`;
   }).join('');
   return `
-    <section class="net-card" aria-label="${t('netTitle')}">
-      <span class="net-ribbon">✨ ${t('netRibbon')}</span>
-      <div class="net-head"><span class="net-emoji">🚪</span><h2>${t('netTitle')}</h2></div>
-      <p class="net-teaser">${t('netTeaser')}</p>${groups}
-      <p class="net-foot">🪔 ${t('netFoot')}</p>
-    </section>`;
+    <details class="net-card" data-keep="netcard" ${netView.card ? 'open' : ''}>
+      <summary class="net-sum"><span class="net-emoji">🚪</span><span class="net-title">${t('netTitle')}</span>
+        <span class="net-toggle" aria-hidden="true"><span class="when-shut">${t('bookOpen')} ▶</span><span class="when-open">${t('close')} ▲</span></span>
+        <span class="net-sub">${t('netSub')}</span></summary>
+      <div class="net-body">
+        <span class="net-ribbon">✨ ${t('netRibbon')}</span>
+        <p class="net-teaser">${t('netTeaser')}</p>${groups}
+        <p class="net-foot">🪔 ${t('netFoot')}</p>
+      </div>
+    </details>`;
 }
 
 // The language switch of UGC NET: redraw the card in the other language and keep open what was open.
@@ -3172,6 +3181,7 @@ document.addEventListener('toggle', (e) => {
   if (!el || !el.dataset) return;
   if (el.dataset.keep === 'menu') ui.menuOpen = el.open;
   if (el.dataset.keep === 'notes' && prefs.notes !== el.open) setPref('notes', el.open);
+  if (el.dataset.keep === 'netcard') netView.card = el.open;
   if (el.dataset.keep === 'net') { if (el.open) openNetDoor(el.dataset.net); else netView.open.delete(el.dataset.net); }
 }, true);
 
