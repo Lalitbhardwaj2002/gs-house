@@ -2,15 +2,19 @@
 
 Each paper below was transcribed and solved by one agent from the page images of a copy shared after the exam (the copies stay outside the repository; the 180-question DSSSB sections in two halves; GIC 2021, of which no copy could be found, was rebuilt from the questions a question book marks as asked in it), then checked by a second, independent mathematician agent, who compared every question and option with the page images, solved every question before looking at the first answers, recomputed answers by script where possible, and corrected the solutions and the option notes. A question with no defensible answer (no correct option, two defensible answers, impossible data, or a printed text whose intended meaning is a guess) is left out of the quiz; the table lists them. Where a paper prints its board's key (DSSSB) and the worked answer differs, the solution says so and why.
 
-Questions shown to players: 1568 from 13 papers (23 November 2026).
+Questions shown to players: 1973 from 17 papers (23 November 2026).
 
 | Paper | Level | Transcribed | In the quiz | Left out |
 |---|---|---|---|---|
 | UP TGT Mathematics 2026 (3 June) | TGT | 125 | 125 | — |
 | UP TGT Mathematics 2021 | TGT | 120 | 120 | — |
+| UP TGT Mathematics 2016 (held 8 March 2019) | TGT | 125 | 122 | Q3, Q99, Q104 |
+| UP TGT Mathematics 2013 (held 1 February 2015) | TGT | 125 | 122 | Q2, Q98, Q108 |
 | UPPSC LT Grade Mathematics 2025 (6 December) | TGT | 120 | 107 | Q32, Q61, Q74, Q94, Q101, Q104, Q115, Q122, Q133, Q135, Q137, Q144, Q145 |
 | UPPSC LT Grade Mathematics 2018 (29 July) | TGT | 112 | 108 | Q72, Q102, Q111, Q142 |
 | DSSSB TGT Mathematics 2021 (2 September, shift 3) | TGT | 90 | 84 | Q101, Q126, Q128, Q136, Q185, Q190 |
+| DSSSB TGT Mathematics 2021 (13 September, female) | TGT | 90 | 81 | Q110, Q125, Q132, Q139, Q143, Q155, Q168, Q177, Q182 |
+| DSSSB TGT Mathematics 2018 (18 November, female) | TGT | 90 | 80 | Q110, Q114, Q146, Q153, Q154, Q155, Q164, Q165, Q183, Q190 |
 | UP PGT Mathematics 2026 (10 May) | PGT | 125 | 125 | — |
 | UP PGT Mathematics 2021 (18 August) | PGT | 125 | 125 | — |
 | UP PGT Mathematics 2016 (held 2 February 2019) | PGT | 125 | 125 | — |
@@ -272,6 +276,302 @@ All 120 topic ids are valid, and I kept every one. Q56 (tp-05-06, the 1^∞ limi
 
 ##### Files
 `questions.checked.jsonl` (the corrected file), `myanswers.txt`, `verify.py`, `fix.py` (all edits), `validate.py`, `scan.py`, `render.py`, `crop.py`, `thumbs.py`, `img/`, `crop/`, `full.txt` (readable dump of the original).
+
+## UP TGT Mathematics 2016 (held 8 March 2019)
+
+- Source: UPSESSB TGT written examination of advertisement 01/2016, Mathematics (booklet code TG-07), held on 8 March 2019: a typed copy of the question booklet (series A order) as shared after the exam, with the board's final answer key of 25 October 2019.
+- In the app: `data/mq/up-tgt-2016.json`, 122 questions; full mock 60 seconds a question, negative marking none.
+
+### Transcription and first solution
+
+### UP TGT Mathematics 2016 (held 8 March 2019): transcription log
+
+#### The paper
+- Exam: UP TGT (UPSESSB, advertisement 01/2016), Mathematics, booklet code **TG-07**, held **8 March 2019**. Level TGT.
+- Source: `papers/up-tgt-2016/paper.pdf`, 32 pages. It is **a typed transcription by a coaching publisher**, not a scan of the booklet: English only, Q1–125 in series A order, with the publisher's watermark and its own "Correct Option" line under each question. The publisher's answers were ignored.
+- Not question pages: PDF p.1 (cover "UP TGT Previous Year Paper Mathematics 2019") and p.2 (advert). Questions run from PDF p.3 (Q1) to p.32 (Q125).
+- The text layer was too jumbled for the mathematics, so every page was read from images rendered at zoom 1.6.
+- Official key: `papers/up-tgt-2016/key.pdf`, a 4-page scan of the board's final key. The heading of each page says, in Hindi, that the expert committee's report led to no change in the key. **Set A is page 1**, headed "TG-07 (Mathematics) (A Set)". It was read column by column at zoom 2.2 and stored in `key.txt`. It was opened only after every question had been solved and the answers saved in `myanswers.txt`.
+- Cross-check: the Youth (YCT) book `Youth TGT PGT Maths 2024-25 Edition.pdf` prints 127 items tagged "UP TGT-2016 (08-03-2019)". It was read with the crop box reset to the media box (pages 349, 388, 389, 530, 665, 825, 1151 and 1198 were rendered) and searched through the existing text dump `youth/text.txt`. It was used only to confirm the wording of unclear or doubtful typed questions. Each use is named in the flag.
+
+#### Question range and count
+- Q1–125, all mathematics. There is no GS, language or pedagogy part, so nothing was skipped.
+- **Questions in `questions.jsonl`: 125**, in order, none twice. `level` is "TGT" for all of them. `key` holds the set A key as 0–3.
+
+#### Answer vs board key
+- After the two typed-copy errors below were corrected (Q97, Q105), **my answer agrees with the board's key on all 125 questions**.
+- Before that correction, two answers differed, and both come from the typed copy:
+  - **Q97**: with the typed option order my answer 0 was option (c), while the key says (d). The Youth book prints the options as (c) 1/2 and (d) 0, which agrees with the key, so that order is used.
+  - **Q105**: the typed stem asks only for x (answer 3, option a). The key says (d) 10, which fits the full question in the Youth book: the value of x² + 9/x².
+- Q3 and Q99 agree with the key only as the *intended* answer; see the flags.
+
+#### Flags (17)
+- **Q3**: No option is correct. The true probability is 3/7: 3 of the 7 equally likely ordered families with at least one boy. The key's (b) 1/3 treats the make-ups 1, 2 and 3 boys as equally likely, and it is recorded as the intended answer. "atleast" is written as "at least".
+- **Q5**: Typed √(F₁² + F₂¹). The exponent 1 is a typing slip for 2, and the Youth book prints F₂².
+- **Q6**: Option (d) "neither I no II" corrected to "nor".
+- **Q18**: The typed numerator reads like sin(nx/2). The Youth book prints sin(nπ/2), which is used. The limit is 0 either way.
+- **Q20**: The Youth book prints option (a) as 0, while the typed copy has 3; the answer is not affected. The answer x assumes 0 < x ≤ 1. For −1 < x < 0 the principal values give −x (checked by script).
+- **Q23**: "circel" corrected to "circle".
+- **Q26**: Option (c) lost its final α ("b² sin²"). It is restored from the Youth book.
+- **Q33**: Option (c) was typed as just "a × (b · c)", which is not a statement. The Youth book has "… is not defined", which is restored. Then only (a) is false.
+- **Q57**: The Youth book prints x² + xy + **y²** + x + y = 1, while the typed copy has 2y². The typed version is kept, and it is an ellipse either way.
+- **Q68**: "cube root of unit" corrected to "unity".
+- **Q75**: No real a, b, c fit the data, since a² + b² + c² = 5 would be less than ab + bc + ca = 10. The identity still gives the intended −25.
+- **Q85**: Printed "cos hx + sin hx", and the Youth book has the same spacing. It is read as cosh x + sinh x = eˣ.
+- **Q97**: Options (c) and (d) are swapped in the typed copy. The Youth order (c) 1/2, (d) 0 is used, and it matches the key (d).
+- **Q99**: The data are impossible. For unit vectors |a + b|² ≤ 4, so it cannot be 8, which would need a·b = 3. The intended 6 (key (c)) follows formally, and the Youth book prints the same question.
+- **Q104**: Strictly, any x ≥ 20 (every option) gives median 18. The list is meant to be in ascending order, which forces x = 20.
+- **Q105**: The typed stem is cut short to "the value of x", and its option (a) reads 3. The Youth book's full question (x² + 9/x², with options 8, 12, 16, 10) is used. With the typed stem the answer would be x = 3.
+- **Q114**: "Isoscales" corrected to "Isosceles".
+
+Smaller points, handled without a flag:
+- The Q69 figure is described in brackets in the question: the semicircle lies right of the y-axis, with its diameter on that axis and its centre at O.
+- Q41: a line graph would also suit, but it is not offered. The answer is the simple bar diagram.
+- Q14: option (d) is printed "2(ac + bc + ca)" (probably meant ab + bc + ca). It is kept as printed, since it is wrong either way.
+- Grammar of the original, such as "the letter of the word", "If the side of a right angle triangle are" and "What is co-ordinates of its centroid is", is kept as printed.
+
+#### Verification
+- `verify.py` recomputes the answer to every one of the 125 questions, and **all 125 agree** with `answer`.
+- **119 were checked by script.** The methods include sympy (determinants, roots, gcd, dsolve, limits, symbolic expansion), mpmath (numerical integration, limits, derivatives), brute-force counting (the BALLOON permutations, three dice, families of three children), complex arithmetic (ω, tan(x+iy), sin²(x+iy)), and construction of the figures (Q23, Q54, Q86, Q90, Q114, Q121).
+- About 12 of these confirm a property rather than choosing among the options independently: Q3, Q6, Q24, Q27, Q52, Q56, Q57, Q59, Q89, Q92, Q110 and Q112.
+- 6 were checked by theory or inspection only: Q7 (Lami's theorem), Q9 (the empirical relation), Q33 (only (b) is checked by script), Q41, Q48 and Q100.
+- `build.py` reloads `questions.jsonl` line by line with `json.loads`. It also checks the topic ids against `topics.txt`, the 4 options and 4 notes per question, `$` pairing, brace and \left/\right balance, control characters, and forbidden KaTeX constructs (\displaystyle, a thin space before a prime, the rupee sign).
+- `texchk.py` puts every inline formula (about 1400) through pdflatex with amsmath, and there are 0 errors. `widths.py` lists the widest formulas, and the long ones were split at "=" to fit a phone.
+
+#### Files
+- `questions.jsonl`: the output, 125 lines.
+- `qa.py`, `qb.py`, `qc.py`: the question sources. `build.py` builds the output from them, `verify.py` checks the answers, and `texchk.py` and `widths.py` check the formatting.
+- `key.txt`: the set A key. `myanswers.txt`: my answers, saved before the key was opened.
+- `img/`: paper pages. `keyimg/`: key crops. `ypg/`: Youth pages used for the cross-checks.
+
+### Independent check
+
+#### UP TGT 2016 (held 8 March 2019): check of 23 November 2026
+
+##### What was checked
+- Paper: UP TGT (UPSESSB, advt. 01/2016) Mathematics, booklet TG-07, series A, held 8 March 2019. Source `papers/up-tgt-2016/paper.pdf` is a coaching publisher's typed copy (Adda247 watermark, "Correct Option" lines ignored). 32 pages; questions on pp. 3–32.
+- **Questions: 125** (Q1–125, all mathematics, level TGT). After this check **122 go to the quiz and 3 are dropped** (`"drop": true`): Q3, Q99, Q104.
+- Every page was rendered (PyMuPDF, zoom 1.5) and every question and all four options were compared with the transcriber's file. The text layer was used as a second reading.
+- Board key: `key.pdf` p. 1, "TG-07 (Mathematics) (A Set)", headed (in Hindi) "no change in the answer key after the expert committee's report", i.e. the final key. I read it myself; the `key` field matches it for all 125.
+- Youth (YCT) 2024-25 book: crop box reset to the media box. I located its 127 items tagged "UP TGT-2016" by text search and rendered pp. 102, 164, 349, 388, 389, 530, 665, 825, 884, 1000, 1057, 1058 and 1198 to compare the doubtful questions.
+- I solved all 125 questions from the page images before opening `questions.jsonl` or the transcriber's log. Then I compared my answers with the board key and with the transcriber's answers.
+
+##### Answers
+- With the Youth book's wording for Q97 and Q105, my answers agree with the board key on all 122 kept questions. They also agree with the transcriber on every question.
+- **Disagreements with the key:** only among the dropped questions. Each solution names the key and explains why it fails:
+  - **Q3**: the key is (b) 1/3, but the true value is 3/7, and no option gives it. The key treats families with 1, 2 and 3 boys as equally likely, but out of 7 they occur 3, 3 and 1 times.
+  - **Q99**: the key (c) 6 follows only formally from a·b = 3, which is impossible for unit vectors.
+  - **Q104**: every option gives median 18. The key (d) 20 needs the unstated assumption that the list is already in ascending order.
+- **Script checks:** `work/mycheck.py` (sympy and numerics, my own code) covers 116 questions. 3 of these entries are placeholders with no computation (Q58, Q79, Q100), so **113 were checked by script** and all pass.
+  - For Q3, Q99 and Q104 the script confirms the flaw: P = 3/7, the formal value 36 from a·b = 3, and median 18 for x = 20, 22, 23 and 24.
+  - The other 12 were checked by theory only: Q7, Q9, Q23, Q33, Q34, Q41, Q48, Q53, Q58, Q79, Q100 and Q110.
+  - Other script checks: brute force for BALLOON, the three dice and the families; a coordinate construction for Q54; dsolve for Q94; and a complex triple for Q75.
+
+##### Changes made to the transcriber's file
+| Q | What was there | What it is now |
+|---|---|---|
+| 3 | Kept, with (b) 1/3 recorded as the "intended" answer | **Dropped**: no option is correct. The solution now says the key (b) is wrong and why. Note (b) and the flag were rewritten. |
+| 99 | Kept, with 6 as the intended answer | **Dropped**: impossible data, since \|a + b\|² ≤ 4 for unit vectors. The solution says the key (c) holds only formally. Notes and flag were rewritten. |
+| 104 | Kept, with 20 "because the list is in ascending order" | **Dropped**: every option (24, 22, 23, 20) gives median 18, and the ascending order is not stated. The Youth book has the same wording. Solution, notes and flag were rewritten. |
+| 43 | The solution used complex x without saying so | Added: no real x has x + 1/x = √3. The complex roots give exactly 0. A flag was added. |
+| 75 | The flag said "complex a, b, c exist", but the solution did not mention it | The solution now explains why no real triple exists. It gives a complex one, a = 0 and b, c = (5 ± i√15)/2, for which the value is −25. Flag reworded. **Kept**, see below. |
+| 69 | The question said "(In the figure the semicircle lies …)", a figure the student cannot see | Reworded as a set-up: the disc lies right of the y-axis, with its diameter along the y-axis and its centre O at the origin. |
+| 21 | Note (a): "Sign error in the product (A + iB)(A − iB) = A² + B²", which blames the wrong step | Note (a): "Uses 1 + (A + iB)(A − iB) in the denominator; tan(P + Q) has 1 − tan P tan Q." |
+| 80 | Note (c): "the coefficient in θ/4" | Note (c): "1/4 is the limit of (1 − √x)/(cos⁻¹x)²", which I checked with sympy. |
+| 116 | The solution used 1 + ω + ω² = 0 without saying ω ≠ 1 | The solution now says ω is an imaginary cube root; ω = 1 would give 7⁶, which is not an option. |
+
+No transcription error was found in questions, options, signs or exponents beyond the slips the transcriber had already fixed. No answer index changed. No topic changed: all 125 ids were reviewed, and the questions I doubted were checked against `notes_all.txt`. For example, Q41's diagrams are in 16.7, and Q74's pair of linear equations is in 1.7.
+
+##### The transcriber's 17 flags, reviewed
+- **Agreed as they stand:** Q5, Q6, Q23, Q26, Q33, Q68, Q85 and Q114 (typing slips and spelling). The transcriber had restored Q26 and Q33 from the Youth book; I checked both on Youth pp. 884 and 388.
+- **Q97**: agreed. Youth p. 665 prints (a) 2 (b) 1 (c) 1/2 (d) 0, so 0 is (d), as in the key.
+- **Q105**: agreed. Youth p. 1198 prints "x² + 9/x²" with options 8, 12, 16, 10, and the answer 10 is (d), as in the key.
+- **Q18**: agreed. Youth p. 349 prints sin(nπ/2)/n, while the typed copy has sin(nx/2)/n. Either gives 0.
+- **Q20**: agreed. The typed option (a) "3" is "0" on Youth p. 1058. It was left as typed because it does not affect the answer. The answer x holds for 0 < x ≤ 1, and the solution says so.
+- **Q57**: agreed. Youth p. 825 has y² where the typed copy has 2y². Both are ellipses, which I checked by Δ ≠ 0 and h² < ab.
+- **Q3, Q99, Q104**: overruled. Each is now dropped under the drop rule, as explained above.
+- **Q75**: kept, though with the data-free reasoning made explicit. It is not "impossible data": the question does not say a, b, c are real, and complex triples satisfying both conditions exist. For every such triple, a³ + b³ + c³ − 3abc = (a + b + c)((a + b + c)² − 3(ab + bc + ca)) = −25. So exactly one option is defensible. This matches Q43 of this paper and the earlier checks' handling of x + 1/x = √3.
+
+##### Format
+- `questions.checked.jsonl`: 125 lines of valid JSON in the transcriber's style (UTF-8, non-ASCII kept). Each has 4 options and 4 notes, `answer` 0–3, and `key` equal to the set A key. Every topic id is in `topics.txt`. Every string has an even number of `$`, with balanced braces and \left/\right. There is no `$$` in a question or option, and no \displaystyle, `\,'` or rupee sign. `"drop": true` appears only on Q3, Q99 and Q104. This was checked by `work/lint.py`.
+- New inline formulas are short, and longer ones are split at "=", so each fits about 300 px. No KaTeX renderer is available offline here. The new LaTeX uses only \frac, \dfrac, \hat, \cdot, \le, \ge, \pm, \sqrt and \omega.
+
+##### Left doubtful (not changed)
+- **Q20**: for −1 < x < 0, the principal values give −x, not x. The standard intended answer is x, which the flag and solution say.
+- **Q59**: a "point circle" could be called a circle. The answer "a point" is the standard reading.
+- **Q41**: a line graph would also suit, but it is not offered.
+- **Minor Youth-book variants that do not change any answer:**
+  - Q27: the Youth book has different wrong options.
+  - Q123: Youth (d) is π/8, typed π/6.
+  - Q118: option (a) "a/√3" is printed in both sources.
+
+## UP TGT Mathematics 2013 (held 1 February 2015)
+
+- Source: UPSESSB TGT written examination of advertisement 01/2013, Mathematics, held on 1 February 2015: question booklet code TG-07, series D, as shared after the exam, with the board's provisional answer key of 4 February 2015.
+- In the app: `data/mq/up-tgt-2013.json`, 122 questions; full mock 60 seconds a question, negative marking none.
+
+### Transcription and first solution
+
+### UP TGT Mathematics 2013 (exam of 1 February 2015): transcription log
+
+#### The paper
+- Source: `papers/up-tgt-2013/paper.pdf`, 30 pages. It is a coaching site's scan of the bilingual (Hindi | English) question booklet. The scan has a YouTube watermark and a candidate's pen ticks, circles and rough working. All the handwriting was ignored.
+- UPSESSB, advertisement 01/2013, TGT Mathematics, held on 1 February 2015. Booklet code **TG-07**, series **D** (printed "TG-07/D" at the foot of the pages). The booklet cover is not in the PDF.
+- Not question pages: PDF p.1 (the site's title page) and p.2 (an advert).
+- Question pages: PDF pp.3–30, which are booklet pages 3–30 (Q1–Q125). Nothing is missing.
+- English text read from page renders (right half). The Hindi half was checked for Q55 (an option hidden by the watermark), Q70, Q98 and Q108. It prints the same text, misprints included.
+- Official key: `papers/up-tgt-2013/key.pdf`, the board's provisional answer key of 4 February 2015 (3 pages, series A–D). The **series D** column is stored as `key` (A–D → 0–3) for all 125 questions. Each question was solved before its key was read.
+
+#### Question range and count
+- Q1–Q125. All are mathematics. There is no GS, language or pedagogy part, so nothing was skipped.
+- **Questions in `questions.jsonl`: 125**, in order, none twice. Level "TGT" throughout.
+
+#### Answer vs. board key
+- 124 of 125 agree.
+- **Q68**: we disagree with the key. The key gives (C), (x² + x + 5)(x² − x + 5), but that product is x⁴ + 9x² + 25. Option (A), (x² + 3x + 5)(x² − 3x + 5), multiplies out to x⁴ + x² + 25. `answer` = 0 (A) and `key` = 2 (C). The provisional key looks wrong here.
+
+#### Flags (11)
+- **Q2**: The exact relation is 2(b + q) = a² + p² − 2, and no option has the factor 2. Option (C), b + q = a² + p² − 2, is taken as the intended answer. The key also gives (C).
+- **Q44**: "Modules" corrected to "Modulus".
+- **Q47**: "continous" corrected to "continuous".
+- **Q48**: Option (D) is printed "+ −2 sin t"; read as −2 sin t.
+- **Q68**: Our answer differs from the board's key (see above).
+- **Q70**: The options are printed as sin⁻¹(x − π/k), with the bracket misplaced in both languages. They are read and transcribed as sin⁻¹x − π/k. The answer is (C), π/6, and the key agrees.
+- **Q79**: ω is taken as a non-real cube root of unity. With ω = 1 the product would be 1, which is option A. Answer (C) 4; the key agrees.
+- **Q84**: "directix" corrected to "directrix".
+- **Q98**: The paper asks for "the Median of the triangle" (Hindi: माध्यिका), but the options are points. It is read as the centroid. Option (C) is printed (5/√3, 1/√3), while the centroid is (5/3, 1/√3), so the option is corrected to (5/3, 1/√3). The key gives (C).
+- **Q100**: "stes" corrected to "sets".
+- **Q108**: The question is flawed. If a is real, the roots are 2 ± i, whose product is 5, not 1. The intended answer is a = 4, the sum of the roots, and the key gives (B) = 4. For the equation as printed, a would be (12 + 4i)/5.
+
+Smaller points, handled in the solutions without a flag:
+- Q9: a point circle is described as a degenerate circle.
+- Q20: uses π = 22/7, which gives exactly 168.
+- Q25: the two solvers are taken as independent.
+- Q31: uses g = 9.8.
+- Q32: the triangle is also isosceles, but equilateral is the precise answer.
+- Q41: assumes x, y > 0 and a, b, c > 0.
+- Q64: the HCF is 1, so the answer is "none of these".
+- Q80: all three statements hold, so the answer is "all of these".
+- Q82: the latus rectum is 1/|a|.
+
+#### Verification
+- `verify.py` recomputes the answer to every question independently and compares it with `answer`. **117 were checked by script** and all agree. The methods include:
+  - sympy for solving, factorising, gcd/lcm, determinants, limits, dsolve and series coefficients;
+  - mpmath numerical integration and polynomial roots;
+  - dense numerical scans (Q7, Q62, Q99, Q122);
+  - brute-force counting (Q22 weekdays, Q30, Q65, Q81, Q111 Venn regions);
+  - random vectors and sets;
+  - a loan amortisation simulation (Q40);
+  - constructing the figures (Q24, Q32, Q98, Q118, Q119).
+- 8 were checked by inspection only, because they are definitions or names: Q9, Q39, Q60, Q72, Q101, Q107, Q109, Q113.
+- Q2 and Q108 are flawed as printed. The script confirms the exact relation and value, and the intended option is used.
+- `build.py` reloads `questions.jsonl` line by line with `json.loads`. It also checks:
+  - the topic ids against `topics.txt`;
+  - four options and four notes per question;
+  - `$` pairing;
+  - stray control characters or literal "\n";
+  - no `\displaystyle`, no rupee sign, and no thin space before a prime.
+- `texcheck.py` checks brace and `\left`/`\right` balance inside every formula.
+
+#### Paper quality
+- The scan is clear. The watermark hides one option in Q55 (Rs 12), which was read from the Hindi half.
+- Candidate's ticks and rough working are on many pages and were ignored.
+- The misprints are listed under Flags.
+
+#### Files
+- `questions.jsonl`: the 125 questions.
+- `qa.py`, `qb.py`, `qc.py`: the question data. `key.py` holds the series D key.
+- `build.py` writes and checks the JSONL; `verify.py` re-solves every answer; `texcheck.py` checks the formulas.
+- `render.py`, `halves.py`, `zoomq.py`: page-image helpers. The images are in `img/`, `crop/` and `key/`.
+
+### Independent check
+
+#### UP TGT 2013 (held 1 February 2015): check of 23 November 2026
+
+Paper: UPSESSB advertisement 01/2013, TGT Mathematics, booklet TG-07, series D (PDF pages 3–30 = booklet pages 3–30, Q1–Q125, all mathematics). Key: the board's provisional key, series D column (key.pdf pages 1–3).
+Checked file: `questions.checked.jsonl` (from the transcriber's `pyq/up-tgt-2013/questions.jsonl`, copied here as `questions.orig.jsonl`).
+
+##### Count
+- 125 questions checked, numbers 1–125 in order, none missing or doubled, level TGT.
+- 3 are now `"drop": true` (Q2, Q98, Q108). **122 go into the quiz.**
+
+##### How it was checked
+- **Transcription:** I rendered every page myself with PyMuPDF and compared each question and all four options with the English half (`crop/e03.png`–`crop/e30.png`, zoom 2.4). I zoomed in further on Q43 (the exponent 11) and Q98, and checked the Hindi half of Q70 and Q98. I checked numbers, signs, exponents, limits, matrix entries and option order. **No transcription errors were found.** The transcriber's typo corrections are right: Q44 "Modules", Q47 "continous", Q48 "+ −2 sin t", Q84 "directix", Q100 "stes".
+- **Answers:** I solved all 125 from the page images before opening the transcriber's answers (`myanswers.txt`). My answers agree with the transcriber's `answer` on all 125. For Q2, Q98 and Q108 we both find that no option is correct as printed.
+- **Key:** I read the series D column of the key again from the key images (`key/d1a.png` … `key/d3b.png`). The transcriber's `key` values are right for all 125. The key agrees with our answers on 124 questions. The exception is **Q68**.
+- **Script:** `verify.py` uses sympy, exact arithmetic, numeric scans, brute force and random tests. It recomputed **113 answers** independently, and each matches the chosen option. Its Q2 and Q108 results show that no printed option is right. For Q98 it confirms the centroid (5/3, 1/√3) and shows that the printed option (C), (5/√3, 1/√3), is not that point. Q19 was also solved with `dsolve` and the output was read by eye. The other 11 are definitions or names, checked by inspection: Q3, Q9, Q12, Q39, Q60, Q72, Q101, Q107, Q109, Q110, Q113.
+- **Format:** `validate.py` checks the following, with 0 errors:
+  - every line loads as JSON;
+  - four options and four notes per question;
+  - `answer` is 0–3;
+  - the topic ids exist in `topics.txt`;
+  - every string has an even number of `$`;
+  - there is no `$$` in the question or options;
+  - there is no `\displaystyle`, `align`, rupee sign, thin space before a prime or control character;
+  - braces, `\left`/`\right` pairs and environments are balanced.
+- **Line width:** `widths.py` estimates how wide each inline formula is. I split the long ones. The three that remain at the limit (Q37, Q71, Q83) are chains of "=" that KaTeX can break.
+
+##### Drop decisions (Q2, Q70, Q98, Q108)
+- **Q2: dropped.** There is no correct option.
+  - The exact relation is 2(b + q) = a² + p² − 2.
+  - Option (C) reads b + q = a² + p² − 2, so it lacks the factor 2. It is false in general: for α = 0, β = π/3, b + q = 1/2 but a² + p² − 2 = 1.
+  - In a numeric test over 50 random α, β, no option held.
+  - To make it right we would have to rewrite one option to fit the answer, and that is not an obvious misprint. The key gives (C). `answer` stays 2 (C), the best option.
+- **Q70: kept.** This is a fair reading of an obvious misprint.
+  - All four options are printed sin⁻¹(x − π/k) in both languages. That subtracts an angle from x inside sin⁻¹, and none of the printed forms equals f. For example f(1) = π/3, while sin⁻¹(1 − π/6) ≈ 0.50.
+  - The same bracket fix turns every option into sin⁻¹x − π/k. The fix does not depend on which option is right.
+  - The answer is (C), and the key agrees.
+  - The solution now tells students about the misprint, and the flag is reworded.
+- **Q98: dropped.** As printed, no option is correct.
+  - The paper asks for "the Median of the triangle" (Hindi माध्यिका), but the options are points. The centroid is (5/3, 1/√3), while option (C) is printed (5/√3, 1/√3).
+  - The transcriber had changed (C) to (5/3, 1/√3) and the word to "centroid". That rewrites one option to fit the answer, and the misprint only shows after solving, so it is not an obvious misprint.
+  - I restored the printed wording ("The Median of the triangle is") and the printed option (C), set `drop`, and explained the fault in the solution and flag. The key gives (C). `answer` = 2 (C), the best option.
+- **Q108: dropped.** The data are impossible.
+  - If a is real, the roots are 2 ± i, whose product is 5, not 1. If a may be complex, a = (12 + 4i)/5, which is not an option.
+  - The key gives (B) = 4, the sum of 2 ± i. `answer` = 1 (B), the best option. The solution and flag say so.
+
+##### Changes made (question: what was wrong → what it is now)
+- **Q2:** As above. Set `drop`, rewrote the solution with a counterexample, gave option (C) a note on the missing factor 2, and rewrote the flag.
+- **Q5:** The note on (a) said 0 was "∫(1 − x²) with a sign error". That is false, since that integral is −4/3. It now says the integrand is ≥ 0 and not identically 0, so the integral is positive.
+- **Q26:** Split one inline formula that was too wide for a phone. The algebra is unchanged.
+- **Q45:** Split the determinant and its expansion into separate formulas.
+- **Q48:** Split the long velocity formula into three short steps.
+- **Q51:** Split the telescoping sum.
+- **Q55:** Split the formula.
+- **Q68:** The solution did not say that the key disagrees. It now says that the board's key gives (C), but (x² + x + 5)(x² − x + 5) = x⁴ + 9x² + 25, so the key is wrong. I also split the formula.
+- **Q70:** The solution now mentions the bracket misprint. The flag now says why the question is kept.
+- **Q84:** Split the long formula. The steps are unchanged (SP² = e²·PM², times 6, collect).
+- **Q85:** Split the expansion check into its three terms.
+- **Q95:** The note on (c) said "multiplies by cos 30° the wrong way". That gives 15, not 20√3. The note now says the answer comes from dividing by sin 30° instead of cos 30°.
+- **Q98:** As above. Restored the printed q and option (C), set `drop`, and rewrote the solution, the notes on (b) and (c), and the flag.
+- **Q103:** Topic changed from tp-07-03 to **tp-05-05**. That page teaches the definite integral as the limit of a sum, including the rule for r running from r₁ to r₂. I also split the formula.
+- **Q108:** As above. Set `drop`, rewrote the solution to show that the data are impossible, rewrote the note on (b) and the flag.
+- **Q112:** Split the determinant expansion into steps and added the intermediate surd sum. The value is unchanged: 5√3(√6 − 5).
+- **Q121:** Split the formula and showed the grouping step.
+- **Q123:** Split the expansion into short formulas.
+- No other solution, fact, note or topic needed a change. I checked every solution step and every option note.
+
+##### Differences from the official key
+- **Q68:** key (C), our answer (A).
+  - (x² + 3x + 5)(x² − 3x + 5) = (x² + 5)² − 9x² = x⁴ + x² + 25. sympy confirms this.
+  - The key's (C) expands to x⁴ + 9x² + 25.
+  - I am sure that the key is wrong here.
+- The key's answers to Q2, Q98 and Q108 (C, C and B) are the setters' intended answers to faulty questions. Those three are dropped.
+
+##### Left doubtful (kept; the solutions handle them)
+- **Q32:** The triangle is equilateral, which is also isosceles under the inclusive definition. I kept (C), the precise answer, as the key does.
+- **Q79:** ω is read as a non-real cube root of unity, as usual. With ω = 1 the answer would be (A).
+- **Q9:** A point circle is called a "degenerate circle".
+- **Q20:** Uses π = 22/7.
+- **Q31 and Q73:** Use g = 9.8.
+- **Q41:** Assumes positive x, y, a, b and c.
+
+##### Files (all in this folder)
+- `questions.checked.jsonl`: the result.
+- `questions.orig.jsonl`: the copied input.
+- `fix.py` makes the changes; `validate.py`, `widths.py` and `verify.py` do the checks; `verify_out.json` holds the script results.
+- `myanswers.txt`: my independent answers.
+- `crop/` and `key/`: page images.
 
 ## UPPSC LT Grade Mathematics 2025 (6 December)
 
@@ -613,6 +913,292 @@ Output: `questions.checked.jsonl` (90 lines, 5 with `"drop": true`).
 
 ##### Count
 90 questions checked; 5 dropped (n 1, 26, 36, 85, 90); 85 kept. Answer = green key on 83 of the kept 85; differs on n 28 and n 70. 32 lines carry a flag.
+
+## DSSSB TGT Mathematics 2021 (13 September, female)
+
+- Source: DSSSB TGT Mathematics (Female), computer-based test of 13 September 2021, 12:30 to 2:30 pm: the mathematics section (questions 101 to 190) of the board's response sheet as re-shared after the exam, with the board's answer key.
+- In the app: `data/mq/dsssb-tgt-2021-f.json`, 81 questions; full mock 45 seconds a question, negative marking 0.25.
+
+### Transcription and first solution
+
+### DSSSB TGT Mathematics (Female), CBT 13 September 2021, 12:30–2:30 pm
+
+Source: `papers/dsssb-tgt-2021-0913-f/paper.pdf`, 50 pages. This is the board's response sheet (subject "TGT Maths-(Female)", test date 13/09/2021, 12:30 PM – 2:30 PM), re-shared by a coaching site with its watermark on every page. English medium (some Hindi-section items appear in Hindi only). Level: **TGT**.
+
+- The sheet shows no marking scheme and no candidate's chosen option in its text layer; only the options in colour.
+- Official key: the correct option is printed in green (span colour 0x40c64b) with a green tick icon; the others are red (0xf61818) with a cross. All 90 maths questions have exactly one green option, and the green colour agrees with the tick icon in every case. Two were also checked on rendered page images (n = 74 and n = 82). Recorded as `key`.
+
+#### Structure of the paper and numbering
+
+The sheet restarts numbering at Q.1 in every section. Section headers and question counts (200 in all):
+
+| Section | Questions on sheet | Paper Q | Taken? |
+|---|---|---|---|
+| General Ability | Q.1–20 | 1–20 | no: reasoning |
+| General Awareness | Q.1–20 | 21–40 | no: general knowledge |
+| Arithmetic Ability | Q.1–20 | 41–60 | no: general arithmetic part |
+| General English | Q.1–20 | 61–80 | no: language |
+| General Hindi | Q.1–20 | 81–100 | no: language |
+| **Discipline1** | **Q.1–20** | **101–120** | **yes, n = 1–20** |
+| **Discipline2** | **Q.1–20** | **121–140** | **yes, n = 21–40** |
+| **Discipline3** | **Q.1–20** | **141–160** | **yes, n = 41–60** |
+| **Discipline4** | **Q.1–20** | **161–180** | **yes, n = 61–80** |
+| **Discipline5** | **Q.1–10** | **181–190** | **yes, n = 81–90** |
+| Teaching Methodology | Q.1–10 | 191–200 | no: pedagogy |
+
+Mapping: the five Discipline sections (pages 30–48) were taken in order, so n = 20(s−1) + (number on the sheet) for Discipline s; n = paper Q − 100. Skipped: Q1–Q100 (general sections) and Q191–Q200 (teaching methodology). No question in the maths range was skipped. **90 questions transcribed.**
+
+#### How it was read
+
+- Every maths question and option except n = 84 (plain text) is an image. All images were extracted at their native resolution from the PDF (they are squeezed on the page, and the wider question strips are cut by the scroll box), upscaled and read. Each image matched its slot: one question image and four option images per question.
+- Notation normalised to LaTeX: `2i+j+k` became $2\hat i+\hat j+\hat k$, `R` became $\mathbb R$, `z'` (conjugate) became $\bar z$ in n = 69, `-->` became $\to$, `[0,π;0,π/2]` became $[0,\pi]\times[0,\frac\pi2]$ in n = 58, `<1+1/n>` became $\langle1+1/n\rangle$, `(1/2)` options became $\frac12$.
+- Small fixes made without a flag: "not" to "nor" (n = 9, option d), "a algebraic" to "an algebraic" (n = 15), "u" to "you" (n = 17), "cauchy"/"weierstrass" capitalised (n = 11, 37), "less then" to "less than" (n = 45, option b), "multiple connected" to "multiply connected" (n = 52), trailing comma in $\{1,2,3,4,\}$ (n = 56), "define by" to "defined by" (n = 63), duplicated "if" dropped from the options of n = 65, "homomorphism" to "homomorphisms" (n = 78), "atleast" to "at least" (n = 81), "unit of R" to "units of R" (n = 88), "Riesz representative theorem" to "Riesz representation theorem" (n = 84), a trailing colon dropped from n = 50 option (c).
+- Several stems are badly worded; wording was kept unless a misprint was clear, and every substantive change is flagged.
+
+#### Answers that differ from the green key (2)
+
+- **n = 74 (Q174)**, maximal subgroups of Klein's group: answer (b) "{e,a},{e,b},{e,c}", key (a) "{e,c}". All three subgroups of order 2 have index 2 and are maximal; they are symmetric, so singling out {e,c} cannot be right. (b) is the complete answer.
+- **n = 82 (Q182)**, line integral of $yz\hat i$ counterclockwise round $x^2+y^2=1$, $z=1$: answer (d) "−πi", key (c) "πi". The integral is $\oint y\,dx=-\pi$ (also by Stokes). The options carry a stray $i$ (probably from $\hat i$); (d) is the one matching $-\pi$. The key's $+\pi$ is the clockwise value.
+
+#### Flags (26)
+
+- n=10 (Q110): no option gives the full definition of finite oscillation (bounded, neither convergent nor divergent). (a) and (b) are only necessary conditions; (c) defines infinite oscillation. Answer = key (a).
+- n=22 (Q122): stem does not say what is asked; "become continuous at (2,3)" added. Key 18.
+- n=24 (Q124): incomplete stem; read as "for all v in S with 0<‖v−u‖<p". Answer = key.
+- n=25 (Q125): vague, non-technical stem ("convert data into ___ : model"). Answer = key.
+- n=32 (Q132): **garbled** ("symmetric group of order n is a closed subspace of group of order n"); probably symmetric n-linear maps, which need n ≥ 2. Answer = key; consider dropping.
+- n=38 (Q138): option (b) printed only as "|y−b|<delta both follow."; the missing first part "|x−a|<δ and" was restored.
+- n=39 (Q139): printed "x²y''+xy'+4xy" with no "= 0"; corrected to $x^2y''+xy'+4y=0$ (Cauchy–Euler), which gives the key.
+- n=43 (Q143): garbled stem; the key (Lebesgue integral) is the only meaningful option.
+- n=44 (Q144): printed "(x−7)^((n+1)/n^n)"; read as $(x-7)^{n+1}/n^n$. R = ∞ (key).
+- n=45 (Q145): the phrase "in terms of affecting the power series" is meaningless; kept as printed.
+- n=46 (Q146): loosely worded; (b)–(d) read as "can occur". (a) is the wrong statement (key).
+- n=47 (Q147): option (b) carries a stray editor's remark in the paper ("Is this option a direct eliminator? Better change it"); removed.
+- n=50 (Q150): the textbook use of Green's theorem (area of a plane region) is not offered; (b) "solve 2-D flow equation" is the only sensible option (key).
+- n=51 (Q151): "necessary and sufficient" is loose; (b) is the hypothesis of Taylor's theorem (key).
+- n=54 (Q154): garbled stem ("integrable of over", repeated "s.t."); read as Riemann's criterion. Key (a).
+- n=55 (Q155): printed "The domain of cos(x)", which is ℝ (no option). Read as $\cos^{-1}x$ (equivalently the range of cos x); both give the key [−1,1].
+- n=63 (Q163): option (c) should be ≤ (strict < fails at x = 0) and the space a normed space; (c) is intended (key).
+- n=66 (Q166): garbled stem (a set, not a metric space; no centre); read as {x : d(x,x₀) = r}, a sphere (key).
+- n=68 (Q168): garbled stem ("subgroups(p) of non cyclic groups G"); read as a non-cyclic group of order p², which has p+3 subgroups (key).
+- n=72 (Q172): garbled stem; read as "a continuous function on [a,b] is" bounded (key).
+- n=74 (Q174): differs from the key (see above).
+- n=77 (Q177): printed "i sinh u sin v"; corrected to $i\cosh u\sin v$ so that $z=\sinh w$; gives the key ±i.
+- n=78 (Q178): "Symmetric group of order 4" read as $S_4$ (order 24); either way no onto homomorphism exists (key).
+- n=79 (Q179): options (a) and (c) carry stray editor's remarks in the paper ("do you mean None is abelian - if so, better change it like that", "What option is this? Is this not included in the previous option itself?"); removed.
+- n=82 (Q182): differs from the key (see above).
+- n=88 (Q188): the context (R a commutative ring with unity, e.g. an integral domain) is implied.
+
+Note: the three stray editor's remarks (n = 47, 79) are text inside the paper's option images, apparently a reviewer's comments left in by the board. They were treated as misprints and removed from the options; they were not acted on.
+
+#### Checks
+
+- `questions.jsonl`: 90 lines, n = 1…90 in order, none twice; every line loads with Python's `json`; 4 options and 4 notes each; every topic id is in `topics.txt`; `level` = "TGT"; `key` filled for all 90.
+- LaTeX lint (`lint.py`): `$` balanced, braces balanced, no `$$` in questions or options, only KaTeX-supported commands, no rupee sign, no `\,'`, no `\displaystyle`, inline formulas kept short.
+- **46 answers recomputed by script** (`verify.py`, sympy and brute force), all agreeing with `answer`: n = 2, 5, 6, 7, 8, 9, 12, 16, 17, 18, 20, 21, 22, 23, 26, 27, 28, 29, 33, 36, 39, 40, 41, 42, 44, 47, 48, 49, 53, 57, 58, 59, 68, 69, 71, 74, 76, 77, 80, 81, 82, 83, 85, 86, 87, 89. The other 44 are definitions or theory (no computation possible) and were checked by hand.
+- Key distribution: (a) 24, (b) 17, (c) 30, (d) 19.
+
+#### Files
+
+- `questions.jsonl` (output), `log.md` (this file).
+- Helpers: `dump.py`/`dump.txt` (text with colours), `parse.py` (questions, keys, image extraction), `img/` (native images), `mont/` (reading sheets), `raw.jsonl` (parsed keys and image sizes), `qa.py`/`qb.py` (transcriptions and solutions), `build.py`, `lint.py`, `verify.py`.
+
+### Independent check
+
+#### DSSSB TGT 2021 (13 September): check of 23 November 2026
+
+Paper: DSSSB TGT Mathematics (Female), CBT of 13 September 2021, level TGT; `papers/dsssb-tgt-2021-0913-f/paper.pdf` (board response sheet, English medium). Maths = sections Discipline1–5 on pages 30–48 (20+20+20+20+10 questions), n = 20(section − 1) + sheet number = paper Q − 100.
+Input: `pyq/dsssb-tgt-2021-f/questions.jsonl` (copied here unchanged as `questions.orig.jsonl`).
+Output: `questions.checked.jsonl`: **90 lines, 9 with `"drop": true`, 81 kept.**
+
+##### How it was checked
+- Reading: my own scripts (`scripts/compose.py`) locate every question on pages 30–48 and pull the stem and option images out of the PDF at native resolution (the page squeezes the wide strips), assign each option image to its label by position, and stack them per question (`img/n*.png`, sheets `img/s*.png`); `scripts/zoom.py` enlarges single images. Every stem and all four options of all 90 questions were read from these images. n 84 is plain text (Riesz question). No question image is cut off; the only truncated item is option (b) of n 38, which is cut in the board's own image ("|y-b|<delta both follow.").
+- Key: read from the option-label colour (green 4245067 = 0x40C64B; others red) and the tick icon. My keys equal the transcriber's `key` for **all 90**.
+- Answers: I solved all 90 myself from the images before opening the transcriber's answers and log, then compared.
+- Transcription: all 90 stems and options compared with the images. The kept text is faithful (options in the paper's order); the transcriber's small unflagged spelling fixes (listed in their log) are fine. Four stems the transcriber had rewritten (n 39, 55, 68, 77) are restored to the printed text, since those questions are now dropped.
+- Script checks (`scripts/verify.py`, sympy + brute force): **38 questions**: n 6, 7, 9, 12, 16, 17, 18, 20, 21, 22, 26, 27, 28, 33, 36, 39, 40, 41, 44, 49, 53, 57, 58, 68, 69, 71, 74, 76 (residue and numerical contour integral), 77 (Cauchy–Riemann test of the printed relation), 78, 80, 81, 82, 83, 85, 86, 87, 89. All agree with my answers (for n 39, 68, 77, 82 they confirm the reasons for dropping). The other 52 are definitions and theory, checked by reasoning.
+- Format (`scripts/lint.py`, `scripts/cmds.py`): JSON loads, n = 1…90 once each, 4 options and 4 notes, answer and key 0–3, level TGT, topics all in `topics.txt`, `$` balanced, braces balanced inside math, no `$$` in q/options, no align/displaystyle/rupee/`\,'`, every LaTeX command KaTeX-supported. Five long inline formulas split for phone width (n 50 fact, 51 fact, 82, 85, 87 solutions).
+
+##### Dropped (9): `"drop": true`, reason in `flag` and in the solution
+- **n 10** (Q110), finite oscillation: no option is a correct definition. The key (a) "not divergent" also fits every convergent sequence; (b) is equally only necessary; (c) as printed ("not bounded; not convergent; not divergent") is infinite oscillation. The transcriber kept it "set to the key".
+- **n 25** (Q125), "use mathematical model to convert data into ___": vague, non-mathematical, and the key "model" just repeats the stem. Transcriber kept it set to the key.
+- **n 32** (Q132): garbled beyond repair ("symmetric group of order n is a closed subspace of group of order n"). Transcriber flagged it and suggested dropping.
+- **n 39** (Q139): printed $x^2y''+xy'+4xy$. As printed the solutions are $J_0(4\sqrt x)$, $Y_0(4\sqrt x)$ (checked); $Y_0$ is unbounded at $0^+$, so the key "bounded and non-periodic" is false and no option holds. The key fits only $x^2y''+xy'+4y=0$; the transcriber changed $4xy$ to $4y$, which changes the data rather than fixing an obvious misprint. Printed stem restored.
+- **n 43** (Q143): garbled stem ("improper integral becomes equal to Riemann integrable"), options not answers to it. Transcriber kept it set to the key.
+- **n 55** (Q155): printed "The domain of cos(x)", whose answer $\mathbb R$ is not an option; the key $[-1,1]$ is the range (the key confuses domain and range). The transcriber had rewritten the stem as "domain of $\cos^{-1}x$". Printed stem restored; topic moved to tp-09-01.
+- **n 68** (Q168): garbled ("subgroups(p) of non cyclic groups G"); no order given. For a non-cyclic group of order $p^2$: $p+1$ subgroups of order $p$ (option d) but $p+3$ in all (key a), so two readings give two options. The transcriber had inserted "of order $p^2$". Printed stem restored.
+- **n 77** (Q177): printed $z=\sinh u\cos v+i\sinh u\sin v$, which is not an analytic relation (Cauchy–Riemann fails, checked), so no option follows. The key $\pm i$ belongs to $z=\sinh u\cos v+i\cosh u\sin v=\sinh w$; the transcriber's change of $\sinh$ to $\cosh$ changes the data. Printed stem restored.
+- **n 82** (Q182), $\oint yz\,\hat i\cdot d\vec r$ on $x^2+y^2=1$, $z=1$, counterclockwise $=-\pi$ (checked): not an option (options $0$, $2$, $\pi i$, $-\pi i$). The key (c) $\pi i$ is wrong in sign and carries a stray $i$; the transcriber had answered (d) $-\pi i$. `answer` left at (d), the closest, with the problem stated.
+
+##### Answer that differs from the official key (kept)
+- **n 74** (Q174), maximal subgroups of Klein's group: answer (b) $\{e,a\},\{e,b\},\{e,c\}$; key (a) $\{e,c\}$. All three order-2 subgroups have index 2 and are maximal (brute force over $\mathbb Z_2\times\mathbb Z_2$ confirms exactly 3 maximal subgroups), and an automorphism permutes $a,b,c$, so naming $\{e,c\}$ alone cannot be right. I agree with the transcriber. The solution now says what the key says and why it is wrong.
+- (n 82, also against the key, is dropped above.)
+
+##### Other changes
+- Solutions of kept questions whose printed text is faulty now say so, since students see the solution: n 22 (missing "become continuous at (2,3)"), 24 (prints "for u in S"; "isolated" used as strict), 38 (option (b) cut off in the paper), 44 (bracket slip in the exponent), 45 (meaningless phrase "in terms of affecting the power series"), 46 ((b)–(d) read as "can occur"), 50 (area not offered; (b) by elimination), 51 ("necessary and sufficient" loose), 54 (garbled stem), 63 ($<$ should be $\le$; normed space), 66 (garbled stem), 72 (garbled stem), 74 (key wrong).
+- n 13 solution: removed the claim "either way the answer is 1" (books that use non-zero leading entries do not require 1); reworded.
+- n 89 note on option (b): the old note ("1/z is not analytic inside the full circle") did not explain why the arc integral is not 0; now says the path is an open arc and the integral is $i$ times the change of $\arg z$.
+- n 10, 39, 55, 68, 77, 82: notes/fact adjusted to match the drop reason.
+- Kept as the transcriber had them (checked and agreed): every other answer, the flags on n 22, 24, 38, 44, 45, 46, 47, 50, 51, 54, 63, 66, 72, 78, 79, 88, the removal of the reviewers' remarks printed inside options of n 47 and n 79, and all topics except n 55.
+
+##### Kept but weak (judgement calls; answerable as printed, read fairly)
+- n 22 and n 24 have words missing from the stem; the missing words are the only reading under which $k$ (n 22) or the inequality (n 24) is asked about, and the answers do not depend on the key. If the editors want only clean stems, these two and n 54, 66, 72 (garbled but unambiguous) are the next candidates to drop.
+- n 50 ("Green's theorem is used to? solve 2-D flow equation") and n 51 ("necessary and sufficient condition for Taylor's theorem: f has higher derivatives") are loosely worded; the answer follows by elimination.
+- n 13: "leading entry must be 1" follows the leading-1 convention of echelon form; under the non-zero convention the stem would be loose.
+- n 62: option (c) "u and v intersect each other" is vague rather than false; (a) "orthogonal family" is the clear answer.
+
+##### Summary
+90 questions checked; transcription faithful (no digit or sign errors found); keys agree with the green marks for all 90; 9 dropped (n 10, 25, 32, 39, 43, 55, 68, 77, 82); 1 kept answer differs from the key (n 74); no other answer changed; 38 answers verified by script.
+
+## DSSSB TGT Mathematics 2018 (18 November, female)
+
+- Source: DSSSB TGT Mathematics (Female), computer-based test of 18 November 2018, shift 1: the mathematics section (questions 101 to 190) of the board's own copy of the question paper, with its answer key.
+- In the app: `data/mq/dsssb-tgt-2018.json`, 80 questions; full mock 45 seconds a question, negative marking 0.25.
+
+### Transcription and first solution
+
+### DSSSB TGT Mathematics (Female), CBT 18 November 2018, shift 1
+
+Source: `papers/dsssb-tgt-2018-1118-board/paper.pdf`, 157 pages. This is the board's own "Question Paper Preview" (question paper name `TGT MATHS FEMALE 18th Nov 2018 Shift1`, subject "TGT MATHS FEMALE"). The other copy of this exam (`dsssb-tgt-2018-1118-f`) was not opened.
+
+- Duration: **120 minutes**. Total marks: **200** (200 questions of 1 mark each).
+- Marking: correct **+1**, wrong **−0.25** ("Correct Marks : 1 Wrong Marks : 0.25" on every question).
+- Level: TGT.
+
+#### How the key was read
+
+In this copy every question stem and every option is an **image**. The text layer holds only the headers ("Question Number : …", "Options :"), so the option text has no colour to read with PyMuPDF. Each option image carries its number and a green tick or a red cross. The key was therefore read from the **pixel colour** of the left strip of each option image (`keys.py`: green tick versus red cross pixels, rendered at 3×). The result:
+
+- 88 of the 90 maths questions have exactly one green tick, recorded as `key`.
+- **Q153 (n = 53) and Q165 (n = 65)** have no tick and no cross. The board printed a red note above each: "discrepancy is found in question/answer. So, this question is ignored for all candidates". These are **cancelled**, and `key` is null.
+- The ticks were also confirmed on the page images (`img/q*.png`) while transcribing. The only place where my answer and the tick differ is n = 59 (see below).
+
+#### Structure of the paper
+
+| Paper Q | Section (from the content) | Taken? |
+|---|---|---|
+| 1–20 | Reasoning (analogies, figure series) | no: general part |
+| 21–40 | General awareness | no |
+| 41–60 | Arithmetic / numerical ability | no: general part (Q42 and Q45 are also cancelled there) |
+| 61–80 | English language | no |
+| 81–100 | Hindi language | no |
+| **101–190** | **Subject: TGT Mathematics** (sections of 20, 20, 20, 20, 10) | **yes** |
+| 191–200 | Teaching methodology (pedagogy) | no: pedagogy |
+
+**Maths taken: paper Q101–Q190.** Running number `n = paper Q − 100`, so n = 1 … 90 (n = 1 is Q101, n = 90 is Q190). No maths question was skipped. Skipped: Q1–Q100 (general sections) and Q191–Q200 (pedagogy).
+
+#### How it was read
+
+- Each question is printed twice: English, then Hindi. The English copy was used. `parse.py` groups the image blocks per question (first occurrence = English), and `crops.py` stacks each stem and its four options into `img/q101-104.png` … `img/q189-190.png` for reading.
+- The Hindi copy was checked for Q110, Q153, Q155 and Q189 (`img/h*.png`). It adds nothing: the same defects are in both languages.
+- Notation was normalised to LaTeX. Q112: the options print "=" where "≡ (mod p)" is meant, and `\equiv` was used. Q189: "log e^(x)" was read as $\log_e x$. The frequency tables of Q179–Q181 are written as plain text lines in `q`, so they wrap on a phone.
+- Trivial spelling fixes were made silently: "Menelau's" became "Menelaus'" and "is a not dual" became "is not a dual" (Q156); "standard deviations" became "standard deviation" (Q184); "conditions" became "condition" (Q153). Substantive changes are flagged.
+
+#### Answer that differs from the green key (1)
+
+- **n = 59 (Q159)**: the circumcentre of $A(1,2)$, $B(2,3)$, $C(3,1)$. My answer is (d) $(\frac{13}6,\frac{11}6)$; the key is (c) $(\frac{11}6,2)$. The point $(\frac{13}6,\frac{11}6)$ is at squared distance $\frac{50}{36}$ from all three vertices. The key point is not equidistant: its squared distances are $\frac{25}{36}$ to A and $\frac{37}{36}$ to B.
+
+#### Cancelled by the board (2), with key null
+
+- **n = 53 (Q153)**: as printed (a), (c) and (d) are all false, because (c) and (d) describe SSS and ASA but call them SAS. My answer is (a), the plainly false statement.
+- **n = 65 (Q165)**: the triangle is not named (BDC, as in JEE 1989), and options (b) $\frac4{3\sqrt3}$ and (c) $\frac{4\sqrt3}9$ are the same number. My answer is (c).
+
+#### Flags (13)
+
+- n=10 (Q110): the stem does not define e and k. The factorisation $n=2^e p_1^{e_1}\cdots p_k^{e_k}$ was added in brackets.
+- n=14 (Q114): misprint fixed, "linearly independent" became "dependent". As printed, three options (±2, 3, −1) would be correct. The key ±4 is the value that makes the vectors dependent.
+- n=17 (Q117): "and R³" read as "in R³".
+- n=53 (Q153): cancelled (see above).
+- n=54 (Q154): (a) "all 4 angles congruent" and (d) "both a rhombus and a rectangle" are also sufficient, as special cases. (c), the key, is the general test.
+- n=55 (Q155): garbled. (b), "is the circumcenter of the triangle", is true only for the medial triangle. Read literally, (a) and (c) are true statements. Answer set to the key (b). **Consider dropping this question.**
+- n=59 (Q159): differs from the key (see above).
+- n=64 (Q164): no option is right as printed. The area is $\frac{3\sqrt3}{4}(g^2+f^2-c)$. Option (b), the key, has "−1" for "−c" and a spurious square root.
+- n=65 (Q165): cancelled (see above).
+- n=69 (Q169): option (d) is a stray fragment of Q170 ("if the radius of the cylinder is 60 cm …"). It was kept as printed. The answer (c) 220 mm² is unaffected.
+- n=70 (Q170): the units are misprinted. The volume is $0.36\pi\approx1.131$ m³ (1131 litres), not 1131 m³. Answer (a), the key.
+- n=89 (Q189): as printed ($\log_e x$ normal) the answer is about 0.240, which is not an option. The areas supplied fit x itself being N(1, 4), which gives 0.29, the key. Answer (d).
+- n=90 (Q190): two correct options. (b), "the standard deviation of the sample mean", is the definition of the standard error. Answer kept as the key (a).
+
+#### Checks
+
+- `questions.jsonl`: **90 questions**, n = 1 … 90 in order, none repeated. Every line loads with `json.loads`. Each row has 4 options and 4 notes, a valid topic id from `topics.txt` and level "TGT".
+- `build.py` checks these things:
+  - `$` pairing and brace balance;
+  - no `$$` in `q`, and every `$$` display on its own line;
+  - no `\displaystyle`, no rupee sign and no `\,'`;
+  - a flag wherever the answer differs from the key or the key is null.
+- `widths.py` was used to split long inline formulas. The scratchpad's `mockck/pgt-1/texck.py` reports no real problem. Its two hits are the `$$` displays in n=14 and n=46, which are fine.
+- **Verified by script: 83 of 90** (`verify.py`, using sympy, exact fractions, brute force and numerics). The script recomputes each answer independently and picks the option. For all 83 it agrees with `answer`. Three of these checks (n=55, 64, 89) confirm the intended reading that is described in the flag.
+- Not scripted (7): n=52, 53, 54, 56, 77, 78, 90. These are definitions or statements (Euclid's postulate, similarity criteria, parallelogram tests, Ceva and Menelaus, histogram, cumulative frequency, standard error).
+
+#### Files
+
+- `questions.jsonl`: the output.
+- `qa.py` (n 1–45), `qb.py` (n 46–90): the content. `build.py` merges these with `keys.json`.
+- `parse.py`, `keys.py`, `crops.py`, `hindi.py`, `dump.py`, `render.py`: these read the PDF. `verify.py` and `widths.py`: checks.
+- `blocks.json`, `blocks_all.json`, `keys.json`, `dump.txt`, `img/`: intermediate files.
+
+### Independent check
+
+#### DSSSB TGT 2018 (18 November): check of 23 November 2026
+
+Paper: DSSSB TGT Mathematics (Female), CBT 18 November 2018, shift 1, the board's copy `papers/dsssb-tgt-2018-1118-board/paper.pdf` (the other copy, `dsssb-tgt-2018-1118-f`, was not opened). Maths = paper Q101–Q190 = n 1–90.
+Input: `pyq/dsssb-tgt-2018/questions.jsonl` (copied here as `questions.orig.jsonl`, not modified). Output: `questions.checked.jsonl`, **90 questions**, of which **9 have `"drop": true`** (n 14, 46, 53, 54, 55, 64, 65, 83, 90), so **81 go to the quiz**.
+
+##### How it was checked
+- My own scripts read the PDF (`seq.py` groups the images of each question in order, English copy first; `comp.py` stacks stem + four options into `img/q*.png`). Every stem and option of all 90 questions was read from these images; Hindi copies were rendered for n 10, 14 and 89 (`img/q110_114.png`, `img/q189.png`).
+- Key: read from the green tick in the left strip of each option image (`ticks.py` → `keys.json`), English and Hindi copies separately. 88 questions have exactly one tick, the same in both languages; Q153 (n 53) and Q165 (n 65) have none and carry the board's note "discrepancy is found in question/answer. So, this question is ignored for all candidates". The transcriber's `key` agrees with mine for all 90.
+- Answers: I solved all 90 myself (notes in `mine.md`) before reading the transcriber's answers and log. On every question I keep, my answer equals the transcriber's.
+- Transcription: stem and all four options compared with the images for all 90. All faithful and in the paper's order, apart from the points listed under "Changes".
+- **Checked by script: 75 of 90** (sympy, exact fractions, brute force, numerics): `v1.py` (n 4, 8, 13, 14, 15, 18, 20, 39, 42, 43, 44), `v2.py` (n 49, 51, 57, 59, 60, 62), `v3.py` (n 1, 3, 5–12, 19, 21–38, 40, 41, 45–48, 50, 58, 61, 63, 65–70, 72, 73, 75, 76, 79–86, 88, 89). All agree with my answers. Notable script results: n 10, the count of solutions of $x^2\equiv1$ is $2^{k+2}$ for every $n=8m<2000$; n 44, 31 numbers below 200 have three or more distinct prime factors (counting repeated factors gives 109, not an option); n 65, max area of BDC = 0.7698 = (b) = (c); n 67, exact π gives 4376.8 revolutions, π = 22/7 gives 4375; n 70, 0.36π = 1.1310, 0.36 × 3.14 = 1.1304; n 83, 1/6 (both faulty first) versus 1/3 (faulty pair known after two tests); n 89, P = 0.2902 if x ~ N(1,4), 0.2404 if ln x ~ N(1,4). Not scripted (15, statements and definitions): n 2, 16, 17, 52, 53, 54, 55, 56, 64, 71, 74, 77, 78, 87, 90.
+- Format (`check.py`): JSON loads, n 1…90 once each, 4 options and 4 notes, answer 0–3, topics all in `topics.txt`, level TGT, `$` even everywhere, braces and `\begin`/`\end` balanced in math, no `$$` in q/options, displays on their own lines, no align/displaystyle/rupee sign/`\,'`, a flag on every row whose answer differs from the key or whose key is null, every dropped row's flag starts "Dropped".
+
+##### Dropped (9): `"drop": true`, reason in `flag` and at the end of the solution
+- **n 14** (Q114): the paper asks when the vectors are linearly **independent** (Hindi too: स्वतंत्र). The determinant is $-2(\alpha^2-16)$, so ±2, 3 and −1 all give independent vectors: three correct options. The key ±4 answers "dependent". The transcriber had changed the word to "dependent", which reverses the printed question; I restored the printed wording.
+- **n 46** (Q146): $f(x)=x(\sqrt x-\sqrt{x+1})$. On the domain $x\ge0$, (c) the key ($f'(0^+)=-1$) and (d) "differentiable at $x\ne0$" (true at every $x>0$) are both true; demanding a two-sided derivative makes (a) true instead. Two defensible answers. The transcriber kept it.
+- **n 53** (Q153): cancelled by the board; as printed (a), (c), (d) are all false (no single answer).
+- **n 54** (Q154): (a) all angles equal and (d) rhombus and rectangle are also valid sufficient conditions, besides the key (c). The transcriber kept it.
+- **n 55** (Q155): garbled; the key (b) "is the circumcenter of the triangle" is false for the triangle itself, while (a) and (c) read literally are true. The transcriber kept it (suggested dropping).
+- **n 64** (Q164): no correct option; the area is $\frac{3\sqrt3}4(g^2+f^2-c)$, every option has a square root and ±1 for −c. The transcriber kept the key.
+- **n 65** (Q165): cancelled by the board; triangle not named, and the answer for BDC appears twice ((b) $\frac4{3\sqrt3}$ = (c) $\frac{4\sqrt3}9$).
+- **n 83** (Q183): two defensible answers. 1/6 (key, the JEE 1998 answer) if both faulty machines must come up in the first two tests; 1/3, option (c), if finding two good machines first also counts (the faulty pair is then known). The transcriber kept it.
+- **n 90** (Q190): two correct options: (b) "the standard deviation of the sample mean" is the definition; (a), the key, is right when read as $\sqrt{\sigma^2/n}$. Answer field set to (b), the unambiguous one (key (a) kept in `key`). The transcriber kept the key.
+
+##### Disagreement with the official key (kept question)
+- **n 59** (Q159): circumcentre of A(1,2), B(2,3), C(3,1) is $(\frac{13}6,\frac{11}6)$, option (d) (squared distance $\frac{50}{36}$ to all three; sympy). The key (c) $(\frac{11}6,2)$ is at squared distances $\frac{25}{36}$ from A and $\frac{37}{36}$ from B. Certain. The solution now states the key and why it is wrong.
+(Among dropped rows the key is also wrong or unusable in n 14, 55, 64 and 90; see above.)
+
+##### Changes made (question number: what was wrong → what it is now)
+- n 10: solution now begins by saying that the paper (English and Hindi) does not define e and k and that the bracketed factorisation is supplied; flag reworded. Kept.
+- n 14: q restored to the printed "linearly independent"; notes, solution, flag rewritten; dropped.
+- n 17: solution now begins with what the paper printed ("and R³", read "in R³").
+- n 33: note (a) said "drops a term"; it is a sign slip on the constant (12 − 4k − 5 = 0).
+- n 44: solution adds why "three or more primes" means distinct primes (the other reading gives 109, not an option).
+- n 46: notes, solution, flag; dropped.
+- n 47: solution notes that f and g are 0/0 at x = 0 (taken as the limit 1).
+- n 53: solution and flag; dropped.
+- n 54: notes (a), (d), solution, flag; dropped.
+- n 55: note (b), solution (no longer asserts that (b) is right), flag; dropped.
+- n 56: the transcriber's silent fixes ("Menelau's" → "Menelaus'", "is a not dual" → "is not a dual") are now stated in the solution and flag.
+- n 59: solution now states the board's key and why it is wrong.
+- n 60: note (d) said "digits of the numerator swapped" (686 vs 868 is not a swap); now "the numerator is 686, not 868".
+- n 64: note (b), solution, flag; dropped.
+- n 65: solution and flag; dropped.
+- n 67: solution notes that π = 22/7 is intended (exact π gives 4376.8).
+- n 70: options printed "1131, 1031, 1132, 1130 m³" (decimal points lost; the whole cylinder holds about 2 m³). The transcriber kept the impossible values and answered "as the key"; options are now 1.131, 1.031, 1.132, 1.130 m³, with the solution starting from what was printed; notes and flag rewritten. Answer (a) unchanged.
+- n 80: note (a) used N/2 = 30 with a total of 55; now "a + b = 10, but the total 60 needs a + b = 15".
+- n 83: notes (a), (c), solution, flag; dropped.
+- n 89: q said "$\log_e x$"; the paper prints "log e^(x)" with x raised, i.e. $\log e^{x}=x$. Read literally, x ~ N(1,4) and the areas the paper supplies (z = 0.25 and 0.5) give 0.29, the key; q, note (d), solution and flag rewritten (the transcriber's version answered "as the key" while saying the printed question has no correct option). Answer (d) unchanged.
+- n 90: answer 0 → 1, notes, solution, flag; dropped.
+- n 69: unchanged; option (d) is a stray fragment of another question ("if the radius of the cylinder is 60 cm …"), kept as printed and flagged; the answer 220 mm² is unaffected.
+No other answer changed. Topics: all kept as the transcriber chose (checked; the regression, curve-fitting and standard-error items n 86, 87, 90 have no dedicated page and sit on tp-16-07; Poisson and normal, n 84 and 89, are in the add-on at the end of tp-16-05).
+
+##### Left doubtful
+- n 10 (kept): the definition of e and k is supplied, not printed. With the standard factorisation $n=2^e p_1^{e_1}\cdots p_k^{e_k}$ (odd $p_i$) the answer is the key; if k were meant to count the prime 2 as well, the same count would read $2^{k+1}$ (option c). I judged the standard reading clear enough, because the stem singles out the exponent e of 2; drop it if a stricter line is wanted.
+- n 89 (kept): rests on reading the printed "log e^x" literally as x; the supplied table values and the key fit only this reading.
+- n 70 (kept): rests on the decimal-point reading; (d) 1.130 is what π ≈ 3.14 gives, but the exact value (and π = 22/7) is 1.131.
+- n 77 (kept): "size of the class" is the length of the base; the base itself is the class interval (b), the standard answer.
+- n 12: option (a) "(p − 1) ≡ −1 (mod p)" is a true congruence but not Wilson's theorem; the question asks what the theorem states, so (c).
 
 ## UP PGT Mathematics 2026 (10 May)
 
@@ -2135,4 +2721,4 @@ For every dropped line: `"drop": true`, `flag` starts with "Dropped", and the so
 
 ## Left out at publication
 
-Two more questions were left out when the files were built, besides those the checkers dropped: DSSSB TGT 2021 Q128 (the printed series "n(Sin(n))" is ambiguous; read as the sum of n sin(1/n), the board's key would be right) and LT Grade 2025 Q135 (read literally with 0 ≤ θ ≤ π, the answer would also include (5π/6, π], so the kept option depended on a convention).
+Three more questions were left out when the files were built, besides those the checkers dropped: DSSSB TGT 2021 Q128 (the printed series "n(Sin(n))" is ambiguous; read as the sum of n sin(1/n), the board's key would be right) and LT Grade 2025 Q135 (read literally with 0 ≤ θ ≤ π, the answer would also include (5π/6, π], so the kept option depended on a convention); and DSSSB TGT 2018 Q110 (the paper never defines e and k, and the answer depends on whether k counts the prime 2).
