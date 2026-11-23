@@ -154,7 +154,7 @@ const pickLang = (obj, l = lang) => (obj && (obj[l] || obj.en)) || '';
 
 const T = {
   en: {
-    tagline: 'Bilingual General Knowledge quiz for UPESSC TGT, PGT & Assistant Professor',
+    tagline: 'GK quizzes, maths notes and mock tests for UPESSC TGT, PGT and Assistant Professor',
     stats: (s, q) => `${s} sections · ${q.toLocaleString('en-IN')} questions · 1–20 players`,
     yourName: 'Your name', namePh: 'e.g. Priya', playSolo: 'Practise alone', createRoom: 'Create a room for friends',
     orJoin: 'or join friends', roomCode: 'Room code', join: 'Join', invited: 'You’re invited to room', joinGame: 'Join the quiz',
@@ -234,7 +234,7 @@ const T = {
     minRead: (m) => `${m} min read`,
   },
   hi: {
-    tagline: 'यूपीईएसएससी टीजीटी, पीजीटी एवं असिस्टेंट प्रोफेसर हेतु द्विभाषी सामान्य ज्ञान प्रश्नोत्तरी',
+    tagline: 'यूपीईएसएससी टीजीटी, पीजीटी व असिस्टेंट प्रोफेसर हेतु सामान्य ज्ञान क्विज़, गणित नोट्स व मॉक टेस्ट',
     stats: (s, q) => `${s} खंड · ${q.toLocaleString('en-IN')} प्रश्न · 1–20 खिलाड़ी`,
     yourName: 'आपका नाम', namePh: 'जैसे प्रिया', playSolo: 'अकेले अभ्यास करें', createRoom: 'मित्रों के लिए कक्ष बनाएँ',
     orJoin: 'या मित्रों से जुड़ें', roomCode: 'कक्ष कोड', join: 'जुड़ें', invited: 'आपको इस कक्ष में आमंत्रित किया गया है', joinGame: 'प्रश्नोत्तरी में जुड़ें',

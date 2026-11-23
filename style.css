@@ -1,10 +1,11 @@
-/* GS House — "Vedic manuscript" theme: parchment, saffron, maroon and temple gold.
+/* GS House — "Vedic manuscript" theme: a white page with saffron, maroon and temple gold
+   (cream parchment until 23 November 2026, when the owner asked for a white or light background).
    All colours are variables so that the dark theme (data-theme="dark" on <html>) only swaps values. */
 :root {
-  --paper: #fbf3e2;
-  --paper-2: #f5e6c8;
-  --glow: #fffaf0;
-  --card: #fffdf7;
+  --paper: #ffffff;      /* the page: white, warming very slightly towards the bottom */
+  --paper-2: #fbf7f0;
+  --glow: #fff0db;       /* a soft saffron glow behind the top of the page */
+  --card: #ffffff;
   --field: #fff;
   --soft: #fff8ea;
   --soft-2: #fffaf0;
@@ -90,7 +91,7 @@ html, body { margin: 0; }
 body {
   min-height: 100vh;
   background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%23c9972b' stroke-opacity='.10' stroke-width='1.2'%3E%3Ccircle cx='120' cy='120' r='100'/%3E%3Ccircle cx='120' cy='120' r='70'/%3E%3Ccircle cx='120' cy='120' r='40'/%3E%3Cpath d='M120 20 Q150 70 120 120 Q90 70 120 20Z M120 220 Q150 170 120 120 Q90 170 120 220Z M20 120 Q70 90 120 120 Q70 150 20 120Z M220 120 Q170 90 120 120 Q170 150 220 120Z'/%3E%3C/g%3E%3C/svg%3E") center 40px / 240px repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%23c9972b' stroke-opacity='.07' stroke-width='1.2'%3E%3Ccircle cx='120' cy='120' r='100'/%3E%3Ccircle cx='120' cy='120' r='70'/%3E%3Ccircle cx='120' cy='120' r='40'/%3E%3Cpath d='M120 20 Q150 70 120 120 Q90 70 120 20Z M120 220 Q150 170 120 120 Q90 170 120 220Z M20 120 Q70 90 120 120 Q70 150 20 120Z M220 120 Q170 90 120 120 Q170 150 220 120Z'/%3E%3C/g%3E%3C/svg%3E") center 40px / 240px repeat,
     radial-gradient(1200px 700px at 50% -10%, var(--glow), transparent 70%),
     linear-gradient(180deg, var(--paper), var(--paper-2));
   background-attachment: fixed;
