@@ -1,6 +1,6 @@
 # 🪔 GS HOUSE
 
-A free, bilingual (Hindi + English) General Knowledge quiz for the **UPESSC TGT, PGT and Assistant Professor (Higher Education)** exams. Play alone or with up to 20 friends using a room code.
+Free practice for the **UPESSC TGT, PGT and Assistant Professor (Higher Education)** exams: GK quizzes in Hindi and English, TGT and PGT maths notes with solved past papers and mock tests, and notes for UGC and CSIR NET. Play alone or with up to 20 friends using a room code.
 
 **Play:** https://lalitbhardwaj2002.github.io/gs-house/
 
