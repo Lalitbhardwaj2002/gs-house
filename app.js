@@ -164,7 +164,7 @@ const T = {
   en: {
     tagline: 'GK quizzes, maths notes and mock tests for UPESSC TGT, PGT and Assistant Professor',
     stats: (g, m) => [`${g.toLocaleString('en-IN')} GS questions`, m ? `${m.toLocaleString('en-IN')} maths questions` : '', '1–20 players'].filter(Boolean).map((s) => `<span>${s}</span>`).join(' · '),
-    yourName: 'Your name', namePh: 'e.g. Priya', playSolo: 'Practise alone', createRoom: 'Create a room for friends',
+    yourName: 'Your name', namePh: 'e.g. Ananya', playSolo: 'Practise alone', createRoom: 'Create a room for friends',
     orJoin: 'or join friends', roomCode: 'Room code', join: 'Join', invited: 'You’re invited to room', joinGame: 'Join the quiz',
     createOwn: 'Practise alone instead', loading: 'Loading…', opening: 'Opening a room…', reopening: 'Reopening your room…',
     joining: (c) => `Joining room ${c}…`, cancel: 'Cancel', backHome: 'Back to start',
@@ -244,7 +244,7 @@ const T = {
   hi: {
     tagline: 'यूपीईएसएससी टीजीटी, पीजीटी व असिस्टेंट प्रोफेसर हेतु सामान्य ज्ञान क्विज़, गणित नोट्स व मॉक टेस्ट',
     stats: (g, m) => [`${g.toLocaleString('en-IN')} सामान्य अध्ययन प्रश्न`, m ? `${m.toLocaleString('en-IN')} गणित प्रश्न` : '', '1–20 खिलाड़ी'].filter(Boolean).map((s) => `<span>${s}</span>`).join(' · '),
-    yourName: 'आपका नाम', namePh: 'जैसे प्रिया', playSolo: 'अकेले अभ्यास करें', createRoom: 'मित्रों के लिए कक्ष बनाएँ',
+    yourName: 'आपका नाम', namePh: 'जैसे अनन्या', playSolo: 'अकेले अभ्यास करें', createRoom: 'मित्रों के लिए कक्ष बनाएँ',
     orJoin: 'या मित्रों से जुड़ें', roomCode: 'कक्ष कोड', join: 'जुड़ें', invited: 'आपको इस कक्ष में आमंत्रित किया गया है', joinGame: 'प्रश्नोत्तरी में जुड़ें',
     createOwn: 'इसके बजाय अकेले अभ्यास करें', loading: 'लोड हो रहा है…', opening: 'कक्ष खुल रहा है…', reopening: 'आपका कक्ष फिर से खुल रहा है…',
     joining: (c) => `कक्ष ${c} से जुड़ रहे हैं…`, cancel: 'रद्द करें', backHome: 'शुरुआत पर लौटें',
