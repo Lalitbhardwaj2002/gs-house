@@ -3300,10 +3300,10 @@ function toast(text) {
 function petals() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const box = $('#petals');
-  const colors = ['#d4af37', '#f3d77a', '#b8901f', '#cfe9f5', '#8cc8e3'];   // gold and diamond
+  const colors = ['#cfeaf7', '#9fd3ea', '#e2d9fa', '#bfe3f2', '#f1f9fd'];   // diamond tints (the shine is in style.css)
   box.innerHTML = Array.from({ length: 70 }, () => {
     const c = colors[Math.floor(Math.random() * colors.length)];
-    return `<i style="left:${Math.random() * 100}%;background:${c};animation-duration:${3 + Math.random() * 3}s;animation-delay:${Math.random() * 1.2}s"></i>`;
+    return `<i style="left:${Math.random() * 100}%;background-color:${c};animation-duration:${3 + Math.random() * 3}s;animation-delay:${Math.random() * 1.2}s"></i>`;
   }).join('');
   setTimeout(() => { box.innerHTML = ''; }, 7000);
 }
