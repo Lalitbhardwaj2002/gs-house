@@ -163,7 +163,7 @@ const pickLang = (obj, l = lang) => (obj && (obj[l] || obj.en)) || '';
 const T = {
   en: {
     tagline: 'GK quizzes, maths notes and mock tests for UPESSC TGT, PGT and Assistant Professor',
-    stats: (g, m) => [`${g.toLocaleString('en-IN')} GS questions`, m ? `${m.toLocaleString('en-IN')} maths questions` : '', '1–20 players'].filter(Boolean).map((s) => `<span>${s}</span>`).join(' · '),
+    stats: (g, m) => [`${g.toLocaleString('en-IN')} GK questions`, m ? `${m.toLocaleString('en-IN')} maths questions` : '', '1–20 players'].filter(Boolean).map((s) => `<span>${s}</span>`).join(' · '),
     yourName: 'Your name', namePh: 'e.g. Ananya', playSolo: 'Practise alone', createRoom: 'Create a room for friends',
     orJoin: 'or join friends', roomCode: 'Room code', join: 'Join', invited: 'You’re invited to room', joinGame: 'Join the quiz',
     createOwn: 'Practise alone instead', loading: 'Loading…', opening: 'Opening a room…', reopening: 'Reopening your room…',
@@ -243,7 +243,7 @@ const T = {
   },
   hi: {
     tagline: 'यूपीईएसएससी टीजीटी, पीजीटी व असिस्टेंट प्रोफेसर हेतु सामान्य ज्ञान क्विज़, गणित नोट्स व मॉक टेस्ट',
-    stats: (g, m) => [`${g.toLocaleString('en-IN')} सामान्य अध्ययन प्रश्न`, m ? `${m.toLocaleString('en-IN')} गणित प्रश्न` : '', '1–20 खिलाड़ी'].filter(Boolean).map((s) => `<span>${s}</span>`).join(' · '),
+    stats: (g, m) => [`${g.toLocaleString('en-IN')} सामान्य ज्ञान प्रश्न`, m ? `${m.toLocaleString('en-IN')} गणित प्रश्न` : '', '1–20 खिलाड़ी'].filter(Boolean).map((s) => `<span>${s}</span>`).join(' · '),
     yourName: 'आपका नाम', namePh: 'जैसे अनन्या', playSolo: 'अकेले अभ्यास करें', createRoom: 'मित्रों के लिए कक्ष बनाएँ',
     orJoin: 'या मित्रों से जुड़ें', roomCode: 'कक्ष कोड', join: 'जुड़ें', invited: 'आपको इस कक्ष में आमंत्रित किया गया है', joinGame: 'प्रश्नोत्तरी में जुड़ें',
     createOwn: 'इसके बजाय अकेले अभ्यास करें', loading: 'लोड हो रहा है…', opening: 'कक्ष खुल रहा है…', reopening: 'आपका कक्ष फिर से खुल रहा है…',
@@ -355,7 +355,7 @@ function applyPrefs() {
   root.dataset.theme = isDark() ? 'dark' : 'light';
   root.style.setProperty('--fs', String(prefs.fs));
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.content = isDark() ? '#1c1510' : '#b8901f';
+  if (meta) meta.content = isDark() ? '#0e0f11' : '#b8901f';
 }
 function setPref(key, value) {
   prefs[key] = value;
@@ -2685,7 +2685,7 @@ async function showMqPractice(s, route, keepScroll) {
   app.innerHTML = `
     ${bookBar(`net/${s.id}`, bookName(s.title))}
     <section class="hero book-hero" lang="en"><div class="book-emoji">🎯</div><h1 class="book-title">Practice and mock tests</h1>
-      <p class="tagline">${esc(s.practice.about || '')}</p></section>
+      <p class="tagline">${expected.length ? `${expected.length} expected papers + ` : ''}${papers.length} past papers · every question solved and checked</p></section>
     <section class="card" lang="en"><h2>👥 Who is playing?</h2>
       <div class="segs segs-2">${seg(!ui.mqRoom, 'solo', '🪔 Alone')}${seg(ui.mqRoom, 'room', '👥 With friends')}</div>
       <p class="field-label">⏱️ Clock</p>
@@ -2879,13 +2879,13 @@ const DIYA_SVG = `
 // and a lamp under the roof. The wordmark is drawn too (no font), with a little house for the O; it takes the
 // theme colours. tools/make_icons.py draws the same shapes for the app icons: change both together.
 const LOGO_MARK = `<svg class="logo-mark" viewBox="0 0 512 512" aria-hidden="true">
-    <path d="M256 40 L44 200 V452 Q44 472 64 472 H256 Z" fill="#fbf3e2"/>
+    <path d="M256 40 L44 200 V452 Q44 472 64 472 H256 Z" fill="#ffffff"/>
     <path d="M256 40 L468 200 V452 Q468 472 448 472 H256 Z" fill="#7b1e1e"/>
     <path d="M256 40 L468 200 V452 Q468 472 448 472 H64 Q44 472 44 452 V200 Z" fill="none" stroke="#c9972b" stroke-width="16" stroke-linejoin="round"/>
     <path d="M256 92 C280 126 290 142 290 160 A34 34 0 0 1 222 160 C222 142 232 126 256 92 Z" fill="#e07a1f"/>
     <circle cx="256" cy="164" r="13" fill="#fbe7a8"/>
     <path d="M194.4 271.4 A66 66 0 1 0 218 322 H166" fill="none" stroke="#7b1e1e" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M388.6 272.5 A33 33 0 1 0 360 322 A33 33 0 1 1 331.4 371.5" fill="none" stroke="#fbf3e2" stroke-width="38" stroke-linecap="round"/>
+    <path d="M388.6 272.5 A33 33 0 1 0 360 322 A33 33 0 1 1 331.4 371.5" fill="none" stroke="#ffffff" stroke-width="38" stroke-linecap="round"/>
   </svg>`;
 const LOGO_WORD = `<svg class="logo-word" viewBox="-9 -9 618 118" aria-hidden="true">
     <g fill="none" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">

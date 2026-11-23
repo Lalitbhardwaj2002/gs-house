@@ -61,50 +61,51 @@
   color-scheme: light;
 }
 :root[data-theme='dark'] {
-  --paper: #1c1510;
-  --paper-2: #120d09;
-  --glow: #2a1f17;
-  --card: #251c15;
-  --field: #2e241b;
-  --soft: #2c2219;
-  --soft-2: #271e16;
-  --soft-3: #382b1f;
-  --row: #30251b;
-  --track: #43352a;
-  --chip: #43352a;
-  --line: #524030;
-  --line-2: #45372a;
-  --ink: #f2e7d5;
-  --muted: #b9a88f;
-  --note-ink: #d9cab1;
-  --saffron: #f0943a;
-  --maroon: #a43c2f;
-  --head: #f1c27b;
-  --gold: #d9aa45;
-  --teal: #78cdc5;
+  /* charcoal and gold (owner's choice, 24 November 2026; warm brown before): near-black page, gold accents, clear diamonds */
+  --paper: #0e0f11;
+  --paper-2: #08090a;
+  --glow: #17191d;
+  --card: #16181c;
+  --field: #1c1f24;
+  --soft: #1a1d21;
+  --soft-2: #181b1f;
+  --soft-3: #24282e;
+  --row: #1d2025;
+  --track: #2c3137;
+  --chip: #262a31;
+  --line: #4f4122;       /* dark gold borders */
+  --line-2: #30343a;
+  --ink: #f1ede4;
+  --muted: #aaa69c;
+  --note-ink: #d8d3c8;
+  --saffron: #e3b448;    /* gold accent */
+  --maroon: #8a6a12;     /* deep gold fill (white text on it) */
+  --head: #f0c75e;       /* gold headings */
+  --gold: #d9b04a;
+  --teal: #8ac7ea;       /* links */
   --right: #4cc38a;
-  --right-bg: #17352a;
+  --right-bg: #12301f;
   --right-ink: #a5e8c6;
   --wrong: #f07a69;
-  --wrong-bg: #40201b;
+  --wrong-bg: #3a1a17;
   --wrong-ink: #ffb9ae;
-  --sky-bg: #12293a;
+  --sky-bg: #10273a;
   --sky-line: #4aa3dc;
   --sky-ink: #9fd6f7;
-  --pink-bg: #3a1f2b;
+  --pink-bg: #33192a;
   --pink-line: #c86a8c;
   --pink-ink: #f6b8cc;
-  --warn-bg: #3b2f17;
+  --warn-bg: #1c1f24;
   --warn-ink: #f1d083;
-  --on-row: #3a2a1a;
+  --on-row: #1b2530;
   --on-right: #0c2a1c;
   --on-wrong: #3a0f0a;
-  --on-saffron: #2a1505;
-  --shadow: rgba(0, 0, 0, 0.35);
+  --on-saffron: #1d1503;
+  --shadow: rgba(0, 0, 0, 0.5);
   --pattern: 0.07;
   --diamond: #d4dce3;
-  --diamond-soft: #1b2a31;
-  --veil: rgba(28, 21, 16, 0.12);   /* the diamonds shine clearly on the dark page too (owner's request) */
+  --diamond-soft: #1b2630;
+  --veil: rgba(14, 15, 17, 0.12);   /* the diamonds shine clearly on the dark page too (owner's request) */
   color-scheme: dark;
 }
 
@@ -154,10 +155,13 @@ h1, h2, h3, h4, p { margin: 0; }
 }
 .card h2 { font-size: calc(21px * var(--fs)); font-weight: 700; color: var(--head); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .ornate { font-family: var(--display); font-size: calc(27px * var(--fs)) !important; justify-content: center !important; text-align: center; }
-/* the flower ornaments beside a title, diamond-plated (a prismatic fill with a white glint) */
+/* the flower ornaments beside a title: polished gold on the white page, clear diamond on the dark page */
 .ornate::before, .ornate::after { content: '❋'; font-size: calc(18px * var(--fs)); margin: 0 10px; color: var(--diamond);
-  background: linear-gradient(135deg, #ffffff 0%, #c9d2da 30%, #ffffff 48%, #e6dff5 66%, #aab6c1 85%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 2px rgba(150, 165, 178, 0.9)); }
+  background: linear-gradient(180deg, #f8e7a8 0%, #d4af37 45%, #b8860b 70%, #e9c75a 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 1px rgba(150, 112, 10, 0.35)); }
+[data-theme='dark'] .ornate::before, [data-theme='dark'] .ornate::after {
+  background: linear-gradient(135deg, #ffffff 0%, #c9d2da 30%, #ffffff 48%, #e6dff5 66%, #aab6c1 85%); -webkit-background-clip: text; background-clip: text;
+  filter: drop-shadow(0 0 2px rgba(220, 230, 240, 0.8)); }
 .stack { display: flex; flex-direction: column; gap: 12px; }
 .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
 .center { text-align: center; }
@@ -404,7 +408,8 @@ button.menu-row:hover { background: var(--soft-3); }
 .explain[lang='hi'] { font-size: calc(18px * var(--fs)); line-height: 1.7; }
 .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 12px; border-radius: 14px; background: var(--soft); border: 1px dashed var(--gold); }
 .node { padding: 5px 12px; border-radius: 10px; background: var(--field); border: 1px solid var(--line); font-size: calc(16px * var(--fs)); font-weight: 700; color: var(--teal); }
-.node.final { background: var(--right); color: var(--on-right); border-color: var(--right); }
+.node.final { background: var(--right-fill, var(--right)); color: var(--on-right); border-color: var(--right-fill, var(--right)); }
+:root:not([data-theme='dark']) { --right-fill: #23784a; }   /* the answer step of the flowchart: white text at 5.4:1 */
 .arrow { color: var(--gold); font-weight: 700; }
 .why h3, .facts h3, .sub { font-size: calc(18px * var(--fs)); color: var(--head); margin-bottom: 4px; }
 /* "About each option" and other long parts open on a tap. */
@@ -534,7 +539,7 @@ button.pill:hover { background: var(--soft-3); }
 
 /* ---------- UP TGT / PGT Mathematics: white with a faint diamond-blue graph-paper grid ---------- */
 :root { --m-paper: #ffffff; --m-grid: rgba(111, 179, 210, 0.12); --m-accent: #7a5c08; --m-soft: #eef8fc; --m-line: #e3cc84; }
-:root[data-theme='dark'] { --m-paper: #241c16; --m-grid: rgba(255, 196, 150, 0.05); --m-accent: #f2a582; --m-soft: #2e231b; --m-line: #4a3828; }
+:root[data-theme='dark'] { --m-paper: #16181c; --m-grid: rgba(170, 190, 210, 0.06); --m-accent: #f0c75e; --m-soft: #1b2630; --m-line: #3a3f46; }
 .maths-entry, body[data-subject='maths'] .card {
   background-color: var(--m-paper);
   background-image: linear-gradient(var(--m-grid) 1px, transparent 1px), linear-gradient(90deg, var(--m-grid) 1px, transparent 1px);
@@ -563,10 +568,10 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
    (the same in both themes). */
 .maths-entry { border: 3px solid #b8860b; outline-color: rgba(243, 215, 122, 0.9);
   box-shadow: 0 0 0 1px #8a6a12, 0 12px 30px rgba(150, 112, 10, 0.22); }
-.maths-entry .topic.ready { background: linear-gradient(135deg, #2a83bf 0%, #1d6ea8 55%, #155a8a 100%); border-color: #0f4a73;
+.maths-entry .topic.ready { background: linear-gradient(135deg, #1f6fa9 0%, #175f93 55%, #114c78 100%); border-color: #0f4a73;
   box-shadow: 0 6px 16px rgba(21, 90, 138, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25); color: #ffffff; }
 .maths-entry .topic.ready .topic-name { color: #ffffff; }
-.maths-entry .topic.ready .topic-meta, .maths-entry .topic.ready .topic-more { color: #d6ecfa; }
+.maths-entry .topic.ready .topic-meta, .maths-entry .topic.ready .topic-more { color: #ffffff; }
 .mq-home .btn { background: linear-gradient(135deg, #9a2638 0%, #82192b 55%, #6a1222 100%); border-color: #4f0b18; color: #ffffff;
   box-shadow: 0 4px 12px rgba(106, 18, 34, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
 .mq-home .btn:hover { background: linear-gradient(135deg, #a82c40 0%, #8e1d31 55%, #741427 100%); }
@@ -586,7 +591,7 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
    unit by unit, and what is planned. UGC NET has its own English / Hindi switch. */
 .net-card { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 20px 16px 16px; border-radius: 18px; color: var(--ink);
   background: linear-gradient(140deg, #ffffff 0%, #ffffff 55%, #f2f9fd 100%); border: 2px dashed var(--gold); box-shadow: 0 10px 26px var(--shadow); }
-[data-theme='dark'] .net-card { background: linear-gradient(140deg, #2a1f15 0%, #33251a 55%, #402a18 100%); }
+[data-theme='dark'] .net-card { background: linear-gradient(140deg, #16181c 0%, #1b1e23 55%, #22252b 100%); }
 .net-ribbon { align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: var(--gold-fill); color: var(--on-gold); font-weight: 700; letter-spacing: 0.04em; font-size: calc(13px * var(--fs)); box-shadow: 0 4px 10px rgba(184, 144, 31, 0.3); }
 .net-head { display: flex; align-items: center; gap: 12px; }
 .net-emoji { font-size: calc(42px * var(--fs)); line-height: 1; }
@@ -594,7 +599,7 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 .net-teaser { margin: 0; font-size: calc(17px * var(--fs)); line-height: 1.45; }
 .net-group { display: flex; flex-direction: column; gap: 8px; }
 .net-group-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-top: 6px; }
-.net-group h3 { margin: 0; font-size: calc(16px * var(--fs)); letter-spacing: 0.08em; color: var(--saffron); }
+.net-group h3 { margin: 0; font-size: calc(16px * var(--fs)); letter-spacing: 0.08em; color: var(--head); }
 .net-switch { display: inline-flex; border: 1px solid var(--gold); border-radius: 999px; overflow: hidden; background: var(--card); }
 .net-switch button { border: 0; background: transparent; color: var(--head); min-height: 36px; padding: 4px 14px; font: inherit; font-weight: 700; font-size: calc(14px * var(--fs)); line-height: 1.2; cursor: pointer; }
 .net-switch button.on { background: var(--gold-fill); color: var(--on-gold); }
@@ -696,7 +701,7 @@ button.topic { cursor: pointer; }
 .nb-table.wide table { min-width: 560px; }
 .nb-table th { background: var(--chip); color: var(--head); text-align: left; }
 /* long words may break, so that a two- or three-column table always fits a phone screen */
-.nb-table th, .nb-table td { padding: 8px 10px; border-bottom: 1px solid var(--line-2); vertical-align: top; overflow-wrap: anywhere; }
+.nb-table th, .nb-table td { padding: 8px 10px; border-bottom: 1px solid var(--line-2); vertical-align: top; overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; }
 .nb-table tr:last-child td { border-bottom: none; }
 .nb-time { list-style: none; margin: 0; padding: 0 0 0 16px; border-left: 3px solid var(--gold); display: flex; flex-direction: column; gap: 10px; }
 .nb-time li { position: relative; padding-left: 12px; display: flex; flex-direction: column; }
