@@ -552,19 +552,18 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 .maths-pdf { width: 100%; text-align: center; }
 .mq-home { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 10px 0; }
 .mq-home .btn { padding: 9px 8px; font-size: calc(15px * var(--fs)); line-height: 1.25; }
-/* The maths card on the home screen (owner's request, 23 November 2026): the TGT and PGT subject boxes in a warm
-   sky blue, the two past-papers-and-mocks boxes in a light maroon. */
-.maths-entry .topic.ready { background: linear-gradient(135deg, #eef8ff 0%, #d9eefb 60%, #cbe7f8 100%); border-color: #6fb6df;
-  box-shadow: 0 6px 16px rgba(74, 163, 220, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8); }
-.maths-entry .topic.ready .topic-name { color: #0f5a86; }
-.maths-entry .topic.ready .topic-meta, .maths-entry .topic.ready .topic-more { color: #3f6680; }
-.mq-home .btn { background: linear-gradient(135deg, #fdf1f3 0%, #f7dde2 60%, #f1ccd4 100%); border-color: #c47786; color: #7b1e2e;
-  box-shadow: 0 4px 12px rgba(123, 30, 46, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.8); }
-.mq-home .btn:hover { background: linear-gradient(135deg, #fdf1f3 0%, #f3d2d9 60%, #ecbfc9 100%); }
-[data-theme='dark'] .maths-entry .topic.ready { background: linear-gradient(135deg, #17344a 0%, #13293b 100%); border-color: #4aa3dc; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35); }
-[data-theme='dark'] .maths-entry .topic.ready .topic-name { color: #a8dcf8; }
-[data-theme='dark'] .maths-entry .topic.ready .topic-meta, [data-theme='dark'] .maths-entry .topic.ready .topic-more { color: #8fb9d3; }
-[data-theme='dark'] .mq-home .btn { background: linear-gradient(135deg, #3d1c25 0%, #33161f 100%); border-color: #a5596a; color: #f3b7c3; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35); }
+/* The maths card on the home screen (owner's requests, 23 November 2026): a bold dark-gold frame; the TGT and PGT
+   subject boxes in a deep sky blue and the two past-papers-and-mocks boxes in a deep maroon, both with white text
+   (the same in both themes). */
+.maths-entry { border: 3px solid #b8860b; outline-color: rgba(243, 215, 122, 0.9);
+  box-shadow: 0 0 0 1px #8a6a12, 0 12px 30px rgba(150, 112, 10, 0.22); }
+.maths-entry .topic.ready { background: linear-gradient(135deg, #2a83bf 0%, #1d6ea8 55%, #155a8a 100%); border-color: #0f4a73;
+  box-shadow: 0 6px 16px rgba(21, 90, 138, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25); color: #ffffff; }
+.maths-entry .topic.ready .topic-name { color: #ffffff; }
+.maths-entry .topic.ready .topic-meta, .maths-entry .topic.ready .topic-more { color: #d6ecfa; }
+.mq-home .btn { background: linear-gradient(135deg, #9a2638 0%, #82192b 55%, #6a1222 100%); border-color: #4f0b18; color: #ffffff;
+  box-shadow: 0 4px 12px rgba(106, 18, 34, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+.mq-home .btn:hover { background: linear-gradient(135deg, #a82c40 0%, #8e1d31 55%, #741427 100%); }
 /* The ₹10 unlock of the maths notes PDF (a box like the app's own question box) */
 .pay-dialog .small { font-size: calc(14px * var(--fs)); margin-top: 8px; }
 .upi-qr { display: block; width: 220px; height: 220px; max-width: 100%; margin: 12px auto 6px; padding: 6px; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
