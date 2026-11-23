@@ -1,6 +1,6 @@
 """Draws the GS HOUSE logo files and app icons.
 
-The logo: a house split into a light (cream) and a dark (maroon) half, with a drawn G on the light
+The logo: a house split into a light (white) and a dark (maroon) half, with a drawn G on the light
 half, a drawn S on the dark half and a lamp under the roof; beside it the drawn wordmark
 "GS HOUSE", whose O is a little house. Nothing uses a font, so the artwork looks the same everywhere.
 app.js holds the same shapes as LOGO_MARK and LOGO_WORD (the wordmark there takes the theme
@@ -22,7 +22,7 @@ import tempfile
 from pathlib import Path
 
 CHROME = sys.argv[1] if len(sys.argv) > 1 else 'C:/Program Files/Google/Chrome/Application/chrome.exe'
-MAROON, CREAM, GOLD, SAFFRON, GLOW = '#7b1e1e', '#fbf3e2', '#c9972b', '#e07a1f', '#fbe7a8'
+MAROON, CREAM, GOLD, SAFFRON, GLOW = '#7b1e1e', '#ffffff', '#c9972b', '#e07a1f', '#fbe7a8'   # the light half is white (owner's request, 24 November 2026; cream #fbf3e2 before)
 out = Path(__file__).resolve().parent.parent / 'icons'
 out.mkdir(exist_ok=True)
 
