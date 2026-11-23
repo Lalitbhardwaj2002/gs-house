@@ -219,7 +219,7 @@ const T = {
     byUnitRecent: 'By unit (recent quizzes)',
     keysHint: 'Keyboard: A–D or 1–4 to answer · Enter for the next question', keysPause: ' · P to pause',
     sideWait: 'The explanation appears here once you answer.',
-    bookCardTitle: 'Study with the book: Ghatna Chakra (new edition)',
+    bookCardTitle: 'Ghatna Chakra GK',
     netTitle: 'NET / JRF corner', netRibbon: 'Opening soon',
     netTeaser: 'Six doors, opening soon. Tap one to see its syllabus.',
     netFoot: 'Paper 1 topics are already in the quiz: Teaching & Research Aptitude and ICT.',
@@ -229,12 +229,12 @@ const T = {
     netTopicDone: 'Topic finished.', netNextTopic: 'Next topic', netSavePdf: 'Save this topic as PDF',
     netAnswer: 'Answer and solution', netAnsIs: (a) => `Answer: ${a}`, netMore: 'Past papers and exam guide', netOpen: 'Open',
     netPagesRead: (a, n) => `${a} of ${n} read`,
-    bookCardSub: 'Notes and chapter quizzes in the topic order of the TGT/PGT Samanya Gyan question bank: all 17 topics, from current affairs to computers, each with a full test.',
+    bookCardSub: '17 topics · notes and quizzes',
     bookRefLine: 'Reference',
     notesPdf: 'All notes as one PDF', chapterPdf: 'Save this chapter as PDF', pdfTitle: 'Notes for offline reading',
     pdfHow: 'Press the button below, then choose "Save as PDF" as the printer. On a phone the same button opens Print, where the PDF can be saved.',
     pdfMade: 'Notes written for GS House. They follow the topic order of the book; the page numbers refer to it.',
-    bookOpen: 'Open the book companion', bookShort: 'Book companion', bookBack: 'Back to the book', bookAgain: 'Try another set',
+    bookOpen: 'Open', bookShort: 'Book companion', bookBack: 'Back to the book', bookAgain: 'Try another set',
     bookPages: (p) => `Book pp. ${p}`, comingSoon: 'Coming soon', notesReady: 'Notes + quizzes', readNotes: 'Read notes', quiz: 'Quiz',
     readN: (a, n) => `${a} of ${n} chapters read`, best: (p) => `best ${p}%`, chapterOf: (i, n) => `Chapter ${i} of ${n}`,
     takeQuiz: 'Take the chapter quiz', fullTest: (n) => `Full test: ${n} mixed questions`, practiseBank: (n) => `Practise ${n} questions`,
@@ -299,7 +299,7 @@ const T = {
     byUnitRecent: 'इकाई अनुसार (हाल की प्रश्नोत्तरी)',
     keysHint: 'कीबोर्ड: उत्तर के लिए A–D या 1–4 · अगले प्रश्न के लिए Enter', keysPause: ' · रोकने के लिए P',
     sideWait: 'उत्तर देते ही व्याख्या यहाँ दिखेगी।',
-    bookCardTitle: 'पुस्तक के साथ पढ़ें: घटना चक्र (नया संस्करण)',
+    bookCardTitle: 'घटना चक्र सामान्य ज्ञान',
     netTitle: 'नेट / जेआरएफ कॉर्नर', netRibbon: 'शीघ्र खुल रहा है',
     netTeaser: 'छह द्वार, शीघ्र खुलेंगे। पाठ्यक्रम देखने के लिए किसी पर टैप करें।',
     netFoot: 'प्रश्नपत्र 1 के विषय प्रश्नोत्तरी में पहले से हैं: शिक्षण एवं शोध अभियोग्यता और आईसीटी।',
@@ -313,8 +313,8 @@ const T = {
     notesPdf: 'सभी नोट्स एक PDF में', chapterPdf: 'इस अध्याय को PDF में सहेजें', pdfTitle: 'बिना इंटरनेट पढ़ने के लिए नोट्स',
     pdfHow: 'नीचे का बटन दबाएँ, फिर प्रिंटर के रूप में "Save as PDF" चुनें। फोन पर यही बटन प्रिंट खोलता है, जहाँ से PDF सहेजी जा सकती है।',
     pdfMade: 'ये नोट्स GS House के लिए लिखे गए हैं। ये पुस्तक के विषय-क्रम के अनुसार हैं; पृष्ठ संख्या उसी पुस्तक की है।',
-    bookCardSub: 'टीजीटी/पीजीटी सामान्य ज्ञान प्रश्नकोश के विषय-क्रम में नोट्स और अध्यायवार प्रश्नोत्तरी: समसामयिकी से कंप्यूटर तक सभी 17 विषय, हर विषय की पूर्ण परीक्षा के साथ।',
-    bookOpen: 'पुस्तक साथी खोलें', bookShort: 'पुस्तक साथी', bookBack: 'पुस्तक पर लौटें', bookAgain: 'नए प्रश्न आज़माएँ',
+    bookCardSub: '17 विषय · नोट्स व क्विज़',
+    bookOpen: 'खोलें', bookShort: 'पुस्तक साथी', bookBack: 'पुस्तक पर लौटें', bookAgain: 'नए प्रश्न आज़माएँ',
     bookPages: (p) => `पुस्तक पृ. ${p}`, comingSoon: 'जल्द आ रहा है', notesReady: 'नोट्स + प्रश्नोत्तरी', readNotes: 'नोट्स पढ़ें', quiz: 'प्रश्नोत्तरी',
     readN: (a, n) => `${n} में से ${a} अध्याय पढ़े`, best: (p) => `सर्वश्रेष्ठ ${p}%`, chapterOf: (i, n) => `अध्याय ${i} / ${n}`,
     takeQuiz: 'अध्याय की प्रश्नोत्तरी दें', fullTest: (n) => `पूर्ण परीक्षण: ${n} मिश्रित प्रश्न`, practiseBank: (n) => `${n} प्रश्नों का अभ्यास करें`,
@@ -1791,8 +1791,9 @@ function renderHome() {
     <section class="card stack">${actions}</section>
     ${invited ? '' : `
     <section class="card book-entry">
-      <div class="book-entry-head"><span class="book-emoji">📚</span><div><h2>${t('bookCardTitle')}</h2><p class="muted small">${t('bookCardSub')}</p></div></div>
-      <button class="btn big" data-action="book">${t('bookOpen')} ▶</button>
+      <span class="book-emoji">📚</span><h2>${t('bookCardTitle')}</h2>
+      <button class="btn book-open" data-action="book">${t('bookOpen')} ▶</button>
+      <p class="small">${t('bookCardSub')}</p>
     </section>
     ${mathsHTML()}
     ${netHTML()}`}
