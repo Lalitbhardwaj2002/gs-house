@@ -1,0 +1,6551 @@
+{
+ "paper": {
+  "id": "dsssb-pgt-2025",
+  "title": "DSSSB PGT Mathematics 2025 (21 July, shift 1)",
+  "exam": "DSSSB PGT",
+  "date": "21 July 2025",
+  "level": "PGT",
+  "minutes": 108,
+  "negative": 0.25,
+  "source": "DSSSB PGT Mathematics (post code 805/23), computer-based test of 21 July 2025, shift 1: the mathematics section (questions 101 to 280) of the board's response sheet as re-shared after the exam, with the board's draft-stage answer key",
+  "note": "The mathematics section of the paper; the whole paper had 300 questions in 180 minutes."
+ },
+ "questions": [
+  {
+   "id": "mq/dsssb-pgt-2025-001",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 1,
+    "label": "DSSSB PGT 2025 · Q101"
+   },
+   "en": {
+    "q": "Let $A = \\{x \\in \\mathbb{Z} : -3 \\le x \\le 3\\}$. Define a relation $R$ on set $A$ as $R = \\{(a,b) \\in A \\times A : a^2 = b^2\\}$. Which of the following is true about relation $R$?",
+    "options": [
+     "$R$ contains exactly 13 ordered pairs.",
+     "$R$ is not a relation because the condition is not well defined.",
+     "$R$ contains exactly 7 ordered pairs.",
+     "$R$ is not symmetric but is reflexive and transitive."
+    ],
+    "explanation": "$A = \\{-3, -2, \\dots, 3\\}$ has 7 elements, and $a^2 = b^2$ means $b = \\pm a$.\nFor $a = 0$ only $b = 0$: 1 pair. Each of $a = \\pm1, \\pm2, \\pm3$ has 2 choices of $b$: $6 \\times 2 = 12$ pairs.\nTotal $1 + 12 = 13$ ordered pairs.",
+    "notes": [
+     "Right: $1 + 6 \\times 2 = 13$.",
+     "$a^2 = b^2$ is a clear condition, so $R$ is a relation.",
+     "7 counts only the diagonal pairs $(a, a)$.",
+     "$a^2 = b^2 \\Rightarrow b^2 = a^2$, so $R$ is symmetric (in fact an equivalence relation)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "$\\{(a,b) : a^2 = b^2\\}$ is an equivalence relation; each class is $\\{a, -a\\}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-002",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 2,
+    "label": "DSSSB PGT 2025 · Q102"
+   },
+   "en": {
+    "q": "If ${}^{10}P_2 = K \\cdot {}^{11}C_3$, then $K =$ ____.",
+    "options": [
+     "$\\frac{11}{3}$",
+     "$\\frac{6}{11}$",
+     "$\\frac{3}{11}$",
+     "$\\frac{11}{6}$"
+    ],
+    "explanation": "${}^{10}P_2 = 10 \\times 9 = 90$.\n${}^{11}C_3 = \\frac{11 \\times 10 \\times 9}{3!} = 165$.\n$K = \\frac{90}{165} = \\frac{6}{11}$.",
+    "notes": [
+     "",
+     "Right: $90/165$.",
+     "",
+     "This is $165/90$, the reciprocal."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "${}^nP_r = r! \\cdot {}^nC_r$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-003",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 3,
+    "label": "DSSSB PGT 2025 · Q103"
+   },
+   "en": {
+    "q": "Which of the following options defines that given relation $R$ is symmetric?",
+    "options": [
+     "$(x,y) \\in R \\Leftrightarrow (x,x) \\in R$",
+     "$(x,x) \\in R \\Leftrightarrow (y,y) \\in R$",
+     "$(x,y) \\in R \\Leftrightarrow (y,x) \\in R$ for all $(x,y) \\in R$",
+     "$(y,x) \\in R \\Leftrightarrow (y,y) \\in R$"
+    ],
+    "explanation": "A relation is symmetric when every pair can be reversed: whenever $(x,y) \\in R$, also $(y,x) \\in R$.\nOption (c) says exactly this; the others bring in diagonal pairs $(x,x)$, which concern reflexivity.",
+    "notes": [
+     "Involves $(x,x)$: that is about reflexivity.",
+     "Compares only diagonal pairs; says nothing about reversing $(x,y)$.",
+     "The definition of symmetry.",
+     "Again mixes in a diagonal pair."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Reflexive: $(a,a) \\in R$; symmetric: $(a,b) \\Rightarrow (b,a)$; transitive: $(a,b), (b,c) \\Rightarrow (a,c)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-004",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 4,
+    "label": "DSSSB PGT 2025 · Q104"
+   },
+   "en": {
+    "q": "In counting permutations ${}^nP_n =$",
+    "options": [
+     "$(n+1)!$",
+     "$\\frac{n!}{(n+r)!}$",
+     "$n!$",
+     "$(n-1)!$"
+    ],
+    "explanation": "${}^nP_r = \\frac{n!}{(n-r)!}$; with $r = n$: ${}^nP_n = \\frac{n!}{0!} = n!$.",
+    "notes": [
+     "Too big by a factor $n + 1$.",
+     "Wrong formula: the denominator is $(n-r)!$, not $(n+r)!$.",
+     "All $n$ objects in a row: $n!$.",
+     "$(n-1)!$ counts circular arrangements of $n$ objects."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "${}^nP_n = n!$ because $0! = 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-005",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 5,
+    "label": "DSSSB PGT 2025 · Q105"
+   },
+   "en": {
+    "q": "If $Y = \\{D, I, E, B, A, C, K\\}$ and $Z = \\{B, I, G, H, E, A, D\\}$ then the elements of the set $Z - Y$ are ____",
+    "options": [
+     "$\\{C, K\\}$",
+     "$\\{B, I, E, A, D\\}$",
+     "$\\{G, H, C, K\\}$",
+     "$\\{G, H\\}$"
+    ],
+    "explanation": "$Z - Y$ keeps the elements of $Z$ that are not in $Y$.\nOf $B, I, G, H, E, A, D$ only $G$ and $H$ are missing from $Y$, so $Z - Y = \\{G, H\\}$.",
+    "notes": [
+     "This is $Y - Z$.",
+     "This is $Z \\cap Y$.",
+     "This is the symmetric difference $(Z - Y) \\cup (Y - Z)$.",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$Z - Y = Z \\cap Y'$: the elements of $Z$ only."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-006",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 6,
+    "label": "DSSSB PGT 2025 · Q106"
+   },
+   "en": {
+    "q": "How many words, can be formed from the letters of the word INVOLUTE with each of 2 vowels and 2 consonants?",
+    "options": [
+     "864",
+     "4320",
+     "3580",
+     "4020"
+    ],
+    "explanation": "INVOLUTE has 4 vowels (I, O, U, E) and 4 consonants (N, V, L, T), all different.\nChoose 2 vowels and 2 consonants: ${}^4C_2 \\times {}^4C_2 = 6 \\times 6 = 36$ ways.\nArrange the 4 chosen letters: $4! = 24$. Total $36 \\times 24 = 864$.",
+    "notes": [
+     "Right.",
+     "$36 \\times 5!$: arranges 5 letters instead of 4.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "Select first (${}^nC_r$), then arrange ($r!$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-007",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 7,
+    "label": "DSSSB PGT 2025 · Q107"
+   },
+   "en": {
+    "q": "If John has 4 shirts and 5 pants, then the number of ways he can wear them is ____",
+    "options": [
+     "24 ways",
+     "9 ways",
+     "20 ways",
+     "15 ways"
+    ],
+    "explanation": "He wears one shirt and one pair of pants: by the multiplication principle $4 \\times 5 = 20$ ways.",
+    "notes": [
+     "",
+     "$4 + 5$ adds the choices: that counts a shirt OR a pair of pants.",
+     "Right: $4 \\times 5$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "Independent choices made together multiply (AND); alternatives add (OR)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-008",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 8,
+    "label": "DSSSB PGT 2025 · Q108"
+   },
+   "en": {
+    "q": "The coefficient of the middle term in the expansion $(3 - x^2)^8$ is ____",
+    "options": [
+     "5670",
+     "7650",
+     "5760",
+     "6570"
+    ],
+    "explanation": "$n = 8$ gives 9 terms; the middle one is $T_5$ ($r = 4$).\n$T_5 = {}^8C_4 \\cdot 3^4 (-x^2)^4 = 70 \\times 81 x^8 = 5670 x^8$.",
+    "notes": [
+     "Right: $70 \\times 81$.",
+     "Digits shuffled.",
+     "Digits shuffled.",
+     "Digits shuffled."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "For $(a + b)^n$ with $n$ even, the middle term is $T_{n/2 + 1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-009",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 9,
+    "label": "DSSSB PGT 2025 · Q109"
+   },
+   "en": {
+    "q": "Which of the following function is not an injective function?",
+    "options": [
+     "$f: [0, 4] \\to \\mathbb{R}$ defined by $f(x) = \\sin(x)$",
+     "$f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = e^x$",
+     "$f: [0, 1] \\to \\mathbb{R}$ defined by $f(x) = x^2$",
+     "$f: \\mathbb{R} \\to \\mathbb{R}$ defined by $f(x) = x^3$"
+    ],
+    "explanation": "$[0, 4]$ runs past $\\frac{\\pi}{2} \\approx 1.57$, so $\\sin x$ rises and then falls on it.\nFor example $\\sin 1 = \\sin(\\pi - 1)$, with $1$ and $\\pi - 1 \\approx 2.14$ both in $[0, 4]$: not one-one.\n$e^x$, $x^3$ on $\\mathbb{R}$ and $x^2$ on $[0, 1]$ are strictly increasing, hence injective.",
+    "notes": [
+     "Right: $\\sin 1 = \\sin(\\pi - 1)$.",
+     "$e^x$ is strictly increasing.",
+     "On $[0, 1]$ there are no negative inputs, so $x^2$ is strictly increasing.",
+     "$x^3$ is strictly increasing on $\\mathbb{R}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "A strictly monotonic function is one-one; $\\sin x$ is one-one on $[-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ but not on longer intervals like $[0, 4]$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-010",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 10,
+    "label": "DSSSB PGT 2025 · Q110"
+   },
+   "en": {
+    "q": "From the word HUMAN, how many four-letter words without repetition and with repetition, respectively, can be formed?",
+    "options": [
+     "$(120, 625)$",
+     "$(120, 320)$",
+     "$(625, 120)$",
+     "$(125, 625)$"
+    ],
+    "explanation": "HUMAN has 5 different letters.\nWithout repetition: ${}^5P_4 = 5 \\times 4 \\times 3 \\times 2 = 120$.\nWith repetition: each of the 4 places has 5 choices, $5^4 = 625$.",
+    "notes": [
+     "Right.",
+     "",
+     "The right numbers in the wrong order.",
+     "$125 = 5^3$, not ${}^5P_4$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "Without repetition ${}^nP_r$; with repetition $n^r$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-011",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 11,
+    "label": "DSSSB PGT 2025 · Q111"
+   },
+   "en": {
+    "q": "Which of the following arrow diagrams does not represent a valid function from set $A = \\{a, b, c\\}$ to set $B = \\{1, 2, 3\\}$?",
+    "options": [
+     "$a \\to 3$, $b \\to 2$, $c \\to 1$",
+     "$a \\to 1$, $b \\to 1$, $a \\to 3$",
+     "$a \\to 2$, $b \\to 2$, $c \\to 2$",
+     "$a \\to 1$, $b \\to 2$, $c \\to 3$"
+    ],
+    "explanation": "A function must send every element of $A$ to exactly one element of $B$.\nIn (b), $a$ has two images (1 and 3) and $c$ has none, so it is not a function.\n(a) and (d) are one-one functions; (c) is a constant function, still valid.",
+    "notes": [
+     "Valid (a bijection).",
+     "Right: $a$ has two arrows and $c$ none.",
+     "A constant function is still a function.",
+     "Valid (a bijection)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Function: every input has exactly one output; many-one is allowed, one-many is not."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-012",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 12,
+    "label": "DSSSB PGT 2025 · Q112"
+   },
+   "en": {
+    "q": "Find the value of ${}^{11}C_6 + {}^{10}C_5$",
+    "options": [
+     "$\\left(\\frac{14}{6}\\right) {}^{10}C_6$",
+     "$\\left(\\frac{17}{6}\\right) {}^{10}C_5$",
+     "$\\left(\\frac{11}{6}\\right) {}^{10}C_6$",
+     "$\\left(\\frac{17}{6}\\right) {}^{11}C_5$"
+    ],
+    "explanation": "${}^{11}C_6 = \\frac{11}{6} \\cdot {}^{10}C_5$, using ${}^nC_r = \\frac{n}{r} \\cdot {}^{n-1}C_{r-1}$.\nSo the sum is $\\left(\\frac{11}{6} + 1\\right) {}^{10}C_5 = \\frac{17}{6} \\cdot {}^{10}C_5$.\nCheck: $462 + 252 = 714 = \\frac{17}{6} \\times 252$.",
+    "notes": [
+     "$\\frac{14}{6} \\times 210 = 490$.",
+     "Right: $714$.",
+     "$\\frac{11}{6} \\times 210 = 385$.",
+     "$\\frac{17}{6} \\times 462 = 1309$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "${}^nC_r = \\frac{n}{r} \\cdot {}^{n-1}C_{r-1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-013",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 13,
+    "label": "DSSSB PGT 2025 · Q113"
+   },
+   "en": {
+    "q": "Suppose $A = \\{\\frac{m}{n} :$ $m < n$, $\\gcd(m, n) = 1$ and $m, n \\in \\{1, 2, 3, 4, 5\\}\\}$. Find the number of reflexive relations on $A$.",
+    "options": [
+     "$2^{90}$",
+     "$2^{72}$",
+     "$2^{20}$",
+     "$2^{182}$"
+    ],
+    "explanation": "The fractions are $\\frac12$; $\\frac13, \\frac23$; $\\frac14, \\frac34$; $\\frac15, \\frac25, \\frac35, \\frac45$, so $|A| = 9$.\nA reflexive relation must contain the 9 diagonal pairs; each of the other $81 - 9 = 72$ pairs may be in or out.\nNumber of reflexive relations $= 2^{72}$.",
+    "notes": [
+     "$2^{n^2 + n}$ with $n = 9$: wrong exponent.",
+     "Right: $2^{n^2 - n}$ with $n = 9$.",
+     "$2^{n^2 - n}$ with $n = 5$: miscounts $A$.",
+     "$2^{n^2 - n}$ with $n = 14$: miscounts $A$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "On a set of $n$ elements there are $2^{n^2 - n}$ reflexive relations."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-014",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 14,
+    "label": "DSSSB PGT 2025 · Q114"
+   },
+   "en": {
+    "q": "The function $f(x) = \\frac{2x - 8}{x^2 - 5x + 6}$ is not defined at ____",
+    "options": [
+     "$x = -3$",
+     "$x = -2$",
+     "$x = 3$",
+     "$x = 4$"
+    ],
+    "explanation": "$f$ is undefined where the denominator vanishes: $x^2 - 5x + 6 = (x - 2)(x - 3) = 0$, i.e. $x = 2$ or $x = 3$.\nOf the options only $x = 3$ appears.",
+    "notes": [
+     "Sign slip: the zeros are $+2$ and $+3$.",
+     "Sign slip.",
+     "Right.",
+     "$x = 4$ makes the numerator 0, so $f(4) = 0$ is defined."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "A rational function is undefined at the zeros of its denominator."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-015",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 15,
+    "label": "DSSSB PGT 2025 · Q115"
+   },
+   "en": {
+    "q": "If $n = 4$, $r = 2$ then $\\frac{n!}{r!(n - r)!}$ is",
+    "options": [
+     "1",
+     "6",
+     "8",
+     "3"
+    ],
+    "explanation": "$\\frac{4!}{2! \\cdot 2!} = \\frac{24}{4} = 6$ (this is ${}^4C_2$).",
+    "notes": [
+     "",
+     "Right: ${}^4C_2 = 6$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "$\\frac{n!}{r!(n-r)!} = {}^nC_r$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-016",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 16,
+    "label": "DSSSB PGT 2025 · Q116"
+   },
+   "en": {
+    "q": "If $A = \\{0, 1, 2, 4, 9\\}$ and a relation $R$ on $A$ is defined as $R = \\{(a, b) : a, b \\in A \\text{ and } b = (a + 2)^2\\}$, then find the number of elements present in the range of $R$.",
+    "options": [
+     "5",
+     "2",
+     "3",
+     "4"
+    ],
+    "explanation": "$a = 0 \\Rightarrow b = 4 \\in A$; $a = 1 \\Rightarrow b = 9 \\in A$.\n$a = 2, 4, 9$ give $16, 36, 121$, which are not in $A$.\n$R = \\{(0, 4), (1, 9)\\}$, so the range is $\\{4, 9\\}$: 2 elements.",
+    "notes": [
+     "5 is the size of $A$, not of the range.",
+     "Right.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Range of a relation = the set of second entries of its pairs."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-017",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 17,
+    "label": "DSSSB PGT 2025 · Q117"
+   },
+   "en": {
+    "q": "What is the slope of the graph of the identity function?",
+    "options": [
+     "0",
+     "1",
+     "Undefined",
+     "$-1$"
+    ],
+    "explanation": "The identity function is $y = x$, a line through the origin at $45^\\circ$; its slope is $\\tan 45^\\circ = 1$.",
+    "notes": [
+     "Slope 0 belongs to a constant function.",
+     "Right.",
+     "An undefined slope is a vertical line.",
+     "$-1$ is the slope of $y = -x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "Identity function $y = x$: slope 1, inclination $45^\\circ$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-018",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 18,
+    "label": "DSSSB PGT 2025 · Q118"
+   },
+   "en": {
+    "q": "How many permutations of the letters of the word \"APPLE\" are there?",
+    "options": [
+     "50",
+     "60",
+     "120",
+     "40"
+    ],
+    "explanation": "5 letters with P repeated twice: $\\frac{5!}{2!} = \\frac{120}{2} = 60$.",
+    "notes": [
+     "",
+     "Right.",
+     "$5! = 120$ ignores the repeated P.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.3 Permutations and combinations"
+    ],
+    "facts": [
+     "With repeated letters: $\\frac{n!}{p! q! \\cdots}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-019",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 19,
+    "label": "DSSSB PGT 2025 · Q119"
+   },
+   "en": {
+    "q": "The approximate value of $(0.99)^5$ correct to three decimal places is:",
+    "options": [
+     "0.954",
+     "0.953",
+     "0.952",
+     "0.951"
+    ],
+    "explanation": "$(1 - 0.01)^5 = 1 - 5(0.01) + 10(0.01)^2 - 10(0.01)^3 + \\dots$\n$= 1 - 0.05 + 0.001 - 0.00001 + \\dots = 0.95099\\ldots \\approx 0.951$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Right: $0.95099$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "$(1 + x)^n \\approx 1 + nx + \\frac{n(n-1)}{2}x^2$ for small $x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-020",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 20,
+    "label": "DSSSB PGT 2025 · Q120"
+   },
+   "en": {
+    "q": "Which of the following set is not an infinite set?",
+    "options": [
+     "$\\mathbb{N} \\cap \\mathbb{Q}^c$",
+     "$\\{x : x \\text{ is a multiple of } 5\\}$",
+     "$\\{(x, y) : x^2 + y^2 = 25 \\text{ where } x, y \\in \\mathbb{R}\\}$",
+     "$\\mathbb{Q} \\times \\mathbb{Q}$"
+    ],
+    "explanation": "$\\mathbb{Q}^c$ is the set of irrationals, and every natural number is rational, so $\\mathbb{N} \\cap \\mathbb{Q}^c = \\emptyset$: a finite set.\nThe multiples of 5, the points of the circle $x^2 + y^2 = 25$ and $\\mathbb{Q} \\times \\mathbb{Q}$ are all infinite.",
+    "notes": [
+     "Right: it is the empty set.",
+     "There are infinitely many multiples of 5.",
+     "A circle has infinitely many real points.",
+     "An infinite (countable) set of pairs."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.1 Sets and set operations"
+    ],
+    "facts": [
+     "$\\mathbb{N} \\subset \\mathbb{Q}$, so no natural number is irrational."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-021",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 21,
+    "label": "DSSSB PGT 2025 · Q121"
+   },
+   "en": {
+    "q": "Which of the following is the series expansion of $\\log_e 2$?",
+    "options": [
+     "$\\log_e 2 = 1 - \\frac{1}{2} + \\frac{1}{3} - \\frac{1}{4} + \\dots$",
+     "$\\log_e 2 = -1 - \\frac{1}{2} - \\frac{1}{3} - \\frac{1}{4} - \\dots$",
+     "$\\log_e 2 = -1 + \\frac{1}{2} - \\frac{1}{3} + \\frac{1}{4} - \\dots$",
+     "$\\log_e 2 = 1 + \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} + \\dots$"
+    ],
+    "explanation": "$\\log_e(1 + x) = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\dots$ for $-1 < x \\le 1$.\nPut $x = 1$: $\\log_e 2 = 1 - \\frac12 + \\frac13 - \\frac14 + \\dots$",
+    "notes": [
+     "Right.",
+     "This diverges to $-\\infty$.",
+     "This is $-\\log_e 2$.",
+     "The harmonic series diverges."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.5 Exponential and logarithmic series"
+    ],
+    "facts": [
+     "$\\log_e 2 = 1 - \\frac12 + \\frac13 - \\dots \\approx 0.693$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-022",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 22,
+    "label": "DSSSB PGT 2025 · Q122"
+   },
+   "en": {
+    "q": "If AM is the arithmetic mean and GM is geometric mean of $a$ and $b$, then which of the following is not correct",
+    "options": [
+     "If $a$ and $b$ are distinct then $\\text{AM} > \\text{GM}$",
+     "$\\text{AM} - \\text{GM} = \\frac{(\\sqrt{a} - \\sqrt{b})^2}{2}$",
+     "If $a$ and $b$ are distinct then $\\text{GM} > \\text{AM}$",
+     "If $a$ and $b$ are equal then $\\text{AM} = \\text{GM}$"
+    ],
+    "explanation": "For positive $a, b$: $\\text{AM} - \\text{GM} = \\frac{a + b}{2} - \\sqrt{ab} = \\frac{(\\sqrt a - \\sqrt b)^2}{2} \\ge 0$.\nSo $\\text{AM} \\ge \\text{GM}$, with equality only when $a = b$.\nHence '$\\text{GM} > \\text{AM}$' is the statement that is not correct.",
+    "notes": [
+     "True for distinct positive numbers.",
+     "A true identity.",
+     "Not correct: the inequality goes the other way.",
+     "True: the equality case."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$\\text{AM} \\ge \\text{GM} \\ge \\text{HM}$ for positive numbers, with equality only when they are all equal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-023",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 23,
+    "label": "DSSSB PGT 2025 · Q123"
+   },
+   "en": {
+    "q": "The approximation of $(0.99)^5$ using the first two terms of its expansion is",
+    "options": [
+     "0.94",
+     "0.90",
+     "0.951",
+     "0.95"
+    ],
+    "explanation": "$(1 - 0.01)^5 \\approx 1 + 5(-0.01) = 1 - 0.05 = 0.95$, keeping only the first two terms.",
+    "notes": [
+     "",
+     "",
+     "0.951 uses three terms (the $+0.001$ term too).",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "First-order approximation: $(1 + x)^n \\approx 1 + nx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-024",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 24,
+    "label": "DSSSB PGT 2025 · Q124"
+   },
+   "en": {
+    "q": "If the roots of a quadratic equation are 3 and $-5$, then the quadratic equation is ____",
+    "options": [
+     "$x^2 + 2x + 15 = 0$",
+     "$x^2 + 2x - 15 = 0$",
+     "$x^2 - 2x - 15 = 0$",
+     "$x^2 - 2x + 15 = 0$"
+    ],
+    "explanation": "Sum of roots $= 3 + (-5) = -2$, product $= -15$.\n$x^2 - (\\text{sum})x + \\text{product} = x^2 + 2x - 15 = 0$.",
+    "notes": [
+     "Sign of the product wrong.",
+     "Right.",
+     "Its roots are $-3$ and $5$.",
+     "Both signs wrong."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Equation with roots $\\alpha, \\beta$: $x^2 - (\\alpha + \\beta)x + \\alpha\\beta = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-025",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 25,
+    "label": "DSSSB PGT 2025 · Q125"
+   },
+   "en": {
+    "q": "The binomial expansion of $(x - 2y)^5$ is",
+    "options": [
+     "$x^5 - 20x^4y^3 - 40x^3y^2 - 100x^2y^3 - 70xy^4 + 16y^5$",
+     "$x^6 - 20x^4y^3 + 40x^3y^2 - 100x^2y^3 + 70xy^4 - 16y^5$",
+     "$x^5 - 10x^4y + 40x^3y^2 - 80x^2y^3 + 80xy^4 - 32y^5$",
+     "$x^5 - 10x^4y + 40x^3y^2 - 80x^2y^3 + 80xy^{3.5} - 32y^4$"
+    ],
+    "explanation": "$T_{r+1} = {}^5C_r x^{5-r}(-2y)^r$: coefficients $1, 5, 10, 10, 5, 1$ times $1, -2, 4, -8, 16, -32$.\n$= x^5 - 10x^4y + 40x^3y^2 - 80x^2y^3 + 80xy^4 - 32y^5$.",
+    "notes": [
+     "Wrong coefficients and powers.",
+     "Starts with $x^6$: wrong degree.",
+     "Right.",
+     "Powers of $y$ wrong in the last two terms."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "In $(x + a)^n$ the powers in every term add up to $n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-026",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 26,
+    "label": "DSSSB PGT 2025 · Q126"
+   },
+   "en": {
+    "q": "Two numbers are 3 and 24, find two geometric mean between these two numbers.",
+    "options": [
+     "6, 9",
+     "8, 16",
+     "6, 12",
+     "8, 12"
+    ],
+    "explanation": "$3, G_1, G_2, 24$ is a GP: $3r^3 = 24 \\Rightarrow r = 2$.\n$G_1 = 6$, $G_2 = 12$.",
+    "notes": [
+     "Not a GP: $9/6 \\ne 6/3$.",
+     "Not a GP with 3 and 24: $8/3 \\ne 16/8$.",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Inserting $n$ GMs between $a$ and $b$: $r = (b/a)^{1/(n+1)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-027",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 27,
+    "label": "DSSSB PGT 2025 · Q127"
+   },
+   "en": {
+    "q": "The sum of the first 20 natural numbers is ____",
+    "options": [
+     "250",
+     "200",
+     "210",
+     "240"
+    ],
+    "explanation": "$\\frac{n(n+1)}{2} = \\frac{20 \\times 21}{2} = 210$.",
+    "notes": [
+     "",
+     "",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$1 + 2 + \\dots + n = \\frac{n(n+1)}{2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-028",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 28,
+    "label": "DSSSB PGT 2025 · Q128"
+   },
+   "en": {
+    "q": "A sequence $\\{a_n\\}$ is defined as: $a_1 = 1$, and $a_n = \\frac{1}{a_{n-1}} + 2$. Find $a_2 + a_3$.",
+    "options": [
+     "$\\frac{16}{3}$",
+     "$\\frac{13}{3}$",
+     "$\\frac{10}{3}$",
+     "$\\frac{19}{3}$"
+    ],
+    "explanation": "$a_2 = \\frac{1}{1} + 2 = 3$.\n$a_3 = \\frac{1}{3} + 2 = \\frac{7}{3}$.\n$a_2 + a_3 = 3 + \\frac73 = \\frac{16}{3}$.",
+    "notes": [
+     "Right.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "For a recursively defined sequence, compute term by term from $a_1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-029",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 29,
+    "label": "DSSSB PGT 2025 · Q129"
+   },
+   "en": {
+    "q": "The number of real solutions of $x^2 + \\left(\\frac{x}{x - 1}\\right)^2 = 8$ are:",
+    "options": [
+     "3",
+     "4",
+     "0",
+     "2"
+    ],
+    "explanation": "Multiply by $(x - 1)^2$ ($x \\ne 1$): $x^2(x - 1)^2 + x^2 = 8(x - 1)^2$, i.e. $x^4 - 2x^3 - 6x^2 + 16x - 8 = 0$.\n$x = 2$ is a double root: $x^4 - 2x^3 - 6x^2 + 16x - 8 = (x - 2)^2(x^2 + 2x - 2)$.\nSo $x = 2$ or $x = -1 \\pm \\sqrt3$: three distinct real solutions (none equals 1).",
+    "notes": [
+     "Right: $2$, $-1 + \\sqrt3$, $-1 - \\sqrt3$.",
+     "Counts the double root $x = 2$ twice.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Count distinct solutions: a repeated root of the cleared polynomial is still one solution."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-030",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 30,
+    "label": "DSSSB PGT 2025 · Q130"
+   },
+   "en": {
+    "q": "In the expansion of $\\left(x^2 - \\frac{k}{x}\\right)^5$, what is the coefficient of $x$?",
+    "options": [
+     "$-10k$",
+     "$-10k^3$",
+     "$10k^5$",
+     "$10k^2$"
+    ],
+    "explanation": "$T_{r+1} = {}^5C_r (x^2)^{5-r}\\left(-\\frac{k}{x}\\right)^r = {}^5C_r(-k)^r x^{10 - 3r}$.\n$10 - 3r = 1 \\Rightarrow r = 3$: coefficient ${}^5C_3(-k)^3 = -10k^3$.",
+    "notes": [
+     "The power of $k$ must equal $r = 3$.",
+     "Right.",
+     "",
+     "Sign and power both wrong."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "Find $r$ from the power of $x$ in the general term, then substitute."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-031",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 31,
+    "label": "DSSSB PGT 2025 · Q131"
+   },
+   "en": {
+    "q": "In binomial expansion $(x + 2y)^9$, the general term expansion is ${}^9C_r 2^r x^{9-r} y^r$ then coefficient of $x^6 y^3$ in the expansion is",
+    "options": [
+     "672",
+     "670",
+     "336",
+     "572"
+    ],
+    "explanation": "$x^6y^3$ needs $r = 3$.\nCoefficient ${}^9C_3 \\cdot 2^3 = 84 \\times 8 = 672$.",
+    "notes": [
+     "Right.",
+     "",
+     "$84 \\times 4$: uses $2^2$ instead of $2^3$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "In $(x + ay)^n$ the coefficient of $x^{n-r}y^r$ is ${}^nC_r a^r$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-032",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 32,
+    "label": "DSSSB PGT 2025 · Q132"
+   },
+   "en": {
+    "q": "If the fourth term of a Geometric Progression (G.P.) is 81 and the seventh term is 729, then what is the first term?",
+    "options": [
+     "3",
+     "1",
+     "9",
+     "27"
+    ],
+    "explanation": "$ar^3 = 81$ and $ar^6 = 729$, so $r^3 = \\frac{729}{81} = 9$.\n$a = \\frac{81}{r^3} = \\frac{81}{9} = 9$.",
+    "notes": [
+     "Taking $T_7/T_4 = r^2$ (wrong exponent) gives $r = 3$ and $a = 81/27 = 3$.",
+     "",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "In a GP, $T_m / T_n = r^{m-n}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-033",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 33,
+    "label": "DSSSB PGT 2025 · Q133"
+   },
+   "en": {
+    "q": "Which of the following is correct for all $n \\in \\mathbb{N}$?",
+    "options": [
+     "$(ab)^n = a^n b^n$",
+     "$(ab)^n = a^{1/n} b^{1/n}$",
+     "$(ab)^n = a^n b^{1/n}$",
+     "$(ab)^n = a^n b$"
+    ],
+    "explanation": "$(ab)^n = (ab)(ab)\\cdots(ab)$ with $n$ factors, and rearranging (multiplication is commutative) gives $a^n b^n$.\nFormally it is proved by induction on $n$.",
+    "notes": [
+     "Right.",
+     "$a^{1/n}b^{1/n} = (ab)^{1/n}$, an $n$th root.",
+     "False, e.g. $a = 1$, $b = 4$, $n = 2$: $16 \\ne 2$.",
+     "False unless $b^{n-1} = 1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Law of indices: $(ab)^n = a^n b^n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-034",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 34,
+    "label": "DSSSB PGT 2025 · Q134"
+   },
+   "en": {
+    "q": "The general term of a G.P. is $T_n = 5 \\cdot (0.5)^{n-1}$. Which term is $\\frac{5}{64}$?",
+    "options": [
+     "7th",
+     "6th",
+     "5th",
+     "8th"
+    ],
+    "explanation": "$5(0.5)^{n-1} = \\frac{5}{64} \\Rightarrow \\left(\\frac12\\right)^{n-1} = \\frac{1}{64} = \\left(\\frac12\\right)^6$.\n$n - 1 = 6$, so $n = 7$.",
+    "notes": [
+     "Right.",
+     "Confuses $n$ with $n - 1$.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Write both sides as powers of the same base and compare exponents."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-035",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 35,
+    "label": "DSSSB PGT 2025 · Q135"
+   },
+   "en": {
+    "q": "For a set of numbers Arithmetic Mean is 18, Geometric Mean is 6. What is their Harmonic mean?",
+    "options": [
+     "$\\sqrt2$",
+     "3",
+     "1",
+     "2"
+    ],
+    "explanation": "For two positive numbers $a, b$: $\\text{AM} \\times \\text{HM} = \\frac{a+b}{2} \\cdot \\frac{2ab}{a+b} = ab = \\text{GM}^2$.\nSo $\\text{HM} = \\frac{\\text{GM}^2}{\\text{AM}} = \\frac{36}{18} = 2$.\nSuch numbers exist: $a + b = 36$ and $ab = 36$ give $a, b = 18 \\pm 12\\sqrt2$, both positive.\nThe relation holds only for two numbers (for three or more, AM and GM do not fix HM), so 'a set of numbers' is read as two numbers.",
+    "notes": [
+     "",
+     "$\\frac{\\text{AM}}{\\text{GM}} = 3$: not a formula for HM.",
+     "",
+     "Right: $\\text{HM} = \\frac{\\text{GM}^2}{\\text{AM}}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "For two positive numbers, $G^2 = AH$, and $A \\ge G \\ge H$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-036",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 36,
+    "label": "DSSSB PGT 2025 · Q136"
+   },
+   "en": {
+    "q": "Find the coefficient of $x^3$ in the expansion of $(2x + 1)^4$.",
+    "options": [
+     "24",
+     "12",
+     "32",
+     "16"
+    ],
+    "explanation": "$T_{r+1} = {}^4C_r (2x)^{4-r}$; $x^3$ needs $r = 1$.\nCoefficient ${}^4C_1 \\cdot 2^3 = 4 \\times 8 = 32$.",
+    "notes": [
+     "",
+     "",
+     "Right.",
+     "$2^4 = 16$ is the coefficient of $x^4$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "Raise the coefficient of $x$ to the same power as $x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-037",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 37,
+    "label": "DSSSB PGT 2025 · Q137"
+   },
+   "en": {
+    "q": "Find the coefficient of the term which is independent of $x$ in the expansion of $\\left(x + \\frac{1}{x}\\right)^n$, where $n$ is an odd positive integer.",
+    "options": [
+     "$\\binom{n}{\\frac{n-1}{2}}$",
+     "1",
+     "$\\binom{n}{\\frac{n}{2}}$",
+     "No such term exists"
+    ],
+    "explanation": "$T_{r+1} = {}^nC_r x^{n-r} x^{-r} = {}^nC_r x^{n - 2r}$.\nA term free of $x$ needs $n = 2r$, i.e. $n$ even.\nFor odd $n$ there is no such term.",
+    "notes": [
+     "${}^nC_{(n-1)/2}$ is the coefficient of $x^1$, one of the two middle terms.",
+     "",
+     "$\\frac{n}{2}$ is not an integer when $n$ is odd.",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "$\\left(x + \\frac1x\\right)^n$ has a constant term only for even $n$, namely ${}^nC_{n/2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-038",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 38,
+    "label": "DSSSB PGT 2025 · Q138"
+   },
+   "en": {
+    "q": "If $a, a + d, a + 2d, \\dots, a + (n - 1)d$ be an A.P then $S_n = \\frac{n}{2}[2a + (n - 1)d]$ can also be written as",
+    "options": [
+     "$S_n = n[a - l]$",
+     "$S_n = n[a + l]$",
+     "$S_n = \\frac{n}{2}[a - l]$",
+     "$S_n = \\frac{n}{2}[a + l]$"
+    ],
+    "explanation": "The last term is $l = a + (n - 1)d$.\n$2a + (n - 1)d = a + [a + (n - 1)d] = a + l$, so $S_n = \\frac{n}{2}[a + l]$.",
+    "notes": [
+     "",
+     "Twice the sum.",
+     "",
+     "Right ($l$ = last term)."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$S_n = \\frac{n}{2}(\\text{first term} + \\text{last term})$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-039",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 39,
+    "label": "DSSSB PGT 2025 · Q139"
+   },
+   "en": {
+    "q": "The term independent of $x$ in $\\left(\\sqrt{\\frac{x}{3}} + \\frac{3}{2x^2}\\right)^{10}$ is:",
+    "options": [
+     "$\\frac{3}{5}$",
+     "$\\frac{1}{2}$",
+     "$\\frac{1}{3}$",
+     "$\\frac{5}{4}$"
+    ],
+    "explanation": "$T_{r+1} = {}^{10}C_r \\left(\\frac{x}{3}\\right)^{\\frac{10 - r}{2}}\\left(\\frac{3}{2x^2}\\right)^r$; power of $x$: $\\frac{10 - r}{2} - 2r = 0 \\Rightarrow r = 2$.\n$T_3 = {}^{10}C_2 \\cdot \\frac{1}{3^4} \\cdot \\frac{9}{4} = 45 \\cdot \\frac{1}{81} \\cdot \\frac94 = \\frac54$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "Set the total power of $x$ in $T_{r+1}$ to zero to find the constant term."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-040",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 40,
+    "label": "DSSSB PGT 2025 · Q140"
+   },
+   "en": {
+    "q": "The coefficient of $x^3y^4$ in $(x - y^2)^5$ is ____",
+    "options": [
+     "15",
+     "20",
+     "10",
+     "5"
+    ],
+    "explanation": "$T_{r+1} = {}^5C_r x^{5-r}(-y^2)^r$; $x^3$ needs $r = 2$, which gives $y^4$.\nCoefficient ${}^5C_2(-1)^2 = 10$.",
+    "notes": [
+     "",
+     "",
+     "Right.",
+     "${}^5C_1$: wrong $r$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.4 Binomial theorem"
+    ],
+    "facts": [
+     "Match both powers: $x^{5-r}$ and $y^{2r}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-041",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 41,
+    "label": "DSSSB PGT 2025 · Q141"
+   },
+   "en": {
+    "q": "Which of the following options is a correct statement?",
+    "options": [
+     "$2^{20} - 1$ is divisible by 41",
+     "$2^{20} - 1$ is divisible by 21",
+     "$2^{20} - 1$ is divisible by 40",
+     "$2^{20} - 1$ is divisible by 20"
+    ],
+    "explanation": "$2^{10} = 1024 = 25 \\times 41 - 1$, so $2^{10} \\equiv -1 \\pmod{41}$ and $2^{20} \\equiv 1 \\pmod{41}$.\nHence $41 \\mid 2^{20} - 1$.\n$2^{20} - 1$ is odd (rules out 40 and 20), and $2^{20} \\equiv 2^2 = 4 \\pmod 7$ since $2^3 \\equiv 1$, so 21 fails.",
+    "notes": [
+     "Right.",
+     "Divisible by 3 but not by 7.",
+     "An odd number is not divisible by 40.",
+     "An odd number is not divisible by 20."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.3 Addition and multiplication modulo m"
+    ],
+    "facts": [
+     "$2^{20} - 1 = 1048575 = 3 \\cdot 5^2 \\cdot 11 \\cdot 31 \\cdot 41$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-042",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 42,
+    "label": "DSSSB PGT 2025 · Q142"
+   },
+   "en": {
+    "q": "The solution of $x^{39} \\equiv 3 \\pmod{13}$ is:",
+    "options": [
+     "no solution",
+     "5",
+     "4",
+     "2"
+    ],
+    "explanation": "$x \\equiv 0$ fails, so $13 \\nmid x$ and Fermat gives $x^{12} \\equiv 1$; hence $x^{39} = (x^{12})^3 x^3 \\equiv x^3 \\pmod{13}$.\nThe cubes mod 13 take only the values $0, 1, 5, 8, 12$ (e.g. $2^3 = 8$, $4^3 \\equiv 12$, $7^3 \\equiv 5$).\n3 is not a cube mod 13, so there is no solution.",
+    "notes": [
+     "Right.",
+     "$5^3 = 125 \\equiv 8$.",
+     "$4^3 = 64 \\equiv 12$.",
+     "$2^3 = 8$."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.7 Cosets and Lagrange's theorem"
+    ],
+    "facts": [
+     "Fermat: $x^{p-1} \\equiv 1 \\pmod p$ when $p \\nmid x$, so exponents can be reduced mod $p - 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-043",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 43,
+    "label": "DSSSB PGT 2025 · Q143"
+   },
+   "en": {
+    "q": "Representation of 262 in the basis of 7 form is ____.",
+    "options": [
+     "$531_7$",
+     "$532_7$",
+     "$533_7$",
+     "$523_7$"
+    ],
+    "explanation": "$262 = 37 \\times 7 + 3$, $37 = 5 \\times 7 + 2$, $5 = 0 \\times 7 + 5$.\nReading the remainders upwards: $262 = 523_7$. Check: $5 \\cdot 49 + 2 \\cdot 7 + 3 = 262$.",
+    "notes": [
+     "$531_7 = 267$.",
+     "$532_7 = 268$.",
+     "$533_7 = 269$.",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "To convert to base $b$, divide repeatedly by $b$ and read the remainders from last to first."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-044",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 44,
+    "label": "DSSSB PGT 2025 · Q144"
+   },
+   "en": {
+    "q": "If the product of two numbers is 182 and their sum is 27 then the two numbers are ____",
+    "options": [
+     "13 and 14",
+     "19 and 8",
+     "12 and 15",
+     "11 and 16"
+    ],
+    "explanation": "The numbers are the roots of $t^2 - 27t + 182 = 0$, i.e. $(t - 13)(t - 14) = 0$: 13 and 14.",
+    "notes": [
+     "Right.",
+     "Sum 27 but product 152.",
+     "Sum 27 but product 180.",
+     "Sum 27 but product 176."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Two numbers with sum $S$ and product $P$ are the roots of $t^2 - St + P = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-045",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 45,
+    "label": "DSSSB PGT 2025 · Q145"
+   },
+   "en": {
+    "q": "For the quadratic equation $ax^2 + bx + c = 0$, which of the following is correct for real, equal and imaginary roots respectively, ($D = b^2 - 4ac$)",
+    "options": [
+     "$D > 0$, $D = 0$, $D < 0$",
+     "$D = 0$, $D < 0$, $D > 0$",
+     "$D < 0$, $D = 0$, $D > 0$",
+     "$D > 0$, $D < 0$, $D = 0$"
+    ],
+    "explanation": "The roots are $\\frac{-b \\pm \\sqrt D}{2a}$: $D > 0$ gives two distinct real roots, $D = 0$ equal roots, $D < 0$ imaginary (non-real) roots.",
+    "notes": [
+     "Right.",
+     "",
+     "Reversed.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Real and distinct: $D > 0$; equal: $D = 0$; non-real: $D < 0$ (real coefficients)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-046",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-09",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 46,
+    "label": "DSSSB PGT 2025 · Q146"
+   },
+   "en": {
+    "q": "Which of the following is NOT a Peano's axiom?",
+    "options": [
+     "Zero is a natural number",
+     "One is the least prime number",
+     "Every natural number has a successor",
+     "Zero is not the successor of any natural number"
+    ],
+    "explanation": "Peano's axioms (form starting at 0): 0 is a natural number; every natural number has a unique successor; 0 is not a successor; different numbers have different successors; induction.\nPeano's original list starts at 1 instead; options (a) and (d) show that this question uses the form starting at 0.\nIn either form, primes are not mentioned in the axioms, and 1 is not even prime (the least prime is 2), so (b) is the statement that is not an axiom.",
+    "notes": [
+     "An axiom in the form starting at 0.",
+     "Right: not an axiom, and false anyway.",
+     "An axiom.",
+     "An axiom in the form starting at 0."
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.9 Peano's postulates and mathematical induction"
+    ],
+    "facts": [
+     "Peano's axioms: a first number, a one-one successor map, the first number is no successor, and induction."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-047",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 47,
+    "label": "DSSSB PGT 2025 · Q147"
+   },
+   "en": {
+    "q": "How many terms of the geometric sequence $2, 2\\sqrt2, 4, 4\\sqrt2, \\dots$ add up to $30 + 30\\sqrt2$?",
+    "options": [
+     "10",
+     "9",
+     "11",
+     "8"
+    ],
+    "explanation": "$a = 2$, $r = \\sqrt2$: $S_n = \\frac{2[(\\sqrt2)^n - 1]}{\\sqrt2 - 1} = 2(\\sqrt2 + 1)[(\\sqrt2)^n - 1]$.\nSet this equal to $30(1 + \\sqrt2)$: $(\\sqrt2)^n - 1 = 15$, so $(\\sqrt2)^n = 16 = (\\sqrt2)^8$.\n$n = 8$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Rationalise $\\frac{1}{\\sqrt2 - 1} = \\sqrt2 + 1$ to compare surd sums."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-048",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 48,
+    "label": "DSSSB PGT 2025 · Q148"
+   },
+   "en": {
+    "q": "From the second principle of number theory which of the following option is correct?",
+    "options": [
+     "$a^n - 1 = (a + 1)(a^{n-1} - a^{n-2} \\dots - a - 1) - 1$",
+     "$a^n - 1 = (a - 1)(a^{n-1} + a^{n-2} + \\dots + a + 1)$",
+     "$a^n + 1 = (a - 1)(a^{n-1} - a^{n-2} - \\dots - a - 1)$",
+     "$a^n + 1 = a(a^{n-1} - a^{n-2} \\dots - a - 1)$"
+    ],
+    "explanation": "Multiply out: $(a - 1)(a^{n-1} + \\dots + a + 1) = (a^n + a^{n-1} + \\dots + a) - (a^{n-1} + \\dots + a + 1) = a^n - 1$; the middle terms cancel.\nEquivalently $1 + a + \\dots + a^{n-1} = \\frac{a^n - 1}{a - 1}$ (GP sum), so $a - 1$ divides $a^n - 1$.",
+    "notes": [
+     "Fails at $a = -1$, $n = 2$: left side 0, right side $-1$.",
+     "Right.",
+     "Fails at $a = 1$: left side 2, right side 0.",
+     "Fails at $a = 0$: left side 1, right side 0."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "$a^n - 1 = (a - 1)(a^{n-1} + \\dots + a + 1)$, so $(a - 1) \\mid (a^n - 1)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-049",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 49,
+    "label": "DSSSB PGT 2025 · Q149"
+   },
+   "en": {
+    "q": "The area of a rectangular park is 575 sq m. If the length of the park is 2 m more than the breadth, find the perimeter (in meters) of the park.",
+    "options": [
+     "104",
+     "96",
+     "52",
+     "48"
+    ],
+    "explanation": "$b(b + 2) = 575 \\Rightarrow b^2 + 2b - 575 = 0 \\Rightarrow (b - 23)(b + 25) = 0$, so $b = 23$, $l = 25$.\nPerimeter $= 2(25 + 23) = 96$ m.",
+    "notes": [
+     "",
+     "Right.",
+     "",
+     "$l + b = 48$ is only half the perimeter."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Perimeter of a rectangle $= 2(l + b)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-050",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 50,
+    "label": "DSSSB PGT 2025 · Q150"
+   },
+   "en": {
+    "q": "The Geometric Mean of 6, $x$, $y$ and 27 is 12. If $y$ is double of $x$, find the value of $y$.",
+    "options": [
+     "8",
+     "16",
+     "12",
+     "9"
+    ],
+    "explanation": "$\\sqrt[4]{6 \\cdot x \\cdot y \\cdot 27} = 12 \\Rightarrow 162xy = 12^4 = 20736 \\Rightarrow xy = 128$.\nWith $y = 2x$: $2x^2 = 128$, $x = 8$, $y = 16$.",
+    "notes": [
+     "8 is $x$, not $y$.",
+     "Right.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "GM of $n$ numbers $= (x_1 x_2 \\cdots x_n)^{1/n}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-051",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 51,
+    "label": "DSSSB PGT 2025 · Q151"
+   },
+   "en": {
+    "q": "Which of the following is correct for greatest integer?",
+    "options": [
+     "$[2.2] = 2$, $[-3.7] = -3$",
+     "$[6.87] = 7$, $[-3.01] = 3$",
+     "$[2.8] = 3$, $[-2.8] = -3$",
+     "$[5.5656] = 5$, $[-3.1] = -4$"
+    ],
+    "explanation": "$[x]$ is the greatest integer $\\le x$.\n$[5.5656] = 5$ and $[-3.1] = -4$ (since $-4 \\le -3.1 < -3$).\nThe others fail: $[-3.7] = -4$, $[6.87] = 6$, $[2.8] = 2$.",
+    "notes": [
+     "$[-3.7] = -4$, not $-3$.",
+     "$[6.87] = 6$ and $[-3.01] = -4$.",
+     "$[2.8] = 2$: the floor is not rounding.",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "For negative non-integers $[x]$ moves away from zero: $[-3.1] = -4$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-052",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-04-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 52,
+    "label": "DSSSB PGT 2025 · Q152"
+   },
+   "en": {
+    "q": "Choose the correct statement from the options given.",
+    "options": [
+     "If $p$ is a prime number then for any integer $x$, the number $x^{p - x}$ is an integer multiple of $p$.",
+     "If $p$ is a prime number then for any integer $x$, the number $x^p - 1$ is an integer multiple of $p$.",
+     "If $p$ is a prime number then for any integer $x$, the number $x^p - x$ is an integer multiple of $p$.",
+     "If $p$ is a prime number then for any integer $x$, the number $x^{p-1}$ is an integer multiple of $p$."
+    ],
+    "explanation": "Fermat's little theorem: for a prime $p$ and any integer $x$, $x^p \\equiv x \\pmod p$, i.e. $p \\mid x^p - x$.\nTest $p = 3$, $x = 2$: $2^3 - 2 = 6$ is a multiple of 3, while $2^{1} = 2$, $2^3 - 1 = 7$ and $2^2 = 4$ are not.",
+    "notes": [
+     "$p = 3$, $x = 2$: $2^1 = 2$.",
+     "$p = 3$, $x = 2$: $7$.",
+     "Right: Fermat's little theorem.",
+     "$p = 3$, $x = 2$: $4$ (it is $x^{p-1} - 1$ that is a multiple when $p \\nmid x$)."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.7 Cosets and Lagrange's theorem"
+    ],
+    "facts": [
+     "Fermat: $x^p \\equiv x \\pmod p$ always; $x^{p-1} \\equiv 1 \\pmod p$ when $p \\nmid x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-053",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 53,
+    "label": "DSSSB PGT 2025 · Q153"
+   },
+   "en": {
+    "q": "Which of the following quadratic equation in the option has repeated roots?",
+    "options": [
+     "$x^2 - 1 = 0$",
+     "$x^2 - 5x + 6 = 0$",
+     "$x^2 - 6x + 9 = 0$",
+     "$2x^2 + 3x - 2 = 0$"
+    ],
+    "explanation": "Repeated roots need $D = b^2 - 4ac = 0$.\n$x^2 - 6x + 9$: $D = 36 - 36 = 0$; it is $(x - 3)^2$.\nThe others have $D = 4, 1, 25$.",
+    "notes": [
+     "$D = 4$: roots $\\pm1$.",
+     "$D = 1$: roots 2, 3.",
+     "Right.",
+     "$D = 25$: roots $\\frac12, -2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "Equal roots exactly when the discriminant is zero (a perfect-square trinomial)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-054",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-04-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 54,
+    "label": "DSSSB PGT 2025 · Q154"
+   },
+   "en": {
+    "q": "The remainder when $11^{50} \\times 17^{12}$ is divided by 6 is:",
+    "options": [
+     "2",
+     "1",
+     "4",
+     "3"
+    ],
+    "explanation": "$11 \\equiv -1$ and $17 \\equiv -1 \\pmod 6$.\n$11^{50} \\times 17^{12} \\equiv (-1)^{50}(-1)^{12} = 1 \\pmod 6$.",
+    "notes": [
+     "",
+     "Right.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.3 Addition and multiplication modulo m"
+    ],
+    "facts": [
+     "Replace each base by a small (or negative) residue before taking the power."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-055",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 55,
+    "label": "DSSSB PGT 2025 · Q155"
+   },
+   "en": {
+    "q": "How many natural numbers, $n$, exist such that 432000 is co-prime with $n$, and $n$ does not exceed 432000?",
+    "options": [
+     "115200",
+     "125100",
+     "135600",
+     "125700"
+    ],
+    "explanation": "$432000 = 2^7 \\cdot 3^3 \\cdot 5^3$.\n$\\phi(432000) = 432000\\left(1 - \\frac12\\right)\\left(1 - \\frac13\\right)\\left(1 - \\frac15\\right) = 432000 \\cdot \\frac{8}{30} = 115200$.",
+    "notes": [
+     "Right: Euler's $\\phi$.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.8 Cyclic groups"
+    ],
+    "facts": [
+     "$\\phi(n) = n\\prod_{p \\mid n}\\left(1 - \\frac1p\\right)$ counts $1 \\le k \\le n$ coprime to $n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-056",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 56,
+    "label": "DSSSB PGT 2025 · Q156"
+   },
+   "en": {
+    "q": "The quadratic equation $ax^2 + bx + c = 0$ and the roots are $1 + \\alpha$ and $1 - \\beta$, then which of the following is correct",
+    "options": [
+     "$\\alpha\\beta = -\\frac{a + b + c}{b}$",
+     "$\\alpha\\beta = \\frac{a + b + c}{b}$",
+     "$\\alpha\\beta = \\frac{a + b + c}{a}$",
+     "$\\alpha\\beta = -\\frac{a + b + c}{a}$"
+    ],
+    "explanation": "Write $ax^2 + bx + c = a(x - 1 - \\alpha)(x - 1 + \\beta)$ and put $x = 1$:\n$a + b + c = a(-\\alpha)(\\beta) = -a\\alpha\\beta$, so $\\alpha\\beta = -\\frac{a + b + c}{a}$.",
+    "notes": [
+     "The denominator must be $a$, the leading coefficient.",
+     "",
+     "This is the answer when the roots are $1 + \\alpha$ and $1 + \\beta$.",
+     "Right: $f(1) = -a\\alpha\\beta$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "If $f(x) = a(x - r_1)(x - r_2)$ then $f(1) = a(1 - r_1)(1 - r_2)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-058",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-01-09",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 58,
+    "label": "DSSSB PGT 2025 · Q158"
+   },
+   "en": {
+    "q": "$P(n): 2 + 4 + 6 + \\dots + 2n =$ ____. Select the appropriate value to fill in the blank so that $P(n)$ is true for all natural numbers $n$.",
+    "options": [
+     "$\\frac{n(n+1)}{2}$",
+     "$2(n+1)$",
+     "$n(n+1)$",
+     "$\\frac{n(n-1)}{2}$"
+    ],
+    "explanation": "$2 + 4 + \\dots + 2n = 2(1 + 2 + \\dots + n) = 2 \\cdot \\frac{n(n+1)}{2} = n(n + 1)$.\nInduction check: true at $n = 1$ ($2 = 1 \\cdot 2$), and $n(n+1) + 2(n+1) = (n+1)(n+2)$.",
+    "notes": [
+     "This is $1 + 2 + \\dots + n$.",
+     "Agrees only at $n = 2$.",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Set Theory",
+     "1.9 Peano's postulates and mathematical induction"
+    ],
+    "facts": [
+     "Sum of the first $n$ even numbers $= n(n+1)$; of the first $n$ odd numbers $= n^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-059",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 59,
+    "label": "DSSSB PGT 2025 · Q159"
+   },
+   "en": {
+    "q": "7 terms are inserted between $-3$ and $-59$ to form an Arithmetic Progression (AP). What would be the 5th term inserted?",
+    "options": [
+     "$-31$",
+     "$-44$",
+     "$-41$",
+     "$-38$"
+    ],
+    "explanation": "With 7 terms inserted there are 9 terms: $-3 + 8d = -59$, so $d = -7$.\nThe 5th inserted term is the 6th term of the AP: $-3 + 5(-7) = -38$.",
+    "notes": [
+     "This is the 4th inserted term.",
+     "",
+     "",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Inserting $n$ AMs between $a$ and $b$: $d = \\frac{b - a}{n + 1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-060",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 60,
+    "label": "DSSSB PGT 2025 · Q160"
+   },
+   "en": {
+    "q": "The geometric progression $a, ar, ar^2, ar^3, \\dots$ if $|r| < 1$, then",
+    "options": [
+     "As $n \\to \\infty$, $S_n \\to \\frac{1}{1 + r}$",
+     "As $n \\to \\infty$, $S_n \\to \\frac{1}{1 - r}$",
+     "As $n \\to \\infty$, $S_n \\to \\frac{1}{a - r}$",
+     "As $n \\to \\infty$, $S_n \\to \\frac{a}{1 - r}$"
+    ],
+    "explanation": "$S_n = \\frac{a(1 - r^n)}{1 - r}$ and $r^n \\to 0$ when $|r| < 1$.\nSo $S_n \\to \\frac{a}{1 - r}$.\nThe paper prints $r < 1$, but for $r \\le -1$ the sum does not converge, so the condition must be $|r| < 1$.",
+    "notes": [
+     "",
+     "True only when $a = 1$.",
+     "",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "Sum to infinity of a GP: $\\frac{a}{1 - r}$, valid for $|r| < 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-061",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 61,
+    "label": "DSSSB PGT 2025 · Q161"
+   },
+   "en": {
+    "q": "Find the equation of line parallel to $y$-axis and passing through the intersection point of lines $3x + 2y + 6 = 0$ and $4x + 3y - 12 = 0$.",
+    "options": [
+     "$x = -42$",
+     "$y = -60$",
+     "$y = 60$",
+     "$x = 42$"
+    ],
+    "explanation": "$3 \\times (3x + 2y = -6)$ minus $2 \\times (4x + 3y = 12)$: $9x - 8x = -18 - 24$, so $x = -42$, and then $y = 60$.\nA line parallel to the $y$-axis is $x = \\text{constant}$: through $(-42, 60)$ it is $x = -42$.",
+    "notes": [
+     "Right.",
+     "",
+     "$y = 60$ passes through the point but is parallel to the $x$-axis.",
+     "Sign slip."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Lines parallel to the $y$-axis have the form $x = h$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-062",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 62,
+    "label": "DSSSB PGT 2025 · Q162"
+   },
+   "en": {
+    "q": "Find the equation of straight line which is passing through the point $P(2, 6)$ such that its intercepts between the axes is bisected at point $P$.",
+    "options": [
+     "$x + y = 8$",
+     "$3x + y = 12$",
+     "$3x + 2y = 18$",
+     "$x + 3y = 20$"
+    ],
+    "explanation": "If $P$ is the mid-point of the segment cut off by the axes, the intercepts are $2 \\times 2 = 4$ and $2 \\times 6 = 12$.\n$\\frac{x}{4} + \\frac{y}{12} = 1 \\Rightarrow 3x + y = 12$.",
+    "notes": [
+     "Passes through $P$ but its intercepts are 8 and 8.",
+     "Right.",
+     "Passes through $P$ but its intercepts are 6 and 9.",
+     "Passes through $P$ but its intercepts are 20 and $\\frac{20}{3}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Segment between the axes bisected at $(h, k)$: $\\frac{x}{2h} + \\frac{y}{2k} = 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-063",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-09-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 63,
+    "label": "DSSSB PGT 2025 · Q163"
+   },
+   "en": {
+    "q": "The range of $f(x) = \\operatorname{cosec}(x)$ is ____",
+    "options": [
+     "$\\mathbb{R} - (-1, 1)$",
+     "$[-1, 1]$",
+     "$\\mathbb{R} - [-1, 1)$",
+     "$\\mathbb{R} - [-1, 1]$"
+    ],
+    "explanation": "$\\sin x \\in [-1, 1]$ and $\\sin x \\ne 0$ where cosec is defined, so $|\\operatorname{cosec} x| = \\frac{1}{|\\sin x|} \\ge 1$.\nRange $= (-\\infty, -1] \\cup [1, \\infty) = \\mathbb{R} - (-1, 1)$.",
+    "notes": [
+     "Right.",
+     "That is the range of $\\sin x$.",
+     "Wrongly drops $-1$, which is attained at $x = \\frac{3\\pi}{2}$.",
+     "Wrongly drops $\\pm1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.1 Trigonometric ratios and the unit circle"
+    ],
+    "facts": [
+     "$|\\operatorname{cosec} x| \\ge 1$ and $|\\sec x| \\ge 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-064",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 64,
+    "label": "DSSSB PGT 2025 · Q164"
+   },
+   "en": {
+    "q": "Which of the following lines is perpendicular to the line $y = \\frac{2}{5}x + 7$?",
+    "options": [
+     "$y = \\frac{2}{5}x - 7$",
+     "$y = \\frac{5}{2}x - 1$",
+     "$y = \\frac{-2}{5}x + 4$",
+     "$y = \\frac{-5}{2}x + 3$"
+    ],
+    "explanation": "Perpendicular slopes multiply to $-1$: $m = -\\frac{1}{2/5} = -\\frac52$.\nOnly $y = -\\frac52 x + 3$ has this slope.",
+    "notes": [
+     "Same slope: parallel.",
+     "Inverted but the sign not changed.",
+     "Sign changed but not inverted.",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Perpendicular lines: $m_1 m_2 = -1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-065",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 65,
+    "label": "DSSSB PGT 2025 · Q165"
+   },
+   "en": {
+    "q": "Find the equation of the line passing through the point $(2, -3)$, having a slope of 4. Also, determine whether the point $(3, 1)$ lies on this line.",
+    "options": [
+     "$y + 3 = 4x + 8$; Yes",
+     "$y - 3 = 4(x - 2)$; No",
+     "$y + 3 = 4(x - 2)$; Yes",
+     "$y - (-3) = 4(x - 2)$; No"
+    ],
+    "explanation": "Point-slope form: $y - (-3) = 4(x - 2)$, i.e. $y + 3 = 4(x - 2)$.\nAt $(3, 1)$: $1 + 3 = 4$ and $4(3 - 2) = 4$, so the point lies on the line: Yes.",
+    "notes": [
+     "$4(x - 2) = 4x - 8$, not $4x + 8$.",
+     "Uses $y_1 = 3$: wrong sign.",
+     "Right.",
+     "Right line, but $(3, 1)$ does lie on it."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Point-slope form: $y - y_1 = m(x - x_1)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-066",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 66,
+    "label": "DSSSB PGT 2025 · Q166"
+   },
+   "en": {
+    "q": "Find the value of $2\\cos^2\\theta + \\frac{2}{1 + \\cot^2\\theta}$.",
+    "options": [
+     "$-2$",
+     "2",
+     "$-1$",
+     "1"
+    ],
+    "explanation": "$1 + \\cot^2\\theta = \\operatorname{cosec}^2\\theta$, so $\\frac{2}{1 + \\cot^2\\theta} = 2\\sin^2\\theta$.\nSum $= 2(\\cos^2\\theta + \\sin^2\\theta) = 2$.",
+    "notes": [
+     "",
+     "Right.",
+     "",
+     "Forgets the factor 2."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "$1 + \\cot^2\\theta = \\operatorname{cosec}^2\\theta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-067",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 67,
+    "label": "DSSSB PGT 2025 · Q167"
+   },
+   "en": {
+    "q": "If $\\alpha \\ne \\beta$, $\\alpha^2 = 5\\alpha - 3$ & $\\beta^2 = 5\\beta - 3$, then the equation whose roots are $\\frac{\\alpha}{\\beta}$ & $\\frac{\\beta}{\\alpha}$ is:",
+    "options": [
+     "$3x^2 - 19x + 3 = 0$",
+     "$x^2 + 4x + 1 = 0$",
+     "$5x^2 - 2x + 5 = 0$",
+     "$x^2 + 2x + 1 = 0$"
+    ],
+    "explanation": "$\\alpha, \\beta$ are the two distinct roots of $x^2 - 5x + 3 = 0$: $\\alpha + \\beta = 5$, $\\alpha\\beta = 3$.\nNew sum $= \\frac{\\alpha^2 + \\beta^2}{\\alpha\\beta} = \\frac{25 - 6}{3} = \\frac{19}{3}$; new product $= 1$.\nEquation: $x^2 - \\frac{19}{3}x + 1 = 0$, i.e. $3x^2 - 19x + 3 = 0$.",
+    "notes": [
+     "Right.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-068",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 68,
+    "label": "DSSSB PGT 2025 · Q168"
+   },
+   "en": {
+    "q": "The equation of the line passing through the points $(3, -2)$ and $(-1, 4)$ is ____",
+    "options": [
+     "$2y = 5 - 3x$",
+     "$y = 5 - 3x$",
+     "$2y = 5 + 3x$",
+     "$y = 5 + 3x$"
+    ],
+    "explanation": "Slope $= \\frac{4 - (-2)}{-1 - 3} = -\\frac32$.\n$y + 2 = -\\frac32(x - 3) \\Rightarrow 2y + 4 = -3x + 9 \\Rightarrow 2y = 5 - 3x$.\nCheck $(-1, 4)$: $8 = 5 + 3$.",
+    "notes": [
+     "Right.",
+     "Slope $-3$: misses the factor 2.",
+     "Slope sign wrong.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Two-point form: $y - y_1 = \\frac{y_2 - y_1}{x_2 - x_1}(x - x_1)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-069",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 69,
+    "label": "DSSSB PGT 2025 · Q169"
+   },
+   "en": {
+    "q": "Which of the following options is the correct relation?",
+    "options": [
+     "$\\cot A = \\sqrt{1 - \\operatorname{cosec}^2 A}$",
+     "$\\operatorname{cosec} A = \\sqrt{\\cot^2 A - 1}$",
+     "$\\operatorname{cosec} A = \\sqrt{\\cot^2 A + 1}$",
+     "$\\operatorname{cosec} A = \\sqrt{1 - \\cot^2 A}$"
+    ],
+    "explanation": "Divide $\\sin^2 A + \\cos^2 A = 1$ by $\\sin^2 A$: $1 + \\cot^2 A = \\operatorname{cosec}^2 A$.\nSo $\\operatorname{cosec} A = \\sqrt{\\cot^2 A + 1}$ (positive root, e.g. for an acute angle $A$).\nSquaring the others: (a) and (d) need $\\cot A = 0$, so they hold only at isolated angles such as $A = 90^\\circ$; (b) gives $\\cot^2 A + 1 = \\cot^2 A - 1$, never true.",
+    "notes": [
+     "$1 - \\operatorname{cosec}^2 A = -\\cot^2 A \\le 0$: true only when $\\cot A = 0$.",
+     "Wrong sign under the root: never true.",
+     "Right.",
+     "Wrong sign under the root: true only when $\\cot A = 0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "$\\operatorname{cosec}^2 A - \\cot^2 A = 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-070",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-12-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 70,
+    "label": "DSSSB PGT 2025 · Q170"
+   },
+   "en": {
+    "q": "The area of a parallelogram whose adjacent sides are given as $\\vec a = 3\\hat i + 2\\hat j + \\hat k$ and $\\vec b = \\hat i - \\hat j + \\hat k$ is ____",
+    "options": [
+     "$\\sqrt{44}$ units",
+     "$\\sqrt{38}$ units",
+     "$\\sqrt{26}$ units",
+     "$\\sqrt{32}$ units"
+    ],
+    "explanation": "$\\vec a \\times \\vec b = \\begin{vmatrix}\\hat i & \\hat j & \\hat k\\\\ 3 & 2 & 1\\\\ 1 & -1 & 1\\end{vmatrix} = 3\\hat i - 2\\hat j - 5\\hat k$.\nArea $= |\\vec a \\times \\vec b| = \\sqrt{9 + 4 + 25} = \\sqrt{38}$.",
+    "notes": [
+     "",
+     "Right.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.2 Scalar (dot) and vector (cross) products"
+    ],
+    "facts": [
+     "Area of a parallelogram with adjacent sides $\\vec a, \\vec b$ is $|\\vec a \\times \\vec b|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-071",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-09-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 71,
+    "label": "DSSSB PGT 2025 · Q171"
+   },
+   "en": {
+    "q": "$\\tan\\left(\\frac{\\pi}{2} - \\theta\\right)\\cos\\left(\\frac{\\pi}{2} + \\theta\\right)\\sec(\\pi + \\theta) =$ ____.",
+    "options": [
+     "$\\sin^2\\theta$",
+     "$-1$",
+     "$-\\cos^2\\theta$",
+     "1"
+    ],
+    "explanation": "$\\tan\\left(\\frac\\pi2 - \\theta\\right) = \\cot\\theta$, $\\cos\\left(\\frac\\pi2 + \\theta\\right) = -\\sin\\theta$, $\\sec(\\pi + \\theta) = -\\sec\\theta$.\nProduct $= \\cot\\theta \\cdot \\sin\\theta \\cdot \\sec\\theta = \\frac{\\cos\\theta}{\\sin\\theta} \\cdot \\sin\\theta \\cdot \\frac{1}{\\cos\\theta} = 1$.",
+    "notes": [
+     "",
+     "One minus sign missed.",
+     "",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.1 Trigonometric ratios and the unit circle"
+    ],
+    "facts": [
+     "Allied angles: $\\cos\\left(\\frac\\pi2 + \\theta\\right) = -\\sin\\theta$, $\\sec(\\pi + \\theta) = -\\sec\\theta$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-073",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-09-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 73,
+    "label": "DSSSB PGT 2025 · Q173"
+   },
+   "en": {
+    "q": "If $x = 20^\\circ$, then $\\frac{\\sin 5x + \\sin 3x + \\sin x}{\\cos 5x + \\cos 3x + \\cos x} =$ ____.",
+    "options": [
+     "$\\frac{\\sqrt3}{2}$",
+     "1",
+     "$\\sqrt3$",
+     "$\\frac12$"
+    ],
+    "explanation": "$\\sin 5x + \\sin x = 2\\sin 3x\\cos 2x$ and $\\cos 5x + \\cos x = 2\\cos 3x\\cos 2x$.\nRatio $= \\frac{\\sin 3x(2\\cos 2x + 1)}{\\cos 3x(2\\cos 2x + 1)} = \\tan 3x = \\tan 60^\\circ = \\sqrt3$.",
+    "notes": [
+     "$\\sin 60^\\circ$, not $\\tan 60^\\circ$.",
+     "",
+     "Right.",
+     "$\\cos 60^\\circ$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.2 Trigonometric identities"
+    ],
+    "facts": [
+     "$\\frac{\\sin 5x + \\sin 3x + \\sin x}{\\cos 5x + \\cos 3x + \\cos x} = \\tan 3x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-074",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-11-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 74,
+    "label": "DSSSB PGT 2025 · Q174"
+   },
+   "en": {
+    "q": "Which of the following options is equation of parabola having axis of symmetry along positive $x$-axis with vertex at origin?",
+    "options": [
+     "$x^2 = 4ay$",
+     "$x^2 = -4ay$",
+     "$y^2 = 4ax$",
+     "$y^2 = -4ax$"
+    ],
+    "explanation": "Vertex at the origin with the $x$-axis as axis: $y^2 = \\pm 4ax$.\nOpening towards positive $x$ (focus $(a, 0)$, $a > 0$): $y^2 = 4ax$.",
+    "notes": [
+     "Axis along the $y$-axis (opens upwards).",
+     "Opens downwards.",
+     "Right.",
+     "Opens to the left."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.5 Parabola"
+    ],
+    "facts": [
+     "$y^2 = 4ax$: focus $(a, 0)$, directrix $x = -a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-075",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-08",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 75,
+    "label": "DSSSB PGT 2025 · Q175"
+   },
+   "en": {
+    "q": "If the equation $\\frac{p}{x + r} + \\frac{q}{x - r} = \\frac{k}{2x}$ has two equal roots, then the values of $k$ are",
+    "options": [
+     "$(\\sqrt p + \\sqrt q)^2$",
+     "$(\\sqrt p \\pm \\sqrt q)^2$",
+     "$(\\sqrt p - \\sqrt q)^2$",
+     "$\\sqrt p = \\sqrt q$"
+    ],
+    "explanation": "Clear denominators: $2x[p(x - r) + q(x + r)] = k(x^2 - r^2)$, i.e. $(2p + 2q - k)x^2 - 2r(p - q)x + kr^2 = 0$.\nEqual roots: $4r^2(p - q)^2 = 4kr^2(2p + 2q - k)$, so $k^2 - 2(p + q)k + (p - q)^2 = 0$.\n$k = (p + q) \\pm 2\\sqrt{pq} = (\\sqrt p \\pm \\sqrt q)^2$.",
+    "notes": [
+     "Only one of the two values.",
+     "Right: both values.",
+     "Only one of the two values.",
+     "Not a value of $k$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.8 Quadratic equations and theory of equations"
+    ],
+    "facts": [
+     "$Ax^2 + Bx + C = 0$ has equal roots when $B^2 = 4AC$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-076",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 76,
+    "label": "DSSSB PGT 2025 · Q176"
+   },
+   "en": {
+    "q": "The equation of a line passing through the point $(4, -3)$ and perpendicular to the line $2x + 3y - 6 = 0$ is ____",
+    "options": [
+     "$3x - 2y + 18 = 0$",
+     "$3x + 2y - 18 = 0$",
+     "$3x + 2y + 18 = 0$",
+     "$3x - 2y - 18 = 0$"
+    ],
+    "explanation": "A line perpendicular to $2x + 3y - 6 = 0$ is $3x - 2y + c = 0$.\nThrough $(4, -3)$: $12 + 6 + c = 0$, $c = -18$, giving $3x - 2y - 18 = 0$.",
+    "notes": [
+     "Wrong sign of the constant.",
+     "Slope $-\\frac32$: not perpendicular.",
+     "Slope $-\\frac32$: not perpendicular.",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Perpendicular to $ax + by + c = 0$: $bx - ay + k = 0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-077",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 77,
+    "label": "DSSSB PGT 2025 · Q177"
+   },
+   "en": {
+    "q": "Three points $A(1, 2)$, $B(3, 6)$ and $C(k, 10)$ lie on the same straight line. What is the value of $k$?",
+    "options": [
+     "7",
+     "5",
+     "6",
+     "4"
+    ],
+    "explanation": "Slope $AB = \\frac{6 - 2}{3 - 1} = 2$.\nSlope $AC = \\frac{10 - 2}{k - 1} = 2 \\Rightarrow k - 1 = 4$, $k = 5$.",
+    "notes": [
+     "",
+     "Right.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Collinear points: equal slopes, or zero triangle area."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-078",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-11-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 78,
+    "label": "DSSSB PGT 2025 · Q178"
+   },
+   "en": {
+    "q": "What is the perpendicular distance from the origin to the line $5x + 12y = 13$?",
+    "options": [
+     "13 units",
+     "5 units",
+     "1 unit",
+     "12 units"
+    ],
+    "explanation": "$d = \\frac{|5 \\cdot 0 + 12 \\cdot 0 - 13|}{\\sqrt{5^2 + 12^2}} = \\frac{13}{13} = 1$.",
+    "notes": [
+     "Forgets to divide by $\\sqrt{a^2 + b^2} = 13$.",
+     "",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.1 Points and straight lines"
+    ],
+    "facts": [
+     "Distance from $(x_1, y_1)$ to $ax + by + c = 0$: $\\frac{|ax_1 + by_1 + c|}{\\sqrt{a^2 + b^2}}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-079",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-11-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 79,
+    "label": "DSSSB PGT 2025 · Q179"
+   },
+   "en": {
+    "q": "What is the center and radius of the circle given by the equation $x^2 + y^2 - 6x + 4y + 9 = 0$?",
+    "options": [
+     "Center: $(-3, 2)$, Radius: 2",
+     "Center: $(-3, -2)$, Radius: 2",
+     "Center: $(3, -2)$, Radius: 2",
+     "Center: $(3, 2)$, Radius: 2"
+    ],
+    "explanation": "Compare with $x^2 + y^2 + 2gx + 2fy + c = 0$: $g = -3$, $f = 2$, $c = 9$.\nCentre $(-g, -f) = (3, -2)$, radius $\\sqrt{9 + 4 - 9} = 2$.",
+    "notes": [
+     "Both signs flipped: the centre is $(-g, -f)$.",
+     "",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.4 Circle"
+    ],
+    "facts": [
+     "Circle $x^2 + y^2 + 2gx + 2fy + c = 0$: centre $(-g, -f)$, radius $\\sqrt{g^2 + f^2 - c}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-080",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-11-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 80,
+    "label": "DSSSB PGT 2025 · Q180"
+   },
+   "en": {
+    "q": "What is the equation of a hyperbola whose transverse axis has length 10 and conjugate axis has length 6, and the center is at the origin?",
+    "options": [
+     "$\\frac{x^2}{36} - \\frac{y^2}{25} = 1$",
+     "$\\frac{x^2}{25} - \\frac{y^2}{9} = 1$",
+     "$\\frac{x^2}{25} - \\frac{y^2}{36} = 1$",
+     "$\\frac{x^2}{100} - \\frac{y^2}{36} = 1$"
+    ],
+    "explanation": "$2a = 10$, $2b = 6$: $a = 5$, $b = 3$.\nWith the transverse axis along the $x$-axis: $\\frac{x^2}{25} - \\frac{y^2}{9} = 1$.",
+    "notes": [
+     "",
+     "Right.",
+     "Uses $6^2$, the full conjugate axis squared.",
+     "Uses the full axis lengths squared."
+    ],
+    "path": [
+     "Mathematics",
+     "Coordinate Geometry of Two Dimensions",
+     "11.7 Hyperbola"
+    ],
+    "facts": [
+     "Transverse axis $2a$, conjugate axis $2b$: $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-081",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 81,
+    "label": "DSSSB PGT 2025 · Q181"
+   },
+   "en": {
+    "q": "Find the standard deviation of the given data (correct to two decimal places). Class interval: 0–10, 10–20, 20–30, 30–40, 40–50; frequency: 2, 5, 7, 4, 2.",
+    "options": [
+     "11.17",
+     "12.06",
+     "9.87",
+     "10.38"
+    ],
+    "explanation": "Mid-values $5, 15, 25, 35, 45$; $N = 20$; $\\sum fx = 490$, so $\\bar x = 24.5$.\n$\\sum fx^2 = 50 + 1125 + 4375 + 4900 + 4050 = 14500$.\n$\\sigma^2 = \\frac{14500}{20} - 24.5^2 = 725 - 600.25 = 124.75$, $\\sigma = \\sqrt{124.75} \\approx 11.17$.\nThis is the standard deviation with divisor $N$, the usual one for a frequency table; the divisor $N - 1$ would give $11.46$, not an option.",
+    "notes": [
+     "Right.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "$\\sigma^2 = \\frac{\\sum fx^2}{N} - \\bar x^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-082",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 82,
+    "label": "DSSSB PGT 2025 · Q182"
+   },
+   "en": {
+    "q": "Which of the following options is a vector?",
+    "options": [
+     "Distance",
+     "Mass",
+     "Force",
+     "Volume"
+    ],
+    "explanation": "A vector has both magnitude and direction. Force acts in a direction; distance, mass and volume have magnitude only (scalars).",
+    "notes": [
+     "A scalar (displacement is the vector).",
+     "A scalar.",
+     "Right.",
+     "A scalar."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "Force, displacement, velocity and acceleration are vectors; mass, distance, speed and volume are scalars."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-083",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 83,
+    "label": "DSSSB PGT 2025 · Q183"
+   },
+   "en": {
+    "q": "The distance between the points $P(-3, 2, -1)$ and $R\\left(-1, \\frac{4}{3}, \\frac{-1}{3}\\right)$ is ____",
+    "options": [
+     "$\\frac{2}{3}\\sqrt{13}$",
+     "$\\frac{2}{3}\\sqrt{14}$",
+     "$\\frac{2}{3}\\sqrt{11}$",
+     "$\\frac{2}{3}\\sqrt{10}$"
+    ],
+    "explanation": "Differences: $2, -\\frac23, \\frac23$.\n$PR = \\sqrt{4 + \\frac49 + \\frac49} = \\sqrt{\\frac{44}{9}} = \\frac{2}{3}\\sqrt{11}$.",
+    "notes": [
+     "",
+     "",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-084",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 84,
+    "label": "DSSSB PGT 2025 · Q184"
+   },
+   "en": {
+    "q": "If $\\vec a = 4\\hat i - 3\\hat j$, then which of the following options represents $-2\\vec a$?",
+    "options": [
+     "$8\\hat i - 6\\hat j$",
+     "$8\\hat i + 6\\hat j$",
+     "$-8\\hat i - 6\\hat j$",
+     "$-8\\hat i + 6\\hat j$"
+    ],
+    "explanation": "$-2\\vec a = -2(4\\hat i - 3\\hat j) = -8\\hat i + 6\\hat j$.",
+    "notes": [
+     "This is $2\\vec a$.",
+     "",
+     "Sign of the $\\hat j$ part wrong.",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "A negative scalar reverses the direction: every component changes sign."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-085",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-09-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 85,
+    "label": "DSSSB PGT 2025 · Q185"
+   },
+   "en": {
+    "q": "In a triangle $ABC$, $\\left(1 + \\frac{a}{b} + \\frac{c}{b}\\right)\\left(1 + \\frac{b}{c} - \\frac{a}{c}\\right) = k$, then $k$ lies in the interval",
+    "options": [
+     "$[0, 2]$",
+     "$[-1, 1]$",
+     "$[1, 2]$",
+     "$[0, 4]$"
+    ],
+    "explanation": "$k = \\frac{(b + c + a)(b + c - a)}{bc} = \\frac{(b + c)^2 - a^2}{bc} = \\frac{b^2 + c^2 - a^2}{bc} + 2 = 2\\cos A + 2$.\nSo $k = 4\\cos^2\\frac{A}{2}$ with $0 < A < \\pi$, giving $0 < k < 4$: $k$ lies in $[0, 4]$.",
+    "notes": [
+     "Too narrow: $k > 2$ whenever $A$ is acute.",
+     "",
+     "",
+     "Right (in fact $0 < k < 4$)."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.5 Properties and solution of triangles"
+    ],
+    "facts": [
+     "$\\frac{(b + c)^2 - a^2}{bc} = 2(1 + \\cos A) = 4\\cos^2\\frac{A}{2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-086",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 86,
+    "label": "DSSSB PGT 2025 · Q186"
+   },
+   "en": {
+    "q": "The direction cosines of the line passing through the points $(2, -3, 5)$ and $(1, 3, -4)$ are ____",
+    "options": [
+     "$\\frac{-1}{\\sqrt{118}}, \\frac{6}{\\sqrt{118}}, \\frac{-9}{\\sqrt{118}}$",
+     "$\\frac{1}{\\sqrt{118}}, \\frac{6}{\\sqrt{118}}, \\frac{9}{\\sqrt{118}}$",
+     "$\\frac{-1}{\\sqrt{118}}, \\frac{6}{\\sqrt{118}}, \\frac{9}{\\sqrt{118}}$",
+     "$\\frac{1}{\\sqrt{118}}, \\frac{6}{\\sqrt{118}}, \\frac{-9}{\\sqrt{118}}$"
+    ],
+    "explanation": "Direction ratios: $(1 - 2, 3 + 3, -4 - 5) = (-1, 6, -9)$.\n$\\sqrt{1 + 36 + 81} = \\sqrt{118}$, so the direction cosines are $\\frac{-1}{\\sqrt{118}}, \\frac{6}{\\sqrt{118}}, \\frac{-9}{\\sqrt{118}}$ (or all three signs reversed).",
+    "notes": [
+     "Right.",
+     "Two signs lost.",
+     "Sign of the last one wrong.",
+     "Sign of the first one wrong."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "Direction cosines $= \\frac{(x_2 - x_1, y_2 - y_1, z_2 - z_1)}{\\text{distance}}$, up to an overall sign."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-087",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-13-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 87,
+    "label": "DSSSB PGT 2025 · Q187"
+   },
+   "en": {
+    "q": "Find the value of $A$, if the planes $xA - y + z = 1$ and $\\vec r \\cdot (\\hat i + \\hat k) = -3$ intersect at an angle of $\\frac{\\pi}{6}$, where $\\vec r = x\\hat i + y\\hat j + z\\hat k$.",
+    "options": [
+     "2",
+     "4",
+     "1",
+     "$\\sqrt3$"
+    ],
+    "explanation": "Normals $(A, -1, 1)$ and $(1, 0, 1)$: $\\cos\\frac\\pi6 = \\frac{|A + 1|}{\\sqrt{A^2 + 2}\\sqrt2} = \\frac{\\sqrt3}{2}$.\nSquare: $4(A + 1)^2 = 6(A^2 + 2) \\Rightarrow A^2 - 4A + 4 = 0 \\Rightarrow A = 2$.",
+    "notes": [
+     "Right.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.2 The plane"
+    ],
+    "facts": [
+     "The angle between two planes is the angle between their normals."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-088",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 88,
+    "label": "DSSSB PGT 2025 · Q188"
+   },
+   "en": {
+    "q": "If the direction cosines of the two line are $\\left(\\frac13, \\frac23, \\frac23\\right)$ and $\\left(\\frac{2}{\\sqrt6}, \\frac{1}{\\sqrt6}, \\frac{-1}{\\sqrt6}\\right)$ respectively, then the angle between the lines is ____",
+    "options": [
+     "$\\theta = \\cos^{-1}\\left(\\frac{2}{\\sqrt6}\\right)$",
+     "$\\theta = \\cos^{-1}\\left(\\frac{1}{\\sqrt6}\\right)$",
+     "$\\theta = \\cos^{-1}\\left(\\frac{1}{3\\sqrt6}\\right)$",
+     "$\\theta = \\cos^{-1}\\left(\\frac{2}{3\\sqrt6}\\right)$"
+    ],
+    "explanation": "$\\cos\\theta = l_1l_2 + m_1m_2 + n_1n_2 = \\frac{2 + 2 - 2}{3\\sqrt6} = \\frac{2}{3\\sqrt6}$.\n$\\theta = \\cos^{-1}\\frac{2}{3\\sqrt6}$.",
+    "notes": [
+     "Drops the factor $\\frac13$ of the first line.",
+     "",
+     "",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "With direction cosines, $\\cos\\theta = l_1l_2 + m_1m_2 + n_1n_2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-089",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-09-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 89,
+    "label": "DSSSB PGT 2025 · Q189"
+   },
+   "en": {
+    "q": "If $\\theta = \\frac{7\\pi}{4}$ which lies on the unit circle, then the value of $\\sin\\theta + \\cos\\theta$ is ____",
+    "options": [
+     "1",
+     "$\\sqrt2$",
+     "0",
+     "2"
+    ],
+    "explanation": "$\\frac{7\\pi}{4} = 2\\pi - \\frac\\pi4$ is in the fourth quadrant: $\\sin\\theta = -\\frac{1}{\\sqrt2}$, $\\cos\\theta = \\frac{1}{\\sqrt2}$.\nSum $= 0$.",
+    "notes": [
+     "",
+     "That is the value at $\\theta = \\frac\\pi4$.",
+     "Right.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.1 Trigonometric ratios and the unit circle"
+    ],
+    "facts": [
+     "In the fourth quadrant only $\\cos$ and $\\sec$ are positive."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-090",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-09-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 90,
+    "label": "DSSSB PGT 2025 · Q190"
+   },
+   "en": {
+    "q": "In a triangle $ABC$, $2ac\\sin\\left(\\frac{A - B + C}{2}\\right)$ is equal to",
+    "options": [
+     "$a^2 + b^2 - c^2$",
+     "$c^2 + b^2 - a^2$",
+     "$a^2 - b^2 - c^2$",
+     "$c^2 + a^2 - b^2$"
+    ],
+    "explanation": "$A + C = \\pi - B$, so $\\frac{A - B + C}{2} = \\frac{\\pi}{2} - B$ and the sine equals $\\cos B$.\n$2ac\\cos B = c^2 + a^2 - b^2$ by the cosine rule.",
+    "notes": [
+     "This is $2ab\\cos C$.",
+     "This is $2bc\\cos A$.",
+     "",
+     "Right."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.5 Properties and solution of triangles"
+    ],
+    "facts": [
+     "Cosine rule: $b^2 = c^2 + a^2 - 2ca\\cos B$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-091",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-06-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 91,
+    "label": "DSSSB PGT 2025 · Q191"
+   },
+   "en": {
+    "q": "Which of the following is true for the function $f(x)=2x^3-3x^2-36x+15$?",
+    "options": [
+     "$f(x)$ is decreasing in $(-\\infty,-2)$",
+     "$f(x)$ is increasing in $(-\\infty,-2)$",
+     "$f(x)$ is decreasing in $(-2,\\infty)$",
+     "$f(x)$ is increasing in $(-2,\\infty)$"
+    ],
+    "explanation": "$f'(x)=6x^2-6x-36=6(x-3)(x+2)$. For $x<-2$ both factors are negative, so $f'>0$: $f$ is increasing on $(-\\infty,-2)$. On $(-2,3)$, $f'<0$ and on $(3,\\infty)$, $f'>0$.",
+    "notes": [
+     "$f'>0$ there, so $f$ increases.",
+     "Correct: $f'=6(x-3)(x+2)>0$ for $x<-2$.",
+     "$f$ increases again after $x=3$.",
+     "$f$ decreases on $(-2,3)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.3 Increasing and decreasing functions"
+    ],
+    "facts": [
+     "Factorise $f'$; its sign between consecutive critical points gives the intervals of increase and decrease."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-092",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 92,
+    "label": "DSSSB PGT 2025 · Q192"
+   },
+   "en": {
+    "q": "The domain of the function $f(x)=\\frac{1}{1-\\tan x}$ is ________.",
+    "options": [
+     "$\\mathbb{R}\\setminus\\left\\{\\frac{(nk+1)\\pi}{n}: n=2,3,\\ k\\in\\mathbb{Z}\\right\\}$",
+     "$\\mathbb{R}\\setminus\\left\\{\\frac{(nk+1)\\pi}{n}: n=2,4,\\ k\\in\\mathbb{Z}\\right\\}$",
+     "$\\mathbb{R}\\setminus\\left\\{\\frac{(2k+1)\\pi}{2}: k\\in\\mathbb{Z}\\right\\}$",
+     "$\\mathbb{R}\\setminus\\left\\{\\frac{(4k+1)\\pi}{4}: k\\in\\mathbb{Z}\\right\\}$"
+    ],
+    "explanation": "Two kinds of points are excluded. $\\tan x$ is undefined at $x=\\frac{(2k+1)\\pi}{2}$ (this is $n=2$). The denominator vanishes when $\\tan x=1$, i.e. $x=k\\pi+\\frac{\\pi}{4}=\\frac{(4k+1)\\pi}{4}$ (this is $n=4$). So the domain is $\\mathbb{R}\\setminus\\left\\{\\frac{(nk+1)\\pi}{n}: n=2,4\\right\\}$.",
+    "notes": [
+     "$n=3$ gives points where nothing goes wrong.",
+     "Correct: removes both $\\tan x$ undefined and $\\tan x=1$.",
+     "Forgets the zeros of $1-\\tan x$.",
+     "Forgets the points where $\\tan x$ is undefined."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.2 Relations and functions"
+    ],
+    "facts": [
+     "For $\\frac{1}{1-\\tan x}$ remove both $x=\\frac{(2k+1)\\pi}{2}$ and $x=k\\pi+\\frac{\\pi}{4}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-093",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-09-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 93,
+    "label": "DSSSB PGT 2025 · Q193"
+   },
+   "en": {
+    "q": "The principal value of $\\cos^{-1}\\left(\\frac{\\sqrt3}{2}\\right)$ is ______",
+    "options": [
+     "$\\frac{\\pi}{2}$",
+     "$\\frac{\\pi}{6}$",
+     "$\\frac{\\pi}{4}$",
+     "$\\frac{\\pi}{3}$"
+    ],
+    "explanation": "The principal range of $\\cos^{-1}$ is $[0,\\pi]$, and $\\cos\\frac{\\pi}{6}=\\frac{\\sqrt3}{2}$ with $\\frac{\\pi}{6}\\in[0,\\pi]$. So $\\cos^{-1}\\frac{\\sqrt3}{2}=\\frac{\\pi}{6}$.",
+    "notes": [
+     "$\\cos\\frac{\\pi}{2}=0$.",
+     "Correct.",
+     "$\\cos\\frac{\\pi}{4}=\\frac{1}{\\sqrt2}$.",
+     "$\\cos\\frac{\\pi}{3}=\\frac12$; that is $\\sin^{-1}\\frac{\\sqrt3}{2}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.4 Inverse circular functions"
+    ],
+    "facts": [
+     "$\\cos^{-1}$ takes values in $[0,\\pi]$; $\\cos^{-1}\\frac{\\sqrt3}{2}=\\frac{\\pi}{6}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-094",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 94,
+    "label": "DSSSB PGT 2025 · Q194"
+   },
+   "en": {
+    "q": "Find the mean deviation about the mean from the following data. $\\begin{array}{c|cccc} x & 2 & 3 & 4 & 5\\\\ \\hline f & 1 & 2 & 3 & 4\\end{array}$",
+    "options": [
+     "0.3",
+     "0.4",
+     "0.5",
+     "0.8"
+    ],
+    "explanation": "$N=10$, $\\sum fx=2+6+12+20=40$, so $\\bar x=4$. $|x-4|=2,1,0,1$ and $\\sum f|x-4|=2+2+0+4=8$. Mean deviation $=\\frac{8}{10}=0.8$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: $\\frac{\\sum f|x-\\bar x|}{N}=\\frac{8}{10}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Mean deviation about the mean $=\\frac{1}{N}\\sum f_i|x_i-\\bar x|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-095",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 95,
+    "label": "DSSSB PGT 2025 · Q195"
+   },
+   "en": {
+    "q": "At which point does the function $f(x)=2x^3-4x^2+2x$ attains its local minimum?",
+    "options": [
+     "$x=\\frac13$",
+     "$x=\\frac43$",
+     "$x=0$",
+     "$x=1$"
+    ],
+    "explanation": "$f'(x)=6x^2-8x+2=2(3x-1)(x-1)$, so the critical points are $x=\\frac13$ and $x=1$. $f''(x)=12x-8$: $f''(1)=4>0$ (minimum), $f''\\left(\\frac13\\right)=-4<0$ (maximum). Local minimum at $x=1$.",
+    "notes": [
+     "$f''\\left(\\frac13\\right)<0$: this is the local maximum.",
+     "Not a critical point.",
+     "$f'(0)=2\\neq0$.",
+     "Correct: $f'(1)=0$, $f''(1)=4>0$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "At a critical point, $f''>0$ means a local minimum and $f''<0$ a local maximum."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-097",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-06-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 97,
+    "label": "DSSSB PGT 2025 · Q197"
+   },
+   "en": {
+    "q": "If the radius of a circle increases at the rate of 2 cm/s, find the rate at which the area is increasing when radius is 5 cm.",
+    "options": [
+     "$25\\pi\\ \\text{cm}^2/\\text{s}$",
+     "$20\\pi\\ \\text{cm}^2/\\text{s}$",
+     "$5\\pi\\ \\text{cm}^2/\\text{s}$",
+     "$10\\pi\\ \\text{cm}^2/\\text{s}$"
+    ],
+    "explanation": "$A=\\pi r^2\\Rightarrow\\frac{dA}{dt}=2\\pi r\\frac{dr}{dt}=2\\pi(5)(2)=20\\pi\\ \\text{cm}^2/\\text{s}$.",
+    "notes": [
+     "This is the area $\\pi r^2$, not its rate.",
+     "Correct.",
+     "",
+     "Forgets the factor $\\frac{dr}{dt}=2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.1 Derivative: meaning and rules"
+    ],
+    "facts": [
+     "Related rates: $\\frac{dA}{dt}=2\\pi r\\frac{dr}{dt}$ for a circle."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-098",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 98,
+    "label": "DSSSB PGT 2025 · Q198"
+   },
+   "en": {
+    "q": "If $\\vec a=3\\hat i-8\\hat j-z\\hat k$, $\\vec b=y\\hat i+3\\hat j$, $\\vec c=x\\hat j-11\\hat k$ and $2\\vec a+3\\vec b-\\vec c=15\\hat i+9\\hat j-5\\hat k$, find the value of $x+y+z$.",
+    "options": [
+     "$-10$",
+     "$-22$",
+     "$-5$",
+     "$-16$"
+    ],
+    "explanation": "$2\\vec a+3\\vec b-\\vec c=(6+3y)\\hat i+(-16+9-x)\\hat j+(-2z+11)\\hat k$. Comparing: $6+3y=15\\Rightarrow y=3$; $-7-x=9\\Rightarrow x=-16$; $11-2z=-5\\Rightarrow z=8$. So $x+y+z=-16+3+8=-5$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     "This is $x$ alone."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "Two vectors are equal only when their $\\hat i,\\hat j,\\hat k$ components are equal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-099",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-09-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 99,
+    "label": "DSSSB PGT 2025 · Q199"
+   },
+   "en": {
+    "q": "In which quadrants of the coordinate plane is $\\cot x$ negative?",
+    "options": [
+     "II and IV quadrants",
+     "III and IV quadrants",
+     "I and III quadrants",
+     "II and III quadrants"
+    ],
+    "explanation": "$\\cot x=\\frac{\\cos x}{\\sin x}$ is negative when $\\cos x$ and $\\sin x$ have opposite signs: quadrant II ($\\cos<0,\\sin>0$) and quadrant IV ($\\cos>0,\\sin<0$).",
+    "notes": [
+     "Correct: same sign pattern as $\\tan x$.",
+     "$\\cot>0$ in III.",
+     "There $\\cot x>0$.",
+     "$\\cot>0$ in III."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "9.1 Trigonometric ratios and the unit circle"
+    ],
+    "facts": [
+     "$\\tan$ and $\\cot$ are positive in quadrants I and III, negative in II and IV."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-100",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-06-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 100,
+    "label": "DSSSB PGT 2025 · Q200"
+   },
+   "en": {
+    "q": "Let the function $f(x)=2x^3-6x+1$. On which of the following intervals is $f(x)$ strictly decreasing?",
+    "options": [
+     "$(-1,1)$",
+     "$(-\\infty,-1)$",
+     "$(1,\\infty)$",
+     "$(-\\infty,\\infty)$"
+    ],
+    "explanation": "$f'(x)=6x^2-6=6(x-1)(x+1)<0$ exactly when $-1<x<1$. So $f$ is strictly decreasing on $(-1,1)$.",
+    "notes": [
+     "Correct.",
+     "$f'>0$ there: increasing.",
+     "$f'>0$ there: increasing.",
+     "$f$ is not monotonic on $\\mathbb{R}$."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.3 Increasing and decreasing functions"
+    ],
+    "facts": [
+     "$f$ is strictly decreasing where $f'(x)<0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-101",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-13-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 101,
+    "label": "DSSSB PGT 2025 · Q201"
+   },
+   "en": {
+    "q": "The vector equation of the line joining points A(1, 0, 2) and B(3, −2, 4) is_______",
+    "options": [
+     "$(1+2\\lambda)\\hat i-2\\lambda\\hat j+(2+2\\lambda)\\hat k$",
+     "$(1+2\\lambda)\\hat i+3\\lambda\\hat j+(2+2\\lambda)\\hat k$",
+     "$2\\lambda\\hat i-2\\lambda\\hat j+(2+2\\lambda)\\hat k$",
+     "$(1+2\\lambda)\\hat i+2\\lambda\\hat j+(2+2\\lambda)\\hat k$"
+    ],
+    "explanation": "$\\vec r=\\vec a+\\lambda(\\vec b-\\vec a)$ with $\\vec a=\\hat i+2\\hat k$ and $\\vec b-\\vec a=2\\hat i-2\\hat j+2\\hat k$. So $\\vec r=(1+2\\lambda)\\hat i-2\\lambda\\hat j+(2+2\\lambda)\\hat k$.",
+    "notes": [
+     "Correct.",
+     "Wrong $\\hat j$ component.",
+     "Drops the $x$-coordinate 1 of A.",
+     "Sign of the $\\hat j$ component is wrong."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "13.1 Direction cosines and the straight line"
+    ],
+    "facts": [
+     "Line through A and B: $\\vec r=\\vec a+\\lambda(\\vec b-\\vec a)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-102",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 102,
+    "label": "DSSSB PGT 2025 · Q202"
+   },
+   "en": {
+    "q": "A line on XY plane is inclined at an angle of $\\frac{\\pi}{3}$ with the X-axis. Find the unit vector on XY plane collinear to the line.",
+    "options": [
+     "$\\pm\\left(\\frac12\\hat i\\pm\\frac{\\sqrt3}{2}\\hat j\\right)$",
+     "$\\pm\\left(\\frac{\\sqrt3}{2}\\hat i-\\frac12\\hat j\\right)$",
+     "$\\pm\\left(\\frac12\\hat i+\\frac32\\hat j\\right)$",
+     "$\\pm\\left(\\frac12\\hat i+\\frac12\\hat j\\right)$"
+    ],
+    "explanation": "A unit vector at angle $\\theta$ to the $x$-axis is $\\cos\\theta\\,\\hat i+\\sin\\theta\\,\\hat j$. For $\\theta=\\frac{\\pi}{3}$: $\\frac12\\hat i+\\frac{\\sqrt3}{2}\\hat j$, and its negative is also collinear. Option (a) is the only unit vector of this kind.",
+    "notes": [
+     "Correct (contains $\\pm(\\frac12\\hat i+\\frac{\\sqrt3}{2}\\hat j)$).",
+     "Makes angle $-\\frac{\\pi}{6}$ with the $x$-axis.",
+     "Not a unit vector.",
+     "Not a unit vector (length $\\frac{1}{\\sqrt2}$)."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "Unit vector along a line at angle $\\theta$ to the $x$-axis: $\\pm(\\cos\\theta\\,\\hat i+\\sin\\theta\\,\\hat j)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-104",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 104,
+    "label": "DSSSB PGT 2025 · Q204"
+   },
+   "en": {
+    "q": "Find the variance of the data: 2, 4, 6",
+    "options": [
+     "4",
+     "3.17",
+     "2.67",
+     "2"
+    ],
+    "explanation": "Mean $=4$. Squared deviations $4,0,4$, sum $8$. Variance $=\\frac{8}{3}\\approx2.67$.",
+    "notes": [
+     "Divides by $n-1=2$ (sample variance).",
+     "",
+     "Correct: $\\frac{8}{3}$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Variance $=\\frac{1}{n}\\sum(x_i-\\bar x)^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-105",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 3,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 105,
+    "label": "DSSSB PGT 2025 · Q205"
+   },
+   "en": {
+    "q": "The variance of wages of 75 workers in a company is found to be 6.7. If one month's salary is given to each worker as bonus in December, what is the variance of wages in the month of December.",
+    "options": [
+     "26.8",
+     "13.4",
+     "43.5",
+     "6.7"
+    ],
+    "explanation": "With a bonus of one month's salary, each worker's December wage is $x_i+x_i=2x_i$. Multiplying every value by 2 multiplies the variance by $2^2=4$: $4\\times6.7=26.8$. The key gives (d) 6.7, which would hold only if every worker got the same fixed amount. A bonus of one month's salary differs from worker to worker, so the wages are scaled, not shifted, and 6.7 is wrong.",
+    "notes": [
+     "Correct: wages are doubled, variance $\\times4$.",
+     "Doubles the variance instead of multiplying by $2^2$.",
+     "",
+     "Would hold only if every worker got the same fixed amount."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "$\\operatorname{Var}(ax+b)=a^2\\operatorname{Var}(x)$: adding a constant leaves the variance unchanged, scaling by $a$ multiplies it by $a^2$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-107",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 107,
+    "label": "DSSSB PGT 2025 · Q207"
+   },
+   "en": {
+    "q": "If $x\\in\\mathbb{R}$, then the solution of $5x+2<3x-2$ is ______",
+    "options": [
+     "$x\\in(-2,\\infty)$",
+     "$x\\in(-\\infty,-2)$",
+     "$x\\in(-\\infty,2)$",
+     "$x\\in(2,\\infty)$"
+    ],
+    "explanation": "$5x+2<3x-2\\Rightarrow2x<-4\\Rightarrow x<-2$, i.e. $x\\in(-\\infty,-2)$.",
+    "notes": [
+     "Reverses the inequality.",
+     "Correct.",
+     "Sign error in $-4/2$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "Moving terms across an inequality is safe; only multiplying or dividing by a negative reverses it."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-108",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 108,
+    "label": "DSSSB PGT 2025 · Q208"
+   },
+   "en": {
+    "q": "In a series of observations the standard deviation (S. D.) is 7 and mean is 28, then the coefficient of variation is",
+    "options": [
+     "4",
+     "6.25",
+     "25",
+     "12.5"
+    ],
+    "explanation": "$\\text{C.V.}=\\frac{\\sigma}{\\bar x}\\times100=\\frac{7}{28}\\times100=25$ (per cent).",
+    "notes": [
+     "This is $\\frac{\\bar x}{\\sigma}$.",
+     "",
+     "Correct.",
+     "Uses $\\frac{\\sigma}{2\\bar x}\\times100$."
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Coefficient of variation $=\\frac{\\sigma}{\\bar x}\\times100$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-109",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 109,
+    "label": "DSSSB PGT 2025 · Q209"
+   },
+   "en": {
+    "q": "The differential equation of all non-vertical lines in the plane is",
+    "options": [
+     "$\\frac{d^2x}{dy^2}=0$",
+     "$\\frac{d^2y}{dx^2}=0$",
+     "$\\frac{dy}{dx}=0$",
+     "$\\frac{dx}{dy}=0$"
+    ],
+    "explanation": "A non-vertical line is $y=mx+c$ with two arbitrary constants. Differentiating twice: $\\frac{dy}{dx}=m$, $\\frac{d^2y}{dx^2}=0$.",
+    "notes": [
+     "This is the family of non-horizontal lines $x=ay+b$.",
+     "Correct.",
+     "Only horizontal lines.",
+     "Only vertical lines."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "A family with $k$ arbitrary constants gives a DE of order $k$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-110",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 110,
+    "label": "DSSSB PGT 2025 · Q210"
+   },
+   "en": {
+    "q": "The general solution of the differential equation $x^5\\frac{dy}{dx}=-y^5$ is",
+    "options": [
+     "$\\frac{1}{x^{-4}}+\\frac{1}{y^4}=C$",
+     "$\\frac{1}{x^4}-\\frac{1}{y^4}=C$",
+     "$\\frac{1}{x^4}+\\frac{1}{y^4}=C$",
+     "$\\frac{1}{x^{-4}}+\\frac{1}{y^{-4}}=C$"
+    ],
+    "explanation": "Separate: $y^{-5}dy=-x^{-5}dx$. Integrate: $-\\frac{1}{4y^4}=\\frac{1}{4x^4}+c$, i.e. $\\frac{1}{x^4}+\\frac{1}{y^4}=C$.",
+    "notes": [
+     "Wrong power of $x$.",
+     "Sign error.",
+     "Correct.",
+     "Wrong powers."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Variables separable: $\\int y^{-5}dy=-\\int x^{-5}dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-111",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 111,
+    "label": "DSSSB PGT 2025 · Q211"
+   },
+   "en": {
+    "q": "Find the mean deviation from mean for the following data. $\\begin{array}{c|ccccc} x & 12 & 9 & 6 & 18 & 10\\\\ \\hline f & 7 & 3 & 8 & 1 & 2\\end{array}$",
+    "options": [
+     "3.684",
+     "1.684",
+     "2.684",
+     "0.684"
+    ],
+    "explanation": "$N=21$, $\\sum fx=84+27+48+18+20=197$, $\\bar x=\\frac{197}{21}\\approx9.381$. $\\sum f|x-\\bar x|=7(2.619)+3(0.381)+8(3.381)+1(8.619)+2(0.619)\\approx56.38$. Mean deviation $\\approx\\frac{56.38}{21}\\approx2.684$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Mean deviation about the mean $=\\frac{1}{N}\\sum f_i|x_i-\\bar x|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-112",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 112,
+    "label": "DSSSB PGT 2025 · Q212"
+   },
+   "en": {
+    "q": "If the point $P(-4,6,10)$ divide the line segment joining the points $Q(14,0,-2)$ and $R(2,4,6)$ in the ratio $k:1$, then $k=$ ________.",
+    "options": [
+     "4",
+     "2",
+     "$-1$",
+     "$-3$"
+    ],
+    "explanation": "$P=\\frac{kR+Q}{k+1}$. $x$: $\\frac{2k+14}{k+1}=-4\\Rightarrow6k=-18\\Rightarrow k=-3$. Check $y$: $\\frac{4k}{k+1}=\\frac{-12}{-2}=6$ and $z$: $\\frac{6k-2}{k+1}=\\frac{-20}{-2}=10$. So $k=-3$ (external division).",
+    "notes": [
+     "",
+     "",
+     "$k=-1$ makes the section formula undefined.",
+     "Correct; negative $k$ means P divides QR externally."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "A negative ratio in the section formula means the point divides the segment externally."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-113",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 113,
+    "label": "DSSSB PGT 2025 · Q213"
+   },
+   "en": {
+    "q": "If all the values in a data set are the same, the variance is______",
+    "options": [
+     "Equal to the mean",
+     "Infinity",
+     "Zero",
+     "One"
+    ],
+    "explanation": "Every value equals the mean, so every deviation $x_i-\\bar x=0$ and the variance is $0$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Variance is zero exactly when all observations are equal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-114",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 114,
+    "label": "DSSSB PGT 2025 · Q214"
+   },
+   "en": {
+    "q": "Find the standard deviation of the following data. X: 1 3 4 5 7",
+    "options": [
+     "2",
+     "2.5",
+     "1.5",
+     "3"
+    ],
+    "explanation": "Mean $=\\frac{20}{5}=4$. Squared deviations $9,1,0,1,9$, sum $20$. Variance $=\\frac{20}{5}=4$, so SD $=2$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "SD $=\\sqrt{\\frac{1}{n}\\sum(x_i-\\bar x)^2}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-115",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-01-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 115,
+    "label": "DSSSB PGT 2025 · Q215"
+   },
+   "en": {
+    "q": "If x and y denote the number of items produced and sold in the inequations $2x-y<8$, $x+3y>5$, which of the following inequalities should be added to obtain the feasible region?",
+    "options": [
+     "$x\\le0,\\ y\\le0$",
+     "$x\\ge0,\\ y\\le0$",
+     "$x\\le0,\\ y\\ge0$",
+     "$x\\ge0,\\ y\\ge0$"
+    ],
+    "explanation": "Numbers of items cannot be negative, so the non-negativity constraints $x\\ge0,\\ y\\ge0$ must be added.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct: non-negativity constraints."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.7 Number system, surds, logarithms, polynomials"
+    ],
+    "facts": [
+     "In a linear programming problem, quantities produced or sold always carry $x\\ge0,\\ y\\ge0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-116",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-16-07",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 116,
+    "label": "DSSSB PGT 2025 · Q216"
+   },
+   "en": {
+    "q": "The mean deviation of the data 2, 9, 9, 3, 6, 9, 4 from the mean is",
+    "options": [
+     "$\\frac{20}{7}$",
+     "0",
+     "$\\frac{18}{7}$",
+     "$\\frac{8}{7}$"
+    ],
+    "explanation": "Mean $=\\frac{42}{7}=6$. $|x-6|$: $4,3,3,3,0,3,2$, sum $18$. Mean deviation $=\\frac{18}{7}$.",
+    "notes": [
+     "",
+     "The sum of signed deviations is 0, not of absolute deviations.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Statistics",
+     "16.7 Measures of dispersion"
+    ],
+    "facts": [
+     "Use absolute deviations; signed deviations from the mean always add to zero."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-117",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-12-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 117,
+    "label": "DSSSB PGT 2025 · Q217"
+   },
+   "en": {
+    "q": "Find the coordinates of the point P that divides the line segment joining $A(1,2,3)$ and $B(4,5,6)$ in the ratio $2:3$.",
+    "options": [
+     "$(2.2, 3.2, 4.2)$",
+     "$(3, 4, 5)$",
+     "$(2, 3, 4)$",
+     "$(2.6, 3.6, 4.6)$"
+    ],
+    "explanation": "$P=\\frac{2B+3A}{5}=\\left(\\frac{8+3}{5},\\frac{10+6}{5},\\frac{12+9}{5}\\right)=(2.2,\\ 3.2,\\ 4.2)$.",
+    "notes": [
+     "Correct.",
+     "Ratio $2:1$.",
+     "Ratio $1:2$.",
+     "Moves $1.6$ along each axis; the ratio $2:3$ moves $\\frac25\\times3=1.2$."
+    ],
+    "path": [
+     "Mathematics",
+     "Vectors and Three-Dimensional Geometry",
+     "12.1 Vector algebra: basics"
+    ],
+    "facts": [
+     "Section formula: $P=\\frac{mB+nA}{m+n}$ for $AP:PB=m:n$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-118",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 118,
+    "label": "DSSSB PGT 2025 · Q218"
+   },
+   "en": {
+    "q": "The general solution of the linear differential equation $x\\frac{dy}{dx}+2y=x^2;\\ x\\neq0$, is",
+    "options": [
+     "$y=\\frac{x^2}{4}+C$",
+     "$y=\\frac{x^2}{4}+Cx^2$",
+     "$y=-\\frac{x^2}{4}+Cx^{-2}$",
+     "$y=\\frac{x^2}{4}+Cx^{-2}$"
+    ],
+    "explanation": "$\\frac{dy}{dx}+\\frac{2}{x}y=x$; integrating factor $e^{\\int 2/x\\,dx}=x^2$. Then $\\frac{d}{dx}(x^2y)=x^3$, so $x^2y=\\frac{x^4}{4}+C$ and $y=\\frac{x^2}{4}+Cx^{-2}$.",
+    "notes": [
+     "",
+     "Wrong integrating factor.",
+     "Sign error.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Linear DE $y'+Py=Q$: multiply by $e^{\\int P\\,dx}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-119",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 119,
+    "label": "DSSSB PGT 2025 · Q219"
+   },
+   "en": {
+    "q": "The particular solution of the differential equation $\\log\\left(\\frac{dy}{dx}\\right)=x+y$, given that $y=0$ when $x=0$, is",
+    "options": [
+     "$e^{-y}+e^x=2$",
+     "$e^y+e^x=0$",
+     "$e^y+e^x=2$",
+     "$e^y+e^{-x}=0$"
+    ],
+    "explanation": "$\\frac{dy}{dx}=e^xe^y\\Rightarrow e^{-y}dy=e^xdx\\Rightarrow-e^{-y}=e^x+c$. At $(0,0)$: $-1=1+c$, $c=-2$. So $e^x+e^{-y}=2$.",
+    "notes": [
+     "Correct.",
+     "Cannot hold: both terms are positive.",
+     "Wrong sign in the power of $e$.",
+     "Cannot hold: both terms are positive."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$\\frac{dy}{dx}=e^{x+y}$ separates as $e^{-y}dy=e^xdx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-120",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 120,
+    "label": "DSSSB PGT 2025 · Q220"
+   },
+   "en": {
+    "q": "Which of the following is always a true relation?",
+    "options": [
+     "$\\frac{a_1+a_2+a_3+\\cdots+a_n}{n}>\\sqrt[n]{a_1a_2a_3\\cdots a_n}$",
+     "$\\frac{a_1+a_2+a_3+\\cdots+a_n}{n}\\ge\\sqrt[n]{a_1a_2a_3\\cdots a_n}$",
+     "$\\frac{a_1+a_2+a_3+\\cdots+a_n}{n}\\le\\sqrt[n]{a_1a_2a_3\\cdots a_n}$",
+     "$\\frac{a_1+a_2+a_3+\\cdots+a_n}{n}=\\sqrt[n]{a_1a_2a_3\\cdots a_n}$"
+    ],
+    "explanation": "For non-negative numbers, AM $\\ge$ GM, with equality exactly when all the $a_i$ are equal. So '$\\ge$' always holds, while '$>$' fails when all $a_i$ are equal.",
+    "notes": [
+     "Fails when all $a_i$ are equal.",
+     "Correct (AM–GM inequality, $a_i\\ge0$).",
+     "Reverse of AM–GM.",
+     "Only when all $a_i$ are equal."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "AM $\\ge$ GM $\\ge$ HM for positive numbers; equality iff all are equal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-121",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 121,
+    "label": "DSSSB PGT 2025 · Q221"
+   },
+   "en": {
+    "q": "Value of the integral $\\int_0^2\\int_{-1}^{z}\\int_0^{yz}x\\,dx\\,dy\\,dz=$ _______.",
+    "options": [
+     "$105/8$",
+     "$83/6$",
+     "$40/3$",
+     "$20/9$"
+    ],
+    "explanation": "Inner: $\\int_0^{yz}x\\,dx=\\frac{y^2z^2}{2}$. Middle: $\\int_{-1}^{z}\\frac{y^2z^2}{2}dy=\\frac{z^2(z^3+1)}{6}$. Outer: $\\frac16\\int_0^2(z^5+z^2)dz=\\frac16\\left(\\frac{64}{6}+\\frac83\\right)=\\frac16\\cdot\\frac{40}{3}=\\frac{20}{9}$.",
+    "notes": [
+     "",
+     "",
+     "Forgets the factor $\\frac16$: $\\int_0^2(z^5+z^2)dz=\\frac{40}{3}$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "Evaluate an iterated integral from the inside out, treating outer variables as constants."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-122",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-01-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 122,
+    "label": "DSSSB PGT 2025 · Q222"
+   },
+   "en": {
+    "q": "Find the maximum value of $abc$ for $a+b+c=9$ where $a, b, c\\in\\mathbb{R}^+$.",
+    "options": [
+     "27",
+     "1",
+     "9",
+     "18"
+    ],
+    "explanation": "AM $\\ge$ GM: $\\frac{a+b+c}{3}\\ge\\sqrt[3]{abc}\\Rightarrow abc\\le3^3=27$, with equality at $a=b=c=3$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "1.6 Sequences and series: AP, GP, HP"
+    ],
+    "facts": [
+     "With a fixed sum, a product of positive numbers is largest when the numbers are equal."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-123",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 123,
+    "label": "DSSSB PGT 2025 · Q223"
+   },
+   "en": {
+    "q": "Expansion of $f(x)=-x^2,\\ x\\in(0,\\pi)$ in Fourier cosine series is ____________.",
+    "options": [
+     "$f(x)=-\\frac{\\pi^2}{3}+\\sum_{n=1}^{\\infty}\\frac{4(-1)^n}{n^2}\\cos nx$",
+     "$f(x)=\\frac{\\pi^2}{3}+\\sum_{n=1}^{\\infty}\\frac{4(-1)^n}{n^2}\\cos nx$",
+     "$f(x)=-\\frac{\\pi^2}{3}-\\sum_{n=1}^{\\infty}\\frac{4(-1)^n}{n^2}\\cos nx$",
+     "$f(x)=\\frac{\\pi^2}{3}-\\sum_{n=1}^{\\infty}\\frac{4(-1)^n}{n^2}\\cos nx$"
+    ],
+    "explanation": "For $x^2$ on $(0,\\pi)$: $a_0=\\frac2\\pi\\int_0^\\pi x^2dx=\\frac{2\\pi^2}{3}$ and $a_n=\\frac2\\pi\\int_0^\\pi x^2\\cos nx\\,dx=\\frac{4(-1)^n}{n^2}$, so $x^2=\\frac{\\pi^2}{3}+\\sum\\frac{4(-1)^n}{n^2}\\cos nx$. Multiply by $-1$: $-x^2=-\\frac{\\pi^2}{3}-\\sum\\frac{4(-1)^n}{n^2}\\cos nx$.",
+    "notes": [
+     "Changes the sign of only the constant term.",
+     "This is the series of $+x^2$.",
+     "Correct.",
+     "Changes the sign of only the cosine terms."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$x^2=\\frac{\\pi^2}{3}+4\\sum_{n\\ge1}\\frac{(-1)^n}{n^2}\\cos nx$ on $[-\\pi,\\pi]$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-124",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 124,
+    "label": "DSSSB PGT 2025 · Q224"
+   },
+   "en": {
+    "q": "What is the solution of $\\frac{dy}{dx}=e^{x+y}$",
+    "options": [
+     "$e^x+e^{-y}=C$",
+     "$e^x+e^y=C$",
+     "$e^{-x}-e^{-y}=C$",
+     "$e^{-x}+e^{-y}=C$"
+    ],
+    "explanation": "$e^{-y}dy=e^xdx\\Rightarrow-e^{-y}=e^x-C\\Rightarrow e^x+e^{-y}=C$.",
+    "notes": [
+     "Correct.",
+     "Sign of the power of $e$ in $y$ is wrong.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$e^{x+y}=e^xe^y$ makes the equation separable."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-126",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 126,
+    "label": "DSSSB PGT 2025 · Q226"
+   },
+   "en": {
+    "q": "Find the solution of the differential equation $\\frac{dy}{dx}=\\frac{y^2-7y+12}{x^2-5x+6}$",
+    "options": [
+     "$\\left(\\frac{y+3}{y+4}\\right)=C\\left(\\frac{x-3}{x-2}\\right)$",
+     "$\\left(\\frac{y-4}{y+3}\\right)=C\\left(\\frac{x-3}{x-2}\\right)$",
+     "$\\left(\\frac{y-4}{y-3}\\right)=C\\left(\\frac{x-3}{x-2}\\right)$",
+     "$\\left(\\frac{y-4}{y-3}\\right)=C\\left(\\frac{x+4}{x-3}\\right)$"
+    ],
+    "explanation": "$\\frac{dy}{(y-3)(y-4)}=\\frac{dx}{(x-2)(x-3)}$. Partial fractions: $\\left(\\frac{1}{y-4}-\\frac{1}{y-3}\\right)dy=\\left(\\frac{1}{x-3}-\\frac{1}{x-2}\\right)dx$. Integrating: $\\ln\\left|\\frac{y-4}{y-3}\\right|=\\ln\\left|\\frac{x-3}{x-2}\\right|+c$, so $\\frac{y-4}{y-3}=C\\frac{x-3}{x-2}$.",
+    "notes": [
+     "Wrong signs in the factors of $y^2-7y+12$.",
+     "$y^2-7y+12\\neq(y-4)(y+3)$.",
+     "Correct.",
+     "Wrong factors of $x^2-5x+6$."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$\\int\\frac{dx}{(x-a)(x-b)}=\\frac{1}{a-b}\\ln\\left|\\frac{x-a}{x-b}\\right|$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-127",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-06-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 127,
+    "label": "DSSSB PGT 2025 · Q227"
+   },
+   "en": {
+    "q": "Find the minimum value of the expression $4x^2+25y^2+z^2$ given that $2x+5y+z=1$.",
+    "options": [
+     "$\\frac{1}{35}$",
+     "$\\frac{1}{20}$",
+     "$\\frac18$",
+     "$\\frac13$"
+    ],
+    "explanation": "Put $u=2x,\\ v=5y,\\ w=z$: minimise $u^2+v^2+w^2$ subject to $u+v+w=1$. By Cauchy–Schwarz (or QM $\\ge$ AM), $u^2+v^2+w^2\\ge\\frac{(u+v+w)^2}{3}=\\frac13$, with equality at $u=v=w=\\frac13$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.5 Maxima and minima"
+    ],
+    "facts": [
+     "If $u+v+w=s$, then $u^2+v^2+w^2\\ge\\frac{s^2}{3}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-128",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 128,
+    "label": "DSSSB PGT 2025 · Q228"
+   },
+   "en": {
+    "q": "$\\int_0^3(3-x)^{1/2}\\,x\\,dx=$ _______.",
+    "options": [
+     "$36\\sqrt3/5$",
+     "$\\sqrt3/5$",
+     "$12\\sqrt3/5$",
+     "$27\\sqrt3/5$"
+    ],
+    "explanation": "Put $t=3-x$: $\\int_0^3t^{1/2}(3-t)\\,dt=\\left[2t^{3/2}-\\frac25t^{5/2}\\right]_0^3=6\\sqrt3-\\frac{18\\sqrt3}{5}=\\frac{12\\sqrt3}{5}$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int_0^af(x)\\,dx=\\int_0^af(a-x)\\,dx$ simplifies such integrals."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-130",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 3,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 130,
+    "label": "DSSSB PGT 2025 · Q230"
+   },
+   "en": {
+    "q": "The value of $\\int_0^3\\int_0^{2z}\\int_0^{yz^2}y\\,dx\\,dy\\,dz=$ _______.",
+    "options": [
+     "432",
+     "243",
+     "324",
+     "216"
+    ],
+    "explanation": "Inner: $\\int_0^{yz^2}y\\,dx=y^2z^2$. Middle: $\\int_0^{2z}y^2z^2\\,dy=\\frac{8z^5}{3}$. Outer: $\\int_0^3\\frac{8z^5}{3}dz=\\frac83\\cdot\\frac{729}{6}=324$. The key gives (d) 216, but that value does not follow from the printed limits; the integral is 324.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     "Key's answer; it does not follow from these limits."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "Evaluate an iterated integral from the inside out, treating outer variables as constants."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-131",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-08-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 131,
+    "label": "DSSSB PGT 2025 · Q231"
+   },
+   "en": {
+    "q": "Which of the following is the differential equation corresponding to the solution $xy-\\log(y)=C$?",
+    "options": [
+     "$y'=\\frac{y}{1+xy}$",
+     "$y'=\\frac{y^2}{1+xy}$",
+     "$y'=\\frac{y}{1-xy}$",
+     "$y'=\\frac{y^2}{1-xy}$"
+    ],
+    "explanation": "Differentiate: $y+xy'-\\frac{y'}{y}=0\\Rightarrow y'\\left(x-\\frac1y\\right)=-y\\Rightarrow y'=\\frac{-y^2}{xy-1}=\\frac{y^2}{1-xy}$.",
+    "notes": [
+     "",
+     "Sign error in the denominator.",
+     "Forgets to multiply by $y$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.1 Order, degree and formation"
+    ],
+    "facts": [
+     "To get the DE of a one-parameter family, differentiate once to remove the constant."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-132",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 132,
+    "label": "DSSSB PGT 2025 · Q232"
+   },
+   "en": {
+    "q": "If $f(x)=\\frac{a_0}{2}+\\sum_{n=1}^{\\infty}(a_n\\cos nx+b_n\\sin nx)$ is the Fourier series expansion of $f(x)=\\frac{x-\\pi}{2}$ in $(0,2\\pi)$, then for $n\\ge1$, $a_n=$ ________.",
+    "options": [
+     "$\\frac{1}{2\\pi}$",
+     "$0$",
+     "$\\frac{2}{3\\pi}$",
+     "$-\\frac{1}{\\pi}$"
+    ],
+    "explanation": "$a_n=\\frac1\\pi\\int_0^{2\\pi}\\frac{x-\\pi}{2}\\cos nx\\,dx$. Put $t=x-\\pi$: the integrand becomes $\\frac t2(-1)^n\\cos nt$ on $(-\\pi,\\pi)$, an odd function, so $a_n=0$. (Indeed $\\frac{x-\\pi}{2}=-\\sum\\frac{\\sin nx}{n}$.)",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\frac{\\pi-x}{2}=\\sum_{n\\ge1}\\frac{\\sin nx}{n}$ on $(0,2\\pi)$: no cosine terms."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-133",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 133,
+    "label": "DSSSB PGT 2025 · Q233"
+   },
+   "en": {
+    "q": "The differential equation corresponding to $y=ae^{-2x}+be^x$ is __________",
+    "options": [
+     "$y''+y'-2y=0$",
+     "$y''-y'-2y=0$",
+     "$y''+y'+2y=0$",
+     "$y''-y'+2y=0$"
+    ],
+    "explanation": "$e^{-2x}$ and $e^x$ correspond to auxiliary roots $m=-2,1$: $(m+2)(m-1)=m^2+m-2=0$. So $y''+y'-2y=0$.",
+    "notes": [
+     "Correct.",
+     "Roots $2,-1$.",
+     "Complex roots.",
+     "Complex roots."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.4 Linear equations with constant coefficients (PGT)"
+    ],
+    "facts": [
+     "$y=ae^{m_1x}+be^{m_2x}$ satisfies $y''-(m_1+m_2)y'+m_1m_2y=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-134",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 134,
+    "label": "DSSSB PGT 2025 · Q234"
+   },
+   "en": {
+    "q": "Let $f(z)=\\frac{3z+2}{2z-3}$. Then $\\operatorname{Res}_{z=\\infty}f=$ ________.",
+    "options": [
+     "$-13/4$",
+     "$12/5$",
+     "$8/9$",
+     "$-9/7$"
+    ],
+    "explanation": "$f(z)=\\frac32+\\frac{13/4}{z-3/2}$, so the only finite pole is $z=\\frac32$ with residue $\\frac{13}{4}$. Residue at infinity $=-(\\text{sum of finite residues})=-\\frac{13}{4}$ (equivalently, minus the coefficient of $\\frac1z$ at $\\infty$).",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$\\operatorname{Res}_{z=\\infty}f=-c_{-1}$, where $c_{-1}$ is the coefficient of $\\frac1z$ in the expansion about $\\infty$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-135",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 135,
+    "label": "DSSSB PGT 2025 · Q235"
+   },
+   "en": {
+    "q": "The general solution of the differential equation $\\frac{dy}{dx}=\\frac{x+3}{y-1}$ is________",
+    "options": [
+     "$y^2-2y+x^2+3x=C$",
+     "$y^2-y-x^2-3x=C$",
+     "$y^2-2y-x^2-6x=C$",
+     "$y^2-2y+x^2+x=C$"
+    ],
+    "explanation": "$(y-1)dy=(x+3)dx\\Rightarrow\\frac{y^2}{2}-y=\\frac{x^2}{2}+3x+c$. Multiply by 2: $y^2-2y-x^2-6x=C$.",
+    "notes": [
+     "Sign of the $x$ terms is wrong.",
+     "Forgets to double $y$ and $3x$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Separate the variables and integrate both sides."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-136",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 136,
+    "label": "DSSSB PGT 2025 · Q236"
+   },
+   "en": {
+    "q": "$I=\\int_0^1\\frac{x+1}{x^2-4x-5}\\,dx=$ __________.",
+    "options": [
+     "$\\log\\left(\\frac59\\right)$",
+     "$\\log\\left(\\frac{16}{25}\\right)$",
+     "$\\log\\left(\\frac45\\right)$",
+     "$\\log\\left(\\frac{9}{16}\\right)$"
+    ],
+    "explanation": "$x^2-4x-5=(x-5)(x+1)$, so the integrand is $\\frac{1}{x-5}$. $I=\\big[\\ln|x-5|\\big]_0^1=\\ln4-\\ln5=\\log\\frac45$.",
+    "notes": [
+     "",
+     "This is $2\\log\\frac45$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "Factorise the denominator first: here $x+1$ cancels."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-137",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 137,
+    "label": "DSSSB PGT 2025 · Q237"
+   },
+   "en": {
+    "q": "If a bilinear transformation maps the point $0$, $i$ and $-i$ on to $0$, $\\frac12$ and $\\infty$, respectively, then image of $1$ under this transformation is __________.",
+    "options": [
+     "$\\frac{1+i}{2}$",
+     "$\\frac{1-i}{2}$",
+     "$0$",
+     "$2+i$"
+    ],
+    "explanation": "$0\\mapsto0$ and $-i\\mapsto\\infty$ give $w=\\frac{kz}{z+i}$. $i\\mapsto\\frac12$: $\\frac{ki}{2i}=\\frac k2=\\frac12$, so $k=1$ and $w=\\frac{z}{z+i}$. Then $w(1)=\\frac{1}{1+i}=\\frac{1-i}{2}$.",
+    "notes": [
+     "This is the conjugate of the image.",
+     "Correct.",
+     "Only $z=0$ maps to 0.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "A zero at $z_1$ and a pole at $z_2$ force $w=k\\frac{z-z_1}{z-z_2}$; the third point fixes $k$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-138",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 138,
+    "label": "DSSSB PGT 2025 · Q238"
+   },
+   "en": {
+    "q": "What is the general solution of the differential equation, $\\frac{dy}{dx}=\\frac{x+y}{x}$?",
+    "options": [
+     "$y=x\\ln(|x+y|)+C$",
+     "$y=x\\ln(|x|)+Cx$",
+     "$y=x\\ln\\left(\\left|\\frac yx\\right|\\right)+C$",
+     "$y=x\\ln(|y|)+C$"
+    ],
+    "explanation": "$\\frac{dy}{dx}-\\frac yx=1$ is linear with integrating factor $\\frac1x$: $\\frac{d}{dx}\\left(\\frac yx\\right)=\\frac1x$, so $\\frac yx=\\ln|x|+C$ and $y=x\\ln|x|+Cx$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "$y'=1+\\frac yx$ is both homogeneous and linear; the integrating factor $\\frac1x$ is quickest."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-139",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 139,
+    "label": "DSSSB PGT 2025 · Q239"
+   },
+   "en": {
+    "q": "Evaluate $\\int_C\\frac{z^3-8z^2+6z-7}{z-5}\\,dz$, where C is a circle $|z|=4$.",
+    "options": [
+     "$-2i$",
+     "$-4$",
+     "$3i$",
+     "$0$"
+    ],
+    "explanation": "The only singularity is $z=5$, outside $|z|=4$. The integrand is analytic on and inside C, so by Cauchy's theorem the integral is $0$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct (Cauchy's theorem)."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "If $f$ is analytic on and inside a closed contour, $\\oint f\\,dz=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-140",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 140,
+    "label": "DSSSB PGT 2025 · Q240"
+   },
+   "en": {
+    "q": "The coefficient of $(z+1)^3$ in the power series expansion of $f(z)=\\frac{1}{z^2+z}$ in terms of $(z+1)$ is _______.",
+    "options": [
+     "$-\\frac{1}{3!}$",
+     "$0$",
+     "$-1$",
+     "$\\frac{1}{4!}$"
+    ],
+    "explanation": "Put $w=z+1$: $f=\\frac{1}{(w-1)w}=-\\frac1w\\cdot\\frac{1}{1-w}=-\\frac1w(1+w+w^2+w^3+w^4+\\cdots)$ for $0<|w|<1$. The coefficient of $w^3$ is $-1$.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Expand about a pole by writing everything in $w=z-z_0$ and using the geometric series."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-141",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 141,
+    "label": "DSSSB PGT 2025 · Q241"
+   },
+   "en": {
+    "q": "The value of the Fourier coefficient $a_0$ in the Fourier series expansion of the tabulated data given here is _______. $\\begin{array}{c|cccc} x & 0 & 1 & 2 & 3\\\\ \\hline y & 6 & 12 & 14 & 20\\end{array}$",
+    "options": [
+     "18",
+     "26",
+     "$\\frac{69}{2}$",
+     "$\\frac{43}{2}$"
+    ],
+    "explanation": "In harmonic analysis with $N$ equally spaced values over a period, $a_0=\\frac2N\\sum y$. Here $\\sum y=6+12+14+20=52$, $N=4$, so $a_0=\\frac{2\\times52}{4}=26$ (and $\\frac{a_0}{2}=13$ is the mean).",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "From tabulated data, $a_0=\\frac{2}{N}\\sum y$, $a_n=\\frac2N\\sum y\\cos nx$, $b_n=\\frac2N\\sum y\\sin nx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-142",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-06-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 142,
+    "label": "DSSSB PGT 2025 · Q242"
+   },
+   "en": {
+    "q": "The coefficient of $(z-1)^2$ in the power series expansion of $f(z)=\\frac{e^z}{z+1}$ in terms of $(z-1)$ is _______.",
+    "options": [
+     "$\\frac{e}{12}$",
+     "$\\frac{e}{4}$",
+     "$\\frac{e}{6}$",
+     "$\\frac{e}{8}$"
+    ],
+    "explanation": "Put $w=z-1$: $f=\\frac{e\\,e^w}{2+w}=\\frac e2\\left(1+w+\\frac{w^2}{2}+\\cdots\\right)\\allowbreak\\left(1-\\frac w2+\\frac{w^2}{4}-\\cdots\\right)$. Coefficient of $w^2$: $\\frac e2\\left(\\frac12-\\frac12+\\frac14\\right)=\\frac e8$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "6.6 Mean value theorems"
+    ],
+    "facts": [
+     "Multiply the two known series and collect the required power."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-143",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 143,
+    "label": "DSSSB PGT 2025 · Q243"
+   },
+   "en": {
+    "q": "If $C=\\{z\\in\\mathbb{C}:|z-1|=2\\}$, then $\\int_C\\frac{e^z}{z^2(z+2)}\\,dz=$ _______.",
+    "options": [
+     "$0$",
+     "$\\frac{i\\pi}{2}$",
+     "$\\frac{3i\\pi}{2}$",
+     "$3i\\pi$"
+    ],
+    "explanation": "Inside C: $z=0$ (distance 1 from the centre 1); $z=-2$ is outside (distance 3). At the double pole $z=0$: residue $=\\frac{d}{dz}\\frac{e^z}{z+2}\\Big|_{0}=\\frac{e^z(z+1)}{(z+2)^2}\\Big|_0=\\frac14$. Integral $=2\\pi i\\cdot\\frac14=\\frac{i\\pi}{2}$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Residue at a pole of order 2: $\\lim_{z\\to a}\\frac{d}{dz}\\left[(z-a)^2f(z)\\right]$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-144",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 144,
+    "label": "DSSSB PGT 2025 · Q244"
+   },
+   "en": {
+    "q": "Let C be the circle $|z|=3$ in the positive sense. Then $\\int_C z^2e^{1/z}\\,dz=$ __________.",
+    "options": [
+     "$2\\pi i$",
+     "$0$",
+     "$-i\\pi/2$",
+     "$i\\pi/3$"
+    ],
+    "explanation": "$z^2e^{1/z}=z^2\\left(1+\\frac1z+\\frac{1}{2!z^2}+\\frac{1}{3!z^3}+\\cdots\\right)$; the coefficient of $\\frac1z$ is $\\frac{1}{3!}=\\frac16$. Integral $=2\\pi i\\cdot\\frac16=\\frac{i\\pi}{3}$.",
+    "notes": [
+     "",
+     "The essential singularity at 0 is inside C.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "For an essential singularity, read the residue off the Laurent series."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-145",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 145,
+    "label": "DSSSB PGT 2025 · Q245"
+   },
+   "en": {
+    "q": "The expansion of $f(x)=-x,\\ x\\in(0,\\pi)$ in Fourier sine series is ____________.",
+    "options": [
+     "$\\sum_{n=1}^{\\infty}\\frac1n(-1)^n\\sin nx$",
+     "$\\sum_{n=1}^{\\infty}\\frac2n(-1)^{n+1}\\sin nx$",
+     "$\\sum_{n=1}^{\\infty}\\frac1n(-1)^{n+1}\\sin nx$",
+     "$\\sum_{n=1}^{\\infty}\\frac2n(-1)^n\\sin nx$"
+    ],
+    "explanation": "$b_n=\\frac2\\pi\\int_0^\\pi(-x)\\sin nx\\,dx=-\\frac2\\pi\\cdot\\frac{\\pi(-1)^{n+1}}{n}=\\frac{2(-1)^n}{n}$. So $-x=\\sum\\frac2n(-1)^n\\sin nx$.",
+    "notes": [
+     "Missing the factor 2.",
+     "This is the series of $+x$.",
+     "Wrong sign and missing factor 2.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$x=2\\sum_{n\\ge1}\\frac{(-1)^{n+1}}{n}\\sin nx$ on $(-\\pi,\\pi)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-146",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 146,
+    "label": "DSSSB PGT 2025 · Q246"
+   },
+   "en": {
+    "q": "Evaluate $\\int_C\\frac{e^{2z}}{z-\\pi i}\\,dz$, where C is the circle $|z|=5$.",
+    "options": [
+     "$2\\pi i$",
+     "$-3\\pi i$",
+     "$4\\pi i$",
+     "$3\\pi i$"
+    ],
+    "explanation": "$z=\\pi i$ lies inside $|z|=5$ since $\\pi<5$. Cauchy's integral formula: $2\\pi i\\,e^{2\\pi i}=2\\pi i$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Cauchy's integral formula: $\\oint\\frac{f(z)}{z-a}dz=2\\pi i f(a)$ for $a$ inside C."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-147",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 147,
+    "label": "DSSSB PGT 2025 · Q247"
+   },
+   "en": {
+    "q": "The value of $\\int_0^1\\frac{3x+1}{x^2+1}\\,dx$ is:",
+    "options": [
+     "$\\frac32\\ln3-\\frac\\pi4$",
+     "$\\frac12\\ln2+\\frac\\pi4$",
+     "$\\frac12\\ln2-\\frac\\pi4$",
+     "$\\frac32\\ln2+\\frac\\pi4$"
+    ],
+    "explanation": "Split: $\\int_0^1\\frac{3x}{x^2+1}dx+\\int_0^1\\frac{dx}{x^2+1}=\\frac32\\big[\\ln(x^2+1)\\big]_0^1+\\big[\\tan^{-1}x\\big]_0^1=\\frac32\\ln2+\\frac\\pi4$.",
+    "notes": [
+     "",
+     "Coefficient 3 lost.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "$\\int\\frac{x}{x^2+1}dx=\\frac12\\ln(x^2+1)$ and $\\int\\frac{dx}{x^2+1}=\\tan^{-1}x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-148",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-07-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 148,
+    "label": "DSSSB PGT 2025 · Q248"
+   },
+   "en": {
+    "q": "Let $f(x)=\\begin{cases}1, & -2<x<0\\\\ 0, & 0\\le x<2\\end{cases}$. If the Fourier series expansion of f in $(-2,2)$ is given by $f(x)=\\frac{a_0}{2}+\\sum_{n=1}^{\\infty}\\left(a_n\\cos\\frac{n\\pi x}{2}+b_n\\sin\\frac{n\\pi x}{2}\\right)$, then for odd n, $b_n=$ __________.",
+    "options": [
+     "$-\\frac{3}{2n\\pi}$",
+     "$0$",
+     "$\\frac{2}{3n\\pi}$",
+     "$-\\frac{2}{n\\pi}$"
+    ],
+    "explanation": "$b_n=\\frac12\\int_{-2}^{0}\\sin\\frac{n\\pi x}{2}dx=\\frac12\\left[-\\frac{2}{n\\pi}\\cos\\frac{n\\pi x}{2}\\right]_{-2}^{0}=-\\frac{1}{n\\pi}\\left(1-(-1)^n\\right)$. For odd n this is $-\\frac{2}{n\\pi}$.",
+    "notes": [
+     "",
+     "True only for even n.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.3 Definite integrals"
+    ],
+    "facts": [
+     "On $(-L,L)$: $b_n=\\frac1L\\int_{-L}^{L}f(x)\\sin\\frac{n\\pi x}{L}dx$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-149",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 149,
+    "label": "DSSSB PGT 2025 · Q249"
+   },
+   "en": {
+    "q": "Which of the following elementary operations has been applied to the matrix $A=\\begin{bmatrix}3&4&5&6\\\\4&5&6&7\\\\1&2&3&1\\\\3&4&-1&-3\\end{bmatrix}$ such that the new matrix is $\\begin{bmatrix}3&4&-1&15\\\\4&5&-2&18\\\\1&2&1&3\\\\3&4&-7&-3\\end{bmatrix}$?",
+    "options": [
+     "$C_3\\to C_3-2C_1$ and $C_4\\to2C_4+C_1$",
+     "$C_3\\to C_3+C_1$ and $C_4\\to2C_4+C_1$",
+     "$C_3\\to C_3-2C_1$ and $C_4\\to C_4+C_1$",
+     "$C_3\\to C_3+2C_1$ and $C_4\\to C_4-C_1$"
+    ],
+    "explanation": "$C_1=(3,4,1,3)$. New $C_3=(-1,-2,1,-7)=(5,6,3,-1)-2(3,4,1,3)$, so $C_3\\to C_3-2C_1$. New $C_4=(15,18,3,-3)=2(6,7,1,-3)+(3,4,1,3)$, so $C_4\\to2C_4+C_1$.",
+    "notes": [
+     "Correct.",
+     "$C_3+C_1=(8,10,4,2)$.",
+     "$C_4+C_1=(9,11,2,0)$.",
+     "$C_3+2C_1=(11,14,5,5)$."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.2 Inverse of a matrix"
+    ],
+    "facts": [
+     "Identify a column operation by comparing one changed column with the unchanged ones."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-150",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 150,
+    "label": "DSSSB PGT 2025 · Q250"
+   },
+   "en": {
+    "q": "If the function $u(x,y)=y^3-kx^2y$ is harmonic, then find the value of k?",
+    "options": [
+     "2",
+     "6",
+     "3",
+     "4"
+    ],
+    "explanation": "$u_{xx}=-2ky$, $u_{yy}=6y$. Harmonic: $u_{xx}+u_{yy}=(6-2k)y=0$ for all $y$, so $k=3$.",
+    "notes": [
+     "",
+     "Forgets the factor 2 in $u_{xx}$.",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$u$ is harmonic when $u_{xx}+u_{yy}=0$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-151",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-10-10",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 151,
+    "label": "DSSSB PGT 2025 · Q251"
+   },
+   "en": {
+    "q": "One of the values of $\\cosh^{-1}(i)=$ __________.",
+    "options": [
+     "$\\log(1-\\sqrt2)+i\\pi$",
+     "$\\log(\\sqrt2+1)+i\\frac{\\pi}{2}$",
+     "$\\log(1+\\sqrt2)+i\\pi$",
+     "$\\log(\\sqrt2-1)+i\\frac{\\pi}{2}$"
+    ],
+    "explanation": "$\\cosh^{-1}z=\\log\\left(z+\\sqrt{z^2-1}\\right)$. With $z=i$: $\\sqrt{-2}=i\\sqrt2$, so one value is $\\log\\big(i(1+\\sqrt2)\\big)=\\ln(1+\\sqrt2)+i\\frac\\pi2$. Check: $\\cosh w=\\frac{(1+\\sqrt2)i-(\\sqrt2-1)i}{2}=i$.",
+    "notes": [
+     "$\\log$ of a negative real; its cosh is real.",
+     "Correct.",
+     "$\\cosh$ of this is real ($-\\sqrt2$).",
+     "$\\cosh$ of this equals $-i$."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.10 Inverse circular and inverse hyperbolic functions"
+    ],
+    "facts": [
+     "$\\cosh^{-1}z=\\log\\left(z\\pm\\sqrt{z^2-1}\\right)$ (plus $2k\\pi i$)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-152",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 152,
+    "label": "DSSSB PGT 2025 · Q252"
+   },
+   "en": {
+    "q": "Expand $\\frac{1}{z^2+3z+2}$ in Laurent's series for the region $1<|z|<2$?",
+    "options": [
+     "$\\left(\\frac1z-\\frac{1}{z^2}+\\frac{1}{z^3}-\\cdots\\right)-2\\left(1-\\frac z2+\\frac{z^2}{2^2}-\\frac{z^3}{2^3}+\\cdots\\right)$",
+     "$\\left(\\frac1z+\\frac{1}{z^2}+\\frac{1}{z^3}+\\frac{1}{z^4}+\\cdots\\right)-\\frac12\\left(1+\\frac z2+\\frac{z^2}{2^2}+\\frac{z^3}{2^3}+\\cdots\\right)$",
+     "$\\left(\\frac1z-\\frac{1}{z^2}+\\frac{1}{z^3}-\\cdots\\right)-\\frac12\\left(1-\\frac z2+\\frac{z^2}{2^2}-\\frac{z^3}{2^3}+\\cdots\\right)$",
+     "$\\left(\\frac1z+\\frac{1}{z^2}+\\frac{1}{z^3}+\\frac{1}{z^4}+\\cdots\\right)-2\\left(1+\\frac z2+\\frac{z^2}{2^2}+\\frac{z^3}{2^3}+\\cdots\\right)$"
+    ],
+    "explanation": "$\\frac{1}{(z+1)(z+2)}=\\frac{1}{z+1}-\\frac{1}{z+2}$. For $|z|>1$: $\\frac{1}{z+1}=\\frac1z\\left(1+\\frac1z\\right)^{-1}=\\frac1z-\\frac{1}{z^2}+\\frac{1}{z^3}-\\cdots$. For $|z|<2$: $\\frac{1}{z+2}=\\frac12\\left(1+\\frac z2\\right)^{-1}=\\frac12\\left(1-\\frac z2+\\frac{z^2}{4}-\\cdots\\right)$.",
+    "notes": [
+     "The factor should be $\\frac12$, not 2.",
+     "Signs must alternate.",
+     "Correct.",
+     "Wrong factor and signs."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "In an annulus, expand each partial fraction in powers of whichever of $z$ or $\\frac1z$ is small there."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-153",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 153,
+    "label": "DSSSB PGT 2025 · Q253"
+   },
+   "en": {
+    "q": "Let $f(z)=\\frac{z-\\sinh z}{z^6}$. Then $\\operatorname{Res}_{z=0}f$ is __________.",
+    "options": [
+     "$1/5!$",
+     "$-1/5!$",
+     "$1/7!$",
+     "$-1/7!$"
+    ],
+    "explanation": "$z-\\sinh z=-\\frac{z^3}{3!}-\\frac{z^5}{5!}-\\frac{z^7}{7!}-\\cdots$. Dividing by $z^6$, the $\\frac1z$ term is $-\\frac{1}{5!}\\cdot\\frac1z$. Residue $=-\\frac{1}{5!}$.",
+    "notes": [
+     "Sign error: $\\sinh$ has all plus signs.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$\\sinh z=z+\\frac{z^3}{3!}+\\frac{z^5}{5!}+\\cdots$ (all signs positive)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-154",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 154,
+    "label": "DSSSB PGT 2025 · Q254"
+   },
+   "en": {
+    "q": "Let A be a $3\\times3$ singular matrix having $-1$ and $1$ as two of its eigenvalues. Then $\\det(A^2+I)=$ ______.",
+    "options": [
+     "4",
+     "2",
+     "1",
+     "0"
+    ],
+    "explanation": "Singular means the third eigenvalue is 0. Eigenvalues of $A^2+I$ are $\\lambda^2+1$: $2,2,1$. Determinant $=2\\cdot2\\cdot1=4$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     "$A^2+I$ is not singular."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "If $\\lambda$ is an eigenvalue of A, then $p(\\lambda)$ is an eigenvalue of $p(A)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-155",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 155,
+    "label": "DSSSB PGT 2025 · Q255"
+   },
+   "en": {
+    "q": "If the function $u(x,y)=2kx^3-3xy^2+3x^2-3y^2+1$ is harmonic, then find the value of k.",
+    "options": [
+     "$\\frac13$",
+     "$\\frac12$",
+     "2",
+     "1"
+    ],
+    "explanation": "$u_{xx}=12kx+6$, $u_{yy}=-6x-6$. Harmonic: $(12k-6)x=0$ for all $x$, so $k=\\frac12$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$u$ is harmonic when $u_{xx}+u_{yy}=0$ identically."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-156",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 156,
+    "label": "DSSSB PGT 2025 · Q256"
+   },
+   "en": {
+    "q": "The value of $\\int_0^{\\infty}\\frac{x^3}{(1+x)^7}\\,dx$ is:",
+    "options": [
+     "$\\frac\\pi2$",
+     "$\\frac{1}{60}$",
+     "$\\frac{\\sqrt\\pi}{50}$",
+     "$\\frac{1}{70}$"
+    ],
+    "explanation": "$\\int_0^\\infty\\frac{x^{m-1}}{(1+x)^{m+n}}dx=B(m,n)$ with $m=4,\\ n=3$: $B(4,3)=\\frac{\\Gamma4\\,\\Gamma3}{\\Gamma7}=\\frac{6\\cdot2}{720}=\\frac{1}{60}$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "$B(m,n)=\\int_0^\\infty\\frac{x^{m-1}}{(1+x)^{m+n}}dx=\\frac{\\Gamma m\\,\\Gamma n}{\\Gamma(m+n)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-157",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 157,
+    "label": "DSSSB PGT 2025 · Q257"
+   },
+   "en": {
+    "q": "Let $f(x+iy)=u(x,y)+i\\,v(x,y)$ be an analytic function on $\\mathbb{C}$ such that $u(x,y)=2y(1-x)$, then $v(x,y)=$ _______.",
+    "options": [
+     "$x^2-2x-y^2+c$",
+     "$y^2-2xy+c$",
+     "$x^2-2xy+y^2+c$",
+     "$2x(1-y)+c$"
+    ],
+    "explanation": "$u_x=-2y$, $u_y=2-2x$. Cauchy–Riemann: $v_y=u_x=-2y\\Rightarrow v=-y^2+g(x)$; $v_x=-u_y=2x-2\\Rightarrow g=x^2-2x$. So $v=x^2-2x-y^2+c$ (and $f=i(z^2-2z)+ic$).",
+    "notes": [
+     "Correct.",
+     "",
+     "Not harmonic.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "Cauchy–Riemann: $u_x=v_y$, $u_y=-v_x$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-158",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 158,
+    "label": "DSSSB PGT 2025 · Q258"
+   },
+   "en": {
+    "q": "If $f(z)=\\begin{cases}\\frac{\\operatorname{Re}(z^2)}{z}; & z\\neq0\\\\ m; & z=0\\end{cases}$ is continuous at $z=0$, then find the value of m.",
+    "options": [
+     "3",
+     "1",
+     "$\\frac{1}{\\sqrt3}$",
+     "0"
+    ],
+    "explanation": "$\\left|\\frac{\\operatorname{Re}(z^2)}{z}\\right|\\le\\frac{|z^2|}{|z|}=|z|\\to0$ as $z\\to0$. So the limit is 0 and continuity needs $m=0$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$|\\operatorname{Re}w|\\le|w|$ gives quick bounds for limits at 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-159",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-10-06",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 159,
+    "label": "DSSSB PGT 2025 · Q259"
+   },
+   "en": {
+    "q": "The coefficient of $\\frac1z$ in the Laurent's series expansion of $f(z)=\\frac{e^z}{z^2(1-z)^3}$ around $z_0=0$ is _______.",
+    "options": [
+     "1",
+     "5/2",
+     "45724",
+     "4"
+    ],
+    "explanation": "Need the coefficient of $z$ in $e^z(1-z)^{-3}=(1+z+\\cdots)(1+3z+6z^2+\\cdots)$, which is $3+1=4$.",
+    "notes": [
+     "",
+     "",
+     "Printed as '45724' in the response sheet: a spreadsheet date code for 8 March, so probably the fraction $\\frac38$ or $\\frac83$. Not 4 either way.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Trigonometry",
+     "10.6 Analytic functions and Cauchy–Riemann equations"
+    ],
+    "facts": [
+     "$(1-z)^{-3}=1+3z+6z^2+10z^3+\\cdots$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-160",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-07-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 160,
+    "label": "DSSSB PGT 2025 · Q260"
+   },
+   "en": {
+    "q": "$\\int_0^{\\infty}\\frac{1}{(4+x^2)^{9/2}}\\,dx=$ ____________.",
+    "options": [
+     "$\\frac{1}{560}$",
+     "$\\frac{\\pi}{560}$",
+     "$\\frac{1}{1120}$",
+     "$\\frac{\\pi}{1120}$"
+    ],
+    "explanation": "Put $x=2\\tan\\theta$: $\\int_0^{\\pi/2}\\frac{2\\sec^2\\theta}{2^9\\sec^9\\theta}d\\theta=\\frac{1}{256}\\int_0^{\\pi/2}\\cos^7\\theta\\,d\\theta=\\frac{1}{256}\\cdot\\frac{6\\cdot4\\cdot2}{7\\cdot5\\cdot3}=\\frac{1}{256}\\cdot\\frac{16}{35}=\\frac{1}{560}$.",
+    "notes": [
+     "Correct.",
+     "Wallis for an odd power has no $\\frac\\pi2$ factor.",
+     "Half the value.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Calculus",
+     "7.4 Beta and Gamma functions; Wallis' formula"
+    ],
+    "facts": [
+     "Wallis: $\\int_0^{\\pi/2}\\cos^n\\theta\\,d\\theta=\\frac{(n-1)(n-3)\\cdots}{n(n-2)\\cdots}$, times $\\frac\\pi2$ only for even n."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-161",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 161,
+    "label": "DSSSB PGT 2025 · Q261"
+   },
+   "en": {
+    "q": "Let A be a $3\\times3$ lower triangular matrix with diagonal entries $2, 2, -1$. Then $A^{-1}=$ __________.",
+    "options": [
+     "$\\frac14(A^2+2A)$",
+     "$\\frac14(3A-A^2)$",
+     "$\\frac13(4A-A^2)$",
+     "$-\\frac14(A^2-2A)$"
+    ],
+    "explanation": "Eigenvalues are the diagonal entries $2,2,-1$, so the characteristic polynomial is $(\\lambda-2)^2(\\lambda+1)=\\lambda^3-3\\lambda^2+4$. Cayley–Hamilton: $A^3-3A^2+4I=0\\Rightarrow A(3A-A^2)=4I\\Rightarrow A^{-1}=\\frac14(3A-A^2)$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "Cayley–Hamilton: from $A^3+c_1A^2+c_2A+c_3I=0$, $A^{-1}=-\\frac{1}{c_3}(A^2+c_1A+c_2I)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-162",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 3,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 162,
+    "label": "DSSSB PGT 2025 · Q262"
+   },
+   "en": {
+    "q": "Let $X=\\mathbb{R}$ with topology $\\tau$ defined as $\\tau=\\{E\\subset X: E=\\phi\\text{ or }E^c\\text{ is finite}\\}$ on X. Let $S_1=\\{0,1\\}$ and $S_2=\\{0\\}$. Then _________.",
+    "options": [
+     "$S_1$ is not connected but $S_2$ is connected",
+     "$S_1$ is connected but $S_2$ is not connected",
+     "neither $S_1$ nor $S_2$ is connected",
+     "both $S_1$ and $S_2$ are connected"
+    ],
+    "explanation": "In the cofinite topology, $\\mathbb{R}\\setminus\\{1\\}$ is open, so $\\{0\\}=S_1\\cap(\\mathbb{R}\\setminus\\{1\\})$ is open in $S_1$; likewise $\\{1\\}$. So $S_1$ carries the discrete topology and splits into two disjoint non-empty open sets: not connected. A one-point set is always connected. The key (d) says both are connected; that is wrong, because $\\{0\\}$ and $\\{1\\}$ are disjoint non-empty open subsets of $S_1$ whose union is $S_1$.",
+    "notes": [
+     "Correct: a finite subset with two or more points is discrete, hence disconnected.",
+     "",
+     "",
+     "Key's answer; but $\\{0\\},\\{1\\}$ separate $S_1$."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "A finite subspace of a $T_1$ space (such as the cofinite topology) is discrete."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-163",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 163,
+    "label": "DSSSB PGT 2025 · Q263"
+   },
+   "en": {
+    "q": "Let $(X,d)$ be a metric space and A be a non-empty subset of X. Let $A^{\\circ}$ denote the set of all interior points of A and $\\overline{A}$ denote the closure of A. Then which of the following is/are true? P: $\\overline{(A^{\\circ})}=A$. Q: $(\\overline{A})^{\\circ}=A$.",
+    "options": [
+     "Only P",
+     "Both P and Q",
+     "Only Q",
+     "Neither P nor Q"
+    ],
+    "explanation": "P fails for $A=\\{0\\}\\subset\\mathbb{R}$: $A^{\\circ}=\\phi$, whose closure is $\\phi\\neq A$. Q fails for $A=(0,1)\\cup(1,2)$: $\\overline A=[0,2]$, whose interior is $(0,2)\\neq A$. So neither holds in general.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "$\\overline{A^{\\circ}}=A$ only for regular closed sets, $(\\overline A)^{\\circ}=A$ only for regular open sets."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-164",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 164,
+    "label": "DSSSB PGT 2025 · Q264"
+   },
+   "en": {
+    "q": "Let $G=\\left\\{A(x)=\\begin{bmatrix}\\cos x&\\sin x\\\\-\\sin x&\\cos x\\end{bmatrix}: x\\in\\mathbb{R}\\right\\}$ be a group under multiplication of matrices. If $x=\\frac{3\\pi}{8}$, then the order of $A\\left(\\frac{3\\pi}{8}\\right)$ in $G=$ _________.",
+    "options": [
+     "16",
+     "8",
+     "4",
+     "$\\infty$"
+    ],
+    "explanation": "$A(x)A(y)=A(x+y)$, so $A(x)^n=A(nx)=I$ iff $nx$ is a multiple of $2\\pi$. With $x=\\frac{3\\pi}{8}$: $\\frac{3n\\pi}{8}=2m\\pi\\Rightarrow3n=16m$, smallest $n=16$.",
+    "notes": [
+     "Correct.",
+     "$A(3\\pi)=-I\\neq I$.",
+     "",
+     "$\\frac{3\\pi}{8}$ is a rational multiple of $\\pi$, so the order is finite."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.5 Order of an element"
+    ],
+    "facts": [
+     "A rotation by $\\frac{p}{q}\\cdot2\\pi$ (lowest terms) has order $q$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-165",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-04-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 165,
+    "label": "DSSSB PGT 2025 · Q265"
+   },
+   "en": {
+    "q": "If $(\\mathbb{Z},*)$ be a algebraic structure, then which of the binary operation is not associative?",
+    "options": [
+     "$x*y=\\min(x,y)$",
+     "$x*y=x^2+y^2$",
+     "$x*y=x+y-xy$",
+     "$x*y=x$"
+    ],
+    "explanation": "For $x*y=x^2+y^2$: $(1*1)*0=2^2+0=4$ but $1*(1*0)=1+1^2=2$. Not associative. The others are associative: $\\min$ clearly; $x+y-xy=1-(1-x)(1-y)$; and $(x*y)*z=x=x*(y*z)$.",
+    "notes": [
+     "$\\min$ is associative.",
+     "Correct.",
+     "$1-(1-x)(1-y)(1-z)$ either way.",
+     "Both sides equal $x$."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.1 Binary operations and groups"
+    ],
+    "facts": [
+     "Test associativity with small numbers such as 0 and 1."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-166",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-04-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 166,
+    "label": "DSSSB PGT 2025 · Q266"
+   },
+   "en": {
+    "q": "If $(G,*)$ is a group, then every $a\\in G$, $(a^{-1})^{-1}=$ ?",
+    "options": [
+     "$\\frac1a$",
+     "$0$",
+     "$a$",
+     "$a^{-2}$"
+    ],
+    "explanation": "$a*a^{-1}=a^{-1}*a=e$ says that $a$ is the inverse of $a^{-1}$. By uniqueness of inverses, $(a^{-1})^{-1}=a$.",
+    "notes": [
+     "This is $a^{-1}$ in multiplicative notation.",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.2 Elementary properties of groups"
+    ],
+    "facts": [
+     "In a group, inverses are unique and $(a^{-1})^{-1}=a$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-167",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 167,
+    "label": "DSSSB PGT 2025 · Q267"
+   },
+   "en": {
+    "q": "Use Euler's modified method with one step to solve $\\frac{dy}{dx}=1-y$, with $y(0)=0$, find $y(0.1)$",
+    "options": [
+     "0.2",
+     "0.095",
+     "0.95",
+     "0.1"
+    ],
+    "explanation": "$h=0.1$, $f(x,y)=1-y$. Predictor: $y^*=0+0.1\\cdot f(0,0)=0.1$. Corrector: $y_1=0+\\frac{0.1}{2}\\left[f(0,0)+f(0.1,0.1)\\right]=0.05(1+0.9)=0.095$. (Exact: $1-e^{-0.1}\\approx0.0952$.)",
+    "notes": [
+     "",
+     "Correct.",
+     "Off by a factor of 10.",
+     "This is the plain Euler (predictor) value."
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "Modified Euler: $y_1=y_0+\\frac h2[f(x_0,y_0)+f(x_1,y_0+hf(x_0,y_0))]$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-168",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-02-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 168,
+    "label": "DSSSB PGT 2025 · Q268"
+   },
+   "en": {
+    "q": "If $\\begin{vmatrix}k+2&1&k^2+k+1\\\\k+3&2&k^2+k+2\\\\k+4&4&k^2+k+3\\end{vmatrix}=1$, then $k^2=$ _____.",
+    "options": [
+     "1",
+     "1/2",
+     "0",
+     "2"
+    ],
+    "explanation": "$R_3\\to R_3-R_2$, $R_2\\to R_2-R_1$: rows become $(k+2,1,k^2+k+1)$, $(1,1,1)$, $(1,2,1)$. Expanding: $(k+2)(1-2)-1(1-1)+(k^2+k+1)(2-1)=k^2-1$. So $k^2-1=1$ and $k^2=2$.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.3 Determinants"
+    ],
+    "facts": [
+     "Subtract consecutive rows to create simple rows before expanding."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-169",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 169,
+    "label": "DSSSB PGT 2025 · Q269"
+   },
+   "en": {
+    "q": "Which of the following statements is/are true for a subset E of a metric space $(X,d)$? P: If the set of all interior points of E is non empty and connected, then E is connected. Q: If there exists $a\\in E$, such that $E\\setminus\\{a\\}$ is connected, then E is disconnected.",
+    "options": [
+     "Only P",
+     "Neither P nor Q",
+     "Only Q",
+     "Both P and Q"
+    ],
+    "explanation": "P is false: $E=[0,1]\\cup\\{2\\}$ has interior $(0,1)$, non-empty and connected, but E is not connected. Q is false: $E=[0,1]$ and $a=0$ give $E\\setminus\\{a\\}=(0,1]$ connected, yet E is connected.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "Adding an isolated point keeps the interior but destroys connectedness."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-171",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-05-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 171,
+    "label": "DSSSB PGT 2025 · Q271"
+   },
+   "en": {
+    "q": "Let $(X,d)$ be a metric space and A be a non empty subset of X. Let $A^{\\circ}$ denote the set of all interior points of A and $\\overline{A}$ denote the closure of A. Then which of the following is true? P: If $\\overline{A}=A$, then A is closed in A. Q: If A is closed, then $\\overline{(A^{\\circ})}=A$.",
+    "options": [
+     "only P",
+     "both p and q",
+     "neither p nor q",
+     "only Q"
+    ],
+    "explanation": "P is true: every subset A is closed in itself (as a subspace, A is the whole space). Q is false: $A=\\{0\\}\\subset\\mathbb{R}$ is closed but $A^{\\circ}=\\phi$, so $\\overline{A^{\\circ}}=\\phi\\neq A$.",
+    "notes": [
+     "Correct.",
+     "",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Real Analysis",
+     "5.3 Order properties, bounds and point-set topology of R"
+    ],
+    "facts": [
+     "A closed set need not be the closure of its interior (e.g. a single point)."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-172",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 172,
+    "label": "DSSSB PGT 2025 · Q272"
+   },
+   "en": {
+    "q": "For how many values of k, the system of linear equations $x-2y+3z=0$, $kx+y-z=0$, $3x-6y+9z=0$ has a non trivial solution?",
+    "options": [
+     "2",
+     "1",
+     "0",
+     "infinitely many"
+    ],
+    "explanation": "The third equation is 3 times the first, so the coefficient matrix has two proportional rows and its determinant is 0 for every k. Hence there is a non-trivial solution for every real k: infinitely many values.",
+    "notes": [
+     "",
+     "",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "A homogeneous system has non-trivial solutions iff its coefficient determinant is 0."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-173",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 173,
+    "label": "DSSSB PGT 2025 · Q273"
+   },
+   "en": {
+    "q": "Let A be a $3\\times3$ matrix having eigenvalues $-1, 1, 2$. Then $A^{-1}=$ ________.",
+    "options": [
+     "$\\frac12(I-2A+A^2)$",
+     "$\\frac12(I+2A-A^2)$",
+     "$\\frac12(I+2A+A^2)$",
+     "$\\frac12(I-2A-A^2)$"
+    ],
+    "explanation": "Characteristic polynomial $(\\lambda+1)(\\lambda-1)(\\lambda-2)=\\lambda^3-2\\lambda^2-\\lambda+2$. Cayley–Hamilton: $A^3-2A^2-A+2I=0\\Rightarrow A(A^2-2A-I)=-2I\\Rightarrow A^{-1}=\\frac12(I+2A-A^2)$.",
+    "notes": [
+     "Sign error.",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "Check with an eigenvalue: for $\\lambda=2$, $\\frac12(1+4-4)=\\frac12=\\lambda^{-1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-174",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-04-01",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 174,
+    "label": "DSSSB PGT 2025 · Q274"
+   },
+   "en": {
+    "q": "Let $G=\\mathbb{R}\\setminus\\{1\\}$. With which of the following operation $*$ on G, $(G,*)$ is group?",
+    "options": [
+     "$a*b=a+b-ab$",
+     "$a*b=\\max\\{a,b\\}$",
+     "$a*b=a^b$",
+     "$a*b=a+b$"
+    ],
+    "explanation": "$a+b-ab=1-(1-a)(1-b)\\neq1$ for $a,b\\neq1$: closed. It is associative, the identity is 0, and the inverse of a is $\\frac{a}{a-1}$. So $(G,*)$ is a group.",
+    "notes": [
+     "Correct.",
+     "No identity element in G.",
+     "Not associative, and $a^b$ may be undefined.",
+     "Not closed: $\\frac12+\\frac12=1\\notin G$."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.1 Binary operations and groups"
+    ],
+    "facts": [
+     "$a*b=a+b-ab$ on $\\mathbb{R}\\setminus\\{1\\}$ is a group: identity 0, inverse $\\frac{a}{a-1}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-175",
+   "level": "PGT",
+   "math": true,
+   "answer": 1,
+   "key": 1,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 175,
+    "label": "DSSSB PGT 2025 · Q275"
+   },
+   "en": {
+    "q": "Find the value of $\\lambda$ so that the system of equations $x+2y-3z=0$, $x+y-z=0$, $3x+4y+\\lambda z=0$ have non zero solutions?",
+    "options": [
+     "$-7$",
+     "$-5$",
+     "$0$",
+     "$1$"
+    ],
+    "explanation": "$\\begin{vmatrix}1&2&-3\\\\1&1&-1\\\\3&4&\\lambda\\end{vmatrix}=1(\\lambda+4)-2(\\lambda+3)-3(4-3)=-\\lambda-5=0$, so $\\lambda=-5$.",
+    "notes": [
+     "",
+     "Correct.",
+     "",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "Non-zero solutions of a homogeneous system need the determinant to vanish."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-176",
+   "level": "PGT",
+   "math": true,
+   "answer": 0,
+   "key": 0,
+   "topic": "tp-08-02",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 176,
+    "label": "DSSSB PGT 2025 · Q276"
+   },
+   "en": {
+    "q": "Use Runge–Kutta fourth order with one step to solve $\\frac{dy}{dx}=1+x$, given that $y=1$ when $x=0$ with $h=0.1$",
+    "options": [
+     "1.105",
+     "1.3",
+     "0.11",
+     "1.2"
+    ],
+    "explanation": "$k_1=0.1(1)=0.1$, $k_2=k_3=0.1(1.05)=0.105$, $k_4=0.1(1.1)=0.11$. $y(0.1)=1+\\frac16(0.1+0.21+0.21+0.11)=1+0.105=1.105$ (exact, since $y=1+x+\\frac{x^2}{2}$).",
+    "notes": [
+     "Correct.",
+     "",
+     "This is $k_4$.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Ordinary Differential Equations",
+     "8.2 First order, first degree equations"
+    ],
+    "facts": [
+     "RK4: $y_1=y_0+\\frac16(k_1+2k_2+2k_3+k_4)$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-177",
+   "level": "PGT",
+   "math": true,
+   "answer": 2,
+   "key": 2,
+   "topic": "tp-02-04",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 177,
+    "label": "DSSSB PGT 2025 · Q277"
+   },
+   "en": {
+    "q": "Let A be an $n\\times n$ matrix (where $n>3$) with rank $n-2$. Then $\\operatorname{adj}(A)=$ _______.",
+    "options": [
+     "$A$",
+     "$2A$",
+     "$0$",
+     "$I$"
+    ],
+    "explanation": "Rank $n-2$ means every $(n-1)\\times(n-1)$ minor is 0. The entries of $\\operatorname{adj}A$ are these cofactors, so $\\operatorname{adj}A$ is the zero matrix.",
+    "notes": [
+     "",
+     "",
+     "Correct.",
+     ""
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.4 Rank and systems of linear equations"
+    ],
+    "facts": [
+     "$\\operatorname{rank}(\\operatorname{adj}A)$ is $n$, 1 or 0 according as $\\operatorname{rank}A$ is $n$, $n-1$ or less."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-178",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-04-03",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 178,
+    "label": "DSSSB PGT 2025 · Q278"
+   },
+   "en": {
+    "q": "The set $G=\\{0,1,2,3\\}$, then G with respect to addition modulo 4 is____?",
+    "options": [
+     "Only finite semi group",
+     "Infinite Group",
+     "Only finite monoid",
+     "Finite abelian group"
+    ],
+    "explanation": "$+_4$ is closed and associative on G, the identity is 0, the inverses are $0\\leftrightarrow0$, $1\\leftrightarrow3$, $2\\leftrightarrow2$, and it is commutative. So $(G,+_4)$ is a finite abelian group (cyclic of order 4).",
+    "notes": [
+     "",
+     "G has 4 elements.",
+     "",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.3 Addition and multiplication modulo m"
+    ],
+    "facts": [
+     "$(\\mathbb{Z}_n,+_n)$ is a cyclic, hence abelian, group of order n."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-179",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-04-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 179,
+    "label": "DSSSB PGT 2025 · Q279"
+   },
+   "en": {
+    "q": "Consider the group $\\langle G=\\{0,1,2,3\\},+_4\\rangle$, then find the $O(1)=$ ?",
+    "options": [
+     "5",
+     "6",
+     "1",
+     "4"
+    ],
+    "explanation": "$1,\\ 1+1=2,\\ 3,\\ 1+1+1+1=4\\equiv0$. The least $n$ with $n\\cdot1\\equiv0\\pmod4$ is 4, so $O(1)=4$.",
+    "notes": [
+     "",
+     "",
+     "Only the identity has order 1.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Abstract Algebra",
+     "4.5 Order of an element"
+    ],
+    "facts": [
+     "In $\\mathbb{Z}_n$, the order of $a$ is $\\frac{n}{\\gcd(a,n)}$."
+    ]
+   },
+   "refs": []
+  },
+  {
+   "id": "mq/dsssb-pgt-2025-180",
+   "level": "PGT",
+   "math": true,
+   "answer": 3,
+   "key": 3,
+   "topic": "tp-02-05",
+   "src": {
+    "paper": "dsssb-pgt-2025",
+    "n": 180,
+    "label": "DSSSB PGT 2025 · Q280"
+   },
+   "en": {
+    "q": "Find the Eigen values of the matrix $\\begin{bmatrix}-2&2&-3\\\\2&1&-6\\\\-1&-2&0\\end{bmatrix}$.",
+    "options": [
+     "$3, -5, -5$",
+     "$3, 5, 5$",
+     "$5, -3, 3$",
+     "$5, -3, -3$"
+    ],
+    "explanation": "Trace $=-1$ and $\\det A=45$. Characteristic equation: $\\lambda^3+\\lambda^2-21\\lambda-45=0=(\\lambda-5)(\\lambda+3)^2$. Eigenvalues $5,-3,-3$ (sum $-1$, product $45$).",
+    "notes": [
+     "Sum is $-7$, not the trace $-1$.",
+     "Sum is 13.",
+     "Product is $-45$, not $\\det A=45$.",
+     "Correct."
+    ],
+    "path": [
+     "Mathematics",
+     "Algebra",
+     "2.5 Eigenvalues and the Cayley–Hamilton theorem"
+    ],
+    "facts": [
+     "Check eigenvalues with trace = sum and determinant = product."
+    ]
+   },
+   "refs": []
+  }
+ ]
+}

@@ -1,8 +1,8 @@
 # UP TGT / PGT Mathematics: solved past papers, check log
 
-Each paper below was transcribed and solved by one agent from the page images of a copy shared after the exam (the copies stay outside the repository), then checked by a second, independent mathematician agent, who compared every question and option with the page images, solved every question before looking at the first answers, recomputed answers by script where possible, and corrected the solutions and the option notes. A question with no defensible answer (no correct option, two defensible answers, impossible data, or a printed text whose intended meaning is a guess) is left out of the quiz; the table lists them. Where a paper prints its board's key (DSSSB) and the worked answer differs, the solution says so and why.
+Each paper below was transcribed and solved by one agent from the page images of a copy shared after the exam (the copies stay outside the repository; the 180-question DSSSB sections in two halves; GIC 2021, of which no copy could be found, was rebuilt from the questions a question book marks as asked in it), then checked by a second, independent mathematician agent, who compared every question and option with the page images, solved every question before looking at the first answers, recomputed answers by script where possible, and corrected the solutions and the option notes. A question with no defensible answer (no correct option, two defensible answers, impossible data, or a printed text whose intended meaning is a guess) is left out of the quiz; the table lists them. Where a paper prints its board's key (DSSSB) and the worked answer differs, the solution says so and why.
 
-Questions shown to players: 745 from 7 papers (22 November 2026).
+Questions shown to players: 1568 from 13 papers (23 November 2026).
 
 | Paper | Level | Transcribed | In the quiz | Left out |
 |---|---|---|---|---|
@@ -12,7 +12,13 @@ Questions shown to players: 745 from 7 papers (22 November 2026).
 | UPPSC LT Grade Mathematics 2018 (29 July) | TGT | 112 | 108 | Q72, Q102, Q111, Q142 |
 | DSSSB TGT Mathematics 2021 (2 September, shift 3) | TGT | 90 | 84 | Q101, Q126, Q128, Q136, Q185, Q190 |
 | UP PGT Mathematics 2026 (10 May) | PGT | 125 | 125 | — |
+| UP PGT Mathematics 2021 (18 August) | PGT | 125 | 125 | — |
+| UP PGT Mathematics 2016 (held 2 February 2019) | PGT | 125 | 125 | — |
 | UPPSC GIC Lecturer Mathematics 2026 (14 June) | PGT | 80 | 76 | Q98, Q110, Q115, Q119 |
+| UPPSC GIC Lecturer Mathematics 2021 (rebuilt from a question book) | PGT | 80 | 78 | Q35, Q71 |
+| DSSSB PGT Mathematics 2026 (13 April, shift 1) | PGT | 180 | 177 | Q104, Q164, Q203 |
+| DSSSB PGT Mathematics 2025 (21 July, shift 1) | PGT | 180 | 172 | Q157, Q172, Q196, Q203, Q206, Q225, Q229, Q270 |
+| DSSSB PGT Mathematics 2021 (31 July, male) | PGT | 180 | 146 | Q108, Q109, Q113, Q118, Q137, Q143, Q155, Q156, Q172, Q174, Q182, Q183, Q187, Q188, Q193, Q196, Q199, Q208, Q209, Q210, Q211, Q219, Q222, Q228, Q246, Q248, Q250, Q252, Q253, Q257, Q267, Q268, Q273, Q276 |
 
 ## UP TGT Mathematics 2026 (3 June)
 
@@ -832,6 +838,314 @@ No notes page covers partial differential equations, and none covers Atwood's ma
 - Nothing unresolved in the transcription.
 - The only judgement calls are Q4 (kept on the strength of Q73) and Q109 (kept with answer (B) as printed). Both are explained in the solutions and flags.
 
+## UP PGT Mathematics 2021 (18 August)
+
+- Source: UPSESSB PGT written examination (advertisement 02/2021), Mathematics, held on 18 August 2021: question booklet series A, code PG-06, as shared after the exam, with the board's provisional key of 19 August 2021.
+- In the app: `data/mq/up-pgt-2021.json`, 125 questions; full mock 60 seconds a question, negative marking none.
+
+### Transcription and first solution
+
+### UP PGT (UPSESSB, advt. 02/2021) Mathematics, written examination of 18 August 2021
+
+#### Source
+- Paper: `papers/up-pgt-2021/paper.pdf`, 33 PDF pages, scans with no text layer, published by a coaching site (its logo watermark is on every page). Booklet series **A**, code **PG-06**, Hindi and English side by side. The English half was used throughout. The Hindi half was used to confirm Q21 option (B) and Q28 option (D).
+- Key: `papers/up-pgt-2021/key.pdf`, 4 pages. Page 1 is headed "PGT 02/2021 MATHEMATICS (PG-06) (SERIES-A)" and was signed and dated 19-08-2021. Pages 2–4 are the other series' tables. Page 1 was read only after every question had been solved, and it is recorded as `key`.
+- A candidate's ticks and rough work appear on most pages. They were ignored, and in many places they differ from the worked answers (for example Q16, Q17, Q18, Q19, Q38, Q39, Q48, Q57, Q61, Q64, Q66, Q67, Q70, Q81, Q94, Q95, Q122, Q124).
+
+#### Cover page: time and negative marking
+- The cover (PDF p4) shows Booklet Series A, Code PG-06, the subject (गणित / MATHEMATICS) and only instructions 1–2: write the roll number only on the cover and the OMR sheet, and check the booklet within 10 minutes.
+- The lines "समय :" (time) and "पूर्णांक :" (maximum marks) are printed, but their values are hidden. White patches cover them, together with the roll-number and OMR fields, in this copy.
+- **Nothing on the visible cover says anything about negative marking.** The back cover, where the remaining instructions would be, is not in the PDF. So neither the time allowed nor the negative-marking rule can be read from this copy.
+
+#### Page map
+| PDF page | Content |
+|---|---|
+| p1 | coaching-site title page ("UP PGT Previous Year Paper, Maths 18 Aug 2021") |
+| p2–p3 | advertisements (skipped) |
+| p4 | booklet cover |
+| p5 | Q1–Q4 |
+| p6 | Q5–Q9 |
+| p7 | Q10–Q14 |
+| p8 | Q15–Q19 |
+| p9 | Q20–Q23 |
+| p10 | Q24–Q28 |
+| p11 | Q29–Q33 |
+| p12 | Q34–Q37 |
+| p13 | Q38–Q41 |
+| p14 | Q42–Q47 |
+| p15 | Q48–Q53 |
+| p16 | Q54–Q58 |
+| p17 | Q59–Q61 |
+| p18 | Q62–Q65 |
+| p19 | Q66–Q69 |
+| p20 | Q70–Q73 |
+| p21 | Q74–Q78 |
+| p22 | Q79–Q83 |
+| p23 | Q84–Q88 |
+| p24 | Q89–Q93 |
+| p25 | Q94–Q98 |
+| p26 | Q99–Q102 |
+| p27 | Q103–Q107 |
+| p28 | Q108–Q111 |
+| p29 | Q112–Q116 |
+| p30 | Q117–Q120 |
+| p31–p32 | advertisements (skipped) |
+| p33 | Q121–Q125 |
+
+#### Range and skipped questions
+- Q1–Q125 are all mathematics and all are transcribed: **125 questions**, level "PGT".
+- Skipped questions: none. Only the non-question pages p1–p3 and p31–p32 were skipped.
+
+#### Answers against the board's key
+- `key` is filled for all 125 questions. My worked answer matches the key in **122** of them.
+- It differs in **3**, each flagged:
+  - **Q68** (race, P(none of three wins)): key C (2/5), mine B (13/60). Only one racer can win a race, so the events are mutually exclusive and P(none) = 1 − (1/3 + 1/4 + 1/5) = 13/60. The key's 2/5 multiplies the losing probabilities as if the events were independent.
+  - **Q75** (subgroup of (Z, +) generated by 2 and 7): key B (14Z), mine C (Z). The subgroup contains 4·2 − 7 = 1, so it is all of Z. 14Z is the intersection 2Z ∩ 7Z, not the subgroup generated.
+  - **Q116** (Lagrange PDE (mz − ny)p + (nx − lz)q = ly − mx): key C, mine D, f(x² + y² + z², lx + my + nz) = 0. The functions in (C) are not constant along the characteristics: x(mz − ny) + y(nx − lz) = z(mx − ly) ≠ 0. The script confirms that only (D) works.
+
+#### Flags in questions.jsonl
+- Q68, Q75, Q116: answer differs from the key (above).
+- Q105: as printed, x * y = x + 2y − 3 is not associative and has no two-sided identity, so (G, *) is not really a group. The answer (B, (9 − 2x)/4, which matches the key) uses the right identity 3/2 and the right inverse.
+
+#### Notes (not flagged; the key agrees)
+- "None of the above" is the right option in Q10 (the work done is −2/3), Q39 (the value is −9/7) and Q81 (the determinant is 0).
+- Q21 option (B) is printed "1 < r < 1" in both languages. It was kept as printed; it is a wrong option either way.
+- Q28 option (D) is printed "c tan hx". It was kept as printed.
+- Q40: strictly, for r = ω, ω² the sum vanishes when 3 | n. The intended answer, 3 values, is noted in the solution.
+- Q48: the dot product could be ±10√6. Only +10√6 is listed.
+- Q77: the lines make angles of 60° and 120°. Only 120° is listed.
+- Q83: N is taken as {1, 2, 3, …}.
+- Topic choices where no page fits exactly:
+  - The partial differential equations Q36, Q50 and Q116 are under tp-06-02 (partial differentiation).
+  - The director sphere (Q67) is under tp-11-06 (director circle).
+  - The tangent plane to a conicoid (Q70) is under tp-13-03 (tangent planes of a sphere).
+  - The annihilator (Q102) is under tp-03-02.
+
+#### Checks
+- `build.py` writes `questions.jsonl` and reloads it with `json.loads` line by line. Result: 125 rows, Q1–Q125 in order with none missing or repeated, every topic id found in `topics.txt`, `$` balanced, no stray control characters.
+- `lint.py` checks the LaTeX: braces are balanced inside every math segment, there is no rupee sign, no thin space before a prime and no degree sign inside math, and no command appears outside math.
+- `verify.py` recomputes every answer independently and compares it with `answer`. It agrees for **125 of 125**:
+  - **119** rest on an independent computation: numerical integration or differentiation, sympy (dsolve, determinants, series, limits, symbolic derivatives), brute force (permutations, relations, sets, groups mod n) or direct substitution.
+  - **6** (Q15, Q27, Q44, Q68, Q91, Q124) only apply a stated rule or a small model, such as the stability criterion, the mutually exclusive race model or S₃ being non-abelian.
+- Files: `qa.py`, `qb.py`, `qc.py` (data), `keys.py` (the board's key), `build.py`, `verify.py`, `lint.py`, `render.py` and `crops.py` (page images in `img/`).
+
+### Independent check
+
+#### UP PGT 2021: check of 23 November 2026
+
+Paper: UP PGT (UPSESSB, advertisement 02/2021) Mathematics, 18 August 2021, booklet series A, code PG-06. Level PGT; all 125 questions are mathematics.
+Checked file: `pyq/up-pgt-2021/questions.jsonl` (copied here as `orig.jsonl`). Output: `questions.checked.jsonl` in this folder.
+
+**Questions checked: 125 (Q1–Q125). None dropped.**
+
+##### How it was checked
+- **Transcription.** I rendered PDF pages 5–30 and 33 myself with PyMuPDF (zoom 2, plus 3.5× crops where the print was small) and compared every question and all four options, in order, with the English half. The candidate's pen marks were ignored.
+- **Answers.** I solved all 125 questions from the page images before opening the transcriber's answers, keys and log. My answers agree with the transcriber's in **125 of 125**.
+- **Key.** I read the board's key myself from `key.pdf` page 1, headed "PGT 02/2021 MATHEMATICS (PG-06) (SERIES-A)" and dated 19-08-2021. The file's `key` field matches it for all 125 questions.
+- **Script.** `tools/check.py` recomputes every answer independently, using sympy, mpmath, numerical tests or brute force, and compares the result with `answer`. It agrees for **125 of 125**:
+  - **114** are independent computations (series and integrals, dsolve and substitution into ODEs, determinants, ranks and eigenvalues, limits, numerical complex arithmetic, enumeration, a direct six-face flux for Q54, a first-integral test for Q116, a tangency-and-point test for Q125, a Lagrange-multiplier tangency test for Q70, and so on).
+  - **11** only apply a stated rule or model: Q7, Q15, Q18, Q28, Q44, Q68, Q75, Q91, Q96, Q119 and Q124.
+- **Format.** `tools/lint.py` confirms all of the following:
+  - 125 valid JSON lines, Q1–Q125 in order.
+  - Four options and four notes each, `answer` from 0 to 3, `key` equal to the board's key, and every topic id present in `topics.txt`.
+  - An even number of `$` in every string, no `$$` in a question or option, and no `align`, `\displaystyle`, rupee sign or `\,'`.
+  - Balanced braces in every math segment and no LaTeX command outside math.
+  - Every LaTeX command used is one that KaTeX supports.
+
+##### Transcription
+- **No transcription errors found.** All numbers, signs, exponents, limits, matrix entries and option orders match the page images.
+- Silent fixes, all acceptable:
+  - Q7: "complex number" was printed; the file has "complex numbers".
+  - Q13: the printed "(z, 0)" and "z" are rendered as $(\mathbb Z, \circ)$ and $\mathbb Z$.
+  - Q63: the smudged "Imrm" is read as "term".
+- Kept as printed: Q21 (B) "1 < r < 1" and Q28 (D) "c tan hx". Both are wrong options either way.
+
+##### Changes made
+| Q | Field | What was wrong | What it is now |
+|---|---|---|---|
+| 6, 9, 88 | q | `\displaystyle` (not needed inline) | removed |
+| 27 | notes (A) | said the axes "pass through the curve" | the axes meet the curve only at the origin, which is an isolated point; they are not asymptotes |
+| 66 | notes (C) | claimed that using "13 − 4 = 9 without halving" leads to $\frac32$; no such slip gives $\frac32$ (it gives a distance of $\frac95$, radius $\frac9{10}$) | removed (empty) |
+| 67 | notes (B) | garbled ("with $a$ for $\frac1{a^2}$") | adds the coefficients $\frac1{a^2}, \frac1{b^2}, \frac1{c^2}$ instead of their reciprocals |
+| 101 | notes (C) | said (C) is "the images in standard coordinates, written as rows"; those rows would be (2, 0), (0, −1), (1, 1), not (C) | wrong shape: the matrix of a map $\mathbb R^3\to\mathbb R^2$ is $2\times3$ |
+| 125 | notes (A), (B), (C) | said the lines in A, B and C "do not touch" the hyperbola. **False:** all four lines in the options are tangents to $2x^2 - 3y^2 = 6$ (checked by script). 3x + y + 5 = 0 and x + y + 1 = 0 are the tangents from (−2, 1). | each note now says the line is a tangent but does not pass through (−2, −1); the solution adds that only the lines in (D) pass through (−2, −1) |
+| 68, 75, 116 | solution | the solution did not say what the board's key gives | each solution now names the key's option and explains why it is wrong (see below) |
+| 105 | solution, flag | the solution did not warn that $*$ is not a group operation | the solution and flag now explain this (see below) |
+
+There are no answer changes and no topic changes. I checked every topic id and kept it. Where no notes page fits exactly, the transcriber's choices are reasonable:
+- PDEs (Q36, Q50, Q116) under tp-06-02.
+- Director sphere (Q67) under tp-11-06.
+- Conicoid tangent plane (Q70) under tp-13-03.
+- Annihilator (Q102) under tp-03-02.
+
+##### Disagreements with the board's key (3; I am sure of each)
+- **Q68.** Key (C) $\frac25$. Answer (B) $\frac{13}{60}$.
+  - Only one racer can win a single race, so "P wins", "Q wins" and "R wins" are mutually exclusive. So P(none) = 1 − (1/3 + 1/4 + 1/5) = 13/60.
+  - The key's 2/5 is (2/3)(3/4)(4/5), which treats the wins as independent. That is impossible, because two racers cannot both win the same race.
+- **Q75.** Key (B) $14\mathbb Z$. Answer (C) $\mathbb Z$.
+  - ⟨2, 7⟩ contains 4·2 − 7 = 1, so it is all of $\mathbb Z$.
+  - $14\mathbb Z = 2\mathbb Z\cap7\mathbb Z$ is the intersection, which does not even contain 2.
+- **Q116.** Key (C). Answer (D), $f(x^2+y^2+z^2,\ lx+my+nz) = 0$.
+  - For the integrals in (C): $x(mz-ny) + y(nx-lz) = z(mx-ly) \ne 0$ and $l(mz-ny) + m(nx-lz) = n(mx-ly) \ne 0$, so neither $x^2 + y^2$ nor $lx + my$ is an integral.
+  - The script confirms that only (D) gives two first integrals.
+
+These are the three disagreements the transcriber flagged, and I reached them independently.
+
+##### Q105 (transcriber's "not a group" flag): kept, not dropped
+- As printed, $x * y = x + 2y - 3$ is not associative: $(x*y)*z - x*(y*z) = 3 - 2z$. It also has no two-sided identity.
+- So $(G, *)$ can be a group only on the one-point set $\{\frac32\}$.
+- The intended working gives (B) $\frac{9-2x}{4}$, which is also the key's answer: solve $x * e = x$, then $x * x' = e$.
+- On $\{\frac32\}$, (B) is again the inverse: $\frac{9 - 3}{4} = \frac32$. None of the other options is.
+- So one option is defensible under both readings, and the drop rule does not apply. The solution and flag now say all this.
+
+##### Left as they are, with notes in the solutions (no flag)
+- **Q77.** The lines meet at 60° (equivalently 120°). Only 120° is listed, so (C), which agrees with the key. A student who insists on the acute angle might choose "none of the above"; note (D) addresses this.
+- **Q89.** Strictly, the zero matrix is also a scalar matrix (0·I). But (C) holds for every square matrix, and the question asks about singular A, so (B) "null matrix" is the intended and best answer. Note (C) says so.
+- **Q40.** For r = ω or ω², the sums vanish when 3 | n. The intended answer, 3, is noted in the solution.
+- **Q48.** The dot product is ±10√6; only +10√6 is listed.
+- **Q100.** "Firmly united" is read as the two spheres touching, so their centres are 9 cm apart.
+- **"None of the above" answers:** Q10 (the work done is −2/3), Q39 (the value is −9/7) and Q81 (the determinant is 0). All three were confirmed by script.
+
+##### Files
+`questions.checked.jsonl` and this `log.md`. Working files:
+- `orig.jsonl`: a copy of the input.
+- `tools/render.py` and `tools/crop.py`: page images in `img/` and `crop/`, key images in `keyimg/`.
+- `tools/check.py`: independent answer check.
+- `tools/patch.py`: the edits above.
+- `tools/lint.py`: format checks.
+- `tools/cmds.py`: the list of LaTeX commands used.
+
+## UP PGT Mathematics 2016 (held 2 February 2019)
+
+- Source: UPSESSB PGT written examination of the 2016 advertisement, Mathematics, held on 2 February 2019: question booklet series A, code PG-08, as shared after the exam, with the board's answer key.
+- In the app: `data/mq/up-pgt-2016.json`, 125 questions; full mock 60 seconds a question, negative marking none.
+
+### Transcription and first solution
+
+### UP PGT (UPSESSB) Mathematics, 2016 advertisement — written exam of 2 February 2019
+
+#### Source
+- File: `papers/up-pgt-2016/paper.pdf`, 31 PDF pages with no text layer: phone photos of the question booklet **PG-08, series A**, bilingual (Hindi left, English right), distributed by a coaching site (its logo watermark is on every page).
+- The booklet's cover and instruction pages (booklet pp. 1–3) are missing. Some pages are skewed or shaded; hard spots were re-rendered at zoom 4–8.
+- A candidate's handwritten rough work is on several pages; it was ignored.
+- Key: `papers/up-pgt-2016/key.pdf`, "MATHEMATICS (PG-08) Set A–D" (4 pages); **set A** (page 1) is recorded as `key`. Each question was solved before its key was looked at.
+
+#### Page map
+| PDF page | Booklet page | Questions |
+|---|---|---|
+| p1 | coaching-site title page (skipped) | none |
+| p2, p3 | advertisements (skipped) | none |
+| p4 | 4 | Q1–Q5 |
+| p5 | 5 | Q6–Q10 |
+| p6 | 6 | Q11–Q15 |
+| p7 | 7 | Q16–Q20 |
+| p8 | 8 | Q21–Q25 |
+| p9 | 9 | Q26–Q29 |
+| p10 | 10 | Q30–Q34 |
+| p11 | 11 | Q35–Q38 |
+| p12 | 12 | Q39–Q42 |
+| p13 | 13 | Q43–Q47 |
+| p14 | 14 | Q48–Q52 |
+| p15 | 15 | Q53–Q56 |
+| p16 | 16 | Q57–Q60 |
+| p17 | 17 | Q61–Q66 |
+| p18 | 18 | Q67–Q71 |
+| p19 | 19 | Q72–Q77 |
+| p20 | 20 | Q78–Q83 |
+| p21 | 21 | Q84–Q88 |
+| p22 | 22 | Q89–Q94 |
+| p23 | 23 | Q95–Q99 |
+| p24 | 24 | Q100–Q103 |
+| p25 | 25 | Q104–Q107 |
+| p26 | 26 | Q108–Q111 |
+| p27 | 27 | Q112–Q117 |
+| p28 | 28 | Q118–Q121 |
+| p29, p30 | advertisements (skipped) | none |
+| p31 | 29 | Q122–Q125 |
+
+#### Range and skipped questions
+- Q1–Q125, all mathematics; **none skipped**. Level "PGT" for all.
+- Areas: matrices and determinants, algebra and series, linear algebra, group theory, coordinate geometry (2D and 3D), calculus and differential equations, complex numbers, vector calculus, statics and dynamics.
+
+#### Flags (7)
+- **Q51**: the Hindi text has $\vec a=2\hat i-2\hat j+3\hat k$, which gives $x=\frac{14}{17}$ (no option); the English text ($2\hat i+2\hat j+3\hat k$, giving $-2$) is used.
+- **Q52**: misprint fixed: the English option (D) repeats (C) as $\frac{\sqrt3-1}{\sqrt2}$; the Hindi text has $\frac{\sqrt3+1}{\sqrt2}$, which is the answer.
+- **Q67**: exponent read as 48 from the Hindi text (blurred in the English); the answer does not depend on it.
+- **Q95**: the exponent $\frac15$ is small in the scan; the $\frac25$ in the options confirms it.
+- **Q102**: misprint fixed: both languages print the numerator as $3ax^2-x^3$, which matches no option (checked by script); the standard question has $3a^2x-x^3$, giving $\frac{3a}{x^2+a^2}$, the board's key too.
+- **Q113**: my answer differs from the key: the key says (D) $-1$, but $\operatorname{div}(r^n\vec r)=(n+3)r^n=0$ gives $n=-3$, option (A). Recorded as `answer` 0, `key` 3.
+- **Q116**: the third vector is blurred (read as $\hat k-\hat i$); $\hat k-\hat j$ would also give $0$.
+
+Other remarks (not flagged): Q8 has $\det P=\pm2$, and only $2$ is offered. Q32 uses the formula $f(t)=t^3-3t$, although $x+\frac1x=1$ has no real $x$. Q123 reads "between" as strictly between (inclusive counting gives 27, not offered).
+
+#### Answers and key
+- Answer distribution (mine): A 27, B 37, C 39, D 22.
+- Agreement with the set A key: 124 of 125; the only difference is Q113 (see above).
+
+#### Checks
+- `build.py` loads qa.py/qb.py/qc.py, adds the key and writes `questions.jsonl`; it reloads every line with `json.loads` (125 rows, Q1–Q125 in order, none twice), and checks topics, option and note counts, `$` and brace balance, and that no `$$` appears outside solutions. Problems: none. It is run with `python -I -W error`, so no stray escape sequences; `scan.py` confirms there are no control characters in any field.
+- `verify.py` recomputes **120 of 125** answers a second way (sympy limits, series, dsolve and solve; numpy determinants, ranks and cross products; brute force over groups, permutations and functions; numerical integration and sampling). Each check tests the options on its own and must single out the recorded answer: **0 mismatches**. Not scripted (conceptual): Q58, Q79, Q81, Q89, Q118. A few checks only illustrate a general fact on examples (e.g. Q16, Q66, Q74).
+- KaTeX rendering was not tested here: there is no Node/KaTeX in this environment. The constructs used are standard (`\begin{vmatrix}`, `\operatorname{}`, `{}^{n}P_r`, `{e'}^2`, `\vec{R}'`, `\pmod{}`); there is no rupee sign and no `\,'`.
+
+#### Count
+125 questions in `questions.jsonl`.
+
+### Independent check
+
+#### UP PGT 2016 (held 2 February 2019): check of 23 November 2026
+
+Paper: UP PGT (UPSESSB) Mathematics, 2016 advertisement, booklet PG-08 series A (phone-photo scan, bilingual). Key: `key.pdf` page 1, "MATHEMATICS (PG-08) (Set A)" (pages 2–4 are sets B–D).
+Checked file: `pyq/up-pgt-2016/questions.jsonl` (copied here as `questions.orig.jsonl`). Output: `questions.checked.jsonl`.
+
+**Questions: 125 (Q1–Q125), all mathematics, level PGT. None dropped.**
+
+##### How it was checked
+- Rendered the English column of PDF pages 4–28 and 31 myself at zoom 2.8 (`render3.py`), and every doubtful spot again at zoom 5–10 in both the English and the Hindi column (`zoom.py`).
+- Compared every stem and all four options of all 125 questions with the page images: numbers, signs, exponents, limits, matrix entries and option order.
+- Solved all 125 myself before looking at the transcriber's answers, then read the key image myself. My answers agree with the transcriber's on **all 125**; the `key` field matches the set A key on all 125.
+- Read every solution, option note and fact; checked every topic id against `topics.txt`.
+
+##### Transcription
+All 125 stems and option sets match the booklet except one:
+- **Q116**: the third vector was transcribed as $\hat k-\hat i$; at zoom 10 it is printed $\hat k-\hat j$ (the last letter has the descender of a j, unlike the $\hat i$ at the start; the Hindi text looks the same). Stem fixed. Solution rewritten for the printed vectors (the third is minus the second, so the triple product is 0) and it notes that the textbook form with $\hat k-\hat i$ also gives 0. Flag rewritten. Answer (D) 0 unchanged.
+
+Readings confirmed at high zoom (no change needed): Q50 "$|\vec a|+|\vec b|=|\vec c|$" (the plus is clear in the Hindi); Q51 English $\vec a=2\hat i+2\hat j+3\hat k$; Q52 English (D) repeats (C), the Hindi (D) is $\frac{\sqrt3+1}{\sqrt2}$; Q55 (A) has $e^{x/c}$, (C) has $e^{y/c}$; Q67 exponent 48 (clear in the Hindi); Q95 exponent $\frac15$ (clear in the Hindi); Q102 both languages print the numerator $3ax^2-x^3$.
+
+##### Other changes (question: what was wrong → what it is now)
+- **Q45** fact: said $\log\frac{x-i}{x+i}=-2i\cot^{-1}x$ without the many-valued caveat → now adds "(up to multiples of $2\pi i$)".
+- **Q47** note (C): gave only the argument slip, but $e^{(2n+1)\pi/2}$ also has the wrong sign → now says both.
+- **Q51** flag: stated the Hindi sign as certain; it is blurred → "appears to read".
+- **Q52** solution: did not mention the misprinted option (D) that students will see → now says the English (D) repeats (C) and the Hindi value is used.
+- **Q83** topic: tp-03-02 → **tp-03-01** (the notes page that teaches quotient spaces).
+- **Q102** solution: did not mention the misprint → now says the booklet prints $3ax^2-x^3$, that this matches no option (at $a=1$, $x=0.2$: $\frac{dy}{dx}\approx1.38$ against $\frac{3a}{x^2+a^2}\approx2.88$, by script), and that the standard $3a^2x-x^3$ is read. Flag extended (the denominator $a(a^2-3x^2)$ is the $\tan3\theta$ form; the board key (B) fits).
+- **Q113** solution: did not mention the key → now says the board key gives (D) $-1$ and why it is wrong ($\operatorname{div}(r^{-1}\vec r)=\frac2r\ne0$).
+- **Q123** solution: adds that inclusive counting gives 27, not offered.
+
+No answer was changed.
+
+##### Disagreement with the official key (1)
+- **Q113**: key (D) $-1$; answer **(A) $-3$**. $\operatorname{div}(r^n\vec r)=nr^{n-2}(\vec r\cdot\vec r)+3r^n=(n+3)r^n$, zero only for $n=-3$ (sympy confirms). At $n=-1$ the divergence is $\frac2r$. The key's $-1$ is the answer to $\nabla^2(r^n)=n(n+1)r^{n-2}=0$, a different question.
+
+All other 124 answers agree with the key.
+
+##### Drop rule
+- **Q102** kept: the printed numerator $3ax^2-x^3$ is an obvious slip for $3a^2x-x^3$ (the denominator and all four options are the $\tan3\theta$ question, and the key agrees). This is a fair reading, not a guess.
+- **Q116** kept: both possible readings of the third vector give 0, so the answer does not depend on the reading.
+- No question has no correct option, two correct options or impossible data, so nothing is dropped.
+
+##### Script checks
+`mycheck.py` (sympy, mpmath, brute force) recomputes **113 of 125** answers independently. It tests the options and must pick out exactly the recorded answer. **0 mismatches.** Methods: limits, series, dsolve, determinants and ranks, exact sums, numerical integration, complex-function identities at sample points, permutation and divisor counts. Also computed: Q102 with the printed numerator (it matches no option) and Q116 with both readings (both give 0).
+Not scripted (theory or recall, checked by hand): Q1, 14, 16, 50, 58, 60, 74, 79, 81, 89, 90, 118.
+
+##### Format
+125 valid JSON lines, numbered Q1–Q125 in order with none repeated. Each line has 4 options and 4 notes, `answer` 0–3, `key` 0–3 and a topic from `topics.txt`. Every string has an even number of `$`; braces, `\left`/`\right` and `\begin`/`\end` are balanced. There is no `$$` in any stem or option, no `align`, no `\displaystyle`, no rupee sign and no `\,'`. Every LaTeX command used is standard KaTeX (`cmds.py`). KaTeX itself could not be run here because Node is not available. Apart from the 9 edited lines, the file is byte-identical to the transcriber's.
+
+##### Left doubtful (answers not affected)
+- Q116: $\hat k-\hat j$ against $\hat k-\hat i$ in a small print (both give 0).
+- Q51: the Hindi sign of $2\hat j$ is blurred; the English text is clear.
+- Q8 ($\det P=-2$) and Q23 ($h+f=-8$) have a second value that is not offered; the offered one is the answer.
+- Q43 assumes the principal range $(0,\pi)$ for $\cot^{-1}$. Q123 reads "between" as exclusive. Q32 uses $f(t)=t^3-3t$ formally, because $x+\frac1x=1$ has no real solution. Each solution says so where it matters.
+
 ## UPPSC GIC Lecturer Mathematics 2026 (14 June)
 
 - Source: UPPSC Lecturer (Government Inter College) preliminary examination of 14 June 2026, booklet series TUKU-07: part II, Mathematics (questions 41 to 120), as shared after the exam.
@@ -927,6 +1241,897 @@ Paper: booklet series TUKU-07, Part II Mathematics, Q41–Q120 (Part I, Q1–Q40
 - **Q62**: (d) is trivially true; (b) is clearly intended.
 - **Q111**: the domain subtlety is set aside in the usual way.
 - **Q53**: options (c) and (d) also consist of valid circles. (a) is the only option giving the complete family.
+
+## UPPSC GIC Lecturer Mathematics 2021 (rebuilt from a question book)
+
+- Source: UPPSC Lecturer (Government Inter College) examination of 19 September 2021, mathematics part: no copy of the booklet could be found, so the paper is rebuilt from the questions marked UPPSC GIC Lecturer 2021 in Youth TGT PGT Maths 2024-25, in the book's chapter order.
+- In the app: `data/mq/gic-2021.json`, 78 questions; full mock 60 seconds a question, negative marking none.
+
+### Transcription and first solution
+
+### UPPSC GIC Lecturer (PGT) Mathematics, 19 September 2021: rebuilt from the YCT question book
+
+#### Source
+- No copy of the question booklet was found, so the mathematics part is rebuilt from the book *Youth TGT PGT Maths 2024-25 Edition* (YCT, chapter-wise solved papers), `the book`, 1248 pages. The book was treated as untrusted data; only page images and the text layer were read.
+- Every page has a crop box that hides the top 71 pt (crop box y = 71…841 inside a 595 × 841 media box). All renders and crops set the crop box to the media box first (`render.py`, `locate.py`, `qcrop.py`, `clip.py`), so questions at the top of a page are complete.
+- The book's tagged rows come from `youth/up-tags.tsv` (exam column "UP GIC 2021"): **80 rows** after dropping the front-matter row (page 6). `locate.py` found all 80 tag lines ("UPPSC GIC 2021", once "GIC 2021") on the 36 pages listed, and cut out the question above each tag. Three questions start in the previous column or on the previous page (book Q1473 on p. 223, Q1296 on pp. 735–736, Q99 on p. 1096); those were read from both parts. All 80 page crops were viewed in `mont/` (three crops per image).
+- Each question and its options were copied from the page images (zoom 2.2–2.4); the text layer was used only as an aid.
+
+#### Question range
+- The paper had 40 general-studies and 80 mathematics questions. The book is maths only, so the GS part is simply absent; nothing had to be skipped.
+- **80 tagged rows → 79 distinct questions.** One duplicate: book Q228 (p. 1119, tag "GIC 2021 / Rajasthan TGT 2013, 2015 / UPPCS 1994", options Parabola / Circle / Equiangular spiral / Hyperbola) is the same question as book Q97 (p. 1096, "If the radial and transverse velocities of a particle are always proportional to each other…"). It was kept once, as n = 72, in the version of Q97, whose tag is "UPPSC GIC 2021 / UPPSC Ashram Paddhati 2021" (the Q228 option set probably comes from one of the other exams named in its tag). The book's answer is the equiangular spiral in both places.
+- So at least one of the paper's 80 maths questions is not in the book. The paper's own question numbers and order are unknown: `n` = 1…79 follows the book's chapter order (page order, then left column before right).
+- Level "PGT" throughout; `key` is null throughout (the book's printed answer is not an official key; it is compared in the table below).
+
+#### Output
+- `questions.jsonl`: **79 questions, n = 1–79**, built by `build.py` from `qa.py` (n 1–35) and `qb.py` (n 36–79). The file is reloaded line by line with `json.loads` (all 79 lines are valid JSON); topic ids are checked against `topics.txt`; `$` signs are balanced and no math segment contains non-ASCII characters, a rupee sign or `\,'`.
+- `verify.py` recomputes **74 of 79 answers** by script (sympy, exact fractions, numerical integration and limits, brute-force enumeration, permutation parity, Darboux sums, a numerical equilibrium solve). **No mismatches.** Not script-checked (definitions or theory, checked by reasoning): n = 8 (binary operation), 11 (isomorphism is an equivalence), 31 (Stokes' theorem), 52 (order and degree), 71 (angular velocity, see flag). For n = 35 the script confirms that options (a) and (d) describe the same set (see flag); for n = 48 it confirms that x = t² and x = t³ fail to rationalise while t⁶ and t¹² both do (t⁶, the LCM, is the answer).
+- My answers: (a) 19, (b) 19, (c) 19, (d) 22.
+
+#### The book's printed answers
+- Correct in 77 of 79.
+- **Wrong in 1: n = 4** (book Q162, p. 30). The book says (a) 8: it adds the double root x = 4 of (x − 4)² = 0 twice. The equation has two roots, 0 and 4, so the sum is 4 (d).
+- **No answer in 1: n = 62** (book Q649, p. 916). The book prints "Ans. (*)", because the planes as printed meet. See the flag.
+- n = 71 (book Q96): the book's (d) is the setter's intended answer, but the question is loosely set (flag).
+
+#### Flags (12)
+- **n = 4** (Q162): book answer (a) 8 counts the double root 4 twice; the roots are 0 and 4, sum 4 (d).
+- **n = 5** (Q953): misprint fixed. The book prints "non-zero rational number Q* by aRb. If a = 1/b, then"; written "rational numbers … by aRb if a = 1/b, then".
+- **n = 16** (Q1478): misprint fixed, option (b) "homomorhism".
+- **n = 34** (Q32, complex numbers): misprint fixed, option (b) "a geometric procession".
+- **n = 35** (Q214): two options describe the same values. (a) nπ/2 − π/4 is (d) nπ/2 + π/4 with n replaced by n − 1 (n any integer). (d) is the standard form and the book's answer, so answer = (d).
+- **n = 52** (Q1298): the first exponent is printed as a capital P; written p, as in the options.
+- **n = 60** (Q305): misprint fixed, "sq, unit" in options (c) and (d).
+- **n = 62** (Q649): misprint fixed. The book prints the second plane as 3x + 6y + 3z = 2, which is not parallel to 2x + y + z = 1 (normals (2, 1, 1) and (1, 2, 1)); the planes meet, the distance is 0 and no option fits (the book's answer is "(*)"). With 6x + 3y + 3z = 2 (i.e. 2x + y + z = 2/3) the distance is 1/(3√6), exactly option (b). The checker may prefer to keep the printed text with "no correct option".
+- **n = 69** (Q241): cos⁻¹((1 − x²)/(1 + x²)) = 2 tan⁻¹x holds for x ≥ 0 only (for x < 0 it is −2 tan⁻¹x); (c) is the intended answer.
+- **n = 71** (Q96): loosely set. In general the angular velocity about O is v sin φ / OP = vp/OP² (φ the angle between OP and the tangent, p the perpendicular from O to the tangent), which is not proportional to any fixed power of OP for an arbitrary curve. The setter and the book take ds = OP dθ (velocity at right angles to OP), giving θ̇ = v/OP and (d).
+- **n = 74** (Q99): misprint fixed, option (c) "250 m/s" without the square.
+- **n = 79** (Q104): spacing fixed, option (a) "c cos h (x/c)" written c cosh(x/c).
+
+Smaller points left as printed, without a flag: n = 7 (Q965) defines g : ℝ → ℝ by x/(x − 1), which is undefined at 1 (harmless, since f(x) ≥ 2); n = 55 (Q146) option (c) has no "= 0"; n = 78 (Q103) option (c) prints ṡ²/p (presumably ρ).
+
+#### Source table (n → book page, book number, tag as printed, book's answer)
+| n | page | book no. | tag as printed | book answer | my answer | verdict on the book |
+|---|---|---|---|---|---|---|
+| 1 | 29 | 159 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 2 | 29 | 160 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (c) | (c) | correct |
+| 3 | 29 | 161 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 4 | 30 | 162 | UPPSC GIC 2021 | (a) | (d) | wrong |
+| 5 | 155 | 953 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 6 | 155 | 954 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 7 | 157 | 965 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 8 | 157 | 966 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (b) | (b) | correct |
+| 9 | 157 | 967 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 10 | 157 | 968 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 11 | 223 | 1473 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (d) | (d) | correct |
+| 12 | 223 | 1474 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (b) | (b) | correct |
+| 13 | 223 | 1475 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (b) | (b) | correct |
+| 14 | 224 | 1476 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (d) | (d) | correct |
+| 15 | 224 | 1477 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (a) | (a) | correct |
+| 16 | 224 | 1478 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (d) | (d) | correct |
+| 17 | 226 | 1494 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021; UP TGT 2021 | (c) | (c) | correct |
+| 18 | 255 | 1720 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 19 | 255 | 1721 | UPPSC GIC 2021; UPPCS (Pre) 2002 | (d) | (d) | correct |
+| 20 | 256 | 1722 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (c) | (c) | correct |
+| 21 | 256 | 1723 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 22 | 256 | 1724 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 23 | 327 | 2116 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (b) | (b) | correct |
+| 24 | 328 | 2117 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 25 | 328 | 2118 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 26 | 328 | 2119 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 27 | 345 | 19 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021; UP PGT 2013; UPPCS (Pre) 2003, 2000 | (b) | (b) | correct |
+| 28 | 368 | 31 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 29 | 368 | 32 | UP TGT 2011; UPPSC GIC 2021; UPPSC Ashram Paddhati 2021; JDD-75-PGT-TIER-II-X-15. 28.06.2015 | (d) | (d) | correct |
+| 30 | 412 | 285 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 31 | 412 | 286 | UPPSC GIC 2021; UPPSC Asharam Paddhati 2021 | (b) | (b) | correct |
+| 32 | 412 | 287 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 33 | 412 | 288 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (a) | (a) | correct |
+| 34 | 434 | 32 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 35 | 463 | 214 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 36 | 501 | 78 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 37 | 501 | 79 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 38 | 501 | 80 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (b) | (b) | correct |
+| 39 | 565 | 431 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 40 | 576 | 501 | UP PGT 2009; UPPSC GIC 2021 | (a) | (a) | correct |
+| 41 | 576 | 502 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (a) | (a) | correct |
+| 42 | 609 | 673 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 43 | 609 | 674 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 44 | 631 | 796 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (d) | (d) | correct |
+| 45 | 631 | 797 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 46 | 632 | 798 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (c) | (c) | correct |
+| 47 | 632 | 799 | UPPSC GIC 2021; UP PGT 2004 | (a) | (a) | correct |
+| 48 | 632 | 800 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 49 | 632 | 801 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 50 | 735–736 | 1296 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 51 | 736 | 1297 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 52 | 736 | 1298 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 53 | 736 | 1299 | UPPSC GIC 2021; Rajasthan TGT 2015; UP PGT 2009; UP PCS (Pre) 1995 | (a) | (a) | correct |
+| 54 | 830 | 145 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 55 | 830 | 146 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 56 | 855 | 295 | UPPSC GIC 2021; UPPCS (Pre) 1994 | (d) | (d) | correct |
+| 57 | 856 | 296 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 58 | 856 | 297 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (b) | (b) | correct |
+| 59 | 856 | 298 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 60 | 857 | 305 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 61 | 916 | 648 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (a) | (a) | correct |
+| 62 | 916 | 649 | UPPSC GIC 2021 | (*) | (b) | no answer printed ("*") |
+| 63 | 916 | 650 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (a) | (a) | correct |
+| 64 | 945 | 1018 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (c) | (c) | correct |
+| 65 | 946 | 1019 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021; Rajasthan TGT 2011 | (c) | (c) | correct |
+| 66 | 983 | 172 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 67 | 983 | 173 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 68 | 983 | 174 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021; Haryana TGT 2020 | (c) | (c) | correct |
+| 69 | 1056 | 241 | UPPSC GIC 2021 | (c) | (c) | correct |
+| 70 | 1056 | 242 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 71 | 1095 | 96 | UPPSC GIC 2021 | (d) | (d) | correct |
+| 72 | 1096 | 97 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (d) | (d) | correct |
+| 73 | 1096 | 98 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 74 | 1096 | 99 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 75 | 1096 | 100 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (c) | (c) | correct |
+| 76 | 1096 | 101 | UPPSC GIC 2021 | (a) | (a) | correct |
+| 77 | 1097 | 102 | UPPSC GIC 2021 | (b) | (b) | correct |
+| 78 | 1097 | 103 | UPPSC GIC 2021; UKSSSC LT 2020 | (d) | (d) | correct |
+| 79 | 1097 | 104 | UPPSC GIC 2021; UPPSC Ashram Paddhati 2021 | (d) | (d) | correct |
+
+Duplicate (not in the output): book Q228, p. 1119, tag "GIC 2021; Rajasthan TGT 2013, 2015; UPPCS 1994", book answer (c) Equiangular spiral (correct); same question as n = 72.
+
+#### Count
+79 mathematics questions (n = 1–79) from 80 tagged rows (1 duplicate). The paper had 80 maths questions, so at least one is missing from the book.
+
+### Independent check
+
+#### UPPSC GIC Lecturer 2021 (rebuilt from the book): check of 23 November 2026
+
+##### What was checked
+- Source: `the book` (untrusted; only page images and the text layer were read). Every page was opened with the crop box set to the media box (the crop box hides the top ~71 pt), and each tagged question was rendered at zoom 2.2 (`crops.py`, `mont.py`, `clip.py`; images in `crop\`, `mont\`, `img\`). Questions split across a column or page (book Q1473, Q1296, Q99) were read from both parts; determinants and matrices whose first rows sat above the question-number line (n = 18, 19, 21, 22, 36) were cropped again and read in full.
+- Input: the transcriber's `questions.jsonl` (copied here as `questions.orig.jsonl`), 79 questions.
+- **Number of questions now: 80** (79 + 1 added, see below); **2 marked `"drop": true`** (n = 35, 71), so 78 go into the quiz. `level` PGT and `key` null throughout.
+
+##### Tags and completeness
+- I scanned the text layer of all 1248 pages myself (`scan.py`) for lines naming GIC and 2021: 82 lines, which are 1 front-matter row (p. 6), the transcriber's 80 tagged rows (79 questions + the duplicate book Q228 on p. 1119 = n = 72), and **one row the transcriber missed: book Q653, p. 917, tag printed "UPPSC Ashram Paddhati 2021 / UPPCS GIC 2021 / UKPSC Lecturer (Mains) 2020"**. "UPPCS GIC" is read as UPPSC GIC (there is no UPPCS GIC exam, and most of this paper's questions carry the same Ashram Paddhati 2021 co-tag). The transcriber's tag list (`youth/up-tags.tsv`) has no row for it, which is why it was missed.
+- For every one of the 79 transcribed questions, the crop shows "UPPSC GIC 2021" directly under its options (n = 72 also as "GIC 2021" on its duplicate, Q228). All tags really name the GIC 2021 exam.
+- With Q653 the set is 80 distinct questions, matching the 80 mathematics questions of the paper.
+
+##### Transcription
+- All 79 questions and their four options compared word for word with the page images: **no transcription errors found.** The transcriber's misprint fixes (n = 5, 16, 34, 52, 60, 74, 79) match the page.
+
+##### Answers
+- I solved all 80 questions myself before looking at the transcriber's answers. **Agreement on 78 of 79**; the exception is n = 71, which I drop (no option is true, see below). The added n = 80 is answered (a) 0, which is also the book's answer.
+- **Script checks: 59 questions** recomputed by `mycheck.py` (sympy, exact fractions, numerical integration and limits, Riemann/Darboux sums, brute force on relations and groups, permutation parity, a cmath check for n = 35, a check of the beam equilibrium in n = 75), all passing: n = 1–5, 7, 9, 12–14, 17–23, 26–28, 30, 32, 33, 35, 36, 38–51, 53, 54, 57, 59–62, 64, 66–70, 72–75, 77, 79, 80. The rest (definitions and standard results: n = 6, 8, 10, 11, 15, 16, 24, 25, 29, 31, 34, 37, 52, 55, 56, 58, 63, 65, 71, 76, 78) were checked by reasoning.
+- No official key exists (the book's answers are not a key). Against the book: wrong on n = 4 (the book's (a) 8 counts the double root 4 twice; the roots are 0 and 4, sum 4 (d)), "(*)" on n = 62, and the book's (d) on n = 71 rests on a wrong step (ds = OP dθ). All other book answers agree with mine, including n = 80.
+
+##### Changes made (in `questions.checked.jsonl`)
+- **n = 35 (book Q214): dropped.** Two correct options: (a) nπ/2 − π/4 and (d) nπ/2 + π/4 are the same set of values (n → n − 1). Flag rewritten; note (a) now says it is also correct; one line added to the solution.
+- **n = 46 (Q798): note (b) corrected.** It said the derivative of uv′ + vu′ "has the extra term 2u′v′"; the derivative is uv″ + vu″ + 2u′v′, so the note now says that.
+- **n = 48 (Q800): flag added** (answer unchanged, (c)): x = t¹² also makes the integrand rational, but the standard substitution is the least one, t⁶ (LCM of 2 and 3). Judged not a second defensible answer, so the question is kept.
+- **n = 54 (Q145): topic tp-13-02 → tp-13-04.** The pair-of-planes test (Δ = 0 for a homogeneous second-degree equation) is taught on the cone page.
+- **n = 62 (Q649): kept, solution and flag extended** (answer (b) unchanged). The printed second plane 3x + 6y + 3z = 2 is not parallel to 2x + y + z = 1, so as printed the distance is 0 and no option fits. Read as 6x + 3y + 3z = 2 (the 3 and 6 swapped), the distance is 1/(3√6) = option (b). This is a fair reading of an obvious misprint, not a guess: swapping instead in the first plane (x + 2y + z = 1) gives the same distance; no single-digit change makes the planes parallel, so any other fix needs more changes; and the book's own note says the plane should be 6x + 3y + 3z = 2. The solution now states the printed version and the reading, as students will see it.
+- **n = 71 (Q96): dropped.** With uniform speed v on an arbitrary curve the angular velocity about O is θ̇ = v sin φ / OP = vp/OP² (p the perpendicular from O to the tangent), which is not proportional to any power of OP, so no option is true. (d) holds only if the velocity is always perpendicular to OP; the classical textbook result for uniform velocity along a straight line (p constant) gives (a). What the setter meant is a guess. Solution, notes and flag rewritten; `answer` left at (d), the book's.
+- **n = 80 added (book Q653, p. 917):** "The shortest distance between the lines (x − 1)/2 = (y − 2)/3 = (z − 3)/4 and (x − 2)/3 = (y − 3)/4 = (z − 4)/5 is" (a) 0 (b) 1/√6 (c) 2/9 (d) 5/√6; answer (a): the lines meet at (−1, −1, −1). Topic tp-13-02. It is numbered 80, after the others, so that n = 1–79 keep their numbers; in book order it sits between n = 63 (p. 916) and n = 64 (p. 945).
+- All other lines are byte-for-byte as the transcriber wrote them.
+
+##### Format
+- `fmt.py`: 80 lines of valid JSON, n = 1–80 in order and unique, four options and four notes each, answer 0–3, key null, level PGT, topic ids all in `topics.txt`, an even number of `$` in every string, no `$$` in questions or options, no align or displaystyle, no non-ASCII character inside math, no rupee sign, no `\,'`. Dropped lines carry `"drop": true`.
+
+##### Left doubtful (kept)
+- n = 62: kept with the reading above. If you would rather not change printed data at all, it is the one candidate for dropping (as printed, no option is correct).
+- n = 48: (d) t¹² also rationalises; (c) kept as the standard answer.
+- n = 69: the identity holds for x ≥ 0 only (already flagged); (c) is the only option that is ever right.
+- n = 58: "how many normals": 3 is the maximum (a cubic in m); the standard answer.
+- n = 80: provenance rests on the tag "UPPCS GIC 2021" being a misprint for UPPSC GIC 2021.
+- Small points left as printed, without a flag (as the transcriber did): n = 7 (g undefined at x = 1, harmless), n = 55 option (c) without "= 0", n = 78 option (c) ṡ²/p (presumably ρ).
+
+## DSSSB PGT Mathematics 2026 (13 April, shift 1)
+
+- Source: DSSSB PGT Mathematics (post code 825/24), computer-based test of 13 April 2026, shift 1: the mathematics section (questions 101 to 280) of the board's response sheet as re-shared after the exam, with the board's draft-stage answer key.
+- In the app: `data/mq/dsssb-pgt-2026.json`, 177 questions; full mock 30 seconds a question, negative marking 0.25.
+
+### Transcription and first solution
+
+### DSSSB PGT Mathematics, CBT of 13 April 2026, shift 1: part A (n = 1–90)
+
+#### Source
+- File: `papers/dsssb-pgt-2026-0413-s1/paper.pdf` (186 pages, a coaching-site compilation; untrusted, nothing in it was run).
+- Pages 2–67 are the site's own typed copy (its own numbering). It was used only to help read a few images and was never the source.
+- Pages 68–185 are the board's official response sheet (English medium). Everything here is transcribed from it.
+- The response sheet restarts numbering at Q.1 in each section. Maths is "Discipline1" to "Discipline9". This part covers Discipline1 Q.1 to Discipline5 Q.10, i.e. overall Q101–Q190, recorded as `n` = overall − 100 = 1–90.
+- Level "PGT" for all.
+
+#### Page map (response sheet)
+| PDF pages | Section | n |
+|---|---|---|
+| 112 (lower half) – 119 (top) | Discipline1 | 1–20 |
+| 119 – 126 (top) | Discipline2 | 21–40 |
+| 126 – 132 | Discipline3 | 41–60 |
+| 133 – 140 | Discipline4 | 61–80 |
+| 141 – 144 (Q.9, Q.10) | Discipline5 Q.1–10 | 81–90 |
+
+#### Skipped
+- Response-sheet pages 68–112 (upper half): Mental Ability and Reasoning, General Awareness, Numerical Aptitude and DI, English, Hindi (overall Q1–Q100), not maths.
+- Discipline5 Q.11 onward (overall Q191–Q280) belongs to the other half of this paper (another agent); Teaching Methodology after Discipline9 is not maths.
+
+#### How it was read
+- Each page was rendered with PyMuPDF at zoom 1.8 (`render.py`). Many question images are wider than their cell and are cut off on the page, so every clipped image was extracted at full size and placed under the page render (`montage.py`). PyMuPDF confuses equal-sized small images, so small option images were always read from the page render, never from the extracted copies; no clipped image shared its size with another on its page (checked).
+- Official key: in the response sheet the correct option carries a green tick image (16×16) and the others a red cross (31×21); the option label is also green. `keys.py` read both for every question: all 90 have exactly four icons, one tick, and the green label agrees with the tick. Recorded as `key`.
+- Graph options (n = 68) were zoomed and described in words.
+
+#### Flags (10)
+- n=4: misprint fixed. The paper prints "{x : x is an integer and x ≤ 3}", an infinite set that matches no option; changed to |x| < 3 (same set as x² < 9), the reading that gives the key {−2, −1, 0, 1, 2}. Option (c) printed "{01,2}" read as {0, 1, 2}.
+- n=9: spelling "roaster form" corrected to "roster form".
+- n=28: options (b)–(d) print a full stop where (a) has a multiplication dot. As decimals they are wrong; if the stop in (b) meant multiplication, 15·5^(1/3) = 3·25^(2/3) would also be correct. Answer (a) = key.
+- n=30: stray word "Answer" after "kinematics" in option (b) removed.
+- n=33: spelling "bionomial" corrected.
+- n=37: options (c), (d) printed "553", "552" with exponents lost; read as 55³ and 55². Sum of cubes = 55² = 3025, option (d) = key.
+- n=58: options printed "y=x4", "y=x2" with exponents lost; read as x⁴, x².
+- n=64: ambiguous. Key 4/5 assumes the second ellipse has the same orientation as the first (major axis along y); with the major axis along x the answer would be 5/4, option (d).
+- n=68: options are graphs; described in words (cos x, cos 2x, sin 2x, sin x shapes).
+- n=79: spelling "convertion" corrected to "conversion".
+- Minor, not flagged: n=65 key 61.15 cm uses π ≈ 3.14 (192/π ≈ 61.12); n=79 39.4° is rounded.
+
+#### Answer vs key
+- My worked answer agrees with the official key in all 90 questions.
+
+#### Verification
+- `verify.py` recomputes 82 of the 90 answers a second way (brute force over permutations, sets and relations, sympy solve/expand/limit/diff/integrate/summation, numeric checks on sample triangles, divisor functions, distance and line formulas): 0 mismatches. A few of these (n = 31, 54, 58, 85) are only light arithmetic restatements.
+- Not scripted (definitions/concepts): n = 7, 13, 14, 30, 44, 74, 78, 89.
+- `build.py` loads every line back with `json.loads`, checks n = 1..90 in order, 4 options and 4 notes each, topic ids against topics.txt, balanced `$` and braces, no `$$` in questions, no rupee sign or `\,'`.
+
+#### Count
+- 90 questions written to `questions.jsonl` (n = 1–90).
+
+#### Files
+- `questions.jsonl`, `log.md`; data `qa.py` (1–22), `qb.py` (23–45), `qc.py` (46–90); `keys.py` → `keys.jsonl`; `build.py`, `verify.py`; helpers `render.py`, `montage.py`, `crop.py`, `extract.py`, `stack.py`, `spans.py`, `sections.py`, `imgs.py`, `imgs2.py`, `typed.py`, `probe.py`; images in `img/`, `mont/`, `qimg/`, `crop/`.
+
+### DSSSB PGT Mathematics, CBT 13 April 2026, shift 1 — part b
+
+- Source: `papers/dsssb-pgt-2026-0413-s1/paper.pdf`, official response sheet (English), pages 144–178.
+  The coaching site's typed copy (pages 2–67) was only glanced at once to confirm numbering (its Q.226–229 match n = 126–129); nothing was transcribed from it.
+- Range: overall Q191–Q280 = Discipline5 Q.11 … Discipline9 Q.20, written as n = overall − 100 = **91–180** (90 questions, all maths, level PGT).
+- Skipped: nothing inside the range. Teaching Methodology (overall Q281–300, from page 178) is outside the brief and not transcribed.
+- Key: the option whose text is green (colour 0x40c64b, read with PyMuPDF `get_text('dict')`) for 85 questions; for n = 129, 132, 175, 178, 179 the "Q." label is laid out vertically so the text-layer match missed them, and their green tick was read from the page images. Every key was also checked visually on the rendered pages.
+- Clipped question images (horizontal scroll boxes) were read from the full embedded images, composited on white (`clip2.py`), so no question text was lost.
+
+#### Answers vs key
+- My answer equals the board's key for all 90 questions.
+
+#### Verification
+- `verify.py`: structure (90 rows, n = 91…180 in order, 4 options/notes, topic ids exist in topics.txt, even `$` counts, no rupee sign or `\,'`) passes; every line loads as JSON.
+- 70 answers recomputed by script (sympy / numeric / brute force: integrals, residues, determinants, rank, minimal polynomial, inequalities, DEs, loop simulation, finite topology/basis tests, metric-axiom tests, etc.). Two more entries in the script (n = 102, 164) only restate the answer and are not counted.
+- The remaining 20 are definitional/theory questions checked by reasoning: 101, 102, 104, 105, 116, 123, 125, 131, 133, 152, 154, 157, 163, 164, 166, 173, 174, 175, 176, 179.
+
+#### Flags
+- n=92: point printed "(1, 3 -4)"; comma restored.
+- n=99: printed "3i-4j"; written as the vector $3\hat i-4\hat j$.
+- n=103: the SD of the table is ≈ 1.13 (1.1 to one decimal), not among the options; the keyed 1.3 is the variance 1.28 (sample variance 1.32). Kept (b) = key as the intended answer.
+- n=127: printed "∫₁² ∫₀^{y/2} y dy dx"; the inner limit y/2 forces an inner x-integration, so read as dx dy (gives the keyed 7/6).
+- n=129: numerator printed "z2"; read as z² (matches the key; 2z/|z| would make option (c) right instead).
+- n=139: option (b) (x = r sin θ, y = r cos θ) also has |Jacobian| = r, so it is valid if θ is measured from the y-axis; (d) is the standard form and the key.
+- n=149: options printed A2, A-2, A-1 (superscripts lost); read as powers.
+- n=151: options printed "x2 (x + 3)2 (x - 3)2" etc.; read as powers.
+- n=160: misprints fixed ("con nx", "expension", "cofficients"; "is" added before the series).
+- n=165: option (d) "is does not contain" → "does not contain"; (c) is strictly true only when A has at least two elements.
+- n=170: same question as n=126 (repeated in the paper, options reordered).
+
+#### Count
+90 questions written to `questions.jsonl` (n = 91–180).
+
+### Independent check
+
+#### DSSSB PGT 2026, questions 101–190: check of 23 November 2026
+
+**Paper:** DSSSB PGT Mathematics, CBT of 13 April 2026, shift 1 (`papers/dsssb-pgt-2026-0413-s1/paper.pdf`, untrusted; nothing in it was run). Only the board's response sheet was used (pages 112–144: Discipline1 Q.1 to Discipline5 Q.10), never the coaching site's typed copy.
+**Checked file:** `pyq/dsssb-pgt-2026-a/questions.jsonl` (copied to `work/orig.jsonl`); corrected file `questions.checked.jsonl` in this folder.
+
+##### Count
+- 90 questions checked, n = 1–90 (overall Q101–Q190), all level PGT.
+- 88 stay in the quiz; **2 dropped** (`"drop": true`): n = 4 and n = 64.
+
+##### How it was checked
+- Every question was cropped from the page at zoom 2.5 and read; 46 question/option images that the page clips in scroll boxes were extracted at full size (composited with their masks) and read in full; clipped text was taken from the PDF text layer.
+- Official key: the option label printed in green (colour 0x40c64b; the others are red). Exactly one green option in each of the 90 questions; it agrees with the transcriber's `key` in all 90.
+- I solved every question from the page before opening the transcriber's answers, then compared.
+
+##### Changes made
+| n | What was wrong | What it is now |
+|---|---|---|
+| 4 | The transcriber changed the printed condition "x ≤ 3" to "\|x\| < 3" to make the question answerable. As printed the set is infinite and no option is right; the key (a) needs a condition such as −3 < x < 3, while a lost square (x² ≤ 3, a lost exponent like those elsewhere in this paper) would give (b). The intended condition is a guess. | **Dropped.** `q` restored to the printed "x ≤ 3"; solution, notes, fact and flag rewritten to say why; `answer` 0 (= key). Option (c) "{01,2}" still read as {0, 1, 2}. |
+| 64 | Kept with answer (c) although it has two defensible answers: same orientation as the first ellipse gives a/b = 4/5 (c, key); major axis along x (a > b, the usual convention) gives 5/4 (d). Both are options and the question does not fix the orientation. | **Dropped.** Solution works both cases; notes, fact and flag rewritten; `answer` 2 (= key). |
+| 5 | Note (a) compared −1/g(0) with g⁻¹(1) instead of g⁻¹(0). | "Check a = 0: g⁻¹(0) = 1 (since g(1) = 0), but −1/g(0) = −1." |
+| 28 | The flag explains that (b), printed 15.5^(1/3), would equal (a) if the full stop meant multiplication, but the solution did not say so. | One sentence added to the solution: 3·25^(2/3) = 15·5^(1/3), and how (b) is printed. Answer (a) unchanged. |
+| 37 | Solution did not mention that options (c), (d) are printed "553", "552". | Sentence added to the solution (exponents lost, as in other options of this paper). Answer (d) unchanged. |
+| 62 | The example "θ = 120°: (√3/2, −1/2)" came right after "the point (cos θ, sin θ)", so it read as the point's coordinates (which are (−1/2, √3/2)). | Now "(sin θ, cos θ) = (√3/2, −1/2), signs (+, −)". |
+| 78 | Note (b) "(that is sin⁻¹ reversed)" was confusing (sin⁻¹ has range [−π/2, π/2], not R). | "Domain and range swapped." |
+
+No other transcription errors found: questions and all four options of the 88 kept questions match the page (word for word apart from the transcriber's flagged spelling fixes in n = 9, 33, 79, the stray word "Answer" removed in n = 30, and n = 12 (c) where the page has a colon before "x ∈ N", written as a comma). Topics: all checked against `topics.txt`; none changed.
+
+##### Transcriber's 10 flags (read after my own answers)
+- Agree: n = 9, 30, 33, 79 (spelling/stray word), 58 (options "y=x4", "y=x2" read as x⁴, x²), 37 (options "553", "552" read as 55³, 55²: a fair reading of lost exponents, same pattern as n = 58; the sum is 55² = 3025 = key), 68 (graphs described in words; I checked the four full-size graphs: cos x, cos 2x, sin 2x, sin x, so the descriptions are right), 28 (kept, see below).
+- Disagree: n = 4 (the fix invents part of the question; dropped) and n = 64 (two defensible answers; dropped).
+
+##### My answers vs the official key
+- Agree in all 88 kept questions (n = 37 under the lost-exponent reading).
+- n = 4: as printed no option is correct; the key (a) fits only a guessed condition. Dropped.
+- n = 64: the key (c) is one of two defensible answers; (d) is right under the usual a > b convention. Dropped.
+
+##### Verification by script
+- `work/verify_ck.py` (sympy 1.14 + brute force) recomputes **79** answers independently from my reading of the page (permutation and set enumeration, sympy solve/expand/limit/summation/diff/integrate, divisor functions, numeric triangles, vector cross/dot products, line and distance checks): **0 mismatches**. It also computes both readings of n = 64 (4/5 and 5/4) and confirms that 15·5^(1/3) = 3·25^(2/3) in n = 28.
+- Not scripted: n = 7, 13, 14, 30, 44, 51, 74, 78, 89 (definitions and concepts), and n = 4 (no correct option as printed).
+- `work/fmt.py`: 90 valid JSON lines, n = 1–90 in order, 4 options and 4 notes each, answer 0–3, topic ids valid, even `$` count, balanced braces, no `$$` in questions or options, `$$` only on its own line in solutions, no `align`, no rupee sign, no `\,'`. Only lines 4, 5, 28, 37, 62, 64, 78 differ from the transcriber's file.
+
+##### Left doubtful (kept)
+- n = 28: options (b)–(d) print a full stop where (a) has a centred dot. Read literally (decimals) only (a) is right; if the stops meant multiplication, (b) 15·5^(1/3) would equal (a). Kept, because the quiz shows $15.5^{1/3}$ as a decimal; flag and solution say it.
+- n = 37: depends on reading "553", "552" as 55³, 55² (no option is right if read literally).
+- n = 86: (c) 2(1 + x²) is also, strictly, an integrating factor (any constant multiple is); (a) is the standard IF e^(∫P dx) and the key. Note (c) says so.
+- n = 65 and n = 79: keyed values 61.15 cm and 39.4° are roundings (192/π ≈ 61.12 with π = 3.14159; 61.15 with π = 3.14).
+- n = 44: "Third Principle of Induction" is book-specific naming; (a), the strong-induction hypothesis, is the only defensible option.
+
+#### DSSSB PGT 2026, questions 191–280: check of 23 November 2026
+
+Paper: DSSSB PGT Mathematics, CBT of 13 April 2026, shift 1 (`papers/dsssb-pgt-2026-0413-s1/paper.pdf`), board's English response sheet, pages 144–178 (Discipline5 Q.11 to Discipline9 Q.20). Overall Q191–280 = n 91–180.
+Checked file: `pyq/dsssb-pgt-2026-b/questions.jsonl` (copied here as `questions.orig.jsonl`). Output: `questions.checked.jsonl`.
+
+**Questions: 90** (n = 91–180, all maths, level PGT). **89 kept, 1 dropped (n = 103).**
+
+##### How it was checked
+- Pages 143–178 rendered by me with PyMuPDF. Because some question images sit in scroll boxes, I also rebuilt every page from its text spans and the *full* embedded images (placed by their transform matrix, not the clipped bbox) and read those renders (`rebuild.py`, `img/r*.png`). On the original pages 36 question-stem images are clipped by the scroll box at x ≈ 362 pt (`clipped.py`). Most clipped are n = 95 and 96, whose full images run to x = 572 and 752. Every stem was read from the full image; the full images of n = 95, 96 and 178 were also viewed one by one.
+- Official key: the option in green (colour 0x40c64b) with the green tick image, read from the text layer for every question and confirmed on the renders (including the five questions whose "Q." label is printed vertically: n = 129, 132, 175, 178, 179).
+- Every question and all four options were compared word for word with the transcription; I solved each one before looking at the transcriber's answer.
+
+##### Transcription
+No transcription errors found: every question, option, number, sign, limit, matrix entry and the option order match the paper. The transcriber's misprint fixes (n = 92 missing comma, 99, 127, 129, 149, 151, 160, 165) are fair and flagged.
+
+##### Answers
+- My answers agree with the official key on 89 questions; the transcriber's `answer` and `key` fields equal the board's key everywhere (no answer changes).
+- **Disagreement with the key: n = 103.** Marks 0–4 with frequencies 1, 4, 5, 10, 8: N = 28, mean 2.714, variance 1.276, SD 1.129 (sample variance 1.323, sample SD 1.150). The SD asked for (1.1 to one decimal) is not an option; the key (b) 1.3 is the variance. Reading "standard deviation" as "variance" would rewrite the question, not fix a misprint, so by the drop rule the question has no correct option: **`"drop": true`**, `answer` left at the key (b), reason in `flag` and solution. The other options (3.3, 5.3, 7.3) exceed half the range, so they are impossible SDs.
+
+##### Changes made
+| n | what was wrong | what it is now |
+|---|---|---|
+| 103 | kept (b) as "intended answer" although no option is the SD | `drop: true`; solution, flag and notes say no option is right and that the key 1.3 is the variance |
+| 127 | solution did not mention that the paper prints `y dy dx` | solution opens with the printed form and why it is read as `dx dy` (inner limit y/2) |
+| 129 | solution did not mention the printed "z2" | solution says the numerator is printed "z2", read as z²; read literally as 2z/abs(z) option (c) would be right; flag says the same |
+| 139 | flag said (b) "is also valid", which reads like a second answer; no reason in the solution | solution explains that with r, θ the usual polar coordinates (b) evaluates f at the mirror point in y = x, so only (d) is right; notes for (b), (c) and the flag reworded |
+| 144 | note for (a) said "uses the powers themselves" (that is (b)); note for (d) empty | (a): adds 1 to only one power; (d): adds 2 to the second power, and would need Γ(5) |
+| 155 | solution silent on the stated domain [−1/2, 1/2] while the options ask about the period | one sentence: the formula defines f on all of ℝ, the period refers to that |
+| 165 | the one-element case was only in the flag | solution now says that for a one-element A, S is the trivial group (the question tacitly excludes it) |
+| 170 | flag said "options in a different order" | "with a different set of options" (n=126: −2πi, −πi, πi, 2πi; n=170: 2πi, −πi, 4πi, πi) |
+
+##### Script checks
+- `mycheck.py`: **66 answers checked by script** (sympy, numerics, brute force): 91–100, 106–109, 111–115, 117–124, 126–130, 132, 134–151, 153, 155, 156, 159–162, 167–172, 177, 178. All agree with the key. n = 103 was also computed by script (to show no option is the SD); n = 164 only restated.
+- The remaining 22 are definitions/theory, checked by reasoning: 101, 102, 104, 105, 110, 116, 125, 131, 133, 152, 154, 157, 158, 163, 165, 166, 173, 174, 175, 176, 179, 180.
+- `fmtcheck.py`: 90 lines of valid JSON, n = 91…180 in order, 4 options and 4 notes each, `answer`/`key` 0–3, topic ids exist in topics.txt, even `$` counts, no `$$` in questions or options, no `\displaystyle`, align, rupee sign or `\,'`. All LaTeX commands used are KaTeX-supported.
+
+##### Left doubtful (kept, with flags)
+- n = 127, 129: the readings ("dx dy"; "z2" = z²) are the only ones that give an offered option, and both agree with the key. The alternatives (7/24; 2z/|z| → option (c)) are stated in the flags.
+- n = 139: (b) is a correct change of variables only if θ is measured from the y-axis. With the usual polar meaning of r, θ only (d) is right. Kept, not dropped.
+- n = 165: (c) needs A to have at least two elements (for a one-element A, (b) would hold). This is the standard textbook intent. Kept.
+- n = 155: the period is about the formula's extension beyond the stated domain [−1/2, 1/2]. 2 is also a period; "period" is taken as the least period, 1.
+- n = 170 repeats the integral of n = 126 (different options). Both kept; the caller may want to show only one.
+- n = 176 (stochastic calculus): the keyed wording "To provide the complex financial instruments and risk management" is clumsy but clearly the only sensible option.
+- n = 122: options (a) y′ = 2yx and (b) y′ = 2xy are identical. Both are wrong, so this does no harm.
+- n = 161 is a loop-tracing (programming) question set in the maths section; kept as in the paper.
+
+## DSSSB PGT Mathematics 2025 (21 July, shift 1)
+
+- Source: DSSSB PGT Mathematics (post code 805/23), computer-based test of 21 July 2025, shift 1: the mathematics section (questions 101 to 280) of the board's response sheet as re-shared after the exam, with the board's draft-stage answer key.
+- In the app: `data/mq/dsssb-pgt-2025.json`, 172 questions; full mock 45 seconds a question, negative marking 0.25.
+
+### Transcription and first solution
+
+### DSSSB PGT Mathematics (post code 805/23), CBT of 21 July 2025, shift 1: part A (n = 1–90)
+
+#### Source
+- File: `papers/dsssb-pgt-2025-0721-s1/paper.pdf` (158 pages, a coaching-site compilation; untrusted, nothing in it was run).
+- Pages 2–65 are the site's own typed copy and answer table (third-party). Used only to cross-check readings (e.g. n = 10, 12, 48, 56); never the source.
+- Pages 66–157 are the board's official response sheet (English medium). Everything here is transcribed from it.
+- The response sheet restarts at Q.1 in each section; maths is "Discipline1" to "Discipline9". This part covers Discipline1 Q.1 to Discipline5 Q.10, i.e. overall Q101–Q190, recorded as `n` = overall − 100 = 1–90.
+- Level "PGT" for all.
+
+#### Page map (response sheet)
+| PDF pages | Section | n |
+|---|---|---|
+| 99–103 | Discipline1 | 1–20 |
+| 104–109 (top) | Discipline2 | 21–40 |
+| 109–114 (top) | Discipline3 | 41–60 |
+| 114 (bottom)–119 | Discipline4 | 61–80 |
+| 120–123 (top) | Discipline5 Q.1–10 | 81–90 |
+
+#### Skipped
+- Response-sheet pages 66–98: Mental Ability and Reasoning, General Awareness, Numerical Aptitude and DI, English, Hindi (overall Q1–Q100): not maths.
+- Discipline5 Q.11 onward (overall Q191–Q280) belongs to the other half of this paper (another agent). Teaching Methodology (from page 152) is not maths.
+
+#### How it was read
+- Pages rendered with PyMuPDF at zoom 1.8 (`render.py` → `img/`), zoomed crops where needed (`crop.py` → `crop/`).
+- 32 question/option images on pages 99–123 reach past the scroll box (most show a scroll bar and are cut off); all were extracted at full size (`extract.py` → `mont/clip_*.png`) and read from there. PyMuPDF reports one xref for equal-sized small images on a page (`imgs.py` lists them), so small option images were always read from the page render, never from extracted copies; none of the clipped images shares its size with another image on its page.
+- Official key: the correct option carries a green tick image (16×16) and a green label (colour 40c64b); the others a red cross (31×21) and red label. `keys.py` → `keys.jsonl` reads both for every question: all 90 have exactly four icons, one tick, and the green label agrees with the tick (Discipline3 Q.12, n = 52, has its "Q.12" label stacked in a narrow cell; handled in the parser). Confirmed on the page images. As a consistency check only, all 90 also agree with the compilation's own answer table.
+
+#### Flags (11)
+- n=10: option (c) printed "-625120"; read as (625, 120), the reversed pair (wrong either way).
+- n=11: misprint fixed, set B printed {1.2.3}; read as {1, 2, 3}.
+- n=20: spelling "infinte" corrected to "infinite".
+- n=22: option (a) printed "If and b are distinct"; missing "a" restored.
+- n=35: GM² = AM·HM holds for two numbers; "a set of numbers" read as two numbers (intended reading; key 2).
+- n=37: typo "FInd" corrected.
+- n=48: stray "1" after a^(n−2) in options (a) and (d) dropped; the odd phrase "second principle of number theory" kept as printed.
+- n=56: duplicated phrase ", then which of the following is correct" removed.
+- n=57: some modern statements of Peano's axioms start at 0 (option d); the key follows the version starting at 1.
+- n=60: paper prints "r < 1"; the needed (intended) condition |r| < 1 written.
+- n=72: loose wording; cosec x on (0, π) is a U-shaped arc with vertical asymptotes, not a true parabola. Key "Parabolic form" accepted in that sense.
+- Minor, not flagged: n=6 trailing "are" dropped from an ungrammatical sentence; n=12, 70, 84 vectors written with hats; n=81 frequency table written inline; n=69 the relation needs cosec A > 0; n=85 k is in fact in the open interval (0, 4); n=86 direction cosines are fixed only up to an overall sign.
+
+#### Answer vs key
+- My worked answer agrees with the official key in all 90 questions.
+
+#### Verification
+- `verify.py` recomputes 84 of the 90 answers a second way (brute force over permutations, relations and residues; sympy expand/solve/summation/limit/totient/cross products; numeric checks on sample triangles, functions and APs): 0 mismatches. A few are only light restatements (n = 17, 45, 65, 79, 80, 84).
+- Not scripted (definitions/concepts): n = 3, 20, 46, 57, 72, 82.
+- `build.py` loads every line back with `json.loads`, checks n = 1..90 in order, 4 options and 4 notes each, distinct options, topic ids against topics.txt, balanced `$`, braces and \left/\right, no `$$` outside solutions, no rupee sign or `\,'`.
+
+#### Count
+- 90 questions written to `questions.jsonl` (n = 1–90).
+
+#### Files
+- `questions.jsonl`, `log.md`; data `qa.py` (1–30), `qb.py` (31–60), `qc.py` (61–90); `keys.py` → `keys.jsonl`; `build.py`, `verify.py`; helpers `sections.py`, `spans.py`, `render.py`, `crop.py`, `extract.py`, `imgs.py`, `typed.py` (→ `typed.txt`); images in `img/`, `mont/`, `crop/`.
+
+### DSSSB PGT Mathematics (post code 805/23), CBT 21 July 2025, shift 1 — part b
+
+- Source: `papers/dsssb-pgt-2025-0721-s1/paper.pdf`, the board's official response sheet (English), pages 123–152.
+  The coaching site's typed copy (pages 1–65) was used only to confirm numbering (its Q.205, Q.230, Q.259, Q.270 match n = 105, 130, 159, 170). Nothing was transcribed from it.
+- Range: overall Q191–Q280 = Discipline5 Q.11 … Discipline9 Q.20, written as n = overall − 100 = **91–180**. That is 90 questions, all maths, level PGT.
+- Skipped: nothing inside the range. Teaching Methodology (overall Q281–300, from page 152) is outside the brief and was not transcribed. Discipline5 Q.10 (n = 90) and everything before it belong to part a.
+- Question and option images: most questions are images. They were read from the full images in the PDF's text dictionary: each is a black base image plus a soft mask, composited onto white (`extract.py`). This also recovers the parts cut off by the scroll boxes, e.g. n = 96, 102, 162. Montages are in `mont/`.
+- Key: the option whose label text is green (colour 0x40c64b in `get_text('dict')`). For all 90 questions it was cross-checked against the page layout: the green-tick icon sits on the green option and red-cross icons on the other three (`tickcheck.py`, 0 mismatches). It was also checked by eye on the rendered pages, including the three disputed questions 105, 130 and 162.
+
+#### Answers that differ from the key (3)
+- **n = 105** (variance of wages after a bonus of one month's salary): key (d) 6.7. A bonus of one month's salary doubles each wage, so the variance is ×4 = 26.8, option (a).
+- **n = 130** (∫₀³∫₀^{2z}∫₀^{yz²} y dx dy dz): key (d) 216. The integral as printed is 324, option (c). Checked with sympy and against the zoomed image.
+- **n = 162** (cofinite topology on ℝ, S₁ = {0,1}, S₂ = {0}): key (d) "both connected". S₁ inherits the discrete topology, so it is disconnected. Option (a) is correct.
+
+#### Other flags (answer = key)
+- n = 96: the data are inconsistent (sin²(π/3)+sin²(π/6)+sin²(π/4) = 3/2 ≠ 1). Option (c) follows the standard rule.
+- n = 102: option (a) has an inner ±. It is still the only possible choice.
+- n = 103: options (a) and (d) are the same line (direction ratios 2:4:2 = 1:2:1). The key is (a).
+- n = 106: option (c) (−3,−4,4) is also a valid set of direction ratios. The key is (d) = B − A.
+- n = 125: no correct option. The inequality gives x ≥ 1/2. The key (b) x ≥ 4/5 comes from a slip; the answer is set to (b).
+- n = 129: no option is exactly right. x³ = Σ(−1)ⁿ(12/n³ − 2π²/n) sin nx. Option (d), the key, has the right form only. The answer is set to (d).
+- n = 170: depends on the convention. With normal = T₄ (includes T₁) the answer is (c), the key. If "normal" omits T₁, the space is vacuously normal, which makes it (a).
+- n = 139, 146: the modulus bars of |z| = 4 and |z| = 5 were missing in the image and have been restored.
+- n = 159: option (c) is printed as "45724" in the official sheet (a spreadsheet date code). Kept as printed.
+- Misprints corrected: n = 91 "deccreasing"; n = 148 "fouries"; n = 162 "conneceted"; n = 165 "operationis"; n = 170 "housdorff"; n = 176 "Runga".
+
+#### Checks
+- `build.py`: 90 rows, n = 91…180 in order with none repeated, 4 options and 4 notes each, topic ids all in topics.txt, even `$` counts, no rupee sign, no `\,'`, no `\displaystyle`, no `$$` in any question. The file reloads line by line as JSON.
+- `fmtcheck.py`: there are 1098 maths segments. None contains a non-ASCII character, and no backslash command appears outside maths.
+- `verify.py`: **84 answers were recomputed by script** (sympy, numerical contour integrals, brute force) and all 84 agree with my answer. These include the three that differ from the key (105, 130, 162). For n = 103 the script finds two matching options, which is the flag above.
+  The script also confirms the no-correct-option flags: for n = 125 the solution set is [1/2, ∞), and for n = 129 the true bₙ (7.74, −8.37, 6.14) differ from option (d) (18.44, −13.93, 9.87). For n = 170 it shows the space is not regular, not T₁, and vacuously normal without T₁.
+  Not scripted: n = 115 (a definition), 163, 169 and 171 (settled by the counterexamples in the solutions), and 125 and 129 (no correct option).
+- Count: 90 questions written to `questions.jsonl`.
+
+### Independent check
+
+#### DSSSB PGT 2025, questions 101–190: check of 23 November 2026
+
+Paper: DSSSB PGT Mathematics (post code 805/23), CBT of 21 July 2025, shift 1. Source: the board's response sheet in `papers/dsssb-pgt-2025-0721-s1/paper.pdf`, pages 99–123 (Discipline1 Q.1 to Discipline5 Q.10). `n` = overall question − 100. The coaching site's typed copy (front pages) was not used.
+
+Input checked: `pyq/dsssb-pgt-2025-a/questions.jsonl` (copied to `work/orig.jsonl`; the transcriber's folder was not touched).
+Output: `questions.checked.jsonl` (90 lines, n = 1–90 in order, none twice; **88 kept, 2 dropped**: n = 57 and n = 72, each with `"drop": true` and a flag starting "Dropped").
+
+##### How the check was done
+- Rendered pages 99–123 with PyMuPDF (zoom 1.6; crops at zoom 3–8 for exponents and signs) and read every question and all four options against the transcription.
+- 22 question images on these pages are cut off by scroll boxes (n = 8, 11, 13, 23, 24, 28, 31, 32, 37, 38, 61, 62, 65, 70, 75, 77, 78, 83, 85, 87, 88, 89). I extracted each embedded image at full size (composited on white, since they carry an alpha mask) and read the full text from it.
+- Official key: the green tick is one 16×16 image per question. A script located each tick and read the option label next to it; the result matches my reading of the page images for all 90 questions and the transcriber's `key` for all 90.
+- I solved all 90 questions before opening the transcriber's answers. My answers agree with the transcriber's and with the official key in all 90 questions.
+- Script checks (`work/verify.py`, sympy, brute force and arithmetic): **76 of the 90 answers** recomputed, 0 mismatches. A few of these are light arithmetic restatements (n = 62, 65, 68, 78, 84). Not scripted (definitions or concepts): n = 3, 11, 17, 20, 33, 38, 45, 46, 57, 60, 72, 74, 80, 82.
+
+##### Transcription
+- I compared every stem and option with the page and found no transcription error: digits, signs, exponents, matrix and vector entries, and option order all match.
+- I accepted the transcriber's small edits: n = 6 (the trailing "are" dropped), 20 ("infinte"), 22 (missing "a" in option (a)), 37 ("FInd"), 47 ("add upto ... ." made a question), 56 (duplicated phrase), 11 (B = {1.2.3} read as {1, 2, 3}), 48 (stray "1" after $a^{n-2}$ in options (a) and (d)), 10 (option (c) "-625120" read as (625, 120)), 60 ($r<1$ written $|r|<1$), and vectors with hats in n = 70 and 84.
+- n = 52, option (b): the image shows $x^p$ followed by a small raised minus and a full-size 1, so it could be $x^p-1$ or $x^{p-1}$. I kept the transcriber's $x^p - 1$. Both readings are false (and $x^{p-1}$ is already option (d)), so the answer is unaffected.
+
+##### Changes made (7 lines)
+- **n = 57 (Q157): dropped. Two defensible answers.** "According to Peano's axioms, the first natural number is". Peano's original 1889 form (and the notes page tp-01-09) starts at 1, which is option (b) and the key. His later form, used by most modern texts, starts at 0, which is option (d). This same paper, in Q146 (n = 46), treats "Zero is a natural number" and "Zero is not the successor of any natural number" as Peano axioms, so its own convention points to (d). I rewrote the solution, notes, fact and flag. `answer` stays at (b), the key.
+- **n = 72 (Q172): dropped. No correct option.** "The graph of cosec(x) from x = 0 to x = π is". The graph is a U-shaped arc with vertical asymptotes at 0 and π. It is not a parabola, which has no asymptotes, nor any conic, nor a line. The key "Parabolic form" only describes the U shape loosely, and "Hyperbolic form" would be just as loose, since near 0 the curve behaves like $y = 1/x$. I rewrote the solution, notes, fact and flag. `answer` stays at (b), the key.
+- n = 35: kept (key (d), 2). The solution now proves $\text{AM}\cdot\text{HM} = \text{GM}^2$ for two numbers. It also shows that two such numbers exist ($18 \pm 12\sqrt2$) and says that for three or more numbers AM and GM do not fix HM, so "a set of numbers" is read as two numbers. I rewrote the flag (it had non-LaTeX symbols) and added a note for option (b).
+- n = 46: kept (key (b)). The solution now says that the options use the form of Peano's axioms that starts at 0 (Peano's original list starts at 1), and that (b) is not an axiom in either form. Notes (a) and (d) now name that form.
+- n = 60: the solution now says why the printed "r < 1" must be read as $|r| < 1$ (for $r \le -1$ the sum diverges). I put the flag's condition in LaTeX.
+- n = 69: the solution and notes now say what the other options give: (a) and (d) hold only where $\cot A = 0$, and (b) never holds.
+- n = 81: the solution now says that this is the SD with divisor N; the divisor N − 1 gives 11.46, which is not an option.
+
+##### Answer vs official key
+- Kept questions: answer = key in all 88.
+- Dropped questions: n = 57, where the key (b) is one of two defensible answers, and n = 72, where the key (b) is not correct as mathematics.
+
+##### The transcriber's 11 flags
+- n = 10, 11, 20, 22, 37, 48, 56: agreed; the flags are unchanged.
+- n = 35: kept with the two-number reading (above).
+- n = 57: changed to a drop (above).
+- n = 60: kept with the $|r|<1$ reading (above).
+- n = 72: changed to a drop (above).
+
+##### Topics, solutions, format
+- Topic ids: all 90 exist in topics.txt, and each is a sensible page; none changed.
+- Solutions, facts and notes: I checked every line and found no wrong step. The 7 lines above are the only content changes.
+- Format (`work/apply.py`): every line is valid JSON with four options and four notes, `answer` and `key` 0–3, level PGT, and distinct options. Every string has an even number of `$`, balanced braces, no `$$` in stems or options, no align, no `\displaystyle`, no rupee sign, no `\,'`, and no non-ASCII character inside math. All LaTeX commands used are supported by KaTeX (`vmatrix` is the only environment). The file was reloaded after writing.
+
+##### Left doubtful
+- n = 35 is kept on the two-number reading. It is the next candidate for dropping if you want no exposure to the wording "a set of numbers".
+- n = 46 is kept, but it relies on Peano's form starting at 0. In the form starting at 1, options (a) and (d) would also be "not axioms", although (b) is the only option that is not an axiom in both forms.
+- n = 85: $k$ actually lies in the open interval $(0,4)$; the key [0, 4] is the only option that contains every value. n = 86: the key is one of the two sign choices for the direction cosines. Both are said in the solutions.
+
+#### DSSSB PGT 2025, questions 191–280: check of 23 November 2026
+
+Paper: DSSSB PGT Mathematics (post code 805/23), CBT of 21 July 2025, shift 1. Source: the board's response sheet in `papers/dsssb-pgt-2025-0721-s1/paper.pdf`, pages 123–152 (Discipline5 Q.11 to Discipline9 Q.20). `n` = overall question − 100, so n = 91–180. The coaching site's typed copy (front pages) was not used.
+
+Input checked: `pyq/dsssb-pgt-2025-b/questions.jsonl` (copied to `questions.orig.jsonl` here; the transcriber's folder was not touched).
+Output: `questions.checked.jsonl` (90 lines, n = 91–180 in order, none twice; **84 kept, 6 dropped**: n = 96, 103, 106, 125, 129, 170, each with `"drop": true` and a flag starting "Dropped").
+
+##### How the check was done
+- `work/mont2.py` walks pages 120–152, splits them into questions by the "Q.k" labels and the section headers, and composites every question and option image (black base image plus soft mask) onto white at full resolution. This also recovers the parts hidden by the scroll boxes. One montage per question is in `work/img/q<n>.png`. I read all 90 montages and compared each stem and all four options with the transcription. For the text questions (tables in n = 94, 111, 114, 141, and others) I also checked the raw text spans and their positions.
+- Official key: in every question exactly one option label is green (0x40c64b), and the 16×16 tick icon sits on the same label (`work/mont2.py`, 0 mismatches). It agrees with the transcriber's `key` in all 90.
+- I solved all 90 questions from the images and wrote my answers down (`work/mine.py`) before opening the transcriber's answers and solutions. (I had seen the transcriber's log.md, with its list of flags, when I first opened the folder.) My answers agree with the transcriber's in every question that has a correct option.
+- Script checks (`work/verify.py`: sympy, numerical contour integrals, brute force, arithmetic): **81 of the 90 answers** were recomputed, with 0 mismatches. These include the three answers that differ from the key (105, 130, 162) and the two-correct-option checks for 103 and 106. The script also gives diagnostics for the drops: for n = 125 the solution set is [1/2, ∞); for n = 129 the true b_n (7.74, −8.37, 6.14) differ from option (d) (18.44, −13.93, 9.87); for n = 170 a brute-force search shows the space is not regular, is (vacuously) normal without T₁, and is not T₁. Not scripted: n = 96 (one line of arithmetic, in the solution), 115, 163, 166, 169, 171 (definitions, or settled by the counterexamples in the solutions), and 125, 129, 170 (only the diagnostics above).
+
+##### Transcription
+- I found no transcription error. Digits, signs, exponents, limits, matrix entries and the order of the options all match the page images.
+- I accepted the transcriber's small edits: misprints corrected in n = 91 ("deccreasing"), 148 ("fouries"), 162 ("conneceted"), 165 ("operationis"), 170 ("housdorff"), 176 ("Runga"); the modulus bars of |z| = 4 (n = 139) and |z| = 5 (n = 146), missing in the images, restored; "fourier" capitalised; bar-style unit vectors in n = 101 written with hats.
+- n = 159, option (c) is printed "45724". That is a spreadsheet date code (8 March 2025), so the option was probably the fraction 3/8 or 8/3. It is kept as printed. The answer (d) 4 is not affected, and I changed the note for (c) to say this.
+
+##### Changes made (12 lines)
+- **n = 96: dropped (impossible data).** Angles π/3, π/6, π/4 with the planes XY, YZ, ZX would give l² + m² + n² = 1/4 + 1/2 + 3/4 = 3/2 ≠ 1, so no such line exists. No misprint repairs it: the same angles taken with the axes also give a sum of 3/2. The solution now says so and that the question is left out. I rewrote the flag and the note for (c). `answer` stays (c), the key.
+- **n = 103: dropped (two correct options).** (a) (x−1)/2 = (y−2)/4 = (z+1)/2 and (d) (x−1)/1 = (y−2)/2 = (z+1)/1 are the same line (script: both pass through A and B). I updated the solution, flag and note (a). `answer` stays (a), the key.
+- **n = 106: dropped (two correct options).** (c) (−3, −4, 4) = A − B and (d) (3, 4, −4) = B − A are both direction ratios of AB. I rewrote the solution, flag, fact and notes (c) and (d). `answer` stays (d), the key.
+- **n = 125: dropped (no correct option).** (6x−5)/2 + 1 ≥ (2x+3)/4 − 1 gives x ≥ 1/2. x = 0.6 satisfies it, but the key (b), x ≥ 4/5, excludes it. The key comes from multiplying the −1 by 1 instead of 4. I updated the solution and flag. `answer` stays (b), the key.
+- **n = 129: dropped (no correct option).** x³ = Σ(−1)ⁿ(12/n³ − 2π²/n) sin nx. Option (d), the key, has the right form but the wrong coefficients (for n = 1 it gives π³ − 4π ≈ 18.4, not 2π² − 12 ≈ 7.7). I rewrote the solution and flag. `answer` stays (d), the key.
+- **n = 170: dropped (two defensible answers, a convention).** For X = {1,2,3}, τ = {∅, {1}, {1,2}, X}, the space is not regular under any definition. It is not Hausdorff and not T₁. Any two non-empty closed sets meet at 3, so it is vacuously normal if "normal" does not require T₁. That makes it (a) "normal but not regular" in texts without T₁, and (c) "neither", the key, in texts where normal and regular spaces are T₁. Both conventions are standard. I rewrote the solution, flag and notes (a)–(c). `answer` stays (c), the key.
+- n = 105 (kept, answer (a) 26.8, key (d) 6.7): the solution now says what the key says and why it is wrong.
+- n = 130 (kept, answer (c) 324, key (d) 216): the solution now says what the key says and why it is wrong.
+- n = 162 (kept, answer (a), key (d)): the solution now says what the key says and why it is wrong.
+- n = 117: the note for option (d) was wrong. It said (2.6, 3.6, 4.6) came from the ratio 3:2, but 3:2 gives (2.8, 3.8, 4.8). It now says the option moves 1.6 along each axis, where 2:3 moves 1.2.
+- n = 159: the note for option (c) now explains the garbled "45724" (above).
+- n = 167: in the fact, `\left[ … \right]` was replaced by plain brackets, so the long formula can wrap on a phone. The formula itself is unchanged.
+
+##### Answer vs official key
+- Kept questions: answer = key in 81 of 84. The 3 that differ:
+  - **n = 105**: a bonus of one month's salary doubles each worker's wage (x → 2x), so the variance is 4 × 6.7 = 26.8, option (a). The key, 6.7, treats the bonus as the same fixed amount for everyone. That contradicts the wording, since each worker's month's salary is different. If all salaries were equal, the variance would be 0, not 6.7.
+  - **n = 130**: the printed integral ∫₀³∫₀^{2z}∫₀^{yz²} y dx dy dz = ∫₀³ (8z⁵/3) dz = 324, option (c), confirmed with sympy. The key is 216. I checked the limits and the integrand on the full image (yz², 2z, 3, y). No obvious misprint gives 216. A sympy search over 980 variants of the integrand and the three limits found only one that does: x up to y²z, y up to 3z and z up to 2, which changes three parts of the integral at once.
+  - **n = 162**: the topology is the cofinite topology on ℝ. In it, R∖{1} is open, so {0} is open in S₁ = {0,1}, and likewise {1}. So S₁ is discrete and disconnected, and S₂ = {0} is connected: option (a). The key (d) says "both connected".
+- Dropped questions: the key is one of two correct options in n = 103 and 106, and one of two defensible answers in n = 170. It is wrong in n = 125 and 129, where no option is correct. In n = 96 it matches the usual rule, but the data are impossible.
+
+##### The transcriber's flags
+- n = 91, 139, 146, 148, 165, 176: agreed; flags unchanged.
+- n = 102 (option (a) has an inner ±): kept. (a) is the only option that contains ±(½ î + (√3/2) ĵ); (b) is at −π/6 and (c), (d) are not unit vectors. If "inclined at π/3" is read as the acute angle with the axis, the inner ± is even exact.
+- n = 105, 130, 162: agreed; kept as answer ≠ key (above).
+- n = 96, 103, 106, 125, 129, 170: changed from "kept with a flag" to drops, under the drop rule.
+- n = 159: agreed; note improved.
+
+##### Topics, solutions, format
+- Topic ids: all 90 exist in topics.txt, and none was changed. The list has no page for Fourier series, residues, numerical methods or general topology. For those questions the transcriber's nearest pages are reasonable: tp-07-03, tp-10-06, tp-08-02 and tp-05-03.
+- Solutions, facts and notes: I checked every line. Apart from the 12 changes above, I found no wrong step.
+- Format (`work/fmtcheck.py`): the file has 90 lines, n = 91–180, and each line is valid JSON. Each has four distinct options and four notes, `answer` and `key` 0–3, level PGT, and a topic from the list. `drop` appears only as `true`, together with a "Dropped" flag. Every string has an even number of `$`, braces and `\left`/`\right` are balanced in every formula, and there is no `$$` in any stem or option. There is no align, `\displaystyle`, rupee sign, `\,'`, or non-ASCII character inside math, and no LaTeX command outside math. `work/widths.py` lists the widest inline formulas. The long ones are chains that KaTeX can break at = or +, so they wrap on a phone.
+
+##### Left doubtful
+- n = 104 (variance of 2, 4, 6): kept with 8/3 ≈ 2.67, the key, which uses the divisor n as in school texts. Option (a), 4, is the sample variance with divisor n − 1, and note (a) says so. It is the next candidate for dropping if you want no exposure to the n versus n − 1 question.
+- n = 120 (AM ≥ GM "always"): the stem does not say the aᵢ are non-negative. The solution assumes they are, which is the only sensible reading.
+- n = 105 is kept with the answer differing from the key (above). I consider the key's reading indefensible, but it is the board's.
+
+## DSSSB PGT Mathematics 2021 (31 July, male)
+
+- Source: DSSSB PGT Mathematics (Male, post code 28/20), computer-based test of 31 July 2021: the mathematics section (questions 101 to 280) of the board's question paper, with the board's answer key.
+- In the app: `data/mq/dsssb-pgt-2021.json`, 146 questions; full mock 45 seconds a question, negative marking 0.25.
+
+### Transcription and first solution
+
+### DSSSB PGT Mathematics (Male), post code 28/20, CBT of 31 July 2021: part A
+
+- Source: `papers/dsssb-pgt-2021-0731-m/paper.pdf` (278 pages; a coaching-site re-share of the board's response-sheet question paper, with English then Hindi for each question). It was only read with PyMuPDF; nothing in that folder was run.
+- This part covers **Q101–190**, written as `n` = Q − 100 (n = 1–90), level "PGT". **90 questions** are in `questions.jsonl`, n 1–90 in order, none repeated. Every line loads as JSON (checked by `lint.py`).
+- Skipped:
+  - Q1–100: general sections (mental ability and others), not mathematics.
+  - Q191–280: mathematics, but done by the other agent.
+  - Q281–300: teaching methodology, not mathematics.
+  - The site's ad page (page 2) was also skipped.
+
+#### Method
+- `keys.py` reads the official key from the colour of each option label: 0x008000 (green) is correct and 0xFF0000 (red) is wrong. It checks both the English and the Hindi copy, and they agree for every question. I also checked every key against the green tick on the rendered pages (`crop/m*.png`).
+- `crop.py` renders the English copy of each question at zoom 2. `text.py` dumps the text layer (the full wording of lines cut off at the page edge). `rawimg.py` pulls the embedded formula images, which I used to check the doubtful ones.
+- `build.py` writes `questions.jsonl`, `verify.py` recomputes the answers and `lint.py` checks the format.
+
+#### Board key
+- **Dropped by the board** (the page shows "discrepancy is found in question/answer … ignored for all candidates" and no green option): Q108, Q109, Q113, Q118, Q156, Q172, Q183, Q187, Q188. For these, n = 8, 9, 13, 18, 56, 72, 83, 87, 88 have `key` null.
+- **My answer differs from the board key** in 3 questions:
+  - Q110 (n 10): the key says (d) "Invertible". In fact $x/(1+x^2)$ is onto $[-\frac12, \frac12]$ but not one-one, so the answer is (a).
+  - Q132 (n 32): the key (a) "convergent but not absolutely" is right for $\int \sin x/x$. The printed integrand is $|\sin x|/x$, which diverges, so the answer is (b).
+  - Q148 (n 48): the key is (a) $+45$, but $x = \pm45$ both make a G.P., so the answer is (d).
+- Every other answer agrees with the key.
+
+#### Verification
+`verify.py` checks **84 of the 90** answers a second way, and all 84 agree with `answer`. The methods are:
+- brute force over all subsets of a 5-set;
+- a centraliser count over all of $S_6$;
+- counts of maps and surjections;
+- sympy for roots, integrals, dsolve, discriminants, ranks and determinants;
+- numerical minimisation for the inequality questions;
+- random tests for Q155, Q156, Q160, Q184 and Q187.
+
+Six questions are pure theory and were checked by hand only: Q137, Q138, Q170, Q176, Q179 and Q182. For Q182, the script does check the counter-example that is cited in its flag.
+
+#### Flags (24)
+- n 4 (Q104): printed "F:" once and $f^1$ for $f^{-1}$; normalised.
+- n 7 (Q107): "systematic" corrected to "symmetric" in the options.
+- n 8 (Q108), dropped: $fg$ depends on the convention. $f \circ g$ gives (c) and "f first" gives (d). I set answer (c). A stray "A" was removed.
+- n 9 (Q109), dropped: as printed ("both injective …"), (c) is trivially true. I used the intended wording ("two mappings with $g \circ f$ injective"), which gives answer (b).
+- n 10 (Q110): the key (d) is wrong; the answer is (a).
+- n 13 (Q113), dropped: the codomain was printed "[1, 2, 9]"; I read it as $[1, 29]$. Answer (c).
+- n 18 (Q118), dropped: $P \subset A$ makes $f^{-1}(P)$ ill-typed. Reading $P \subseteq B$, both (a) and (c) are true. I set answer (a).
+- n 32 (Q132): the key (a) is wrong for $|\sin x|/x$; the answer is (b).
+- n 40 (Q140): the option "O" is read as 0.
+- n 43 (Q143): the question lacks a condition. $3^{-x}+3^{-y} = 4/3^{x+y}$ is $\frac43$ only when $x+y=1$, and 1 when $x=y$. The answer is set to the key, (b).
+- n 48 (Q148): the key is $+45$; the answer is $\pm45$, (d).
+- n 55 (Q155): (b) $|pq-mn|<2$ is also always true. The answer is the key, (d).
+- n 56 (Q156), dropped: (a) and (b) are identical and no option is true. The true result is $|a+b|<|1+ab|$. I set answer (d), the nearest.
+- n 59 (Q159): "all are not equal" means 64 is not attained. 64 is still the intended answer.
+- n 62 (Q162): the missing "line" was added in options (b) and (d).
+- n 66 (Q166): "y'- axis / x'- axis" read as $y$-axis / $x$-axis.
+- n 72 (Q172), dropped: option (c) was printed "x(log − 1)"; read as $x(\log x - 1)$. Answer (c).
+- n 74 (Q174): (c) $y = x+1$ also solves the equation (it is $c=1$ in $y=cx+c^2$). The answer is the key, (a), the singular solution.
+- n 79 (Q179): "Envelop" corrected to "Envelope".
+- n 81 (Q181): "involuntary" corrected to "involutory".
+- n 82 (Q182): $AB=BA$ is sufficient but not necessary (a counter-example is given in the flag). The answer is the key, (d).
+- n 83 (Q183), dropped: $M^2=I$, so $M$ is both involutory and periodic. I set answer (a).
+- n 87 (Q187), dropped: rank$(BA) \le 2$, so both 4 and 3 are impossible. I set answer (a).
+- n 88 (Q188), dropped: the printed "Adj A = AAᵀ" has no solution. I read it as $A(\operatorname{adj}A) = AA^T$, which gives $5a+b = 5$, (b).
+
+#### Files
+`questions.jsonl`, `log.md`. The scripts are `keys.py`, `crop.py`, `text.py`, `rawimg.py`, `stack.py`, `probe.py`, `scan.py`, `build.py`, `verify.py` and `lint.py`. Images and text dumps are in `crop/`, `raw/`, `raw2/`, `keys.json` and `text.txt`.
+
+### DSSSB PGT Mathematics (Male, post code 28/20), CBT of 31 July 2021: part B (n = 91–180)
+
+#### Source
+- File: `papers/dsssb-pgt-2021-0731-m/paper.pdf` (278 pages; a coaching-site re-share of the board's question paper with its watermark; untrusted, nothing in it was run).
+- Each question appears twice: English copy, then Hindi copy. Questions are numbered Q1–300 straight through.
+- This part covers Q191–Q280 (pages 171–263), recorded as `n` = Q − 100 = 91–180. Level "PGT" for all.
+- Q101–Q190 belong to part A (another agent).
+
+#### Skipped
+- Q1–Q100: general sections (not maths).
+- Q101–Q190: maths, but part A's range.
+- Q281–Q300 (pages 265–278): teaching methodology, not maths.
+
+#### How it was read
+- `keys.py`: for every question copy, finds the "Question Number" header and the option labels "1."–"4." with their text colour (green 0x008000 = official key, red 0xff0000 = other options). Both copies of every question agree. Writes `keys.json` and `copies.json`.
+- `crop.py`: renders each English copy (header to the next header, across page breaks) at zoom 2 into `crop/qNNN.png`; the Hindi copies went to `croph/` and were used for the garbled questions (Q204, 208, 209, 210, 228, 247, 248, 217, 246).
+- All 90 English crops were read in full; the green tick in every image sits on the option the colour script reported.
+- `build.py` holds the transcriptions and solutions and writes `questions.jsonl`; `lint.py` checks JSON, fields, numbering, topics, `$` balance, braces, KaTeX pitfalls (no rupee sign, no thin space before a prime, no \displaystyle).
+
+#### Dropped questions (board note "discrepancy is found in question/answer. So, this question is ignored for all candidates"; no green option; `key` = null)
+11 questions: Q193, 196, 197, 199, 211, 219, 246, 250, 253, 267, 268 (n = 93, 96, 97, 99, 111, 119, 146, 150, 153, 167, 168). Each is still transcribed and answered; see flags.
+
+#### Verification
+- `verify.py` (sympy, exact arithmetic, brute force): 74 of 90 answers rechecked by script, all OK (e.g. polynomial GCD/LCM, remainders, residues and contour integrals, central-orbit laws via P = h²u²(u + u''), ODE solutions substituted back, basic-solution counts, assignment and game brute force, coin-run probability by enumeration for several (m, n), normal tail, vector algebra, line integral).
+- 16 answered by reasoning only (definitions/theory): n = 99, 118, 124, 131–135, 146–150, 164, 169, 179.
+
+#### Answer differs from the board's key (2)
+- n=117 (Q217): key (d) "No singularity"; my answer (a): e^(−1/z²) has an isolated essential singularity at z = 0.
+- n=147 (Q247): key (d) "Neither 1 nor 2 nor 3"; my answer (a) "Only 1": a one-to-one continuous map of a compact space onto a Hausdorff space is a homeomorphism, hence open. The Hindi text drops "one to one … onto", under which the key would fit.
+
+#### Flags (32)
+- n=92: "Two quadratic equations f(x) and g(x)" changed to "Two polynomials" (f is cubic).
+- n=93 (dropped): as printed only (a) is false; option (b) "a^m" fixed to α^m.
+- n=96 (dropped): correct a = 13, b = 10, in no option; (b) "10 and 13" (reverse order) marked as nearest.
+- n=97 (dropped): question is fine; (c) is the only correct option.
+- n=99 (dropped): roots are a and b, no option fits; (a) is the answer to the standard (x − a)(x − b) − 1 = 0.
+- n=104: "lightning surface area" (mistranslation) written as "surface area".
+- n=106: velocity unit printed feet/sec² in all options; corrected to feet/sec.
+- n=108: no option exact (average rate −1.463; dv/dP = −1.5 at P = 20); key −1.48 comes from cutting v(20.5) to 29.26; answer = key.
+- n=109: wording garbled in both languages; restated as "point of y² = 4x where the abscissa increases twice as fast as the ordinate" (fits options and key (4, 4)).
+- n=110: wording garbled ("expectation will increase and decrease"); restated as actual change and differential (0.2208 and 0.22, the key).
+- n=111 (dropped): no option fully correct; (d) nearest.
+- n=112: integrals printed with a stray box; written as ∮_c.
+- n=117: answer differs from key (see above).
+- n=119 (dropped): residue is −1, in no option; (a) "1" nearest.
+- n=121: "in not" corrected to "is not".
+- n=122: point also lies in the closed half space cx ≥ z (d); (a) intended and key.
+- n=128: both copies print 2x₁ + 3x₂ ≥ 1, which makes the LP unbounded; changed to ≤, giving the key −2/3.
+- n=131: wording "be any usual metric in R" tidied.
+- n=132: "A be a metric space" corrected to "A be a subset".
+- n=134: B(X, r) corrected to B(x; r).
+- n=141: "a, n, t are constant" corrected to a, n, ε.
+- n=146 (dropped): (a) and (b) are both incorrect statements; (b) marked. "(X, 3)" read as (X, 𝔗); "Closed subset and compact space" read as "of".
+- n=147: answer differs from key (see above).
+- n=148: (a) "every co-finite space is infinite" is debatable too; (c) intended and key.
+- n=149: "3" read as the topology 𝔗.
+- n=150 (dropped): "x_{n0}" fixed to x₀; (c) compact is correct.
+- n=153 (dropped): solution is y = cosh(x + a) + b; (b) prints cos, marked nearest.
+- n=167 (dropped): last class "10.9 - 12.0" read as 10.0 - 12.0; mean 7.40 (c).
+- n=168 (dropped): option (d) "100x" read as 100^x (Poisson, λ = 100).
+- n=173: two options true, (a) P ⊥ B and (d) P not ⊥ A (P·A = 1/2); answer = key (a).
+- n=174: "work done in a moving particle" read as "in moving a particle".
+- n=176: (d) is the exact product; key assumes 4-digit floating-point mantissa, 0.2334E15.
+
+#### Topics
+- No notes page covers linear programming, assignment or game theory (n = 121–130): mapped to tp-02-04 (systems of linear equations, basic solutions).
+- Complex analysis (singularities, residues, contour integrals, bilinear maps; n = 111–120 except 115): tp-10-06. n=115 (geometric series in z): tp-01-06.
+- Numerical errors / floating point (n = 176, 178): tp-01-07; n=177 (relative error of a product by differentials): tp-06-01.
+
+#### Count
+90 questions (n = 91–180), numbers in order, none twice; all lines load as JSON.
+
+### Independent check
+
+#### DSSSB PGT 2021, questions 101–190: check of 23 November 2026
+
+**Paper:** DSSSB PGT Mathematics (Male, post code 28/20), CBT of 31 July 2021 (`papers/dsssb-pgt-2021-0731-m/paper.pdf`, 278 pages, untrusted; only read with PyMuPDF, nothing in it was run). English half of each question used; the Hindi half was read for Q143.
+**Checked file:** `pyq/dsssb-pgt-2021-a/questions.jsonl` (copied to `work/orig.jsonl`). The corrected file is `questions.checked.jsonl` in this folder.
+
+##### Count
+- **90 questions checked**, n = 1–90 (Q101–Q190), all level PGT.
+- **76 stay in the quiz. 14 are dropped** (`"drop": true`): n = 8, 9, 13, 18, 37, 43, 55, 56, 72, 74, 82, 83, 87, 88.
+  - 9 of these the board cancelled: Q108, 109, 113, 118, 156, 172, 183, 187, 188.
+  - 5 more fail the drop rule: Q137, 143, 155, 174, 182.
+- None of the cancelled questions could be kept. Each has two correct options, no correct option, or a misprint that has to be repaired first.
+
+##### How it was checked
+- `work/crop.py` cut out the English block of each question (pages 88–169) at zoom 2. `work/stack.py` whitened the pink watermark and stacked the blocks. I read every question and all four options from these images.
+- **Official key**: the option label in green (span colour 0x008000; the others are 0xFF0000). There is exactly one green option in each of the 81 questions that were not cancelled. The 9 cancelled questions carry the blue note ("… ignored for all candidates") and have no green option. All 90 agree with the transcriber's `key`.
+- I solved every question from the page **before** I opened the transcriber's answers, solutions and log, and then compared.
+
+##### Changes made
+| n (Q) | What was wrong | What it is now |
+|---|---|---|
+| 1 (101) | Note (a) called $A \cap \emptyset = \emptyset$ the "identity law". | "Null (domination) law". |
+| 8 (108) | Cancelled by the board and kept by the transcriber. Two options fit: $f \circ g$ gives (c) and "$f$ first" gives (d). | **Dropped.** Flag and solution say why. |
+| 9 (109) | Cancelled. The transcriber **re-worded** the question: the paper says "be both injective mapping such that gof … is injective", and the transcriber changed it to "two mappings". As printed, (c) merely restates the hypothesis. The intended standard question has answer (b). | **Dropped.** The printed wording is restored. `answer` is 2 (as printed), and the solution, notes and flag explain both readings. |
+| 10 (110) | The solution did not say that the key is wrong. | A sentence is added: the key (d) "Invertible" is wrong because $f(2) = f(\frac12)$. |
+| 13 (113) | Cancelled. The transcriber **repaired the codomain**: the paper prints "[1, 2, 9]" and the transcriber wrote $[1, 29]$. | **Dropped.** The printed "[1, 2, 9]" is restored. The solution shows the answer (c) under the reading $[1, 29]$ and says why the question is not kept. |
+| 18 (118) | Cancelled. $P \subset A$ makes $f^{-1}(P)$ ill-typed; reading $P \subseteq B$, both (a) and (c) are true. | **Dropped.** |
+| 32 (132) | The solution did not name the key. The note on (d) was thin. | A sentence is added: the key (a) is the known result for $\sin x/x$ and is wrong for the printed $\lvert\sin x\rvert/x$. The note on (d) is reworded. Answer (b) is unchanged. |
+| 37 (137) | Kept with (a), but (b) "f and α are both bounded" is also true, because an increasing α on [a, b] is bounded. The transcriber's own note said so. | **Dropped** (two defensible answers). Solution, note (b) and flag are updated. |
+| 43 (143) | Kept with the key. The data do not fix the value $\frac{4}{3^{x+y}}$: $x = 0, y = 1$ gives $\frac43$ (b) and $x = y = \log_3 2$ gives 1 (c). | **Dropped.** The Hindi text has the same wording. |
+| 48 (148) | The solution did not name the key. | A sentence is added: the key (a) $+45$ keeps only the positive root. The answer is (d) $\pm45$. |
+| 55 (155) | Kept with the key (d). But (b) $\lvert pq - mn\rvert < 2$ is also always true, since $\lvert pq - mn\rvert \le 1$. | **Dropped** (two correct options). |
+| 56 (156) | Cancelled. (a) and (b) are printed identically, and no option is always true. | **Dropped.** |
+| 59 (159) | Kept correctly, but the solution did not say that 64 is not attained. | A sentence is added: the value is always above 64 and tends to 64 as $a, b, c \to \frac13$, so 64 is the greatest lower bound. The flag is reworded. |
+| 72 (172) | Cancelled. The transcriber **repaired option (c)**: the paper prints "y = x(log − 1)" and the transcriber wrote $x(\log x - 1)$. | **Dropped.** The printed option is restored and the note says what it means. |
+| 74 (174) | Kept with the key (a). But (c) $y = x + 1$ also satisfies the equation (it is $c = 1$ in $y = cx + c^2$), and the question asks for "a solution". | **Dropped** (two correct options). |
+| 78 (178) | The question calls $y = 0$ a "solution", although it does not satisfy $9yp^2 + 4 = 0$. The flag was empty. | A flag is added: $y = 0$ is the cusp locus, and only (d) fits. The answer is unchanged. |
+| 82 (182) | Kept with the key (d). But "if and only if" is false: $AB = BA$ is sufficient, not necessary. With $A = \mathrm{diag}(1, 0)$ and $B = \begin{pmatrix}1&1\\0&0\end{pmatrix}$, $AB$ is idempotent but $AB \ne BA$. No option is a true "iff". | **Dropped** (no correct option). The solution is rewritten. |
+| 83 (183) | Cancelled. $M^2 = I$, so $M$ is both involutory and periodic. | **Dropped.** |
+| 87 (187) | Cancelled. rank$(BA) \le 2$, so both 4 and 3 are impossible. | **Dropped.** |
+| 88 (188) | Cancelled. The transcriber **re-worded the condition**: the paper prints "Adj A = AAᵀ" and the transcriber wrote $A(\operatorname{adj}A) = AA^T$. As printed it has no solution ($b = -3$, $5a = 13$, then $25a^2 + b^2 = 178 \ne 2$). | **Dropped.** The printed condition is restored. The solution shows that it has no solution and that the known version gives 5, option (b). |
+
+**Transcription:** no errors in the 76 kept questions. Every stem and all four options match the page, in the paper's order. The exceptions are the transcriber's flagged spelling fixes, which I accept:
+- n 4: "F:" and $f^1$ written as $f^{-1}$.
+- n 7: "systematic" corrected to "symmetric".
+- n 40: the letter "O" read as 0.
+- n 62: the missing word "line" added.
+- n 66: "y'- axis" read as $y$-axis.
+- n 79: "Envelop" corrected to "Envelope".
+- n 81: "involuntary" corrected to "involutory".
+
+I also accept two small normalisations: Q111 "commutes" was written "commute", and the stray "A" before "If" in Q108 was removed.
+
+**Topics:** all checked against `topics.txt`; none needed changing. Riemann and Stieltjes questions go to tp-07-04, which lists "Riemann integration". Convergence of improper integrals goes to tp-05-05 (tests of convergence) or tp-07-03.
+
+##### Answers that differ from the official key (all kept, all already found by the transcriber)
+- **Q110 (n 10):** the key is (d) "Invertible". In fact $f(x) = \frac{x}{1+x^2}$ maps onto $[-\frac12, \frac12]$ (its extremes are $\pm\frac12$ at $x = \pm1$), but $f(2) = f(\frac12) = \frac25$, so it is not one-one. The answer is (a) "Surjective but not injective".
+- **Q132 (n 32):** the key is (a) "convergent but not absolutely", which is the known fact for $\int_0^\infty \frac{\sin x}{x}dx$. The printed integrand is $\lvert\sin x\rvert/x \ge 0$. Over $[k\pi, (k+1)\pi]$ it contributes at least $\frac{2}{(k+1)\pi}$, a harmonic series, so the integral diverges. The answer is (b). Numerically, the integral up to $10\pi$, $100\pi$ and $1000\pi$ is 3.31, 4.77 and 6.24, growing like $\frac2\pi\log N$.
+- **Q148 (n 48):** the key is (a) $+45$. But $x^2 = 5 \cdot 405 = 2025$, and 5, −45, 405 is a G.P. with ratio −9. The answer is (d) $\pm45$.
+
+All other kept answers agree with the key.
+
+##### Transcriber's 24 flags (read after my own answers)
+- **Agree:**
+  - Spelling and misprint fixes: n 4, 7, 40, 62, 66, 79, 81.
+  - The board's key is wrong: n 10, 32, 48.
+  - Kept with the flag: n 59.
+  - Cancelled and two options fit, now dropped: n 8, 18, 56, 83, 87.
+- **Disagree: re-worded or repaired a cancelled question.** For n 9, 13, 72 and 88 the transcriber rewrote the question. The printed text is restored and the question is dropped.
+- **Disagree: the transcriber's own flag shows the question fails the drop rule, but it was kept.** n 43, 55, 74 and 82 are now dropped.
+
+##### Verification by script (`work/verify.py`; sympy 1.14, mpmath, brute force)
+- **69 of the 76 kept answers were checked by script**, and all agree with `answer`:
+  - Set identities: brute force over all subsets of a 4-element set.
+  - Q111: the centraliser of $(123)(34)$ was counted over all 720 elements of $S_6$. It has 8 elements with either multiplication order.
+  - Maps and surjections were counted directly.
+  - sympy was used for roots, limits and integrals, `dsolve`, discriminants, exactness tests, ranks and determinants.
+  - The inequality questions were checked by random-search minimisation.
+  - Q184 used random rational orthogonal matrices (Cayley transform).
+  - Q186 used a symbolic 5×5 skew-symmetric determinant.
+- **7 were checked by hand only** (theory): Q134, 138, 139, 166, 170, 176 and 179.
+- The drop reasons were also checked by script (11 checks, all passed):
+  - Q108: both products.
+  - Q113: the range under the reading $[1, 29]$.
+  - Q143: two attainable values.
+  - Q155: (b) and (d) always hold.
+  - Q156: no option is always true.
+  - Q172: the singular solution.
+  - Q174: (a) and (c) both satisfy the equation.
+  - Q182: the counter-example.
+  - Q183: $M^2 = I$.
+  - Q187: rank$(BA) \le 2$ on random rank-2 matrices.
+  - Q188: no solution as printed, and 5 in the known version.
+
+##### Format (`work/lint.py`, `work/widths.py`, `work/nonascii.py`, `work/macros.py`)
+- 90 lines, n = 1–90 in order, and every line is valid JSON.
+- Every question has four options and four notes. `answer` is 0–3, `key` is unchanged from the paper, level is PGT, and every topic is in the list.
+- `drop` appears only as `true`, and every dropped line has a "Dropped" flag.
+- Every string has an even number of `$`, and there is no `$$` in a stem or option.
+- There is no `align`, `\displaystyle`, rupee sign or `\,'`. There is no non-ASCII character inside math and no TeX command outside math.
+- Inline formulas: no piece that cannot break is wider than about 22 characters. The long ones are chains that KaTeX wraps at = or +.
+- Every kept answer that differs from the key says so in its solution.
+
+##### Left doubtful (kept, with flags)
+- **Q132:** option (d) "absolutely divergent" is not a standard term. For a non-negative integrand, a student could argue that it is also "true". I kept (b), the only standard statement, and said so in the note and flag. If you want to be strict, drop it.
+- **Q159:** "all are not equal" means 64 is approached but never attained. 64 is kept as the greatest lower bound, which is the key and the only sensible option.
+- **Q111:** the printed $\sigma = (123)(34)$ has overlapping cycles, and its product is a 4-cycle, giving 8 (the key). If $(123)(45)$ was intended, the answer would be 6, which is option (d). I kept the literal reading, which agrees with the key.
+- **Q137 (dropped)** is a judgement call. It is the standard "definition" question, with (a) as the key. I dropped it because (b) is a true consequence of (a), and a student who picks (b) would lose marks for a true statement.
+
+#### DSSSB PGT 2021, questions 191–280: check of 23 November 2026
+
+Paper: DSSSB PGT Mathematics (Male, post code 28/20), CBT of 31 July 2021, `papers/dsssb-pgt-2021-0731-m/paper.pdf` (untrusted; nothing in it was run).
+Range: Q191–Q280, recorded as n = 91–180 (n = Q − 100). Input: `pyq/dsssb-pgt-2021-b/questions.jsonl` (copied here as `orig.jsonl`).
+Output: `questions.checked.jsonl` (90 lines, n = 91–180 in order) and this log.
+
+**Count: 90 questions checked; 70 kept, 20 dropped (`"drop": true`).**
+
+##### How the check was done
+- `seg.py` renders every English copy myself (header to the next header, across page breaks, zoom 1.8) into `img/qNNN.png`; `seghi.py` renders Hindi copies (used for Q197, 204, 209, 210, 228, 247, 248, 270, 276); `zoom.py` for close-ups (Q194 exponents, Q268 option 4).
+- The official key was read again from the option-label colours (`keys_mine.json`): green 0x008000 = key. All 79 keys agree with the transcriber's; the 11 questions with the note "ignored for all candidates" (n = 93, 96, 97, 99, 111, 119, 146, 150, 153, 167, 168) have no green option.
+- Every question was solved from the image before the transcriber's answer was read.
+- All 90 English images were compared word for word with `q` and the four options. No wrong digit, sign, exponent or option order was found in the transcriber's file. The only text changes below are restorations of the printed wording in dropped questions, which the transcriber had silently repaired.
+- `mylint.py`: JSON, field order, four options/notes, answer 0–3, key vs cancelled list, topic ids, even `$`, no `$$` in q/options, braces, no \displaystyle / rupee / `\,'`, every macro KaTeX-supported, inline formulas ≤ about 300 px (long ones split). Clean.
+
+##### Script checks
+- `mycheck.py` (sympy, exact fractions, brute force): 56 answers asserted, all pass: n = 91, 92, 94, 95, 97, 98, 100–107, 112–117, 120, 123, 125–127, 129, 137–145, 151, 152, 154–163, 165, 166, 170–172, 174, 175, 177, 178 (e.g. GCD/LCM, remainders, residues and contour integrals, Möbius fixed points and multiplier, assignment by enumeration, game value over a grid of b, central-orbit laws from P = h²u²(u + u''), ODE solutions substituted back for every option of 151, 152, 157, coin runs by enumeration for m ≤ 8, ticket expectation by enumeration, normal tail, vectors, line integral).
+- Numbers printed by the same script for 11 dropped questions: 96, 108, 109, 110, 119, 122, 128, 153, 167, 173, 176. `chk158.py`: only option (b) of n=158 is orthogonal to the given family.
+- So 67 of 90 checked by script; the other 23 (definitions/theory: 93, 99, 111, 118, 121, 124, 130–136, 146–150, 164, 168, 169, 179, 180) by reasoning.
+
+##### Answers that differ from the official key (kept questions)
+- **n=117 (Q217)**: key (d) "No singularity"; answer (a). e^(−1/z²) → 0 along the real axis and → ∞ along the imaginary axis, so z = 0 is an (isolated) essential singularity. Solution now says so.
+- **n=147 (Q247)**: key (d) "Neither 1 nor 2 nor 3"; answer (a) "Only 1". A one-to-one continuous map of a compact space onto a Hausdorff space is a homeomorphism, hence open. The Hindi copy omits "one to one … onto"; for a merely continuous map none of 1–3 need hold, which is what the key fits. The English text is unambiguous, so kept with (a); solution now explains the key.
+
+##### Dropped (20)
+Board-cancelled (10 of the 11; n=97 kept, see below):
+- n=93: (a) lacks "m, n coprime", (b) prints a^m for α^m, (d) garbled; intended meaning a guess. Option (b) restored to the printed a^m.
+- n=96: a = 13, b = 10 in no option ((b) reversed).
+- n=99: roots are a and b, in none of the open intervals.
+- n=111: no option fully correct (simple zero at 1, simple pole at 2, isolated essential singularity at 1/2).
+- n=119: residue −1, in no option.
+- n=146: two incorrect statements, (a) and (b). Option (d) restored to the printed "Closed subset and compact space".
+- n=150: printed x_{n0} for the limit; (b) "A is not an open cover" is also literally true. q restored to the printed x_{n0} (the transcriber had changed it to x₀).
+- n=153: solution is cosh(x + a) + b; options print cos.
+- n=167: last class printed 10.9 – 12.0 gives mean 7.475, in no option. q restored to the printed 10.9 (the transcriber had changed it to 10.0).
+- n=168: option (d) printed e^(−100)·100x/x! (100x, not 100^x). Option restored to the printed form.
+
+Not cancelled by the board:
+- n=108: no option correct (average rate −1.463; dv/dP −1.5 at 20, −1.428 at 20.5); the key −1.48 comes only from cutting v(20.5) to 29.26.
+- n=109: printed text garbled in both languages ("ellipse", "growth rate of the ground", asks "the rate of the y-axis" with points as options). The transcriber's restatement (abscissa twice as fast as ordinate → (4, 4), the key) is not what the text says. q restored to the printed wording.
+- n=110: printed "the expectation will increase and decrease respectively" names neither the actual nor the approximate increase. q restored to the printed wording.
+- n=122: two true options: (a) cx > z (key) and (d) cx ≥ z.
+- n=128: both copies print 2x₁ + 3x₂ ≥ 1; the LPP is then unbounded and no option is correct (key −2/3 fits only ≤). q restored to the printed ≥ (the transcriber had changed it to ≤); notes and fact rewritten.
+- n=148: two false statements: (c) (key) and (a), because the co-finite topology on a finite set is the discrete topology, so a co-finite space can be finite (Munkres' definition). Judgment call: books that define it only on infinite sets make (a) true.
+- **n=152 (new finding)**: (c) u = x, v = e^x(1 + x) gives y_p = x² + x + 1, which also satisfies the equation (differs from x² − x + 1 by the homogeneous solution 2x). Only (b) is the variation-of-parameters pair (u'x + v'e^(−x) = 0), but the question does not say so: two defensible options. Checked by substitution in `mycheck.py`.
+- **n=157 (new finding)**: (a) log cos(y + a) = x + b is the same family as (c) log sin(y + a) = x + b, since cos(y + a) = sin(y + a + π/2) and a is arbitrary; both are the general solution. Checked by substitution.
+- n=173: two true options: (a) P ⊥ B (key) and (d) P not ⊥ A (P = (A − A×B)/2, P·A = 1/2).
+- n=176: (d) is the exact product 0.23343227E15; (b) 0.2334E15 (key) is the 4-digit floating-point product; the question does not say which.
+
+For every dropped line: `"drop": true`, `flag` starts with "Dropped", and the solution ends by saying why it is left out of the quiz. `answer` is the key (or the transcriber's nearest option where there is no key).
+
+##### Other changes to kept questions
+- n=97 (board cancelled): kept with key null. As printed it is sound and only (c) x² − x + 4 = 0 has no real root. Flag and solution now say the board cancelled it and why it is still answerable.
+- n=170: no option is the exact binomial value 0.204; (b) 0.25e^(−0.25) is the Poisson approximation the question intends (the key). Flag added; solution says so.
+- n=114: solution adds that ω = 1 is the image of z = ∞.
+- n=169: fact corrected (Var(aX + bY) = a²VarX + b²VarY holds for independent, or merely uncorrelated, X and Y).
+- n=147: note (a) reworded.
+- Long inline formulas split into shorter pieces for phone width: solutions of n = 91, 92, 101, 103, 112, 143, 144, 161, 174, 175, 177.
+- The transcriber's misprint fixes in kept questions were checked against the images and are right: n=92 ("quadratic equations" → polynomials; f is cubic), 104 ("lightning surface area"), 106 (velocity unit feet/sec² → feet/sec), 112 (stray box in ∮), 121 ("in not"), 131, 132 ("A be a metric space" → subset), 134 (B(X, r) → B(x; r)), 141 ("a, n, t are constant" → a, n, ε), 149 ("3" = 𝔗), 174 ("in a moving particle").
+- Topics: none changed. Linear programming/games (121–130) stay on tp-02-04 and complex analysis (111–120) on tp-10-06, as no closer notes page exists.
+
+##### Left doubtful
+- n=147: the English and Hindi copies ask different questions and the key fits the Hindi one. Kept with the English answer (a); drop it instead if the quiz should never contradict the board on a bilingual mismatch.
+- n=148 and n=152: dropped as "two defensible answers"; both are judgment calls (the intended answers are the keys (c) and (b)).
+- n=170 kept on the Poisson reading (exact binomial 0.204 not offered).
+- Minor imprecisions accepted as the standard answers: n=114 (the real line maps onto the unit circle minus ω = 1), n=124 (scaling by a negative constant reverses the inequality), n=115 (sum 1/z² only where |z² + 1| > 1).
 
 ## Left out at publication
 
