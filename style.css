@@ -527,18 +527,18 @@ button.pill:hover { background: var(--soft-3); }
 .book-title { font-size: calc(30px * var(--fs)); line-height: 1.2; color: var(--head); margin-top: 6px; }
 .book-foot { margin-top: 14px; text-align: center; }
 /* the home card of the book: one compact row in a bold frame, gold on its upper-left half and clear diamond on the lower-right
-   half, filled the opposite way: diamond white where the frame is gold, gold where the frame is diamond (owner's requests,
-   24 November 2026; emerald, light green and leaf-green fills before) */
+   half, filled the opposite way in dark shades: steel-diamond where the frame is gold, deep gold where the frame is diamond,
+   white text (owner's requests, 24 November 2026; emerald, light green, leaf green and a light white-and-gold fill before) */
 .book-entry { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'icon title open' 'icon sub sub';
   align-items: center; gap: 2px 10px; padding: 12px 14px;
   border: 5px solid transparent;
-  background: linear-gradient(135deg, #ffffff 0%, #f1f4f7 18%, #ffffff 32%, #ece8f8 44%, #f7e7ad 53%, #ecd078 66%, #e2bd4a 82%, #d4af37 100%) padding-box,
+  background: linear-gradient(135deg, #66737f 0%, #55616c 18%, #626f7b 32%, #575c78 44%, #7a5c08 53%, #8a6a12 66%, #6b4f06 82%, #5c4407 100%) padding-box,
     linear-gradient(135deg, #8a6a12 0%, #f3d77a 12%, #b8860b 24%, #e9c75a 36%, #8a6a12 49%, #ffffff 51%, #a9b6c2 63%, #ffffff 74%, #d9d0f0 84%, #8b9cab 93%, #ffffff 100%) border-box;
-  outline-color: rgba(138, 106, 18, 0.3);
-  box-shadow: 0 0 0 1px rgba(110, 90, 40, 0.55), 0 10px 26px rgba(150, 112, 10, 0.22); }
+  outline-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 1px rgba(110, 90, 40, 0.55), 0 10px 26px rgba(92, 68, 7, 0.3); }
 .book-entry .book-emoji { grid-area: icon; font-size: calc(28px * var(--fs)); }
-.book-entry h2 { grid-area: title; display: block; margin: 0; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #2e2104; }
-.book-entry p { grid-area: sub; margin: 0; color: #3d2f08; }
+.book-entry h2 { grid-area: title; display: block; margin: 0; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #ffffff; }
+.book-entry p { grid-area: sub; margin: 0; color: #ffffff; }
 .book-open { grid-area: open; min-height: 40px; padding: 6px 12px; font-size: calc(16px * var(--fs)); color: #6b4f06; border-color: #c9d2da;
   background: linear-gradient(180deg, #ffffff 0%, #eef2f5 55%, #dde4ea 100%); box-shadow: inset 0 1px 0 #ffffff, 0 2px 6px rgba(0, 0, 0, 0.18); }
 .book-open:hover { background: linear-gradient(180deg, #ffffff 0%, #f4f7f9 55%, #e6ecf0 100%); }
@@ -603,13 +603,13 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 
 /* NET / JRF corner on the home screen. Each subject is a locked "door" that opens to show its syllabus,
    unit by unit, and what is planned. UGC NET has its own English / Hindi switch. */
-/* Closed, the corner is one compact row in sapphire blue (the colour of the TGT / PGT boxes) inside the book card's
-   gold-and-diamond frame, tying the two cards above together (owner's requests, 24 November 2026; amethyst, then dark
-   purple before); tapped, everything opens below it on the page colour. */
+/* Closed, the corner is one compact row matching the book card but flipped: the frame diamond on its upper-left half and
+   gold on the lower-right half, the fill deep gold then steel-diamond, white text (owner's requests, 24 November 2026;
+   amethyst, dark purple and sapphire before); tapped, everything opens below it on the page colour. */
 .net-card { position: relative; border-radius: 18px; color: var(--ink); overflow: hidden; border: 5px solid transparent;
-  background: linear-gradient(135deg, #1f6fa9 0%, #175f93 55%, #114c78 100%) padding-box,
-    linear-gradient(135deg, #8a6a12 0%, #f3d77a 12%, #b8860b 24%, #e9c75a 36%, #8a6a12 49%, #ffffff 51%, #a9b6c2 63%, #ffffff 74%, #d9d0f0 84%, #8b9cab 93%, #ffffff 100%) border-box;
-  box-shadow: 0 0 0 1px rgba(110, 90, 40, 0.55), 0 10px 26px rgba(17, 76, 120, 0.25); }
+  background: linear-gradient(135deg, #5c4407 0%, #6b4f06 18%, #8a6a12 34%, #7a5c08 47%, #575c78 56%, #626f7b 68%, #55616c 84%, #66737f 100%) padding-box,
+    linear-gradient(135deg, #ffffff 0%, #a9b6c2 12%, #ffffff 24%, #d9d0f0 36%, #8b9cab 49%, #8a6a12 51%, #f3d77a 63%, #b8860b 75%, #e9c75a 87%, #8a6a12 100%) border-box;
+  box-shadow: 0 0 0 1px rgba(110, 90, 40, 0.55), 0 10px 26px rgba(92, 68, 7, 0.3); }
 .net-sum { list-style: none; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'icon title open' 'icon sub sub';
   align-items: center; gap: 2px 10px; padding: 12px 14px; cursor: pointer; }
 .net-sum::-webkit-details-marker { display: none; }
@@ -617,11 +617,11 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 .net-title { grid-area: title; font-weight: 700; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #ffffff; }
 .net-sub { grid-area: sub; font-size: calc(15px * var(--fs)); color: #ffffff; }
 .net-toggle { grid-area: open; display: inline-flex; align-items: center; min-height: 40px; padding: 6px 12px; border-radius: 12px; border: 1px solid #c9d2da;
-  font-weight: 700; font-size: calc(16px * var(--fs)); color: #114c78; white-space: nowrap;
+  font-weight: 700; font-size: calc(16px * var(--fs)); color: #3d4852; white-space: nowrap;
   background: linear-gradient(180deg, #ffffff 0%, #eef2f5 55%, #dde4ea 100%); box-shadow: inset 0 1px 0 #ffffff, 0 2px 6px rgba(0, 0, 0, 0.18); }
 .net-sum:hover .net-toggle { background: linear-gradient(180deg, #ffffff 0%, #f4f7f9 55%, #e6ecf0 100%); }
 .net-card[open] .when-shut, .net-card:not([open]) .when-open { display: none; }
-.net-body { display: flex; flex-direction: column; gap: 12px; padding: 14px 14px 16px; background: var(--card); border-top: 1px solid #114c78; }
+.net-body { display: flex; flex-direction: column; gap: 12px; padding: 14px 14px 16px; background: var(--card); border-top: 1px solid #5c4407; }
 .net-ribbon { align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: var(--gold-fill); color: var(--on-gold); font-weight: 700; letter-spacing: 0.04em; font-size: calc(13px * var(--fs)); box-shadow: 0 4px 10px rgba(184, 144, 31, 0.3); }
 .net-teaser { margin: 0; font-size: calc(17px * var(--fs)); line-height: 1.45; }
 .net-group { display: flex; flex-direction: column; gap: 8px; }
