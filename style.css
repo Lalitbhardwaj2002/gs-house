@@ -580,16 +580,18 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 .mq-home .btn { padding: 9px 8px; font-size: calc(15px * var(--fs)); line-height: 1.25; }
 /* The maths card on the home screen (owner's requests, 23 November 2026): a bold dark-gold frame; the TGT and PGT
    subject boxes in a deep sky blue and the two past-papers-and-mocks boxes in a deep maroon, both with white text
-   (the same in both themes). */
+   (the same in both themes). All four have a clear-diamond edge (owner's request, 24 November 2026). */
 .maths-entry { border: 3px solid #b8860b; outline-color: rgba(243, 215, 122, 0.9);
   box-shadow: 0 0 0 1px #8a6a12, 0 12px 30px rgba(150, 112, 10, 0.22); }
-.maths-entry .topic.ready { background: linear-gradient(135deg, #1f6fa9 0%, #175f93 55%, #114c78 100%); border-color: #0f4a73;
-  box-shadow: 0 6px 16px rgba(21, 90, 138, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25); color: #ffffff; }
+.maths-entry .topic.ready { border: 3px solid transparent;
+  background: linear-gradient(135deg, #1f6fa9 0%, #175f93 55%, #114c78 100%) padding-box, linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box;
+  box-shadow: 0 0 0 1px #8b9cab, 0 6px 16px rgba(21, 90, 138, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25); color: #ffffff; }
 .maths-entry .topic.ready .topic-name { color: #ffffff; }
 .maths-entry .topic.ready .topic-meta, .maths-entry .topic.ready .topic-more { color: #ffffff; }
-.mq-home .btn { background: linear-gradient(135deg, #9a2638 0%, #82192b 55%, #6a1222 100%); border-color: #4f0b18; color: #ffffff;
-  box-shadow: 0 4px 12px rgba(106, 18, 34, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
-.mq-home .btn:hover { background: linear-gradient(135deg, #a82c40 0%, #8e1d31 55%, #741427 100%); }
+.mq-home .btn { border: 3px solid transparent; color: #ffffff;
+  background: linear-gradient(135deg, #9a2638 0%, #82192b 55%, #6a1222 100%) padding-box, linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box;
+  box-shadow: 0 0 0 1px #8b9cab, 0 4px 12px rgba(106, 18, 34, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+.mq-home .btn:hover { background: linear-gradient(135deg, #a82c40 0%, #8e1d31 55%, #741427 100%) padding-box, linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box; }
 /* The ₹10 unlock of the maths notes PDF (a box like the app's own question box) */
 .pay-dialog .small { font-size: calc(14px * var(--fs)); margin-top: 8px; }
 .upi-qr { display: block; width: 220px; height: 220px; max-width: 100%; margin: 12px auto 6px; padding: 6px; background: #fff; border: 1px solid var(--line); border-radius: 12px; }
