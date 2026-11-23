@@ -99,8 +99,8 @@ html, body { margin: 0; }
 body {
   min-height: 100vh;
   background:
-    /* faceted diamonds in icy diamond-blue with small gold sparkles */
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%236fb3d2' stroke-opacity='.3' stroke-width='1.1' stroke-linejoin='round'%3E%3Cpath d='M96 86h28l14 12-28 34-28-34z M82 98h56 M96 86l6 12 8 34 8-34 6-12 M102 98l8-12 8 12'/%3E%3Cpath d='M28 168h14l7 6-14 17-14-17z M21 174h28 M28 168l3 6 4 17 4-17 3-6 M31 174l4-6 4 6'/%3E%3Cpath d='M178 23h14l7 6-14 17-14-17z M171 29h28 M178 23l3 6 4 17 4-17 3-6 M181 29l4-6 4 6'/%3E%3C/g%3E%3Cg fill='%23d4af37' fill-opacity='.5'%3E%3Cpath d='M40 40l2 6 6 2-6 2-2 6-2-6-6-2 6-2z'/%3E%3Cpath d='M175 160l1.5 4.5 4.5 1.5-4.5 1.5-1.5 4.5-1.5-4.5-4.5-1.5 4.5-1.5z'/%3E%3Cpath d='M150 205l1 3 3 1-3 1-1 3-1-3-3-1 3-1z'/%3E%3C/g%3E%3C/svg%3E") center 40px / 220px repeat,
+    /* the mandala of circles and petals, diamond-plated: a prismatic stroke and white diamond glints */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cdefs%3E%3ClinearGradient id='d' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='.22' stop-color='%238fcbe6'/%3E%3Cstop offset='.42' stop-color='%23ffffff'/%3E%3Cstop offset='.6' stop-color='%23c3b4ee'/%3E%3Cstop offset='.8' stop-color='%236fb3d2'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23d)' stroke-width='1.5' stroke-opacity='.55'%3E%3Ccircle cx='120' cy='120' r='100'/%3E%3Ccircle cx='120' cy='120' r='70'/%3E%3Ccircle cx='120' cy='120' r='40'/%3E%3Cpath d='M120 20 Q150 70 120 120 Q90 70 120 20Z M120 220 Q150 170 120 120 Q90 170 120 220Z M20 120 Q70 90 120 120 Q70 150 20 120Z M220 120 Q170 90 120 120 Q170 150 220 120Z'/%3E%3C/g%3E%3Ccircle cx='120' cy='120' r='98.6' fill='none' stroke='%23ffffff' stroke-width='.8' stroke-opacity='.9'/%3E%3Cg fill='%23ffffff' stroke='%238fcbe6' stroke-width='.6'%3E%3Cpath d='M120 14l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M220 114l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M120 214l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M20 114l1.50 4.50 4.50 1.50-4.50 1.50-1.50 4.50-1.50-4.50-4.50-1.50 4.50-1.50z'/%3E%3Cpath d='M120 46l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M190 116l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M120 186l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M50 116l1.00 3.00 3.00 1.00-3.00 1.00-1.00 3.00-1.00-3.00-3.00-1.00 3.00-1.00z'/%3E%3Cpath d='M120 115l1.25 3.75 3.75 1.25-3.75 1.25-1.25 3.75-1.25-3.75-3.75-1.25 3.75-1.25z'/%3E%3C/g%3E%3C/svg%3E") center 40px / 240px repeat,
     radial-gradient(1200px 700px at 50% -10%, var(--glow), transparent 70%),
     linear-gradient(180deg, var(--paper), var(--paper-2));
   background-attachment: fixed;
@@ -138,7 +138,10 @@ h1, h2, h3, h4, p { margin: 0; }
 }
 .card h2 { font-size: calc(21px * var(--fs)); font-weight: 700; color: var(--head); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .ornate { font-family: var(--display); font-size: calc(27px * var(--fs)) !important; justify-content: center !important; text-align: center; }
-.ornate::before, .ornate::after { content: '◆'; color: var(--diamond); font-size: calc(14px * var(--fs)); margin: 0 10px; }
+/* the flower ornaments beside a title, diamond-plated (a prismatic fill with a white glint) */
+.ornate::before, .ornate::after { content: '❋'; font-size: calc(18px * var(--fs)); margin: 0 10px; color: var(--diamond);
+  background: linear-gradient(135deg, #ffffff 0%, #8fcbe6 30%, #ffffff 48%, #c3b4ee 66%, #6fb3d2 85%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 2px rgba(143, 203, 230, 0.9)); }
 .stack { display: flex; flex-direction: column; gap: 12px; }
 .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
 .center { text-align: center; }
@@ -726,7 +729,10 @@ button.topic { cursor: pointer; }
 .toast { bottom: 84px; background: var(--maroon); color: #fff; }
 .banner[hidden], .toast[hidden] { display: none; }
 .petals { position: fixed; inset: 0; pointer-events: none; z-index: 50; overflow: hidden; }
-.petals i { position: absolute; top: -20px; width: 12px; height: 16px; border-radius: 60% 0 60% 0; animation: fall linear forwards; opacity: 0.9; }
+.petals i { position: absolute; top: -20px; width: 12px; height: 16px; border-radius: 60% 0 60% 0; animation: fall linear forwards; opacity: 0.95;
+  /* diamond-plated petals: the colour (from app.js) under a white sheen and a soft blue glow */
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 6px rgba(111, 179, 210, 0.75), inset 0 0 0 1px rgba(255, 255, 255, 0.8); }
 .about { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: calc(17px * var(--fs)); }
 .about h2 { font-family: var(--display); color: var(--head); font-size: calc(24px * var(--fs)); margin: 10px 0 6px; }
 .about p { margin-bottom: 8px; }
