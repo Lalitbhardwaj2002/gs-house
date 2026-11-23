@@ -4,8 +4,8 @@
    All colours are variables so that the dark theme (data-theme="dark" on <html>) only swaps values. */
 :root {
   --paper: #ffffff;      /* the page: white */
-  --paper-2: #f8fafc;
-  --glow: #f3f9fd;       /* a faint icy glow behind the top of the page */
+  --paper-2: #ffffff;    /* pure white from top to bottom (owner's request) */
+  --glow: #ffffff;
   --card: #ffffff;
   --field: #fff;
   --soft: #ffffff;       /* boxes, buttons, rows and chips are white (no cream or yellow fills; owner's request) */
