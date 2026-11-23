@@ -526,7 +526,20 @@ button.pill:hover { background: var(--soft-3); }
 .book-emoji { font-size: calc(46px * var(--fs)); line-height: 1; }
 .book-title { font-size: calc(30px * var(--fs)); line-height: 1.2; color: var(--head); margin-top: 6px; }
 .book-foot { margin-top: 14px; text-align: center; }
-.book-entry { display: flex; flex-direction: column; gap: 12px; }
+/* the home card of the book: one compact emerald row with a clear-diamond frame (owner's request, 24 November 2026) */
+.book-entry { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'icon title open' 'icon sub sub';
+  align-items: center; gap: 2px 10px; padding: 12px 14px;
+  border: 4px solid transparent;
+  background: linear-gradient(135deg, #0f7a55 0%, #0b6847 55%, #08553a 100%) padding-box,
+    linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box;
+  outline-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 0 1px #9eadb9, 0 10px 26px rgba(8, 85, 58, 0.25); }
+.book-entry .book-emoji { grid-area: icon; font-size: calc(28px * var(--fs)); }
+.book-entry h2 { grid-area: title; display: block; margin: 0; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #ffffff; }
+.book-entry p { grid-area: sub; margin: 0; color: #e3f4ec; }
+.book-open { grid-area: open; min-height: 40px; padding: 6px 12px; font-size: calc(16px * var(--fs)); color: #0a5c40; border-color: #c9d2da;
+  background: linear-gradient(180deg, #ffffff 0%, #eef2f5 55%, #dde4ea 100%); box-shadow: inset 0 1px 0 #ffffff, 0 2px 6px rgba(0, 0, 0, 0.18); }
+.book-open:hover { background: linear-gradient(180deg, #ffffff 0%, #f4f7f9 55%, #e6ecf0 100%); }
 
 /* ---------- figures in the notes ---------- */
 .nb-figs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
