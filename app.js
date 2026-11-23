@@ -1806,16 +1806,13 @@ function renderHome() {
 // its own official syllabus (data/net/tgt-mathematics.json, data/net/pgt-mathematics.json). The notes
 // themselves are shared (data/net/maths/); the full notes PDF is sold by email (below). English only.
 const MATHS_SUBJECTS = [
-  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units',
-    syllabus: 'Commercial Maths, Statistics, Algebra, Probability, Sets, Real Analysis, Trigonometry, Complex Numbers, Geometry, Coordinate Geometry, Calculus, Vectors, Statics, Dynamics' },
-  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units',
-    syllabus: 'Algebra, Calculus, Differential Equations, 2D Coordinate Geometry, Vectors and 3D Geometry, Abstract Algebra, Linear Algebra, Vector Calculus, Mechanics, Trigonometry' },
+  { id: 'tgt-mathematics', icon: '📏', name: 'TGT Mathematics', meta: 'Subject code 07 · 14 units' },
+  { id: 'pgt-mathematics', icon: '📐', name: 'PGT Mathematics', meta: 'Subject code 08 · 10 units' },
 ];
 function mathsHTML() {
   const doors = MATHS_SUBJECTS.map((s) => `
         <button class="topic ready" data-action="book-go" data-route="net/${s.id}"><span class="topic-icon">${s.icon}</span>
-          <span><span class="topic-name">${s.name}</span><span class="topic-meta">${s.meta}</span></span><span class="badge go">Open ▶</span>
-          <span class="topic-more">📖 Syllabus: ${s.syllabus}</span></button>`).join('');
+          <span><span class="topic-name">${s.name}</span><span class="topic-meta">${s.meta}</span></span><span class="badge go">Open ▶</span></button>`).join('');
   return `
     <section class="card maths-entry" lang="en">
       <div class="book-entry-head"><span class="book-emoji">➗</span><div><h2>UP TGT / PGT Mathematics</h2><p class="muted small">Topic-wise notes on the official 2026 syllabus, with worked examples and shortcuts · English</p></div></div>

@@ -526,14 +526,15 @@ button.pill:hover { background: var(--soft-3); }
 .book-emoji { font-size: calc(46px * var(--fs)); line-height: 1; }
 .book-title { font-size: calc(30px * var(--fs)); line-height: 1.2; color: var(--head); margin-top: 6px; }
 .book-foot { margin-top: 14px; text-align: center; }
-/* the home card of the book: one compact new-leaf-green row with a clear-diamond frame (owner's requests, 24 November 2026; emerald, then light green before) */
+/* the home card of the book: one compact new-leaf-green row in a bold frame, gold on its upper-left half and clear diamond on the
+   lower-right half (owner's requests, 24 November 2026; emerald, then light green, then a plain diamond frame before) */
 .book-entry { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'icon title open' 'icon sub sub';
   align-items: center; gap: 2px 10px; padding: 12px 14px;
-  border: 4px solid transparent;
+  border: 5px solid transparent;
   background: linear-gradient(135deg, #327a24 0%, #2b6c1f 55%, #225a18 100%) padding-box,
-    linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box;
+    linear-gradient(135deg, #8a6a12 0%, #f3d77a 12%, #b8860b 24%, #e9c75a 36%, #8a6a12 49%, #ffffff 51%, #a9b6c2 63%, #ffffff 74%, #d9d0f0 84%, #8b9cab 93%, #ffffff 100%) border-box;
   outline-color: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 0 0 1px #9eadb9, 0 10px 26px rgba(45, 114, 32, 0.25); }
+  box-shadow: 0 0 0 1px rgba(110, 90, 40, 0.55), 0 10px 26px rgba(45, 114, 32, 0.25); }
 .book-entry .book-emoji { grid-area: icon; font-size: calc(28px * var(--fs)); }
 .book-entry h2 { grid-area: title; display: block; margin: 0; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #ffffff; }
 .book-entry p { grid-area: sub; margin: 0; color: #eef8e8; }
@@ -585,7 +586,6 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
   box-shadow: 0 6px 16px rgba(21, 90, 138, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25); color: #ffffff; }
 .maths-entry .topic.ready .topic-name { color: #ffffff; }
 .maths-entry .topic.ready .topic-meta, .maths-entry .topic.ready .topic-more { color: #ffffff; }
-.maths-entry .topic.ready .topic-more { grid-column: 1 / -1; font-size: calc(14px * var(--fs)); line-height: 1.4; }   /* the syllabus units, full width */
 .mq-home .btn { background: linear-gradient(135deg, #9a2638 0%, #82192b 55%, #6a1222 100%); border-color: #4f0b18; color: #ffffff;
   box-shadow: 0 4px 12px rgba(106, 18, 34, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
 .mq-home .btn:hover { background: linear-gradient(135deg, #a82c40 0%, #8e1d31 55%, #741427 100%); }
@@ -602,24 +602,24 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 
 /* NET / JRF corner on the home screen. Each subject is a locked "door" that opens to show its syllabus,
    unit by unit, and what is planned. UGC NET has its own English / Hindi switch. */
-/* Closed, the corner is one compact amethyst row with a clear-diamond frame, like the book card
+/* Closed, the corner is one compact dark-purple row with a clear-diamond frame, like the book card
    (owner's request, 24 November 2026); tapped, everything opens below it on the page colour. */
 .net-card { position: relative; border-radius: 18px; color: var(--ink); overflow: hidden; border: 4px solid transparent;
-  background: linear-gradient(135deg, #f3eefc 0%, #e8defa 55%, #dccdf5 100%) padding-box,
+  background: linear-gradient(135deg, #5a3596 0%, #4a2a82 55%, #3a1f6b 100%) padding-box,
     linear-gradient(135deg, #ffffff 0%, #a9b6c2 14%, #ffffff 28%, #d9d0f0 42%, #8b9cab 58%, #ffffff 72%, #b4c0cb 86%, #ffffff 100%) border-box;
-  box-shadow: 0 0 0 1px #9eadb9, 0 10px 26px rgba(92, 62, 160, 0.16); }
+  box-shadow: 0 0 0 1px #9eadb9, 0 10px 26px rgba(58, 31, 107, 0.28); }
 .net-sum { list-style: none; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: 'icon title open' 'icon sub sub';
   align-items: center; gap: 2px 10px; padding: 12px 14px; cursor: pointer; }
 .net-sum::-webkit-details-marker { display: none; }
 .net-emoji { grid-area: icon; font-size: calc(28px * var(--fs)); line-height: 1; }
-.net-title { grid-area: title; font-weight: 700; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #4a2a82; }
-.net-sub { grid-area: sub; font-size: calc(15px * var(--fs)); color: #5b3f8c; }
+.net-title { grid-area: title; font-weight: 700; font-size: calc(18px * var(--fs)); line-height: 1.25; color: #ffffff; }
+.net-sub { grid-area: sub; font-size: calc(15px * var(--fs)); color: #ece4fa; }
 .net-toggle { grid-area: open; display: inline-flex; align-items: center; min-height: 40px; padding: 6px 12px; border-radius: 12px; border: 1px solid #c9d2da;
   font-weight: 700; font-size: calc(16px * var(--fs)); color: #4a2a82; white-space: nowrap;
   background: linear-gradient(180deg, #ffffff 0%, #eef2f5 55%, #dde4ea 100%); box-shadow: inset 0 1px 0 #ffffff, 0 2px 6px rgba(0, 0, 0, 0.18); }
 .net-sum:hover .net-toggle { background: linear-gradient(180deg, #ffffff 0%, #f4f7f9 55%, #e6ecf0 100%); }
 .net-card[open] .when-shut, .net-card:not([open]) .when-open { display: none; }
-.net-body { display: flex; flex-direction: column; gap: 12px; padding: 14px 14px 16px; background: var(--card); border-top: 1px solid #c9b8ea; }
+.net-body { display: flex; flex-direction: column; gap: 12px; padding: 14px 14px 16px; background: var(--card); border-top: 1px solid #3a1f6b; }
 .net-ribbon { align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: var(--gold-fill); color: var(--on-gold); font-weight: 700; letter-spacing: 0.04em; font-size: calc(13px * var(--fs)); box-shadow: 0 4px 10px rgba(184, 144, 31, 0.3); }
 .net-teaser { margin: 0; font-size: calc(17px * var(--fs)); line-height: 1.45; }
 .net-group { display: flex; flex-direction: column; gap: 8px; }
