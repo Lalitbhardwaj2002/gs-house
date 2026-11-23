@@ -1,28 +1,34 @@
-/* GS House — "Vedic manuscript" theme: a white page with saffron, maroon and temple gold
-   (cream parchment until 23 November 2026, when the owner asked for a white or light background).
+/* GS House — "white, gold and diamond" theme (owner's request of 23 November 2026): a white page,
+   metallic gold for buttons, frames and headings, and diamond shapes in icy diamond-blue behind it
+   (it was cream parchment with saffron and maroon before). The variable names are the old ones.
    All colours are variables so that the dark theme (data-theme="dark" on <html>) only swaps values. */
 :root {
-  --paper: #ffffff;      /* the page: white, warming very slightly towards the bottom */
-  --paper-2: #fbf7f0;
-  --glow: #fff0db;       /* a soft saffron glow behind the top of the page */
+  --paper: #ffffff;      /* the page: white */
+  --paper-2: #fbfaf7;
+  --glow: #fdf8ea;       /* a faint champagne-gold glow behind the top of the page */
   --card: #ffffff;
   --field: #fff;
-  --soft: #fff8ea;
-  --soft-2: #fffaf0;
-  --soft-3: #fff1d6;
-  --row: #fbf1dc;
-  --track: #efe0bf;
-  --chip: #f6e6c4;
-  --line: #e3cfa2;
-  --line-2: #efe1c0;
-  --ink: #3b2a1a;
-  --muted: #7a6650;
-  --note-ink: #5c4a36;
-  --saffron: #e07a1f;
-  --maroon: #7b1e1e;     /* filled buttons and chips (white text on it) */
-  --head: #7b1e1e;       /* headings and accent text */
-  --gold: #c9972b;
-  --teal: #1f5f5b;
+  --soft: #fffbef;       /* gold-tinted whites for buttons, rows and chips */
+  --soft-2: #fffdf7;
+  --soft-3: #fbf0cf;
+  --row: #fcf7e8;
+  --track: #efe3bd;
+  --chip: #f7edcb;
+  --line: #e3cc84;       /* gold borders */
+  --line-2: #f0e4bd;
+  --ink: #2a2417;
+  --muted: #6c624f;
+  --note-ink: #4e4535;
+  --saffron: #96700a;    /* rich gold accent (dark enough for text on white) */
+  --maroon: #8a6a12;     /* deep gold for filled chips (white text on it) */
+  --head: #7a5c08;       /* headings and accent text: deep gold */
+  --gold: #d4af37;       /* metallic gold for ornaments */
+  --teal: #2a6890;       /* links: diamond blue */
+  --diamond: #8cc8e3;    /* diamond shapes and ornaments */
+  --diamond-soft: #eef8fc;
+  --gold-fill: linear-gradient(180deg, #fbe9a6 0%, #ebc75a 46%, #d6a92e 54%, #c99a22 100%);
+  --on-gold: #2e2104;    /* text on the gold fill */
+  --gold-edge: #b8901f;
   --right: #2e8b57;
   --right-bg: #e3f4e8;
   --right-ink: #1e6b41;
@@ -31,11 +37,11 @@
   --wrong-ink: #8e271c;
   --warn-bg: #fdf3dc;
   --warn-ink: #8a5a00;
-  --on-row: #fff4e3;
+  --on-row: #fffcf2;
   --on-right: #fff;      /* text on a filled green, red or saffron patch */
   --on-wrong: #fff;
   --on-saffron: #fff;
-  --shadow: rgba(123, 30, 30, 0.07);
+  --shadow: rgba(150, 112, 10, 0.10);
   --pattern: 0.10;
   --radius: 16px;
   --fs: 1;               /* reading-text scale, set from the text-size control */
@@ -83,6 +89,8 @@
   --on-saffron: #2a1505;
   --shadow: rgba(0, 0, 0, 0.35);
   --pattern: 0.07;
+  --diamond: #6fb3d2;
+  --diamond-soft: #1b2a31;
   color-scheme: dark;
 }
 
@@ -91,7 +99,8 @@ html, body { margin: 0; }
 body {
   min-height: 100vh;
   background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%23c9972b' stroke-opacity='.07' stroke-width='1.2'%3E%3Ccircle cx='120' cy='120' r='100'/%3E%3Ccircle cx='120' cy='120' r='70'/%3E%3Ccircle cx='120' cy='120' r='40'/%3E%3Cpath d='M120 20 Q150 70 120 120 Q90 70 120 20Z M120 220 Q150 170 120 120 Q90 170 120 220Z M20 120 Q70 90 120 120 Q70 150 20 120Z M220 120 Q170 90 120 120 Q170 150 220 120Z'/%3E%3C/g%3E%3C/svg%3E") center 40px / 240px repeat,
+    /* faceted diamonds in icy diamond-blue with small gold sparkles */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%236fb3d2' stroke-opacity='.3' stroke-width='1.1' stroke-linejoin='round'%3E%3Cpath d='M96 86h28l14 12-28 34-28-34z M82 98h56 M96 86l6 12 8 34 8-34 6-12 M102 98l8-12 8 12'/%3E%3Cpath d='M28 168h14l7 6-14 17-14-17z M21 174h28 M28 168l3 6 4 17 4-17 3-6 M31 174l4-6 4 6'/%3E%3Cpath d='M178 23h14l7 6-14 17-14-17z M171 29h28 M178 23l3 6 4 17 4-17 3-6 M181 29l4-6 4 6'/%3E%3C/g%3E%3Cg fill='%23d4af37' fill-opacity='.5'%3E%3Cpath d='M40 40l2 6 6 2-6 2-2 6-2-6-6-2 6-2z'/%3E%3Cpath d='M175 160l1.5 4.5 4.5 1.5-4.5 1.5-1.5 4.5-1.5-4.5-4.5-1.5 4.5-1.5z'/%3E%3Cpath d='M150 205l1 3 3 1-3 1-1 3-1-3-3-1 3-1z'/%3E%3C/g%3E%3C/svg%3E") center 40px / 220px repeat,
     radial-gradient(1200px 700px at 50% -10%, var(--glow), transparent 70%),
     linear-gradient(180deg, var(--paper), var(--paper-2));
   background-attachment: fixed;
@@ -110,12 +119,14 @@ h1, h2, h3, h4, p { margin: 0; }
 /* Devanagari has marks above and below the line, so Hindi text gets a little more line height. */
 [lang='hi'], :lang(hi) { font-family: var(--serif); line-height: 1.7; }
 
+/* the band at the top: polished gold with a row of diamond-white points */
 .border-band {
   height: 10px;
   background:
-    linear-gradient(135deg, #7b1e1e 25%, transparent 25%) -6px 0 / 12px 12px,
-    linear-gradient(225deg, #7b1e1e 25%, transparent 25%) -6px 0 / 12px 12px,
-    linear-gradient(90deg, #e07a1f, #c9972b, #e07a1f);
+    linear-gradient(135deg, #eef8fc 25%, transparent 25%) -6px 0 / 12px 12px,
+    linear-gradient(225deg, #eef8fc 25%, transparent 25%) -6px 0 / 12px 12px,
+    linear-gradient(90deg, #b8901f, #f3d77a, #d4af37, #f8e7a8, #d4af37, #f3d77a, #b8901f);
+  box-shadow: 0 1px 0 #b8901f;
 }
 
 /* ---------- layout ---------- */
@@ -123,11 +134,11 @@ h1, h2, h3, h4, p { margin: 0; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px;
   box-shadow: 0 10px 30px var(--shadow);
-  outline: 1px solid rgba(201, 151, 43, 0.25); outline-offset: -6px;
+  outline: 1px solid rgba(212, 175, 55, 0.35); outline-offset: -6px;   /* a fine inner gold frame */
 }
 .card h2 { font-size: calc(21px * var(--fs)); font-weight: 700; color: var(--head); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .ornate { font-family: var(--display); font-size: calc(27px * var(--fs)) !important; justify-content: center !important; text-align: center; }
-.ornate::before, .ornate::after { content: '❋'; color: var(--gold); font-size: calc(16px * var(--fs)); margin: 0 10px; }
+.ornate::before, .ornate::after { content: '◆'; color: var(--diamond); font-size: calc(14px * var(--fs)); margin: 0 10px; }
 .stack { display: flex; flex-direction: column; gap: 12px; }
 .row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
 .center { text-align: center; }
@@ -147,14 +158,15 @@ h1, h2, h3, h4, p { margin: 0; }
 }
 .btn:hover { background: var(--soft-3); }
 .btn:active { transform: scale(0.97); }
-.btn.primary { background: linear-gradient(180deg, #e98a2c, #e07a1f); color: #fff; border-color: #c4661a; box-shadow: 0 6px 18px rgba(224, 122, 31, 0.3); }
-.btn.primary:hover { background: linear-gradient(180deg, #f0963a, #d86f15); }
+/* the main button: polished gold */
+.btn.primary { background: var(--gold-fill); color: var(--on-gold); border-color: var(--gold-edge); box-shadow: 0 6px 18px rgba(184, 144, 31, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.65); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35); }
+.btn.primary:hover { background: var(--gold-fill); filter: brightness(1.06) saturate(1.05); }
 .btn.big { width: 100%; padding: 15px 20px; font-size: calc(20px * var(--fs)); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
 .btn.link, .link { background: none; border: none; color: var(--teal); text-decoration: underline; padding: 10px 8px; min-height: 44px; cursor: pointer; font-weight: 500; }
 .field { display: flex; flex-direction: column; gap: 6px; font-size: calc(16px * var(--fs)); color: var(--muted); font-weight: 700; }
 .field input { width: 100%; padding: 13px 15px; border-radius: 12px; border: 1px solid var(--line); background: var(--field); font-size: calc(19px * var(--fs)); color: var(--ink); outline: none; }
-.field input:focus { border-color: var(--saffron); box-shadow: 0 0 0 3px rgba(224, 122, 31, 0.15); }
+.field input:focus { border-color: var(--saffron); box-shadow: 0 0 0 3px rgba(140, 200, 227, 0.35); }
 .field input.code-input { text-transform: uppercase; letter-spacing: 0.3em; font-weight: 700; text-align: center; }
 .field.invalid input { border-color: var(--wrong); animation: shake 0.4s; }
 .join-row { display: flex; gap: 10px; align-items: flex-end; }
@@ -164,7 +176,7 @@ h1, h2, h3, h4, p { margin: 0; }
 
 .lang-toggle { display: inline-flex; align-items: center; min-height: 44px; border: 1px solid var(--line); border-radius: 999px; background: var(--soft); padding: 3px; cursor: pointer; }
 .lang-toggle span { padding: 6px 12px; border-radius: 999px; font-weight: 700; font-size: calc(15px * var(--fs)); color: var(--muted); }
-.lang-toggle span.on { background: var(--maroon); color: #fff; }
+.lang-toggle span.on { background: var(--gold-fill); color: var(--on-gold); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6); }
 
 /* ---------- settings menu (sound, dark mode, text size, both languages) ---------- */
 .menu { position: relative; }
@@ -194,6 +206,7 @@ button.menu-row:hover { background: var(--soft-3); }
 .title .logo-word { height: 46px; width: auto; max-width: 100%; }
 .tagline { color: var(--ink); font-size: calc(19px * var(--fs)); margin-top: 10px; }
 .stats { color: var(--muted); font-size: calc(16px * var(--fs)); margin-top: 4px; }
+.stats span { white-space: nowrap; }   /* each count wraps as a whole */
 .big-code { font-family: var(--display); font-size: calc(54px * var(--fs)); font-weight: 700; letter-spacing: 0.2em; color: var(--head); padding-left: 0.2em; }
 .install-area:empty { display: none; }
 .install-area { display: flex; justify-content: center; }
@@ -233,7 +246,7 @@ button.menu-row:hover { background: var(--soft-3); }
 .segs-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .segs-5 { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
 .seg { flex: 1 1 0; min-width: 0; min-height: 46px; padding: 8px 6px; border-radius: 10px; border: 1px solid var(--line); background: var(--field); cursor: pointer; font-weight: 700; font-size: calc(17px * var(--fs)); line-height: 1.2; color: var(--ink); }
-.seg.on { background: var(--maroon); color: #fff; border-color: var(--maroon); }
+.seg.on { background: var(--gold-fill); color: var(--on-gold); border-color: var(--gold-edge); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6); }
 .seg:disabled { cursor: default; }
 .seg:disabled:not(.on) { opacity: 0.55; }
 .quick { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 4px; }
@@ -498,8 +511,8 @@ button.pill:hover { background: var(--soft-3); }
 .nb-fig:not(:only-child) img { width: 100%; }
 .nb-fig figcaption { margin-top: 4px; color: #2f2a24; font-size: 0.9em; line-height: 1.35; }
 
-/* ---------- UP TGT / PGT Mathematics: slightly warm and light, with a faint graph-paper grid ---------- */
-:root { --m-paper: #fffaf2; --m-grid: rgba(214, 128, 64, 0.075); --m-accent: #b8502f; --m-soft: #fff1e2; --m-line: #f0d6bd; }
+/* ---------- UP TGT / PGT Mathematics: white with a faint diamond-blue graph-paper grid ---------- */
+:root { --m-paper: #fffdf8; --m-grid: rgba(111, 179, 210, 0.12); --m-accent: #7a5c08; --m-soft: #eef8fc; --m-line: #e3cc84; }
 :root[data-theme='dark'] { --m-paper: #241c16; --m-grid: rgba(255, 196, 150, 0.05); --m-accent: #f2a582; --m-soft: #2e231b; --m-line: #4a3828; }
 .maths-entry, body[data-subject='maths'] .card {
   background-color: var(--m-paper);
@@ -539,9 +552,9 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
    edge and a ribbon to mark it out. Each subject is a locked "door" that opens to show its syllabus,
    unit by unit, and what is planned. UGC NET has its own English / Hindi switch. */
 .net-card { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 20px 16px 16px; border-radius: 18px; color: var(--ink);
-  background: linear-gradient(140deg, #fffaf0 0%, #ffefd4 55%, #ffe2bf 100%); border: 2px dashed var(--gold); box-shadow: 0 10px 26px var(--shadow); }
+  background: linear-gradient(140deg, #ffffff 0%, #fffaeb 55%, #fbf0cd 100%); border: 2px dashed var(--gold); box-shadow: 0 10px 26px var(--shadow); }
 [data-theme='dark'] .net-card { background: linear-gradient(140deg, #2a1f15 0%, #33251a 55%, #402a18 100%); }
-.net-ribbon { align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: linear-gradient(90deg, #e07a1f, #c9972b); color: #fff; font-weight: 700; letter-spacing: 0.04em; font-size: calc(13px * var(--fs)); box-shadow: 0 4px 10px rgba(224, 122, 31, 0.3); }
+.net-ribbon { align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: var(--gold-fill); color: var(--on-gold); font-weight: 700; letter-spacing: 0.04em; font-size: calc(13px * var(--fs)); box-shadow: 0 4px 10px rgba(184, 144, 31, 0.3); }
 .net-head { display: flex; align-items: center; gap: 12px; }
 .net-emoji { font-size: calc(42px * var(--fs)); line-height: 1; }
 .net-head h2 { font-size: calc(25px * var(--fs)); line-height: 1.2; color: var(--head); margin: 0; }
@@ -551,7 +564,7 @@ body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { backgro
 .net-group h3 { margin: 0; font-size: calc(16px * var(--fs)); letter-spacing: 0.08em; color: var(--saffron); }
 .net-switch { display: inline-flex; border: 1px solid var(--gold); border-radius: 999px; overflow: hidden; background: var(--card); }
 .net-switch button { border: 0; background: transparent; color: var(--head); min-height: 36px; padding: 4px 14px; font: inherit; font-weight: 700; font-size: calc(14px * var(--fs)); line-height: 1.2; cursor: pointer; }
-.net-switch button.on { background: linear-gradient(90deg, #e07a1f, #c9972b); color: #fff; }
+.net-switch button.on { background: var(--gold-fill); color: var(--on-gold); }
 .net-only { padding: 2px 10px; border: 1px dashed var(--line); border-radius: 999px; color: var(--muted); font-size: calc(13px * var(--fs)); }
 .net-door { border: 1px solid var(--line); border-radius: 14px; background: var(--card); overflow: hidden; }
 .net-door > summary { list-style: none; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 10px 14px; cursor: pointer; }
@@ -626,7 +639,7 @@ button.topic { cursor: pointer; }
 .topic-more { grid-column: 2; justify-self: start; font-size: calc(15px * var(--fs)); color: var(--muted); text-align: left; }
 .topic .link.topic-more { padding: 4px 0; min-height: 40px; color: var(--teal); }
 .badge { grid-column: 2; justify-self: start; font-size: calc(13px * var(--fs)); font-weight: 700; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
-.badge.go { background: var(--saffron); color: var(--on-saffron); border-color: var(--saffron); }
+.badge.go { background: var(--gold-fill); color: var(--on-gold); border-color: var(--gold-edge); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6); }
 .chapters { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
 .chapter { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--field); }
 .chapter.done { border-color: var(--right); }
@@ -710,7 +723,7 @@ button.topic { cursor: pointer; }
 .dots::after { content: '…'; animation: dots 1.4s steps(4) infinite; display: inline-block; width: 1em; overflow: hidden; vertical-align: bottom; }
 .banner, .toast { position: fixed; left: 50%; transform: translateX(-50%); z-index: 40; padding: 10px 18px; border-radius: 999px; font-weight: 700; font-size: calc(16px * var(--fs)); max-width: calc(100% - 32px); text-align: center; }
 .banner { top: 14px; background: #ffd27a; color: #3b2a1a; }
-.toast { bottom: 84px; background: #7b1e1e; color: #fff; }
+.toast { bottom: 84px; background: var(--maroon); color: #fff; }
 .banner[hidden], .toast[hidden] { display: none; }
 .petals { position: fixed; inset: 0; pointer-events: none; z-index: 50; overflow: hidden; }
 .petals i { position: absolute; top: -20px; width: 12px; height: 16px; border-radius: 60% 0 60% 0; animation: fall linear forwards; opacity: 0.9; }
