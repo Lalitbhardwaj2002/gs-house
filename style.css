@@ -39,6 +39,9 @@
   --sky-bg: #e3f3fd;     /* sky blue: the notes' exam and check boxes (owner's request, in place of red) */
   --sky-line: #4aa3dc;
   --sky-ink: #11618f;
+  --pink-bg: #fdeef3;    /* light pink: the notes' worked examples (owner's request) */
+  --pink-line: #e38aa9;
+  --pink-ink: #9a2a52;
   --warn-bg: #ffffff;    /* a notice keeps its amber text and a gold border, on white */
   --warn-ink: #8a5a00;
   --on-row: #f2f9fd;     /* a chosen row: a faint diamond tint */
@@ -88,6 +91,9 @@
   --sky-bg: #12293a;
   --sky-line: #4aa3dc;
   --sky-ink: #9fd6f7;
+  --pink-bg: #3a1f2b;
+  --pink-line: #c86a8c;
+  --pink-ink: #f6b8cc;
   --warn-bg: #3b2f17;
   --warn-ink: #f1d083;
   --on-row: #3a2a1a;
@@ -545,7 +551,7 @@ body[data-subject='maths'] .nb-lead { background: var(--m-soft); border-left-col
 body[data-subject='maths'] .reader .katex-display { padding: 8px 10px; border-radius: 10px; background: var(--m-soft); }
 body[data-subject='maths'] .nb-box { border-width: 1px 1px 1px 5px; border-radius: 12px; }
 body[data-subject='maths'] .nb-box .katex-display { background: transparent; padding: 4px 0; }
-body[data-subject='maths'] .nb-example .nb-sol { padding-top: 8px; border-top: 1px dashed var(--m-line); }
+body[data-subject='maths'] .nb-example .nb-sol { padding-top: 8px; border-top: 1px dashed var(--pink-line); }
 body[data-subject='maths'] .topic, body[data-subject='maths'] .chapter { background: var(--m-paper); border-color: var(--m-line); }
 /* UP TGT / PGT Mathematics on the home screen, and the link to its full notes PDF */
 .maths-entry { display: flex; flex-direction: column; gap: 12px; }
@@ -700,13 +706,13 @@ button.topic { cursor: pointer; }
 .nb-box > * + * { margin-top: 8px; }
 .nb-trick { background: var(--warn-bg); border-color: var(--gold); }
 /* Boxes of the TGT / PGT maths notes, as in the notes PDF: key notes (blue), syllabus add-ons (green),
-   worked examples (orange) and traps or corrections (sky blue, red until 23 November 2026). Shortcuts use the trick box above. */
+   worked examples (light pink) and traps or corrections (sky blue, red until 23 November 2026). Shortcuts use the trick box above. */
 .nb-note { background: var(--soft-2); border-color: var(--teal); }
 .nb-note h3 { color: var(--teal); }
 .nb-addon { background: var(--right-bg); border-color: var(--right); }
 .nb-addon h3 { color: var(--right-ink); }
-.nb-example { background: var(--soft-3); border-color: var(--saffron); }
-.nb-example h3 { color: var(--head); }
+.nb-example { background: var(--pink-bg); border-color: var(--pink-line); }
+.nb-example h3 { color: var(--pink-ink); }
 .nb-check { background: var(--sky-bg); border-color: var(--sky-line); }
 .nb-check h3, .nb-check b { color: var(--sky-ink); }
 .nb-trick h3, .nb-trick b { color: var(--warn-ink); }
@@ -832,7 +838,7 @@ body:not([data-screen='home']) .about { display: none; }
   .sh-opts { font-size: 12pt; }
   .sh-expl, .sh-notes, .refs, .sh-ans { font-size: 11pt; }
   /* Notes of the book companion on paper: light colours whatever the theme, one chapter per page. */
-  :root, :root[data-theme='dark'] { --field: #fff; --soft: #fff; --soft-2: #fff; --soft-3: #f3f8fb; --chip: #eef5f9; --line-2: #ddd; --warn-bg: #fff; --warn-ink: #8a5a00; --saffron: #96700a; --gold: #d4af37; --right: #2e8b57; --wrong: #c0392b; --sky-bg: #e3f3fd; --sky-line: #4aa3dc; --sky-ink: #11618f; }
+  :root, :root[data-theme='dark'] { --field: #fff; --soft: #fff; --soft-2: #fff; --soft-3: #f3f8fb; --chip: #eef5f9; --line-2: #ddd; --warn-bg: #fff; --warn-ink: #8a5a00; --saffron: #96700a; --gold: #d4af37; --right: #2e8b57; --wrong: #c0392b; --sky-bg: #e3f3fd; --sky-line: #4aa3dc; --sky-ink: #11618f; --pink-bg: #fdeef3; --pink-line: #e38aa9; --pink-ink: #9a2a52; }
   .reader, .reader[lang='hi'] { font-size: 11.5pt; }
   .reader-title { font-size: 18pt; }
   .nb-h { font-size: 13pt; break-after: avoid; }
