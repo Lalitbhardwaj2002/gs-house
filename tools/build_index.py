@@ -27,6 +27,9 @@ net = data / 'net'
 index['net'] = sorted(f.relative_to(net).as_posix() for f in net.rglob('*') if f.suffix in ('.json', '.txt'))
 # The solved past papers of UP TGT / PGT Mathematics (data/mq/), with their index: saved for offline practice.
 index['mq'] = sorted(f.name for f in (data / 'mq').glob('*.json')) if (data / 'mq').is_dir() else []
+# The number of maths questions in those papers (past and expected), shown on the home screen.
+mq_index = data / 'mq' / 'index.json'
+index['mqQuestions'] = sum(len(p['ns']) for p in json.loads(mq_index.read_text(encoding='utf-8'))['papers']) if mq_index.exists() else 0
 (data / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding='utf-8')
 total = sum(c['total'] for c in index['sections'].values())
-print(f'data/index.json: {len(index["sections"])} sections, {total} questions')
+print(f'data/index.json: {len(index["sections"])} sections, {total} questions; {index["mqQuestions"]} maths questions')
