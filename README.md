@@ -49,4 +49,4 @@ The live site counts visits, rooms created and quizzes started with [GoatCounter
 
 ## License
 
-GS House is released under the [MIT License](LICENSE). The reference books cited in the explanations belong to their publishers and are not part of this repository.
+All rights reserved: GS House is private, proprietary work, and no licence is granted to copy, modify or reuse it (see [LICENSE](LICENSE)). The reference books cited in the explanations belong to their publishers and are not part of this repository.
