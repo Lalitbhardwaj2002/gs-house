@@ -548,7 +548,7 @@ Past questions per unit:
 
 ## Expected TGT paper 1 · June 2026 pattern
 
-- In the app: `data/mq/exp-tgt-2026-1.json`, 90 questions (25 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-tgt-2026-1.json`, 90 questions (25 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -761,7 +761,7 @@ Edits of past questions, each a fair, faithful repair: Q20 "can be grouped with 
 
 ## Expected TGT paper 2 · most-repeated ideas
 
-- In the app: `data/mq/exp-tgt-2026-2.json`, 90 questions (33 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-tgt-2026-2.json`, 90 questions (33 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -1017,7 +1017,7 @@ No two questions inside the mock repeat each other.
 
 ## Expected TGT paper 3 · harder, 2021 level
 
-- In the app: `data/mq/exp-tgt-2026-3.json`, 90 questions (30 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-tgt-2026-3.json`, 90 questions (30 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -1277,7 +1277,7 @@ Eleven new questions of this paper were the same as new questions of Expected TG
 
 ## Expected TGT paper 4 · syllabus gaps
 
-- In the app: `data/mq/exp-tgt-2026-4.json`, 90 questions (24 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-tgt-2026-4.json`, 90 questions (24 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -1584,7 +1584,7 @@ Every new question is on a line of the UP TGT syllabus (blueprint §A5 list) and
 
 ## Expected TGT paper 5 · balanced
 
-- In the app: `data/mq/exp-tgt-2026-5.json`, 90 questions (28 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-tgt-2026-5.json`, 90 questions (28 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -1879,7 +1879,7 @@ Writer's past questions removed: p516 Q161 (Q44, = UP PGT 2026 Q113), p516 Q166 
 
 ## Expected PGT paper 1 · May 2026 pattern
 
-- In the app: `data/mq/exp-pgt-2026-1.json`, 90 questions (25 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-pgt-2026-1.json`, 90 questions (25 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -2092,7 +2092,7 @@ Related but different asks (no action needed): P1 Q32 (new: AB=A, BA=B) vs P2 Q3
 
 ## Expected PGT paper 2 · most-repeated ideas
 
-- In the app: `data/mq/exp-pgt-2026-2.json`, 90 questions (32 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-pgt-2026-2.json`, 90 questions (32 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -2310,7 +2310,7 @@ Kept and noted (same idea, different question; not repeats): Q69 (R = H, tan⁻�
 
 ## Expected PGT paper 3 · harder level
 
-- In the app: `data/mq/exp-pgt-2026-3.json`, 90 questions (30 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-pgt-2026-3.json`, 90 questions (30 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -2510,7 +2510,7 @@ Note and flag fixes in kept questions: Q4 note (a) (4 is a sign slip in the last
 
 ## Expected PGT paper 4 · syllabus gaps
 
-- In the app: `data/mq/exp-pgt-2026-4.json`, 90 questions (20 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-pgt-2026-4.json`, 90 questions (20 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
@@ -2708,7 +2708,7 @@ Writer's flagged edits judged fair and faithful: Q4 (5/13 removed because it wou
 
 ## Expected PGT paper 5 · balanced
 
-- In the app: `data/mq/exp-pgt-2026-5.json`, 90 questions (30 asked before), one clock of 100 minutes, no negative marking.
+- In the app: `data/mq/exp-pgt-2026-5.json`, 90 questions (30 asked before), one clock of 100 minutes, −1/3 mark for a wrong answer.
 
 ### Writing
 
