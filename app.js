@@ -144,6 +144,14 @@ function loadMqIndex() {
 // Text of a maths question: escaped HTML whose $…$ formulas KaTeX draws later; a solution keeps its lines.
 const mtext = (s) => esc(s || '').replace(/\n/g, '<br>');
 const mparas = (s) => String(s || '').split('\n').filter((l) => l.trim()).map((l) => `<p>${esc(l)}</p>`).join('');
+// Where a maths question was asked, in a few words (owner's request): the exam and year ("UP TGT 2021");
+// a question of an expected paper names the earlier paper that asked it, or says "New".
+const mqSource = (q) => {
+  const s = (q && q.src) || {};
+  if (s.from) return s.from;
+  if (String(s.paper || '').startsWith('exp-')) return 'New';
+  return String(s.label || '').replace(/ · Q\d+.*$/, '').replace(/\s*\([^)]*\)/g, '').trim();
+};
 const readList = (key) => {
   try { const v = JSON.parse(store.get('localStorage', key) || '[]'); return Array.isArray(v) ? v : []; } catch { return []; }
 };
@@ -1408,7 +1416,7 @@ function questionHTML(v, amHost) {
     <section class="q-card ${done ? 'done' : ''}">
       <div class="q-main">
         <div class="q-meta">
-          <span class="q-sec">${isM ? `➗ ${esc(q.src ? q.src.label : sectionTitle(section, 'en'))}` : `${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}`}</span>
+          <span class="q-sec">${isM ? `➗ ${esc(q.src ? mqSource(q) : sectionTitle(section, 'en'))}` : `${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}`}</span>
           <span class="q-level lvl-${q.level}">${esc(t(`level_${q.level}`))}</span>
           ${isM ? '' : `<span class="q-lang">${langBtn('en', 'EN')}${langBtn('hi', 'हिं')}${langBtn('both', t('both'))}</span>`}
           ${markButton(q.id)}
@@ -1469,7 +1477,7 @@ function mathsFeedbackHTML(q, body, mine) {
       ${flow ? `<div class="flow" aria-label="Topic">${flow}</div>` : ''}
       <div class="why"><h3>📖 Solution</h3>${mparas(body.explanation)}</div>
       ${(body.facts || []).length ? `<div class="facts"><h3>📜 ${t('remember')}</h3><ul>${body.facts.map((f) => `<li>${mtext(f)}</li>`).join('')}</ul></div>` : ''}
-      <p class="refs">📝 ${esc(q.src ? q.src.label : '')}${keyNote}${topic ? ` · 📖 Notes: ${esc(topic)}` : ''}</p>
+      <p class="refs">📝 ${esc(mqSource(q))}${keyNote}${topic ? ` · 📖 Notes: ${esc(topic)}` : ''}</p>
     </section>`;
 }
 
@@ -1638,7 +1646,7 @@ function sheetHTML(v) {
     const hl = sl === 'hi' ? 'hi' : 'en';
     return `
       <article class="sh-item" id="sh-${r}">
-        <header><b>${r}.</b> <span>${esc(q.math && q.src ? q.src.label : sectionTitle(sec, hl))}</span> <span class="q-level lvl-${q.level}">${esc(T[hl][`level_${q.level}`])}</span>
+        <header><b>${r}.</b> <span>${esc(q.math && q.src ? mqSource(q) : sectionTitle(sec, hl))}</span> <span class="q-level lvl-${q.level}">${esc(T[hl][`level_${q.level}`])}</span>
           <span class="no-print">${markButton(q.id)}</span>
           <span class="sh-ans">${t('rightAnswer')}: <b>${LETTERS[q.answer]}</b> · ${t('yourAnswerWas')}: <b>${mine ? LETTERS[mine.choice] : t('notAnswered')}</b></span></header>
         ${blocks}
