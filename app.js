@@ -1709,7 +1709,11 @@ function updateRegions(v, amHost) {
     const everyone = v.locked || (active.length > 0 && answeredN === active.length);
     const status = `<p class="answer-status ${everyone ? 'all' : ''}">${everyone ? `✅ ${t('allAnswered')}` : `⏳ ${t('answered', answeredN, active.length)}`}</p>`;
     let nextHTML;
-    if (v.solo) nextHTML = doneMe ? `<button class="btn primary big" data-action="next">${nextLabel}</button>` : '';
+    // In a maths mock played alone, Next is there from the start, so a question can be left and the
+    // paper goes on, as in the exam (owner's request, 26 November 2026); it turns gold once answered.
+    const mock = v.solo && v.settings && v.settings.mq;
+    if (v.solo) nextHTML = doneMe ? `<button class="btn primary big" data-action="next">${nextLabel}</button>`
+      : mock ? `<button class="btn big" data-action="next">${nextLabel}</button>` : '';
     else if (amHost) nextHTML = `${status}<button class="btn big ${everyone ? 'primary' : ''}" data-action="next">${nextLabel}</button>`;
     else nextHTML = doneMe ? `${status}<p class="muted center">${t('waitNext', esc(hostName(v)))}<span class="dots"></span></p>` : '';
     setHTML('next-area', nextHTML);
