@@ -126,6 +126,24 @@ const MATHS_UNIT = { id: 'maths', icon: '➗', en: 'Mathematics', hi: 'गणि
 UNITS.push(MATHS_UNIT);
 unitById.maths = MATHS_UNIT;
 const isMathsId = (qid) => /^mq\//.test(String(qid));
+// GK mocks for UP TGT / PGT (data/gkm/): sets of 30 questions in the pattern of Part I of the new paper
+// (90 subject + 30 GK), bilingual like the GK quiz. A set is "gkm/<set>" (data/gkm/<set>.json), its questions
+// "gkm/<set>-NNN"; each question names its syllabus section (`section`), under which results count it.
+// They are kept out of the GK quiz's section list and the book quizzes.
+const isGkmId = (qid) => /^gkm\//.test(String(qid));
+const gkm = { index: null, loading: null };
+function loadGkmIndex() {
+  if (!gkm.loading) {
+    gkm.loading = fetch('data/gkm/index.json', { cache: 'no-cache' })
+      .then((r) => { if (!r.ok) throw new Error('gkm'); return r.json(); })
+      .then((ix) => { gkm.index = ix; return ix; })
+      .catch(() => { gkm.loading = null; return { sets: [] }; });
+  }
+  return gkm.loading;
+}
+// The syllabus section a question counts under: a maths question's notes topic, a GK mock question's
+// own section, otherwise the section of its id.
+const topicOf = (q) => (q.math && q.topic ? `mt/${q.topic}` : q.section || sectionOf(q.id));
 const mq = { index: null, loading: null };
 function loadMqIndex() {
   if (!mq.loading) {
@@ -637,7 +655,7 @@ function handleAction(pid, msg, conn = null) {
       if (!fromHost || !['lobby', 'over'].includes(s.phase)) return;
       // (A full maths paper has up to 150 questions, so up to 200 are taken.)
       const qids = Array.isArray(msg.qids)
-        ? [...new Set(msg.qids.filter((id) => typeof id === 'string' && (sectionById[sectionOf(id)] || isMathsId(id))))].slice(-200) : [];
+        ? [...new Set(msg.qids.filter((id) => typeof id === 'string' && (sectionById[sectionOf(id)] || isMathsId(id) || isGkmId(id))))].slice(-200) : [];
       const secs = Array.isArray(msg.sections) ? [...new Set(msg.sections.filter((id) => sectionById[id]))] : [];
       if (!qids.length && !secs.length) { toast(t('noQs')); return; }
       if (s.phase === 'over') backToLobby(s);
@@ -890,7 +908,7 @@ function reportFor(p) {
     const q = findQuestion(qid);
     if (!q) return;
     const a = (host.answers[i + 1] || {})[p.id];
-    const sec = q.math && q.topic ? `mt/${q.topic}` : qid.replace(/-\d{3}$/, '');
+    const sec = topicOf(q);
     bySection[sec] = bySection[sec] || [0, 0];
     byLevel[q.level] = byLevel[q.level] || [0, 0];
     bySection[sec][0] += 1;
@@ -1299,7 +1317,7 @@ function setupHTML(v, amHost) {
         <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '1/3' : '1/4'}` : t('none')))}</div>
       </div>
       <div class="setup-secs">
-        <div class="mq-pick"><span class="topic-icon">➗</span><span><b>${esc(st.mq.title)}</b><span class="muted small">${st.mq.n} questions${st.mq.note ? ` · ${esc(st.mq.note)}` : ''}</span></span></div>
+        <div class="mq-pick"><span class="topic-icon">${st.mq.note === 'GK mock' ? '📰' : '➗'}</span><span><b>${esc(st.mq.title)}</b><span class="muted small">${st.mq.n} questions${st.mq.note ? ` · ${esc(st.mq.note)}` : ''}</span></span></div>
       </div>
     </div>`;
   }
@@ -1375,7 +1393,7 @@ function questionHTML(v, amHost) {
   const altLang = ql === 'en' ? 'hi' : 'en';
   const alt = mode === 'both' ? q[altLang] : null;          // the other language, shown below in "both" mode
   const body = q[ql] || q.en;
-  const section = sectionOf(q.id);
+  const section = q.section || sectionOf(q.id);
   const sec = sectionById[section];
   const unit = sec ? unitById[sec.unit] : null;
   const mine = local.mine[v.round];
@@ -1648,7 +1666,7 @@ function sheetHTML(v) {
           <ul class="sh-notes">${b.options.map((o, i) => `<li><b>${LETTERS[i]}:</b> ${esc(b.notes[i])}</li>`).join('')}</ul>
         </div>`;
     }).join('');
-    const sec = sectionOf(q.id);
+    const sec = q.section || sectionOf(q.id);
     const hl = sl === 'hi' ? 'hi' : 'en';
     return `
       <article class="sh-item" id="sh-${r}">
@@ -1764,7 +1782,7 @@ function renderHome() {
   const typed = ui.screen === 'home' && $('#name') ? $('#name').value : me.name; // keep a name being typed across a redraw
   setScreen('home');
   const invited = normalizeCode(new URLSearchParams(location.search).get('room'));
-  const total = Object.values(bankIndex.sections).reduce((sum, c) => sum + c.total, 0);
+  const total = Object.values(bankIndex.sections).reduce((sum, c) => sum + c.total, 0) + (bankIndex.gkmQuestions || 0);
   const nameField = `
     <label class="field" id="name-field"><span>${t('yourName')}</span>
       <input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(typed)}" enterkeyhint="go">
@@ -2675,9 +2693,10 @@ const mqClock = (n, minutes = 0) => (ui.mqClock === false ? 0 : minutes || Math.
 const mqNeg = (n) => (n ? `−${n === 0.33 ? '1/3' : n === 0.25 ? '1/4' : n} for a wrong answer` : 'no negative marking');
 async function showMqPractice(s, route, keepScroll) {
   if (!mq.index) app.innerHTML = SPINNER;
-  const ix = await loadMqIndex();
+  const [ix, gix] = await Promise.all([loadMqIndex(), loadGkmIndex()]);
   if (book.route !== route || ui.screen !== 'book') return;
   const level = s.practice.level;
+  const gkSets = (gix.sets || []).filter((x) => x.level === level);
   const all = ix.papers.filter((p) => p.level === level);
   const expected = all.filter((p) => p.kind === 'expected');   // mocks written for the coming exam
   const papers = all.filter((p) => p.kind !== 'expected');       // past papers
@@ -2700,7 +2719,7 @@ async function showMqPractice(s, route, keepScroll) {
   app.innerHTML = `
     ${bookBar(`net/${s.id}`, bookName(s.title))}
     <section class="hero book-hero" lang="en"><div class="book-emoji">🎯</div><h1 class="book-title">Practice and mock tests</h1>
-      <p class="tagline">${expected.length ? `${expected.length} expected papers + ` : ''}${papers.length} past papers · every question solved and checked</p></section>
+      <p class="tagline">${expected.length ? `${expected.length} expected papers + ` : ''}${papers.length} past papers${gkSets.length ? ` + ${gkSets.length} GK mocks` : ''} · every question solved and checked</p></section>
     <section class="card" lang="en"><h2>👥 Who is playing?</h2>
       <div class="segs segs-2">${seg(!ui.mqRoom, 'solo', '🪔 Alone')}${seg(ui.mqRoom, 'room', '👥 With friends')}</div>
       <p class="field-label">⏱️ Clock</p>
@@ -2710,6 +2729,9 @@ async function showMqPractice(s, route, keepScroll) {
       <p class="muted small">You get a room code to share; up to ${CONFIG.maxPlayers} players join with it from their own phones, and you start when everyone is in.</p>` : ''}
     </section>
     ${expected.length ? `<section class="card" lang="en"><h2>🔮 Expected papers for December 2026</h2><p class="muted small">Full mocks of ${expected[0].ns.length} mathematics questions in the pattern of the latest UP ${level} paper and the official syllabus: past questions whose ideas keep coming back (each names the paper that asked it), and new questions in the board's style. Every question was solved, then checked by a second mathematician.</p><div class="mq-list">${rowsOf(expected, '🔮')}</div></section>` : ''}
+    ${gkSets.length ? `<section class="card" lang="en"><h2>📰 General knowledge mocks (Part I)</h2><p class="muted small">30 questions each, as in Part I of the new UP ${level} paper (90 subject + 30 GK): 2026 current affairs and the GS syllabus, in Hindi and English, each question checked twice.</p><div class="mq-list">${gkSets.map((x) => `
+      <div class="mq-row"><span class="topic-icon">📰</span><span class="mq-what"><b>${esc(x.title)}</b><span class="muted small">${x.n} questions · about ${x.minutes} minutes · ${mqNeg(x.negative)}</span></span>
+        <button class="btn" data-action="gk-set" data-id="${esc(x.id)}">Start ▶</button></div>`).join('')}</div></section>` : ''}
     ${papers.length ? `<section class="card" lang="en"><h2>📝 Full papers (mock tests)</h2><p class="muted small">Every question of the paper in its order, at about the exam's pace per question and with its negative marking. Where a paper also had general studies, only its mathematics questions are here.</p><div class="mq-list">${paperRows}</div></section>` : ''}
     ${total ? `<section class="card" lang="en"><h2>🔀 Mixed mocks</h2><p class="muted small">Questions from all ${all.length} papers${expected.length ? ' (past and expected)' : ''}, those you have not seen first.</p><div class="row">${mixes.map((n) => `<button class="btn" data-action="mq-mixed" data-n="${n}">${Math.min(n, total)} questions</button>`).join('')}</div></section>` : ''}
     ${units.length ? `<section class="card" lang="en"><h2>📚 Topic-wise practice</h2><p class="muted small">Questions on one unit of the syllabus, without negative marking.</p><div class="mq-list">${unitRows}</div></section>` : ''}
@@ -3077,6 +3099,12 @@ const actions = {
     const p = ((mq.index || {}).papers || []).find((x) => x.id === btn.dataset.id);
     if (!p || (ui.mqRoom && !readName())) return;
     startMq({ qids: p.ns.map((n) => mqId(p.id, n)), title: p.title, clock: mqClock(p.ns.length, p.kind === 'expected' ? 0 : p.minutes), negative: p.negative, order: 'paper', note: p.kind === 'expected' ? 'expected paper' : 'past paper' });
+  },
+  'gk-set'(btn) {
+    const x = (((gkm.index || {}).sets) || []).find((y) => y.id === btn.dataset.id);
+    if (!x || (ui.mqRoom && !readName())) return;
+    const qids = Array.from({ length: x.n }, (_, i) => `gkm/${x.id}-${String(i + 1).padStart(3, '0')}`);
+    startMq({ qids, title: x.title, clock: mqClock(x.n, x.minutes), negative: x.negative, order: 'paper', note: 'GK mock' });
   },
   'mq-mixed'(btn) {
     const s = mqSubject();

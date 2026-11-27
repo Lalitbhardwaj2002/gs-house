@@ -1,0 +1,1975 @@
+{
+ "set": {
+  "id": "tgt-01",
+  "level": "TGT",
+  "title": "TGT GK mock 1",
+  "minutes": 15,
+  "negative": 0.33
+ },
+ "questions": [
+  {
+   "id": "gkm/tgt-01-001",
+   "level": "TGT",
+   "section": "sci-physics",
+   "answer": 1,
+   "en": {
+    "q": "Which instrument is used to measure atmospheric pressure?",
+    "options": [
+     "Hygrometer",
+     "Barometer",
+     "Anemometer",
+     "Lactometer"
+    ],
+    "explanation": "A barometer measures the pressure of the atmosphere. Evangelista Torricelli made the first mercury barometer in 1643; a sudden fall in the barometer reading often warns of stormy weather.",
+    "notes": [
+     "Hygrometer: measures the relative humidity of the air.",
+     "Barometer: measures atmospheric pressure; invented by Torricelli.",
+     "Anemometer: measures the speed of the wind.",
+     "Lactometer: measures the specific gravity (purity) of milk."
+    ],
+    "path": [
+     "Physics",
+     "Pressure",
+     "Measuring instruments"
+    ],
+    "facts": [
+     "Normal atmospheric pressure at sea level is about 76 cm of mercury, or about 1.013 × 10⁵ Pa.",
+     "Atmospheric pressure decreases with height above sea level."
+    ]
+   },
+   "hi": {
+    "q": "वायुमंडलीय दाब मापने के लिए किस यंत्र का प्रयोग किया जाता है?",
+    "options": [
+     "हाइग्रोमीटर",
+     "बैरोमीटर",
+     "एनीमोमीटर",
+     "लैक्टोमीटर"
+    ],
+    "explanation": "बैरोमीटर (वायुदाबमापी) से वायुमंडल का दाब मापा जाता है। पहला पारद बैरोमीटर इवेंजेलिस्टा टॉरिसेली ने 1643 में बनाया था; बैरोमीटर का पाठ्यांक अचानक गिरना प्रायः तूफ़ान का संकेत होता है।",
+    "notes": [
+     "हाइग्रोमीटर: वायु की आपेक्षिक आर्द्रता मापता है।",
+     "बैरोमीटर: वायुमंडलीय दाब मापता है; आविष्कारक टॉरिसेली।",
+     "एनीमोमीटर: पवन की गति मापता है।",
+     "लैक्टोमीटर: दूध का आपेक्षिक घनत्व (शुद्धता) मापता है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "दाब",
+     "मापक यंत्र"
+    ],
+    "facts": [
+     "समुद्र तल पर सामान्य वायुमंडलीय दाब लगभग 76 सेमी पारे के स्तंभ, यानी लगभग 1.013 × 10⁵ पास्कल होता है।",
+     "समुद्र तल से ऊँचाई बढ़ने पर वायुमंडलीय दाब घटता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 8 Science, chapter 'Force and Pressure' (atmospheric pressure)"
+    },
+    {
+     "book": "tgt-pgt-gk",
+     "page": 198
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-002",
+   "level": "TGT",
+   "section": "env-ecology",
+   "answer": 1,
+   "en": {
+    "q": "A food chain that begins with dead organic matter rather than with green plants is called a:",
+    "options": [
+     "Grazing food chain",
+     "Detritus food chain",
+     "Parasitic food chain",
+     "Predator food chain"
+    ],
+    "explanation": "The detritus food chain starts with dead leaves, dead animals and other organic remains, which are eaten by detritivores and broken down by decomposers such as bacteria and fungi. In a forest more energy flows through it than through the grazing chain.",
+    "notes": [
+     "Grazing food chain: starts with green plants eaten by herbivores.",
+     "Detritus food chain: starts with dead organic matter (detritus).",
+     "Parasitic food chain: runs from a host to parasites and hyper-parasites.",
+     "Predator food chain: an informal name for a chain of prey and predators that begins with plants."
+    ],
+    "path": [
+     "Environment",
+     "Ecology & Ecosystem",
+     "Food chains",
+     "Detritus food chain"
+    ],
+    "facts": [
+     "Earthworms are detritivores.",
+     "Decomposers release nutrients back into the soil."
+    ]
+   },
+   "hi": {
+    "q": "जो आहार शृंखला हरे पौधों के स्थान पर मृत कार्बनिक पदार्थ से आरंभ होती है, उसे कहते हैं:",
+    "options": [
+     "चारण आहार शृंखला",
+     "अपरद आहार शृंखला",
+     "परजीवी आहार शृंखला",
+     "परभक्षी आहार शृंखला"
+    ],
+    "explanation": "अपरद आहार शृंखला मृत पत्तियों, मृत जंतुओं और अन्य कार्बनिक अवशेषों से आरंभ होती है, जिन्हें अपरदाहारी खाते हैं और जीवाणु व कवक जैसे अपघटक विघटित करते हैं। वन में इससे होकर चारण शृंखला की तुलना में अधिक ऊर्जा प्रवाहित होती है।",
+    "notes": [
+     "चारण आहार शृंखला: हरे पौधों से आरंभ, जिन्हें शाकाहारी खाते हैं।",
+     "अपरद आहार शृंखला: मृत कार्बनिक पदार्थ (अपरद) से आरंभ।",
+     "परजीवी आहार शृंखला: पोषक से परजीवी और अतिपरजीवी की ओर चलती है।",
+     "परभक्षी आहार शृंखला: पौधों से आरंभ होकर शिकार और शिकारी की शृंखला का एक अनौपचारिक नाम।"
+    ],
+    "path": [
+     "पर्यावरण",
+     "पारिस्थितिकी एवं पारितंत्र",
+     "आहार शृंखला",
+     "अपरद आहार शृंखला"
+    ],
+    "facts": [
+     "केंचुआ अपरदाहारी है।",
+     "अपघटक पोषक तत्वों को फिर से मृदा में लौटाते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 12 Biology, chapter 'Ecosystem'"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-003",
+   "level": "TGT",
+   "section": "ca-intl",
+   "answer": 1,
+   "en": {
+    "q": "The SCO summit of 2026, which adopted a declaration marking the organisation's 25th anniversary, was held at:",
+    "options": [
+     "Tianjin",
+     "Bishkek",
+     "Astana",
+     "New Delhi"
+    ],
+    "explanation": "Kyrgyzstan, which chaired the Shanghai Cooperation Organisation in 2025–26, hosted the meeting of the Council of Heads of State at Bishkek on 31 August–1 September 2026. Leaders signed the Bishkek Declaration marking 25 years of the SCO, which was founded at Shanghai in 2001.",
+    "notes": [
+     "Tianjin (China) hosted the SCO summit of August–September 2025.",
+     "Bishkek is the capital of Kyrgyzstan, the SCO chair for 2025–26.",
+     "Astana (Kazakhstan) hosted the SCO summit of July 2024.",
+     "India chaired the SCO in 2023 and hosted that year's summit virtually."
+    ],
+    "path": [
+     "Current Affairs",
+     "International Affairs",
+     "Summits",
+     "SCO"
+    ],
+    "facts": [
+     "India and Pakistan became full members of the SCO in 2017.",
+     "Iran joined the SCO in 2023 and Belarus in 2024."
+    ]
+   },
+   "hi": {
+    "q": "2026 का एससीओ शिखर सम्मेलन, जिसमें संगठन की 25वीं वर्षगाँठ पर घोषणापत्र अपनाया गया, कहाँ हुआ?",
+    "options": [
+     "तियानजिन",
+     "बिश्केक",
+     "अस्ताना",
+     "नई दिल्ली"
+    ],
+    "explanation": "2025–26 में शंघाई सहयोग संगठन (एससीओ) के अध्यक्ष किर्गिस्तान ने 31 अगस्त–1 सितंबर 2026 को बिश्केक में राष्ट्राध्यक्ष परिषद की बैठक की मेजबानी की। नेताओं ने एससीओ के 25 वर्ष पूरे होने पर 'बिश्केक घोषणापत्र' पर हस्ताक्षर किए; संगठन की स्थापना 2001 में शंघाई में हुई थी।",
+    "notes": [
+     "तियानजिन (चीन) में अगस्त–सितंबर 2025 में एससीओ शिखर सम्मेलन हुआ।",
+     "बिश्केक किर्गिस्तान की राजधानी है, जो 2025–26 में एससीओ का अध्यक्ष था।",
+     "अस्ताना (कज़ाखस्तान) में जुलाई 2024 में एससीओ शिखर सम्मेलन हुआ।",
+     "भारत ने 2023 में एससीओ की अध्यक्षता की और उस वर्ष का सम्मेलन वर्चुअल रूप में आयोजित किया।"
+    ],
+    "path": [
+     "समसामयिकी",
+     "अंतर्राष्ट्रीय घटनाएँ",
+     "शिखर सम्मेलन",
+     "एससीओ"
+    ],
+    "facts": [
+     "भारत और पाकिस्तान 2017 में एससीओ के पूर्ण सदस्य बने।",
+     "ईरान 2023 में और बेलारूस 2024 में एससीओ में शामिल हुए।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Al Jazeera – Key takeaways from the Bishkek summit (1 September 2026)",
+     "url": "https://aljazeera.com/news/2026/9/1/sco-slams-attacks-sanctions-on-iran-key-takeaways-from-bishkek-summit"
+    },
+    {
+     "source": "Anadolu Agency – SCO leaders adopt Bishkek Declaration",
+     "url": "https://www.aa.com.tr/en/world/sco-leaders-adopt-bishkek-declaration-expand-cooperation-on-security-trade-technology/4043993"
+    },
+    {
+     "source": "All India Radio News – 26th SCO Summit begins in Bishkek, Kyrgyzstan (1 September 2026)",
+     "url": "https://newsonair.gov.in/26th-sco-summit-begins-in-bishkek-kyrgyzstan/"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-004",
+   "level": "TGT",
+   "section": "geo-earth",
+   "answer": 3,
+   "en": {
+    "q": "Fossils are most commonly found in which type of rock?",
+    "options": [
+     "Igneous rocks",
+     "Metamorphic rocks",
+     "Plutonic rocks",
+     "Sedimentary rocks"
+    ],
+    "explanation": "Sedimentary rocks form from layers of sediment deposited over long periods, usually under water. Remains of plants and animals buried in these layers are preserved as fossils, while the heat of magma or of metamorphism usually destroys such remains.",
+    "notes": [
+     "Igneous rocks: form from cooling molten magma or lava, whose heat destroys organic remains.",
+     "Metamorphic rocks: heat and pressure that form them usually destroy fossils.",
+     "Plutonic rocks: igneous rocks such as granite that cool deep inside the Earth.",
+     "Sedimentary rocks: layered rocks such as sandstone and limestone that preserve fossils."
+    ],
+    "path": [
+     "Geography",
+     "Physical Geography",
+     "Rocks",
+     "Sedimentary rocks"
+    ],
+    "facts": [
+     "Sedimentary rocks are also called layered or stratified rocks.",
+     "Sandstone, shale and limestone are sedimentary rocks."
+    ]
+   },
+   "hi": {
+    "q": "जीवाश्म सबसे अधिक किस प्रकार की चट्टानों में पाए जाते हैं?",
+    "options": [
+     "आग्नेय चट्टानें",
+     "कायांतरित चट्टानें",
+     "पातालीय (प्लूटोनिक) चट्टानें",
+     "अवसादी चट्टानें"
+    ],
+    "explanation": "अवसादी चट्टानें लंबे समय तक, प्रायः जल के नीचे, जमा होने वाली अवसाद की परतों से बनती हैं। इन परतों में दबे पौधों और जीवों के अवशेष जीवाश्म के रूप में सुरक्षित रह जाते हैं, जबकि मैग्मा या कायांतरण की ऊष्मा प्रायः ऐसे अवशेषों को नष्ट कर देती है।",
+    "notes": [
+     "आग्नेय चट्टानें: पिघले मैग्मा या लावा के ठंडा होने से बनती हैं; इनकी ऊष्मा जैविक अवशेष नष्ट कर देती है।",
+     "कायांतरित चट्टानें: इन्हें बनाने वाला ताप और दाब प्रायः जीवाश्मों को नष्ट कर देता है।",
+     "पातालीय चट्टानें: ग्रेनाइट जैसी आग्नेय चट्टानें, जो पृथ्वी के भीतर गहराई में ठंडी होती हैं।",
+     "अवसादी चट्टानें: बलुआ पत्थर और चूना पत्थर जैसी परतदार चट्टानें, जिनमें जीवाश्म सुरक्षित रहते हैं।"
+    ],
+    "path": [
+     "भूगोल",
+     "भौतिक भूगोल",
+     "चट्टानें",
+     "अवसादी चट्टानें"
+    ],
+    "facts": [
+     "अवसादी चट्टानों को परतदार चट्टानें भी कहते हैं।",
+     "बलुआ पत्थर, शेल और चूना पत्थर अवसादी चट्टानें हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 7 Our Environment, chapter 'Inside Our Earth'"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-005",
+   "level": "TGT",
+   "section": "eco-basics",
+   "answer": 2,
+   "en": {
+    "q": "In February 2026, MoSPI released a new series of India's national accounts with which base year?",
+    "options": [
+     "2011–12",
+     "2020–21",
+     "2022–23",
+     "2024–25"
+    ],
+    "explanation": "On 27 February 2026 the Ministry of Statistics and Programme Implementation released the new series of GDP and other national accounts estimates with base year 2022–23, replacing the 2011–12 series. 2022–23 was chosen as a recent normal year after the GST roll-out and the Covid-19 disruptions.",
+    "notes": [
+     "2011–12: the base year of the previous series, which the new one replaced.",
+     "2020–21: the Covid-19 pandemic year, unsuitable as a base year.",
+     "2022–23: the base year of the new national accounts series.",
+     "2024–25: not the base year; it is a later year covered by the new estimates."
+    ],
+    "path": [
+     "Indian Economy",
+     "National Income",
+     "Measurement of GDP",
+     "Base year revision"
+    ],
+    "facts": [
+     "The 2011–12 series had been introduced in January 2015.",
+     "Real GDP is GDP valued at the constant prices of the base year."
+    ]
+   },
+   "hi": {
+    "q": "फ़रवरी 2026 में सांख्यिकी एवं कार्यक्रम कार्यान्वयन मंत्रालय (MoSPI) ने भारत के राष्ट्रीय लेखों की नई शृंखला किस आधार वर्ष के साथ जारी की?",
+    "options": [
+     "2011–12",
+     "2020–21",
+     "2022–23",
+     "2024–25"
+    ],
+    "explanation": "27 फ़रवरी 2026 को सांख्यिकी एवं कार्यक्रम कार्यान्वयन मंत्रालय ने सकल घरेलू उत्पाद और अन्य राष्ट्रीय लेखा अनुमानों की नई शृंखला आधार वर्ष 2022–23 के साथ जारी की, जिसने 2011–12 की शृंखला का स्थान लिया। GST लागू होने और कोविड-19 के व्यवधानों के बाद हाल का सामान्य वर्ष होने के कारण 2022–23 चुना गया।",
+    "notes": [
+     "2011–12: पिछली शृंखला का आधार वर्ष, जिसका स्थान नई शृंखला ने लिया।",
+     "2020–21: कोविड-19 महामारी का वर्ष, आधार वर्ष के लिए अनुपयुक्त।",
+     "2022–23: राष्ट्रीय लेखों की नई शृंखला का आधार वर्ष।",
+     "2024–25: आधार वर्ष नहीं; यह नए अनुमानों में शामिल एक बाद का वर्ष है।"
+    ],
+    "path": [
+     "भारतीय अर्थव्यवस्था",
+     "राष्ट्रीय आय",
+     "जीडीपी का मापन",
+     "आधार वर्ष संशोधन"
+    ],
+    "facts": [
+     "2011–12 आधार वर्ष वाली शृंखला जनवरी 2015 में लागू की गई थी।",
+     "वास्तविक GDP आधार वर्ष की स्थिर कीमतों पर आँका गया GDP है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "MoSPI, FAQs on the new series of GDP with base year 2022-23 (February 2026)",
+     "url": "https://www.mospi.gov.in/uploads/announcements/announcements_1772117257791_84ae898f-7be2-4b7d-a135-565e1a809513_FAQ_GDP_26022026_1902.pdf"
+    },
+    {
+     "source": "Drishti IAS, India's New GDP Series With Base Year 2022-23 (March 2026)",
+     "url": "https://www.drishtiias.com/daily-updates/daily-news-analysis/indias-new-gdp-series-with-base-year-2022-23/print_manually"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-006",
+   "level": "TGT",
+   "section": "eco-budget",
+   "answer": 2,
+   "en": {
+    "q": "The GST Council is a constitutional body under which Article?",
+    "options": [
+     "Article 246A",
+     "Article 269A",
+     "Article 279A",
+     "Article 280"
+    ],
+    "explanation": "Article 279A, inserted by the 101st Amendment Act, 2016, provides for the GST Council of the Union Finance Minister and the State Finance Ministers, which recommends GST rates, exemptions and other matters.",
+    "notes": [
+     "Article 246A: gives Parliament and the State Legislatures the power to make laws on GST.",
+     "Article 269A: deals with GST on supplies in the course of inter-State trade (IGST).",
+     "Article 279A: provides for the GST Council.",
+     "Article 280: provides for the Finance Commission."
+    ],
+    "path": [
+     "Indian Economy",
+     "Budget, Taxation & Income Tax",
+     "Goods and Services Tax",
+     "GST Council"
+    ],
+    "facts": [
+     "In the GST Council the Union has one-third and the States together two-thirds of the weight of votes.",
+     "A decision of the GST Council needs a majority of at least three-fourths of the weighted votes."
+    ]
+   },
+   "hi": {
+    "q": "GST परिषद किस अनुच्छेद के अंतर्गत एक संवैधानिक निकाय है?",
+    "options": [
+     "अनुच्छेद 246क",
+     "अनुच्छेद 269क",
+     "अनुच्छेद 279क",
+     "अनुच्छेद 280"
+    ],
+    "explanation": "101वें संशोधन अधिनियम, 2016 द्वारा जोड़ा गया अनुच्छेद 279क केंद्रीय वित्त मंत्री और राज्यों के वित्त मंत्रियों की GST परिषद का उपबंध करता है, जो GST की दरों, छूटों और अन्य विषयों पर सिफ़ारिश करती है।",
+    "notes": [
+     "अनुच्छेद 246क: संसद और राज्य विधानमंडलों को GST पर कानून बनाने की शक्ति देता है।",
+     "अनुच्छेद 269क: अंतर्राज्यीय व्यापार में आपूर्ति पर GST (IGST) से संबंधित है।",
+     "अनुच्छेद 279क: GST परिषद का उपबंध करता है।",
+     "अनुच्छेद 280: वित्त आयोग का उपबंध करता है।"
+    ],
+    "path": [
+     "भारतीय अर्थव्यवस्था",
+     "बजट, कराधान एवं आयकर",
+     "वस्तु एवं सेवा कर",
+     "GST परिषद"
+    ],
+    "facts": [
+     "GST परिषद में मतों का एक-तिहाई भार केंद्र का और दो-तिहाई भार सभी राज्यों का मिलाकर होता है।",
+     "GST परिषद के निर्णय के लिए भारित मतों के कम से कम तीन-चौथाई बहुमत की आवश्यकता होती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Article 279A (inserted by the Constitution (One Hundred and First Amendment) Act, 2016)",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    },
+    {
+     "source": "GST Council, official website",
+     "url": "https://gstcouncil.gov.in/"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-007",
+   "level": "TGT",
+   "section": "ca-national",
+   "answer": 1,
+   "en": {
+    "q": "In February 2026, nine cheetahs were brought to Kuno National Park under Project Cheetah from which country?",
+    "options": [
+     "Namibia",
+     "Botswana",
+     "South Africa",
+     "Iran"
+    ],
+    "explanation": "On 28 February 2026 nine cheetahs from Botswana, six females and three males, were flown to India by the Indian Air Force and taken to Kuno National Park in Madhya Pradesh. This raised India's cheetah count to 48. Earlier batches had come from Namibia in 2022 and South Africa in 2023.",
+    "notes": [
+     "Namibia: sent the first eight cheetahs, released at Kuno on 17 September 2022.",
+     "Botswana: sent nine cheetahs in February 2026.",
+     "South Africa: sent twelve cheetahs in February 2023.",
+     "Iran: home of the last Asiatic cheetahs; none were brought from there."
+    ],
+    "path": [
+     "Current Affairs",
+     "National Affairs",
+     "Environment",
+     "Project Cheetah"
+    ],
+    "facts": [
+     "Project Cheetah reintroduced the cheetah, declared extinct in India in 1952.",
+     "Gandhi Sagar Wildlife Sanctuary in Madhya Pradesh is the second home of cheetahs in India."
+    ]
+   },
+   "hi": {
+    "q": "फ़रवरी 2026 में 'प्रोजेक्ट चीता' के अंतर्गत नौ चीते किस देश से कूनो राष्ट्रीय उद्यान लाए गए?",
+    "options": [
+     "नामीबिया",
+     "बोत्सवाना",
+     "दक्षिण अफ़्रीका",
+     "ईरान"
+    ],
+    "explanation": "28 फ़रवरी 2026 को बोत्सवाना से नौ चीते (छह मादा और तीन नर) भारतीय वायुसेना के विमान से भारत लाकर मध्य प्रदेश के कूनो राष्ट्रीय उद्यान पहुँचाए गए। इससे भारत में चीतों की संख्या 48 हो गई। इससे पहले चीते 2022 में नामीबिया और 2023 में दक्षिण अफ़्रीका से आए थे।",
+    "notes": [
+     "नामीबिया: पहले आठ चीते भेजे, जिन्हें 17 सितंबर 2022 को कूनो में छोड़ा गया।",
+     "बोत्सवाना: फ़रवरी 2026 में नौ चीते भेजे।",
+     "दक्षिण अफ़्रीका: फ़रवरी 2023 में बारह चीते भेजे।",
+     "ईरान: अंतिम एशियाई चीतों का घर; वहाँ से कोई चीता नहीं लाया गया।"
+    ],
+    "path": [
+     "समसामयिकी",
+     "राष्ट्रीय घटनाएँ",
+     "पर्यावरण",
+     "प्रोजेक्ट चीता"
+    ],
+    "facts": [
+     "प्रोजेक्ट चीता ने उस चीते को वापस बसाया, जिसे 1952 में भारत में विलुप्त घोषित किया गया था।",
+     "मध्य प्रदेश का गांधी सागर वन्यजीव अभयारण्य भारत में चीतों का दूसरा आवास है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "ThePrint: 9 cheetahs from Botswana get new home in MP's Kuno National Park, India's count rises to 48",
+     "url": "https://theprint.in/india/9-cheetahs-from-botswana-get-new-home-in-mps-kuno-national-park-indias-count-rises-to-48/2866445"
+    },
+    {
+     "source": "Drishti IAS: Botswana cheetah translocation to India (2 March 2026)",
+     "url": "https://www.drishtiias.com/daily-updates/daily-news-analysis/botswana-cheetah-translocation-to-india"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-008",
+   "level": "TGT",
+   "section": "hist-nm1",
+   "answer": 3,
+   "en": {
+    "q": "The partition of Bengal, which came into effect in October 1905, was carried out by Viceroy:",
+    "options": [
+     "Lord Minto",
+     "Lord Lansdowne",
+     "Lord Elgin II",
+     "Lord Curzon"
+    ],
+    "explanation": "Lord Curzon divided Bengal into two provinces, officially for better administration, though the real aim was to weaken Bengali nationalism. The partition took effect on 16 October 1905 and set off the Swadeshi movement.",
+    "notes": [
+     "Lord Minto: Curzon's successor (1905–10), known for the Morley–Minto Reforms.",
+     "Lord Lansdowne: Viceroy (1888–94), at the time of the Indian Councils Act of 1892.",
+     "Lord Elgin II: Viceroy (1894–99), just before Curzon.",
+     "Lord Curzon: Viceroy (1899–1905) who partitioned Bengal."
+    ],
+    "path": [
+     "Indian History",
+     "Modern India",
+     "National Movement",
+     "Partition of Bengal"
+    ],
+    "facts": [
+     "16 October 1905 was observed as a day of mourning, and people tied rakhis as a sign of unity.",
+     "The new province was Eastern Bengal and Assam, with Dacca as its capital."
+    ]
+   },
+   "hi": {
+    "q": "अक्टूबर 1905 में लागू हुआ बंगाल विभाजन किस वायसराय ने किया?",
+    "options": [
+     "लॉर्ड मिंटो",
+     "लॉर्ड लैंसडाउन",
+     "लॉर्ड एल्गिन द्वितीय",
+     "लॉर्ड कर्जन"
+    ],
+    "explanation": "लॉर्ड कर्जन ने बंगाल को दो प्रांतों में बाँट दिया; आधिकारिक कारण बेहतर प्रशासन बताया गया, पर वास्तविक उद्देश्य बंगाली राष्ट्रवाद को कमज़ोर करना था। विभाजन 16 अक्टूबर 1905 को लागू हुआ और इससे स्वदेशी आंदोलन शुरू हुआ।",
+    "notes": [
+     "लॉर्ड मिंटो: कर्जन के उत्तराधिकारी (1905–10); मॉर्ले-मिंटो सुधारों के लिए प्रसिद्ध।",
+     "लॉर्ड लैंसडाउन: वायसराय (1888–94), भारतीय परिषद अधिनियम 1892 के समय।",
+     "लॉर्ड एल्गिन द्वितीय: कर्जन से ठीक पहले वायसराय (1894–99)।",
+     "लॉर्ड कर्जन: वायसराय (1899–1905), जिसने बंगाल का विभाजन किया।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "आधुनिक भारत",
+     "राष्ट्रीय आंदोलन",
+     "बंगाल विभाजन"
+    ],
+    "facts": [
+     "16 अक्टूबर 1905 को शोक दिवस मनाया गया और एकता के प्रतीक के रूप में राखियाँ बाँधी गईं।",
+     "नया प्रांत 'पूर्वी बंगाल और असम' बना, जिसकी राजधानी ढाका थी।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 8 History, Our Pasts – III, chapter 'The Making of the National Movement: 1870s–1947'"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-009",
+   "level": "TGT",
+   "section": "ca-awards",
+   "answer": 3,
+   "en": {
+    "q": "Graça Machel, who received the Indira Gandhi Prize for Peace, Disarmament and Development for 2025, was earlier the Education Minister of:",
+    "options": [
+     "Angola",
+     "Zimbabwe",
+     "Tanzania",
+     "Mozambique"
+    ],
+    "explanation": "The Indira Gandhi Memorial Trust chose Graça Machel for the 2025 prize for her work in education, health and nutrition, economic empowerment and humanitarian service. She became Mozambique's first Minister of Education after independence in 1975; the prize was presented to her in New Delhi in November 2026.",
+    "notes": [
+     "Angola, like Mozambique, was a Portuguese colony until 1975.",
+     "Zimbabwe became independent in 1980 under Robert Mugabe.",
+     "Tanzania was led after independence by Julius Nyerere.",
+     "Mozambique: she was its first Education Minister after independence in 1975."
+    ],
+    "path": [
+     "Current Affairs",
+     "Awards, Books & Important Days",
+     "National awards",
+     "Indira Gandhi Peace Prize"
+    ],
+    "facts": [
+     "She is the widow of Samora Machel, Mozambique's first President, and of Nelson Mandela.",
+     "The Indira Gandhi Peace Prize for 2024 went to Michelle Bachelet."
+    ]
+   },
+   "hi": {
+    "q": "वर्ष 2025 का 'इंदिरा गांधी शांति, निरस्त्रीकरण और विकास पुरस्कार' पाने वाली ग्रासा मशेल पहले किस देश की शिक्षा मंत्री रही थीं?",
+    "options": [
+     "अंगोला",
+     "ज़िम्बाब्वे",
+     "तंज़ानिया",
+     "मोज़ाम्बिक"
+    ],
+    "explanation": "इंदिरा गांधी मेमोरियल ट्रस्ट ने शिक्षा, स्वास्थ्य और पोषण, आर्थिक सशक्तीकरण तथा मानवीय सेवा में कार्य के लिए ग्रासा मशेल को 2025 का पुरस्कार देने का निर्णय लिया। वे 1975 में स्वतंत्रता के बाद मोज़ाम्बिक की पहली शिक्षा मंत्री बनीं; नवंबर 2026 में नई दिल्ली में उन्हें यह पुरस्कार प्रदान किया गया।",
+    "notes": [
+     "अंगोला भी मोज़ाम्बिक की तरह 1975 तक पुर्तगाली उपनिवेश था।",
+     "ज़िम्बाब्वे 1980 में रॉबर्ट मुगाबे के नेतृत्व में स्वतंत्र हुआ।",
+     "स्वतंत्रता के बाद तंज़ानिया का नेतृत्व जूलियस न्येरेरे ने किया।",
+     "मोज़ाम्बिक: 1975 में स्वतंत्रता के बाद वे इसकी पहली शिक्षा मंत्री बनीं।"
+    ],
+    "path": [
+     "समसामयिकी",
+     "पुरस्कार, पुस्तकें एवं महत्वपूर्ण दिवस",
+     "राष्ट्रीय पुरस्कार",
+     "इंदिरा गांधी शांति पुरस्कार"
+    ],
+    "facts": [
+     "वे मोज़ाम्बिक के पहले राष्ट्रपति समोरा मशेल और नेल्सन मंडेला की विधवा हैं।",
+     "वर्ष 2024 का यह पुरस्कार मिशेल बाचेलेट को मिला।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "The Pioneer – Graça Machel wins Indira Gandhi Peace Prize for 2025",
+     "url": "https://www.dailypioneer.com/news/graca-machel-wins-indira-gandhi-peace-prize-for-2025"
+    },
+    {
+     "source": "Morung Express (PTI) – Ex-Mozambique education minister Graca Machel gets Indira Gandhi Peace Prize",
+     "url": "https://morungexpress.com/ex-mozambique-education-minister-graca-machel-gets-indira-gandhi-peace-prize"
+    },
+    {
+     "source": "ThePrint – Graça Machel and the Indira Gandhi Peace Prize ceremony",
+     "url": "https://theprint.in/feature/around-town/graca-machel-indira-gandhi-peace-prize-india-africa-bond/3103541/"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-010",
+   "level": "TGT",
+   "section": "ict-computer",
+   "answer": 1,
+   "en": {
+    "q": "In MS PowerPoint, which key starts the slide show from the first slide?",
+    "options": [
+     "F7",
+     "F5",
+     "F12",
+     "F1"
+    ],
+    "explanation": "Pressing F5 in PowerPoint starts the slide show from the beginning. Shift + F5 starts it from the slide that is currently selected, and Esc ends the show.",
+    "notes": [
+     "F7: runs the spelling and grammar check in MS Office programs.",
+     "F5: starts the slide show from the first slide.",
+     "F12: opens the 'Save As' dialog box in MS Office programs.",
+     "F1: opens Help in most Windows programs."
+    ],
+    "path": [
+     "ICT",
+     "Computer Fundamentals",
+     "MS Office",
+     "PowerPoint"
+    ],
+    "facts": [
+     "Shift + F5 starts the slide show from the current slide.",
+     "Esc ends a running slide show."
+    ]
+   },
+   "hi": {
+    "q": "एमएस पावरपॉइंट में पहली स्लाइड से स्लाइड शो कौन-सी कुंजी दबाकर आरंभ होता है?",
+    "options": [
+     "F7",
+     "F5",
+     "F12",
+     "F1"
+    ],
+    "explanation": "पावरपॉइंट में F5 दबाने से स्लाइड शो शुरू से आरंभ होता है। Shift + F5 से शो उसी स्लाइड से आरंभ होता है जो उस समय चुनी हुई है, और Esc से शो समाप्त होता है।",
+    "notes": [
+     "F7: एमएस ऑफिस प्रोग्रामों में वर्तनी और व्याकरण जाँच चलाता है।",
+     "F5: पहली स्लाइड से स्लाइड शो आरंभ करता है।",
+     "F12: एमएस ऑफिस प्रोग्रामों में 'Save As' संवाद बॉक्स खोलता है।",
+     "F1: अधिकांश विंडोज़ प्रोग्रामों में सहायता (Help) खोलता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "कम्प्यूटर के मूल तत्व",
+     "एमएस ऑफिस",
+     "पावरपॉइंट"
+    ],
+    "facts": [
+     "Shift + F5 से स्लाइड शो वर्तमान स्लाइड से आरंभ होता है।",
+     "Esc दबाने से चल रहा स्लाइड शो समाप्त हो जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Microsoft Support: Keyboard shortcuts to deliver PowerPoint presentations",
+     "url": "https://support.microsoft.com"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-011",
+   "level": "TGT",
+   "section": "health-vitamins",
+   "answer": 0,
+   "en": {
+    "q": "Riboflavin, a yellow vitamin found in milk that is easily destroyed by light, is:",
+    "options": [
+     "Vitamin B2",
+     "Vitamin B1",
+     "Vitamin B3",
+     "Vitamin B6"
+    ],
+    "explanation": "Riboflavin is vitamin B2, a water-soluble vitamin that forms the coenzymes FAD and FMN used in releasing energy from food. Milk, eggs, green leafy vegetables and pulses are good sources; its deficiency causes cracks at the corners of the mouth (angular stomatitis) and a sore tongue.",
+    "notes": [
+     "Vitamin B2: riboflavin.",
+     "Vitamin B1: thiamine; its deficiency causes beriberi.",
+     "Vitamin B3: niacin; its deficiency causes pellagra.",
+     "Vitamin B6: pyridoxine; needed for the metabolism of amino acids."
+    ],
+    "path": [
+     "Health",
+     "Vitamins",
+     "B-complex vitamins"
+    ],
+    "facts": [
+     "Large doses of riboflavin turn the urine bright yellow.",
+     "Riboflavin deficiency is also called ariboflavinosis."
+    ]
+   },
+   "hi": {
+    "q": "दूध में पाया जाने वाला और प्रकाश से शीघ्र नष्ट होने वाला पीला विटामिन राइबोफ़्लेविन है:",
+    "options": [
+     "विटामिन B2",
+     "विटामिन B1",
+     "विटामिन B3",
+     "विटामिन B6"
+    ],
+    "explanation": "राइबोफ़्लेविन विटामिन B2 है, जो जल-विलेय विटामिन है और भोजन से ऊर्जा मुक्त करने में प्रयुक्त सहएंजाइम FAD और FMN बनाता है। दूध, अंडे, हरी पत्तेदार सब्ज़ियाँ और दालें इसके अच्छे स्रोत हैं; इसकी कमी से मुँह के कोने फटते हैं (कोणीय मुखपाक) और जीभ में सूजन व पीड़ा होती है।",
+    "notes": [
+     "विटामिन B2: राइबोफ़्लेविन।",
+     "विटामिन B1: थायमिन; इसकी कमी से बेरी-बेरी होती है।",
+     "विटामिन B3: नियासिन; इसकी कमी से पेलाग्रा होता है।",
+     "विटामिन B6: पाइरिडॉक्सिन; अमीनो अम्लों के उपापचय के लिए आवश्यक।"
+    ],
+    "path": [
+     "स्वास्थ्य",
+     "विटामिन",
+     "विटामिन B-समूह"
+    ],
+    "facts": [
+     "अधिक मात्रा में लेने पर राइबोफ़्लेविन मूत्र को चटक पीला कर देता है।",
+     "राइबोफ़्लेविन की कमी को एरिबोफ़्लेविनोसिस भी कहते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "ICMR–National Institute of Nutrition, Nutrient Requirements for Indians (2020): riboflavin"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-012",
+   "level": "TGT",
+   "section": "ca-up",
+   "answer": 3,
+   "en": {
+    "q": "On World Habitat Day 2026, Uttar Pradesh was ranked first for completing the most houses against those sanctioned under which vertical of PMAY-Urban?",
+    "options": [
+     "In-situ Slum Redevelopment",
+     "Affordable Housing in Partnership",
+     "Affordable Rental Housing Complexes",
+     "Beneficiary Led Construction"
+    ],
+    "explanation": "At the national event at Vigyan Bhawan, New Delhi, on 5 October 2026, Uttar Pradesh received two PMAY-Urban awards. It stood first among States in Beneficiary Led Construction (BLC) for completing the highest number of houses against those sanctioned, and third under PMAY-U 2.0 for the share of sanctioned houses where construction had begun. Under BLC, an eligible family gets help to build a house on its own land.",
+    "notes": [
+     "In-situ Slum Redevelopment: rebuilds slums on the same land, using the land as a resource with private partners.",
+     "Affordable Housing in Partnership: houses for poor families built by public or private agencies.",
+     "Affordable Rental Housing Complexes: rental homes for urban migrants and the poor, begun in 2020.",
+     "Beneficiary Led Construction: help to build a house on one's own land; UP ranked first here."
+    ],
+    "path": [
+     "Current Affairs",
+     "Uttar Pradesh",
+     "Rankings",
+     "PMAY-Urban"
+    ],
+    "facts": [
+     "World Habitat Day is observed on the first Monday of October.",
+     "PMAY-Urban was launched in June 2015; its second phase, PMAY-U 2.0, began in 2024."
+    ]
+   },
+   "hi": {
+    "q": "विश्व पर्यावास दिवस 2026 पर उत्तर प्रदेश को PMAY-शहरी के किस घटक में स्वीकृत आवासों के सापेक्ष सर्वाधिक आवास पूरे करने के लिए प्रथम स्थान मिला?",
+    "options": [
+     "यथास्थान स्लम पुनर्विकास",
+     "भागीदारी में किफ़ायती आवास",
+     "किफ़ायती किराया आवास परिसर",
+     "लाभार्थी आधारित निर्माण"
+    ],
+    "explanation": "5 अक्टूबर 2026 को नई दिल्ली के विज्ञान भवन में हुए राष्ट्रीय कार्यक्रम में उत्तर प्रदेश को PMAY-शहरी के दो पुरस्कार मिले। स्वीकृत आवासों के सापेक्ष सर्वाधिक आवास पूरे करने के लिए वह लाभार्थी आधारित निर्माण (BLC) में राज्यों में प्रथम रहा, तथा PMAY-U 2.0 में जिन स्वीकृत आवासों का निर्माण आरंभ हुआ उनके अनुपात में तीसरा रहा। BLC में पात्र परिवार को अपनी भूमि पर मकान बनाने हेतु सहायता मिलती है।",
+    "notes": [
+     "यथास्थान स्लम पुनर्विकास: निजी भागीदारों के साथ भूमि को संसाधन बनाकर उसी स्थान पर बस्तियों का पुनर्निर्माण।",
+     "भागीदारी में किफ़ायती आवास: सार्वजनिक या निजी एजेंसियों द्वारा गरीब परिवारों हेतु बनाए गए आवास।",
+     "किफ़ायती किराया आवास परिसर: शहरी प्रवासियों और गरीबों के लिए किराये के आवास, 2020 में आरंभ।",
+     "लाभार्थी आधारित निर्माण: अपनी भूमि पर मकान बनाने हेतु सहायता; इसमें उत्तर प्रदेश प्रथम रहा।"
+    ],
+    "path": [
+     "समसामयिकी",
+     "उत्तर प्रदेश",
+     "रैंकिंग",
+     "PMAY-शहरी"
+    ],
+    "facts": [
+     "विश्व पर्यावास दिवस अक्टूबर के पहले सोमवार को मनाया जाता है।",
+     "PMAY-शहरी जून 2015 में आरंभ हुई; इसका दूसरा चरण PMAY-U 2.0 वर्ष 2024 में शुरू हुआ।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Free Press Journal: UP bags 2 national PMAY-U awards, ranks first in beneficiary-led house completion (5 October 2026)",
+     "url": "https://www.freepressjournal.in/uttar-pradesh/up-bags-2-national-pmay-u-awards-ranks-first-in-beneficiary-led-house-completion"
+    },
+    {
+     "source": "ForumIAS: PMAY-U Awards 2026",
+     "url": "https://forumias.com/blog/pmay-u-awards-2026/"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-013",
+   "level": "TGT",
+   "section": "pol-making",
+   "answer": 3,
+   "en": {
+    "q": "A bicameral legislature at the Centre was introduced in British India for the first time by the:",
+    "options": [
+     "Indian Councils Act, 1892",
+     "Indian Councils Act, 1909",
+     "Government of India Act, 1935",
+     "Government of India Act, 1919"
+    ],
+    "explanation": "The Government of India Act, 1919 (Montagu–Chelmsford Reforms) replaced the single Imperial Legislative Council with two Houses: the Central Legislative Assembly and the Council of State. A majority of the members of both Houses were directly elected.",
+    "notes": [
+     "Indian Councils Act, 1892: enlarged the councils and allowed discussion of the budget; the central council still had one chamber.",
+     "Indian Councils Act, 1909: the Morley–Minto Reforms; introduced separate electorates for Muslims.",
+     "Government of India Act, 1935: provided bicameral legislatures in six provinces and introduced provincial autonomy.",
+     "Government of India Act, 1919: created the Central Legislative Assembly and the Council of State."
+    ],
+    "path": [
+     "Indian Polity",
+     "Constitutional Development",
+     "Government of India Act, 1919",
+     "Bicameral central legislature"
+    ],
+    "facts": [
+     "The 1919 Act also introduced dyarchy in the provinces.",
+     "The 1919 Act provided for a statutory commission after ten years; it came as the Simon Commission in 1927."
+    ]
+   },
+   "hi": {
+    "q": "ब्रिटिश भारत में केन्द्र में द्विसदनीय विधानमंडल पहली बार किसके द्वारा स्थापित किया गया?",
+    "options": [
+     "भारतीय परिषद अधिनियम, 1892",
+     "भारतीय परिषद अधिनियम, 1909",
+     "भारत शासन अधिनियम, 1935",
+     "भारत शासन अधिनियम, 1919"
+    ],
+    "explanation": "भारत शासन अधिनियम, 1919 (मॉण्टेग्यू-चेम्सफोर्ड सुधार) ने एकसदनीय इम्पीरियल विधान परिषद के स्थान पर दो सदन बनाए: केन्द्रीय विधान सभा और राज्य परिषद। दोनों सदनों के अधिकांश सदस्य प्रत्यक्ष रूप से निर्वाचित होते थे।",
+    "notes": [
+     "भारतीय परिषद अधिनियम, 1892: परिषदों का विस्तार किया और बजट पर चर्चा की अनुमति दी; केन्द्रीय परिषद तब भी एकसदनीय रही।",
+     "भारतीय परिषद अधिनियम, 1909: मॉर्ले-मिंटो सुधार; मुसलमानों के लिए पृथक निर्वाचन मंडल की व्यवस्था।",
+     "भारत शासन अधिनियम, 1935: छह प्रांतों में द्विसदनीय विधानमंडल और प्रांतीय स्वायत्तता की व्यवस्था।",
+     "भारत शासन अधिनियम, 1919: केन्द्रीय विधान सभा और राज्य परिषद का गठन किया।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "संवैधानिक विकास",
+     "भारत शासन अधिनियम, 1919",
+     "केन्द्र में द्विसदनीय विधानमंडल"
+    ],
+    "facts": [
+     "1919 के अधिनियम ने प्रांतों में द्वैध शासन भी लागू किया।",
+     "1919 के अधिनियम में दस वर्ष बाद एक वैधानिक आयोग का प्रावधान था, जो 1927 में साइमन आयोग के रूप में आया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Government of India Act, 1919 (9 & 10 Geo. 5, c. 101)"
+    },
+    {
+     "source": "NCERT Class 12 Themes in Indian History Part III, Ch. 15 (Framing the Constitution)"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-014",
+   "level": "TGT",
+   "section": "pol-bodies",
+   "answer": 3,
+   "en": {
+    "q": "The National Human Rights Commission of India was established in:",
+    "options": [
+     "1989",
+     "1990",
+     "1992",
+     "1993"
+    ],
+    "explanation": "The National Human Rights Commission was set up on 12 October 1993 under the Protection of Human Rights Act, 1993 (first promulgated as an ordinance in September 1993).",
+    "notes": [
+     "1989: the year of the Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act.",
+     "1990: the year the National Commission for Women Act was passed.",
+     "1992: the year the National Commission for Women was actually constituted.",
+     "1993: the NHRC was set up under the Protection of Human Rights Act, 1993."
+    ],
+    "path": [
+     "Indian Polity",
+     "Other Constitutional & Statutory Bodies",
+     "National Human Rights Commission"
+    ],
+    "facts": [
+     "The NHRC is a statutory body, not a constitutional one.",
+     "The NHRC has its headquarters in New Delhi."
+    ]
+   },
+   "hi": {
+    "q": "भारत के राष्ट्रीय मानवाधिकार आयोग की स्थापना कब हुई?",
+    "options": [
+     "1989",
+     "1990",
+     "1992",
+     "1993"
+    ],
+    "explanation": "राष्ट्रीय मानवाधिकार आयोग की स्थापना 12 अक्टूबर 1993 को मानवाधिकार संरक्षण अधिनियम, 1993 के अंतर्गत हुई (सितंबर 1993 में पहले अध्यादेश जारी हुआ था)।",
+    "notes": [
+     "1989: अनुसूचित जाति और अनुसूचित जनजाति (अत्याचार निवारण) अधिनियम का वर्ष।",
+     "1990: राष्ट्रीय महिला आयोग अधिनियम पारित होने का वर्ष।",
+     "1992: राष्ट्रीय महिला आयोग के वास्तविक गठन का वर्ष।",
+     "1993: मानवाधिकार संरक्षण अधिनियम, 1993 के अंतर्गत राष्ट्रीय मानवाधिकार आयोग बना।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "अन्य संवैधानिक एवं वैधानिक निकाय",
+     "राष्ट्रीय मानवाधिकार आयोग"
+    ],
+    "facts": [
+     "राष्ट्रीय मानवाधिकार आयोग एक वैधानिक निकाय है, संवैधानिक नहीं।",
+     "राष्ट्रीय मानवाधिकार आयोग का मुख्यालय नई दिल्ली में है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "National Human Rights Commission, official website (About NHRC)",
+     "url": "https://nhrc.nic.in/"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-015",
+   "level": "TGT",
+   "section": "sci-physics",
+   "answer": 3,
+   "en": {
+    "q": "SONAR, used to find the depth of the sea and to locate submarines, makes use of:",
+    "options": [
+     "Radio waves",
+     "Infrasonic waves",
+     "Microwaves",
+     "Ultrasonic waves"
+    ],
+    "explanation": "SONAR (Sound Navigation And Ranging) sends out ultrasonic pulses and times their echo from the sea bed or an object; depth = speed of sound in water × time ÷ 2. Ultrasound is used because its short wavelength gives a narrow beam that is reflected well.",
+    "notes": [
+     "Radio waves: used in RADAR and broadcasting; sea water absorbs them quickly.",
+     "Infrasonic waves: sound below 20 Hz, produced by earthquakes and whales; not used in SONAR.",
+     "Microwaves: used in RADAR, mobile and satellite links, and microwave ovens.",
+     "Ultrasonic waves: sound above 20 kHz, which SONAR sends out and receives back as an echo."
+    ],
+    "path": [
+     "Physics",
+     "Sound",
+     "Ultrasound",
+     "SONAR"
+    ],
+    "facts": [
+     "Bats and dolphins use ultrasound for echolocation.",
+     "Sound travels at about 1,500 m/s in sea water, roughly four times faster than in air."
+    ]
+   },
+   "hi": {
+    "q": "समुद्र की गहराई मापने और पनडुब्बियों का पता लगाने में प्रयुक्त सोनार (SONAR) किसका उपयोग करता है?",
+    "options": [
+     "रेडियो तरंगें",
+     "अवश्रव्य तरंगें",
+     "सूक्ष्म तरंगें (माइक्रोवेव)",
+     "पराश्रव्य तरंगें"
+    ],
+    "explanation": "सोनार (Sound Navigation And Ranging) पराश्रव्य तरंगों के स्पंद भेजकर समुद्र तल या वस्तु से लौटी प्रतिध्वनि का समय मापता है; गहराई = जल में ध्वनि की चाल × समय ÷ 2। पराश्रव्य तरंगों की तरंगदैर्ध्य छोटी होने से इनका पुंज संकरा रहता है और ये भली-भाँति परावर्तित होती हैं।",
+    "notes": [
+     "रेडियो तरंगें: रडार और प्रसारण में प्रयुक्त; समुद्री जल इन्हें शीघ्र अवशोषित कर लेता है।",
+     "अवश्रव्य तरंगें: 20 Hz से कम आवृत्ति की ध्वनि, भूकंप और व्हेल से उत्पन्न; सोनार में प्रयुक्त नहीं।",
+     "सूक्ष्म तरंगें: रडार, मोबाइल व उपग्रह संचार तथा माइक्रोवेव ओवन में प्रयुक्त।",
+     "पराश्रव्य तरंगें: 20 kHz से अधिक आवृत्ति की ध्वनि, जिसे सोनार भेजता है और प्रतिध्वनि के रूप में ग्रहण करता है।"
+    ],
+    "path": [
+     "भौतिकी",
+     "ध्वनि",
+     "पराश्रव्य ध्वनि",
+     "सोनार"
+    ],
+    "facts": [
+     "चमगादड़ और डॉल्फ़िन प्रतिध्वनि द्वारा स्थान-निर्धारण के लिए पराश्रव्य ध्वनि का उपयोग करते हैं।",
+     "समुद्री जल में ध्वनि की चाल लगभग 1,500 मी/से होती है, जो वायु से लगभग चार गुना अधिक है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 9 Science, chapter 'Sound' (applications of ultrasound, SONAR)"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-016",
+   "level": "TGT",
+   "section": "ict-computer",
+   "answer": 0,
+   "en": {
+    "q": "In Windows, pressing Shift + Delete on a selected file:",
+    "options": [
+     "Deletes it without sending it to the Recycle Bin",
+     "Moves it to the Recycle Bin",
+     "Makes a copy of it",
+     "Renames it"
+    ],
+    "explanation": "Shift + Delete removes the selected file permanently after a confirmation, without placing it in the Recycle Bin, so it cannot be restored from there. The Delete key alone moves the file to the Recycle Bin.",
+    "notes": [
+     "Deletes it without the Recycle Bin: this is what Shift + Delete does.",
+     "Moves it to the Recycle Bin: this is done by the Delete key alone.",
+     "Makes a copy: done with Ctrl + C and then Ctrl + V.",
+     "Renames it: done with the F2 key."
+    ],
+    "path": [
+     "ICT",
+     "Computer Fundamentals",
+     "Operating systems",
+     "File management"
+    ],
+    "facts": [
+     "Files in the Recycle Bin can be restored to their original location.",
+     "Emptying the Recycle Bin deletes its files for good."
+    ]
+   },
+   "hi": {
+    "q": "विंडोज़ में किसी चयनित फ़ाइल पर Shift + Delete दबाने से:",
+    "options": [
+     "वह रीसायकल बिन में गए बिना हट जाती है",
+     "वह रीसायकल बिन में चली जाती है",
+     "उसकी एक प्रति बन जाती है",
+     "उसका नाम बदल जाता है"
+    ],
+    "explanation": "Shift + Delete पुष्टि के बाद चयनित फ़ाइल को रीसायकल बिन में डाले बिना स्थायी रूप से हटा देता है, इसलिए उसे वहाँ से वापस नहीं लाया जा सकता। केवल Delete कुंजी दबाने पर फ़ाइल रीसायकल बिन में जाती है।",
+    "notes": [
+     "रीसायकल बिन में गए बिना हटना: Shift + Delete यही करता है।",
+     "रीसायकल बिन में जाना: यह केवल Delete कुंजी से होता है।",
+     "प्रति बनाना: Ctrl + C और फिर Ctrl + V से होता है।",
+     "नाम बदलना: F2 कुंजी से होता है।"
+    ],
+    "path": [
+     "आईसीटी",
+     "कम्प्यूटर के मूल तत्व",
+     "ऑपरेटिंग सिस्टम",
+     "फ़ाइल प्रबंधन"
+    ],
+    "facts": [
+     "रीसायकल बिन की फ़ाइलें उनके मूल स्थान पर वापस लाई (रीस्टोर की) जा सकती हैं।",
+     "रीसायकल बिन खाली करने पर उसकी फ़ाइलें स्थायी रूप से मिट जाती हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Microsoft Support: Keyboard shortcuts in Windows (File Explorer)",
+     "url": "https://support.microsoft.com"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-017",
+   "level": "TGT",
+   "section": "hist-british",
+   "answer": 2,
+   "en": {
+    "q": "Which Viceroy of India was assassinated in 1872 by a convict during a visit to the Andaman Islands?",
+    "options": [
+     "Lord Elgin",
+     "Lord Lawrence",
+     "Lord Mayo",
+     "Lord Northbrook"
+    ],
+    "explanation": "Lord Mayo was stabbed to death at Port Blair in February 1872 by Sher Ali, a Pathan convict, while inspecting the penal settlement. He is the only Viceroy of India to have been assassinated in office.",
+    "notes": [
+     "Lord Elgin: Viceroy who died of illness at Dharamshala in 1863.",
+     "Lord Lawrence: Viceroy (1864–69), known for his policy of 'masterly inactivity' towards Afghanistan.",
+     "Lord Mayo: killed at Port Blair in 1872; the first census of 1872 was begun in his time.",
+     "Lord Northbrook: succeeded Mayo as Viceroy in 1872."
+    ],
+    "path": [
+     "Indian History",
+     "Modern India",
+     "Viceroys",
+     "Lord Mayo"
+    ],
+    "facts": [
+     "Mayo College at Ajmer, a school for the sons of princes, is named after Lord Mayo.",
+     "Financial decentralisation to the provinces began with Mayo's resolution of 1870."
+    ]
+   },
+   "hi": {
+    "q": "1872 में अंडमान द्वीप की यात्रा के दौरान एक कैदी ने भारत के किस वायसराय की हत्या कर दी थी?",
+    "options": [
+     "लॉर्ड एल्गिन",
+     "लॉर्ड लॉरेंस",
+     "लॉर्ड मेयो",
+     "लॉर्ड नॉर्थब्रुक"
+    ],
+    "explanation": "फरवरी 1872 में पोर्ट ब्लेयर में दंड-बस्ती का निरीक्षण करते समय पठान कैदी शेर अली ने लॉर्ड मेयो की चाकू मारकर हत्या कर दी। वह पद पर रहते हुए मारा जाने वाला भारत का एकमात्र वायसराय है।",
+    "notes": [
+     "लॉर्ड एल्गिन: वायसराय, जिसकी 1863 में धर्मशाला में बीमारी से मृत्यु हुई।",
+     "लॉर्ड लॉरेंस: वायसराय (1864–69), अफगानिस्तान के प्रति 'कुशल अकर्मण्यता' की नीति के लिए प्रसिद्ध।",
+     "लॉर्ड मेयो: 1872 में पोर्ट ब्लेयर में मारा गया; 1872 की पहली जनगणना इसी के समय आरंभ हुई।",
+     "लॉर्ड नॉर्थब्रुक: 1872 में मेयो के बाद वायसराय बना।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "आधुनिक भारत",
+     "वायसराय",
+     "लॉर्ड मेयो"
+    ],
+    "facts": [
+     "अजमेर का मेयो कॉलेज, जो राजकुमारों के लिए स्कूल था, लॉर्ड मेयो के नाम पर है।",
+     "प्रांतों को वित्तीय विकेंद्रीकरण की शुरुआत मेयो के 1870 के प्रस्ताव से हुई।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Bipan Chandra, History of Modern India (Orient BlackSwan), chapter on administrative changes after 1858"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-018",
+   "level": "TGT",
+   "section": "geo-soil-forest",
+   "answer": 3,
+   "en": {
+    "q": "Gir National Park, famous as the home of the Asiatic lion, is located in:",
+    "options": [
+     "Rajasthan",
+     "Madhya Pradesh",
+     "Maharashtra",
+     "Gujarat"
+    ],
+    "explanation": "Gir National Park and Wildlife Sanctuary lies in the Saurashtra region of Gujarat. Wild Asiatic lions now survive only in Gir and the surrounding landscape of Saurashtra.",
+    "notes": [
+     "Rajasthan: known for tiger reserves such as Ranthambore and Sariska.",
+     "Madhya Pradesh: Kuno National Park here now hosts cheetahs.",
+     "Maharashtra: known for the Tadoba-Andhari Tiger Reserve.",
+     "Gujarat: Gir in Saurashtra is the home of the Asiatic lion."
+    ],
+    "path": [
+     "Geography",
+     "India",
+     "Protected areas",
+     "National parks"
+    ],
+    "facts": [
+     "The Asiatic lion is found in the wild only in Gujarat.",
+     "Gir has dry deciduous forest and scrub."
+    ]
+   },
+   "hi": {
+    "q": "एशियाई शेर के आवास के रूप में प्रसिद्ध गिर राष्ट्रीय उद्यान कहाँ स्थित है?",
+    "options": [
+     "राजस्थान",
+     "मध्य प्रदेश",
+     "महाराष्ट्र",
+     "गुजरात"
+    ],
+    "explanation": "गिर राष्ट्रीय उद्यान एवं वन्यजीव अभयारण्य गुजरात के सौराष्ट्र क्षेत्र में है। जंगली एशियाई शेर अब केवल गिर और सौराष्ट्र के आसपास के क्षेत्र में ही बचे हैं।",
+    "notes": [
+     "राजस्थान: रणथंभौर और सरिस्का जैसे बाघ अभयारण्यों के लिए प्रसिद्ध।",
+     "मध्य प्रदेश: यहाँ के कूनो राष्ट्रीय उद्यान में अब चीते हैं।",
+     "महाराष्ट्र: ताडोबा-अंधारी बाघ अभयारण्य के लिए प्रसिद्ध।",
+     "गुजरात: सौराष्ट्र का गिर एशियाई शेर का आवास है।"
+    ],
+    "path": [
+     "भूगोल",
+     "भारत",
+     "संरक्षित क्षेत्र",
+     "राष्ट्रीय उद्यान"
+    ],
+    "facts": [
+     "एशियाई शेर जंगल में केवल गुजरात में पाया जाता है।",
+     "गिर में शुष्क पर्णपाती वन और झाड़ियाँ हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Gujarat Forest Department: Gir",
+     "url": "https://forests.gujarat.gov.in/"
+    },
+    {
+     "source": "NCERT Class 11 India: Physical Environment, chapter 'Natural Vegetation'"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-019",
+   "level": "TGT",
+   "section": "geo-up",
+   "answer": 0,
+   "en": {
+    "q": "The headquarters of the Devipatan division of Uttar Pradesh is at:",
+    "options": [
+     "Gonda",
+     "Bahraich",
+     "Balrampur",
+     "Shravasti"
+    ],
+    "explanation": "Devipatan division consists of Gonda, Bahraich, Balrampur and Shravasti districts, with its headquarters at Gonda. The division takes its name from the Devi Patan temple at Tulsipur in Balrampur district.",
+    "notes": [
+     "Gonda: headquarters of the Devipatan division.",
+     "Bahraich: a district of the division on the Nepal border.",
+     "Balrampur: a district of the division; the Devi Patan temple is at Tulsipur here.",
+     "Shravasti: a district of the division, known for its Buddhist sites."
+    ],
+    "path": [
+     "Geography of Uttar Pradesh",
+     "Administration",
+     "Divisions"
+    ],
+    "facts": [
+     "Uttar Pradesh has 18 divisions (mandals) and 75 districts (as of 2026).",
+     "Bahraich, Shravasti and Balrampur districts of this division border Nepal."
+    ]
+   },
+   "hi": {
+    "q": "उत्तर प्रदेश के देवीपाटन मंडल का मुख्यालय कहाँ है?",
+    "options": [
+     "गोंडा",
+     "बहराइच",
+     "बलरामपुर",
+     "श्रावस्ती"
+    ],
+    "explanation": "देवीपाटन मंडल में गोंडा, बहराइच, बलरामपुर और श्रावस्ती जिले हैं और इसका मुख्यालय गोंडा है। मंडल का नाम बलरामपुर जिले के तुलसीपुर स्थित देवीपाटन मंदिर पर पड़ा है।",
+    "notes": [
+     "गोंडा: देवीपाटन मंडल का मुख्यालय।",
+     "बहराइच: नेपाल सीमा से लगा इस मंडल का जिला।",
+     "बलरामपुर: इस मंडल का जिला; देवीपाटन मंदिर यहीं तुलसीपुर में है।",
+     "श्रावस्ती: इस मंडल का जिला, बौद्ध स्थलों के लिए प्रसिद्ध।"
+    ],
+    "path": [
+     "उत्तर प्रदेश का भूगोल",
+     "प्रशासन",
+     "मंडल"
+    ],
+    "facts": [
+     "उत्तर प्रदेश में 18 मंडल और 75 जिले हैं (2026 की स्थिति)।",
+     "इस मंडल के बहराइच, श्रावस्ती और बलरामपुर जिले नेपाल की सीमा से लगते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Government of Uttar Pradesh, Revenue Department: list of divisions and districts (up.gov.in)"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-020",
+   "level": "TGT",
+   "section": "culture",
+   "answer": 3,
+   "en": {
+    "q": "Pandit Hariprasad Chaurasia is a renowned exponent of which instrument?",
+    "options": [
+     "Sarangi",
+     "Santoor",
+     "Veena",
+     "Bansuri (flute)"
+    ],
+    "explanation": "Pandit Hariprasad Chaurasia, born at Allahabad (Prayagraj) in 1938, is the best-known player of the bansuri, the bamboo flute of Hindustani music. He received the Padma Vibhushan in 2000.",
+    "notes": [
+     "Sarangi: a bowed string instrument; Pandit Ram Narayan made it a solo concert instrument.",
+     "Santoor: associated with Pandit Shivkumar Sharma, Chaurasia's partner in the duo 'Shiv–Hari'.",
+     "Veena: a plucked string instrument, central to Carnatic music.",
+     "Bansuri: the bamboo flute; Hariprasad Chaurasia is its foremost exponent."
+    ],
+    "path": [
+     "Indian Culture",
+     "Music",
+     "Instruments",
+     "Bansuri"
+    ],
+    "facts": [
+     "Hariprasad Chaurasia was born at Allahabad (Prayagraj), Uttar Pradesh.",
+     "Pannalal Ghosh is credited with bringing the bansuri into Hindustani classical concerts."
+    ]
+   },
+   "hi": {
+    "q": "पंडित हरिप्रसाद चौरसिया किस वाद्य के प्रसिद्ध वादक हैं?",
+    "options": [
+     "सारंगी",
+     "संतूर",
+     "वीणा",
+     "बाँसुरी"
+    ],
+    "explanation": "1938 में इलाहाबाद (प्रयागराज) में जन्मे पंडित हरिप्रसाद चौरसिया हिंदुस्तानी संगीत की बाँस की बाँसुरी के सबसे प्रसिद्ध वादक हैं। उन्हें 2000 में पद्म विभूषण मिला।",
+    "notes": [
+     "सारंगी: गज़ से बजने वाला तार वाद्य; पंडित राम नारायण ने इसे एकल वादन का वाद्य बनाया।",
+     "संतूर: पंडित शिवकुमार शर्मा से संबद्ध, जो 'शिव-हरि' जोड़ी में चौरसिया के साथी थे।",
+     "वीणा: अँगुलियों से छेड़ा जाने वाला तार वाद्य, कर्नाटक संगीत का प्रमुख वाद्य।",
+     "बाँसुरी: बाँस से बना सुषिर वाद्य; हरिप्रसाद चौरसिया इसके अग्रणी वादक।"
+    ],
+    "path": [
+     "भारतीय संस्कृति",
+     "संगीत",
+     "वाद्य यंत्र",
+     "बाँसुरी"
+    ],
+    "facts": [
+     "हरिप्रसाद चौरसिया का जन्म उत्तर प्रदेश के इलाहाबाद (प्रयागराज) में हुआ।",
+     "बाँसुरी को हिंदुस्तानी शास्त्रीय मंच पर लाने का श्रेय पन्नालाल घोष को दिया जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Sangeet Natak Akademi: Pandit Hariprasad Chaurasia (Hindustani instrumental music, flute)"
+    },
+    {
+     "source": "Ministry of Home Affairs: Padma Awards 2000"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-021",
+   "level": "TGT",
+   "section": "pol-state",
+   "answer": 2,
+   "en": {
+    "q": "What is the minimum age for becoming a member of a State Legislative Council?",
+    "options": [
+     "21 years",
+     "25 years",
+     "30 years",
+     "35 years"
+    ],
+    "explanation": "Article 173 lays down that a person must be at least 30 years old to be chosen as a member of a State Legislative Council, and at least 25 years old for the Legislative Assembly.",
+    "notes": [
+     "21 years: the minimum age for membership of a Panchayat (Article 243F).",
+     "25 years: the minimum age for membership of a State Legislative Assembly.",
+     "30 years: the minimum age for membership of a State Legislative Council (Article 173).",
+     "35 years: the minimum age for appointment as Governor or election as President."
+    ],
+    "path": [
+     "Indian Polity",
+     "State Government & Uttar Pradesh",
+     "State Legislature",
+     "Qualifications of members"
+    ],
+    "facts": [
+     "The same age limits apply in Parliament: 30 years for the Rajya Sabha and 25 years for the Lok Sabha.",
+     "A member of a Legislative Council is elected or nominated for six years; one-third retire every second year."
+    ]
+   },
+   "hi": {
+    "q": "किसी राज्य की विधान परिषद का सदस्य बनने के लिए न्यूनतम आयु कितनी है?",
+    "options": [
+     "21 वर्ष",
+     "25 वर्ष",
+     "30 वर्ष",
+     "35 वर्ष"
+    ],
+    "explanation": "अनुच्छेद 173 के अनुसार विधान परिषद का सदस्य चुने जाने के लिए व्यक्ति की आयु कम से कम 30 वर्ष और विधानसभा के लिए कम से कम 25 वर्ष होनी चाहिए।",
+    "notes": [
+     "21 वर्ष: पंचायत की सदस्यता के लिए न्यूनतम आयु (अनुच्छेद 243च)।",
+     "25 वर्ष: राज्य विधानसभा की सदस्यता के लिए न्यूनतम आयु।",
+     "30 वर्ष: राज्य विधान परिषद की सदस्यता के लिए न्यूनतम आयु (अनुच्छेद 173)।",
+     "35 वर्ष: राज्यपाल नियुक्त होने या राष्ट्रपति चुने जाने के लिए न्यूनतम आयु।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "राज्य सरकार एवं उत्तर प्रदेश",
+     "राज्य विधानमंडल",
+     "सदस्यों की अर्हताएँ"
+    ],
+    "facts": [
+     "संसद में भी यही आयु-सीमा है: राज्यसभा के लिए 30 वर्ष और लोकसभा के लिए 25 वर्ष।",
+     "विधान परिषद का सदस्य छह वर्ष के लिए चुना या मनोनीत होता है; हर दूसरे वर्ष एक-तिहाई सदस्य सेवानिवृत्त होते हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Constitution of India, Article 173",
+     "url": "https://legislative.gov.in/constitution-of-india/"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-022",
+   "level": "TGT",
+   "section": "pol-local",
+   "answer": 2,
+   "en": {
+    "q": "Who is regarded as the father of local self-government in India?",
+    "options": [
+     "Lord Mayo",
+     "Lord Curzon",
+     "Lord Ripon",
+     "Lord Dalhousie"
+    ],
+    "explanation": "Lord Ripon's resolution of 18 May 1882 on local self-government sought to make local boards largely elected bodies with non-official chairmen, as an instrument of political and popular education. For this he is called the father of local self-government in India.",
+    "notes": [
+     "Lord Mayo: his 1870 resolution on financial decentralisation was a forerunner of local self-government.",
+     "Lord Curzon: known for the Partition of Bengal (1905) and the Indian Universities Act, 1904.",
+     "Lord Ripon: issued the 1882 resolution on local self-government.",
+     "Lord Dalhousie: known for the Doctrine of Lapse and for the first railways and telegraph lines."
+    ],
+    "path": [
+     "Indian Polity",
+     "Local Self-Government",
+     "Historical background",
+     "Ripon's Resolution, 1882"
+    ],
+    "facts": [
+     "Ripon's resolution of 1882 is called the Magna Carta of local self-government in India.",
+     "The Royal Commission on Decentralisation (1907–09) also stressed the role of village panchayats."
+    ]
+   },
+   "hi": {
+    "q": "भारत में स्थानीय स्वशासन का जनक किसे माना जाता है?",
+    "options": [
+     "लॉर्ड मेयो",
+     "लॉर्ड कर्जन",
+     "लॉर्ड रिपन",
+     "लॉर्ड डलहौजी"
+    ],
+    "explanation": "लॉर्ड रिपन के 18 मई, 1882 के स्थानीय स्वशासन संबंधी प्रस्ताव ने स्थानीय बोर्डों को अधिकांशतः निर्वाचित और गैर-सरकारी अध्यक्ष वाली संस्थाएँ बनाने का प्रयास किया, ताकि जनता को राजनीतिक शिक्षा मिले। इसी कारण उन्हें भारत में स्थानीय स्वशासन का जनक कहा जाता है।",
+    "notes": [
+     "लॉर्ड मेयो: वित्तीय विकेंद्रीकरण संबंधी उनका 1870 का प्रस्ताव स्थानीय स्वशासन का अग्रदूत था।",
+     "लॉर्ड कर्जन: बंगाल विभाजन (1905) और भारतीय विश्वविद्यालय अधिनियम, 1904 के लिए जाने जाते हैं।",
+     "लॉर्ड रिपन: 1882 में स्थानीय स्वशासन संबंधी प्रस्ताव जारी किया।",
+     "लॉर्ड डलहौजी: व्यपगत का सिद्धांत तथा पहली रेल और तार लाइनों के लिए जाने जाते हैं।"
+    ],
+    "path": [
+     "भारतीय राजव्यवस्था",
+     "स्थानीय स्वशासन",
+     "ऐतिहासिक पृष्ठभूमि",
+     "रिपन का प्रस्ताव, 1882"
+    ],
+    "facts": [
+     "रिपन के 1882 के प्रस्ताव को भारत में स्थानीय स्वशासन का 'मैग्ना कार्टा' कहा जाता है।",
+     "विकेंद्रीकरण पर शाही आयोग (1907–09) ने भी ग्राम पंचायतों की भूमिका पर बल दिया।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Indian Constitution at Work, Ch. 8 (Local Governments)"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-023",
+   "level": "TGT",
+   "section": "hist-ivc",
+   "answer": 2,
+   "en": {
+    "q": "Alamgirpur, generally regarded as the easternmost Harappan site, lies on the bank of which river?",
+    "options": [
+     "Gomti",
+     "Ramganga",
+     "Hindon",
+     "Ghaghara"
+    ],
+    "explanation": "Alamgirpur in Meerut district of Uttar Pradesh lies on the Hindon, a tributary of the Yamuna. Excavated by Y. D. Sharma in 1958–59, it marks the eastern limit of the Harappan civilisation.",
+    "notes": [
+     "Gomti: a tributary of the Ganga on which Lucknow and Jaunpur stand.",
+     "Ramganga: a tributary of the Ganga that rises in Uttarakhand and flows past Moradabad.",
+     "Hindon: a tributary of the Yamuna in western Uttar Pradesh; Alamgirpur lies on it.",
+     "Ghaghara: a left-bank tributary of the Ganga flowing through eastern Uttar Pradesh."
+    ],
+    "path": [
+     "Indian History",
+     "Ancient India",
+     "Harappan Civilisation",
+     "Sites in Uttar Pradesh"
+    ],
+    "facts": [
+     "Manda in Jammu marks the northern limit of Harappan sites.",
+     "Hulas in Saharanpur district is another Harappan site of Uttar Pradesh."
+    ]
+   },
+   "hi": {
+    "q": "हड़प्पा सभ्यता का सबसे पूर्वी स्थल माना जाने वाला आलमगीरपुर किस नदी के तट पर स्थित है?",
+    "options": [
+     "गोमती",
+     "रामगंगा",
+     "हिंडन",
+     "घाघरा"
+    ],
+    "explanation": "उत्तर प्रदेश के मेरठ जिले में स्थित आलमगीरपुर यमुना की सहायक नदी हिंडन के तट पर है। 1958–59 में यज्ञदत्त शर्मा द्वारा उत्खनित यह स्थल हड़प्पा सभ्यता की पूर्वी सीमा दर्शाता है।",
+    "notes": [
+     "गोमती: गंगा की सहायक नदी, जिसके तट पर लखनऊ और जौनपुर बसे हैं।",
+     "रामगंगा: उत्तराखंड से निकलकर मुरादाबाद से होकर बहने वाली गंगा की सहायक नदी।",
+     "हिंडन: पश्चिमी उत्तर प्रदेश में यमुना की सहायक नदी; आलमगीरपुर इसी के तट पर है।",
+     "घाघरा: पूर्वी उत्तर प्रदेश से होकर बहने वाली गंगा की बाएँ तट की सहायक नदी।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "प्राचीन भारत",
+     "हड़प्पा सभ्यता",
+     "उत्तर प्रदेश के स्थल"
+    ],
+    "facts": [
+     "जम्मू का माण्डा हड़प्पाई स्थलों की उत्तरी सीमा दर्शाता है।",
+     "सहारनपुर जिले का हुलास उत्तर प्रदेश का एक अन्य हड़प्पाई स्थल है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Upinder Singh, A History of Ancient and Early Medieval India, Ch. 4 (The Harappan Civilization)"
+    },
+    {
+     "book": "tgt-pgt-gk",
+     "page": 36
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-024",
+   "level": "TGT",
+   "section": "ict-computer",
+   "answer": 1,
+   "en": {
+    "q": "The resolution of a printer is commonly expressed in:",
+    "options": [
+     "PPM",
+     "DPI",
+     "RPM",
+     "bps"
+    ],
+    "explanation": "Printer resolution is given in dots per inch (DPI): the number of ink or toner dots the printer can place in one inch. A higher DPI gives a sharper print.",
+    "notes": [
+     "PPM: pages per minute, a measure of a printer's speed.",
+     "DPI: dots per inch, the measure of print resolution.",
+     "RPM: revolutions per minute, used for the spindle speed of a hard disk.",
+     "bps: bits per second, a measure of data transfer rate."
+    ],
+    "path": [
+     "ICT",
+     "Computer Fundamentals",
+     "Hardware",
+     "Printers"
+    ],
+    "facts": [
+     "Laser printers commonly print at 600 dpi or more.",
+     "Screen resolution is described in pixels, such as 1920 × 1080."
+    ]
+   },
+   "hi": {
+    "q": "किसी प्रिंटर का रिज़ॉल्यूशन सामान्यतः किसमें व्यक्त किया जाता है?",
+    "options": [
+     "PPM",
+     "DPI",
+     "RPM",
+     "bps"
+    ],
+    "explanation": "प्रिंटर का रिज़ॉल्यूशन डॉट्स पर इंच (DPI) में बताया जाता है, अर्थात प्रिंटर एक इंच में स्याही या टोनर के कितने बिंदु छाप सकता है। DPI जितना अधिक होगा, छपाई उतनी ही स्पष्ट होगी।",
+    "notes": [
+     "PPM: पेज पर मिनट, प्रिंटर की गति का माप।",
+     "DPI: डॉट्स पर इंच, छपाई के रिज़ॉल्यूशन का माप।",
+     "RPM: रिवॉल्यूशन पर मिनट, हार्ड डिस्क के घूमने की गति के लिए प्रयुक्त।",
+     "bps: बिट्स पर सेकंड, डेटा स्थानांतरण दर का माप।"
+    ],
+    "path": [
+     "आईसीटी",
+     "कम्प्यूटर के मूल तत्व",
+     "हार्डवेयर",
+     "प्रिंटर"
+    ],
+    "facts": [
+     "लेज़र प्रिंटर सामान्यतः 600 dpi या उससे अधिक पर छापते हैं।",
+     "स्क्रीन का रिज़ॉल्यूशन पिक्सेल में बताया जाता है, जैसे 1920 × 1080।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 11 Computer Science, chapter 'Computer System' (output devices)"
+    },
+    {
+     "book": "tgt-pgt-gk",
+     "page": 246
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-025",
+   "level": "TGT",
+   "section": "geo-rivers",
+   "answer": 1,
+   "en": {
+    "q": "The Hirakud dam, one of the longest earthen dams in the world, is built on which river?",
+    "options": [
+     "Godavari",
+     "Mahanadi",
+     "Brahmani",
+     "Baitarani"
+    ],
+    "explanation": "The Hirakud dam stands on the Mahanadi near Sambalpur in Odisha. Completed in the 1950s, it was among the first major multipurpose river valley projects of independent India, built for flood control, irrigation and hydroelectricity.",
+    "notes": [
+     "Godavari: the Polavaram project in Andhra Pradesh is being built on it.",
+     "Mahanadi: the Hirakud dam near Sambalpur is built on it.",
+     "Brahmani: the Rengali dam in Odisha is built on it.",
+     "Baitarani: a river of Odisha that reaches the Bay of Bengal near Dhamra."
+    ],
+    "path": [
+     "Geography",
+     "India",
+     "Dams and projects",
+     "Hirakud"
+    ],
+    "facts": [
+     "The Mahanadi rises in Chhattisgarh and flows through Odisha to the Bay of Bengal.",
+     "Hirakud reservoir is one of the largest artificial lakes of Asia."
+    ]
+   },
+   "hi": {
+    "q": "विश्व के सबसे लंबे मिट्टी के बाँधों में से एक, हीराकुड बाँध किस नदी पर बना है?",
+    "options": [
+     "गोदावरी",
+     "महानदी",
+     "ब्राह्मणी",
+     "वैतरणी"
+    ],
+    "explanation": "हीराकुड बाँध ओडिशा में संबलपुर के पास महानदी पर बना है। 1950 के दशक में पूरा हुआ यह बाँध स्वतंत्र भारत की आरंभिक प्रमुख बहुउद्देशीय नदी घाटी परियोजनाओं में था, जिसका उद्देश्य बाढ़ नियंत्रण, सिंचाई और जलविद्युत था।",
+    "notes": [
+     "गोदावरी: आंध्र प्रदेश की पोलावरम परियोजना इस पर बन रही है।",
+     "महानदी: संबलपुर के पास हीराकुड बाँध इसी पर है।",
+     "ब्राह्मणी: ओडिशा का रेंगाली बाँध इस पर बना है।",
+     "वैतरणी: ओडिशा की नदी, जो धामरा के पास बंगाल की खाड़ी में मिलती है।"
+    ],
+    "path": [
+     "भूगोल",
+     "भारत",
+     "बाँध एवं परियोजनाएँ",
+     "हीराकुड"
+    ],
+    "facts": [
+     "महानदी छत्तीसगढ़ से निकलकर ओडिशा होते हुए बंगाल की खाड़ी में गिरती है।",
+     "हीराकुड जलाशय एशिया की सबसे बड़ी कृत्रिम झीलों में है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 10 Contemporary India II, Chapter 3 'Water Resources'"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-026",
+   "level": "TGT",
+   "section": "ca-sports",
+   "answer": 2,
+   "en": {
+    "q": "Which team won the ICC Women's T20 World Cup 2026, played in England?",
+    "options": [
+     "England",
+     "India",
+     "Australia",
+     "New Zealand"
+    ],
+    "explanation": "Australia beat the hosts England by seven wickets in the final at Lord's on 5 July 2026, chasing 151 in 17.1 overs. It was Australia's record seventh Women's T20 World Cup title, won without losing a match.",
+    "notes": [
+     "England: the hosts, beaten in the final at Lord's.",
+     "India: winners of the ICC Women's ODI World Cup 2025.",
+     "Australia: champions of the Women's T20 World Cup 2026, their seventh title.",
+     "New Zealand: winners of the previous Women's T20 World Cup, in 2024."
+    ],
+    "path": [
+     "Current Affairs",
+     "Sports",
+     "Cricket",
+     "Women's T20 World Cup 2026"
+    ],
+    "facts": [
+     "Beth Mooney top-scored with 64 in the 2026 final.",
+     "Lord's in London is called the 'Home of Cricket'."
+    ]
+   },
+   "hi": {
+    "q": "इंग्लैंड में खेला गया ICC महिला T20 विश्व कप 2026 किस टीम ने जीता?",
+    "options": [
+     "इंग्लैंड",
+     "भारत",
+     "ऑस्ट्रेलिया",
+     "न्यूज़ीलैंड"
+    ],
+    "explanation": "5 जुलाई 2026 को लॉर्ड्स में फाइनल में ऑस्ट्रेलिया ने मेज़बान इंग्लैंड को 151 रन का लक्ष्य 17.1 ओवर में पाकर सात विकेट से हराया। यह ऑस्ट्रेलिया का रिकॉर्ड सातवाँ महिला T20 विश्व कप खिताब था, जो उसने बिना कोई मैच हारे जीता।",
+    "notes": [
+     "इंग्लैंड: मेज़बान, लॉर्ड्स के फाइनल में पराजित।",
+     "भारत: ICC महिला एकदिवसीय विश्व कप 2025 का विजेता।",
+     "ऑस्ट्रेलिया: महिला T20 विश्व कप 2026 का विजेता, उसका सातवाँ खिताब।",
+     "न्यूज़ीलैंड: पिछले महिला T20 विश्व कप (2024) का विजेता।"
+    ],
+    "path": [
+     "समसामयिकी",
+     "खेल",
+     "क्रिकेट",
+     "महिला T20 विश्व कप 2026"
+    ],
+    "facts": [
+     "2026 के फाइनल में बेथ मूनी ने सर्वाधिक 64 रन बनाए।",
+     "लंदन के लॉर्ड्स मैदान को 'क्रिकेट का घर' कहा जाता है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "ICC: Invincible Australia crowned Women's T20 World Cup champions",
+     "url": "https://icc-cricket.com/tournaments/womens-t20-worldcup-2026/news/england-australia-final-womens-t20-world-cup-2026"
+    },
+    {
+     "source": "Al Jazeera, 5 July 2026: Australia thrash England to win record seventh Women's T20 World Cup",
+     "url": "https://www.aljazeera.com/sports/2026/7/5/australia-thrash-england-to-win-record-seventh-womens-t20-world-cup"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-027",
+   "level": "TGT",
+   "section": "hist-sultanate",
+   "answer": 2,
+   "en": {
+    "q": "The construction of the Qutb Minar, begun by Qutbuddin Aibak, was completed by:",
+    "options": [
+     "Balban",
+     "Alauddin Khalji",
+     "Iltutmish",
+     "Firoz Shah Tughlaq"
+    ],
+    "explanation": "Qutbuddin Aibak began the Qutb Minar around 1199 and built its first storey. His successor Iltutmish added three more storeys and completed it; much later Firoz Shah Tughlaq repaired the damaged top, rebuilding it as two storeys.",
+    "notes": [
+     "Balban: crushed the power of the 'Forty' nobles; he built no part of the minar.",
+     "Alauddin Khalji: built the Alai Darwaza and began the unfinished Alai Minar.",
+     "Iltutmish: added three storeys and completed the Qutb Minar.",
+     "Firoz Shah Tughlaq: repaired the top of the minar after it was struck by lightning."
+    ],
+    "path": [
+     "Indian History",
+     "Medieval India",
+     "Delhi Sultanate",
+     "Architecture"
+    ],
+    "facts": [
+     "The Qutb Minar is about 72.5 metres high.",
+     "The Qutb Minar and its monuments became a UNESCO World Heritage Site in 1993."
+    ]
+   },
+   "hi": {
+    "q": "कुतुबुद्दीन ऐबक द्वारा आरंभ कराए गए कुतुबमीनार के निर्माण को किसने पूरा कराया?",
+    "options": [
+     "बलबन",
+     "अलाउद्दीन खिलजी",
+     "इल्तुतमिश",
+     "फ़िरोज़शाह तुगलक"
+    ],
+    "explanation": "कुतुबुद्दीन ऐबक ने लगभग 1199 में कुतुबमीनार का निर्माण आरंभ कराया और इसकी पहली मंज़िल बनवाई। उसके उत्तराधिकारी इल्तुतमिश ने तीन और मंज़िलें जोड़कर इसे पूरा कराया; बहुत बाद में फ़िरोज़शाह तुगलक ने क्षतिग्रस्त ऊपरी भाग की मरम्मत कर उसे दो मंज़िलों के रूप में फिर बनवाया।",
+    "notes": [
+     "बलबन: 'चालीसा' अमीरों की शक्ति कुचली; मीनार का कोई भाग नहीं बनवाया।",
+     "अलाउद्दीन खिलजी: अलाई दरवाज़ा बनवाया और अधूरी अलाई मीनार आरंभ कराई।",
+     "इल्तुतमिश: तीन मंज़िलें जोड़कर कुतुबमीनार को पूरा कराया।",
+     "फ़िरोज़शाह तुगलक: बिजली गिरने से क्षतिग्रस्त मीनार के ऊपरी भाग की मरम्मत कराई।"
+    ],
+    "path": [
+     "भारतीय इतिहास",
+     "मध्यकालीन भारत",
+     "दिल्ली सल्तनत",
+     "स्थापत्य"
+    ],
+    "facts": [
+     "कुतुबमीनार लगभग 72.5 मीटर ऊँची है।",
+     "कुतुबमीनार और उसके स्मारक 1993 में यूनेस्को विश्व धरोहर स्थल बने।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "NCERT Class 7 Our Pasts – II, Ch. 3 (The Delhi Sultans)"
+    },
+    {
+     "source": "UNESCO World Heritage List: Qutb Minar and its Monuments, Delhi"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-028",
+   "level": "TGT",
+   "section": "ca-national",
+   "answer": 2,
+   "en": {
+    "q": "'Seva Teerth', inaugurated in New Delhi in February 2026, is the new complex that houses the:",
+    "options": [
+     "Supreme Court of India",
+     "Election Commission of India",
+     "Prime Minister's Office",
+     "NITI Aayog"
+    ],
+    "explanation": "The Prime Minister inaugurated Seva Teerth on 13 February 2026 and signed his first files there the same day. The complex houses the Prime Minister's Office, the Cabinet Secretariat and the National Security Council Secretariat, which earlier worked from South Block. The new Kartavya Bhavan 1 and 2 were opened at the same event.",
+    "notes": [
+     "Supreme Court: sits at Tilak Marg, New Delhi; it did not move to Seva Teerth.",
+     "Election Commission: works from Nirvachan Sadan, New Delhi.",
+     "Prime Minister's Office: moved from South Block to Seva Teerth in 2026.",
+     "NITI Aayog: works from NITI Bhavan on Sansad Marg, New Delhi."
+    ],
+    "path": [
+     "Current Affairs",
+     "National Affairs",
+     "Governance",
+     "Seva Teerth"
+    ],
+    "facts": [
+     "Seva Teerth is part of the Central Vista redevelopment of New Delhi.",
+     "Kartavya Bhavan buildings house several Union ministries."
+    ]
+   },
+   "hi": {
+    "q": "फ़रवरी 2026 में नई दिल्ली में उद्घाटित 'सेवा तीर्थ' किसका नया परिसर है?",
+    "options": [
+     "भारत का सर्वोच्च न्यायालय",
+     "भारत निर्वाचन आयोग",
+     "प्रधानमंत्री कार्यालय",
+     "नीति आयोग"
+    ],
+    "explanation": "प्रधानमंत्री ने 13 फ़रवरी 2026 को सेवा तीर्थ का उद्घाटन किया और उसी दिन वहाँ अपनी पहली फ़ाइलों पर हस्ताक्षर किए। इस परिसर में प्रधानमंत्री कार्यालय, कैबिनेट सचिवालय और राष्ट्रीय सुरक्षा परिषद सचिवालय हैं, जो पहले साउथ ब्लॉक से काम करते थे। इसी कार्यक्रम में नए कर्तव्य भवन 1 और 2 भी खोले गए।",
+    "notes": [
+     "सर्वोच्च न्यायालय: नई दिल्ली के तिलक मार्ग पर स्थित; सेवा तीर्थ में स्थानांतरित नहीं हुआ।",
+     "निर्वाचन आयोग: नई दिल्ली के निर्वाचन सदन से कार्य करता है।",
+     "प्रधानमंत्री कार्यालय: 2026 में साउथ ब्लॉक से सेवा तीर्थ में स्थानांतरित।",
+     "नीति आयोग: नई दिल्ली में संसद मार्ग स्थित नीति भवन से कार्य करता है।"
+    ],
+    "path": [
+     "समसामयिकी",
+     "राष्ट्रीय घटनाएँ",
+     "शासन",
+     "सेवा तीर्थ"
+    ],
+    "facts": [
+     "सेवा तीर्थ नई दिल्ली की सेंट्रल विस्टा पुनर्विकास परियोजना का भाग है।",
+     "कर्तव्य भवनों में कई केंद्रीय मंत्रालय स्थित हैं।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "PM India: PM addresses the inaugural event of Seva Teerth and Kartavya Bhavan 1 and 2",
+     "url": "https://www.pmindia.gov.in/en/news_updates/pm-addresses-the-inaugural-event-of-seva-teerth-and-kartavya-bhavan-1-2-in-new-delhi"
+    },
+    {
+     "source": "Business Standard: PM Modi inaugurates Seva Teerth, new PMO (13 February 2026)",
+     "url": "https://www.business-standard.com/india-news/pm-modi-inaugurates-seva-teerth-new-pmo-relocation-126021301823_1.html"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-029",
+   "level": "TGT",
+   "section": "ca-people",
+   "answer": 0,
+   "en": {
+    "q": "Who became India's 27th Chief of the Naval Staff on 31 May 2026?",
+    "options": [
+     "Admiral Krishna Swaminathan",
+     "Admiral Karambir Singh",
+     "Admiral Dinesh K. Tripathi",
+     "Admiral R. Hari Kumar"
+    ],
+    "explanation": "Admiral Krishna Swaminathan, earlier Flag Officer Commanding-in-Chief of the Western Naval Command, succeeded Admiral Dinesh K. Tripathi as the 27th Chief of the Naval Staff on 31 May 2026.",
+    "notes": [
+     "Admiral Krishna Swaminathan earlier headed the Western Naval Command.",
+     "Admiral Karambir Singh was the 24th Chief of the Naval Staff (2019–21).",
+     "Admiral Dinesh K. Tripathi was the 26th Chief of the Naval Staff (2024–26).",
+     "Admiral R. Hari Kumar was the 25th Chief of the Naval Staff (2021–24)."
+    ],
+    "path": [
+     "Current Affairs",
+     "Personalities in News",
+     "Appointments",
+     "Defence"
+    ],
+    "facts": [
+     "Navy Day is observed on 4 December to mark Operation Trident (1971).",
+     "The Western Naval Command is headquartered at Mumbai."
+    ]
+   },
+   "hi": {
+    "q": "31 मई 2026 को भारत के 27वें नौसेना प्रमुख कौन बने?",
+    "options": [
+     "एडमिरल कृष्णा स्वामीनाथन",
+     "एडमिरल करमबीर सिंह",
+     "एडमिरल दिनेश के. त्रिपाठी",
+     "एडमिरल आर. हरि कुमार"
+    ],
+    "explanation": "पश्चिमी नौसेना कमान के फ़्लैग ऑफ़िसर कमांडिंग-इन-चीफ़ रहे एडमिरल कृष्णा स्वामीनाथन ने 31 मई 2026 को एडमिरल दिनेश के. त्रिपाठी के बाद 27वें नौसेना प्रमुख का पद संभाला।",
+    "notes": [
+     "एडमिरल कृष्णा स्वामीनाथन इससे पहले पश्चिमी नौसेना कमान के प्रमुख थे।",
+     "एडमिरल करमबीर सिंह 24वें नौसेना प्रमुख (2019–21) रहे।",
+     "एडमिरल दिनेश के. त्रिपाठी 26वें नौसेना प्रमुख (2024–26) रहे।",
+     "एडमिरल आर. हरि कुमार 25वें नौसेना प्रमुख (2021–24) रहे।"
+    ],
+    "path": [
+     "समसामयिकी",
+     "चर्चित व्यक्तित्व",
+     "नियुक्तियाँ",
+     "रक्षा"
+    ],
+    "facts": [
+     "ऑपरेशन ट्राइडेंट (1971) की स्मृति में 4 दिसंबर को नौसेना दिवस मनाया जाता है।",
+     "पश्चिमी नौसेना कमान का मुख्यालय मुंबई में है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "All India Radio News – Admiral Krishna Swaminathan assumes charge as 27th Chief of the Naval Staff (31 May 2026)",
+     "url": "https://newsonair.gov.in/admiral-krishna-swaminathan-assumes-charge-as-27th-chief-of-the-naval-staff/"
+    },
+    {
+     "source": "Onmanorama – Admiral Krishna Swaminathan takes charge as 27th Chief of the Naval Staff",
+     "url": "https://www.onmanorama.com/news/kerala/2026/05/31/new-naval-chief-takes-command.html"
+    }
+   ]
+  },
+  {
+   "id": "gkm/tgt-01-030",
+   "level": "TGT",
+   "section": "env-people",
+   "answer": 0,
+   "en": {
+    "q": "The polluted liquid that seeps out of a landfill of solid waste is called:",
+    "options": [
+     "Leachate",
+     "Compost",
+     "Sludge",
+     "Slurry"
+    ],
+    "explanation": "Rainwater percolating through dumped waste dissolves organic matter, chemicals and heavy metals, forming leachate. If it is not collected, it can contaminate the soil and groundwater, so sanitary landfills are lined at the base.",
+    "notes": [
+     "Leachate: the contaminated liquid that drains out of a landfill.",
+     "Compost: manure formed by the decomposition of organic waste.",
+     "Sludge: the semi-solid residue left after treating sewage or industrial wastewater.",
+     "Slurry: a thick mixture of solid particles and water, such as cow-dung slurry for biogas."
+    ],
+    "path": [
+     "Environment",
+     "People & Environment",
+     "Solid waste management",
+     "Landfills"
+    ],
+    "facts": [
+     "A sanitary landfill has a liner and a system to collect leachate.",
+     "Landfills also release methane, a greenhouse gas."
+    ]
+   },
+   "hi": {
+    "q": "ठोस अपशिष्ट के भराव क्षेत्र (लैंडफिल) से रिसने वाला प्रदूषित द्रव कहलाता है:",
+    "options": [
+     "निक्षालित द्रव (लीचेट)",
+     "कम्पोस्ट",
+     "आपंक (स्लज)",
+     "घोल (स्लरी)"
+    ],
+    "explanation": "डाले गए अपशिष्ट से होकर रिसता वर्षा जल कार्बनिक पदार्थ, रसायन और भारी धातुएँ घोल लेता है और लीचेट बनता है। एकत्र न करने पर यह मृदा और भूजल को दूषित कर सकता है, इसलिए स्वच्छ भराव क्षेत्रों के तल पर अस्तर लगाया जाता है।",
+    "notes": [
+     "निक्षालित द्रव (लीचेट): भराव क्षेत्र से निकलने वाला दूषित द्रव।",
+     "कम्पोस्ट: कार्बनिक अपशिष्ट के अपघटन से बनी खाद।",
+     "आपंक (स्लज): सीवेज या औद्योगिक अपशिष्ट जल के उपचार के बाद बचा अर्ध-ठोस अवशेष।",
+     "घोल (स्लरी): ठोस कणों और जल का गाढ़ा मिश्रण, जैसे बायोगैस हेतु गोबर का घोल।"
+    ],
+    "path": [
+     "पर्यावरण",
+     "मानव एवं पर्यावरण",
+     "ठोस अपशिष्ट प्रबंधन",
+     "भराव क्षेत्र"
+    ],
+    "facts": [
+     "स्वच्छ भराव क्षेत्र (सैनिटरी लैंडफिल) में अस्तर और लीचेट एकत्र करने की व्यवस्था होती है।",
+     "भराव क्षेत्रों से ग्रीनहाउस गैस मीथेन भी निकलती है।"
+    ]
+   },
+   "refs": [
+    {
+     "source": "Solid Waste Management Rules, 2016 (Ministry of Environment, Forest and Climate Change)"
+    }
+   ]
+  }
+ ]
+}
