@@ -30,6 +30,12 @@ index['mq'] = sorted(f.name for f in (data / 'mq').glob('*.json')) if (data / 'm
 # The number of maths questions in those papers (past and expected), shown on the home screen.
 mq_index = data / 'mq' / 'index.json'
 index['mqQuestions'] = sum(len(p['ns']) for p in json.loads(mq_index.read_text(encoding='utf-8'))['papers']) if mq_index.exists() else 0
+# The GK mock sets for UP TGT / PGT (data/gkm/, checked by tools/build_gkm.py): saved for offline practice too,
+# and their questions count as GK questions on the home screen.
+gkm = data / 'gkm'
+index['gkm'] = sorted(f.name for f in gkm.glob('*.json')) if gkm.is_dir() else []
+gkm_index = gkm / 'index.json'
+index['gkmQuestions'] = sum(x['n'] for x in json.loads(gkm_index.read_text(encoding='utf-8'))['sets']) if gkm_index.exists() else 0
 (data / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding='utf-8')
 total = sum(c['total'] for c in index['sections'].values())
-print(f'data/index.json: {len(index["sections"])} sections, {total} questions; {index["mqQuestions"]} maths questions')
+print(f'data/index.json: {len(index["sections"])} sections, {total} questions; {index["gkmQuestions"]} GK mock questions; {index["mqQuestions"]} maths questions')
