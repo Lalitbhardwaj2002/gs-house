@@ -195,7 +195,9 @@ const T = {
     noNet: 'Couldn’t reach the game server. Check your internet connection and try again.',
     broken: 'The quiz didn’t load properly. Check your internet connection and refresh the page.',
     reconnecting: 'Connection lost — reconnecting…', install: '📲 Install the app', installed: 'App installed! 🎉',
-    iosHint: '📲 Use it like an app: tap Share in Safari, then Add to Home Screen.',
+    iosSteps: ['Open this page in Safari (or Chrome).', 'Tap Share {share}: at the bottom in Safari (on newer iPhones inside the ••• menu), at the top in Chrome.',
+      'Choose “Add to Home Screen”, then tap Add.', 'Open GS HOUSE from its icon on your home screen: it opens full screen, like an app.'],
+    macStep: 'On a Mac, in Safari choose File → Add to Dock.',
     loadingQs: 'Collecting your questions…', noQs: 'No questions match these choices yet.',
     rankTitle: { acharya: 'Acharya', pandit: 'Pandit', vidvan: 'Vidvan', sadhak: 'Sadhak', jigyasu: 'Jigyasu' },
     rankNote: { acharya: 'Master of the syllabus', pandit: 'Excellent command', vidvan: 'Good grasp — keep polishing', sadhak: 'Steady progress — revise weak areas', jigyasu: 'Every master was once a beginner' },
@@ -276,7 +278,9 @@ const T = {
     noNet: 'गेम सर्वर तक नहीं पहुँच पाए। इंटरनेट जाँचकर फिर प्रयास करें।',
     broken: 'प्रश्नोत्तरी ठीक से लोड नहीं हुई। इंटरनेट जाँचें और पेज रिफ्रेश करें।',
     reconnecting: 'संपर्क टूटा — फिर से जोड़ रहे हैं…', install: '📲 ऐप इंस्टॉल करें', installed: 'ऐप इंस्टॉल हो गया! 🎉',
-    iosHint: '📲 ऐप की तरह उपयोग करें: Safari में Share दबाएँ, फिर Add to Home Screen।',
+    iosSteps: ['यह पेज Safari (या Chrome) में खोलें।', 'Share {share} दबाएँ: Safari में नीचे (नए iPhone में ••• मेनू के अंदर), Chrome में ऊपर।',
+      '“Add to Home Screen” चुनें, फिर Add दबाएँ।', 'होम स्क्रीन पर GS HOUSE के आइकन से खोलें: यह ऐप की तरह पूरी स्क्रीन पर खुलेगा।'],
+    macStep: 'Mac पर Safari में File → Add to Dock चुनें।',
     loadingQs: 'आपके प्रश्न तैयार हो रहे हैं…', noQs: 'इन विकल्पों से मेल खाते प्रश्न अभी उपलब्ध नहीं हैं।',
     rankTitle: { acharya: 'आचार्य', pandit: 'पंडित', vidvan: 'विद्वान', sadhak: 'साधक', jigyasu: 'जिज्ञासु' },
     rankNote: { acharya: 'पाठ्यक्रम पर पूर्ण अधिकार', pandit: 'उत्कृष्ट पकड़', vidvan: 'अच्छी समझ — निखारते रहें', sadhak: 'निरंतर प्रगति — कमजोर खंड दोहराएँ', jigyasu: 'हर आचार्य कभी शुरुआती था' },
@@ -2966,11 +2970,19 @@ async function copyInvite() {
 let installPrompt = null;
 const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+// Safari on a Mac (not Chrome or Edge, which offer their own install prompt).
+const isMacSafari = () => /Macintosh/.test(navigator.userAgent) && /Safari\//.test(navigator.userAgent) && !/Chrome|Chromium|CriOS|Edg|OPR|Firefox/.test(navigator.userAgent) && navigator.maxTouchPoints < 2;
+// The share icon of iPhone and iPad, drawn, for the install steps.
+const SHARE_ICON = '<svg class="share-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10H5v11h14V10h-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
+// Android and computers get the browser's own install prompt. Apple devices have none, so there the same
+// button opens the steps to add the app by hand (owner's request, 27 November 2026; a line of text before).
 function installHTML() {
   if (isStandalone()) return '';
   if (installPrompt) return `<button class="btn install" data-action="install">${t('install')}</button>`;
-  if (isIos()) return `<p class="install-hint">${t('iosHint')}</p>`;
-  return '';
+  const steps = isIos() ? t('iosSteps').map((x) => `<li>${x.replace('{share}', SHARE_ICON)}</li>`).join('')
+    : isMacSafari() ? `<li>${t('macStep')}</li>` : '';
+  if (!steps) return '';
+  return `<details class="ios-install"><summary class="btn install">${t('install')}</summary><ol>${steps}</ol></details>`;
 }
 function renderInstall() { const el = document.getElementById('install'); if (el) el.innerHTML = installHTML(); }
 window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installPrompt = e; renderInstall(); });
