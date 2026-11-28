@@ -5,14 +5,14 @@
  */
 'use strict';
 
-const CACHE = 'gshouse-v9';
+const CACHE = 'gshouse-v10';
 const SHELL = ['./', './index.html', './style.css', './app.js', './sections.js', './manifest.json', './data/index.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/favicon-32.png', './icons/logo.svg'];
 
 // Every question file, every notes file of the book companion and every syllabus file of the NET
 // corner is saved at install too, so the installed app works fully offline for solo practice and reading.
-// (List last extended on 28 November 2026: the GK mock sets for UP TGT / PGT in data/gkm/, after the
-// maths notes, solved past papers and expected papers of data/mq/. A change in this
+// (List last extended on 28 November 2026: the sealed diamond papers in data/gem/, after the GK mock sets
+// of data/gkm/ and the maths notes, solved past papers and expected papers of data/mq/. A change in this
 // file makes installed copies fetch the list again.)
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE)
@@ -25,6 +25,7 @@ self.addEventListener('install', (event) => {
         ...(index.net || []).map((name) => `./data/net/${name}`),   // syllabus files of the NET corner
         ...(index.mq || []).map((name) => `./data/mq/${name}`),     // solved maths papers and their index
         ...(index.gkm || []).map((name) => `./data/gkm/${name}`),   // GK mock sets for UP TGT / PGT and their index
+        ...(index.gem || []).map((name) => `./data/gem/${name}`),   // the sealed diamond papers
       ])))
     .catch(() => {})
     .then(() => self.skipWaiting()));

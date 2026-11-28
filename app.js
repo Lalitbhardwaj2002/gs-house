@@ -159,6 +159,43 @@ function loadMqIndex() {
   }
   return mq.loading;
 }
+// The diamond papers (owner's request, 28 November 2026): the most expected full paper of each level,
+// 120 questions as in the exam (Q1–30 GK "gkm/gem-<level>-NNN", Q31–120 mathematics "mq/gem-<level>-NNN").
+// Hidden behind the diamond on the practice page: data/gem/<level>.txt is the paper scrambled (base64 of
+// the JSON XOR-ed with a mulberry32 stream; tools/gem.py seals and opens it), so it cannot be read in the
+// repository or searched. Its questions stay out of the indexes, the counts, the mixed mocks and the sets.
+const GEM_SEED = 0x47534844;
+unitById.gem = { id: 'gem', icon: '💎', en: 'Diamond paper', hi: 'डायमंड पेपर' };   // its maths questions' header; not a unit of the lists
+const gem = {};
+async function loadGem(level) {
+  const id = String(level).toLowerCase();
+  if (!gem[id]) {
+    const res = await fetch(`data/gem/${id}.txt`, { cache: 'no-cache' });
+    if (!res.ok) throw new Error('gem');
+    const raw = atob((await res.text()).trim());
+    const bytes = new Uint8Array(raw.length);
+    let a = GEM_SEED;
+    for (let i = 0; i < raw.length; i++) {
+      a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      bytes[i] = raw.charCodeAt(i) ^ ((t ^ (t >>> 14)) & 255);
+    }
+    const paper = JSON.parse(new TextDecoder().decode(bytes));
+    for (const q of paper.questions) {
+      const sec = sectionOf(q.id);
+      if (!sectionById[sec]) sectionById[sec] = { id: sec, unit: q.math ? 'gem' : 'gk', tracks: [], en: paper.paper.title, hi: paper.paper.title, scope: paper.paper.title };
+      host.bank[sec] = [...(host.bank[sec] || []).filter((x) => x.id !== q.id), q];
+    }
+    gem[id] = paper;
+  }
+  return gem[id];
+}
+const GEM_SVG = `<svg viewBox="0 0 64 58" aria-hidden="true"><defs><linearGradient id="gem-fill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#d6e6f5"/><stop offset=".75" stop-color="#b9c4ec"/><stop offset="1" stop-color="#8ea2c8"/></linearGradient></defs>
+  <path d="M15 6h34l12 14-29 34L3 20z" fill="url(#gem-fill)" stroke="#b8860b" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M15 6l8 14H3z" fill="#fff" opacity=".85"/><path d="M41 20h20L32 54z" fill="#7d8fbf" opacity=".35"/>
+  <path d="M3 20h58M15 6l8 14 9-14 9 14 8-14M23 20l9 34 9-34" fill="none" stroke="#b8860b" stroke-width="1.3" stroke-linejoin="round"/>
+  <path class="gem-spark" d="M52 0l1.6 4.4L58 6l-4.4 1.6L52 12l-1.6-4.4L46 6l4.4-1.6z" fill="#fff8d0"/></svg>`;
 // Text of a maths question: escaped HTML whose $…$ formulas KaTeX draws later; a solution keeps its lines.
 const mtext = (s) => esc(s || '').replace(/\n/g, '<br>');
 const mparas = (s) => String(s || '').split('\n').filter((l) => l.trim()).map((l) => `<p>${esc(l)}</p>`).join('');
@@ -685,6 +722,8 @@ const bankSections = (s) => [...new Set([...s.settings.sections, ...s.qids.map(s
 
 async function loadBank(sectionIds) {
   await Promise.all(sectionIds.filter((id) => !host.bank[id]).map(async (id) => {
+    const sealed = /^(?:mq|gkm)\/gem-(tgt|pgt)$/.exec(id);   // a diamond paper: opened from its sealed file
+    if (sealed) { try { await loadGem(sealed[1]); } catch { host.bank[id] = []; } return; }
     try {
       const res = await fetch(`data/${id}.json`, { cache: 'no-cache' });
       host.bank[id] = res.ok ? (await res.json()).questions : [];
@@ -1317,7 +1356,7 @@ function setupHTML(v, amHost) {
         <div class="segs segs-3">${seg('negative', CONFIG.negatives, (n) => (n ? `−${n === 0.33 ? '1/3' : '1/4'}` : t('none')))}</div>
       </div>
       <div class="setup-secs">
-        <div class="mq-pick"><span class="topic-icon">${st.mq.note === 'GK mock' ? '📰' : '➗'}</span><span><b>${esc(st.mq.title)}</b><span class="muted small">${st.mq.n} questions${st.mq.note ? ` · ${esc(st.mq.note)}` : ''}</span></span></div>
+        <div class="mq-pick"><span class="topic-icon">${st.mq.note === 'GK mock' ? '📰' : st.mq.note === 'diamond paper' ? '💎' : '➗'}</span><span><b>${esc(st.mq.title)}</b><span class="muted small">${st.mq.n} questions${st.mq.note ? ` · ${esc(st.mq.note)}` : ''}</span></span></div>
       </div>
     </div>`;
   }
@@ -1440,7 +1479,7 @@ function questionHTML(v, amHost) {
     <section class="q-card ${done ? 'done' : ''}">
       <div class="q-main">
         <div class="q-meta">
-          <span class="q-sec">${isM ? `➗ ${esc(q.src ? mqSource(q) : sectionTitle(section, 'en'))}` : `${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}`}</span>
+          <span class="q-sec">${isM ? `${unit && unit.id === 'gem' ? unit.icon : '➗'} ${esc(q.src ? mqSource(q) : sectionTitle(section, 'en'))}` : `${unit ? unit.icon : '📘'} ${esc(sectionTitle(section, ql))}`}</span>
           <span class="q-level lvl-${q.level}">${esc(t(`level_${q.level}`))}</span>
           ${isM ? '' : `<span class="q-lang">${langBtn('en', 'EN')}${langBtn('hi', 'हिं')}${langBtn('both', t('both'))}</span>`}
           ${markButton(q.id)}
@@ -2718,7 +2757,7 @@ async function showMqPractice(s, route, keepScroll) {
   const mixes = [25, 50, 100].filter((n, k) => k === 0 || n <= total);
   app.innerHTML = `
     ${bookBar(`net/${s.id}`, bookName(s.title))}
-    <section class="hero book-hero" lang="en"><div class="book-emoji">🎯</div><h1 class="book-title">Practice and mock tests</h1>
+    <section class="hero book-hero" lang="en"><button class="gem-btn ${ui.gemOpen ? 'open' : ''}" data-action="gem" aria-label="Diamond" aria-expanded="${ui.gemOpen ? 'true' : 'false'}"></button><div class="book-emoji">🎯</div><h1 class="book-title">Practice and mock tests</h1>
       <p class="tagline">${expected.length ? `${expected.length} expected papers + ` : ''}${papers.length} past papers${gkSets.length ? ` + ${gkSets.length} GK mocks` : ''} · every question solved and checked</p></section>
     <section class="card" lang="en"><h2>👥 Who is playing?</h2>
       <div class="segs segs-2">${seg(!ui.mqRoom, 'solo', '🪔 Alone')}${seg(ui.mqRoom, 'room', '👥 With friends')}</div>
@@ -2728,6 +2767,9 @@ async function showMqPractice(s, route, keepScroll) {
       ${ui.mqRoom ? `<label class="field" id="name-field"><span>${t('yourName')}</span><input id="name" maxlength="16" autocomplete="nickname" placeholder="${t('namePh')}" value="${esc(me.name)}"></label>
       <p class="muted small">You get a room code to share; up to ${CONFIG.maxPlayers} players join with it from their own phones, and you start when everyone is in.</p>` : ''}
     </section>
+    ${ui.gemOpen ? `<section class="card gem-card" lang="en"><div class="gem-head"><span class="gem-mini">${GEM_SVG}</span><h2>Diamond paper</h2></div>
+      <p class="small">The most expected UP ${level} paper, sealed. 120 questions as in the exam: 30 GK and 90 mathematics · 2 hours · −1/3 for a wrong answer.</p>
+      <button class="btn big gem-go" data-action="gem-start">Break the seal ▶</button></section>` : ''}
     ${expected.length ? `<section class="card" lang="en"><h2>🔮 Expected papers for December 2026</h2><p class="muted small">Full mocks of ${expected[0].ns.length} mathematics questions in the pattern of the latest UP ${level} paper and the official syllabus: past questions whose ideas keep coming back (each names the paper that asked it), and new questions in the board's style. Every question was solved, then checked by a second mathematician.</p><div class="mq-list">${rowsOf(expected, '🔮')}</div></section>` : ''}
     ${gkSets.length ? `<section class="card" lang="en"><h2>📰 General knowledge mocks (Part I)</h2><p class="muted small">30 questions each, as in Part I of the new UP ${level} paper (90 subject + 30 GK): 2026 current affairs and the GS syllabus, in Hindi and English, each question checked twice.</p><div class="mq-list">${gkSets.map((x) => `
       <div class="mq-row"><span class="topic-icon">📰</span><span class="mq-what"><b>${esc(x.title)}</b><span class="muted small">${x.n} questions · about ${x.minutes} minutes · ${mqNeg(x.negative)}</span></span>
@@ -2737,7 +2779,20 @@ async function showMqPractice(s, route, keepScroll) {
     ${units.length ? `<section class="card" lang="en"><h2>📚 Topic-wise practice</h2><p class="muted small">Questions on one unit of the syllabus, without negative marking.</p><div class="mq-list">${unitRows}</div></section>` : ''}
     ${papers.length ? '' : '<section class="card" lang="en"><p class="muted">The solved papers are being added.</p></section>'}`;
   if (!keepScroll) window.scrollTo(0, 0);
+  placeGem();
 }
+// The diamond is the heart of the flower at the top centre of the page's background (owner's request): it looks like
+// every other flower and is a clear button over that spot. The background is fixed to the screen, tiles of 240 px
+// centred across it with the first row's hearts 160 px from the top (style.css, body), so the spot is found from the
+// screen and given to the button inside the hero, which it matches while the page is at the top.
+function placeGem() {
+  const b = app.querySelector('.gem-btn');
+  if (!b) return;
+  const r = b.parentElement.getBoundingClientRect();
+  b.style.left = `${document.documentElement.clientWidth / 2 - r.left - 20}px`;
+  b.style.top = `${160 - r.top - window.scrollY - 20}px`;
+}
+window.addEventListener('resize', placeGem);
 const mqSubject = () => study[(book.route || '').split('/')[1]];
 
 // The official syllabus of the subject (the file behind its door on the home screen), or null.
@@ -3105,6 +3160,19 @@ const actions = {
     if (!x || (ui.mqRoom && !readName())) return;
     const qids = Array.from({ length: x.n }, (_, i) => `gkm/${x.id}-${String(i + 1).padStart(3, '0')}`);
     startMq({ qids, title: x.title, clock: mqClock(x.n, x.minutes), negative: x.negative, order: 'paper', note: 'GK mock' });
+  },
+  async gem() {
+    ui.gemOpen = !ui.gemOpen;
+    await showBook(book.route, true);
+    const card = ui.gemOpen && app.querySelector('.gem-card');
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  },
+  async 'gem-start'() {
+    const s = mqSubject();
+    if (!s || (ui.mqRoom && !readName())) return;
+    let p;
+    try { p = await loadGem(s.practice.level); } catch { toast(t('broken')); return; }
+    startMq({ qids: p.questions.map((q) => q.id), title: p.paper.title, clock: mqClock(p.questions.length, p.paper.minutes), negative: p.paper.negative, order: 'paper', note: 'diamond paper' });
   },
   'mq-mixed'(btn) {
     const s = mqSubject();

@@ -896,3 +896,25 @@ html:not([lang='hi']) .about [lang='hi'], html[lang='hi'] .about [lang='en'] { d
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0ms !important; transition: none !important; }
 }
+
+/* ---------- the diamond on the practice page: a sealed paper, the most expected one (owner's request, 28 November 2026) ---------- */
+.book-hero { position: relative; }
+/* a clear button over the heart of the background flower at the top centre (placeGem in app.js): it looks like any other flower */
+.gem-btn { position: absolute; z-index: 1; width: 40px; height: 40px; margin: 0; padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: default; }
+.gem-btn:focus-visible { outline: 2px solid #b8860b; outline-offset: 2px; }
+.gem-mini svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.gem-spark { transform-box: fill-box; transform-origin: center; animation: gem-spark 3.6s ease-in-out infinite; }
+@keyframes gem-spark { 0%, 55%, 100% { opacity: 0; transform: scale(0.3); } 72% { opacity: 1; transform: scale(1.15); } }
+@media (prefers-reduced-motion: reduce) { .gem-spark { animation: none; } }
+body .card.gem-card, body[data-subject='maths'] .card.gem-card {
+  color: #fff; border: 3px solid transparent; outline-color: rgba(243, 215, 122, 0.35);
+  background: linear-gradient(135deg, #12141a 0%, #1d2230 48%, #2a2340 100%) padding-box,
+    linear-gradient(135deg, #8a6a12 0%, #f3d77a 14%, #b8860b 30%, #e9c75a 44%, #ffffff 52%, #a9b6c2 66%, #ffffff 80%, #d9d0f0 90%, #8b9cab 100%) border-box;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(42, 35, 64, 0.35);
+}
+.gem-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.gem-card h2 { color: #f3d77a; margin: 0; }
+.gem-mini { flex: none; width: 32px; height: 30px; }
+.gem-card .small { color: #e6e9f2; margin-bottom: 12px; }
+.gem-card .gem-go { background: linear-gradient(135deg, #f8e7a8 0%, #e9c75a 40%, #b8860b 100%); color: #1d1606; border-color: #8a6a12; }
+.gem-card .gem-go:hover { filter: brightness(1.06); }

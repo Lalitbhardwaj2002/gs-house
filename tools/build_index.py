@@ -36,6 +36,9 @@ gkm = data / 'gkm'
 index['gkm'] = sorted(f.name for f in gkm.glob('*.json')) if gkm.is_dir() else []
 gkm_index = gkm / 'index.json'
 index['gkmQuestions'] = sum(x['n'] for x in json.loads(gkm_index.read_text(encoding='utf-8'))['sets']) if gkm_index.exists() else 0
+# The sealed diamond papers (data/gem/<level>.txt, made by tools/gem.py): saved for offline practice; not counted.
+gem = data / 'gem'
+index['gem'] = sorted(f.name for f in gem.glob('*.txt')) if gem.is_dir() else []
 (data / 'index.json').write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding='utf-8')
 total = sum(c['total'] for c in index['sections'].values())
 print(f'data/index.json: {len(index["sections"])} sections, {total} questions; {index["gkmQuestions"]} GK mock questions; {index["mqQuestions"]} maths questions')
